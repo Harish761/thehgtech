@@ -4,28 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft Patch Tuesday February 2026: 6 Active Zero-Days Technical Analysis | TheHGTech</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Microsoft Patch Tuesday February 2026: The "Dirty Six" Zero-Day Deep Dive | TheHGTech</title>
     <meta name="description"
         content="In-depth technical analysis of Microsoft's February 2026 Patch Tuesday, featuring 6 actively exploited zero-day vulnerabilities (CVE-2026-21510, CVE-2026-21513, CVE-2026-21519). Includes exploit mechanics, YARA rules, and mitigation strategies.">
     <meta name="keywords"
         content="Microsoft Patch Tuesday, February 2026, CVE-2026-21510, CVE-2026-21513, CVE-2026-21519, Zero-Day Exploit, Windows Shell Bypass, MSHTML Vulnerability, DWM Elevation of Privilege, Cybersecurity Research">
     <meta name="author" content="TheHGTech Security Research">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/articles/microsoft-patch-tuesday-february-2026.html">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/microsoft-patch-tuesday-february-2026.html">
     <meta property="og:title" content="Microsoft Patch Tuesday February 2026: The 'Dirty Six' Zero-Day Deep Dive">
     <meta property="og:description"
         content="Technical breakdown of 6 actively exploited Windows zero-days. From Shell bypasses to DWM privilege escalation, we analyze the exploit chains and provide detection logic.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/microsoft-patch-tuesday-february-2026.png">
+    <meta property="og:site_name" content="TheHGTech">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://thehgtech.com/articles/microsoft-patch-tuesday-february-2026.html">
-    <meta property="twitter:title" content="Microsoft Patch Tuesday February 2026: The 'Dirty Six' Zero-Day Deep Dive">
-    <meta property="twitter:description"
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Microsoft Patch Tuesday February 2026: The 'Dirty Six' Zero-Day Deep Dive">
+    <meta name="twitter:description"
         content="Technical breakdown of 6 actively exploited Windows zero-days. From Shell bypasses to DWM privilege escalation, we analyze the exploit chains and provide detection logic.">
-    <meta property="twitter:image"
+    <meta name="twitter:image"
         content="https://thehgtech.com/images/articles/microsoft-patch-tuesday-february-2026.png">
 
     <!-- Structured Data -->
@@ -34,373 +38,550 @@
       "@context": "https://schema.org",
       "@type": "NewsArticle",
       "headline": "Microsoft Patch Tuesday February 2026: The 'Dirty Six' Zero-Day Deep Dive",
-      "image": [
-        "https://thehgtech.com/images/articles/microsoft-patch-tuesday-february-2026.png"
-      ],
-      "datePublished": "2026-02-12T08:00:00+00:00",
-      "dateModified": "2026-02-12T08:00:00+00:00",
-      "author": [{
-          "@type": "Organization",
-          "name": "TheHGTech Security Research",
-          "url": "https://thehgtech.com"
-        }],
+      "description": "Deep technical analysis of 6 actively exploited zero-day vulnerabilities patched by Microsoft in February 2026.",
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech Security Research",
+        "url": "https://thehgtech.com"
+      },
       "publisher": {
         "@type": "Organization",
         "name": "TheHGTech",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://thehgtech.com/logo.png"
-        }
-      }
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2026-02-12",
+      "dateModified": "2026-02-12",
+      "mainEntityOfPage": "https://thehgtech.com/articles/microsoft-patch-tuesday-february-2026.html",
+      "image": "https://thehgtech.com/images/articles/microsoft-patch-tuesday-february-2026.png",
+      "articleSection": "Zero-Day Vulnerability",
+      "keywords": ["Microsoft", "Patch Tuesday", "Zero-Day", "CVE-2026-21510", "CVE-2026-21513"]
     }
     </script>
 
-    <link rel="stylesheet" href="../header.css">
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Articles", "item": "https://thehgtech.com/articles.html" },
+        { "@type": "ListItem", "position": 3, "name": "Microsoft Patch Tuesday Feb 2026" }
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style System - FULL SET REQUIRED -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.js" defer></script>
+
     <style>
         :root {
-            --primary-color: #0078D4;
-            /* Microsoft Blue */
-            --secondary-color: #00D9FF;
-            --background-dark: #0a0a0a;
-            --text-light: #e0e0e0;
-            --accent-red: #ff4444;
-            --code-bg: #1e1e1e;
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0f1419;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --border: rgba(255, 255, 255, 0.1);
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--background-dark);
-            color: var(--text-light);
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
             line-height: 1.8;
-            margin: 0;
-            padding-top: 80px;
         }
 
-        .article-container {
+        .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 80px 1.5rem 120px;
         }
 
         .article-header {
-            text-align: center;
-            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
         }
 
-        .article-title {
-            font-size: 3rem;
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+        .article-header h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 1rem;
-            font-weight: 800;
+            line-height: 1.3;
         }
 
-        .article-meta {
-            color: #888;
-            font-size: 1rem;
+        .meta-info {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            font-family: 'Courier New', monospace;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
         }
 
-        .cve-badge {
-            background: rgba(255, 68, 68, 0.2);
-            color: var(--accent-red);
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            border: 1px solid var(--accent-red);
+        .meta-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
+        }
+
+        .badge-critical {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .badge-microsoft {
+            background: linear-gradient(135deg, #0078D4, #00D9FF);
+            color: white;
+        }
+
+        .badge-zeroday {
+            background: var(--accent-orange);
+            color: white;
         }
 
         .featured-image {
             width: 100%;
-            height: auto;
             border-radius: 12px;
-            box-shadow: 0 0 30px rgba(0, 120, 212, 0.3);
-            margin-bottom: 3rem;
-            border: 1px solid #333;
-        }
-
-        .content-section {
-            margin-bottom: 4rem;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
         }
 
         h2 {
-            color: var(--secondary-color);
-            border-bottom: 1px solid #333;
-            padding-bottom: 0.8rem;
-            margin-top: 3rem;
-            font-size: 2rem;
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
         }
 
         h3 {
-            color: #fff;
-            margin-top: 2rem;
-            font-size: 1.5rem;
-            border-left: 4px solid var(--primary-color);
-            padding-left: 1rem;
-        }
-
-        h4 {
-            color: #ccc;
-            margin-top: 1.5rem;
-            font-weight: 600;
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.2rem;
         }
 
         p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            color: #ccc;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
         }
 
         ul,
         ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
-            color: #ccc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
         }
 
         li {
             margin-bottom: 0.5rem;
         }
 
-        .highlight-box {
-            background: rgba(0, 120, 212, 0.08);
-            border-left: 4px solid var(--primary-color);
-            padding: 2rem;
-            border-radius: 4px;
+        .warning-box {
+            background: rgba(255, 61, 61, 0.08);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
             margin: 2rem 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
         }
 
-        .warning-box {
-            background: rgba(255, 68, 68, 0.1);
-            border-left: 4px solid var(--accent-red);
-            padding: 2rem;
-            border-radius: 4px;
+        .info-box {
+            background: rgba(0, 217, 255, 0.08);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
             margin: 2rem 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
         }
 
         .technical-box {
-            background: #111;
-            border: 1px solid #333;
-            padding: 2rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
             border-radius: 8px;
+            padding: 1.5rem;
             margin: 2rem 0;
         }
 
-        .technical-title {
-            color: var(--secondary-color);
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            display: block;
-            border-bottom: 1px dashed #444;
-            padding-bottom: 0.5rem;
+        .technical-box h3 {
+            color: var(--accent-cyan);
+            margin-top: 0;
         }
 
         pre {
-            background: var(--code-bg);
-            padding: 1.5rem;
-            border-radius: 6px;
+            background: #0d1117;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
             overflow-x: auto;
-            border: 1px solid #333;
-            font-family: 'Consolas', 'Monaco', monospace;
-            font-size: 0.9rem;
-            color: #d4d4d4;
+            margin: 1rem 0;
         }
 
         code {
-            color: #9cdcfe;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-green);
         }
 
-        .comment {
-            color: #6a9955;
-        }
-
-        .keyword {
-            color: #569cd6;
-        }
-
-        .string {
-            color: #ce9178;
-        }
-
-        .function {
-            color: #dcdcaa;
-        }
-
-        .vuln-table {
+        table {
             width: 100%;
             border-collapse: collapse;
-            margin: 2rem 0;
-            background: #151515;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .vuln-table th,
-        .vuln-table td {
-            padding: 1.2rem;
+        th,
+        td {
+            padding: 1rem;
             text-align: left;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid var(--border);
         }
 
-        .vuln-table th {
-            background: #222;
-            color: var(--secondary-color);
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-        }
-
-        .vuln-table tr:hover {
-            background: #1a1a1a;
-        }
-
-        .interaction-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 5rem;
-            padding-top: 3rem;
-            border-top: 1px solid #333;
-        }
-
-        .share-btn {
-            background: #222;
-            color: #fff;
-            border: 1px solid #444;
-            padding: 0.8rem 1.5rem;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
+        th {
+            background: rgba(0, 120, 212, 0.15);
+            color: var(--accent-cyan);
             font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
         }
 
-        .share-btn:hover {
-            background: var(--primary-color);
-            border-color: var(--primary-color);
-            box-shadow: 0 0 15px rgba(0, 120, 212, 0.4);
+        td {
+            color: var(--text-secondary);
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .article-title {
-                font-size: 2rem;
-            }
+        strong {
+            color: var(--text-primary);
+        }
 
-            .article-meta {
-                flex-direction: column;
-                gap: 0.5rem;
-                align-items: center;
-            }
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
 
-            .highlight-box,
-            .warning-box,
-            .technical-box {
-                padding: 1.5rem;
-            }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .cvss-box {
+            background: linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(245, 158, 11, 0.1));
+            border: 2px solid var(--accent-red);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .cvss-score {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent-red);
+        }
+
+        /* Light Mode Overrides */
+        [data-theme="light"] body {
+            background: #f8fafc;
+            color: #1e293b;
+        }
+
+        [data-theme="light"] .container {
+            color: #1e293b;
+        }
+
+        [data-theme="light"] p,
+        [data-theme="light"] li,
+        [data-theme="light"] td {
+            color: #475569;
+        }
+
+        [data-theme="light"] strong {
+            color: #1e293b;
+        }
+
+        [data-theme="light"] h2 {
+            color: #0891b2;
+        }
+
+        [data-theme="light"] h3 {
+            color: #1e293b;
+        }
+
+        [data-theme="light"] pre {
+            background: #f1f5f9;
+            border-color: #e2e8f0;
+        }
+
+        [data-theme="light"] code {
+            color: #059669;
+        }
+
+        [data-theme="light"] .technical-box {
+            background: #f8fafc;
+            border-color: #e2e8f0;
+        }
+
+        [data-theme="light"] .technical-box h3 {
+            color: #0891b2;
+        }
+
+        [data-theme="light"] .warning-box {
+            background: rgba(255, 61, 61, 0.05);
+        }
+
+        [data-theme="light"] .info-box {
+            background: rgba(0, 217, 255, 0.05);
+        }
+
+        [data-theme="light"] .success-box {
+            background: rgba(16, 185, 129, 0.05);
+        }
+
+        [data-theme="light"] table {
+            background: #f8fafc;
+        }
+
+        [data-theme="light"] th {
+            background: rgba(0, 120, 212, 0.1);
+            color: #0284c7;
+        }
+
+        [data-theme="light"] a {
+            color: #0891b2;
+        }
+
+        [data-theme="light"] .article-header h1 {
+            background: linear-gradient(135deg, #0284c7, #0891b2);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        [data-theme="light"] footer {
+            background: #f1f5f9 !important;
+            border-color: #e2e8f0 !important;
+        }
+
+        [data-theme="light"] footer p {
+            color: #64748b !important;
         }
     </style>
 </head>
 
 <body>
-
     <!-- Mobile Header -->
-    <header class="mobile-header">
-        <div class="logo">TheHGTech</div>
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions"><button class="m-theme-toggle" onclick="mToggleTheme()"
+                aria-label="Toggle Theme"><span class="m-theme-toggle__thumb"></span></button></div>
     </header>
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
 
     <!-- Desktop Header -->
-    <header class="desktop-header">
-        <div class="header-container">
-            <div class="logo">TheHGTech</div>
-            <nav class="desktop-nav">
-                <a href="../index.html">Home</a>
-                <a href="../articles.html" class="active">Articles</a>
-                <a href="../guides.html">Guides</a>
-                <a href="../comparisons.html">Comparisons</a>
-                <a href="../cve-tracker.html">CVE Tracker</a>
-            </nav>
-            <div class="header-cta">
-                <a href="https://linkedin.com/in/harish-g-355460a6" target="_blank" class="cta-button">Connect</a>
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
             </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span
+                                        class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
         </div>
     </header>
 
-    <main class="article-container">
-        <header class="article-header">
-            <div class="cve-badge">ACTIVE EXPLOITATION CONFIRMED</div>
-            <h1 class="article-title">Microsoft Patch Tuesday February 2026: The "Dirty Six" Zero-Day Deep Dive</h1>
-            <div class="article-meta">
-                <span>By TheHGTech Security Research</span>
-                <span>•</span>
-                <span>February 12, 2026</span>
-                <span>•</span>
-                <span>15 Min Read</span>
+    <div class="container">
+        <a href="/articles.html" class="back-link"
+            style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <article>
+            <header class="article-header">
+                <div style="margin-bottom: 1rem;">
+                    <span class="badge badge-critical"><i class="fas fa-radiation"></i> CRITICAL</span>
+                    <span class="badge badge-microsoft"><i class="fab fa-windows"></i> Microsoft</span>
+                    <span class="badge badge-zeroday"><i class="fas fa-fire"></i> 6 Zero-Days</span>
+                </div>
+                <h1>Microsoft Patch Tuesday February 2026: The "Dirty Six" Zero-Day Deep Dive</h1>
+                <div class="meta-info">
+                    <span><i class="far fa-calendar-alt"></i> February 12, 2026</span>
+                    <span><i class="fas fa-clock"></i> 15 Min Read</span>
+                    <span><i class="fas fa-user"></i> TheHGTech Security Research</span>
+                </div>
+                <p style="font-size: 1.1rem; color: var(--text-primary);">
+                    Microsoft's February 2026 Patch Tuesday is historic not for the volume of patches (59 total), but
+                    for the density of <strong>active zero-day exploits</strong>. Six distinct vulnerabilities were
+                    being exploited by threat actors prior to patch availability, targeting everything from the Windows
+                    Shell to the Desktop Window Manager (DWM). This suggests a coordinated surge in offensive
+                    capabilities targeting the Windows ecosystem.
+                </p>
+            </header>
+
+            <img src="/images/articles/microsoft-patch-tuesday-february-2026.png"
+                alt="Microsoft Patch Tuesday February 2026 Overview" class="featured-image" loading="eager">
+
+            <div class="cvss-box">
+                <div class="cvss-score">8.8</div>
+                <p style="margin: 0; color: var(--accent-red); font-weight: 600;">Multiple Actively Exploited Zero-Days
+                </p>
+                <p style="margin: 0.5rem 0 0; color: var(--text-secondary);">Protection Mechanism Failure • EoP • Shell
+                    Bypass</p>
             </div>
-        </header>
 
-        <img src="../images/articles/microsoft-patch-tuesday-february-2026.png"
-            alt="Microsoft Patch Tuesday February 2026 Overview" class="featured-image">
-
-        <div class="article-content">
+            <!-- Executive Summary -->
             <div class="warning-box">
-                <h3>🚨 EXECUTIVE SUMMARY: Immediate Action Required</h3>
-                <p><strong>Status:</strong> Critical / Active Exploitation in the Wild</p>
-                <p>Microsoft's February 2026 Patch Tuesday is historic not for the volume of patches (59 total), but for
-                    the density of <strong>active zero-day exploits</strong>. Six distinct vulnerabilities were being
-                    exploited by threat actors prior to patch availability, targeting everything from the Windows Shell
-                    to the Desktop Window Manager (DWM). This suggests a coordinated surge in offensive capabilities
-                    targeting the Windows ecosystem.</p>
-                <p><strong>Bottom Line:</strong> A standard 30-day patch cycle is insufficient. Immediate patching
-                    (within 24-48 hours) is recommended for all Windows endpoints, especially for CVE-2026-21510 and
-                    CVE-2026-21519.</p>
+                <strong><i class="fas fa-exclamation-triangle"></i> Executive Summary</strong>
+                <ul style="margin-top: 1rem;">
+                    <li><strong>Event:</strong> February 2026 Patch Tuesday</li>
+                    <li><strong>Zero-Days:</strong> 6 Actively Exploited Vulnerabilities</li>
+                    <li><strong>Key CVEs:</strong> CVE-2026-21510 (Shell), CVE-2026-21519 (DWM), CVE-2026-21513 (MSHTML)
+                    </li>
+                    <li><strong>Severity:</strong> Critical / High</li>
+                    <li><strong>Attack Vectors:</strong> Phishing (.lnk), Web (HTML), Local User (EoP)</li>
+                    <li><strong>Mitigation:</strong> Immediate Patching Required (Tier 0)</li>
+                </ul>
             </div>
 
-            <div class="content-section">
-                <h2>1. The "Dirty Six": Threat Landscape Analysis</h2>
+            <div class="technical-box">
+                <h3><i class="fas fa-layer-group"></i> The "Dirty Six": Threat Landscape Analysis</h3>
                 <p>It is rare to see six concurrent zero-days patched in a single cycle. This anomaly points to a few
                     possibilities in the threat landscape:</p>
                 <ol>
                     <li><strong>Broker Dump:</strong> A major initial access broker (IAB) or exploit vendor may have
-                        "burned" multiple exploits simultaneously in a high-profile campaign.</li>
+                        "burned" multiple exploits simultaneously.</li>
                     <li><strong>Research Collision:</strong> Multiple threat groups (APTs) targeted similar components
-                        (DWM, MSHTML) concurrently, leading to independent discoveries by defenders.</li>
-                    <li><strong>Component Rot:</strong> Legacy components like MSHTML (Trident) and GDI continues to be
-                        fragile attack surfaces despite decades of hardening.</li>
+                        (DWM, MSHTML) concurrently.</li>
+                    <li><strong>Component Rot:</strong> Legacy components like MSHTML (Trident) continue to be fragile
+                        attack surfaces.</li>
                 </ol>
-                <p>The attack surface this month spans three critical domains: <strong>Client-Side Execution</strong>
-                    (Shell/Office), <strong>Local Privilege Escalation</strong> (DWM/RDP), and <strong>Denial of
-                        Service</strong>.</p>
 
-                <table class="vuln-table">
+                <table>
                     <thead>
                         <tr>
                             <th>CVE ID</th>
                             <th>Component</th>
                             <th>Type</th>
                             <th>CVSS</th>
-                            <th>Vector</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -409,84 +590,66 @@
                             <td>Windows Shell</td>
                             <td>Security Bypass</td>
                             <td>8.8</td>
-                            <td>Remote (User Interaction)</td>
                         </tr>
                         <tr>
                             <td><strong>CVE-2026-21513</strong></td>
                             <td>MSHTML Framework</td>
                             <td>Security Bypass</td>
                             <td>8.8</td>
-                            <td>Remote (User Interaction)</td>
                         </tr>
                         <tr>
                             <td><strong>CVE-2026-21514</strong></td>
                             <td>Microsoft Word</td>
                             <td>Security Bypass</td>
                             <td>7.8</td>
-                            <td>Local (Document)</td>
                         </tr>
                         <tr>
                             <td><strong>CVE-2026-21519</strong></td>
                             <td>Desktop Window Manager</td>
                             <td>Elevation of Privilege</td>
                             <td>7.8</td>
-                            <td>Local (Post-Compromise)</td>
                         </tr>
                         <tr>
                             <td><strong>CVE-2026-21533</strong></td>
                             <td>Remote Desktop Services</td>
                             <td>Elevation of Privilege</td>
                             <td>7.8</td>
-                            <td>Local (Post-Compromise)</td>
                         </tr>
                         <tr>
                             <td><strong>CVE-2026-21525</strong></td>
                             <td>RasMan Service</td>
                             <td>Denial of Service</td>
                             <td>6.2</td>
-                            <td>Local</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <div class="content-section">
-                <h2>2. DEEP DIVE: Windows Shell Security Bypass (CVE-2026-21510)</h2>
-                <h3>The "Mark of the Web" Killer</h3>
-                <p><strong>CVSS:</strong> 8.8 (High) | <strong>Vector:</strong> Local/Network</p>
+            <!-- Technical Analysis Sections -->
+            <h2><i class="fas fa-microscope"></i> DEEP DIVE: Windows Shell Security Bypass (CVE-2026-21510)</h2>
+            <h3>The "Mark of the Web" Killer</h3>
+            <p><strong>CVSS:</strong> 8.8 (High) | <strong>Vector:</strong> Local/Network</p>
 
-                <p>The Windows Shell (explorer.exe) is the gatekeeper of user interaction. Security features like
-                    <strong>SmartScreen</strong> and <strong>Mark-of-the-Web (MotW)</strong> propagate zone identifiers
-                    to downloaded files to warn users of danger. CVE-2026-21510 is a logic flaw that "scrubs" or ignores
-                    these zone identifiers during specific file operations.</p>
+            <p>The Windows Shell (explorer.exe) is the gatekeeper of user interaction. Security features like
+                <strong>SmartScreen</strong> and <strong>Mark-of-the-Web (MotW)</strong> propagate zone identifiers to
+                downloaded files. CVE-2026-21510 is a logic flaw that "scrubs" or ignores these zone identifiers during
+                specific file operations.</p>
 
-                <div class="technical-box">
-                    <span class="technical-title">⚠️ Technical Root Cause Analysis</span>
-                    <p>The vulnerability exists in how the Shell processes <code>.lnk</code> (Shortcuts) and
-                        <code>.url</code> files when they point to specific non-standard URI schemes or UNC paths. By
-                        crafting a shortcut that references a file via a specific malformed path, the shell handler
-                        fails to propagate the <code>Zone.Identifier</code> Alternate Data Stream (ADS).</p>
+            <div class="technical-box">
+                <h3><i class="fas fa-code"></i> Technical Root Cause</h3>
+                <p>The vulnerability exists in how the Shell processes <code>.lnk</code> (Shortcuts) and
+                    <code>.url</code> files when they point to specific non-standard URI schemes or UNC paths. By
+                    crafting a shortcut that references a file via a specific malformed path, the shell handler fails to
+                    propagate the <code>Zone.Identifier</code> Alternate Data Stream (ADS).</p>
 
-                    <p><strong>Result:</strong> A downloaded malware file (e.g., <code>ransomware.exe</code>) usually
-                        triggers a bright blue SmartScreen warning. With this exploit, the file executes
-                        <strong>silently</strong>, as Windows creates it without the MotW tag, believing it to be a
-                        trusted local file.</p>
-                </div>
+                <p><strong>Result:</strong> A downloaded malware file (e.g., <code>ransomware.exe</code>) usually
+                    triggers a bright blue SmartScreen warning. With this exploit, the file executes
+                    <strong>silently</strong>, as Windows creates it without the MotW tag, believing it to be a trusted
+                    local file.</p>
+            </div>
 
-                <h3>Attack Methodology</h3>
-                <ol>
-                    <li><strong>Delivery:</strong> Attacker sends a ZIP file via phishing containing a benign-looking
-                        document and a hidden malicious <code>.lnk</code> file.</li>
-                    <li><strong>The Lure:</strong> The <code>.lnk</code> file uses an icon resembling a PDF or Folder.
-                    </li>
-                    <li><strong>Execution:</strong> User clicks the link. The exploit triggers the Shell bypass.</li>
-                    <li><strong>Payload:</strong> The shortcut executes a PowerShell command or binary <i>without</i>
-                        SmartScreen intervention.</li>
-                </ol>
-
-                <div class="highlight-box">
-                    <h4>🔍 Detection Engineering: YARA Rule</h4>
-                    <pre><code class="language-yara">rule Suspicious_LNK_ShellBypass_CVE_2026_21510 {
+            <h3>Detection Engineering: YARA Rule</h3>
+            <pre><code class="language-yara">rule Suspicious_LNK_ShellBypass_CVE_2026_21510 {
     meta:
         description = "Detects malformed LNK files attempting Shell Bypass"
         author = "TheHGTech Research"
@@ -501,78 +664,51 @@
     condition:
         $header at 0 and ($suspect_path_1 or $suspect_path_2) and $powershell
 }</code></pre>
-                </div>
+
+            <h2><i class="fab fa-internet-explorer"></i> DEEP DIVE: MSHTML Framework Bypass (CVE-2026-21513)</h2>
+            <h3>The Ghost of Internet Explorer</h3>
+
+            <p>Despite IE being "retired," its rendering engine, <strong>MSHTML (Trident)</strong>, essentially lives
+                forever in the Windows OS to support legacy applications and IE Mode in Edge. Attackers know that this
+                codebase is older and potentially less hardened than modern Chromium engines.</p>
+
+            <div class="warning-box">
+                <strong>Critical Risk:</strong> Organizations relying on "IE Mode" for legacy intranet apps are primary
+                targets. The patch updates the binary <code>mshtml.dll</code>. Ensure that verify that this DLL is
+                updated in <code>C:\Windows\System32\</code>.
             </div>
 
-            <div class="content-section">
-                <h2>3. DEEP DIVE: MSHTML Framework Bypass (CVE-2026-21513)</h2>
-                <h3>The Ghost of Internet Explorer</h3>
-                <p><strong>CVSS:</strong> 8.8 (High)</p>
+            <h2><i class="fas fa-window-maximize"></i> DEEP DIVE: Desktop Window Manager EoP (CVE-2026-21519)</h2>
+            <h3>From User to SYSTEM in One Crash</h3>
+            <p><strong>CVSS:</strong> 7.8 (High) | <strong>Type:</strong> Type Confusion</p>
 
-                <p>Despite IE being "retired," its rendering engine, <strong>MSHTML (Trident)</strong>, essentially
-                    lives forever in the Windows OS to support legacy applications and IE Mode in Edge. Attackers know
-                    that this codebase is older and potentially less hardened than modern Chromium engines.</p>
+            <p>The Desktop Window Manager (<code>dwm.exe</code>) is responsible for composing the desktop interface. It
+                runs as a highly privileged service to handle graphics hardware directly. CVE-2026-21519 is a
+                <strong>Type Confusion</strong> vulnerability.</p>
 
-                <p>This vulnerability is a <strong>Security Feature Bypass</strong>. It likely allows an attacker to
-                    construct a web page (or an HTML file sent mainly via email) that, when rendered by MSHTML
-                    components, escapes the AppContainer sandbox or the "Protected Mode" restrictions. This is often
-                    chained with Office documents that use MSHTML for rendering embedded web content.</p>
-
-                <div class="warning-box">
-                    <strong>Critical Risk:</strong> Organizations relying on "IE Mode" for legacy intranet apps are
-                    primary targets. The patch updates the binary <code>mshtml.dll</code>. Ensure that verify that this
-                    DLL is updated in <code>C:\Windows\System32\</code>.
-                </div>
+            <div class="technical-box">
+                <h3><i class="fas fa-cogs"></i> Exploit Mechanics</h3>
+                <ol>
+                    <li><strong>Heap Feng Shui:</strong> The attacker manipulates the DWM heap layout by creating and
+                        destroying specific window objects.</li>
+                    <li><strong>Trigger:</strong> A specific DirectX call is made to trigger the type confusion.</li>
+                    <li><strong>Read/Write Primitive:</strong> The confusion grants an arbitrary Read/Write primitive in
+                        DWM's memory space.</li>
+                    <li><strong>Token Stealing:</strong> The attacker locates the <code>SYSTEM</code> token in kernel
+                        memory and copies it to their own process.</li>
+                </ol>
             </div>
 
-            <div class="content-section">
-                <h2>4. DEEP DIVE: Desktop Window Manager EoP (CVE-2026-21519)</h2>
-                <h3>From User to SYSTEM in One Crash</h3>
-                <p><strong>CVSS:</strong> 7.8 (High) | <strong>Type:</strong> Type Confusion</p>
+            <h2><i class="fas fa-network-wired"></i> DEEP DIVE: Remote Desktop Services EoP (CVE-2026-21533)</h2>
+            <h3>Post-Compromise Lateral Movement</h3>
 
-                <p>The Desktop Window Manager (<code>dwm.exe</code>) is responsible for composing the desktop interface.
-                    It runs as a highly privileged service to handle graphics hardware directly. CVE-2026-21519 is a
-                    <strong>Type Confusion</strong> vulnerability.</p>
+            <p>The flaw involves improper validation of registry keys dealing with RPC (Remote Procedure Call) bindings
+                for the Terminal Services (TermService). An attacker can modify a Service configuration key to point to
+                a malicious DLL. When the RDS service restarts or handles a specific request, it loads the attacker's
+                DLL with <code>NT AUTHORITY\SYSTEM</code> privileges.</p>
 
-                <div class="technical-box">
-                    <span class="technical-title">⚙️ Exploit Mechanics</span>
-                    <p>Type confusion occurs when the application allocates memory for one object type (e.g.,
-                        <code>Bitmap</code>) but accesses it as another (e.g., <code>WindowObject</code>). This
-                        misalignment allows an attacker to manipulate object pointers.</p>
-                    <ol>
-                        <li><strong>Heap Feng Shui:</strong> The attacker manipulates the DWM heap layout by creating
-                            and destroying specific window objects.</li>
-                        <li><strong>Trigger:</strong> A specific DirectX call is made to trigger the type confusion.
-                        </li>
-                        <li><strong>Read/Write Primitive:</strong> The confusion grants an arbitrary Read/Write
-                            primitive in DWM's memory space.</li>
-                        <li><strong>Token Stealing:</strong> The attacker locates the <code>SYSTEM</code> token in
-                            kernel memory and copies it to their own process.</li>
-                    </ol>
-                </div>
-
-                <p><strong>Why DWM?</strong> DWM is an attractive target because it is reachable from the
-                    lowest-integrity sandboxes (like Chrome's renderer process). Breaking DWM is a common "Sandbox
-                    Escape" technique.</p>
-            </div>
-
-            <div class="content-section">
-                <h2>5. DEEP DIVE: Remote Desktop Services EoP (CVE-2026-21533)</h2>
-                <h3>Post-Compromise Lateral Movement</h3>
-                <p><strong>CVSS:</strong> 7.8 (High)</p>
-
-                <p>This vulnerability is a "gift" to ransomware operators who have already phished a user. Once inside a
-                    network with low-level access (e.g., a receptionist's PC), they need to escalate to Admin to deploy
-                    encryption tools or disable backups. CVE-2026-21533 allows exactly that.</p>
-
-                <p>The flaw involves improper validation of registry keys dealing with RPC (Remote Procedure Call)
-                    bindings for the Terminal Services (TermService). An attacker can modify a Service configuration key
-                    to point to a malicious DLL. When the RDS service restarts or handles a specific request, it loads
-                    the attacker's DLL with <code>NT AUTHORITY\SYSTEM</code> privileges.</p>
-
-                <div class="highlight-box">
-                    <h4>🔍 Detection Logic: Sigma Rule (Concept)</h4>
-                    <pre><code class="language-yaml">title: Suspicious Detection of RDS Registry Modification
+            <h3>Detection Logic: Sigma Rule (Concept)</h3>
+            <pre><code class="language-yaml">title: Suspicious Detection of RDS Registry Modification
 description: Detects modification of TermService parameters by non-admin processes
 status: experimental
 logsource:
@@ -587,94 +723,80 @@ detection:
             - '\poqexec.exe' # Windows Update usually touches this
             - '\tiworker.exe'
     condition: selection and not filter</code></pre>
+
+            <!-- Mitigation -->
+            <h2><i class="fas fa-shield-alt"></i> Mitigation Strategy</h2>
+
+            <div class="success-box">
+                <strong><i class="fas fa-check-circle"></i> Recommended Patching Tier Strategy</strong>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Priority Tier</th>
+                            <th>Target Systems</th>
+                            <th>Timeframe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tier 0 (Urgent)</strong></td>
+                            <td>Edge Gateways, Admin Workstations</td>
+                            <td>24 Hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tier 1 (High)</strong></td>
+                            <td>Standard User Workstations (Laptops)</td>
+                            <td>72 Hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tier 2 (Standard)</strong></td>
+                            <td>Backend Servers</td>
+                            <td>7 Days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Additional Hardening</h3>
+            <ul>
+                <li><strong>Attack Surface Reduction (ASR):</strong> Enable the ASR rule <i>"Block execution of
+                        potentially obfuscated scripts"</i>.</li>
+                <li><strong>Disable Legacy Components:</strong> If your organization does not require it, disable
+                    <strong>Internet Explorer 11</strong> engine via Group Policy.</li>
+                <li><strong>LNK Blocking:</strong> Block <code>.lnk</code> files at the email gateway.</li>
+            </ul>
+
+            <!-- Interaction Bar -->
+            <div class="interaction-bar">
+                <div class="like-section">
+                    <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                        <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                    </button>
+                </div>
+                <div class="action-buttons">
+                    <div class="share-buttons">
+                        <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <button onclick="copyLink()" class="share-btn" title="Copy Link">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                    <div class="button-separator"></div>
+                    <button onclick="printArticle()" class="print-btn" title="Print Article">
+                        <i class="fas fa-print"></i>
+                    </button>
                 </div>
             </div>
-
-            <div class="content-section">
-                <h2>6. Mitigation Strategy & Patch Priority</h2>
-                <p>Organizations must adopt a tiered patching strategy to handle this volume of threats while minimizing
-                    operational disruption.</p>
-
-                <div class="vuln-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Priority Tier</th>
-                                <th>Target Systems</th>
-                                <th>Timeframe</th>
-                                <th>Reasoning</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Tier 0 (Urgent)</strong></td>
-                                <td>Edge Gateways, Admin Workstations, RD Gateway</td>
-                                <td>24 Hours</td>
-                                <td>Prevent initial access (Shell) and massive privilege abuse (DWM/RDP).</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Tier 1 (High)</strong></td>
-                                <td>Standard User Workstations (Laptops)</td>
-                                <td>72 Hours</td>
-                                <td>Users are the primary vector for Shell and MSHTML phishing attacks.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Tier 2 (Standard)</strong></td>
-                                <td>Backend Servers (Database, File)</td>
-                                <td>7 Days</td>
-                                <td>Lower risk of user interaction, but still vulnerable to lateral movement.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3>Additional Hardening (Defense-in-Depth)</h3>
-                <ul>
-                    <li><strong>Attack Surface Reduction (ASR):</strong> Enable the ASR rule <i>"Block execution of
-                            potentially obfuscated scripts"</i> and <i>"Block executable files from running unless they
-                            meet a prevalence, age, or trusted list criterion"</i>.</li>
-                    <li><strong>Disable Legacy Components:</strong> If your organization does not require it, disable
-                        <strong>Internet Explorer 11</strong> engine via Group Policy to mitigate MSHTML vectors.</li>
-                    <li><strong>LNK Blocking:</strong> Block <code>.lnk</code> files at the email gateway
-                        (Exchange/Proofpoint) level. There is rarely a legitimate business need to email a shortcut
-                        file.</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h2>7. Conclusion</h2>
-                <p>Microsoft's February 2026 Patch Tuesday serves as a stark reminder that the "Zero-Day" is no longer a
-                    rare event—it is a commodity. With six concurrent exploited vulnerabilities, attackers are
-                    demonstrating robust supply chains for high-quality exploits.</p>
-                <p>The synergy between these bugs is what is most concerning: <strong>CVE-2026-21510</strong> gets them
-                    in the door (past SmartScreen), and <strong>CVE-2026-21519</strong> grants them specific SYSTEM
-                    control. This is a turnkey kill-chain for ransomware deployment.</p>
-                <p><em>Security teams are advised to audit their detection stacks for process anomalies stemming from
-                        `explorer.exe` and `dwm.exe` immediately after patching.</em></p>
-            </div>
-        </div>
-
-        <div class="interaction-bar">
-            <div>
-                <strong>Share this Intelligence:</strong>
-                <button class="share-btn"
-                    onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+window.location.href)">
-                    <span>Linked</span><span>in</span>
-                </button>
-                <button class="share-btn"
-                    onclick="navigator.clipboard.writeText(window.location.href);alert('Link copied!')">
-                    <span>Copy Link</span>
-                </button>
-            </div>
-        </div>
-    </main>
+        </article>
+    </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">TheHGTech</div>
-            <p>&copy; 2026 TheHGTech Security Research. All rights reserved.</p>
-        </div>
+    <footer class="m-footer m-only">
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
     </footer>
 </body>
 
