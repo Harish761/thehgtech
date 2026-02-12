@@ -83,6 +83,18 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
 
+  <!-- Feb 12, 2026 - Apple dyld Zero-Day CVE-2026-20700 -->
+  <url>
+    <loc>https://thehgtech.com/articles/apple-dyld-zero-day-cve-2026-20700.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-12</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/apple-dyld-zero-day-cve-2026-20700.png</image:loc>
+      <image:title>Apple dyld Zero-Day CVE-2026-20700 Memory Corruption Exploit Chain</image:title>
+    </image:image>
+  </url>
+
   <!-- Feb 11, 2026 - Windows Notepad RCE CVE-2026-20841 -->
   <url>
     <loc>https://thehgtech.com/articles/windows-notepad-rce-cve-2026-20841.html</loc>
