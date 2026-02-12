@@ -83,6 +83,18 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
 
+  <!-- Feb 12, 2026 - Microsoft Patch Tuesday February 2026 -->
+  <url>
+    <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-february-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-12</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/microsoft-patch-tuesday-february-2026.png</image:loc>
+      <image:title>Microsoft Patch Tuesday February 2026 6 Zero-Days</image:title>
+    </image:image>
+  </url>
+
   <!-- Feb 12, 2026 - Apple dyld Zero-Day CVE-2026-20700 -->
   <url>
     <loc>https://thehgtech.com/articles/apple-dyld-zero-day-cve-2026-20700.html</loc>
