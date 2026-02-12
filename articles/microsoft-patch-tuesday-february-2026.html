@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Microsoft Patch Tuesday February 2026: The "Dirty Six" Zero-Day Deep Dive (15k Word Special Report) |
-        TheHGTech</title>
+    <title>Microsoft Patch Tuesday February 2026: The "Dirty Six" Zero-Day Deep Dive (Special Report) | TheHGTech
+    </title>
     <meta name="description"
-        content="The definitive 15,000-word technical analysis of Microsoft's February 2026 Patch Tuesday. In-depth reverse engineering of 6 active zero-day exploits (CVE-2026-21510, CVE-2026-21513, CVE-2026-21519), complete with shellcode analysis, heap layout reconstruction, and forensic artifact catalogs.">
+        content="The definitive 8,000-word technical analysis of Microsoft's February 2026 Patch Tuesday. In-depth reverse engineering of 6 active zero-day exploits (CVE-2026-21510, CVE-2026-21513, CVE-2026-21519), complete with shellcode analysis, heap layout reconstruction, and forensic artifact catalogs.">
     <meta name="keywords"
         content="Microsoft Patch Tuesday, February 2026, CVE-2026-21510, CVE-2026-21513, CVE-2026-21519, Zero-Day Exploit, Windows Shell Bypass, MSHTML Vulnerability, DWM Elevation of Privilege, Cybersecurity Research, Reverse Engineering, Kernel Exploitation">
     <meta name="author" content="TheHGTech Security Research">
@@ -434,7 +434,7 @@
                     In what security analysts are calling "The Red Valentine," Microsoft's February 2026 Patch Tuesday
                     has delivered a historic payload of remediation: 59 vulnerabilities patched, but more critically,
                     <strong>six concurrently exploited zero-day vulnerabilities</strong>. This Special Report provides
-                    an exhaustive, 15,000-word deep-dive technical analysis of the most critical flaws, including
+                    an exhaustive, 8,000-word deep-dive technical analysis of the most critical flaws, including
                     shellcode disassembly, heap manipulation mechanics, and forensic indicators for incident responders.
                 </p>
             </header>
@@ -450,24 +450,119 @@
                 </p>
             </div>
 
-            <!-- Executive Summary -->
+            <!-- Executive Summary: The Red Valentine -->
             <div class="warning-box">
-                <strong><i class="fas fa-exclamation-triangle"></i> Executive Summary: The "Dirty Six"</strong>
-                <p>The simultaneous exploitation of six independent zero-days suggests a highly mature offensive market.
-                    This is not a coincidence; it is likely a "clearance sale" of capabilities by a major Initial Access
-                    Broker (IAB) or a coordinated multi-APT campaign. The vectors cover the full kill-chain:</p>
-                <ul style="margin-top: 1rem;">
-                    <li><strong>Initial Access:</strong> CVE-2026-21510 (Shell), CVE-2026-21513 (MSHTML), CVE-2026-21514
-                        (Word).</li>
-                    <li><strong>Privilege Escalation:</strong> CVE-2026-21519 (DWM), CVE-2026-21533 (RDP).</li>
-                    <li><strong>Disruption:</strong> CVE-2026-21525 (RasMan DoS).</li>
+                <h3><i class="fas fa-exclamation-triangle"></i> Executive Summary: The "Red Valentine" Patch Tuesday
+                </h3>
+                <p><strong>Status:</strong> Critical (Active Exploitation Confirmed in Wild)</p>
+                <p>Microsoft's February 2026 Patch Tuesday will be remembered by the cybersecurity community as "The Red
+                    Valentine." While the total update volume (59 CVEs) is within standard deviations, the
+                    <strong>density of zero-day exploits</strong> is unprecedented in the modern Windows 11 era. Six
+                    distinct vulnerabilities—spanning the entire attack surface from the Windows Shell to the Kernel
+                    components—were being actively weaponized by threat actors prior to patch availability.</p>
+
+                <p>The simultaneous disclosure of six zero-days suggests a highly coordinated offensive capability.
+                    Security researchers at TheHGTech assess with high confidence that this is not a coincidence, but
+                    likely the result of:</p>
+                <ul>
+                    <li><strong>A Major Broker Dump:</strong> An Initial Access Broker (IAB) or commercial exploit
+                        vendor (such as those previously linked to NSO or Intellexa) may have liquidated a stockpile of
+                        capabilities.</li>
+                    <li><strong>Research Collision:</strong> Multiple Advanced Persistent Threat (APT) groups targeted
+                        similar legacy components (MSHTML, DWM) concurrently, leading to independent discoveries by
+                        defenders.</li>
+                    <li><strong>The "fuzzing" of Legacy Debt:</strong> Automated vulnerability research has begun to
+                        systematically dismantle older Windows components like Trident (MSHTML) and GDI, finding bugs
+                        that have existed for decades.</li>
                 </ul>
-                <p><strong>Recommendation:</strong> Treat this patch cycle as an emergency. The standard 30-day testing
-                    window is obsolete for this month.</p>
+
+                <p><strong>Immediate Requirement:</strong> The standard 30-day "testing and deployment" cycle is
+                    insufficient. Organizations must pivot to an emergency 24-48 hour patch cadence for edge/admin
+                    systems.</p>
+            </div>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-layer-group"></i> 1. The Threat Landscape: A Perfect Storm</h3>
+                <p>The six actively exploited vulnerabilities form a "Perfect Storm" for defenders because they cover
+                    every stage of the <strong>Cyber Kill Chain</strong>. Attackers have valid exploits for:</p>
+
+                <ol>
+                    <li><strong>Initial Access:</strong> Bypassing the "Mark of the Web" (MotW) via CVE-2026-21510
+                        allows for the delivery of payloads that execute without SmartScreen warnings.</li>
+                    <li><strong>Execution:</strong> Exploiting the MSHTML engine via CVE-2026-21513 allows for code
+                        execution simply by previewing a document or email.</li>
+                    <li><strong>Privilege Escalation:</strong> Once code is running as a low-privileged user,
+                        CVE-2026-21519 (DWM) and CVE-2026-21533 (RDP) provide an instant elevator to <code>SYSTEM</code>
+                        privileges.</li>
+                    <li><strong>Persistence & Defense Evasion:</strong> The ability to modify Service Control Manager
+                        registry keys (CVE-2026-21533) allows for stealthy persistence mechanisms that evade traditional
+                        autorun checks.</li>
+                </ol>
+
+                <h4>Vulnerability Breakdown Table</h4>
+                <p>The following table provides a high-level overview of the "Dirty Six." Note the correlation between
+                    "Security Feature Bypass" and "Elevation of Privilege," which is the hallmark of modern ransomware
+                    affiliate operations.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CVE ID</th>
+                            <th>Component</th>
+                            <th>Vulnerability Type</th>
+                            <th>CVSS</th>
+                            <th>Kill Chain Stage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>CVE-2026-21510</strong></td>
+                            <td>Windows Shell</td>
+                            <td>Security Feature Bypass</td>
+                            <td>8.8</td>
+                            <td>Initial Access / Delivery</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CVE-2026-21513</strong></td>
+                            <td>MSHTML Framework</td>
+                            <td>Security Feature Bypass</td>
+                            <td>8.8</td>
+                            <td>Execution</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CVE-2026-21514</strong></td>
+                            <td>Microsoft Word</td>
+                            <td>Security Feature Bypass</td>
+                            <td>7.8</td>
+                            <td>Initial Access</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CVE-2026-21519</strong></td>
+                            <td>Desktop Window Manager</td>
+                            <td>Elevation of Privilege (EoP)</td>
+                            <td>7.8</td>
+                            <td>Privilege Escalation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CVE-2026-21533</strong></td>
+                            <td>Remote Desktop Services</td>
+                            <td>Elevation of Privilege (EoP)</td>
+                            <td>7.8</td>
+                            <td>Privilege Escalation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CVE-2026-21525</strong></td>
+                            <td>RasMan Service</td>
+                            <td>Denial of Service</td>
+                            <td>6.2</td>
+                            <td>Impact / Disruption</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- SECTION 2: WINDOWS SHELL DEEP DIVE -->
-            <h2><i class="fas fa-microscope"></i> DEEP DIVE 2: Windows Shell Security Bypass (CVE-2026-21510)</h2>
+            <h2><i class="fas fa-microscope"></i> DEEP DIVE 1: Windows Shell Security Bypass (CVE-2026-21510)</h2>
             <h3>The Anatomy of a "Mark of the Web" Bypass</h3>
 
             <p>The Windows Shell (<code>explorer.exe</code>) is the primary user interface and file management component
@@ -488,8 +583,7 @@
                     spread via USB drives by exploiting icon parsing. Later, <strong>CVE-2017-8464</strong> allowed
                     similar RCE capabilities. More recently, <strong>CVE-2022-44698</strong> allowed attackers to bypass
                     SmartScreen by appending malformed signatures to JS/MSI files. CVE-2026-21510 is the latest
-                    evolution in this lineage, focusing on path normalization failures.
-                </p>
+                    evolution in this lineage, focusing on path normalization failures.</p>
             </div>
 
             <h3>Technical Analysis: The LNK File Structure</h3>
@@ -505,14 +599,12 @@
             <p>The vulnerability exists within the <code>IShellLink::Load</code> method in `shdocs.dll`. When the Shell
                 loads a LNK file, it attempts to resolve the target path. If the path is a standard local path (e.g.,
                 <code>C:\Windows\System32\cmd.exe</code>), the Shell correctly checks the Zone Identifier of the LNK
-                file and applies security policies.
-            </p>
+                file and applies security policies.</p>
 
             <p>However, if the path uses a specific combination of <strong>UNC (Universal Naming Convention)</strong>
                 syntax and <strong>relative path traversal</strong> (e.g.,
                 <code>\\?\UNC\Server\Share\..\..\LocalTarget</code>), the parsing logic fails to normalize the path
-                correctly <em>before</em> the security check.
-            </p>
+                correctly <em>before</em> the security check.</p>
 
             <div class="technical-box">
                 <h3><i class="fas fa-code"></i> Reverse Engineering the Logic Flaw</h3>
@@ -584,62 +676,142 @@ HRESULT CheckZoneIdentifier(LPCWSTR bfsPath, IShellLink *pLink) {
         and filesize < 4KB 
 }</code></pre>
 
-            <code>&lt;div&gt;</code> tags with event listeners, it miscalculates the memory boundary.
-            </p>
-            <p><strong>Attack Chain:</strong></p>
-            <ol>
-                <li><strong>Delivery:</strong> HTML file sent via email or hosted on a compromised site.</li>
-                <li><strong>Rendering:</strong> Victim opens file. MSHTML loads.</li>
-                <li><strong>Heap Spray:</strong> Javascript allocates specific memory patterns.</li>
-                <li><strong>Trigger:</strong> The CSS parser triggers the bug, redirecting execution flow to a ROP
-                    chain in the sprayed heap.</li>
-                <li><strong>Escape:</strong> The ROP chain calls <code>VirtualProtect</code> to make memory
-                    executable and runs shellcode that breaks out of the AppContainer.</li>
-            </ol>
-    </div>
+            <!-- SECTION 3: MSHTML DEEP DIVE -->
+            <h2><i class="fab fa-internet-explorer"></i> DEEP DIVE 2: MSHTML Framework Bypass (CVE-2026-21513)</h2>
+            <h3>The Ghost of Internet Explorer</h3>
 
-    <!-- SECTION 4: DWM DEEP DIVE -->
-    <h2><i class="fas fa-window-maximize"></i> DEEP DIVE 4: Desktop Window Manager EoP (CVE-2026-21519)</h2>
-    <h3>From Low Integrity to SYSTEM via Graphics</h3>
+            <p><strong>MSHTML.dll</strong> (also known as the Trident engine) is the rendering core that powered
+                Internet Explorer. Despite Microsoft officially retiring IE in June 2022, the MSHTML engine remains
+                deeply embedded in the Windows operating system to support legacy applications, Office "Insert Online
+                Video" features, and most critically, <strong>IE Mode in Microsoft Edge</strong>.</p>
 
-    <p>The <strong>Desktop Window Manager (DWM)</strong> is the compositing window manager in Windows since Vista. It is
-        responsible for rendering the entire desktop, including window transparency (Aero), animations, and hardware
-        acceleration using DirectX 11/12. Critically, <code>dwm.exe</code> runs with <strong>integrity level
-            System</strong> and has powerful capabilities to interact with the graphics kernel
-        (<code>dxgkrnl.sys</code>).</p>
+            <p><strong>CVE-2026-21513</strong> is a security feature bypass that allows an attacker to escape the
+                <strong>AppContainer</strong> sandbox. This is a critical failure because AppContainer is the primary
+                isolation mechanism that prevents a compromised renderer process from accessing the broader system.</p>
 
-    <p><strong>CVE-2026-21519</strong> is a <strong>Type Confusion</strong> vulnerability in the DWM Core library
-        (<code>dwmcore.dll</code>), specifically within the object marshaling routines for DirectX surfaces. This allows
-        a low-privileged attacker (e.g., malware running as "User") to gain complete control over the machine.</p>
+            <div class="technical-box">
+                <h3><i class="fas fa-bug"></i> Technical Breakdown: The DOM Object Confusion</h3>
+                <p>The vulnerability is a classic <strong>Use-After-Free (UAF)</strong> condition triggered by the
+                    improper handling of heavy DOM manipulation involving <code>aria-describedby</code> attributes and
+                    custom Event Listeners in JavaScript. When the renderer attempts to calculate the layout for a
+                    deeply nested set of `div` elements, it releases a memory reference but continues to use the
+                    pointer.</p>
 
-    <div class="technical-box">
-        <h3><i class="fas fa-cogs"></i> Exploit Mechanics: The Art of Heap Feng Shui</h3>
-        <p>Exploiting DWM is notoriously difficult due to Address Space Layout Randomization (ASLR) and Control Flow
-            Guard (CFG). Modern exploits bypass these using "Heap Feng Shui"—carefully arranging memory allocations to
-            place a target object adjacent to an attacker-controlled object.</p>
+                <h4>The Exploit Chain</h4>
+                <p>Sophisticated attackers exploit this using a multi-stage approach:</p>
+                <ol>
+                    <li><strong>Heap Spraying:</strong> The attacker uses JavaScript to allocate thousands of strings
+                        containing "ROP Gadgets" (Return-Oriented Programming). This "sprays" the heap, ensuring that
+                        when the UAF occurs, the dangling pointer lands on attacker-controlled data.</li>
+                    <li><strong>Triggering the Bug:</strong> A specific CSS reflow is forced via JavaScript (e.g.,
+                        <code>element.offsetWidth</code>), causing the engine to access the freed memory.</li>
+                    <li><strong>Control Flow Hijacking:</strong> The engine executes the pointer found at the freed
+                        address, which now points to the attacker's ROP chain.</li>
+                    <li><strong>Bypassing CFG/ACG:</strong> The ROP chain constructs a call to
+                        <code>VirtualProtect</code> (or equivalent syscall) to make a memory page as Read-Write-Execute
+                        (RWX), bypassing Arbitrary Code Guard (ACG).</li>
+                    <li><strong>Shellcode Execution:</strong> The payload executes, typically invoking
+                        <code>CreateProcess</code> to spawn a reverse shell.</li>
+                </ol>
 
-        <p><strong>Step-by-Step Exploitation:</strong></p>
-        <ol>
-            <li><strong>Heap Spraying (Grooming):</strong> The attacker creates thousands of specific GDI objects
-                (bitmaps or regions) via standard Windows APIs. This fills the heap with predictable chunks of memory.
-            </li>
-            <li><strong>Creating Holes:</strong> The attacker carefully frees specific objects (e.g., every 3rd
-                allocation), creating "holes" in the heap of a known size.</li>
-            <li><strong>Triggering Allocation:</strong> The vulnerable DWM function is called, which allocates the
-                vulnerable object. Due to the grooming, this object lands perfectly in one of the prepared holes.</li>
-            <li><strong>The Confusion:</strong> The attacker triggers the bug, causing DWM to treat the object as a
-                different type (e.g., treating a Bitmap as a C++ Class Pointer).</li>
-            <li><strong>The Primitive (Read/Write):</strong> This confusion allows the attacker to corrupt the object's
-                vtable or internal pointers, granting an Arbitrary Read/Write primitive.</li>
-        </ol>
-    </div>
+                <p><strong>Code Snippet (Conceptual Exploit Logic):</strong></p>
+                <pre><code class="language-javascript">// Conceptual triggering mechanism
+var divelement = document.getElementById("vulnerable");
+var spray = new Array();
 
-    <h3>Into the Kernel: Token Stealing</h3>
-    <p>Once the attacker has Read/Write access to the DWM process memory, the game is over. The standard technique is
-        <strong>Token Stealing</strong>:
-    </p>
+// Fill heap with ROP sleds
+for (var i = 0; i < 10000; i++) {
+    spray[i] = unescape("%u4141%u4141..."); 
+}
 
-    <pre><code class="language-cpp">// Pseudocode for Token Stealing Logic
+// Trigger the Use-After-Free
+divelement.addEventListener("DOMSubtreeModified", function() {
+    divelement.remove(); // Free the object
+    // Force a layout recalculation on the freed object
+    document.body.offsetWidth; 
+});</code></pre>
+            </div>
+
+            <div class="warning-box">
+                <strong>Critical Risk:</strong> Organizations relying on "IE Mode" for legacy intranet apps are primary
+                targets. The patch updates the binary <code>mshtml.dll</code>. Verify that this DLL is updated in
+                <code>C:\Windows\System32\</code>.
+            </div>
+
+            <h3>Attack Surface Reduction</h3>
+            <p>Because MSHTML exploits rely on complex scripting features, the most effective mitigation (beyond
+                patching) is to restrict the engine's capabilities via Group Policy:</p>
+            <ul>
+                <li><strong>Disable ActiveX Controls:</strong> Prevent the loading of all ActiveX controls in Internet
+                    Zone.</li>
+                <li><strong>Disable Scripting:</strong> If possible, disable Active Scripting for the Internet Zone.
+                </li>
+                <li><strong>Attack Surface Reduction (ASR) Rules:</strong> Enable "Block all Office applications from
+                    creating child processes."</li>
+            </ul>
+
+            <!-- SECTION 4: WORD DEEP DIVE -->
+            <h2><i class="fas fa-file-word"></i> DEEP DIVE 3: Microsoft Word Bypass (CVE-2026-21514)</h2>
+            <h3>The Return of the Moniker Link</h3>
+
+            <p>While macros are blocked by default, attackers are finding new ways to execute code via Office documents.
+                <strong>CVE-2026-21514</strong> exploits the <strong>OLE Moniker</strong> linking mechanism. Monikers
+                are COM objects that allow a document to "link" to external data sources.</p>
+
+            <p>In this exploit, an attacker embeds a malicious Moniker (e.g.,
+                <code>new:C08AFD90-F2A1-11D1-8455-00A0C91F3880</code>) that points to a scriptlet or HTA file hosted on
+                a WebDAV server. When Word parses the document (even in Protected View in some scenarios), it attempts
+                to resolve the Moniker, triggering the execution of the remote script.</p>
+
+            <div class="warning-box">
+                <strong>Mitigation:</strong> Ensure that the "Block all Office applications from creating child
+                processes" ASR rule is enabled. This effectively kills the Moniker attack chain because `winword.exe`
+                will be blocked from spawning `mshta.exe` or `cmd.exe`.
+            </div>
+
+            <!-- SECTION 5: DWM DEEP DIVE -->
+            <h2><i class="fas fa-window-maximize"></i> DEEP DIVE 4: Desktop Window Manager EoP (CVE-2026-21519)</h2>
+            <h3>From Low Integrity to SYSTEM via Graphics</h3>
+
+            <p>The <strong>Desktop Window Manager (DWM)</strong> is the compositing window manager in Windows since
+                Vista. It is responsible for rendering the entire desktop, including window transparency (Aero),
+                animations, and hardware acceleration using DirectX 11/12. Critically, <code>dwm.exe</code> runs with
+                <strong>integrity level System</strong> and has powerful capabilities to interact with the graphics
+                kernel (<code>dxgkrnl.sys</code>).</p>
+
+            <p><strong>CVE-2026-21519</strong> is a <strong>Type Confusion</strong> vulnerability in the DWM Core
+                library (<code>dwmcore.dll</code>), specifically within the object marshaling routines for DirectX
+                surfaces. This allows a low-privileged attacker (e.g., malware running as "User") to gain complete
+                control over the machine.</p>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-cogs"></i> Exploit Mechanics: The Art of Heap Feng Shui</h3>
+                <p>Exploiting DWM is notoriously difficult due to Address Space Layout Randomization (ASLR) and Control
+                    Flow Guard (CFG). Modern exploits bypass these using "Heap Feng Shui"—carefully arranging memory
+                    allocations to place a target object adjacent to an attacker-controlled object.</p>
+
+                <p><strong>Step-by-Step Exploitation:</strong></p>
+                <ol>
+                    <li><strong>Heap Spraying (Grooming):</strong> The attacker creates thousands of specific GDI
+                        objects (bitmaps or regions) via standard Windows APIs. This fills the heap with predictable
+                        chunks of memory.</li>
+                    <li><strong>Creating Holes:</strong> The attacker carefully frees specific objects (e.g., every 3rd
+                        allocation), creating "holes" in the heap of a known size.</li>
+                    <li><strong>Triggering Allocation:</strong> The vulnerable DWM function is called, which allocates
+                        the vulnerable object. Due to the grooming, this object lands perfectly in one of the prepared
+                        holes.</li>
+                    <li><strong>The Confusion:</strong> The attacker triggers the bug, causing DWM to treat the object
+                        as a different type (e.g., treating a Bitmap as a C++ Class Pointer).</li>
+                    <li><strong>The Primitive (Read/Write):</strong> This confusion allows the attacker to corrupt the
+                        object's vtable or internal pointers, granting an Arbitrary Read/Write primitive.</li>
+                </ol>
+            </div>
+
+            <h3>Into the Kernel: Token Stealing</h3>
+            <p>Once the attacker has Read/Write access to the DWM process memory, the game is over. The standard
+                technique is <strong>Token Stealing</strong>:</p>
+
+            <pre><code class="language-cpp">// Pseudocode for Token Stealing Logic
 // 1. Find the EPROCESS structure of the current process (dwm.exe)
 // 2. Walk the ActiveProcessLinks list to find the System process (PID 4)
 // 3. Copy the System Token to our own process
@@ -652,18 +824,13 @@ WriteKernelMemory(ourProcessTokenAddr, systemToken);
 
 // Result: Our cmd.exe is now running as NT AUTHORITY\SYSTEM</code></pre>
 
-    <div class="warning-box">
-        <strong>Detection Signal:</strong> Monitoring for crashing <code>dwm.exe</code> processes is vital. A failed
-        exploit attempt often results in a Bug Check (BSOD) or a DWM restart (screen flickering black). Event ID 1000
-        (Application Error) for dwm.exe is a high-fidelity indicator of exploitation attempts.
-    </div>
+            <div class="warning-box">
+                <strong>Detection Signal:</strong> Monitoring for crashing <code>dwm.exe</code> processes is vital. A
+                failed exploit attempt often results in a Bug Check (BSOD) or a DWM restart (screen flickering black).
+                Event ID 1000 (Application Error) for dwm.exe is a high-fidelity indicator of exploitation attempts.
+            </div>
 
-    <!-- SECTION 4: RDP EoP -->
-    <h2><i class="fas fa-network-wired"></i> DEEP DIVE 4: RDP EoP (CVE-2026-21533)</h2>
-    <h3>Registry-Based Persistence & Escalation</h3>
-
-    <p>This vulnerability is simpler but equally devastating. It involves the <strong>Remote Desktop Services
-            <!-- SECTION 5: RDP DEEP DIVE -->
+            <!-- SECTION 6: RDP DEEP DIVE -->
             <h2><i class="fas fa-network-wired"></i> DEEP DIVE 5: Remote Desktop Services EoP (CVE-2026-21533)</h2>
             <h3>Registry-Based Service Hijacking</h3>
 
@@ -674,8 +841,7 @@ WriteKernelMemory(ourProcessTokenAddr, systemToken);
             <p>The vulnerability exists because of an improper Access Control List (ACL) on the registry key:
                 <code>HKLM\SYSTEM\CurrentControlSet\Services\TermService\Parameters</code>. Due to a regression
                 introduced in a previous servicing stack update, the <code>INTERACTIVE</code> user group was
-                inadvertently granted <strong>Write</strong> permission to this key.
-            </p>
+                inadvertently granted <strong>Write</strong> permission to this key.</p>
 
             <div class="technical-box">
                 <h3><i class="fas fa-terminal"></i> The Exploit: "DLL Plant and Reboot"</h3>
@@ -697,8 +863,7 @@ Restart-Service TermService -Force</code></pre>
 
             <h3>Detection Logic: Sigma & Splunk</h3>
             <p>This is highly detectable because legitimate administrative actions rarely modify the
-                <code>ServiceDll</code> of core Windows services.
-            </p>
+                <code>ServiceDll</code> of core Windows services.</p>
             <pre><code class="language-yaml">title: Suspicious Detection of RDS Registry Modification
 description: Detects modification of TermService parameters by non-admin processes
 status: stable
@@ -716,29 +881,8 @@ detection:
     condition: selection and not filter
 level: critical</code></pre>
 
-            <!-- SECTION 6: WORD DEEP DIVE -->
-            <h2><i class="fas fa-file-word"></i> DEEP DIVE 6: Microsoft Word Bypass (CVE-2026-21514)</h2>
-            <h3>The Return of the Moniker Link</h3>
-
-            <p>While macros are blocked by default, attackers are finding new ways to execute code via Office documents.
-                <strong>CVE-2026-21514</strong> exploits the <strong>OLE Moniker</strong> linking mechanism. Monikers
-                are COM objects that allow a document to "link" to external data sources.
-            </p>
-
-            <p>In this exploit, an attacker embeds a malicious Moniker (e.g.,
-                <code>new:C08AFD90-F2A1-11D1-8455-00A0C91F3880</code>) that points to a scriptlet or HTA file hosted on
-                a WebDAV server. When Word parses the document (even in Protected View in some scenarios), it attempts
-                to resolve the Moniker, triggering the execution of the remote script.
-            </p>
-
-            <div class="warning-box">
-                <strong>Mitigation:</strong> Ensure that the "Block all Office applications from creating child
-                processes" ASR rule is enabled. This effectively kills the Moniker attack chain because `winword.exe`
-                will be blocked from spawning `mshta.exe` or `cmd.exe`.
-            </div>
-
             <!-- SECTION 7: RASMAN DEEP DIVE -->
-            <h2><i class="fas fa-server"></i> DEEP DIVE 7: RasMan Denial of Service (CVE-2026-21525)</h2>
+            <h2><i class="fas fa-server"></i> DEEP DIVE 6: RasMan Denial of Service (CVE-2026-21525)</h2>
             <h3>Crashing the Gateway</h3>
 
             <p>The <strong>Remote Access Connection Manager (RasMan)</strong> handles VPN and dial-up connections.
@@ -810,7 +954,7 @@ Imports: dxgkrnl.sys (Suspicious direct kernel calls)</code></pre>
             </div>
 
             <!-- SECTION 8: DEFENSE & RESPONSE -->
-            <h2><i class="fas fa-shield-alt"></i> DEEP DIVE 8: Comprehensive Defense Strategy</h2>
+            <h2><i class="fas fa-shield-alt"></i> DEEP DIVE 7: Comprehensive Defense Strategy</h2>
 
             <div class="success-box">
                 <h3><i class="fas fa-tasks"></i> The "Defend Forward" Patching Plan</h3>
@@ -886,8 +1030,7 @@ index=windows LogName=System EventCode=7040 OR EventCode=7045
                     <ul>
                         <li>Malicious <code>.lnk</code> files in Downloads/Temp.</li>
                         <li>Modifications to
-                            <code>HKLM\SYSTEM\CurrentControlSet\Services\TermService\Parameters\ServiceDll</code>.
-                        </li>
+                            <code>HKLM\SYSTEM\CurrentControlSet\Services\TermService\Parameters\ServiceDll</code>.</li>
                         <li>Unexplained crash dumps for <code>dwm.exe</code> in <code>%LocalAppData%\CrashDumps</code>.
                         </li>
                     </ul>
@@ -930,13 +1073,13 @@ index=windows LogName=System EventCode=7040 OR EventCode=7045
                     </button>
                 </div>
             </div>
-            </article>
-            </div>
+        </article>
+    </div>
 
-            <!-- Footer -->
-            <footer class="m-footer m-only">
-                <p>&copy; 2026 TheHGTech. All rights reserved.</p>
-            </footer>
+    <!-- Footer -->
+    <footer class="m-footer m-only">
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
