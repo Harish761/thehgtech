@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "microsoft-patch-tuesday-february-2026",
+      "title": "Microsoft Patch Tuesday February 2026: 6 Zero-Days Under Active Attack",
+      "date": "February 12, 2026",
+      "category": "Patch Tuesday",
+      "badge": "CRITICAL",
+      "excerpt": "Microsoft patches 59 flaws, with 6 actively exploited zero-days including Windows Shell and MSHTML bypasses. Immediate patching required for critical CVE-2026-21510 and CVE-2026-21513.",
+      "image": "images/articles/microsoft-patch-tuesday-february-2026.png",
+      "tags": [
+        "Microsoft",
+        "Patch Tuesday",
+        "Zero-Day",
+        "CVE-2026-21510",
+        "CVE-2026-21513",
+        "Windows Security"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/microsoft-patch-tuesday-february-2026.html"
+    },
+    {
       "id": "apple-dyld-zero-day-cve-2026-20700",
       "title": "Apple dyld Zero-Day (CVE-2026-20700): Memory Corruption Exploit Chain Used in Sophisticated Spyware Attacks",
       "date": "February 12, 2026",
