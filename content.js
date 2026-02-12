@@ -5,6 +5,119 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 12 2026",
+            "headline": "300K Users Hit by Fake AI Extensions—Credentials Stolen",
+            "title": "Malicious AI Chrome Extensions Steal User Credentials and Emails",
+            "content": "A recent discovery by cybersecurity experts has revealed a set of 30 malicious Chrome extensions masquerading as AI assistants, impacting over 300,000 users. These extensions are designed to steal user credentials, email content, and browsing information by integrating themselves into the Chrome browser environment. The extensions exploit users&#x27; trust in AI tools, highlighting a growing trend of cybercriminals leveraging AI branding for malicious purposes. Users are advised to review their installed extensions and remove any suspicious or unverified ones immediately. This incident underscores the importance of maintaining vigilance when installing browser extensions, especially those claiming advanced AI capabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-ai-chrome-extensions-with-300k-users-steal-credentials-emails/",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "XWorm RAT Evades Detection—Exploits Old Office Flaw",
+            "title": "Phishing Campaign Uses Office Vulnerability and XWorm RAT for Stealth Attacks",
+            "content": "Fortinet researchers have identified a phishing campaign exploiting an old Microsoft Office vulnerability to deliver the XWorm Remote Access Trojan (RAT). This campaign uses a fileless execution method to bypass traditional security measures, deploying the malware via malicious Excel add-ins delivered through multi-themed phishing emails. The exploitation of a known Office vulnerability highlights the ongoing risk posed by unpatched software. Organizations should ensure all systems are updated with the latest security patches and educate employees on recognizing phishing attempts. This attack emphasizes the need for robust email security and endpoint protection strategies.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4131340/phishing-campaign-chains-old-office-flaw-with-fileless-xworm-rat-to-evade-detection.html",
+            "relatedResources": [
+                {
+                    "label": "Fortinet Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "Meta Faces Trial Over Child Safety Failures",
+            "title": "Meta on Trial for Alleged Child Exploitation and Addiction Issues",
+            "content": "Meta is currently facing landmark trials over allegations that it failed to protect children from sexual exploitation, grooming, and addiction-driven design on its platforms. The trials argue that Meta&#x27;s social media services have not adequately safeguarded young users, contributing to harmful online environments. This legal battle could set a significant precedent for how tech companies are held accountable for user safety, especially concerning minors. As scrutiny on tech giants intensifies, companies may need to reassess their safety protocols and user protection measures. Stakeholders in the tech industry should monitor this trial closely for its potential implications on regulatory practices.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/family-and-parenting/2026/02/child-exploitation-grooming-and-social-media-addiction-claims-put-meta-on-trial",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "ApolloMD Breach Exposes 626K Patients&#x27; Data",
+            "title": "ApolloMD Data Breach Affects Over 600,000 Individuals",
+            "content": "ApolloMD has confirmed a data breach impacting 626,000 individuals, involving the theft of personal information from patients of affiliated physicians and practices. The breach underscores the vulnerability of healthcare data and the critical need for enhanced cybersecurity measures in the sector. Affected individuals may be at risk of identity theft or fraud, emphasizing the importance of monitoring financial accounts and credit reports. Healthcare organizations are urged to review and bolster their data protection strategies to prevent future incidents. This breach highlights the ongoing challenges in securing sensitive medical data against increasingly sophisticated cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/apollomd-data-breach-impacts-626000-individuals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "Palo Alto Buys CyberArk for $25B—Boosts Access Control",
+            "title": "Palo Alto Networks Acquires CyberArk to Enhance Identity Security",
+            "content": "Palo Alto Networks has completed a $25 billion acquisition of CyberArk, a move aimed at strengthening its identity security and privileged access management capabilities. This strategic acquisition integrates CyberArk&#x27;s solutions into Palo Alto&#x27;s platform, providing comprehensive access control across enterprise environments. By incorporating identity security into its core offerings, Palo Alto seeks to address the growing demand for robust access management in the face of escalating cyber threats. Organizations can expect enhanced security measures that protect against unauthorized access and credential theft. This acquisition reflects a broader industry trend towards consolidating security capabilities to offer end-to-end solutions.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4131325/palo-alto-closes-privileged-access-gap-with-25b-cyberark-acquisition.html",
+            "relatedResources": [
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "Attackers Exploit Known Tools—ThreatsDay Bulletin Highlights",
+            "title": "ThreatsDay Bulletin: Attackers Leverage Familiar Tools and Exposures",
+            "content": "The latest ThreatsDay Bulletin reveals a consistent trend of attackers exploiting known tools and overlooked exposures rather than developing new exploits. This week&#x27;s threat activity highlights the quiet misuse of trusted software and workflows, emphasizing the need for vigilance in routine operations. The bulletin also notes increased attention on access controls and the integration of AI-driven security measures to counteract these tactics. Security professionals should review their current practices and ensure that all systems are continuously monitored for suspicious activity. Staying informed about common exploitation techniques is crucial for maintaining a robust security posture.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/threatsday-bulletin-ai-prompt-rce.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "Apple Patches Zero-Day—Secure Devices Now",
+            "title": "Apple Issues Patch for Actively Exploited Zero-Day Vulnerability",
+            "content": "Apple has released security updates for all devices, addressing an actively exploited zero-day vulnerability tracked as CVE-2026-20700. This flaw could potentially allow attackers to gain control over affected devices, posing significant security risks to users. The vulnerability underscores the critical importance of timely updates in protecting against emerging threats. Users are strongly advised to update their devices immediately to mitigate potential exploitation. This patch is part of Apple&#x27;s ongoing efforts to fortify device security and protect its user base from sophisticated cyber threats.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/apple-patches-zero-day-flaw-that-could-let-attackers-take-control-of-devices",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
             "headline": "ISC Stormcast Highlights—Feb 12: Key Security Updates",
             "title": "ISC Stormcast for February 12th, 2026: Essential Security Developments",
             "content": "The SANS Internet Storm Center&#x27;s Stormcast for February 12th, 2026, provides a comprehensive overview of the latest cybersecurity threats and updates. Key topics include recent vulnerabilities in widely-used software, emerging threat actor tactics, and new security patches. The podcast emphasizes the importance of timely updates and vigilance against evolving cyber threats. As always, the ISC advises organizations to maintain robust security practices and stay informed about the latest developments in the cybersecurity landscape. This episode continues the ISC&#x27;s commitment to providing actionable intelligence for security professionals.",
@@ -70,26 +183,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Feb 11 2026",
-            "headline": "Windows 11 Notepad Flaw Allows Silent Code Execution",
-            "title": "Windows 11 Notepad Vulnerability Enables Remote Code Execution",
-            "content": "Microsoft has patched a critical vulnerability in Windows 11 Notepad that allowed attackers to execute code by tricking users into clicking specially crafted Markdown links. This flaw, categorized as a remote code execution (RCE) vulnerability, enabled the execution of local or remote programs without triggering Windows security warnings. Users are urged to update their systems immediately to protect against potential exploitation. This incident highlights the need for continuous vigilance and timely updates to safeguard against emerging threats in commonly used applications.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-notepad-flaw-let-files-execute-silently-via-markdown-links/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -112,16 +205,101 @@ const websiteContent = {
             "source": "darkreading",
             "sourceUrl": "https://www.darkreading.com/events/rsac-2026-conference",
             "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "title": "GISEC GLOBAL 2026 Unveils Cybersecurity Innovations in Middle East and Africa",
-            "content": "GISEC GLOBAL 2026, the largest cybersecurity event in the Middle East and Africa, has kicked off, showcasing the latest advancements in cybersecurity technology and strategy. The event serves as a platform for industry leaders to discuss emerging threats and innovative solutions. This year&#x27;s focus includes AI-driven security tools, advanced threat detection systems, and new compliance frameworks. Professionals from various sectors, including government and private enterprises, are attending to gain insights into protecting critical infrastructure. The event highlights the region&#x27;s growing importance in the global cybersecurity landscape, emphasizing collaboration and knowledge sharing. Attendees are encouraged to engage with workshops and panels to stay ahead of evolving cyber threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/events/gisec-global"
         }
     ],
     "aiShorts": [
+        {
+            "date": "Feb 12 2026",
+            "headline": "$8K Robot Folds Laundry—Only in the Bay Area",
+            "title": "Weave&#x27;s Isaac 0 Robot Offers Limited Laundry Folding for $7,999",
+            "content": "Weave, a Bay Area startup, has launched Isaac 0, a robot designed to fold laundry for a hefty $7,999 plus a $250 deposit. The stationary robot takes between 30 to 90 minutes to fold a single load. While it offers a novel solution for those who dislike folding laundry, its high price and limited availability to the Bay Area may restrict its appeal. The device represents a niche application of robotics, emphasizing convenience over cost-effectiveness. Potential buyers should consider whether the time saved justifies the investment.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/877851/weave-isaac-robot-fold-laundry",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "Chrome&#x27;s Auto Browse—A Double-Edged Sword",
+            "title": "Chrome&#x27;s Auto Browse Agent: Capable Yet Unpredictable Web Navigation",
+            "content": "Chrome&#x27;s Auto Browse agent, designed to autonomously surf the web, has shown both impressive capabilities and significant drawbacks. While it can navigate complex web environments, it also risks malfunctioning, potentially leading to security vulnerabilities or data breaches. This dual nature highlights the challenges of developing autonomous browsing technologies. Users and developers should be cautious, ensuring robust testing and monitoring to mitigate potential risks. As AI continues to evolve, the balance between automation and control remains a critical consideration.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/02/tested-how-chromes-auto-browse-agent-handles-common-web-tasks/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "RentAHuman: AI Hires Humans for Hype",
+            "title": "RentAHuman Platform Engages Humans to Promote AI Startups",
+            "content": "RentAHuman, a platform where AI agents hire humans, primarily serves as a tool for promoting AI startups rather than revolutionizing gig work. Users report that the system is filled with bots aiming to leverage human presence in marketing campaigns, turning participants into mere components of the AI hype machine. This raises questions about the ethical implications and sustainability of such platforms. As AI continues to intertwine with human labor, the gig economy faces new challenges in defining meaningful work.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/i-tried-rentahuman-ai-agents-hired-me-to-hype-their-ai-startups/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "AI Tools Ease Online Crime—Threats Escalate",
+            "title": "AI Technologies Facilitate Online Crime, Raising Security Concerns",
+            "content": "Cybersecurity expert Anton Cherepanov discovered a file on VirusTotal highlighting the ease with which AI can facilitate online crime. The file, a potential virus, underscores the increasing sophistication of AI-driven cyberattacks. With tools becoming more accessible, even low-skill attackers can launch effective campaigns, posing significant risks to individuals and organizations. This trend necessitates enhanced cybersecurity measures and awareness to combat the growing threat landscape. Professionals must stay informed about AI advancements to protect against these evolving threats.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/02/12/1132386/ai-already-making-online-swindles-easier/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "Chinese AI—A Year of Transformation",
+            "title": "Chinese Open-Source AI Advances Mark a Turning Point",
+            "content": "Over the past year, Chinese AI has experienced significant growth, highlighted by the release of DeepSeek&#x27;s R1 reasoning model in January 2025. This development has spurred innovation across Chinese companies, positioning them as key players in the global AI landscape. The increased focus on open-source models fosters collaboration and accelerates technological advancement. As China continues to invest in AI, international stakeholders should monitor these developments closely, recognizing both the opportunities and competitive challenges they present.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/02/12/1132811/whats-next-for-chinese-open-source-ai/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "State Hackers Use AI—Phishing Gets Smarter",
+            "title": "State-Sponsored Hackers Employ AI for Enhanced Cyberattacks",
+            "content": "State-sponsored hackers from Iran, North Korea, China, and Russia are utilizing advanced AI models like Google&#x27;s Gemini to refine their cyberattack strategies. These threat actors are crafting sophisticated phishing campaigns and other malicious activities with increased precision and effectiveness. The use of AI in state-sponsored cyber operations highlights the growing complexity of the threat landscape. Organizations must bolster their cybersecurity defenses and stay vigilant against these enhanced tactics to protect sensitive data and infrastructure.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/state-sponsored-hackers-ai-cyberattacks-google/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "OpenEnv Tests AI Tools in Real-World Scenarios",
+            "title": "OpenEnv Framework Evaluates AI Tool-Using Agents in Practical Applications",
+            "content": "The OpenEnv framework has been introduced to assess AI agents&#x27; ability to use tools in real-world environments. This initiative aims to bridge the gap between theoretical AI capabilities and practical implementation. By evaluating agents in diverse scenarios, OpenEnv provides insights into their effectiveness and limitations. The findings will guide future AI development, emphasizing the need for adaptable and robust systems. Researchers and developers are encouraged to engage with OpenEnv to enhance the practical utility of AI technologies.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/openenv-turing",
+            "relatedResources": []
+        },
         {
             "date": "Feb 12 2026",
             "headline": "z.ai&#x27;s GLM-5 Slashes Hallucination Rates with New RL &#x27;Slime&#x27; Technique",
@@ -136,82 +314,6 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "xAI Shares Interplanetary Vision in Public All-Hands Meeting",
-            "title": "xAI Reveals Ambitious Interplanetary Plans in Public All-Hands Presentation",
-            "content": "xAI, the innovative AI firm, has taken the unprecedented step of releasing its full 45-minute all-hands presentation to the public via the X platform. The presentation outlines xAI&#x27;s ambitious plans for interplanetary expansion, highlighting the company&#x27;s commitment to advancing AI technologies beyond Earth. This bold move underlines xAI&#x27;s dedication to transparency and its vision of leveraging AI for space exploration and colonization. The public release aims to foster community engagement and gather feedback from a broader audience. Stakeholders and tech enthusiasts are encouraged to review the presentation to understand xAI&#x27;s strategic direction and potential collaboration opportunities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/11/xai-lays-out-interplanetary-ambitions-in-public-all-hands/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "xAI Co-Founders Exit Post-SpaceX Merger—$1.25T Valuation Impact",
-            "title": "Two xAI Co-Founders Depart Following Historic SpaceX Merger",
-            "content": "Following the historic merger between xAI and SpaceX, valued at $1.25 trillion, two co-founders of xAI have announced their departure from the company. The merger, which also involves social media platform X, is the largest of its kind to date. The exits have sparked discussions about the merger&#x27;s impact on xAI&#x27;s internal dynamics and future direction. Departing co-founders have shared detailed statements expressing their reasons for leaving, which include concerns about strategic alignment and corporate culture. Industry observers are closely monitoring the situation to assess the long-term implications for xAI&#x27;s operations and leadership structure.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/877609/two-more-xai-co-founders-are-among-those-leaving-after-the-spacex-merger",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Modal Labs Eyes $2.5B Valuation in Funding Talks",
-            "title": "Modal Labs in Negotiations for Funding at $2.5 Billion Valuation",
-            "content": "Modal Labs, a startup specializing in AI inference, is reportedly in discussions to raise a new round of funding, potentially valuing the company at $2.5 billion. General Catalyst is expected to lead the investment round for the four-year-old company. This funding could significantly accelerate Modal Labs&#x27; growth, enabling advancements in AI inference technologies that are critical for efficient data processing and analysis. The startup&#x27;s innovative solutions are gaining traction in industries ranging from finance to healthcare. Investors and tech leaders should watch for further developments as Modal Labs positions itself as a key player in the AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/11/ai-inference-startup-modal-labs-in-talks-to-raise-at-2-5b-valuation-sources-say/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Anthropic Pledges to Offset Data Center Power Costs",
-            "title": "Anthropic Commits to Mitigating Data Center Electricity Impact",
-            "content": "Anthropic, an AI company, has announced its commitment to offset the electricity costs associated with its data centers to prevent increases in local residents&#x27; bills. The company plans to cover 100% of the necessary upgrades to connect its data centers to existing power grids, ensuring no additional financial burden on nearby communities. This initiative reflects a growing trend among tech companies to address the environmental and economic impacts of their operations. Residents and local governments can expect Anthropic&#x27;s proactive approach to set a precedent for sustainable data center management in the AI industry.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/877526/anthropic-ai-electricity-costs-data-center-pledge",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "OpenAI Shifts Strategy—Disbands Mission Alignment Team",
-            "title": "OpenAI Disbands Mission Alignment Team, Appoints Chief Futurist",
-            "content": "OpenAI has announced the disbandment of its mission alignment team, reallocating its members to various roles within the company. The team&#x27;s leader has been appointed as OpenAI&#x27;s chief futurist, signaling a strategic shift in the organization&#x27;s focus. This move comes as OpenAI continues to refine its approach to AI development and deployment, emphasizing long-term vision and innovation. The restructuring aims to enhance OpenAI&#x27;s ability to address emerging challenges and opportunities in the rapidly evolving AI landscape. Stakeholders should anticipate further updates as OpenAI adapts its strategies to maintain leadership in the field.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 11 2026",
-            "headline": "Siri Revamp Delayed—Features Pushed to iOS 27",
-            "title": "Apple&#x27;s Siri Overhaul Postponed, Some Features Delayed Until iOS 27",
-            "content": "Apple&#x27;s anticipated Siri revamp has encountered delays, with some features now expected to roll out with iOS 27 instead of the upcoming iOS 26.4 update. The revised timeline indicates a phased release of new capabilities, potentially affecting user expectations and competitive positioning. Apple&#x27;s decision to delay the overhaul suggests a focus on ensuring quality and functionality before launch. Developers and users should prepare for a gradual introduction of Siri&#x27;s enhancements, which aim to improve voice recognition and user interaction. The delay reflects ongoing challenges in AI-driven voice assistant development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/11/apples-siri-revamp-reportedly-delayed-again/",
-            "relatedResources": []
         }
     ],
     "articles": {},
