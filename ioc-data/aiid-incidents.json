@@ -1527,20 +1527,12 @@
       "date": "2025-11-15",
       "category": "prompt_injection",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1264",
-      "incident_id": 1264,
-      "title": "Rep. Mike Collins's Campaign Allegedly Produced Deepfake of Sen. Jon Ossoff Supporting the Governmen",
-      "date": "2025-11-14",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 192,
+    "total": 191,
     "last7Days": 7,
     "last30Days": 36
   },
-  "lastUpdated": "2026-02-12T02:22:12.520787+05:30"
+  "lastUpdated": "2026-02-12T08:47:41.010563+05:30"
 }
