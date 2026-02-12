@@ -1,6 +1,27 @@
 {
   "articles": [
     {
+      "id": "apple-dyld-zero-day-cve-2026-20700",
+      "title": "Apple dyld Zero-Day (CVE-2026-20700): Memory Corruption Exploit Chain Used in Sophisticated Spyware Attacks",
+      "date": "February 12, 2026",
+      "category": "Zero-Day Vulnerability",
+      "badge": "ZERO-DAY",
+      "excerpt": "Apple patches critical CVE-2026-20700 in dyld across all platforms. Memory corruption flaw chained with WebKit vulnerabilities in 'extremely sophisticated' spyware attacks targeting journalists and activists. Update to iOS 26.3 immediately.",
+      "image": "images/articles/apple-dyld-zero-day-cve-2026-20700.png",
+      "tags": [
+        "CVE-2026-20700",
+        "Apple",
+        "dyld",
+        "Zero-Day",
+        "iOS 26.3",
+        "Spyware",
+        "Google TAG",
+        "WebKit"
+      ],
+      "author": "TheHGTech Security Research",
+      "externalUrl": "articles/apple-dyld-zero-day-cve-2026-20700.html"
+    },
+    {
       "id": "windows-notepad-rce-cve-2026-20841",
       "title": "Windows Notepad RCE (CVE-2026-20841): Markdown Link Injection Turns Text Editor into Attack Vector",
       "date": "February 11, 2026",
