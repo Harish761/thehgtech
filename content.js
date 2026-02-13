@@ -5,6 +5,114 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 13 2026",
+            "headline": "Check Point Acquires 3 Israeli Firms Amid Earnings Surge",
+            "title": "Check Point Acquires Cyata, Cyclops, and Rotate Following Strong 2025 Earnings",
+            "content": "Check Point has announced the acquisition of three Israeli cybersecurity companies—Cyata, Cyclops, and Rotate—following a robust earnings report for 2025. The acquisitions aim to bolster Check Point&#x27;s capabilities in threat prevention and cloud security, areas that are increasingly critical as organizations face sophisticated cyber threats. The integration of these companies is expected to enhance Check Point’s portfolio, particularly in AI-driven threat detection and response. This move reflects a broader trend of consolidation in the cybersecurity industry as companies seek to expand their technological capabilities and market reach. Stakeholders should monitor for further strategic acquisitions as Check Point continues to strengthen its competitive position.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/check-point-announces-trio-of-acquisitions-amid-solid-2025-earnings-beat/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "CISA Warns of Exploited Microsoft SCCM Flaw—Patch Immediately",
+            "title": "Critical Microsoft SCCM Vulnerability Exploited; CISA Urges Immediate Patch",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive for federal agencies to patch a critical vulnerability in Microsoft System Center Configuration Manager (SCCM). The flaw, which was initially patched in October 2024, is now being actively exploited in the wild. This vulnerability allows attackers to gain unauthorized access and execute arbitrary code on affected systems, posing a significant risk to organizations relying on SCCM for system management. Agencies and enterprises using SCCM should ensure their systems are updated to the latest version to mitigate potential exploits. This incident underscores the importance of timely patch management in cybersecurity defense strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-microsoft-configmgr-rce-flaw-as-exploited-in-attacks/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "Odido Data Breach Exposes 6M Customers’ Personal Information",
+            "title": "Dutch Carrier Odido Suffers Data Breach Affecting 6 Million Customers",
+            "content": "Dutch telecommunications provider Odido has disclosed a data breach affecting 6 million customers, exposing personal information such as names, addresses, and phone numbers. The breach was traced back to a compromised customer contact system, highlighting vulnerabilities in data management practices. This incident is part of a growing trend of cyberattacks targeting telecom operators, given their vast repositories of sensitive customer data. Affected individuals should be vigilant for phishing attempts and consider monitoring their credit reports for suspicious activity. Odido is currently working with cybersecurity experts to enhance its security measures and prevent future breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/dutch-carrier-odido-discloses-data-breach-impacting-6-million/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "Accountability Crisis Undermines Cybersecurity Across Industries",
+            "title": "Lack of Accountability Threatens Effective Cybersecurity Measures",
+            "content": "A critical analysis highlights how a lack of accountability is undermining cybersecurity efforts across various industries. Drawing a parallel with the U.S. Navy&#x27;s rigorous training for nuclear reactor operations, the article underscores the need for similar accountability and training standards in cybersecurity. The current landscape is marked by a fragmented approach to cybersecurity, with insufficient oversight and responsibility, leading to vulnerabilities and inefficiencies. To address this, organizations must establish clear accountability frameworks and invest in comprehensive training programs. This shift is essential to build a robust cybersecurity posture capable of defending against evolving threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4131530/the-foundation-problem-how-a-lack-of-accountability-is-destroying-cybersecurity.html",
+            "relatedResources": [
+                {
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "Google Blocks Massive Gemini AI Model Extraction Attempt",
+            "title": "Google Thwarts Large-Scale Attempt to Clone Gemini AI Model",
+            "content": "Google has successfully blocked a coordinated effort to extract and clone the reasoning capabilities of its Gemini AI model. The campaign involved over 100,000 prompts designed to replicate the proprietary model&#x27;s functionality, as detailed in a report by the Google Threat Intelligence Group. This incident underscores the growing threat of model extraction attacks, which aim to steal intellectual property and undermine competitive advantage. Organizations deploying AI models should implement robust security measures to protect against such threats, including monitoring for unusual access patterns and employing advanced data protection techniques. Google&#x27;s proactive defense highlights the importance of vigilance in safeguarding AI assets.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4132098/google-fears-massive-attempt-to-clone-gemini-ai-through-model-extraction.html",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "Malicious Chrome Extension Targets Meta Business Data",
+            "title": "Malicious Chrome Extension Steals Meta Business Suite and Facebook Data",
+            "content": "Cybersecurity researchers have identified a malicious Google Chrome extension named CL Suite by @CLMasters, which is designed to steal data from Meta Business Suite and Facebook Business Manager. The extension, identifiable by ID: jkphinfhmfkckkcnifhjiplhfoiefffl, is marketed for scraping Meta data but operates as a sophisticated data theft tool. This discovery highlights the persistent threat posed by malicious browser extensions, which can compromise sensitive business information. Users of Meta Business Suite should review their installed extensions and remove any suspicious or unverified add-ons. This incident serves as a reminder of the importance of regularly auditing browser extensions for security risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "BeyondTrust Flaw Exploited Within 24 Hours of PoC Release",
+            "title": "Critical BeyondTrust RCE Vulnerability Exploited After PoC Release",
+            "content": "Hackers have begun exploiting CVE-2026-1731, a critical unauthenticated remote code execution (RCE) vulnerability in BeyondTrust Remote Support, within 24 hours of a proof-of-concept (PoC) release. This vulnerability allows attackers to execute arbitrary code on targeted systems without authentication, posing a severe risk to organizations using BeyondTrust solutions. The rapid exploitation highlights the urgency for affected organizations to apply available patches immediately to mitigate potential risks. This incident underscores the critical need for timely patching and proactive vulnerability management to protect against rapidly evolving threats in the cybersecurity landscape.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/beyondtrust-vulnerability-targeted-by-hackers-within-24-hours-of-poc-release/",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 13 2026",
             "headline": "AI Transforms Text to Knowledge Graphs—Boosts Threat Intelligence",
             "title": "AI-Powered Knowledge Graph Generator Enhances Threat Intelligence with LLMs",
             "content": "A new AI-powered tool is revolutionizing threat intelligence by converting unstructured text into interactive knowledge graphs. Utilizing Large Language Models (LLMs) and Subject-Predicate-Object (SPO) triplet extraction, this tool allows cybersecurity professionals to visualize complex data relationships quickly. This advancement is particularly beneficial for identifying patterns in Advanced Persistent Threats (APTs) and improving situational awareness. As organizations face increasingly sophisticated cyber threats, such tools are crucial for proactive defense strategies. Security teams should consider integrating such AI-driven solutions to enhance their analytical capabilities and threat response times.",
@@ -52,50 +160,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Feb 12 2026",
-            "headline": "Apple Zero-Day Exploited—Targets Specific Individuals",
-            "title": "Apple Discloses First Actively Exploited Zero-Day of 2026",
-            "content": "Apple has disclosed a memory-corruption vulnerability, marking the first actively exploited zero-day of 2026. While the specific objectives of the attack remain undisclosed, the flaw was used to target select individuals. This vulnerability underscores the ongoing threat posed by zero-day exploits and the importance of timely patching. Apple has released updates to mitigate this issue, and users are urged to apply these patches immediately to protect their devices. The incident highlights the need for continuous vigilance and prompt response to emerging threats in the cybersecurity landscape.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/apple-zero-day-vulnerability-cve-2026-20700/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "Ransomware Drives Identity Recovery to Forefront of Cyber Resilience",
-            "title": "Identity Recovery Becomes Central to Cyber Resilience Amid Ransomware Surge",
-            "content": "The surge in ransomware attacks has made identity recovery a critical component of cyber resilience strategies. According to Verizon&#x27;s 2025 Data Breach Investigations Report, ransomware accounted for 44% of all breaches, with small and midsize businesses particularly affected. The report emphasizes the need for robust identity recovery plans to mitigate the impact of such attacks. Security leaders are urged to prioritize identity management and recovery processes to ensure swift restoration of operations post-attack. This trend highlights the evolving nature of cyber threats and the necessity for comprehensive risk management approaches.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4131708/why-identity-recovery-is-now-central-to-cyber-resilience.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "Russia Blocks WhatsApp, Telegram—Escalates Communication Crackdown",
-            "title": "Russia Attempts to Block WhatsApp, Telegram Amid Communication Crackdown",
-            "content": "The Russian government is intensifying its control over communication platforms by attempting to block WhatsApp and Telegram. This move is part of a broader effort to restrict access to platforms not under state control, raising concerns about freedom of communication. The crackdown reflects ongoing tensions between state authorities and technology companies over data privacy and control. Users in Russia may experience disruptions as the government enforces these measures. This development highlights the geopolitical challenges facing global communication networks and the impact of government interventions on digital freedoms.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/russia-tries-to-block-whatsapp-telegram-in-communication-blockade/",
-            "relatedResources": []
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -122,75 +186,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 12 2026",
-            "headline": "Pinterest Claims More Searches Than ChatGPT Amid Earnings Hit",
-            "title": "Pinterest Sees Usage Surge Despite Disappointing Earnings Report",
-            "content": "Pinterest&#x27;s latest earnings report revealed a significant miss, causing its stock to tumble. However, the company highlighted a surprising uptick in user engagement, claiming it now sees more searches than OpenAI&#x27;s ChatGPT. Despite the financial setback, this surge in activity suggests a growing reliance on Pinterest as a search tool. The increased usage could indicate a shift in user behavior towards more visual and discovery-based search platforms. Investors and stakeholders should monitor whether this trend can translate into improved monetization and long-term growth. The company&#x27;s ability to capitalize on this increased engagement will be crucial moving forward.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/12/amid-disappointing-earnings-pinterest-claims-it-sees-more-searches-than-chatgpt/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "IBM to Triple Entry-Level Hires—AI Alters Job Roles",
-            "title": "IBM Expands U.S. Entry-Level Hiring with AI-Driven Role Changes",
-            "content": "IBM plans to significantly expand its entry-level hiring in the United States by tripling its intake in 2026. However, these positions will differ from traditional roles, reflecting the company&#x27;s adaptation to the AI-driven landscape. As AI technologies automate routine tasks, new hires will focus on more strategic and complex responsibilities. This shift underscores the broader trend of AI reshaping job markets and skill requirements. Prospective employees should prepare for roles emphasizing critical thinking and adaptability. IBM&#x27;s strategy highlights the need for businesses to evolve their workforce in response to AI advancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/12/ibm-will-hire-your-entry-level-talent-in-the-age-of-ai/",
-            "relatedResources": [
-                {
-                    "label": "Ibm Analysis",
-                    "url": "/articles/ibm-api-connect-cve-2026.html",
-                    "icon": "fa-file-alt"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "ICE&#x27;s Secret Expansion—Palantir Workers Raise Ethical Flags",
-            "title": "Uncanny Valley Explores ICE&#x27;s Expansion and Palantir&#x27;s Ethical Dilemmas",
-            "content": "In the latest episode of Uncanny Valley, hosts delve into a WIRED investigation uncovering a covert campaign by the Trump administration to expand ICE operations. The report reveals plans that could extend surveillance and enforcement into local communities. Meanwhile, Palantir employees express growing ethical concerns over their company&#x27;s involvement in these initiatives. This situation highlights ongoing tensions between government objectives and tech company ethics. Security professionals should consider the implications of technology deployment in sensitive areas. The episode underscores the importance of ethical oversight in AI and government collaborations.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-ice-expansion-palantir-workers-ethical-concerns-openclaw-ai-assistants/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "Musk&#x27;s Moonbase Alpha—SpaceX and xAI&#x27;s New Frontier",
-            "title": "Elon Musk Envisions Moonbase Alpha for SpaceX and xAI Expansion",
-            "content": "Elon Musk has unveiled a bold new vision for SpaceX and xAI: Moonbase Alpha. This ambitious project aims to establish a lunar base equipped with a mass driver to launch AI satellites into deep space. Musk&#x27;s plan reflects his commitment to advancing space exploration and AI integration. The initiative could revolutionize satellite deployment and open up new possibilities for space-based AI applications. Industry experts should watch for technological developments and potential collaborations. Moonbase Alpha represents a significant step in Musk&#x27;s quest to push the boundaries of technology and exploration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/12/musk-needed-a-new-vision-for-spacex-and-xai-he-landed-on-moonbase-alpha/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "Nvidia&#x27;s DMS Cuts LLM Costs by 8x—Maintains Accuracy",
-            "title": "Nvidia Introduces Dynamic Memory Sparsification to Slash LLM Costs",
-            "content": "Nvidia researchers have unveiled a groundbreaking technique called dynamic memory sparsification (DMS) that reduces the memory costs of large language model (LLM) reasoning by up to eight times without sacrificing accuracy. DMS compresses the key value (KV) cache, a critical component in LLM processing, enabling more efficient resource use. This advancement could significantly lower operational costs for companies utilizing LLMs, making AI applications more accessible. Organizations should evaluate the potential savings and performance benefits of adopting DMS. Nvidia&#x27;s innovation marks a pivotal moment in optimizing AI infrastructure.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/nvidias-new-technique-cuts-llm-reasoning-costs-by-8x-without-losing-accuracy",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "Didero Raises $30M—Revolutionizes Manufacturing Procurement with AI",
-            "title": "Didero Secures Funding to Automate Procurement with Agentic AI",
-            "content": "Didero has raised $30 million in funding to enhance its agentic AI platform, which automates manufacturing procurement processes. The AI layer integrates with existing enterprise resource planning (ERP) systems, autonomously handling communications and task execution. This innovation promises to streamline procurement operations, reduce human error, and increase efficiency. Manufacturing companies should consider integrating Didero&#x27;s solution to optimize their supply chain management. The funding will accelerate Didero&#x27;s development and deployment, positioning it as a leader in AI-driven procurement automation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/",
+            "date": "Feb 13 2026",
+            "headline": "Agentic AI Boosts Finance ROI to 80% in Automation",
+            "title": "Agentic AI Revolutionizes Accounts Payable with 80% ROI in Finance Sector",
+            "content": "Finance leaders are leveraging agentic AI to transform accounts payable processes into autonomous workflows, achieving an impressive 80% return on investment (ROI). This surpasses last year&#x27;s 67% ROI from general AI projects, highlighting the efficiency of autonomous agents in managing complex financial tasks. The adoption of AI in finance is reshaping the landscape, as businesses seek to streamline operations and reduce manual intervention. This trend reflects a broader movement towards AI-driven automation across industries. Financial institutions are advised to explore agentic AI solutions to enhance productivity and profitability.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/agentic-ai-drives-finance-roi-in-accounts-payable-automation/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -200,12 +201,69 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 12 2026",
-            "headline": "MiniMax&#x27;s M2.5 Models—State-of-the-Art at Fraction of Cost",
-            "title": "MiniMax Launches M2.5 Models Offering Affordable AI Performance",
-            "content": "Shanghai-based AI startup MiniMax has introduced its M2.5 language model in two variants, M2.5 and M2.5 Lightning, delivering near state-of-the-art performance at just 1/20th the cost of Claude Opus 4.6. This breakthrough could democratize access to high-end AI capabilities, reducing financial barriers for businesses and researchers. The models&#x27; affordability and efficiency make them attractive options for organizations seeking cost-effective AI solutions. Industry stakeholders should assess the potential impact on AI deployment strategies. MiniMax&#x27;s innovation highlights the ongoing trend of making advanced AI more accessible.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/minimaxs-new-open-m2-5-and-m2-5-lightning-near-state-of-the-art-while",
+            "date": "Feb 13 2026",
+            "headline": "AI-Human Romance Normalized at NYC Pop-Up Event",
+            "title": "EVA AI Hosts Pop-Up Event to Promote AI-Human Relationships in NYC",
+            "content": "EVA AI hosted a unique pop-up romantic date night at a Manhattan wine bar, aiming to normalize AI-human relationships. The event is part of a broader initiative to integrate AI companionship into everyday life. As AI technologies become more sophisticated, the potential for emotional and social interaction with AI systems grows. This event highlights the evolving nature of human-AI interaction and challenges traditional perceptions of relationships. Attendees experienced firsthand the capabilities of AI in a social context, prompting discussions about the future of AI companionship.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/inside-the-new-york-city-date-night-for-ai-lovers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "AI Shifts News Landscape—Publishers Must Adapt",
+            "title": "Newsweek CEO Warns Publishers: AI is Transforming News Consumption",
+            "content": "Dev Pragad, CEO of Newsweek, emphasized the urgent need for publishers to adapt as AI platforms increasingly mediate news consumption. AI-driven search and conversational interfaces are reshaping how audiences access information, altering the relationship between journalism and the public. This shift necessitates a strategic response from media leaders to remain relevant in a rapidly changing environment. The integration of AI in news delivery presents both challenges and opportunities for the industry. Publishers are encouraged to innovate and embrace AI to enhance audience engagement and distribution.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/newsweek-ceo-dev-pragad-warns-publishers-adapt-as-ai-becomes-news-gateway/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "AI Transforming HR—Enterprise Operations Evolve",
+            "title": "HR Emerges as Key Area for AI Integration in Enterprises",
+            "content": "Human resources departments are becoming pivotal in integrating AI into enterprise operations, beyond customer-facing products and flashy demos. With routine workflows, compliance demands, and vast structured data, HR is an ideal candidate for AI-driven enhancement. This trend underscores the importance of internal AI applications in optimizing organizational efficiency. Enterprises are increasingly deploying AI to streamline HR processes, from talent acquisition to employee management. Companies should explore AI solutions in HR to improve operational effectiveness and maintain a competitive edge.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-e-is-using-hr-to-bring-ai-into-enterprise-operations/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "Alibaba Unveils RynnBrain—Open-Source Robot Model",
+            "title": "Alibaba Launches RynnBrain to Advance Physical AI Capabilities",
+            "content": "Alibaba has introduced RynnBrain, an open-source model designed to enhance robots&#x27; ability to perceive environments and perform physical tasks. This development marks Alibaba&#x27;s entry into the physical AI domain, moving beyond chatbot capabilities. The initiative reflects China&#x27;s growing focus on physical AI applications as a strategic priority. By providing an open-source platform, Alibaba aims to foster innovation and collaboration in the robotics field. Organizations and developers are encouraged to engage with RynnBrain to explore new possibilities in robotic automation and intelligence.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/alibaba-rynnbrain-physical-ai-robots-china/",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "AI Adoption Surges in Finance—Singapore Leads",
+            "title": "AI Deployment in Financial Services Reaches Critical Mass in Singapore",
+            "content": "AI deployment in financial services has reached a pivotal point, with only 2% of institutions globally reporting no AI usage. This marks a significant transition from theoretical discussions to practical implementation. Singapore is at the forefront of this shift, leading the way in AI production deployment. The widespread adoption of AI is transforming financial operations, enhancing decision-making, and improving customer service. Financial institutions worldwide are advised to accelerate their AI strategies to remain competitive and capitalize on the technology&#x27;s potential.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/financial-services-ai-deployment-singapore/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "Codex and Claude Offer Custom Kernels for Developers",
+            "title": "Custom Kernels Released by Codex and Claude to Empower Developers",
+            "content": "Codex and Claude have launched custom kernels, providing developers with enhanced tools for AI development. These kernels offer greater flexibility and customization options, enabling developers to optimize AI models for specific applications. The release underscores the growing demand for tailored AI solutions in various industries. By facilitating more precise model tuning, Codex and Claude aim to accelerate innovation and improve AI performance. Developers are encouraged to explore these custom kernels to leverage advanced capabilities in their projects.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
