@@ -1473,66 +1473,18 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1265",
-      "incident_id": 1265,
-      "title": "NTB Report on Telenor Security Findings Was Withdrawn After AI Tool Allegedly Introduced Fabricated ",
-      "date": "2025-11-15",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1266",
       "incident_id": 1266,
       "title": "Purportedly AI-Generated Sexual Images of At Least 400 Minors at Zacatecas School Were Reportedly Cr",
       "date": "2025-11-15",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1267",
-      "incident_id": 1267,
-      "title": "Omnilert AI Reportedly Triggered False Gun Alert at Parkville High, Prompting Student Relocation",
-      "date": "2025-11-15",
-      "category": "prompt_injection",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1268",
-      "incident_id": 1268,
-      "title": "Meta's Automated Ad and Targeting Systems Reportedly Enabled Large-Scale Fraud Revenue",
-      "date": "2025-11-15",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1270",
-      "incident_id": 1270,
-      "title": "Multiple Purported AI-Assisted Cheating Incidents Reported Across South Korea's SKY Universities Dur",
-      "date": "2025-11-15",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1271",
-      "incident_id": 1271,
-      "title": "Purported Deepfake of Greek Finance Minister Kyriakos Pierrakakis Reportedly Used in Facebook Invest",
-      "date": "2025-11-15",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1272",
-      "incident_id": 1272,
-      "title": "Purportedly AI-Generated Home Intruder Videos Allegedly Prompt Dozens of Dutch Police Call-Outs",
-      "date": "2025-11-15",
-      "category": "prompt_injection",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 191,
+    "total": 185,
     "last7Days": 7,
     "last30Days": 36
   },
-  "lastUpdated": "2026-02-13T02:18:30.621109+05:30"
+  "lastUpdated": "2026-02-13T08:47:49.520930+05:30"
 }
