@@ -1455,20 +1455,12 @@
       "date": "2025-11-17",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1225",
-      "incident_id": 1225,
-      "title": "Purportedly AI-Generated 'Home Invasion Prank' Images Reportedly Circulate in Ireland, Causing Panic",
-      "date": "2025-11-15",
-      "category": "misinformation",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 183,
+    "total": 182,
     "last7Days": 7,
     "last30Days": 36
   },
-  "lastUpdated": "2026-02-14T00:54:49.492100+05:30"
+  "lastUpdated": "2026-02-14T02:23:03.493472+05:30"
 }
