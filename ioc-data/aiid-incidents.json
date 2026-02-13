@@ -1105,19 +1105,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-602",
-      "incident_id": 602,
-      "title": "Russia Reportedly Using Artificial Intelligence in Disinformation Campaigns to Erode Western Support",
-      "date": "2025-11-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-643",
       "incident_id": 643,
       "title": "Purported Deepfake Video Allegedly Claims Kyiv's Assassination Plan Against President Emmanuel Macro",
       "date": "2025-11-17",
       "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-602",
+      "incident_id": 602,
+      "title": "Russia Reportedly Using Artificial Intelligence in Disinformation Campaigns to Erode Western Support",
+      "date": "2025-11-17",
+      "category": "other",
       "severity": "medium"
     },
     {
@@ -1463,20 +1463,12 @@
       "date": "2025-11-15",
       "category": "misinformation",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1250",
-      "incident_id": 1250,
-      "title": "Alleged False Positive by Omnilert AI Gun Detection System Prompts Police Search at Baltimore County",
-      "date": "2025-11-15",
-      "category": "prompt_injection",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 184,
+    "total": 183,
     "last7Days": 7,
     "last30Days": 36
   },
-  "lastUpdated": "2026-02-13T18:52:49.295632+05:30"
+  "lastUpdated": "2026-02-13T22:31:42.284091+05:30"
 }
