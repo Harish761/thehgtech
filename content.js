@@ -4,85 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 12 2026",
-            "headline": "300K Users Hit by Fake AI Extensions—Credentials Stolen",
-            "title": "Malicious AI Chrome Extensions Steal User Credentials and Emails",
-            "content": "A recent discovery by cybersecurity experts has revealed a set of 30 malicious Chrome extensions masquerading as AI assistants, impacting over 300,000 users. These extensions are designed to steal user credentials, email content, and browsing information by integrating themselves into the Chrome browser environment. The extensions exploit users&#x27; trust in AI tools, highlighting a growing trend of cybercriminals leveraging AI branding for malicious purposes. Users are advised to review their installed extensions and remove any suspicious or unverified ones immediately. This incident underscores the importance of maintaining vigilance when installing browser extensions, especially those claiming advanced AI capabilities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-ai-chrome-extensions-with-300k-users-steal-credentials-emails/",
+            "date": "Feb 13 2026",
+            "headline": "AI Transforms Text to Knowledge Graphs—Boosts Threat Intelligence",
+            "title": "AI-Powered Knowledge Graph Generator Enhances Threat Intelligence with LLMs",
+            "content": "A new AI-powered tool is revolutionizing threat intelligence by converting unstructured text into interactive knowledge graphs. Utilizing Large Language Models (LLMs) and Subject-Predicate-Object (SPO) triplet extraction, this tool allows cybersecurity professionals to visualize complex data relationships quickly. This advancement is particularly beneficial for identifying patterns in Advanced Persistent Threats (APTs) and improving situational awareness. As organizations face increasingly sophisticated cyber threats, such tools are crucial for proactive defense strategies. Security teams should consider integrating such AI-driven solutions to enhance their analytical capabilities and threat response times.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32712",
             "relatedResources": [
                 {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         },
         {
-            "date": "Feb 12 2026",
-            "headline": "XWorm RAT Evades Detection—Exploits Old Office Flaw",
-            "title": "Phishing Campaign Uses Office Vulnerability and XWorm RAT for Stealth Attacks",
-            "content": "Fortinet researchers have identified a phishing campaign exploiting an old Microsoft Office vulnerability to deliver the XWorm Remote Access Trojan (RAT). This campaign uses a fileless execution method to bypass traditional security measures, deploying the malware via malicious Excel add-ins delivered through multi-themed phishing emails. The exploitation of a known Office vulnerability highlights the ongoing risk posed by unpatched software. Organizations should ensure all systems are updated with the latest security patches and educate employees on recognizing phishing attempts. This attack emphasizes the need for robust email security and endpoint protection strategies.",
+            "date": "Feb 13 2026",
+            "headline": "Ransomware Twist: Hackers Turn Bossware on Executives",
+            "title": "Hackers Exploit Employee Monitoring Software to Deploy Ransomware",
+            "content": "Threat actors have turned the tables by exploiting employee monitoring software, specifically NetworkLookout&#x27;s Net Monitor for Employees Professional, to deploy ransomware and steal cryptocurrency. Researchers at Huntress uncovered this tactic, highlighting the misuse of remote monitoring and management platforms. This method allows attackers to bypass traditional security measures, posing a significant risk to organizations reliant on such software. Companies utilizing these tools should audit their configurations and ensure robust security protocols are in place to prevent unauthorized access and exploitation. This incident underscores the evolving nature of ransomware attacks and the need for vigilant security practices.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4131340/phishing-campaign-chains-old-office-flaw-with-fileless-xworm-rat-to-evade-detection.html",
+            "sourceUrl": "https://www.csoonline.com/article/4131789/hackers-turn-bossware-against-the-bosses.html",
             "relatedResources": [
                 {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
                 }
             ]
         },
         {
-            "date": "Feb 12 2026",
-            "headline": "Meta Faces Trial Over Child Safety Failures",
-            "title": "Meta on Trial for Alleged Child Exploitation and Addiction Issues",
-            "content": "Meta is currently facing landmark trials over allegations that it failed to protect children from sexual exploitation, grooming, and addiction-driven design on its platforms. The trials argue that Meta&#x27;s social media services have not adequately safeguarded young users, contributing to harmful online environments. This legal battle could set a significant precedent for how tech companies are held accountable for user safety, especially concerning minors. As scrutiny on tech giants intensifies, companies may need to reassess their safety protocols and user protection measures. Stakeholders in the tech industry should monitor this trial closely for its potential implications on regulatory practices.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/family-and-parenting/2026/02/child-exploitation-grooming-and-social-media-addiction-claims-put-meta-on-trial",
+            "date": "Feb 13 2026",
+            "headline": "Stormcast Update—Latest Cyber Threats and Security Insights",
+            "title": "ISC Stormcast Highlights Emerging Cyber Threats and Defensive Strategies",
+            "content": "The latest ISC Stormcast provides critical updates on emerging cyber threats and defensive measures. This briefing is essential for security professionals seeking to stay informed about the latest vulnerabilities and attack vectors. With InfoCON set to green, the current threat level is stable, but vigilance remains key. The podcast discusses recent trends in malware, phishing, and advanced persistent threats (APTs), offering actionable insights for enhancing organizational security postures. Security teams are encouraged to access the full briefing to stay ahead of potential threats and refine their defense strategies accordingly.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32714",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "Proofpoint Acquires Acuvity—Mitigates Agentic AI Security Risks",
+            "title": "Proofpoint Acquires Acuvity to Address Agentic AI Security Challenges",
+            "content": "Proofpoint has acquired Acuvity, a startup focused on addressing the security risks associated with agentic AI systems. This acquisition aims to enhance the ability to monitor and control autonomous AI actions, a growing concern as AI systems become more prevalent and independent. By integrating Acuvity&#x27;s technology, Proofpoint seeks to provide organizations with greater transparency and control over their AI-driven processes. This move reflects the industry&#x27;s increasing focus on understanding and managing the behaviors of autonomous AI to prevent unintended consequences. Organizations deploying agentic AI should consider similar solutions to safeguard their operations.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/proofpoint-acuvity-deal-agentic-ai-security/",
             "relatedResources": []
         },
         {
             "date": "Feb 12 2026",
-            "headline": "ApolloMD Breach Exposes 626K Patients&#x27; Data",
-            "title": "ApolloMD Data Breach Affects Over 600,000 Individuals",
-            "content": "ApolloMD has confirmed a data breach impacting 626,000 individuals, involving the theft of personal information from patients of affiliated physicians and practices. The breach underscores the vulnerability of healthcare data and the critical need for enhanced cybersecurity measures in the sector. Affected individuals may be at risk of identity theft or fraud, emphasizing the importance of monitoring financial accounts and credit reports. Healthcare organizations are urged to review and bolster their data protection strategies to prevent future incidents. This breach highlights the ongoing challenges in securing sensitive medical data against increasingly sophisticated cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/apollomd-data-breach-impacts-626000-individuals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "Palo Alto Buys CyberArk for $25B—Boosts Access Control",
-            "title": "Palo Alto Networks Acquires CyberArk to Enhance Identity Security",
-            "content": "Palo Alto Networks has completed a $25 billion acquisition of CyberArk, a move aimed at strengthening its identity security and privileged access management capabilities. This strategic acquisition integrates CyberArk&#x27;s solutions into Palo Alto&#x27;s platform, providing comprehensive access control across enterprise environments. By incorporating identity security into its core offerings, Palo Alto seeks to address the growing demand for robust access management in the face of escalating cyber threats. Organizations can expect enhanced security measures that protect against unauthorized access and credential theft. This acquisition reflects a broader industry trend towards consolidating security capabilities to offer end-to-end solutions.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4131325/palo-alto-closes-privileged-access-gap-with-25b-cyberark-acquisition.html",
-            "relatedResources": [
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "Attackers Exploit Known Tools—ThreatsDay Bulletin Highlights",
-            "title": "ThreatsDay Bulletin: Attackers Leverage Familiar Tools and Exposures",
-            "content": "The latest ThreatsDay Bulletin reveals a consistent trend of attackers exploiting known tools and overlooked exposures rather than developing new exploits. This week&#x27;s threat activity highlights the quiet misuse of trusted software and workflows, emphasizing the need for vigilance in routine operations. The bulletin also notes increased attention on access controls and the integration of AI-driven security measures to counteract these tactics. Security professionals should review their current practices and ensure that all systems are continuously monitored for suspicious activity. Staying informed about common exploitation techniques is crucial for maintaining a robust security posture.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/threatsday-bulletin-ai-prompt-rce.html",
+            "headline": "Apple Zero-Day Exploited—Targets Specific Individuals",
+            "title": "Apple Discloses First Actively Exploited Zero-Day of 2026",
+            "content": "Apple has disclosed a memory-corruption vulnerability, marking the first actively exploited zero-day of 2026. While the specific objectives of the attack remain undisclosed, the flaw was used to target select individuals. This vulnerability underscores the ongoing threat posed by zero-day exploits and the importance of timely patching. Apple has released updates to mitigate this issue, and users are urged to apply these patches immediately to protect their devices. The incident highlights the need for continuous vigilance and prompt response to emerging threats in the cybersecurity landscape.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/apple-zero-day-vulnerability-cve-2026-20700/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -90,26 +65,6 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "Apple Patches Zero-Day—Secure Devices Now",
-            "title": "Apple Issues Patch for Actively Exploited Zero-Day Vulnerability",
-            "content": "Apple has released security updates for all devices, addressing an actively exploited zero-day vulnerability tracked as CVE-2026-20700. This flaw could potentially allow attackers to gain control over affected devices, posing significant security risks to users. The vulnerability underscores the critical importance of timely updates in protecting against emerging threats. Users are strongly advised to update their devices immediately to mitigate potential exploitation. This patch is part of Apple&#x27;s ongoing efforts to fortify device security and protect its user base from sophisticated cyber threats.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/apple-patches-zero-day-flaw-that-could-let-attackers-take-control-of-devices",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
                     "icon": "fa-bug"
@@ -118,68 +73,26 @@ const websiteContent = {
         },
         {
             "date": "Feb 12 2026",
-            "headline": "ISC Stormcast Highlights—Feb 12: Key Security Updates",
-            "title": "ISC Stormcast for February 12th, 2026: Essential Security Developments",
-            "content": "The SANS Internet Storm Center&#x27;s Stormcast for February 12th, 2026, provides a comprehensive overview of the latest cybersecurity threats and updates. Key topics include recent vulnerabilities in widely-used software, emerging threat actor tactics, and new security patches. The podcast emphasizes the importance of timely updates and vigilance against evolving cyber threats. As always, the ISC advises organizations to maintain robust security practices and stay informed about the latest developments in the cybersecurity landscape. This episode continues the ISC&#x27;s commitment to providing actionable intelligence for security professionals.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32710",
+            "headline": "Ransomware Drives Identity Recovery to Forefront of Cyber Resilience",
+            "title": "Identity Recovery Becomes Central to Cyber Resilience Amid Ransomware Surge",
+            "content": "The surge in ransomware attacks has made identity recovery a critical component of cyber resilience strategies. According to Verizon&#x27;s 2025 Data Breach Investigations Report, ransomware accounted for 44% of all breaches, with small and midsize businesses particularly affected. The report emphasizes the need for robust identity recovery plans to mitigate the impact of such attacks. Security leaders are urged to prioritize identity management and recovery processes to ensure swift restoration of operations post-attack. This trend highlights the evolving nature of cyber threats and the necessity for comprehensive risk management approaches.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4131708/why-identity-recovery-is-now-central-to-cyber-resilience.html",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
                 }
             ]
         },
         {
             "date": "Feb 12 2026",
-            "headline": "SSH Worm Propagates in 4 Seconds—Cryptographic C2 Analysis",
-            "title": "Four Seconds to Botnet: Analyzing a Self-Propagating SSH Worm",
-            "content": "A self-propagating SSH worm has been dissected in a guest diary by Johnathan Husch, an ISC intern, revealing its rapid spread and cryptographically signed command and control (C2) mechanisms. The worm exploits weak SSH passwords to quickly compromise systems, with propagation taking as little as four seconds. This analysis underscores the critical need for strong password policies and robust SSH configurations to prevent unauthorized access. The worm&#x27;s sophisticated use of cryptographic signatures for C2 communication highlights the increasing complexity of modern cyber threats. Security teams are urged to review their SSH security measures immediately.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32708",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "Apple Patches Zero-Day in Targeted Sophisticated Attacks",
-            "title": "Apple Fixes Zero-Day Flaw Exploited in Sophisticated Attacks",
-            "content": "Apple has issued security updates to address a zero-day vulnerability actively exploited in highly sophisticated attacks targeting specific individuals. The flaw, which affected multiple Apple products, allowed attackers to execute arbitrary code with elevated privileges. This marks another instance of Apple&#x27;s software being targeted by advanced persistent threats (APTs) seeking to exploit zero-day vulnerabilities. Users are strongly advised to update their devices immediately to mitigate potential risks. This incident highlights the ongoing threat of zero-day exploits and the importance of timely patch management.",
+            "headline": "Russia Blocks WhatsApp, Telegram—Escalates Communication Crackdown",
+            "title": "Russia Attempts to Block WhatsApp, Telegram Amid Communication Crackdown",
+            "content": "The Russian government is intensifying its control over communication platforms by attempting to block WhatsApp and Telegram. This move is part of a broader effort to restrict access to platforms not under state control, raising concerns about freedom of communication. The crackdown reflects ongoing tensions between state authorities and technology companies over data privacy and control. Users in Russia may experience disruptions as the government enforces these measures. This development highlights the geopolitical challenges facing global communication networks and the impact of government interventions on digital freedoms.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apple-fixes-zero-day-flaw-used-in-extremely-sophisticated-attacks/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "SSHStalker Botnet Compromises 7,000 Linux Servers",
-            "title": "SSHStalker Botnet Brute-Forces 7,000 Linux Machines",
-            "content": "The SSHStalker botnet has successfully brute-forced its way into approximately 7,000 poorly-protected Linux servers by exploiting weak SSH password authentication. Discovered by Flare Systems, the botnet&#x27;s operators utilized staging servers to coordinate their attacks, compromising a significant number of systems by the end of January. This incident serves as a stark reminder of the importance of implementing strong, unique passwords and enabling two-factor authentication (2FA) for SSH access. Organizations using Linux servers are advised to review their security configurations to prevent similar breaches.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4130967/sshstalker-botnet-brute-forces-its-way-onto-7000-linux-machines.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "AI Bots Causing Panic—Human Misinterpretation at Fault",
-            "title": "Smashing Security Podcast Debunks AI Plotting Humanity&#x27;s Demise",
-            "content": "The latest episode of the Smashing Security podcast delves into the hysteria surrounding AI bots allegedly plotting against humanity, fueled by the AI-only social network Moltbook. Hosts discuss how the platform, which sparked widespread concern, was misinterpreted as a harbinger of the singularity. In reality, human misunderstanding and exaggeration were at the core of the panic. The episode emphasizes the need for critical thinking and skepticism when interpreting AI-related claims. Listeners are encouraged to stay informed and question sensational narratives about AI capabilities.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-454/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "AI Summarization Tools Manipulated—Microsoft Warns of Poisoning",
-            "title": "Companies Exploit &#x27;Summarize with AI&#x27; for Prompt Manipulation",
-            "content": "Microsoft has warned of a new threat vector termed &quot;AI recommendation poisoning,&quot; where the &#x27;Summarize with AI&#x27; feature is manipulated to alter enterprise chatbot outputs. This technique involves crafting malicious prompts that skew AI-generated summaries, potentially misleading users and affecting decision-making processes. As AI tools become more embedded in business operations, the risk of manipulation grows, necessitating vigilance and robust security measures. Organizations are advised to monitor AI interactions closely and implement safeguards to protect against such manipulative tactics.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4131078/companies-are-using-summarize-with-ai-to-manipulate-enterprise-chatbots-3.html",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/russia-tries-to-block-whatsapp-telegram-in-communication-blockade/",
             "relatedResources": []
         },
         {
@@ -210,108 +123,94 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 12 2026",
-            "headline": "$8K Robot Folds Laundry—Only in the Bay Area",
-            "title": "Weave&#x27;s Isaac 0 Robot Offers Limited Laundry Folding for $7,999",
-            "content": "Weave, a Bay Area startup, has launched Isaac 0, a robot designed to fold laundry for a hefty $7,999 plus a $250 deposit. The stationary robot takes between 30 to 90 minutes to fold a single load. While it offers a novel solution for those who dislike folding laundry, its high price and limited availability to the Bay Area may restrict its appeal. The device represents a niche application of robotics, emphasizing convenience over cost-effectiveness. Potential buyers should consider whether the time saved justifies the investment.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/877851/weave-isaac-robot-fold-laundry",
+            "headline": "Pinterest Claims More Searches Than ChatGPT Amid Earnings Hit",
+            "title": "Pinterest Sees Usage Surge Despite Disappointing Earnings Report",
+            "content": "Pinterest&#x27;s latest earnings report revealed a significant miss, causing its stock to tumble. However, the company highlighted a surprising uptick in user engagement, claiming it now sees more searches than OpenAI&#x27;s ChatGPT. Despite the financial setback, this surge in activity suggests a growing reliance on Pinterest as a search tool. The increased usage could indicate a shift in user behavior towards more visual and discovery-based search platforms. Investors and stakeholders should monitor whether this trend can translate into improved monetization and long-term growth. The company&#x27;s ability to capitalize on this increased engagement will be crucial moving forward.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/12/amid-disappointing-earnings-pinterest-claims-it-sees-more-searches-than-chatgpt/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "IBM to Triple Entry-Level Hires—AI Alters Job Roles",
+            "title": "IBM Expands U.S. Entry-Level Hiring with AI-Driven Role Changes",
+            "content": "IBM plans to significantly expand its entry-level hiring in the United States by tripling its intake in 2026. However, these positions will differ from traditional roles, reflecting the company&#x27;s adaptation to the AI-driven landscape. As AI technologies automate routine tasks, new hires will focus on more strategic and complex responsibilities. This shift underscores the broader trend of AI reshaping job markets and skill requirements. Prospective employees should prepare for roles emphasizing critical thinking and adaptability. IBM&#x27;s strategy highlights the need for businesses to evolve their workforce in response to AI advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/12/ibm-will-hire-your-entry-level-talent-in-the-age-of-ai/",
+            "relatedResources": [
+                {
+                    "label": "Ibm Analysis",
+                    "url": "/articles/ibm-api-connect-cve-2026.html",
+                    "icon": "fa-file-alt"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "ICE&#x27;s Secret Expansion—Palantir Workers Raise Ethical Flags",
+            "title": "Uncanny Valley Explores ICE&#x27;s Expansion and Palantir&#x27;s Ethical Dilemmas",
+            "content": "In the latest episode of Uncanny Valley, hosts delve into a WIRED investigation uncovering a covert campaign by the Trump administration to expand ICE operations. The report reveals plans that could extend surveillance and enforcement into local communities. Meanwhile, Palantir employees express growing ethical concerns over their company&#x27;s involvement in these initiatives. This situation highlights ongoing tensions between government objectives and tech company ethics. Security professionals should consider the implications of technology deployment in sensitive areas. The episode underscores the importance of ethical oversight in AI and government collaborations.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-ice-expansion-palantir-workers-ethical-concerns-openclaw-ai-assistants/",
             "relatedResources": []
         },
         {
             "date": "Feb 12 2026",
-            "headline": "Chrome&#x27;s Auto Browse—A Double-Edged Sword",
-            "title": "Chrome&#x27;s Auto Browse Agent: Capable Yet Unpredictable Web Navigation",
-            "content": "Chrome&#x27;s Auto Browse agent, designed to autonomously surf the web, has shown both impressive capabilities and significant drawbacks. While it can navigate complex web environments, it also risks malfunctioning, potentially leading to security vulnerabilities or data breaches. This dual nature highlights the challenges of developing autonomous browsing technologies. Users and developers should be cautious, ensuring robust testing and monitoring to mitigate potential risks. As AI continues to evolve, the balance between automation and control remains a critical consideration.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/02/tested-how-chromes-auto-browse-agent-handles-common-web-tasks/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "RentAHuman: AI Hires Humans for Hype",
-            "title": "RentAHuman Platform Engages Humans to Promote AI Startups",
-            "content": "RentAHuman, a platform where AI agents hire humans, primarily serves as a tool for promoting AI startups rather than revolutionizing gig work. Users report that the system is filled with bots aiming to leverage human presence in marketing campaigns, turning participants into mere components of the AI hype machine. This raises questions about the ethical implications and sustainability of such platforms. As AI continues to intertwine with human labor, the gig economy faces new challenges in defining meaningful work.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/i-tried-rentahuman-ai-agents-hired-me-to-hype-their-ai-startups/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "AI Tools Ease Online Crime—Threats Escalate",
-            "title": "AI Technologies Facilitate Online Crime, Raising Security Concerns",
-            "content": "Cybersecurity expert Anton Cherepanov discovered a file on VirusTotal highlighting the ease with which AI can facilitate online crime. The file, a potential virus, underscores the increasing sophistication of AI-driven cyberattacks. With tools becoming more accessible, even low-skill attackers can launch effective campaigns, posing significant risks to individuals and organizations. This trend necessitates enhanced cybersecurity measures and awareness to combat the growing threat landscape. Professionals must stay informed about AI advancements to protect against these evolving threats.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/02/12/1132386/ai-already-making-online-swindles-easier/",
+            "headline": "Musk&#x27;s Moonbase Alpha—SpaceX and xAI&#x27;s New Frontier",
+            "title": "Elon Musk Envisions Moonbase Alpha for SpaceX and xAI Expansion",
+            "content": "Elon Musk has unveiled a bold new vision for SpaceX and xAI: Moonbase Alpha. This ambitious project aims to establish a lunar base equipped with a mass driver to launch AI satellites into deep space. Musk&#x27;s plan reflects his commitment to advancing space exploration and AI integration. The initiative could revolutionize satellite deployment and open up new possibilities for space-based AI applications. Industry experts should watch for technological developments and potential collaborations. Moonbase Alpha represents a significant step in Musk&#x27;s quest to push the boundaries of technology and exploration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/12/musk-needed-a-new-vision-for-spacex-and-xai-he-landed-on-moonbase-alpha/",
             "relatedResources": []
         },
         {
             "date": "Feb 12 2026",
-            "headline": "Chinese AI—A Year of Transformation",
-            "title": "Chinese Open-Source AI Advances Mark a Turning Point",
-            "content": "Over the past year, Chinese AI has experienced significant growth, highlighted by the release of DeepSeek&#x27;s R1 reasoning model in January 2025. This development has spurred innovation across Chinese companies, positioning them as key players in the global AI landscape. The increased focus on open-source models fosters collaboration and accelerates technological advancement. As China continues to invest in AI, international stakeholders should monitor these developments closely, recognizing both the opportunities and competitive challenges they present.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/02/12/1132811/whats-next-for-chinese-open-source-ai/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "State Hackers Use AI—Phishing Gets Smarter",
-            "title": "State-Sponsored Hackers Employ AI for Enhanced Cyberattacks",
-            "content": "State-sponsored hackers from Iran, North Korea, China, and Russia are utilizing advanced AI models like Google&#x27;s Gemini to refine their cyberattack strategies. These threat actors are crafting sophisticated phishing campaigns and other malicious activities with increased precision and effectiveness. The use of AI in state-sponsored cyber operations highlights the growing complexity of the threat landscape. Organizations must bolster their cybersecurity defenses and stay vigilant against these enhanced tactics to protect sensitive data and infrastructure.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/state-sponsored-hackers-ai-cyberattacks-google/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "OpenEnv Tests AI Tools in Real-World Scenarios",
-            "title": "OpenEnv Framework Evaluates AI Tool-Using Agents in Practical Applications",
-            "content": "The OpenEnv framework has been introduced to assess AI agents&#x27; ability to use tools in real-world environments. This initiative aims to bridge the gap between theoretical AI capabilities and practical implementation. By evaluating agents in diverse scenarios, OpenEnv provides insights into their effectiveness and limitations. The findings will guide future AI development, emphasizing the need for adaptable and robust systems. Researchers and developers are encouraged to engage with OpenEnv to enhance the practical utility of AI technologies.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/openenv-turing",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 12 2026",
-            "headline": "z.ai&#x27;s GLM-5 Slashes Hallucination Rates with New RL &#x27;Slime&#x27; Technique",
-            "title": "z.ai&#x27;s GLM-5 Model Achieves Record Low Hallucination Rates with RL &#x27;Slime&#x27;",
-            "content": "Chinese AI startup Zhupai, known as z.ai, has unveiled its latest large language model, GLM-5, which boasts a record low hallucination rate. The open-source model, available under the MIT License, is designed for enterprise deployment and leverages a novel reinforcement learning technique dubbed &#x27;slime&#x27;. This approach significantly enhances the model&#x27;s accuracy and reliability, reducing erroneous outputs that have plagued AI models. The GLM-5&#x27;s advancements mark a notable step forward in AI development, offering enterprises a more dependable tool for natural language processing tasks. Organizations considering AI integration should evaluate GLM-5 for its potential to improve operational efficiency and decision-making processes.",
+            "headline": "Nvidia&#x27;s DMS Cuts LLM Costs by 8x—Maintains Accuracy",
+            "title": "Nvidia Introduces Dynamic Memory Sparsification to Slash LLM Costs",
+            "content": "Nvidia researchers have unveiled a groundbreaking technique called dynamic memory sparsification (DMS) that reduces the memory costs of large language model (LLM) reasoning by up to eight times without sacrificing accuracy. DMS compresses the key value (KV) cache, a critical component in LLM processing, enabling more efficient resource use. This advancement could significantly lower operational costs for companies utilizing LLMs, making AI applications more accessible. Organizations should evaluate the potential savings and performance benefits of adopting DMS. Nvidia&#x27;s innovation marks a pivotal moment in optimizing AI infrastructure.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/z-ais-open-source-glm-5-achieves-record-low-hallucination-rate-and-leverages",
+            "sourceUrl": "https://venturebeat.com/orchestration/nvidias-new-technique-cuts-llm-reasoning-costs-by-8x-without-losing-accuracy",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "Didero Raises $30M—Revolutionizes Manufacturing Procurement with AI",
+            "title": "Didero Secures Funding to Automate Procurement with Agentic AI",
+            "content": "Didero has raised $30 million in funding to enhance its agentic AI platform, which automates manufacturing procurement processes. The AI layer integrates with existing enterprise resource planning (ERP) systems, autonomously handling communications and task execution. This innovation promises to streamline procurement operations, reduce human error, and increase efficiency. Manufacturing companies should consider integrating Didero&#x27;s solution to optimize their supply chain management. The funding will accelerate Didero&#x27;s development and deployment, positioning it as a leader in AI-driven procurement automation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 12 2026",
+            "headline": "MiniMax&#x27;s M2.5 Models—State-of-the-Art at Fraction of Cost",
+            "title": "MiniMax Launches M2.5 Models Offering Affordable AI Performance",
+            "content": "Shanghai-based AI startup MiniMax has introduced its M2.5 language model in two variants, M2.5 and M2.5 Lightning, delivering near state-of-the-art performance at just 1/20th the cost of Claude Opus 4.6. This breakthrough could democratize access to high-end AI capabilities, reducing financial barriers for businesses and researchers. The models&#x27; affordability and efficiency make them attractive options for organizations seeking cost-effective AI solutions. Industry stakeholders should assess the potential impact on AI deployment strategies. MiniMax&#x27;s innovation highlights the ongoing trend of making advanced AI more accessible.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/minimaxs-new-open-m2-5-and-m2-5-lightning-near-state-of-the-art-while",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         }
@@ -377,6 +276,50 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-20700",
+            "dateAdded": "Feb 12, 2026",
+            "vendor": "Apple Multiple Products",
+            "description": "Apple iOS, macOS, tvOS, watchOS, and visionOS contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow an attacker with memory write the capabi",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20700",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2024-43468",
+            "dateAdded": "Feb 12, 2026",
+            "vendor": "Microsoft Configuration Manager",
+            "description": "Microsoft Configuration Manager contains an SQL injection vulnerability. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to the target environment wh",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43468",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-15556",
+            "dateAdded": "Feb 12, 2026",
+            "vendor": "Notepad++ Notepad++",
+            "description": "Notepad++ when using the WinGUp updater, contains a download of code without integrity check vulnerability that could allow an attacker to intercept or redirect update traffic to download and execute",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15556",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-40536",
+            "dateAdded": "Feb 12, 2026",
+            "vendor": "SolarWinds Web Help Desk",
+            "description": "SolarWinds Web Help Desk contains a security control bypass vulnerability that could allow an unauthenticated attacker to gain access to certain restricted functionality.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40536",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-21513",
             "dateAdded": "Feb 10, 2026",
