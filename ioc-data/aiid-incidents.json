@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-490",
+      "incident_id": 490,
+      "title": "Clarkesworld Magazine Reportedly Closed Down Submissions Due to Massive Increase in Purportedly AI-G",
+      "date": "2026-02-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-754",
+      "incident_id": 754,
+      "title": "Female Politicians in the United Kingdom Reportedly Victimized by Purported Deepfake Pornography",
+      "date": "2026-02-14",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1369",
       "incident_id": 1369,
       "title": "Purportedly AI-Generated Image Reportedly Circulated Ahead of Thai Election Depicting PM Anutin Char",
@@ -14,6 +30,22 @@
       "title": "California Teen Reportedly Died of Overdose After Repeatedly Seeking Drug-Use Guidance Allegedly fro",
       "date": "2026-02-14",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1371",
+      "incident_id": 1371,
+      "title": "Purported Deepfake Reportedly Impersonated Consumer Adviser Clark Howard to Promote Auto-Insurance Q",
+      "date": "2026-02-14",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1372",
+      "incident_id": 1372,
+      "title": "Houston Gun Store Co-Owner Allegedly Used AI to Create Sexually Explicit Deepfake Images of a Social",
+      "date": "2026-02-14",
+      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -1474,9 +1506,9 @@
     }
   ],
   "stats": {
-    "total": 184,
-    "last7Days": 6,
-    "last30Days": 38
+    "total": 188,
+    "last7Days": 10,
+    "last30Days": 42
   },
-  "lastUpdated": "2026-02-15T00:31:03.970700+05:30"
+  "lastUpdated": "2026-02-15T02:08:39.881365+05:30"
 }
