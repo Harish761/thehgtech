@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1369",
+      "incident_id": 1369,
+      "title": "Purportedly AI-Generated Image Reportedly Circulated Ahead of Thai Election Depicting PM Anutin Char",
+      "date": "2026-02-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1370",
+      "incident_id": 1370,
+      "title": "California Teen Reportedly Died of Overdose After Repeatedly Seeking Drug-Use Guidance Allegedly fro",
+      "date": "2026-02-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1368",
       "incident_id": 1368,
       "title": "Malicious OpenClaw Skills Reportedly Delivered AMOS Stealer and Exfiltrated Credentials via ClawHub",
@@ -1458,9 +1474,9 @@
     }
   ],
   "stats": {
-    "total": 182,
-    "last7Days": 7,
-    "last30Days": 36
+    "total": 184,
+    "last7Days": 6,
+    "last30Days": 38
   },
-  "lastUpdated": "2026-02-14T22:15:38.372115+05:30"
+  "lastUpdated": "2026-02-15T00:31:03.970700+05:30"
 }
