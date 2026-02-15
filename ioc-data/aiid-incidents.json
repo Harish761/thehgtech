@@ -49,6 +49,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1373",
+      "incident_id": 1373,
+      "title": "AI Coding Agent 'MJ Rathbun' Allegedly Published Personalized Accusatory Blog Post Targeting Matplot",
+      "date": "2026-02-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1368",
       "incident_id": 1368,
       "title": "Malicious OpenClaw Skills Reportedly Delivered AMOS Stealer and Exfiltrated Credentials via ClawHub",
@@ -1489,14 +1497,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1273",
-      "incident_id": 1273,
-      "title": "Purportedly AI-Generated Fake Videos of Louvre Heist Reportedly Circulated Widely Online",
-      "date": "2025-11-17",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1274",
       "incident_id": 1274,
       "title": "AI-Powered Taco Bell Drive-Thru Reportedly Disrupted by Viral Prank Ordering 18,000 Water Cups",
@@ -1507,8 +1507,8 @@
   ],
   "stats": {
     "total": 188,
-    "last7Days": 10,
-    "last30Days": 42
+    "last7Days": 11,
+    "last30Days": 43
   },
-  "lastUpdated": "2026-02-15T02:08:39.881365+05:30"
+  "lastUpdated": "2026-02-15T08:48:48.817821+05:30"
 }
