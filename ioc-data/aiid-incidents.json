@@ -1495,20 +1495,12 @@
       "date": "2025-11-17",
       "category": "autonomous_vehicle",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1274",
-      "incident_id": 1274,
-      "title": "AI-Powered Taco Bell Drive-Thru Reportedly Disrupted by Viral Prank Ordering 18,000 Water Cups",
-      "date": "2025-11-17",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 188,
-    "last7Days": 11,
+    "total": 187,
+    "last7Days": 8,
     "last30Days": 43
   },
-  "lastUpdated": "2026-02-15T22:15:26.833127+05:30"
+  "lastUpdated": "2026-02-16T00:32:39.472808+05:30"
 }
