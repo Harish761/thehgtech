@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-02-15T02:23:48.224442",
+  "last_updated": "2026-02-15T12:52:59.877279",
   "period": "Last 7 days",
   "total_groups": 32,
-  "total_victims": 299,
+  "total_victims": 296,
   "groups": [
     {
       "name": "Clop",
@@ -187,7 +187,7 @@
     },
     {
       "name": "Thegentlemen",
-      "count": 35,
+      "count": 34,
       "victims": [
         {
           "name": "Gruppo Avanti",
@@ -278,7 +278,7 @@
     },
     {
       "name": "Qilin",
-      "count": 32,
+      "count": 30,
       "victims": [
         {
           "name": "JC Resorts",
@@ -349,8 +349,8 @@
         "AU",
         "CA",
         "CL",
-        "FR",
-        "GB"
+        "GB",
+        "JP"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -366,8 +366,14 @@
     },
     {
       "name": "Dragonforce",
-      "count": 19,
+      "count": 21,
       "victims": [
+        {
+          "name": "Bigso",
+          "date": "2026-02-15 09:22:04.547527",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=018d4be8-8727-415e-80b8-81ae696d4a22",
+          "discovered_date": "2026-02-15T09:22:04.547527"
+        },
         {
           "name": "Betesan",
           "date": "2026-02-13 23:47:25.761681",
@@ -417,16 +423,10 @@
           "discovered_date": "2026-02-13T01:03:59.830389"
         },
         {
-          "name": "Betesan",
-          "date": "2026-02-13T23:47:25+00:00",
-          "url": "https://www.ransomware.live/id/QmV0ZXNhbkBkcmFnb25mb3JjZQ==",
-          "discovered_date": "2026-02-13T23:47:25+00:00"
-        },
-        {
-          "name": "MAIRIE DE FUMEL",
-          "date": "2026-02-13T23:04:01+00:00",
-          "url": "https://www.ransomware.live/id/TUFJUklFIERFIEZVTUVMQGRyYWdvbmZvcmNl",
-          "discovered_date": "2026-02-13T23:04:01+00:00"
+          "name": "Bigso",
+          "date": "2026-02-15T09:22:04+00:00",
+          "url": "https://www.ransomware.live/id/Qmlnc29AZHJhZ29uZm9yY2U=",
+          "discovered_date": "2026-02-15T09:22:04+00:00"
         }
       ],
       "industries": [
@@ -437,9 +437,9 @@
       "countries": [
         "FR",
         "N/A",
+        "SE",
         "SG",
-        "TR",
-        "TW"
+        "TR"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -450,7 +450,7 @@
         3,
         14,
         0,
-        0
+        2
       ]
     },
     {
@@ -633,19 +633,13 @@
     },
     {
       "name": "Incransom",
-      "count": 14,
+      "count": 13,
       "victims": [
         {
           "name": "Bitgo",
           "date": "2026-02-14 23:15:36.512475",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6990ec428f1d14b743b91260",
           "discovered_date": "2026-02-14T23:15:36.512475"
-        },
-        {
-          "name": "rswater.ae",
-          "date": "2026-02-12 18:28:44.039333",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/698e14758f1d14b7437d38ac",
-          "discovered_date": "2026-02-12T18:28:44.039333"
         },
         {
           "name": "Midwestern Oil & Gas",
@@ -694,11 +688,16 @@
           "date": "2026-02-12T05:38:23+00:00",
           "url": "https://www.ransomware.live/id/ZXhjYXZhdGlvbnRvdXJpZ255LmNhQGluY3JhbnNvbQ==",
           "discovered_date": "2026-02-12T05:38:23+00:00"
+        },
+        {
+          "name": "www.hfplanners.com",
+          "date": "2026-02-11T20:36:06+00:00",
+          "url": "https://www.ransomware.live/id/d3d3LmhmcGxhbm5lcnMuY29tQGluY3JhbnNvbQ==",
+          "discovered_date": "2026-02-11T20:36:06+00:00"
         }
       ],
       "industries": [
         "Energy",
-        "Not Found",
         "Technology"
       ],
       "countries": [
@@ -714,7 +713,7 @@
         1,
         2,
         1,
-        8,
+        7,
         0,
         2,
         0
@@ -1458,39 +1457,6 @@
       ]
     },
     {
-      "name": "Pear",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Pavlus Travel",
-          "date": "2026-02-10T06:02:06+00:00",
-          "url": "https://www.ransomware.live/id/UGF2bHVzIFRyYXZlbEBwZWFy",
-          "discovered_date": "2026-02-10T06:02:06+00:00"
-        },
-        {
-          "name": "San Diego Eye Bank",
-          "date": "2026-02-08T08:36:53+00:00",
-          "url": "https://www.ransomware.live/id/U2FuIERpZWdvIEV5ZSBCYW5rQHBlYXI=",
-          "discovered_date": "2026-02-08T08:36:53+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Rhysida",
       "count": 1,
       "victims": [
@@ -1580,6 +1546,33 @@
           "date": "2026-02-10T21:22:11+00:00",
           "url": "https://www.ransomware.live/id/UENDQUBuaXRyb2dlbg==",
           "discovered_date": "2026-02-10T21:22:11+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pear",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Pavlus Travel",
+          "date": "2026-02-10T06:02:06+00:00",
+          "url": "https://www.ransomware.live/id/UGF2bHVzIFRyYXZlbEBwZWFy",
+          "discovered_date": "2026-02-10T06:02:06+00:00"
         }
       ],
       "industries": [],
