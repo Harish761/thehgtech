@@ -1393,22 +1393,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1127",
-      "incident_id": 1127,
-      "title": "Purported AI-Generated Audio Clip Allegedly Portrays Cambodian Senate President Hun Sen Raising Mone",
-      "date": "2025-11-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1129",
-      "incident_id": 1129,
-      "title": "Purported AI-Generated Video Depicting Philippine President Ferdinand Marcos Jr. Using Drugs Shared ",
-      "date": "2025-11-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1133",
       "incident_id": 1133,
       "title": "Reported AI-Generated Audio of Ukrainian Commander Andriy Biletsky Used in Russian Disinformation Ca",
@@ -1422,14 +1406,6 @@
       "title": "Reported Deepfakes of Ukrainian Deputy PM Olha Stefanishyna Allegedly Supporting Fictional Mobilizat",
       "date": "2025-11-17",
       "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1141",
-      "incident_id": 1141,
-      "title": "Purported AI Voice Cloning Used to Impersonate Secretary of State Marco Rubio",
-      "date": "2025-11-17",
-      "category": "fraud",
       "severity": "medium"
     },
     {
@@ -1449,35 +1425,11 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1195",
-      "incident_id": 1195,
-      "title": "Nigeria-Based YouTube Network Allegedly Uses AI Voiceovers and Anchors to Amplify Pro-Kremlin Narrat",
-      "date": "2025-11-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1202",
-      "incident_id": 1202,
-      "title": "Russian Disinformation Campaign Reportedly Used AI-Generated Posts and Videos to Target 2025 Moldova",
-      "date": "2025-11-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1220",
       "incident_id": 1220,
       "title": "LAMEHUG Malware Reportedly Integrates Large Language Model for Real-Time Command Generation in a Pur",
       "date": "2025-11-17",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1221",
-      "incident_id": 1221,
-      "title": "Alleged AI-Enabled PRISONBREAK Influence Operation on X Reportedly Synchronizes Deepfake of Evin Pri",
-      "date": "2025-11-17",
-      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -1498,9 +1450,9 @@
     }
   ],
   "stats": {
-    "total": 187,
+    "total": 181,
     "last7Days": 8,
     "last30Days": 43
   },
-  "lastUpdated": "2026-02-16T00:32:39.472808+05:30"
+  "lastUpdated": "2026-02-16T02:09:18.451048+05:30"
 }
