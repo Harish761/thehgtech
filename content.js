@@ -5,20 +5,36 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 14 2026",
-            "headline": "37M Downloads—Malicious Chrome Extensions Expose User Data",
-            "title": "Over 300 Malicious Chrome Extensions Leak or Steal User Data",
-            "content": "Security researchers have identified over 300 malicious Chrome extensions that have collectively amassed more than 37 million downloads, posing significant privacy risks to users. These extensions are designed to track user activity and steal personal information, exposing sensitive data to potential misuse. The extensions exploit permissions granted by users to access browsing activity and other personal information. This discovery highlights the persistent challenge of policing browser extensions, which can easily bypass security measures by masquerading as legitimate tools. Users are advised to review installed extensions and remove any that are unnecessary or suspicious to mitigate potential data exposure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-300-malicious-chrome-extensions-caught-leaking-or-stealing-user-data/",
-            "relatedResources": []
+            "headline": "83% of Ivanti RCE Exploits Tied to One Actor",
+            "title": "Single Threat Actor Dominates Ivanti RCE Exploitation with CVE-2026-21962 and CVE-2026-24061",
+            "content": "A single threat actor is behind the majority of recent exploitations of critical vulnerabilities in Ivanti Endpoint Manager Mobile (EPMM), identified as CVE-2026-21962 and CVE-2026-24061. These vulnerabilities allow remote code execution, posing a severe risk to systems using affected versions of EPMM. The concentration of attacks by one actor underscores the need for heightened vigilance among organizations utilizing Ivanti products. Security professionals are advised to apply the latest patches immediately to mitigate potential breaches. This incident highlights the persistent threat landscape faced by enterprise mobile management solutions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/one-threat-actor-responsible-for-83-percent-of-recent-ivanti-rce-attacks/",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
         },
         {
-            "date": "Feb 13 2026",
-            "headline": "CANFAIL Malware Tied to Suspected Russian Group—Targets Ukraine",
-            "title": "Google Links Suspected Russian Actor to CANFAIL Malware Attacks in Ukraine",
-            "content": "Google Threat Intelligence Group (GTIG) has attributed a series of malware attacks on Ukrainian organizations to a previously undocumented threat actor, suspected to be affiliated with Russian intelligence. The malware, known as CANFAIL, has been used to infiltrate and disrupt networks, posing a significant threat to national security. This actor&#x27;s tactics include spear-phishing campaigns and leveraging zero-day vulnerabilities to gain access to sensitive systems. The attacks underscore the ongoing cyber conflict targeting Ukraine amid geopolitical tensions. Organizations in the region are urged to enhance their cybersecurity measures and remain vigilant against potential threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/google-ties-suspected-russian-actor-to.html",
+            "date": "Feb 14 2026",
+            "headline": "Snail Mail Scam Targets Crypto Wallet Users",
+            "title": "Physical Letters Used in Crypto-Theft Attacks on Trezor and Ledger Users",
+            "content": "Threat actors are employing an unusual tactic by sending physical letters to users of Trezor and Ledger cryptocurrency hardware wallets, impersonating the companies to steal recovery phrases. These letters aim to deceive recipients into compromising their wallet security, potentially leading to significant financial losses. This method marks a departure from digital phishing techniques, exploiting the trust associated with physical mail. Cryptocurrency users are urged to scrutinize any unsolicited communications and verify the authenticity of requests through official channels. This attack vector highlights the evolving strategies of cybercriminals targeting the crypto sector.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/snail-mail-letters-target-trezor-and-ledger-users-in-crypto-theft-attacks/",
             "relatedResources": [
                 {
                     "label": "MITRE ATT&CK Mapping",
@@ -29,65 +45,55 @@ const websiteContent = {
         },
         {
             "date": "Feb 13 2026",
-            "headline": "BYOVD Attacks Exploit Windows—Microsoft Urged to Act",
-            "title": "Microsoft Faces Pressure to Address BYOVD Attack Vulnerabilities",
-            "content": "Microsoft is under increasing pressure to address vulnerabilities exploited by Bring Your Own Vulnerable Driver (BYOVD) attacks, which weaponize Windows drivers to terminate security processes. These attacks leverage security gaps in driver validation processes, allowing threat actors to disable antivirus and other security tools. The lack of straightforward solutions complicates efforts to mitigate these risks, leaving networks exposed. This trend highlights the need for robust driver verification and enhanced security protocols in Windows environments. Security teams should prioritize monitoring for suspicious driver activity and implement stricter controls over driver installations.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/microsoft-under-pressure-defenses-byovd-attacks",
+            "headline": "BeyondTrust RS Flaw Exploited—Patch Urgently Required",
+            "title": "Active Exploitation of Critical BeyondTrust Remote Support Vulnerability",
+            "content": "A critical vulnerability in BeyondTrust Remote Support, recently patched, is being actively exploited to compromise self-hosted deployments, including Bomgar remote support appliances. The flaw affects systems running unpatched versions of the software, allowing attackers to gain unauthorized access. This vulnerability poses a significant risk to organizations relying on BeyondTrust for secure remote support operations. Security experts recommend immediate patching to prevent potential breaches. The incident serves as a reminder of the importance of timely updates in maintaining cybersecurity resilience.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4132368/critical-beyondtrust-rs-vulnerability-exploited-in-active-attacks.html",
             "relatedResources": [
                 {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
             "date": "Feb 13 2026",
-            "headline": "Nation-State Hackers Exploit Zero-Days—Defense Sector Targeted",
-            "title": "Defense Industrial Base Under Siege by Nation-State Hackers",
-            "content": "Espionage groups from China, Russia, and other nations have been actively exploiting at least two dozen zero-day vulnerabilities in edge devices to infiltrate defense contractors&#x27; networks. These sophisticated attacks aim to extract sensitive information and disrupt operations within the defense industrial base. The use of zero-days highlights the advanced capabilities of nation-state actors and their persistent targeting of critical infrastructure. Organizations within this sector must prioritize patch management and employ advanced threat detection systems to defend against these incursions. The ongoing cyber espionage underscores the critical need for enhanced cybersecurity collaboration across the defense industry.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/nation-state-hackers-defense-industrial-base-under-siege",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "AI Agents Swarm—Security Complexity Grows",
-            "title": "AI Agents Scale Up, Increasing Security Complexity for Organizations",
-            "content": "As organizations deploy AI systems with multiple agents working autonomously, the complexity of securing these environments increases significantly. This &quot;swarming&quot; behavior of AI agents expands the attack surface, making it more challenging to protect against potential threats. The autonomous nature of these agents can lead to unintended interactions and vulnerabilities that are difficult to predict and manage. Organizations must adapt their security strategies to address these new challenges by enhancing monitoring and implementing robust AI governance frameworks. The trend towards AI-driven operations necessitates a reevaluation of traditional security approaches to ensure comprehensive protection.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cloud-security/ai-agents-swarm-security-complexity",
+            "headline": "Fake Recruiters Use Malware in Developer Challenges",
+            "title": "North Korean Actors Target Developers with Malware-Laden Coding Tasks",
+            "content": "North Korean threat actors have launched a campaign targeting JavaScript and Python developers by embedding malware in cryptocurrency-related coding challenges. This tactic involves posing as recruiters offering lucrative job opportunities, only to deliver malicious payloads through seemingly legitimate tasks. The campaign exploits the eagerness of developers seeking new opportunities, potentially compromising personal and organizational data. Developers are advised to verify the authenticity of recruiters and be cautious of unsolicited job offers. The attack underscores the persistent threat posed by state-sponsored cyber actors.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-job-recruiters-hide-malware-in-developer-coding-challenges/",
             "relatedResources": []
         },
         {
             "date": "Feb 13 2026",
-            "headline": "Google Identifies Coordinated Cyber Ops—China, Iran, Russia Involved",
-            "title": "Google Links Multiple Nations to Coordinated Defense Sector Cyber Operations",
-            "content": "Google Threat Intelligence Group (GTIG) has identified coordinated cyber operations targeting the defense industrial base, involving state-sponsored actors from China, Iran, Russia, and North Korea. These operations include espionage, data exfiltration, and potential disruption of critical infrastructure. The threat actors employ sophisticated techniques, including spear-phishing and exploiting zero-day vulnerabilities, to gain access to sensitive networks. This revelation highlights the global scale of cyber threats facing the defense sector and the need for international cooperation in cybersecurity efforts. Organizations are advised to bolster their defenses and engage in information sharing to counter these persistent threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/google-links-china-iran-russia-north.html",
+            "headline": "Zscaler Acquires SquareX—Enhances Secure Browsing",
+            "title": "Zscaler&#x27;s Acquisition of SquareX Advances Zero Trust and Secure Browsing",
+            "content": "Zscaler&#x27;s acquisition of SquareX aims to bolster its zero trust and secure browsing capabilities, aligning with industry trends as competitors like CrowdStrike and Palo Alto Networks invest in similar technologies. This strategic move enhances Zscaler&#x27;s ability to provide comprehensive security solutions in an increasingly complex threat landscape. The acquisition reflects the growing demand for secure browsing technologies as organizations prioritize protecting their digital environments. Clients of Zscaler can expect improved security features as the integration progresses. This development emphasizes the competitive nature of the cybersecurity market.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/remote-workforce/zscaler-squarex-deal-boosts-zero-trust-secure-browsing-capabilities",
             "relatedResources": [
                 {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
+                    "label": "Network Segmentation & Zero Trust",
+                    "url": "/guides/network-segmentation-zero-trust.html",
+                    "icon": "fa-project-diagram"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
                 }
             ]
         },
         {
             "date": "Feb 13 2026",
-            "headline": "Windows LNK Files Abused—4 New Exploitation Techniques",
-            "title": "New Techniques Exploit Windows LNK Files for Malicious Actions",
-            "content": "Cybersecurity researcher Wietze Beukema has documented four new methods for exploiting Windows shortcut (.LNK) files to execute malicious actions. These techniques involve spoofing the visible LNK destination, tricking users into executing harmful scripts or programs. The growing number of exploitation methods highlights the persistent vulnerability of LNK files, which are often overlooked in security assessments. Users and organizations should exercise caution when handling LNK files and consider implementing stricter controls and monitoring for unusual file activities. This research underscores the need for continuous vigilance and adaptation in cybersecurity practices.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4132232/four-new-reasons-why-windows-lnk-files-cannot-be-trusted.html",
+            "headline": "Claude Artifacts Misused in Mac Infostealer Attacks",
+            "title": "ClickFix Campaigns Exploit Claude Artifacts to Deliver Mac Infostealers",
+            "content": "Threat actors are leveraging Claude artifacts and Google Ads in ClickFix campaigns to distribute infostealer malware targeting macOS users. These campaigns exploit specific search queries to deliver malicious payloads, compromising user data and system integrity. The use of Claude artifacts in this context highlights the innovative approaches cybercriminals are adopting to bypass traditional security measures. Mac users are advised to exercise caution when engaging with online ads and to employ robust security solutions. This attack vector underscores the need for continuous vigilance in the face of evolving cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/claude-llm-artifacts-abused-to-push-mac-infostealers-in-clickfix-attack/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -95,11 +101,20 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "$25M Fine for Louis Vuitton, Dior, Tiffany Over Breaches",
+            "title": "South Korea Fines Luxury Brands $25 Million for Data Breaches",
+            "content": "South Korea has imposed a $25 million fine on luxury fashion brands Louis Vuitton, Christian Dior Couture, and Tiffany for failing to implement adequate security measures, leading to data breaches affecting over 5.5 million customers. The breaches resulted in unauthorized access to sensitive customer information, highlighting the critical need for robust cybersecurity practices in the retail sector. This penalty serves as a wake-up call for businesses to prioritize data protection and compliance with regulatory standards. Organizations are encouraged to review and strengthen their security frameworks to prevent similar incidents.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/louis-vuitton-dior-and-tiffany-fined-25-million-over-data-breaches/",
+            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -128,90 +143,22 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 13 2026",
-            "headline": "OpenClaw Deployments Surge—Security Concerns Rise",
-            "title": "OpenClaw&#x27;s Rapid Deployment Raises Security Concerns for Corporate Devices",
-            "content": "OpenClaw, the open-source AI agent, has seen a significant increase in public deployments, jumping from 1,000 to over 21,000 instances in less than a week. This surge, tracked by cybersecurity firm Censys, has raised concerns about potential security vulnerabilities in corporate environments. Bitdefender&#x27;s GravityZone telemetry, which monitors business settings, confirms this alarming trend. The rapid expansion of OpenClaw without proper security measures could expose organizations to unauthorized shell access and potential data breaches. Companies are urged to implement strict access controls and monitor OpenClaw deployments closely to mitigate risks.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/how-to-test-openclaw-without-giving-an-autonomous-agent-shell-access-to-your",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "Anthropic&#x27;s Super Bowl Ads Boost Claude App to Top 10",
-            "title": "Anthropic&#x27;s Super Bowl Campaign Elevates Claude App Amidst AI Rivalry",
-            "content": "Anthropic&#x27;s strategic Super Bowl ads have successfully propelled Claude&#x27;s app into the top 10, highlighting its unique features compared to ChatGPT. The campaign coincided with the release of Anthropic&#x27;s Opus 4.6 model, drawing significant attention to its AI capabilities. The ads, which humorously mocked AI, resonated with audiences and differentiated Claude in a competitive market. The campaign&#x27;s success underscores the power of combining high-profile advertising with technological innovation to capture market share. Developers and tech leaders should note the effectiveness of integrating marketing with product rollouts.",
+            "date": "Feb 14 2026",
+            "headline": "xAI&#x27;s Grok Chatbot—Safety Concerns Amid Unhinged Development",
+            "title": "Former Employee Claims xAI&#x27;s Grok Chatbot Being Made More Unhinged",
+            "content": "Elon Musk is reportedly pushing for xAI&#x27;s Grok chatbot to become more unpredictable, raising safety concerns according to a former employee. The chatbot, known for its conversational AI capabilities, is being tweaked to exhibit more erratic behavior, potentially compromising user safety and trust. Industry insiders worry this shift could lead to unintended consequences, especially in environments where stability and predictability are crucial. As AI systems increasingly integrate into daily life, ensuring they operate within safe parameters remains a top priority for developers and users alike. Stakeholders are urged to monitor these developments closely to assess potential risks.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/13/anthropics-super-bowl-ads-mocking-ai-with-ads-helped-push-claudes-app-into-the-top-10/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "xAI Faces Exodus—Co-founders Depart Amidst Turmoil",
-            "title": "xAI&#x27;s Leadership Exodus Raises Concerns Over Company Stability",
-            "content": "xAI is experiencing a wave of departures, including co-founders Yuhuai (Tony) Wu and Jimmy Ba, amid growing instability within the company. The exits, announced over consecutive days, have sparked speculation about internal challenges at the Elon Musk-backed AI firm. The loss of key personnel could hinder xAI&#x27;s ability to innovate and compete in the rapidly evolving AI landscape. Industry observers are watching closely as the company navigates this tumultuous period. Stakeholders should assess the potential impact on xAI&#x27;s projects and partnerships.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/878761/mass-exodus-at-xai-grok-elon-musk-restructuring",
+            "sourceUrl": "https://techcrunch.com/2026/02/14/is-safety-is-dead-at-xai/",
             "relatedResources": []
         },
         {
-            "date": "Feb 13 2026",
-            "headline": "Zillow Embraces AI—Revolutionizes Home Search Amid Market Slump",
-            "title": "Zillow Leverages AI to Innovate Home Search Amid Housing Market Challenges",
-            "content": "As the housing market faces stagnation, Zillow is turning to artificial intelligence to redefine how users search for homes. The company&#x27;s CEO views AI as a crucial component, rather than a threat, to Zillow&#x27;s strategy for maintaining its competitive edge. By integrating AI, Zillow aims to enhance user experience and streamline the home-buying process. This strategic pivot highlights the growing trend of leveraging technology to adapt to market fluctuations. Real estate professionals should consider the implications of AI-driven tools in reshaping industry dynamics.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/backchannel-how-artificial-intelligence-changed-zillow/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "Musk Hints at Forced xAI Departures Amid Controversy",
-            "title": "Elon Musk Suggests xAI Departures Were Pushed, Not Voluntary",
-            "content": "Elon Musk has implied that the recent exodus of nine engineers, including two co-founders, from xAI may have been prompted internally rather than voluntary. This revelation adds to the mounting controversy surrounding the AI company, raising questions about its internal dynamics and leadership approach. The departures have fueled speculation about potential discord and strategic disagreements within xAI. As the company faces scrutiny, industry insiders are evaluating the potential impact on its long-term viability and innovation capacity. Those involved with xAI should remain vigilant about future developments.",
+            "date": "Feb 14 2026",
+            "headline": "Seedance 2.0 Sparks Hollywood Copyright Uproar",
+            "title": "Hollywood Criticizes Seedance 2.0 for Enabling Copyright Infringement",
+            "content": "Hollywood organizations are voicing strong opposition to the AI video model Seedance 2.0, claiming it facilitates rampant copyright infringement. The model&#x27;s ability to generate realistic video content has led to its misuse in creating unauthorized reproductions of copyrighted material. This backlash underscores the tension between creative industries and emerging AI technologies that challenge traditional intellectual property norms. Industry stakeholders are calling for stricter regulations and oversight to prevent abuse and protect original content creators. Professionals in AI development should consider the ethical implications and legal responsibilities of their innovations.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/13/elon-musk-suggests-spate-of-xai-exits-have-been-push-not-pull/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "Ring&#x27;s Super Bowl Ad Sparks Privacy Concerns",
-            "title": "Ring&#x27;s Super Bowl Ad Highlights Privacy Concerns in Surveillance Expansion",
-            "content": "Ring&#x27;s latest Super Bowl advertisement, featuring a heartwarming story of dogs reuniting with families, has sparked discussions about privacy implications. Critics argue that the ad subtly promotes a vision of an all-encompassing surveillance system, raising alarms about the erosion of privacy. As Ring continues to expand its connected ecosystem, privacy advocates warn of the risks associated with increased surveillance capabilities. Consumers and policymakers should remain aware of the potential for surveillance overreach and consider measures to protect individual privacy rights.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/878797/ring-super-bowl-ad-backlash-epstein-files-chatgpt-vergecast",
+            "sourceUrl": "https://techcrunch.com/2026/02/14/hollywood-isnt-happy-about-the-new-seedance-2-0-video-generator/",
             "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "AI Model Boosts Healthcare Efficiency—Hertfordshire&#x27;s Breakthrough",
-            "title": "Hertfordshire University&#x27;s AI Model Enhances Healthcare Resource Efficiency",
-            "content": "Researchers at Hertfordshire University have developed an operational AI forecasting model aimed at improving resource efficiency in healthcare. The model leverages historical data archives from public sector organizations to inform future decision-making, addressing a common inefficiency in healthcare resource management. By optimizing resource allocation, the AI model has the potential to significantly reduce waste and improve patient care outcomes. Healthcare administrators and policymakers should explore the integration of such AI tools to enhance operational efficiency and service delivery.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-forecasting-model-targets-healthcare-resource-efficiency/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -221,11 +168,41 @@ const websiteContent = {
         },
         {
             "date": "Feb 14 2026",
-            "headline": "Airbnb Integrates AI for Enhanced User Experience",
-            "title": "Airbnb to Incorporate AI for Search, Discovery, and Customer Support",
-            "content": "Airbnb CEO Brian Chesky announced plans to integrate large language models into the platform to enhance search, discovery, and customer support. The initiative aims to leverage AI to streamline user interactions and improve the overall experience for both guests and hosts. The focus will be on using AI to better understand customer needs and provide personalized recommendations. This move comes as part of Airbnb&#x27;s broader strategy to utilize technology for efficiency and scalability. Users can expect more intuitive and responsive service as AI becomes a core component of Airbnb&#x27;s operations.",
+            "headline": "India Launches $1.1B Fund for Deep-Tech Startups",
+            "title": "India Approves $1.1B Fund to Boost Deep-Tech and Manufacturing",
+            "content": "India has approved a $1.1 billion fund-of-funds to bolster investment in deep-tech and manufacturing startups through private venture capital firms. This strategic move aims to stimulate innovation and support the growth of cutting-edge technologies within the country. The fund is expected to enhance India&#x27;s competitive edge in the global tech landscape, particularly in sectors like AI, robotics, and advanced manufacturing. By channeling resources into these areas, India seeks to foster a robust ecosystem for tech startups, driving economic growth and technological advancement. Investors and entrepreneurs should explore opportunities arising from this significant financial commitment.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/13/airbnb-plans-to-bake-in-ai-features-for-search-discovery-and-support/",
+            "sourceUrl": "https://techcrunch.com/2026/02/14/india-doubles-down-on-state-backed-venture-capital-approving-1-1b-fund/",
+            "relatedResources": [
+                {
+                    "label": "DORA Compliance Guide",
+                    "url": "/guides/dora-compliance.html",
+                    "icon": "fa-university"
+                }
+            ]
+        },
+        {
+            "date": "Feb 14 2026",
+            "headline": "AI Valentines—A Surreal Experience at EVA AI Cafe",
+            "title": "Exploring AI-Driven Interactions at EVA AI Cafe on Valentine&#x27;s",
+            "content": "On a chilly February evening, a visit to the EVA AI Cafe in midtown offered a unique glimpse into AI-driven social interactions. Patrons engaged with AI systems while enjoying nonalcoholic beverages and snacks, highlighting the growing trend of AI companionship. This setup reflects a broader societal shift towards integrating AI into personal and social environments, raising questions about the nature of human-AI relationships. As AI technology continues to evolve, developers and users must navigate the complexities of these interactions, balancing innovation with ethical considerations. The experience underscores the potential and challenges of AI in everyday life.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/879327/eva-ai-cafe-dating-ai-companions",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "Airbnb—AI Handles One-Third of Support in US/Canada",
+            "title": "Airbnb Utilizes AI for One-Third of Customer Support Operations",
+            "content": "Airbnb has announced that AI now manages one-third of its customer support tasks in the US and Canada, streamlining operations and enhancing user experience. The AI-driven system is designed to personalize interactions, helping guests plan trips and assisting hosts in managing their businesses more effectively. This development is part of Airbnb&#x27;s strategy to leverage technology for operational efficiency at scale. The integration of AI into customer support reflects a broader trend in the hospitality industry towards automation and personalized service. Stakeholders should consider the implications of AI in customer engagement and operational management.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/13/airbnb-says-a-third-of-its-customer-support-is-now-handled-by-ai-in-the-u-s-and-canada/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -233,6 +210,35 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "OpenAI&#x27;s GPT-4o Removal—Global Users Mourn Loss",
+            "title": "OpenAI Discontinues GPT-4o, Sparking Global User Discontent",
+            "content": "OpenAI has ceased access to its GPT-4o model, leaving users worldwide who relied on the chatbot for companionship and assistance in dismay. The decision to remove GPT-4o from its app affects numerous users who valued its conversational capabilities. This move highlights the challenges in maintaining and evolving AI models while balancing user expectations and technical feasibility. As AI technology progresses, companies must carefully manage transitions to mitigate user impact and maintain trust. Users are encouraged to explore alternative solutions and stay informed about updates in AI offerings.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 13 2026",
+            "headline": "Talent Exodus Hits OpenAI and xAI Amid Restructuring",
+            "title": "OpenAI and xAI Experience Talent Loss and Organizational Changes",
+            "content": "OpenAI and xAI are facing significant talent departures, with xAI losing half of its founding team through both voluntary exits and restructuring efforts. OpenAI is also undergoing changes, including the disbanding of its mission alignment team and the dismissal of a policy executive. These developments reflect broader industry challenges in retaining top talent amid strategic shifts and organizational restructuring. The exodus may impact both companies&#x27; innovation capabilities and market positions. Industry professionals should monitor these changes closely, as they could influence the competitive dynamics and future direction of AI development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/",
+            "relatedResources": []
         }
     ],
     "articles": {},
