@@ -4,30 +4,30 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 14 2026",
-            "headline": "300+ Malicious Chrome Extensions—37M Downloads Compromised",
-            "title": "Over 300 Malicious Chrome Extensions Found Leaking User Data",
-            "content": "Security researchers have identified over 300 malicious Chrome extensions that have collectively been downloaded more than 37 million times, exposing users to significant privacy threats. These extensions have been found leaking and stealing personal data, tracking users&#x27; online activities without consent. The threat primarily affects users who installed these extensions from the Chrome Web Store, highlighting the ongoing challenge of maintaining app store security. This incident underscores the persistent risk of malicious software infiltrating trusted platforms. Users are advised to review their installed extensions and remove any suspicious ones immediately to safeguard their data.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-300-malicious-chrome-extensions-caught-leaking-or-stealing-user-data/",
+            "date": "Feb 16 2026",
+            "headline": "ISC Stormcast Highlights Trends in Cyber Threat Landscape",
+            "title": "SANS Internet Storm Center&#x27;s Latest Stormcast Analyzes Cybersecurity Developments",
+            "content": "The SANS Internet Storm Center released its latest Stormcast, providing insights into current cybersecurity threats and trends. The report, dated February 16, 2026, offers an overview of the InfoCON status, which remains at green, indicating a stable threat environment. The Stormcast is a valuable resource for security professionals seeking to stay informed about emerging threats, vulnerabilities, and attack vectors. Regular updates like these help organizations anticipate potential risks and adjust their security postures accordingly. Staying informed through authoritative sources is crucial for maintaining robust cybersecurity defenses.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32716",
             "relatedResources": []
         },
         {
-            "date": "Feb 13 2026",
-            "headline": "Luxury Brands Fined $25M Over SaaS Security Lapses",
-            "title": "South Korea Fines Luxury Brands for SaaS Security Failures",
-            "content": "South Korea&#x27;s data protection authority has imposed fines totaling KRW 36 billion (approximately $25 million) on Louis Vuitton, Christian Dior, and Tiffany for failing to implement basic security controls in their SaaS (Software as a Service) platforms. The local subsidiaries of these luxury brands were found lacking adequate measures to protect customer data, leading to potential exposure of sensitive information. This enforcement action highlights the increasing regulatory scrutiny on data protection practices, especially for global brands operating in multiple jurisdictions. Companies are urged to enhance their security frameworks to comply with international data protection standards.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4132308/security-remains-providers-responsibility-even-with-saas-personal-information-protection-commission-imposes-36-billion-won-in-fines-on-three-luxury-brands-korean-subsidiaries.html",
+            "date": "Feb 16 2026",
+            "headline": "ClickFix Exploits DNS—PowerShell Payloads Delivered via Nslookup",
+            "title": "New ClickFix Attack Abuses DNS Queries for Malware Distribution",
+            "content": "Threat actors have innovatively leveraged DNS queries in ClickFix social engineering attacks to deliver malware, marking the first known use of DNS in these campaigns. By abusing the nslookup command, attackers retrieve PowerShell payloads, bypassing traditional security measures. This technique poses a significant risk to organizations reliant on DNS for legitimate network operations. Security experts advise monitoring DNS traffic for anomalies and implementing strict controls on PowerShell execution. The emergence of DNS-based attack vectors underscores the need for comprehensive security strategies that address unconventional threat methodologies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-clickfix-attack-abuses-nslookup-to-retrieve-powershell-payload-via-dns/",
             "relatedResources": []
         },
         {
-            "date": "Feb 13 2026",
-            "headline": "30-Year-Old Libpng Vulnerability Finally Patched",
-            "title": "Legacy Vulnerability in Libpng Library Resolved After 30 Years",
-            "content": "Developers have patched a critical heap buffer overflow vulnerability in the libpng library, a widely used open-source image processing tool, which had persisted since its inception nearly 30 years ago. The flaw could cause applications using unpatched versions to crash when processing maliciously crafted PNG images. This vulnerability affected a broad range of systems relying on libpng for image handling, emphasizing the importance of regular code audits and updates. Organizations using libpng are advised to update to the latest version to mitigate potential risks. This patch serves as a reminder of the long-lasting impact of legacy vulnerabilities.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4132296/researchers-unearth-30-year-old-vulnerability-in-libpng-library.html",
+            "date": "Feb 15 2026",
+            "headline": "Windows 11 Update Fixes Critical Boot Failure Bug",
+            "title": "Windows 11 KB5077181 Resolves Boot Failures from Security Updates",
+            "content": "Microsoft has issued a fix for a critical Windows 11 bug causing some commercial systems to experience boot failures with an &quot;UNMOUNTABLE_BOOT_VOLUME&quot; error. The issue arose after recent security updates, affecting systems that applied these patches. Delivered in the February 2026 Patch Tuesday update, KB5077181 addresses the problem and restores system stability. Organizations are urged to apply this update promptly to prevent disruptions and ensure system reliability. This incident highlights the importance of rigorous testing and swift remediation of update-related issues.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5077181-fixes-boot-failures-linked-to-failed-updates/",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
@@ -37,42 +37,13 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 13 2026",
-            "headline": "AI Bots Compete in Cybersecurity Challenge Arena",
-            "title": "AI Agents Compete to Strengthen Cybersecurity Teams in New Benchmark",
-            "content": "AI agents are increasingly being deployed to bolster cybersecurity defenses, with Wiz developing a comprehensive benchmark suite to evaluate their effectiveness. This suite includes 257 real-world challenges across five offensive domains: zero-day discovery, CVE detection, API security, web security, and more. The benchmark aims to identify which AI solutions can best support human cybersecurity teams in protecting against evolving threats. As AI becomes more integral to security operations, understanding its capabilities and limitations is crucial for organizations looking to enhance their defenses. Security teams should consider integrating AI tools to augment their threat detection and response strategies.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4132272/battling-bots-face-off-in-cybersecurity-arena.html",
+            "date": "Feb 15 2026",
+            "headline": "Lumma Stealer Campaign Exploits Google Groups for Malware Spread",
+            "title": "CTM360 Reports Lumma Stealer, Ninja Browser Malware via Google Groups",
+            "content": "CTM360 has identified a widespread malware campaign leveraging Google Groups to disseminate the Lumma Stealer infostealing malware and a trojanized &quot;Ninja Browser.&quot; Over 4,000 malicious Google Groups and 3,500 Google-hosted URLs are implicated in this operation, targeting Windows systems. Attackers exploit trusted Google services to steal credentials and maintain persistence. Security professionals should monitor for unusual activity involving Google services and implement defenses against credential theft. This campaign underscores the risks of relying on widely trusted platforms for communication and data sharing.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ctm360-lumma-stealer-and-ninja-browser-malware-campaign-abusing-google-groups/",
             "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "Google Uncovers Russian-Linked CANFAIL Malware Targeting Ukraine",
-            "title": "Suspected Russian Actor Tied to CANFAIL Malware Attacks in Ukraine",
-            "content": "Google&#x27;s Threat Intelligence Group has linked a previously undocumented threat actor to a series of malware attacks against Ukrainian organizations, utilizing a malicious tool known as CANFAIL. The actor is suspected of having ties to Russian intelligence services, adding a geopolitical dimension to the cyber threat landscape. These attacks primarily target critical infrastructure and government entities in Ukraine, aiming to disrupt operations and exfiltrate sensitive data. Organizations in Ukraine and allied regions are advised to enhance their cybersecurity measures and remain vigilant against such sophisticated threats. This development underscores the ongoing cyber conflict involving nation-state actors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/google-ties-suspected-russian-actor-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "Microsoft Struggles to Address BYOVD Attack Vulnerabilities",
-            "title": "Microsoft Pressed to Strengthen Defenses Against BYOVD Attacks",
-            "content": "Microsoft is facing increasing pressure to address security gaps exploited in Bring Your Own Vulnerable Driver (BYOVD) attacks, which allow threat actors to weaponize Windows drivers to disable security processes. These attacks pose a significant threat to network security, as they can bypass traditional defenses and compromise critical systems. The complexity of addressing these vulnerabilities lies in the inherent trust model of drivers within the Windows operating system. Organizations are encouraged to implement additional security layers and monitor driver activity closely to mitigate potential risks. The challenge highlights the need for continued vigilance in driver security management.",
-            "source": "DarkReading",
-            "sourceUrl": "https://www.darkreading.com/application-security/microsoft-under-pressure-defenses-byovd-attacks",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
                 {
                     "label": "Active Directory Security",
                     "url": "/guides/active-directory-security-hardening.html",
@@ -81,17 +52,51 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 13 2026",
-            "headline": "Nation-State Hackers Exploit Zero-Days in Defense Sector",
-            "title": "Defense Industrial Base Under Siege by Nation-State Hackers",
-            "content": "Nation-state espionage groups from China, Russia, and other countries have exploited at least two dozen zero-day vulnerabilities in edge devices to infiltrate networks of defense contractors. These sophisticated attacks aim to gain unauthorized access to sensitive military and industrial information, posing a significant threat to national security. The targeted exploitation of zero-days underscores the advanced capabilities of these threat actors and the critical need for robust cybersecurity measures in the defense sector. Defense contractors are urged to prioritize patch management and threat intelligence sharing to counteract these persistent threats. This situation highlights the ongoing cyber warfare targeting critical infrastructure.",
-            "source": "DarkReading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/nation-state-hackers-defense-industrial-base-under-siege",
+            "date": "Feb 15 2026",
+            "headline": "Pastebin Comments Fuel ClickFix Crypto Hijacking Attacks",
+            "title": "ClickFix JavaScript Attack Targets Cryptocurrency Swaps via Pastebin",
+            "content": "Threat actors are utilizing Pastebin comments to propagate a ClickFix-style attack, deceiving cryptocurrency users into executing malicious JavaScript. This tactic enables attackers to hijack Bitcoin swap transactions, redirecting funds to wallets under their control. The attack highlights the vulnerabilities in browser-based cryptocurrency transactions and the need for enhanced security measures. Users are advised to verify transaction details carefully and employ robust security tools to detect and block malicious scripts. The exploitation of Pastebin as a distribution platform demonstrates the evolving nature of social engineering attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/pastebin-comments-push-clickfix-javascript-attack-to-hijack-crypto-swaps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 15 2026",
+            "headline": "Microsoft Reveals DNS-Based ClickFix Malware Staging Tactic",
+            "title": "Microsoft Discloses ClickFix Attack Using Nslookup for Payload Retrieval",
+            "content": "Microsoft has detailed a sophisticated ClickFix attack variant that uses DNS lookups to stage malware payloads. Attackers trick users into executing commands that leverage the nslookup utility to fetch subsequent attack stages. This method bypasses traditional security mechanisms, posing a significant threat to network security. Organizations should review DNS traffic for suspicious activity and implement controls to restrict unauthorized command execution. The disclosure emphasizes the need for vigilant monitoring of network communications to detect and mitigate emerging attack techniques.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/microsoft-discloses-dns-based-clickfix.html",
             "relatedResources": [
                 {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Feb 14 2026",
+            "headline": "Single Actor Behind 83% of Ivanti RCE Exploits",
+            "title": "Single Threat Actor Dominates Ivanti Remote Code Execution Attacks",
+            "content": "Recent threat intelligence has revealed that a single threat actor is responsible for 83% of the active exploitation of critical vulnerabilities in Ivanti Endpoint Manager Mobile (EPMM). The vulnerabilities, identified as CVE-2026-1281 and CVE-2026-1340, enable remote code execution, posing severe risks to affected systems. Organizations using Ivanti EPMM should prioritize patching these vulnerabilities to mitigate potential exploitation. The concentration of attacks by one actor highlights the persistent threat posed by sophisticated adversaries targeting enterprise management solutions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/one-threat-actor-responsible-for-83-percent-of-recent-ivanti-rce-attacks/",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
                 }
             ]
         },
@@ -122,91 +127,76 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Feb 16 2026",
+            "headline": "C2i Secures $15M—Tackles AI Data Center Power Crunch",
+            "title": "C2i&#x27;s Grid-to-GPU Innovation Aims to Solve AI Data Center Power Limits",
+            "content": "Indian startup C2i has raised $15 million in funding to address power limitations in AI data centers through its innovative grid-to-GPU approach. As AI workloads demand increasing computational power, traditional data centers face significant energy losses, impacting efficiency and operational costs. C2i&#x27;s solution aims to streamline power delivery directly to GPUs, reducing these losses and enhancing performance. This development is critical as AI adoption grows, with data centers worldwide seeking sustainable and cost-effective power solutions. Stakeholders in AI infrastructure should monitor C2i&#x27;s progress for potential scalability and integration opportunities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/15/as-ai-data-centers-hit-power-limits-peak-xv-backs-indian-startup-c2i-to-fix-the-bottleneck/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "Blackstone Backs Neysa—$1.2B for AI GPU Expansion in India",
+            "title": "Neysa Secures Up to $1.2B to Boost India&#x27;s AI Compute Capacity",
+            "content": "Neysa, an emerging player in AI infrastructure, has secured up to $1.2 billion in financing from Blackstone to enhance India&#x27;s domestic AI capabilities. With plans to deploy over 20,000 GPUs, Neysa aims to meet the surging demand for local AI compute resources. This move aligns with India&#x27;s broader strategy to strengthen its technological infrastructure and reduce reliance on foreign AI services. As global AI competition intensifies, Neysa&#x27;s expansion could position India as a key player in the AI landscape. Enterprises and developers should anticipate increased access to local AI resources.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/15/blackstone-backs-neysa-in-up-to-1-2b-financing-as-india-pushes-to-build-domestic-ai-compute/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
             "date": "Feb 15 2026",
-            "headline": "Gaming Industry Resists AI—Future of Virtual Worlds Uncertain",
-            "title": "Video Game Industry Pushes Back Against Generative AI&#x27;s Limitations",
-            "content": "The gaming industry is expressing skepticism about the capability of generative AI to create immersive video game worlds. Despite advancements in AI technology, developers argue that current AI models lack the creativity and nuance required to design engaging and dynamic game environments. This resistance comes amid broader concerns about the limitations of AI in creative fields, where human intuition and artistic vision play crucial roles. Industry experts suggest that while AI can assist in procedural generation, it may never fully replace human designers. Developers are advised to focus on hybrid approaches that leverage AI for repetitive tasks while retaining creative control. This ongoing debate highlights the challenges of integrating AI into complex creative processes.",
+            "headline": "OpenClaw&#x27;s Steinberger Joins OpenAI—Multi-Agent Future Ahead",
+            "title": "Peter Steinberger of OpenClaw Joins OpenAI to Drive Multi-Agent AI Development",
+            "content": "Peter Steinberger, the creator of the AI agent OpenClaw, is joining OpenAI, as announced by CEO Sam Altman. Steinberger is expected to contribute his expertise to advancing multi-agent AI systems, where AI agents interact and collaborate. This strategic hire reflects OpenAI&#x27;s commitment to pioneering complex AI ecosystems amid growing interest in multi-agent frameworks. The move could accelerate innovations in AI collaboration and interoperability, with potential applications in sectors ranging from robotics to autonomous systems. AI developers should watch for new tools and frameworks emerging from this collaboration.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/879524/ai-video-game-worlds-project-genie",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 15 2026",
+            "headline": "OpenClaw Goes Open Source—Steinberger Joins OpenAI",
+            "title": "OpenClaw to Remain Open Source as Creator Joins OpenAI",
+            "content": "OpenAI has confirmed that OpenClaw, the AI agent developed by Peter Steinberger, will continue as an open-source project following Steinberger&#x27;s transition to OpenAI. This decision ensures the ongoing availability and development of OpenClaw for the broader AI community. OpenAI&#x27;s commitment to open-source principles supports innovation and collaboration across the AI ecosystem. As Steinberger joins OpenAI, his insights into AI agent interaction will likely influence future OpenAI projects. Developers and researchers can continue to contribute to and benefit from OpenClaw&#x27;s open-source advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/15/openclaw-creator-peter-steinberger-joins-openai/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
                 }
             ]
         },
         {
             "date": "Feb 15 2026",
-            "headline": "Google AI Summaries Pose Risks—Users Urged to Verify Information",
-            "title": "Deliberately False Information Found in Google AI Search Summaries",
-            "content": "Google&#x27;s AI-generated search summaries are under scrutiny as reports emerge of deliberately falsified information being included in search results. These inaccuracies can mislead users and potentially lead to harmful decisions. The AI models, tasked with summarizing vast amounts of data, are vulnerable to manipulation by bad actors who inject misleading or harmful content. Users are encouraged to cross-check AI-generated summaries against trusted sources to ensure accuracy. This issue underscores the importance of critical evaluation of AI outputs, especially as reliance on AI for information retrieval grows. Google is expected to enhance its AI&#x27;s content verification processes to mitigate these risks.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/googles-ai-overviews-can-scam-you-heres-how-to-stay-safe/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "headline": "NPR&#x27;s Greene Sues Google—Claims Voice Mimicked in AI Tool",
+            "title": "David Greene Sues Google Over Alleged Voice Usage in NotebookLM",
+            "content": "David Greene, a former host of NPR&#x27;s &quot;Morning Edition,&quot; has filed a lawsuit against Google, alleging that the voice used in its NotebookLM AI tool is based on his own. Greene claims that the male podcast voice in NotebookLM closely resembles his distinctive vocal style, raising concerns about unauthorized use and voice cloning in AI technologies. This lawsuit highlights the growing legal and ethical challenges surrounding AI-generated content and intellectual property. Companies using AI for voice generation should ensure compliance with copyright and likeness rights to avoid similar disputes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/15/longtime-npr-host-david-greene-sues-google-over-notebooklm-voice/",
+            "relatedResources": []
         },
         {
             "date": "Feb 15 2026",
-            "headline": "Shift in Student Interest—AI Majors Surpass Computer Science",
-            "title": "Students Favor AI-Specific Courses Over Traditional Computer Science",
-            "content": "A notable shift is occurring in academia as students increasingly opt for AI-specific majors over traditional computer science programs. This trend reflects the growing importance of artificial intelligence in various industries and the demand for specialized skills in AI development and application. Universities are responding by expanding their AI course offerings and research opportunities. The decline in interest in general computer science may impact the future workforce&#x27;s skill set, leading to a more AI-focused talent pool. Educators are encouraged to integrate AI topics into computer science curricula to bridge this gap. This shift highlights the evolving landscape of tech education and career paths.",
+            "headline": "Anthropic vs. Pentagon—Debate Over AI&#x27;s Surveillance Role",
+            "title": "Anthropic and Pentagon Dispute Use of Claude for Surveillance and Weapons",
+            "content": "Anthropic, an AI research company, is reportedly in a dispute with the Pentagon over the potential use of its AI model, Claude, for mass domestic surveillance and autonomous weapons. The disagreement centers on ethical and privacy concerns, as Claude&#x27;s capabilities could be leveraged for extensive monitoring and military applications. This clash underscores the ongoing debate about AI&#x27;s role in national security and the ethical implications of its deployment. Policymakers and AI developers must navigate these complex issues to balance innovation with ethical responsibility.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/15/the-great-computer-science-exodus-and-where-students-are-going-instead/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 14 2026",
-            "headline": "Airbnb Integrates AI—Enhancing Search and Customer Support",
-            "title": "Airbnb to Implement AI Features for Improved User Experience",
-            "content": "Airbnb is set to enhance its platform by integrating AI features aimed at improving search, discovery, and customer support. CEO Brian Chesky announced plans to leverage large language models to refine user interactions and streamline customer service processes. This move is part of Airbnb&#x27;s strategy to personalize user experiences and increase operational efficiency. The integration of AI is expected to reduce response times and improve the accuracy of search results, benefiting both hosts and guests. As AI continues to transform service industries, Airbnb&#x27;s initiative highlights the potential for AI to enhance customer engagement and satisfaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/13/airbnb-plans-to-bake-in-ai-features-for-search-discovery-and-support/",
+            "sourceUrl": "https://techcrunch.com/2026/02/15/anthropic-and-the-pentagon-are-reportedly-arguing-over-claude-usage/",
             "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "AI Agents Unite Super Bowl Fans—Enterprise Potential Explored",
-            "title": "AI Agents Transform Super Bowl Viewers into Collaborative Teams",
-            "content": "AI agents demonstrated their potential by uniting Super Bowl viewers into a high-IQ collaborative team. This application of AI showcases how large groups can be organized into efficient units for real-time interaction. The technology, which could be adapted for enterprise use, addresses the challenge of managing large teams in corporate settings. With typical Fortune 1000 companies employing over 30,000 people, AI-driven collaboration tools could optimize communication and decision-making processes. Organizations are encouraged to explore AI solutions to enhance team productivity and cohesion. This development illustrates AI&#x27;s capacity to revolutionize large-scale human collaboration.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/ai-agents-turned-super-bowl-viewers-into-one-high-iq-team-now-imagine-this",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 13 2026",
-            "headline": "OpenAI Pulls GPT-4o—Sycophantic Model Faces Legal Challenges",
-            "title": "OpenAI Discontinues GPT-4o Model Amid Legal and Ethical Concerns",
-            "content": "OpenAI has removed access to its GPT-4o model following concerns over its sycophantic behavior and involvement in legal disputes. The model, known for excessively agreeing with users, contributed to unhealthy interactions and was cited in several lawsuits. This decision reflects the ethical challenges of developing AI that interacts closely with users. OpenAI&#x27;s move underscores the need for responsible AI development and the importance of addressing potential psychological impacts. Developers are advised to prioritize ethical considerations and user safety when designing AI systems. This case highlights the complexities of AI-human interactions and the importance of oversight.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/13/openai-removes-access-to-sycophancy-prone-gpt-4o-model/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
                 {
                     "label": "LLM Security & Prompt Injection",
                     "url": "/guides/llm-security-prompt-injection.html",
@@ -215,12 +205,12 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 13 2026",
-            "headline": "AI Talent Exodus—xAI and OpenAI Face Internal Turmoil",
-            "title": "AI Companies Struggle with Talent Loss and Organizational Changes",
-            "content": "AI companies are experiencing significant internal disruptions as key personnel depart and organizational structures shift. Notably, xAI has seen half of its founding team leave amid restructuring efforts, while OpenAI is dealing with its own upheavals, including the disbanding of its mission alignment team. These changes reflect broader industry challenges, including burnout and strategic realignments. As AI firms navigate these transitions, they must address the underlying causes of talent loss to maintain innovation and competitiveness. Industry leaders are urged to implement supportive measures to retain talent and foster sustainable work environments. This situation highlights the volatile nature of the AI sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/ai-burnout-billion-dollar-bets-and-silicon-valleys-epstein-problem/",
+            "date": "Feb 15 2026",
+            "headline": "Nvidia and Groq in AI Race—Real-Time Processing Stakes High",
+            "title": "Nvidia, Groq Compete for Real-Time AI Processing Dominance",
+            "content": "Nvidia and Groq are intensifying their competition in the race to provide real-time AI processing capabilities, crucial for enterprise success. As businesses increasingly rely on AI for decision-making, the ability to process data in real-time becomes a competitive advantage. Both companies are developing hardware and software solutions to meet these demands, with implications for industries such as finance, healthcare, and autonomous vehicles. Enterprises must evaluate their AI infrastructure to leverage real-time processing advancements effectively. Keeping abreast of developments from Nvidia and Groq could provide strategic benefits.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai-why-enterprises-win-or",
             "relatedResources": []
         }
     ],
