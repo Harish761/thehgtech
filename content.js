@@ -5,6 +5,98 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 16 2026",
+            "headline": "ClickFix Exploits DNS—Users Unwittingly Install RATs",
+            "title": "ClickFix Campaign Utilizes nslookup to Deploy Remote Access Trojans",
+            "content": "Microsoft researchers have uncovered a ClickFix campaign that leverages the nslookup command to trick users into downloading Remote Access Trojans (RATs) onto their systems. This attack vector exploits DNS queries to discreetly deliver ModeloRAT, bypassing traditional security measures. The campaign targets users across various sectors, potentially compromising sensitive data and system integrity. The use of nslookup, a tool typically used for DNS troubleshooting, highlights the evolving tactics of cybercriminals to exploit legitimate tools for malicious purposes. Security professionals are advised to monitor DNS traffic for unusual patterns and educate users on recognizing phishing attempts that could lead to such infections.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/clickfix-added-nslookup-commands-to-its-arsenal-for-downloading-rats",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "CISA Demands Swift Action on BeyondTrust Vulnerability",
+            "title": "CISA Orders Federal Agencies to Patch BeyondTrust Flaw Within 3 Days",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an emergency directive requiring U.S. federal agencies to patch a critical vulnerability in BeyondTrust Remote Support software within three days. This vulnerability is actively exploited, posing significant risks to government systems if left unaddressed. The flaw could allow unauthorized access to sensitive systems, potentially leading to data breaches or system disruptions. CISA&#x27;s directive underscores the urgency of maintaining up-to-date security protocols and highlights the ongoing threat landscape targeting remote support tools. Agencies are urged to apply the patch immediately and review their security postures to prevent exploitation.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-beyondtrust-flaw-within-three-days/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "DNS Abused in ClickFix RAT Attack—ModeloRAT Deployed",
+            "title": "Microsoft Warns of ClickFix Attack Abusing DNS Lookups for RAT Delivery",
+            "content": "Microsoft has issued a warning about a new ClickFix attack that exploits DNS lookups to deliver the ModeloRAT malware to unsuspecting users. This sophisticated attack uses DNS requests to bypass traditional security measures, enabling attackers to remotely control infected systems. The campaign targets a wide range of users, posing a significant threat to data security and privacy. The use of DNS, a fundamental internet protocol, in such attacks highlights the need for enhanced monitoring and security measures. Organizations are advised to scrutinize DNS traffic and implement robust endpoint protections to mitigate this threat.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-warns-of-clickfix-attack-abusing-dns-lookups/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "Lithuania Tackles AI Fraud—Prepares for Digital Society Challenges",
+            "title": "Lithuania&#x27;s KTU Consortium Prepares for AI-Driven Cyber Fraud",
+            "content": "Lithuania is proactively addressing the challenges posed by AI-driven cyber fraud with the launch of the KTU Consortium&#x27;s mission, &quot;A Safe and Inclusive Digital Society.&quot; Presented at the Innovation Agency event, this initiative aims to harness mission-oriented science and innovation to tackle societal challenges. As AI technologies rapidly evolve, they reshape economies and governance, presenting new risks and opportunities. Lithuania&#x27;s approach emphasizes collaboration between academia, industry, and government to build resilient digital infrastructures. Stakeholders are encouraged to participate in this initiative to ensure a secure and inclusive digital future.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/safe-and-inclusive-esociety-how.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "Amazon Cuts Ties with Surveillance Firm After Ad Backlash",
+            "title": "Amazon&#x27;s Ring Ends Partnership with Flock Safety After Controversy",
+            "content": "Amazon&#x27;s subsidiary, Ring, has terminated its partnership with Flock Safety, a police surveillance technology company, following public backlash from a Super Bowl advertisement. The ad sparked concerns over privacy and the ethical implications of surveillance technologies. This decision reflects Amazon&#x27;s sensitivity to consumer privacy concerns and the growing scrutiny over tech companies&#x27; collaborations with law enforcement. The move highlights the increasing pressure on tech giants to balance innovation with ethical considerations. Stakeholders in the surveillance and smart device industries should anticipate heightened public and regulatory scrutiny.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/amazon-scraps-partnership-with-surveillance-company-after-super-bowl-ad-backlash/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "37M Users&#x27; Data Exposed by Leaky Chrome Extensions",
+            "title": "Chrome Extensions Leak Browsing Histories of 37 Million Users",
+            "content": "An investigation by the independent researcher &quot;Q Continuum&quot; has revealed that 287 Chrome extensions, with a combined 37 million installations, are leaking users&#x27; browsing histories to external servers. This data exposure poses significant privacy risks, as sensitive information can be harvested and potentially exploited. The affected extensions, which include popular tools, emphasize the need for rigorous vetting and monitoring of browser add-ons. Users are advised to review installed extensions and remove those that are not essential or have questionable data practices. This incident underscores the importance of transparency and accountability in the extension ecosystem.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4132712/leaky-chrome-extensions-with-37m-installs-caught-shipping-your-browsing-history.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "ZeroDayRAT Spyware Enables Real-Time Mobile Surveillance",
+            "title": "ZeroDayRAT Mobile Spyware Facilitates Real-Time Data Theft on iOS and Android",
+            "content": "Cybersecurity researchers have disclosed a new mobile spyware platform named ZeroDayRAT, which is being marketed on Telegram for real-time surveillance and data theft on iOS and Android devices. The spyware allows attackers to access sensitive data, including messages and location information, posing severe privacy threats. ZeroDayRAT&#x27;s availability on popular messaging platforms highlights the ease with which malicious tools can be distributed. Users are urged to exercise caution when downloading apps and to ensure their devices are protected with up-to-date security software. This development underscores the growing threat of mobile spyware in an increasingly connected world.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/new-zerodayrat-mobile-spyware-enables.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 16 2026",
             "headline": "ISC Stormcast Highlights Trends in Cyber Threat Landscape",
             "title": "SANS Internet Storm Center&#x27;s Latest Stormcast Analyzes Cybersecurity Developments",
             "content": "The SANS Internet Storm Center released its latest Stormcast, providing insights into current cybersecurity threats and trends. The report, dated February 16, 2026, offers an overview of the InfoCON status, which remains at green, indicating a stable threat environment. The Stormcast is a valuable resource for security professionals seeking to stay informed about emerging threats, vulnerabilities, and attack vectors. Regular updates like these help organizations anticipate potential risks and adjust their security postures accordingly. Staying informed through authoritative sources is crucial for maintaining robust cybersecurity defenses.",
@@ -20,85 +112,6 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-clickfix-attack-abuses-nslookup-to-retrieve-powershell-payload-via-dns/",
             "relatedResources": []
-        },
-        {
-            "date": "Feb 15 2026",
-            "headline": "Windows 11 Update Fixes Critical Boot Failure Bug",
-            "title": "Windows 11 KB5077181 Resolves Boot Failures from Security Updates",
-            "content": "Microsoft has issued a fix for a critical Windows 11 bug causing some commercial systems to experience boot failures with an &quot;UNMOUNTABLE_BOOT_VOLUME&quot; error. The issue arose after recent security updates, affecting systems that applied these patches. Delivered in the February 2026 Patch Tuesday update, KB5077181 addresses the problem and restores system stability. Organizations are urged to apply this update promptly to prevent disruptions and ensure system reliability. This incident highlights the importance of rigorous testing and swift remediation of update-related issues.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5077181-fixes-boot-failures-linked-to-failed-updates/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 15 2026",
-            "headline": "Lumma Stealer Campaign Exploits Google Groups for Malware Spread",
-            "title": "CTM360 Reports Lumma Stealer, Ninja Browser Malware via Google Groups",
-            "content": "CTM360 has identified a widespread malware campaign leveraging Google Groups to disseminate the Lumma Stealer infostealing malware and a trojanized &quot;Ninja Browser.&quot; Over 4,000 malicious Google Groups and 3,500 Google-hosted URLs are implicated in this operation, targeting Windows systems. Attackers exploit trusted Google services to steal credentials and maintain persistence. Security professionals should monitor for unusual activity involving Google services and implement defenses against credential theft. This campaign underscores the risks of relying on widely trusted platforms for communication and data sharing.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ctm360-lumma-stealer-and-ninja-browser-malware-campaign-abusing-google-groups/",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Feb 15 2026",
-            "headline": "Pastebin Comments Fuel ClickFix Crypto Hijacking Attacks",
-            "title": "ClickFix JavaScript Attack Targets Cryptocurrency Swaps via Pastebin",
-            "content": "Threat actors are utilizing Pastebin comments to propagate a ClickFix-style attack, deceiving cryptocurrency users into executing malicious JavaScript. This tactic enables attackers to hijack Bitcoin swap transactions, redirecting funds to wallets under their control. The attack highlights the vulnerabilities in browser-based cryptocurrency transactions and the need for enhanced security measures. Users are advised to verify transaction details carefully and employ robust security tools to detect and block malicious scripts. The exploitation of Pastebin as a distribution platform demonstrates the evolving nature of social engineering attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/pastebin-comments-push-clickfix-javascript-attack-to-hijack-crypto-swaps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 15 2026",
-            "headline": "Microsoft Reveals DNS-Based ClickFix Malware Staging Tactic",
-            "title": "Microsoft Discloses ClickFix Attack Using Nslookup for Payload Retrieval",
-            "content": "Microsoft has detailed a sophisticated ClickFix attack variant that uses DNS lookups to stage malware payloads. Attackers trick users into executing commands that leverage the nslookup utility to fetch subsequent attack stages. This method bypasses traditional security mechanisms, posing a significant threat to network security. Organizations should review DNS traffic for suspicious activity and implement controls to restrict unauthorized command execution. The disclosure emphasizes the need for vigilant monitoring of network communications to detect and mitigate emerging attack techniques.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/microsoft-discloses-dns-based-clickfix.html",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Feb 14 2026",
-            "headline": "Single Actor Behind 83% of Ivanti RCE Exploits",
-            "title": "Single Threat Actor Dominates Ivanti Remote Code Execution Attacks",
-            "content": "Recent threat intelligence has revealed that a single threat actor is responsible for 83% of the active exploitation of critical vulnerabilities in Ivanti Endpoint Manager Mobile (EPMM). The vulnerabilities, identified as CVE-2026-1281 and CVE-2026-1340, enable remote code execution, posing severe risks to affected systems. Organizations using Ivanti EPMM should prioritize patching these vulnerabilities to mitigate potential exploitation. The concentration of attacks by one actor highlights the persistent threat posed by sophisticated adversaries targeting enterprise management solutions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/one-threat-actor-responsible-for-83-percent-of-recent-ivanti-rce-attacks/",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
         },
         {
             "date": "Mar 19 2026",
@@ -128,6 +141,99 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 16 2026",
+            "headline": "OpenClaw AI Underwhelms Experts—No Breakthroughs Here",
+            "title": "OpenClaw AI Fails to Impress Experts Despite Initial Hype",
+            "content": "OpenClaw, a highly anticipated AI project, has left experts unimpressed, with some labeling it as lacking innovation. Despite initial excitement, the AI&#x27;s capabilities are not seen as groundbreaking within the research community. Analysts note that OpenClaw&#x27;s algorithms and methodologies do not significantly advance beyond existing AI frameworks. This sentiment reflects a broader trend where AI projects often garner public enthusiasm but fail to meet expert expectations. Professionals in AI development should approach new models with a critical eye, focusing on tangible advancements rather than hype.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/16/after-all-the-hype-some-ai-experts-dont-think-openclaw-is-all-that-exciting/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "NatWest Expands AI—Transforming Banking Operations",
+            "title": "NatWest Integrates AI Across Multiple Banking Functions",
+            "content": "NatWest Group has significantly expanded its use of artificial intelligence across various business functions, including customer service, wealth management, and software development. According to CIO Scott Marcar, the bank&#x27;s AI initiatives began in earnest in 2025, aiming to enhance efficiency and customer satisfaction. AI-driven document management and automated customer interaction systems are streamlining operations, reducing processing times, and improving service delivery. This move aligns with a growing trend among financial institutions leveraging AI to stay competitive. Stakeholders should monitor AI&#x27;s impact on operational efficiency and customer experience.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/banking-ai-in-multiple-business-functions-at-natwest/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "Debenhams Tackles Mobile Checkout—AI Integration with PayPal",
+            "title": "Debenhams Pilots AI-Driven Commerce via PayPal to Reduce Friction",
+            "content": "Debenhams is piloting an agentic AI commerce solution integrated with PayPal to address mobile checkout abandonment, a common issue for digital retailers. This initiative aims to streamline the checkout process, reducing friction and enhancing user experience. By deploying AI, Debenhams seeks to minimize revenue loss from incomplete transactions, a persistent challenge in e-commerce. Retailers are increasingly adopting AI to optimize customer journeys and improve conversion rates. Companies should consider similar integrations to enhance mobile commerce efficiency.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/debenhams-pilots-agentic-ai-commerce-paypal-integration/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "Fractal Analytics&#x27; IPO Falters—AI Market Jitters Persist",
+            "title": "Fractal Analytics&#x27; IPO Debut Undermined by Investor Caution",
+            "content": "Fractal Analytics, India&#x27;s first AI company to go public, experienced a tepid IPO debut as investor concerns over the AI sector overshadowed its market entry. The lackluster performance reflects broader apprehensions following a downturn in Indian software stocks. This development highlights the volatility and skepticism surrounding AI investments, despite the sector&#x27;s potential for innovation. Industry stakeholders should remain vigilant about market trends and investor sentiment, especially in emerging tech markets. Companies must demonstrate clear value propositions to attract and retain investor confidence.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/16/fractal-analytics-muted-ipo-debut-signals-persistent-ai-fears-in-india/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "ByteDance AI Faces Hollywood—Safeguards Under Revision",
+            "title": "ByteDance to Enhance AI Video Model Safeguards After Hollywood Backlash",
+            "content": "ByteDance is revising safeguards for its Seedance 2.0 AI video generator following accusations from Disney, Paramount, and Hollywood groups of copyright violations. The model&#x27;s hyperrealistic video capabilities raised concerns about unauthorized content creation. ByteDance&#x27;s move to improve safeguards aims to address these legal and ethical issues, underscoring the importance of responsible AI deployment. The incident highlights ongoing challenges in balancing innovation with intellectual property rights. Developers should prioritize compliance and ethical considerations in AI model design.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/879644/bytedance-seedance-safeguards-ai-video-copyright-infringement",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "India AI Summit Draws Tech Giants—Key Discussions Underway",
+            "title": "India Hosts Major AI Summit with Big Tech and AI Labs",
+            "content": "India&#x27;s four-day AI Impact Summit is underway, attracting top executives from leading AI labs and tech giants like OpenAI, Anthropic, Nvidia, Microsoft, Google, and Cloudflare. The event focuses on AI advancements, regulatory challenges, and the technology&#x27;s societal impact. The presence of both industry leaders and government officials highlights the strategic importance of AI in shaping future policies and innovations. Participants are expected to discuss collaborative efforts and address global AI challenges. Stakeholders should watch for emerging trends and policy directions from the summit.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/16/all-the-important-news-from-the-ongoing-india-ai-summit/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 16 2026",
+            "headline": "URBN Automates Reporting—Agentic AI Takes the Lead",
+            "title": "Urban Outfitters Tests Agentic AI for Automated Retail Reporting",
+            "content": "Urban Outfitters Inc. (URBN) is testing agentic AI systems to automate the generation of weekly performance reports, traditionally a labor-intensive task. This innovation aims to shift routine analytical work from staff to software, enhancing efficiency and accuracy. By leveraging AI, URBN can free up human resources for more strategic activities, potentially improving decision-making processes. This trial reflects a broader trend of automation in retail operations, where AI is increasingly used to streamline business functions. Retailers should consider similar technologies to optimize operational workflows.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/urbn-tests-agentic-ai-to-automate-retail-reporting/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 16 2026",
             "headline": "C2i Secures $15M—Tackles AI Data Center Power Crunch",
             "title": "C2i&#x27;s Grid-to-GPU Innovation Aims to Solve AI Data Center Power Limits",
             "content": "Indian startup C2i has raised $15 million in funding to address power limitations in AI data centers through its innovative grid-to-GPU approach. As AI workloads demand increasing computational power, traditional data centers face significant energy losses, impacting efficiency and operational costs. C2i&#x27;s solution aims to streamline power delivery directly to GPUs, reducing these losses and enhancing performance. This development is critical as AI adoption grows, with data centers worldwide seeking sustainable and cost-effective power solutions. Stakeholders in AI infrastructure should monitor C2i&#x27;s progress for potential scalability and integration opportunities.",
@@ -155,63 +261,6 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 }
             ]
-        },
-        {
-            "date": "Feb 15 2026",
-            "headline": "OpenClaw&#x27;s Steinberger Joins OpenAI—Multi-Agent Future Ahead",
-            "title": "Peter Steinberger of OpenClaw Joins OpenAI to Drive Multi-Agent AI Development",
-            "content": "Peter Steinberger, the creator of the AI agent OpenClaw, is joining OpenAI, as announced by CEO Sam Altman. Steinberger is expected to contribute his expertise to advancing multi-agent AI systems, where AI agents interact and collaborate. This strategic hire reflects OpenAI&#x27;s commitment to pioneering complex AI ecosystems amid growing interest in multi-agent frameworks. The move could accelerate innovations in AI collaboration and interoperability, with potential applications in sectors ranging from robotics to autonomous systems. AI developers should watch for new tools and frameworks emerging from this collaboration.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 15 2026",
-            "headline": "OpenClaw Goes Open Source—Steinberger Joins OpenAI",
-            "title": "OpenClaw to Remain Open Source as Creator Joins OpenAI",
-            "content": "OpenAI has confirmed that OpenClaw, the AI agent developed by Peter Steinberger, will continue as an open-source project following Steinberger&#x27;s transition to OpenAI. This decision ensures the ongoing availability and development of OpenClaw for the broader AI community. OpenAI&#x27;s commitment to open-source principles supports innovation and collaboration across the AI ecosystem. As Steinberger joins OpenAI, his insights into AI agent interaction will likely influence future OpenAI projects. Developers and researchers can continue to contribute to and benefit from OpenClaw&#x27;s open-source advancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/15/openclaw-creator-peter-steinberger-joins-openai/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 15 2026",
-            "headline": "NPR&#x27;s Greene Sues Google—Claims Voice Mimicked in AI Tool",
-            "title": "David Greene Sues Google Over Alleged Voice Usage in NotebookLM",
-            "content": "David Greene, a former host of NPR&#x27;s &quot;Morning Edition,&quot; has filed a lawsuit against Google, alleging that the voice used in its NotebookLM AI tool is based on his own. Greene claims that the male podcast voice in NotebookLM closely resembles his distinctive vocal style, raising concerns about unauthorized use and voice cloning in AI technologies. This lawsuit highlights the growing legal and ethical challenges surrounding AI-generated content and intellectual property. Companies using AI for voice generation should ensure compliance with copyright and likeness rights to avoid similar disputes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/15/longtime-npr-host-david-greene-sues-google-over-notebooklm-voice/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 15 2026",
-            "headline": "Anthropic vs. Pentagon—Debate Over AI&#x27;s Surveillance Role",
-            "title": "Anthropic and Pentagon Dispute Use of Claude for Surveillance and Weapons",
-            "content": "Anthropic, an AI research company, is reportedly in a dispute with the Pentagon over the potential use of its AI model, Claude, for mass domestic surveillance and autonomous weapons. The disagreement centers on ethical and privacy concerns, as Claude&#x27;s capabilities could be leveraged for extensive monitoring and military applications. This clash underscores the ongoing debate about AI&#x27;s role in national security and the ethical implications of its deployment. Policymakers and AI developers must navigate these complex issues to balance innovation with ethical responsibility.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/15/anthropic-and-the-pentagon-are-reportedly-arguing-over-claude-usage/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 15 2026",
-            "headline": "Nvidia and Groq in AI Race—Real-Time Processing Stakes High",
-            "title": "Nvidia, Groq Compete for Real-Time AI Processing Dominance",
-            "content": "Nvidia and Groq are intensifying their competition in the race to provide real-time AI processing capabilities, crucial for enterprise success. As businesses increasingly rely on AI for decision-making, the ability to process data in real-time becomes a competitive advantage. Both companies are developing hardware and software solutions to meet these demands, with implications for industries such as finance, healthcare, and autonomous vehicles. Enterprises must evaluate their AI infrastructure to leverage real-time processing advancements effectively. Keeping abreast of developments from Nvidia and Groq could provide strategic benefits.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai-why-enterprises-win-or",
-            "relatedResources": []
         }
     ],
     "articles": {},
