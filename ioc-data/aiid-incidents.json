@@ -1103,44 +1103,12 @@
       "date": "2025-11-23",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-597",
-      "incident_id": 597,
-      "title": "Female Students at Westfield High School in New Jersey Reportedly Targeted with Deepfake Nudes",
-      "date": "2025-11-19",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-799",
-      "incident_id": 799,
-      "title": "Aledo High School Student Allegedly Generates and Distributes Deepfake Nudes of Seven Female Classma",
-      "date": "2025-11-19",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1048",
-      "incident_id": 1048,
-      "title": "Tennessee Meteorologist's Likeness Reportedly Used in Sextortion Campaign Involving Purported AI-Gen",
-      "date": "2025-11-19",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1275",
-      "incident_id": 1275,
-      "title": "Purportedly AI-Enhanced Phishing Campaign Allegedly Impersonates Australian Government Services in L",
-      "date": "2025-11-19",
-      "category": "fraud",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 142,
+    "total": 138,
     "last7Days": 8,
     "last30Days": 37
   },
-  "lastUpdated": "2026-02-17T14:30:13.866660+05:30"
+  "lastUpdated": "2026-02-17T19:06:20.696725+05:30"
 }
