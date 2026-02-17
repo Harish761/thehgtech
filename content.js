@@ -5,6 +5,114 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 17 2026",
+            "headline": "Polish Police Nab Phobos Ransomware Suspect",
+            "title": "Polish Authorities Arrest Suspect Linked to Phobos Ransomware Group",
+            "content": "Polish law enforcement has apprehended a 47-year-old man suspected of being involved with the notorious Phobos ransomware group. Authorities discovered evidence of cybercriminal activity on his devices, including stolen credentials and server access data. Phobos is known for targeting small to medium-sized enterprises with encryption-based extortion tactics. This arrest marks a significant step in dismantling the group&#x27;s operations, which have caused substantial financial damage globally. Security professionals should remain vigilant and ensure robust backup and recovery plans are in place to mitigate ransomware risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/man-linked-to-phobos-ransomware-arrested-in-poland/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Trojanized Oura MCP Server Spreads StealC Infostealer",
+            "title": "SmartLoader Campaign Deploys StealC Infostealer via Trojanized Oura MCP Server",
+            "content": "Cybersecurity researchers have uncovered a new campaign leveraging a trojanized Model Context Protocol (MCP) server associated with Oura Health to distribute the StealC information stealer. The attackers cloned a legitimate Oura MCP server to facilitate the distribution of malicious payloads. This campaign highlights the increasing sophistication of threat actors in exploiting trusted platforms to deploy malware. Organizations using Oura Health services should review their security configurations and monitor for any unusual activity. Ensuring up-to-date endpoint protection can help mitigate the risk of infostealer infections.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/smartloader-attack-uses-trojanized-oura.html",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Chrome Zero-Day Exploit—Patch Released Urgently",
+            "title": "Google Patches Actively Exploited Chrome Zero-Day Vulnerability",
+            "content": "Google has issued an emergency update to address a zero-day vulnerability in Chrome, marking the first such exploit of the year. The flaw allows remote code execution through malicious web pages, posing a significant threat to users worldwide. Security experts recommend updating Chrome immediately to prevent potential exploitation. This incident underscores the importance of prompt software updates, as browsers remain a prime target for cybercriminals. Users can update via Chrome&#x27;s built-in updater to secure their systems against this active threat.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/update-chrome-now-zero-day-bug-allows-code-execution-via-malicious-webpages",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "ZeroDayRAT Spyware Hits Android, iOS via Telegram Toolkit",
+            "title": "ZeroDayRAT Spyware Targets Mobile Devices Through Commercial Toolkit",
+            "content": "A new spyware called ZeroDayRAT is targeting Android and iOS devices, distributed via a commercial toolkit openly sold on Telegram. The toolkit offers a ready-to-deploy remote access solution, lowering the entry barrier for cybercriminals. iVerify researchers have traced its distribution to various Telegram channels, indicating a growing trend in the commoditization of spyware tools. Mobile users should exercise caution and avoid downloading applications from untrusted sources. Regular security updates and mobile security solutions can help protect against such threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4133122/zerodayrat-spyware-targets-android-and-ios-devices-via-commercial-toolkit.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "SOC Teams Harness AI for Faster Cloud Breach Response",
+            "title": "Webinar Explores AI and Context in Accelerating Cloud Breach Investigations",
+            "content": "A recent webinar highlighted how modern Security Operations Center (SOC) teams leverage artificial intelligence (AI) and contextual information to expedite cloud breach investigations. Unlike traditional data centers, cloud environments require rapid response due to their ephemeral nature, with compromised instances disappearing quickly. The session emphasized the importance of AI in processing large volumes of data and identifying threats in real-time. Security professionals should consider integrating AI-driven solutions to enhance their incident response capabilities in cloud infrastructures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/cloud-forensics-webinar-learn-how-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Phobos Ransomware Suspect Arrested in Poland",
+            "title": "Polish Police Detain Suspect with Links to Phobos Ransomware Operations",
+            "content": "Polish authorities have detained a man suspected of involvement with the Phobos ransomware group, seizing computers and mobile devices containing sensitive data. This arrest follows an investigation into the group&#x27;s activities, which have targeted numerous organizations with ransomware attacks. The confiscated devices held stolen credentials, credit card numbers, and server access information, underscoring the severity of the group&#x27;s operations. Businesses are advised to strengthen their cybersecurity measures and conduct regular security audits to prevent ransomware incidents.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/poland-arrests-suspect-linked-to-phobos-ransomware-operation/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Exploring NDR Systems: A Day in Network Security",
+            "title": "Hands-On Experience with Network Detection and Response (NDR) Systems",
+            "content": "An exploration into Network Detection and Response (NDR) systems reveals their crucial role in modern Security Operations Center (SOC) workflows. The firsthand account details the integration of NDR with AI to complement human responses, offering insights into network threats that might otherwise go unnoticed. NDR systems provide enhanced visibility into network traffic, aiding analysts in identifying and mitigating threats efficiently. As cyber threats evolve, professionals should consider adopting NDR solutions to bolster their network security posture.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/my-day-getting-my-hands-dirty-with-ndr.html",
+            "relatedResources": [
+                {
+                    "label": "SOC Analyst Fundamentals",
+                    "url": "/guides/soc-analyst-fundamentals.html",
+                    "icon": "fa-shield-alt"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
             "headline": "ISC Stormcast Highlights Cyber Threat Trends for February",
             "title": "SANS Internet Storm Center Discusses Current Cybersecurity Landscape",
             "content": "The SANS Internet Storm Center released its latest Stormcast, highlighting current cybersecurity threats and trends as of February 17, 2026. The InfoCON remains at green, indicating a stable threat environment. The podcast covers recent developments in malware activity, vulnerabilities, and threat actor tactics. Security professionals are advised to stay informed about these evolving threats and ensure their systems are updated with the latest security patches. This ongoing analysis is crucial for maintaining robust cybersecurity defenses.",
@@ -33,69 +141,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 16 2026",
-            "headline": "Ransomware Hits Japan&#x27;s Washington Hotel—Data Exposed",
-            "title": "Washington Hotel in Japan Suffers Ransomware Attack, Data Compromised",
-            "content": "The Washington Hotel chain in Japan has disclosed a ransomware attack that compromised its servers, leading to the exposure of critical business data. The breach has affected sensitive information, although the hotel has not specified the exact data types involved. This incident highlights the persistent threat of ransomware attacks on hospitality businesses, which often handle vast amounts of personal and financial data. Organizations in the sector are advised to strengthen their cybersecurity measures, including regular backups and employee training, to mitigate such risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/washington-hotel-in-japan-discloses-ransomware-infection-incident/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Feb 16 2026",
-            "headline": "OpenClaw AI Tool—CISO Alert on Security Risks",
-            "title": "Security Concerns Arise Over OpenClaw AI Agent Orchestration Tool",
-            "content": "OpenClaw, an open-source tool for orchestrating personal AI agents, has gained popularity but also raised security concerns. Previously known as Clawdbot and Moltbot, OpenClaw&#x27;s use in enterprises could introduce significant security risks. Security professionals are urged to assess the potential vulnerabilities inherent in deploying such tools, which could be exploited by malicious actors. This development is part of a broader trend of AI tools being targeted for their potential to disrupt enterprise environments. Organizations should conduct thorough risk assessments before integrating AI orchestration tools.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4132781/was-cisos-uber-openclaw-wissen-sollten.html",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 16 2026",
-            "headline": "AI Agents Overwhelm Open Source—Supply Chain Attack Risk",
-            "title": "Open Source Maintainers Targeted by AI Agents in Reputation Farming",
-            "content": "A new threat has emerged as AI agents flood open-source project maintainers with excessive pull requests, potentially paving the way for supply chain attacks. Developer security firm Socket has highlighted this issue, noting the risk it poses to critical software projects. The AI-driven reputation farming could overwhelm maintainers, leading to potential vulnerabilities being introduced into projects. Developers are advised to implement stringent review processes and utilize automated tools to manage and verify contributions effectively. This situation underscores the growing complexity of managing open-source security.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4132870/open-source-maintainers-being-targeted-by-ai-agent-as-part-of-reputation-farming.html",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 16 2026",
-            "headline": "Man Arrested—Demanded Reward for Police Data Leak",
-            "title": "Dutch Man Arrested for Extortion After Police Data Leak Incident",
-            "content": "Dutch authorities have arrested a 40-year-old man for attempting to extort the police after downloading confidential documents that were accidentally leaked. The individual refused to delete the sensitive information unless compensated, leading to his arrest. This case highlights the legal and ethical implications of handling inadvertently exposed data and the importance of responsible data management practices. Law enforcement agencies are reminded to implement robust data protection measures to prevent accidental leaks and ensure sensitive information remains secure.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/man-arrested-for-demanding-reward-after-accidental-police-data-leak/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 16 2026",
-            "headline": "Infostealer Targets OpenClaw—AI Configurations Compromised",
-            "title": "Infostealer Malware Exfiltrates OpenClaw AI Agent Configuration Files",
-            "content": "Cybersecurity researchers have uncovered a case where an information stealer successfully exfiltrated configuration files from the OpenClaw AI agent environment. This incident marks a significant advancement in infostealer capabilities, as it managed to access sensitive configuration and gateway tokens. Organizations utilizing OpenClaw should review their security protocols to safeguard against such threats. This development highlights the evolving nature of malware, which increasingly targets AI-driven environments for valuable data. Security teams must remain vigilant and proactive in updating their defenses.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/infostealer-steals-openclaw-ai-agent.html",
-            "relatedResources": []
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -122,54 +167,27 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 16 2026",
-            "headline": "a16z Targets Europe—Hunting for Next Unicorn",
-            "title": "a16z Expands Global Search for Promising European Startups",
-            "content": "Venture capital firm Andreessen Horowitz, known as a16z, is intensifying its efforts to identify the next wave of unicorns in Europe. The firm is strategically placing its resources to spot emerging companies as early as local investors, aiming to capitalize on promising tech ventures before they become widely recognized. This move underscores a16z&#x27;s commitment to global expansion and its confidence in the European tech ecosystem. With a track record of successful investments, a16z&#x27;s proactive approach could significantly influence the competitive landscape for European startups. Entrepreneurs in the region should prepare for increased attention and opportunities from international investors.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/16/have-money-will-travel-a16zs-hunt-for-the-next-european-unicorn/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 16 2026",
-            "headline": "Ransomware Defense Gap Widens—Machine Credentials Overlooked",
-            "title": "Ivanti Report Highlights Neglected Machine Credentials in Ransomware Defense",
-            "content": "Ivanti&#x27;s 2026 State of Cybersecurity Report reveals a growing gap in ransomware defenses, particularly regarding machine credentials. The report indicates a 10-point year-over-year increase in the preparedness gap across all tracked threat categories, with ransomware posing the most significant challenge. Attackers are increasingly exploiting overlooked machine credentials, bypassing traditional security measures. This oversight leaves organizations vulnerable to sophisticated attacks, emphasizing the need for comprehensive security strategies that address all potential entry points. Security professionals should reassess their defenses, ensuring machine credentials are adequately protected to mitigate ransomware risks.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/machine-identities-missing-link-ransomware-playbooks",
+            "date": "Feb 17 2026",
+            "headline": "Alibaba&#x27;s Qwen 3.5 Rivals US AI Models—On Commodity Hardware",
+            "title": "Alibaba&#x27;s Qwen 3.5 Challenges US AI Dominance with Open Source Model",
+            "content": "Alibaba has released its Qwen 3.5 series, an open-source AI model that matches the performance of leading proprietary models on standard hardware. Historically, US-based labs have dominated AI performance metrics, but Qwen 3.5 narrows this gap significantly. The model&#x27;s ability to deliver high performance without specialized hardware could democratize AI access, impacting sectors reliant on costly AI infrastructure. This development underscores a growing trend towards open-source AI solutions, challenging the economic dynamics of proprietary AI models. Professionals should evaluate the potential cost savings and strategic advantages of integrating open-source models like Qwen 3.5 into their AI ecosystems.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/alibaba-qwen-challenging-proprietary-ai-model-economics/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
-            "date": "Feb 16 2026",
-            "headline": "ByteDance Faces Backlash—AI Tool Sparks Hollywood Outcry",
-            "title": "ByteDance&#x27;s Seedance 2.0 Faces Criticism for AI-Generated Celebrity Images",
-            "content": "ByteDance has faced significant backlash following the launch of Seedance 2.0, an AI tool criticized for turning Hollywood icons into AI-generated &quot;clip art.&quot; The entertainment industry has expressed concerns over the ethical implications and potential misuse of celebrity likenesses without consent. This controversy highlights ongoing tensions between AI innovation and intellectual property rights. ByteDance&#x27;s response to the criticism will be crucial in shaping its reputation and future AI developments. Industry professionals should monitor the situation for potential regulatory implications and shifts in public perception regarding AI-generated content.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/02/bytedance-backpedals-after-seedance-2-0-turned-hollywood-icons-into-ai-clip-art/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 16 2026",
-            "headline": "Ricursive Intelligence Raises $335M—Valued at $4B",
-            "title": "Ricursive Intelligence Attracts $335M Investment Due to Famed Founders",
-            "content": "Ricursive Intelligence, an emerging AI startup, has secured $335 million in funding, achieving a valuation of $4 billion within just four months. The company&#x27;s success is largely attributed to its renowned founders, who are highly regarded in the AI community. This rapid influx of capital highlights the confidence investors have in the founders&#x27; vision and expertise. Ricursive Intelligence&#x27;s innovative approach to AI development is expected to drive significant advancements in the field. The startup&#x27;s progress should be closely watched by industry professionals as it may set new benchmarks for AI innovation and investment trends.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/16/how-ricursive-intelligence-raised-335m-at-a-4b-valuation-in-4-months/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 16 2026",
-            "headline": "Ring&#x27;s Super Bowl Ad Sparks Surveillance Debate",
-            "title": "Ring&#x27;s Search Party Ad Raises Concerns Over Surveillance Practices",
-            "content": "Ring&#x27;s recent Super Bowl commercial, titled &quot;Search Party,&quot; has ignited controversy by highlighting the company&#x27;s surveillance capabilities in tracking lost dogs. Critics argue that the ad normalizes pervasive surveillance, raising privacy concerns among viewers. The commercial has become a focal point in the broader debate over surveillance technology and its implications for privacy rights. As Ring continues to expand its product offerings, the company must navigate the delicate balance between innovation and consumer privacy. Tech leaders and policymakers should consider the ethical dimensions of surveillance technology as it becomes increasingly integrated into daily life.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/879203/ring-search-party-super-bowl-ai-surveillance-privacy-security",
+            "date": "Feb 17 2026",
+            "headline": "Adani Commits $100B for AI Data Centers—India&#x27;s AI Ambitions Soar",
+            "title": "Adani&#x27;s $100B Investment Aims to Position India as AI Powerhouse",
+            "content": "Adani Group has announced a $100 billion investment to build AI data centers with a target capacity of up to 5 gigawatts. This ambitious plan includes strategic partnerships with tech giants Google, Microsoft, and Flipkart, signaling India&#x27;s intent to become a major player in the global AI landscape. The investment will enhance India&#x27;s infrastructure, supporting the growing demand for AI services and applications. As AI continues to drive technological innovation, this move positions India to capitalize on its burgeoning tech sector. Stakeholders should monitor the development of these data centers and potential collaboration opportunities.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/17/adani-pledges-100b-for-ai-data-centers-as-india-seeks-bigger-role-in-global-ai/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -179,22 +197,72 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 16 2026",
-            "headline": "Flapping Airplanes Embraces Radical AI Experiments",
-            "title": "Flapping Airplanes Ventures into Uncharted AI Territory with New Approaches",
-            "content": "Flapping Airplanes, an AI research group, is embarking on a mission to explore radically different approaches to artificial intelligence. The group is focusing on unconventional trade-offs to push the boundaries of AI capabilities. By challenging traditional methodologies, Flapping Airplanes aims to uncover novel insights that could redefine AI development. This bold initiative reflects a growing trend among AI researchers to experiment with new paradigms and break away from established norms. Industry professionals should watch for breakthroughs from such experimental endeavors, which could have far-reaching implications for AI applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/16/flapping-airplanes-on-the-future-of-ai-we-want-to-try-really-radically-different-things/",
+            "date": "Feb 17 2026",
+            "headline": "Laurie Spiegel Explores Algorithmic Music vs. AI—A 40-Year Journey",
+            "title": "Laurie Spiegel Reflects on Algorithmic Music and AI&#x27;s Evolution",
+            "content": "Laurie Spiegel, an electronic music pioneer, revisits her 1986 creation, Music Mouse, to discuss the evolution from algorithmic music to AI-driven compositions. Music Mouse allowed users with early computers like Mac, Atari, or Amiga to create music using an XY grid and a mouse. Spiegel highlights the simplicity and creativity of algorithmic approaches compared to modern AI&#x27;s complexity. Her insights provide a unique perspective on the intersection of technology and creativity over the decades. Professionals in music technology should consider the historical context of algorithmic tools as they explore AI&#x27;s expanding role in creative industries.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/report/879819/laurie-spiegel-is-celebrating-40-of-music-mouse-with-a-modern-revival",
             "relatedResources": []
         },
         {
-            "date": "Feb 15 2026",
-            "headline": "OpenClaw Founder Joins OpenAI—Multi-Agent Future Ahead",
-            "title": "Peter Steinberger Joins OpenAI to Advance Multi-Agent AI Systems",
-            "content": "Peter Steinberger, founder of the innovative AI agent OpenClaw, is joining OpenAI to spearhead efforts in developing multi-agent AI systems. Announced by OpenAI&#x27;s CEO Sam Altman, Steinberger is expected to bring his expertise and &quot;amazing ideas&quot; to the forefront of AI research. His focus on enhancing interactions between AI agents aligns with OpenAI&#x27;s vision of an increasingly multi-agent future. This strategic move underscores OpenAI&#x27;s commitment to pioneering advancements in AI collaboration and interaction. AI professionals should anticipate new developments in multi-agent systems that could transform how AI technologies are deployed and utilized.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai",
+            "date": "Feb 17 2026",
+            "headline": "Infosys Partners with Anthropic—Boosts AI Agent Development",
+            "title": "Infosys and Anthropic Collaborate on Enterprise-Grade AI Agents",
+            "content": "Infosys has partnered with Anthropic to integrate its Claude models into the Topaz AI platform, advancing the development of &quot;agentic&quot; systems. This collaboration aims to enhance Infosys&#x27;s capabilities in creating sophisticated AI agents for enterprise applications. As AI jitters affect IT stocks, this strategic move could bolster Infosys&#x27;s market position by offering cutting-edge AI solutions. The partnership reflects a broader industry trend towards developing AI systems that can autonomously perform complex tasks. IT professionals should assess the implications of such partnerships on enterprise AI strategies and potential competitive advantages.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/17/as-ai-jitters-rattle-it-stocks-infosys-partners-with-anthropic-to-build-enterprise-grade-ai-agents/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Goldman Sachs Implements Anthropic AI—Enhances Trade Efficiency",
+            "title": "Goldman Sachs Leverages Anthropic&#x27;s Claude Model for Operational Efficiency",
+            "content": "Goldman Sachs is deploying Anthropic&#x27;s Claude model to enhance trade accounting and client onboarding processes. This initiative is part of a broader trend among large banks to adopt generative AI for operational improvements. The use of AI aims to streamline processes, reduce errors, and improve client experiences, reflecting the financial sector&#x27;s increasing reliance on technology. As banks continue to integrate AI into their operations, professionals should consider the implications for efficiency and regulatory compliance. Monitoring the impact of AI on financial services will be crucial for stakeholders navigating this technological shift.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/goldman-sachs-ai-deploys-anthropic-systems-with-success/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "AI Digital Twins Aid Diabetes Management—A New Health Frontier",
+            "title": "AI Digital Twins Revolutionize Diabetes and Obesity Management",
+            "content": "Silicon Valley startup Twin Health is leveraging AI and wearable sensors to create digital twins that assist in managing diabetes and obesity. These digital twins offer personalized health insights, providing alternatives to expensive GLP-1 drugs. As healthcare costs rise, such AI-driven solutions present a cost-effective way for patients and employers to promote healthier lifestyles. The adoption of digital twins highlights a shift towards preventative healthcare, emphasizing data-driven decision-making. Healthcare professionals should explore the potential of AI in improving patient outcomes and reducing treatment costs.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/ai-digital-twins-are-helping-people-manage-diabetes-and-obesity/",
             "relatedResources": []
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Samsung&#x27;s AI Ads Flood Social Media—Generative Tools in Play",
+            "title": "Samsung Utilizes Generative AI for Social Media Advertising",
+            "content": "Samsung is increasingly using generative AI tools to create and edit videos for its social media channels, including YouTube, Instagram, and TikTok. This strategy follows Samsung&#x27;s integration of AI across its product lines, from smartphones to appliances. The use of AI in advertising reflects a broader trend of leveraging technology for creative content generation. As brands seek to engage audiences more effectively, the role of AI in marketing continues to expand. Marketing professionals should consider the implications of AI-driven content creation and its impact on brand visibility and consumer engagement.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/879864/samsung-ai-generated-edited-video-ads-slop",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
         }
     ],
     "articles": {},
