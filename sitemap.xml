@@ -83,6 +83,30 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
 
+  <!-- Feb 17, 2026 - Chrome Zero-Day CVE-2026-2441 -->
+  <url>
+    <loc>https://thehgtech.com/articles/chrome-zero-day-cve-2026-2441.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-17</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/chrome-zero-day-cve-2026-2441.png</image:loc>
+      <image:title>Chrome Zero-Day CVE-2026-2441 CSS Use-After-Free Exploit Analysis</image:title>
+    </image:image>
+  </url>
+
+  <!-- Feb 17, 2026 - Odido Data Breach 6.2M -->
+  <url>
+    <loc>https://thehgtech.com/articles/odido-data-breach-6m-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-17</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/odido-data-breach-6m-2026.png</image:loc>
+      <image:title>Odido Data Breach 6.2 Million Dutch Telecom Customers Salesforce CRM</image:title>
+    </image:image>
+  </url>
+
   <!-- Feb 12, 2026 - Microsoft Patch Tuesday February 2026 -->
   <url>
     <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-february-2026.html</loc>

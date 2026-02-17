@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "id": "chrome-zero-day-cve-2026-2441",
+      "title": "Chrome Zero-Day CVE-2026-2441: CSS Use-After-Free Exploit Weaponized in Drive-By Attacks",
+      "date": "February 17, 2026",
+      "category": "Zero-Day Vulnerability",
+      "badge": "ZERO-DAY",
+      "excerpt": "Critical use-after-free in Chrome's CSS engine (CVSS 8.8) actively exploited in the wild. Iterator invalidation in CSSFontFeatureValuesMap enables RCE via crafted web pages. 3 billion Chromium users affected. Emergency patch available.",
+      "image": "images/articles/chrome-zero-day-cve-2026-2441.png",
+      "tags": [
+        "Chrome",
+        "Zero-Day",
+        "CVE-2026-2441",
+        "CSS",
+        "Use-After-Free",
+        "Browser Security",
+        "RCE"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/chrome-zero-day-cve-2026-2441.html"
+    },
+    {
+      "id": "odido-data-breach-6m-2026",
+      "title": "Odido Data Breach: 6.2 Million Dutch Telecom Customers Exposed via Salesforce CRM Compromise",
+      "date": "February 17, 2026",
+      "category": "Data Breach",
+      "badge": "BREACH",
+      "excerpt": "Netherlands' largest telecom breach — social engineering compromised Salesforce CRM exposing names, IBANs, passport numbers of 6.2M Odido customers. GDPR investigation underway with potential €20M+ fine.",
+      "image": "images/articles/odido-data-breach-6m-2026.png",
+      "tags": [
+        "Data Breach",
+        "Odido",
+        "Salesforce",
+        "GDPR",
+        "Social Engineering",
+        "Netherlands",
+        "Telecom"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/odido-data-breach-6m-2026.html"
+    },
+    {
       "id": "report-20260216",
       "title": "Weekly Threat Report: February 16, 2026",
       "date": "February 16, 2026",

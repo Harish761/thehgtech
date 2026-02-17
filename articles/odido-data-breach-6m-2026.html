@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Odido Data Breach: 6.2 Million Dutch Telecom Customers Exposed via Compromised Salesforce CRM — Full Analysis
+        | TheHGTech</title>
+    <meta name="description"
+        content="Deep technical analysis of the Odido (formerly T-Mobile Netherlands) data breach exposing 6.2 million customer records including IBANs and passport data. Salesforce CRM compromised via social engineering. GDPR implications and defense strategies.">
+    <meta name="keywords"
+        content="Odido data breach, Odido Netherlands, T-Mobile Netherlands, Salesforce breach, 6.2 million customers, GDPR, Dutch telecom breach, IBAN exposed, passport data breach, social engineering attack, CRM compromise, data protection, February 2026 breach">
+    <meta name="author" content="TheHGTech Security Research">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/articles/odido-data-breach-6m-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/odido-data-breach-6m-2026.html">
+    <meta property="og:title" content="Odido Data Breach: 6.2M Dutch Customers Exposed via Salesforce CRM Compromise">
+    <meta property="og:description"
+        content="Netherlands' largest telecom breach. Social engineering compromised Salesforce CRM exposing names, IBANs, passport numbers of 6.2M customers. GDPR investigation underway.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/odido-data-breach-6m-2026.png">
+    <meta property="og:site_name" content="TheHGTech">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Odido Data Breach: 6.2M Records Exposed via Salesforce Compromise">
+    <meta name="twitter:description"
+        content="Deep dive into the Odido breach — social engineering, Salesforce CRM exploitation, and GDPR fallout for 6.2M Dutch customers.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/odido-data-breach-6m-2026.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Odido Data Breach: 6.2 Million Dutch Telecom Customers Exposed via Compromised Salesforce CRM",
+      "description": "Full technical and strategic analysis of the Odido data breach, one of the largest in Dutch history. Salesforce CRM compromised via social engineering.",
+      "proficiencyLevel": "Expert",
+      "author": {
+        "@type": "Organization",
+        "name": "TheHGTech Security Research",
+        "url": "https://thehgtech.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2026-02-17",
+      "dateModified": "2026-02-17",
+      "mainEntityOfPage": "https://thehgtech.com/articles/odido-data-breach-6m-2026.html",
+      "image": "https://thehgtech.com/images/articles/odido-data-breach-6m-2026.png",
+      "articleSection": "Data Breach",
+      "keywords": ["Odido", "Data Breach", "Salesforce", "GDPR", "Netherlands", "6.2 Million", "Social Engineering"]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What happened in the Odido data breach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In February 2026, Dutch telecom provider Odido (formerly T-Mobile Netherlands) suffered a major data breach exposing personal information of 6.2 million customers. Attackers gained unauthorized access to Odido's Salesforce-based customer management system through social engineering and phishing attacks targeting customer service employees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data was stolen in the Odido breach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The stolen data includes customer names, home addresses, email addresses, phone numbers, dates of birth, bank account numbers (IBANs), and identification documents (passport or driver's license numbers). Passwords, call records, and identification document scans were NOT compromised."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How did the Odido breach happen through Salesforce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The breach was linked to a compromised Salesforce environment used for customer contact management. Attackers used a combination of phishing and social engineering tactics to obtain credentials from customer service employees, bypassing security controls to access the CRM database containing 6.2 million customer records."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the GDPR implications of the Odido breach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under GDPR Article 83, Odido faces potential fines of up to €20 million or 4% of annual global turnover—whichever is higher. The Dutch Data Protection Authority (Autoriteit Persoonsgegevens) has been notified and is investigating. The scale of the breach (6.2M records with sensitive financial data) could result in one of the largest GDPR penalties in Dutch history."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Articles", "item": "https://thehgtech.com/articles.html" },
+        { "@type": "ListItem", "position": 3, "name": "Odido Data Breach: 6.2M Records" }
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style System -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.js" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0f1419;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 1.5rem 120px;
+        }
+
+        .article-header {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-breach {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .badge-gdpr {
+            background: linear-gradient(135deg, #003399, #FFCC00);
+            color: white;
+        }
+
+        .badge-telecom {
+            background: var(--accent-purple);
+            color: white;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul,
+        ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        code {
+            background: rgba(0, 217, 255, 0.1);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.85rem;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green);
+            font-size: 0.85rem;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.06);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.06);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.06);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .technical-box {
+            background: rgba(59, 130, 246, 0.06);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .technical-box h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-card .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent-red);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.08);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .severity-critical {
+            color: var(--accent-red);
+            font-weight: 700;
+        }
+
+        .severity-high {
+            color: var(--accent-orange);
+            font-weight: 700;
+        }
+
+        .attack-flow {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(139, 92, 246, 0.05));
+            border: 1px solid var(--accent-purple);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+        }
+
+        @media (max-width: 768px) {
+            .article-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px 1rem 100px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .meta-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .stat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #00D9FF, #0099cc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span
+                        class="m-theme-toggle__star"></span></span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item active"><i
+                class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span
+                                        class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle"
+                        aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button></div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/articles.html" class="back-link"
+            style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <article>
+            <header class="article-header">
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <span class="badge badge-breach">DATA BREACH</span>
+                    <span class="badge badge-gdpr">GDPR</span>
+                    <span class="badge badge-telecom">Telecom</span>
+                </div>
+                <h1>Odido Data Breach: 6.2 Million Dutch Telecom Customers Exposed via Compromised Salesforce CRM — The
+                    Anatomy of a Social Engineering Masterclass</h1>
+                <div class="meta-info">
+                    <span><i class="far fa-calendar-alt"></i> February 17, 2026</span>
+                    <span><i class="far fa-clock"></i> 20 min read</span>
+                    <span><i class="fas fa-user-shield"></i> TheHGTech Security Research</span>
+                    <span><i class="fas fa-crosshairs"></i> Expert Level</span>
+                </div>
+            </header>
+
+            <img src="/images/articles/odido-data-breach-6m-2026.png"
+                alt="Odido Data Breach 6.2 Million Dutch Customers Salesforce CRM Technical Analysis"
+                class="featured-image" loading="lazy">
+
+            <!-- STATS -->
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-value">6.2M</div>
+                    <div class="stat-label">Customer Records Exposed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">IBANs</div>
+                    <div class="stat-label">Bank Account Numbers Stolen</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">ID Docs</div>
+                    <div class="stat-label">Passport/License Numbers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">€20M+</div>
+                    <div class="stat-label">Potential GDPR Fine</div>
+                </div>
+            </div>
+
+            <!-- EXECUTIVE SUMMARY -->
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-triangle"></i> EXECUTIVE SUMMARY — BLUF:</strong>
+                <p style="margin-top: 0.75rem;"><strong>What:</strong> Dutch telecommunications provider
+                    <strong>Odido</strong> (formerly T-Mobile Netherlands) suffered one of the largest data breaches in
+                    Dutch history over the weekend of February 7-8, 2026. Attackers compromised the company's
+                    <strong>Salesforce-based customer contact management system</strong>, exfiltrating personal data of
+                    approximately <strong>6.2 million customers</strong>.</p>
+                <p><strong>What was stolen:</strong> Names, home addresses, email addresses, phone numbers, dates of
+                    birth, <strong>bank account numbers (IBANs)</strong>, and <strong>identification document
+                        numbers</strong> (passport or driver's license). Passwords, call records, billing information,
+                    and ID document scans were NOT accessed.</p>
+                <p><strong>How:</strong> The breach was facilitated through a combination of <strong>phishing and social
+                        engineering attacks</strong> targeting Odido's customer service employees, resulting in
+                    compromised credentials that provided access to the Salesforce CRM environment.</p>
+                <p><strong>Confidence Level:</strong> Confirmed | <strong>TLP:</strong> CLEAR | <strong>Source:</strong>
+                    Odido official statement, Dutch DPA notification, The Record, SecurityWeek, The Register</p>
+            </div>
+
+            <!-- INCIDENT TIMELINE -->
+            <h2><i class="fas fa-clock"></i> 1. Incident Timeline</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Feb 7-8, 2026</strong></td>
+                        <td>Unauthorized access to Odido's Salesforce customer contact system detected</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feb 8, 2026</strong></td>
+                        <td>Odido terminates unauthorized access; incident response initiated with external
+                            cybersecurity experts</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feb 9, 2026</strong></td>
+                        <td>Breach reported to the <strong>Autoriteit Persoonsgegevens</strong> (Dutch Data Protection
+                            Authority) within 72 hours per GDPR requirements</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feb 10, 2026</strong></td>
+                        <td>Odido begins notifying affected customers via email and SMS</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feb 11, 2026</strong></td>
+                        <td>Media reports confirm 6.2 million customer records compromised — the breach is among the
+                            largest in Dutch history</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feb 12-14, 2026</strong></td>
+                        <td>Investigation links breach to compromised Salesforce environment via phishing/social
+                            engineering of customer service employees</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Feb 17, 2026</strong></td>
+                        <td>TheHGTech publishes full analysis (this article)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- ATTACK ANALYSIS -->
+            <h2><i class="fas fa-crosshairs"></i> 2. Attack Vector Analysis: The Social Engineering Kill Chain</h2>
+
+            <p>The Odido breach is a masterclass in how <strong>human-centric attacks</strong> bypass even sophisticated
+                technical controls. The attackers did not exploit a Salesforce zero-day or brute-force credentials. They
+                manipulated people.</p>
+
+            <h3>2.1 Reconstructed Attack Chain</h3>
+            <p>Based on available reporting from Odido's own disclosures, TechZine.eu, and SalesforceBen, the following
+                kill chain emerges:</p>
+
+            <div class="attack-flow">
+                <pre style="color: var(--accent-purple); margin: 0;">
+┌───────────────────────────────────────────────────────────────────────┐
+│              ODIDO BREACH — RECONSTRUCTED KILL CHAIN                  │
+├───────────────────────────────────────────────────────────────────────┤
+│                                                                       │
+│  PHASE 1: RECONNAISSANCE                                             │
+│  ┌────────────────────────────────────────────┐                       │
+│  │  • Identify Odido customer service agents   │                      │
+│  │    via LinkedIn/social media                │                      │
+│  │  • Map internal tools (Salesforce Service   │                      │
+│  │    Cloud identified as primary CRM)         │                      │
+│  │  • Identify SSO/auth mechanisms             │                      │
+│  └──────────────────────┬─────────────────────┘                       │
+│                         │                                              │
+│  PHASE 2: CREDENTIAL HARVESTING (Social Engineering)                  │
+│  ┌──────────────────────┴─────────────────────┐                       │
+│  │  • Spear-phishing emails mimicking Odido    │                      │
+│  │    internal IT/HR communications            │                      │
+│  │  • Fake "password reset" or "MFA reconfig"  │                      │
+│  │    pages cloning Salesforce SSO portal      │                      │
+│  │  • Possible voice phishing (vishing) calls  │                      │
+│  │    impersonating IT support                 │                      │
+│  └──────────────────────┬─────────────────────┘                       │
+│                         │                                              │
+│  PHASE 3: INITIAL ACCESS                                              │
+│  ┌──────────────────────┴─────────────────────┐                       │
+│  │  • Login to Salesforce Service Cloud with   │                      │
+│  │    harvested credentials                    │                      │
+│  │  • Bypass MFA (if enabled) via:             │                      │
+│  │    - MFA fatigue bombing (push spam)        │                      │
+│  │    - Real-time phishing relay proxy         │                      │
+│  │    - Stolen session token                   │                      │
+│  └──────────────────────┬─────────────────────┘                       │
+│                         │                                              │
+│  PHASE 4: DATA EXFILTRATION                                          │
+│  ┌──────────────────────┴─────────────────────┐                       │
+│  │  • Use Salesforce SOQL queries or Data      │                      │
+│  │    Loader to bulk export customer records   │                      │
+│  │  • 6.2 million records extracted within     │                      │
+│  │    the Feb 7-8 weekend window               │                      │
+│  │  • Exfiltration likely via Salesforce API    │                      │
+│  │    exports (CSV/JSON)                       │                      │
+│  └────────────────────────────────────────────┘                       │
+│                                                                       │
+│  RESULT: 6.2M records including IBANs and passport numbers            │
+└───────────────────────────────────────────────────────────────────────┘</pre>
+            </div>
+
+            <h3>2.2 Why Weekends Matter</h3>
+            <p>The attackers chose a <strong>Saturday-Sunday window</strong> (Feb 7-8). This is a well-known pattern in
+                data exfiltration operations:</p>
+            <ul>
+                <li><strong>Reduced monitoring:</strong> SOC teams are typically understaffed on weekends. Alert fatigue
+                    is higher.</li>
+                <li><strong>Slower response:</strong> Escalation chains are longer when key decision-makers are
+                    off-duty.</li>
+                <li><strong>Higher data export limits:</strong> Some Salesforce orgs relax API rate limits during
+                    off-hours.</li>
+                <li><strong>Plausible cover:</strong> Batch data jobs (backups, syncs) often run on weekends, masking
+                    anomalous bulk exports.</li>
+            </ul>
+
+            <!-- WHAT WAS STOLEN -->
+            <h2><i class="fas fa-database"></i> 3. Data Exposed: The Full Impact Assessment</h2>
+
+            <table>
+                <caption
+                    style="text-align: left; padding: 0.75rem 0; color: var(--text-secondary); font-style: italic;">
+                    Comparison of exposed vs. protected data types in the Odido breach</caption>
+                <thead>
+                    <tr>
+                        <th>Data Category</th>
+                        <th>Exposed?</th>
+                        <th>Risk Level</th>
+                        <th>Abuse Potential</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Full Names</td>
+                        <td><span class="severity-critical">YES</span></td>
+                        <td>Medium</td>
+                        <td>Identity fraud, social engineering</td>
+                    </tr>
+                    <tr>
+                        <td>Home Addresses</td>
+                        <td><span class="severity-critical">YES</span></td>
+                        <td>High</td>
+                        <td>Physical security, SIM swap delivery fraud</td>
+                    </tr>
+                    <tr>
+                        <td>Email Addresses</td>
+                        <td><span class="severity-critical">YES</span></td>
+                        <td>High</td>
+                        <td>Targeted phishing, credential stuffing</td>
+                    </tr>
+                    <tr>
+                        <td>Phone Numbers</td>
+                        <td><span class="severity-critical">YES</span></td>
+                        <td>High</td>
+                        <td>SIM swapping, vishing</td>
+                    </tr>
+                    <tr>
+                        <td>Dates of Birth</td>
+                        <td><span class="severity-critical">YES</span></td>
+                        <td>High</td>
+                        <td>Identity verification bypass ("security questions")</td>
+                    </tr>
+                    <tr>
+                        <td>IBAN (Bank Accounts)</td>
+                        <td><span class="severity-critical">YES</span></td>
+                        <td><span class="severity-critical">Critical</span></td>
+                        <td>Direct debit fraud, financial identity theft</td>
+                    </tr>
+                    <tr>
+                        <td>Passport/License Numbers</td>
+                        <td><span class="severity-critical">YES</span></td>
+                        <td><span class="severity-critical">Critical</span></td>
+                        <td>Full identity theft, fraudulent account opening</td>
+                    </tr>
+                    <tr>
+                        <td>Passwords</td>
+                        <td>NO</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Call Records</td>
+                        <td>NO</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Billing Information</td>
+                        <td>NO</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>ID Document Scans</td>
+                        <td>NO</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong><i class="fas fa-exclamation-circle"></i> Critical Observation:</strong>
+                <p style="margin-top: 0.5rem;">The combination of <strong>IBAN + Full Name + Date of Birth + Address +
+                        Passport Number</strong> constitutes a complete <strong>"Identity Theft Kit."</strong> This data
+                    package is sufficient to:</p>
+                <ul>
+                    <li>Open fraudulent bank accounts in the Netherlands and EU</li>
+                    <li>Execute unauthorized SEPA direct debits</li>
+                    <li>Apply for loans or credit cards using stolen identities</li>
+                    <li>File fraudulent tax returns</li>
+                    <li>Conduct SIM swap attacks to intercept SMS-based MFA codes</li>
+                </ul>
+            </div>
+
+            <!-- SALESFORCE SECURITY -->
+            <h2><i class="fab fa-salesforce"></i> 4. Salesforce CRM Security: Lessons from the Breach</h2>
+
+            <p>This breach is not a Salesforce vulnerability. It's a <strong>Salesforce configuration and access control
+                    failure</strong> on Odido's part. However, it highlights systemic risks that every Salesforce
+                customer should evaluate:</p>
+
+            <h3>4.1 Common Salesforce Security Gaps</h3>
+            <ul>
+                <li><strong>Overprivileged Service Accounts:</strong> Customer service agents often have broader data
+                    access than required. A single compromised account can access millions of records if row-level
+                    security (Field-Level Security and Record-Level Security) is not enforced.</li>
+                <li><strong>Insufficient MFA Enforcement:</strong> While Salesforce mandates MFA, organizations can
+                    implement it weakly (SMS-based, easily phished MFA push notifications).</li>
+                <li><strong>No Bulk Export Alerts:</strong> Salesforce does not natively alert on anomalous data export
+                    volumes. Organizations must configure <strong>Salesforce Shield Event Monitoring</strong> (paid
+                    add-on) or build custom alerts.</li>
+                <li><strong>Session Hijacking:</strong> Stolen session tokens bypass MFA entirely. Without IP
+                    restrictions on sessions, an attacker with a valid session cookie can operate from anywhere.</li>
+            </ul>
+
+            <h3>4.2 Detection: SOQL Audit Query</h3>
+            <div class="technical-box">
+                <h3><i class="fas fa-code"></i> Salesforce SOQL — Detect Anomalous Bulk Data Exports</h3>
+                <pre><code class="language-sql">-- Salesforce Event Monitoring Query
+-- Detect unusual bulk data access from the EventLogFile
+
+SELECT UserId, Username, ClientIp, RequestType,
+       RecordCount, Timestamp
+FROM EventLogFile
+WHERE EventType = 'ReportExport' OR EventType = 'BulkApiResult'
+  AND RecordCount > 10000
+  AND Timestamp > LAST_N_DAYS:7
+ORDER BY RecordCount DESC
+
+-- Flag: Any single session exporting > 50K records
+-- Flag: Any export from unrecognized IP range
+-- Flag: Any export outside business hours (weekends, 22:00-06:00)</code></pre>
+            </div>
+
+            <h3>4.3 SIEM Detection Rule</h3>
+            <div class="technical-box">
+                <h3><i class="fas fa-code"></i> Sigma Rule — Salesforce Bulk Data Exfiltration</h3>
+                <pre><code class="language-yaml">title: Salesforce Anomalous Bulk Data Export
+id: 9a4c1f3d-b8e2-4d7a-ae63-odido-salesforce-2026
+status: experimental
+description: |
+    Detects bulk data exports from Salesforce CRM that may indicate
+    unauthorized data exfiltration, as seen in the Odido breach.
+author: TheHGTech Security Research
+date: 2026/02/17
+tags:
+    - attack.collection
+    - attack.t1530
+    - attack.exfiltration
+    - attack.t1567
+logsource:
+    category: cloud
+    product: salesforce
+    service: event_monitoring
+detection:
+    selection_bulk_export:
+        EventType|contains:
+            - 'ReportExport'
+            - 'BulkApiResult'
+            - 'DataExport'
+            - 'ApiTotalUsageEvent'
+        RowsProcessed|gte: 50000
+    selection_off_hours:
+        EventType|contains:
+            - 'Login'
+            - 'ReportExport'
+        Timestamp|re: '.*(Saturday|Sunday|0[0-5]:\d{2}).*'
+    selection_new_ip:
+        EventType: 'Login'
+        SourceIp|cidr:
+            - '0.0.0.0/0'  # Replace with known corporate IP ranges to flag unknowns
+    condition: selection_bulk_export or (selection_off_hours and selection_new_ip)
+falsepositives:
+    - Scheduled data backups during maintenance windows
+    - Salesforce Data Loader used by admins for legitimate migrations
+    - Marketing automation bulk syncs
+level: high</code></pre>
+            </div>
+
+            <!-- GDPR ANALYSIS -->
+            <h2><i class="fas fa-gavel"></i> 5. GDPR Implications & Regulatory Exposure</h2>
+
+            <p>The Odido breach falls squarely under the <strong>General Data Protection Regulation (GDPR)</strong>. As
+                a Dutch entity processing EU citizen data, Odido faces significant regulatory scrutiny.</p>
+
+            <h3>5.1 GDPR Obligations Assessment</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>GDPR Article</th>
+                        <th>Requirement</th>
+                        <th>Odido Compliance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Art. 33 — Notification</strong></td>
+                        <td>Notify supervisory authority within 72 hours</td>
+                        <td><span style="color: var(--accent-green);">✓ COMPLIED</span> — Reported to AP within 72 hours
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Art. 34 — Communication</strong></td>
+                        <td>Notify affected individuals of high-risk breach</td>
+                        <td><span style="color: var(--accent-green);">✓ COMPLIED</span> — Email/SMS notifications sent
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Art. 32 — Security Measures</strong></td>
+                        <td>Implement appropriate technical/organizational security</td>
+                        <td><span class="severity-critical">⚠ UNDER INVESTIGATION</span> — Was MFA enforced? Were access
+                            controls adequate?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Art. 25 — Data Protection by Design</strong></td>
+                        <td>Minimize data processing; pseudonymize where possible</td>
+                        <td><span class="severity-critical">⚠ QUESTIONABLE</span> — Why did CS agents have access to
+                            IBANs and passport numbers?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Art. 83 — Penalties</strong></td>
+                        <td>Up to €20M or 4% of annual global turnover</td>
+                        <td><span class="severity-high">PENDING</span> — AP investigation ongoing</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <strong><i class="fas fa-landmark"></i> Historical Precedent:</strong>
+                <p style="margin-top: 0.5rem;">The largest GDPR fine in the Netherlands to date was
+                    <strong>€750,000</strong> against the Dutch Tax Administration in 2020. However, the scale of the
+                    Odido breach (6.2M records with financial data) and the nature of the data (IBANs, passport numbers)
+                    could push the AP toward a significantly higher penalty, potentially in the <strong>€10-50
+                        million</strong> range based on precedents set by other EU DPAs (Ireland's €1.2B Meta fine,
+                    Luxembourg's €746M Amazon fine).</p>
+            </div>
+
+            <!-- PREVIOUS TELECOM BREACHES -->
+            <h2><i class="fas fa-history"></i> 6. Pattern Analysis: Telecom Breaches 2023-2026</h2>
+
+            <p>The Odido breach is part of a disturbing trend of telecom companies being targeted for customer data:</p>
+
+            <table>
+                <caption
+                    style="text-align: left; padding: 0.75rem 0; color: var(--text-secondary); font-style: italic;">
+                    Major telecom data breaches 2023-2026</caption>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Company</th>
+                        <th>Records</th>
+                        <th>Vector</th>
+                        <th>Data Exposed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023</td>
+                        <td>T-Mobile US</td>
+                        <td>37M</td>
+                        <td>API exploitation</td>
+                        <td>Names, DOBs, addresses</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>AT&T</td>
+                        <td>73M</td>
+                        <td>Third-party vendor</td>
+                        <td>SSNs, account details</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Optus (Australia)</td>
+                        <td>10M</td>
+                        <td>Unauthenticated API</td>
+                        <td>Passport/license numbers</td>
+                    </tr>
+                    <tr>
+                        <td>2025</td>
+                        <td>Vodafone Spain</td>
+                        <td>4.8M</td>
+                        <td>Insider threat</td>
+                        <td>Names, phone numbers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2026</strong></td>
+                        <td><strong>Odido (NL)</strong></td>
+                        <td><strong>6.2M</strong></td>
+                        <td><strong>Social engineering → CRM</strong></td>
+                        <td><strong>IBANs, passport numbers</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Key Pattern:</strong> The attack vector has shifted from technical exploits (APIs,
+                misconfigurations) to <strong>human-centric attacks</strong> (social engineering, insider threats). This
+                reflects the industry's improved technical posture being undermined by insufficient investment in
+                <strong>security awareness training</strong> and <strong>identity-centric security controls</strong>.
+            </p>
+
+            <!-- DEFENSIVE RECOMMENDATIONS -->
+            <h2><i class="fas fa-shield-alt"></i> 7. Defensive Recommendations</h2>
+
+            <h3>For Organizations Using Salesforce:</h3>
+            <div class="success-box">
+                <strong><i class="fas fa-shield-alt"></i> IMMEDIATE ACTIONS:</strong>
+                <ol>
+                    <li><strong>Audit Data Access:</strong> Review all Salesforce user profiles. Apply the
+                        <strong>principle of least privilege</strong>. Customer service agents should NOT have access to
+                        IBANs or identity document numbers unless explicitly required for a specific workflow.</li>
+                    <li><strong>Enforce Phishing-Resistant MFA:</strong> Move from SMS/push-based MFA to
+                        <strong>FIDO2/WebAuthn</strong> hardware keys (YubiKey) for all Salesforce users with data
+                        access.</li>
+                    <li><strong>Enable Shield Event Monitoring:</strong> Configure real-time alerts for bulk data
+                        exports, unusual login locations, and off-hours activity.</li>
+                    <li><strong>IP Restriction:</strong> Lock Salesforce sessions to known corporate IP ranges. Use
+                        Salesforce's <strong>Login IP Ranges</strong> and <strong>Trusted IP Ranges</strong> features.
+                    </li>
+                    <li><strong>Data Masking:</strong> Implement <strong>Salesforce Shield Platform Encryption</strong>
+                        and field-level masking for sensitive fields (IBANs, government IDs).</li>
+                </ol>
+            </div>
+
+            <h3>For Affected Odido Customers:</h3>
+            <div class="success-box">
+                <strong><i class="fas fa-user-shield"></i> CUSTOMER PROTECTION CHECKLIST:</strong>
+                <ol>
+                    <li><strong>Monitor Bank Accounts:</strong> Check for unauthorized direct debits. Contact your bank
+                        to enable alerts on all SEPA transactions.</li>
+                    <li><strong>Freeze Credit (if available):</strong> In the Netherlands, contact BKR (Bureau Krediet
+                        Registratie) to flag your profile.</li>
+                    <li><strong>Beware Phishing:</strong> Expect targeted phishing emails/SMS pretending to be from
+                        Odido, banks, or government agencies. Never click links in unsolicited messages.</li>
+                    <li><strong>Report Suspicious Activity:</strong> Use <a href="https://www.fraudehelpdesk.nl/"
+                            target="_blank" rel="noopener">Fraude Helpdesk</a> (Dutch Fraud Helpdesk) to report any
+                        suspicious contact.</li>
+                    <li><strong>Request Identity Protection:</strong> Under GDPR Art. 82, affected individuals may be
+                        entitled to compensation. Consider joining collective action efforts.</li>
+                </ol>
+            </div>
+
+            <!-- YARA RULE -->
+            <h2><i class="fas fa-search"></i> 8. Detection Rules: Identify Phishing Infrastructure</h2>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-code"></i> YARA Rule — Salesforce SSO Phishing Kit Detection</h3>
+                <pre><code class="language-yara">rule Salesforce_SSO_Phishing_Kit_2026
+{
+    meta:
+        description = "Detects Salesforce SSO phishing kits used in CRM-targeted attacks like Odido breach"
+        author = "TheHGTech Security Research"
+        date = "2026-02-17"
+        severity = "high"
+        reference = "https://thehgtech.com/articles/odido-data-breach-6m-2026.html"
+        tlp = "white"
+
+    strings:
+        // Salesforce login page cloning indicators
+        $sf_login1 = "login.salesforce.com" nocase
+        $sf_login2 = "*.my.salesforce.com" nocase
+        $sf_login3 = "sfdc_oauth" nocase
+        $sf_login4 = "SalesforceIdentity" nocase
+
+        // Credential harvesting indicators
+        $harvest1 = "action=\"https://" nocase  // External form action
+        $harvest2 = "password" nocase
+        $harvest3 = "username" nocase
+
+        // Phishing kit infrastructure
+        $kit1 = "XMLHttpRequest" nocase
+        $kit2 = "fetch(" nocase
+        $kit3 = "/collect" nocase
+        $kit4 = "/exfil" nocase
+        $kit5 = "telegram.org/bot" nocase  // Telegram exfil
+        $kit6 = "discord.com/api/webhooks" nocase  // Discord exfil
+
+        // Anti-analysis
+        $anti1 = "headless" nocase
+        $anti2 = "puppeteer" nocase
+        $anti3 = "PhantomJS" nocase
+
+    condition:
+        filesize < 1MB and
+        (
+            // Salesforce login clone + credential harvesting
+            (2 of ($sf_login*) and 2 of ($harvest*) and $harvest1) or
+            // Salesforce branding + exfiltration channel
+            (1 of ($sf_login*) and 1 of ($kit*) and 1 of ($harvest*)) or
+            // Phishing kit with anti-analysis + credential theft
+            (1 of ($anti*) and 2 of ($kit*) and 2 of ($harvest*))
+        )
+}</code></pre>
+            </div>
+
+            <!-- LESSONS -->
+            <h2><i class="fas fa-graduation-cap"></i> 9. Strategic Lessons & Industry Forecast</h2>
+
+            <div class="info-box">
+                <strong><i class="fas fa-binoculars"></i> TheHGTech Forecast:</strong>
+                <p style="margin-top: 0.5rem;">The Odido breach signals a <strong>paradigm shift</strong> in enterprise
+                    targeting. Attackers are increasingly bypassing hardened infrastructure (firewalls, WAFs, EDR) by
+                    targeting the <strong>SaaS layer</strong> — specifically CRM platforms (Salesforce, HubSpot,
+                    ServiceNow) that aggregate the most sensitive customer data with the broadest access surface
+                    (hundreds of agents, contractors, partners). Expect 3-5 major CRM-based breaches in H1 2026.</p>
+            </div>
+
+            <h3>Key Takeaways:</h3>
+            <ol>
+                <li><strong>SaaS ≠ Secure:</strong> Shared responsibility means your Salesforce org is only as secure as
+                    your configuration and your employees' phishing resistance.</li>
+                <li><strong>Data Minimization Saves You:</strong> If Odido's CS agents didn't need access to IBANs and
+                    passport numbers, those fields should have been masked. The data that doesn't exist in the CRM can't
+                    be stolen from it.</li>
+                <li><strong>Weekend Monitoring Gaps Kill:</strong> Invest in 24/7 SOC coverage or automated playbooks
+                    that trigger on bulk export anomalies regardless of time.</li>
+                <li><strong>Identity is the New Perimeter:</strong> With SaaS, the traditional network perimeter is
+                    irrelevant. Phishing-resistant MFA (FIDO2), Conditional Access Policies, and continuous session
+                    validation are the new firewalls.</li>
+            </ol>
+
+            <!-- REFERENCES -->
+            <h2><i class="fas fa-link"></i> 10. References & Further Reading</h2>
+            <ul>
+                <li><a href="https://www.odido.nl/" target="_blank" rel="noopener">Odido Official Statement</a> — Breach
+                    notification page</li>
+                <li><a href="https://therecord.media/" target="_blank" rel="noopener">The Record</a> — Odido breach
+                    coverage</li>
+                <li><a href="https://www.securityweek.com/" target="_blank" rel="noopener">SecurityWeek</a> — Dutch
+                    telecom breach analysis</li>
+                <li><a href="https://www.theregister.com/" target="_blank" rel="noopener">The Register</a> — Odido 6.2M
+                    customer data exposure</li>
+                <li><a href="https://www.salesforceben.com/" target="_blank" rel="noopener">SalesforceBen</a> —
+                    Salesforce security implications</li>
+                <li><a href="https://www.techzine.eu/" target="_blank" rel="noopener">TechZine</a> — Detailed technical
+                    investigation reporting</li>
+                <li><a href="https://thehgtech.com/articles/shinyhunters-vishing-mfa-bypass-2026.html">TheHGTech:
+                        ShinyHunters Vishing & MFA Bypass</a> — Related social engineering attack analysis</li>
+                <li><a href="https://thehgtech.com/guides/incident-response-automation.html">TheHGTech Guide: Incident
+                        Response Automation</a> — Related IR playbook</li>
+            </ul>
+
+        </article>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer desktop-only"
+        style="background: #0a0a0f; border-top: 1px solid var(--border); padding: 2rem; text-align: center; color: var(--text-secondary); font-size: 0.85rem;">
+        <p>&copy; 2026 TheHGTech. All rights reserved. | <a href="/privacy.html"
+                style="color: var(--accent-cyan);">Privacy</a> | <a href="/disclaimer.html"
+                style="color: var(--accent-cyan);">Disclaimer</a></p>
+    </footer>
+
+</body>
+
+</html>
