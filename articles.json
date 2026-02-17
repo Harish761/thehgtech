@@ -1,6 +1,27 @@
 {
   "articles": [
     {
+      "id": "openclaw-ai-log-poisoning-cve-2026",
+      "title": "OpenClaw AI Log Poisoning: How 3 CVEs Turned an AI Coding Assistant into a Remote Access Weapon",
+      "date": "February 17, 2026",
+      "category": "AI Security",
+      "badge": "AI SECURITY",
+      "excerpt": "OpenClaw AI hit by cascade of critical vulnerabilities — log poisoning via indirect prompt injection, CVE-2026-25253 (CVSS 8.8 token exfiltration RCE), CVE-2026-25593 (command injection), and CVE-2026-25157 (SSH injection). The AI agent IS the exploit.",
+      "image": "images/articles/openclaw-ai-log-poisoning-cve-2026.png",
+      "tags": [
+        "AI Security",
+        "OpenClaw",
+        "Log Poisoning",
+        "Prompt Injection",
+        "CVE-2026-25253",
+        "CVE-2026-25593",
+        "RCE",
+        "AI Agent"
+      ],
+      "author": "TheHGTech Security Team",
+      "externalUrl": "articles/openclaw-ai-log-poisoning-cve-2026.html"
+    },
+    {
       "id": "chrome-zero-day-cve-2026-2441",
       "title": "Chrome Zero-Day CVE-2026-2441: CSS Use-After-Free Exploit Weaponized in Drive-By Attacks",
       "date": "February 17, 2026",

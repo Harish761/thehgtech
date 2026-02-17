@@ -83,6 +83,18 @@
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
 
+  <!-- Feb 17, 2026 - OpenClaw AI Log Poisoning -->
+  <url>
+    <loc>https://thehgtech.com/articles/openclaw-ai-log-poisoning-cve-2026.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.99</priority>
+    <lastmod>2026-02-17</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/openclaw-ai-log-poisoning-cve-2026.png</image:loc>
+      <image:title>OpenClaw AI Log Poisoning Vulnerability CVE-2026-25253 Analysis</image:title>
+    </image:image>
+  </url>
+
   <!-- Feb 17, 2026 - Chrome Zero-Day CVE-2026-2441 -->
   <url>
     <loc>https://thehgtech.com/articles/chrome-zero-day-cve-2026-2441.html</loc>
