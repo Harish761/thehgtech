@@ -1,6 +1,30 @@
 {
   "guides": [
     {
+      "id": "passkeys-fido2-passwordless-authentication",
+      "title": "Passkeys & FIDO2: The Enterprise Passwordless Authentication Guide",
+      "category": "Identity & Access Management",
+      "excerpt": "Complete technical guide to FIDO2 passkeys and WebAuthn. Registration/authentication flows, attestation deep dive, synced vs device-bound passkeys, AiTM/push fatigue/SIM swap bypass defense, and enterprise deployment with Entra ID and Okta.",
+      "readTime": "28 min",
+      "level": "Intermediate to Advanced",
+      "date": "Feb 18, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/passkeys-fido2-passwordless-authentication.png"
+    },
+    {
+      "id": "sbom-software-supply-chain-security",
+      "title": "SBOM & Software Supply Chain Security: The Complete Guide",
+      "category": "Application Security",
+      "excerpt": "Deep technical guide to SBOM generation with Syft, Trivy, and cdxgen. CycloneDX vs SPDX comparison, SLSA framework levels, VEX vulnerability triage, CI/CD pipeline integration, and EO 14028/EU CRA compliance.",
+      "readTime": "30 min",
+      "level": "Intermediate to Advanced",
+      "date": "Feb 18, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/sbom-software-supply-chain-security.png"
+    },
+    {
       "id": "soc-analyst-career-roadmap",
       "title": "SOC Analyst Career Roadmap: From Tier 1 to Security Architect (2026)",
       "category": "Career Guides",

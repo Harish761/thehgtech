@@ -766,6 +766,30 @@
   </url>
 
   <!-- ========== SECURITY GUIDES - HIGH VALUE LONG-TAIL KEYWORDS ========== -->
+
+  <!-- Feb 18, 2026 - Passkeys & FIDO2 Passwordless Authentication -->
+  <url>
+    <loc>https://thehgtech.com/guides/passkeys-fido2-passwordless-authentication.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-02-18</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/passkeys-fido2-passwordless-authentication.png</image:loc>
+      <image:title>Passkeys FIDO2 Passwordless Authentication Enterprise Guide 2026</image:title>
+    </image:image>
+  </url>
+
+  <!-- Feb 18, 2026 - SBOM & Software Supply Chain Security -->
+  <url>
+    <loc>https://thehgtech.com/guides/sbom-software-supply-chain-security.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-02-18</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/sbom-software-supply-chain-security.png</image:loc>
+      <image:title>SBOM Software Supply Chain Security Implementation Guide 2026</image:title>
+    </image:image>
+  </url>
   
   <!-- NEW GUIDE - February 11, 2026 (SOC Analyst Career Roadmap) -->
   <url>

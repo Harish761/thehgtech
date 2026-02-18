@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBOM & Software Supply Chain Security: Complete Implementation Guide 2026 | TheHGTech</title>
+    <meta name="description" content="Complete technical guide to Software Bill of Materials (SBOM) and supply chain security. Covers CycloneDX, SPDX, Syft, SLSA framework, VEX documents, CI/CD integration, and regulatory compliance (EO 14028, EU CRA).">
+    <meta name="keywords" content="SBOM guide, software bill of materials, supply chain security, CycloneDX, SPDX, Syft, SLSA framework, VEX, software composition analysis, SCA, dependency scanning, supply chain attacks, Log4j, SolarWinds, XZ Utils">
+    <meta name="author" content="TheHGTech">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/guides/sbom-software-supply-chain-security.html">
+    <meta property="og:title" content="SBOM & Software Supply Chain Security: Implementation Guide 2026">
+    <meta property="og:description" content="Deep technical guide to SBOM generation, CycloneDX/SPDX formats, SLSA framework, CI/CD integration, and supply chain attack defense.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/sbom-software-supply-chain-security.html">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/sbom-software-supply-chain-security.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SBOM & Software Supply Chain Security Guide 2026">
+    <meta name="twitter:description" content="Complete technical guide to SBOM, CycloneDX, SPDX, SLSA, and supply chain defense.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "SBOM & Software Supply Chain Security: Complete Implementation Guide 2026",
+      "description": "Complete technical guide to Software Bill of Materials and supply chain security implementation.",
+      "proficiencyLevel": "Expert",
+      "author": { "@type": "Organization", "name": "TheHGTech" },
+      "publisher": { "@type": "Organization", "name": "TheHGTech", "url": "https://thehgtech.com" },
+      "datePublished": "2026-02-18",
+      "dateModified": "2026-02-18",
+      "mainEntityOfPage": "https://thehgtech.com/guides/sbom-software-supply-chain-security.html",
+      "articleSection": "Application Security",
+      "keywords": ["SBOM", "Supply Chain Security", "CycloneDX", "SPDX", "SLSA", "SCA"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Software Bill of Materials (SBOM)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An SBOM is a machine-readable inventory of all components, libraries, and dependencies in a software application. Think of it as a 'nutrition label' for software — it lists every ingredient (open-source package, version, license, supplier) so that when a vulnerability like Log4Shell is disclosed, you can instantly determine if your software is affected. The two standard SBOM formats are CycloneDX (OWASP) and SPDX (Linux Foundation/ISO)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between CycloneDX and SPDX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CycloneDX is a lightweight, security-focused SBOM format from OWASP optimized for vulnerability tracking and DevSecOps automation. SPDX is a comprehensive format from the Linux Foundation (now ISO/IEC 5962:2021) with deep license compliance capabilities. CycloneDX natively supports VEX (Vulnerability Exploitability eXchange) for vulnerability triage, while SPDX excels at license compliance. Most security teams prefer CycloneDX for vulnerability management, while legal/compliance teams prefer SPDX for license auditing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the SLSA framework?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SLSA (Supply-chain Levels for Software Artifacts, pronounced 'salsa') is a security framework from Google/OpenSSF that defines four levels of increasing supply chain integrity. Level 1 requires build provenance documentation. Level 2 requires a hosted build service with signed provenance. Level 3 requires a hardened CI/CD platform with non-falsifiable provenance. Level 4 requires hermetic reproducible builds with full dependency verification. SLSA answers: 'Can I trust that this binary was built from the source code I audited?'"
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com" },
+        { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/" },
+        { "@type": "ListItem", "position": 3, "name": "SBOM & Supply Chain Security", "item": "https://thehgtech.com/guides/sbom-software-supply-chain-security.html" }
+      ]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #000000; --bg-secondary: #0a0a0a; --bg-card: rgba(255,255,255,0.03);
+            --accent-cyan: #00D9FF; --accent-red: #FF3D3D; --accent-green: #10b981;
+            --accent-orange: #f59e0b; --accent-purple: #8b5cf6; --accent-blue: #3b82f6;
+            --text-primary: #ffffff; --text-secondary: #a0a0a0; --text-muted: #666666;
+            --border: rgba(255,255,255,0.1);
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .guide-header { padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; margin-top: 60px; }
+        .guide-badge { display: inline-block; background: linear-gradient(135deg, #f59e0b, #ef4444); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1rem; }
+        h1 { font-size: 2.5rem; background: linear-gradient(135deg, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; }
+        h2 { color: var(--accent-orange); margin: 2.5rem 0 1rem; font-size: 1.8rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+        h3 { color: var(--text-primary); margin: 1.5rem 0 1rem; font-size: 1.3rem; }
+        h4 { color: var(--accent-orange); margin: 1.25rem 0 0.75rem; font-size: 1.1rem; }
+        p { margin-bottom: 1rem; color: var(--text-secondary); }
+        a { color: var(--accent-cyan); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul, ol { margin-left: 2rem; margin-bottom: 1rem; color: var(--text-secondary); }
+        li { margin-bottom: 0.5rem; }
+        strong { color: var(--text-primary); }
+        .info-box { background: rgba(245,158,11,0.08); border-left: 4px solid var(--accent-orange); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+        .warning-box { background: rgba(255,76,76,0.05); border-left: 4px solid var(--accent-red); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+        .success-box { background: rgba(16,185,129,0.05); border-left: 4px solid var(--accent-green); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+        .technical-box { background: rgba(245,158,11,0.06); border: 1px solid rgba(245,158,11,0.2); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        .technical-box h3 { margin-top: 0; color: var(--accent-orange); }
+        .exploit-box { background: rgba(255,61,61,0.08); border: 1px solid rgba(255,61,61,0.3); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        .exploit-label { display: inline-block; background: var(--accent-red); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .defense-box { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.3); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        .defense-box::before { content: "Defense Strategy"; display: block; color: var(--accent-green); font-weight: 600; margin-bottom: 0.5rem; }
+        code { background: var(--bg-card); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: 'JetBrains Mono', monospace; color: var(--accent-orange); font-size: 0.9rem; }
+        pre { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; overflow-x: auto; margin: 1.5rem 0; }
+        pre code { background: none; padding: 0; color: var(--accent-green); }
+        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-card); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: rgba(245,158,11,0.1); color: var(--accent-orange); font-weight: 600; }
+        td { color: var(--text-secondary); }
+        .toc { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin: 2rem 0; }
+        .toc h3 { margin-top: 0; color: var(--accent-orange); }
+        .toc ul { list-style: none; margin-left: 0; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--text-secondary); text-decoration: none; }
+        .toc a:hover { color: var(--accent-orange); }
+        .architecture-diagram { background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(245,158,11,0.1)); border: 1px solid var(--accent-orange); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; overflow-x: auto; }
+        .attack-scenario { background: rgba(255,61,61,0.08); border: 1px solid rgba(255,61,61,0.3); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+        .attack-scenario::before { content: "Attack Case Study"; display: block; color: var(--accent-red); font-weight: 600; margin-bottom: 0.5rem; }
+        .severity-critical { color: var(--accent-red); font-weight: 700; }
+        .severity-high { color: var(--accent-orange); font-weight: 700; }
+        .back-link { display: inline-block; margin-bottom: 2rem; color: var(--accent-cyan); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (max-width: 768px) { h1 { font-size: 1.6rem; } .container { padding: 1rem; } h2 { font-size: 1.4rem; } }
+    </style>
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <script src="/m-app.js?v=4.3" defer></script>
+</head>
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0;">
+            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-theme-toggle" onclick="mToggleTheme()" aria-label="Toggle Theme"><span class="m-theme-toggle__thumb"></span><span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span class="m-theme-toggle__star"></span></span></button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVE</span></a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
+        <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+        <a href="/guides/" class="m-bottom-nav__item active"><i class="fas fa-book"></i><span>Guides</span></a>
+    </nav>
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo"><a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;"><img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark"><img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a></div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span><div class="nav-dropdown-panel"><a href="/threat-intel.html" class="dropdown-item"><div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div><div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div></div></a><a href="/cve-tracker.html" class="dropdown-item"><div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">CVE Tracker</div><div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div></div></a><a href="/ransomware-tracker.html" class="dropdown-item"><div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Ransomware Tracker</div><div class="dropdown-item-desc">Track active ransomware groups</div></div></a></div></div>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Resources <i class="fas fa-chevron-down dropdown-arrow"></i></span><div class="nav-dropdown-panel"><a href="/guides/" class="dropdown-item" style="background: rgba(0,217,255,0.08);"><div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span class="dropdown-badge popular">40+</span></div><div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div></div></a><a href="/comparisons/" class="dropdown-item"><div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Tool Comparisons</div><div class="dropdown-item-desc">Security tool reviews</div></div></a><div class="dropdown-divider"></div><a href="/articles.html" class="dropdown-item"><div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Articles</div><div class="dropdown-item-desc">Security news and analysis</div></div></a></div></div>
+                <div class="theme-toggle-wrapper"><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><div class="toggle-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div></button></div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/guides/" class="back-link"><i class="fas fa-arrow-left"></i> Back to Guides</a>
+
+        <div class="guide-header">
+            <span class="guide-badge"><i class="fas fa-link"></i> Application Security</span>
+            <h1>SBOM & Software Supply Chain Security: The Complete Guide</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">CycloneDX vs SPDX deep dive, Syft/Trivy SBOM generation, SLSA framework levels, VEX vulnerability triage, CI/CD pipeline integration, and EO 14028/EU CRA compliance</p>
+            <div style="margin-top: 1rem; color: var(--text-muted);">
+                <span><i class="fas fa-book-open"></i> 30 min read</span> <span style="margin: 0 0.5rem;">|</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> <span style="margin: 0 0.5rem;">|</span>
+                <span><i class="far fa-calendar-alt"></i> February 2026</span>
+            </div>
+        </div>
+
+        <img src="/images/guides/sbom-software-supply-chain-security.png" alt="SBOM Software Supply Chain Security Guide" class="featured-image" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(245,158,11,0.2); border: 1px solid var(--border);">
+
+        <div class="warning-box" style="margin-bottom: 2rem;">
+            <strong><i class="fas fa-balance-scale"></i> Research Ethics:</strong>
+            This document is published for defensive security research and educational purposes. Attack case studies are based on publicly disclosed incidents and post-mortems. Exploit code is presented solely for understanding defensive detection capabilities.
+        </div>
+
+        <div class="info-box">
+            <strong><i class="fas fa-file-alt"></i> Abstract:</strong>
+            The software supply chain is the #1 emerging attack surface in 2026. SolarWinds (2020), Log4Shell (2021), the XZ Utils backdoor (2024), and the Polyfill.io compromise (2024) proved that attackers are shifting from targeting applications directly to compromising their dependencies. A Software Bill of Materials (SBOM) is the foundational defense — a machine-readable inventory of every component in your software. This guide covers SBOM generation with Syft, Trivy, and cdxgen; deep comparison of CycloneDX vs SPDX formats; the SLSA framework for build integrity; VEX documents for vulnerability triage; CI/CD pipeline integration patterns; and compliance with US Executive Order 14028 and the EU Cyber Resilience Act.
+        </div>
+
+        <!-- TOC -->
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#threat-landscape">1. Threat Landscape: Supply Chain Attacks in 2026</a></li>
+                <li><a href="#sbom-fundamentals">2. SBOM Fundamentals: What, Why, and How</a></li>
+                <li><a href="#formats">3. CycloneDX vs SPDX: Deep Comparison</a></li>
+                <li><a href="#generation">4. SBOM Generation: Syft, Trivy, cdxgen</a></li>
+                <li><a href="#slsa">5. SLSA Framework: Build Integrity Levels</a></li>
+                <li><a href="#vex">6. VEX: Vulnerability Exploitability Exchange</a></li>
+                <li><a href="#cicd">7. CI/CD Pipeline Integration</a></li>
+                <li><a href="#attack-defense">8. Attack Case Studies & Detection</a></li>
+                <li><a href="#compliance">9. Regulatory Compliance (EO 14028, EU CRA)</a></li>
+                <li><a href="#audit">10. Audit & Continuous Monitoring</a></li>
+                <li><a href="#references">11. References</a></li>
+            </ul>
+        </div>
+
+        <!-- SECTION 1: THREAT LANDSCAPE -->
+        <h2 id="threat-landscape">1. Threat Landscape: Supply Chain Attacks in 2026</h2>
+
+        <p>Software supply chain attacks have increased <strong>742%</strong> since 2019 (Sonatype State of Software Supply Chain 2025). The pattern is clear — attackers are targeting the weakest link:</p>
+
+        <table>
+            <thead><tr><th>Incident</th><th>Year</th><th>Vector</th><th>Impact</th></tr></thead>
+            <tbody>
+                <tr><td><strong>SolarWinds SUNBURST</strong></td><td>2020</td><td>Build system compromise — malicious code injected into Orion updates</td><td class="severity-critical">18,000 orgs, US government agencies</td></tr>
+                <tr><td><strong>Codecov Bash Uploader</strong></td><td>2021</td><td>CI/CD script modified to exfiltrate env vars</td><td class="severity-critical">29,000+ repos, credentials leaked</td></tr>
+                <tr><td><strong>Log4Shell (Log4j)</strong></td><td>2021</td><td>Zero-day in ubiquitous logging library</td><td class="severity-critical">Billions of devices, JNDI RCE</td></tr>
+                <tr><td><strong>ua-parser-js NPM Hijack</strong></td><td>2021</td><td>Maintainer account compromise → cryptominer</td><td class="severity-high">8M weekly downloads compromised</td></tr>
+                <tr><td><strong>PyTorch Torchtriton</strong></td><td>2022</td><td>Dependency confusion — malicious package on PyPI</td><td class="severity-high">Nightly builds compromised</td></tr>
+                <tr><td><strong>3CX Supply Chain</strong></td><td>2023</td><td>Compromised via another supply chain attack (Trading Technologies)</td><td class="severity-critical">600,000 customers, Lazarus Group</td></tr>
+                <tr><td><strong>XZ Utils Backdoor</strong></td><td>2024</td><td>Social engineering of maintainer → SSH backdoor</td><td class="severity-critical">Nearly all Linux distros, nation-state</td></tr>
+                <tr><td><strong>Polyfill.io</strong></td><td>2024</td><td>Domain acquisition → CDN serving malicious JS</td><td class="severity-critical">100,000+ websites, Chinese acquisition</td></tr>
+            </tbody>
+        </table>
+
+        <div class="architecture-diagram">
+            <pre style="color: var(--accent-cyan); margin: 0;">
+        SOFTWARE SUPPLY CHAIN ATTACK SURFACE
+        ════════════════════════════════════
+
+ ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
+ │  SOURCE  │───▶│  BUILD   │───▶│  DEPLOY  │───▶│ RUNTIME  │
+ │  CODE    │    │  SYSTEM  │    │  PACKAGE │    │          │
+ └──────────┘    └──────────┘    └──────────┘    └──────────┘
+      │               │               │               │
+      ▼               ▼               ▼               ▼
+ ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
+ │ATTACKS:  │    │ATTACKS:  │    │ATTACKS:  │    │ATTACKS:  │
+ │• Repo    │    │• CI/CD   │    │• Registry│    │• CDN     │
+ │  hijack  │    │  poison  │    │  typosqat│    │  hijack  │
+ │• Maintner│    │• Build   │    │• Dep     │    │• Dynamic │
+ │  takeover│    │  tamper  │    │  confusn │    │  import  │
+ │• Commit  │    │• Compiler│    │• Package │    │• Runtime │
+ │  signing │    │  exploit │    │  swap    │    │  inject  │
+ └──────────┘    └──────────┘    └──────────┘    └──────────┘
+
+ DEFENSE LAYERS:
+ → SBOM: Know your ingredients at every stage
+ → SLSA: Verify build integrity and provenance
+ → VEX:  Triage vulnerabilities in context
+ → SCA:  Continuous dependency scanning</pre>
+        </div>
+
+        <!-- SECTION 2: SBOM FUNDAMENTALS -->
+        <h2 id="sbom-fundamentals">2. SBOM Fundamentals</h2>
+
+        <h3>2.1 What Goes Into an SBOM</h3>
+        <p>Per NTIA minimum elements (2021), every SBOM must contain:</p>
+        <table>
+            <thead><tr><th>Field</th><th>Description</th><th>Example</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Supplier Name</strong></td><td>Entity that created the component</td><td>Apache Software Foundation</td></tr>
+                <tr><td><strong>Component Name</strong></td><td>Name of the package</td><td>log4j-core</td></tr>
+                <tr><td><strong>Version</strong></td><td>Exact version identifier</td><td>2.17.1</td></tr>
+                <tr><td><strong>Unique Identifier</strong></td><td>CPE, PURL, or SWID tag</td><td>pkg:maven/org.apache/log4j-core@2.17.1</td></tr>
+                <tr><td><strong>Dependency Relationship</strong></td><td>Direct or transitive</td><td>direct dependency of my-app</td></tr>
+                <tr><td><strong>Author</strong></td><td>SBOM creator</td><td>CI pipeline (build #4521)</td></tr>
+                <tr><td><strong>Timestamp</strong></td><td>When SBOM was generated</td><td>2026-02-18T15:30:00Z</td></tr>
+            </tbody>
+        </table>
+
+        <!-- SECTION 3: FORMATS -->
+        <h2 id="formats">3. CycloneDX vs SPDX: Deep Comparison</h2>
+
+        <table>
+            <thead><tr><th>Feature</th><th>CycloneDX</th><th>SPDX</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Maintainer</strong></td><td>OWASP</td><td>Linux Foundation (ISO 5962:2021)</td></tr>
+                <tr><td><strong>Primary Focus</strong></td><td>Security & vulnerability tracking</td><td>License compliance & IP</td></tr>
+                <tr><td><strong>Formats</strong></td><td>JSON, XML, Protobuf</td><td>JSON, YAML, XML, Tag-Value, RDF</td></tr>
+                <tr><td><strong>VEX Support</strong></td><td>✅ Native (embedded)</td><td>⚠️ Via external SPDX-Security</td></tr>
+                <tr><td><strong>BOM Types</strong></td><td>SBOM, SaaSBOM, HBOM, MBOM, OBOM</td><td>SBOM primarily</td></tr>
+                <tr><td><strong>License Detail</strong></td><td>Basic (SPDX expression)</td><td>✅ Deep (concluded, declared, comments)</td></tr>
+                <tr><td><strong>Ecosystem</strong></td><td>Dependency-Track, Grype, OWASP tools</td><td>FOSSology, Augur, compliance tools</td></tr>
+                <tr><td><strong>Best For</strong></td><td>DevSecOps, vulnerability management</td><td>Legal compliance, license auditing</td></tr>
+            </tbody>
+        </table>
+
+        <div class="technical-box">
+            <h3><i class="fas fa-terminal"></i> CycloneDX SBOM Example (JSON)</h3>
+            <pre><code class="language-json">{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:3e671687-395b-41f5-a30f-a58921a69b79",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-02-18T15:30:00Z",
+    "tools": [{ "vendor": "anchore", "name": "syft", "version": "1.18.0" }],
+    "component": {
+      "type": "application",
+      "name": "my-api-service",
+      "version": "3.2.1"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "express",
+      "version": "4.21.0",
+      "purl": "pkg:npm/express@4.21.0",
+      "licenses": [{ "license": { "id": "MIT" } }],
+      "hashes": [{
+        "alg": "SHA-256",
+        "content": "a1b2c3d4e5f6..."
+      }],
+      "externalReferences": [{
+        "type": "vcs",
+        "url": "https://github.com/expressjs/express"
+      }]
+    },
+    {
+      "type": "library",
+      "name": "lodash",
+      "version": "4.17.21",
+      "purl": "pkg:npm/lodash@4.17.21",
+      "licenses": [{ "license": { "id": "MIT" } }]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "my-api-service",
+      "dependsOn": ["express", "lodash"]
+    }
+  ]
+}</code></pre>
+        </div>
+
+        <!-- SECTION 4: GENERATION -->
+        <h2 id="generation">4. SBOM Generation: Syft, Trivy, cdxgen</h2>
+
+        <div class="technical-box">
+            <h3><i class="fas fa-terminal"></i> Syft — Generate SBOM from Source/Image</h3>
+            <pre><code class="language-bash"># Install Syft
+curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
+
+# Generate CycloneDX SBOM from project directory
+syft dir:./my-app -o cyclonedx-json > sbom.cdx.json
+
+# Generate SPDX SBOM from container image
+syft registry:myorg/api:v3.2.1 -o spdx-json > sbom.spdx.json
+
+# Generate from Dockerfile (build-time analysis)
+syft docker:myorg/api:latest -o cyclonedx-json > sbom.cdx.json
+
+# Include file metadata and secrets detection
+syft dir:./my-app -o cyclonedx-json \
+  --catalogers all \
+  --source-name "my-api-service" \
+  --source-version "3.2.1" > sbom.cdx.json</code></pre>
+        </div>
+
+        <div class="technical-box">
+            <h3><i class="fas fa-terminal"></i> Trivy — SBOM + Vulnerability Scan in One</h3>
+            <pre><code class="language-bash"># Install Trivy
+curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+
+# Generate SBOM and scan for vulnerabilities simultaneously
+trivy image --format cyclonedx --output sbom.cdx.json myorg/api:v3.2.1
+
+# Scan an existing SBOM for vulnerabilities
+trivy sbom sbom.cdx.json
+
+# Generate SBOM from filesystem with license detection
+trivy fs --format spdx-json --output sbom.spdx.json \
+  --scanners vuln,license ./my-app
+
+# Scan and FAIL if critical vulns found (CI/CD gate)
+trivy sbom sbom.cdx.json --exit-code 1 --severity CRITICAL,HIGH</code></pre>
+        </div>
+
+        <div class="technical-box">
+            <h3><i class="fas fa-terminal"></i> cdxgen — Language-Aware CycloneDX Generator</h3>
+            <pre><code class="language-bash"># Install cdxgen (supports 40+ languages)
+npm install -g @cyclonedx/cdxgen
+
+# Generate SBOM (auto-detects language/framework)
+cdxgen -o sbom.cdx.json ./my-app
+
+# Generate with vulnerability data embedded
+cdxgen -o sbom.cdx.json --deep ./my-app
+
+# Generate for specific project type
+cdxgen -t python -o sbom.cdx.json ./my-python-app
+cdxgen -t java -o sbom.cdx.json ./my-java-app</code></pre>
+        </div>
+
+        <!-- SECTION 5: SLSA -->
+        <h2 id="slsa">5. SLSA Framework: Build Integrity Levels</h2>
+
+        <p>SLSA (Supply-chain Levels for Software Artifacts) answers the critical question: <strong>"Was this binary actually built from the source code I audited, by the build system I trust?"</strong></p>
+
+        <table>
+            <thead><tr><th>Level</th><th>Requirements</th><th>Protects Against</th></tr></thead>
+            <tbody>
+                <tr><td><strong>SLSA 1</strong></td><td>Build provenance exists (automated build, provenance document)</td><td>Accidental errors, basic tampering awareness</td></tr>
+                <tr><td><strong>SLSA 2</strong></td><td>Signed provenance from a hosted build service (GitHub Actions, Cloud Build)</td><td>Tampering after build, unsigned artifacts</td></tr>
+                <tr><td><strong>SLSA 3</strong></td><td>Hardened CI, non-falsifiable provenance, source-defined build</td><td>Compromised CI config, insider threats in pipeline</td></tr>
+                <tr><td><strong>SLSA 4</strong></td><td>Hermetic/reproducible builds, full dependency provenance</td><td>Nation-state supply chain attacks (SolarWinds-class)</td></tr>
+            </tbody>
+        </table>
+
+        <div class="technical-box">
+            <h3><i class="fas fa-terminal"></i> GitHub Actions — SLSA Level 3 Provenance</h3>
+            <pre><code class="language-yaml"># .github/workflows/slsa-build.yml
+name: SLSA Build with Provenance
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  id-token: write    # For signing provenance
+  contents: read
+  attestations: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      digest: ${{ steps.build.outputs.digest }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build artifact
+        id: build
+        run: |
+          npm ci --ignore-scripts  # Deterministic install
+          npm run build
+          DIGEST=$(sha256sum dist/app.tar.gz | cut -d' ' -f1)
+          echo "digest=sha256:${DIGEST}" >> "$GITHUB_OUTPUT"
+
+      - name: Generate SBOM
+        run: |
+          syft dir:. -o cyclonedx-json > sbom.cdx.json
+
+      # SLSA Provenance — creates signed, non-falsifiable build attestation
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-name: 'myorg/api'
+          subject-digest: ${{ steps.build.outputs.digest }}
+          push-to-registry: true
+
+      # SBOM Attestation — links SBOM to the artifact
+      - name: Attest SBOM
+        uses: actions/attest-sbom@v1
+        with:
+          subject-name: 'myorg/api'
+          subject-digest: ${{ steps.build.outputs.digest }}
+          sbom-path: 'sbom.cdx.json'</code></pre>
+        </div>
+
+        <!-- SECTION 6: VEX -->
+        <h2 id="vex">6. VEX: Vulnerability Exploitability Exchange</h2>
+
+        <p>An SBOM tells you <em>what</em> components you have. A VEX document tells you <em>whether the vulnerability in that component actually affects your product</em>. This solves the "alert fatigue" problem — not every CVE in a dependency is exploitable in your context.</p>
+
+        <table>
+            <thead><tr><th>VEX Status</th><th>Meaning</th><th>Example</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Not Affected</strong></td><td>Vulnerability exists in component but is not exploitable in this product</td><td>Log4Shell in log4j used only for compile-time annotation processing</td></tr>
+                <tr><td><strong>Affected</strong></td><td>Vulnerability is exploitable — action required</td><td>Spring4Shell in a web app with ClassPathBeanDefinitionScanner exposed</td></tr>
+                <tr><td><strong>Fixed</strong></td><td>Was affected, now patched</td><td>Updated lodash from 4.17.20 to 4.17.21</td></tr>
+                <tr><td><strong>Under Investigation</strong></td><td>Still determining exploitability</td><td>New CVE disclosed, analysis in progress</td></tr>
+            </tbody>
+        </table>
+
+        <div class="technical-box">
+            <h3><i class="fas fa-terminal"></i> CycloneDX VEX Document</h3>
+            <pre><code class="language-json">{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "vulnerabilities": [
+    {
+      "id": "CVE-2024-50623",
+      "source": { "name": "NVD" },
+      "ratings": [
+        { "severity": "critical", "score": 9.8, "method": "CVSSv31" }
+      ],
+      "analysis": {
+        "state": "not_affected",
+        "justification": "code_not_reachable",
+        "detail": "The vulnerable file upload endpoint (CleoConnectClient) is not exposed in our deployment — we use only the SFTP module which does not process the affected parameter.",
+        "response": ["workaround_available"]
+      },
+      "affects": [{
+        "ref": "pkg:maven/com.cleo/vlnavigator@5.7.0.0"
+      }]
+    }
+  ]
+}</code></pre>
+        </div>
+
+        <!-- SECTION 7: CICD -->
+        <h2 id="cicd">7. CI/CD Pipeline Integration</h2>
+
+        <div class="architecture-diagram">
+            <pre style="color: var(--accent-cyan); margin: 0;">
+                SBOM-INTEGRATED CI/CD PIPELINE
+                ═════════════════════════════
+
+  ┌──────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
+  │ CODE │───▶│  BUILD   │───▶│  SCAN    │───▶│  DEPLOY  │
+  │ PUSH │    │          │    │          │    │          │
+  └──────┘    └──────────┘    └──────────┘    └──────────┘
+                  │               │               │
+              ┌───▼────┐     ┌───▼────┐      ┌───▼────┐
+              │Generate│     │ Trivy  │      │ Attest │
+              │ SBOM   │     │ Scan   │      │ SLSA   │
+              │(Syft)  │     │ SBOM   │      │Provnce │
+              └───┬────┘     └───┬────┘      └───┬────┘
+                  │              │                │
+              ┌───▼────┐     ┌───▼────┐      ┌───▼────┐
+              │ Upload │     │ GATE:  │      │ Store  │
+              │ to Dep │     │ Block  │      │ in OCI │
+              │ Track  │     │ if P0  │      │Registry│
+              └────────┘     └────────┘      └────────┘</pre>
+        </div>
+
+        <div class="technical-box">
+            <h3><i class="fas fa-terminal"></i> Complete CI Pipeline with SBOM Gate</h3>
+            <pre><code class="language-yaml"># .github/workflows/sbom-pipeline.yml
+name: SBOM Security Pipeline
+on: [push, pull_request]
+
+jobs:
+  sbom-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Application
+        run: npm ci && npm run build
+
+      # Step 1: Generate SBOM
+      - name: Generate SBOM (CycloneDX)
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s
+          syft dir:. -o cyclonedx-json > sbom.cdx.json
+          echo "Components found: $(jq '.components | length' sbom.cdx.json)"
+
+      # Step 2: Vulnerability scan with gate
+      - name: Scan SBOM for Vulnerabilities
+        run: |
+          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s
+          trivy sbom sbom.cdx.json \
+            --exit-code 1 \
+            --severity CRITICAL \
+            --format json \
+            --output vuln-report.json
+        continue-on-error: false  # FAIL the build on CRITICAL
+
+      # Step 3: License compliance check
+      - name: Check Licenses
+        run: |
+          # Extract all licenses from SBOM
+          jq -r '.components[].licenses[]?.license.id // "UNKNOWN"' \
+            sbom.cdx.json | sort | uniq -c | sort -rn
+          
+          # Fail on copyleft licenses in proprietary project
+          BANNED=$(jq -r '.components[] | select(.licenses[]?.license.id == "GPL-3.0-only") | .name' sbom.cdx.json)
+          if [ -n "$BANNED" ]; then
+            echo "❌ GPL-3.0 components found: $BANNED"
+            exit 1
+          fi
+
+      # Step 4: Upload to Dependency-Track
+      - name: Upload SBOM to Dependency-Track
+        run: |
+          curl -X POST "https://dtrack.internal.company.com/api/v1/bom" \
+            -H "X-Api-Key: ${{ secrets.DTRACK_API_KEY }}" \
+            -H "Content-Type: multipart/form-data" \
+            -F "autoCreate=true" \
+            -F "projectName=my-api-service" \
+            -F "projectVersion=${{ github.sha }}" \
+            -F "bom=@sbom.cdx.json"
+
+      # Step 5: Store SBOM as build artifact
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: sbom.cdx.json</code></pre>
+        </div>
+
+        <!-- SECTION 8: ATTACK CASE STUDIES -->
+        <h2 id="attack-defense">8. Attack Case Studies & Detection</h2>
+
+        <h3>8.1 XZ Utils Backdoor (CVE-2024-3094) — The Social Engineering Supply Chain Attack</h3>
+        <div class="attack-scenario">
+            <p><strong>The Attack:</strong> Over 2+ years, a pseudonymous contributor ("Jia Tan") systematically gained trust of the sole XZ Utils maintainer through helpful contributions. After becoming a co-maintainer, they injected an obfuscated backdoor into the build system (not the source code) that would execute during compilation on Debian/RPM-based systems. The backdoor hijacked the SSH authentication flow via systemd's dependency on liblzma, allowing the attacker to execute arbitrary commands before authentication.</p>
+            <p><strong>Why SBOMs Help:</strong> An SBOM tracking build-time dependencies and provenance would have flagged that the liblzma binary did not match a clean build from the audited source code — a SLSA Level 3 violation.</p>
+            <p><strong>Detection:</strong> Compare binary hash in SBOM against reproducible build output. Mismatch = compromised build pipeline.</p>
+        </div>
+
+        <h3>8.2 Detection: YARA Rule for Malicious NPM Packages</h3>
+        <div class="technical-box">
+            <h3><i class="fas fa-terminal"></i> YARA Rule: Suspicious NPM Install Scripts</h3>
+            <pre><code class="language-yaml">rule npm_supply_chain_indicators {
+    meta:
+        description = "Detects suspicious patterns in NPM packages"
+        author = "TheHGTech"
+        date = "2026-02-18"
+        severity = "high"
+    
+    strings:
+        // Obfuscated eval patterns
+        $eval1 = /eval\s*\(\s*Buffer\.from\s*\(/ nocase
+        $eval2 = /eval\s*\(\s*atob\s*\(/ nocase
+        
+        // DNS/HTTP exfiltration in install scripts
+        $exfil1 = /https?:\/\/[a-z0-9]{8,}\./ nocase
+        $exfil2 = /child_process.*exec.*curl/ nocase
+        $exfil3 = /child_process.*exec.*wget/ nocase
+        
+        // Environment variable harvesting
+        $env1 = /process\.env\.(AWS_|GITHUB_TOKEN|NPM_TOKEN)/ nocase
+        $env2 = /os\.environ\[.(AWS_|GITHUB|CI_)/ nocase
+        
+        // Suspicious install script targets
+        $install1 = "preinstall" 
+        $install2 = "postinstall"
+    
+    condition:
+        any of ($eval*) or
+        (any of ($exfil*) and any of ($install*)) or
+        (any of ($env*) and any of ($exfil*))
+}</code></pre>
+        </div>
+
+        <!-- SECTION 9: COMPLIANCE -->
+        <h2 id="compliance">9. Regulatory Compliance</h2>
+
+        <table>
+            <thead><tr><th>Regulation</th><th>SBOM Requirement</th><th>Deadline</th></tr></thead>
+            <tbody>
+                <tr><td><strong>US EO 14028</strong></td><td>SBOM required for all software sold to federal government</td><td>In effect (2021)</td></tr>
+                <tr><td><strong>EU Cyber Resilience Act</strong></td><td>Machine-readable SBOM mandatory for all products with digital elements sold in EU</td><td>2027 (enforcement)</td></tr>
+                <tr><td><strong>FDA Premarket Guidance</strong></td><td>SBOM required for all medical device submissions</td><td>In effect (2023)</td></tr>
+                <tr><td><strong>NIST SSDF (SP 800-218)</strong></td><td>SBOM as part of secure software development framework</td><td>In effect</td></tr>
+                <tr><td><strong>PCI DSS v4.0</strong></td><td>Software inventory and dependency management required</td><td>In effect (March 2025)</td></tr>
+            </tbody>
+        </table>
+
+        <!-- SECTION 10: AUDIT -->
+        <h2 id="audit">10. Audit & Continuous Monitoring</h2>
+
+        <div class="success-box">
+            <strong><i class="fas fa-clipboard-check"></i> SBOM Maturity Audit Checklist:</strong>
+            <pre><code class="language-bash">#!/bin/bash
+# sbom-maturity-audit.sh — Assess your SBOM program maturity
+
+echo "=== SBOM Maturity Assessment ==="
+
+# Level 1: Basic
+echo "[L1] SBOM Exists?"
+if [ -f "sbom.cdx.json" ] || [ -f "sbom.spdx.json" ]; then
+    echo "  ✅ SBOM file found"
+    COMPONENTS=$(jq '.components | length' sbom.cdx.json 2>/dev/null || echo "0")
+    echo "  📦 Components inventoried: $COMPONENTS"
+else
+    echo "  ❌ No SBOM found — Level 0"
+    exit 1
+fi
+
+# Level 2: Format Compliance
+echo "[L2] Format Compliance?"
+FORMAT=$(jq -r '.bomFormat // "unknown"' sbom.cdx.json 2>/dev/null)
+VERSION=$(jq -r '.specVersion // "unknown"' sbom.cdx.json 2>/dev/null)
+echo "  Format: $FORMAT $VERSION"
+
+# Level 3: Vulnerability Scanning
+echo "[L3] Vulnerability Integration?"
+if command -v trivy &> /dev/null; then
+    VULNS=$(trivy sbom sbom.cdx.json --format json 2>/dev/null | jq '.Results[]?.Vulnerabilities | length' | paste -sd+ | bc)
+    echo "  🔍 Known vulnerabilities: ${VULNS:-0}"
+else
+    echo "  ⚠️ No vulnerability scanner configured"
+fi
+
+# Level 4: SLSA Provenance
+echo "[L4] Build Provenance?"
+if [ -f "provenance.intoto.jsonl" ]; then
+    echo "  ✅ SLSA provenance attestation found"
+else
+    echo "  ⚠️ No SLSA provenance — build integrity unverified"
+fi
+
+# Level 5: Continuous Monitoring
+echo "[L5] Dependency-Track Integration?"
+DTRACK_URL="${DTRACK_URL:-https://dtrack.internal.company.com}"
+STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$DTRACK_URL/api/version" 2>/dev/null)
+if [ "$STATUS" = "200" ]; then
+    echo "  ✅ Dependency-Track reachable"
+else
+    echo "  ⚠️ Dependency-Track not configured"
+fi
+
+echo ""
+echo "=== Assessment Complete ==="</code></pre>
+        </div>
+
+        <!-- SECTION 11: REFERENCES -->
+        <h2 id="references">11. References & Further Reading</h2>
+        <ul>
+            <li><a href="https://cyclonedx.org/specification/overview/" target="_blank" rel="noopener">CycloneDX Specification (OWASP)</a></li>
+            <li><a href="https://spdx.dev/specifications/" target="_blank" rel="noopener">SPDX Specification (Linux Foundation)</a></li>
+            <li><a href="https://slsa.dev/" target="_blank" rel="noopener">SLSA Framework (Google/OpenSSF)</a></li>
+            <li><a href="https://github.com/anchore/syft" target="_blank" rel="noopener">Syft — SBOM Generation Tool (Anchore)</a></li>
+            <li><a href="https://aquasecurity.github.io/trivy/" target="_blank" rel="noopener">Trivy — Comprehensive Security Scanner</a></li>
+            <li><a href="https://dependencytrack.org/" target="_blank" rel="noopener">OWASP Dependency-Track — SBOM Management Platform</a></li>
+            <li><a href="https://www.cisa.gov/sbom" target="_blank" rel="noopener">CISA — Software Bill of Materials Resources</a></li>
+            <li><a href="https://www.ntia.gov/page/software-bill-materials" target="_blank" rel="noopener">NTIA — SBOM Minimum Elements</a></li>
+            <li><a href="/guides/vscode-supply-chain-hardening-2026.html">TheHGTech — VS Code Supply Chain Hardening Guide</a></li>
+            <li><a href="/guides/devsecops-pipeline-security.html">TheHGTech — DevSecOps Pipeline Security Guide</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Interaction Bar -->
+    <div class="interaction-bar" style="max-width: 900px; margin: 0 auto 2rem; padding: 0 2rem;">
+        <div class="interaction-buttons">
+            <div class="share-group">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i class="fas fa-link"></i></button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print"><i class="fas fa-print"></i></button>
+        </div>
+    </div>
+
+    <script src="/interaction-bar.js?v=20251217"></script>
+</body>
+</html>
