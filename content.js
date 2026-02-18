@@ -4,139 +4,105 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 17 2026",
-            "headline": "Polish Police Nab Phobos Ransomware Suspect",
-            "title": "Polish Authorities Arrest Suspect Linked to Phobos Ransomware Group",
-            "content": "Polish law enforcement has apprehended a 47-year-old man suspected of being involved with the notorious Phobos ransomware group. Authorities discovered evidence of cybercriminal activity on his devices, including stolen credentials and server access data. Phobos is known for targeting small to medium-sized enterprises with encryption-based extortion tactics. This arrest marks a significant step in dismantling the group&#x27;s operations, which have caused substantial financial damage globally. Security professionals should remain vigilant and ensure robust backup and recovery plans are in place to mitigate ransomware risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/man-linked-to-phobos-ransomware-arrested-in-poland/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Trojanized Oura MCP Server Spreads StealC Infostealer",
-            "title": "SmartLoader Campaign Deploys StealC Infostealer via Trojanized Oura MCP Server",
-            "content": "Cybersecurity researchers have uncovered a new campaign leveraging a trojanized Model Context Protocol (MCP) server associated with Oura Health to distribute the StealC information stealer. The attackers cloned a legitimate Oura MCP server to facilitate the distribution of malicious payloads. This campaign highlights the increasing sophistication of threat actors in exploiting trusted platforms to deploy malware. Organizations using Oura Health services should review their security configurations and monitor for any unusual activity. Ensuring up-to-date endpoint protection can help mitigate the risk of infostealer infections.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/smartloader-attack-uses-trojanized-oura.html",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Chrome Zero-Day Exploit—Patch Released Urgently",
-            "title": "Google Patches Actively Exploited Chrome Zero-Day Vulnerability",
-            "content": "Google has issued an emergency update to address a zero-day vulnerability in Chrome, marking the first such exploit of the year. The flaw allows remote code execution through malicious web pages, posing a significant threat to users worldwide. Security experts recommend updating Chrome immediately to prevent potential exploitation. This incident underscores the importance of prompt software updates, as browsers remain a prime target for cybercriminals. Users can update via Chrome&#x27;s built-in updater to secure their systems against this active threat.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/update-chrome-now-zero-day-bug-allows-code-execution-via-malicious-webpages",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "ZeroDayRAT Spyware Hits Android, iOS via Telegram Toolkit",
-            "title": "ZeroDayRAT Spyware Targets Mobile Devices Through Commercial Toolkit",
-            "content": "A new spyware called ZeroDayRAT is targeting Android and iOS devices, distributed via a commercial toolkit openly sold on Telegram. The toolkit offers a ready-to-deploy remote access solution, lowering the entry barrier for cybercriminals. iVerify researchers have traced its distribution to various Telegram channels, indicating a growing trend in the commoditization of spyware tools. Mobile users should exercise caution and avoid downloading applications from untrusted sources. Regular security updates and mobile security solutions can help protect against such threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4133122/zerodayrat-spyware-targets-android-and-ios-devices-via-commercial-toolkit.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "SOC Teams Harness AI for Faster Cloud Breach Response",
-            "title": "Webinar Explores AI and Context in Accelerating Cloud Breach Investigations",
-            "content": "A recent webinar highlighted how modern Security Operations Center (SOC) teams leverage artificial intelligence (AI) and contextual information to expedite cloud breach investigations. Unlike traditional data centers, cloud environments require rapid response due to their ephemeral nature, with compromised instances disappearing quickly. The session emphasized the importance of AI in processing large volumes of data and identifying threats in real-time. Security professionals should consider integrating AI-driven solutions to enhance their incident response capabilities in cloud infrastructures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/cloud-forensics-webinar-learn-how-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Phobos Ransomware Suspect Arrested in Poland",
-            "title": "Polish Police Detain Suspect with Links to Phobos Ransomware Operations",
-            "content": "Polish authorities have detained a man suspected of involvement with the Phobos ransomware group, seizing computers and mobile devices containing sensitive data. This arrest follows an investigation into the group&#x27;s activities, which have targeted numerous organizations with ransomware attacks. The confiscated devices held stolen credentials, credit card numbers, and server access information, underscoring the severity of the group&#x27;s operations. Businesses are advised to strengthen their cybersecurity measures and conduct regular security audits to prevent ransomware incidents.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/poland-arrests-suspect-linked-to-phobos-ransomware-operation/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Exploring NDR Systems: A Day in Network Security",
-            "title": "Hands-On Experience with Network Detection and Response (NDR) Systems",
-            "content": "An exploration into Network Detection and Response (NDR) systems reveals their crucial role in modern Security Operations Center (SOC) workflows. The firsthand account details the integration of NDR with AI to complement human responses, offering insights into network threats that might otherwise go unnoticed. NDR systems provide enhanced visibility into network traffic, aiding analysts in identifying and mitigating threats efficiently. As cyber threats evolve, professionals should consider adopting NDR solutions to bolster their network security posture.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/my-day-getting-my-hands-dirty-with-ndr.html",
-            "relatedResources": [
-                {
-                    "label": "SOC Analyst Fundamentals",
-                    "url": "/guides/soc-analyst-fundamentals.html",
-                    "icon": "fa-shield-alt"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "ISC Stormcast Highlights Cyber Threat Trends for February",
-            "title": "SANS Internet Storm Center Discusses Current Cybersecurity Landscape",
-            "content": "The SANS Internet Storm Center released its latest Stormcast, highlighting current cybersecurity threats and trends as of February 17, 2026. The InfoCON remains at green, indicating a stable threat environment. The podcast covers recent developments in malware activity, vulnerabilities, and threat actor tactics. Security professionals are advised to stay informed about these evolving threats and ensure their systems are updated with the latest security patches. This ongoing analysis is crucial for maintaining robust cybersecurity defenses.",
+            "date": "Feb 18 2026",
+            "headline": "ISC Stormcast: Security Insights for February 18, 2026",
+            "title": "SANS ISC Stormcast Highlights Cybersecurity Developments on February 18, 2026",
+            "content": "The SANS Internet Storm Center has released its Stormcast for February 18, 2026, providing valuable insights into current cybersecurity threats and trends. The InfoCON status remains at green, indicating no immediate widespread threats. The podcast covers recent vulnerabilities, threat actor activities, and defensive strategies, offering actionable intelligence for security professionals. This resource is crucial for staying informed about evolving cyber risks and effective mitigation techniques. Listeners are encouraged to integrate these insights into their security operations to enhance their defensive posture.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32720",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32724",
             "relatedResources": []
         },
         {
-            "date": "Feb 17 2026",
-            "headline": "Chrome Zero-Day CVE-2026-2441—Exploit Available, Patch Now",
-            "title": "Google Warns of Exploitable Chrome Zero-Day Vulnerability CVE-2026-2441",
-            "content": "Google has alerted IT administrators about an exploitable zero-day vulnerability in the Chrome browser identified as CVE-2026-2441. This vulnerability, a use-after-free memory flaw in the cascading style sheets (CSS), has been actively targeted by threat actors. Google has released a patch to address this issue, and all users are strongly urged to update their browsers immediately to prevent potential exploits. The vulnerability underscores the need for timely updates to protect against emerging threats. This incident highlights the ongoing risks browsers face from sophisticated cyber adversaries.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4132879/exploit-available-for-new-chrome-zero-day-vulnerability-says-google.html",
+            "date": "Feb 18 2026",
+            "headline": "Singapore Thwarts Chinese Hackers—Telcos Play Key Role",
+            "title": "Singapore and Its Major Telcos Successfully Counter Chinese Cyber Attacks",
+            "content": "Singapore has successfully defended against a zero-day cyber attack attributed to Chinese hackers, thanks to the strong collaboration between the government and its four major telecommunications companies. This coordinated response highlights the importance of public-private partnerships in national cybersecurity strategies. The attack aimed at exploiting vulnerabilities within critical infrastructure, but swift detection and mitigation efforts minimized potential damage. Singapore&#x27;s proactive approach serves as a model for other nations facing similar cyber threats. Organizations are advised to strengthen partnerships and improve threat detection capabilities to enhance their cyber resilience.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/singapore-major-telcos-fend-chinese-hackers",
             "relatedResources": [
                 {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Dell Zero-Day Exploited by Chinese Hackers for 18 Months",
+            "title": "Chinese Hackers Exploited Dell Zero-Day Vulnerability for Extended Period",
+            "content": "Google researchers have uncovered that Chinese hackers exploited a zero-day vulnerability in Dell systems for 18 months, starting in mid-2024. The attackers used an evolved version of the Brickstorm malware, now called Grimbolt, to conduct their operations. This prolonged exploitation underscores the challenges in detecting sophisticated threats and the importance of timely vulnerability management. Organizations using Dell products should urgently review their security measures and apply necessary patches. This case exemplifies the persistent threat posed by advanced persistent threat (APT) groups and the need for continuous monitoring.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/china-brickstorm-grimbolt-dell-zero-day/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 },
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
                     "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Spain Orders VPNs to Block LaLiga Piracy Sites",
+            "title": "Spanish Court Mandates NordVPN, ProtonVPN to Block Football Piracy Websites",
+            "content": "A Spanish court has issued precautionary measures compelling NordVPN and ProtonVPN to block access to 16 websites that facilitate the piracy of LaLiga football matches. This legal action reflects ongoing efforts to combat digital piracy and protect intellectual property rights in the sports industry. The ruling emphasizes the responsibility of VPN providers to comply with local laws and support anti-piracy initiatives. Users of these VPN services in Spain may experience restricted access to certain content as a result. Organizations should ensure compliance with regional regulations to avoid legal complications.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/legal/spain-orders-nordvpn-protonvpn-to-block-laliga-piracy-sites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Malware Embedded in Android Devices via Supply Chain Attack",
+            "title": "Keenadu Malware Hijacks Android Devices in Supply Chain Attack",
+            "content": "A sophisticated supply chain attack has embedded the Keenadu malware into Android devices, enabling it to hijack browser searches, commit ad fraud, and execute unauthorized actions without user consent. This attack highlights the vulnerabilities present in supply chains and the potential for widespread impact on end users. The malware&#x27;s ability to operate covertly poses significant risks to user privacy and device security. Affected users should monitor their devices for unusual activity and consider factory resets or security software to mitigate potential threats. Supply chain security remains a critical focus for manufacturers and developers.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/mobile-security/supply-chain-attack-embeds-malware-android-devices",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Poland Energy Infrastructure Withstands Cyber Attack",
+            "title": "Poland&#x27;s Renewable Energy Sector Survives Cyber Assault by Russia-Aligned Groups",
+            "content": "Poland&#x27;s renewable energy infrastructure, including wind and solar farms, successfully withstood a cyber attack attributed to Russia-aligned groups. The attack involved wiper malware targeting energy farms, a manufacturer, and a heating and power plant. Despite the attack&#x27;s sophistication, effective defensive measures limited the damage and ensured continued operation. This incident underscores the growing threat to critical infrastructure from geopolitically motivated cyber actors. Energy providers are urged to enhance their cybersecurity frameworks to protect against similar attacks in the future.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/poland-energy-attack-wind-solar-infrastructure",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "NIST CSF 2.0 Implementation",
+                    "url": "/guides/nist-csf-2-implementation.html",
+                    "icon": "fa-check-double"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "VSCode Extensions&#x27; Flaws Expose Developers to Severe Risks",
+            "title": "Critical Vulnerabilities in VSCode Extensions Threaten Developer Security",
+            "content": "High to critical severity vulnerabilities have been discovered in popular Visual Studio Code (VSCode) extensions, collectively downloaded over 128 million times. These flaws could allow attackers to steal local files and execute remote code, posing significant risks to developers worldwide. The vulnerabilities highlight the need for rigorous security reviews of third-party extensions and prompt updates to mitigate potential exploitation. Developers using these extensions should verify their security posture and apply updates as they become available. This incident emphasizes the importance of securing development environments against emerging threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/flaws-in-popular-vscode-extensions-expose-developers-to-attacks/",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
                 }
             ]
         },
@@ -167,12 +133,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 17 2026",
-            "headline": "Alibaba&#x27;s Qwen 3.5 Rivals US AI Models—On Commodity Hardware",
-            "title": "Alibaba&#x27;s Qwen 3.5 Challenges US AI Dominance with Open Source Model",
-            "content": "Alibaba has released its Qwen 3.5 series, an open-source AI model that matches the performance of leading proprietary models on standard hardware. Historically, US-based labs have dominated AI performance metrics, but Qwen 3.5 narrows this gap significantly. The model&#x27;s ability to deliver high performance without specialized hardware could democratize AI access, impacting sectors reliant on costly AI infrastructure. This development underscores a growing trend towards open-source AI solutions, challenging the economic dynamics of proprietary AI models. Professionals should evaluate the potential cost savings and strategic advantages of integrating open-source models like Qwen 3.5 into their AI ecosystems.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/alibaba-qwen-challenging-proprietary-ai-model-economics/",
+            "date": "Feb 18 2026",
+            "headline": "Meta Acquires Millions of Nvidia AI Chips—Grace-Only Deployment",
+            "title": "Meta Expands Data Centers with Nvidia Grace and Blackwell Chips",
+            "content": "Meta has entered into a multiyear agreement to procure millions of Nvidia&#x27;s Grace and Vera CPUs, along with Blackwell and Rubin GPUs, to enhance its data centers. This marks the first large-scale deployment of Nvidia&#x27;s Grace-only architecture, underscoring Meta&#x27;s commitment to advancing its AI capabilities. The collaboration is expected to significantly boost Meta&#x27;s infrastructure, enabling more efficient processing of AI workloads. This move aligns with the growing trend of tech giants investing heavily in AI hardware to support expansive AI model training and deployment. The deal may set a precedent for other companies considering similar upgrades to their data processing capabilities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/880513/nvidia-meta-ai-grace-vera-chips",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -183,56 +149,12 @@ const websiteContent = {
         },
         {
             "date": "Feb 17 2026",
-            "headline": "Adani Commits $100B for AI Data Centers—India&#x27;s AI Ambitions Soar",
-            "title": "Adani&#x27;s $100B Investment Aims to Position India as AI Powerhouse",
-            "content": "Adani Group has announced a $100 billion investment to build AI data centers with a target capacity of up to 5 gigawatts. This ambitious plan includes strategic partnerships with tech giants Google, Microsoft, and Flipkart, signaling India&#x27;s intent to become a major player in the global AI landscape. The investment will enhance India&#x27;s infrastructure, supporting the growing demand for AI services and applications. As AI continues to drive technological innovation, this move positions India to capitalize on its burgeoning tech sector. Stakeholders should monitor the development of these data centers and potential collaboration opportunities.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/17/adani-pledges-100b-for-ai-data-centers-as-india-seeks-bigger-role-in-global-ai/",
+            "headline": "NVIDIA Unveils Nemotron 2 Nano 9B for Japan’s AI Needs",
+            "title": "NVIDIA Nemotron 2 Nano 9B Supports Japan’s Sovereign AI Initiatives",
+            "content": "NVIDIA has introduced the Nemotron 2 Nano 9B, a cutting-edge small-scale language model designed to bolster Japan&#x27;s sovereign AI efforts. This model is tailored to meet the specific linguistic and cultural nuances of the Japanese language, providing a robust tool for developers and researchers in the region. By supporting local AI development, NVIDIA aims to empower Japan to achieve greater autonomy in AI technology. This release highlights the increasing importance of localized AI models in global markets, as nations seek to reduce reliance on foreign technology. Developers are encouraged to explore the capabilities of this model to enhance local AI applications.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-nano-9b-v2-japanese-ja",
             "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Laurie Spiegel Explores Algorithmic Music vs. AI—A 40-Year Journey",
-            "title": "Laurie Spiegel Reflects on Algorithmic Music and AI&#x27;s Evolution",
-            "content": "Laurie Spiegel, an electronic music pioneer, revisits her 1986 creation, Music Mouse, to discuss the evolution from algorithmic music to AI-driven compositions. Music Mouse allowed users with early computers like Mac, Atari, or Amiga to create music using an XY grid and a mouse. Spiegel highlights the simplicity and creativity of algorithmic approaches compared to modern AI&#x27;s complexity. Her insights provide a unique perspective on the intersection of technology and creativity over the decades. Professionals in music technology should consider the historical context of algorithmic tools as they explore AI&#x27;s expanding role in creative industries.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/report/879819/laurie-spiegel-is-celebrating-40-of-music-mouse-with-a-modern-revival",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Infosys Partners with Anthropic—Boosts AI Agent Development",
-            "title": "Infosys and Anthropic Collaborate on Enterprise-Grade AI Agents",
-            "content": "Infosys has partnered with Anthropic to integrate its Claude models into the Topaz AI platform, advancing the development of &quot;agentic&quot; systems. This collaboration aims to enhance Infosys&#x27;s capabilities in creating sophisticated AI agents for enterprise applications. As AI jitters affect IT stocks, this strategic move could bolster Infosys&#x27;s market position by offering cutting-edge AI solutions. The partnership reflects a broader industry trend towards developing AI systems that can autonomously perform complex tasks. IT professionals should assess the implications of such partnerships on enterprise AI strategies and potential competitive advantages.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/17/as-ai-jitters-rattle-it-stocks-infosys-partners-with-anthropic-to-build-enterprise-grade-ai-agents/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Goldman Sachs Implements Anthropic AI—Enhances Trade Efficiency",
-            "title": "Goldman Sachs Leverages Anthropic&#x27;s Claude Model for Operational Efficiency",
-            "content": "Goldman Sachs is deploying Anthropic&#x27;s Claude model to enhance trade accounting and client onboarding processes. This initiative is part of a broader trend among large banks to adopt generative AI for operational improvements. The use of AI aims to streamline processes, reduce errors, and improve client experiences, reflecting the financial sector&#x27;s increasing reliance on technology. As banks continue to integrate AI into their operations, professionals should consider the implications for efficiency and regulatory compliance. Monitoring the impact of AI on financial services will be crucial for stakeholders navigating this technological shift.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/goldman-sachs-ai-deploys-anthropic-systems-with-success/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -242,27 +164,54 @@ const websiteContent = {
         },
         {
             "date": "Feb 17 2026",
-            "headline": "AI Digital Twins Aid Diabetes Management—A New Health Frontier",
-            "title": "AI Digital Twins Revolutionize Diabetes and Obesity Management",
-            "content": "Silicon Valley startup Twin Health is leveraging AI and wearable sensors to create digital twins that assist in managing diabetes and obesity. These digital twins offer personalized health insights, providing alternatives to expensive GLP-1 drugs. As healthcare costs rise, such AI-driven solutions present a cost-effective way for patients and employers to promote healthier lifestyles. The adoption of digital twins highlights a shift towards preventative healthcare, emphasizing data-driven decision-making. Healthcare professionals should explore the potential of AI in improving patient outcomes and reducing treatment costs.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/ai-digital-twins-are-helping-people-manage-diabetes-and-obesity/",
+            "headline": "Google Enhances AI Search—Links Now More Visible",
+            "title": "Google Boosts Link Visibility in AI-Powered Search Features",
+            "content": "Google is enhancing its AI-powered search features by making links more prominent, aiming to improve transparency and user trust. Robby Stein, VP of Google Search, announced that users will now see a list of links in a pop-up when hovering over sources in AI Overviews and AI Mode on desktop. This change seeks to address concerns about the opacity of AI-generated search results and ensure users can easily verify information. The update reflects Google&#x27;s ongoing efforts to refine its AI search capabilities while maintaining user confidence. Users should explore these new features to better navigate AI-enhanced search results.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/880475/google-ai-overviews-ai-mode-links-update",
             "relatedResources": []
         },
         {
             "date": "Feb 17 2026",
-            "headline": "Samsung&#x27;s AI Ads Flood Social Media—Generative Tools in Play",
-            "title": "Samsung Utilizes Generative AI for Social Media Advertising",
-            "content": "Samsung is increasingly using generative AI tools to create and edit videos for its social media channels, including YouTube, Instagram, and TikTok. This strategy follows Samsung&#x27;s integration of AI across its product lines, from smartphones to appliances. The use of AI in advertising reflects a broader trend of leveraging technology for creative content generation. As brands seek to engage audiences more effectively, the role of AI in marketing continues to expand. Marketing professionals should consider the implications of AI-driven content creation and its impact on brand visibility and consumer engagement.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/879864/samsung-ai-generated-edited-video-ads-slop",
+            "headline": "Google I/O 2026 Dates Announced—AI Breakthroughs Expected",
+            "title": "Google I/O 2026 Scheduled for May 19-20 with AI Focus",
+            "content": "Google has officially announced the dates for its annual developer conference, Google I/O 2026, which will take place from May 19th to 20th. The event is set to showcase the latest AI breakthroughs and updates across Google&#x27;s product lineup, including innovations in the Gemini AI project and Android. This year&#x27;s conference will be held in person, allowing developers and tech enthusiasts to engage directly with Google&#x27;s latest technological advancements. Attendees can anticipate a focus on how AI is integrated into various Google services and products, reflecting the company&#x27;s strategic emphasis on AI-driven solutions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/880401/google-io-2026-dates-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Apple Develops Trio of AI Wearables Amid Hardware Race",
+            "title": "Apple Reportedly Developing AI-Powered Wearables Amid Industry Surge",
+            "content": "Apple is reportedly working on a series of AI-powered wearable devices as the competition in AI hardware intensifies. According to sources, the tech giant is developing smart glasses, an AI-enabled pendant, and camera-equipped AirPods, all designed to integrate seamlessly with the iPhone. These devices aim to enhance user interaction through advanced AI features, such as improved voice assistance and augmented reality capabilities. Apple&#x27;s move highlights the increasing focus on AI integration in consumer electronics, as companies strive to offer more personalized and intuitive user experiences. Industry professionals should monitor these developments for potential impacts on the wearable technology market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/17/apple-is-reportedly-cooking-up-a-trio-of-ai-wearables/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Tech Firms Restrict OpenClaw Use Amid Security Concerns",
+            "title": "Meta and Others Limit OpenClaw AI Tool Over Security Risks",
+            "content": "Meta and several other tech companies have imposed restrictions on the use of OpenClaw, a powerful yet unpredictable agentic AI tool. Security experts have raised alarms about the potential risks associated with OpenClaw, citing its capability to perform complex tasks autonomously as a double-edged sword. While the tool offers significant advantages in automation, its unpredictability poses security challenges that could lead to unintended consequences. This move by tech firms underscores the need for cautious deployment of advanced AI tools, balancing innovation with security. Organizations should review their use of agentic AI solutions to mitigate potential risks.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/openclaw-banned-by-tech-companies-as-security-concerns-mount/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "Apple Plans AI Glasses, Pendant, and AirPods Launch",
+            "title": "Apple to Launch AI-Powered Glasses, Pendant, and AirPods",
+            "content": "Apple is reportedly advancing its plans to release a new line of AI-driven products, including smart glasses, a pendant, and AirPods with integrated cameras. These devices are designed to connect with the iPhone, leveraging Siri for enhanced user interaction. The smart glasses are expected to offer augmented reality features, while the pendant and AirPods aim to provide more intuitive voice and visual experiences. This initiative reflects Apple&#x27;s commitment to expanding its AI ecosystem and enhancing the functionality of its wearable technology. Tech professionals should anticipate these developments as Apple pushes the boundaries of AI integration in consumer devices.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/880293/apple-ai-hardware-smart-glasses-pin-airpods",
+            "relatedResources": []
         }
     ],
     "articles": {},
@@ -326,6 +275,50 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2020-7796",
+            "dateAdded": "Feb 17, 2026",
+            "vendor": "Synacor Zimbra Collaboration Suite",
+            "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a server-side request forgery vulnerability if WebEx zimlet installed and zimlet JSP is enabled.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-7796",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2024-7694",
+            "dateAdded": "Feb 17, 2026",
+            "vendor": "TeamT5 ThreatSonar Anti-Ransomware",
+            "description": "TeamT5 ThreatSonar Anti-Ransomware contains an unrestricted upload of file with dangerous type vulnerability. ThreatSonar Anti-Ransomware does not properly validate the content of uploaded files. Remo",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7694",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2008-0015",
+            "dateAdded": "Feb 17, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Video ActiveX Control contains a remote code execution vulnerability. An attacker could exploit the vulnerability by constructing a specially crafted Web page. When a user views the",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-0015",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-2441",
+            "dateAdded": "Feb 17, 2026",
+            "vendor": "Google Chromium",
+            "description": "Google Chromium CSS contains a use-after-free vulnerability that could allow a remote attacker to potentially exploit heap corruption via a crafted HTML page. This vulnerability could affect multiple",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2441",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-1731",
             "dateAdded": "Feb 13, 2026",
