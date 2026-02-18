@@ -5,6 +5,93 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 18 2026",
+            "headline": "16 Flaws in PDF Tools—Risk of Account Takeover",
+            "title": "Researchers Uncover Vulnerabilities in Foxit and Apryse PDF Platforms",
+            "content": "Novee researchers have identified 16 vulnerabilities in Foxit and Apryse PDF platforms that could be exploited through malicious documents or URLs, posing a risk of account takeover and data exfiltration. These vulnerabilities, affecting widely used tools, highlight the potential for attackers to gain unauthorized access to user accounts and sensitive information. The flaws could be leveraged to execute arbitrary code or escalate privileges, making them a significant concern for users relying on these platforms for document management. Users are advised to update their software to the latest versions to mitigate these risks. This discovery underscores the ongoing challenges in securing document management systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/vulnerabilities-in-popular-pdf-platforms-allowed-account-takeover-data-exfiltration/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "125M Installs at Risk—VS Code Extensions Flawed",
+            "title": "Critical Vulnerabilities Found in Popular VS Code Extensions",
+            "content": "Cybersecurity researchers have disclosed critical vulnerabilities in four popular Microsoft Visual Studio Code (VS Code) extensions, collectively installed over 125 million times. These flaws could allow threat actors to steal local files and execute code remotely, posing a significant threat to developers using these extensions. The vulnerabilities highlight the risks associated with third-party extensions and the potential for exploitation in development environments. Users are urged to review and update their extensions to the latest versions to protect against these threats. This incident emphasizes the importance of securing development tools as part of a comprehensive cybersecurity strategy.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/critical-flaws-found-in-four-vs-code.html",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "128M Downloads Exposed—VS Code Extensions Vulnerable",
+            "title": "High-Severity Flaws in VS Code Extensions Threaten Developers",
+            "content": "Application security company OX Security has revealed critical and high-severity vulnerabilities in four widely used Visual Studio Code extensions, with a combined 128 million downloads. These vulnerabilities expose developers to file theft, remote code execution, and local network reconnaissance. The findings underscore the potential security risks inherent in using third-party extensions for development work. Developers are encouraged to update their extensions promptly to mitigate these vulnerabilities and protect their development environments. This discovery highlights the need for robust security measures in software development processes.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4133800/flaws-in-four-popular-vs-code-extensions-left-128-million-installs-open-to-attack.html",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Job Scam Targets Google Logins via Fake Forms",
+            "title": "Phishers Exploit Fake Google Forms to Steal Credentials",
+            "content": "Phishers are using fake Google Forms pages hosted on lookalike domains to deceive job seekers into divulging their Google credentials. This phishing campaign targets individuals applying for jobs by mimicking legitimate forms to harvest sensitive login information. The tactic highlights the increasing sophistication of phishing attacks and the need for heightened vigilance among job seekers. Users are advised to verify the authenticity of web pages before entering credentials and to enable two-factor authentication for added security. This incident serves as a reminder of the persistent threats posed by phishing schemes.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/02/job-scam-uses-fake-google-forms-site-to-harvest-google-logins",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Preinstalled Android Malware—Keenadu Cannot Be Removed",
+            "title": "Kaspersky Uncovers Unremovable Android Malware Keenadu in Devices",
+            "content": "Security researchers at Kaspersky have identified a complex Android malware named Keenadu, which comes preinstalled on new smartphones and tablets via device firmware. This malware compromises users before they even begin using their devices, posing a significant security threat. Keenadu&#x27;s presence highlights the challenges of dealing with preinstalled malware that users cannot remove. Affected users are left with limited options, emphasizing the importance of purchasing devices from trusted sources and ensuring regular security updates. This discovery raises concerns about the security of supply chains in the mobile device industry.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4133774/keenadu-android-malware-that-comes-preinstalled-and-cant-be-removed-by-users.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Copilot Bug Exposes Confidential Emails—Microsoft Investigates",
+            "title": "Microsoft 365 Copilot Bug Summarizes Confidential Emails Unintentionally",
+            "content": "Microsoft has acknowledged a bug in its Microsoft 365 Copilot AI assistant that has been inadvertently summarizing confidential emails since late January, bypassing data loss prevention (DLP) policies. This bug poses a risk to organizations that rely on these policies to protect sensitive information. The issue highlights the potential unintended consequences of integrating AI tools into business processes. Microsoft is actively investigating the bug and working on a fix. Organizations using Copilot are advised to review their data protection strategies and monitor for any unauthorized disclosures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "2026 Cybersecurity Predictions—Navigating Permanent Instability",
+            "title": "Cybersecurity in 2026: Adapting to a World of Constant Change",
+            "content": "As digital landscapes evolve, cybersecurity in 2026 is characterized by continuous instability, requiring organizations to adapt to ever-changing threats. Unlike the previous year, where navigating digital risks felt manageable, 2026 presents a more turbulent environment. Organizations must focus on resilience, trust, and compliance to maintain security amidst this uncertainty. The shift underscores the importance of proactive threat management and adaptive security strategies. Professionals are encouraged to stay informed and agile, ensuring their defenses can withstand the dynamic nature of modern cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/cybersecurity-tech-predictions-for-2026.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
             "headline": "ISC Stormcast: Security Insights for February 18, 2026",
             "title": "SANS ISC Stormcast Highlights Cybersecurity Developments on February 18, 2026",
             "content": "The SANS Internet Storm Center has released its Stormcast for February 18, 2026, providing valuable insights into current cybersecurity threats and trends. The InfoCON status remains at green, indicating no immediate widespread threats. The podcast covers recent vulnerabilities, threat actor activities, and defensive strategies, offering actionable intelligence for security professionals. This resource is crucial for staying informed about evolving cyber risks and effective mitigation techniques. Listeners are encouraged to integrate these insights into their security operations to enhance their defensive posture.",
@@ -48,65 +135,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 17 2026",
-            "headline": "Spain Orders VPNs to Block LaLiga Piracy Sites",
-            "title": "Spanish Court Mandates NordVPN, ProtonVPN to Block Football Piracy Websites",
-            "content": "A Spanish court has issued precautionary measures compelling NordVPN and ProtonVPN to block access to 16 websites that facilitate the piracy of LaLiga football matches. This legal action reflects ongoing efforts to combat digital piracy and protect intellectual property rights in the sports industry. The ruling emphasizes the responsibility of VPN providers to comply with local laws and support anti-piracy initiatives. Users of these VPN services in Spain may experience restricted access to certain content as a result. Organizations should ensure compliance with regional regulations to avoid legal complications.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/legal/spain-orders-nordvpn-protonvpn-to-block-laliga-piracy-sites/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Malware Embedded in Android Devices via Supply Chain Attack",
-            "title": "Keenadu Malware Hijacks Android Devices in Supply Chain Attack",
-            "content": "A sophisticated supply chain attack has embedded the Keenadu malware into Android devices, enabling it to hijack browser searches, commit ad fraud, and execute unauthorized actions without user consent. This attack highlights the vulnerabilities present in supply chains and the potential for widespread impact on end users. The malware&#x27;s ability to operate covertly poses significant risks to user privacy and device security. Affected users should monitor their devices for unusual activity and consider factory resets or security software to mitigate potential threats. Supply chain security remains a critical focus for manufacturers and developers.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/mobile-security/supply-chain-attack-embeds-malware-android-devices",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Poland Energy Infrastructure Withstands Cyber Attack",
-            "title": "Poland&#x27;s Renewable Energy Sector Survives Cyber Assault by Russia-Aligned Groups",
-            "content": "Poland&#x27;s renewable energy infrastructure, including wind and solar farms, successfully withstood a cyber attack attributed to Russia-aligned groups. The attack involved wiper malware targeting energy farms, a manufacturer, and a heating and power plant. Despite the attack&#x27;s sophistication, effective defensive measures limited the damage and ensured continued operation. This incident underscores the growing threat to critical infrastructure from geopolitically motivated cyber actors. Energy providers are urged to enhance their cybersecurity frameworks to protect against similar attacks in the future.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/poland-energy-attack-wind-solar-infrastructure",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "NIST CSF 2.0 Implementation",
-                    "url": "/guides/nist-csf-2-implementation.html",
-                    "icon": "fa-check-double"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "VSCode Extensions&#x27; Flaws Expose Developers to Severe Risks",
-            "title": "Critical Vulnerabilities in VSCode Extensions Threaten Developer Security",
-            "content": "High to critical severity vulnerabilities have been discovered in popular Visual Studio Code (VSCode) extensions, collectively downloaded over 128 million times. These flaws could allow attackers to steal local files and execute remote code, posing significant risks to developers worldwide. The vulnerabilities highlight the need for rigorous security reviews of third-party extensions and prompt updates to mitigate potential exploitation. Developers using these extensions should verify their security posture and apply updates as they become available. This incident emphasizes the importance of securing development environments against emerging threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/flaws-in-popular-vscode-extensions-expose-developers-to-attacks/",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -134,6 +162,110 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 18 2026",
+            "headline": "Sarvam&#x27;s AI Models Aim for Feature Phones, Cars, Smart Glasses",
+            "title": "Sarvam&#x27;s Edge AI Models Expand to Feature Phones, Cars, Smart Glasses",
+            "content": "India&#x27;s Sarvam is pioneering the deployment of AI models on edge devices, targeting feature phones, cars, and smart glasses. These models are designed to operate offline, utilizing only megabytes of space, and can run efficiently on existing processors found in most phones. This approach opens up AI capabilities to a broader range of devices, potentially transforming user experiences in areas with limited connectivity. Sarvam&#x27;s initiative reflects a growing trend towards edge computing, which reduces reliance on cloud infrastructure and enhances data privacy. Developers and manufacturers should consider integrating such lightweight AI models to expand their device functionalities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/18/indias-sarvam-wants-to-bring-its-ai-models-to-feature-phones-cars-and-smart-glasses/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Sarvam Bets Big on Open-Source with 105B Parameter AI Models",
+            "title": "Sarvam Unveils Open-Source AI Models with Up to 105 Billion Parameters",
+            "content": "Sarvam, an Indian AI lab, has launched a new suite of open-source AI models, including models with 30 billion and 105 billion parameters. This lineup features a text-to-speech model, a speech-to-text model, and a vision model for document parsing. By embracing open-source, Sarvam aims to democratize access to advanced AI capabilities and foster innovation in the global AI community. The models cater to diverse applications, promising enhancements in speech and document processing. Organizations and developers are encouraged to explore these models to leverage state-of-the-art AI technology in their projects.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/18/indian-ai-lab-sarvams-new-models-are-a-major-bet-on-the-viability-of-open-source-ai/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Infosys Offers AI Framework for Business Leaders",
+            "title": "Infosys Launches AI Implementation Framework for Strategic Business Guidance",
+            "content": "Infosys has introduced an AI implementation framework designed to guide business leaders in deploying AI across various sectors. As a prominent technology services provider, Infosys aims to simplify the integration of AI into business processes, whether for discrete projects or organization-wide initiatives. This framework provides a structured approach to identify opportunities, assess AI readiness, and implement solutions effectively. The initiative underscores the growing need for strategic AI adoption as businesses seek to enhance operational efficiency and competitiveness. Decision-makers are advised to leverage such frameworks to ensure successful AI deployments.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/infosys-ai-implementation-framework-offers-business-leaders-guidance/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Perplexity Shuns Ads Amid Trust Concerns in AI Sector",
+            "title": "Perplexity AI Moves Away from Ads to Build User Trust",
+            "content": "AI search startup Perplexity has decided to distance itself from advertising, aiming to build trust with users wary of chatbots with commercial agendas. This move highlights a critical juncture for AI companies, as they seek sustainable revenue streams while maintaining user confidence. The decision comes amid industry-wide discussions on ethical AI deployment and monetization strategies. As major players invest heavily in AI, the balance between profitability and user trust becomes increasingly crucial. Companies in the AI space should consider transparent business models to foster user engagement and long-term success.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/880562/perplexity-ditches-ai-ads",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "RentAHuman: AI Bots Hire Humans for Real-World Tasks",
+            "title": "RentAHuman Marketplace Lets AI Bots Employ Humans for Tasks",
+            "content": "RentAHuman, a new platform founded by Zoomers, allows AI agents to hire humans for real-world tasks. The platform aims to streamline task delegation by leveraging AI to identify and employ human skills where needed. This innovative model suggests a future where AI and human collaboration becomes more integrated, with AI serving as task managers. The platform&#x27;s pitch—&quot;People would love to have a clanker as their boss&quot;—highlights a novel approach to workforce dynamics. Professionals should explore how such platforms might influence labor markets and consider the implications for job roles and AI integration.",
+            "source": "WIRED",
+            "sourceUrl": "https://www.wired.com/story/ai-agent-rentahuman-bots-hire-humans/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Predictive Robotics: A New Frontier in AI Innovation",
+            "title": "Robots Leverage Predictive Capabilities to Enhance Human Decision-Making",
+            "content": "MIT Technology Review discusses the emerging role of robots in predictive analytics, enhancing human decision-making processes. These robots utilize historical data and causal logic to forecast future events, aiding in tasks such as agriculture, wildlife management, and social interactions. The development signals a shift towards AI systems that not only react but anticipate needs and challenges. This advancement could lead to significant improvements in efficiency and resource management across various sectors. Professionals should consider how predictive robotics might be integrated into existing systems to optimize outcomes.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/02/18/1132579/robots-predict-future-book-review/",
+            "relatedResources": [
+                {
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
+                }
+            ]
+        },
+        {
+            "date": "Feb 17 2026",
+            "headline": "WordPress AI Assistant Enhances Site Editing with Prompts",
+            "title": "WordPress Introduces AI Assistant for Streamlined Site Editing and Translation",
+            "content": "WordPress has launched a new AI assistant integrated into its site editor and media library, allowing users to edit and translate text, as well as generate and edit images using prompts. This development enhances the platform&#x27;s accessibility, enabling users to perform complex tasks with simple commands. The AI assistant appears as a sidebar, providing an intuitive interface for users to interact with. This feature reflects a broader trend towards AI-driven content management solutions that simplify user workflows. Website administrators should explore these capabilities to improve site management efficiency.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/880223/wordpress-launches-ai-assistant",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
             "headline": "Meta Acquires Millions of Nvidia AI Chips—Grace-Only Deployment",
             "title": "Meta Expands Data Centers with Nvidia Grace and Blackwell Chips",
             "content": "Meta has entered into a multiyear agreement to procure millions of Nvidia&#x27;s Grace and Vera CPUs, along with Blackwell and Rubin GPUs, to enhance its data centers. This marks the first large-scale deployment of Nvidia&#x27;s Grace-only architecture, underscoring Meta&#x27;s commitment to advancing its AI capabilities. The collaboration is expected to significantly boost Meta&#x27;s infrastructure, enabling more efficient processing of AI workloads. This move aligns with the growing trend of tech giants investing heavily in AI hardware to support expansive AI model training and deployment. The deal may set a precedent for other companies considering similar upgrades to their data processing capabilities.",
@@ -146,72 +278,6 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "NVIDIA Unveils Nemotron 2 Nano 9B for Japan’s AI Needs",
-            "title": "NVIDIA Nemotron 2 Nano 9B Supports Japan’s Sovereign AI Initiatives",
-            "content": "NVIDIA has introduced the Nemotron 2 Nano 9B, a cutting-edge small-scale language model designed to bolster Japan&#x27;s sovereign AI efforts. This model is tailored to meet the specific linguistic and cultural nuances of the Japanese language, providing a robust tool for developers and researchers in the region. By supporting local AI development, NVIDIA aims to empower Japan to achieve greater autonomy in AI technology. This release highlights the increasing importance of localized AI models in global markets, as nations seek to reduce reliance on foreign technology. Developers are encouraged to explore the capabilities of this model to enhance local AI applications.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-nano-9b-v2-japanese-ja",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Google Enhances AI Search—Links Now More Visible",
-            "title": "Google Boosts Link Visibility in AI-Powered Search Features",
-            "content": "Google is enhancing its AI-powered search features by making links more prominent, aiming to improve transparency and user trust. Robby Stein, VP of Google Search, announced that users will now see a list of links in a pop-up when hovering over sources in AI Overviews and AI Mode on desktop. This change seeks to address concerns about the opacity of AI-generated search results and ensure users can easily verify information. The update reflects Google&#x27;s ongoing efforts to refine its AI search capabilities while maintaining user confidence. Users should explore these new features to better navigate AI-enhanced search results.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/880475/google-ai-overviews-ai-mode-links-update",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Google I/O 2026 Dates Announced—AI Breakthroughs Expected",
-            "title": "Google I/O 2026 Scheduled for May 19-20 with AI Focus",
-            "content": "Google has officially announced the dates for its annual developer conference, Google I/O 2026, which will take place from May 19th to 20th. The event is set to showcase the latest AI breakthroughs and updates across Google&#x27;s product lineup, including innovations in the Gemini AI project and Android. This year&#x27;s conference will be held in person, allowing developers and tech enthusiasts to engage directly with Google&#x27;s latest technological advancements. Attendees can anticipate a focus on how AI is integrated into various Google services and products, reflecting the company&#x27;s strategic emphasis on AI-driven solutions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/880401/google-io-2026-dates-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Apple Develops Trio of AI Wearables Amid Hardware Race",
-            "title": "Apple Reportedly Developing AI-Powered Wearables Amid Industry Surge",
-            "content": "Apple is reportedly working on a series of AI-powered wearable devices as the competition in AI hardware intensifies. According to sources, the tech giant is developing smart glasses, an AI-enabled pendant, and camera-equipped AirPods, all designed to integrate seamlessly with the iPhone. These devices aim to enhance user interaction through advanced AI features, such as improved voice assistance and augmented reality capabilities. Apple&#x27;s move highlights the increasing focus on AI integration in consumer electronics, as companies strive to offer more personalized and intuitive user experiences. Industry professionals should monitor these developments for potential impacts on the wearable technology market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/17/apple-is-reportedly-cooking-up-a-trio-of-ai-wearables/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Tech Firms Restrict OpenClaw Use Amid Security Concerns",
-            "title": "Meta and Others Limit OpenClaw AI Tool Over Security Risks",
-            "content": "Meta and several other tech companies have imposed restrictions on the use of OpenClaw, a powerful yet unpredictable agentic AI tool. Security experts have raised alarms about the potential risks associated with OpenClaw, citing its capability to perform complex tasks autonomously as a double-edged sword. While the tool offers significant advantages in automation, its unpredictability poses security challenges that could lead to unintended consequences. This move by tech firms underscores the need for cautious deployment of advanced AI tools, balancing innovation with security. Organizations should review their use of agentic AI solutions to mitigate potential risks.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openclaw-banned-by-tech-companies-as-security-concerns-mount/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "Apple Plans AI Glasses, Pendant, and AirPods Launch",
-            "title": "Apple to Launch AI-Powered Glasses, Pendant, and AirPods",
-            "content": "Apple is reportedly advancing its plans to release a new line of AI-driven products, including smart glasses, a pendant, and AirPods with integrated cameras. These devices are designed to connect with the iPhone, leveraging Siri for enhanced user interaction. The smart glasses are expected to offer augmented reality features, while the pendant and AirPods aim to provide more intuitive voice and visual experiences. This initiative reflects Apple&#x27;s commitment to expanding its AI ecosystem and enhancing the functionality of its wearable technology. Tech professionals should anticipate these developments as Apple pushes the boundaries of AI integration in consumer devices.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/880293/apple-ai-hardware-smart-glasses-pin-airpods",
-            "relatedResources": []
         }
     ],
     "articles": {},
