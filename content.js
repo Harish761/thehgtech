@@ -5,6 +5,93 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 19 2026",
+            "headline": "ShinyHunters Leak: 1M Figure User Records Exposed",
+            "title": "Figure Data Breach Compromises Nearly 1 Million User Records",
+            "content": "Blockchain-based lender Figure has confirmed a significant data breach, with over 2GB of user data leaked by the hacking group ShinyHunters. Nearly one million user records were compromised, raising concerns over the security of blockchain financial platforms. The breach highlights vulnerabilities in data protection practices within the blockchain industry. Users are advised to monitor their accounts for suspicious activity and consider changing passwords. This incident underscores the ongoing threat posed by cybercriminal groups targeting financial services.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nearly-1-million-user-records-compromised-in-figure-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "Texas Sues TP-Link—Alleges Router Security Deception",
+            "title": "Texas Lawsuit Accuses TP-Link of Router Security Misrepresentation",
+            "content": "The state of Texas has filed a lawsuit against TP-Link Systems, alleging the company falsely marketed its routers as secure while allowing Chinese state-sponsored hackers to exploit firmware vulnerabilities. The lawsuit claims these vulnerabilities enabled unauthorized access to users&#x27; devices, posing significant privacy and security risks. This legal action highlights growing concerns over the security of networking equipment and the potential for foreign interference. TP-Link users should ensure their devices are updated with the latest firmware patches to mitigate risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/texas-sues-tp-link-over-chinese-hacking-risks-user-deception/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "Microsoft Entra Accounts Hit by Device Code Vishing",
+            "title": "Hackers Exploit Device Code Vishing to Target Microsoft Entra Accounts",
+            "content": "Cybercriminals are targeting Microsoft Entra accounts in a sophisticated campaign combining device code phishing and voice phishing (vishing) attacks. These attacks exploit the OAuth 2.0 Device Authorization flow, primarily affecting technology, manufacturing, and financial organizations. By abusing this flow, attackers can gain unauthorized access to sensitive accounts, posing severe security threats. Organizations using Microsoft Entra should review their security protocols and consider implementing multi-factor authentication to protect against such attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-entra-accounts-in-device-code-vishing-attacks/",
+            "relatedResources": [
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "Venice Security Secures $33M for Access Management Solutions",
+            "title": "Venice Security Launches with $33M Funding for Privileged Access Management",
+            "content": "Venice Security, formerly known as Valkyrie, has emerged from stealth mode with $33 million in funding to enhance privileged access management solutions. The funding includes a $25 million Series A round, signaling strong investor confidence in the company&#x27;s innovative approach to access management. As cyber threats targeting privileged accounts continue to rise, Venice Security aims to provide robust solutions to safeguard critical assets. Organizations should evaluate their access management strategies to address potential vulnerabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/venice-security-emerges-from-stealth-with-33m-funding-for-privileged-access-management/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "OpenClaw Framework Exposed—6 Critical Flaws Found",
+            "title": "Researchers Discover Six Critical Flaws in OpenClaw AI Framework",
+            "content": "Security researchers at Endor Labs have identified six high-to-critical vulnerabilities in the open-source AI agent framework OpenClaw. Known as &quot;social media for AI agents,&quot; OpenClaw&#x27;s flaws were uncovered through AI-driven static application security testing. These vulnerabilities could allow attackers to manipulate AI agent interactions, posing significant security risks. Organizations using OpenClaw should prioritize patching these vulnerabilities to prevent potential exploitation. This discovery highlights the importance of rigorous security testing in AI development.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4134540/six-flaws-found-hiding-in-openclaws-plumbing.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "Ivanti Zero-Days Exploited Since July 2025—Urgent Action Needed",
+            "title": "Surge in Ivanti Exploitation Linked to Zero-Day Attacks from 2025",
+            "content": "Security researchers have traced the exploitation of Ivanti vulnerabilities back to July 2025, with attackers using zero-day flaws to deliver shells, conduct reconnaissance, and download malware. This surge in exploitation underscores the critical need for timely patching and vulnerability management. Organizations using Ivanti products should review their security posture and apply available patches to mitigate these risks. The ongoing exploitation highlights the persistent threat posed by unpatched software vulnerabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ivanti-exploitation-surges-as-zero-day-attacks-traced-back-to-july-2025/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "AI Oversights: Rapid Exploitation Threatens Cloud Security",
+            "title": "AI-Induced Oversights Collapse Response Windows in Cloud Security",
+            "content": "Recent analysis highlights how AI-related oversights, such as granting overly broad permissions and neglecting to revoke temporary API keys, can rapidly escalate into security breaches. These oversights can significantly shorten the response window, leaving cloud environments vulnerable to exploitation. This trend emphasizes the need for stringent access controls and regular audits of cloud workloads. Security professionals should prioritize implementing AI-aware security practices to prevent potential data breaches and safeguard cloud infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/from-exposure-to-exploitation-how-ai.html",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Feb 19 2026",
             "headline": "ISC Stormcast: February 19th Threat Landscape Overview",
             "title": "ISC Stormcast Highlights Current Cybersecurity Threats and Trends",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast provides a comprehensive overview of the current cybersecurity threats and trends as of February 19th, 2026. The report emphasizes the importance of staying vigilant against emerging threats, particularly in light of recent vulnerabilities and attack vectors. With InfoCON status at green, the report suggests a stable threat environment but advises continued monitoring of network traffic and system logs. Security professionals are encouraged to review the latest patches and updates to secure their systems against potential exploits. The Stormcast serves as a critical resource for understanding the evolving cybersecurity landscape.",
@@ -26,68 +113,6 @@ const websiteContent = {
             "source": "GRAHAM CLULEY",
             "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-455/",
             "relatedResources": []
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Nigerian Fraudster Gets 8 Years for Tax Scheme in Mexico",
-            "title": "Nigerian National Sentenced for Large-Scale Tax Refund Fraud Operation",
-            "content": "Matthew Akande, a Nigerian national residing in Mexico, has been sentenced to eight years in prison for orchestrating a fraudulent tax refund scheme. Akande and at least four co-conspirators infiltrated tax preparation firms&#x27; networks, filing over 1,000 fake tax returns to claim refunds. This operation, which exploited vulnerabilities in tax systems, underscores the persistent threat of financial cybercrime. The case highlights the importance of robust cybersecurity measures in financial institutions to prevent unauthorized access and data breaches. Authorities urge firms to enhance their security protocols to safeguard sensitive client information.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/nigerian-matthew-akande-tax-refund-fraud/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Notepad++ Update Now &#x27;Effectively Unexploitable&#x27; Says Creator",
-            "title": "Notepad++ Update Mechanism Secured Against Exploitation in Version 8.9.2",
-            "content": "Don Ho, the creator of Notepad++, has announced that the text editor&#x27;s update mechanism is now &quot;effectively unexploitable&quot; following recent security enhancements. Version 8.9.2 introduces a double-lock verification process to protect against potential compromise. This update addresses vulnerabilities previously exploited by attackers to execute unauthorized code during updates. Users are advised to upgrade to the latest version to benefit from these security improvements. Notepad++ remains a popular choice for developers, and this hardening of its update process reinforces its commitment to user safety.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4134135/notepad-author-says-fixes-make-update-mechanism-effectively-unexploitable.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Fake Crypto Scam Uses AI Chatbots to Lure Victims",
-            "title": "AI Chatbots Exploit Gemini Users in Fraudulent &quot;Google Coin&quot; Crypto Scheme",
-            "content": "A new scam has emerged, leveraging AI-powered chatbots to deceive individuals into purchasing fake cryptocurrency, dubbed &quot;Google Coin.&quot; The fraudulent presale site uses a sophisticated AI assistant to engage potential victims with persuasive sales pitches, ultimately directing payments to attackers. This scam highlights the increasing use of AI in cybercriminal activities and the need for heightened awareness among users of emerging technologies. Security experts advise individuals to verify the legitimacy of investment opportunities and exercise caution when interacting with AI-driven platforms.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/endpoint-security/scam-abuses-gemini-chatbots-convince-people-buy-fake-crypto",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Chinese Hackers Exploit Dell Flaw for 1.5 Years—Patch Released",
-            "title": "Dell RecoverPoint Zero-Day Exploited by Chinese Group for 18 Months",
-            "content": "For the past 18 months, a Chinese cyberespionage group has been exploiting a zero-day vulnerability in Dell&#x27;s RecoverPoint for Virtual Machines. This flaw allowed unauthenticated attackers to execute commands on affected systems, posing significant risks to organizations relying on this disaster recovery solution. Dell has released a patch to address the vulnerability, urging users to update immediately to protect their infrastructure. This incident underscores the persistent threat posed by state-sponsored actors and the critical importance of timely patch management in safeguarding virtual environments.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4134158/chinese-hackers-exploited-zero-day-dell-recoverpoint-flaw-for-1-5-years.html",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Grandstream VoIP Bug—SMBs at Risk of Call Interception",
-            "title": "Critical Grandstream VoIP Vulnerability Exposes SMBs to Severe Security Risks",
-            "content": "A critical vulnerability identified as CVE-2026-2329 has been discovered in Grandstream&#x27;s VoIP phone systems, allowing unauthenticated root-level access to small and medium-sized business infrastructures. Attackers exploiting this flaw can intercept calls, commit toll fraud, and impersonate users, posing severe risks to affected organizations. The vulnerability highlights a significant security blind spot in SMB communication systems, emphasizing the need for regular security assessments and updates. Grandstream users are strongly advised to apply available patches and review their network security configurations to mitigate potential threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/grandstream-bug-voip-security-blind-spot",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
         },
         {
             "date": "Mar 19 2026",
@@ -116,75 +141,36 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 18 2026",
-            "headline": "Zero Inference Cost: New AI Framework Matches Human Designs",
-            "title": "Innovative AI Agent Framework Eliminates Inference Costs and Enhances Adaptability",
-            "content": "A groundbreaking AI agent framework has been developed, capable of matching human-engineered systems without incurring inference costs. Traditional AI models often falter with minor changes, requiring human intervention to adapt. This new framework addresses such challenges, providing robustness in dynamic environments. By eliminating the need for inference costs, enterprises can deploy AI solutions more efficiently and cost-effectively. The advancement is particularly beneficial for industries relying on AI to automate complex tasks, offering a seamless integration without constant human oversight. This development marks a significant step forward in making AI more accessible and adaptable for enterprise applications.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/new-agent-framework-matches-human-engineered-ai-systems-and-adds-zero",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Google Cloud VP: Startups Must Heed AI Infrastructure Warnings",
-            "title": "Google Cloud VP Advises Startups on Managing AI Infrastructure Challenges",
-            "content": "Google Cloud&#x27;s VP has issued critical advice to startup founders navigating the rapidly evolving AI landscape. With increasing pressure to demonstrate early traction amid tighter funding and rising infrastructure costs, startups must make informed decisions about their AI infrastructure. The availability of cloud credits, access to GPUs, and foundational models offers a head start, but these choices can have long-term implications. Founders are urged to carefully evaluate their infrastructure strategies to avoid potential pitfalls. This guidance is essential for startups aiming to leverage AI effectively while maintaining financial and operational stability.",
+            "date": "Feb 19 2026",
+            "headline": "Altman, Amodei Awkwardly Avoid Unity Gesture at AI Summit",
+            "title": "Altman and Amodei Decline Unity Gesture at India’s AI Summit",
+            "content": "During India’s major AI summit, an awkward moment unfolded when Prime Minister Narendra Modi asked speakers to join hands in a symbolic gesture of unity. While most executives complied, OpenAI&#x27;s Sam Altman and Anthropic&#x27;s Dario Amodei notably refrained, keeping their hands apart. This incident highlights potential underlying tensions or differing perspectives among leading AI figures. The summit, a key event in India&#x27;s tech calendar, aimed to foster collaboration among AI leaders. Observers speculate on the implications of this moment for future partnerships and collaborations in the AI sector.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/is-your-startups-check-engine-light-on-google-clouds-vp-explains-what-to-do/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "OpenAI Expands Across India—Boosts Local AI Capabilities",
-            "title": "OpenAI Launches Initiative to Enhance AI Access and Skills in India",
-            "content": "OpenAI has announced its expansion into India, aiming to enhance AI accessibility and infrastructure across the country. This initiative focuses on building local infrastructure, empowering enterprises, and advancing workforce skills in AI. By providing resources and training, OpenAI seeks to foster innovation and competitiveness in India&#x27;s burgeoning tech sector. The move aligns with global trends of democratizing AI technology, ensuring that diverse markets can benefit from advancements. Indian enterprises and professionals stand to gain significantly, as they will have better tools and knowledge to integrate AI into their operations.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/openai-for-india",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Google Cloud VP Urges Startups to Monitor AI Systems",
-            "title": "Google Cloud VP Warns Startups About AI Infrastructure Missteps",
-            "content": "In an advisory to startup founders, Google Cloud&#x27;s VP highlighted the critical importance of monitoring AI infrastructure. As startups face intensified pressure to deliver results amidst financial constraints, the choice of AI infrastructure becomes pivotal. The availability of cloud credits and GPUs facilitates initial development, yet founders must remain vigilant about their long-term infrastructure strategy. Missteps in this area could lead to costly setbacks, impacting growth and sustainability. The VP&#x27;s insights underscore the necessity for startups to balance speed with strategic planning in their AI endeavors.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/google-clouds-vp-for-startups-on-reading-your-check-engine-light-before-its-too-late/",
+            "sourceUrl": "https://techcrunch.com/2026/02/19/altman-and-amodei-share-a-moment-of-awkwardness-at-indias-big-ai-summit/",
             "relatedResources": []
         },
         {
-            "date": "Feb 18 2026",
-            "headline": "Scout AI Powers Lethal Weapons with Cutting-Edge Tech",
-            "title": "Defense Firm Scout AI Develops Advanced AI-Powered Lethal Weapons",
-            "content": "Scout AI has unveiled its latest advancements in AI technology, applied to the development of lethal weaponry. Utilizing state-of-the-art AI frameworks, the company demonstrated the explosive capabilities of its new AI agents. This development raises ethical and regulatory questions as AI&#x27;s role in military applications expands. The technology&#x27;s potential to revolutionize defense strategies is significant, yet it also necessitates a discussion on the implications of autonomous weapons. Stakeholders in the defense sector must consider the balance between innovation and ethical responsibility.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/ai-lab-scout-ai-is-using-ai-agents-to-blow-things-up/",
-            "relatedResources": []
+            "date": "Feb 19 2026",
+            "headline": "AI Replaces Spreadsheets in Treasury Management",
+            "title": "AI Transforms Enterprise Treasury Management with Automated Data Pipelines",
+            "content": "The integration of AI into enterprise treasury management is revolutionizing corporate finance by replacing manual spreadsheets with automated data pipelines. This shift is driven by market volatility, regulatory demands, and the need for digital finance solutions. Ashish Kumar, head of Infosys Oracle Sales, highlights the efficiency gains and improved accuracy that AI brings to financial operations. Companies adopting AI can expect streamlined processes and enhanced decision-making capabilities. As businesses embrace this technology, finance departments must adapt to new workflows and data management practices.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-ai-upgrades-enterprise-treasury-management/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         },
         {
-            "date": "Feb 18 2026",
-            "headline": "Nvidia-Meta Deal Marks Shift in Computing Power Paradigm",
-            "title": "Nvidia and Meta Partnership Signals New Era in AI Computing",
-            "content": "Nvidia&#x27;s recent agreement with Meta marks a transformative shift in computing power dynamics, as tech giants move beyond discrete chip purchases. The partnership emphasizes the growing demand for comprehensive solutions, including GPUs and CPUs, to support advanced AI applications. This collaboration reflects a broader industry trend towards integrated computing solutions to meet the needs of complex AI workloads. As AI continues to evolve, the demand for versatile and powerful computing infrastructure is expected to rise, influencing future technology investments and development strategies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/nvidias-deal-with-meta-signals-a-new-era-in-computing-power/",
+            "date": "Feb 19 2026",
+            "headline": "Freeform Secures $67M to Expand AI-Driven Manufacturing",
+            "title": "Freeform Raises $67M to Scale Laser AI Manufacturing Operations",
+            "content": "Freeform has successfully raised $67 million in a Series B funding round to expand its laser AI manufacturing capabilities. The company is unique in its field, boasting H200 clusters in its on-site data center, which supports its advanced manufacturing processes. This investment will enable Freeform to enhance its production efficiency and scale operations to meet growing demand. As AI continues to transform manufacturing, companies like Freeform are at the forefront of integrating cutting-edge technology into traditional production methods. Investors are betting on AI&#x27;s potential to revolutionize the manufacturing industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/19/freeform-raises-67m-series-b-to-scale-up-laser-ai-manufacturing/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -194,12 +180,45 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 18 2026",
-            "headline": "Alibaba&#x27;s Qwen 3.5 Outperforms Larger AI Models—Cost-Effective Solution",
-            "title": "Alibaba&#x27;s Qwen 3.5 Model Surpasses Trillion-Parameter Models at Lower Cost",
-            "content": "Alibaba has introduced Qwen 3.5, a new AI model that outperforms its trillion-parameter predecessors while being more cost-effective. The Qwen 3.5-397B-A17B model boasts 397 billion parameters but efficiently activates only 17 billion, optimizing performance and resource use. This release, coinciding with the Lunar New Year, highlights Alibaba&#x27;s commitment to delivering powerful AI solutions that are accessible to enterprises. The model&#x27;s efficiency presents a compelling option for businesses seeking high-performance AI without the associated high costs. This development could influence future AI model design, emphasizing efficiency without sacrificing capability.",
+            "date": "Feb 19 2026",
+            "headline": "Golden Pipelines Target Enterprise AI&#x27;s Data Bottleneck",
+            "title": "Solving the &#x27;Last-Mile&#x27; Data Problem in Enterprise Agentic AI",
+            "content": "The &#x27;last-mile&#x27; data problem is a significant hurdle for enterprise agentic AI, where traditional ETL (Extract, Transform, Load) tools like dbt or Fivetran fall short. These tools prepare data for structured analytics but struggle with the messy, evolving operational data required for real-time AI model inference. Empromptu introduces &quot;inference integration,&quot; a new approach to address these challenges. By creating &quot;golden pipelines,&quot; companies can streamline data preparation for AI applications, ensuring models receive the necessary data in real-time. This innovation is crucial for advancing enterprise AI capabilities and improving operational efficiency.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/alibabas-qwen-3-5-397b-a17-beats-its-larger-trillion-parameter-model-at-a",
+            "sourceUrl": "https://venturebeat.com/data/the-last-mile-data-problem-is-stalling-enterprise-agentic-ai-golden",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "Reliance Unveils $110B AI Investment in India&#x27;s Tech Future",
+            "title": "Reliance Announces $110B AI Investment to Boost India&#x27;s Tech Ambitions",
+            "content": "Reliance Industries has announced a massive $110 billion investment plan to build AI data centers in Jamnagar, India. These multi-gigawatt facilities are expected to bring over 120 MW of capacity online by 2026, significantly boosting India&#x27;s technological infrastructure. This move aligns with India&#x27;s ambitions to become a global tech leader and reflects the growing importance of AI in various sectors. As the country invests heavily in AI, businesses and tech professionals can anticipate increased opportunities and advancements in AI-driven solutions. Reliance&#x27;s investment marks a pivotal moment in India&#x27;s tech evolution.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/19/reliance-unveils-110b-ai-investment-plan-as-india-ramps-up-tech-ambitions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "AI Tool Fomi Monitors and Scolds Workplace Distractions",
+            "title": "Fomi AI Tool Monitors Productivity, Raises Privacy Concerns",
+            "content": "The AI tool Fomi is designed to enhance productivity by monitoring user activity and providing feedback when attention wanes. While it offers potential benefits for maintaining focus, the tool raises significant privacy issues. Fomi&#x27;s ability to track user behavior could lead to concerns over data security and employee surveillance. As companies consider implementing such tools, they must weigh the productivity gains against potential privacy infringements. This development highlights the ongoing debate around AI&#x27;s role in the workplace and the balance between efficiency and privacy.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/fomi-ai-will-tell-you-to-stop-slacking-off/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "DBS Bank Tests AI for Customer Payment Automation",
+            "title": "DBS Bank Pilots AI System for Automated Customer Payments",
+            "content": "DBS Bank is piloting a new system that allows AI agents to make payments on behalf of customers, signaling a shift from advisory to action-oriented AI. This initiative represents a significant step in the evolution of financial services, where AI can autonomously complete transactions. The pilot involves collaboration with key technology partners to ensure security and efficiency. As financial institutions explore AI-driven solutions, customers can expect more seamless and automated banking experiences. However, this also raises questions about security and the role of human oversight in financial transactions.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/dbs-pilots-system-that-lets-ai-agents-make-payments-for-customers/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
