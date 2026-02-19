@@ -609,8 +609,21 @@
     }
 
     function initializeCharts(stats, dashboard) {
+        // Wait for Chart.js to load if it hasn't yet, with a max timeout
         if (typeof Chart === 'undefined') {
-            console.error('Chart.js not loaded');
+            console.warn('[Tabs] Chart.js not loaded yet, retrying in 100ms...');
+            let attempts = 0;
+            const checkChart = setInterval(() => {
+                attempts++;
+                if (typeof Chart !== 'undefined') {
+                    clearInterval(checkChart);
+                    console.log('[Tabs] Chart.js loaded, initializing charts now.');
+                    initializeCharts(stats, dashboard);
+                } else if (attempts > 50) { // 5 seconds max
+                    clearInterval(checkChart);
+                    console.error('[Tabs] Chart.js failed to load after 5 seconds.');
+                }
+            }, 100);
             return;
         }
 
