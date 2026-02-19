@@ -1,8 +1,7 @@
-// Tab Integration Script for Threat Intel Page
-// This script adds dashboard tab functionality to the existing threat-intel.html
-
 (function () {
     'use strict';
+
+    console.log('[Tabs] Script loaded');
 
     // Wait for DOM to be ready
     if (document.readyState === 'loading') {
@@ -12,10 +11,11 @@
     }
 
     function init() {
+        console.log('[Tabs] Initializing...');
         const mainContainer = document.querySelector('.main .container');
 
         if (!mainContainer) {
-            console.error('Main container not found');
+            console.error('[Tabs] Main container not found');
             return;
         }
 
@@ -96,20 +96,28 @@
         showTab('dashboard');
 
         // Initialize dashboard charts after DOM is ready
-        if (typeof ThreatDashboard !== 'undefined') {
-            const dashboard = new ThreatDashboard();
-            dashboard.loadAllData().then(stats => {
-                // Render leaderboard
-                const leaderboard = document.getElementById('threatLeaderboard');
-                if (leaderboard && stats.topMalware) {
-                    leaderboard.innerHTML = renderLeaderboard(stats.topMalware);
-                }
+        try {
+            if (typeof ThreatDashboard !== 'undefined') {
+                console.log('[Tabs] Loading ThreatDashboard...');
+                const dashboard = new ThreatDashboard();
+                dashboard.loadAllData().then(stats => {
+                    console.log('[Tabs] Data loaded, initializing charts...');
+                    // Render leaderboard
+                    const leaderboard = document.getElementById('threatLeaderboard');
+                    if (leaderboard && stats.topMalware) {
+                        leaderboard.innerHTML = renderLeaderboard(stats.topMalware);
+                    }
 
-                // Initialize charts
-                initializeCharts(stats, dashboard);
-            }).catch(err => {
-                console.error('Failed to load dashboard data:', err);
-            });
+                    // Initialize charts
+                    initializeCharts(stats, dashboard);
+                }).catch(err => {
+                    console.error('[Tabs] Failed to load dashboard data:', err);
+                });
+            } else {
+                console.error('[Tabs] ThreatDashboard class is undefined. Check dashboard-data.js loading order.');
+            }
+        } catch (e) {
+            console.error('[Tabs] Critical error during initialization:', e);
         }
     }
 

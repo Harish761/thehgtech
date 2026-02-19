@@ -164,6 +164,7 @@ class ThreatDashboard {
         const days = 7;
         const trend = [];
         const today = new Date();
+        const baseCount = (this.stats && this.stats.totalIOCs) ? this.stats.totalIOCs : 50000;
 
         for (let i = days - 1; i >= 0; i--) {
             const date = new Date(today);
@@ -171,7 +172,7 @@ class ThreatDashboard {
 
             trend.push({
                 date: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-                count: Math.floor(this.stats.totalIOCs * (0.85 + Math.random() * 0.3))
+                count: Math.floor(baseCount * (0.85 + Math.random() * 0.3))
             });
         }
 
