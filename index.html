@@ -131,9 +131,30 @@
             visibility: hidden;
         }
 
+        /* Default state: Hide mobile-only elements on desktop */
         .m-only,
         .m-search-overlay {
-            display: none !important;
+            display: none;
+        }
+
+        /* Hide desktop-only elements on mobile */
+        @media (max-width: 768px) {
+            .desktop-only {
+                display: none !important;
+            }
+
+            .m-only {
+                display: block;
+            }
+
+            .m-search-overlay {
+                display: none;
+                /* Keep hidden until activated */
+            }
+
+            .m-search-overlay.active {
+                display: flex;
+            }
         }
 
         .new-year-banner.hidden {
