@@ -3,7 +3,7 @@
 // Stores rolling 7-day window of threat metrics
 // Updated: 2026-02-19T19:09:18.773758+05:30 IST
 
-const threatIntelHistory = {
+window.threatIntelHistory = {
     "previous_day": {
         "date": "2026-02-19",
         "categories": {
