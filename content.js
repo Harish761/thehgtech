@@ -4,128 +4,83 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 18 2026",
-            "headline": "16 Flaws in PDF Tools—Risk of Account Takeover",
-            "title": "Researchers Uncover Vulnerabilities in Foxit and Apryse PDF Platforms",
-            "content": "Novee researchers have identified 16 vulnerabilities in Foxit and Apryse PDF platforms that could be exploited through malicious documents or URLs, posing a risk of account takeover and data exfiltration. These vulnerabilities, affecting widely used tools, highlight the potential for attackers to gain unauthorized access to user accounts and sensitive information. The flaws could be leveraged to execute arbitrary code or escalate privileges, making them a significant concern for users relying on these platforms for document management. Users are advised to update their software to the latest versions to mitigate these risks. This discovery underscores the ongoing challenges in securing document management systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vulnerabilities-in-popular-pdf-platforms-allowed-account-takeover-data-exfiltration/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "125M Installs at Risk—VS Code Extensions Flawed",
-            "title": "Critical Vulnerabilities Found in Popular VS Code Extensions",
-            "content": "Cybersecurity researchers have disclosed critical vulnerabilities in four popular Microsoft Visual Studio Code (VS Code) extensions, collectively installed over 125 million times. These flaws could allow threat actors to steal local files and execute code remotely, posing a significant threat to developers using these extensions. The vulnerabilities highlight the risks associated with third-party extensions and the potential for exploitation in development environments. Users are urged to review and update their extensions to the latest versions to protect against these threats. This incident emphasizes the importance of securing development tools as part of a comprehensive cybersecurity strategy.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/critical-flaws-found-in-four-vs-code.html",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "128M Downloads Exposed—VS Code Extensions Vulnerable",
-            "title": "High-Severity Flaws in VS Code Extensions Threaten Developers",
-            "content": "Application security company OX Security has revealed critical and high-severity vulnerabilities in four widely used Visual Studio Code extensions, with a combined 128 million downloads. These vulnerabilities expose developers to file theft, remote code execution, and local network reconnaissance. The findings underscore the potential security risks inherent in using third-party extensions for development work. Developers are encouraged to update their extensions promptly to mitigate these vulnerabilities and protect their development environments. This discovery highlights the need for robust security measures in software development processes.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4133800/flaws-in-four-popular-vs-code-extensions-left-128-million-installs-open-to-attack.html",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Job Scam Targets Google Logins via Fake Forms",
-            "title": "Phishers Exploit Fake Google Forms to Steal Credentials",
-            "content": "Phishers are using fake Google Forms pages hosted on lookalike domains to deceive job seekers into divulging their Google credentials. This phishing campaign targets individuals applying for jobs by mimicking legitimate forms to harvest sensitive login information. The tactic highlights the increasing sophistication of phishing attacks and the need for heightened vigilance among job seekers. Users are advised to verify the authenticity of web pages before entering credentials and to enable two-factor authentication for added security. This incident serves as a reminder of the persistent threats posed by phishing schemes.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/02/job-scam-uses-fake-google-forms-site-to-harvest-google-logins",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Preinstalled Android Malware—Keenadu Cannot Be Removed",
-            "title": "Kaspersky Uncovers Unremovable Android Malware Keenadu in Devices",
-            "content": "Security researchers at Kaspersky have identified a complex Android malware named Keenadu, which comes preinstalled on new smartphones and tablets via device firmware. This malware compromises users before they even begin using their devices, posing a significant security threat. Keenadu&#x27;s presence highlights the challenges of dealing with preinstalled malware that users cannot remove. Affected users are left with limited options, emphasizing the importance of purchasing devices from trusted sources and ensuring regular security updates. This discovery raises concerns about the security of supply chains in the mobile device industry.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4133774/keenadu-android-malware-that-comes-preinstalled-and-cant-be-removed-by-users.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Copilot Bug Exposes Confidential Emails—Microsoft Investigates",
-            "title": "Microsoft 365 Copilot Bug Summarizes Confidential Emails Unintentionally",
-            "content": "Microsoft has acknowledged a bug in its Microsoft 365 Copilot AI assistant that has been inadvertently summarizing confidential emails since late January, bypassing data loss prevention (DLP) policies. This bug poses a risk to organizations that rely on these policies to protect sensitive information. The issue highlights the potential unintended consequences of integrating AI tools into business processes. Microsoft is actively investigating the bug and working on a fix. Organizations using Copilot are advised to review their data protection strategies and monitor for any unauthorized disclosures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "2026 Cybersecurity Predictions—Navigating Permanent Instability",
-            "title": "Cybersecurity in 2026: Adapting to a World of Constant Change",
-            "content": "As digital landscapes evolve, cybersecurity in 2026 is characterized by continuous instability, requiring organizations to adapt to ever-changing threats. Unlike the previous year, where navigating digital risks felt manageable, 2026 presents a more turbulent environment. Organizations must focus on resilience, trust, and compliance to maintain security amidst this uncertainty. The shift underscores the importance of proactive threat management and adaptive security strategies. Professionals are encouraged to stay informed and agile, ensuring their defenses can withstand the dynamic nature of modern cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/cybersecurity-tech-predictions-for-2026.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "ISC Stormcast: Security Insights for February 18, 2026",
-            "title": "SANS ISC Stormcast Highlights Cybersecurity Developments on February 18, 2026",
-            "content": "The SANS Internet Storm Center has released its Stormcast for February 18, 2026, providing valuable insights into current cybersecurity threats and trends. The InfoCON status remains at green, indicating no immediate widespread threats. The podcast covers recent vulnerabilities, threat actor activities, and defensive strategies, offering actionable intelligence for security professionals. This resource is crucial for staying informed about evolving cyber risks and effective mitigation techniques. Listeners are encouraged to integrate these insights into their security operations to enhance their defensive posture.",
+            "date": "Feb 19 2026",
+            "headline": "ISC Stormcast: February 19th Threat Landscape Overview",
+            "title": "ISC Stormcast Highlights Current Cybersecurity Threats and Trends",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast provides a comprehensive overview of the current cybersecurity threats and trends as of February 19th, 2026. The report emphasizes the importance of staying vigilant against emerging threats, particularly in light of recent vulnerabilities and attack vectors. With InfoCON status at green, the report suggests a stable threat environment but advises continued monitoring of network traffic and system logs. Security professionals are encouraged to review the latest patches and updates to secure their systems against potential exploits. The Stormcast serves as a critical resource for understanding the evolving cybersecurity landscape.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32724",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Singapore Thwarts Chinese Hackers—Telcos Play Key Role",
-            "title": "Singapore and Its Major Telcos Successfully Counter Chinese Cyber Attacks",
-            "content": "Singapore has successfully defended against a zero-day cyber attack attributed to Chinese hackers, thanks to the strong collaboration between the government and its four major telecommunications companies. This coordinated response highlights the importance of public-private partnerships in national cybersecurity strategies. The attack aimed at exploiting vulnerabilities within critical infrastructure, but swift detection and mitigation efforts minimized potential damage. Singapore&#x27;s proactive approach serves as a model for other nations facing similar cyber threats. Organizations are advised to strengthen partnerships and improve threat detection capabilities to enhance their cyber resilience.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/singapore-major-telcos-fend-chinese-hackers",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Dell Zero-Day Exploited by Chinese Hackers for 18 Months",
-            "title": "Chinese Hackers Exploited Dell Zero-Day Vulnerability for Extended Period",
-            "content": "Google researchers have uncovered that Chinese hackers exploited a zero-day vulnerability in Dell systems for 18 months, starting in mid-2024. The attackers used an evolved version of the Brickstorm malware, now called Grimbolt, to conduct their operations. This prolonged exploitation underscores the challenges in detecting sophisticated threats and the importance of timely vulnerability management. Organizations using Dell products should urgently review their security measures and apply necessary patches. This case exemplifies the persistent threat posed by advanced persistent threat (APT) groups and the need for continuous monitoring.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/china-brickstorm-grimbolt-dell-zero-day/",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32728",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "Can America Shut Down Europe&#x27;s Internet? Experts Debate",
+            "title": "Tech Sovereignty: Could the US Disable Europe&#x27;s Internet Infrastructure?",
+            "content": "In the latest episode of the Smashing Security podcast, Graham Cluley and guest James Ball explore the provocative question of whether the United States could disable Europe&#x27;s internet infrastructure. The discussion centers on tech sovereignty and the geopolitical implications of reliance on US-based services like Gmail and cloud platforms. They examine the potential for these services to be used as leverage in international disputes and the feasibility of developing independent infrastructure. The episode highlights the growing importance of tech sovereignty in global politics and the need for strategic planning in critical infrastructure management.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-455/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Nigerian Fraudster Gets 8 Years for Tax Scheme in Mexico",
+            "title": "Nigerian National Sentenced for Large-Scale Tax Refund Fraud Operation",
+            "content": "Matthew Akande, a Nigerian national residing in Mexico, has been sentenced to eight years in prison for orchestrating a fraudulent tax refund scheme. Akande and at least four co-conspirators infiltrated tax preparation firms&#x27; networks, filing over 1,000 fake tax returns to claim refunds. This operation, which exploited vulnerabilities in tax systems, underscores the persistent threat of financial cybercrime. The case highlights the importance of robust cybersecurity measures in financial institutions to prevent unauthorized access and data breaches. Authorities urge firms to enhance their security protocols to safeguard sensitive client information.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/nigerian-matthew-akande-tax-refund-fraud/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Notepad++ Update Now &#x27;Effectively Unexploitable&#x27; Says Creator",
+            "title": "Notepad++ Update Mechanism Secured Against Exploitation in Version 8.9.2",
+            "content": "Don Ho, the creator of Notepad++, has announced that the text editor&#x27;s update mechanism is now &quot;effectively unexploitable&quot; following recent security enhancements. Version 8.9.2 introduces a double-lock verification process to protect against potential compromise. This update addresses vulnerabilities previously exploited by attackers to execute unauthorized code during updates. Users are advised to upgrade to the latest version to benefit from these security improvements. Notepad++ remains a popular choice for developers, and this hardening of its update process reinforces its commitment to user safety.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4134135/notepad-author-says-fixes-make-update-mechanism-effectively-unexploitable.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Fake Crypto Scam Uses AI Chatbots to Lure Victims",
+            "title": "AI Chatbots Exploit Gemini Users in Fraudulent &quot;Google Coin&quot; Crypto Scheme",
+            "content": "A new scam has emerged, leveraging AI-powered chatbots to deceive individuals into purchasing fake cryptocurrency, dubbed &quot;Google Coin.&quot; The fraudulent presale site uses a sophisticated AI assistant to engage potential victims with persuasive sales pitches, ultimately directing payments to attackers. This scam highlights the increasing use of AI in cybercriminal activities and the need for heightened awareness among users of emerging technologies. Security experts advise individuals to verify the legitimacy of investment opportunities and exercise caution when interacting with AI-driven platforms.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/endpoint-security/scam-abuses-gemini-chatbots-convince-people-buy-fake-crypto",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Chinese Hackers Exploit Dell Flaw for 1.5 Years—Patch Released",
+            "title": "Dell RecoverPoint Zero-Day Exploited by Chinese Group for 18 Months",
+            "content": "For the past 18 months, a Chinese cyberespionage group has been exploiting a zero-day vulnerability in Dell&#x27;s RecoverPoint for Virtual Machines. This flaw allowed unauthenticated attackers to execute commands on affected systems, posing significant risks to organizations relying on this disaster recovery solution. Dell has released a patch to address the vulnerability, urging users to update immediately to protect their infrastructure. This incident underscores the persistent threat posed by state-sponsored actors and the critical importance of timely patch management in safeguarding virtual environments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4134158/chinese-hackers-exploited-zero-day-dell-recoverpoint-flaw-for-1-5-years.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Grandstream VoIP Bug—SMBs at Risk of Call Interception",
+            "title": "Critical Grandstream VoIP Vulnerability Exposes SMBs to Severe Security Risks",
+            "content": "A critical vulnerability identified as CVE-2026-2329 has been discovered in Grandstream&#x27;s VoIP phone systems, allowing unauthenticated root-level access to small and medium-sized business infrastructures. Attackers exploiting this flaw can intercept calls, commit toll fraud, and impersonate users, posing severe risks to affected organizations. The vulnerability highlights a significant security blind spot in SMB communication systems, emphasizing the need for regular security assessments and updates. Grandstream users are strongly advised to apply available patches and review their network security configurations to mitigate potential threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/grandstream-bug-voip-security-blind-spot",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
                 },
                 {
                     "label": "CVE Prioritization Guide",
@@ -162,11 +117,11 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 18 2026",
-            "headline": "Sarvam&#x27;s AI Models Aim for Feature Phones, Cars, Smart Glasses",
-            "title": "Sarvam&#x27;s Edge AI Models Expand to Feature Phones, Cars, Smart Glasses",
-            "content": "India&#x27;s Sarvam is pioneering the deployment of AI models on edge devices, targeting feature phones, cars, and smart glasses. These models are designed to operate offline, utilizing only megabytes of space, and can run efficiently on existing processors found in most phones. This approach opens up AI capabilities to a broader range of devices, potentially transforming user experiences in areas with limited connectivity. Sarvam&#x27;s initiative reflects a growing trend towards edge computing, which reduces reliance on cloud infrastructure and enhances data privacy. Developers and manufacturers should consider integrating such lightweight AI models to expand their device functionalities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/18/indias-sarvam-wants-to-bring-its-ai-models-to-feature-phones-cars-and-smart-glasses/",
+            "headline": "Zero Inference Cost: New AI Framework Matches Human Designs",
+            "title": "Innovative AI Agent Framework Eliminates Inference Costs and Enhances Adaptability",
+            "content": "A groundbreaking AI agent framework has been developed, capable of matching human-engineered systems without incurring inference costs. Traditional AI models often falter with minor changes, requiring human intervention to adapt. This new framework addresses such challenges, providing robustness in dynamic environments. By eliminating the need for inference costs, enterprises can deploy AI solutions more efficiently and cost-effectively. The advancement is particularly beneficial for industries relying on AI to automate complex tasks, offering a seamless integration without constant human oversight. This development marks a significant step forward in making AI more accessible and adaptable for enterprise applications.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/new-agent-framework-matches-human-engineered-ai-systems-and-adds-zero",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -177,11 +132,11 @@ const websiteContent = {
         },
         {
             "date": "Feb 18 2026",
-            "headline": "Sarvam Bets Big on Open-Source with 105B Parameter AI Models",
-            "title": "Sarvam Unveils Open-Source AI Models with Up to 105 Billion Parameters",
-            "content": "Sarvam, an Indian AI lab, has launched a new suite of open-source AI models, including models with 30 billion and 105 billion parameters. This lineup features a text-to-speech model, a speech-to-text model, and a vision model for document parsing. By embracing open-source, Sarvam aims to democratize access to advanced AI capabilities and foster innovation in the global AI community. The models cater to diverse applications, promising enhancements in speech and document processing. Organizations and developers are encouraged to explore these models to leverage state-of-the-art AI technology in their projects.",
+            "headline": "Google Cloud VP: Startups Must Heed AI Infrastructure Warnings",
+            "title": "Google Cloud VP Advises Startups on Managing AI Infrastructure Challenges",
+            "content": "Google Cloud&#x27;s VP has issued critical advice to startup founders navigating the rapidly evolving AI landscape. With increasing pressure to demonstrate early traction amid tighter funding and rising infrastructure costs, startups must make informed decisions about their AI infrastructure. The availability of cloud credits, access to GPUs, and foundational models offers a head start, but these choices can have long-term implications. Founders are urged to carefully evaluate their infrastructure strategies to avoid potential pitfalls. This guidance is essential for startups aiming to leverage AI effectively while maintaining financial and operational stability.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/18/indian-ai-lab-sarvams-new-models-are-a-major-bet-on-the-viability-of-open-source-ai/",
+            "sourceUrl": "https://techcrunch.com/video/is-your-startups-check-engine-light-on-google-clouds-vp-explains-what-to-do/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -192,85 +147,59 @@ const websiteContent = {
         },
         {
             "date": "Feb 18 2026",
-            "headline": "Infosys Offers AI Framework for Business Leaders",
-            "title": "Infosys Launches AI Implementation Framework for Strategic Business Guidance",
-            "content": "Infosys has introduced an AI implementation framework designed to guide business leaders in deploying AI across various sectors. As a prominent technology services provider, Infosys aims to simplify the integration of AI into business processes, whether for discrete projects or organization-wide initiatives. This framework provides a structured approach to identify opportunities, assess AI readiness, and implement solutions effectively. The initiative underscores the growing need for strategic AI adoption as businesses seek to enhance operational efficiency and competitiveness. Decision-makers are advised to leverage such frameworks to ensure successful AI deployments.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/infosys-ai-implementation-framework-offers-business-leaders-guidance/",
+            "headline": "OpenAI Expands Across India—Boosts Local AI Capabilities",
+            "title": "OpenAI Launches Initiative to Enhance AI Access and Skills in India",
+            "content": "OpenAI has announced its expansion into India, aiming to enhance AI accessibility and infrastructure across the country. This initiative focuses on building local infrastructure, empowering enterprises, and advancing workforce skills in AI. By providing resources and training, OpenAI seeks to foster innovation and competitiveness in India&#x27;s burgeoning tech sector. The move aligns with global trends of democratizing AI technology, ensuring that diverse markets can benefit from advancements. Indian enterprises and professionals stand to gain significantly, as they will have better tools and knowledge to integrate AI into their operations.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/openai-for-india",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Google Cloud VP Urges Startups to Monitor AI Systems",
+            "title": "Google Cloud VP Warns Startups About AI Infrastructure Missteps",
+            "content": "In an advisory to startup founders, Google Cloud&#x27;s VP highlighted the critical importance of monitoring AI infrastructure. As startups face intensified pressure to deliver results amidst financial constraints, the choice of AI infrastructure becomes pivotal. The availability of cloud credits and GPUs facilitates initial development, yet founders must remain vigilant about their long-term infrastructure strategy. Missteps in this area could lead to costly setbacks, impacting growth and sustainability. The VP&#x27;s insights underscore the necessity for startups to balance speed with strategic planning in their AI endeavors.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/google-clouds-vp-for-startups-on-reading-your-check-engine-light-before-its-too-late/",
             "relatedResources": []
         },
         {
             "date": "Feb 18 2026",
-            "headline": "Perplexity Shuns Ads Amid Trust Concerns in AI Sector",
-            "title": "Perplexity AI Moves Away from Ads to Build User Trust",
-            "content": "AI search startup Perplexity has decided to distance itself from advertising, aiming to build trust with users wary of chatbots with commercial agendas. This move highlights a critical juncture for AI companies, as they seek sustainable revenue streams while maintaining user confidence. The decision comes amid industry-wide discussions on ethical AI deployment and monetization strategies. As major players invest heavily in AI, the balance between profitability and user trust becomes increasingly crucial. Companies in the AI space should consider transparent business models to foster user engagement and long-term success.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/880562/perplexity-ditches-ai-ads",
+            "headline": "Scout AI Powers Lethal Weapons with Cutting-Edge Tech",
+            "title": "Defense Firm Scout AI Develops Advanced AI-Powered Lethal Weapons",
+            "content": "Scout AI has unveiled its latest advancements in AI technology, applied to the development of lethal weaponry. Utilizing state-of-the-art AI frameworks, the company demonstrated the explosive capabilities of its new AI agents. This development raises ethical and regulatory questions as AI&#x27;s role in military applications expands. The technology&#x27;s potential to revolutionize defense strategies is significant, yet it also necessitates a discussion on the implications of autonomous weapons. Stakeholders in the defense sector must consider the balance between innovation and ethical responsibility.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/ai-lab-scout-ai-is-using-ai-agents-to-blow-things-up/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 18 2026",
+            "headline": "Nvidia-Meta Deal Marks Shift in Computing Power Paradigm",
+            "title": "Nvidia and Meta Partnership Signals New Era in AI Computing",
+            "content": "Nvidia&#x27;s recent agreement with Meta marks a transformative shift in computing power dynamics, as tech giants move beyond discrete chip purchases. The partnership emphasizes the growing demand for comprehensive solutions, including GPUs and CPUs, to support advanced AI applications. This collaboration reflects a broader industry trend towards integrated computing solutions to meet the needs of complex AI workloads. As AI continues to evolve, the demand for versatile and powerful computing infrastructure is expected to rise, influencing future technology investments and development strategies.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/nvidias-deal-with-meta-signals-a-new-era-in-computing-power/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
                 }
             ]
         },
         {
             "date": "Feb 18 2026",
-            "headline": "RentAHuman: AI Bots Hire Humans for Real-World Tasks",
-            "title": "RentAHuman Marketplace Lets AI Bots Employ Humans for Tasks",
-            "content": "RentAHuman, a new platform founded by Zoomers, allows AI agents to hire humans for real-world tasks. The platform aims to streamline task delegation by leveraging AI to identify and employ human skills where needed. This innovative model suggests a future where AI and human collaboration becomes more integrated, with AI serving as task managers. The platform&#x27;s pitch—&quot;People would love to have a clanker as their boss&quot;—highlights a novel approach to workforce dynamics. Professionals should explore how such platforms might influence labor markets and consider the implications for job roles and AI integration.",
-            "source": "WIRED",
-            "sourceUrl": "https://www.wired.com/story/ai-agent-rentahuman-bots-hire-humans/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Predictive Robotics: A New Frontier in AI Innovation",
-            "title": "Robots Leverage Predictive Capabilities to Enhance Human Decision-Making",
-            "content": "MIT Technology Review discusses the emerging role of robots in predictive analytics, enhancing human decision-making processes. These robots utilize historical data and causal logic to forecast future events, aiding in tasks such as agriculture, wildlife management, and social interactions. The development signals a shift towards AI systems that not only react but anticipate needs and challenges. This advancement could lead to significant improvements in efficiency and resource management across various sectors. Professionals should consider how predictive robotics might be integrated into existing systems to optimize outcomes.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/02/18/1132579/robots-predict-future-book-review/",
-            "relatedResources": [
-                {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
-                }
-            ]
-        },
-        {
-            "date": "Feb 17 2026",
-            "headline": "WordPress AI Assistant Enhances Site Editing with Prompts",
-            "title": "WordPress Introduces AI Assistant for Streamlined Site Editing and Translation",
-            "content": "WordPress has launched a new AI assistant integrated into its site editor and media library, allowing users to edit and translate text, as well as generate and edit images using prompts. This development enhances the platform&#x27;s accessibility, enabling users to perform complex tasks with simple commands. The AI assistant appears as a sidebar, providing an intuitive interface for users to interact with. This feature reflects a broader trend towards AI-driven content management solutions that simplify user workflows. Website administrators should explore these capabilities to improve site management efficiency.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/880223/wordpress-launches-ai-assistant",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 18 2026",
-            "headline": "Meta Acquires Millions of Nvidia AI Chips—Grace-Only Deployment",
-            "title": "Meta Expands Data Centers with Nvidia Grace and Blackwell Chips",
-            "content": "Meta has entered into a multiyear agreement to procure millions of Nvidia&#x27;s Grace and Vera CPUs, along with Blackwell and Rubin GPUs, to enhance its data centers. This marks the first large-scale deployment of Nvidia&#x27;s Grace-only architecture, underscoring Meta&#x27;s commitment to advancing its AI capabilities. The collaboration is expected to significantly boost Meta&#x27;s infrastructure, enabling more efficient processing of AI workloads. This move aligns with the growing trend of tech giants investing heavily in AI hardware to support expansive AI model training and deployment. The deal may set a precedent for other companies considering similar upgrades to their data processing capabilities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/880513/nvidia-meta-ai-grace-vera-chips",
+            "headline": "Alibaba&#x27;s Qwen 3.5 Outperforms Larger AI Models—Cost-Effective Solution",
+            "title": "Alibaba&#x27;s Qwen 3.5 Model Surpasses Trillion-Parameter Models at Lower Cost",
+            "content": "Alibaba has introduced Qwen 3.5, a new AI model that outperforms its trillion-parameter predecessors while being more cost-effective. The Qwen 3.5-397B-A17B model boasts 397 billion parameters but efficiently activates only 17 billion, optimizing performance and resource use. This release, coinciding with the Lunar New Year, highlights Alibaba&#x27;s commitment to delivering powerful AI solutions that are accessible to enterprises. The model&#x27;s efficiency presents a compelling option for businesses seeking high-performance AI without the associated high costs. This development could influence future AI model design, emphasizing efficiency without sacrificing capability.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/alibabas-qwen-3-5-397b-a17-beats-its-larger-trillion-parameter-model-at-a",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -342,6 +271,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2021-22175",
+            "dateAdded": "Feb 18, 2026",
+            "vendor": "GitLab GitLab",
+            "description": "GitLab contains a server-side request forgery (SSRF) vulnerability when requests to the internal network for webhooks are enabled.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22175",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-22769",
+            "dateAdded": "Feb 18, 2026",
+            "vendor": "Dell RecoverPoint for Virtual Machines (RP4VMs)",
+            "description": "Dell RecoverPoint for Virtual Machines (RP4VMs) contains an use of hard-coded credentials vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access to the underlyin",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22769",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2020-7796",
             "dateAdded": "Feb 17, 2026",
             "vendor": "Synacor Zimbra Collaboration Suite",
@@ -394,50 +345,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1731",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20700",
-            "dateAdded": "Feb 12, 2026",
-            "vendor": "Apple Multiple Products",
-            "description": "Apple iOS, macOS, tvOS, watchOS, and visionOS contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow an attacker with memory write the capabi",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20700",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2024-43468",
-            "dateAdded": "Feb 12, 2026",
-            "vendor": "Microsoft Configuration Manager",
-            "description": "Microsoft Configuration Manager contains an SQL injection vulnerability. An unauthenticated attacker could exploit this vulnerability by sending specially crafted requests to the target environment wh",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43468",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-15556",
-            "dateAdded": "Feb 12, 2026",
-            "vendor": "Notepad++ Notepad++",
-            "description": "Notepad++ when using the WinGUp updater, contains a download of code without integrity check vulnerability that could allow an attacker to intercept or redirect update traffic to download and execute",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-15556",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-40536",
-            "dateAdded": "Feb 12, 2026",
-            "vendor": "SolarWinds Web Help Desk",
-            "description": "SolarWinds Web Help Desk contains a security control bypass vulnerability that could allow an unauthenticated attacker to gain access to certain restricted functionality.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40536",
             "isZeroDay": false
         }
     ],
