@@ -3073,6 +3073,15 @@
             }
         }
 
+        // Load theme preference
+        function loadThemePreference() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.body.classList.toggle('light-mode', savedTheme === 'light');
+                updateChartsTheme();
+            }
+        }
+
         // Dynamic Theme Colors (Global)
         function getThemeColors() {
             const isLight = document.body.classList.contains('light-mode');
