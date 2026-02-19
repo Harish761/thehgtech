@@ -143,6 +143,8 @@ function renderLeaderboard(topMalware) {
 function renderActivityFeed(recentIOCs) {
     const container = document.getElementById('activityFeed');
 
+    if (!container) return; // Prevent crash if element doesn't exist
+
     if (!recentIOCs || recentIOCs.length === 0) {
         container.innerHTML = '<p style="text-align:center;color:var(--text-muted);">No recent activity</p>';
         return;
