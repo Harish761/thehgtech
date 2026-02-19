@@ -105,7 +105,11 @@
                     // Render leaderboard
                     const leaderboard = document.getElementById('threatLeaderboard');
                     if (leaderboard && stats.topMalware) {
-                        leaderboard.innerHTML = renderLeaderboard(stats.topMalware);
+                        try {
+                            renderLeaderboard(stats.topMalware);
+                        } catch (e) {
+                            console.error('[Tabs] Failed to render leaderboard:', e);
+                        }
                     }
 
                     // Initialize charts
