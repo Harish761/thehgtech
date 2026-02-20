@@ -5,6 +5,110 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 20 2026",
+            "headline": "PayPal Data Breach Exposes User Info for 6 Months",
+            "title": "PayPal Data Breach Exposes Social Security Numbers Due to Software Error",
+            "content": "PayPal has alerted customers to a significant data breach caused by a software error in its loan application process that exposed sensitive personal information, including Social Security numbers, for nearly six months last year. The breach has raised concerns about the security of financial applications and the potential misuse of exposed data. Customers affected by this breach are advised to monitor their credit reports and consider placing fraud alerts on their accounts. This incident underscores the critical need for robust security measures in handling sensitive data. PayPal is currently working to rectify the issue and prevent future occurrences.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/paypal-discloses-data-breach-exposing-users-personal-information/",
+            "relatedResources": [
+                {
+                    "label": "SOC Analyst Fundamentals",
+                    "url": "/guides/soc-analyst-fundamentals.html",
+                    "icon": "fa-shield-alt"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "AI Accelerates Cyberattacks—Defense Struggles to Keep Up",
+            "title": "AI and Complexity Accelerate Cyberattacks, Outpacing Human Defenders",
+            "content": "The integration of artificial intelligence (AI) into cybercriminal operations has significantly reduced the time required to execute attacks, according to a report by CSO Online. This rapid acceleration is compressing the window between initial compromise and the manifestation of negative impacts, challenging human defenders to keep pace. As AI tools become more sophisticated, they enable attackers to automate and scale their operations, making it imperative for cybersecurity teams to adopt AI-enhanced defense strategies. Organizations are urged to invest in AI-driven security solutions and enhance their incident response capabilities to mitigate these evolving threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4135199/ki-und-komplexitat-als-brandbeschleuniger-fur-cyberkriminelle.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "BeyondTrust Flaw Exploited in Ransomware—CISA Issues Alert",
+            "title": "BeyondTrust Vulnerability CVE-2026-1731 Exploited in Ransomware Attacks",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has updated its Known Exploited Vulnerabilities (KEV) catalog to include CVE-2026-1731, a critical vulnerability in BeyondTrust software that has been exploited in ransomware attacks. This flaw allows attackers to gain unauthorized access to systems, posing a severe risk to organizations using the affected versions. Security professionals are advised to apply patches immediately to mitigate the risk of exploitation. This development highlights the ongoing threat posed by vulnerabilities in widely-used security software and the importance of timely patch management.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/beyondtrust-vulnerability-exploited-in-ransomware-attacks/",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "ClickFix Campaign Delivers MIMICRAT RAT via Compromised Sites",
+            "title": "ClickFix Campaign Uses Compromised Sites to Deploy MIMICRAT RAT",
+            "content": "Cybersecurity researchers have uncovered the ClickFix campaign, which leverages compromised legitimate websites to distribute a new remote access trojan (RAT) known as MIMICRAT, also referred to as AstarionRAT. This campaign demonstrates a high level of operational sophistication by exploiting trusted sites to bypass security measures. Organizations are advised to monitor network traffic for unusual activity and implement robust security controls to detect and block such threats. The emergence of MIMICRAT highlights the evolving tactics of cybercriminals and the necessity for continuous vigilance in cybersecurity practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/clickfix-campaign-abuses-compromised.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "Ransomware Shuts Down Mississippi Medical Clinics Statewide",
+            "title": "Mississippi Medical Center Closes Clinics After Ransomware Attack",
+            "content": "The University of Mississippi Medical Center (UMMC) has been forced to close all clinic locations across the state following a ransomware attack. This disruption impacts thousands of patients who rely on these facilities for medical care. The attack underscores the vulnerability of healthcare systems to cyber threats and the potential consequences for patient care. UMMC is working with cybersecurity experts to investigate the breach and restore operations. Healthcare organizations are reminded to strengthen their cybersecurity defenses and ensure that comprehensive incident response plans are in place.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/university-of-mississippi-medical-center-closes-clinics-after-ransomware-attack/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "$20M Lost in 700 ATM Jackpotting Attacks—FBI Reports",
+            "title": "FBI Reports $20 Million Losses from 700 ATM Jackpotting Attacks in 2025",
+            "content": "The FBI has reported that ATM jackpotting attacks in 2025, involving the Ploutus malware, resulted in $20 million in losses across 700 incidents. Despite being over a decade old, Ploutus continues to be used effectively by cybercriminals to exploit ATM vulnerabilities. Financial institutions are urged to review their ATM security protocols and implement measures to detect and prevent such attacks. This report highlights the persistent threat posed by legacy malware and the need for continuous vigilance and adaptation in cybersecurity strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fbi-20-million-losses-caused-by-700-atm-jackpotting-attacks-in-2025/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "Identity Cyber Scores Reshape Cyber Insurance in 2026",
+            "title": "Identity Cyber Scores Become Key Metric in Cyber Insurance Assessments",
+            "content": "With a third of cyber-attacks now involving compromised employee accounts, insurers and regulators are increasingly focusing on identity posture as a critical component of cyber risk assessment. The introduction of identity cyber scores aims to provide a clearer picture of an organization&#x27;s security stance, factoring in elements like password hygiene and privileged access management. However, many organizations find these assessments opaque and challenging to navigate. Companies are encouraged to improve their identity management practices and seek transparency in insurance evaluations to better understand and mitigate their cyber risk.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/identity-cyber-scores-new-metric.html",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
             "headline": "ISC Stormcast Highlights Latest Cyber Threats",
             "title": "ISC Stormcast Discusses Current Cybersecurity Landscape and Emerging Threats",
             "content": "The SANS Internet Storm Center&#x27;s latest podcast, ISC Stormcast for February 20th, 2026, provides insights into the current cybersecurity landscape. The episode covers a range of topics including emerging threats, recent vulnerabilities, and practical advice for IT professionals. The InfoCON level remains at green, indicating a stable threat environment. Listeners are encouraged to stay informed about the latest security updates and trends. The podcast serves as a valuable resource for security professionals seeking to enhance their threat detection and response strategies.",
@@ -33,68 +137,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 19 2026",
-            "headline": "Ukrainian Jailed 5 Years for Aiding North Korean Cyber Scheme",
-            "title": "Ukrainian Facilitator of North Korean Remote Worker Scheme Sentenced",
-            "content": "Oleksandr Didenko has been sentenced to five years in prison for his role in facilitating a scheme that allowed North Korean operatives to gain remote employment with 40 U.S. businesses. Didenko managed laptop farms and provided false identities, enabling the operatives to infiltrate companies under the guise of legitimate workers. This case highlights the ongoing threat of nation-state actors exploiting remote work vulnerabilities. Organizations are urged to strengthen identity verification processes and monitor for unusual activities that may indicate insider threats.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/doj-ukrainian-north-korea-remote-worker-scheme-facilitator-sentenced/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "Android Malware Uses Generative AI for Stealth",
-            "title": "PromptSpy Malware Leverages Generative AI to Evade Detection",
-            "content": "Researchers have uncovered PromptSpy, the first known Android malware to integrate generative AI into its execution flow. Utilizing Google&#x27;s Gemini model, PromptSpy adapts its persistence mechanisms across different devices, making it difficult to detect and remove. This development marks a significant evolution in malware sophistication, leveraging AI to enhance stealth capabilities. Android users are advised to exercise caution when downloading apps and to keep security software updated. The discovery of PromptSpy underscores the need for advanced detection techniques in combating AI-powered threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/promptspy-is-the-first-known-android-malware-to-use-generative-ai-at-runtime/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "Supply Chain Attack Hits Cline Users with OpenClaw",
-            "title": "Malicious Cline npm Package Installs OpenClaw on Thousands of Systems",
-            "content": "A supply chain attack involving Cline&#x27;s npm package version 2.3.0 has been uncovered, with over 4,000 downloads before removal. The malicious package secretly installed OpenClaw, a backdoor that allows attackers to execute arbitrary code. This incident highlights the vulnerabilities in software supply chains and the importance of verifying package integrity. Developers using Cline are urged to audit their systems for unauthorized changes and update to secure versions immediately. The attack serves as a reminder of the critical need for robust supply chain security measures.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/supply-chain-attack-openclaw-cline-users",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "Starkiller Phishing Kit Bypasses MFA with Ease",
-            "title": "Starkiller Phishing Kit Evades Detection by Proxying Legitimate Sites",
-            "content": "The Starkiller phishing-as-a-service (PhaaS) kit has emerged as a potent tool capable of bypassing multifactor authentication (MFA) by live-proxying legitimate login sites. This user-friendly kit allows attackers to mimic real login pages, capturing credentials and session tokens. Organizations are advised to implement advanced phishing detection solutions and educate employees on identifying phishing attempts. The rise of sophisticated PhaaS offerings like Starkiller signals a growing threat to traditional MFA defenses and underscores the need for continuous security innovation.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/starkiller-phishing-kit-mfa",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "NIST Launches Initiative on Agentic AI Standards",
-            "title": "NIST Announces AI Agent Standards Initiative to Guide Future Development",
-            "content": "The National Institute of Standards and Technology (NIST) has launched the AI Agent Standards Initiative, a new effort to address challenges associated with agentic AI. This initiative aims to develop a comprehensive roadmap for safe and confident adoption of AI technologies. As AI systems become increasingly autonomous, establishing standards is crucial to ensure ethical and secure deployment. Stakeholders from various sectors are invited to participate in this listening exercise to shape the future of AI governance. The initiative reflects the growing importance of regulating AI advancements responsibly.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4134743/us-dominance-of-agentic-ai-at-the-heart-of-new-nist-initiative.html",
-            "relatedResources": []
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -120,6 +162,93 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Feb 20 2026",
+            "headline": "Space-Bound AI Centers—A Solution to Earthly Strain?",
+            "title": "Could AI Data Centers Be Moved to Outer Space?",
+            "content": "As the environmental impact of generative AI data centers grows, a novel proposal suggests relocating these massive infrastructures to space. The concept aims to mitigate the substantial carbon footprint and land use associated with terrestrial data centers. Technological advancements in satellite deployment and space logistics could facilitate this transition, offering a sustainable alternative for energy-intensive AI operations. The move could also reduce heat emissions and resource consumption on Earth. However, the feasibility of such an endeavor depends on overcoming significant engineering, cost, and regulatory challenges. Industry leaders and environmentalists are closely watching developments in this area.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/could-we-put-ai-data-centers-in-space/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "G42 and Cerebras Bring 8 Exaflops to India",
+            "title": "UAE’s G42 Teams Up with Cerebras to Deploy 8 Exaflops of Compute in India",
+            "content": "Abu Dhabi-based G42 has partnered with American chipmaker Cerebras Systems to introduce a groundbreaking computing system in India, offering eight exaflops of processing power. This collaboration aims to enhance AI capabilities, supporting complex machine learning models and large-scale data analytics. The deployment is expected to significantly bolster India&#x27;s technological infrastructure, providing a competitive edge in AI research and development. The move also reflects a growing trend of international tech partnerships aimed at expanding AI capabilities in emerging markets. Organizations in India can anticipate improved AI-driven solutions across various sectors.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/20/uaes-g42-teams-up-with-cerebras-to-deploy-8-exaflops-of-compute-in-india/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "Presearch&#x27;s &quot;Doppelgänger&quot; Offers Ethical Adult Content Discovery",
+            "title": "The Search Engine for OnlyFans Models Who Look Like Your Crush",
+            "content": "Presearch has unveiled &quot;Doppelgänger,&quot; a search engine designed to ethically connect users with adult content creators resembling personal acquaintances, without resorting to nonconsensual deepfakes. This tool leverages AI to match physical characteristics, offering a legitimate alternative to illicit deepfake content. The initiative addresses growing concerns over privacy violations and the unauthorized use of AI-generated imagery. By promoting consensual content discovery, Presearch aims to protect creators&#x27; rights and user privacy. This development underscores the ongoing ethical debates surrounding AI in adult entertainment and digital privacy.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/the-search-engine-for-onlyfans-models-who-look-like-your-crush/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "AI&#x27;s Modest Impact on Productivity—Executives Remain Hopeful",
+            "title": "AI: Executives’ Optimism About the Future",
+            "content": "A comprehensive international study surveying nearly 6,000 executives across four countries reveals that AI has delivered modest productivity and employment shifts over the past three years. Despite these limited impacts, executives express optimism about AI&#x27;s future potential to drive significant business transformations. The findings suggest that while AI adoption is widespread, its full capabilities have yet to be realized in many sectors. This optimism is fueled by ongoing advancements and increased investments in AI technologies. Businesses are encouraged to continue exploring AI&#x27;s potential to enhance efficiency and innovation.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-impact-executives-optimism-for-the-future/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "Coca-Cola Leverages AI to Shift Marketing Strategy",
+            "title": "Coca-Cola Turns to AI Marketing as Price-Led Growth Slows",
+            "content": "Coca-Cola is pivoting from its traditional price-driven growth strategy to one focused on AI-enhanced marketing and consumer influence. As price hikes lose their efficacy, the beverage giant is investing in AI technologies to better understand consumer preferences and tailor marketing campaigns. This strategic shift highlights the growing role of AI in corporate marketing, as companies seek innovative ways to engage customers. Coca-Cola&#x27;s approach may serve as a model for other corporations facing similar market challenges, emphasizing the importance of data-driven decision-making in modern business.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/coca-cola-turns-to-ai-marketing-as-price-led-growth-slows/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "General Catalyst&#x27;s $5B India Investment Boosts Tech Growth",
+            "title": "General Catalyst Commits $5B to India Over Five Years",
+            "content": "Venture capital firm General Catalyst has announced a substantial $5 billion investment in India over the next five years, a significant increase from its previous earmark of $500 million to $1 billion. This commitment underscores India&#x27;s growing importance as a hub for technological innovation and entrepreneurship. The funds will support startups and emerging companies across various sectors, including AI, fintech, and healthcare. By fostering local talent and innovation, General Catalyst aims to capitalize on India&#x27;s rapid digital transformation. This investment is expected to drive job creation and technological advancements in the region.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/19/general-catalyst-commits-5b-to-india-over-five-years/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "CX Platforms Exploited—700 Organizations Compromised",
+            "title": "How Attackers Hit 700 Organizations Through CX Platforms Your SOC Already Approved",
+            "content": "A recent cyberattack exploiting customer experience (CX) platforms has compromised 700 organizations, highlighting vulnerabilities in systems often trusted by security operation centers (SOCs). These platforms, which handle vast amounts of unstructured data like survey forms and call center transcripts, were used to infiltrate and trigger unauthorized workflows affecting payroll, CRM, and payment systems. The incident underscores the need for enhanced security measures and thorough vetting of third-party platforms. Organizations should reassess their SOC protocols to prevent similar breaches and ensure comprehensive data protection strategies are in place.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/cx-security-gaps-ai-stack-blind-spots",
+            "relatedResources": []
+        },
         {
             "date": "Feb 20 2026",
             "headline": "Google Gemini 3.1 Pro Sets New AI Benchmark Records",
@@ -169,65 +298,6 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "HBO&#x27;s The Pitt Delivers Intense AI-Driven Medical Drama",
-            "title": "HBO’s The Pitt Offers a Gripping AI-Enhanced Medical Series",
-            "content": "HBO&#x27;s new series, &quot;The Pitt,&quot; is captivating audiences with its intense portrayal of medical trauma, enhanced by AI-driven storytelling techniques. Each episode delves into the chaotic world of a hospital, featuring realistic medical scenarios that blur the line between drama and horror. The use of AI in scriptwriting and scene development adds a layer of authenticity and complexity, making the series a unique addition to medical dramas. As AI continues to influence creative industries, viewers and professionals should note the potential for AI to revolutionize storytelling and media production. The Pitt sets a new precedent for integrating technology into entertainment.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/881016/hbo-the-pitt-generative-ai-charting",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "Google Gemini 3.1 Pro: A New Era in AI Reasoning",
-            "title": "Google’s Gemini 3.1 Pro Enhances AI with On-Demand Reasoning",
-            "content": "Google has unveiled Gemini 3.1 Pro, an updated AI model that introduces adjustable reasoning capabilities, enhancing its utility across various applications. This feature allows users to tailor the model&#x27;s cognitive processes, making it adaptable to specific tasks and industries. As one of the most capable frontier models, Gemini 3.1 Pro continues to set benchmarks in AI performance. Its release underscores the rapid pace of AI advancements and the competitive landscape among tech giants. Organizations should consider integrating this model to benefit from its cutting-edge reasoning abilities, potentially transforming their operations and decision-making processes.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/google-gemini-3-1-pro-first-impressions-a-deep-think-mini-with-adjustable",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "Startup CEOs: AI to Replace Tasks, Not Workers",
-            "title": "AI Tools Seen as Complementary, Not Replacements, by Startup CEOs",
-            "content": "At the Web Summit in Qatar, the CEOs of Read AI and Lucidya shared their perspectives on AI&#x27;s impact on the workforce. Contrary to fears of widespread job displacement, they assert that AI tools are more likely to complement human roles by automating repetitive tasks. This view aligns with the trend of AI enhancing productivity and efficiency rather than replacing entire job functions. As AI continues to evolve, companies should focus on upskilling their workforce to work alongside AI systems. This approach could lead to a more dynamic and innovative work environment, leveraging the strengths of both humans and machines.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/19/web-summit-qatar-read-ai-lucidya-notetakers-customer-support/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "YouTube Tests Conversational AI on Smart TVs",
-            "title": "YouTube Experiments with Conversational AI for Enhanced TV Viewing",
-            "content": "YouTube is piloting a new feature that integrates conversational AI into smart TVs, allowing users to interact with the content in a more engaging way. This experimental tool enables viewers to ask questions related to the video they are watching, enhancing the interactive experience on larger screens. This development is part of YouTube&#x27;s ongoing efforts to innovate user interaction and content delivery. As AI becomes more integrated into everyday technology, developers and tech leaders should consider the implications for future content platforms. This experiment could signal a shift towards more personalized and responsive media consumption.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/19/youtubes-latest-experiment-brings-its-conversational-ai-tool-to-tvs/",
-            "relatedResources": []
         }
     ],
     "articles": {},
