@@ -588,6 +588,18 @@
     <noscript>
         <link rel="stylesheet" href="homepage-styles.css">
     </noscript>
+
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        // Inline theme set to avoid FOUC
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
 </head>
 
 <body>
@@ -633,27 +645,35 @@
 
     <!-- Bottom Navigation (5 items: Home, CVE, Intel, Articles, Guides) -->
     <nav class="m-bottom-nav m-only">
-        <a href="/" class="m-bottom-nav__item active">
-            <i class="fas fa-home"></i>
-            <span>Home</span>
-        </a>
-        <a href="/cve-tracker.html" class="m-bottom-nav__item">
-            <i class="fas fa-bug"></i>
-            <span>CVE</span>
-        </a>
-        <a href="/threat-intel.html" class="m-bottom-nav__item">
-            <i class="fas fa-shield-alt"></i>
-            <span>Intel</span>
-        </a>
-        <a href="/articles.html" class="m-bottom-nav__item">
-            <i class="fas fa-newspaper"></i>
-            <span>Articles</span>
-        </a>
-        <a href="/guides/" class="m-bottom-nav__item">
-            <i class="fas fa-book"></i>
-            <span>Guides</span>
-        </a>
-    </nav>
+    <a href="/" class="m-bottom-nav__item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="/index.html#news" class="m-bottom-nav__item">
+        <i class="fas fa-bolt"></i>
+        <span>News</span>
+    </a>
+    <a href="/cve-tracker.html" class="m-bottom-nav__item">
+        <i class="fas fa-bug"></i>
+        <span>CVE Tracker</span>
+    </a>
+    <a href="/threat-intel.html" class="m-bottom-nav__item">
+        <i class="fas fa-shield-alt"></i>
+        <span>Intel</span>
+    </a>
+    <a href="/articles.html" class="m-bottom-nav__item">
+        <i class="fas fa-newspaper"></i>
+        <span>Articles</span>
+    </a>
+    <a href="/guides/" class="m-bottom-nav__item">
+        <i class="fas fa-book"></i>
+        <span>Guides</span>
+    </a>
+    <a href="/workflows/" class="m-bottom-nav__item">
+        <i class="fas fa-project-diagram"></i>
+        <span>Workflows</span>
+    </a>
+</nav>
 
     <!-- Search Overlay -->
     <div class="m-search-overlay m-only">

@@ -230,6 +230,53 @@
                 wrapper.appendChild(hint);
             }
         });
+
+        // Auto-set active state for mobile bottom navigation globally mapped via url
+        const bottomNavItems = document.querySelectorAll('.m-bottom-nav__item');
+        if (bottomNavItems.length > 0) {
+            const currentPath = window.location.pathname;
+            const currentHash = window.location.hash;
+            let activeSet = false;
+
+            bottomNavItems.forEach(item => {
+                // remove statically rendered active state
+                item.classList.remove('active');
+
+                const href = item.getAttribute('href');
+                if (!href) return;
+
+                // Match exact paths
+                if (href === currentPath || (href === '/' && currentPath === '/index.html')) {
+                    item.classList.add('active');
+                    activeSet = true;
+                    // Auto scroll the nav to ensure the active item is visible
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                }
+                // Special match for hash routes like /#news or index.html#news
+                else if (href.includes('#') && (currentPath + currentHash).includes(href.replace('/index.html', '').replace('/', ''))) {
+                    item.classList.add('active');
+                    activeSet = true;
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                }
+                // Partial match for nested routes (e.g. /guides/xxx matching /guides/)
+                else if (href !== '/' && currentPath.startsWith(href)) {
+                    item.classList.add('active');
+                    activeSet = true;
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                }
+            });
+
+            // Fallback for sub-pages to match their top-level directory
+            if (!activeSet) {
+                if (currentPath.includes('/guides/')) {
+                    const guidesTab = document.querySelector('.m-bottom-nav__item[href*="/guides"]');
+                    if (guidesTab) { guidesTab.classList.add('active'); guidesTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); }
+                } else if (currentPath.includes('/articles/')) {
+                    const articlesTab = document.querySelector('.m-bottom-nav__item[href*="/articles"]');
+                    if (articlesTab) { articlesTab.classList.add('active'); articlesTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); }
+                }
+            }
+        }
     });
 
     // Export to global scope

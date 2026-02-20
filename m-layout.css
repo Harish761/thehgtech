@@ -206,11 +206,26 @@
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
-        justify-content: space-evenly !important;
+        justify-content: flex-start !important;
+        gap: 4px !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        white-space: nowrap !important;
+        scrollbar-width: none !important;
+        /* Firefox */
+        -ms-overflow-style: none !important;
+        /* IE/Edge */
         z-index: 99999 !important;
         width: 100% !important;
         box-sizing: border-box !important;
         box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.4) !important;
+        -webkit-overflow-scrolling: touch !important;
+        /* Smooth scrolling on iOS */
+    }
+
+    /* Hide scrollbar for Chrome/Safari */
+    .m-bottom-nav::-webkit-scrollbar {
+        display: none !important;
     }
 
     [data-theme="light"] .m-bottom-nav,
@@ -226,8 +241,8 @@
         align-items: center !important;
         justify-content: center !important;
         gap: 6px !important;
-        flex: 1 !important;
-        max-width: 80px !important;
+        flex: 0 0 auto !important;
+        width: 75px !important;
         height: 56px !important;
         padding: 8px 12px !important;
         color: rgba(255, 255, 255, 0.45) !important;
