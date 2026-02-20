@@ -4,31 +4,27 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 19 2026",
-            "headline": "ShinyHunters Leak: 1M Figure User Records Exposed",
-            "title": "Figure Data Breach Compromises Nearly 1 Million User Records",
-            "content": "Blockchain-based lender Figure has confirmed a significant data breach, with over 2GB of user data leaked by the hacking group ShinyHunters. Nearly one million user records were compromised, raising concerns over the security of blockchain financial platforms. The breach highlights vulnerabilities in data protection practices within the blockchain industry. Users are advised to monitor their accounts for suspicious activity and consider changing passwords. This incident underscores the ongoing threat posed by cybercriminal groups targeting financial services.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/nearly-1-million-user-records-compromised-in-figure-data-breach/",
+            "date": "Feb 20 2026",
+            "headline": "ISC Stormcast Highlights Latest Cyber Threats",
+            "title": "ISC Stormcast Discusses Current Cybersecurity Landscape and Emerging Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest podcast, ISC Stormcast for February 20th, 2026, provides insights into the current cybersecurity landscape. The episode covers a range of topics including emerging threats, recent vulnerabilities, and practical advice for IT professionals. The InfoCON level remains at green, indicating a stable threat environment. Listeners are encouraged to stay informed about the latest security updates and trends. The podcast serves as a valuable resource for security professionals seeking to enhance their threat detection and response strategies.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32732",
             "relatedResources": []
         },
         {
-            "date": "Feb 19 2026",
-            "headline": "Texas Sues TP-Link—Alleges Router Security Deception",
-            "title": "Texas Lawsuit Accuses TP-Link of Router Security Misrepresentation",
-            "content": "The state of Texas has filed a lawsuit against TP-Link Systems, alleging the company falsely marketed its routers as secure while allowing Chinese state-sponsored hackers to exploit firmware vulnerabilities. The lawsuit claims these vulnerabilities enabled unauthorized access to users&#x27; devices, posing significant privacy and security risks. This legal action highlights growing concerns over the security of networking equipment and the potential for foreign interference. TP-Link users should ensure their devices are updated with the latest firmware patches to mitigate risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/texas-sues-tp-link-over-chinese-hacking-risks-user-deception/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "Microsoft Entra Accounts Hit by Device Code Vishing",
-            "title": "Hackers Exploit Device Code Vishing to Target Microsoft Entra Accounts",
-            "content": "Cybercriminals are targeting Microsoft Entra accounts in a sophisticated campaign combining device code phishing and voice phishing (vishing) attacks. These attacks exploit the OAuth 2.0 Device Authorization flow, primarily affecting technology, manufacturing, and financial organizations. By abusing this flow, attackers can gain unauthorized access to sensitive accounts, posing severe security threats. Organizations using Microsoft Entra should review their security protocols and consider implementing multi-factor authentication to protect against such attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-entra-accounts-in-device-code-vishing-attacks/",
+            "date": "Feb 20 2026",
+            "headline": "Phishing Campaign Bypasses Microsoft 365 MFA Protections",
+            "title": "New Phishing Campaign Exploits OAuth to Bypass Microsoft 365 MFA",
+            "content": "A sophisticated phishing campaign has been identified targeting North American businesses by exploiting OAuth device registration to bypass Microsoft 365&#x27;s multifactor authentication (MFA). Researchers at KnowBe4 discovered that the attackers trick employees into clicking malicious links, leading to unauthorized access. This campaign highlights the vulnerabilities in MFA implementations and the increasing sophistication of phishing attacks. Organizations are advised to enhance security training and consider additional protective measures beyond traditional MFA. This incident underscores the need for continuous vigilance and adaptation in cybersecurity practices.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4134874/new-phishing-campaign-tricks-employees-into-bypassing-microsoft-365-mfa.html",
             "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "API Security Best Practices",
                     "url": "/guides/api-security-best-practices.html",
@@ -38,80 +34,64 @@ const websiteContent = {
         },
         {
             "date": "Feb 19 2026",
-            "headline": "Venice Security Secures $33M for Access Management Solutions",
-            "title": "Venice Security Launches with $33M Funding for Privileged Access Management",
-            "content": "Venice Security, formerly known as Valkyrie, has emerged from stealth mode with $33 million in funding to enhance privileged access management solutions. The funding includes a $25 million Series A round, signaling strong investor confidence in the company&#x27;s innovative approach to access management. As cyber threats targeting privileged accounts continue to rise, Venice Security aims to provide robust solutions to safeguard critical assets. Organizations should evaluate their access management strategies to address potential vulnerabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/venice-security-emerges-from-stealth-with-33m-funding-for-privileged-access-management/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "OpenClaw Framework Exposed—6 Critical Flaws Found",
-            "title": "Researchers Discover Six Critical Flaws in OpenClaw AI Framework",
-            "content": "Security researchers at Endor Labs have identified six high-to-critical vulnerabilities in the open-source AI agent framework OpenClaw. Known as &quot;social media for AI agents,&quot; OpenClaw&#x27;s flaws were uncovered through AI-driven static application security testing. These vulnerabilities could allow attackers to manipulate AI agent interactions, posing significant security risks. Organizations using OpenClaw should prioritize patching these vulnerabilities to prevent potential exploitation. This discovery highlights the importance of rigorous security testing in AI development.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4134540/six-flaws-found-hiding-in-openclaws-plumbing.html",
+            "headline": "Ukrainian Jailed 5 Years for Aiding North Korean Cyber Scheme",
+            "title": "Ukrainian Facilitator of North Korean Remote Worker Scheme Sentenced",
+            "content": "Oleksandr Didenko has been sentenced to five years in prison for his role in facilitating a scheme that allowed North Korean operatives to gain remote employment with 40 U.S. businesses. Didenko managed laptop farms and provided false identities, enabling the operatives to infiltrate companies under the guise of legitimate workers. This case highlights the ongoing threat of nation-state actors exploiting remote work vulnerabilities. Organizations are urged to strengthen identity verification processes and monitor for unusual activities that may indicate insider threats.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/doj-ukrainian-north-korea-remote-worker-scheme-facilitator-sentenced/",
             "relatedResources": []
         },
         {
             "date": "Feb 19 2026",
-            "headline": "Ivanti Zero-Days Exploited Since July 2025—Urgent Action Needed",
-            "title": "Surge in Ivanti Exploitation Linked to Zero-Day Attacks from 2025",
-            "content": "Security researchers have traced the exploitation of Ivanti vulnerabilities back to July 2025, with attackers using zero-day flaws to deliver shells, conduct reconnaissance, and download malware. This surge in exploitation underscores the critical need for timely patching and vulnerability management. Organizations using Ivanti products should review their security posture and apply available patches to mitigate these risks. The ongoing exploitation highlights the persistent threat posed by unpatched software vulnerabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ivanti-exploitation-surges-as-zero-day-attacks-traced-back-to-july-2025/",
+            "headline": "Android Malware Uses Generative AI for Stealth",
+            "title": "PromptSpy Malware Leverages Generative AI to Evade Detection",
+            "content": "Researchers have uncovered PromptSpy, the first known Android malware to integrate generative AI into its execution flow. Utilizing Google&#x27;s Gemini model, PromptSpy adapts its persistence mechanisms across different devices, making it difficult to detect and remove. This development marks a significant evolution in malware sophistication, leveraging AI to enhance stealth capabilities. Android users are advised to exercise caution when downloading apps and to keep security software updated. The discovery of PromptSpy underscores the need for advanced detection techniques in combating AI-powered threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/promptspy-is-the-first-known-android-malware-to-use-generative-ai-at-runtime/",
             "relatedResources": [
                 {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
             "date": "Feb 19 2026",
-            "headline": "AI Oversights: Rapid Exploitation Threatens Cloud Security",
-            "title": "AI-Induced Oversights Collapse Response Windows in Cloud Security",
-            "content": "Recent analysis highlights how AI-related oversights, such as granting overly broad permissions and neglecting to revoke temporary API keys, can rapidly escalate into security breaches. These oversights can significantly shorten the response window, leaving cloud environments vulnerable to exploitation. This trend emphasizes the need for stringent access controls and regular audits of cloud workloads. Security professionals should prioritize implementing AI-aware security practices to prevent potential data breaches and safeguard cloud infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/from-exposure-to-exploitation-how-ai.html",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
+            "headline": "Supply Chain Attack Hits Cline Users with OpenClaw",
+            "title": "Malicious Cline npm Package Installs OpenClaw on Thousands of Systems",
+            "content": "A supply chain attack involving Cline&#x27;s npm package version 2.3.0 has been uncovered, with over 4,000 downloads before removal. The malicious package secretly installed OpenClaw, a backdoor that allows attackers to execute arbitrary code. This incident highlights the vulnerabilities in software supply chains and the importance of verifying package integrity. Developers using Cline are urged to audit their systems for unauthorized changes and update to secure versions immediately. The attack serves as a reminder of the critical need for robust supply chain security measures.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/supply-chain-attack-openclaw-cline-users",
+            "relatedResources": []
         },
         {
             "date": "Feb 19 2026",
-            "headline": "ISC Stormcast: February 19th Threat Landscape Overview",
-            "title": "ISC Stormcast Highlights Current Cybersecurity Threats and Trends",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast provides a comprehensive overview of the current cybersecurity threats and trends as of February 19th, 2026. The report emphasizes the importance of staying vigilant against emerging threats, particularly in light of recent vulnerabilities and attack vectors. With InfoCON status at green, the report suggests a stable threat environment but advises continued monitoring of network traffic and system logs. Security professionals are encouraged to review the latest patches and updates to secure their systems against potential exploits. The Stormcast serves as a critical resource for understanding the evolving cybersecurity landscape.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32728",
+            "headline": "Starkiller Phishing Kit Bypasses MFA with Ease",
+            "title": "Starkiller Phishing Kit Evades Detection by Proxying Legitimate Sites",
+            "content": "The Starkiller phishing-as-a-service (PhaaS) kit has emerged as a potent tool capable of bypassing multifactor authentication (MFA) by live-proxying legitimate login sites. This user-friendly kit allows attackers to mimic real login pages, capturing credentials and session tokens. Organizations are advised to implement advanced phishing detection solutions and educate employees on identifying phishing attempts. The rise of sophisticated PhaaS offerings like Starkiller signals a growing threat to traditional MFA defenses and underscores the need for continuous security innovation.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/starkiller-phishing-kit-mfa",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
                 }
             ]
         },
         {
             "date": "Feb 19 2026",
-            "headline": "Can America Shut Down Europe&#x27;s Internet? Experts Debate",
-            "title": "Tech Sovereignty: Could the US Disable Europe&#x27;s Internet Infrastructure?",
-            "content": "In the latest episode of the Smashing Security podcast, Graham Cluley and guest James Ball explore the provocative question of whether the United States could disable Europe&#x27;s internet infrastructure. The discussion centers on tech sovereignty and the geopolitical implications of reliance on US-based services like Gmail and cloud platforms. They examine the potential for these services to be used as leverage in international disputes and the feasibility of developing independent infrastructure. The episode highlights the growing importance of tech sovereignty in global politics and the need for strategic planning in critical infrastructure management.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-455/",
+            "headline": "NIST Launches Initiative on Agentic AI Standards",
+            "title": "NIST Announces AI Agent Standards Initiative to Guide Future Development",
+            "content": "The National Institute of Standards and Technology (NIST) has launched the AI Agent Standards Initiative, a new effort to address challenges associated with agentic AI. This initiative aims to develop a comprehensive roadmap for safe and confident adoption of AI technologies. As AI systems become increasingly autonomous, establishing standards is crucial to ensure ethical and secure deployment. Stakeholders from various sectors are invited to participate in this listening exercise to shape the future of AI governance. The initiative reflects the growing importance of regulating AI advancements responsibly.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4134743/us-dominance-of-agentic-ai-at-the-heart-of-new-nist-initiative.html",
             "relatedResources": []
         },
         {
@@ -141,21 +121,47 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 19 2026",
-            "headline": "Altman, Amodei Awkwardly Avoid Unity Gesture at AI Summit",
-            "title": "Altman and Amodei Decline Unity Gesture at India’s AI Summit",
-            "content": "During India’s major AI summit, an awkward moment unfolded when Prime Minister Narendra Modi asked speakers to join hands in a symbolic gesture of unity. While most executives complied, OpenAI&#x27;s Sam Altman and Anthropic&#x27;s Dario Amodei notably refrained, keeping their hands apart. This incident highlights potential underlying tensions or differing perspectives among leading AI figures. The summit, a key event in India&#x27;s tech calendar, aimed to foster collaboration among AI leaders. Observers speculate on the implications of this moment for future partnerships and collaborations in the AI sector.",
+            "date": "Feb 20 2026",
+            "headline": "Google Gemini 3.1 Pro Sets New AI Benchmark Records",
+            "title": "Google’s Gemini 3.1 Pro Achieves Unprecedented Benchmark Scores",
+            "content": "Google&#x27;s latest AI model, Gemini 3.1 Pro, has achieved record-breaking benchmark scores, showcasing its enhanced capabilities in handling complex tasks. This update to the Gemini series highlights significant improvements in language processing and understanding, positioning it as a leader in the large language model (LLM) space. The model&#x27;s advanced architecture allows for more nuanced reasoning and decision-making, making it particularly valuable for industries requiring high-level cognitive tasks. As AI continues to evolve rapidly, businesses and developers should explore integrating Gemini 3.1 Pro to leverage its sophisticated analytical abilities. Google&#x27;s commitment to pushing the boundaries of AI performance sets a new standard for competitors.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/19/altman-and-amodei-share-a-moment-of-awkwardness-at-indias-big-ai-summit/",
-            "relatedResources": []
+            "sourceUrl": "https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
         },
         {
-            "date": "Feb 19 2026",
-            "headline": "AI Replaces Spreadsheets in Treasury Management",
-            "title": "AI Transforms Enterprise Treasury Management with Automated Data Pipelines",
-            "content": "The integration of AI into enterprise treasury management is revolutionizing corporate finance by replacing manual spreadsheets with automated data pipelines. This shift is driven by market volatility, regulatory demands, and the need for digital finance solutions. Ashish Kumar, head of Infosys Oracle Sales, highlights the efficiency gains and improved accuracy that AI brings to financial operations. Companies adopting AI can expect streamlined processes and enhanced decision-making capabilities. As businesses embrace this technology, finance departments must adapt to new workflows and data management practices.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/how-ai-upgrades-enterprise-treasury-management/",
+            "date": "Feb 20 2026",
+            "headline": "Nvidia Boosts India’s AI Startups with Strategic Partnerships",
+            "title": "Nvidia Strengthens Ties with India’s Emerging AI Startup Ecosystem",
+            "content": "Nvidia has announced a strategic initiative to deepen its engagement with India&#x27;s burgeoning AI startup sector. By collaborating with investors, nonprofits, and venture firms, Nvidia aims to establish early-stage connections with innovative AI founders in the region. This move is part of Nvidia&#x27;s broader strategy to support and nurture emerging technologies globally, ensuring a robust pipeline of AI-driven solutions. The initiative is expected to accelerate the growth of India&#x27;s AI ecosystem, providing startups with access to Nvidia&#x27;s resources and expertise. Professionals in the AI field should watch for new opportunities and collaborations arising from this targeted investment.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/19/nvidia-deepens-early-stage-push-into-indias-ai-startup-ecosystem/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "Train AI Models for Free with Unsloth and Hugging Face",
+            "title": "Unsloth and Hugging Face Offer Free AI Model Training",
+            "content": "Hugging Face, in collaboration with Unsloth, is now offering free AI model training opportunities to developers and researchers. This initiative aims to democratize access to advanced AI tools, enabling wider experimentation and innovation in the field. Participants can utilize Hugging Face&#x27;s robust platform to train models without incurring costs, significantly lowering the barrier to entry for AI development. This partnership reflects a growing trend towards open-access AI resources, fostering a more inclusive and collaborative tech community. Developers should consider leveraging this opportunity to enhance their projects and contribute to the evolving AI landscape.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/unsloth-jobs",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -166,11 +172,11 @@ const websiteContent = {
         },
         {
             "date": "Feb 19 2026",
-            "headline": "Freeform Secures $67M to Expand AI-Driven Manufacturing",
-            "title": "Freeform Raises $67M to Scale Laser AI Manufacturing Operations",
-            "content": "Freeform has successfully raised $67 million in a Series B funding round to expand its laser AI manufacturing capabilities. The company is unique in its field, boasting H200 clusters in its on-site data center, which supports its advanced manufacturing processes. This investment will enable Freeform to enhance its production efficiency and scale operations to meet growing demand. As AI continues to transform manufacturing, companies like Freeform are at the forefront of integrating cutting-edge technology into traditional production methods. Investors are betting on AI&#x27;s potential to revolutionize the manufacturing industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/19/freeform-raises-67m-series-b-to-scale-up-laser-ai-manufacturing/",
+            "headline": "HBO&#x27;s The Pitt Delivers Intense AI-Driven Medical Drama",
+            "title": "HBO’s The Pitt Offers a Gripping AI-Enhanced Medical Series",
+            "content": "HBO&#x27;s new series, &quot;The Pitt,&quot; is captivating audiences with its intense portrayal of medical trauma, enhanced by AI-driven storytelling techniques. Each episode delves into the chaotic world of a hospital, featuring realistic medical scenarios that blur the line between drama and horror. The use of AI in scriptwriting and scene development adds a layer of authenticity and complexity, making the series a unique addition to medical dramas. As AI continues to influence creative industries, viewers and professionals should note the potential for AI to revolutionize storytelling and media production. The Pitt sets a new precedent for integrating technology into entertainment.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/881016/hbo-the-pitt-generative-ai-charting",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -181,12 +187,17 @@ const websiteContent = {
         },
         {
             "date": "Feb 19 2026",
-            "headline": "Golden Pipelines Target Enterprise AI&#x27;s Data Bottleneck",
-            "title": "Solving the &#x27;Last-Mile&#x27; Data Problem in Enterprise Agentic AI",
-            "content": "The &#x27;last-mile&#x27; data problem is a significant hurdle for enterprise agentic AI, where traditional ETL (Extract, Transform, Load) tools like dbt or Fivetran fall short. These tools prepare data for structured analytics but struggle with the messy, evolving operational data required for real-time AI model inference. Empromptu introduces &quot;inference integration,&quot; a new approach to address these challenges. By creating &quot;golden pipelines,&quot; companies can streamline data preparation for AI applications, ensuring models receive the necessary data in real-time. This innovation is crucial for advancing enterprise AI capabilities and improving operational efficiency.",
+            "headline": "Google Gemini 3.1 Pro: A New Era in AI Reasoning",
+            "title": "Google’s Gemini 3.1 Pro Enhances AI with On-Demand Reasoning",
+            "content": "Google has unveiled Gemini 3.1 Pro, an updated AI model that introduces adjustable reasoning capabilities, enhancing its utility across various applications. This feature allows users to tailor the model&#x27;s cognitive processes, making it adaptable to specific tasks and industries. As one of the most capable frontier models, Gemini 3.1 Pro continues to set benchmarks in AI performance. Its release underscores the rapid pace of AI advancements and the competitive landscape among tech giants. Organizations should consider integrating this model to benefit from its cutting-edge reasoning abilities, potentially transforming their operations and decision-making processes.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/the-last-mile-data-problem-is-stalling-enterprise-agentic-ai-golden",
+            "sourceUrl": "https://venturebeat.com/technology/google-gemini-3-1-pro-first-impressions-a-deep-think-mini-with-adjustable",
             "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -196,36 +207,27 @@ const websiteContent = {
         },
         {
             "date": "Feb 19 2026",
-            "headline": "Reliance Unveils $110B AI Investment in India&#x27;s Tech Future",
-            "title": "Reliance Announces $110B AI Investment to Boost India&#x27;s Tech Ambitions",
-            "content": "Reliance Industries has announced a massive $110 billion investment plan to build AI data centers in Jamnagar, India. These multi-gigawatt facilities are expected to bring over 120 MW of capacity online by 2026, significantly boosting India&#x27;s technological infrastructure. This move aligns with India&#x27;s ambitions to become a global tech leader and reflects the growing importance of AI in various sectors. As the country invests heavily in AI, businesses and tech professionals can anticipate increased opportunities and advancements in AI-driven solutions. Reliance&#x27;s investment marks a pivotal moment in India&#x27;s tech evolution.",
+            "headline": "Startup CEOs: AI to Replace Tasks, Not Workers",
+            "title": "AI Tools Seen as Complementary, Not Replacements, by Startup CEOs",
+            "content": "At the Web Summit in Qatar, the CEOs of Read AI and Lucidya shared their perspectives on AI&#x27;s impact on the workforce. Contrary to fears of widespread job displacement, they assert that AI tools are more likely to complement human roles by automating repetitive tasks. This view aligns with the trend of AI enhancing productivity and efficiency rather than replacing entire job functions. As AI continues to evolve, companies should focus on upskilling their workforce to work alongside AI systems. This approach could lead to a more dynamic and innovative work environment, leveraging the strengths of both humans and machines.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/19/reliance-unveils-110b-ai-investment-plan-as-india-ramps-up-tech-ambitions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "AI Tool Fomi Monitors and Scolds Workplace Distractions",
-            "title": "Fomi AI Tool Monitors Productivity, Raises Privacy Concerns",
-            "content": "The AI tool Fomi is designed to enhance productivity by monitoring user activity and providing feedback when attention wanes. While it offers potential benefits for maintaining focus, the tool raises significant privacy issues. Fomi&#x27;s ability to track user behavior could lead to concerns over data security and employee surveillance. As companies consider implementing such tools, they must weigh the productivity gains against potential privacy infringements. This development highlights the ongoing debate around AI&#x27;s role in the workplace and the balance between efficiency and privacy.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/fomi-ai-will-tell-you-to-stop-slacking-off/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 19 2026",
-            "headline": "DBS Bank Tests AI for Customer Payment Automation",
-            "title": "DBS Bank Pilots AI System for Automated Customer Payments",
-            "content": "DBS Bank is piloting a new system that allows AI agents to make payments on behalf of customers, signaling a shift from advisory to action-oriented AI. This initiative represents a significant step in the evolution of financial services, where AI can autonomously complete transactions. The pilot involves collaboration with key technology partners to ensure security and efficiency. As financial institutions explore AI-driven solutions, customers can expect more seamless and automated banking experiences. However, this also raises questions about security and the role of human oversight in financial transactions.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/dbs-pilots-system-that-lets-ai-agents-make-payments-for-customers/",
+            "sourceUrl": "https://techcrunch.com/2026/02/19/web-summit-qatar-read-ai-lucidya-notetakers-customer-support/",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
+        },
+        {
+            "date": "Feb 19 2026",
+            "headline": "YouTube Tests Conversational AI on Smart TVs",
+            "title": "YouTube Experiments with Conversational AI for Enhanced TV Viewing",
+            "content": "YouTube is piloting a new feature that integrates conversational AI into smart TVs, allowing users to interact with the content in a more engaging way. This experimental tool enables viewers to ask questions related to the video they are watching, enhancing the interactive experience on larger screens. This development is part of YouTube&#x27;s ongoing efforts to innovate user interaction and content delivery. As AI becomes more integrated into everyday technology, developers and tech leaders should consider the implications for future content platforms. This experiment could signal a shift towards more personalized and responsive media consumption.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/19/youtubes-latest-experiment-brings-its-conversational-ai-tool-to-tvs/",
+            "relatedResources": []
         }
     ],
     "articles": {},
@@ -353,17 +355,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2441",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-1731",
-            "dateAdded": "Feb 13, 2026",
-            "vendor": "BeyondTrust Remote Support (RS) and Privileged Rem",
-            "description": "BeyondTrust Remote Support (RS) and Privileged Remote Access (PRA)contain an OS command injection vulnerability. Successful exploitation could allow an unauthenticated remote attacker to execute opera",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1731",
             "isZeroDay": false
         }
     ],
