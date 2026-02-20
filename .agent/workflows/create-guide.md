@@ -85,9 +85,22 @@ Create a professional cybersecurity presentation-style illustration.
 Must be placed **AFTER** `content` and **BEFORE** `footer`.
 ```html
 <div class="interaction-bar">
-    <!-- Like/Share Buttons code (Same as Article) -->
+    <div class="like-section">
+        <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+            <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+        </button>
+    </div>
+    <div class="action-buttons">
+        <div class="share-buttons">
+            <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+        </div>
+        <div class="button-separator"></div>
+        <button onclick="window.print()" class="print-btn" title="Print Guide"><i class="fas fa-print"></i></button>
+    </div>
 </div>
-<script src="/interaction-bar.js"></script>
+<script src="/interaction-bar.js?v=20260220"></script>
 ```
 
 ## 6. Required UI Components (Site Consistency)
@@ -123,29 +136,88 @@ Must be placed **AFTER** `<nav class="m-bottom-nav">` and **BEFORE** `<div class
         </div>
         <nav class="nav nav-modern" role="navigation">
             <a href="/index.html#news">News</a>
+            
+            <!-- Intelligence Dropdown -->
             <div class="nav-dropdown">
-                <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                <span class="nav-dropdown-trigger">
+                    Intelligence
+                    <span class="nav-live-badge">LIVE</span>
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                </span>
                 <div class="nav-dropdown-panel">
-                    <a href="/threat-intel.html" class="dropdown-item"><!-- Threat Intel --></a>
-                    <a href="/cve-tracker.html" class="dropdown-item"><!-- CVE Tracker --></a>
-                    <a href="/ransomware-tracker.html" class="dropdown-item"><!-- Ransomware --></a>
+                    <a href="/threat-intel.html" class="dropdown-item">
+                        <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                            <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                        </div>
+                    </a>
+                    <a href="/cve-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">CVE Tracker</div>
+                            <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                        </div>
+                    </a>
+                    <a href="/ransomware-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Ransomware Tracker</div>
+                            <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                        </div>
+                    </a>
                 </div>
             </div>
+            
+            <!-- Resources Dropdown -->
             <div class="nav-dropdown">
-                <span class="nav-dropdown-trigger">Resources <i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                <span class="nav-dropdown-trigger">
+                    Resources
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                </span>
                 <div class="nav-dropdown-panel">
-                    <a href="/guides/" class="dropdown-item"><!-- Guides --></a>
-                    <a href="/comparisons/" class="dropdown-item"><!-- Comparisons --></a>
-                    <a href="/articles.html" class="dropdown-item"><!-- Articles --></a>
+                    <a href="/guides/" class="dropdown-item">
+                        <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">37+</span></div>
+                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                        </div>
+                    </a>
+                    <a href="/comparisons/" class="dropdown-item">
+                        <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tool Comparisons</div>
+                            <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/articles.html" class="dropdown-item">
+                        <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Articles</div>
+                            <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                        </div>
+                    </a>
                 </div>
             </div>
+            
             <div class="theme-toggle-wrapper">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <div class="toggle-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+                    <div class="toggle-stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
                 </button>
             </div>
         </nav>
-        <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 ```
