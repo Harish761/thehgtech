@@ -100,110 +100,112 @@
 
         .article-image {
             width: 100%;
-            height: auto;
             border-radius: 12px;
-            margin-bottom: 3rem;
             border: 1px solid var(--border);
-            box-shadow: 0 4px 20px rgba(0, 217, 255, 0.1);
-        }
-
-        .article-content {
-            font-size: 1.15rem;
-            line-height: 1.8;
-            color: var(--text-normal);
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
         }
 
         .article-content h2 {
-            font-size: 2rem;
-            color: var(--text-bright);
-            margin: 3rem 0 1.5rem 0;
-            padding-bottom: 0.5rem;
+            font-size: 2.2rem;
+            color: var(--accent-cyan);
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
             border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
         }
 
         .article-content h3 {
-            font-size: 1.5rem;
-            color: var(--text-bright);
-            margin: 2rem 0 1rem 0;
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .article-content h4 {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #ccc;
         }
 
         .article-content p {
             margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: #dfdfdf;
+        }
+
+        .article-content strong {
+            color: #fff;
         }
 
         .article-content ul,
         .article-content ol {
             margin-bottom: 2rem;
             padding-left: 2rem;
+            color: #dfdfdf;
+            font-size: 1.15rem;
         }
 
         .article-content li {
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.8rem;
         }
 
-        .journalism-callout {
-            font-style: italic;
-            font-size: 1.4rem;
-            text-align: center;
-            padding: 2.5rem;
-            margin: 3rem 0;
-            background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(30, 30, 30, 0.8) 100%);
-            border-top: 2px solid var(--accent-cyan);
-            border-bottom: 2px solid var(--accent-cyan);
-            color: var(--text-bright);
-            letter-spacing: 0.5px;
-            border-radius: 8px;
-        }
-
-        .wrapper-diagram {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            background: rgba(10, 10, 10, 0.8);
+        .technical-box {
+            background: var(--bg-secondary);
             border: 1px solid var(--border);
-            border-radius: 12px;
+            border-left: 5px solid var(--accent-cyan);
             padding: 2rem;
+            border-radius: 8px;
             margin: 2.5rem 0;
-            font-family: 'Space Mono', monospace;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .wrapper-diagram .box {
-            padding: 1rem;
-            border-radius: 6px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .wrapper-diagram .user {
-            background: rgba(0, 217, 255, 0.1);
-            border: 1px solid var(--accent-cyan);
+        .technical-box h3 {
+            margin-top: 0;
             color: var(--accent-cyan);
+            font-size: 1.3rem;
         }
 
-        .wrapper-diagram .wrapper {
-            background: rgba(255, 61, 61, 0.1);
-            border: 1px dashed var(--accent-red);
+        .success-box {
+            background: rgba(34, 197, 94, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-left: 5px solid #22c55e;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .success-box h3 {
+            margin-top: 0;
+            color: #22c55e;
+            font-size: 1.3rem;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.05);
+            border: 1px solid rgba(255, 61, 61, 0.2);
+            border-left: 5px solid var(--accent-red);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .warning-box h3 {
+            margin-top: 0;
             color: var(--accent-red);
+            font-size: 1.3rem;
         }
 
-        .wrapper-diagram .true-model {
-            background: rgba(0, 255, 128, 0.1);
-            border: 1px solid #00ff80;
-            color: #00ff80;
-        }
-
-        .arrow-down {
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 1.5rem;
-        }
-
-        .investigative-box {
-            background-color: rgba(255, 61, 61, 0.05);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px 8px 8px 4px;
+        blockquote {
+            border-left: 5px solid var(--accent-cyan);
+            margin: 3rem 0;
+            padding: 1.5rem 2.5rem;
+            background: rgba(0, 217, 255, 0.05);
+            font-style: italic;
+            font-size: 1.35rem;
+            line-height: 1.6;
+            color: #fff;
         }
     </style>
 </head>
@@ -340,7 +342,8 @@
                     was pulsing with the electric hum of the future. From February 16th through the 21st, it hosted the
                     <strong>India AI Impact Summit 2026</strong>. Billed heavily by the IndiaAI Mission and the Ministry
                     of Electronics & IT, the goal was audacious but vital: to cement the Global South’s definitive voice
-                    in the artificial intelligence arms race.</p>
+                    in the artificial intelligence arms race.
+                </p>
 
                 <p>The overtures were grand. Over thirty countries participated. Three hundred exhibitors packed the
                     vast halls. In a stunning display of organizational mobilization, India set a new Guinness World
@@ -359,10 +362,10 @@
                     technological future found themselves fighting not just geopolitical rivals, but their own heavily
                     funded countrymen.</p>
 
-                <div class="journalism-callout">
+                <blockquote>
                     "The promise of 'AI for All' quickly devolved into 'AI for the Best UI Wrapper.' We are handing out
                     unicorn valuations to companies essentially operating as glorified API tollbooths."
-                </div>
+                </blockquote>
 
                 <h2>The Hardware Embarrassment: The Galgotias Incident</h2>
 
@@ -387,9 +390,10 @@
                     manufactured by Unitree Robotics, a firm based in Hangzhou, China. It is a product you can literally
                     add to an online shopping cart for a few thousand dollars.</p>
 
-                <div class="investigative-box">
-                    <strong><i class="fas fa-search"></i> Investigative Note: Hardware White-Labeling</strong>
-                    <p>The practice of "white-labeling" hardware—buying a manufactured product, removing the original
+                <div class="warning-box">
+                    <h3><i class="fas fa-search"></i> Investigative Note: Hardware White-Labeling</h3>
+                    <p style="margin-bottom: 0;">The practice of "white-labeling" hardware—buying a manufactured
+                        product, removing the original
                         badging, and applying one's own branding—is common in consumer electronics (like cheap Bluetooth
                         headphones). Applying this strategy to deep-tech robotics at a governmental summit celebrating
                         "Indigenous Innovation" crosses the line from marketing to deception.</p>
@@ -431,14 +435,22 @@
                     (like Anthropic or OpenAI), waits for the answer, and then serves it back to the user with a
                     customized logo strapped to the top.</p>
 
-                <div class="wrapper-diagram">
-                    <div class="box user">1. User Inputs Prompt to "Sovereign AI"</div>
-                    <div class="arrow-down"><i class="fas fa-arrow-down"></i></div>
-                    <div class="box wrapper">2. The "Wrapper" Startup (Zero compute cost, thin UI layer)</div>
-                    <div class="arrow-down"><i class="fas fa-arrow-down"></i></div>
-                    <div class="box true-model">3. Hidden API Call to OpenAI / Anthropic (California)</div>
-                    <div class="arrow-down"><i class="fas fa-arrow-up"></i></div>
-                    <div class="box wrapper">4. Response Stamped with "Made in India" Logo</div>
+                <div class="technical-box" style="text-align: center;">
+                    <h3>The Anatomy of a "Wrapper"</h3>
+                    <p style="margin-bottom: 1rem; color: #fff;"><strong>1. User Inputs Prompt to "Sovereign
+                            AI"</strong></p>
+                    <div style="font-size: 1.5rem; color: var(--accent-cyan); margin-bottom: 1rem;"><i
+                            class="fas fa-arrow-down"></i></div>
+                    <p style="margin-bottom: 1rem; color: var(--accent-red);"><strong>2. The "Wrapper" Startup (Zero
+                            compute cost, thin UI layer)</strong></p>
+                    <div style="font-size: 1.5rem; color: var(--accent-cyan); margin-bottom: 1rem;"><i
+                            class="fas fa-arrow-down"></i></div>
+                    <p style="margin-bottom: 1rem; color: #22c55e;"><strong>3. Hidden API Call to OpenAI / Anthropic
+                            (California)</strong></p>
+                    <div style="font-size: 1.5rem; color: var(--accent-cyan); margin-bottom: 1rem;"><i
+                            class="fas fa-arrow-up"></i></div>
+                    <p style="margin-bottom: 0; color: var(--accent-red);"><strong>4. Response Stamped with "Made in
+                            India" Logo</strong></p>
                 </div>
 
                 <p>For their part, Ola's leadership vehemently denied operating a simple wrapper. They published
@@ -471,7 +483,8 @@
                 <h3>1. Bhashini: The Public Infrastructure Triumphs</h3>
                 <p>Perhaps the most critical initiative in the Global South right now is the government-backed
                     <strong>Bhashini</strong> project. Rather than trying to build a conversational omni-bot to write
-                    marketing copy, Bhashini is focused on a fundamental human right: access to information. </p>
+                    marketing copy, Bhashini is focused on a fundamental human right: access to information.
+                </p>
                 <p>India consists of 22 official languages and hundreds of dialects. Bhashini is quietly building
                     massive open-source language datasets and localized models to break down these barriers. They are
                     creating the foundational data architecture that allows rural farmers, who may not speak English or
@@ -498,10 +511,10 @@
                     to tell a farmer in Punjab how to identify crop blight. That is what true technological sovereignty
                     looks like.</p>
 
-                <div class="journalism-callout">
+                <blockquote>
                     "We do not achieve technological independence by paying API taxes to Menlo Park. We achieve it by
                     building Small Language Models that can run on a $150 smartphone in an area with a 3G connection."
-                </div>
+                </blockquote>
 
                 <h2>The Dark Comedy of the Main Stage</h2>
 
@@ -558,26 +571,8 @@
             </div>
         </article>
 
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i
-                            class="fas fa-link"></i></button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="window.print()" class="print-btn" title="Print Article"><i
-                        class="fas fa-print"></i></button>
-            </div>
-        </div>
+        <!-- Dynamic Interaction Bar -->
+        <div class="interaction-bar"></div>
 
     </div>
 
