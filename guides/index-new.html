@@ -968,6 +968,7 @@
             }
         }
     </style>
+<link rel="stylesheet" href="../ui-enhancements.css?v=20260220">
 </head>
 
 <body>
@@ -1114,7 +1115,7 @@
     <!-- FEATURED -->
     <section class="featured-section">
         <a href="#" class="featured-card" id="featuredCard">
-            <div class="featured-image"><img src="" alt="" id="featuredImage"></div>
+            <div class="featured-image"><img src="" alt="" id="featuredImage" loading="lazy"></div>
             <div class="featured-content">
                 <div class="featured-label"><i class="fas fa-fire"></i> Featured Guide</div>
                 <div class="featured-category" id="featuredCategory">Loading...</div>
@@ -1288,6 +1289,7 @@
         document.getElementById('sortSelect').addEventListener('change', applyFilters);
         loadGuides();
     </script>
+<script src="../ui-enhancements.js?v=20260220" defer></script>
 </body>
 
 </html>
