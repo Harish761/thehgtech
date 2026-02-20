@@ -1339,12 +1339,99 @@
 
     <!-- Premium Hero Section (Left-Aligned CVE Style - Cyan) -->
     <section class="ti-hero">
-<style>
-@media (max-width: 768px) {
-    .hero-content { display: none; }
-    .category-section { margin-top: 2rem !important; }
-}
-</style>
+
+        <style>
+        @media (max-width: 768px) {
+            /* 1. Global Header */
+            .ti-hero { padding: 80px 1rem 0 !important; min-height: auto !important; background: transparent !important; }
+            .hero-title { font-size: 1.8rem !important; margin-bottom: 0.5rem !important; }
+            .hero-subtitle { font-size: 0.9rem !important; margin-bottom: 1rem !important; color: var(--text-secondary) !important; }
+            .hero-badge { margin-bottom: 1rem !important; }
+            .hero-stats { display: none !important; }
+
+            /* 2. Main Toggle (Tabs) */
+            .main-threat-tabs { margin: 1rem 1rem 0 1rem !important; padding: 0 !important; }
+            .main-tabs-nav { flex-direction: row !important; overflow-x: auto; gap: 0.5rem !important; padding: 0.5rem !important; border-radius: 12px !important; }
+            .main-tab-btn { flex: 0 0 auto !important; white-space: nowrap; padding: 0.75rem 1rem !important; font-size: 0.85rem !important; }
+
+            /* 3. Global Container Adjustments */
+            .container { padding-left: 0 !important; padding-right: 0 !important; }
+            .ioc-container, #ai-security-section { display: flex; flex-direction: column; }
+            
+            /* ---- TRADITIONAL IOC TAB ---- */
+            
+            /* Order Management */
+            #ioc-tab-content { display: flex; flex-direction: column; }
+            .stats-dashboard { order: 1; display: flex !important; flex-direction: row !important; overflow-x: auto !important; scroll-snap-type: x mandatory; gap: 0.75rem !important; padding: 0.5rem 1rem 1rem !important; margin: 0 !important; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+            .stats-dashboard::-webkit-scrollbar { display: none; }
+            .stat-card { flex: 0 0 140px !important; scroll-snap-align: start; padding: 1rem !important; }
+            .stat-value { font-size: 1.6rem !important; }
+
+            #app { order: 2; display: flex; flex-direction: column; }
+            
+            /* Filters */
+            .tabs-nav { display: flex !important; flex-direction: row !important; overflow-x: auto !important; scroll-snap-type: x mandatory; gap: 0.5rem !important; padding: 0 1rem 1rem !important; scrollbar-width: none; -webkit-overflow-scrolling: touch; margin-bottom: 0 !important; border-bottom: none !important; }
+            .tabs-nav::-webkit-scrollbar { display: none; }
+            .vendor-tab { flex: 0 0 auto !important; scroll-snap-align: start; padding: 0.5rem 1rem !important; border-radius: 20px !important; border: 1px solid var(--border) !important; background: rgba(255,255,255,0.02) !important; margin: 0 !important; }
+            .vendor-tab.active { background: var(--accent-cyan) !important; color: #fff !important; border-color: var(--accent-cyan) !important; }
+            .vendor-tab::after { display: none !important; }
+            
+            .controls { display: flex; flex-direction: row; gap: 0.5rem; padding: 0 1rem 1rem; margin: 0; }
+            .search-box { flex: 1; }
+            
+            /* IOC Grid */
+            .ioc-grid { display: flex !important; flex-direction: row !important; overflow-x: auto !important; scroll-snap-type: x mandatory; gap: 1rem !important; padding: 0 1rem 2rem !important; margin: 0 !important; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+            .ioc-grid::-webkit-scrollbar { display: none; }
+            .ioc-card { flex: 0 0 85vw !important; scroll-snap-align: center; margin: 0 !important; padding: 1.25rem !important; height: auto !important; }
+            
+            /* Hidden/Pushed to bottom */
+            .dashboard-controls { display: none !important; }
+            /* Push the data policy down */
+            #ioc-tab-content > div:first-child { order: 99; margin: 1rem !important; padding: 1.25rem !important; }
+            .analytics-section { order: 100; padding: 1rem !important; margin-top: 0 !important; }
+            .vendor-info { order: 101; padding: 1rem !important; }
+            .pagination { order: 3; margin: 0 1rem 2rem !important; }
+
+
+            /* ---- AI SECURITY TAB ---- */
+            
+            #ai-security-section { display: flex; flex-direction: column; }
+            
+            /* Stats */
+            .ai-stats-grid { order: 1; display: flex !important; flex-direction: row !important; overflow-x: auto !important; scroll-snap-type: x mandatory; gap: 0.75rem !important; padding: 0.5rem 1rem 1rem !important; margin: 0 !important; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+            .ai-stats-grid::-webkit-scrollbar { display: none; }
+            .ai-stat-card { flex: 0 0 140px !important; scroll-snap-align: start; padding: 1rem !important; }
+            .ai-stat-value { font-size: 1.5rem !important; }
+
+            /* Top Threats */
+            .top-threats-section { order: 2; margin: 0 !important; padding: 0 1rem 1rem !important; }
+            .threat-list { display: flex !important; flex-direction: row !important; overflow-x: auto !important; scroll-snap-type: x mandatory; gap: 0.75rem !important; padding-bottom: 1rem !important; scrollbar-width: none; }
+            .threat-list::-webkit-scrollbar { display: none; }
+            .threat-card { flex: 0 0 80vw !important; scroll-snap-align: center; margin: 0 !important; }
+
+            /* AI Tabs */
+            .ai-tabs-nav { order: 3; display: flex !important; flex-direction: row !important; overflow-x: auto !important; scroll-snap-type: x mandatory; gap: 0.5rem !important; padding: 0 1rem 1rem !important; margin: 0 !important; scrollbar-width: none; border-bottom: none !important; }
+            .ai-tabs-nav::-webkit-scrollbar { display: none; }
+            .ai-tab-btn { flex: 0 0 auto !important; scroll-snap-align: start; padding: 0.5rem 1rem !important; border-radius: 20px !important; border: 1px solid var(--border) !important; background: rgba(255,255,255,0.02) !important; white-space: nowrap; margin: 0 !important;}
+            .ai-tab-btn.active { background: #3B82F6 !important; color: #fff !important; border-color: #3B82F6 !important; }
+            .ai-tab-btn::after { display: none !important; }
+
+            /* AI Data Grid (Atlas, Incidents, OWASP) */
+            .ai-tab-content { order: 4; }
+            .atlas-grid, .incidents-grid { display: flex !important; flex-direction: row !important; overflow-x: auto !important; scroll-snap-type: x mandatory; gap: 1rem !important; padding: 0 1rem 2rem !important; margin: 0 !important; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+            .atlas-grid::-webkit-scrollbar, .incidents-grid::-webkit-scrollbar { display: none; }
+            .atlas-card, .incident-card { flex: 0 0 85vw !important; scroll-snap-align: center; margin: 0 !important; }
+            
+            .owasp-list { padding: 0 1rem 2rem !important; }
+            .owasp-item { padding: 1rem !important; }
+
+            .atlas-section > div:first-child, .incidents-section > div:first-child, .owasp-section > div:first-child { padding: 0 1rem !important; flex-direction: column; align-items: flex-start !important; gap: 0.5rem; }
+
+            /* Push Policy to Bottom */
+            #ai-security-section > div:first-child { order: 99; margin: 1rem !important; padding: 1.25rem !important; }
+        }
+        </style>
+
         <div class="hero-particles">
             <span></span><span></span><span></span><span></span>
             <span></span><span></span><span></span><span></span>
