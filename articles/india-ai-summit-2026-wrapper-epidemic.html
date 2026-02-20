@@ -377,6 +377,11 @@
             </header>
 
             <div class="article-content">
+                <p><em>Disclaimer: The following investigative analysis is constructed from verified news media,
+                        technical reports, and public statements emerging from the India AI Impact Summit 2026. While
+                        the author did not physically attend the expo floors, this piece relies on aggregated,
+                        verifiable source material to provide an independent assessment of the events.</em></p>
+
                 <p><strong>NEW DELHI</strong> — The Bharat Mandapam, a colossal architectural marvel built for the G20,
                     was pulsing with the electric hum of the future. From February 16th through the 21st, it hosted the
                     <strong>India AI Impact Summit 2026</strong>. Billed heavily by the IndiaAI Mission and the Ministry
@@ -610,8 +615,26 @@
             </div>
         </article>
 
-        <!-- Dynamic Interaction Bar -->
-        <div class="interaction-bar"></div>
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i
+                            class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article"><i
+                        class="fas fa-print"></i></button>
+            </div>
+        </div>
 
     </div>
 
