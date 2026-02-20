@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "india-ai-summit-wrapper-epidemic-2026",
+      "title": "The Wrapper Epidemic: Behind the Curtain of the India AI Summit 2026",
+      "date": "February 20, 2026",
+      "category": "Tech Journalism",
+      "badge": "INVESTIGATIVE",
+      "excerpt": "A deep dive into the chaos, fraud, and genuine brilliance buried within the biggest Global South tech summit of the decade. From the Krutrim wrapper controversy to the Galgotias robotic dog disaster.",
+      "image": "images/articles/india-ai-summit-wrapper-epidemic.png",
+      "tags": [
+        "Sovereign AI",
+        "India AI Summit 2026",
+        "Tech Journalism",
+        "LLM Wrappers",
+        "Bhashini",
+        "Controversy"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/india-ai-summit-2026-wrapper-epidemic.html"
+    },
+    {
       "id": "checkbox-security-illusion",
       "title": "The Illusion of Checkbox Security: Why Compliance Doesn't Mean Secure",
       "date": "February 20, 2026",
