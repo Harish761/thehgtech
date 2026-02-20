@@ -31,19 +31,12 @@ Every article MUST use a custom generated image following this **EXACT** prompt 
 
 **Image Prompt Template:**
 ```text
-Create a professional cybersecurity presentation-style illustration.
+Create a professional, premium cinematic storyboard style editorial illustration for a cybersecurity magazine.
 
-1. CHARACTER: Cartoon version of Harish G (Indian man, beard, sunglasses pushed up on head, confident expression) wearing black tech t-shirt. Standing to the LEFT, presenting to a whiteboard.
-2. WHITEBOARD (Right Side):
-   - Title: "[ARTICLE TITLE]" in large CYAN (#00D9FF) bold text.
-   - Subtitle: "CVSS [SCORE] / [SEVERITY]" in RED (#FF3D3D).
-   - Content: 3-4 bullet points with red arrows (→).
-   - Diagram: Simple attack flow at bottom.
-3. ELEMENTS:
-   - Red Warning Triangle (⚠).
-   - "CRITICAL THREAT" red stamp effect.
-   - Background: Dark (#0a0a0a) with subtle circuit board patterns and neon accents.
-4. STYLE: Clean 2D Tech Vector, professional, Dark Mode.
+1. STYLE: High-end 2D concept art, graphic novel aesthetics, dramatic rim lighting, dark mode with neon cyan (#00D9FF) and crimson (#FF3D3D) accents. Highly detailed.
+2. CHARACTER: Comic-style version of Harish G (Indian man, beard, sunglasses pushed up on head, confident expression, black tech t-shirt) placed prominently in the foreground or an active pose, deeply analyzing or engaging with the threat.
+3. BACKGROUND: A dynamic, dramatic environment fitting the article's theme (e.g., shattered glass, glowing holographic network grids, dark server rooms, zero-trust architecture visuals). The background should tell a cyber story.
+4. TEXT: The words "[ARTICLE TITLE OR CORE CONCEPT]" integrated beautifully and seamlessly into the environment (e.g., as a cinematic title card, glowing hologram, or neon sign). Do NOT use random symbols like currency signs unless strictly relevant. Ensure exact spelling.
 ```
 - **Location:** `/images/articles/[filename].png`
 - **Size:** 1200x630 (Open Graph standard)
