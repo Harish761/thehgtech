@@ -1,6 +1,24 @@
 {
   "articles": [
     {
+      "id": "checkbox-security-illusion",
+      "title": "The Illusion of Checkbox Security: Why Compliance Doesn't Mean Secure",
+      "date": "February 20, 2026",
+      "category": "Security Culture",
+      "badge": "OPINION",
+      "excerpt": "Discover why treating cybersecurity as a compliance checkbox leaves organizations vulnerable. A deep dive into moving from policy to practice, and why risk acceptance is failing.",
+      "image": "images/articles/checkbox-security-illusion.png",
+      "tags": [
+        "Checkbox Security",
+        "Compliance vs Security",
+        "Security Culture",
+        "Risk Acceptance",
+        "Opinion"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/checkbox-security-illusion.html"
+    },
+    {
       "id": "openclaw-ai-log-poisoning-cve-2026",
       "title": "OpenClaw AI Log Poisoning: How 3 CVEs Turned an AI Coding Assistant into a Remote Access Weapon",
       "date": "February 17, 2026",
