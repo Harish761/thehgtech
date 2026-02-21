@@ -29,8 +29,11 @@
 
     // Construct premium futuristic toggle buttons dynamically
     function upgradeToggles() {
+        if (window._pctUpgraded) return;
+        window._pctUpgraded = true;
+
         // Target any legacy or modern theme toggle button
-        const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle');
+        const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle, .m-header__btn--theme');
 
         toggles.forEach(btn => {
             if (btn.classList.contains('premium-cyber-toggle')) return;

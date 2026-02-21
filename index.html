@@ -49,7 +49,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    
     <meta name="theme-color" content="#FF3D3D">
     <meta name="msapplication-TileColor" content="#FF3D3D">
 
@@ -592,7 +592,7 @@
     <!-- ========== GLOBAL THEME SCRIPT ========== -->
     <script>
         // Inline theme set to avoid FOUC
-        (function() {
+        (function () {
             var savedTheme = localStorage.getItem("theme");
             if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
                 document.documentElement.setAttribute("data-theme", "light");
@@ -645,35 +645,35 @@
 
     <!-- Bottom Navigation (5 items: Home, CVE, Intel, Articles, Guides) -->
     <nav class="m-bottom-nav m-only">
-    <a href="/" class="m-bottom-nav__item">
-        <i class="fas fa-home"></i>
-        <span>Home</span>
-    </a>
-    <a href="/index.html#news" class="m-bottom-nav__item">
-        <i class="fas fa-bolt"></i>
-        <span>News</span>
-    </a>
-    <a href="/cve-tracker.html" class="m-bottom-nav__item">
-        <i class="fas fa-bug"></i>
-        <span>CVEs</span>
-    </a>
-    <a href="/ransomware-tracker.html" class="m-bottom-nav__item">
-        <i class="fas fa-skull-crossbones"></i>
-        <span>Ransomware</span>
-    </a>
-    <a href="/threat-intel.html" class="m-bottom-nav__item">
-        <i class="fas fa-shield-alt"></i>
-        <span>Intel</span>
-    </a>
-    <a href="/articles.html" class="m-bottom-nav__item">
-        <i class="fas fa-newspaper"></i>
-        <span>Articles</span>
-    </a>
-    <a href="/guides/" class="m-bottom-nav__item">
-        <i class="fas fa-book"></i>
-        <span>Guides</span>
-    </a>
-</nav>
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/index.html#news" class="m-bottom-nav__item">
+            <i class="fas fa-bolt"></i>
+            <span>News</span>
+        </a>
+        <a href="/cve-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-bug"></i>
+            <span>CVEs</span>
+        </a>
+        <a href="/ransomware-tracker.html" class="m-bottom-nav__item">
+            <i class="fas fa-skull-crossbones"></i>
+            <span>Ransomware</span>
+        </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Intel</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
 
     <!-- Search Overlay -->
     <div class="m-search-overlay m-only">
@@ -930,9 +930,11 @@
                     </div>
                 </div>
 
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
-            <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
-        </button>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme"
+                    style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                    <span class="m-theme-toggle__thumb"
+                        style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+                </button>
             </nav>
             <button class="desktop-search-btn" aria-label="Search (CMD+K)">
                 <span class="search-btn-glow"></span>
@@ -2840,7 +2842,7 @@
         // ========== DYNAMIC IOC COUNT ==========
         async function updateHeroIocCount() {
             try {
-                const response = await fetch('threat-intel-data.json?t=' + Date.now());
+                const response = await fetch('threat-intel-history.json?t=' + Date.now());
                 const data = await response.json();
                 const heroIocEl = document.getElementById('heroIocCountDynamic');
 

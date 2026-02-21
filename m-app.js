@@ -38,8 +38,8 @@
 
     function updateThemeIcon() {
         const isLight = document.body.classList.contains('light-mode');
-        const moonIcons = document.querySelectorAll('.m-header__btn--theme .fa-moon');
-        const sunIcons = document.querySelectorAll('.m-header__btn--theme .fa-sun');
+        const moonIcons = document.querySelectorAll('.m-header__btn--theme:not(.premium-cyber-toggle) .fa-moon');
+        const sunIcons = document.querySelectorAll('.m-header__btn--theme:not(.premium-cyber-toggle) .fa-sun');
 
         moonIcons.forEach(icon => {
             icon.style.display = isLight ? 'none' : 'inline-block';
@@ -94,7 +94,6 @@
         }
     }
 
-    // ========== BOTTOM NAV ==========
     function initBottomNav() {
         const path = window.location.pathname;
         const items = document.querySelectorAll('.m-bottom-nav__item');
@@ -107,13 +106,13 @@
                 if (href === '/' || href === '/index.html') {
                     item.classList.add('active');
                 }
-            } else if (href && href !== '/' && path.includes(href.replace(/^\//, ''))) {
+            } else if (href && href !== '/' && path.includes(href.replace(/^\//, '').split('/')[0])) {
                 item.classList.add('active');
             }
         });
     }
 
-    // ========== MOBILE NEWS CARDS ==========
+    // ========== MOBILE NEWS STACK ==========
     let currentNewsIndex = 0;
     let currentCategory = 'cyber';
 
@@ -133,7 +132,6 @@
             ? (websiteContent.cyberShorts || [])
             : (websiteContent.aiShorts || []);
 
-        // Remove static LCP placeholder when real content loads
         if (staticPlaceholder) staticPlaceholder.remove();
 
         if (newsData.length === 0) {
@@ -143,20 +141,17 @@
             return;
         }
 
-        // Hide empty state, show controls
         if (emptyState) emptyState.style.display = 'none';
         if (progress) progress.style.display = 'flex';
         if (navControls) navControls.style.display = 'flex';
         if (swipeHint) swipeHint.style.display = 'flex';
 
-        // Build dots
         if (progressDots) {
             progressDots.innerHTML = newsData.slice(0, 10).map((_, i) =>
                 `<span class="news-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>`
             ).join('');
         }
 
-        // Build cards - make them clickable to show full content
         container.innerHTML = newsData.slice(0, 10).map((item, i) => `
             <div class="mobile-news-card ${i === 0 ? 'active' : ''}" data-index="${i}" style="${i > 0 ? 'display:none;' : ''}" onclick="openNewsDetail(${i}, '${currentCategory}')">
                 <div class="mobile-news-card__source">${escapeHTMLBasic(item.source || 'News')}</div>
@@ -196,12 +191,9 @@
     function switchNewsCategory(category) {
         currentCategory = category;
         currentNewsIndex = 0;
-
-        // Update tab buttons
         document.querySelectorAll('.news-tab').forEach(tab => {
             tab.classList.toggle('active', tab.dataset.category === category);
         });
-
         renderMobileNews(category);
     }
 
@@ -235,7 +227,6 @@
 
         const item = newsData[index];
 
-        // Create modal if it doesn't exist
         let modal = document.getElementById('mNewsDetailModal');
         if (!modal) {
             modal = document.createElement('div');
@@ -244,7 +235,6 @@
             document.body.appendChild(modal);
         }
 
-        // Build related links using client-side detection
         let relatedHTML = '';
         if (window.detectNewsCategory && window.getNewsRelatedLinks) {
             const newsCategory = window.detectNewsCategory(item.title || '', item.content || '');
@@ -294,7 +284,7 @@
         `;
 
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
     }
 
     function closeNewsDetail() {
@@ -305,13 +295,13 @@
         }
     }
 
-    // Expose globally
+    // Export new functions globally
     window.switchNewsCategory = switchNewsCategory;
     window.navigateNews = navigateNews;
     window.openNewsDetail = openNewsDetail;
     window.closeNewsDetail = closeNewsDetail;
 
-    // ========== CVE PREVIEW CARD ==========
+    // ========== CVE PREVIEW COMPONENT ==========
     function renderCVEPreview() {
         // Only on homepage
         if (!document.body.classList.contains('home-page') &&
@@ -321,7 +311,6 @@
         // Check if already rendered
         if (document.querySelector('.m-cve-preview')) return;
 
-        // Find position to insert (after news section)
         const newsSection = document.querySelector('.mobile-only');
         if (!newsSection) return;
 
@@ -360,11 +349,10 @@
         // Insert after news section
         newsSection.parentNode.insertBefore(preview, newsSection.nextSibling);
 
-        // Load CVE stats
+        // Fetch stats if available locally
         loadCVEStats();
     }
 
-    // Load CVE stats for preview
     async function loadCVEStats() {
         try {
             const response = await fetch('cve-data.json?t=' + Date.now());
@@ -478,10 +466,20 @@
 // PREMIUM CYBER TOGGLE REWRITER (Injected)
 // ==========================================
 function upgradeToggles() {
-    const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle');
+    if (window._pctUpgraded) return;
+    window._pctUpgraded = true;
 
-    toggles.forEach(btn => {
-        if (btn.classList.contains('premium-cyber-toggle')) return;
+    const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle, .m-header__btn--theme');
+
+    toggles.forEach(oldBtn => {
+        if (oldBtn.classList.contains('premium-cyber-toggle')) return;
+
+        // Clone node completely destroys ALL old event listeners attached!
+        const btn = oldBtn.cloneNode(false);
+        if (oldBtn.parentNode) {
+            oldBtn.parentNode.replaceChild(btn, oldBtn);
+        }
+
         btn.innerHTML = '';
         btn.removeAttribute('style');
         btn.classList.add('premium-cyber-toggle');

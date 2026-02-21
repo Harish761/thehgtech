@@ -40,6 +40,8 @@ body.light-mode {
     --bg-primary: #ffffff;
     --bg-secondary: #f8f9fa;
     --bg-card: rgba(0, 0, 0, 0.03);
+    --bg-gradient-start: #ffffff;
+    --bg-gradient-end: #f0f4f8;
 
     /* Accent colors (keeping brand colors) */
     --accent-cyan: #0099cc;
