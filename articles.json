@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "anthropic-guardian-secops-crash-2026",
+      "title": "Anthropic's New Security Agent Sent Cybersecurity Stocks Plunging. Here is Why.",
+      "date": "February 21, 2026",
+      "category": "Industry Analysis",
+      "badge": "INDUSTRY",
+      "excerpt": "Technical analysis of Anthropic's new autonomous security agent. We decode how its L1/L2 replacement capabilities sparked a massive sell-off in legacy cybersecurity stocks and what this means for the future of SecOps.",
+      "image": "images/articles/anthropic-guardian-secops-crash-2026.png",
+      "tags": [
+        "Anthropic",
+        "Autonomous Agent",
+        "AI",
+        "SecOps",
+        "Market Dynamics",
+        "Industry Analysis"
+      ],
+      "author": "Harish G",
+      "externalUrl": "articles/anthropic-guardian-secops-crash-2026.html"
+    },
+    {
       "id": "beast-ransomware-api-exploits",
       "title": "The Beast Ransomware Cartel: How Insecure APIs Became the New Initial Access Vector",
       "date": "February 21, 2026",
