@@ -967,100 +967,12 @@
       "date": "2025-11-23",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1087",
-      "incident_id": 1087,
-      "title": "Campaign Featuring Purported AI-Generated Audio Attributed to Omar al-Bashir Spreads During Sudanese",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1088",
-      "incident_id": 1088,
-      "title": "Purported AI-Generated Audio Disinformation Reportedly Attributed to U.S. Ambassador John Godfrey Ci",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1089",
-      "incident_id": 1089,
-      "title": "Purported AI-Generated Content Circulates Widely in Sudan Amid Civil Conflict and Information Vacuum",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1091",
-      "incident_id": 1091,
-      "title": "Purported Synthesia Avatars Used in Alleged Pro-Junta Deepfake Video Supporting Ibrahim Traor\u00e9 in Bu",
-      "date": "2025-11-23",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1094",
-      "incident_id": 1094,
-      "title": "At Least 294 Purported AI-Generated Music Videos Portray Celebrities Praising Burkina Faso's Ibrahim",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1095",
-      "incident_id": 1095,
-      "title": "Alleged Russian-Linked Deepfake Campaign Misattributes Infrastructure Projects to Burkina Faso's Ibr",
-      "date": "2025-11-23",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1096",
-      "incident_id": 1096,
-      "title": "Purported AI-Generated Video Depicts Ibrahim Traor\u00e9 of Burkina Faso Delivering Speech on Western Exp",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1226",
-      "incident_id": 1226,
-      "title": "Old Mutual Reportedly Warns of Purported Deepfake Videos Impersonating Chairman Trevor Manuel in Inv",
-      "date": "2025-11-23",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1276",
-      "incident_id": 1276,
-      "title": "Ottawa Couple Reportedly Loses CA$177,023 After Purported Deepfake Elon Musk Investment Scam",
-      "date": "2025-11-23",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1279",
-      "incident_id": 1279,
-      "title": "Prominent AI Chatbots Allegedly Produced Incorrect UK Financial and ISA Guidance",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1283",
-      "incident_id": 1283,
-      "title": "Purported AI-Enabled Pro-Russian Influence Campaign Centered on Burkina Faso's Ibrahim Traor\u00e9 and Di",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 132,
-    "last7Days": 8,
+    "total": 121,
+    "last7Days": 1,
     "last30Days": 38
   },
-  "lastUpdated": "2026-02-21T22:13:03.439092+05:30"
+  "lastUpdated": "2026-02-22T00:31:19.867664+05:30"
 }
