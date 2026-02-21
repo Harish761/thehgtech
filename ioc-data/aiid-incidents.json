@@ -9,6 +9,38 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1374",
+      "incident_id": 1374,
+      "title": "Purportedly AI-Generated Sepsis Alert Reportedly Prompted Potentially Inappropriate IV Fluid Adminis",
+      "date": "2026-02-21",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1375",
+      "incident_id": 1375,
+      "title": "OpenAI Allegedly Did Not Alert RCMP After ChatGPT Flagged Violent Chats Before British Columbia Scho",
+      "date": "2026-02-21",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1376",
+      "incident_id": 1376,
+      "title": "Amazon Delivery Van Reportedly Became Stranded on Essex Mudflats After GPS Routed It Onto the Broomw",
+      "date": "2026-02-21",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1377",
+      "incident_id": 1377,
+      "title": "Seedance 2.0 Reportedly Generated Viral Tom Cruise\u2013Brad Pitt Fight Video, Prompting Hollywood IP and",
+      "date": "2026-02-21",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-490",
       "incident_id": 490,
       "title": "Clarkesworld Magazine Reportedly Closed Down Submissions Due to Massive Increase in Purportedly AI-G",
@@ -970,9 +1002,9 @@
     }
   ],
   "stats": {
-    "total": 121,
-    "last7Days": 1,
-    "last30Days": 38
+    "total": 125,
+    "last7Days": 5,
+    "last30Days": 42
   },
-  "lastUpdated": "2026-02-22T00:31:19.867664+05:30"
+  "lastUpdated": "2026-02-22T02:07:16.737955+05:30"
 }
