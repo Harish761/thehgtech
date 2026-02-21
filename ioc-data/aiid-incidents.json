@@ -1049,14 +1049,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1278",
-      "incident_id": 1278,
-      "title": "ChatGPT Reportedly Found to Reproduce Protected German Lyrics in Copyright Case",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1279",
       "incident_id": 1279,
       "title": "Prominent AI Chatbots Allegedly Produced Incorrect UK Financial and ISA Guidance",
@@ -1082,9 +1074,9 @@
     }
   ],
   "stats": {
-    "total": 135,
+    "total": 134,
     "last7Days": 7,
     "last30Days": 37
   },
-  "lastUpdated": "2026-02-21T10:40:31.822271+05:30"
+  "lastUpdated": "2026-02-21T14:15:34.279963+05:30"
 }
