@@ -469,3 +469,46 @@
 })();
 
 // Also add CSS to forcefully hide BMC
+
+    // ==========================================
+    // PREMIUM CYBER TOGGLE REWRITER (Injected)
+    // ==========================================
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle');
+        
+        toggles.forEach(btn => {
+            btn.innerHTML = '';
+            btn.removeAttribute('style');
+            btn.classList.add('premium-cyber-toggle');
+            
+            // Unify clicks
+            btn.removeAttribute('onclick');
+
+            const track = document.createElement('div');
+            track.className = 'pct-track';
+            
+            const iconDark = document.createElement('i');
+            iconDark.className = 'fas fa-moon pct-icon-dark';
+            
+            const iconLight = document.createElement('i');
+            iconLight.className = 'fas fa-sun pct-icon-light';
+            
+            const thumb = document.createElement('div');
+            thumb.className = 'pct-thumb';
+            
+            track.appendChild(iconDark);
+            track.appendChild(iconLight);
+            track.appendChild(thumb);
+            btn.appendChild(track);
+
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                if(window.toggleTheme) {
+                    window.toggleTheme();
+                } else if(window.mToggleTheme) {
+                    window.mToggleTheme();
+                }
+            });
+        });
+    });
