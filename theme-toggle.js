@@ -28,11 +28,12 @@
     };
 
     // Construct premium futuristic toggle buttons dynamically
-    document.addEventListener('DOMContentLoaded', function () {
+    function upgradeToggles() {
         // Target any legacy or modern theme toggle button
         const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle');
 
         toggles.forEach(btn => {
+            if (btn.classList.contains('premium-cyber-toggle')) return;
             // Strip out old properties
             btn.innerHTML = '';
             btn.removeAttribute('style');
@@ -72,5 +73,11 @@
         });
 
         console.log(`[theme-toggle.js] ✓ Upgraded ${toggles.length} theme toggles to Premium Cyber variant.`);
-    });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', upgradeToggles);
+    } else {
+        upgradeToggles();
+    }
 })();
