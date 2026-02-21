@@ -1049,14 +1049,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1277",
-      "incident_id": 1277,
-      "title": "Alleged Harmful Outputs and Data Exposure in Children's AI Products by FoloToy, Miko, and Character.",
-      "date": "2025-11-23",
-      "category": "data_leak",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1278",
       "incident_id": 1278,
       "title": "ChatGPT Reportedly Found to Reproduce Protected German Lyrics in Copyright Case",
@@ -1073,27 +1065,11 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1280",
-      "incident_id": 1280,
-      "title": "Reported Use of AI Voice and Identity Manipulation in the Ongoing 'Phantom Hacker' Fraud Scheme",
-      "date": "2025-11-23",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1281",
       "incident_id": 1281,
       "title": "Alleged Harmful Health Outcomes Following Reported Use of Purported ChatGPT-Generated Medical Advice",
       "date": "2025-11-23",
       "category": "content_moderation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1282",
-      "incident_id": 1282,
-      "title": "Reported Disqualification of Two Books from the Ockham New Zealand Book Awards Due to Alleged AI-Gen",
-      "date": "2025-11-23",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -1106,9 +1082,9 @@
     }
   ],
   "stats": {
-    "total": 138,
+    "total": 135,
     "last7Days": 7,
     "last30Days": 37
   },
-  "lastUpdated": "2026-02-21T02:15:43.194030+05:30"
+  "lastUpdated": "2026-02-21T08:14:51.478878+05:30"
 }
