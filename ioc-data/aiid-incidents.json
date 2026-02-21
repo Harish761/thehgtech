@@ -1025,27 +1025,11 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1166",
-      "incident_id": 1166,
-      "title": "ChatGPT Reportedly Suggests Sodium Bromide as Chloride Substitute, Leading to Bromism and Hospitaliz",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1226",
       "incident_id": 1226,
       "title": "Old Mutual Reportedly Warns of Purported Deepfake Videos Impersonating Chairman Trevor Manuel in Inv",
       "date": "2025-11-23",
       "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1236",
-      "incident_id": 1236,
-      "title": "Quantum AI Scam Reportedly Used AI-Generated Celebrity Endorsements and Spoofed Media Sites to Solic",
-      "date": "2025-11-23",
-      "category": "fraud",
       "severity": "high"
     },
     {
@@ -1074,9 +1058,9 @@
     }
   ],
   "stats": {
-    "total": 134,
+    "total": 132,
     "last7Days": 8,
     "last30Days": 38
   },
-  "lastUpdated": "2026-02-21T18:39:09.469339+05:30"
+  "lastUpdated": "2026-02-21T22:13:03.439092+05:30"
 }
