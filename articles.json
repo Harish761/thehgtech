@@ -1,23 +1,23 @@
 {
   "articles": [
     {
-      "id": "anthropic-guardian-secops-crash-2026",
-      "title": "Anthropic's New Security Agent Sent Cybersecurity Stocks Plunging. Here is Why.",
+      "id": "anthropic-claude-code-security-launch-2026",
+      "title": "Anthropic's Claude Code Security Launch Triggers $10-15B Dip in Cybersecurity Stocks \u2013 A Shift in Code Vulnerability Detection?",
       "date": "February 21, 2026",
       "category": "Industry Analysis",
       "badge": "INDUSTRY",
-      "excerpt": "Technical analysis of Anthropic's new autonomous security agent. We decode how its L1/L2 replacement capabilities sparked a massive sell-off in legacy cybersecurity stocks and what this means for the future of SecOps.",
-      "image": "images/articles/anthropic-guardian-secops-crash-2026.png",
+      "excerpt": "Technical analysis of Anthropic's new Claude Code Security preview. We decode how its code vulnerability scanning capabilities sparked a sell-off in legacy cybersecurity stocks and what this means for the future of AppSec.",
+      "image": "images/articles/anthropic-claude-code-security-launch-2026.png",
       "tags": [
         "Anthropic",
         "Autonomous Agent",
         "AI",
-        "SecOps",
+        "AppSec",
         "Market Dynamics",
         "Industry Analysis"
       ],
       "author": "Harish G",
-      "externalUrl": "articles/anthropic-guardian-secops-crash-2026.html"
+      "externalUrl": "articles/anthropic-claude-code-security-launch-2026.html"
     },
     {
       "id": "beast-ransomware-api-exploits",
