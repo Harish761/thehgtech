@@ -975,36 +975,12 @@
       "date": "2025-11-25",
       "category": "data_leak",
       "severity": "critical"
-    },
-    {
-      "id": "AIID-1117",
-      "incident_id": 1117,
-      "title": "North Korea-Linked Actors Allegedly Use AI Executive Deepfakes in Zoom Phishing Targeting Web3 Emplo",
-      "date": "2025-11-24",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1201",
-      "incident_id": 1201,
-      "title": "Anthropic Reportedly Identifies AI Misuse in Extortion Campaigns, North Korean IT Schemes, and Ranso",
-      "date": "2025-11-24",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1208",
-      "incident_id": 1208,
-      "title": "North Korea's Kimsuky Group Reportedly Uses AI-Generated Military ID Deepfakes in Phishing Campaign",
-      "date": "2025-11-24",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 125,
+    "total": 122,
     "last7Days": 6,
     "last30Days": 43
   },
-  "lastUpdated": "2026-02-22T14:17:17.152723+05:30"
+  "lastUpdated": "2026-02-22T18:40:50.827166+05:30"
 }
