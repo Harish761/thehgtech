@@ -2,15 +2,15 @@
   "articles": [
     {
       "id": "anthropic-claude-code-security-launch-2026",
-      "title": "Anthropic's Claude Code Security Launch Triggers $10-15B Dip in Cybersecurity Stocks \u2013 A Shift in Code Vulnerability Detection?",
+      "title": "Anthropic's Claude Code Security: What It Actually Does and Why $10-15B in Cybersecurity Stocks Dropped",
       "date": "February 21, 2026",
       "category": "Industry Analysis",
       "badge": "INDUSTRY",
-      "excerpt": "Technical analysis of Anthropic's new Claude Code Security preview. We decode how its code vulnerability scanning capabilities sparked a sell-off in legacy cybersecurity stocks and what this means for the future of AppSec.",
+      "excerpt": "Technical breakdown of Anthropic's Claude Code Security — an AI code vulnerability scanner in limited research preview. What it does, what it doesn't, verified stock data, and what it means for security teams.",
       "image": "images/articles/anthropic-claude-code-security-launch-2026.png",
       "tags": [
         "Anthropic",
-        "Autonomous Agent",
+        "Claude Code Security",
         "AI",
         "AppSec",
         "Market Dynamics",
