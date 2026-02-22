@@ -41,6 +41,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1378",
+      "incident_id": 1378,
+      "title": "Purportedly AI-Generated Video Allegedly Depicted Radnor High School Students Inappropriately, Promp",
+      "date": "2026-02-21",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-490",
       "incident_id": 490,
       "title": "Clarkesworld Magazine Reportedly Closed Down Submissions Due to Massive Increase in Purportedly AI-G",
@@ -991,20 +999,12 @@
       "date": "2025-11-24",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1032",
-      "incident_id": 1032,
-      "title": "Reported Doctored Video of Nigerian President Bola Tinubu Claims Naira Will Be Replaced by U.S. Doll",
-      "date": "2025-11-23",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
     "total": 125,
-    "last7Days": 5,
-    "last30Days": 42
+    "last7Days": 6,
+    "last30Days": 43
   },
-  "lastUpdated": "2026-02-22T02:07:16.737955+05:30"
+  "lastUpdated": "2026-02-22T08:42:53.288169+05:30"
 }
