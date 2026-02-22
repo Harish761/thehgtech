@@ -1,3 +1,12 @@
+# Anthropic Claude Code Security — LinkedIn Post
+**Date:** February 22, 2026
+**Image:** anthropic-claude-code-security-linkedin.png
+**Article Link (post in first comment):** https://thehgtech.com/articles/anthropic-claude-code-security-launch-2026.html
+
+---
+
+## POST TEXT (copy-paste ready):
+
 Anthropic just launched "Claude Code Security" — and $10-15 Billion in cybersecurity market value vanished in a single session.
 
 Here's what actually happened (not the hype):
@@ -33,7 +42,7 @@ For security teams, this means:
 → AI Red Teaming becomes a core competency — attackers will use the same LLMs to find zero-days faster
 → Human-in-the-Loop governance isn't optional — it's the entire moat
 
-I wrote a full technical breakdown covering the real capabilities, the market data, and the adoption strategy for CISOs:
+I wrote a full technical breakdown covering the real capabilities, the market data, and the adoption strategy for CISOs.
 
 🔗 Link in the first comment below 👇
 
@@ -43,6 +52,6 @@ Is this the beginning of AppSec commoditization, or is it being overhyped? Curio
 
 ---
 
-**(COMMENT TO POST IMMEDIATELY AFTER PUBLISHING):**
+## FIRST COMMENT (post immediately after):
 
 Full technical breakdown — real capabilities, verified market data, CISO adoption strategy: https://thehgtech.com/articles/anthropic-claude-code-security-launch-2026.html
