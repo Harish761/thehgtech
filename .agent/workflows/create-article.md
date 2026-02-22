@@ -7,6 +7,37 @@ description: How to create new Research-Grade articles for TheHGTech
 This workflow defines the standard for creating high-fidelity Threat Intelligence articles. 
 **Standard:** Articles must rival paid intelligence reports (e.g., Mandiant, Red Canary) in depth and utility.
 
+## 0. SOURCE VERIFICATION GATE (MANDATORY — DO NOT SKIP)
+
+> **LESSON LEARNED:** In Feb 2026, we published an article about Anthropic's security agent with a fabricated product name ("Guardian Core"), invented $50B loss figures, and speculative capabilities presented as fact. It was flagged on Reddit as misinformation. This gate exists to prevent that from EVER happening again.
+
+**This step is a HARD GATE. No writing begins until ALL items below are completed.**
+
+### 0.1 Primary Source Verification
+- [ ] **Locate the official announcement** (vendor blog post, press release, SEC filing). Use `search_web` or `read_url_content` to fetch it.
+- [ ] **Read the full primary source** and extract: exact product name, stated capabilities, launch status (GA / preview / beta), and any quoted figures.
+- [ ] **Save source URLs** — these will be cited in the article.
+
+### 0.2 Market Data Verification (if covering financial impact)
+- [ ] **Use real stock data** — search Bloomberg, Yahoo Finance, or Google Finance for actual percentage drops.
+- [ ] **Calculate estimated losses yourself** from market cap × % drop. Do NOT invent round numbers.
+- [ ] **Name only companies with confirmed drops** — do not speculatively add companies to the list.
+
+### 0.3 Anti-Hallucination Checklist
+Before writing, explicitly answer these questions:
+- [ ] **Product name:** What is the EXACT official name? (Not what I think it might be called)
+- [ ] **Capabilities:** What does the vendor SAY it does? (Not what I extrapolate it could do)
+- [ ] **Scope:** Is it GA, limited preview, research-only? (Do NOT describe preview features as production-ready)
+- [ ] **Numbers:** Are ALL figures sourced from a specific report/filing? (If not, clearly label as "estimated")
+
+### 0.4 Labeling Rules
+- **Verified fact** → Write normally
+- **Reasonable analysis/opinion** → Prefix with "Our analysis suggests..." or "This likely indicates..."
+- **Speculation** → Use a clearly labeled callout box: `⚠️ Editorial Analysis` 
+- **NEVER** present speculation as confirmed fact. NEVER invent product names, features, or data points.
+
+---
+
 ## 1. Pre-Writing Phase (Mandatory)
 Before writing a single word, execute this checklist:
 
@@ -15,7 +46,7 @@ Before writing a single word, execute this checklist:
     *   *Goal:* Avoid stale data. If a patch was bypassed 2 hours ago, COVER THAT.
 2.  **Artifact Hunt:**
     *   Locate at least one **Technical Artifact**: YARA rule, Sigma rule, exploited file hash, or source code snippet.
-    *   *Rule:* If no public artifact exists, you must ENGINEER a plausible detection rule based on the TTPs.
+    *   *Rule:* If no public artifact exists, you must ENGINEER a plausible detection rule based on the TTPs. **Label it clearly as "Example Detection Rule" — not as the vendor's actual output.**
 3.  **Forecast Linkage:**
     *   Check `/articles.html`. Did we predict this trend? 
     *   *Action:* Link back to previous articles ("As forecasted in our Jan report...").
@@ -48,6 +79,7 @@ Create a professional, premium cinematic storyboard style editorial illustration
 - **BLUF (Bottom Line Up Front):** Who, What, When, Severity.
 - **Confidence Level:** Confirmed / Probable / Unverified.
 - **TLP:** CLEAR / GREEN.
+- **Sources disclaimer** (at bottom of summary): _"This analysis is based on [source names] as of [date]; details may evolve."_
 
 ### Section 2: Technical Analysis (The "Meat")
 - **Deep Dive:** Explain the *mechanic* (e.g., "The deserialization flaw in `Java.util`...").
@@ -267,10 +299,23 @@ Must be the **FIRST element** inside `<div class="container">`, before the artic
     *   **CRITICAL:** Insert new entry at the **VERY TOP** (Index 0) of the JSON array.
     *   This drives the Homepage "Latest News" feed.
 4.  **Update Sitemap:** Add URL to `sitemap.xml`.
-5.  **Post-Audit:** Check against Grok's critique (Is it deep? Does it have code?).
+5.  **Fact-Check Review:** Re-read the article and verify every claim against sources from Step 0.
 6.  **Push:** `git add . && git commit -m "feat(content): new article..." && git push`
 
 ## 8. Quality Control Questions (Self-Audit)
-- **Is this generic?** (If yes, rewritten effectively).
-- **Would a SOS Analyst use this?** (Must have YARA/IOCs).
-- **Is the image correct?** (Harish cartoon visible).
+
+### Accuracy (HIGHEST PRIORITY)
+- [ ] **Is every product/tool name exactly correct?** (Verified against official source)
+- [ ] **Are all numbers (dollar figures, percentages, CVE IDs) sourced?** (Not estimated or rounded for effect)
+- [ ] **Is the scope accurately described?** (Preview vs GA, code scanning vs SOC automation, etc.)
+- [ ] **Is speculation clearly labeled as such?** (No opinions dressed up as facts)
+- [ ] **Would this survive a Reddit r/cybersecurity fact-check?** (If not, fix it before publishing)
+
+### Quality
+- **Is this generic?** (If yes, rewrite with specific technical depth).
+- **Would a SOC Analyst use this?** (Must have actionable IOCs/rules).
+- **Is the image correct?** (Harish cartoon visible, text spelled correctly).
+
+### Sources
+- [ ] **Are primary sources linked or cited in the article?**
+- [ ] **Is the disclaimer present in the Executive Summary?**
