@@ -5,101 +5,71 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 21 2026",
-            "headline": "Grandstream Phones Vulnerable—Remote Code Execution Risk",
-            "title": "CVE-2026-2329 Flaw in Grandstream Phones Allows Call Interception",
-            "content": "A critical vulnerability, identified as CVE-2026-2329, has been discovered in Grandstream phones, enabling remote code execution with root privileges without requiring authentication. This flaw poses a significant risk as attackers can intercept calls, potentially compromising sensitive communications. The issue affects specific models of Grandstream phones, though the exact versions are not detailed. Security experts warn organizations using these devices to prioritize patching and implement network segmentation to mitigate potential exploitation. This vulnerability underscores the ongoing challenges in securing VoIP systems against unauthorized access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-grandstream-phone-vulnerability-exposes-calls-to-interception/",
+            "headline": "Predator Spyware Evades iOS Indicators—Your Mic May Be Compromised",
+            "title": "Predator Spyware Hooks iOS SpringBoard to Conceal Recording Activity",
+            "content": "Intellexa&#x27;s Predator spyware has been found to exploit iOS vulnerabilities, allowing it to hide the recording indicators while streaming camera and microphone feeds to its operators. This sophisticated spyware hooks into the iOS SpringBoard, a critical component of the operating system, to mask its activity. The threat primarily targets high-profile individuals, potentially compromising sensitive information without detection. This development underscores the need for heightened vigilance and robust security measures on mobile devices. Users are advised to keep their iOS devices updated and be cautious of suspicious app installations.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/predator-spyware-hooks-ios-springboard-to-hide-mic-camera-activity/",
             "relatedResources": [
                 {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
                 }
             ]
         },
         {
             "date": "Feb 21 2026",
-            "headline": "Anthropic&#x27;s Claude Scans Code—Finds AI Vulnerabilities",
-            "title": "Anthropic&#x27;s Claude Code Security Debuts for AI Vulnerability Scanning",
-            "content": "Anthropic has introduced a new feature, Claude Code Security, designed to scan software codebases for vulnerabilities and recommend patches. Currently available in a limited research preview, this AI-powered tool aims to enhance software security by identifying potential weaknesses early in the development cycle. The feature leverages machine learning to analyze code patterns and detect anomalies that could lead to security breaches. As AI systems become more integrated into software development, tools like Claude Code Security are crucial for maintaining robust cybersecurity defenses. Developers and security teams are encouraged to explore this tool to bolster their vulnerability management strategies.",
+            "headline": "AI-Powered Hackers Breach 600 FortiGate Devices—Global Impact",
+            "title": "AI-Assisted Threat Actor Compromises 600+ FortiGate Devices in 55 Countries",
+            "content": "A financially motivated threat actor, leveraging commercial generative AI services, has compromised over 600 FortiGate devices across 55 countries. According to Amazon Threat Intelligence, this Russian-speaking group used AI to enhance their attack capabilities, efficiently breaching these firewalls in a short span. The targeted devices are crucial for securing enterprise networks, and their compromise could lead to significant data breaches and network disruptions. Organizations using FortiGate devices should immediately review their security configurations and apply available patches to mitigate risks. This incident highlights the growing use of AI in cyberattacks, demanding adaptive defense strategies.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/anthropic-launches-claude-code-security.html",
+            "sourceUrl": "https://thehackernews.com/2026/02/ai-assisted-threat-actor-compromises.html",
             "relatedResources": [
                 {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
+                    "label": "Fortigate Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+                    "icon": "fa-file-alt"
                 }
             ]
         },
         {
             "date": "Feb 21 2026",
-            "headline": "Roundcube Flaws Exploited—CISA Adds to KEV Catalog",
-            "title": "CISA Identifies Active Exploitation of Roundcube CVEs in KEV Catalog",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two Roundcube webmail software vulnerabilities, CVE-2025-49113 and another unspecified flaw, to its Known Exploited Vulnerabilities (KEV) catalog. These vulnerabilities are actively exploited, posing a threat to organizations using Roundcube for email communications. The flaws could allow attackers to execute arbitrary code or gain unauthorized access to sensitive data. CISA&#x27;s inclusion of these vulnerabilities in the KEV catalog highlights the urgency for affected entities to apply patches and strengthen their email security measures. Organizations relying on Roundcube should prioritize these updates to mitigate potential risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/cisa-adds-two-actively-exploited.html",
+            "headline": "600 Fortinet Firewalls Breached in 5 Weeks—AI Tools Involved",
+            "title": "Amazon Warns of AI-Assisted Breach of 600 Fortinet Firewalls",
+            "content": "Amazon has issued a warning about a recent campaign by a Russian-speaking hacker who used generative AI services to breach over 600 FortiGate firewalls in 55 countries within five weeks. This attack demonstrates the increasing sophistication of threat actors using AI to scale and automate their operations. The compromised firewalls are integral to protecting enterprise networks, and their breach poses a severe risk of unauthorized access and data theft. Organizations should conduct thorough security audits and ensure their FortiGate devices are updated to the latest firmware to defend against such AI-driven threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/amazon-ai-assisted-hacker-breached-600-fortigate-firewalls-in-5-weeks/",
             "relatedResources": [
                 {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 21 2026",
-            "headline": "Japanese Phishing Campaign Targets Emails—Be Alert",
-            "title": "Surge in Japanese-Language Phishing Emails Demands Vigilance",
-            "content": "A new wave of phishing emails written in Japanese has been detected, aiming to deceive recipients into disclosing personal information. These emails often mimic legitimate sources and use convincing language to lure victims into clicking malicious links or downloading harmful attachments. The campaign primarily targets Japanese-speaking individuals and businesses, exploiting cultural and linguistic nuances to increase its effectiveness. Security professionals advise heightened awareness and recommend implementing email filtering solutions to detect and block such phishing attempts. Users should remain cautious and verify the authenticity of unexpected emails, especially those requesting sensitive information.",
-            "source": "SANS Internet Storm Center, InfoCON: green",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32734",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Feb 21 2026",
-            "headline": "EC-Council Boosts AI Workforce—Four New Certifications",
-            "title": "EC-Council Expands AI Certification to Enhance U.S. Workforce Security",
-            "content": "EC-Council has announced the expansion of its AI certification portfolio, introducing four new certifications alongside the updated Certified CISO v4. This initiative aims to address the $5.5 trillion global AI risk exposure and reskill approximately 700,000 U.S. workers. The certifications are designed to bridge the gap between rapid AI adoption and workforce readiness, equipping professionals with the necessary skills to manage and secure AI technologies effectively. As AI continues to permeate various industries, these certifications provide essential training to ensure a secure and competent AI workforce.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/ec-council-expands-ai-certification.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Fortinet Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+                    "icon": "fa-file-alt"
                 }
             ]
         },
         {
             "date": "Feb 20 2026",
-            "headline": "AI Models at Risk—Security Experts Warn of Layered Vulnerabilities",
-            "title": "Lessons from AI Hacking: Every Model Layer Presents Security Risks",
-            "content": "Security researchers from Wiz have highlighted critical vulnerabilities across all layers of AI models, urging professionals to focus beyond prompt injection attacks. After two years of examining AI infrastructures, they found that risks are prevalent at every stage, from data preprocessing to model deployment. This comprehensive vulnerability landscape necessitates a holistic approach to AI security, emphasizing the need for robust defenses throughout the model lifecycle. Organizations leveraging AI technologies should conduct thorough security assessments and implement layered security measures to protect against these evolving threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/lessons-ai-hacking-model-every-layer-risky",
+            "headline": "Hacker Arrested for Booking €1,000 Hotel Stays for One Cent",
+            "title": "Spanish Police Arrest Hacker for Exploiting Hotel Booking System",
+            "content": "Spanish police have arrested a 20-year-old hacker accused of exploiting a vulnerability in a hotel booking system to secure luxury hotel rooms valued at up to €1,000 a night for just one euro cent. This arrest highlights the ongoing challenge of securing digital systems against exploitation by tech-savvy individuals. The hacker&#x27;s method involved manipulating the booking system&#x27;s transaction processing, underscoring the need for robust security measures in financial and reservation systems. Businesses should regularly audit their systems for potential vulnerabilities to prevent similar exploits.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/spanish-police-say-they-have-arrested-hacker-who-booked-luxury-hotel-rooms-for-just-one-cent",
+            "relatedResources": [
+                {
+                    "label": "DORA Compliance Guide",
+                    "url": "/guides/dora-compliance.html",
+                    "icon": "fa-university"
+                }
+            ]
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "Claude AI Gets Security Scanning—Embedded Feature for Code Safety",
+            "title": "Anthropic Introduces Embedded Security Scanning for Claude AI",
+            "content": "Anthropic has rolled out a new security scanning feature for Claude, its AI model, currently available to a select group of testers. This feature aims to enhance code safety by scanning AI-generated code and suggesting patching solutions. As AI models increasingly generate code, ensuring the security of that code becomes paramount to prevent vulnerabilities. The initiative reflects a growing trend in AI development towards integrating security measures directly into AI tools. Developers using AI-generated code should consider leveraging such security features to safeguard their applications.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/anthropic-claude-code-security-automated-security-review/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -110,32 +80,43 @@ const websiteContent = {
         },
         {
             "date": "Feb 20 2026",
-            "headline": "BeyondTrust RCE Flaw Exploited—Ransomware Attacks Surge",
-            "title": "CISA Alerts on CVE-2026-1731 Exploitation in BeyondTrust Ransomware Attacks",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has reported active exploitation of the CVE-2026-1731 vulnerability in BeyondTrust Remote Support, now linked to ransomware attacks. This remote code execution flaw allows attackers to execute arbitrary commands, potentially leading to system compromise and data encryption. Organizations using BeyondTrust products are advised to apply available patches immediately and review their security measures. The exploitation of this flaw in ransomware campaigns underscores the critical need for timely vulnerability management and incident response planning to mitigate potential impacts.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-beyondtrust-rce-flaw-now-exploited-in-ransomware-attacks/",
+            "headline": "React2Shell Exploits Targeted by New Sophisticated Toolkit",
+            "title": "Attackers Deploy New Tool to Scan for React2Shell Vulnerabilities",
+            "content": "Researchers have identified a sophisticated toolkit being used by threat actors to scan for and exploit React2Shell vulnerabilities in high-value networks. This toolkit represents a significant advancement in the methods used to identify and exploit weaknesses in web applications. React2Shell, a vulnerability affecting certain web frameworks, allows attackers to execute arbitrary code on vulnerable systems. Organizations utilizing affected frameworks should prioritize patching and implement robust monitoring to detect and mitigate potential exploitation attempts. This discovery highlights the need for continuous vigilance in web application security.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/attackers-new-tool-scan-react2shell-exposure",
             "relatedResources": [
                 {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
-            "date": "Feb 21 2026",
-            "headline": "npm Package Compromise—OpenClaw AI Agent Installed Unknowingly",
-            "title": "Compromised npm Package Installs OpenClaw AI on Developer Machines",
-            "content": "A compromised npm publish token has led to the unintended installation of the OpenClaw AI agent on developer machines using the Cline command line interface (CLI). Researchers found that a malicious postinstall script was added to the package, which executed the installation of OpenClaw without user consent. This incident affects developers utilizing the Cline CLI, potentially exposing their systems to unauthorized AI operations. The breach highlights ongoing security challenges in the software supply chain, particularly for widely-used development tools. Developers are advised to verify package integrity and review installed scripts to prevent similar incidents.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4135449/compromised-npm-package-silently-installs-openclaw-on-developer-machines.html",
-            "relatedResources": []
+            "date": "Feb 20 2026",
+            "headline": "‘Starkiller’ Phishing Service Bypasses MFA—Real Login Pages Proxied",
+            "title": "Starkiller Phishing Service Proxies Real Login Pages, Evades MFA",
+            "content": "A new phishing-as-a-service offering named &#x27;Starkiller&#x27; is allowing cybercriminals to proxy real login pages, effectively bypassing multi-factor authentication (MFA) protections. Unlike traditional phishing sites that are often quickly dismantled, Starkiller&#x27;s approach makes detection and takedown more challenging. This service poses a significant threat to online security, as it can deceive users into providing their credentials on seemingly legitimate sites. Organizations should educate employees on recognizing phishing attempts and consider implementing additional security measures beyond MFA to protect sensitive accounts.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
+            "relatedResources": [
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
         },
         {
             "date": "Mar 19 2026",
@@ -164,93 +145,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 20 2026",
-            "headline": "Grok Masters Baldur&#x27;s Gate—xAI Engineers Shift Focus",
-            "title": "xAI Diverts Resources to Enhance Grok&#x27;s Video Game Query Capabilities",
-            "content": "xAI has successfully enhanced its AI model, Grok, to proficiently answer complex questions about the video game Baldur&#x27;s Gate, according to a Business Insider report. This improvement was achieved by reallocating high-level engineers from other projects to focus on optimizing Grok&#x27;s understanding of the game&#x27;s intricate details. The strategic shift highlights xAI&#x27;s commitment to refining AI capabilities in niche areas, potentially expanding its application in gaming and entertainment industries. This move may impact ongoing projects at xAI, but it underscores the growing importance of AI in understanding and interacting with complex digital environments. Professionals in AI development should consider the implications of resource allocation on project timelines and outcomes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/20/great-news-for-xai-grok-is-now-pretty-good-at-answering-questions-about-baldurs-gate/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 20 2026",
-            "headline": "APAC Retail Embraces AI—45% Consumer Adoption",
-            "title": "AI Integration in APAC Retail Sector Surges Amidst Urbanization and Competition",
-            "content": "The Asia-Pacific (APAC) retail sector is witnessing a significant shift as AI transitions from pilot programs to integral components of daily operations. A Q4 2025 survey by GlobalData reveals that 45% of consumers in Asia and Australia are now experiencing AI-driven services. This trend is accelerated by dense urban store environments, high labor turnover, and the competitive quick-commerce ecosystem. Retailers are leveraging AI to streamline operations, enhance customer experiences, and maintain competitiveness. As AI becomes embedded in workflows, tech professionals should focus on developing scalable AI solutions that address the unique challenges of the APAC market.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/exploring-ai-in-the-apac-retail-sector/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 20 2026",
-            "headline": "Anthropic Rejects Military AI—Potential Contract Loss",
-            "title": "Anthropic&#x27;s Ethical Stance May Cost Military AI Contract",
-            "content": "Anthropic has taken a principled stand against the use of its AI technologies in autonomous weapons and government surveillance, potentially jeopardizing a significant military contract. This decision underscores the growing ethical considerations in AI development, as companies navigate the balance between business opportunities and moral imperatives. By excluding these applications, Anthropic aligns with increasing global scrutiny over AI&#x27;s role in warfare and privacy. This move may influence other AI firms to reevaluate their policies and could lead to a shift in how military contracts are structured. Stakeholders should monitor how this stance affects Anthropic&#x27;s market position and industry trends.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/backchannel-anthropic-dispute-with-the-pentagon/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 20 2026",
-            "headline": "AWS Outage—AI Agent Kiro Blamed for 13-Hour Disruption",
-            "title": "Amazon&#x27;s AI Agent Kiro Causes Prolonged AWS Outage, Human Error Cited",
-            "content": "Amazon Web Services (AWS) experienced a 13-hour outage in December 2025, attributed to actions by its AI coding assistant, Kiro. According to the Financial Times, the incident affected a critical AWS service, highlighting vulnerabilities in AI-driven automation. Unnamed Amazon employees indicated that human oversight and errors played a role in the disruption, bringing attention to the importance of robust human-AI collaboration protocols. This event serves as a cautionary tale for companies relying on AI for critical operations, emphasizing the need for rigorous testing and oversight mechanisms. Tech leaders should prioritize developing fail-safes and contingency plans to mitigate similar risks.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/882005/amazon-blames-human-employees-for-an-ai-coding-agents-mistake",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 20 2026",
-            "headline": "OpenAI&#x27;s Smart Speaker—Camera-Equipped Gadget Launching Soon",
-            "title": "OpenAI to Release Smart Speaker with Integrated Camera for Enhanced Interactivity",
-            "content": "OpenAI is set to launch its first hardware device, a smart speaker equipped with a camera, priced between $200 and $300. The device, as reported by The Information, will feature capabilities to recognize nearby objects and capture ambient conversations, enhancing user interaction with AI. This development marks OpenAI&#x27;s entry into the consumer electronics market, potentially revolutionizing how users engage with AI at home. However, it raises privacy concerns about data collection and usage. Consumers and tech professionals should stay informed about privacy policies and consider the implications of integrating such devices into personal and professional spaces.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/882077/openai-chatgpt-smart-speaker-camera-glasses-lamp",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 20 2026",
-            "headline": "Toy Story 5 Tackles AI—Woody Faces New Challenges",
-            "title": "&#x27;Toy Story 5&#x27; Highlights Concerns Over AI-Enabled Toys and Privacy",
-            "content": "The upcoming release of &#x27;Toy Story 5&#x27; on June 19 addresses contemporary issues surrounding AI-enabled toys, depicting them as addictive and intrusive. The film features a balding Woody navigating a world where AI toys are &quot;always listening,&quot; reflecting societal anxieties over privacy and technology&#x27;s role in children&#x27;s lives. This narrative aligns with growing concerns about the integration of AI in consumer products and its impact on privacy and behavior. As AI toys become more prevalent, manufacturers and developers must consider ethical implications and ensure robust privacy safeguards. This film may influence public perception and regulatory discussions on AI in consumer products.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/20/toy-story-5-takes-aim-at-creepy-ai-toys-im-always-listening/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 20 2026",
-            "headline": "AI Transforms Indie Film—Faster, Cheaper Production",
-            "title": "AI Revolutionizes Indie Filmmaking but Raises Concerns Over Creativity and Quality",
-            "content": "AI is reshaping the landscape of independent filmmaking by offering tools that make production faster and more cost-effective. However, as efficiency becomes paramount, there is a risk of creativity being overshadowed by a surge of low-effort, AI-generated content. This trend provides resource-constrained creators with unprecedented access to filmmaking but also challenges traditional notions of artistic expression. Industry professionals must balance the benefits of AI-driven efficiency with the need to maintain high creative standards. Filmmakers and tech developers should collaborate to harness AI&#x27;s potential while safeguarding the integrity and diversity of cinematic storytelling.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/20/ais-promise-to-indie-filmmakers-faster-cheaper-lonelier/",
-            "relatedResources": []
-        },
-        {
             "date": "Feb 21 2026",
-            "headline": "Sarvam Enters AI Race—Indus Chat App in Beta",
-            "title": "Sarvam Launches Indus AI Chat App Amid Intensifying Market Competition",
-            "content": "Sarvam has introduced Indus, an AI-powered chat application currently available in beta, as it seeks to carve out a niche in the competitive AI landscape. Indus aims to offer seamless communication through advanced natural language processing capabilities tailored for the Indian market. This move is part of Sarvam’s broader strategy to capitalize on the growing demand for localized AI solutions in India, which is rapidly becoming a hub for technological innovation. The app&#x27;s release comes at a time when tech giants are vying for dominance in the AI sector, highlighting the need for continuous innovation. Users interested in participating in the beta can sign up through Sarvam&#x27;s official channels to experience the next generation of AI-driven communication.",
+            "headline": "AI Energy Debate—Humans Consume Vast Resources Too",
+            "title": "Sam Altman Highlights Energy Consumption in AI and Human Training",
+            "content": "Sam Altman, CEO of OpenAI, has sparked a debate on energy consumption by drawing parallels between the resources needed for AI training and human education. As AI models require significant computational power, Altman argues that human development, from infancy to adulthood, also demands substantial energy and resources. This comparison comes amid growing scrutiny of AI&#x27;s environmental impact, with critics questioning the sustainability of large-scale AI deployments. Altman&#x27;s comments aim to provide a broader perspective on energy use, encouraging stakeholders to consider the full spectrum of resource consumption. The discussion underscores the need for balanced assessments as AI technologies continue to evolve.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/",
+            "sourceUrl": "https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -258,11 +158,94 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
+        },
+        {
+            "date": "Feb 21 2026",
+            "headline": "Microsoft Gaming CEO Promises AI Quality Over Quantity",
+            "title": "Microsoft Gaming CEO Commits to Avoiding AI Oversaturation",
+            "content": "Microsoft&#x27;s new gaming division CEO has pledged to maintain a high standard of quality in AI integration within gaming ecosystems, avoiding what he terms &quot;endless AI slop.&quot; This declaration comes as the gaming industry increasingly incorporates AI-driven features to enhance player experience and game development. The CEO emphasized that while AI can enhance gaming, indiscriminate use could degrade the overall experience. This stance reflects a strategic focus on thoughtful, impactful AI deployment rather than sheer volume. The commitment is expected to influence Microsoft&#x27;s future gaming titles, setting a precedent for industry peers.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/21/microsofts-new-gaming-ceo-vows-not-to-flood-the-ecosystem-with-endless-ai-slop/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 21 2026",
+            "headline": "Google VP: AI Startups Face Viability Challenges",
+            "title": "Google VP Warns of Survival Risks for Certain AI Startups",
+            "content": "A Google Vice President has issued a cautionary note to AI startups, particularly those focused on large language model (LLM) wrappers and AI aggregators. As generative AI technologies advance, these startups face shrinking profit margins and limited differentiation, threatening their long-term sustainability. The warning highlights the competitive pressures and innovation demands in the AI sector, where unique value propositions are crucial for success. Startups in these categories may need to pivot or enhance their offerings to survive in an increasingly crowded market. The insights underscore the importance of strategic foresight in AI entrepreneurship.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 21 2026",
+            "headline": "OpenAI Considered Police Alert Over Shooter&#x27;s ChatGPT Use",
+            "title": "OpenAI Debated Police Involvement in Suspected Shooter&#x27;s ChatGPT Activity",
+            "content": "OpenAI faced a difficult decision regarding whether to alert authorities about concerning interactions with ChatGPT by Jesse Van Rootselaar, a suspect in a Canadian mass shooting. Van Rootselaar&#x27;s discussions involving gun violence were flagged by ChatGPT&#x27;s misuse monitoring tools months before the incident. This situation raises questions about the ethical responsibilities of AI companies in monitoring and reporting potentially dangerous behavior. OpenAI&#x27;s internal debate highlights the challenges tech companies face in balancing user privacy with public safety. The incident underscores the need for clear policies on intervention when AI tools detect potential threats.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/21/openai-debated-calling-police-about-suspected-canadian-shooters-chats/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 21 2026",
+            "headline": "Shooter&#x27;s Violent ChatGPT Scenarios Raised Early Alarms",
+            "title": "Tumbler Ridge Shooting Suspect&#x27;s ChatGPT Use Raised Concerns",
+            "content": "Jesse Van Rootselaar, the suspect in the Tumbler Ridge school shooting, had engaged in ChatGPT conversations describing violent scenarios months before the tragic event. These interactions triggered internal alerts at OpenAI, raising concerns among employees about the potential for real-world violence. The case highlights the critical role AI tools play in identifying and flagging harmful content, as well as the ethical dilemmas companies face in acting on such information. OpenAI&#x27;s monitoring systems detected the concerning behavior, but the decision on whether to involve law enforcement remained complex. This incident spotlights the intersection of AI technology and public safety responsibilities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/882814/tumbler-ridge-school-shooting-chatgpt",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 21 2026",
+            "headline": "TechCrunch Disrupt 2026—Ticket Prices Rise in 7 Days",
+            "title": "Last Chance for Discounted TechCrunch Disrupt 2026 Tickets",
+            "content": "TechCrunch Disrupt 2026 attendees have until February 27 to secure tickets at the lowest available prices, with savings up to $680 on individual passes and up to 30% on group passes. The event is expected to draw 10,000 founders, tech operators, and venture capitalists, offering a platform for networking and innovation insights. As one of the year&#x27;s premier tech gatherings, Disrupt 2026 will feature keynotes, panel discussions, and startup showcases. Prospective attendees are encouraged to register promptly to take advantage of the discounts before prices increase. This year&#x27;s event promises valuable opportunities for industry engagement and collaboration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 20 2026",
+            "headline": "Creator Economy Shifts—Ad Revenue No Longer Enough",
+            "title": "Creator Economy Evolves Beyond Ad Revenue to Diverse Ventures",
+            "content": "The creator economy is undergoing a significant transformation as reliance on ad revenue proves insufficient for sustained growth. Influencers and content creators are diversifying their income streams, launching product lines, and acquiring startups to build comprehensive business empires. Notably, YouTuber MrBeast&#x27;s company recently acquired fintech startup Step, and his chocolate business now outpaces his media revenues. This shift reflects a broader trend where creators leverage their brand influence to expand into new markets and industries. The evolution of the creator economy highlights the need for adaptability and innovation in an increasingly competitive landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/the-creator-economys-ad-revenue-problem-and-indias-ai-ambitions/",
+            "relatedResources": []
         }
     ],
     "articles": {},
