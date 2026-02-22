@@ -63,10 +63,7 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="alternate" type="application/rss+xml" title="TheHGTech RSS Feed" href="/rss.xml">
 
-    <!-- ========== CACHE CONTROL (Safari Mobile Fix) ========== -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <!-- Cache handled by Cloudflare CDN headers - no need for aggressive meta tags -->
 
     <!-- ========== SECURITY HEADERS ========== -->
     <!-- Note: frame-ancestors and X-Frame-Options only work as HTTP headers, not meta tags -->
@@ -323,17 +320,29 @@
     </style>
 
 
-    <!-- Google Fonts with display=swap (non-blocking) -->
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <!-- Google Fonts - display=optional prevents CLS from font swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=optional"
         rel="stylesheet" media="print" onload="this.media='all'">
     <noscript>
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=optional"
             rel="stylesheet">
     </noscript>
+    <!-- Font-display override: prevent layout shifts from late-loading fonts -->
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            font-display: optional;
+        }
+
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-display: optional;
+        }
+    </style>
 
     <!-- Enterprise Design System (Core tokens and base styles) -->
     <link rel="stylesheet" href="design-system.css?v=2.0">
@@ -4560,21 +4569,38 @@
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
-    <!-- Non-critical scripts (deferred) -->
+    <!-- Non-critical scripts: lazy-loaded on idle to reduce INP -->
     <script src="ransomware-display.js" defer></script>
     <script src="copy-to-clipboard.js" defer></script>
-
-    <!-- UX Enhancement Scripts -->
-    <script src="command-palette.js" defer></script>
-    <script src="live-dashboard.js" defer></script>
-    <script src="recommendation-engine.js" defer></script>
-    <script src="performance.js" defer></script>
-    <script src="content-hub.js" defer></script>
-    <script src="toast.js" defer></script>
-    <script src="bookmarks.js" defer></script>
-    <script src="keyboard-shortcuts.js" defer></script>
-    <script src="share-buttons.js" defer></script>
-    <script src="ui-enhancements.js?v=20260220" defer></script>
+    <script>
+        // Lazy-load UX enhancement scripts only when browser is idle
+        // This prevents them from blocking the main thread during page load
+        function lazyLoadScript(src) {
+            var s = document.createElement('script');
+            s.src = src;
+            s.defer = true;
+            document.body.appendChild(s);
+        }
+        function loadEnhancementScripts() {
+            var scripts = [
+                'command-palette.js',
+                'live-dashboard.js',
+                'recommendation-engine.js',
+                'content-hub.js',
+                'toast.js',
+                'bookmarks.js',
+                'keyboard-shortcuts.js',
+                'share-buttons.js',
+                'ui-enhancements.js?v=20260220'
+            ];
+            scripts.forEach(function (src) { lazyLoadScript(src); });
+        }
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadEnhancementScripts, { timeout: 3000 });
+        } else {
+            setTimeout(loadEnhancementScripts, 2000);
+        }
+    </script>
 
 </body>
 
