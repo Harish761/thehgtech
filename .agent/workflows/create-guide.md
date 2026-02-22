@@ -112,6 +112,35 @@ Must be placed **AFTER** `content` and **BEFORE** `footer`.
 
 <script src="/m-app.js?v=4.3" defer></script>
 <script src="/interaction-bar.js" defer></script>
+
+<!-- ========== ANALYTICS (MANDATORY on every page) ========== -->
+<!-- GA4 -->
+<script>
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var gtmScript = document.createElement('script');
+            gtmScript.async = true;
+            gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+            document.head.appendChild(gtmScript);
+            gtmScript.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                window.gtag = gtag;
+                gtag('js', new Date());
+                gtag('config', 'G-XL6RCXZJE2');
+            };
+        }, 100);
+    });
+</script>
+<!-- Fullres -->
+<script>
+    window.addEventListener('load', function () {
+        var fullres = document.createElement('script');
+        fullres.async = true;
+        fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+        document.head.appendChild(fullres);
+    });
+</script>
 ```
 
 ### Required Desktop Header
