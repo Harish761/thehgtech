@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-02-23T02:12:41.863468",
+  "last_updated": "2026-02-23T13:06:23.711581",
   "period": "Last 7 days",
   "total_groups": 29,
-  "total_victims": 253,
+  "total_victims": 252,
   "groups": [
     {
       "name": "Qilin",
-      "count": 55,
+      "count": 54,
       "victims": [
         {
           "name": "Cumberland International Trucks",
@@ -87,7 +87,7 @@
       "trend_percentage": 15,
       "daily_counts": [
         4,
-        6,
+        5,
         12,
         6,
         8,
@@ -277,96 +277,6 @@
       ]
     },
     {
-      "name": "Nightspire",
-      "count": 18,
-      "victims": [
-        {
-          "name": "American Piping & Boiler Co",
-          "date": "2026-02-18 18:34:52.851532",
-          "url": "",
-          "discovered_date": "2026-02-18T18:34:52.851532"
-        },
-        {
-          "name": "TCPN Inc",
-          "date": "2026-02-19 17:41:34.390886",
-          "url": "",
-          "discovered_date": "2026-02-19T17:41:34.390886"
-        },
-        {
-          "name": "Ausgewählt Vertriebs GmbH",
-          "date": "2026-02-19 17:40:24.765787",
-          "url": "",
-          "discovered_date": "2026-02-19T17:40:24.765787"
-        },
-        {
-          "name": "RS Development LLC",
-          "date": "2026-02-19 17:40:47.755424",
-          "url": "",
-          "discovered_date": "2026-02-19T17:40:47.755424"
-        },
-        {
-          "name": "Fico Ferragens Indústria e Comércio Ltda",
-          "date": "2026-02-19 17:41:11.040685",
-          "url": "",
-          "discovered_date": "2026-02-19T17:41:11.040685"
-        },
-        {
-          "name": "KFZ Sauter GmbH Co. KG",
-          "date": "2026-02-18 17:15:03.640214",
-          "url": "",
-          "discovered_date": "2026-02-18T17:15:03.640214"
-        },
-        {
-          "name": "MD Charts",
-          "date": "2026-02-19 14:29:21.634663",
-          "url": "",
-          "discovered_date": "2026-02-19T14:29:21.634663"
-        },
-        {
-          "name": "Pearl Institute for Clinical Research LLC",
-          "date": "2026-02-20 11:09:57.691641",
-          "url": "",
-          "discovered_date": "2026-02-20T11:09:57.691641"
-        },
-        {
-          "name": "Pearl Institute for Clinical Research LLC",
-          "date": "2026-02-20T11:09:57+00:00",
-          "url": "https://www.ransomware.live/id/UGVhcmwgSW5zdGl0dXRlIGZvciBDbGluaWNhbCBSZXNlYXJjaCBMTENAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-02-20T11:09:57+00:00"
-        },
-        {
-          "name": "TCPN Inc",
-          "date": "2026-02-19T17:41:34+00:00",
-          "url": "https://www.ransomware.live/id/VENQTiBJbmNAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-02-19T17:41:34+00:00"
-        }
-      ],
-      "industries": [
-        "Construction",
-        "Healthcare",
-        "Manufacturing",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "BR",
-        "DE",
-        "N/A",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        1,
-        4,
-        10,
-        2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Akira",
       "count": 17,
       "victims": [
@@ -456,8 +366,97 @@
       ]
     },
     {
+      "name": "Nightspire",
+      "count": 17,
+      "victims": [
+        {
+          "name": "American Piping & Boiler Co",
+          "date": "2026-02-18 18:34:52.851532",
+          "url": "",
+          "discovered_date": "2026-02-18T18:34:52.851532"
+        },
+        {
+          "name": "TCPN Inc",
+          "date": "2026-02-19 17:41:34.390886",
+          "url": "",
+          "discovered_date": "2026-02-19T17:41:34.390886"
+        },
+        {
+          "name": "Ausgewählt Vertriebs GmbH",
+          "date": "2026-02-19 17:40:24.765787",
+          "url": "",
+          "discovered_date": "2026-02-19T17:40:24.765787"
+        },
+        {
+          "name": "RS Development LLC",
+          "date": "2026-02-19 17:40:47.755424",
+          "url": "",
+          "discovered_date": "2026-02-19T17:40:47.755424"
+        },
+        {
+          "name": "Fico Ferragens Indústria e Comércio Ltda",
+          "date": "2026-02-19 17:41:11.040685",
+          "url": "",
+          "discovered_date": "2026-02-19T17:41:11.040685"
+        },
+        {
+          "name": "KFZ Sauter GmbH Co. KG",
+          "date": "2026-02-18 17:15:03.640214",
+          "url": "",
+          "discovered_date": "2026-02-18T17:15:03.640214"
+        },
+        {
+          "name": "MD Charts",
+          "date": "2026-02-19 14:29:21.634663",
+          "url": "",
+          "discovered_date": "2026-02-19T14:29:21.634663"
+        },
+        {
+          "name": "Pearl Institute for Clinical Research LLC",
+          "date": "2026-02-20 11:09:57.691641",
+          "url": "",
+          "discovered_date": "2026-02-20T11:09:57.691641"
+        },
+        {
+          "name": "Pearl Institute for Clinical Research LLC",
+          "date": "2026-02-20T11:09:57+00:00",
+          "url": "https://www.ransomware.live/id/UGVhcmwgSW5zdGl0dXRlIGZvciBDbGluaWNhbCBSZXNlYXJjaCBMTENAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-02-20T11:09:57+00:00"
+        },
+        {
+          "name": "TCPN Inc",
+          "date": "2026-02-19T17:41:34+00:00",
+          "url": "https://www.ransomware.live/id/VENQTiBJbmNAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-02-19T17:41:34+00:00"
+        }
+      ],
+      "industries": [
+        "Construction",
+        "Healthcare",
+        "Manufacturing",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "BR",
+        "DE",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        1,
+        4,
+        10,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Incransom",
-      "count": 13,
+      "count": 12,
       "victims": [
         {
           "name": "Rainier Clinical Research Center",
@@ -490,6 +489,12 @@
           "discovered_date": "2026-02-19T05:56:14.694264"
         },
         {
+          "name": "Rainier Clinical Research Center",
+          "date": "2026-02-23T01:40:44+00:00",
+          "url": "https://www.ransomware.live/id/UmFpbmllciBDbGluaWNhbCBSZXNlYXJjaCBDZW50ZXJAaW5jcmFuc29t",
+          "discovered_date": "2026-02-23T01:40:44+00:00"
+        },
+        {
           "name": "TESTCOMPANY",
           "date": "2026-02-21T14:42:06+00:00",
           "url": "https://www.ransomware.live/id/VEVTVENPTVBBTllAaW5jcmFuc29t",
@@ -512,12 +517,6 @@
           "date": "2026-02-19T00:11:13+00:00",
           "url": "https://www.ransomware.live/id/VmFsZ28gU0FAaW5jcmFuc29t",
           "discovered_date": "2026-02-19T00:11:13+00:00"
-        },
-        {
-          "name": "Hiwassee Builder Supply",
-          "date": "2026-02-17T03:18:40+00:00",
-          "url": "https://www.ransomware.live/id/SGl3YXNzZWUgQnVpbGRlciBTdXBwbHlAaW5jcmFuc29t",
-          "discovered_date": "2026-02-17T03:18:40+00:00"
         }
       ],
       "industries": [
@@ -527,10 +526,10 @@
       ],
       "countries": [
         "BB",
-        "CA",
         "FR",
         "IN",
-        "US"
+        "US",
+        "ZA"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -541,7 +540,7 @@
         2,
         2,
         0,
-        1
+        2
       ]
     },
     {
@@ -1095,6 +1094,48 @@
       ]
     },
     {
+      "name": "Rhysida",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Rohner",
+          "date": "2026-02-23 10:47:05.928264",
+          "url": "",
+          "discovered_date": "2026-02-23T10:47:05.928264"
+        },
+        {
+          "name": "Rohner",
+          "date": "2026-02-23T10:47:05+00:00",
+          "url": "https://www.ransomware.live/id/Um9obmVyQHJoeXNpZGE=",
+          "discovered_date": "2026-02-23T10:47:05+00:00"
+        },
+        {
+          "name": "Cheyenne & Arapaho Tribes",
+          "date": "2026-02-17T21:24:18+00:00",
+          "url": "https://www.ransomware.live/id/Q2hleWVubmUgJiBBcmFwYWhvIFRyaWJlc0ByaHlzaWRh",
+          "discovered_date": "2026-02-17T21:24:18+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing"
+      ],
+      "countries": [
+        "CH",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Killsec",
       "count": 3,
       "victims": [
@@ -1534,33 +1575,6 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Rhysida",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Cheyenne & Arapaho Tribes",
-          "date": "2026-02-17T21:24:18+00:00",
-          "url": "https://www.ransomware.live/id/Q2hleWVubmUgJiBBcmFwYWhvIFRyaWJlc0ByaHlzaWRh",
-          "discovered_date": "2026-02-17T21:24:18+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
         0,
         0,
         0,
