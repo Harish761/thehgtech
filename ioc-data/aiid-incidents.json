@@ -967,20 +967,12 @@
       "date": "2025-11-26",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1284",
-      "incident_id": 1284,
-      "title": "Secret Desires AI Platform Reportedly Exposed Nearly Two Million Sensitive Images in Cloud Storage L",
-      "date": "2025-11-25",
-      "category": "data_leak",
-      "severity": "critical"
     }
   ],
   "stats": {
-    "total": 122,
+    "total": 121,
     "last7Days": 6,
     "last30Days": 43
   },
-  "lastUpdated": "2026-02-23T02:08:50.651367+05:30"
+  "lastUpdated": "2026-02-23T08:45:16.652584+05:30"
 }
