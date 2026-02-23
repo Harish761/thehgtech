@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>AI-Powered Hacker Breaches 600+ FortiGate Firewalls Across 55 Countries — Amazon Threat Intelligence Report |
+        TheHGTech</title>
+    <meta name="description"
+        content="Technical breakdown of the AI-assisted FortiGate campaign reported by Amazon Threat Intelligence. A low-skill Russian-speaking actor used commercial AI to compromise 600+ devices across 55 countries between Jan-Feb 2026.">
+    <meta name="author" content="Harish G">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="AI-Powered Hacker Breaches 600+ FortiGate Firewalls — Amazon Threat Intelligence Report">
+    <meta property="og:description"
+        content="Technical breakdown: A low-skill actor used commercial AI to compromise 600+ FortiGate devices across 55 countries. Sourced from Amazon Threat Intelligence.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/ai-hacker-fortigate-600-devices-2026.png">
+    <meta property="og:url" content="https://thehgtech.com/articles/ai-hacker-fortigate-600-devices-2026.html">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-02-23T00:00:00Z">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI-Powered Hacker Breaches 600+ FortiGate Firewalls">
+    <meta name="twitter:description"
+        content="Low-skill actor + commercial AI = 600 compromised firewalls across 55 countries. Full Amazon Threat Intel breakdown.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/ai-hacker-fortigate-600-devices-2026.png">
+
+    <link rel="canonical" href="https://thehgtech.com/articles/ai-hacker-fortigate-600-devices-2026.html">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "AI-Powered Hacker Breaches 600+ FortiGate Firewalls Across 55 Countries",
+        "image": "https://thehgtech.com/images/articles/ai-hacker-fortigate-600-devices-2026.png",
+        "datePublished": "2026-02-23",
+        "dateModified": "2026-02-23",
+        "author": {"@type": "Person", "name": "Harish G"},
+        "publisher": {"@type": "Organization", "name": "TheHGTech", "logo": {"@type": "ImageObject", "url": "https://thehgtech.com/logo.png"}}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+            {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://thehgtech.com/articles.html"},
+            {"@type": "ListItem", "position": 3, "name": "AI-Powered FortiGate Attack", "item": "https://thehgtech.com/articles/ai-hacker-fortigate-600-devices-2026.html"}
+        ]
+    }
+    </script>
+
+    <!-- Style System -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.js" defer></script>
+    <script src="/copy-to-clipboard.js" defer></script>
+
+    <!-- Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-twilight.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js" defer></script>
+
+    <!-- ========== ANALYTICS (MANDATORY) ========== -->
+    <!-- GA4 -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+    <!-- Fullres -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --code-bg: #111;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary, #e2e8f0);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        .article-hero {
+            position: relative;
+            padding: 4rem 1rem 8rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(255, 61, 61, 0.05) 0%, var(--bg-primary) 100%);
+            border-bottom: 1px solid var(--border, #333);
+            overflow: hidden;
+        }
+
+        .article-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
+            opacity: 0.5;
+        }
+
+        .category-badge {
+            display: inline-block;
+            background: rgba(255, 61, 61, 0.1);
+            color: var(--accent-red);
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            padding: 0.25rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .article-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            max-width: 1000px;
+            margin-inline: auto;
+            background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.7));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            color: var(--text-muted, #888);
+            font-size: 0.9rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content-wrapper {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .content-wrapper h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem;
+            color: var(--text-primary, #fff);
+            border-bottom: 2px solid var(--accent-red);
+            padding-bottom: 0.5rem;
+        }
+
+        .content-wrapper h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--accent-cyan);
+        }
+
+        .content-wrapper p {
+            margin-bottom: 1.2rem;
+            color: var(--text-secondary, #b0b0b0);
+        }
+
+        .content-wrapper a {
+            color: var(--accent-cyan);
+            text-decoration: underline;
+        }
+
+        .content-wrapper ul,
+        .content-wrapper ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .content-wrapper li {
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary, #b0b0b0);
+        }
+
+        .featured-image-container {
+            max-width: 900px;
+            margin: -5rem auto 2rem;
+            position: relative;
+            z-index: 2;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .executive-summary {
+            background: rgba(255, 61, 61, 0.03);
+            border: 1px solid rgba(255, 61, 61, 0.15);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .executive-summary h3 {
+            color: var(--accent-red) !important;
+            margin-top: 0 !important;
+        }
+
+        .technical-box {
+            background: rgba(0, 217, 255, 0.03);
+            border: 1px solid rgba(0, 217, 255, 0.15);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .technical-box h3 {
+            margin-top: 0 !important;
+            color: var(--accent-cyan) !important;
+        }
+
+        .vuln-card {
+            background: rgba(255, 61, 61, 0.03);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid #10b981;
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
+
+        .source-citation {
+            font-size: 0.85rem;
+            color: var(--text-muted, #888);
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        .attack-timeline {
+            border-left: 3px solid var(--accent-red);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .attack-timeline .timeline-event {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .attack-timeline .timeline-event::before {
+            content: '';
+            position: absolute;
+            left: -2.45rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-red);
+        }
+
+        .attack-timeline .timeline-date {
+            font-weight: 700;
+            color: var(--accent-red);
+            font-size: 0.9rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th,
+        td {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border, #333);
+            text-align: left;
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.05);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary, #b0b0b0);
+        }
+
+        pre {
+            background: var(--code-bg) !important;
+            border-radius: 8px;
+            padding: 1rem !important;
+            overflow-x: auto;
+            border: 1px solid var(--border, #333);
+        }
+
+        @media (max-width: 768px) {
+            .article-hero {
+                padding: 2rem 1rem 6rem;
+            }
+
+            .article-title {
+                font-size: 1.6rem;
+            }
+
+            .content-wrapper {
+                padding: 2rem 1rem;
+            }
+
+            .featured-image-container {
+                margin: -3rem 1rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Mobile Bottom Nav -->
+    <nav class="m-bottom-nav">
+        <a href="/index.html" class="m-nav-item"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="/threat-intel.html" class="m-nav-item"><i class="fas fa-satellite-dish"></i><span>Intel</span></a>
+        <a href="/cve-tracker.html" class="m-nav-item"><i class="fas fa-bug"></i><span>CVEs</span></a>
+        <a href="/guides/" class="m-nav-item"><i class="fas fa-book"></i><span>Guides</span></a>
+        <a href="/articles.html" class="m-nav-item active"><i class="fas fa-newspaper"></i><span>Articles</span></a>
+    </nav>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span
+                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="article-hero">
+            <span class="category-badge">Threat Intelligence</span>
+            <h1 class="article-title">AI-Powered Hacker Breaches 600+ FortiGate Firewalls Across 55 Countries</h1>
+            <div class="article-meta">
+                <span><i class="far fa-user"></i> Harish G</span>
+                <span><i class="far fa-calendar-alt"></i> February 23, 2026</span>
+                <span><i class="far fa-clock"></i> 15 min read</span>
+            </div>
+        </div>
+
+        <div class="featured-image-container">
+            <img src="/images/articles/ai-hacker-fortigate-600-devices-2026.png"
+                alt="AI-Powered Hacker Breaches 600+ FortiGate Firewalls" class="featured-image" width="1200"
+                height="630">
+        </div>
+
+        <div class="container">
+            <a href="/articles.html" class="back-link"
+                style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+                <i class="fas fa-arrow-left"></i> Back to Articles
+            </a>
+
+            <article class="content-wrapper">
+
+                <!-- Executive Summary -->
+                <div class="executive-summary">
+                    <h3><i class="fas fa-crosshairs"></i> Executive Summary</h3>
+                    <p><strong>What happened:</strong> Between January 11 and February 18, 2026, a Russian-speaking,
+                        financially motivated threat actor used commercial generative AI tools to compromise
+                        <strong>over 600 FortiGate firewall devices</strong> across <strong>55+ countries</strong>.</p>
+                    <p><strong>How:</strong> The attacker did <strong>not</strong> exploit a FortiGate zero-day. They
+                        targeted exposed management interfaces with weak or default credentials lacking multi-factor
+                        authentication. AI was used for attack planning, script development, and post-exploitation.</p>
+                    <p><strong>Who reported it:</strong> <a href="https://aws.amazon.com/blogs/security/"
+                            target="_blank">Amazon Threat Intelligence</a>. The findings were published on February 20,
+                        2026 by AWS CISO CJ Moses.</p>
+                    <p><strong>Confidence Level:</strong> High — based on direct observation by Amazon Threat
+                        Intelligence.</p>
+                    <p><strong>TLP:</strong> CLEAR</p>
+                    <p class="source-citation">This analysis is based on the AWS Security Blog (CJ Moses, Feb 20 2026),
+                        BleepingComputer, The Hacker News, Computing.co.uk, and Security Affairs reporting as of
+                        February 23, 2026. Details may evolve as the investigation continues.</p>
+                </div>
+
+                <h2>1. What Actually Happened</h2>
+
+                <p>Amazon Threat Intelligence discovered a server operated by the threat actor that contained malicious
+                    tools, AI-generated attack methodologies, stolen configurations from compromised devices, and custom
+                    tooling source code. The attacker's poor operational security (OPSEC) exposed the entire operation.
+                </p>
+
+                <p>The key finding that makes this significant: <strong>the attacker was assessed as having
+                        low-to-medium technical skill</strong>. The scale of the campaign — 600+ devices across 55
+                    countries — was achieved almost entirely through AI augmentation of an unskilled operator.</p>
+
+                <h3>Attack Vector: Not a Zero-Day</h3>
+
+                <p>This is critical to understand: <strong>no FortiGate vulnerability was exploited</strong>. The
+                    attacker succeeded by finding FortiGate appliances with:</p>
+                <ul>
+                    <li><strong>Management interfaces exposed to the internet</strong> — a misconfiguration, not a
+                        software flaw</li>
+                    <li><strong>Weak or default credentials</strong> on admin accounts</li>
+                    <li><strong>No multi-factor authentication (MFA)</strong> on admin or VPN access</li>
+                    <li><strong>Single-factor authentication only</strong> for SSL-VPN connections</li>
+                </ul>
+
+                <p>When the attacker encountered hardened environments (MFA enabled, management ports unexposed), they
+                    moved on to softer targets, according to Amazon's report.</p>
+
+                <h2>2. The AI-Augmented Attack Chain</h2>
+
+                <p>The attacker used <strong>multiple commercial generative AI services</strong> (the specific services
+                    were not named by Amazon) across every phase of the operation:</p>
+
+                <div class="attack-timeline">
+                    <div class="timeline-event">
+                        <div class="timeline-date">Phase 1: Reconnaissance</div>
+                        <p>AI was used to generate scanning methodologies and identify exposed FortiGate management
+                            interfaces across the internet. The attacker operated opportunistically — scanning for
+                            low-hanging fruit rather than targeting specific organizations.</p>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-date">Phase 2: Credential Attacks</div>
+                        <p>Default and weak credentials were tested against exposed management ports. No brute-force
+                            sophistication — just basic credential stuffing augmented by AI-generated scripts.</p>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-date">Phase 3: Configuration Extraction</div>
+                        <p>Once inside, the attacker extracted full device configurations including SSL-VPN credentials,
+                            administrative usernames and passwords, firewall policies, internal network topology maps,
+                            and IPsec VPN configurations.</p>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-date">Phase 4: AI-Assisted Parsing</div>
+                        <p>Custom Python and Go scripts — generated with AI assistance — were used to parse and
+                            <strong>decrypt stolen configurations</strong>. This is where the AI augmentation was most
+                            impactful: the attacker lacked the skill to write these tools manually.</p>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-date">Phase 5: Lateral Movement &amp; Pre-Ransomware</div>
+                        <p>Using extracted VPN credentials, the attacker connected to internal networks,
+                            <strong>compromised Active Directory environments</strong>, extracted credential databases,
+                            and targeted <strong>backup infrastructure</strong> — a classic pre-ransomware playbook.</p>
+                    </div>
+                </div>
+
+                <h2>3. What the AI Actually Did (and Didn't Do)</h2>
+
+                <p>Based on Amazon's report, the AI was used for:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>AI-Assisted Task</th>
+                            <th>What It Replaced</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Generating attack methodologies</td>
+                            <td>Manual research and planning</td>
+                        </tr>
+                        <tr>
+                            <td>Writing Python/Go parsing scripts</td>
+                            <td>Manual coding (attacker lacked this skill)</td>
+                        </tr>
+                        <tr>
+                            <td>Decrypting FortiGate configuration files</td>
+                            <td>Manual reverse engineering</td>
+                        </tr>
+                        <tr>
+                            <td>Planning lateral movement strategies</td>
+                            <td>Experienced red team knowledge</td>
+                        </tr>
+                        <tr>
+                            <td>Creating reconnaissance frameworks</td>
+                            <td>Custom scanner development</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>What the AI did <strong>not</strong> do:</p>
+                <ul>
+                    <li>Discover or create a zero-day vulnerability</li>
+                    <li>Operate autonomously without human direction</li>
+                    <li>Bypass properly configured security controls (MFA, unexposed management ports)</li>
+                    <li>Execute the final ransomware payload (unclear if ransomware was deployed)</li>
+                </ul>
+
+                <div class="vuln-card">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Key Takeaway</h3>
+                    <p>The AI didn't make the <em>attack</em> more sophisticated. It made a <em>low-skill attacker</em>
+                        capable of operating at a scale that previously required a skilled team. The attack itself was
+                        basic — default credentials on exposed ports. The AI's contribution was automation, parsing, and
+                        planning.</p>
+                </div>
+
+                <h2>4. Geographic and Sector Impact</h2>
+
+                <p>The campaign was <strong>opportunistic</strong>, not targeted. Compromised devices were found across:
+                </p>
+                <ul>
+                    <li><strong>South Asia</strong></li>
+                    <li><strong>Latin America and Caribbean</strong></li>
+                    <li><strong>West Africa</strong></li>
+                    <li><strong>Northern Europe</strong></li>
+                    <li><strong>Southeast Asia</strong></li>
+                </ul>
+                <p>No specific industry vertical was targeted. The attacker scanned broadly and compromised whatever was
+                    vulnerable.</p>
+
+                <h2>5. Detection: What to Look For</h2>
+
+                <p>Amazon Threat Intelligence recommends auditing for the following indicators:</p>
+
+                <div class="technical-box">
+                    <h3><i class="fas fa-search"></i> Detection Indicators</h3>
+                    <p>Check your FortiGate logs for these patterns:</p>
+                    <ul>
+                        <li><strong>New admin accounts</strong> created after January 11, 2026 that you didn't authorize
+                        </li>
+                        <li><strong>New SSL-VPN user accounts</strong> that don't match HR/IT provisioning records</li>
+                        <li><strong>Unusual SSH sessions</strong> to the management interface from external IPs</li>
+                        <li><strong>Configuration backup exports</strong> initiated outside maintenance windows</li>
+                        <li><strong>VPN connections from unexpected geographic locations</strong></li>
+                    </ul>
+                </div>
+
+                <div class="technical-box">
+                    <h3><i class="fas fa-code"></i> Example Sigma Detection Rule</h3>
+                    <p><em>Note: This is an example detection rule based on the reported TTPs — not Amazon's actual
+                            output.</em></p>
+                    <pre><code class="language-yaml">title: Suspicious FortiGate Admin Account Creation
+id: fg-ai-threat-2026-001
+status: experimental
+description: Detects new admin accounts created on FortiGate devices matching the AI-assisted campaign TTPs
+logsource:
+    product: fortinet
+    service: event
+detection:
+    selection:
+        action: 'user-add'
+        level: 'super_admin'
+    timeframe: 5m
+    condition: selection
+falsepositives:
+    - Legitimate admin provisioning
+    - Scheduled maintenance
+level: high
+tags:
+    - attack.persistence
+    - attack.t1136.001</code></pre>
+                </div>
+
+                <div class="technical-box">
+                    <h3><i class="fas fa-terminal"></i> FortiGate CLI Audit Commands</h3>
+                    <pre><code class="language-bash"># List all admin accounts (check for unauthorized additions)
+get system admin
+
+# Review recent VPN user creation
+diagnose vpn ssl list
+
+# Check for config backups/exports
+execute log filter category event
+execute log filter field action "backup"
+execute log display
+
+# Review active SSL-VPN sessions for unusual IPs
+get vpn ssl monitor</code></pre>
+                </div>
+
+                <h2>6. Immediate Remediation</h2>
+
+                <div class="success-box">
+                    <strong><i class="fas fa-shield-alt"></i> IMMEDIATE ACTIONS (based on Amazon's
+                        recommendations):</strong>
+                    <ol>
+                        <li><strong>Restrict management interface access</strong> — Do not expose FortiGate management
+                            ports (443/admin, 22/SSH) to the internet. Use out-of-band management or IP allowlists.</li>
+                        <li><strong>Enable MFA on all admin and VPN accounts</strong> — This single control would have
+                            stopped this entire campaign.</li>
+                        <li><strong>Audit all admin and VPN accounts</strong> — Remove any accounts created after
+                            January 11, 2026 that are not authorized.</li>
+                        <li><strong>Rotate all credentials</strong> — Change admin passwords and VPN pre-shared keys.
+                            Assume extracted configurations are compromised.</li>
+                        <li><strong>Do not reuse VPN passwords for Active Directory</strong> — The attacker used
+                            extracted VPN credentials to pivot into AD.</li>
+                        <li><strong>Harden backup infrastructure</strong> — The attacker targeted backups specifically,
+                            indicating pre-ransomware activity.</li>
+                        <li><strong>Review firewall policies</strong> — Ensure no unauthorized rules were added during
+                            the compromise.</li>
+                    </ol>
+                </div>
+
+                <h2>7. Why This Matters Beyond FortiGate</h2>
+
+                <p>This campaign is the clearest documented case of <strong>AI lowering the barrier to entry for
+                        cybercrime at scale</strong>. The implications are broader than one vendor:</p>
+
+                <h3>The Skill Gap Collapse</h3>
+                <p>Historically, compromising 600+ devices across 55 countries required a well-resourced team — think
+                    APT groups with dedicated developers, infrastructure operators, and regional specialists. This
+                    threat actor accomplished it as what Amazon assessed to be an <strong>individual or small
+                        group</strong> with poor OPSEC and limited technical ability.</p>
+
+                <p>The AI didn't teach the attacker to hack. It wrote the tools they couldn't write themselves. It
+                    planned the lateral movement they didn't know how to plan. It parsed the configurations they didn't
+                    know how to read.</p>
+
+                <h3>Volume is Coming</h3>
+                <p>Amazon's CJ Moses explicitly warned that <strong>AI-augmented threat activity will continue to grow
+                        in volume from both skilled and unskilled adversaries throughout 2026</strong>. If a low-skill
+                    operator can hit 600 devices, high-skill operators with the same tools can hit an order of magnitude
+                    more — faster and quieter.</p>
+
+                <h3>Basics Still Win</h3>
+                <p>Here's the thing that should frustrate every security professional reading this: <strong>this entire
+                        campaign fails against properly configured environments</strong>. MFA enabled? Attacker moves
+                    on. Management port not exposed? Attacker can't connect. VPN passwords not reused for AD? Lateral
+                    movement blocked.</p>
+
+                <p>As Amazon states in their report, organizations should prioritize: patch management for perimeter
+                    devices, credential hygiene, network segmentation, and robust detection for post-exploitation
+                    indicators.</p>
+
+                <h2>8. Sources</h2>
+                <ul>
+                    <li><strong>Primary:</strong> AWS Security Blog — CJ Moses, "Initial Access Brokers and the Emerging
+                        AI-Assisted Threat Landscape" (February 20, 2026)</li>
+                    <li>BleepingComputer — "Hacker uses AI to breach 600 FortiGate devices across 55 countries"
+                        (February 2026)</li>
+                    <li>The Hacker News — "AI-Powered Hacker Hits 600+ FortiGate Devices" (February 2026)</li>
+                    <li>Computing.co.uk — "Amazon exposes AI-augmented cyberattacker who hit 600+ FortiGate firewalls"
+                        (February 2026)</li>
+                    <li>Security Boulevard — "AI-Assisted Threat Actor Compromises 600+ FortiGate Devices" (February
+                        2026)</li>
+                    <li>Security Affairs — Independent confirmation of findings (February 2026)</li>
+                </ul>
+
+                <div class="article-footer"
+                    style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                    <p><strong>Author:</strong> Harish G</p>
+                    <p><strong>Published:</strong> February 23, 2026</p>
+                    <p><strong>Last Updated:</strong> February 23, 2026</p>
+                    <p><strong>Category:</strong> Threat Intelligence</p>
+                </div>
+
+            </article>
+
+            <div class="interaction-bar">
+                <div class="like-section">
+                    <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                        <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                    </button>
+                </div>
+                <div class="action-buttons">
+                    <div class="share-buttons">
+                        <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <button onclick="copyLink()" class="share-btn" title="Copy Link"><i
+                                class="fas fa-link"></i></button>
+                    </div>
+                    <div class="button-separator"></div>
+                    <button onclick="window.print()" class="print-btn" title="Print Article"><i
+                            class="fas fa-print"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights
+            reserved.</p>
+    </footer>
+
+</body>
+
+</html>

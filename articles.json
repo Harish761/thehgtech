@@ -19,6 +19,25 @@
       "author": "TheHGTech Bot"
     },
     {
+      "id": "ai-hacker-fortigate-600-devices-2026",
+      "title": "AI-Powered Hacker Breaches 600+ FortiGate Firewalls Across 55 Countries",
+      "date": "February 23, 2026",
+      "category": "Threat Intelligence",
+      "badge": "BREAKING",
+      "excerpt": "Amazon Threat Intelligence reveals how a low-skill Russian-speaking actor used commercial AI to compromise 600+ FortiGate devices across 55 countries. No zero-day needed — just exposed management ports and weak credentials.",
+      "image": "images/articles/ai-hacker-fortigate-600-devices-2026.png",
+      "link": "articles/ai-hacker-fortigate-600-devices-2026.html",
+      "tags": [
+        "FortiGate",
+        "AI Threats",
+        "Amazon Threat Intelligence",
+        "Firewall",
+        "Ransomware",
+        "Active Directory"
+      ],
+      "author": "Harish G"
+    },
+    {
       "id": "anthropic-claude-code-security-launch-2026",
       "title": "Anthropic's Claude Code Security: What It Actually Does and Why $10-15B in Cybersecurity Stocks Dropped",
       "date": "February 21, 2026",
