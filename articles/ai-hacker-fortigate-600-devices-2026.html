@@ -499,7 +499,8 @@
                     <h3><i class="fas fa-crosshairs"></i> Executive Summary</h3>
                     <p><strong>What happened:</strong> Between January 11 and February 18, 2026, a Russian-speaking,
                         financially motivated threat actor used commercial generative AI tools to compromise
-                        <strong>over 600 FortiGate firewall devices</strong> across <strong>55+ countries</strong>.</p>
+                        <strong>over 600 FortiGate firewall devices</strong> across <strong>55+ countries</strong>.
+                    </p>
                     <p><strong>How:</strong> The attacker did <strong>not</strong> exploit a FortiGate zero-day. They
                         targeted exposed management interfaces with weak or default credentials lacking multi-factor
                         authentication. AI was used for attack planning, script development, and post-exploitation.</p>
@@ -567,13 +568,15 @@
                         <div class="timeline-date">Phase 4: AI-Assisted Parsing</div>
                         <p>Custom Python and Go scripts — generated with AI assistance — were used to parse and
                             <strong>decrypt stolen configurations</strong>. This is where the AI augmentation was most
-                            impactful: the attacker lacked the skill to write these tools manually.</p>
+                            impactful: the attacker lacked the skill to write these tools manually.
+                        </p>
                     </div>
                     <div class="timeline-event">
                         <div class="timeline-date">Phase 5: Lateral Movement &amp; Pre-Ransomware</div>
                         <p>Using extracted VPN credentials, the attacker connected to internal networks,
                             <strong>compromised Active Directory environments</strong>, extracted credential databases,
-                            and targeted <strong>backup infrastructure</strong> — a classic pre-ransomware playbook.</p>
+                            and targeted <strong>backup infrastructure</strong> — a classic pre-ransomware playbook.
+                        </p>
                     </div>
                 </div>
 
@@ -668,7 +671,7 @@ id: fg-ai-threat-2026-001
 status: experimental
 description: Detects new admin accounts created on FortiGate devices matching the AI-assisted campaign TTPs
 logsource:
-    product: fortinet
+    product: fortigate
     service: event
 detection:
     selection:
@@ -688,18 +691,20 @@ tags:
                 <div class="technical-box">
                     <h3><i class="fas fa-terminal"></i> FortiGate CLI Audit Commands</h3>
                     <pre><code class="language-bash"># List all admin accounts (check for unauthorized additions)
-get system admin
+show system admin
 
-# Review recent VPN user creation
+# Review current SSL-VPN connections
 diagnose vpn ssl list
 
-# Check for config backups/exports
-execute log filter category event
-execute log filter field action "backup"
+# Check event logs for suspicious activity
+execute log filter category 1
 execute log display
 
 # Review active SSL-VPN sessions for unusual IPs
-get vpn ssl monitor</code></pre>
+get vpn ssl monitor
+
+# Check who is currently logged into the FortiGate
+get system info admin status</code></pre>
                 </div>
 
                 <h2>6. Immediate Remediation</h2>
