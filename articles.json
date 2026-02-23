@@ -26,7 +26,7 @@
       "badge": "BREAKING",
       "excerpt": "Amazon Threat Intelligence reveals how a low-skill Russian-speaking actor used commercial AI to compromise 600+ FortiGate devices across 55 countries. No zero-day needed — just exposed management ports and weak credentials.",
       "image": "images/articles/ai-hacker-fortigate-600-devices-2026.png",
-      "link": "articles/ai-hacker-fortigate-600-devices-2026.html",
+      "externalUrl": "articles/ai-hacker-fortigate-600-devices-2026.html",
       "tags": [
         "FortiGate",
         "AI Threats",

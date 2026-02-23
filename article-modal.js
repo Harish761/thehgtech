@@ -23,6 +23,13 @@ function openArticleModal(articleId) {
         return;
     }
 
+    // If article has a standalone page, navigate to it instead of opening a modal
+    if (article.externalUrl) {
+        console.log('[article-modal] Redirecting to external URL:', article.externalUrl);
+        window.location.href = '/' + article.externalUrl;
+        return;
+    }
+
     // Create modal
     const modal = document.createElement('div');
     modal.className = 'article-modal';
