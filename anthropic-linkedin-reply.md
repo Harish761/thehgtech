@@ -6,6 +6,6 @@ The real shift isn't that AI will suddenly own the end-to-end security lifecycle
 
 Scanning is cheap; context and ownership are expensive. 
 
-I actually spent the weekend doing a technical deep-dive into the architectural mechanics of these agentic loops (specifically looking at the threat to the MDR/SIEM ingestion business model vs. the reality of enterprise adoption). For anyone interested in the weeds of how these tool-use APIs are actually built, you can check out the breakdown here: https://thehgtech.com/articles/anthropic-guardian-secops-crash-2026.html
+I actually spent the weekend doing a technical deep-dive into what Claude Code Security actually does vs what the market thinks it does — the verified stock numbers, how the tool works, and what it means for security teams. Full breakdown here: https://thehgtech.com/articles/anthropic-claude-code-security-launch-2026.html
 
 Great perspective on the operational reality. The hype will fade, but the shift towards policy-driven workflows is definitely the right long-term bet.
