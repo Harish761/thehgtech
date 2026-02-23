@@ -5,6 +5,87 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 23 2026",
+            "headline": "Ukrainian Sentenced—5 Years for North Korean IT Fraud Scheme",
+            "title": "Ukrainian National Jailed for Facilitating North Korean IT Fraud in the US",
+            "content": "Oleksandr Didenko has been sentenced to five years in a US prison for selling stolen identities of American citizens to North Korean operatives. These identities were used to secure employment on freelance platforms, circumventing international sanctions. This scheme highlights the ongoing efforts of North Korean entities to exploit digital platforms for economic gain. The impact extends to compromised personal data of US citizens and potential security risks on platforms like Upwork and Freelancer. Security professionals need to enhance identity verification processes and monitor for fraudulent activities to mitigate such threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ukrainian-gets-5-years-in-us-prison-for-aiding-north-korean-it-fraud/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "Malicious JPEGs—New Malware Campaigns Embed Harmful Payloads",
+            "title": "Malicious JPEG Files Discovered with Embedded Payloads in Malware Campaigns",
+            "content": "Recent malware campaigns have been identified where JPEG files are used to deliver embedded malicious payloads. These JPEGs, once downloaded, can execute harmful code on a user&#x27;s system without detection. Security researcher Xavier noted the absence of the malicious &quot;MSI image&quot; in previous analyses, indicating evolving tactics in malware distribution. The campaigns target systems indiscriminately, posing a risk to any user downloading images from untrusted sources. Security teams should implement robust scanning for file integrity and educate users about the risks of downloading files from unknown origins.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32738",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "Weekly Security Recap—AI, DDoS, and Docker Threats Highlighted",
+            "title": "Weekly Security Recap: AI Threats, Massive DDoS, and Docker Malware",
+            "content": "This week&#x27;s security landscape saw a mix of AI-driven threats, a record-setting 30Tbps DDoS attack, and new malware targeting Docker containers. The AI threat, dubbed PromptSpy, raises concerns about data manipulation and unauthorized access. Meanwhile, the DDoS attack highlights vulnerabilities in network infrastructure that could cripple services. Docker users face risks from malware that compromises container environments, urging a review of security practices. Professionals should prioritize updating systems, monitoring network traffic, and reinforcing container security to mitigate these evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/weekly-recap-double-tap-skimmers.html",
+            "relatedResources": [
+                {
+                    "label": "Container Security Guide",
+                    "url": "/guides/container-security.html",
+                    "icon": "fa-cube"
+                }
+            ]
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "Password Managers Under Scrutiny—Zero-Knowledge Claims Questioned",
+            "title": "Researchers Challenge Zero-Knowledge Claims of Password Managers",
+            "content": "A recent investigation into password managers has raised questions about their zero-knowledge claims. Researchers found potential attack vectors that could exploit these tools, compromising user credentials. While password managers are designed to keep data secure, vulnerabilities could allow unauthorized access if exploited. This revelation underscores the need for users to choose managers with robust security measures and for developers to address these potential flaws. Security professionals should evaluate the security architecture of these tools and stay informed about emerging vulnerabilities.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/password-managers-keep-your-passwords-safe-unless",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "AI Agents Exploit Supply Chains—New Attack Methodology Unveiled",
+            "title": "Autonomous AI Agents Introduce Novel Supply Chain Attack Strategy",
+            "content": "A novel supply chain attack utilizing autonomous AI agents has been uncovered, primarily targeting cryptocurrency wallets. This campaign, while focused on financial theft, demonstrates a methodology with broader implications for supply chain security. The AI agents can autonomously navigate systems, identifying and exploiting vulnerabilities. The potential reach of such attacks could affect various industries relying on complex supply chains. Organizations should bolster their defenses by implementing AI-driven threat detection systems and conducting regular security audits to preemptively identify weaknesses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/autonomous-ai-agents-provide-new-class-of-supply-chain-attack/",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "Fake Security Site Spreads ValleyRAT—Users at Risk",
+            "title": "Fake Huorong Security Site Distributes ValleyRAT Malware to Users",
+            "content": "A counterfeit Huorong security website has been discovered distributing ValleyRAT malware, exploiting users who mistakenly visit the site due to a single-letter domain alteration. Once downloaded, ValleyRAT grants attackers remote control over infected systems, posing significant security risks. This incident highlights the importance of verifying website URLs and the potential dangers of typosquatting. Users should ensure they only download software from verified sources and maintain updated security software to detect and block such threats.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/02/huorong",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "RTL Data Breach—27,000 Employee Records Compromised",
+            "title": "Cybercriminal LuneBF Claims Theft of RTL Employee Data in Breach",
+            "content": "A data breach at RTL Group has compromised the personal information of over 27,000 employees, with hacker LuneBF claiming responsibility. This breach underscores the vulnerability of media organizations to cyberattacks and the potential for significant data exposure. The stolen data could be used for identity theft or further cyberattacks, affecting both employees and the organization. RTL Group must enhance its cybersecurity measures and conduct a thorough investigation to prevent future breaches. Employees should be vigilant for signs of identity theft and consider credit monitoring services.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4135838/hacker-stiehlt-daten-von-tausenden-rtl-mitarbeitern.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 23 2026",
             "headline": "ISC Stormcast Highlights Cyber Trends—InfoCON Remains Green",
             "title": "ISC Stormcast for February 23rd: Cybersecurity Landscape Overview",
             "content": "The SANS Internet Storm Center (ISC) released its Stormcast for February 23, 2026, maintaining an InfoCON status of green, indicating a stable cybersecurity environment. The podcast provides an overview of current cybersecurity trends and threats, emphasizing the importance of vigilance despite the absence of immediate global threats. ISC continues to monitor potential vulnerabilities and cyber incidents, offering insights into emerging trends and preventive measures. Security professionals are encouraged to stay informed through ISC&#x27;s regular updates to ensure preparedness against evolving threats. The green status reflects a period of relative calm but underscores the need for ongoing vigilance.",
@@ -15,84 +96,6 @@ const websiteContent = {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 22 2026",
-            "headline": "TikTok&#x27;s New Rules Under American Ownership—What You Can&#x27;t Say",
-            "title": "TikTok&#x27;s Content Guidelines Tighten Under New American Ownership",
-            "content": "In a recent episode of the Lock and Code podcast, experts Zach Hinkle and MinJi Pae discuss TikTok&#x27;s evolving content policies following its acquisition by American owners. The platform&#x27;s new guidelines aim to address concerns over misinformation and harmful content, with stricter rules on what users can post. This shift reflects a broader trend of social media platforms tightening controls to comply with regulatory demands and improve user safety. Professionals in digital media and cybersecurity should note these changes as part of the ongoing debate over content moderation and freedom of expression online. Staying informed on policy updates is crucial for compliance and strategic planning.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/podcast/2026/02/what-cant-you-say-on-tiktok",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 22 2026",
-            "headline": "Arkanix Stealer: AI-Driven Malware Targets Sensitive Info",
-            "title": "Arkanix Stealer Emerges as AI-Enhanced Info-Stealing Malware",
-            "content": "Arkanix Stealer, a new information-stealing malware, has surfaced on dark web forums, leveraging AI to enhance its capabilities. Initially promoted in late 2025, this malware targets sensitive data by exploiting AI-driven techniques to bypass traditional security measures. The operation highlights a growing trend of cybercriminals using artificial intelligence to develop more sophisticated and evasive threats. Organizations are advised to strengthen their defenses by integrating AI-based security solutions to detect and mitigate such advanced threats. With the rise of AI-enhanced malware, the cybersecurity landscape faces increasing complexity in threat detection and response.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/arkanix-stealer-pops-up-as-short-lived-ai-info-stealer-experiment/",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Feb 21 2026",
-            "headline": "Predator Spyware Cloaks iOS Activity—Privacy at Risk",
-            "title": "Predator Spyware Hijacks iOS SpringBoard to Conceal Surveillance",
-            "content": "Intellexa&#x27;s Predator spyware has been discovered exploiting iOS SpringBoard to hide indicators of camera and microphone activity, allowing operators to stream recordings undetected. This sophisticated spyware represents a significant privacy threat, as it can bypass iOS&#x27;s built-in security features designed to alert users to active recordings. The discovery underscores the need for enhanced security measures on mobile devices to protect against such covert surveillance tools. iOS users are urged to update their devices and remain vigilant about app permissions and unusual device behavior. This case highlights the ongoing battle between spyware developers and mobile security enhancements.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/predator-spyware-hooks-ios-springboard-to-hide-mic-camera-activity/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 21 2026",
-            "headline": "AI-Powered Hackers Breach 600 FortiGate Devices in 55 Nations",
-            "title": "AI-Assisted Threat Actor Compromises Hundreds of FortiGate Devices Worldwide",
-            "content": "A financially motivated threat actor, utilizing commercial generative AI services, has compromised over 600 FortiGate devices across 55 countries, according to Amazon Threat Intelligence. This campaign demonstrates the potential of AI to enhance cybercriminal operations, enabling rapid and widespread breaches. The affected devices are part of Fortinet&#x27;s firewall solutions, critical for network security in various industries. Organizations using FortiGate devices should immediately review their security configurations and apply available updates to mitigate this threat. This incident highlights the growing intersection of AI and cybersecurity, with AI tools being leveraged for both defensive and offensive purposes.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/ai-assisted-threat-actor-compromises.html",
-            "relatedResources": [
-                {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                }
-            ]
-        },
-        {
-            "date": "Feb 21 2026",
-            "headline": "600 Fortinet Firewalls Breached—AI Used in Attack",
-            "title": "Amazon Reports AI-Assisted Breach of Fortinet Firewalls in Global Campaign",
-            "content": "Amazon has issued a warning about a Russian-speaking hacker who used generative AI services to breach over 600 FortiGate firewalls in 55 countries within just five weeks. This attack illustrates the increasing use of AI in cybercrime, allowing for more efficient and scalable operations. The compromised devices are integral to network security, making this breach particularly concerning for affected organizations. Fortinet users are advised to conduct thorough security audits and apply patches to prevent further exploitation. This event signifies a pivotal moment in cybersecurity, where AI&#x27;s dual-use nature is becoming increasingly apparent.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/amazon-ai-assisted-hacker-breached-600-fortigate-firewalls-in-5-weeks/",
-            "relatedResources": [
-                {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                }
-            ]
-        },
-        {
-            "date": "Feb 20 2026",
-            "headline": "Hacker Arrested for Booking Luxury Hotels at One Cent",
-            "title": "Spanish Police Arrest Hacker for Exploiting Hotel Booking System",
-            "content": "Spanish authorities have arrested a 20-year-old hacker accused of manipulating hotel booking systems to secure luxury accommodations for just one euro cent per night. The suspect allegedly exploited vulnerabilities in the booking software to bypass standard pricing mechanisms, costing hotels significant revenue losses. This arrest highlights the ongoing challenges in securing digital transaction systems against fraud and exploitation. Hotel operators are urged to review and fortify their booking platforms to prevent similar incidents. This case serves as a reminder of the importance of robust cybersecurity measures in protecting against financial and reputational damage.",
-            "source": "Graham Cluley",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/spanish-police-say-they-have-arrested-hacker-who-booked-luxury-hotel-rooms-for-just-one-cent",
-            "relatedResources": [
-                {
-                    "label": "DORA Compliance Guide",
-                    "url": "/guides/dora-compliance.html",
-                    "icon": "fa-university"
                 }
             ]
         },
@@ -123,33 +126,22 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 22 2026",
-            "headline": "Samsung Galaxy S26 Integrates Perplexity—Boosts AI Ecosystem",
-            "title": "Samsung Adds Perplexity to Galaxy S26 AI Suite",
-            "content": "Samsung has announced the integration of Perplexity into its Galaxy S26 smartphones, allowing users to activate it with the command &quot;hey, Plex.&quot; This move is part of Samsung&#x27;s strategy to develop a &quot;multi-agent ecosystem,&quot; enhancing user interaction by offering multiple AI options, including Bixby and Gemini. The addition of Perplexity aims to cater to users who prefer different AI agents for varied tasks, reflecting the growing trend towards personalized AI experiences. This integration is expected to enhance user satisfaction by providing more flexibility and choice in AI functionalities. Samsung continues to innovate in the AI space, highlighting its commitment to diversifying user engagement with advanced technology.",
+            "date": "Feb 23 2026",
+            "headline": "20,000 Epstein Docs—AI Struggles to Decode PDF Maze",
+            "title": "AI Challenges in Deciphering 20,000 Epstein Estate Documents",
+            "content": "In a recent endeavor, AI systems grappled with analyzing 20,000 pages of documents released from Jeffrey Epstein&#x27;s estate by the House Oversight Committee. The complexity of navigating through fragmented email threads and poorly formatted PDFs highlighted the limitations of current AI parsing capabilities. Despite advancements in natural language processing, these documents proved challenging for AI to effectively interpret without human intervention. The incident underscores the ongoing need for improved AI tools in handling unstructured data, particularly in legal and investigative contexts. Professionals should be aware of the limitations of AI in document analysis and consider hybrid approaches that combine human expertise with machine efficiency.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/882921/samsung-is-adding-perplexity-to-galaxy-ai",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/882891/ai-pdf-parsing-failure",
+            "relatedResources": []
         },
         {
-            "date": "Feb 22 2026",
-            "headline": "AI Governance Evolves—Shadow Mode and Drift Alerts Introduced",
-            "title": "Modern Audit Loop: Shadow Mode, Drift Alerts, and Audit Logs",
-            "content": "As AI systems continue to evolve, traditional software governance methods are becoming outdated. VentureBeat reports on the introduction of advanced audit mechanisms such as shadow mode, drift alerts, and continuous audit logs. These tools are designed to address the dynamic nature of machine learning models that can retrain or drift between quarterly audits. The new approach aims to ensure compliance and security in real-time, offering a more robust framework for AI governance. Organizations adopting these tools can better manage AI system changes, ultimately reducing the risk of non-compliance and enhancing operational efficiency. This shift underscores the need for adaptive governance in the AI industry.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/shadow-mode-drift-alerts-and-audit-logs-inside-the-modern-audit-loop",
+            "date": "Feb 23 2026",
+            "headline": "Mastercard&#x27;s AI Agents—The Future of Shopping Transactions",
+            "title": "Mastercard Demonstrates AI-Driven Agentic Commerce at India AI Summit",
+            "content": "Mastercard unveiled its vision for the future of commerce with a demonstration of AI-driven transactions at the India AI Impact Summit 2026. The company showcased its first fully authenticated &quot;agentic commerce&quot; transaction, where AI agents autonomously completed a purchase. This innovation points to a shift in payment systems, moving towards software agents handling transactions instead of humans. The implications for consumer behavior and financial security are significant, as this could streamline payment processes and enhance security protocols. Organizations should prepare for the integration of AI agents in commerce by investing in secure and scalable AI infrastructure.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/mastercard-ai-payment-demo-points-to-agent-led-commerce/",
             "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -158,21 +150,21 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 22 2026",
-            "headline": "Last Chance: TechCrunch Disrupt 2026 Early Bird Ends Soon",
-            "title": "Final Days for Super Early Bird TechCrunch Disrupt 2026 Tickets",
-            "content": "TechCrunch Disrupt 2026 is offering its Super Early Bird pricing until February 27 at 11:59 p.m. PT. Attendees have just six days left to take advantage of up to $680 in ticket savings. This annual event is a significant gathering for tech enthusiasts, startups, and industry leaders, featuring cutting-edge discussions and networking opportunities. As the deadline approaches, interested participants are encouraged to secure their tickets to benefit from the discounted rates. The event promises to deliver insights into the latest technological advancements and trends, making it a must-attend for those looking to stay ahead in the tech industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/",
+            "date": "Feb 23 2026",
+            "headline": "Amul&#x27;s AI Revolution—Empowering 3.6M Indian Dairy Farmers",
+            "title": "Amul&#x27;s AI Assistant Sarlaben Transforms Dairy Farming in Gujarat",
+            "content": "Amul has deployed an AI assistant named Sarlaben to support 3.6 million women dairy farmers in Gujarat, India. This initiative represents one of the largest applications of AI in agriculture, aiming to optimize milk production and enhance farmers&#x27; livelihoods. Sarlaben provides real-time data analysis and recommendations to improve cattle health and milk yield. This deployment not only empowers rural communities but also sets a precedent for AI&#x27;s role in sustainable agriculture. Stakeholders in the agriculture sector should consider similar AI-driven solutions to address challenges in productivity and resource management.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/amul-ai-dairy-farming-platform-india/",
             "relatedResources": []
         },
         {
-            "date": "Feb 21 2026",
-            "headline": "Sam Altman Highlights Human Energy Consumption in AI Debate",
-            "title": "Sam Altman Compares AI and Human Energy Consumption",
-            "content": "OpenAI CEO Sam Altman has sparked a conversation by highlighting the energy consumption involved in training humans, drawing a parallel to AI training processes. During a recent discussion, Altman pointed out that while AI systems are often criticized for their energy use, human education and development also require substantial resources. This perspective aims to balance the narrative around AI&#x27;s environmental impact, suggesting that both AI and human development have significant energy demands. Altman&#x27;s remarks encourage a broader view of energy consumption across different domains, prompting stakeholders to consider efficiency improvements in both AI technologies and human training methodologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/",
+            "date": "Feb 23 2026",
+            "headline": "Hitachi&#x27;s Industrial AI—Aiming for Robotics Dominance",
+            "title": "Hitachi Leverages Expertise to Lead in Physical AI Development",
+            "content": "Hitachi is positioning itself as a leader in the field of physical AI, which involves controlling robots and industrial machinery. While companies like OpenAI and Google focus on multimodal models, Hitachi is leveraging its industrial expertise to develop practical AI solutions for real-world applications. The company&#x27;s strategy includes building platforms that integrate AI with existing industrial systems, offering a competitive edge in robotics and automation. This approach highlights the growing importance of domain-specific AI solutions in industrial settings. Industry professionals should monitor Hitachi&#x27;s progress and consider the potential of physical AI in enhancing operational efficiency.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/hitachi-physical-ai-industrial-expertise/",
             "relatedResources": [
                 {
                     "label": "Active Directory Security",
@@ -182,49 +174,31 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 21 2026",
-            "headline": "Microsoft Gaming CEO Rejects &#x27;Endless AI Slop&#x27; in Strategy",
-            "title": "Microsoft&#x27;s Gaming Division Avoids Saturating Market with AI Content",
-            "content": "Microsoft&#x27;s new gaming CEO has pledged to avoid overwhelming the gaming ecosystem with excessive AI-generated content, which he referred to as &quot;endless AI slop.&quot; This statement reflects Microsoft&#x27;s commitment to maintaining content quality and player engagement in its gaming division. As AI becomes increasingly integrated into gaming, the company aims to strike a balance between leveraging AI for innovation and preserving the integrity of its gaming experiences. This approach is intended to differentiate Microsoft from competitors who may prioritize quantity over quality in AI content. The announcement underscores Microsoft&#x27;s strategic focus on thoughtful AI integration in gaming.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/21/microsofts-new-gaming-ceo-vows-not-to-flood-the-ecosystem-with-endless-ai-slop/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
+            "date": "Feb 23 2026",
+            "headline": "OpenAI&#x27;s Frontier Alliance—Boosting Enterprise AI Deployments",
+            "title": "OpenAI Launches Frontier Alliance Partners for Enterprise AI Scaling",
+            "content": "OpenAI has introduced the Frontier Alliance Partners initiative to facilitate the transition of enterprises from AI pilots to full-scale production. This program aims to support secure and scalable deployment of AI agents across various industries. By collaborating with partners, OpenAI seeks to address challenges in AI integration, such as data security and infrastructure scalability. The initiative is expected to accelerate the adoption of AI technologies in enterprise environments, offering a framework for successful implementation. Enterprises should explore partnership opportunities with OpenAI to enhance their AI capabilities and stay competitive in the digital landscape.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/frontier-alliance-partners",
+            "relatedResources": []
         },
         {
-            "date": "Feb 21 2026",
-            "headline": "Google VP Warns: AI Startups Face Viability Challenges",
-            "title": "Google VP Highlights Risks for LLM Wrappers and AI Aggregators",
-            "content": "A Google Vice President has issued a cautionary note regarding the sustainability of AI startups focusing on large language model (LLM) wrappers and AI aggregators. As generative AI technology evolves, these companies face increasing pressure from shrinking margins and limited differentiation. The warning suggests that without unique value propositions, such startups may struggle to survive in a competitive market. This insight is crucial for investors and entrepreneurs in the AI space, emphasizing the need for innovation and strategic positioning. The statement reflects broader industry trends where differentiation and scalability are key to long-term success.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
+            "date": "Feb 23 2026",
+            "headline": "AI Agents Deliver ROI—1,100 Devs Share Scaling Insights",
+            "title": "Scaling AI Agents: Insights from 1,100 Developers and CTOs",
+            "content": "A survey conducted by DigitalOcean reveals that AI agents are delivering tangible returns on investment, yet scaling them remains a challenge. The 2026 Currents research report gathered insights from over 1,100 developers and CTOs, highlighting the benefits of AI agents in tasks like code refactoring and debugging. However, widespread deployment in production environments is still limited. The findings emphasize the need for robust infrastructure and strategic planning to overcome scaling barriers. Organizations looking to leverage AI agents should prioritize building scalable systems and investing in talent to maximize the potential of AI-driven solutions.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/ai-agents-are-delivering-real-roi-heres-what-1-100-developers-and-ctos",
+            "relatedResources": []
         },
         {
-            "date": "Feb 21 2026",
-            "headline": "OpenAI Considered Police Alert on Shooter&#x27;s ChatGPT Use",
-            "title": "OpenAI Weighed Police Involvement Over Canadian Shooter&#x27;s ChatGPT Activity",
-            "content": "OpenAI recently debated whether to alert authorities about a Canadian shooter&#x27;s conversations on its ChatGPT platform, which included descriptions of gun violence. These discussions were flagged by OpenAI&#x27;s monitoring tools designed to detect misuse of the AI system. The situation raises important questions about the responsibilities of AI providers in reporting potential threats. OpenAI&#x27;s deliberation highlights the ethical and legal challenges faced by AI companies in balancing user privacy with public safety. This incident underscores the need for clear guidelines and protocols in handling potentially harmful AI interactions.",
+            "date": "Feb 22 2026",
+            "headline": "India AI Summit—Big Tech and AI Labs Converge",
+            "title": "Key Developments from the India AI Impact Summit 2026",
+            "content": "The ongoing India AI Impact Summit is drawing attention as executives from major AI labs and tech giants gather to discuss the future of artificial intelligence. Participants include representatives from OpenAI, Anthropic, Nvidia, Microsoft, Google, and Cloudflare, along with heads of state. The summit focuses on AI advancements and their implications for global industries. This convergence of thought leaders highlights India&#x27;s growing role in the AI landscape and sets the stage for future collaborations and innovations. Industry professionals should follow the outcomes of this summit to stay informed about emerging trends and opportunities in AI.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/21/openai-debated-calling-police-about-suspected-canadian-shooters-chats/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
+            "sourceUrl": "https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/",
+            "relatedResources": []
         }
     ],
     "articles": {},
