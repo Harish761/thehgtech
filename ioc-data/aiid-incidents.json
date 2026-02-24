@@ -951,28 +951,12 @@
       "date": "2025-11-29",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-634",
-      "incident_id": 634,
-      "title": "Alleged Deepfake CFO Scam Reportedly Costs Multinational Engineering Firm Arup $25 Million",
-      "date": "2025-11-26",
-      "category": "deepfake",
-      "severity": "critical"
-    },
-    {
-      "id": "AIID-1128",
-      "incident_id": 1128,
-      "title": "Philippine Officials Reportedly Share Veo 3-Generated Video to Support Vice President Sara Duterte D",
-      "date": "2025-11-26",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 121,
+    "total": 119,
     "last7Days": 6,
     "last30Days": 38
   },
-  "lastUpdated": "2026-02-24T14:32:17.509496+05:30"
+  "lastUpdated": "2026-02-24T19:09:47.045261+05:30"
 }
