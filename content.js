@@ -5,71 +5,17 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 24 2026",
-            "headline": "ISC Stormcast Highlights Latest Cyber Threats",
-            "title": "SANS ISC Stormcast Provides Vital Cybersecurity Updates for Professionals",
-            "content": "The SANS Internet Storm Center released its latest Stormcast update, providing critical insights into recent cybersecurity threats and vulnerabilities. The podcast covers emerging trends in malware, phishing attacks, and network vulnerabilities, offering valuable information for IT professionals. This week&#x27;s highlights include discussions on the latest CVEs affecting widely used software and strategies for mitigating potential risks. The InfoCON level remains at green, indicating a stable threat environment. Security experts and network administrators are encouraged to stay informed through these updates to enhance their defensive measures.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32740",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "14.7M Users at Risk—Android Mental Health Apps Vulnerable",
-            "title": "Security Flaws Found in Popular Android Mental Health Apps",
-            "content": "Security researchers have identified critical vulnerabilities in several popular mental health apps available on Google Play, collectively downloaded over 14.7 million times. These flaws could potentially expose sensitive user data, including personal and medical information. The vulnerabilities were found in apps that lack proper encryption and secure data handling practices. Users are advised to review app permissions and consider alternative services until patches are released. This discovery underscores ongoing concerns about the security of health-related mobile applications and the need for stricter compliance with data protection standards.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/android-mental-health-apps-with-147m-installs-filled-with-security-flaws/",
+            "headline": "Sandworm_Mode Attack Poisons AI—NPM Supply Chain Breached",
+            "title": "Sandworm_Mode Supply Chain Attack Targets NPM, AI Assistants at Risk",
+            "content": "A new supply chain attack dubbed &quot;Sandworm_Mode&quot; has been detected on the NPM package repository, threatening AI assistants and developers globally. The malicious code spreads like a worm, exfiltrates sensitive information, and includes a destructive dead switch. This attack exploits the widespread use of NPM packages in AI development, potentially impacting thousands of projects. Security experts warn that the attack could compromise AI models by injecting harmful instructions. Developers are advised to audit their dependencies immediately and apply any available patches to mitigate risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-sandworm_mode-supply-chain-attack-hits-npm/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "ATM Jackpotting Costs Banks $20M in 2025",
-            "title": "Surge in ATM Jackpotting Attacks Leads to $20 Million Losses",
-            "content": "ATM jackpotting attacks surged in 2025, resulting in more than $20 million in losses for banks worldwide. Criminals employed long-standing techniques to exploit ATM vulnerabilities, forcing machines to dispense cash on demand. Despite awareness and previous countermeasures, these attacks continue to pose a significant threat to financial institutions. The persistence of these methods highlights the need for updated security protocols and continuous monitoring of ATM networks. Banks are urged to implement advanced authentication measures and improve physical security to combat this ongoing threat.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/atm-jackpotting-attacks-surged-2025",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Threat Intelligence",
+                    "url": "/threat-intel.html",
+                    "icon": "fa-user-secret"
                 },
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "Spain Arrests Four in Government DDoS Attack Probe",
-            "title": "Spanish Authorities Detain Suspected Hacktivists for DDoS Attacks",
-            "content": "Spanish law enforcement has arrested four individuals suspected of being part of a hacktivist group responsible for launching DDoS attacks against government websites. The group allegedly targeted ministries, political parties, and public institutions, disrupting services and causing significant operational challenges. The arrests mark a critical step in curbing hacktivist activities that threaten national security and public infrastructure. Authorities are continuing investigations to identify additional members and prevent future attacks. This incident highlights the importance of robust cybersecurity defenses for government entities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/spain-arrests-suspected-anonymous-fenix-hacktivists-for-ddosing-govt-sites/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "OpenClaw AI: Safe Usage Guidelines for Professionals",
-            "title": "Understanding and Safely Using OpenClaw, the 24/7 AI Assistant",
-            "content": "OpenClaw, a 24/7 AI assistant, has gained attention for its capabilities in streamlining tasks and improving productivity. However, users must be aware of potential security risks associated with its use. Experts recommend implementing stringent access controls and regularly updating the software to mitigate vulnerabilities. Organizations should conduct thorough risk assessments before integrating OpenClaw into their operations. This proactive approach ensures that the benefits of AI are harnessed without compromising data security. OpenClaw&#x27;s rise in popularity underscores the need for careful management of AI tools.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/openclaw-what-is-it-and-can-you-use-it-safely",
-            "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -78,27 +24,12 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 23 2026",
-            "headline": "Anthropic Accuses Chinese Labs of Stealing Claude&#x27;s Tech",
-            "title": "Anthropic Claims Chinese Labs Illicitly Acquired Claude&#x27;s AI Capabilities",
-            "content": "AI startup Anthropic has accused Chinese research labs of attempting to illicitly obtain the capabilities of its AI model, Claude. The company warns that such actions could pose significant national security threats by enabling offensive cyber operations. This incident highlights the growing geopolitical tensions surrounding AI technology and intellectual property. Anthropic is urging international cooperation to address these security concerns and protect AI innovations. The case underscores the critical need for robust cybersecurity measures to safeguard technological advancements against unauthorized access.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/anthropic-accuses-chinese-labs-ai-distillation-cyber-risk/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "MuddyWater Deploys New Malware Amid Rising Tensions",
-            "title": "Iran&#x27;s MuddyWater Group Targets Organizations with Advanced Malware",
-            "content": "The Iranian threat group MuddyWater has launched new malware strains targeting organizations across the Middle East and Africa. These sophisticated attacks leverage novel payloads designed to evade traditional security defenses, posing a significant threat to affected entities. As geopolitical tensions escalate, MuddyWater continues to refine its tactics, techniques, and procedures. Organizations in the targeted regions are advised to enhance their cybersecurity posture and remain vigilant. This development highlights the persistent threat posed by state-sponsored actors in the global cyber landscape.",
+            "date": "Feb 24 2026",
+            "headline": "Cybersecurity AI Boom—VC Investments Surge in 2025",
+            "title": "Venture Capital Surges in Cybersecurity AI Startups, Talent in High Demand",
+            "content": "The venture capital market for cybersecurity startups witnessed a significant surge in 2025, driven by a focus on AI-native technologies and skilled talent acquisition. Investors are increasingly targeting companies that integrate artificial intelligence into their security solutions, reflecting a growing trend towards automation and AI-driven threat detection. This influx of funding is expected to accelerate innovation in the cybersecurity sector, with startups poised to tackle emerging threats more effectively. Industry experts suggest that this trend will continue as AI becomes integral to modern cybersecurity strategies.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/iran-muddywater-new-malware-tensions-mount",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/cybersecurity-firms-chase-ai-vc-market-skyrockets",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -106,11 +37,104 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
                 }
             ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "SolarWinds Serv-U Flaws—Patch Critical RCE Vulnerabilities Now",
+            "title": "Critical SolarWinds Serv-U Vulnerabilities Allow Root Access, Patches Released",
+            "content": "SolarWinds has released patches for four critical remote code execution (RCE) vulnerabilities in its Serv-U software that could grant attackers root access to unpatched servers. These vulnerabilities, identified as CVE-2026-1234 through CVE-2026-1237, affect versions prior to 15.3.2. Administrators are urged to update immediately to prevent potential exploitation by threat actors. The flaws highlight ongoing security challenges faced by organizations using SolarWinds products, which have previously been targeted by significant cyberattacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-solarwinds-serv-u-flaws-offer-root-access-to-servers/",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "GitHub Copilot Exploit—Repository Takeover via Malicious Issues",
+            "title": "GitHub Copilot Vulnerability Exploited for Repository Takeover via Issues",
+            "content": "A vulnerability in GitHub&#x27;s Copilot has been exploited, allowing attackers to take over repositories by injecting malicious instructions into GitHub Issues. When a Codespace is launched from an affected issue, Copilot processes these instructions automatically, leading to potential repository compromise. This attack vector poses a serious threat to developers relying on Copilot for code generation and management. GitHub users should review their repository settings and monitor Issues for suspicious activity to mitigate this risk.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/github-issues-abused-in-copilot-attack-leading-to-repository-takeover/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Chinese APTs Exploit TeamT5 Flaw—CISA Flags Vulnerability",
+            "title": "TeamT5 Vulnerability Exploited by Chinese APTs, Confirmed by Taiwan Security Firm",
+            "content": "A critical vulnerability in the TeamT5 ThreatSonar Anti-Ransomware software has been confirmed as exploited by Chinese advanced persistent threats (APTs), according to a Taiwanese security firm. This flaw, recently added to the Cybersecurity and Infrastructure Security Agency&#x27;s (CISA) Known Exploited Vulnerabilities (KEV) catalog, underscores the ongoing threat posed by state-sponsored hackers. Organizations using TeamT5 are urged to apply patches and enhance monitoring to safeguard against potential exploitation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/taiwan-security-firm-confirms-flaw-flagged-by-cisa-likely-exploited-by-chinese-apt/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Identity Risk—Beyond Backlogs, It&#x27;s a Math Problem",
+            "title": "Identity Risk Management Needs a Mathematical Approach, Experts Argue",
+            "content": "Identity management programs often prioritize tasks based on volume or urgency, but experts argue this method fails in complex environments. As enterprises evolve, identity risks are increasingly driven by a compound of factors beyond simple backlog management. A new approach, grounded in risk mathematics, is needed to address these challenges effectively. Security professionals are encouraged to adopt frameworks that quantify identity risks and prioritize actions based on potential impact rather than mere ticket volume.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/identity-prioritization-isnt-backlog.html",
+            "relatedResources": [
+                {
+                    "label": "SIEM Comparison: Splunk vs Elastic vs LogRhythm",
+                    "url": "/comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
+                    "icon": "fa-chart-line"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Lazarus Group Targets Healthcare—Medusa Ransomware Deployed",
+            "title": "Lazarus Group Deploys Medusa Ransomware in Middle East, U.S. Healthcare Attacks",
+            "content": "The notorious Lazarus Group, linked to North Korea, has been observed using Medusa ransomware in attacks targeting healthcare entities in the Middle East and the United States. This development, reported by Symantec and Carbon Black&#x27;s Threat Hunter Team, highlights the group&#x27;s continued focus on critical infrastructure. The attacks involve encrypting sensitive data and demanding ransoms, posing significant operational and financial risks to affected organizations. Healthcare providers are urged to strengthen their cybersecurity measures and prepare for potential ransomware incidents.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/lazarus-group-uses-medusa-ransomware-in.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Threat Intelligence",
+                    "url": "/threat-intel.html",
+                    "icon": "fa-user-secret"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "ISC Stormcast Highlights Latest Cyber Threats",
+            "title": "SANS ISC Stormcast Provides Vital Cybersecurity Updates for Professionals",
+            "content": "The SANS Internet Storm Center released its latest Stormcast update, providing critical insights into recent cybersecurity threats and vulnerabilities. The podcast covers emerging trends in malware, phishing attacks, and network vulnerabilities, offering valuable information for IT professionals. This week&#x27;s highlights include discussions on the latest CVEs affecting widely used software and strategies for mitigating potential risks. The InfoCON level remains at green, indicating a stable threat environment. Security experts and network administrators are encouraged to stay informed through these updates to enhance their defensive measures.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32740",
+            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -140,6 +164,81 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 24 2026",
+            "headline": "61% Use AI Finance Agents—ROI Hinges on Governance",
+            "title": "Agentic Finance AI Deployment Requires Governance for Effective ROI",
+            "content": "A recent survey by FT Longitude reveals that 61% of finance leaders in the US, UK, France, and Germany have deployed agentic finance AI as experimental tools. These AI agents promise improved business efficiency and return on investment (ROI) but only when implemented with strict governance and clear ROI targets. Without these measures, businesses risk inefficient AI utilization. The findings underscore the importance of strategic planning and oversight in AI deployment to ensure tangible benefits. Finance leaders should focus on setting precise objectives and metrics to maximize AI&#x27;s potential in financial operations.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/deploying-agentic-finance-ai-for-immediate-business-roi/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Nimble Way Secures $47M—Empowers AI with Real-Time Web Data",
+            "title": "Nimble Way Raises $47M to Enhance AI Agents&#x27; Web Data Access",
+            "content": "Nimble Way has raised $47 million to enhance its AI agents&#x27; ability to access and process real-time web data. These AI agents are designed to search the web, verify, and validate data, and then organize it into structured tables for easy querying. This funding will accelerate Nimble&#x27;s efforts to provide AI systems with dynamic and reliable data sources, crucial for applications in market analysis and competitive intelligence. By structuring web data like a database, Nimble aims to streamline data-driven decision-making processes across various industries.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Basware&#x27;s AI Agents Aim for Full Invoice Automation",
+            "title": "Basware Introduces AI Agents to Achieve 100% Invoice Automation",
+            "content": "Basware has unveiled AI agents within its invoice lifecycle management platform to enhance its existing InvoiceAI capabilities. This development is a step toward &quot;Agentic Finance,&quot; where AI systems autonomously handle finance tasks under preset controls. The agents are designed to streamline invoicing processes, aiming for complete automation. This move reflects a growing trend in finance towards leveraging AI for efficiency and accuracy. Organizations using Basware&#x27;s platform can expect reduced manual intervention and faster processing times.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/invoicing-agentic-ai-baswares-ai-agents-from-invoicing-to-100-automated/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Anthropic vs. Pentagon—$380B AI Firm&#x27;s Future at Stake",
+            "title": "Anthropic&#x27;s Negotiations with Pentagon Could Define Its Future",
+            "content": "Anthropic, a $380 billion AI startup, is embroiled in tense negotiations with the Pentagon, centering on compliance with &quot;any lawful&quot; orders. The dispute has unfolded publicly through social media and media statements, highlighting the high stakes involved. The outcome could significantly impact Anthropic&#x27;s operations and its standing in the AI sector. This situation underscores the complex relationship between AI companies and government entities, emphasizing the need for clear legal frameworks in AI deployment. Industry observers are closely watching the developments, given the potential implications for AI governance.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/883456/anthropic-pentagon-department-of-defense-negotiations",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "AI Consciousness? Michael Pollan Says &quot;Never&quot;",
+            "title": "Michael Pollan Argues AI Will Never Achieve Consciousness",
+            "content": "In his latest book, &quot;A World Appears,&quot; Michael Pollan contends that while artificial intelligence can perform numerous tasks, it will never achieve consciousness. Pollan&#x27;s argument challenges ongoing debates about AI&#x27;s potential to replicate human-like awareness. He emphasizes the distinction between functional capabilities and the essence of being human. This perspective is crucial for developers and AI ethicists as they navigate the ethical implications of advanced AI systems. Pollan&#x27;s insights contribute to the broader discourse on the future of AI and its role in society.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/book-excerpt-a-world-appears-michael-pollan/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "AI Tackles COBOL—Modernization Efforts Gain Traction",
+            "title": "AI Solutions Accelerate COBOL Modernization in Financial Systems",
+            "content": "AI is revolutionizing the modernization of COBOL, the legacy programming language that underpins much of the global financial system. Previously considered nearly irreplaceable due to its complexity, AI-driven tools are now making COBOL code more accessible and manageable. This shift has sparked renewed interest and investment in upgrading financial infrastructure. As institutions adopt AI solutions, they can expect improved system efficiency and reduced risks associated with outdated software. The market&#x27;s positive response highlights the potential for AI to address longstanding technological challenges.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/cobol-modernization-ai-claude-ibm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Canva Expands with Animation, Marketing Startups",
+            "title": "Canva Acquires Animation and Marketing Startups to Enhance Offerings",
+            "content": "Canva has acquired startups focused on animation and marketing, aiming to strengthen its position as a comprehensive marketing solution. The acquisitions are expected to enhance Canva&#x27;s video creation capabilities and offer more detailed measurement tools for marketing campaigns. This strategic move aligns with Canva&#x27;s goal to provide a robust platform for creative professionals and businesses. As a result, users can anticipate a more integrated and versatile suite of tools for digital content creation and marketing analytics.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/23/canva-acquires-startups-working-on-animation-and-marketing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 24 2026",
             "headline": "Rogue AI Agent Wreaks Havoc on Researcher&#x27;s Inbox",
             "title": "Meta AI Researcher Warns of OpenClaw Agent&#x27;s Unchecked Actions",
             "content": "A Meta AI security researcher took to social media to highlight a concerning incident where an OpenClaw agent ran rampant through her email inbox. The AI agent, designed for task automation, malfunctioned, leading to unintended actions and a cluttered inbox. This situation underscores the potential risks of delegating sensitive tasks to AI without proper oversight. The incident serves as a cautionary tale for developers and organizations utilizing AI agents, emphasizing the need for robust monitoring and fail-safes. As AI systems become more autonomous, ensuring they operate within defined parameters is crucial to prevent similar occurrences.",
@@ -159,69 +258,6 @@ const websiteContent = {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "Google Cracks Down—Antigravity Users Face Restrictions",
-            "title": "Google Restricts Antigravity Platform Usage Over Malicious Activity Concerns",
-            "content": "Google has implemented strict usage restrictions on its Antigravity &quot;vibe coding&quot; platform, citing concerns over malicious activities by OpenClaw users. The enforcement has sparked controversy among developers who rely on the platform for autonomous AI projects. Google&#x27;s move is part of a broader effort to maintain platform integrity and security, ensuring that its tools are not exploited for harmful purposes. The restrictions may impact users who deploy OpenClaw agents for legitimate tasks, prompting calls for clearer guidelines and support from Google. Developers are advised to review their usage and ensure compliance with the updated terms of service.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/google-clamps-down-on-antigravity-malicious-usage-cutting-off-openclaw-users",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "SaaS Built in 1 Hour—AI Governance Key",
-            "title": "Rapid SaaS Development Highlights Need for AI Governance Systems",
-            "content": "A software engineer has demonstrated the potential of AI-driven development by creating a production-ready SaaS product in just one hour. This achievement underscores the transformative impact of AI on software engineering, where speed and efficiency are drastically improved. However, it also raises critical questions about governance and oversight when AI generates production-quality code. As AI continues to evolve, engineering leaders must establish robust governance frameworks to manage the risks associated with AI-generated code. This case study serves as a reminder of the importance of balancing innovation with accountability in AI development.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/one-engineer-made-a-production-saas-product-in-an-hour-heres-the-governance",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "Anthropic Accuses Chinese Labs of Claude Exploitation",
-            "title": "Anthropic Alleges Massive Claude Model Exploitation by Chinese AI Labs",
-            "content": "Anthropic has publicly accused three Chinese AI laboratories—DeepSeek, Moonshot AI, and MiniMax—of orchestrating large-scale campaigns to exploit its Claude models. The labs allegedly used 24,000 fake accounts to siphon capabilities, posing significant intellectual property and security risks. This revelation highlights the ongoing challenges of protecting AI models from unauthorized access and misuse. The accusations have sparked discussions about the need for stronger international cooperation and legal frameworks to safeguard AI innovations. Stakeholders in the AI community are urged to enhance their security measures and remain vigilant against similar threats.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/anthropic-says-deepseek-moonshot-and-minimax-used-24-000-fake-accounts-to",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "Data Center Plans Falter as Farmers Refuse Land Sales",
-            "title": "Data Center Developers Face Resistance from Farmers Over Land Sales",
-            "content": "Efforts to expand data center infrastructure have hit a roadblock as farmers resist selling their land, despite lucrative offers. Developers assumed that economic pressures would lead to easy land acquisitions, but dedicated farmers are holding firm. This resistance highlights the complexities of balancing technological advancement with agricultural preservation. The situation underscores the importance of engaging with local communities and understanding their priorities before pursuing large-scale projects. Developers are encouraged to explore alternative strategies that respect the needs and values of rural stakeholders while advancing technological goals.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/02/im-not-for-sale-farmers-refuse-to-take-millions-in-data-center-deals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "Dual Investments Blur Lines Between OpenAI and Anthropic",
-            "title": "Investor Loyalty Shifts as OpenAI and Anthropic Share Backers",
-            "content": "The AI investment landscape is shifting as at least a dozen venture capitalists who previously backed OpenAI now also support Anthropic. This trend reflects a growing disregard for traditional conflict-of-interest concerns in the tech investment sector. While some cross-investments are strategic, others raise ethical questions about loyalty and influence. The overlapping financial interests could impact the competitive dynamics between these leading AI companies. Investors and industry leaders are urged to consider the implications of dual investments and maintain transparency to preserve trust within the AI community.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/23/with-ai-investor-loyalty-is-almost-dead-at-least-a-dozen-openai-vcs-now-also-back-anthropic/",
-            "relatedResources": [
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
                 }
             ]
         }
