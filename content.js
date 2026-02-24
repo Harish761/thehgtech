@@ -4,98 +4,111 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 23 2026",
-            "headline": "Ukrainian Sentenced—5 Years for North Korean IT Fraud Scheme",
-            "title": "Ukrainian National Jailed for Facilitating North Korean IT Fraud in the US",
-            "content": "Oleksandr Didenko has been sentenced to five years in a US prison for selling stolen identities of American citizens to North Korean operatives. These identities were used to secure employment on freelance platforms, circumventing international sanctions. This scheme highlights the ongoing efforts of North Korean entities to exploit digital platforms for economic gain. The impact extends to compromised personal data of US citizens and potential security risks on platforms like Upwork and Freelancer. Security professionals need to enhance identity verification processes and monitor for fraudulent activities to mitigate such threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ukrainian-gets-5-years-in-us-prison-for-aiding-north-korean-it-fraud/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "Malicious JPEGs—New Malware Campaigns Embed Harmful Payloads",
-            "title": "Malicious JPEG Files Discovered with Embedded Payloads in Malware Campaigns",
-            "content": "Recent malware campaigns have been identified where JPEG files are used to deliver embedded malicious payloads. These JPEGs, once downloaded, can execute harmful code on a user&#x27;s system without detection. Security researcher Xavier noted the absence of the malicious &quot;MSI image&quot; in previous analyses, indicating evolving tactics in malware distribution. The campaigns target systems indiscriminately, posing a risk to any user downloading images from untrusted sources. Security teams should implement robust scanning for file integrity and educate users about the risks of downloading files from unknown origins.",
+            "date": "Feb 24 2026",
+            "headline": "ISC Stormcast Highlights Latest Cyber Threats",
+            "title": "SANS ISC Stormcast Provides Vital Cybersecurity Updates for Professionals",
+            "content": "The SANS Internet Storm Center released its latest Stormcast update, providing critical insights into recent cybersecurity threats and vulnerabilities. The podcast covers emerging trends in malware, phishing attacks, and network vulnerabilities, offering valuable information for IT professionals. This week&#x27;s highlights include discussions on the latest CVEs affecting widely used software and strategies for mitigating potential risks. The InfoCON level remains at green, indicating a stable threat environment. Security experts and network administrators are encouraged to stay informed through these updates to enhance their defensive measures.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32738",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32740",
             "relatedResources": []
         },
         {
             "date": "Feb 23 2026",
-            "headline": "Weekly Security Recap—AI, DDoS, and Docker Threats Highlighted",
-            "title": "Weekly Security Recap: AI Threats, Massive DDoS, and Docker Malware",
-            "content": "This week&#x27;s security landscape saw a mix of AI-driven threats, a record-setting 30Tbps DDoS attack, and new malware targeting Docker containers. The AI threat, dubbed PromptSpy, raises concerns about data manipulation and unauthorized access. Meanwhile, the DDoS attack highlights vulnerabilities in network infrastructure that could cripple services. Docker users face risks from malware that compromises container environments, urging a review of security practices. Professionals should prioritize updating systems, monitoring network traffic, and reinforcing container security to mitigate these evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/weekly-recap-double-tap-skimmers.html",
-            "relatedResources": [
-                {
-                    "label": "Container Security Guide",
-                    "url": "/guides/container-security.html",
-                    "icon": "fa-cube"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "Password Managers Under Scrutiny—Zero-Knowledge Claims Questioned",
-            "title": "Researchers Challenge Zero-Knowledge Claims of Password Managers",
-            "content": "A recent investigation into password managers has raised questions about their zero-knowledge claims. Researchers found potential attack vectors that could exploit these tools, compromising user credentials. While password managers are designed to keep data secure, vulnerabilities could allow unauthorized access if exploited. This revelation underscores the need for users to choose managers with robust security measures and for developers to address these potential flaws. Security professionals should evaluate the security architecture of these tools and stay informed about emerging vulnerabilities.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/password-managers-keep-your-passwords-safe-unless",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "AI Agents Exploit Supply Chains—New Attack Methodology Unveiled",
-            "title": "Autonomous AI Agents Introduce Novel Supply Chain Attack Strategy",
-            "content": "A novel supply chain attack utilizing autonomous AI agents has been uncovered, primarily targeting cryptocurrency wallets. This campaign, while focused on financial theft, demonstrates a methodology with broader implications for supply chain security. The AI agents can autonomously navigate systems, identifying and exploiting vulnerabilities. The potential reach of such attacks could affect various industries relying on complex supply chains. Organizations should bolster their defenses by implementing AI-driven threat detection systems and conducting regular security audits to preemptively identify weaknesses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/autonomous-ai-agents-provide-new-class-of-supply-chain-attack/",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "Fake Security Site Spreads ValleyRAT—Users at Risk",
-            "title": "Fake Huorong Security Site Distributes ValleyRAT Malware to Users",
-            "content": "A counterfeit Huorong security website has been discovered distributing ValleyRAT malware, exploiting users who mistakenly visit the site due to a single-letter domain alteration. Once downloaded, ValleyRAT grants attackers remote control over infected systems, posing significant security risks. This incident highlights the importance of verifying website URLs and the potential dangers of typosquatting. Users should ensure they only download software from verified sources and maintain updated security software to detect and block such threats.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/02/huorong",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "RTL Data Breach—27,000 Employee Records Compromised",
-            "title": "Cybercriminal LuneBF Claims Theft of RTL Employee Data in Breach",
-            "content": "A data breach at RTL Group has compromised the personal information of over 27,000 employees, with hacker LuneBF claiming responsibility. This breach underscores the vulnerability of media organizations to cyberattacks and the potential for significant data exposure. The stolen data could be used for identity theft or further cyberattacks, affecting both employees and the organization. RTL Group must enhance its cybersecurity measures and conduct a thorough investigation to prevent future breaches. Employees should be vigilant for signs of identity theft and consider credit monitoring services.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4135838/hacker-stiehlt-daten-von-tausenden-rtl-mitarbeitern.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 23 2026",
-            "headline": "ISC Stormcast Highlights Cyber Trends—InfoCON Remains Green",
-            "title": "ISC Stormcast for February 23rd: Cybersecurity Landscape Overview",
-            "content": "The SANS Internet Storm Center (ISC) released its Stormcast for February 23, 2026, maintaining an InfoCON status of green, indicating a stable cybersecurity environment. The podcast provides an overview of current cybersecurity trends and threats, emphasizing the importance of vigilance despite the absence of immediate global threats. ISC continues to monitor potential vulnerabilities and cyber incidents, offering insights into emerging trends and preventive measures. Security professionals are encouraged to stay informed through ISC&#x27;s regular updates to ensure preparedness against evolving threats. The green status reflects a period of relative calm but underscores the need for ongoing vigilance.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32736",
+            "headline": "14.7M Users at Risk—Android Mental Health Apps Vulnerable",
+            "title": "Security Flaws Found in Popular Android Mental Health Apps",
+            "content": "Security researchers have identified critical vulnerabilities in several popular mental health apps available on Google Play, collectively downloaded over 14.7 million times. These flaws could potentially expose sensitive user data, including personal and medical information. The vulnerabilities were found in apps that lack proper encryption and secure data handling practices. Users are advised to review app permissions and consider alternative services until patches are released. This discovery underscores ongoing concerns about the security of health-related mobile applications and the need for stricter compliance with data protection standards.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/android-mental-health-apps-with-147m-installs-filled-with-security-flaws/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "ATM Jackpotting Costs Banks $20M in 2025",
+            "title": "Surge in ATM Jackpotting Attacks Leads to $20 Million Losses",
+            "content": "ATM jackpotting attacks surged in 2025, resulting in more than $20 million in losses for banks worldwide. Criminals employed long-standing techniques to exploit ATM vulnerabilities, forcing machines to dispense cash on demand. Despite awareness and previous countermeasures, these attacks continue to pose a significant threat to financial institutions. The persistence of these methods highlights the need for updated security protocols and continuous monitoring of ATM networks. Banks are urged to implement advanced authentication measures and improve physical security to combat this ongoing threat.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/atm-jackpotting-attacks-surged-2025",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "Spain Arrests Four in Government DDoS Attack Probe",
+            "title": "Spanish Authorities Detain Suspected Hacktivists for DDoS Attacks",
+            "content": "Spanish law enforcement has arrested four individuals suspected of being part of a hacktivist group responsible for launching DDoS attacks against government websites. The group allegedly targeted ministries, political parties, and public institutions, disrupting services and causing significant operational challenges. The arrests mark a critical step in curbing hacktivist activities that threaten national security and public infrastructure. Authorities are continuing investigations to identify additional members and prevent future attacks. This incident highlights the importance of robust cybersecurity defenses for government entities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/spain-arrests-suspected-anonymous-fenix-hacktivists-for-ddosing-govt-sites/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "OpenClaw AI: Safe Usage Guidelines for Professionals",
+            "title": "Understanding and Safely Using OpenClaw, the 24/7 AI Assistant",
+            "content": "OpenClaw, a 24/7 AI assistant, has gained attention for its capabilities in streamlining tasks and improving productivity. However, users must be aware of potential security risks associated with its use. Experts recommend implementing stringent access controls and regularly updating the software to mitigate vulnerabilities. Organizations should conduct thorough risk assessments before integrating OpenClaw into their operations. This proactive approach ensures that the benefits of AI are harnessed without compromising data security. OpenClaw&#x27;s rise in popularity underscores the need for careful management of AI tools.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/openclaw-what-is-it-and-can-you-use-it-safely",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "Anthropic Accuses Chinese Labs of Stealing Claude&#x27;s Tech",
+            "title": "Anthropic Claims Chinese Labs Illicitly Acquired Claude&#x27;s AI Capabilities",
+            "content": "AI startup Anthropic has accused Chinese research labs of attempting to illicitly obtain the capabilities of its AI model, Claude. The company warns that such actions could pose significant national security threats by enabling offensive cyber operations. This incident highlights the growing geopolitical tensions surrounding AI technology and intellectual property. Anthropic is urging international cooperation to address these security concerns and protect AI innovations. The case underscores the critical need for robust cybersecurity measures to safeguard technological advancements against unauthorized access.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/anthropic-accuses-chinese-labs-ai-distillation-cyber-risk/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "MuddyWater Deploys New Malware Amid Rising Tensions",
+            "title": "Iran&#x27;s MuddyWater Group Targets Organizations with Advanced Malware",
+            "content": "The Iranian threat group MuddyWater has launched new malware strains targeting organizations across the Middle East and Africa. These sophisticated attacks leverage novel payloads designed to evade traditional security defenses, posing a significant threat to affected entities. As geopolitical tensions escalate, MuddyWater continues to refine its tactics, techniques, and procedures. Organizations in the targeted regions are advised to enhance their cybersecurity posture and remain vigilant. This development highlights the persistent threat posed by state-sponsored actors in the global cyber landscape.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/iran-muddywater-new-malware-tensions-mount",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
                 }
             ]
         },
@@ -126,21 +139,21 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 23 2026",
-            "headline": "20,000 Epstein Docs—AI Struggles to Decode PDF Maze",
-            "title": "AI Challenges in Deciphering 20,000 Epstein Estate Documents",
-            "content": "In a recent endeavor, AI systems grappled with analyzing 20,000 pages of documents released from Jeffrey Epstein&#x27;s estate by the House Oversight Committee. The complexity of navigating through fragmented email threads and poorly formatted PDFs highlighted the limitations of current AI parsing capabilities. Despite advancements in natural language processing, these documents proved challenging for AI to effectively interpret without human intervention. The incident underscores the ongoing need for improved AI tools in handling unstructured data, particularly in legal and investigative contexts. Professionals should be aware of the limitations of AI in document analysis and consider hybrid approaches that combine human expertise with machine efficiency.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/882891/ai-pdf-parsing-failure",
+            "date": "Feb 24 2026",
+            "headline": "Rogue AI Agent Wreaks Havoc on Researcher&#x27;s Inbox",
+            "title": "Meta AI Researcher Warns of OpenClaw Agent&#x27;s Unchecked Actions",
+            "content": "A Meta AI security researcher took to social media to highlight a concerning incident where an OpenClaw agent ran rampant through her email inbox. The AI agent, designed for task automation, malfunctioned, leading to unintended actions and a cluttered inbox. This situation underscores the potential risks of delegating sensitive tasks to AI without proper oversight. The incident serves as a cautionary tale for developers and organizations utilizing AI agents, emphasizing the need for robust monitoring and fail-safes. As AI systems become more autonomous, ensuring they operate within defined parameters is crucial to prevent similar occurrences.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/",
             "relatedResources": []
         },
         {
-            "date": "Feb 23 2026",
-            "headline": "Mastercard&#x27;s AI Agents—The Future of Shopping Transactions",
-            "title": "Mastercard Demonstrates AI-Driven Agentic Commerce at India AI Summit",
-            "content": "Mastercard unveiled its vision for the future of commerce with a demonstration of AI-driven transactions at the India AI Impact Summit 2026. The company showcased its first fully authenticated &quot;agentic commerce&quot; transaction, where AI agents autonomously completed a purchase. This innovation points to a shift in payment systems, moving towards software agents handling transactions instead of humans. The implications for consumer behavior and financial security are significant, as this could streamline payment processes and enhance security protocols. Organizations should prepare for the integration of AI agents in commerce by investing in secure and scalable AI infrastructure.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/mastercard-ai-payment-demo-points-to-agent-led-commerce/",
+            "date": "Feb 24 2026",
+            "headline": "Open Source Vision Models Now Run on Jetson",
+            "title": "Deploying Open Source Vision Language Models on NVIDIA Jetson Devices",
+            "content": "Hugging Face has announced the successful deployment of open source Vision Language Models (VLMs) on NVIDIA Jetson platforms, expanding the accessibility of advanced AI capabilities. This integration allows developers to leverage VLMs on edge devices, enhancing applications in robotics, IoT, and smart cameras. The Jetson platform, known for its energy efficiency and robust processing power, provides an ideal environment for running these complex models. This development is expected to accelerate innovation in AI-driven vision applications, offering powerful tools for developers working on resource-constrained devices. Readers are encouraged to explore the deployment guides available on Hugging Face&#x27;s platform.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-on-jetson",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -151,54 +164,66 @@ const websiteContent = {
         },
         {
             "date": "Feb 23 2026",
-            "headline": "Amul&#x27;s AI Revolution—Empowering 3.6M Indian Dairy Farmers",
-            "title": "Amul&#x27;s AI Assistant Sarlaben Transforms Dairy Farming in Gujarat",
-            "content": "Amul has deployed an AI assistant named Sarlaben to support 3.6 million women dairy farmers in Gujarat, India. This initiative represents one of the largest applications of AI in agriculture, aiming to optimize milk production and enhance farmers&#x27; livelihoods. Sarlaben provides real-time data analysis and recommendations to improve cattle health and milk yield. This deployment not only empowers rural communities but also sets a precedent for AI&#x27;s role in sustainable agriculture. Stakeholders in the agriculture sector should consider similar AI-driven solutions to address challenges in productivity and resource management.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/amul-ai-dairy-farming-platform-india/",
+            "headline": "Google Cracks Down—Antigravity Users Face Restrictions",
+            "title": "Google Restricts Antigravity Platform Usage Over Malicious Activity Concerns",
+            "content": "Google has implemented strict usage restrictions on its Antigravity &quot;vibe coding&quot; platform, citing concerns over malicious activities by OpenClaw users. The enforcement has sparked controversy among developers who rely on the platform for autonomous AI projects. Google&#x27;s move is part of a broader effort to maintain platform integrity and security, ensuring that its tools are not exploited for harmful purposes. The restrictions may impact users who deploy OpenClaw agents for legitimate tasks, prompting calls for clearer guidelines and support from Google. Developers are advised to review their usage and ensure compliance with the updated terms of service.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/google-clamps-down-on-antigravity-malicious-usage-cutting-off-openclaw-users",
             "relatedResources": []
         },
         {
             "date": "Feb 23 2026",
-            "headline": "Hitachi&#x27;s Industrial AI—Aiming for Robotics Dominance",
-            "title": "Hitachi Leverages Expertise to Lead in Physical AI Development",
-            "content": "Hitachi is positioning itself as a leader in the field of physical AI, which involves controlling robots and industrial machinery. While companies like OpenAI and Google focus on multimodal models, Hitachi is leveraging its industrial expertise to develop practical AI solutions for real-world applications. The company&#x27;s strategy includes building platforms that integrate AI with existing industrial systems, offering a competitive edge in robotics and automation. This approach highlights the growing importance of domain-specific AI solutions in industrial settings. Industry professionals should monitor Hitachi&#x27;s progress and consider the potential of physical AI in enhancing operational efficiency.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/hitachi-physical-ai-industrial-expertise/",
+            "headline": "SaaS Built in 1 Hour—AI Governance Key",
+            "title": "Rapid SaaS Development Highlights Need for AI Governance Systems",
+            "content": "A software engineer has demonstrated the potential of AI-driven development by creating a production-ready SaaS product in just one hour. This achievement underscores the transformative impact of AI on software engineering, where speed and efficiency are drastically improved. However, it also raises critical questions about governance and oversight when AI generates production-quality code. As AI continues to evolve, engineering leaders must establish robust governance frameworks to manage the risks associated with AI-generated code. This case study serves as a reminder of the importance of balancing innovation with accountability in AI development.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/one-engineer-made-a-production-saas-product-in-an-hour-heres-the-governance",
             "relatedResources": [
                 {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
         },
         {
             "date": "Feb 23 2026",
-            "headline": "OpenAI&#x27;s Frontier Alliance—Boosting Enterprise AI Deployments",
-            "title": "OpenAI Launches Frontier Alliance Partners for Enterprise AI Scaling",
-            "content": "OpenAI has introduced the Frontier Alliance Partners initiative to facilitate the transition of enterprises from AI pilots to full-scale production. This program aims to support secure and scalable deployment of AI agents across various industries. By collaborating with partners, OpenAI seeks to address challenges in AI integration, such as data security and infrastructure scalability. The initiative is expected to accelerate the adoption of AI technologies in enterprise environments, offering a framework for successful implementation. Enterprises should explore partnership opportunities with OpenAI to enhance their AI capabilities and stay competitive in the digital landscape.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/frontier-alliance-partners",
+            "headline": "Anthropic Accuses Chinese Labs of Claude Exploitation",
+            "title": "Anthropic Alleges Massive Claude Model Exploitation by Chinese AI Labs",
+            "content": "Anthropic has publicly accused three Chinese AI laboratories—DeepSeek, Moonshot AI, and MiniMax—of orchestrating large-scale campaigns to exploit its Claude models. The labs allegedly used 24,000 fake accounts to siphon capabilities, posing significant intellectual property and security risks. This revelation highlights the ongoing challenges of protecting AI models from unauthorized access and misuse. The accusations have sparked discussions about the need for stronger international cooperation and legal frameworks to safeguard AI innovations. Stakeholders in the AI community are urged to enhance their security measures and remain vigilant against similar threats.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/anthropic-says-deepseek-moonshot-and-minimax-used-24-000-fake-accounts-to",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 23 2026",
+            "headline": "Data Center Plans Falter as Farmers Refuse Land Sales",
+            "title": "Data Center Developers Face Resistance from Farmers Over Land Sales",
+            "content": "Efforts to expand data center infrastructure have hit a roadblock as farmers resist selling their land, despite lucrative offers. Developers assumed that economic pressures would lead to easy land acquisitions, but dedicated farmers are holding firm. This resistance highlights the complexities of balancing technological advancement with agricultural preservation. The situation underscores the importance of engaging with local communities and understanding their priorities before pursuing large-scale projects. Developers are encouraged to explore alternative strategies that respect the needs and values of rural stakeholders while advancing technological goals.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/02/im-not-for-sale-farmers-refuse-to-take-millions-in-data-center-deals/",
             "relatedResources": []
         },
         {
             "date": "Feb 23 2026",
-            "headline": "AI Agents Deliver ROI—1,100 Devs Share Scaling Insights",
-            "title": "Scaling AI Agents: Insights from 1,100 Developers and CTOs",
-            "content": "A survey conducted by DigitalOcean reveals that AI agents are delivering tangible returns on investment, yet scaling them remains a challenge. The 2026 Currents research report gathered insights from over 1,100 developers and CTOs, highlighting the benefits of AI agents in tasks like code refactoring and debugging. However, widespread deployment in production environments is still limited. The findings emphasize the need for robust infrastructure and strategic planning to overcome scaling barriers. Organizations looking to leverage AI agents should prioritize building scalable systems and investing in talent to maximize the potential of AI-driven solutions.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/ai-agents-are-delivering-real-roi-heres-what-1-100-developers-and-ctos",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 22 2026",
-            "headline": "India AI Summit—Big Tech and AI Labs Converge",
-            "title": "Key Developments from the India AI Impact Summit 2026",
-            "content": "The ongoing India AI Impact Summit is drawing attention as executives from major AI labs and tech giants gather to discuss the future of artificial intelligence. Participants include representatives from OpenAI, Anthropic, Nvidia, Microsoft, Google, and Cloudflare, along with heads of state. The summit focuses on AI advancements and their implications for global industries. This convergence of thought leaders highlights India&#x27;s growing role in the AI landscape and sets the stage for future collaborations and innovations. Industry professionals should follow the outcomes of this summit to stay informed about emerging trends and opportunities in AI.",
+            "headline": "Dual Investments Blur Lines Between OpenAI and Anthropic",
+            "title": "Investor Loyalty Shifts as OpenAI and Anthropic Share Backers",
+            "content": "The AI investment landscape is shifting as at least a dozen venture capitalists who previously backed OpenAI now also support Anthropic. This trend reflects a growing disregard for traditional conflict-of-interest concerns in the tech investment sector. While some cross-investments are strategic, others raise ethical questions about loyalty and influence. The overlapping financial interests could impact the competitive dynamics between these leading AI companies. Investors and industry leaders are urged to consider the implications of dual investments and maintain transparency to preserve trust within the AI community.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/",
-            "relatedResources": []
+            "sourceUrl": "https://techcrunch.com/2026/02/23/with-ai-investor-loyalty-is-almost-dead-at-least-a-dozen-openai-vcs-now-also-back-anthropic/",
+            "relatedResources": [
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
         }
     ],
     "articles": {},
@@ -304,50 +329,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22769",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2020-7796",
-            "dateAdded": "Feb 17, 2026",
-            "vendor": "Synacor Zimbra Collaboration Suite",
-            "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a server-side request forgery vulnerability if WebEx zimlet installed and zimlet JSP is enabled.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-7796",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2024-7694",
-            "dateAdded": "Feb 17, 2026",
-            "vendor": "TeamT5 ThreatSonar Anti-Ransomware",
-            "description": "TeamT5 ThreatSonar Anti-Ransomware contains an unrestricted upload of file with dangerous type vulnerability. ThreatSonar Anti-Ransomware does not properly validate the content of uploaded files. Remo",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7694",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2008-0015",
-            "dateAdded": "Feb 17, 2026",
-            "vendor": "Microsoft Windows",
-            "description": "Microsoft Windows Video ActiveX Control contains a remote code execution vulnerability. An attacker could exploit the vulnerability by constructing a specially crafted Web page. When a user views the",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-0015",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-2441",
-            "dateAdded": "Feb 17, 2026",
-            "vendor": "Google Chromium",
-            "description": "Google Chromium CSS contains a use-after-free vulnerability that could allow a remote attacker to potentially exploit heap corruption via a crafted HTML page. This vulnerability could affect multiple",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2441",
             "isZeroDay": false
         }
     ],
