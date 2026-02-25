@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "semiconductor-ransomware-chips-act-2026",
+      "title": "Silicon Under Siege: The Semiconductor Ransomware Crisis the CHIPS Act Ignores",
+      "date": "February 25, 2026",
+      "category": "Investigative Analysis",
+      "badge": "INVESTIGATIVE",
+      "excerpt": "Ransomware attacks on semiconductor companies surged 600% since 2022, costing over $1 billion. The $52.7B CHIPS Act invests nothing in defending the fabs it's building. We map the attacks, the funding gap, and the regulatory reckoning ahead.",
+      "image": "images/articles/semiconductor-ransomware-chips-act-2026.png",
+      "externalUrl": "articles/semiconductor-ransomware-chips-act-2026.html",
+      "tags": [
+        "Semiconductor",
+        "Ransomware",
+        "CHIPS Act",
+        "Advantest",
+        "Supply Chain",
+        "CIRCIA",
+        "Critical Manufacturing"
+      ],
+      "author": "Harish G"
+    },
+    {
       "id": "report-20260223",
       "title": "Weekly Threat Report: February 23, 2026",
       "date": "February 23, 2026",

@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silicon Under Siege: The Semiconductor Ransomware Crisis the CHIPS Act Ignores | TheHGTech</title>
+    <meta name="description"
+        content="Ransomware attacks on semiconductor companies surged 600% since 2022. With the CHIPS Act investing $52.7B in chip manufacturing, we map the cybersecurity gap that leaves the industry exposed.">
+    <meta name="keywords"
+        content="semiconductor ransomware, CHIPS Act cybersecurity, Advantest ransomware, semiconductor supply chain attack, MKS Instruments breach, Microchip Technology ransomware, CIRCIA, critical manufacturing cybersecurity">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Harish G">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/semiconductor-ransomware-chips-act-2026.html">
+    <meta property="og:title" content="Silicon Under Siege: The Semiconductor Ransomware Crisis the CHIPS Act Ignores">
+    <meta property="og:description"
+        content="Ransomware attacks on semiconductor companies surged 600% since 2022. We map the $52.7B CHIPS Act's cybersecurity blind spot.">
+    <meta property="og:image"
+        content="https://thehgtech.com/images/articles/semiconductor-ransomware-chips-act-2026.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thehgtech.com/articles/semiconductor-ransomware-chips-act-2026.html">
+    <meta property="twitter:title"
+        content="Silicon Under Siege: The Semiconductor Ransomware Crisis the CHIPS Act Ignores">
+    <meta property="twitter:description"
+        content="Ransomware attacks on semiconductor companies surged 600% since 2022. We map the $52.7B CHIPS Act's cybersecurity blind spot.">
+    <meta property="twitter:image"
+        content="https://thehgtech.com/images/articles/semiconductor-ransomware-chips-act-2026.png">
+
+    <link rel="canonical" href="https://thehgtech.com/articles/semiconductor-ransomware-chips-act-2026.html">
+
+    <!-- Schema.org Article JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Silicon Under Siege: The Semiconductor Ransomware Crisis the CHIPS Act Ignores",
+      "image": [
+        "https://thehgtech.com/images/articles/semiconductor-ransomware-chips-act-2026.png"
+       ],
+      "datePublished": "2026-02-25T18:00:00+05:30",
+      "dateModified": "2026-02-25T18:00:00+05:30",
+      "author": [{
+          "@type": "Person",
+          "name": "Harish G",
+          "url": "https://thehgtech.com/about.html"
+        }]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style System - FULL SET REQUIRED -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.js" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --border: rgba(255, 255, 255, 0.1);
+            --code-bg: #111;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-top: 100px;
+        }
+
+        .article-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .article-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .article-image {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .article-content h2 {
+            font-size: 2.2rem;
+            color: var(--accent-cyan);
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .article-content h4 {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: #dfdfdf;
+        }
+
+        .article-content strong {
+            color: #fff;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            color: #dfdfdf;
+            font-size: 1.15rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .article-content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        .technical-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--accent-cyan);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .technical-box h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+            font-size: 1.3rem;
+        }
+
+        .success-box {
+            background: rgba(34, 197, 94, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-left: 5px solid #22c55e;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .success-box h3 {
+            margin-top: 0;
+            color: #22c55e;
+            font-size: 1.3rem;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.05);
+            border: 1px solid rgba(255, 61, 61, 0.2);
+            border-left: 5px solid var(--accent-red);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .warning-box h3 {
+            margin-top: 0;
+            color: var(--accent-red);
+            font-size: 1.3rem;
+        }
+
+        .editorial-box {
+            background: rgba(255, 165, 0, 0.05);
+            border: 1px solid rgba(255, 165, 0, 0.2);
+            border-left: 5px solid #ffa500;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .editorial-box h3 {
+            margin-top: 0;
+            color: #ffa500;
+            font-size: 1.3rem;
+        }
+
+        blockquote {
+            border-left: 5px solid var(--accent-cyan);
+            margin: 3rem 0;
+            padding: 1.5rem 2.5rem;
+            background: rgba(0, 217, 255, 0.05);
+            font-style: italic;
+            font-size: 1.35rem;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        pre {
+            background: var(--code-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        code {
+            font-family: 'Fira Code', 'Courier New', monospace;
+            color: var(--accent-cyan);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 1rem;
+        }
+
+        th,
+        td {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        th {
+            background: var(--bg-secondary);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: #dfdfdf;
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-excerpt {
+                font-size: 1.1rem;
+            }
+
+            .container {
+                padding: 1rem;
+                padding-top: 80px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../ui-enhancements.css?v=20260225">
+
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        // Inline theme set to avoid FOUC
+        (function () {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+    <!-- Google Analytics 4 -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+    <!-- Fullres Analytics -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span
+                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+
+                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                            <div class="dropdown-item-icon"
+                                style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FF6B35;">
+                                    n8n Workflows
+                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Security automation templates</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme"
+                    style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                    <span class="m-theme-toggle__thumb"
+                        style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+                </button>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/articles.html" class="back-link"
+            style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+        <article>
+            <header class="article-header">
+                <div class="article-meta">
+                    <span><i class="fas fa-calendar"></i> Feb 25, 2026</span>
+                    <span><i class="fas fa-user"></i> Harish G</span>
+                    <span><i class="fas fa-clock"></i> 18 min read</span>
+                    <span style="color: var(--accent-cyan); font-weight: bold;"><i class="fas fa-search"></i>
+                        INVESTIGATIVE ANALYSIS</span>
+                </div>
+
+                <h1 class="article-title">Silicon Under Siege: The Semiconductor Ransomware Crisis the CHIPS Act Ignores
+                </h1>
+                <p class="article-excerpt">The United States is investing $52.7 billion to bring chip manufacturing
+                    home. Ransomware groups are investing $0 to steal everything those fabs produce. Since 2022,
+                    cyberattacks targeting the semiconductor industry have surged over 600%, and the CHIPS Act has no
+                    meaningful answer.</p>
+
+                <img src="/images/articles/semiconductor-ransomware-chips-act-2026.png"
+                    alt="Silicon Under Siege: Semiconductor Ransomware vs CHIPS Act" class="article-image"
+                    loading="lazy">
+            </header>
+
+            <div class="article-content">
+
+                <!-- Executive Summary -->
+                <div class="technical-box">
+                    <h3><i class="fas fa-crosshairs"></i> Executive Summary</h3>
+                    <p><strong>What this analysis covers:</strong> A mapping of the accelerating ransomware campaign
+                        targeting the global semiconductor supply chain, from the MKS Instruments attack in February
+                        2023 to the Advantest breach in February 2026, and the structural cybersecurity gap within the
+                        CHIPS and Science Act of 2022.</p>
+                    <p><strong>Key finding:</strong> Of the $52.7 billion allocated under the CHIPS Act, only $500
+                        million is designated for supply chain security — and that funding is administered by the State
+                        Department for <em>international</em> telecom and supply chain diversification, not domestic
+                        ransomware defense for semiconductor manufacturers.</p>
+                    <p><strong>Confidence Level:</strong> High — based on verified financial filings (MKS Instruments,
+                        Applied Materials, Microchip Technology), ransomware group leak site claims (confirmed by
+                        BleepingComputer, SecurityWeek, The Record), CHIPS Act allocation data (state.gov, NSF.gov), and
+                        the CloudSEK "Silicon Under Siege" threat report.</p>
+                    <p><strong>TLP:</strong> CLEAR</p>
+                    <p><em>This analysis is based on publicly available sources including CSO Online, SecurityWeek,
+                            BleepingComputer, The Record, CloudSEK, the U.S. Department of State, NSF, and CISA as of
+                            February 25, 2026. Details may evolve as the Advantest investigation continues.</em></p>
+                </div>
+
+                <div class="toc-container"
+                    style="background: rgba(0, 217, 255, 0.05); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; border-left: 3px solid var(--accent-cyan);">
+                    <h3 style="margin-top: 0; font-size: 1.2rem; color: var(--text-primary);"><i
+                            class="fas fa-list"></i> Table of Contents</h3>
+                    <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
+                        <li><a href="#the-numbers" style="color: var(--accent-cyan); text-decoration: none;">1. The
+                                Numbers: 600% and Counting</a></li>
+                        <li><a href="#attack-timeline" style="color: var(--accent-cyan); text-decoration: none;">2. The
+                                Attack Timeline: 2023–2026</a></li>
+                        <li><a href="#chips-act-gap" style="color: var(--accent-cyan); text-decoration: none;">3. The
+                                CHIPS Act Cybersecurity Gap</a></li>
+                        <li><a href="#advantest" style="color: var(--accent-cyan); text-decoration: none;">4. The
+                                Advantest Mystery</a></li>
+                        <li><a href="#supply-chain-cascade" style="color: var(--accent-cyan); text-decoration: none;">5.
+                                Supply Chain Cascade: Why One Breach Costs Billions</a></li>
+                        <li><a href="#circia" style="color: var(--accent-cyan); text-decoration: none;">6. CIRCIA: The
+                                Regulatory Reckoning</a></li>
+                        <li><a href="#defense" style="color: var(--accent-cyan); text-decoration: none;">7. Detection
+                                and Defense</a></li>
+                    </ul>
+                </div>
+
+                <p>There is a peculiar kind of negligence unique to governments that spend lavishly on building things
+                    while budgeting nothing to protect them. The United States is in the middle of the most ambitious
+                    industrial policy experiment since the Apollo program — a $52.7 billion bet, via the <a
+                        href="https://www.congress.gov/bill/117th-congress/house-bill/4346" target="_blank"
+                        rel="noopener noreferrer">CHIPS and Science Act of 2022</a>, to repatriate semiconductor
+                    manufacturing from East Asia and secure a domestic supply of the silicon that runs every piece of
+                    critical infrastructure in the country.</p>
+
+                <p>Meanwhile, ransomware operators have discovered that the semiconductor industry is a spectacularly
+                    profitable target. According to a <a href="https://www.csoonline.com/" target="_blank"
+                        rel="noopener noreferrer">CloudSEK threat report published via CSO Online</a>, titled
+                    <em>"Silicon Under Siege: The Cyber War Reshaping the Global Semiconductor Industry,"</em>
+                    cyberattacks targeting the global semiconductor sector have <strong>surged over 600% since
+                        2022</strong>. Confirmed ransomware losses in the industry have exceeded <strong>$1.05 billion
+                        since 2018</strong>.
+                </p>
+
+                <p>The two facts sit next to each other uncomfortably: the largest public investment in semiconductor
+                    manufacturing in U.S. history is happening at the exact moment the industry is experiencing the
+                    sharpest escalation of cyberattacks it has ever seen. And they are barely connected.</p>
+
+                <blockquote>
+                    "We are building the most advanced semiconductor fab in the Western Hemisphere with the
+                    cybersecurity posture of a regional hospital."
+                </blockquote>
+
+                <h2 id="the-numbers">1. The Numbers: 600% and Counting</h2>
+
+                <p>The CloudSEK report puts the scale of the crisis in sharp focus. The semiconductor industry is not
+                    just one of many sectors dealing with a general uptick in ransomware — it is experiencing a
+                    <em>targeted escalation</em>.
+                </p>
+
+                <p>The drivers are straightforward:</p>
+
+                <ul>
+                    <li><strong>Geopolitical value:</strong> Semiconductor intellectual property — chip designs, process
+                        node secrets, test methodologies — is among the most strategically valuable data on the planet.
+                        The U.S.-China semiconductor trade war has intensified the value of this data for state-aligned
+                        actors.</li>
+                    <li><strong>IT/OT convergence:</strong> Modern semiconductor fabrication requires tight integration
+                        between information technology (IT) systems and operational technology (OT) systems. CloudSEK's
+                        data shows that over 60% of Industrial Control System breaches in the sector originated from IT
+                        vulnerabilities — phishing, VPN exploits — before pivoting into operational environments.</li>
+                    <li><strong>High willingness to pay:</strong> Semiconductor fabs cannot tolerate downtime. A single
+                        day of production disruption at a major fab can cost tens of millions of dollars. Ransomware
+                        groups know this.</li>
+                </ul>
+
+                <h2 id="attack-timeline">2. The Attack Timeline: 2023–2026</h2>
+
+                <p>The following timeline documents every major, publicly confirmed ransomware incident targeting the
+                    semiconductor supply chain in three years. Every entry has been verified against multiple primary
+                    sources.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Target</th>
+                            <th>What Happened</th>
+                            <th>Confirmed Impact</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Feb 2023</strong></td>
+                            <td>MKS Instruments</td>
+                            <td>Ransomware attack; operations suspended at multiple facilities. Systems encrypted,
+                                employee data potentially exfiltrated (SSNs, bank details).</td>
+                            <td>$200M revenue loss (Q1 2023). Downstream impact: Applied Materials reported $250M
+                                projected revenue loss from the supply chain disruption.</td>
+                            <td><a href="https://www.bankinfosecurity.com/" target="_blank"
+                                    rel="noopener noreferrer">BankInfoSecurity</a>, <a href="https://www.csoonline.com/"
+                                    target="_blank" rel="noopener noreferrer">CSO Online</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jun 2023</strong></td>
+                            <td>Kinmax Technology (TSMC supplier)</td>
+                            <td>LockBit ransomware group claimed breach. Kinmax confirmed unauthorized access to its
+                                systems. TSMC stated no business data was affected.</td>
+                            <td>TSMC confirmed breach was limited to supplier. CloudSEK estimated broader impact at
+                                approximately $256M across the supply chain.</td>
+                            <td><a href="https://www.bleepingcomputer.com/" target="_blank"
+                                    rel="noopener noreferrer">BleepingComputer</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jan 2024</strong></td>
+                            <td>Foxsemicon (Foxconn subsidiary)</td>
+                            <td>LockBit ransomware attack. Website defaced with ransom message. Attackers claimed 5 TB
+                                of data stolen, including customer and employee information.</td>
+                            <td>Company reported no significant operational impact. Website temporarily taken offline.
+                            </td>
+                            <td><a href="https://www.securityweek.com/" target="_blank"
+                                    rel="noopener noreferrer">SecurityWeek</a>, <a href="https://therecord.media/"
+                                    target="_blank" rel="noopener noreferrer">The Record</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mar 2024</strong></td>
+                            <td>Nexperia</td>
+                            <td>Dunghill Leak (Dark Angels) ransomware group. Confirmed unauthorized access to IT
+                                servers. 1 TB of data exfiltrated.</td>
+                            <td>Stolen data included 371 GB of design/product data (chip schematics, trade secrets,
+                                NDAs) and 246 GB of engineering data (manufacturing technologies).</td>
+                            <td><a href="https://www.bleepingcomputer.com/" target="_blank"
+                                    rel="noopener noreferrer">BleepingComputer</a>, <a
+                                    href="https://www.securityweek.com/" target="_blank"
+                                    rel="noopener noreferrer">SecurityWeek</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aug 2024</strong></td>
+                            <td>Microchip Technology</td>
+                            <td>Play ransomware group. Detected August 17. Systems isolated, production disrupted at
+                                multiple facilities.</td>
+                            <td>$21.4M in costs (factory underutilization charges). Employee contact info and hashed
+                                passwords confirmed exfiltrated. Play published 4 GB data archive.</td>
+                            <td><a href="https://www.securityweek.com/" target="_blank"
+                                    rel="noopener noreferrer">SecurityWeek</a>, <a
+                                    href="https://www.cybersecuritydive.com/" target="_blank"
+                                    rel="noopener noreferrer">Cybersecurity Dive</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Feb 2026</strong></td>
+                            <td>Advantest Corporation</td>
+                            <td>Ransomware detected February 15, 2026. Affected systems isolated. Third-party forensic
+                                investigation ongoing.</td>
+                            <td>No data breach confirmed as of Feb 25, 2026. No ransomware group has claimed
+                                responsibility.</td>
+                            <td><a href="https://www.securityweek.com/" target="_blank"
+                                    rel="noopener noreferrer">SecurityWeek</a>, <a
+                                    href="https://www.bleepingcomputer.com/" target="_blank"
+                                    rel="noopener noreferrer">BleepingComputer</a>, <a
+                                    href="https://www.infosecurity-magazine.com/" target="_blank"
+                                    rel="noopener noreferrer">Infosecurity Magazine</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>The pattern is unmistakable. The interval between major incidents is compressing. The attackers are
+                    moving up the value chain — from suppliers (MKS, Kinmax) to direct manufacturers (Microchip,
+                    Nexperia) to the companies that <em>test the chips themselves</em> (Advantest).</p>
+
+                <div class="warning-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Cascading Risk</h3>
+                    <p style="margin-bottom: 0;">A single attack on MKS Instruments — a <em>supplier</em> — caused
+                        Applied Materials to project a <strong>$250 million downstream revenue loss</strong>. The
+                        semiconductor supply chain is so tightly coupled that compromising one node can halt production
+                        across an entire ecosystem of companies and products.</p>
+                </div>
+
+                <h2 id="chips-act-gap">3. The CHIPS Act Cybersecurity Gap</h2>
+
+                <p>The CHIPS and Science Act of 2022 is the largest industrial subsidy program the United States has
+                    enacted in decades. Its stated goal is to reverse America's dependence on East Asian chip
+                    manufacturing and secure a resilient domestic semiconductor supply.</p>
+
+                <p>Here is where the money goes:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Allocation</th>
+                            <th>Amount</th>
+                            <th>Administered By</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fabrication incentives</td>
+                            <td><strong>$39 billion</strong></td>
+                            <td>Dept. of Commerce</td>
+                            <td>Grants and loans for building new chip fabs on U.S. soil</td>
+                        </tr>
+                        <tr>
+                            <td>R&D and innovation</td>
+                            <td><strong>$11 billion</strong></td>
+                            <td>Dept. of Commerce</td>
+                            <td>National Semiconductor Technology Center, advanced packaging</td>
+                        </tr>
+                        <tr>
+                            <td>Defense microelectronics</td>
+                            <td><strong>$2 billion</strong></td>
+                            <td>Dept. of Defense</td>
+                            <td>Military-grade chip R&D, university prototyping networks</td>
+                        </tr>
+                        <tr>
+                            <td>Workforce training</td>
+                            <td><strong>$200 million</strong></td>
+                            <td>National Science Foundation</td>
+                            <td>Semiconductor-specific education and training programs</td>
+                        </tr>
+                        <tr>
+                            <td style="color: var(--accent-cyan); font-weight: bold;">ITSI Fund (supply chain security)
+                            </td>
+                            <td style="color: var(--accent-cyan); font-weight: bold;">$500 million</td>
+                            <td>Dept. of State</td>
+                            <td>International supply chain diversification, secure telecom networks</td>
+                        </tr>
+                        <tr>
+                            <td>Investment tax credits</td>
+                            <td><strong>~$24 billion</strong></td>
+                            <td>IRS</td>
+                            <td>25% credit for manufacturing equipment costs</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>The only line item that explicitly mentions "security" in the supply chain context is the
+                    <strong>International Technology Security and Innovation (ITSI) Fund</strong> — $500 million,
+                    disbursed at <a href="https://www.state.gov/" target="_blank" rel="noopener noreferrer">$100 million
+                        per year over five years through the State Department</a>. This fund is designed for
+                    <em>international</em> objectives: promoting secure telecom networks in partner countries,
+                    diversifying the global supply chain, and building testing capacity in allied nations.
+                </p>
+
+                <p>It is not designed to help a semiconductor company in Austin, Texas harden its Active Directory
+                    environment against a Play ransomware intrusion.</p>
+
+                <div class="editorial-box">
+                    <h3><i class="fas fa-exclamation-circle"></i> ⚠️ Editorial Analysis</h3>
+                    <p>There is a structural assumption embedded in the CHIPS Act: that if the U.S. builds the fabs,
+                        cybersecurity will somehow follow. The Commerce Department's $70 billion in received funding
+                        requests for the $39 billion fabrication pool suggests the demand vastly exceeds supply — and
+                        cybersecurity hardening is not a condition of receiving those funds. Our analysis suggests this
+                        creates a scenario where the government is subsidizing the construction of high-value
+                        manufacturing targets while providing no proportional funding to defend them against the threat
+                        actors who are already, demonstrably, targeting the industry.</p>
+                </div>
+
+                <h2 id="advantest">4. The Advantest Mystery</h2>
+
+                <p>On February 15, 2026, Advantest Corporation — a Japanese semiconductor test equipment manufacturer
+                    headquartered in Tokyo with significant operations in San Jose, California — detected unusual
+                    activity within its IT network. The company <a href="https://www.securityweek.com/" target="_blank"
+                        rel="noopener noreferrer">confirmed it was a ransomware attack</a>, isolated affected systems,
+                    and engaged third-party forensic investigators.</p>
+
+                <p>As of February 25, 2026:</p>
+
+                <ul>
+                    <li><strong>No data breach has been confirmed.</strong> Advantest has stated it will notify affected
+                        parties if the investigation finds evidence of data exfiltration.</li>
+                    <li><strong>No ransomware group has claimed responsibility.</strong> This is unusual. Most
+                        financially motivated ransomware groups claim victims within 48–72 hours to begin the extortion
+                        clock.</li>
+                    <li><strong>The initial access vector has not been disclosed.</strong></li>
+                    <li><strong>No significant operational disruption has been reported.</strong></li>
+                </ul>
+
+                <p>Advantest is not a household name. But it is a critical node in the global chip supply chain. Their
+                    automatic test equipment (ATE) is used by <strong>Intel, Samsung, and TSMC</strong> to verify
+                    semiconductors destined for 5G infrastructure, autonomous vehicles, AI accelerators, and defense
+                    systems. A sustained disruption to Advantest's operations could create manufacturing bottlenecks
+                    rippling across the entire chip ecosystem.</p>
+
+                <div class="editorial-box">
+                    <h3><i class="fas fa-exclamation-circle"></i> ⚠️ Editorial Analysis: Why No Claim?</h3>
+                    <p>The absence of a public claim after 10 days is atypical for financially motivated ransomware
+                        operators. There are several possible explanations:</p>
+                    <ul>
+                        <li>Active ransom negotiation is underway, and the group is maintaining silence as a condition.
+                        </li>
+                        <li>The attackers are still performing reconnaissance and exfiltration before deploying their
+                            full payload.</li>
+                        <li>This is a state-aligned operation where the objective is intelligence collection (IP theft),
+                            not extortion. Given the U.S.-China semiconductor export controls, Advantest's test
+                            methodology IP would be of significant value to state actors.</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><em>We cannot determine which scenario is in play. This section is
+                            speculative analysis, not confirmed intelligence.</em></p>
+                </div>
+
+                <h2 id="supply-chain-cascade">5. Supply Chain Cascade: Why One Breach Costs Billions</h2>
+
+                <p>The semiconductor industry operates on a model of extreme interdependence. No single company controls
+                    the full stack from raw silicon to a finished, tested chip. The supply chain looks roughly like
+                    this:</p>
+
+                <div class="technical-box">
+                    <h3><i class="fas fa-project-diagram"></i> Simplified Semiconductor Supply Chain</h3>
+                    <pre><code>Raw Materials → Wafer Fabrication → Chip Design (EDA Tools)
+     ↓                ↓                    ↓
+Equipment Makers  →  Foundries    →   Fabless Designers
+(ASML, Applied     (TSMC, Samsung,   (AMD, Nvidia,
+ Materials, MKS)    Intel, GlobalF)    Qualcomm)
+                         ↓
+                  Test Equipment  →  Assembly & Packaging  →  End Products
+                  (Advantest,        (ASE, Amkor)             (Apple, Dell,
+                   Teradyne)                                   Automotive)</code></pre>
+                </div>
+
+                <p>The MKS Instruments case in 2023 demonstrated exactly how cascading failures work in this model:</p>
+
+                <ol>
+                    <li><strong>MKS hit by ransomware</strong> → production suspended at their Vacuum Solutions and
+                        Photonics Solutions divisions.</li>
+                    <li><strong>MKS cannot ship components</strong> → Applied Materials (which depends on MKS parts for
+                        their equipment) cannot fulfill orders.</li>
+                    <li><strong>Applied Materials reports $250M revenue impact</strong> from the MKS disruption in their
+                        Q2 2023 earnings.</li>
+                    <li><strong>Fabs waiting for Applied Materials equipment</strong> experience production delays —
+                        costs that are never publicly disclosed but are absorbed across the ecosystem.</li>
+                </ol>
+
+                <p>One ransomware attack on a component supplier. A quarter-billion-dollar downstream impact on a
+                    <em>single customer</em>. The total costs across all of MKS's customers were never fully quantified.
+                </p>
+
+                <h2 id="circia">6. CIRCIA: The Regulatory Reckoning</h2>
+
+                <p>There is one regulatory mechanism that directly addresses the cybersecurity gap in critical
+                    manufacturing: the <strong>Cyber Incident Reporting for Critical Infrastructure Act of 2022
+                        (CIRCIA)</strong>.</p>
+
+                <p>CIRCIA requires "covered entities" in designated critical infrastructure sectors — including
+                    <strong>critical manufacturing</strong>, which encompasses semiconductor production — to:
+                </p>
+
+                <ul>
+                    <li>Report significant cyber incidents to CISA within <strong>72 hours</strong>.</li>
+                    <li>Report ransomware payments to CISA within <strong>24 hours</strong>.</li>
+                </ul>
+
+                <p>The final rule is expected to be published by <strong>May 2026</strong>. In preparation, <a
+                        href="https://www.cisa.gov/circia" target="_blank" rel="noopener noreferrer">CISA and DHS have
+                        scheduled sector-specific virtual town halls</a> throughout March 2026:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Sectors Covered</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>March 12, 2026</td>
+                            <td><strong>Critical Manufacturing</strong>, Commercial Facilities, Food &amp; Agriculture
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>March 19, 2026</td>
+                            <td><strong>Defense Industrial Base</strong>, Information Technology</td>
+                        </tr>
+                        <tr>
+                            <td>March 31, 2026</td>
+                            <td>General Session 1</td>
+                        </tr>
+                        <tr>
+                            <td>April 2, 2026</td>
+                            <td>General Session 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>The <strong>March 12 session on Critical Manufacturing</strong> is directly relevant to every
+                    semiconductor company operating in the United States. If you are a CISO, compliance officer, or
+                    security engineer at a semiconductor firm and you are not registered for this session, you should
+                    be.</p>
+
+                <div class="success-box">
+                    <h3><i class="fas fa-shield-alt"></i> Actionable: Register for CIRCIA Town Halls</h3>
+                    <p>Registration and schedule updates: <a href="https://www.cisa.gov/circia" target="_blank"
+                            rel="noopener noreferrer" style="color: #22c55e; font-weight: bold;">www.cisa.gov/circia</a>
+                    </p>
+                    <p style="margin-bottom: 0;">The Critical Manufacturing session (March 12) and Defense Industrial
+                        Base session (March 19) are particularly relevant for semiconductor companies. The final CIRCIA
+                        rule is expected by May 2026 and will impose mandatory reporting obligations.</p>
+                </div>
+
+                <h2 id="defense">7. Detection and Defense</h2>
+
+                <p>Based on the TTPs observed across the semiconductor ransomware incidents documented above, the
+                    following detection and hardening guidance is applicable to any organization in the semiconductor
+                    supply chain.</p>
+
+                <h3>7.1 Common Initial Access Vectors</h3>
+
+                <p>Across the documented incidents, the most common initial access methods are:</p>
+
+                <ul>
+                    <li><strong>Phishing (T1566):</strong> CloudSEK reports that phishing remains the primary initial
+                        access vector in over 60% of semiconductor sector breaches.</li>
+                    <li><strong>VPN and remote access exploitation (T1133):</strong> Exposed management interfaces and
+                        VPN appliances with weak or reused credentials.</li>
+                    <li><strong>Supply chain compromise (T1195):</strong> Attackers targeting smaller suppliers as a
+                        pivot into larger firms.</li>
+                </ul>
+
+                <h3>7.2 Example Sigma Detection Rule</h3>
+
+                <p>The following rule targets lateral movement patterns consistent with the pre-ransomware
+                    reconnaissance observed in the Microchip Technology (Play) and MKS Instruments incidents.</p>
+
+                <div class="technical-box">
+                    <h3><i class="fas fa-code"></i> Example Detection Rule — Suspicious Remote Service Installation</h3>
+                    <pre><code class="language-yaml">title: Suspicious Remote Service Installation (Pre-Ransomware Lateral Movement)
+id: 8f3c7e91-semiconductor-defense-2026
+status: experimental
+description: >
+    Detects PsExec-style remote service creation commonly used by
+    Play, LockBit, and other ransomware groups during pre-deployment
+    lateral movement — consistent with TTPs observed in semiconductor
+    sector incidents (2023-2026).
+    NOTE: This is an example detection rule engineered from public
+    TTP analysis. It is NOT sourced from any specific vendor.
+logsource:
+    product: windows
+    service: system
+detection:
+    selection:
+        EventID: 7045
+        ServiceName|contains:
+            - 'PSEXESVC'
+            - 'CSEXECSVC'
+            - 'paexec'
+            - 'remcom'
+    filter_legitimate:
+        ServiceName|contains:
+            - 'Windows Update'
+            - 'Microsoft'
+    condition: selection and not filter_legitimate
+falsepositives:
+    - Legitimate SCCM or endpoint management deployments
+    - Authorized PsExec usage by IT admins (should be whitelisted)
+level: high
+tags:
+    - attack.execution
+    - attack.t1569.002
+    - attack.lateral_movement
+    - attack.t1021.002</code></pre>
+                    <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-secondary);"><strong>SIEM
+                            correlation note:</strong> For higher-fidelity detection, correlate this rule with Windows
+                        Security log EventID 4624 (LogonType 3 — network logon) occurring within 5 minutes on the same
+                        host. This correlation must be implemented at the SIEM level (e.g., Splunk
+                        <code>transaction</code>, Elastic EQL <code>sequence</code>) as Sigma does not natively support
+                        temporal cross-log correlation.</p>
+                </div>
+
+                <h3>7.3 Network Segmentation</h3>
+
+                <p>The single most effective mitigation against ransomware cascade within semiconductor environments is
+                    <strong>strict IT/OT segmentation</strong>. Given that CloudSEK's data shows 60% of OT breaches
+                    originate from IT-side vulnerabilities, the boundary between corporate IT and fab/manufacturing OT
+                    must be treated as a hard perimeter:
+                </p>
+
+                <ul>
+                    <li>Deploy unidirectional security gateways (data diodes) at IT/OT boundaries.</li>
+                    <li>Prohibit direct RDP, SMB, and WMI traffic from corporate networks to OT zones.</li>
+                    <li>Maintain separate Active Directory forests for IT and OT environments.</li>
+                    <li>Implement network-level micro-segmentation around EDA (Electronic Design Automation)
+                        workstations containing chip design IP.</li>
+                </ul>
+
+                <div class="success-box">
+                    <h3><i class="fas fa-shield-alt"></i> IMMEDIATE ACTIONS for Semiconductor Companies</h3>
+                    <ul>
+                        <li><strong>Audit VPN and remote access:</strong> Disable all unused VPN accounts. Enforce MFA
+                            on every remote access point.</li>
+                        <li><strong>Segment IT from OT:</strong> Ensure no direct path exists from corporate email
+                            endpoints to manufacturing control systems.</li>
+                        <li><strong>Backup verification:</strong> Test offline backup restoration procedures. Ensure
+                            backups are immutable and air-gapped.</li>
+                        <li><strong>Incident response readiness:</strong> Conduct a tabletop exercise specifically
+                            modeling a ransomware attack on your EDA or test infrastructure.</li>
+                        <li><strong>CIRCIA preparation:</strong> Register for the March 12, 2026 CISA town hall for
+                            Critical Manufacturing. Begin documenting your incident reporting procedures.</li>
+                    </ul>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-container"
+                    style="margin-top: 4rem; padding: 2rem; background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border);">
+                    <h2 style="margin-top: 0; color: var(--accent-cyan); border-bottom: none; padding-bottom: 0;">
+                        Frequently Asked Questions (FAQ)</h2>
+
+                    <div class="faq-item" style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem;">What happened to Advantest?
+                        </h4>
+                        <p style="color: var(--text-secondary); margin-top: 0;">On February 15, 2026, Advantest
+                            Corporation detected a ransomware attack on its IT network. The company isolated affected
+                            systems and engaged forensic investigators. As of February 25, 2026, no data breach has been
+                            confirmed and no ransomware group has publicly claimed responsibility. Sources: <a
+                                href="https://www.securityweek.com/" target="_blank"
+                                style="color: var(--accent-cyan);">SecurityWeek</a>, <a
+                                href="https://www.bleepingcomputer.com/" target="_blank"
+                                style="color: var(--accent-cyan);">BleepingComputer</a>.</p>
+                    </div>
+
+                    <div class="faq-item" style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem;">Does the CHIPS Act fund
+                            cybersecurity?</h4>
+                        <p style="color: var(--text-secondary); margin-top: 0;">The CHIPS Act allocates $500 million to
+                            the International Technology Security and Innovation (ITSI) Fund, administered by the State
+                            Department. This fund supports international supply chain diversification and secure telecom
+                            — not domestic ransomware defense for semiconductor manufacturers. Source: <a
+                                href="https://www.state.gov/" target="_blank" style="color: var(--accent-cyan);">U.S.
+                                Department of State</a>.</p>
+                    </div>
+
+                    <div class="faq-item" style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem;">How much has the
+                            semiconductor industry lost to ransomware?</h4>
+                        <p style="color: var(--text-secondary); margin-top: 0;">CloudSEK's threat report documents over
+                            $1.05 billion in confirmed ransomware losses across the semiconductor industry since 2018,
+                            with a 600%+ surge in attacks since 2022. Individual incidents include $200M (MKS
+                            Instruments), $250M downstream (Applied Materials), and $21.4M (Microchip Technology).
+                            Sources: <a href="https://www.csoonline.com/" target="_blank"
+                                style="color: var(--accent-cyan);">CSO Online</a>, <a
+                                href="https://www.securityweek.com/" target="_blank"
+                                style="color: var(--accent-cyan);">SecurityWeek</a>.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem;">What is CIRCIA and when does
+                            it take effect?</h4>
+                        <p style="color: var(--text-secondary); margin-top: 0;">The Cyber Incident Reporting for
+                            Critical Infrastructure Act of 2022 (CIRCIA) will require critical infrastructure entities —
+                            including semiconductor manufacturers — to report cyber incidents to CISA within 72 hours
+                            and ransomware payments within 24 hours. The final rule is expected by May 2026. CISA is
+                            holding <a href="https://www.cisa.gov/circia" target="_blank"
+                                style="color: var(--accent-cyan);">virtual town halls in March 2026</a> to gather
+                            stakeholder input.</p>
+                    </div>
+                </div>
+
+                <!-- Related Reading -->
+                <div class="technical-box" style="margin-top: 4rem;">
+                    <h3 style="color: var(--accent-cyan); font-size: 1.4rem; margin-bottom: 1rem;"><i
+                            class="fas fa-book-reader"></i> Related Reading & Next Steps</h3>
+                    <ul style="color: #fff; line-height: 1.8; font-size: 1.1rem; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>AI-Augmented Attacks:</strong> The Advantest incident
+                            follows a pattern where AI is lowering the barrier for ransomware operators. See our
+                            analysis: <a href="/articles/ai-hacker-fortigate-600-devices-2026.html"
+                                style="color: var(--accent-cyan); font-weight: bold; text-decoration: none;">AI-Powered
+                                Hacker Breaches 600+ FortiGate Firewalls</a>.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Track Active Threats:</strong> Monitor ransomware
+                            groups targeting the semiconductor sector in real-time using our <a
+                                href="/ransomware-tracker.html"
+                                style="color: var(--accent-cyan); font-weight: bold; text-decoration: none;">Ransomware
+                                Tracker</a>.</li>
+                        <li><strong>Vulnerability Prioritization:</strong> Stay ahead of exploited vulnerabilities with
+                            our live <a href="/cve-tracker.html"
+                                style="color: var(--accent-cyan); font-weight: bold; text-decoration: none;">CVE
+                                Tracker</a>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="article-footer"
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <p><strong>Author:</strong> Harish G</p>
+                <p><strong>Published:</strong> Feb 25, 2026</p>
+                <p><strong>Last Updated:</strong> Feb 25, 2026</p>
+            </div>
+        </article>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i
+                            class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article"><i
+                        class="fas fa-print"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights
+            reserved.</p>
+    </footer>
+
+    <script src="/interaction-bar.js?v=20260225"></script>
+
+    <script src="../ui-enhancements.js?v=20260225" defer></script>
+</body>
+
+</html>
