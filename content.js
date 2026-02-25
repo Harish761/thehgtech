@@ -5,6 +5,93 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 25 2026",
+            "headline": "Ransomware Attack Hits UFP Technologies—Data Compromised",
+            "title": "UFP Technologies Faces Ransomware Attack with Data Theft Consequences",
+            "content": "UFP Technologies, a manufacturer of medical devices, has fallen victim to a ransomware attack that has resulted in the theft of sensitive data and the deployment of file-encrypting malware. The attack highlights the vulnerabilities in the healthcare sector, where data integrity and availability are critical. While specific details about the ransomware strain have not been disclosed, the incident underscores the urgent need for enhanced cybersecurity measures in medical device manufacturing. Organizations in this sector should review their security protocols and consider implementing advanced threat detection and response strategies to mitigate such risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/medical-device-maker-ufp-technologies-hit-by-cyberattack/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "2025 Vulnerabilities Surge—Only 1% Weaponized",
+            "title": "1% of 2025 Vulnerabilities Exploited Despite Record Growth",
+            "content": "Despite a significant increase in discovered vulnerabilities during 2025, only 1% were actively weaponized in cyberattacks, according to a report by VulnCheck. Caitlin Condon of VulnCheck emphasizes that security professionals often focus on theoretical vulnerabilities that lack practical exploitability. This trend suggests a need for more strategic vulnerability management, prioritizing those with real-world impact. Organizations should refine their patch management processes to address the most critical vulnerabilities first, thereby optimizing resource allocation and reducing potential attack surfaces.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/vulncheck-exploited-vulnerabilities-report-2025/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "Ex-Defense Exec Jailed for Russian Exploit Sales",
+            "title": "Former US Defense Executive Sentenced for Selling Exploits to Russia",
+            "content": "Peter Williams, a former executive at a US defense contracting firm, has been sentenced to 87 months in prison for selling cyber exploits to a Russian broker. This case highlights the risks of insider threats and the potential for sensitive technology to fall into adversarial hands. Williams&#x27; actions violated national security protocols and underscore the importance of stringent vetting and monitoring of personnel with access to critical cyber resources. Defense contractors should enhance their security measures to prevent similar breaches of trust and technology.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ex-us-defense-contractor-executive-jailed-for-selling-exploits-to-russia/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "Zyxel RCE Flaw—Patch Critical Routers Now",
+            "title": "Critical RCE Vulnerability in Zyxel Routers Demands Immediate Patching",
+            "content": "Zyxel has issued security updates for a critical remote command execution (RCE) vulnerability affecting over a dozen of its router models. Unauthenticated attackers can exploit this flaw to execute arbitrary commands on unpatched devices, posing significant risks to network security. The vulnerability affects models such as the Zyxel NBG6817 and NBG6615. Users are urged to apply the latest firmware updates immediately to protect against potential exploitation. This incident serves as a reminder of the importance of regular patching and monitoring of network devices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zyxel-warns-of-critical-rce-flaw-affecting-over-a-dozen-routers/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "CarGurus Breach Exposes 12M Users&#x27; Data",
+            "title": "CarGurus Data Breach Affects Over 12 Million Users",
+            "content": "Automotive marketplace CarGurus has suffered a data breach that exposed the personal information of more than 12 million users. Hackers claim to have accessed both personally identifiable information (PII) and internal corporate data. The breach highlights the ongoing risks of data exposure in the automotive industry, where user trust is paramount. CarGurus is conducting an investigation and has urged affected users to monitor their accounts for suspicious activity. Companies should strengthen their data protection measures to prevent similar breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/over-12-million-users-impacted-by-cargurus-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "New Model Rates OT Cyber Incident Severity",
+            "title": "&#x27;Richter Scale&#x27; for OT Cyber Incidents Introduced by Experts",
+            "content": "A new model akin to the Richter scale has been developed to assess the severity of cybersecurity incidents in operational technology (OT) environments. This scoring system aims to provide a standardized method for evaluating the impact of cyber events on critical infrastructure. By quantifying incident severity, organizations can better prioritize response efforts and allocate resources effectively. The initiative reflects the growing need for specialized tools in the OT sector, where the consequences of cyberattacks can be particularly dire.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/ics-ot-security/richter-scale-model-measures-cyber-incidents",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "426 Cybersecurity M&amp;A Deals in 2025—Focus on GRC",
+            "title": "2025 Sees 426 Cybersecurity M&amp;A Deals with GRC Emphasis",
+            "content": "The cybersecurity sector witnessed 426 mergers and acquisitions (M&amp;A) in 2025, with a notable focus on governance, risk, and compliance (GRC), data protection, and identity solutions. SecurityWeek&#x27;s report suggests a more disciplined market approach, favoring strategic acquisitions that enhance security portfolios. This trend reflects the increasing complexity of cybersecurity challenges and the demand for comprehensive solutions. Companies in the cybersecurity industry should consider these trends when planning their strategic investments and partnerships.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/securityweek-report-426-cybersecurity-ma-deals-announced-in-2025/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 25 2026",
             "headline": "SolarWinds Serv-U RCE Bugs—Patch Critical Vulnerabilities Now",
             "title": "SolarWinds Releases Patches for Critical Serv-U Remote Code Execution Flaws",
             "content": "SolarWinds has issued four critical patches for remote code execution (RCE) vulnerabilities in its Serv-U managed file transfer server. These flaws could allow attackers to gain root or administrator access to unpatched servers, posing a significant security risk. The vulnerabilities affect all versions of Serv-U prior to the latest patch release. Organizations using Serv-U are urged to update immediately to prevent potential exploitation. This development adds to SolarWinds&#x27; ongoing challenges with high-severity security disclosures, following the infamous supply chain attack in 2020. Timely patching is crucial to safeguard sensitive data and maintain system integrity.",
@@ -63,56 +150,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 24 2026",
-            "headline": "Diesel Vortex Targets Logistics—Phishing Campaign Uncovered",
-            "title": "Phishing Campaign by Diesel Vortex Targets U.S. and European Logistics Firms",
-            "content": "A phishing campaign orchestrated by the threat group &quot;Diesel Vortex&quot; is targeting freight and logistics organizations in the U.S. and Europe. The group is using 52 domains to steal credentials through deceptive emails. This campaign highlights the ongoing threat to supply chain sectors, which remain attractive targets for financially motivated cybercriminals. Companies in these industries should enhance their email security measures and conduct regular staff training to recognize and report phishing attempts. Proactive defense strategies are essential to prevent credential theft and safeguard operational integrity.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/phishing-campaign-targets-freight-and-logistics-orgs-in-the-us-europe/",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Business Email Compromise—Sophisticated Scams Exploit Trust",
-            "title": "Understanding Business Email Compromise: The Art of Deception",
-            "content": "Business email compromise (BEC) attacks are becoming increasingly sophisticated, targeting organizations with carefully crafted emails that mimic trusted contacts. Unlike typical phishing attempts, BEC scams involve impersonating executives, HR personnel, or vendors to manipulate recipients into transferring funds or sharing sensitive information. These attacks rely on social engineering rather than technical exploits, making them harder to detect. Organizations should implement multi-factor authentication and conduct regular security awareness training to prevent such scams. Understanding the nuances of BEC is crucial for effective defense.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4128950/what-does-business-email-compromise-look-like.html",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Ransomware Evolution—Multiple Strains and Sophisticated Tactics",
-            "title": "Exploring the Diverse Landscape of Ransomware Attacks",
-            "content": "Ransomware attacks have evolved into a complex ecosystem with various strains and tactics employed by cybercriminals. These operations are run like businesses, with attackers continuously adapting to maximize profits. Ransomware can target individuals, businesses, and critical infrastructure, often demanding hefty ransoms for data decryption. Understanding the types of ransomware and their methods is essential for developing effective defense strategies. Organizations should ensure regular data backups, implement robust security protocols, and stay informed about the latest ransomware threats to mitigate potential impacts.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4128947/what-are-the-types-of-ransomware-attacks.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -138,6 +175,98 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Feb 25 2026",
+            "headline": "Ailias Offers Holographic Chats with Historical Figures",
+            "title": "Ailias Unveils Hologram Avatars for Interactive Historical Conversations",
+            "content": "Ailias has introduced a groundbreaking service that allows users to engage in interactive dialogues with holographic representations of historical figures, such as Isaac Newton. This innovative technology leverages advanced AI algorithms to simulate the personalities and knowledge of these figures, providing an educational and engaging experience. The avatars are designed to respond in real-time, offering insights and discussions that reflect the historical figure&#x27;s era and expertise. This development represents a significant leap in educational technology, blending AI with immersive experiences. Users interested in exploring this new form of learning can access the service through Ailias&#x27;s platform.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/ailias-hologram-avatars/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "Nokia, AWS Test AI-Driven 5G Network Slicing",
+            "title": "Nokia and AWS Pilot AI Automation for 5G Network Management",
+            "content": "Nokia and Amazon Web Services (AWS) have jointly launched a pilot project to implement AI-driven automation for real-time 5G network slicing. This initiative aims to enable telecom networks to autonomously adjust traffic and service quality, optimizing performance and resource allocation. The AI agents involved are designed to monitor network conditions and make operational decisions, potentially transforming how network services are managed. This technology could significantly enhance the efficiency and reliability of 5G networks, benefiting telecom operators and end-users with improved connectivity and service delivery. Stakeholders in the telecom industry should monitor this development closely as it may redefine network management practices.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/nokia-and-aws-pilot-ai-automation-for-real-time-5g-network-slicing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "OpenAI Wins Against xAI in Trade Secrets Case",
+            "title": "OpenAI Prevails in Legal Dispute Over Trade Secrets with xAI",
+            "content": "OpenAI has successfully defended itself against a lawsuit filed by xAI, which accused it of poaching employees and stealing trade secrets. The court dismissed the case, granting OpenAI&#x27;s motion to dismiss with leave for xAI to amend its claims. This legal victory highlights the complexities of intellectual property and employee mobility in the rapidly evolving AI industry. The outcome may influence future legal strategies for companies in the tech sector facing similar disputes. Industry professionals should note the implications of this case for corporate governance and competitive practices in AI development.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/884049/openai-elon-musk-xai-trade-secrets-lawsuit",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Nimble&#x27;s Agentic Search Boasts 99% Accuracy for Enterprises",
+            "title": "Nimble Launches AI-Powered Agentic Search Platform for Enterprises",
+            "content": "Nimble has unveiled its Agentic Search Platform, claiming an impressive 99% accuracy in delivering search results for enterprise users. This AI-driven platform aims to revolutionize web search by providing precise and contextually relevant information, surpassing traditional search engines. The tool leverages advanced algorithms to generate detailed summaries and insights, enhancing decision-making processes for businesses. As AI continues to disrupt traditional search models, enterprises may find this platform valuable for improving operational efficiency and gaining competitive insights. Organizations should consider integrating AI-driven search solutions to stay ahead in the digital landscape.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/the-era-of-human-web-search-is-over-nimble-launches-agentic-search-platform",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "IBM&#x27;s $40B Loss Tied to COBOL Misconception",
+            "title": "IBM Faces Market Cap Loss Amid COBOL Modernization Misunderstanding",
+            "content": "IBM experienced a $40 billion market cap drop, its largest single-day loss in 25 years, following the release of tools by Anthropic that translate COBOL into modern languages like Java and Python. Investors mistakenly equated translation with modernization, leading to a sell-off. The incident underscores the challenges and misconceptions surrounding legacy systems and modernization strategies. As businesses navigate digital transformation, understanding the nuances of legacy software updates is crucial to avoid financial missteps. Stakeholders should evaluate modernization efforts carefully, distinguishing between translation and comprehensive system upgrades.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/ibms-usd40b-stock-wipeout-is-built-on-a-misconception-translating-cobol-isnt",
+            "relatedResources": [
+                {
+                    "label": "Ibm Analysis",
+                    "url": "/articles/ibm-api-connect-cve-2026.html",
+                    "icon": "fa-file-alt"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Pentagon Pressures Anthropic Over AI Guardrails",
+            "title": "Anthropic Resists Pentagon&#x27;s Demand to Loosen AI Guardrails",
+            "content": "The Pentagon has intensified its dispute with Anthropic, demanding the company relax its AI guardrails by Friday or face potential penalties. This standoff highlights the tension between government oversight and corporate autonomy in AI development. The situation raises critical questions about the balance of power, vendor dependence, and the impact on investor confidence in defense technology. As AI continues to play a pivotal role in national security, companies must navigate regulatory pressures while maintaining ethical standards. Industry leaders should monitor this case for its implications on government-corporate relations in the tech sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Google Enhances Opal with Automated Workflow Creation",
+            "title": "Google Introduces Automated Workflow Capabilities to Opal Platform",
+            "content": "Google has added a new feature to its Opal platform, enabling users to create automated workflows through text prompts. This enhancement allows the creation of mini-apps that streamline task planning and execution, significantly boosting productivity for users. The integration of this agent simplifies complex processes, making it easier for organizations to automate routine operations. As businesses increasingly adopt AI-driven solutions, tools like Opal can provide a competitive edge by optimizing workflow efficiency. Companies should explore integrating such technologies to enhance operational capabilities and maintain a competitive advantage.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/24/google-adds-a-way-to-create-automated-workflows-to-opal/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
         {
             "date": "Feb 25 2026",
             "headline": "Anthropic&#x27;s Claude Code Goes Mobile—Remote Control Launches",
@@ -204,36 +333,6 @@ const websiteContent = {
                     "label": "LLM Security & Prompt Injection",
                     "url": "/guides/llm-security-prompt-injection.html",
                     "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Multiverse&#x27;s HyperNova 60B—Free AI Model Challenges Mistral",
-            "title": "Multiverse Computing Releases Free HyperNova 60B Model on Hugging Face",
-            "content": "Spanish startup Multiverse Computing has launched a free version of its HyperNova 60B AI model on Hugging Face, claiming superior performance over Mistral&#x27;s offerings. The release aims to democratize access to advanced AI capabilities, encouraging widespread experimentation and development. HyperNova 60B&#x27;s compression technology allows it to operate efficiently while maintaining high accuracy, making it accessible to a broader audience. This strategic move enhances Multiverse&#x27;s visibility in the competitive AI landscape and underscores its commitment to fostering innovation. Developers are encouraged to leverage this model for diverse applications across industries.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Uber Engineers Create AI Chatbot of CEO Khosrowshahi",
-            "title": "Uber Develops AI Chatbot of CEO for Employee Training and Engagement",
-            "content": "Uber engineers have developed an AI chatbot version of CEO Dara Khosrowshahi, designed to assist employees in refining their pitches and presentations. This innovative tool reflects Uber&#x27;s commitment to integrating AI into its corporate culture, enhancing communication and training processes. By simulating interactions with the CEO, employees can gain valuable insights and improve their engagement skills. The chatbot exemplifies how AI can be used to personalize and streamline internal operations, fostering a more dynamic workplace environment. Uber&#x27;s initiative highlights the growing trend of using AI to replicate leadership roles for organizational development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/24/uber-engineers-built-ai-version-of-boss-dara-khosrowshahi/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
                 }
             ]
         }
