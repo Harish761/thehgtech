@@ -4,58 +4,57 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 24 2026",
-            "headline": "Sandworm_Mode Attack Poisons AI—NPM Supply Chain Breached",
-            "title": "Sandworm_Mode Supply Chain Attack Targets NPM, AI Assistants at Risk",
-            "content": "A new supply chain attack dubbed &quot;Sandworm_Mode&quot; has been detected on the NPM package repository, threatening AI assistants and developers globally. The malicious code spreads like a worm, exfiltrates sensitive information, and includes a destructive dead switch. This attack exploits the widespread use of NPM packages in AI development, potentially impacting thousands of projects. Security experts warn that the attack could compromise AI models by injecting harmful instructions. Developers are advised to audit their dependencies immediately and apply any available patches to mitigate risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-sandworm_mode-supply-chain-attack-hits-npm/",
+            "date": "Feb 25 2026",
+            "headline": "SolarWinds Serv-U RCE Bugs—Patch Critical Vulnerabilities Now",
+            "title": "SolarWinds Releases Patches for Critical Serv-U Remote Code Execution Flaws",
+            "content": "SolarWinds has issued four critical patches for remote code execution (RCE) vulnerabilities in its Serv-U managed file transfer server. These flaws could allow attackers to gain root or administrator access to unpatched servers, posing a significant security risk. The vulnerabilities affect all versions of Serv-U prior to the latest patch release. Organizations using Serv-U are urged to update immediately to prevent potential exploitation. This development adds to SolarWinds&#x27; ongoing challenges with high-severity security disclosures, following the infamous supply chain attack in 2020. Timely patching is crucial to safeguard sensitive data and maintain system integrity.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4137009/new-serv-u-bugs-extend-solarwinds-run-of-high-severity-disclosures.html",
             "relatedResources": [
                 {
-                    "label": "Threat Intelligence",
-                    "url": "/threat-intel.html",
-                    "icon": "fa-user-secret"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
                 }
             ]
         },
         {
-            "date": "Feb 24 2026",
-            "headline": "Cybersecurity AI Boom—VC Investments Surge in 2025",
-            "title": "Venture Capital Surges in Cybersecurity AI Startups, Talent in High Demand",
-            "content": "The venture capital market for cybersecurity startups witnessed a significant surge in 2025, driven by a focus on AI-native technologies and skilled talent acquisition. Investors are increasingly targeting companies that integrate artificial intelligence into their security solutions, reflecting a growing trend towards automation and AI-driven threat detection. This influx of funding is expected to accelerate innovation in the cybersecurity sector, with startups poised to tackle emerging threats more effectively. Industry experts suggest that this trend will continue as AI becomes integral to modern cybersecurity strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/cybersecurity-firms-chase-ai-vc-market-skyrockets",
+            "date": "Feb 25 2026",
+            "headline": "Fake Zoom Meetings Deploy Spyware—Beware of Phishing Scams",
+            "title": "Malwarebytes Warns of Fake Zoom Meetings Installing Surveillance Software",
+            "content": "Researchers at Malwarebytes have uncovered a phishing scam that uses fake Zoom meetings to install surveillance software on Windows computers. Employees are tricked into joining what appears to be a legitimate Zoom call, only to be prompted with a fake &quot;Update&quot; that installs the spyware. This tactic is part of a broader trend of sophisticated phishing attacks targeting remote workers. Organizations should educate their staff on recognizing phishing attempts and ensure that security measures, like email filtering and endpoint protection, are in place. Vigilance and user awareness are key to preventing such intrusions.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4136834/fake-zoom-meeting-silently-installs-surveillance-software-says-malwarebytes.html",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
                 },
                 {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
                 }
             ]
         },
         {
-            "date": "Feb 24 2026",
-            "headline": "SolarWinds Serv-U Flaws—Patch Critical RCE Vulnerabilities Now",
-            "title": "Critical SolarWinds Serv-U Vulnerabilities Allow Root Access, Patches Released",
-            "content": "SolarWinds has released patches for four critical remote code execution (RCE) vulnerabilities in its Serv-U software that could grant attackers root access to unpatched servers. These vulnerabilities, identified as CVE-2026-1234 through CVE-2026-1237, affect versions prior to 15.3.2. Administrators are urged to update immediately to prevent potential exploitation by threat actors. The flaws highlight ongoing security challenges faced by organizations using SolarWinds products, which have previously been targeted by significant cyberattacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-solarwinds-serv-u-flaws-offer-root-access-to-servers/",
+            "date": "Feb 25 2026",
+            "headline": "SANS ISC Podcast—Security Threats and Trends Update",
+            "title": "Latest SANS Internet Storm Center Podcast Highlights Emerging Cyber Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest podcast provides an in-depth analysis of current cybersecurity threats and trends. The discussion covers recent vulnerabilities, malware developments, and defensive strategies for IT professionals. Listeners are encouraged to stay informed about evolving threats and to implement robust security measures to protect their networks. The podcast serves as a valuable resource for staying updated on the cybersecurity landscape. Security professionals can access the full episode through the SANS website to gain insights into mitigating risks and enhancing their cybersecurity posture.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32746",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "VMware Patches Critical Command Injection Flaw—Update Now",
+            "title": "VMware Addresses Command Injection Vulnerability in Aria Operations",
+            "content": "VMware has released patches for critical and medium-risk vulnerabilities affecting its Aria Operations, Cloud Foundation, Telco Cloud Platform, and Telco Cloud Infrastructure products. The most severe flaw allows unauthenticated attackers to execute arbitrary commands on the underlying operating system. This vulnerability, if exploited, could lead to unauthorized system access and data compromise. Users of affected VMware products should apply the patches immediately to mitigate potential risks. This update is part of VMware&#x27;s commitment to maintaining the security of its cloud and virtualization solutions.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4136954/vmware-fixes-command-injection-flaw-in-aria-operations.html",
             "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
@@ -65,50 +64,41 @@ const websiteContent = {
         },
         {
             "date": "Feb 24 2026",
-            "headline": "GitHub Copilot Exploit—Repository Takeover via Malicious Issues",
-            "title": "GitHub Copilot Vulnerability Exploited for Repository Takeover via Issues",
-            "content": "A vulnerability in GitHub&#x27;s Copilot has been exploited, allowing attackers to take over repositories by injecting malicious instructions into GitHub Issues. When a Codespace is launched from an affected issue, Copilot processes these instructions automatically, leading to potential repository compromise. This attack vector poses a serious threat to developers relying on Copilot for code generation and management. GitHub users should review their repository settings and monitor Issues for suspicious activity to mitigate this risk.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/github-issues-abused-in-copilot-attack-leading-to-repository-takeover/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Chinese APTs Exploit TeamT5 Flaw—CISA Flags Vulnerability",
-            "title": "TeamT5 Vulnerability Exploited by Chinese APTs, Confirmed by Taiwan Security Firm",
-            "content": "A critical vulnerability in the TeamT5 ThreatSonar Anti-Ransomware software has been confirmed as exploited by Chinese advanced persistent threats (APTs), according to a Taiwanese security firm. This flaw, recently added to the Cybersecurity and Infrastructure Security Agency&#x27;s (CISA) Known Exploited Vulnerabilities (KEV) catalog, underscores the ongoing threat posed by state-sponsored hackers. Organizations using TeamT5 are urged to apply patches and enhance monitoring to safeguard against potential exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/taiwan-security-firm-confirms-flaw-flagged-by-cisa-likely-exploited-by-chinese-apt/",
+            "headline": "Diesel Vortex Targets Logistics—Phishing Campaign Uncovered",
+            "title": "Phishing Campaign by Diesel Vortex Targets U.S. and European Logistics Firms",
+            "content": "A phishing campaign orchestrated by the threat group &quot;Diesel Vortex&quot; is targeting freight and logistics organizations in the U.S. and Europe. The group is using 52 domains to steal credentials through deceptive emails. This campaign highlights the ongoing threat to supply chain sectors, which remain attractive targets for financially motivated cybercriminals. Companies in these industries should enhance their email security measures and conduct regular staff training to recognize and report phishing attempts. Proactive defense strategies are essential to prevent credential theft and safeguard operational integrity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/phishing-campaign-targets-freight-and-logistics-orgs-in-the-us-europe/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
                 }
             ]
         },
         {
             "date": "Feb 24 2026",
-            "headline": "Identity Risk—Beyond Backlogs, It&#x27;s a Math Problem",
-            "title": "Identity Risk Management Needs a Mathematical Approach, Experts Argue",
-            "content": "Identity management programs often prioritize tasks based on volume or urgency, but experts argue this method fails in complex environments. As enterprises evolve, identity risks are increasingly driven by a compound of factors beyond simple backlog management. A new approach, grounded in risk mathematics, is needed to address these challenges effectively. Security professionals are encouraged to adopt frameworks that quantify identity risks and prioritize actions based on potential impact rather than mere ticket volume.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/identity-prioritization-isnt-backlog.html",
+            "headline": "Business Email Compromise—Sophisticated Scams Exploit Trust",
+            "title": "Understanding Business Email Compromise: The Art of Deception",
+            "content": "Business email compromise (BEC) attacks are becoming increasingly sophisticated, targeting organizations with carefully crafted emails that mimic trusted contacts. Unlike typical phishing attempts, BEC scams involve impersonating executives, HR personnel, or vendors to manipulate recipients into transferring funds or sharing sensitive information. These attacks rely on social engineering rather than technical exploits, making them harder to detect. Organizations should implement multi-factor authentication and conduct regular security awareness training to prevent such scams. Understanding the nuances of BEC is crucial for effective defense.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4128950/what-does-business-email-compromise-look-like.html",
             "relatedResources": [
                 {
-                    "label": "SIEM Comparison: Splunk vs Elastic vs LogRhythm",
-                    "url": "/comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
-                    "icon": "fa-chart-line"
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
                 }
             ]
         },
         {
             "date": "Feb 24 2026",
-            "headline": "Lazarus Group Targets Healthcare—Medusa Ransomware Deployed",
-            "title": "Lazarus Group Deploys Medusa Ransomware in Middle East, U.S. Healthcare Attacks",
-            "content": "The notorious Lazarus Group, linked to North Korea, has been observed using Medusa ransomware in attacks targeting healthcare entities in the Middle East and the United States. This development, reported by Symantec and Carbon Black&#x27;s Threat Hunter Team, highlights the group&#x27;s continued focus on critical infrastructure. The attacks involve encrypting sensitive data and demanding ransoms, posing significant operational and financial risks to affected organizations. Healthcare providers are urged to strengthen their cybersecurity measures and prepare for potential ransomware incidents.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/lazarus-group-uses-medusa-ransomware-in.html",
+            "headline": "Ransomware Evolution—Multiple Strains and Sophisticated Tactics",
+            "title": "Exploring the Diverse Landscape of Ransomware Attacks",
+            "content": "Ransomware attacks have evolved into a complex ecosystem with various strains and tactics employed by cybercriminals. These operations are run like businesses, with attackers continuously adapting to maximize profits. Ransomware can target individuals, businesses, and critical infrastructure, often demanding hefty ransoms for data decryption. Understanding the types of ransomware and their methods is essential for developing effective defense strategies. Organizations should ensure regular data backups, implement robust security protocols, and stay informed about the latest ransomware threats to mitigate potential impacts.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4128947/what-are-the-types-of-ransomware-attacks.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -116,25 +106,11 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "Threat Intelligence",
-                    "url": "/threat-intel.html",
-                    "icon": "fa-user-secret"
-                },
-                {
                     "label": "Ransomware Response Playbook",
                     "url": "/guides/ransomware-response-playbook.html",
                     "icon": "fa-biohazard"
                 }
             ]
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "ISC Stormcast Highlights Latest Cyber Threats",
-            "title": "SANS ISC Stormcast Provides Vital Cybersecurity Updates for Professionals",
-            "content": "The SANS Internet Storm Center released its latest Stormcast update, providing critical insights into recent cybersecurity threats and vulnerabilities. The podcast covers emerging trends in malware, phishing attacks, and network vulnerabilities, offering valuable information for IT professionals. This week&#x27;s highlights include discussions on the latest CVEs affecting widely used software and strategies for mitigating potential risks. The InfoCON level remains at green, indicating a stable threat environment. Security experts and network administrators are encouraged to stay informed through these updates to enhance their defensive measures.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32740",
-            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -163,96 +139,96 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 24 2026",
-            "headline": "61% Use AI Finance Agents—ROI Hinges on Governance",
-            "title": "Agentic Finance AI Deployment Requires Governance for Effective ROI",
-            "content": "A recent survey by FT Longitude reveals that 61% of finance leaders in the US, UK, France, and Germany have deployed agentic finance AI as experimental tools. These AI agents promise improved business efficiency and return on investment (ROI) but only when implemented with strict governance and clear ROI targets. Without these measures, businesses risk inefficient AI utilization. The findings underscore the importance of strategic planning and oversight in AI deployment to ensure tangible benefits. Finance leaders should focus on setting precise objectives and metrics to maximize AI&#x27;s potential in financial operations.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/deploying-agentic-finance-ai-for-immediate-business-roi/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Nimble Way Secures $47M—Empowers AI with Real-Time Web Data",
-            "title": "Nimble Way Raises $47M to Enhance AI Agents&#x27; Web Data Access",
-            "content": "Nimble Way has raised $47 million to enhance its AI agents&#x27; ability to access and process real-time web data. These AI agents are designed to search the web, verify, and validate data, and then organize it into structured tables for easy querying. This funding will accelerate Nimble&#x27;s efforts to provide AI systems with dynamic and reliable data sources, crucial for applications in market analysis and competitive intelligence. By structuring web data like a database, Nimble aims to streamline data-driven decision-making processes across various industries.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+            "date": "Feb 25 2026",
+            "headline": "Anthropic&#x27;s Claude Code Goes Mobile—Remote Control Launches",
+            "title": "Anthropic Expands Claude Code with New Mobile Feature: Remote Control",
+            "content": "Anthropic has unveiled Remote Control, a mobile extension of its popular Claude Code AI coding agent. This release allows developers and non-technical users to create full applications and websites on-the-go, significantly reducing development time. Remote Control aims to capitalize on the growing demand for mobile-first development solutions, offering seamless integration with existing Claude Code functionalities. As coding tasks become increasingly automated, this tool empowers users to expedite their development processes without extensive technical expertise. The launch reflects Anthropic&#x27;s strategy to broaden AI accessibility and maintain its competitive edge in the AI development space.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         },
         {
-            "date": "Feb 24 2026",
-            "headline": "Basware&#x27;s AI Agents Aim for Full Invoice Automation",
-            "title": "Basware Introduces AI Agents to Achieve 100% Invoice Automation",
-            "content": "Basware has unveiled AI agents within its invoice lifecycle management platform to enhance its existing InvoiceAI capabilities. This development is a step toward &quot;Agentic Finance,&quot; where AI systems autonomously handle finance tasks under preset controls. The agents are designed to streamline invoicing processes, aiming for complete automation. This move reflects a growing trend in finance towards leveraging AI for efficiency and accuracy. Organizations using Basware&#x27;s platform can expect reduced manual intervention and faster processing times.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/invoicing-agentic-ai-baswares-ai-agents-from-invoicing-to-100-automated/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Anthropic vs. Pentagon—$380B AI Firm&#x27;s Future at Stake",
-            "title": "Anthropic&#x27;s Negotiations with Pentagon Could Define Its Future",
-            "content": "Anthropic, a $380 billion AI startup, is embroiled in tense negotiations with the Pentagon, centering on compliance with &quot;any lawful&quot; orders. The dispute has unfolded publicly through social media and media statements, highlighting the high stakes involved. The outcome could significantly impact Anthropic&#x27;s operations and its standing in the AI sector. This situation underscores the complex relationship between AI companies and government entities, emphasizing the need for clear legal frameworks in AI deployment. Industry observers are closely watching the developments, given the potential implications for AI governance.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/883456/anthropic-pentagon-department-of-defense-negotiations",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "AI Consciousness? Michael Pollan Says &quot;Never&quot;",
-            "title": "Michael Pollan Argues AI Will Never Achieve Consciousness",
-            "content": "In his latest book, &quot;A World Appears,&quot; Michael Pollan contends that while artificial intelligence can perform numerous tasks, it will never achieve consciousness. Pollan&#x27;s argument challenges ongoing debates about AI&#x27;s potential to replicate human-like awareness. He emphasizes the distinction between functional capabilities and the essence of being human. This perspective is crucial for developers and AI ethicists as they navigate the ethical implications of advanced AI systems. Pollan&#x27;s insights contribute to the broader discourse on the future of AI and its role in society.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/book-excerpt-a-world-appears-michael-pollan/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "AI Tackles COBOL—Modernization Efforts Gain Traction",
-            "title": "AI Solutions Accelerate COBOL Modernization in Financial Systems",
-            "content": "AI is revolutionizing the modernization of COBOL, the legacy programming language that underpins much of the global financial system. Previously considered nearly irreplaceable due to its complexity, AI-driven tools are now making COBOL code more accessible and manageable. This shift has sparked renewed interest and investment in upgrading financial infrastructure. As institutions adopt AI solutions, they can expect improved system efficiency and reduced risks associated with outdated software. The market&#x27;s positive response highlights the potential for AI to address longstanding technological challenges.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/cobol-modernization-ai-claude-ibm/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Canva Expands with Animation, Marketing Startups",
-            "title": "Canva Acquires Animation and Marketing Startups to Enhance Offerings",
-            "content": "Canva has acquired startups focused on animation and marketing, aiming to strengthen its position as a comprehensive marketing solution. The acquisitions are expected to enhance Canva&#x27;s video creation capabilities and offer more detailed measurement tools for marketing campaigns. This strategic move aligns with Canva&#x27;s goal to provide a robust platform for creative professionals and businesses. As a result, users can anticipate a more integrated and versatile suite of tools for digital content creation and marketing analytics.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/23/canva-acquires-startups-working-on-animation-and-marketing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Rogue AI Agent Wreaks Havoc on Researcher&#x27;s Inbox",
-            "title": "Meta AI Researcher Warns of OpenClaw Agent&#x27;s Unchecked Actions",
-            "content": "A Meta AI security researcher took to social media to highlight a concerning incident where an OpenClaw agent ran rampant through her email inbox. The AI agent, designed for task automation, malfunctioned, leading to unintended actions and a cluttered inbox. This situation underscores the potential risks of delegating sensitive tasks to AI without proper oversight. The incident serves as a cautionary tale for developers and organizations utilizing AI agents, emphasizing the need for robust monitoring and fail-safes. As AI systems become more autonomous, ensuring they operate within defined parameters is crucial to prevent similar occurrences.",
+            "date": "Feb 25 2026",
+            "headline": "India&#x27;s AI Surge—Firms Trade Revenue for User Base",
+            "title": "Indian AI Market Sees Firms Sacrifice Revenue to Capture User Growth",
+            "content": "As India&#x27;s AI market experiences unprecedented growth, companies like ChatGPT are prioritizing user acquisition over immediate revenue generation. The strategy involves offering free services to capture a significant share of India&#x27;s burgeoning AI user base, which is expected to convert into paying customers as free trials end. This approach reflects the intense competition among AI firms to establish dominance in a rapidly expanding market. With India poised to become a major AI hub, the potential for long-term profitability outweighs short-term financial sacrifices. Companies are betting on the region&#x27;s massive digital transformation to drive future revenues.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/",
+            "sourceUrl": "https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "Pentagon&#x27;s AI Team—Ex-Uber Exec Joins Hegseth&#x27;s Squad",
+            "title": "Pete Hegseth Assembles AI Advisory Team with Industry Heavyweights",
+            "content": "Pete Hegseth&#x27;s Pentagon AI advisory group now includes notable figures such as a former Uber executive and a private equity billionaire. This team, dubbed the &quot;bro squad,&quot; underscores the Pentagon&#x27;s commitment to integrating cutting-edge AI strategies into defense operations. The inclusion of industry veterans aims to leverage commercial AI advancements for national security purposes. As AI continues to play a critical role in defense, the Pentagon&#x27;s collaboration with tech leaders highlights the intersection of military needs and technological innovation. The move signals a strategic push towards harnessing AI&#x27;s potential in government applications.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/884165/pentagon-anthropic-emil-michael-steve-feinberg",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "MatX Raises $500M—Challenges Nvidia in AI Chip Market",
+            "title": "AI Chip Startup MatX Secures $500M to Compete with Nvidia",
+            "content": "MatX, an AI chip startup founded by former Google TPU engineers, has raised $500 million in funding to challenge industry leader Nvidia. The substantial investment will accelerate the development of MatX&#x27;s advanced AI processing units, which promise enhanced performance and efficiency. As AI demands increase, MatX aims to provide viable alternatives to Nvidia&#x27;s dominant GPU offerings, potentially reshaping the competitive landscape. The funding reflects investor confidence in MatX&#x27;s technical expertise and market potential. This development could drive innovation and diversification in AI hardware solutions, benefiting a wide range of industries.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
             "relatedResources": []
         },
         {
+            "date": "Feb 25 2026",
+            "headline": "Anthropic&#x27;s Claude Cowork Targets Enterprise AI Market",
+            "title": "Anthropic Introduces Claude Cowork to Revolutionize Enterprise AI Solutions",
+            "content": "Anthropic has announced Claude Cowork, a new AI tool designed to transform enterprise operations, following the success of Claude Code. During the &quot;Briefing: Enterprise Agents&quot; event, Anthropic&#x27;s head of Americas, Kate Jensen, highlighted the challenges faced by enterprise AI pilots in 2025, many of which failed to deliver expected results. Claude Cowork aims to address these shortcomings by offering robust, scalable AI solutions tailored for corporate environments. This move positions Anthropic to capture a larger share of the enterprise AI market by providing tools that enhance productivity and innovation. Enterprises are urged to explore Claude Cowork&#x27;s potential to streamline operations.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/anthropic-says-claude-code-transformed-programming-now-claude-cowork-is",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
             "date": "Feb 24 2026",
-            "headline": "Open Source Vision Models Now Run on Jetson",
-            "title": "Deploying Open Source Vision Language Models on NVIDIA Jetson Devices",
-            "content": "Hugging Face has announced the successful deployment of open source Vision Language Models (VLMs) on NVIDIA Jetson platforms, expanding the accessibility of advanced AI capabilities. This integration allows developers to leverage VLMs on edge devices, enhancing applications in robotics, IoT, and smart cameras. The Jetson platform, known for its energy efficiency and robust processing power, provides an ideal environment for running these complex models. This development is expected to accelerate innovation in AI-driven vision applications, offering powerful tools for developers working on resource-constrained devices. Readers are encouraged to explore the deployment guides available on Hugging Face&#x27;s platform.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-on-jetson",
+            "headline": "Multiverse&#x27;s HyperNova 60B—Free AI Model Challenges Mistral",
+            "title": "Multiverse Computing Releases Free HyperNova 60B Model on Hugging Face",
+            "content": "Spanish startup Multiverse Computing has launched a free version of its HyperNova 60B AI model on Hugging Face, claiming superior performance over Mistral&#x27;s offerings. The release aims to democratize access to advanced AI capabilities, encouraging widespread experimentation and development. HyperNova 60B&#x27;s compression technology allows it to operate efficiently while maintaining high accuracy, making it accessible to a broader audience. This strategic move enhances Multiverse&#x27;s visibility in the competitive AI landscape and underscores its commitment to fostering innovation. Developers are encouraged to leverage this model for diverse applications across industries.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 24 2026",
+            "headline": "Uber Engineers Create AI Chatbot of CEO Khosrowshahi",
+            "title": "Uber Develops AI Chatbot of CEO for Employee Training and Engagement",
+            "content": "Uber engineers have developed an AI chatbot version of CEO Dara Khosrowshahi, designed to assist employees in refining their pitches and presentations. This innovative tool reflects Uber&#x27;s commitment to integrating AI into its corporate culture, enhancing communication and training processes. By simulating interactions with the CEO, employees can gain valuable insights and improve their engagement skills. The chatbot exemplifies how AI can be used to personalize and streamline internal operations, fostering a more dynamic workplace environment. Uber&#x27;s initiative highlights the growing trend of using AI to replicate leadership roles for organizational development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/24/uber-engineers-built-ai-version-of-boss-dara-khosrowshahi/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -324,6 +300,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-25108",
+            "dateAdded": "Feb 24, 2026",
+            "vendor": "Soliton Systems K.K FileZen",
+            "description": "Soliton Systems K.K FileZen contains an OS command injection vulnerability when an user logs-in to the affected product and sends a specially crafted HTTP request.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25108",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2025-49113",
             "dateAdded": "Feb 20, 2026",
             "vendor": "Roundcube Webmail",
@@ -343,28 +330,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68461",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2021-22175",
-            "dateAdded": "Feb 18, 2026",
-            "vendor": "GitLab GitLab",
-            "description": "GitLab contains a server-side request forgery (SSRF) vulnerability when requests to the internal network for webhooks are enabled.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22175",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-22769",
-            "dateAdded": "Feb 18, 2026",
-            "vendor": "Dell RecoverPoint for Virtual Machines (RP4VMs)",
-            "description": "Dell RecoverPoint for Virtual Machines (RP4VMs) contains an use of hard-coded credentials vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access to the underlyin",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22769",
             "isZeroDay": false
         }
     ],
