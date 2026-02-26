@@ -5,6 +5,126 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 26 2026",
+            "headline": "Ransomware Gang Extorted by Fake FSB—Cyber Irony in Moscow",
+            "title": "Fake FSB Officer Attempts to Extort Russian Ransomware Group",
+            "content": "A man in Moscow has been accused of impersonating an officer from Russia&#x27;s Federal Security Service (FSB) to extort money from a notorious ransomware gang. This unusual twist in cybercrime highlights the complex and often ironic nature of the cyber underworld. The suspect allegedly threatened the gang with exposure unless a ransom was paid, turning the tables on the criminals. Such incidents underscore the chaotic and opportunistic environment within cybercrime circles, where even threat actors are not immune from becoming victims. This case serves as a reminder to cybersecurity professionals of the unpredictable dynamics in the cyber threat landscape.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/ransomware-gang-blackmailed-fake-fsb-officer",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Claude Code Flaws—Silent Hacks on Developer Devices",
+            "title": "Anthropic Patches Critical Vulnerabilities in Claude Code Software",
+            "content": "Anthropic has addressed critical vulnerabilities in its Claude Code software that could have allowed silent hacking of developer devices. Discovered by Check Point, the flaws involved malicious configuration files that could be exploited for unauthorized access. These vulnerabilities posed significant risks to developers using Claude Code, potentially compromising sensitive data and project integrity. The rapid patching by Anthropic underscores the importance of timely updates and security vigilance in software development. Developers are urged to apply the latest updates to safeguard their systems against these vulnerabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/claude-code-flaws-exposed-developer-devices-to-silent-hacking/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Microsoft Expands Windows Restore for Enterprises—Boosts Device Flexibility",
+            "title": "Windows 11 Restore Feature Now Available for More Enterprise Devices",
+            "content": "Microsoft has expanded its Windows 11 restore feature, enabling enterprise users to restore personal settings and Microsoft Store apps across a broader range of devices. This enhancement aims to improve device management and user experience by allowing seamless transitions between hardware. The update is particularly beneficial for organizations with diverse device ecosystems, ensuring continuity and efficiency in operations. As remote work remains prevalent, such features are crucial for maintaining productivity and reducing IT administrative burdens. Enterprises should explore this capability to enhance their digital infrastructure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-expands-windows-restore-to-more-enterprise-devices/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Gambit Security Secures $61M—Accelerates Growth and Innovation",
+            "title": "Gambit Security Emerges With $61 Million Funding for Expansion",
+            "content": "Gambit Security has emerged from stealth mode, securing $61 million in seed and Series A funding to accelerate product development and expand its sales and customer success teams. This significant financial backing highlights investor confidence in Gambit&#x27;s potential to innovate in the cybersecurity market. The startup plans to leverage the funds to enhance its security solutions and broaden its market reach. As cyber threats continue to evolve, Gambit&#x27;s focus on cutting-edge technologies positions it as a promising player in the industry. Stakeholders in the cybersecurity space should watch Gambit&#x27;s developments closely.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/gambit-security-emerges-from-stealth-with-61-million-in-funding/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "CLAIR Model Maps Infrastructure—Framework for Critical Interdependencies",
+            "title": "New CLAIR Model Framework for Critical Infrastructure Interdependencies",
+            "content": "A new conceptual framework known as the CLAIR Model has been introduced to map interdependencies within critical infrastructure. This synthesized model aims to enhance understanding of how various infrastructure components interact and depend on each other. By providing a structured approach to analyzing these interdependencies, the CLAIR Model seeks to improve resilience and risk management strategies. As critical infrastructure increasingly relies on interconnected systems, tools like the CLAIR Model are essential for identifying vulnerabilities and ensuring robust defenses. Professionals in infrastructure management and cybersecurity should consider integrating this framework into their analysis processes.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32748",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "AI Tools Speed Up Cyberattacks—Crowdstrike&#x27;s Global Threat Report",
+            "title": "Crowdstrike Reports AI-Driven Acceleration in Cyberattack Speeds",
+            "content": "Crowdstrike&#x27;s latest Global Threat Report reveals that AI tools are significantly accelerating the speed and frequency of cyberattacks. The report highlights that attackers in 2025 required an average of just minutes to compromise systems, a drastic reduction from previous years. This trend underscores the growing sophistication of cyber threats as adversaries leverage AI to automate and enhance their tactics. Organizations must adapt by implementing advanced threat detection and response strategies to counter these rapid attacks. The report serves as a critical resource for security professionals aiming to stay ahead of evolving threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4137880/hacker-kompromittieren-immer-schneller.html",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Zyxel Patches UPnP Flaw—Critical RCE Vulnerability Fixed",
+            "title": "Zyxel Addresses Critical UPnP Vulnerability in Multiple Device Models",
+            "content": "Zyxel has released patches for a critical vulnerability affecting the Universal Plug and Play (UPnP) function in several of its device models. The flaw could have allowed remote code execution (RCE), posing significant security risks to users. This vulnerability, if exploited, could have enabled attackers to gain unauthorized control over affected devices. Users are strongly advised to apply the latest firmware updates to mitigate potential threats. This incident highlights the importance of regular patch management and security updates in maintaining device security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/zyxel-patches-critical-vulnerability-in-many-device-models/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
             "headline": "AI-Enhanced Honeypots: Lessons from the Front Lines",
             "title": "Running AI-Assisted Honeypots: Key Insights from SANS Intern",
             "content": "Austin Bodolay, an intern with the SANS.edu Bachelor of Applied Cybersecurity program, shares his experiences managing a honeypot with AI assistance. The honeypot was designed to capture and analyze malicious traffic, leveraging AI to distinguish between genuine threats and background noise. This approach has proven effective in identifying sophisticated attack patterns while reducing false positives. The insights gained underscore the potential of AI in enhancing cybersecurity defenses, particularly in environments with high volumes of data. Security professionals are encouraged to explore AI-driven solutions to bolster their threat detection capabilities.",
@@ -78,30 +198,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 25 2026",
-            "headline": "Cisco Zero-Day Exploits—Governments Issue Urgent Warning",
-            "title": "Global Alert: Cisco Zero-Day Vulnerabilities Exploited Since 2023",
-            "content": "Governments worldwide have issued warnings about ongoing exploitation of zero-day vulnerabilities in Cisco edge technology, dating back to 2023. This marks the second wave of such attacks, targeting critical infrastructure and enterprise networks. The vulnerabilities allow attackers to execute arbitrary code, potentially leading to data breaches and service disruptions. Organizations using affected Cisco products should prioritize patching and review their security postures. This situation underscores the persistent threat of zero-day exploits and the importance of timely vulnerability management.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cisco-zero-days-cisa-emergency-directive-five-eyes/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "UFP Technologies Hit by Cyberattack—Data Compromised",
-            "title": "UFP Technologies Reports Data Breach Following Cyberattack",
-            "content": "UFP Technologies, a U.S.-based medical device manufacturer, has disclosed a cybersecurity incident that compromised its IT systems and data. The breach involved unauthorized access leading to data theft, potentially affecting sensitive customer and operational information. This incident highlights the vulnerabilities within the healthcare sector, which remains a prime target for cybercriminals. Affected parties are advised to monitor for any signs of misuse of their data. UFP Technologies is working with cybersecurity experts to investigate and mitigate the impact of the breach.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/medical-device-maker-ufp-technologies-warns-of-data-stolen-in-cyberattack/",
-            "relatedResources": []
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -127,6 +223,98 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Feb 26 2026",
+            "headline": "Burger King AI Monitors Politeness—Employee Interactions Under Scrutiny",
+            "title": "Burger King Launches AI Chatbot to Evaluate Employee-Customer Interactions",
+            "content": "Burger King is deploying an AI chatbot named &quot;Patty&quot; in employee headsets to assist with meal preparation and monitor interactions with customers. As part of the BK Assistant platform, Patty will assess whether employees use courteous language such as &quot;please&quot; and &quot;thank you.&quot; This initiative reflects a growing trend in the fast-food industry to integrate AI for operational efficiency and customer service improvement. While enhancing service quality, this move raises potential privacy concerns among employees regarding constant monitoring. Burger King aims to balance technological advancement with employee privacy by maintaining transparency about data usage.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/884911/burger-king-ai-assistant-patty",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "AI Chatbots Explore BDSM—Community Divided on Tech&#x27;s Role",
+            "title": "BDSM Enthusiasts Turn to AI Chatbots for Fantasy Exploration",
+            "content": "The use of AI chatbots for exploring BDSM fantasies is on the rise, with enthusiasts leveraging technology for personalized experiences. However, this trend has sparked debate within the BDSM community, with some members viewing it as a departure from traditional practices. AI chatbots offer a safe environment for users to explore fantasies without the complexities of human interactions. Despite this, purists argue that AI cannot replicate the nuanced dynamics of BDSM relationships. This development highlights the broader societal shift towards digital intimacy and the evolving role of AI in personal exploration.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/whos-your-daddy-a-chatbot/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Google Absorbs Intrinsic—Focus Shifts to Physical AI",
+            "title": "Google Integrates Intrinsic to Enhance Physical AI Capabilities",
+            "content": "Google is integrating Intrinsic, Alphabet&#x27;s AI robotics project, into its core operations after five years as an independent entity. This strategic shift underscores Google&#x27;s commitment to advancing physical AI, moving experimental projects closer to its main business. Intrinsic, known for its &quot;moonshot&quot; initiatives, will now contribute to Google&#x27;s broader efforts in robotics and AI development. This consolidation reflects a trend among tech giants to streamline AI research and development for more cohesive innovation. The move is expected to accelerate Google&#x27;s progress in creating AI systems that can interact with the physical world.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/885113/google-swallows-ai-robotics-moonshot-intrinsic",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Alibaba&#x27;s Qwen3.5 Models—Local Computers Achieve Sonnet 4.5 Performance",
+            "title": "Alibaba Launches Qwen3.5-Medium Models with Advanced Capabilities",
+            "content": "Alibaba&#x27;s Qwen AI team has unveiled the Qwen3.5 Medium Model series, featuring four new large language models (LLMs) with enhanced capabilities. These models support agentic tool calling and offer Sonnet 4.5 performance on local computers, making them accessible for enterprise use. Three of the models are available commercially, providing businesses with advanced AI tools for various applications. This release signifies Alibaba&#x27;s continued leadership in AI innovation and its commitment to making powerful AI solutions more widely available. Enterprises can leverage these models to enhance their AI-driven operations and solutions.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "MoEs in Transformers—Boosting AI Model Efficiency",
+            "title": "Mixture of Experts (MoEs) Enhance Transformer Model Efficiency",
+            "content": "The Mixture of Experts (MoEs) approach is gaining traction in improving the efficiency of transformer models. MoEs dynamically allocate computational resources, allowing models to scale efficiently without a proportional increase in computational cost. This technique enhances model performance by activating only relevant parts of the model for specific tasks, reducing unnecessary processing. As AI models grow in complexity, MoEs offer a promising solution to manage resource demands while maintaining high accuracy. Developers and researchers are encouraged to explore MoEs to optimize their AI models for better performance and efficiency.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/moe-transformers",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "Trump Secures Tech Power Deals—Rate Payer Protection Pledge",
+            "title": "Tech Firms to Sign Power Supply Deals Amid Rising Costs",
+            "content": "President Donald Trump announced upcoming agreements with major tech companies to manage their own power supplies, aiming to address public concerns over rising electricity costs. During his State of the Union address, Trump revealed the &quot;rate payer protection pledge,&quot; which seeks to alleviate financial burdens on consumers. These deals are expected to be finalized next week, marking a significant shift in how tech companies manage energy consumption. As energy demands increase, this initiative represents a proactive approach to sustainability and cost management in the tech industry.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/science/884191/ai-data-center-energy-state-of-the-union-trump",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "Alphabet&#x27;s Intrinsic Merges with Google—Robotics Focus Intensifies",
+            "title": "Intrinsic Joins Google to Boost Robotics and AI Integration",
+            "content": "Alphabet&#x27;s robotics software company, Intrinsic, is transitioning under Google&#x27;s umbrella after five years as an independent entity. This move signals Google&#x27;s intensified focus on integrating robotics with its AI capabilities. By consolidating resources, Google aims to accelerate innovation in AI-driven robotics solutions. Intrinsic&#x27;s expertise in robotics software will enhance Google&#x27;s ability to develop technologies that interact seamlessly with the physical world. This merger reflects a broader industry trend of consolidating AI and robotics efforts to foster more robust technological advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/25/alphabet-owned-robotics-software-company-intrinsic-joins-google/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
         {
             "date": "Feb 26 2026",
             "headline": "AT&amp;T Slashes AI Costs by 90%—8B Tokens Daily",
@@ -179,59 +367,6 @@ const websiteContent = {
                     "label": "LLM Security & Prompt Injection",
                     "url": "/guides/llm-security-prompt-injection.html",
                     "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Anthropic Acquires Vercept—Strengthens AI Agent Capabilities",
-            "title": "Anthropic Buys Vercept to Enhance AI Agent Technology After Founder Exit",
-            "content": "Anthropic has acquired Seattle-based Vercept, a startup known for its complex agentic tools, following the departure of one of Vercept&#x27;s founders to Meta. Vercept&#x27;s technology includes a computer-use agent capable of executing tasks within applications, mimicking human interaction with a laptop. This acquisition strengthens Anthropic&#x27;s position in developing sophisticated AI agents that can perform complex tasks autonomously. The move highlights the competitive nature of the AI field, where talent acquisition and technological advancements are critical for maintaining an edge. Companies should watch for further consolidation in AI as firms seek to bolster their capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Nvidia Reports Record Quarter Amid Surging Token Demand",
-            "title": "Nvidia Posts Record Earnings Driven by Exponential Token Demand",
-            "content": "Nvidia has reported another record-breaking quarter, fueled by unprecedented demand for tokens, as CEO Jensen Huang noted the exponential growth in token usage worldwide. The company&#x27;s substantial capital expenditures reflect its commitment to scaling operations to meet this surging demand. Nvidia&#x27;s success underscores the critical role of GPUs in powering AI models that process vast amounts of data, with the company positioned as a key player in the AI hardware market. Industry professionals should anticipate continued investment in AI infrastructure to support the escalating needs of AI applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/25/nvidia-earnings-record-capex-spend-ai/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Judge Dismisses Musk&#x27;s Lawsuit Against OpenAI—Lack of Evidence",
-            "title": "Court Rules Against Musk in xAI Trade Secrets Case Against OpenAI",
-            "content": "A judge has dismissed Elon Musk&#x27;s lawsuit against OpenAI, citing insufficient evidence to support claims of trade secret theft by xAI. Despite attempts to reinterpret an ex-employee&#x27;s text messages to favor xAI&#x27;s allegations, the court found no substantial proof of wrongdoing. This ruling underscores the challenges in legally proving intellectual property theft in the tech industry, where proprietary information is often closely guarded. The case highlights the importance of robust internal controls and documentation for companies seeking to protect their intellectual property. Tech firms should ensure clear legal strategies and evidence collection when pursuing similar claims.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "White House Urges AI Firms to Absorb Rate Hikes—Most Agree",
-            "title": "U.S. Government Encourages AI Companies to Cover Rising Electricity Costs",
-            "content": "The White House has called on AI companies to absorb increased electricity costs, with most hyperscalers already committing to this initiative. This move aims to mitigate the financial impact on consumers as energy prices rise, ensuring that AI services remain accessible. The commitment from major players reflects a broader industry trend towards corporate responsibility and sustainability. As AI operations demand significant energy resources, companies are increasingly expected to manage their environmental footprint. Tech leaders should consider proactive measures to address energy consumption and sustainability in their AI strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/25/the-white-house-wants-ai-companies-to-cover-rate-hikes-most-have-already-said-they-would/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
                 }
             ]
         }
