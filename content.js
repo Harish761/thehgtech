@@ -4,119 +4,56 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 25 2026",
-            "headline": "Ransomware Attack Hits UFP Technologies—Data Compromised",
-            "title": "UFP Technologies Faces Ransomware Attack with Data Theft Consequences",
-            "content": "UFP Technologies, a manufacturer of medical devices, has fallen victim to a ransomware attack that has resulted in the theft of sensitive data and the deployment of file-encrypting malware. The attack highlights the vulnerabilities in the healthcare sector, where data integrity and availability are critical. While specific details about the ransomware strain have not been disclosed, the incident underscores the urgent need for enhanced cybersecurity measures in medical device manufacturing. Organizations in this sector should review their security protocols and consider implementing advanced threat detection and response strategies to mitigate such risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/medical-device-maker-ufp-technologies-hit-by-cyberattack/",
+            "date": "Feb 26 2026",
+            "headline": "AI-Enhanced Honeypots: Lessons from the Front Lines",
+            "title": "Running AI-Assisted Honeypots: Key Insights from SANS Intern",
+            "content": "Austin Bodolay, an intern with the SANS.edu Bachelor of Applied Cybersecurity program, shares his experiences managing a honeypot with AI assistance. The honeypot was designed to capture and analyze malicious traffic, leveraging AI to distinguish between genuine threats and background noise. This approach has proven effective in identifying sophisticated attack patterns while reducing false positives. The insights gained underscore the potential of AI in enhancing cybersecurity defenses, particularly in environments with high volumes of data. Security professionals are encouraged to explore AI-driven solutions to bolster their threat detection capabilities.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32744",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "February 26th Stormcast: Key Cybersecurity Updates",
+            "title": "SANS Internet Storm Center&#x27;s February 26th Podcast Highlights",
+            "content": "The latest episode of the SANS Internet Storm Center&#x27;s Stormcast podcast covers critical cybersecurity updates for professionals. This episode delves into recent vulnerabilities, emerging threats, and best practices for securing networks. Key topics include the ongoing exploitation of zero-day vulnerabilities and the increasing sophistication of phishing attacks. Listeners are urged to stay informed and implement recommended security measures to protect their systems. The podcast serves as a valuable resource for staying abreast of the rapidly evolving cybersecurity landscape.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32750",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "DDoS Attack via CAPTCHA: Blogger Silenced",
+            "title": "Internet Archive Service Allegedly DDoSes Finnish Blogger",
+            "content": "A curious Finnish blogger faced a DDoS attack allegedly orchestrated by an internet archiving service operator using their CAPTCHA page. The attack was part of a larger effort to silence the blogger, which included threats of creating AI-generated pornography. This unusual method highlights the creative yet malicious use of everyday internet tools in cyberattacks. The incident underscores the need for robust defenses against DDoS attacks and the potential misuse of AI technologies. Security professionals should review their DDoS mitigation strategies to prevent similar incidents.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-456/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Steaelite RAT: Dual Threat of Data Theft and Ransomware",
+            "title": "Steaelite RAT Enables Data Theft and Ransomware from One Pane",
+            "content": "The newly discovered Steaelite remote access trojan (RAT) combines data theft and ransomware management capabilities in a single tool. This RAT targets Windows systems, allowing threat actors to conduct comprehensive attacks from a unified interface. Researchers warn that the integration of AI into such tools increases their effectiveness and accessibility to less-skilled attackers. The emergence of Steaelite reflects a growing trend of multipurpose malware, posing significant risks to organizations. Security teams should enhance their endpoint protection and monitoring to detect and mitigate these threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4137527/steaelite-rat-combines-data-theft-and-ransomware-management-capability-in-one-tool.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Response Playbook",
                     "url": "/guides/ransomware-response-playbook.html",
                     "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "2025 Vulnerabilities Surge—Only 1% Weaponized",
-            "title": "1% of 2025 Vulnerabilities Exploited Despite Record Growth",
-            "content": "Despite a significant increase in discovered vulnerabilities during 2025, only 1% were actively weaponized in cyberattacks, according to a report by VulnCheck. Caitlin Condon of VulnCheck emphasizes that security professionals often focus on theoretical vulnerabilities that lack practical exploitability. This trend suggests a need for more strategic vulnerability management, prioritizing those with real-world impact. Organizations should refine their patch management processes to address the most critical vulnerabilities first, thereby optimizing resource allocation and reducing potential attack surfaces.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/vulncheck-exploited-vulnerabilities-report-2025/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Ex-Defense Exec Jailed for Russian Exploit Sales",
-            "title": "Former US Defense Executive Sentenced for Selling Exploits to Russia",
-            "content": "Peter Williams, a former executive at a US defense contracting firm, has been sentenced to 87 months in prison for selling cyber exploits to a Russian broker. This case highlights the risks of insider threats and the potential for sensitive technology to fall into adversarial hands. Williams&#x27; actions violated national security protocols and underscore the importance of stringent vetting and monitoring of personnel with access to critical cyber resources. Defense contractors should enhance their security measures to prevent similar breaches of trust and technology.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ex-us-defense-contractor-executive-jailed-for-selling-exploits-to-russia/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Zyxel RCE Flaw—Patch Critical Routers Now",
-            "title": "Critical RCE Vulnerability in Zyxel Routers Demands Immediate Patching",
-            "content": "Zyxel has issued security updates for a critical remote command execution (RCE) vulnerability affecting over a dozen of its router models. Unauthenticated attackers can exploit this flaw to execute arbitrary commands on unpatched devices, posing significant risks to network security. The vulnerability affects models such as the Zyxel NBG6817 and NBG6615. Users are urged to apply the latest firmware updates immediately to protect against potential exploitation. This incident serves as a reminder of the importance of regular patching and monitoring of network devices.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zyxel-warns-of-critical-rce-flaw-affecting-over-a-dozen-routers/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "CarGurus Breach Exposes 12M Users&#x27; Data",
-            "title": "CarGurus Data Breach Affects Over 12 Million Users",
-            "content": "Automotive marketplace CarGurus has suffered a data breach that exposed the personal information of more than 12 million users. Hackers claim to have accessed both personally identifiable information (PII) and internal corporate data. The breach highlights the ongoing risks of data exposure in the automotive industry, where user trust is paramount. CarGurus is conducting an investigation and has urged affected users to monitor their accounts for suspicious activity. Companies should strengthen their data protection measures to prevent similar breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-12-million-users-impacted-by-cargurus-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "New Model Rates OT Cyber Incident Severity",
-            "title": "&#x27;Richter Scale&#x27; for OT Cyber Incidents Introduced by Experts",
-            "content": "A new model akin to the Richter scale has been developed to assess the severity of cybersecurity incidents in operational technology (OT) environments. This scoring system aims to provide a standardized method for evaluating the impact of cyber events on critical infrastructure. By quantifying incident severity, organizations can better prioritize response efforts and allocate resources effectively. The initiative reflects the growing need for specialized tools in the OT sector, where the consequences of cyberattacks can be particularly dire.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/ics-ot-security/richter-scale-model-measures-cyber-incidents",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "426 Cybersecurity M&amp;A Deals in 2025—Focus on GRC",
-            "title": "2025 Sees 426 Cybersecurity M&amp;A Deals with GRC Emphasis",
-            "content": "The cybersecurity sector witnessed 426 mergers and acquisitions (M&amp;A) in 2025, with a notable focus on governance, risk, and compliance (GRC), data protection, and identity solutions. SecurityWeek&#x27;s report suggests a more disciplined market approach, favoring strategic acquisitions that enhance security portfolios. This trend reflects the increasing complexity of cybersecurity challenges and the demand for comprehensive solutions. Companies in the cybersecurity industry should consider these trends when planning their strategic investments and partnerships.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/securityweek-report-426-cybersecurity-ma-deals-announced-in-2025/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "SolarWinds Serv-U RCE Bugs—Patch Critical Vulnerabilities Now",
-            "title": "SolarWinds Releases Patches for Critical Serv-U Remote Code Execution Flaws",
-            "content": "SolarWinds has issued four critical patches for remote code execution (RCE) vulnerabilities in its Serv-U managed file transfer server. These flaws could allow attackers to gain root or administrator access to unpatched servers, posing a significant security risk. The vulnerabilities affect all versions of Serv-U prior to the latest patch release. Organizations using Serv-U are urged to update immediately to prevent potential exploitation. This development adds to SolarWinds&#x27; ongoing challenges with high-severity security disclosures, following the infamous supply chain attack in 2020. Timely patching is crucial to safeguard sensitive data and maintain system integrity.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4137009/new-serv-u-bugs-extend-solarwinds-run-of-high-severity-disclosures.html",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Fake Zoom Meetings Deploy Spyware—Beware of Phishing Scams",
-            "title": "Malwarebytes Warns of Fake Zoom Meetings Installing Surveillance Software",
-            "content": "Researchers at Malwarebytes have uncovered a phishing scam that uses fake Zoom meetings to install surveillance software on Windows computers. Employees are tricked into joining what appears to be a legitimate Zoom call, only to be prompted with a fake &quot;Update&quot; that installs the spyware. This tactic is part of a broader trend of sophisticated phishing attacks targeting remote workers. Organizations should educate their staff on recognizing phishing attempts and ensure that security measures, like email filtering and endpoint protection, are in place. Vigilance and user awareness are key to preventing such intrusions.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4136834/fake-zoom-meeting-silently-installs-surveillance-software-says-malwarebytes.html",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
                 },
                 {
                     "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
@@ -126,21 +63,27 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 25 2026",
-            "headline": "SANS ISC Podcast—Security Threats and Trends Update",
-            "title": "Latest SANS Internet Storm Center Podcast Highlights Emerging Cyber Threats",
-            "content": "The SANS Internet Storm Center&#x27;s latest podcast provides an in-depth analysis of current cybersecurity threats and trends. The discussion covers recent vulnerabilities, malware developments, and defensive strategies for IT professionals. Listeners are encouraged to stay informed about evolving threats and to implement robust security measures to protect their networks. The podcast serves as a valuable resource for staying updated on the cybersecurity landscape. Security professionals can access the full episode through the SANS website to gain insights into mitigating risks and enhancing their cybersecurity posture.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32746",
-            "relatedResources": []
+            "date": "Feb 26 2026",
+            "headline": "ChatGPT Used in Chinese Influence Campaign Against Japan",
+            "title": "Chinese Police Exploit ChatGPT to Smear Japan PM Takaichi",
+            "content": "A Chinese keyboard warrior inadvertently revealed a politically motivated campaign using ChatGPT to discredit Japan&#x27;s Prime Minister Takaichi. The campaign involved generating and disseminating false narratives to influence public opinion. This incident highlights the misuse of AI language models in state-sponsored influence operations. As AI tools become more sophisticated, their potential for manipulation grows, posing challenges for information integrity. Organizations and governments must develop strategies to counteract AI-driven disinformation campaigns and protect their reputations.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-police-chatgpt-smear-japan-pm-takaichi",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
         },
         {
             "date": "Feb 25 2026",
-            "headline": "VMware Patches Critical Command Injection Flaw—Update Now",
-            "title": "VMware Addresses Command Injection Vulnerability in Aria Operations",
-            "content": "VMware has released patches for critical and medium-risk vulnerabilities affecting its Aria Operations, Cloud Foundation, Telco Cloud Platform, and Telco Cloud Infrastructure products. The most severe flaw allows unauthenticated attackers to execute arbitrary commands on the underlying operating system. This vulnerability, if exploited, could lead to unauthorized system access and data compromise. Users of affected VMware products should apply the patches immediately to mitigate potential risks. This update is part of VMware&#x27;s commitment to maintaining the security of its cloud and virtualization solutions.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4136954/vmware-fixes-command-injection-flaw-in-aria-operations.html",
+            "headline": "Cisco Zero-Day Exploits—Governments Issue Urgent Warning",
+            "title": "Global Alert: Cisco Zero-Day Vulnerabilities Exploited Since 2023",
+            "content": "Governments worldwide have issued warnings about ongoing exploitation of zero-day vulnerabilities in Cisco edge technology, dating back to 2023. This marks the second wave of such attacks, targeting critical infrastructure and enterprise networks. The vulnerabilities allow attackers to execute arbitrary code, potentially leading to data breaches and service disruptions. Organizations using affected Cisco products should prioritize patching and review their security postures. This situation underscores the persistent threat of zero-day exploits and the importance of timely vulnerability management.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/cisco-zero-days-cisa-emergency-directive-five-eyes/",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
@@ -148,6 +91,15 @@ const websiteContent = {
                     "icon": "fa-bug"
                 }
             ]
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "UFP Technologies Hit by Cyberattack—Data Compromised",
+            "title": "UFP Technologies Reports Data Breach Following Cyberattack",
+            "content": "UFP Technologies, a U.S.-based medical device manufacturer, has disclosed a cybersecurity incident that compromised its IT systems and data. The breach involved unauthorized access leading to data theft, potentially affecting sensitive customer and operational information. This incident highlights the vulnerabilities within the healthcare sector, which remains a prime target for cybercriminals. Affected parties are advised to monitor for any signs of misuse of their data. UFP Technologies is working with cybersecurity experts to investigate and mitigate the impact of the breach.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/medical-device-maker-ufp-technologies-warns-of-data-stolen-in-cyberattack/",
+            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -176,39 +128,32 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 25 2026",
-            "headline": "Ailias Offers Holographic Chats with Historical Figures",
-            "title": "Ailias Unveils Hologram Avatars for Interactive Historical Conversations",
-            "content": "Ailias has introduced a groundbreaking service that allows users to engage in interactive dialogues with holographic representations of historical figures, such as Isaac Newton. This innovative technology leverages advanced AI algorithms to simulate the personalities and knowledge of these figures, providing an educational and engaging experience. The avatars are designed to respond in real-time, offering insights and discussions that reflect the historical figure&#x27;s era and expertise. This development represents a significant leap in educational technology, blending AI with immersive experiences. Users interested in exploring this new form of learning can access the service through Ailias&#x27;s platform.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/ailias-hologram-avatars/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Nokia, AWS Test AI-Driven 5G Network Slicing",
-            "title": "Nokia and AWS Pilot AI Automation for 5G Network Management",
-            "content": "Nokia and Amazon Web Services (AWS) have jointly launched a pilot project to implement AI-driven automation for real-time 5G network slicing. This initiative aims to enable telecom networks to autonomously adjust traffic and service quality, optimizing performance and resource allocation. The AI agents involved are designed to monitor network conditions and make operational decisions, potentially transforming how network services are managed. This technology could significantly enhance the efficiency and reliability of 5G networks, benefiting telecom operators and end-users with improved connectivity and service delivery. Stakeholders in the telecom industry should monitor this development closely as it may redefine network management practices.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/nokia-and-aws-pilot-ai-automation-for-real-time-5g-network-slicing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "OpenAI Wins Against xAI in Trade Secrets Case",
-            "title": "OpenAI Prevails in Legal Dispute Over Trade Secrets with xAI",
-            "content": "OpenAI has successfully defended itself against a lawsuit filed by xAI, which accused it of poaching employees and stealing trade secrets. The court dismissed the case, granting OpenAI&#x27;s motion to dismiss with leave for xAI to amend its claims. This legal victory highlights the complexities of intellectual property and employee mobility in the rapidly evolving AI industry. The outcome may influence future legal strategies for companies in the tech sector facing similar disputes. Industry professionals should note the implications of this case for corporate governance and competitive practices in AI development.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/884049/openai-elon-musk-xai-trade-secrets-lawsuit",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Nimble&#x27;s Agentic Search Boasts 99% Accuracy for Enterprises",
-            "title": "Nimble Launches AI-Powered Agentic Search Platform for Enterprises",
-            "content": "Nimble has unveiled its Agentic Search Platform, claiming an impressive 99% accuracy in delivering search results for enterprise users. This AI-driven platform aims to revolutionize web search by providing precise and contextually relevant information, surpassing traditional search engines. The tool leverages advanced algorithms to generate detailed summaries and insights, enhancing decision-making processes for businesses. As AI continues to disrupt traditional search models, enterprises may find this platform valuable for improving operational efficiency and gaining competitive insights. Organizations should consider integrating AI-driven search solutions to stay ahead in the digital landscape.",
+            "date": "Feb 26 2026",
+            "headline": "AT&amp;T Slashes AI Costs by 90%—8B Tokens Daily",
+            "title": "AT&amp;T Overhauls AI Orchestration to Cut Costs Amid Token Surge",
+            "content": "AT&amp;T has dramatically reduced its AI operational costs by 90% after rethinking its approach to handling an average of 8 billion tokens daily. Chief Data Officer Andy Markus and his team identified inefficiencies in funneling all data through large reasoning models, which proved neither feasible nor economical. By optimizing AI orchestration, AT&amp;T managed to address the massive scale problem, ensuring more efficient processing and resource allocation. This strategic shift highlights the growing need for companies to balance AI capabilities with cost-effectiveness as token usage continues to soar industry-wide. Professionals should consider similar evaluations of their AI strategies to manage costs effectively.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/the-era-of-human-web-search-is-over-nimble-launches-agentic-search-platform",
+            "sourceUrl": "https://venturebeat.com/orchestration/8-billion-tokens-a-day-forced-at-and-t-to-rethink-ai-orchestration-and-cut",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Incident Response Automation",
+                    "url": "/guides/incident-response-automation.html",
+                    "icon": "fa-bolt"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Benioff on AI Threat: &quot;Not Our First SaaSpocalypse&quot;",
+            "title": "Salesforce CEO Marc Benioff Dismisses AI Threat to Business Model",
+            "content": "Salesforce CEO Marc Benioff has downplayed concerns about AI disrupting the company&#x27;s business model, following a strong year-end earnings report. Despite industry fears of a &quot;SaaSpocalypse,&quot; Benioff emphasized Salesforce&#x27;s resilience and adaptability in the face of technological shifts. The company has historically navigated market changes, and its current AI strategy aims to integrate new technologies without undermining its core offerings. This stance reassures stakeholders and highlights the importance of strategic foresight in the rapidly evolving tech landscape. Industry leaders should remain vigilant but not alarmist about AI&#x27;s potential impact on traditional business models.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/25/salesforce-ceo-marc-benioff-this-isnt-our-first-saaspocalypse/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -223,43 +168,42 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 24 2026",
-            "headline": "IBM&#x27;s $40B Loss Tied to COBOL Misconception",
-            "title": "IBM Faces Market Cap Loss Amid COBOL Modernization Misunderstanding",
-            "content": "IBM experienced a $40 billion market cap drop, its largest single-day loss in 25 years, following the release of tools by Anthropic that translate COBOL into modern languages like Java and Python. Investors mistakenly equated translation with modernization, leading to a sell-off. The incident underscores the challenges and misconceptions surrounding legacy systems and modernization strategies. As businesses navigate digital transformation, understanding the nuances of legacy software updates is crucial to avoid financial missteps. Stakeholders should evaluate modernization efforts carefully, distinguishing between translation and comprehensive system upgrades.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/ibms-usd40b-stock-wipeout-is-built-on-a-misconception-translating-cobol-isnt",
+            "date": "Feb 26 2026",
+            "headline": "Gushwork Secures $9M—AI Search for Customer Leads Gains Traction",
+            "title": "Gushwork Raises $9 Million to Enhance AI-Powered Customer Lead Search",
+            "content": "Gushwork has successfully raised $9 million in a seed funding round led by SIG and Lightspeed, capitalizing on the growing demand for AI-driven customer lead generation. The startup has leveraged AI search tools like ChatGPT to gain early customer traction, demonstrating the effectiveness of AI in streamlining and enhancing sales processes. By utilizing advanced search capabilities, Gushwork aims to revolutionize how businesses identify and engage potential customers, offering a competitive edge in lead generation. This development underscores the increasing reliance on AI technologies in sales and marketing, prompting businesses to explore AI solutions for improved efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
             "relatedResources": [
                 {
-                    "label": "Ibm Analysis",
-                    "url": "/articles/ibm-api-connect-cve-2026.html",
-                    "icon": "fa-file-alt"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         },
         {
-            "date": "Feb 24 2026",
-            "headline": "Pentagon Pressures Anthropic Over AI Guardrails",
-            "title": "Anthropic Resists Pentagon&#x27;s Demand to Loosen AI Guardrails",
-            "content": "The Pentagon has intensified its dispute with Anthropic, demanding the company relax its AI guardrails by Friday or face potential penalties. This standoff highlights the tension between government oversight and corporate autonomy in AI development. The situation raises critical questions about the balance of power, vendor dependence, and the impact on investor confidence in defense technology. As AI continues to play a pivotal role in national security, companies must navigate regulatory pressures while maintaining ethical standards. Industry leaders should monitor this case for its implications on government-corporate relations in the tech sector.",
+            "date": "Feb 25 2026",
+            "headline": "Anthropic Acquires Vercept—Strengthens AI Agent Capabilities",
+            "title": "Anthropic Buys Vercept to Enhance AI Agent Technology After Founder Exit",
+            "content": "Anthropic has acquired Seattle-based Vercept, a startup known for its complex agentic tools, following the departure of one of Vercept&#x27;s founders to Meta. Vercept&#x27;s technology includes a computer-use agent capable of executing tasks within applications, mimicking human interaction with a laptop. This acquisition strengthens Anthropic&#x27;s position in developing sophisticated AI agents that can perform complex tasks autonomously. The move highlights the competitive nature of the AI field, where talent acquisition and technological advancements are critical for maintaining an edge. Companies should watch for further consolidation in AI as firms seek to bolster their capabilities.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
+            "sourceUrl": "https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 25 2026",
+            "headline": "Nvidia Reports Record Quarter Amid Surging Token Demand",
+            "title": "Nvidia Posts Record Earnings Driven by Exponential Token Demand",
+            "content": "Nvidia has reported another record-breaking quarter, fueled by unprecedented demand for tokens, as CEO Jensen Huang noted the exponential growth in token usage worldwide. The company&#x27;s substantial capital expenditures reflect its commitment to scaling operations to meet this surging demand. Nvidia&#x27;s success underscores the critical role of GPUs in powering AI models that process vast amounts of data, with the company positioned as a key player in the AI hardware market. Industry professionals should anticipate continued investment in AI infrastructure to support the escalating needs of AI applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/25/nvidia-earnings-record-capex-spend-ai/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 24 2026",
-            "headline": "Google Enhances Opal with Automated Workflow Creation",
-            "title": "Google Introduces Automated Workflow Capabilities to Opal Platform",
-            "content": "Google has added a new feature to its Opal platform, enabling users to create automated workflows through text prompts. This enhancement allows the creation of mini-apps that streamline task planning and execution, significantly boosting productivity for users. The integration of this agent simplifies complex processes, making it easier for organizations to automate routine operations. As businesses increasingly adopt AI-driven solutions, tools like Opal can provide a competitive edge by optimizing workflow efficiency. Companies should explore integrating such technologies to enhance operational capabilities and maintain a competitive advantage.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/24/google-adds-a-way-to-create-automated-workflows-to-opal/",
-            "relatedResources": [
+                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -269,70 +213,25 @@ const websiteContent = {
         },
         {
             "date": "Feb 25 2026",
-            "headline": "Anthropic&#x27;s Claude Code Goes Mobile—Remote Control Launches",
-            "title": "Anthropic Expands Claude Code with New Mobile Feature: Remote Control",
-            "content": "Anthropic has unveiled Remote Control, a mobile extension of its popular Claude Code AI coding agent. This release allows developers and non-technical users to create full applications and websites on-the-go, significantly reducing development time. Remote Control aims to capitalize on the growing demand for mobile-first development solutions, offering seamless integration with existing Claude Code functionalities. As coding tasks become increasingly automated, this tool empowers users to expedite their development processes without extensive technical expertise. The launch reflects Anthropic&#x27;s strategy to broaden AI accessibility and maintain its competitive edge in the AI development space.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
+            "headline": "Judge Dismisses Musk&#x27;s Lawsuit Against OpenAI—Lack of Evidence",
+            "title": "Court Rules Against Musk in xAI Trade Secrets Case Against OpenAI",
+            "content": "A judge has dismissed Elon Musk&#x27;s lawsuit against OpenAI, citing insufficient evidence to support claims of trade secret theft by xAI. Despite attempts to reinterpret an ex-employee&#x27;s text messages to favor xAI&#x27;s allegations, the court found no substantial proof of wrongdoing. This ruling underscores the challenges in legally proving intellectual property theft in the tech industry, where proprietary information is often closely guarded. The case highlights the importance of robust internal controls and documentation for companies seeking to protect their intellectual property. Tech firms should ensure clear legal strategies and evidence collection when pursuing similar claims.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/02/judge-xai-cant-claim-openai-stole-trade-secrets-just-by-hiring-ex-staffers/",
+            "relatedResources": []
         },
         {
             "date": "Feb 25 2026",
-            "headline": "India&#x27;s AI Surge—Firms Trade Revenue for User Base",
-            "title": "Indian AI Market Sees Firms Sacrifice Revenue to Capture User Growth",
-            "content": "As India&#x27;s AI market experiences unprecedented growth, companies like ChatGPT are prioritizing user acquisition over immediate revenue generation. The strategy involves offering free services to capture a significant share of India&#x27;s burgeoning AI user base, which is expected to convert into paying customers as free trials end. This approach reflects the intense competition among AI firms to establish dominance in a rapidly expanding market. With India poised to become a major AI hub, the potential for long-term profitability outweighs short-term financial sacrifices. Companies are betting on the region&#x27;s massive digital transformation to drive future revenues.",
+            "headline": "White House Urges AI Firms to Absorb Rate Hikes—Most Agree",
+            "title": "U.S. Government Encourages AI Companies to Cover Rising Electricity Costs",
+            "content": "The White House has called on AI companies to absorb increased electricity costs, with most hyperscalers already committing to this initiative. This move aims to mitigate the financial impact on consumers as energy prices rise, ensuring that AI services remain accessible. The commitment from major players reflects a broader industry trend towards corporate responsibility and sustainability. As AI operations demand significant energy resources, companies are increasingly expected to manage their environmental footprint. Tech leaders should consider proactive measures to address energy consumption and sustainability in their AI strategies.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Pentagon&#x27;s AI Team—Ex-Uber Exec Joins Hegseth&#x27;s Squad",
-            "title": "Pete Hegseth Assembles AI Advisory Team with Industry Heavyweights",
-            "content": "Pete Hegseth&#x27;s Pentagon AI advisory group now includes notable figures such as a former Uber executive and a private equity billionaire. This team, dubbed the &quot;bro squad,&quot; underscores the Pentagon&#x27;s commitment to integrating cutting-edge AI strategies into defense operations. The inclusion of industry veterans aims to leverage commercial AI advancements for national security purposes. As AI continues to play a critical role in defense, the Pentagon&#x27;s collaboration with tech leaders highlights the intersection of military needs and technological innovation. The move signals a strategic push towards harnessing AI&#x27;s potential in government applications.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/884165/pentagon-anthropic-emil-michael-steve-feinberg",
+            "sourceUrl": "https://techcrunch.com/2026/02/25/the-white-house-wants-ai-companies-to-cover-rate-hikes-most-have-already-said-they-would/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "MatX Raises $500M—Challenges Nvidia in AI Chip Market",
-            "title": "AI Chip Startup MatX Secures $500M to Compete with Nvidia",
-            "content": "MatX, an AI chip startup founded by former Google TPU engineers, has raised $500 million in funding to challenge industry leader Nvidia. The substantial investment will accelerate the development of MatX&#x27;s advanced AI processing units, which promise enhanced performance and efficiency. As AI demands increase, MatX aims to provide viable alternatives to Nvidia&#x27;s dominant GPU offerings, potentially reshaping the competitive landscape. The funding reflects investor confidence in MatX&#x27;s technical expertise and market potential. This development could drive innovation and diversification in AI hardware solutions, benefiting a wide range of industries.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Anthropic&#x27;s Claude Cowork Targets Enterprise AI Market",
-            "title": "Anthropic Introduces Claude Cowork to Revolutionize Enterprise AI Solutions",
-            "content": "Anthropic has announced Claude Cowork, a new AI tool designed to transform enterprise operations, following the success of Claude Code. During the &quot;Briefing: Enterprise Agents&quot; event, Anthropic&#x27;s head of Americas, Kate Jensen, highlighted the challenges faced by enterprise AI pilots in 2025, many of which failed to deliver expected results. Claude Cowork aims to address these shortcomings by offering robust, scalable AI solutions tailored for corporate environments. This move positions Anthropic to capture a larger share of the enterprise AI market by providing tools that enhance productivity and innovation. Enterprises are urged to explore Claude Cowork&#x27;s potential to streamline operations.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/anthropic-says-claude-code-transformed-programming-now-claude-cowork-is",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
                 }
             ]
         }
@@ -398,6 +297,28 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2022-20775",
+            "dateAdded": "Feb 25, 2026",
+            "vendor": "Cisco SD-WAN",
+            "description": "Cisco SD-WAN CLI contains a path traversal vulnerability that could allow an authenticated local attacker to gain elevated privileges via improper access controls on commands within the application CL",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-20775",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-20127",
+            "dateAdded": "Feb 25, 2026",
+            "vendor": "Cisco Catalyst SD-WAN Controller and Manager",
+            "description": "Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, contain an authentication bypass vulnerability could allow an unauthenticated, rem",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20127",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-25108",
             "dateAdded": "Feb 24, 2026",
