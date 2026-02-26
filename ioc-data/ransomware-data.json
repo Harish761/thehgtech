@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-02-26T02:07:05.657679",
+  "last_updated": "2026-02-26T13:07:45.374024",
   "period": "Last 7 days",
-  "total_groups": 30,
-  "total_victims": 299,
+  "total_groups": 31,
+  "total_victims": 295,
   "groups": [
     {
       "name": "Thegentlemen",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Qilin",
-      "count": 42,
+      "count": 40,
       "victims": [
         {
           "name": "Induherzig SAS",
@@ -169,10 +169,10 @@
       ],
       "countries": [
         "AU",
-        "CL",
         "CO",
         "FR",
-        "GB"
+        "GB",
+        "IT"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -276,14 +276,8 @@
     },
     {
       "name": "Lockbit5",
-      "count": 19,
+      "count": 18,
       "victims": [
-        {
-          "name": "fcc-inc.com",
-          "date": "2026-02-23 13:21:27.971130",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/32c1f0ff04061256274c4146e9f734c0",
-          "discovered_date": "2026-02-23T13:21:27.971130"
-        },
         {
           "name": "fcc-inc.com",
           "date": "2026-02-23T13:21:27+00:00",
@@ -337,11 +331,15 @@
           "date": "2026-02-23T13:16:40+00:00",
           "url": "https://www.ransomware.live/id/Y3praW5nZGVlLmNvbUBsb2NrYml0NQ==",
           "discovered_date": "2026-02-23T13:16:40+00:00"
+        },
+        {
+          "name": "humsnlr.com",
+          "date": "2026-02-23T13:16:00+00:00",
+          "url": "https://www.ransomware.live/id/aHVtc25sci5jb21AbG9ja2JpdDU=",
+          "discovered_date": "2026-02-23T13:16:00+00:00"
         }
       ],
-      "industries": [
-        "Transportation/Logistics"
-      ],
+      "industries": [],
       "countries": [
         "CL",
         "CO",
@@ -355,7 +353,7 @@
         0,
         0,
         0,
-        19,
+        18,
         0,
         0,
         0
@@ -623,96 +621,6 @@
       ]
     },
     {
-      "name": "Cipherforce",
-      "count": 12,
-      "victims": [
-        {
-          "name": "Accuick",
-          "date": "2026-02-23 19:01:37.294833",
-          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/2c556856-55d9-4496-9887-aba0a0084c41",
-          "discovered_date": "2026-02-23T19:01:37.294833"
-        },
-        {
-          "name": "Zip24 - ShipOx",
-          "date": "2026-02-23 13:25:48.676864",
-          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/victims/91fce8ab-633b-4f4d-999b-e11f5c154a45",
-          "discovered_date": "2026-02-23T13:25:48.676864"
-        },
-        {
-          "name": "FindNear",
-          "date": "2026-02-23 13:25:32.878333",
-          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/victims/d0d3ba11-1efb-4e94-b5da-9998aaa057e7",
-          "discovered_date": "2026-02-23T13:25:32.878333"
-        },
-        {
-          "name": "tektreeinc.com",
-          "date": "2026-02-23 13:25:16.868216",
-          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/victims/086d8c6d-1861-4166-98ef-6b9374c06e20",
-          "discovered_date": "2026-02-23T13:25:16.868216"
-        },
-        {
-          "name": "hiringsteps.com",
-          "date": "2026-02-23 13:24:40.051002",
-          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/victims/f7148215-b8e6-4584-95a0-818350b21e2b",
-          "discovered_date": "2026-02-23T13:24:40.051002"
-        },
-        {
-          "name": "Biaodianyun Group Ltd",
-          "date": "2026-02-23 13:24:02.050923",
-          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/victims/9a327c9a-3896-47bc-a004-f5bfeeda5e54",
-          "discovered_date": "2026-02-23T13:24:02.050923"
-        },
-        {
-          "name": "Accuick",
-          "date": "2026-02-23T19:01:37+00:00",
-          "url": "https://www.ransomware.live/id/QWNjdWlja0BjaXBoZXJmb3JjZQ==",
-          "discovered_date": "2026-02-23T19:01:37+00:00"
-        },
-        {
-          "name": "Zip24 - ShipOx",
-          "date": "2026-02-23T13:25:48+00:00",
-          "url": "https://www.ransomware.live/id/WmlwMjQgLSBTaGlwT3hAY2lwaGVyZm9yY2U=",
-          "discovered_date": "2026-02-23T13:25:48+00:00"
-        },
-        {
-          "name": "FindNear",
-          "date": "2026-02-23T13:25:32+00:00",
-          "url": "https://www.ransomware.live/id/RmluZE5lYXJAY2lwaGVyZm9yY2U=",
-          "discovered_date": "2026-02-23T13:25:32+00:00"
-        },
-        {
-          "name": "tektreeinc.com",
-          "date": "2026-02-23T13:25:16+00:00",
-          "url": "https://www.ransomware.live/id/dGVrdHJlZWluYy5jb21AY2lwaGVyZm9yY2U=",
-          "discovered_date": "2026-02-23T13:25:16+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Not Found",
-        "Technology",
-        "Transportation/Logistics"
-      ],
-      "countries": [
-        "AE",
-        "CN",
-        "IN",
-        "US",
-        "VN"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        12,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Nightspire",
       "count": 12,
       "victims": [
@@ -798,6 +706,96 @@
         0,
         2,
         4,
+        0
+      ]
+    },
+    {
+      "name": "Cipherforce",
+      "count": 11,
+      "victims": [
+        {
+          "name": "Accuick",
+          "date": "2026-02-23 19:01:37.294833",
+          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/2c556856-55d9-4496-9887-aba0a0084c41",
+          "discovered_date": "2026-02-23T19:01:37.294833"
+        },
+        {
+          "name": "Zip24 - ShipOx",
+          "date": "2026-02-23 13:25:48.676864",
+          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/victims/91fce8ab-633b-4f4d-999b-e11f5c154a45",
+          "discovered_date": "2026-02-23T13:25:48.676864"
+        },
+        {
+          "name": "FindNear",
+          "date": "2026-02-23 13:25:32.878333",
+          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/victims/d0d3ba11-1efb-4e94-b5da-9998aaa057e7",
+          "discovered_date": "2026-02-23T13:25:32.878333"
+        },
+        {
+          "name": "tektreeinc.com",
+          "date": "2026-02-23 13:25:16.868216",
+          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/victims/086d8c6d-1861-4166-98ef-6b9374c06e20",
+          "discovered_date": "2026-02-23T13:25:16.868216"
+        },
+        {
+          "name": "hiringsteps.com",
+          "date": "2026-02-23 13:24:40.051002",
+          "url": "http://o3ydbkayttkyg4iw2nc732jxmmex25bjeyqyvuuyngnxmpehdefjr3qd.onion/victims/victims/f7148215-b8e6-4584-95a0-818350b21e2b",
+          "discovered_date": "2026-02-23T13:24:40.051002"
+        },
+        {
+          "name": "Accuick",
+          "date": "2026-02-23T19:01:37+00:00",
+          "url": "https://www.ransomware.live/id/QWNjdWlja0BjaXBoZXJmb3JjZQ==",
+          "discovered_date": "2026-02-23T19:01:37+00:00"
+        },
+        {
+          "name": "Zip24 - ShipOx",
+          "date": "2026-02-23T13:25:48+00:00",
+          "url": "https://www.ransomware.live/id/WmlwMjQgLSBTaGlwT3hAY2lwaGVyZm9yY2U=",
+          "discovered_date": "2026-02-23T13:25:48+00:00"
+        },
+        {
+          "name": "FindNear",
+          "date": "2026-02-23T13:25:32+00:00",
+          "url": "https://www.ransomware.live/id/RmluZE5lYXJAY2lwaGVyZm9yY2U=",
+          "discovered_date": "2026-02-23T13:25:32+00:00"
+        },
+        {
+          "name": "tektreeinc.com",
+          "date": "2026-02-23T13:25:16+00:00",
+          "url": "https://www.ransomware.live/id/dGVrdHJlZWluYy5jb21AY2lwaGVyZm9yY2U=",
+          "discovered_date": "2026-02-23T13:25:16+00:00"
+        },
+        {
+          "name": "hiringsteps.com",
+          "date": "2026-02-23T13:24:40+00:00",
+          "url": "https://www.ransomware.live/id/aGlyaW5nc3RlcHMuY29tQGNpcGhlcmZvcmNl",
+          "discovered_date": "2026-02-23T13:24:40+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Not Found",
+        "Technology",
+        "Transportation/Logistics"
+      ],
+      "countries": [
+        "AE",
+        "CN",
+        "IN",
+        "US",
+        "VN"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        11,
+        0,
+        0,
         0
       ]
     },
@@ -979,7 +977,7 @@
     },
     {
       "name": "Incransom",
-      "count": 10,
+      "count": 9,
       "victims": [
         {
           "name": "primepak.com",
@@ -1034,12 +1032,6 @@
           "date": "2026-02-20T13:40:15+00:00",
           "url": "https://www.ransomware.live/id/cG9seW1lZGljdXJlLmNvbUBpbmNyYW5zb20=",
           "discovered_date": "2026-02-20T13:40:15+00:00"
-        },
-        {
-          "name": "aircotedivoire.com",
-          "date": "2026-02-19T05:56:14+00:00",
-          "url": "https://www.ransomware.live/id/YWlyY290ZWRpdm9pcmUuY29tQGluY3JhbnNvbQ==",
-          "discovered_date": "2026-02-19T05:56:14+00:00"
         }
       ],
       "industries": [
@@ -1051,8 +1043,7 @@
         "AE",
         "BB",
         "IN",
-        "US",
-        "ZA"
+        "US"
       ],
       "trend": "stable",
       "trend_percentage": 0,
@@ -1318,62 +1309,6 @@
       ]
     },
     {
-      "name": "Cloak",
-      "count": 5,
-      "victims": [
-        {
-          "name": "suffolkva.us",
-          "date": "2026-02-24 11:32:05.820139",
-          "url": "",
-          "discovered_date": "2026-02-24T11:32:05.820139"
-        },
-        {
-          "name": "****el-p*****.de",
-          "date": "2026-02-24 11:31:39.981163",
-          "url": "",
-          "discovered_date": "2026-02-24T11:31:39.981163"
-        },
-        {
-          "name": "suffolkva.us",
-          "date": "2026-02-24T11:32:05+00:00",
-          "url": "https://www.ransomware.live/id/c3VmZm9sa3ZhLnVzQGNsb2Fr",
-          "discovered_date": "2026-02-24T11:32:05+00:00"
-        },
-        {
-          "name": "****el-p*****.de",
-          "date": "2026-02-24T11:31:39+00:00",
-          "url": "https://www.ransomware.live/id/KioqKmVsLXAqKioqKi5kZUBjbG9haw==",
-          "discovered_date": "2026-02-24T11:31:39+00:00"
-        },
-        {
-          "name": "Dinnebiergruppe.de",
-          "date": "2026-02-19T10:56:37+00:00",
-          "url": "https://www.ransomware.live/id/RGlubmViaWVyZ3J1cHBlLmRlQGNsb2Fr",
-          "discovered_date": "2026-02-19T10:56:37+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found",
-        "Public Sector"
-      ],
-      "countries": [
-        "DE",
-        "N/A",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        4,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Everest",
       "count": 4,
       "victims": [
@@ -1471,93 +1406,94 @@
       ]
     },
     {
-      "name": "Lynx",
+      "name": "Cloak",
       "count": 4,
       "victims": [
         {
-          "name": "Altalingua",
-          "date": "2026-02-20T18:39:43+00:00",
-          "url": "https://www.ransomware.live/id/QWx0YWxpbmd1YUBseW54",
-          "discovered_date": "2026-02-20T18:39:43+00:00"
+          "name": "suffolkva.us",
+          "date": "2026-02-24 11:32:05.820139",
+          "url": "",
+          "discovered_date": "2026-02-24T11:32:05.820139"
         },
         {
-          "name": "Stera Chemicals",
-          "date": "2026-02-20T15:38:09+00:00",
-          "url": "https://www.ransomware.live/id/U3RlcmEgQ2hlbWljYWxzQGx5bng=",
-          "discovered_date": "2026-02-20T15:38:09+00:00"
+          "name": "****el-p*****.de",
+          "date": "2026-02-24 11:31:39.981163",
+          "url": "",
+          "discovered_date": "2026-02-24T11:31:39.981163"
         },
         {
-          "name": "Keylogistics Chile",
-          "date": "2026-02-20T15:37:52+00:00",
-          "url": "https://www.ransomware.live/id/S2V5bG9naXN0aWNzIENoaWxlQGx5bng=",
-          "discovered_date": "2026-02-20T15:37:52+00:00"
+          "name": "suffolkva.us",
+          "date": "2026-02-24T11:32:05+00:00",
+          "url": "https://www.ransomware.live/id/c3VmZm9sa3ZhLnVzQGNsb2Fr",
+          "discovered_date": "2026-02-24T11:32:05+00:00"
         },
         {
-          "name": "secure.ae",
-          "date": "2026-02-19T10:38:22+00:00",
-          "url": "https://www.ransomware.live/id/c2VjdXJlLmFlQGx5bng=",
-          "discovered_date": "2026-02-19T10:38:22+00:00"
+          "name": "****el-p*****.de",
+          "date": "2026-02-24T11:31:39+00:00",
+          "url": "https://www.ransomware.live/id/KioqKmVsLXAqKioqKi5kZUBjbG9haw==",
+          "discovered_date": "2026-02-24T11:31:39+00:00"
         }
       ],
-      "industries": [],
+      "industries": [
+        "Not Found",
+        "Public Sector"
+      ],
       "countries": [
-        "AE",
-        "CL",
-        "ES",
-        "RO"
+        "N/A",
+        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        3,
         0,
         0,
         0,
         0,
+        4,
         0,
         0
       ]
     },
     {
-      "name": "Handala",
+      "name": "Anubis",
       "count": 3,
       "victims": [
         {
-          "name": "Clalit: Israel’s Largest Healthcare Organization Falls to Cyber Resistance",
-          "date": "2026-02-25 10:00:39.159612",
-          "url": "https://handala-hack.to/clalit-hacked-israels-largest-healthcare-organization-falls-to-cyber-resistance/",
-          "discovered_date": "2026-02-25T10:00:39.159612"
+          "name": "Envirogen Technologies",
+          "date": "2026-02-26 03:24:12.813583",
+          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/mJ3C96jR1frafLN9lGzLMW9kpp2gsQrY+gphK7xCoMggb68u7S7Vd+9z2TMEBR+HuYaKEqP4+zv8jW2dEN86AU81cllJRWtp",
+          "discovered_date": "2026-02-26T03:24:12.813583"
         },
         {
-          "name": "Clalit: Israel’s Largest Healthcare Organization Falls to Cyber Resistance",
-          "date": "2026-02-25T10:00:39+00:00",
-          "url": "https://www.ransomware.live/id/Q2xhbGl0OiBJc3JhZWzigJlzIExhcmdlc3QgSGVhbHRoY2FyZSBPcmdhbml6YXRpb24gRmFsbHMgdG8gQ3liZXIgUmVzaXN0YW5jZUBoYW5kYWxh",
-          "discovered_date": "2026-02-25T10:00:39+00:00"
+          "name": "Envirogen Technologies",
+          "date": "2026-02-26T03:24:12+00:00",
+          "url": "https://www.ransomware.live/id/RW52aXJvZ2VuIFRlY2hub2xvZ2llc0BhbnViaXM=",
+          "discovered_date": "2026-02-26T03:24:12+00:00"
         },
         {
-          "name": "The General in the Shadows: Sapir’s Commander Exposed",
-          "date": "2026-02-19T11:01:56+00:00",
-          "url": "https://www.ransomware.live/id/VGhlIEdlbmVyYWwgaW4gdGhlIFNoYWRvd3M6IFNhcGly4oCZcyBDb21tYW5kZXIgRXhwb3NlZEBoYW5kYWxh",
-          "discovered_date": "2026-02-19T11:01:56+00:00"
+          "name": "Micaforce Technology",
+          "date": "2026-02-21T03:00:07+00:00",
+          "url": "https://www.ransomware.live/id/TWljYWZvcmNlIFRlY2hub2xvZ3lAYW51Ymlz",
+          "discovered_date": "2026-02-21T03:00:07+00:00"
         }
       ],
       "industries": [
-        "Healthcare"
+        "Manufacturing"
       ],
       "countries": [
-        "IL",
-        "N/A"
+        "CN",
+        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
+        1,
         0,
         0,
         0,
         0,
-        2,
-        0
+        2
       ]
     },
     {
@@ -1595,6 +1531,117 @@
       "daily_counts": [
         0,
         1,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "Lynx",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Altalingua",
+          "date": "2026-02-20T18:39:43+00:00",
+          "url": "https://www.ransomware.live/id/QWx0YWxpbmd1YUBseW54",
+          "discovered_date": "2026-02-20T18:39:43+00:00"
+        },
+        {
+          "name": "Stera Chemicals",
+          "date": "2026-02-20T15:38:09+00:00",
+          "url": "https://www.ransomware.live/id/U3RlcmEgQ2hlbWljYWxzQGx5bng=",
+          "discovered_date": "2026-02-20T15:38:09+00:00"
+        },
+        {
+          "name": "Keylogistics Chile",
+          "date": "2026-02-20T15:37:52+00:00",
+          "url": "https://www.ransomware.live/id/S2V5bG9naXN0aWNzIENoaWxlQGx5bng=",
+          "discovered_date": "2026-02-20T15:37:52+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "CL",
+        "ES",
+        "RO"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Chaos",
+      "count": 2,
+      "victims": [
+        {
+          "name": "milespartnership.com",
+          "date": "2026-02-26 08:32:39.312002",
+          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/cKQ2LVOA8rM7vQLr1G6oc8FMPwHN1Q4B",
+          "discovered_date": "2026-02-26T08:32:39.312002"
+        },
+        {
+          "name": "milespartnership.com",
+          "date": "2026-02-26T08:32:39+00:00",
+          "url": "https://www.ransomware.live/id/bWlsZXNwYXJ0bmVyc2hpcC5jb21AY2hhb3M=",
+          "discovered_date": "2026-02-26T08:32:39+00:00"
+        }
+      ],
+      "industries": [
+        "Hospitality and Tourism"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Handala",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Clalit: Israel’s Largest Healthcare Organization Falls to Cyber Resistance",
+          "date": "2026-02-25 10:00:39.159612",
+          "url": "https://handala-hack.to/clalit-hacked-israels-largest-healthcare-organization-falls-to-cyber-resistance/",
+          "discovered_date": "2026-02-25T10:00:39.159612"
+        },
+        {
+          "name": "Clalit: Israel’s Largest Healthcare Organization Falls to Cyber Resistance",
+          "date": "2026-02-25T10:00:39+00:00",
+          "url": "https://www.ransomware.live/id/Q2xhbGl0OiBJc3JhZWzigJlzIExhcmdlc3QgSGVhbHRoY2FyZSBPcmdhbml6YXRpb24gRmFsbHMgdG8gQ3liZXIgUmVzaXN0YW5jZUBoYW5kYWxh",
+          "discovered_date": "2026-02-25T10:00:39+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "IL"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
         0,
         0,
         0,
@@ -1799,33 +1846,6 @@
         0,
         0,
         1,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Anubis",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Micaforce Technology",
-          "date": "2026-02-21T03:00:07+00:00",
-          "url": "https://www.ransomware.live/id/TWljYWZvcmNlIFRlY2hub2xvZ3lAYW51Ymlz",
-          "discovered_date": "2026-02-21T03:00:07+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "CN"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        1,
-        0,
-        0,
         0,
         0,
         0
