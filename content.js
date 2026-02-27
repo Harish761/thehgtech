@@ -4,141 +4,36 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Feb 26 2026",
-            "headline": "Ransomware Gang Extorted by Fake FSB—Cyber Irony in Moscow",
-            "title": "Fake FSB Officer Attempts to Extort Russian Ransomware Group",
-            "content": "A man in Moscow has been accused of impersonating an officer from Russia&#x27;s Federal Security Service (FSB) to extort money from a notorious ransomware gang. This unusual twist in cybercrime highlights the complex and often ironic nature of the cyber underworld. The suspect allegedly threatened the gang with exposure unless a ransom was paid, turning the tables on the criminals. Such incidents underscore the chaotic and opportunistic environment within cybercrime circles, where even threat actors are not immune from becoming victims. This case serves as a reminder to cybersecurity professionals of the unpredictable dynamics in the cyber threat landscape.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/ransomware-gang-blackmailed-fake-fsb-officer",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
+            "date": "Feb 27 2026",
+            "headline": "Leadership Shakeup at CISA—Andersen Steps In",
+            "title": "Madhu Gottumukkala Replaced by Kiersten Todt Andersen as Acting CISA Director",
+            "content": "In a significant leadership change, Kiersten Todt Andersen has been appointed as the acting director of the Cybersecurity and Infrastructure Security Agency (CISA), replacing Madhu Gottumukkala. The transition follows mounting criticisms of CISA&#x27;s performance during the first year of the Trump administration, with Gottumukkala&#x27;s leadership under scrutiny. This move is expected to bring a new strategic direction to the agency as it navigates complex cybersecurity challenges. CISA, a critical component of national cybersecurity defense, has faced increased pressure to enhance its effectiveness amidst rising cyber threats. Stakeholders are closely monitoring how Andersen will address these issues and bolster CISA&#x27;s capabilities.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/cisa-leadership-change-madhu-gottumukkala-nick-andersen/",
+            "relatedResources": []
         },
         {
-            "date": "Feb 26 2026",
-            "headline": "Claude Code Flaws—Silent Hacks on Developer Devices",
-            "title": "Anthropic Patches Critical Vulnerabilities in Claude Code Software",
-            "content": "Anthropic has addressed critical vulnerabilities in its Claude Code software that could have allowed silent hacking of developer devices. Discovered by Check Point, the flaws involved malicious configuration files that could be exploited for unauthorized access. These vulnerabilities posed significant risks to developers using Claude Code, potentially compromising sensitive data and project integrity. The rapid patching by Anthropic underscores the importance of timely updates and security vigilance in software development. Developers are urged to apply the latest updates to safeguard their systems against these vulnerabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/claude-code-flaws-exposed-developer-devices-to-silent-hacking/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Microsoft Expands Windows Restore for Enterprises—Boosts Device Flexibility",
-            "title": "Windows 11 Restore Feature Now Available for More Enterprise Devices",
-            "content": "Microsoft has expanded its Windows 11 restore feature, enabling enterprise users to restore personal settings and Microsoft Store apps across a broader range of devices. This enhancement aims to improve device management and user experience by allowing seamless transitions between hardware. The update is particularly beneficial for organizations with diverse device ecosystems, ensuring continuity and efficiency in operations. As remote work remains prevalent, such features are crucial for maintaining productivity and reducing IT administrative burdens. Enterprises should explore this capability to enhance their digital infrastructure.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-expands-windows-restore-to-more-enterprise-devices/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Gambit Security Secures $61M—Accelerates Growth and Innovation",
-            "title": "Gambit Security Emerges With $61 Million Funding for Expansion",
-            "content": "Gambit Security has emerged from stealth mode, securing $61 million in seed and Series A funding to accelerate product development and expand its sales and customer success teams. This significant financial backing highlights investor confidence in Gambit&#x27;s potential to innovate in the cybersecurity market. The startup plans to leverage the funds to enhance its security solutions and broaden its market reach. As cyber threats continue to evolve, Gambit&#x27;s focus on cutting-edge technologies positions it as a promising player in the industry. Stakeholders in the cybersecurity space should watch Gambit&#x27;s developments closely.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/gambit-security-emerges-from-stealth-with-61-million-in-funding/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "CLAIR Model Maps Infrastructure—Framework for Critical Interdependencies",
-            "title": "New CLAIR Model Framework for Critical Infrastructure Interdependencies",
-            "content": "A new conceptual framework known as the CLAIR Model has been introduced to map interdependencies within critical infrastructure. This synthesized model aims to enhance understanding of how various infrastructure components interact and depend on each other. By providing a structured approach to analyzing these interdependencies, the CLAIR Model seeks to improve resilience and risk management strategies. As critical infrastructure increasingly relies on interconnected systems, tools like the CLAIR Model are essential for identifying vulnerabilities and ensuring robust defenses. Professionals in infrastructure management and cybersecurity should consider integrating this framework into their analysis processes.",
-            "source": "SANS Internet Storm Center, InfoCON: green",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32748",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "AI Tools Speed Up Cyberattacks—Crowdstrike&#x27;s Global Threat Report",
-            "title": "Crowdstrike Reports AI-Driven Acceleration in Cyberattack Speeds",
-            "content": "Crowdstrike&#x27;s latest Global Threat Report reveals that AI tools are significantly accelerating the speed and frequency of cyberattacks. The report highlights that attackers in 2025 required an average of just minutes to compromise systems, a drastic reduction from previous years. This trend underscores the growing sophistication of cyber threats as adversaries leverage AI to automate and enhance their tactics. Organizations must adapt by implementing advanced threat detection and response strategies to counter these rapid attacks. The report serves as a critical resource for security professionals aiming to stay ahead of evolving threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4137880/hacker-kompromittieren-immer-schneller.html",
+            "date": "Feb 27 2026",
+            "headline": "Daily Cyber Threat Update—ISC Stormcast February 27",
+            "title": "ISC Stormcast Highlights Key Cybersecurity Threats and Trends",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast provides a comprehensive update on current cybersecurity threats and trends as of February 27, 2026. The report, rated at InfoCON: green, suggests a stable threat environment but emphasizes vigilance against emerging vulnerabilities. Security professionals are advised to stay informed about the latest attack vectors and exploit techniques. The Stormcast serves as a valuable resource for understanding daily cyber threat dynamics and preparing defenses accordingly. Regular updates like these are crucial for maintaining robust cybersecurity postures and mitigating potential risks.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32752",
             "relatedResources": [
                 {
                     "label": "MITRE ATT&CK Mapping",
                     "url": "/guides/mitre-attack-mapping.html",
                     "icon": "fa-map"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
                 }
             ]
         },
         {
             "date": "Feb 26 2026",
-            "headline": "Zyxel Patches UPnP Flaw—Critical RCE Vulnerability Fixed",
-            "title": "Zyxel Addresses Critical UPnP Vulnerability in Multiple Device Models",
-            "content": "Zyxel has released patches for a critical vulnerability affecting the Universal Plug and Play (UPnP) function in several of its device models. The flaw could have allowed remote code execution (RCE), posing significant security risks to users. This vulnerability, if exploited, could have enabled attackers to gain unauthorized control over affected devices. Users are strongly advised to apply the latest firmware updates to mitigate potential threats. This incident highlights the importance of regular patch management and security updates in maintaining device security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/zyxel-patches-critical-vulnerability-in-many-device-models/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "AI-Enhanced Honeypots: Lessons from the Front Lines",
-            "title": "Running AI-Assisted Honeypots: Key Insights from SANS Intern",
-            "content": "Austin Bodolay, an intern with the SANS.edu Bachelor of Applied Cybersecurity program, shares his experiences managing a honeypot with AI assistance. The honeypot was designed to capture and analyze malicious traffic, leveraging AI to distinguish between genuine threats and background noise. This approach has proven effective in identifying sophisticated attack patterns while reducing false positives. The insights gained underscore the potential of AI in enhancing cybersecurity defenses, particularly in environments with high volumes of data. Security professionals are encouraged to explore AI-driven solutions to bolster their threat detection capabilities.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32744",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "February 26th Stormcast: Key Cybersecurity Updates",
-            "title": "SANS Internet Storm Center&#x27;s February 26th Podcast Highlights",
-            "content": "The latest episode of the SANS Internet Storm Center&#x27;s Stormcast podcast covers critical cybersecurity updates for professionals. This episode delves into recent vulnerabilities, emerging threats, and best practices for securing networks. Key topics include the ongoing exploitation of zero-day vulnerabilities and the increasing sophistication of phishing attacks. Listeners are urged to stay informed and implement recommended security measures to protect their systems. The podcast serves as a valuable resource for staying abreast of the rapidly evolving cybersecurity landscape.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32750",
+            "headline": "Fake Zoom, Google Meet Scams Install Teramind",
+            "title": "Attackers Leverage Fake Zoom and Google Meet to Deploy Teramind",
+            "content": "Cybercriminals are exploiting the popularity of video conferencing platforms like Zoom and Google Meet to distribute Teramind, a legitimate employee monitoring tool, through phishing scams. These attacks do not rely on custom malware but instead use trusted brand names to gain user trust and deploy Teramind without detection. Victims unknowingly install the software, which is then used to monitor and exfiltrate sensitive data. This tactic highlights the importance of verifying software sources and maintaining robust email security measures. Organizations should educate employees on recognizing phishing attempts and ensure their systems are protected against unauthorized installations.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-zoom-and-google-meet-scams-install-teramind-a-technical-deep-dive",
             "relatedResources": [
                 {
                     "label": "Zero-Day Detection Guide",
@@ -149,51 +44,71 @@ const websiteContent = {
         },
         {
             "date": "Feb 26 2026",
-            "headline": "DDoS Attack via CAPTCHA: Blogger Silenced",
-            "title": "Internet Archive Service Allegedly DDoSes Finnish Blogger",
-            "content": "A curious Finnish blogger faced a DDoS attack allegedly orchestrated by an internet archiving service operator using their CAPTCHA page. The attack was part of a larger effort to silence the blogger, which included threats of creating AI-generated pornography. This unusual method highlights the creative yet malicious use of everyday internet tools in cyberattacks. The incident underscores the need for robust defenses against DDoS attacks and the potential misuse of AI technologies. Security professionals should review their DDoS mitigation strategies to prevent similar incidents.",
+            "headline": "FinTech Firm Sues SonicWall Over Breach Liability",
+            "title": "Marquis v. SonicWall Lawsuit Highlights Third-Party Breach Responsibility",
+            "content": "The recent lawsuit filed by FinTech company Marquis against SonicWall underscores the complex issue of liability when breaches occur through third-party vendors. Marquis claims that a breach through SonicWall&#x27;s firewall led to significant data loss, raising questions about the responsibility of security providers in such incidents. This case could set a precedent for how liability is determined in third-party breaches, impacting contractual obligations and risk management strategies. Organizations are advised to carefully evaluate their third-party security agreements and ensure comprehensive incident response plans are in place. The outcome of this lawsuit could influence future cybersecurity litigation and vendor relationships.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/marquis-sonicwall-lawsuit-breach-blame-game",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Cisco SD-WAN Zero-Day Exploited for 3 Years",
+            "title": "Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited by Sophisticated Actor",
+            "content": "A severe zero-day vulnerability, CVE-2026-20127, in Cisco&#x27;s SD-WAN software has been actively exploited for three years by an unidentified but advanced threat actor. This flaw allows attackers to execute arbitrary code and gain unauthorized access to affected systems, posing a significant risk to organizations relying on Cisco&#x27;s infrastructure. The long-term exploitation of this vulnerability underscores the importance of timely patching and vulnerability management. Cisco users are urged to apply available patches immediately and review their security policies to prevent future incidents. This case highlights the ongoing threat of zero-day vulnerabilities and the need for vigilant cybersecurity practices.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/cisco-sd-wan-zero-day-exploitation-3-years",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Insider Threat Costs Surge 20%—AI Worsens Risk",
+            "title": "Insider Security Incidents Cost Organizations $19.5M Annually, AI Exacerbates Risk",
+            "content": "A new report reveals a 20% increase in the cost of insider security incidents over the past two years, with organizations facing an average of $19.5 million annually in damages. The rising threat is compounded by the use of artificial intelligence (AI), which can amplify the impact of insider attacks by automating data exfiltration and other malicious activities. This trend highlights the critical need for robust insider threat programs and continuous monitoring of employee activities. Organizations should invest in AI-driven security solutions that can detect and mitigate insider threats in real-time. Awareness and training programs are also essential to reducing the risk posed by internal actors.",
             "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-456/",
+            "sourceUrl": "https://www.fortra.com/blog/your-staff-are-your-biggest-security-risk-ai-making-it-worse",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Steaelite RAT: Dual Threat of Data Theft and Ransomware",
-            "title": "Steaelite RAT Enables Data Theft and Ransomware from One Pane",
-            "content": "The newly discovered Steaelite remote access trojan (RAT) combines data theft and ransomware management capabilities in a single tool. This RAT targets Windows systems, allowing threat actors to conduct comprehensive attacks from a unified interface. Researchers warn that the integration of AI into such tools increases their effectiveness and accessibility to less-skilled attackers. The emergence of Steaelite reflects a growing trend of multipurpose malware, posing significant risks to organizations. Security teams should enhance their endpoint protection and monitoring to detect and mitigate these threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4137527/steaelite-rat-combines-data-theft-and-ransomware-management-capability-in-one-tool.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
                 },
                 {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
+                    "label": "Insider Threat Detection",
+                    "url": "/guides/insider-threat-detection.html",
+                    "icon": "fa-user-secret"
                 }
             ]
         },
         {
             "date": "Feb 26 2026",
-            "headline": "ChatGPT Used in Chinese Influence Campaign Against Japan",
-            "title": "Chinese Police Exploit ChatGPT to Smear Japan PM Takaichi",
-            "content": "A Chinese keyboard warrior inadvertently revealed a politically motivated campaign using ChatGPT to discredit Japan&#x27;s Prime Minister Takaichi. The campaign involved generating and disseminating false narratives to influence public opinion. This incident highlights the misuse of AI language models in state-sponsored influence operations. As AI tools become more sophisticated, their potential for manipulation grows, posing challenges for information integrity. Organizations and governments must develop strategies to counteract AI-driven disinformation campaigns and protect their reputations.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-police-chatgpt-smear-japan-pm-takaichi",
+            "headline": "Europol&#x27;s Project Compass Nabs 30 Cybercriminals",
+            "title": "Project Compass: Europol&#x27;s Strategy Against Cybercrime Network &quot;The Com&quot;",
+            "content": "Europol&#x27;s Project Compass has successfully led to the arrest of 30 individuals involved in the cybercrime network known as &quot;The Com&quot; over the past year. This initiative highlights the power of international law enforcement collaboration in dismantling sophisticated cybercriminal organizations. Project Compass employs advanced investigative techniques and intelligence sharing to track and apprehend cybercriminals across borders. The success of this operation demonstrates the effectiveness of coordinated global efforts in combating cybercrime. Law enforcement agencies are encouraged to continue fostering international partnerships to address the growing threat posed by transnational cybercriminal networks.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/project-compass-the-com-europol/",
             "relatedResources": [
                 {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
         },
@@ -224,149 +139,99 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 26 2026",
-            "headline": "Burger King AI Monitors Politeness—Employee Interactions Under Scrutiny",
-            "title": "Burger King Launches AI Chatbot to Evaluate Employee-Customer Interactions",
-            "content": "Burger King is deploying an AI chatbot named &quot;Patty&quot; in employee headsets to assist with meal preparation and monitor interactions with customers. As part of the BK Assistant platform, Patty will assess whether employees use courteous language such as &quot;please&quot; and &quot;thank you.&quot; This initiative reflects a growing trend in the fast-food industry to integrate AI for operational efficiency and customer service improvement. While enhancing service quality, this move raises potential privacy concerns among employees regarding constant monitoring. Burger King aims to balance technological advancement with employee privacy by maintaining transparency about data usage.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/884911/burger-king-ai-assistant-patty",
-            "relatedResources": []
+            "date": "Feb 27 2026",
+            "headline": "Block Slashes 40% Workforce—AI Efficiencies Drive Cuts",
+            "title": "Jack Dorsey’s Block Lays Off 4,000+ Staff Due to AI Advancements",
+            "content": "Block, the company led by Jack Dorsey and parent to Square and Cash App, has announced a significant workforce reduction, cutting 40% of its staff, which equates to over 4,000 employees. The layoffs are attributed to efficiencies gained through AI technologies, particularly in its open-source AI project Goose. This move highlights a growing trend in the tech industry where AI is increasingly being leveraged to streamline operations, resulting in reduced human labor needs. The impact of these layoffs will be felt across Block&#x27;s various subsidiaries, potentially affecting service delivery and innovation pace. Companies should evaluate the balance between AI integration and workforce management to avoid similar disruptions.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/jack-dorseys-block-cuts-40-of-staff-4-000-people-and-yes-its-because-of-ai",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         },
         {
-            "date": "Feb 26 2026",
-            "headline": "AI Chatbots Explore BDSM—Community Divided on Tech&#x27;s Role",
-            "title": "BDSM Enthusiasts Turn to AI Chatbots for Fantasy Exploration",
-            "content": "The use of AI chatbots for exploring BDSM fantasies is on the rise, with enthusiasts leveraging technology for personalized experiences. However, this trend has sparked debate within the BDSM community, with some members viewing it as a departure from traditional practices. AI chatbots offer a safe environment for users to explore fantasies without the complexities of human interactions. Despite this, purists argue that AI cannot replicate the nuanced dynamics of BDSM relationships. This development highlights the broader societal shift towards digital intimacy and the evolving role of AI in personal exploration.",
+            "date": "Feb 27 2026",
+            "headline": "Google’s Nano Banana 2—AI Image Editing Reimagined",
+            "title": "Hands-On with Google’s Nano Banana 2: AI Image Generator Review",
+            "content": "Google has unveiled Nano Banana 2, the latest iteration of its AI-powered image editing tool. This advanced model pushes the boundaries of photo realism, though it occasionally produces surreal results. Designed to enhance and transform images with precision, Nano Banana 2 is a testament to Google&#x27;s continued innovation in AI image processing. Users, particularly in creative industries, can expect enhanced capabilities for editing and generating images. However, they should remain aware of the model’s occasional unpredictability in output. Staying updated with Google&#x27;s ongoing developments in AI tools is crucial for leveraging these advancements effectively.",
             "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/whos-your-daddy-a-chatbot/",
+            "sourceUrl": "https://www.wired.com/story/google-nano-banana-2-ai-image-generator-hands-on/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Dorsey Halves Block’s Workforce—Signals Industry-Wide Shift",
+            "title": "Jack Dorsey Halves Block’s Workforce, Warns of Wider Industry Impact",
+            "content": "In a bold move, Jack Dorsey has reduced Block&#x27;s workforce by 50%, a decision influenced by his admiration for Elon Musk’s operational strategies. This drastic reduction is part of a broader trend where AI efficiencies are reshaping workforce dynamics across the tech sector. The decision is poised to ripple through the industry, prompting other companies to reconsider their staffing models in light of AI-driven productivity gains. Tech leaders should prepare for potential workforce adjustments as AI continues to evolve and influence business operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/26/jack-dorsey-block-layoffs-4000-halved-employees-your-company-is-next/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Anthropic Defies Pentagon—Refuses AI Access Demands",
+            "title": "Anthropic Rejects Pentagon’s Terms on Lethal AI and Surveillance",
+            "content": "Anthropic has taken a firm stand against the Pentagon, refusing to grant unrestricted access to its AI technologies. This decision comes just before a critical deadline set by the Department of Defense, amidst a backdrop of intense public and private negotiations. Anthropic’s refusal underscores the ethical concerns surrounding the use of AI for military applications, particularly in lethal autonomous weapons and mass surveillance. The standoff highlights the ongoing debate over AI governance and ethical use, urging tech companies to define clear boundaries in their collaborations with government entities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/885773/anthropic-department-of-defense-dod-pentagon-refusal-terms-hegseth-dario-amodei",
             "relatedResources": []
         },
         {
             "date": "Feb 26 2026",
-            "headline": "Google Absorbs Intrinsic—Focus Shifts to Physical AI",
-            "title": "Google Integrates Intrinsic to Enhance Physical AI Capabilities",
-            "content": "Google is integrating Intrinsic, Alphabet&#x27;s AI robotics project, into its core operations after five years as an independent entity. This strategic shift underscores Google&#x27;s commitment to advancing physical AI, moving experimental projects closer to its main business. Intrinsic, known for its &quot;moonshot&quot; initiatives, will now contribute to Google&#x27;s broader efforts in robotics and AI development. This consolidation reflects a trend among tech giants to streamline AI research and development for more cohesive innovation. The move is expected to accelerate Google&#x27;s progress in creating AI systems that can interact with the physical world.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/885113/google-swallows-ai-robotics-moonshot-intrinsic",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Alibaba&#x27;s Qwen3.5 Models—Local Computers Achieve Sonnet 4.5 Performance",
-            "title": "Alibaba Launches Qwen3.5-Medium Models with Advanced Capabilities",
-            "content": "Alibaba&#x27;s Qwen AI team has unveiled the Qwen3.5 Medium Model series, featuring four new large language models (LLMs) with enhanced capabilities. These models support agentic tool calling and offer Sonnet 4.5 performance on local computers, making them accessible for enterprise use. Three of the models are available commercially, providing businesses with advanced AI tools for various applications. This release signifies Alibaba&#x27;s continued leadership in AI innovation and its commitment to making powerful AI solutions more widely available. Enterprises can leverage these models to enhance their AI-driven operations and solutions.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "MoEs in Transformers—Boosting AI Model Efficiency",
-            "title": "Mixture of Experts (MoEs) Enhance Transformer Model Efficiency",
-            "content": "The Mixture of Experts (MoEs) approach is gaining traction in improving the efficiency of transformer models. MoEs dynamically allocate computational resources, allowing models to scale efficiently without a proportional increase in computational cost. This technique enhances model performance by activating only relevant parts of the model for specific tasks, reducing unnecessary processing. As AI models grow in complexity, MoEs offer a promising solution to manage resource demands while maintaining high accuracy. Developers and researchers are encouraged to explore MoEs to optimize their AI models for better performance and efficiency.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/moe-transformers",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 25 2026",
-            "headline": "Trump Secures Tech Power Deals—Rate Payer Protection Pledge",
-            "title": "Tech Firms to Sign Power Supply Deals Amid Rising Costs",
-            "content": "President Donald Trump announced upcoming agreements with major tech companies to manage their own power supplies, aiming to address public concerns over rising electricity costs. During his State of the Union address, Trump revealed the &quot;rate payer protection pledge,&quot; which seeks to alleviate financial burdens on consumers. These deals are expected to be finalized next week, marking a significant shift in how tech companies manage energy consumption. As energy demands increase, this initiative represents a proactive approach to sustainability and cost management in the tech industry.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/science/884191/ai-data-center-energy-state-of-the-union-trump",
+            "headline": "Anthropic vs. Pentagon—Ethics Clash Over AI Use",
+            "title": "Pentagon Faces Resistance from Anthropic on AI Military Applications",
+            "content": "The Pentagon&#x27;s push for access to Anthropic&#x27;s AI systems has hit a roadblock, with the company standing firm against demands that clash with its ethical stance. This conflict is part of a broader narrative involving the use of AI in military contexts, where ethical considerations often collide with strategic interests. The debate has garnered significant attention, reflecting wider societal concerns about AI&#x27;s role in warfare and surveillance. As this situation unfolds, tech professionals must stay informed about the evolving ethical frameworks guiding AI development and deployment.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-pentagon-anthropic-agentic-mimetic-trump-state-of-the-union/",
             "relatedResources": []
         },
         {
-            "date": "Feb 25 2026",
-            "headline": "Alphabet&#x27;s Intrinsic Merges with Google—Robotics Focus Intensifies",
-            "title": "Intrinsic Joins Google to Boost Robotics and AI Integration",
-            "content": "Alphabet&#x27;s robotics software company, Intrinsic, is transitioning under Google&#x27;s umbrella after five years as an independent entity. This move signals Google&#x27;s intensified focus on integrating robotics with its AI capabilities. By consolidating resources, Google aims to accelerate innovation in AI-driven robotics solutions. Intrinsic&#x27;s expertise in robotics software will enhance Google&#x27;s ability to develop technologies that interact seamlessly with the physical world. This merger reflects a broader industry trend of consolidating AI and robotics efforts to foster more robust technological advancements.",
+            "date": "Feb 26 2026",
+            "headline": "Anthropic CEO Rejects Pentagon’s AI Demands—Ethical Stand",
+            "title": "Anthropic CEO Dario Amodei Refuses Pentagon’s AI Access Request",
+            "content": "Dario Amodei, CEO of Anthropic, has publicly rejected the Pentagon’s demands for unrestricted access to the company’s AI systems. This decision, announced ahead of a looming deadline, reflects Anthropic&#x27;s commitment to ethical AI development, particularly concerning military applications. The stand-off is a pivotal moment in the discourse on AI ethics, highlighting the tension between technological advancement and moral responsibility. Tech leaders should consider this case as a reference point for navigating similar ethical dilemmas in AI collaborations with government agencies.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/25/alphabet-owned-robotics-software-company-intrinsic-joins-google/",
+            "sourceUrl": "https://techcrunch.com/2026/02/26/anthropic-ceo-stands-firm-as-pentagon-deadline-looms/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 26 2026",
+            "headline": "Microsoft’s Copilot Tasks—AI Automates Busywork in the Cloud",
+            "title": "Microsoft Introduces Copilot Tasks AI for Efficient Background Processing",
+            "content": "Microsoft has introduced Copilot Tasks, an AI system designed to handle routine tasks by utilizing cloud-based computing resources. This innovation aims to offload busywork from users’ devices, streamlining productivity by managing various tasks in the background. By leveraging its own cloud infrastructure, Copilot Tasks can perform complex operations without burdening local systems, offering a seamless user experience. Professionals in tech and business sectors can benefit from this tool, enhancing efficiency in daily operations. Staying abreast of developments in AI-driven productivity tools is essential for maximizing organizational effectiveness.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "AT&amp;T Slashes AI Costs by 90%—8B Tokens Daily",
-            "title": "AT&amp;T Overhauls AI Orchestration to Cut Costs Amid Token Surge",
-            "content": "AT&amp;T has dramatically reduced its AI operational costs by 90% after rethinking its approach to handling an average of 8 billion tokens daily. Chief Data Officer Andy Markus and his team identified inefficiencies in funneling all data through large reasoning models, which proved neither feasible nor economical. By optimizing AI orchestration, AT&amp;T managed to address the massive scale problem, ensuring more efficient processing and resource allocation. This strategic shift highlights the growing need for companies to balance AI capabilities with cost-effectiveness as token usage continues to soar industry-wide. Professionals should consider similar evaluations of their AI strategies to manage costs effectively.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/8-billion-tokens-a-day-forced-at-and-t-to-rethink-ai-orchestration-and-cut",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Incident Response Automation",
-                    "url": "/guides/incident-response-automation.html",
-                    "icon": "fa-bolt"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Benioff on AI Threat: &quot;Not Our First SaaSpocalypse&quot;",
-            "title": "Salesforce CEO Marc Benioff Dismisses AI Threat to Business Model",
-            "content": "Salesforce CEO Marc Benioff has downplayed concerns about AI disrupting the company&#x27;s business model, following a strong year-end earnings report. Despite industry fears of a &quot;SaaSpocalypse,&quot; Benioff emphasized Salesforce&#x27;s resilience and adaptability in the face of technological shifts. The company has historically navigated market changes, and its current AI strategy aims to integrate new technologies without undermining its core offerings. This stance reassures stakeholders and highlights the importance of strategic foresight in the rapidly evolving tech landscape. Industry leaders should remain vigilant but not alarmist about AI&#x27;s potential impact on traditional business models.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/25/salesforce-ceo-marc-benioff-this-isnt-our-first-saaspocalypse/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Gushwork Secures $9M—AI Search for Customer Leads Gains Traction",
-            "title": "Gushwork Raises $9 Million to Enhance AI-Powered Customer Lead Search",
-            "content": "Gushwork has successfully raised $9 million in a seed funding round led by SIG and Lightspeed, capitalizing on the growing demand for AI-driven customer lead generation. The startup has leveraged AI search tools like ChatGPT to gain early customer traction, demonstrating the effectiveness of AI in streamlining and enhancing sales processes. By utilizing advanced search capabilities, Gushwork aims to revolutionize how businesses identify and engage potential customers, offering a competitive edge in lead generation. This development underscores the increasing reliance on AI technologies in sales and marketing, prompting businesses to explore AI solutions for improved efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
                 }
             ]
         }
@@ -463,28 +328,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25108",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-49113",
-            "dateAdded": "Feb 20, 2026",
-            "vendor": "Roundcube Webmail",
-            "description": "RoundCube Webmail contains a deserialization of untrusted data vulnerability that allows remote code execution by authenticated users because the _from parameter in a URL is not validated in program/a",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49113",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-68461",
-            "dateAdded": "Feb 20, 2026",
-            "vendor": "Roundcube Webmail",
-            "description": "RoundCube Webmail contains a cross-site scripting vulnerability via the animate tag in an SVG document.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68461",
             "isZeroDay": false
         }
     ],
