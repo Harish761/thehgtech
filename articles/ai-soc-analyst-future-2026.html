@@ -82,6 +82,15 @@
             --code-bg: #111;
         }
 
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -150,31 +159,31 @@
             font-size: 1.6rem;
             margin-top: 2.5rem;
             margin-bottom: 1rem;
-            color: #fff;
+            color: var(--text-primary);
         }
 
         .article-content h4 {
             font-size: 1.2rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
-            color: #ccc;
+            color: var(--text-secondary);
         }
 
         .article-content p {
             margin-bottom: 1.5rem;
             font-size: 1.15rem;
-            color: #dfdfdf;
+            color: var(--text-secondary);
         }
 
         .article-content strong {
-            color: #fff;
+            color: var(--text-primary);
         }
 
         .article-content ul,
         .article-content ol {
             margin-bottom: 2rem;
             padding-left: 2rem;
-            color: #dfdfdf;
+            color: var(--text-secondary);
             font-size: 1.15rem;
         }
 
@@ -206,6 +215,13 @@
             margin-top: 0;
             color: var(--accent-cyan);
             font-size: 1.3rem;
+        }
+
+        .technical-box p,
+        .warning-box p,
+        .success-box p,
+        .editorial-box p {
+            color: var(--text-secondary);
         }
 
         .success-box {
@@ -261,7 +277,7 @@
             font-style: italic;
             font-size: 1.35rem;
             line-height: 1.6;
-            color: #fff;
+            color: var(--text-primary);
         }
 
         pre {
@@ -300,7 +316,15 @@
         }
 
         td {
-            color: #dfdfdf;
+            color: var(--text-secondary);
+        }
+
+        .article-footer p {
+            color: var(--text-secondary);
+        }
+
+        .article-footer strong {
+            color: var(--text-primary);
         }
 
         @media (max-width: 768px) {
@@ -508,7 +532,8 @@
                     <p><strong>Position:</strong> AI will not replace L1 SOC analysts. It will replace L1 SOC analysts
                         <em>who refuse to evolve</em>. But the industry is dangerously under-discussing the failure
                         modes of AI-driven triage — and management teams are over-indexing on cost savings while
-                        under-investing in human oversight.</p>
+                        under-investing in human oversight.
+                    </p>
                     <p><strong>Confidence Level:</strong> High — based on Gartner predictions (2025-2028), ISC2 2025
                         Workforce Study, CrowdStrike 2026 Global Threat Report, Swimlane SOC predictions, Sophos burnout
                         survey (2024), and vendor documentation from Microsoft, Google, and CrowdStrike.</p>
@@ -548,7 +573,8 @@
 
                 <p>There is a saying that has been repeated so often in cybersecurity that it has become wallpaper:
                     <strong>"The defender has to be right 100% of the time. The attacker only has to be right
-                        once."</strong></p>
+                        once."</strong>
+                </p>
 
                 <p>This asymmetry has defined security operations since the first firewall was deployed. It is the
                     reason SOC analysts exist — humans who sit in front of dashboards, watching alerts scroll by, making
@@ -711,7 +737,8 @@
                 <ul>
                     <li><strong>Swimlane predicts</strong> that AI will resolve or escalate over 90% of Tier 1 alerts by
                         2026 — handling triage, initial enrichment, categorization, and some containment autonomously.
-                        <em>(Source: Swimlane, "5 Security Predictions That Will Redefine Your SOC in 2026")</em></li>
+                        <em>(Source: Swimlane, "5 Security Predictions That Will Redefine Your SOC in 2026")</em>
+                    </li>
                     <li><strong>Gartner predicts</strong> that by 2028, AI will automate 50% of L1 SOC analyst
                         responsibilities. <em>(Source: Gartner, via BuiltIn.com)</em></li>
                     <li><strong>Gartner also predicts</strong> that by 2028, multi-agent AI use in threat detection and
@@ -789,12 +816,14 @@
                         <a href="https://www.techinformed.com/" target="_blank"
                             rel="noopener noreferrer">TechInformed</a> found that AI-generated code frequently
                         introduces vulnerabilities that developers — particularly junior developers — fail to catch
-                        during review.</li>
+                        during review.
+                    </li>
                     <li><strong>Anthropic's Claude hallucinated credentials:</strong> In a September 2025 AI cyber
                         espionage research exercise by Anthropic, their own Claude model occasionally hallucinated
                         credentials or falsely claimed to have extracted secrets that were publicly available.
                         <em>(Source: <a href="https://www.anthropic.com/" target="_blank"
-                                rel="noopener noreferrer">Anthropic</a>)</em></li>
+                                rel="noopener noreferrer">Anthropic</a>)</em>
+                    </li>
                 </ul>
 
                 <p>If AI hallucinates package names, code, and credentials, it is reasonable to expect that it will also
@@ -845,7 +874,8 @@ sc create "WinDefendUpdate" binPath= "C:\Windows\Temp\payload.exe" start= auto
                         <strong>Note:</strong> This is an illustrative example demonstrating a common adversarial
                         technique, not sourced from a specific incident. The point is that AI pattern-matching can be
                         defeated by inputs designed to <em>look</em> normal — and the attacker only needs to find one
-                        blind spot.</p>
+                        blind spot.
+                    </p>
                 </div>
 
                 <p>CrowdStrike's 2026 report also documented that <strong>82% of detected intrusions in 2025 were
@@ -886,7 +916,8 @@ sc create "WinDefendUpdate" binPath= "C:\Windows\Temp\payload.exe" start= auto
 
                 <p>If you are a Tier 1 SOC analyst reading this, here is the actionable part. The role is not dying — it
                     is transforming. The analysts who will thrive are the ones who position themselves as the
-                    <strong>human oversight layer that AI cannot replace</strong>.</p>
+                    <strong>human oversight layer that AI cannot replace</strong>.
+                </p>
 
                 <div class="success-box">
                     <h3><i class="fas fa-shield-alt"></i> Skills to Invest In (2026-2028)</h3>
@@ -989,7 +1020,8 @@ sc create "WinDefendUpdate" binPath= "C:\Windows\Temp\payload.exe" start= auto
                         Frequently Asked Questions (FAQ)</h2>
 
                     <div class="faq-item" style="margin-bottom: 1.5rem;">
-                        <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem;">Will AI replace SOC analysts?
+                        <h4 style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 0.5rem;">Will AI
+                            replace SOC analysts?
                         </h4>
                         <p style="color: var(--text-secondary); margin-top: 0;">No. Gartner predicts AI will automate
                             50% of L1 SOC analyst <em>tasks</em> by 2028 — but explicitly states this will "primarily
@@ -1002,7 +1034,8 @@ sc create "WinDefendUpdate" binPath= "C:\Windows\Temp\payload.exe" start= auto
                     </div>
 
                     <div class="faq-item" style="margin-bottom: 1.5rem;">
-                        <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem;">What is the biggest risk of
+                        <h4 style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 0.5rem;">What is the
+                            biggest risk of
                             AI in the SOC?</h4>
                         <p style="color: var(--text-secondary); margin-top: 0;">AI hallucination — specifically, false
                             negatives where a genuine threat is classified as benign and auto-closed. 83% of CISOs
@@ -1013,7 +1046,8 @@ sc create "WinDefendUpdate" binPath= "C:\Windows\Temp\payload.exe" start= auto
                     </div>
 
                     <div class="faq-item" style="margin-bottom: 1.5rem;">
-                        <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem;">How much do SOC analysts make
+                        <h4 style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 0.5rem;">How much do
+                            SOC analysts make
                             in the US?</h4>
                         <p style="color: var(--text-secondary); margin-top: 0;">The average SOC analyst salary in the US
                             ranges from $77,000 (Salary.com) to $102,000 (Indeed) as of February 2026. Entry-level
@@ -1024,7 +1058,8 @@ sc create "WinDefendUpdate" binPath= "C:\Windows\Temp\payload.exe" start= auto
                     </div>
 
                     <div class="faq-item">
-                        <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.5rem;">What should L1 SOC analysts
+                        <h4 style="color: var(--text-primary); font-size: 1.2rem; margin-bottom: 0.5rem;">What should L1
+                            SOC analysts
                             learn to stay relevant?</h4>
                         <p style="color: var(--text-secondary); margin-top: 0;">Focus on threat hunting, detection
                             engineering (Sigma/YARA rules), AI prompt engineering and oversight, incident response, and
@@ -1038,7 +1073,7 @@ sc create "WinDefendUpdate" binPath= "C:\Windows\Temp\payload.exe" start= auto
                 <div class="technical-box" style="margin-top: 4rem;">
                     <h3 style="color: var(--accent-cyan); font-size: 1.4rem; margin-bottom: 1rem;"><i
                             class="fas fa-book-reader"></i> Related Reading & Next Steps</h3>
-                    <ul style="color: #fff; line-height: 1.8; font-size: 1.1rem; padding-left: 1.5rem;">
+                    <ul style="color: var(--text-primary); line-height: 1.8; font-size: 1.1rem; padding-left: 1.5rem;">
                         <li style="margin-bottom: 0.5rem;"><strong>Supply Chain Risk:</strong> AI's impact on the SOC
                             parallels the cybersecurity gaps we mapped in the semiconductor industry. See: <a
                                 href="/articles/semiconductor-ransomware-chips-act-2026.html"
