@@ -5,6 +5,98 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 27 2026",
+            "headline": "Top Cybersecurity Role Offers Under $175K—Market Shock",
+            "title": "Government Cybersecurity Job Advertised at Below-Market Salary Sparks Debate",
+            "content": "A recent job advertisement for a prominent government cybersecurity role has raised eyebrows by offering a salary of less than $175,000. This figure is notably below the market rate for such high-level positions, prompting discussions about the government&#x27;s understanding of current cybersecurity demands. The discrepancy is highlighted by an ISC2 survey indicating that 33% of organizations are struggling to fill cybersecurity roles. The role&#x27;s compensation appears misaligned with the critical need for skilled professionals in a landscape increasingly threatened by cyberattacks. Cybersecurity experts warn that undervaluing these roles could hinder efforts to attract the necessary talent to protect national interests.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4138526/one-of-the-most-influential-cybersecurity-roles-will-pay-under-175000.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "900 FreePBX Systems Compromised—Web Shells Exploited",
+            "title": "Sangoma FreePBX Instances Hit by Post-Authentication Vulnerability Exploits",
+            "content": "Security researchers have identified a widespread attack affecting 900 Sangoma FreePBX instances, leveraging a post-authentication command injection vulnerability in the endpoint manager&#x27;s interface. Attackers deployed web shells to gain unauthorized access, potentially compromising sensitive communications. FreePBX, a widely used open-source PBX system, is critical for many organizations&#x27; telephony infrastructure. The breach underscores the importance of timely patch management and monitoring for unusual activity. Administrators are advised to review their systems for signs of compromise and apply necessary updates to mitigate further risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/900-sangoma-freepbx-instances-infected-with-web-shells/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "ScarCruft Breaches Air-Gapped Networks—Zoho WorkDrive Exploited",
+            "title": "ScarCruft Uses Advanced Tools to Compromise Air-Gapped Systems",
+            "content": "ScarCruft, a North Korean threat actor, has been linked to a sophisticated campaign using Zoho WorkDrive for command-and-control communications and USB malware to infiltrate air-gapped networks. This new toolkit allows ScarCruft to execute attacks on isolated systems, posing significant risks to critical infrastructure. The use of legitimate services like Zoho for malicious purposes highlights the evolving tactics of cyber adversaries. Organizations with sensitive environments should enhance their security protocols, focusing on removable media controls and monitoring for unusual network activity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/scarcruft-uses-zoho-workdrive-and-usb.html",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Chilean Carding Operator Extradited—26,000 Cards Trafficked",
+            "title": "US Extradites Chilean Suspect in Major Carding Operation",
+            "content": "A 24-year-old Chilean national has been extradited to the United States, accused of operating a carding shop that trafficked over 26,000 credit and debit cards from a single brand. This extradition marks a significant step in international cooperation against cybercrime. The suspect allegedly facilitated the sale of stolen card data, impacting financial institutions and individuals globally. Law enforcement agencies stress the importance of cross-border collaboration to dismantle such operations. Financial institutions are urged to strengthen their fraud detection systems to protect against similar threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chilean-carding-shop-operator-extradited-to-us/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Anthropic vs. Pentagon—AI Safeguard Standoff Intensifies",
+            "title": "Anthropic Challenges Pentagon Over AI Use in Surveillance and Weapons",
+            "content": "Anthropic, an AI research company, is in a standoff with the Pentagon over assurances that its AI model, Claude, will not be used for mass surveillance or autonomous weapons. As the dispute nears a critical deadline, Anthropic seeks to prevent the misuse of its technology in ways that could violate ethical standards. The situation highlights the ongoing tension between AI innovation and national security concerns. Tech companies are increasingly pushed to define the ethical boundaries of AI deployment. Stakeholders are watching closely as this case could set precedents for future AI governance.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/anthropic-refuses-to-bend-to-pentagon-on-ai-safeguards-as-dispute-nears-deadline/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Public Google API Keys Risk Gemini AI Exposure",
+            "title": "Researchers Warn of Gemini AI Data Exposure via Google API Keys",
+            "content": "Researchers have discovered that public Google API keys, previously considered harmless, can now be exploited to access sensitive data from Gemini AI systems. This vulnerability raises concerns about data security practices and the potential for unauthorized access to proprietary AI models. Organizations using Google APIs are advised to review their key management policies and restrict access to sensitive resources. This finding underscores the need for stringent API security measures as AI systems become integral to business operations.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/public-google-api-keys-can-be-used-to-expose-gemini-ai-data",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "AI-Powered Fake ID Site Operator Pleads Guilty",
+            "title": "Ukrainian Man Admits to Running AI-Driven Fake ID Service",
+            "content": "A Ukrainian man has pleaded guilty to operating OnlyFake, an AI-powered website that generated and sold over 10,000 fake identification documents worldwide. The site utilized advanced AI techniques to create realistic IDs, posing significant challenges to law enforcement and identity verification processes. This case highlights the growing misuse of AI technologies in facilitating cybercrime. Authorities emphasize the need for enhanced digital identity safeguards and international cooperation to combat such illicit activities. Businesses and individuals are urged to be vigilant against identity fraud schemes.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-man-pleads-guilty-to-running-ai-powered-fake-id-site/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 27 2026",
             "headline": "Leadership Shakeup at CISA—Andersen Steps In",
             "title": "Madhu Gottumukkala Replaced by Kiersten Todt Andersen as Acting CISA Director",
             "content": "In a significant leadership change, Kiersten Todt Andersen has been appointed as the acting director of the Cybersecurity and Infrastructure Security Agency (CISA), replacing Madhu Gottumukkala. The transition follows mounting criticisms of CISA&#x27;s performance during the first year of the Trump administration, with Gottumukkala&#x27;s leadership under scrutiny. This move is expected to bring a new strategic direction to the agency as it navigates complex cybersecurity challenges. CISA, a critical component of national cybersecurity defense, has faced increased pressure to enhance its effectiveness amidst rising cyber threats. Stakeholders are closely monitoring how Andersen will address these issues and bolster CISA&#x27;s capabilities.",
@@ -24,91 +116,6 @@ const websiteContent = {
                     "label": "MITRE ATT&CK Mapping",
                     "url": "/guides/mitre-attack-mapping.html",
                     "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Fake Zoom, Google Meet Scams Install Teramind",
-            "title": "Attackers Leverage Fake Zoom and Google Meet to Deploy Teramind",
-            "content": "Cybercriminals are exploiting the popularity of video conferencing platforms like Zoom and Google Meet to distribute Teramind, a legitimate employee monitoring tool, through phishing scams. These attacks do not rely on custom malware but instead use trusted brand names to gain user trust and deploy Teramind without detection. Victims unknowingly install the software, which is then used to monitor and exfiltrate sensitive data. This tactic highlights the importance of verifying software sources and maintaining robust email security measures. Organizations should educate employees on recognizing phishing attempts and ensure their systems are protected against unauthorized installations.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-zoom-and-google-meet-scams-install-teramind-a-technical-deep-dive",
-            "relatedResources": [
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "FinTech Firm Sues SonicWall Over Breach Liability",
-            "title": "Marquis v. SonicWall Lawsuit Highlights Third-Party Breach Responsibility",
-            "content": "The recent lawsuit filed by FinTech company Marquis against SonicWall underscores the complex issue of liability when breaches occur through third-party vendors. Marquis claims that a breach through SonicWall&#x27;s firewall led to significant data loss, raising questions about the responsibility of security providers in such incidents. This case could set a precedent for how liability is determined in third-party breaches, impacting contractual obligations and risk management strategies. Organizations are advised to carefully evaluate their third-party security agreements and ensure comprehensive incident response plans are in place. The outcome of this lawsuit could influence future cybersecurity litigation and vendor relationships.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cloud-security/marquis-sonicwall-lawsuit-breach-blame-game",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Cisco SD-WAN Zero-Day Exploited for 3 Years",
-            "title": "Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited by Sophisticated Actor",
-            "content": "A severe zero-day vulnerability, CVE-2026-20127, in Cisco&#x27;s SD-WAN software has been actively exploited for three years by an unidentified but advanced threat actor. This flaw allows attackers to execute arbitrary code and gain unauthorized access to affected systems, posing a significant risk to organizations relying on Cisco&#x27;s infrastructure. The long-term exploitation of this vulnerability underscores the importance of timely patching and vulnerability management. Cisco users are urged to apply available patches immediately and review their security policies to prevent future incidents. This case highlights the ongoing threat of zero-day vulnerabilities and the need for vigilant cybersecurity practices.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/cisco-sd-wan-zero-day-exploitation-3-years",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Insider Threat Costs Surge 20%—AI Worsens Risk",
-            "title": "Insider Security Incidents Cost Organizations $19.5M Annually, AI Exacerbates Risk",
-            "content": "A new report reveals a 20% increase in the cost of insider security incidents over the past two years, with organizations facing an average of $19.5 million annually in damages. The rising threat is compounded by the use of artificial intelligence (AI), which can amplify the impact of insider attacks by automating data exfiltration and other malicious activities. This trend highlights the critical need for robust insider threat programs and continuous monitoring of employee activities. Organizations should invest in AI-driven security solutions that can detect and mitigate insider threats in real-time. Awareness and training programs are also essential to reducing the risk posed by internal actors.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.fortra.com/blog/your-staff-are-your-biggest-security-risk-ai-making-it-worse",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Insider Threat Detection",
-                    "url": "/guides/insider-threat-detection.html",
-                    "icon": "fa-user-secret"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Europol&#x27;s Project Compass Nabs 30 Cybercriminals",
-            "title": "Project Compass: Europol&#x27;s Strategy Against Cybercrime Network &quot;The Com&quot;",
-            "content": "Europol&#x27;s Project Compass has successfully led to the arrest of 30 individuals involved in the cybercrime network known as &quot;The Com&quot; over the past year. This initiative highlights the power of international law enforcement collaboration in dismantling sophisticated cybercriminal organizations. Project Compass employs advanced investigative techniques and intelligence sharing to track and apprehend cybercriminals across borders. The success of this operation demonstrates the effectiveness of coordinated global efforts in combating cybercrime. Law enforcement agencies are encouraged to continue fostering international partnerships to address the growing threat posed by transnational cybercriminal networks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/project-compass-the-com-europol/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
                 }
             ]
         },
@@ -140,6 +147,116 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Feb 27 2026",
+            "headline": "Finance Embraces Agentic AI—Boosts Workflow Efficiency",
+            "title": "Enhancing Trust in Agentic AI for Financial Workflows",
+            "content": "Enterprises have increasingly integrated agentic AI into finance workflows, focusing on customer support and back-office operations. These AI agents excel at retrieving information, but improving trust remains a priority. Over the past two years, technology leaders have accelerated the deployment of these systems to streamline operations and enhance productivity. The push for agentic AI adoption highlights the need for robust security and transparency to build confidence in AI-driven financial processes. Organizations must ensure that AI implementations are reliable and secure to maximize their potential benefits.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/upgrading-agentic-ai-for-finance-workflows/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Poor AI Integration—Threatening Business Foundations",
+            "title": "Ineffective AI Implementation Linked to Workforce Reductions",
+            "content": "Datatonic, a cloud data and AI consultancy, has identified poor implementation of human-AI collaboration as a key factor in workforce reductions. Organizations are struggling with productivity, competitiveness, and efficiency due to inadequate AI strategies. As enterprises enter the next phase of AI adoption, success hinges on effective integration and collaboration between humans and AI systems. Businesses must refine their AI approaches to prevent erosion of foundational business elements and ensure sustainable growth. Proper training and strategic deployment are essential to harness AI&#x27;s full potential.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-workflows-need-human-in-the-loop-say-datatonic/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Huxe App Offers Personalized Audio Summaries—Privacy Concerns Arise",
+            "title": "Huxe Delivers AI-Powered Daily Audio Summaries from Your Inbox",
+            "content": "Huxe, a new app, provides users with personalized, daily audio summaries by analyzing email inboxes and meeting calendars. While the app aims to reduce screen time and improve productivity, it raises privacy concerns due to the sensitive nature of accessed data. Users must weigh the convenience of streamlined information against potential privacy risks. As AI-driven personal assistants become more prevalent, ensuring robust data security and user consent is crucial. Individuals should carefully review privacy policies and permissions before using such applications.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/huxe-personalized-daily-audio-podcasts-powered-by-ai/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Banks Test Agentic AI—Revolutionizing Trade Surveillance",
+            "title": "Goldman Sachs and Deutsche Bank Explore Agentic AI for Trading",
+            "content": "Goldman Sachs and Deutsche Bank are piloting agentic AI systems for enhanced trade surveillance. Unlike traditional systems that rely on static alerts, these AI models analyze real-time patterns to flag potentially suspicious conduct. This innovative approach aims to improve detection of market manipulation and insider trading, offering a more dynamic and responsive solution. As financial institutions adopt these advanced technologies, the emphasis on ethical AI use and transparency becomes increasingly important. Firms should closely monitor AI performance and ensure compliance with regulatory standards.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/goldman-sachs-and-deutsche-bank-test-agentic-ai-for-trade-surveillance/",
+            "relatedResources": [
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "AI Reshapes Go—Altering Strategies of Top Players",
+            "title": "AI&#x27;s Influence on Professional Go Players&#x27; Strategic Thinking",
+            "content": "Artificial intelligence is transforming the strategic approach of top Go players, as observed at the Korea Baduk Association. The ancient game, revered in South Korea, is experiencing a shift as AI tools offer new insights and strategies. Players are incorporating AI-driven analysis to refine their tactics, enhancing their competitive edge. This evolution underscores the broader impact of AI on traditional disciplines, prompting players to adapt to innovative methodologies. As AI continues to influence various fields, understanding its implications on skill development becomes essential.",
+            "source": "Artificial intelligence – MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/02/27/1133624/ai-is-rewiring-how-the-worlds-best-go-players-think/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "ASML&#x27;s EUV Tools—Paving Way for Next-Gen AI Chips",
+            "title": "ASML&#x27;s High-NA EUV Tools Ready for AI Chip Mass Production",
+            "content": "ASML has announced that its high-numerical aperture (NA) extreme ultraviolet (EUV) lithography tools are ready for mass production, heralding a new era for AI chip development. These advanced tools are set to enable the creation of the next generation of AI chips, offering increased computational power and efficiency. The move marks a significant milestone for the semiconductor industry, with implications for AI capabilities across various sectors. Companies should prepare for the upcoming wave of AI advancements driven by these cutting-edge technologies.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/asml-high-na-euv-production-ready-ai-chips/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "OpenAI Partners with Amazon—Boosting AI Infrastructure on AWS",
+            "title": "OpenAI and Amazon Forge Strategic Partnership for AI Expansion",
+            "content": "OpenAI and Amazon have announced a strategic partnership to bring OpenAI&#x27;s Frontier platform to Amazon Web Services (AWS). This collaboration aims to expand AI infrastructure, offering custom models and enterprise AI agents to AWS customers. The partnership highlights the growing demand for scalable AI solutions and the importance of robust cloud platforms in supporting AI innovation. Businesses leveraging AWS can expect enhanced AI capabilities and streamlined integration with OpenAI&#x27;s advanced technologies. Organizations should explore opportunities to incorporate these offerings into their AI strategies.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/amazon-partnership",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
             "headline": "Block Slashes 40% Workforce—AI Efficiencies Drive Cuts",
             "title": "Jack Dorsey’s Block Lays Off 4,000+ Staff Due to AI Advancements",
             "content": "Block, the company led by Jack Dorsey and parent to Square and Cash App, has announced a significant workforce reduction, cutting 40% of its staff, which equates to over 4,000 employees. The layoffs are attributed to efficiencies gained through AI technologies, particularly in its open-source AI project Goose. This move highlights a growing trend in the tech industry where AI is increasingly being leveraged to streamline operations, resulting in reduced human labor needs. The impact of these layoffs will be felt across Block&#x27;s various subsidiaries, potentially affecting service delivery and innovation pace. Companies should evaluate the balance between AI integration and workforce management to avoid similar disruptions.",
@@ -166,68 +283,6 @@ const websiteContent = {
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
                 },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Dorsey Halves Block’s Workforce—Signals Industry-Wide Shift",
-            "title": "Jack Dorsey Halves Block’s Workforce, Warns of Wider Industry Impact",
-            "content": "In a bold move, Jack Dorsey has reduced Block&#x27;s workforce by 50%, a decision influenced by his admiration for Elon Musk’s operational strategies. This drastic reduction is part of a broader trend where AI efficiencies are reshaping workforce dynamics across the tech sector. The decision is poised to ripple through the industry, prompting other companies to reconsider their staffing models in light of AI-driven productivity gains. Tech leaders should prepare for potential workforce adjustments as AI continues to evolve and influence business operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/26/jack-dorsey-block-layoffs-4000-halved-employees-your-company-is-next/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Anthropic Defies Pentagon—Refuses AI Access Demands",
-            "title": "Anthropic Rejects Pentagon’s Terms on Lethal AI and Surveillance",
-            "content": "Anthropic has taken a firm stand against the Pentagon, refusing to grant unrestricted access to its AI technologies. This decision comes just before a critical deadline set by the Department of Defense, amidst a backdrop of intense public and private negotiations. Anthropic’s refusal underscores the ethical concerns surrounding the use of AI for military applications, particularly in lethal autonomous weapons and mass surveillance. The standoff highlights the ongoing debate over AI governance and ethical use, urging tech companies to define clear boundaries in their collaborations with government entities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/885773/anthropic-department-of-defense-dod-pentagon-refusal-terms-hegseth-dario-amodei",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Anthropic vs. Pentagon—Ethics Clash Over AI Use",
-            "title": "Pentagon Faces Resistance from Anthropic on AI Military Applications",
-            "content": "The Pentagon&#x27;s push for access to Anthropic&#x27;s AI systems has hit a roadblock, with the company standing firm against demands that clash with its ethical stance. This conflict is part of a broader narrative involving the use of AI in military contexts, where ethical considerations often collide with strategic interests. The debate has garnered significant attention, reflecting wider societal concerns about AI&#x27;s role in warfare and surveillance. As this situation unfolds, tech professionals must stay informed about the evolving ethical frameworks guiding AI development and deployment.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-pentagon-anthropic-agentic-mimetic-trump-state-of-the-union/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Anthropic CEO Rejects Pentagon’s AI Demands—Ethical Stand",
-            "title": "Anthropic CEO Dario Amodei Refuses Pentagon’s AI Access Request",
-            "content": "Dario Amodei, CEO of Anthropic, has publicly rejected the Pentagon’s demands for unrestricted access to the company’s AI systems. This decision, announced ahead of a looming deadline, reflects Anthropic&#x27;s commitment to ethical AI development, particularly concerning military applications. The stand-off is a pivotal moment in the discourse on AI ethics, highlighting the tension between technological advancement and moral responsibility. Tech leaders should consider this case as a reference point for navigating similar ethical dilemmas in AI collaborations with government agencies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/26/anthropic-ceo-stands-firm-as-pentagon-deadline-looms/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 26 2026",
-            "headline": "Microsoft’s Copilot Tasks—AI Automates Busywork in the Cloud",
-            "title": "Microsoft Introduces Copilot Tasks AI for Efficient Background Processing",
-            "content": "Microsoft has introduced Copilot Tasks, an AI system designed to handle routine tasks by utilizing cloud-based computing resources. This innovation aims to offload busywork from users’ devices, streamlining productivity by managing various tasks in the background. By leveraging its own cloud infrastructure, Copilot Tasks can perform complex operations without burdening local systems, offering a seamless user experience. Professionals in tech and business sectors can benefit from this tool, enhancing efficiency in daily operations. Staying abreast of developments in AI-driven productivity tools is essential for maximizing organizational effectiveness.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
-            "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
