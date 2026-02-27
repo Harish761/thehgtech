@@ -1,6 +1,24 @@
 {
   "articles": [
     {
+      "id": "ai-soc-analyst-future-2026",
+      "title": "The Future of L1 SOC Analysts After AI: Who Watches the Watchers?",
+      "date": "Feb 27, 2026",
+      "category": "SOC & AI",
+      "badge": "OPINION",
+      "excerpt": "AI is automating Tier 1 SOC triage. But what happens when AI hallucinations miss a disguised threat? We examine the trade-offs, verified data, and what L1 analysts should do next.",
+      "image": "images/articles/ai-soc-analyst-future-2026.png",
+      "externalUrl": "articles/ai-soc-analyst-future-2026.html",
+      "tags": [
+        "SOC",
+        "AI",
+        "Career",
+        "Threat Detection",
+        "Opinion"
+      ],
+      "author": "Harish G"
+    },
+    {
       "id": "semiconductor-ransomware-chips-act-2026",
       "title": "Silicon Under Siege: The Semiconductor Ransomware Crisis the CHIPS Act Ignores",
       "date": "February 25, 2026",
