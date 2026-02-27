@@ -913,14 +913,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1285",
-      "incident_id": 1285,
-      "title": "Purportedly AI-Generated Jason Momoa Deepfake Used in Romance Scam Reportedly Defrauding British Wid",
-      "date": "2025-11-29",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1286",
       "incident_id": 1286,
       "title": "Purportedly AI-Assisted Citation Errors Allegedly Found in Newfoundland and Labrador's 2025 Health W",
@@ -937,14 +929,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1288",
-      "incident_id": 1288,
-      "title": "Purported Deepfake Video and Fake News Articles Allegedly Used to Impersonate Guernsey's Chief Minis",
-      "date": "2025-11-29",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1289",
       "incident_id": 1289,
       "title": "Malta's Prime Minister Robert Abela Reportedly Deepfaked by a Ukrainian National in Cryptocurrency F",
@@ -954,9 +938,9 @@
     }
   ],
   "stats": {
-    "total": 119,
+    "total": 117,
     "last7Days": 6,
     "last30Days": 38
   },
-  "lastUpdated": "2026-02-27T02:21:31.412390+05:30"
+  "lastUpdated": "2026-02-27T08:19:00.873254+05:30"
 }
