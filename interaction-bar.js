@@ -142,7 +142,78 @@ function printArticle() {
     window.print();
 }
 
+// Inject Newsletter Lead Magnet
+function injectLeadMagnet() {
+    // Only inject on article/guide pages
+    const article = document.querySelector('article');
+    if (!article) return;
+
+    // Prevent duplicate injections
+    if (document.getElementById('hg-lead-magnet')) return;
+
+    // Adding dynamic styles for the input and button focus/hover states
+    const styleId = 'hg-lead-magnet-styles';
+    if (!document.getElementById(styleId)) {
+        const style = document.createElement('style');
+        style.id = styleId;
+        style.textContent = `
+            #hg-lead-magnet input:focus {
+                border-color: var(--accent-primary) !important;
+                box-shadow: 0 0 0 3px rgba(255, 61, 61, 0.2);
+            }
+            #hg-lead-magnet button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(255, 61, 61, 0.4);
+                filter: brightness(1.1);
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    const magnetHTML = `
+        <div id="hg-lead-magnet" class="lead-magnet-container" style="margin: 4rem 0 2rem; padding: 3rem 2rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 16px; text-align: center; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <!-- Glow effect border top -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-purple));"></div>
+            
+            <div style="font-size: 2.5rem; color: var(--accent-secondary); margin-bottom: 1rem;">
+                <i class="fas fa-envelope-open-text"></i>
+            </div>
+            
+            <h3 style="font-size: 1.8rem; font-weight: 900; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: -0.5px;">
+                The Cyber Intel Brief
+            </h3>
+            
+            <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                Join 500+ security professionals getting our Friday morning Threat Intel & Zero-Day breakdown. No fluff, just actionable intelligence.
+            </p>
+            
+            <!-- Replace 'YOUR_SUBSTACK_NAME' with your actual Substack subdomain -->
+            <form action="https://YOUR_SUBSTACK_NAME.substack.com/api/v1/free?nojs=true" method="post" target="_blank" style="display: flex; gap: 0.75rem; max-width: 500px; margin: 0 auto; position: relative; z-index: 2; flex-wrap: wrap; justify-content: center;">
+                <input type="email" name="email" placeholder="Enter your business email..." required 
+                    style="flex: 1; min-width: 250px; padding: 1rem 1.25rem; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-family: inherit; font-size: 1rem; outline: none; transition: all 0.3s ease;">
+                <button type="submit" 
+                    style="padding: 1rem 2rem; background: var(--accent-primary); color: #fff; border: none; border-radius: 8px; font-size: 1rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease; font-family: inherit; white-space: nowrap;">
+                    Join Free
+                </button>
+            </form>
+            
+            <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 1.5rem; margin-bottom: 0;">
+                <i class="fas fa-shield-alt"></i> We respect your inbox. 100% Signal. 0% Noise.
+            </p>
+        </div>
+    `;
+
+    // Insert right before interaction bar
+    const interactionBar = document.querySelector('.interaction-bar');
+    if (interactionBar) {
+        interactionBar.insertAdjacentHTML('beforebegin', magnetHTML);
+    } else {
+        article.insertAdjacentHTML('afterend', magnetHTML);
+    }
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function () {
     checkLikeStatus();
+    injectLeadMagnet(); // Automatically append the newsletter UI
 });
