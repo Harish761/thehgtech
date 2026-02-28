@@ -204,7 +204,7 @@ function injectLeadMagnet() {
             </p>
             
             <!-- Replace 'YOUR_SUBSTACK_NAME' with your actual Substack subdomain -->
-            <form action="https://YOUR_SUBSTACK_NAME.substack.com/api/v1/free?nojs=true" method="post" target="_blank" style="display: flex; gap: 0.75rem; max-width: 500px; margin: 0 auto; position: relative; z-index: 2; flex-wrap: wrap; justify-content: center;">
+            <form action="https://thehgtech.substack.com/api/v1/free?nojs=true" method="post" target="_blank" style="display: flex; gap: 0.75rem; max-width: 500px; margin: 0 auto; position: relative; z-index: 2; flex-wrap: wrap; justify-content: center;">
                 <input type="email" name="email" placeholder="Enter your business email..." required 
                     style="flex: 1; min-width: 250px; padding: 1rem 1.25rem; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-family: inherit; font-size: 1rem; outline: none; transition: all 0.3s ease;">
                 <button type="submit" 
