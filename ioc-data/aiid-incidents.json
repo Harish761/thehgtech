@@ -9,6 +9,14 @@
       "severity": "critical"
     },
     {
+      "id": "AIID-1236",
+      "incident_id": 1236,
+      "title": "Quantum AI Scam Reportedly Used AI-Generated Celebrity Endorsements and Spoofed Media Sites to Solic",
+      "date": "2026-02-28",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1329",
       "incident_id": 1329,
       "title": "Grok Reportedly Generated and Distributed Nonconsensual Sexualized Images of Adults and Minors in X ",
@@ -95,6 +103,22 @@
       "date": "2026-02-28",
       "category": "other",
       "severity": "high"
+    },
+    {
+      "id": "AIID-1388",
+      "incident_id": 1388,
+      "title": "Purported Deepfake Impersonating Sudha Murty Reportedly Promoted Quantum AI India Investment Scam vi",
+      "date": "2026-02-28",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1389",
+      "incident_id": 1389,
+      "title": "DJI Romo Cloud Authorization Bug Reportedly Exposed Camera, Microphone, and Home-Mapping Data From N",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-813",
@@ -978,9 +1002,9 @@
     }
   ],
   "stats": {
-    "total": 122,
-    "last7Days": 12,
-    "last30Days": 49
+    "total": 125,
+    "last7Days": 15,
+    "last30Days": 52
   },
-  "lastUpdated": "2026-03-01T00:26:17.663990+05:30"
+  "lastUpdated": "2026-03-01T02:06:40.497616+05:30"
 }
