@@ -146,8 +146,18 @@ function printArticle() {
 function injectLeadMagnet() {
     // SECURITY: Ensure we are NOT on the homepage before doing anything
     const path = window.location.pathname;
-    if (path === '/' || path.endsWith('index.html') || document.body.classList.contains('home-page')) {
-        return; // Abort instantly on the homepage
+
+    // Catch root, index.html, empty path, and explicitly the home-page class
+    const isHomePage = path === '/' ||
+        path === '' ||
+        path.endsWith('index.html') ||
+        document.body.classList.contains('home-page');
+
+    if (isHomePage) {
+        // Failsafe: if it somehow injected, rip it out
+        const existingForm = document.getElementById('hg-lead-magnet');
+        if (existingForm) existingForm.remove();
+        return; // Abort instantly
     }
 
     // Only inject on article/guide pages that actually have an interaction bar
