@@ -144,6 +144,12 @@ function printArticle() {
 
 // Inject Newsletter Lead Magnet
 function injectLeadMagnet() {
+    // SECURITY: Ensure we are NOT on the homepage before doing anything
+    const path = window.location.pathname;
+    if (path === '/' || path.endsWith('index.html') || document.body.classList.contains('home-page')) {
+        return; // Abort instantly on the homepage
+    }
+
     // Only inject on article/guide pages that actually have an interaction bar
     const interactionBar = document.querySelector('.interaction-bar');
     if (!interactionBar) return;
