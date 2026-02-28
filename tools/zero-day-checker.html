@@ -271,6 +271,28 @@
             border-bottom: 1px solid var(--border);
             padding-bottom: 0.5rem;
         }
+
+        /* --- Embedded (Iframe) Mode Styles --- */
+        body.embedded {
+            padding-top: 0 !important;
+            background: transparent !important;
+            min-height: auto !important;
+        }
+
+        body.embedded .checker-container {
+            margin: 0 auto !important;
+            padding: 1.5rem 1rem !important;
+            box-shadow: none !important;
+            background: rgba(255, 255, 255, 0.02) !important;
+            /* Slight glass effect to match CVE trackers */
+            border: 1px solid var(--border) !important;
+        }
+
+        body.embedded .seo-content,
+        body.embedded footer,
+        body.embedded #header-placeholder {
+            display: none !important;
+        }
     </style>
 </head>
 
@@ -337,11 +359,16 @@
     </footer>
 
     <script>
-        // Temporary patch to load the standard header if available
-        fetch('/components/header.html')
-            .then(res => res.ok ? res.text() : '')
-            .then(html => { if (html) document.getElementById('header-placeholder').innerHTML = html; })
-            .catch(e => console.log('Header load skipped'));
+        // Check if we are running inside an iframe (embedded mode)
+        if (window.self !== window.top) {
+            document.body.classList.add('embedded');
+        } else {
+            // Only load the standard header if we are NOT embedded
+            fetch('/components/header.html')
+                .then(res => res.ok ? res.text() : '')
+                .then(html => { if (html) document.getElementById('header-placeholder').innerHTML = html; })
+                .catch(e => console.log('Header load skipped'));
+        }
 
 
         function handleEnter(e) {
