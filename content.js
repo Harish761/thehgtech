@@ -5,79 +5,26 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 27 2026",
-            "headline": "Top Cybersecurity Role Offers Under $175K—Market Shock",
-            "title": "Government Cybersecurity Job Advertised at Below-Market Salary Sparks Debate",
-            "content": "A recent job advertisement for a prominent government cybersecurity role has raised eyebrows by offering a salary of less than $175,000. This figure is notably below the market rate for such high-level positions, prompting discussions about the government&#x27;s understanding of current cybersecurity demands. The discrepancy is highlighted by an ISC2 survey indicating that 33% of organizations are struggling to fill cybersecurity roles. The role&#x27;s compensation appears misaligned with the critical need for skilled professionals in a landscape increasingly threatened by cyberattacks. Cybersecurity experts warn that undervaluing these roles could hinder efforts to attract the necessary talent to protect national interests.",
+            "headline": "Juniper PTX Routers Vulnerable—Patch to Prevent Root Exploits",
+            "title": "Critical Vulnerability in Juniper PTX Series Routers Allows Root Code Execution",
+            "content": "A critical security vulnerability has been identified in Juniper Networks PTX series routers, prompting urgent patching by network administrators. This flaw allows unauthenticated attackers to execute code with root privileges, posing a significant threat to network security. These routers are integral to many enterprise and service provider environments, increasing the risk of widespread exploitation. The vulnerability&#x27;s severity lies in its potential to disrupt critical infrastructure, as these routers often handle high-volume data traffic. Juniper has released patches and strongly advises immediate updates to mitigate potential attacks. This incident underscores the ongoing challenges in securing core network equipment against sophisticated threats.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4138526/one-of-the-most-influential-cybersecurity-roles-will-pay-under-175000.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "900 FreePBX Systems Compromised—Web Shells Exploited",
-            "title": "Sangoma FreePBX Instances Hit by Post-Authentication Vulnerability Exploits",
-            "content": "Security researchers have identified a widespread attack affecting 900 Sangoma FreePBX instances, leveraging a post-authentication command injection vulnerability in the endpoint manager&#x27;s interface. Attackers deployed web shells to gain unauthorized access, potentially compromising sensitive communications. FreePBX, a widely used open-source PBX system, is critical for many organizations&#x27; telephony infrastructure. The breach underscores the importance of timely patch management and monitoring for unusual activity. Administrators are advised to review their systems for signs of compromise and apply necessary updates to mitigate further risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/900-sangoma-freepbx-instances-infected-with-web-shells/",
+            "sourceUrl": "https://www.csoonline.com/article/4138788/security-hole-could-let-hackers-take-over-juniper-networks-ptx-core-routers.html",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
                     "icon": "fa-bug"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
                 }
             ]
         },
         {
             "date": "Feb 27 2026",
-            "headline": "ScarCruft Breaches Air-Gapped Networks—Zoho WorkDrive Exploited",
-            "title": "ScarCruft Uses Advanced Tools to Compromise Air-Gapped Systems",
-            "content": "ScarCruft, a North Korean threat actor, has been linked to a sophisticated campaign using Zoho WorkDrive for command-and-control communications and USB malware to infiltrate air-gapped networks. This new toolkit allows ScarCruft to execute attacks on isolated systems, posing significant risks to critical infrastructure. The use of legitimate services like Zoho for malicious purposes highlights the evolving tactics of cyber adversaries. Organizations with sensitive environments should enhance their security protocols, focusing on removable media controls and monitoring for unusual network activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/scarcruft-uses-zoho-workdrive-and-usb.html",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Chilean Carding Operator Extradited—26,000 Cards Trafficked",
-            "title": "US Extradites Chilean Suspect in Major Carding Operation",
-            "content": "A 24-year-old Chilean national has been extradited to the United States, accused of operating a carding shop that trafficked over 26,000 credit and debit cards from a single brand. This extradition marks a significant step in international cooperation against cybercrime. The suspect allegedly facilitated the sale of stolen card data, impacting financial institutions and individuals globally. Law enforcement agencies stress the importance of cross-border collaboration to dismantle such operations. Financial institutions are urged to strengthen their fraud detection systems to protect against similar threats.",
+            "headline": "Trump Orders Federal Ban on Anthropic AI Technology",
+            "title": "U.S. Federal Agencies to Phase Out Anthropic Technology by Executive Order",
+            "content": "Former President Donald Trump has issued an executive order mandating all federal agencies to cease using Anthropic&#x27;s AI technology. This decision impacts existing contracts Anthropic holds with the military, alongside those with OpenAI, Google, and Elon Musk&#x27;s xAI. The move is part of a broader strategy to reassess AI technologies used in national defense and public administration. This phase-out could lead to significant operational shifts within federal agencies that rely on Anthropic&#x27;s AI models. Agencies are advised to assess current dependencies and prepare for a transition to alternative AI providers.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chilean-carding-shop-operator-extradited-to-us/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Anthropic vs. Pentagon—AI Safeguard Standoff Intensifies",
-            "title": "Anthropic Challenges Pentagon Over AI Use in Surveillance and Weapons",
-            "content": "Anthropic, an AI research company, is in a standoff with the Pentagon over assurances that its AI model, Claude, will not be used for mass surveillance or autonomous weapons. As the dispute nears a critical deadline, Anthropic seeks to prevent the misuse of its technology in ways that could violate ethical standards. The situation highlights the ongoing tension between AI innovation and national security concerns. Tech companies are increasingly pushed to define the ethical boundaries of AI deployment. Stakeholders are watching closely as this case could set precedents for future AI governance.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/anthropic-refuses-to-bend-to-pentagon-on-ai-safeguards-as-dispute-nears-deadline/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Public Google API Keys Risk Gemini AI Exposure",
-            "title": "Researchers Warn of Gemini AI Data Exposure via Google API Keys",
-            "content": "Researchers have discovered that public Google API keys, previously considered harmless, can now be exploited to access sensitive data from Gemini AI systems. This vulnerability raises concerns about data security practices and the potential for unauthorized access to proprietary AI models. Organizations using Google APIs are advised to review their key management policies and restrict access to sensitive resources. This finding underscores the need for stringent API security measures as AI systems become integral to business operations.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/02/public-google-api-keys-can-be-used-to-expose-gemini-ai-data",
+            "sourceUrl": "https://www.securityweek.com/trump-orders-all-federal-agencies-to-phase-out-use-of-anthropic-technology/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -88,36 +35,54 @@ const websiteContent = {
         },
         {
             "date": "Feb 27 2026",
-            "headline": "AI-Powered Fake ID Site Operator Pleads Guilty",
-            "title": "Ukrainian Man Admits to Running AI-Driven Fake ID Service",
-            "content": "A Ukrainian man has pleaded guilty to operating OnlyFake, an AI-powered website that generated and sold over 10,000 fake identification documents worldwide. The site utilized advanced AI techniques to create realistic IDs, posing significant challenges to law enforcement and identity verification processes. This case highlights the growing misuse of AI technologies in facilitating cybercrime. Authorities emphasize the need for enhanced digital identity safeguards and international cooperation to combat such illicit activities. Businesses and individuals are urged to be vigilant against identity fraud schemes.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-man-pleads-guilty-to-running-ai-powered-fake-id-site/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Leadership Shakeup at CISA—Andersen Steps In",
-            "title": "Madhu Gottumukkala Replaced by Kiersten Todt Andersen as Acting CISA Director",
-            "content": "In a significant leadership change, Kiersten Todt Andersen has been appointed as the acting director of the Cybersecurity and Infrastructure Security Agency (CISA), replacing Madhu Gottumukkala. The transition follows mounting criticisms of CISA&#x27;s performance during the first year of the Trump administration, with Gottumukkala&#x27;s leadership under scrutiny. This move is expected to bring a new strategic direction to the agency as it navigates complex cybersecurity challenges. CISA, a critical component of national cybersecurity defense, has faced increased pressure to enhance its effectiveness amidst rising cyber threats. Stakeholders are closely monitoring how Andersen will address these issues and bolster CISA&#x27;s capabilities.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cisa-leadership-change-madhu-gottumukkala-nick-andersen/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Daily Cyber Threat Update—ISC Stormcast February 27",
-            "title": "ISC Stormcast Highlights Key Cybersecurity Threats and Trends",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast provides a comprehensive update on current cybersecurity threats and trends as of February 27, 2026. The report, rated at InfoCON: green, suggests a stable threat environment but emphasizes vigilance against emerging vulnerabilities. Security professionals are advised to stay informed about the latest attack vectors and exploit techniques. The Stormcast serves as a valuable resource for understanding daily cyber threat dynamics and preparing defenses accordingly. Regular updates like these are crucial for maintaining robust cybersecurity postures and mitigating potential risks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32752",
+            "headline": "Ransomware Strikes Mississippi Hospitals—Echoes HBO&#x27;s &quot;The Pitt&quot;",
+            "title": "Mississippi Hospitals Hit by Ransomware Amid HBO Drama Parallels",
+            "content": "A ransomware attack has disrupted operations in a Mississippi healthcare system, mirroring events depicted in HBO&#x27;s series &quot;The Pitt.&quot; The attack has compromised hospital services, highlighting the vulnerability of healthcare infrastructure to cyber threats. While ransomware incidents in healthcare are not new, the real-world impact coinciding with a fictional portrayal underscores the urgency for improved defenses. Hospitals are urged to bolster their cybersecurity measures, including regular data backups and employee training to counteract phishing attempts. This incident serves as a reminder of the persistent threats facing critical healthcare services.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-hospitals-tv-irl",
             "relatedResources": [
                 {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
                 }
             ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Google API Key Flaw Exposes Gemini AI Data",
+            "title": "Truffle Security Finds Google API Key Vulnerability in Gemini AI Project",
+            "content": "Researchers from Truffle Security have uncovered a vulnerability involving Google Cloud API keys that could expose sensitive data from the Gemini AI project. These keys, typically used for billing purposes, were found to be vulnerable to scraping from websites, potentially granting unauthorized access to private project data. The flaw highlights the importance of securing API keys, which are often overlooked in security audits. Organizations using Google Cloud services are advised to review their API key management practices and ensure keys are not exposed in public repositories or websites. This discovery emphasizes the need for stringent access controls in cloud environments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4138749/silent-google-api-key-change-exposed-gemini-ai-data.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Event Hosts Urged to Boost Wireless and Drone Security",
+            "title": "Experts Warn Cities Hosting Major Events to Enhance Wireless Defense",
+            "content": "Security experts are advising cities hosting major events, such as the FIFA World Cup, to enhance their defenses against wireless and drone threats. Traditional security measures are no longer sufficient to protect against the evolving landscape of cyber and physical threats. The focus is shifting towards detecting and mitigating unauthorized drone activities and securing wireless communications from interception and disruption. Event organizers should consider deploying both active and passive defense systems to safeguard attendees and infrastructure. This proactive approach is crucial in ensuring the safety and security of large-scale public gatherings.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/cities-major-events-wireless-drone-defense",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Windows 11 Tests Enhanced Security for Batch Files",
+            "title": "Microsoft Enhances Windows 11 Security for Batch File Execution",
+            "content": "Microsoft is testing new security improvements in Windows 11 to better protect against vulnerabilities during batch file and CMD script execution. These enhancements aim to prevent malicious code from exploiting system weaknesses through batch processing. The updates are part of the Windows 11 Insider Preview builds, reflecting Microsoft&#x27;s ongoing commitment to fortifying operating system security. Users participating in the Insider program are encouraged to test these features and provide feedback. This initiative highlights the importance of securing script execution environments to prevent unauthorized access and data breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-windows-11-batch-file-security-improvements/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "APT37 Hacks Air-Gapped Networks with New Malware",
+            "title": "North Korean APT37 Deploys Malware to Breach Air-Gapped Systems",
+            "content": "APT37, a North Korean threat group, has developed new malware designed to infiltrate air-gapped networks, posing a significant security threat. The malware is capable of moving data between internet-connected and isolated systems using removable drives, facilitating covert surveillance. This sophisticated attack method highlights the persistent threat posed by nation-state actors targeting critical infrastructure. Organizations with sensitive systems are advised to review their security protocols, particularly concerning removable media usage and air-gapped network protection. This development underscores the need for robust defenses against advanced persistent threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apt37-hackers-use-new-malware-to-breach-air-gapped-networks/",
+            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -146,122 +111,36 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 27 2026",
-            "headline": "Finance Embraces Agentic AI—Boosts Workflow Efficiency",
-            "title": "Enhancing Trust in Agentic AI for Financial Workflows",
-            "content": "Enterprises have increasingly integrated agentic AI into finance workflows, focusing on customer support and back-office operations. These AI agents excel at retrieving information, but improving trust remains a priority. Over the past two years, technology leaders have accelerated the deployment of these systems to streamline operations and enhance productivity. The push for agentic AI adoption highlights the need for robust security and transparency to build confidence in AI-driven financial processes. Organizations must ensure that AI implementations are reliable and secure to maximize their potential benefits.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/upgrading-agentic-ai-for-finance-workflows/",
+            "date": "Feb 28 2026",
+            "headline": "Trump Bans Anthropic—Defense Secretary Declares Supply Chain Risk",
+            "title": "Defense Secretary Hegseth Designates Anthropic as Supply Chain Threat",
+            "content": "In a decisive move, Secretary of Defense Pete Hegseth has labeled Anthropic, an AI company, as a &quot;supply-chain risk&quot; shortly after President Donald Trump announced a ban on its products from federal use. The designation follows concerns over Anthropic&#x27;s AI systems and their potential vulnerabilities in defense applications. This decision reflects heightened scrutiny on AI vendors amid national security concerns. The ban affects Anthropic’s Claude AI, previously integrated in several government projects. Organizations using Anthropic&#x27;s technology should assess their supply chain dependencies and consider alternative AI solutions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/886632/pentagon-designates-anthropic-supply-chain-risk-ai-standoff",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
                 }
             ]
         },
         {
             "date": "Feb 27 2026",
-            "headline": "Poor AI Integration—Threatening Business Foundations",
-            "title": "Ineffective AI Implementation Linked to Workforce Reductions",
-            "content": "Datatonic, a cloud data and AI consultancy, has identified poor implementation of human-AI collaboration as a key factor in workforce reductions. Organizations are struggling with productivity, competitiveness, and efficiency due to inadequate AI strategies. As enterprises enter the next phase of AI adoption, success hinges on effective integration and collaboration between humans and AI systems. Businesses must refine their AI approaches to prevent erosion of foundational business elements and ensure sustainable growth. Proper training and strategic deployment are essential to harness AI&#x27;s full potential.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-workflows-need-human-in-the-loop-say-datatonic/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Huxe App Offers Personalized Audio Summaries—Privacy Concerns Arise",
-            "title": "Huxe Delivers AI-Powered Daily Audio Summaries from Your Inbox",
-            "content": "Huxe, a new app, provides users with personalized, daily audio summaries by analyzing email inboxes and meeting calendars. While the app aims to reduce screen time and improve productivity, it raises privacy concerns due to the sensitive nature of accessed data. Users must weigh the convenience of streamlined information against potential privacy risks. As AI-driven personal assistants become more prevalent, ensuring robust data security and user consent is crucial. Individuals should carefully review privacy policies and permissions before using such applications.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/huxe-personalized-daily-audio-podcasts-powered-by-ai/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Banks Test Agentic AI—Revolutionizing Trade Surveillance",
-            "title": "Goldman Sachs and Deutsche Bank Explore Agentic AI for Trading",
-            "content": "Goldman Sachs and Deutsche Bank are piloting agentic AI systems for enhanced trade surveillance. Unlike traditional systems that rely on static alerts, these AI models analyze real-time patterns to flag potentially suspicious conduct. This innovative approach aims to improve detection of market manipulation and insider trading, offering a more dynamic and responsive solution. As financial institutions adopt these advanced technologies, the emphasis on ethical AI use and transparency becomes increasingly important. Firms should closely monitor AI performance and ensure compliance with regulatory standards.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/goldman-sachs-and-deutsche-bank-test-agentic-ai-for-trade-surveillance/",
-            "relatedResources": [
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "AI Reshapes Go—Altering Strategies of Top Players",
-            "title": "AI&#x27;s Influence on Professional Go Players&#x27; Strategic Thinking",
-            "content": "Artificial intelligence is transforming the strategic approach of top Go players, as observed at the Korea Baduk Association. The ancient game, revered in South Korea, is experiencing a shift as AI tools offer new insights and strategies. Players are incorporating AI-driven analysis to refine their tactics, enhancing their competitive edge. This evolution underscores the broader impact of AI on traditional disciplines, prompting players to adapt to innovative methodologies. As AI continues to influence various fields, understanding its implications on skill development becomes essential.",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/02/27/1133624/ai-is-rewiring-how-the-worlds-best-go-players-think/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "ASML&#x27;s EUV Tools—Paving Way for Next-Gen AI Chips",
-            "title": "ASML&#x27;s High-NA EUV Tools Ready for AI Chip Mass Production",
-            "content": "ASML has announced that its high-numerical aperture (NA) extreme ultraviolet (EUV) lithography tools are ready for mass production, heralding a new era for AI chip development. These advanced tools are set to enable the creation of the next generation of AI chips, offering increased computational power and efficiency. The move marks a significant milestone for the semiconductor industry, with implications for AI capabilities across various sectors. Companies should prepare for the upcoming wave of AI advancements driven by these cutting-edge technologies.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/asml-high-na-euv-production-ready-ai-chips/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "OpenAI Partners with Amazon—Boosting AI Infrastructure on AWS",
-            "title": "OpenAI and Amazon Forge Strategic Partnership for AI Expansion",
-            "content": "OpenAI and Amazon have announced a strategic partnership to bring OpenAI&#x27;s Frontier platform to Amazon Web Services (AWS). This collaboration aims to expand AI infrastructure, offering custom models and enterprise AI agents to AWS customers. The partnership highlights the growing demand for scalable AI solutions and the importance of robust cloud platforms in supporting AI innovation. Businesses leveraging AWS can expect enhanced AI capabilities and streamlined integration with OpenAI&#x27;s advanced technologies. Organizations should explore opportunities to incorporate these offerings into their AI strategies.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/amazon-partnership",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Block Slashes 40% Workforce—AI Efficiencies Drive Cuts",
-            "title": "Jack Dorsey’s Block Lays Off 4,000+ Staff Due to AI Advancements",
-            "content": "Block, the company led by Jack Dorsey and parent to Square and Cash App, has announced a significant workforce reduction, cutting 40% of its staff, which equates to over 4,000 employees. The layoffs are attributed to efficiencies gained through AI technologies, particularly in its open-source AI project Goose. This move highlights a growing trend in the tech industry where AI is increasingly being leveraged to streamline operations, resulting in reduced human labor needs. The impact of these layoffs will be felt across Block&#x27;s various subsidiaries, potentially affecting service delivery and innovation pace. Companies should evaluate the balance between AI integration and workforce management to avoid similar disruptions.",
+            "headline": "Google’s Opal Redefines AI Agent Development for Enterprises",
+            "title": "Google’s Opal Sets New Standards for Building Enterprise AI Agents",
+            "content": "Google&#x27;s Opal has quietly introduced a new framework for developing AI agents, addressing the ongoing debate about balancing autonomy and control in enterprise settings. The blueprint offers guidelines to prevent data mishaps and optimize workflow automation. This development comes as businesses seek to harness AI without compromising data integrity. Opal&#x27;s approach could redefine how enterprises deploy AI, emphasizing controlled freedom to enhance productivity while minimizing risks. Companies are advised to evaluate Opal&#x27;s framework to enhance their AI strategies.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/jack-dorseys-block-cuts-40-of-staff-4-000-people-and-yes-its-because-of-ai",
+            "sourceUrl": "https://venturebeat.com/technology/googles-opal-just-quietly-showed-enterprise-teams-the-new-blueprint-for",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "OpenAI Secures $110B—Unveils &#x27;Stateful&#x27; AI Architecture",
+            "title": "OpenAI Announces $110 Billion Funding and New AI Architecture",
+            "content": "OpenAI has secured a massive $110 billion investment from SoftBank, Nvidia, and Amazon, aiming to revolutionize enterprise AI with its new &#x27;stateful&#x27; architecture. This funding will enhance AI systems&#x27; ability to retain context over extended interactions, addressing a significant limitation in current models. The architecture promises improved performance for complex enterprise tasks, potentially transforming industries reliant on AI for decision-making processes. Organizations should anticipate updates to OpenAI&#x27;s offerings and consider integrating these advancements into their operations.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/openais-big-investment-from-aws-comes-with-something-else-new-stateful",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -272,21 +151,55 @@ const websiteContent = {
         },
         {
             "date": "Feb 27 2026",
-            "headline": "Google’s Nano Banana 2—AI Image Editing Reimagined",
-            "title": "Hands-On with Google’s Nano Banana 2: AI Image Generator Review",
-            "content": "Google has unveiled Nano Banana 2, the latest iteration of its AI-powered image editing tool. This advanced model pushes the boundaries of photo realism, though it occasionally produces surreal results. Designed to enhance and transform images with precision, Nano Banana 2 is a testament to Google&#x27;s continued innovation in AI image processing. Users, particularly in creative industries, can expect enhanced capabilities for editing and generating images. However, they should remain aware of the model’s occasional unpredictability in output. Staying updated with Google&#x27;s ongoing developments in AI tools is crucial for leveraging these advancements effectively.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/google-nano-banana-2-ai-image-generator-hands-on/",
+            "headline": "Pentagon Targets Anthropic as Supply Chain Risk",
+            "title": "Pentagon Advances to Designate Anthropic a Supply Chain Threat",
+            "content": "Following President Trump&#x27;s directive, the Pentagon has moved to classify Anthropic as a supply-chain risk. This action underscores the administration&#x27;s stance against the AI company, emphasizing national security concerns over its technologies. The decision reflects a broader trend of scrutinizing AI suppliers for potential vulnerabilities. Agencies relying on Anthropic&#x27;s AI are urged to reassess their technology stack and explore alternative vendors to mitigate supply chain risks.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/27/pentagon-moves-to-designate-anthropic-as-a-supply-chain-risk/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Trump Bans Anthropic—Cites Military Use Restrictions",
+            "title": "President Trump Prohibits Anthropic from Federal Contracts",
+            "content": "President Donald Trump has issued an order banning Anthropic from federal government contracts, citing the company&#x27;s refusal to lift AI usage restrictions for military applications. This move aligns with the Defense Department&#x27;s push for more adaptable AI technologies. The ban has significant implications for federal agencies currently using Anthropic&#x27;s AI solutions, necessitating a swift transition to alternative providers. Agencies should review their AI partnerships to ensure compliance with the new directive.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/trump-moves-to-ban-anthropic-from-the-us-government/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Trump Orders Agencies to Drop Anthropic AI—Cites Strong-Arming",
+            "title": "Trump Directs Federal Agencies to Cease Using Anthropic’s AI",
+            "content": "President Trump has directed federal agencies to immediately cease using Anthropic&#x27;s AI products, accusing the company of attempting to &quot;strong-arm&quot; the Pentagon. The conflict arose over Anthropic CEO Dario Amodei&#x27;s refusal to relax restrictions on military AI use. This directive impacts numerous federal projects dependent on Anthropic&#x27;s Claude AI, requiring agencies to find alternative AI providers. Organizations should evaluate the implications of this order on their operations and ensure compliance.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/886489/pentagon-anthropic-trump-dod",
+            "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Musk Criticizes OpenAI—Touts xAI Safety in Legal Deposition",
+            "title": "Elon Musk Criticizes OpenAI in Legal Deposition Over xAI Safety",
+            "content": "In a legal deposition, Elon Musk criticized OpenAI, contrasting its safety measures with those of his own company, xAI. Musk claimed that while OpenAI&#x27;s ChatGPT has faced scrutiny, xAI&#x27;s Grok has maintained a safer profile. However, Grok recently faced backlash for inadvertently distributing nonconsensual images on X. This incident highlights ongoing challenges in maintaining AI safety and privacy standards. Professionals should remain vigilant about AI deployments and ensure robust safeguards are in place.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/27/musk-bashes-openai-in-deposition-saying-nobody-committed-suicide-because-of-grok/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         }
