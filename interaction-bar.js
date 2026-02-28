@@ -144,9 +144,9 @@ function printArticle() {
 
 // Inject Newsletter Lead Magnet
 function injectLeadMagnet() {
-    // Only inject on article/guide pages
-    const article = document.querySelector('article');
-    if (!article) return;
+    // Only inject on article/guide pages that actually have an interaction bar
+    const interactionBar = document.querySelector('.interaction-bar');
+    if (!interactionBar) return;
 
     // Prevent duplicate injections
     if (document.getElementById('hg-lead-magnet')) return;
@@ -204,11 +204,8 @@ function injectLeadMagnet() {
     `;
 
     // Insert right before interaction bar
-    const interactionBar = document.querySelector('.interaction-bar');
     if (interactionBar) {
         interactionBar.insertAdjacentHTML('beforebegin', magnetHTML);
-    } else {
-        article.insertAdjacentHTML('afterend', magnetHTML);
     }
 }
 
