@@ -895,52 +895,12 @@
       "date": "2025-12-02",
       "category": "data_leak",
       "severity": "critical"
-    },
-    {
-      "id": "AIID-1290",
-      "incident_id": 1290,
-      "title": "Alleged Fabricated News Sites and Deepfakes Impersonated Maltese Ministers, Financial Experts, and M",
-      "date": "2025-11-30",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-935",
-      "incident_id": 935,
-      "title": "Reported Deepfake of Maltese Prime Minister Robert Abela and Journalist Mark Laurence Zammit Used to",
-      "date": "2025-11-29",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1286",
-      "incident_id": 1286,
-      "title": "Purportedly AI-Assisted Citation Errors Allegedly Found in Newfoundland and Labrador's 2025 Health W",
-      "date": "2025-11-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1287",
-      "incident_id": 1287,
-      "title": "Purported Deepfake-Based Facebook Impersonation Reportedly Targets Daughter of Scot in Coma",
-      "date": "2025-11-29",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1289",
-      "incident_id": 1289,
-      "title": "Malta's Prime Minister Robert Abela Reportedly Deepfaked by a Ukrainian National in Cryptocurrency F",
-      "date": "2025-11-29",
-      "category": "deepfake",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 117,
+    "total": 112,
     "last7Days": 6,
     "last30Days": 38
   },
-  "lastUpdated": "2026-02-28T02:09:58.101438+05:30"
+  "lastUpdated": "2026-02-28T08:07:35.161382+05:30"
 }
