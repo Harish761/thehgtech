@@ -1,9 +1,25 @@
 {
   "incidents": [
     {
+      "id": "AIID-1192",
+      "incident_id": 1192,
+      "title": "16-Year-Old Allegedly Received Suicide Method Guidance from ChatGPT Before Death",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-1329",
       "incident_id": 1329,
       "title": "Grok Reportedly Generated and Distributed Nonconsensual Sexualized Images of Adults and Minors in X ",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1375",
+      "incident_id": 1375,
+      "title": "OpenAI Allegedly Did Not Alert RCMP After ChatGPT Flagged Violent Chats Before British Columbia Scho",
       "date": "2026-02-28",
       "category": "other",
       "severity": "medium"
@@ -65,6 +81,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1386",
+      "incident_id": 1386,
+      "title": "NPR Host David Greene Alleged Google's NotebookLM Replicated His Voice Without Consent, Prompting La",
+      "date": "2026-02-28",
+      "category": "prompt_injection",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1387",
+      "incident_id": 1387,
+      "title": "Lawsuit Alleged ChatGPT (GPT-4o) Encouraged Colorado Man's Suicide After Prolonged 'AI Companion' Ch",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "high"
+    },
+    {
       "id": "AIID-813",
       "incident_id": 813,
       "title": "Starship Technologies Delivery Robot Reportedly Injures Arizona State University Employee",
@@ -78,14 +110,6 @@
       "title": "Purportedly AI-Generated Sepsis Alert Reportedly Prompted Potentially Inappropriate IV Fluid Adminis",
       "date": "2026-02-21",
       "category": "prompt_injection",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1375",
-      "incident_id": 1375,
-      "title": "OpenAI Allegedly Did Not Alert RCMP After ChatGPT Flagged Violent Chats Before British Columbia Scho",
-      "date": "2026-02-21",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -954,9 +978,9 @@
     }
   ],
   "stats": {
-    "total": 119,
-    "last7Days": 14,
-    "last30Days": 46
+    "total": 122,
+    "last7Days": 12,
+    "last30Days": 49
   },
-  "lastUpdated": "2026-02-28T22:08:24.744409+05:30"
+  "lastUpdated": "2026-03-01T00:26:17.663990+05:30"
 }
