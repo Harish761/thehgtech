@@ -1,6 +1,70 @@
 {
   "incidents": [
     {
+      "id": "AIID-1329",
+      "incident_id": 1329,
+      "title": "Grok Reportedly Generated and Distributed Nonconsensual Sexualized Images of Adults and Minors in X ",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1379",
+      "incident_id": 1379,
+      "title": "Florida Woman Reportedly Jailed After Ex-Boyfriend Allegedly Submitted AI-Fabricated Text Screenshot",
+      "date": "2026-02-28",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1380",
+      "incident_id": 1380,
+      "title": "Purported AI Voice Clone Allegedly Narrated Shaun Rein's 'The Split' in Unauthorized YouTube 'Podcas",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1381",
+      "incident_id": 1381,
+      "title": "Purportedly AI-Generated TikTok Videos Reportedly Urged 'Polexit' Campaign, Prompting Polish Governm",
+      "date": "2026-02-28",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1382",
+      "incident_id": 1382,
+      "title": "Tencent's WeChat-Integrated Yuanbao Chatbot Reportedly Insulted User During Coding Debug Request",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1383",
+      "incident_id": 1383,
+      "title": "User Reportedly Developed Emotional Dependence on Customized ChatGPT \"Boyfriend,\" Citing Grief After",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1384",
+      "incident_id": 1384,
+      "title": "Purported Deepfake Video Impersonating Elton John Reportedly Induced Northeast Ohio Man to Authorize",
+      "date": "2026-02-28",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1385",
+      "incident_id": 1385,
+      "title": "X Users Reportedly Prompted Grok to Sexualize Images of Ren\u00e9e Good After Her Killing in Minneapolis",
+      "date": "2026-02-28",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-813",
       "incident_id": 813,
       "title": "Starship Technologies Delivery Robot Reportedly Injures Arizona State University Employee",
@@ -449,14 +513,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1329",
-      "incident_id": 1329,
-      "title": "Grok Reportedly Generated and Distributed Nonconsensual Sexualized Images of Adults and Minors in X ",
-      "date": "2026-01-10",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1330",
       "incident_id": 1330,
       "title": "Purportedly AI-Generated 'Eric Langford' Missing Boy Scout Hoax Circulating Across Multiple Social M",
@@ -898,9 +954,9 @@
     }
   ],
   "stats": {
-    "total": 112,
-    "last7Days": 6,
-    "last30Days": 38
+    "total": 119,
+    "last7Days": 14,
+    "last30Days": 46
   },
-  "lastUpdated": "2026-02-28T18:35:03.356571+05:30"
+  "lastUpdated": "2026-02-28T22:08:24.744409+05:30"
 }
