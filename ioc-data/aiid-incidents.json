@@ -3,10 +3,26 @@
     {
       "id": "AIID-1391",
       "incident_id": 1391,
-      "title": "TBD.",
+      "title": "Azerbaijani Media Agency Reportedly Warned Purported Deepfake Videos Attributed to Defense and Forei",
       "date": "2026-03-01",
-      "category": "other",
+      "category": "deepfake",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-1394",
+      "incident_id": 1394,
+      "title": "Purported Deepfake TikTok Account Using Grainville School Branding in Jersey Reportedly Targeted Sta",
+      "date": "2026-03-01",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1395",
+      "incident_id": 1395,
+      "title": "Anthropic Said DeepSeek, Moonshot, and MiniMax Used Fraudulent Accounts and Proxies to Illicitly Dis",
+      "date": "2026-03-01",
+      "category": "fraud",
+      "severity": "high"
     },
     {
       "id": "AIID-1192",
@@ -1034,9 +1050,9 @@
     }
   ],
   "stats": {
-    "total": 129,
-    "last7Days": 20,
-    "last30Days": 56
+    "total": 131,
+    "last7Days": 22,
+    "last30Days": 58
   },
-  "lastUpdated": "2026-03-01T18:38:02.674299+05:30"
+  "lastUpdated": "2026-03-01T22:10:41.253703+05:30"
 }
