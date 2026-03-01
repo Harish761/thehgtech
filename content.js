@@ -5,82 +5,38 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Feb 28 2026",
-            "headline": "Kimwolf Botnet Mastermind &quot;Dort&quot; Exposed—Global Disruption Continues",
-            "title": "Kimwolf Botnet Operator &quot;Dort&quot; Orchestrates Massive Cyber Attacks",
-            "content": "KrebsOnSecurity has identified &quot;Dort&quot; as the mastermind behind Kimwolf, the largest and most disruptive botnet to date. The botnet exploits a previously disclosed vulnerability to amass control over millions of devices worldwide. Since its exposure in January 2026, Dort has orchestrated numerous large-scale attacks, causing significant disruptions across various sectors. The botnet&#x27;s reach and sophistication make it a formidable threat, highlighting the urgent need for robust cybersecurity measures. Security professionals are urged to review their systems for potential vulnerabilities and ensure all software is up to date to mitigate risks.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 28 2026",
-            "headline": "Canadian Tire Breach—38 Million Accounts Compromised",
-            "title": "Massive Data Breach at Canadian Tire Exposes 38 Million Accounts",
-            "content": "Canadian Tire has suffered a significant data breach, impacting 38 million customer accounts. The breach exposed sensitive information, including names, addresses, email addresses, phone numbers, and encrypted passwords. This incident underscores the critical need for enhanced data protection measures in retail operations. Affected customers are advised to monitor their accounts for suspicious activity and change their passwords immediately. The breach highlights the ongoing challenges organizations face in safeguarding personal data against increasingly sophisticated cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/canadian-tire-data-breach-impacts-38-million-accounts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 28 2026",
-            "headline": "3,000 Google Cloud API Keys Exposed—Gemini Data at Risk",
-            "title": "Exposed Google Cloud API Keys Threaten Gemini Endpoint Security",
-            "content": "Truffle Security has uncovered nearly 3,000 exposed Google Cloud API keys, posing a significant threat to Gemini endpoint security. These keys, intended for billing identification, can be exploited to access sensitive data across private Gemini endpoints. The exposure underscores the importance of securing API keys to prevent unauthorized access and data breaches. Organizations using Google Cloud services should immediately audit their API key configurations and implement stricter access controls. This incident serves as a reminder of the potential risks associated with cloud service misconfigurations.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/thousands-of-public-google-cloud-api.html",
-            "relatedResources": [
-                {
-                    "label": "Cloud Security Hardening",
-                    "url": "/guides/cloud-security-hardening.html",
-                    "icon": "fa-cloud"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Feb 28 2026",
-            "headline": "Pentagon Flags Anthropic—AI Supply Chain Risk Identified",
-            "title": "Pentagon Designates Anthropic as AI Supply Chain Risk Amid Dispute",
-            "content": "The Pentagon has classified Anthropic as a &quot;supply chain risk&quot; following stalled negotiations over AI military applications. This designation comes after Anthropic requested exceptions to certain Pentagon requirements, leading to an impasse. The decision highlights the growing concerns over AI technology&#x27;s role in national security and supply chain integrity. Anthropic&#x27;s response indicates potential disruptions in its collaboration with the U.S. Defense Department. This development emphasizes the need for clear policies and agreements in the deployment of AI technologies within military frameworks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Europol Busts &quot;The Com&quot;—30 Cybercriminals Arrested",
-            "title": "Europol&#x27;s Project Compass Leads to 30 Arrests in &quot;The Com&quot; Crackdown",
-            "content": "A Europol-coordinated operation, &quot;Project Compass,&quot; has resulted in the arrest of 30 individuals linked to &quot;The Com,&quot; a cybercrime group targeting children and teenagers. The yearlong effort involved multiple international law enforcement agencies and identified 179 suspects. This operation highlights the collaborative efforts required to combat online exploitation and protect vulnerable populations. Authorities urge parents and guardians to remain vigilant about their children&#x27;s online activities. The crackdown demonstrates law enforcement&#x27;s commitment to dismantling networks that exploit the internet for criminal purposes.",
+            "headline": "QuickLens Chrome Extension Hijacks Crypto—Remove Now",
+            "title": "QuickLens Chrome Extension Compromised to Steal Cryptocurrency",
+            "content": "The &quot;QuickLens - Search Screen with Google Lens&quot; Chrome extension has been removed from the Chrome Web Store after it was found to be compromised. This extension was altered to push malware and attempt to steal cryptocurrency from thousands of unsuspecting users. The malicious code was capable of intercepting and rerouting cryptocurrency transactions, posing a significant threat to users&#x27; digital assets. Google has since taken down the extension, but users who had it installed should immediately check their systems for malware and secure their cryptocurrency wallets. This incident highlights the growing trend of browser extensions being targeted for malicious purposes.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-crackdown-on-the-com-cybercrime-gang-leads-to-30-arrests/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/quicklens-chrome-extension-steals-crypto-shows-clickfix-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 28 2026",
+            "headline": "ClawJacked Flaw Exposes OpenClaw AI to Web Attacks",
+            "title": "OpenClaw AI Vulnerability Allows Malicious Sites to Hijack Local Agents",
+            "content": "OpenClaw has addressed a critical security flaw that allowed malicious websites to hijack locally running AI agents via WebSocket connections. This vulnerability, embedded in the core system, could have enabled attackers to take control of OpenClaw AI without requiring any plugins or marketplace apps. Affected users include organizations utilizing OpenClaw for automation and AI-driven tasks, with the potential for severe operational disruptions. The flaw underscores the importance of securing AI systems against web-based threats. Users are advised to update their OpenClaw installations immediately to mitigate the risk of exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/02/clawjacked-flaw-lets-malicious-sites.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 28 2026",
+            "headline": "$4.8M in Crypto Lost—Korean Tax Agency&#x27;s Costly Mistake",
+            "title": "South Korean Tax Agency&#x27;s Error Leads to $4.8M Crypto Theft",
+            "content": "South Korea&#x27;s National Tax Service inadvertently exposed the mnemonic recovery phrase of a seized cryptocurrency wallet in a public press release. This blunder allowed hackers to steal approximately 6.4 billion won ($4.8 million) in cryptocurrency. The incident highlights the critical importance of securely handling sensitive information, especially in official communications. Affected parties include those involved in the case related to the seized assets, with potential reputational damage to the tax agency. Authorities are urged to review their information security protocols to prevent future breaches of this nature.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/48m-in-crypto-stolen-after-korean-tax-agency-exposes-wallet-seed/",
             "relatedResources": []
         },
         {
             "date": "Feb 27 2026",
-            "headline": "DoJ Seizes $61M Tether—Pig Butchering Scams Targeted",
-            "title": "$61 Million in Tether Seized by DoJ Linked to Crypto Scams",
-            "content": "The U.S. Department of Justice (DoJ) has seized $61 million in Tether cryptocurrency connected to &quot;pig butchering&quot; scams. These schemes involve fraudsters building trust with victims before stealing their cryptocurrency investments. The funds were traced to addresses used for laundering criminal proceeds, showcasing the DoJ&#x27;s ongoing efforts to combat cryptocurrency fraud. Victims are urged to remain cautious of unsolicited investment opportunities and verify the legitimacy of cryptocurrency platforms. This seizure marks a significant step in curbing financial crimes facilitated by digital currencies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/doj-seizes-61-million-in-tether-linked.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "900+ Sangoma FreePBX Systems Compromised—Web Shell Attacks Persist",
-            "title": "Ongoing Web Shell Attacks Compromise Over 900 Sangoma FreePBX Instances",
-            "content": "The Shadowserver Foundation reports that over 900 Sangoma FreePBX systems remain compromised by web shell attacks exploiting a command injection vulnerability. The attacks, which began in December 2025, have primarily affected systems in the U.S., Brazil, and Canada. This vulnerability allows attackers to execute arbitrary commands, posing a significant risk to affected systems. Administrators are urged to apply available patches and review their systems for unauthorized access. This incident underscores the critical need for timely vulnerability management and system updates.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/02/900-sangoma-freepbx-instances.html",
+            "headline": "Juniper Networks PTX Routers at Risk—Patch Immediately",
+            "title": "Critical Vulnerability in Juniper Networks PTX Routers Allows Root Access",
+            "content": "Network administrators using Juniper PTX series routers are being urged to apply patches immediately due to a newly discovered critical vulnerability. This flaw could enable unauthenticated attackers to execute code with root privileges, posing a severe risk to network security. Given the widespread use of these routers in high-capacity data centers and service providers, the potential impact is substantial. This vulnerability underscores the ongoing need for rigorous patch management in network infrastructure. Juniper has released updates to address the issue, and prompt action is recommended to secure affected systems.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4138788/security-hole-could-let-hackers-take-over-juniper-networks-ptx-core-routers.html",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
@@ -88,6 +44,45 @@ const websiteContent = {
                     "icon": "fa-bug"
                 }
             ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Trump Orders Anthropic Phase-Out in Federal Agencies",
+            "title": "Federal Agencies Directed to Phase Out Anthropic Technology by Trump",
+            "content": "Former President Donald Trump has issued an order for all federal agencies to phase out the use of Anthropic technology. This decision comes amid ongoing contracts with major AI providers like OpenAI, Google, and Elon Musk&#x27;s xAI, which supply AI models to military and government sectors. The directive raises questions about the future of AI deployment in federal operations and the potential impact on existing projects. Agencies will need to assess the implications of transitioning away from Anthropic and explore alternative solutions. This move reflects the evolving landscape of AI technology governance.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/trump-orders-all-federal-agencies-to-phase-out-use-of-anthropic-technology/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Ransomware Reality: Hospitals Hit On-Screen and Off",
+            "title": "Ransomware Attacks on Hospitals Mirror HBO&#x27;s &quot;The Pitt&quot;",
+            "content": "The recent ransomware attack on a Mississippi healthcare system eerily mirrors the plot of HBO&#x27;s &quot;The Pitt,&quot; highlighting a troubling convergence of fiction and reality. The attack disrupted hospital operations, affecting patient care and data security. This incident underscores the vulnerability of healthcare infrastructure to cyber threats, particularly ransomware, which can have life-threatening consequences. Healthcare organizations are advised to bolster their cybersecurity measures, including regular backups and employee training, to mitigate such risks. The attack serves as a stark reminder of the critical need for robust cybersecurity in the healthcare sector.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-hospitals-tv-irl",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Google API Key Change Exposes Gemini AI Data",
+            "title": "Silent Google API Key Update Risks Gemini AI Project Exposure",
+            "content": "Researchers from Truffle Security have discovered that Google Cloud API keys, typically used for billing purposes, could be scraped from websites and exploited to access private Gemini AI project data. This vulnerability was identified through a Common Crawl scan, revealing significant risks for projects relying on Google Cloud APIs. Affected entities include developers and organizations using Gemini AI, who may face unauthorized data access. This discovery highlights the importance of securing API keys and monitoring for unauthorized access. Developers are urged to review their API key management practices to protect sensitive data.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4138749/silent-google-api-key-change-exposed-gemini-ai-data.html",
+            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -116,69 +111,21 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Feb 28 2026",
-            "headline": "Anthropic-Pentagon Clash—AI Policy Crisis Looms",
-            "title": "Anthropic&#x27;s Break with Pentagon Sparks AI Governance Concerns",
-            "content": "Anthropic, a leading AI model developer, has reached a critical impasse with the U.S. government, following President Donald J. Trump&#x27;s directive to federal agencies to cease using its technology. The dispute centers on the Pentagon&#x27;s demands for AI applications in military contexts, which Anthropic has resisted. This conflict highlights the broader debate over corporate influence on AI policy and military ethics. Enterprises relying on Anthropic&#x27;s AI models should re-evaluate their compliance strategies and monitor developments closely. The situation underscores the urgent need for clear AI governance frameworks in high-stakes environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/anthropic-vs-the-pentagon-what-enterprises-should-do",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "date": "Mar 01 2026",
+            "headline": "Anthropic&#x27;s Self-Governance Dilemma—Lack of Rules Exposed",
+            "title": "Anthropic Faces Challenges in Self-Governance Amidst Regulatory Vacuum",
+            "content": "Anthropic, along with AI giants like OpenAI and Google DeepMind, is grappling with the complexities of self-regulation in the absence of formal industry rules. These companies have long advocated for responsible governance, but the lack of established guidelines leaves them vulnerable to potential missteps. The situation highlights the pressing need for regulatory frameworks to ensure accountability and safety in AI development. With increasing scrutiny from governments and the public, these organizations must navigate a challenging landscape while maintaining innovation and ethical standards. Stakeholders are urged to push for clearer regulations to protect both developers and users.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/",
+            "relatedResources": []
         },
         {
             "date": "Feb 28 2026",
-            "headline": "Anthropic Decries Pentagon Blacklist Threat—Legal Battle Brews",
-            "title": "Anthropic Challenges Pentagon&#x27;s Supply Chain Risk Designation",
-            "content": "Anthropic has responded firmly after the Pentagon labeled its AI technology a &quot;supply chain risk,&quot; threatening to blacklist the company. This move comes after negotiations over the military&#x27;s use of Anthropic&#x27;s AI models failed. Anthropic argues that such a designation is legally unfounded and could set a dangerous precedent for AI industry-government relations. Organizations using Anthropic&#x27;s technology should prepare for potential disruptions and consider alternative solutions. The standoff reflects growing tensions between tech firms and government over AI deployment in sensitive sectors.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/anthropic-supply-chain-risk-shockwaves-silicon-valley/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "Anthropic vs. Pentagon—AI Ethics at Crossroads",
-            "title": "High-Stakes AI Clash: Anthropic and Pentagon Dispute Military Use",
-            "content": "Anthropic and the Pentagon are locked in a contentious debate over the application of AI in autonomous weapons and surveillance. The dispute raises critical questions about national security, ethical AI deployment, and the balance of power between government and private entities. As the military pushes for broader AI integration, Anthropic&#x27;s resistance highlights the complexities of setting ethical boundaries in AI technology. This ongoing conflict will likely influence future policy decisions and corporate strategies in AI development. Stakeholders should remain informed about the evolving regulatory landscape.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/27/anthropic-vs-the-pentagon-whats-actually-at-stake/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "OpenAI Fires Insider Trader—Market Integrity in Focus",
-            "title": "OpenAI Employee Dismissed for Prediction Market Insider Trading",
-            "content": "OpenAI has terminated an employee involved in insider trading on prediction markets like Polymarket and Kalshi. The incident underscores the vulnerabilities in prediction markets where employees with privileged information might exploit their positions. This breach of trust raises concerns about market integrity within tech firms. Companies should reinforce internal policies and monitoring to prevent similar occurrences. The case highlights the need for stringent ethical guidelines and oversight in emerging financial technologies.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi/",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "AI Agents Outpace Security—Enterprise Risk Grows",
-            "title": "Enterprise AI Adoption Surges Ahead of Security Frameworks",
-            "content": "The rapid adoption of AI agents in enterprises is surpassing existing security controls, creating significant vulnerabilities. These AI systems now have more access and connections than any other software, expanding the attack surface beyond traditional security measures. Without a robust framework in place, organizations face increased risks of data breaches and cyberattacks. Security teams must urgently develop and implement comprehensive strategies to manage these new challenges. The industry must prioritize the creation of standards to safeguard AI-driven environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/enterprise-mcp-adoption-is-outpacing-security-controls",
-            "relatedResources": []
-        },
-        {
-            "date": "Feb 27 2026",
-            "headline": "ChatGPT Hits 900M Users—Funding Soars to $110B",
-            "title": "ChatGPT&#x27;s User Base Expands as OpenAI Secures Major Funding",
-            "content": "OpenAI&#x27;s ChatGPT has reached a staggering 900 million weekly active users, coinciding with the company&#x27;s latest funding round of $110 billion. This rapid growth reflects the increasing reliance on AI-driven communication tools across various sectors. The substantial funding will likely fuel further advancements in AI capabilities and infrastructure. Organizations leveraging ChatGPT should anticipate enhanced features and scalability. The milestone underscores the transformative impact of AI on global communication and business operations.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/",
+            "headline": "Anthropic&#x27;s Claude Climbs App Store—Pentagon Dispute Boosts Visibility",
+            "title": "Anthropic&#x27;s Claude Ranks Second in App Store Amid Pentagon Negotiations",
+            "content": "Anthropic&#x27;s chatbot, Claude, has surged to the second spot on the App Store following heightened attention from its contentious negotiations with the Pentagon. The dispute, which centers around ethical AI deployment and contract terms, inadvertently boosted Claude&#x27;s visibility and popularity. This development underscores the influence of public and governmental interactions on market performance. As AI applications become more integrated into sensitive sectors, companies must balance innovation with ethical considerations to maintain consumer trust. Professionals in the AI field should monitor how public discourse can impact product adoption and reputation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -188,34 +135,61 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Feb 27 2026",
-            "headline": "AI Regulation Battle—Pentagon vs. Anthropic",
-            "title": "Inside the Regulatory Tug-of-War Over Military AI Use",
-            "content": "The Pentagon&#x27;s standoff with Anthropic over AI regulation continues to escalate, as debates intensify over who should control AI deployment in military contexts. The conflict is set against a backdrop of nationwide resistance to data center construction and polarized public opinion on AI governance. State legislator Alex Bores is advocating for a balanced approach, aiming to bridge divides between opposing factions. This regulatory battle will shape the future landscape of AI integration in defense and beyond. Stakeholders should closely monitor policy developments and prepare for shifts in regulatory frameworks.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/whos-really-running-ai-inside-the-billion-dollar-battle-over-regulation-with-alex-bores/",
+            "date": "Feb 28 2026",
+            "headline": "AI Infrastructure Boom—Billion-Dollar Deals Drive Growth",
+            "title": "Major AI Infrastructure Investments Propel Industry Expansion",
+            "content": "The AI industry is witnessing unprecedented growth fueled by billion-dollar infrastructure investments from tech giants like Meta, Oracle, Microsoft, Google, and OpenAI. These companies are allocating significant resources to enhance computational capabilities and support advanced AI models. The trend reflects a strategic focus on building robust frameworks to sustain future AI developments and applications. As demand for AI solutions rises across sectors, these investments are crucial for meeting technological and market needs. Industry professionals should anticipate increased collaboration and competition as companies vie for dominance in AI infrastructure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
             "date": "Feb 28 2026",
-            "headline": "Trump Bans Anthropic—Defense Secretary Declares Supply Chain Risk",
-            "title": "Defense Secretary Hegseth Designates Anthropic as Supply Chain Threat",
-            "content": "In a decisive move, Secretary of Defense Pete Hegseth has labeled Anthropic, an AI company, as a &quot;supply-chain risk&quot; shortly after President Donald Trump announced a ban on its products from federal use. The designation follows concerns over Anthropic&#x27;s AI systems and their potential vulnerabilities in defense applications. This decision reflects heightened scrutiny on AI vendors amid national security concerns. The ban affects Anthropic’s Claude AI, previously integrated in several government projects. Organizations using Anthropic&#x27;s technology should assess their supply chain dependencies and consider alternative AI solutions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/886632/pentagon-designates-anthropic-supply-chain-risk-ai-standoff",
+            "headline": "OpenAI Secures Pentagon Contract—Technical Safeguards Included",
+            "title": "OpenAI Announces Pentagon Deal with Enhanced Security Measures",
+            "content": "OpenAI CEO Sam Altman has confirmed a new defense contract with the Pentagon, highlighting the inclusion of technical safeguards to address ethical concerns. This move follows similar issues faced by Anthropic in its negotiations. The contract details provisions for safety red lines and legal protections to ensure responsible AI deployment in defense settings. This agreement marks a significant step in aligning AI advancements with national security interests while maintaining ethical standards. Industry stakeholders should consider the implications of such contracts on AI policy and development practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards/",
             "relatedResources": [
                 {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
+                    "label": "AI Governance Framework",
+                    "url": "/guides/ai-governance-framework.html",
+                    "icon": "fa-balance-scale"
                 }
             ]
+        },
+        {
+            "date": "Feb 28 2026",
+            "headline": "OpenAI&#x27;s Defense Deal—Safety and Legal Protocols Outlined",
+            "title": "OpenAI Details Agreement with Department of War on AI Deployment",
+            "content": "OpenAI has released specifics of its contract with the Department of War, emphasizing safety and legal protocols for AI system deployment in classified environments. The agreement outlines clear safety red lines and legal protections to mitigate risks associated with AI technologies in defense applications. These measures are designed to prevent misuse and ensure compliance with ethical standards. The contract highlights the growing intersection of AI and national security, prompting industry professionals to evaluate similar opportunities and challenges. Understanding these frameworks is essential for those involved in AI development and policy-making.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/our-agreement-with-the-department-of-war",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 28 2026",
+            "headline": "Vibe Coding with AI—Lessons from Google AI Studio",
+            "title": "Exploring Vibe Coding with Google AI Studio as a Collaborative Tool",
+            "content": "Vibe coding, a method of using AI to assist in creative coding processes, is gaining traction, with Google AI Studio serving as a notable example. This approach positions generative AI as a collaborative partner, helping developers jump-start ideas and sketch initial code structures. However, caution is advised when integrating AI into production systems, as its capabilities may not yet be suited for all tasks. Developers should leverage AI for exploratory phases while maintaining oversight to ensure quality and reliability. This trend underscores the evolving role of AI as a creative collaborator in software development.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/vibe-coding-with-overeager-ai-lessons-learned-from-treating-google-ai-studio",
+            "relatedResources": []
+        },
+        {
+            "date": "Feb 27 2026",
+            "headline": "Google&#x27;s Opal Redefines AI Agent Development for Enterprises",
+            "title": "Google Opal Introduces New Blueprint for Enterprise AI Agent Creation",
+            "content": "Google&#x27;s Opal has quietly emerged as a pivotal tool for enterprise teams, offering a new blueprint for developing AI agents. The platform addresses a critical debate within the AI community regarding the autonomy of AI agents. Striking a balance between control and freedom is essential to avoid costly workflow automation failures. Opal&#x27;s framework aims to optimize AI agent functionality while mitigating risks associated with excessive autonomy. Enterprises should consider adopting such structured approaches to enhance AI integration and operational efficiency. This development signals a shift towards more refined and effective AI agent deployment strategies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/googles-opal-just-quietly-showed-enterprise-teams-the-new-blueprint-for",
+            "relatedResources": []
         }
     ],
     "articles": {},
