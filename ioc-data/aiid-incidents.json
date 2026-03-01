@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1391",
+      "incident_id": 1391,
+      "title": "TBD.",
+      "date": "2026-03-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1192",
       "incident_id": 1192,
       "title": "16-Year-Old Allegedly Received Suicide Method Guidance from ChatGPT Before Death",
@@ -135,14 +143,6 @@
       "date": "2026-02-28",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1391",
-      "incident_id": 1391,
-      "title": "IUMI and TAPA Reportedly Linked Rising Cargo Theft and Freight Fraud to Digitized Deception and Purp",
-      "date": "2026-02-28",
-      "category": "fraud",
-      "severity": "high"
     },
     {
       "id": "AIID-1392",
@@ -1038,5 +1038,5 @@
     "last7Days": 20,
     "last30Days": 56
   },
-  "lastUpdated": "2026-03-01T08:50:57.937120+05:30"
+  "lastUpdated": "2026-03-01T10:51:36.005669+05:30"
 }
