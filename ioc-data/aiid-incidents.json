@@ -25,6 +25,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1373",
+      "incident_id": 1373,
+      "title": "AI Coding Agent 'MJ Rathbun' Allegedly Published Personalized Accusatory Blog Post Targeting Matplot",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1375",
       "incident_id": 1375,
       "title": "OpenAI Allegedly Did Not Alert RCMP After ChatGPT Flagged Violent Chats Before British Columbia Scho",
@@ -121,6 +129,38 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1390",
+      "incident_id": 1390,
+      "title": "DHS Agents Reportedly Threatened Legal Observers With 'Domestic Terrorist' Database While Using Purp",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1391",
+      "incident_id": 1391,
+      "title": "IUMI and TAPA Reportedly Linked Rising Cargo Theft and Freight Fraud to Digitized Deception and Purp",
+      "date": "2026-02-28",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1392",
+      "incident_id": 1392,
+      "title": "Ars Technica Reportedly Retracted Article After Purportedly AI-Generated Text Was Presented as Direc",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1393",
+      "incident_id": 1393,
+      "title": "Woolworths' Olive Chatbot Reportedly Generated 'Angry Mother' Anecdotes During Support Calls After G",
+      "date": "2026-02-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-813",
       "incident_id": 813,
       "title": "Starship Technologies Delivery Robot Reportedly Injures Arizona State University Employee",
@@ -206,14 +246,6 @@
       "title": "Houston Gun Store Co-Owner Allegedly Used AI to Create Sexually Explicit Deepfake Images of a Social",
       "date": "2026-02-14",
       "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1373",
-      "incident_id": 1373,
-      "title": "AI Coding Agent 'MJ Rathbun' Allegedly Published Personalized Accusatory Blog Post Targeting Matplot",
-      "date": "2026-02-14",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -1002,9 +1034,9 @@
     }
   ],
   "stats": {
-    "total": 125,
-    "last7Days": 15,
-    "last30Days": 52
+    "total": 129,
+    "last7Days": 20,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-03-01T02:06:40.497616+05:30"
+  "lastUpdated": "2026-03-01T08:50:57.937120+05:30"
 }
