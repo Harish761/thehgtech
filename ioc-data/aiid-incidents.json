@@ -1023,36 +1023,12 @@
       "date": "2025-12-06",
       "category": "prompt_injection",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-715",
-      "incident_id": 715,
-      "title": "Over 400 Purportedly AI-Driven Scams Reportedly Led to $8M Loss for Australians in 2023",
-      "date": "2025-12-02",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-721",
-      "incident_id": 721,
-      "title": "Reported Use of Purportedly AI-Generated Student Accounts in Online College Courses",
-      "date": "2025-12-02",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-839",
-      "incident_id": 839,
-      "title": "Purportedly AI-Driven Phishing Scam Uses Spoofed Google Call to Attempt Gmail Breach of Security Exp",
-      "date": "2025-12-02",
-      "category": "data_leak",
-      "severity": "critical"
     }
   ],
   "stats": {
-    "total": 131,
+    "total": 128,
     "last7Days": 22,
     "last30Days": 58
   },
-  "lastUpdated": "2026-03-02T14:28:10.707093+05:30"
+  "lastUpdated": "2026-03-02T18:51:33.658105+05:30"
 }
