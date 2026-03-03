@@ -4,117 +4,97 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 02 2026",
-            "headline": "Nick Andersen Takes Helm at CISA Amid Leadership Shift",
-            "title": "Nick Andersen Appointed Acting Director of CISA Following Gottumukkala&#x27;s Reassignment",
-            "content": "Nick Andersen has been appointed as the Acting Director of the Cybersecurity and Infrastructure Security Agency (CISA) following Madhu Gottumukkala&#x27;s reassignment within the Department of Homeland Security. Andersen, who previously served as CISA&#x27;s Deputy Director, steps in during a crucial time as the agency continues to fortify national cybersecurity defenses. This leadership change comes as CISA is actively engaged in addressing the rising threats of ransomware and state-sponsored cyber attacks. Andersen&#x27;s extensive experience in cybersecurity strategy and operations is expected to bolster CISA&#x27;s efforts in mitigating risks across critical infrastructure sectors. The transition highlights the agency&#x27;s ongoing commitment to strengthening its leadership team in response to evolving cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/nick-andersen-appointed-acting-director-of-cisa/",
+            "date": "Mar 03 2026",
+            "headline": "SANS Stormcast Highlights Emerging Cyber Threats—InfoCON Stays Green",
+            "title": "ISC Stormcast Discusses Current Cybersecurity Landscape with InfoCON at Green",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast highlights emerging cyber threats while maintaining the InfoCON status at green, indicating a stable threat landscape. This update provides insights into recent vulnerabilities and trends, emphasizing the importance of ongoing vigilance in the cybersecurity community. The podcast serves as a valuable resource for security professionals seeking to stay informed about the latest developments. Despite the green status, the SANS team advises continued monitoring of threat intelligence feeds to ensure rapid response to any changes. This proactive approach is critical in maintaining robust security postures across organizations.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32760",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
                 }
             ]
         },
         {
-            "date": "Mar 02 2026",
-            "headline": "AWS Security Hub Evolves—Cross-Domain Platform Launched",
-            "title": "AWS Expands Security Hub Into a Comprehensive Cross-Domain Security Platform",
-            "content": "Amazon Web Services (AWS) has announced the expansion of its Security Hub into a cross-domain security platform, aimed at reducing security tool sprawl. The AWS Security Hub Extended plan now correlates security findings across multiple domains, providing a unified view for security professionals. This development addresses the challenge of managing disparate security tools, enhancing the efficiency of threat detection and response. By integrating data from various sources, AWS aims to streamline security operations for its clients, particularly those with complex cloud environments. Organizations leveraging AWS services are encouraged to explore the new capabilities to optimize their security posture and reduce operational overhead.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/aws-expands-security-hub-into-a-cross-domain-security-platform/",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Global Outage Hits Claude—Anthropic Confirms Service Disruption",
-            "title": "Anthropic&#x27;s Claude Experiences Worldwide Outage Affecting All Platforms",
-            "content": "Anthropic has confirmed a global outage affecting its Claude AI platform, resulting in elevated error reports across all user interfaces. The disruption impacts users relying on Claude for AI-driven tasks, highlighting the platform&#x27;s critical role in various applications. The outage underscores the challenges of maintaining large-scale AI systems and the potential vulnerabilities they face. Anthropic is actively investigating the cause and working to restore service, emphasizing the importance of robust infrastructure to support AI operations. Users are advised to monitor updates from Anthropic for service restoration timelines and potential mitigation strategies.",
+            "date": "Mar 03 2026",
+            "headline": "Hackers Exploit CyberStrikeAI—Fortinet Firewalls Breached",
+            "title": "CyberStrikeAI Tool Misused by Hackers in Fortinet Firewall Attacks",
+            "content": "Researchers have identified that CyberStrikeAI, an open-source AI security testing platform, has been co-opted by hackers responsible for breaching hundreds of Fortinet FortiGate firewalls. This misuse of AI tools for offensive purposes highlights the dual-use nature of such technologies and the increasing sophistication of cybercriminals. The breach underscores vulnerabilities in Fortinet systems, with the potential for significant data exposure and operational disruption. Security professionals are urged to review firewall configurations and apply necessary patches to mitigate these risks. The incident reflects a growing trend of AI-driven attacks, necessitating enhanced defenses.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-a-worldwide-outage/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberstrikeai-tool-adopted-by-hackers-for-ai-powered-attacks/",
             "relatedResources": [
                 {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
+                    "label": "Fortinet Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+                    "icon": "fa-file-alt"
                 }
             ]
         },
         {
             "date": "Mar 02 2026",
-            "headline": "Safeguard SaaS Against Bots—SafeLine WAF Solution Detailed",
-            "title": "Protecting SaaS from Bot Attacks with SafeLine Web Application Firewall",
-            "content": "SafeLine Web Application Firewall (WAF) offers a robust solution for SaaS providers to defend against bot attacks that can skew user metrics and inflate server costs. As SaaS platforms experience rapid growth, they become prime targets for malicious bots that exploit increased traffic for fraudulent activities. SafeLine WAF provides real-time traffic analysis and automated threat detection to differentiate between legitimate users and bots. This proactive approach helps maintain data integrity and optimize resource allocation. SaaS teams are encouraged to implement advanced WAF solutions to safeguard their platforms and ensure accurate user engagement metrics.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/how-to-protect-your-saas-from-bot.html",
+            "headline": "OpenClaw Vulnerability Patched—AI Agent Risks Exposed",
+            "title": "Critical OpenClaw Vulnerability Highlights AI Agent Security Concerns",
+            "content": "A critical vulnerability in the OpenClaw AI tool has been patched, addressing a significant security flaw that posed risks to developers using the platform. The flaw, part of a series of security issues plaguing the tool, could have allowed unauthorized access or manipulation of AI agents. With OpenClaw&#x27;s rapid adoption, the vulnerability&#x27;s potential impact was substantial, affecting numerous development environments. This incident emphasizes the need for rigorous security assessments of AI tools before deployment. Developers are advised to update to the latest version to ensure protection against exploitation.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/critical-openclaw-vulnerability-ai-agent-risks",
             "relatedResources": [
                 {
-                    "label": "Threat Hunting Guide",
-                    "url": "/guides/threat-hunting-techniques.html",
-                    "icon": "fa-crosshairs"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
             "date": "Mar 02 2026",
-            "headline": "North Korean APT Breaches Air-Gapped Systems—New Tools Uncovered",
-            "title": "North Korean APT Targets Air-Gapped Systems with Sophisticated Toolset",
-            "content": "A North Korean advanced persistent threat (APT) group has launched a campaign targeting air-gapped systems, deploying a suite of tools including a new implant, loader, propagation tool, and two backdoors. These tools exploit Windows shortcut files to breach isolated networks, posing a significant threat to highly secure environments. The campaign highlights the persistent and evolving tactics of North Korean cyber actors in circumventing traditional security measures. Organizations with air-gapped systems are urged to review their security protocols and consider enhanced monitoring to detect and mitigate such sophisticated intrusions. This development underscores the importance of comprehensive security strategies in defending against state-sponsored threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/north-korean-apt-targets-air-gapped-systems-in-recent-campaign/",
+            "headline": "Google Patches 129 Android Flaws—Qualcomm Zero-Day Included",
+            "title": "Google Releases Update for 129 Android Vulnerabilities Including Zero-Day",
+            "content": "Google&#x27;s latest security update addresses 129 Android vulnerabilities, marking the highest number patched in a single month since 2018. Among these is a zero-day vulnerability affecting Qualcomm components, which was actively exploited before the patch. This comprehensive update is crucial for all Android users, as the vulnerabilities could lead to unauthorized access, data theft, or device compromise. Security teams should prioritize deploying these updates across all Android devices to mitigate potential exploits. This surge in vulnerabilities underscores the ongoing challenge of maintaining mobile security in a rapidly evolving threat landscape.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/android-security-update-march-2026/",
             "relatedResources": [
                 {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
             "date": "Mar 02 2026",
-            "headline": "Google Advances Chrome Security—Quantum-Safe Certificates in Development",
-            "title": "Google Developing Quantum-Safe HTTPS Certificates for Chrome Using MTCs",
-            "content": "Google is working on quantum-safe HTTPS certificates for its Chrome browser, leveraging Merkle Tree Certificates (MTCs) to enhance security against future quantum computing threats. This initiative is part of Google&#x27;s broader efforts to prepare for the advent of quantum computing, which poses potential risks to current cryptographic standards. By adopting MTCs, Google aims to ensure that Chrome remains secure against emerging quantum capabilities that could compromise traditional encryption methods. Organizations are encouraged to stay informed about developments in quantum-safe technologies and consider future-proofing their cryptographic infrastructures. This move by Google reflects the tech industry&#x27;s proactive stance in addressing quantum-era security challenges.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-working-towards-quantum-safe-chrome-https-certificates/",
+            "headline": "AI-Driven Devs Face Firewall Backlog Challenges",
+            "title": "Balancing Speed and Security in AI-Driven Development Environments",
+            "content": "The integration of AI and automation in development is intensifying the tug-of-war between speed and security, especially concerning firewall backlogs. As development teams accelerate software releases, security teams struggle to keep pace with the necessary security checks and balances. This growing disconnect can lead to vulnerabilities if not addressed collaboratively. Organizations are encouraged to adopt integrated DevSecOps practices, ensuring security is embedded throughout the development lifecycle. Bridging this gap is essential for maintaining robust security without compromising on innovation and speed.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/tug-of-war-firewall-backlogs-ai-driven-development",
             "relatedResources": []
         },
         {
             "date": "Mar 02 2026",
-            "headline": "RTF Files Conceal ZIPs—Security Risks Detailed",
-            "title": "Understanding the Security Implications of ZIP Files Embedded in RTF Documents",
-            "content": "A recent analysis by the SANS Internet Storm Center highlights the security risks associated with ZIP files embedded within Rich Text Format (RTF) documents. This technique can be exploited by attackers to conceal malicious payloads, bypassing traditional security filters. The report emphasizes the need for heightened scrutiny of RTF files, particularly in environments where document sharing is prevalent. Security professionals are advised to implement advanced scanning techniques and educate users on the risks of opening unexpected RTF attachments. This finding underscores the evolving tactics used by threat actors to deliver malware through seemingly benign documents.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32696",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
+            "headline": "FBI&#x27;s Winter SHIELD Boosts China Threat Prep",
+            "title": "FBI&#x27;s Winter SHIELD Initiative Enhances China Threat Preparedness",
+            "content": "The FBI, under the leadership of cyber chief Brett Leatherman, is advancing its Winter SHIELD campaign to bolster industry readiness against potential Chinese cyber threats. This initiative focuses on improving threat intelligence sharing and promoting basic cybersecurity hygiene among U.S. organizations. As geopolitical tensions rise, the FBI&#x27;s proactive measures aim to fortify defenses and ensure rapid response capabilities. Industry leaders are encouraged to engage with the FBI&#x27;s resources and recommendations to enhance their security postures. Winter SHIELD represents the bureau&#x27;s most public effort to date in addressing nation-state cyber threats.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/brett-leatherman-fbi-cyber-priorities-winter-shield/",
+            "relatedResources": []
         },
         {
             "date": "Mar 02 2026",
-            "headline": "ISC Stormcast Highlights—March 2nd Security Insights",
-            "title": "ISC Stormcast for March 2nd: Key Cybersecurity Updates and Trends",
-            "content": "The SANS Internet Storm Center&#x27;s Stormcast for March 2nd provides crucial updates on recent cybersecurity developments. The podcast covers a range of topics including emerging threats, vulnerabilities, and security trends that professionals should be aware of. With a focus on actionable intelligence, the Stormcast aims to equip network defenders with the insights needed to bolster their security posture. Listeners are encouraged to stay informed and adapt their defenses to the evolving threat landscape. The InfoCON level remains at green, indicating a stable threat environment. Regular updates like these are vital for maintaining robust cybersecurity defenses.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32756",
-            "relatedResources": []
+            "headline": "Global Crackdown: 30 &#x27;The Com&#x27; Members Arrested",
+            "title": "Project Compass Leads to Arrest of 30 &#x27;The Com&#x27; Members",
+            "content": "A global law enforcement operation known as Project Compass has resulted in the arrest of 30 alleged members of &#x27;The Com,&#x27; a notorious cybercriminal group. Initiated in January 2025, the crackdown also identified nearly 180 additional members worldwide. This operation highlights the international collaboration required to tackle cybercrime effectively. The arrests are expected to disrupt &#x27;The Com&#x27;s&#x27; operations significantly, reducing their capacity to conduct cyber attacks. Security professionals should remain vigilant as remaining members may attempt to regroup and continue illicit activities.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/30-alleged-members-the-com-arrested-project-compass",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
         },
         {
             "date": "Mar 19 2026",
@@ -143,12 +123,51 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 02 2026",
-            "headline": "Anthropic&#x27;s Claude Outage—Thousands Impacted by Service Disruption",
-            "title": "Widespread Service Disruption Affects Anthropic&#x27;s AI Chatbot Claude",
-            "content": "Anthropic&#x27;s AI chatbot Claude experienced a significant outage on Monday morning, disrupting service for thousands of users. The outage, which began at approximately 9 AM GMT, left users unable to access the chatbot&#x27;s services across multiple platforms. This disruption highlights the challenges faced by AI service providers in maintaining uptime and reliability. The technical team at Anthropic is currently investigating the root cause, with initial reports suggesting a potential issue with server load balancing. Users dependent on Claude for customer support and automated responses are advised to seek alternative solutions until services are restored. This incident underscores the critical need for robust infrastructure in AI deployment.",
+            "date": "Mar 03 2026",
+            "headline": "Cursor Surpasses $2B Revenue—Doubles in Three Months",
+            "title": "Startup Cursor Achieves $2 Billion Annualized Revenue Milestone",
+            "content": "Cursor, a four-year-old AI startup, has reportedly reached an annualized revenue of over $2 billion, doubling its run rate in just three months. This impressive growth highlights the company&#x27;s rapid expansion and the increasing demand for its AI-driven solutions. According to a Bloomberg source, Cursor&#x27;s strategic partnerships and innovative product offerings have played a crucial role in this financial achievement. The company&#x27;s success underscores the broader trend of AI startups experiencing accelerated growth as businesses continue to integrate AI into their operations. Industry professionals should monitor Cursor&#x27;s trajectory as it may influence market dynamics and competitive strategies.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/02/anthropics-claude-reports-widespread-outage/",
+            "sourceUrl": "https://techcrunch.com/2026/03/02/cursor-has-reportedly-surpassed-2b-in-annualized-revenue/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Mystery Device: US Chief Design Officer&#x27;s Unidentified Earbuds",
+            "title": "US Chief Design Officer Joe Gebbia Spotted with Unidentified Earbuds",
+            "content": "Joe Gebbia, the US Chief Design Officer, was seen using a mysterious pair of earbuds with a circular disc at a San Francisco coffee shop. This device resembles one featured in a recent OpenAI hoax advertisement, sparking curiosity and speculation among tech enthusiasts. While details about the earbuds remain unknown, their public appearance raises questions about potential new developments in wearable technology. The incident highlights the ongoing intrigue surrounding innovative tech gadgets and their potential applications. Industry experts should stay alert for further information, as this could indicate upcoming trends or product launches in the wearable tech space.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/joe-gebbia-mystery-metallic-device/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Deutsche Telekom Launches AI Assistant for All Calls",
+            "title": "Deutsche Telekom Partners with ElevenLabs for AI Call Assistant in Germany",
+            "content": "Deutsche Telekom, in collaboration with ElevenLabs, is launching an AI assistant to be integrated into all calls on its network in Germany. This innovative service requires no additional app, making it seamlessly accessible to users. The AI assistant aims to enhance customer experience by providing real-time assistance during phone conversations. This move positions Deutsche Telekom as a leader in integrating AI into telecommunications, potentially setting a new industry standard. Professionals in the telecom sector should consider the implications of AI-driven customer service enhancements and their impact on user satisfaction and operational efficiency.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/deutsche-telekom-elevenlabs-ai-phone-calls-mwc-2026/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "ChatGPT Uninstalls Spike 295% Post-DoD Deal",
+            "title": "Surge in ChatGPT App Uninstalls Following Department of Defense Deal",
+            "content": "ChatGPT has experienced a 295% increase in app uninstalls after announcing a deal with the Department of Defense (DoD). This development suggests consumer unease regarding privacy and security implications tied to government partnerships. In contrast, Claude, a competing AI, has seen a rise in downloads, indicating a shift in user preferences. The incident highlights the delicate balance AI companies must maintain between expanding business opportunities and retaining consumer trust. Professionals should evaluate the potential risks and benefits of government collaborations and their impact on public perception and market positioning.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -159,84 +178,46 @@ const websiteContent = {
         },
         {
             "date": "Mar 02 2026",
-            "headline": "Anti-AI Protest Draws Hundreds in London—King&#x27;s Cross Demonstration",
-            "title": "Hundreds Rally Against AI at London’s King’s Cross Tech Hub",
-            "content": "A large-scale protest against artificial intelligence took place in London’s King’s Cross tech district, drawing hundreds of demonstrators. The protest, held on February 28, saw participants marching through the area, which houses the UK headquarters of AI giants such as OpenAI, Meta, and Google DeepMind. Protesters chanted slogans like &quot;Pull the plug!&quot; and &quot;Stop the slop!&quot; to express their opposition to the rapid and unchecked development of AI technologies. This event reflects growing public concern over the ethical implications and societal impacts of AI, particularly in densely populated tech hubs. Organizers are calling for increased regulation and transparency in AI development.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/02/1133814/i-checked-out-londons-biggest-ever-anti-ai-protest/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Arctic Circle Data Centers—AI&#x27;s Quest for Cheap Energy",
-            "title": "Data Centers Move North: AI Labs Tap Arctic Energy Resources",
-            "content": "In a bid to meet the growing computational demands of AI research, data center operators are increasingly establishing facilities near the Arctic Circle. This trend is driven by the need for inexpensive and abundant energy resources, crucial for powering expansive AI labs. The northern regions offer natural cooling benefits and access to renewable energy sources, making them attractive locations for companies looking to scale their operations sustainably. This geographical shift highlights the global race to secure energy-efficient infrastructure as AI models become larger and more resource-intensive. Stakeholders in the tech industry should consider the environmental and logistical implications of this migration.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/ai-supremacy-data-center-expansion-arctic-circle/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "SK Telecom to Rebuild Core with AI—MWC 2026 Announcement",
-            "title": "SK Telecom Reveals AI-Centric Overhaul Plan at MWC 2026",
-            "content": "At the Mobile World Congress 2026 in Barcelona, SK Telecom unveiled its ambitious plan to restructure its operations around artificial intelligence. This strategic shift involves a comprehensive overhaul of the company&#x27;s network core, customer service, and internal systems. The initiative includes expanding data center capacity to the gigawatt scale and integrating advanced AI tools across various functions. SK Telecom&#x27;s move reflects a broader industry trend towards AI-driven innovation, aiming to enhance service efficiency and customer experience. Industry leaders should monitor this transformation as a potential model for leveraging AI in telecom operations.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/mwc-2026-sk-telecom-lays-out-plan-to-rebuild-its-core-around-ai/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "AI in Finance—98% Adoption Marks New Era",
-            "title": "Financial Services Reach AI Adoption Milestone, Report Finds",
-            "content": "According to Finastra&#x27;s Financial Services State of the Nation 2026 report, AI adoption in the financial sector has reached near-universal levels, with 98% of institutions now utilizing AI technologies. This marks a pivotal shift from experimental phases to full-scale integration, with only 2% of firms remaining as outliers. The report surveyed 1,509 senior executives across 11 markets, highlighting the transformative impact of AI on banking operations, risk management, and customer interactions. Financial institutions not yet embracing AI may face competitive disadvantages as the technology becomes a standard industry tool. Stakeholders should prioritize AI integration to remain viable.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-adoption-in-financial-services/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 01 2026",
-            "headline": "Anthropic&#x27;s Governance Dilemma—AI Regulation Lags Behind",
-            "title": "Lack of AI Regulation Leaves Anthropic and Peers Vulnerable",
-            "content": "Anthropic, along with industry leaders like OpenAI and Google DeepMind, faces increasing scrutiny over self-governance in the absence of comprehensive AI regulations. Despite promises to operate responsibly, these companies are navigating a landscape with limited external oversight. This regulatory gap raises concerns about accountability and ethical practices in AI development. As AI technologies continue to advance rapidly, the lack of formal guidelines poses risks not only to companies but also to broader societal interests. Policymakers and industry stakeholders must collaborate to establish robust regulatory frameworks that ensure responsible AI deployment.",
+            "headline": "OpenAI Faces Challenges in Government Collaboration",
+            "title": "OpenAI Struggles with Transition to National Security Infrastructure",
+            "content": "As OpenAI transitions from a consumer-focused startup to a key player in national security infrastructure, it faces challenges in managing its new responsibilities. The company appears unprepared for the complexities of government collaboration, raising concerns about its capacity to handle sensitive national security tasks. This situation reflects a broader issue within the AI industry, where companies often lack clear strategies for working with government entities. Industry leaders must develop robust frameworks to ensure effective and secure partnerships with governmental bodies. The evolving role of AI in national security demands careful consideration and strategic planning.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/",
+            "sourceUrl": "https://techcrunch.com/2026/03/02/openai-anthropic-department-of-defense-war-hegseth-ai-companies-work-with-us-government/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
                 }
             ]
         },
         {
-            "date": "Feb 28 2026",
-            "headline": "Billion-Dollar Deals Fuel AI Infrastructure Boom",
-            "title": "Major Infrastructure Investments Propel AI Development Forward",
-            "content": "The AI industry is witnessing a surge in billion-dollar infrastructure projects, with significant investments from tech giants like Meta, Oracle, Microsoft, Google, and OpenAI. These projects are crucial for supporting the computational demands of advanced AI models, driving innovation and scalability. The influx of capital into infrastructure highlights the strategic importance of robust data centers and network capabilities in sustaining AI growth. As companies compete to enhance their AI capabilities, the focus on infrastructure underscores the need for sustainable and efficient resource management. Tech leaders should consider the long-term impacts of these investments on the AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/",
+            "date": "Mar 02 2026",
+            "headline": "Anthropic Enhances Claude&#x27;s Memory—Eases AI Switching",
+            "title": "Anthropic Upgrades Claude to Facilitate AI Transition for Users",
+            "content": "Anthropic has enhanced Claude&#x27;s memory capabilities, making it easier for users to switch from other chatbots. This update, available to users on the free plan, includes a new prompt and a dedicated tool for importing data from other AI systems. These improvements aim to attract users dissatisfied with their current AI solutions, offering a more seamless transition experience. The move highlights Anthropic&#x27;s commitment to user-centric development and its competitive positioning in the AI market. Professionals should assess the potential benefits of Claude&#x27;s enhanced features and consider their implications for user retention and market share.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/887885/anthropic-claude-memory-upgrades-importing",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Mar 02 2026",
+            "headline": "Intuit Leverages 40 Years of Data Amid SaaS Downturn",
+            "title": "Intuit Banks on Historical Data to Navigate SaaS Market Challenges",
+            "content": "Intuit is relying on its extensive 40-year database of small business data to weather the current SaaS market downturn. The company has seen a roughly one-third decline in market capitalization since the beginning of the year, mirroring trends faced by other SaaS giants like Adobe and IBM. With a focus on leveraging historical insights, Intuit aims to maintain its competitive edge and adapt to changing market conditions. This strategy underscores the importance of data-driven decision-making in navigating economic uncertainties. Industry professionals should consider the role of historical data in strategic planning and resilience.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/intuit-is-betting-its-40-years-of-small-business-data-can-outlast-the",
+            "relatedResources": [
+                {
+                    "label": "Ibm Analysis",
+                    "url": "/articles/ibm-api-connect-cve-2026.html",
+                    "icon": "fa-file-alt"
                 }
             ]
         }
@@ -322,17 +303,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20127",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-25108",
-            "dateAdded": "Feb 24, 2026",
-            "vendor": "Soliton Systems K.K FileZen",
-            "description": "Soliton Systems K.K FileZen contains an OS command injection vulnerability when an user logs-in to the affected product and sends a specially crafted HTTP request.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25108",
             "isZeroDay": false
         }
     ],
