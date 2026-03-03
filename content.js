@@ -5,6 +5,103 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 03 2026",
+            "headline": "1.2M Exposed in University of Hawaii Breach—Sensitive Data Compromised",
+            "title": "University of Hawaii Cancer Center Breach Exposes 1.2 Million Records",
+            "content": "A significant data breach at the University of Hawaii Cancer Center has exposed the personal information of 1.2 million individuals. Hackers accessed names, Social Security numbers, driver&#x27;s license details, voter registration records, and sensitive health information. This breach highlights the ongoing vulnerabilities in healthcare institutions, which are frequent targets due to the high value of health data on the black market. Affected individuals are at risk of identity theft and fraud, underscoring the need for enhanced cybersecurity measures in educational and healthcare systems. The university is cooperating with law enforcement and has initiated steps to notify those impacted.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/1-2-million-affected-by-university-of-hawaii-cancer-center-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "OAuth Phishing Bypasses Link Checks—Microsoft Warns Users",
+            "title": "OAuth Phishing Exploits Legitimate Domains to Deliver Malware",
+            "content": "Microsoft has issued a warning about a new phishing tactic exploiting the OAuth authentication protocol. Attackers are using this method to redirect victims to malicious sites while utilizing legitimate identity provider domains like Microsoft Entra ID and Google Workspace. This approach renders traditional advice to &quot;check where the link points&quot; ineffective, as the links appear safe at first glance. Organizations using OAuth should be aware of this threat and consider implementing additional security layers such as multi-factor authentication and anomaly detection. This underscores the evolving sophistication of phishing tactics and the need for continuous vigilance.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4139872/oauth-phishers-make-check-where-the-link-points-advice-ineffective.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "AI Workload Chaos—Managing Identity in Complex Systems",
+            "title": "Solving the Workload Identity Crisis in AI-Driven Environments",
+            "content": "Organizations are grappling with an increasing complexity in AI workloads, leading to an identity crisis in managing these systems. As AI agents proliferate, maintaining secure and efficient identity management becomes challenging. The growing diversity of workloads demands robust solutions to ensure proper access controls and identity governance. This issue is critical as mismanaged identities can lead to unauthorized access and potential data breaches. Companies are encouraged to adopt comprehensive identity management frameworks that can scale with AI advancements, thereby mitigating risks and ensuring operational integrity.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/ai-agent-workload-identity-crisis",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Android Fixes Qualcomm Zero-Day—Critical Patch Released",
+            "title": "Android Update Addresses Critical Qualcomm Zero-Day Vulnerability",
+            "content": "Android has released a critical update to patch a zero-day vulnerability in Qualcomm&#x27;s graphics component. The flaw, identified as an integer overflow or wraparound, leads to memory corruption and affects devices using Qualcomm hardware. This vulnerability could be exploited to execute arbitrary code, posing a significant risk to user data and device security. Users are urged to update their devices immediately to mitigate potential exploitation. This patch highlights the importance of timely updates in protecting mobile devices from emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/android-update-patches-exploited-qualcomm-zero-day/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Iran Hacktivism Rises—State Attacks Remain Low",
+            "title": "Increased Hacktivist Activity in Iran as State-Sponsored Attacks Decline",
+            "content": "The cybersecurity landscape in Iran is witnessing a surge in hacktivist activities, though state-sponsored cyberattacks remain low. Despite numerous claims by hacktivist groups, many have not been substantiated by independent verification. This trend reflects a shift in focus towards non-state actors engaging in cyber activities for political or social causes. Cybersecurity professionals should monitor these developments closely, as hacktivist actions can still disrupt operations and cause reputational damage. Organizations should ensure robust defenses against both hacktivist and state-sponsored threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/iran-cyber-front-hacktivist-activity-rises-but-state-sponsored-attacks-stay-low/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Chrome Flaw Let Extensions Hijack Gemini’s Permissions",
+            "title": "Vulnerability in Chrome Extensions Allowed Unauthorized Access to Gemini",
+            "content": "Researchers have identified and patched a vulnerability in the &quot;Live in Chrome&quot; feature that allowed extensions to inherit permissions from Gemini. This flaw enabled malicious extensions to access the camera, microphone, and files without user consent. The vulnerability has been addressed in recent updates, and users are advised to ensure their Chrome browsers are up-to-date. This incident underscores the importance of scrutinizing browser extensions and maintaining strict permission controls to prevent unauthorized access to sensitive resources.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/chrome-flaw-let-extensions-hijack-geminis-camera-mic-and-file-access",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Drone Strikes Damage AWS Data Centers in Middle East",
+            "title": "AWS Data Centers in UAE and Bahrain Hit by Drone Strikes",
+            "content": "Amazon has confirmed damage to three AWS data centers in the United Arab Emirates and one in Bahrain due to drone strikes. The attacks have caused significant outages, affecting dozens of cloud computing services across the region. This incident highlights the vulnerabilities of critical infrastructure to physical attacks, particularly in geopolitically sensitive areas. AWS is working to restore services and ensure the resilience of its operations. This serves as a reminder for organizations to have robust disaster recovery and business continuity plans in place.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/technology/amazon-drone-strikes-damaged-aws-data-centers-in-middle-east/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Cloud Security Hardening",
+                    "url": "/guides/cloud-security-hardening.html",
+                    "icon": "fa-cloud"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
             "headline": "SANS Stormcast Highlights Emerging Cyber Threats—InfoCON Stays Green",
             "title": "ISC Stormcast Discusses Current Cybersecurity Landscape with InfoCON at Green",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast highlights emerging cyber threats while maintaining the InfoCON status at green, indicating a stable threat landscape. This update provides insights into recent vulnerabilities and trends, emphasizing the importance of ongoing vigilance in the cybersecurity community. The podcast serves as a valuable resource for security professionals seeking to stay informed about the latest developments. Despite the green status, the SANS team advises continued monitoring of threat intelligence feeds to ensure rapid response to any changes. This proactive approach is critical in maintaining robust security postures across organizations.",
@@ -34,69 +131,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Mar 02 2026",
-            "headline": "OpenClaw Vulnerability Patched—AI Agent Risks Exposed",
-            "title": "Critical OpenClaw Vulnerability Highlights AI Agent Security Concerns",
-            "content": "A critical vulnerability in the OpenClaw AI tool has been patched, addressing a significant security flaw that posed risks to developers using the platform. The flaw, part of a series of security issues plaguing the tool, could have allowed unauthorized access or manipulation of AI agents. With OpenClaw&#x27;s rapid adoption, the vulnerability&#x27;s potential impact was substantial, affecting numerous development environments. This incident emphasizes the need for rigorous security assessments of AI tools before deployment. Developers are advised to update to the latest version to ensure protection against exploitation.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/critical-openclaw-vulnerability-ai-agent-risks",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Google Patches 129 Android Flaws—Qualcomm Zero-Day Included",
-            "title": "Google Releases Update for 129 Android Vulnerabilities Including Zero-Day",
-            "content": "Google&#x27;s latest security update addresses 129 Android vulnerabilities, marking the highest number patched in a single month since 2018. Among these is a zero-day vulnerability affecting Qualcomm components, which was actively exploited before the patch. This comprehensive update is crucial for all Android users, as the vulnerabilities could lead to unauthorized access, data theft, or device compromise. Security teams should prioritize deploying these updates across all Android devices to mitigate potential exploits. This surge in vulnerabilities underscores the ongoing challenge of maintaining mobile security in a rapidly evolving threat landscape.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/android-security-update-march-2026/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "AI-Driven Devs Face Firewall Backlog Challenges",
-            "title": "Balancing Speed and Security in AI-Driven Development Environments",
-            "content": "The integration of AI and automation in development is intensifying the tug-of-war between speed and security, especially concerning firewall backlogs. As development teams accelerate software releases, security teams struggle to keep pace with the necessary security checks and balances. This growing disconnect can lead to vulnerabilities if not addressed collaboratively. Organizations are encouraged to adopt integrated DevSecOps practices, ensuring security is embedded throughout the development lifecycle. Bridging this gap is essential for maintaining robust security without compromising on innovation and speed.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cloud-security/tug-of-war-firewall-backlogs-ai-driven-development",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "FBI&#x27;s Winter SHIELD Boosts China Threat Prep",
-            "title": "FBI&#x27;s Winter SHIELD Initiative Enhances China Threat Preparedness",
-            "content": "The FBI, under the leadership of cyber chief Brett Leatherman, is advancing its Winter SHIELD campaign to bolster industry readiness against potential Chinese cyber threats. This initiative focuses on improving threat intelligence sharing and promoting basic cybersecurity hygiene among U.S. organizations. As geopolitical tensions rise, the FBI&#x27;s proactive measures aim to fortify defenses and ensure rapid response capabilities. Industry leaders are encouraged to engage with the FBI&#x27;s resources and recommendations to enhance their security postures. Winter SHIELD represents the bureau&#x27;s most public effort to date in addressing nation-state cyber threats.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/brett-leatherman-fbi-cyber-priorities-winter-shield/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Global Crackdown: 30 &#x27;The Com&#x27; Members Arrested",
-            "title": "Project Compass Leads to Arrest of 30 &#x27;The Com&#x27; Members",
-            "content": "A global law enforcement operation known as Project Compass has resulted in the arrest of 30 alleged members of &#x27;The Com,&#x27; a notorious cybercriminal group. Initiated in January 2025, the crackdown also identified nearly 180 additional members worldwide. This operation highlights the international collaboration required to tackle cybercrime effectively. The arrests are expected to disrupt &#x27;The Com&#x27;s&#x27; operations significantly, reducing their capacity to conduct cyber attacks. Security professionals should remain vigilant as remaining members may attempt to regroup and continue illicit activities.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/30-alleged-members-the-com-arrested-project-compass",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -122,6 +156,109 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Mar 03 2026",
+            "headline": "Physical AI Boosts Customer Service ROI Amid Labor Shortages",
+            "title": "Physical AI Adoption Enhances ROI in Customer Service Operations",
+            "content": "Businesses are increasingly turning to physical AI to enhance customer service ROI as labor shortages persist. The integration of digital intelligence with human-like physical interactions is proving effective in handling complex tasks beyond routine automation. A notable development is the partnership between KDDI and other firms, aiming to deploy AI-driven solutions that mimic human customer service representatives. This shift is critical as companies seek efficient ways to maintain service quality with fewer human resources. Organizations should evaluate how physical AI can complement existing operations to optimize customer interactions and reduce operational costs.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/physical-ai-adoption-boosts-customer-service-roi/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Santander, Mastercard Complete AI-Driven Payment Pilot in Europe",
+            "title": "Santander and Mastercard Conduct Europe&#x27;s First AI-Executed Payment",
+            "content": "In a groundbreaking development, Banco Santander and Mastercard have successfully executed Europe&#x27;s first AI-driven payment within a live banking network. The AI agent autonomously initiated and completed the transaction without human intervention, marking a significant milestone in fintech innovation. This pilot demonstrates the potential for AI to streamline payment processes, reducing the need for manual oversight and enhancing transaction efficiency. Financial institutions should explore AI&#x27;s capabilities in automating payments to improve operational efficiency and customer satisfaction. As AI continues to evolve, its integration into financial systems could redefine traditional banking processes.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/santander-and-mastercard-run-europe-first-ai-executed-payment-pilot/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "AI-Native Networks Prove Viable at MWC 2026—6G Vision Realized",
+            "title": "AI-Native Networks Transition from 6G Promise to Reality at MWC 2026",
+            "content": "The Mobile World Congress 2026 in Barcelona showcased the tangible progress of AI-native networks, previously considered a future promise of 6G technology. Major telecom vendors, chipmakers, and operators unveiled advancements in AI-RAN (Radio Access Networks), demonstrating operational capabilities that surpass theoretical concepts. These developments highlight a shift toward networks that leverage artificial intelligence for enhanced efficiency and performance. Telecom professionals should prepare for the integration of AI-RAN by updating infrastructure and training personnel to manage these advanced systems. The realization of AI-native networks marks a pivotal moment in the evolution of telecommunications.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-native-networks-mwc-2026/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 02 2026",
+            "headline": "Apple Considers Google Servers for AI-Powered Siri Upgrade",
+            "title": "Apple Explores Google Servers for Gemini-Powered Siri Enhancement",
+            "content": "Apple is in discussions with Google to utilize its servers for a new version of Siri powered by Google&#x27;s Gemini AI models. This collaboration aims to meet Apple&#x27;s stringent privacy requirements while enhancing Siri&#x27;s capabilities with advanced AI technology. The move follows Apple&#x27;s announcement in January regarding the integration of Gemini models to improve Siri&#x27;s performance. Tech professionals should monitor this development as it could signal a shift in how major tech companies collaborate on AI solutions. Ensuring compliance with privacy standards while leveraging powerful AI models remains a critical focus for industry leaders.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/887802/apple-ai-siri-google-servers",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 02 2026",
+            "headline": "Alibaba&#x27;s Qwen3.5-9B Outperforms OpenAI&#x27;s GPT-OSS-120B on Laptops",
+            "title": "Alibaba&#x27;s Qwen3.5-9B Surpasses OpenAI&#x27;s GPT-OSS-120B in Performance",
+            "content": "Alibaba&#x27;s Qwen Team has released the Qwen3.5-9B, an open-source AI model that outperforms OpenAI&#x27;s GPT-OSS-120B, with the advantage of running efficiently on standard laptops. Despite ongoing political challenges in the U.S. AI sector, China&#x27;s advancements continue unabated, showcasing Alibaba&#x27;s commitment to open-source AI development. This model&#x27;s ability to operate without specialized hardware makes it accessible to a broader range of users, potentially democratizing AI application development. Developers should consider the Qwen3.5-9B for projects requiring robust AI capabilities without the need for high-end infrastructure.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/alibabas-small-open-source-qwen3-5-9b-beats-openais-gpt-oss-120b-and-can-run",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Mar 02 2026",
+            "headline": "Users Abandon ChatGPT for Claude—Switching Guide Available",
+            "title": "Growing User Shift from ChatGPT to Claude Amid Controversies",
+            "content": "Following recent controversies, users are increasingly abandoning OpenAI&#x27;s ChatGPT in favor of Claude, an alternative AI chatbot. This trend reflects growing concerns over ChatGPT&#x27;s handling of user data and content moderation. TechCrunch provides a detailed guide for users looking to transition to Claude, highlighting steps to migrate data and customize settings. Professionals relying on AI chatbots should assess the implications of these controversies on their operations and consider alternatives that align with their privacy and functionality needs. Staying informed about AI ethics and user trust is crucial in this evolving landscape.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/02/users-are-ditching-chatgpt-for-claude-heres-how-to-make-the-switch/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Mar 02 2026",
+            "headline": "Supreme Court Leaves AI Art Copyright Ruling Intact",
+            "title": "AI-Generated Art Cannot Be Copyrighted—Supreme Court Declines Review",
+            "content": "The U.S. Supreme Court has decided not to review a lower court ruling that AI-generated art cannot be copyrighted, a decision that maintains the status quo in intellectual property law. Stephen Thaler, a computer scientist, had appealed the decision after his AI-created work was denied copyright protection. This outcome underscores the legal challenges surrounding AI-generated content and its recognition under current copyright laws. Artists and creators using AI should be aware of these limitations and explore alternative ways to protect their work. The ruling highlights the need for updated legal frameworks to address the complexities of AI-generated creations.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/887678/supreme-court-ai-art-copyright",
+            "relatedResources": []
+        },
         {
             "date": "Mar 03 2026",
             "headline": "Cursor Surpasses $2B Revenue—Doubles in Three Months",
@@ -173,51 +310,6 @@ const websiteContent = {
                     "label": "LLM Security & Prompt Injection",
                     "url": "/guides/llm-security-prompt-injection.html",
                     "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "OpenAI Faces Challenges in Government Collaboration",
-            "title": "OpenAI Struggles with Transition to National Security Infrastructure",
-            "content": "As OpenAI transitions from a consumer-focused startup to a key player in national security infrastructure, it faces challenges in managing its new responsibilities. The company appears unprepared for the complexities of government collaboration, raising concerns about its capacity to handle sensitive national security tasks. This situation reflects a broader issue within the AI industry, where companies often lack clear strategies for working with government entities. Industry leaders must develop robust frameworks to ensure effective and secure partnerships with governmental bodies. The evolving role of AI in national security demands careful consideration and strategic planning.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/02/openai-anthropic-department-of-defense-war-hegseth-ai-companies-work-with-us-government/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Anthropic Enhances Claude&#x27;s Memory—Eases AI Switching",
-            "title": "Anthropic Upgrades Claude to Facilitate AI Transition for Users",
-            "content": "Anthropic has enhanced Claude&#x27;s memory capabilities, making it easier for users to switch from other chatbots. This update, available to users on the free plan, includes a new prompt and a dedicated tool for importing data from other AI systems. These improvements aim to attract users dissatisfied with their current AI solutions, offering a more seamless transition experience. The move highlights Anthropic&#x27;s commitment to user-centric development and its competitive positioning in the AI market. Professionals should assess the potential benefits of Claude&#x27;s enhanced features and consider their implications for user retention and market share.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/887885/anthropic-claude-memory-upgrades-importing",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Intuit Leverages 40 Years of Data Amid SaaS Downturn",
-            "title": "Intuit Banks on Historical Data to Navigate SaaS Market Challenges",
-            "content": "Intuit is relying on its extensive 40-year database of small business data to weather the current SaaS market downturn. The company has seen a roughly one-third decline in market capitalization since the beginning of the year, mirroring trends faced by other SaaS giants like Adobe and IBM. With a focus on leveraging historical insights, Intuit aims to maintain its competitive edge and adapt to changing market conditions. This strategy underscores the importance of data-driven decision-making in navigating economic uncertainties. Industry professionals should consider the role of historical data in strategic planning and resilience.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/intuit-is-betting-its-40-years-of-small-business-data-can-outlast-the",
-            "relatedResources": [
-                {
-                    "label": "Ibm Analysis",
-                    "url": "/articles/ibm-api-connect-cve-2026.html",
-                    "icon": "fa-file-alt"
                 }
             ]
         }
