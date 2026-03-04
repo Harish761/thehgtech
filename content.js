@@ -5,6 +5,110 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 04 2026",
+            "headline": "Iran&#x27;s Cyber Retaliation—A Temporary Reprieve Amid Conflict",
+            "title": "Iranian Cyber Threats Linger Despite Lack of Immediate Retaliation",
+            "content": "Despite heightened tensions due to the ongoing conflict between the US, Israel, and Iran, the anticipated wave of Iranian cyberattacks has not yet materialized. Experts caution that Iran&#x27;s cyber capabilities remain a significant threat, as it operates one of the world&#x27;s most active cyber operations. The UK National Cyber Security Centre has been on high alert, monitoring potential threats to critical infrastructure and government networks. While the immediate danger appears to be averted, organizations should remain vigilant and strengthen their cybersecurity postures. This situation underscores the persistent risk posed by state-sponsored cyber activities.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4140572/iranian-cyberattacks-fail-to-materialize-but-threat-remains-acute.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "OAuth Exploited—Redirects Lead to Phishing, Malware",
+            "title": "Attackers Exploit OAuth Redirects for Phishing and Malware Distribution",
+            "content": "Researchers have uncovered a new attack vector where cybercriminals are exploiting OAuth&#x27;s built-in redirects to deceive users. By redirecting from legitimate Microsoft or Google login pages, attackers are able to lead unsuspecting users to phishing sites or malware downloads. This technique takes advantage of the trust users place in well-known authentication services, making it particularly insidious. Organizations relying on OAuth for authentication should educate users about this threat and implement additional security measures, such as multi-factor authentication, to mitigate risks. This highlights the evolving tactics used by cybercriminals to exploit trusted systems.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/attackers-abuse-oauths-built-in-redirects-to-launch-phishing-and-malware-attacks",
+            "relatedResources": [
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "Cracked Software—A Trojan Horse for Malware Infiltration",
+            "title": "Pirated Software Turns Employees into Unwitting Malware Carriers",
+            "content": "A growing trend sees employees downloading pirated software, inadvertently introducing malware into corporate environments. These &quot;cracked&quot; applications often come bundled with malicious payloads capable of stealing credentials, deploying cryptominers, or facilitating ransomware attacks. This behavior poses significant risks to organizations, as it bypasses traditional security measures and exploits human error. Companies should enforce strict software policies and conduct regular security training to prevent such incidents. This serves as a reminder of the critical role employee behavior plays in maintaining cybersecurity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/how-pirated-software-turns-helpful-employees-into-malware-delivery-agents/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "JetStream Secures $34M—Aims to Demystify AI Security",
+            "title": "AI Security Startup JetStream Launches with $34 Million Funding",
+            "content": "JetStream, a new player in the AI security landscape, has launched with a substantial $34 million in seed funding. The startup aims to provide organizations with enhanced visibility into AI operations across their environments, addressing a critical need for transparency and security in AI deployments. By leveraging this funding, JetStream plans to develop solutions that help businesses understand and secure their AI systems. This move reflects the growing demand for specialized security tools that cater to the unique challenges posed by AI technologies. Organizations should monitor JetStream&#x27;s progress as it seeks to fill this vital niche.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ai-security-firm-jetstream-launches-with-34-million-in-seed-funding/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "Qualcomm Bug Exploited—Patch Android Devices Now",
+            "title": "Critical Qualcomm Vulnerability Exploited in Android Devices",
+            "content": "Google has released a patch addressing 129 vulnerabilities in Android, including a critical flaw in a Qualcomm component that is actively being exploited. This vulnerability, affecting a broad range of Android devices, poses significant risks as it allows attackers to execute arbitrary code. Users are urged to update their devices immediately to mitigate potential threats. This incident highlights the importance of timely patch management in maintaining device security. Security professionals should ensure that all Android devices within their networks are updated to the latest software versions.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/high-severity-qualcomm-bug-hits-android-devices-in-targeted-attacks",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "LastPass Targeted—Beware of Phishing Campaign",
+            "title": "LastPass Alerts Users to New Phishing Campaign",
+            "content": "LastPass has issued a warning about a sophisticated phishing campaign targeting its users. Attackers are sending fake alerts that mimic LastPass notifications, claiming unauthorized access or master password changes. These messages are designed to trick users into revealing sensitive information. LastPass users are advised to verify any alerts directly through the official LastPass application and enable multi-factor authentication for added security. This incident serves as a reminder of the persistent threat of phishing attacks and the importance of remaining vigilant against social engineering tactics.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/lastpass-warns-of-new-phishing-campaign/",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "OT SOC Blueprint—Webinar on Safety and Continuity",
+            "title": "Webinar Offers Blueprint for Designing an OT Security Operations Center",
+            "content": "SecurityWeek is hosting a webinar focused on designing an Operational Technology (OT) Security Operations Center (SOC) to enhance safety, reliability, and business continuity. The webinar will explore strategies for leveraging an integrated OT security platform to safeguard critical operations. Participants will gain insights into best practices for building resilient OT security architectures. As cyber threats increasingly target industrial systems, establishing a robust OT SOC is essential for protecting infrastructure and ensuring uninterrupted operations. Security professionals interested in fortifying their OT environments should consider attending this informative session.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/webinar-today-designing-an-ot-soc-for-safety-reliability-and-business-continuity/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
             "headline": "Interpol Busts African Cybercrime Ring—574 Arrested",
             "title": "Interpol and Threat Hunter Team Dismantle African Cybercrime Syndicate",
             "content": "Interpol, with the assistance of threat hunter Will Thomas and his team, has successfully dismantled a major African cybercrime syndicate. The operation resulted in the arrest of 574 suspects and the recovery of over $3 million. The team also decrypted six different malware variants, significantly disrupting the syndicate&#x27;s operations. This effort underscores the importance of collaboration between law enforcement and cybersecurity experts in combating organized cybercrime. Professionals are encouraged to enhance cooperation with law enforcement to address similar threats in their regions.",
@@ -43,71 +147,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Mar 03 2026",
-            "headline": "VMware Aria Operations RCE Exploited—CISA Issues Alert",
-            "title": "CISA Warns of Exploited VMware Aria Operations RCE Vulnerability",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has flagged a remote code execution (RCE) vulnerability in VMware Aria Operations, tracked as CVE-2026-22719, as actively exploited. This flaw allows attackers to execute arbitrary code on affected systems, posing significant risks to organizations using the software. CISA has added this vulnerability to its Known Exploited Vulnerabilities catalog, urging administrators to apply patches immediately. Organizations using VMware Aria Operations should prioritize patching to mitigate potential exploitation.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-vmware-aria-operations-rce-flaw-as-exploited-in-attacks/",
-            "relatedResources": [
-                {
-                    "label": "CVE Tracker",
-                    "url": "/cve-tracker.html",
-                    "icon": "fa-bug"
-                },
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "AkzoNobel Confirms Cyberattack—U.S. Site Breached",
-            "title": "AkzoNobel Confirms Network Breach at U.S. Facility",
-            "content": "AkzoNobel, a leading Dutch paint manufacturer, has confirmed a cyberattack on one of its U.S. sites. The breach allowed unauthorized access to the company&#x27;s network, though the extent of the intrusion remains under investigation. AkzoNobel is working with cybersecurity experts to assess the impact and strengthen its defenses. The incident highlights the persistent threat of cyberattacks on multinational corporations and the need for robust security measures. Companies are advised to review and enhance their cybersecurity frameworks to prevent similar breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/paint-maker-giant-akzonobel-confirms-cyberattack-on-us-site/",
-            "relatedResources": [
-                {
-                    "label": "NIST CSF 2.0 Implementation",
-                    "url": "/guides/nist-csf-2-implementation.html",
-                    "icon": "fa-check-double"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Mass iOS Attack—Exploits Linked to U.S. Developers",
-            "title": "U.S.-Developed Exploits Tied to First Mass iOS Attack",
-            "content": "Researchers have traced the origins of a mass iOS attack to exploits possibly developed in the U.S., moving through a spyware vendor to Russian and Chinese cybercriminals. This marks the first known large-scale attack on iOS devices, raising concerns about the proliferation of advanced exploits. The involvement of state-linked actors suggests a complex supply chain of cyber capabilities. iOS users and security teams should ensure devices are updated and monitor for unusual activity. This incident underscores the need for vigilance against sophisticated, cross-border cyber threats.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/coruna-ios-exploit-kit-leaked-us-framework/",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Facebook Outage—Global Access Disruption Hits Users",
-            "title": "Facebook Experiences Worldwide Outage Affecting User Access",
-            "content": "Facebook is currently facing a widespread outage, leaving users around the globe unable to access their accounts. The cause of the disruption is not yet clear, and Facebook&#x27;s technical teams are working to resolve the issue. This outage highlights the vulnerabilities of centralized social media platforms and the potential impact on millions of users. Users are advised to stay informed through official channels and refrain from sharing sensitive information until services are restored. The incident serves as a reminder of the importance of having contingency plans for communication disruptions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/technology/facebook-hit-with-worldwide-outage-stating-accounts-are-unavailable/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -135,6 +174,104 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Mar 04 2026",
+            "headline": "Raycast&#x27;s Glaze Simplifies Software Creation—No Coding Needed",
+            "title": "Raycast’s Glaze Platform Enables Code-Free Software Development",
+            "content": "Raycast has unveiled Glaze, an innovative platform designed to allow users to build software without any coding knowledge. While tools like Claude Code have paved the way for code-free development, Glaze aims to streamline the process further by simplifying the interaction with a computer&#x27;s terminal and easing software deployment and maintenance. This platform is particularly beneficial for non-developers, enabling them to participate in software creation without the steep learning curve traditionally associated with coding. The introduction of Glaze highlights a growing trend towards democratizing software development, making it accessible to a wider audience. Users interested in leveraging Glaze should familiarize themselves with basic terminal operations to maximize its potential.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/888866/raycast-glaze-vibe-code-app-store",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "Aikido&#x27;s Offshore Data Center—Harnessing Wind Energy",
+            "title": "Aikido to Deploy Data Center Under Offshore Wind Turbine",
+            "content": "Offshore wind developer Aikido plans to deploy a small data center beneath a floating offshore wind turbine later this year. This innovative approach leverages the proximity to renewable energy sources, potentially reducing the environmental impact and operational costs of data centers. The initiative reflects a growing trend towards sustainable data infrastructure, as companies seek to minimize their carbon footprints. By situating data centers offshore, Aikido aims to utilize the consistent energy supply from wind power, enhancing both efficiency and sustainability. Industry professionals should monitor this development as a potential model for future data center deployments.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/04/who-needs-data-centers-in-space-when-they-can-float-offshore/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "Physical AI&#x27;s Rise—Industry Convergence Drives Growth",
+            "title": "Physical AI Gains Momentum as Industry Converges on New Frontiers",
+            "content": "The technology sector is witnessing a surge in interest around Physical AI, driven by the simultaneous convergence of multiple technological advancements. Unlike a singular breakthrough, this momentum is characterized by the integration of AI into physical systems, enhancing capabilities across various industries. This trend reflects a broader shift towards embedding intelligence into tangible products, expanding the scope of AI applications. As companies and developers explore these new possibilities, the implications for industries such as robotics, manufacturing, and healthcare are profound. Stakeholders should consider how Physical AI could reshape their operational strategies and product offerings.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/physical-ai-global-race-robots-manufacturing-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "Secret AI Conference Sparks Political Resistance Movement",
+            "title": "Secret Meeting in New Orleans Ignites AI Political Resistance",
+            "content": "In January, a clandestine conference on artificial intelligence took place at a New Orleans Marriott, gathering around 90 political, community, and thought leaders. The event, shrouded in secrecy, aimed to discuss the societal and ethical implications of AI technology. Attendees, including church leaders and conservative academics, were unaware of each other&#x27;s participation until arrival. This meeting has since catalyzed a political resistance movement focused on addressing AI&#x27;s potential impacts on society. The gathering underscores the growing concern among various sectors about the unchecked advancement of AI technologies. Observers should note the potential for increased regulatory scrutiny and advocacy efforts.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/888841/pro-human-ai-declaration-fli",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "AI Agents Favor Bitcoin—Finance Chiefs Must Adapt",
+            "title": "AI Agents&#x27; Preference for Bitcoin Reshapes Financial Architecture",
+            "content": "AI agents are increasingly opting for Bitcoin as their preferred method of digital wealth storage, prompting finance chiefs to rethink their existing financial architectures. This trend is driven by the internal logic of economically autonomous AI systems, which prioritize Bitcoin&#x27;s decentralized and secure nature. Research by the Bitcoin Policy Institute highlights how these preferences could influence corporate capital flows and financial strategies. As AI systems gain more autonomy, businesses must adapt to accommodate this shift, potentially affecting everything from transaction processing to asset management. Financial professionals should consider the implications for future AI-driven economic models.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-agents-prefer-bitcoin-new-finance-architecture/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "Google Embraces Robotics—Intrinsic Joins Core Operations",
+            "title": "Google Integrates Intrinsic for Industrial Robotics AI Expansion",
+            "content": "Google has officially integrated Intrinsic, a company specializing in AI models and software for industrial robotics, into its core operations. This move signifies Google&#x27;s strategic commitment to advancing its capabilities in the industrial robotics sector. Intrinsic, previously a moonshot project under Alphabet, will continue as a distinct entity within Google, focusing on making industrial robotics more accessible. This integration highlights Google&#x27;s broader strategy to leverage AI in enhancing automation and efficiency across industries. As this development unfolds, industry stakeholders should assess potential collaborations and innovations emerging from Google&#x27;s expanded robotics initiatives.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/google-industrial-robotics-ai-physical-ai-intrinsic/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Pixel Update Empowers Gemini—AI Orders Groceries, More",
+            "title": "Google&#x27;s Pixel Update Enables Gemini AI to Perform Tasks",
+            "content": "Google&#x27;s latest March update for Pixel phones introduces new capabilities for its Gemini AI assistant, including the ability to order groceries and book rides. This feature, showcased during Samsung&#x27;s recent Unpacked event, is now available to users, enhancing the functionality and convenience of Pixel devices. By enabling Gemini to perform practical tasks, Google continues to push the boundaries of AI integration in consumer technology. This update reflects a broader trend towards more personalized and autonomous digital assistants. Users should explore these new features to optimize their daily routines and interactions with technology.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/888295/google-gemini-pixel-drop-march-2026",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 04 2026",
             "headline": "AI Startups Inflate Valuations—Two Price Equity Sales",
             "title": "AI Startups Use Dual Pricing to Create Unicorn Valuations",
             "content": "Some AI startups are employing a novel valuation strategy by selling their equity at two different prices to achieve unicorn status. This approach involves offering shares at a lower price to early investors while setting a higher price for later rounds, effectively boosting perceived market value. The tactic aims to attract more investment by projecting higher valuations, potentially misleading stakeholders about the company&#x27;s true financial health. This trend raises concerns about transparency and the sustainability of inflated valuations in the competitive AI sector. Investors are advised to scrutinize valuation methodologies closely to ensure informed decision-making.",
@@ -154,81 +291,6 @@ const websiteContent = {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Alibaba&#x27;s Qwen Tech Lead Resigns Post-Model Launch",
-            "title": "Junyang Lin Steps Down as Alibaba&#x27;s Qwen Tech Lead After AI Launch",
-            "content": "In a surprising move, Junyang Lin, the tech lead for Alibaba&#x27;s Qwen team, has resigned following the launch of a major AI model. Lin&#x27;s departure has sent ripples through the team, which has been pivotal in advancing Alibaba&#x27;s AI capabilities. The Qwen team is known for its innovative models that have bolstered Alibaba&#x27;s reputation in the AI sector. Lin&#x27;s exit could signal a shift in the team&#x27;s strategic priorities or internal dynamics. Observers are keen to see how Alibaba will navigate this leadership change to maintain its momentum in AI development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "$125M PAC Opposes AI Regulation Candidate",
-            "title": "Super PAC Targets AI Regulation Advocate Alex Bores with $125M Campaign",
-            "content": "A super PAC backed by a tech billionaire is spending $125 million to oppose Alex Bores, a former tech executive running for Congress on a platform advocating for AI regulation. This significant financial push underscores the contentious debate around AI oversight and the influence of tech money in politics. Bores&#x27; campaign is centered on implementing regulatory frameworks to ensure ethical AI development and deployment. The PAC&#x27;s opposition highlights the resistance from industry players who fear regulatory constraints could stifle innovation. Voters and tech professionals should consider the implications of such financial interventions in shaping AI policy.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/03/ai-companies-are-spending-millions-to-thwart-this-former-tech-execs-congressional-bid/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "ChatGPT 5.3 Model Drops Annoying Responses",
-            "title": "ChatGPT 5.3 Instant Model Reduces Annoying &quot;Calm Down&quot; Responses",
-            "content": "OpenAI has released the GPT-5.3 Instant model, addressing user complaints about the chatbot&#x27;s frequent &quot;calm down&quot; responses. This update aims to enhance user experience by reducing what has been described as &quot;cringe-worthy&quot; interactions. The new model promises improved conversational flow and user engagement, reflecting OpenAI&#x27;s commitment to refining its AI&#x27;s responsiveness. As AI-driven communication tools become more integrated into daily life, ensuring natural and contextually appropriate interactions is crucial. Users are encouraged to update to the latest version to benefit from these enhancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Google Gemini 3.1 Flash Lite—Affordable AI Power",
-            "title": "Google Unveils Gemini 3.1 Flash Lite at a Fraction of Pro Cost",
-            "content": "Google has launched Gemini 3.1 Flash Lite, an AI model designed to deliver powerful reasoning and multimodal capabilities at just one-eighth the cost of its Pro version. This release targets enterprises and developers looking for cost-effective AI solutions without sacrificing performance. The Flash Lite model is optimized for speed and efficiency, broadening access to advanced AI functionalities. As organizations increasingly rely on AI for competitive advantage, Google&#x27;s offering provides a viable option for those with budget constraints. Developers should explore how this model can integrate into their existing systems to enhance productivity.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/google-releases-gemini-3-1-flash-lite-at-1-8th-the-cost-of-pro",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Claude Code Introduces Voice Mode Feature",
-            "title": "Anthropic Enhances Claude Code with New Voice Mode Capability",
-            "content": "Anthropic has rolled out a new Voice Mode feature for its AI coding assistant, Claude Code, marking a significant enhancement in user interaction. This feature allows developers to engage with the AI tool using voice commands, streamlining coding workflows and improving accessibility. Voice Mode is designed to facilitate hands-free coding, which can increase efficiency and reduce the cognitive load on developers. As voice interaction becomes more prevalent in technology, this update positions Claude Code as a forward-thinking tool in the AI coding space. Developers are encouraged to explore this feature to optimize their coding processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
                 }
             ]
         }
