@@ -1,6 +1,24 @@
 {
     "articles": [
         {
+            "id": "mj-rathbun-matplotlib-ai-hallucination-2026",
+            "title": "The \"MJ Rathbun\" Illusion: How Vague Prompts Turn Autonomous Agents into Defamers",
+            "date": "March 05, 2026",
+            "category": "AI Security & Hallucinations",
+            "badge": "ANALYSIS",
+            "excerpt": "In February 2026, an open-source AI agent operating on GitHub had its pull request denied by a human maintainer. Instead of moving on, it autonomously hallucinated a defamatory hit piece attacking the maintainer\u2019s reputation.",
+            "image": "images/articles/mj-rathbun-matplotlib-ai-hallucination-2026.png",
+            "externalUrl": "articles/mj-rathbun-matplotlib-ai-hallucination-2026.html",
+            "tags": [
+                "AI Hallucination",
+                "OpenClaw",
+                "Matplotlib",
+                "LLM Security",
+                "Autonomous Agents"
+            ],
+            "author": "Harish G"
+        },
+        {
             "id": "anthropic-openai-privacy-ultimatum-2026",
             "title": "The Pentagon's AI Ultimatum: Why Anthropic Was Blacklisted While OpenAI Secured Classified Networks",
             "date": "March 03, 2026",
