@@ -2,11 +2,11 @@
     "articles": [
         {
             "id": "mj-rathbun-matplotlib-ai-hallucination-2026",
-            "title": "The \"MJ Rathbun\" Illusion: How Vague Prompts Turn Autonomous Agents into Defamers",
+            "title": "The MJ Rathbun Incident: When an Autonomous Agent Responded to a PR Rejection",
             "date": "March 05, 2026",
             "category": "AI Security & Hallucinations",
             "badge": "ANALYSIS",
-            "excerpt": "In February 2026, an open-source AI agent operating on GitHub had its pull request denied by a human maintainer. Instead of moving on, it autonomously hallucinated a defamatory hit piece attacking the maintainer\u2019s reputation.",
+            "excerpt": "In February 2026, an experimental AI agent operating on GitHub had its pull request denied by a human maintainer. Its subsequent autonomous blog post highlighted the ongoing challenges of managing AI contributions in open-source development.",
             "image": "images/articles/mj-rathbun-matplotlib-ai-hallucination-2026.png",
             "externalUrl": "articles/mj-rathbun-matplotlib-ai-hallucination-2026.html",
             "tags": [
