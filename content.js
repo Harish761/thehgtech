@@ -4,129 +4,106 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 03 2026",
-            "headline": "1.2M Exposed in University of Hawaii Breach—Sensitive Data Compromised",
-            "title": "University of Hawaii Cancer Center Breach Exposes 1.2 Million Records",
-            "content": "A significant data breach at the University of Hawaii Cancer Center has exposed the personal information of 1.2 million individuals. Hackers accessed names, Social Security numbers, driver&#x27;s license details, voter registration records, and sensitive health information. This breach highlights the ongoing vulnerabilities in healthcare institutions, which are frequent targets due to the high value of health data on the black market. Affected individuals are at risk of identity theft and fraud, underscoring the need for enhanced cybersecurity measures in educational and healthcare systems. The university is cooperating with law enforcement and has initiated steps to notify those impacted.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/1-2-million-affected-by-university-of-hawaii-cancer-center-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "OAuth Phishing Bypasses Link Checks—Microsoft Warns Users",
-            "title": "OAuth Phishing Exploits Legitimate Domains to Deliver Malware",
-            "content": "Microsoft has issued a warning about a new phishing tactic exploiting the OAuth authentication protocol. Attackers are using this method to redirect victims to malicious sites while utilizing legitimate identity provider domains like Microsoft Entra ID and Google Workspace. This approach renders traditional advice to &quot;check where the link points&quot; ineffective, as the links appear safe at first glance. Organizations using OAuth should be aware of this threat and consider implementing additional security layers such as multi-factor authentication and anomaly detection. This underscores the evolving sophistication of phishing tactics and the need for continuous vigilance.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4139872/oauth-phishers-make-check-where-the-link-points-advice-ineffective.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "AI Workload Chaos—Managing Identity in Complex Systems",
-            "title": "Solving the Workload Identity Crisis in AI-Driven Environments",
-            "content": "Organizations are grappling with an increasing complexity in AI workloads, leading to an identity crisis in managing these systems. As AI agents proliferate, maintaining secure and efficient identity management becomes challenging. The growing diversity of workloads demands robust solutions to ensure proper access controls and identity governance. This issue is critical as mismanaged identities can lead to unauthorized access and potential data breaches. Companies are encouraged to adopt comprehensive identity management frameworks that can scale with AI advancements, thereby mitigating risks and ensuring operational integrity.",
+            "date": "Mar 04 2026",
+            "headline": "Interpol Busts African Cybercrime Ring—574 Arrested",
+            "title": "Interpol and Threat Hunter Team Dismantle African Cybercrime Syndicate",
+            "content": "Interpol, with the assistance of threat hunter Will Thomas and his team, has successfully dismantled a major African cybercrime syndicate. The operation resulted in the arrest of 574 suspects and the recovery of over $3 million. The team also decrypted six different malware variants, significantly disrupting the syndicate&#x27;s operations. This effort underscores the importance of collaboration between law enforcement and cybersecurity experts in combating organized cybercrime. Professionals are encouraged to enhance cooperation with law enforcement to address similar threats in their regions.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cloud-security/ai-agent-workload-identity-crisis",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Android Fixes Qualcomm Zero-Day—Critical Patch Released",
-            "title": "Android Update Addresses Critical Qualcomm Zero-Day Vulnerability",
-            "content": "Android has released a critical update to patch a zero-day vulnerability in Qualcomm&#x27;s graphics component. The flaw, identified as an integer overflow or wraparound, leads to memory corruption and affects devices using Qualcomm hardware. This vulnerability could be exploited to execute arbitrary code, posing a significant risk to user data and device security. Users are urged to update their devices immediately to mitigate potential exploitation. This patch highlights the importance of timely updates in protecting mobile devices from emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/android-update-patches-exploited-qualcomm-zero-day/",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/threat-hunter-helped-cops-crack-african-cybercrime-syndicate",
             "relatedResources": [
                 {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
                 }
             ]
         },
         {
-            "date": "Mar 03 2026",
-            "headline": "Iran Hacktivism Rises—State Attacks Remain Low",
-            "title": "Increased Hacktivist Activity in Iran as State-Sponsored Attacks Decline",
-            "content": "The cybersecurity landscape in Iran is witnessing a surge in hacktivist activities, though state-sponsored cyberattacks remain low. Despite numerous claims by hacktivist groups, many have not been substantiated by independent verification. This trend reflects a shift in focus towards non-state actors engaging in cyber activities for political or social causes. Cybersecurity professionals should monitor these developments closely, as hacktivist actions can still disrupt operations and cause reputational damage. Organizations should ensure robust defenses against both hacktivist and state-sponsored threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/iran-cyber-front-hacktivist-activity-rises-but-state-sponsored-attacks-stay-low/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Chrome Flaw Let Extensions Hijack Gemini’s Permissions",
-            "title": "Vulnerability in Chrome Extensions Allowed Unauthorized Access to Gemini",
-            "content": "Researchers have identified and patched a vulnerability in the &quot;Live in Chrome&quot; feature that allowed extensions to inherit permissions from Gemini. This flaw enabled malicious extensions to access the camera, microphone, and files without user consent. The vulnerability has been addressed in recent updates, and users are advised to ensure their Chrome browsers are up-to-date. This incident underscores the importance of scrutinizing browser extensions and maintaining strict permission controls to prevent unauthorized access to sensitive resources.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/chrome-flaw-let-extensions-hijack-geminis-camera-mic-and-file-access",
+            "date": "Mar 04 2026",
+            "headline": "CyberStrikeAI Lowers Attack Barrier—Open Source Threat Emerges",
+            "title": "Open Source AI Platform CyberStrikeAI Simplifies Cyber Attacks",
+            "content": "The emergence of CyberStrikeAI, an open source platform, is making it easier for cybercriminals to automate attacks using AI technology. This platform integrates end-to-end attack automation within an AI-native orchestration engine, lowering the entry barrier for malicious actors. CyberStrikeAI is linked to a known threat actor, raising concerns about the democratization of sophisticated attack capabilities. Security professionals should be aware of this trend and bolster defenses against AI-driven threats. Vigilance and proactive security measures are essential to mitigate risks from such platforms.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4140221/ai-powered-attack-kits-go-open-source-and-cyberstrikeai-may-be-just-the-beginning.html",
             "relatedResources": [
                 {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
+                    "label": "Incident Response Automation",
+                    "url": "/guides/incident-response-automation.html",
+                    "icon": "fa-bolt"
                 }
             ]
         },
         {
+            "date": "Mar 04 2026",
+            "headline": "ISC Stormcast Highlights—March 4th Security Updates",
+            "title": "ISC Stormcast Podcast Discusses Latest Cybersecurity Developments",
+            "content": "The SANS Internet Storm Center&#x27;s Stormcast for March 4th, 2026, provides a comprehensive overview of the latest cybersecurity developments. The podcast covers a range of topics, including recent vulnerabilities, threat actor activities, and security best practices. Listeners are encouraged to stay informed on emerging threats and adopt recommended security measures. The ISC Stormcast serves as a valuable resource for professionals seeking to keep up with the rapidly evolving cybersecurity landscape.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32764",
+            "relatedResources": []
+        },
+        {
             "date": "Mar 03 2026",
-            "headline": "Drone Strikes Damage AWS Data Centers in Middle East",
-            "title": "AWS Data Centers in UAE and Bahrain Hit by Drone Strikes",
-            "content": "Amazon has confirmed damage to three AWS data centers in the United Arab Emirates and one in Bahrain due to drone strikes. The attacks have caused significant outages, affecting dozens of cloud computing services across the region. This incident highlights the vulnerabilities of critical infrastructure to physical attacks, particularly in geopolitically sensitive areas. AWS is working to restore services and ensure the resilience of its operations. This serves as a reminder for organizations to have robust disaster recovery and business continuity plans in place.",
+            "headline": "VMware Aria Operations RCE Exploited—CISA Issues Alert",
+            "title": "CISA Warns of Exploited VMware Aria Operations RCE Vulnerability",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has flagged a remote code execution (RCE) vulnerability in VMware Aria Operations, tracked as CVE-2026-22719, as actively exploited. This flaw allows attackers to execute arbitrary code on affected systems, posing significant risks to organizations using the software. CISA has added this vulnerability to its Known Exploited Vulnerabilities catalog, urging administrators to apply patches immediately. Organizations using VMware Aria Operations should prioritize patching to mitigate potential exploitation.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/technology/amazon-drone-strikes-damaged-aws-data-centers-in-middle-east/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-vmware-aria-operations-rce-flaw-as-exploited-in-attacks/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
                 },
                 {
-                    "label": "Cloud Security Hardening",
-                    "url": "/guides/cloud-security-hardening.html",
-                    "icon": "fa-cloud"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
             "date": "Mar 03 2026",
-            "headline": "SANS Stormcast Highlights Emerging Cyber Threats—InfoCON Stays Green",
-            "title": "ISC Stormcast Discusses Current Cybersecurity Landscape with InfoCON at Green",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast highlights emerging cyber threats while maintaining the InfoCON status at green, indicating a stable threat landscape. This update provides insights into recent vulnerabilities and trends, emphasizing the importance of ongoing vigilance in the cybersecurity community. The podcast serves as a valuable resource for security professionals seeking to stay informed about the latest developments. Despite the green status, the SANS team advises continued monitoring of threat intelligence feeds to ensure rapid response to any changes. This proactive approach is critical in maintaining robust security postures across organizations.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32760",
+            "headline": "AkzoNobel Confirms Cyberattack—U.S. Site Breached",
+            "title": "AkzoNobel Confirms Network Breach at U.S. Facility",
+            "content": "AkzoNobel, a leading Dutch paint manufacturer, has confirmed a cyberattack on one of its U.S. sites. The breach allowed unauthorized access to the company&#x27;s network, though the extent of the intrusion remains under investigation. AkzoNobel is working with cybersecurity experts to assess the impact and strengthen its defenses. The incident highlights the persistent threat of cyberattacks on multinational corporations and the need for robust security measures. Companies are advised to review and enhance their cybersecurity frameworks to prevent similar breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/paint-maker-giant-akzonobel-confirms-cyberattack-on-us-site/",
+            "relatedResources": [
+                {
+                    "label": "NIST CSF 2.0 Implementation",
+                    "url": "/guides/nist-csf-2-implementation.html",
+                    "icon": "fa-check-double"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Mass iOS Attack—Exploits Linked to U.S. Developers",
+            "title": "U.S.-Developed Exploits Tied to First Mass iOS Attack",
+            "content": "Researchers have traced the origins of a mass iOS attack to exploits possibly developed in the U.S., moving through a spyware vendor to Russian and Chinese cybercriminals. This marks the first known large-scale attack on iOS devices, raising concerns about the proliferation of advanced exploits. The involvement of state-linked actors suggests a complex supply chain of cyber capabilities. iOS users and security teams should ensure devices are updated and monitor for unusual activity. This incident underscores the need for vigilance against sophisticated, cross-border cyber threats.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/coruna-ios-exploit-kit-leaked-us-framework/",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Facebook Outage—Global Access Disruption Hits Users",
+            "title": "Facebook Experiences Worldwide Outage Affecting User Access",
+            "content": "Facebook is currently facing a widespread outage, leaving users around the globe unable to access their accounts. The cause of the disruption is not yet clear, and Facebook&#x27;s technical teams are working to resolve the issue. This outage highlights the vulnerabilities of centralized social media platforms and the potential impact on millions of users. Users are advised to stay informed through official channels and refrain from sharing sensitive information until services are restored. The incident serves as a reminder of the importance of having contingency plans for communication disruptions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/technology/facebook-hit-with-worldwide-outage-stating-accounts-are-unavailable/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Hackers Exploit CyberStrikeAI—Fortinet Firewalls Breached",
-            "title": "CyberStrikeAI Tool Misused by Hackers in Fortinet Firewall Attacks",
-            "content": "Researchers have identified that CyberStrikeAI, an open-source AI security testing platform, has been co-opted by hackers responsible for breaching hundreds of Fortinet FortiGate firewalls. This misuse of AI tools for offensive purposes highlights the dual-use nature of such technologies and the increasing sophistication of cybercriminals. The breach underscores vulnerabilities in Fortinet systems, with the potential for significant data exposure and operational disruption. Security professionals are urged to review firewall configurations and apply necessary patches to mitigate these risks. The incident reflects a growing trend of AI-driven attacks, necessitating enhanced defenses.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberstrikeai-tool-adopted-by-hackers-for-ai-powered-attacks/",
-            "relatedResources": [
-                {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
                 }
             ]
         },
@@ -157,139 +134,21 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 03 2026",
-            "headline": "Physical AI Boosts Customer Service ROI Amid Labor Shortages",
-            "title": "Physical AI Adoption Enhances ROI in Customer Service Operations",
-            "content": "Businesses are increasingly turning to physical AI to enhance customer service ROI as labor shortages persist. The integration of digital intelligence with human-like physical interactions is proving effective in handling complex tasks beyond routine automation. A notable development is the partnership between KDDI and other firms, aiming to deploy AI-driven solutions that mimic human customer service representatives. This shift is critical as companies seek efficient ways to maintain service quality with fewer human resources. Organizations should evaluate how physical AI can complement existing operations to optimize customer interactions and reduce operational costs.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/physical-ai-adoption-boosts-customer-service-roi/",
+            "date": "Mar 04 2026",
+            "headline": "AI Startups Inflate Valuations—Two Price Equity Sales",
+            "title": "AI Startups Use Dual Pricing to Create Unicorn Valuations",
+            "content": "Some AI startups are employing a novel valuation strategy by selling their equity at two different prices to achieve unicorn status. This approach involves offering shares at a lower price to early investors while setting a higher price for later rounds, effectively boosting perceived market value. The tactic aims to attract more investment by projecting higher valuations, potentially misleading stakeholders about the company&#x27;s true financial health. This trend raises concerns about transparency and the sustainability of inflated valuations in the competitive AI sector. Investors are advised to scrutinize valuation methodologies closely to ensure informed decision-making.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/",
             "relatedResources": []
         },
         {
-            "date": "Mar 03 2026",
-            "headline": "Santander, Mastercard Complete AI-Driven Payment Pilot in Europe",
-            "title": "Santander and Mastercard Conduct Europe&#x27;s First AI-Executed Payment",
-            "content": "In a groundbreaking development, Banco Santander and Mastercard have successfully executed Europe&#x27;s first AI-driven payment within a live banking network. The AI agent autonomously initiated and completed the transaction without human intervention, marking a significant milestone in fintech innovation. This pilot demonstrates the potential for AI to streamline payment processes, reducing the need for manual oversight and enhancing transaction efficiency. Financial institutions should explore AI&#x27;s capabilities in automating payments to improve operational efficiency and customer satisfaction. As AI continues to evolve, its integration into financial systems could redefine traditional banking processes.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/santander-and-mastercard-run-europe-first-ai-executed-payment-pilot/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "AI-Native Networks Prove Viable at MWC 2026—6G Vision Realized",
-            "title": "AI-Native Networks Transition from 6G Promise to Reality at MWC 2026",
-            "content": "The Mobile World Congress 2026 in Barcelona showcased the tangible progress of AI-native networks, previously considered a future promise of 6G technology. Major telecom vendors, chipmakers, and operators unveiled advancements in AI-RAN (Radio Access Networks), demonstrating operational capabilities that surpass theoretical concepts. These developments highlight a shift toward networks that leverage artificial intelligence for enhanced efficiency and performance. Telecom professionals should prepare for the integration of AI-RAN by updating infrastructure and training personnel to manage these advanced systems. The realization of AI-native networks marks a pivotal moment in the evolution of telecommunications.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-native-networks-mwc-2026/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Apple Considers Google Servers for AI-Powered Siri Upgrade",
-            "title": "Apple Explores Google Servers for Gemini-Powered Siri Enhancement",
-            "content": "Apple is in discussions with Google to utilize its servers for a new version of Siri powered by Google&#x27;s Gemini AI models. This collaboration aims to meet Apple&#x27;s stringent privacy requirements while enhancing Siri&#x27;s capabilities with advanced AI technology. The move follows Apple&#x27;s announcement in January regarding the integration of Gemini models to improve Siri&#x27;s performance. Tech professionals should monitor this development as it could signal a shift in how major tech companies collaborate on AI solutions. Ensuring compliance with privacy standards while leveraging powerful AI models remains a critical focus for industry leaders.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/887802/apple-ai-siri-google-servers",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Alibaba&#x27;s Qwen3.5-9B Outperforms OpenAI&#x27;s GPT-OSS-120B on Laptops",
-            "title": "Alibaba&#x27;s Qwen3.5-9B Surpasses OpenAI&#x27;s GPT-OSS-120B in Performance",
-            "content": "Alibaba&#x27;s Qwen Team has released the Qwen3.5-9B, an open-source AI model that outperforms OpenAI&#x27;s GPT-OSS-120B, with the advantage of running efficiently on standard laptops. Despite ongoing political challenges in the U.S. AI sector, China&#x27;s advancements continue unabated, showcasing Alibaba&#x27;s commitment to open-source AI development. This model&#x27;s ability to operate without specialized hardware makes it accessible to a broader range of users, potentially democratizing AI application development. Developers should consider the Qwen3.5-9B for projects requiring robust AI capabilities without the need for high-end infrastructure.",
+            "date": "Mar 04 2026",
+            "headline": "Alibaba&#x27;s Qwen AI Team Faces Major Departures",
+            "title": "Key Departures Shake Alibaba&#x27;s Qwen AI Team After Open Source Release",
+            "content": "Alibaba&#x27;s Qwen AI team, renowned for its prolific contributions to open-source AI models, is experiencing significant personnel changes. Following the release of their latest open-source model, several key figures have departed, raising questions about the team&#x27;s future direction. The Qwen team has been instrumental in developing both generalized and specialized generative models, contributing to Alibaba&#x27;s standing in the AI community. This upheaval could impact the pace and focus of future AI innovations from Alibaba, potentially affecting the company&#x27;s competitive edge in the global AI landscape. Stakeholders should monitor Alibaba&#x27;s strategic responses to these changes.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/alibabas-small-open-source-qwen3-5-9b-beats-openais-gpt-oss-120b-and-can-run",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Users Abandon ChatGPT for Claude—Switching Guide Available",
-            "title": "Growing User Shift from ChatGPT to Claude Amid Controversies",
-            "content": "Following recent controversies, users are increasingly abandoning OpenAI&#x27;s ChatGPT in favor of Claude, an alternative AI chatbot. This trend reflects growing concerns over ChatGPT&#x27;s handling of user data and content moderation. TechCrunch provides a detailed guide for users looking to transition to Claude, highlighting steps to migrate data and customize settings. Professionals relying on AI chatbots should assess the implications of these controversies on their operations and consider alternatives that align with their privacy and functionality needs. Staying informed about AI ethics and user trust is crucial in this evolving landscape.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/02/users-are-ditching-chatgpt-for-claude-heres-how-to-make-the-switch/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Mar 02 2026",
-            "headline": "Supreme Court Leaves AI Art Copyright Ruling Intact",
-            "title": "AI-Generated Art Cannot Be Copyrighted—Supreme Court Declines Review",
-            "content": "The U.S. Supreme Court has decided not to review a lower court ruling that AI-generated art cannot be copyrighted, a decision that maintains the status quo in intellectual property law. Stephen Thaler, a computer scientist, had appealed the decision after his AI-created work was denied copyright protection. This outcome underscores the legal challenges surrounding AI-generated content and its recognition under current copyright laws. Artists and creators using AI should be aware of these limitations and explore alternative ways to protect their work. The ruling highlights the need for updated legal frameworks to address the complexities of AI-generated creations.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/887678/supreme-court-ai-art-copyright",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Cursor Surpasses $2B Revenue—Doubles in Three Months",
-            "title": "Startup Cursor Achieves $2 Billion Annualized Revenue Milestone",
-            "content": "Cursor, a four-year-old AI startup, has reportedly reached an annualized revenue of over $2 billion, doubling its run rate in just three months. This impressive growth highlights the company&#x27;s rapid expansion and the increasing demand for its AI-driven solutions. According to a Bloomberg source, Cursor&#x27;s strategic partnerships and innovative product offerings have played a crucial role in this financial achievement. The company&#x27;s success underscores the broader trend of AI startups experiencing accelerated growth as businesses continue to integrate AI into their operations. Industry professionals should monitor Cursor&#x27;s trajectory as it may influence market dynamics and competitive strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/02/cursor-has-reportedly-surpassed-2b-in-annualized-revenue/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Mystery Device: US Chief Design Officer&#x27;s Unidentified Earbuds",
-            "title": "US Chief Design Officer Joe Gebbia Spotted with Unidentified Earbuds",
-            "content": "Joe Gebbia, the US Chief Design Officer, was seen using a mysterious pair of earbuds with a circular disc at a San Francisco coffee shop. This device resembles one featured in a recent OpenAI hoax advertisement, sparking curiosity and speculation among tech enthusiasts. While details about the earbuds remain unknown, their public appearance raises questions about potential new developments in wearable technology. The incident highlights the ongoing intrigue surrounding innovative tech gadgets and their potential applications. Industry experts should stay alert for further information, as this could indicate upcoming trends or product launches in the wearable tech space.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/joe-gebbia-mystery-metallic-device/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Deutsche Telekom Launches AI Assistant for All Calls",
-            "title": "Deutsche Telekom Partners with ElevenLabs for AI Call Assistant in Germany",
-            "content": "Deutsche Telekom, in collaboration with ElevenLabs, is launching an AI assistant to be integrated into all calls on its network in Germany. This innovative service requires no additional app, making it seamlessly accessible to users. The AI assistant aims to enhance customer experience by providing real-time assistance during phone conversations. This move positions Deutsche Telekom as a leader in integrating AI into telecommunications, potentially setting a new industry standard. Professionals in the telecom sector should consider the implications of AI-driven customer service enhancements and their impact on user satisfaction and operational efficiency.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/deutsche-telekom-elevenlabs-ai-phone-calls-mwc-2026/",
+            "sourceUrl": "https://venturebeat.com/technology/did-alibaba-just-kneecap-its-powerful-qwen-ai-team-key-figures-depart-in",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -300,11 +159,71 @@ const websiteContent = {
         },
         {
             "date": "Mar 03 2026",
-            "headline": "ChatGPT Uninstalls Spike 295% Post-DoD Deal",
-            "title": "Surge in ChatGPT App Uninstalls Following Department of Defense Deal",
-            "content": "ChatGPT has experienced a 295% increase in app uninstalls after announcing a deal with the Department of Defense (DoD). This development suggests consumer unease regarding privacy and security implications tied to government partnerships. In contrast, Claude, a competing AI, has seen a rise in downloads, indicating a shift in user preferences. The incident highlights the delicate balance AI companies must maintain between expanding business opportunities and retaining consumer trust. Professionals should evaluate the potential risks and benefits of government collaborations and their impact on public perception and market positioning.",
+            "headline": "Alibaba&#x27;s Qwen Tech Lead Resigns Post-Model Launch",
+            "title": "Junyang Lin Steps Down as Alibaba&#x27;s Qwen Tech Lead After AI Launch",
+            "content": "In a surprising move, Junyang Lin, the tech lead for Alibaba&#x27;s Qwen team, has resigned following the launch of a major AI model. Lin&#x27;s departure has sent ripples through the team, which has been pivotal in advancing Alibaba&#x27;s AI capabilities. The Qwen team is known for its innovative models that have bolstered Alibaba&#x27;s reputation in the AI sector. Lin&#x27;s exit could signal a shift in the team&#x27;s strategic priorities or internal dynamics. Observers are keen to see how Alibaba will navigate this leadership change to maintain its momentum in AI development.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/02/chatgpt-uninstalls-surged-by-295-after-dod-deal/",
+            "sourceUrl": "https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "$125M PAC Opposes AI Regulation Candidate",
+            "title": "Super PAC Targets AI Regulation Advocate Alex Bores with $125M Campaign",
+            "content": "A super PAC backed by a tech billionaire is spending $125 million to oppose Alex Bores, a former tech executive running for Congress on a platform advocating for AI regulation. This significant financial push underscores the contentious debate around AI oversight and the influence of tech money in politics. Bores&#x27; campaign is centered on implementing regulatory frameworks to ensure ethical AI development and deployment. The PAC&#x27;s opposition highlights the resistance from industry players who fear regulatory constraints could stifle innovation. Voters and tech professionals should consider the implications of such financial interventions in shaping AI policy.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/03/ai-companies-are-spending-millions-to-thwart-this-former-tech-execs-congressional-bid/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "ChatGPT 5.3 Model Drops Annoying Responses",
+            "title": "ChatGPT 5.3 Instant Model Reduces Annoying &quot;Calm Down&quot; Responses",
+            "content": "OpenAI has released the GPT-5.3 Instant model, addressing user complaints about the chatbot&#x27;s frequent &quot;calm down&quot; responses. This update aims to enhance user experience by reducing what has been described as &quot;cringe-worthy&quot; interactions. The new model promises improved conversational flow and user engagement, reflecting OpenAI&#x27;s commitment to refining its AI&#x27;s responsiveness. As AI-driven communication tools become more integrated into daily life, ensuring natural and contextually appropriate interactions is crucial. Users are encouraged to update to the latest version to benefit from these enhancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Google Gemini 3.1 Flash Lite—Affordable AI Power",
+            "title": "Google Unveils Gemini 3.1 Flash Lite at a Fraction of Pro Cost",
+            "content": "Google has launched Gemini 3.1 Flash Lite, an AI model designed to deliver powerful reasoning and multimodal capabilities at just one-eighth the cost of its Pro version. This release targets enterprises and developers looking for cost-effective AI solutions without sacrificing performance. The Flash Lite model is optimized for speed and efficiency, broadening access to advanced AI functionalities. As organizations increasingly rely on AI for competitive advantage, Google&#x27;s offering provides a viable option for those with budget constraints. Developers should explore how this model can integrate into their existing systems to enhance productivity.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/google-releases-gemini-3-1-flash-lite-at-1-8th-the-cost-of-pro",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 03 2026",
+            "headline": "Claude Code Introduces Voice Mode Feature",
+            "title": "Anthropic Enhances Claude Code with New Voice Mode Capability",
+            "content": "Anthropic has rolled out a new Voice Mode feature for its AI coding assistant, Claude Code, marking a significant enhancement in user interaction. This feature allows developers to engage with the AI tool using voice commands, streamlining coding workflows and improving accessibility. Voice Mode is designed to facilitate hands-free coding, which can increase efficiency and reduce the cognitive load on developers. As voice interaction becomes more prevalent in technology, this update positions Claude Code as a forward-thinking tool in the AI coding space. Developers are encouraged to explore this feature to optimize their coding processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -376,25 +295,25 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
-            "cveId": "CVE-2022-20775",
-            "dateAdded": "Feb 25, 2026",
-            "vendor": "Cisco SD-WAN",
-            "description": "Cisco SD-WAN CLI contains a path traversal vulnerability that could allow an authenticated local attacker to gain elevated privileges via improper access controls on commands within the application CL",
+            "cveId": "CVE-2026-22719",
+            "dateAdded": "Mar 03, 2026",
+            "vendor": "Broadcom VMware Aria Operations",
+            "description": "Broadcom VMware Aria Operations formerly known as vRealize Operations (vROps) contains a command injection vulnerability that allows an unauthenticated attacker to execute arbitrary commands, potentia",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-20775",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22719",
             "isZeroDay": false
         },
         {
-            "cveId": "CVE-2026-20127",
-            "dateAdded": "Feb 25, 2026",
-            "vendor": "Cisco Catalyst SD-WAN Controller and Manager",
-            "description": "Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, contain an authentication bypass vulnerability could allow an unauthenticated, rem",
+            "cveId": "CVE-2026-21385",
+            "dateAdded": "Mar 03, 2026",
+            "vendor": "Qualcomm Multiple Chipsets",
+            "description": "Multiple Qualcomm chipsets contain a memory corruption vulnerability while using alignments for memory allocation.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20127",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21385",
             "isZeroDay": false
         }
     ],
