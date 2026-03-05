@@ -5,6 +5,104 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 05 2026",
+            "headline": "Europol Shuts Down Major Stolen Data Marketplace",
+            "title": "Leakbase Data Marketplace with 142,000 Users Taken Offline by Europol",
+            "content": "In a significant blow to cybercriminal networks, Europol has coordinated an international operation resulting in the shutdown of Leakbase, one of the largest online marketplaces for stolen data. This platform had amassed 142,000 registered users globally, facilitating the trade of illicitly obtained personal and financial information. The operation was spearheaded by the Amsterdam police, highlighting the collaborative efforts across borders to combat cybercrime. The closure of Leakbase is expected to disrupt the supply chain of stolen data, impacting both buyers and sellers reliant on the platform. Security professionals are advised to stay vigilant as displaced users may seek alternative venues for illegal activities.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4141138/europol-groser-markt-fur-gestohlene-daten-geschlossen.html",
+            "relatedResources": [
+                {
+                    "label": "DORA Compliance Guide",
+                    "url": "/guides/dora-compliance.html",
+                    "icon": "fa-university"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Russian Ransomware Operator Extradited—Pleads Guilty in US",
+            "title": "Evgenii Ptitsyn Admits Guilt in US Court for Ransomware Activities",
+            "content": "Evgenii Ptitsyn, a Russian national involved in ransomware operations, has pleaded guilty in a US court following his extradition from South Korea in November 2024. Ptitsyn&#x27;s activities included deploying ransomware that encrypted victims&#x27; data, demanding payments for decryption keys. His extradition and subsequent guilty plea underscore international cooperation in tackling cybercrime. This case highlights the persistent threat posed by ransomware operators and the global effort required to bring perpetrators to justice. Organizations are encouraged to bolster their cybersecurity defenses and stay informed about emerging ransomware tactics.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/russian-ransomware-operator-pleads-guilty-in-us/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Online Gambling Ring Exploiting Ukrainian Women Dismantled",
+            "title": "Spanish and Ukrainian Police Break Up €4.75M Online Gambling Scheme",
+            "content": "Law enforcement authorities from Spain and Ukraine have successfully dismantled a criminal ring exploiting Ukrainian women displaced by war to operate an online gambling scheme. This illicit operation laundered approximately €4.75 million, highlighting the vulnerability of displaced individuals to exploitation. The joint police action reflects a commitment to protecting victims of human trafficking and disrupting organized crime. The dismantling of this ring serves as a reminder of the complex interplay between cybercrime and human exploitation. Security professionals should be aware of the evolving tactics used in such schemes to better protect vulnerable populations.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-dismantles-online-gambling-ring-exploiting-ukrainian-women/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Cisco SD-WAN Flaws Exploited—Patch CVE-2026-20128 Now",
+            "title": "New Exploits Target Cisco Catalyst SD-WAN CVEs 2026-20128, 2026-20122",
+            "content": "Cisco has issued a warning about the active exploitation of two vulnerabilities, CVE-2026-20128 and CVE-2026-20122, in its Catalyst SD-WAN products. These flaws, recently patched, could allow attackers to execute arbitrary code or cause denial-of-service conditions. Organizations using affected versions are at risk, with potential impacts on network operations and security. This development underscores the importance of timely patch management as threat actors increasingly target known vulnerabilities. Cisco advises users to apply the latest updates immediately to mitigate these risks and ensure network integrity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-warns-of-more-catalyst-sd-wan-flaws-exploited-in-the-wild/",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Dust Specter Targets Iraq—New Malware Campaign Unveiled",
+            "title": "SPLITDROP and GHOSTFORM Malware Used in Targeted Attacks on Iraqi Officials",
+            "content": "A threat actor dubbed Dust Specter, suspected to have ties to Iran, has been linked to a cyber campaign targeting Iraqi government officials. The attackers impersonated Iraq&#x27;s Ministry of Foreign Affairs to distribute two new malware strains, SPLITDROP and GHOSTFORM. Zscaler ThreatLabz identified this activity in January 2026, marking a sophisticated attempt to infiltrate sensitive government systems. The campaign highlights the ongoing geopolitical tensions manifesting in cyber warfare, with potential implications for regional stability. Security teams are advised to monitor for indicators of compromise and strengthen defenses against spear-phishing and malware attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/dust-specter-targets-iraqi-officials.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "ISC Stormcast—March 5th Briefing Highlights",
+            "title": "SANS Internet Storm Center Daily Cybersecurity Update for March 5th",
+            "content": "The SANS Internet Storm Center has released its daily briefing for March 5th, providing insights into recent cybersecurity developments. The update includes analysis of ongoing threats, emerging vulnerabilities, and notable incidents impacting the security landscape. Professionals are encouraged to leverage these insights to enhance their threat intelligence and response strategies. The briefing serves as a valuable resource for staying informed about the rapidly evolving cyber threat environment. Subscribers can access the full podcast for detailed analysis and expert commentary.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32770",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Europol Closes Massive Data Theft Marketplace",
+            "title": "Amsterdam Police and Europol Dismantle Global Data Trading Platform",
+            "content": "In a major crackdown on cybercrime, Europol and the Amsterdam police have shut down Leakbase, a significant marketplace for stolen data with over 142,000 registered users worldwide. The platform facilitated the exchange of compromised personal and financial information, posing a substantial threat to data privacy and security. This operation reflects the ongoing efforts by international law enforcement to disrupt cybercriminal networks and protect sensitive information. The closure of Leakbase is expected to have a ripple effect across the cybercrime ecosystem, prompting increased vigilance among security professionals.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4141131/europol-schliesst-riesigen-markt-fur-gestohlene-daten-2.html",
+            "relatedResources": [
+                {
+                    "label": "DORA Compliance Guide",
+                    "url": "/guides/dora-compliance.html",
+                    "icon": "fa-university"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
             "headline": "Microsoft, Europol Dismantle Tycoon2FA Phishing Network",
             "title": "Microsoft Leads Takedown of Tycoon2FA Phishing Service Infrastructure",
             "content": "Microsoft, in collaboration with Europol and other IT companies, has successfully dismantled the infrastructure of the Tycoon2FA phishing service, a major operation known for evading multifactor authentication (MFA). This takedown involved seizing 330 domains, disrupting a tool that has been a significant threat to online security. The operation&#x27;s infrastructure was used globally to bypass MFA protections, putting countless users at risk of credential theft. The alleged creator has been named in a civil complaint, marking a significant step in combating large-scale phishing operations. Security professionals are advised to remain vigilant and ensure MFA implementations are robust against such sophisticated attacks.",
@@ -43,66 +141,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Mar 04 2026",
-            "headline": "Bitwarden Enables Passkey Login on Windows 11",
-            "title": "Bitwarden Adds Support for Passkey Login on Windows 11",
-            "content": "Bitwarden has announced the integration of passkey login support for Windows 11 devices, enhancing security with phishing-resistant authentication. This new feature allows users to access their devices using passkeys stored in Bitwarden&#x27;s vault, offering a more secure alternative to traditional passwords. By leveraging the FIDO2 standard, Bitwarden aims to reduce the risk of credential theft and improve user convenience. This development aligns with a broader industry trend towards passwordless authentication, which is gaining traction as a more secure method of protecting sensitive information. Users of Windows 11 are encouraged to adopt passkeys to bolster their security posture.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitwarden-adds-support-for-passkey-login-on-windows-11/",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Tycoon 2FA Phishing Kit Dismantled by Global Coalition",
-            "title": "Global Coalition Dismantles Tycoon 2FA Phishing Kit",
-            "content": "A global coalition led by Microsoft has dismantled the Tycoon 2FA phishing kit, a significant operation that threatened multifactor authentication systems worldwide. The effort resulted in the seizure of 330 domains that formed the core infrastructure of the phishing platform. The operation&#x27;s alleged creator has been identified in a civil complaint, marking a significant step in reducing the threat of phishing attacks. This takedown is part of a broader strategy to combat phishing, which remains a prevalent threat to online security. Organizations are advised to strengthen their MFA implementations to protect against such sophisticated phishing techniques.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/tycoon-2fa-phishing-kit-takedown-microsoft/",
-            "relatedResources": [
-                {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Mail2Shell Attack Targets FreeScout Servers—Critical Vulnerability",
-            "title": "Mail2Shell Zero-Click Attack Lets Hackers Hijack FreeScout Mail Servers",
-            "content": "A critical vulnerability in the FreeScout helpdesk platform, known as the Mail2Shell attack, allows hackers to execute remote code without user interaction or authentication. This zero-click exploit poses a severe risk, enabling attackers to gain control over mail servers and potentially access sensitive data. The vulnerability affects all versions of FreeScout prior to the latest patch. Administrators are urged to apply the security update immediately to mitigate the risk of exploitation. This incident underscores the importance of regular software updates and the need for robust security measures to protect against emerging threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mail2shell-zero-click-attack-lets-hackers-hijack-freescout-mail-servers/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "VMware Aria Bug Exploited—Cloud Resources at Risk",
-            "title": "VMware Aria Operations Bug Exploited, Cloud Resources at Risk",
-            "content": "A command injection flaw in VMware Aria Operations has been exploited, potentially granting attackers extensive access to cloud environments. This vulnerability could lead to unauthorized control over cloud resources, posing significant risks to affected organizations. Security experts recommend immediate patching to prevent exploitation, as the flaw could be used to disrupt operations or exfiltrate sensitive data. VMware has released a patch to address the issue, highlighting the critical need for timely updates in cloud management systems. Organizations using VMware Aria are advised to review their security posture and apply the necessary updates to safeguard their environments.",
-            "source": "DarkReading",
-            "sourceUrl": "https://www.darkreading.com/cloud-security/vmware-aria-operations-bug-exploited-cloud-risk",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -130,6 +168,92 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Mar 05 2026",
+            "headline": "AI Tools Unmask Anonymous Accounts—Privacy at Risk",
+            "title": "Study Reveals AI&#x27;s Power to De-Anonymize Online Identities",
+            "content": "A recent study highlights the growing capability of AI tools to unmask anonymous online accounts, raising significant privacy concerns. Researchers have demonstrated how AI can analyze patterns and behaviors to identify users behind pseudonymous profiles on platforms like Reddit and Glassdoor. This development poses a threat to individuals who rely on anonymity for candid expression, potentially exposing them to personal and professional repercussions. The study underscores the urgent need for enhanced privacy measures and awareness as AI continues to advance. Users should remain vigilant about their online activities and consider additional privacy protections.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/889395/ai-agents-unmask-anonymous-online-accounts",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "1,000+ Calls Propel Narada&#x27;s AI Startup Success",
+            "title": "Narada&#x27;s Iterative Approach to AI Driven by Customer Feedback",
+            "content": "Narada, an emerging enterprise AI startup, attributes its rapid growth to incorporating insights from over 1,000 customer calls. CEO David Park explained on TechCrunch&#x27;s Build Mode how this feedback-driven strategy has been pivotal in refining their AI solutions, securing funding, and scaling operations. By deeply understanding client needs, Narada has been able to tailor its offerings, setting it apart in the competitive AI landscape. This approach not only enhances product development but also strengthens investor confidence, illustrating the power of customer-centric iteration in tech innovation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/05/how-1000-customer-calls-shaped-a-breakout-enterprise-ai-startup/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Lio Secures $30M to Transform Procurement with AI",
+            "title": "Lio&#x27;s $30M Series A Boosts AI-Driven Procurement Automation",
+            "content": "AI procurement startup Lio has raised $30 million in a Series A funding round led by Andreessen Horowitz. The investment aims to accelerate Lio&#x27;s mission to automate and optimize enterprise procurement processes using advanced AI technologies. Lio&#x27;s platform leverages machine learning to streamline purchasing workflows, reduce costs, and enhance decision-making for large organizations. This funding will enable Lio to expand its team and scale operations, positioning the company as a key player in the growing field of AI-powered procurement solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/05/lio-ai-series-a-a16z-30m-raise-automate-enterprise-procurement/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Anthropic Attempts to Mend Pentagon Ties Amid Risk Concerns",
+            "title": "Anthropic&#x27;s Negotiations with Pentagon to Overcome Supply Chain Risks",
+            "content": "Anthropic CEO Dario Amodei is actively negotiating with the Department of Defense to restore the company&#x27;s standing as a reliable partner after being labeled a &quot;supply chain risk.&quot; This development follows a breakdown in talks that jeopardized Anthropic&#x27;s involvement in defense projects. The company&#x27;s AI capabilities are at stake, as exclusion from defense contracts could significantly impact its growth and innovation trajectory. The situation underscores the critical importance of security assurances in maintaining government partnerships, particularly in sensitive sectors like defense.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/889782/anthropic-pentagon-discussions-ai-deal",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "JPMorgan&#x27;s AI Investment Nears $20B—Transforming Core Systems",
+            "title": "JPMorgan&#x27;s Expanding AI Budget Reflects Strategic Tech Shift",
+            "content": "JPMorgan Chase is significantly increasing its AI investment, pushing its technology budget to nearly $19.8 billion in 2026. This strategic move marks a transition from pilot AI projects to integrating AI into core business systems, demonstrating a broader trend among large enterprises. The bank&#x27;s focus on AI aims to enhance operational efficiency, customer service, and risk management. This investment highlights the growing importance of AI in financial services, prompting other institutions to consider similar shifts in technology strategy.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/jpmorgan-expands-ai-investment/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "AI Spurs New Wave of Online Harassment Challenges",
+            "title": "Open-Source Projects Face AI-Driven Harassment and Contribution Overload",
+            "content": "The rise of AI-generated code contributions is creating challenges for open-source projects like matplotlib, as maintainers struggle with an influx of submissions. Scott Shambaugh, a project manager, highlights the strain caused by AI agents submitting low-quality or irrelevant code. This trend not only increases the workload for maintainers but also introduces potential security vulnerabilities. Open-source communities are now developing strategies to manage AI-driven contributions, emphasizing the need for robust vetting processes and community guidelines to maintain project integrity.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/03/05/1133962/online-harassment-is-entering-its-ai-era/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Dyna.Ai Secures Funding to Advance AI in Finance",
+            "title": "Dyna.Ai&#x27;s Series A Fuels Agentic AI Adoption in Financial Services",
+            "content": "Singapore-based Dyna.Ai has raised an eight-figure Series A round to address the stagnation of AI projects in financial services. Despite impressive proofs-of-concept, many institutions struggle to transition AI innovations into production. Dyna.Ai aims to overcome this hurdle by providing solutions that integrate AI into operational workflows, enhancing efficiency and decision-making in finance. The funding will support Dyna.Ai&#x27;s efforts to scale its technology and expand its market presence, offering a pathway for financial institutions to fully leverage AI&#x27;s potential.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/dyna-ai-series-a-agentic-ai-financial-services/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 05 2026",
             "headline": "Nvidia Halts Investments in OpenAI, Anthropic—Unclear Strategy",
             "title": "Nvidia CEO Jensen Huang Announces End to OpenAI, Anthropic Investments",
             "content": "Nvidia&#x27;s CEO Jensen Huang disclosed that the company will cease further investments in AI powerhouses OpenAI and Anthropic. This decision comes amidst rising speculation about Nvidia&#x27;s strategic direction in the AI sector. Huang&#x27;s explanation lacked clarity, leaving industry experts questioning the underlying reasons for this shift. Nvidia has been a critical supplier of GPUs to these AI firms, and this move could signal a pivot in its business model or partnerships. The impact on AI development and collaboration dynamics remains uncertain. Stakeholders should monitor Nvidia&#x27;s future announcements for more detailed guidance.",
@@ -150,57 +274,6 @@ const websiteContent = {
             "content": "In a meeting with President Donald Trump, leaders from seven major tech companies, including Google, Meta, and Microsoft, signed a pledge aimed at preventing electricity cost spikes at data centers. This initiative addresses growing bipartisan concerns about the energy consumption of tech infrastructure. As data centers expand, they place significant demands on power grids, potentially raising electricity costs for consumers. The pledge seeks to balance technological growth with sustainable energy practices. Industry professionals should evaluate the implications of this agreement on data center operations and future energy policies.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/news/889578/data-center-power-pledge-white-house-google-meta-microsoft",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Grammarly&#x27;s AI Reviews Feature Controversial—Authors Unaware",
-            "title": "Superhuman&#x27;s Grammarly Offers AI Reviews from Famous Authors",
-            "content": "Superhuman, the company behind Grammarly, has launched a tool that provides AI-generated writing feedback based on the styles of renowned authors, both living and deceased. This controversial feature raises ethical questions as it operates without obtaining permission from the authors or their estates. The tool aims to enhance user experience by offering personalized writing advice, but it may face legal challenges. Writers and content creators should be aware of potential intellectual property issues and consider the broader impact of AI-driven content analysis.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/grammarly-is-offering-expert-ai-reviews-from-your-favorite-authors-dead-or-alive/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Anthropic CEO Accuses OpenAI of Misleading Military Deal Claims",
-            "title": "Anthropic CEO Criticizes OpenAI Over Pentagon Contract Dispute",
-            "content": "Anthropic CEO Dario Amodei has publicly criticized OpenAI, accusing them of spreading false information regarding a military contract. Anthropic had previously withdrawn from a Pentagon deal due to AI safety concerns, only for OpenAI to step in. This dispute highlights the ethical challenges tech companies face when engaging with military applications of AI. The controversy underscores the need for transparent communication and adherence to ethical standards in AI deployments. Industry leaders should closely examine the implications of AI military collaborations on company reputations and ethical practices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Big Tech&#x27;s White House Pledge—PR Move or Genuine Effort?",
-            "title": "Tech Companies Sign White House Data Center Energy Pledge",
-            "content": "At a White House event, President Donald Trump announced a data center energy pledge signed by major tech firms, including Amazon and Oracle. The pledge aims to address public concerns over the environmental impact of data centers. However, critics argue that the initiative lacks concrete measures and serves more as a public relations effort. As data centers consume increasing amounts of energy, the tech industry faces pressure to adopt sustainable practices. Professionals in the field should assess the effectiveness of such pledges and advocate for tangible environmental strategies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/big-tech-signs-white-house-data-center-pledge-with-good-optics-not-much-substance/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "AI in Warfare: Smack Technologies&#x27; Battlefield Models",
-            "title": "Smack Technologies Develops AI Models for Military Operations",
-            "content": "While companies like Anthropic debate the ethical limits of AI in military contexts, Smack Technologies is actively developing AI models designed for battlefield operations. These models are intended to enhance strategic planning and decision-making in combat scenarios. The initiative reflects a growing trend of integrating AI into defense systems, raising questions about the balance between innovation and ethical considerations. Military and tech professionals should consider the potential impacts of AI-driven warfare on global security and the ethical responsibilities associated with such advancements.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/ai-model-military-use-smack-technologies/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Apple Music to Introduce AI Music Transparency Tags",
-            "title": "Apple Music Plans AI-Identified Tracks with Transparency Tags",
-            "content": "Apple Music is set to implement transparency tags to distinguish AI-generated music from human-created tracks. This initiative aims to provide listeners with clarity on the origins of the music they consume. However, the effectiveness of the tags is uncertain as participation by labels and distributors is voluntary. This move reflects a broader industry trend towards transparency in AI-generated content. Music industry professionals should monitor the adoption of these tags and their impact on consumer perceptions and industry standards.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/04/apple-music-to-add-transparency-tags-to-distinguish-ai-music-says-report/",
             "relatedResources": []
         }
     ],
