@@ -4,86 +4,51 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 04 2026",
-            "headline": "Iran&#x27;s Cyber Retaliation—A Temporary Reprieve Amid Conflict",
-            "title": "Iranian Cyber Threats Linger Despite Lack of Immediate Retaliation",
-            "content": "Despite heightened tensions due to the ongoing conflict between the US, Israel, and Iran, the anticipated wave of Iranian cyberattacks has not yet materialized. Experts caution that Iran&#x27;s cyber capabilities remain a significant threat, as it operates one of the world&#x27;s most active cyber operations. The UK National Cyber Security Centre has been on high alert, monitoring potential threats to critical infrastructure and government networks. While the immediate danger appears to be averted, organizations should remain vigilant and strengthen their cybersecurity postures. This situation underscores the persistent risk posed by state-sponsored cyber activities.",
+            "date": "Mar 05 2026",
+            "headline": "Microsoft, Europol Dismantle Tycoon2FA Phishing Network",
+            "title": "Microsoft Leads Takedown of Tycoon2FA Phishing Service Infrastructure",
+            "content": "Microsoft, in collaboration with Europol and other IT companies, has successfully dismantled the infrastructure of the Tycoon2FA phishing service, a major operation known for evading multifactor authentication (MFA). This takedown involved seizing 330 domains, disrupting a tool that has been a significant threat to online security. The operation&#x27;s infrastructure was used globally to bypass MFA protections, putting countless users at risk of credential theft. The alleged creator has been named in a civil complaint, marking a significant step in combating large-scale phishing operations. Security professionals are advised to remain vigilant and ensure MFA implementations are robust against such sophisticated attacks.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4140572/iranian-cyberattacks-fail-to-materialize-but-threat-remains-acute.html",
+            "sourceUrl": "https://www.csoonline.com/article/4140890/microsoft-leads-takedown-of-tycoon2fa-phishing-service-infrastructure.html",
+            "relatedResources": [
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Intrusion vs. Scanning—Understanding Cyber Threats",
+            "title": "Differentiating Between a Targeted Intrusion and an Automated Opportunistic Scanning",
+            "content": "In a guest diary entry by Joseph Gruen from the SANS.edu BACS program, the nuances between targeted intrusions and automated opportunistic scanning are explored. Targeted intrusions are deliberate attacks aimed at specific organizations, often involving sophisticated techniques and persistence. In contrast, automated scans are broad, indiscriminate probes seeking any vulnerability to exploit. Understanding the difference is crucial for cybersecurity teams to allocate resources effectively and respond appropriately. Gruen emphasizes the importance of monitoring network activity and employing robust security measures to mitigate both types of threats. Professionals should enhance their detection capabilities to distinguish between these scenarios.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32768",
+            "relatedResources": [
+                {
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "Cybersecurity Boss Frames Employee—Internal Leak Exposed",
+            "title": "Smashing Security Podcast: How a Cybersecurity Boss Framed His Own Employee",
+            "content": "In a shocking episode of the Smashing Security podcast, the story unfolds of a cybersecurity firm where the individual tasked with investigating a data leak was the actual perpetrator. Instead of addressing the breach properly, the investigator framed an innocent colleague, leading to a career-ending situation for the victim. This incident highlights the potential for internal threats within organizations and the need for transparent and unbiased investigative processes. The podcast delves into the complexities of trust and accountability in cybersecurity roles, urging companies to implement checks and balances in their internal security investigations.",
+            "source": "Graham Cluley",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-457/",
             "relatedResources": []
         },
         {
             "date": "Mar 04 2026",
-            "headline": "OAuth Exploited—Redirects Lead to Phishing, Malware",
-            "title": "Attackers Exploit OAuth Redirects for Phishing and Malware Distribution",
-            "content": "Researchers have uncovered a new attack vector where cybercriminals are exploiting OAuth&#x27;s built-in redirects to deceive users. By redirecting from legitimate Microsoft or Google login pages, attackers are able to lead unsuspecting users to phishing sites or malware downloads. This technique takes advantage of the trust users place in well-known authentication services, making it particularly insidious. Organizations relying on OAuth for authentication should educate users about this threat and implement additional security measures, such as multi-factor authentication, to mitigate risks. This highlights the evolving tactics used by cybercriminals to exploit trusted systems.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/attackers-abuse-oauths-built-in-redirects-to-launch-phishing-and-malware-attacks",
-            "relatedResources": [
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Cracked Software—A Trojan Horse for Malware Infiltration",
-            "title": "Pirated Software Turns Employees into Unwitting Malware Carriers",
-            "content": "A growing trend sees employees downloading pirated software, inadvertently introducing malware into corporate environments. These &quot;cracked&quot; applications often come bundled with malicious payloads capable of stealing credentials, deploying cryptominers, or facilitating ransomware attacks. This behavior poses significant risks to organizations, as it bypasses traditional security measures and exploits human error. Companies should enforce strict software policies and conduct regular security training to prevent such incidents. This serves as a reminder of the critical role employee behavior plays in maintaining cybersecurity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/how-pirated-software-turns-helpful-employees-into-malware-delivery-agents/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "JetStream Secures $34M—Aims to Demystify AI Security",
-            "title": "AI Security Startup JetStream Launches with $34 Million Funding",
-            "content": "JetStream, a new player in the AI security landscape, has launched with a substantial $34 million in seed funding. The startup aims to provide organizations with enhanced visibility into AI operations across their environments, addressing a critical need for transparency and security in AI deployments. By leveraging this funding, JetStream plans to develop solutions that help businesses understand and secure their AI systems. This move reflects the growing demand for specialized security tools that cater to the unique challenges posed by AI technologies. Organizations should monitor JetStream&#x27;s progress as it seeks to fill this vital niche.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ai-security-firm-jetstream-launches-with-34-million-in-seed-funding/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Qualcomm Bug Exploited—Patch Android Devices Now",
-            "title": "Critical Qualcomm Vulnerability Exploited in Android Devices",
-            "content": "Google has released a patch addressing 129 vulnerabilities in Android, including a critical flaw in a Qualcomm component that is actively being exploited. This vulnerability, affecting a broad range of Android devices, poses significant risks as it allows attackers to execute arbitrary code. Users are urged to update their devices immediately to mitigate potential threats. This incident highlights the importance of timely patch management in maintaining device security. Security professionals should ensure that all Android devices within their networks are updated to the latest software versions.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/high-severity-qualcomm-bug-hits-android-devices-in-targeted-attacks",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "LastPass Targeted—Beware of Phishing Campaign",
-            "title": "LastPass Alerts Users to New Phishing Campaign",
-            "content": "LastPass has issued a warning about a sophisticated phishing campaign targeting its users. Attackers are sending fake alerts that mimic LastPass notifications, claiming unauthorized access or master password changes. These messages are designed to trick users into revealing sensitive information. LastPass users are advised to verify any alerts directly through the official LastPass application and enable multi-factor authentication for added security. This incident serves as a reminder of the persistent threat of phishing attacks and the importance of remaining vigilant against social engineering tactics.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/lastpass-warns-of-new-phishing-campaign/",
+            "headline": "Bitwarden Enables Passkey Login on Windows 11",
+            "title": "Bitwarden Adds Support for Passkey Login on Windows 11",
+            "content": "Bitwarden has announced the integration of passkey login support for Windows 11 devices, enhancing security with phishing-resistant authentication. This new feature allows users to access their devices using passkeys stored in Bitwarden&#x27;s vault, offering a more secure alternative to traditional passwords. By leveraging the FIDO2 standard, Bitwarden aims to reduce the risk of credential theft and improve user convenience. This development aligns with a broader industry trend towards passwordless authentication, which is gaining traction as a more secure method of protecting sensitive information. Users of Windows 11 are encouraged to adopt passkeys to bolster their security posture.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitwarden-adds-support-for-passkey-login-on-windows-11/",
             "relatedResources": [
                 {
                     "label": "Phishing & Security Awareness",
@@ -94,57 +59,48 @@ const websiteContent = {
         },
         {
             "date": "Mar 04 2026",
-            "headline": "OT SOC Blueprint—Webinar on Safety and Continuity",
-            "title": "Webinar Offers Blueprint for Designing an OT Security Operations Center",
-            "content": "SecurityWeek is hosting a webinar focused on designing an Operational Technology (OT) Security Operations Center (SOC) to enhance safety, reliability, and business continuity. The webinar will explore strategies for leveraging an integrated OT security platform to safeguard critical operations. Participants will gain insights into best practices for building resilient OT security architectures. As cyber threats increasingly target industrial systems, establishing a robust OT SOC is essential for protecting infrastructure and ensuring uninterrupted operations. Security professionals interested in fortifying their OT environments should consider attending this informative session.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/webinar-today-designing-an-ot-soc-for-safety-reliability-and-business-continuity/",
+            "headline": "Tycoon 2FA Phishing Kit Dismantled by Global Coalition",
+            "title": "Global Coalition Dismantles Tycoon 2FA Phishing Kit",
+            "content": "A global coalition led by Microsoft has dismantled the Tycoon 2FA phishing kit, a significant operation that threatened multifactor authentication systems worldwide. The effort resulted in the seizure of 330 domains that formed the core infrastructure of the phishing platform. The operation&#x27;s alleged creator has been identified in a civil complaint, marking a significant step in reducing the threat of phishing attacks. This takedown is part of a broader strategy to combat phishing, which remains a prevalent threat to online security. Organizations are advised to strengthen their MFA implementations to protect against such sophisticated phishing techniques.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/tycoon-2fa-phishing-kit-takedown-microsoft/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
                 }
             ]
         },
         {
             "date": "Mar 04 2026",
-            "headline": "Interpol Busts African Cybercrime Ring—574 Arrested",
-            "title": "Interpol and Threat Hunter Team Dismantle African Cybercrime Syndicate",
-            "content": "Interpol, with the assistance of threat hunter Will Thomas and his team, has successfully dismantled a major African cybercrime syndicate. The operation resulted in the arrest of 574 suspects and the recovery of over $3 million. The team also decrypted six different malware variants, significantly disrupting the syndicate&#x27;s operations. This effort underscores the importance of collaboration between law enforcement and cybersecurity experts in combating organized cybercrime. Professionals are encouraged to enhance cooperation with law enforcement to address similar threats in their regions.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/threat-hunter-helped-cops-crack-african-cybercrime-syndicate",
+            "headline": "Mail2Shell Attack Targets FreeScout Servers—Critical Vulnerability",
+            "title": "Mail2Shell Zero-Click Attack Lets Hackers Hijack FreeScout Mail Servers",
+            "content": "A critical vulnerability in the FreeScout helpdesk platform, known as the Mail2Shell attack, allows hackers to execute remote code without user interaction or authentication. This zero-click exploit poses a severe risk, enabling attackers to gain control over mail servers and potentially access sensitive data. The vulnerability affects all versions of FreeScout prior to the latest patch. Administrators are urged to apply the security update immediately to mitigate the risk of exploitation. This incident underscores the importance of regular software updates and the need for robust security measures to protect against emerging threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mail2shell-zero-click-attack-lets-hackers-hijack-freescout-mail-servers/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
             "date": "Mar 04 2026",
-            "headline": "CyberStrikeAI Lowers Attack Barrier—Open Source Threat Emerges",
-            "title": "Open Source AI Platform CyberStrikeAI Simplifies Cyber Attacks",
-            "content": "The emergence of CyberStrikeAI, an open source platform, is making it easier for cybercriminals to automate attacks using AI technology. This platform integrates end-to-end attack automation within an AI-native orchestration engine, lowering the entry barrier for malicious actors. CyberStrikeAI is linked to a known threat actor, raising concerns about the democratization of sophisticated attack capabilities. Security professionals should be aware of this trend and bolster defenses against AI-driven threats. Vigilance and proactive security measures are essential to mitigate risks from such platforms.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4140221/ai-powered-attack-kits-go-open-source-and-cyberstrikeai-may-be-just-the-beginning.html",
+            "headline": "VMware Aria Bug Exploited—Cloud Resources at Risk",
+            "title": "VMware Aria Operations Bug Exploited, Cloud Resources at Risk",
+            "content": "A command injection flaw in VMware Aria Operations has been exploited, potentially granting attackers extensive access to cloud environments. This vulnerability could lead to unauthorized control over cloud resources, posing significant risks to affected organizations. Security experts recommend immediate patching to prevent exploitation, as the flaw could be used to disrupt operations or exfiltrate sensitive data. VMware has released a patch to address the issue, highlighting the critical need for timely updates in cloud management systems. Organizations using VMware Aria are advised to review their security posture and apply the necessary updates to safeguard their environments.",
+            "source": "DarkReading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/vmware-aria-operations-bug-exploited-cloud-risk",
             "relatedResources": [
                 {
-                    "label": "Incident Response Automation",
-                    "url": "/guides/incident-response-automation.html",
-                    "icon": "fa-bolt"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "ISC Stormcast Highlights—March 4th Security Updates",
-            "title": "ISC Stormcast Podcast Discusses Latest Cybersecurity Developments",
-            "content": "The SANS Internet Storm Center&#x27;s Stormcast for March 4th, 2026, provides a comprehensive overview of the latest cybersecurity developments. The podcast covers a range of topics, including recent vulnerabilities, threat actor activities, and security best practices. Listeners are encouraged to stay informed on emerging threats and adopt recommended security measures. The ISC Stormcast serves as a valuable resource for professionals seeking to keep up with the rapidly evolving cybersecurity landscape.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32764",
-            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -173,27 +129,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 04 2026",
-            "headline": "Raycast&#x27;s Glaze Simplifies Software Creation—No Coding Needed",
-            "title": "Raycast’s Glaze Platform Enables Code-Free Software Development",
-            "content": "Raycast has unveiled Glaze, an innovative platform designed to allow users to build software without any coding knowledge. While tools like Claude Code have paved the way for code-free development, Glaze aims to streamline the process further by simplifying the interaction with a computer&#x27;s terminal and easing software deployment and maintenance. This platform is particularly beneficial for non-developers, enabling them to participate in software creation without the steep learning curve traditionally associated with coding. The introduction of Glaze highlights a growing trend towards democratizing software development, making it accessible to a wider audience. Users interested in leveraging Glaze should familiarize themselves with basic terminal operations to maximize its potential.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/888866/raycast-glaze-vibe-code-app-store",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Aikido&#x27;s Offshore Data Center—Harnessing Wind Energy",
-            "title": "Aikido to Deploy Data Center Under Offshore Wind Turbine",
-            "content": "Offshore wind developer Aikido plans to deploy a small data center beneath a floating offshore wind turbine later this year. This innovative approach leverages the proximity to renewable energy sources, potentially reducing the environmental impact and operational costs of data centers. The initiative reflects a growing trend towards sustainable data infrastructure, as companies seek to minimize their carbon footprints. By situating data centers offshore, Aikido aims to utilize the consistent energy supply from wind power, enhancing both efficiency and sustainability. Industry professionals should monitor this development as a potential model for future data center deployments.",
+            "date": "Mar 05 2026",
+            "headline": "Nvidia Halts Investments in OpenAI, Anthropic—Unclear Strategy",
+            "title": "Nvidia CEO Jensen Huang Announces End to OpenAI, Anthropic Investments",
+            "content": "Nvidia&#x27;s CEO Jensen Huang disclosed that the company will cease further investments in AI powerhouses OpenAI and Anthropic. This decision comes amidst rising speculation about Nvidia&#x27;s strategic direction in the AI sector. Huang&#x27;s explanation lacked clarity, leaving industry experts questioning the underlying reasons for this shift. Nvidia has been a critical supplier of GPUs to these AI firms, and this move could signal a pivot in its business model or partnerships. The impact on AI development and collaboration dynamics remains uncertain. Stakeholders should monitor Nvidia&#x27;s future announcements for more detailed guidance.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/04/who-needs-data-centers-in-space-when-they-can-float-offshore/",
+            "sourceUrl": "https://techcrunch.com/2026/03/04/jensen-huang-says-nvidia-is-pulling-back-from-openai-and-anthropic-but-his-explanation-raises-more-questions-than-it-answers/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -203,89 +144,48 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Mar 04 2026",
-            "headline": "Physical AI&#x27;s Rise—Industry Convergence Drives Growth",
-            "title": "Physical AI Gains Momentum as Industry Converges on New Frontiers",
-            "content": "The technology sector is witnessing a surge in interest around Physical AI, driven by the simultaneous convergence of multiple technological advancements. Unlike a singular breakthrough, this momentum is characterized by the integration of AI into physical systems, enhancing capabilities across various industries. This trend reflects a broader shift towards embedding intelligence into tangible products, expanding the scope of AI applications. As companies and developers explore these new possibilities, the implications for industries such as robotics, manufacturing, and healthcare are profound. Stakeholders should consider how Physical AI could reshape their operational strategies and product offerings.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/physical-ai-global-race-robots-manufacturing-2026/",
+            "date": "Mar 05 2026",
+            "headline": "Tech Giants Sign Trump&#x27;s Power Pledge—Data Centers in Focus",
+            "title": "Google, Meta, Microsoft Join Trump&#x27;s Rate Payer Protection Pledge",
+            "content": "In a meeting with President Donald Trump, leaders from seven major tech companies, including Google, Meta, and Microsoft, signed a pledge aimed at preventing electricity cost spikes at data centers. This initiative addresses growing bipartisan concerns about the energy consumption of tech infrastructure. As data centers expand, they place significant demands on power grids, potentially raising electricity costs for consumers. The pledge seeks to balance technological growth with sustainable energy practices. Industry professionals should evaluate the implications of this agreement on data center operations and future energy policies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/889578/data-center-power-pledge-white-house-google-meta-microsoft",
             "relatedResources": []
         },
         {
             "date": "Mar 04 2026",
-            "headline": "Secret AI Conference Sparks Political Resistance Movement",
-            "title": "Secret Meeting in New Orleans Ignites AI Political Resistance",
-            "content": "In January, a clandestine conference on artificial intelligence took place at a New Orleans Marriott, gathering around 90 political, community, and thought leaders. The event, shrouded in secrecy, aimed to discuss the societal and ethical implications of AI technology. Attendees, including church leaders and conservative academics, were unaware of each other&#x27;s participation until arrival. This meeting has since catalyzed a political resistance movement focused on addressing AI&#x27;s potential impacts on society. The gathering underscores the growing concern among various sectors about the unchecked advancement of AI technologies. Observers should note the potential for increased regulatory scrutiny and advocacy efforts.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/888841/pro-human-ai-declaration-fli",
+            "headline": "Grammarly&#x27;s AI Reviews Feature Controversial—Authors Unaware",
+            "title": "Superhuman&#x27;s Grammarly Offers AI Reviews from Famous Authors",
+            "content": "Superhuman, the company behind Grammarly, has launched a tool that provides AI-generated writing feedback based on the styles of renowned authors, both living and deceased. This controversial feature raises ethical questions as it operates without obtaining permission from the authors or their estates. The tool aims to enhance user experience by offering personalized writing advice, but it may face legal challenges. Writers and content creators should be aware of potential intellectual property issues and consider the broader impact of AI-driven content analysis.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/grammarly-is-offering-expert-ai-reviews-from-your-favorite-authors-dead-or-alive/",
             "relatedResources": []
         },
         {
             "date": "Mar 04 2026",
-            "headline": "AI Agents Favor Bitcoin—Finance Chiefs Must Adapt",
-            "title": "AI Agents&#x27; Preference for Bitcoin Reshapes Financial Architecture",
-            "content": "AI agents are increasingly opting for Bitcoin as their preferred method of digital wealth storage, prompting finance chiefs to rethink their existing financial architectures. This trend is driven by the internal logic of economically autonomous AI systems, which prioritize Bitcoin&#x27;s decentralized and secure nature. Research by the Bitcoin Policy Institute highlights how these preferences could influence corporate capital flows and financial strategies. As AI systems gain more autonomy, businesses must adapt to accommodate this shift, potentially affecting everything from transaction processing to asset management. Financial professionals should consider the implications for future AI-driven economic models.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-agents-prefer-bitcoin-new-finance-architecture/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "Google Embraces Robotics—Intrinsic Joins Core Operations",
-            "title": "Google Integrates Intrinsic for Industrial Robotics AI Expansion",
-            "content": "Google has officially integrated Intrinsic, a company specializing in AI models and software for industrial robotics, into its core operations. This move signifies Google&#x27;s strategic commitment to advancing its capabilities in the industrial robotics sector. Intrinsic, previously a moonshot project under Alphabet, will continue as a distinct entity within Google, focusing on making industrial robotics more accessible. This integration highlights Google&#x27;s broader strategy to leverage AI in enhancing automation and efficiency across industries. As this development unfolds, industry stakeholders should assess potential collaborations and innovations emerging from Google&#x27;s expanded robotics initiatives.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/google-industrial-robotics-ai-physical-ai-intrinsic/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 03 2026",
-            "headline": "Pixel Update Empowers Gemini—AI Orders Groceries, More",
-            "title": "Google&#x27;s Pixel Update Enables Gemini AI to Perform Tasks",
-            "content": "Google&#x27;s latest March update for Pixel phones introduces new capabilities for its Gemini AI assistant, including the ability to order groceries and book rides. This feature, showcased during Samsung&#x27;s recent Unpacked event, is now available to users, enhancing the functionality and convenience of Pixel devices. By enabling Gemini to perform practical tasks, Google continues to push the boundaries of AI integration in consumer technology. This update reflects a broader trend towards more personalized and autonomous digital assistants. Users should explore these new features to optimize their daily routines and interactions with technology.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/888295/google-gemini-pixel-drop-march-2026",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 04 2026",
-            "headline": "AI Startups Inflate Valuations—Two Price Equity Sales",
-            "title": "AI Startups Use Dual Pricing to Create Unicorn Valuations",
-            "content": "Some AI startups are employing a novel valuation strategy by selling their equity at two different prices to achieve unicorn status. This approach involves offering shares at a lower price to early investors while setting a higher price for later rounds, effectively boosting perceived market value. The tactic aims to attract more investment by projecting higher valuations, potentially misleading stakeholders about the company&#x27;s true financial health. This trend raises concerns about transparency and the sustainability of inflated valuations in the competitive AI sector. Investors are advised to scrutinize valuation methodologies closely to ensure informed decision-making.",
+            "headline": "Anthropic CEO Accuses OpenAI of Misleading Military Deal Claims",
+            "title": "Anthropic CEO Criticizes OpenAI Over Pentagon Contract Dispute",
+            "content": "Anthropic CEO Dario Amodei has publicly criticized OpenAI, accusing them of spreading false information regarding a military contract. Anthropic had previously withdrawn from a Pentagon deal due to AI safety concerns, only for OpenAI to step in. This dispute highlights the ethical challenges tech companies face when engaging with military applications of AI. The controversy underscores the need for transparent communication and adherence to ethical standards in AI deployments. Industry leaders should closely examine the implications of AI military collaborations on company reputations and ethical practices.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/",
+            "sourceUrl": "https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/",
             "relatedResources": []
         },
         {
             "date": "Mar 04 2026",
-            "headline": "Alibaba&#x27;s Qwen AI Team Faces Major Departures",
-            "title": "Key Departures Shake Alibaba&#x27;s Qwen AI Team After Open Source Release",
-            "content": "Alibaba&#x27;s Qwen AI team, renowned for its prolific contributions to open-source AI models, is experiencing significant personnel changes. Following the release of their latest open-source model, several key figures have departed, raising questions about the team&#x27;s future direction. The Qwen team has been instrumental in developing both generalized and specialized generative models, contributing to Alibaba&#x27;s standing in the AI community. This upheaval could impact the pace and focus of future AI innovations from Alibaba, potentially affecting the company&#x27;s competitive edge in the global AI landscape. Stakeholders should monitor Alibaba&#x27;s strategic responses to these changes.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/did-alibaba-just-kneecap-its-powerful-qwen-ai-team-key-figures-depart-in",
+            "headline": "Big Tech&#x27;s White House Pledge—PR Move or Genuine Effort?",
+            "title": "Tech Companies Sign White House Data Center Energy Pledge",
+            "content": "At a White House event, President Donald Trump announced a data center energy pledge signed by major tech firms, including Amazon and Oracle. The pledge aims to address public concerns over the environmental impact of data centers. However, critics argue that the initiative lacks concrete measures and serves more as a public relations effort. As data centers consume increasing amounts of energy, the tech industry faces pressure to adopt sustainable practices. Professionals in the field should assess the effectiveness of such pledges and advocate for tangible environmental strategies.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/big-tech-signs-white-house-data-center-pledge-with-good-optics-not-much-substance/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "AI in Warfare: Smack Technologies&#x27; Battlefield Models",
+            "title": "Smack Technologies Develops AI Models for Military Operations",
+            "content": "While companies like Anthropic debate the ethical limits of AI in military contexts, Smack Technologies is actively developing AI models designed for battlefield operations. These models are intended to enhance strategic planning and decision-making in combat scenarios. The initiative reflects a growing trend of integrating AI into defense systems, raising questions about the balance between innovation and ethical considerations. Military and tech professionals should consider the potential impacts of AI-driven warfare on global security and the ethical responsibilities associated with such advancements.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/ai-model-military-use-smack-technologies/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -293,6 +193,15 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
+        },
+        {
+            "date": "Mar 04 2026",
+            "headline": "Apple Music to Introduce AI Music Transparency Tags",
+            "title": "Apple Music Plans AI-Identified Tracks with Transparency Tags",
+            "content": "Apple Music is set to implement transparency tags to distinguish AI-generated music from human-created tracks. This initiative aims to provide listeners with clarity on the origins of the music they consume. However, the effectiveness of the tags is uncertain as participation by labels and distributors is voluntary. This move reflects a broader industry trend towards transparency in AI-generated content. Music industry professionals should monitor the adoption of these tags and their impact on consumer perceptions and industry standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/04/apple-music-to-add-transparency-tags-to-distinguish-ai-music-says-report/",
+            "relatedResources": []
         }
     ],
     "articles": {},
