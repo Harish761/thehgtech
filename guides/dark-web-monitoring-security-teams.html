@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark Web Monitoring for Security Teams: A Practitioner's Guide 2026 | TheHGTech</title>
-    <meta name="description" content="Complete guide to dark web monitoring for security analysts and SOC teams. Legal frameworks, Tor network fundamentals, threat intelligence tools (Recorded Future, Flare, HIBP), credential leak monitoring, and operational security best practices.">
-    <meta name="keywords" content="dark web monitoring, threat intelligence, SOC analyst dark web, credential monitoring, leaked credentials, dark web tools, Tor security, dark web threat intelligence, security operations, OSINT dark web">
+    <meta name="description"
+        content="Complete guide to dark web monitoring for security analysts and SOC teams. Legal frameworks, Tor network fundamentals, threat intelligence tools (Recorded Future, Flare, HIBP), credential leak monitoring, and operational security best practices.">
+    <meta name="keywords"
+        content="dark web monitoring, threat intelligence, SOC analyst dark web, credential monitoring, leaked credentials, dark web tools, Tor security, dark web threat intelligence, security operations, OSINT dark web">
     <meta name="author" content="TheHGTech">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://thehgtech.com/guides/dark-web-monitoring-security-teams.html">
     <meta property="og:title" content="Dark Web Monitoring for Security Teams: A Practitioner's Guide 2026">
-    <meta property="og:description" content="Legitimate dark web monitoring for SOC teams — credential leak detection, threat actor tracking, legal frameworks, and operational security.">
+    <meta property="og:description"
+        content="Legitimate dark web monitoring for SOC teams — credential leak detection, threat actor tracking, legal frameworks, and operational security.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/dark-web-monitoring-security-teams.html">
     <meta property="og:image" content="https://thehgtech.com/images/guides/dark-web-monitoring-security-teams.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dark Web Monitoring for Security Teams: A Practitioner's Guide 2026">
-    <meta name="twitter:description" content="Legitimate dark web monitoring for SOC teams — credential leaks, threat actors, legal tools.">
+    <meta name="twitter:description"
+        content="Legitimate dark web monitoring for SOC teams — credential leaks, threat actors, legal tools.">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -77,7 +82,9 @@
     }
     </script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.css?v=1">
@@ -85,54 +92,296 @@
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --bg-primary: #000000; --bg-secondary: #0a0a0a; --bg-card: rgba(255,255,255,0.03);
-            --accent-cyan: #00D9FF; --accent-red: #FF3D3D; --accent-green: #10b981;
-            --accent-orange: #f59e0b; --accent-purple: #8b5cf6; --accent-blue: #3b82f6;
-            --text-primary: #ffffff; --text-secondary: #a0a0a0; --text-muted: #666666;
-            --border: rgba(255,255,255,0.1);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        .guide-header { padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; margin-top: 60px; }
-        .guide-badge { display: inline-block; background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1rem; }
-        h1 { font-size: 2.5rem; background: linear-gradient(135deg, #8b5cf6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; }
-        h2 { color: var(--accent-cyan); margin: 2.5rem 0 1rem; font-size: 1.8rem; padding-top: 1rem; border-top: 1px solid var(--border); }
-        h3 { color: var(--text-primary); margin: 1.5rem 0 1rem; font-size: 1.3rem; }
-        h4 { color: var(--accent-cyan); margin: 1.25rem 0 0.75rem; font-size: 1.1rem; }
-        p { margin-bottom: 1rem; color: var(--text-secondary); }
-        a { color: var(--accent-cyan); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul, ol { margin-left: 2rem; margin-bottom: 1rem; color: var(--text-secondary); }
-        li { margin-bottom: 0.5rem; }
-        strong { color: var(--text-primary); }
-        .info-box { background: rgba(59,130,246,0.08); border-left: 4px solid var(--accent-blue); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
-        .warning-box { background: rgba(255,76,76,0.05); border-left: 4px solid var(--accent-red); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
-        .success-box { background: rgba(16,185,129,0.05); border-left: 4px solid var(--accent-green); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
-        .technical-box { background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.2); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
-        .technical-box h3 { margin-top: 0; color: var(--accent-cyan); }
-        .legal-box { background: rgba(139,92,246,0.08); border: 1px solid rgba(139,92,246,0.3); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
-        .legal-box::before { content: "⚖️ Legal Notice"; display: block; color: var(--accent-purple); font-weight: 600; margin-bottom: 0.5rem; }
-        code { background: var(--bg-card); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: 'JetBrains Mono', monospace; color: var(--accent-cyan); font-size: 0.9rem; }
-        pre { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; overflow-x: auto; margin: 1.5rem 0; }
-        pre code { background: none; padding: 0; color: var(--accent-green); }
-        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-card); border-radius: 8px; overflow: hidden; }
-        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
-        th { background: rgba(139,92,246,0.1); color: var(--accent-purple); font-weight: 600; }
-        td { color: var(--text-secondary); }
-        .toc { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin: 2rem 0; }
-        .toc h3 { margin-top: 0; color: var(--accent-cyan); }
-        .toc ul { list-style: none; margin-left: 0; }
-        .toc li { margin-bottom: 0.5rem; }
-        .toc a { color: var(--text-secondary); text-decoration: none; }
-        .toc a:hover { color: var(--accent-cyan); }
-        .architecture-diagram { background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(139,92,246,0.1)); border: 1px solid var(--accent-purple); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; overflow-x: auto; }
-        .severity-critical { color: var(--accent-red); font-weight: 700; }
-        .severity-high { color: var(--accent-orange); font-weight: 700; }
-        .back-link { display: inline-block; margin-bottom: 2rem; color: var(--accent-cyan); text-decoration: none; }
-        .back-link:hover { text-decoration: underline; }
-        @media (max-width: 768px) { h1 { font-size: 1.6rem; } .container { padding: 1rem; } h2 { font-size: 1.4rem; } }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        .guide-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--accent-cyan);
+            margin: 1.25rem 0 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        .info-box {
+            background: rgba(59, 130, 246, 0.08);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .technical-box {
+            background: rgba(59, 130, 246, 0.06);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .technical-box h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .legal-box {
+            background: rgba(139, 92, 246, 0.08);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .legal-box::before {
+            content: "⚖️ Legal Notice";
+            display: block;
+            color: var(--accent-purple);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .architecture-diagram {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(139, 92, 246, 0.1));
+            border: 1px solid var(--accent-purple);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+        }
+
+        .severity-critical {
+            color: var(--accent-red);
+            font-weight: 700;
+        }
+
+        .severity-high {
+            color: var(--accent-orange);
+            font-weight: 700;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
     </style>
     <link rel="stylesheet" href="/m-core.css?v=4.2">
     <link rel="stylesheet" href="/m-layout.css?v=3.2">
@@ -140,7 +389,7 @@
     <script src="/m-app.js?v=4.3" defer></script>
     <link rel="stylesheet" href="../ui-enhancements.css?v=20260220">
     <script>
-        (function() {
+        (function () {
             var savedTheme = localStorage.getItem("theme");
             if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
                 document.documentElement.setAttribute("data-theme", "light");
@@ -174,38 +423,109 @@
         });
     </script>
 </head>
+
 <body>
     <!-- Mobile Header -->
     <header class="m-header m-only">
         <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
-            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #8b5cf6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #8b5cf6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
         </div>
         <div class="m-header__actions">
-            <button class="m-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme"><span class="m-theme-toggle__thumb"></span><span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span class="m-theme-toggle__star"></span></span></button>
-            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i class="fas fa-search"></i></button>
+            <button class="m-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme"><span
+                    class="m-theme-toggle__thumb"></span><span class="m-theme-toggle__stars"><span
+                        class="m-theme-toggle__star"></span><span class="m-theme-toggle__star"></span></span></button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
         </div>
     </header>
     <nav class="m-bottom-nav m-only">
         <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
         <a href="/index.html#news" class="m-bottom-nav__item"><i class="fas fa-bolt"></i><span>News</span></a>
         <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVEs</span></a>
-        <a href="/ransomware-tracker.html" class="m-bottom-nav__item"><i class="fas fa-skull-crossbones"></i><span>Ransomware</span></a>
+        <a href="/ransomware-tracker.html" class="m-bottom-nav__item"><i
+                class="fas fa-skull-crossbones"></i><span>Ransomware</span></a>
         <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
         <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
         <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
     </nav>
     <header class="header" role="banner">
         <div class="header-content">
-            <div class="logo"><a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;"><img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark"><img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a></div>
+            <div class="logo"><a href="/index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;"><img
+                        src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark"><img src="/logo-light.png"
+                        alt="TheHGTech Logo" class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a>
+            </div>
             <nav class="nav nav-modern" role="navigation">
                 <a href="/index.html#news">News</a>
-                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span><div class="nav-dropdown-panel"><a href="/threat-intel.html" class="dropdown-item"><div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div><div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div></div></a><a href="/cve-tracker.html" class="dropdown-item"><div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">CVE Tracker</div><div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div></div></a><a href="/ransomware-tracker.html" class="dropdown-item"><div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Ransomware Tracker</div><div class="dropdown-item-desc">Track active ransomware groups</div></div></a></div></div>
-                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Resources <i class="fas fa-chevron-down dropdown-arrow"></i></span><div class="nav-dropdown-panel"><a href="/guides/" class="dropdown-item" style="background: rgba(0,217,255,0.08);"><div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span class="dropdown-badge popular">40+</span></div><div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div></div></a>
-                    <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);"><div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div><div class="dropdown-item-desc">Security automation templates</div></div></a>
-                    <a href="/comparisons/" class="dropdown-item"><div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Tool Comparisons</div><div class="dropdown-item-desc">Security tool reviews</div></div></a><div class="dropdown-divider"></div><a href="/articles.html" class="dropdown-item"><div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Articles</div><div class="dropdown-item-desc">Security news and analysis</div></div></a></div></div>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);"><span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span></button>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Intelligence <span
+                            class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel"><a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a><a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a><a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel"><a href="/guides/" class="dropdown-item"
+                            style="background: rgba(0,217,255,0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                            <div class="dropdown-item-icon"
+                                style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i
+                                    class="fas fa-cogs"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span
+                                        class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                                <div class="dropdown-item-desc">Security automation templates</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div><a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme"
+                    style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);"><span
+                        class="m-theme-toggle__thumb"
+                        style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span></button>
             </nav>
             <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
         </div>
@@ -217,24 +537,39 @@
         <div class="guide-header">
             <span class="guide-badge"><i class="fas fa-user-secret"></i> Threat Intelligence</span>
             <h1>Dark Web Monitoring for Security Teams: A Practitioner's Guide</h1>
-            <p style="color: var(--text-muted); font-size: 1.1rem;">What the dark web actually is, how security analysts legally monitor it, credential leak detection, threat actor tracking, and operational security for threat intelligence teams</p>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">What the dark web actually is, how security analysts
+                legally monitor it, credential leak detection, threat actor tracking, and operational security for
+                threat intelligence teams</p>
             <div style="margin-top: 1rem; color: var(--text-muted);">
                 <span><i class="fas fa-book-open"></i> 20 min read</span> <span style="margin: 0 0.5rem;">|</span>
-                <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> <span style="margin: 0 0.5rem;">|</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> <span
+                    style="margin: 0 0.5rem;">|</span>
                 <span><i class="far fa-calendar-alt"></i> March 2026</span>
             </div>
         </div>
 
-        <img src="/images/guides/dark-web-monitoring-security-teams.png" alt="Dark Web Monitoring for Security Teams Guide" class="featured-image" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(139,92,246,0.2); border: 1px solid var(--border);" loading="lazy">
+        <img src="/images/guides/dark-web-monitoring-security-teams.png"
+            alt="Dark Web Monitoring for Security Teams Guide" class="featured-image"
+            style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(139,92,246,0.2); border: 1px solid var(--border);"
+            loading="lazy">
 
         <div class="warning-box" style="margin-bottom: 2rem;">
             <strong><i class="fas fa-balance-scale"></i> Educational Purpose & Legal Disclaimer:</strong>
-            This guide is published <strong>strictly for educational and defensive security purposes</strong>. All techniques described are intended for use by authorized security professionals operating within their organization's mandate. Accessing the dark web is not inherently illegal, but participating in illegal marketplaces, purchasing stolen data, or engaging in criminal activity is. Always consult your organization's legal counsel before initiating a dark web monitoring program. The authors do not encourage or condone any illegal activity.
+            This guide is published <strong>strictly for educational and defensive security purposes</strong>. All
+            techniques described are intended for use by authorized security professionals operating within their
+            organization's mandate. Accessing the dark web is not inherently illegal, but participating in illegal
+            marketplaces, purchasing stolen data, or engaging in criminal activity is. Always consult your
+            organization's legal counsel before initiating a dark web monitoring program. The authors do not encourage
+            or condone any illegal activity.
         </div>
 
         <div class="info-box">
             <strong><i class="fas fa-file-alt"></i> Abstract:</strong>
-            The dark web hosts forums and marketplaces where stolen credentials, exploit kits, and corporate data are traded daily. For security teams, monitoring these channels provides early warning of breaches, targeted attacks, and emerging threats. This guide explains what the dark web actually is (separating fact from sensationalism), the legal framework for monitoring, practical tools both free and commercial, how to set up credential leak monitoring, and operational security best practices to protect analysts during research.
+            The dark web hosts forums and marketplaces where stolen credentials, exploit kits, and corporate data are
+            traded daily. For security teams, monitoring these channels provides early warning of breaches, targeted
+            attacks, and emerging threats. This guide explains what the dark web actually is (separating fact from
+            sensationalism), the legal framework for monitoring, practical tools both free and commercial, how to set up
+            credential leak monitoring, and operational security best practices to protect analysts during research.
         </div>
 
         <!-- TOC -->
@@ -259,24 +594,33 @@
         <!-- SECTION 1 -->
         <h2 id="what-is-darkweb">1. What Is the Dark Web? (Separating Fact from Fiction)</h2>
 
-        <p>The "dark web" is frequently sensationalized in media, creating misconceptions that hinder legitimate security work. Let's establish the facts:</p>
+        <p>The "dark web" is frequently sensationalized in media, creating misconceptions that hinder legitimate
+            security work. Let's establish the facts:</p>
 
-        <p>The dark web is a <strong>subset of the deep web</strong> that requires specific software — primarily the <strong>Tor (The Onion Router) browser</strong> — to access. It uses <code>.onion</code> domains that are not resolved by standard DNS and are not indexed by Google, Bing, or other conventional search engines.</p>
+        <p>The dark web is a <strong>subset of the deep web</strong> that requires specific software — primarily the
+            <strong>Tor (The Onion Router) browser</strong> — to access. It uses <code>.onion</code> domains that are
+            not resolved by standard DNS and are not indexed by Google, Bing, or other conventional search engines.</p>
 
         <h3>1.1 What the Dark Web Actually Is</h3>
         <ul>
-            <li><strong>An overlay network</strong> built on top of the regular internet, using onion routing for anonymity</li>
+            <li><strong>An overlay network</strong> built on top of the regular internet, using onion routing for
+                anonymity</li>
             <li><strong>A collection of websites</strong> accessible only through Tor (or sometimes I2P/Freenet)</li>
-            <li><strong>Used by both legitimate and criminal actors</strong> — journalists, activists under oppressive regimes, whistleblowers (SecureDrop), privacy advocates, researchers, and yes, criminals</li>
+            <li><strong>Used by both legitimate and criminal actors</strong> — journalists, activists under oppressive
+                regimes, whistleblowers (SecureDrop), privacy advocates, researchers, and yes, criminals</li>
             <li><strong>Estimated to be less than 0.01%</strong> of total internet content</li>
         </ul>
 
         <h3>1.2 What the Dark Web Is NOT</h3>
         <ul>
-            <li><strong>Not a single place</strong> — it's thousands of independent .onion sites, many of which go offline frequently</li>
-            <li><strong>Not entirely criminal</strong> — Facebook, the BBC, the New York Times, and ProtonMail all operate .onion services for user privacy</li>
-            <li><strong>Not untraceable</strong> — law enforcement regularly deanonymizes users through operational security failures, not by "breaking" Tor</li>
-            <li><strong>Not mystical</strong> — accessing it is as simple as downloading the Tor browser, which is free and open-source</li>
+            <li><strong>Not a single place</strong> — it's thousands of independent .onion sites, many of which go
+                offline frequently</li>
+            <li><strong>Not entirely criminal</strong> — Facebook, the BBC, the New York Times, and ProtonMail all
+                operate .onion services for user privacy</li>
+            <li><strong>Not untraceable</strong> — law enforcement regularly deanonymizes users through operational
+                security failures, not by "breaking" Tor</li>
+            <li><strong>Not mystical</strong> — accessing it is as simple as downloading the Tor browser, which is free
+                and open-source</li>
         </ul>
 
         <!-- SECTION 2 -->
@@ -327,10 +671,12 @@ THE INTERNET LAYERS
         <!-- SECTION 3 -->
         <h2 id="how-tor-works">3. How Tor Works: The Technical Fundamentals</h2>
 
-        <p>Understanding Tor's architecture is essential for security analysts who need to assess the reliability and limitations of dark web intelligence.</p>
+        <p>Understanding Tor's architecture is essential for security analysts who need to assess the reliability and
+            limitations of dark web intelligence.</p>
 
         <h3>3.1 Onion Routing</h3>
-        <p>Tor routes traffic through a <strong>minimum of three relays</strong> (nodes), each of which only knows the identity of the immediately preceding and following node:</p>
+        <p>Tor routes traffic through a <strong>minimum of three relays</strong> (nodes), each of which only knows the
+            identity of the immediately preceding and following node:</p>
 
         <div class="architecture-diagram">
             <pre style="color: var(--accent-cyan); margin: 0;">
@@ -363,51 +709,122 @@ TOR ONION ROUTING
 
         <h3>3.2 Key Limitations Security Analysts Should Know</h3>
         <ul>
-            <li><strong>Exit node surveillance:</strong> For clearnet (non-.onion) traffic, the exit node can see unencrypted content. For .onion sites, there is no exit node — traffic stays within Tor</li>
-            <li><strong>Timing correlation:</strong> Sophisticated adversaries (nation-states) can potentially correlate entry and exit traffic timing to deanonymize users, though this requires controlling both guard and exit nodes</li>
-            <li><strong>Browser fingerprinting:</strong> JavaScript, canvas fingerprinting, and WebRTC leaks can identify users even through Tor if the browser is misconfigured</li>
-            <li><strong>Human error:</strong> Most dark web arrests result from operational security failures (reusing usernames, logging in from personal networks) — not from breaking Tor's cryptography</li>
+            <li><strong>Exit node surveillance:</strong> For clearnet (non-.onion) traffic, the exit node can see
+                unencrypted content. For .onion sites, there is no exit node — traffic stays within Tor</li>
+            <li><strong>Timing correlation:</strong> Sophisticated adversaries (nation-states) can potentially correlate
+                entry and exit traffic timing to deanonymize users, though this requires controlling both guard and exit
+                nodes</li>
+            <li><strong>Browser fingerprinting:</strong> JavaScript, canvas fingerprinting, and WebRTC leaks can
+                identify users even through Tor if the browser is misconfigured</li>
+            <li><strong>Human error:</strong> Most dark web arrests result from operational security failures (reusing
+                usernames, logging in from personal networks) — not from breaking Tor's cryptography</li>
         </ul>
 
         <!-- SECTION 4 -->
         <h2 id="legal">4. Legal Framework: What Security Teams Can and Cannot Do</h2>
 
         <div class="legal-box">
-            <p><strong>This section provides general information, not legal advice.</strong> Always consult your organization's legal counsel before implementing a dark web monitoring program. Laws vary by jurisdiction and are subject to change.</p>
+            <p><strong>This section provides general information, not legal advice.</strong> Always consult your
+                organization's legal counsel before implementing a dark web monitoring program. Laws vary by
+                jurisdiction and are subject to change.</p>
         </div>
 
         <h3>4.1 What Is Generally Legal</h3>
         <table>
-            <thead><tr><th>Activity</th><th>Legal Status</th><th>Notes</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Legal Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td>Using the Tor browser</td><td style="color: var(--accent-green);">✅ Legal</td><td>Legal in all Western democracies. Tor is developed by the Tor Project, a 501(c)(3) nonprofit</td></tr>
-                <tr><td>Browsing publicly accessible .onion sites</td><td style="color: var(--accent-green);">✅ Legal</td><td>No different from browsing any public website</td></tr>
-                <tr><td>Monitoring forums for mentions of your organization</td><td style="color: var(--accent-green);">✅ Legal</td><td>Standard threat intelligence practice. Used by all major security vendors</td></tr>
-                <tr><td>Checking credentials against breach databases (HIBP)</td><td style="color: var(--accent-green);">✅ Legal</td><td>Have I Been Pwned is operated by Troy Hunt with cooperation of FBI, NCA, Europol</td></tr>
-                <tr><td>Taking screenshots of public forum posts for threat intel</td><td style="color: var(--accent-green);">✅ Legal</td><td>Standard OSINT practice</td></tr>
-                <tr><td>Using commercial dark web monitoring services</td><td style="color: var(--accent-green);">✅ Legal</td><td>Recorded Future, Flare, SpyCloud are all legitimate businesses</td></tr>
+                <tr>
+                    <td>Using the Tor browser</td>
+                    <td style="color: var(--accent-green);">✅ Legal</td>
+                    <td>Legal in all Western democracies. Tor is developed by the Tor Project, a 501(c)(3) nonprofit
+                    </td>
+                </tr>
+                <tr>
+                    <td>Browsing publicly accessible .onion sites</td>
+                    <td style="color: var(--accent-green);">✅ Legal</td>
+                    <td>No different from browsing any public website</td>
+                </tr>
+                <tr>
+                    <td>Monitoring forums for mentions of your organization</td>
+                    <td style="color: var(--accent-green);">✅ Legal</td>
+                    <td>Standard threat intelligence practice. Used by all major security vendors</td>
+                </tr>
+                <tr>
+                    <td>Checking credentials against breach databases (HIBP)</td>
+                    <td style="color: var(--accent-green);">✅ Legal</td>
+                    <td>Have I Been Pwned is operated by Troy Hunt with cooperation of FBI, NCA, Europol</td>
+                </tr>
+                <tr>
+                    <td>Taking screenshots of public forum posts for threat intel</td>
+                    <td style="color: var(--accent-green);">✅ Legal</td>
+                    <td>Standard OSINT practice</td>
+                </tr>
+                <tr>
+                    <td>Using commercial dark web monitoring services</td>
+                    <td style="color: var(--accent-green);">✅ Legal</td>
+                    <td>Recorded Future, Flare, SpyCloud are all legitimate businesses</td>
+                </tr>
             </tbody>
         </table>
 
         <h3>4.2 What Is Generally Illegal (Do NOT Do This)</h3>
         <table>
-            <thead><tr><th>Activity</th><th>Legal Status</th><th>Why</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Legal Status</th>
+                    <th>Why</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td>Purchasing stolen credentials or PII</td><td class="severity-critical">❌ Illegal</td><td>Receiving stolen property, regardless of "research" intent</td></tr>
-                <tr><td>Buying access to criminal marketplaces</td><td class="severity-critical">❌ Illegal</td><td>Participating in criminal enterprise</td></tr>
-                <tr><td>Purchasing exploit kits or malware</td><td class="severity-critical">❌ Illegal</td><td>Illegal under CFAA (US), Computer Misuse Act (UK)</td></tr>
-                <tr><td>Interacting with threat actors under false pretenses</td><td class="severity-critical">⚠️ Gray Area</td><td>May constitute entrapment or conspiracy; leave this to law enforcement</td></tr>
-                <tr><td>Accessing child exploitation material</td><td class="severity-critical">❌ Strictly Illegal</td><td>Illegal everywhere; report to NCMEC/IWF immediately</td></tr>
-                <tr><td>Downloading leaked databases</td><td class="severity-critical">⚠️ Gray Area</td><td>Possessing stolen data may violate GDPR (EU), CFAA (US); consult legal</td></tr>
+                <tr>
+                    <td>Purchasing stolen credentials or PII</td>
+                    <td class="severity-critical">❌ Illegal</td>
+                    <td>Receiving stolen property, regardless of "research" intent</td>
+                </tr>
+                <tr>
+                    <td>Buying access to criminal marketplaces</td>
+                    <td class="severity-critical">❌ Illegal</td>
+                    <td>Participating in criminal enterprise</td>
+                </tr>
+                <tr>
+                    <td>Purchasing exploit kits or malware</td>
+                    <td class="severity-critical">❌ Illegal</td>
+                    <td>Illegal under CFAA (US), Computer Misuse Act (UK)</td>
+                </tr>
+                <tr>
+                    <td>Interacting with threat actors under false pretenses</td>
+                    <td class="severity-critical">⚠️ Gray Area</td>
+                    <td>May constitute entrapment or conspiracy; leave this to law enforcement</td>
+                </tr>
+                <tr>
+                    <td>Accessing child exploitation material</td>
+                    <td class="severity-critical">❌ Strictly Illegal</td>
+                    <td>Illegal everywhere; report to NCMEC/IWF immediately</td>
+                </tr>
+                <tr>
+                    <td>Downloading leaked databases</td>
+                    <td class="severity-critical">⚠️ Gray Area</td>
+                    <td>Possessing stolen data may violate GDPR (EU), CFAA (US); consult legal</td>
+                </tr>
             </tbody>
         </table>
 
         <div class="info-box">
             <strong><i class="fas fa-gavel"></i> Regulatory References:</strong>
             <ul style="margin-top: 0.5rem;">
-                <li><strong>US:</strong> Computer Fraud and Abuse Act (CFAA, 18 U.S.C. § 1030) — passive monitoring of public resources is not "unauthorized access"</li>
-                <li><strong>UK:</strong> Computer Misuse Act 1990 — monitoring publicly accessible sites does not constitute "unauthorized access to computer material"</li>
-                <li><strong>EU:</strong> GDPR applies to any personal data collected, even from dark web sources — you must handle discovered PII in compliance with data protection regulations</li>
+                <li><strong>US:</strong> Computer Fraud and Abuse Act (CFAA, 18 U.S.C. § 1030) — passive monitoring of
+                    public resources is not "unauthorized access"</li>
+                <li><strong>UK:</strong> Computer Misuse Act 1990 — monitoring publicly accessible sites does not
+                    constitute "unauthorized access to computer material"</li>
+                <li><strong>EU:</strong> GDPR applies to any personal data collected, even from dark web sources — you
+                    must handle discovered PII in compliance with data protection regulations</li>
             </ul>
         </div>
 
@@ -418,25 +835,63 @@ TOR ONION ROUTING
 
         <h3>5.1 Threat Intelligence Use Cases</h3>
         <table>
-            <thead><tr><th>Use Case</th><th>What You Monitor</th><th>Example Action</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Use Case</th>
+                    <th>What You Monitor</th>
+                    <th>Example Action</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td><strong>Credential Leak Detection</strong></td><td>Employee emails/passwords in breach dumps</td><td>Force password reset + MFA enrollment for affected accounts</td></tr>
-                <tr><td><strong>Brand Impersonation</strong></td><td>Phishing kits targeting your brand on dark web forums</td><td>Alert anti-fraud team, prepare customers</td></tr>
-                <tr><td><strong>Ransomware Leak Monitoring</strong></td><td>Your organization's data on ransomware group leak sites</td><td>Trigger incident response, notify legal/PR</td></tr>
-                <tr><td><strong>Threat Actor Reconnaissance</strong></td><td>Discussions targeting your industry or organization by name</td><td>Elevate threat level, brief executive team</td></tr>
-                <tr><td><strong>Exploit & Vulnerability Intelligence</strong></td><td>Zero-day discussions, PoC sharing for your tech stack</td><td>Prioritize patching, implement virtual patches</td></tr>
-                <tr><td><strong>Supply Chain Monitoring</strong></td><td>Compromised vendor credentials or infrastructure</td><td>Assess third-party risk exposure, notify vendors</td></tr>
-                <tr><td><strong>Insider Threat</strong></td><td>Employees selling access or data</td><td>Engage HR/Legal, preserve evidence</td></tr>
+                <tr>
+                    <td><strong>Credential Leak Detection</strong></td>
+                    <td>Employee emails/passwords in breach dumps</td>
+                    <td>Force password reset + MFA enrollment for affected accounts</td>
+                </tr>
+                <tr>
+                    <td><strong>Brand Impersonation</strong></td>
+                    <td>Phishing kits targeting your brand on dark web forums</td>
+                    <td>Alert anti-fraud team, prepare customers</td>
+                </tr>
+                <tr>
+                    <td><strong>Ransomware Leak Monitoring</strong></td>
+                    <td>Your organization's data on ransomware group leak sites</td>
+                    <td>Trigger incident response, notify legal/PR</td>
+                </tr>
+                <tr>
+                    <td><strong>Threat Actor Reconnaissance</strong></td>
+                    <td>Discussions targeting your industry or organization by name</td>
+                    <td>Elevate threat level, brief executive team</td>
+                </tr>
+                <tr>
+                    <td><strong>Exploit & Vulnerability Intelligence</strong></td>
+                    <td>Zero-day discussions, PoC sharing for your tech stack</td>
+                    <td>Prioritize patching, implement virtual patches</td>
+                </tr>
+                <tr>
+                    <td><strong>Supply Chain Monitoring</strong></td>
+                    <td>Compromised vendor credentials or infrastructure</td>
+                    <td>Assess third-party risk exposure, notify vendors</td>
+                </tr>
+                <tr>
+                    <td><strong>Insider Threat</strong></td>
+                    <td>Employees selling access or data</td>
+                    <td>Engage HR/Legal, preserve evidence</td>
+                </tr>
             </tbody>
         </table>
 
         <div class="info-box">
             <strong><i class="fas fa-chart-bar"></i> Impact Statistics:</strong>
             <ul style="margin-top: 0.5rem;">
-                <li><strong>IBM 2025 Cost of a Data Breach Report:</strong> Organizations with threat intelligence programs identified breaches <strong>28 days faster</strong> on average</li>
-                <li><strong>Verizon DBIR 2025:</strong> Stolen credentials were involved in <strong>80%+</strong> of web application breaches</li>
-                <li><strong>SpyCloud 2025 Report:</strong> <strong>61%</strong> of data breaches in 2024 involved stolen credentials found on the dark web</li>
-                <li><strong>Have I Been Pwned:</strong> Tracks over <strong>14 billion compromised accounts</strong> across 800+ breaches</li>
+                <li><strong>IBM 2025 Cost of a Data Breach Report:</strong> Organizations with threat intelligence
+                    programs identified breaches <strong>28 days faster</strong> on average</li>
+                <li><strong>Verizon DBIR 2025:</strong> Stolen credentials were involved in <strong>80%+</strong> of web
+                    application breaches</li>
+                <li><strong>SpyCloud 2025 Report:</strong> <strong>61%</strong> of data breaches in 2024 involved stolen
+                    credentials found on the dark web</li>
+                <li><strong>Have I Been Pwned:</strong> Tracks over <strong>14 billion compromised accounts</strong>
+                    across 800+ breaches</li>
             </ul>
         </div>
 
@@ -446,7 +901,8 @@ TOR ONION ROUTING
         <p>These tools are legitimate, publicly available, and widely used by security professionals:</p>
 
         <h3>6.1 Have I Been Pwned (HIBP)</h3>
-        <p>Created by security researcher <strong>Troy Hunt</strong>, HIBP is the gold standard for credential breach checking. It partners with the FBI, NCA (UK), and Europol to receive breach data.</p>
+        <p>Created by security researcher <strong>Troy Hunt</strong>, HIBP is the gold standard for credential breach
+            checking. It partners with the FBI, NCA (UK), and Europol to receive breach data.</p>
 
         <div class="technical-box">
             <h3><i class="fas fa-terminal"></i> HIBP API — Check Domain for Breached Accounts</h3>
@@ -472,52 +928,134 @@ curl -s "https://api.pwnedpasswords.com/range/CBFDA"</code></pre>
         </div>
 
         <h3>6.2 IntelligenceX</h3>
-        <p><strong>IntelligenceX</strong> (<code>intelx.io</code>) is a search engine and data archive that indexes content from the dark web, paste sites, and leaked datasets. It provides a free tier for security researchers.</p>
+        <p><strong>IntelligenceX</strong> (<code>intelx.io</code>) is a search engine and data archive that indexes
+            content from the dark web, paste sites, and leaked datasets. It provides a free tier for security
+            researchers.</p>
 
         <h3>6.3 Ahmia.fi</h3>
-        <p><strong>Ahmia</strong> is a legitimate search engine for Tor hidden services. Developed by security researcher Juha Nurmi, it explicitly filters out illegal content and is used by researchers and journalists. Accessible at <code>ahmia.fi</code> (surface web) and via .onion address.</p>
+        <p><strong>Ahmia</strong> is a legitimate search engine for Tor hidden services. Developed by security
+            researcher Juha Nurmi, it explicitly filters out illegal content and is used by researchers and journalists.
+            Accessible at <code>ahmia.fi</code> (surface web) and via .onion address.</p>
 
         <h3>6.4 Shodan (for Infrastructure Intelligence)</h3>
-        <p>While not a dark web tool specifically, <strong>Shodan</strong> (<code>shodan.io</code>) can identify if your organization's infrastructure is exposed or has been historically compromised, complementing dark web monitoring.</p>
+        <p>While not a dark web tool specifically, <strong>Shodan</strong> (<code>shodan.io</code>) can identify if your
+            organization's infrastructure is exposed or has been historically compromised, complementing dark web
+            monitoring.</p>
 
         <h3>6.5 Comparison Table: Free Tools</h3>
         <table>
-            <thead><tr><th>Tool</th><th>Focus</th><th>Free Tier</th><th>Best For</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Focus</th>
+                    <th>Free Tier</th>
+                    <th>Best For</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td><strong>Have I Been Pwned</strong></td><td>Credential breaches</td><td>Yes (limited API)</td><td>Email/password breach checking</td></tr>
-                <tr><td><strong>IntelligenceX</strong></td><td>Dark web search, leaks</td><td>Yes (10 searches/day)</td><td>Paste site & leak searching</td></tr>
-                <tr><td><strong>Ahmia.fi</strong></td><td>Tor hidden service search</td><td>Yes (fully free)</td><td>Discovering .onion sites</td></tr>
-                <tr><td><strong>Shodan</strong></td><td>Internet-connected devices</td><td>Yes (limited)</td><td>Infrastructure exposure</td></tr>
-                <tr><td><strong>GreyNoise</strong></td><td>Internet background noise</td><td>Community edition</td><td>Distinguishing targeted vs mass scans</td></tr>
+                <tr>
+                    <td><strong>Have I Been Pwned</strong></td>
+                    <td>Credential breaches</td>
+                    <td>Yes (limited API)</td>
+                    <td>Email/password breach checking</td>
+                </tr>
+                <tr>
+                    <td><strong>IntelligenceX</strong></td>
+                    <td>Dark web search, leaks</td>
+                    <td>Yes (10 searches/day)</td>
+                    <td>Paste site & leak searching</td>
+                </tr>
+                <tr>
+                    <td><strong>Ahmia.fi</strong></td>
+                    <td>Tor hidden service search</td>
+                    <td>Yes (fully free)</td>
+                    <td>Discovering .onion sites</td>
+                </tr>
+                <tr>
+                    <td><strong>Shodan</strong></td>
+                    <td>Internet-connected devices</td>
+                    <td>Yes (limited)</td>
+                    <td>Infrastructure exposure</td>
+                </tr>
+                <tr>
+                    <td><strong>GreyNoise</strong></td>
+                    <td>Internet background noise</td>
+                    <td>Community edition</td>
+                    <td>Distinguishing targeted vs mass scans</td>
+                </tr>
             </tbody>
         </table>
 
         <!-- SECTION 7 -->
         <h2 id="tools-commercial">7. Commercial Threat Intelligence Platforms</h2>
 
-        <p>For organizations with budget, commercial platforms provide curated, analyzed intelligence without requiring analysts to directly access the dark web:</p>
+        <p>For organizations with budget, commercial platforms provide curated, analyzed intelligence without requiring
+            analysts to directly access the dark web:</p>
 
         <table>
-            <thead><tr><th>Platform</th><th>Key Capabilities</th><th>Pricing</th><th>Best For</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Key Capabilities</th>
+                    <th>Pricing</th>
+                    <th>Best For</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td><strong>Recorded Future</strong></td><td>Broadest dark web coverage, AI-powered analysis, SIEM integration, real-time alerts</td><td>Enterprise (contact sales)</td><td>Large SOCs with dedicated CTI teams</td></tr>
-                <tr><td><strong>Flare</strong></td><td>Dark web & illicit Telegram monitoring, credential leak detection, automated alerts</td><td>Mid-market pricing</td><td>Mid-size orgs wanting automated monitoring</td></tr>
-                <tr><td><strong>SpyCloud</strong></td><td>Credential exposure detection, automated remediation workflows, Active Directory integration</td><td>Per-user pricing</td><td>Automated credential exposure response</td></tr>
-                <tr><td><strong>CrowdStrike Falcon Intelligence</strong></td><td>Dark web TI integrated with endpoint + identity, adversary profiles, indicators</td><td>Enterprise (bundled with Falcon)</td><td>CrowdStrike customers wanting unified TI</td></tr>
-                <tr><td><strong>DarkOwl Vision</strong></td><td>Dark web data API, historical data, OSINT integration</td><td>API-based pricing</td><td>TI teams building custom platforms</td></tr>
-                <tr><td><strong>Digital Shadows (ReliaQuest)</strong></td><td>Brand monitoring, VIP protection, data leak detection, takedown services</td><td>Enterprise</td><td>Brand/executive protection focus</td></tr>
+                <tr>
+                    <td><strong>Recorded Future</strong></td>
+                    <td>Broadest dark web coverage, AI-powered analysis, SIEM integration, real-time alerts</td>
+                    <td>Enterprise (contact sales)</td>
+                    <td>Large SOCs with dedicated CTI teams</td>
+                </tr>
+                <tr>
+                    <td><strong>Flare</strong></td>
+                    <td>Dark web & illicit Telegram monitoring, credential leak detection, automated alerts</td>
+                    <td>Mid-market pricing</td>
+                    <td>Mid-size orgs wanting automated monitoring</td>
+                </tr>
+                <tr>
+                    <td><strong>SpyCloud</strong></td>
+                    <td>Credential exposure detection, automated remediation workflows, Active Directory integration
+                    </td>
+                    <td>Per-user pricing</td>
+                    <td>Automated credential exposure response</td>
+                </tr>
+                <tr>
+                    <td><strong>CrowdStrike Falcon Intelligence</strong></td>
+                    <td>Dark web TI integrated with endpoint + identity, adversary profiles, indicators</td>
+                    <td>Enterprise (bundled with Falcon)</td>
+                    <td>CrowdStrike customers wanting unified TI</td>
+                </tr>
+                <tr>
+                    <td><strong>DarkOwl Vision</strong></td>
+                    <td>Dark web data API, historical data, OSINT integration</td>
+                    <td>API-based pricing</td>
+                    <td>TI teams building custom platforms</td>
+                </tr>
+                <tr>
+                    <td><strong>Digital Shadows (ReliaQuest)</strong></td>
+                    <td>Brand monitoring, VIP protection, data leak detection, takedown services</td>
+                    <td>Enterprise</td>
+                    <td>Brand/executive protection focus</td>
+                </tr>
             </tbody>
         </table>
 
         <div class="info-box">
             <strong><i class="fas fa-lightbulb"></i> Practical Advice:</strong>
-            <p style="margin-top: 0.5rem; margin-bottom: 0;">Start with <strong>Have I Been Pwned</strong> (free/$3.50/mo) for credential monitoring. If your threat model justifies it, add a commercial platform. Most mid-size organizations don't need to access the dark web directly — commercial tools do this safely and provide analyzed intelligence rather than raw data. Reserve direct Tor access for mature threat intelligence teams with dedicated OPSEC protocols.</p>
+            <p style="margin-top: 0.5rem; margin-bottom: 0;">Start with <strong>Have I Been Pwned</strong>
+                (free/$3.50/mo) for credential monitoring. If your threat model justifies it, add a commercial platform.
+                Most mid-size organizations don't need to access the dark web directly — commercial tools do this safely
+                and provide analyzed intelligence rather than raw data. Reserve direct Tor access for mature threat
+                intelligence teams with dedicated OPSEC protocols.</p>
         </div>
 
         <!-- SECTION 8 -->
         <h2 id="credential-monitoring">8. Credential Leak Monitoring: Step-by-Step</h2>
 
-        <p>Credential leak monitoring is the highest-value, lowest-risk dark web monitoring activity. Here's how to implement it:</p>
+        <p>Credential leak monitoring is the highest-value, lowest-risk dark web monitoring activity. Here's how to
+            implement it:</p>
 
         <h3>8.1 Automated Monitoring with HIBP Domain Search</h3>
         <div class="technical-box">
@@ -585,10 +1123,13 @@ if __name__ == "__main__":
             <ol style="margin-top: 0.5rem;">
                 <li><strong>Verify:</strong> Confirm the account exists in your directory and the breach is genuine</li>
                 <li><strong>Force Password Reset:</strong> Immediately reset the affected account's password</li>
-                <li><strong>Revoke Tokens:</strong> Revoke all active OAuth/session tokens (see our <a href="/guides/oauth-security-attacks-defense-2026.html">OAuth Security Guide</a>)</li>
+                <li><strong>Revoke Tokens:</strong> Revoke all active OAuth/session tokens (see our <a
+                        href="/guides/oauth-security-attacks-defense-2026.html">OAuth Security Guide</a>)</li>
                 <li><strong>Enforce MFA:</strong> If the user doesn't have MFA, enroll them immediately</li>
-                <li><strong>Audit Logs:</strong> Check sign-in logs for the affected account for suspicious activity since the breach date</li>
-                <li><strong>Notify User:</strong> Inform the user, advise against password reuse on personal accounts</li>
+                <li><strong>Audit Logs:</strong> Check sign-in logs for the affected account for suspicious activity
+                    since the breach date</li>
+                <li><strong>Notify User:</strong> Inform the user, advise against password reuse on personal accounts
+                </li>
                 <li><strong>Track Metrics:</strong> Record the incident for KPI reporting (MTTD, MTTR)</li>
             </ol>
         </div>
@@ -596,48 +1137,100 @@ if __name__ == "__main__":
         <!-- SECTION 9 -->
         <h2 id="threat-actor">9. Tracking Threat Actor Chatter</h2>
 
-        <p>Beyond credentials, security teams monitor dark web forums and Telegram channels for discussions about their industry, organization, or technology stack:</p>
+        <p>Beyond credentials, security teams monitor dark web forums and Telegram channels for discussions about their
+            industry, organization, or technology stack:</p>
 
         <h3>9.1 What to Monitor</h3>
         <ul>
-            <li><strong>Your organization's name</strong> — mentions in forum posts, marketplace listings, or leak site announcements</li>
+            <li><strong>Your organization's name</strong> — mentions in forum posts, marketplace listings, or leak site
+                announcements</li>
             <li><strong>Your domain names</strong> — appearing in phishing kit configurations or credential dumps</li>
-            <li><strong>Your executives' names</strong> — targeted in VIP impersonation or social engineering discussions</li>
-            <li><strong>Your technology stack</strong> — zero-day discussions for software you use (e.g., "Fortinet VPN exploit" if you run FortiGate)</li>
-            <li><strong>Your industry vertical</strong> — sector-specific targeting discussions (healthcare, finance, government)</li>
+            <li><strong>Your executives' names</strong> — targeted in VIP impersonation or social engineering
+                discussions</li>
+            <li><strong>Your technology stack</strong> — zero-day discussions for software you use (e.g., "Fortinet VPN
+                exploit" if you run FortiGate)</li>
+            <li><strong>Your industry vertical</strong> — sector-specific targeting discussions (healthcare, finance,
+                government)</li>
         </ul>
 
         <h3>9.2 Key Dark Web Forums and Channels (for awareness)</h3>
-        <p>These are forums that commercial threat intelligence platforms monitor. Security teams should use commercial tools rather than accessing these directly:</p>
+        <p>These are forums that commercial threat intelligence platforms monitor. Security teams should use commercial
+            tools rather than accessing these directly:</p>
         <ul>
-            <li><strong>Ransomware leak sites</strong> — Where groups like LockBit, ALPHV/BlackCat, and RansomHub post stolen data to pressure victims. Monitored by platforms like Recorded Future and Flare</li>
-            <li><strong>Russian-language forums</strong> — Forums like XSS and Exploit.in are major marketplaces for initial access brokers, credential dealers, and exploit developers</li>
-            <li><strong>Illicit Telegram channels</strong> — Increasingly used by threat actors who have migrated from traditional forums. Flare and DarkOwl provide monitoring</li>
-            <li><strong>Paste sites</strong> — PasteBin, GhostBin, and dark web equivalents where credentials and data are dumped publically</li>
+            <li><strong>Ransomware leak sites</strong> — Where groups like LockBit, ALPHV/BlackCat, and RansomHub post
+                stolen data to pressure victims. Monitored by platforms like Recorded Future and Flare</li>
+            <li><strong>Russian-language forums</strong> — Forums like XSS and Exploit.in are major marketplaces for
+                initial access brokers, credential dealers, and exploit developers</li>
+            <li><strong>Illicit Telegram channels</strong> — Increasingly used by threat actors who have migrated from
+                traditional forums. Flare and DarkOwl provide monitoring</li>
+            <li><strong>Paste sites</strong> — PasteBin, GhostBin, and dark web equivalents where credentials and data
+                are dumped publically</li>
         </ul>
 
         <div class="warning-box">
             <strong><i class="fas fa-exclamation-triangle"></i> Operational Rule:</strong>
-            <p style="margin-top: 0.5rem; margin-bottom: 0;"><strong>Never interact.</strong> Do not post, reply, DM, or create accounts on dark web forums. Passive observation only. Any interaction could compromise your identity, constitute participation in criminal activity, or alert threat actors to your monitoring. Let commercial platforms do the access — you consume the intelligence.</p>
+            <p style="margin-top: 0.5rem; margin-bottom: 0;"><strong>Never interact.</strong> Do not post, reply, DM, or
+                create accounts on dark web forums. Passive observation only. Any interaction could compromise your
+                identity, constitute participation in criminal activity, or alert threat actors to your monitoring. Let
+                commercial platforms do the access — you consume the intelligence.</p>
         </div>
 
         <!-- SECTION 10 -->
         <h2 id="opsec">10. Operational Security for Analysts</h2>
 
-        <p>If your organization's threat intelligence team does access the dark web directly (not recommended unless you have a mature, dedicated team), follow these OPSEC rules:</p>
+        <p>If your organization's threat intelligence team does access the dark web directly (not recommended unless you
+            have a mature, dedicated team), follow these OPSEC rules:</p>
 
         <h3>10.1 Technical OPSEC</h3>
         <table>
-            <thead><tr><th>Rule</th><th>Implementation</th><th>Why</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Rule</th>
+                    <th>Implementation</th>
+                    <th>Why</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td><strong>Dedicated VM</strong></td><td>Use a hardened VM (Tails OS or Whonix) with no connection to corporate network</td><td>Prevents malware from reaching production infrastructure</td></tr>
-                <tr><td><strong>No Personal Devices</strong></td><td>Never access from personal or corporate-assigned devices</td><td>Separates research identity from real identity</td></tr>
-                <tr><td><strong>VPN + Tor</strong></td><td>Connect to a commercial VPN before launching Tor</td><td>Hides Tor usage from ISP; adds one more layer</td></tr>
-                <tr><td><strong>No JavaScript</strong></td><td>Set Tor Browser security level to "Safest" (disables JS)</td><td>Prevents browser fingerprinting and drive-by exploits</td></tr>
-                <tr><td><strong>No Downloads</strong></td><td>Never download files from dark web sites</td><td>Files may contain malware or tracking mechanisms</td></tr>
-                <tr><td><strong>No Logins</strong></td><td>Do not create accounts on forums or marketplaces</td><td>Avoids legal liability and identity exposure</td></tr>
-                <tr><td><strong>Screenshot Only</strong></td><td>Capture evidence via screenshots, not by saving pages</td><td>Avoids storing potentially illegal content</td></tr>
-                <tr><td><strong>Air-Gapped Analysis</strong></td><td>Transfer screenshots to analysis workstation via USB, not network</td><td>Prevents accidental network exposure</td></tr>
+                <tr>
+                    <td><strong>Dedicated VM</strong></td>
+                    <td>Use a hardened VM (Tails OS or Whonix) with no connection to corporate network</td>
+                    <td>Prevents malware from reaching production infrastructure</td>
+                </tr>
+                <tr>
+                    <td><strong>No Personal Devices</strong></td>
+                    <td>Never access from personal or corporate-assigned devices</td>
+                    <td>Separates research identity from real identity</td>
+                </tr>
+                <tr>
+                    <td><strong>VPN + Tor</strong></td>
+                    <td>Connect to a commercial VPN before launching Tor</td>
+                    <td>Hides Tor usage from ISP; adds one more layer</td>
+                </tr>
+                <tr>
+                    <td><strong>No JavaScript</strong></td>
+                    <td>Set Tor Browser security level to "Safest" (disables JS)</td>
+                    <td>Prevents browser fingerprinting and drive-by exploits</td>
+                </tr>
+                <tr>
+                    <td><strong>No Downloads</strong></td>
+                    <td>Never download files from dark web sites</td>
+                    <td>Files may contain malware or tracking mechanisms</td>
+                </tr>
+                <tr>
+                    <td><strong>No Logins</strong></td>
+                    <td>Do not create accounts on forums or marketplaces</td>
+                    <td>Avoids legal liability and identity exposure</td>
+                </tr>
+                <tr>
+                    <td><strong>Screenshot Only</strong></td>
+                    <td>Capture evidence via screenshots, not by saving pages</td>
+                    <td>Avoids storing potentially illegal content</td>
+                </tr>
+                <tr>
+                    <td><strong>Air-Gapped Analysis</strong></td>
+                    <td>Transfer screenshots to analysis workstation via USB, not network</td>
+                    <td>Prevents accidental network exposure</td>
+                </tr>
             </tbody>
         </table>
 
@@ -657,13 +1250,50 @@ if __name__ == "__main__":
         <div class="success-box">
             <strong><i class="fas fa-clipboard-check"></i> Implementation Roadmap:</strong>
             <table style="margin-top: 1rem;">
-                <thead><tr><th>Phase</th><th>Timeline</th><th>Actions</th><th>Success Metric</th></tr></thead>
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Timeline</th>
+                        <th>Actions</th>
+                        <th>Success Metric</th>
+                    </tr>
+                </thead>
                 <tbody>
-                    <tr><td><strong>1. Foundation</strong></td><td>Week 1-2</td><td>Set up HIBP domain monitoring, define monitoring keywords (org name, domains, exec names), get legal sign-off</td><td>First breach report generated</td></tr>
-                    <tr><td><strong>2. Commercial Tooling</strong></td><td>Week 3-4</td><td>Evaluate and deploy one commercial platform (Flare or SpyCloud for mid-market). Integrate with SIEM</td><td>Automated alerts configured</td></tr>
-                    <tr><td><strong>3. Process</strong></td><td>Month 2</td><td>Create SOPs for credential leak response, threat actor mention triage, and ransomware leak site monitoring</td><td>Documented playbooks</td></tr>
-                    <tr><td><strong>4. Maturity</strong></td><td>Month 3-6</td><td>Add industry-specific monitoring, track threat actors targeting your vertical, produce monthly CTI reports</td><td>Monthly dark web intel report to CISO</td></tr>
-                    <tr><td><strong>5. Advanced</strong></td><td>Month 6+</td><td>If justified: dedicated OPSEC workstation, direct Tor research capability, custom tooling</td><td>Proactive threat detection before breach</td></tr>
+                    <tr>
+                        <td><strong>1. Foundation</strong></td>
+                        <td>Week 1-2</td>
+                        <td>Set up HIBP domain monitoring, define monitoring keywords (org name, domains, exec names),
+                            get legal sign-off</td>
+                        <td>First breach report generated</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Commercial Tooling</strong></td>
+                        <td>Week 3-4</td>
+                        <td>Evaluate and deploy one commercial platform (Flare or SpyCloud for mid-market). Integrate
+                            with SIEM</td>
+                        <td>Automated alerts configured</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Process</strong></td>
+                        <td>Month 2</td>
+                        <td>Create SOPs for credential leak response, threat actor mention triage, and ransomware leak
+                            site monitoring</td>
+                        <td>Documented playbooks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Maturity</strong></td>
+                        <td>Month 3-6</td>
+                        <td>Add industry-specific monitoring, track threat actors targeting your vertical, produce
+                            monthly CTI reports</td>
+                        <td>Monthly dark web intel report to CISO</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Advanced</strong></td>
+                        <td>Month 6+</td>
+                        <td>If justified: dedicated OPSEC workstation, direct Tor research capability, custom tooling
+                        </td>
+                        <td>Proactive threat detection before breach</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -671,36 +1301,53 @@ if __name__ == "__main__":
         <!-- SECTION 12 -->
         <h2 id="references">12. References & Sources</h2>
         <ul>
-            <li><a href="https://www.torproject.org/" target="_blank" rel="noopener">The Tor Project</a> — Official Tor Browser and documentation</li>
-            <li><a href="https://haveibeenpwned.com/" target="_blank" rel="noopener">Have I Been Pwned</a> — Troy Hunt's credential breach database</li>
-            <li><a href="https://haveibeenpwned.com/API/v3" target="_blank" rel="noopener">HIBP API v3 Documentation</a></li>
-            <li><a href="https://tails.net/" target="_blank" rel="noopener">Tails OS</a> — The Amnesic Incognito Live System</li>
-            <li><a href="https://www.whonix.org/" target="_blank" rel="noopener">Whonix</a> — Anonymous operating system</li>
-            <li><a href="https://ahmia.fi/" target="_blank" rel="noopener">Ahmia.fi</a> — Tor hidden service search engine</li>
-            <li><a href="https://intelx.io/" target="_blank" rel="noopener">IntelligenceX</a> — Dark web & leak search engine</li>
-            <li><a href="https://www.ibm.com/reports/data-breach" target="_blank" rel="noopener">IBM Cost of a Data Breach Report 2025</a></li>
-            <li><a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener">Verizon Data Breach Investigations Report 2025</a></li>
-            <li><a href="/guides/oauth-security-attacks-defense-2026.html">TheHGTech — OAuth Security in 2026 Guide</a></li>
-            <li><a href="/guides/passkeys-fido2-passwordless-authentication.html">TheHGTech — Passkeys & FIDO2 Guide</a></li>
-            <li><a href="/guides/threat-intelligence-feeds-integration.html">TheHGTech — Threat Intelligence Feeds Integration</a></li>
+            <li><a href="https://www.torproject.org/" target="_blank" rel="noopener">The Tor Project</a> — Official Tor
+                Browser and documentation</li>
+            <li><a href="https://haveibeenpwned.com/" target="_blank" rel="noopener">Have I Been Pwned</a> — Troy Hunt's
+                credential breach database</li>
+            <li><a href="https://haveibeenpwned.com/API/v3" target="_blank" rel="noopener">HIBP API v3 Documentation</a>
+            </li>
+            <li><a href="https://tails.net/" target="_blank" rel="noopener">Tails OS</a> — The Amnesic Incognito Live
+                System</li>
+            <li><a href="https://www.whonix.org/" target="_blank" rel="noopener">Whonix</a> — Anonymous operating system
+            </li>
+            <li><a href="https://ahmia.fi/" target="_blank" rel="noopener">Ahmia.fi</a> — Tor hidden service search
+                engine</li>
+            <li><a href="https://intelx.io/" target="_blank" rel="noopener">IntelligenceX</a> — Dark web & leak search
+                engine</li>
+            <li><a href="https://www.ibm.com/reports/data-breach" target="_blank" rel="noopener">IBM Cost of a Data
+                    Breach Report 2025</a></li>
+            <li><a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank"
+                    rel="noopener">Verizon Data Breach Investigations Report 2025</a></li>
+            <li><a href="/guides/oauth-security-attacks-defense-2026.html">TheHGTech — OAuth Security in 2026 Guide</a>
+            </li>
+            <li><a href="/guides/passkeys-fido2-passwordless-authentication.html">TheHGTech — Passkeys & FIDO2 Guide</a>
+            </li>
+            <li><a href="/guides/threat-intelligence-feeds-integration.html">TheHGTech — Threat Intelligence Feeds
+                    Integration</a></li>
         </ul>
 
     </div>
 
     <!-- Interaction Bar -->
     <div class="interaction-bar" style="max-width: 900px; margin: 0 auto 2rem; padding: 0 2rem;">
-        <div class="interaction-buttons">
-            <div class="share-group">
-                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i class="fas fa-link"></i></button>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i
+                        class="fas fa-link"></i></button>
             </div>
             <div class="button-separator"></div>
-            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print"><i class="fas fa-print"></i></button>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print"><i
+                    class="fas fa-print"></i></button>
         </div>
     </div>
 
     <script src="/interaction-bar.js?v=20251217"></script>
     <script src="../ui-enhancements.js?v=20260220" defer></script>
 </body>
+
 </html>

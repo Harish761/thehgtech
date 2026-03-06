@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OAuth Security in 2026: How Attackers Exploit the Protocol You Trust | TheHGTech</title>
-    <meta name="description" content="Complete guide to OAuth 2.0 security vulnerabilities in 2026. Device code phishing (Storm-2372), redirection abuse, consent phishing, token persistence attacks, and enterprise defense strategies.">
-    <meta name="keywords" content="OAuth security, OAuth attacks 2026, device code phishing, Storm-2372, OAuth redirection abuse, token theft, MFA bypass, Entra ID OAuth, consent phishing, OAuth defense guide">
+    <meta name="description"
+        content="Complete guide to OAuth 2.0 security vulnerabilities in 2026. Device code phishing (Storm-2372), redirection abuse, consent phishing, token persistence attacks, and enterprise defense strategies.">
+    <meta name="keywords"
+        content="OAuth security, OAuth attacks 2026, device code phishing, Storm-2372, OAuth redirection abuse, token theft, MFA bypass, Entra ID OAuth, consent phishing, OAuth defense guide">
     <meta name="author" content="TheHGTech">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://thehgtech.com/guides/oauth-security-attacks-defense-2026.html">
     <meta property="og:title" content="OAuth Security in 2026: How Attackers Exploit the Protocol You Trust">
-    <meta property="og:description" content="Deep technical guide to OAuth 2.0 attack vectors — device code phishing, redirection abuse, consent phishing, token persistence, and enterprise defense.">
+    <meta property="og:description"
+        content="Deep technical guide to OAuth 2.0 attack vectors — device code phishing, redirection abuse, consent phishing, token persistence, and enterprise defense.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/oauth-security-attacks-defense-2026.html">
     <meta property="og:image" content="https://thehgtech.com/images/guides/oauth-security-attacks-defense-2026.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OAuth Security in 2026: How Attackers Exploit the Protocol You Trust">
-    <meta name="twitter:description" content="Deep technical guide to OAuth 2.0 attack vectors and enterprise defense strategies.">
+    <meta name="twitter:description"
+        content="Deep technical guide to OAuth 2.0 attack vectors and enterprise defense strategies.">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -77,7 +82,9 @@
     }
     </script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.css?v=1">
@@ -85,58 +92,331 @@
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --bg-primary: #000000; --bg-secondary: #0a0a0a; --bg-card: rgba(255,255,255,0.03);
-            --accent-cyan: #00D9FF; --accent-red: #FF3D3D; --accent-green: #10b981;
-            --accent-orange: #f59e0b; --accent-purple: #8b5cf6; --accent-blue: #3b82f6;
-            --text-primary: #ffffff; --text-secondary: #a0a0a0; --text-muted: #666666;
-            --border: rgba(255,255,255,0.1);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        .guide-header { padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; margin-top: 60px; }
-        .guide-badge { display: inline-block; background: linear-gradient(135deg, #f59e0b, #ef4444); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1rem; }
-        h1 { font-size: 2.5rem; background: linear-gradient(135deg, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; }
-        h2 { color: var(--accent-cyan); margin: 2.5rem 0 1rem; font-size: 1.8rem; padding-top: 1rem; border-top: 1px solid var(--border); }
-        h3 { color: var(--text-primary); margin: 1.5rem 0 1rem; font-size: 1.3rem; }
-        h4 { color: var(--accent-cyan); margin: 1.25rem 0 0.75rem; font-size: 1.1rem; }
-        p { margin-bottom: 1rem; color: var(--text-secondary); }
-        a { color: var(--accent-cyan); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul, ol { margin-left: 2rem; margin-bottom: 1rem; color: var(--text-secondary); }
-        li { margin-bottom: 0.5rem; }
-        strong { color: var(--text-primary); }
-        .info-box { background: rgba(59,130,246,0.08); border-left: 4px solid var(--accent-blue); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
-        .warning-box { background: rgba(255,76,76,0.05); border-left: 4px solid var(--accent-red); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
-        .success-box { background: rgba(16,185,129,0.05); border-left: 4px solid var(--accent-green); padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
-        .technical-box { background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.2); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
-        .technical-box h3 { margin-top: 0; color: var(--accent-cyan); }
-        .exploit-box { background: rgba(255,61,61,0.08); border: 1px solid rgba(255,61,61,0.3); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
-        .exploit-label { display: inline-block; background: var(--accent-red); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.75rem; }
-        .defense-box { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.3); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
-        .defense-box::before { content: "Defense Strategy"; display: block; color: var(--accent-green); font-weight: 600; margin-bottom: 0.5rem; }
-        code { background: var(--bg-card); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: 'JetBrains Mono', monospace; color: var(--accent-cyan); font-size: 0.9rem; }
-        pre { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; overflow-x: auto; margin: 1.5rem 0; }
-        pre code { background: none; padding: 0; color: var(--accent-green); }
-        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-card); border-radius: 8px; overflow: hidden; }
-        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
-        th { background: rgba(59,130,246,0.1); color: var(--accent-cyan); font-weight: 600; }
-        td { color: var(--text-secondary); }
-        .toc { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin: 2rem 0; }
-        .toc h3 { margin-top: 0; color: var(--accent-cyan); }
-        .toc ul { list-style: none; margin-left: 0; }
-        .toc li { margin-bottom: 0.5rem; }
-        .toc a { color: var(--text-secondary); text-decoration: none; }
-        .toc a:hover { color: var(--accent-cyan); }
-        .architecture-diagram { background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(59,130,246,0.1)); border: 1px solid var(--accent-cyan); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; overflow-x: auto; }
-        .attack-scenario { background: rgba(255,61,61,0.08); border: 1px solid rgba(255,61,61,0.3); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
-        .attack-scenario::before { content: "Attack Scenario"; display: block; color: var(--accent-red); font-weight: 600; margin-bottom: 0.5rem; }
-        .severity-critical { color: var(--accent-red); font-weight: 700; }
-        .severity-high { color: var(--accent-orange); font-weight: 700; }
-        .back-link { display: inline-block; margin-bottom: 2rem; color: var(--accent-cyan); text-decoration: none; }
-        .back-link:hover { text-decoration: underline; }
-        @media (max-width: 768px) { h1 { font-size: 1.6rem; } .container { padding: 1rem; } h2 { font-size: 1.4rem; } }
+
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        .guide-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #f59e0b, #ef4444);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #f59e0b, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--accent-cyan);
+            margin: 1.25rem 0 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul,
+        ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        .info-box {
+            background: rgba(59, 130, 246, 0.08);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .technical-box {
+            background: rgba(59, 130, 246, 0.06);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .technical-box h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .exploit-box {
+            background: rgba(255, 61, 61, 0.08);
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .exploit-label {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .defense-box {
+            background: rgba(16, 185, 129, 0.08);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .defense-box::before {
+            content: "Defense Strategy";
+            display: block;
+            color: var(--accent-green);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .architecture-diagram {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(59, 130, 246, 0.1));
+            border: 1px solid var(--accent-cyan);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+        }
+
+        .attack-scenario {
+            background: rgba(255, 61, 61, 0.08);
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .attack-scenario::before {
+            content: "Attack Scenario";
+            display: block;
+            color: var(--accent-red);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .severity-critical {
+            color: var(--accent-red);
+            font-weight: 700;
+        }
+
+        .severity-high {
+            color: var(--accent-orange);
+            font-weight: 700;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
     </style>
     <link rel="stylesheet" href="/m-core.css?v=4.2">
     <link rel="stylesheet" href="/m-layout.css?v=3.2">
@@ -144,7 +424,7 @@
     <script src="/m-app.js?v=4.3" defer></script>
     <link rel="stylesheet" href="../ui-enhancements.css?v=20260220">
     <script>
-        (function() {
+        (function () {
             var savedTheme = localStorage.getItem("theme");
             if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
                 document.documentElement.setAttribute("data-theme", "light");
@@ -178,38 +458,109 @@
         });
     </script>
 </head>
+
 <body>
     <!-- Mobile Header -->
     <header class="m-header m-only">
         <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
-            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
         </div>
         <div class="m-header__actions">
-            <button class="m-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme"><span class="m-theme-toggle__thumb"></span><span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span class="m-theme-toggle__star"></span></span></button>
-            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i class="fas fa-search"></i></button>
+            <button class="m-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme"><span
+                    class="m-theme-toggle__thumb"></span><span class="m-theme-toggle__stars"><span
+                        class="m-theme-toggle__star"></span><span class="m-theme-toggle__star"></span></span></button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i
+                    class="fas fa-search"></i></button>
         </div>
     </header>
     <nav class="m-bottom-nav m-only">
         <a href="/" class="m-bottom-nav__item"><i class="fas fa-home"></i><span>Home</span></a>
         <a href="/index.html#news" class="m-bottom-nav__item"><i class="fas fa-bolt"></i><span>News</span></a>
         <a href="/cve-tracker.html" class="m-bottom-nav__item"><i class="fas fa-bug"></i><span>CVEs</span></a>
-        <a href="/ransomware-tracker.html" class="m-bottom-nav__item"><i class="fas fa-skull-crossbones"></i><span>Ransomware</span></a>
+        <a href="/ransomware-tracker.html" class="m-bottom-nav__item"><i
+                class="fas fa-skull-crossbones"></i><span>Ransomware</span></a>
         <a href="/threat-intel.html" class="m-bottom-nav__item"><i class="fas fa-shield-alt"></i><span>Intel</span></a>
         <a href="/articles.html" class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a>
         <a href="/guides/" class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a>
     </nav>
     <header class="header" role="banner">
         <div class="header-content">
-            <div class="logo"><a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;"><img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark"><img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a></div>
+            <div class="logo"><a href="/index.html"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;"><img
+                        src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark"><img src="/logo-light.png"
+                        alt="TheHGTech Logo" class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a>
+            </div>
             <nav class="nav nav-modern" role="navigation">
                 <a href="/index.html#news">News</a>
-                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span><div class="nav-dropdown-panel"><a href="/threat-intel.html" class="dropdown-item"><div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div><div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div></div></a><a href="/cve-tracker.html" class="dropdown-item"><div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">CVE Tracker</div><div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div></div></a><a href="/ransomware-tracker.html" class="dropdown-item"><div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Ransomware Tracker</div><div class="dropdown-item-desc">Track active ransomware groups</div></div></a></div></div>
-                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Resources <i class="fas fa-chevron-down dropdown-arrow"></i></span><div class="nav-dropdown-panel"><a href="/guides/" class="dropdown-item" style="background: rgba(0,217,255,0.08);"><div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span class="dropdown-badge popular">40+</span></div><div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div></div></a>
-                    <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);"><div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div><div class="dropdown-item-desc">Security automation templates</div></div></a>
-                    <a href="/comparisons/" class="dropdown-item"><div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Tool Comparisons</div><div class="dropdown-item-desc">Security tool reviews</div></div></a><div class="dropdown-divider"></div><a href="/articles.html" class="dropdown-item"><div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div><div class="dropdown-item-content"><div class="dropdown-item-title">Articles</div><div class="dropdown-item-desc">Security news and analysis</div></div></a></div></div>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);"><span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span></button>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Intelligence <span
+                            class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel"><a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds</div>
+                            </div>
+                        </a><a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities</div>
+                            </div>
+                        </a><a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Resources <i
+                            class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <div class="nav-dropdown-panel"><a href="/guides/" class="dropdown-item"
+                            style="background: rgba(0,217,255,0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2 & more</div>
+                            </div>
+                        </a>
+                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                            <div class="dropdown-item-icon"
+                                style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i
+                                    class="fas fa-cogs"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span
+                                        class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                                <div class="dropdown-item-desc">Security automation templates</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">Security tool reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div><a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Security news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme"
+                    style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);"><span
+                        class="m-theme-toggle__thumb"
+                        style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span></button>
             </nav>
             <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
         </div>
@@ -221,24 +572,38 @@
         <div class="guide-header">
             <span class="guide-badge"><i class="fas fa-shield-alt"></i> Identity & Access Management</span>
             <h1>OAuth Security in 2026: How Attackers Exploit the Protocol You Trust</h1>
-            <p style="color: var(--text-muted); font-size: 1.1rem;">From trusted authorization standard to attack vector — device code phishing, redirection abuse, consent phishing, token persistence, and how to defend your organization</p>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">From trusted authorization standard to attack vector
+                — device code phishing, redirection abuse, consent phishing, token persistence, and how to defend your
+                organization</p>
             <div style="margin-top: 1rem; color: var(--text-muted);">
                 <span><i class="fas fa-book-open"></i> 20 min read</span> <span style="margin: 0 0.5rem;">|</span>
-                <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> <span style="margin: 0 0.5rem;">|</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span> <span
+                    style="margin: 0 0.5rem;">|</span>
                 <span><i class="far fa-calendar-alt"></i> March 2026</span>
             </div>
         </div>
 
-        <img src="/images/guides/oauth-security-attacks-defense-2026.png" alt="OAuth Security Attacks and Defense Guide 2026" class="featured-image" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(245,158,11,0.2); border: 1px solid var(--border);" loading="lazy">
+        <img src="/images/guides/oauth-security-attacks-defense-2026.png"
+            alt="OAuth Security Attacks and Defense Guide 2026" class="featured-image"
+            style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(245,158,11,0.2); border: 1px solid var(--border);"
+            loading="lazy">
 
         <div class="warning-box" style="margin-bottom: 2rem;">
             <strong><i class="fas fa-balance-scale"></i> Research Ethics & Responsible Disclosure:</strong>
-            This guide is published for defensive security research and educational purposes. Attack techniques described are based on publicly disclosed research from Microsoft Threat Intelligence, CISA advisories, and peer-reviewed security publications. Organizations are encouraged to use this material to assess and improve their OAuth security posture.
+            This guide is published for defensive security research and educational purposes. Attack techniques
+            described are based on publicly disclosed research from Microsoft Threat Intelligence, CISA advisories, and
+            peer-reviewed security publications. Organizations are encouraged to use this material to assess and improve
+            their OAuth security posture.
         </div>
 
         <div class="info-box">
             <strong><i class="fas fa-file-alt"></i> Abstract:</strong>
-            OAuth 2.0 has been the backbone of delegated authorization on the internet for over a decade. In 2025-2026, threat actors including Storm-2372 and operators of Phishing-as-a-Service platforms like Tycoon 2FA are exploiting legitimate OAuth features — device code flow, error-triggered redirections, and consent pages — to bypass MFA and gain persistent access to Microsoft 365 and Google Workspace accounts. This guide explains how OAuth works, why it was considered secure, what has changed, and provides verified defensive measures including Conditional Access policies, KQL detection queries, and app governance strategies.
+            OAuth 2.0 has been the backbone of delegated authorization on the internet for over a decade. In 2025-2026,
+            threat actors including Storm-2372 and operators of Phishing-as-a-Service platforms like Tycoon 2FA are
+            exploiting legitimate OAuth features — device code flow, error-triggered redirections, and consent pages —
+            to bypass MFA and gain persistent access to Microsoft 365 and Google Workspace accounts. This guide explains
+            how OAuth works, why it was considered secure, what has changed, and provides verified defensive measures
+            including Conditional Access policies, KQL detection queries, and app governance strategies.
         </div>
 
         <!-- TOC -->
@@ -263,13 +628,19 @@
         <h2 id="what-is-oauth">1. What Is OAuth 2.0 and Why Was It Trusted?</h2>
 
         <h3>1.1 The Problem OAuth Solved</h3>
-        <p>Before OAuth, if a third-party application needed to access your data on another service (e.g., a calendar app reading your Gmail), you had to hand over your actual username and password. This was fundamentally broken — the third party had full access, couldn't be selectively revoked, and if compromised, exposed your entire account.</p>
+        <p>Before OAuth, if a third-party application needed to access your data on another service (e.g., a calendar
+            app reading your Gmail), you had to hand over your actual username and password. This was fundamentally
+            broken — the third party had full access, couldn't be selectively revoked, and if compromised, exposed your
+            entire account.</p>
 
-        <p>OAuth 2.0, defined in <strong>RFC 6749</strong> (published October 2012), solved this by introducing <strong>delegated authorization</strong>. Instead of sharing passwords, users grant specific, scoped permissions to applications via tokens. The key principles were:</p>
+        <p>OAuth 2.0, defined in <strong>RFC 6749</strong> (published October 2012), solved this by introducing
+            <strong>delegated authorization</strong>. Instead of sharing passwords, users grant specific, scoped
+            permissions to applications via tokens. The key principles were:</p>
 
         <ul>
             <li><strong>No password sharing</strong> — The third-party app never sees your password</li>
-            <li><strong>Scoped access</strong> — Apps only get the permissions they request (e.g., "read email" but not "send email")</li>
+            <li><strong>Scoped access</strong> — Apps only get the permissions they request (e.g., "read email" but not
+                "send email")</li>
             <li><strong>Revocable tokens</strong> — Users can revoke access without changing their password</li>
             <li><strong>Time-limited</strong> — Access tokens expire, requiring refresh</li>
         </ul>
@@ -278,26 +649,58 @@
         <p>For over a decade, OAuth 2.0 was widely regarded as a secure authorization framework because:</p>
 
         <table>
-            <thead><tr><th>Security Property</th><th>How OAuth Achieves It</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Security Property</th>
+                    <th>How OAuth Achieves It</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td><strong>Credential Isolation</strong></td><td>User credentials are only entered on the Identity Provider's domain (e.g., <code>login.microsoftonline.com</code>), never on the third-party app</td></tr>
-                <tr><td><strong>Least Privilege</strong></td><td>Scopes limit what an app can access — users see exactly what permissions are requested</td></tr>
-                <tr><td><strong>Token Expiration</strong></td><td>Access tokens are short-lived (typically 1 hour for Microsoft Entra ID), limiting the window of compromise</td></tr>
-                <tr><td><strong>Client Authentication</strong></td><td>Confidential clients must authenticate with client secrets or certificates at the token endpoint</td></tr>
-                <tr><td><strong>Redirect URI Validation</strong></td><td>Authorization servers validate redirect URIs against pre-registered values, preventing code interception</td></tr>
-                <tr><td><strong>PKCE (RFC 7636)</strong></td><td>Proof Key for Code Exchange prevents authorization code interception in public clients</td></tr>
+                <tr>
+                    <td><strong>Credential Isolation</strong></td>
+                    <td>User credentials are only entered on the Identity Provider's domain (e.g.,
+                        <code>login.microsoftonline.com</code>), never on the third-party app</td>
+                </tr>
+                <tr>
+                    <td><strong>Least Privilege</strong></td>
+                    <td>Scopes limit what an app can access — users see exactly what permissions are requested</td>
+                </tr>
+                <tr>
+                    <td><strong>Token Expiration</strong></td>
+                    <td>Access tokens are short-lived (typically 1 hour for Microsoft Entra ID), limiting the window of
+                        compromise</td>
+                </tr>
+                <tr>
+                    <td><strong>Client Authentication</strong></td>
+                    <td>Confidential clients must authenticate with client secrets or certificates at the token endpoint
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Redirect URI Validation</strong></td>
+                    <td>Authorization servers validate redirect URIs against pre-registered values, preventing code
+                        interception</td>
+                </tr>
+                <tr>
+                    <td><strong>PKCE (RFC 7636)</strong></td>
+                    <td>Proof Key for Code Exchange prevents authorization code interception in public clients</td>
+                </tr>
             </tbody>
         </table>
 
         <div class="info-box">
             <strong><i class="fas fa-info-circle"></i> Key Insight:</strong>
-            <p style="margin-top: 0.5rem; margin-bottom: 0;">The OAuth 2.0 specification itself is not broken. What attackers are exploiting in 2025-2026 are <strong>legitimate, by-design features</strong> of the protocol — the same redirect behavior, device code flow, and consent mechanisms that make OAuth flexible are being weaponized. This is what makes these attacks so difficult to detect — they use trusted infrastructure.</p>
+            <p style="margin-top: 0.5rem; margin-bottom: 0;">The OAuth 2.0 specification itself is not broken. What
+                attackers are exploiting in 2025-2026 are <strong>legitimate, by-design features</strong> of the
+                protocol — the same redirect behavior, device code flow, and consent mechanisms that make OAuth flexible
+                are being weaponized. This is what makes these attacks so difficult to detect — they use trusted
+                infrastructure.</p>
         </div>
 
         <!-- SECTION 2 -->
         <h2 id="oauth-flows">2. How OAuth 2.0 Works: The Authorization Code Flow</h2>
 
-        <p>The <strong>Authorization Code Flow</strong> is the most common and recommended OAuth 2.0 grant type for web applications. Understanding it is essential before examining how attackers subvert it.</p>
+        <p>The <strong>Authorization Code Flow</strong> is the most common and recommended OAuth 2.0 grant type for web
+            applications. Understanding it is essential before examining how attackers subvert it.</p>
 
         <div class="architecture-diagram">
             <pre style="color: var(--accent-cyan); margin: 0;">
@@ -344,25 +747,59 @@
 
         <h3>2.2 The Four OAuth 2.0 Grant Types</h3>
         <table>
-            <thead><tr><th>Grant Type</th><th>Use Case</th><th>Security Level</th><th>2026 Risk</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Grant Type</th>
+                    <th>Use Case</th>
+                    <th>Security Level</th>
+                    <th>2026 Risk</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td><strong>Authorization Code + PKCE</strong></td><td>Web apps, mobile apps, SPAs</td><td class="severity-high">Most Secure</td><td>Low — if properly implemented</td></tr>
-                <tr><td><strong>Client Credentials</strong></td><td>Server-to-server (no user)</td><td class="severity-high">Secure</td><td>Medium — over-privileged app registrations</td></tr>
-                <tr><td><strong>Device Code</strong></td><td>Smart TVs, IoT, CLI tools</td><td class="severity-critical">⚠️ HIGH RISK</td><td class="severity-critical">Critical — Storm-2372 phishing vector</td></tr>
-                <tr><td><strong>Implicit (Deprecated)</strong></td><td>Legacy SPAs</td><td class="severity-critical">Insecure</td><td>Should be completely disabled</td></tr>
+                <tr>
+                    <td><strong>Authorization Code + PKCE</strong></td>
+                    <td>Web apps, mobile apps, SPAs</td>
+                    <td class="severity-high">Most Secure</td>
+                    <td>Low — if properly implemented</td>
+                </tr>
+                <tr>
+                    <td><strong>Client Credentials</strong></td>
+                    <td>Server-to-server (no user)</td>
+                    <td class="severity-high">Secure</td>
+                    <td>Medium — over-privileged app registrations</td>
+                </tr>
+                <tr>
+                    <td><strong>Device Code</strong></td>
+                    <td>Smart TVs, IoT, CLI tools</td>
+                    <td class="severity-critical">⚠️ HIGH RISK</td>
+                    <td class="severity-critical">Critical — Storm-2372 phishing vector</td>
+                </tr>
+                <tr>
+                    <td><strong>Implicit (Deprecated)</strong></td>
+                    <td>Legacy SPAs</td>
+                    <td class="severity-critical">Insecure</td>
+                    <td>Should be completely disabled</td>
+                </tr>
             </tbody>
         </table>
 
         <!-- SECTION 3 -->
         <h2 id="what-changed">3. What Changed: The 2025-2026 Attack Landscape</h2>
 
-        <p>So if OAuth itself isn't broken, what changed? Three converging trends created the current threat landscape:</p>
+        <p>So if OAuth itself isn't broken, what changed? Three converging trends created the current threat landscape:
+        </p>
 
         <h3>3.1 Identity Became the Perimeter</h3>
-        <p>As organizations adopted cloud-first architectures, the traditional network perimeter dissolved. Identity — specifically, OAuth tokens — became the primary access mechanism. Microsoft reported in its 2025 Digital Defense Report that <strong>identity-based attacks are now the #1 initial access vector</strong>, surpassing traditional network exploits.</p>
+        <p>As organizations adopted cloud-first architectures, the traditional network perimeter dissolved. Identity —
+            specifically, OAuth tokens — became the primary access mechanism. Microsoft reported in its 2025 Digital
+            Defense Report that <strong>identity-based attacks are now the #1 initial access vector</strong>, surpassing
+            traditional network exploits.</p>
 
         <h3>3.2 Phishing-as-a-Service Industrialized MFA Bypass</h3>
-        <p>Platforms like <strong>Tycoon 2FA</strong> democratized Adversary-in-the-Middle (AiTM) attacks. By mid-2025, Microsoft reported that Tycoon 2FA was responsible for approximately <strong>62% of all phishing attempts blocked</strong> by their systems. The platform was eventually dismantled by Europol in a coordinated takedown of 330 domains, but the techniques it popularized persist.</p>
+        <p>Platforms like <strong>Tycoon 2FA</strong> democratized Adversary-in-the-Middle (AiTM) attacks. By mid-2025,
+            Microsoft reported that Tycoon 2FA was responsible for approximately <strong>62% of all phishing attempts
+                blocked</strong> by their systems. The platform was eventually dismantled by Europol in a coordinated
+            takedown of 330 domains, but the techniques it popularized persist.</p>
 
         <div class="info-box">
             <strong><i class="fas fa-chart-bar"></i> By The Numbers (Microsoft Telemetry, 2025):</strong>
@@ -376,21 +813,34 @@
         </div>
 
         <h3>3.3 Nation-State Actors Adopted OAuth Abuse</h3>
-        <p>In February 2025, Microsoft Threat Intelligence published an advisory on <strong>Storm-2372</strong>, a threat actor assessed with moderate confidence to align with Russian interests. Storm-2372 pioneered a new phishing technique that abuses the OAuth Device Authorization Grant flow — a legitimate protocol feature — to bypass MFA entirely. This marked a shift from exploiting vulnerabilities to exploiting <em>features</em>.</p>
+        <p>In February 2025, Microsoft Threat Intelligence published an advisory on <strong>Storm-2372</strong>, a
+            threat actor assessed with moderate confidence to align with Russian interests. Storm-2372 pioneered a new
+            phishing technique that abuses the OAuth Device Authorization Grant flow — a legitimate protocol feature —
+            to bypass MFA entirely. This marked a shift from exploiting vulnerabilities to exploiting <em>features</em>.
+        </p>
 
         <!-- SECTION 4 -->
         <h2 id="device-code">4. Attack Vector 1: Device Code Phishing (Storm-2372)</h2>
 
-        <p>The Device Authorization Grant (defined in <strong>RFC 8628</strong>) was designed for devices with limited input capabilities — smart TVs, IoT devices, and CLI tools. The user authenticates on a separate device (like their phone) by entering a short code displayed on the limited device.</p>
+        <p>The Device Authorization Grant (defined in <strong>RFC 8628</strong>) was designed for devices with limited
+            input capabilities — smart TVs, IoT devices, and CLI tools. The user authenticates on a separate device
+            (like their phone) by entering a short code displayed on the limited device.</p>
 
         <div class="attack-scenario">
             <p><strong>How Storm-2372 Weaponized It:</strong></p>
             <ol>
-                <li><strong>Social Engineering:</strong> Attackers establish rapport with targets via WhatsApp, Signal, or Microsoft Teams, often impersonating prominent individuals relevant to the target's organization</li>
-                <li><strong>Fake Meeting Invite:</strong> The attacker sends a phishing email disguised as a Microsoft Teams meeting invitation</li>
-                <li><strong>Device Code Delivery:</strong> The invitation contains an attacker-generated device code and directs the victim to <code>https://microsoft.com/devicelogin</code> — a completely <strong>legitimate Microsoft page</strong></li>
-                <li><strong>Token Capture:</strong> When the victim enters the code and authenticates (including MFA), Microsoft issues OAuth tokens to the attacker's application, not the victim's</li>
-                <li><strong>Persistent Access:</strong> The attacker captures both the access token and refresh token, gaining persistent access to the victim's Microsoft 365 account</li>
+                <li><strong>Social Engineering:</strong> Attackers establish rapport with targets via WhatsApp, Signal,
+                    or Microsoft Teams, often impersonating prominent individuals relevant to the target's organization
+                </li>
+                <li><strong>Fake Meeting Invite:</strong> The attacker sends a phishing email disguised as a Microsoft
+                    Teams meeting invitation</li>
+                <li><strong>Device Code Delivery:</strong> The invitation contains an attacker-generated device code and
+                    directs the victim to <code>https://microsoft.com/devicelogin</code> — a completely
+                    <strong>legitimate Microsoft page</strong></li>
+                <li><strong>Token Capture:</strong> When the victim enters the code and authenticates (including MFA),
+                    Microsoft issues OAuth tokens to the attacker's application, not the victim's</li>
+                <li><strong>Persistent Access:</strong> The attacker captures both the access token and refresh token,
+                    gaining persistent access to the victim's Microsoft 365 account</li>
             </ol>
         </div>
 
@@ -448,32 +898,44 @@ STORM-2372 DEVICE CODE PHISHING ATTACK FLOW
 
         <div class="warning-box">
             <strong><i class="fas fa-exclamation-triangle"></i> Why This Is Devastating:</strong>
-            <p style="margin-top: 0.5rem; margin-bottom: 0;">The victim authenticates on a <strong>real Microsoft page</strong>. There is no fake login form, no suspicious domain, no browser warning. The MFA challenge is satisfied legitimately. Traditional phishing defenses (URL reputation, browser warnings, email link scanning) are completely bypassed because every component of the flow uses legitimate Microsoft infrastructure.</p>
+            <p style="margin-top: 0.5rem; margin-bottom: 0;">The victim authenticates on a <strong>real Microsoft
+                    page</strong>. There is no fake login form, no suspicious domain, no browser warning. The MFA
+                challenge is satisfied legitimately. Traditional phishing defenses (URL reputation, browser warnings,
+                email link scanning) are completely bypassed because every component of the flow uses legitimate
+                Microsoft infrastructure.</p>
         </div>
 
         <h3>4.1 Evolved Tactic: Primary Refresh Token (PRT) Abuse</h3>
-        <p>In February 2025, Microsoft observed Storm-2372 evolving their technique. After capturing tokens via device code phishing, the attackers began using the <strong>Microsoft Authentication Broker client ID</strong> to:</p>
+        <p>In February 2025, Microsoft observed Storm-2372 evolving their technique. After capturing tokens via device
+            code phishing, the attackers began using the <strong>Microsoft Authentication Broker client ID</strong> to:
+        </p>
         <ol>
             <li>Obtain a refresh token with broker capabilities</li>
             <li>Register an attacker-controlled device in Entra ID</li>
             <li>Acquire a <strong>Primary Refresh Token (PRT)</strong></li>
             <li>Use the PRT to access organizational resources as a "trusted device"</li>
         </ol>
-        <p>This technique grants the attacker persistent, device-level trust within the organization — significantly more dangerous than simple token theft.</p>
+        <p>This technique grants the attacker persistent, device-level trust within the organization — significantly
+            more dangerous than simple token theft.</p>
 
         <!-- SECTION 5 -->
         <h2 id="redirection">5. Attack Vector 2: OAuth Redirection Abuse</h2>
 
-        <p>This technique, disclosed by multiple security researchers in 2025 and confirmed by Microsoft, exploits a fundamental aspect of OAuth's design: <strong>error-triggered redirections</strong>.</p>
+        <p>This technique, disclosed by multiple security researchers in 2025 and confirmed by Microsoft, exploits a
+            fundamental aspect of OAuth's design: <strong>error-triggered redirections</strong>.</p>
 
         <div class="attack-scenario">
             <p><strong>How It Works:</strong></p>
             <ol>
                 <li>Attackers register a malicious application in an attacker-controlled Entra ID tenant</li>
                 <li>They configure the app's redirect URI to point to an attacker-owned domain</li>
-                <li>They craft a phishing URL targeting <code>login.microsoftonline.com/common/oauth2/v2.0/authorize</code> with intentionally malformed parameters (e.g., invalid scopes or <code>prompt=none</code>)</li>
-                <li>When the authorization server processes the request and encounters an error, it performs a standards-compliant redirect to the registered redirect URI — which is the attacker's domain</li>
-                <li>The victim is now on the attacker's site, which may serve credential-harvesting pages or malware downloads</li>
+                <li>They craft a phishing URL targeting
+                    <code>login.microsoftonline.com/common/oauth2/v2.0/authorize</code> with intentionally malformed
+                    parameters (e.g., invalid scopes or <code>prompt=none</code>)</li>
+                <li>When the authorization server processes the request and encounters an error, it performs a
+                    standards-compliant redirect to the registered redirect URI — which is the attacker's domain</li>
+                <li>The victim is now on the attacker's site, which may serve credential-harvesting pages or malware
+                    downloads</li>
             </ol>
         </div>
 
@@ -496,48 +958,86 @@ https://login.microsoftonline.com/common/oauth2/v2.0/authorize
 # → All email/browser reputation checks passed</code></pre>
         </div>
 
-        <p><strong>Why traditional defenses fail:</strong> The phishing link originates from <code>login.microsoftonline.com</code> or <code>accounts.google.com</code> — domains with perfect reputation scores. Email gateway filters, URL scanners, and browser Safe Browsing all trust these domains implicitly. Microsoft has confirmed these campaigns target government and public-sector organizations.</p>
+        <p><strong>Why traditional defenses fail:</strong> The phishing link originates from
+            <code>login.microsoftonline.com</code> or <code>accounts.google.com</code> — domains with perfect reputation
+            scores. Email gateway filters, URL scanners, and browser Safe Browsing all trust these domains implicitly.
+            Microsoft has confirmed these campaigns target government and public-sector organizations.</p>
 
         <!-- SECTION 6 -->
         <h2 id="consent">6. Attack Vector 3: Consent Phishing & Illicit App Grants</h2>
 
-        <p>Consent phishing takes advantage of OAuth's consent mechanism — the permission dialog users see when granting an application access to their data.</p>
+        <p>Consent phishing takes advantage of OAuth's consent mechanism — the permission dialog users see when granting
+            an application access to their data.</p>
 
         <h3>6.1 The Attack</h3>
-        <p>Attackers register an OAuth application that appears legitimate — often impersonating known brands or using names similar to popular internal tools. They then trick users (via phishing or social engineering) into granting this application broad OAuth permissions. Once consent is granted, the application receives OAuth tokens that provide ongoing access to the user's data.</p>
+        <p>Attackers register an OAuth application that appears legitimate — often impersonating known brands or using
+            names similar to popular internal tools. They then trick users (via phishing or social engineering) into
+            granting this application broad OAuth permissions. Once consent is granted, the application receives OAuth
+            tokens that provide ongoing access to the user's data.</p>
 
         <table>
-            <thead><tr><th>Aspect</th><th>Legitimate App</th><th>Malicious App</th></tr></thead>
+            <thead>
+                <tr>
+                    <th>Aspect</th>
+                    <th>Legitimate App</th>
+                    <th>Malicious App</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr><td><strong>Publisher</strong></td><td>Verified publisher badge</td><td>Unverified or spoofed publisher</td></tr>
-                <tr><td><strong>Permissions</strong></td><td>Minimal scopes (e.g., <code>User.Read</code>)</td><td>Broad scopes (e.g., <code>Mail.ReadWrite</code>, <code>Files.ReadWrite.All</code>)</td></tr>
-                <tr><td><strong>Access Duration</strong></td><td>Short-lived, scoped to session</td><td>Persistent via refresh tokens</td></tr>
-                <tr><td><strong>MFA Required</strong></td><td>Yes, at authentication</td><td>Bypassed — consent is post-authentication</td></tr>
+                <tr>
+                    <td><strong>Publisher</strong></td>
+                    <td>Verified publisher badge</td>
+                    <td>Unverified or spoofed publisher</td>
+                </tr>
+                <tr>
+                    <td><strong>Permissions</strong></td>
+                    <td>Minimal scopes (e.g., <code>User.Read</code>)</td>
+                    <td>Broad scopes (e.g., <code>Mail.ReadWrite</code>, <code>Files.ReadWrite.All</code>)</td>
+                </tr>
+                <tr>
+                    <td><strong>Access Duration</strong></td>
+                    <td>Short-lived, scoped to session</td>
+                    <td>Persistent via refresh tokens</td>
+                </tr>
+                <tr>
+                    <td><strong>MFA Required</strong></td>
+                    <td>Yes, at authentication</td>
+                    <td>Bypassed — consent is post-authentication</td>
+                </tr>
             </tbody>
         </table>
 
         <div class="warning-box">
             <strong><i class="fas fa-exclamation-triangle"></i> Critical Risk:</strong>
-            <p style="margin-top: 0.5rem; margin-bottom: 0;">Once a user grants consent, the malicious app has persistent access. <strong>Changing the user's password does not revoke the OAuth grant.</strong> The attacker maintains access until the admin explicitly revokes the application's consent in Entra ID or Google Workspace admin console.</p>
+            <p style="margin-top: 0.5rem; margin-bottom: 0;">Once a user grants consent, the malicious app has
+                persistent access. <strong>Changing the user's password does not revoke the OAuth grant.</strong> The
+                attacker maintains access until the admin explicitly revokes the application's consent in Entra ID or
+                Google Workspace admin console.</p>
         </div>
 
         <!-- SECTION 7 -->
         <h2 id="token-persistence">7. Attack Vector 4: Token Persistence & Theft</h2>
 
-        <p>OAuth tokens, by design, provide access without requiring re-authentication. This property — essential for user experience — creates significant security implications when tokens are stolen.</p>
+        <p>OAuth tokens, by design, provide access without requiring re-authentication. This property — essential for
+            user experience — creates significant security implications when tokens are stolen.</p>
 
         <h3>7.1 Why Token Theft Persists After Password Reset</h3>
-        <p>A common misconception is that resetting a user's password invalidates all active sessions. With OAuth, this is <strong>not automatically true</strong>:</p>
+        <p>A common misconception is that resetting a user's password invalidates all active sessions. With OAuth, this
+            is <strong>not automatically true</strong>:</p>
 
         <ul>
-            <li><strong>Access tokens</strong> remain valid until they expire (typically 60-90 minutes for Entra ID)</li>
+            <li><strong>Access tokens</strong> remain valid until they expire (typically 60-90 minutes for Entra ID)
+            </li>
             <li><strong>Refresh tokens</strong> can have lifetimes of days to months depending on configuration</li>
             <li>Password reset does NOT automatically revoke existing refresh tokens in all configurations</li>
-            <li>Attackers who obtain a refresh token can silently generate new access tokens without any user interaction</li>
+            <li>Attackers who obtain a refresh token can silently generate new access tokens without any user
+                interaction</li>
         </ul>
 
         <h3>7.2 Token Theft via Infostealer Malware</h3>
-        <p>Modern infostealer malware (RedLine, Raccoon, Vidar) specifically targets OAuth and session tokens stored in browser profiles. These tokens are extracted alongside cookies and sent to attacker C2 servers, enabling session hijacking without triggering MFA.</p>
+        <p>Modern infostealer malware (RedLine, Raccoon, Vidar) specifically targets OAuth and session tokens stored in
+            browser profiles. These tokens are extracted alongside cookies and sent to attacker C2 servers, enabling
+            session hijacking without triggering MFA.</p>
 
         <div class="technical-box">
             <h3><i class="fas fa-terminal"></i> Where Tokens Are Stored (Browser Forensics Reference)</h3>
@@ -557,13 +1057,18 @@ https://login.microsoftonline.com/common/oauth2/v2.0/authorize
         </div>
 
         <h3>7.3 Shadow Google Accounts</h3>
-        <p>A vulnerability identified by security researchers affects Google OAuth specifically. When employees use "Sign in with Google" for third-party services (Slack, Zoom, Notion), they may create OAuth grants that persist even after the employee is offboarded. If the organization doesn't revoke these OAuth connections, former employees retain access to corporate resources through these "shadow" OAuth sessions. Google has begun automatically deleting unused OAuth clients to address this.</p>
+        <p>A vulnerability identified by security researchers affects Google OAuth specifically. When employees use
+            "Sign in with Google" for third-party services (Slack, Zoom, Notion), they may create OAuth grants that
+            persist even after the employee is offboarded. If the organization doesn't revoke these OAuth connections,
+            former employees retain access to corporate resources through these "shadow" OAuth sessions. Google has
+            begun automatically deleting unused OAuth clients to address this.</p>
 
         <!-- SECTION 8 -->
         <h2 id="defense">8. Defense: Conditional Access, App Governance & Detection</h2>
 
         <h3>8.1 Block Device Code Flow (Critical)</h3>
-        <p>The single most impactful mitigation against Storm-2372 and similar attacks is to <strong>block the device code authentication flow</strong> via Conditional Access in Microsoft Entra ID.</p>
+        <p>The single most impactful mitigation against Storm-2372 and similar attacks is to <strong>block the device
+                code authentication flow</strong> via Conditional Access in Microsoft Entra ID.</p>
 
         <div class="technical-box">
             <h3><i class="fas fa-terminal"></i> Entra ID — Block Device Code Flow via Conditional Access</h3>
@@ -592,7 +1097,10 @@ https://login.microsoftonline.com/common/oauth2/v2.0/authorize
 
         <div class="info-box">
             <strong><i class="fas fa-lightbulb"></i> Implementation Note:</strong>
-            <p style="margin-top: 0.5rem; margin-bottom: 0;">Before blocking device code flow globally, audit your organization for legitimate uses. Common legitimate uses include: conference room displays, Azure CLI on shared terminals, and IoT devices. For these, create an exception policy that allows device code flow only from specific trusted network locations or compliant devices.</p>
+            <p style="margin-top: 0.5rem; margin-bottom: 0;">Before blocking device code flow globally, audit your
+                organization for legitimate uses. Common legitimate uses include: conference room displays, Azure CLI on
+                shared terminals, and IoT devices. For these, create an exception policy that allows device code flow
+                only from specific trusted network locations or compliant devices.</p>
         </div>
 
         <h3>8.2 Restrict OAuth App Registrations</h3>
@@ -625,7 +1133,8 @@ Get-MgPolicyAuthorizationPolicy |
         </div>
 
         <h3>8.3 Revoke Compromised Tokens</h3>
-        <p>If device code phishing or token theft is suspected, immediately revoke all refresh tokens for the affected user:</p>
+        <p>If device code phishing or token theft is suspected, immediately revoke all refresh tokens for the affected
+            user:</p>
         <div class="technical-box">
             <h3><i class="fas fa-terminal"></i> Emergency Token Revocation (Microsoft Graph API)</h3>
             <pre><code class="language-bash"># Revoke all refresh tokens for a compromised user
@@ -758,18 +1267,64 @@ tags:
         <div class="success-box">
             <strong><i class="fas fa-clipboard-check"></i> Priority Actions for Security Teams:</strong>
             <table style="margin-top: 1rem;">
-                <thead><tr><th>Priority</th><th>Action</th><th>Mitigates</th></tr></thead>
+                <thead>
+                    <tr>
+                        <th>Priority</th>
+                        <th>Action</th>
+                        <th>Mitigates</th>
+                    </tr>
+                </thead>
                 <tbody>
-                    <tr><td class="severity-critical">P0</td><td>Block device code flow via Conditional Access</td><td>Storm-2372, device code phishing</td></tr>
-                    <tr><td class="severity-critical">P0</td><td>Restrict user consent to verified publishers only</td><td>Consent phishing, illicit app grants</td></tr>
-                    <tr><td class="severity-critical">P0</td><td>Deploy phishing-resistant MFA (FIDO2/passkeys)</td><td>AiTM, token interception</td></tr>
-                    <tr><td class="severity-high">P1</td><td>Audit all existing OAuth app permissions quarterly</td><td>Over-privileged apps, shadow access</td></tr>
-                    <tr><td class="severity-high">P1</td><td>Configure token lifetime policies (reduce refresh token lifetime)</td><td>Token persistence attacks</td></tr>
-                    <tr><td class="severity-high">P1</td><td>Enable Continuous Access Evaluation (CAE)</td><td>Stolen token reuse</td></tr>
-                    <tr><td>P2</td><td>Deploy KQL/Sigma detection rules from this guide</td><td>Device code phishing, consent abuse</td></tr>
-                    <tr><td>P2</td><td>Implement app governance policies in Defender for Cloud Apps</td><td>Unauthorized app access</td></tr>
-                    <tr><td>P2</td><td>Revoke OAuth grants for offboarded employees</td><td>Shadow accounts, persistent access</td></tr>
-                    <tr><td>P2</td><td>Train users to recognize device code and consent phishing</td><td>Social engineering</td></tr>
+                    <tr>
+                        <td class="severity-critical">P0</td>
+                        <td>Block device code flow via Conditional Access</td>
+                        <td>Storm-2372, device code phishing</td>
+                    </tr>
+                    <tr>
+                        <td class="severity-critical">P0</td>
+                        <td>Restrict user consent to verified publishers only</td>
+                        <td>Consent phishing, illicit app grants</td>
+                    </tr>
+                    <tr>
+                        <td class="severity-critical">P0</td>
+                        <td>Deploy phishing-resistant MFA (FIDO2/passkeys)</td>
+                        <td>AiTM, token interception</td>
+                    </tr>
+                    <tr>
+                        <td class="severity-high">P1</td>
+                        <td>Audit all existing OAuth app permissions quarterly</td>
+                        <td>Over-privileged apps, shadow access</td>
+                    </tr>
+                    <tr>
+                        <td class="severity-high">P1</td>
+                        <td>Configure token lifetime policies (reduce refresh token lifetime)</td>
+                        <td>Token persistence attacks</td>
+                    </tr>
+                    <tr>
+                        <td class="severity-high">P1</td>
+                        <td>Enable Continuous Access Evaluation (CAE)</td>
+                        <td>Stolen token reuse</td>
+                    </tr>
+                    <tr>
+                        <td>P2</td>
+                        <td>Deploy KQL/Sigma detection rules from this guide</td>
+                        <td>Device code phishing, consent abuse</td>
+                    </tr>
+                    <tr>
+                        <td>P2</td>
+                        <td>Implement app governance policies in Defender for Cloud Apps</td>
+                        <td>Unauthorized app access</td>
+                    </tr>
+                    <tr>
+                        <td>P2</td>
+                        <td>Revoke OAuth grants for offboarded employees</td>
+                        <td>Shadow accounts, persistent access</td>
+                    </tr>
+                    <tr>
+                        <td>P2</td>
+                        <td>Train users to recognize device code and consent phishing</td>
+                        <td>Social engineering</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -777,32 +1332,46 @@ tags:
         <!-- SECTION 11 -->
         <h2 id="references">11. References & Sources</h2>
         <ul>
-            <li><a href="https://datatracker.ietf.org/doc/html/rfc6749" target="_blank" rel="noopener">RFC 6749 — The OAuth 2.0 Authorization Framework</a> (IETF, October 2012)</li>
-            <li><a href="https://datatracker.ietf.org/doc/html/rfc8628" target="_blank" rel="noopener">RFC 8628 — OAuth 2.0 Device Authorization Grant</a> (IETF)</li>
-            <li><a href="https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/" target="_blank" rel="noopener">Microsoft Threat Intelligence — Storm-2372 Device Code Phishing Advisory</a> (February 2025)</li>
-            <li><a href="https://learn.microsoft.com/en-us/entra/identity/conditional-access/" target="_blank" rel="noopener">Microsoft Entra ID — Conditional Access Documentation</a></li>
-            <li><a href="https://learn.microsoft.com/en-us/graph/api/user-revokesigninsessions" target="_blank" rel="noopener">Microsoft Graph API — Revoke Sign-In Sessions</a></li>
-            <li><a href="https://www.europol.europa.eu/" target="_blank" rel="noopener">Europol — Tycoon 2FA PhaaS Takedown</a> (2025)</li>
-            <li><a href="/guides/passkeys-fido2-passwordless-authentication.html">TheHGTech — Passkeys & FIDO2 Enterprise Guide</a></li>
-            <li><a href="/guides/active-directory-security-hardening.html">TheHGTech — Active Directory Security Hardening</a></li>
+            <li><a href="https://datatracker.ietf.org/doc/html/rfc6749" target="_blank" rel="noopener">RFC 6749 — The
+                    OAuth 2.0 Authorization Framework</a> (IETF, October 2012)</li>
+            <li><a href="https://datatracker.ietf.org/doc/html/rfc8628" target="_blank" rel="noopener">RFC 8628 — OAuth
+                    2.0 Device Authorization Grant</a> (IETF)</li>
+            <li><a href="https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/"
+                    target="_blank" rel="noopener">Microsoft Threat Intelligence — Storm-2372 Device Code Phishing
+                    Advisory</a> (February 2025)</li>
+            <li><a href="https://learn.microsoft.com/en-us/entra/identity/conditional-access/" target="_blank"
+                    rel="noopener">Microsoft Entra ID — Conditional Access Documentation</a></li>
+            <li><a href="https://learn.microsoft.com/en-us/graph/api/user-revokesigninsessions" target="_blank"
+                    rel="noopener">Microsoft Graph API — Revoke Sign-In Sessions</a></li>
+            <li><a href="https://www.europol.europa.eu/" target="_blank" rel="noopener">Europol — Tycoon 2FA PhaaS
+                    Takedown</a> (2025)</li>
+            <li><a href="/guides/passkeys-fido2-passwordless-authentication.html">TheHGTech — Passkeys & FIDO2
+                    Enterprise Guide</a></li>
+            <li><a href="/guides/active-directory-security-hardening.html">TheHGTech — Active Directory Security
+                    Hardening</a></li>
         </ul>
 
     </div>
 
     <!-- Interaction Bar -->
     <div class="interaction-bar" style="max-width: 900px; margin: 0 auto 2rem; padding: 0 2rem;">
-        <div class="interaction-buttons">
-            <div class="share-group">
-                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i class="fas fa-link"></i></button>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
+                    aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
+                    aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i
+                        class="fas fa-link"></i></button>
             </div>
             <div class="button-separator"></div>
-            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print"><i class="fas fa-print"></i></button>
+            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print"><i
+                    class="fas fa-print"></i></button>
         </div>
     </div>
 
     <script src="/interaction-bar.js?v=20251217"></script>
     <script src="../ui-enhancements.js?v=20260220" defer></script>
 </body>
+
 </html>
