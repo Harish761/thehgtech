@@ -5,6 +5,92 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 06 2026",
+            "headline": "Malvertising Surpasses Email as Top Malware Vector",
+            "title": "Malvertising Becomes Leading Vector for Global Malware Delivery",
+            "content": "Online advertising has overtaken email and direct hacks as the primary method for malware distribution, according to The Media Trust. CEO Chris Olson highlighted that malvertising, the malicious use of online ads to distribute malware, is now the leading vector for malware delivery worldwide. This shift underscores the need for organizations to scrutinize their ad supply chains and implement robust ad scanning solutions. With the rise of sophisticated ad-based attacks, businesses must remain vigilant to protect against potential breaches. Security teams are advised to employ comprehensive ad filtering and monitoring tools to mitigate risks from malvertising.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4141784/targeted-advertising-is-also-targeting-malware.html",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "23 iOS Flaws Added to CISA&#x27;s KEV List",
+            "title": "CISA Adds Coruna Exploit Kit&#x27;s iOS Vulnerabilities to Known Exploited Vulnerabilities List",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has updated its Known Exploited Vulnerabilities (KEV) list with 23 iOS vulnerabilities targeted by the Coruna exploit kit. These flaws affect iOS versions 13 through 17.2.1 and are being exploited in the wild, indicating a significant threat to iPhone users. The addition of these vulnerabilities to the KEV list highlights the ongoing risks posed by nation-state-grade exploit kits. CISA advises users and organizations to prioritize patching these vulnerabilities to protect against potential exploitation. Regular updates and vigilance are crucial to maintaining device security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisa-adds-ios-flaws-from-coruna-exploit-kit-to-kev/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Rockwell ICS Flaw Exploited Years After Disclosure",
+            "title": "Rockwell Automation Vulnerability Exploited in Remote ICS Attacks",
+            "content": "A vulnerability in Rockwell Automation&#x27;s industrial control systems (ICS), disclosed and mitigated in 2021, is now being actively exploited in the wild. This flaw allows attackers to execute remote commands on affected systems, posing a severe threat to critical infrastructure. The delayed exploitation highlights the importance of timely patching and continuous monitoring of ICS environments. Organizations using Rockwell systems should ensure all patches are applied and conduct regular security assessments. Maintaining updated defenses is essential to safeguarding against such vulnerabilities in industrial settings.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rockwell-vulnerability-allowing-remote-ics-hacking-exploited-in-attacks/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Pentagon Names New CISO: James &#x27;Aaron&#x27; Bishop",
+            "title": "James &#x27;Aaron&#x27; Bishop Appointed as New Pentagon Chief Information Security Officer",
+            "content": "James &#x27;Aaron&#x27; Bishop has been appointed as the new Chief Information Security Officer (CISO) for the Pentagon, succeeding David McKeown. Bishop&#x27;s appointment comes as McKeown transitions to the private sector after four decades of government service. Bishop is expected to lead the Pentagon&#x27;s cybersecurity initiatives, focusing on strengthening national defense against evolving cyber threats. His extensive experience in federal cybersecurity positions him well to tackle the challenges faced by the Department of Defense. The transition marks a strategic shift in leadership aimed at bolstering the Pentagon&#x27;s cyber defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/james-aaron-bishop-tapped-to-serve-as-new-pentagon-ciso/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Iranian Hackers Breach US Airport, Bank, Software Firm",
+            "title": "Iranian APT Compromises US Airport, Bank, and Software Company Networks",
+            "content": "An Iranian advanced persistent threat (APT) group has successfully breached networks of a US airport, a bank, and a software company, with intrusions observed since February. These attacks demonstrate the group&#x27;s established presence within US organizations, raising concerns about potential data theft and operational disruptions. The incidents underscore the persistent threat posed by state-sponsored actors targeting critical infrastructure. Organizations are urged to enhance their threat detection capabilities and conduct thorough network audits to identify and mitigate any unauthorized access. Proactive measures are essential to counteract such sophisticated cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/iranian-apt-hacks-us-airport-bank-software-company/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Fake OpenClaw Installers on GitHub Spread Malware",
+            "title": "Bing-Linked GitHub Repositories Install Malware Instead of OpenClaw",
+            "content": "Users searching for OpenClaw installers via Bing have been directed to GitHub repositories that instead deliver malware. These fake repositories pose a significant risk to developers and users seeking legitimate software, highlighting the dangers of relying on search engines for software downloads. Malwarebytes warns that these deceptive practices can lead to system compromise and data loss. Users are advised to verify the authenticity of software sources and use trusted platforms for downloads. Employing comprehensive security solutions can help detect and block such malicious activities.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/beware-of-fake-openclaw-installers-even-if-bing-points-you-to-github",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "AI-Powered Risk Management Key for MSP Cybersecurity Scaling",
+            "title": "MSPs Leverage AI-Powered Risk Management to Enhance Cybersecurity Services",
+            "content": "Managed Service Providers (MSPs) are increasingly adopting AI-powered risk management to scale their cybersecurity offerings effectively. This approach allows MSPs and Managed Security Service Providers (MSSPs) to deliver scalable, measurable security services that build client trust and drive recurring revenue. By focusing on risk-based cybersecurity, MSPs can enhance their service models, providing value-added solutions that meet the evolving needs of their clients. The integration of AI into risk management processes enables more efficient threat detection and response, positioning MSPs to better protect their clients&#x27; digital assets.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
             "headline": "ISC Stormcast—March 6th Edition Analyzes Latest Threat Trends",
             "title": "SANS Internet Storm Center&#x27;s March 6th Stormcast Highlights Emerging Cyber Threats",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast for March 6th provides an in-depth analysis of the current cybersecurity threat landscape. This edition covers a range of emerging threats, including vulnerabilities in widely-used software and recent cyber incidents affecting global networks. The InfoCON level remains at green, indicating a stable threat environment, but experts caution against complacency. Security professionals are advised to stay informed about the latest patches and threat intelligence to safeguard their systems. The Stormcast serves as a valuable resource for understanding the evolving tactics of cyber adversaries and preparing defenses accordingly.",
@@ -19,68 +105,6 @@ const websiteContent = {
             "content": "The notorious LeakBase marketplace, a hub for buying and selling stolen data and cybercrime tools, has been dismantled by law enforcement agencies from 14 countries. Coordinated by the US Department of Justice, the operation led to multiple arrests and the seizure of the platform&#x27;s infrastructure. LeakBase had facilitated the exchange of personal data and hacking tools, posing significant risks to individuals and organizations worldwide. This takedown highlights the growing international collaboration to combat cybercrime and disrupt illegal online activities. Security professionals should remain vigilant as other marketplaces may attempt to fill the void left by LeakBase.",
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4141400/leakbase-marketplace-unplugged-by-cops-in-14-countries.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "Chinese Hackers—UAT-9244 Targets South American Telcos",
-            "title": "Chinese State-Sponsored Group UAT-9244 Attacks South American Telecoms",
-            "content": "A state-sponsored threat actor from China, identified as UAT-9244, has been actively targeting telecommunications providers in South America since 2024. The group employs a sophisticated malware toolkit designed to compromise Windows, Linux, and network-edge devices. These attacks aim to gain persistent access to critical infrastructure, potentially disrupting communications and data integrity. The campaign underscores the ongoing geopolitical tensions and the strategic targeting of telecom sectors by nation-state actors. Organizations in the telecom industry should enhance their security measures and monitor for indicators of compromise linked to UAT-9244&#x27;s activities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/chinese-state-hackers-target-telcos-with-new-malware-toolkit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "Bing AI Promotes Malware—Fake GitHub Repo Alert",
-            "title": "Bing AI-Enhanced Search Promotes Fake OpenClaw GitHub Repository",
-            "content": "Microsoft&#x27;s Bing AI-enhanced search feature inadvertently promoted a fake GitHub repository claiming to host OpenClaw installers. Users following the misleading results were instructed to execute commands that deployed information-stealing malware and proxy tools. This incident highlights the risks associated with AI-driven search technologies, which can amplify the reach of malicious content. Developers and users should exercise caution when downloading software from unofficial sources and verify the authenticity of repositories. Microsoft is urged to refine its AI algorithms to better detect and filter out deceptive content.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/bing-ai-promoted-fake-openclaw-github-repo-pushing-info-stealing-malware/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "APT36 Uses AI—Mass-Produced Malware Threatens Defenses",
-            "title": "Pakistan&#x27;s APT36 Leverages AI for Large-Scale Malware Production",
-            "content": "Pakistan-based threat group APT36 has adopted AI techniques to mass-produce basic malware, overwhelming traditional cybersecurity defenses. Known for its espionage activities, APT36 is now using vibe-coding to automate the creation of malware, sacrificing sophistication for sheer volume. This approach poses a significant challenge for security teams, as the sheer number of threats can saturate detection systems. Organizations need to enhance their threat intelligence capabilities and adopt advanced machine learning tools to effectively counter this evolving strategy. The use of AI in malware development marks a concerning trend in cyber warfare tactics.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/nation-state-actor-ai-malware-assembly-line",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "Tycoon 2FA Defeated—Phishing Platform Busted by Europol",
-            "title": "Europol and Vendors Dismantle Tycoon Phishing-as-a-Service Platform",
-            "content": "Europol, in collaboration with cybersecurity vendors, has dismantled the Tycoon phishing-as-a-service platform that specialized in bypassing two-factor authentication (2FA). Tycoon was widely used by cybercriminals to conduct sophisticated phishing campaigns, compromising user accounts and sensitive data. The platform&#x27;s takedown represents a significant victory in the fight against phishing and highlights the effectiveness of international cooperation in cybercrime enforcement. Organizations should continue to educate employees on phishing risks and implement robust authentication measures to protect against similar threats. The incident serves as a reminder of the persistent evolution of phishing techniques.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/tycoon-2fa-europol-vendors-bust-phishing-platform",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "FBI Network Breached—Suspicious Activity Detected",
-            "title": "FBI Reports Suspicious Activity on Surveillance Network",
-            "content": "The FBI has confirmed detecting suspicious activity on one of its networks used for managing surveillance operations. While details remain scarce, the incident underscores the persistent threats faced by government agencies from cyber adversaries. This breach could potentially impact the integrity and confidentiality of sensitive surveillance data. The FBI is likely conducting a thorough investigation to determine the scope and source of the intrusion. Security professionals should be aware of the increasing targeting of government networks and ensure robust security protocols are in place to protect critical infrastructure.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/fbi-targeted-with-suspicious-activity-on-its-networks/",
             "relatedResources": []
         },
         {
@@ -111,6 +135,104 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Mar 06 2026",
+            "headline": "WhatsApp Opens Doors to Rival AI Chatbots in Brazil",
+            "title": "WhatsApp Expands AI Chatbot Access to Brazilian Market for a Fee",
+            "content": "Meta is expanding its policy of allowing rival AI companies to offer their chatbots on WhatsApp to Brazilian users, following a similar move in Europe. This decision enables third-party AI developers to integrate their chatbots into the platform, providing users with a broader range of AI-driven services for a fee. The move is part of Meta&#x27;s strategy to diversify offerings and enhance user engagement on WhatsApp. This change could significantly impact local AI developers and businesses looking to leverage WhatsApp&#x27;s extensive user base in Brazil. Users should watch for new chatbot options and consider potential privacy implications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/06/after-europe-whatsapp-will-let-rival-ai-companies-offer-chatbots-in-brazil/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Intelligent Automation Scaling—Avoid Workflow Disruptions",
+            "title": "Key Strategies for Scaling Intelligent Automation Without Disrupting Workflows",
+            "content": "At the Intelligent Automation Conference, industry leaders emphasized that scaling intelligent automation requires a focus on architectural elasticity rather than just deploying more bots. Many automation initiatives fail to move beyond pilot phases due to inflexible architectures that disrupt live workflows. Experts highlighted the need for adaptive systems that can scale dynamically to meet changing demands without compromising existing processes. Organizations looking to expand their automation efforts should prioritize flexible infrastructure and robust integration capabilities. This approach can help prevent operational bottlenecks and ensure seamless automation scaling.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/scaling-intelligent-automation-without-breaking-live-workflows/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                },
+                {
+                    "label": "SIEM Comparison: Splunk vs Elastic vs LogRhythm",
+                    "url": "/comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
+                    "icon": "fa-chart-line"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Alexa+ Faces User Frustration—Performance Issues Persist",
+            "title": "Alexa+ AI Assistant Struggles with User Experience in Real-World Testing",
+            "content": "Amazon&#x27;s Alexa+ AI assistant, tested on the Echo Show 15, has faced significant user dissatisfaction due to performance issues. Over the course of a month-long trial in a domestic setting, users reported frequent misunderstandings and operational glitches. These challenges highlight ongoing difficulties in delivering reliable voice-activated AI services, even with advanced models like Alexa+. The performance problems could affect Amazon&#x27;s reputation as a leader in smart home technology. Users should be aware of these limitations when integrating Alexa+ into their daily routines and consider alternative solutions if reliability is a priority.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/why-is-amazon-alexa-plus-so-bad/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Block CEO Dorsey—Layoffs to Rebuild as &quot;Intelligence&quot;",
+            "title": "Jack Dorsey Explains Block&#x27;s Workforce Reduction Strategy",
+            "content": "In a candid interview with WIRED, Jack Dorsey, cofounder and CEO of Block, explained the rationale behind cutting 40% of the company&#x27;s workforce. Dorsey aims to transform Block into an &quot;intelligence,&quot; focusing on AI-driven innovation and efficiency. The layoffs are part of a broader strategy to streamline operations and invest in advanced technologies. This significant restructuring reflects a growing trend among tech companies to prioritize AI capabilities over traditional business models. Employees and stakeholders should prepare for further changes as Block shifts towards a more AI-centric approach.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/jack-dorsey-explains-block-layoffs/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Rowspace Raises $50M—Revolutionizing Private Equity with AI",
+            "title": "Rowspace Launches with $50M to Enhance AI in Private Equity",
+            "content": "Rowspace, a new venture in the private equity space, has launched with $50 million in funding to address the challenges of scaling judgment-based decisions using AI. The firm aims to integrate decades of scattered data, including deal memos and partner notes, into a cohesive AI-driven system. This approach could revolutionize how private equity firms evaluate and execute deals, offering a more efficient and data-driven decision-making process. Industry professionals should watch Rowspace&#x27;s progress as it attempts to bridge the gap between traditional financial judgment and modern AI capabilities.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/rowspace-50m-ai-private-equity-sequoia-emergence/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "US Eyes Tough New Chip Export Controls Worldwide",
+            "title": "US Considers Comprehensive Chip Export Controls in Draft Proposal",
+            "content": "The U.S. government is reportedly considering sweeping new controls on chip exports that would involve oversight of every sale, regardless of origin. This draft proposal aims to tighten regulations amidst growing concerns over global semiconductor supply chains and national security. If implemented, the policy could significantly impact international tech companies and their ability to conduct business with U.S. partners. Industry leaders should prepare for potential disruptions and consider diversifying supply chain strategies to mitigate risks associated with increased regulatory scrutiny.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/05/us-reportedly-considering-sweeping-new-chip-export-controls/",
+            "relatedResources": [
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Mar 05 2026",
+            "headline": "ByteDance&#x27;s Seedance 2.0 Stumbles—Compute and Copyright Issues",
+            "title": "ByteDance&#x27;s AI Model Faces Compute and Copyright Challenges",
+            "content": "ByteDance&#x27;s latest AI video model, Seedance 2.0, is encountering significant hurdles due to compute capacity limitations and copyright concerns. The model&#x27;s heavy demand has strained ByteDance&#x27;s infrastructure, leading to performance bottlenecks. Additionally, copyright complaints have surfaced, complicating the model&#x27;s deployment and usage. These challenges highlight the difficulties tech companies face when scaling AI models amidst legal and technical constraints. Stakeholders should monitor ByteDance&#x27;s response to these issues as they work to optimize infrastructure and address legal challenges.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/made-in-china-bytedances-ai-ambitions-are-being-hampered-by-compute-restraints/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
             "headline": "Anthropic Fights Back—Challenges DOD&#x27;s Risk Label in Court",
             "title": "Anthropic to Legally Contest DOD&#x27;s Supply-Chain Risk Designation",
             "content": "Anthropic CEO Dario Amodei announced plans to legally challenge the Department of Defense&#x27;s (DOD) designation of the AI company as a supply-chain risk. The DOD&#x27;s label could restrict Anthropic&#x27;s business operations with government agencies, but Amodei argues that most of their clients remain unaffected. The conflict centers around Anthropic&#x27;s acceptable use policies, which the DOD claims could pose a risk to national security. This legal battle underscores the growing tension between AI firms and government regulations, particularly as AI technologies become more integral to defense strategies. Industry observers should monitor this case closely, as it may set precedents for future government interactions with AI companies.",
@@ -125,74 +247,6 @@ const websiteContent = {
             "content": "Google has launched a command-line interface (CLI) for Google Workspace, allowing AI agents to interact with Gmail, Docs, Sheets, and other applications via code commands. This development revives the traditional non-graphical interface, making it a vital tool for agentic AI systems that require streamlined data processing capabilities. The CLI supports automation and integration, facilitating more efficient workflows for developers and AI researchers. As coding becomes increasingly central to AI operations, this tool could significantly enhance productivity and flexibility in managing complex tasks. Users and developers are encouraged to explore the CLI to leverage its potential in optimizing AI-driven processes.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/orchestration/google-workspace-cli-brings-gmail-docs-sheets-and-more-into-a-common",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "DiligenceSquared—AI Agents Cut M&amp;A Research Costs",
-            "title": "DiligenceSquared Employs AI Voice Agents for Cost-Effective M&amp;A Research",
-            "content": "DiligenceSquared is transforming the mergers and acquisitions (M&amp;A) landscape by using AI voice agents to conduct interviews with potential acquisition targets. This approach reduces reliance on costly management consultants, streamlining the research process for private equity firms. The AI agents gather insights directly from customers of the target companies, providing valuable data for decision-making. This innovation highlights a broader trend of AI-driven efficiency in financial services, offering a scalable solution that could democratize access to high-quality M&amp;A research. Firms involved in M&amp;A activities should consider integrating AI tools to enhance their strategic evaluations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/05/diligencesquared-uses-ai-voice-agents-to-make-ma-research-affordable/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "Pentagon Labels Anthropic—Supply-Chain Risk Sparks Legal Clash",
-            "title": "Pentagon Designates Anthropic as Supply-Chain Risk Amid Legal Dispute",
-            "content": "The Pentagon has officially labeled Anthropic as a &quot;supply-chain risk&quot; following unsuccessful negotiations and public ultimatums. This designation intensifies the ongoing conflict over Anthropic&#x27;s acceptable use policies, potentially leading to a legal showdown. The decision could restrict Anthropic&#x27;s ability to engage with government contracts, affecting its business operations. This case exemplifies the increasing scrutiny AI companies face regarding national security implications. Stakeholders in the AI sector should stay informed about the outcome, as it may influence future regulatory frameworks and compliance requirements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/890347/pentagon-anthropic-supply-chain-risk",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "AI in Middle East Conflict—Ethics and Industry Impacts",
-            "title": "AI&#x27;s Role in Middle East Conflict Raises Ethical and Strategic Concerns",
-            "content": "The ongoing conflict in the Middle East has highlighted the AI industry&#x27;s growing involvement with the Department of Defense. As AI technologies become increasingly integrated into military strategies, ethical considerations and prediction market ethics are coming under scrutiny. This development raises questions about the implications of AI in warfare and the responsibilities of tech companies. The situation underscores the need for clear ethical guidelines and regulatory oversight to ensure responsible AI deployment in defense contexts. Industry leaders and policymakers must engage in dialogue to address these challenges and mitigate potential risks.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-iran-war-artificial-intelligence-prediction-markets-paramount-warner-bros/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "Pentagon Tested OpenAI Tech—Despite Military Use Ban",
-            "title": "Pentagon Explored OpenAI Models Through Microsoft Amid Usage Ban",
-            "content": "Despite OpenAI&#x27;s initial prohibition on military applications, the Pentagon reportedly tested its AI models through Microsoft&#x27;s platform. This revelation comes before OpenAI lifted its ban on military use, raising concerns about compliance and ethical considerations. The incident highlights the complexities of AI deployment in defense, where technological capabilities often outpace regulatory frameworks. As AI continues to play a pivotal role in military operations, transparency and adherence to ethical standards are crucial. This case may prompt reassessment of AI governance policies to ensure alignment with ethical norms and legal requirements.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-defense-department-ban-military-use-microsoft/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "AWS Debuts AI Agent Platform—Healthcare Focus",
-            "title": "AWS Unveils Amazon Connect Health for AI-Driven Healthcare Solutions",
-            "content": "Amazon Web Services (AWS) has launched Amazon Connect Health, an AI agent platform designed to streamline healthcare operations. The platform assists with patient scheduling, documentation, and verification, aiming to enhance efficiency and patient experience. This initiative reflects AWS&#x27;s commitment to leveraging AI for transformative healthcare solutions, addressing the industry&#x27;s demand for scalable, tech-driven improvements. Healthcare providers can utilize Amazon Connect Health to optimize operational workflows and improve patient outcomes. The launch signifies a growing trend of AI integration in healthcare, offering promising advancements in service delivery and patient care.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/05/aws-amazon-connect-health-ai-agent-platform-health-care-providers/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
