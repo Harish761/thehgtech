@@ -983,52 +983,12 @@
       "date": "2025-12-06",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1291",
-      "incident_id": 1291,
-      "title": "South Korean Fraud Ring Allegedly Used Deepfake Identities to Traffic Victims into Cambodia Scam Ope",
-      "date": "2025-12-06",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1292",
-      "incident_id": 1292,
-      "title": "Glasgow Man Allegedly Used AI Tool to Create and Share Non-Consensual Deepfake Nude Images of Former",
-      "date": "2025-12-06",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1293",
-      "incident_id": 1293,
-      "title": "Purported Deepfake Impersonating Cyprus President Nikos Christodoulides Reportedly Defrauded Citizen",
-      "date": "2025-12-06",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1295",
-      "incident_id": 1295,
-      "title": "Japanese Teen Allegedly Uses AI-Generated Program to Breach Kaikatsu Frontier and Leak Data of 7.3 M",
-      "date": "2025-12-06",
-      "category": "data_leak",
-      "severity": "critical"
-    },
-    {
-      "id": "AIID-1296",
-      "incident_id": 1296,
-      "title": "Attacker Reportedly Bypasses AI Safety Filters to Obtain Guidance for Non-Fatal Hammer Assault in De",
-      "date": "2025-12-06",
-      "category": "prompt_injection",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 128,
+    "total": 123,
     "last7Days": 22,
     "last30Days": 41
   },
-  "lastUpdated": "2026-03-06T02:20:16.456580+05:30"
+  "lastUpdated": "2026-03-06T08:17:25.418298+05:30"
 }
