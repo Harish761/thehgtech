@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "oauth-security-attacks-defense-2026",
+      "title": "OAuth Security in 2026: How Attackers Exploit the Protocol You Trust",
+      "category": "Identity & Access Management",
+      "excerpt": "Complete guide to OAuth 2.0 attack vectors in 2026. Device code phishing (Storm-2372), redirection abuse via Entra ID, consent phishing, token persistence attacks, and enterprise defense with Conditional Access policies, KQL detection, and app governance.",
+      "readTime": "20 min",
+      "level": "Intermediate to Advanced",
+      "date": "Mar 6, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/oauth-security-attacks-defense-2026.png"
+    },
+    {
       "id": "passkeys-fido2-passwordless-authentication",
       "title": "Passkeys & FIDO2: The Enterprise Passwordless Authentication Guide",
       "category": "Identity & Access Management",
