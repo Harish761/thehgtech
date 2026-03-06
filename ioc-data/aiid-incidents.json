@@ -975,20 +975,12 @@
       "date": "2025-12-12",
       "category": "misinformation",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-995",
-      "incident_id": 995,
-      "title": "The New York Times Reportedly Sues OpenAI and Microsoft Over Alleged Unauthorized AI Training on Its",
-      "date": "2025-12-06",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 123,
+    "total": 122,
     "last7Days": 22,
-    "last30Days": 41
+    "last30Days": 40
   },
-  "lastUpdated": "2026-03-06T22:26:09.381868+05:30"
+  "lastUpdated": "2026-03-07T00:40:43.491140+05:30"
 }
