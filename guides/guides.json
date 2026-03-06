@@ -13,6 +13,18 @@
       "image": "/images/guides/oauth-security-attacks-defense-2026.png"
     },
     {
+      "id": "dark-web-monitoring-security-teams",
+      "title": "Dark Web Monitoring for Security Teams: A Practitioner's Guide",
+      "category": "Threat Intelligence",
+      "excerpt": "Complete guide to legitimate dark web monitoring for SOC teams. Surface/deep/dark web explained, legal frameworks, Tor fundamentals, credential leak detection with HIBP API, commercial platforms (Recorded Future, Flare, SpyCloud), threat actor tracking, and operational security for analysts.",
+      "readTime": "20 min",
+      "level": "Intermediate to Advanced",
+      "date": "Mar 6, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/dark-web-monitoring-security-teams.png"
+    },
+    {
       "id": "passkeys-fido2-passwordless-authentication",
       "title": "Passkeys & FIDO2: The Enterprise Passwordless Authentication Guide",
       "category": "Identity & Access Management",

@@ -826,6 +826,18 @@
     </image:image>
   </url>
 
+  <!-- Mar 6, 2026 - Dark Web Monitoring Guide -->
+  <url>
+    <loc>https://thehgtech.com/guides/dark-web-monitoring-security-teams.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2026-03-06</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/guides/dark-web-monitoring-security-teams.png</image:loc>
+      <image:title>Dark Web Monitoring for Security Teams: A Practitioners Guide 2026</image:title>
+    </image:image>
+  </url>
+
   <!-- Feb 18, 2026 - Passkeys & FIDO2 Passwordless Authentication -->
   <url>
     <loc>https://thehgtech.com/guides/passkeys-fido2-passwordless-authentication.html</loc>
