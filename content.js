@@ -4,36 +4,51 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 06 2026",
-            "headline": "Malvertising Surpasses Email as Top Malware Vector",
-            "title": "Malvertising Becomes Leading Vector for Global Malware Delivery",
-            "content": "Online advertising has overtaken email and direct hacks as the primary method for malware distribution, according to The Media Trust. CEO Chris Olson highlighted that malvertising, the malicious use of online ads to distribute malware, is now the leading vector for malware delivery worldwide. This shift underscores the need for organizations to scrutinize their ad supply chains and implement robust ad scanning solutions. With the rise of sophisticated ad-based attacks, businesses must remain vigilant to protect against potential breaches. Security teams are advised to employ comprehensive ad filtering and monitoring tools to mitigate risks from malvertising.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4141784/targeted-advertising-is-also-targeting-malware.html",
+            "date": "Mar 07 2026",
+            "headline": "FBI Probes Cyber Intrusion in Surveillance Data System",
+            "title": "FBI Investigates Cyber Activity on Sensitive Surveillance Information System",
+            "content": "The FBI is currently investigating suspicious cyber activity within a system that holds sensitive surveillance data, as confirmed by a notification sent to Congress members. The scope and impact of this potential breach are under assessment, with the agency working to determine if any classified information has been compromised. This incident underscores ongoing vulnerabilities in systems handling critical intelligence. The FBI advises all agencies managing sensitive data to review their security protocols and ensure robust defenses against unauthorized access. The investigation highlights the need for continuous monitoring and rapid response capabilities in safeguarding national security assets.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fbi-investigating-suspicious-cyber-activity-on-system-holding-sensitive-surveillance-information/",
             "relatedResources": [
                 {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
         },
         {
             "date": "Mar 06 2026",
-            "headline": "23 iOS Flaws Added to CISA&#x27;s KEV List",
-            "title": "CISA Adds Coruna Exploit Kit&#x27;s iOS Vulnerabilities to Known Exploited Vulnerabilities List",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has updated its Known Exploited Vulnerabilities (KEV) list with 23 iOS vulnerabilities targeted by the Coruna exploit kit. These flaws affect iOS versions 13 through 17.2.1 and are being exploited in the wild, indicating a significant threat to iPhone users. The addition of these vulnerabilities to the KEV list highlights the ongoing risks posed by nation-state-grade exploit kits. CISA advises users and organizations to prioritize patching these vulnerabilities to protect against potential exploitation. Regular updates and vigilance are crucial to maintaining device security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisa-adds-ios-flaws-from-coruna-exploit-kit-to-kev/",
+            "headline": "Trump&#x27;s Cybersecurity Plan—Offensive Operations at the Forefront",
+            "title": "Trump Administration Unveils Aggressive Cybersecurity Strategy Focusing on Offense",
+            "content": "President Donald Trump&#x27;s administration has released a new cybersecurity strategy that prioritizes offensive cyber operations as a core component of national security. This seven-page document, developed by the Office of the National Cyber Director, marks a significant shift from previous policies by emphasizing proactive measures to deter adversaries. The strategy also advocates for deregulation and increased integration of artificial intelligence (AI) in cybersecurity efforts. This approach aims to enhance the U.S.&#x27;s ability to counter cyber threats and protect critical infrastructure. Organizations should prepare for potential changes in regulatory landscapes and consider adopting AI-driven security solutions.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4141989/trumps-cyber-strategy-emphasizes-offensive-operations-deregulation-ai.html",
             "relatedResources": []
         },
         {
             "date": "Mar 06 2026",
-            "headline": "Rockwell ICS Flaw Exploited Years After Disclosure",
-            "title": "Rockwell Automation Vulnerability Exploited in Remote ICS Attacks",
-            "content": "A vulnerability in Rockwell Automation&#x27;s industrial control systems (ICS), disclosed and mitigated in 2021, is now being actively exploited in the wild. This flaw allows attackers to execute remote commands on affected systems, posing a severe threat to critical infrastructure. The delayed exploitation highlights the importance of timely patching and continuous monitoring of ICS environments. Organizations using Rockwell systems should ensure all patches are applied and conduct regular security assessments. Maintaining updated defenses is essential to safeguarding against such vulnerabilities in industrial settings.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/rockwell-vulnerability-allowing-remote-ics-hacking-exploited-in-attacks/",
+            "headline": "Trump Issues Cybercrime Executive Order—New Strategy Released",
+            "title": "Trump Administration Releases Cybercrime Executive Order with New Strategy",
+            "content": "The Trump administration has introduced an executive order targeting cybercrime and fraud alongside its new cybersecurity strategy. This comprehensive approach seeks to strengthen the nation&#x27;s defenses against growing cyber threats by enhancing law enforcement capabilities and fostering international cooperation. The executive order outlines measures to combat cybercriminal activities and protect U.S. interests in the digital domain. Organizations are encouraged to align their security practices with these federal initiatives to mitigate risks. The administration&#x27;s focus on both offensive and defensive strategies reflects a holistic approach to national cybersecurity.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/trump-cybersecurity-strategy/",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "ClickFix Phishing Tactics Evolve—Microsoft Warns of New Threat",
+            "title": "Microsoft Detects New ClickFix Phishing Tactics to Evade Detection",
+            "content": "Microsoft has identified a novel phishing tactic employed by threat actors in ClickFix attacks, designed to bypass traditional detection methods. Instead of the typical approach of instructing victims to execute malicious commands via the Run dialog, attackers now deploy more sophisticated social engineering techniques. These phishing campaigns aim to install malware on victims&#x27; systems, posing significant risks to organizational security. Microsoft advises organizations to update their security protocols and educate employees about recognizing and avoiding such phishing attempts. Continuous vigilance and advanced threat detection tools are essential in countering these evolving cyber threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4141923/clickfix-attackers-using-new-tactic-to-evade-detection-says-microsoft.html",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -41,70 +56,43 @@ const websiteContent = {
                     "icon": "fa-skull-crossbones"
                 },
                 {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
                 }
             ]
         },
         {
             "date": "Mar 06 2026",
-            "headline": "Pentagon Names New CISO: James &#x27;Aaron&#x27; Bishop",
-            "title": "James &#x27;Aaron&#x27; Bishop Appointed as New Pentagon Chief Information Security Officer",
-            "content": "James &#x27;Aaron&#x27; Bishop has been appointed as the new Chief Information Security Officer (CISO) for the Pentagon, succeeding David McKeown. Bishop&#x27;s appointment comes as McKeown transitions to the private sector after four decades of government service. Bishop is expected to lead the Pentagon&#x27;s cybersecurity initiatives, focusing on strengthening national defense against evolving cyber threats. His extensive experience in federal cybersecurity positions him well to tackle the challenges faced by the Department of Defense. The transition marks a strategic shift in leadership aimed at bolstering the Pentagon&#x27;s cyber defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/james-aaron-bishop-tapped-to-serve-as-new-pentagon-ciso/",
+            "headline": "TriZetto Breach Exposes 3.4M Patients&#x27; Health Data",
+            "title": "Cognizant TriZetto Data Breach Compromises 3.4 Million Patients&#x27; Health Information",
+            "content": "A data breach at TriZetto Provider Solutions, a healthcare IT firm, has led to the exposure of sensitive health information belonging to over 3.4 million patients. The breach affects software and services used by health insurers and providers, highlighting vulnerabilities in healthcare data management. The compromised data includes personal and medical information, raising concerns about patient privacy and potential identity theft. Affected organizations are urged to review their data security measures and notify impacted individuals promptly. This incident underscores the critical need for robust cybersecurity practices in protecting sensitive healthcare data.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cognizant-trizetto-breach-exposes-health-data-of-34-million-patients/",
             "relatedResources": []
         },
         {
             "date": "Mar 06 2026",
-            "headline": "Iranian Hackers Breach US Airport, Bank, Software Firm",
-            "title": "Iranian APT Compromises US Airport, Bank, and Software Company Networks",
-            "content": "An Iranian advanced persistent threat (APT) group has successfully breached networks of a US airport, a bank, and a software company, with intrusions observed since February. These attacks demonstrate the group&#x27;s established presence within US organizations, raising concerns about potential data theft and operational disruptions. The incidents underscore the persistent threat posed by state-sponsored actors targeting critical infrastructure. Organizations are urged to enhance their threat detection capabilities and conduct thorough network audits to identify and mitigate any unauthorized access. Proactive measures are essential to counteract such sophisticated cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/iranian-apt-hacks-us-airport-bank-software-company/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "Fake OpenClaw Installers on GitHub Spread Malware",
-            "title": "Bing-Linked GitHub Repositories Install Malware Instead of OpenClaw",
-            "content": "Users searching for OpenClaw installers via Bing have been directed to GitHub repositories that instead deliver malware. These fake repositories pose a significant risk to developers and users seeking legitimate software, highlighting the dangers of relying on search engines for software downloads. Malwarebytes warns that these deceptive practices can lead to system compromise and data loss. Users are advised to verify the authenticity of software sources and use trusted platforms for downloads. Employing comprehensive security solutions can help detect and block such malicious activities.",
+            "headline": "Fake Google Meet Update—PCs at Risk of Remote Control",
+            "title": "Malicious Google Meet Update Grants Attackers Control Over Victims&#x27; PCs",
+            "content": "A fake Google Meet update has been discovered, capable of enrolling victims&#x27; Windows PCs into an attacker&#x27;s device management system. This malicious update poses a severe threat by allowing unauthorized access and control over infected systems. Users are urged to verify the authenticity of software updates and avoid downloading from untrusted sources. The attack exploits users&#x27; trust in legitimate software updates, emphasizing the importance of maintaining vigilant cybersecurity practices. Organizations should implement security measures that detect and block such fraudulent activities to protect their networks from compromise.",
             "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/beware-of-fake-openclaw-installers-even-if-bing-points-you-to-github",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "AI-Powered Risk Management Key for MSP Cybersecurity Scaling",
-            "title": "MSPs Leverage AI-Powered Risk Management to Enhance Cybersecurity Services",
-            "content": "Managed Service Providers (MSPs) are increasingly adopting AI-powered risk management to scale their cybersecurity offerings effectively. This approach allows MSPs and Managed Security Service Providers (MSSPs) to deliver scalable, measurable security services that build client trust and drive recurring revenue. By focusing on risk-based cybersecurity, MSPs can enhance their service models, providing value-added solutions that meet the evolving needs of their clients. The integration of AI into risk management processes enables more efficient threat detection and response, positioning MSPs to better protect their clients&#x27; digital assets.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html",
+            "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/03/one-click-on-this-fake-google-meet-update-can-give-attackers-control-of-your-pc",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
                 }
             ]
         },
         {
             "date": "Mar 06 2026",
-            "headline": "ISC Stormcast—March 6th Edition Analyzes Latest Threat Trends",
-            "title": "SANS Internet Storm Center&#x27;s March 6th Stormcast Highlights Emerging Cyber Threats",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast for March 6th provides an in-depth analysis of the current cybersecurity threat landscape. This edition covers a range of emerging threats, including vulnerabilities in widely-used software and recent cyber incidents affecting global networks. The InfoCON level remains at green, indicating a stable threat environment, but experts caution against complacency. Security professionals are advised to stay informed about the latest patches and threat intelligence to safeguard their systems. The Stormcast serves as a valuable resource for understanding the evolving tactics of cyber adversaries and preparing defenses accordingly.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32772",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "LeakBase Seized—Global Crackdown on Cybercrime Marketplace",
-            "title": "LeakBase Marketplace Shut Down by International Law Enforcement Operation",
-            "content": "The notorious LeakBase marketplace, a hub for buying and selling stolen data and cybercrime tools, has been dismantled by law enforcement agencies from 14 countries. Coordinated by the US Department of Justice, the operation led to multiple arrests and the seizure of the platform&#x27;s infrastructure. LeakBase had facilitated the exchange of personal data and hacking tools, posing significant risks to individuals and organizations worldwide. This takedown highlights the growing international collaboration to combat cybercrime and disrupt illegal online activities. Security professionals should remain vigilant as other marketplaces may attempt to fill the void left by LeakBase.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4141400/leakbase-marketplace-unplugged-by-cops-in-14-countries.html",
+            "headline": "North Korea Amplifies Fake Worker Schemes with AI",
+            "title": "Microsoft Warns of AI-Driven Fake Worker Schemes by North Korean Groups",
+            "content": "Microsoft has reported an increase in fake worker schemes orchestrated by North Korean threat groups, now leveraging generative AI as a &quot;force multiplier.&quot; These sophisticated operations aim to infiltrate global companies by creating convincing fake identities and resumes. The use of AI enhances the realism and scalability of these campaigns, posing a significant challenge to corporate security teams. Organizations are advised to strengthen their hiring and verification processes to detect fraudulent applicants. This trend highlights the growing role of AI in cyber espionage and the need for advanced detection capabilities.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/microsoft-north-korea-ai-operations/",
             "relatedResources": []
         },
         {
@@ -135,42 +123,27 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Mar 06 2026",
-            "headline": "WhatsApp Opens Doors to Rival AI Chatbots in Brazil",
-            "title": "WhatsApp Expands AI Chatbot Access to Brazilian Market for a Fee",
-            "content": "Meta is expanding its policy of allowing rival AI companies to offer their chatbots on WhatsApp to Brazilian users, following a similar move in Europe. This decision enables third-party AI developers to integrate their chatbots into the platform, providing users with a broader range of AI-driven services for a fee. The move is part of Meta&#x27;s strategy to diversify offerings and enhance user engagement on WhatsApp. This change could significantly impact local AI developers and businesses looking to leverage WhatsApp&#x27;s extensive user base in Brazil. Users should watch for new chatbot options and consider potential privacy implications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/06/after-europe-whatsapp-will-let-rival-ai-companies-offer-chatbots-in-brazil/",
+            "headline": "Spectre I Jammer Aims to Silence AI Wearables—Physics Says No",
+            "title": "Deveillance&#x27;s Spectre I Faces Challenges in Blocking AI Wearables",
+            "content": "Deveillance&#x27;s Spectre I, a device designed to block the always-listening capabilities of AI wearables, faces significant hurdles due to fundamental physics. Developed by a recent Harvard graduate, the Spectre I seeks to empower individuals to control their auditory environment by jamming audio signals. However, the complexity of effectively jamming diverse frequencies used by AI wearables presents a formidable challenge. The device&#x27;s efficacy is limited by the need for precise targeting and the risk of unintended interference with other devices. As AI wearables become more pervasive, the demand for privacy solutions grows, yet the Spectre I highlights the technical difficulties in achieving reliable signal jamming. Users concerned about privacy should stay informed about developments in wearable technology and potential mitigation strategies.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/deveillance-spectre-i/",
             "relatedResources": []
         },
         {
             "date": "Mar 06 2026",
-            "headline": "Intelligent Automation Scaling—Avoid Workflow Disruptions",
-            "title": "Key Strategies for Scaling Intelligent Automation Without Disrupting Workflows",
-            "content": "At the Intelligent Automation Conference, industry leaders emphasized that scaling intelligent automation requires a focus on architectural elasticity rather than just deploying more bots. Many automation initiatives fail to move beyond pilot phases due to inflexible architectures that disrupt live workflows. Experts highlighted the need for adaptive systems that can scale dynamically to meet changing demands without compromising existing processes. Organizations looking to expand their automation efforts should prioritize flexible infrastructure and robust integration capabilities. This approach can help prevent operational bottlenecks and ensure seamless automation scaling.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/scaling-intelligent-automation-without-breaking-live-workflows/",
+            "headline": "LangChain CEO: AI Needs More Than Just Better Models",
+            "title": "Harness Engineering Crucial for AI Agent Deployment, Says LangChain CEO",
+            "content": "LangChain&#x27;s CEO Harrison Chase emphasizes that improving AI models alone is insufficient for successful deployment; the surrounding &quot;harnesses&quot; must evolve as well. In a recent VentureBeat podcast, Chase discussed the concept of &quot;harness engineering,&quot; an extension of context engineering necessary for effective AI agent production. As AI models grow in capability, the infrastructure supporting them must adapt to handle increased complexity and ensure seamless integration into existing systems. This approach is critical for organizations aiming to leverage AI agents in real-world applications, where context and adaptability are key. Professionals should focus on developing robust harness frameworks to maximize AI&#x27;s potential.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/langchains-ceo-argues-that-better-models-alone-wont-get-your-ai-agent-to",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Langchain Analysis",
+                    "url": "/articles/langchain-cve-2025-68664-ai-vulnerability.html",
+                    "icon": "fa-file-alt"
                 },
                 {
-                    "label": "SIEM Comparison: Splunk vs Elastic vs LogRhythm",
-                    "url": "/comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
-                    "icon": "fa-chart-line"
-                }
-            ]
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "Alexa+ Faces User Frustration—Performance Issues Persist",
-            "title": "Alexa+ AI Assistant Struggles with User Experience in Real-World Testing",
-            "content": "Amazon&#x27;s Alexa+ AI assistant, tested on the Echo Show 15, has faced significant user dissatisfaction due to performance issues. Over the course of a month-long trial in a domestic setting, users reported frequent misunderstandings and operational glitches. These challenges highlight ongoing difficulties in delivering reliable voice-activated AI services, even with advanced models like Alexa+. The performance problems could affect Amazon&#x27;s reputation as a leader in smart home technology. Users should be aware of these limitations when integrating Alexa+ into their daily routines and consider alternative solutions if reliability is a priority.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/why-is-amazon-alexa-plus-so-bad/",
-            "relatedResources": [
-                {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
@@ -179,79 +152,75 @@ const websiteContent = {
         },
         {
             "date": "Mar 06 2026",
-            "headline": "Block CEO Dorsey—Layoffs to Rebuild as &quot;Intelligence&quot;",
-            "title": "Jack Dorsey Explains Block&#x27;s Workforce Reduction Strategy",
-            "content": "In a candid interview with WIRED, Jack Dorsey, cofounder and CEO of Block, explained the rationale behind cutting 40% of the company&#x27;s workforce. Dorsey aims to transform Block into an &quot;intelligence,&quot; focusing on AI-driven innovation and efficiency. The layoffs are part of a broader strategy to streamline operations and invest in advanced technologies. This significant restructuring reflects a growing trend among tech companies to prioritize AI capabilities over traditional business models. Employees and stakeholders should prepare for further changes as Block shifts towards a more AI-centric approach.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/jack-dorsey-explains-block-layoffs/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "Rowspace Raises $50M—Revolutionizing Private Equity with AI",
-            "title": "Rowspace Launches with $50M to Enhance AI in Private Equity",
-            "content": "Rowspace, a new venture in the private equity space, has launched with $50 million in funding to address the challenges of scaling judgment-based decisions using AI. The firm aims to integrate decades of scattered data, including deal memos and partner notes, into a cohesive AI-driven system. This approach could revolutionize how private equity firms evaluate and execute deals, offering a more efficient and data-driven decision-making process. Industry professionals should watch Rowspace&#x27;s progress as it attempts to bridge the gap between traditional financial judgment and modern AI capabilities.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/rowspace-50m-ai-private-equity-sequoia-emergence/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "US Eyes Tough New Chip Export Controls Worldwide",
-            "title": "US Considers Comprehensive Chip Export Controls in Draft Proposal",
-            "content": "The U.S. government is reportedly considering sweeping new controls on chip exports that would involve oversight of every sale, regardless of origin. This draft proposal aims to tighten regulations amidst growing concerns over global semiconductor supply chains and national security. If implemented, the policy could significantly impact international tech companies and their ability to conduct business with U.S. partners. Industry leaders should prepare for potential disruptions and consider diversifying supply chain strategies to mitigate risks associated with increased regulatory scrutiny.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/05/us-reportedly-considering-sweeping-new-chip-export-controls/",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
-            "date": "Mar 05 2026",
-            "headline": "ByteDance&#x27;s Seedance 2.0 Stumbles—Compute and Copyright Issues",
-            "title": "ByteDance&#x27;s AI Model Faces Compute and Copyright Challenges",
-            "content": "ByteDance&#x27;s latest AI video model, Seedance 2.0, is encountering significant hurdles due to compute capacity limitations and copyright concerns. The model&#x27;s heavy demand has strained ByteDance&#x27;s infrastructure, leading to performance bottlenecks. Additionally, copyright complaints have surfaced, complicating the model&#x27;s deployment and usage. These challenges highlight the difficulties tech companies face when scaling AI models amidst legal and technical constraints. Stakeholders should monitor ByteDance&#x27;s response to these issues as they work to optimize infrastructure and address legal challenges.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/made-in-china-bytedances-ai-ambitions-are-being-hampered-by-compute-restraints/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "Anthropic Fights Back—Challenges DOD&#x27;s Risk Label in Court",
-            "title": "Anthropic to Legally Contest DOD&#x27;s Supply-Chain Risk Designation",
-            "content": "Anthropic CEO Dario Amodei announced plans to legally challenge the Department of Defense&#x27;s (DOD) designation of the AI company as a supply-chain risk. The DOD&#x27;s label could restrict Anthropic&#x27;s business operations with government agencies, but Amodei argues that most of their clients remain unaffected. The conflict centers around Anthropic&#x27;s acceptable use policies, which the DOD claims could pose a risk to national security. This legal battle underscores the growing tension between AI firms and government regulations, particularly as AI technologies become more integral to defense strategies. Industry observers should monitor this case closely, as it may set precedents for future government interactions with AI companies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/05/anthropic-to-challenge-dods-supply-chain-label-in-court/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "Google Workspace CLI—Reviving Command Line for AI Agents",
-            "title": "Google Workspace CLI Integrates Gmail, Docs, and More for AI Efficiency",
-            "content": "Google has launched a command-line interface (CLI) for Google Workspace, allowing AI agents to interact with Gmail, Docs, Sheets, and other applications via code commands. This development revives the traditional non-graphical interface, making it a vital tool for agentic AI systems that require streamlined data processing capabilities. The CLI supports automation and integration, facilitating more efficient workflows for developers and AI researchers. As coding becomes increasingly central to AI operations, this tool could significantly enhance productivity and flexibility in managing complex tasks. Users and developers are encouraged to explore the CLI to leverage its potential in optimizing AI-driven processes.",
+            "headline": "MIT Technique Cuts LLM Memory Needs by 50x—No Accuracy Loss",
+            "title": "MIT Unveils KV Cache Compaction Technique for LLM Efficiency",
+            "content": "Researchers at MIT have developed a novel KV cache compaction technique that reduces memory usage in large language models (LLMs) by 50 times without sacrificing accuracy. This breakthrough addresses the memory bottleneck faced by enterprise AI applications handling large documents or tasks with long horizons. The KV cache, which stores the model&#x27;s working memory, can now be compacted efficiently, allowing for more extended context processing without increased resource demands. This advancement is particularly beneficial for organizations utilizing LLMs in data-intensive environments. AI developers should explore integrating this technique to enhance model performance and scalability.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/google-workspace-cli-brings-gmail-docs-sheets-and-more-into-a-common",
+            "sourceUrl": "https://venturebeat.com/orchestration/new-kv-cache-compaction-technique-cuts-llm-memory-50x-without-accuracy-loss",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Grammarly&#x27;s Expert Review Uses Identities Without Consent",
+            "title": "Grammarly Faces Backlash Over Unapproved Use of Expert Identities",
+            "content": "Grammarly&#x27;s &quot;expert review&quot; feature is under scrutiny for using identities of subject matter experts without permission, including deceased individuals. This feature offers writing advice &quot;inspired by&quot; experts, but recent tests revealed unexpected and unauthorized expert suggestions. The practice raises ethical concerns about consent and intellectual property, particularly as AI tools increasingly draw from diverse data sources. Users and experts alike are questioning Grammarly&#x27;s transparency and accountability in representing expert input. Those utilizing Grammarly&#x27;s services should be aware of these practices and consider the implications for both privacy and intellectual property rights.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/890921/grammarly-ai-expert-reviews",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Google CLI Tool Integrates OpenClaw with Workspace Data",
+            "title": "Google Releases Command-Line Tool for OpenClaw Workspace Integration",
+            "content": "Google has introduced a command-line interface (CLI) tool to facilitate the integration of OpenClaw into Google Workspace data, enhancing AI capabilities within the platform. While not yet an official Google product, this tool streamlines the process of connecting AI functionalities to Workspace APIs, potentially expanding the scope of automation and data analysis. The CLI tool could significantly simplify the deployment of AI models in enterprise environments, allowing for more efficient data processing and insights generation. Organizations using Google Workspace should explore this tool to leverage AI more effectively in their workflows.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/03/googles-new-command-line-tool-can-plug-openclaw-into-your-workspace-data/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
                     "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Google Open-Sources LLM-Driven Memory Agent—No More Vector DBs",
+            "title": "Google PM Open-Sources Always On Memory Agent for Persistent Memory",
+            "content": "Google&#x27;s senior AI product manager Shubham Saboo has open-sourced the &quot;Always On Memory Agent,&quot; a tool designed to replace traditional vector databases with LLM-driven persistent memory. Published on the Google Cloud Platform GitHub, this agent addresses persistent memory challenges in AI agent design, offering a new approach to data retention and retrieval. By leveraging large language models (LLMs), the agent provides a more dynamic and efficient memory solution for AI applications. This development invites AI engineers to contribute and innovate on the platform, potentially transforming how memory is managed in AI systems.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/google-pm-open-sources-always-on-memory-agent-ditching-vector-databases-for",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Anthropic Claude Still Available via Microsoft, Google",
+            "title": "Anthropic&#x27;s Claude Remains Accessible Despite U.S. Defense Dispute",
+            "content": "Despite a dispute between the U.S. Department of War and Anthropic, the AI model Claude remains available to non-defense customers through Microsoft and Google products. The conflict, centered on Anthropic&#x27;s contractual obligations, does not affect other companies utilizing Claude for commercial applications. This assurance from Microsoft, Google, and Amazon highlights the model&#x27;s continued availability for enterprise use outside the defense sector. Organizations employing Claude for AI-driven tasks can proceed without interruption, though they should stay informed about any potential changes in availability due to ongoing negotiations.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/06/microsoft-anthropic-claude-remains-available-to-customers-except-the-defense-department/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
         }
