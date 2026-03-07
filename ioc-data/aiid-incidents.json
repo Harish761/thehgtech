@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1392",
+      "incident_id": 1392,
+      "title": "Ars Technica Retracted Article After Purportedly AI-Generated Text Was Presented as Direct Quotes Fr",
+      "date": "2026-03-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1391",
       "incident_id": 1391,
       "title": "Azerbaijani Media Agency Reportedly Warned Purported Deepfake Videos Attributed to Defense and Forei",
@@ -156,14 +164,6 @@
       "id": "AIID-1390",
       "incident_id": 1390,
       "title": "DHS Agents Reportedly Threatened Legal Observers With 'Domestic Terrorist' Database While Using Purp",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1392",
-      "incident_id": 1392,
-      "title": "Ars Technica Reportedly Retracted Article After Purportedly AI-Generated Text Was Presented as Direc",
       "date": "2026-02-28",
       "category": "other",
       "severity": "medium"
@@ -982,5 +982,5 @@
     "last7Days": 22,
     "last30Days": 40
   },
-  "lastUpdated": "2026-03-07T14:16:17.589655+05:30"
+  "lastUpdated": "2026-03-07T18:36:38.390255+05:30"
 }
