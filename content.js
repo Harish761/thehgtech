@@ -5,30 +5,17 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 07 2026",
-            "headline": "100+ GitHub Repos Host BoryptGrab—Data Theft Malware Spreads",
-            "title": "Over 100 GitHub Repositories Distributing BoryptGrab Stealer Targeting User Data",
-            "content": "Security researchers have identified over 100 GitHub repositories distributing BoryptGrab, a malicious tool designed to steal browser and cryptocurrency wallet data, alongside system information and user files. The malware targets sensitive data stored in browsers and crypto wallets, posing significant risks to individual privacy and financial security. This widespread distribution highlights the increasing use of public code repositories to propagate malware. Developers and security professionals should be vigilant about the integrity of code dependencies and regularly audit their projects for unauthorized modifications. Immediate action is advised to review and secure any potentially affected systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-100-github-repositories-distributing-boryptgrab-stealer/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 07 2026",
-            "headline": "Pentagon CTO Clashes with Anthropic Over AI Warfare Autonomy",
-            "title": "Pentagon CTO Emil Michael Clashes with Anthropic on AI Warfare Autonomy Levels",
-            "content": "Pentagon CTO Emil Michael has reported disagreements with AI company Anthropic regarding the use of autonomous systems in military operations. The military is working on procedures to enable varying levels of autonomy based on the assessed risk, aiming to balance operational efficiency with ethical considerations. This development underscores the ongoing debate over the role of AI in warfare and the challenges of integrating advanced technologies into defense strategies. The discussions reflect broader concerns about the ethical implications and control of autonomous weapons systems. Stakeholders in AI and defense sectors should monitor these developments closely.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/pentagons-chief-tech-officer-says-he-clashed-with-ai-company-anthropic-over-autonomous-warfare/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 07 2026",
-            "headline": "Anthropic AI Uncovers 22 Firefox Vulnerabilities—14 Rated High",
-            "title": "Anthropic&#x27;s Claude Opus 4.6 AI Model Finds 22 Firefox Vulnerabilities",
-            "content": "Anthropic has announced the discovery of 22 security vulnerabilities in the Firefox web browser using its Claude Opus 4.6 AI model. The findings, part of a security collaboration with Mozilla, include 14 high-severity vulnerabilities that could potentially be exploited to compromise user systems. Mozilla has addressed these issues in the latest Firefox update, urging users to upgrade promptly to mitigate risks. This collaboration highlights the growing role of AI in identifying and resolving software vulnerabilities, enhancing cybersecurity measures. Organizations should consider leveraging AI tools for proactive vulnerability management.",
+            "headline": "OpenAI Codex Flags 10,561 Critical Bugs—Developers Must Act",
+            "title": "OpenAI Codex Security Uncovers Thousands of High-Severity Vulnerabilities",
+            "content": "OpenAI has launched Codex Security, an AI-driven security agent designed to detect and propose fixes for software vulnerabilities. In its initial rollout, Codex Security scanned 1.2 million code commits and identified 10,561 high-severity issues. This new feature is available to ChatGPT Pro, Enterprise, Business, and Edu users, providing developers with automated insights into potential security flaws. The tool aims to streamline vulnerability management by validating findings and suggesting remediation steps. As AI continues to integrate into cybersecurity, developers are urged to leverage such tools to enhance code security and reduce the risk of exploitation.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/anthropic-finds-22-firefox.html",
+            "sourceUrl": "https://thehackernews.com/2026/03/openai-codex-security-scanned-12.html",
             "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "LLM Security & Prompt Injection",
                     "url": "/guides/llm-security-prompt-injection.html",
@@ -38,58 +25,90 @@ const websiteContent = {
         },
         {
             "date": "Mar 07 2026",
-            "headline": "YARA-X 1.14.0 Released—4 Improvements, 2 Bugfixes",
-            "title": "YARA-X Version 1.14.0 Released with Key Improvements and Bugfixes",
-            "content": "The latest release of YARA-X, version 1.14.0, introduces four notable improvements and addresses two critical bugfixes, enhancing the tool&#x27;s capability to detect and classify malware. YARA-X is widely used by security professionals to identify and categorize malicious software through pattern matching. This update underscores the importance of maintaining up-to-date security tools to effectively combat evolving threats. Users are encouraged to upgrade to version 1.14.0 to benefit from enhanced performance and reliability. Staying current with tool updates is crucial for maintaining robust cybersecurity defenses.",
-            "source": "SANS Internet Storm Center, InfoCON: green",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32774",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "DHS CISO and Deputy Exit Amid IT Leadership Overhaul",
-            "title": "DHS CISO and Deputy CISO Depart Amid IT Leadership Restructuring",
-            "content": "The Department of Homeland Security (DHS) is undergoing significant IT leadership changes as both the Chief Information Security Officer (CISO) and Deputy CISO have exited their positions. This move is part of a broader initiative to consolidate IT and cybersecurity functions at DHS headquarters, aiming to streamline operations and enhance security posture. The overhaul reflects ongoing efforts to adapt to the rapidly changing cybersecurity landscape and improve the department&#x27;s resilience against threats. Organizations should observe these changes as potential indicators of evolving government cybersecurity strategies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://fedscoop.com/dhs-it-leadership-overhaul-includes-ciso-deputy-ciso/",
+            "headline": "Termite Ransomware Uses ClickFix—CastleRAT Attacks Surge",
+            "title": "Termite Ransomware Leveraging ClickFix Technique in CastleRAT Attacks",
+            "content": "The Velvet Tempest threat group has been linked to a series of ransomware attacks utilizing the ClickFix technique to deploy DonutLoader malware and the CastleRAT backdoor. This method involves using legitimate Windows utilities to bypass security measures and install malicious payloads. The campaign targets organizations by exploiting vulnerabilities in their systems, leading to potential data breaches and operational disruptions. Security professionals are advised to review their Windows utility usage and implement robust monitoring to detect unusual activities. This attack underscores the evolving tactics of ransomware actors who seek to evade detection.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/termite-ransomware-breaches-linked-to-clickfix-castlerat-attacks/",
             "relatedResources": [
                 {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
                 }
             ]
         },
         {
-            "date": "Mar 06 2026",
-            "headline": "$120 Phishing Kit Tycoon 2FA Dismantled in Global Takedown",
-            "title": "Global Operation Dismantles Tycoon 2FA Phishing-as-a-Service Platform",
-            "content": "A coordinated effort between law enforcement and cybersecurity firms has successfully dismantled Tycoon 2FA, a notorious phishing-as-a-service platform. Priced at $120, this kit enabled attackers to bypass multi-factor authentication (MFA), posing serious risks to online security. The takedown highlights the persistent threat of phishing and the importance of collaborative efforts to combat cybercrime. Organizations are advised to strengthen their MFA implementations and remain vigilant against phishing attempts. The operation exemplifies the effectiveness of public-private partnerships in addressing complex cybersecurity challenges.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hackers-bypassed-mfa-120-phishing-kit-global-takedown-shut-down",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "CISO-Board Talks on Cyber Risk—Just 30 Minutes Per Quarter",
-            "title": "Report Highlights Insufficient CISO-Board Discussions on Cyber Risk Management",
-            "content": "A recent report from IANS, Artico Search, and The CAP reveals that enterprise boards spend only 30 minutes per quarter discussing cyber risk with their Chief Information Security Officers (CISOs). This limited engagement is concerning given the increasing frequency and sophistication of AI-driven cyberattacks. Effective communication between CISOs and boards is essential for informed decision-making and robust cybersecurity strategies. Organizations should prioritize extended and more detailed discussions on cyber risk to ensure comprehensive understanding and preparedness. The report urges boards to allocate more time and resources to cybersecurity matters.",
-            "source": "Trump’s cyber strategy emphasizes offensive operations, deregulation, AI | CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4141873/only-30-minutes-per-quarter-on-cyber-risk-why-ciso-board-conversations-are-falling-short.html",
+            "date": "Mar 07 2026",
+            "headline": "US Cyber Strategy—AI, Infrastructure, and Adversaries in Focus",
+            "title": "US Cyber Strategy Emphasizes AI, Infrastructure Protection, and Deterrence",
+            "content": "The United States has unveiled a comprehensive cyber strategy under President Donald Trump, focusing on deterring cyber adversaries and safeguarding critical infrastructure. Key elements include modernizing federal networks and investing in emerging technologies like artificial intelligence and post-quantum cryptography. The strategy aims to enhance national security by prioritizing offensive cyber operations and reducing regulatory burdens. This marks a significant shift in U.S. cybersecurity policy, reflecting the growing importance of technological advancements in national defense. Organizations should align their security frameworks with these strategic priorities to mitigate risks and enhance resilience.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/us-cyber-strategy-targets-adversaries-critical-infrastructure-and-emerging-technologies/",
             "relatedResources": []
         },
         {
             "date": "Mar 07 2026",
-            "headline": "FBI Probes Cyber Intrusion in Surveillance Data System",
-            "title": "FBI Investigates Cyber Activity on Sensitive Surveillance Information System",
-            "content": "The FBI is currently investigating suspicious cyber activity within a system that holds sensitive surveillance data, as confirmed by a notification sent to Congress members. The scope and impact of this potential breach are under assessment, with the agency working to determine if any classified information has been compromised. This incident underscores ongoing vulnerabilities in systems handling critical intelligence. The FBI advises all agencies managing sensitive data to review their security protocols and ensure robust defenses against unauthorized access. The investigation highlights the need for continuous monitoring and rapid response capabilities in safeguarding national security assets.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fbi-investigating-suspicious-cyber-activity-on-system-holding-sensitive-surveillance-information/",
+            "headline": "Microsoft Warns: AI Fuels Sophisticated Cyberattacks",
+            "title": "Microsoft Highlights AI&#x27;s Role in Enhancing Cyberattack Sophistication",
+            "content": "Microsoft has reported that threat actors are increasingly leveraging artificial intelligence to enhance the effectiveness of cyberattacks. AI is being used to automate and scale malicious activities, lower technical barriers, and accelerate attack timelines. This trend is evident across all stages of cyberattacks, from initial intrusion to data exfiltration. Security professionals are urged to integrate AI-driven defenses and continuously update their threat models to counteract these advanced tactics. The rise of AI in cybercrime highlights the need for adaptive security measures that can respond to evolving threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-hackers-abusing-ai-at-every-stage-of-cyberattacks/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Trump Cyber Strategy—Offensive Ops and AI at Core",
+            "title": "Trump&#x27;s Cyber Strategy Prioritizes Offensive Operations and AI Integration",
+            "content": "The White House has released President Donald Trump&#x27;s cybersecurity strategy, emphasizing offensive cyber operations and deregulation. This seven-page blueprint, developed by the Office of the National Cyber Director, marks a departure from previous defensive-focused policies. The strategy highlights the integration of artificial intelligence to enhance offensive capabilities and streamline regulatory processes. As the U.S. pivots towards a more aggressive cybersecurity posture, organizations should anticipate changes in compliance requirements and prepare for increased government-led cyber initiatives. This approach reflects a broader trend towards leveraging technology for national security.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4141989/trumps-cyber-strategy-emphasizes-offensive-operations-deregulation-ai.html",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "Trump&#x27;s Cyber Strategy Unveiled—New Executive Order Issued",
+            "title": "Trump Administration Releases Cyber Strategy and Executive Order on Cybercrime",
+            "content": "The Trump administration has announced a new cybersecurity strategy alongside an executive order targeting cybercrime and fraud. This initiative seeks to bolster the U.S. cyber defense framework by implementing stricter measures against cybercriminal activities. The strategy underscores the importance of offensive cyber operations and regulatory streamlining to protect national interests. With cyber threats on the rise, the executive order aims to enhance law enforcement capabilities and improve collaboration with international partners. Organizations are encouraged to review their cybersecurity policies in light of these developments to ensure compliance and resilience.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/trump-cybersecurity-strategy/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 06 2026",
+            "headline": "ClickFix Phishing Tactics Evolve—Microsoft Alerts",
+            "title": "Microsoft Warns of New ClickFix Phishing Techniques to Evade Detection",
+            "content": "Microsoft has identified a new phishing tactic employed by threat actors using the ClickFix technique. Instead of the traditional method of instructing victims to run malicious commands via the Windows Run dialog, attackers are now using alternative approaches to deceive users. This evolution in phishing strategies aims to bypass security measures and increase the likelihood of successful malware installation. Organizations should educate employees about these tactics and enhance their email filtering systems to detect and block such phishing attempts. Staying informed about these evolving threats is crucial for maintaining robust cybersecurity defenses.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4141923/clickfix-attackers-using-new-tactic-to-evade-detection-says-microsoft.html",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
                 }
             ]
         },
@@ -120,51 +139,36 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 06 2026",
-            "headline": "Pentagon&#x27;s AI Surveillance of Americans—Legal or Not?",
-            "title": "Legal Ambiguities in Pentagon&#x27;s AI Surveillance of U.S. Citizens",
-            "content": "The Department of Defense&#x27;s public dispute with AI company Anthropic has spotlighted a critical legal question: Can the U.S. government legally conduct mass surveillance on its citizens using AI? The answer remains unclear, as existing laws do not explicitly address the capabilities and reach of modern AI technologies. This debate emerges amid heightened concerns about privacy and civil liberties, especially as AI becomes more integrated into national security operations. The Pentagon&#x27;s activities raise questions about oversight and the potential for misuse of AI in domestic surveillance. Legal experts and policymakers are urged to clarify these ambiguities to ensure both national security and the protection of individual rights.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/06/1134012/is-the-pentagon-allowed-to-surveil-americans-with-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "Generative AI Hype—Confusion and Controversy Persist",
-            "title": "Generative AI Sparks Confusion Amidst Hype and Criticism",
-            "content": "As generative AI technologies are increasingly integrated into various sectors, public understanding remains muddled by both exaggerated claims and dire warnings. The fervor surrounding these AI advancements often obscures their actual capabilities and limitations. Proponents tout transformative potential, while critics warn of unchecked risks, creating a polarized discourse. This environment complicates efforts to educate the public and implement responsible AI policies. Industry stakeholders and policymakers must navigate these narratives carefully to foster informed discussions and guide the ethical deployment of AI technologies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/890806/the-ai-doc-or-how-i-became-an-apocaloptimist-review",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "Claude Uncovers 22 Firefox Vulnerabilities—14 High-Severity",
-            "title": "Anthropic&#x27;s Claude Identifies 22 Vulnerabilities in Firefox",
-            "content": "In collaboration with Mozilla, Anthropic&#x27;s AI system, Claude, has discovered 22 vulnerabilities in the Firefox browser, with 14 deemed high-severity. This finding underscores the critical role AI can play in cybersecurity by identifying potential attack vectors before they are exploited. The vulnerabilities affect recent versions of Firefox and could allow attackers to execute arbitrary code or escalate privileges. Mozilla is working swiftly to patch these issues, emphasizing the importance of continuous security assessments in software development. Users are advised to update their browsers promptly to mitigate potential risks.",
+            "date": "Mar 08 2026",
+            "headline": "Sundar Pichai&#x27;s $692M Package—Performance Tied to Waymo, Wing",
+            "title": "Google Awards Sundar Pichai $692 Million Pay Package Linked to Performance",
+            "content": "Google has announced a staggering $692 million pay package for its CEO, Sundar Pichai, largely tied to performance metrics involving Waymo, the company&#x27;s autonomous vehicle division, and Wing, its drone delivery venture. This compensation package includes new stock incentives aimed at driving growth and innovation in these key areas. The decision reflects Google&#x27;s strategic focus on expanding its technological footprint in autonomous systems and delivery services. Industry analysts suggest this move underscores the increasing importance of these divisions in Google&#x27;s future growth plans. Stakeholders are advised to monitor developments in Waymo and Wing as indicators of potential returns on this investment.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/06/anthropics-claude-found-22-vulnerabilities-in-firefox-over-two-weeks/",
+            "sourceUrl": "https://techcrunch.com/2026/03/07/google-just-gave-sundar-pichai-a-692m-pay-package/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 07 2026",
+            "headline": "Grammarly&#x27;s &#x27;Expert Review&#x27; Lacks Real Experts",
+            "title": "Grammarly&#x27;s &#x27;Expert Review&#x27; Feature Criticized for Absence of True Experts",
+            "content": "Grammarly&#x27;s latest feature, &quot;Expert Review,&quot; claims to enhance users&#x27; writing by leveraging insights from renowned writers and thinkers. However, critics argue that the feature falls short due to the absence of actual experts in its review process. The tool, which positions itself as a unique offering in the AI-driven writing assistance market, has faced scrutiny from tech journalists and users alike. As AI writing tools become more prevalent, the credibility and authenticity of these features are increasingly under the spotlight. Users should critically evaluate the sources of advice provided by such tools to ensure quality and reliability.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/07/grammarlys-expert-review-is-just-missing-the-actual-experts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 07 2026",
+            "headline": "LangChain CEO: Models Need More than Just Smarts",
+            "title": "LangChain CEO Highlights Need for Evolved AI &#x27;Harness Engineering&#x27;",
+            "content": "Harrison Chase, co-founder and CEO of LangChain, emphasizes that merely improving AI models is insufficient for bringing AI agents to production. During a recent podcast, Chase introduced the concept of &quot;harness engineering,&quot; an evolution of context engineering, which involves developing robust frameworks around AI models. As these models grow smarter, the need for sophisticated harnesses to manage and deploy them becomes critical. This approach ensures that AI systems are not only powerful but also practical and reliable in real-world applications. Developers should focus on both model enhancement and the infrastructure supporting these models for successful deployment.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/langchains-ceo-argues-that-better-models-alone-wont-get-your-ai-agent-to",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Langchain Analysis",
+                    "url": "/articles/langchain-cve-2025-68664-ai-vulnerability.html",
+                    "icon": "fa-file-alt"
                 },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Mar 06 2026",
-            "headline": "Pentagon Flags Anthropic—Supply-Chain Risk Declared",
-            "title": "Anthropic&#x27;s Pentagon Contract Collapse Highlights Federal Contracting Risks",
-            "content": "The Pentagon has labeled Anthropic a supply-chain risk following disagreements over military control of AI models, including their use in autonomous weapons and domestic surveillance. This designation comes after the collapse of a $200 million contract, reflecting the challenges startups face in navigating federal contracts. The situation illustrates the complexities of balancing innovation with national security concerns. As the Department of Defense seeks alternative partners, startups must carefully assess the implications of federal collaborations on their operations and ethical standards.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/anthropics-pentagon-deal-is-a-cautionary-tale-for-startups-chasing-federal-contracts/",
-            "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -173,21 +177,21 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Mar 06 2026",
-            "headline": "Anthropic vs. Pentagon—Contract Fallout and Market Dynamics",
-            "title": "Anthropic-Pentagon Dispute Highlights Competitive and Regulatory Challenges",
-            "content": "The breakdown of Anthropic&#x27;s $200 million contract with the Pentagon has broader implications for the AI industry. The designation of Anthropic as a supply-chain risk underscores the tension between innovation and regulatory compliance. This case serves as a cautionary tale for tech companies pursuing government contracts, emphasizing the need for clear agreements on AI usage and control. The incident also highlights the competitive landscape, where companies must navigate both market forces and regulatory scrutiny to succeed.",
+            "date": "Mar 07 2026",
+            "headline": "OpenAI Robotics Lead Resigns Over Pentagon Deal",
+            "title": "OpenAI&#x27;s Caitlin Kalinowski Resigns Following Controversial Pentagon Agreement",
+            "content": "Caitlin Kalinowski, the head of OpenAI&#x27;s robotics team, has resigned in response to the company&#x27;s contentious agreement with the U.S. Department of Defense. The deal, which has sparked internal and external debate, involves collaboration on AI technologies for defense applications. Kalinowski&#x27;s departure highlights the ethical dilemmas faced by tech companies venturing into military partnerships. Her resignation signals potential unrest within OpenAI regarding the implications of such collaborations. Stakeholders should consider the ethical and social responsibilities associated with AI development, especially when engaging with defense sectors.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/anthropic-vs-the-pentagon-the-saaspocalypse-and-why-competitions-is-good-actually/",
+            "sourceUrl": "https://techcrunch.com/2026/03/07/openai-robotics-lead-caitlin-kalinowski-quits-in-response-to-pentagon-deal/",
             "relatedResources": []
         },
         {
-            "date": "Mar 06 2026",
-            "headline": "Claude&#x27;s User Base Surges Post-Pentagon Deal Collapse",
-            "title": "Anthropic&#x27;s Claude Sees User Growth Despite Pentagon Deal Issues",
-            "content": "Following the collapse of its Pentagon contract, Anthropic&#x27;s AI application, Claude, is experiencing a surge in consumer adoption, surpassing even ChatGPT in new installs and daily active users. This growth indicates strong market confidence in Claude&#x27;s capabilities, despite the recent federal contract setbacks. The increase in user engagement suggests that consumer trust in AI technologies remains robust, even amidst regulatory and contractual challenges. Companies are encouraged to focus on user experience and trust-building to maintain competitive advantage in the AI market.",
+            "date": "Mar 07 2026",
+            "headline": "OpenAI Delays ChatGPT &#x27;Adult Mode&#x27; Again",
+            "title": "OpenAI Postpones Launch of ChatGPT&#x27;s &#x27;Adult Mode&#x27; Feature",
+            "content": "OpenAI has once again delayed the release of ChatGPT&#x27;s &#x27;Adult Mode,&#x27; a feature designed to provide verified adult users with access to erotica and other adult content. Originally scheduled for a December launch, the feature&#x27;s postponement raises questions about the challenges of content moderation and user verification in AI systems. This delay reflects ongoing concerns about ensuring safe and responsible use of AI-generated content. Users anticipating the feature should remain informed about OpenAI&#x27;s progress and any potential implications for content accessibility and moderation.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/06/claudes-consumer-growth-surge-continues-after-pentagon-deal-debacle/",
+            "sourceUrl": "https://techcrunch.com/2026/03/07/openai-delays-chatgpts-adult-mode-again/",
             "relatedResources": [
                 {
                     "label": "LLM Security & Prompt Injection",
@@ -197,13 +201,28 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Mar 06 2026",
-            "headline": "City Detect Raises $13M—Expands AI for Urban Safety",
-            "title": "City Detect Secures $13M to Enhance Urban Safety with AI",
-            "content": "City Detect, an AI-driven company focused on urban safety and cleanliness, has successfully raised $13 million in a Series A funding round. Currently operational in 17 cities, including Dallas and Miami, City Detect uses AI technology to help local governments prevent urban decay and maintain public safety. The funding will support the expansion of its services and further development of its technology. As cities increasingly turn to AI solutions for urban management, City Detect&#x27;s growth reflects the broader trend of digital transformation in municipal services.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/06/city-detect-uses-ai-to-help-cities-stay-safe-and-clean/",
+            "date": "Mar 07 2026",
+            "headline": "Optimism and Lobster at OpenClaw Superfan Meetup",
+            "title": "OpenClaw Superfan Meetup in Manhattan Brims with Optimism and Lobsters",
+            "content": "OpenClaw enthusiasts gathered in Manhattan for a vibrant event filled with optimism and lobster-themed festivities. Attendees were greeted by a host wearing a plush lobster headdress, setting the tone for a unique experience at ClawCon. The event featured colorful lighting, lobster claw headbands, and a sense of community among fans. This gathering highlights the growing culture around AI and robotics, where enthusiasts come together to celebrate technological advancements and shared interests. Participants and fans should look out for future events that foster community engagement and innovation in the tech space.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/890517/openclaw-clawcon-meetup-nyc-open-source-ai",
             "relatedResources": []
+        },
+        {
+            "date": "Mar 07 2026",
+            "headline": "Karpathy: 90% AI Reliability Isn&#x27;t Enough",
+            "title": "Andrej Karpathy&#x27;s &#x27;March of Nines&#x27; Explores AI Reliability Challenges",
+            "content": "Andrej Karpathy&#x27;s concept of the &quot;March of Nines&quot; highlights the challenges in achieving high reliability in AI systems. He argues that reaching 90% reliability is merely the first step, as each additional percentage point requires significant engineering effort. This framework is particularly relevant for enterprises relying on AI for critical applications, where even minor errors can have substantial consequences. Karpathy&#x27;s insights underscore the need for ongoing investment in AI development to achieve higher reliability thresholds. Organizations should prioritize continuous improvement and rigorous testing to enhance AI system performance.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/karpathys-march-of-nines-shows-why-90-ai-reliability-isnt-even-close-to",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
         }
     ],
     "articles": {},
