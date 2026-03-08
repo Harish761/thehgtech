@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-03-08T02:09:36.053952",
+  "last_updated": "2026-03-08T12:50:57.464397",
   "period": "Last 7 days",
-  "total_groups": 26,
+  "total_groups": 27,
   "total_victims": 300,
   "groups": [
     {
@@ -97,7 +97,7 @@
     },
     {
       "name": "Dragonforce",
-      "count": 36,
+      "count": 35,
       "victims": [
         {
           "name": "Northern Family Farms",
@@ -179,7 +179,7 @@
       "daily_counts": [
         0,
         4,
-        12,
+        11,
         0,
         18,
         2,
@@ -540,7 +540,7 @@
     },
     {
       "name": "Play",
-      "count": 21,
+      "count": 20,
       "victims": [
         {
           "name": "T a Solberg",
@@ -619,7 +619,7 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        7,
+        6,
         2,
         0,
         0,
@@ -1283,6 +1283,41 @@
         0,
         2,
         0
+      ]
+    },
+    {
+      "name": "Worldleaks",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Sagent Pharmaceuticals",
+          "date": "2026-03-08 10:55:08.957385",
+          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/4963154147",
+          "discovered_date": "2026-03-08T10:55:08.957385"
+        },
+        {
+          "name": "Sagent Pharmaceuticals",
+          "date": "2026-03-08T10:55:08+00:00",
+          "url": "https://www.ransomware.live/id/U2FnZW50IFBoYXJtYWNldXRpY2Fsc0B3b3JsZGxlYWtz",
+          "discovered_date": "2026-03-08T10:55:08+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
