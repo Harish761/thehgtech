@@ -1,9 +1,73 @@
 {
   "incidents": [
     {
+      "id": "AIID-787",
+      "incident_id": 787,
+      "title": "Deepfake ID Sales Allegedly Persist as OnlyFake Reportedly Relaunches with New Fraud Tools",
+      "date": "2026-03-08",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1359",
+      "incident_id": 1359,
+      "title": "Reported Deepfake Influencers on TikTok Allegedly Used to Promote Fraudulent Wellness Products",
+      "date": "2026-03-08",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1392",
       "incident_id": 1392,
       "title": "Ars Technica Retracted Article After Purportedly AI-Generated Text Was Presented as Direct Quotes Fr",
+      "date": "2026-03-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1396",
+      "incident_id": 1396,
+      "title": "Betfair's Machine-Learning Risk System Reportedly Failed to Flag Luke Ashton Before Gambling-Related",
+      "date": "2026-03-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1397",
+      "incident_id": 1397,
+      "title": "Deepfakes Reportedly Impersonated David Taylor-Robinson and Other UK Health Experts to Promote Welln",
+      "date": "2026-03-07",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1398",
+      "incident_id": 1398,
+      "title": "Purported Deepfake Video Reportedly Misrepresented CBS Anchor Doug Dunbar and Frisco, Texas, Stabbin",
+      "date": "2026-03-07",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1399",
+      "incident_id": 1399,
+      "title": "South Korean Woman Allegedly Used ChatGPT to Assess Lethality of Drug-and-Alcohol Mixtures Before Tw",
+      "date": "2026-03-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1400",
+      "incident_id": 1400,
+      "title": "West Midlands Police Reportedly Relied on Erroneous Copilot-Generated Intelligence in Maccabi Tel Av",
+      "date": "2026-03-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1401",
+      "incident_id": 1401,
+      "title": "Washington State DOL's AI Phone System Reportedly Gave English Responses in a Spanish Accent to Call",
       "date": "2026-03-07",
       "category": "other",
       "severity": "medium"
@@ -455,14 +519,6 @@
       "date": "2026-01-31",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1359",
-      "incident_id": 1359,
-      "title": "Reported Deepfake Influencers on TikTok Allegedly Used to Promote Fraudulent Wellness Products",
-      "date": "2026-01-31",
-      "category": "deepfake",
-      "severity": "high"
     },
     {
       "id": "AIID-1348",
@@ -978,9 +1034,9 @@
     }
   ],
   "stats": {
-    "total": 122,
-    "last7Days": 4,
-    "last30Days": 40
+    "total": 129,
+    "last7Days": 12,
+    "last30Days": 48
   },
-  "lastUpdated": "2026-03-08T02:07:01.048263+05:30"
+  "lastUpdated": "2026-03-08T08:23:42.543975+05:30"
 }
