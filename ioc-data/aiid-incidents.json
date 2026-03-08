@@ -17,6 +17,22 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1402",
+      "incident_id": 1402,
+      "title": "DOGE Reportedly Relied on Unvetted ChatGPT Outputs in Canceling National Endowment for the Humanitie",
+      "date": "2026-03-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1403",
+      "incident_id": 1403,
+      "title": "NZ News Hub Reportedly Used AI-Rewritten News Posts and Synthetic Images to Mislead New Zealand Face",
+      "date": "2026-03-08",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1392",
       "incident_id": 1392,
       "title": "Ars Technica Retracted Article After Purportedly AI-Generated Text Was Presented as Direct Quotes Fr",
@@ -1034,9 +1050,9 @@
     }
   ],
   "stats": {
-    "total": 129,
-    "last7Days": 12,
-    "last30Days": 48
+    "total": 131,
+    "last7Days": 14,
+    "last30Days": 50
   },
-  "lastUpdated": "2026-03-08T18:38:38.990585+05:30"
+  "lastUpdated": "2026-03-08T22:12:08.421044+05:30"
 }
