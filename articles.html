@@ -2883,10 +2883,12 @@
                 // Populate category tabs
                 populateCategoryTabs(categories);
 
-                // Render featured
-                renderFeatured(allArticles[0]);
+                // Render featured — pick the first authored article (with externalUrl), not bot reports
+                const featuredArticle = allArticles.find(a => a.externalUrl) || allArticles[0];
+                window._featuredArticleId = featuredArticle.id;
+                renderFeatured(featuredArticle);
 
-                // Render articles (skip first since it's featured)
+                // Render articles (skip featured)
                 renderArticles();
                 updateResultsCount();
             } catch (error) {
@@ -2957,9 +2959,9 @@
         function renderArticles() {
             const grid = document.getElementById('articlesGrid');
 
-            // Skip the first article (featured) from the list
+            // Skip the featured article from the grid
             const displayArticles = currentCategory === 'all' && document.getElementById('searchInput').value === ''
-                ? filteredArticles.slice(1)
+                ? filteredArticles.filter(a => a.id !== window._featuredArticleId)
                 : filteredArticles;
 
             if (displayArticles.length === 0) {
@@ -3016,8 +3018,9 @@
         function updateResultsCount() {
             const count = filteredArticles.length;
             const total = allArticles.length;
-            const displayCount = currentCategory === 'all' && document.getElementById('searchInput').value === ''
-                ? count - 1
+            const isFeaturedVisible = currentCategory === 'all' && document.getElementById('searchInput').value === '';
+            const displayCount = isFeaturedVisible
+                ? filteredArticles.filter(a => a.id !== window._featuredArticleId).length
                 : count;
             document.getElementById('resultsCount').textContent =
                 count === total ? `Showing ${displayCount} articles` : `${displayCount} of ${total} articles`;
