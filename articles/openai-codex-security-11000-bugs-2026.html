@@ -8,7 +8,18 @@
     <meta name="description"
         content="OpenAI's Codex Security AI agent scanned 1.2 million commits, found 792 critical and 10,561 high-severity vulnerabilities, and earned 14 CVEs in open-source projects including GnuPG, GnuTLS, and GOGS.">
     <meta name="keywords"
-        content="OpenAI Codex Security, AI vulnerability scanner, CVE-2026-24881, GnuPG, GnuTLS, application security, AI AppSec 2026">
+        content="OpenAI Codex Security, AI vulnerability scanner, CVE-2026-24881, GnuPG vulnerability, GnuTLS double free, application security, AI AppSec 2026, cybersecurity news, open source security audit, automated vulnerability detection, SAST AI tool, software vulnerability disclosure, CVE database">
+    <meta name="geo.region" content="US" />
+    <meta name="geo.region" content="GB" />
+    <meta property="article:tag" content="OpenAI" />
+    <meta property="article:tag" content="Codex Security" />
+    <meta property="article:tag" content="CVE-2026-24881" />
+    <meta property="article:tag" content="GnuPG" />
+    <meta property="article:tag" content="GnuTLS" />
+    <meta property="article:tag" content="Application Security" />
+    <meta property="article:tag" content="AI Vulnerability Scanner" />
+    <meta property="article:tag" content="Open Source Security" />
+    <meta property="article:tag" content="SAST" />
     <link rel="canonical" href="https://thehgtech.com/articles/openai-codex-security-11000-bugs-2026.html">
 
     <!-- Open Graph -->
@@ -29,6 +40,8 @@
     <meta property="article:published_time" content="2026-03-09T00:00:00Z">
     <meta property="article:author" content="Harish G">
     <meta property="article:section" content="AI Security">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="en-US">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -686,7 +699,8 @@
                 SSH key management. A stack buffer overflow in <code>gpg-agent</code> (CVE-2026-24881) could potentially
                 allow an attacker to execute arbitrary code during cryptographic operations. GnuPG is installed by
                 default on nearly every Linux distribution and is used by package managers like <code>apt</code> and
-                <code>rpm</code> to verify software signatures.</p>
+                <code>rpm</code> to verify software signatures.
+            </p>
 
             <p><strong>GnuTLS</strong> is a widely-used TLS library that underpins encrypted communications in hundreds
                 of applications. A double-free vulnerability (CVE-2025-32988) and a heap-buffer overflow
