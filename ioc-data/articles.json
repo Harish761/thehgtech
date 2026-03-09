@@ -19,6 +19,67 @@
       "author": "TheHGTech Bot"
     },
     {
+      "id": "openai-codex-security-11000-bugs-2026",
+      "title": "OpenAI Codex Security Finds 11,000 Bugs in 30 Days — 14 CVEs Assigned",
+      "date": "March 09, 2026",
+      "category": "AI Security",
+      "badge": "AI SECURITY",
+      "excerpt": "OpenAI's AI security agent scanned 1.2 million commits, found 792 critical and 10,561 high-severity vulnerabilities, and earned 14 CVEs in open-source projects including GnuPG, GnuTLS, and GOGS.",
+      "image": "images/articles/openai-codex-security-11000-bugs-2026.png",
+      "externalUrl": "articles/openai-codex-security-11000-bugs-2026.html",
+      "tags": [
+        "OpenAI",
+        "Codex Security",
+        "AI AppSec",
+        "GnuPG",
+        "GnuTLS",
+        "CVE-2026-24881",
+        "Vulnerability Scanner"
+      ],
+      "author": "Harish G"
+    },
+    {
+      "id": "fake-claude-code-installfix-malware-2026",
+      "title": "Fake Claude Code Installers Deploy Amatera Stealer via Google Ads",
+      "date": "March 09, 2026",
+      "category": "Active Threat",
+      "badge": "ACTIVE THREAT",
+      "excerpt": "Attackers clone AI coding tool installation pages and promote them via Google Ads. Developers copy-paste malicious terminal commands, deploying the Amatera infostealer that harvests passwords, cookies, and crypto wallets.",
+      "image": "images/articles/fake-claude-code-installfix-malware-2026.png",
+      "externalUrl": "articles/fake-claude-code-installfix-malware-2026.html",
+      "tags": [
+        "InstallFix",
+        "Claude Code",
+        "Amatera Stealer",
+        "Malvertising",
+        "Developer Security",
+        "Google Ads",
+        "Push Security"
+      ],
+      "author": "Harish G"
+    },
+    {
+      "id": "muddywater-iran-us-banks-airports-2026",
+      "title": "MuddyWater Infiltrates US Banks and Airports with Novel Backdoors After Iran Strikes",
+      "date": "March 09, 2026",
+      "category": "Nation-State APT",
+      "badge": "APT",
+      "excerpt": "Iran's MOIS-linked MuddyWater APT has compromised US banks, airports, and defense contractors using Dindoor (Deno-based) and Fakeset (Python-based) backdoors. Symantec reveals the campaign following US-Israeli military strikes.",
+      "image": "images/articles/muddywater-iran-us-banks-airports-2026.png",
+      "externalUrl": "articles/muddywater-iran-us-banks-airports-2026.html",
+      "tags": [
+        "MuddyWater",
+        "Seedworm",
+        "Iran APT",
+        "MOIS",
+        "Dindoor",
+        "Fakeset",
+        "US Infrastructure",
+        "Nation-State"
+      ],
+      "author": "Harish G"
+    },
+    {
       "id": "mj-rathbun-matplotlib-ai-hallucination-2026",
       "title": "The MJ Rathbun Incident: When an Autonomous Agent Responded to a PR Rejection",
       "date": "March 05, 2026",
