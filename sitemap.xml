@@ -2,6 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- March 9, 2026 - OpenAI Codex Security -->
+  <url>
+    <loc>https://thehgtech.com/articles/openai-codex-security-11000-bugs-2026.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.99</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/openai-codex-security-11000-bugs-2026.png</image:loc>
+      <image:title>OpenAI Codex Security Finds 11,000 Bugs - 14 CVEs Assigned</image:title>
+    </image:image>
+  </url>
+
+  <!-- March 9, 2026 - Fake Claude Code InstallFix -->
+  <url>
+    <loc>https://thehgtech.com/articles/fake-claude-code-installfix-malware-2026.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.99</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/fake-claude-code-installfix-malware-2026.png</image:loc>
+      <image:title>Fake Claude Code Installers Deploy Amatera Stealer via Google Ads</image:title>
+    </image:image>
+  </url>
+
+  <!-- March 9, 2026 - MuddyWater Iran US Banks -->
+  <url>
+    <loc>https://thehgtech.com/articles/muddywater-iran-us-banks-airports-2026.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.99</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/muddywater-iran-us-banks-airports-2026.png</image:loc>
+      <image:title>MuddyWater Iran APT Infiltrates US Banks and Airports</image:title>
+    </image:image>
+  </url>
+
         <url>
     <loc>https://thehgtech.com/articles/mj-rathbun-matplotlib-ai-hallucination-2026.html</loc>
     <lastmod>2026-03-05</lastmod>
