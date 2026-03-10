@@ -4,111 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 09 2026",
-            "headline": "Fake Claude Pages Infect Windows, Mac with Infostealers",
-            "title": "Fake Claude Code Install Pages Spread Infostealers to Windows and Mac Users",
-            "content": "Cybersecurity researchers have identified fraudulent install pages for the Claude Code application, targeting both Windows and Mac users with infostealer malware. These malicious pages trick users into downloading software that captures sensitive information, including passwords and browser session data. The attack highlights the increasing sophistication of social engineering tactics used to distribute infostealers. Users are advised to download software only from official sources and verify the authenticity of installation pages. This incident underscores the need for vigilance against deceptive online schemes, especially those targeting popular software tools.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/fake-claude-code-install-pages-hit-windows-and-mac-users-with-infostealers",
+            "date": "Mar 10 2026",
+            "headline": ".arpa Domain Exploited—Phishing Detection Evasion Uncovered",
+            "title": "Hackers Manipulate .arpa Domain to Evade Phishing Detection",
+            "content": "A threat actor has been exploiting the .arpa top-level domain (TLD) to bypass phishing detection systems, according to Infoblox. The attack leverages IPv6-to-IPv4 tunneling to host phishing content on domains that typically should not resolve to an IP address. This manipulation allows attackers to disguise malicious activities under the guise of legitimate network operations. Organizations relying on conventional phishing detection tools may find themselves vulnerable, as these tools often overlook such sophisticated domain manipulations. Security professionals are advised to update their detection systems to recognize and block these anomalous domain resolutions. This incident underscores the evolving tactics of cybercriminals in exploiting internet infrastructure for phishing.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4142631/hacker-abusing-arpa-domain-to-evade-phishing-detection-says-infoblox.html",
             "relatedResources": [
                 {
-                    "label": "Active Directory Security",
-                    "url": "/guides/active-directory-security-hardening.html",
-                    "icon": "fa-sitemap"
+                    "label": "Zero-Day Detection Guide",
+                    "url": "/guides/zero-day-detection.html",
+                    "icon": "fa-exclamation-triangle"
                 }
             ]
         },
         {
-            "date": "Mar 09 2026",
-            "headline": "Quiz Sites Push Unwanted Notifications—Users Beware",
-            "title": "Quiz Sites Trick Users into Enabling Unwanted Browser Notifications",
-            "content": "A new online threat involves quiz websites that entice users to enable browser notifications, which are later exploited for advertising, scams, or dubious promotions. While the quizzes appear harmless, the real objective is to gain permission to send persistent notifications. This tactic represents a growing trend in exploiting browser features for malicious purposes. Users should be cautious when granting notification permissions and regularly review their browser settings to revoke access from untrusted sites. This development serves as a reminder to remain skeptical of unsolicited online interactions.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/03/quiz-sites-trick-users-into-enabling-unwanted-browser-notifications",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "date": "Mar 10 2026",
+            "headline": "Tuesday&#x27;s ISC Stormcast—Key Cybersecurity Updates",
+            "title": "ISC Stormcast Highlights for March 10th, 2026",
+            "content": "The SANS Internet Storm Center’s latest Stormcast podcast for March 10th, 2026, provides crucial updates on current cybersecurity threats and trends. The InfoCON level remains at green, indicating a stable threat environment. Key topics include recent vulnerabilities and their potential impact on enterprise networks. The podcast also covers new attack vectors that security professionals should monitor. Staying informed through such updates is vital for maintaining robust cybersecurity defenses in an ever-evolving threat landscape. Security teams are encouraged to integrate these insights into their risk management strategies.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32780",
+            "relatedResources": []
         },
         {
             "date": "Mar 09 2026",
-            "headline": "ClickFix Attack Bypasses Security with Windows Terminal",
-            "title": "ClickFix Attack Uses Windows Terminal to Evade Detection",
-            "content": "The ClickFix attack employs fake CAPTCHA pages that instruct victims to execute malicious commands via the Windows Terminal, circumventing traditional security measures. This method contrasts with typical attacks that use the Run dialog, making it harder for security tools to detect and block. The attack targets Windows users, exploiting their trust in CAPTCHA verification processes. Security professionals should educate users about the risks of executing commands from unknown sources and implement advanced monitoring to detect unusual terminal activities. This attack variant emphasizes the need for continuous adaptation in cybersecurity defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/clickfix-attack-uses-windows-terminal-to-evade-detection/",
+            "headline": "A0Backdoor Targets Teams—Remote Access Exploit Alert",
+            "title": "Microsoft Teams Phishing Campaign Deploys A0Backdoor Malware",
+            "content": "Hackers are targeting employees in financial and healthcare sectors via Microsoft Teams, utilizing a phishing campaign that delivers the A0Backdoor malware. Attackers deceive victims into granting remote access through Quick Assist, enabling them to install the malware. This tactic highlights the increasing sophistication of social engineering attacks against enterprise communication platforms. Affected organizations could face significant data breaches and operational disruptions. Security teams should enhance monitoring of remote access requests and educate employees on recognizing phishing attempts. This incident emphasizes the need for robust endpoint protection and employee awareness training.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-teams-phishing-targets-employees-with-backdoors/",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
                 },
                 {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
                 }
             ]
         },
         {
             "date": "Mar 09 2026",
-            "headline": ".arpa Domain Exploited in Stealthy Phishing Campaign",
-            "title": "Internet Infrastructure TLD .arpa Abused in Phishing Attacks",
-            "content": "Threat actors are exploiting the .arpa top-level domain (TLD) to conduct phishing attacks by manipulating DNS record management controls. This tactic allows them to obscure the location of malicious content using Cloudflare&#x27;s services, complicating detection efforts. The .arpa domain, integral to internet infrastructure, is being misused to lend credibility to phishing campaigns. Organizations should enhance their DNS security measures and monitor for unusual activity associated with .arpa domains. This incident highlights the ongoing challenges in securing foundational internet infrastructure against innovative phishing techniques.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/internet-infrastructure-tld-arpa-abused-in-phishing-attacks/",
+            "headline": "Cloud Attacks Surge—Exploiting Software Flaws Over Credentials",
+            "title": "Google Reports Cloud Attacks Exploit Software Vulnerabilities",
+            "content": "Google has identified a trend where attackers increasingly exploit newly disclosed vulnerabilities in third-party software to breach cloud environments. The time window for such attacks has narrowed from weeks to mere days following vulnerability disclosure. This shift indicates a need for rapid patch management and vulnerability assessment in cloud infrastructures. Organizations relying on cloud services must prioritize software updates to mitigate these threats. The report underscores the criticality of addressing software flaws over merely strengthening credential security. Cloud users should remain vigilant and proactive in their security practices to safeguard their environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-cloud-attacks-exploit-flaws-more-than-weak-credentials/",
             "relatedResources": [
                 {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
                 }
             ]
         },
         {
             "date": "Mar 09 2026",
-            "headline": "Codex Security Flags 11,000 Bugs in First Month",
-            "title": "OpenAI&#x27;s Codex Security Identifies 11,000 High-Impact Bugs in a Month",
-            "content": "OpenAI&#x27;s new application security tool, Codex Security, has detected over 11,000 high-severity and critical vulnerabilities in various software repositories within its first month of operation. Designed to automatically find, validate, and rectify software flaws, Codex Security demonstrates significant potential for improving codebase integrity. This achievement underscores the escalating need for automated security solutions in the face of complex software ecosystems. Developers and security teams should consider integrating similar tools to enhance vulnerability management and reduce the risk of exploitation. The rapid identification of such a large number of bugs highlights the pervasive nature of software vulnerabilities.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4142354/openai-says-codex-security-found-11000-high-impact-bugs-in-a-month.html",
+            "headline": "Signal, WhatsApp Hijacks—Russian Hackers Target Key Figures",
+            "title": "Dutch Government Warns of Signal, WhatsApp Hijacking Attacks",
+            "content": "The Dutch government has issued a warning about an ongoing phishing campaign linked to Russian state-sponsored hackers targeting Signal and WhatsApp accounts. The campaign focuses on government officials, military personnel, and journalists, aiming to access sensitive communications. This attack highlights the persistent threat posed by state-sponsored actors in compromising secure messaging platforms. Affected individuals risk exposure of confidential information and potential espionage. Users are advised to enable two-factor authentication and remain cautious of unsolicited messages. This situation underscores the importance of securing personal communication channels against sophisticated threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/dutch-govt-warns-of-signal-whatsapp-account-hijacking-attacks/",
             "relatedResources": []
         },
         {
             "date": "Mar 09 2026",
-            "headline": "Mid-Market Security Platforms—A New Hope?",
-            "title": "Can the Security Platform Finally Deliver for the Mid-Market?",
-            "content": "Mid-market organizations are increasingly focused on achieving robust security measures comparable to those of larger enterprises, driven by concerns over supply chain attacks. The pressure to meet security expectations from customers and partners is prompting these organizations to seek comprehensive security platforms. Such platforms promise to streamline security operations and enhance threat detection capabilities. Industry experts suggest that this shift could enable mid-sized businesses to better manage cybersecurity risks without the extensive resources typically available to larger firms. As these platforms mature, they may offer a viable path to enhanced security for the mid-market sector.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/can-security-platform-finally-deliver.html",
+            "headline": "White House Cyber Strategy—Offensive Shift Announced",
+            "title": "Trump Administration Prioritizes Offensive Cyber Strategy",
+            "content": "The Trump administration has unveiled a new cyber strategy that emphasizes preemption and deterrence as central to its approach to cyber threats. This seven-page document outlines a shift towards offensive cyber operations, aiming to neutralize threats before they materialize. The strategy reflects a growing trend among nations to adopt more aggressive cyber postures in response to escalating global cyber conflicts. Organizations should prepare for potential changes in the cyber threat landscape as geopolitical tensions influence cyber policies. Cybersecurity professionals must stay informed about policy shifts that could impact their defense strategies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/white-house-cyber-strategy-prioritizes-offense",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 09 2026",
+            "headline": "&#x27;InstallFix&#x27; Campaign—Fake Code Sites Exploit AI Risks",
+            "title": "&#x27;InstallFix&#x27; Attacks Spread via Fake Claude Code Sites",
+            "content": "A new cyberattack campaign, dubbed &#x27;InstallFix,&#x27; is using malvertising and a ClickFix-style technique to exploit vulnerabilities in AI coding assistants and command-line interfaces. The campaign targets developers by creating fake websites that mimic legitimate code repositories, distributing malicious code under the guise of updates or fixes. This attack highlights the risks associated with the rapid adoption of AI tools in software development. Developers are urged to verify the authenticity of code sources and apply security best practices when using AI-enhanced tools. This incident serves as a reminder of the need for vigilance in the evolving landscape of AI-driven development.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/installfix-attacks-fake-claude-code",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
                 }
             ]
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "InstallFix Campaign Uses Cloned AI Sites for Malware",
-            "title": "Cloned AI Tool Sites Distribute Malware in &#x27;InstallFix&#x27; Campaign",
-            "content": "The &#x27;InstallFix&#x27; campaign involves threat actors cloning legitimate AI tool websites and replacing genuine installation commands with malicious ones. This deceptive strategy aims to distribute malware to unsuspecting users seeking AI software. The campaign highlights the persistent threat of cloned websites in the cybersecurity landscape. Users are advised to verify the authenticity of software sources and remain cautious of unexpected installation prompts. The increasing prevalence of such campaigns underscores the importance of robust website verification processes and user awareness in preventing malware infections.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cloned-ai-tool-sites-distribute-malware-in-installfix-campaign/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "ISC Stormcast—Cyber Threats Update for March 9th",
-            "title": "SANS Internet Storm Center Provides Latest Cybersecurity Threat Insights",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast, highlighting current cybersecurity threats and vulnerabilities. The InfoCON level remains at green, indicating a stable threat environment. This update covers recent trends in phishing attacks, malware distributions, and network vulnerabilities. Cybersecurity professionals are advised to remain vigilant and ensure that their systems are up-to-date with the latest security patches. The Stormcast serves as a crucial resource for IT professionals seeking to stay informed about emerging threats and best practices in cybersecurity.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32776",
-            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -137,30 +122,12 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 09 2026",
-            "headline": "Microsoft Tackles Rogue AI Agents—$99/Month Solution Unveiled",
-            "title": "Microsoft Launches Agent 365 to Govern Corporate AI Agents",
-            "content": "Microsoft has announced the release of Agent 365 and Microsoft 365 Enterprise 7, designed to secure and govern AI agents within large organizations. Available from May 1st, these products aim to prevent AI agents from acting as &quot;double agents&quot; by providing controlled environments and monitoring capabilities. The service is priced at $99 per month, addressing the increasing concern of unregulated AI activities in corporate settings. This move reflects Microsoft&#x27;s strategy to enhance AI governance as enterprises adopt AI-driven solutions at scale. Organizations are encouraged to integrate these tools to mitigate potential risks associated with autonomous AI agents.",
+            "date": "Mar 10 2026",
+            "headline": "Karpathy&#x27;s Autoresearch—Revolutionizing AI Experimentation Overnight",
+            "title": "Andrej Karpathy Unveils Autoresearch for Scalable AI Experimentation",
+            "content": "Andrej Karpathy, former Tesla AI lead and OpenAI co-founder, has introduced an open-source project named autoresearch that promises to transform AI experimentation. This tool enables researchers to conduct hundreds of AI experiments nightly, significantly accelerating development cycles. The system is not a pre-built model but a framework allowing for the rapid iteration of AI models, potentially leading to groundbreaking discoveries in machine learning. This development is poised to benefit AI researchers and developers by providing a scalable method to test hypotheses and refine models efficiently. As an open-source initiative, autoresearch invites collaboration and innovation from the global AI community, potentially setting new standards in AI research methodologies.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/microsoft-says-ungoverned-ai-agents-could-become-corporate-double-agents-its",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "Feeld&#x27;s Niche Appeal Fades—Users Bemoan &#x27;Normie Hell&#x27;",
-            "title": "Feeld&#x27;s Shift from Niche to Mainstream Sparks User Backlash",
-            "content": "Feeld, initially a niche dating app catering to unconventional preferences, is experiencing a shift as it gains popularity among mainstream users. This change has led to dissatisfaction among its original user base, who feel the app&#x27;s unique appeal is being diluted. The platform&#x27;s growth reflects a broader trend where niche services attract larger, more diverse audiences over time. As Feeld&#x27;s demographic evolves, users seeking distinct communities may need to explore alternative platforms. This development underscores the challenges niche apps face in maintaining their core identity amidst expanding user bases.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/feeld-was-a-dating-app-for-the-freaks-now-some-people-call-it-normie-hell/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "Gradient AI Secures Funding—AI Underwriting Gains Traction",
-            "title": "Gradient AI Secures Capital to Advance AI Insurance Underwriting",
-            "content": "Gradient AI has secured growth capital financing from CIBC Innovation Banking, signaling a shift from venture capital to institutional support for AI-driven insurance underwriting. This development marks a significant milestone in the insurtech sector, emphasizing the growing confidence in AI&#x27;s ability to transform underwriting processes. Gradient AI&#x27;s funding will be used to enhance its AI models and expand its market reach. The move reflects a broader trend of AI integration in financial services, promising improved risk assessment and operational efficiency. Insurers should monitor these advancements to remain competitive.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/gradient-ai-cibc-ai-insurance-underwriting-growth-capital/",
+            "sourceUrl": "https://venturebeat.com/technology/andrej-karpathys-new-open-source-autoresearch-lets-you-run-hundreds-of-ai",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -171,30 +138,26 @@ const websiteContent = {
         },
         {
             "date": "Mar 09 2026",
-            "headline": "UK Invests £500M in Sovereign AI—Infrastructure Boost Planned",
-            "title": "UK Sovereign AI Fund to Enhance Domestic Computing Infrastructure",
-            "content": "The UK government has announced the launch of a sovereign AI fund backed by a £500 million budget, aimed at developing domestic computing infrastructure. Set to officially launch on April 16th, this initiative seeks to provide a local alternative to foreign computing resources, enhancing the UK&#x27;s technological independence. The fund will support AI research and development, fostering innovation within the country. This move aligns with global trends of nations investing in AI capabilities to secure strategic advantages. UK tech leaders are encouraged to engage with this initiative to leverage new opportunities.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/uk-sovereign-ai-fund-build-domestic-computing-infrastructure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "City Union Bank Embraces AI—New Centre Launched",
-            "title": "City Union Bank Opens AI Centre to Enhance Banking Operations",
-            "content": "City Union Bank in India has launched an AI center as part of a four-party agreement to integrate artificial intelligence into its banking operations. This initiative aims to test AI solutions on real banking challenges, marking a shift from purchasing external tools to developing in-house capabilities. The center will focus on improving customer service, fraud detection, and operational efficiency. This development highlights a growing trend among financial institutions to harness AI for competitive advantage. Banks are encouraged to explore similar strategies to drive innovation and improve service delivery.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/city-union-bank-launches-ai-centre-to-support-banking-operations/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "AI&#x27;s Impact on VC—Are Investors Ready for Disruption?",
-            "title": "Venture Capitalists Brace for AI-Driven Industry Disruption",
-            "content": "Venture capitalists are increasingly investing in AI technologies, anticipating its potential to disrupt numerous industries. However, there is growing speculation about AI&#x27;s ability to disrupt the venture capital sector itself. As AI-driven analytics and decision-making tools evolve, they may challenge traditional investment models. This development prompts VCs to reassess their strategies and adapt to a rapidly changing landscape. The trend underscores the importance of understanding AI&#x27;s transformative potential across sectors, including its implications for investment practices. Investors should stay informed about AI advancements to navigate future disruptions effectively.",
+            "headline": "Nvidia Unveils Open-Source AI Agent Platform",
+            "title": "Nvidia Prepares to Launch Open-Source AI Agent Platform",
+            "content": "Nvidia is gearing up to introduce a new open-source platform designed for AI agents, mirroring the capabilities of OpenClaw. This initiative, set to be detailed at the upcoming developer conference, marks a strategic shift in Nvidia&#x27;s software approach, emphasizing collaboration and openness in AI development. The platform aims to facilitate the creation and deployment of AI agents, potentially enhancing automation and efficiency across various sectors. This move could significantly impact developers and organizations seeking to integrate AI agents into their workflows, providing a robust and flexible foundation for innovation. Nvidia&#x27;s commitment to open-source solutions underscores its role in advancing AI technology and fostering a collaborative ecosystem.",
             "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/ai-kill-venture-capital/",
+            "sourceUrl": "https://www.wired.com/story/nvidia-planning-ai-agent-platform-launch-open-source/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 09 2026",
+            "headline": "Apple&#x27;s Smart Home Display Delayed to Fall with iOS 27",
+            "title": "Rumored Apple Smart Home Display Now Expected This Fall",
+            "content": "Apple&#x27;s anticipated smart home display, unofficially dubbed &quot;HomePod with a screen,&quot; is now rumored to launch alongside iOS 27 this fall. Initially expected in 2025 and then this spring, the device&#x27;s release has faced delays, according to recent leaks and Bloomberg reports. This development aligns with Apple&#x27;s strategy to strengthen its smart home ecosystem, potentially integrating advanced AI features and seamless connectivity with other Apple devices. The delay may impact consumers eagerly awaiting enhanced smart home capabilities, but it also suggests Apple is refining the product to ensure a robust user experience. As competition in the smart home market intensifies, Apple&#x27;s entry could set new standards for integration and functionality.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/891723/apple-homepad-delay-rumor",
             "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -204,11 +167,44 @@ const websiteContent = {
         },
         {
             "date": "Mar 09 2026",
-            "headline": "85% of Enterprises Seek AI—Process Layer Lacking",
-            "title": "Enterprises Struggle with Process Layer for Agentic AI Adoption",
-            "content": "According to the Celonis 2026 Process Optimization Report, 85% of enterprises aim to adopt agentic AI within three years, yet 76% acknowledge their operations lack the necessary process layer. This gap presents a significant challenge as organizations pursue AI-driven transformations. The report, based on a survey of over 1,600 global business leaders, highlights the critical need for robust process infrastructure to support AI initiatives. Companies are advised to focus on developing comprehensive process layers to enable successful AI integration. This insight is crucial for businesses seeking to leverage AI for competitive advantage.",
+            "headline": "OpenAI, Google Back Anthropic in Pentagon Lawsuit",
+            "title": "Tech Giants Support Anthropic in Defense Department Dispute",
+            "content": "In a show of solidarity, over 30 employees from OpenAI and Google DeepMind have publicly supported Anthropic&#x27;s lawsuit against the U.S. Department of Defense. The legal action follows the Pentagon&#x27;s classification of Anthropic as a supply-chain risk, a move that has sparked controversy within the tech community. The support from influential AI researchers highlights the broader concerns over governmental interference in AI innovation and security. If the lawsuit succeeds, it could set a precedent for how AI companies are evaluated and regulated by government agencies. This case underscores the tension between innovation and regulation in the rapidly evolving AI landscape.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/09/openai-and-google-employees-rush-to-anthropics-defense-in-dod-lawsuit/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 09 2026",
+            "headline": "AI Agents Revolutionize E-Commerce Visibility",
+            "title": "New System Enhances E-Commerce Visibility to AI Agents",
+            "content": "E-commerce brands are increasingly targeting AI agents as primary customers, a shift driven by the adoption of AI for product research and purchasing. A new system, already trusted by industry giants like L’Oréal, Unilever, Mars, and Beiersdorf, helps brands optimize their products for AI visibility. This approach involves structuring data and metadata to align with AI algorithms, ensuring products are easily discoverable by AI agents. As AI continues to reshape consumer behavior, businesses must adapt to remain competitive, emphasizing the importance of AI-friendly product listings. This trend highlights the growing influence of AI in consumer markets and the need for strategic adaptation by businesses.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/enterprise-agentic-ai-requires-a-process-layer-most-companies-havent-built",
+            "sourceUrl": "https://venturebeat.com/infrastructure/how-to-make-your-e-commerce-product-visible-to-ai-agents-use-this-new-system",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 09 2026",
+            "headline": "Anthropic-Pentagon Dispute Threatens Billions in Deals",
+            "title": "Anthropic Warns Pentagon Dispute Could Cost Billions",
+            "content": "Anthropic, an AI startup, claims its ongoing dispute with the Pentagon could result in significant financial losses, potentially in the billions. The company alleges that the Trump administration&#x27;s designation of Anthropic as a supply-chain risk has caused partners to pause deal negotiations. This situation highlights the fragile nature of government-industry relations in the AI sector, where regulatory decisions can have substantial economic repercussions. The outcome of this dispute could influence future interactions between AI companies and government entities, emphasizing the need for clear guidelines and communication. The case underscores the broader challenges of navigating regulatory environments in high-tech industries.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/anthropic-claims-business-is-in-peril-due-to-supply-chain-risk-designation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 09 2026",
+            "headline": "Tech Leaders Rally Behind Anthropic in Defense Lawsuit",
+            "title": "OpenAI and Google Employees Support Anthropic&#x27;s Legal Battle",
+            "content": "Anthropic&#x27;s legal battle against the Department of Defense has gained significant support from nearly 40 employees at OpenAI and Google, including prominent figures like Jeff Dean. The lawsuit challenges the Pentagon&#x27;s designation of Anthropic as a supply-chain risk, a label that has sparked widespread debate within the tech industry. The backing from leading AI researchers underscores the importance of maintaining trust and transparency between AI firms and government agencies. This case could have far-reaching implications for how AI companies are assessed and regulated, potentially shaping future policies. The support from tech leaders reflects a unified stance against perceived overreach by governmental bodies in tech regulation.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/891514/anthropic-pentagon-lawsuit-amicus-brief-openai-google",
             "relatedResources": []
         }
     ],
@@ -274,6 +270,39 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2021-22054",
+            "dateAdded": "Mar 09, 2026",
+            "vendor": "Omnissa Workspace One UEM",
+            "description": "Omnissa Workspace One UEM formerly known as VMware Workspace One UEM contains a server-side request forgery (SSRF) vulnerability that could allow a malicious actor with network access to UEM to send t",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22054",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-26399",
+            "dateAdded": "Mar 09, 2026",
+            "vendor": "SolarWinds Web Help Desk",
+            "description": "SolarWinds Web Help Desk contain a deserialization of untrusted data vulnerability in AjaxProxy that could allow an attacker to run commands on the host machine.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-26399",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-1603",
+            "dateAdded": "Mar 09, 2026",
+            "vendor": "Ivanti Endpoint Manager (EPM)",
+            "description": "Ivanti Endpoint Manager (EPM) contains an authentication bypass using an alternate path or channel vulnerability that could allow a remote unauthenticated attacker to leak specific stored credential d",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1603",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2017-7921",
             "dateAdded": "Mar 05, 2026",
             "vendor": "Hikvision Multiple Products",
@@ -326,28 +355,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-41974",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-22719",
-            "dateAdded": "Mar 03, 2026",
-            "vendor": "Broadcom VMware Aria Operations",
-            "description": "Broadcom VMware Aria Operations formerly known as vRealize Operations (vROps) contains a command injection vulnerability that allows an unauthenticated attacker to execute arbitrary commands, potentia",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22719",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-21385",
-            "dateAdded": "Mar 03, 2026",
-            "vendor": "Qualcomm Multiple Chipsets",
-            "description": "Multiple Qualcomm chipsets contain a memory corruption vulnerability while using alignments for memory allocation.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21385",
             "isZeroDay": false
         }
     ],
