@@ -5,6 +5,116 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 10 2026",
+            "headline": "OpenAI&#x27;s Codex Scanner Finds Hundreds of Critical Flaws",
+            "title": "OpenAI&#x27;s Codex Security Vulnerability Scanner Uncovers Critical Software Flaws",
+            "content": "OpenAI has launched the Codex Security Vulnerability Scanner, formerly known as Aardvark, which has identified hundreds of critical vulnerabilities in various software applications over the past month. This tool leverages advanced AI capabilities to detect security weaknesses across different platforms, providing a proactive approach to software security. The scanner&#x27;s ability to uncover such a high volume of vulnerabilities highlights the persistent challenges in maintaining secure software environments. Developers and security teams are advised to integrate continuous vulnerability scanning into their development cycles to mitigate potential risks. The emergence of AI-driven security tools underscores the growing role of artificial intelligence in enhancing cybersecurity measures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/openai-rolls-out-codex-security-vulnerability-scanner/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Mandia&#x27;s Armadin Secures $190M for AI Red Teaming",
+            "title": "Armadin Launches with $190 Million Funding to Revolutionize AI-Powered Red Teaming",
+            "content": "Kevin Mandia&#x27;s new venture, Armadin, has officially launched with an impressive $190 million in funding, aiming to transform the landscape of cybersecurity testing through AI-powered red teaming. Armadin&#x27;s platform simulates real-world attack scenarios, enabling organizations to identify and address vulnerabilities before malicious actors can exploit them. This innovative approach is designed to mimic the tactics, techniques, and procedures used by sophisticated threat actors, providing a more realistic assessment of an organization&#x27;s security posture. With the backing of significant investment, Armadin plans to expand its capabilities and market reach, offering a robust solution for proactive cybersecurity defense.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/kevin-mandias-armadin-launches-with-189-9-million-in-funding/",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "LeakyLooker Flaws Expose Google Cloud Data to SQL Attacks",
+            "title": "Cross-Tenant Vulnerabilities in Google Looker Studio Enable SQL Data Exfiltration",
+            "content": "Cybersecurity researchers have disclosed nine vulnerabilities, collectively dubbed &quot;LeakyLooker,&quot; in Google Looker Studio that could allow attackers to execute arbitrary SQL queries across tenant boundaries. These flaws put sensitive data at risk within organizations&#x27; Google Cloud environments, potentially leading to unauthorized data access and exfiltration. The vulnerabilities underscore the critical need for robust security measures in cloud-based analytics platforms. Organizations using Google Looker Studio should review their security configurations and apply necessary patches or mitigations to protect against potential exploitation. This discovery highlights the ongoing challenges in securing complex cloud ecosystems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/new-leakylooker-flaws-in-google-looker.html",
+            "relatedResources": [
+                {
+                    "label": "Cloud Security Hardening",
+                    "url": "/guides/cloud-security-hardening.html",
+                    "icon": "fa-cloud"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Salesforce Users Targeted—Data Theft Campaign Uncovered",
+            "title": "Salesforce Customers Face Data Theft via Poorly Secured Instances",
+            "content": "Salesforce has confirmed a data theft campaign targeting its customers through inadequately secured instances. This campaign exploits misconfigurations and weak security practices, allowing attackers to access and potentially exfiltrate sensitive customer data. The widespread use of Salesforce across industries makes this a significant concern for organizations relying on the platform for customer relationship management. Affected companies are urged to conduct thorough security audits of their Salesforce configurations and implement stronger access controls to prevent unauthorized access. This incident highlights the importance of securing cloud-based services against evolving cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hundreds-of-salesforce-customers-allegedly-targeted-in-new-data-theft-campaign/",
+            "relatedResources": [
+                {
+                    "label": "Cloud Security Hardening",
+                    "url": "/guides/cloud-security-hardening.html",
+                    "icon": "fa-cloud"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Escape Secures $18M to Enhance AI Pentesting",
+            "title": "Escape Raises $18 Million to Expand Automated Pentesting Capabilities",
+            "content": "Escape, a cybersecurity firm focused on automating penetration testing, has raised $18 million to enhance its platform&#x27;s AI-driven capabilities and scale its engineering and go-to-market teams. The company&#x27;s platform aims to streamline the pentesting process by using AI agents to identify vulnerabilities more efficiently and accurately. This funding will enable Escape to further develop its technology and expand its market presence, addressing the growing demand for automated security testing solutions. As organizations face increasing pressure to secure their systems, automated pentesting offers a scalable and effective approach to identifying and mitigating security risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/escape-raises-18-million-to-automate-pentesting/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Ivanti Endpoint Flaw Exploited—CISA Adds to KEV List",
+            "title": "Ivanti Endpoint Manager Vulnerability Exploited in Active Attacks",
+            "content": "A high-severity authentication bypass vulnerability in Ivanti Endpoint Manager has been actively exploited, prompting the Cybersecurity and Infrastructure Security Agency (CISA) to add it to its Known Exploited Vulnerabilities (KEV) list. This vulnerability, along with flaws in SolarWinds and Workspace One, poses significant risks to affected systems, potentially allowing unauthorized access and control. Organizations using Ivanti Endpoint Manager should prioritize patching this vulnerability to protect against exploitation. The inclusion of this flaw in the KEV list underscores the critical need for timely vulnerability management in safeguarding enterprise environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/recent-ivanti-endpoint-manager-flaw-exploited-in-attacks/",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Webinar on AI Agent Data Leaks—Audit Your Workflows",
+            "title": "How to Prevent AI Data Leaks: Auditing Modern Agentic Workflows",
+            "content": "A recent webinar has highlighted the growing concern of data leaks associated with AI agents, which are increasingly used to automate tasks such as sending emails and managing software. These agents, while enhancing productivity, introduce new security challenges by potentially creating backdoors for data exfiltration. The webinar emphasized the importance of auditing workflows involving AI agents to identify and mitigate risks. Organizations should implement comprehensive monitoring and access controls to prevent unauthorized data access. As AI continues to evolve, ensuring the security of AI-driven processes becomes paramount for protecting sensitive information.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/how-to-stop-ai-data-leaks-webinar-guide.html",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
             "headline": ".arpa Domain Exploited—Phishing Detection Evasion Uncovered",
             "title": "Hackers Manipulate .arpa Domain to Evade Phishing Detection",
             "content": "A threat actor has been exploiting the .arpa top-level domain (TLD) to bypass phishing detection systems, according to Infoblox. The attack leverages IPv6-to-IPv4 tunneling to host phishing content on domains that typically should not resolve to an IP address. This manipulation allows attackers to disguise malicious activities under the guise of legitimate network operations. Organizations relying on conventional phishing detection tools may find themselves vulnerable, as these tools often overlook such sophisticated domain manipulations. Security professionals are advised to update their detection systems to recognize and block these anomalous domain resolutions. This incident underscores the evolving tactics of cybercriminals in exploiting internet infrastructure for phishing.",
@@ -26,74 +136,6 @@ const websiteContent = {
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/32780",
             "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "A0Backdoor Targets Teams—Remote Access Exploit Alert",
-            "title": "Microsoft Teams Phishing Campaign Deploys A0Backdoor Malware",
-            "content": "Hackers are targeting employees in financial and healthcare sectors via Microsoft Teams, utilizing a phishing campaign that delivers the A0Backdoor malware. Attackers deceive victims into granting remote access through Quick Assist, enabling them to install the malware. This tactic highlights the increasing sophistication of social engineering attacks against enterprise communication platforms. Affected organizations could face significant data breaches and operational disruptions. Security teams should enhance monitoring of remote access requests and educate employees on recognizing phishing attempts. This incident emphasizes the need for robust endpoint protection and employee awareness training.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-teams-phishing-targets-employees-with-backdoors/",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                },
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "Cloud Attacks Surge—Exploiting Software Flaws Over Credentials",
-            "title": "Google Reports Cloud Attacks Exploit Software Vulnerabilities",
-            "content": "Google has identified a trend where attackers increasingly exploit newly disclosed vulnerabilities in third-party software to breach cloud environments. The time window for such attacks has narrowed from weeks to mere days following vulnerability disclosure. This shift indicates a need for rapid patch management and vulnerability assessment in cloud infrastructures. Organizations relying on cloud services must prioritize software updates to mitigate these threats. The report underscores the criticality of addressing software flaws over merely strengthening credential security. Cloud users should remain vigilant and proactive in their security practices to safeguard their environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-cloud-attacks-exploit-flaws-more-than-weak-credentials/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "Signal, WhatsApp Hijacks—Russian Hackers Target Key Figures",
-            "title": "Dutch Government Warns of Signal, WhatsApp Hijacking Attacks",
-            "content": "The Dutch government has issued a warning about an ongoing phishing campaign linked to Russian state-sponsored hackers targeting Signal and WhatsApp accounts. The campaign focuses on government officials, military personnel, and journalists, aiming to access sensitive communications. This attack highlights the persistent threat posed by state-sponsored actors in compromising secure messaging platforms. Affected individuals risk exposure of confidential information and potential espionage. Users are advised to enable two-factor authentication and remain cautious of unsolicited messages. This situation underscores the importance of securing personal communication channels against sophisticated threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/dutch-govt-warns-of-signal-whatsapp-account-hijacking-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "White House Cyber Strategy—Offensive Shift Announced",
-            "title": "Trump Administration Prioritizes Offensive Cyber Strategy",
-            "content": "The Trump administration has unveiled a new cyber strategy that emphasizes preemption and deterrence as central to its approach to cyber threats. This seven-page document outlines a shift towards offensive cyber operations, aiming to neutralize threats before they materialize. The strategy reflects a growing trend among nations to adopt more aggressive cyber postures in response to escalating global cyber conflicts. Organizations should prepare for potential changes in the cyber threat landscape as geopolitical tensions influence cyber policies. Cybersecurity professionals must stay informed about policy shifts that could impact their defense strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/white-house-cyber-strategy-prioritizes-offense",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "&#x27;InstallFix&#x27; Campaign—Fake Code Sites Exploit AI Risks",
-            "title": "&#x27;InstallFix&#x27; Attacks Spread via Fake Claude Code Sites",
-            "content": "A new cyberattack campaign, dubbed &#x27;InstallFix,&#x27; is using malvertising and a ClickFix-style technique to exploit vulnerabilities in AI coding assistants and command-line interfaces. The campaign targets developers by creating fake websites that mimic legitimate code repositories, distributing malicious code under the guise of updates or fixes. This attack highlights the risks associated with the rapid adoption of AI tools in software development. Developers are urged to verify the authenticity of code sources and apply security best practices when using AI-enhanced tools. This incident serves as a reminder of the need for vigilance in the evolving landscape of AI-driven development.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cloud-security/installfix-attacks-fake-claude-code",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
         },
         {
             "date": "Mar 19 2026",
@@ -123,6 +165,103 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Mar 10 2026",
+            "headline": "Adobe&#x27;s AI Assistant Revolutionizes Photoshop Image Editing",
+            "title": "Adobe Introduces AI Assistant and New Features for Photoshop and Firefly",
+            "content": "Adobe has unveiled an AI assistant for Photoshop, enhancing its image editing capabilities with cutting-edge technology. This assistant, now available in public beta for web and mobile, allows users to edit images by simply describing desired changes to a chatbot. Additionally, Adobe&#x27;s Firefly platform is receiving new AI-powered features to streamline creative workflows. These advancements are set to transform how designers and artists interact with Adobe&#x27;s Creative Cloud apps, making complex image editing tasks more intuitive and accessible. Professionals using Photoshop and Firefly should explore these features to leverage AI in their creative processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/10/adobe-is-debuting-an-ai-assistant-for-photoshop/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Zoom&#x27;s AI Suite—Avatars and Deepfake Detection Launch",
+            "title": "Zoom Launches AI-Powered Office Suite with Avatars and Deepfake Detection",
+            "content": "Zoom has announced a new AI-powered office suite that includes AI avatars for meetings, set to debut this month. The suite also features real-time deepfake detection technology to enhance meeting security and authenticity. These innovations aim to improve virtual collaboration by providing a more engaging and secure experience for users. As businesses continue to adapt to hybrid work environments, Zoom&#x27;s AI enhancements could play a crucial role in maintaining productivity and security. Organizations should consider integrating these tools to optimize their virtual meeting capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/10/zoom-launches-an-ai-powered-office-suite-says-ai-avatars-for-meetings-are-coming-soon/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Google Enhances Workspace with New Gemini AI Features",
+            "title": "Google Rolls Out Gemini AI Enhancements to Workspace Apps",
+            "content": "Google has expanded the capabilities of its Gemini AI across its Workspace suite, including Docs, Sheets, Slides, and Drive. The new features are designed to make these applications more personalized and efficient, allowing users to complete tasks faster within the platforms. Gemini&#x27;s integration includes a chat window in Docs and AI-generated spreadsheets, enhancing productivity for Workspace and AI plan subscribers. These updates reflect Google&#x27;s commitment to embedding AI deeply into its productivity tools, offering users more dynamic and responsive applications. Users should explore these features to maximize their productivity with Google&#x27;s AI advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/10/google-rolls-out-new-gemini-capabilities-to-docs-sheets-slides-and-drive/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Google&#x27;s Gemini AI Expands in Workspace—Boosting Productivity",
+            "title": "Google&#x27;s Gemini AI Gets Enhanced Role in Workspace Applications",
+            "content": "Google is deepening the integration of its Gemini AI within its Workspace applications, providing users with innovative tools to boost productivity. The enhancements include a Gemini chat feature in Google Docs, AI-generated spreadsheets, and a Gemini-powered search function. These features are available to Google Workspace and AI plan subscribers, offering more personalized and efficient workflows. The move underscores Google&#x27;s strategy to leverage AI for enhancing user experience across its productivity suite. Subscribers should explore these new capabilities to fully utilize the potential of Google&#x27;s AI-driven tools.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/890996/google-workspace-gemini-ai-docs-sheets-drive",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Photoshop&#x27;s AI Assistant—Edit Images with Chat Commands",
+            "title": "Adobe&#x27;s AI Assistant in Photoshop Enables Chat-Based Image Editing",
+            "content": "Adobe has introduced an AI assistant for Photoshop that allows users to edit images by describing changes to a chatbot. This feature is now in public beta for both web and mobile platforms. The AI assistant is part of Adobe&#x27;s broader initiative to integrate agentic AI features across its Creative Cloud applications, including Acrobat and Express. These advancements are designed to simplify complex editing tasks, making them more accessible to users of varying skill levels. Creative professionals should explore these new tools to enhance their workflows and creative output.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/891998/adobe-photoshop-web-mobile-ai-assistant-beta-launch",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Gemini-Powered &#x27;Help Me Create&#x27;—A Game Changer for Docs Users",
+            "title": "Google&#x27;s Gemini &#x27;Help Me Create&#x27; Tool Enhances Docs with AI",
+            "content": "Google has enhanced its Docs application with the Gemini-powered &#x27;Help Me Create&#x27; tool, designed to assist users in drafting content. This tool pulls information from emails and the web to facilitate content creation, making it particularly adept at generating corporate communications. The integration of Gemini AI across Docs, Drive, Sheets, and Slides reflects Google&#x27;s commitment to improving user productivity through AI. Professionals using Google Workspace can leverage these capabilities to streamline document creation and enhance their workflow efficiency. Users are encouraged to explore these features to maximize the benefits of AI in their daily tasks.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/google-gemini-workspace-ai-tools-hands-on/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Agentic AI Transforms Finance—SEI and IBM Lead the Charge",
+            "title": "SEI Partners with IBM to Automate Finance Operations Using Agentic AI",
+            "content": "Financial infrastructure provider SEI has partnered with IBM to modernize its operations through agentic AI and automation. The initiative focuses on process redesign and targeted operational automation, aiming to deliver real value by leveraging a data-centric foundation. This collaboration highlights the growing trend of integrating AI into financial services to enhance efficiency and reduce operational costs. Financial institutions considering similar transformations should evaluate the potential of agentic AI to optimize their internal processes and drive innovation. SEI&#x27;s partnership with IBM serves as a model for leveraging AI in finance.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/agentic-ai-in-finance-speeds-up-operational-automation/",
+            "relatedResources": [
+                {
+                    "label": "Ibm Analysis",
+                    "url": "/articles/ibm-api-connect-cve-2026.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
             "headline": "Karpathy&#x27;s Autoresearch—Revolutionizing AI Experimentation Overnight",
             "title": "Andrej Karpathy Unveils Autoresearch for Scalable AI Experimentation",
             "content": "Andrej Karpathy, former Tesla AI lead and OpenAI co-founder, has introduced an open-source project named autoresearch that promises to transform AI experimentation. This tool enables researchers to conduct hundreds of AI experiments nightly, significantly accelerating development cycles. The system is not a pre-built model but a framework allowing for the rapid iteration of AI models, potentially leading to groundbreaking discoveries in machine learning. This development is poised to benefit AI researchers and developers by providing a scalable method to test hypotheses and refine models efficiently. As an open-source initiative, autoresearch invites collaboration and innovation from the global AI community, potentially setting new standards in AI research methodologies.",
@@ -135,77 +274,6 @@ const websiteContent = {
                     "icon": "fa-brain"
                 }
             ]
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "Nvidia Unveils Open-Source AI Agent Platform",
-            "title": "Nvidia Prepares to Launch Open-Source AI Agent Platform",
-            "content": "Nvidia is gearing up to introduce a new open-source platform designed for AI agents, mirroring the capabilities of OpenClaw. This initiative, set to be detailed at the upcoming developer conference, marks a strategic shift in Nvidia&#x27;s software approach, emphasizing collaboration and openness in AI development. The platform aims to facilitate the creation and deployment of AI agents, potentially enhancing automation and efficiency across various sectors. This move could significantly impact developers and organizations seeking to integrate AI agents into their workflows, providing a robust and flexible foundation for innovation. Nvidia&#x27;s commitment to open-source solutions underscores its role in advancing AI technology and fostering a collaborative ecosystem.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/nvidia-planning-ai-agent-platform-launch-open-source/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "Apple&#x27;s Smart Home Display Delayed to Fall with iOS 27",
-            "title": "Rumored Apple Smart Home Display Now Expected This Fall",
-            "content": "Apple&#x27;s anticipated smart home display, unofficially dubbed &quot;HomePod with a screen,&quot; is now rumored to launch alongside iOS 27 this fall. Initially expected in 2025 and then this spring, the device&#x27;s release has faced delays, according to recent leaks and Bloomberg reports. This development aligns with Apple&#x27;s strategy to strengthen its smart home ecosystem, potentially integrating advanced AI features and seamless connectivity with other Apple devices. The delay may impact consumers eagerly awaiting enhanced smart home capabilities, but it also suggests Apple is refining the product to ensure a robust user experience. As competition in the smart home market intensifies, Apple&#x27;s entry could set new standards for integration and functionality.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/891723/apple-homepad-delay-rumor",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "OpenAI, Google Back Anthropic in Pentagon Lawsuit",
-            "title": "Tech Giants Support Anthropic in Defense Department Dispute",
-            "content": "In a show of solidarity, over 30 employees from OpenAI and Google DeepMind have publicly supported Anthropic&#x27;s lawsuit against the U.S. Department of Defense. The legal action follows the Pentagon&#x27;s classification of Anthropic as a supply-chain risk, a move that has sparked controversy within the tech community. The support from influential AI researchers highlights the broader concerns over governmental interference in AI innovation and security. If the lawsuit succeeds, it could set a precedent for how AI companies are evaluated and regulated by government agencies. This case underscores the tension between innovation and regulation in the rapidly evolving AI landscape.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/09/openai-and-google-employees-rush-to-anthropics-defense-in-dod-lawsuit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "AI Agents Revolutionize E-Commerce Visibility",
-            "title": "New System Enhances E-Commerce Visibility to AI Agents",
-            "content": "E-commerce brands are increasingly targeting AI agents as primary customers, a shift driven by the adoption of AI for product research and purchasing. A new system, already trusted by industry giants like L’Oréal, Unilever, Mars, and Beiersdorf, helps brands optimize their products for AI visibility. This approach involves structuring data and metadata to align with AI algorithms, ensuring products are easily discoverable by AI agents. As AI continues to reshape consumer behavior, businesses must adapt to remain competitive, emphasizing the importance of AI-friendly product listings. This trend highlights the growing influence of AI in consumer markets and the need for strategic adaptation by businesses.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/how-to-make-your-e-commerce-product-visible-to-ai-agents-use-this-new-system",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "Anthropic-Pentagon Dispute Threatens Billions in Deals",
-            "title": "Anthropic Warns Pentagon Dispute Could Cost Billions",
-            "content": "Anthropic, an AI startup, claims its ongoing dispute with the Pentagon could result in significant financial losses, potentially in the billions. The company alleges that the Trump administration&#x27;s designation of Anthropic as a supply-chain risk has caused partners to pause deal negotiations. This situation highlights the fragile nature of government-industry relations in the AI sector, where regulatory decisions can have substantial economic repercussions. The outcome of this dispute could influence future interactions between AI companies and government entities, emphasizing the need for clear guidelines and communication. The case underscores the broader challenges of navigating regulatory environments in high-tech industries.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/anthropic-claims-business-is-in-peril-due-to-supply-chain-risk-designation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 09 2026",
-            "headline": "Tech Leaders Rally Behind Anthropic in Defense Lawsuit",
-            "title": "OpenAI and Google Employees Support Anthropic&#x27;s Legal Battle",
-            "content": "Anthropic&#x27;s legal battle against the Department of Defense has gained significant support from nearly 40 employees at OpenAI and Google, including prominent figures like Jeff Dean. The lawsuit challenges the Pentagon&#x27;s designation of Anthropic as a supply-chain risk, a label that has sparked widespread debate within the tech industry. The backing from leading AI researchers underscores the importance of maintaining trust and transparency between AI firms and government agencies. This case could have far-reaching implications for how AI companies are assessed and regulated, potentially shaping future policies. The support from tech leaders reflects a unified stance against perceived overreach by governmental bodies in tech regulation.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/891514/anthropic-pentagon-lawsuit-amicus-brief-openai-google",
-            "relatedResources": []
         }
     ],
     "articles": {},
