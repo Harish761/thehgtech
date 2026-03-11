@@ -95,6 +95,7 @@
 
     <!-- GRC Specific CSS -->
     <link rel="stylesheet" href="grc-engine.css?v=2">
+    <link rel="stylesheet" href="modal.css">
 
     <!-- Custom Hero CSS for GRC -->
     <style>
@@ -778,10 +779,10 @@
             &copy; 2026 TheHGTech. All rights reserved.
         </p>
         <p style="color: #888; font-size: 0.85rem;">
-            <a href="../../index.html#about" style="color: #00d9ff; text-decoration: none; margin: 0 0.5rem;">About Us</a> | 
-            <a href="../../index.html#privacy" style="color: #00d9ff; text-decoration: none; margin: 0 0.5rem;">Privacy Policy</a> | 
-            <a href="../../index.html#terms" style="color: #00d9ff; text-decoration: none; margin: 0 0.5rem;">Terms of Service</a> |
-            <a href="../../index.html#contact" style="color: #00d9ff; text-decoration: none; margin: 0 0.5rem;">Contact</a>
+            <a href="#" onclick="openModal('about'); return false;" style="color: #00d9ff; text-decoration: none; margin: 0 0.5rem;">About Us</a> | 
+            <a href="#" onclick="openModal('privacy'); return false;" style="color: #00d9ff; text-decoration: none; margin: 0 0.5rem;">Privacy Policy</a> | 
+            <a href="#" onclick="openModal('terms'); return false;" style="color: #00d9ff; text-decoration: none; margin: 0 0.5rem;">Terms of Service</a> |
+            <a href="#" onclick="openModal('contact'); return false;" style="color: #00d9ff; text-decoration: none; margin: 0 0.5rem;">Contact</a>
         </p>
         <p style="color: #666; font-size: 0.8rem; margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
             Disclaimer: This tool provides a deterministic gap analysis and does not constitute formal legal or compliance certification. All data remains exclusively within your local browser.
@@ -804,7 +805,288 @@
         })();
     </script>
 
+    
+    <!-- Modals -->
+    <div class="modal" id="aboutModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('about')">&times;</button>
+            <div id="aboutContent"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('contact')">&times;</button>
+            <div style='padding: 0.5rem;'>
+                <div style='text-align: center; margin-bottom: 2.5rem;'>
+                    <h2
+                        style='font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, #FF3D3D, #00D9FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>
+                        Contact Us</h2>
+                    <p
+                        style='font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7; max-width: 700px; margin: 0 auto;'>
+                        We'd love to hear from you! Reach out through any of the following channels.</p>
+                </div>
+
+                <div
+                    style='background: linear-gradient(135deg, rgba(255, 61, 61, 0.05), rgba(0, 217, 255, 0.05)); border: 1px solid rgba(255, 61, 61, 0.2); border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem;'>
+                    <h3 style='color: #FF3D3D; font-size: 1.6rem; margin-bottom: 1.25rem; font-weight: 700;'>
+                        <i class="fas fa-envelope" style="margin-right: 0.75rem;"></i>Email
+                    </h3>
+                    <p style='color: var(--text-secondary); line-height: 1.9; font-size: 1.1rem;'>
+                        <a href="mailto:harish@thehgtech.com"
+                            style="color: #00D9FF; text-decoration: none; font-weight: 600; font-size: 1.2rem;">
+                            harish@thehgtech.com
+                        </a>
+                    </p>
+                </div>
+
+                <div
+                    style='display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 2rem;'>
+                    <div
+                        style='background: rgba(255, 61, 61, 0.05); border-left: 4px solid #FF3D3D; border-radius: 8px; padding: 2rem;'>
+                        <h4 style='color: #FF3D3D; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 700;'>
+                            <i class="fab fa-x-twitter" style="margin-right: 0.5rem;"></i>Twitter / X
+                        </h4>
+                        <p style='color: var(--text-secondary); font-size: 1rem; line-height: 1.7;'>
+                            <a href="https://twitter.com/thehgtech" target="_blank" rel="noopener noreferrer"
+                                style="color: #00D9FF; text-decoration: none; font-weight: 500;">@thehgtech</a>
+                        </p>
+                    </div>
+
+                    <div
+                        style='background: rgba(0, 217, 255, 0.05); border-left: 4px solid #00D9FF; border-radius: 8px; padding: 2rem;'>
+                        <h4 style='color: #00D9FF; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 700;'>
+                            <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i>LinkedIn
+                        </h4>
+                        <p style='color: var(--text-secondary); font-size: 1rem; line-height: 1.7;'>
+                            <a href="https://www.linkedin.com/in/harish-g-2216955b/" target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: #00D9FF; text-decoration: none; font-weight: 500;">Harish G</a>
+                        </p>
+                    </div>
+
+                    <div
+                        style='background: rgba(255, 61, 61, 0.05); border-left: 4px solid #FF3D3D; border-radius: 8px; padding: 2rem;'>
+                        <h4 style='color: #FF3D3D; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 700;'>
+                            <i class="fab fa-facebook" style="margin-right: 0.5rem;"></i>Facebook
+                        </h4>
+                        <p style='color: var(--text-secondary); font-size: 1rem; line-height: 1.7;'>
+                            <a href="https://www.facebook.com/profile.php?id=61582408623186" target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: #00D9FF; text-decoration: none; font-weight: 500;">TheHGTech</a>
+                        </p>
+                    </div>
+
+                    <div
+                        style='background: rgba(0, 217, 255, 0.05); border-left: 4px solid #00D9FF; border-radius: 8px; padding: 2rem;'>
+                        <h4 style='color: #00D9FF; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 700;'>
+                            <i class="fab fa-youtube" style="margin-right: 0.5rem;"></i>YouTube
+                        </h4>
+                        <p style='color: var(--text-secondary); font-size: 1rem; line-height: 1.7;'>
+                            <a href="https://youtube.com/@thehgtech" target="_blank" rel="noopener noreferrer"
+                                style="color: #00D9FF; text-decoration: none; font-weight: 500;">@thehgtech</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    style='background: linear-gradient(135deg, rgba(255, 61, 61, 0.08), rgba(0, 217, 255, 0.08)); border: 1px solid rgba(255, 61, 61, 0.25); border-radius: 16px; padding: 2.5rem; text-align: center;'>
+                    <p style='color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;'>
+                        For <strong style='color: var(--text-primary);'>business inquiries</strong>, <strong
+                            style='color: var(--text-primary);'>partnerships</strong>, or <strong
+                            style='color: var(--text-primary);'>press requests</strong>, please use the email above with
+                        a clear subject line.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="privacyModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('privacy')">&times;</button>
+            <div id="privacyContent">
+                <h2>Privacy Policy</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Last Updated: November 18,
+                    2025</p>
+
+                <h3>Information We Collect</h3>
+                <p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to
+                    provide our services:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li>Usage data (pages visited, time spent, browser type) via Google Analytics</li>
+                    <li>Cookies for theme preferences and site functionality</li>
+                </ul>
+
+                <h3>Third-Party Services</h3>
+                <p>We use the following third-party services that may collect data:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li><strong>Google Analytics:</strong> For anonymous traffic analysis</li>
+                    <li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li>
+                </ul>
+
+                <h3>Advertising</h3>
+                <p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li>Does NOT use cookies for tracking</li>
+                    <li>Does NOT collect personal information</li>
+                    <li>Only uses contextual targeting based on page content</li>
+                    <li>Serves ads from ethical, vetted technology companies</li>
+                </ul>
+                <p>Learn more: <a href="https://www.carbonads.net/privacy" target="_blank" rel="noopener noreferrer"
+                        style="color: var(--accent);">Carbon Ads Privacy Policy</a></p>
+
+                <h3>Cookies</h3>
+                <p>We use minimal cookies for:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li>Remembering your dark/light theme preference</li>
+                    <li>Tracking cookie consent (if accepted)</li>
+                </ul>
+
+                <h3>Data Security</h3>
+                <p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and
+                    HSTS to protect your information.</p>
+
+                <h3>Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li>Access any personal data we hold about you</li>
+                    <li>Request deletion of your data</li>
+                    <li>Opt-out of analytics by using browser privacy settings</li>
+                    <li>Use ad blockers to prevent ad display</li>
+                </ul>
+
+                <h3>External Links</h3>
+                <p>Our site contains links to external websites. We are not responsible for the privacy practices of
+                    these sites.</p>
+
+                <h3>Changes to Policy</h3>
+                <p>We may update this policy periodically. The "Last Updated" date will reflect any changes.</p>
+
+                <h3>Contact</h3>
+                <p>For privacy concerns, contact us at: <a href="#"
+                        onclick="this.href='mai'+'lto:'+'harish'+'@'+'thehgtech'+'.com'"
+                        style="color: var(--accent);"><span class="__cf_email__"
+                            data-cfemail="8ce4edfee5ffe4ccf8e4e9e4ebf8e9efe4a2efe3e1">[email&#160;protected]</span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="termsModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('terms')">&times;</button>
+            <div id="termsContent"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="advertiseModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('advertise')">&times;</button>
+            <h2>Advertise With Us</h2>
+            <p>Reach a highly engaged audience of cybersecurity professionals, AI researchers, and technology
+                decision-makers.</p>
+            <h3>Why Advertise on TheHGTech?</h3>
+            <ul>
+                <li><strong>Targeted Audience:</strong> Security professionals, CTOs, CISOs, and AI practitioners</li>
+                <li><strong>High Engagement:</strong> Readers actively seeking technical insights</li>
+                <li><strong>Brand Safety:</strong> Premium, curated content environment</li>
+                <li><strong>Flexible Options:</strong> Sponsored content, banner ads, newsletter features</li>
+            </ul>
+            <h3>Contact for Advertising</h3>
+            <p>Email: <a href="/cdn-cgi/l/email-protection#dab2bba8b3a9b29aaeb2bfb2bdaebfb9b2f4b9b5b7"
+                    style="color: var(--accent);"><span class="__cf_email__"
+                        data-cfemail="a9c1c8dbc0dac1e9ddc1ccc1ceddcccac187cac6c4">[email&#160;protected]</span></a></p>
+            <p>Subject line: "Advertising Inquiry"</p>
+        </div>
+    </div>
+    <script src="../../content.js?v=20260311" defer></script>
+    
+    <script>
+        function openModal(type) {
+            const modal = document.getElementById(type + 'Modal');
+            if (modal) {
+                const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+                document.body.style.paddingRight = scrollbarWidth + 'px';
+                const header = document.querySelector('.header');
+                if (header) header.style.paddingRight = scrollbarWidth + 'px';
+
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+
+                setTimeout(() => {
+                    modal.addEventListener('click', function (e) {
+                        if (e.target === modal) {
+                            closeModal(type);
+                        }
+                    });
+                }, 100);
+            }
+        }
+
+        function closeModal(type) {
+            const modal = document.getElementById(type + 'Modal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+                document.body.style.paddingRight = '';
+                const header = document.querySelector('.header');
+                if (header) header.style.paddingRight = '';
+            }
+        }
+
+        function loadModalContent() {
+            if (typeof websiteContent === 'undefined' || !websiteContent.modals) return;
+
+            const aboutEl = document.getElementById('aboutContent');
+            const privacyEl = document.getElementById('privacyContent');
+            const termsEl = document.getElementById('termsContent');
+
+            if (aboutEl && websiteContent.modals.about) {
+                aboutEl.innerHTML = websiteContent.modals.about;
+            }
+            if (privacyEl && websiteContent.modals.privacy) {
+                privacyEl.innerHTML = websiteContent.modals.privacy;
+            }
+            if (termsEl && websiteContent.modals.terms) {
+                termsEl.innerHTML = websiteContent.modals.terms;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Give time for content.js to load
+            setTimeout(loadModalContent, 100);
+            
+            // Handle hash
+            const hash = window.location.hash.substring(1);
+            if (['about', 'privacy', 'terms', 'contact'].includes(hash)) {
+                openModal(hash);
+            }
+        });
+
+        // Search scripts lazy loader
+        function lazyLoadScript(src) {
+            var s = document.createElement('script');
+            s.src = src;
+            s.defer = true;
+            document.body.appendChild(s);
+        }
+        function loadEnhancementScripts() {
+            var scripts = [
+                '/command-palette.js',
+                '/ui-enhancements.js?v=20260220'
+            ];
+            scripts.forEach(function (src) { lazyLoadScript(src); });
+        }
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadEnhancementScripts, { timeout: 3000 });
+        } else {
+            setTimeout(loadEnhancementScripts, 2000);
+        }
+    </script>
+
     <!-- Data & Logic -->
+
     <script src="grc-data.js?v=2"></script>
     <script src="grc-engine.js?v=2"></script>
 </body>
