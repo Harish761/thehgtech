@@ -4385,6 +4385,12 @@
         function openModal(type) {
             const modal = document.getElementById(type + 'Modal');
             if (modal) {
+                // Determine scrollbar width to prevent jitter
+                const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+                document.body.style.paddingRight = scrollbarWidth + 'px';
+                const header = document.querySelector('.header');
+                if (header) header.style.paddingRight = scrollbarWidth + 'px';
+
                 modal.classList.add('active');
                 document.body.style.overflow = 'hidden';
 
@@ -4405,6 +4411,9 @@
             if (modal) {
                 modal.classList.remove('active');
                 document.body.style.overflow = '';
+                document.body.style.paddingRight = '';
+                const header = document.querySelector('.header');
+                if (header) header.style.paddingRight = '';
             }
         }
 
