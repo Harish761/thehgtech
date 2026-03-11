@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1401",
+      "incident_id": 1401,
+      "title": "Washington State DOL's AI Phone System Reportedly Failed to Provide Spanish-Language Service to Call",
+      "date": "2026-03-11",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-787",
       "incident_id": 787,
       "title": "Deepfake ID Sales Allegedly Persist as OnlyFake Reportedly Relaunches with New Fraud Tools",
@@ -76,14 +84,6 @@
       "id": "AIID-1400",
       "incident_id": 1400,
       "title": "West Midlands Police Reportedly Relied on Erroneous Copilot-Generated Intelligence in Maccabi Tel Av",
-      "date": "2026-03-07",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1401",
-      "incident_id": 1401,
-      "title": "Washington State DOL's AI Phone System Reportedly Gave English Responses in a Spanish Accent to Call",
       "date": "2026-03-07",
       "category": "other",
       "severity": "medium"
@@ -1054,5 +1054,5 @@
     "last7Days": 11,
     "last30Days": 44
   },
-  "lastUpdated": "2026-03-11T22:35:15.804415+05:30"
+  "lastUpdated": "2026-03-12T00:55:56.736856+05:30"
 }
