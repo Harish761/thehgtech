@@ -174,20 +174,25 @@ document.addEventListener('DOMContentLoaded', async () => {
             const savedValue = userState[control.control_id] || '';
 
             card.innerHTML = `
-                <div class="control-header">
-                    <span class="control-id">${control.control_id}</span>
+                <div class="control-header" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:0.5rem;">
+                    <span class="control-id" style="background:var(--bg-dark); padding:0.2rem 0.6rem; border-radius:4px; font-weight:bold; color:var(--text-primary); border:1px solid var(--border); font-size:0.9rem;">Control A.${control.control_id}</span>
+                    <span class="domain-tag" style="background:rgba(0, 217, 255, 0.1); color:#00D9FF; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.8rem; font-weight:600;"><i class="fas fa-layer-group"></i> ${domain.name}</span>
                 </div>
-                <h3 class="control-title">${control.control_title}</h3>
+                <h3 class="control-title" style="margin-top:0.2rem;">${control.control_title}</h3>
                 <p class="control-objective" style="color:var(--text-muted); font-size:0.85rem; margin-bottom: 2rem; font-style: italic;">
                     <i class="fas fa-bullseye"></i> Objective: ${control.objective}
                 </p>
                 <div class="control-question">
                     <strong>Auditor Check:</strong> ${control.auditor_question}
                 </div>
-                <div class="control-evidence">
-                    <strong>Required Evidence for Audit:</strong>
-                    ${control.evidence_required}
-                </div>
+                <details class="control-evidence" style="margin-top:1rem; cursor:pointer;" open>
+                    <summary style="font-weight:bold; color:var(--accent-green); outline:none;">
+                        <i class="fas fa-folder-open"></i> Example Evidence
+                    </summary>
+                    <div style="padding-top:0.5rem; color:var(--text-muted); font-size:0.9rem;">
+                        ${control.evidence_required}
+                    </div>
+                </details>
                 
                 <div class="options-grid" data-control="${control.control_id}">
                     <button class="btn-option ${savedValue === 'yes' ? 'active' : ''}" data-val="yes">
@@ -345,7 +350,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         // 1. Render Chart.js Radar
-        const ctx = document.getElementById('readinessChart').getContext('2d');
+        const ctx = document.getElementById('radarChart').getContext('2d');
         if (radarChartInstance) radarChartInstance.destroy(); // clear previous
 
         radarChartInstance = new Chart(ctx, {
@@ -420,15 +425,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         ui.btnPdfExport.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating PDF...';
         ui.btnPdfExport.disabled = true;
 
-        // Temporarily reveal branding for the PDF
+        // Temporarily reveal branding for the PDF and force light mode to avoid black PDF text issues
         document.querySelector('.pdf-branding').style.display = 'block';
+        const wasLightMode = document.body.classList.contains('light-mode');
+        document.body.classList.add('light-mode');
 
         const element = document.getElementById('printableDashboard');
         const opt = {
             margin: 0.5,
-            filename: 'TheHGTech_GRC_Gap_Analysis_Report.pdf',
+            filename: 'ISO27001_Gap_Assessment_' + new Date().toISOString().split('T')[0] + '.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true, backgroundColor: '#0a0a0a' },
+            html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff' },
             jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
         };
 
@@ -436,6 +443,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         setTimeout(() => {
             html2pdf().set(opt).from(element).save().then(() => {
                 document.querySelector('.pdf-branding').style.display = 'none';
+                if (!wasLightMode) document.body.classList.remove('light-mode');
                 ui.btnPdfExport.innerHTML = originalText;
                 ui.btnPdfExport.disabled = false;
             });
@@ -450,45 +458,93 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         setTimeout(() => {
             try {
+                // SHEET 1: Executive Summary
+                const execSummary = [];
+                execSummary.push(["ISO 27001:2022 Executive Summary"]);
+                execSummary.push(["Generated on:", new Date().toLocaleDateString()]);
+                execSummary.push(["Framework:", grcData.framework]);
+                execSummary.push([]);
+                
+                let totalC = 0, implC = 0, partC = 0, gapC = 0, naC = 0;
+                const criticalGaps = [];
+
+                // Re-calculate totals across active scoping
+                activeDomainIndices.forEach(globalIdx => {
+                    const domain = grcData.domains[globalIdx];
+                    domain.controls.forEach(c => {
+                        totalC++;
+                        const ans = userState[c.control_id] || '';
+                        if (ans === 'yes') implC++;
+                        else if (ans === 'partial') partC++;
+                        else if (ans === 'na') naC++;
+                        else gapC++;
+
+                        if (ans === 'no' || ans === 'partial' || ans === '') {
+                            criticalGaps.push([c.control_id, c.control_title, ans === 'partial' ? 'Medium' : 'High']);
+                        }
+                    });
+                });
+
+                execSummary.push(["Total Controls scoped:", totalC]);
+                execSummary.push(["Implemented:", implC]);
+                execSummary.push(["Partial (In-Progress):", partC]);
+                execSummary.push(["Control Gap:", gapC]);
+                execSummary.push(["Not Applicable:", naC]);
+                execSummary.push(["Overall Readiness Score:", ui.overallScore.innerText]);
+                execSummary.push([]);
+                
+                execSummary.push(["Top Risk Gaps"]);
+                execSummary.push(["Control ID", "Control Title", "Risk Level"]);
+                criticalGaps.forEach(g => execSummary.push(g));
+
+                // SHEET 2: Gap Analysis Data
                 const exportData = [];
-                exportData.push(["TheHGTech GRC - Statement of Applicability (SoA) Gap Analysis"]);
-                exportData.push(["Generated on:", new Date().toLocaleDateString()]);
-                exportData.push(["Evaluated Framework:", grcData.framework]);
-                exportData.push(["Overall Readiness Score:", ui.overallScore.innerText]);
-                exportData.push([]);
+                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice"]);
 
-                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice"]);
-
-                // Export ONLY active scoped domains
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
                     domain.controls.forEach(control => {
                         const rawStatus = userState[control.control_id] || "Not Evaluated";
                         let friendlyStatus = "Not Evaluated";
-                        if (rawStatus === 'yes') friendlyStatus = "Implemented";
-                        if (rawStatus === 'partial') friendlyStatus = "Partial (In-Progress)";
-                        if (rawStatus === 'no') friendlyStatus = "Control Gap";
-                        if (rawStatus === 'na') friendlyStatus = "Not Applicable";
+                        let riskLevel = "High";
+
+                        if (rawStatus === 'yes') { friendlyStatus = "Implemented"; riskLevel = "Low"; }
+                        else if (rawStatus === 'partial') { friendlyStatus = "Partial (In-Progress)"; riskLevel = "Medium"; }
+                        else if (rawStatus === 'no') { friendlyStatus = "Control Gap"; riskLevel = "High"; }
+                        else if (rawStatus === 'na') { friendlyStatus = "Not Applicable"; riskLevel = "None"; }
 
                         exportData.push([
                             domain.name,
-                            control.control_id,
+                            "A." + control.control_id,
                             control.control_title,
                             friendlyStatus,
+                            riskLevel,
                             control.objective,
                             control.auditor_question,
                             control.evidence_required,
-                            control.remediation_advice || "N/A"
+                            control.remediation_advice || "Review mapping and implement process"
                         ]);
                     });
                 });
 
                 const wb = XLSX.utils.book_new();
-                const ws = XLSX.utils.aoa_to_sheet(exportData);
-                ws['!cols'] = [{ wch: 22 }, { wch: 10 }, { wch: 30 }, { wch: 20 }, { wch: 50 }, { wch: 55 }, { wch: 55 }, { wch: 60 }];
 
-                XLSX.utils.book_append_sheet(wb, ws, "Gap Analysis");
-                XLSX.writeFile(wb, "TheHGTech_GRC_Gap_Analysis.xlsx");
+                // Build Summary Sheet
+                const wsSum = XLSX.utils.aoa_to_sheet(execSummary);
+                wsSum['!cols'] = [{ wch: 30 }, { wch: 40 }, { wch: 15 }];
+                XLSX.utils.book_append_sheet(wb, wsSum, "Executive Summary");
+
+                // Build Detail Sheet
+                const ws = XLSX.utils.aoa_to_sheet(exportData);
+                ws['!cols'] = [{ wch: 25 }, { wch: 10 }, { wch: 30 }, { wch: 20 }, { wch: 10 }, { wch: 40 }, { wch: 45 }, { wch: 45 }, { wch: 50 }];
+                
+                // Add AutoFilter to data sheet
+                ws['!autofilter'] = { ref: `A1:I${exportData.length}` };
+
+                XLSX.utils.book_append_sheet(wb, ws, "Detailed Gap Analysis");
+
+                let outName = "ISO27001_Gap_Assessment_" + new Date().toISOString().split('T')[0] + ".xlsx";
+                XLSX.writeFile(wb, outName);
             } catch (error) {
                 console.error("Export Error:", error);
                 alert("Error building Excel dump.");
