@@ -474,37 +474,155 @@ document.addEventListener('DOMContentLoaded', async () => {
     // PHASE 4/5: EXPORT CAPABILITIES
     // ==========================================
 
-    // PDF Export
+    // PDF Export NATIVE GENERATION via pdfMake
     ui.btnPdfExport.addEventListener('click', () => {
         const originalText = ui.btnPdfExport.innerHTML;
         ui.btnPdfExport.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating PDF...';
         ui.btnPdfExport.disabled = true;
 
-        // Temporarily reveal branding for the PDF and force light mode to avoid black PDF text issues
-        document.querySelector('.pdf-branding').style.display = 'block';
-        const wasLightMode = document.body.classList.contains('light-mode');
-        document.body.classList.add('light-mode');
-        document.body.classList.add('pdf-exporting'); // Handles overflow overrides for print
-
-        const element = document.getElementById('printableDashboard');
-        const opt = {
-            margin: 0.5,
-            filename: 'ISO27001_Gap_Assessment_' + new Date().toISOString().split('T')[0] + '.pdf',
-            image: { type: 'jpeg', quality: 1.0 },
-            html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff', windowWidth: 1200 },
-            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
-            pagebreak: { mode: ['css', 'legacy'] }
-        };
-
-        // Delay to allow DOM update
         setTimeout(() => {
-            html2pdf().set(opt).from(element).save().then(() => {
-                document.querySelector('.pdf-branding').style.display = 'none';
-                if (!wasLightMode) document.body.classList.remove('light-mode');
-                document.body.classList.remove('pdf-exporting');
+            try {
+                // 1. Gather Calculations
+                let totalC = 0, implC = 0, partC = 0, gapC = 0, naC = 0;
+                const criticalGaps = [];
+
+                activeDomainIndices.forEach(globalIdx => {
+                    const domain = grcData.domains[globalIdx];
+                    domain.controls.forEach(c => {
+                        totalC++;
+                        const ans = userState[c.control_id] || '';
+                        if (ans === 'yes') implC++;
+                        else if (ans === 'partial') { partC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', rem: c.remediation_advice}); }
+                        else if (ans === 'na') naC++;
+                        else { gapC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', rem: c.remediation_advice}); }
+                    });
+                });
+
+                // 2. Build Gap Table
+                const gapTableBody = [
+                    [
+                        { text: 'Control ID', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
+                        { text: 'Title', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
+                        { text: 'Risk Level', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
+                        { text: 'Suggested Remediation', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] }
+                    ]
+                ];
+
+                if(criticalGaps.length === 0){
+                    gapTableBody.push([{text: 'Outstanding! No critical gaps identified in the evaluated scope.', colSpan: 4, alignment: 'center', margin: [0, 10, 0, 10], color: '#10B981', bold: true}, {}, {}, {}]);
+                } else {
+                    criticalGaps.forEach(g => {
+                        const riskColor = g.risk === 'High' ? '#ef4444' : '#f59e0b';
+                        gapTableBody.push([
+                            { text: 'A.' + g.id, margin: [0, 4, 0, 4] },
+                            { text: g.title, margin: [0, 4, 0, 4] },
+                            { text: g.risk.toUpperCase(), bold: true, color: riskColor, margin: [0, 4, 0, 4] },
+                            { text: g.rem || 'Review mapping and implement formal process logic.', margin: [0, 4, 0, 4] }
+                        ]);
+                    });
+                }
+
+                // 3. Extract Chart Canvas
+                const chartCanvas = document.getElementById('radarChart');
+                // Create a white background canvas so the graph isn't transparent in the PDF
+                let finalChartImage = '';
+                if(chartCanvas) {
+                    const tempCanvas = document.createElement('canvas');
+                    tempCanvas.width = chartCanvas.width;
+                    tempCanvas.height = chartCanvas.height;
+                    const ctx = tempCanvas.getContext('2d');
+                    ctx.fillStyle = "#ffffff";
+                    ctx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+                    ctx.drawImage(chartCanvas, 0, 0);
+                    finalChartImage = tempCanvas.toDataURL("image/png", 1.0);
+                }
+                const chartImgObject = finalChartImage ? { image: finalChartImage, width: 280, alignment: 'center' } : { text: '[Chart rendering unavailable]', alignment: 'center' };
+
+                // 4. Document Definition
+                const docDefinition = {
+                    info: { title: 'ISO 27001 Gap Assessment', author: 'TheHGTech', subject: 'Enterprise GRC Report' },
+                    pageMargins: [40, 60, 40, 60],
+                    header: function(currentPage, pageCount) {
+                        return { text: 'TheHGTech Enterprise GRC', alignment: 'right', margin: [0, 20, 40, 0], color: '#00d9ff', bold: true, fontSize: 10 };
+                    },
+                    footer: function(currentPage, pageCount) {
+                        return { text: 'Page ' + currentPage + ' of ' + pageCount, alignment: 'center', margin: [0, 20, 0, 0], color: '#9ca3af', fontSize: 9 };
+                    },
+                    content: [
+                        { text: 'ISO 27001 Gap Analysis Executive Summary', style: 'mainHeader' },
+                        { text: 'Framework: ISO/IEC 27001:2022', style: 'subHeader' },
+                        { text: 'Generated on: ' + new Date().toLocaleDateString(), style: 'dateToken' },
+                        
+                        {
+                            margin: [0, 30, 0, 20],
+                            columns: [
+                                {
+                                    width: '45%',
+                                    stack: [
+                                        { text: 'Overall Compliance Posture', style: 'sectionHeader' },
+                                        { text: ui.overallScore.innerText, style: 'giantScore', color: ui.overallScore.style.color },
+                                        { text: 'Scope Breakdown', bold: true, margin: [0, 15, 0, 5] },
+                                        {
+                                            layout: 'noBorders',
+                                            table: {
+                                                widths: ['*', 'auto'],
+                                                body: [
+                                                    ['Total Evaluated Controls:', { text: totalC.toString(), bold: true }],
+                                                    [{ text: 'Implemented (Low Risk):', color: '#10B981' }, { text: implC.toString(), bold: true, color: '#10B981' }],
+                                                    [{ text: 'Partial (Medium Risk):', color: '#F59E0B' }, { text: partC.toString(), bold: true, color: '#F59E0B' }],
+                                                    [{ text: 'Gap (High Risk):', color: '#EF4444' }, { text: gapC.toString(), bold: true, color: '#EF4444' }],
+                                                    [{ text: 'Not Applicable:', color: '#6b7280' }, { text: naC.toString(), bold: true, color: '#6b7280' }]
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    width: '55%',
+                                    stack: [ chartImgObject ]
+                                }
+                            ]
+                        },
+
+                        // Forced pagebreak logic removed if we just want it to lay out naturally, 
+                        // but best to explicitly break for the detailed tables so it feels structured.
+                        { text: 'Critical Gaps & Recommended Remediation', style: 'sectionHeader', pageBreak: 'before' },
+                        { text: 'The following controls require immediate or scheduled action to achieve strict adherence with objective framework compliance requirements.', margin: [0, 0, 0, 10], color: '#6b7280'},
+                        {
+                            table: {
+                                headerRows: 1,
+                                widths: ['15%', '25%', '15%', '45%'],
+                                body: gapTableBody
+                            },
+                            layout: {
+                                hLineWidth: function(i, node) { return (i === 0 || i === node.table.body.length) ? 0 : 1; },
+                                vLineWidth: function(i) { return 0; },
+                                hLineColor: function(i) { return '#e5e7eb'; },
+                                paddingLeft: function(i) { return 4; },
+                                paddingRight: function(i) { return 4; },
+                            }
+                        }
+                    ],
+                    styles: {
+                        mainHeader: { fontSize: 22, bold: true, color: '#111827', margin: [0, 0, 0, 5] },
+                        subHeader: { fontSize: 14, color: '#374151', margin: [0, 0, 0, 2] },
+                        dateToken: { fontSize: 10, color: '#6b7280', margin: [0, 0, 0, 20] },
+                        sectionHeader: { fontSize: 16, bold: true, color: '#111827', margin: [0, 0, 0, 5] },
+                        giantScore: { fontSize: 44, bold: true, alignment: 'left' }
+                    },
+                    defaultStyle: { font: 'Roboto', fontSize: 10, color: '#374151', lineHeight: 1.3 }
+                };
+
+                const outName = 'ISO27001_Gap_Assessment_' + new Date().toISOString().split('T')[0] + '.pdf';
+                pdfMake.createPdf(docDefinition).download(outName);
+
+            } catch (err) {
+                console.error("PDF Native Generation Failed:", err);
+                alert("Failed to build PDF structure. Please check console for errors.");
+            } finally {
                 ui.btnPdfExport.innerHTML = originalText;
                 ui.btnPdfExport.disabled = false;
-            });
+            }
         }, 500);
     });
 
