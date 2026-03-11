@@ -4,12 +4,12 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 10 2026",
-            "headline": "OpenAI&#x27;s Codex Scanner Finds Hundreds of Critical Flaws",
-            "title": "OpenAI&#x27;s Codex Security Vulnerability Scanner Uncovers Critical Software Flaws",
-            "content": "OpenAI has launched the Codex Security Vulnerability Scanner, formerly known as Aardvark, which has identified hundreds of critical vulnerabilities in various software applications over the past month. This tool leverages advanced AI capabilities to detect security weaknesses across different platforms, providing a proactive approach to software security. The scanner&#x27;s ability to uncover such a high volume of vulnerabilities highlights the persistent challenges in maintaining secure software environments. Developers and security teams are advised to integrate continuous vulnerability scanning into their development cycles to mitigate potential risks. The emergence of AI-driven security tools underscores the growing role of artificial intelligence in enhancing cybersecurity measures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/openai-rolls-out-codex-security-vulnerability-scanner/",
+            "date": "Mar 11 2026",
+            "headline": "Middle East Conflict Exposes Cloud Data Center Vulnerabilities",
+            "title": "Middle East Conflict Highlights Cloud Resilience Gaps Amid Attacks",
+            "content": "Amid escalating tensions in the Middle East, data centers used by governments and militaries are increasingly targeted in both cyber and kinetic attacks. These facilities, crucial for operational command and control, face vulnerabilities that expose significant gaps in cloud resilience. As cyberattacks become more sophisticated, the risk of physical attacks on data infrastructure adds a new dimension of threat. This situation underscores the urgent need for enhanced security measures and robust disaster recovery plans to protect sensitive data and ensure continuity of operations. Organizations relying on cloud services in conflict zones should reassess their security postures and prepare for potential disruptions.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/middle-east-conflict-highlights-cloud-resilience-gaps",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -19,78 +19,78 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Mar 10 2026",
-            "headline": "Mandia&#x27;s Armadin Secures $190M for AI Red Teaming",
-            "title": "Armadin Launches with $190 Million Funding to Revolutionize AI-Powered Red Teaming",
-            "content": "Kevin Mandia&#x27;s new venture, Armadin, has officially launched with an impressive $190 million in funding, aiming to transform the landscape of cybersecurity testing through AI-powered red teaming. Armadin&#x27;s platform simulates real-world attack scenarios, enabling organizations to identify and address vulnerabilities before malicious actors can exploit them. This innovative approach is designed to mimic the tactics, techniques, and procedures used by sophisticated threat actors, providing a more realistic assessment of an organization&#x27;s security posture. With the backing of significant investment, Armadin plans to expand its capabilities and market reach, offering a robust solution for proactive cybersecurity defense.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/kevin-mandias-armadin-launches-with-189-9-million-in-funding/",
+            "date": "Mar 11 2026",
+            "headline": "ISC Stormcast Highlights Cyber Threat Landscape—March 11 Update",
+            "title": "ISC Stormcast Provides Key Insights into Current Cyber Threats",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast highlights current cyber threats, emphasizing a stable threat level with InfoCON remaining at green. The report covers recent vulnerabilities and trends that security professionals should monitor, including emerging malware and phishing campaigns. While no immediate critical threats are identified, the update advises continued vigilance and adherence to best practices in cybersecurity hygiene. Organizations are encouraged to stay informed through regular updates and to implement robust security measures to mitigate potential risks. The Stormcast serves as a valuable resource for maintaining situational awareness in the dynamic threat landscape.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32784",
             "relatedResources": [
                 {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Phishing & Security Awareness",
+                    "url": "/guides/phishing-simulation-security-awareness.html",
+                    "icon": "fa-fish"
                 }
             ]
         },
         {
-            "date": "Mar 10 2026",
-            "headline": "LeakyLooker Flaws Expose Google Cloud Data to SQL Attacks",
-            "title": "Cross-Tenant Vulnerabilities in Google Looker Studio Enable SQL Data Exfiltration",
-            "content": "Cybersecurity researchers have disclosed nine vulnerabilities, collectively dubbed &quot;LeakyLooker,&quot; in Google Looker Studio that could allow attackers to execute arbitrary SQL queries across tenant boundaries. These flaws put sensitive data at risk within organizations&#x27; Google Cloud environments, potentially leading to unauthorized data access and exfiltration. The vulnerabilities underscore the critical need for robust security measures in cloud-based analytics platforms. Organizations using Google Looker Studio should review their security configurations and apply necessary patches or mitigations to protect against potential exploitation. This discovery highlights the ongoing challenges in securing complex cloud ecosystems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/new-leakylooker-flaws-in-google-looker.html",
-            "relatedResources": [
-                {
-                    "label": "Cloud Security Hardening",
-                    "url": "/guides/cloud-security-hardening.html",
-                    "icon": "fa-cloud"
-                }
-            ]
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Salesforce Users Targeted—Data Theft Campaign Uncovered",
-            "title": "Salesforce Customers Face Data Theft via Poorly Secured Instances",
-            "content": "Salesforce has confirmed a data theft campaign targeting its customers through inadequately secured instances. This campaign exploits misconfigurations and weak security practices, allowing attackers to access and potentially exfiltrate sensitive customer data. The widespread use of Salesforce across industries makes this a significant concern for organizations relying on the platform for customer relationship management. Affected companies are urged to conduct thorough security audits of their Salesforce configurations and implement stronger access controls to prevent unauthorized access. This incident highlights the importance of securing cloud-based services against evolving cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hundreds-of-salesforce-customers-allegedly-targeted-in-new-data-theft-campaign/",
-            "relatedResources": [
-                {
-                    "label": "Cloud Security Hardening",
-                    "url": "/guides/cloud-security-hardening.html",
-                    "icon": "fa-cloud"
-                }
-            ]
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Escape Secures $18M to Enhance AI Pentesting",
-            "title": "Escape Raises $18 Million to Expand Automated Pentesting Capabilities",
-            "content": "Escape, a cybersecurity firm focused on automating penetration testing, has raised $18 million to enhance its platform&#x27;s AI-driven capabilities and scale its engineering and go-to-market teams. The company&#x27;s platform aims to streamline the pentesting process by using AI agents to identify vulnerabilities more efficiently and accurately. This funding will enable Escape to further develop its technology and expand its market presence, addressing the growing demand for automated security testing solutions. As organizations face increasing pressure to secure their systems, automated pentesting offers a scalable and effective approach to identifying and mitigating security risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/escape-raises-18-million-to-automate-pentesting/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Ivanti Endpoint Flaw Exploited—CISA Adds to KEV List",
-            "title": "Ivanti Endpoint Manager Vulnerability Exploited in Active Attacks",
-            "content": "A high-severity authentication bypass vulnerability in Ivanti Endpoint Manager has been actively exploited, prompting the Cybersecurity and Infrastructure Security Agency (CISA) to add it to its Known Exploited Vulnerabilities (KEV) list. This vulnerability, along with flaws in SolarWinds and Workspace One, poses significant risks to affected systems, potentially allowing unauthorized access and control. Organizations using Ivanti Endpoint Manager should prioritize patching this vulnerability to protect against exploitation. The inclusion of this flaw in the KEV list underscores the critical need for timely vulnerability management in safeguarding enterprise environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/recent-ivanti-endpoint-manager-flaw-exploited-in-attacks/",
+            "date": "Mar 11 2026",
+            "headline": "Microsoft Patches 83 CVEs—March Update Brings Relief",
+            "title": "Microsoft Patches 83 CVEs in March Update Without Major Panic",
+            "content": "Microsoft&#x27;s March Patch Tuesday addressed 83 Common Vulnerabilities and Exposures (CVEs) across its software ecosystem, bringing a sense of relief to security experts. Unlike previous months, this update does not include any zero-day vulnerabilities, reducing immediate concerns for IT administrators. The patches cover a range of products, including Windows operating systems and Microsoft Office, with some vulnerabilities rated as critical. Organizations are advised to prioritize updates based on their specific environments to ensure comprehensive protection. This update is a reminder of the importance of regular patch management in maintaining secure systems.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/microsoft-patches-83-cves-march-update",
             "relatedResources": [
                 {
                     "label": "CVE Prioritization Guide",
                     "url": "/guides/cve-prioritization-patch-management.html",
                     "icon": "fa-bug"
-                },
+                }
+            ]
+        },
+        {
+            "date": "Mar 11 2026",
+            "headline": "Microsoft Fixes 77 Vulnerabilities—March Patch Tuesday Overview",
+            "title": "Microsoft Patch Tuesday, March 2026 Edition Fixes 77 Vulnerabilities",
+            "content": "Microsoft&#x27;s latest security update addresses 77 vulnerabilities across its software, including Windows operating systems and other applications. Notably, this month&#x27;s Patch Tuesday does not feature any zero-day vulnerabilities, unlike February&#x27;s concerning five zero-day issues. While the absence of zero-day threats is reassuring, some patches still warrant prompt attention due to their potential impact. IT teams should review the updates and deploy them according to their organization&#x27;s risk management strategies. This update reflects Microsoft&#x27;s ongoing efforts to enhance security and protect users from evolving threats.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/03/microsoft-patch-tuesday-march-2026-edition/",
+            "relatedResources": [
+                {
+                    "label": "Active Directory Security",
+                    "url": "/guides/active-directory-security-hardening.html",
+                    "icon": "fa-sitemap"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Microsoft Office Faces Three High Severity Vulnerabilities",
+            "title": "March Patch Tuesday: Three High Severity Holes in Microsoft Office",
+            "content": "Microsoft&#x27;s March Patch Tuesday highlights three high severity vulnerabilities within its Office suite, affecting applications widely used in corporate environments. Although no zero-day vulnerabilities are present, these Office-related flaws require immediate attention due to their potential exploitation risks. Jack Bicer, director of vulnerability research at Action1, emphasizes the importance of addressing these issues promptly to prevent potential data breaches. Organizations should ensure their Office applications are updated to mitigate the threat. This focus on Office underscores the ongoing need for vigilance in patch management, especially for software critical to daily operations.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4143232/march-patch-tuesday-three-high-severity-holes-in-microsoft-office.html",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "BlackSanta Malware Targets HR Departments—EDR Solutions Compromised",
+            "title": "New ‘BlackSanta’ EDR Killer Spotted Targeting HR Departments",
+            "content": "A Russian-speaking threat actor has been deploying a new malware named BlackSanta, specifically targeting human resources departments. This malware is designed to disable Endpoint Detection and Response (EDR) solutions, leaving organizations vulnerable to further attacks. BlackSanta has been active for over a year, highlighting the persistent threat posed by advanced adversaries. HR departments, often handling sensitive employee data, are urged to enhance their security measures and remain vigilant against phishing attempts. Organizations should review their EDR configurations and ensure robust defenses are in place to counter such sophisticated threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-blacksanta-edr-killer-spotted-targeting-hr-departments/",
+            "relatedResources": [
                 {
                     "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
                     "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
@@ -100,42 +100,23 @@ const websiteContent = {
         },
         {
             "date": "Mar 10 2026",
-            "headline": "Webinar on AI Agent Data Leaks—Audit Your Workflows",
-            "title": "How to Prevent AI Data Leaks: Auditing Modern Agentic Workflows",
-            "content": "A recent webinar has highlighted the growing concern of data leaks associated with AI agents, which are increasingly used to automate tasks such as sending emails and managing software. These agents, while enhancing productivity, introduce new security challenges by potentially creating backdoors for data exfiltration. The webinar emphasized the importance of auditing workflows involving AI agents to identify and mitigate risks. Organizations should implement comprehensive monitoring and access controls to prevent unauthorized data access. As AI continues to evolve, ensuring the security of AI-driven processes becomes paramount for protecting sensitive information.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/how-to-stop-ai-data-leaks-webinar-guide.html",
+            "headline": "BeatBanker Malware Masquerades as Starlink App—Android Devices Hijacked",
+            "title": "New BeatBanker Android Malware Poses as Starlink App to Hijack Devices",
+            "content": "A new Android malware named BeatBanker is exploiting users by posing as a legitimate Starlink app, tricking them into installing it from fake websites that mimic the Google Play Store. Once installed, BeatBanker gains control over the device, potentially leading to data theft and unauthorized access. The malware&#x27;s deceptive tactics highlight the ongoing threat of app-based attacks on mobile devices. Android users are advised to download apps exclusively from the official Google Play Store and to verify app authenticity before installation. This incident underscores the importance of mobile security awareness in preventing malware infections.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-beatbanker-android-malware-poses-as-starlink-app-to-hijack-devices/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": ".arpa Domain Exploited—Phishing Detection Evasion Uncovered",
-            "title": "Hackers Manipulate .arpa Domain to Evade Phishing Detection",
-            "content": "A threat actor has been exploiting the .arpa top-level domain (TLD) to bypass phishing detection systems, according to Infoblox. The attack leverages IPv6-to-IPv4 tunneling to host phishing content on domains that typically should not resolve to an IP address. This manipulation allows attackers to disguise malicious activities under the guise of legitimate network operations. Organizations relying on conventional phishing detection tools may find themselves vulnerable, as these tools often overlook such sophisticated domain manipulations. Security professionals are advised to update their detection systems to recognize and block these anomalous domain resolutions. This incident underscores the evolving tactics of cybercriminals in exploiting internet infrastructure for phishing.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4142631/hacker-abusing-arpa-domain-to-evade-phishing-detection-says-infoblox.html",
-            "relatedResources": [
+                },
                 {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
                 }
             ]
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Tuesday&#x27;s ISC Stormcast—Key Cybersecurity Updates",
-            "title": "ISC Stormcast Highlights for March 10th, 2026",
-            "content": "The SANS Internet Storm Center’s latest Stormcast podcast for March 10th, 2026, provides crucial updates on current cybersecurity threats and trends. The InfoCON level remains at green, indicating a stable threat environment. Key topics include recent vulnerabilities and their potential impact on enterprise networks. The podcast also covers new attack vectors that security professionals should monitor. Staying informed through such updates is vital for maintaining robust cybersecurity defenses in an ever-evolving threat landscape. Security teams are encouraged to integrate these insights into their risk management strategies.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32780",
-            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -164,12 +145,36 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 10 2026",
-            "headline": "Adobe&#x27;s AI Assistant Revolutionizes Photoshop Image Editing",
-            "title": "Adobe Introduces AI Assistant and New Features for Photoshop and Firefly",
-            "content": "Adobe has unveiled an AI assistant for Photoshop, enhancing its image editing capabilities with cutting-edge technology. This assistant, now available in public beta for web and mobile, allows users to edit images by simply describing desired changes to a chatbot. Additionally, Adobe&#x27;s Firefly platform is receiving new AI-powered features to streamline creative workflows. These advancements are set to transform how designers and artists interact with Adobe&#x27;s Creative Cloud apps, making complex image editing tasks more intuitive and accessible. Professionals using Photoshop and Firefly should explore these features to leverage AI in their creative processes.",
+            "date": "Mar 11 2026",
+            "headline": "Google Expands Gemini—Now in 8 Indian Languages",
+            "title": "Google Gemini AI Rolls Out in Chrome with Indian Language Support",
+            "content": "Google has launched its Gemini AI model in the Chrome browser for users in India, expanding its language capabilities to include Hindi, Bengali, Gujarati, Kannada, Malayalam, Marathi, Telugu, and Tamil. This rollout aims to enhance user experience by providing localized support and accessibility for millions of users across India. Gemini&#x27;s integration into Chrome is part of Google&#x27;s broader strategy to cater to the diverse linguistic landscape in India, which is one of the largest markets for internet users. By supporting multiple regional languages, Google seeks to bridge the digital divide and offer personalized AI assistance to a wider audience. Users can expect improved interaction and engagement with web content in their native languages.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/10/adobe-is-debuting-an-ai-assistant-for-photoshop/",
+            "sourceUrl": "https://techcrunch.com/2026/03/10/google-gemini-chrome-expands-to-india-canada-new-zealand/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 11 2026",
+            "headline": "White House Targets Anthropic—Executive Order Looms",
+            "title": "Trump Administration Considers Further Action Against AI Startup Anthropic",
+            "content": "The Trump administration is contemplating additional measures against AI startup Anthropic, with a potential executive order in the works. This follows previous actions that are currently under judicial review, signaling ongoing scrutiny of the company&#x27;s operations. The administration&#x27;s focus on Anthropic highlights concerns over AI governance and regulatory compliance within the tech industry. If enacted, the executive order could impose new restrictions or requirements on the startup, affecting its business operations and strategic direction. Stakeholders in the AI community are closely monitoring the situation, as it may set precedents for future government interactions with AI companies.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/trump-administration-refuses-to-say-it-wont-take-further-action-against-anthropic/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Iran Conflict Threatens Data Centers—Energy Costs Soar",
+            "title": "Impact of Iran Conflict on Data Centers and Electricity Prices",
+            "content": "The ongoing conflict with Iran is raising concerns about its potential impact on data centers and electricity costs worldwide. As oil and gas prices surge due to geopolitical tensions, data centers, which are heavy electricity consumers, may face increased operational costs. Reed Blakemore from the Atlantic Council Global Energy Center notes that the energy supply chain disruptions could exacerbate these challenges, affecting data center reliability and pricing models. Companies relying on data centers should prepare for potential cost increases and consider energy efficiency measures to mitigate risks. The situation underscores the vulnerability of critical infrastructure to geopolitical events.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/892661/iran-war-oil-gas-prices-data-center-electricity",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -180,98 +185,55 @@ const websiteContent = {
         },
         {
             "date": "Mar 10 2026",
-            "headline": "Zoom&#x27;s AI Suite—Avatars and Deepfake Detection Launch",
-            "title": "Zoom Launches AI-Powered Office Suite with Avatars and Deepfake Detection",
-            "content": "Zoom has announced a new AI-powered office suite that includes AI avatars for meetings, set to debut this month. The suite also features real-time deepfake detection technology to enhance meeting security and authenticity. These innovations aim to improve virtual collaboration by providing a more engaging and secure experience for users. As businesses continue to adapt to hybrid work environments, Zoom&#x27;s AI enhancements could play a crucial role in maintaining productivity and security. Organizations should consider integrating these tools to optimize their virtual meeting capabilities.",
+            "headline": "Ford Unveils AI for Fleets—Boosts Efficiency",
+            "title": "Ford Introduces AI-Powered Service for Commercial Fleets",
+            "content": "Ford has announced the launch of Ford Pro AI, a new generative AI service designed for its commercial fleet and telematics software customers. This system analyzes data from commercial vehicles, such as vehicle speed, seat belt activity, and engine health, to provide actionable insights for fleet management. By leveraging AI, Ford aims to enhance operational efficiency, reduce downtime, and improve safety across its fleet services. This initiative reflects a growing trend in the automotive industry towards integrating AI to optimize vehicle performance and customer service. Fleet operators are encouraged to adopt these technologies to stay competitive in the evolving market.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/transportation/892010/ford-pro-ai-telematics-commercial-fleet",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "Amazon&#x27;s Health AI—Now on Website and App",
+            "title": "Amazon Launches Healthcare AI Assistant for Enhanced User Experience",
+            "content": "Amazon has rolled out its new healthcare AI assistant across its website and mobile app, offering users a range of health-related services. The AI can answer health questions, explain medical records, manage prescription renewals, and facilitate appointment bookings. This development is part of Amazon&#x27;s broader strategy to expand its presence in the healthcare sector by leveraging AI to provide personalized and accessible health solutions. The assistant aims to streamline healthcare management for users, improving convenience and engagement. Healthcare providers and patients alike may benefit from the enhanced capabilities and efficiency this AI assistant offers.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/10/zoom-launches-an-ai-powered-office-suite-says-ai-avatars-for-meetings-are-coming-soon/",
+            "sourceUrl": "https://techcrunch.com/2026/03/10/amazon-launches-its-healthcare-ai-assistant-on-its-website-and-app/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "NVIDIA&#x27;s Open Data Strategy—Fueling AI Innovation",
+            "title": "NVIDIA&#x27;s Approach to Building Open Data for AI Development",
+            "content": "NVIDIA is advancing its open data strategy to support AI research and development, emphasizing transparency and collaboration. By providing open access to datasets, NVIDIA aims to accelerate innovation and foster community-driven progress in AI technologies. This approach aligns with industry trends towards open-source models, encouraging shared learning and reducing barriers to entry for researchers and developers. NVIDIA&#x27;s commitment to open data is expected to enhance the quality and diversity of AI applications, benefiting a wide range of industries. Stakeholders in AI development are encouraged to engage with these resources to drive forward their projects.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/open-data-for-ai",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 10 2026",
+            "headline": "AI Apps Struggle with Retention—New Report Insights",
+            "title": "Report Highlights Long-Term Retention Challenges for AI-Powered Apps",
+            "content": "A recent report from RevenueCat reveals that while AI-powered apps can achieve strong early monetization, they face significant challenges in sustaining long-term user retention. The report indicates that initial engagement driven by AI features often wanes over time, impacting the app&#x27;s overall value proposition. Developers are urged to focus on continuous innovation and user experience enhancements to maintain engagement. This trend underscores the importance of balancing AI-driven novelty with enduring user value. App developers and tech leaders should consider these findings to refine their strategies in the competitive app market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/10/ai-powered-apps-struggle-with-long-term-retention-new-report-shows/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Google Enhances Workspace with New Gemini AI Features",
-            "title": "Google Rolls Out Gemini AI Enhancements to Workspace Apps",
-            "content": "Google has expanded the capabilities of its Gemini AI across its Workspace suite, including Docs, Sheets, Slides, and Drive. The new features are designed to make these applications more personalized and efficient, allowing users to complete tasks faster within the platforms. Gemini&#x27;s integration includes a chat window in Docs and AI-generated spreadsheets, enhancing productivity for Workspace and AI plan subscribers. These updates reflect Google&#x27;s commitment to embedding AI deeply into its productivity tools, offering users more dynamic and responsive applications. Users should explore these features to maximize their productivity with Google&#x27;s AI advancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/10/google-rolls-out-new-gemini-capabilities-to-docs-sheets-slides-and-drive/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Google&#x27;s Gemini AI Expands in Workspace—Boosting Productivity",
-            "title": "Google&#x27;s Gemini AI Gets Enhanced Role in Workspace Applications",
-            "content": "Google is deepening the integration of its Gemini AI within its Workspace applications, providing users with innovative tools to boost productivity. The enhancements include a Gemini chat feature in Google Docs, AI-generated spreadsheets, and a Gemini-powered search function. These features are available to Google Workspace and AI plan subscribers, offering more personalized and efficient workflows. The move underscores Google&#x27;s strategy to leverage AI for enhancing user experience across its productivity suite. Subscribers should explore these new capabilities to fully utilize the potential of Google&#x27;s AI-driven tools.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/890996/google-workspace-gemini-ai-docs-sheets-drive",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Photoshop&#x27;s AI Assistant—Edit Images with Chat Commands",
-            "title": "Adobe&#x27;s AI Assistant in Photoshop Enables Chat-Based Image Editing",
-            "content": "Adobe has introduced an AI assistant for Photoshop that allows users to edit images by describing changes to a chatbot. This feature is now in public beta for both web and mobile platforms. The AI assistant is part of Adobe&#x27;s broader initiative to integrate agentic AI features across its Creative Cloud applications, including Acrobat and Express. These advancements are designed to simplify complex editing tasks, making them more accessible to users of varying skill levels. Creative professionals should explore these new tools to enhance their workflows and creative output.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/891998/adobe-photoshop-web-mobile-ai-assistant-beta-launch",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Gemini-Powered &#x27;Help Me Create&#x27;—A Game Changer for Docs Users",
-            "title": "Google&#x27;s Gemini &#x27;Help Me Create&#x27; Tool Enhances Docs with AI",
-            "content": "Google has enhanced its Docs application with the Gemini-powered &#x27;Help Me Create&#x27; tool, designed to assist users in drafting content. This tool pulls information from emails and the web to facilitate content creation, making it particularly adept at generating corporate communications. The integration of Gemini AI across Docs, Drive, Sheets, and Slides reflects Google&#x27;s commitment to improving user productivity through AI. Professionals using Google Workspace can leverage these capabilities to streamline document creation and enhance their workflow efficiency. Users are encouraged to explore these features to maximize the benefits of AI in their daily tasks.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/google-gemini-workspace-ai-tools-hands-on/",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Agentic AI Transforms Finance—SEI and IBM Lead the Charge",
-            "title": "SEI Partners with IBM to Automate Finance Operations Using Agentic AI",
-            "content": "Financial infrastructure provider SEI has partnered with IBM to modernize its operations through agentic AI and automation. The initiative focuses on process redesign and targeted operational automation, aiming to deliver real value by leveraging a data-centric foundation. This collaboration highlights the growing trend of integrating AI into financial services to enhance efficiency and reduce operational costs. Financial institutions considering similar transformations should evaluate the potential of agentic AI to optimize their internal processes and drive innovation. SEI&#x27;s partnership with IBM serves as a model for leveraging AI in finance.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/agentic-ai-in-finance-speeds-up-operational-automation/",
-            "relatedResources": [
-                {
-                    "label": "Ibm Analysis",
-                    "url": "/articles/ibm-api-connect-cve-2026.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 10 2026",
-            "headline": "Karpathy&#x27;s Autoresearch—Revolutionizing AI Experimentation Overnight",
-            "title": "Andrej Karpathy Unveils Autoresearch for Scalable AI Experimentation",
-            "content": "Andrej Karpathy, former Tesla AI lead and OpenAI co-founder, has introduced an open-source project named autoresearch that promises to transform AI experimentation. This tool enables researchers to conduct hundreds of AI experiments nightly, significantly accelerating development cycles. The system is not a pre-built model but a framework allowing for the rapid iteration of AI models, potentially leading to groundbreaking discoveries in machine learning. This development is poised to benefit AI researchers and developers by providing a scalable method to test hypotheses and refine models efficiently. As an open-source initiative, autoresearch invites collaboration and innovation from the global AI community, potentially setting new standards in AI research methodologies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/andrej-karpathys-new-open-source-autoresearch-lets-you-run-hundreds-of-ai",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
                 }
             ]
         }
