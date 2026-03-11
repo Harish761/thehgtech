@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         progressText: document.getElementById('progressText'),
         overallScore: document.getElementById('overallScore'),
         btnExportDraft: document.getElementById('btnExport'),
+        btnPartialDashboard: document.getElementById('btnPartialDashboard'),
         btnFinishDashboard: document.getElementById('btnFinishAssessment'),
         btnNextDomain: document.getElementById('btnNextDomain'),
 
@@ -307,21 +308,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (answeredControls > 0) {
             ui.btnExportDraft.removeAttribute('disabled');
-            ui.btnFinishDashboard.style.display = 'inline-block';
+            if (ui.btnPartialDashboard) ui.btnPartialDashboard.removeAttribute('disabled');
             
-            if (answeredControls < totalControls) {
-                ui.btnFinishDashboard.innerHTML = 'Generate Partial Dashboard <i class="fas fa-chart-line"></i>';
-                ui.btnFinishDashboard.style.background = 'transparent';
-                ui.btnFinishDashboard.style.border = '2px solid var(--accent-cyan)';
-                ui.btnFinishDashboard.style.color = 'var(--text-primary)';
-            } else {
+            if (answeredControls === totalControls && totalControls > 0) {
+                ui.btnFinishDashboard.style.display = 'inline-block';
                 ui.btnFinishDashboard.innerHTML = 'Generate Full Readiness Dashboard <i class="fas fa-flag-checkered"></i>';
                 ui.btnFinishDashboard.style.background = 'var(--accent-green)';
                 ui.btnFinishDashboard.style.border = 'none';
                 ui.btnFinishDashboard.style.color = '#000';
+            } else {
+                ui.btnFinishDashboard.style.display = 'none';
             }
         } else {
             ui.btnExportDraft.setAttribute('disabled', 'true');
+            if (ui.btnPartialDashboard) ui.btnPartialDashboard.setAttribute('disabled', 'true');
             ui.btnFinishDashboard.style.display = 'none';
         }
 
@@ -358,6 +358,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         generateDashboard();
     });
+
+    if (ui.btnPartialDashboard) {
+        ui.btnPartialDashboard.addEventListener('click', () => {
+            ui.viewEngine.style.display = 'none';
+            ui.viewEngine.classList.remove('active');
+
+            ui.viewDashboard.style.display = 'flex';
+            setTimeout(() => { ui.viewDashboard.classList.add('active'); }, 50);
+
+            generateDashboard();
+        });
+    }
 
     ui.btnBackToEngine.addEventListener('click', () => {
         ui.viewDashboard.style.display = 'none';
