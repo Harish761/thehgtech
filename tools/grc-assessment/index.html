@@ -49,6 +49,31 @@
     }
     </script>
 
+    <!-- ========== PERFORMANCE: Preconnect ========== -->
+    <link rel="preconnect" href="https://t.fullres.net" crossorigin>
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//t.fullres.net">
+
+    <!-- ========== GOOGLE ANALYTICS 4 (Deferred for Performance) ========== -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+
     <!-- Design System CSS -->
     <link rel="stylesheet" href="../../design-system.min.css">
     <link rel="stylesheet" href="../../header.css">
@@ -709,6 +734,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
+
+    <!-- Carbon Ads via Fullres -->
+    <script>
+        (function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        })();
+    </script>
 
     <!-- Data & Logic -->
     <script src="grc-data.js?v=2"></script>
