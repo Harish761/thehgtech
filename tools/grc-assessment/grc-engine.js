@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         overallScore: document.getElementById('overallScore'),
         btnExportDraft: document.getElementById('btnExport'),
         btnFinishDashboard: document.getElementById('btnFinishAssessment'),
+        btnNextDomain: document.getElementById('btnNextDomain'),
 
         // Dashboard elements
         btnBackToEngine: document.getElementById('btnBackToEngine'),
@@ -43,6 +44,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let userState = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
     let radarChartInstance = null;
+
+    if (ui.btnNextDomain) {
+        ui.btnNextDomain.addEventListener('click', () => {
+            if (currentNavIndex < activeDomainIndices.length - 1) {
+                currentNavIndex++;
+                renderDomain(currentNavIndex);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+    }
 
     // 1. Initialize Data
     function loadGRCData() {
@@ -208,6 +219,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <i class="fas fa-ban"></i> N/A
                     </button>
                 </div>
+                <div class="na-justification-container" id="na_container_${control.control_id}" style="display:${savedValue === 'na' ? 'block' : 'none'}; margin-top: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 8px; border-left: 3px solid #6c757d;">
+                    <label style="display:block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; font-weight: bold;">Justification for Not Applicable (N/A):</label>
+                    <textarea class="na-justification-input" data-control="${control.control_id}" rows="2" style="width: 100%; border-radius: 4px; padding: 0.5rem; border: 1px solid var(--border); background: var(--bg-dark); color: var(--text-primary); font-family: inherit; resize: vertical;" placeholder="Briefly explain why this control is out of scope for your audit footprint...">${userState[control.control_id + '_just'] || ''}</textarea>
+                </div>
             `;
 
             const btns = card.querySelectorAll('.btn-option');
@@ -217,6 +232,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                     saveAnswer(control.control_id, value, btns);
                 });
             });
+
+            const naInput = card.querySelector('.na-justification-input');
+            if (naInput) {
+                naInput.addEventListener('input', (e) => {
+                    userState[control.control_id + '_just'] = e.target.value;
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+                });
+            }
+
             ui.viewport.appendChild(card);
 
             // Reflow for transition
@@ -234,6 +258,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (clickedBtn) clickedBtn.classList.add('active');
 
         userState[controlId] = value;
+        
+        const naContainer = document.getElementById(`na_container_${controlId}`);
+        if (naContainer) {
+            naContainer.style.display = value === 'na' ? 'block' : 'none';
+        }
+
         localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
 
         const domain = grcData.domains[activeDomainIndices[currentNavIndex]];
@@ -253,11 +283,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     function updateOverallScore() {
         let totalControls = 0;
         let implementedControls = 0;
+        let answeredControls = 0;
 
         activeDomainIndices.forEach(globalIdx => {
             const d = grcData.domains[globalIdx];
             d.controls.forEach(c => {
                 totalControls++;
+                if (userState[c.control_id]) answeredControls++;
                 if (userState[c.control_id] === 'yes' || userState[c.control_id] === 'na') {
                     implementedControls++;
                 } else if (userState[c.control_id] === 'partial') {
@@ -273,12 +305,35 @@ document.addEventListener('DOMContentLoaded', async () => {
         else if (score >= 50) ui.overallScore.style.color = '#F59E0B';
         else ui.overallScore.style.color = '#EF4444';
 
-        if (Object.keys(userState).length > 0) {
+        if (answeredControls > 0) {
             ui.btnExportDraft.removeAttribute('disabled');
             ui.btnFinishDashboard.style.display = 'inline-block';
+            
+            if (answeredControls < totalControls) {
+                ui.btnFinishDashboard.innerHTML = 'Generate Partial Dashboard <i class="fas fa-chart-line"></i>';
+                ui.btnFinishDashboard.style.background = 'transparent';
+                ui.btnFinishDashboard.style.border = '2px solid var(--accent-cyan)';
+                ui.btnFinishDashboard.style.color = 'var(--text-primary)';
+            } else {
+                ui.btnFinishDashboard.innerHTML = 'Generate Full Readiness Dashboard <i class="fas fa-flag-checkered"></i>';
+                ui.btnFinishDashboard.style.background = 'var(--accent-green)';
+                ui.btnFinishDashboard.style.border = 'none';
+                ui.btnFinishDashboard.style.color = '#000';
+            }
         } else {
             ui.btnExportDraft.setAttribute('disabled', 'true');
             ui.btnFinishDashboard.style.display = 'none';
+        }
+
+        // Logic for "Next Domain" vs "Finish" at the bottom
+        if (activeDomainIndices.length > 0) {
+            const currentDomainObj = grcData.domains[activeDomainIndices[currentNavIndex]];
+            const answeredInCurrentDomain = currentDomainObj.controls.filter(c => userState[c.control_id]).length;
+            if (answeredInCurrentDomain === currentDomainObj.controls.length && currentNavIndex < activeDomainIndices.length - 1) {
+                ui.btnNextDomain.style.display = 'block';
+            } else {
+                ui.btnNextDomain.style.display = 'none';
+            }
         }
     }
 
@@ -499,7 +554,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // SHEET 2: Gap Analysis Data
                 const exportData = [];
-                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice"]);
+                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Applicability Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice"]);
 
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
@@ -519,6 +574,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                             control.control_title,
                             friendlyStatus,
                             riskLevel,
+                            userState[control.control_id + '_just'] || "N/A",
                             control.objective,
                             control.auditor_question,
                             control.evidence_required,
@@ -536,10 +592,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // Build Detail Sheet
                 const ws = XLSX.utils.aoa_to_sheet(exportData);
-                ws['!cols'] = [{ wch: 25 }, { wch: 10 }, { wch: 30 }, { wch: 20 }, { wch: 10 }, { wch: 40 }, { wch: 45 }, { wch: 45 }, { wch: 50 }];
+                ws['!cols'] = [{ wch: 25 }, { wch: 10 }, { wch: 30 }, { wch: 20 }, { wch: 10 }, { wch: 35 }, { wch: 40 }, { wch: 45 }, { wch: 45 }, { wch: 50 }];
                 
                 // Add AutoFilter to data sheet
-                ws['!autofilter'] = { ref: `A1:I${exportData.length}` };
+                ws['!autofilter'] = { ref: `A1:J${exportData.length}` };
 
                 XLSX.utils.book_append_sheet(wb, ws, "Detailed Gap Analysis");
 
