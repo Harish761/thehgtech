@@ -484,14 +484,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.querySelector('.pdf-branding').style.display = 'block';
         const wasLightMode = document.body.classList.contains('light-mode');
         document.body.classList.add('light-mode');
+        document.body.classList.add('pdf-exporting'); // Handles overflow overrides for print
 
         const element = document.getElementById('printableDashboard');
         const opt = {
             margin: 0.5,
             filename: 'ISO27001_Gap_Assessment_' + new Date().toISOString().split('T')[0] + '.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff' },
-            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            image: { type: 'jpeg', quality: 1.0 },
+            html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff', windowWidth: 1200 },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+            pagebreak: { mode: ['css', 'legacy'] }
         };
 
         // Delay to allow DOM update
@@ -499,6 +501,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             html2pdf().set(opt).from(element).save().then(() => {
                 document.querySelector('.pdf-branding').style.display = 'none';
                 if (!wasLightMode) document.body.classList.remove('light-mode');
+                document.body.classList.remove('pdf-exporting');
                 ui.btnPdfExport.innerHTML = originalText;
                 ui.btnPdfExport.disabled = false;
             });

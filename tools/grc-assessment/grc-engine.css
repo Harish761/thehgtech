@@ -767,6 +767,13 @@ body {
     width: 100%;
 }
 
+body.pdf-exporting .view-dashboard,
+body.pdf-exporting .dashboard-printable {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+}
+
 .dashboard-header-bar {
     display: flex;
     justify-content: space-between;
@@ -843,6 +850,8 @@ body {
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
     margin-bottom: 3rem;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .metric-card {
@@ -897,6 +906,8 @@ body {
     padding: 1.5rem;
     border-radius: 0 12px 12px 0;
     margin-bottom: 1.5rem;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .gap-item-header {
