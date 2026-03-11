@@ -118,12 +118,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // Allow start if at least 1 domain selected
                 ui.btnStartAssess.disabled = activeDomainIndices.length === 0;
+                updateScopeMetrics();
             });
 
             ui.scopeGrid.appendChild(card);
         });
 
         ui.btnStartAssess.disabled = activeDomainIndices.length === 0;
+
+        function updateScopeMetrics() {
+            const countEl = document.getElementById('scopeControlCount');
+            const domEl = document.getElementById('scopeDomainCount');
+            if (countEl && domEl) {
+                let totalControls = 0;
+                activeDomainIndices.forEach(idx => {
+                    totalControls += grcData.domains[idx].controls.length;
+                });
+                countEl.textContent = totalControls;
+                domEl.textContent = activeDomainIndices.length;
+            }
+        }
+        updateScopeMetrics();
 
         ui.btnStartAssess.addEventListener('click', () => {
             activeDomainIndices.sort(); // Ensure chronological order mapping

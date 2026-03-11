@@ -276,6 +276,10 @@
             <i class="fas fa-book"></i>
             <span>Guides</span>
         </a>
+        <a href="/tools/grc-assessment/" class="m-bottom-nav__item active">
+            <i class="fas fa-tools"></i>
+            <span>Tools</span>
+        </a>
     </nav>
 
     <!-- Search Overlay -->
@@ -391,20 +395,6 @@
                                 <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
                             </div>
                         </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item"
-                            style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon"
-                                style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
                         <div class="dropdown-divider"></div>
                         <a href="../../articles.html" class="dropdown-item">
                             <div class="dropdown-item-icon articles">
@@ -417,6 +407,12 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Tools Navigation Link -->
+                <a href="/tools/grc-assessment/" style="color: #10B981; font-weight: 600; display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                    <i class="fas fa-tools"></i> Tools 
+                    <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px;">NEW</span>
+                </a>
 
                 <!-- About Dropdown -->
                 <div class="nav-dropdown">
@@ -625,9 +621,52 @@
                 <div class="scope-grid" id="scopeGrid">
                     <!-- Populated dynamically via JS from grc-data.js -->
                 </div>
-                <div class="scope-actions">
+                <div class="scope-actions" style="margin-top: 1rem;">
+                    <div style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        <strong>Selected: <span id="scopeControlCount" style="color: var(--accent-cyan);">--</span> controls</strong> across <span id="scopeDomainCount" style="color: var(--accent-green);">--</span> domains
+                    </div>
                     <button id="btnStartAssessment" class="btn-start-assess" disabled>Launch Assessment Engine <i
                             class="fas fa-rocket"></i></button>
+
+                    <!-- Teaser Section -->
+                    <div style="margin-top: 4rem; padding-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); max-width: 800px; margin-left: auto; margin-right: auto; text-align: left;">
+                        <h3 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 1rem; text-align: center;">What happens next?</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6; text-align: center; margin-bottom: 2rem;">
+                            You will walk through each control sequentially. Answer "Yes", "No", or "N/A". The engine will automatically compile a gap analysis report for you to export.
+                        </p>
+                        
+                        <!-- Sample UI Card -->
+                        <div style="background: var(--bg-card); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 2rem; position: relative; overflow: hidden;">
+                            <!-- Fake progress bar -->
+                            <div style="width: 100%; height: 4px; background: rgba(255,255,255,0.05); position: absolute; top: 0; left: 0;">
+                                <div style="height: 100%; width: 45%; background: var(--accent-cyan);"></div>
+                            </div>
+                            
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.5rem;">
+                                <div style="background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.2); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #00d9ff; font-weight: bold;">
+                                    5.1
+                                </div>
+                                <div>
+                                    <h4 style="font-size: 1.1rem; color: var(--text-primary); margin: 0 0 0.25rem;">Policies for Information Security</h4>
+                                    <span style="font-size: 0.8rem; background: rgba(16, 185, 129, 0.1); color: #10B981; padding: 0.2rem 0.5rem; border-radius: 4px;">Organizational</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6;">
+                                Information security policy and topic-specific policies shall be defined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties.
+                            </p>
+                            <div style="display: flex; gap: 1rem;" class="teaser-buttons">
+                                <div style="flex: 1; padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.05); color: var(--text-primary); text-align: center; font-weight: 500;">
+                                    <i class="fas fa-check-circle" style="color: #10B981; margin-right: 0.5rem;"></i> Implemented
+                                </div>
+                                <div style="flex: 1; padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(255, 61, 61, 0.3); background: rgba(255, 61, 61, 0.05); color: var(--text-primary); text-align: center; font-weight: 500;">
+                                    <i class="fas fa-times-circle" style="color: #FF3D3D; margin-right: 0.5rem;"></i> Gap
+                                </div>
+                                <div style="flex: 1; padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.02); color: var(--text-primary); text-align: center; font-weight: 500;">
+                                    <i class="fas fa-ban" style="color: var(--text-muted); margin-right: 0.5rem;"></i> N/A
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
