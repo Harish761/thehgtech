@@ -5,6 +5,103 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 12 2026",
+            "headline": "$75M Ransom—DigitalMint Negotiator Accused of Dual Roles",
+            "title": "DigitalMint Negotiator Allegedly Conducted Ransomware Attacks While Negotiating Ransoms",
+            "content": "Federal authorities have accused Angelo Martino, a former negotiator for DigitalMint, of orchestrating ransomware attacks while simultaneously negotiating ransoms for the same cases. Martino allegedly extorted $75 million by exploiting his insider knowledge to play both sides. This case highlights the complex and often opaque nature of ransomware negotiations, raising concerns about trust and integrity in the cybersecurity industry. Companies relying on third-party negotiators should vet their partners rigorously to avoid conflicts of interest. The incident underscores the need for transparency and ethical standards in ransomware response strategies.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/digitalmint-ransomware-negotiator-arrest-angelo-martino-extortion/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
+                }
+            ]
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Meta Disables 150K Accounts—Cracks Down on Asian Scam Centers",
+            "title": "Meta Launches New Security Tools After Disrupting Asian Scam Networks",
+            "content": "Meta has taken decisive action against scam centers in Asia by disabling over 150,000 accounts linked to fraudulent activities. In conjunction with these efforts, Meta has introduced new protection tools designed to safeguard users against scams. The accounts were reportedly involved in large-scale operations that targeted unsuspecting users with phishing and fraudulent schemes. This move is part of a broader industry trend of social media platforms taking proactive measures to combat cybercrime. Users are advised to stay vigilant and utilize the new security features to protect their accounts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/meta-launches-new-protection-tools-as-it-helps-disrupt-scam-centers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Android Flaw Exposes Data—Break Lock Screen in 60 Seconds",
+            "title": "Critical Android Vulnerability Allows Bypass of Lock Screen in Under a Minute",
+            "content": "Security researchers have identified a vulnerability in Android devices that enables attackers to bypass lock screens in less than 60 seconds. By extracting encryption keys and recovering the device&#x27;s PIN, attackers can gain unauthorized access to sensitive data. This flaw affects numerous Android models and poses a significant risk to users&#x27; privacy and security. As Android devices are widely used globally, the potential impact is substantial. Users should ensure their devices are updated with the latest security patches and consider using additional security measures such as biometric authentication.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/this-android-vulnerability-can-break-your-lock-screen-in-under-60-seconds",
+            "relatedResources": [
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "SQL Injection Flaw—200K WordPress Sites at Risk",
+            "title": "Ally WordPress Plugin Vulnerability Exposes Over 200,000 Sites to SQL Injection",
+            "content": "A critical vulnerability in the Ally WordPress plugin has been discovered, exposing over 200,000 websites to potential SQL injection attacks. This flaw allows attackers to inject malicious SQL queries, potentially extracting sensitive information from affected databases. Website administrators using the Ally plugin are urged to update to the latest version immediately to mitigate this risk. The vulnerability highlights the ongoing challenges of securing WordPress sites, which remain a popular target for cybercriminals. Regular plugin updates and security audits are recommended to protect against such threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ally-wordpress-plugin-flaw-exposes-over-200000-websites-to-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Human Intel Challenges—SOC Struggles with Social Vetting",
+            "title": "The Human IOC: Challenges in Social Vetting for Security Teams",
+            "content": "Security professionals are increasingly finding it difficult to apply Security Operations Center (SOC) rigor to social vetting processes. The challenge lies in navigating rumors, politics, and human intelligence, which can significantly impact security teams&#x27; effectiveness. As organizations rely more on human intelligence for threat detection, the ability to discern credible information becomes crucial. This issue underscores the need for developing robust frameworks for social vetting and integrating them into existing security protocols. Security teams must enhance their skills in analyzing social dynamics to improve threat assessments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/the-human-ioc-why-security-professionals-struggle-with-social-vetting/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Signal Accounts Compromised—Beware of Social Engineering Tricks",
+            "title": "Signal Users Vulnerable to Account Takeover via Social Engineering Attacks",
+            "content": "Signal, the encrypted messaging app, has reported account takeovers targeting government officials and journalists through social engineering tactics. Despite the app&#x27;s strong encryption, attackers have managed to deceive users into compromising their accounts. This incident serves as a reminder that even secure platforms are vulnerable to human errors. Users should be cautious of unsolicited requests and enable additional security features such as registration lock PINs to protect their accounts. The event highlights the persistent threat of social engineering in compromising secure communications.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/signal-account-safe-unless-fall-for-this-trick",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Splunk and Zoom Patch Critical Vulnerabilities—Update Now",
+            "title": "Severe Vulnerabilities in Splunk and Zoom Patched to Prevent Exploits",
+            "content": "Splunk and Zoom have released patches for critical and high-severity vulnerabilities that could allow attackers to execute arbitrary shell commands or escalate privileges. These flaws, if exploited, pose significant risks to enterprise environments relying on these platforms for data analysis and communication. Administrators are strongly advised to apply the latest updates to prevent potential exploitation. The vulnerabilities underscore the importance of timely patch management in maintaining cybersecurity resilience. Organizations should regularly monitor vendor advisories and implement patches as part of their security best practices.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/splunk-zoom-patch-severe-vulnerabilities/",
+            "relatedResources": [
+                {
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
+                },
+                {
+                    "label": "SIEM Comparison: Splunk vs Elastic vs LogRhythm",
+                    "url": "/comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
+                    "icon": "fa-chart-line"
+                }
+            ]
+        },
+        {
+            "date": "Mar 12 2026",
             "headline": "ISC Stormcast Highlights Emerging Threats—Stay Alert",
             "title": "ISC Stormcast Podcast Discusses Current Cybersecurity Threat Landscape",
             "content": "The latest ISC Stormcast podcast provides insights into the evolving cybersecurity threat landscape, emphasizing the importance of vigilance and proactive defense measures. Hosted by the SANS Internet Storm Center, the episode highlights recent vulnerabilities and attack vectors that security professionals need to monitor. While specific threats are not detailed in this summary, the podcast serves as a crucial resource for staying informed about potential risks. Listeners are encouraged to subscribe to the podcast for regular updates and expert analysis. Maintaining awareness of current trends is essential for safeguarding organizational networks and data.",
@@ -48,71 +145,6 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Mar 11 2026",
-            "headline": "Malicious Resumés Target HR—ISO Attachments Spread Malware",
-            "title": "Aryaka Reports Malicious ISO Attachments in Phishing Campaign",
-            "content": "Aryaka researchers have identified a phishing campaign targeting HR departments with resumés containing malicious ISO attachments. These attachments, when opened, execute malware that can compromise corporate networks. The unnamed threat actor behind this campaign exploits the trust HR staff place in job applicants. Organizations should educate employees on the dangers of opening unsolicited attachments and implement email filtering solutions to detect such threats. This attack vector highlights the ongoing risk posed by social engineering tactics in cybercrime.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4143937/resumes-with-malicious-iso-attachments-are-circulating-says-aryaka.html",
-            "relatedResources": [
-                {
-                    "label": "Phishing & Security Awareness",
-                    "url": "/guides/phishing-simulation-security-awareness.html",
-                    "icon": "fa-fish"
-                }
-            ]
-        },
-        {
-            "date": "Mar 11 2026",
-            "headline": "CISA Alerts on Ivanti, Cisco Flaws—Exploits in the Wild",
-            "title": "CISA Warns of Active Exploitation of Ivanti and Cisco Vulnerabilities",
-            "content": "The US Cybersecurity and Infrastructure Security Agency (CISA) has issued warnings about active exploitation of vulnerabilities in Ivanti Endpoint Manager (EPM) and Cisco SD-WAN. The Ivanti flaw, an authentication bypass, was patched last month but is now being exploited. Similarly, two Cisco Catalyst SD-WAN vulnerabilities are under active attack. CISA advises organizations to apply the latest patches immediately to mitigate these risks. These vulnerabilities pose significant threats to network security, underscoring the importance of timely patch management.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4143992/cisa-warns-of-actively-exploited-ivanti-epm-and-cisco-sd-wan-flaws.html",
-            "relatedResources": [
-                {
-                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
-                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
-                    "icon": "fa-shield-virus"
-                }
-            ]
-        },
-        {
-            "date": "Mar 11 2026",
-            "headline": "INC Ransomware Strikes Oceania—Healthcare Systems Hit",
-            "title": "INC Ransomware Group Targets Healthcare in Australia, New Zealand, Tonga",
-            "content": "The INC ransomware group has launched a series of attacks on healthcare facilities across Australia, New Zealand, and Tonga. Government agencies and emergency clinics have been severely impacted, disrupting essential services. The attacks highlight the vulnerability of healthcare systems to ransomware, which can cripple critical infrastructure. Organizations in the region are urged to strengthen their cybersecurity defenses and ensure regular data backups. The healthcare sector remains a prime target for ransomware groups due to its reliance on timely access to data.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/inc-ransomware-healthcare-oceania",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Mar 11 2026",
-            "headline": "Xygeni GitHub Action Compromised—Tag Poison Attack",
-            "title": "Xygeni GitHub Action Breached Through Tag Poisoning",
-            "content": "AppSec vendor Xygeni has suffered a security breach with its xygeni/xygeni-action on GitHub compromised via a tag poisoning attack. Attackers maintained an active command-and-control implant for up to a week, posing a risk to users of the compromised action. This incident underscores the importance of monitoring third-party integrations and implementing robust security measures for code repositories. Developers using Xygeni&#x27;s GitHub actions should review their implementations and ensure no unauthorized changes have been made. Vigilance in supply chain security remains crucial as attackers exploit vulnerabilities in widely used tools.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/xygeni-github-action-compromised-via-tag-poison",
-            "relatedResources": [
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
-                }
-            ]
-        },
-        {
             "date": "Mar 19 2026",
             "headline": "Shields Up: Virtual Event Explores Cybersecurity&#x27;s Future",
             "title": "Virtual Event Highlights Key Technologies Reshaping Cybersecurity Defenses",
@@ -139,12 +171,27 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 11 2026",
-            "headline": "Nvidia&#x27;s Nemotron 3 Surpasses GPT-OSS—15x Token Output",
-            "title": "Nvidia&#x27;s Nemotron 3 Combines Architectures for Unmatched Throughput in AI",
-            "content": "Nvidia has introduced Nemotron 3, a groundbreaking AI model that integrates three distinct architectures to outperform GPT-OSS and Qwen in token generation throughput. Designed for complex multi-agent systems, Nemotron 3 can generate up to 15 times more tokens than standard models, significantly enhancing its utility for enterprise applications like software engineering and cybersecurity triaging. This advancement addresses the growing demand for efficient AI systems capable of handling long-horizon tasks without compromising cost-effectiveness. As AI continues to evolve, Nvidia&#x27;s innovative approach highlights the potential for increased productivity and reduced operational costs in enterprise environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/nvidias-new-open-weights-nemotron-3-super-combines-three-different",
+            "date": "Mar 12 2026",
+            "headline": "Microsoft&#x27;s Copilot Health—Secure Medical Data Integration",
+            "title": "Microsoft Launches Copilot Health for Medical Data and Wearables Integration",
+            "content": "Microsoft has unveiled Copilot Health, a new feature within its Copilot platform designed to securely connect users with their medical records and wearable devices. This tool creates a &quot;separate, secure space&quot; for users to query lab results, search for healthcare providers, and analyze wearable data. By offering a phased rollout, Microsoft aims to enhance healthcare data accessibility while maintaining privacy. This development is significant for healthcare professionals and patients seeking streamlined access to medical information. Users are encouraged to explore Copilot Health&#x27;s capabilities to better manage their health data securely.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/893594/microsoft-copilot-health-launch",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Google Leverages AI—Predicts Flash Floods with Old News",
+            "title": "Google Uses AI and Historical News to Predict Flash Floods",
+            "content": "Google is innovating in disaster prediction by using large language models (LLMs) to convert qualitative news reports into quantitative data for predicting flash floods. This approach addresses data scarcity issues by leveraging historical news archives to enhance flood prediction models. The method could significantly improve early warning systems, benefiting communities prone to sudden flooding. This advancement highlights the growing role of AI in environmental management and disaster response. Stakeholders in flood-prone areas should monitor these developments for improved preparedness and response strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/12/google-is-using-old-news-reports-and-ai-to-predict-flash-floods/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -159,54 +206,32 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Mar 11 2026",
-            "headline": "AI Actor Tilly Norwood&#x27;s Song Falls Flat",
-            "title": "AI Actor Tilly Norwood&#x27;s Song Criticized for Lack of Relatability",
-            "content": "AI actor Tilly Norwood has released a song intended as a motivational anthem for AI actors, encouraging perseverance despite skepticism about their humanity. However, the song has been widely criticized for its lack of relatability, failing to resonate with audiences. This development underscores the challenges AI faces in creative fields, where emotional connection and authenticity are crucial. As AI continues to penetrate the entertainment industry, the need for more sophisticated emotional intelligence in AI-generated content becomes increasingly apparent. Stakeholders should consider these factors when integrating AI into creative processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/11/ai-actor-tilly-norwood-put-out-the-worst-song-ive-ever-heard/",
+            "date": "Mar 12 2026",
+            "headline": "Idle GPUs—Run Inference, Maximize Efficiency",
+            "title": "Continuous Batching Advocates for Using Idle GPUs for Inference",
+            "content": "The team behind continuous batching is advocating for the use of idle GPUs to run inference tasks instead of letting them sit unused. As GPU clusters experience downtime between training jobs, these idle periods represent lost opportunities for cloud operators. By utilizing spot GPU markets, operators can rent out spare capacity, maximizing hardware efficiency and reducing wasted power and cooling costs. This approach can enhance profit margins for cloud providers while offering affordable computing resources for AI developers. Companies should consider integrating continuous batching to optimize GPU utilization.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/the-team-behind-continuous-batching-says-your-idle-gpus-should-be-running",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
-            "date": "Mar 11 2026",
-            "headline": "Grammarly Faces Lawsuit Over Identity-Stealing AI Feature",
-            "title": "Grammarly Sued for Unauthorized Use of Identities in AI Suggestions",
-            "content": "Grammarly is facing a lawsuit from a journalist over its &quot;Expert Review&quot; AI feature, which allegedly used real people&#x27;s identities without consent. The class-action complaint claims that Grammarly&#x27;s AI suggestions have been exploiting the identities of individuals, including journalists, for months. This legal action highlights the growing concerns over privacy and ethical use of AI technologies. As companies increasingly rely on AI for personalized services, they must navigate the complex landscape of data privacy and consent to avoid legal repercussions and maintain user trust.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/893451/grammarly-ai-lawsuit-julia-angwin",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 11 2026",
-            "headline": "Ford&#x27;s AI Monitors Seatbelt Usage in Fleets",
-            "title": "Ford Pro AI Enhances Fleet Safety with Seatbelt Monitoring",
-            "content": "Ford has launched its Ford Pro AI assistant, now available to U.S.-based Pro telematics subscribers, to monitor seatbelt usage across vehicle fleets. Debuted at Work Truck Week in Indianapolis, this AI-driven feature aims to enhance safety compliance and reduce liability for fleet owners. By providing real-time data on seatbelt usage, Ford Pro AI helps companies ensure that safety protocols are adhered to, potentially reducing accident-related injuries and associated costs. This development reflects the automotive industry&#x27;s ongoing efforts to integrate AI for improved safety and operational efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/11/fords-new-ai-assistant-will-help-fleet-owners-know-if-seatbelts-are-being-used/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 11 2026",
-            "headline": "Zendesk Acquires AI Startup Forethought",
-            "title": "Zendesk Acquires Forethought to Enhance AI-Driven Customer Service",
-            "content": "Zendesk has acquired Forethought, a pioneering AI startup and winner of the 2018 TechCrunch Battlefield, to bolster its customer service capabilities. Forethought&#x27;s advanced AI solutions are expected to enhance Zendesk&#x27;s ability to deliver intelligent, automated customer interactions. This acquisition aligns with the broader trend of integrating AI into customer service platforms to improve efficiency and user experience. By leveraging Forethought&#x27;s innovative technology, Zendesk aims to provide more responsive and personalized support, setting a new standard in the customer service industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/11/zendesk-acquires-agentic-customer-service-startup-forethought/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 11 2026",
-            "headline": "Netflix&#x27;s $600M Bet on Ben Affleck&#x27;s AI Startup",
-            "title": "Netflix Acquires Ben Affleck&#x27;s AI Startup in Major Deal",
-            "content": "In a strategic move, Netflix has reportedly acquired Ben Affleck&#x27;s AI startup for $600 million, marking one of its largest acquisitions to date. This acquisition reflects Netflix&#x27;s commitment to integrating cutting-edge AI technologies to enhance its streaming services and content creation processes. By investing in AI, Netflix aims to improve content recommendations, streamline production workflows, and maintain its competitive edge in the entertainment industry. This development highlights the increasing importance of AI in shaping the future of media and entertainment.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/11/netflix-may-have-paid-600-million-for-ben-afflecks-ai-startup/",
+            "date": "Mar 12 2026",
+            "headline": "AI Engineering—Transforming Everyday Life",
+            "title": "Engineering AI for Real-World Applications Across Industries",
+            "content": "Artificial intelligence is increasingly being integrated into everyday products, from cars and home appliances to life-saving medical devices. Engineers are leveraging AI to enhance product functionality, streamline design processes, and validate product performance. This trend reflects AI&#x27;s expanding influence beyond digital domains into tangible, real-world applications. The shift emphasizes the importance of pragmatic AI design that meets practical needs. Professionals in engineering and product development should explore AI&#x27;s potential to innovate and improve product offerings across various industries.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/03/12/1133675/pragmatic-by-design-engineering-ai-for-the-real-world/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -216,12 +241,30 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Mar 11 2026",
-            "headline": "Lovable&#x27;s $100M Revenue Surge with 146 Employees",
-            "title": "Lovable Reports $100M Monthly Revenue with Lean Team",
-            "content": "Swedish startup Lovable has announced a remarkable achievement, generating $100 million in revenue last month with just 146 employees, pushing its annual recurring revenue (ARR) to over $400 million. Known for its innovative vibe-coding technology, Lovable&#x27;s success underscores the potential of small, agile teams to drive significant financial growth. This milestone reflects the broader trend of technology startups leveraging AI and automation to achieve scalability and efficiency. Industry leaders should take note of Lovable&#x27;s approach to maximizing productivity and revenue with minimal resources.",
+            "date": "Mar 12 2026",
+            "headline": "Google Maps—Immersive Navigation Revolutionizes User Experience",
+            "title": "Google Maps Introduces AI-Powered Ask Maps and Immersive Navigation",
+            "content": "Google Maps is undergoing its largest update in over a decade with the introduction of &quot;Immersive Navigation&quot; and the AI-powered &quot;Ask Maps&quot; feature. Immersive Navigation offers enhanced visual experiences, while Ask Maps allows users to pose complex, real-world questions for personalized responses. This update leverages Google&#x27;s Gemini AI to provide detailed insights and improve navigation accuracy. Users can expect a more interactive and informative mapping experience, making it easier to plan routes and explore new areas. Tech professionals should consider the implications of AI integration in location-based services.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/11/lovable-says-it-added-100m-in-revenue-last-month-alone-with-just-146-employees/",
+            "sourceUrl": "https://techcrunch.com/2026/03/12/google-maps-is-getting-an-ai-ask-maps-feature-and-upgraded-immersive-navigation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Google Maps&#x27; Gemini—Answers Complex Real-World Queries",
+            "title": "Google Maps Enhances User Interaction with Gemini-Powered Ask Maps",
+            "content": "Google has announced the integration of its Gemini AI into Google Maps with the new &quot;Ask Maps&quot; feature, designed to handle complex, real-world questions. This enhancement allows for highly detailed and personalized responses, improving user interaction and navigation capabilities. The feature represents Google&#x27;s ongoing efforts to integrate AI across its most-used products, enhancing user experience through advanced AI capabilities. Users should explore Ask Maps to benefit from its comprehensive query handling and detailed navigation assistance. This development underscores the importance of AI in enhancing everyday technology tools.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/893262/google-maps-gemini-ai-ask-maps-immersive-navigation",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Gemini-Powered Google Maps—Chat with Your Navigator",
+            "title": "Google Maps Introduces Chatty Gemini-Powered Interface for Enhanced Navigation",
+            "content": "Google Maps has rolled out a new Gemini-powered interface called &quot;Ask Maps,&quot; allowing users to interact with the application by asking questions about locations and planning trips. This feature, available on mobile, enhances the user experience by providing conversational responses and detailed trip planning assistance. By leveraging AI, Google Maps aims to offer more intuitive and user-friendly navigation. Users are encouraged to utilize this new feature for a more interactive mapping experience. This innovation highlights the potential of AI-driven interfaces in transforming digital navigation tools.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/google-maps-ask-maps-gemini-powered-tool/",
             "relatedResources": []
         }
     ],
