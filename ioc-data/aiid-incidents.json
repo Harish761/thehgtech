@@ -975,84 +975,12 @@
       "date": "2025-12-12",
       "category": "autonomous_vehicle",
       "severity": "critical"
-    },
-    {
-      "id": "AIID-1297",
-      "incident_id": 1297,
-      "title": "Blogger Milagro Gramz Allegedly Promoted AI-Generated Pornographic Deepfake Targeting Megan Thee Sta",
-      "date": "2025-12-12",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1298",
-      "incident_id": 1298,
-      "title": "Perplexity AI Reportedly Accused in Federal Lawsuit of Purported Copyright Infringement and False At",
-      "date": "2025-12-12",
-      "category": "misinformation",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1299",
-      "incident_id": 1299,
-      "title": "Bodycam Footage Reportedly Contradicted Purportedly ChatGPT-Generated Use-of-Force Narrative by Immi",
-      "date": "2025-12-12",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1300",
-      "incident_id": 1300,
-      "title": "Waymo Self-Driving Vehicles Reportedly Passed Stopped School Buses at Least 19 Times, Prompting NHTS",
-      "date": "2025-12-12",
-      "category": "prompt_injection",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1301",
-      "incident_id": 1301,
-      "title": "Purported AI-Generated Sexual Deepfakes Allegedly Deployed in Transnational Harassment Campaign Targ",
-      "date": "2025-12-12",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1302",
-      "incident_id": 1302,
-      "title": "Reported Viral AI-Generated Photo Purportedly Shows Donald Trump Using a Walker",
-      "date": "2025-12-12",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1303",
-      "incident_id": 1303,
-      "title": "USGS ShakeAlert System Reportedly Generated False Earthquake Alert Affecting Nevada and California",
-      "date": "2025-12-12",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1304",
-      "incident_id": 1304,
-      "title": "Whirlpool Reportedly Used AI-Altered Footage of North Carolina State Senator DeAndrea Salvador in Br",
-      "date": "2025-12-12",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1305",
-      "incident_id": 1305,
-      "title": "UK Facial Recognition System Reportedly Exhibits Higher False Positive Rates for Black and Asian Sub",
-      "date": "2025-12-12",
-      "category": "misinformation",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 131,
+    "total": 122,
     "last7Days": 11,
     "last30Days": 44
   },
-  "lastUpdated": "2026-03-12T02:17:56.500234+05:30"
+  "lastUpdated": "2026-03-12T08:22:02.469668+05:30"
 }
