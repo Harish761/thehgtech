@@ -887,20 +887,12 @@
       "date": "2025-12-15",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1294",
-      "incident_id": 1294,
-      "title": "The New York Times Sued Perplexity for Allegedly Using Copyrighted Content and Generating False Attr",
-      "date": "2025-12-13",
-      "category": "misinformation",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 112,
+    "total": 111,
     "last7Days": 12,
     "last30Days": 45
   },
-  "lastUpdated": "2026-03-13T08:18:59.933722+05:30"
+  "lastUpdated": "2026-03-13T10:47:00.178540+05:30"
 }
