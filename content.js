@@ -4,74 +4,54 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 12 2026",
-            "headline": "$75M Ransom—DigitalMint Negotiator Accused of Dual Roles",
-            "title": "DigitalMint Negotiator Allegedly Conducted Ransomware Attacks While Negotiating Ransoms",
-            "content": "Federal authorities have accused Angelo Martino, a former negotiator for DigitalMint, of orchestrating ransomware attacks while simultaneously negotiating ransoms for the same cases. Martino allegedly extorted $75 million by exploiting his insider knowledge to play both sides. This case highlights the complex and often opaque nature of ransomware negotiations, raising concerns about trust and integrity in the cybersecurity industry. Companies relying on third-party negotiators should vet their partners rigorously to avoid conflicts of interest. The incident underscores the need for transparency and ethical standards in ransomware response strategies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/digitalmint-ransomware-negotiator-arrest-angelo-martino-extortion/",
+            "date": "Mar 13 2026",
+            "headline": "ISC Podcast Highlights March Cyber Threat Trends",
+            "title": "SANS Internet Storm Center Analyzes Current Cyber Threat Landscape",
+            "content": "The SANS Internet Storm Center released its latest podcast, providing an analysis of current cyber threats and trends as of March 13, 2026. The InfoCON level remains green, indicating a stable threat environment. The podcast covers recent vulnerabilities, attacks, and mitigation strategies, offering valuable insights for cybersecurity professionals. Listeners are encouraged to stay informed about evolving threats and to implement recommended security measures. The SANS Internet Storm Center continues to be a trusted resource for real-time cyber threat intelligence.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32792",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
                 }
             ]
         },
         {
-            "date": "Mar 12 2026",
-            "headline": "Meta Disables 150K Accounts—Cracks Down on Asian Scam Centers",
-            "title": "Meta Launches New Security Tools After Disrupting Asian Scam Networks",
-            "content": "Meta has taken decisive action against scam centers in Asia by disabling over 150,000 accounts linked to fraudulent activities. In conjunction with these efforts, Meta has introduced new protection tools designed to safeguard users against scams. The accounts were reportedly involved in large-scale operations that targeted unsuspecting users with phishing and fraudulent schemes. This move is part of a broader industry trend of social media platforms taking proactive measures to combat cybercrime. Users are advised to stay vigilant and utilize the new security features to protect their accounts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/meta-launches-new-protection-tools-as-it-helps-disrupt-scam-centers/",
+            "date": "Mar 13 2026",
+            "headline": "ShinyHunters Breach Telus Digital—Data at Risk",
+            "title": "Telus Digital Targeted by ShinyHunters in Massive Data Breach",
+            "content": "Telus Digital has suffered a significant data breach perpetrated by the extortion group ShinyHunters, known for targeting Salesforce and other platforms. The breach is believed to affect numerous organizations worldwide that rely on Telus Digital&#x27;s business process outsourcing services. ShinyHunters, active since 2020, specializes in stealing sensitive data for extortion purposes. Organizations using Telus Digital services should review their security measures and monitor for any unauthorized access. This incident underscores the persistent threat posed by cybercriminal groups targeting BPO providers.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4144560/telus-digital-hit-with-massive-data-breach.html",
             "relatedResources": []
         },
         {
             "date": "Mar 12 2026",
-            "headline": "Android Flaw Exposes Data—Break Lock Screen in 60 Seconds",
-            "title": "Critical Android Vulnerability Allows Bypass of Lock Screen in Under a Minute",
-            "content": "Security researchers have identified a vulnerability in Android devices that enables attackers to bypass lock screens in less than 60 seconds. By extracting encryption keys and recovering the device&#x27;s PIN, attackers can gain unauthorized access to sensitive data. This flaw affects numerous Android models and poses a significant risk to users&#x27; privacy and security. As Android devices are widely used globally, the potential impact is substantial. Users should ensure their devices are updated with the latest security patches and consider using additional security measures such as biometric authentication.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/this-android-vulnerability-can-break-your-lock-screen-in-under-60-seconds",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "SQL Injection Flaw—200K WordPress Sites at Risk",
-            "title": "Ally WordPress Plugin Vulnerability Exposes Over 200,000 Sites to SQL Injection",
-            "content": "A critical vulnerability in the Ally WordPress plugin has been discovered, exposing over 200,000 websites to potential SQL injection attacks. This flaw allows attackers to inject malicious SQL queries, potentially extracting sensitive information from affected databases. Website administrators using the Ally plugin are urged to update to the latest version immediately to mitigate this risk. The vulnerability highlights the ongoing challenges of securing WordPress sites, which remain a popular target for cybercriminals. Regular plugin updates and security audits are recommended to protect against such threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ally-wordpress-plugin-flaw-exposes-over-200000-websites-to-attacks/",
+            "headline": "Loblaw Logs Out Users Amid Data Breach Concerns",
+            "title": "Loblaw Proactively Logs Out Customers Following Data Breach Alert",
+            "content": "Canadian retail giant Loblaw has notified customers of a potential data breach, prompting the company to log out all users from their accounts as a precautionary measure. While the full scope of the breach is still under investigation, Loblaw emphasizes the importance of customer security and advises users to reset their passwords. This proactive approach aims to mitigate any unauthorized access to customer accounts. Loblaw&#x27;s response highlights the increasing need for vigilance in protecting consumer data against cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/canadian-retail-giant-loblaw-notifies-customers-of-data-breach/",
             "relatedResources": []
         },
         {
             "date": "Mar 12 2026",
-            "headline": "Human Intel Challenges—SOC Struggles with Social Vetting",
-            "title": "The Human IOC: Challenges in Social Vetting for Security Teams",
-            "content": "Security professionals are increasingly finding it difficult to apply Security Operations Center (SOC) rigor to social vetting processes. The challenge lies in navigating rumors, politics, and human intelligence, which can significantly impact security teams&#x27; effectiveness. As organizations rely more on human intelligence for threat detection, the ability to discern credible information becomes crucial. This issue underscores the need for developing robust frameworks for social vetting and integrating them into existing security protocols. Security teams must enhance their skills in analyzing social dynamics to improve threat assessments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/the-human-ioc-why-security-professionals-struggle-with-social-vetting/",
+            "headline": "Iran MOIS Partners with Cybercriminals—Threat Grows",
+            "title": "Iranian MOIS Collaborates with Criminal Groups to Enhance Cyberattacks",
+            "content": "Reports indicate that the Iranian Ministry of Intelligence and Security (MOIS) is now collaborating with cybercriminal groups to bolster their cyberattack capabilities. Previously, Iranian Advanced Persistent Threats (APTs) have disguised themselves as independent cybercriminals, but this new alliance marks a shift in strategy. This collaboration could lead to more sophisticated and widespread cyberattacks targeting global entities. Organizations are advised to strengthen their cybersecurity defenses and remain vigilant against potential threats originating from Iranian-linked groups.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/iran-mois-criminals-cyberattacks",
             "relatedResources": []
         },
         {
             "date": "Mar 12 2026",
-            "headline": "Signal Accounts Compromised—Beware of Social Engineering Tricks",
-            "title": "Signal Users Vulnerable to Account Takeover via Social Engineering Attacks",
-            "content": "Signal, the encrypted messaging app, has reported account takeovers targeting government officials and journalists through social engineering tactics. Despite the app&#x27;s strong encryption, attackers have managed to deceive users into compromising their accounts. This incident serves as a reminder that even secure platforms are vulnerable to human errors. Users should be cautious of unsolicited requests and enable additional security features such as registration lock PINs to protect their accounts. The event highlights the persistent threat of social engineering in compromising secure communications.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/signal-account-safe-unless-fall-for-this-trick",
+            "headline": "Stryker Attack Reveals Complex Iranian Cyber Tactics",
+            "title": "Stryker Attack Highlights Iranian Cyber Activity Amid U.S.-Israel Tensions",
+            "content": "The recent cyberattack on medical device maker Stryker underscores the complex nature of Iranian cyber operations amid ongoing U.S.-Israel tensions. Although the attack appears to be a success for the perpetrators, the attribution remains challenging due to the sophisticated tactics employed. This incident reflects the broader geopolitical landscape, where cyber warfare is increasingly used as a tool for statecraft. Security professionals should be aware of the evolving threat landscape and consider geopolitical factors when assessing cyber risks.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/stryker-cyberattack-iranian-hackers-handala/",
             "relatedResources": [
                 {
                     "label": "MITRE ATT&CK Mapping",
@@ -82,65 +62,36 @@ const websiteContent = {
         },
         {
             "date": "Mar 12 2026",
-            "headline": "Splunk and Zoom Patch Critical Vulnerabilities—Update Now",
-            "title": "Severe Vulnerabilities in Splunk and Zoom Patched to Prevent Exploits",
-            "content": "Splunk and Zoom have released patches for critical and high-severity vulnerabilities that could allow attackers to execute arbitrary shell commands or escalate privileges. These flaws, if exploited, pose significant risks to enterprise environments relying on these platforms for data analysis and communication. Administrators are strongly advised to apply the latest updates to prevent potential exploitation. The vulnerabilities underscore the importance of timely patch management in maintaining cybersecurity resilience. Organizations should regularly monitor vendor advisories and implement patches as part of their security best practices.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/splunk-zoom-patch-severe-vulnerabilities/",
+            "headline": "England Hockey Probes Ransomware Attack—Data at Risk",
+            "title": "England Hockey Investigates Potential Data Breach by AiLock Ransomware",
+            "content": "England Hockey is currently investigating a potential data breach following a ransomware attack by the AiLock gang. The ransomware group has listed England Hockey as a victim on its data leak site, raising concerns about the security of sensitive information. The organization is working to determine the extent of the breach and its impact on stakeholders. In the meantime, affected parties are advised to monitor for any signs of data misuse and follow best practices for data protection.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/england-hockey-investigating-ransomware-data-breach/",
             "relatedResources": [
                 {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                },
-                {
-                    "label": "SIEM Comparison: Splunk vs Elastic vs LogRhythm",
-                    "url": "/comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
-                    "icon": "fa-chart-line"
+                    "label": "Ransomware Response Playbook",
+                    "url": "/guides/ransomware-response-playbook.html",
+                    "icon": "fa-biohazard"
                 }
             ]
         },
         {
             "date": "Mar 12 2026",
-            "headline": "ISC Stormcast Highlights Emerging Threats—Stay Alert",
-            "title": "ISC Stormcast Podcast Discusses Current Cybersecurity Threat Landscape",
-            "content": "The latest ISC Stormcast podcast provides insights into the evolving cybersecurity threat landscape, emphasizing the importance of vigilance and proactive defense measures. Hosted by the SANS Internet Storm Center, the episode highlights recent vulnerabilities and attack vectors that security professionals need to monitor. While specific threats are not detailed in this summary, the podcast serves as a crucial resource for staying informed about potential risks. Listeners are encouraged to subscribe to the podcast for regular updates and expert analysis. Maintaining awareness of current trends is essential for safeguarding organizational networks and data.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32790",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "IoT Devices Logging as Admin—Critical Security Risk",
-            "title": "IoT Device Vulnerabilities Highlighted in SANS Guest Diary",
-            "content": "A guest diary entry by Adam Thorman at the SANS Internet Storm Center warns about the dangers of IoT devices logging in as administrative users. This practice can lead to severe security breaches, as unauthorized access to critical systems becomes possible. Thorman, an ISC intern, explains how default credentials and poor security configurations contribute to this risk. Organizations deploying IoT devices should prioritize changing default passwords and implementing strict access controls. As IoT adoption continues to grow, securing these devices against unauthorized access is paramount to protecting sensitive data and infrastructure.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32788",
+            "headline": "U.S. Spyware Policy Uncertain—Industry on Edge",
+            "title": "Commercial Spyware Opponents Concerned Over U.S. Policy Shifts",
+            "content": "Recent changes in U.S. policy regarding commercial spyware have sparked confusion and concern among industry experts. The rescinding of sanctions and reactivation of certain contracts have left many questioning the current administration&#x27;s stance on spyware regulation. This policy ambiguity could have significant implications for both domestic and international surveillance practices. Stakeholders in the cybersecurity field are advised to stay informed about policy developments and consider their impact on privacy and security frameworks.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/commercial-spyware-opponents-fear-us-policy-shifting",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "Wikipedia Worm Unleashes Chaos—Crypto Contractor Blunder",
-            "title": "Dormant JavaScript Worm Revives on Wikipedia, Causing Widespread Disruption",
-            "content": "A dormant JavaScript worm unexpectedly resurfaced on Wikipedia, disrupting the platform by displaying giant woodpecker images. The incident was triggered accidentally by a Wikipedia security engineer, highlighting the potential risks of legacy code. In a separate event, a crypto contractor hired by the US Marshals Service attempted to steal $46 million but was thwarted. These incidents underscore the need for robust security practices and thorough vetting of third-party contractors. Organizations should regularly review and update their security protocols to prevent similar occurrences.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-458/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "React Analysis",
+                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
+                    "icon": "fa-file-alt"
                 },
                 {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
+                    "label": "NIST CSF 2.0 Implementation",
+                    "url": "/guides/nist-csf-2-implementation.html",
+                    "icon": "fa-check-double"
                 }
             ]
         },
@@ -171,13 +122,18 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 12 2026",
-            "headline": "Microsoft&#x27;s Copilot Health—Secure Medical Data Integration",
-            "title": "Microsoft Launches Copilot Health for Medical Data and Wearables Integration",
-            "content": "Microsoft has unveiled Copilot Health, a new feature within its Copilot platform designed to securely connect users with their medical records and wearable devices. This tool creates a &quot;separate, secure space&quot; for users to query lab results, search for healthcare providers, and analyze wearable data. By offering a phased rollout, Microsoft aims to enhance healthcare data accessibility while maintaining privacy. This development is significant for healthcare professionals and patients seeking streamlined access to medical information. Users are encouraged to explore Copilot Health&#x27;s capabilities to better manage their health data securely.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/893594/microsoft-copilot-health-launch",
+            "date": "Mar 13 2026",
+            "headline": "DABStep&#x27;s Top AI Agent Mimics Data Scientist Thinking",
+            "title": "Hugging Face Achieves #1 on DABStep with AI Agent for Data Scientists",
+            "content": "Hugging Face has developed an AI agent designed to emulate the cognitive processes of a data scientist, securing the top spot on the DABStep leaderboard. This agent leverages reusable tool generation to streamline data analysis tasks, enhancing efficiency and accuracy. The agent&#x27;s architecture is built to handle complex data sets and execute statistical models, providing insights akin to those of a seasoned data scientist. This development highlights the growing trend of creating specialized AI tools to augment human expertise in technical fields. As AI continues to evolve, such innovations are crucial for industries reliant on data-driven decision-making.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
             "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
                 {
                     "label": "Securing AI/ML Pipelines",
                     "url": "/guides/securing-ai-ml-pipelines.html",
@@ -186,52 +142,12 @@ const websiteContent = {
             ]
         },
         {
-            "date": "Mar 12 2026",
-            "headline": "Google Leverages AI—Predicts Flash Floods with Old News",
-            "title": "Google Uses AI and Historical News to Predict Flash Floods",
-            "content": "Google is innovating in disaster prediction by using large language models (LLMs) to convert qualitative news reports into quantitative data for predicting flash floods. This approach addresses data scarcity issues by leveraging historical news archives to enhance flood prediction models. The method could significantly improve early warning systems, benefiting communities prone to sudden flooding. This advancement highlights the growing role of AI in environmental management and disaster response. Stakeholders in flood-prone areas should monitor these developments for improved preparedness and response strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/12/google-is-using-old-news-reports-and-ai-to-predict-flash-floods/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "Idle GPUs—Run Inference, Maximize Efficiency",
-            "title": "Continuous Batching Advocates for Using Idle GPUs for Inference",
-            "content": "The team behind continuous batching is advocating for the use of idle GPUs to run inference tasks instead of letting them sit unused. As GPU clusters experience downtime between training jobs, these idle periods represent lost opportunities for cloud operators. By utilizing spot GPU markets, operators can rent out spare capacity, maximizing hardware efficiency and reducing wasted power and cooling costs. This approach can enhance profit margins for cloud providers while offering affordable computing resources for AI developers. Companies should consider integrating continuous batching to optimize GPU utilization.",
+            "date": "Mar 13 2026",
+            "headline": "Random Labs Debuts Slate V1—Swarm-Native Coding Agent",
+            "title": "Y Combinator&#x27;s Random Labs Launches Swarm-Native Coding Agent Slate V1",
+            "content": "Random Labs, backed by Y Combinator, has introduced Slate V1, touted as the first &quot;swarm-native&quot; coding agent. This innovation addresses the &quot;systems problem&quot; in AI, where managing advanced models becomes a bottleneck in productivity. Slate V1 is designed to work collaboratively across distributed systems, optimizing coding tasks by leveraging collective AI intelligence. This approach aims to enhance software development efficiency, particularly in complex projects requiring extensive computational resources. Developers are encouraged to explore swarm-native strategies to overcome current limitations in AI model management and deployment.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/the-team-behind-continuous-batching-says-your-idle-gpus-should-be-running",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "AI Engineering—Transforming Everyday Life",
-            "title": "Engineering AI for Real-World Applications Across Industries",
-            "content": "Artificial intelligence is increasingly being integrated into everyday products, from cars and home appliances to life-saving medical devices. Engineers are leveraging AI to enhance product functionality, streamline design processes, and validate product performance. This trend reflects AI&#x27;s expanding influence beyond digital domains into tangible, real-world applications. The shift emphasizes the importance of pragmatic AI design that meets practical needs. Professionals in engineering and product development should explore AI&#x27;s potential to innovate and improve product offerings across various industries.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/12/1133675/pragmatic-by-design-engineering-ai-for-the-real-world/",
+            "sourceUrl": "https://venturebeat.com/orchestration/y-combinator-backed-random-labs-launches-slate-v1-claiming-the-first-swarm",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
@@ -242,30 +158,60 @@ const websiteContent = {
         },
         {
             "date": "Mar 12 2026",
-            "headline": "Google Maps—Immersive Navigation Revolutionizes User Experience",
-            "title": "Google Maps Introduces AI-Powered Ask Maps and Immersive Navigation",
-            "content": "Google Maps is undergoing its largest update in over a decade with the introduction of &quot;Immersive Navigation&quot; and the AI-powered &quot;Ask Maps&quot; feature. Immersive Navigation offers enhanced visual experiences, while Ask Maps allows users to pose complex, real-world questions for personalized responses. This update leverages Google&#x27;s Gemini AI to provide detailed insights and improve navigation accuracy. Users can expect a more interactive and informative mapping experience, making it easier to plan routes and explore new areas. Tech professionals should consider the implications of AI integration in location-based services.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/12/google-maps-is-getting-an-ai-ask-maps-feature-and-upgraded-immersive-navigation/",
+            "headline": "Nvidia GTC 2026—Huang&#x27;s Keynote to Unveil New AI Vision",
+            "title": "How to Watch Jensen Huang&#x27;s Nvidia GTC 2026 Keynote",
+            "content": "Nvidia&#x27;s GPU Technology Conference (GTC) 2026 is set to spotlight CEO Jensen Huang&#x27;s keynote, where he will unveil the company&#x27;s latest advancements and strategic direction in AI and computing. Historically, GTC serves as a platform for Nvidia to announce groundbreaking products and partnerships. This year&#x27;s keynote is anticipated to focus on Nvidia&#x27;s contributions to AI-driven computing and their role in shaping future technological landscapes. Attendees can expect insights into Nvidia&#x27;s innovation in GPU technology and its implications for industries relying on high-performance computing.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/12/how-to-watch-jensen-huangs-nvidia-gtc-2026-keynote/",
             "relatedResources": []
         },
         {
             "date": "Mar 12 2026",
-            "headline": "Google Maps&#x27; Gemini—Answers Complex Real-World Queries",
-            "title": "Google Maps Enhances User Interaction with Gemini-Powered Ask Maps",
-            "content": "Google has announced the integration of its Gemini AI into Google Maps with the new &quot;Ask Maps&quot; feature, designed to handle complex, real-world questions. This enhancement allows for highly detailed and personalized responses, improving user interaction and navigation capabilities. The feature represents Google&#x27;s ongoing efforts to integrate AI across its most-used products, enhancing user experience through advanced AI capabilities. Users should explore Ask Maps to benefit from its comprehensive query handling and detailed navigation assistance. This development underscores the importance of AI in enhancing everyday technology tools.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/893262/google-maps-gemini-ai-ask-maps-immersive-navigation",
+            "headline": "AI Chatbots in Military—Targeting Decisions Under Review",
+            "title": "Defense Official Discusses AI Chatbots for Military Targeting Decisions",
+            "content": "A Defense Department official has revealed potential uses of generative AI systems, specifically chatbots, in military operations for ranking and recommending target lists. These AI-generated recommendations would undergo human vetting before any action is taken, emphasizing the need for ethical oversight in military AI applications. The disclosure comes amid broader discussions on AI&#x27;s role in defense strategies, highlighting the balance between technological advancement and ethical responsibility. Military professionals should remain informed about AI developments to ensure compliance with international laws and ethical standards.",
+            "source": "Artificial intelligence – MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/03/12/1134243/defense-official-military-use-ai-chatbots-targeting-decisions/",
             "relatedResources": []
         },
         {
             "date": "Mar 12 2026",
-            "headline": "Gemini-Powered Google Maps—Chat with Your Navigator",
-            "title": "Google Maps Introduces Chatty Gemini-Powered Interface for Enhanced Navigation",
-            "content": "Google Maps has rolled out a new Gemini-powered interface called &quot;Ask Maps,&quot; allowing users to interact with the application by asking questions about locations and planning trips. This feature, available on mobile, enhances the user experience by providing conversational responses and detailed trip planning assistance. By leveraging AI, Google Maps aims to offer more intuitive and user-friendly navigation. Users are encouraged to utilize this new feature for a more interactive mapping experience. This innovation highlights the potential of AI-driven interfaces in transforming digital navigation tools.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/google-maps-ask-maps-gemini-powered-tool/",
+            "headline": "Vector Search Crucial for Agentic AI—RAG Falls Short",
+            "title": "Vector Databases&#x27; Role in Agentic AI Surpasses RAG Capabilities",
+            "content": "Recent discussions in the AI community emphasize the importance of vector databases over Retrieval-Augmented Generation (RAG) systems in agentic AI applications. As large language models expand to million-token contexts, vector search offers a scalable solution for managing vast data sets efficiently. This shift is driven by the need for rapid, precise information retrieval in complex AI systems, where traditional RAG methods struggle with scalability. Organizations are encouraged to integrate vector search technologies to optimize AI performance and maintain competitive advantages in data-driven industries.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/data/agents-dont-replace-vector-search-they-make-it-harder-to-get-right",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Anthropic vs. DOD—AI Lawsuit Saga Continues",
+            "title": "Anthropic&#x27;s Legal Battle with DOD Over AI Technologies Unfolds",
+            "content": "The ongoing legal dispute between AI company Anthropic and the Department of Defense (DOD) remains unresolved, with significant implications for AI development and deployment in defense contexts. Central to the lawsuit are issues surrounding intellectual property and the ethical use of AI in military applications. The case highlights the challenges tech companies face when navigating government contracts and the potential for AI technologies to influence defense strategies. Industry stakeholders should monitor this case closely, as its outcome could set precedents for future AI-related legal and ethical standards.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-anthropic-department-defense-lawsuit-iran-war-memes-artificial-intelligence-venture-capital/",
             "relatedResources": []
+        },
+        {
+            "date": "Mar 12 2026",
+            "headline": "Meta AI Enhances Facebook Marketplace—Automated Buyer Replies",
+            "title": "Facebook Marketplace Integrates Meta AI for Automated Buyer Responses",
+            "content": "Meta has introduced a new feature on Facebook Marketplace, allowing sellers to use Meta AI to automatically draft responses to buyer inquiries. This feature utilizes information from listings, such as item descriptions, availability, and pricing, to generate accurate replies. The integration aims to streamline communication between buyers and sellers, enhancing user experience and efficiency. With AI-driven automation becoming more prevalent, sellers are encouraged to leverage these tools to improve transaction management and customer satisfaction on digital platforms.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/12/facebook-marketplace-now-lets-meta-ai-respond-to-buyers-messages/",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
         }
     ],
     "articles": {},
