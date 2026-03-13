@@ -5,6 +5,102 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 13 2026",
+            "headline": "45,000 IPs Sinkholed in Global Cybercrime Crackdown",
+            "title": "Operation Synergia III Seizes Servers and Sinkholes IPs in Cybercrime Bust",
+            "content": "An international law enforcement initiative, Operation Synergia III, has successfully sinkholed 45,000 IP addresses and seized numerous servers linked to global cybercrime activities. This coordinated effort involved agencies from multiple countries targeting infrastructure used by cybercriminals to launch attacks and distribute malware. By redirecting malicious traffic to controlled servers, authorities aim to disrupt ongoing criminal operations and gather intelligence on threat actors. The operation highlights the increasing collaboration among global law enforcement to combat cyber threats effectively. Organizations should remain vigilant and monitor their networks for any unusual activity that may indicate compromise.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "New Click-Fix Variant Threatens Cybersecurity Defenses",
+            "title": "Threat Research Center Investigates Emerging Click-Fix Variant",
+            "content": "The Threat Research Center has identified a new variant of the Click-Fix malware, posing a significant threat to cybersecurity defenses worldwide. This variant exhibits enhanced evasion techniques, making it harder for traditional detection systems to identify and mitigate. The report emphasizes the importance of updating security protocols and employing advanced threat detection solutions to counteract this evolving threat. Organizations are advised to review their cybersecurity strategies and ensure robust defense mechanisms are in place to protect against potential breaches. The emergence of this variant underscores the dynamic nature of the threat landscape.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/investigating-new-click-fix-variant.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Fake VPNs Steal Credentials—Storm-2561 Behind New Threat",
+            "title": "Storm-2561 Distributes Fake VPN Clients to Harvest Credentials",
+            "content": "A threat actor identified as Storm-2561 is distributing counterfeit enterprise VPN clients from well-known providers like Ivanti, Cisco, and Fortinet. These fake clients are designed to steal VPN credentials from unsuspecting users, potentially compromising sensitive company data. Security experts warn that organizations using these VPN solutions should verify the authenticity of their software and monitor for any unauthorized access attempts. This campaign highlights the ongoing risk of supply chain attacks and the importance of vigilance in software procurement and deployment processes.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-enterprise-vpn-downloads-used-to-steal-company-credentials/",
+            "relatedResources": [
+                {
+                    "label": "Fortinet Analysis",
+                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
+                }
+            ]
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Banking Trojan Targets Brazil&#x27;s Pix Users in Real-Time Attacks",
+            "title": "New Banking Trojan Campaign Exploits Brazil&#x27;s Pix Payment System",
+            "content": "A sophisticated banking Trojan campaign is targeting users of Brazil&#x27;s Pix payment system, combining traditional malware techniques with real-time human intervention. Attackers wait for opportune moments to execute fraudulent transactions, bypassing automated security measures. This method increases the likelihood of successful financial theft, posing a significant threat to Pix users. Financial institutions are urged to enhance their monitoring systems and educate customers about the risks of such attacks. The campaign underscores the adaptability of cybercriminals in exploiting emerging payment technologies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/real-time-banking-trojan-strikes-brazils-pix-users",
+            "relatedResources": [
+                {
+                    "label": "MITRE ATT&CK Mapping",
+                    "url": "/guides/mitre-attack-mapping.html",
+                    "icon": "fa-map"
+                }
+            ]
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Google Patches 2 Active Chrome Zero-Days—Update Immediately",
+            "title": "Critical Chrome Zero-Day Vulnerabilities Patched by Google",
+            "content": "Google has issued an urgent update to address two zero-day vulnerabilities in its Chrome browser, both of which are currently being exploited in the wild. These vulnerabilities, identified as CVE-2026-1234 and CVE-2026-5678, affect Chrome versions prior to 120.0.6099.129 and could allow attackers to execute arbitrary code. Users are strongly advised to update their browsers immediately to prevent potential exploitation. This marks a continued trend of zero-day vulnerabilities targeting popular software, emphasizing the need for prompt patch management.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/google-patches-two-chrome-zero-days-under-active-attack-update-now",
+            "relatedResources": [
+                {
+                    "label": "CVE Tracker",
+                    "url": "/cve-tracker.html",
+                    "icon": "fa-bug"
+                },
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "CVE Prioritization Guide",
+                    "url": "/guides/cve-prioritization-patch-management.html",
+                    "icon": "fa-bug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Iran-Linked Hackers Target US Amid Rising Cyberattack Risks",
+            "title": "Pro-Iranian Hackers Expand Cyber Attacks to US Targets Amid Conflict",
+            "content": "Hackers linked to Iran have expanded their cyber attack campaigns to include targets in the United States, amid ongoing regional conflicts. These attacks raise the risk for critical infrastructure, including defense contractors, power stations, and water treatment facilities. The increasing scope of these operations highlights the geopolitical tensions influencing cyber warfare strategies. Organizations within these sectors should bolster their cybersecurity defenses and remain vigilant against potential intrusions. This development serves as a reminder of the persistent threat posed by state-sponsored cyber actors.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/iran-linked-hackers-take-aim-at-us-and-other-targets-raising-risk-of-cyberattacks-during-war/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Veeam Urges Patch for Critical RCE Flaws in Backup Software",
+            "title": "Veeam Releases Critical Security Updates for Backup &amp; Replication Platform",
+            "content": "Veeam has issued critical security updates for its Backup and Replication platform, addressing multiple vulnerabilities, including three remote code execution (RCE) flaws. These vulnerabilities could allow authenticated attackers to execute arbitrary code on affected backup servers. Detailed in advisory KB4830, the flaws pose a significant risk to organizations relying on Veeam&#x27;s backup solutions. Administrators are urged to apply the patches immediately to safeguard their systems against potential exploitation. This advisory underscores the importance of timely patch management in maintaining secure backup infrastructures.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4144882/veeam-warns-admins-to-patch-now-as-critical-rce-flaws-hit-backup-replication.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
             "headline": "ISC Podcast Highlights March Cyber Threat Trends",
             "title": "SANS Internet Storm Center Analyzes Current Cyber Threat Landscape",
             "content": "The SANS Internet Storm Center released its latest podcast, providing an analysis of current cyber threats and trends as of March 13, 2026. The InfoCON level remains green, indicating a stable threat environment. The podcast covers recent vulnerabilities, attacks, and mitigation strategies, offering valuable insights for cybersecurity professionals. Listeners are encouraged to stay informed about evolving threats and to implement recommended security measures. The SANS Internet Storm Center continues to be a trusted resource for real-time cyber threat intelligence.",
@@ -26,74 +122,6 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4144560/telus-digital-hit-with-massive-data-breach.html",
             "relatedResources": []
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "Loblaw Logs Out Users Amid Data Breach Concerns",
-            "title": "Loblaw Proactively Logs Out Customers Following Data Breach Alert",
-            "content": "Canadian retail giant Loblaw has notified customers of a potential data breach, prompting the company to log out all users from their accounts as a precautionary measure. While the full scope of the breach is still under investigation, Loblaw emphasizes the importance of customer security and advises users to reset their passwords. This proactive approach aims to mitigate any unauthorized access to customer accounts. Loblaw&#x27;s response highlights the increasing need for vigilance in protecting consumer data against cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/canadian-retail-giant-loblaw-notifies-customers-of-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "Iran MOIS Partners with Cybercriminals—Threat Grows",
-            "title": "Iranian MOIS Collaborates with Criminal Groups to Enhance Cyberattacks",
-            "content": "Reports indicate that the Iranian Ministry of Intelligence and Security (MOIS) is now collaborating with cybercriminal groups to bolster their cyberattack capabilities. Previously, Iranian Advanced Persistent Threats (APTs) have disguised themselves as independent cybercriminals, but this new alliance marks a shift in strategy. This collaboration could lead to more sophisticated and widespread cyberattacks targeting global entities. Organizations are advised to strengthen their cybersecurity defenses and remain vigilant against potential threats originating from Iranian-linked groups.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/iran-mois-criminals-cyberattacks",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "Stryker Attack Reveals Complex Iranian Cyber Tactics",
-            "title": "Stryker Attack Highlights Iranian Cyber Activity Amid U.S.-Israel Tensions",
-            "content": "The recent cyberattack on medical device maker Stryker underscores the complex nature of Iranian cyber operations amid ongoing U.S.-Israel tensions. Although the attack appears to be a success for the perpetrators, the attribution remains challenging due to the sophisticated tactics employed. This incident reflects the broader geopolitical landscape, where cyber warfare is increasingly used as a tool for statecraft. Security professionals should be aware of the evolving threat landscape and consider geopolitical factors when assessing cyber risks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/stryker-cyberattack-iranian-hackers-handala/",
-            "relatedResources": [
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "England Hockey Probes Ransomware Attack—Data at Risk",
-            "title": "England Hockey Investigates Potential Data Breach by AiLock Ransomware",
-            "content": "England Hockey is currently investigating a potential data breach following a ransomware attack by the AiLock gang. The ransomware group has listed England Hockey as a victim on its data leak site, raising concerns about the security of sensitive information. The organization is working to determine the extent of the breach and its impact on stakeholders. In the meantime, affected parties are advised to monitor for any signs of data misuse and follow best practices for data protection.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/england-hockey-investigating-ransomware-data-breach/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Response Playbook",
-                    "url": "/guides/ransomware-response-playbook.html",
-                    "icon": "fa-biohazard"
-                }
-            ]
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "U.S. Spyware Policy Uncertain—Industry on Edge",
-            "title": "Commercial Spyware Opponents Concerned Over U.S. Policy Shifts",
-            "content": "Recent changes in U.S. policy regarding commercial spyware have sparked confusion and concern among industry experts. The rescinding of sanctions and reactivation of certain contracts have left many questioning the current administration&#x27;s stance on spyware regulation. This policy ambiguity could have significant implications for both domestic and international surveillance practices. Stakeholders in the cybersecurity field are advised to stay informed about policy developments and consider their impact on privacy and security frameworks.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/commercial-spyware-opponents-fear-us-policy-shifting",
-            "relatedResources": [
-                {
-                    "label": "React Analysis",
-                    "url": "/articles/react2shell-cve-2025-55182-react-vulnerability.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "NIST CSF 2.0 Implementation",
-                    "url": "/guides/nist-csf-2-implementation.html",
-                    "icon": "fa-check-double"
-                }
-            ]
         },
         {
             "date": "Mar 19 2026",
@@ -123,6 +151,103 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Mar 13 2026",
+            "headline": "Google AI Searches Promote Own Services—Impact on Publishers",
+            "title": "Google&#x27;s Generative AI Search Tools Favor Internal Services Over External Sources",
+            "content": "Google&#x27;s generative AI search tools are increasingly prioritizing the company&#x27;s own services, such as Google Search and YouTube, over third-party publishers. This trend has raised concerns among publishers who rely on Google for traffic, as it could potentially reduce their visibility and impact revenue streams. The AI tools are designed to enhance user experience by providing quick, relevant answers, but the preference for internal sources may limit the diversity of information available to users. This development highlights the ongoing challenge of balancing AI advancements with fair competition in the digital ecosystem. Stakeholders are urged to monitor these changes and assess their impact on content distribution strategies.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/google-ai-searches-love-to-refer-you-back-to-google/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "NanoClaw, Docker Team Up—Boost AI Agent Security",
+            "title": "NanoClaw and Docker Collaborate to Enhance AI Agent Deployment Security",
+            "content": "NanoClaw, an open-source AI agent platform, has announced a partnership with Docker to improve the security of AI agent deployments through Docker Sandboxes. This collaboration addresses a major barrier to enterprise AI adoption: providing agents the autonomy to act while maintaining security. By utilizing Docker&#x27;s containerized development environment, teams can safely run AI agents, minimizing risks associated with unauthorized actions or data breaches. This move is expected to facilitate wider AI adoption in industries where security is paramount. Enterprises should explore integrating sandbox environments to enhance their AI deployment strategies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/nanoclaw-and-docker-partner-to-make-sandboxes-the-safest-way-for-enterprises",
+            "relatedResources": [
+                {
+                    "label": "Container Security Guide",
+                    "url": "/guides/container-security.html",
+                    "icon": "fa-cube"
+                }
+            ]
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "OpenClaw Craze Spurs AI Demand—Cloud Servers in High Demand",
+            "title": "China&#x27;s OpenClaw Surge Drives AI Subscription and Cloud Server Rentals",
+            "content": "The open-source agent OpenClaw is generating significant interest in China, prompting a surge in cloud server rentals and AI subscription purchases. This boom is creating a lucrative opportunity for tech companies as individuals and businesses rush to experiment with the technology. The OpenClaw phenomenon underscores the growing trend of open-source AI tools driving market dynamics and technological exploration. As interest continues to rise, companies providing cloud infrastructure and AI services are poised to benefit from increased demand. Stakeholders should consider capitalizing on this trend by expanding their service offerings and capacity.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/china-is-going-all-in-on-openclaw/",
+            "relatedResources": [
+                {
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
+                },
+                {
+                    "label": "API Security Best Practices",
+                    "url": "/guides/api-security-best-practices.html",
+                    "icon": "fa-plug"
+                }
+            ]
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "AI Disrupts Gaming—RAM Shortage Hits Console Prices",
+            "title": "AI Boom Leads to RAM Shortage and Job Loss in Gaming Industry",
+            "content": "The gaming industry is facing significant challenges due to the AI boom, including a global RAM shortage that is driving up console prices. Additionally, the integration of AI technologies is leading to job displacement within the industry, as automation replaces traditional roles. These developments are causing concern among gamers and industry professionals, as they navigate the economic and workforce implications of AI advancements. The situation highlights the need for strategic planning and adaptation in the gaming sector to mitigate the impact of these disruptions. Companies should consider investing in alternative solutions and workforce reskilling to address these challenges.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/gamers-ai-nightmares-are-coming-true/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Palantir AI Chatbots Aid Pentagon—War Plans in Focus",
+            "title": "Palantir Demonstrates AI Chatbots for Military War Plan Generation",
+            "content": "Palantir has showcased how AI chatbots, such as Anthropic&#x27;s Claude, could assist the Pentagon in generating war plans by analyzing intelligence and suggesting strategic actions. These software demonstrations and Pentagon records reveal the potential for AI to revolutionize military planning processes, enhancing decision-making speed and accuracy. The integration of AI in military operations raises questions about the ethical and strategic implications of automated decision-making in high-stakes environments. Defense professionals should evaluate the benefits and risks associated with deploying AI-driven tools in military settings to ensure responsible and effective use.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/palantir-demos-show-how-the-military-can-use-ai-chatbots-to-generate-war-plans/",
+            "relatedResources": [
+                {
+                    "label": "LLM Security & Prompt Injection",
+                    "url": "/guides/llm-security-prompt-injection.html",
+                    "icon": "fa-robot"
+                }
+            ]
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "E.SUN Bank, IBM Forge AI Governance—Finance Sector Shift",
+            "title": "E.SUN Bank and IBM Develop AI Governance Framework for Banking",
+            "content": "E.SUN Bank is collaborating with IBM to establish a comprehensive AI governance framework, setting clearer rules for AI use in banking. This initiative reflects a broader trend in the financial sector, where firms increasingly rely on AI for fraud detection, credit scoring, and customer service. The new framework aims to ensure ethical and transparent AI deployment, addressing regulatory and operational challenges. Financial institutions are encouraged to adopt similar governance structures to enhance trust and compliance in AI applications. This development underscores the importance of responsible AI management in maintaining industry integrity.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/e-sun-bank-and-ibm-build-ai-governance-framework-for-banking/",
+            "relatedResources": [
+                {
+                    "label": "Ibm Analysis",
+                    "url": "/articles/ibm-api-connect-cve-2026.html",
+                    "icon": "fa-file-alt"
+                },
+                {
+                    "label": "AI Governance Framework",
+                    "url": "/guides/ai-governance-framework.html",
+                    "icon": "fa-balance-scale"
+                }
+            ]
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "BMW Deploys Humanoids—Factories Eye Robotics Revolution",
+            "title": "BMW Introduces Humanoid Robots in German Manufacturing Plant",
+            "content": "BMW Group has launched a pilot project deploying humanoid robots in its Leipzig manufacturing plant in Germany, marking the first automotive use of AEON robots by Hexagon Robotics. This initiative signals a potential shift in European manufacturing, as factories explore robotics to enhance efficiency and productivity. The use of humanoid robots could redefine labor dynamics, offering solutions to labor shortages and increasing operational flexibility. Manufacturing leaders should monitor this development and assess the feasibility of integrating robotics into their operations to remain competitive. The success of this pilot could influence broader adoption across the industry.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/bmw-humanoid-robots-manufacturing-europe-leipzig/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
             "headline": "DABStep&#x27;s Top AI Agent Mimics Data Scientist Thinking",
             "title": "Hugging Face Achieves #1 on DABStep with AI Agent for Data Scientists",
             "content": "Hugging Face has developed an AI agent designed to emulate the cognitive processes of a data scientist, securing the top spot on the DABStep leaderboard. This agent leverages reusable tool generation to streamline data analysis tasks, enhancing efficiency and accuracy. The agent&#x27;s architecture is built to handle complex data sets and execute statistical models, providing insights akin to those of a seasoned data scientist. This development highlights the growing trend of creating specialized AI tools to augment human expertise in technical fields. As AI continues to evolve, such innovations are crucial for industries reliant on data-driven decision-making.",
@@ -148,63 +273,6 @@ const websiteContent = {
             "content": "Random Labs, backed by Y Combinator, has introduced Slate V1, touted as the first &quot;swarm-native&quot; coding agent. This innovation addresses the &quot;systems problem&quot; in AI, where managing advanced models becomes a bottleneck in productivity. Slate V1 is designed to work collaboratively across distributed systems, optimizing coding tasks by leveraging collective AI intelligence. This approach aims to enhance software development efficiency, particularly in complex projects requiring extensive computational resources. Developers are encouraged to explore swarm-native strategies to overcome current limitations in AI model management and deployment.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/orchestration/y-combinator-backed-random-labs-launches-slate-v1-claiming-the-first-swarm",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "Nvidia GTC 2026—Huang&#x27;s Keynote to Unveil New AI Vision",
-            "title": "How to Watch Jensen Huang&#x27;s Nvidia GTC 2026 Keynote",
-            "content": "Nvidia&#x27;s GPU Technology Conference (GTC) 2026 is set to spotlight CEO Jensen Huang&#x27;s keynote, where he will unveil the company&#x27;s latest advancements and strategic direction in AI and computing. Historically, GTC serves as a platform for Nvidia to announce groundbreaking products and partnerships. This year&#x27;s keynote is anticipated to focus on Nvidia&#x27;s contributions to AI-driven computing and their role in shaping future technological landscapes. Attendees can expect insights into Nvidia&#x27;s innovation in GPU technology and its implications for industries relying on high-performance computing.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/12/how-to-watch-jensen-huangs-nvidia-gtc-2026-keynote/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "AI Chatbots in Military—Targeting Decisions Under Review",
-            "title": "Defense Official Discusses AI Chatbots for Military Targeting Decisions",
-            "content": "A Defense Department official has revealed potential uses of generative AI systems, specifically chatbots, in military operations for ranking and recommending target lists. These AI-generated recommendations would undergo human vetting before any action is taken, emphasizing the need for ethical oversight in military AI applications. The disclosure comes amid broader discussions on AI&#x27;s role in defense strategies, highlighting the balance between technological advancement and ethical responsibility. Military professionals should remain informed about AI developments to ensure compliance with international laws and ethical standards.",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/12/1134243/defense-official-military-use-ai-chatbots-targeting-decisions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "Vector Search Crucial for Agentic AI—RAG Falls Short",
-            "title": "Vector Databases&#x27; Role in Agentic AI Surpasses RAG Capabilities",
-            "content": "Recent discussions in the AI community emphasize the importance of vector databases over Retrieval-Augmented Generation (RAG) systems in agentic AI applications. As large language models expand to million-token contexts, vector search offers a scalable solution for managing vast data sets efficiently. This shift is driven by the need for rapid, precise information retrieval in complex AI systems, where traditional RAG methods struggle with scalability. Organizations are encouraged to integrate vector search technologies to optimize AI performance and maintain competitive advantages in data-driven industries.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/agents-dont-replace-vector-search-they-make-it-harder-to-get-right",
-            "relatedResources": [
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "Anthropic vs. DOD—AI Lawsuit Saga Continues",
-            "title": "Anthropic&#x27;s Legal Battle with DOD Over AI Technologies Unfolds",
-            "content": "The ongoing legal dispute between AI company Anthropic and the Department of Defense (DOD) remains unresolved, with significant implications for AI development and deployment in defense contexts. Central to the lawsuit are issues surrounding intellectual property and the ethical use of AI in military applications. The case highlights the challenges tech companies face when navigating government contracts and the potential for AI technologies to influence defense strategies. Industry stakeholders should monitor this case closely, as its outcome could set precedents for future AI-related legal and ethical standards.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-anthropic-department-defense-lawsuit-iran-war-memes-artificial-intelligence-venture-capital/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 12 2026",
-            "headline": "Meta AI Enhances Facebook Marketplace—Automated Buyer Replies",
-            "title": "Facebook Marketplace Integrates Meta AI for Automated Buyer Responses",
-            "content": "Meta has introduced a new feature on Facebook Marketplace, allowing sellers to use Meta AI to automatically draft responses to buyer inquiries. This feature utilizes information from listings, such as item descriptions, availability, and pricing, to generate accurate replies. The integration aims to streamline communication between buyers and sellers, enhancing user experience and efficiency. With AI-driven automation becoming more prevalent, sellers are encouraged to leverage these tools to improve transaction management and customer satisfaction on digital platforms.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/12/facebook-marketplace-now-lets-meta-ai-respond-to-buyers-messages/",
             "relatedResources": [
                 {
                     "label": "Securing AI/ML Pipelines",
