@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1404",
+      "incident_id": 1404,
+      "title": "Purported AI-Generated Nude Images Reportedly Used to Extort Wichita Man in Kansas",
+      "date": "2026-03-12",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1401",
       "incident_id": 1401,
       "title": "Washington State DOL's AI Phone System Reportedly Failed to Provide Spanish-Language Service to Call",
@@ -881,106 +889,18 @@
       "severity": "high"
     },
     {
-      "id": "AIID-817",
-      "incident_id": 817,
-      "title": "Purportedly AI-Generated Images Reportedly Spread Misinformation During Hurricane Helene Response",
-      "date": "2025-12-13",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1232",
-      "incident_id": 1232,
-      "title": "Reportedly Fatal Xiaomi SU7 Ultra Crash in Chengdu Purportedly Involves Automated Driving Failure an",
-      "date": "2025-12-13",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1294",
       "incident_id": 1294,
       "title": "The New York Times Sued Perplexity for Allegedly Using Copyrighted Content and Generating False Attr",
       "date": "2025-12-13",
       "category": "misinformation",
       "severity": "high"
-    },
-    {
-      "id": "AIID-347",
-      "incident_id": 347,
-      "title": "Waymo Self-Driving Taxi Reportedly Behaved Unexpectedly, Driving away from Support Crew",
-      "date": "2025-12-12",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-640",
-      "incident_id": 640,
-      "title": "Waymo Software Flaw Reportedly Leads to Double Collision with Tow Truck",
-      "date": "2025-12-12",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-647",
-      "incident_id": 647,
-      "title": "A Self-Driving Waymo Robotaxi Reportedly Collided with a Bicyclist",
-      "date": "2025-12-12",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-794",
-      "incident_id": 794,
-      "title": "Reported Glitch in Waymo Self-Driving Cars Purportedly Triggers Regular All-Night Honking in San Fra",
-      "date": "2025-12-12",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-853",
-      "incident_id": 853,
-      "title": "Two Passengers Report Feeling Trapped in Waymo Car During Sensor Obstruction",
-      "date": "2025-12-12",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-854",
-      "incident_id": 854,
-      "title": "Waymo Driverless Taxi Allegedly Stalled During Pedestrian Harassment Incident in San Francisco",
-      "date": "2025-12-12",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-881",
-      "incident_id": 881,
-      "title": "Waymo Robotaxi Allegedly Collides With Serve Robotics Delivery Bot in Los Angeles",
-      "date": "2025-12-12",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-903",
-      "incident_id": 903,
-      "title": "Northern Ireland MLA Cara Hunter Allegedly Targeted by Deepfake Pornography Ahead of May 2022 Assemb",
-      "date": "2025-12-12",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1269",
-      "incident_id": 1269,
-      "title": "Waymo Autonomous Vehicle Reportedly Ran Over and Killed a Cat in San Francisco",
-      "date": "2025-12-12",
-      "category": "autonomous_vehicle",
-      "severity": "critical"
     }
   ],
   "stats": {
-    "total": 122,
-    "last7Days": 11,
-    "last30Days": 44
+    "total": 112,
+    "last7Days": 12,
+    "last30Days": 45
   },
-  "lastUpdated": "2026-03-13T02:19:37.528829+05:30"
+  "lastUpdated": "2026-03-13T08:18:59.933722+05:30"
 }
