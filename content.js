@@ -4,75 +4,56 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 13 2026",
-            "headline": "45,000 IPs Sinkholed in Global Cybercrime Crackdown",
-            "title": "Operation Synergia III Seizes Servers and Sinkholes IPs in Cybercrime Bust",
-            "content": "An international law enforcement initiative, Operation Synergia III, has successfully sinkholed 45,000 IP addresses and seized numerous servers linked to global cybercrime activities. This coordinated effort involved agencies from multiple countries targeting infrastructure used by cybercriminals to launch attacks and distribute malware. By redirecting malicious traffic to controlled servers, authorities aim to disrupt ongoing criminal operations and gather intelligence on threat actors. The operation highlights the increasing collaboration among global law enforcement to combat cyber threats effectively. Organizations should remain vigilant and monitor their networks for any unusual activity that may indicate compromise.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-sinkholes-45-000-ip-addresses-in-cybercrime-crackdown/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "New Click-Fix Variant Threatens Cybersecurity Defenses",
-            "title": "Threat Research Center Investigates Emerging Click-Fix Variant",
-            "content": "The Threat Research Center has identified a new variant of the Click-Fix malware, posing a significant threat to cybersecurity defenses worldwide. This variant exhibits enhanced evasion techniques, making it harder for traditional detection systems to identify and mitigate. The report emphasizes the importance of updating security protocols and employing advanced threat detection solutions to counteract this evolving threat. Organizations are advised to review their cybersecurity strategies and ensure robust defense mechanisms are in place to protect against potential breaches. The emergence of this variant underscores the dynamic nature of the threat landscape.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/investigating-new-click-fix-variant.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "Fake VPNs Steal Credentials—Storm-2561 Behind New Threat",
-            "title": "Storm-2561 Distributes Fake VPN Clients to Harvest Credentials",
-            "content": "A threat actor identified as Storm-2561 is distributing counterfeit enterprise VPN clients from well-known providers like Ivanti, Cisco, and Fortinet. These fake clients are designed to steal VPN credentials from unsuspecting users, potentially compromising sensitive company data. Security experts warn that organizations using these VPN solutions should verify the authenticity of their software and monitor for any unauthorized access attempts. This campaign highlights the ongoing risk of supply chain attacks and the importance of vigilance in software procurement and deployment processes.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-enterprise-vpn-downloads-used-to-steal-company-credentials/",
+            "date": "Mar 14 2026",
+            "headline": "Remcos RAT Spread via ClickFix—SmartApeSG Campaign Uncovered",
+            "title": "SmartApeSG Campaign Leverages ClickFix to Distribute Remcos Remote Access Trojan",
+            "content": "Cybersecurity researchers have uncovered the SmartApeSG campaign, which uses a ClickFix page to distribute the Remcos Remote Access Trojan (RAT). The campaign targets users by tricking them into downloading malicious software, which then provides attackers with remote access to compromised systems. Remcos RAT is known for its capabilities to execute commands, log keystrokes, and access files on infected machines. This campaign highlights the persistent threat of RATs and the need for vigilance when interacting with unfamiliar web pages. Security professionals are advised to update their threat detection tools to recognize and block this RAT. Awareness and user education remain critical in mitigating such threats.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32796",
             "relatedResources": [
                 {
-                    "label": "Fortinet Analysis",
-                    "url": "/articles/fortinet-fortigate-critical-exploit-2025.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "Third-Party Risk Management",
-                    "url": "/guides/third-party-risk-management.html",
-                    "icon": "fa-handshake"
+                    "label": "SIEM & Log Analysis Guide",
+                    "url": "/guides/siem-log-analysis.html",
+                    "icon": "fa-chart-bar"
                 }
             ]
         },
         {
             "date": "Mar 13 2026",
-            "headline": "Banking Trojan Targets Brazil&#x27;s Pix Users in Real-Time Attacks",
-            "title": "New Banking Trojan Campaign Exploits Brazil&#x27;s Pix Payment System",
-            "content": "A sophisticated banking Trojan campaign is targeting users of Brazil&#x27;s Pix payment system, combining traditional malware techniques with real-time human intervention. Attackers wait for opportune moments to execute fraudulent transactions, bypassing automated security measures. This method increases the likelihood of successful financial theft, posing a significant threat to Pix users. Financial institutions are urged to enhance their monitoring systems and educate customers about the risks of such attacks. The campaign underscores the adaptability of cybercriminals in exploiting emerging payment technologies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/real-time-banking-trojan-strikes-brazils-pix-users",
+            "headline": "Windows 11 Update Blocks C: Drive on Samsung Laptops",
+            "title": "Samsung Laptops Running Windows 11 Face C: Drive Access Issues Post-Update",
+            "content": "Microsoft is investigating a critical issue affecting Samsung laptops running Windows 11, where users lose access to their C: drive following the February 2026 security update. This problem prevents the launch of applications and disrupts normal operations, posing a significant inconvenience to users. The issue appears to be linked to specific configurations on Samsung devices, although the exact cause is still under review. Microsoft recommends affected users refrain from installing the update until a fix is released. This incident underscores the challenges of deploying uniform updates across diverse hardware ecosystems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-users-cant-access-c-drive-on-some-samsung-pcs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "FBI Seeks Victims of Malware-Laden Steam Games",
+            "title": "FBI Investigates Malware Distributed Through Steam Games, Seeks Victims&#x27; Help",
+            "content": "The FBI is calling on gamers who have downloaded certain Steam titles to come forward as part of an investigation into malware distribution. Eight malicious games have been identified as carriers of malware, compromising the security of users&#x27; systems. This investigation highlights the ongoing risk of cyber threats within popular gaming platforms, where unsuspecting players may inadvertently expose their devices to harmful software. Players who suspect they have been affected are urged to contact the FBI to aid in the investigation. This serves as a reminder to maintain robust antivirus measures and verify the integrity of software before installation.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-seeks-victims-of-steam-games-used-to-spread-malware/",
             "relatedResources": [
                 {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
         },
         {
             "date": "Mar 13 2026",
-            "headline": "Google Patches 2 Active Chrome Zero-Days—Update Immediately",
-            "title": "Critical Chrome Zero-Day Vulnerabilities Patched by Google",
-            "content": "Google has issued an urgent update to address two zero-day vulnerabilities in its Chrome browser, both of which are currently being exploited in the wild. These vulnerabilities, identified as CVE-2026-1234 and CVE-2026-5678, affect Chrome versions prior to 120.0.6099.129 and could allow attackers to execute arbitrary code. Users are strongly advised to update their browsers immediately to prevent potential exploitation. This marks a continued trend of zero-day vulnerabilities targeting popular software, emphasizing the need for prompt patch management.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/google-patches-two-chrome-zero-days-under-active-attack-update-now",
+            "headline": "Two Chrome Zero-Days Exploited—Patch Urgently",
+            "title": "Google Issues Emergency Patches for Two Actively Exploited Chrome Zero Days",
+            "content": "Google has released emergency patches to address two zero-day vulnerabilities, CVE-2026-3909 and CVE-2026-3910, actively exploited in the Chrome browser. These high-severity flaws could allow attackers to execute arbitrary code on vulnerable systems, making immediate patching imperative. The vulnerabilities were discovered shortly after Google issued 29 other security fixes, underscoring the ongoing security challenges faced by popular software platforms. IT teams are advised to update Chrome to the latest version to mitigate potential risks. This incident highlights the importance of timely updates in maintaining cybersecurity defenses.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4145055/google-warns-of-two-actively-exploited-chrome-zero-days.html",
             "relatedResources": [
                 {
                     "label": "CVE Tracker",
                     "url": "/cve-tracker.html",
                     "icon": "fa-bug"
-                },
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
                 },
                 {
                     "label": "CVE Prioritization Guide",
@@ -83,45 +64,42 @@ const websiteContent = {
         },
         {
             "date": "Mar 13 2026",
-            "headline": "Iran-Linked Hackers Target US Amid Rising Cyberattack Risks",
-            "title": "Pro-Iranian Hackers Expand Cyber Attacks to US Targets Amid Conflict",
-            "content": "Hackers linked to Iran have expanded their cyber attack campaigns to include targets in the United States, amid ongoing regional conflicts. These attacks raise the risk for critical infrastructure, including defense contractors, power stations, and water treatment facilities. The increasing scope of these operations highlights the geopolitical tensions influencing cyber warfare strategies. Organizations within these sectors should bolster their cybersecurity defenses and remain vigilant against potential intrusions. This development serves as a reminder of the persistent threat posed by state-sponsored cyber actors.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/iran-linked-hackers-take-aim-at-us-and-other-targets-raising-risk-of-cyberattacks-during-war/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "Veeam Urges Patch for Critical RCE Flaws in Backup Software",
-            "title": "Veeam Releases Critical Security Updates for Backup &amp; Replication Platform",
-            "content": "Veeam has issued critical security updates for its Backup and Replication platform, addressing multiple vulnerabilities, including three remote code execution (RCE) flaws. These vulnerabilities could allow authenticated attackers to execute arbitrary code on affected backup servers. Detailed in advisory KB4830, the flaws pose a significant risk to organizations relying on Veeam&#x27;s backup solutions. Administrators are urged to apply the patches immediately to safeguard their systems against potential exploitation. This advisory underscores the importance of timely patch management in maintaining secure backup infrastructures.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4144882/veeam-warns-admins-to-patch-now-as-critical-rce-flaws-hit-backup-replication.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "ISC Podcast Highlights March Cyber Threat Trends",
-            "title": "SANS Internet Storm Center Analyzes Current Cyber Threat Landscape",
-            "content": "The SANS Internet Storm Center released its latest podcast, providing an analysis of current cyber threats and trends as of March 13, 2026. The InfoCON level remains green, indicating a stable threat environment. The podcast covers recent vulnerabilities, attacks, and mitigation strategies, offering valuable insights for cybersecurity professionals. Listeners are encouraged to stay informed about evolving threats and to implement recommended security measures. The SANS Internet Storm Center continues to be a trusted resource for real-time cyber threat intelligence.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32792",
+            "headline": "Cisco SD-WAN Bugs Lead to Chaos and Fraud",
+            "title": "Misunderstood Risks and Fake Proofs of Concept Disrupt Cisco SD-WAN",
+            "content": "The recent discovery of vulnerabilities in Cisco&#x27;s SD-WAN technology has sparked confusion and fraudulent activities within the cybersecurity community. Misunderstandings about the risks associated with these bugs have led to the dissemination of fake proofs of concept, complicating efforts to address the vulnerabilities. This chaos underscores the challenges of managing security in complex network environments, where misinformation can hinder response efforts. Organizations using Cisco&#x27;s SD-WAN are advised to verify the authenticity of security advisories and consult official sources for guidance. Proper risk assessment and informed decision-making are crucial in navigating such incidents.",
+            "source": "DarkReading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/fake-pocs-risks-cisco-sd-wan",
             "relatedResources": [
                 {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
+                    "label": "Third-Party Risk Management",
+                    "url": "/guides/third-party-risk-management.html",
+                    "icon": "fa-handshake"
                 }
             ]
         },
         {
             "date": "Mar 13 2026",
-            "headline": "ShinyHunters Breach Telus Digital—Data at Risk",
-            "title": "Telus Digital Targeted by ShinyHunters in Massive Data Breach",
-            "content": "Telus Digital has suffered a significant data breach perpetrated by the extortion group ShinyHunters, known for targeting Salesforce and other platforms. The breach is believed to affect numerous organizations worldwide that rely on Telus Digital&#x27;s business process outsourcing services. ShinyHunters, active since 2020, specializes in stealing sensitive data for extortion purposes. Organizations using Telus Digital services should review their security measures and monitor for any unauthorized access. This incident underscores the persistent threat posed by cybercriminal groups targeting BPO providers.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4144560/telus-digital-hit-with-massive-data-breach.html",
+            "headline": "Nonprofit Cyber Incidents Underreported—Data Gap Persists",
+            "title": "Underreporting of Cyber Incidents in Nonprofits Due to Data Deficiency",
+            "content": "Cyber incidents targeting nonprofits remain underreported, largely due to a lack of comprehensive data collection. These organizations often possess valuable information but face significant security gaps, making them attractive targets for threat actors. The absence of sufficient reporting and data sharing hinders the understanding of the true scope of these threats. Nonprofits are encouraged to improve their cybersecurity posture and participate in information-sharing initiatives to better protect their assets. Closing the data gap is essential for developing effective defense strategies and mitigating risks in the nonprofit sector.",
+            "source": "DarkReading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/data-gap-why-nonprofit-cyber-incidents-go-underreported",
             "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Chinese Hackers Target SE Asian Militaries with Malware",
+            "title": "Chinese Cyber Espionage Campaign Hits Southeast Asian Military Organizations",
+            "content": "A cyber espionage operation believed to be state-sponsored by China has been targeting military organizations in Southeast Asia using AppleChris and MemFun malware. Tracked by Palo Alto Networks Unit 42 under the designation CL-STA-1087, this campaign has been ongoing since at least 2020. The malware used in these attacks is designed to exfiltrate sensitive information from compromised systems, posing a significant threat to national security. Organizations in the region are urged to enhance their cybersecurity measures and monitor for indicators of compromise. This incident reflects the persistent nature of state-sponsored cyber threats in geopolitical contexts.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/chinese-hackers-target-southeast-asian.html",
+            "relatedResources": [
+                {
+                    "label": "EDR Comparison: CrowdStrike vs Defender vs Cortex XDR",
+                    "url": "/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+                    "icon": "fa-shield-virus"
+                }
+            ]
         },
         {
             "date": "Mar 19 2026",
@@ -150,109 +128,75 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 13 2026",
-            "headline": "Google AI Searches Promote Own Services—Impact on Publishers",
-            "title": "Google&#x27;s Generative AI Search Tools Favor Internal Services Over External Sources",
-            "content": "Google&#x27;s generative AI search tools are increasingly prioritizing the company&#x27;s own services, such as Google Search and YouTube, over third-party publishers. This trend has raised concerns among publishers who rely on Google for traffic, as it could potentially reduce their visibility and impact revenue streams. The AI tools are designed to enhance user experience by providing quick, relevant answers, but the preference for internal sources may limit the diversity of information available to users. This development highlights the ongoing challenge of balancing AI advancements with fair competition in the digital ecosystem. Stakeholders are urged to monitor these changes and assess their impact on content distribution strategies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/google-ai-searches-love-to-refer-you-back-to-google/",
+            "date": "Mar 14 2026",
+            "headline": "Musk’s xAI Revamps—New Executives from Cursor Join",
+            "title": "xAI Overhauls AI Coding Tool Effort with New Leadership from Cursor",
+            "content": "Elon Musk&#x27;s AI venture, xAI, is undergoing another restructuring as it revamps its AI coding tool project. The lab has brought in two new executives from Cursor to lead the charge, signaling a fresh direction in its development efforts. This move comes amid ongoing challenges in creating a robust AI coding assistant capable of competing with established tools like GitHub Copilot. The new leadership aims to address foundational issues that have hindered progress, with a focus on enhancing the tool&#x27;s usability and effectiveness. Professionals in the AI and software development fields should watch for updates as xAI strives to refine its offerings and secure a foothold in the competitive landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 14 2026",
+            "headline": "AI Chatbots Linked to Mass Casualty Risks—Lawyer Warns",
+            "title": "Legal Expert Warns of Mass Casualty Risks from AI Chatbots",
+            "content": "A prominent lawyer has raised concerns about the growing risks of AI chatbots being implicated in mass casualty incidents. Historically linked to suicides, these AI systems are now reportedly surfacing in broader cases with potentially severe consequences. The rapid advancement of AI technology is outpacing the development of adequate safeguards, amplifying the potential for harm. This warning highlights the urgent need for regulatory frameworks and ethical guidelines to manage the deployment of AI in sensitive contexts. Stakeholders in AI development and policy-making should prioritize the establishment of robust safety measures to mitigate these emerging risks.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/",
             "relatedResources": []
         },
         {
             "date": "Mar 13 2026",
-            "headline": "NanoClaw, Docker Team Up—Boost AI Agent Security",
-            "title": "NanoClaw and Docker Collaborate to Enhance AI Agent Deployment Security",
-            "content": "NanoClaw, an open-source AI agent platform, has announced a partnership with Docker to improve the security of AI agent deployments through Docker Sandboxes. This collaboration addresses a major barrier to enterprise AI adoption: providing agents the autonomy to act while maintaining security. By utilizing Docker&#x27;s containerized development environment, teams can safely run AI agents, minimizing risks associated with unauthorized actions or data breaches. This move is expected to facilitate wider AI adoption in industries where security is paramount. Enterprises should explore integrating sandbox environments to enhance their AI deployment strategies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/nanoclaw-and-docker-partner-to-make-sandboxes-the-safest-way-for-enterprises",
+            "headline": "Nyne Secures $5.3M—Enhances AI with Human Context",
+            "title": "Nyne Raises $5.3 Million to Integrate Human Context into AI Agents",
+            "content": "Nyne, a startup founded by a father-son team, has successfully raised $5.3 million in seed funding to advance its AI data infrastructure platform. Led by Wischoff Ventures and South Park Commons, the funding will support Nyne&#x27;s mission to bridge the gap between AI agents and human context. By providing AI systems with more nuanced understanding, Nyne aims to improve interactions and decision-making processes. The startup&#x27;s innovative approach addresses a critical need for more context-aware AI, which can enhance user experience across various applications. Developers and AI researchers should look to Nyne&#x27;s progress as a potential model for integrating human-like understanding into AI systems.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/13/nyne-founded-by-a-father-son-duo-gives-ai-agents-the-human-context-theyre-missing/",
             "relatedResources": [
                 {
-                    "label": "Container Security Guide",
-                    "url": "/guides/container-security.html",
-                    "icon": "fa-cube"
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
                 }
             ]
         },
         {
             "date": "Mar 13 2026",
-            "headline": "OpenClaw Craze Spurs AI Demand—Cloud Servers in High Demand",
-            "title": "China&#x27;s OpenClaw Surge Drives AI Subscription and Cloud Server Rentals",
-            "content": "The open-source agent OpenClaw is generating significant interest in China, prompting a surge in cloud server rentals and AI subscription purchases. This boom is creating a lucrative opportunity for tech companies as individuals and businesses rush to experiment with the technology. The OpenClaw phenomenon underscores the growing trend of open-source AI tools driving market dynamics and technological exploration. As interest continues to rise, companies providing cloud infrastructure and AI services are poised to benefit from increased demand. Stakeholders should consider capitalizing on this trend by expanding their service offerings and capacity.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/china-is-going-all-in-on-openclaw/",
+            "headline": "Xbox to Launch Gaming Copilot AI This Year",
+            "title": "Microsoft Announces Copilot AI Assistant for Xbox Consoles in 2026",
+            "content": "Microsoft is set to introduce its Gaming Copilot AI assistant to current-generation Xbox consoles later this year. Announced by Sonali Yadav, Xbox&#x27;s product manager for gaming AI, during the Game Developers Conference, this new feature aims to enhance the gaming experience by providing real-time assistance and personalized suggestions to players. The integration of AI into gaming consoles represents a significant step in Microsoft&#x27;s strategy to leverage AI for improved user engagement and gameplay. Gamers and developers should prepare for the rollout by exploring how AI can be integrated into new and existing gaming experiences.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/games/894799/microsoft-gaming-copilot-ai-xbox-consoles",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
                     "url": "/ransomware-tracker.html",
                     "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "API Security Best Practices",
-                    "url": "/guides/api-security-best-practices.html",
-                    "icon": "fa-plug"
                 }
             ]
         },
         {
             "date": "Mar 13 2026",
-            "headline": "AI Disrupts Gaming—RAM Shortage Hits Console Prices",
-            "title": "AI Boom Leads to RAM Shortage and Job Loss in Gaming Industry",
-            "content": "The gaming industry is facing significant challenges due to the AI boom, including a global RAM shortage that is driving up console prices. Additionally, the integration of AI technologies is leading to job displacement within the industry, as automation replaces traditional roles. These developments are causing concern among gamers and industry professionals, as they navigate the economic and workforce implications of AI advancements. The situation highlights the need for strategic planning and adaptation in the gaming sector to mitigate the impact of these disruptions. Companies should consider investing in alternative solutions and workforce reskilling to address these challenges.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/gamers-ai-nightmares-are-coming-true/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "Palantir AI Chatbots Aid Pentagon—War Plans in Focus",
-            "title": "Palantir Demonstrates AI Chatbots for Military War Plan Generation",
-            "content": "Palantir has showcased how AI chatbots, such as Anthropic&#x27;s Claude, could assist the Pentagon in generating war plans by analyzing intelligence and suggesting strategic actions. These software demonstrations and Pentagon records reveal the potential for AI to revolutionize military planning processes, enhancing decision-making speed and accuracy. The integration of AI in military operations raises questions about the ethical and strategic implications of automated decision-making in high-stakes environments. Defense professionals should evaluate the benefits and risks associated with deploying AI-driven tools in military settings to ensure responsible and effective use.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/palantir-demos-show-how-the-military-can-use-ai-chatbots-to-generate-war-plans/",
-            "relatedResources": [
-                {
-                    "label": "LLM Security & Prompt Injection",
-                    "url": "/guides/llm-security-prompt-injection.html",
-                    "icon": "fa-robot"
-                }
-            ]
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "E.SUN Bank, IBM Forge AI Governance—Finance Sector Shift",
-            "title": "E.SUN Bank and IBM Develop AI Governance Framework for Banking",
-            "content": "E.SUN Bank is collaborating with IBM to establish a comprehensive AI governance framework, setting clearer rules for AI use in banking. This initiative reflects a broader trend in the financial sector, where firms increasingly rely on AI for fraud detection, credit scoring, and customer service. The new framework aims to ensure ethical and transparent AI deployment, addressing regulatory and operational challenges. Financial institutions are encouraged to adopt similar governance structures to enhance trust and compliance in AI applications. This development underscores the importance of responsible AI management in maintaining industry integrity.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/e-sun-bank-and-ibm-build-ai-governance-framework-for-banking/",
-            "relatedResources": [
-                {
-                    "label": "Ibm Analysis",
-                    "url": "/articles/ibm-api-connect-cve-2026.html",
-                    "icon": "fa-file-alt"
-                },
-                {
-                    "label": "AI Governance Framework",
-                    "url": "/guides/ai-governance-framework.html",
-                    "icon": "fa-balance-scale"
-                }
-            ]
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "BMW Deploys Humanoids—Factories Eye Robotics Revolution",
-            "title": "BMW Introduces Humanoid Robots in German Manufacturing Plant",
-            "content": "BMW Group has launched a pilot project deploying humanoid robots in its Leipzig manufacturing plant in Germany, marking the first automotive use of AEON robots by Hexagon Robotics. This initiative signals a potential shift in European manufacturing, as factories explore robotics to enhance efficiency and productivity. The use of humanoid robots could redefine labor dynamics, offering solutions to labor shortages and increasing operational flexibility. Manufacturing leaders should monitor this development and assess the feasibility of integrating robotics into their operations to remain competitive. The success of this pilot could influence broader adoption across the industry.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/bmw-humanoid-robots-manufacturing-europe-leipzig/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "DABStep&#x27;s Top AI Agent Mimics Data Scientist Thinking",
-            "title": "Hugging Face Achieves #1 on DABStep with AI Agent for Data Scientists",
-            "content": "Hugging Face has developed an AI agent designed to emulate the cognitive processes of a data scientist, securing the top spot on the DABStep leaderboard. This agent leverages reusable tool generation to streamline data analysis tasks, enhancing efficiency and accuracy. The agent&#x27;s architecture is built to handle complex data sets and execute statistical models, providing insights akin to those of a seasoned data scientist. This development highlights the growing trend of creating specialized AI tools to augment human expertise in technical fields. As AI continues to evolve, such innovations are crucial for industries reliant on data-driven decision-making.",
+            "headline": "NVIDIA NeMo Retriever—Beyond Semantic Similarity",
+            "title": "NVIDIA Introduces NeMo Retriever’s Generalizable Agentic Retrieval Pipeline",
+            "content": "NVIDIA has unveiled the NeMo Retriever&#x27;s Generalizable Agentic Retrieval Pipeline, a new advancement that moves beyond traditional semantic similarity techniques. This innovative pipeline is designed to enhance AI&#x27;s ability to retrieve information by understanding context and intent, making it more effective in diverse applications. By focusing on agentic retrieval, NVIDIA aims to improve the accuracy and relevance of AI-driven searches, offering significant benefits for industries reliant on large-scale data processing. AI developers and data scientists should consider integrating this advanced retrieval method to enhance the performance of their AI models.",
             "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemo-retriever-agentic-retrieval",
+            "relatedResources": [
+                {
+                    "label": "Securing AI/ML Pipelines",
+                    "url": "/guides/securing-ai-ml-pipelines.html",
+                    "icon": "fa-brain"
+                }
+            ]
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Spielberg Rejects AI in Filmmaking—Creativity Over Machines",
+            "title": "Steven Spielberg Declares AI Unfit for Creative Roles in Film",
+            "content": "At the South by Southwest (SXSW) festival, acclaimed director Steven Spielberg stated that he has never used AI in his films, emphasizing the irreplaceable value of human creativity in the arts. While acknowledging AI&#x27;s potential in various fields, Spielberg firmly believes that creative processes in film and television should remain human-driven. This stance highlights ongoing debates about the role of AI in creative industries, where concerns about automation and originality persist. Filmmakers and content creators should continue to explore AI&#x27;s capabilities while safeguarding the unique contributions of human creativity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/13/steven-spielberg-says-hes-never-used-ai-in-any-of-his-films/",
             "relatedResources": [
                 {
                     "label": "Ransomware Tracker",
@@ -268,16 +212,16 @@ const websiteContent = {
         },
         {
             "date": "Mar 13 2026",
-            "headline": "Random Labs Debuts Slate V1—Swarm-Native Coding Agent",
-            "title": "Y Combinator&#x27;s Random Labs Launches Swarm-Native Coding Agent Slate V1",
-            "content": "Random Labs, backed by Y Combinator, has introduced Slate V1, touted as the first &quot;swarm-native&quot; coding agent. This innovation addresses the &quot;systems problem&quot; in AI, where managing advanced models becomes a bottleneck in productivity. Slate V1 is designed to work collaboratively across distributed systems, optimizing coding tasks by leveraging collective AI intelligence. This approach aims to enhance software development efficiency, particularly in complex projects requiring extensive computational resources. Developers are encouraged to explore swarm-native strategies to overcome current limitations in AI model management and deployment.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/y-combinator-backed-random-labs-launches-slate-v1-claiming-the-first-swarm",
+            "headline": "AI Industry Milestones—2026’s Biggest Stories So Far",
+            "title": "Key Developments in AI: Major Acquisitions, Innovations, and Challenges in 2026",
+            "content": "The AI industry in 2026 has been marked by significant milestones, including major acquisitions, groundbreaking innovations, and contentious debates over ethical implications. Notable stories include the rise of indie developers making impactful contributions, public outcry over privacy concerns, and high-stakes contract negotiations with existential risks. These developments underscore the dynamic and rapidly evolving nature of the AI landscape, where both opportunities and challenges continue to emerge. Industry professionals should remain vigilant and informed about these trends to navigate the complexities of AI&#x27;s future effectively.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/13/the-biggest-ai-stories-of-the-year-so-far/",
             "relatedResources": [
                 {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
+                    "label": "Ransomware Tracker",
+                    "url": "/ransomware-tracker.html",
+                    "icon": "fa-skull-crossbones"
                 }
             ]
         }
@@ -343,6 +287,28 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-3910",
+            "dateAdded": "Mar 13, 2026",
+            "vendor": "Google Chromium V8",
+            "description": "Google Chromium V8 contains an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3910",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-3909",
+            "dateAdded": "Mar 13, 2026",
+            "vendor": "Google Skia",
+            "description": "Google Skia contains an out-of-bounds write vulnerability that could allow a remote attacker to perform out of bounds memory access via a crafted HTML page. This vulnerability affects Google Chrome an",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3909",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2025-68613",
             "dateAdded": "Mar 11, 2026",
