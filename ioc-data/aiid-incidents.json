@@ -1,6 +1,54 @@
 {
   "incidents": [
     {
+      "id": "AIID-1242",
+      "incident_id": 1242,
+      "title": "Purported AI-Generated Deepfake Videos Reportedly Used in Swedish Scam Campaign Impersonating Doctor",
+      "date": "2026-03-14",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1405",
+      "incident_id": 1405,
+      "title": "Purported AI-Generated Doctor Deepfakes Reportedly Used Guy's and St Thomas' Branding to Market Weig",
+      "date": "2026-03-14",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1406",
+      "incident_id": 1406,
+      "title": "Purported AI-Generated War Footage Reportedly Circulated Widely Online During the Opening Phase of t",
+      "date": "2026-03-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1407",
+      "incident_id": 1407,
+      "title": "Grammarly's AI Expert Review Allegedly Used Journalists' and Authors' Names Without Consent",
+      "date": "2026-03-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1408",
+      "incident_id": 1408,
+      "title": "Purported Oprah Deepfake Reportedly Induced Utah Woman to Buy Misrepresented Weight Loss Supplements",
+      "date": "2026-03-14",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1409",
+      "incident_id": 1409,
+      "title": "Purportedly AI-Generated Tasmania Tours Content Reportedly Misled Tourists Into Traveling to Nonexis",
+      "date": "2026-03-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1404",
       "incident_id": 1404,
       "title": "Purported AI-Generated Nude Images Reportedly Used to Extort Wichita Man in Kansas",
@@ -890,9 +938,9 @@
     }
   ],
   "stats": {
-    "total": 111,
+    "total": 117,
     "last7Days": 12,
-    "last30Days": 44
+    "last30Days": 50
   },
-  "lastUpdated": "2026-03-14T22:15:19.538799+05:30"
+  "lastUpdated": "2026-03-15T00:33:47.629810+05:30"
 }
