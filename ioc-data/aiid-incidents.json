@@ -1,6 +1,46 @@
 {
   "incidents": [
     {
+      "id": "AIID-1406",
+      "incident_id": 1406,
+      "title": "Purported AI-Generated War Footage Reportedly Circulated Widely Online During the Opening Phase of t",
+      "date": "2026-03-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1411",
+      "incident_id": 1411,
+      "title": "Purported Deepfake Scam Ad Reportedly Used Lara Lewington and Martin Lewis to Promote Quantum AI Sch",
+      "date": "2026-03-15",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1413",
+      "incident_id": 1413,
+      "title": "Purported AI-Generated Inland Revenue Scam Ads Reportedly Impersonated New Zealand Commissioner Pete",
+      "date": "2026-03-15",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1414",
+      "incident_id": 1414,
+      "title": "Purported Gemini-Generated AI Images Reportedly Claimed U.S. Delta Force Soldiers Were Captured by t",
+      "date": "2026-03-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1415",
+      "incident_id": 1415,
+      "title": "Nippon Life Alleged ChatGPT Practiced Law Without a License in Illinois Disability Case",
+      "date": "2026-03-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1242",
       "incident_id": 1242,
       "title": "Purported AI-Generated Deepfake Videos Reportedly Used in Swedish Scam Campaign Impersonating Doctor",
@@ -14,14 +54,6 @@
       "title": "Purported AI-Generated Doctor Deepfakes Reportedly Used Guy's and St Thomas' Branding to Market Weig",
       "date": "2026-03-14",
       "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1406",
-      "incident_id": 1406,
-      "title": "Purported AI-Generated War Footage Reportedly Circulated Widely Online During the Opening Phase of t",
-      "date": "2026-03-14",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -57,28 +89,12 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1411",
-      "incident_id": 1411,
-      "title": "Purported Deepfake Scam Ad Reportedly Used Lara Lewington and Martin Lewis to Promote Quantum AI Sch",
-      "date": "2026-03-14",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1412",
       "incident_id": 1412,
       "title": "CodeWall's Autonomous Agent Reportedly Obtained Unauthorized Access to McKinsey\u2019s Lilli AI Platform ",
       "date": "2026-03-14",
       "category": "autonomous_vehicle",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1413",
-      "incident_id": 1413,
-      "title": "Purported AI-Generated Inland Revenue Scam Ads Reportedly Impersonated New Zealand Commissioner Pete",
-      "date": "2026-03-14",
-      "category": "fraud",
-      "severity": "high"
     },
     {
       "id": "AIID-1404",
@@ -962,9 +978,9 @@
     }
   ],
   "stats": {
-    "total": 120,
-    "last7Days": 16,
-    "last30Days": 54
+    "total": 122,
+    "last7Days": 18,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-03-15T14:21:29.802615+05:30"
+  "lastUpdated": "2026-03-15T18:43:56.499036+05:30"
 }
