@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1368",
+      "incident_id": 1368,
+      "title": "Malicious OpenClaw Skills Reportedly Delivered AMOS Stealer and Exfiltrated Credentials via ClawHub",
+      "date": "2026-03-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1406",
       "incident_id": 1406,
       "title": "Purported AI-Generated War Footage Reportedly Circulated Widely Online During the Opening Phase of t",
@@ -446,14 +454,6 @@
       "title": "Houston Gun Store Co-Owner Allegedly Used AI to Create Sexually Explicit Deepfake Images of a Social",
       "date": "2026-02-14",
       "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1368",
-      "incident_id": 1368,
-      "title": "Malicious OpenClaw Skills Reportedly Delivered AMOS Stealer and Exfiltrated Credentials via ClawHub",
-      "date": "2026-02-11",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -979,8 +979,8 @@
   ],
   "stats": {
     "total": 122,
-    "last7Days": 18,
-    "last30Days": 56
+    "last7Days": 19,
+    "last30Days": 57
   },
-  "lastUpdated": "2026-03-15T18:43:56.499036+05:30"
+  "lastUpdated": "2026-03-15T22:16:04.799885+05:30"
 }
