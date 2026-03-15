@@ -1357,3 +1357,209 @@ body.light-mode {
 .light-mode .html2pdf__container {
     background: #ffffff !important;
 }
+/* --- Consultant Enhancement: Scope Selection UI --- */
+.scope-card-header {
+    margin-bottom: 0.5rem;
+}
+
+.scope-icon-box {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.scope-card.selected .scope-icon-box {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.3);
+    color: var(--accent-green);
+}
+
+.scope-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+}
+
+.badge-critical { background: rgba(239, 68, 68, 0.15); color: #EF4444; border: 1px solid rgba(239, 68, 68, 0.2); }
+.badge-recommended { background: rgba(0, 217, 255, 0.15); color: #00D9FF; border: 1px solid rgba(0, 217, 255, 0.2); }
+.badge-optional { background: rgba(156, 163, 175, 0.15); color: #9CA3AF; border: 1px solid rgba(156, 163, 175, 0.2); }
+
+.scope-stats {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.control-pill, .impact-pill {
+    font-size: 0.7rem;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-muted);
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid var(--border);
+}
+
+.custom-check-visual {
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: transparent;
+    background: rgba(0,0,0,0.2);
+}
+
+.custom-check-visual.checked {
+    background: var(--accent-green);
+    border-color: var(--accent-green);
+    color: #000;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+.custom-check-visual i {
+    font-size: 0.8rem;
+    transform: scale(0.5);
+    transition: transform 0.2s ease;
+}
+
+.custom-check-visual.checked i {
+    transform: scale(1);
+}
+
+/* Share Button Style */
+.btn-share-state {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--accent-purple);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.3s ease;
+}
+
+.btn-share-state:hover {
+    background: var(--accent-purple);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+}
+
+
+/* --- Viral Badge Styles --- */
+.badge-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 4rem;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .badge-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.thehgtech-badge {
+    width: 240px;
+    background: #000;
+    border: 1px solid var(--accent-cyan);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.thehgtech-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+}
+
+.badge-ring {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.badge-circle-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.05);
+}
+
+.badge-circle-fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--accent-cyan);
+    clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%); /* Initial */
+    transform: rotate(0deg);
+}
+
+#badgeScoreValue {
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: 'Outfit';
+    color: #fff;
+}
+
+.badge-label {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--accent-cyan);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.badge-foot {
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Copy Button Interaction */
+.btn-copy-code:active {
+    transform: scale(0.9);
+}
+
+.btn-copy-code.success {
+    background: var(--accent-green) !important;
+    border-color: var(--accent-green) !important;
+}
+

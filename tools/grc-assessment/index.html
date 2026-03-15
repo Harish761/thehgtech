@@ -633,6 +633,10 @@
             <!-- VIEW 1: SCOPE SELECTION -->
             <div id="viewScope" class="grc-view active view-scope">
                 <div class="scope-header">
+                    <div
+                        style="display:inline-block; background:rgba(0, 217, 255, 0.1); color:var(--accent-cyan); padding:0.55rem 1.2rem; border-radius:30px; font-size:0.75rem; font-weight:800; margin-bottom:1.5rem; border:1px solid var(--accent-cyan-glow); letter-spacing:1px;">
+                        <i class="fas fa-user-tie"></i> CONSULTANT ADVISOR ACTIVE
+                    </div>
                     <h2>Define Your Assessment Scope</h2>
                     <p>Select which ISO 27001 themes apply to your organization's footprint. We recommend evaluating all
                         domains for a complete gap analysis.</p>
@@ -754,6 +758,9 @@
                     <button class="btn-nav" id="btnBackToEngine"><i class="fas fa-arrow-left"></i> Back to
                         Assessment</button>
                     <div class="dashboard-export-actions">
+                        <button class="btn-share-state" id="btnShareState">
+                            <i class="fas fa-link"></i> Get Shareable Link
+                        </button>
                         <button class="btn-export-pdf" id="btnPdfExport"><i class="fas fa-file-pdf"></i> Download PDF
                             Report</button>
                         <button class="btn-export" id="btnFinalExcelExport"><i class="fas fa-file-excel"></i> Export
@@ -785,11 +792,71 @@
                         <h3>Critical Gaps & Recommended Remediation</h3>
                         <!-- Populated by JS -->
                     </div>
+
+                    <!-- --- VIRAL GROWTH SECTION --- -->
+                    <div class="badge-generator-section"
+                        style="margin-top: 5rem; padding-top: 5rem; border-top: 1px solid var(--border);">
+                        <div class="badge-grid">
+                            <div class="badge-info">
+                                <div class="scope-badge badge-recommended" style="margin-bottom: 1rem;">Viral Growth
+                                    Feature
+                                </div>
+                                <h3 style="font-family:'Outfit'; font-size:1.8rem; margin-bottom:1.5rem; color:#fff;">
+                                    Display
+                                    Your Compliance Readiness</h3>
+                                <p style="color:var(--text-muted); font-size:1rem; line-height:1.7; margin-bottom:2rem;">
+                                    Transparency builds trust. Secure 3rd-party vendor approvals faster by displaying
+                                    your
+                                    real-time readiness status directly on your landing page or trust center. This badge
+                                    is
+                                    dynamically updated based on your self-assessment.
+                                </p>
+                                <div class="code-box-container">
+                                    <label
+                                        style="display:block; font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:0.8rem; letter-spacing:1px; font-weight:700;">Embed
+                                        Code (HTML)</label>
+                                    <div id="badgeCodePreview" class="code-pre"
+                                        style="background:rgba(0,0,0,0.5); border:1px solid var(--border); padding:1.2rem; border-radius:12px; font-family:'JetBrains Mono', monospace; font-size:0.8rem; color:var(--accent-cyan); position:relative; overflow:hidden;">
+                                        <code
+                                            id="grcEmbedCode">&lt;iframe src="https://thehgtech.com/embed/grc-badge.html?score=0" width="280" height="180" frameborder="0"&gt;&lt;/iframe&gt;</code>
+                                        <button class="btn-copy-code" id="btnCopyEmbed" title="Copy to clipboard"
+                                            style="position:absolute; right:10px; top:10px; background:var(--panel-hover); border:1px solid var(--border); color:#fff; border-radius:6px; padding:6px 12px; cursor:pointer; transition:all 0.2s ease;">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="badge-preview-area">
+                                <div class="preview-card"
+                                    style="background:var(--panel-bg); border:1px solid var(--border); border-radius:24px; padding:3rem; display:flex; flex-direction:column; align-items:center;">
+                                    <span class="preview-label"
+                                        style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:2rem; font-weight:700;">Live
+                                        Preview</span>
+                                    <div class="thehgtech-badge" id="liveBadge">
+                                        <div class="badge-ring">
+                                            <div class="badge-circle-bg"></div>
+                                            <div class="badge-circle-fill" id="badgeFill"></div>
+                                            <span id="badgeScoreValue">0%</span>
+                                        </div>
+                                        <div class="badge-label">SECURITY VERIFIED</div>
+                                        <div class="badge-foot">Verified by THEHGTECH</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <!-- UX Enhancements -->
+    <script src="../../command-palette.js" defer></script>
+    <script src="../../ui-enhancements.js" defer></script>
+    <script src="../../toast.js" defer></script>
+    <script src="../../keyboard-shortcuts.js" defer></script>
 
     <!-- Footer -->
     <footer style="text-align: center; padding: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 2rem;">

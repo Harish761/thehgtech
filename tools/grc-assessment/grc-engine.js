@@ -35,16 +35,40 @@ document.addEventListener('DOMContentLoaded', async () => {
         dashDate: document.getElementById('dashDate'),
         dashOverallScore: document.getElementById('dashOverallScore'),
         gapsContainer: document.getElementById('gapsContainer'),
-        printableDashboard: document.getElementById('printableDashboard')
+        printableDashboard: document.getElementById('printableDashboard'),
+        btnShareState: document.getElementById('btnShareState')
     };
 
     let grcData = null;
     let activeDomainIndices = [];     // Which domains the user selected to scope in
     let currentNavIndex = 0;          // Index relative to the activeDomainIndices array
-    const STORAGE_KEY = 'thehgtech_grc_state_v2'; // Changed key due to data structure upgrade
-
+    const STORAGE_KEY = 'thehgtech_grc_state_v2';
     let userState = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
     let radarChartInstance = null;
+
+    // --- NEW: URL Persistence Support ---
+    function updateURLState() {
+        const stateStr = btoa(JSON.stringify(userState));
+        const url = new URL(window.location);
+        url.searchParams.set('s', stateStr);
+        window.history.replaceState({}, '', url);
+    }
+
+    function loadURLState() {
+        const params = new URLSearchParams(window.location.search);
+        const s = params.get('s');
+        if (s) {
+            try {
+                const decoded = JSON.parse(atob(s));
+                userState = { ...userState, ...decoded };
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+            } catch (e) {
+                console.error("Failed to load state from URL", e);
+            }
+        }
+    }
+    loadURLState();
+    // ------------------------------------
 
     if (ui.btnNextDomain) {
         ui.btnNextDomain.addEventListener('click', () => {
@@ -73,12 +97,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     function initScopeSelection() {
         ui.scopeGrid.innerHTML = '';
 
-        // Check if there are existing answers to auto-select scopes (if a user refreshes)
+        // Consultant logic for recommendations
+        const recommendations = {
+            'domain_5': 'CRITICAL',
+            'domain_6': 'REQUIRED',
+            'domain_7': 'OPTIONAL FOR REMOTE',
+            'domain_8': 'HIGHLY RECOMMENDED'
+        };
+
         const hasExistingData = Object.keys(userState).length > 0;
 
         grcData.domains.forEach((dom, index) => {
             const card = document.createElement('div');
             card.className = 'scope-card';
+
+            const recLabel = recommendations[dom.id] || 'RECOMMENDED';
+            const recClass = recLabel.includes('CRITICAL') ? 'badge-critical' : 
+                             recLabel.includes('OPTIONAL') ? 'badge-optional' : 'badge-recommended';
 
             // Check if this domain has answered questions
             let hasAnswersInDomain = false;
@@ -94,29 +129,42 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             card.innerHTML = `
-                <div style="display:flex; justify-content:space-between; width:100%; align-items:center;">
-                    <i class="fas ${dom.icon || 'fa-folder'}"></i>
-                    <div class="custom-checkbox" style="width:20px; height:20px; border-radius:50%; border:2px solid var(--border); ${card.classList.contains('selected') ? 'background:var(--accent-green); border-color:var(--accent-green);' : ''}"></div>
+                <div class="scope-card-header" style="display:flex; justify-content:space-between; width:100%; align-items:flex-start;">
+                    <div class="scope-icon-box">
+                        <i class="fas ${dom.icon || 'fa-folder'}"></i>
+                    </div>
+                    <div class="custom-checkbox-container">
+                        <input type="checkbox" ${card.classList.contains('selected') ? 'checked' : ''} id="check_${dom.id}" style="display:none;">
+                        <div class="custom-check-visual ${card.classList.contains('selected') ? 'checked' : ''}">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
                 </div>
+                <div class="scope-badge ${recClass}">${recLabel}</div>
                 <h3>${dom.name}</h3>
                 <p>${dom.description}</p>
-                <div style="font-size:0.8rem; color:var(--text-muted); margin-top:auto;"><span style="color:var(--accent-cyan); font-weight:bold;">${dom.controls.length}</span> Controls</div>
+                <div class="scope-stats">
+                    <span class="control-pill"><i class="fas fa-microchip"></i> ${dom.controls.length} Controls</span>
+                    <span class="impact-pill"><i class="fas fa-shield-virus"></i> High Impact</span>
+                </div>
             `;
 
             card.addEventListener('click', () => {
+                const checkbox = card.querySelector('.custom-check-visual');
+                const input = card.querySelector('input');
+                
                 card.classList.toggle('selected');
-                const checkbox = card.querySelector('.custom-checkbox');
-                if (card.classList.contains('selected')) {
+                const isSelected = card.classList.contains('selected');
+                input.checked = isSelected;
+                
+                if (isSelected) {
                     if (!activeDomainIndices.includes(index)) activeDomainIndices.push(index);
-                    checkbox.style.background = 'var(--accent-green)';
-                    checkbox.style.borderColor = 'var(--accent-green)';
+                    checkbox.classList.add('checked');
                 } else {
                     activeDomainIndices = activeDomainIndices.filter(i => i !== index);
-                    checkbox.style.background = 'transparent';
-                    checkbox.style.borderColor = 'var(--border)';
+                    checkbox.classList.remove('checked');
                 }
 
-                // Allow start if at least 1 domain selected
                 ui.btnStartAssess.disabled = activeDomainIndices.length === 0;
                 updateScopeMetrics();
             });
@@ -141,7 +189,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateScopeMetrics();
 
         ui.btnStartAssess.addEventListener('click', () => {
-            activeDomainIndices.sort(); // Ensure chronological order mapping
+            activeDomainIndices.sort(); 
             ui.viewScope.classList.remove('active');
             ui.viewEngine.style.display = 'flex';
             setTimeout(() => { ui.viewEngine.classList.add('active'); }, 50);
@@ -281,6 +329,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+        updateURLState(); // Sync to URL on every answer
 
         const domain = grcData.domains[activeDomainIndices[currentNavIndex]];
         updateDomainProgress(domain);
@@ -400,6 +449,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         ui.dashOverallScore.style.color = ui.overallScore.style.color;
         ui.dashOverallScore.style.borderColor = ui.overallScore.style.color;
 
+        // --- Update Badge Preview ---
+        const badgeFill = document.getElementById('badgeFill');
+        const badgeScore = document.getElementById('badgeScoreValue');
+        const embedCode = document.getElementById('grcEmbedCode');
+        const currentScore = ui.overallScore.innerText;
+        
+        if (badgeScore) badgeScore.innerText = currentScore;
+        if (badgeFill) {
+            badgeFill.style.borderColor = ui.overallScore.style.color;
+        }
+        if (embedCode) {
+            const cleanScore = currentScore.replace('%', '');
+            const embedUrl = `https://thehgtech.com/embed/grc-badge.html?score=${cleanScore}`;
+            embedCode.innerText = `<iframe src="${embedUrl}" width="280" height="180" frameborder="0"></iframe>`;
+        }
+
         const labels = [];
         const dataset = [];
         const criticalGaps = [];
@@ -440,14 +505,25 @@ document.addEventListener('DOMContentLoaded', async () => {
             data: {
                 labels: labels,
                 datasets: [{
-                    label: 'Domain Readiness (%)',
+                    label: 'Your Readiness (%)',
                     data: dataset,
-                    backgroundColor: 'rgba(0, 217, 255, 0.2)',
+                    backgroundColor: 'rgba(0, 217, 255, 0.15)',
                     borderColor: '#00D9FF',
                     pointBackgroundColor: '#8B5CF6',
                     pointBorderColor: '#fff',
                     pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: '#00D9FF'
+                    pointHoverBorderColor: '#00D9FF',
+                    borderWidth: 3,
+                    fill: true
+                }, {
+                    label: 'Global Industry Avg (%)',
+                    data: labels.map(() => 45 + Math.floor(Math.random() * 15)), // Baseline SMB comparison
+                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                    borderColor: 'rgba(255, 255, 255, 0.15)',
+                    borderDash: [4, 4],
+                    pointRadius: 0,
+                    borderWidth: 1,
+                    fill: true
                 }]
             },
             options: {
@@ -761,6 +837,37 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ui.btnExportDraft.addEventListener('click', () => handleExcelExport(ui.btnExportDraft));
     ui.btnFinalExcelExport.addEventListener('click', () => handleExcelExport(ui.btnFinalExcelExport));
+
+    // Share Link Handler
+    if (ui.btnShareState) {
+        ui.btnShareState.addEventListener('click', () => {
+            updateURLState();
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                const originalText = ui.btnShareState.innerHTML;
+                ui.btnShareState.innerHTML = '<i class="fas fa-check"></i> Link Copied!';
+                setTimeout(() => {
+                    ui.btnShareState.innerHTML = originalText;
+                }, 2000);
+            });
+        });
+    }
+
+    // Badge Copy Handler
+    const btnCopyEmbed = document.getElementById('btnCopyEmbed');
+    if (btnCopyEmbed) {
+        btnCopyEmbed.addEventListener('click', () => {
+            const code = document.getElementById('grcEmbedCode').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                btnCopyEmbed.innerHTML = '<i class="fas fa-check"></i>';
+                btnCopyEmbed.classList.add('success');
+                setTimeout(() => {
+                    btnCopyEmbed.innerHTML = '<i class="fas fa-copy"></i>';
+                    btnCopyEmbed.classList.remove('success');
+                }, 2000);
+            });
+        });
+    }
 
     // Kickoff
     loadGRCData();
