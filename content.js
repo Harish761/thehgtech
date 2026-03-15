@@ -5,137 +5,66 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 14 2026",
-            "headline": "Remote Exploit—HPE AOS-CX Flaw Resets Admin Passwords",
-            "title": "Critical HPE AOS-CX Vulnerability Enables Remote Admin Password Resets",
-            "content": "A critical vulnerability in HPE&#x27;s AOS-CX network operating system allows unauthorized remote attackers to reset administrator passwords, bypassing existing authentication controls. This flaw, which does not require authentication to exploit, poses a significant threat to organizations using HPE&#x27;s networking solutions. Affected versions include those prior to the latest security patch, which HPE advises all users to apply immediately. The vulnerability could lead to unauthorized access and control over network devices, potentially disrupting operations. This incident underscores the importance of timely patch management in maintaining network security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-hpe-aos-cx-vulnerability-allows-admin-password-resets/",
-            "relatedResources": [
-                {
-                    "label": "CVE Prioritization Guide",
-                    "url": "/guides/cve-prioritization-patch-management.html",
-                    "icon": "fa-bug"
-                }
-            ]
+            "headline": "Windows 11 Hotpatch Fixes RRAS RCE Vulnerability",
+            "title": "Microsoft Releases Urgent Hotpatch for Windows 11 RRAS RCE Flaw",
+            "content": "Microsoft has issued an out-of-band update to address a critical remote code execution (RCE) vulnerability in Windows 11 Enterprise, specifically affecting devices that use hotpatch updates. The flaw resides in the Routing and Remote Access Service (RRAS) and could potentially allow attackers to execute arbitrary code on vulnerable systems. This update is vital for enterprises relying on hotpatching to maintain system security without downtime. The vulnerability underscores the importance of timely updates, especially for systems handling sensitive data. Organizations using Windows 11 Enterprise should apply the hotpatch immediately to mitigate potential risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-11-oob-hotpatch-to-fix-rras-rce-flaw/",
+            "relatedResources": []
         },
         {
-            "date": "Mar 13 2026",
-            "headline": "Cyberattackers Target Nonprofits—No Cause is Safe",
-            "title": "Nonprofits Vulnerable to Cyberattacks Despite Good Intentions",
-            "content": "Sightline Security&#x27;s founder and advisory board highlight the cybersecurity challenges faced by nonprofit organizations, which often lack the resources to defend against sophisticated cyber threats. Nonprofits are increasingly targeted by cyberattackers who disregard the charitable nature of these organizations. The industry is urged to support these entities by providing affordable security solutions and expertise. This trend reflects a broader issue where cybercriminals exploit vulnerable sectors, emphasizing the need for tailored cybersecurity strategies. Professionals are encouraged to collaborate with nonprofits to enhance their security posture.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/cyberattackers-dont-care-about-good-causes",
+            "date": "Mar 14 2026",
+            "headline": "OpenClaw AI Flaws Risk Data Leaks, Prompt Injection",
+            "title": "OpenClaw AI Agent Vulnerabilities Could Lead to Data Exfiltration",
+            "content": "China&#x27;s National Computer Network Emergency Response Technical Team (CNCERT) has alerted users to critical vulnerabilities in OpenClaw, an open-source AI agent previously known as Clawdbot and Moltbot. These flaws could enable prompt injection attacks and unauthorized data exfiltration. OpenClaw&#x27;s self-hosted nature makes it attractive for developers, but these security gaps pose significant risks to data integrity and confidentiality. Users of OpenClaw should review their implementations and apply any available patches or mitigations. This warning highlights the ongoing challenge of securing AI systems against evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/openclaw-ai-agent-flaws-could-enable.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 14 2026",
+            "headline": "AppsFlyer SDK Compromised—Crypto-Stealing Code Injected",
+            "title": "AppsFlyer Web SDK Hijacked in Crypto-Stealing Supply-Chain Attack",
+            "content": "The AppsFlyer Web SDK was recently compromised in a supply-chain attack, where malicious actors injected JavaScript code designed to steal cryptocurrency. This incident highlights the vulnerabilities inherent in software supply chains, particularly for widely used SDKs. The attack temporarily affected users of AppsFlyer&#x27;s services, potentially leading to unauthorized cryptocurrency transactions. Developers utilizing the AppsFlyer SDK should audit their codebases for any unauthorized changes and monitor for unusual activity. This breach underscores the critical need for rigorous security measures in third-party software components.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/appsflyer-web-sdk-used-to-spread-crypto-stealer-javascript-code/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 14 2026",
+            "headline": "GlassWorm Attack Targets 72 VSX Extensions—Developers at Risk",
+            "title": "GlassWorm Supply-Chain Attack Affects Open VSX Extensions",
+            "content": "Cybersecurity researchers have identified a new phase of the GlassWorm campaign, targeting developers through 72 compromised Open VSX extensions. This campaign represents a strategic escalation, as attackers no longer embed loaders directly in each listing but use a more sophisticated propagation method. Developers using these extensions face potential security breaches and compromised development environments. The attack highlights the growing threat of supply-chain vulnerabilities in developer tools. It is crucial for developers to verify the integrity of their VSX extensions and consider alternative sources if necessary.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/glassworm-supply-chain-attack-abuses-72.html",
             "relatedResources": []
         },
         {
             "date": "Mar 13 2026",
-            "headline": "Poland&#x27;s Nuclear Research Center Thwarts Cyberattack",
-            "title": "Cyberattack on Poland&#x27;s Nuclear Research Center Successfully Blocked",
-            "content": "Poland&#x27;s National Centre for Nuclear Research (NCBJ) reported a cyberattack on its IT infrastructure that was detected and neutralized before causing any damage. The attack targeted critical systems, but thanks to robust security measures, it was blocked promptly. This incident highlights the persistent threat faced by research institutions, particularly those involved in sensitive areas like nuclear research. The NCBJ&#x27;s swift response serves as a model for other organizations in maintaining vigilance and preparedness against cyber threats. Continued investment in cybersecurity is essential to protect critical national infrastructure.",
+            "headline": "Windows 11 Update Blocks C: Drive on Samsung Laptops",
+            "title": "Microsoft Investigates Windows 11 Access Issue on Samsung PCs",
+            "content": "Microsoft is investigating a problem affecting some Samsung laptops running Windows 11, where users lose access to their C: drive after installing the February 2026 security updates. This issue prevents affected users from launching applications, posing significant disruptions to productivity. The problem appears to be isolated to specific Samsung models, though the exact cause remains under investigation. Users experiencing this issue are advised to contact Microsoft support for guidance while a fix is developed. This incident highlights the complexities of software updates across diverse hardware configurations.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/polands-nuclear-research-centre-targeted-by-cyberattack/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-users-cant-access-c-drive-on-some-samsung-pcs/",
+            "relatedResources": []
         },
         {
             "date": "Mar 13 2026",
-            "headline": "Instagram to End Encrypted Chats—May 2026 Shutdown",
-            "title": "Meta to Discontinue Instagram&#x27;s End-to-End Encrypted Chats by May 2026",
-            "content": "Meta has announced plans to terminate end-to-end encryption (E2EE) support for Instagram chats starting May 8, 2026. Users affected by this change will receive instructions on downloading any media or messages they wish to preserve. This decision may impact user privacy, as E2EE is a critical feature for secure communication. The move reflects Meta&#x27;s shifting priorities and could influence user behavior on the platform. Users are advised to review their chat history and safeguard important information before the deadline.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/meta-to-shut-down-instagram-end-to-end.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "Outlook Sync Issues Under Investigation by Microsoft",
-            "title": "Microsoft Probes Outlook Desktop Client Sync and Connection Problems",
-            "content": "Microsoft is investigating reported issues affecting email synchronization and connectivity in the classic Outlook desktop client. Users have experienced disruptions in email access, prompting Microsoft to identify and resolve the underlying causes. This problem highlights the challenges of maintaining reliable communication tools in business environments. Affected users are advised to monitor Microsoft&#x27;s updates for solutions and potential workarounds. Ensuring seamless email operations is critical for productivity and business continuity.",
+            "headline": "FBI Seeks Gamers Hit by Malware-Laden Steam Titles",
+            "title": "FBI Appeals for Victims of Malware-Infested Steam Games",
+            "content": "The FBI is reaching out to gamers who may have installed malware-laden titles on the Steam platform as part of an ongoing investigation. Eight malicious games have been identified, potentially compromising user data and system security. The FBI urges affected individuals to come forward with information to aid in their investigation. This situation highlights the persistent threat of malicious software in popular gaming platforms and the need for vigilant security practices among gamers. Users are advised to verify the integrity of their game downloads and report any suspicious activity.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-classic-outlook-sync-and-connection-issues/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Securing AI/ML Pipelines",
-                    "url": "/guides/securing-ai-ml-pipelines.html",
-                    "icon": "fa-brain"
-                }
-            ]
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-seeks-victims-of-steam-games-used-to-spread-malware/",
+            "relatedResources": []
         },
         {
             "date": "Mar 13 2026",
-            "headline": "FBI Warns of Residential Proxy Cyber Threats",
-            "title": "Cybercriminals Exploit Residential Proxies for Stealthy Attacks, FBI Warns",
-            "content": "The FBI has issued a warning about the growing threat of residential proxy attacks, where cybercriminals reroute internet traffic to mask their activities. This technique allows attackers to hide behind legitimate residential IP addresses, complicating detection and mitigation efforts. The FBI&#x27;s guidance aims to raise awareness and help individuals and organizations protect against this stealthy tactic. As remote work continues to blur network boundaries, understanding and defending against proxy-based threats are increasingly important. Users should review network configurations and employ robust security measures to counteract these risks.",
+            "headline": "Google Urges Immediate Patch for Two Chrome Zero-Days",
+            "title": "Google Issues Emergency Patches for Chrome Zero-Day Vulnerabilities",
+            "content": "Google has released emergency patches for two actively exploited zero-day vulnerabilities in the Chrome browser, identified as CVE-2026-3909 and CVE-2026-3910. These high-severity flaws could allow threat actors to execute arbitrary code, putting millions of users at risk. The vulnerabilities come shortly after Google addressed 29 other security issues, underscoring the constant threat landscape facing popular web browsers. IT teams are urged to apply these patches immediately to protect against potential exploitation. This incident highlights the importance of maintaining up-to-date security measures in widely used software.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4145006/cyber-criminals-too-are-working-from-home-your-home.html",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "Zero-Day Detection Guide",
-                    "url": "/guides/zero-day-detection.html",
-                    "icon": "fa-exclamation-triangle"
-                }
-            ]
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "AI&#x27;s Role in Combating Smartphone Phishing Threats",
-            "title": "AI&#x27;s Potential in Mitigating Smartphone-Based Phishing Attacks",
-            "content": "New research from Omdia reveals that sophisticated phishing attacks are increasingly bypassing on-device protections, posing a significant threat to smartphone users. As these attacks become more prevalent, the role of artificial intelligence (AI) in identifying and mitigating phishing threats is gaining attention. AI-driven solutions could enhance detection capabilities and offer real-time protection against evolving phishing techniques. Users are advised to remain vigilant and consider adopting AI-based security tools to safeguard their devices. This development highlights the need for continuous innovation in cybersecurity to keep pace with emerging threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/mobile-security/will-ai-save-consumers-smartphone-phishing-attacks",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                },
-                {
-                    "label": "MITRE ATT&CK Mapping",
-                    "url": "/guides/mitre-attack-mapping.html",
-                    "icon": "fa-map"
-                }
-            ]
-        },
-        {
-            "date": "Mar 14 2026",
-            "headline": "Remcos RAT Spread via ClickFix—SmartApeSG Campaign Uncovered",
-            "title": "SmartApeSG Campaign Leverages ClickFix to Distribute Remcos Remote Access Trojan",
-            "content": "Cybersecurity researchers have uncovered the SmartApeSG campaign, which uses a ClickFix page to distribute the Remcos Remote Access Trojan (RAT). The campaign targets users by tricking them into downloading malicious software, which then provides attackers with remote access to compromised systems. Remcos RAT is known for its capabilities to execute commands, log keystrokes, and access files on infected machines. This campaign highlights the persistent threat of RATs and the need for vigilance when interacting with unfamiliar web pages. Security professionals are advised to update their threat detection tools to recognize and block this RAT. Awareness and user education remain critical in mitigating such threats.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32796",
-            "relatedResources": [
-                {
-                    "label": "SIEM & Log Analysis Guide",
-                    "url": "/guides/siem-log-analysis.html",
-                    "icon": "fa-chart-bar"
-                }
-            ]
+            "sourceUrl": "https://www.csoonline.com/article/4145055/google-warns-of-two-actively-exploited-chrome-zero-days.html",
+            "relatedResources": []
         },
         {
             "date": "Mar 19 2026",
@@ -164,102 +93,66 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 13 2026",
-            "headline": "Docker Partners with NanoClaw—Boosts Open Source AI Deployment",
-            "title": "NanoClaw&#x27;s Creator Secures Partnership with Docker After Rapid Success",
-            "content": "In a whirlwind six weeks, Gavriel Cohen&#x27;s open-source project NanoClaw has achieved notable success, culminating in a strategic partnership with Docker. NanoClaw, an AI agent platform, will now enable enterprises to deploy AI agents securely within Docker Sandboxes. This collaboration addresses a critical challenge in AI deployment: balancing agent autonomy with security. Docker&#x27;s containerized approach provides a robust environment for AI agents to operate safely, mitigating risks associated with unauthorized actions. This development is particularly significant for enterprises looking to adopt AI technologies without compromising security. The partnership highlights the growing importance of open-source solutions in enterprise AI strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/13/the-wild-six-weeks-for-nanoclaws-creator-that-led-to-a-deal-with-docker/",
-            "relatedResources": [
-                {
-                    "label": "Container Security Guide",
-                    "url": "/guides/container-security.html",
-                    "icon": "fa-cube"
-                }
-            ]
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "Spotify Lets Users Edit Taste Profile—Personalize Recommendations",
-            "title": "Spotify Introduces Taste Profile Editing for Enhanced User Recommendations",
-            "content": "Spotify is rolling out a new feature allowing users to edit their Taste Profile, directly influencing personalized playlists such as Discover Weekly and Wrapped. This capability provides users greater control over their music recommendations by adjusting their listening preferences. The update aims to enhance user satisfaction by delivering more tailored content, potentially increasing user engagement and retention. Spotify&#x27;s move reflects a broader trend in digital services towards personalization through user-driven data modifications. Users can access this feature through the settings menu, making it a straightforward process to refine their music experience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/13/spotify-will-let-you-edit-your-taste-profile-to-control-your-recommendations/",
-            "relatedResources": [
-                {
-                    "label": "Ransomware Tracker",
-                    "url": "/ransomware-tracker.html",
-                    "icon": "fa-skull-crossbones"
-                }
-            ]
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "Google Acquires Wiz for $32B—VCs Call It &#x27;Deal of the Decade&#x27;",
-            "title": "Google Finalizes $32 Billion Acquisition of Cybersecurity Startup Wiz",
-            "content": "Google has completed its $32 billion acquisition of cybersecurity startup Wiz, marking the largest venture-backed acquisition in history. According to Shardul Shah of Index Ventures, Wiz sits at the intersection of AI, cloud, and security spending—three major industry tailwinds driving this landmark deal. The acquisition underscores Google&#x27;s strategic emphasis on bolstering its cybersecurity capabilities amid rising global threats. For enterprises, this move signals enhanced security offerings integrated with Google&#x27;s cloud services. Industry experts suggest this acquisition will set a precedent for future investments in AI-driven cybersecurity solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/the-32b-acquisition-that-one-vc-is-calling-the-deal-of-the-decade/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "Physical AI: Manufacturing&#x27;s New Edge Against Labor Challenges",
-            "title": "Physical AI Becomes Manufacturing&#x27;s Strategic Advantage Amid Labor Constraints",
-            "content": "Manufacturers are increasingly turning to physical AI to address labor shortages, rising complexity, and the need for growth. While traditional automation has improved efficiency and cost management, physical AI offers advanced capabilities such as adaptive learning and real-time decision-making. This technology enables manufacturers to optimize operations beyond conventional automation limits, driving productivity and innovation. The shift towards physical AI is part of a broader trend in leveraging AI to overcome operational challenges in the manufacturing sector. Industry leaders should consider investing in AI technologies to maintain competitive advantages in a rapidly evolving market.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/13/1134184/why-physical-ai-is-becoming-manufacturings-next-advantage/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "Peacock Bets on AI—Expands into Video and Mobile Gaming",
-            "title": "Peacock Leverages AI for Video, Live Sports, and Gaming Expansion",
-            "content": "Peacock is expanding its platform by integrating AI-driven video experiences, mobile-first live sports, and gaming. This strategic move aims to attract a broader audience by offering innovative content formats and interactive experiences. AI technology will enhance video personalization, providing users with tailored content recommendations and immersive viewing. The expansion into mobile gaming and sports aligns with current consumer trends favoring on-the-go entertainment options. Peacock&#x27;s adoption of AI reflects the growing importance of intelligent technologies in media and entertainment, positioning the platform for sustained growth in a competitive market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/13/peacock-expands-into-ai-driven-video-mobile-first-live-sports-and-gaming/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "Google&#x27;s AI Search Prefers Its Own Services—Raises Concerns",
-            "title": "Google&#x27;s AI Search Tools Favor Internal Services Over External Links",
-            "content": "Google&#x27;s generative AI search tools are increasingly directing users to its own services, such as Google Search and YouTube, rather than third-party publishers. This trend raises concerns about the potential impact on the visibility and traffic of external content providers. While Google&#x27;s approach enhances integration across its platforms, it may also limit the diversity of information accessible to users. The development highlights ongoing debates around the balance between corporate interests and open internet access. Industry stakeholders should monitor these changes to assess their implications for content distribution and visibility strategies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/google-ai-searches-love-to-refer-you-back-to-google/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 13 2026",
-            "headline": "NanoClaw-Docker Partnership Secures AI Agent Deployment",
-            "title": "NanoClaw and Docker Collaborate to Enhance AI Agent Security in Enterprises",
-            "content": "NanoClaw, an open-source AI agent platform, has partnered with Docker to enhance the security of AI agent deployment in enterprises. This collaboration allows AI agents to operate within Docker Sandboxes, providing a controlled environment that mitigates risks associated with agent autonomy. By leveraging Docker&#x27;s containerization technology, enterprises can safely deploy AI solutions without compromising system security. This partnership addresses a critical barrier to AI adoption, offering a secure pathway for organizations to integrate AI agents into their operations. The initiative underscores the importance of secure deployment frameworks in advancing enterprise AI strategies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/nanoclaw-and-docker-partner-to-make-sandboxes-the-safest-way-for-enterprises",
-            "relatedResources": [
-                {
-                    "label": "Container Security Guide",
-                    "url": "/guides/container-security.html",
-                    "icon": "fa-cube"
-                }
-            ]
-        },
-        {
             "date": "Mar 14 2026",
-            "headline": "Musk’s xAI Revamps—New Executives from Cursor Join",
-            "title": "xAI Overhauls AI Coding Tool Effort with New Leadership from Cursor",
-            "content": "Elon Musk&#x27;s AI venture, xAI, is undergoing another restructuring as it revamps its AI coding tool project. The lab has brought in two new executives from Cursor to lead the charge, signaling a fresh direction in its development efforts. This move comes amid ongoing challenges in creating a robust AI coding assistant capable of competing with established tools like GitHub Copilot. The new leadership aims to address foundational issues that have hindered progress, with a focus on enhancing the tool&#x27;s usability and effectiveness. Professionals in the AI and software development fields should watch for updates as xAI strives to refine its offerings and secure a foothold in the competitive landscape.",
+            "headline": "$20B Army-Anduril Deal—Consolidates 120 Procurement Actions",
+            "title": "US Army Awards $20 Billion Contract to Anduril for AI Integration",
+            "content": "The US Army has announced a substantial contract with Anduril Industries valued at up to $20 billion. This deal consolidates over 120 separate procurement actions into a singular enterprise agreement, streamlining acquisition processes and enhancing operational efficiency. Anduril, known for its advanced AI and autonomous systems, will support the Army’s modernization efforts by integrating cutting-edge technologies across various platforms. This move is part of a broader trend within the military to leverage AI for strategic advantage and cost savings. Defense contractors and technology firms should monitor this development for potential partnership opportunities as the Army continues to invest in AI-driven capabilities.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/",
+            "sourceUrl": "https://techcrunch.com/2026/03/14/us-army-announces-contract-with-anduril-worth-up-to-20b/",
             "relatedResources": []
         },
         {
             "date": "Mar 14 2026",
-            "headline": "AI Chatbots Linked to Mass Casualty Risks—Lawyer Warns",
-            "title": "Legal Expert Warns of Mass Casualty Risks from AI Chatbots",
-            "content": "A prominent lawyer has raised concerns about the growing risks of AI chatbots being implicated in mass casualty incidents. Historically linked to suicides, these AI systems are now reportedly surfacing in broader cases with potentially severe consequences. The rapid advancement of AI technology is outpacing the development of adequate safeguards, amplifying the potential for harm. This warning highlights the urgent need for regulatory frameworks and ethical guidelines to manage the deployment of AI in sensitive contexts. Stakeholders in AI development and policy-making should prioritize the establishment of robust safety measures to mitigate these emerging risks.",
+            "headline": "Meta Eyes 20% Layoffs—Offsets AI Spending Surge",
+            "title": "Meta Considers Cutting Workforce by 20% Amid AI Investment Push",
+            "content": "Meta Platforms is reportedly considering layoffs that could impact up to 20% of its workforce as it seeks to balance its aggressive AI infrastructure investments. The company, which owns Facebook, has been spending heavily on AI-related acquisitions and hiring to bolster its capabilities in this rapidly evolving field. The potential layoffs are seen as a cost-saving measure to offset these expenditures. Industry analysts suggest this move reflects the broader tech sector&#x27;s challenges in managing growth while investing in AI technologies. Employees and stakeholders should brace for potential impacts on operations and strategic direction.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/13/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/",
+            "sourceUrl": "https://techcrunch.com/2026/03/14/meta-reportedly-considering-layoffs-that-could-affect-20-of-the-company/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 14 2026",
+            "headline": "ChatGPT Integrates Spotify, Uber, More—Boosts User Functionality",
+            "title": "ChatGPT Expands App Integrations with Spotify, Uber, and More",
+            "content": "OpenAI&#x27;s ChatGPT has introduced new app integrations, allowing users to access services like Spotify, Canva, Figma, and Uber directly within the chat interface. This development enhances ChatGPT&#x27;s utility by enabling seamless interaction with popular apps, streamlining user experiences. The integration supports a variety of tasks, from music streaming to ride-hailing, all within the AI&#x27;s conversational environment. This move highlights the growing trend of AI platforms expanding their ecosystems to offer comprehensive service suites. Users are encouraged to explore these integrations to maximize productivity and convenience in their daily digital interactions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/14/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Nyne Raises $5.3M—Enhances AI with Human Context",
+            "title": "Nyne Secures $5.3 Million to Provide Human Context to AI Agents",
+            "content": "Nyne, a data infrastructure startup founded by a father-son duo, has raised $5.3 million in seed funding led by Wischoff Ventures and South Park Commons. The company aims to enhance AI agents by incorporating human context, addressing a critical gap in current AI capabilities. Nyne&#x27;s approach focuses on improving AI&#x27;s understanding of nuanced human interactions and environments, which is essential for applications in customer service and beyond. This funding round underscores the increasing interest in startups that bridge the gap between human intuition and machine intelligence. Investors and industry stakeholders should watch Nyne&#x27;s progress as it seeks to redefine AI-human interaction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/13/nyne-founded-by-a-father-son-duo-gives-ai-agents-the-human-context-theyre-missing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Xbox to Launch AI Copilot—Enhances Gaming Experience",
+            "title": "Microsoft’s Gaming Copilot AI Assistant Arrives on Xbox Consoles",
+            "content": "Microsoft is set to introduce its Copilot AI assistant to current-generation Xbox consoles later this year. Announced by Sonali Yadav, Xbox&#x27;s product manager for gaming AI, at the Game Developers Conference, this AI assistant will enhance user experience by providing real-time assistance and gameplay suggestions. The Copilot aims to make gaming more intuitive and engaging, leveraging AI to analyze gameplay and offer strategic insights. This innovation reflects Microsoft&#x27;s commitment to integrating AI across its product lines, providing gamers with a more personalized and interactive experience. Xbox users can look forward to enhanced gameplay dynamics as AI becomes a core component of their consoles.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/games/894799/microsoft-gaming-copilot-ai-xbox-consoles",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "NVIDIA NeMo Retriever—Revolutionizes Data Retrieval in AI",
+            "title": "NVIDIA Introduces NeMo Retriever’s Generalizable Agentic Retrieval Pipeline",
+            "content": "NVIDIA has unveiled the NeMo Retriever&#x27;s Generalizable Agentic Retrieval Pipeline, advancing the capabilities of AI data retrieval. This new pipeline goes beyond traditional semantic similarity methods, offering a more flexible and generalizable approach to retrieving information. Designed to enhance AI models&#x27; understanding and processing of complex data sets, the pipeline is poised to benefit industries reliant on large-scale data analysis. NVIDIA&#x27;s innovation signifies a significant leap in AI&#x27;s ability to handle diverse and intricate data environments. Developers and data scientists should explore this technology to leverage improved data retrieval and model training efficiency.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemo-retriever-agentic-retrieval",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 13 2026",
+            "headline": "Spielberg Rejects AI in Filmmaking—Values Human Creativity",
+            "title": "Steven Spielberg Dismisses AI in Film Production at SXSW",
+            "content": "At the South by Southwest (SXSW) festival, acclaimed director Steven Spielberg stated that he has never utilized AI in any of his films. Spielberg emphasized the irreplaceable value of human creativity in the film and television industry, arguing that AI should not replace writers or creators. While acknowledging AI&#x27;s potential in various fields, he cautioned against its use in creative processes. Spielberg&#x27;s comments reflect a broader debate within the entertainment industry regarding AI&#x27;s role and ethical implications. Filmmakers and industry professionals are encouraged to consider the balance between technological advancements and preserving artistic integrity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/13/steven-spielberg-says-hes-never-used-ai-in-any-of-his-films/",
             "relatedResources": []
         }
     ],
