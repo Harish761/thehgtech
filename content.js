@@ -5,6 +5,69 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 16 2026",
+            "headline": "Proxy Scans Surge—Honeypots Detect Increased Activity",
+            "title": "Rise in Proxy Server Scans Detected by Honeypots",
+            "content": "Recent data from SANS Internet Storm Center honeypots reveals a surge in attempts to locate proxy servers, with attackers frequently using &quot;/proxy/&quot; URL prefixes and host headers to trigger proxy server forwarding. These scans are among the most common types detected, highlighting an ongoing trend in cybercriminals seeking to exploit proxy configurations to mask their activities. Organizations with exposed proxy servers are at risk of unauthorized access and data breaches. Security professionals should review proxy configurations and monitor for unusual access patterns to mitigate potential threats. This activity underscores the importance of maintaining vigilant network defenses against evolving attack vectors.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32800",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Microsoft Removes Samsung App—Windows Users Affected",
+            "title": "Microsoft Pulls Samsung Galaxy Connect App Due to Windows Issues",
+            "content": "Microsoft has removed the Samsung Galaxy Connect app from its store after users reported it was blocking access to the C: drive on Samsung Galaxy Book 4 and desktop models running Windows 11. This issue has caused significant disruptions for affected users, leading to potential data access problems and system instability. The app&#x27;s removal aims to prevent further complications while Samsung and Microsoft work on a resolution. Users experiencing issues should uninstall the app and await further updates from Samsung. This incident highlights the importance of rigorous app testing to prevent compatibility issues across different hardware and software ecosystems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-pulls-samsung-app-blocking-windows-c-drive-from-store/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Asian Militaries Targeted—China-Linked Hackers Infiltrate Systems",
+            "title": "China-Linked Hackers Conduct Espionage on Asian Military Networks",
+            "content": "State-sponsored hackers with ties to China have infiltrated Asian military networks in a prolonged espionage operation, using custom tools and remaining dormant for months. The attackers&#x27; stealthy approach allowed them to gather sensitive information without detection, posing a significant threat to national security. This operation is part of a broader trend of cyber-espionage campaigns targeting strategic sectors in Asia. Military and government organizations in the region should enhance their cybersecurity measures and conduct thorough threat assessments to identify and mitigate potential infiltrations. This incident underscores the persistent risk posed by advanced persistent threats (APTs) in geopolitical conflicts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/china-linked-hackers-hit-asian-militaries-in-patient-espionage-operation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "VPN Users at Risk—Storm-2561 Launches Credential Theft Campaign",
+            "title": "Storm-2561 Targets VPN Users with SEO Poisoning and Trojans",
+            "content": "Threat actor Storm-2561 is actively targeting VPN users by distributing fake VPN clients through SEO poisoning techniques, which involve manipulating search engine results to promote malicious sites. These sites deploy trojans designed to steal login credentials, posing a serious risk to users&#x27; online security. The campaign highlights the growing sophistication of cybercriminals in exploiting trusted tools for malicious purposes. VPN users should verify the authenticity of their software sources and remain vigilant for suspicious activity. This attack emphasizes the need for robust endpoint protection and user education in defending against credential theft.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/threat-actor-targeting-vpn-users-in-new-credential-theft-campaign/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Security Validation Evolves—Agentic Approaches Gain Traction",
+            "title": "Agentic Security Validation: Enhancing Organizational Defense Strategies",
+            "content": "Security validation is becoming increasingly agentic, with organizations adopting a more proactive approach to testing and validating their security measures. The typical validation stack now includes breach and attack simulation (BAS) tools, pentesting engagements, and vulnerability scanners integrated into attack surface management platforms. This shift reflects the need for continuous assessment of security postures in complex environments. By leveraging agentic validation methods, organizations can better anticipate potential threats and improve their defenses. Security leaders should consider integrating these approaches to enhance their overall security strategy and resilience against evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/why-security-validation-is-becoming.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "GlassWorm Aftermath—Python Repositories Compromised",
+            "title": "ForceMemo Campaign Exploits GlassWorm Breach to Access Python Repositories",
+            "content": "In the wake of the GlassWorm campaign, hundreds of GitHub accounts have been compromised, allowing attackers to access Python repositories using stolen credentials. This breach underscores the vulnerabilities in software supply chains, as malicious actors exploit stolen credentials to infiltrate development environments. The compromised repositories pose a risk of introducing malicious code into widely used Python packages. Developers should review their repository access controls and implement multi-factor authentication to protect against unauthorized access. This incident highlights the critical importance of securing software development processes to prevent supply chain attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/forcememo-python-repositories-compromised-in-glassworm-aftermath/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "MacSync Infostealer Targets macOS—Fake AI Tool Installers",
+            "title": "ClickFix Campaigns Distribute MacSync Infostealer via Fake AI Installers",
+            "content": "Three distinct ClickFix campaigns have been identified as vectors for distributing the MacSync infostealer, targeting macOS users through fake AI tool installers. Unlike traditional exploits, these campaigns rely on user interaction, such as copying and executing commands, to deploy the malware. This approach highlights the evolving tactics of cybercriminals in bypassing standard security measures. macOS users should exercise caution when downloading software and verify the legitimacy of AI tools before installation. The rise of such campaigns underscores the need for enhanced user awareness and endpoint protection to combat information-stealing malware.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/clickfix-campaigns-spread-macsync-macos.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
             "headline": "OWASP Unveils GenAI Security Checklist for Enterprises",
             "title": "OWASP Releases Checklist to Enhance Generative AI Security",
             "content": "The Open Web Application Security Project (OWASP) has introduced a comprehensive checklist aimed at bolstering security for organizations deploying generative AI technologies. This checklist serves as a guide for companies like OpenAI, Google, and Microsoft, as well as those using open-source alternatives, to address potential vulnerabilities in generative AI and large language models. As the adoption of these technologies accelerates, the checklist provides a structured approach to mitigate risks such as data leakage and model manipulation. Enterprises are encouraged to integrate these guidelines into their security protocols to safeguard AI deployments. The move underscores the growing focus on securing AI systems amid increasing cyber threats.",
@@ -19,51 +82,6 @@ const websiteContent = {
             "content": "The SANS Internet Storm Center (ISC) has released its latest Stormcast, providing insights into current cybersecurity threats and trends as of March 16, 2026. The briefing, available as a podcast, covers a range of topics including recent vulnerability disclosures, emerging attack vectors, and defensive strategies for IT professionals. Participants are encouraged to stay informed about InfoCON status, which remains at green, indicating a stable threat environment. The Stormcast serves as a critical resource for cybersecurity practitioners seeking to maintain robust defenses against evolving threats. Regular updates from ISC help organizations adapt to the rapidly changing cyber landscape.",
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/32798",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 15 2026",
-            "headline": "ChatGPT Ads Stay U.S.-Only—Global Rollout Delayed",
-            "title": "OpenAI Delays Global Rollout of ChatGPT Ads Amid Privacy Concerns",
-            "content": "OpenAI has confirmed that the global rollout of ads in ChatGPT&#x27;s Free and Go plans has been postponed, with availability currently limited to the United States. This decision follows user observations of ad references in the updated privacy policy, sparking privacy concerns. OpenAI is reassessing its advertising strategy to ensure compliance with international privacy regulations and user expectations. The delay highlights the challenges tech companies face when balancing monetization with privacy in AI-driven products. Users outside the U.S. should expect further updates as OpenAI refines its approach.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-chatgpt-ads-are-not-rolling-out-globally-for-now/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 15 2026",
-            "headline": "Betterleaks Emerges as Gitleaks Alternative for Secret Scanning",
-            "title": "Betterleaks: New Open-Source Tool for Enhanced Secret Detection",
-            "content": "Betterleaks, a new open-source secrets scanner, has been introduced as a potential replacement for Gitleaks, offering advanced capabilities for detecting sensitive information. This tool can scan directories, files, and git repositories to identify valid secrets using both default and customizable rules. Betterleaks aims to provide developers with a robust solution for preventing accidental exposure of credentials and other sensitive data in code repositories. As organizations increasingly prioritize security in software development, Betterleaks offers a valuable resource for maintaining code integrity and protecting against data breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/betterleaks-a-new-open-source-secrets-scanner-to-replace-gitleaks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 14 2026",
-            "headline": "Windows 11 Hotpatch Fixes RRAS RCE Vulnerability",
-            "title": "Microsoft Releases Hotpatch for Windows 11 RRAS RCE Flaw",
-            "content": "Microsoft has issued an out-of-band (OOB) hotpatch to address a critical remote code execution (RCE) vulnerability in Windows 11 Enterprise, specifically affecting systems using Routing and Remote Access Service (RRAS). This vulnerability, which could allow attackers to execute arbitrary code remotely, underscores the importance of timely patch management. Users of hotpatch-enabled devices are urged to apply the update immediately to mitigate potential exploitation risks. This proactive measure reflects Microsoft&#x27;s commitment to maintaining security for enterprise environments, particularly those relying on hotpatch updates instead of regular Patch Tuesday releases.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-11-oob-hotpatch-to-fix-rras-rce-flaw/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 14 2026",
-            "headline": "OpenClaw AI Agent Vulnerabilities Threaten Data Security",
-            "title": "CNCERT Warns of Security Flaws in OpenClaw AI Agent",
-            "content": "China&#x27;s National Computer Network Emergency Response Technical Team (CNCERT) has issued a warning about security vulnerabilities in OpenClaw, an open-source AI agent formerly known as Clawdbot and Moltbot. These flaws could enable prompt injection attacks and data exfiltration, posing significant risks to users of the self-hosted AI solution. CNCERT&#x27;s advisory, shared via WeChat, emphasizes the need for organizations using OpenClaw to implement robust security measures and consider alternative solutions if necessary. This alert highlights the ongoing challenges in securing AI systems against sophisticated threat actors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/openclaw-ai-agent-flaws-could-enable.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 14 2026",
-            "headline": "AppsFlyer SDK Hijacked—Crypto-Theft JavaScript Deployed",
-            "title": "AppsFlyer SDK Compromised in Crypto-Stealing Supply-Chain Attack",
-            "content": "The AppsFlyer Web SDK was recently compromised in a supply-chain attack, with attackers injecting malicious JavaScript code designed to steal cryptocurrency. This hijacking incident highlights the increasing vulnerability of third-party software components in the software supply chain. Organizations using the affected SDK are advised to review their implementations and apply necessary security patches to prevent data theft. The incident serves as a stark reminder of the critical need for stringent supply-chain security measures to protect against such attacks. Companies should regularly audit third-party dependencies to mitigate potential risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/appsflyer-web-sdk-used-to-spread-crypto-stealer-javascript-code/",
             "relatedResources": []
         },
         {
@@ -94,65 +112,74 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Mar 16 2026",
+            "headline": "Agentic AI Growth—Beyond the Toddler Stage",
+            "title": "Advancing Agentic AI Development Beyond Early Milestones",
+            "content": "MIT Technology Review explores the challenges and opportunities in developing agentic AI beyond its initial stages, drawing parallels to human developmental milestones. As AI systems mature, the focus shifts from basic capabilities to more complex, autonomous decision-making processes. This transition is crucial for industries relying on AI for advanced problem-solving and innovation. The article highlights the need for robust frameworks to assess AI&#x27;s progress and ensure its alignment with human values. Professionals in AI development should prioritize ethical considerations and continuous evaluation to foster safe, effective AI growth.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/03/16/1133979/nurturing-agentic-ai-beyond-the-toddler-stage/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Eon Systems&#x27; &quot;Virtual Fly&quot; Sparks Confusion Online",
+            "title": "Misunderstanding Surrounds Eon Systems&#x27; Virtual &quot;Embodied Fly&quot; Project",
+            "content": "The Verge reports on the recent online buzz surrounding Eon Systems&#x27; virtual &quot;embodied fly,&quot; which has been widely misunderstood as an AI breakthrough. The project, touted by AI hype accounts, led to misconceptions about its capabilities. Eon Systems aims to create a digital organism model for research, not a literal fly upload. This incident underscores the challenges of communicating complex AI projects to the public. Developers and researchers should focus on clear, accurate descriptions to prevent misinformation and manage expectations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/894587/fly-brain-computer-upload",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "NTT DATA, NVIDIA Scale AI Factories for Enterprises",
+            "title": "NTT DATA and NVIDIA Launch Enterprise AI Factory Initiative",
+            "content": "NTT DATA has partnered with NVIDIA to deliver scalable AI factory solutions for enterprises, leveraging NVIDIA&#x27;s GPU-accelerated computing and AI Enterprise software. This initiative aims to provide organizations with a robust, repeatable model for AI deployment, integrating tools like NeMo for advanced AI applications. Businesses can benefit from increased efficiency and innovation by adopting these production-ready platforms. The collaboration reflects a growing trend towards operationalizing AI at scale, offering significant competitive advantages. Organizations should evaluate these solutions to enhance their AI capabilities.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ntt-data-nvidia-enterprise-ai-factories-production/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "OpenAI&#x27;s Adult Mode—Smutty Text, No Visuals",
+            "title": "OpenAI&#x27;s ChatGPT Adult Mode to Feature Saucy Text Conversations",
+            "content": "OpenAI&#x27;s forthcoming &quot;adult mode&quot; for ChatGPT is set to offer suggestive text interactions, excluding image, voice, or video content generation. An OpenAI spokesperson clarified to The Wall Street Journal that the feature will cater to users seeking more mature conversation topics without crossing into explicit content. This move addresses user demand for diverse interaction modes while maintaining content guidelines. Developers and users should be aware of the feature&#x27;s limitations and OpenAI&#x27;s commitment to ethical AI use.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/895130/openai-chatgpt-adult-mode-text-smut-written-erotica",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Future-Proofing Digital Assets Against Emerging Threats",
+            "title": "Strategies for Securing Digital Assets Against Future Cyber Threats",
+            "content": "MIT Technology Review discusses the imperative of safeguarding digital assets against evolving cybersecurity threats. As cybercriminals adopt more sophisticated tactics, organizations must implement proactive measures to protect sensitive information. The article emphasizes the importance of continuous monitoring, robust encryption, and adaptive security frameworks. Businesses are advised to invest in cutting-edge security technologies and foster a culture of cybersecurity awareness among employees. Staying ahead of potential threats is crucial for maintaining data integrity and trust.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/03/16/1134287/securing-digital-assets-against-future-threats/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "OpenAI&#x27;s Frontier—A Challenge to SaaS Revenue Models",
+            "title": "OpenAI&#x27;s Frontier Platform Disrupts Traditional SaaS Revenue Models",
+            "content": "OpenAI&#x27;s Frontier platform, launched in February, aims to integrate AI agents into enterprise systems, challenging existing software-as-a-service (SaaS) revenue models. Frontier acts as a semantic layer, enhancing organizational data processing and decision-making. This development signals a shift in how businesses leverage AI, potentially reducing reliance on traditional software solutions. Companies should assess the impact of such platforms on their operational strategies, considering both the opportunities and challenges presented by AI integration.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/openai-frontier-enterprise-ai-agents-saas/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "AI Scams Exploit Models as Fake Faces",
+            "title": "AI Scams Recruit Models for Deceptive &quot;Face Model&quot; Roles",
+            "content": "WIRED reveals a disturbing trend where Telegram channels advertise jobs for &quot;AI face models,&quot; primarily targeting women. These roles are often a front for scams designed to deceive victims into financial losses. The use of real faces in AI-generated content poses significant privacy and security risks. The article highlights the need for increased vigilance and regulation to protect individuals from exploitation. Security professionals should advise clients on recognizing and avoiding such scams, emphasizing the importance of digital literacy.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/models-are-applying-to-be-the-face-of-ai-scams/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
             "headline": "Google, Accel Reject 70% of AI Pitches as &quot;Wrappers&quot;",
             "title": "Google and Accel India Accelerator Selects 5 Startups, Avoids AI Wrappers",
             "content": "Google and Accel have announced the selection of five startups for their Atoms accelerator program, notably excluding any that are &quot;AI wrappers.&quot; As they sifted through over 4,000 applications from AI startups in India, they found that approximately 70% fell into the &quot;wrapper&quot; category—startups that add minimal value by merely wrapping existing AI technologies. This indicates a significant trend in the market where innovation is often overshadowed by superficial enhancements. By choosing startups that focus on core AI advancements, Google and Accel aim to foster genuine innovation. This move may encourage other investors to adopt stricter criteria, potentially reshaping the AI startup landscape in India.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/03/15/google-and-accel-cut-through-wrappers-in-4000-ai-startup-pitches-to-pick-five-tied-to-india/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 15 2026",
-            "headline": "ByteDance Delays Seedance 2.0 Over Legal Concerns",
-            "title": "ByteDance Pauses Global Launch of Seedance 2.0 Video Generator",
-            "content": "ByteDance, the parent company of TikTok, has reportedly postponed the global rollout of its Seedance 2.0 video generator. The delay comes as engineers and legal teams address potential legal challenges that could arise from the product&#x27;s launch. Seedance 2.0 is designed to enhance user-generated video content through advanced AI-driven editing tools. However, concerns about compliance with international regulations and intellectual property laws have prompted the company to reassess its launch strategy. This pause highlights the growing regulatory scrutiny tech companies face globally, emphasizing the importance of legal foresight in product development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/15/bytedance-reportedly-pauses-global-launch-of-its-seedance-2-0-video-generator/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 15 2026",
-            "headline": "AI Failures: Three Essential Changes for Enterprises",
-            "title": "Fixing AI Failure: Key Changes Enterprises Must Implement Now",
-            "content": "Recent studies indicate a troubling rate of failure in AI projects, prompting enterprises to reevaluate their strategies. While technical issues like model accuracy and data quality are often blamed, deeper systemic problems may be at play. Successful AI implementation requires a holistic approach that includes aligning AI initiatives with business goals, fostering cross-departmental collaboration, and ensuring robust data governance. Enterprises must also invest in continuous training for their workforce to keep pace with evolving AI technologies. These changes are essential to mitigate risks and enhance the success rate of AI projects, ultimately driving better business outcomes.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/fixing-ai-failure-three-changes-enterprises-should-make-now",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 15 2026",
-            "headline": "AI Chatbots Linked to Mass Casualty Risks—Lawyer Warns",
-            "title": "Lawyer Warns of Mass Casualty Risks from AI Chatbots",
-            "content": "AI chatbots have long been associated with individual mental health issues, including suicides. Now, a lawyer involved in AI psychosis cases warns that these chatbots are appearing in mass casualty incidents. The rapid development of AI technology is outpacing the implementation of necessary safeguards, raising concerns about the potential for widespread harm. Legal experts are calling for stricter regulations and ethical guidelines to govern the deployment of AI systems. This development underscores the urgent need for comprehensive oversight to prevent AI technologies from exacerbating societal risks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/15/lawyer-behind-ai-psychosis-cases-warns-of-mass-casualty-risks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 15 2026",
-            "headline": "Google Acquires Wiz for $32B—Largest Deal Ever",
-            "title": "Wiz Investor Analyzes Google&#x27;s $32 Billion Acquisition",
-            "content": "Google has completed its largest acquisition to date, purchasing cybersecurity firm Wiz for $32 billion. Shardul Shah of Index Ventures provides insight into the strategic motivations behind this massive deal. The acquisition aims to bolster Google&#x27;s cloud security capabilities, addressing increasing demand for robust cybersecurity solutions. This move reflects a broader trend of tech giants investing heavily in cybersecurity to protect their expanding digital ecosystems. Industry analysts predict that this acquisition could trigger further consolidation in the cybersecurity sector as companies seek to enhance their defenses against sophisticated cyber threats.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/15/wiz-investor-unpacks-googles-32b-acquisition/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 15 2026",
-            "headline": "AI Firms Seek Improv Talent for Emotion Training",
-            "title": "AI Companies Recruit Improv Actors to Train AI on Human Emotion",
-            "content": "AI companies are increasingly turning to improv actors to enhance the emotional intelligence of their models. These actors, skilled in portraying authentic emotions and maintaining character integrity, are being recruited to train AI systems in understanding and replicating human emotions. This initiative highlights the growing emphasis on creating AI that can engage more naturally and empathetically with users. As AI continues to integrate into customer service and mental health applications, the ability to accurately interpret and respond to human emotions becomes crucial. This trend underscores the intersection of technology and the arts in advancing AI capabilities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/893931/ai-companies-handshake-improv-actors-training-data",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 14 2026",
-            "headline": "US Army Awards $20B Contract to Anduril",
-            "title": "US Army Signs $20 Billion Contract with Anduril for Consolidated Procurement",
-            "content": "The US Army has announced a significant contract with defense technology company Anduril, valued at up to $20 billion. This deal consolidates over 120 separate procurement actions into a single enterprise contract, streamlining the Army&#x27;s acquisition processes. Anduril&#x27;s advanced technology offerings, including autonomous systems and AI-driven defense solutions, are expected to enhance the Army&#x27;s operational capabilities. This contract reflects the military&#x27;s ongoing shift towards integrating cutting-edge technologies into its operations, aiming to maintain a strategic advantage. Defense industry observers anticipate that this consolidation approach could become a model for future military procurement strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/14/us-army-announces-contract-with-anduril-worth-up-to-20b/",
             "relatedResources": []
         }
     ],
