@@ -951,36 +951,12 @@
       "date": "2025-12-16",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1309",
-      "incident_id": 1309,
-      "title": "Springer Nature Book 'Social, Ethical and Legal Aspects of Generative AI: Tools, Techniques and Syst",
-      "date": "2025-12-16",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1310",
-      "incident_id": 1310,
-      "title": "Canada Revenue Agency (CRA) AI Chatbot 'Charlie' Reportedly Gave Incorrect Tax Filing Guidance at Sc",
-      "date": "2025-12-16",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1311",
-      "incident_id": 1311,
-      "title": "Peppermill Casino Facial Recognition System Reportedly Misidentified Individual, Leading to Wrongful",
-      "date": "2025-12-16",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 122,
+    "total": 119,
     "last7Days": 15,
     "last30Days": 57
   },
-  "lastUpdated": "2026-03-16T02:12:10.381107+05:30"
+  "lastUpdated": "2026-03-16T09:00:25.025284+05:30"
 }

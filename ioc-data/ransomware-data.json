@@ -1,13 +1,19 @@
 {
-  "last_updated": "2026-03-15T12:54:45.201245",
+  "last_updated": "2026-03-16T02:31:17.612491",
   "period": "Last 7 days",
   "total_groups": 28,
-  "total_victims": 264,
+  "total_victims": 265,
   "groups": [
     {
       "name": "Qilin",
-      "count": 47,
+      "count": 46,
       "victims": [
+        {
+          "name": "Salag",
+          "date": "2026-03-15 19:43:24.696057",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c5441ba3-cc79-3152-9747-07c872a96faa",
+          "discovered_date": "2026-03-15T19:43:24.696057"
+        },
         {
           "name": "Duffy's Sports Grill",
           "date": "2026-03-14 07:15:37.000186",
@@ -61,12 +67,6 @@
           "date": "2026-03-11 22:17:52.410155",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=3ba7bb81-7cbc-39cb-8da8-ac92ce06c7fd",
           "discovered_date": "2026-03-11T22:17:52.410155"
-        },
-        {
-          "name": "Fortress Systems",
-          "date": "2026-03-11 22:17:14.314796",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=172a0c0b-0e11-3dca-9679-be3c35f7b51d",
-          "discovered_date": "2026-03-11T22:17:14.314796"
         }
       ],
       "industries": [
@@ -86,11 +86,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        4,
         5,
-        22,
+        19,
         6,
         8,
+        2,
         2,
         0
       ]
@@ -177,11 +177,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        6,
         3,
         8,
         8,
         4,
+        0,
         0,
         0
       ]
@@ -268,12 +268,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        3,
         1,
         12,
         6,
         4,
         2,
+        0,
         0
       ]
     },
@@ -360,12 +360,12 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         7,
         0,
         0,
         0,
-        16
+        16,
+        0
       ]
     },
     {
@@ -454,14 +454,14 @@
         0,
         0,
         0,
-        0,
         18,
-        2
+        2,
+        0
       ]
     },
     {
       "name": "Handala",
-      "count": 18,
+      "count": 16,
       "victims": [
         {
           "name": "Laura Gilinski",
@@ -533,19 +533,18 @@
       "countries": [
         "IL",
         "N/A",
-        "PS",
         "US"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        2,
         0,
         4,
         2,
         4,
         2,
-        2
+        2,
+        0
       ]
     },
     {
@@ -628,10 +627,10 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        6,
         0,
         1,
         6,
+        0,
         0,
         0,
         0
@@ -715,19 +714,25 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        3,
         4,
         4,
         0,
         2,
+        0,
         0,
         0
       ]
     },
     {
       "name": "Play",
-      "count": 10,
+      "count": 12,
       "victims": [
+        {
+          "name": "Executive Aviation",
+          "date": "2026-03-15 19:42:24.526107",
+          "url": "http://mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd.onion/index.php?page=1/topic.php?id=UbiQY3El2hyhzj",
+          "discovered_date": "2026-03-15T19:42:24.526107"
+        },
         {
           "name": "Circle Floors",
           "date": "2026-03-12 17:37:26.147232",
@@ -739,6 +744,12 @@
           "date": "2026-03-12 17:36:47.408815",
           "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=SzO86TqtNcQJi2",
           "discovered_date": "2026-03-12T17:36:47.408815"
+        },
+        {
+          "name": "Executive Aviation",
+          "date": "2026-03-15T19:42:24+00:00",
+          "url": "https://www.ransomware.live/id/RXhlY3V0aXZlIEF2aWF0aW9uQHBsYXk=",
+          "discovered_date": "2026-03-15T19:42:24+00:00"
         },
         {
           "name": "Circle Floors",
@@ -775,38 +786,27 @@
           "date": "2026-03-09T19:23:19+00:00",
           "url": "https://www.ransomware.live/id/QnlhcmQgRiBCcm9nYW5AcGxheQ==",
           "discovered_date": "2026-03-09T19:23:19+00:00"
-        },
-        {
-          "name": "Facilities USA",
-          "date": "2026-03-09T19:22:41+00:00",
-          "url": "https://www.ransomware.live/id/RmFjaWxpdGllcyBVU0FAcGxheQ==",
-          "discovered_date": "2026-03-09T19:22:41+00:00"
-        },
-        {
-          "name": "Southern Concrete Construction",
-          "date": "2026-03-09T19:22:04+00:00",
-          "url": "https://www.ransomware.live/id/U291dGhlcm4gQ29uY3JldGUgQ29uc3RydWN0aW9uQHBsYXk=",
-          "discovered_date": "2026-03-09T19:22:04+00:00"
         }
       ],
       "industries": [
         "Manufacturing",
-        "Not Found"
+        "Not Found",
+        "Transportation/Logistics"
       ],
       "countries": [
         "AU",
         "N/A",
         "US"
       ],
-      "trend": "stable",
-      "trend_percentage": 0,
+      "trend": "up",
+      "trend_percentage": 15,
       "daily_counts": [
-        6,
         0,
         0,
         4,
         0,
         0,
+        2,
         0
       ]
     },
@@ -868,13 +868,13 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        3,
         0,
         0,
         2,
         0,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -935,12 +935,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        1,
         0,
         4,
         0,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1005,11 +1005,11 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         2,
         3,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -1071,9 +1071,9 @@
         0,
         0,
         0,
-        0,
         4,
         2,
+        0,
         0
       ]
     },
@@ -1124,11 +1124,11 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
         0,
         0,
         4,
+        0,
         0
       ]
     },
@@ -1172,11 +1172,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
         0,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -1225,8 +1225,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0
       ]
     },
@@ -1272,10 +1272,52 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
         2,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Everest",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Evaluate a Norstella company",
+          "date": "2026-03-15 17:38:43.070921",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Evaluate_a_Norstella_company/",
+          "discovered_date": "2026-03-15T17:38:43.070921"
+        },
+        {
+          "name": "Evaluate a Norstella company",
+          "date": "2026-03-15T17:38:43+00:00",
+          "url": "https://www.ransomware.live/id/RXZhbHVhdGUgYSBOb3JzdGVsbGEgY29tcGFueUBldmVyZXN0",
+          "discovered_date": "2026-03-15T17:38:43+00:00"
+        },
+        {
+          "name": "First Priority Group",
+          "date": "2026-03-10T02:48:56+00:00",
+          "url": "https://www.ransomware.live/id/Rmlyc3QgUHJpb3JpdHkgR3JvdXBAZXZlcmVzdA==",
+          "discovered_date": "2026-03-10T02:48:56+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "NO",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -1309,8 +1351,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1342,8 +1384,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1377,8 +1419,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1411,8 +1453,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1447,8 +1489,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1485,8 +1527,8 @@
         0,
         0,
         0,
-        0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1513,9 +1555,9 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         1,
+        0,
         0,
         0,
         0,
@@ -1548,7 +1590,7 @@
       "trend_percentage": -5,
       "daily_counts": [
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1575,8 +1617,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1601,35 +1643,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Everest",
-      "count": 1,
-      "victims": [
-        {
-          "name": "First Priority Group",
-          "date": "2026-03-10T02:48:56+00:00",
-          "url": "https://www.ransomware.live/id/Rmlyc3QgUHJpb3JpdHkgR3JvdXBAZXZlcmVzdA==",
-          "discovered_date": "2026-03-10T02:48:56+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        1,
         0,
         0,
         0,
