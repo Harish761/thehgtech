@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1416",
+      "incident_id": 1416,
+      "title": "Purported Facial Recognition Error Reportedly Led to Arrest and Jailing of Tennessee Woman in North ",
+      "date": "2026-03-16",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1368",
       "incident_id": 1368,
       "title": "Malicious OpenClaw Skills Reportedly Delivered AMOS Stealer and Exfiltrated Credentials via ClawHub",
@@ -954,9 +962,9 @@
     }
   ],
   "stats": {
-    "total": 119,
-    "last7Days": 15,
-    "last30Days": 57
+    "total": 120,
+    "last7Days": 16,
+    "last30Days": 58
   },
-  "lastUpdated": "2026-03-16T14:40:59.387245+05:30"
+  "lastUpdated": "2026-03-16T19:19:36.451802+05:30"
 }
