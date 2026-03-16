@@ -9,6 +9,30 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1417",
+      "incident_id": 1417,
+      "title": "Purported Deepfake of Ashley James Reportedly Used to Promote Weight Loss Pills",
+      "date": "2026-03-16",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1418",
+      "incident_id": 1418,
+      "title": "Meta AI Smart Glasses Reportedly Exposed Intimate User Imagery and Video to Human Reviewers in Kenya",
+      "date": "2026-03-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1419",
+      "incident_id": 1419,
+      "title": "Purported Deepfake Images of Gr\u00e1inne Seoige Reportedly Circulated During Ireland's 2024 General Elec",
+      "date": "2026-03-16",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1368",
       "incident_id": 1368,
       "title": "Malicious OpenClaw Skills Reportedly Delivered AMOS Stealer and Exfiltrated Credentials via ClawHub",
@@ -951,20 +975,12 @@
       "date": "2025-12-21",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1308",
-      "incident_id": 1308,
-      "title": "Springer Nature Book 'Mastering Machine Learning: From Basics to Advanced' Reportedly Published With",
-      "date": "2025-12-16",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 120,
-    "last7Days": 16,
-    "last30Days": 58
+    "total": 122,
+    "last7Days": 19,
+    "last30Days": 61
   },
-  "lastUpdated": "2026-03-16T19:19:36.451802+05:30"
+  "lastUpdated": "2026-03-16T22:46:06.974276+05:30"
 }
