@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-03-17T02:09:44.725464",
+  "last_updated": "2026-03-17T13:14:00.193279",
   "period": "Last 7 days",
   "total_groups": 29,
-  "total_victims": 252,
+  "total_victims": 246,
   "groups": [
     {
       "name": "Qilin",
-      "count": 46,
+      "count": 39,
       "victims": [
         {
           "name": "Von Weise Associates",
@@ -78,15 +78,15 @@
       ],
       "countries": [
         "AR",
-        "AU",
         "BR",
-        "GB",
-        "N/A"
+        "N/A",
+        "SE",
+        "SG"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        13,
+        11,
         6,
         8,
         2,
@@ -279,7 +279,7 @@
     },
     {
       "name": "Nightspire",
-      "count": 21,
+      "count": 22,
       "victims": [
         {
           "name": "S*m**y* **ru**l* ***s**t**g **gi****r*",
@@ -330,16 +330,16 @@
           "discovered_date": "2026-03-12T01:25:20.745979"
         },
         {
-          "name": "CFTC Metallurgie",
-          "date": "2026-03-14T12:59:20+00:00",
-          "url": "https://www.ransomware.live/id/Q0ZUQyBNZXRhbGx1cmdpZUBuaWdodHNwaXJl",
-          "discovered_date": "2026-03-14T12:59:20+00:00"
+          "name": "G* *r**n*e",
+          "date": "2026-03-17T01:46:42+00:00",
+          "url": "https://www.ransomware.live/id/RyogKnIqKm4qZUBuaWdodHNwaXJl",
+          "discovered_date": "2026-03-17T01:46:42+00:00"
         },
         {
-          "name": "S** *A* ***E* **T*L",
-          "date": "2026-03-13T22:15:03+00:00",
-          "url": "https://www.ransomware.live/id/UyoqICpBKiAqKipFKiAqKlQqTEBuaWdodHNwaXJl",
-          "discovered_date": "2026-03-13T22:15:03+00:00"
+          "name": "S*m**y* **ru**l* ***s**t**g **gi****r*",
+          "date": "2026-03-17T01:46:39+00:00",
+          "url": "https://www.ransomware.live/id/UyptKip5KiAqKnJ1KipsKiAqKipzKip0KipnICoqZ2kqKioqcipAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-03-17T01:46:39+00:00"
         }
       ],
       "industries": [
@@ -364,7 +364,96 @@
         2,
         0,
         0,
-        2
+        4
+      ]
+    },
+    {
+      "name": "Handala",
+      "count": 20,
+      "victims": [
+        {
+          "name": "Who is VahidOnline?",
+          "date": "2026-03-17 11:11:49.608961",
+          "url": "https://handala-hack.to/who-is-vahidonline/",
+          "discovered_date": "2026-03-17T11:11:49.608961"
+        },
+        {
+          "name": "Mossad’s Secret Treasury Exposed: 50,000 Confidential Emails Leaked",
+          "date": "2026-03-17 08:37:51.392316",
+          "url": "https://handala-hack.to/mossads-secret-treasury-exposed-50000-confidential-emails-leaked/",
+          "discovered_date": "2026-03-17T08:37:51.392316"
+        },
+        {
+          "name": "Shock for Israeli Intelligence: 100,000 Classified Emails of Mossad’s Ex-Deputy Director S...",
+          "date": "2026-03-16 10:05:00.528732",
+          "url": "https://handala-hack.to/shock-for-israeli-intelligence-100000-classified-emails-of-mossads-ex-deputy-director-sima-shine-leaked/",
+          "discovered_date": "2026-03-16T10:05:00.528732"
+        },
+        {
+          "name": "Stryker Hit by Unprecedented 12-Petabyte Data Wipe",
+          "date": "2026-03-16 10:05:37.917566",
+          "url": "https://handala-hack.to/stryker-hit-by-unprecedented-12-petabyte-data-wipe/",
+          "discovered_date": "2026-03-16T10:05:37.917566"
+        },
+        {
+          "name": "Laura Gilinski",
+          "date": "2026-03-15 12:31:33.920342",
+          "url": "https://handala-hack.to/laura-gilinski-hacked/",
+          "discovered_date": "2026-03-15T12:31:33.920342"
+        },
+        {
+          "name": "No Place to Hide: Senior Navy Officers’ Identities Now Public",
+          "date": "2026-03-14 11:07:36.817395",
+          "url": "https://handala-hack.to/no-place-to-hide-senior-navy-officers-identities-now-public/",
+          "discovered_date": "2026-03-14T11:07:36.817395"
+        },
+        {
+          "name": "Tamir Hayman",
+          "date": "2026-03-13 18:40:23.642862",
+          "url": "https://handala-hack.to/tamir-hayman-hacked/",
+          "discovered_date": "2026-03-13T18:40:23.642862"
+        },
+        {
+          "name": "Hebrew University of Jerusalem",
+          "date": "2026-03-13 12:39:22.021960",
+          "url": "https://handala-hack.to/hebrew-university-of-jerusalem-hacked/",
+          "discovered_date": "2026-03-13T12:39:22.021960"
+        },
+        {
+          "name": "Raz Zimmt (head of the Iran Desk at Israeli security institutes)",
+          "date": "2026-03-12 11:30:56.009188",
+          "url": "https://handala-hack.to/raz-zimmt-hacked-head-of-the-iran-desk-at-israeli-security-institutes/",
+          "discovered_date": "2026-03-12T11:30:56.009188"
+        },
+        {
+          "name": "Who is VahidOnline?",
+          "date": "2026-03-17T11:11:49+00:00",
+          "url": "https://www.ransomware.live/id/V2hvIGlzIFZhaGlkT25saW5lP0BoYW5kYWxh",
+          "discovered_date": "2026-03-17T11:11:49+00:00"
+        }
+      ],
+      "industries": [
+        "Education",
+        "Not Found",
+        "Public Sector",
+        "Technology"
+      ],
+      "countries": [
+        "IL",
+        "IR",
+        "N/A",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        4,
+        4
       ]
     },
     {
@@ -549,96 +638,8 @@
       ]
     },
     {
-      "name": "Handala",
-      "count": 16,
-      "victims": [
-        {
-          "name": "Shock for Israeli Intelligence: 100,000 Classified Emails of Mossad’s Ex-Deputy Director S...",
-          "date": "2026-03-16 10:05:00.528732",
-          "url": "https://handala-hack.to/shock-for-israeli-intelligence-100000-classified-emails-of-mossads-ex-deputy-director-sima-shine-leaked/",
-          "discovered_date": "2026-03-16T10:05:00.528732"
-        },
-        {
-          "name": "Stryker Hit by Unprecedented 12-Petabyte Data Wipe",
-          "date": "2026-03-16 10:05:37.917566",
-          "url": "https://handala-hack.to/stryker-hit-by-unprecedented-12-petabyte-data-wipe/",
-          "discovered_date": "2026-03-16T10:05:37.917566"
-        },
-        {
-          "name": "Laura Gilinski",
-          "date": "2026-03-15 12:31:33.920342",
-          "url": "https://handala-hack.to/laura-gilinski-hacked/",
-          "discovered_date": "2026-03-15T12:31:33.920342"
-        },
-        {
-          "name": "No Place to Hide: Senior Navy Officers’ Identities Now Public",
-          "date": "2026-03-14 11:07:36.817395",
-          "url": "https://handala-hack.to/no-place-to-hide-senior-navy-officers-identities-now-public/",
-          "discovered_date": "2026-03-14T11:07:36.817395"
-        },
-        {
-          "name": "Tamir Hayman",
-          "date": "2026-03-13 18:40:23.642862",
-          "url": "https://handala-hack.to/tamir-hayman-hacked/",
-          "discovered_date": "2026-03-13T18:40:23.642862"
-        },
-        {
-          "name": "Hebrew University of Jerusalem",
-          "date": "2026-03-13 12:39:22.021960",
-          "url": "https://handala-hack.to/hebrew-university-of-jerusalem-hacked/",
-          "discovered_date": "2026-03-13T12:39:22.021960"
-        },
-        {
-          "name": "Raz Zimmt (head of the Iran Desk at Israeli security institutes)",
-          "date": "2026-03-12 11:30:56.009188",
-          "url": "https://handala-hack.to/raz-zimmt-hacked-head-of-the-iran-desk-at-israeli-security-institutes/",
-          "discovered_date": "2026-03-12T11:30:56.009188"
-        },
-        {
-          "name": "Stryker Hit by Unprecedented 12-Petabyte Data Wipe",
-          "date": "2026-03-16T10:05:37+00:00",
-          "url": "https://www.ransomware.live/id/U3RyeWtlciBIaXQgYnkgVW5wcmVjZWRlbnRlZCAxMi1QZXRhYnl0ZSBEYXRhIFdpcGVAaGFuZGFsYQ==",
-          "discovered_date": "2026-03-16T10:05:37+00:00"
-        },
-        {
-          "name": "Shock for Israeli Intelligence: 100,000 Classified Emails of Mossad’s Ex-Deputy Director S...",
-          "date": "2026-03-16T10:05:00+00:00",
-          "url": "https://www.ransomware.live/id/U2hvY2sgZm9yIElzcmFlbGkgSW50ZWxsaWdlbmNlOiAxMDAsMDAwIENsYXNzaWZpZWQgRW1haWxzIG9mIE1vc3NhZOKAmXMgRXgtRGVwdXR5IERpcmVjdG9yIFMuLi5AaGFuZGFsYQ==",
-          "discovered_date": "2026-03-16T10:05:00+00:00"
-        },
-        {
-          "name": "Laura Gilinski",
-          "date": "2026-03-15T12:31:33+00:00",
-          "url": "https://www.ransomware.live/id/TGF1cmEgR2lsaW5za2lAaGFuZGFsYQ==",
-          "discovered_date": "2026-03-15T12:31:33+00:00"
-        }
-      ],
-      "industries": [
-        "Education",
-        "Not Found",
-        "Public Sector",
-        "Technology"
-      ],
-      "countries": [
-        "IL",
-        "N/A",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        2,
-        2,
-        4,
-        2,
-        2,
-        4,
-        0
-      ]
-    },
-    {
       "name": "Incransom",
-      "count": 11,
+      "count": 9,
       "victims": [
         {
           "name": "frazercenter.org",
@@ -693,12 +694,6 @@
           "date": "2026-03-10T16:00:38+00:00",
           "url": "https://www.ransomware.live/id/Y3NpLXJpLmNvbUBpbmNyYW5zb20=",
           "discovered_date": "2026-03-10T16:00:38+00:00"
-        },
-        {
-          "name": "LHT Holdings Limited",
-          "date": "2026-03-10T12:34:06+00:00",
-          "url": "https://www.ransomware.live/id/TEhUIEhvbGRpbmdzIExpbWl0ZWRAaW5jcmFuc29t",
-          "discovered_date": "2026-03-10T12:34:06+00:00"
         }
       ],
       "industries": [
@@ -707,12 +702,10 @@
         "Technology"
       ],
       "countries": [
-        "SG",
-        "TR",
         "US"
       ],
-      "trend": "up",
-      "trend_percentage": 15,
+      "trend": "stable",
+      "trend_percentage": 0,
       "daily_counts": [
         2,
         0,
@@ -1064,55 +1057,6 @@
       ]
     },
     {
-      "name": "Anubis",
-      "count": 4,
-      "victims": [
-        {
-          "name": "KLA Laboratories",
-          "date": "2026-03-13 18:32:20.322474",
-          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/iHo8aqQo3qJEwm+Xyc5sWCEH6yqbS31b9EgHtqwgNwxHDqxSqXjN3sNNh5Ynib4ag6uTxZzfVmmO6BliL7buzRMVU1xd3JK",
-          "discovered_date": "2026-03-13T18:32:20.322474"
-        },
-        {
-          "name": "KLA Laboratories",
-          "date": "2026-03-13T18:32:20+00:00",
-          "url": "https://www.ransomware.live/id/S0xBIExhYm9yYXRvcmllc0BhbnViaXM=",
-          "discovered_date": "2026-03-13T18:32:20+00:00"
-        },
-        {
-          "name": "L. S. King and Associates",
-          "date": "2026-03-10T23:24:39+00:00",
-          "url": "https://www.ransomware.live/id/TC4gUy4gS2luZyBhbmQgQXNzb2NpYXRlc0BhbnViaXM=",
-          "discovered_date": "2026-03-10T23:24:39+00:00"
-        },
-        {
-          "name": "A J Taylor Electrical",
-          "date": "2026-03-10T08:29:12+00:00",
-          "url": "https://www.ransomware.live/id/QSBKIFRheWxvciBFbGVjdHJpY2FsQGFudWJpcw==",
-          "discovered_date": "2026-03-10T08:29:12+00:00"
-        }
-      ],
-      "industries": [
-        "Technology"
-      ],
-      "countries": [
-        "GB",
-        "N/A",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Beast",
       "count": 4,
       "victims": [
@@ -1253,33 +1197,33 @@
       ]
     },
     {
-      "name": "Everest",
+      "name": "Anubis",
       "count": 3,
       "victims": [
         {
-          "name": "Evaluate a Norstella company",
-          "date": "2026-03-15 17:38:43.070921",
-          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Evaluate_a_Norstella_company/",
-          "discovered_date": "2026-03-15T17:38:43.070921"
+          "name": "KLA Laboratories",
+          "date": "2026-03-13 18:32:20.322474",
+          "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/iHo8aqQo3qJEwm+Xyc5sWCEH6yqbS31b9EgHtqwgNwxHDqxSqXjN3sNNh5Ynib4ag6uTxZzfVmmO6BliL7buzRMVU1xd3JK",
+          "discovered_date": "2026-03-13T18:32:20.322474"
         },
         {
-          "name": "Evaluate a Norstella company",
-          "date": "2026-03-15T17:38:43+00:00",
-          "url": "https://www.ransomware.live/id/RXZhbHVhdGUgYSBOb3JzdGVsbGEgY29tcGFueUBldmVyZXN0",
-          "discovered_date": "2026-03-15T17:38:43+00:00"
+          "name": "KLA Laboratories",
+          "date": "2026-03-13T18:32:20+00:00",
+          "url": "https://www.ransomware.live/id/S0xBIExhYm9yYXRvcmllc0BhbnViaXM=",
+          "discovered_date": "2026-03-13T18:32:20+00:00"
         },
         {
-          "name": "First Priority Group",
-          "date": "2026-03-10T02:48:56+00:00",
-          "url": "https://www.ransomware.live/id/Rmlyc3QgUHJpb3JpdHkgR3JvdXBAZXZlcmVzdA==",
-          "discovered_date": "2026-03-10T02:48:56+00:00"
+          "name": "L. S. King and Associates",
+          "date": "2026-03-10T23:24:39+00:00",
+          "url": "https://www.ransomware.live/id/TC4gUy4gS2luZyBhbmQgQXNzb2NpYXRlc0BhbnViaXM=",
+          "discovered_date": "2026-03-10T23:24:39+00:00"
         }
       ],
       "industries": [
-        "Not Found"
+        "Technology"
       ],
       "countries": [
-        "NO",
+        "N/A",
         "US"
       ],
       "trend": "down",
@@ -1287,9 +1231,9 @@
       "daily_counts": [
         0,
         0,
-        0,
-        0,
         2,
+        0,
+        0,
         0,
         0
       ]
@@ -1361,6 +1305,41 @@
         0,
         0,
         2,
+        0
+      ]
+    },
+    {
+      "name": "Everest",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Evaluate a Norstella company",
+          "date": "2026-03-15 17:38:43.070921",
+          "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Evaluate_a_Norstella_company/",
+          "discovered_date": "2026-03-15T17:38:43.070921"
+        },
+        {
+          "name": "Evaluate a Norstella company",
+          "date": "2026-03-15T17:38:43+00:00",
+          "url": "https://www.ransomware.live/id/RXZhbHVhdGUgYSBOb3JzdGVsbGEgY29tcGFueUBldmVyZXN0",
+          "discovered_date": "2026-03-15T17:38:43+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "NO"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
         0
       ]
     },
