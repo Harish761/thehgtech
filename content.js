@@ -5,6 +5,69 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 17 2026",
+            "headline": "Microsoft Halts Auto-Install of 365 Copilot Outside EEA",
+            "title": "Microsoft Ceases Automatic Installation of 365 Copilot Outside EEA",
+            "content": "Microsoft has announced it will stop automatically installing the Microsoft 365 Copilot app on Windows devices outside the European Economic Area (EEA) that have Microsoft 365 desktop client apps. This decision comes amid growing concerns over privacy and the need for user control over software installations. The move affects users globally, excluding the EEA, where different regulatory requirements apply. Microsoft 365 Copilot, an AI-powered tool designed to enhance productivity, will now require manual installation by users outside the EEA. This change reflects Microsoft&#x27;s ongoing efforts to align with regional data protection standards and user preferences. Users are encouraged to manually install the app if they wish to utilize its capabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-stops-force-installing-the-microsoft-365-copilot-app/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Phishing Breach Hits Robotic Surgery Leader Intuitive",
+            "title": "Intuitive Surgical Discloses Cyberattack via Phishing Incident",
+            "content": "Intuitive, a leading company in robotic-assisted surgery, has disclosed a cyberattack that compromised some of its internal business applications. The breach occurred after an employee fell victim to a phishing attack, highlighting the ongoing threat of social engineering tactics. The company, known for its da Vinci surgical systems, has not reported any impact on its medical device operations or patient data. However, the incident underscores the vulnerability of even highly secure sectors to phishing schemes. Intuitive is working with cybersecurity experts to enhance its defenses and prevent future incidents. Organizations are advised to reinforce employee training on identifying phishing attempts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/robotic-surgery-giant-intuitive-discloses-cyberattack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Cyberattacks Surge Tenfold on Eon&#x27;s Energy Network",
+            "title": "Eon Faces Escalating Cyberattacks on German Energy Infrastructure",
+            "content": "Eon, a major energy provider in Germany, reports a significant increase in cyberattacks on its energy networks, with incidents multiplying tenfold to several hundred daily. This surge in attacks highlights the growing threat to critical infrastructure and the potential for disruptions in energy supply. Eon&#x27;s networks play a crucial role in Germany&#x27;s energy distribution, making them a prime target for cybercriminals. The company is implementing enhanced security measures to safeguard its infrastructure and maintain stability in energy provision. This trend reflects a broader increase in cyber threats targeting essential services worldwide. Energy providers are urged to bolster their cybersecurity protocols.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4146299/cyber-attacken-fluten-eon-netz-angriffe-verzehnfacht-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "RondoDox Botnet Targets 174 Vulnerabilities in Daily Surge",
+            "title": "RondoDox Botnet Intensifies Attacks, Exploiting 174 Vulnerabilities",
+            "content": "The RondoDox botnet has ramped up its activity, targeting 174 vulnerabilities with a peak of 15,000 exploitation attempts per day. This botnet is adopting a more targeted approach, focusing on specific weaknesses in systems to maximize impact. The vulnerabilities span a range of software and systems, increasing the risk for organizations with outdated or unpatched technology. The surge in activity underscores the importance of timely updates and patch management to mitigate potential breaches. Security professionals are advised to review their systems for exposure to these vulnerabilities and prioritize patching efforts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rondodox-botnet-targeted-174-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "90% Distrust AI with Personal Data, Survey Reveals",
+            "title": "Survey Shows 90% Lack Trust in AI for Data Privacy",
+            "content": "A recent privacy survey by Malwarebytes reveals that 90% of respondents do not trust artificial intelligence with their personal data. This widespread skepticism is causing many individuals to reconsider their engagement with AI-driven services. Despite AI&#x27;s growing presence in various sectors, concerns over data misuse and privacy breaches remain prevalent. The findings highlight a significant barrier for companies looking to integrate AI technologies into consumer-facing applications. Organizations are encouraged to prioritize transparency and robust data protection measures to build consumer trust in AI solutions.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/03/90-of-people-dont-trust-ai-with-their-data",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Tech Giants Sign Pact to Combat Online Scams",
+            "title": "Google, Meta, Microsoft Join Accord Against Online Scams",
+            "content": "Major technology and retail companies, including Google, Meta, and Microsoft, have signed an industry pact aimed at combating online scams and fraud. This collective effort seeks to address the rising tide of digital deception affecting consumers and businesses alike. The agreement outlines commitments to enhance security measures, share threat intelligence, and develop tools to protect users from fraudulent activities. This initiative marks a significant step in unifying industry leaders against a common threat. Organizations are encouraged to participate in collaborative efforts to strengthen defenses against online scams.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/google-meta-microsoft-among-signatories-of-pact-to-combat-scams/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "LeakNet Ransomware Uses Deno for Stealthy Infiltration",
+            "title": "LeakNet Ransomware Employs ClickFix, Deno in Sophisticated Attacks",
+            "content": "The LeakNet ransomware group has adopted new tactics, utilizing the ClickFix technique for initial access and deploying a malware loader based on the open-source Deno runtime for JavaScript and TypeScript. This strategic shift enhances the group&#x27;s ability to conduct stealthy attacks on corporate environments. By leveraging Deno, LeakNet can bypass traditional security measures, complicating detection and response efforts. The use of ClickFix further exemplifies the evolving nature of ransomware tactics. Security teams should update their threat models and implement advanced detection techniques to counter these sophisticated methods.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/leaknet-ransomware-uses-clickfix-and-deno-runtime-for-stealthy-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
             "headline": "ISC Stormcast Highlights Latest Cyber Threats—InfoCON Remains Green",
             "title": "ISC Stormcast for March 17, 2026: Cyber Threat Landscape Update",
             "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing an overview of current cybersecurity threats while maintaining an InfoCON level of green, indicating a stable threat environment. The podcast discusses recent vulnerabilities and attack vectors, emphasizing the importance of patch management and proactive defense strategies. Security professionals are advised to stay informed about emerging threats and apply security patches promptly to mitigate risks. The InfoCON green status suggests no immediate widespread threats, but vigilance is advised to prevent potential exploitation. Regular updates and threat intelligence are crucial for maintaining a secure network posture.",
@@ -19,51 +82,6 @@ const websiteContent = {
             "content": "A sophisticated cyberespionage campaign linked to China has been uncovered, targeting military organizations in Southeast Asia for several years. Researchers identified the use of novel backdoors and advanced evasion techniques to maintain persistent access to sensitive networks. This campaign highlights the ongoing threat posed by state-sponsored actors in the region, potentially compromising national security. Affected organizations are urged to review their security postures and implement robust monitoring and incident response strategies. The discovery underscores the importance of international cooperation in combating cyber threats from nation-state actors.",
             "source": "darkreading",
             "sourceUrl": "https://www.darkreading.com/threat-intelligence/china-nexus-hackers-southeast-asian-military-orgs",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "Convicted Scammer Runs Phishing Scam from Prison—Targets Athletes",
-            "title": "Inmate Allegedly Conducts Athlete-Focused Phishing Scam from Federal Prison",
-            "content": "Kwamaine Jerell Ford, a convicted scammer, allegedly orchestrated a phishing scam targeting athletes while incarcerated in a federal prison. Posing as an adult film star, Ford tricked victims into providing their iCloud credentials and multi-factor authentication (MFA) codes. This incident highlights the persistent threat of social engineering attacks, even from behind bars. High-profile individuals, especially those in the sports industry, are advised to exercise caution and verify communications before sharing sensitive information. The case underscores the need for continuous education on phishing tactics and robust authentication measures.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/nba-nfl-athletes-social-engineering-scheme-apple-icloud-mfa/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "GlassWorm Malware Evolves—Hides in Software Dependencies",
-            "title": "GlassWorm Malware Adopts New Evasion Techniques in Dependencies",
-            "content": "Researchers have identified an evolution in the GlassWorm malware, which now conceals itself within software dependencies. This tactic allows the malware to evade detection by traditional security measures, posing a significant threat to software supply chains. The discovery of dozens of malicious GlassWorm extensions highlights the importance of scrutinizing third-party dependencies in software development. Organizations are encouraged to implement comprehensive security reviews and dependency management practices to prevent malware infiltration. This development emphasizes the growing sophistication of malware authors in exploiting software ecosystems.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/glassworm-malware-evolves-hide-dependencies",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "Olympic Cybersecurity—Lessons from Paris 2024 to Milan 2026",
-            "title": "Cybersecurity Insights from Paris 2024 Olympics to Milan Cortina 2026",
-            "content": "Franz Regul, former Chief Information Security Officer (CISO) for the Paris 2024 Olympics, shares insights into the unique cybersecurity challenges faced during the event. The Olympics presented a complex security landscape, requiring innovative solutions to protect against evolving threats. Regul&#x27;s experience underscores the importance of comprehensive risk assessments, incident response planning, and collaboration with international partners. As preparations for the Milan Cortina 2026 Winter Olympics commence, lessons learned from Paris will be instrumental in safeguarding the upcoming games. This case study serves as a valuable resource for organizations handling large-scale events.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/olympic-cybersecurity-paris-2024-milan-2026",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "GlassWorm Attack Exploits GitHub Tokens—Python Repos Compromised",
-            "title": "GlassWorm Malware Uses Stolen GitHub Tokens to Infect Python Repositories",
-            "content": "The ongoing GlassWorm malware campaign has escalated with the use of stolen GitHub tokens to inject malicious code into Python repositories. This attack targets a wide range of Python projects, including Django applications, machine learning research, Streamlit dashboards, and PyPI packages. By leveraging compromised tokens, attackers can force-push malware into legitimate projects, posing a significant threat to developers and end-users. Organizations are urged to review their GitHub security settings, revoke compromised tokens, and implement strict access controls. The incident highlights the critical need for secure token management and vigilant monitoring of code repositories.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/glassworm-attack-uses-stolen-github.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "Stryker Attack Wipes Devices—No Malware Involved",
-            "title": "Cyberattack on Stryker Remotely Wipes Tens of Thousands of Devices",
-            "content": "A recent cyberattack on medical technology giant Stryker resulted in the remote wiping of tens of thousands of employee devices within its internal Microsoft environment. Interestingly, the attack did not involve traditional malware, raising concerns about the methods used to compromise the infrastructure. The incident underscores the vulnerabilities in cloud-based environments and the potential impact of unauthorized access. Affected organizations should review their security configurations and enhance their incident response capabilities to prevent similar occurrences. This event highlights the critical importance of securing cloud services and maintaining rigorous access controls.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/stryker-attack-wiped-tens-of-thousands-of-devices-no-malware-needed/",
             "relatedResources": []
         },
         {
@@ -93,66 +111,66 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 16 2026",
-            "headline": "Nvidia’s NemoClaw Aims to Secure Enterprise AI",
-            "title": "Nvidia Launches NemoClaw to Address AI Security Challenges",
-            "content": "Nvidia has unveiled NemoClaw, an open enterprise AI agent platform designed to enhance security, leveraging the viral OpenClaw framework. This move addresses one of the company&#x27;s most pressing challenges: ensuring robust security measures for its AI offerings. NemoClaw aims to provide enterprises with a secure foundation for deploying AI solutions, mitigating risks associated with data breaches and unauthorized access. As AI systems become increasingly integral to business operations, the demand for secure platforms continues to rise. Nvidia&#x27;s initiative reflects a growing trend in the industry to prioritize security in AI development. Enterprises are encouraged to explore NemoClaw for secure AI deployments.",
+            "date": "Mar 17 2026",
+            "headline": "Gamma Launches AI Tool to Rival Canva, Adobe",
+            "title": "Gamma Imagine Introduces AI-Driven Image Generation for Creative Assets",
+            "content": "Gamma has unveiled Gamma Imagine, a new AI-powered tool designed to compete with industry giants Canva and Adobe by allowing users to generate images using text prompts. This tool is tailored for creating brand-specific assets such as interactive charts, visualizations, marketing materials, social graphics, and infographics. By leveraging AI, Gamma aims to streamline the creative process for businesses looking to maintain brand consistency while enhancing efficiency. The introduction of Gamma Imagine signifies a growing trend of integrating AI into creative tools, offering users more dynamic and customizable content creation options. Professionals in marketing and design should explore Gamma Imagine as a potential addition to their toolkit.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/",
+            "sourceUrl": "https://techcrunch.com/2026/03/17/gamma-adds-ai-image-generation-tools-in-bid-to-take-on-canva-and-adobe/",
             "relatedResources": []
         },
         {
-            "date": "Mar 16 2026",
-            "headline": "First Healthcare Robotics Dataset Boosts AI Development",
-            "title": "New Dataset and AI Models Propel Healthcare Robotics Forward",
-            "content": "In a groundbreaking development, researchers have introduced the first comprehensive dataset for healthcare robotics, along with foundational physical AI models. This dataset is expected to significantly advance the capabilities of AI in medical robotics, enabling more precise and effective patient care. By providing a robust foundation for training AI models, this initiative aims to enhance robotic assistance in surgeries and patient management. As the healthcare sector increasingly adopts AI-driven solutions, this dataset represents a crucial step towards more intelligent and autonomous healthcare systems. Developers and healthcare professionals are encouraged to leverage this dataset to innovate and improve patient outcomes.",
+            "date": "Mar 17 2026",
+            "headline": "Niv-AI Secures $12M to Optimize GPU Power Use",
+            "title": "Niv-AI Exits Stealth with $12M Funding to Enhance GPU Power Efficiency",
+            "content": "Niv-AI has emerged from stealth mode with a successful $12 million seed funding round aimed at optimizing GPU power performance. The company focuses on measuring and managing GPU power surges, addressing a critical need in high-performance computing environments where energy efficiency is paramount. With GPUs being integral to AI and machine learning workloads, Niv-AI&#x27;s technology promises to reduce energy consumption and operational costs for data centers and enterprises. The funding signals investor confidence in Niv-AI&#x27;s potential to revolutionize GPU power management, a key concern for tech companies seeking sustainable computing solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/17/niv-ai-exits-stealth-to-wring-more-power-performance-out-of-gpus/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Holotron-12B: New Agent Boosts High-Throughput Computing",
+            "title": "Holotron-12B Agent Enhances High-Throughput Computing Capabilities",
+            "content": "Hugging Face has introduced Holotron-12B, a high-throughput computing use agent designed to optimize computational efficiency. This new agent aims to enhance the performance of complex computing tasks, making it particularly beneficial for data-intensive applications. Holotron-12B&#x27;s capabilities include improved task scheduling and resource allocation, which are crucial for maximizing throughput in high-demand environments. As AI models become increasingly complex, tools like Holotron-12B are essential for maintaining performance standards and operational efficiency. Organizations relying on high-throughput computing should consider integrating Holotron-12B to improve their processing capabilities.",
             "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/physical-ai-for-healthcare-robotics",
+            "sourceUrl": "https://huggingface.co/blog/Hcompany/holotron-12b",
             "relatedResources": []
         },
         {
-            "date": "Mar 16 2026",
-            "headline": "DLSS 5 Sparks Debate—Nvidia’s Generative AI for Games",
-            "title": "Nvidia’s DLSS 5 Introduces Controversial AI Graphics Enhancements",
-            "content": "Nvidia&#x27;s latest release, DLSS 5, unveiled at the GTC conference, has sparked debate among gamers and developers. Described by some as a &quot;GPT moment for graphics,&quot; this update uses generative AI to enhance real-time video game visuals, significantly altering artistic elements. While Nvidia CEO Jensen Huang champions the technology as transformative, critics argue it compromises original artistic intent. DLSS 5&#x27;s impact on gaming graphics could redefine visual standards, but it also raises questions about creative authenticity. Game developers should assess the implications of integrating DLSS 5 into their projects, considering both its potential and its controversies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/895472/nvidia-dlss5-generative-ai-pc-graphics",
+            "date": "Mar 17 2026",
+            "headline": "Trustpilot Joins AI Firms Amid Decline of Traditional Search",
+            "title": "Trustpilot Collaborates with AI Firms as eCommerce Search Evolves",
+            "content": "Trustpilot is actively pursuing partnerships with AI companies to adapt to the shifting landscape of eCommerce search. As AI-driven shopping experiences gain popularity, traditional search methods are being overshadowed by AI agents that require comprehensive business data to operate effectively. Trustpilot&#x27;s CEO, Adrian Blair, highlighted the importance of these collaborations in a recent Bloomberg interview, emphasizing the need for detailed information to support AI consumer agents. This strategic move positions Trustpilot to remain relevant as the eCommerce sector increasingly relies on AI technologies to enhance consumer interactions.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-in-ecommerce-trustpilot-partnerships-integration-news-trad-search-declines/",
             "relatedResources": []
         },
         {
-            "date": "Mar 16 2026",
-            "headline": "Teens Sue xAI Over AI-Generated CSAM Allegations",
-            "title": "xAI Faces Lawsuit for Allegedly Generating CSAM with Grok AI",
-            "content": "Three Tennessee teenagers have filed a lawsuit against Elon Musk&#x27;s xAI, alleging that its Grok AI chatbot generated sexualized content of them as minors. The class action suit claims the AI&#x27;s outputs included inappropriate images and videos, raising serious ethical and legal concerns. This case highlights the potential risks of AI systems producing harmful or illegal content, emphasizing the need for stringent content moderation and ethical guidelines. The lawsuit could set a precedent for future legal actions involving AI-generated content. Companies using AI for content generation must prioritize robust safeguards to prevent similar incidents.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/895639/xai-grok-teens-lawsuit-grok-ai-elon-musk",
+            "date": "Mar 17 2026",
+            "headline": "Invisalign Dominates 3D Printing with Align Technology",
+            "title": "Invisalign Emerges as Leading User of 3D Printing Technology",
+            "content": "Align Technology, the company behind Invisalign, has become the world&#x27;s largest user of 3D printing technology, according to CEO Joe Hogan. This achievement underscores the company&#x27;s innovative approach to orthodontics, leveraging advanced 3D printing techniques to produce custom dental aligners. Hogan advises users on proper aligner care, emphasizing that they should not eat with them and that nightly retainer wear is not always necessary. Align Technology&#x27;s extensive use of 3D printing reflects a broader trend of adopting advanced manufacturing technologies to enhance product customization and efficiency in the healthcare sector.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/how-invisalign-became-the-worlds-biggest-3d-printing-company/",
             "relatedResources": []
         },
         {
-            "date": "Mar 16 2026",
-            "headline": "Nvidia Expects $1 Trillion in Chip Orders",
-            "title": "Nvidia Projects $1 Trillion Sales for Blackwell and Vera Rubin Chips",
-            "content": "Nvidia CEO Jensen Huang has announced expectations for $1 trillion in sales for the company&#x27;s Blackwell and Vera Rubin chips. This ambitious projection underscores the growing demand for advanced AI and data processing hardware. As industries increasingly rely on AI-driven technologies, the need for powerful chips to support these systems is surging. Nvidia&#x27;s optimistic forecast reflects its strategic position in the market and the anticipated widespread adoption of its cutting-edge chip technology. Industry leaders and tech investors should monitor Nvidia&#x27;s developments closely as these projections could influence market dynamics and investment strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/16/jensen-just-put-nvidias-blackwell-and-vera-rubin-sales-projections-into-the-1-trillion-stratosphere/",
+            "date": "Mar 17 2026",
+            "headline": "Sears AI Chatbot Data Leak Exposes Customer Information",
+            "title": "Sears AI Chatbot Vulnerability Exposes Sensitive Customer Conversations",
+            "content": "A security flaw in Sears&#x27; AI chatbot system has exposed customer conversations, including personal details and contact information, to potential scammers. This vulnerability increases the risk of phishing attacks and fraud, as sensitive data could be exploited by malicious actors. The exposure highlights the critical importance of securing AI-driven customer service platforms, especially as they handle increasing volumes of personal information. Organizations using AI chatbots should conduct thorough security audits and implement robust data protection measures to prevent similar incidents. Sears is advised to address this vulnerability immediately to safeguard customer data.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/sears-exposed-ai-chatbot-phone-calls-and-text-chats-to-anyone-on-the-web/",
             "relatedResources": []
         },
         {
-            "date": "Mar 16 2026",
-            "headline": "Warren Questions Pentagon’s xAI Network Access Decision",
-            "title": "Senator Warren Criticizes xAI’s Access to Classified Networks",
-            "content": "Senator Elizabeth Warren has raised concerns over the Pentagon&#x27;s decision to grant xAI&#x27;s Grok chatbot access to classified networks. Highlighting Grok&#x27;s history of generating harmful outputs, Warren warns of potential national security risks. The controversy centers on the balance between leveraging AI technology for defense purposes and ensuring the security of sensitive information. This issue underscores the broader debate about AI&#x27;s role in national security and the measures needed to safeguard against its misuse. Defense agencies and policymakers must carefully evaluate AI partnerships, prioritizing security and ethical standards.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/16/warren-presses-pentagon-over-decision-to-grant-xai-access-to-classified-networks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "Netanyahu Battles AI Clone Conspiracy Theories",
-            "title": "Israeli PM Netanyahu Faces Deepfake Claims Amidst Online Speculation",
-            "content": "Israeli Prime Minister Benjamin Netanyahu is at the center of a social media storm, with conspiracy theories alleging he has been replaced by AI-generated deepfakes. Videos circulating online purportedly show anomalies, such as extra fingers and unusual drinking behaviors, fueling speculation. This situation highlights the growing challenge of distinguishing reality from AI-generated content in the digital age. The rise of deepfake technology poses significant risks to public figures and the dissemination of misinformation. Governments and tech companies must collaborate to develop tools and policies to detect and counteract deepfakes, safeguarding public trust and information integrity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/895453/ai-deepfake-netanyahu-claims-conspiracy",
+            "date": "Mar 17 2026",
+            "headline": "Goldman Sachs: AI Investment Shifts to Data Centers",
+            "title": "AI Investment Trends Shift Towards Data Center Infrastructure",
+            "content": "Goldman Sachs reports a shift in AI investment focus towards data center infrastructure, as the initial excitement around AI applications gives way to a more selective approach. Companies and investors are now concentrating on the robust data center capabilities required to support advanced AI systems. This trend reflects the growing recognition of infrastructure as a critical component in the AI ecosystem, necessary for handling the computational demands of AI workloads. Businesses involved in AI development should consider enhancing their data center investments to stay competitive in this evolving landscape.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/goldman-sachs-sees-ai-investment-shift-to-data-centres/",
             "relatedResources": []
         }
     ],
