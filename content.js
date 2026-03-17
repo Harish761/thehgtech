@@ -4,84 +4,66 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 16 2026",
-            "headline": "Proxy Scans Surge—Honeypots Detect Increased Activity",
-            "title": "Rise in Proxy Server Scans Detected by Honeypots",
-            "content": "Recent data from SANS Internet Storm Center honeypots reveals a surge in attempts to locate proxy servers, with attackers frequently using &quot;/proxy/&quot; URL prefixes and host headers to trigger proxy server forwarding. These scans are among the most common types detected, highlighting an ongoing trend in cybercriminals seeking to exploit proxy configurations to mask their activities. Organizations with exposed proxy servers are at risk of unauthorized access and data breaches. Security professionals should review proxy configurations and monitor for unusual access patterns to mitigate potential threats. This activity underscores the importance of maintaining vigilant network defenses against evolving attack vectors.",
+            "date": "Mar 17 2026",
+            "headline": "ISC Stormcast Highlights Latest Cyber Threats—InfoCON Remains Green",
+            "title": "ISC Stormcast for March 17, 2026: Cyber Threat Landscape Update",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing an overview of current cybersecurity threats while maintaining an InfoCON level of green, indicating a stable threat environment. The podcast discusses recent vulnerabilities and attack vectors, emphasizing the importance of patch management and proactive defense strategies. Security professionals are advised to stay informed about emerging threats and apply security patches promptly to mitigate risks. The InfoCON green status suggests no immediate widespread threats, but vigilance is advised to prevent potential exploitation. Regular updates and threat intelligence are crucial for maintaining a secure network posture.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32800",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32802",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "China-Nexus Hackers Infiltrate Southeast Asian Militaries—Years of Espionage",
+            "title": "Cyberespionage Campaign Targets Southeast Asian Military Organizations",
+            "content": "A sophisticated cyberespionage campaign linked to China has been uncovered, targeting military organizations in Southeast Asia for several years. Researchers identified the use of novel backdoors and advanced evasion techniques to maintain persistent access to sensitive networks. This campaign highlights the ongoing threat posed by state-sponsored actors in the region, potentially compromising national security. Affected organizations are urged to review their security postures and implement robust monitoring and incident response strategies. The discovery underscores the importance of international cooperation in combating cyber threats from nation-state actors.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/china-nexus-hackers-southeast-asian-military-orgs",
             "relatedResources": []
         },
         {
             "date": "Mar 16 2026",
-            "headline": "Microsoft Removes Samsung App—Windows Users Affected",
-            "title": "Microsoft Pulls Samsung Galaxy Connect App Due to Windows Issues",
-            "content": "Microsoft has removed the Samsung Galaxy Connect app from its store after users reported it was blocking access to the C: drive on Samsung Galaxy Book 4 and desktop models running Windows 11. This issue has caused significant disruptions for affected users, leading to potential data access problems and system instability. The app&#x27;s removal aims to prevent further complications while Samsung and Microsoft work on a resolution. Users experiencing issues should uninstall the app and await further updates from Samsung. This incident highlights the importance of rigorous app testing to prevent compatibility issues across different hardware and software ecosystems.",
+            "headline": "Convicted Scammer Runs Phishing Scam from Prison—Targets Athletes",
+            "title": "Inmate Allegedly Conducts Athlete-Focused Phishing Scam from Federal Prison",
+            "content": "Kwamaine Jerell Ford, a convicted scammer, allegedly orchestrated a phishing scam targeting athletes while incarcerated in a federal prison. Posing as an adult film star, Ford tricked victims into providing their iCloud credentials and multi-factor authentication (MFA) codes. This incident highlights the persistent threat of social engineering attacks, even from behind bars. High-profile individuals, especially those in the sports industry, are advised to exercise caution and verify communications before sharing sensitive information. The case underscores the need for continuous education on phishing tactics and robust authentication measures.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/nba-nfl-athletes-social-engineering-scheme-apple-icloud-mfa/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "GlassWorm Malware Evolves—Hides in Software Dependencies",
+            "title": "GlassWorm Malware Adopts New Evasion Techniques in Dependencies",
+            "content": "Researchers have identified an evolution in the GlassWorm malware, which now conceals itself within software dependencies. This tactic allows the malware to evade detection by traditional security measures, posing a significant threat to software supply chains. The discovery of dozens of malicious GlassWorm extensions highlights the importance of scrutinizing third-party dependencies in software development. Organizations are encouraged to implement comprehensive security reviews and dependency management practices to prevent malware infiltration. This development emphasizes the growing sophistication of malware authors in exploiting software ecosystems.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/glassworm-malware-evolves-hide-dependencies",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Olympic Cybersecurity—Lessons from Paris 2024 to Milan 2026",
+            "title": "Cybersecurity Insights from Paris 2024 Olympics to Milan Cortina 2026",
+            "content": "Franz Regul, former Chief Information Security Officer (CISO) for the Paris 2024 Olympics, shares insights into the unique cybersecurity challenges faced during the event. The Olympics presented a complex security landscape, requiring innovative solutions to protect against evolving threats. Regul&#x27;s experience underscores the importance of comprehensive risk assessments, incident response planning, and collaboration with international partners. As preparations for the Milan Cortina 2026 Winter Olympics commence, lessons learned from Paris will be instrumental in safeguarding the upcoming games. This case study serves as a valuable resource for organizations handling large-scale events.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/olympic-cybersecurity-paris-2024-milan-2026",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "GlassWorm Attack Exploits GitHub Tokens—Python Repos Compromised",
+            "title": "GlassWorm Malware Uses Stolen GitHub Tokens to Infect Python Repositories",
+            "content": "The ongoing GlassWorm malware campaign has escalated with the use of stolen GitHub tokens to inject malicious code into Python repositories. This attack targets a wide range of Python projects, including Django applications, machine learning research, Streamlit dashboards, and PyPI packages. By leveraging compromised tokens, attackers can force-push malware into legitimate projects, posing a significant threat to developers and end-users. Organizations are urged to review their GitHub security settings, revoke compromised tokens, and implement strict access controls. The incident highlights the critical need for secure token management and vigilant monitoring of code repositories.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/glassworm-attack-uses-stolen-github.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Stryker Attack Wipes Devices—No Malware Involved",
+            "title": "Cyberattack on Stryker Remotely Wipes Tens of Thousands of Devices",
+            "content": "A recent cyberattack on medical technology giant Stryker resulted in the remote wiping of tens of thousands of employee devices within its internal Microsoft environment. Interestingly, the attack did not involve traditional malware, raising concerns about the methods used to compromise the infrastructure. The incident underscores the vulnerabilities in cloud-based environments and the potential impact of unauthorized access. Affected organizations should review their security configurations and enhance their incident response capabilities to prevent similar occurrences. This event highlights the critical importance of securing cloud services and maintaining rigorous access controls.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-pulls-samsung-app-blocking-windows-c-drive-from-store/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "Asian Militaries Targeted—China-Linked Hackers Infiltrate Systems",
-            "title": "China-Linked Hackers Conduct Espionage on Asian Military Networks",
-            "content": "State-sponsored hackers with ties to China have infiltrated Asian military networks in a prolonged espionage operation, using custom tools and remaining dormant for months. The attackers&#x27; stealthy approach allowed them to gather sensitive information without detection, posing a significant threat to national security. This operation is part of a broader trend of cyber-espionage campaigns targeting strategic sectors in Asia. Military and government organizations in the region should enhance their cybersecurity measures and conduct thorough threat assessments to identify and mitigate potential infiltrations. This incident underscores the persistent risk posed by advanced persistent threats (APTs) in geopolitical conflicts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/china-linked-hackers-hit-asian-militaries-in-patient-espionage-operation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "VPN Users at Risk—Storm-2561 Launches Credential Theft Campaign",
-            "title": "Storm-2561 Targets VPN Users with SEO Poisoning and Trojans",
-            "content": "Threat actor Storm-2561 is actively targeting VPN users by distributing fake VPN clients through SEO poisoning techniques, which involve manipulating search engine results to promote malicious sites. These sites deploy trojans designed to steal login credentials, posing a serious risk to users&#x27; online security. The campaign highlights the growing sophistication of cybercriminals in exploiting trusted tools for malicious purposes. VPN users should verify the authenticity of their software sources and remain vigilant for suspicious activity. This attack emphasizes the need for robust endpoint protection and user education in defending against credential theft.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/threat-actor-targeting-vpn-users-in-new-credential-theft-campaign/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "Security Validation Evolves—Agentic Approaches Gain Traction",
-            "title": "Agentic Security Validation: Enhancing Organizational Defense Strategies",
-            "content": "Security validation is becoming increasingly agentic, with organizations adopting a more proactive approach to testing and validating their security measures. The typical validation stack now includes breach and attack simulation (BAS) tools, pentesting engagements, and vulnerability scanners integrated into attack surface management platforms. This shift reflects the need for continuous assessment of security postures in complex environments. By leveraging agentic validation methods, organizations can better anticipate potential threats and improve their defenses. Security leaders should consider integrating these approaches to enhance their overall security strategy and resilience against evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/why-security-validation-is-becoming.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "GlassWorm Aftermath—Python Repositories Compromised",
-            "title": "ForceMemo Campaign Exploits GlassWorm Breach to Access Python Repositories",
-            "content": "In the wake of the GlassWorm campaign, hundreds of GitHub accounts have been compromised, allowing attackers to access Python repositories using stolen credentials. This breach underscores the vulnerabilities in software supply chains, as malicious actors exploit stolen credentials to infiltrate development environments. The compromised repositories pose a risk of introducing malicious code into widely used Python packages. Developers should review their repository access controls and implement multi-factor authentication to protect against unauthorized access. This incident highlights the critical importance of securing software development processes to prevent supply chain attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/forcememo-python-repositories-compromised-in-glassworm-aftermath/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "MacSync Infostealer Targets macOS—Fake AI Tool Installers",
-            "title": "ClickFix Campaigns Distribute MacSync Infostealer via Fake AI Installers",
-            "content": "Three distinct ClickFix campaigns have been identified as vectors for distributing the MacSync infostealer, targeting macOS users through fake AI tool installers. Unlike traditional exploits, these campaigns rely on user interaction, such as copying and executing commands, to deploy the malware. This approach highlights the evolving tactics of cybercriminals in bypassing standard security measures. macOS users should exercise caution when downloading software and verify the legitimacy of AI tools before installation. The rise of such campaigns underscores the need for enhanced user awareness and endpoint protection to combat information-stealing malware.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/clickfix-campaigns-spread-macsync-macos.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "OWASP Unveils GenAI Security Checklist for Enterprises",
-            "title": "OWASP Releases Checklist to Enhance Generative AI Security",
-            "content": "The Open Web Application Security Project (OWASP) has introduced a comprehensive checklist aimed at bolstering security for organizations deploying generative AI technologies. This checklist serves as a guide for companies like OpenAI, Google, and Microsoft, as well as those using open-source alternatives, to address potential vulnerabilities in generative AI and large language models. As the adoption of these technologies accelerates, the checklist provides a structured approach to mitigate risks such as data leakage and model manipulation. Enterprises are encouraged to integrate these guidelines into their security protocols to safeguard AI deployments. The move underscores the growing focus on securing AI systems amid increasing cyber threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/3493126/genai-security-als-checkliste.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "ISC Stormcast Highlights: March 16th Security Briefing",
-            "title": "Key Takeaways from ISC Stormcast for March 16th, 2026",
-            "content": "The SANS Internet Storm Center (ISC) has released its latest Stormcast, providing insights into current cybersecurity threats and trends as of March 16, 2026. The briefing, available as a podcast, covers a range of topics including recent vulnerability disclosures, emerging attack vectors, and defensive strategies for IT professionals. Participants are encouraged to stay informed about InfoCON status, which remains at green, indicating a stable threat environment. The Stormcast serves as a critical resource for cybersecurity practitioners seeking to maintain robust defenses against evolving threats. Regular updates from ISC help organizations adapt to the rapidly changing cyber landscape.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32798",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/stryker-attack-wiped-tens-of-thousands-of-devices-no-malware-needed/",
             "relatedResources": []
         },
         {
@@ -112,74 +94,65 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Mar 16 2026",
-            "headline": "Agentic AI Growth—Beyond the Toddler Stage",
-            "title": "Advancing Agentic AI Development Beyond Early Milestones",
-            "content": "MIT Technology Review explores the challenges and opportunities in developing agentic AI beyond its initial stages, drawing parallels to human developmental milestones. As AI systems mature, the focus shifts from basic capabilities to more complex, autonomous decision-making processes. This transition is crucial for industries relying on AI for advanced problem-solving and innovation. The article highlights the need for robust frameworks to assess AI&#x27;s progress and ensure its alignment with human values. Professionals in AI development should prioritize ethical considerations and continuous evaluation to foster safe, effective AI growth.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/16/1133979/nurturing-agentic-ai-beyond-the-toddler-stage/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "Eon Systems&#x27; &quot;Virtual Fly&quot; Sparks Confusion Online",
-            "title": "Misunderstanding Surrounds Eon Systems&#x27; Virtual &quot;Embodied Fly&quot; Project",
-            "content": "The Verge reports on the recent online buzz surrounding Eon Systems&#x27; virtual &quot;embodied fly,&quot; which has been widely misunderstood as an AI breakthrough. The project, touted by AI hype accounts, led to misconceptions about its capabilities. Eon Systems aims to create a digital organism model for research, not a literal fly upload. This incident underscores the challenges of communicating complex AI projects to the public. Developers and researchers should focus on clear, accurate descriptions to prevent misinformation and manage expectations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/894587/fly-brain-computer-upload",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "NTT DATA, NVIDIA Scale AI Factories for Enterprises",
-            "title": "NTT DATA and NVIDIA Launch Enterprise AI Factory Initiative",
-            "content": "NTT DATA has partnered with NVIDIA to deliver scalable AI factory solutions for enterprises, leveraging NVIDIA&#x27;s GPU-accelerated computing and AI Enterprise software. This initiative aims to provide organizations with a robust, repeatable model for AI deployment, integrating tools like NeMo for advanced AI applications. Businesses can benefit from increased efficiency and innovation by adopting these production-ready platforms. The collaboration reflects a growing trend towards operationalizing AI at scale, offering significant competitive advantages. Organizations should evaluate these solutions to enhance their AI capabilities.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ntt-data-nvidia-enterprise-ai-factories-production/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "OpenAI&#x27;s Adult Mode—Smutty Text, No Visuals",
-            "title": "OpenAI&#x27;s ChatGPT Adult Mode to Feature Saucy Text Conversations",
-            "content": "OpenAI&#x27;s forthcoming &quot;adult mode&quot; for ChatGPT is set to offer suggestive text interactions, excluding image, voice, or video content generation. An OpenAI spokesperson clarified to The Wall Street Journal that the feature will cater to users seeking more mature conversation topics without crossing into explicit content. This move addresses user demand for diverse interaction modes while maintaining content guidelines. Developers and users should be aware of the feature&#x27;s limitations and OpenAI&#x27;s commitment to ethical AI use.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/895130/openai-chatgpt-adult-mode-text-smut-written-erotica",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "Future-Proofing Digital Assets Against Emerging Threats",
-            "title": "Strategies for Securing Digital Assets Against Future Cyber Threats",
-            "content": "MIT Technology Review discusses the imperative of safeguarding digital assets against evolving cybersecurity threats. As cybercriminals adopt more sophisticated tactics, organizations must implement proactive measures to protect sensitive information. The article emphasizes the importance of continuous monitoring, robust encryption, and adaptive security frameworks. Businesses are advised to invest in cutting-edge security technologies and foster a culture of cybersecurity awareness among employees. Staying ahead of potential threats is crucial for maintaining data integrity and trust.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/16/1134287/securing-digital-assets-against-future-threats/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "OpenAI&#x27;s Frontier—A Challenge to SaaS Revenue Models",
-            "title": "OpenAI&#x27;s Frontier Platform Disrupts Traditional SaaS Revenue Models",
-            "content": "OpenAI&#x27;s Frontier platform, launched in February, aims to integrate AI agents into enterprise systems, challenging existing software-as-a-service (SaaS) revenue models. Frontier acts as a semantic layer, enhancing organizational data processing and decision-making. This development signals a shift in how businesses leverage AI, potentially reducing reliance on traditional software solutions. Companies should assess the impact of such platforms on their operational strategies, considering both the opportunities and challenges presented by AI integration.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/openai-frontier-enterprise-ai-agents-saas/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "AI Scams Exploit Models as Fake Faces",
-            "title": "AI Scams Recruit Models for Deceptive &quot;Face Model&quot; Roles",
-            "content": "WIRED reveals a disturbing trend where Telegram channels advertise jobs for &quot;AI face models,&quot; primarily targeting women. These roles are often a front for scams designed to deceive victims into financial losses. The use of real faces in AI-generated content poses significant privacy and security risks. The article highlights the need for increased vigilance and regulation to protect individuals from exploitation. Security professionals should advise clients on recognizing and avoiding such scams, emphasizing the importance of digital literacy.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/models-are-applying-to-be-the-face-of-ai-scams/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 16 2026",
-            "headline": "Google, Accel Reject 70% of AI Pitches as &quot;Wrappers&quot;",
-            "title": "Google and Accel India Accelerator Selects 5 Startups, Avoids AI Wrappers",
-            "content": "Google and Accel have announced the selection of five startups for their Atoms accelerator program, notably excluding any that are &quot;AI wrappers.&quot; As they sifted through over 4,000 applications from AI startups in India, they found that approximately 70% fell into the &quot;wrapper&quot; category—startups that add minimal value by merely wrapping existing AI technologies. This indicates a significant trend in the market where innovation is often overshadowed by superficial enhancements. By choosing startups that focus on core AI advancements, Google and Accel aim to foster genuine innovation. This move may encourage other investors to adopt stricter criteria, potentially reshaping the AI startup landscape in India.",
+            "headline": "Nvidia’s NemoClaw Aims to Secure Enterprise AI",
+            "title": "Nvidia Launches NemoClaw to Address AI Security Challenges",
+            "content": "Nvidia has unveiled NemoClaw, an open enterprise AI agent platform designed to enhance security, leveraging the viral OpenClaw framework. This move addresses one of the company&#x27;s most pressing challenges: ensuring robust security measures for its AI offerings. NemoClaw aims to provide enterprises with a secure foundation for deploying AI solutions, mitigating risks associated with data breaches and unauthorized access. As AI systems become increasingly integral to business operations, the demand for secure platforms continues to rise. Nvidia&#x27;s initiative reflects a growing trend in the industry to prioritize security in AI development. Enterprises are encouraged to explore NemoClaw for secure AI deployments.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/15/google-and-accel-cut-through-wrappers-in-4000-ai-startup-pitches-to-pick-five-tied-to-india/",
+            "sourceUrl": "https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "First Healthcare Robotics Dataset Boosts AI Development",
+            "title": "New Dataset and AI Models Propel Healthcare Robotics Forward",
+            "content": "In a groundbreaking development, researchers have introduced the first comprehensive dataset for healthcare robotics, along with foundational physical AI models. This dataset is expected to significantly advance the capabilities of AI in medical robotics, enabling more precise and effective patient care. By providing a robust foundation for training AI models, this initiative aims to enhance robotic assistance in surgeries and patient management. As the healthcare sector increasingly adopts AI-driven solutions, this dataset represents a crucial step towards more intelligent and autonomous healthcare systems. Developers and healthcare professionals are encouraged to leverage this dataset to innovate and improve patient outcomes.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/physical-ai-for-healthcare-robotics",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "DLSS 5 Sparks Debate—Nvidia’s Generative AI for Games",
+            "title": "Nvidia’s DLSS 5 Introduces Controversial AI Graphics Enhancements",
+            "content": "Nvidia&#x27;s latest release, DLSS 5, unveiled at the GTC conference, has sparked debate among gamers and developers. Described by some as a &quot;GPT moment for graphics,&quot; this update uses generative AI to enhance real-time video game visuals, significantly altering artistic elements. While Nvidia CEO Jensen Huang champions the technology as transformative, critics argue it compromises original artistic intent. DLSS 5&#x27;s impact on gaming graphics could redefine visual standards, but it also raises questions about creative authenticity. Game developers should assess the implications of integrating DLSS 5 into their projects, considering both its potential and its controversies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/895472/nvidia-dlss5-generative-ai-pc-graphics",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Teens Sue xAI Over AI-Generated CSAM Allegations",
+            "title": "xAI Faces Lawsuit for Allegedly Generating CSAM with Grok AI",
+            "content": "Three Tennessee teenagers have filed a lawsuit against Elon Musk&#x27;s xAI, alleging that its Grok AI chatbot generated sexualized content of them as minors. The class action suit claims the AI&#x27;s outputs included inappropriate images and videos, raising serious ethical and legal concerns. This case highlights the potential risks of AI systems producing harmful or illegal content, emphasizing the need for stringent content moderation and ethical guidelines. The lawsuit could set a precedent for future legal actions involving AI-generated content. Companies using AI for content generation must prioritize robust safeguards to prevent similar incidents.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/895639/xai-grok-teens-lawsuit-grok-ai-elon-musk",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Nvidia Expects $1 Trillion in Chip Orders",
+            "title": "Nvidia Projects $1 Trillion Sales for Blackwell and Vera Rubin Chips",
+            "content": "Nvidia CEO Jensen Huang has announced expectations for $1 trillion in sales for the company&#x27;s Blackwell and Vera Rubin chips. This ambitious projection underscores the growing demand for advanced AI and data processing hardware. As industries increasingly rely on AI-driven technologies, the need for powerful chips to support these systems is surging. Nvidia&#x27;s optimistic forecast reflects its strategic position in the market and the anticipated widespread adoption of its cutting-edge chip technology. Industry leaders and tech investors should monitor Nvidia&#x27;s developments closely as these projections could influence market dynamics and investment strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/16/jensen-just-put-nvidias-blackwell-and-vera-rubin-sales-projections-into-the-1-trillion-stratosphere/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Warren Questions Pentagon’s xAI Network Access Decision",
+            "title": "Senator Warren Criticizes xAI’s Access to Classified Networks",
+            "content": "Senator Elizabeth Warren has raised concerns over the Pentagon&#x27;s decision to grant xAI&#x27;s Grok chatbot access to classified networks. Highlighting Grok&#x27;s history of generating harmful outputs, Warren warns of potential national security risks. The controversy centers on the balance between leveraging AI technology for defense purposes and ensuring the security of sensitive information. This issue underscores the broader debate about AI&#x27;s role in national security and the measures needed to safeguard against its misuse. Defense agencies and policymakers must carefully evaluate AI partnerships, prioritizing security and ethical standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/16/warren-presses-pentagon-over-decision-to-grant-xai-access-to-classified-networks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 16 2026",
+            "headline": "Netanyahu Battles AI Clone Conspiracy Theories",
+            "title": "Israeli PM Netanyahu Faces Deepfake Claims Amidst Online Speculation",
+            "content": "Israeli Prime Minister Benjamin Netanyahu is at the center of a social media storm, with conspiracy theories alleging he has been replaced by AI-generated deepfakes. Videos circulating online purportedly show anomalies, such as extra fingers and unusual drinking behaviors, fueling speculation. This situation highlights the growing challenge of distinguishing reality from AI-generated content in the digital age. The rise of deepfake technology poses significant risks to public figures and the dissemination of misinformation. Governments and tech companies must collaborate to develop tools and policies to detect and counteract deepfakes, safeguarding public trust and information integrity.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/895453/ai-deepfake-netanyahu-claims-conspiracy",
             "relatedResources": []
         }
     ],
@@ -244,6 +217,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-47813",
+            "dateAdded": "Mar 16, 2026",
+            "vendor": "Wing FTP Server Wing FTP Server",
+            "description": "Wing FTP Server contains a generation of error message containing sensitive information vulnerability when using a long value in the UID cookie.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-47813",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-3910",
             "dateAdded": "Mar 13, 2026",
