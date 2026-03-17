@@ -681,14 +681,14 @@
         // Load articles from JSON file
         async function loadArticles() {
             try {
-                const response = await fetch('articles.json');
+                const response = await fetch('ioc-data/articles.json');
                 const data = await response.json();
                 articles = data.articles || [];
                 renderArticleList();
                 updateStats();
             } catch (error) {
                 console.error('Error loading articles:', error);
-                showNotification('Error loading articles. Make sure articles.json exists.', 'error');
+                showNotification('Error loading articles. Make sure ioc-data/articles.json exists.', 'error');
             }
         }
 

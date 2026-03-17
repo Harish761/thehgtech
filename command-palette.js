@@ -117,7 +117,7 @@ class CommandPalette {
 
         try {
             const [articlesRes, cveRes] = await Promise.all([
-                fetch('/articles.json').catch(() => null),
+                fetch('/ioc-data/articles.json').catch(() => null),
                 fetch('/cve-data.json').catch(() => null)
             ]);
 

@@ -6,7 +6,7 @@ import glob
 
 # Configuration
 IOC_DATA_DIR = 'ioc-data'
-ARTICLES_FILE = 'articles.json'
+ARTICLES_FILE = os.path.join(IOC_DATA_DIR, 'articles.json')
 AUTHOR = "TheHGTech Bot"
 
 def load_json_file(filepath):
@@ -149,10 +149,17 @@ def generate_html_content(date_str, top_families, botnet_stats, ssl_count, ssl_r
 def update_articles_json(article_obj):
     """Append new article to articles.json"""
     try:
-        with open(ARTICLES_FILE, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+        if os.path.exists(ARTICLES_FILE):
+            with open(ARTICLES_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        else:
+            print(f"File {ARTICLES_FILE} not found. Creating new one.")
+            data = {"articles": []}
         
         # Prepend to list (newest first)
+        if 'articles' not in data:
+            data['articles'] = []
+            
         data['articles'].insert(0, article_obj)
         
         with open(ARTICLES_FILE, 'w', encoding='utf-8') as f:

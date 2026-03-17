@@ -2974,7 +2974,7 @@
         // ========== DYNAMIC ARTICLES LOADING ==========
         async function loadLatestArticles() {
             try {
-                const response = await fetch('articles.json?t=' + Date.now());
+                const response = await fetch('ioc-data/articles.json?t=' + Date.now());
                 const data = await response.json();
                 // articles.json has { "articles": [...] } structure
                 const articles = (data.articles || data || []).slice(0, 2);

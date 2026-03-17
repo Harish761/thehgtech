@@ -2919,7 +2919,7 @@
         // Load articles from JSON
         async function loadArticles() {
             try {
-                const response = await fetch('articles.json?v=' + new Date().getTime());
+                const response = await fetch('ioc-data/articles.json?v=' + new Date().getTime());
                 const data = await response.json();
                 allArticles = data.articles;
                 filteredArticles = [...allArticles];

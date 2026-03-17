@@ -38,7 +38,7 @@ def main():
     print("📝 Adding interaction bar to all articles in articles.json...")
     
     # Read articles.json
-    with open('articles.json', 'r', encoding='utf-8') as f:
+    with open('ioc-data/articles.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     updated_count = 0
@@ -73,7 +73,7 @@ def main():
             updated_count += 1
     
     # Write back to articles.json
-    with open('articles.json', 'w', encoding='utf-8') as f:
+    with open('ioc-data/articles.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*60}")

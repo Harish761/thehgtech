@@ -133,7 +133,7 @@ class SearchEngine {
 
         try {
             // Fetch Articles
-            const articlesReq = await fetch('/articles.json');
+            const articlesReq = await fetch('/ioc-data/articles.json');
             if (articlesReq.ok) {
                 const articleData = await articlesReq.json();
                 const articles = articleData.articles.map(a => ({

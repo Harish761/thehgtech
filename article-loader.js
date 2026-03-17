@@ -7,7 +7,7 @@ async function loadArticlesFromJSON() {
         console.log('[article-loader] Starting to load articles.json...');
         // Use timestamp as cache buster to always get fresh data (fixes Safari mobile caching)
         const cacheBuster = Date.now();
-        const response = await fetch(`articles.json?v=${cacheBuster}`, {
+        const response = await fetch(`ioc-data/articles.json?v=${cacheBuster}`, {
             cache: 'no-store' // Force network fetch
         });
         const data = await response.json();
