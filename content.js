@@ -4,84 +4,66 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 17 2026",
-            "headline": "Microsoft Halts Auto-Install of 365 Copilot Outside EEA",
-            "title": "Microsoft Ceases Automatic Installation of 365 Copilot Outside EEA",
-            "content": "Microsoft has announced it will stop automatically installing the Microsoft 365 Copilot app on Windows devices outside the European Economic Area (EEA) that have Microsoft 365 desktop client apps. This decision comes amid growing concerns over privacy and the need for user control over software installations. The move affects users globally, excluding the EEA, where different regulatory requirements apply. Microsoft 365 Copilot, an AI-powered tool designed to enhance productivity, will now require manual installation by users outside the EEA. This change reflects Microsoft&#x27;s ongoing efforts to align with regional data protection standards and user preferences. Users are encouraged to manually install the app if they wish to utilize its capabilities.",
+            "date": "Mar 18 2026",
+            "headline": "Apple’s Background Update Fixes WebKit Flaw—No OS Upgrade Needed",
+            "title": "Apple Releases Background Security Update to Patch WebKit Vulnerability",
+            "content": "Apple has deployed its inaugural Background Security Improvements update to address a WebKit vulnerability identified as CVE-2026-20643. This flaw affects iPhones, iPads, and Macs, allowing the update to be applied without a full operating system upgrade. The vulnerability could potentially allow attackers to execute arbitrary code through malicious web content. By introducing this streamlined patching method, Apple aims to enhance security response times for users. Device owners are encouraged to ensure their systems are set to receive these background updates automatically to maintain protection against emerging threats. This move signifies a shift towards more agile security practices in Apple&#x27;s ecosystem.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-stops-force-installing-the-microsoft-365-copilot-app/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apple-pushes-first-background-security-improvements-update-to-fix-webkit-flaw/",
             "relatedResources": []
         },
         {
             "date": "Mar 17 2026",
-            "headline": "Phishing Breach Hits Robotic Surgery Leader Intuitive",
-            "title": "Intuitive Surgical Discloses Cyberattack via Phishing Incident",
-            "content": "Intuitive, a leading company in robotic-assisted surgery, has disclosed a cyberattack that compromised some of its internal business applications. The breach occurred after an employee fell victim to a phishing attack, highlighting the ongoing threat of social engineering tactics. The company, known for its da Vinci surgical systems, has not reported any impact on its medical device operations or patient data. However, the incident underscores the vulnerability of even highly secure sectors to phishing schemes. Intuitive is working with cybersecurity experts to enhance its defenses and prevent future incidents. Organizations are advised to reinforce employee training on identifying phishing attempts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/robotic-surgery-giant-intuitive-discloses-cyberattack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Cyberattacks Surge Tenfold on Eon&#x27;s Energy Network",
-            "title": "Eon Faces Escalating Cyberattacks on German Energy Infrastructure",
-            "content": "Eon, a major energy provider in Germany, reports a significant increase in cyberattacks on its energy networks, with incidents multiplying tenfold to several hundred daily. This surge in attacks highlights the growing threat to critical infrastructure and the potential for disruptions in energy supply. Eon&#x27;s networks play a crucial role in Germany&#x27;s energy distribution, making them a prime target for cybercriminals. The company is implementing enhanced security measures to safeguard its infrastructure and maintain stability in energy provision. This trend reflects a broader increase in cyber threats targeting essential services worldwide. Energy providers are urged to bolster their cybersecurity protocols.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4146299/cyber-attacken-fluten-eon-netz-angriffe-verzehnfacht-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "RondoDox Botnet Targets 174 Vulnerabilities in Daily Surge",
-            "title": "RondoDox Botnet Intensifies Attacks, Exploiting 174 Vulnerabilities",
-            "content": "The RondoDox botnet has ramped up its activity, targeting 174 vulnerabilities with a peak of 15,000 exploitation attempts per day. This botnet is adopting a more targeted approach, focusing on specific weaknesses in systems to maximize impact. The vulnerabilities span a range of software and systems, increasing the risk for organizations with outdated or unpatched technology. The surge in activity underscores the importance of timely updates and patch management to mitigate potential breaches. Security professionals are advised to review their systems for exposure to these vulnerabilities and prioritize patching efforts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/rondodox-botnet-targeted-174-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "90% Distrust AI with Personal Data, Survey Reveals",
-            "title": "Survey Shows 90% Lack Trust in AI for Data Privacy",
-            "content": "A recent privacy survey by Malwarebytes reveals that 90% of respondents do not trust artificial intelligence with their personal data. This widespread skepticism is causing many individuals to reconsider their engagement with AI-driven services. Despite AI&#x27;s growing presence in various sectors, concerns over data misuse and privacy breaches remain prevalent. The findings highlight a significant barrier for companies looking to integrate AI technologies into consumer-facing applications. Organizations are encouraged to prioritize transparency and robust data protection measures to build consumer trust in AI solutions.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/03/90-of-people-dont-trust-ai-with-their-data",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Tech Giants Sign Pact to Combat Online Scams",
-            "title": "Google, Meta, Microsoft Join Accord Against Online Scams",
-            "content": "Major technology and retail companies, including Google, Meta, and Microsoft, have signed an industry pact aimed at combating online scams and fraud. This collective effort seeks to address the rising tide of digital deception affecting consumers and businesses alike. The agreement outlines commitments to enhance security measures, share threat intelligence, and develop tools to protect users from fraudulent activities. This initiative marks a significant step in unifying industry leaders against a common threat. Organizations are encouraged to participate in collaborative efforts to strengthen defenses against online scams.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-meta-microsoft-among-signatories-of-pact-to-combat-scams/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "LeakNet Ransomware Uses Deno for Stealthy Infiltration",
-            "title": "LeakNet Ransomware Employs ClickFix, Deno in Sophisticated Attacks",
-            "content": "The LeakNet ransomware group has adopted new tactics, utilizing the ClickFix technique for initial access and deploying a malware loader based on the open-source Deno runtime for JavaScript and TypeScript. This strategic shift enhances the group&#x27;s ability to conduct stealthy attacks on corporate environments. By leveraging Deno, LeakNet can bypass traditional security measures, complicating detection and response efforts. The use of ClickFix further exemplifies the evolving nature of ransomware tactics. Security teams should update their threat models and implement advanced detection techniques to counter these sophisticated methods.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/leaknet-ransomware-uses-clickfix-and-deno-runtime-for-stealthy-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "ISC Stormcast Highlights Latest Cyber Threats—InfoCON Remains Green",
-            "title": "ISC Stormcast for March 17, 2026: Cyber Threat Landscape Update",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing an overview of current cybersecurity threats while maintaining an InfoCON level of green, indicating a stable threat environment. The podcast discusses recent vulnerabilities and attack vectors, emphasizing the importance of patch management and proactive defense strategies. Security professionals are advised to stay informed about emerging threats and apply security patches promptly to mitigate risks. The InfoCON green status suggests no immediate widespread threats, but vigilance is advised to prevent potential exploitation. Regular updates and threat intelligence are crucial for maintaining a secure network posture.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32802",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "China-Nexus Hackers Infiltrate Southeast Asian Militaries—Years of Espionage",
-            "title": "Cyberespionage Campaign Targets Southeast Asian Military Organizations",
-            "content": "A sophisticated cyberespionage campaign linked to China has been uncovered, targeting military organizations in Southeast Asia for several years. Researchers identified the use of novel backdoors and advanced evasion techniques to maintain persistent access to sensitive networks. This campaign highlights the ongoing threat posed by state-sponsored actors in the region, potentially compromising national security. Affected organizations are urged to review their security postures and implement robust monitoring and incident response strategies. The discovery underscores the importance of international cooperation in combating cyber threats from nation-state actors.",
+            "headline": "Credential Theft Soars—Attackers Logging In, Not Breaking In",
+            "title": "Surge in Credential Theft Linked to Infostealer Malware and AI Tactics",
+            "content": "The latter half of 2025 saw a significant increase in credential theft, driven by the industrialization of infostealer malware and AI-enhanced social engineering techniques. Attackers are increasingly opting to log in using stolen credentials rather than breaking in through traditional hacking methods. This trend poses a challenge for security professionals, as it often bypasses conventional perimeter defenses. Organizations are advised to implement multi-factor authentication (MFA) and continuous monitoring to mitigate this threat. The rise in credential theft underscores the need for robust identity verification measures and employee training on recognizing social engineering attempts.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/china-nexus-hackers-southeast-asian-military-orgs",
+            "sourceUrl": "https://www.darkreading.com/identity-access-management-security/more-attackers-logging-in-not-breaking-in",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "GlassWorm Strikes Again—400+ Repos Compromised",
+            "title": "GlassWorm Supply-Chain Attack Targets Hundreds of GitHub and npm Repositories",
+            "content": "The GlassWorm malware campaign has resurfaced, compromising over 400 code repositories and packages on platforms such as GitHub, npm, and VSCode/OpenVSX. This coordinated supply-chain attack highlights the vulnerability of software development ecosystems to malicious actors. The attack involves injecting malicious code into popular repositories, potentially affecting thousands of downstream applications. Developers are urged to review their dependencies and implement rigorous code audit processes to detect any unauthorized changes. This incident serves as a stark reminder of the critical importance of supply-chain security in modern software development.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/glassworm-malware-hits-400-plus-code-repos-on-github-npm-vscode-openvsx/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Ransomware Tactics Shift—Native Tools Replace Cobalt Strike",
+            "title": "Ransomware Actors Adapt as Payment Rates Decline",
+            "content": "Faced with declining ransom payment rates, ransomware groups are shifting tactics, favoring native Windows tools over traditional frameworks like Cobalt Strike. This change is driven by the need to evade detection and reduce operational costs. The trend towards data theft over encryption is also on the rise, as attackers seek alternative revenue streams. Security teams should focus on monitoring for unusual behavior in native tools and enhancing endpoint detection capabilities. This evolution in ransomware tactics reflects the dynamic nature of cybercrime and the constant adaptation required by both attackers and defenders.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/less-lucrative-ransomware-market-makes-attackers-alter-methods",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "CISA: Relationships Over Roles in Critical Infrastructure",
+            "title": "CISA Official Emphasizes Relationship-Based Approach for Infrastructure Security",
+            "content": "Nick Andersen, acting director of the Cybersecurity and Infrastructure Security Agency (CISA), has advised that agencies prioritize relationships over rigid role assignments in managing critical infrastructure security. Andersen highlighted that effective collaboration and communication between agencies are more crucial than strictly adhering to actor risk management agency designations. This approach aims to foster a more flexible and responsive security posture across sectors. Agencies are encouraged to focus on building strong partnerships and leveraging shared expertise to address the complex challenges in protecting national infrastructure. This guidance reflects a broader trend towards cooperative security strategies.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/cisa-srma-critical-infrastructure-flexible-partnerships-nick-andersen/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "U.S. Cyber Director: No Push for Corporate Cyber Offense",
+            "title": "Trump Administration Seeks Private Sector Collaboration, Not Cyber Offense",
+            "content": "Sean Cairncross, the national cyber director, clarified that the Trump administration is not advocating for private companies to engage in offensive cyber operations. Instead, the focus is on fostering collaboration that enables the U.S. government to effectively counter its adversaries. This approach involves leveraging private sector innovation and expertise to enhance national cybersecurity capabilities. Businesses are encouraged to engage in partnerships that support defensive strategies and information sharing. This stance underscores the administration&#x27;s emphasis on cooperative efforts to strengthen the nation&#x27;s cyber defenses without escalating offensive actions.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/national-cyber-strategy-private-sector-offensive-operations-sean-cairncross/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Court Pauses Block on Perplexity’s AI Shopping Agent",
+            "title": "Appeals Court Halts Order Against Perplexity’s Amazon AI Agent",
+            "content": "The Ninth Circuit Court has temporarily paused a lower court&#x27;s order that blocked Perplexity&#x27;s AI shopping agent from operating on Amazon. The legal dispute centers on whether user-approved automation can access password-protected accounts without explicit platform permission. This decision allows Perplexity to continue its operations while the case is under review. The outcome of this case could have significant implications for the use of AI in automating online transactions and platform access. Companies using similar technologies should closely monitor the proceedings to understand potential impacts on their operations.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/perplexity-comet-ai-shopping-agent-amazon-lawsuit-ninth-circuit-stay/",
             "relatedResources": []
         },
         {
@@ -111,66 +93,66 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 17 2026",
-            "headline": "Gamma Launches AI Tool to Rival Canva, Adobe",
-            "title": "Gamma Imagine Introduces AI-Driven Image Generation for Creative Assets",
-            "content": "Gamma has unveiled Gamma Imagine, a new AI-powered tool designed to compete with industry giants Canva and Adobe by allowing users to generate images using text prompts. This tool is tailored for creating brand-specific assets such as interactive charts, visualizations, marketing materials, social graphics, and infographics. By leveraging AI, Gamma aims to streamline the creative process for businesses looking to maintain brand consistency while enhancing efficiency. The introduction of Gamma Imagine signifies a growing trend of integrating AI into creative tools, offering users more dynamic and customizable content creation options. Professionals in marketing and design should explore Gamma Imagine as a potential addition to their toolkit.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/17/gamma-adds-ai-image-generation-tools-in-bid-to-take-on-canva-and-adobe/",
+            "date": "Mar 18 2026",
+            "headline": "Anthropic Faces Military Ban—Justice Dept. Cites Trust Issues",
+            "title": "Justice Department Blocks Anthropic from Warfighting Systems Over Trust Concerns",
+            "content": "The U.S. Justice Department has defended its decision to penalize Anthropic, a leading AI firm, for its attempts to restrict military applications of its Claude AI models. The government argues that Anthropic&#x27;s limitations on the use of Claude in warfighting systems constitute a breach of trust. This legal battle highlights the tension between AI developers and government expectations for technology use in defense. Anthropic&#x27;s lawsuit challenges the penalties, asserting the company&#x27;s right to control the application of its technology. The outcome could set a significant precedent for AI governance in military contexts. Stakeholders should closely monitor this case for its implications on AI ethics and military integration.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/department-of-defense-responds-to-anthropic-lawsuit/",
             "relatedResources": []
         },
         {
             "date": "Mar 17 2026",
-            "headline": "Niv-AI Secures $12M to Optimize GPU Power Use",
-            "title": "Niv-AI Exits Stealth with $12M Funding to Enhance GPU Power Efficiency",
-            "content": "Niv-AI has emerged from stealth mode with a successful $12 million seed funding round aimed at optimizing GPU power performance. The company focuses on measuring and managing GPU power surges, addressing a critical need in high-performance computing environments where energy efficiency is paramount. With GPUs being integral to AI and machine learning workloads, Niv-AI&#x27;s technology promises to reduce energy consumption and operational costs for data centers and enterprises. The funding signals investor confidence in Niv-AI&#x27;s potential to revolutionize GPU power management, a key concern for tech companies seeking sustainable computing solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/17/niv-ai-exits-stealth-to-wring-more-power-performance-out-of-gpus/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Holotron-12B: New Agent Boosts High-Throughput Computing",
-            "title": "Holotron-12B Agent Enhances High-Throughput Computing Capabilities",
-            "content": "Hugging Face has introduced Holotron-12B, a high-throughput computing use agent designed to optimize computational efficiency. This new agent aims to enhance the performance of complex computing tasks, making it particularly beneficial for data-intensive applications. Holotron-12B&#x27;s capabilities include improved task scheduling and resource allocation, which are crucial for maximizing throughput in high-demand environments. As AI models become increasingly complex, tools like Holotron-12B are essential for maintaining performance standards and operational efficiency. Organizations relying on high-throughput computing should consider integrating Holotron-12B to improve their processing capabilities.",
+            "headline": "Nemotron 3 Nano 4B Debuts—Boosts Local AI Efficiency",
+            "title": "Nemotron 3 Nano 4B: Compact Hybrid Model Enhances Local AI Processing",
+            "content": "Hugging Face has unveiled the Nemotron 3 Nano 4B, a compact hybrid AI model designed to optimize local processing capabilities. This model combines efficiency with performance, enabling developers to deploy advanced AI functionalities without relying heavily on cloud resources. The Nemotron 3 Nano 4B is tailored for edge devices, promising reduced latency and improved response times in AI applications. This development is particularly relevant for industries requiring real-time data processing, where cloud dependence can be a bottleneck. Organizations should consider integrating such models to enhance their AI infrastructure and reduce operational costs.",
             "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/Hcompany/holotron-12b",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-nano-4b",
             "relatedResources": []
         },
         {
             "date": "Mar 17 2026",
-            "headline": "Trustpilot Joins AI Firms Amid Decline of Traditional Search",
-            "title": "Trustpilot Collaborates with AI Firms as eCommerce Search Evolves",
-            "content": "Trustpilot is actively pursuing partnerships with AI companies to adapt to the shifting landscape of eCommerce search. As AI-driven shopping experiences gain popularity, traditional search methods are being overshadowed by AI agents that require comprehensive business data to operate effectively. Trustpilot&#x27;s CEO, Adrian Blair, highlighted the importance of these collaborations in a recent Bloomberg interview, emphasizing the need for detailed information to support AI consumer agents. This strategic move positions Trustpilot to remain relevant as the eCommerce sector increasingly relies on AI technologies to enhance consumer interactions.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-in-ecommerce-trustpilot-partnerships-integration-news-trad-search-declines/",
+            "headline": "Mamba 3 Surpasses Transformer—4% Better Language Modeling",
+            "title": "Open Source Mamba 3 Challenges Transformer with Enhanced Language Modeling",
+            "content": "The open-source Mamba 3 architecture has been introduced, boasting a near 4% improvement in language modeling over the traditional Transformer architecture. This advancement reduces latency, providing faster and more accurate AI responses. Mamba 3&#x27;s enhancements are set to impact various applications, from natural language processing to image recognition, by offering more efficient data interpretation. The development marks a significant milestone in the evolution of AI architectures, promising to reshape current AI deployment strategies. Developers and organizations should explore Mamba 3 for potential integration into existing systems to leverage its improved performance.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/open-source-mamba-3-arrives-to-surpass-transformer-architecture-with-nearly",
             "relatedResources": []
         },
         {
             "date": "Mar 17 2026",
-            "headline": "Invisalign Dominates 3D Printing with Align Technology",
-            "title": "Invisalign Emerges as Leading User of 3D Printing Technology",
-            "content": "Align Technology, the company behind Invisalign, has become the world&#x27;s largest user of 3D printing technology, according to CEO Joe Hogan. This achievement underscores the company&#x27;s innovative approach to orthodontics, leveraging advanced 3D printing techniques to produce custom dental aligners. Hogan advises users on proper aligner care, emphasizing that they should not eat with them and that nightly retainer wear is not always necessary. Align Technology&#x27;s extensive use of 3D printing reflects a broader trend of adopting advanced manufacturing technologies to enhance product customization and efficiency in the healthcare sector.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/how-invisalign-became-the-worlds-biggest-3d-printing-company/",
+            "headline": "Pentagon Plans AI Training on Classified Data—Security Concerns Rise",
+            "title": "Pentagon Considers Secure AI Training Environments for Classified Military Data",
+            "content": "The Pentagon is exploring the creation of secure environments for AI companies to train models using classified military data. This initiative aims to develop military-specific AI models while maintaining data security. Currently, AI models like Anthropic&#x27;s Claude are utilized in classified settings, but the new plan would expand capabilities. This move could enhance military AI applications, though it raises concerns about data protection and the potential risks of classified information exposure. Defense contractors and AI firms should prepare for stringent security requirements and potential collaboration opportunities with the Department of Defense.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/03/17/1134351/the-pentagon-is-planning-for-ai-companies-to-train-on-classified-data-defense-official-says/",
             "relatedResources": []
         },
         {
             "date": "Mar 17 2026",
-            "headline": "Sears AI Chatbot Data Leak Exposes Customer Information",
-            "title": "Sears AI Chatbot Vulnerability Exposes Sensitive Customer Conversations",
-            "content": "A security flaw in Sears&#x27; AI chatbot system has exposed customer conversations, including personal details and contact information, to potential scammers. This vulnerability increases the risk of phishing attacks and fraud, as sensitive data could be exploited by malicious actors. The exposure highlights the critical importance of securing AI-driven customer service platforms, especially as they handle increasing volumes of personal information. Organizations using AI chatbots should conduct thorough security audits and implement robust data protection measures to prevent similar incidents. Sears is advised to address this vulnerability immediately to safeguard customer data.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/sears-exposed-ai-chatbot-phone-calls-and-text-chats-to-anyone-on-the-web/",
+            "headline": "Mistral&#x27;s Forge Empowers Enterprises—Custom AI Model Training",
+            "title": "Mistral Launches Forge for Enterprise-Level Custom AI Model Development",
+            "content": "Mistral has introduced Forge, a platform that enables enterprises to build custom AI models using their proprietary data. This approach challenges established AI firms like OpenAI and Anthropic, which rely on fine-tuning and retrieval-based methods. Forge allows companies to develop AI solutions tailored to specific business needs, enhancing competitive advantages. This development signifies a shift towards more personalized AI applications in the enterprise sector. Companies should evaluate Forge&#x27;s capabilities to determine its potential impact on their AI strategies and consider adoption to maintain a technological edge.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/17/mistral-forge-nvidia-gtc-build-your-own-ai-enterprise/",
             "relatedResources": []
         },
         {
             "date": "Mar 17 2026",
-            "headline": "Goldman Sachs: AI Investment Shifts to Data Centers",
-            "title": "AI Investment Trends Shift Towards Data Center Infrastructure",
-            "content": "Goldman Sachs reports a shift in AI investment focus towards data center infrastructure, as the initial excitement around AI applications gives way to a more selective approach. Companies and investors are now concentrating on the robust data center capabilities required to support advanced AI systems. This trend reflects the growing recognition of infrastructure as a critical component in the AI ecosystem, necessary for handling the computational demands of AI workloads. Businesses involved in AI development should consider enhancing their data center investments to stay competitive in this evolving landscape.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/goldman-sachs-sees-ai-investment-shift-to-data-centres/",
+            "headline": "Mistral AI&#x27;s Forge Takes on Cloud Giants—Build Proprietary Models",
+            "title": "Mistral AI Launches Forge to Challenge Cloud Providers with Custom AI Models",
+            "content": "Mistral AI has unveiled Forge, an enterprise-focused platform designed to help organizations develop and refine proprietary AI models. This strategic move positions Mistral against major cloud providers by offering a tailored approach to AI model training. Forge allows businesses to leverage their own data, fostering innovation and reducing reliance on external cloud services. This launch underscores the growing demand for bespoke AI solutions in the competitive enterprise landscape. Organizations should assess Forge&#x27;s potential to enhance their AI capabilities and consider its integration to stay ahead in the rapidly evolving tech space.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/mistral-ai-launches-forge-to-help-companies-build-proprietary-ai-models",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Garry Tan&#x27;s Claude Code Sparks Debate—AI Community Reacts",
+            "title": "Garry Tan&#x27;s Claude Code Setup Divides AI Enthusiasts and Critics",
+            "content": "Garry Tan&#x27;s Claude Code setup, shared on GitHub, has generated significant attention and sparked debate within the AI community. The setup, which involves AI models like Claude, ChatGPT, and Gemini, has been both praised and criticized for its approach to AI development. Thousands have tested the setup, leading to diverse opinions on its effectiveness and potential applications. This discourse highlights the ongoing conversation around open-source AI tools and their role in democratizing AI development. Developers and AI enthusiasts should explore Tan&#x27;s setup to understand its capabilities and contribute to the broader discussion on AI innovation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/",
             "relatedResources": []
         }
     ],
@@ -266,17 +248,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3909",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-68613",
-            "dateAdded": "Mar 11, 2026",
-            "vendor": "n8n n8n",
-            "description": "n8n contains an improper control of dynamically managed code resources vulnerability in its workflow expression evaluation system that allows for remote code execution.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68613",
             "isZeroDay": false
         }
     ],
