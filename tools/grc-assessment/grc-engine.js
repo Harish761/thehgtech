@@ -74,8 +74,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         ui.btnNextDomain.addEventListener('click', () => {
             if (currentNavIndex < activeDomainIndices.length - 1) {
                 currentNavIndex++;
-                renderDomain(currentNavIndex);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                renderDomain(activeDomainIndices[currentNavIndex]);
+                updateSidebarActiveState();
+                window.scrollTo({ top: 0, behavior: 'instant' });
             }
         });
     }
@@ -203,7 +204,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     function startEngine() {
         currentNavIndex = 0;
         renderSidebarNav();
-        renderDomain(currentNavIndex);
+        renderDomain(activeDomainIndices[currentNavIndex]); // Pass global index
         updateOverallScore();
     }
 
@@ -223,15 +224,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             navBtn.addEventListener('click', () => {
                 currentNavIndex = activeIdx;
-                renderDomain(currentNavIndex);
+                renderDomain(activeDomainIndices[currentNavIndex]); // Pass global index
+                updateSidebarActiveState();
+                window.scrollTo({ top: 0, behavior: 'instant' });
             });
 
             ui.domainNav.appendChild(navBtn);
         });
     }
 
-    function renderDomain(navIndex) {
-        const globalIndex = activeDomainIndices[navIndex];
+    function renderDomain(globalIndex) { // Accepts globalIndex directly
         const domain = grcData.domains[globalIndex];
 
         // Update Headers
@@ -388,11 +390,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             ui.btnExportDraft.removeAttribute('disabled');
             if (ui.btnPartialDashboard) ui.btnPartialDashboard.removeAttribute('disabled');
             
+            // Finish button appears when EVERYTHING in the active scope is answered
             if (answeredControls === totalControls && totalControls > 0) {
                 ui.btnFinishDashboard.style.display = 'inline-block';
-                ui.btnFinishDashboard.innerHTML = 'Generate Full Readiness Dashboard <i class="fas fa-flag-checkered"></i>';
-                ui.btnFinishDashboard.style.background = 'var(--accent-green)';
-                ui.btnFinishDashboard.style.border = 'none';
+                ui.btnFinishDashboard.innerHTML = 'Complete Assessment: Generate Dashboard <i class="fas fa-flag-checkered"></i>';
+                ui.btnFinishDashboard.style.padding = '1rem 2rem';
+                ui.btnFinishDashboard.style.borderRadius = '30px';
+                ui.btnFinishDashboard.style.backgroundColor = '#10B981';
                 ui.btnFinishDashboard.style.color = '#000';
             } else {
                 ui.btnFinishDashboard.style.display = 'none';
@@ -403,10 +407,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             ui.btnFinishDashboard.style.display = 'none';
         }
 
-        // Logic for "Next Domain" vs "Finish" at the bottom
+        // Next Domain Button Visibility
         if (activeDomainIndices.length > 0) {
             const currentDomainObj = grcData.domains[activeDomainIndices[currentNavIndex]];
             const answeredInCurrentDomain = currentDomainObj.controls.filter(c => userState[c.control_id]).length;
+            
+            // Show "Next Domain" once the current one is 100% complete, IF there's a next one
             if (answeredInCurrentDomain === currentDomainObj.controls.length && currentNavIndex < activeDomainIndices.length - 1) {
                 ui.btnNextDomain.style.display = 'block';
             } else {
@@ -434,6 +440,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         ui.viewDashboard.style.display = 'flex';
         setTimeout(() => { ui.viewDashboard.classList.add('active'); }, 50);
 
+        window.scrollTo({ top: 0, behavior: 'instant' });
         generateDashboard();
     });
 
@@ -521,9 +528,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             dataset.push(total === 0 ? 0 : Math.round((impl / total) * 100));
         });
 
-        // 0. Update Framework Scores
-        const nistPct = nistTotal === 0 ? 0 : Math.round((nistValue / nistTotal) * 100);
-        const cisPct = cisTotal === 0 ? 0 : Math.round((cisValue / cisTotal) * 100);
+        // 0. Update Framework Scores with Realistic Denominators
+        // NIST CSF 2.0 has 106 subcategories, CIS v8 has 153 Safeguards.
+        // This provides a realistic "Industry Readiness" score rather than just a 1:1 question count.
+        const NIST_DENOMINATOR = 106;
+        const CIS_DENOMINATOR = 153;
+
+        const nistPct = Math.round((nistValue / NIST_DENOMINATOR) * 100);
+        const cisPct = Math.round((cisValue / CIS_DENOMINATOR) * 100);
         
         document.getElementById('nistScore').innerText = `${nistPct}%`;
         document.getElementById('cisScore').innerText = `${cisPct}%`;
@@ -595,17 +607,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                     <h4 class="gap-title">${g.title}</h4>
                     <div class="gap-mappings" style="display:flex; gap:8px; margin-bottom: 0.8rem;">
-                        ${g.nist ? `<span style="font-size:0.7rem; background:rgba(10, 132, 255, 0.1); color:#0A84FF; padding:1px 6px; border-radius:3px;">NIST: ${g.nist}</span>` : ''}
-                        ${g.cis ? `<span style="font-size:0.7rem; background:rgba(255, 159, 10, 0.1); color:#FF9F0A; padding:1px 6px; border-radius:3px;">CIS: ${g.cis}</span>` : ''}
+                        ${g.nist ? `<span style="font-size:0.7rem; background:rgba(10, 132, 255, 0.1); color:#0A84FF; padding:1px 6px; border-radius:3px; border:1px solid rgba(10,132,255,0.2);">NIST: ${g.nist}</span>` : ''}
+                        ${g.cis ? `<span style="font-size:0.7rem; background:rgba(255, 159, 10, 0.1); color:#FF9F0A; padding:1px 6px; border-radius:3px; border:1px solid rgba(255,159,10,0.2);">CIS: ${g.cis}</span>` : ''}
                     </div>
-                    <p style="margin: 0.5rem 0 1rem; color: var(--text-muted); font-size:0.9rem;">Requires immediate action to meet conceptual compliance.</p>
+                    
+                    ${userState[g.id + '_just'] ? `
+                    <div class="gap-justification" style="margin: 1rem 0; padding: 0.8rem; background: rgba(255,255,255,0.03); border-radius: 6px; font-size: 0.85rem; border: 1px solid var(--border);">
+                        <strong><i class="fas fa-comment-alt"></i> Your Comment/Justification:</strong><br>
+                        <span style="color:var(--text-secondary); font-style:italic;">"${userState[g.id + '_just']}"</span>
+                    </div>
+                    ` : ''}
+
                     <div class="gap-remediation" style="margin-bottom:1rem;">
                         <strong><i class="fas fa-wrench"></i> Suggested Remediation:</strong><br>
                         ${g.remediation}
                     </div>
                     ${g.rationale ? `
                     <div class="gap-rationale" style="font-size:0.85rem; color:var(--text-muted); border-top:1px solid var(--border); padding-top:0.8rem; font-style:italic;">
-                        <strong>Consultant Insight:</strong> "${g.rationale}"
+                        <strong><i class="fas fa-lightbulb" style="color:#8B5CF6;"></i> Consultant Insight:</strong> "${g.rationale}"
                     </div>
                     ` : ''}
                 `;
@@ -639,18 +658,22 @@ document.addEventListener('DOMContentLoaded', async () => {
                         const ans = userState[c.control_id] || '';
                         const sVal = (ans === 'yes' || ans === 'na') ? 1 : (ans === 'partial' ? 0.5 : 0);
 
-                        if (c.nist_mapping) { nistT++; nistV += sVal; }
-                        if (c.cis_mapping) { cisT++; cisV += sVal; }
+                        if (c.nist_mapping) { nistV += sVal; }
+                        if (c.cis_mapping) { cisV += sVal; }
 
                         if (ans === 'yes') implC++;
-                        else if (ans === 'partial') { partC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping}); }
+                        else if (ans === 'partial') { partC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just']}); }
                         else if (ans === 'na') naC++;
-                        else { gapC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping}); }
+                        else { gapC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just']}); }
                     });
                 });
 
-                const nistP = nistT === 0 ? 0 : Math.round((nistV / nistT) * 100);
-                const cisP = cisT === 0 ? 0 : Math.round((cisV / cisT) * 100);
+                // Use fixed denominators for framework scores
+                const NIST_DENOMINATOR_PDF = 106;
+                const CIS_DENOMINATOR_PDF = 153;
+
+                const nistP = Math.round((nistV / NIST_DENOMINATOR_PDF) * 100);
+                const cisP = Math.round((cisV / CIS_DENOMINATOR_PDF) * 100);
 
                 // 2. Build Gap Table
                 const gapTableBody = [
@@ -658,8 +681,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         { text: 'Control ID', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
                         { text: 'Title', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
                         { text: 'Risk', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
-                        { text: 'NIST Mapping', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
-                        { text: 'CIS Mapping', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
+                        { text: 'Comment/Justification', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
                         { text: 'Remediation Advice', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] }
                     ]
                 ];
@@ -673,8 +695,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                             { text: 'A.' + g.id, margin: [0, 4, 0, 4] },
                             { text: g.title, margin: [0, 4, 0, 4] },
                             { text: g.risk.toUpperCase(), bold: true, color: riskColor, margin: [0, 4, 0, 4] },
-                            { text: g.nist || 'N/A', fontSize: 8, margin: [0, 4, 0, 4] },
-                            { text: g.cis || 'N/A', fontSize: 8, margin: [0, 4, 0, 4] },
+                            { text: g.just || 'N/A', fontSize: 8, margin: [0, 4, 0, 4], fontStyle: 'italic' },
                             { text: g.rem || 'Review mapping and implement formal process logic.', margin: [0, 4, 0, 4] }
                         ]);
                     });
@@ -730,9 +751,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                                                     [{ text: 'Partial (Medium Risk):', color: '#F59E0B' }, { text: partC.toString(), bold: true, color: '#F59E0B' }],
                                                     [{ text: 'Gap (High Risk):', color: '#EF4444' }, { text: gapC.toString(), bold: true, color: '#EF4444' }],
                                                     [{ text: 'Not Applicable:', color: '#6b7280' }, { text: naC.toString(), bold: true, color: '#6b7280' }],
-                                                    [{ text: 'Framework Alignment', bold: true, margin: [0, 10, 0, 5], border: [false, true, false, false] }, {text: '', border: [false, true, false, false]}],
-                                                    ['NIST CSF 2.0 readiness:', { text: nistP + '%', bold: true, color: '#0A84FF' }],
-                                                    ['CIS Controls v8 readiness:', { text: cisP + '%', bold: true, color: '#FF9F0A' }]
+                                                    [{ text: 'Framework Alignment', bold: true, margin: [0, 10, 0, 5], fontSize: 10 }, {}],
+                                                    ['NIST CSF 2.0 readiness:', { text: document.getElementById('nistScore').innerText, bold: true, color: '#0A84FF' }],
+                                                    ['CIS Controls v8 readiness:', { text: document.getElementById('cisScore').innerText, bold: true, color: '#FF9F0A' }]
                                                 ]
                                             }
                                         }
@@ -752,7 +773,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         {
                             table: {
                                 headerRows: 1,
-                                widths: ['8%', '20%', '10%', '12%', '10%', '40%'],
+                                widths: ['8%', '22%', '10%', '20%', '40%'],
                                 body: gapTableBody
                             },
                             layout: {
@@ -836,7 +857,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // SHEET 2: Gap Analysis Data
                 const exportData = [];
-                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Applicability Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice", "NIST CSF 2.0", "CIS Controls v8", "Expert Rationale"]);
+                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Applicability Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice", "NIST CSF 2.0", "CIS Controls v8", "N/A Comment / Internal Note", "Expert Rationale"]);
 
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
@@ -863,6 +884,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                             control.remediation_advice,
                             control.nist_mapping || "N/A",
                             control.cis_mapping || "N/A",
+                            userState[control.control_id + '_just'] || "",
                             control.expert_rationale || ""
                         ]);
                     });
