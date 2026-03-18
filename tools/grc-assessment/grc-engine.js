@@ -252,11 +252,25 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="control-header" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:0.5rem;">
                     <span class="control-id" style="background:var(--bg-dark); padding:0.2rem 0.6rem; border-radius:4px; font-weight:bold; color:var(--text-primary); border:1px solid var(--border); font-size:0.9rem;">Control A.${control.control_id}</span>
                     <span class="domain-tag" style="background:rgba(0, 217, 255, 0.1); color:#00D9FF; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.8rem; font-weight:600;"><i class="fas fa-layer-group"></i> ${domain.name}</span>
+                    ${control.nist_mapping ? `<span class="framework-badge nist" style="background:rgba(10, 132, 255, 0.1); color:#0A84FF; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid rgba(10, 132, 255, 0.3);">NIST: ${control.nist_mapping}</span>` : ''}
+                    ${control.cis_mapping ? `<span class="framework-badge cis" style="background:rgba(255, 159, 10, 0.1); color:#FF9F0A; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid rgba(255, 159, 10, 0.3);">CIS: ${control.cis_mapping}</span>` : ''}
                 </div>
                 <h3 class="control-title" style="margin-top:0.2rem;">${control.control_title}</h3>
                 <p class="control-objective" style="color:var(--text-muted); font-size:0.85rem; margin-bottom: 2rem; font-style: italic;">
                     <i class="fas fa-bullseye"></i> Objective: ${control.objective}
                 </p>
+
+                ${control.expert_rationale ? `
+                <div class="expert-insight" style="margin: 1.5rem 0; padding: 1.2rem; background: rgba(139, 92, 246, 0.05); border-left: 4px solid #8B5CF6; border-radius: 0 8px 8px 0; font-size: 0.95rem; line-height: 1.6;">
+                    <div style="font-weight: bold; color: #8B5CF6; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-lightbulb"></i> Consultant Insight
+                    </div>
+                    <div style="color: var(--text-primary); font-style: italic;">
+                        "${control.expert_rationale}"
+                    </div>
+                </div>
+                ` : ''}
+
                 <div class="control-question">
                     <strong>Auditor Check:</strong> ${control.auditor_question}
                 </div>
@@ -468,6 +482,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const labels = [];
         const dataset = [];
         const criticalGaps = [];
+        let nistTotal = 0, nistValue = 0;
+        let cisTotal = 0, cisValue = 0;
 
         activeDomainIndices.forEach(globalIdx => {
             const d = grcData.domains[globalIdx];
@@ -479,8 +495,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             d.controls.forEach(c => {
                 total++;
                 const ans = userState[c.control_id];
+                const scoreValue = (ans === 'yes' || ans === 'na') ? 1 : (ans === 'partial' ? 0.5 : 0);
+                
                 if (ans === 'yes' || ans === 'na') impl++;
                 else if (ans === 'partial') impl += 0.5;
+
+                // Framework scoring
+                if (c.nist_mapping) { nistTotal++; nistValue += scoreValue; }
+                if (c.cis_mapping) { cisTotal++; cisValue += scoreValue; }
 
                 // Identify critical gaps
                 if (ans === 'no' || ans === 'partial') {
@@ -489,12 +511,22 @@ document.addEventListener('DOMContentLoaded', async () => {
                         title: c.control_title,
                         domain: d.name,
                         ans: ans,
-                        remediation: c.remediation_advice || "Review control requirements to implement baseline security."
+                        remediation: c.remediation_advice || "Review control requirements to implement baseline security.",
+                        nist: c.nist_mapping,
+                        cis: c.cis_mapping,
+                        rationale: c.expert_rationale
                     });
                 }
             });
             dataset.push(total === 0 ? 0 : Math.round((impl / total) * 100));
         });
+
+        // 0. Update Framework Scores
+        const nistPct = nistTotal === 0 ? 0 : Math.round((nistValue / nistTotal) * 100);
+        const cisPct = cisTotal === 0 ? 0 : Math.round((cisValue / cisTotal) * 100);
+        
+        document.getElementById('nistScore').innerText = `${nistPct}%`;
+        document.getElementById('cisScore').innerText = `${cisPct}%`;
 
         // 1. Render Chart.js Radar
         const ctx = document.getElementById('radarChart').getContext('2d');
@@ -562,11 +594,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <span class="domain-badge" style="border-color:${g.ans === 'partial' ? '#F59E0B' : '#EF4444'}; color:${g.ans === 'partial' ? '#F59E0B' : '#EF4444'};">${g.ans === 'partial' ? 'Partial' : 'Missing'}</span>
                     </div>
                     <h4 class="gap-title">${g.title}</h4>
+                    <div class="gap-mappings" style="display:flex; gap:8px; margin-bottom: 0.8rem;">
+                        ${g.nist ? `<span style="font-size:0.7rem; background:rgba(10, 132, 255, 0.1); color:#0A84FF; padding:1px 6px; border-radius:3px;">NIST: ${g.nist}</span>` : ''}
+                        ${g.cis ? `<span style="font-size:0.7rem; background:rgba(255, 159, 10, 0.1); color:#FF9F0A; padding:1px 6px; border-radius:3px;">CIS: ${g.cis}</span>` : ''}
+                    </div>
                     <p style="margin: 0.5rem 0 1rem; color: var(--text-muted); font-size:0.9rem;">Requires immediate action to meet conceptual compliance.</p>
-                    <div class="gap-remediation">
+                    <div class="gap-remediation" style="margin-bottom:1rem;">
                         <strong><i class="fas fa-wrench"></i> Suggested Remediation:</strong><br>
                         ${g.remediation}
                     </div>
+                    ${g.rationale ? `
+                    <div class="gap-rationale" style="font-size:0.85rem; color:var(--text-muted); border-top:1px solid var(--border); padding-top:0.8rem; font-style:italic;">
+                        <strong>Consultant Insight:</strong> "${g.rationale}"
+                    </div>
+                    ` : ''}
                 `;
                 ui.gapsContainer.appendChild(item);
             });
@@ -589,25 +630,37 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let totalC = 0, implC = 0, partC = 0, gapC = 0, naC = 0;
                 const criticalGaps = [];
 
+                let nistT = 0, nistV = 0, cisT = 0, cisV = 0;
+
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
                     domain.controls.forEach(c => {
                         totalC++;
                         const ans = userState[c.control_id] || '';
+                        const sVal = (ans === 'yes' || ans === 'na') ? 1 : (ans === 'partial' ? 0.5 : 0);
+
+                        if (c.nist_mapping) { nistT++; nistV += sVal; }
+                        if (c.cis_mapping) { cisT++; cisV += sVal; }
+
                         if (ans === 'yes') implC++;
-                        else if (ans === 'partial') { partC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', rem: c.remediation_advice}); }
+                        else if (ans === 'partial') { partC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping}); }
                         else if (ans === 'na') naC++;
-                        else { gapC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', rem: c.remediation_advice}); }
+                        else { gapC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping}); }
                     });
                 });
+
+                const nistP = nistT === 0 ? 0 : Math.round((nistV / nistT) * 100);
+                const cisP = cisT === 0 ? 0 : Math.round((cisV / cisT) * 100);
 
                 // 2. Build Gap Table
                 const gapTableBody = [
                     [
                         { text: 'Control ID', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
                         { text: 'Title', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
-                        { text: 'Risk Level', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
-                        { text: 'Suggested Remediation', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] }
+                        { text: 'Risk', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
+                        { text: 'NIST Mapping', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
+                        { text: 'CIS Mapping', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
+                        { text: 'Remediation Advice', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] }
                     ]
                 ];
 
@@ -620,6 +673,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                             { text: 'A.' + g.id, margin: [0, 4, 0, 4] },
                             { text: g.title, margin: [0, 4, 0, 4] },
                             { text: g.risk.toUpperCase(), bold: true, color: riskColor, margin: [0, 4, 0, 4] },
+                            { text: g.nist || 'N/A', fontSize: 8, margin: [0, 4, 0, 4] },
+                            { text: g.cis || 'N/A', fontSize: 8, margin: [0, 4, 0, 4] },
                             { text: g.rem || 'Review mapping and implement formal process logic.', margin: [0, 4, 0, 4] }
                         ]);
                     });
@@ -674,7 +729,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                                                     [{ text: 'Implemented (Low Risk):', color: '#10B981' }, { text: implC.toString(), bold: true, color: '#10B981' }],
                                                     [{ text: 'Partial (Medium Risk):', color: '#F59E0B' }, { text: partC.toString(), bold: true, color: '#F59E0B' }],
                                                     [{ text: 'Gap (High Risk):', color: '#EF4444' }, { text: gapC.toString(), bold: true, color: '#EF4444' }],
-                                                    [{ text: 'Not Applicable:', color: '#6b7280' }, { text: naC.toString(), bold: true, color: '#6b7280' }]
+                                                    [{ text: 'Not Applicable:', color: '#6b7280' }, { text: naC.toString(), bold: true, color: '#6b7280' }],
+                                                    [{ text: 'Framework Alignment', bold: true, margin: [0, 10, 0, 5], border: [false, true, false, false] }, {text: '', border: [false, true, false, false]}],
+                                                    ['NIST CSF 2.0 readiness:', { text: nistP + '%', bold: true, color: '#0A84FF' }],
+                                                    ['CIS Controls v8 readiness:', { text: cisP + '%', bold: true, color: '#FF9F0A' }]
                                                 ]
                                             }
                                         }
@@ -694,7 +752,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         {
                             table: {
                                 headerRows: 1,
-                                widths: ['15%', '25%', '15%', '45%'],
+                                widths: ['8%', '20%', '10%', '12%', '10%', '40%'],
                                 body: gapTableBody
                             },
                             layout: {
@@ -778,7 +836,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // SHEET 2: Gap Analysis Data
                 const exportData = [];
-                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Applicability Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice"]);
+                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Applicability Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice", "NIST CSF 2.0", "CIS Controls v8", "Expert Rationale"]);
 
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
@@ -802,7 +860,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                             control.objective,
                             control.auditor_question,
                             control.evidence_required,
-                            control.remediation_advice || "Review mapping and implement process"
+                            control.remediation_advice,
+                            control.nist_mapping || "N/A",
+                            control.cis_mapping || "N/A",
+                            control.expert_rationale || ""
                         ]);
                     });
                 });

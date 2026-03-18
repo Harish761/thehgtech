@@ -14,7 +14,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are information security policies defined, approved by management, published, and communicated to relevant personnel?",
                     "evidence_required": "Provide the master Information Security Policy with evidence of annual executive approval and distribution logs.",
                     "objective": "Ensure strategic alignment and management backing for the entire security program.",
-                    "remediation_advice": "Draft a unified Information Security Policy document. Have the CEO or Board sign it. Set a recurring calendar invite for an annual review and update session."
+                    "remediation_advice": "Draft a unified Information Security Policy document. Have the CEO or Board sign it. Set a recurring calendar invite for an annual review and update session.",
+                    "nist_mapping": "GV.PO-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Policies are the constitution of your security program. Without signed management approval, security is seen as an 'IT problem' rather than a business requirement, leading to lack of funding and cooperation."
                 },
                 {
                     "control_id": "5.2",
@@ -22,7 +25,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are all information security responsibilities explicitly mapped to individual roles rather than ambiguous team designations?",
                     "evidence_required": "Provide an organizational chart highlighting security roles and job descriptions detailing explicit security duties.",
                     "objective": "Prevent security tasks from falling through the cracks by establishing clear, individual accountability.",
-                    "remediation_advice": "Update HR job descriptions for IT and Security personnel to explicitly list their security responsibilities. Maintain an internal RACI matrix for incident response."
+                    "remediation_advice": "Update HR job descriptions for IT and Security personnel to explicitly list their security responsibilities. Maintain an internal RACI matrix for incident response.",
+                    "nist_mapping": "GV.AM-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Ambiguity is the enemy of security. If everyone is responsible for backups, no one is. Explicitly naming owners ensures accountability when an audit or incident occurs."
                 },
                 {
                     "control_id": "5.3",
@@ -30,7 +36,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are conflicting duties (e.g., development vs. production deployment) separated to prevent unauthorized changes or fraud?",
                     "evidence_required": "Provide an access matrix or Git workflow documentation showing how developers are restricted from pushing directly to production without review.",
                     "objective": "Mitigate the risk of intentional fraud or accidental catastrophic errors by requiring a two-person rule for critical actions.",
-                    "remediation_advice": "Enforce branch protection rules in GitHub/GitLab requiring at least one approving review before merging to main. Revoke direct production access for standard developers."
+                    "remediation_advice": "Enforce branch protection rules in GitHub/GitLab requiring at least one approving review before merging to main. Revoke direct production access for standard developers.",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "3.3",
+                    "expert_rationale": "One person should never have the power to destroy the entire company by mistake or malice. Segregation of duties is the primary defense against internal fraud and 'fat-finger' disasters."
                 },
                 {
                     "control_id": "5.4",
@@ -38,7 +47,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Does management compel all active staff and contracted external parties to adhere strictly to established Information Security Policies?",
                     "evidence_required": "Provide the employee handbook or external contractor SLA agreement containing an explicitly signed Information Security acknowledgement.",
                     "objective": "Establish a legal and operational baseline mandating compliance from all parties accessing company data.",
-                    "remediation_advice": "Incorporate a 'Security Acceptable Use' clause into all standard employment contracts and external vendor Master Service Agreements (MSAs)."
+                    "remediation_advice": "Incorporate a 'Security Acceptable Use' clause into all standard employment contracts and external vendor Master Service Agreements (MSAs).",
+                    "nist_mapping": "GV.OC-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Security is only as strong as its enforcement. If management ignores policy violations for 'high performers,' it sends a signal to the whole organization that security is optional."
                 },
                 {
                     "control_id": "5.5",
@@ -46,7 +58,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Does the organization maintain documented, up-to-date contact channels with relevant law enforcement and regulatory authorities?",
                     "evidence_required": "Provide the organization's Incident Response Plan detailing exact phone numbers and emails for local regulatory bodies (e.g., CISA, FBI).",
                     "objective": "Ensure rapid legal escalation and compliance with breach notification laws during a critical cyber incident.",
-                    "remediation_advice": "Create an 'Emergency Contacts' appendix within the primary Incident Response Plan listing law enforcement and legal counsel."
+                    "remediation_advice": "Create an 'Emergency Contacts' appendix within the primary Incident Response Plan listing law enforcement and legal counsel.",
+                    "nist_mapping": "ID.GV-1",
+                    "cis_mapping": "17.4",
+                    "expert_rationale": "In a breach, every minute counts for legal notification windows (like the 72-hour GDPR limit). Searching for the FBI's phone number during an active ransomware attack is a massive failure."
                 },
                 {
                     "control_id": "5.6",
@@ -54,7 +69,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is the security team actively engaged with specialized intelligence forums, professional security associations, or ISACs?",
                     "evidence_required": "Provide a roster of current memberships to organizations like InfraGard, FS-ISAC, or ISACA.",
                     "objective": "Ensure the organization receives early warning of emerging threats specific to its industry.",
-                    "remediation_advice": "Enlist key security personnel in relevant industry-specific Information Sharing and Analysis Centers (ISACs) or regional cybersecurity task forces."
+                    "remediation_advice": "Enlist key security personnel in relevant industry-specific Information Sharing and Analysis Centers (ISACs) or regional cybersecurity task forces.",
+                    "nist_mapping": "ID.RA-2",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Cybersecurity is a team sport. Being part of an ISAC means you hear about an exploit targeting your industry hours before it hits the news—giving you time to patch before you're attacked."
                 },
                 {
                     "control_id": "5.7",
@@ -62,7 +80,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is actionable tactical and strategic threat intelligence actively collected and utilized to fortify defensive controls?",
                     "evidence_required": "Provide evidence of an integrated Threat Intelligence Feed (e.g., inside a SIEM) or threat reports presented to management.",
                     "objective": "Transition the security posture from reactive to proactive by preemptively analyzing emerging adversary maneuvers.",
-                    "remediation_advice": "Integrate open-source (OSINT) or commercial threat intelligence feeds via STIX/TAXII into your primary EDR or SIEM platform."
+                    "remediation_advice": "Integrate open-source (OSINT) or commercial threat intelligence feeds via STIX/TAXII into your primary EDR or SIEM platform.",
+                    "nist_mapping": "ID.RA-2",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Static defenses fail against dynamic attackers. Threat intelligence tells you what the current 'weather' is in the adversary landscape so you can put up your umbrella before the storm happens."
                 },
                 {
                     "control_id": "5.8",
@@ -70,7 +91,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are security requirements scoped and funded at the inception of all new projects, rather than bolted on at the end?",
                     "evidence_required": "Provide a project management charter or sprint planning template demonstrating a 'Security Review' gate.",
                     "objective": "Embed security natively into the Software Development Life Cycle (SDLC) or enterprise deployments (Shift-Left).",
-                    "remediation_advice": "Require a formal security architecture review sign-off before any new major application or infrastructure change goes to production."
+                    "remediation_advice": "Require a formal security architecture review sign-off before any new major application or infrastructure change goes to production.",
+                    "nist_mapping": "PR.IP-2",
+                    "cis_mapping": "16.1",
+                    "expert_rationale": "Fixing a security flaw during the design phase costs $10. Fixing it after a breach costs $1,000,000. 'Shift-Left' security is not just safer—it’s far cheaper for the business."
                 },
                 {
                     "control_id": "5.9",
@@ -78,7 +102,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is an accurate, comprehensive inventory maintained outlining all critical information assets (including data, hardware, and software)?",
                     "evidence_required": "Provide the authoritative IT Asset Management (ITAM) database or spreadsheet listing assets and owners.",
                     "objective": "Provide definitive visibility over the organizational attack surface and assign accountability for every asset.",
-                    "remediation_advice": "Deploy an automated ITAM discovery tool (e.g., Lansweeper, AWS Config) to continuously map and document active enterprise assets."
+                    "remediation_advice": "Deploy an automated ITAM discovery tool (e.g., Lansweeper, AWS Config) to continuously map and document active enterprise assets.",
+                    "nist_mapping": "ID.AM-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "You cannot protect what you do not know you have. Most breaches occur on 'shadow IT' or forgotten servers that aren't being patched because they aren't in the inventory."
                 },
                 {
                     "control_id": "5.10",
@@ -86,7 +113,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are there explicit, documented rules governing the acceptable usage and handling guidelines for organizational tech assets?",
                     "evidence_required": "Provide the published Acceptable Use Policy (AUP) and evidence of employee attestation/signature upon hire.",
                     "objective": "Define clear boundaries to prevent shadow-IT and unsafe data handling practices by employees.",
-                    "remediation_advice": "Draft an Acceptable Use Policy explicitly banning unauthorized browser extensions, personal cloud storage for work data, and unapproved generative AI tools."
+                    "remediation_advice": "Draft an Acceptable Use Policy explicitly banning unauthorized browser extensions, personal cloud storage for work data, and unapproved generative AI tools.",
+                    "nist_mapping": "PR.AT-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "An AUP is your first line of defense in court. If an employee uses a work laptop for gambling or personal storage, the AUP allows the organization to take immediate legal and disciplinary action."
                 },
                 {
                     "control_id": "5.11",
@@ -94,7 +124,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is there a formal process ensuring employees and external parties return all organizational assets upon termination of their agreement?",
                     "evidence_required": "Provide an offboarding checklist signed by HR and IT confirming the return of a laptop and access badges for a recently departed employee.",
                     "objective": "Prevent hardware theft and unauthorized data retention by former personnel.",
-                    "remediation_advice": "Implement a mandatory HR offboarding workflow that holds final offboarding sign-off until IT confirms physical asset retrieval."
+                    "remediation_advice": "Implement a mandatory HR offboarding workflow that holds final offboarding sign-off until IT confirms physical asset retrieval.",
+                    "nist_mapping": "PR.IP-11",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Departed employees with active laptops are a major source of data leaks. A strict asset return policy ensures that proprietary code and customer data don't walk out the door forever."
                 },
                 {
                     "control_id": "5.12",
@@ -102,7 +135,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is information classified in terms of legal requirements, value, criticality, and sensitivity (e.g., Public, Internal, Confidential)?",
                     "evidence_required": "Provide the Data Classification Policy and examples of classified documents.",
                     "objective": "Ensure information receives an appropriate level of protection based on its actual risk and value.",
-                    "remediation_advice": "Establish a simple 3 or 4-tier data classification matrix (Public, Internal, Confidential, Restricted) and train employees on identifying data types."
+                    "remediation_advice": "Establish a simple 3 or 4-tier data classification matrix (Public, Internal, Confidential, Restricted) and train employees on identifying data types.",
+                    "nist_mapping": "ID.AM-5",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Treating all data equally is inefficient. You wouldn't lock a company lunch menu in a vault. Data classification allows you to focus your expensive security resources on what actually matters (Confidential/Restricted data)."
                 },
                 {
                     "control_id": "5.13",
@@ -110,7 +146,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are sensitive documents and emails appropriately labelled according to the data classification scheme?",
                     "evidence_required": "Provide screenshots demonstrating email or document headers indicating 'Confidential' or 'Internal Use Only'.",
                     "objective": "Ensure personnel are constantly aware of the sensitivity of the data they are handling to prevent inadvertent disclosure.",
-                    "remediation_advice": "Enable automated tagging in Microsoft Purview or Google Workspace to force employees to select a data classification unpon creating a new document or email."
+                    "remediation_advice": "Enable automated tagging in Microsoft Purview or Google Workspace to force employees to select a data classification unpon creating a new document or email.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Labeling is visual friction that prevents mistakes. If a document is clearly marked [CONFIDENTIAL], an employee is much less likely to accidentally forward it to an external vendor."
                 },
                 {
                     "control_id": "5.14",
@@ -118,7 +157,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are formal rules, procedures, and encrypted channels mandated for transferring information internally and to external parties?",
                     "evidence_required": "Provide the secure data transfer procedure and evidence of using secure mechanisms (e.g., SFTP, encrypted portals) over unencrypted email.",
                     "objective": "Protect data in transit from interception and tampering.",
-                    "remediation_advice": "Mandate TLS 1.2+ for all data pathways and deploy a secure file transfer solution for sending large or sensitive files to external clients."
+                    "remediation_advice": "Mandate TLS 1.2+ for all data pathways and deploy a secure file transfer solution for sending large or sensitive files to external clients.",
+                    "nist_mapping": "PR.DS-2",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Sending PII over unencrypted email is a 'Critical Risk'. Secure transfer protocols ensure that even if an attacker intercepts the data, they cannot read it or alter it during transit."
                 },
                 {
                     "control_id": "5.15",
@@ -126,7 +168,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are rules governing logical and physical access control established and documented based on business requirements?",
                     "evidence_required": "Provide the formal Access Control Policy outlining Role-Based Access Control (RBAC) mandates.",
                     "objective": "Limit access exclusively to authorized entities based on the Principle of Least Privilege (PoLP).",
-                    "remediation_advice": "Document an RBAC model specifying exactly what systems HR, Finance, and Engineering are allowed to access by default."
+                    "remediation_advice": "Document an RBAC model specifying exactly what systems HR, Finance, and Engineering are allowed to access by default.",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "3.1",
+                    "expert_rationale": "Access control is the heart of security. If everyone has access to everything, you don't have a perimeter—you have a free-for-all. RBAC ensures that if one account is compromised, the attacker can only see what that specific role allows."
                 },
                 {
                     "control_id": "5.16",
@@ -134,7 +179,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is the complete lifecycle of digital identities (creation, modification, suspension) formally controlled and documented?",
                     "evidence_required": "Provide HR-to-IT onboarding/offboarding workflow documents and standard Service Desk ticketing logs.",
                     "objective": "Prevent unauthorized privilege escalation and ensure no orphaned accounts exist when employees leave.",
-                    "remediation_advice": "Integrate HR software directly with the core Identity Provider (Okta/Entra) to trigger automated, instant account suspensions upon termination."
+                    "remediation_advice": "Integrate HR software directly with the core Identity Provider (Okta/Entra) to trigger automated, instant account suspensions upon termination.",
+                    "nist_mapping": "PR.AA-1",
+                    "cis_mapping": "6.1",
+                    "expert_rationale": "Orphaned accounts (accounts belonging to people who left the company) are a top target for hackers. A formal identity lifecycle ensures that when an employee walks out the door, their digital keys are revoked instantly."
                 },
                 {
                     "control_id": "5.17",
@@ -142,7 +190,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is the allocation and management of secret authentication information (passwords, API keys) strictly controlled?",
                     "evidence_required": "Provide evidence of a corporate password manager implementation or vaulting system for service account credentials.",
                     "objective": "Prevent the compromise of credentials through poor handling, plaintext storage, or shoulder surfing.",
-                    "remediation_advice": "Deploy an enterprise password manager (e.g., 1Password, Bitwarden) and enforce rules banning the local storage of API keys in code."
+                    "remediation_advice": "Deploy an enterprise password manager (e.g., 1Password, Bitwarden) and enforce rules banning the local storage of API keys in code.",
+                    "nist_mapping": "PR.AA-P02",
+                    "cis_mapping": "6.1",
+                    "expert_rationale": "Passwords written on sticky notes or stored in 'passwords.txt' are a security nightmare. Secret management tools ensure that credentials are encrypted, rotated, and only accessible to those who need them."
                 },
                 {
                     "control_id": "5.18",
@@ -150,7 +201,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are detailed audits of user access rights across all critical systems conducted at regular, scheduled intervals?",
                     "evidence_required": "Provide the final sign-off sheet from a recent quarterly or bi-annual access review proving that stale accounts were removed.",
                     "objective": "Identify and revoke stale access or privilege creep that accumulates as personnel change roles over time.",
-                    "remediation_advice": "Mandate quarterly User Access Reviews (UAR) where department heads must manually re-certify the exact software accesses possessed by their direct reports."
+                    "remediation_advice": "Mandate quarterly User Access Reviews (UAR) where department heads must manually re-certify the exact software accesses possessed by their direct reports.",
+                    "nist_mapping": "PR.AC-4",
+                    "cis_mapping": "6.8",
+                    "expert_rationale": "Privilege creep happens when an employee changes roles but keeps their old permissions. Regular access reviews are the only way to catch 'over-privileged' users before an attacker exploits their excessive access."
                 },
                 {
                     "control_id": "5.19",
@@ -158,7 +212,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are processes established to assess and manage information security risks associated with the use of supplier products and services?",
                     "evidence_required": "Provide a completed vendor risk assessment questionnaire or SOC 2 review for a major cloud provider or software vendor.",
                     "objective": "Mitigate risks introduced by supply chain dependencies and third-party data processing.",
-                    "remediation_advice": "Implement a Vendor Risk Management (VRM) program. Require all critical vendors to provide a SOC 2 Type II report before finalizing procurement."
+                    "remediation_advice": "Implement a Vendor Risk Management (VRM) program. Require all critical vendors to provide a SOC 2 Type II report before finalizing procurement.",
+                    "nist_mapping": "ID.SC-1",
+                    "cis_mapping": "15.1",
+                    "expert_rationale": "You might be secure, but if your vendor isn't, your data is still at risk. Third-party risks (like the MoveIT or SolarWinds attacks) are now the #1 cause of major data breaches globally."
                 },
                 {
                     "control_id": "5.20",
@@ -166,7 +223,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are rigorous information security requirements contractually embedded in all agreements with third-party suppliers?",
                     "evidence_required": "Provide an SLA or vendor contract highlighting specific data breach notification clauses and security requirements.",
                     "objective": "Ensure legal enforcement of security standards across the vendor ecosystem.",
-                    "remediation_advice": "Work with legal counsel to draft a standard 'Data Processing Agreement' (DPA) requiring vendors to report any breaches to you within 48-72 hours."
+                    "remediation_advice": "Work with legal counsel to draft a standard 'Data Processing Agreement' (DPA) requiring vendors to report any breaches to you within 48-72 hours.",
+                    "nist_mapping": "ID.SC-3",
+                    "cis_mapping": "15.1",
+                    "expert_rationale": "A 'handshake agreement' won't help you after a breach. You need clear, legally binding clauses that force your vendors to notify you immediately if your customers' data is exposed."
                 },
                 {
                     "control_id": "5.21",
@@ -174,7 +234,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are specific processes established to manage security risks associated with Information and Communication Technology (ICT) products during their lifecycle?",
                     "evidence_required": "Provide evidence of Software Bill of Materials (SBOM) review or firmware integrity checking processes for acquired hardware/software.",
                     "objective": "Protect against implanted malware or backdoors in purchased technology products before deployment.",
-                    "remediation_advice": "Require software vendors to provide an SBOM demonstrating that third-party open-source components are updated and free from known critical CVEs."
+                    "remediation_advice": "Require software vendors to provide an SBOM demonstrating that third-party open-source components are updated and free from known critical CVEs.",
+                    "nist_mapping": "ID.SC-2",
+                    "cis_mapping": "15.1",
+                    "expert_rationale": "Modern software is built from thousands of open-source parts. If one of those parts is 'poisoned' (Supply Chain attack), your entire product is vulnerable. SBOMs allow you to audit what’s actually inside your software."
                 },
                 {
                     "control_id": "5.22",
@@ -182,7 +245,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are suppliers actively monitored, and are changes to their service delivery reviewed to ensure security is maintained?",
                     "evidence_required": "Provide minutes from an annual vendor review meeting highlighting SLA performance or security incident follow-ups.",
                     "objective": "Ensure that a supplier's security posture does not degrade over the life of the contract.",
-                    "remediation_advice": "Institute an annual reassessment policy for all Tier 1 vendors requiring them to submit updated compliance certifications (ISO/SOC2)."
+                    "remediation_advice": "Institute an annual reassessment policy for all Tier 1 vendors requiring them to submit updated compliance certifications (ISO/SOC2).",
+                    "nist_mapping": "ID.SC-4",
+                    "cis_mapping": "15.1",
+                    "expert_rationale": "A vendor's security is not static. A company that was safe last year might have laid off their security team or changed their stack this year. Annual 'check-ins' are the only way to ensure your vendors aren't drifting into unsafe territory."
                 },
                 {
                     "control_id": "5.23",
@@ -190,7 +256,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are processes established to manage the shared responsibility model regarding acquisition, use, management, and exit from cloud services?",
                     "evidence_required": "Provide a cloud security architecture document outlining customer vs. provider responsibilities for platforms like AWS, GCP, or Azure.",
                     "objective": "Prevent misconfigurations in cloud environments by distinctly defining what the organization must actively secure.",
-                    "remediation_advice": "Establish Cloud Security Posture Management (CSPM) tools to automatically check for misconfigurations like public S3 buckets in your cloud accounts."
+                    "remediation_advice": "Establish Cloud Security Posture Management (CSPM) tools to automatically check for misconfigurations like public S3 buckets in your cloud accounts.",
+                    "nist_mapping": "ID.SC-1",
+                    "cis_mapping": "15.1",
+                    "expert_rationale": "The biggest lie in cloud computing is 'The Cloud is Secure.' AWS secures the 'Cloud,' but YOU secure what’s 'In the Cloud.' Misunderstanding this 'Shared Responsibility Model' is the cause of almost all major S3 bucket leaks."
                 },
                 {
                     "control_id": "5.24",
@@ -198,7 +267,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is a formalized, step-by-step incident response playbook actively maintained and approved by leadership?",
                     "evidence_required": "Provide the master Incident Response Plan (IRP) document.",
                     "objective": "Ensure a consistent, rapid, and legally compliant methodology is executed when a cyber attack occurs.",
-                    "remediation_advice": "Draft an IRP utilizing the PICERL methodology (Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned)."
+                    "remediation_advice": "Draft an IRP utilizing the PICERL methodology (Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned).",
+                    "nist_mapping": "ID.RA-1",
+                    "cis_mapping": "17.1",
+                    "expert_rationale": "A breach is the worst time to decide who to call. An Incident Response Plan is like a fire drill—it ensures that when the house is on fire, everyone knows exactly where the exits are and how to use the fire extinguisher."
                 },
                 {
                     "control_id": "5.25",
@@ -206,7 +278,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are documented procedures heavily utilized to rapidly assess security events and categorize them accurately as information security incidents?",
                     "evidence_required": "Provide the incident classification matrix grading severity (e.g., SEV-1 to SEV-4) based on business impact.",
                     "objective": "Ensure that genuine threats are escalated immediately while minimizing the noise of false positives.",
-                    "remediation_advice": "Establish an alert triage flowchart detailing exactly who determines when a 'potential event' gets officially declared a 'security incident'."
+                    "remediation_advice": "Establish an alert triage flowchart detailing exactly who determines when a 'potential event' gets officially declared a 'security incident'.",
+                    "nist_mapping": "ID.RA-3",
+                    "cis_mapping": "17.1",
+                    "expert_rationale": "If you treat every 'anti-virus alert' like a nation-state attack, your team will burn out in a week. Triage allows you to ignore the 'noise' and focus all your firepower on the 'signals' that actually threaten the business."
                 },
                 {
                     "control_id": "5.26",
@@ -214,7 +289,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are incidents actively responded to in accordance with the documented procedures in the Incident Response Plan?",
                     "evidence_required": "Provide a post-incident report from a recent (or simulated) event showing containment, eradication, and communication timelines.",
                     "objective": "Limit the blast radius and damage caused by a cyber attack through coordinated, pre-planned actions.",
-                    "remediation_advice": "Run an annual tabletop simulation encompassing ransomware scenarios to train executives and IT staff on rapid response workflows."
+                    "remediation_advice": "Run an annual tabletop simulation encompassing ransomware scenarios to train executives and IT staff on rapid response workflows.",
+                    "nist_mapping": "ID.RA-1",
+                    "cis_mapping": "17.1",
+                    "expert_rationale": "Execution beats planning. It doesn't matter how good your PDF plan is if your sysadmin doesn't know which server to pull the plug on during an attack. Regular 'Tabletop Exercises' turn theory into muscle memory."
                 },
                 {
                     "control_id": "5.27",
@@ -222,7 +300,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is knowledge gained from resolving security incidents actively used to improve controls and reduce the likelihood of future attacks?",
                     "evidence_required": "Provide a completed 'Lessons Learned' document resulting from a past incident or tabletop exercise, showing specific process improvements.",
                     "objective": "Create a continuous feedback loop that hardens the organization after every successful or attempted breach.",
-                    "remediation_advice": "Mandate a 'Post-Mortem' meeting within 7 days of concluding any SEV-1 or SEV-2 incident to document gaps and assign remediation Jira tickets."
+                    "remediation_advice": "Mandate a 'Post-Mortem' meeting within 7 days of concluding any SEV-1 or SEV-2 incident to document gaps and assign remediation Jira tickets.",
+                    "nist_mapping": "ID.RA-2",
+                    "cis_mapping": "17.9",
+                    "expert_rationale": "Making a mistake is fine; making the same mistake twice is a failure of governance. 'Lessons Learned' sessions are the only way to ensure an attacker can't use the same back door next month."
                 },
                 {
                     "control_id": "5.28",
@@ -230,7 +311,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are procedures established for the identification, collection, acquisition, and preservation of digital evidence related to incidents?",
                     "evidence_required": "Provide the digital forensics policy detailing chain of custody procedures for compromised endpoints.",
                     "objective": "Ensure evidence remains legally admissible and intact for potential law enforcement prosecution or regulatory defense.",
-                    "remediation_advice": "Establish a policy requiring the immediate disconnection (but not powering down) of compromised machines, and utilization of write-blockers during imaging."
+                    "remediation_advice": "Establish a policy requiring the immediate disconnection (but not powering down) of compromised machines, and utilization of write-blockers during imaging.",
+                    "nist_mapping": "ID.RA-1",
+                    "cis_mapping": "17.6",
+                    "expert_rationale": "If you don't follow a technical 'Chain of Custody,' your evidence is useless in a court of law. Proper evidence collection is what allows you to prosecute hackers or defend your company against regulatory fines."
                 },
                 {
                     "control_id": "5.29",
@@ -238,7 +322,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are primary security controls intentionally designed to remain active or fail-secure during massive system disruptions or disaster recovery scenarios?",
                     "evidence_required": "Provide the Business Continuity Plan (BCP) indicating that remote backup environments still strictly enforce access controls like MFA.",
                     "objective": "Prevent attackers from exploiting the chaos of an outage to access unprotected backup systems.",
-                    "remediation_advice": "Audit the disaster recovery environment to ensure the exact same firewall rules and MFA conditional access policies are applied to the failover site."
+                    "remediation_advice": "Audit the disaster recovery environment to ensure the exact same firewall rules and MFA conditional access policies are applied to the failover site.",
+                    "nist_mapping": "PR.RP-1",
+                    "cis_mapping": "11.2",
+                    "expert_rationale": "Hackers love a crisis. If your backup server doesn't have the same firewall rules as your main server, an attacker will simply wait for a system crash and enter through the weakened 'Failover' door."
                 },
                 {
                     "control_id": "5.30",
@@ -246,7 +333,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is ICT readiness planned, implemented, maintained, and rigorously tested to ensure continuity of operations during disruptions?",
                     "evidence_required": "Provide an audit trail or sign-off form from an annual disaster recovery fail-over test.",
                     "objective": "Ensure the business can survive and operate despite hardware failures or localized disasters.",
-                    "remediation_advice": "Conduct an annual full or partial failover test scaling application infrastructure to secondary regions/zones to verify recovery time objectives (RTOs)."
+                    "remediation_advice": "Conduct an annual full or partial failover test scaling application infrastructure to secondary regions/zones to verify recovery time objectives (RTOs).",
+                    "nist_mapping": "PR.RP-1",
+                    "cis_mapping": "11.1",
+                    "expert_rationale": "A backup that has never been tested is not a backup—it’s a hope. ICT readiness is the technical proof that the company can survive a total data center loss without going out of business."
                 },
                 {
                     "control_id": "5.31",
@@ -254,7 +344,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are all relevant legal, statutory, regulatory, and contractual security requirements explicitly identified and kept up to date?",
                     "evidence_required": "Provide a compliance register tracking applicable laws (e.g., GDPR, CCPA, HIPAA) mapped to internal policies.",
                     "objective": "Avoid crippling fines or legal liabilities resulting from non-compliance with regional data protection laws.",
-                    "remediation_advice": "Maintain a master spreadsheet (Compliance Register) detailing every jurisdiction you operate in and their specific data breach notification windows."
+                    "remediation_advice": "Maintain a master spreadsheet (Compliance Register) detailing every jurisdiction you operate in and their specific data breach notification windows.",
+                    "nist_mapping": "GV.RR-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Ignorance of the law is not a defense. If you operate in California or Europe, you are legally bound by CCPA/GDPR. A compliance register ensures you aren't blindsided by a massive fine because you didn't know a new law applied to you."
                 },
                 {
                     "control_id": "5.32",
@@ -262,7 +355,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are procedures implemented to ensure compliance with legislative, regulatory, and contractual requirements on the use of intellectual property?",
                     "evidence_required": "Provide the software usage policy explicitly banning piracy and evidence of license management tools.",
                     "objective": "Protect the organization from catastrophic lawsuits driven by unlicensed software usage or copyright infringement.",
-                    "remediation_advice": "Enforce strict endpoint security policies preventing users from installing external, unlicensed software. Utilize MDM to audit installed applications."
+                    "remediation_advice": "Enforce strict endpoint security policies preventing users from installing external, unlicensed software. Utilize MDM to audit installed applications.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Unlicensed software is a double threat: it brings legal liability and it’s a primary carrier for malware. Managing IP rights is about protecting the company’s pocketbook and its perimeter at the same time."
                 },
                 {
                     "control_id": "5.33",
@@ -270,7 +366,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are organizational records heavily protected from loss, destruction, falsification, and unauthorized access in accordance with retention needs?",
                     "evidence_required": "Provide the Data Retention Policy and evidence of immutable, WORM (Write Once Read Many) storage used for critical logs or financial records.",
                     "objective": "Ensure the integrity and availability of historical data required for compliance or potential litigation.",
-                    "remediation_advice": "Enable Object Lock or compliance-mode retention policies on AWS S3 buckets storing audit trails to prevent deletion by ransomware."
+                    "remediation_advice": "Enable Object Lock or compliance-mode retention policies on AWS S3 buckets storing audit trails to prevent deletion by ransomware.",
+                    "nist_mapping": "PR.DS-10",
+                    "cis_mapping": "11.1",
+                    "expert_rationale": "If an attacker deletes your audit logs during a breach, you can't prove what happened. record protection (using WORM storage) ensures that your history is 'tamper-proof,' which is vital for forensic investigations and tax audits."
                 },
                 {
                     "control_id": "5.34",
@@ -278,7 +377,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are stringent processes in place to ensure the privacy and protection of Personally Identifiable Information (PII) according to relevant legislation?",
                     "evidence_required": "Provide the external Privacy Policy and the internal procedures for handling Data Subject Access Requests (DSARs).",
                     "objective": "Safeguard user privacy and prevent costly class-action lawsuits or fines under frameworks like GDPR or CCPA.",
-                    "remediation_advice": "Implement data mapping to understand exactly where PII flows. Build a standardized, trackable process for honoring user deletion requests within 30 days."
+                    "remediation_advice": "Implement data mapping to understand exactly where PII flows. Build a standardized, trackable process for honoring user deletion requests within 30 days.",
+                    "nist_mapping": "GV.RR-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Privacy is a civil right. If you lose a customer's credit card, it's bad. If you lose their home address, health data, or social security number (PII), it's a lifespan-altering event for the victim and a business-ending event for the company."
                 },
                 {
                     "control_id": "5.35",
@@ -286,7 +388,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is the organization's approach to managing information security reviewed independently at planned intervals?",
                     "evidence_required": "Provide the executive summary from a recent external penetration test or an external ISO/SOC2 audit report.",
                     "objective": "Eliminate blind spots by having an unbiased, third-party subject matter expert validate the internal security posture.",
-                    "remediation_advice": "Conduct an annual penetration test performed by an entirely external cyber security consultancy. Track their findings to full remediation."
+                    "remediation_advice": "Conduct an annual penetration test performed by an entirely external cyber security consultancy. Track their findings to full remediation.",
+                    "nist_mapping": "GV.MT-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Every security team has blind spots. An independent review (like a Pentest) is a 'reality check' that finds the gaps you became too familiar to see. It’s the difference between 'thinking' you're secure and 'knowing' you are."
                 },
                 {
                     "control_id": "5.36",
@@ -294,7 +399,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Do managers consistently review the compliance of information processing within their domain of responsibility against security policies?",
                     "evidence_required": "Provide minutes from a monthly or quarterly management meeting outlining the remediation of identified internal policy deviations.",
                     "objective": "Ensure that security operations are acting in accordance with the theoretical rules set by governance.",
-                    "remediation_advice": "Establish an internal audit schedule. Have department heads conduct self-assessments against the core critical controls and report to the CISO."
+                    "remediation_advice": "Establish an internal audit schedule. Have department heads conduct self-assessments against the core critical controls and report to the CISO.",
+                    "nist_mapping": "GV.MT-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Policies only matter if they are followed. Constant internal compliance checks ensure that security isn't just a 'once-a-year' audit exercise, but a continuous operational reality."
                 },
                 {
                     "control_id": "5.37",
@@ -302,7 +410,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are operating procedures for all critical information processing facilities documented, maintained, and continually available to personnel?",
                     "evidence_required": "Provide an internal wiki page (e.g., Confluence) containing standardized Runbooks detailing the exact server patching or reboot process.",
                     "objective": "Ensure knowledge is not isolated to single individuals and operational errors are minimized during maintenance.",
-                    "remediation_advice": "Require Engineering and IT to document standard operating procedures (SOPs) for all infrastructure tasks. Review SOPs annually."
+                    "remediation_advice": "Require Engineering and IT to document standard operating procedures (SOPs) for all infrastructure tasks. Review SOPs annually.",
+                    "nist_mapping": "PR.IP-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "The 'Bus Factor': If your lead sysadmin is hit by a bus tomorrow, can the rest of the team still patch the firewall? Documented SOPs prevent 'Tribal Knowledge' from being a single point of failure."
                 }
             ]
         },
@@ -318,7 +429,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are background verification checks carried out for all candidates prior to employment, proportional to business requirements?",
                     "evidence_required": "Provide HR policy on background checks and an anonymized receipt/report from your background check vendor for a recent hire.",
                     "objective": "Reduce the risk of insider threats by verifying candidate history before granting access to sensitive assets.",
-                    "remediation_advice": "Partner with a background screening vendor (e.g., Checkr) and make a cleared background check a mandatory condition in all employment offer letters."
+                    "remediation_advice": "Partner with a background screening vendor (e.g., Checkr) and make a cleared background check a mandatory condition in all employment offer letters.",
+                    "nist_mapping": "PR.AT-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Trust, but verify. A background check is the easiest way to prevent hired insiders from joining your company for industrial espionage or embezzlement."
                 },
                 {
                     "control_id": "6.2",
@@ -326,7 +440,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Do employment agreements explicitly state the employee's legal responsibilities for protecting the organization's confidential data?",
                     "evidence_required": "Provide a standard template employment contract containing an NDA and an information security responsibility clause.",
                     "objective": "Establish a legally binding obligation for personnel to protect company assets both during and after their tenure.",
-                    "remediation_advice": "Require all new hires and contractors to sign a Non-Disclosure Agreement (NDA) on Day 1 before receiving access to any internal IT systems."
+                    "remediation_advice": "Require all new hires and contractors to sign a Non-Disclosure Agreement (NDA) on Day 1 before receiving access to any internal IT systems.",
+                    "nist_mapping": "PR.AT-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "If a security expectation isn't in the contract, it's very hard to enforce in court. Defining responsibilities 'by law' protects the company's IP if an employee decides to leak data to a competitor."
                 },
                 {
                     "control_id": "6.3",
@@ -334,7 +451,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Do all employees and contractors receive ongoing, relevant information security awareness training?",
                     "evidence_required": "Provide the completion report from your training platform showing >95% completion rate for the current year, and the curriculum syllabus.",
                     "objective": "Transform the workforce into a human firewall to detect social engineering and phishing.",
-                    "remediation_advice": "Deploy a security awareness platform (e.g., KnowBe4). Mandate training during onboarding and annually thereafter. Conduct monthly simulated phishing campaigns."
+                    "remediation_advice": "Deploy a security awareness platform (e.g., KnowBe4). Mandate training during onboarding and annually thereafter. Conduct monthly simulated phishing campaigns.",
+                    "nist_mapping": "PR.AT-1",
+                    "cis_mapping": "14.1",
+                    "expert_rationale": "90% of breaches start with a single phishing email. Security training is not about 'compliance'—it's about reducing the chance of your CEO accidentally giving away their password to a Russian bot."
                 },
                 {
                     "control_id": "6.4",
@@ -342,7 +462,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is there a formal, communicated disciplinary process utilized when employees commit severe internal security policy violations?",
                     "evidence_required": "Provide the HR penalty matrix outlining actions taken for repeat security offenses (e.g., failing phishing tests repeatedly vs. intentional data exfiltration).",
                     "objective": "Deter intentional insider threats by outlining severe, concrete consequences for malicious or recklessly negligent actions.",
-                    "remediation_advice": "Publish a disciplinary playbook alongside the security policy outlining escalating warnings up to and including termination for severe security violations."
+                    "remediation_advice": "Publish a disciplinary playbook alongside the security policy outlining escalating warnings up to and including termination for severe security violations.",
+                    "nist_mapping": "PR.AT-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Rules without consequences are merely suggestions. If an employee intentionally disables the firewall or steals customer data, an clear disciplinary process ensures the company can terminate them legally and swiftly."
                 },
                 {
                     "control_id": "6.5",
@@ -350,7 +473,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are information security responsibilities and duties that remain valid after termination explicitly defined, documented, and enforced?",
                     "evidence_required": "Provide exit interview documentation proving departing employees are explicitly reminded of their ongoing NDA obligations.",
                     "objective": "Ensure highly sensitive intellectual property is not stolen or leaked to competitors upon an employee's departure.",
-                    "remediation_advice": "Create an HR exit-interview checklist requiring departing personnel to surrender all physical hardware and sign a document reaffirming their post-employment confidentiality agreement."
+                    "remediation_advice": "Create an HR exit-interview checklist requiring departing personnel to surrender all physical hardware and sign a document reaffirming their post-employment confidentiality agreement.",
+                    "nist_mapping": "PR.IP-11",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "The day an employee leaves to join a competitor is the highest risk day for data theft. Reaffirming their NDA during the exit interview serves as a critical legal reminder that 'taking the customer list' is illegal."
                 },
                 {
                     "control_id": "6.6",
@@ -358,7 +484,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are universally robust NDAs executed outlining the exact definitions and handling instructions for confidential information?",
                     "evidence_required": "Provide a copy of the active corporate NDA template. Highlight definitions of what constitutes 'Confidential Information'.",
                     "objective": "Provide strong legal recourse in the event of unauthorized organizational data leakage.",
-                    "remediation_advice": "Audit current contractor agreements to ensure NDAs natively cover modern data scopes (like source code, customer DBs, and API documentation)."
+                    "remediation_advice": "Audit current contractor agreements to ensure NDAs natively cover modern data scopes (like source code, customer DBs, and API documentation).",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "An NDA is your baseline defensive shield. It defines what is 'secret' and sets the penalty for telling those secrets. Without it, your trade secrets are legally 'public domain.'"
                 },
                 {
                     "control_id": "6.7",
@@ -366,7 +495,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Are technical and policy-based security measures implemented to protect information accessed, processed, or stored at remote working sites?",
                     "evidence_required": "Provide the Remote Work Security Policy detailing the requirement for VPNs and the prohibition of using public Wi-Fi natively.",
                     "objective": "Address the expanded attack surface created by 'Work From Anywhere' models and home networks.",
-                    "remediation_advice": "Deploy Always-On corporate VPNs (e.g., Zscaler, GlobalProtect) and mandate Full Disk Encryption (BitLocker/FileVault) for all mobile endpoints."
+                    "remediation_advice": "Deploy Always-On corporate VPNs (e.g., Zscaler, GlobalProtect) and mandate Full Disk Encryption (BitLocker/FileVault) for all mobile endpoints.",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "The home office is the new front line. Remote work bypasses your office firewalls. Ensuring employees use corporate VPNs and encrypted disks is the only way to maintain a secure perimeter when everyone is remote."
                 },
                 {
                     "control_id": "6.8",
@@ -374,7 +506,10 @@ const THEHGTECH_GRC_DATA = {
                     "auditor_question": "Is there a simple, documented, and universally understood mechanism for employees to report suspected security weaknesses or incidents?",
                     "evidence_required": "Provide a screenshot of the internal 'Report a Phishing Email' button or the intranet page detailing how to contact the security team.",
                     "objective": "Ensure rapid detection of incidents by empowering the entire company to report anomalies.",
-                    "remediation_advice": "Add a 'Phish Alert' button to employee email clients. Create a dedicated Slack/Teams channel (e.g., #security-alerts) and document the escalation path during onboarding."
+                    "remediation_advice": "Add a 'Phish Alert' button to employee email clients. Create a dedicated Slack/Teams channel (e.g., #security-alerts) and document the escalation path during onboarding.",
+                    "nist_mapping": "ID.RA-1",
+                    "cis_mapping": "17.1",
+                    "expert_rationale": "Your employees see things your software won't. If an employee sees a stranger in the data center or a weird popup, you want them to report it immediately. A 'No-Fear Reporting' culture can stop a breach before it even starts."
                 }
             ]
         },
@@ -387,114 +522,156 @@ const THEHGTECH_GRC_DATA = {
                 {
                     "control_id": "7.1",
                     "control_title": "Physical Security Perimeters",
-                    "auditor_question": "Are security perimeters (e.g., walls, card-controlled gates, staffed reception desks) utilized to protect areas containing sensitive information?",
-                    "evidence_required": "Provide a floor plan highlighting secure zones and logs showing badge entry requirements for the server room or main office.",
-                    "objective": "Prevent unauthorized physical access, damage, and interference to the organization's information and information processing facilities.",
-                    "remediation_advice": "Install electronic badge readers at all primary entrances. Implement a strict visitor management system requiring sign-ins, ID checks, and guest escorts."
+                    "auditor_question": "Are physical security perimeters (walls, fences, entry gates) defined and used to protect areas that contain sensitive information?",
+                    "evidence_required": "Provide a site map highlighting secure zones and photos of perimeter fencing or badge-access entry gates.",
+                    "objective": "Prevent unauthorized physical access, damage, and interference with the organization's information and information processing facilities.",
+                    "remediation_advice": "Clearly define 'Public', 'Employee-Only', and 'Secure' zones within the office layout. Ensure all boundary doors remain locked by default.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "If a stranger can walk off the street and into your server room, your digital firewalls don't matter. Physical perimeters are the first layer of defense, ensuring that only authorized personnel can even get near your critical hardware."
                 },
                 {
                     "control_id": "7.2",
-                    "control_title": "Physical Entry",
-                    "auditor_question": "Are secure areas protected by robust entry controls to ensure only authorized personnel are allowed access?",
-                    "evidence_required": "Provide an audit log showing that electronic access to the MDF/Server room is explicitly restricted down to authorized IT personnel directly.",
-                    "objective": "Mitigate the risk of 'tailgating' and ensure a forensic audit trail of all physical human motion into high-risk zones.",
-                    "remediation_advice": "Implement anti-passback rules on badge readers for critical datacenters to completely eliminate tailgating."
+                    "control_title": "Physical Entry Controls",
+                    "auditor_question": "Are secure areas protected by appropriate entry controls to ensure that only authorized personnel are allowed access?",
+                    "evidence_required": "Provide a report from the electronic badge system showing recent entry logs or a physical visitor sign-in sheet.",
+                    "objective": "Verify the identity of every individual entering secure zones to maintain an audit trail of physical presence.",
+                    "remediation_advice": "Deploy an electronic badge system for all office entry points. Mandate that visitors are escorted by an employee at all times.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Identity verification shouldn't stop at the login screen. Physical entry controls (badges/biometrics) ensure that you know exactly who was in the office when a piece of hardware goes missing or a 'rubber ducky' is plugged into a workstation."
                 },
                 {
                     "control_id": "7.3",
                     "control_title": "Securing Offices, Rooms and Facilities",
-                    "auditor_question": "Is physical security tailored to address specific risks introduced by the precise nature of the facility (e.g., windows facing public streets)?",
-                    "evidence_required": "Provide evidence of privacy filming on ground floor windows or the physical relocation of sensitive print servers away from public lobbies.",
-                    "objective": "Prevent opportunistic or targeted external visibility of proprietary actions inside the physical boundary.",
-                    "remediation_advice": "Ensure no monitors displaying financial or customer data are visible from public hallways or exterior glass walls."
+                    "auditor_question": "Is physical security for internal offices, rooms, and facilities designed and implemented to prevent unauthorized access?",
+                    "evidence_required": "Provide evidence of locked server racks, privacy screens on high-sensitivity monitors, and lockable file cabinets for HR data.",
+                    "objective": "Protect sensitive internal departments (Finance, HR, IT) from curiosity or malicious intent by other employees or visitors.",
+                    "remediation_advice": "Enforce a 'Locked Door' policy for the server room and HR filing areas. Utilize privacy film on windows of offices where sensitive data is processed.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Insider threats are real. Just because someone works for the company doesn't mean they should have access to the HR files or the core switch. internal physical security creates 'compartmentalization,' limiting the damage one person can do."
                 },
                 {
                     "control_id": "7.4",
                     "control_title": "Physical Security Monitoring",
-                    "auditor_question": "Are premises continuously monitored for unauthorized physical access via intrusion alarms and CCTV?",
-                    "evidence_required": "Provide CCTV retention policy (e.g., 30 days) and a maintenance log or invoice from the physical security monitoring vendor.",
-                    "objective": "Deter physical intrusion and provide forensic evidence in the event of a facility breach.",
-                    "remediation_advice": "Install CCTV cameras covering all entry/exit points and high-security zones (server rooms). Ensure cameras record to a secure, tamper-proof location."
+                    "auditor_question": "Are sensitive areas continuously monitored (e.g., via CCTV or alarms) to detect unauthorized physical access?",
+                    "evidence_required": "Provide a sample screenshot from the CCTV system or an alarm system test report from the past 6 months.",
+                    "objective": "Provide a deterrent and a forensic record of physical security breaches.",
+                    "remediation_advice": "Install CCTV cameras at all primary entrance/exit points and inside the server room. Set up motion-sensitive alerts for after-hours activity.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Monitoring is the physical equivalent of 'logging.' If a theft occurs at 3 AM, CCTV allows you to identify the culprit. Without monitoring, physical security is entirely reactive and blind."
                 },
                 {
                     "control_id": "7.5",
-                    "control_title": "Protecting Against External and Environmental Threats",
-                    "auditor_question": "Are essential IT facilities specifically hardened against environmental hazards like fires, floods, and large-scale power failures?",
-                    "evidence_required": "Provide the service record for the server room's FM-200 fire suppression system, or evidence of Uninterruptible Power Supplies (UPS).",
-                    "objective": "Maintain business continuity by protecting critical hardware against destructive physical acts of nature.",
-                    "remediation_advice": "Deploy water-leak detection sensors under data room raised floors and install massive UPS battery backups configured for automated graceful server shutdowns."
+                    "control_title": "Protecting Against Physical and Environmental Threats",
+                    "auditor_question": "Is protection against natural disasters, malicious attack, or accidents (fire, flood) designed and implemented?",
+                    "evidence_required": "Provide fire extinguisher inspection tags, evidence of raised flooring in server areas, or a contract with a disaster cleanup vendor.",
+                    "objective": "Ensure the physical availability of information systems despite environmental catastrophes.",
+                    "remediation_advice": "Install smoke detectors and moisture sensors in the server room. Maintain off-site backups in a geographically distinct region to survive local disasters.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "A flood can be just as damaging as a hacker. Protecting against environmental threats is about 'Physical Availability.' If your only server room is in a basement with no water sensors, your business is one broken pipe away from bankruptcy."
                 },
                 {
                     "control_id": "7.6",
                     "control_title": "Working in Secure Areas",
-                    "auditor_question": "Are special restrictions applied and monitored for personnel operating directly inside highly secure zones?",
-                    "evidence_required": "Provide facility policy indicating that no photographic devices or mobile phones are authorized on the datacenter floor.",
-                    "objective": "Prevent the exfiltration of data via unauthorized physical media or photography in highly classified operations centers.",
-                    "remediation_advice": "Erect clear signage prohibiting camera use or unescorted visitor access on the walls of secure facilities and server rooms."
+                    "auditor_question": "Are security measures for working in secure areas (e.g., banning cameras/phones in the data center) established and communicated?",
+                    "evidence_required": "Provide the 'Secure Area Policy' and photos of signage indicating restricted items at the entrance of the SOC or Data Center.",
+                    "objective": "Prevent the unauthorized recording or transmission of sensitive data from within high-security zones.",
+                    "remediation_advice": "Post clear signage outside the server room and SOC banning mobile phone usage and photography without explicit management approval.",
+                    "nist_mapping": "PR.PS-2",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "One photo of a server rack can reveal hardware versions, cable layouts, and even passwords on sticky notes. Banning cameras in secure areas is a standard 'Anti-Espionage' measure."
                 },
                 {
                     "control_id": "7.7",
                     "control_title": "Clear Desk and Clear Screen",
-                    "auditor_question": "Is there a policy enforcing that sensitive physical documents are locked away and computer screens are locked when unattended?",
-                    "evidence_required": "Provide the acceptable use policy detailing clean desk rules, and a screenshot of the group policy object (GPO) enforcing a 15-minute screen lock timeout.",
-                    "objective": "Reduce the risk of opportunistic data theft from vacant workspaces.",
-                    "remediation_advice": "Enforce a forced screen lock via MDM (Intune, Jamf) after 10-15 minutes of inactivity. Provide lockable filing cabinets for departments handling paper records."
+                    "auditor_question": "Is a clear desk policy for papers and removable storage media and a clear screen policy for information processing facilities enforced?",
+                    "evidence_required": "Provide the 'Clear Desk/Screen Policy' and results from an after-hours 'walk-through' audit showing no sensitive papers left out.",
+                    "objective": "Minimize the risk of unauthorized access or theft of sensitive documents by cleaning staff, visitors, or other employees.",
+                    "remediation_advice": "Configure corporate laptops to automatically lock screens after 5 minutes of inactivity. Provide lockable pedestals for all employees to store sensitive papers.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "An unlocked screen or a printed salary list on a desk is an 'Open Invitation' for data theft. Clear desk/screen policies ensure that sensitive info is only visible when an authorized person is actively working on it."
                 },
                 {
                     "control_id": "7.8",
                     "control_title": "Equipment Siting and Protection",
-                    "auditor_question": "Is IT equipment positioned and protected to minimize risks from unauthorized access, interception, or environmental hazards?",
-                    "evidence_required": "Provide evidence that core network switches are locked in secure MDF closets, not exposed on open office walls.",
-                    "objective": "Prevent basic physical hardware tampering (e.g., unplugging network cables, plugging in unauthorized rogue access points).",
-                    "remediation_advice": "Ensure all networking equipment, switches, and core routers are kept inside locked, ventilated racks where access is tightly restricted."
+                    "auditor_question": "Is organizational equipment sited and protected to reduce the risks from environmental threats and hazards, and opportunities for unauthorized access?",
+                    "evidence_required": "Provide photos showing that equipment is placed away from windows, water pipes, and public walkways.",
+                    "objective": "Prevent hardware damage from accidents (spills) or intentional tampering by those passing by.",
+                    "remediation_advice": "Audit the placement of all core networking equipment. Ensure it is stored in ventilated, lockable closets rather than under desks or in open hallways.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "equipment siting is common sense turned into a control. You don't put your main database server directly under an AC unit that might leak, or next to a window where it can be seen—or smashed—from the street."
                 },
                 {
                     "control_id": "7.9",
-                    "control_title": "Security of Assets Off-Premises",
-                    "auditor_question": "Are organizational assets secured appropriately when taken off-premises, considering the different risks compared to office locations?",
-                    "evidence_required": "Provide policy restricting leaving corporate laptops in unattended vehicles, and MDM policy enforcing full disk encryption.",
-                    "objective": "Ensure data remains protected when hardware travels into volatile public environments.",
-                    "remediation_advice": "Mandate the use of privacy screens for traveling employees and enforce BitLocker/FileVault encryption to protect data if the asset is stolen."
+                    "control_title": "Security of Assets Off-premises",
+                    "auditor_question": "Is equipment used off-premises protected, taking into account the different risks of working outside the organization's premises?",
+                    "evidence_required": "Provide the 'Asset Protection Policy' and evidence of Full Disk Encryption (FDE) and remote-wipe capabilities (MDM) for all laptops.",
+                    "objective": "Ensure data remains encrypted and retrievable even if a company laptop is stolen from a car or airport.",
+                    "remediation_advice": "Mandate the use of Kensington locks for laptops in public spaces and ensure MDM (Mobile Device Management) is active on every employee mobile device.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Laptops are stolen every day. If the disk is encrypted, the thief has a $1,000 piece of hardware. If it's NOT encrypted, they have your entire company's source code, customer list, and financial history. Off-premises security is about 'Data Non-Disclosure' after physical loss."
                 },
                 {
                     "control_id": "7.10",
                     "control_title": "Storage Media",
-                    "auditor_question": "Are removable storage media strictly managed, tracked, and securely destroyed when no longer needed?",
-                    "evidence_required": "Provide the policy banning unencrypted USB usage or a log showing the destruction of legacy backup tapes.",
-                    "objective": "Prevent data loss through inherently insecure and easily misplaced portable storage devices.",
-                    "remediation_advice": "Use Endpoint Detection and Response (EDR) to block USB mass storage capabilities entirely, or restrict usage to company-issued hardware-encrypted USBs only."
+                    "auditor_question": "Are storage media (USB drives, backup tapes) managed throughout their lifecycle of acquisition, use, transportation, and disposal?",
+                    "evidence_required": "Provide a media inventory log and the 'Secure Media Disposal' certificate from a professional shredding vendor.",
+                    "objective": "Protect against data leaks originating from lost or improperly disposed of physical storage devices.",
+                    "remediation_advice": "Ban the use of unencrypted USB drives. Require that all decommissioned hard drives are physically shredded or degaussed by an authorized 3rd party vendor.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "3.1",
+                    "expert_rationale": "One forgotten USB stick in a parking lot can lead to a 'Rubber Ducky' attack. One hard drive sold on eBay without being wiped can lead to a total data breach. Media management is about controlling every bit of 'removable' data."
                 },
                 {
                     "control_id": "7.11",
                     "control_title": "Supporting Utilities",
-                    "auditor_question": "Is equipment protected from power failures and other disruptions caused by failures in supporting utilities?",
-                    "evidence_required": "Provide maintenance logs for standby diesel generators or documentation of primary/secondary redundant power circuit lines.",
-                    "objective": "Ensure IT continuity despite grid-level electrical or cooling failures.",
-                    "remediation_advice": "Connect critical servers and cooling infrastructure to Uninterruptible Power Supplies (UPS) and routinely test automatic failover to backup generators."
+                    "auditor_question": "Is equipment heavily protected from power failures and other disruptions caused by failures in supporting utilities?",
+                    "evidence_required": "Provide evidence of Uninterruptible Power Supplies (UPS) and a periodic test report showing the UPS can sustain the load during a power cut.",
+                    "objective": "Ensure the system availability and prevent hardware damage or data corruption during sudden power surges or outages.",
+                    "remediation_advice": "Install UPS systems for all critical networking gear. Ensure the server room has an automated backup generator that is tested quarterly.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "A power surge can 'fry' a $50,000 firewall in a millisecond. Supporting utilities like UPS and surge protectors are the 'Life Support' for your hardware, ensuring continuity when the grid fails."
                 },
                 {
                     "control_id": "7.12",
                     "control_title": "Cabling Security",
-                    "auditor_question": "Are power and telecommunications cabling carrying data or supporting information services protected from interception or damage?",
-                    "evidence_required": "Provide physical evidence or policy stating all network cables are run in locked conduits or wire trays away from public reach.",
-                    "objective": "Prevent physical wiretapping or accidental network severing.",
-                    "remediation_advice": "Ensure all physical cabling routing is shielded and kept entirely within the secured corporate physical perimeter, avoiding public access zones."
+                    "auditor_question": "Is power and telecommunications cabling protected from interception, interference, or damage?",
+                    "evidence_required": "Provide photos of cables housed in secure conduits rather than exposed in public hallways.",
+                    "objective": "Prevent eavesdropping or physical disconnection of network lines by unauthorized parties.",
+                    "remediation_advice": "Use locked conduits for all network cabling. Ensure that telecom entrance points are in a locked room rather than an open basement or outside wall.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "If your network cables are exposed in the hallway, an attacker can simply plug in a 'Packet Sniffer' and watch your network traffic. Cabling security ensures the 'Physical Integrity' of your data pathways."
                 },
                 {
                     "control_id": "7.13",
                     "control_title": "Equipment Maintenance",
-                    "auditor_question": "Is equipment correctly maintained to ensure its continuous availability, integrity, and confidentiality?",
-                    "evidence_required": "Provide a service schedule or vendor maintenance contract for critical network infrastructure.",
-                    "objective": "Prevent unexpected hardware failure driven by lack of routine maintenance.",
-                    "remediation_advice": "Log and track the lifecycle and warranty status of all physical hardware. Apply firmware updates rigorously to infrastructure layer devices."
+                    "auditor_question": "Is equipment maintained correctly to ensure its continued availability and integrity?",
+                    "evidence_required": "Provide the maintenance logs for server room HVAC and UPS systems, showing they are serviced according to manufacturer specs.",
+                    "objective": "Minimize system downtime caused by foreseeable hardware failures due to lack of maintenance.",
+                    "remediation_advice": "Establish a recurring maintenance calendar for all critical infrastructure. Replace UPS batteries every 3-5 years regardless of reported health.",
+                    "nist_mapping": "PR.PS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Hardware wears out. A server fan that fails because it was full of dust can cause a $10,000 CPU to melt. Proactive maintenance is a 'Reliability Control' that prevents unplanned outages."
                 },
                 {
                     "control_id": "7.14",
                     "control_title": "Secure Disposal or Re-use of Equipment",
-                    "auditor_question": "Are rigorous checks applied when equipment is disposed of or reassigned to guarantee that all sensitive data is securely wiped?",
-                    "evidence_required": "Provide cryptographic wipe logs (e.g., NIST 800-88 compliant) or physical destruction certificates from an e-waste vendor.",
-                    "objective": "Preclude the recovery of organizational data from legacy hardware sold on secondary markets.",
-                    "remediation_advice": "Partner with a certified e-waste provider to physically shred old hard drives, and issue certificates of destruction for your compliance records."
+                    "auditor_question": "Are all items of equipment containing storage media verified to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+                    "evidence_required": "Provide a 'Certificate of Data Destruction' for a batch of decommissioned laptops or hard drives.",
+                    "objective": "Prevent the unintended disclosure of organizational data through the resale or recycling of old hardware.",
+                    "remediation_advice": "Use industry-standard data wiping tools (e.g., DBAN) for equipment reuse, and physical shredding for equipment being retired.",
+                    "nist_mapping": "PR.DS-10",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Old hardware is a goldmine for data recovery experts. If you don't 'Securely Dispose' of your old servers, you are essentially giving away your company secrets to whoever buys your old gear at an auction."
                 }
             ]
         },
@@ -507,274 +684,376 @@ const THEHGTECH_GRC_DATA = {
                 {
                     "control_id": "8.1",
                     "control_title": "User Endpoint Devices",
-                    "auditor_question": "Are all organizational endpoints (laptops, mobile devices) centrally managed and secured through Mobile Device Management (MDM)?",
-                    "evidence_required": "Provide a screenshot from the MDM console showing inventory and applied policies (e.g., remote wipe enabled, disk encryption enforced).",
-                    "objective": "Ensure all devices touching company data meet baseline security configurations and can be wiped if lost or stolen.",
-                    "remediation_advice": "Deploy an MDM solution like Microsoft Intune or Jamf Pro. Enforce policies requiring BitLocker/FileVault encryption, complex passwords, and automatic OS updates."
+                    "auditor_question": "Are sophisticated security controls implemented on all user endpoint devices (laptops, mobiles) that access organizational information?",
+                    "evidence_required": "Provide evidence of an Endpoint Detection and Response (EDR) dashboard showing active protection on all corporate machines.",
+                    "objective": "Protect the organization's entry points from malware, unauthorized access, and data leakage.",
+                    "remediation_advice": "Deploy a modern EDR solution (e.g., CrowdStrike, SentinelOne) and enforce 'Compliance Checks' preventing devices without disk encryption from accessing corporate email.",
+                    "nist_mapping": "PR.IP-1",
+                    "cis_mapping": "2.1",
+                    "expert_rationale": "Endpoints are where your employees work and where your data lives. They are the #1 target for attackers. Endpoint security (EDR/MDR) is non-negotiable for any business that wants to survive a malware outbreak."
                 },
                 {
                     "control_id": "8.2",
                     "control_title": "Privileged Access Rights",
-                    "auditor_question": "Are privileged (administrator or root) access rights tightly restricted, heavily monitored, and only allocated definitively on a strict business-need basis?",
-                    "evidence_required": "Provide the active list of Global Admins in the cloud tenant and an audit log demonstrating MFA is required and logs are actively monitored for privileged commands.",
-                    "objective": "Limit the blast radius should a high-level administrative account be fully compromised.",
-                    "remediation_advice": "Implement Privileged Access Management (PAM) tools. Require Just-In-Time (JIT) access requests for production databases instead of standing always-on admin rights."
+                    "auditor_question": "Is the allocation and use of privileged access rights (Admin, Root) strictly restricted and monitored?",
+                    "evidence_required": "Provide a list of all domain admins and evidence that they use separate, dedicated accounts for admin tasks rather than their daily email accounts.",
+                    "objective": "Minimize the risk of a single compromised account leading to a total network takeover.",
+                    "remediation_advice": "Implement 'Just-In-Time' (JIT) access using a Privileged Access Management (PAM) tool. Ban the use of 'Domain Admin' accounts for day-to-day work (email/web).",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "5.1",
+                    "expert_rationale": "An admin account is the 'Keys to the Kingdom.' If an admin uses their privileged account to read a phishing email, the attacker immediately gets full control of your entire network. JIT access ensures that admin powers are only 'active' when they are actually needed."
                 },
                 {
                     "control_id": "8.3",
                     "control_title": "Information Access Restriction",
-                    "auditor_question": "Are technological controls enforced to ensure users or systems can only read/write data in accordance with the established access control policy?",
-                    "evidence_required": "Provide evidence of File Share Permissions or Cloud IAM Role definitions demonstrating strict boundary enforcement separating department data.",
-                    "objective": "Ensure technical environments mirror the theoretical policies regarding 'Least Privilege'.",
-                    "remediation_advice": "Conduct an audit of AWS IAM Policies to ensure no overarching 'AdministratorAccess' wildcards (*) are tied to standard user or developer accounts."
+                    "auditor_question": "Is access to information and application system functions restricted in accordance with the established topic-specific policy on access control?",
+                    "evidence_required": "Provide a screenshot of application-level permissions showing that an HR user cannot view Engineering source code repositories.",
+                    "objective": "Enforce the Principle of Least Privilege at the application and data layer.",
+                    "remediation_advice": "Review all folder and application permissions. Remove 'Everyone' or 'Authenticated Users' from sensitive data shares and replace with specific AD groups.",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "3.1",
+                    "expert_rationale": "Internal partitioning is key. Access restriction ensures that if your marketing intern's account is hacked, the attacker can't download your patent portfolio or payroll data. It's about containing the 'Blast Radius' of a compromise."
                 },
                 {
                     "control_id": "8.4",
                     "control_title": "Access to Source Code",
-                    "auditor_question": "Is read and write access to the organization's proprietary source code strictly controlled and logged?",
-                    "evidence_required": "Provide Git repository settings showing that direct pushes to 'main' are banned and only approved engineers can view high-value algorithm repos.",
-                    "objective": "Prevent the theft of crucial intellectual property and stop the injection of malicious supply-chain backdoors into product code.",
-                    "remediation_advice": "Enforce strong RBAC controls inside GitHub/GitLab. Maintain detailed audit logs of all user clones, pulls, and pushes."
+                    "auditor_question": "Is read/write access to program source code restricted to authorized personnel ONLY?",
+                    "evidence_required": "Provide the GitHub or GitLab repo member list showing only active developers have access, and audit logs of recent code exports.",
+                    "objective": "Protect the organization's unique Intellectual Property (IP) and prevent the insertion of malicious backdoors into software.",
+                    "remediation_advice": "Enforce Multi-Factor Authentication (MFA) for all source code repositories. Disable 'Public' repositories by default.",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "3.3",
+                    "expert_rationale": "Your source code is your secret sauce. If an attacker gets write access to your code, they can insert a backdoor and hide it in plain sight. Protecting code access is a 'Fundamental IP Control' for any tech-driven company."
                 },
                 {
                     "control_id": "8.5",
                     "control_title": "Secure Authentication",
-                    "auditor_question": "Is Multi-Factor Authentication (MFA) strictly enforced universally for accessing internal systems, VPNs, and cloud applications?",
-                    "evidence_required": "Provide the IdP (Identity Provider) conditional access policy proving MFA is enforced globally without bypasses for standard users.",
-                    "objective": "Virtually eliminate the risk of account takeovers resulting from compromised or reused passwords.",
-                    "remediation_advice": "Implement SSO via Okta or Entra ID and enforce MFA for all applications. Transition away from SMS-based MFA to Authenticator Apps or hardware tokens (e.g., YubiKey)."
+                    "auditor_question": "Are secure authentication technologies (e.g., MFA, Biometrics) heavily utilized to verify the identity of users and devices?",
+                    "evidence_required": "Provide an MFA compliance report showing 100% enrollment for all employees across all core SaaS and internal apps.",
+                    "objective": "Prevent unauthorized access via credential theft or password-spraying attacks.",
+                    "remediation_advice": "Mandate Multi-Factor Authentication (MFA) for every single employee. Use FIDO2/Hardware keys for high-risk roles (Admins, Finance).",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "6.1",
+                    "expert_rationale": "Passwords are DEAD. 80% of breaches involve stolen credentials. MFA is the single most effective security control you can implement. Without MFA, you are essentially leaving the front door key under the mat."
                 },
                 {
                     "control_id": "8.6",
                     "control_title": "Capacity Management",
-                    "auditor_question": "Is the ongoing capacity (compute, storage, bandwidth) of critical systems actively monitored to prevent resource exhaustion and service outages?",
-                    "evidence_required": "Provide screenshots from AWS CloudWatch or Datadog showing automated alerting when server CPU or disk space exceeds 80% utilization.",
-                    "objective": "Protect system availability against unexpected traffic surges or inadvertent internal resource starvation (Denial of Service).",
-                    "remediation_advice": "Configure automated infrastructure monitoring tools to ping the engineering team via PagerDuty/Slack if server storage crosses critical capacity thresholds."
+                    "auditor_question": "Is the use of resources (CPU, Disk, Memory) monitored and adjusted to ensure the required system performance is maintained?",
+                    "evidence_required": "Provide evidence of an infrastructure monitoring dashboard (e.g., Datadog, CloudWatch) with active threshold alerts for disk/CPU usage.",
+                    "objective": "Proactively prevent system crashes and Denial of Service (DoS) conditions caused by resource exhaustion.",
+                    "remediation_advice": "Set up automated alerts for when disk space exceeds 80% or CPU usage exceeds 90% for sustained periods.",
+                    "nist_mapping": "PR.IP-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "A crashed server is a 'Security Incident.' If your website goes down because the disk was full, you've failed the 'Availability' pillar of security. Capacity management is about predicting and preventing outages before they happen."
                 },
                 {
                     "control_id": "8.7",
                     "control_title": "Protection Against Malware",
-                    "auditor_question": "Are modern, signature-less, and behavioral anti-malware (EDR/XDR) controls deployed and centrally monitored on all endpoints and servers?",
-                    "evidence_required": "Provide the dashboard screenshot of an active EDR (e.g., CrowdStrike, SentinelOne) showing all fleets are covered and definitions are actively updating.",
-                    "objective": "Detect, block, and contain complex malware, ransomware, and fileless attacks before they execute.",
-                    "remediation_advice": "Upgrade legacy signature-based antivirus to a Next-Generation Endpoint Detection and Response (EDR) platform offering behavioral telemetry."
+                    "auditor_question": "Is protection against malware implemented and supported by appropriate user awareness or technical detection measures?",
+                    "evidence_required": "Provide a report showing active malware scans on a recently sampled server or workstation.",
+                    "objective": "Prevent, detect, and neutralize Ransomware, Trojans, and other malicious software before they can exfiltrate or encrypt data.",
+                    "remediation_advice": "Enable real-time scanning and behavioral analysis on all EDR agents. Configure daily automated scans for all file servers.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "10.1",
+                    "expert_rationale": "Malware is the #1 tool for cybercriminals. Protection (using EDR and User Awareness) is about creating layers. If the user clicks the link, the EDR should catch the download. If the download happens, the sandbox should catch the execution."
                 },
                 {
                     "control_id": "8.8",
                     "control_title": "Management of Technical Vulnerabilities",
-                    "auditor_question": "Is a technical vulnerability management program in place that scans systems regularly and patches critical flaws within defined SLAs?",
-                    "evidence_required": "Provide the most recent vulnerability scan report and evidence that a critical CVE was patched within the mandated SLA (e.g., 14 days).",
-                    "objective": "Prevent exploitation by identifying and remediating known software vulnerabilities rapidly.",
-                    "remediation_advice": "Deploy a continuous vulnerability scanner (e.g., Nessus, Qualys, or built-in EDR vulnerability modules). Establish an SLA requiring critical CVSS > 9.0 patches within 7-14 days."
+                    "auditor_question": "Are security vulnerabilities actively identified, evaluated, and remediated in a timely manner (Scanning & Patching)?",
+                    "evidence_required": "Provide a sample vulnerability scan report from tools like Nessus or Qualys, and a corresponding 'Closed' ticket showing a critical patch was applied.",
+                    "objective": "Close the technical 'windows of opportunity' that attackers use to gain entry to your systems.",
+                    "remediation_advice": "Conduct monthly internal and external vulnerability scans. Establish a SLA requiring 'Critical' vulnerabilities to be patched within 72 hours.",
+                    "nist_mapping": "ID.RA-1",
+                    "cis_mapping": "7.1",
+                    "expert_rationale": "Hackers don't always find new exploits; they mostly use the old ones you haven't patched yet. Vulnerability management is about 'Patching the Holes.' If you don't patch, you're essentially leaving your windows unlocked and wondering why you were robbed."
                 },
                 {
                     "control_id": "8.9",
                     "control_title": "Configuration Management",
-                    "auditor_question": "Are hardened, baseline security configurations systematically deployed and monitored for drift across all IT architectures?",
-                    "evidence_required": "Provide evidence of an automated configuration tool (Ansible, Terraform) or CIS Benchmark scans indicating systems match secure baselines.",
-                    "objective": "Ensure servers and cloud infrastructure are not deployed with insecure default settings (e.g., open S3 buckets, default admin passwords).",
-                    "remediation_advice": "Adopt Center for Internet Security (CIS) Benchmarks for OS hardening. Utilize Infrastructure as Code (IaC) to lock down cloud deployments."
+                    "auditor_question": "Are hardware, software, services and networks established, documented, implemented, and monitored to ensure they follow secure configurations (Hardening)?",
+                    "evidence_required": "Provide evidence of using CIS Benchmarks or STIGs to harden servers and networking equipment.",
+                    "objective": "Eliminate 'Out of the Box' weaknesses like default passwords, unnecessary services, and insecure protocols.",
+                    "remediation_advice": "Implement 'Infrastructure as Code' (IaC) to ensure consistent, hardened deployments. Disable all unused ports and protocols on every production server.",
+                    "nist_mapping": "PR.IP-1",
+                    "cis_mapping": "4.1",
+                    "expert_rationale": "Defaults are insecure. Configuration management (Hardening) is about 'Tightening the Screws.' It ensures that your servers aren't running services they don't need, which reduces your overall 'Attack Surface.'"
                 },
                 {
                     "control_id": "8.10",
                     "control_title": "Information Deletion",
-                    "auditor_question": "Are procedures implemented to ensure sensitive data is securely and irrecoverably wiped from IT systems when it is no longer required?",
-                    "evidence_required": "Provide a certificate of destruction from an IT asset disposal vendor, or the script used to cryptographically wipe cloud storage volumes.",
-                    "objective": "Comply with data privacy 'Right to be Forgotten' laws and prevent data harvesting from decommissioned hardware.",
-                    "remediation_advice": "Contract with a certified, environmentally compliant electronic waste destruction firm to securely shred old hard drives."
+                    "auditor_question": "Is information stored in information systems and devices deleted or securely overwritten when no longer required?",
+                    "evidence_required": "Provide evidence of an automated data deletion script or policy sign-off for retiring old databases.",
+                    "objective": "Minimize the 'Toxic Data' footprint by removing old, sensitive data that is no longer needed for business or legal reasons.",
+                    "remediation_advice": "Establish an automated data lifecycle policy that permanently deletes customer records 7 years after account termination.",
+                    "nist_mapping": "PR.DS-10",
+                    "cis_mapping": "3.11",
+                    "expert_rationale": "Old data is a liability, not an asset. If you are hacked, you will be fined for every record stolen. if you delete old data you no longer need, that data can't be stolen. It's the ultimate 'Data Minimization' strategy."
                 },
                 {
                     "control_id": "8.11",
                     "control_title": "Data Masking",
-                    "auditor_question": "Is sensitive data (such as PII or PCI) masked, anonymized, or tokenized according to organizational policy before being used in testing environments?",
-                    "evidence_required": "Provide architectural diagrams or database procedures showing that live production user data is never copied 'in the clear' into UAT or QA sandbox networks.",
-                    "objective": "Minimize the exposure of highly sensitive customer data to lower-security development and testing environments.",
-                    "remediation_advice": "Implement automated data scrubbing/masking scripts that swap out realistic names and credit cards for dummy data during the production database copy process."
+                    "auditor_question": "Is data masking (anonymization, pseudonymization) implemented to protect sensitive data to reduce risk during testing or analysis?",
+                    "evidence_required": "Provide a screenshot of the database masking rule or a snippet of the data obfuscation script used for non-production environments.",
+                    "objective": "Prevent the exposure of real customer data to developers or testers who do not have a business need to see it.",
+                    "remediation_advice": "Implement automated data masking in all non-production SQL environments. Replace real names/emails with randomized synthetic data.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "3.1",
+                    "expert_rationale": "Developers don't need real credit card numbers to fix a bug. Data masking ensures that even if your 'Staging' environment is hacked, the attacker only gets useless, fake data instead of your real customer list."
                 },
                 {
                     "control_id": "8.12",
                     "control_title": "Data Leakage Prevention",
-                    "auditor_question": "Are technical controls deployed to detect and prevent the unauthorized exfiltration of sensitive data to external unapproved platforms?",
-                    "evidence_required": "Provide the DLP policy configuration showing blocks on transferring PII to personal cloud storage (e.g., personal Google Drive, USB drives).",
-                    "objective": "Stop insider threats and compromised accounts from stealing massive amounts of intellectual property.",
-                    "remediation_advice": "Configure Microsoft Purview or your EDR to block USB mass storage devices. Implement rules blocking the upload of documents marked 'Confidential' to non-corporate domains."
+                    "auditor_question": "Are technical data leakage prevention (DLP) measures applied to systems that process, store, or transmit sensitive information?",
+                    "evidence_required": "Provide a DLP alert report showing the detection or blocking of a sensitive pattern (e.g., SSN, Credit Card) being sent via email.",
+                    "objective": "Automatically detect and block the unauthorized exfiltration of sensitive organizational data.",
+                    "remediation_advice": "Enable DLP features in your email suite (Google Workspace/M365) to block the sending of documents containing unencrypted credit card numbers or PII.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "3.3",
+                    "expert_rationale": "Accidents happen. DLP is the 'Safety Net' that stops an employee from accidentally emailing a sensitive spreadsheet to the wrong person. It watches for patterns like credit card numbers and stops the data before it leaves the building."
                 },
                 {
                     "control_id": "8.13",
                     "control_title": "Information Backup",
-                    "auditor_question": "Are backup copies of critical information, software, and systems maintained and regularly tested in accordance with the agreed backup policy?",
-                    "evidence_required": "Provide the Backup Policy detailing frequency schedules, plus the log file from a successful backup restoration test conducted in the last quarter.",
-                    "objective": "Ensure survival and recovery from massive data loss events, particularly coordinated ransomware encryption attacks.",
-                    "remediation_advice": "Implement a 3-2-1 backup strategy. Critically, ensure at least one full backup copy is immutable and air-gapped from the primary production domain to survive ransomware."
+                    "auditor_question": "Are backup copies of information, software, and system images maintained and tested regularly in accordance with an agreed backup policy?",
+                    "evidence_required": "Provide a backup status report showing 100% success rate and a 'Backup Restoration Test' log from within the last 3 months.",
+                    "objective": "Ensure the organization can recover rapidly from data loss, system failure, or Ransomware attacks.",
+                    "remediation_advice": "Implement the '3-2-1' backup strategy: 3 copies of data, 2 different media types, 1 copy off-site. Test restoration quarterly.",
+                    "nist_mapping": "PR.IP-4",
+                    "cis_mapping": "11.1",
+                    "expert_rationale": "A backup is only as good as its last successful 'Restore' test. If you aren't testing your backups, you don't actually have backups—you just have 'Hope.' In a ransomware attack, your off-site backups are your only lifeline."
                 },
                 {
                     "control_id": "8.14",
                     "control_title": "Redundancy of Information Processing Facilities",
-                    "auditor_question": "Are critical IT infrastructures equipped with high-availability or sufficient redundancy to meet the required Service Level Agreements (SLAs)?",
-                    "evidence_required": "Provide cloud architecture showing multi-AZ (Availability Zone) active-active deployments or load balancers configured for automatic failover.",
-                    "objective": "Eliminate Single Points of Failure (SPOFs) that could lead to widespread organizational downtime.",
-                    "remediation_advice": "Architect critical core web applications across at least two distinct geographic cloud availability zones using active-active load balancing."
+                    "auditor_question": "Are information processing facilities implemented with sufficient redundancy to meet availability requirements?",
+                    "evidence_required": "Provide evidence of a multi-AZ (Availability Zone) cloud architecture or a secondary internet line failover test.",
+                    "objective": "Eliminate Single Points of Failure (SPOF) to ensure continuous business operations during hardware or provider outages.",
+                    "remediation_advice": "Deploy critical applications across multiple cloud regions or availability zones. Use Load Balancers to distribute traffic across redundant server sets.",
+                    "nist_mapping": "PR.IP-1",
+                    "cis_mapping": "11.1",
+                    "expert_rationale": "Redundancy is about 'Resilience.' If your entire business runs on one server and that server dies, your business dies with it. high-availability architectures ensure that if one 'piece' breaks, the customer never even notices."
                 },
                 {
                     "control_id": "8.15",
                     "control_title": "Logging",
-                    "auditor_question": "Are logs recording user activities, exceptions, faults, and information security events continuously produced, securely centralized, and protected against tampering?",
-                    "evidence_required": "Provide a screenshot of the SIEM or central log aggregation tool (e.g., Splunk, ELK) demonstrating ingest from firewalls, servers, and IdPs.",
-                    "objective": "Enable comprehensive post-incident forensic investigations and real-time threat detection analytic alerts.",
-                    "remediation_advice": "Ship all endpoint, firewall, and authentication logs to a centralized, write-once-read-many (WORM) storage bucket or a dedicated SIEM platform."
+                    "auditor_question": "Are event logs recording user activities, exceptions, faults, and security events produced, kept, and regularly reviewed?",
+                    "evidence_required": "Provide a sample audit log showing successful and failed login attempts for a critical system.",
+                    "objective": "Maintain a forensic audit trail to detect suspicious activity and investigate security incidents after they occur.",
+                    "remediation_advice": "Centralize all logs into a SIEM (e.g., Splunk, ELK). Enforce a minimum 90-day retention period for all security-critical logs.",
+                    "nist_mapping": "PR.IP-8",
+                    "cis_mapping": "8.1",
+                    "expert_rationale": "Logs are the 'Black Box' of your infrastructure. Without logs, you are blind. You won't know HOW an attacker got in, WHAT they took, or IF they are still inside. Logging is the foundation of incident response."
                 },
                 {
                     "control_id": "8.16",
                     "control_title": "Monitoring Activities",
-                    "auditor_question": "Are centralized logs and networks continuously monitored by analytic systems or personnel to detect anomalous behavior and potential security events?",
-                    "evidence_required": "Provide the SLA from an external Managed Detection and Response (MDR) provider or SOC, and a screenshot of the primary SIEM alerting dashboard.",
-                    "objective": "Reduce the total dwell-time of an active adversary operating inside the network by detecting them rapidly.",
-                    "remediation_advice": "If an internal 24/7/365 Security Operations Center (SOC) is not feasible, contract with a reputable MDR vendor to actively monitor telemetry and triage alerts."
+                    "auditor_question": "Are networks, systems, and applications heavily monitored for anomalous behavior and potential security events?",
+                    "evidence_required": "Provide evidence of active security alerts (e.g., in AWS GuardDuty or Azure Sentinel) and the response procedure for when an alert triggers.",
+                    "objective": "Proactively identify and respond to threats in real-time, reducing the 'Dwell Time' of attackers.",
+                    "remediation_advice": "Utilize Cloud-native security monitoring (e.g., AWS GuardDuty). Set up 24/7 alerts for 'Brute Force' or 'Unusual Data Exfiltration' patterns.",
+                    "nist_mapping": "ID.RA-1",
+                    "cis_mapping": "8.1",
+                    "expert_rationale": "Logging is 'Recording'; Monitoring is 'Processing.' You need systems that watch your logs 24/7 and scream for help when they see an attacker. Passive logging without active monitoring is like recording a robbery but not calling the police."
                 },
                 {
                     "control_id": "8.17",
                     "control_title": "Clock Synchronization",
-                    "auditor_question": "Are the clocks of all internal information processing systems synchronized to a single, authoritative external time source?",
-                    "evidence_required": "Provide evidence of Network Time Protocol (NTP) configurations pulling from a standard source like time.nist.gov.",
-                    "objective": "Ensure log timestamps are perfectly accurate to allow complex post-incident forensic correlation across multiple systems.",
-                    "remediation_advice": "Configure all servers, domain controllers, and networking equipment to sync to a trusted, authoritative NTP server."
+                    "auditor_question": "Are the clocks of all relevant information processing systems synchronized with a single reference time source?",
+                    "evidence_required": "Provide the NTP (Network Time Protocol) configuration for a sample server or firewall.",
+                    "objective": "Ensure timestamps across all logs are consistent, which is vital for forensic incident reconstruction.",
+                    "remediation_advice": "Standardize all systems to use NTP syncing with a reputable source like pool.ntp.org or internal domain controllers.",
+                    "nist_mapping": "PR.IP-8",
+                    "cis_mapping": "8.2",
+                    "expert_rationale": "Forensics 101: You cannot reconstruct a hack if the Firewall says 2:00 PM and the Database says 2:05 PM. Clock synchronization is 'Evidence Integrity.' It’s a boring control that becomes critical the second you have a real incident."
                 },
                 {
                     "control_id": "8.18",
                     "control_title": "Use of Privileged Utility Programs",
-                    "auditor_question": "Is the use of utility programs capable of overriding system and application controls tightly restricted and closely audited?",
-                    "evidence_required": "Provide evidence restricting tools like PsExec or mimikatz inside the EDR policies.",
-                    "objective": "Prevent the abuse of legitimate administrative dual-use tools by malicious actors to bypass standard security monitoring.",
-                    "remediation_advice": "Audit systems for high-risk administration tools. Restrict execution of these utilities to explicit administrative jump-boxes."
+                    "auditor_question": "Is the use of utility programs that might be capable of overriding system and application controls restricted and monitored?",
+                    "evidence_required": "Provide a list of users with access to 'Sudo' or system-level debuggers, and evidence that their usage is logged separately.",
+                    "objective": "Prevent the use of powerful diagnostic tools to bypass standard security restrictions (e.g., Registry Editors, Packet Sniffers).",
+                    "remediation_advice": "Restrict the ability to install powerful system utilities to IT Admins only. Log every execution of 'Sudo' or 'PowerShell' by privileged users.",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "5.1",
+                    "expert_rationale": "Privileged utilities are 'Double-Edged Swords.' A tool that helps an admin fix a server is the same tool an attacker uses to dump passwords. Restricting these tools limits the 'Arsenal' an attacker has once they get inside."
                 },
                 {
                     "control_id": "8.19",
                     "control_title": "Installation of Software on Operational Systems",
-                    "auditor_question": "Are robust procedures and technical controls in place to strictly manage and authorize the installation of software on operational systems?",
-                    "evidence_required": "Provide evidence of an application whitelisting deployment or MDM policy prohibiting standard users from installing software.",
-                    "objective": "Stop the execution of malicious software, unsanctioned shadow IT, and unlicensed applications.",
-                    "remediation_advice": "Revoke local administrator rights from all standard users and deploy an application control solution (e.g., AppLocker) to strictly whitelist authorized binaries."
+                    "auditor_question": "Are procedures implemented to control the installation of software on operational systems to minimize potential security risks?",
+                    "evidence_required": "Provide evidence of an 'Approved Software List' and the configuration that prevents standard users from installing unapproved apps.",
+                    "objective": "Prevent users from installing malicious, insecure, or unlicensed software that could compromise the network.",
+                    "remediation_advice": "Remove 'Local Admin' rights from all standard employees. Use Intune or Jamf to push approved software via a corporate 'Self-Service' portal.",
+                    "nist_mapping": "PR.IP-1",
+                    "cis_mapping": "2.1",
+                    "expert_rationale": "If a user can install whatever they want, you have NO control over your security. One 'Free PDF Converter' can contain malware that leads to a full breach. Controlling software installation is about maintaining 'System Integrity.'"
                 },
                 {
                     "control_id": "8.20",
-                    "control_title": "Networks Security",
-                    "auditor_question": "Are networks fundamentally secured and actively managed to protect the information residing on them?",
-                    "evidence_required": "Provide network topology diagrams highlighting stateful firewalls, intrusion detection systems (IDS), and DMZs.",
-                    "objective": "Control the flow of traffic and block unauthorized external intrusion attempts traversing the network.",
-                    "remediation_advice": "Deploy Next-Generation Firewalls (NGFW) with deep packet inspection capabilities and implement strict egress filtering rules closing unused outbound ports."
+                    "control_title": "Network Security",
+                    "auditor_question": "Are networks and network devices (routers, switches, firewalls) secured and monitored to protect information in systems and applications?",
+                    "evidence_required": "Provide a screenshot of the firewall rulebase (ACLs) showing 'Deny All' by default, and a log sample of blocked network traffic.",
+                    "objective": "Defend the organization against external attacks and internal unauthorized traffic flows.",
+                    "remediation_advice": "Audit firewall rules quarterly. Ensure all external network traffic is inspected by an Intrusion Prevention System (IPS).",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "12.1",
+                    "expert_rationale": "Your network is your 'Wilderness.' Network security (Firewalls/IPS) is about 'Traffic Policing.' If you don't control the flow of data, an attacker can easily communicate with their Command & Control (C2) server once they are inside."
                 },
                 {
                     "control_id": "8.21",
                     "control_title": "Security of Network Services",
-                    "auditor_question": "Are the security mechanisms, service levels, and management requirements of any network services formally identified and included in supplier agreements?",
-                    "evidence_required": "Provide SLAs for network service providers (e.g., ISPs or Cloud connectivity partners) noting DDoS protection or guaranteed uptime.",
-                    "objective": "Ensure essential network services provided by third parties are resilient against attack.",
-                    "remediation_advice": "Procure Managed DDoS protection (e.g., Cloudflare, AWS Shield) for critical external-facing routing infrastructure."
+                    "auditor_question": "Are security mechanisms, service levels, and management requirements of all network services (VPNs, DNS, etc.) identified and monitored?",
+                    "evidence_required": "Provide the service contract for your managed DNS or VPN provider, highlighting the security requirements.",
+                    "objective": "Ensure that 'Invisible' core services like DNS aren't hijacked to redirect users to malicious sites.",
+                    "remediation_advice": "Utilize DNSSEC to prevent DNS hijacking. Enforce 'Strong Encryption' (IKEv2/TLS 1.3) for all corporate VPN tunnel connections.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "12.1",
+                    "expert_rationale": "DNS and VPNs are the 'Nervous System' of your network. If an attacker hijacks your DNS, they can make 'gmail.com' point to their own fake login page. Securing these core services is 'Critical Infrastructure' defense."
                 },
                 {
                     "control_id": "8.22",
                     "control_title": "Segregation of Networks",
-                    "auditor_question": "Is the network segmented to isolate sensitive data environments (e.g., production databases, PCI environments) from general corporate usage and guest Wi-Fi?",
-                    "evidence_required": "Provide a network topology diagram and firewall rules proving that guest Wi-Fi cannot route to internal servers.",
-                    "objective": "Contain horizontal propagation (lateral movement) of malware or threat actors if an initial endpoint is compromised.",
-                    "remediation_advice": "Implement Zero Trust Network Access (ZTNA) or strict VLANs with internal firewalls. Use AWS VPC subnetting and Security Groups to restrict traffic to only required ports."
+                    "auditor_question": "Are groups of information services, users, and information systems segregated on networks?",
+                    "evidence_required": "Provide a network diagram showing the logical separation (VLANs) between the 'Guest Wi-Fi' and the 'Production Database' zone.",
+                    "objective": "Contain the 'Blast Radius' of a hack by preventing attackers from moving laterally through the network.",
+                    "remediation_advice": "Implement Network Segmentation (VLANs). Separate Guest networks, IOT devices, and Employee workstations from the Production server environment.",
+                    "nist_mapping": "PR.AC-1",
+                    "cis_mapping": "12.2",
+                    "expert_rationale": "Compartmentalization is the #1 rule of security. If your office printer is hacked, the attacker shouldn't be able to talk to your production database. Network segregation ensures that one compromise doesn't lead to a total downfall."
                 },
                 {
                     "control_id": "8.23",
                     "control_title": "Web Filtering",
-                    "auditor_question": "Is access to external websites strictly managed and filtered to reduce exposure to malicious content?",
-                    "evidence_required": "Provide the web proxy or DNS filtering dashboard showing active blocks against categorizations like 'Malware Sites', 'Phishing', and 'Adult Content'.",
-                    "objective": "Prevent employees from intentionally or inadvertently navigating to websites that serve malware or drain productivity.",
-                    "remediation_advice": "Deploy a DNS-level web filtering solution (e.g., Cisco Umbrella, NextDNS) to block resolution of known malicious domains enterprise-wide."
+                    "auditor_question": "Is access to external websites restricted and monitored to reduce exposure to malicious content?",
+                    "evidence_required": "Provide a screenshot of the web filtering policy (e.g., in Zscaler or Cisco Umbrella) showing that 'Malicious' and 'Phishing' categories are blocked.",
+                    "objective": "Prevent employees from inadvertently visiting websites that host malware or phish for credentials.",
+                    "remediation_advice": "Deploy a Cloud Access Security Broker (CASB) or DNS-layer filtering (e.g., Cisco Umbrella) to block high-risk web categories globally.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "9.2",
+                    "expert_rationale": "90% of the internet is 'Noise' or 'Danger.' Web filtering is about 'Proactive Defense.' By blocking known malicious sites at the DNS level, you prevent the 'Initial Access' phase of a hack before the user even clicks the link."
                 },
                 {
                     "control_id": "8.24",
                     "control_title": "Use of Cryptography",
-                    "auditor_question": "Are rigorous rules in place for the cryptographic protection of data at rest and data in transit, securely managing keys throughout their whole lifecycle?",
-                    "evidence_required": "Provide the Cryptography Policy and evidence that data is encrypted in transit (TLS 1.2+) and at rest (AES-256).",
-                    "objective": "Prevent the exposure of sensitive data to parties intercepting network traffic or physically stealing hard disks.",
-                    "remediation_advice": "Mandate TLS 1.2+ minimum on all web applications. Utilize managed Key Management Services (AWS KMS, Azure Key Vault) to protect database encryption keys."
+                    "auditor_question": "Is cryptography utilized to protect the confidentiality, authenticity, and integrity of information?",
+                    "evidence_required": "Provide evidence of Full Disk Encryption (FDE) on laptops and TLS 1.2+ configuration on public web servers.",
+                    "objective": "Ensure that even if data is intercepted or physically stolen, it remains unreadable and useless to the attacker.",
+                    "remediation_advice": "Enforce AES-256 encryption for all data at rest and TLS 1.3 for all data in transit. Ban the use of 'Legacy' protocols like SSLv3 or TLS 1.0.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "3.10",
+                    "expert_rationale": "Encryption is the 'Final Defense.' If a thief steals a laptop, encryption makes the data useless. If a hacker sniffs your wifi, encryption makes the traffic unreadable. Modern business cannot exist securely without robust, industry-standard cryptography."
                 },
                 {
                     "control_id": "8.25",
-                    "control_title": "Secure Development Life Cycle",
-                    "auditor_question": "Are rigid rules for the secure development of software and systems established and applied from the initial design phase through production deployment?",
-                    "evidence_required": "Provide the formal DevSecOps / SDLC policy document outlining required security gates (e.g., code reviews, DAST scanning).",
-                    "objective": "Prevent the introduction of systemic software vulnerabilities into the proprietary technology stack.",
-                    "remediation_advice": "Adopt a DevSecOps pipeline model. Integrate automated SAST (Static Application Security Testing) tools directly into the CI/CD pipeline."
+                    "control_title": "Secure Development Lifecycle",
+                    "auditor_question": "Are rules for secure development of software and systems established and applied?",
+                    "evidence_required": "Provide the 'Secure Coding Guidelines' document and evidence that developers have completed secure development training (e.g., OWASP Top 10).",
+                    "objective": "Build security into the product from Day 1, rather than trying to 'bolt it on' after a breach.",
+                    "remediation_advice": "Adopt a formal Secure SDLC framework (e.g., Microsoft SDL). Mandate that security requirements are part of the initial feature design phase.",
+                    "nist_mapping": "PR.IP-2",
+                    "cis_mapping": "16.1",
+                    "expert_rationale": "It is 100x cheaper to fix a bug in design than it is to fix it after a breach. A Secure SDLC ensures that 'Security by Design' isn't just a buzzword, but a documented requirement for every piece of code your team writes."
                 },
                 {
                     "control_id": "8.26",
                     "control_title": "Application Security Requirements",
-                    "auditor_question": "Are baseline information security requirements rigorously identified, specified, and approved when developing or acquiring new applications?",
-                    "evidence_required": "Provide a product requirements document (PRD) demonstrating security prerequisites (e.g., 'must support SAML SSO') were scoped before procurement.",
-                    "objective": "Ensure software is securely designed by default, mitigating the high cost of retroactively bolting on security later.",
-                    "remediation_advice": "Create an 'Application Security Checklist' that engineering must complete during the requirements gathering phase of any new project."
+                    "auditor_question": "Are security requirements for applications identified, specified, and approved when developing or acquiring applications?",
+                    "evidence_required": "Provide a 'Product Requirement Document' (PRD) for a recent feature that includes a dedicated section on 'Security & Privacy Requirements'.",
+                    "objective": "Ensure that new software doesn't introduce 'Low-Hanging Fruit' vulnerabilities like SQL Injection or Cross-Site Scripting (XSS).",
+                    "remediation_advice": "Incorporate a 'Security Review' step into the Jira/ticketing workflow for all new application features.",
+                    "nist_mapping": "PR.IP-2",
+                    "cis_mapping": "16.1",
+                    "expert_rationale": "If you don't define 'Security' as a requirement, developers will prioritize 'Functionality' every time. Requiring security sign-off on new features ensures that the business is making an informed decision about the risk of new code."
                 },
                 {
                     "control_id": "8.27",
                     "control_title": "Secure System Architecture and Engineering Principles",
-                    "auditor_question": "Are secure engineering principles actively utilized and documented when designing new IT architectures?",
-                    "evidence_required": "Provide architecture design documentation showing adherence to principles like 'Defense in Depth' or 'Fail Secure'.",
-                    "objective": "Ensure technical environments are engineered to inherently limit the impact of a partial compromise.",
-                    "remediation_advice": "Train site-reliability and architecture engineering teams on standard secure architecture models like Zero Trust and Defense in Depth."
+                    "auditor_question": "Are principles for engineering secure systems established, documented, maintained, and applied to any information system implementation activities?",
+                    "evidence_required": "Provide an architecture diagram showing the use of DMZs, Web Application Firewalls (WAF), and secure API gateways.",
+                    "objective": "Ensure the overall IT environment is designed to be resilient, avoiding 'Flat' networks where one breach is fatal.",
+                    "remediation_advice": "Adopt 'Zero Trust' architecture principles. Use Micro-segmentation to isolate critical microservices from each other.",
+                    "nist_mapping": "PR.IP-2",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Architecture is the 'Foundation.' A secure building with a weak foundation will still collapse. Secure engineering principles (like Defense in Depth) ensure that even if one layer fails, there are three more between the attacker and your data."
                 },
                 {
                     "control_id": "8.28",
                     "control_title": "Secure Coding",
-                    "auditor_question": "Are secure coding principles actively applied by developers to minimize the introduction of vulnerabilities like those found in the OWASP Top 10?",
-                    "evidence_required": "Provide the secure coding checklist and evidence of SAST scanning blocking a build due to a critical hardcoded credential.",
-                    "objective": "Eliminate fundamentally exploitable logic flaws (like SQL injection or XSS) directly in the source code.",
-                    "remediation_advice": "Train developers annually on the OWASP Top 10. Implement IDE-level linting tools to catch insecure code patterns as they are typed."
+                    "auditor_question": "Are secure coding principles applied to software development?",
+                    "evidence_required": "Provide a report from a Static Application Security Testing (SAST) tool like SonarQube or Snyk showing code-level vulnerability checks.",
+                    "objective": "Directly prevent technical vulnerabilities at the line-of-code level through automated linting and scanning.",
+                    "remediation_advice": "Integrate SAST (Static Analysis) tools directly into the CI/CD pipeline. Fail builds if 'High' severity vulnerabilities are detected in the code.",
+                    "nist_mapping": "PR.IP-2",
+                    "cis_mapping": "16.1",
+                    "expert_rationale": "Human developers make mistakes. Secure coding tools (SAST/DAST) act as an 'Automated Editor,' catching things like buffer overflows or hardcoded passwords before they ever reach a production server."
                 },
                 {
                     "control_id": "8.29",
                     "control_title": "Security Testing in Development and Acceptance",
-                    "auditor_question": "Are intensive security testing processes rigorously performed and validated during the software development life cycle?",
-                    "evidence_required": "Provide a Dynamic Application Security Testing (DAST) scan report or external penetration test results from the pre-production environment.",
-                    "objective": "Ensure applications are functionally validated against real-world attack simulations before interacting with live customer data.",
-                    "remediation_advice": "Integrate automated DAST tools into the UAT (User Acceptance Testing) environment to dynamically attack the application before production release."
+                    "auditor_question": "Are security testing processes (e.g., dynamic scanning, pentesting) defined and used during development?",
+                    "evidence_required": "Provide a Dynamic Application Security Testing (DAST) report or a UAT (User Acceptance Testing) sign-off that includes security test cases.",
+                    "objective": "Validate that the software actually behaves securely 'in the wild' before it is accessible to real customers.",
+                    "remediation_advice": "Perform automated DAST scanning on every major release. Conduct an manual penetration test for all 'High Risk' modules before deployment.",
+                    "nist_mapping": "PR.IP-2",
+                    "cis_mapping": "16.10",
+                    "expert_rationale": "Static code analysis (SAST) looks at the blueprint; Dynamic testing (DAST) looks at the finished house. You need both. Security testing in development ensures that you find the 'Functional' security bugs that static tools miss."
                 },
                 {
                     "control_id": "8.30",
                     "control_title": "Outsourced Development",
-                    "auditor_question": "Are the exact same rigorous security boundaries and processes mandated for external outsourced software developers as internal staff?",
-                    "evidence_required": "Provide the contract with the offshore dev firm explicitly stating they must adhere to the internal SDLC and submit code to SAST scans.",
-                    "objective": "Prevent vulnerabilities from being introduced through loosely secured external engineering pipelines.",
-                    "remediation_advice": "Enforce that all external developer code must be committed directly into the organizational Github repository to ensure internal CI/CD security checks are run."
+                    "auditor_question": "Does the organization direct, monitor, and review the activities related to outsourced system development?",
+                    "evidence_required": "Provide a contract with an external dev agency containing 'Right to Audit' and 'Secure Coding Requirement' clauses.",
+                    "objective": "Ensure third-party developers are not introducing vulnerabilities into your product due to poor standards.",
+                    "remediation_advice": "Require all outsourced code to pass an internal security scan before it is merged into the main corporate repository.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "15.1",
+                    "expert_rationale": "When you outsource development, you are 'Exporting Risk.' If the agency has bad security habits, those habits become your vulnerabilities. Outsourced development controls ensure that external teams follow your internal security high-bars."
                 },
                 {
                     "control_id": "8.31",
                     "control_title": "Separation of Development, Test and Production Environments",
-                    "auditor_question": "Are development, testing, and production environments logically and physically separated to prevent accidental modifications or data exposure?",
-                    "evidence_required": "Provide an AWS network diagram showing distinct separated VPCs for DEV, QA, and PROD with no direct routing between them.",
-                    "objective": "Prevent untested code from crashing live systems and prevent developers from casually viewing production database records.",
-                    "remediation_advice": "Utilize distinct cloud accounts for Production vs. non-Production environments. Strip developer write access to the Production account entirely."
+                    "auditor_question": "Are development, testing, and production environments separated to reduce the risk of unauthorized access or changes to the production environment?",
+                    "evidence_required": "Provide evidence that developers do not have 'Write' access to the Production environment, and that Dev/Prod use different service accounts.",
+                    "objective": "Prevent 'accidental' outages or intentional malicious changes by ensuring a strict, audited path to production.",
+                    "remediation_advice": "Physically or logically isolate the Production network from Dev/Test. Use different sets of credentials for each environment.",
+                    "nist_mapping": "PR.IP-2",
+                    "cis_mapping": "12.1",
+                    "expert_rationale": "Separation of concerns. A mistake in Dev should never take down your website. By separating environments, you ensure that 'The Real World' (Production) is isolated from 'The Playground' (Development)."
                 },
                 {
                     "control_id": "8.32",
                     "control_title": "Change Management",
-                    "auditor_question": "Are all changes to organization-wide IT systems, networks, and applications subject to a rigorous, documented change control process?",
-                    "evidence_required": "Provide an approved Change Advisory Board (CAB) ticket detailing a recent firewall change, complete with rollback instructions and executive approval.",
-                    "objective": "Minimize the risk of system outages or inadvertently degraded security postures resulting from ad-hoc configuration changes.",
-                    "remediation_advice": "Implement an ITIL-aligned Change Management process in Jira or ServiceNow requiring peer-review and testing validation before major IT changes are executed."
+                    "auditor_question": "Are changes to information processing facilities and systems strictly controlled through formal change management procedures?",
+                    "evidence_required": "Provide a sample change ticket showing the 'Request', 'Impact Analysis', 'Rollback Plan', and 'Management Approval'.",
+                    "objective": "Eliminate 'Rogue' or undocumented changes that could lead to security vulnerabilities or system downtime.",
+                    "remediation_advice": "Adopt a 'Pull Request' (PR) based workflow for all infrastructure and code changes. Require at least one peer approval before deployment.",
+                    "nist_mapping": "PR.IP-3",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "Most outages are caused by 'Human Change.' Change management is the 'Guardrail.' It ensures that every change is reviewed, tested, and has a plan to 'Undo' it if things go wrong."
                 },
                 {
                     "control_id": "8.33",
                     "control_title": "Test Information",
-                    "auditor_question": "Is test information completely devoid of live production data (PII/Cardholder Data) unless it is functionally masked or securely authorized?",
-                    "evidence_required": "Provide DB architecture diagrams showing automated scrubbing mechanisms when production databases are cloned down for Q/A testing.",
-                    "objective": "Ensure lower-tier, loosely secured testing environments do not become a massive target due to holding live customer data.",
-                    "remediation_advice": "Ban the practice of migrating unmasked production data to lower environments. Use synthetic data generation tools to seed testing databases."
+                    "auditor_question": "Is use of real data (PII) for testing avoided, and is test information strictly selected, protected and managed?",
+                    "evidence_required": "Provide the 'Test Data Management Policy' banning the use of production backups in testing environments.",
+                    "objective": "Safeguard real customer privacy by ensuring that sensitive data never leaves the tightly-controlled production zone.",
+                    "remediation_advice": "Use synthetic data generators (e.g., Mockaroo) to create non-sensitive, realistic test datasets for developer use.",
+                    "nist_mapping": "PR.DS-1",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "If you use a copy of your production database for testing, you have just doubled your attack surface. If the test server is hacked, the breach is just as real. Never test with real PII if you can avoid it."
                 },
                 {
                     "control_id": "8.34",
                     "control_title": "Protection of Information Systems During Audit Testing",
-                    "auditor_question": "Are intensive security audits and technical assessments (like penetration testing) rigorously planned to ensure they do not accidentally crash production systems?",
-                    "evidence_required": "Provide the Rules of Engagement (ROE) document signed by an external penetration tester acknowledging strict 'Do Not DoS' bounds.",
-                    "objective": "Ensure the process of verifying security does not inadvertently cause a massive Denial of Service outage.",
-                    "remediation_advice": "Always establish a formal Rules of Engagement (RoE) prior to any red-team or penetration testing explicitly defining out-of-bounds destructive testing."
+                    "auditor_question": "Are audit tests and other assurance activities involving operational systems planned and agreed to minimize the impact on business processes?",
+                    "evidence_required": "Provide a 'Rules of Engagement' document for a recent penetration test, signed by both the CISO and the external auditor.",
+                    "objective": "Ensure that 'Security Checks' themselves don't accidentally crash the systems they are trying to protect.",
+                    "remediation_advice": "Schedule penetration tests or intrusive scans during off-peak hours. Always perform a 'Backup' before conducting intrusive audit testing.",
+                    "nist_mapping": "PR.IP-2",
+                    "cis_mapping": "1.1",
+                    "expert_rationale": "A vulnerability scan can sometimes crash a sensitive server. Protection during testing is about 'Harm Minimization.' You want to find the holes, but you don't want to bring the whole building down to do it."
                 }
             ]
         }
