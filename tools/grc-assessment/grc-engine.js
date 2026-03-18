@@ -36,7 +36,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         dashOverallScore: document.getElementById('dashOverallScore'),
         gapsContainer: document.getElementById('gapsContainer'),
         printableDashboard: document.getElementById('printableDashboard'),
-        btnShareState: document.getElementById('btnShareState')
+        btnShareState: document.getElementById('btnShareState'),
+        btnResetEngine: document.getElementById('btnResetEngine'),
+        resetModal: document.getElementById('resetModal'),
+        btnConfirmReset: document.getElementById('btnConfirmReset')
     };
 
     let grcData = null;
@@ -443,6 +446,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.scrollTo({ top: 0, behavior: 'instant' });
         generateDashboard();
     });
+
+    // Reset Engine Logic
+    if (ui.btnResetEngine) {
+        ui.btnResetEngine.addEventListener('click', () => {
+            if (ui.resetModal) ui.resetModal.style.display = 'flex';
+        });
+    }
+
+    if (ui.btnConfirmReset) {
+        ui.btnConfirmReset.addEventListener('click', () => {
+            localStorage.removeItem(STORAGE_KEY);
+            // Also clear the URL state for a true clean start
+            const url = new URL(window.location);
+            url.searchParams.delete('s');
+            window.history.replaceState({}, '', url);
+            
+            // Reload to start fresh
+            location.reload();
+        });
+    }
 
     if (ui.btnPartialDashboard) {
         ui.btnPartialDashboard.addEventListener('click', () => {
