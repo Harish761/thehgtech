@@ -245,7 +245,32 @@ document.addEventListener('DOMContentLoaded', async () => {
         ui.domainTitle.innerText = domain.name;
 
         // Render Cards
+        // Render Section Intro Header
         ui.viewport.innerHTML = '';
+        
+        const intro = document.createElement('div');
+        intro.className = 'section-intro-card';
+        intro.style.cssText = `
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.03), rgba(139, 92, 246, 0.03));
+            border: 1px solid var(--border);
+            padding: 2rem;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            position: relative;
+            border-left: 5px solid var(--accent-cyan);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        `;
+        intro.innerHTML = `
+            <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-cyan); font-weight: 800; margin-bottom: 0.8rem; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-compass"></i> Audit Context & Scope
+            </div>
+            <h2 style="margin: 0 0 1rem; font-family:'Outfit'; font-size: 2rem; color:#fff;">${domain.name}</h2>
+            <p style="margin: 0; color: var(--text-muted); line-height: 1.6; font-size: 1.1rem; font-style:italic;">
+                ${domain.description || "Evaluating core controls and operational compliance markers for this domain."}
+            </p>
+        `;
+        ui.viewport.appendChild(intro);
+
         domain.controls.forEach(control => {
             const card = document.createElement('article');
             card.className = 'control-card';
@@ -266,12 +291,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </p>
 
                 ${control.expert_rationale ? `
-                <div class="expert-insight" style="margin: 1.5rem 0; padding: 1.2rem; background: rgba(139, 92, 246, 0.05); border-left: 4px solid #8B5CF6; border-radius: 0 8px 8px 0; font-size: 0.95rem; line-height: 1.6;">
-                    <div style="font-weight: bold; color: #8B5CF6; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;">
-                        <i class="fas fa-lightbulb"></i> Consultant Insight
+                <div class="expert-insight" style="margin: 1.5rem 0; padding: 1.5rem; background: rgba(139, 92, 246, 0.04); border: 1px solid rgba(139, 92, 246, 0.15); border-left: 4px solid #8B5CF6; border-radius: 0 12px 12px 0; font-size: 0.95rem; line-height: 1.6;">
+                    <div style="font-weight: 800; color: #8B5CF6; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 8px; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px;">
+                        <i class="fas fa-user-tie"></i> Strategic Advisor Insight
                     </div>
-                    <div style="color: var(--text-primary); font-style: italic;">
-                        "${control.expert_rationale}"
+                    <div style="color: var(--text-primary);">
+                        ${control.expert_rationale.includes('|') 
+                            ? control.expert_rationale.split('|').map(part => {
+                                const [label, text] = part.split(':');
+                                return `<div style="margin-bottom:8px;"><strong>${label}:</strong> ${text}</div>`;
+                            }).join('')
+                            : `"${control.expert_rationale}"`
+                        }
                     </div>
                 </div>
                 ` : ''}
@@ -563,6 +594,55 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('nistScore').innerText = `${nistPct}%`;
         document.getElementById('cisScore').innerText = `${cisPct}%`;
 
+        // 2. Decision Engine: Maturity & Priority Actions
+        const finalScoreVal = parseInt(ui.overallScore.innerText.replace('%', ''));
+        let maturityLabel = "Initial / At Risk";
+        let maturityColor = "#EF4444";
+        let maturityDesc = "Critical security gaps detected. Significant exposure to breach and regulatory fines.";
+        
+        if (finalScoreVal >= 75) { 
+            maturityLabel = "Mature / Optimized"; 
+            maturityColor = "#10B981";
+            maturityDesc = "Proactive posture. Controls are integrated and monitored for continuous improvement.";
+        } else if (finalScoreVal >= 40) { 
+            maturityLabel = "Developing / Moderate"; 
+            maturityColor = "#F59E0B";
+            maturityDesc = "Foundational controls are in place, but lack depth and consistent monitoring.";
+        }
+
+        const maturityEl = document.getElementById('maturityLabel');
+        const maturityDescEl = document.getElementById('maturityDesc');
+        if (maturityEl) {
+            maturityEl.innerText = maturityLabel;
+            maturityEl.style.color = maturityColor;
+        }
+        if (maturityDescEl) maturityDescEl.innerText = maturityDesc;
+
+        // Extract Top 3 Priority Actions
+        const priorityActions = criticalGaps
+            .sort((a, b) => (a.ans === 'no' ? -1 : 1)) // Prioritize NOs over PARTIALs
+            .slice(0, 3);
+
+        const priorityContainer = document.getElementById('priorityActionPlan');
+        if (priorityContainer) {
+            priorityContainer.innerHTML = '';
+            if (priorityActions.length === 0) {
+                priorityContainer.innerHTML = '<p style="color:var(--text-muted); font-style:italic;">Maintain current posture. No immediate critical fixes required.</p>';
+            } else {
+                priorityActions.forEach((act, i) => {
+                    priorityContainer.innerHTML += `
+                        <div class="priority-step" style="display:flex; gap:15px; margin-bottom:1.5rem; background:rgba(255,255,255,0.02); padding:1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+                            <div class="step-num" style="background:${maturityColor}; color:#000; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:0.8rem; flex-shrink:0;">${i+1}</div>
+                            <div>
+                                <h4 style="margin:0 0 5px; color:#fff; font-size:0.95rem;">Fix Control ${act.id}: ${act.title}</h4>
+                                <p style="font-size:0.8rem; color:var(--text-muted); margin:0;">${act.remediation.split('.')[0]}.</p>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+        }
+
         // 1. Render Chart.js Radar
         const ctx = document.getElementById('radarChart').getContext('2d');
         if (radarChartInstance) radarChartInstance.destroy(); // clear previous
@@ -685,18 +765,33 @@ document.addEventListener('DOMContentLoaded', async () => {
                         if (c.cis_mapping) { cisV += sVal; }
 
                         if (ans === 'yes') implC++;
-                        else if (ans === 'partial') { partC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just']}); }
+                        else if (ans === 'partial') { 
+                            partC++; 
+                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
+                        }
                         else if (ans === 'na') naC++;
-                        else { gapC++; criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just']}); }
+                        else { 
+                            gapC++; 
+                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
+                        }
                     });
                 });
 
-                // Use fixed denominators for framework scores
                 const NIST_DENOMINATOR_PDF = 106;
                 const CIS_DENOMINATOR_PDF = 153;
-
                 const nistP = Math.round((nistV / NIST_DENOMINATOR_PDF) * 100);
                 const cisP = Math.round((cisV / CIS_DENOMINATOR_PDF) * 100);
+
+                // Decision Engine: Maturity & Top 3
+                const finalP = parseInt(ui.overallScore.innerText.replace('%', ''));
+                let matLbl = "Initial / At Risk";
+                let matCol = "#EF4444";
+                if (finalP >= 75) { matLbl = "Mature / Optimized"; matCol = "#10B981"; }
+                else if (finalP >= 40) { matLbl = "Developing / Moderate"; matCol = "#F59E0B"; }
+
+                const priorityRecommendationList = criticalGaps
+                    .sort((a,b) => (a.risk === 'High' ? -1 : 1))
+                    .slice(0, 3);
 
                 // 2. Build Gap Table
                 const gapTableBody = [
@@ -761,22 +856,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 {
                                     width: '45%',
                                     stack: [
-                                        { text: 'Overall Compliance Posture', style: 'sectionHeader' },
+                                        { text: 'Overall Readiness Posture', style: 'sectionHeader' },
                                         { text: ui.overallScore.innerText, style: 'giantScore', color: ui.overallScore.style.color },
-                                        { text: 'Scope Breakdown', bold: true, margin: [0, 15, 0, 5] },
+                                        { text: matLbl.toUpperCase(), bold: true, fontSize: 13, color: matCol, margin: [0, 5, 0, 15] },
+                                        { text: 'Framework Alignment Indicators', bold: true, margin: [0, 15, 0, 5] },
                                         {
                                             layout: 'noBorders',
                                             table: {
                                                 widths: ['*', 'auto'],
                                                 body: [
-                                                    ['Total Evaluated Controls:', { text: totalC.toString(), bold: true }],
-                                                    [{ text: 'Implemented (Low Risk):', color: '#10B981' }, { text: implC.toString(), bold: true, color: '#10B981' }],
-                                                    [{ text: 'Partial (Medium Risk):', color: '#F59E0B' }, { text: partC.toString(), bold: true, color: '#F59E0B' }],
-                                                    [{ text: 'Gap (High Risk):', color: '#EF4444' }, { text: gapC.toString(), bold: true, color: '#EF4444' }],
-                                                    [{ text: 'Not Applicable:', color: '#6b7280' }, { text: naC.toString(), bold: true, color: '#6b7280' }],
-                                                    [{ text: 'Framework Alignment', bold: true, margin: [0, 10, 0, 5], fontSize: 10 }, {}],
-                                                    ['NIST CSF 2.0 readiness:', { text: document.getElementById('nistScore').innerText, bold: true, color: '#0A84FF' }],
-                                                    ['CIS Controls v8 readiness:', { text: document.getElementById('cisScore').innerText, bold: true, color: '#FF9F0A' }]
+                                                    ['• NIST CSF 2.0 readiness:', { text: nistP + '%', bold: true, color: '#0A84FF' }],
+                                                    ['• CIS Controls v8 readiness:', { text: cisP + '%', bold: true, color: '#FF9F0A' }],
+                                                    ['• ISO 27001 Core alignment:', { text: ui.overallScore.innerText, bold: true, color: ui.overallScore.style.color }]
                                                 ]
                                             }
                                         }
@@ -784,15 +875,31 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 },
                                 {
                                     width: '55%',
-                                    stack: [ chartImgObject ]
+                                    stack: [
+                                        chartImgObject
+                                    ]
                                 }
                             ]
                         },
 
-                        // Forced pagebreak logic removed if we just want it to lay out naturally, 
-                        // but best to explicitly break for the detailed tables so it feels structured.
-                        { text: 'Critical Gaps & Recommended Remediation', style: 'sectionHeader', pageBreak: 'before' },
-                        { text: 'The following controls require immediate or scheduled action to achieve strict adherence with objective framework compliance requirements.', margin: [0, 0, 0, 10], color: '#6b7280'},
+                        { canvas: [{ type: 'line', x1: 0, y1: 0, x2: 515, y2: 0, lineWidth: 1, lineColor: '#e5e7eb' }], margin: [0, 20, 0, 20] },
+
+                        { text: 'EXECUTIVE ACTION PLAN (TOP PRIORITIES)', style: 'sectionHeader', margin: [0, 10, 0, 15] },
+                        priorityRecommendationList.length > 0 ? {
+                            stack: priorityRecommendationList.map((p, index) => {
+                                return {
+                                    margin: [0, 0, 0, 15],
+                                    stack: [
+                                        { text: `${index + 1}. IMMEDIATELY RECTIFY: Control ${p.id} (${p.title})`, bold: true, color: '#111827', fontSize: 11 },
+                                        { text: `Strategic Risk: ${p.rationale ? p.rationale.split('|')[0].replace('**Risk:**', '').trim() : 'Critical control gap.'}`, fontSize: 9, color: '#ef4444', margin: [15, 4, 0, 0] },
+                                        { text: `Remediation: ${p.rem}`, fontSize: 9, color: '#4B5563', margin: [15, 2, 0, 0] }
+                                    ]
+                                };
+                            })
+                        } : { text: 'Maintain current security posture. No critical remediations prioritized.', italic: true, color: '#6B7280' },
+
+                        { text: 'Detailed Gap Analysis & Risk Registry', style: 'sectionHeader', pageBreak: 'before', margin: [0, 0, 0, 15] },
+                        { text: 'The following table outlines all identified gaps (Partial or Missing) with corresponding remediation guidance and framework mapping.', margin: [0, 0, 0, 10], color: '#6b7280', fontSize: 9 },
                         {
                             table: {
                                 headerRows: 1,

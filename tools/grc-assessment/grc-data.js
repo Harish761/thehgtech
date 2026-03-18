@@ -6,7 +6,7 @@ const THEHGTECH_GRC_DATA = {
             "id": "domain_5",
             "name": "Organizational Controls",
             "icon": "fa-sitemap",
-            "description": "Foundational governance, strategic policies, and executive involvement required to secure the organization.",
+            "description": "Establish the 'Constitution' of your security program. This section evaluates governance, executive accountability, and the strategic policies that mandate compliance across the organization.",
             "controls": [
                 {
                     "control_id": "5.1",
@@ -17,7 +17,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Draft a unified Information Security Policy document. Have the CEO or Board sign it. Set a recurring calendar invite for an annual review and update session.",
                     "nist_mapping": "GV.PO-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Policies are the constitution of your security program. Without signed management approval, security is seen as an 'IT problem' rather than a business requirement, leading to lack of funding and cooperation."
+                    "expert_rationale": "**Risk:** Lack of strategic direction and management backing. | **Impact:** Security becomes an 'IT problem' ignored by the business, leading to budget cuts and non-compliance. | **Guidance:** Policies are your legal baseline; without executive signatures, they lack the authority to drive organizational change."
                 },
                 {
                     "control_id": "5.2",
@@ -28,7 +28,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Update HR job descriptions for IT and Security personnel to explicitly list their security responsibilities. Maintain an internal RACI matrix for incident response.",
                     "nist_mapping": "GV.AM-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Ambiguity is the enemy of security. If everyone is responsible for backups, no one is. Explicitly naming owners ensures accountability when an audit or incident occurs."
+                    "expert_rationale": "**Risk:** Critical security tasks falling through the cracks. | **Impact:** 'Ambiguity of ownership' leads to unpatched systems or missed backups. | **Guidance:** Explicitly naming owners in job descriptions ensures that when a crisis hits, there is no confusion about who is responsible for the response."
                 },
                 {
                     "control_id": "5.3",
@@ -39,7 +39,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enforce branch protection rules in GitHub/GitLab requiring at least one approving review before merging to main. Revoke direct production access for standard developers.",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "3.3",
-                    "expert_rationale": "One person should never have the power to destroy the entire company by mistake or malice. Segregation of duties is the primary defense against internal fraud and 'fat-finger' disasters."
+                    "expert_rationale": "**Risk:** Internal fraud or catastrophic accidental errors. | **Impact:** A single compromised or disgruntled employee could delete your entire production environment. | **Guidance:** Enforce 'Two-Person' rules (like PR reviews) for all critical changes to prevent a 'single point of human failure' from destroying the business."
                 },
                 {
                     "control_id": "5.4",
@@ -83,7 +83,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Integrate open-source (OSINT) or commercial threat intelligence feeds via STIX/TAXII into your primary EDR or SIEM platform.",
                     "nist_mapping": "ID.RA-2",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Static defenses fail against dynamic attackers. Threat intelligence tells you what the current 'weather' is in the adversary landscape so you can put up your umbrella before the storm happens."
+                    "expert_rationale": "**Risk:** Blindness to emerging adversary maneuvers. | **Impact:** Being hit by an exploit that your industry peers were already warned about via threat feeds. | **Guidance:** Cybersecurity is a team sport. Threat intel shifts you from reactive 'firefighting' to proactive hunting. It is your 'early warning system'."
                 },
                 {
                     "control_id": "5.8",
@@ -105,7 +105,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy an automated ITAM discovery tool (e.g., Lansweeper, AWS Config) to continuously map and document active enterprise assets.",
                     "nist_mapping": "ID.AM-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "You cannot protect what you do not know you have. Most breaches occur on 'shadow IT' or forgotten servers that aren't being patched because they aren't in the inventory."
+                    "expert_rationale": "**Risk:** Shadow IT and forgotten, unmanaged assets. | **Impact:** Most breaches occur on 'forgotten' servers that aren't being patched because they aren't in the inventory. | **Guidance:** You cannot protect what you do not know you have. A definitive inventory is the foundation of all other security controls."
                 },
                 {
                     "control_id": "5.10",
@@ -270,7 +270,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Draft an IRP utilizing the PICERL methodology (Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned).",
                     "nist_mapping": "ID.RA-1",
                     "cis_mapping": "17.1",
-                    "expert_rationale": "A breach is the worst time to decide who to call. An Incident Response Plan is like a fire drill—it ensures that when the house is on fire, everyone knows exactly where the exits are and how to use the fire extinguisher."
+                    "expert_rationale": "**Risk:** Chaos and catastrophic delays during a live breach. | **Impact:** Failing legal notification windows (like the 72hr GDPR limit) or making the breach worse via 'panic' decisions. | **Guidance:** An IRP is like a fire drill; it ensures that when the house is on fire, everyone knows exactly where the exits are and how to use the fire extinguisher."
                 },
                 {
                     "control_id": "5.25",
@@ -432,7 +432,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Partner with a background screening vendor (e.g., Checkr) and make a cleared background check a mandatory condition in all employment offer letters.",
                     "nist_mapping": "PR.AT-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Trust, but verify. A background check is the easiest way to prevent hired insiders from joining your company for industrial espionage or embezzlement."
+                    "expert_rationale": "**Risk:** Hiring an insider threat or someone with a fraudulent history. | **Impact:** Data theft, sabotage, or financial embezzlement by a trusted employee. | **Guidance:** Background checks are a low-cost, high-impact 'Trust but Verify' control that screens out high-risk individuals before they touch your data."
                 },
                 {
                     "control_id": "6.2",
@@ -454,7 +454,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy a security awareness platform (e.g., KnowBe4). Mandate training during onboarding and annually thereafter. Conduct monthly simulated phishing campaigns.",
                     "nist_mapping": "PR.AT-1",
                     "cis_mapping": "14.1",
-                    "expert_rationale": "90% of breaches start with a single phishing email. Security training is not about 'compliance'—it's about reducing the chance of your CEO accidentally giving away their password to a Russian bot."
+                    "expert_rationale": "**Risk:** Human vulnerability is the easiest entry point for attackers. | **Impact:** 90% of breaches start with a single phishing click. | **Guidance:** Transform your staff into a 'Human Firewall.' Continuous, bite-sized training is far more effective than a once-a-year compliance video."
                 },
                 {
                     "control_id": "6.4",
@@ -690,7 +690,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy a modern EDR solution (e.g., CrowdStrike, SentinelOne) and enforce 'Compliance Checks' preventing devices without disk encryption from accessing corporate email.",
                     "nist_mapping": "PR.IP-1",
                     "cis_mapping": "2.1",
-                    "expert_rationale": "Endpoints are where your employees work and where your data lives. They are the #1 target for attackers. Endpoint security (EDR/MDR) is non-negotiable for any business that wants to survive a malware outbreak."
+                    "expert_rationale": "**Risk:** Malware, ransomware, and unauthorized access at the entry point. | **Impact:** Total encryption of work data or credential theft leading to network-wide compromise. | **Guidance:** Modern EDR/MDR is non-negotiable. It provides the visibility needed to stop an attack at the 'front door' before it moves laterally into your servers."
                 },
                 {
                     "control_id": "8.2",
@@ -701,7 +701,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Implement 'Just-In-Time' (JIT) access using a Privileged Access Management (PAM) tool. Ban the use of 'Domain Admin' accounts for day-to-day work (email/web).",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "5.1",
-                    "expert_rationale": "An admin account is the 'Keys to the Kingdom.' If an admin uses their privileged account to read a phishing email, the attacker immediately gets full control of your entire network. JIT access ensures that admin powers are only 'active' when they are actually needed."
+                    "expert_rationale": "**Risk:** Unrestricted admin power being weaponized by an attacker. | **Impact:** A single 'Domain Admin' compromise allows a complete takeover of your company's identity and data. | **Guidance:** Implement 'Just-In-Time' (JIT) access. No one should be an admin 24/7; they should only 'elevate' when doing specific, approved work."
                 },
                 {
                     "control_id": "8.3",
@@ -734,7 +734,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Mandate Multi-Factor Authentication (MFA) for every single employee. Use FIDO2/Hardware keys for high-risk roles (Admins, Finance).",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "6.1",
-                    "expert_rationale": "Passwords are DEAD. 80% of breaches involve stolen credentials. MFA is the single most effective security control you can implement. Without MFA, you are essentially leaving the front door key under the mat."
+                    "expert_rationale": "**Risk:** Credential theft via phishing or password spraying. | **Impact:** Passwords alone are no longer a sufficient defense against modern attackers. | **Guidance:** MFA is the single most effective control you can implement. It neutralizes 99% of bulk credential attacks. Without it, you are essentially leaving the keys under the mat."
                 },
                 {
                     "control_id": "8.6",
@@ -767,7 +767,7 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Conduct monthly internal and external vulnerability scans. Establish a SLA requiring 'Critical' vulnerabilities to be patched within 72 hours.",
                     "nist_mapping": "ID.RA-1",
                     "cis_mapping": "7.1",
-                    "expert_rationale": "Hackers don't always find new exploits; they mostly use the old ones you haven't patched yet. Vulnerability management is about 'Patching the Holes.' If you don't patch, you're essentially leaving your windows unlocked and wondering why you were robbed."
+                    "expert_rationale": "**Risk:** Exploitation of known technical weaknesses. | **Impact:** Hackers don't always find new exploits; they mostly use the ones you haven't patched yet. | **Guidance:** Vulnerability management is about 'Patching the Holes' before the rain starts. If you don't patch, you're essentially leaving your windows unlocked."
                 },
                 {
                     "control_id": "8.9",
