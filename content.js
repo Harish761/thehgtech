@@ -5,65 +5,74 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 18 2026",
+            "headline": "Shadow AI in SaaS—Breaches Loom Without Visibility",
+            "title": "Shadow AI in SaaS Applications Poses Significant Breach Risks",
+            "content": "The proliferation of shadow AI within SaaS (Software as a Service) applications is quietly enabling massive data breaches, as highlighted in the recent report &quot;From Chaos to Control.&quot; These agentic AI systems, often deployed without oversight, pose severe risks due to their autonomous decision-making capabilities. This lack of visibility and control can lead to unauthorized access and data exfiltration. Companies relying on SaaS solutions must enhance their monitoring and management of AI processes to mitigate these threats. The report urges organizations to conduct regular audits and implement robust AI governance frameworks to prevent potential breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/the-shadow-ai-problem-how-saas-apps-are-quietly-enabling-massive-breaches/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
+            "headline": "Manifold Secures $8M—Boosts AI Endpoint Defense",
+            "title": "Manifold Raises $8 Million to Enhance AI Detection and Response",
+            "content": "Manifold, a cybersecurity startup focused on securing autonomous AI on endpoints, has successfully raised $8 million in funding to advance its product development. The investment will be used to enhance the company&#x27;s AI detection and response capabilities, critical for identifying and mitigating threats posed by autonomous systems. As AI continues to integrate into endpoint devices, the need for comprehensive security measures becomes increasingly urgent. Manifold&#x27;s efforts aim to provide robust solutions to protect against AI-driven threats, ensuring secure and resilient endpoint environments for organizations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/manifold-raises-8-million-for-ai-detection-and-response/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
+            "headline": "Nordstrom Email Exploit—Crypto Scams Target Customers",
+            "title": "Nordstrom&#x27;s Email System Exploited to Deliver Cryptocurrency Scams",
+            "content": "Nordstrom&#x27;s email system was recently compromised, allowing attackers to send fraudulent cryptocurrency scam messages to its customers. These emails, disguised as a St. Patrick&#x27;s Day promotion, originated from a legitimate Nordstrom address, increasing their credibility. The breach highlights the vulnerability of corporate email systems to exploitation, potentially affecting thousands of customers. Nordstrom is advising recipients to disregard any suspicious emails and has initiated an investigation to secure their systems. This incident underscores the importance of robust email security measures and user awareness in preventing phishing attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nordstroms-email-system-abused-to-send-crypto-scams-to-customers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
+            "headline": "Adminer Scans Surge—Legacy Vulnerabilities Exploited",
+            "title": "Attackers Target Adminer with Scans Exploiting Legacy Vulnerabilities",
+            "content": "Recent scans targeting &quot;Adminer,&quot; a popular database management tool, have been detected across honeypots, indicating increased exploitation attempts. Adminer, akin to phpMyAdmin, has a history of vulnerabilities due to its early development era, lacking modern security measures. Attackers are leveraging these legacy flaws to gain unauthorized access to databases. Organizations using Adminer are advised to update to the latest versions and apply security patches promptly. This trend reflects a broader pattern of threat actors exploiting outdated software, emphasizing the need for regular software maintenance and vulnerability management.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32808",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
+            "headline": "Meta, TikTok Ads—Data Harvesting Through Tracking Pixels",
+            "title": "Meta and TikTok Accused of Data Harvesting via Ad Clicks",
+            "content": "Meta and TikTok have come under scrutiny for allegedly harvesting personal and financial information through tracking pixels embedded in advertisements. These pixels allow the companies to collect data such as credit card details and geolocation from users who click on ads and navigate to third-party sites. The practice raises significant privacy concerns, as users are often unaware of the extent of data collection. Experts recommend using privacy-focused browsers and ad blockers to mitigate tracking risks. This revelation underscores the ongoing debate over digital privacy and the need for stricter data protection regulations.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/meta-tiktok-steal-sensitive-pii",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
+            "headline": "SideWinder Expands—Espionage Targets Southeast Asian Infrastructure",
+            "title": "SideWinder Espionage Campaign Targets Southeast Asian Governments and Infrastructure",
+            "content": "The SideWinder threat group, suspected to be linked to India, has expanded its espionage operations across Southeast Asia. The group targets government entities, telecommunications, and critical infrastructure using spear-phishing tactics and exploiting outdated vulnerabilities. Their rapid infrastructure rotation helps maintain persistent access, complicating detection and mitigation efforts. Organizations in the region are urged to strengthen their security postures by patching known vulnerabilities and enhancing phishing defenses. This campaign highlights the persistent threat posed by state-linked actors in geopolitical cyber conflicts.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/sidewinder-espionage-campaign-expands-across-southeast-asia",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
+            "headline": "Stryker Breach—Malware-Stolen Credentials Implicated",
+            "title": "Iranian Hackers Use Malware-Stolen Credentials in Stryker Breach",
+            "content": "The medtech giant Stryker is in the process of restoring systems after a cyberattack attributed to the Handala hackers, believed to be Iranian. The attackers likely used credentials stolen via malware to infiltrate Stryker&#x27;s network, compromising sensitive data. This breach underscores the vulnerabilities in credential management and the importance of implementing multi-factor authentication (MFA) to protect against unauthorized access. Organizations are advised to review their security protocols and conduct regular audits to prevent similar incidents. The attack highlights the ongoing threat of state-sponsored cyber activities targeting critical industries.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/iranian-hackers-likely-used-malware-stolen-credentials-in-stryker-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
             "headline": "Apple’s Background Update Fixes WebKit Flaw—No OS Upgrade Needed",
             "title": "Apple Releases Background Security Update to Patch WebKit Vulnerability",
             "content": "Apple has deployed its inaugural Background Security Improvements update to address a WebKit vulnerability identified as CVE-2026-20643. This flaw affects iPhones, iPads, and Macs, allowing the update to be applied without a full operating system upgrade. The vulnerability could potentially allow attackers to execute arbitrary code through malicious web content. By introducing this streamlined patching method, Apple aims to enhance security response times for users. Device owners are encouraged to ensure their systems are set to receive these background updates automatically to maintain protection against emerging threats. This move signifies a shift towards more agile security practices in Apple&#x27;s ecosystem.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/apple-pushes-first-background-security-improvements-update-to-fix-webkit-flaw/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Credential Theft Soars—Attackers Logging In, Not Breaking In",
-            "title": "Surge in Credential Theft Linked to Infostealer Malware and AI Tactics",
-            "content": "The latter half of 2025 saw a significant increase in credential theft, driven by the industrialization of infostealer malware and AI-enhanced social engineering techniques. Attackers are increasingly opting to log in using stolen credentials rather than breaking in through traditional hacking methods. This trend poses a challenge for security professionals, as it often bypasses conventional perimeter defenses. Organizations are advised to implement multi-factor authentication (MFA) and continuous monitoring to mitigate this threat. The rise in credential theft underscores the need for robust identity verification measures and employee training on recognizing social engineering attempts.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/identity-access-management-security/more-attackers-logging-in-not-breaking-in",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "GlassWorm Strikes Again—400+ Repos Compromised",
-            "title": "GlassWorm Supply-Chain Attack Targets Hundreds of GitHub and npm Repositories",
-            "content": "The GlassWorm malware campaign has resurfaced, compromising over 400 code repositories and packages on platforms such as GitHub, npm, and VSCode/OpenVSX. This coordinated supply-chain attack highlights the vulnerability of software development ecosystems to malicious actors. The attack involves injecting malicious code into popular repositories, potentially affecting thousands of downstream applications. Developers are urged to review their dependencies and implement rigorous code audit processes to detect any unauthorized changes. This incident serves as a stark reminder of the critical importance of supply-chain security in modern software development.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/glassworm-malware-hits-400-plus-code-repos-on-github-npm-vscode-openvsx/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Ransomware Tactics Shift—Native Tools Replace Cobalt Strike",
-            "title": "Ransomware Actors Adapt as Payment Rates Decline",
-            "content": "Faced with declining ransom payment rates, ransomware groups are shifting tactics, favoring native Windows tools over traditional frameworks like Cobalt Strike. This change is driven by the need to evade detection and reduce operational costs. The trend towards data theft over encryption is also on the rise, as attackers seek alternative revenue streams. Security teams should focus on monitoring for unusual behavior in native tools and enhancing endpoint detection capabilities. This evolution in ransomware tactics reflects the dynamic nature of cybercrime and the constant adaptation required by both attackers and defenders.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/less-lucrative-ransomware-market-makes-attackers-alter-methods",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "CISA: Relationships Over Roles in Critical Infrastructure",
-            "title": "CISA Official Emphasizes Relationship-Based Approach for Infrastructure Security",
-            "content": "Nick Andersen, acting director of the Cybersecurity and Infrastructure Security Agency (CISA), has advised that agencies prioritize relationships over rigid role assignments in managing critical infrastructure security. Andersen highlighted that effective collaboration and communication between agencies are more crucial than strictly adhering to actor risk management agency designations. This approach aims to foster a more flexible and responsive security posture across sectors. Agencies are encouraged to focus on building strong partnerships and leveraging shared expertise to address the complex challenges in protecting national infrastructure. This guidance reflects a broader trend towards cooperative security strategies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cisa-srma-critical-infrastructure-flexible-partnerships-nick-andersen/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "U.S. Cyber Director: No Push for Corporate Cyber Offense",
-            "title": "Trump Administration Seeks Private Sector Collaboration, Not Cyber Offense",
-            "content": "Sean Cairncross, the national cyber director, clarified that the Trump administration is not advocating for private companies to engage in offensive cyber operations. Instead, the focus is on fostering collaboration that enables the U.S. government to effectively counter its adversaries. This approach involves leveraging private sector innovation and expertise to enhance national cybersecurity capabilities. Businesses are encouraged to engage in partnerships that support defensive strategies and information sharing. This stance underscores the administration&#x27;s emphasis on cooperative efforts to strengthen the nation&#x27;s cyber defenses without escalating offensive actions.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/national-cyber-strategy-private-sector-offensive-operations-sean-cairncross/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Court Pauses Block on Perplexity’s AI Shopping Agent",
-            "title": "Appeals Court Halts Order Against Perplexity’s Amazon AI Agent",
-            "content": "The Ninth Circuit Court has temporarily paused a lower court&#x27;s order that blocked Perplexity&#x27;s AI shopping agent from operating on Amazon. The legal dispute centers on whether user-approved automation can access password-protected accounts without explicit platform permission. This decision allows Perplexity to continue its operations while the case is under review. The outcome of this case could have significant implications for the use of AI in automating online transactions and platform access. Companies using similar technologies should closely monitor the proceedings to understand potential impacts on their operations.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/perplexity-comet-ai-shopping-agent-amazon-lawsuit-ninth-circuit-stay/",
             "relatedResources": []
         },
         {
@@ -94,65 +103,74 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "Mar 18 2026",
+            "headline": "Pentagon Flags Anthropic as National Security Risk",
+            "title": "DOD Labels Anthropic a Supply Chain Risk Over Potential Technology Disabling",
+            "content": "The U.S. Department of Defense has classified Anthropic, an AI firm, as a supply chain risk due to concerns that the company might disable its technology during critical wartime operations. This decision stems from Anthropic&#x27;s &quot;red lines,&quot; which the Pentagon believes could pose an unacceptable risk to national security. The move reflects heightened scrutiny of AI vendors and their reliability in defense scenarios. The classification could lead to restricted use of Anthropic&#x27;s technology within defense projects, impacting the firm&#x27;s business with government contracts. Defense contractors and AI firms should review their operational protocols to ensure alignment with national security requirements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/18/dod-says-anthropics-red-lines-make-it-an-unacceptable-risk-to-national-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
+            "headline": "Nvidia&#x27;s DLSS 5 Sparks Gamer Backlash Over Visual Changes",
+            "title": "Gamers Criticize Nvidia&#x27;s DLSS 5 for Altering Game Aesthetics",
+            "content": "Nvidia&#x27;s latest AI-driven graphics technology, DLSS 5, has come under fire from gamers for its ability to alter game lighting and materials in real-time. The &quot;3D guided neural rendering model&quot; has sparked a wave of memes and criticism, particularly for its impact on character visuals in Resident Evil Requiem demos. Despite being hailed as a significant advancement, the technology is perceived by some as overly intrusive, affecting the gaming experience negatively. Game developers and players should consider the implications of DLSS 5 on game aesthetics and performance. Nvidia is expected to address these concerns in future updates.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/games/896518/nvidia-dlss-5-ai-3d-rendering",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
+            "headline": "Microsoft Unveils Fabric IQ to Harmonize AI Agent Realities",
+            "title": "Fabric IQ Introduced by Microsoft to Align Enterprise AI Agent Contexts",
+            "content": "Microsoft has announced Fabric IQ, a solution designed to address the issue of enterprise AI agents operating from different contextual realities. This problem, prevalent in multi-agent systems, leads to &quot;hallucinations&quot; due to fragmented context rather than outright model failure. Fabric IQ aims to provide a unified understanding of business contexts across various platforms, reducing discrepancies in AI agent outputs. Enterprises employing multi-agent AI systems should consider integrating Fabric IQ to enhance operational consistency and reliability. This development underscores the growing need for cohesive AI frameworks in complex business environments.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/data/enterprise-ai-agents-keep-operating-from-different-versions-of-reality",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Pentagon Pursues Anthropic Alternatives Amidst Security Concerns",
+            "title": "Pentagon Seeks New AI Partners Following Anthropic Dispute",
+            "content": "Following a significant fallout with AI firm Anthropic, the Pentagon is reportedly exploring alternative AI partnerships. The rift, rooted in security concerns over Anthropic&#x27;s operational reliability, has prompted the Department of Defense to seek other vendors that can meet its stringent requirements. This development highlights the increasing importance of trust and dependability in AI collaborations with defense agencies. Companies aiming to partner with the Pentagon should ensure their technologies align with national security standards. The search for alternatives could reshape the landscape of AI vendors in defense sectors.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/17/the-pentagon-is-developing-alternatives-to-anthropic-report-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Nvidia&#x27;s DLSS 5 Criticized for Detracting Game Realism",
+            "title": "DLSS 5 by Nvidia Compared to Motion Smoothing in Gaming",
+            "content": "Nvidia&#x27;s DLSS 5, described as a groundbreaking advancement in computer graphics, has faced criticism for its impact on gaming realism. The technology, which dynamically alters game visuals, has been likened to motion smoothing, a feature often criticized in televisions for reducing cinematic quality. Despite Nvidia&#x27;s claim of significant breakthroughs, gamers have expressed dissatisfaction with the altered aesthetics in popular titles. This feedback suggests a need for careful consideration of DLSS 5&#x27;s application in gaming environments. Developers and players should weigh the benefits of enhanced graphics against potential compromises in visual authenticity.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/896213/nvidia-dlss-5-ai-faces-motion-smoothing",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "BuzzFeed&#x27;s AI Apps Debut to Tepid SXSW Reception",
+            "title": "BuzzFeed Launches AI-Powered Social Apps with Lukewarm Response",
+            "content": "At the South by Southwest (SXSW) conference, BuzzFeed introduced a range of AI-powered social applications aimed at diversifying its revenue streams. However, the demos failed to generate significant excitement among attendees, drawing muted reactions. BuzzFeed&#x27;s move into AI-driven apps reflects a broader trend of media companies leveraging technology to innovate and capture new audiences. Despite the underwhelming reception, BuzzFeed remains committed to exploring AI as a means of enhancing user engagement and monetization. Industry observers should monitor how these developments influence BuzzFeed&#x27;s strategic direction and financial performance.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/17/buzzfeed-ai-slop-apps-sxsw-bf-island-conjure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 17 2026",
+            "headline": "Hugging Face Reports on Spring 2026 Open Source Trends",
+            "title": "State of Open Source on Hugging Face: Spring 2026 Insights",
+            "content": "Hugging Face has released its Spring 2026 report on open-source trends within its platform, highlighting key developments and community contributions. The report underscores the growing adoption of open-source models and tools, as well as the increasing collaboration among developers. Hugging Face continues to be a pivotal player in the AI community, fostering innovation through transparency and shared resources. The report provides valuable insights for developers and organizations looking to leverage open-source AI technologies. Stakeholders should consider these trends when planning their AI projects and collaborations.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 18 2026",
             "headline": "Anthropic Faces Military Ban—Justice Dept. Cites Trust Issues",
             "title": "Justice Department Blocks Anthropic from Warfighting Systems Over Trust Concerns",
             "content": "The U.S. Justice Department has defended its decision to penalize Anthropic, a leading AI firm, for its attempts to restrict military applications of its Claude AI models. The government argues that Anthropic&#x27;s limitations on the use of Claude in warfighting systems constitute a breach of trust. This legal battle highlights the tension between AI developers and government expectations for technology use in defense. Anthropic&#x27;s lawsuit challenges the penalties, asserting the company&#x27;s right to control the application of its technology. The outcome could set a significant precedent for AI governance in military contexts. Stakeholders should closely monitor this case for its implications on AI ethics and military integration.",
             "source": "Artificial Intelligence Latest",
             "sourceUrl": "https://www.wired.com/story/department-of-defense-responds-to-anthropic-lawsuit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Nemotron 3 Nano 4B Debuts—Boosts Local AI Efficiency",
-            "title": "Nemotron 3 Nano 4B: Compact Hybrid Model Enhances Local AI Processing",
-            "content": "Hugging Face has unveiled the Nemotron 3 Nano 4B, a compact hybrid AI model designed to optimize local processing capabilities. This model combines efficiency with performance, enabling developers to deploy advanced AI functionalities without relying heavily on cloud resources. The Nemotron 3 Nano 4B is tailored for edge devices, promising reduced latency and improved response times in AI applications. This development is particularly relevant for industries requiring real-time data processing, where cloud dependence can be a bottleneck. Organizations should consider integrating such models to enhance their AI infrastructure and reduce operational costs.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-nano-4b",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Mamba 3 Surpasses Transformer—4% Better Language Modeling",
-            "title": "Open Source Mamba 3 Challenges Transformer with Enhanced Language Modeling",
-            "content": "The open-source Mamba 3 architecture has been introduced, boasting a near 4% improvement in language modeling over the traditional Transformer architecture. This advancement reduces latency, providing faster and more accurate AI responses. Mamba 3&#x27;s enhancements are set to impact various applications, from natural language processing to image recognition, by offering more efficient data interpretation. The development marks a significant milestone in the evolution of AI architectures, promising to reshape current AI deployment strategies. Developers and organizations should explore Mamba 3 for potential integration into existing systems to leverage its improved performance.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/open-source-mamba-3-arrives-to-surpass-transformer-architecture-with-nearly",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Pentagon Plans AI Training on Classified Data—Security Concerns Rise",
-            "title": "Pentagon Considers Secure AI Training Environments for Classified Military Data",
-            "content": "The Pentagon is exploring the creation of secure environments for AI companies to train models using classified military data. This initiative aims to develop military-specific AI models while maintaining data security. Currently, AI models like Anthropic&#x27;s Claude are utilized in classified settings, but the new plan would expand capabilities. This move could enhance military AI applications, though it raises concerns about data protection and the potential risks of classified information exposure. Defense contractors and AI firms should prepare for stringent security requirements and potential collaboration opportunities with the Department of Defense.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/17/1134351/the-pentagon-is-planning-for-ai-companies-to-train-on-classified-data-defense-official-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Mistral&#x27;s Forge Empowers Enterprises—Custom AI Model Training",
-            "title": "Mistral Launches Forge for Enterprise-Level Custom AI Model Development",
-            "content": "Mistral has introduced Forge, a platform that enables enterprises to build custom AI models using their proprietary data. This approach challenges established AI firms like OpenAI and Anthropic, which rely on fine-tuning and retrieval-based methods. Forge allows companies to develop AI solutions tailored to specific business needs, enhancing competitive advantages. This development signifies a shift towards more personalized AI applications in the enterprise sector. Companies should evaluate Forge&#x27;s capabilities to determine its potential impact on their AI strategies and consider adoption to maintain a technological edge.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/17/mistral-forge-nvidia-gtc-build-your-own-ai-enterprise/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Mistral AI&#x27;s Forge Takes on Cloud Giants—Build Proprietary Models",
-            "title": "Mistral AI Launches Forge to Challenge Cloud Providers with Custom AI Models",
-            "content": "Mistral AI has unveiled Forge, an enterprise-focused platform designed to help organizations develop and refine proprietary AI models. This strategic move positions Mistral against major cloud providers by offering a tailored approach to AI model training. Forge allows businesses to leverage their own data, fostering innovation and reducing reliance on external cloud services. This launch underscores the growing demand for bespoke AI solutions in the competitive enterprise landscape. Organizations should assess Forge&#x27;s potential to enhance their AI capabilities and consider its integration to stay ahead in the rapidly evolving tech space.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/mistral-ai-launches-forge-to-help-companies-build-proprietary-ai-models",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 17 2026",
-            "headline": "Garry Tan&#x27;s Claude Code Sparks Debate—AI Community Reacts",
-            "title": "Garry Tan&#x27;s Claude Code Setup Divides AI Enthusiasts and Critics",
-            "content": "Garry Tan&#x27;s Claude Code setup, shared on GitHub, has generated significant attention and sparked debate within the AI community. The setup, which involves AI models like Claude, ChatGPT, and Gemini, has been both praised and criticized for its approach to AI development. Thousands have tested the setup, leading to diverse opinions on its effectiveness and potential applications. This discourse highlights the ongoing conversation around open-source AI tools and their role in democratizing AI development. Developers and AI enthusiasts should explore Tan&#x27;s setup to understand its capabilities and contribute to the broader discussion on AI innovation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/",
             "relatedResources": []
         }
     ],
