@@ -1045,7 +1045,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         else gapC++;
 
                         if (ans === 'no' || ans === 'partial' || ans === '') {
-                            criticalGaps.push([c.control_id, c.control_title, ans === 'partial' ? 'Medium' : 'High']);
+                            const riskText = c.expert_rationale && c.expert_rationale.includes('|') ? c.expert_rationale.split('|')[0].replace('Risk:', '').trim() : "Direct exposure to control failure.";
+                            criticalGaps.push([c.control_id, c.control_title, ans === 'partial' ? 'Medium' : 'High', riskText, c.remediation_advice]);
                         }
                     });
                 });
@@ -1058,8 +1059,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 execSummary.push(["Overall Readiness Score:", ui.overallScore.innerText]);
                 execSummary.push([]);
                 
-                execSummary.push(["Top Risk Gaps"]);
-                execSummary.push(["Control ID", "Control Title", "Risk Level"]);
+                execSummary.push(["Top Risk Gaps (Priority Remediation Checklist)"]);
+                execSummary.push(["Control ID", "Control Title", "Risk Priority", "Risk & Consequence", "Strategic Remediation Advice"]);
                 criticalGaps.forEach(g => execSummary.push(g));
 
                 // SHEET 2: Gap Analysis Data
@@ -1101,7 +1102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // Build Summary Sheet
                 const wsSum = XLSX.utils.aoa_to_sheet(execSummary);
-                wsSum['!cols'] = [{ wch: 30 }, { wch: 40 }, { wch: 15 }];
+                wsSum['!cols'] = [{ wch: 15 }, { wch: 35 }, { wch: 15 }, { wch: 50 }, { wch: 60 }];
                 XLSX.utils.book_append_sheet(wb, wsSum, "Executive Summary");
 
                 // Build Detail Sheet
