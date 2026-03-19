@@ -902,15 +902,44 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
                 const chartImgObject = finalChartImage ? { image: finalChartImage, width: 280, alignment: 'center' } : { text: '[Chart rendering unavailable]', alignment: 'center' };
 
+                // 3.5 Get Logo as Base64 helper
+                const getLogoBase64 = () => {
+                    const img = document.querySelector('.logo-img.logo-dark') || document.querySelector('.logo-img');
+                    if (!img) return null;
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.naturalWidth;
+                    canvas.height = img.naturalHeight;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+                    return canvas.toDataURL('image/png');
+                };
+                const logoBase64 = getLogoBase64();
+
                 // 4. Document Definition
                 const docDefinition = {
                     info: { title: 'ISO 27001 Gap Assessment', author: 'TheHGTech', subject: 'Enterprise GRC Report' },
                     pageMargins: [40, 60, 40, 60],
                     header: function(currentPage, pageCount) {
-                        return { text: 'TheHGTech Enterprise GRC', alignment: 'right', margin: [0, 20, 40, 0], color: '#00d9ff', bold: true, fontSize: 10 };
+                        return { 
+                            margin: [40, 20, 40, 0],
+                            columns: [
+                                logoBase64 ? { image: logoBase64, width: 20 } : { text: 'TheHGTech', bold: true, color: '#00d9ff' },
+                                { text: 'TheHGTech Enterprise GRC Tool', alignment: 'right', color: '#00d9ff', bold: true, fontSize: 10, margin: [0, 5, 0, 0] }
+                            ]
+                        };
                     },
                     footer: function(currentPage, pageCount) {
-                        return { text: 'Page ' + currentPage + ' of ' + pageCount, alignment: 'center', margin: [0, 20, 0, 0], color: '#9ca3af', fontSize: 9 };
+                        return { 
+                            stack: [
+                                { canvas: [{ type: 'line', x1: 40, y1: 0, x2: 555, y2: 0, lineWidth: 0.5, lineColor: '#e5e7eb' }], margin: [0, 10, 0, 10] },
+                                { 
+                                    columns: [
+                                        { text: 'Stay secure. Stay informed. Stay ahead.', fontSize: 8, italic: true, color: '#9ca3af', margin: [40, 0, 0, 0] },
+                                        { text: 'Page ' + currentPage + ' of ' + pageCount, alignment: 'right', margin: [0, 0, 40, 0], color: '#9ca3af', fontSize: 8 }
+                                    ]
+                                }
+                            ]
+                        };
                     },
                     content: [
                         { text: 'ISO 27001 Gap Analysis Executive Summary', style: 'mainHeader' },
