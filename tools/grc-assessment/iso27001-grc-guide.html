@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISO 27001 GRC Tool Methodology & User Guide | TheHGTech</title>
-    <meta name="description" content="Technical methodology and step-by-step guide for using TheHGTech's Triple Framework GRC Engine. Understand scoring, scope, and report utilization.">
+    <title>Methodology & Guide: ISO 27001 GRC Tool | TheHGTech</title>
+    <meta name="description" content="A comprehensive guide for small businesses to understand the methodology, scoring, and utilization of TheHGTech GRC Assessment engine.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Base Styles (Cloned from main tool for consistency) -->
+    <!-- Styles -->
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../m-style.css">
 
@@ -32,336 +32,367 @@
             background-color: var(--bg-dark);
             color: var(--text-primary);
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
+        /* Fix Header Spacing for Guide */
         .doc-container {
             max-width: 900px;
-            margin: 120px auto 100px;
+            margin: 15rem auto 100px;
             padding: 0 2rem;
         }
 
         .doc-header {
-            margin-bottom: 4rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 2rem;
+            margin-bottom: 5rem;
+            text-align: left;
         }
 
         .doc-header h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, #8B5CF6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .doc-header p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-        }
-
-        /* Documentation Sections */
-        .doc-section {
-            margin-bottom: 5rem;
-        }
-
-        .doc-section h2 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.8rem;
+            font-size: 3.5rem;
+            font-weight: 900;
             margin-bottom: 1.5rem;
-            color: var(--accent-cyan);
-            display: flex;
-            align-items: center;
-            gap: 12px;
+            letter-spacing: -1px;
+            line-height: 1.1;
         }
 
-        .doc-section h3 {
-            font-size: 1.25rem;
-            margin: 2rem 0 1rem;
-            color: #fff;
-        }
-
-        .doc-content p {
-            margin-bottom: 1.2rem;
-            color: #d1d5db;
-        }
-
-        .doc-content ul, .doc-content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-            color: #d1d5db;
-        }
-
-        .doc-content li {
-            margin-bottom: 0.8rem;
-        }
-
-        /* Blocks */
-        .info-block {
-            background: rgba(0, 217, 255, 0.05);
-            border-left: 4px solid var(--accent-cyan);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
-        .warning-block {
-            background: rgba(239, 68, 68, 0.05);
-            border-left: 4px solid #EF4444;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
-        .tip-block {
-            background: rgba(16, 185, 129, 0.05);
-            border-left: 4px solid var(--accent-green);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
-        .step-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            padding: 2rem;
-            border-radius: 16px;
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .step-number {
-            position: absolute;
-            top: -15px;
-            left: 20px;
-            background: var(--accent-purple);
-            color: #fff;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 0.9rem;
-        }
-
-        code {
-            font-family: 'JetBrains Mono', monospace;
-            background: rgba(255,255,255,0.05);
-            padding: 2px 6px;
-            border-radius: 4px;
+        .doc-header .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(139, 92, 246, 0.1);
             color: var(--accent-purple);
-        }
-
-        .methodology-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            background: rgba(255,255,255,0.02);
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .methodology-table th, .methodology-table td {
-            text-align: left;
-            padding: 1.2rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .methodology-table th {
-            background: rgba(255,255,255,0.05);
-            color: var(--accent-cyan);
+            border-radius: 30px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
             font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* Sidebar / Jump Navigation */
-        .doc-sidebar {
+        /* Section Styling */
+        .doc-section {
+            margin-bottom: 6rem;
+        }
+
+        .doc-section h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .doc-section h3 {
+            font-size: 1.4rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--accent-cyan);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .doc-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            color: #d1d5db;
+        }
+
+        /* Persona Guidance Blocks */
+        .smb-advice {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), transparent);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .smb-advice h4 {
+            color: var(--accent-green);
+            margin: 0 0 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Methodology Table */
+        .comparison-box {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .framework-card {
+            padding: 1.5rem;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .framework-card h5 {
+            margin: 0 0 10px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .iso-text { color: var(--accent-cyan); }
+        .nist-text { color: #0A84FF; }
+        .cis-text { color: #FF9F0A; }
+
+        /* Step Logic */
+        .step-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .step-num {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: var(--accent-purple);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+        }
+
+        .step-body h4 {
+            margin: 0 0 10px;
+            font-size: 1.3rem;
+            color: #fff;
+        }
+
+        /* Sidebar Nav */
+        .doc-nav {
             position: fixed;
-            right: 2rem;
+            left: 2rem;
             top: 15rem;
-            width: 250px;
+            width: 220px;
             display: none;
         }
 
         @media (min-width: 1400px) {
-            .doc-sidebar { display: block; }
+            .doc-nav { display: block; }
         }
 
-        .side-nav-item {
+        .doc-nav-link {
             display: block;
-            padding: 8px 0;
+            padding: 10px 0;
             color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
         }
 
-        .side-nav-item:hover { color: var(--accent-cyan); }
+        .doc-nav-link:hover, .doc-nav-link.active {
+            color: var(--accent-cyan);
+            padding-left: 5px;
+        }
 
-        /* Light Mode Support */
+        /* Search Overlay fix */
+        .m-search-overlay { z-index: 10000; }
+
         body.light-mode {
-            background: #fff;
-            color: #1a1a1a;
+            background-color: #f8fafc;
         }
-        body.light-mode .doc-header h1 {
-            background: linear-gradient(135deg, #111 0%, #8B5CF6 100%);
-            -webkit-background-clip: text;
-        }
-        body.light-mode .doc-section h3, body.light-mode .doc-section h2 { color: #000; }
-        body.light-mode .doc-content p, body.light-mode .doc-content li { color: #4b5563; }
-        body.light-mode .step-card { background: #f9fafb; border-color: #e5e7eb; }
 
     </style>
 </head>
 <body class="dark-theme">
 
-    <!-- Header (Same as GRC Engine) -->
-    <header class="header">
+    <!-- Desktop Header (Full Brand Version) -->
+    <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
                 <a href="../../index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="../../logo-dark.png" class="logo-img logo-dark" width="40">
-                    <img src="../../logo-light.png" class="logo-img logo-light" width="40">
+                    <img src="../../logo-dark.png" class="logo-img logo-dark" width="40" height="40">
+                    <img src="../../logo-light.png" class="logo-img logo-light" width="40" height="40">
                     <span class="logo-text">TheHGTech</span>
                 </a>
             </div>
-            <nav class="nav">
-                <a href="./index.html" style="color:var(--accent-cyan); font-weight:700;"><i class="fas fa-arrow-left"></i> Back to GRC Tool</a>
+
+            <nav class="nav nav-modern">
+                <a href="../../index.html#news">News</a>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Intelligence <i class="fas fa-chevron-down"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="../../threat-intel.html" class="dropdown-item">Threat Intelligence</a>
+                        <a href="../../cve-tracker.html" class="dropdown-item">CVE Tracker</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">Resources <i class="fas fa-chevron-down"></i></span>
+                    <div class="nav-dropdown-panel">
+                        <a href="../../guides/index.html" class="dropdown-item">Security Guides</a>
+                        <a href="../../workflows/index.html" class="dropdown-item">n8n Workflows</a>
+                    </div>
+                </div>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()">
+                    <span class="m-theme-toggle__thumb"></span>
+                </button>
             </nav>
+            <a href="./index.html" style="background:var(--accent-cyan); color:#000; padding:10px 20px; border-radius:8px; font-weight:700; text-decoration:none; font-size:0.9rem;">
+                <i class="fas fa-arrow-left"></i> Launch Tool
+            </a>
         </div>
     </header>
 
+    <!-- Sidebar Navigation -->
+    <nav class="doc-nav">
+        <div style="font-size:0.75rem; color:var(--accent-purple); font-weight:800; text-transform:uppercase; margin-bottom:1.5rem; letter-spacing:1px;">Documentation</div>
+        <a href="#welcome" class="doc-nav-link">Welcome</a>
+        <a href="#what-not" class="doc-nav-link">What it Does/Doesn't</a>
+        <a href="#step-by-step" class="doc-nav-link">Assessment Steps</a>
+        <a href="#the-math" class="doc-nav-link">Scoring Mystery</a>
+        <a href="#using-reports" class="doc-nav-link">Using the Reports</a>
+    </nav>
+
     <div class="doc-container">
         
-        <header class="doc-header">
-            <h1>GRC Tool User Guide</h1>
-            <p>Mastering the ISO 27001 readiness engine for enterprise-grade compliance audits.</p>
+        <header class="doc-header" id="welcome">
+            <span class="badge">Official Methodology Guide</span>
+            <h1>The Small Business Guide to <span class="gradient-text">GRC Success</span></h1>
+            <p>If you've been asked for "proof of security" by a customer or investor, this guide is your first step. We simplify the complex world of ISO 27001 so you can focus on building your business.</p>
         </header>
 
-        <!-- 1. Introduction -->
-        <section class="doc-section" id="intro">
-            <h2><i class="fas fa-rocket"></i> What is the GRC Engine?</h2>
+        <!-- 1. What/What Not -->
+        <section class="doc-section" id="what-not">
+            <h2><i class="fas fa-shield-halved"></i> Understanding the Engine</h2>
             <div class="doc-content">
-                <p>
-                    TheHGTech Triple Framework GRC Engine is a browser-native assessment platform designed to bridge the gap between 
-                    <strong>technical implementation</strong> and <strong>regulatory compliance</strong>. It allows security teams to 
-                    map their baseline posture against ISO 27001:2022, NIST CSF 2.0, and CIS Controls v8 within a single session.
-                </p>
-                <div class="info-block">
-                    <strong>Value Proposition:</strong> Most GRC tools are expensive, slow, and cloud-heavy. Our engine is FREE, 100% serverless, and provides decision-grade advice in under 15 minutes.
-                </div>
-                <h3>What it DOES:</h3>
-                <ul>
-                    <li>Identifies missing technical and organizational controls.</li>
-                    <li>Maps ISO 27001 domains to CIS v8 technical safeguards.</li>
-                    <li>Calculates maturity levels for executive-ready decision making.</li>
-                    <li>Generates prioritized remediation reports for IT teams.</li>
-                </ul>
-                <h3>What it DOES NOT:</h3>
-                <div class="warning-block">
-                    <p><strong>Formal Auditor Status:</strong> This tool is a <em>Self-Assessment Engine</em>. While it uses current regulatory benchmarks, it is NOT a substitute for a formal external audit by a Certified Lead Auditor.</p>
-                    <p><strong>Evidence Storage:</strong> To maintain strict privacy, we do NOT store your sensitive evidence documents. This is a gap assessment tool, not a full GRC evidence repository like Vanta or Drata.</p>
+                <p>For a small business, "GRC" (Governance, Risk, and Compliance) sounds like a corporate buzzword. In reality, it just means: <strong>"Do we have a handle on our security?"</strong></p>
+                
+                <h3>What this tool does for you:</h3>
+                <p>It acts as a <strong>Digital Consultant</strong>. It asks you the same questions an auditor would, but in a way you can understand. It takes your answers and builds a prioritized list of what to fix first.</p>
+
+                <h3>What it doesn't do (The Reality Check):</h3>
+                <p>You cannot use this tool to "Self-Certify." ISO 27001 certification still requires an external auditor to physically check your work. Our tool prepares you so that when that auditor arrives, you have already fixed 90% of the problems.</p>
+
+                <div class="smb-advice">
+                    <h4><i class="fas fa-lightbulb"></i> Expectation Setting</h4>
+                    <p style="margin:0; font-size:0.95rem; color:var(--text-muted);">
+                        As a small team, seeing a low score (e.g., 20%) is <strong>normal and expected</strong>. Most startups fail early audits because they lack formal "Asset Registers" or "Incident Response Plans." This tool is here to tell you exactly what those are.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- 2. Step by Step -->
-        <section class="doc-section" id="how-to">
-            <h2><i class="fas fa-list-ol"></i> Step-by-Step Assessment</h2>
+        <section class="doc-section" id="step-by-step">
+            <h2><i class="fas fa-shoe-prints"></i> How to run an Assessment</h2>
             <div class="doc-content">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h3>Define Your Scope</h3>
-                    <p>Launch the <strong>Dynamic Scope Builder</strong>. Toggle ISO 27001:2022 domains relevant to your environment. Startups typically focus on <em>Operational Controls (Domain 5-8)</em>, while established firms should audit all 93 controls.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3>Executive Response Mode</h3>
-                    <p>For each control, answering <strong>YES</strong> assumes you have both a documented policy and proof of implementation. Answering <strong>PARTIAL</strong> implies the control exists but lacks consistent monitoring or formal documentation.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h3>Contextual Rationale</h3>
-                    <p>Use the <strong>"Consultant Insight"</strong> toggle to see WHY a control belongs in your scope. This helps non-GRC managers understand the technical risk behind abstract compliance requirements.</p>
+                <div class="step-list">
+                    <div class="step-item">
+                        <div class="step-num">1</div>
+                        <div class="step-body">
+                            <h4>Build your Scope</h4>
+                            <p>Don't try to solve everything at once. Select the domains that feel most critical (usually <strong>Operational Controls</strong> and <strong>Asset Management</strong>). You can always come back and add more later.</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">2</div>
+                        <div class="step-body">
+                            <h4>Be Brutally Honest</h4>
+                            <p>Answering "Yes" to a question like "Do you have a backup policy?" isn't just about having the backups—it's about having a <strong>written document</strong> that says how often they happen. If you don't have that document yet, answer "Partial."</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">3</div>
+                        <div class="step-body">
+                            <h4>Read the "Why"</h4>
+                            <p>If a question seems confusing, look for the rationale. It explains the specific business risk. For example, a "Logging" control is about being able to see who accessed your data if a hack occurs.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Calculation Methodology -->
-        <section class="doc-section" id="methodology">
-            <h2><i class="fas fa-calculator"></i> The Scoring Methodology</h2>
+        <!-- 3. Scoring Mystery -->
+        <section class="doc-section" id="the-math">
+            <h2><i class="fas fa-calculator"></i> Why are my scores different?</h2>
             <div class="doc-content">
-                <p>Our scoring algorithm uses a <strong>Weighted Maturity Model</strong> to ensure your results represent real-world exposure rather than just "box ticking."</p>
-                <table class="methodology-table">
-                    <thead>
-                        <tr>
-                            <th>Response Status</th>
-                            <th>Weighting</th>
-                            <th>Risk Implication</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Implemented (Yes)</td>
-                            <td>100%</td>
-                            <td>Control is verified and monitored. Low residual risk.</td>
-                        </tr>
-                        <tr>
-                            <td>Partial</td>
-                            <td>50%</td>
-                            <td>Control exists but is fragile or undocumented. Moderate risk.</td>
-                        </tr>
-                        <tr>
-                            <td>Gap (No)</td>
-                            <td>0%</td>
-                            <td>Control is missing. High risk exposure detected.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3>Framework Indicators:</h3>
-                <ul>
-                    <li><strong>ISO 27001:2022:</strong> Readiness percentage based on the Annex A 93-control set.</li>
-                    <li><strong>NIST CSF 2.0:</strong> Alignment based on 106 subcategories across the Core functions.</li>
-                    <li><strong>CIS Controls v8:</strong> Hygiene score calculated against 153 technical safeguards.</li>
-                </ul>
+                <p>You might notice that after answering the same 20 questions, your <strong>ISO Score</strong> is 60% but your <strong>CIS Score</strong> is only 40%. This is intentional. Here is why:</p>
+
+                <div class="comparison-box">
+                    <div class="comparison-grid">
+                        <div class="framework-card">
+                            <h5 class="iso-text">ISO 27001 Settings</h5>
+                            <p style="font-size:0.85rem;">Focuses on <strong>High-Level Governance</strong>. If you have a policy, ISO is generally happy.</p>
+                        </div>
+                        <div class="framework-card">
+                            <h5 class="nist-text">NIST CSF 2.0</h5>
+                            <p style="font-size:0.85rem;">Focuses on <strong>Balance</strong> across 6 functions. It checks if you are as good at "Detecting" as you are at "Identifying."</p>
+                        </div>
+                        <div class="framework-card">
+                            <h5 class="cis-text">CIS v8 Controls</h5>
+                            <p style="font-size:0.85rem;">Focuses on <strong>Technical Granularity</strong>. CIS is strict—it wants to know exactly how you locked down your servers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-block" style="margin-top:2rem;">
+                    <strong>The Multi-Mapping Rule:</strong> A single answer about "Passwords" might satisfy one broad ISO requirement, but it only satisfies <em>two out of five</em> specific CIS technical requirements. This is why technical frameworks (CIS) often show lower scores than governance frameworks (ISO).
+                </div>
             </div>
         </section>
 
-        <!-- 4. Reports & Reports -->
-        <section class="doc-section" id="reports">
-            <h2><i class="fas fa-file-export"></i> Utilizing Your Reports</h2>
+        <!-- 4. Reports -->
+        <section class="doc-section" id="using-reports">
+            <h2><i class="fas fa-file-invoice"></i> How to use your outputs</h2>
             <div class="doc-content">
-                <p>Once you reach the <strong>Executive Readiness Dashboard</strong>, you have two strategic outputs:</p>
-                
-                <h3>A. The Branded PDF Report</h3>
-                <p>Designed for boardrooms and CISOs. This report includes the <strong>Maturity Interpretation</strong> which translates raw scores into business risk categories (Initial, Developing, or Mature).</p>
-                
-                <h3>B. The Strategic Excel Registry</h3>
-                <p>Designed for technical teams. This file contains the <strong>Priority Remediation Checklist</strong>. Filter this list by "Risk Level" to assign your top 3 fixes to your DevOps or IT infrastructure team immediately.</p>
+                <h3>1. The PDF: The "Proof" for Customers</h3>
+                <p>When a prospective customer asks "How is your security?", you send them the <strong>Executive PDF</strong>. It shows the charts, the maturity level, and the fact that you are aligned with international standards.</p>
+
+                <h3>2. The Excel: Your Weekend To-Do List</h3>
+                <p>Download the <strong>Detailed Excel</strong>. Filter the list for "HIGH" risk. Give those 5 tasks to your IT person or DevOps engineer. They contain the "Risk & Consequence" data they need to understand the urgency.</p>
 
                 <div class="tip-block">
-                    <strong>ISO Kickstart Tip:</strong> Use the Excel export as your <em>Statement of Applicability (SoA)</em> draft. It already contains the control titles, current implementation status, and remediation logic required for the official ISO certification process.
+                    <strong>Business Value:</strong> Achieving an "Optimized" status in this tool means you are likely in the top 10% of small businesses for security posture. <strong>Use this as a competitive advantage.</strong>
                 </div>
             </div>
         </section>
 
     </div>
 
-    <aside class="doc-sidebar">
-        <h4 style="font-size:0.7rem; color:var(--accent-purple); text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Documentation</h4>
-        <nav>
-            <a href="#intro" class="side-nav-item">Introduction</a>
-            <a href="#how-to" class="side-nav-item">Step-by-Step Guide</a>
-            <a href="#methodology" class="side-nav-item">Scoring Logic</a>
-            <a href="#reports" class="side-nav-item">Report Utilization</a>
-        </nav>
-    </aside>
-
+    <!-- Scripts -->
     <script src="../../theme-toggle.js"></script>
+    <script>
+        // Simple scroll spy logic
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.doc-nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
