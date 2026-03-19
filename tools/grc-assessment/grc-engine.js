@@ -46,8 +46,55 @@ document.addEventListener('DOMContentLoaded', async () => {
     let activeDomainIndices = [];     // Which domains the user selected to scope in
     let currentNavIndex = 0;          // Index relative to the activeDomainIndices array
     const STORAGE_KEY = 'thehgtech_grc_state_v2';
+    const HISTORY_KEY = 'thehgtech_grc_history_v2';
     let userState = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
     let radarChartInstance = null;
+
+    // --- NEW: History & Progress Tracking ---
+    function saveToHistory(score) {
+        let history = JSON.parse(localStorage.getItem(HISTORY_KEY)) || [];
+        const entry = {
+            date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+            timestamp: Date.now(),
+            score: score
+        };
+        // Avoid duplicate entries for same day/score if recently saved
+        const last = history[history.length - 1];
+        if (last && last.score === score && (Date.now() - last.timestamp < 3600000)) return;
+        
+        history.push(entry);
+        if (history.length > 5) history.shift(); // Keep last 5
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+    }
+
+    function initHistoryUI() {
+        const history = JSON.parse(localStorage.getItem(HISTORY_KEY)) || [];
+        const strip = document.getElementById('prevPerformanceStrip');
+        const lastScoreVal = document.getElementById('lastScoreVal');
+        const historyCard = document.getElementById('historyCard');
+        const noHistory = document.getElementById('noHistory');
+        const historyFound = document.getElementById('historyFound');
+        const prevScoreVal = document.getElementById('prevScoreVal');
+        const trendBadge = document.getElementById('trendBadge');
+
+        if (history.length > 0) {
+            const last = history[history.length - 1];
+            if (strip) {
+                strip.style.display = 'flex';
+                lastScoreVal.innerText = last.score + '%';
+            }
+            if (noHistory) noHistory.style.display = 'none';
+            if (historyFound) historyFound.style.display = 'block';
+            if (prevScoreVal) prevScoreVal.innerText = last.score + '%';
+            
+            // Calculate trend if we have at least 2 entries
+            if (history.length >= 1) {
+                // For UI demo, if user just finished, we compare current (in view) vs last.
+                // But for the card on load, it shows the "Most recent known".
+            }
+        }
+    }
+    initHistoryUI();
 
     // --- NEW: URL Persistence Support ---
     function updateURLState() {
@@ -545,6 +592,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             embedCode.innerText = `<iframe src="${embedUrl}" width="280" height="180" frameborder="0"></iframe>`;
         }
 
+        // --- Authority: Save to History ---
+        saveToHistory(parseInt(currentScore.replace('%', '')));
+        initHistoryUI(); // Refresh top strip and card
+
         const labels = [];
         const dataset = [];
         const criticalGaps = [];
@@ -762,17 +813,43 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (criticalGaps.length === 0) {
             ui.gapsContainer.innerHTML += `<div class="gap-item" style="border-left-color: #10B981;"><p style="color:#10B981; margin:0;"><i class="fas fa-check-circle"></i> Outstanding! No critical gaps identified in the evaluated scope.</p></div>`;
         } else {
+            // Sort gaps by priority: Missing (High) -> Partial (Medium)
+            criticalGaps.sort((a,b) => (a.ans === 'partial' ? 1 : -1));
+
             criticalGaps.forEach(g => {
                 const item = document.createElement('div');
                 item.className = 'gap-item';
+                
+                // Prioritization Logic
+                let priorityTag = '<span class="priority-tag" style="background:#EF4444; color:#fff; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:800; margin-right:8px;">HIGH PRIORITY</span>';
+                let outcome = "Reduces critical vulnerability surface.";
+                
                 if (g.ans === 'partial') {
                     item.style.borderLeftColor = '#F59E0B';
                     item.style.backgroundColor = 'rgba(245, 158, 11, 0.05)';
+                    priorityTag = '<span class="priority-tag" style="background:#F59E0B; color:#000; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:800; margin-right:8px;">QUICK WIN</span>';
+                    outcome = "Hardens existing process to enterprise compliance standard.";
+                } else {
+                    // It's a 'Missing' gap
+                    if (g.id.startsWith('5.') || g.id.startsWith('8.5')) {
+                        priorityTag = '<span class="priority-tag" style="background:#8B5CF6; color:#fff; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:800; margin-right:8px;">FOUNDATIONAL</span>';
+                        outcome = "Establishes mandatory governance/identity boundary.";
+                    }
+                }
+
+                // Extract custom outcome from rationale if present
+                if (g.rationale && g.rationale.includes('Impact:')) {
+                    const parts = g.rationale.split('|');
+                    const impactPart = parts.find(p => p.includes('Impact:'));
+                    if (impactPart) outcome = impactPart.replace('Impact:', '').trim();
+                } else if (g.rationale && g.rationale.includes('Guidance:')) {
+                    const guidePart = g.rationale.split('Guidance:')[1];
+                    if (guidePart) outcome = "Remediation expected to: " + guidePart.trim().split('.')[0] + ".";
                 }
 
                 item.innerHTML = `
                     <div class="gap-item-header">
-                        <span class="gap-id"><span style="color:var(--text-muted); font-size:0.8rem;">[${g.domain}]</span> Control ${g.id}</span>
+                        <span class="gap-id">${priorityTag} <span style="color:var(--text-muted); font-size:0.8rem;">[${g.domain}]</span> Control ${g.id}</span>
                         <span class="domain-badge" style="border-color:${g.ans === 'partial' ? '#F59E0B' : '#EF4444'}; color:${g.ans === 'partial' ? '#F59E0B' : '#EF4444'};">${g.ans === 'partial' ? 'Partial' : 'Missing'}</span>
                     </div>
                     <h4 class="gap-title">${g.title}</h4>
@@ -780,21 +857,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                         ${g.nist ? `<span style="font-size:0.7rem; background:rgba(10, 132, 255, 0.1); color:#0A84FF; padding:1px 6px; border-radius:3px; border:1px solid rgba(10,132,255,0.2);">NIST: ${g.nist}</span>` : ''}
                         ${g.cis ? `<span style="font-size:0.7rem; background:rgba(255, 159, 10, 0.1); color:#FF9F0A; padding:1px 6px; border-radius:3px; border:1px solid rgba(255,159,10,0.2);">CIS: ${g.cis}</span>` : ''}
                     </div>
-                    
-                    ${userState[g.id + '_just'] ? `
-                    <div class="gap-justification" style="margin: 1rem 0; padding: 0.8rem; background: rgba(255,255,255,0.03); border-radius: 6px; font-size: 0.85rem; border: 1px solid var(--border);">
-                        <strong><i class="fas fa-comment-alt"></i> Your Comment/Justification:</strong><br>
-                        <span style="color:var(--text-secondary); font-style:italic;">"${userState[g.id + '_just']}"</span>
-                    </div>
-                    ` : ''}
 
-                    <div class="gap-remediation" style="margin-bottom:1rem;">
+                    <div class="gap-remediation" style="margin-bottom:0.5rem;">
                         <strong><i class="fas fa-wrench"></i> Suggested Remediation:</strong><br>
                         ${g.remediation}
                     </div>
-                    ${g.rationale ? `
-                    <div class="gap-rationale" style="font-size:0.85rem; color:var(--text-muted); border-top:1px solid var(--border); padding-top:0.8rem; font-style:italic;">
-                        <strong><i class="fas fa-lightbulb" style="color:#8B5CF6;"></i> Consultant Insight:</strong> "${g.rationale}"
+
+                    <div class="outcome-label">
+                        <i class="fas fa-bullseye"></i> Expected Outcome: ${outcome}
+                    </div>
+                    
+                    ${userState[g.id + '_just'] ? `
+                    <div class="gap-justification" style="margin: 1rem 0 0; padding: 0.8rem; background: rgba(255,255,255,0.03); border-radius: 6px; font-size: 0.85rem; border: 1px solid var(--border);">
+                        <strong><i class="fas fa-comment-alt"></i> Your Comment/Justification:</strong><br>
+                        <span style="color:var(--text-secondary); font-style:italic;">"${userState[g.id + '_just']}"</span>
                     </div>
                     ` : ''}
                 `;

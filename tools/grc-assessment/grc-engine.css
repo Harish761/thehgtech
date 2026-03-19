@@ -19,6 +19,8 @@
 
     --accent-purple: #8B5CF6;
     --accent-purple-glow: rgba(139, 92, 246, 0.2);
+    --gold: #FFD700;
+    --gold-glow: rgba(255, 215, 0, 0.2);
 
     --sidebar-width: 340px;
 }
@@ -49,6 +51,134 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.2);
+}
+
+/* Authority Strip */
+.authority-strip {
+    background: linear-gradient(90deg, #0a0a0a 0%, #151515 50%, #0a0a0a 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 0;
+    z-index: 1001;
+    position: relative;
+}
+
+.authority-strip-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.strip-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.strip-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.strip-item i {
+    color: var(--accent-cyan);
+    font-size: 0.85rem;
+}
+
+.strip-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+/* Methodology & Performance Cards */
+.info-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card h3 {
+    font-family: 'Outfit';
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.info-card h3 i { color: var(--accent-purple); }
+
+.perf-trend {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.trend-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Outfit';
+}
+
+.trend-indicator {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 800;
+}
+
+.trend-up { background: rgba(16, 185, 129, 0.1); color: var(--accent-green); }
+.trend-down { background: rgba(239, 68, 68, 0.1); color: var(--accent-red); }
+
+/* Outcome Labels */
+.outcome-label {
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 4px 12px;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--accent-green);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.outcome-label i { margin-right: 6px; }
+
+@media (max-width: 1024px) {
+    .authority-strip-container { justify-content: center; }
+    .info-row { grid-template-columns: 1fr; }
 }
 
 .grc-container {
