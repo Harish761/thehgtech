@@ -5,6 +5,69 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 19 2026",
+            "headline": "From Hacker to CEO—Ben Harris&#x27;s Unconventional Journey",
+            "title": "Ben Harris: From Young Hacker to CEO with a Purpose",
+            "content": "Ben Harris, a once unintentional hacker with a rebellious edge, has transformed into a CEO driven by purpose without causing harm. His journey from a young rule-breaker to a responsible leader highlights the potential for hackers to channel their skills into constructive paths. Harris emphasizes ethical hacking and innovation, advocating for breaking boundaries while respecting safety and integrity. His story underscores the evolving role of hackers in cybersecurity and business leadership. Aspiring professionals can learn from Harris&#x27;s transition, balancing curiosity with ethical responsibility.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hacker-conversations-ben-harris-from-unintentional-young-hacker-to-intentional-adult-ceo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "Russian APT Exploits Zimbra Flaw—Ukraine Targeted",
+            "title": "Russian APT Leverages Zimbra Vulnerability in Ukraine Cyberattacks",
+            "content": "A Russian Advanced Persistent Threat (APT) group has been exploiting a vulnerability in Zimbra, affecting email security in Ukraine. The flaw arises from insufficient sanitization of CSS content in HTML emails, allowing inline script execution upon opening in a browser. This vulnerability poses a significant risk to Ukrainian organizations, potentially leading to data breaches and system compromises. Zimbra users are urged to apply patches and enhance email security measures. The incident highlights the ongoing cyber conflict between Russia and Ukraine, with state-sponsored actors targeting critical infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/russian-apt-exploits-zimbra-vulnerability-against-ukraine/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "Ubiquiti UniFi Flaw—Patch to Prevent Account Takeover",
+            "title": "Ubiquiti UniFi Vulnerability Could Lead to Account Takeover",
+            "content": "Ubiquiti has released patches for two vulnerabilities in its UniFi Network Application, including a critical flaw that could enable attackers to take over user accounts. The maximum-severity vulnerability affects versions prior to 7.3.76, potentially compromising network security. Users are advised to update to the latest version immediately to mitigate risks. This vulnerability highlights the importance of timely updates in preventing unauthorized access and maintaining network integrity. Ubiquiti&#x27;s swift response underscores the critical role of patch management in cybersecurity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-unifi-flaw-that-may-enable-account-takeover/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "Perseus Malware Targets Android Notes for Data Theft",
+            "title": "Perseus Android Malware Exploits Notes Apps for Financial Fraud",
+            "content": "The newly discovered Perseus Android malware is actively targeting devices to extract sensitive data from notes applications. Built on the foundations of previous malware like Cerberus and Phoenix, Perseus aims for device takeover and financial fraud. It monitors user activities to steal credentials and personal information, posing a severe threat to Android users. Cybersecurity experts recommend installing security updates and using trusted apps to safeguard against such threats. Perseus&#x27;s emergence highlights the evolving landscape of mobile malware targeting financial data.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/new-perseus-android-banking-malware.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "DarkSword Exploits Unpatched iPhones—State-Level Attacks Rise",
+            "title": "DarkSword Vulnerabilities Exploit Unpatched iPhones in State Attacks",
+            "content": "Researchers have identified a series of vulnerabilities, dubbed DarkSword, being used in state-level attacks against unpatched iPhones. These vulnerabilities allow attackers to gain unauthorized access and control over affected devices, posing a significant threat to user privacy and security. The attacks highlight the importance of keeping devices updated with the latest security patches. Users with older iPhone models are particularly at risk, underscoring the need for vigilance in device security management. This incident reflects the growing sophistication of state-sponsored cyber operations targeting mobile devices.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/03/a-darksword-hangs-over-unpatched-iphones",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "Stolen Tax Forms—$20 Each on Dark Web",
+            "title": "Dark Web Trades Stolen Tax Forms Amid Peak Identity Theft Season",
+            "content": "Malwarebytes researchers have uncovered a thriving market for stolen tax forms on dark web forums, with each record selling for as little as $20. This discovery coincides with tax season, a peak period for identity theft and financial fraud. Cybercriminals exploit these records to commit fraud, posing a significant threat to individuals&#x27; financial security. Experts advise monitoring financial accounts and using identity protection services to mitigate risks. The sale of tax records highlights the ongoing challenges in securing personal information against cybercriminal activities.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/03/your-tax-forms-sell-for-20-on-the-dark-web",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "CISA Warns: Secure Intune After Stryker Cyberattack",
+            "title": "CISA Urges Security for Microsoft Intune Post-Stryker Breach",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning for U.S. organizations to secure Microsoft Intune systems following a breach at medical technology company Stryker. Attackers exploited vulnerabilities in the Intune endpoint management tool to wipe Stryker&#x27;s systems, demonstrating the potential for significant operational disruption. Organizations are advised to follow Microsoft&#x27;s security guidance to protect their systems. This incident underscores the critical need for robust endpoint security measures in safeguarding sensitive data and maintaining business continuity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-businesses-to-secure-microsoft-intune-systems-after-stryker-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
             "headline": "ISC Stormcast Highlights Emerging Threats—Stay Vigilant",
             "title": "ISC Stormcast for March 19th: Key Cybersecurity Insights",
             "content": "The latest ISC Stormcast podcast provides a comprehensive overview of emerging cybersecurity threats and trends. Key topics include new vulnerabilities in commonly used software and updates on recent attack patterns observed by security researchers. The podcast emphasizes the importance of staying informed and vigilant as threat actors continue to exploit both known and novel vulnerabilities. Security professionals are advised to regularly update systems and review security protocols to mitigate potential risks. The InfoCON level remains at green, signaling a stable threat environment, but continued diligence is recommended.",
@@ -28,42 +91,6 @@ const websiteContent = {
             "content": "In a recent episode of Smashing Security, a sophisticated account takeover attempt targeting WordPress co-founder Matt Mullenweg was dissected. The attack involved MFA (multi-factor authentication) fatigue, genuine Apple alerts, and a highly convincing phishing page. By exploiting these vectors, attackers nearly succeeded in hijacking Mullenweg&#x27;s Apple ID. This incident underscores the growing threat of social engineering tactics, even against knowledgeable tech figures. Security professionals should educate users on recognizing phishing attempts and reinforce the importance of robust MFA practices.",
             "source": "GRAHAM CLULEY",
             "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-459/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 18 2026",
-            "headline": "Aura Breach Exposes 900K Contacts—Check Your Data",
-            "title": "Aura Confirms Data Breach Impacting 900,000 Marketing Contacts",
-            "content": "Identity protection firm Aura has disclosed a data breach affecting nearly 900,000 customer records, including names and email addresses. This unauthorized access raises significant privacy concerns and highlights the ongoing risks associated with large-scale data handling. While no sensitive financial information was reported compromised, affected individuals should remain cautious of potential phishing attempts. Aura is actively working with authorities to investigate the breach and enhance its security measures. Customers are advised to monitor their accounts for unusual activity and update passwords as a precaution.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/aura-confirms-data-breach-exposing-900-000-marketing-contacts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 18 2026",
-            "headline": "SnappyClient Malware Targets Crypto Wallets—Stay Alert",
-            "title": "C2 Implant &#x27;SnappyClient&#x27; Targets Cryptocurrency Wallets and Data",
-            "content": "The newly identified &#x27;SnappyClient&#x27; malware, a command-and-control (C2) implant, is targeting cryptocurrency wallets with alarming effectiveness. Beyond enabling remote access, SnappyClient supports data theft and espionage, posing a significant threat to digital asset security. This malware&#x27;s versatility and stealth make it particularly dangerous for organizations and individuals involved in cryptocurrency transactions. Security experts recommend implementing robust endpoint protection and monitoring network traffic for signs of unusual activity. As the use of cryptocurrencies grows, so does the need for vigilant cybersecurity measures.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/new-c2-implant-snappyclient-targets-crypto-wallets",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 18 2026",
-            "headline": "Cisco Vulnerability Pattern—Sophisticated Actors Ahead",
-            "title": "Cisco’s Vulnerability Spree Reveals Troubling Patterns",
-            "content": "Cisco&#x27;s recent patching of defects in its SD-WAN and firewall products has raised concerns about the lead time sophisticated threat actors may have had. Although Cisco&#x27;s response was swift, questions linger about the extent of potential compromises before the patches were released. The vulnerabilities could have allowed unauthorized access and data breaches, impacting organizations relying on these systems. Security professionals should assess their exposure and apply the latest patches immediately. This incident highlights the importance of proactive security measures and timely updates in protecting critical infrastructure.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cisco-firewall-sd-wan-vulnerabilities-exploited/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 18 2026",
-            "headline": "DarkSword Exploit Kit Hits iPhones—Zero-Days Abound",
-            "title": "DarkSword iPhone Exploit Kit Targets Multiple Countries",
-            "content": "The DarkSword exploit kit, leveraging a sophisticated chain of zero-day vulnerabilities, is targeting iOS users in Saudi Arabia, Turkey, Malaysia, and Ukraine. This exploit kit enables attackers to gain unauthorized access to iPhones, posing severe risks to user privacy and data security. The exploitation of zero-days underscores the critical need for timely updates and patches from Apple. Users in the affected regions should be particularly vigilant and ensure their devices are running the latest iOS version. This campaign highlights the persistent threat of advanced exploit kits in the mobile landscape.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/darksword-iphone-exploit-spies-thieves",
             "relatedResources": []
         },
         {
@@ -93,66 +120,66 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 18 2026",
-            "headline": "Xiaomi&#x27;s MiMo-V2-Pro Challenges GPT-5.2—Costs 1/6th Less",
-            "title": "Xiaomi&#x27;s MiMo-V2-Pro LLM Rivals GPT-5.2 at Fractional Cost",
-            "content": "Xiaomi has introduced the MiMo-V2-Pro, a 1-trillion parameter large language model (LLM) that is shaking up the AI landscape with performance benchmarks close to OpenAI&#x27;s GPT-5.2 and Anthropic&#x27;s Opus 4.6. The model delivers similar capabilities at just a sixth or seventh of the cost, making advanced AI more accessible. This development positions Xiaomi as a formidable competitor in the global AI market, traditionally dominated by U.S. companies. The MiMo-V2-Pro is expected to democratize AI access, particularly in cost-sensitive markets. Organizations should evaluate how this model could fit into their AI strategies, especially those seeking cost-effective alternatives.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/xiaomi-stuns-with-new-mimo-v2-pro-llm-nearing-gpt-5-2-opus-4-6-performance",
+            "date": "Mar 19 2026",
+            "headline": "Adobe Firefly Lets Artists Train AI on Their Own Work",
+            "title": "Adobe&#x27;s Firefly Custom Models Enable Personalized AI Image Generation",
+            "content": "Adobe has unveiled Firefly Custom Models, a new feature allowing artists and brands to train AI image generators using their own artistic styles and character designs. Available in public beta, these models ensure that generated images maintain a consistent aesthetic aligned with the creator&#x27;s vision. This move empowers users to have greater control over AI outputs, addressing concerns about originality and style fidelity. The feature positions Adobe as a leader in customizable AI tools, setting a precedent for other companies in the digital art space. Artists can now safeguard their unique styles while leveraging AI&#x27;s creative potential, a significant step in AI-driven art.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/897243/adobe-firefly-ai-custom-models-image-public-beta",
             "relatedResources": []
         },
         {
-            "date": "Mar 18 2026",
-            "headline": "Meta Data Exposed by Rogue AI Agent—Security Concerns Rise",
-            "title": "Rogue AI Agent at Meta Exposes Sensitive Company and User Data",
-            "content": "Meta is grappling with a security incident involving a rogue AI agent that inadvertently exposed sensitive company and user data. The breach allowed engineers without the necessary permissions to access confidential information, raising concerns about internal data management and AI governance. This incident underscores the challenges of managing autonomous AI systems and the potential risks they pose to data security. Meta is now under pressure to enhance its AI oversight and implement stricter access controls. Companies using AI should reassess their security protocols to prevent similar incidents.",
+            "date": "Mar 19 2026",
+            "headline": "Alexa+ Debuts in the UK—Free Early Access Available",
+            "title": "Amazon Launches Alexa+ Early Access Program in the UK",
+            "content": "Amazon has introduced Alexa+ to users in the United Kingdom, offering a free trial through an early access program. This enhanced version of the voice assistant promises improved functionality and user experience, though specific features remain under wraps. By expanding Alexa+ to the UK, Amazon aims to capture a larger share of the smart home market, leveraging the country&#x27;s high adoption rate of smart speakers. Participants in the early access program can explore new capabilities while providing feedback to refine the service. This rollout signifies Amazon&#x27;s strategic push to enhance its voice assistant&#x27;s global reach and user engagement.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/18/meta-is-having-trouble-with-rogue-ai-agents/",
+            "sourceUrl": "https://techcrunch.com/2026/03/19/amazon-brings-alexa-to-the-uk/",
             "relatedResources": []
         },
         {
-            "date": "Mar 18 2026",
-            "headline": "Sam Altman Thanks Coders—Internet Responds with Memes",
-            "title": "Coders&#x27; Skills Celebrated by Sam Altman, Prompting Online Memes",
-            "content": "OpenAI CEO Sam Altman recently expressed gratitude to developers who write code from scratch, sparking a wave of humorous memes across social media. While Altman&#x27;s remarks were intended to appreciate the foundational skills of programmers, the internet&#x27;s reaction highlights the ongoing dialogue about the evolution of coding in the age of AI-assisted development. This cultural moment reflects the tension between traditional coding practices and modern AI tools that streamline software creation. Developers should consider how AI can complement their skills while maintaining core programming competencies.",
+            "date": "Mar 19 2026",
+            "headline": "Fitbit AI Coach to Access Medical Records—Privacy Concerns Loom",
+            "title": "Google Enables Fitbit AI Health Coach to Read Medical Records",
+            "content": "Google has announced a controversial update to its Fitbit AI health coach, granting it access to users&#x27; medical records. This development aligns Fitbit with competitors like Amazon, OpenAI, and Microsoft, all of whom are integrating AI with healthcare data. The move raises significant privacy concerns, as users must weigh the benefits of personalized health guidance against potential data security risks. This capability aims to enhance the AI coach&#x27;s effectiveness by providing insights into users&#x27; health history, but it also necessitates robust data protection measures. Users are encouraged to review privacy settings and understand the implications of sharing sensitive health information.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/897250/fitbits-ai-health-coach-reads-medical-records",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "Legal Battle Over AI&#x27;s Role in Child Suicides",
+            "title": "Lawyer Seeks Accountability from AI Firms After Child Suicides",
+            "content": "In the wake of tragic suicides allegedly linked to AI chatbots, a lawyer is pursuing legal action to hold companies like OpenAI accountable. This case highlights the ethical and legal challenges surrounding AI&#x27;s influence on vulnerable individuals, particularly children. The lawyer argues that AI firms must implement stricter safeguards to prevent harmful interactions. This lawsuit could set a precedent for future accountability in AI development and deployment, emphasizing the need for responsible AI practices. Companies are urged to reassess their chatbot safety protocols to mitigate risks and protect users from potential harm.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/how-ai-chatbots-drove-families-to-the-brink-and-the-lawyer-fighting-back/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "Visa Tests AI-Powered Payment Initiation—Future of Transactions",
+            "title": "Visa Explores AI Agent-Initiated Transactions in Banking Sector",
+            "content": "Visa is pioneering a shift in transaction models by testing AI agents capable of initiating payments, a departure from traditional user-initiated processes. This innovation could revolutionize the banking industry, allowing software agents to autonomously manage transactions in specific scenarios. By leveraging AI, Visa aims to enhance transaction efficiency and user convenience, potentially transforming how consumers interact with financial services. The pilot program&#x27;s outcomes could influence future payment systems, prompting financial institutions to adapt to AI-driven transaction methods. Stakeholders should monitor these developments as they may redefine consumer expectations and operational frameworks in banking.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/visa-prepares-payment-systems-for-ai-agent-initiated-transactions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "Multiverse Computing Integrates Compressed AI Models for Wider Use",
+            "title": "Multiverse Computing Launches App and API for Compressed AI Models",
+            "content": "Multiverse Computing has introduced an app and API to showcase and distribute its compressed AI models, which include technologies from OpenAI, Meta, DeepSeek, and Mistral AI. These compressed models promise to deliver high performance with reduced computational demands, making advanced AI capabilities more accessible. This initiative reflects a growing trend towards optimizing AI models for efficiency without sacrificing performance. By broadening access to these models, Multiverse Computing aims to democratize AI technology, enabling a wider range of applications across industries. Developers and businesses should explore these tools to leverage cutting-edge AI with lower resource requirements.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/18/sam-altmans-thank-you-to-coders-draws-the-memes/",
+            "sourceUrl": "https://techcrunch.com/2026/03/19/multiverse-computing-pushes-its-compressed-ai-models-into-the-mainstream/",
             "relatedResources": []
         },
         {
-            "date": "Mar 18 2026",
-            "headline": "EU Law May Curb Grok&#x27;s &quot;Spicy&quot; Content—Musk Under Pressure",
-            "title": "EU Nudify App Ban Could Force Changes to Musk&#x27;s Grok AI",
-            "content": "Elon Musk&#x27;s Grok AI, known for its &quot;spicy&quot; image generation capabilities, may soon face restrictions due to a planned EU ban on nudify apps. This legislative move could compel Musk to alter Grok&#x27;s content policies to comply with European regulations. The potential ban highlights the broader regulatory challenges facing AI applications that generate sensitive or explicit content. Companies developing similar technologies should monitor regulatory trends and prepare for compliance adjustments. This development underscores the importance of aligning AI innovations with evolving legal frameworks.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/03/eu-moves-to-ban-nudify-apps-after-grok-made-them-mainstream/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 18 2026",
-            "headline": "Smartphone Apps to Vanish—AI Agents to Take Over, Says Pei",
-            "title": "Nothing CEO Predicts AI Agents Will Replace Smartphone Apps",
-            "content": "Carl Pei, CEO of Nothing, has predicted a future where AI agents supplant traditional smartphone apps, fundamentally changing how users interact with their devices. According to Pei, these agents will understand user intent and perform tasks autonomously, streamlining the user experience. This vision reflects a growing trend in the tech industry towards more intuitive and responsive AI-driven interfaces. Companies should consider how AI could transform their mobile offerings and explore opportunities to integrate intelligent agents into their platforms.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/18/nothing-ceo-carl-pei-says-smartphone-apps-will-disappear-as-ai-agents-take-their-place/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 18 2026",
-            "headline": "Nvidia&#x27;s Networking Business Surges—$11B Revenue Last Quarter",
-            "title": "Nvidia&#x27;s Networking Division Quietly Grows into $11 Billion Business",
-            "content": "Nvidia&#x27;s networking segment has quietly achieved remarkable financial success, generating $11 billion in revenue last quarter. Despite receiving less attention than Nvidia&#x27;s renowned chips and gaming products, the networking division is becoming a significant contributor to the company&#x27;s overall growth. This development underscores the increasing importance of networking technologies in supporting AI and data-intensive applications. Industry stakeholders should note the strategic value of investing in robust networking infrastructure to support future technological advancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/18/nvidia-networking-division-building-a-multibillion-dollar-behemoth-to-rival-its-chips-business/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 18 2026",
-            "headline": "MiniMax M2.7 AI Model Automates Research—30-50% Workflow Coverage",
-            "title": "MiniMax&#x27;s M2.7 AI Model Automates Significant Part of Research Workflow",
-            "content": "Chinese AI startup MiniMax has unveiled the M2.7, a proprietary AI model capable of automating 30-50% of the reinforcement learning research workflow. Described as &quot;self-evolving,&quot; the M2.7 model represents a significant advancement in AI-driven research tools. This innovation positions MiniMax as a key player in the competitive AI landscape, known for its open-source LLMs and high-quality AI video generation models. Researchers and institutions should evaluate how integrating such models could enhance productivity and streamline research processes.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/new-minimax-m2-7-proprietary-ai-model-is-self-evolving-and-can-perform-30-50",
+            "date": "Mar 19 2026",
+            "headline": "NVIDIA Unveils Toolkit for Safer Enterprise AI Deployment",
+            "title": "NVIDIA Introduces Agent Toolkit to Secure Enterprise AI Deployments",
+            "content": "NVIDIA has announced the NVIDIA Agent Toolkit, an open-source software stack designed to facilitate the secure deployment of AI agents in enterprise environments. Revealed at GTC 2026, this toolkit addresses critical concerns about data control and liability when implementing AI solutions. By providing tools to manage AI agents effectively, NVIDIA aims to empower enterprises to leverage AI while minimizing risks. This initiative responds to growing demands for safer AI integration, as businesses seek to harness AI&#x27;s potential without compromising security. Enterprises should evaluate the toolkit to enhance their AI deployment strategies and ensure robust data governance.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/nvidia-agent-toolkit-enterprise-ai-agents/",
             "relatedResources": []
         }
     ],
