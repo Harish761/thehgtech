@@ -810,8 +810,19 @@
                         <i class="fas fa-shield-alt text-accent"></i> TheHGTech Enterprise GRC Report
                     </div>
                     <div class="dash-title">
-                        <h2>ISO 27001 Gap Analysis Executive Summary</h2>
-                        <span id="dashDate" class="dash-date">Generated on: --</span>
+                        <div style="display:flex; justify-content:space-between; align-items:flex-end; width:100%; border-bottom: 1px solid var(--border); padding-bottom: 1rem; margin-bottom: 2rem;">
+                            <div>
+                                <h2 style="margin:0; font-family:'Outfit';">Executive Readiness Dashboard</h2>
+                                <div style="display:flex; gap:15px; margin-top:10px; font-size:0.75rem; color:var(--text-muted); font-family:'JetBrains Mono';">
+                                    <span><i class="fas fa-calendar" style="color:var(--accent-cyan); margin-right:5px;"></i> <span id="dashDate">--</span></span>
+                                    <span><i class="fas fa-stopwatch" style="color:var(--accent-cyan); margin-right:5px;"></i> <span id="timeTaken">--</span> session</span>
+                                    <span><i class="fas fa-layer-group" style="color:var(--accent-cyan); margin-right:5px;"></i> <span id="scopeCovered">--</span></span>
+                                </div>
+                            </div>
+                            <div id="scoreComparison" style="font-size:0.8rem; font-family:'JetBrains Mono'; background:rgba(255,255,255,0.03); padding:8px 15px; border-radius:30px; border:1px solid var(--border);">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
                     </div>
 
                     <div class="dash-top-metrics">
@@ -835,6 +846,31 @@
                                     <p style="font-size: 0.8rem; color: var(--text-muted); margin: 4px 0 0;">Total Hygiene Alignment Score</p>
                                 </div>
                                 <div id="cisScore" style="font-size: 2rem; font-weight: 800; color: #FF9F0A;">0%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dash-framework-scout" style="display:flex; gap:1.5rem; margin-bottom: 3rem;">
+                        <div style="flex:1; background:linear-gradient(135deg, rgba(0, 217, 255, 0.05), transparent); border:1px solid rgba(0, 217, 255, 0.15); border-radius:12px; padding:1.2rem; display:flex; align-items:center; gap:12px;">
+                            <div style="font-size:1.5rem; color:var(--accent-cyan); opacity:0.6;"><i class="fas fa-microchip"></i></div>
+                            <div>
+                                <h4 style="margin:0; font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); font-weight:700;">Governance Model</h4>
+                                <div style="color:#fff; font-size:0.95rem; font-weight:700;">TheHGTech Advisory v1.2.4</div>
+                            </div>
+                        </div>
+                        <div style="flex:2; background:rgba(255,255,255,0.03); border:1px solid var(--border); border-radius:12px; padding:1.2rem; display:flex; align-items:center; gap:20px;">
+                            <div style="font-size:1.5rem; color:var(--accent-green); opacity:0.6;"><i class="fas fa-shield-halved"></i></div>
+                            <div style="display:flex; gap:1.5rem;">
+                                <div>
+                                    <h4 style="margin:0; font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); font-weight:700;">Compliant Frameworks</h4>
+                                    <div style="color:#fff; font-size:0.9rem; font-weight:700; display:flex; gap:10px;">
+                                        <span style="color:#0A84FF;">NIST CSF 2.0</span>
+                                        <span style="color:var(--border);">|</span>
+                                        <span style="color:#FF9F0A;">CIS v8 Controls</span>
+                                        <span style="color:var(--border);">|</span>
+                                        <span style="color:var(--accent-green);">ISO 27001:2022</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

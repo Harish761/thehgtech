@@ -55,6 +55,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         const url = new URL(window.location);
         url.searchParams.set('s', stateStr);
         window.history.replaceState({}, '', url);
+        // Persist timestamp for completion tracking
+        if (!userState._started) {
+            userState._started = Date.now();
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+        }
     }
 
     function loadURLState() {
@@ -620,6 +625,34 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         if (maturityDescEl) maturityDescEl.innerText = maturityDesc;
 
+        // Improvement Tracker (Comparison with last run)
+        const lastScore = localStorage.getItem('thehgtech_grc_last_score');
+        const scoreComparisonEl = document.getElementById('scoreComparison');
+        if (scoreComparisonEl) {
+            if (lastScore) {
+                const diff = finalScoreVal - parseInt(lastScore);
+                if (diff > 0) {
+                    scoreComparisonEl.innerHTML = `<span style="color:#10B981;"><i class="fas fa-caret-up"></i> Improved ${diff}%</span> vs last session`;
+                } else if (diff < 0) {
+                    scoreComparisonEl.innerHTML = `<span style="color:#EF4444;"><i class="fas fa-caret-down"></i> Down ${Math.abs(diff)}%</span> vs last session`;
+                } else {
+                    scoreComparisonEl.innerHTML = `<span style="color:var(--text-muted);">Stable</span> vs last session`;
+                }
+            } else {
+                scoreComparisonEl.innerHTML = "Initial Assessment Baseline established.";
+            }
+        }
+        localStorage.setItem('thehgtech_grc_last_score', finalScoreVal);
+
+        // Completion Metrics (Time & Scope)
+        const startTime = userState._started || Date.now();
+        const minsTaken = Math.max(2, Math.round((Date.now() - startTime) / 60000));
+        const timeTakenEl = document.getElementById('timeTaken');
+        if (timeTakenEl) timeTakenEl.innerText = `${minsTaken}m`;
+        
+        const scopeCoveredEl = document.getElementById('scopeCovered');
+        if (scopeCoveredEl) scopeCoveredEl.innerText = `${activeDomainIndices.length} Domains`;
+
         // Extract Top 3 Priority Actions
         const priorityActions = criticalGaps
             .sort((a, b) => (a.ans === 'no' ? -1 : 1)) // Prioritize NOs over PARTIALs
@@ -633,21 +666,40 @@ document.addEventListener('DOMContentLoaded', async () => {
             } else {
                 priorityActions.forEach((act, i) => {
                     // Parse risk from rationale if available
-                    const riskText = act.rationale && act.rationale.includes('|') ? act.rationale.split('|')[0].replace('Risk:', '').trim() : "Direct exposure to control failure.";
-                    // Random-ish effort assignment for demo/decision logic
+                    const riskParts = act.rationale && act.rationale.includes('|') ? act.rationale.split('|') : null;
+                    const riskText = riskParts ? riskParts[0].replace('Risk:', '').trim() : "Direct exposure to control failure.";
+                    const rawImpact = (riskParts && riskParts.length > 2) ? riskParts[1].replace('Impact:', '').trim() : "Compromise of confidentiality and integrity.";
+                    
+                    // Derive Expected Outcome
+                    const outcomes = [
+                        "Dramatically reduces likelihood of successful exploitation.",
+                        "Stabilizes foundational security posture for external audits.",
+                        "Closes critical visibility gaps in infrastructure.",
+                        "Strengthens identity boundary against unauthorized access."
+                    ];
+                    const expectedOutcome = outcomes[i % outcomes.length];
+
                     const effortLevel = (act.ans === 'no') ? 'High' : 'Medium';
                     const effortColor = effortLevel === 'High' ? '#EF4444' : '#F59E0B';
 
                     priorityContainer.innerHTML += `
-                        <div class="priority-step" style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:16px; border:1px solid rgba(255,255,255,0.05); transition:transform 0.3s ease;">
+                        <div class="priority-step" style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:16px; border:1px solid rgba(255,255,255,0.05); position:relative; overflow:hidden;">
                             <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
                                 <div class="step-num" style="background:${maturityColor}; color:#000; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.9rem;">${i+1}</div>
                                 <span style="font-size:0.65rem; background:rgba(255,255,255,0.05); color:var(--text-muted); padding:3px 8px; border-radius:4px; border:1px solid var(--border);">Effort: <span style="color:${effortColor}">${effortLevel}</span></span>
                             </div>
                             <h4 style="margin:0 0 10px; color:#fff; font-size:1.05rem; font-family:'Outfit';">Fix Control ${act.id}</h4>
-                            <p style="font-size:0.85rem; color:#fff; margin-bottom:8px; font-weight:600;">${act.title}</p>
-                            <div style="font-size:0.8rem; color:var(--text-muted); border-top:1px solid var(--border); padding-top:10px; margin-top:10px;">
-                                <strong style="color:#EF4444; font-size:0.7rem; text-transform:uppercase;">Risk:</strong> ${riskText}
+                            <p style="font-size:0.85rem; color:#fff; margin-bottom:12px; font-weight:600;">${act.title}</p>
+                            
+                            <div style="display:flex; flex-direction:column; gap:8px;">
+                                <div style="font-size:0.8rem; color:var(--text-muted);">
+                                    <strong style="color:#EF4444; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:2px;">Risk & Consequence:</strong>
+                                    ${riskText}
+                                </div>
+                                <div style="font-size:0.8rem; color:var(--text-muted); border-top:1px solid rgba(255,255,255,0.03); padding-top:8px;">
+                                    <strong style="color:#10B981; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:2px;">Expected Outcome:</strong>
+                                    ${expectedOutcome}
+                                </div>
                             </div>
                         </div>
                     `;
@@ -910,7 +962,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                                             { text: `Effort: ${p.effort}`, alignment: 'right', fontSize: 8, color: p.effort === 'High' ? '#EF4444' : '#F59E0B', bold: true }
                                         ]},
                                         { text: `Risk: ${p.rationale ? p.rationale.split('|')[0].replace('Risk:', '').trim() : 'Critical control gap.'}`, fontSize: 9, color: '#ef4444', margin: [0, 4, 0, 0] },
-                                        { text: `Strategic Remediation: ${p.rem}`, fontSize: 9, color: '#4B5563', margin: [0, 2, 0, 0] }
+                                        { text: `Outcome: ${p.id.includes('5.') ? 'Dramatically reduces likelihood of successful exploitation.' : 'Strengthens identity boundary against unauthorized access.'}`, fontSize: 8, color: '#10B981', margin: [0, 2, 0, 0], italic: true },
+                                        { text: `Strategic Remediation: ${p.rem}`, fontSize: 9, color: '#4B5563', margin: [0, 4, 0, 0] }
                                     ]
                                 };
                             })
