@@ -618,12 +618,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         const maturityEl = document.getElementById('maturityLabel');
-        const maturityDescEl = document.getElementById('maturityDesc');
+        const maturityDescSmall = document.getElementById('maturityDescSmall');
+        const executiveMaturityDesc = document.getElementById('executiveMaturityDesc');
+
         if (maturityEl) {
             maturityEl.innerText = maturityLabel;
             maturityEl.style.color = maturityColor;
         }
-        if (maturityDescEl) maturityDescEl.innerText = maturityDesc;
+        if (maturityDescSmall) maturityDescSmall.innerText = "Current Maturity Evaluation"; 
+        if (executiveMaturityDesc) executiveMaturityDesc.innerText = maturityDesc;
 
         // Improvement Tracker (Comparison with last run)
         const lastScore = localStorage.getItem('thehgtech_grc_last_score');
