@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Methodology & Guide: ISO 27001 GRC Tool | TheHGTech</title>
-    <meta name="description" content="A comprehensive guide for small businesses to understand the methodology, scoring, and utilization of TheHGTech GRC Assessment engine.">
+    <title>Methodology & User Guide: Triple Framework GRC Engine | TheHGTech</title>
+    <meta name="description" content="The definitive product manual for TheHGTech GRC Engine. Understand the scoring methodology, framework mapping, and report utilization for ISO 27001, NIST, and CIS.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- Styles -->
+    <!-- Core Site Styles -->
+    <link rel="stylesheet" href="../../design-system.css">
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../m-style.css">
+    <link rel="stylesheet" href="../../header.css">
+    <link rel="stylesheet" href="../../header-dropdown.css">
+    <link rel="stylesheet" href="../../theme-toggle.css">
+    <link rel="stylesheet" href="../../light-mode.css">
+    <link rel="stylesheet" href="../../m-core.min.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="../../m-layout.min.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="../../m-components.min.css" media="(max-width: 768px)">
 
     <style>
         :root {
@@ -33,191 +40,209 @@
             color: var(--text-primary);
             font-family: 'Inter', sans-serif;
             line-height: 1.7;
+            scroll-behavior: smooth;
         }
 
-        /* Fix Header Spacing for Guide */
-        .doc-container {
-            max-width: 900px;
-            margin: 15rem auto 100px;
+        /* Layout */
+        .page-wrapper {
+            display: flex;
+            max-width: 1400px;
+            margin: 140px auto 100px;
             padding: 0 2rem;
+            gap: 4rem;
         }
 
-        .doc-header {
-            margin-bottom: 5rem;
-            text-align: left;
-        }
-
-        .doc-header h1 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 1.5rem;
-            letter-spacing: -1px;
-            line-height: 1.1;
-        }
-
-        .doc-header .badge {
-            display: inline-block;
-            padding: 6px 16px;
-            background: rgba(139, 92, 246, 0.1);
-            color: var(--accent-purple);
-            border-radius: 30px;
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            font-size: 0.8rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Section Styling */
-        .doc-section {
-            margin-bottom: 6rem;
-        }
-
-        .doc-section h2 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 2.2rem;
-            margin-bottom: 2rem;
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .doc-section h3 {
-            font-size: 1.4rem;
-            margin: 2.5rem 0 1rem;
-            color: var(--accent-cyan);
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .doc-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-            color: #d1d5db;
-        }
-
-        /* Persona Guidance Blocks */
-        .smb-advice {
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), transparent);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-            padding: 2rem;
-            border-radius: 20px;
-            margin: 3rem 0;
-        }
-
-        .smb-advice h4 {
-            color: var(--accent-green);
-            margin: 0 0 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1.1rem;
-        }
-
-        /* Methodology Table */
-        .comparison-box {
-            background: rgba(255,255,255,0.02);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .framework-card {
-            padding: 1.5rem;
-            border-radius: 12px;
-            background: rgba(255,255,255,0.02);
-        }
-
-        .framework-card h5 {
-            margin: 0 0 10px;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .iso-text { color: var(--accent-cyan); }
-        .nist-text { color: #0A84FF; }
-        .cis-text { color: #FF9F0A; }
-
-        /* Step Logic */
-        .step-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .step-item {
-            display: flex;
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .step-num {
-            flex-shrink: 0;
-            width: 40px;
-            height: 40px;
-            background: var(--accent-purple);
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 900;
-        }
-
-        .step-body h4 {
-            margin: 0 0 10px;
-            font-size: 1.3rem;
-            color: #fff;
-        }
-
-        /* Sidebar Nav */
-        .doc-nav {
-            position: fixed;
-            left: 2rem;
-            top: 15rem;
-            width: 220px;
+        /* Sidebar Navigation */
+        .doc-sidebar {
+            width: 280px;
+            position: sticky;
+            top: 140px;
+            height: fit-content;
             display: none;
         }
 
-        @media (min-width: 1400px) {
-            .doc-nav { display: block; }
+        @media (min-width: 1024px) {
+            .doc-sidebar { display: block; }
         }
 
-        .doc-nav-link {
+        .sidebar-item {
             display: block;
             padding: 10px 0;
             color: var(--text-muted);
             text-decoration: none;
             font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-left: 2px solid transparent;
+            padding-left: 15px;
+        }
+
+        .sidebar-item:hover {
+            color: var(--accent-cyan);
+            border-left-color: var(--accent-cyan);
+        }
+
+        .sidebar-item.active {
+            color: #fff;
+            border-left-color: var(--accent-purple);
+            font-weight: 700;
+        }
+
+        /* Main Content */
+        .doc-main {
+            flex: 1;
+            max-width: 850px;
+        }
+
+        .doc-section {
+            padding-bottom: 6rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 6rem;
+        }
+
+        .doc-section:last-child {
+            border-bottom: none;
+        }
+
+        /* Documentation UI Elements */
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--accent-purple);
+            padding: 6px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        .lead-text {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            max-width: 700px;
+        }
+
+        /* Reality Check Box */
+        .reality-check {
+            background: linear-gradient(145deg, rgba(239, 68, 68, 0.05), rgba(239, 68, 68, 0.02));
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reality-check::before {
+            content: 'REALITY CHECK';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: #EF4444;
+            color: #fff;
+            padding: 4px 40px;
+            font-size: 0.65rem;
+            font-weight: 900;
+            transform: rotate(45deg);
+        }
+
+        /* Mapping Table */
+        .tech-table-wrapper {
+            margin: 3rem 0;
+            overflow-x: auto;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.01);
+        }
+
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .tech-table th, .tech-table td {
+            text-align: left;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tech-table th {
+            background: rgba(255,255,255,0.03);
+            font-family: 'JetBrains Mono';
+            color: var(--accent-cyan);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .prop-key { color: var(--accent-purple); font-weight: 700; }
+
+        /* Feature Cards */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            border-radius: 24px;
             transition: all 0.3s ease;
         }
 
-        .doc-nav-link:hover, .doc-nav-link.active {
-            color: var(--accent-cyan);
-            padding-left: 5px;
+        .feature-card:hover {
+            border-color: var(--accent-cyan);
+            background: rgba(255,255,255,0.05);
         }
 
-        /* Search Overlay fix */
-        .m-search-overlay { z-index: 10000; }
-
-        body.light-mode {
-            background-color: #f8fafc;
+        /* Header Fixes */
+        .header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; transition: all 0.3s ease; }
+        
+        @media (max-width: 768px) {
+            .page-wrapper { margin-top: 80px; padding: 0 1.5rem; }
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
         }
+
+        /* Light Mode Overrides */
+        body.light-mode { background-color: #f8fafc; color: #1e293b; }
+        body.light-mode .doc-section { border-color: #e2e8f0; }
+        body.light-mode .feature-card { background: #fff; border-color: #e2e8f0; }
+        body.light-mode h1, body.light-mode h2 { color: #0f172a; }
+        body.light-mode .reality-check { background: rgba(239, 68, 68, 0.03); border-color: rgba(239, 68, 68, 0.1); }
 
     </style>
 </head>
 <body class="dark-theme">
 
-    <!-- Desktop Header (Full Brand Version) -->
+    <!-- Desktop Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
@@ -231,143 +256,172 @@
             <nav class="nav nav-modern">
                 <a href="../../index.html#news">News</a>
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">Intelligence <i class="fas fa-chevron-down"></i></span>
+                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span> <i class="fas fa-chevron-down dropdown-arrow"></i></span>
                     <div class="nav-dropdown-panel">
                         <a href="../../threat-intel.html" class="dropdown-item">Threat Intelligence</a>
                         <a href="../../cve-tracker.html" class="dropdown-item">CVE Tracker</a>
+                        <a href="../../ransomware-tracker.html" class="dropdown-item">Ransomware Tracker</a>
                     </div>
                 </div>
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">Resources <i class="fas fa-chevron-down"></i></span>
+                    <span class="nav-dropdown-trigger">Resources <i class="fas fa-chevron-down dropdown-arrow"></i></span>
                     <div class="nav-dropdown-panel">
                         <a href="../../guides/index.html" class="dropdown-item">Security Guides</a>
                         <a href="../../workflows/index.html" class="dropdown-item">n8n Workflows</a>
+                        <a href="../../articles.html" class="dropdown-item">Analysis Articles</a>
                     </div>
                 </div>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()">
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme">
                     <span class="m-theme-toggle__thumb"></span>
                 </button>
             </nav>
-            <a href="./index.html" style="background:var(--accent-cyan); color:#000; padding:10px 20px; border-radius:8px; font-weight:700; text-decoration:none; font-size:0.9rem;">
-                <i class="fas fa-arrow-left"></i> Launch Tool
+            <a href="./index.html" class="desktop-only" style="background:var(--accent-cyan); color:#000; padding:12px 24px; border-radius:12px; font-weight:800; text-decoration:none; font-size:0.9rem; transition:transform 0.2s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                <i class="fas fa-bolt"></i> Launch GRC Engine
             </a>
         </div>
     </header>
 
-    <!-- Sidebar Navigation -->
-    <nav class="doc-nav">
-        <div style="font-size:0.75rem; color:var(--accent-purple); font-weight:800; text-transform:uppercase; margin-bottom:1.5rem; letter-spacing:1px;">Documentation</div>
-        <a href="#welcome" class="doc-nav-link">Welcome</a>
-        <a href="#what-not" class="doc-nav-link">What it Does/Doesn't</a>
-        <a href="#step-by-step" class="doc-nav-link">Assessment Steps</a>
-        <a href="#the-math" class="doc-nav-link">Scoring Mystery</a>
-        <a href="#using-reports" class="doc-nav-link">Using the Reports</a>
-    </nav>
-
-    <div class="doc-container">
+    <div class="page-wrapper">
         
-        <header class="doc-header" id="welcome">
-            <span class="badge">Official Methodology Guide</span>
-            <h1>The Small Business Guide to <span class="gradient-text">GRC Success</span></h1>
-            <p>If you've been asked for "proof of security" by a customer or investor, this guide is your first step. We simplify the complex world of ISO 27001 so you can focus on building your business.</p>
-        </header>
+        <!-- Sidebar Navigation -->
+        <aside class="doc-sidebar">
+            <div style="font-size:0.7rem; color:var(--accent-purple); font-weight:800; text-transform:uppercase; margin-bottom:1.5rem; letter-spacing:1.5px;">Product Documentation</div>
+            <nav id="toc">
+                <a href="#introduction" class="sidebar-item active">The GRC Engine Engine</a>
+                <a href="#what-it-is" class="sidebar-item">Technical Scope</a>
+                <a href="#workflow" class="sidebar-item">Assessment Workflow</a>
+                <a href="#the-scoring-math" class="sidebar-item">Scoring Logic (The Math)</a>
+                <a href="#output-strategy" class="sidebar-item">Output Strategy</a>
+            </nav>
+        </aside>
 
-        <!-- 1. What/What Not -->
-        <section class="doc-section" id="what-not">
-            <h2><i class="fas fa-shield-halved"></i> Understanding the Engine</h2>
-            <div class="doc-content">
-                <p>For a small business, "GRC" (Governance, Risk, and Compliance) sounds like a corporate buzzword. In reality, it just means: <strong>"Do we have a handle on our security?"</strong></p>
-                
-                <h3>What this tool does for you:</h3>
-                <p>It acts as a <strong>Digital Consultant</strong>. It asks you the same questions an auditor would, but in a way you can understand. It takes your answers and builds a prioritized list of what to fix first.</p>
+        <!-- Main Content -->
+        <main class="doc-main">
+            
+            <section class="doc-section" id="introduction">
+                <div class="hero-badge"><i class="fas fa-microchip"></i> v1.2.4 Product Manual</div>
+                <h1>The GRC Engine: <span class="gradient-text">Documentation</span></h1>
+                <p class="lead-text">Welcome to the definitive methodology guide for the TheHGTech Triple Framework GRC Engine. This manual covers the scoring logic, multi-framework mapping, and operational utilization of the toolkit.</p>
 
-                <h3>What it doesn't do (The Reality Check):</h3>
-                <p>You cannot use this tool to "Self-Certify." ISO 27001 certification still requires an external auditor to physically check your work. Our tool prepares you so that when that auditor arrives, you have already fixed 90% of the problems.</p>
-
-                <div class="smb-advice">
-                    <h4><i class="fas fa-lightbulb"></i> Expectation Setting</h4>
-                    <p style="margin:0; font-size:0.95rem; color:var(--text-muted);">
-                        As a small team, seeing a low score (e.g., 20%) is <strong>normal and expected</strong>. Most startups fail early audits because they lack formal "Asset Registers" or "Incident Response Plans." This tool is here to tell you exactly what those are.
+                <div class="reality-check">
+                    <h3 style="color:#EF4444; margin-top:0;"><i class="fas fa-triangle-exclamation"></i> Critical Expectations</h3>
+                    <p style="margin-bottom:0; font-size:1.05rem; opacity:0.9;">
+                        The GRC Engine is a <strong>High-Precision Discovery Tool</strong> designed for gap analysis and readiness preparation. It is NOT a formal certification platform. An 80% score here does not mean you are ISO 27001 certified; it means your internal controls are statistically prepared for a formal external audit.
                     </p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 2. Step by Step -->
-        <section class="doc-section" id="step-by-step">
-            <h2><i class="fas fa-shoe-prints"></i> How to run an Assessment</h2>
-            <div class="doc-content">
-                <div class="step-list">
-                    <div class="step-item">
-                        <div class="step-num">1</div>
-                        <div class="step-body">
-                            <h4>Build your Scope</h4>
-                            <p>Don't try to solve everything at once. Select the domains that feel most critical (usually <strong>Operational Controls</strong> and <strong>Asset Management</strong>). You can always come back and add more later.</p>
+            <!-- 2. Technical Scope -->
+            <section class="doc-section" id="what-it-is">
+                <h2>Technical Scope & Architecture</h2>
+                <div class="doc-content">
+                    <p>Unlike traditional static spreadsheets, the GRC Engine uses a dynamic <strong>Control Mapping Matrix</strong>. When you answer a single question, the engine calculates shifts across three distinct security philosophies:</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <h4 style="color:var(--accent-cyan); display:flex; align-items:center; gap:10px;"><i class="fas fa-landmark"></i> ISO 27001:2022</h4>
+                            <p style="font-size:0.9rem; color:var(--text-muted);">Governance-first. Focuses on the "Management System" and Annex A control presence. It values documented proof and executive accountability.</p>
                         </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-num">2</div>
-                        <div class="step-body">
-                            <h4>Be Brutally Honest</h4>
-                            <p>Answering "Yes" to a question like "Do you have a backup policy?" isn't just about having the backups—it's about having a <strong>written document</strong> that says how often they happen. If you don't have that document yet, answer "Partial."</p>
+                        <div class="feature-card">
+                            <h4 style="color:#0A84FF; display:flex; align-items:center; gap:10px;"><i class="fas fa-shield-cat"></i> NIST CSF 2.0</h4>
+                            <p style="font-size:0.9rem; color:var(--text-muted);">Outcome-based. Maps your controls against the 6 core functions: Identify, Protect, Detect, Respond, Recover, and Govern.</p>
                         </div>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-num">3</div>
-                        <div class="step-body">
-                            <h4>Read the "Why"</h4>
-                            <p>If a question seems confusing, look for the rationale. It explains the specific business risk. For example, a "Logging" control is about being able to see who accessed your data if a hack occurs.</p>
+                        <div class="feature-card">
+                            <h4 style="color:#FF9F0A; display:flex; align-items:center; gap:10px;"><i class="fas fa-server"></i> CIS Controls v8</h4>
+                            <p style="font-size:0.9rem; color:var(--text-muted);">Technically granular. 18 Controls and 153 Safeguards. This is the hardest framework to "pass" as it requires specific technical configurations.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 3. Scoring Mystery -->
-        <section class="doc-section" id="the-math">
-            <h2><i class="fas fa-calculator"></i> Why are my scores different?</h2>
-            <div class="doc-content">
-                <p>You might notice that after answering the same 20 questions, your <strong>ISO Score</strong> is 60% but your <strong>CIS Score</strong> is only 40%. This is intentional. Here is why:</p>
+            <!-- 3. Workflow -->
+            <section class="doc-section" id="workflow">
+                <h2>Product Workflow</h2>
+                <div class="doc-content">
+                    <p>To maximize the accuracy of your assessment, we recommend following the <strong>Standard Assessment Cycle</strong>:</p>
+                    
+                    <h3 style="color:var(--accent-cyan);"><i class="fas fa-compass"></i> Phase 1: Dynamic Scoping</h3>
+                    <p>The first step is selecting your relevant ISO Domains. The engine will hide irrelevant controls, ensuring a lean, high-velocity audit experience. For most technical firms, <strong>Domain 5 (Organizational)</strong> and <strong>Domain 8 (Technological)</strong> are the high-impact starting points.</p>
 
-                <div class="comparison-box">
-                    <div class="comparison-grid">
-                        <div class="framework-card">
-                            <h5 class="iso-text">ISO 27001 Settings</h5>
-                            <p style="font-size:0.85rem;">Focuses on <strong>High-Level Governance</strong>. If you have a policy, ISO is generally happy.</p>
-                        </div>
-                        <div class="framework-card">
-                            <h5 class="nist-text">NIST CSF 2.0</h5>
-                            <p style="font-size:0.85rem;">Focuses on <strong>Balance</strong> across 6 functions. It checks if you are as good at "Detecting" as you are at "Identifying."</p>
-                        </div>
-                        <div class="framework-card">
-                            <h5 class="cis-text">CIS v8 Controls</h5>
-                            <p style="font-size:0.85rem;">Focuses on <strong>Technical Granularity</strong>. CIS is strict—it wants to know exactly how you locked down your servers.</p>
-                        </div>
+                    <h3 style="color:var(--accent-cyan);"><i class="fas fa-pencil"></i> Phase 2: Maturity Selection</h3>
+                    <p>The engine offers three maturity levels per control point:</p>
+                    <ul>
+                        <li><strong>Yes (Full)</strong>: Control is documented, socialized, and generating logs/proof.</li>
+                        <li><strong>Partial</strong>: Control is active but lacks formal documentation or regular reviews.</li>
+                        <li><strong>No (Gap)</strong>: Control is non-existent. This triggers "Remediation Insights" in the results.</li>
+                    </ul>
+
+                    <h3 style="color:var(--accent-cyan);"><i class="fas fa-eye"></i> Phase 3: Consultant Mode</h3>
+                    <p>Toggling "Consultant Insights" allows teams to understand the <strong>Technical Rationale</strong> behind the compliance requirement. This bridges the gap between the CISO's office and the DevOps team.</p>
+                </div>
+            </section>
+
+            <!-- 4. Scoring Logic -->
+            <section class="doc-section" id="the-scoring-math">
+                <h2>Scoring Methodology & Variances</h2>
+                <div class="doc-content">
+                    <p>A common user question is: <em>"Why is my ISO score 70% but my CIS score only 45%?"</em></p>
+                    <p>This is the core strength of the GRC Engine. Each framework has a different <strong>Audit Tolerance</strong>. We use a multi-weighted mapping logic to calculate this variance:</p>
+
+                    <div class="tech-table-wrapper">
+                        <table class="tech-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>ISO 27001 Logic</th>
+                                    <th>NIST CSF Logic</th>
+                                    <th>CIS v8 Logic</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="prop-key">Focus Area</td>
+                                    <td>Policy & Governance</td>
+                                    <td>Operational Balance</td>
+                                    <td>Technical Safeguards</td>
+                                </tr>
+                                <tr>
+                                    <td class="prop-key">Mapping Weight</td>
+                                    <td>Direct (1:1 per Annex A)</td>
+                                    <td>Cross-Mapped (1:N)</td>
+                                    <td>Deep Technical (1:NN)</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="prop-key">Scoring Rigor</td>
+                                    <td>Moderate</td>
+                                    <td>Strategic</td>
+                                    <td>Extremely Strict</td>
+                                </tr>
+                                <tr>
+                                    <td class="prop-key">Maturity Impact</td>
+                                    <td>Binary (Implemented?)</td>
+                                    <td>Function-based</td>
+                                    <td>Safeguard-specific</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+
+                    <p>In essence: <strong>CIS v8</strong> requires specific technical proofs. If you answer "Partial" to an ISO control about Access Control, ISO gives you half credit. However, CIS checks for 5 specific technical safeguards under that same topic—if you only do 1 of them, your CIS score will naturally be lower. <strong>This provides a realistic view of technical risk versus paper-based compliance.</strong></p>
                 </div>
+            </section>
 
-                <div class="info-block" style="margin-top:2rem;">
-                    <strong>The Multi-Mapping Rule:</strong> A single answer about "Passwords" might satisfy one broad ISO requirement, but it only satisfies <em>two out of five</em> specific CIS technical requirements. This is why technical frameworks (CIS) often show lower scores than governance frameworks (ISO).
+            <!-- 5. Output Strategy -->
+            <section class="doc-section" id="output-strategy">
+                <h2>Deliverables & Output Strategy</h2>
+                <div class="doc-content">
+                    <p>The GRC Engine provides two distinct deliverables designed for different stakeholders:</p>
+                    
+                    <h3 style="color:#10B981;"><i class="fas fa-file-pdf"></i> 1. The Executive Accountability Report (PDF)</h3>
+                    <p>A boardroom-ready document that translates technical gaps into business risk. Use this to secure budget for security tooling or to demonstrate posture to a customer.</p>
+
+                    <h3 style="color:#10B981;"><i class="fas fa-file-excel"></i> 2. The Remediation Priority Registry (Excel)</h3>
+                    <p>A technical roadmap for engineers. It includes "Strategic Remediation Advice" for every identified gap. This registry should be imported into your task management system (Jira/Asana) as your 90-day security improvement roadmap.</p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 4. Reports -->
-        <section class="doc-section" id="using-reports">
-            <h2><i class="fas fa-file-invoice"></i> How to use your outputs</h2>
-            <div class="doc-content">
-                <h3>1. The PDF: The "Proof" for Customers</h3>
-                <p>When a prospective customer asks "How is your security?", you send them the <strong>Executive PDF</strong>. It shows the charts, the maturity level, and the fact that you are aligned with international standards.</p>
-
-                <h3>2. The Excel: Your Weekend To-Do List</h3>
-                <p>Download the <strong>Detailed Excel</strong>. Filter the list for "HIGH" risk. Give those 5 tasks to your IT person or DevOps engineer. They contain the "Risk & Consequence" data they need to understand the urgency.</p>
-
-                <div class="tip-block">
-                    <strong>Business Value:</strong> Achieving an "Optimized" status in this tool means you are likely in the top 10% of small businesses for security posture. <strong>Use this as a competitive advantage.</strong>
-                </div>
-            </div>
-        </section>
-
+        </main>
     </div>
 
     <!-- Scripts -->
@@ -376,7 +430,7 @@
         // Simple scroll spy logic
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.doc-nav-link');
+            const navLinks = document.querySelectorAll('.sidebar-item');
             
             let current = '';
             sections.forEach(section => {
