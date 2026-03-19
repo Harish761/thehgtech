@@ -612,10 +612,10 @@
                     <i class="fas fa-history" style="color:var(--accent-cyan); margin-right:8px;"></i> ~12-15 Min Audit
                 </div>
                 <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.8rem 1.5rem; border-radius:12px; font-size:0.85rem; color:var(--text-muted);">
-                    <i class="fas fa-check-double" style="color:var(--accent-cyan); margin-right:8px;"></i> Methodology v1.0.2
+                    <i class="fas fa-check-double" style="color:var(--accent-cyan); margin-right:8px;"></i> Assessment v1.2.4
                 </div>
-                <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.8rem 1.5rem; border-radius:12px; font-size:0.85rem; color:var(--text-muted);">
-                    <i class="fas fa-brain" style="color:var(--accent-cyan); margin-right:8px;"></i> Advisory Intelligence
+                <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.8rem 1.5rem; border-radius:12px; font-size:0.85rem; color:var(--text-muted); cursor:help;" title="Deterministically mapped against control benchmarks">
+                    <i class="fas fa-brain" style="color:var(--accent-cyan); margin-right:8px;"></i> <a href="#" style="color:inherit; text-decoration:none;">How this works <i class="fas fa-external-link-alt" style="font-size:0.6rem;"></i></a>
                 </div>
             </div>
             <div class="audit-disclaimer"
@@ -798,7 +798,7 @@
                             <div id="maturityLabel" style="margin-top:1rem; font-weight:800; font-family:'Outfit'; font-size:1rem; text-transform:uppercase; letter-spacing:1px;">--</div>
                             <p id="maturityDesc" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 5px; line-height:1.4;">Primary Compliance Target</p>
                         </div>
-                        <div class="metric-card framework-breakdown" style="flex: 1.5; display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="metric-card framework-breakdown" style="flex: 2; display: flex; flex-direction: column; gap: 1rem;">
                             <div class="framework-score-box nist" style="background: rgba(10, 132, 255, 0.05); border: 1px solid rgba(10, 132, 255, 0.2); padding: 1.25rem; border-radius: 12px; display: flex; align-items: center; justify-content: space-between;">
                                 <div>
                                     <h4 style="color: #0A84FF; margin: 0; font-size: 1rem;">NIST CSF 2.0 Alignment</h4>
@@ -814,22 +814,29 @@
                                 <div id="cisScore" style="font-size: 2rem; font-weight: 800; color: #FF9F0A;">0%</div>
                             </div>
                         </div>
-                        <div class="metric-card chart-card" style="flex:1;">
-                            <canvas id="radarChart"></canvas>
+                    </div>
+
+                    <div id="maturityInterpretation" style="margin-bottom: 2.5rem; padding: 1.5rem; background: rgba(255,255,255,0.03); border-radius: 16px; border-left: 5px solid var(--accent-cyan);">
+                        <h4 style="margin: 0 0 0.5rem; font-family:'Outfit'; font-size: 1.1rem; color:#fff;">Executive Interpretation</h4>
+                        <p id="maturityDesc" style="margin: 0; line-height: 1.6; color: var(--text-muted); font-size: 0.95rem;">--</p>
+                    </div>
+
+                    <div class="dash-priority-actions" style="margin-bottom: 3rem; padding: 2.5rem; background: rgba(139, 92, 246, 0.05); border-radius: 20px; border: 1px solid rgba(139, 92, 246, 0.2);">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem;">
+                            <div>
+                                <h3 style="font-family:'Outfit'; font-size:1.6rem; margin:0; color:#fff;"><i class="fas fa-list-check" style="color:#8B5CF6; margin-right:10px;"></i> Strategic Action Plan (Priority List)</h3>
+                                <p style="font-size:0.85rem; color:var(--text-muted); margin:5px 0 0;">Immediate remediations to stabilize security maturity.</p>
+                            </div>
+                            <span style="font-size:0.7rem; background:rgba(139, 92, 246, 0.2); color:#C4B5FD; padding:4px 12px; border-radius:20px; font-weight:bold; text-transform:uppercase; letter-spacing:1px;">Immediate Focus</span>
+                        </div>
+                        <div id="priorityActionPlan" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:25px;">
+                            <!-- Populated by JS -->
                         </div>
                     </div>
 
-                    <div class="dash-priority-actions" style="margin: 3rem 0; padding: 2rem; background: rgba(139, 92, 246, 0.05); border-radius: 20px; border: 1px solid rgba(139, 92, 246, 0.2);">
-                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem;">
-                            <div>
-                                <h3 style="font-family:'Outfit'; font-size:1.5rem; margin:0; color:#fff;"><i class="fas fa-list-check" style="color:#8B5CF6; margin-right:10px;"></i> Priority Action Plan</h3>
-                                <p style="font-size:0.85rem; color:var(--text-muted); margin:5px 0 0;">Top 3 immediate remediations to maximize risk reduction.</p>
-                            </div>
-                            <span style="font-size:0.7rem; background:rgba(139, 92, 246, 0.2); color:#C4B5FD; padding:4px 12px; border-radius:20px; font-weight:bold; text-transform:uppercase; letter-spacing:1px;">Strategic Fixes</span>
-                        </div>
-                        <div id="priorityActionPlan" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
-                            <!-- Populated by JS -->
-                        </div>
+                    <div class="metric-card chart-card" style="margin-bottom: 3rem; padding: 2.5rem; background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px solid var(--border);">
+                        <h3 style="font-family:'Outfit'; font-size:1.4rem; margin:0 0 2rem; color:#fff; text-align:center;">Domain Readiness Distribution</h3>
+                        <canvas id="radarChart" style="max-height: 450px;"></canvas>
                     </div>
                     
                     <div class="methodology-note" style="margin: 1.5rem 0 3rem; padding: 1.25rem; background: rgba(255,255,255,0.03); border-radius: 12px; border: 1px dashed var(--border); font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
@@ -838,6 +845,9 @@
                         <strong>NIST CSF 2.0</strong> alignment is calculated against a total of 106 subcategories, while 
                         <strong>CIS v8</strong> readiness is measured against the 153 technical safeguards. 
                         Percentages reflect your current "Mapped Baseline" coverage relative to the full framework standards.
+                        <div style="margin-top:0.8rem; color:var(--accent-green); font-style:italic;">
+                            <i class="fas fa-info-circle"></i> Based on your responses, this assessment provides a directional view of your security maturity.
+                        </div>
                     </div>
 
                     <div class="dash-gaps-section" id="gapsContainer">

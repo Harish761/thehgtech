@@ -603,11 +603,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (finalScoreVal >= 75) { 
             maturityLabel = "Mature / Optimized"; 
             maturityColor = "#10B981";
-            maturityDesc = "Proactive posture. Controls are integrated and monitored for continuous improvement.";
+            maturityDesc = "Proactive posture. Controls are integrated and monitored for continuous improvement. You have achieved a baseline where internal processes are mostly self-correcting.";
         } else if (finalScoreVal >= 40) { 
             maturityLabel = "Developing / Moderate"; 
             maturityColor = "#F59E0B";
-            maturityDesc = "Foundational controls are in place, but lack depth and consistent monitoring.";
+            maturityDesc = "Foundational controls are in place, but lack depth and consistent monitoring. Risk is managed reactively rather than through automated or continuous governance.";
+        } else {
+            maturityDesc = "Critical security gaps detected. Significant exposure to breach and regulatory fines. Core technical and organizational guardrails are either missing or loosely implemented.";
         }
 
         const maturityEl = document.getElementById('maturityLabel');
@@ -630,12 +632,22 @@ document.addEventListener('DOMContentLoaded', async () => {
                 priorityContainer.innerHTML = '<p style="color:var(--text-muted); font-style:italic;">Maintain current posture. No immediate critical fixes required.</p>';
             } else {
                 priorityActions.forEach((act, i) => {
+                    // Parse risk from rationale if available
+                    const riskText = act.rationale && act.rationale.includes('|') ? act.rationale.split('|')[0].replace('Risk:', '').trim() : "Direct exposure to control failure.";
+                    // Random-ish effort assignment for demo/decision logic
+                    const effortLevel = (act.ans === 'no') ? 'High' : 'Medium';
+                    const effortColor = effortLevel === 'High' ? '#EF4444' : '#F59E0B';
+
                     priorityContainer.innerHTML += `
-                        <div class="priority-step" style="display:flex; gap:15px; margin-bottom:1.5rem; background:rgba(255,255,255,0.02); padding:1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
-                            <div class="step-num" style="background:${maturityColor}; color:#000; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:0.8rem; flex-shrink:0;">${i+1}</div>
-                            <div>
-                                <h4 style="margin:0 0 5px; color:#fff; font-size:0.95rem;">Fix Control ${act.id}: ${act.title}</h4>
-                                <p style="font-size:0.8rem; color:var(--text-muted); margin:0;">${act.remediation.split('.')[0]}.</p>
+                        <div class="priority-step" style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:16px; border:1px solid rgba(255,255,255,0.05); transition:transform 0.3s ease;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem;">
+                                <div class="step-num" style="background:${maturityColor}; color:#000; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.9rem;">${i+1}</div>
+                                <span style="font-size:0.65rem; background:rgba(255,255,255,0.05); color:var(--text-muted); padding:3px 8px; border-radius:4px; border:1px solid var(--border);">Effort: <span style="color:${effortColor}">${effortLevel}</span></span>
+                            </div>
+                            <h4 style="margin:0 0 10px; color:#fff; font-size:1.05rem; font-family:'Outfit';">Fix Control ${act.id}</h4>
+                            <p style="font-size:0.85rem; color:#fff; margin-bottom:8px; font-weight:600;">${act.title}</p>
+                            <div style="font-size:0.8rem; color:var(--text-muted); border-top:1px solid var(--border); padding-top:10px; margin-top:10px;">
+                                <strong style="color:#EF4444; font-size:0.7rem; text-transform:uppercase;">Risk:</strong> ${riskText}
                             </div>
                         </div>
                     `;
@@ -767,12 +779,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                         if (ans === 'yes') implC++;
                         else if (ans === 'partial') { 
                             partC++; 
-                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
+                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', effort: 'Medium', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
                         }
                         else if (ans === 'na') naC++;
                         else { 
                             gapC++; 
-                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
+                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', effort: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
                         }
                     });
                 });
@@ -883,6 +895,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                         },
 
                         { canvas: [{ type: 'line', x1: 0, y1: 0, x2: 515, y2: 0, lineWidth: 1, lineColor: '#e5e7eb' }], margin: [0, 20, 0, 20] },
+                        
+                        { text: 'STRATEGIC MATURITY INTERPRETATION', style: 'sectionHeader', margin: [0, 0, 0, 10] },
+                        { text: matDesc, margin: [10, 0, 10, 25], color: '#4B5563', fontSize: 10, lineHeight: 1.4, italic: true },
 
                         { text: 'EXECUTIVE ACTION PLAN (TOP PRIORITIES)', style: 'sectionHeader', margin: [0, 10, 0, 15] },
                         priorityRecommendationList.length > 0 ? {
@@ -890,13 +905,19 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 return {
                                     margin: [0, 0, 0, 15],
                                     stack: [
-                                        { text: `${index + 1}. IMMEDIATELY RECTIFY: Control ${p.id} (${p.title})`, bold: true, color: '#111827', fontSize: 11 },
-                                        { text: `Strategic Risk: ${p.rationale ? p.rationale.split('|')[0].replace('**Risk:**', '').trim() : 'Critical control gap.'}`, fontSize: 9, color: '#ef4444', margin: [15, 4, 0, 0] },
-                                        { text: `Remediation: ${p.rem}`, fontSize: 9, color: '#4B5563', margin: [15, 2, 0, 0] }
+                                        { columns: [
+                                            { text: `${index + 1}. IMMEDIATELY RECTIFY: Control ${p.id}`, bold: true, color: '#111827', fontSize: 11 },
+                                            { text: `Effort: ${p.effort}`, alignment: 'right', fontSize: 8, color: p.effort === 'High' ? '#EF4444' : '#F59E0B', bold: true }
+                                        ]},
+                                        { text: `Risk: ${p.rationale ? p.rationale.split('|')[0].replace('Risk:', '').trim() : 'Critical control gap.'}`, fontSize: 9, color: '#ef4444', margin: [0, 4, 0, 0] },
+                                        { text: `Strategic Remediation: ${p.rem}`, fontSize: 9, color: '#4B5563', margin: [0, 2, 0, 0] }
                                     ]
                                 };
                             })
                         } : { text: 'Maintain current security posture. No critical remediations prioritized.', italic: true, color: '#6B7280' },
+
+                        { text: 'Domain Readiness Distribution', style: 'sectionHeader', margin: [0, 20, 0, 10] },
+                        chartImgObject,
 
                         { text: 'Detailed Gap Analysis & Risk Registry', style: 'sectionHeader', pageBreak: 'before', margin: [0, 0, 0, 15] },
                         { text: 'The following table outlines all identified gaps (Partial or Missing) with corresponding remediation guidance and framework mapping.', margin: [0, 0, 0, 10], color: '#6b7280', fontSize: 9 },
