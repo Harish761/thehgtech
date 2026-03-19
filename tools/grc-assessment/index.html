@@ -101,7 +101,7 @@
     <style>
         .grc-hero {
             position: relative;
-            padding: 2rem 2rem 6rem; /* Reduced top padding since strip is now inside */
+            padding: 8rem 2rem 6rem; /* Increased top padding to clear sticky header */
             overflow: hidden;
             background: var(--bg-dark);
             text-align: center;
@@ -140,6 +140,21 @@
             padding: 0 2rem;
             flex-wrap: wrap;
             gap: 1rem;
+        }
+
+        .strip-item {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .strip-item i {
+            color: var(--accent-cyan);
         }
 
         .grc-hero::after {
