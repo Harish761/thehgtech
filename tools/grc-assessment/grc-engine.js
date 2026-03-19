@@ -1191,4 +1191,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Kickoff
     loadGRCData();
+
+    // Methodology Jumper
+    window.scrollToMethodology = function() {
+        const el = document.getElementById('methodologySection');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+    };
+
 });
