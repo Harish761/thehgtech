@@ -131,6 +131,29 @@
             pointer-events: none;
         }
 
+        /* Light Mode Hero Overrides */
+        body.light-mode .grc-hero {
+            background: #fff;
+        }
+
+        body.light-mode .grc-hero::before {
+            background:
+                radial-gradient(ellipse 80% 60% at 20% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse 70% 50% at 80% 30%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+        }
+
+        body.light-mode .grc-hero::after {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+        }
+
+        body.light-mode .grc-hero-title .gradient-text {
+            background: linear-gradient(135deg, #111 0%, #8B5CF6 50%, #10B981 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
         @keyframes meshFloat {
 
             0%,
@@ -605,7 +628,7 @@
                 Triple Framework <span class="gradient-text">GRC Engine</span>
             </h1>
             <p class="grc-hero-subtitle">
-                The industry's first browser-native decision engine for <span style="color:#fff; font-weight:600;">ISO 27001:2022</span>, <span style="color:#0A84FF; font-weight:600;">NIST CSF 2.0</span>, and <span style="color:#FF9F0A; font-weight:600;">CIS v8</span>.
+                The industry's first browser-native decision engine for <span style="color:var(--text-primary); font-weight:800; border-bottom: 2px solid var(--accent-cyan-glow);">ISO 27001:2022</span>, <span style="color:#0A84FF; font-weight:800;">NIST CSF 2.0</span>, and <span style="color:#FF9F0A; font-weight:800;">CIS v8</span>.
             </p>
             <div class="hero-trust-row" style="display:flex; gap:20px; justify-content:center; margin-bottom:2.5rem; flex-wrap:wrap;">
                 <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.8rem 1.5rem; border-radius:12px; font-size:0.85rem; color:var(--text-muted);">
