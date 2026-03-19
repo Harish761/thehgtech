@@ -637,9 +637,9 @@
                 <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.8rem 1.5rem; border-radius:12px; font-size:0.85rem; color:var(--text-muted);">
                     <i class="fas fa-check-double" style="color:var(--accent-cyan); margin-right:8px;"></i> Assessment v1.2.4
                 </div>
-                <button onclick="scrollToMethodology()" style="background:rgba(139, 92, 246, 0.1); border:1px solid rgba(139, 92, 246, 0.3); padding:0.8rem 1.5rem; border-radius:12px; font-size:0.85rem; color:#A78BFA; cursor:pointer; transition:all 0.3s ease; font-family:inherit;">
+                <a href="./iso27001-grc-guide.html" target="_blank" style="background:rgba(139, 92, 246, 0.1); border:1px solid rgba(139, 92, 246, 0.3); padding:0.8rem 1.5rem; border-radius:12px; font-size:0.85rem; color:#A78BFA; cursor:pointer; transition:all 0.3s ease; font-family:inherit; text-decoration:none; display:flex; align-items:center;">
                     <i class="fas fa-book-open" style="margin-right:8px;"></i> New here? Read Methodology
-                </button>
+                </a>
             </div>
             <div class="audit-disclaimer"
                 style="margin-top: 1.5rem; background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.2); border-left: 3px solid #00d9ff; padding: 1rem 1.5rem; border-radius: 8px; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto;">
@@ -655,45 +655,6 @@
                     log samples proving you followed the process). Answering "Yes" here means you are ready to prove all
                     three.
                 </p>
-            </div>
-
-            <!-- Methodology Section / Quick KB -->
-            <div id="methodologySection" style="margin-top: 4rem; text-align: left; max-width: 1000px; margin-left: auto; margin-right: auto; padding-top: 2rem; border-top: 1px solid var(--border);">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2.5rem;">
-                    <div>
-                        <h3 style="font-family:'Outfit'; font-size:1.8rem; color:#fff; margin:0;"><i class="fas fa-book-open" style="color:#8B5CF6; margin-right:12px;"></i> Methodology & User Guide</h3>
-                        <p style="font-size:0.85rem; color:var(--text-muted); margin:5px 0 0;">Understand how to use this tool to maximize your GRC outcomes.</p>
-                    </div>
-                    <span style="font-size:0.75rem; background:rgba(139, 92, 246, 0.1); color:#A78BFA; padding:6px 16px; border-radius:30px; border:1px solid rgba(139, 92, 246, 0.3); font-family:'JetBrains Mono';">10 Min Deep-Dive</span>
-                </div>
-                
-                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:2rem;">
-                    <div style="background:rgba(255,255,255,0.02); padding:2rem; border-radius:20px; border:1px solid var(--border); transition:transform 0.3s ease;">
-                        <h4 style="color:#00D9FF; margin:0 0 12px; font-size:1.15rem; font-family:'Outfit';">1. The Scope Builder</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin:0;">
-                            Start by selecting your relevant ISO domains. If you are a startup, focus on <strong>Operational Controls</strong>. The engine dynamically maps your selections to NIST and CIS benchmarks in real-time.
-                        </p>
-                    </div>
-                    <div style="background:rgba(255,255,255,0.02); padding:2rem; border-radius:20px; border:1px solid var(--border); transition:transform 0.3s ease;">
-                        <h4 style="color:#10B981; margin:0 0 12px; font-size:1.15rem; font-family:'Outfit';">2. Assessment Logic</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin:0;">
-                            We use a <strong>Maturity Weighting</strong> model. "Full Implementation" grants 100% readiness, while "Partial" grants 50%. "Missing" identifies a critical gap and triggers the advisory remediation engine.
-                        </p>
-                    </div>
-                    <div style="background:rgba(255,255,255,0.02); padding:2rem; border-radius:20px; border:1px solid var(--border); transition:transform 0.3s ease;">
-                        <h4 style="color:#EF4444; margin:0 0 12px; font-size:1.15rem; font-family:'Outfit';">3. Why vs. Not</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin:0;">
-                            <strong>Use this for:</strong> Gap analysis, budget planning, and executive sanity checks. 
-                            <strong>Don't use for:</strong> Formal legal certification. This is a pre-audit preparation tool, not a compliance auditor.
-                        </p>
-                    </div>
-                    <div style="background:rgba(255,255,255,0.02); padding:2rem; border-radius:20px; border:1px solid var(--border); transition:transform 0.3s ease;">
-                        <h4 style="color:#8B5CF6; margin:0 0 12px; font-size:1.15rem; font-family:'Outfit';">4. Expected Exports</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin:0;">
-                            Upon completion, generate a <strong>Branded PDF</strong> for executive review or a <strong>Strategic Excel</strong> containing a priority remediation checklist with Risk & Impact analysis for technical teams.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

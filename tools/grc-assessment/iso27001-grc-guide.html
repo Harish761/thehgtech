@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO 27001 GRC Tool Methodology & User Guide | TheHGTech</title>
+    <meta name="description" content="Technical methodology and step-by-step guide for using TheHGTech's Triple Framework GRC Engine. Understand scoring, scope, and report utilization.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Base Styles (Cloned from main tool for consistency) -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../m-style.css">
+
+    <style>
+        :root {
+            --bg-dark: #050505;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+            --accent-purple: #8B5CF6;
+            --accent-cyan: #00D9FF;
+            --accent-green: #10B981;
+            --text-primary: #ffffff;
+            --text-muted: #9ca3af;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        .doc-container {
+            max-width: 900px;
+            margin: 120px auto 100px;
+            padding: 0 2rem;
+        }
+
+        .doc-header {
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+        }
+
+        .doc-header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .doc-header p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        /* Documentation Sections */
+        .doc-section {
+            margin-bottom: 5rem;
+        }
+
+        .doc-section h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .doc-section h3 {
+            font-size: 1.25rem;
+            margin: 2rem 0 1rem;
+            color: #fff;
+        }
+
+        .doc-content p {
+            margin-bottom: 1.2rem;
+            color: #d1d5db;
+        }
+
+        .doc-content ul, .doc-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: #d1d5db;
+        }
+
+        .doc-content li {
+            margin-bottom: 0.8rem;
+        }
+
+        /* Blocks */
+        .info-block {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .warning-block {
+            background: rgba(239, 68, 68, 0.05);
+            border-left: 4px solid #EF4444;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .tip-block {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .step-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--accent-purple);
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.9rem;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(255,255,255,0.05);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent-purple);
+        }
+
+        .methodology-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: rgba(255,255,255,0.02);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .methodology-table th, .methodology-table td {
+            text-align: left;
+            padding: 1.2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .methodology-table th {
+            background: rgba(255,255,255,0.05);
+            color: var(--accent-cyan);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Sidebar / Jump Navigation */
+        .doc-sidebar {
+            position: fixed;
+            right: 2rem;
+            top: 15rem;
+            width: 250px;
+            display: none;
+        }
+
+        @media (min-width: 1400px) {
+            .doc-sidebar { display: block; }
+        }
+
+        .side-nav-item {
+            display: block;
+            padding: 8px 0;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .side-nav-item:hover { color: var(--accent-cyan); }
+
+        /* Light Mode Support */
+        body.light-mode {
+            background: #fff;
+            color: #1a1a1a;
+        }
+        body.light-mode .doc-header h1 {
+            background: linear-gradient(135deg, #111 0%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+        }
+        body.light-mode .doc-section h3, body.light-mode .doc-section h2 { color: #000; }
+        body.light-mode .doc-content p, body.light-mode .doc-content li { color: #4b5563; }
+        body.light-mode .step-card { background: #f9fafb; border-color: #e5e7eb; }
+
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Header (Same as GRC Engine) -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../../index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="../../logo-dark.png" class="logo-img logo-dark" width="40">
+                    <img src="../../logo-light.png" class="logo-img logo-light" width="40">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="./index.html" style="color:var(--accent-cyan); font-weight:700;"><i class="fas fa-arrow-left"></i> Back to GRC Tool</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="doc-container">
+        
+        <header class="doc-header">
+            <h1>GRC Tool User Guide</h1>
+            <p>Mastering the ISO 27001 readiness engine for enterprise-grade compliance audits.</p>
+        </header>
+
+        <!-- 1. Introduction -->
+        <section class="doc-section" id="intro">
+            <h2><i class="fas fa-rocket"></i> What is the GRC Engine?</h2>
+            <div class="doc-content">
+                <p>
+                    TheHGTech Triple Framework GRC Engine is a browser-native assessment platform designed to bridge the gap between 
+                    <strong>technical implementation</strong> and <strong>regulatory compliance</strong>. It allows security teams to 
+                    map their baseline posture against ISO 27001:2022, NIST CSF 2.0, and CIS Controls v8 within a single session.
+                </p>
+                <div class="info-block">
+                    <strong>Value Proposition:</strong> Most GRC tools are expensive, slow, and cloud-heavy. Our engine is FREE, 100% serverless, and provides decision-grade advice in under 15 minutes.
+                </div>
+                <h3>What it DOES:</h3>
+                <ul>
+                    <li>Identifies missing technical and organizational controls.</li>
+                    <li>Maps ISO 27001 domains to CIS v8 technical safeguards.</li>
+                    <li>Calculates maturity levels for executive-ready decision making.</li>
+                    <li>Generates prioritized remediation reports for IT teams.</li>
+                </ul>
+                <h3>What it DOES NOT:</h3>
+                <div class="warning-block">
+                    <p><strong>Formal Auditor Status:</strong> This tool is a <em>Self-Assessment Engine</em>. While it uses current regulatory benchmarks, it is NOT a substitute for a formal external audit by a Certified Lead Auditor.</p>
+                    <p><strong>Evidence Storage:</strong> To maintain strict privacy, we do NOT store your sensitive evidence documents. This is a gap assessment tool, not a full GRC evidence repository like Vanta or Drata.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Step by Step -->
+        <section class="doc-section" id="how-to">
+            <h2><i class="fas fa-list-ol"></i> Step-by-Step Assessment</h2>
+            <div class="doc-content">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Define Your Scope</h3>
+                    <p>Launch the <strong>Dynamic Scope Builder</strong>. Toggle ISO 27001:2022 domains relevant to your environment. Startups typically focus on <em>Operational Controls (Domain 5-8)</em>, while established firms should audit all 93 controls.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Executive Response Mode</h3>
+                    <p>For each control, answering <strong>YES</strong> assumes you have both a documented policy and proof of implementation. Answering <strong>PARTIAL</strong> implies the control exists but lacks consistent monitoring or formal documentation.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Contextual Rationale</h3>
+                    <p>Use the <strong>"Consultant Insight"</strong> toggle to see WHY a control belongs in your scope. This helps non-GRC managers understand the technical risk behind abstract compliance requirements.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Calculation Methodology -->
+        <section class="doc-section" id="methodology">
+            <h2><i class="fas fa-calculator"></i> The Scoring Methodology</h2>
+            <div class="doc-content">
+                <p>Our scoring algorithm uses a <strong>Weighted Maturity Model</strong> to ensure your results represent real-world exposure rather than just "box ticking."</p>
+                <table class="methodology-table">
+                    <thead>
+                        <tr>
+                            <th>Response Status</th>
+                            <th>Weighting</th>
+                            <th>Risk Implication</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Implemented (Yes)</td>
+                            <td>100%</td>
+                            <td>Control is verified and monitored. Low residual risk.</td>
+                        </tr>
+                        <tr>
+                            <td>Partial</td>
+                            <td>50%</td>
+                            <td>Control exists but is fragile or undocumented. Moderate risk.</td>
+                        </tr>
+                        <tr>
+                            <td>Gap (No)</td>
+                            <td>0%</td>
+                            <td>Control is missing. High risk exposure detected.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Framework Indicators:</h3>
+                <ul>
+                    <li><strong>ISO 27001:2022:</strong> Readiness percentage based on the Annex A 93-control set.</li>
+                    <li><strong>NIST CSF 2.0:</strong> Alignment based on 106 subcategories across the Core functions.</li>
+                    <li><strong>CIS Controls v8:</strong> Hygiene score calculated against 153 technical safeguards.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 4. Reports & Reports -->
+        <section class="doc-section" id="reports">
+            <h2><i class="fas fa-file-export"></i> Utilizing Your Reports</h2>
+            <div class="doc-content">
+                <p>Once you reach the <strong>Executive Readiness Dashboard</strong>, you have two strategic outputs:</p>
+                
+                <h3>A. The Branded PDF Report</h3>
+                <p>Designed for boardrooms and CISOs. This report includes the <strong>Maturity Interpretation</strong> which translates raw scores into business risk categories (Initial, Developing, or Mature).</p>
+                
+                <h3>B. The Strategic Excel Registry</h3>
+                <p>Designed for technical teams. This file contains the <strong>Priority Remediation Checklist</strong>. Filter this list by "Risk Level" to assign your top 3 fixes to your DevOps or IT infrastructure team immediately.</p>
+
+                <div class="tip-block">
+                    <strong>ISO Kickstart Tip:</strong> Use the Excel export as your <em>Statement of Applicability (SoA)</em> draft. It already contains the control titles, current implementation status, and remediation logic required for the official ISO certification process.
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <aside class="doc-sidebar">
+        <h4 style="font-size:0.7rem; color:var(--accent-purple); text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Documentation</h4>
+        <nav>
+            <a href="#intro" class="side-nav-item">Introduction</a>
+            <a href="#how-to" class="side-nav-item">Step-by-Step Guide</a>
+            <a href="#methodology" class="side-nav-item">Scoring Logic</a>
+            <a href="#reports" class="side-nav-item">Report Utilization</a>
+        </nav>
+    </aside>
+
+    <script src="../../theme-toggle.js"></script>
+</body>
+</html>
