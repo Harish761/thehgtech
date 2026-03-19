@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-03-19T02:24:29.333995",
+  "last_updated": "2026-03-19T13:06:36.938322",
   "period": "Last 7 days",
   "total_groups": 32,
-  "total_victims": 251,
+  "total_victims": 249,
   "groups": [
     {
       "name": "Qilin",
@@ -278,8 +278,98 @@
       ]
     },
     {
-      "name": "Handala",
+      "name": "Coinbasecartel",
       "count": 18,
+      "victims": [
+        {
+          "name": "Verimatrix",
+          "date": "2026-03-19 12:57:10.846040",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/security-software",
+          "discovered_date": "2026-03-19T12:57:10.846040"
+        },
+        {
+          "name": "Ariston",
+          "date": "2026-03-19 12:56:32.089542",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/ariston",
+          "discovered_date": "2026-03-19T12:56:32.089542"
+        },
+        {
+          "name": "Petra Industries",
+          "date": "2026-03-19 12:55:51.719629",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/petra",
+          "discovered_date": "2026-03-19T12:55:51.719629"
+        },
+        {
+          "name": "ATG - New samples added",
+          "date": "2026-03-15 02:10:32.807050",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/atg",
+          "discovered_date": "2026-03-15T02:10:32.807050"
+        },
+        {
+          "name": "ILLUMINA - Data uploaded",
+          "date": "2026-03-15 02:10:11.034144",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/illumina",
+          "discovered_date": "2026-03-15T02:10:11.034144"
+        },
+        {
+          "name": "Dolby Laboratories - Sample",
+          "date": "2026-03-15 02:09:45.075894",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/dolby",
+          "discovered_date": "2026-03-15T02:09:45.075894"
+        },
+        {
+          "name": "Augenomics",
+          "date": "2026-03-15 02:08:59.098622",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/aug",
+          "discovered_date": "2026-03-15T02:08:59.098622"
+        },
+        {
+          "name": "nChroma Bio",
+          "date": "2026-03-15 02:08:22.187252",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/nchroma",
+          "discovered_date": "2026-03-15T02:08:22.187252"
+        },
+        {
+          "name": "Geno Bank",
+          "date": "2026-03-15 02:08:02.178185",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/genobank",
+          "discovered_date": "2026-03-15T02:08:02.178185"
+        },
+        {
+          "name": "Neochromosome",
+          "date": "2026-03-15 02:07:43.640887",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/neo",
+          "discovered_date": "2026-03-15T02:07:43.640887"
+        }
+      ],
+      "industries": [
+        "Financial Services",
+        "Healthcare",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "CN",
+        "DE",
+        "IT",
+        "N/A",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        15,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "name": "Handala",
+      "count": 17,
       "victims": [
         {
           "name": "Martyr Ali Larijani",
@@ -362,95 +452,6 @@
         4,
         6,
         2,
-        0
-      ]
-    },
-    {
-      "name": "Coinbasecartel",
-      "count": 16,
-      "victims": [
-        {
-          "name": "ATG - New samples added",
-          "date": "2026-03-15 02:10:32.807050",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/atg",
-          "discovered_date": "2026-03-15T02:10:32.807050"
-        },
-        {
-          "name": "ILLUMINA - Data uploaded",
-          "date": "2026-03-15 02:10:11.034144",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/illumina",
-          "discovered_date": "2026-03-15T02:10:11.034144"
-        },
-        {
-          "name": "Dolby Laboratories - Sample",
-          "date": "2026-03-15 02:09:45.075894",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/dolby",
-          "discovered_date": "2026-03-15T02:09:45.075894"
-        },
-        {
-          "name": "Augenomics",
-          "date": "2026-03-15 02:08:59.098622",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/aug",
-          "discovered_date": "2026-03-15T02:08:59.098622"
-        },
-        {
-          "name": "nChroma Bio",
-          "date": "2026-03-15 02:08:22.187252",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/nchroma",
-          "discovered_date": "2026-03-15T02:08:22.187252"
-        },
-        {
-          "name": "Geno Bank",
-          "date": "2026-03-15 02:08:02.178185",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/genobank",
-          "discovered_date": "2026-03-15T02:08:02.178185"
-        },
-        {
-          "name": "Neochromosome",
-          "date": "2026-03-15 02:07:43.640887",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/neo",
-          "discovered_date": "2026-03-15T02:07:43.640887"
-        },
-        {
-          "name": "Novogene",
-          "date": "2026-03-15 02:07:23.930457",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/novo",
-          "discovered_date": "2026-03-15T02:07:23.930457"
-        },
-        {
-          "name": "ATG - New samples added",
-          "date": "2026-03-15T02:10:32+00:00",
-          "url": "https://www.ransomware.live/id/QVRHIC0gTmV3IHNhbXBsZXMgYWRkZWRAY29pbmJhc2VjYXJ0ZWw=",
-          "discovered_date": "2026-03-15T02:10:32+00:00"
-        },
-        {
-          "name": "ILLUMINA - Data uploaded",
-          "date": "2026-03-15T02:10:11+00:00",
-          "url": "https://www.ransomware.live/id/SUxMVU1JTkEgLSBEYXRhIHVwbG9hZGVkQGNvaW5iYXNlY2FydGVs",
-          "discovered_date": "2026-03-15T02:10:11+00:00"
-        }
-      ],
-      "industries": [
-        "Financial Services",
-        "Healthcare",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "CN",
-        "DE",
-        "N/A",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        16,
-        0,
-        0,
-        0,
         0
       ]
     },
@@ -634,95 +635,6 @@
       ]
     },
     {
-      "name": "Payload",
-      "count": 14,
-      "victims": [
-        {
-          "name": "Royal Bahrain Hospital",
-          "date": "2026-03-15 12:08:25.980414",
-          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/c08cd55e-7711-400a-8d91-c546b5a3371e",
-          "discovered_date": "2026-03-15T12:08:25.980414"
-        },
-        {
-          "name": "J.T. Pack of Foods",
-          "date": "2026-03-14 20:39:41.978057",
-          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/188a4771-c8b6-4d4e-8efa-cde5c8209df4",
-          "discovered_date": "2026-03-14T20:39:41.978057"
-        },
-        {
-          "name": "Grid Fine Finishes",
-          "date": "2026-03-14 20:39:23.119513",
-          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/0c6c34ce-4bc2-44b3-8b80-428063f70320",
-          "discovered_date": "2026-03-14T20:39:23.119513"
-        },
-        {
-          "name": "Alcoholes Finos Dominicanos",
-          "date": "2026-03-14 20:39:05.023161",
-          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/8df99e1b-c079-4a65-bd97-e29623897727",
-          "discovered_date": "2026-03-14T20:39:05.023161"
-        },
-        {
-          "name": "Royal Bahrain Hospital",
-          "date": "2026-03-15T12:08:25+00:00",
-          "url": "https://www.ransomware.live/id/Um95YWwgQmFocmFpbiBIb3NwaXRhbEBwYXlsb2Fk",
-          "discovered_date": "2026-03-15T12:08:25+00:00"
-        },
-        {
-          "name": "J.T. Pack of Foods",
-          "date": "2026-03-14T20:39:41+00:00",
-          "url": "https://www.ransomware.live/id/Si5ULiBQYWNrIG9mIEZvb2RzQHBheWxvYWQ=",
-          "discovered_date": "2026-03-14T20:39:41+00:00"
-        },
-        {
-          "name": "Grid Fine Finishes",
-          "date": "2026-03-14T20:39:23+00:00",
-          "url": "https://www.ransomware.live/id/R3JpZCBGaW5lIEZpbmlzaGVzQHBheWxvYWQ=",
-          "discovered_date": "2026-03-14T20:39:23+00:00"
-        },
-        {
-          "name": "Alcoholes Finos Dominicanos",
-          "date": "2026-03-14T20:39:05+00:00",
-          "url": "https://www.ransomware.live/id/QWxjb2hvbGVzIEZpbm9zIERvbWluaWNhbm9zQHBheWxvYWQ=",
-          "discovered_date": "2026-03-14T20:39:05+00:00"
-        },
-        {
-          "name": "In.Sa.Cor",
-          "date": "2026-03-14T20:38:47+00:00",
-          "url": "https://www.ransomware.live/id/SW4uU2EuQ29yQHBheWxvYWQ=",
-          "discovered_date": "2026-03-14T20:38:47+00:00"
-        },
-        {
-          "name": "Easy Servizi",
-          "date": "2026-03-14T20:38:08+00:00",
-          "url": "https://www.ransomware.live/id/RWFzeSBTZXJ2aXppQHBheWxvYWQ=",
-          "discovered_date": "2026-03-14T20:38:08+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Healthcare",
-        "Not Found"
-      ],
-      "countries": [
-        "BH",
-        "DO",
-        "GB",
-        "IT",
-        "N/A"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        12,
-        2,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Nightspire",
       "count": 11,
       "victims": [
@@ -803,6 +715,93 @@
         0,
         0,
         6,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Payload",
+      "count": 11,
+      "victims": [
+        {
+          "name": "Royal Bahrain Hospital",
+          "date": "2026-03-15 12:08:25.980414",
+          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/c08cd55e-7711-400a-8d91-c546b5a3371e",
+          "discovered_date": "2026-03-15T12:08:25.980414"
+        },
+        {
+          "name": "Royal Bahrain Hospital",
+          "date": "2026-03-15T12:08:25+00:00",
+          "url": "https://www.ransomware.live/id/Um95YWwgQmFocmFpbiBIb3NwaXRhbEBwYXlsb2Fk",
+          "discovered_date": "2026-03-15T12:08:25+00:00"
+        },
+        {
+          "name": "J.T. Pack of Foods",
+          "date": "2026-03-14T20:39:41+00:00",
+          "url": "https://www.ransomware.live/id/Si5ULiBQYWNrIG9mIEZvb2RzQHBheWxvYWQ=",
+          "discovered_date": "2026-03-14T20:39:41+00:00"
+        },
+        {
+          "name": "Grid Fine Finishes",
+          "date": "2026-03-14T20:39:23+00:00",
+          "url": "https://www.ransomware.live/id/R3JpZCBGaW5lIEZpbmlzaGVzQHBheWxvYWQ=",
+          "discovered_date": "2026-03-14T20:39:23+00:00"
+        },
+        {
+          "name": "Alcoholes Finos Dominicanos",
+          "date": "2026-03-14T20:39:05+00:00",
+          "url": "https://www.ransomware.live/id/QWxjb2hvbGVzIEZpbm9zIERvbWluaWNhbm9zQHBheWxvYWQ=",
+          "discovered_date": "2026-03-14T20:39:05+00:00"
+        },
+        {
+          "name": "In.Sa.Cor",
+          "date": "2026-03-14T20:38:47+00:00",
+          "url": "https://www.ransomware.live/id/SW4uU2EuQ29yQHBheWxvYWQ=",
+          "discovered_date": "2026-03-14T20:38:47+00:00"
+        },
+        {
+          "name": "Easy Servizi",
+          "date": "2026-03-14T20:38:08+00:00",
+          "url": "https://www.ransomware.live/id/RWFzeSBTZXJ2aXppQHBheWxvYWQ=",
+          "discovered_date": "2026-03-14T20:38:08+00:00"
+        },
+        {
+          "name": "Thai Solar Energy Public",
+          "date": "2026-03-14T20:37:50+00:00",
+          "url": "https://www.ransomware.live/id/VGhhaSBTb2xhciBFbmVyZ3kgUHVibGljQHBheWxvYWQ=",
+          "discovered_date": "2026-03-14T20:37:50+00:00"
+        },
+        {
+          "name": "United Limsun International Trading",
+          "date": "2026-03-14T20:37:32+00:00",
+          "url": "https://www.ransomware.live/id/VW5pdGVkIExpbXN1biBJbnRlcm5hdGlvbmFsIFRyYWRpbmdAcGF5bG9hZA==",
+          "discovered_date": "2026-03-14T20:37:32+00:00"
+        },
+        {
+          "name": "Tyler Media",
+          "date": "2026-03-14T20:37:13+00:00",
+          "url": "https://www.ransomware.live/id/VHlsZXIgTWVkaWFAcGF5bG9hZA==",
+          "discovered_date": "2026-03-14T20:37:13+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "BH",
+        "DO",
+        "GB",
+        "IT",
+        "N/A"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        9,
+        2,
+        0,
+        0,
         0,
         0
       ]
@@ -1185,48 +1184,6 @@
       ]
     },
     {
-      "name": "Ailock",
-      "count": 3,
-      "victims": [
-        {
-          "name": "Solutions Extreme Technology",
-          "date": "2026-03-17 13:44:53.176392",
-          "url": "",
-          "discovered_date": "2026-03-17T13:44:53.176392"
-        },
-        {
-          "name": "Solutions Extreme Technology",
-          "date": "2026-03-17T13:44:53+00:00",
-          "url": "https://www.ransomware.live/id/U29sdXRpb25zIEV4dHJlbWUgVGVjaG5vbG9neUBBaUxvY2s=",
-          "discovered_date": "2026-03-17T13:44:53+00:00"
-        },
-        {
-          "name": "England Hockey",
-          "date": "2026-03-12T08:41:35+00:00",
-          "url": "https://www.ransomware.live/id/RW5nbGFuZCBIb2NrZXlAQWlMb2Nr",
-          "discovered_date": "2026-03-12T08:41:35+00:00"
-        }
-      ],
-      "industries": [
-        "Technology"
-      ],
-      "countries": [
-        "CA",
-        "GB"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        2,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Chaos",
       "count": 3,
       "victims": [
@@ -1365,6 +1322,41 @@
       ],
       "countries": [
         "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Ailock",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Solutions Extreme Technology",
+          "date": "2026-03-17 13:44:53.176392",
+          "url": "",
+          "discovered_date": "2026-03-17T13:44:53.176392"
+        },
+        {
+          "name": "Solutions Extreme Technology",
+          "date": "2026-03-17T13:44:53+00:00",
+          "url": "https://www.ransomware.live/id/U29sdXRpb25zIEV4dHJlbWUgVGVjaG5vbG9neUBBaUxvY2s=",
+          "discovered_date": "2026-03-17T13:44:53+00:00"
+        }
+      ],
+      "industries": [
+        "Technology"
+      ],
+      "countries": [
+        "CA"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1589,6 +1581,41 @@
       ]
     },
     {
+      "name": "Spacebears",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Bonheure",
+          "date": "2026-03-19 06:22:48.883553",
+          "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/122/bonheure",
+          "discovered_date": "2026-03-19T06:22:48.883553"
+        },
+        {
+          "name": "Bonheure",
+          "date": "2026-03-19T06:22:48+00:00",
+          "url": "https://www.ransomware.live/id/Qm9uaGV1cmVAc3BhY2ViZWFycw==",
+          "discovered_date": "2026-03-19T06:22:48+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Beast",
       "count": 2,
       "victims": [
@@ -1729,33 +1756,6 @@
       "trend_percentage": -5,
       "daily_counts": [
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Spacebears",
-      "count": 1,
-      "victims": [
-        {
-          "name": "AbelZeta",
-          "date": "2026-03-12T06:40:05+00:00",
-          "url": "https://www.ransomware.live/id/QWJlbFpldGFAc3BhY2ViZWFycw==",
-          "discovered_date": "2026-03-12T06:40:05+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "BA"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
         0,
         0,
         0,
