@@ -5,6 +5,69 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 20 2026",
+            "headline": "Eclypsium Secures $25M to Boost Supply Chain Defense",
+            "title": "Eclypsium Secures $25 Million to Enhance Device Supply Chain Security",
+            "content": "Eclypsium has announced a successful $25 million funding round aimed at enhancing its platform&#x27;s capabilities for device supply chain security. The investment will be used to expand Eclypsium&#x27;s offerings and strengthen channel partnerships, addressing the growing need for robust supply chain defenses in the face of increasing cyber threats. This move comes as supply chain attacks continue to pose significant risks to enterprises globally. Security professionals are encouraged to evaluate their current supply chain security measures and consider solutions that offer comprehensive protection against potential vulnerabilities. Eclypsium&#x27;s platform focuses on firmware security, a critical yet often overlooked aspect of device security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/eclypsium-raises-25-million-for-device-supply-chain-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "Interlock Ransomware Exploits Cisco Firewall Flaw—Patch Urgently",
+            "title": "Interlock Ransomware Exploits Undisclosed Cisco Firewall Vulnerability",
+            "content": "Interlock, a ransomware group known for its double-extortion tactics, has been exploiting a critical vulnerability in Cisco enterprise firewalls weeks before its public disclosure. The flaw, which remains unnamed, allowed attackers to bypass defenses and deploy ransomware, impacting organizations relying on Cisco&#x27;s security infrastructure. This incident underscores the importance of timely vulnerability management and patching protocols. Organizations using Cisco firewalls should prioritize updates and review their incident response strategies to mitigate potential breaches. The attack highlights the persistent threat posed by ransomware groups targeting critical infrastructure.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/interlock-ransomware-targets-cisco-enterprise-firewalls",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "US Links Handala to Iran—Seizes Hacker Domains",
+            "title": "US Confirms Handala&#x27;s Iranian Ties Amid Domain Seizures",
+            "content": "The United States government has confirmed that the hacker collective Handala is linked to the Iranian government, following the seizure of several domains used in cyber-enabled psychological operations. This action is part of a broader effort to disrupt state-sponsored cyber activities aimed at influencing public opinion and destabilizing geopolitical adversaries. The seizure of these domains is a significant move in curbing the group&#x27;s operations, which have targeted various sectors globally. Security experts advise monitoring for communications from these domains and updating threat intelligence databases accordingly. This development highlights the ongoing cyber conflict involving nation-state actors.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/us-confirms-handala-link-to-iran-government-amid-takedown-of-hackers-sites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "Global Crackdown Dismantles Two Largest DDoS Botnets",
+            "title": "International Effort Dismantles World&#x27;s Largest DDoS Botnets",
+            "content": "In a coordinated operation, security agencies from North America and Germany have successfully dismantled two of the world&#x27;s largest botnets responsible for launching Distributed Denial of Service (DDoS) attacks. These botnets had been exploiting vulnerable devices worldwide, causing significant disruptions across various sectors. The takedown is a major victory in the ongoing battle against cybercrime, reducing the capacity for large-scale DDoS attacks. Organizations are urged to implement robust DDoS protection measures and regularly update their network defenses. This operation underscores the importance of international collaboration in combating cyber threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4148087/ddos-attacken-schlag-gegen-internationale-cyberkriminelle.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "Fake Job Offers on Google Forms Spread Malware",
+            "title": "Google Forms Used to Spread PureHVNC Malware via Fake Job Offers",
+            "content": "Cybercriminals are exploiting Google Forms to distribute PureHVNC malware through fraudulent job offers, posing a significant risk to job seekers. The malware grants attackers remote access to infected devices, allowing them to steal sensitive information and control systems. This tactic highlights the increasing sophistication of social engineering attacks targeting individuals during job searches. Users are advised to verify job offers independently and employ robust endpoint protection solutions. This incident serves as a reminder to remain vigilant against phishing schemes and to scrutinize unsolicited communications.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/03/that-job-brief-on-google-forms-could-infect-your-device",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "Navia Breach Exposes 2.7M Users&#x27; Health Data",
+            "title": "Navia Data Breach Compromises Personal and Health Information of 2.7 Million",
+            "content": "Navia has suffered a data breach affecting 2.7 million individuals, with attackers stealing personal and health plan information between late December 2025 and mid-January 2026. The breach highlights vulnerabilities in data protection measures and impacts users relying on Navia for health-related services. Affected individuals are at risk of identity theft and should monitor their accounts for unusual activity. Navia is working with authorities to investigate the breach and enhance security protocols. This incident underscores the critical need for robust data security practices in the healthcare sector.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/navia-data-breach-impacts-2-7-million/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "Google Delays Unverified App Installs to Curb Malware",
+            "title": "Google Introduces 24-Hour Wait for Unverified Android App Sideloading",
+            "content": "Google has announced a new security measure requiring a 24-hour wait period for sideloading apps from unverified developers on Android devices. This &quot;advanced flow&quot; aims to reduce the risk of malware and scams while maintaining the platform&#x27;s openness. The change comes as part of Google&#x27;s broader efforts to enhance developer verification and protect users from malicious software. Android users should be aware of this new protocol and plan app installations accordingly. This initiative reflects Google&#x27;s ongoing commitment to balancing user safety with platform flexibility.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/google-adds-24-hour-wait-for-unverified.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
             "headline": "ISC Stormcast Highlights March 2026 Cyber Threats",
             "title": "SANS Internet Storm Center Discusses Emerging Cybersecurity Trends and Threats",
             "content": "The SANS Internet Storm Center released its latest Stormcast podcast, highlighting key cybersecurity threats and trends for March 2026. The InfoCON level remains at green, indicating a stable threat environment. Topics discussed include recent vulnerabilities in widely used software and the importance of patch management to mitigate risks. The podcast also emphasizes the growing concern about the security of Internet of Things (IoT) devices and the need for improved network defenses. IT professionals are encouraged to stay informed about emerging threats and ensure their systems are up-to-date. This ongoing analysis provides valuable insights for cybersecurity practitioners.",
@@ -31,42 +94,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Mar 19 2026",
-            "headline": "Pro-Iranian Hack Prompts CISA Endpoint Warning",
-            "title": "CISA Warns IT to Secure Endpoints After Pro-Iranian Cyberattack",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning following a cyberattack on medical supplies provider Stryker by the pro-Iranian group Handala. CISA advises organizations to harden their endpoint management systems to prevent similar breaches. This attack highlights the persistent threat posed by nation-state actors targeting critical infrastructure. IT leaders are urged to review and enhance their security configurations, focusing on access controls and monitoring capabilities. The incident serves as a reminder of the importance of proactive cybersecurity measures in protecting sensitive healthcare data.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4147833/cisa-urges-it-to-harden-endpoint-management-systems-after-cyberattack-by-pro-iranian-group.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 19 2026",
-            "headline": "Vulnerable KVM Devices Threaten Network Security",
-            "title": "Security Flaws in Low-Cost KVM Devices Pose Remote Compromise Risk",
-            "content": "Researchers have identified nine vulnerabilities in four popular low-cost KVM-over-IP devices, raising concerns about their security in business environments. These vulnerabilities include unauthenticated command injection and weak authentication defenses, which could allow attackers to remotely compromise networks. The flaws highlight the risks associated with using budget devices that lack robust security features. Organizations are advised to evaluate the security of their KVM devices and apply patches or consider more secure alternatives. This discovery underscores the importance of scrutinizing third-party hardware for potential security weaknesses.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4147874/that-cheap-kvm-device-could-expose-your-network-to-remote-compromise.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 19 2026",
-            "headline": "MCP Security Risks in LLMs—Structural Challenges Persist",
-            "title": "AI Security Risks: MCP Vulnerabilities in Large Language Models",
-            "content": "At the RSAC 2026 Conference, researchers highlighted the inherent security risks introduced by Model-Centric Programming (MCP) within Large Language Models (LLMs). These vulnerabilities are architectural and cannot be easily patched, posing ongoing challenges for AI security. The discussion emphasized the need for new security paradigms to address these structural issues. Organizations leveraging AI technologies must remain vigilant and explore innovative approaches to secure their AI environments. This revelation calls for a re-evaluation of current AI deployment strategies to mitigate potential risks effectively.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/mcp-security-patched",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 19 2026",
-            "headline": "Zero Trust Faces AI Era Challenges—Adapt or Fall Behind",
-            "title": "The Viability of Zero Trust Amid Rapid AI-Driven Cyber Threats",
-            "content": "As artificial intelligence accelerates cyberattack capabilities, the Zero Trust security model faces new challenges. The rapid evolution of AI-driven threats requires organizations to reconsider their security strategies, balancing the deployment of semi-autonomous AI agents with traditional defenses. The discussion focuses on the adaptability of Zero Trust principles in this changing landscape. IT leaders must assess the trade-offs and potential benefits of integrating AI into their security frameworks. This ongoing debate highlights the need for continuous innovation in cybersecurity to keep pace with emerging technologies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ai-zero-trust-security-federal-agencies-elastic-public-sector/",
-            "relatedResources": []
-        },
-        {
             "date": "Mar 23 2026",
             "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
             "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
@@ -77,6 +104,69 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Mar 20 2026",
+            "headline": "AI Backlash Grows—Public Skepticism Challenges Tech Giants",
+            "title": "Cultural Disconnect Fuels Public Distrust of AI Technologies",
+            "content": "Amidst the rapid deployment of artificial intelligence across industries, a growing cultural disconnect is fueling public skepticism. While companies are eager to integrate AI, many individuals express concerns about privacy, job displacement, and ethical implications. This disconnect highlights the need for transparent communication and ethical guidelines to bridge the gap between AI developers and the public. Companies must address these concerns to avoid potential backlash and ensure the responsible use of AI technologies. Understanding and mitigating these fears is crucial for fostering trust and acceptance of AI innovations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/897900/ai-trust-gap-killer-app-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "AI Data Centers Strain Power—Energy Tech Investment Surge",
+            "title": "Energy Tech Emerges as Key Investment Amid AI Data Center Expansion",
+            "content": "The expansion of AI data centers is placing unprecedented demands on power infrastructure, creating a lucrative opportunity for energy technology investments. As AI workloads increase, the need for efficient energy solutions becomes critical, with power availability emerging as a bottleneck. Investors are now eyeing energy tech innovations that promise to enhance power efficiency and sustainability. This trend underscores the intersection of AI and energy sectors, as companies seek to balance technological advancement with environmental responsibility. Professionals in the field should consider the implications of energy constraints on AI scalability and sustainability.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/20/the-best-ai-investment-might-be-in-energy-tech/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "OpenAI&#x27;s Ambitious Quest—Automated Researcher in Development",
+            "title": "OpenAI Aims to Revolutionize Research with Automated AI Agent",
+            "content": "OpenAI is channeling its resources into developing an automated AI researcher capable of independently solving complex problems. This ambitious project involves creating an agent-based system designed to tackle large-scale challenges without human intervention. The initiative reflects OpenAI&#x27;s commitment to pushing the boundaries of artificial intelligence, potentially transforming research methodologies across various fields. However, the endeavor raises questions about the ethical and practical implications of autonomous AI systems. Stakeholders should monitor developments closely, as this technology could redefine the landscape of scientific research and innovation.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "AI Notetakers—Transforming Meeting Efficiency and Accessibility",
+            "title": "AI-Powered Notetaking Devices Enhance Meeting Productivity and Inclusivity",
+            "content": "AI notetaking devices are revolutionizing how meetings are documented by transcribing audio and providing summaries and action items. Some devices even offer live translation, improving accessibility for multilingual teams. These tools leverage AI to streamline workflows, enhance productivity, and ensure that critical information is captured accurately. As remote and hybrid work environments become more prevalent, the demand for such technologies is expected to grow. Professionals should consider integrating AI notetaking solutions to optimize meeting outcomes and facilitate effective communication across diverse teams.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/20/ai-notetaker-hardware-devices-pins-pendants-record-transcribe/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "Food-Tracking Apps—AI Boosts Nutrition Goals, Raises Concerns",
+            "title": "AI-Enhanced Food-Tracking Apps Offer Benefits and Drawbacks",
+            "content": "AI-powered food-tracking apps are proving beneficial for users aiming to meet caloric and nutritional goals by utilizing computer vision and data analytics. However, these apps can also induce anxiety in some users, highlighting the importance of balanced usage. The technology&#x27;s ability to provide detailed dietary insights is transforming personal health management, yet it underscores the need for mindful engagement with health data. Users and developers should be aware of the psychological impact and strive for features that promote healthy relationships with food tracking.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/food-tracking-apps-ai-nutrition-weight-loss/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "AI Agent&#x27;s LinkedIn Triumph—Banned After Success",
+            "title": "AI Agent&#x27;s LinkedIn Success Highlights Social Media Challenges",
+            "content": "An AI agent designed as a &#x27;cofounder&#x27; achieved significant engagement on LinkedIn before being banned, raising questions about AI&#x27;s role in social media. The incident highlights the tension between AI-driven automation and platform policies, as social media companies grapple with the implications of AI participation. This case underscores the need for clear guidelines on AI interactions in digital spaces to prevent misuse while harnessing AI&#x27;s potential for networking and business development. Professionals should consider the ethical and regulatory aspects of AI in social networking.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/linkedin-invited-my-ai-cofounder-to-give-a-corporate-talk-then-banned-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 19 2026",
+            "headline": "Meta Security Breach—AI Error Exposes Sensitive Data",
+            "title": "AI-Induced Security Incident at Meta Raises Concerns",
+            "content": "A rogue AI agent at Meta led to a significant security incident, granting employees unauthorized access to sensitive data for nearly two hours. The breach occurred after the AI provided incorrect technical advice, exposing vulnerabilities in AI-driven decision-making processes. Meta&#x27;s response emphasizes the need for robust oversight and safeguards when deploying AI systems in critical environments. This incident serves as a cautionary tale for organizations relying on AI, highlighting the importance of stringent validation and monitoring to prevent similar occurrences.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/897528/meta-rogue-ai-agent-security-incident",
+            "relatedResources": []
+        },
         {
             "date": "Mar 20 2026",
             "headline": "Anthropic&#x27;s Claude Invades Chat Platforms—OpenClaw Rival Emerges",
@@ -93,51 +183,6 @@ const websiteContent = {
             "content": "OpenAI is developing a desktop &quot;superapp&quot; that consolidates its ChatGPT, Codex AI coding app, and AI-powered Atlas browser into a single platform. This strategic move aims to streamline OpenAI&#x27;s product offerings and provide users with a unified experience. The integration is expected to simplify workflows for developers and tech professionals by offering a comprehensive suite of AI tools in one application. As OpenAI continues to innovate, this superapp could set a new standard for AI product ecosystems, potentially influencing how AI tools are packaged and delivered in the tech industry.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/897778/openai-chatgpt-codex-atlas-browser-superapp",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 19 2026",
-            "headline": "Bezos Eyes $100B AI Overhaul for Manufacturing",
-            "title": "Jeff Bezos Seeks $100 Billion to Transform Manufacturing with AI",
-            "content": "Jeff Bezos is reportedly seeking $100 billion to acquire and modernize old manufacturing firms using AI technologies. This ambitious project underscores a significant shift towards integrating AI into traditional industries to enhance efficiency and productivity. By leveraging AI, Bezos aims to revolutionize manufacturing processes, potentially setting new benchmarks for industrial innovation. If successful, this initiative could attract further investment in AI-driven transformations across various sectors, highlighting the growing influence of AI in reshaping established industries.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/19/jeff-bezos-reportedly-wants-100-billion-to-buy-and-transform-old-manufacturing-firms-with-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 19 2026",
-            "headline": "Nvidia&#x27;s AI Showcase—Tesla and Meta&#x27;s Mixed Signals",
-            "title": "Nvidia&#x27;s Developer Conference Highlights AI Future Amid Tesla and Meta Challenges",
-            "content": "Nvidia&#x27;s annual developer conference, dubbed the &quot;Super Bowl of AI,&quot; showcased the company&#x27;s latest advancements and future direction under CEO Jensen Huang. While Nvidia impressed with its AI innovations, Tesla&#x27;s presentation fell short of expectations, and Meta announced a shutdown of its VR Metaverse project. Nvidia&#x27;s focus on AI underscores its leadership in the field, but the mixed outcomes from Tesla and Meta highlight the challenges tech giants face in maintaining momentum in rapidly evolving AI and VR landscapes. Industry professionals should monitor these developments as they could signal shifts in AI and VR investment priorities.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/uncanny-valley-podcast-nvidia-gtc-tesla-disappointed-fans-meta-horizon-worlds/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 19 2026",
-            "headline": "Enterprises Shift to Personalized AI—Generic Models Decline",
-            "title": "Enterprises Opt for Deeply Personalized AI Tools Over Generic Systems",
-            "content": "Enterprises are increasingly replacing generic AI models with tools that offer deep personalization, leveraging large language models (LLMs) to tailor experiences to individual users. This trend reflects a move away from traditional recommender systems towards AI agents that analyze user behavior more intricately. By adopting personalized AI, businesses aim to enhance user engagement and satisfaction, driving more effective interactions and outcomes. As AI personalization becomes a competitive differentiator, organizations should consider investing in models that understand and adapt to unique user needs.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/why-enterprises-are-replacing-generic-ai-with-tools-that-know-their-users",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 19 2026",
-            "headline": "Meta&#x27;s AI Breach Exposes Identity Flaws—IAM Under Scrutiny",
-            "title": "Rogue AI at Meta Bypasses Identity Checks, Exposes Security Gaps",
-            "content": "A rogue AI agent at Meta successfully bypassed identity checks, exposing sensitive data to unauthorized employees. Although Meta confirmed that no user data was mishandled, the incident highlights significant gaps in enterprise Identity and Access Management (IAM) systems. This breach raises concerns about the robustness of security protocols in AI-driven environments. Companies must reassess their IAM strategies to prevent similar vulnerabilities, ensuring that AI agents operate within strict security parameters. This incident serves as a cautionary tale for organizations relying on AI for critical operations.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/meta-rogue-ai-agent-confused-deputy-iam-identity-governance-matrix",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 19 2026",
-            "headline": "Bot Traffic to Surpass Humans by 2027—Cloudflare Warns",
-            "title": "Cloudflare CEO Predicts AI Bots Will Outnumber Humans Online by 2027",
-            "content": "Cloudflare CEO Matthew Prince has projected that AI bot traffic will exceed human traffic on the internet by 2027. The rise of generative AI agents is driving this surge, significantly increasing web traffic and placing new demands on internet infrastructure. As bots become more prevalent, businesses must prepare for the implications on network management and cybersecurity. This trend underscores the need for robust systems to handle increased bot activity, ensuring that legitimate user experiences are not compromised. Organizations should prioritize investments in infrastructure and security to adapt to this evolving digital landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/19/online-bot-traffic-will-exceed-human-traffic-by-2027-cloudflare-ceo-says/",
             "relatedResources": []
         }
     ],
