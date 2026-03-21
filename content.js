@@ -4,93 +4,66 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 20 2026",
-            "headline": "Eclypsium Secures $25M to Boost Supply Chain Defense",
-            "title": "Eclypsium Secures $25 Million to Enhance Device Supply Chain Security",
-            "content": "Eclypsium has announced a successful $25 million funding round aimed at enhancing its platform&#x27;s capabilities for device supply chain security. The investment will be used to expand Eclypsium&#x27;s offerings and strengthen channel partnerships, addressing the growing need for robust supply chain defenses in the face of increasing cyber threats. This move comes as supply chain attacks continue to pose significant risks to enterprises globally. Security professionals are encouraged to evaluate their current supply chain security measures and consider solutions that offer comprehensive protection against potential vulnerabilities. Eclypsium&#x27;s platform focuses on firmware security, a critical yet often overlooked aspect of device security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/eclypsium-raises-25-million-for-device-supply-chain-security/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 20 2026",
-            "headline": "Interlock Ransomware Exploits Cisco Firewall Flaw—Patch Urgently",
-            "title": "Interlock Ransomware Exploits Undisclosed Cisco Firewall Vulnerability",
-            "content": "Interlock, a ransomware group known for its double-extortion tactics, has been exploiting a critical vulnerability in Cisco enterprise firewalls weeks before its public disclosure. The flaw, which remains unnamed, allowed attackers to bypass defenses and deploy ransomware, impacting organizations relying on Cisco&#x27;s security infrastructure. This incident underscores the importance of timely vulnerability management and patching protocols. Organizations using Cisco firewalls should prioritize updates and review their incident response strategies to mitigate potential breaches. The attack highlights the persistent threat posed by ransomware groups targeting critical infrastructure.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/interlock-ransomware-targets-cisco-enterprise-firewalls",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 20 2026",
-            "headline": "US Links Handala to Iran—Seizes Hacker Domains",
-            "title": "US Confirms Handala&#x27;s Iranian Ties Amid Domain Seizures",
-            "content": "The United States government has confirmed that the hacker collective Handala is linked to the Iranian government, following the seizure of several domains used in cyber-enabled psychological operations. This action is part of a broader effort to disrupt state-sponsored cyber activities aimed at influencing public opinion and destabilizing geopolitical adversaries. The seizure of these domains is a significant move in curbing the group&#x27;s operations, which have targeted various sectors globally. Security experts advise monitoring for communications from these domains and updating threat intelligence databases accordingly. This development highlights the ongoing cyber conflict involving nation-state actors.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-confirms-handala-link-to-iran-government-amid-takedown-of-hackers-sites/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 20 2026",
-            "headline": "Global Crackdown Dismantles Two Largest DDoS Botnets",
-            "title": "International Effort Dismantles World&#x27;s Largest DDoS Botnets",
-            "content": "In a coordinated operation, security agencies from North America and Germany have successfully dismantled two of the world&#x27;s largest botnets responsible for launching Distributed Denial of Service (DDoS) attacks. These botnets had been exploiting vulnerable devices worldwide, causing significant disruptions across various sectors. The takedown is a major victory in the ongoing battle against cybercrime, reducing the capacity for large-scale DDoS attacks. Organizations are urged to implement robust DDoS protection measures and regularly update their network defenses. This operation underscores the importance of international collaboration in combating cyber threats.",
+            "date": "Mar 21 2026",
+            "headline": "UK Debates Cybersecurity Loan Guarantee for Jaguar Land Rover",
+            "title": "UK Government&#x27;s Cybersecurity Loan to JLR Sparks Readiness Debate",
+            "content": "A senior member of the UK&#x27;s Cyber Monitoring Center has raised concerns over a £1.5 billion government loan guarantee provided to Jaguar Land Rover (JLR) for cybersecurity resilience. The debate highlights whether nations are prepared to act as cybersecurity insurers of last resort amidst increasing cyber threats. The loan aims to bolster JLR&#x27;s defenses against potential cyberattacks, but questions remain about the broader implications for national cybersecurity policy. As cyber incidents grow in frequency and severity, governments face pressure to protect critical industries. The situation underscores the need for comprehensive strategies to manage cyber risks at a national level.",
             "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4148087/ddos-attacken-schlag-gegen-internationale-cyberkriminelle.html",
+            "sourceUrl": "https://www.csoonline.com/article/4148273/are-nations-ready-to-be-the-cybersecurity-insurers-of-last-resort-2.html",
             "relatedResources": []
         },
         {
             "date": "Mar 20 2026",
-            "headline": "Fake Job Offers on Google Forms Spread Malware",
-            "title": "Google Forms Used to Spread PureHVNC Malware via Fake Job Offers",
-            "content": "Cybercriminals are exploiting Google Forms to distribute PureHVNC malware through fraudulent job offers, posing a significant risk to job seekers. The malware grants attackers remote access to infected devices, allowing them to steal sensitive information and control systems. This tactic highlights the increasing sophistication of social engineering attacks targeting individuals during job searches. Users are advised to verify job offers independently and employ robust endpoint protection solutions. This incident serves as a reminder to remain vigilant against phishing schemes and to scrutinize unsolicited communications.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/03/that-job-brief-on-google-forms-could-infect-your-device",
+            "headline": "FBI Warns: Russian Phishing Targets Signal, WhatsApp Users",
+            "title": "FBI Links Signal Phishing Campaigns to Russian Intelligence Services",
+            "content": "The FBI has issued a warning about phishing attacks linked to Russian intelligence services targeting users of encrypted messaging apps like Signal and WhatsApp. These campaigns have compromised thousands of accounts, leveraging sophisticated tactics to bypass security measures. The phishing attacks aim to deceive users into revealing credentials, threatening the privacy and security of communications. This development follows similar alerts from European nations, highlighting a coordinated effort to exploit messaging platforms. Users are advised to remain vigilant and employ additional security measures, such as two-factor authentication, to protect their accounts.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-links-signal-phishing-attacks-to-russian-intelligence-services/",
             "relatedResources": []
         },
         {
             "date": "Mar 20 2026",
-            "headline": "Navia Breach Exposes 2.7M Users&#x27; Health Data",
-            "title": "Navia Data Breach Compromises Personal and Health Information of 2.7 Million",
-            "content": "Navia has suffered a data breach affecting 2.7 million individuals, with attackers stealing personal and health plan information between late December 2025 and mid-January 2026. The breach highlights vulnerabilities in data protection measures and impacts users relying on Navia for health-related services. Affected individuals are at risk of identity theft and should monitor their accounts for unusual activity. Navia is working with authorities to investigate the breach and enhance security protocols. This incident underscores the critical need for robust data security practices in the healthcare sector.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/navia-data-breach-impacts-2-7-million/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 20 2026",
-            "headline": "Google Delays Unverified App Installs to Curb Malware",
-            "title": "Google Introduces 24-Hour Wait for Unverified Android App Sideloading",
-            "content": "Google has announced a new security measure requiring a 24-hour wait period for sideloading apps from unverified developers on Android devices. This &quot;advanced flow&quot; aims to reduce the risk of malware and scams while maintaining the platform&#x27;s openness. The change comes as part of Google&#x27;s broader efforts to enhance developer verification and protect users from malicious software. Android users should be aware of this new protocol and plan app installations accordingly. This initiative reflects Google&#x27;s ongoing commitment to balancing user safety with platform flexibility.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/google-adds-24-hour-wait-for-unverified.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 20 2026",
-            "headline": "ISC Stormcast Highlights March 2026 Cyber Threats",
-            "title": "SANS Internet Storm Center Discusses Emerging Cybersecurity Trends and Threats",
-            "content": "The SANS Internet Storm Center released its latest Stormcast podcast, highlighting key cybersecurity threats and trends for March 2026. The InfoCON level remains at green, indicating a stable threat environment. Topics discussed include recent vulnerabilities in widely used software and the importance of patch management to mitigate risks. The podcast also emphasizes the growing concern about the security of Internet of Things (IoT) devices and the need for improved network defenses. IT professionals are encouraged to stay informed about emerging threats and ensure their systems are up-to-date. This ongoing analysis provides valuable insights for cybersecurity practitioners.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32814",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 20 2026",
-            "headline": "$2.5M Insider Attack—Tech Worker Found Guilty",
-            "title": "North Carolina Tech Worker Convicted in $2.5M Insider Ransom Attack",
-            "content": "Cameron Nicholas Curry, a North Carolina tech worker, has been found guilty of orchestrating an insider attack that extorted $2.5 million from a Washington D.C.-based tech company. Known by the alias &quot;Loot,&quot; Curry exploited his position during a six-month contract to steal sensitive corporate data. The breach underscores the risks posed by insider threats, particularly in tech environments with high-value data. Companies are urged to implement robust insider threat detection systems and conduct thorough background checks on contractors. This case highlights the need for vigilant monitoring of employee activities to prevent similar incidents.",
+            "headline": "US, Europe Warn of Russian Messaging App Phishing Threat",
+            "title": "FBI, CISA Issue PSA on Russian Campaign Targeting Messaging Apps",
+            "content": "The FBI and the Cybersecurity and Infrastructure Security Agency (CISA) have released a public service announcement regarding a Russian intelligence campaign targeting messaging app users. This alert echoes previous warnings from the Netherlands and Germany about the threat to Signal and other platforms. The campaign uses phishing techniques to gain access to encrypted communications, posing a significant risk to user privacy. With thousands of accounts already compromised, the threat underscores the need for enhanced security protocols. Users should update their apps and enable security features to mitigate risks.",
             "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cameron-curry-insider-attack-washington-tech-company/",
+            "sourceUrl": "https://cyberscoop.com/fbi-cisa-issue-psa-on-russian-intelligence-campaign-to-target-messaging-apps/",
             "relatedResources": []
         },
         {
             "date": "Mar 20 2026",
-            "headline": "Feds Dismantle IoT Botnets—3M Devices Freed",
-            "title": "International Operation Takes Down IoT Botnets Behind Massive DDoS Attacks",
-            "content": "In a coordinated effort, the U.S. Justice Department, alongside Canadian and German authorities, has dismantled four major IoT botnets responsible for extensive Distributed Denial of Service (DDoS) attacks. These botnets had compromised over three million IoT devices, including routers and web cameras, to launch large-scale cyberattacks. The operation highlights the vulnerabilities in IoT security and the need for device manufacturers to enforce stronger security measures. Organizations using IoT devices should ensure firmware updates are applied promptly and consider network segmentation to protect against similar threats. This action represents a significant step in combating global cybercrime.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/03/feds-disrupt-iot-botnets-behind-huge-ddos-attacks/",
+            "headline": "Critical RCE Flaw in Oracle Fusion Middleware—Patch Immediately",
+            "title": "Patch Now: Oracle&#x27;s Fusion Middleware Has Critical RCE Flaw",
+            "content": "Oracle has identified a critical remote code execution (RCE) vulnerability in its Fusion Middleware, specifically affecting Identity and Web Services Managers. This flaw allows attackers to execute arbitrary code without authentication, posing a severe threat to systems exposed to the web. Tracked as CVE-2026-21992, the vulnerability requires immediate attention due to its potential impact on enterprise environments. Organizations using these Oracle products should apply the available patches without delay to prevent exploitation. The vulnerability highlights ongoing challenges in securing complex middleware systems.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/patch-oracle-fusion-middleware-rce-flaw",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "Oracle Releases Emergency Patch for Critical RCE Vulnerability",
+            "title": "Oracle Pushes Emergency Fix for Critical Identity Manager RCE Flaw",
+            "content": "Oracle has issued an out-of-band security update to address a critical unauthenticated remote code execution vulnerability in its Identity Manager and Web Services Manager, identified as CVE-2026-21992. This flaw allows attackers to execute arbitrary code on affected systems, representing a significant security risk. The vulnerability affects systems exposed to the internet, necessitating urgent patching to protect against potential exploitation. Oracle&#x27;s swift response underscores the importance of proactive security measures in complex enterprise environments. Users are urged to apply the patch immediately to safeguard their systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/oracle-pushes-emergency-fix-for-critical-identity-manager-rce-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "Trio Sentenced for Aiding North Korean IT Worker Scheme",
+            "title": "Trio Sentenced for Facilitating North Korean IT Worker Scheme from Homes",
+            "content": "Three individuals have been sentenced for their roles in a scheme that facilitated North Korean IT workers in assuming fake identities to secure jobs with U.S. companies. The operation generated approximately $1.28 million in salaries by hosting laptop farms and manipulating remote work setups. This case highlights the persistent threat of state-sponsored cyber activities and the exploitation of remote work vulnerabilities. The sentencing serves as a warning to organizations to rigorously verify employee identities and monitor remote work arrangements to prevent similar incidents.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/north-korea-it-worker-scheme-three-sentenced/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "Water Utilities Boost Cybersecurity Through Collaboration",
+            "title": "Water Utilities Strengthen Cybersecurity Through Cooperation",
+            "content": "Water utilities are enhancing their cybersecurity defenses by participating in cooperative initiatives that facilitate information sharing and coordinated responses to cyber threats. Many utilities operate with outdated systems and limited cybersecurity personnel, making them vulnerable to attacks. By collaborating, these utilities can better identify vulnerabilities and implement effective defenses. A recent pilot program demonstrated the benefits of such cooperation, leading to improved incident response capabilities. This approach is crucial for protecting critical infrastructure and ensuring the safety and reliability of water services.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4148225/water-utilities-strengthen-cybersecurity-through-cooperation.html",
             "relatedResources": []
         },
         {
@@ -105,84 +78,66 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 20 2026",
-            "headline": "AI Backlash Grows—Public Skepticism Challenges Tech Giants",
-            "title": "Cultural Disconnect Fuels Public Distrust of AI Technologies",
-            "content": "Amidst the rapid deployment of artificial intelligence across industries, a growing cultural disconnect is fueling public skepticism. While companies are eager to integrate AI, many individuals express concerns about privacy, job displacement, and ethical implications. This disconnect highlights the need for transparent communication and ethical guidelines to bridge the gap between AI developers and the public. Companies must address these concerns to avoid potential backlash and ensure the responsible use of AI technologies. Understanding and mitigating these fears is crucial for fostering trust and acceptance of AI innovations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/897900/ai-trust-gap-killer-app-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 20 2026",
-            "headline": "AI Data Centers Strain Power—Energy Tech Investment Surge",
-            "title": "Energy Tech Emerges as Key Investment Amid AI Data Center Expansion",
-            "content": "The expansion of AI data centers is placing unprecedented demands on power infrastructure, creating a lucrative opportunity for energy technology investments. As AI workloads increase, the need for efficient energy solutions becomes critical, with power availability emerging as a bottleneck. Investors are now eyeing energy tech innovations that promise to enhance power efficiency and sustainability. This trend underscores the intersection of AI and energy sectors, as companies seek to balance technological advancement with environmental responsibility. Professionals in the field should consider the implications of energy constraints on AI scalability and sustainability.",
+            "date": "Mar 21 2026",
+            "headline": "Pentagon vs. Anthropic: AI Security Clash in Court",
+            "title": "Anthropic Challenges Pentagon&#x27;s National Security Risk Claims in Court",
+            "content": "In a recent court filing, Anthropic has contested the Pentagon&#x27;s assertion that the AI company poses an &quot;unacceptable risk to national security.&quot; The disagreement emerged a week after former President Trump declared the relationship between the two entities over. Anthropic argues that the government&#x27;s case is built on technical misunderstandings, submitting two sworn declarations to a California federal court. The dispute highlights ongoing tensions between AI developers and national security agencies over the potential manipulation of AI models. This case could set precedents for future collaborations between AI companies and government bodies. Security professionals should monitor developments closely as they could impact AI deployment in sensitive sectors.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/20/the-best-ai-investment-might-be-in-energy-tech/",
+            "sourceUrl": "https://techcrunch.com/2026/03/20/new-court-filing-reveals-pentagon-told-anthropic-the-two-sides-were-nearly-aligned-a-week-after-trump-declared-the-relationship-kaput/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 21 2026",
+            "headline": "Anthropic Refutes DoD&#x27;s AI Sabotage Allegations",
+            "title": "Anthropic Denies Department of Defense&#x27;s AI Sabotage Claims",
+            "content": "Anthropic has strongly denied allegations from the Department of Defense (DoD) that it could manipulate AI models during wartime scenarios. Company executives claim such actions are technically impossible, countering the DoD&#x27;s concerns about potential AI sabotage. This dispute underscores the challenges of integrating AI technologies into military operations, where trust and reliability are paramount. The allegations have sparked a debate on the security measures necessary to safeguard AI systems in high-stakes environments. Industry experts are watching closely, as the outcome could influence regulatory and security frameworks for AI in defense applications.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/anthropic-denies-sabotage-ai-tools-war-claude/",
             "relatedResources": []
         },
         {
             "date": "Mar 20 2026",
-            "headline": "OpenAI&#x27;s Ambitious Quest—Automated Researcher in Development",
-            "title": "OpenAI Aims to Revolutionize Research with Automated AI Agent",
-            "content": "OpenAI is channeling its resources into developing an automated AI researcher capable of independently solving complex problems. This ambitious project involves creating an agent-based system designed to tackle large-scale challenges without human intervention. The initiative reflects OpenAI&#x27;s commitment to pushing the boundaries of artificial intelligence, potentially transforming research methodologies across various fields. However, the endeavor raises questions about the ethical and practical implications of autonomous AI systems. Stakeholders should monitor developments closely, as this technology could redefine the landscape of scientific research and innovation.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/",
+            "headline": "Amazon&#x27;s AI Smartphone Faces Market Hurdles",
+            "title": "Amazon&#x27;s AI-Powered Smartphone Faces Daunting Market Challenges",
+            "content": "Amazon is reportedly developing a new AI-powered smartphone, aiming to enter an already saturated mobile device market. Experts caution that breaking into the market dominated by Apple and Samsung would be a formidable challenge. The device would need to offer groundbreaking features to differentiate itself, yet details on its capabilities remain sparse. The tech giant&#x27;s past attempts in the smartphone arena, such as the Fire Phone, have met with limited success. This venture reflects Amazon&#x27;s ongoing strategy to integrate AI across its product line, but market analysts remain skeptical about its potential impact.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/amazon-smartphone-rumor-2026/",
             "relatedResources": []
         },
         {
             "date": "Mar 20 2026",
-            "headline": "AI Notetakers—Transforming Meeting Efficiency and Accessibility",
-            "title": "AI-Powered Notetaking Devices Enhance Meeting Productivity and Inclusivity",
-            "content": "AI notetaking devices are revolutionizing how meetings are documented by transcribing audio and providing summaries and action items. Some devices even offer live translation, improving accessibility for multilingual teams. These tools leverage AI to streamline workflows, enhance productivity, and ensure that critical information is captured accurately. As remote and hybrid work environments become more prevalent, the demand for such technologies is expected to grow. Professionals should consider integrating AI notetaking solutions to optimize meeting outcomes and facilitate effective communication across diverse teams.",
+            "headline": "Microsoft Trims Copilot AI Features on Windows",
+            "title": "Microsoft Reduces Copilot AI Integration in Windows Apps",
+            "content": "Microsoft is scaling back its Copilot AI features across several Windows applications, including Photos, Widgets, and Notepad. This move comes as part of an effort to streamline user experience and reduce perceived bloat in its software suite. Copilot, an AI-driven assistant, was initially integrated to enhance productivity through automation and smart suggestions. However, user feedback and performance assessments have prompted Microsoft to reassess its deployment strategy. The rollback may affect users who rely on Copilot for enhanced functionality, signaling a shift towards more targeted AI applications. Professionals should evaluate the impact on their workflows and adjust accordingly.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/20/ai-notetaker-hardware-devices-pins-pendants-record-transcribe/",
+            "sourceUrl": "https://techcrunch.com/2026/03/20/microsoft-rolls-back-some-of-its-copilot-ai-bloat-on-windows/",
             "relatedResources": []
         },
         {
             "date": "Mar 20 2026",
-            "headline": "Food-Tracking Apps—AI Boosts Nutrition Goals, Raises Concerns",
-            "title": "AI-Enhanced Food-Tracking Apps Offer Benefits and Drawbacks",
-            "content": "AI-powered food-tracking apps are proving beneficial for users aiming to meet caloric and nutritional goals by utilizing computer vision and data analytics. However, these apps can also induce anxiety in some users, highlighting the importance of balanced usage. The technology&#x27;s ability to provide detailed dietary insights is transforming personal health management, yet it underscores the need for mindful engagement with health data. Users and developers should be aware of the psychological impact and strive for features that promote healthy relationships with food tracking.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/food-tracking-apps-ai-nutrition-weight-loss/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 20 2026",
-            "headline": "AI Agent&#x27;s LinkedIn Triumph—Banned After Success",
-            "title": "AI Agent&#x27;s LinkedIn Success Highlights Social Media Challenges",
-            "content": "An AI agent designed as a &#x27;cofounder&#x27; achieved significant engagement on LinkedIn before being banned, raising questions about AI&#x27;s role in social media. The incident highlights the tension between AI-driven automation and platform policies, as social media companies grapple with the implications of AI participation. This case underscores the need for clear guidelines on AI interactions in digital spaces to prevent misuse while harnessing AI&#x27;s potential for networking and business development. Professionals should consider the ethical and regulatory aspects of AI in social networking.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/linkedin-invited-my-ai-cofounder-to-give-a-corporate-talk-then-banned-it/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 19 2026",
-            "headline": "Meta Security Breach—AI Error Exposes Sensitive Data",
-            "title": "AI-Induced Security Incident at Meta Raises Concerns",
-            "content": "A rogue AI agent at Meta led to a significant security incident, granting employees unauthorized access to sensitive data for nearly two hours. The breach occurred after the AI provided incorrect technical advice, exposing vulnerabilities in AI-driven decision-making processes. Meta&#x27;s response emphasizes the need for robust oversight and safeguards when deploying AI systems in critical environments. This incident serves as a cautionary tale for organizations relying on AI, highlighting the importance of stringent validation and monitoring to prevent similar occurrences.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/897528/meta-rogue-ai-agent-security-incident",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 20 2026",
-            "headline": "Anthropic&#x27;s Claude Invades Chat Platforms—OpenClaw Rival Emerges",
-            "title": "Anthropic Launches Claude Code Channels for Discord and Telegram Integration",
-            "content": "Anthropic has unveiled Claude Code Channels, a new feature that allows users to integrate its Claude Code AI agent with Discord and Telegram messaging apps. This development positions Claude as a direct competitor to the popular open-source AI agent OpenClaw. By enabling seamless communication with Claude through these platforms, Anthropic aims to enhance user accessibility and interaction. The integration is expected to attract developers and tech enthusiasts seeking advanced AI capabilities in their daily communication tools. As AI agents become more embedded in social and professional environments, this move could redefine user expectations for AI accessibility and functionality.",
+            "headline": "AI&#x27;s Physical World Understanding Spurs $1.03B Investment",
+            "title": "AI&#x27;s Struggle with Physical World Drives $1.03B Investment in World Models",
+            "content": "As large language models face limitations in understanding the physical world, investor interest is shifting towards world models. AMI Labs has secured a $1.03 billion seed round shortly after a similar move by World Labs. These models aim to enhance AI&#x27;s capabilities in robotics, autonomous driving, and manufacturing by providing a deeper comprehension of physical environments. The investment surge reflects a growing recognition of the need for AI systems that can interact more effectively with the real world. This trend is crucial for industries relying on AI for automation and precision tasks, indicating a strategic pivot in AI development.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/anthropic-just-shipped-an-openclaw-killer-called-claude-code-channels",
+            "sourceUrl": "https://venturebeat.com/technology/three-ways-ai-is-learning-to-understand-the-physical-world",
             "relatedResources": []
         },
         {
             "date": "Mar 20 2026",
-            "headline": "OpenAI&#x27;s Superapp Ambition—Merging ChatGPT, Codex, and Atlas",
-            "title": "OpenAI Plans Desktop Superapp Combining ChatGPT, Codex, and Atlas Browser",
-            "content": "OpenAI is developing a desktop &quot;superapp&quot; that consolidates its ChatGPT, Codex AI coding app, and AI-powered Atlas browser into a single platform. This strategic move aims to streamline OpenAI&#x27;s product offerings and provide users with a unified experience. The integration is expected to simplify workflows for developers and tech professionals by offering a comprehensive suite of AI tools in one application. As OpenAI continues to innovate, this superapp could set a new standard for AI product ecosystems, potentially influencing how AI tools are packaged and delivered in the tech industry.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/897778/openai-chatgpt-codex-atlas-browser-superapp",
+            "headline": "Nvidia&#x27;s $1 Trillion AI Chip Vision at GTC",
+            "title": "Nvidia Projects $1 Trillion AI Chip Sales by 2027 at GTC",
+            "content": "At Nvidia&#x27;s GTC conference, CEO Jensen Huang announced an ambitious projection of $1 trillion in AI chip sales through 2027. During his keynote, Huang emphasized the necessity of an &quot;OpenClaw strategy&quot; for companies aiming to leverage AI advancements. The presentation also featured &quot;Robot Olaf,&quot; highlighting Nvidia&#x27;s commitment to innovation in AI robotics. This bold forecast underscores Nvidia&#x27;s dominant position in the AI hardware market and its role in driving the industry&#x27;s growth. Companies are encouraged to adopt strategic AI frameworks to remain competitive in a rapidly evolving technological landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/what-happened-at-nvidia-gtc-nemoclaw-robot-olaf-and-a-1-trillion-bet/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 20 2026",
+            "headline": "OpenClaw Strategy: Nvidia&#x27;s AI Vision for Businesses",
+            "title": "Nvidia Advocates OpenClaw Strategy for AI-Driven Business Success",
+            "content": "Nvidia&#x27;s CEO, Jensen Huang, has introduced the &quot;OpenClaw strategy&quot; at the GTC conference, urging businesses to embrace this approach to harness AI&#x27;s potential. The strategy is part of Nvidia&#x27;s vision to drive $1 trillion in AI chip sales by 2027. Huang&#x27;s keynote highlighted the importance of integrating AI technologies across business operations to maintain a competitive edge. The announcement comes as Nvidia continues to lead in AI hardware, with its chips powering a range of applications from data centers to autonomous vehicles. Businesses are advised to consider strategic AI implementations to capitalize on emerging opportunities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/nvidia-has-an-openclaw-strategy-do-you/",
             "relatedResources": []
         }
     ],
@@ -247,6 +202,61 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-32432",
+            "dateAdded": "Mar 20, 2026",
+            "vendor": "Craft CMS Craft CMS",
+            "description": "Craft CMS contains a code injection vulnerability that allows a remote attacker to execute arbitrary code.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32432",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-54068",
+            "dateAdded": "Mar 20, 2026",
+            "vendor": "Laravel Livewire",
+            "description": "Laravel Livewire contain a code injection vulnerability that could allow unauthenticated attackers to achieve remote command execution in specific scenarios.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54068",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-43510",
+            "dateAdded": "Mar 20, 2026",
+            "vendor": "Apple Multiple Products",
+            "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, and tvOS contain an improper locking vulnerability that could allow a malicious application to cause unexpected changes in memory shared between processes.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43510",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-43520",
+            "dateAdded": "Mar 20, 2026",
+            "vendor": "Apple Multiple Products",
+            "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, tvOS, and iPadOS contain a classic buffer overflow vulnerability which could allow a malicious application to cause unexpected system termination or write",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43520",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-31277",
+            "dateAdded": "Mar 20, 2026",
+            "vendor": "Apple Multiple Products",
+            "description": "Apple Safari, iOS, watchOS, visionOS, iPadOS, macOS, and tvOS contain a buffer overflow vulnerability that could allow the processing of maliciously crafted web content which may lead to memory corrup",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31277",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-20131",
             "dateAdded": "Mar 19, 2026",
