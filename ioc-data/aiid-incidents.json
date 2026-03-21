@@ -1,9 +1,33 @@
 {
   "incidents": [
     {
+      "id": "AIID-1117",
+      "incident_id": 1117,
+      "title": "North Korea-Linked Actors Allegedly Use AI Executive Deepfakes in Zoom Phishing Targeting Web3 Emplo",
+      "date": "2026-03-21",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1118",
+      "incident_id": 1118,
+      "title": "Ongoing Purported AI-Assisted Identity Fraud Enables Unauthorized Access to Western Companies by Nor",
+      "date": "2026-03-21",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1420",
       "incident_id": 1420,
       "title": "Bal\u00e1zs Orb\u00e1n Allegedly Published Purported Deepfake of P\u00e9ter Magyar Claiming He Would Cut Pensions",
+      "date": "2026-03-21",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1421",
+      "incident_id": 1421,
+      "title": "Purported Deepfake Applicant Reportedly Impersonated Tokyo IT Executive Kenbun Yoshii During Online ",
       "date": "2026-03-21",
       "category": "deepfake",
       "severity": "medium"
@@ -978,9 +1002,9 @@
     }
   ],
   "stats": {
-    "total": 122,
-    "last7Days": 18,
-    "last30Days": 56
+    "total": 125,
+    "last7Days": 14,
+    "last30Days": 59
   },
-  "lastUpdated": "2026-03-21T22:14:11.929360+05:30"
+  "lastUpdated": "2026-03-22T00:30:33.682436+05:30"
 }
