@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1420",
+      "incident_id": 1420,
+      "title": "Bal\u00e1zs Orb\u00e1n Allegedly Published Purported Deepfake of P\u00e9ter Magyar Claiming He Would Cut Pensions",
+      "date": "2026-03-21",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1416",
       "incident_id": 1416,
       "title": "Purported Facial Recognition Error Reportedly Led to Arrest and Jailing of Tennessee Woman in North ",
@@ -967,20 +975,12 @@
       "date": "2025-12-22",
       "category": "misinformation",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-544",
-      "incident_id": 544,
-      "title": "Alleged Use of Purportedly AI-Generated and Manipulated Media to Misrepresent Candidates and Disrupt",
-      "date": "2025-12-21",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
     "total": 122,
-    "last7Days": 17,
-    "last30Days": 55
+    "last7Days": 18,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-03-21T18:40:24.398893+05:30"
+  "lastUpdated": "2026-03-21T22:14:11.929360+05:30"
 }
