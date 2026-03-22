@@ -1892,6 +1892,8 @@
                         display: flex;
                         gap: 0.75rem;
                         margin-bottom: 0.75rem;
+                        height: 42px;
+                        align-items: flex-start;
                     }
 
                     .hnf-tab {
@@ -1908,10 +1910,13 @@
                         font-size: 0.78rem;
                         font-weight: 600;
                         cursor: pointer;
-                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        transition: background 0.2s ease, border-color 0.2s ease, color 0.15s ease, box-shadow 0.25s ease;
                         letter-spacing: 0.3px;
                         position: relative;
                         overflow: hidden;
+                        height: 42px !important; /* Fixed height is mandatory */
+                        max-height: 42px !important;
+                        box-sizing: border-box;
                     }
 
                     .hnf-tab:hover {
@@ -1934,12 +1939,11 @@
                     /* Card Stack */
                     .hnf-card-stack {
                         position: relative;
-                        transition: none !important;
                     }
 
                     .hnf-feed {
                         position: relative;
-                        transition: none !important;
+                        min-height: 180px; /* Baseline to reduce jumping */
                     }
 
                     .hnf-card {
@@ -2470,26 +2474,25 @@
                         if (category === hnfCurrentCategory) return;
                         hnfCurrentCategory = category;
 
-                        // Update tabs — just toggle active class
+                        // Atomic UI switch
                         document.querySelectorAll('.hnf-tab').forEach(t => t.classList.remove('active'));
-                        document.querySelector(`.hnf-tab[data-category="${category}"]`).classList.add('active');
+                        const activeTab = document.querySelector(`.hnf-tab[data-category="${category}"]`);
+                        if (activeTab) activeTab.classList.add('active');
 
-                        // Toggle feed visibility — NO innerHTML, NO DOM rebuild
                         const cyberFeed = document.getElementById('hnfCyberFeed');
                         const aiFeed = document.getElementById('hnfAiFeed');
+                        
                         if (category === 'cyber') {
-                            cyberFeed.style.display = '';
+                            cyberFeed.style.display = 'block';
                             aiFeed.style.display = 'none';
                         } else {
                             cyberFeed.style.display = 'none';
-                            aiFeed.style.display = '';
+                            aiFeed.style.display = 'block';
                         }
 
-                        // Rebuild dots for this category's count and update counter 
                         const data = category === 'cyber' ? hnfCyberData : hnfAiData;
                         buildDots(data.length);
                         updateDotsAndCounter();
-
                         resetAuto();
                     };
 
