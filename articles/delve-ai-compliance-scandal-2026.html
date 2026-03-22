@@ -85,46 +85,44 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg-primary);
+            background: var(--bg-primary);
             color: var(--text-primary);
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
+            line-height: 1.7;
+            font-size: 18px;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
             padding: 2rem;
-            padding-top: 100px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
         }
 
         .article-header {
-            margin-bottom: 3rem;
-            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
         }
 
-        .article-meta {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .article-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .article-title {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
             background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -132,41 +130,46 @@
         }
 
         .article-excerpt {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--text-secondary);
-            max-width: 800px;
-            margin: 0 auto 2rem;
+            margin-bottom: 1.5rem;
             line-height: 1.6;
         }
 
-        .article-image {
-            width: 100%;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            margin-bottom: 3rem;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
         }
 
         .article-content h2 {
-            font-size: 2rem;
             color: var(--accent-cyan);
-            margin-top: 3.5rem;
-            margin-bottom: 1.5rem;
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
             border-bottom: 1px solid var(--border);
             padding-bottom: 0.5rem;
         }
 
         .article-content h3 {
-            font-size: 1.5rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: #fff;
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
         }
 
         .article-content p {
             margin-bottom: 1.5rem;
             font-size: 1.15rem;
-            color: #dfdfdf;
+            color: var(--text-secondary);
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
         }
 
         .technical-box {
@@ -445,7 +448,7 @@
                 <h1 class="article-title">The Delve Scandal: Why 493 Fabricated Audit Reports Just Killed "Checkbox Security"</h1>
                 <p class="article-excerpt">I have been following this news for the past few days, and what started as a ripple on Reddit has turned into a $300M tidal wave. The collapse of Delve is not just a startup failure—it is the ultimate proof of the "Checkbox Security" illusion I warned about last month.</p>
 
-                <img src="/images/articles/delve-ai-compliance-scandal-2026.png" alt="Delve Scandal Analysis" class="article-image">
+                <img src="/images/articles/delve-ai-compliance-scandal-2026.png" alt="Delve Scandal Analysis" class="featured-image">
             </header>
 
             <div class="article-content">
