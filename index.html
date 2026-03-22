@@ -1730,238 +1730,820 @@
                     </div>
                 </div>
 
-                <!-- Scrolling News Ticker -->
-                <div class="news-ticker-container">
+                <!-- ========== HERO NEWS FEED ========== -->
+                <div class="hero-news-feed" id="heroNewsFeed">
+                    <!-- Feed Header -->
+                    <div class="hnf-header">
+                        <div class="hnf-header-left">
+                            <div class="hnf-live-indicator">
+                                <span class="hnf-live-dot"></span>
+                                <span class="hnf-live-text">LIVE</span>
+                            </div>
+                            <h3 class="hnf-title">Latest Updates</h3>
+                        </div>
+                        <div class="hnf-header-right">
+                            <span class="hnf-timestamp" id="hnfTimestamp">
+                                <i class="far fa-clock"></i> Updated just now
+                            </span>
+                        </div>
+                    </div>
+
                     <!-- Category Tabs -->
-                    <div class="ticker-tabs">
-                        <button class="ticker-tab active" data-category="cyber" onclick="switchTickerTab('cyber')">
+                    <div class="hnf-tabs">
+                        <button class="hnf-tab active" data-category="cyber" onclick="switchHeroNewsFeed('cyber')">
                             <i class="fas fa-shield-alt"></i>
                             <span>Cyber Threats</span>
                         </button>
-                        <button class="ticker-tab" data-category="ai" onclick="switchTickerTab('ai')">
+                        <button class="hnf-tab" data-category="ai" onclick="switchHeroNewsFeed('ai')">
                             <i class="fas fa-robot"></i>
-                            <span>AI Security</span>
+                            <span>AI & ML</span>
                         </button>
                     </div>
 
-                    <!-- Ticker Content - Fixed Height -->
-                    <div class="ticker-wrapper">
-                        <div class="ticker-fade-left"></div>
-                        <div class="ticker-scroll-container">
-                            <div class="ticker-scroll active" id="tickerCyber">
-                                <span class="ticker-item">Loading cyber news...</span>
-                            </div>
-                            <div class="ticker-scroll" id="tickerAI" style="display: none;">
-                                <span class="ticker-item">Loading AI news...</span>
+                    <!-- News Card Stack -->
+                    <div class="hnf-card-stack">
+                        <div class="hnf-feed" id="hnfCyberFeed">
+                            <div class="hnf-card active" data-index="0">
+                                <div class="hnf-card-inner">
+                                    <div class="hnf-card-meta">
+                                        <span class="hnf-source"><i class="fas fa-rss"></i> Loading...</span>
+                                        <span class="hnf-time"><i class="far fa-clock"></i> --</span>
+                                    </div>
+                                    <h4 class="hnf-card-title">Loading latest intelligence...</h4>
+                                    <div class="hnf-card-footer">
+                                        <span class="hnf-read-more"><i class="fas fa-expand-alt"></i> Read more</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="ticker-fade-right"></div>
+                        <div class="hnf-feed" id="hnfAiFeed" style="display:none"></div>
                     </div>
+
+                    <!-- Navigation -->
+                    <div class="hnf-nav">
+                        <div class="hnf-dots" id="hnfDots"></div>
+                        <div class="hnf-controls">
+                            <button class="hnf-nav-btn" onclick="heroNewsPrev()" aria-label="Previous headline">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <span class="hnf-counter" id="hnfCounter">1 / 10</span>
+                            <button class="hnf-nav-btn" onclick="heroNewsNext()" aria-label="Next headline">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- View All Link -->
+                    <a href="#news" class="hnf-view-all">
+                        <span>View All Intelligence</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
                 </div>
 
                 <style>
-                    /* Scrolling News Ticker */
-                    .news-ticker-container {
+                    /* ========== HERO NEWS FEED ========== */
+                    .hero-news-feed {
                         width: 100%;
-                        max-width: 900px;
+                        max-width: 720px;
                         margin: 0 auto;
-                    }
-
-                    .ticker-tabs {
-                        display: flex;
-                        justify-content: center;
-                        gap: 0.5rem;
-                        margin-bottom: 1rem;
-                    }
-
-                    .ticker-tab {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.5rem;
-                        background: var(--glass);
-                        border: 1px solid var(--border);
-                        color: var(--text-secondary);
-                        padding: 0.6rem 1.5rem;
-                        border-radius: 8px;
-                        font-size: 0.9rem;
-                        font-weight: 600;
-                        cursor: pointer;
-                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        background: linear-gradient(180deg, rgba(20, 25, 35, 0.9) 0%, rgba(12, 15, 22, 0.95) 100%);
+                        border: 1px solid rgba(255, 255, 255, 0.08);
+                        border-radius: 16px;
+                        padding: 1.25rem 1.5rem;
+                        backdrop-filter: blur(20px);
+                        -webkit-backdrop-filter: blur(20px);
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.04);
                         position: relative;
                         overflow: hidden;
+                        transition: none !important;
                     }
 
-                    .ticker-tab::before {
+                    .hero-news-feed::before {
                         content: '';
                         position: absolute;
                         top: 0;
-                        left: -100%;
-                        width: 100%;
-                        height: 100%;
-                        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-                        transition: left 0.5s ease;
-                    }
-
-                    .ticker-tab:hover::before {
-                        left: 100%;
-                    }
-
-                    .ticker-tab:hover {
-                        background: rgba(0, 217, 255, 0.1);
-                        border-color: var(--accent-cyan);
-                        color: var(--accent-cyan);
-                        transform: translateY(-2px);
-                    }
-
-                    .ticker-tab.active {
-                        background: var(--accent-cyan);
-                        border-color: var(--accent-cyan);
-                        color: #000;
-                        box-shadow: 0 4px 20px rgba(0, 217, 255, 0.4);
-                    }
-
-                    .ticker-tab[data-category="ai"]:hover {
-                        background: rgba(139, 92, 246, 0.1);
-                        border-color: #8B5CF6;
-                        color: #8B5CF6;
-                    }
-
-                    .ticker-tab[data-category="ai"].active {
-                        background: #8B5CF6;
-                        border-color: #8B5CF6;
-                        color: white;
-                        box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
-                    }
-
-                    /* FIX FOR RESIZING BUG: Ripple Effect Styles */
-                    .ripple-effect {
-                        position: absolute;
-                        /* Vital for preventing resizing */
-                        border-radius: 50%;
-                        background: rgba(255, 255, 255, 0.4);
-                        transform: scale(0);
-                        animation: ripple 0.6s linear;
-                        pointer-events: none;
-                    }
-
-                    @keyframes ripple {
-                        to {
-                            transform: scale(4);
-                            opacity: 0;
-                        }
-                    }
-
-                    /* Fixed height wrapper - NO RESIZE */
-                    .ticker-wrapper {
-                        position: relative;
-                        background: rgba(255, 255, 255, 0.02);
-                        border: 1px solid rgba(255, 255, 255, 0.08);
-                        border-radius: 12px;
-                        height: 50px;
-                        overflow: hidden;
-                    }
-
-                    .ticker-fade-left,
-                    .ticker-fade-right {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        width: 60px;
-                        z-index: 2;
-                        pointer-events: none;
-                    }
-
-                    .ticker-fade-left {
-                        left: 0;
-                        background: linear-gradient(to right, #0a0a0a, transparent);
-                    }
-
-                    .ticker-fade-right {
-                        right: 0;
-                        background: linear-gradient(to left, #0a0a0a, transparent);
-                    }
-
-                    .ticker-scroll-container {
-                        position: relative;
-                        height: 100%;
-                    }
-
-                    .ticker-scroll {
-                        position: absolute;
-                        top: 0;
                         left: 0;
                         right: 0;
-                        height: 100%;
-                        display: none;
-                        /* Hidden by default */
-                        align-items: center;
-                        animation: tickerScrollAnim 30s linear infinite;
-                        white-space: nowrap;
+                        height: 1px;
+                        background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.4), transparent);
                     }
 
-                    /* Instant Switch - No fade transition */
-                    .ticker-scroll.active {
+                    /* Header */
+                    .hnf-header {
                         display: flex;
-                        /* Instant show */
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 0.75rem;
                     }
 
-                    @keyframes tickerScrollAnim {
-                        0% {
-                            transform: translateX(0);
-                        }
-
-                        100% {
-                            transform: translateX(-50%);
-                        }
-                    }
-
-                    .ticker-wrapper:hover .ticker-scroll {
-                        animation-play-state: paused;
-                    }
-
-                    .ticker-item {
-                        display: inline-flex;
+                    .hnf-header-left {
+                        display: flex;
                         align-items: center;
                         gap: 0.75rem;
-                        padding: 0 2.5rem;
-                        color: var(--text-secondary);
-                        font-size: 0.95rem;
-                        cursor: pointer;
-                        transition: color 0.3s ease;
                     }
 
-                    .ticker-item:hover {
-                        color: var(--accent-cyan);
+                    .hnf-live-indicator {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 0.35rem;
+                        padding: 0.2rem 0.6rem;
+                        background: rgba(255, 61, 61, 0.15);
+                        border: 1px solid rgba(255, 61, 61, 0.3);
+                        border-radius: 50px;
                     }
 
-                    .ticker-dot {
+                    .hnf-live-dot {
                         width: 6px;
                         height: 6px;
                         border-radius: 50%;
-                        flex-shrink: 0;
+                        background: #FF3D3D;
+                        animation: hnfPulse 1.5s ease-in-out infinite;
                     }
 
-                    .ticker-dot.cyber {
-                        background: var(--accent-cyan);
-                        box-shadow: 0 0 6px var(--accent-cyan);
+                    @keyframes hnfPulse {
+                        0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255, 61, 61, 0.5); }
+                        50% { opacity: 0.6; box-shadow: 0 0 0 4px rgba(255, 61, 61, 0); }
                     }
 
-                    .ticker-dot.ai {
-                        background: #8B5CF6;
-                        box-shadow: 0 0 6px #8B5CF6;
+                    .hnf-live-text {
+                        font-size: 0.6rem;
+                        font-weight: 800;
+                        color: #FF3D3D;
+                        letter-spacing: 1.5px;
                     }
 
+                    .hnf-title {
+                        font-size: 0.85rem;
+                        font-weight: 700;
+                        color: #fff;
+                        margin: 0;
+                    }
+
+                    .hnf-timestamp {
+                        font-size: 0.7rem;
+                        color: var(--text-muted, #666);
+                        display: flex;
+                        align-items: center;
+                        gap: 0.35rem;
+                    }
+
+                    /* Tabs */
+                    .hnf-tabs {
+                        display: flex;
+                        gap: 0.75rem;
+                        margin-bottom: 0.75rem;
+                    }
+
+                    .hnf-tab {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.4rem;
+                        background: var(--glass, rgba(255, 255, 255, 0.03));
+                        border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+                        color: var(--text-secondary, #999);
+                        padding: 0.55rem 1rem;
+                        border-radius: 8px;
+                        font-size: 0.78rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        letter-spacing: 0.3px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    .hnf-tab:hover {
+                        background: rgba(255, 61, 61, 0.08);
+                        border-color: rgba(255, 61, 61, 0.2);
+                        color: var(--text-primary, #fff);
+                    }
+
+                    .hnf-tab.active {
+                        background: var(--accent, #FF3D3D);
+                        border-color: var(--accent, #FF3D3D);
+                        color: #fff;
+                        box-shadow: 0 4px 20px rgba(255, 61, 61, 0.4);
+                    }
+
+                    .hnf-tab.active i {
+                        color: #fff;
+                    }
+
+                    /* Card Stack */
+                    .hnf-card-stack {
+                        position: relative;
+                        transition: none !important;
+                    }
+
+                    .hnf-feed {
+                        position: relative;
+                        transition: none !important;
+                    }
+
+                    .hnf-card {
+                        display: none;
+                    }
+
+                    .hnf-card.active {
+                        display: block;
+                    }
+
+                    .hnf-card-inner {
+                        padding: 1rem 1.25rem;
+                        background: rgba(255, 255, 255, 0.02);
+                        border: 1px solid rgba(255, 255, 255, 0.06);
+                        border-radius: 12px;
+                        cursor: pointer;
+                        transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+                        position: relative;
+                    }
+
+                    .hnf-card-inner:hover {
+                        background: rgba(0, 217, 255, 0.04);
+                        border-color: rgba(0, 217, 255, 0.15);
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                    }
+
+                    .hnf-card-inner::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 3px;
+                        height: 60%;
+                        border-radius: 3px;
+                        background: var(--hnf-accent, #00D9FF);
+                        opacity: 0;
+                        transition: opacity 0.3s ease;
+                    }
+
+                    .hnf-card-inner:hover::before {
+                        opacity: 1;
+                    }
+
+                    /* Meta */
+                    .hnf-card-meta {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .hnf-source {
+                        font-size: 0.65rem;
+                        font-weight: 700;
+                        color: #00D9FF;
+                        text-transform: uppercase;
+                        letter-spacing: 0.8px;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.3rem;
+                    }
+
+                    .hnf-source i {
+                        font-size: 0.55rem;
+                    }
+
+                    .hnf-time {
+                        font-size: 0.65rem;
+                        color: var(--text-muted, #666);
+                        display: flex;
+                        align-items: center;
+                        gap: 0.25rem;
+                    }
+
+                    .hnf-card-title {
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        color: #fff;
+                        margin: 0 0 0.4rem;
+                        line-height: 1.4;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+
+                    .hnf-card-excerpt {
+                        font-size: 0.75rem;
+                        color: var(--text-muted, #888);
+                        line-height: 1.5;
+                        margin: 0 0 0.5rem;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+
+                    .hnf-card-tags {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .hnf-tag {
+                        font-size: 0.55rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.8px;
+                        padding: 0.15rem 0.5rem;
+                        border-radius: 4px;
+                        background: rgba(0, 217, 255, 0.1);
+                        color: #00D9FF;
+                        border: 1px solid rgba(0, 217, 255, 0.2);
+                    }
+
+                    .hnf-tag.ai {
+                        background: rgba(139, 92, 246, 0.1);
+                        color: #8B5CF6;
+                        border-color: rgba(139, 92, 246, 0.2);
+                    }
+
+                    .hnf-reading-time {
+                        font-size: 0.6rem;
+                        color: var(--text-muted, #666);
+                        display: flex;
+                        align-items: center;
+                        gap: 0.25rem;
+                    }
+
+                    .hnf-card-footer {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .hnf-read-more {
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        color: var(--text-muted, #666);
+                        display: flex;
+                        align-items: center;
+                        gap: 0.3rem;
+                        transition: color 0.2s ease;
+                    }
+
+                    .hnf-card-inner:hover .hnf-read-more {
+                        color: #00D9FF;
+                    }
+
+                    .hnf-source-url {
+                        font-size: 0.6rem;
+                        color: var(--text-muted, #555);
+                        display: flex;
+                        align-items: center;
+                        gap: 0.25rem;
+                        opacity: 0.6;
+                        max-width: 160px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .hnf-source-url i {
+                        font-size: 0.5rem;
+                    }
+
+                    /* Navigation */
+                    .hnf-nav {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 0.75rem;
+                        padding-top: 0.75rem;
+                        border-top: 1px solid rgba(255, 255, 255, 0.05);
+                    }
+
+                    .hnf-dots {
+                        display: flex;
+                        gap: 4px;
+                    }
+
+                    .hnf-dot {
+                        width: 16px;
+                        height: 3px;
+                        border-radius: 3px;
+                        background: rgba(255, 255, 255, 0.1);
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                    }
+
+                    .hnf-dot.active {
+                        width: 28px;
+                        background: #00D9FF;
+                        box-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
+                    }
+
+                    .hnf-dot:hover:not(.active) {
+                        background: rgba(255, 255, 255, 0.2);
+                    }
+
+                    .hnf-controls {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                    }
+
+                    .hnf-nav-btn {
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 6px;
+                        border: 1px solid rgba(255, 255, 255, 0.08);
+                        background: rgba(255, 255, 255, 0.03);
+                        color: var(--text-muted, #666);
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.65rem;
+                        transition: all 0.2s ease;
+                    }
+
+                    .hnf-nav-btn:hover {
+                        background: rgba(0, 217, 255, 0.1);
+                        border-color: rgba(0, 217, 255, 0.3);
+                        color: #00D9FF;
+                    }
+
+                    .hnf-counter {
+                        font-size: 0.65rem;
+                        color: var(--text-muted, #666);
+                        font-weight: 600;
+                        font-variant-numeric: tabular-nums;
+                        min-width: 40px;
+                        text-align: center;
+                    }
+
+                    /* View All */
+                    .hnf-view-all {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.4rem;
+                        margin-top: 0.75rem;
+                        padding: 0.5rem;
+                        color: var(--text-muted, #666);
+                        text-decoration: none;
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        transition: all 0.2s ease;
+                        border-radius: 6px;
+                    }
+
+                    .hnf-view-all:hover {
+                        color: #00D9FF;
+                        background: rgba(0, 217, 255, 0.05);
+                    }
+
+                    .hnf-view-all i {
+                        font-size: 0.6rem;
+                        animation: hnfBounce 2s ease-in-out infinite;
+                    }
+
+                    @keyframes hnfBounce {
+                        0%, 100% { transform: translateY(0); }
+                        50% { transform: translateY(3px); }
+                    }
+
+                    /* Light mode */
+                    .light-mode .hero-news-feed {
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.98) 100%);
+                        border-color: rgba(0, 0, 0, 0.08);
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+                    }
+
+                    .light-mode .hero-news-feed::before {
+                        background: linear-gradient(90deg, transparent, rgba(0, 150, 200, 0.3), transparent);
+                    }
+
+                    .light-mode .hnf-title {
+                        color: #1a1a2e;
+                    }
+
+                    .light-mode .hnf-tab {
+                        background: rgba(0, 0, 0, 0.02);
+                        border-color: rgba(0, 0, 0, 0.08);
+                        color: #666;
+                    }
+
+                    .light-mode .hnf-tab.active {
+                        background: var(--accent, #FF3D3D);
+                        border-color: var(--accent, #FF3D3D);
+                        color: #fff;
+                        box-shadow: 0 4px 16px rgba(255, 61, 61, 0.3);
+                    }
+
+                    .light-mode .hnf-card-inner {
+                        background: rgba(0, 0, 0, 0.01);
+                        border-color: rgba(0, 0, 0, 0.06);
+                    }
+
+                    .light-mode .hnf-card-inner:hover {
+                        background: rgba(0, 150, 200, 0.03);
+                        border-color: rgba(0, 150, 200, 0.15);
+                    }
+
+                    .light-mode .hnf-card-title {
+                        color: #1a1a2e;
+                    }
+
+                    .light-mode .hnf-card-excerpt {
+                        color: #666;
+                    }
+
+                    .light-mode .hnf-tag {
+                        background: rgba(0, 150, 200, 0.08);
+                        color: #0099cc;
+                        border-color: rgba(0, 150, 200, 0.15);
+                    }
+
+                    .light-mode .hnf-source {
+                        color: #0099cc;
+                    }
+
+                    .light-mode .hnf-dot.active {
+                        background: #0099cc;
+                        box-shadow: 0 0 8px rgba(0, 150, 200, 0.3);
+                    }
+
+                    .light-mode .hnf-nav-btn {
+                        border-color: rgba(0, 0, 0, 0.08);
+                        background: rgba(0, 0, 0, 0.02);
+                    }
+
+                    .light-mode .hnf-nav-btn:hover {
+                        background: rgba(0, 150, 200, 0.08);
+                        border-color: rgba(0, 150, 200, 0.2);
+                        color: #0099cc;
+                    }
+
+                    .light-mode .hnf-card-inner:hover .hnf-read-more {
+                        color: #0099cc;
+                    }
+
+                    .light-mode .hnf-view-all:hover {
+                        color: #0099cc;
+                        background: rgba(0, 150, 200, 0.05);
+                    }
+
+                    .light-mode .hnf-nav {
+                        border-top-color: rgba(0, 0, 0, 0.06);
+                    }
+
+                    /* Mobile */
                     @media (max-width: 768px) {
-                        .ticker-tab span {
+                        .hero-news-feed {
+                            border-radius: 12px;
+                            padding: 1rem 1rem;
+                            max-width: calc(100% - 2rem);
+                        }
+
+                        .hnf-header {
+                            flex-direction: row;
+                        }
+
+                        .hnf-card-title {
+                            font-size: 0.85rem;
+                        }
+
+                        .hnf-card-stack {
+                            /* auto height */
+                        }
+
+                        .hnf-dots {
                             display: none;
                         }
 
-                        .ticker-fade-left,
-                        .ticker-fade-right {
-                            width: 30px;
+                        .hnf-tab span {
+                            display: none;
+                        }
+
+                        .hnf-tab {
+                            padding: 0.45rem 1rem;
                         }
                     }
                 </style>
+
+                <!-- Hero News Feed Script -->
+                <script>
+                (function() {
+                    let hnfCyberIndex = 0;
+                    let hnfAiIndex = 0;
+                    let hnfCurrentCategory = 'cyber';
+                    let hnfAutoInterval;
+                    let hnfCyberData = [];
+                    let hnfAiData = [];
+
+                    function timeAgo(dateStr) {
+                        const now = new Date();
+                        const then = new Date(dateStr);
+                        const diffMs = now - then;
+                        const diffMins = Math.floor(diffMs / 60000);
+                        const diffHrs = Math.floor(diffMins / 60);
+                        const diffDays = Math.floor(diffHrs / 24);
+                        if (diffDays > 0) return diffDays + 'd ago';
+                        if (diffHrs > 0) return diffHrs + 'h ago';
+                        if (diffMins > 0) return diffMins + 'm ago';
+                        return 'Just now';
+                    }
+
+                    function detectCategory(title, content) {
+                        const text = (title + ' ' + content).toLowerCase();
+                        if (text.includes('ransomware') || text.includes('malware') || text.includes('trojan')) return 'Malware';
+                        if (text.includes('vulnerability') || text.includes('cve') || text.includes('exploit') || text.includes('zero-day') || text.includes('patch')) return 'Vulnerability';
+                        if (text.includes('breach') || text.includes('leak') || text.includes('data theft') || text.includes('exposed')) return 'Data Breach';
+                        if (text.includes('phishing') || text.includes('social engineer') || text.includes('fake')) return 'Phishing';
+                        if (text.includes('ddos') || text.includes('botnet')) return 'DDoS';
+                        if (text.includes('apt') || text.includes('nation-state') || text.includes('espionage')) return 'APT';
+                        if (text.includes('ai ') || text.includes('machine learning') || text.includes('llm') || text.includes('generative')) return 'AI/ML';
+                        if (text.includes('supply chain')) return 'Supply Chain';
+                        if (text.includes('regulation') || text.includes('compliance') || text.includes('gdpr')) return 'Compliance';
+                        return 'Threat Intel';
+                    }
+
+                    function buildFeed(feedId, items, category, accentColor) {
+                        const feed = document.getElementById(feedId);
+                        if (!feed || !items.length) return;
+                        const tagClass = category === 'ai' ? ' ai' : '';
+                        feed.innerHTML = items.map((item, i) => {
+                            const domain = item.sourceUrl ? new URL(item.sourceUrl).hostname.replace('www.','') : '';
+                            const excerpt = (item.content || '').replace(/&#x27;/g, "'").replace(/<[^>]*>/g, '').substring(0, 120);
+                            const wordCount = (item.content || '').replace(/<[^>]*>/g, '').split(/\s+/).length;
+                            const readTime = Math.max(1, Math.ceil(wordCount / 200));
+                            const tag = detectCategory(item.title || '', item.content || '');
+                            return `
+                            <div class="hnf-card ${i === 0 ? 'active' : ''}" data-index="${i}">
+                                <div class="hnf-card-inner" style="--hnf-accent: ${accentColor}" onclick="openNewsModal(${i}, '${category}')">
+                                    <div class="hnf-card-meta">
+                                        <span class="hnf-source" style="color: ${accentColor}"><i class="fas fa-rss"></i> ${item.source || 'Source'}</span>
+                                        <span class="hnf-time"><i class="far fa-clock"></i> ${timeAgo(item.date)}</span>
+                                    </div>
+                                    <h4 class="hnf-card-title">${item.headline || item.title}</h4>
+                                    <p class="hnf-card-excerpt">${excerpt}${excerpt.length >= 120 ? '...' : ''}</p>
+                                    <div class="hnf-card-tags">
+                                        <span class="hnf-tag${tagClass}">${tag}</span>
+                                        <span class="hnf-reading-time"><i class="far fa-clock"></i> ${readTime} min read</span>
+                                    </div>
+                                    <div class="hnf-card-footer">
+                                        <span class="hnf-read-more"><i class="fas fa-expand-alt"></i> Read more</span>
+                                        <span class="hnf-source-url" title="${domain}"><i class="fas fa-link"></i> ${domain}</span>
+                                    </div>
+                                </div>
+                            </div>`;
+                        }).join('');
+                    }
+
+                    function getActiveFeed() {
+                        return document.getElementById(hnfCurrentCategory === 'cyber' ? 'hnfCyberFeed' : 'hnfAiFeed');
+                    }
+
+                    function getCurrentIndex() {
+                        return hnfCurrentCategory === 'cyber' ? hnfCyberIndex : hnfAiIndex;
+                    }
+
+                    function setCurrentIndex(val) {
+                        if (hnfCurrentCategory === 'cyber') hnfCyberIndex = val;
+                        else hnfAiIndex = val;
+                    }
+
+                    function buildDots(count) {
+                        const dotsEl = document.getElementById('hnfDots');
+                        if (!dotsEl) return;
+                        dotsEl.innerHTML = Array.from({length: Math.min(count, 10)}, (_, i) =>
+                            `<div class="hnf-dot ${i === 0 ? 'active' : ''}" data-index="${i}" onclick="heroNewsGo(${i})"></div>`
+                        ).join('');
+                    }
+
+                    function updateDotsAndCounter() {
+                        const data = hnfCurrentCategory === 'cyber' ? hnfCyberData : hnfAiData;
+                        const idx = getCurrentIndex();
+                        // Update dots
+                        const dots = document.querySelectorAll('#hnfDots .hnf-dot');
+                        dots.forEach(d => d.classList.remove('active'));
+                        if (dots[idx]) dots[idx].classList.add('active');
+                        // Update counter
+                        const counter = document.getElementById('hnfCounter');
+                        if (counter) counter.textContent = (idx + 1) + ' / ' + Math.min(data.length, 10);
+                    }
+
+                    function showCard(index) {
+                        const feed = getActiveFeed();
+                        if (!feed) return;
+                        const cards = feed.querySelectorAll('.hnf-card');
+                        if (!cards.length) return;
+
+                        cards.forEach(c => c.classList.remove('active'));
+                        if (cards[index]) cards[index].classList.add('active');
+
+                        setCurrentIndex(index);
+                        updateDotsAndCounter();
+                    }
+
+                    window.heroNewsNext = function() {
+                        const data = hnfCurrentCategory === 'cyber' ? hnfCyberData : hnfAiData;
+                        const max = Math.min(data.length, 10);
+                        const idx = (getCurrentIndex() + 1) % max;
+                        showCard(idx);
+                        resetAuto();
+                    };
+
+                    window.heroNewsPrev = function() {
+                        const data = hnfCurrentCategory === 'cyber' ? hnfCyberData : hnfAiData;
+                        const max = Math.min(data.length, 10);
+                        const idx = (getCurrentIndex() - 1 + max) % max;
+                        showCard(idx);
+                        resetAuto();
+                    };
+
+                    window.heroNewsGo = function(index) {
+                        showCard(index);
+                        resetAuto();
+                    };
+
+                    window.switchHeroNewsFeed = function(category) {
+                        if (category === hnfCurrentCategory) return;
+                        hnfCurrentCategory = category;
+
+                        // Update tabs — just toggle active class
+                        document.querySelectorAll('.hnf-tab').forEach(t => t.classList.remove('active'));
+                        document.querySelector(`.hnf-tab[data-category="${category}"]`).classList.add('active');
+
+                        // Toggle feed visibility — NO innerHTML, NO DOM rebuild
+                        const cyberFeed = document.getElementById('hnfCyberFeed');
+                        const aiFeed = document.getElementById('hnfAiFeed');
+                        if (category === 'cyber') {
+                            cyberFeed.style.display = '';
+                            aiFeed.style.display = 'none';
+                        } else {
+                            cyberFeed.style.display = 'none';
+                            aiFeed.style.display = '';
+                        }
+
+                        // Rebuild dots for this category's count and update counter 
+                        const data = category === 'cyber' ? hnfCyberData : hnfAiData;
+                        buildDots(data.length);
+                        updateDotsAndCounter();
+
+                        resetAuto();
+                    };
+
+                    function startAuto() {
+                        hnfAutoInterval = setInterval(window.heroNewsNext, 4000);
+                    }
+
+                    function resetAuto() {
+                        clearInterval(hnfAutoInterval);
+                        startAuto();
+                    }
+
+                    // Pause on hover
+                    const feedEl = document.getElementById('heroNewsFeed');
+                    if (feedEl) {
+                        feedEl.addEventListener('mouseenter', () => clearInterval(hnfAutoInterval));
+                        feedEl.addEventListener('mouseleave', () => startAuto());
+                    }
+
+                    // Init when content.js data is available
+                    function initHeroNews() {
+                        if (typeof websiteContent === 'undefined') {
+                            setTimeout(initHeroNews, 200);
+                            return;
+                        }
+
+                        hnfCyberData = (websiteContent.cyberShorts || []).slice(0, 10);
+                        hnfAiData = (websiteContent.aiShorts || []).slice(0, 10);
+
+                        // Build BOTH feeds once — no rebuilds on switch
+                        buildFeed('hnfCyberFeed', hnfCyberData, 'cyber', '#00D9FF');
+                        buildFeed('hnfAiFeed', hnfAiData, 'ai', '#8B5CF6');
+
+                        buildDots(hnfCyberData.length);
+
+                        const counter = document.getElementById('hnfCounter');
+                        if (counter) counter.textContent = '1 / ' + Math.min(hnfCyberData.length, 10);
+
+                        // Update timestamp
+                        const ts = document.getElementById('hnfTimestamp');
+                        if (ts && hnfCyberData.length) {
+                            ts.innerHTML = '<i class="far fa-clock"></i> ' + timeAgo(hnfCyberData[0].date);
+                        }
+
+                        startAuto();
+                    }
+
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', () => setTimeout(initHeroNews, 300));
+                    } else {
+                        setTimeout(initHeroNews, 300);
+                    }
+                })();
+                </script>
             </section>
 
             <!-- ========== TRUSTED SOURCES SECTION ========== -->
@@ -2877,78 +3459,12 @@
             }
         });
 
-        // ========== HERO NEWS TICKER ==========
-        let tickerCyberNews = [];
-        let tickerAINews = [];
-
-        function initNewsTicker() {
-            // Wait for websiteContent to be available
-            if (typeof websiteContent !== 'undefined' && websiteContent.cyberShorts) {
-                populateTicker('tickerCyber', websiteContent.cyberShorts.slice(0, 8), 'cyber');
-            } else {
-                // Retry after content loads
-                setTimeout(initNewsTicker, 500);
-                return;
-            }
-
-            if (typeof websiteContent !== 'undefined' && websiteContent.aiShorts) {
-                populateTicker('tickerAI', websiteContent.aiShorts.slice(0, 8), 'ai');
-            }
-        }
-
-        function populateTicker(containerId, articles, category) {
-            const container = document.getElementById(containerId);
-            if (!container || articles.length === 0) return;
-
-            const dotClass = category === 'cyber' ? 'cyber' : 'ai';
-            let html = '';
-
-            // Duplicate articles for seamless scroll
-            const allArticles = [...articles, ...articles];
-            allArticles.forEach((article, index) => {
-                const realIndex = index % articles.length;
-                const title = escapeHTML(article.title || 'Untitled').substring(0, 70);
-                html += `<span class="ticker-item" onclick="openTickerItem(${realIndex}, '${category}')">
-                    <span class="ticker-dot ${dotClass}"></span>
-                    ${title}${title.length >= 70 ? '...' : ''}
-                </span>`;
-            });
-
-            container.innerHTML = html;
-        }
-
-        function switchTickerTab(category) {
-            const cyberTicker = document.getElementById('tickerCyber');
-            const aiTicker = document.getElementById('tickerAI');
-            const tabs = document.querySelectorAll('.ticker-tab');
-
-            tabs.forEach(tab => {
-                tab.classList.remove('active');
-                if (tab.dataset.category === category) {
-                    tab.classList.add('active');
-                }
-            });
-
-            if (category === 'cyber') {
-                cyberTicker.classList.add('active');
-                cyberTicker.style.display = ''; // Allow CSS flex to work
-
-                aiTicker.classList.remove('active');
-                aiTicker.style.display = 'none'; // Ensure hidden
-            } else {
-                cyberTicker.classList.remove('active');
-                cyberTicker.style.display = 'none'; // Ensure hidden
-
-                aiTicker.classList.add('active');
-                aiTicker.style.display = ''; // Allow CSS flex to work
-            }
-        }
-
+        // ========== HERO NEWS TICKER (replaced by Hero News Feed) ==========
+        // Legacy stubs to prevent errors if referenced elsewhere
+        function initNewsTicker() { /* Now handled by Hero News Feed component */ }
+        function switchTickerTab() { }
         function openTickerItem(index, category) {
-            // Use the existing openNewsModal function
-            if (typeof openNewsModal === 'function') {
-                openNewsModal(index, category);
-            }
+            if (typeof openNewsModal === 'function') openNewsModal(index, category);
         }
 
         // ========== DYNAMIC IOC COUNT ==========

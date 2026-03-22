@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "delve-ai-compliance-scandal-2026",
+      "title": "The Delve Scandal: Why 493 Fabricated Audit Reports Just Killed \"Checkbox Security\"",
+      "date": "March 22, 2026",
+      "category": "GRC & Governance",
+      "badge": "SCANDAL",
+      "excerpt": "I have been following this news for the past few days — and the collapse of Delve is the ultimate proof of the \"Checkbox Security\" illusion I warned about last month. From fabricated SOC2 reports to shadow Indian mills.",
+      "image": "images/articles/delve-ai-compliance-scandal-2026.png",
+      "externalUrl": "articles/delve-ai-compliance-scandal-2026.html",
+      "tags": [
+        "Delve Scandal",
+        "SOC2",
+        "ISO 27001",
+        "Fraud",
+        "DeepDelver",
+        "Fake Compliance",
+        "Checkbox Security"
+      ],
+      "author": "Harish G"
+    },
+    {
       "id": "report-20260317",
       "title": "Weekly Threat Report: March 17, 2026",
       "date": "March 17, 2026",

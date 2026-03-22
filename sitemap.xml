@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- March 22, 2026 - Delve Scandal -->
+  <url>
+    <loc>https://thehgtech.com/articles/delve-ai-compliance-scandal-2026.html</loc>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/delve-ai-compliance-scandal-2026.png</image:loc>
+      <image:title>The Delve Scandal: Why 493 Fabricated Audit Reports Just Killed "Checkbox Security"</image:title>
+    </image:image>
+  </url>
+
   <!-- March 9, 2026 - OpenAI Codex Security -->
   <url>
     <loc>https://thehgtech.com/articles/openai-codex-security-11000-bugs-2026.html</loc>
