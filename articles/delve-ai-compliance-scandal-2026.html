@@ -313,22 +313,23 @@
                 <div class="technical-box">
                     <strong>EXECUTIVE SUMMARY (BLUF):</strong>
                     <p>Delve, a YC-backed AI compliance startup valued at $300M, has been exposed for systematically fabricating regulatory audit reports for over 400 clients. A whistleblower leak of 493 draft reports revealed 99.8% identical boilerplate text, "keyboard-mashed" logging values, and a network of "Indian certification mills" posing as US CPA firms. <strong>Severity: Critical. Confidence: High.</strong></p>
-                    <p><em>This analysis is based on whistleblower documents from DeepDelver and investigative reports from TechBuzz as of March 22, 2026.</em></p>
+                    <p><em>Delve has officially denied these allegations, characterizing the leak as "falsified claims from an AI-generated bot" in their recent <a href="https://delve.ai/blog/response-to-misleading-claims">official response</a>.</em></p>
+                    <p><em>This analysis is based on whistleblower documents from the <a href="https://deepdelver.substack.com/p/fcaas-the-delve-leaks">DeepDelver investigation</a> and investigative reports from TechBuzz as of March 22, 2026.</em></p>
                 </div>
 
                 <p>I have been tracking the chatter around Delve since early last week. Initially, it sounded like your typical disgruntled ex-employee post. But over the last 72 hours, the evidence has moved from "allegation" to "irrefutable." This is the Theranos moment for the GRC (Governance, Risk, and Compliance) industry.</p>
 
-                <p>As I noted in our recent deep dive, <strong><a href="/articles/checkbox-security-illusion.html">"The Illusion of Checkbox Security,"</a></strong> our industry has a fatal flaw: we have prioritized the *appearance* of security (compliance) over the *reality* of security (practice).</p>
+                <p>As I noted in our recent deep dive, <strong><a href="/articles/checkbox-security-illusion.html">"The Illusion of Checkbox Security,"</a></strong> our industry has a fatal flaw: we have prioritized the <em>appearance</em> of security (compliance) over the <em>reality</em> of security (practice).</p>
 
                 <p>Delve didn't just exploit this flaw; they automated it into a business model. Marketed as an "AI-driven GRC platform," they promised a SOC 2 in days for $20,000—a fraction of the market rate. With $32M in funding and over 1,500 clients, the scale of the potential fallout is unprecedented.</p>
 
                 <h2>The Anatomy of the "Magic Button"</h2>
 
-                <p>The **"DeepDelver"** investigation, first published on Substack, documented how Delve managed to maintain its breakneck speed. Of the 494 leaked reports analyzed by the security community, 493 were identical templates. The findings are harrowing for any CISO who signed off on a Delve-certified vendor:</p>
+                <p>The <strong><a href="https://deepdelver.substack.com/p/fcaas-the-delve-leaks">"DeepDelver" investigation</a></strong>, first published on Substack, documented how Delve managed to maintain its breakneck speed. Of the 494 leaked reports analyzed by the security community, 493 were identical templates. The findings are harrowing for any CISO who signed off on a Delve-certified vendor:</p>
 
                 <div class="technical-box">
                     <ul>
-                        <li><strong>Algorithmic Evidence Fabrication:</strong> Background checks were "passed" for fictitious employees. In one instance, a report for a fintech firm included background check certifications for a list of names that were actually characters from *The Office*.</li>
+                        <li><strong>Algorithmic Evidence Fabrication:</strong> Background checks were "passed" for fictitious employees. In one instance, a report for a fintech firm included background check certifications for a list of names that were actually characters from <em>The Office</em>.</li>
                         <li><strong>Pre-written Auditor Conclusions:</strong> Database queries and evidence logs were pre-populated with "Success" flags before the client even uploaded their first document. </li>
                         <li><strong>Virtual Shell Auditors:</strong> The so-called "Independent CPAs" utilized by Delve were traced back to a cluster of virtual offices in Wyoming and Delaware. These firms had no actual staff in the US; they were front entities for 24/7 "certification mills" based out of India.</li>
                     </ul>
@@ -349,7 +350,7 @@
                 
                 <p>Delve claimed to serve over 1,500 enterprises. These aren't small shops; we are talking about SaaS vendors, healthcare portals, and fintech startups that millions of people trust with their data. The $300M valuation was built on the back of a lie that was too good to be true.</p>
 
-                <p>The problem isn't just that Delve cheated. The problem is the **Vendor Trust Gap**. Thousands of companies bought other SaaS products *because* those products showed a Delve-signed SOC 2 report. They trusted the checkbox. As I stated in the Illusion article:</p>
+                <p>The problem isn't just that Delve cheated. The problem is the <strong>Vendor Trust Gap</strong>. Thousands of companies bought other SaaS products <em>because</em> those products showed a Delve-signed SOC 2 report. They trusted the checkbox. As I stated in the Illusion article:</p>
 
                 <blockquote>
                     "You cannot audit your way to a secure architecture. Threat actors don't care about your compliance reports; they care about your open ports."
@@ -359,9 +360,9 @@
 
                 <h2>The Visibility Crisis: Where Responsibility Ends</h2>
                 
-                <p>There is a common defense in our world: *"Even if the company has SOC 2/ISO certifications, security still lies with you."*</p>
+                <p>There is a common defense in our world: <em>"Even if the company has SOC 2/ISO certifications, security still lies with you."</em></p>
 
-                <p>While this is true under the **Shared Responsibility Model**, it is fundamentally dishonest when applied to modern SaaS. When your data is hosted on *their* servers and processed by *their* proprietary AI, how can you have visibility? You can't. You are forced to trust the compliance certification as the only proxy for reality.</p>
+                <p>While this is true under the <strong>Shared Responsibility Model</strong>, it is fundamentally dishonest when applied to modern SaaS. When your data is hosted on <em>their</em> servers and processed by <em>their</em> proprietary AI, how can you have visibility? You can't. You are forced to trust the compliance certification as the only proxy for reality.</p>
 
                 <p>If the compliance engine itself—the very source of truth—is corrupted, the entire zero-trust architecture collapses. You are no longer "verifying," you are "guessing."</p>
 
@@ -380,9 +381,7 @@
                     <p><em>Note: Real auditors rarely use "100% fidelity" or "0 anomalies" in a production environment.</em></p>
                 </div>
 
-                <h2>Conclusion: Moving Beyond the Box</h2>
-                
-                <p>The Delve scandal is a wake-up call. We must stop asking for certificates and start asking for **evidence**. If a vendor tells you they are "compliant," ask for a live demo of their posture management. Ask for their real log retention policies. Don't trust the PDF.</p>
+                <p>The Delve scandal is a wake-up call. We must stop asking for certificates and start asking for <strong>evidence</strong>. If a vendor tells you they are "compliant," ask for a live demo of their posture management. Ask for their real log retention policies. Don't trust the PDF.</p>
 
                 <p>As I've said many times before: <strong>"If a risk isn't documented, mitigated, and signed-off, it isn't accepted. It is a ticking time bomb."</strong></p>
 
