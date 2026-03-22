@@ -33,6 +33,14 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1429",
+      "incident_id": 1429,
+      "title": "Bank of Italy Warned That Purported Deepfakes of Governor Fabio Panetta Were Used in Allegedly Fraud",
+      "date": "2026-03-22",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1117",
       "incident_id": 1117,
       "title": "North Korea-Linked Actors Allegedly Use AI Executive Deepfakes in Zoom Phishing Targeting Web3 Emplo",
@@ -1050,9 +1058,9 @@
     }
   ],
   "stats": {
-    "total": 131,
-    "last7Days": 22,
-    "last30Days": 66
+    "total": 132,
+    "last7Days": 23,
+    "last30Days": 67
   },
-  "lastUpdated": "2026-03-22T18:42:21.823278+05:30"
+  "lastUpdated": "2026-03-22T22:14:09.469366+05:30"
 }
