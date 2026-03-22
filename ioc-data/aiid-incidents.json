@@ -1,9 +1,33 @@
 {
   "incidents": [
     {
+      "id": "AIID-1424",
+      "incident_id": 1424,
+      "title": "Claude Code Agent Reportedly Deleted DataTalks.Club Production Infrastructure, Database, and Snapsho",
+      "date": "2026-03-22",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1425",
+      "incident_id": 1425,
+      "title": "'Citizens Against Mamdani' Accounts Reportedly Posted AI-Generated Videos of Fictional New Yorkers t",
+      "date": "2026-03-22",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1427",
       "incident_id": 1427,
       "title": "Baltimore Lawsuit Alleged DraftKings and FanDuel Used Machine-Learning-Driven Targeting to Exploit V",
+      "date": "2026-03-22",
+      "category": "other",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1428",
+      "incident_id": 1428,
+      "title": "UK High Court Found Sky Betting & Gaming Unlawfully Used Automated Profiling and Targeted Marketing ",
       "date": "2026-03-22",
       "category": "other",
       "severity": "high"
@@ -65,36 +89,12 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1424",
-      "incident_id": 1424,
-      "title": "Claude Code Agent Reportedly Deleted DataTalks.Club Production Infrastructure, Database, and Snapsho",
-      "date": "2026-03-21",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1425",
-      "incident_id": 1425,
-      "title": "'Citizens Against Mamdani' Accounts Reportedly Posted AI-Generated Videos of Fictional New Yorkers t",
-      "date": "2026-03-21",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1426",
       "incident_id": 1426,
       "title": "Perplexity AI Reportedly Misstated CLL Research, Allegedly Contributing to Delayed Treatment and Pro",
       "date": "2026-03-21",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1428",
-      "incident_id": 1428,
-      "title": "UK High Court Found Sky Betting & Gaming Unlawfully Used Automated Profiling and Targeted Marketing ",
-      "date": "2026-03-21",
-      "category": "other",
-      "severity": "high"
     },
     {
       "id": "AIID-1416",
@@ -1054,5 +1054,5 @@
     "last7Days": 22,
     "last30Days": 66
   },
-  "lastUpdated": "2026-03-22T14:19:52.100857+05:30"
+  "lastUpdated": "2026-03-22T18:42:21.823278+05:30"
 }
