@@ -980,14 +980,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // 3.5 Get Logo as Base64 helper
                 const getLogoBase64 = () => {
-                    const img = document.querySelector('.logo-img.logo-dark') || document.querySelector('.logo-img');
-                    if (!img) return null;
-                    const canvas = document.createElement('canvas');
-                    canvas.width = img.naturalWidth;
-                    canvas.height = img.naturalHeight;
-                    const ctx = canvas.getContext('2d');
-                    ctx.drawImage(img, 0, 0);
-                    return canvas.toDataURL('image/png');
+                    try {
+                        const img = document.querySelector('.logo-img.logo-dark') || document.querySelector('.logo-img');
+                        if (!img || !img.naturalWidth) return null;
+                        const canvas = document.createElement('canvas');
+                        canvas.width = img.naturalWidth;
+                        canvas.height = img.naturalHeight;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0);
+                        return canvas.toDataURL('image/png');
+                    } catch (e) {
+                        console.warn("Could not capture logo for PDF (Tainted Canvas/CORS):", e);
+                        return null;
+                    }
                 };
                 const logoBase64 = getLogoBase64();
 
