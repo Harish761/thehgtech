@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-03-23T02:23:53.334063",
+  "last_updated": "2026-03-23T13:09:28.750189",
   "period": "Last 7 days",
   "total_groups": 27,
-  "total_victims": 269,
+  "total_victims": 260,
   "groups": [
     {
       "name": "Qilin",
-      "count": 47,
+      "count": 43,
       "victims": [
         {
           "name": "Southern Commercial Real Estate",
@@ -87,7 +87,7 @@
       "trend_percentage": 15,
       "daily_counts": [
         1,
-        11,
+        9,
         4,
         6,
         8,
@@ -187,8 +187,99 @@
       ]
     },
     {
+      "name": "Nightspire",
+      "count": 29,
+      "victims": [
+        {
+          "name": "**l**a* & ***c** **n*n**** I**e*t**** *L*",
+          "date": "2026-03-23 06:15:15.062987",
+          "url": "",
+          "discovered_date": "2026-03-23T06:15:15.062987"
+        },
+        {
+          "name": "*o**e-*a** du ***n*c****",
+          "date": "2026-03-23 06:15:20.726862",
+          "url": "",
+          "discovered_date": "2026-03-23T06:15:20.726862"
+        },
+        {
+          "name": "O**e*",
+          "date": "2026-03-22 01:31:46.114589",
+          "url": "",
+          "discovered_date": "2026-03-22T01:31:46.114589"
+        },
+        {
+          "name": "**o**d* *h**a*y ***v***s",
+          "date": "2026-03-22 14:59:49.227947",
+          "url": "",
+          "discovered_date": "2026-03-22T14:59:49.227947"
+        },
+        {
+          "name": "**V**C** *E**C** ***EM**I**",
+          "date": "2026-03-21 15:00:44.293519",
+          "url": "",
+          "discovered_date": "2026-03-21T15:00:44.293519"
+        },
+        {
+          "name": "*L* **i**n*-**n**** GmbH",
+          "date": "2026-03-23 06:15:18.202020",
+          "url": "",
+          "discovered_date": "2026-03-23T06:15:18.202020"
+        },
+        {
+          "name": "Semenya Furumele Consulting Engineers",
+          "date": "2026-03-22 15:00:15.652523",
+          "url": "",
+          "discovered_date": "2026-03-22T15:00:15.652523"
+        },
+        {
+          "name": "G* *r**c*",
+          "date": "2026-03-19 21:03:00.149848",
+          "url": "",
+          "discovered_date": "2026-03-19T21:03:00.149848"
+        },
+        {
+          "name": "GD France",
+          "date": "2026-03-20 10:19:04.694130",
+          "url": "",
+          "discovered_date": "2026-03-20T10:19:04.694130"
+        },
+        {
+          "name": "SAS CAP ESTEL HOTEL",
+          "date": "2026-03-22 15:00:40.961528",
+          "url": "",
+          "discovered_date": "2026-03-22T15:00:40.961528"
+        }
+      ],
+      "industries": [
+        "Construction",
+        "Financial Services",
+        "Healthcare",
+        "Hospitality and Tourism",
+        "Not Found"
+      ],
+      "countries": [
+        "FR",
+        "GR",
+        "N/A",
+        "PA",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        3,
+        0,
+        2,
+        2,
+        6,
+        10,
+        6
+      ]
+    },
+    {
       "name": "Thegentlemen",
-      "count": 33,
+      "count": 26,
       "victims": [
         {
           "name": "SATS Sports Club Sweden",
@@ -282,6 +373,12 @@
       "count": 25,
       "victims": [
         {
+          "name": "Dixon Electrical Systems & Contracting",
+          "date": "2026-03-23 12:32:27.606938",
+          "url": "",
+          "discovered_date": "2026-03-23T12:32:27.606938"
+        },
+        {
           "name": "bdtronic",
           "date": "2026-03-20 12:31:07.356555",
           "url": "",
@@ -334,12 +431,6 @@
           "date": "2026-03-20T15:25:53+00:00",
           "url": "https://www.ransomware.live/id/SU5QIFNjaHdlaXpAYWtpcmE=",
           "discovered_date": "2026-03-20T15:25:53+00:00"
-        },
-        {
-          "name": "Savvy Hawk",
-          "date": "2026-03-20T15:25:49+00:00",
-          "url": "https://www.ransomware.live/id/U2F2dnkgSGF3a0Bha2lyYQ==",
-          "discovered_date": "2026-03-20T15:25:49+00:00"
         }
       ],
       "industries": [
@@ -364,98 +455,7 @@
         10,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Nightspire",
-      "count": 23,
-      "victims": [
-        {
-          "name": "O**e*",
-          "date": "2026-03-22 01:31:46.114589",
-          "url": "",
-          "discovered_date": "2026-03-22T01:31:46.114589"
-        },
-        {
-          "name": "**o**d* *h**a*y ***v***s",
-          "date": "2026-03-22 14:59:49.227947",
-          "url": "",
-          "discovered_date": "2026-03-22T14:59:49.227947"
-        },
-        {
-          "name": "**V**C** *E**C** ***EM**I**",
-          "date": "2026-03-21 15:00:44.293519",
-          "url": "",
-          "discovered_date": "2026-03-21T15:00:44.293519"
-        },
-        {
-          "name": "Semenya Furumele Consulting Engineers",
-          "date": "2026-03-22 15:00:15.652523",
-          "url": "",
-          "discovered_date": "2026-03-22T15:00:15.652523"
-        },
-        {
-          "name": "G* *r**c*",
-          "date": "2026-03-19 21:03:00.149848",
-          "url": "",
-          "discovered_date": "2026-03-19T21:03:00.149848"
-        },
-        {
-          "name": "GD France",
-          "date": "2026-03-20 10:19:04.694130",
-          "url": "",
-          "discovered_date": "2026-03-20T10:19:04.694130"
-        },
-        {
-          "name": "SAS CAP ESTEL HOTEL",
-          "date": "2026-03-22 15:00:40.961528",
-          "url": "",
-          "discovered_date": "2026-03-22T15:00:40.961528"
-        },
-        {
-          "name": "Cannavative Group",
-          "date": "2026-03-22 15:01:05.252925",
-          "url": "",
-          "discovered_date": "2026-03-22T15:01:05.252925"
-        },
-        {
-          "name": "IASMOS",
-          "date": "2026-03-21 16:29:11.242014",
-          "url": "",
-          "discovered_date": "2026-03-21T16:29:11.242014"
-        },
-        {
-          "name": "Fidanque Hermanos e Hijos, S.A",
-          "date": "2026-03-21 15:01:27.747360",
-          "url": "",
-          "discovered_date": "2026-03-21T15:01:27.747360"
-        }
-      ],
-      "industries": [
-        "Construction",
-        "Healthcare",
-        "Hospitality and Tourism",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "FR",
-        "GR",
-        "N/A",
-        "PA",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        3,
-        0,
-        2,
-        2,
-        6,
-        10,
-        0
+        1
       ]
     },
     {
@@ -973,66 +973,6 @@
       ]
     },
     {
-      "name": "Handala",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Martyr Ali Larijani",
-          "date": "2026-03-18T08:40:34+00:00",
-          "url": "https://www.ransomware.live/id/TWFydHlyIEFsaSBMYXJpamFuaUBoYW5kYWxh",
-          "discovered_date": "2026-03-18T08:40:34+00:00"
-        },
-        {
-          "name": "Vahid Offline Members",
-          "date": "2026-03-17T15:09:22+00:00",
-          "url": "https://www.ransomware.live/id/VmFoaWQgT2ZmbGluZSBNZW1iZXJzQGhhbmRhbGE=",
-          "discovered_date": "2026-03-17T15:09:22+00:00"
-        },
-        {
-          "name": "Who is VahidOnline?",
-          "date": "2026-03-17T11:11:49+00:00",
-          "url": "https://www.ransomware.live/id/V2hvIGlzIFZhaGlkT25saW5lP0BoYW5kYWxh",
-          "discovered_date": "2026-03-17T11:11:49+00:00"
-        },
-        {
-          "name": "Mossad’s Secret Treasury Exposed: 50,000 Confidential Emails Leaked",
-          "date": "2026-03-17T08:37:51+00:00",
-          "url": "https://www.ransomware.live/id/TW9zc2Fk4oCZcyBTZWNyZXQgVHJlYXN1cnkgRXhwb3NlZDogNTAsMDAwIENvbmZpZGVudGlhbCBFbWFpbHMgTGVha2VkQGhhbmRhbGE=",
-          "discovered_date": "2026-03-17T08:37:51+00:00"
-        },
-        {
-          "name": "Stryker Hit by Unprecedented 12-Petabyte Data Wipe",
-          "date": "2026-03-16T10:05:37+00:00",
-          "url": "https://www.ransomware.live/id/U3RyeWtlciBIaXQgYnkgVW5wcmVjZWRlbnRlZCAxMi1QZXRhYnl0ZSBEYXRhIFdpcGVAaGFuZGFsYQ==",
-          "discovered_date": "2026-03-16T10:05:37+00:00"
-        },
-        {
-          "name": "Shock for Israeli Intelligence: 100,000 Classified Emails of Mossad’s Ex-Deputy Director S...",
-          "date": "2026-03-16T10:05:00+00:00",
-          "url": "https://www.ransomware.live/id/U2hvY2sgZm9yIElzcmFlbGkgSW50ZWxsaWdlbmNlOiAxMDAsMDAwIENsYXNzaWZpZWQgRW1haWxzIG9mIE1vc3NhZOKAmXMgRXgtRGVwdXR5IERpcmVjdG9yIFMuLi5AaGFuZGFsYQ==",
-          "discovered_date": "2026-03-16T10:05:00+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "IL",
-        "IR",
-        "N/A",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        3,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Safepay",
       "count": 5,
       "victims": [
@@ -1135,48 +1075,47 @@
       ]
     },
     {
-      "name": "Chaos",
+      "name": "Handala",
       "count": 4,
       "victims": [
         {
-          "name": "loopcap.com",
-          "date": "2026-03-18 17:32:11.100205",
-          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/pAJEoGD0IPltwmdp8J8wiDnx8CGpSz5j",
-          "discovered_date": "2026-03-18T17:32:11.100205"
+          "name": "Martyr Ali Larijani",
+          "date": "2026-03-18T08:40:34+00:00",
+          "url": "https://www.ransomware.live/id/TWFydHlyIEFsaSBMYXJpamFuaUBoYW5kYWxh",
+          "discovered_date": "2026-03-18T08:40:34+00:00"
         },
         {
-          "name": "smythco.com",
-          "date": "2026-03-20 20:01:07.207414",
-          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/EKOWyRZFHpYF8o9Bg0IyEzYToXLhueXD",
-          "discovered_date": "2026-03-20T20:01:07.207414"
+          "name": "Vahid Offline Members",
+          "date": "2026-03-17T15:09:22+00:00",
+          "url": "https://www.ransomware.live/id/VmFoaWQgT2ZmbGluZSBNZW1iZXJzQGhhbmRhbGE=",
+          "discovered_date": "2026-03-17T15:09:22+00:00"
         },
         {
-          "name": "smythco.com",
-          "date": "2026-03-20T20:01:07+00:00",
-          "url": "https://www.ransomware.live/id/c215dGhjby5jb21AY2hhb3M=",
-          "discovered_date": "2026-03-20T20:01:07+00:00"
+          "name": "Who is VahidOnline?",
+          "date": "2026-03-17T11:11:49+00:00",
+          "url": "https://www.ransomware.live/id/V2hvIGlzIFZhaGlkT25saW5lP0BoYW5kYWxh",
+          "discovered_date": "2026-03-17T11:11:49+00:00"
         },
         {
-          "name": "loopcap.com",
-          "date": "2026-03-18T17:32:11+00:00",
-          "url": "https://www.ransomware.live/id/bG9vcGNhcC5jb21AY2hhb3M=",
-          "discovered_date": "2026-03-18T17:32:11+00:00"
+          "name": "Mossad’s Secret Treasury Exposed: 50,000 Confidential Emails Leaked",
+          "date": "2026-03-17T08:37:51+00:00",
+          "url": "https://www.ransomware.live/id/TW9zc2Fk4oCZcyBTZWNyZXQgVHJlYXN1cnkgRXhwb3NlZDogNTAsMDAwIENvbmZpZGVudGlhbCBFbWFpbHMgTGVha2VkQGhhbmRhbGE=",
+          "discovered_date": "2026-03-17T08:37:51+00:00"
         }
       ],
-      "industries": [
-        "Business Services",
-        "Technology"
-      ],
+      "industries": [],
       "countries": [
-        "US"
+        "IL",
+        "IR",
+        "N/A"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
+        3,
+        1,
         0,
-        2,
         0,
-        2,
         0,
         0,
         0
@@ -1225,30 +1164,30 @@
       ]
     },
     {
-      "name": "Insomnia",
+      "name": "Chaos",
       "count": 3,
       "victims": [
         {
-          "name": "Valley Family Health Care",
-          "date": "2026-03-18 16:16:03.045326",
-          "url": "http://i62huw7ve22rpyw6lnq3kmfump2dmsg4xpveec3ere73njwatrz74gad.onion/Company/VFHC/",
-          "discovered_date": "2026-03-18T16:16:03.045326"
+          "name": "smythco.com",
+          "date": "2026-03-20 20:01:07.207414",
+          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/EKOWyRZFHpYF8o9Bg0IyEzYToXLhueXD",
+          "discovered_date": "2026-03-20T20:01:07.207414"
         },
         {
-          "name": "Valley Family Health Care",
-          "date": "2026-03-18T16:16:03+00:00",
-          "url": "https://www.ransomware.live/id/VmFsbGV5IEZhbWlseSBIZWFsdGggQ2FyZUBpbnNvbW5pYQ==",
-          "discovered_date": "2026-03-18T16:16:03+00:00"
+          "name": "smythco.com",
+          "date": "2026-03-20T20:01:07+00:00",
+          "url": "https://www.ransomware.live/id/c215dGhjby5jb21AY2hhb3M=",
+          "discovered_date": "2026-03-20T20:01:07+00:00"
         },
         {
-          "name": "**l** ****** ****** C***",
-          "date": "2026-03-17T14:02:21+00:00",
-          "url": "https://www.ransomware.live/id/KipsKiogKioqKioqICoqKioqKiBDKioqQGluc29tbmlh",
-          "discovered_date": "2026-03-17T14:02:21+00:00"
+          "name": "loopcap.com",
+          "date": "2026-03-18T17:32:11+00:00",
+          "url": "https://www.ransomware.live/id/bG9vcGNhcC5jb21AY2hhb3M=",
+          "discovered_date": "2026-03-18T17:32:11+00:00"
         }
       ],
       "industries": [
-        "Healthcare"
+        "Business Services"
       ],
       "countries": [
         "US"
@@ -1256,10 +1195,10 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
+        0,
         1,
+        0,
         2,
-        0,
-        0,
         0,
         0,
         0
@@ -1364,6 +1303,39 @@
         0,
         0,
         2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Insomnia",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Valley Family Health Care",
+          "date": "2026-03-18T16:16:03+00:00",
+          "url": "https://www.ransomware.live/id/VmFsbGV5IEZhbWlseSBIZWFsdGggQ2FyZUBpbnNvbW5pYQ==",
+          "discovered_date": "2026-03-18T16:16:03+00:00"
+        },
+        {
+          "name": "**l** ****** ****** C***",
+          "date": "2026-03-17T14:02:21+00:00",
+          "url": "https://www.ransomware.live/id/KipsKiogKioqKioqICoqKioqKiBDKioqQGluc29tbmlh",
+          "discovered_date": "2026-03-17T14:02:21+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        1,
+        0,
         0,
         0,
         0,
