@@ -5,6 +5,15 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 23 2026",
+            "headline": "Instagram Kills End-to-End Encryption - Privacy Rollback Confirmed",
+            "title": "Meta Officially Deprecates Instagram E2EE; Zero-Knowledge Architecture to End May 8",
+            "content": "Meta has announced the total removal of End-to-End Encryption (E2EE) for Instagram Direct Messages, effective May 8, 2026. This unprecedented rollback effectively reinstates server-side visibility into billions of private communications. While Meta cites low usage and cleanup, industry experts point to increasing regulatory pressure for CSAM scanning and content moderation as the primary drivers. Users are advised to download their data before the deadline and migrate sensitive conversations to dedicated encrypted platforms like Signal or WhatsApp. This move marks a significant shift in Meta's long-term 'privacy-focused' vision for its social ecosystem.",
+            "source": "TheHGTech Intelligence",
+            "sourceUrl": "https://thehgtech.com/articles/instagram-e2ee-rollback-2026.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
             "headline": "Trivy Scanner Compromised—Supply Chain Attack Delivers Malware",
             "title": "Aqua&#x27;s Trivy Vulnerability Scanner Compromised in Supply Chain Attack",
             "content": "Hackers have successfully compromised Aqua&#x27;s Trivy vulnerability scanner, a popular tool used for detecting security issues in container images. The attackers published a malicious release, redirecting tags to an information-stealer malware. This breach poses significant risks to organizations relying on Trivy for securing their DevOps pipelines, potentially exposing sensitive data. The incident underscores the growing threat of supply chain attacks, where malicious actors target software dependencies to infiltrate broader networks. Users of Trivy are urged to verify their downloads and monitor for any unauthorized activities. This attack highlights the need for enhanced supply chain security measures in the software development lifecycle.",

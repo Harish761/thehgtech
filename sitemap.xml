@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- March 23, 2026 - Instagram E2EE Rollback -->
+  <url>
+    <loc>https://thehgtech.com/articles/instagram-e2ee-rollback-2026.html</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/instagram-e2ee-rollback-2026.png</image:loc>
+      <image:title>The Death of Instagram E2EE: Why Meta is Breaking Its Own Zero-Knowledge Architecture</image:title>
+    </image:image>
+  </url>
+
   <!-- March 22, 2026 - Delve Scandal -->
   <url>
     <loc>https://thehgtech.com/articles/delve-ai-compliance-scandal-2026.html</loc>

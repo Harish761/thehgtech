@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "instagram-e2ee-rollback-2026",
+      "title": "The Death of Instagram E2EE: Why Meta is Breaking Its Own Zero-Knowledge Architecture by May 8",
+      "date": "March 23, 2026",
+      "category": "Architecture",
+      "badge": "E2EE ROLLBACK",
+      "excerpt": "Starting May 8, 2026, Meta will fully deprecate End-to-End Encryption for Instagram DMs. This transition from zero-knowledge security to centralized moderation marks a massive shift in the privacy landscape.",
+      "image": "images/articles/instagram-e2ee-rollback-2026.png",
+      "externalUrl": "articles/instagram-e2ee-rollback-2026.html",
+      "tags": [
+        "Instagram",
+        "Meta",
+        "E2EE",
+        "Encryption",
+        "Privacy Rollback",
+        "Signal Protocol",
+        "Architecture"
+      ],
+      "author": "Harish G"
+    },
+    {
       "id": "report-20260323",
       "title": "Weekly Threat Report: March 23, 2026",
       "date": "March 23, 2026",
