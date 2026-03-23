@@ -456,16 +456,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             const d = grcData.domains[globalIdx];
             d.controls.forEach(c => {
                 totalControls++;
-                if (userState[c.control_id]) answeredControls++;
-                if (userState[c.control_id] === 'yes' || userState[c.control_id] === 'na') {
-                    implementedControls++;
-                } else if (userState[c.control_id] === 'partial') {
-                    implementedControls += 0.5;
+                if (userState[c.control_id]) {
+                    answeredControls++;
+                    if (userState[c.control_id] === 'yes' || userState[c.control_id] === 'na') {
+                        implementedControls++;
+                    } else if (userState[c.control_id] === 'partial') {
+                        implementedControls += 0.5;
+                    }
                 }
             });
         });
 
-        const score = totalControls === 0 ? 0 : Math.round((implementedControls / totalControls) * 100);
+        const score = answeredControls === 0 ? 0 : Math.round((implementedControls / answeredControls) * 100);
         ui.overallScore.innerText = `${score}%`;
 
         if (score >= 85) ui.overallScore.style.color = '#10B981';
@@ -606,12 +608,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             const d = grcData.domains[globalIdx];
             labels.push(d.name.replace(' Controls', ''));
 
-            let total = 0;
+            let answeredTotal = 0;
             let impl = 0;
 
             d.controls.forEach(c => {
-                total++;
                 const ans = userState[c.control_id];
+                if (!ans) return; // Skip unanswered for partial dashboard metrics
+                
+                answeredTotal++;
                 const scoreValue = (ans === 'yes' || ans === 'na') ? 1 : (ans === 'partial' ? 0.5 : 0);
                 
                 if (ans === 'yes' || ans === 'na') impl++;
@@ -635,17 +639,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                     });
                 }
             });
-            dataset.push(total === 0 ? 0 : Math.round((impl / total) * 100));
+            dataset.push(answeredTotal === 0 ? 0 : Math.round((impl / answeredTotal) * 100));
         });
 
-        // 0. Update Framework Scores with Realistic Denominators
-        // NIST CSF 2.0 has 106 subcategories, CIS v8 has 153 Safeguards.
-        // This provides a realistic "Industry Readiness" score rather than just a 1:1 question count.
-        const NIST_DENOMINATOR = 106;
-        const CIS_DENOMINATOR = 153;
-
-        const nistPct = Math.round((nistValue / NIST_DENOMINATOR) * 100);
-        const cisPct = Math.round((cisValue / CIS_DENOMINATOR) * 100);
+        // 0. Update Framework Scores with Assessed Scope Denominators
+        // Only counting controls that the user actually evaluated to avoid penalty on partial dashboards.
+        const nistPct = nistTotal === 0 ? 0 : Math.round((nistValue / nistTotal) * 100);
+        const cisPct = cisTotal === 0 ? 0 : Math.round((cisValue / cisTotal) * 100);
         
         document.getElementById('nistScore').innerText = `${nistPct}%`;
         document.getElementById('cisScore').innerText = `${cisPct}%`;
@@ -900,12 +900,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
                     domain.controls.forEach(c => {
+                        const ans = userState[c.control_id];
+                        if (!ans) return; // Skip unanswered so PDF only reflects assessed controls
+                        
                         totalC++;
-                        const ans = userState[c.control_id] || '';
                         const sVal = (ans === 'yes' || ans === 'na') ? 1 : (ans === 'partial' ? 0.5 : 0);
 
-                        if (c.nist_mapping) { nistV += sVal; }
-                        if (c.cis_mapping) { cisV += sVal; }
+                        if (c.nist_mapping) { nistT++; nistV += sVal; }
+                        if (c.cis_mapping) { cisT++; cisV += sVal; }
 
                         if (ans === 'yes') implC++;
                         else if (ans === 'partial') { 
@@ -913,17 +915,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                             criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', effort: 'Medium', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
                         }
                         else if (ans === 'na') naC++;
-                        else { 
+                        else if (ans === 'no') { 
                             gapC++; 
                             criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', effort: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
                         }
                     });
                 });
 
-                const NIST_DENOMINATOR_PDF = 106;
-                const CIS_DENOMINATOR_PDF = 153;
-                const nistP = Math.round((nistV / NIST_DENOMINATOR_PDF) * 100);
-                const cisP = Math.round((cisV / CIS_DENOMINATOR_PDF) * 100);
+                const nistP = nistT === 0 ? 0 : Math.round((nistV / nistT) * 100);
+                const cisP = cisT === 0 ? 0 : Math.round((cisV / cisT) * 100);
 
                 // Decision Engine: Maturity & Top 3
                 const finalP = parseInt(ui.overallScore.innerText.replace('%', ''));
@@ -1140,21 +1140,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
                     domain.controls.forEach(c => {
+                        const ans = userState[c.control_id];
+                        if (!ans) return; // Summary should only reflect what was answered if it's a partial export
+                        
                         totalC++;
-                        const ans = userState[c.control_id] || '';
                         if (ans === 'yes') implC++;
                         else if (ans === 'partial') partC++;
                         else if (ans === 'na') naC++;
-                        else gapC++;
+                        else if (ans === 'no') gapC++;
 
-                        if (ans === 'no' || ans === 'partial' || ans === '') {
+                        if (ans === 'no' || ans === 'partial') {
                             const riskText = c.expert_rationale && c.expert_rationale.includes('|') ? c.expert_rationale.split('|')[0].replace('Risk:', '').trim() : "Direct exposure to control failure.";
                             criticalGaps.push([c.control_id, c.control_title, ans === 'partial' ? 'Medium' : 'High', riskText, c.remediation_advice]);
                         }
                     });
                 });
 
-                execSummary.push(["Total Controls scoped:", totalC]);
+                execSummary.push(["Total Controls evaluated:", totalC]);
                 execSummary.push(["Implemented:", implC]);
                 execSummary.push(["Partial (In-Progress):", partC]);
                 execSummary.push(["Control Gap:", gapC]);
