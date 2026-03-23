@@ -4,66 +4,66 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 21 2026",
-            "headline": "Russian Hackers Target Signal, WhatsApp in Phishing Blitz",
-            "title": "FBI Alerts to Russian Phishing Attacks on Signal and WhatsApp Users",
-            "content": "The FBI has issued a warning regarding phishing campaigns by Russian Intelligence Services aimed at compromising Signal and WhatsApp accounts. These attacks specifically target individuals with high intelligence value, such as government officials and business leaders. The phishing attempts involve tricking users into divulging login credentials, allowing attackers to seize control of their accounts. This campaign underscores the increasing sophistication of state-sponsored cyber operations. Users are advised to enable two-factor authentication and remain vigilant against suspicious messages to safeguard their accounts.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/fbi-warns-russian-hackers-target-signal.html",
+            "date": "Mar 23 2026",
+            "headline": "ISC Stormcast Highlights Cyber Threats—Stay Vigilant",
+            "title": "SANS Internet Storm Center&#x27;s March 23rd Stormcast Focuses on Key Cyber Threats",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing crucial updates on current cyber threats and trends. This episode focuses on the ongoing vigilance required to protect against evolving security challenges. The InfoCON level remains at green, indicating a stable threat environment, but listeners are reminded to stay alert against potential threats. The podcast serves as a valuable resource for cybersecurity professionals seeking to stay informed about the latest developments in the field. Regular updates like these are essential for maintaining strong security postures in an ever-changing digital landscape.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32818",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 22 2026",
+            "headline": "Train Outages—Simple Network Flaws to Blame",
+            "title": "Network Issues Lead to Major Train Outages in Bay Area",
+            "content": "The latest episode of the Lock and Code podcast by Malwarebytes delves into recent train outages in the Bay Area caused by seemingly simple network issues. Rachel Swan discusses how these vulnerabilities can lead to significant disruptions in public transportation systems. The episode highlights the importance of robust network security measures to prevent such incidents. As cities increasingly rely on digital infrastructure, ensuring the resilience of these systems against cyber threats is critical. Organizations managing critical infrastructure should conduct regular security audits and implement comprehensive incident response plans.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/podcast/2026/03/this-is-all-it-takes-to-stop-a-train-lock-and-code-s07e06",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 22 2026",
+            "headline": "VoidStealer Exploits Chrome—Master Key Stolen",
+            "title": "VoidStealer Malware Bypasses Chrome Encryption to Steal Master Key",
+            "content": "VoidStealer, a new information-stealing malware, has been identified using an innovative method to bypass Chrome&#x27;s Application-Bound Encryption (ABE). This technique allows the malware to extract the master key used for decrypting sensitive data stored within the browser. By exploiting debugger tricks, VoidStealer poses a significant threat to users&#x27; privacy and data security. Affected users should promptly update their Chrome browsers and employ comprehensive security solutions to mitigate potential risks. This development underscores the need for continuous vigilance against evolving malware tactics targeting widely used applications.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/voidstealer-malware-steals-chrome-master-key-via-debugger-trick/",
             "relatedResources": []
         },
         {
             "date": "Mar 21 2026",
-            "headline": "Quest KACE Vulnerability Exploited—Education Sector at Risk",
-            "title": "CVE-2025-32975 in Quest KACE Exploited in Education Sector Attacks",
-            "content": "Security researchers have identified active exploitation of a critical vulnerability in Quest KACE, tracked as CVE-2025-32975, potentially impacting educational institutions. This flaw allows attackers to execute arbitrary code, posing significant risks to data integrity and system operations. The vulnerability has been linked to unauthorized access and potential data breaches within the education sector. Institutions using Quest KACE are urged to apply available patches immediately and review security protocols to mitigate further risks. This incident highlights the ongoing challenges in securing educational technology infrastructures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-quest-kace-vulnerability-potentially-exploited-in-attacks/",
+            "headline": "Trivy Scanner Breach—Infostealer Deployed via GitHub",
+            "title": "Trivy Vulnerability Scanner Compromised in Supply-Chain Attack",
+            "content": "The Trivy vulnerability scanner has fallen victim to a supply-chain attack orchestrated by the threat group known as TeamPCP. This breach enabled the distribution of credential-stealing malware through official releases and GitHub Actions. The attack highlights the growing threat of supply-chain vulnerabilities in software development environments. Developers using Trivy are urged to verify the integrity of their installations and update to the latest secure versions. This incident serves as a stark reminder of the importance of securing software supply chains against malicious actors.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trivy-vulnerability-scanner-breach-pushed-infostealer-via-github-actions/",
             "relatedResources": []
         },
         {
             "date": "Mar 21 2026",
-            "headline": "Oracle&#x27;s Critical RCE Flaw—Patch CVE-2026-21992 Now",
-            "title": "Oracle Fixes Critical RCE Vulnerability CVE-2026-21992 in Identity Manager",
-            "content": "Oracle has released a patch for CVE-2026-21992, a critical vulnerability in Identity Manager and Web Services Manager with a CVSS score of 9.8. The flaw allows unauthenticated remote code execution, posing severe risks to organizations using these systems. Exploitation of this vulnerability could lead to unauthorized access and control over sensitive applications. Oracle users should prioritize applying the patch to prevent potential breaches. This update is part of a broader effort to address security gaps in Oracle&#x27;s software offerings.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/oracle-patches-critical-cve-2026-21992.html",
+            "headline": "Android&#x27;s Advanced Flow—Secure APK Sideloading Unveiled",
+            "title": "Google Introduces Advanced Flow for Secure APK Sideloading on Android",
+            "content": "Google has announced the introduction of Advanced Flow, a new feature in Android designed to enhance the security of APK sideloading from unverified developers. This mechanism aims to provide power users with a safer way to install applications outside of the Google Play Store. By implementing additional security checks, Advanced Flow seeks to mitigate the risks associated with sideloading apps, which can be a vector for malware. Users are encouraged to use this feature to protect their devices from unauthorized or harmful applications. This move reflects Google&#x27;s ongoing commitment to improving Android&#x27;s security framework.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-adds-advanced-flow-for-safe-apk-sideloading-on-android/",
             "relatedResources": []
         },
         {
             "date": "Mar 21 2026",
-            "headline": "CanisterWorm Hits 47 npm Packages—Trivy Attack Expands",
-            "title": "Trivy Supply Chain Attack Propagates CanisterWorm Across npm Ecosystem",
-            "content": "A supply chain attack linked to the Trivy vulnerability scanner has compromised 47 npm packages with a worm dubbed CanisterWorm. This self-propagating malware exploits vulnerabilities in the affected packages, potentially impacting thousands of projects relying on npm. The attack reflects a growing trend of targeting open-source ecosystems to inject malicious code. Developers using npm packages should conduct thorough reviews and apply security updates to mitigate risks. This incident underscores the importance of securing supply chains in software development.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/trivy-supply-chain-attack-triggers-self.html",
+            "headline": "Azure Monitor Alerts Exploited—Phishing Scams Emerge",
+            "title": "Microsoft Azure Monitor Alerts Abused for Phishing Attacks",
+            "content": "Microsoft Azure Monitor alerts are being exploited in a new phishing campaign that impersonates official communications from the Microsoft Security Team. Attackers are using these alerts to send callback phishing emails, falsely warning recipients of unauthorized charges on their accounts. This tactic aims to trick users into divulging sensitive information under the guise of account security. Organizations using Azure should be vigilant and educate their teams about recognizing phishing attempts. Implementing multi-factor authentication and monitoring for unusual account activity can help mitigate these risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-azure-monitor-alerts-abused-in-callback-phishing-campaigns/",
             "relatedResources": []
         },
         {
-            "date": "Mar 21 2026",
-            "headline": "CISA Urges Patching Apple, Craft CMS, Laravel Bugs by April 3",
-            "title": "CISA Adds Apple, Craft CMS, Laravel Flaws to Exploited Vulnerabilities List",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added five vulnerabilities affecting Apple, Craft CMS, and Laravel Livewire to its Known Exploited Vulnerabilities catalog. Federal agencies are required to patch these flaws by April 3, 2026, to prevent potential exploitation. These vulnerabilities could lead to unauthorized access and data breaches if left unaddressed. Organizations using these technologies should prioritize patching and review their security measures. CISA&#x27;s directive highlights the critical importance of timely vulnerability management.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 21 2026",
-            "headline": "Trivy Compromised—Credential Stealer Injected in Supply Chain Attack",
-            "title": "Trivy Vulnerability Scanner Breached with Credential-Stealing Malware",
-            "content": "Attackers have backdoored the open-source Trivy vulnerability scanner, embedding credential-stealing malware into its releases and GitHub Actions. This breach threatens thousands of CI/CD workflows that rely on Trivy for security assessments. The compromised versions could lead to further supply chain attacks if not addressed promptly. Users are advised to verify the integrity of their Trivy installations and update to secure versions immediately. This incident highlights the critical need for vigilance in maintaining the security of open-source tools.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4148317/trivy-vulnerability-scanner-backdoored-with-credential-stealer-in-supply-chain-attack.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 21 2026",
-            "headline": "Cybersecurity Insurance—Are Nations Prepared for the Role?",
-            "title": "Nations Questioned on Readiness as Cybersecurity Insurers of Last Resort",
-            "content": "A senior member of the UK&#x27;s Cyber Monitoring Center has raised questions about the nation&#x27;s preparedness to act as a cybersecurity insurer of last resort. This comes in light of a £1.5 billion government loan guarantee provided to Jaguar Land Rover, sparking debate on whether similar support should extend to cybersecurity incidents. As cyber threats escalate, the role of government in providing financial safety nets is increasingly scrutinized. Policymakers must consider the implications of such guarantees on national security and economic stability.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4148273/are-nations-ready-to-be-the-cybersecurity-insurers-of-last-resort-2.html",
+            "date": "Mar 20 2026",
+            "headline": "Russian Intelligence Behind Signal Phishing—FBI Warns",
+            "title": "FBI Ties Signal Phishing Attacks to Russian Intelligence Services",
+            "content": "The FBI has issued a warning linking recent phishing attacks on encrypted messaging apps like Signal and WhatsApp to Russian intelligence services. These campaigns have already led to the compromise of thousands of user accounts, exploiting the trust in secure communication platforms. The announcement underscores the persistent threat posed by state-sponsored actors targeting digital communications. Users of these apps should exercise caution, verify the authenticity of messages, and enable security features such as two-factor authentication. This development highlights the ongoing geopolitical implications of cybersecurity threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-links-signal-phishing-attacks-to-russian-intelligence-services/",
             "relatedResources": []
         },
         {
@@ -78,66 +78,66 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Mar 22 2026",
-            "headline": "Amazon&#x27;s $50B AI Chip Bet—Inside Trainium&#x27;s Winning Edge",
-            "title": "Amazon&#x27;s Trainium Chip Powers AI Giants: A Lab Tour Insight",
-            "content": "Amazon has unveiled its Trainium chip, central to a $50 billion investment in AI powerhouse OpenAI, with a private tour of its development lab. The Trainium chip, designed to optimize AI workloads, is gaining traction with tech leaders like Anthropic, OpenAI, and even Apple. This cutting-edge chip is engineered to deliver high performance at lower costs, enhancing machine learning tasks across AWS infrastructure. The move underscores Amazon&#x27;s strategic focus on dominating the AI hardware market, aiming to outperform rivals like NVIDIA. Industry professionals should watch for Trainium&#x27;s integration into cloud services, which could redefine AI processing capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/22/an-exclusive-tour-of-amazons-trainium-lab-the-chip-thats-won-over-anthropic-openai-even-apple/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 22 2026",
-            "headline": "AI Tools Flood GDC—But Where Are the AI Games?",
-            "title": "AI Dominates GDC Conference, Yet Games Lag Behind in Adoption",
-            "content": "The Game Developers Conference (GDC) showcased a plethora of AI tools, yet few games integrated AI-driven innovations. Vendors highlighted generative AI capabilities for creating non-player characters (NPCs) and entire game environments. Tencent demonstrated a pixel-art fantasy world generated through its AI, yet practical application in games remains sparse. This trend indicates a growing interest in AI among developers, but also highlights the challenges of integrating these technologies into gaming. Developers should consider the potential of AI to enhance game design while navigating the complexities of implementation.",
+            "date": "Mar 23 2026",
+            "headline": "AI Influencer Awards: A Lucrative New Frontier",
+            "title": "AI Personality of the Year Award Highlights Influencer Economy Boom",
+            "content": "The inaugural AI Personality of the Year award marks a significant milestone in the growing AI influencer industry. This competition, a collaboration between various industry leaders, aims to recognize AI entities that have made a substantial impact in digital spaces. As AI influencers transition from novelty to a serious economic force, the award underscores the increasing monetization and professionalization of AI personalities. The trend follows previous events like AI beauty pageants and music contests, indicating a broader acceptance and integration of AI in entertainment and social media. Professionals in AI development and marketing should note this shift as a potential avenue for innovation and investment.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/games/897982/gdc-2026-ai-game-developer-conference",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/898781/ai-personality-of-the-year-influencer-contest",
             "relatedResources": []
         },
         {
             "date": "Mar 22 2026",
-            "headline": "AI Tokens—A New Engineering Compensation Frontier?",
-            "title": "AI Tokens Emerge as a Potential New Compensation Model in Tech",
-            "content": "The tech industry is contemplating AI tokens as a novel form of engineering compensation, potentially becoming a fourth pillar alongside salary, equity, and bonuses. While some view tokens as a straightforward win, others caution against embracing them without scrutiny. The tokens could offer engineers unique incentives tied to AI project success, yet also pose valuation and volatility challenges. As companies explore this compensation model, engineers should weigh the benefits against potential risks, ensuring they align with their career goals and financial security.",
+            "headline": "Nvidia&#x27;s Future: Insights from GTC Keynote",
+            "title": "Nvidia CEO Jensen Huang&#x27;s GTC Keynote Sparks Speculation on Company Direction",
+            "content": "Nvidia CEO Jensen Huang&#x27;s keynote at the GTC (GPU Technology Conference) has prompted discussions about the company&#x27;s strategic trajectory. During the presentation, Huang emphasized Nvidia&#x27;s role in advancing AI and robotics, potentially hinting at new product lines or partnerships. Analysts are particularly interested in how these developments could affect Nvidia&#x27;s market position, especially in AI and autonomous systems. This keynote is part of a broader trend of tech giants expanding their influence in AI-driven industries. Stakeholders should monitor Nvidia&#x27;s announcements closely, as they could signal shifts in market dynamics and opportunities for collaboration.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/21/are-ai-tokens-the-new-signing-bonus-or-just-a-cost-of-doing-business/",
+            "sourceUrl": "https://techcrunch.com/2026/03/22/do-you-want-to-build-a-robot-snowman/",
             "relatedResources": []
         },
         {
-            "date": "Mar 21 2026",
-            "headline": "Gemini&#x27;s Automation—Impressive Yet Clunky on New Devices",
-            "title": "Gemini Task Automation Debuts on Pixel 10 Pro and Galaxy S26 Ultra",
-            "content": "Gemini&#x27;s new task automation feature, available on the Pixel 10 Pro and Galaxy S26 Ultra, allows the AI to operate select apps autonomously. Currently supporting a limited range of services, including food delivery and rideshare, the automation remains sluggish and cumbersome. Despite its early-stage limitations, the technology demonstrates significant potential for streamlining routine tasks. Users should anticipate future updates expanding app compatibility and enhancing performance. This development signals a step towards more comprehensive AI-driven automation in consumer technology.",
+            "date": "Mar 22 2026",
+            "headline": "Generalists Thrive in &#x27;Vibe Work&#x27; Era",
+            "title": "The Rise of Generalists in the &#x27;Vibe Work&#x27; Era: A New Workplace Dynamic",
+            "content": "The concept of the &quot;generalist&quot; is gaining traction as workplaces evolve into the &#x27;vibe work&#x27; era, where adaptability and broad skill sets are increasingly valued. This shift challenges the previous notion that specialists dominate the job market, highlighting the need for employees who can navigate multiple disciplines. The trend reflects a broader change in how companies approach problem-solving and innovation, favoring those who can integrate knowledge across various fields. Professionals should consider enhancing their versatility to remain competitive in this dynamic environment. This change is particularly relevant for tech leaders and HR professionals seeking to build agile teams.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/you-thought-the-generalist-was-dead-in-the-vibe-work-era-theyre-more",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 22 2026",
+            "headline": "Cursor&#x27;s Coding Model Built on Moonshot AI",
+            "title": "Cursor Acknowledges Its Coding Model Uses Moonshot AI&#x27;s Kimi Framework",
+            "content": "Cursor has confirmed that its latest coding model was developed using Moonshot AI&#x27;s Kimi framework, a decision that carries significant geopolitical implications given current tensions with China. The integration of Kimi, a Chinese model, raises questions about data privacy and supply chain security in AI development. This revelation comes at a time when reliance on foreign AI technologies is under scrutiny, especially in sensitive tech sectors. Developers and tech leaders should evaluate the origins and dependencies of AI models in use to mitigate potential risks. This situation underscores the importance of transparency in AI development practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/22/cursor-admits-its-new-coding-model-was-built-on-top-of-moonshot-ais-kimi/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 22 2026",
+            "headline": "Crimson Desert Devs Admit AI Art Use",
+            "title": "Crimson Desert Developers Apologize for Implementing AI-Generated Art",
+            "content": "The developers of Crimson Desert have issued an apology following the discovery of AI-generated art assets in the game&#x27;s final release. While the use of AI art was intended as a temporary placeholder, its inclusion in the final product has sparked controversy among players and critics. This incident highlights ongoing debates about the role of AI in creative industries and the ethics of using AI-generated content. Game developers and digital artists should be aware of the potential backlash and ethical considerations when integrating AI into creative processes. The situation calls for clearer guidelines on AI art usage in gaming.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/898282/gemini-task-automation-uber-doordash-hands-on",
+            "sourceUrl": "https://www.theverge.com/games/898771/crimson-desert-dev-apologizes-ai-art",
             "relatedResources": []
         },
         {
-            "date": "Mar 21 2026",
-            "headline": "DoorDash Tasks App—AI Gig Work&#x27;s Bleak Outlook",
-            "title": "DoorDash&#x27;s Tasks App Reveals AI&#x27;s Impact on Gig Economy Work",
-            "content": "DoorDash&#x27;s new Tasks app, which pays gig workers to train AI by performing daily activities, offers a glimpse into the future of AI-driven gig work. Users recorded mundane tasks like doing laundry and cooking to enhance AI training datasets. This model raises concerns about the sustainability and fairness of gig work as AI technology evolves. Gig workers and industry stakeholders should consider the implications of such platforms on job quality and worker rights. The app reflects a broader trend towards integrating AI into everyday tasks, potentially reshaping the gig economy landscape.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/i-tried-doordashs-tasks-app-and-saw-the-bleak-future-of-ai-gig-work/",
+            "date": "Mar 22 2026",
+            "headline": "Musk&#x27;s Chip Plans for Tesla and SpaceX",
+            "title": "Elon Musk Announces Ambitious Chip Manufacturing Plans for Tesla and SpaceX",
+            "content": "Elon Musk has unveiled plans for a new chip manufacturing initiative involving Tesla and SpaceX, aiming to reduce reliance on external suppliers. This move could position both companies as leaders in semiconductor innovation, though Musk&#x27;s history of overpromising raises questions about feasibility. The initiative reflects a broader trend of tech companies seeking greater control over their supply chains amid global chip shortages. Industry professionals should watch for developments in this area, as successful implementation could reshape competitive dynamics in the tech and automotive sectors. Stakeholders are advised to consider the potential impacts on supply chain strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/22/elon-musk-unveils-chip-manufacturing-plans-for-spacex-and-tesla/",
             "relatedResources": []
         },
         {
-            "date": "Mar 21 2026",
-            "headline": "Cyberattack Halts Car Breathalyzer Operations—Drivers Stranded",
-            "title": "Cyberattack on Car Breathalyzer Firm Disrupts Service for Drivers",
-            "content": "A cyberattack targeting a car breathalyzer company has left numerous drivers unable to operate their vehicles. The attack highlights vulnerabilities in connected automotive systems, underscoring the need for robust cybersecurity measures. Concurrently, the FBI&#x27;s use of phone data for tracking and Iranian hackers disrupting Maryland hospitals emphasize the escalating cyber threat landscape. Affected companies should prioritize securing IoT devices and critical infrastructure to mitigate future risks. This incident serves as a reminder of the growing intersection between cybersecurity and everyday technology.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/security-news-this-week-cyberattack-on-a-car-breathalyzer-firm-leaves-drivers-stuck/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 21 2026",
-            "headline": "Amazon&#x27;s &#x27;Jury Duty&#x27; Series—Workplace Culture Gets a Fun Twist",
-            "title": "Amazon Prime&#x27;s &#x27;Jury Duty Presents: Company Retreat&#x27; Explores Workplace Dynamics",
-            "content": "Amazon Prime&#x27;s prank series &#x27;Jury Duty Presents: Company Retreat&#x27; humorously examines corporate culture through exaggerated workplace scenarios. The series showcases the absurdities and camaraderie within office environments, highlighting how employees find purpose amidst challenging situations. By blending humor with insight, the show resonates with viewers familiar with corporate life, offering both entertainment and reflection. Professionals might find value in its commentary on workplace dynamics, emphasizing the importance of community and resilience in navigating corporate challenges.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/jury-duty-presents-company-retreat-almost-makes-corporate-culture-seem-fun/",
+            "date": "Mar 22 2026",
+            "headline": "Autonomous Agents: Embracing Chaos in AI Testing",
+            "title": "Testing Autonomous Agents: Navigating the Challenges of AI System Deployment",
+            "content": "The deployment of autonomous agents presents unique challenges, particularly concerning decision-making processes that could lead to unintended consequences. Developers express concerns over the potential for agents to autonomously execute high-stakes decisions, such as approving significant financial transactions. This highlights the critical need for robust testing frameworks and oversight mechanisms in AI system deployment. The discussion is part of a larger conversation about ensuring safety and reliability in AI applications. Tech professionals should prioritize establishing stringent testing protocols to mitigate risks associated with autonomous systems. This is crucial as AI continues to permeate various sectors.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/testing-autonomous-agents-or-how-i-learned-to-stop-worrying-and-embrace",
             "relatedResources": []
         }
     ],
@@ -288,17 +288,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20963",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-47813",
-            "dateAdded": "Mar 16, 2026",
-            "vendor": "Wing FTP Server Wing FTP Server",
-            "description": "Wing FTP Server contains a generation of error message containing sensitive information vulnerability when using a long value in the UID cookie.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-47813",
             "isZeroDay": false
         }
     ],
