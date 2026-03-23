@@ -62,8 +62,13 @@ function renderArticleCards() {
             ? `<div class="article-image" style="background-image: url('${fullArticle.image}');"></div>`
             : '';
 
+        const badgeHTML = fullArticle && fullArticle.badge
+            ? `<div class="article-badge" style="position: absolute; top: 1rem; left: 1rem; z-index: 10; background: var(--accent-primary); color: #fff; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; box-shadow: 0 4px 15px rgba(255, 61, 61, 0.4);">${fullArticle.badge}</div>`
+            : '';
+
         return `
-            <div class="article-card" onclick="openArticleModal('${article.id}')">
+            <div class="article-card" onclick="openArticleModal('${article.id}')" style="position: relative;">
+                ${badgeHTML}
                 ${imageHTML}
                 <div class="article-content">
                     <div class="article-category">${article.category}</div>

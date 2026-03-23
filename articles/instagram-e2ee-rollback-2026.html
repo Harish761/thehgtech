@@ -194,11 +194,6 @@
             margin: 2.5rem 0;
         }
 
-        .technical-box > *:first-child,
-        .warning-box > *:first-child {
-            margin-top: 0;
-        }
-
         .warning-box {
             background: rgba(255, 61, 61, 0.05);
             border: 1px solid rgba(255, 61, 61, 0.2);
@@ -218,34 +213,22 @@
             color: #fff;
         }
 
-        .timeline-list {
-            list-style: none;
-            padding: 0;
+        .reddit-box {
+            background: rgba(255, 69, 0, 0.08);
+            border: 1px solid rgba(255, 69, 0, 0.3);
+            border-left: 5px solid #FF4500;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3.5rem 0;
+            box-shadow: 0 8px 32px rgba(255, 69, 0, 0.1);
         }
 
-        .timeline-item {
-            position: relative;
-            padding-left: 2rem;
-            margin-bottom: 2rem;
-            border-left: 2px solid var(--border);
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -7px;
-            top: 0;
-            width: 12px;
-            height: 12px;
-            background: var(--accent-cyan);
-            border-radius: 50%;
-        }
-
-        .timeline-date {
-            font-weight: 800;
-            color: var(--accent-cyan);
-            display: block;
-            margin-bottom: 0.5rem;
+        .reddit-box h3 {
+            color: #FF4500 !important;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
         }
 
         pre {
@@ -269,14 +252,6 @@
             padding: 0.2rem 0.4rem;
             border-radius: 4px;
             color: var(--accent-cyan);
-        }
-
-        .reddit-box {
-            background: rgba(255, 69, 0, 0.05);
-            border: 1px solid rgba(255, 69, 0, 0.2);
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 3rem 0;
         }
     </style>
 
@@ -304,9 +279,9 @@
     <!-- Mobile Header -->
     <header class="m-header m-only">
         <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
-            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
                 style="height: 28px; width: auto; margin: 0;">
-            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
                 style="height: 28px; width: auto; margin: 0;">
             <span
                 style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
@@ -485,22 +460,15 @@
 
                 <p>I have been analyzing Meta's cryptographic trajectory since the "Privacy-Focused Vision" announcement in 2019. For years, we were promised a unified, encrypted messaging fabric. But today, the thread is being pulled out of the Instagram pillar. In my view, this marks the end of the "Universal E2EE" dream and the beginning of a new, highly-regulated "Conditional Privacy" era.</p>
 
-                <p>The arc of digital privacy usually bends towards tighter cryptography. But in an unprecedented rollback, Meta is excising the Signal Protocol from its most visual platform. This article dissects the architectural teardown, the regulatory "invisible hands" forcing the move, and the operational steps you must take to secure your historical keys.</p>
-
                 <div class="warning-box">
                     <h3 style="color: var(--accent-red); margin-top: 0;"><i class="fas fa-exclamation-triangle"></i> Editorial Analysis: The Regulatory Release Valve</h3>
-                    <p>Why Instagram and not WhatsApp? The answer lies in the business model. WhatsApp is a dedicated communication tool where privacy is the product. Instagram is a content platform. By removing E2EE from Instagram, Meta builds a regulatory "release valve." They can comply with increasingly aggressive EU and UK mandates (like the UK Online Safety Act's scanning requirements) on their social pillar while shielding their communication flagship, WhatsApp, from the same legal fallout. It is a strategic sacrifice of individual privacy for corporate compliance.</p>
+                    <p>Why Instagram and not WhatsApp? The answer lies in the business model. WhatsApp is a dedicated communication tool where privacy is the product. Instagram is a content platform. By removing E2EE from Instagram, Meta builds a regulatory "release valve." They can comply with increasingly aggressive EU and UK mandates while shielding their communication flagship, WhatsApp, from the same legal fallout. It is a strategic sacrifice of individual privacy for corporate compliance.</p>
                 </div>
 
                 <h2>The Cryptographic Teardown: How the Keys Fall</h2>
 
                 <p>To understand what happens on May 8, we have to look at the <strong>Signal Protocol</strong> implementation Instagram uses. Unlike WhatsApp, which is E2EE by default, Instagram E2EE was an opt-in "Secret Conversation" toggle. This choice is now Meta's justification for its death.</p>
-
-                <h3>1. Breaking the Pre-Key Chain</h3>
-                <p>Signal uses a "Double Ratchet" algorithm. Every message creates a new ephemeral key, ensuring that even if one key is stolen, past and future messages remain safe. On Instagram, these keys are stored in a local SQLite database on your device. When Meta pushes the May 8 update, the client binaries will be instructed to stop requesting "Signed Pre-Keys" from the server's identity directory.</p>
                 
-                <p>Once the identity directory stops serving keys, the handshake fails. The app will then "softly" fall back to the v1 JSON transport protocol. Your historical messages remain on your device, but the <em>server</em> will no longer accept ciphertext packets for those threads.</p>
-
                 <div class="technical-box">
                     <h3><i class="fas fa-code"></i> Typical Signal-Layer Bypass (Architectural)</h3>
                     <p>As I've mapped in the conceptual bypass below, the removal isn't just a UI change—it's the removal of the <code>libsignal</code> wrapper from the transport layer.</p>
@@ -526,32 +494,15 @@ async function sendDM(recipientId, plaintext) {
 </code></pre>
                 </div>
 
-                <h2>The Regulatory Pressure: CSAM and the "Great Scanning"</h2>
-                
-                <p>The elephant in the room is <strong>Client-Side Scanning (CSS)</strong>. Governments in the UK (Online Safety Act) and the EU (CSAR - Child Sexual Abuse Regulation) have been pushing for the ability to scan messages for prohibited content. Pure E2EE makes this impossible without a backdoor.</p>
-
-                <p>By removing E2EE on Instagram, Meta avoids the technical nightmare of "Scanning while Localized." Instead, they can simply scan the messages on their own servers before delivery. It’s cleaner for them, but it shatters the zero-knowledge boundary. If a server can scan for a forbidden image, it can scan for a political keyword.</p>
-
                 <div class="reddit-box">
-                    <h3 style="color: #FF4500;"><i class="fab fa-reddit-alien"></i> Community Outcry: r/Privacy & r/Instagram</h3>
-                    <p>The reaction on Reddit has been visceral. Users who used Instagram for sensitive journalistic work or dissident organization are realizing the platform is now a "Live Wire."</p>
+                    <h3><i class="fab fa-reddit-alien"></i> Community Outcry: r/Privacy & r/Instagram</h3>
+                    <p>The reaction on Reddit has been visceral. Users who used Instagram for sensitive journalistic work are realizing the platform is now a "Live Wire."</p>
                     
                     <p style="font-style: italic; color: var(--text-secondary); border-left: 2px solid #FF4500; padding-left: 1rem; margin-left: 1rem;">
-                        <strong>u/SecureOps_2026:</strong> "Meta is treating privacy like a subscription feature. They give it to us for 5 years to build 'trust,' then take it away once they have our entire social graph. If they can turn it off for IG, they've already built the 'toggle' for WhatsApp. It's just a matter of when."
+                        <strong>u/SecureOps_2026:</strong> "Meta is treating privacy like a subscription feature. They give it to us to build 'trust,' then take it away once they have our entire social graph. If they can turn it off for IG, they've already built the 'toggle' for WhatsApp. It's just a matter of when."
                     </p>
 
                     <p>This sentiment highlights the biggest risk: <strong>Precedent</strong>. If a vendor can unilaterally "deprecate" a security protocol for a billion users, were those users ever truly secure?</p>
-                </div>
-
-                <h2>Threat Modeling the Aftermath</h2>
-                <p>As a researcher, I look at the "forensic residue." What is left when the encryption dies?</p>
-
-                <div class="technical-box">
-                    <ul>
-                        <li><strong>Standard Subpoena Workflows:</strong> Post-May 8, Meta will have "Full Content" visibility for any law enforcement request. Previously, they could only provide metadata (who you talked to and when).</li>
-                        <li><strong>Automated AI Moderation:</strong> Your DMs will now be processed by Meta's Llama-based moderation models to flag community guideline violations. This includes "shadow-banning" users based on private conversations.</li>
-                        <li><strong>Insider Threat Surface:</strong> In a zero-knowledge world, a rogue employee at Meta couldn't read your DMs. Now, they potentially can.</li>
-                    </ul>
                 </div>
 
                 <h2>Action Plan & Terminal Mitigations</h2>
@@ -560,28 +511,17 @@ async function sendDM(recipientId, plaintext) {
                     <strong><i class="fas fa-shield-alt"></i> IMMEDIATE STEPS (Before May 8):</strong>
                     <ol style="margin-top: 1rem; margin-bottom: 0;">
                         <li><strong>Manual Data Export:</strong> Use the "Download Your Data" tool in Settings. Ensure you do this <em>before</em> the update wipes your local pre-keys.</li>
-                        <li><strong>Thread Transition:</strong> If you have active E2EE threads, take screenshots of critical information now. These threads will likely become "Read Only" or convert to insecure text.</li>
                         <li><strong>Platform Shift:</strong> Move sensitive business or personal coordination to Signal, Matrix (Element), or Session. Treat Instagram as a "Public Square" from now on.</li>
                     </ol>
                 </div>
 
-                <blockquote>
-                    "Privacy is not a feature to be toggled; it is a fundamental architecture. Once a vendor breaks the vault, the vault no longer exists."
-                </blockquote>
-
-                <p>The death of Instagram E2EE is a reminder that in 2026, convenience is the enemy of security. Meta has chosen the convenience of regulatory compliance over the security of its users. Let this be the final warning for anyone still using DMs for confidential work.</p>
-
                 <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-                    <h3><i class="fas fa-book"></i> References & Further Reading</h3>
+                    <h3><i class="fas fa-book"></i> References</h3>
                     <ul style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 2rem;">
-                        <li><strong>Official Meta Announcement:</strong> "Updating our Messaging Architecture for 2026" (Meta Newsroom)</li>
-                        <li><strong>Legal Analysis:</strong> "The Impact of the UK Online Safety Act on E2EE Platforms" (Digital Rights Journal)</li>
-                        <li><strong>Technical Deep-Dive:</strong> <a href="/guides/signal-protocol-explained.html">Understanding the Signal Protocol: The Foundation of Zero-Knowledge</a></li>
+                        <li><strong>Official Meta Announcement:</strong> "Updating our Messaging Architecture for 2026"</li>
+                        <li><strong>Technical Deep-Dive:</strong> <a href="/guides/signal-protocol-explained.html">Understanding the Signal Protocol</a></li>
                     </ul>
-
-                    <p><strong>Author:</strong> Harish G</p>
-                    <p><strong>Published:</strong> March 23, 2026</p>
-                    <p><strong>Last Updated:</strong> March 23, 2026</p>
+                    <p><strong>Author:</strong> Harish G | <strong>Published:</strong> March 23, 2026</p>
                 </div>
             </div>
         </article>
@@ -606,11 +546,11 @@ async function sendDM(recipientId, plaintext) {
     </main>
 
     <footer>
-        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
+        <p style="text-align: center; color: var(--text-muted); padding: 5rem 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
     </footer>
 
     <script src="/interaction-bar.js?v=20251207-0041"></script>
-    <script src="../ui-enhancements.js?v=20260220" defer></script>
+    <script src="/ui-enhancements.js?v=20260220" defer></script>
 </body>
 
 </html>

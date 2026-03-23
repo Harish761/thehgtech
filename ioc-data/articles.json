@@ -5,10 +5,11 @@
       "title": "The Death of Instagram E2EE: Why Meta is Breaking Its Own Zero-Knowledge Architecture",
       "date": "March 23, 2026",
       "category": "Architecture & Privacy",
+      "badge": "PRIVACY ROLLBACK",
       "author": "Harish G",
       "excerpt": "Meta's unprecedented rollback of E2EE shatters the zero-knowledge guarantee for Instagram DMs. This deep dive dissects the cryptographic teardown, the regulatory pressures, and what it means for your privacy.",
       "image": "/images/articles/instagram-e2ee-rollback-2026.png",
-      "url": "articles/instagram-e2ee-rollback-2026.html",
+      "externalUrl": "articles/instagram-e2ee-rollback-2026.html",
       "readTime": "20 min read",
       "tags": ["E2EE", "Meta", "Instagram", "Signal Protocol", "Privacy Rollback"]
     },

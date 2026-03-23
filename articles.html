@@ -2913,6 +2913,7 @@
             if (lower === 'trending') return 'trending';
             if (lower === 'updated') return 'updated';
             if (lower === 'urgent') return 'urgent';
+            if (lower.includes('rollback')) return 'urgent';
             return 'new';
         }
 
