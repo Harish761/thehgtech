@@ -929,8 +929,16 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const finalP = parseInt(ui.overallScore.innerText.replace('%', ''));
                 let matLbl = "Initial / At Risk";
                 let matCol = "#EF4444";
-                if (finalP >= 75) { matLbl = "Mature / Optimized"; matCol = "#10B981"; }
-                else if (finalP >= 40) { matLbl = "Developing / Moderate"; matCol = "#F59E0B"; }
+                let matDesc = "Critical security gaps detected. Significant exposure to breach and regulatory fines. Core technical and organizational guardrails are either missing or loosely implemented.";
+                if (finalP >= 75) { 
+                    matLbl = "Mature / Optimized"; 
+                    matCol = "#10B981"; 
+                    matDesc = "Proactive posture. Controls are integrated and monitored for continuous improvement. You have achieved a baseline where internal processes are mostly self-correcting.";
+                } else if (finalP >= 40) { 
+                    matLbl = "Developing / Moderate"; 
+                    matCol = "#F59E0B"; 
+                    matDesc = "Foundational controls are in place, but lack depth and consistent monitoring. Risk is managed reactively rather than through automated or continuous governance.";
+                }
 
                 const priorityRecommendationList = criticalGaps
                     .sort((a,b) => (a.risk === 'High' ? -1 : 1))
