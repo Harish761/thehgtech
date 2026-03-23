@@ -5,9 +5,9 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 23 2026",
-            "headline": "The Death of Instagram E2EE: Why Meta is Breaking Its Zero-Knowledge Trust",
-            "title": "Meta Officially Deprecates Instagram E2EE; Zero-Knowledge Architecture to End May 8, 2026",
-            "content": "In an unprecedented move for a tech giant, Meta has announced the full deprecation of End-to-End Encryption (E2EE) for Instagram Direct Messages by May 8, 2026. This rollback effectively reinstates server-side visibility into billions of previously secure communications. While Meta cites low usage and a feature cleanup, the real driver appears to be increasing regulatory pressure for client-side scanning and content moderation in the EU and UK. Our deep dive analyzes the cryptographic teardown of the Signal Protocol layer, the regulatory 'invisible hands' forcing the move, and the operational steps you must take to secure your keys. If you do not own the infrastructure, your privacy is a toggle.",
+            "headline": "Meta Deprecates Optional Instagram E2EE, Citing Low Adoption; Analysis of Privacy Implications",
+            "title": "Meta Officially Deprecates Instagram E2EE; Shift to TLS-Only Expected by May 8, 2026",
+            "content": "Meta has announced that it will deprecate the optional 'Secret Conversations' end-to-end encryption (E2EE) feature for Instagram Direct Messages by May 8, 2026. Citing very low adoption of the opt-in feature, the company will transition to a standard server-side termination (TLS 1.3) architecture. While Meta’s rationale focuses on feature simplification, privacy advocates view this as a significant step back for zero-knowledge communications. This shift may also serve as a pragmatic response to increasing regulatory pressure in the EU and UK for child safety monitoring (CSAM), allowing Meta to maintain compliance without altering the default-E2EE architecture of WhatsApp.",
             "source": "TheHGTech Investigative",
             "sourceUrl": "https://thehgtech.com/articles/instagram-e2ee-rollback-2026.html",
             "relatedResources": [
@@ -178,9 +178,9 @@ const websiteContent = {
     "articleCards": [
         {
             "id": "instagram-e2ee-rollback-2026",
-            "title": "The Death of Instagram E2EE: Why Meta is Breaking Its Own Zero-Knowledge Architecture",
-            "summary": "Meta's unprecedented rollback of E2EE shatters the zero-knowledge guarantee for Instagram DMs. This deep dive dissects the cryptographic teardown, the regulatory pressures, and what it means for your privacy.",
-            "description": "A technical dissection of Meta's E2EE deprecation on Instagram Direct Messages, exploring the cryptographic fallout, regulatory pressures, and user mitigations.",
+            "title": "Meta Deprecates Optional E2EE in Instagram DMs by May 2026: Low Adoption Cited, Privacy Concerns Remain",
+            "summary": "Meta’s move to deprecate optional E2EE on Instagram is a significant policy shift. This analysis examines the technical rollback, regulatory factors, and the privacy trade-offs involved.",
+            "description": "An analysis of Meta’s decision to remove opt-in E2EE from Instagram Direct Messages, exploring technical architecture shifts and the regulatory landscape.",
             "url": "/articles/instagram-e2ee-rollback-2026.html",
             "date": "March 23, 2026",
             "readTime": "20 min read",
