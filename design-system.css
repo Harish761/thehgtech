@@ -557,3 +557,26 @@ a:hover {
         font-size: 2rem;
     }
 }
+/* GLOBAL GLASS MODAL INJECTIONS */
+.modal, .cve-modal, .ransomware-modal-overlay, .news-modal-overlay, .article-modal-overlay, .search-modal-overlay, .ai-modal-overlay, .threat-modal-overlay {
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+
+.modal-content, .cve-modal-content, .ransomware-modal, .ransomware-modal-content, .news-modal, .article-modal-content, .search-modal, .ai-modal, .faq-modal, .threat-detail-modal, .news-detail-modal {
+    background: linear-gradient(145deg, rgba(30, 30, 35, 0.4), rgba(15, 15, 18, 0.6)) !important;
+    backdrop-filter: blur(40px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(40px) saturate(200%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    border-radius: 24px !important;
+}
+
+body.light-mode .modal-content, body.light-mode .cve-modal-content, body.light-mode .ransomware-modal, body.light-mode .ransomware-modal-content, body.light-mode .news-modal, body.light-mode .article-modal-content, body.light-mode .search-modal, body.light-mode .ai-modal, body.light-mode .faq-modal, body.light-mode .threat-detail-modal, body.light-mode .news-detail-modal {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(240, 240, 245, 0.5)) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0 32px 64px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
