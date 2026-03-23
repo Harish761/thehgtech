@@ -892,7 +892,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         setTimeout(() => {
             try {
                 // 1. Gather Calculations
-                let totalC = 0, implC = 0, partC = 0, gapC = 0, naC = 0;
+                let totalC = 0, implC = 0, partC = 0, gapC = 0, naC = 0, pendingC = 0;
                 const criticalGaps = [];
 
                 let nistT = 0, nistV = 0, cisT = 0, cisV = 0;
@@ -901,7 +901,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const domain = grcData.domains[globalIdx];
                     domain.controls.forEach(c => {
                         const ans = userState[c.control_id];
-                        if (!ans) return; // Skip unanswered so PDF only reflects assessed controls
+                        if (!ans) {
+                            pendingC++;
+                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Pending Evaluation', effort: 'TBD', rem: 'Control requires formal evaluation to determine compliance posture.', nist: c.nist_mapping, cis: c.cis_mapping, just: 'Pending formal evaluation.', rationale: 'Visibility Gap: Baseline not established.'}); 
+                            return; // Skip from totalC denominator so score is accurate
+                        }
                         
                         totalC++;
                         const sVal = (ans === 'yes' || ans === 'na') ? 1 : (ans === 'partial' ? 0.5 : 0);
@@ -941,6 +945,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
 
                 const priorityRecommendationList = criticalGaps
+                    .filter(g => g.risk === 'High' || g.risk === 'Medium')
                     .sort((a,b) => (a.risk === 'High' ? -1 : 1))
                     .slice(0, 3);
 
@@ -959,7 +964,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                     gapTableBody.push([{text: 'Outstanding! No critical gaps identified in the evaluated scope.', colSpan: 4, alignment: 'center', margin: [0, 10, 0, 10], color: '#10B981', bold: true}, {}, {}, {}]);
                 } else {
                     criticalGaps.forEach(g => {
-                        const riskColor = g.risk === 'High' ? '#ef4444' : '#f59e0b';
+                        let riskColor = '#f59e0b';
+                        if (g.risk === 'High') riskColor = '#ef4444';
+                        else if (g.risk === 'Pending Evaluation') riskColor = '#9ca3af';
+
                         gapTableBody.push([
                             { text: 'A.' + g.id, margin: [0, 4, 0, 4] },
                             { text: g.title, margin: [0, 4, 0, 4] },
@@ -1035,6 +1043,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                             table: {
                                                 widths: ['*', 'auto'],
                                                 body: [
+                                                    ['• Assessed Controls:', { text: totalC + ' / ' + (totalC + pendingC), bold: true, color: '#4B5563' }],
                                                     ['• NIST CSF 2.0 readiness:', { text: nistP + '%', bold: true, color: '#0A84FF' }],
                                                     ['• CIS Controls v8 readiness:', { text: cisP + '%', bold: true, color: '#FF9F0A' }],
                                                     ['• ISO 27001 Core alignment:', { text: ui.overallScore.innerText, bold: true, color: ui.overallScore.style.color }]
@@ -1133,7 +1142,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 execSummary.push(["Framework:", grcData.framework]);
                 execSummary.push([]);
                 
-                let totalC = 0, implC = 0, partC = 0, gapC = 0, naC = 0;
+                let totalC = 0, implC = 0, partC = 0, gapC = 0, naC = 0, pendingC = 0;
                 const criticalGaps = [];
 
                 // Re-calculate totals across active scoping
@@ -1141,7 +1150,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const domain = grcData.domains[globalIdx];
                     domain.controls.forEach(c => {
                         const ans = userState[c.control_id];
-                        if (!ans) return; // Summary should only reflect what was answered if it's a partial export
+                        if (!ans) {
+                            pendingC++;
+                            criticalGaps.push([c.control_id, c.control_title, 'Pending Evaluation', 'Visibility Gap: Baseline not established.', 'Control requires formal evaluation.']);
+                            return; 
+                        }
                         
                         totalC++;
                         if (ans === 'yes') implC++;
@@ -1157,6 +1170,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 });
 
                 execSummary.push(["Total Controls evaluated:", totalC]);
+                execSummary.push(["Pending Evaluation:", pendingC]);
                 execSummary.push(["Implemented:", implC]);
                 execSummary.push(["Partial (In-Progress):", partC]);
                 execSummary.push(["Control Gap:", gapC]);
