@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-71",
+      "incident_id": 71,
+      "title": "Google Waymo Vehicle and Bus Allegedly Collide in California",
+      "date": "2026-03-23",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1424",
       "incident_id": 1424,
       "title": "Claude Code Agent Reportedly Deleted DataTalks.Club Production Infrastructure, Database, and Snapsho",
@@ -1058,9 +1066,9 @@
     }
   ],
   "stats": {
-    "total": 132,
-    "last7Days": 17,
-    "last30Days": 67
+    "total": 133,
+    "last7Days": 18,
+    "last30Days": 68
   },
-  "lastUpdated": "2026-03-23T08:49:57.645081+05:30"
+  "lastUpdated": "2026-03-23T11:14:43.802214+05:30"
 }
