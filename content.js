@@ -5,12 +5,18 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 23 2026",
-            "headline": "Instagram Kills End-to-End Encryption - Privacy Rollback Confirmed",
-            "title": "Meta Officially Deprecates Instagram E2EE; Zero-Knowledge Architecture to End May 8",
-            "content": "Meta has announced the total removal of End-to-End Encryption (E2EE) for Instagram Direct Messages, effective May 8, 2026. This unprecedented rollback effectively reinstates server-side visibility into billions of private communications. While Meta cites low usage and cleanup, industry experts point to increasing regulatory pressure for CSAM scanning and content moderation as the primary drivers. Users are advised to download their data before the deadline and migrate sensitive conversations to dedicated encrypted platforms like Signal or WhatsApp. This move marks a significant shift in Meta's long-term 'privacy-focused' vision for its social ecosystem.",
-            "source": "TheHGTech Intelligence",
+            "headline": "The Death of Instagram E2EE: Why Meta is Breaking Its Zero-Knowledge Trust",
+            "title": "Meta Officially Deprecates Instagram E2EE; Zero-Knowledge Architecture to End May 8, 2026",
+            "content": "In an unprecedented move for a tech giant, Meta has announced the full deprecation of End-to-End Encryption (E2EE) for Instagram Direct Messages by May 8, 2026. This rollback effectively reinstates server-side visibility into billions of previously secure communications. While Meta cites low usage and a feature cleanup, the real driver appears to be increasing regulatory pressure for client-side scanning and content moderation in the EU and UK. Our deep dive analyzes the cryptographic teardown of the Signal Protocol layer, the regulatory 'invisible hands' forcing the move, and the operational steps you must take to secure your keys. If you do not own the infrastructure, your privacy is a toggle.",
+            "source": "TheHGTech Investigative",
             "sourceUrl": "https://thehgtech.com/articles/instagram-e2ee-rollback-2026.html",
-            "relatedResources": []
+            "relatedResources": [
+                {
+                    "label": "Signal Protocol Deep-Dive",
+                    "url": "/guides/signal-protocol-explained.html",
+                    "icon": "fa-lock"
+                }
+            ]
         },
         {
             "date": "Mar 23 2026",
@@ -170,6 +176,27 @@ const websiteContent = {
     ],
     "articles": {},
     "articleCards": [
+        {
+            "id": "instagram-e2ee-rollback-2026",
+            "title": "The Death of Instagram E2EE: Why Meta is Breaking Its Own Zero-Knowledge Architecture",
+            "summary": "Meta's unprecedented rollback of E2EE shatters the zero-knowledge guarantee for Instagram DMs. This deep dive dissects the cryptographic teardown, the regulatory pressures, and what it means for your privacy.",
+            "description": "A technical dissection of Meta's E2EE deprecation on Instagram Direct Messages, exploring the cryptographic fallout, regulatory pressures, and user mitigations.",
+            "url": "/articles/instagram-e2ee-rollback-2026.html",
+            "date": "March 23, 2026",
+            "readTime": "20 min read",
+            "category": "Architecture & Privacy",
+            "tags": [
+                "E2EE",
+                "Meta",
+                "Instagram",
+                "Signal Protocol",
+                "Cyber Law",
+                "Privacy Rollback"
+            ],
+            "featured": true,
+            "badge": "PRIVACY ROLLBACK",
+            "severity": "high"
+        },
         {
             "id": "7zip-critical-vulnerability",
             "title": "Critical 7-Zip Vulnerability: What You Need to Know Right Now",
