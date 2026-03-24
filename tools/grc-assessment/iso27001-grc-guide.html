@@ -360,8 +360,21 @@
             <section class="doc-section" id="the-scoring-math">
                 <h2>Scoring Methodology & Variances</h2>
                 <div class="doc-content">
-                    <p>A common user question is: <em>"Why is my ISO score 70% but my CIS score only 45%?"</em></p>
-                    <p>This is the core strength of the GRC Engine. Each framework has a different <strong>Audit Tolerance</strong>. We use a multi-weighted mapping logic to calculate this variance:</p>
+                    <h3 style="color:var(--accent-cyan);"><i class="fas fa-balance-scale"></i> 1. The Risk-Based Weighting Engine</h3>
+                    <p>Unlike basic checklist tools that treat "Clean Desk Policy" and "Multi-Factor Authentication" as equal failures, TheHGTech GRC Engine utilizes a <strong>1-10 Risk Impact Scaling</strong> model.</p>
+                    <ul>
+                        <li><strong>High Criticality (Impact 8-10):</strong> Controls preventing direct data breaches or existential threats (e.g., Cryptography, MFA, Incident Response).</li>
+                        <li><strong>Medium Criticality (Impact 5-7):</strong> Vital operational or governance controls (e.g., Supplier Risk, Asset Inventories).</li>
+                        <li><strong>Low Criticality (Impact 1-4):</strong> Administrative or minor physical controls (e.g., Cabling Security).</li>
+                    </ul>
+                    <p>Your score is calculated as: <code>(Sum of Earned Impact) &divide; (Total Applicable Risk Impact)</code>.</p>
+
+                    <h3 style="color:var(--accent-cyan); margin-top: 2rem;"><i class="fas fa-ban"></i> 2. The N/A Mathematical Exclusion</h3>
+                    <p>Answering "Not Applicable" does not grant you free points, nor does it penalize you. Instead, the Risk Engine completely removes that control's Risk Impact from the denominator. This ensures that your Readiness Score only reflects your posture against the controls that actively apply to your scoped threat landscape.</p>
+
+                    <h3 style="color:var(--accent-cyan); margin-top: 2rem;"><i class="fas fa-layer-group"></i> 3. Cross-Framework Variances</h3>
+                    <p>A common executive question: <em>"Why is my ISO Readiness 70% but my CIS score only 45%?"</em></p>
+                    <p>This is expected. Each framework has a different <strong>Audit Tolerance</strong>:</p>
 
                     <div class="tech-table-wrapper">
                         <table class="tech-table">
@@ -381,29 +394,22 @@
                                     <td>Technical Safeguards</td>
                                 </tr>
                                 <tr>
-                                    <td class="prop-key">Mapping Weight</td>
+                                    <td class="prop-key">Mapping</td>
                                     <td>Direct (1:1 per Annex A)</td>
                                     <td>Cross-Mapped (1:N)</td>
                                     <td>Deep Technical (1:NN)</td>
-                                    
                                 </tr>
                                 <tr>
                                     <td class="prop-key">Scoring Rigor</td>
-                                    <td>Moderate</td>
-                                    <td>Strategic</td>
-                                    <td>Extremely Strict</td>
-                                </tr>
-                                <tr>
-                                    <td class="prop-key">Maturity Impact</td>
-                                    <td>Binary (Implemented?)</td>
-                                    <td>Function-based</td>
-                                    <td>Safeguard-specific</td>
+                                    <td>Moderate (Design)</td>
+                                    <td>Strategic (Function)</td>
+                                    <td>Extremely Strict (Tech)</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <p>In essence: <strong>CIS v8</strong> requires specific technical proofs. If you answer "Partial" to an ISO control about Access Control, ISO gives you half credit. However, CIS checks for 5 specific technical safeguards under that same topic—if you only do 1 of them, your CIS score will naturally be lower. <strong>This provides a realistic view of technical risk versus paper-based compliance.</strong></p>
+                    <p>In essence: <strong>CIS v8</strong> requires specific technical proofs. If you answer "Partial" to an ISO control about Access Control, ISO gives you partial credit. However, CIS checks for specific technical safeguards—if you only do 1 of them, your CIS score will naturally plummet. <strong>This provides a realistic view of technical risk versus paper-based compliance.</strong></p>
                 </div>
             </section>
 

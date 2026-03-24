@@ -17,7 +17,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Draft a unified Information Security Policy document. Have the CEO or Board sign it. Set a recurring calendar invite for an annual review and update session.",
                     "nist_mapping": "GV.PO-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "**Risk:** Lack of strategic direction and management backing. | **Impact:** Security becomes an 'IT problem' ignored by the business, leading to budget cuts and non-compliance. | **Guidance:** Policies are your legal baseline; without executive signatures, they lack the authority to drive organizational change."
+                    "expert_rationale": "**Risk:** Lack of strategic direction and management backing. | **Impact:** Security becomes an 'IT problem' ignored by the business, leading to budget cuts and non-compliance. | **Guidance:** Policies are your legal baseline; without executive signatures, they lack the authority to drive organizational change.",
+                    "risk_impact": 7,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.2",
@@ -28,7 +30,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Update HR job descriptions for IT and Security personnel to explicitly list their security responsibilities. Maintain an internal RACI matrix for incident response.",
                     "nist_mapping": "GV.AM-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "**Risk:** Critical security tasks falling through the cracks. | **Impact:** 'Ambiguity of ownership' leads to unpatched systems or missed backups. | **Guidance:** Explicitly naming owners in job descriptions ensures that when a crisis hits, there is no confusion about who is responsible for the response."
+                    "expert_rationale": "**Risk:** Critical security tasks falling through the cracks. | **Impact:** 'Ambiguity of ownership' leads to unpatched systems or missed backups. | **Guidance:** Explicitly naming owners in job descriptions ensures that when a crisis hits, there is no confusion about who is responsible for the response.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.3",
@@ -39,7 +43,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enforce branch protection rules in GitHub/GitLab requiring at least one approving review before merging to main. Revoke direct production access for standard developers.",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "3.3",
-                    "expert_rationale": "**Risk:** Internal fraud or catastrophic accidental errors. | **Impact:** A single compromised or disgruntled employee could delete your entire production environment. | **Guidance:** Enforce 'Two-Person' rules (like PR reviews) for all critical changes to prevent a 'single point of human failure' from destroying the business."
+                    "expert_rationale": "**Risk:** Internal fraud or catastrophic accidental errors. | **Impact:** A single compromised or disgruntled employee could delete your entire production environment. | **Guidance:** Enforce 'Two-Person' rules (like PR reviews) for all critical changes to prevent a 'single point of human failure' from destroying the business.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.4",
@@ -50,7 +56,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Incorporate a 'Security Acceptable Use' clause into all standard employment contracts and external vendor Master Service Agreements (MSAs).",
                     "nist_mapping": "GV.OC-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Security is only as strong as its enforcement. If management ignores policy violations for 'high performers,' it sends a signal to the whole organization that security is optional."
+                    "expert_rationale": "Security is only as strong as its enforcement. If management ignores policy violations for 'high performers,' it sends a signal to the whole organization that security is optional.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.5",
@@ -61,7 +69,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Create an 'Emergency Contacts' appendix within the primary Incident Response Plan listing law enforcement and legal counsel.",
                     "nist_mapping": "ID.GV-1",
                     "cis_mapping": "17.4",
-                    "expert_rationale": "In a breach, every minute counts for legal notification windows (like the 72-hour GDPR limit). Searching for the FBI's phone number during an active ransomware attack is a massive failure."
+                    "expert_rationale": "In a breach, every minute counts for legal notification windows (like the 72-hour GDPR limit). Searching for the FBI's phone number during an active ransomware attack is a massive failure.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.6",
@@ -72,7 +82,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enlist key security personnel in relevant industry-specific Information Sharing and Analysis Centers (ISACs) or regional cybersecurity task forces.",
                     "nist_mapping": "ID.RA-2",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Cybersecurity is a team sport. Being part of an ISAC means you hear about an exploit targeting your industry hours before it hits the news—giving you time to patch before you're attacked."
+                    "expert_rationale": "Cybersecurity is a team sport. Being part of an ISAC means you hear about an exploit targeting your industry hours before it hits the news\u2014giving you time to patch before you're attacked.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.7",
@@ -83,7 +95,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Integrate open-source (OSINT) or commercial threat intelligence feeds via STIX/TAXII into your primary EDR or SIEM platform.",
                     "nist_mapping": "ID.RA-2",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "**Risk:** Blindness to emerging adversary maneuvers. | **Impact:** Being hit by an exploit that your industry peers were already warned about via threat feeds. | **Guidance:** Cybersecurity is a team sport. Threat intel shifts you from reactive 'firefighting' to proactive hunting. It is your 'early warning system'."
+                    "expert_rationale": "**Risk:** Blindness to emerging adversary maneuvers. | **Impact:** Being hit by an exploit that your industry peers were already warned about via threat feeds. | **Guidance:** Cybersecurity is a team sport. Threat intel shifts you from reactive 'firefighting' to proactive hunting. It is your 'early warning system'.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.8",
@@ -94,7 +108,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Require a formal security architecture review sign-off before any new major application or infrastructure change goes to production.",
                     "nist_mapping": "PR.IP-2",
                     "cis_mapping": "16.1",
-                    "expert_rationale": "Fixing a security flaw during the design phase costs $10. Fixing it after a breach costs $1,000,000. 'Shift-Left' security is not just safer—it’s far cheaper for the business."
+                    "expert_rationale": "Fixing a security flaw during the design phase costs $10. Fixing it after a breach costs $1,000,000. 'Shift-Left' security is not just safer\u2014it\u2019s far cheaper for the business.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.9",
@@ -105,7 +121,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy an automated ITAM discovery tool (e.g., Lansweeper, AWS Config) to continuously map and document active enterprise assets.",
                     "nist_mapping": "ID.AM-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "**Risk:** Shadow IT and forgotten, unmanaged assets. | **Impact:** Most breaches occur on 'forgotten' servers that aren't being patched because they aren't in the inventory. | **Guidance:** You cannot protect what you do not know you have. A definitive inventory is the foundation of all other security controls."
+                    "expert_rationale": "**Risk:** Shadow IT and forgotten, unmanaged assets. | **Impact:** Most breaches occur on 'forgotten' servers that aren't being patched because they aren't in the inventory. | **Guidance:** You cannot protect what you do not know you have. A definitive inventory is the foundation of all other security controls.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.10",
@@ -116,7 +134,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Draft an Acceptable Use Policy explicitly banning unauthorized browser extensions, personal cloud storage for work data, and unapproved generative AI tools.",
                     "nist_mapping": "PR.AT-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "An AUP is your first line of defense in court. If an employee uses a work laptop for gambling or personal storage, the AUP allows the organization to take immediate legal and disciplinary action."
+                    "expert_rationale": "An AUP is your first line of defense in court. If an employee uses a work laptop for gambling or personal storage, the AUP allows the organization to take immediate legal and disciplinary action.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.11",
@@ -127,7 +147,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Implement a mandatory HR offboarding workflow that holds final offboarding sign-off until IT confirms physical asset retrieval.",
                     "nist_mapping": "PR.IP-11",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Departed employees with active laptops are a major source of data leaks. A strict asset return policy ensures that proprietary code and customer data don't walk out the door forever."
+                    "expert_rationale": "Departed employees with active laptops are a major source of data leaks. A strict asset return policy ensures that proprietary code and customer data don't walk out the door forever.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.12",
@@ -138,7 +160,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Establish a simple 3 or 4-tier data classification matrix (Public, Internal, Confidential, Restricted) and train employees on identifying data types.",
                     "nist_mapping": "ID.AM-5",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Treating all data equally is inefficient. You wouldn't lock a company lunch menu in a vault. Data classification allows you to focus your expensive security resources on what actually matters (Confidential/Restricted data)."
+                    "expert_rationale": "Treating all data equally is inefficient. You wouldn't lock a company lunch menu in a vault. Data classification allows you to focus your expensive security resources on what actually matters (Confidential/Restricted data).",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.13",
@@ -149,7 +173,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enable automated tagging in Microsoft Purview or Google Workspace to force employees to select a data classification unpon creating a new document or email.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Labeling is visual friction that prevents mistakes. If a document is clearly marked [CONFIDENTIAL], an employee is much less likely to accidentally forward it to an external vendor."
+                    "expert_rationale": "Labeling is visual friction that prevents mistakes. If a document is clearly marked [CONFIDENTIAL], an employee is much less likely to accidentally forward it to an external vendor.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.14",
@@ -160,7 +186,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Mandate TLS 1.2+ for all data pathways and deploy a secure file transfer solution for sending large or sensitive files to external clients.",
                     "nist_mapping": "PR.DS-2",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Sending PII over unencrypted email is a 'Critical Risk'. Secure transfer protocols ensure that even if an attacker intercepts the data, they cannot read it or alter it during transit."
+                    "expert_rationale": "Sending PII over unencrypted email is a 'Critical Risk'. Secure transfer protocols ensure that even if an attacker intercepts the data, they cannot read it or alter it during transit.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.15",
@@ -171,7 +199,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Document an RBAC model specifying exactly what systems HR, Finance, and Engineering are allowed to access by default.",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "3.1",
-                    "expert_rationale": "Access control is the heart of security. If everyone has access to everything, you don't have a perimeter—you have a free-for-all. RBAC ensures that if one account is compromised, the attacker can only see what that specific role allows."
+                    "expert_rationale": "Access control is the heart of security. If everyone has access to everything, you don't have a perimeter\u2014you have a free-for-all. RBAC ensures that if one account is compromised, the attacker can only see what that specific role allows.",
+                    "risk_impact": 9,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.16",
@@ -182,7 +212,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Integrate HR software directly with the core Identity Provider (Okta/Entra) to trigger automated, instant account suspensions upon termination.",
                     "nist_mapping": "PR.AA-1",
                     "cis_mapping": "6.1",
-                    "expert_rationale": "Orphaned accounts (accounts belonging to people who left the company) are a top target for hackers. A formal identity lifecycle ensures that when an employee walks out the door, their digital keys are revoked instantly."
+                    "expert_rationale": "Orphaned accounts (accounts belonging to people who left the company) are a top target for hackers. A formal identity lifecycle ensures that when an employee walks out the door, their digital keys are revoked instantly.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.17",
@@ -193,7 +225,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy an enterprise password manager (e.g., 1Password, Bitwarden) and enforce rules banning the local storage of API keys in code.",
                     "nist_mapping": "PR.AA-P02",
                     "cis_mapping": "6.1",
-                    "expert_rationale": "Passwords written on sticky notes or stored in 'passwords.txt' are a security nightmare. Secret management tools ensure that credentials are encrypted, rotated, and only accessible to those who need them."
+                    "expert_rationale": "Passwords written on sticky notes or stored in 'passwords.txt' are a security nightmare. Secret management tools ensure that credentials are encrypted, rotated, and only accessible to those who need them.",
+                    "risk_impact": 9,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.18",
@@ -204,7 +238,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Mandate quarterly User Access Reviews (UAR) where department heads must manually re-certify the exact software accesses possessed by their direct reports.",
                     "nist_mapping": "PR.AC-4",
                     "cis_mapping": "6.8",
-                    "expert_rationale": "Privilege creep happens when an employee changes roles but keeps their old permissions. Regular access reviews are the only way to catch 'over-privileged' users before an attacker exploits their excessive access."
+                    "expert_rationale": "Privilege creep happens when an employee changes roles but keeps their old permissions. Regular access reviews are the only way to catch 'over-privileged' users before an attacker exploits their excessive access.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.19",
@@ -215,7 +251,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Implement a Vendor Risk Management (VRM) program. Require all critical vendors to provide a SOC 2 Type II report before finalizing procurement.",
                     "nist_mapping": "ID.SC-1",
                     "cis_mapping": "15.1",
-                    "expert_rationale": "You might be secure, but if your vendor isn't, your data is still at risk. Third-party risks (like the MoveIT or SolarWinds attacks) are now the #1 cause of major data breaches globally."
+                    "expert_rationale": "You might be secure, but if your vendor isn't, your data is still at risk. Third-party risks (like the MoveIT or SolarWinds attacks) are now the #1 cause of major data breaches globally.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.20",
@@ -226,7 +264,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Work with legal counsel to draft a standard 'Data Processing Agreement' (DPA) requiring vendors to report any breaches to you within 48-72 hours.",
                     "nist_mapping": "ID.SC-3",
                     "cis_mapping": "15.1",
-                    "expert_rationale": "A 'handshake agreement' won't help you after a breach. You need clear, legally binding clauses that force your vendors to notify you immediately if your customers' data is exposed."
+                    "expert_rationale": "A 'handshake agreement' won't help you after a breach. You need clear, legally binding clauses that force your vendors to notify you immediately if your customers' data is exposed.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.21",
@@ -237,7 +277,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Require software vendors to provide an SBOM demonstrating that third-party open-source components are updated and free from known critical CVEs.",
                     "nist_mapping": "ID.SC-2",
                     "cis_mapping": "15.1",
-                    "expert_rationale": "Modern software is built from thousands of open-source parts. If one of those parts is 'poisoned' (Supply Chain attack), your entire product is vulnerable. SBOMs allow you to audit what’s actually inside your software."
+                    "expert_rationale": "Modern software is built from thousands of open-source parts. If one of those parts is 'poisoned' (Supply Chain attack), your entire product is vulnerable. SBOMs allow you to audit what\u2019s actually inside your software.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.22",
@@ -248,7 +290,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Institute an annual reassessment policy for all Tier 1 vendors requiring them to submit updated compliance certifications (ISO/SOC2).",
                     "nist_mapping": "ID.SC-4",
                     "cis_mapping": "15.1",
-                    "expert_rationale": "A vendor's security is not static. A company that was safe last year might have laid off their security team or changed their stack this year. Annual 'check-ins' are the only way to ensure your vendors aren't drifting into unsafe territory."
+                    "expert_rationale": "A vendor's security is not static. A company that was safe last year might have laid off their security team or changed their stack this year. Annual 'check-ins' are the only way to ensure your vendors aren't drifting into unsafe territory.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.23",
@@ -259,7 +303,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Establish Cloud Security Posture Management (CSPM) tools to automatically check for misconfigurations like public S3 buckets in your cloud accounts.",
                     "nist_mapping": "ID.SC-1",
                     "cis_mapping": "15.1",
-                    "expert_rationale": "The biggest lie in cloud computing is 'The Cloud is Secure.' AWS secures the 'Cloud,' but YOU secure what’s 'In the Cloud.' Misunderstanding this 'Shared Responsibility Model' is the cause of almost all major S3 bucket leaks."
+                    "expert_rationale": "The biggest lie in cloud computing is 'The Cloud is Secure.' AWS secures the 'Cloud,' but YOU secure what\u2019s 'In the Cloud.' Misunderstanding this 'Shared Responsibility Model' is the cause of almost all major S3 bucket leaks.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.24",
@@ -270,7 +316,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Draft an IRP utilizing the PICERL methodology (Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned).",
                     "nist_mapping": "ID.RA-1",
                     "cis_mapping": "17.1",
-                    "expert_rationale": "**Risk:** Chaos and catastrophic delays during a live breach. | **Impact:** Failing legal notification windows (like the 72hr GDPR limit) or making the breach worse via 'panic' decisions. | **Guidance:** An IRP is like a fire drill; it ensures that when the house is on fire, everyone knows exactly where the exits are and how to use the fire extinguisher."
+                    "expert_rationale": "**Risk:** Chaos and catastrophic delays during a live breach. | **Impact:** Failing legal notification windows (like the 72hr GDPR limit) or making the breach worse via 'panic' decisions. | **Guidance:** An IRP is like a fire drill; it ensures that when the house is on fire, everyone knows exactly where the exits are and how to use the fire extinguisher.",
+                    "risk_impact": 10,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.25",
@@ -281,7 +329,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Establish an alert triage flowchart detailing exactly who determines when a 'potential event' gets officially declared a 'security incident'.",
                     "nist_mapping": "ID.RA-3",
                     "cis_mapping": "17.1",
-                    "expert_rationale": "If you treat every 'anti-virus alert' like a nation-state attack, your team will burn out in a week. Triage allows you to ignore the 'noise' and focus all your firepower on the 'signals' that actually threaten the business."
+                    "expert_rationale": "If you treat every 'anti-virus alert' like a nation-state attack, your team will burn out in a week. Triage allows you to ignore the 'noise' and focus all your firepower on the 'signals' that actually threaten the business.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.26",
@@ -292,7 +342,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Run an annual tabletop simulation encompassing ransomware scenarios to train executives and IT staff on rapid response workflows.",
                     "nist_mapping": "ID.RA-1",
                     "cis_mapping": "17.1",
-                    "expert_rationale": "Execution beats planning. It doesn't matter how good your PDF plan is if your sysadmin doesn't know which server to pull the plug on during an attack. Regular 'Tabletop Exercises' turn theory into muscle memory."
+                    "expert_rationale": "Execution beats planning. It doesn't matter how good your PDF plan is if your sysadmin doesn't know which server to pull the plug on during an attack. Regular 'Tabletop Exercises' turn theory into muscle memory.",
+                    "risk_impact": 10,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.27",
@@ -303,7 +355,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Mandate a 'Post-Mortem' meeting within 7 days of concluding any SEV-1 or SEV-2 incident to document gaps and assign remediation Jira tickets.",
                     "nist_mapping": "ID.RA-2",
                     "cis_mapping": "17.9",
-                    "expert_rationale": "Making a mistake is fine; making the same mistake twice is a failure of governance. 'Lessons Learned' sessions are the only way to ensure an attacker can't use the same back door next month."
+                    "expert_rationale": "Making a mistake is fine; making the same mistake twice is a failure of governance. 'Lessons Learned' sessions are the only way to ensure an attacker can't use the same back door next month.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.28",
@@ -314,7 +368,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Establish a policy requiring the immediate disconnection (but not powering down) of compromised machines, and utilization of write-blockers during imaging.",
                     "nist_mapping": "ID.RA-1",
                     "cis_mapping": "17.6",
-                    "expert_rationale": "If you don't follow a technical 'Chain of Custody,' your evidence is useless in a court of law. Proper evidence collection is what allows you to prosecute hackers or defend your company against regulatory fines."
+                    "expert_rationale": "If you don't follow a technical 'Chain of Custody,' your evidence is useless in a court of law. Proper evidence collection is what allows you to prosecute hackers or defend your company against regulatory fines.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.29",
@@ -325,7 +381,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Audit the disaster recovery environment to ensure the exact same firewall rules and MFA conditional access policies are applied to the failover site.",
                     "nist_mapping": "PR.RP-1",
                     "cis_mapping": "11.2",
-                    "expert_rationale": "Hackers love a crisis. If your backup server doesn't have the same firewall rules as your main server, an attacker will simply wait for a system crash and enter through the weakened 'Failover' door."
+                    "expert_rationale": "Hackers love a crisis. If your backup server doesn't have the same firewall rules as your main server, an attacker will simply wait for a system crash and enter through the weakened 'Failover' door.",
+                    "risk_impact": 10,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.30",
@@ -336,7 +394,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Conduct an annual full or partial failover test scaling application infrastructure to secondary regions/zones to verify recovery time objectives (RTOs).",
                     "nist_mapping": "PR.RP-1",
                     "cis_mapping": "11.1",
-                    "expert_rationale": "A backup that has never been tested is not a backup—it’s a hope. ICT readiness is the technical proof that the company can survive a total data center loss without going out of business."
+                    "expert_rationale": "A backup that has never been tested is not a backup\u2014it\u2019s a hope. ICT readiness is the technical proof that the company can survive a total data center loss without going out of business.",
+                    "risk_impact": 10,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.31",
@@ -347,7 +407,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Maintain a master spreadsheet (Compliance Register) detailing every jurisdiction you operate in and their specific data breach notification windows.",
                     "nist_mapping": "GV.RR-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Ignorance of the law is not a defense. If you operate in California or Europe, you are legally bound by CCPA/GDPR. A compliance register ensures you aren't blindsided by a massive fine because you didn't know a new law applied to you."
+                    "expert_rationale": "Ignorance of the law is not a defense. If you operate in California or Europe, you are legally bound by CCPA/GDPR. A compliance register ensures you aren't blindsided by a massive fine because you didn't know a new law applied to you.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.32",
@@ -358,7 +420,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enforce strict endpoint security policies preventing users from installing external, unlicensed software. Utilize MDM to audit installed applications.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Unlicensed software is a double threat: it brings legal liability and it’s a primary carrier for malware. Managing IP rights is about protecting the company’s pocketbook and its perimeter at the same time."
+                    "expert_rationale": "Unlicensed software is a double threat: it brings legal liability and it\u2019s a primary carrier for malware. Managing IP rights is about protecting the company\u2019s pocketbook and its perimeter at the same time.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.33",
@@ -369,7 +433,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enable Object Lock or compliance-mode retention policies on AWS S3 buckets storing audit trails to prevent deletion by ransomware.",
                     "nist_mapping": "PR.DS-10",
                     "cis_mapping": "11.1",
-                    "expert_rationale": "If an attacker deletes your audit logs during a breach, you can't prove what happened. record protection (using WORM storage) ensures that your history is 'tamper-proof,' which is vital for forensic investigations and tax audits."
+                    "expert_rationale": "If an attacker deletes your audit logs during a breach, you can't prove what happened. record protection (using WORM storage) ensures that your history is 'tamper-proof,' which is vital for forensic investigations and tax audits.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.34",
@@ -380,7 +446,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Implement data mapping to understand exactly where PII flows. Build a standardized, trackable process for honoring user deletion requests within 30 days.",
                     "nist_mapping": "GV.RR-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Privacy is a civil right. If you lose a customer's credit card, it's bad. If you lose their home address, health data, or social security number (PII), it's a lifespan-altering event for the victim and a business-ending event for the company."
+                    "expert_rationale": "Privacy is a civil right. If you lose a customer's credit card, it's bad. If you lose their home address, health data, or social security number (PII), it's a lifespan-altering event for the victim and a business-ending event for the company.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "5.35",
@@ -391,7 +459,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Conduct an annual penetration test performed by an entirely external cyber security consultancy. Track their findings to full remediation.",
                     "nist_mapping": "GV.MT-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Every security team has blind spots. An independent review (like a Pentest) is a 'reality check' that finds the gaps you became too familiar to see. It’s the difference between 'thinking' you're secure and 'knowing' you are."
+                    "expert_rationale": "Every security team has blind spots. An independent review (like a Pentest) is a 'reality check' that finds the gaps you became too familiar to see. It\u2019s the difference between 'thinking' you're secure and 'knowing' you are.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.36",
@@ -402,7 +472,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Establish an internal audit schedule. Have department heads conduct self-assessments against the core critical controls and report to the CISO.",
                     "nist_mapping": "GV.MT-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Policies only matter if they are followed. Constant internal compliance checks ensure that security isn't just a 'once-a-year' audit exercise, but a continuous operational reality."
+                    "expert_rationale": "Policies only matter if they are followed. Constant internal compliance checks ensure that security isn't just a 'once-a-year' audit exercise, but a continuous operational reality.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "5.37",
@@ -413,7 +485,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Require Engineering and IT to document standard operating procedures (SOPs) for all infrastructure tasks. Review SOPs annually.",
                     "nist_mapping": "PR.IP-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "The 'Bus Factor': If your lead sysadmin is hit by a bus tomorrow, can the rest of the team still patch the firewall? Documented SOPs prevent 'Tribal Knowledge' from being a single point of failure."
+                    "expert_rationale": "The 'Bus Factor': If your lead sysadmin is hit by a bus tomorrow, can the rest of the team still patch the firewall? Documented SOPs prevent 'Tribal Knowledge' from being a single point of failure.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 }
             ]
         },
@@ -432,7 +506,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Partner with a background screening vendor (e.g., Checkr) and make a cleared background check a mandatory condition in all employment offer letters.",
                     "nist_mapping": "PR.AT-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "**Risk:** Hiring an insider threat or someone with a fraudulent history. | **Impact:** Data theft, sabotage, or financial embezzlement by a trusted employee. | **Guidance:** Background checks are a low-cost, high-impact 'Trust but Verify' control that screens out high-risk individuals before they touch your data."
+                    "expert_rationale": "**Risk:** Hiring an insider threat or someone with a fraudulent history. | **Impact:** Data theft, sabotage, or financial embezzlement by a trusted employee. | **Guidance:** Background checks are a low-cost, high-impact 'Trust but Verify' control that screens out high-risk individuals before they touch your data.",
+                    "risk_impact": 3,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "6.2",
@@ -443,7 +519,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Require all new hires and contractors to sign a Non-Disclosure Agreement (NDA) on Day 1 before receiving access to any internal IT systems.",
                     "nist_mapping": "PR.AT-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "If a security expectation isn't in the contract, it's very hard to enforce in court. Defining responsibilities 'by law' protects the company's IP if an employee decides to leak data to a competitor."
+                    "expert_rationale": "If a security expectation isn't in the contract, it's very hard to enforce in court. Defining responsibilities 'by law' protects the company's IP if an employee decides to leak data to a competitor.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "6.3",
@@ -454,7 +532,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy a security awareness platform (e.g., KnowBe4). Mandate training during onboarding and annually thereafter. Conduct monthly simulated phishing campaigns.",
                     "nist_mapping": "PR.AT-1",
                     "cis_mapping": "14.1",
-                    "expert_rationale": "**Risk:** Human vulnerability is the easiest entry point for attackers. | **Impact:** 90% of breaches start with a single phishing click. | **Guidance:** Transform your staff into a 'Human Firewall.' Continuous, bite-sized training is far more effective than a once-a-year compliance video."
+                    "expert_rationale": "**Risk:** Human vulnerability is the easiest entry point for attackers. | **Impact:** 90% of breaches start with a single phishing click. | **Guidance:** Transform your staff into a 'Human Firewall.' Continuous, bite-sized training is far more effective than a once-a-year compliance video.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "6.4",
@@ -465,7 +545,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Publish a disciplinary playbook alongside the security policy outlining escalating warnings up to and including termination for severe security violations.",
                     "nist_mapping": "PR.AT-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Rules without consequences are merely suggestions. If an employee intentionally disables the firewall or steals customer data, an clear disciplinary process ensures the company can terminate them legally and swiftly."
+                    "expert_rationale": "Rules without consequences are merely suggestions. If an employee intentionally disables the firewall or steals customer data, an clear disciplinary process ensures the company can terminate them legally and swiftly.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "6.5",
@@ -476,7 +558,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Create an HR exit-interview checklist requiring departing personnel to surrender all physical hardware and sign a document reaffirming their post-employment confidentiality agreement.",
                     "nist_mapping": "PR.IP-11",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "The day an employee leaves to join a competitor is the highest risk day for data theft. Reaffirming their NDA during the exit interview serves as a critical legal reminder that 'taking the customer list' is illegal."
+                    "expert_rationale": "The day an employee leaves to join a competitor is the highest risk day for data theft. Reaffirming their NDA during the exit interview serves as a critical legal reminder that 'taking the customer list' is illegal.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "6.6",
@@ -487,7 +571,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Audit current contractor agreements to ensure NDAs natively cover modern data scopes (like source code, customer DBs, and API documentation).",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "An NDA is your baseline defensive shield. It defines what is 'secret' and sets the penalty for telling those secrets. Without it, your trade secrets are legally 'public domain.'"
+                    "expert_rationale": "An NDA is your baseline defensive shield. It defines what is 'secret' and sets the penalty for telling those secrets. Without it, your trade secrets are legally 'public domain.'",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "6.7",
@@ -498,7 +584,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy Always-On corporate VPNs (e.g., Zscaler, GlobalProtect) and mandate Full Disk Encryption (BitLocker/FileVault) for all mobile endpoints.",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "The home office is the new front line. Remote work bypasses your office firewalls. Ensuring employees use corporate VPNs and encrypted disks is the only way to maintain a secure perimeter when everyone is remote."
+                    "expert_rationale": "The home office is the new front line. Remote work bypasses your office firewalls. Ensuring employees use corporate VPNs and encrypted disks is the only way to maintain a secure perimeter when everyone is remote.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "6.8",
@@ -509,7 +597,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Add a 'Phish Alert' button to employee email clients. Create a dedicated Slack/Teams channel (e.g., #security-alerts) and document the escalation path during onboarding.",
                     "nist_mapping": "ID.RA-1",
                     "cis_mapping": "17.1",
-                    "expert_rationale": "Your employees see things your software won't. If an employee sees a stranger in the data center or a weird popup, you want them to report it immediately. A 'No-Fear Reporting' culture can stop a breach before it even starts."
+                    "expert_rationale": "Your employees see things your software won't. If an employee sees a stranger in the data center or a weird popup, you want them to report it immediately. A 'No-Fear Reporting' culture can stop a breach before it even starts.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 }
             ]
         },
@@ -528,7 +618,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Clearly define 'Public', 'Employee-Only', and 'Secure' zones within the office layout. Ensure all boundary doors remain locked by default.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "If a stranger can walk off the street and into your server room, your digital firewalls don't matter. Physical perimeters are the first layer of defense, ensuring that only authorized personnel can even get near your critical hardware."
+                    "expert_rationale": "If a stranger can walk off the street and into your server room, your digital firewalls don't matter. Physical perimeters are the first layer of defense, ensuring that only authorized personnel can even get near your critical hardware.",
+                    "risk_impact": 5,
+                    "criticality": "Medium"
                 },
                 {
                     "control_id": "7.2",
@@ -539,7 +631,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy an electronic badge system for all office entry points. Mandate that visitors are escorted by an employee at all times.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Identity verification shouldn't stop at the login screen. Physical entry controls (badges/biometrics) ensure that you know exactly who was in the office when a piece of hardware goes missing or a 'rubber ducky' is plugged into a workstation."
+                    "expert_rationale": "Identity verification shouldn't stop at the login screen. Physical entry controls (badges/biometrics) ensure that you know exactly who was in the office when a piece of hardware goes missing or a 'rubber ducky' is plugged into a workstation.",
+                    "risk_impact": 3,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.3",
@@ -550,7 +644,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enforce a 'Locked Door' policy for the server room and HR filing areas. Utilize privacy film on windows of offices where sensitive data is processed.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Insider threats are real. Just because someone works for the company doesn't mean they should have access to the HR files or the core switch. internal physical security creates 'compartmentalization,' limiting the damage one person can do."
+                    "expert_rationale": "Insider threats are real. Just because someone works for the company doesn't mean they should have access to the HR files or the core switch. internal physical security creates 'compartmentalization,' limiting the damage one person can do.",
+                    "risk_impact": 4,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.4",
@@ -561,7 +657,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Install CCTV cameras at all primary entrance/exit points and inside the server room. Set up motion-sensitive alerts for after-hours activity.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Monitoring is the physical equivalent of 'logging.' If a theft occurs at 3 AM, CCTV allows you to identify the culprit. Without monitoring, physical security is entirely reactive and blind."
+                    "expert_rationale": "Monitoring is the physical equivalent of 'logging.' If a theft occurs at 3 AM, CCTV allows you to identify the culprit. Without monitoring, physical security is entirely reactive and blind.",
+                    "risk_impact": 3,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.5",
@@ -572,7 +670,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Install smoke detectors and moisture sensors in the server room. Maintain off-site backups in a geographically distinct region to survive local disasters.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "A flood can be just as damaging as a hacker. Protecting against environmental threats is about 'Physical Availability.' If your only server room is in a basement with no water sensors, your business is one broken pipe away from bankruptcy."
+                    "expert_rationale": "A flood can be just as damaging as a hacker. Protecting against environmental threats is about 'Physical Availability.' If your only server room is in a basement with no water sensors, your business is one broken pipe away from bankruptcy.",
+                    "risk_impact": 4,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.6",
@@ -583,7 +683,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Post clear signage outside the server room and SOC banning mobile phone usage and photography without explicit management approval.",
                     "nist_mapping": "PR.PS-2",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "One photo of a server rack can reveal hardware versions, cable layouts, and even passwords on sticky notes. Banning cameras in secure areas is a standard 'Anti-Espionage' measure."
+                    "expert_rationale": "One photo of a server rack can reveal hardware versions, cable layouts, and even passwords on sticky notes. Banning cameras in secure areas is a standard 'Anti-Espionage' measure.",
+                    "risk_impact": 3,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.7",
@@ -594,7 +696,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Configure corporate laptops to automatically lock screens after 5 minutes of inactivity. Provide lockable pedestals for all employees to store sensitive papers.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "An unlocked screen or a printed salary list on a desk is an 'Open Invitation' for data theft. Clear desk/screen policies ensure that sensitive info is only visible when an authorized person is actively working on it."
+                    "expert_rationale": "An unlocked screen or a printed salary list on a desk is an 'Open Invitation' for data theft. Clear desk/screen policies ensure that sensitive info is only visible when an authorized person is actively working on it.",
+                    "risk_impact": 2,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.8",
@@ -605,7 +709,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Audit the placement of all core networking equipment. Ensure it is stored in ventilated, lockable closets rather than under desks or in open hallways.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "equipment siting is common sense turned into a control. You don't put your main database server directly under an AC unit that might leak, or next to a window where it can be seen—or smashed—from the street."
+                    "expert_rationale": "equipment siting is common sense turned into a control. You don't put your main database server directly under an AC unit that might leak, or next to a window where it can be seen\u2014or smashed\u2014from the street.",
+                    "risk_impact": 2,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.9",
@@ -616,7 +722,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Mandate the use of Kensington locks for laptops in public spaces and ensure MDM (Mobile Device Management) is active on every employee mobile device.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Laptops are stolen every day. If the disk is encrypted, the thief has a $1,000 piece of hardware. If it's NOT encrypted, they have your entire company's source code, customer list, and financial history. Off-premises security is about 'Data Non-Disclosure' after physical loss."
+                    "expert_rationale": "Laptops are stolen every day. If the disk is encrypted, the thief has a $1,000 piece of hardware. If it's NOT encrypted, they have your entire company's source code, customer list, and financial history. Off-premises security is about 'Data Non-Disclosure' after physical loss.",
+                    "risk_impact": 4,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.10",
@@ -627,7 +735,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Ban the use of unencrypted USB drives. Require that all decommissioned hard drives are physically shredded or degaussed by an authorized 3rd party vendor.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "3.1",
-                    "expert_rationale": "One forgotten USB stick in a parking lot can lead to a 'Rubber Ducky' attack. One hard drive sold on eBay without being wiped can lead to a total data breach. Media management is about controlling every bit of 'removable' data."
+                    "expert_rationale": "One forgotten USB stick in a parking lot can lead to a 'Rubber Ducky' attack. One hard drive sold on eBay without being wiped can lead to a total data breach. Media management is about controlling every bit of 'removable' data.",
+                    "risk_impact": 4,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.11",
@@ -638,7 +748,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Install UPS systems for all critical networking gear. Ensure the server room has an automated backup generator that is tested quarterly.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "A power surge can 'fry' a $50,000 firewall in a millisecond. Supporting utilities like UPS and surge protectors are the 'Life Support' for your hardware, ensuring continuity when the grid fails."
+                    "expert_rationale": "A power surge can 'fry' a $50,000 firewall in a millisecond. Supporting utilities like UPS and surge protectors are the 'Life Support' for your hardware, ensuring continuity when the grid fails.",
+                    "risk_impact": 4,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.12",
@@ -649,7 +761,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Use locked conduits for all network cabling. Ensure that telecom entrance points are in a locked room rather than an open basement or outside wall.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "If your network cables are exposed in the hallway, an attacker can simply plug in a 'Packet Sniffer' and watch your network traffic. Cabling security ensures the 'Physical Integrity' of your data pathways."
+                    "expert_rationale": "If your network cables are exposed in the hallway, an attacker can simply plug in a 'Packet Sniffer' and watch your network traffic. Cabling security ensures the 'Physical Integrity' of your data pathways.",
+                    "risk_impact": 2,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.13",
@@ -660,7 +774,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Establish a recurring maintenance calendar for all critical infrastructure. Replace UPS batteries every 3-5 years regardless of reported health.",
                     "nist_mapping": "PR.PS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Hardware wears out. A server fan that fails because it was full of dust can cause a $10,000 CPU to melt. Proactive maintenance is a 'Reliability Control' that prevents unplanned outages."
+                    "expert_rationale": "Hardware wears out. A server fan that fails because it was full of dust can cause a $10,000 CPU to melt. Proactive maintenance is a 'Reliability Control' that prevents unplanned outages.",
+                    "risk_impact": 3,
+                    "criticality": "Low"
                 },
                 {
                     "control_id": "7.14",
@@ -671,7 +787,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Use industry-standard data wiping tools (e.g., DBAN) for equipment reuse, and physical shredding for equipment being retired.",
                     "nist_mapping": "PR.DS-10",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Old hardware is a goldmine for data recovery experts. If you don't 'Securely Dispose' of your old servers, you are essentially giving away your company secrets to whoever buys your old gear at an auction."
+                    "expert_rationale": "Old hardware is a goldmine for data recovery experts. If you don't 'Securely Dispose' of your old servers, you are essentially giving away your company secrets to whoever buys your old gear at an auction.",
+                    "risk_impact": 3,
+                    "criticality": "Low"
                 }
             ]
         },
@@ -690,7 +808,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy a modern EDR solution (e.g., CrowdStrike, SentinelOne) and enforce 'Compliance Checks' preventing devices without disk encryption from accessing corporate email.",
                     "nist_mapping": "PR.IP-1",
                     "cis_mapping": "2.1",
-                    "expert_rationale": "**Risk:** Malware, ransomware, and unauthorized access at the entry point. | **Impact:** Total encryption of work data or credential theft leading to network-wide compromise. | **Guidance:** Modern EDR/MDR is non-negotiable. It provides the visibility needed to stop an attack at the 'front door' before it moves laterally into your servers."
+                    "expert_rationale": "**Risk:** Malware, ransomware, and unauthorized access at the entry point. | **Impact:** Total encryption of work data or credential theft leading to network-wide compromise. | **Guidance:** Modern EDR/MDR is non-negotiable. It provides the visibility needed to stop an attack at the 'front door' before it moves laterally into your servers.",
+                    "risk_impact": 9,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.2",
@@ -701,7 +821,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Implement 'Just-In-Time' (JIT) access using a Privileged Access Management (PAM) tool. Ban the use of 'Domain Admin' accounts for day-to-day work (email/web).",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "5.1",
-                    "expert_rationale": "**Risk:** Unrestricted admin power being weaponized by an attacker. | **Impact:** A single 'Domain Admin' compromise allows a complete takeover of your company's identity and data. | **Guidance:** Implement 'Just-In-Time' (JIT) access. No one should be an admin 24/7; they should only 'elevate' when doing specific, approved work."
+                    "expert_rationale": "**Risk:** Unrestricted admin power being weaponized by an attacker. | **Impact:** A single 'Domain Admin' compromise allows a complete takeover of your company's identity and data. | **Guidance:** Implement 'Just-In-Time' (JIT) access. No one should be an admin 24/7; they should only 'elevate' when doing specific, approved work.",
+                    "risk_impact": 10,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.3",
@@ -712,7 +834,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Review all folder and application permissions. Remove 'Everyone' or 'Authenticated Users' from sensitive data shares and replace with specific AD groups.",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "3.1",
-                    "expert_rationale": "Internal partitioning is key. Access restriction ensures that if your marketing intern's account is hacked, the attacker can't download your patent portfolio or payroll data. It's about containing the 'Blast Radius' of a compromise."
+                    "expert_rationale": "Internal partitioning is key. Access restriction ensures that if your marketing intern's account is hacked, the attacker can't download your patent portfolio or payroll data. It's about containing the 'Blast Radius' of a compromise.",
+                    "risk_impact": 9,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.4",
@@ -723,7 +847,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enforce Multi-Factor Authentication (MFA) for all source code repositories. Disable 'Public' repositories by default.",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "3.3",
-                    "expert_rationale": "Your source code is your secret sauce. If an attacker gets write access to your code, they can insert a backdoor and hide it in plain sight. Protecting code access is a 'Fundamental IP Control' for any tech-driven company."
+                    "expert_rationale": "Your source code is your secret sauce. If an attacker gets write access to your code, they can insert a backdoor and hide it in plain sight. Protecting code access is a 'Fundamental IP Control' for any tech-driven company.",
+                    "risk_impact": 9,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.5",
@@ -734,7 +860,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Mandate Multi-Factor Authentication (MFA) for every single employee. Use FIDO2/Hardware keys for high-risk roles (Admins, Finance).",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "6.1",
-                    "expert_rationale": "**Risk:** Credential theft via phishing or password spraying. | **Impact:** Passwords alone are no longer a sufficient defense against modern attackers. | **Guidance:** MFA is the single most effective control you can implement. It neutralizes 99% of bulk credential attacks. Without it, you are essentially leaving the keys under the mat."
+                    "expert_rationale": "**Risk:** Credential theft via phishing or password spraying. | **Impact:** Passwords alone are no longer a sufficient defense against modern attackers. | **Guidance:** MFA is the single most effective control you can implement. It neutralizes 99% of bulk credential attacks. Without it, you are essentially leaving the keys under the mat.",
+                    "risk_impact": 10,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.6",
@@ -745,7 +873,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Set up automated alerts for when disk space exceeds 80% or CPU usage exceeds 90% for sustained periods.",
                     "nist_mapping": "PR.IP-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "A crashed server is a 'Security Incident.' If your website goes down because the disk was full, you've failed the 'Availability' pillar of security. Capacity management is about predicting and preventing outages before they happen."
+                    "expert_rationale": "A crashed server is a 'Security Incident.' If your website goes down because the disk was full, you've failed the 'Availability' pillar of security. Capacity management is about predicting and preventing outages before they happen.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.7",
@@ -756,7 +886,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enable real-time scanning and behavioral analysis on all EDR agents. Configure daily automated scans for all file servers.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "10.1",
-                    "expert_rationale": "Malware is the #1 tool for cybercriminals. Protection (using EDR and User Awareness) is about creating layers. If the user clicks the link, the EDR should catch the download. If the download happens, the sandbox should catch the execution."
+                    "expert_rationale": "Malware is the #1 tool for cybercriminals. Protection (using EDR and User Awareness) is about creating layers. If the user clicks the link, the EDR should catch the download. If the download happens, the sandbox should catch the execution.",
+                    "risk_impact": 10,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.8",
@@ -767,7 +899,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Conduct monthly internal and external vulnerability scans. Establish a SLA requiring 'Critical' vulnerabilities to be patched within 72 hours.",
                     "nist_mapping": "ID.RA-1",
                     "cis_mapping": "7.1",
-                    "expert_rationale": "**Risk:** Exploitation of known technical weaknesses. | **Impact:** Hackers don't always find new exploits; they mostly use the ones you haven't patched yet. | **Guidance:** Vulnerability management is about 'Patching the Holes' before the rain starts. If you don't patch, you're essentially leaving your windows unlocked."
+                    "expert_rationale": "**Risk:** Exploitation of known technical weaknesses. | **Impact:** Hackers don't always find new exploits; they mostly use the ones you haven't patched yet. | **Guidance:** Vulnerability management is about 'Patching the Holes' before the rain starts. If you don't patch, you're essentially leaving your windows unlocked.",
+                    "risk_impact": 10,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.9",
@@ -778,7 +912,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Implement 'Infrastructure as Code' (IaC) to ensure consistent, hardened deployments. Disable all unused ports and protocols on every production server.",
                     "nist_mapping": "PR.IP-1",
                     "cis_mapping": "4.1",
-                    "expert_rationale": "Defaults are insecure. Configuration management (Hardening) is about 'Tightening the Screws.' It ensures that your servers aren't running services they don't need, which reduces your overall 'Attack Surface.'"
+                    "expert_rationale": "Defaults are insecure. Configuration management (Hardening) is about 'Tightening the Screws.' It ensures that your servers aren't running services they don't need, which reduces your overall 'Attack Surface.'",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.10",
@@ -789,7 +925,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Establish an automated data lifecycle policy that permanently deletes customer records 7 years after account termination.",
                     "nist_mapping": "PR.DS-10",
                     "cis_mapping": "3.11",
-                    "expert_rationale": "Old data is a liability, not an asset. If you are hacked, you will be fined for every record stolen. if you delete old data you no longer need, that data can't be stolen. It's the ultimate 'Data Minimization' strategy."
+                    "expert_rationale": "Old data is a liability, not an asset. If you are hacked, you will be fined for every record stolen. if you delete old data you no longer need, that data can't be stolen. It's the ultimate 'Data Minimization' strategy.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.11",
@@ -800,7 +938,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Implement automated data masking in all non-production SQL environments. Replace real names/emails with randomized synthetic data.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "3.1",
-                    "expert_rationale": "Developers don't need real credit card numbers to fix a bug. Data masking ensures that even if your 'Staging' environment is hacked, the attacker only gets useless, fake data instead of your real customer list."
+                    "expert_rationale": "Developers don't need real credit card numbers to fix a bug. Data masking ensures that even if your 'Staging' environment is hacked, the attacker only gets useless, fake data instead of your real customer list.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.12",
@@ -811,7 +951,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enable DLP features in your email suite (Google Workspace/M365) to block the sending of documents containing unencrypted credit card numbers or PII.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "3.3",
-                    "expert_rationale": "Accidents happen. DLP is the 'Safety Net' that stops an employee from accidentally emailing a sensitive spreadsheet to the wrong person. It watches for patterns like credit card numbers and stops the data before it leaves the building."
+                    "expert_rationale": "Accidents happen. DLP is the 'Safety Net' that stops an employee from accidentally emailing a sensitive spreadsheet to the wrong person. It watches for patterns like credit card numbers and stops the data before it leaves the building.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.13",
@@ -822,7 +964,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Implement the '3-2-1' backup strategy: 3 copies of data, 2 different media types, 1 copy off-site. Test restoration quarterly.",
                     "nist_mapping": "PR.IP-4",
                     "cis_mapping": "11.1",
-                    "expert_rationale": "A backup is only as good as its last successful 'Restore' test. If you aren't testing your backups, you don't actually have backups—you just have 'Hope.' In a ransomware attack, your off-site backups are your only lifeline."
+                    "expert_rationale": "A backup is only as good as its last successful 'Restore' test. If you aren't testing your backups, you don't actually have backups\u2014you just have 'Hope.' In a ransomware attack, your off-site backups are your only lifeline.",
+                    "risk_impact": 9,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.14",
@@ -833,7 +977,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy critical applications across multiple cloud regions or availability zones. Use Load Balancers to distribute traffic across redundant server sets.",
                     "nist_mapping": "PR.IP-1",
                     "cis_mapping": "11.1",
-                    "expert_rationale": "Redundancy is about 'Resilience.' If your entire business runs on one server and that server dies, your business dies with it. high-availability architectures ensure that if one 'piece' breaks, the customer never even notices."
+                    "expert_rationale": "Redundancy is about 'Resilience.' If your entire business runs on one server and that server dies, your business dies with it. high-availability architectures ensure that if one 'piece' breaks, the customer never even notices.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.15",
@@ -844,7 +990,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Centralize all logs into a SIEM (e.g., Splunk, ELK). Enforce a minimum 90-day retention period for all security-critical logs.",
                     "nist_mapping": "PR.IP-8",
                     "cis_mapping": "8.1",
-                    "expert_rationale": "Logs are the 'Black Box' of your infrastructure. Without logs, you are blind. You won't know HOW an attacker got in, WHAT they took, or IF they are still inside. Logging is the foundation of incident response."
+                    "expert_rationale": "Logs are the 'Black Box' of your infrastructure. Without logs, you are blind. You won't know HOW an attacker got in, WHAT they took, or IF they are still inside. Logging is the foundation of incident response.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.16",
@@ -855,7 +1003,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Utilize Cloud-native security monitoring (e.g., AWS GuardDuty). Set up 24/7 alerts for 'Brute Force' or 'Unusual Data Exfiltration' patterns.",
                     "nist_mapping": "ID.RA-1",
                     "cis_mapping": "8.1",
-                    "expert_rationale": "Logging is 'Recording'; Monitoring is 'Processing.' You need systems that watch your logs 24/7 and scream for help when they see an attacker. Passive logging without active monitoring is like recording a robbery but not calling the police."
+                    "expert_rationale": "Logging is 'Recording'; Monitoring is 'Processing.' You need systems that watch your logs 24/7 and scream for help when they see an attacker. Passive logging without active monitoring is like recording a robbery but not calling the police.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.17",
@@ -866,7 +1016,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Standardize all systems to use NTP syncing with a reputable source like pool.ntp.org or internal domain controllers.",
                     "nist_mapping": "PR.IP-8",
                     "cis_mapping": "8.2",
-                    "expert_rationale": "Forensics 101: You cannot reconstruct a hack if the Firewall says 2:00 PM and the Database says 2:05 PM. Clock synchronization is 'Evidence Integrity.' It’s a boring control that becomes critical the second you have a real incident."
+                    "expert_rationale": "Forensics 101: You cannot reconstruct a hack if the Firewall says 2:00 PM and the Database says 2:05 PM. Clock synchronization is 'Evidence Integrity.' It\u2019s a boring control that becomes critical the second you have a real incident.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.18",
@@ -877,7 +1029,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Restrict the ability to install powerful system utilities to IT Admins only. Log every execution of 'Sudo' or 'PowerShell' by privileged users.",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "5.1",
-                    "expert_rationale": "Privileged utilities are 'Double-Edged Swords.' A tool that helps an admin fix a server is the same tool an attacker uses to dump passwords. Restricting these tools limits the 'Arsenal' an attacker has once they get inside."
+                    "expert_rationale": "Privileged utilities are 'Double-Edged Swords.' A tool that helps an admin fix a server is the same tool an attacker uses to dump passwords. Restricting these tools limits the 'Arsenal' an attacker has once they get inside.",
+                    "risk_impact": 9,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.19",
@@ -888,7 +1042,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Remove 'Local Admin' rights from all standard employees. Use Intune or Jamf to push approved software via a corporate 'Self-Service' portal.",
                     "nist_mapping": "PR.IP-1",
                     "cis_mapping": "2.1",
-                    "expert_rationale": "If a user can install whatever they want, you have NO control over your security. One 'Free PDF Converter' can contain malware that leads to a full breach. Controlling software installation is about maintaining 'System Integrity.'"
+                    "expert_rationale": "If a user can install whatever they want, you have NO control over your security. One 'Free PDF Converter' can contain malware that leads to a full breach. Controlling software installation is about maintaining 'System Integrity.'",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.20",
@@ -899,7 +1055,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Audit firewall rules quarterly. Ensure all external network traffic is inspected by an Intrusion Prevention System (IPS).",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "12.1",
-                    "expert_rationale": "Your network is your 'Wilderness.' Network security (Firewalls/IPS) is about 'Traffic Policing.' If you don't control the flow of data, an attacker can easily communicate with their Command & Control (C2) server once they are inside."
+                    "expert_rationale": "Your network is your 'Wilderness.' Network security (Firewalls/IPS) is about 'Traffic Policing.' If you don't control the flow of data, an attacker can easily communicate with their Command & Control (C2) server once they are inside.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.21",
@@ -910,7 +1068,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Utilize DNSSEC to prevent DNS hijacking. Enforce 'Strong Encryption' (IKEv2/TLS 1.3) for all corporate VPN tunnel connections.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "12.1",
-                    "expert_rationale": "DNS and VPNs are the 'Nervous System' of your network. If an attacker hijacks your DNS, they can make 'gmail.com' point to their own fake login page. Securing these core services is 'Critical Infrastructure' defense."
+                    "expert_rationale": "DNS and VPNs are the 'Nervous System' of your network. If an attacker hijacks your DNS, they can make 'gmail.com' point to their own fake login page. Securing these core services is 'Critical Infrastructure' defense.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.22",
@@ -921,7 +1081,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Implement Network Segmentation (VLANs). Separate Guest networks, IOT devices, and Employee workstations from the Production server environment.",
                     "nist_mapping": "PR.AC-1",
                     "cis_mapping": "12.2",
-                    "expert_rationale": "Compartmentalization is the #1 rule of security. If your office printer is hacked, the attacker shouldn't be able to talk to your production database. Network segregation ensures that one compromise doesn't lead to a total downfall."
+                    "expert_rationale": "Compartmentalization is the #1 rule of security. If your office printer is hacked, the attacker shouldn't be able to talk to your production database. Network segregation ensures that one compromise doesn't lead to a total downfall.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.23",
@@ -932,7 +1094,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Deploy a Cloud Access Security Broker (CASB) or DNS-layer filtering (e.g., Cisco Umbrella) to block high-risk web categories globally.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "9.2",
-                    "expert_rationale": "90% of the internet is 'Noise' or 'Danger.' Web filtering is about 'Proactive Defense.' By blocking known malicious sites at the DNS level, you prevent the 'Initial Access' phase of a hack before the user even clicks the link."
+                    "expert_rationale": "90% of the internet is 'Noise' or 'Danger.' Web filtering is about 'Proactive Defense.' By blocking known malicious sites at the DNS level, you prevent the 'Initial Access' phase of a hack before the user even clicks the link.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.24",
@@ -943,7 +1107,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Enforce AES-256 encryption for all data at rest and TLS 1.3 for all data in transit. Ban the use of 'Legacy' protocols like SSLv3 or TLS 1.0.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "3.10",
-                    "expert_rationale": "Encryption is the 'Final Defense.' If a thief steals a laptop, encryption makes the data useless. If a hacker sniffs your wifi, encryption makes the traffic unreadable. Modern business cannot exist securely without robust, industry-standard cryptography."
+                    "expert_rationale": "Encryption is the 'Final Defense.' If a thief steals a laptop, encryption makes the data useless. If a hacker sniffs your wifi, encryption makes the traffic unreadable. Modern business cannot exist securely without robust, industry-standard cryptography.",
+                    "risk_impact": 9,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.25",
@@ -954,7 +1120,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Adopt a formal Secure SDLC framework (e.g., Microsoft SDL). Mandate that security requirements are part of the initial feature design phase.",
                     "nist_mapping": "PR.IP-2",
                     "cis_mapping": "16.1",
-                    "expert_rationale": "It is 100x cheaper to fix a bug in design than it is to fix it after a breach. A Secure SDLC ensures that 'Security by Design' isn't just a buzzword, but a documented requirement for every piece of code your team writes."
+                    "expert_rationale": "It is 100x cheaper to fix a bug in design than it is to fix it after a breach. A Secure SDLC ensures that 'Security by Design' isn't just a buzzword, but a documented requirement for every piece of code your team writes.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.26",
@@ -965,7 +1133,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Incorporate a 'Security Review' step into the Jira/ticketing workflow for all new application features.",
                     "nist_mapping": "PR.IP-2",
                     "cis_mapping": "16.1",
-                    "expert_rationale": "If you don't define 'Security' as a requirement, developers will prioritize 'Functionality' every time. Requiring security sign-off on new features ensures that the business is making an informed decision about the risk of new code."
+                    "expert_rationale": "If you don't define 'Security' as a requirement, developers will prioritize 'Functionality' every time. Requiring security sign-off on new features ensures that the business is making an informed decision about the risk of new code.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.27",
@@ -976,7 +1146,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Adopt 'Zero Trust' architecture principles. Use Micro-segmentation to isolate critical microservices from each other.",
                     "nist_mapping": "PR.IP-2",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Architecture is the 'Foundation.' A secure building with a weak foundation will still collapse. Secure engineering principles (like Defense in Depth) ensure that even if one layer fails, there are three more between the attacker and your data."
+                    "expert_rationale": "Architecture is the 'Foundation.' A secure building with a weak foundation will still collapse. Secure engineering principles (like Defense in Depth) ensure that even if one layer fails, there are three more between the attacker and your data.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.28",
@@ -987,7 +1159,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Integrate SAST (Static Analysis) tools directly into the CI/CD pipeline. Fail builds if 'High' severity vulnerabilities are detected in the code.",
                     "nist_mapping": "PR.IP-2",
                     "cis_mapping": "16.1",
-                    "expert_rationale": "Human developers make mistakes. Secure coding tools (SAST/DAST) act as an 'Automated Editor,' catching things like buffer overflows or hardcoded passwords before they ever reach a production server."
+                    "expert_rationale": "Human developers make mistakes. Secure coding tools (SAST/DAST) act as an 'Automated Editor,' catching things like buffer overflows or hardcoded passwords before they ever reach a production server.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.29",
@@ -998,7 +1172,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Perform automated DAST scanning on every major release. Conduct an manual penetration test for all 'High Risk' modules before deployment.",
                     "nist_mapping": "PR.IP-2",
                     "cis_mapping": "16.10",
-                    "expert_rationale": "Static code analysis (SAST) looks at the blueprint; Dynamic testing (DAST) looks at the finished house. You need both. Security testing in development ensures that you find the 'Functional' security bugs that static tools miss."
+                    "expert_rationale": "Static code analysis (SAST) looks at the blueprint; Dynamic testing (DAST) looks at the finished house. You need both. Security testing in development ensures that you find the 'Functional' security bugs that static tools miss.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.30",
@@ -1009,7 +1185,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Require all outsourced code to pass an internal security scan before it is merged into the main corporate repository.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "15.1",
-                    "expert_rationale": "When you outsource development, you are 'Exporting Risk.' If the agency has bad security habits, those habits become your vulnerabilities. Outsourced development controls ensure that external teams follow your internal security high-bars."
+                    "expert_rationale": "When you outsource development, you are 'Exporting Risk.' If the agency has bad security habits, those habits become your vulnerabilities. Outsourced development controls ensure that external teams follow your internal security high-bars.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.31",
@@ -1020,7 +1198,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Physically or logically isolate the Production network from Dev/Test. Use different sets of credentials for each environment.",
                     "nist_mapping": "PR.IP-2",
                     "cis_mapping": "12.1",
-                    "expert_rationale": "Separation of concerns. A mistake in Dev should never take down your website. By separating environments, you ensure that 'The Real World' (Production) is isolated from 'The Playground' (Development)."
+                    "expert_rationale": "Separation of concerns. A mistake in Dev should never take down your website. By separating environments, you ensure that 'The Real World' (Production) is isolated from 'The Playground' (Development).",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.32",
@@ -1031,7 +1211,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Adopt a 'Pull Request' (PR) based workflow for all infrastructure and code changes. Require at least one peer approval before deployment.",
                     "nist_mapping": "PR.IP-3",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "Most outages are caused by 'Human Change.' Change management is the 'Guardrail.' It ensures that every change is reviewed, tested, and has a plan to 'Undo' it if things go wrong."
+                    "expert_rationale": "Most outages are caused by 'Human Change.' Change management is the 'Guardrail.' It ensures that every change is reviewed, tested, and has a plan to 'Undo' it if things go wrong.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.33",
@@ -1042,7 +1224,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Use synthetic data generators (e.g., Mockaroo) to create non-sensitive, realistic test datasets for developer use.",
                     "nist_mapping": "PR.DS-1",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "If you use a copy of your production database for testing, you have just doubled your attack surface. If the test server is hacked, the breach is just as real. Never test with real PII if you can avoid it."
+                    "expert_rationale": "If you use a copy of your production database for testing, you have just doubled your attack surface. If the test server is hacked, the breach is just as real. Never test with real PII if you can avoid it.",
+                    "risk_impact": 8,
+                    "criticality": "High"
                 },
                 {
                     "control_id": "8.34",
@@ -1053,7 +1237,9 @@ const THEHGTECH_GRC_DATA = {
                     "remediation_advice": "Schedule penetration tests or intrusive scans during off-peak hours. Always perform a 'Backup' before conducting intrusive audit testing.",
                     "nist_mapping": "PR.IP-2",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "A vulnerability scan can sometimes crash a sensitive server. Protection during testing is about 'Harm Minimization.' You want to find the holes, but you don't want to bring the whole building down to do it."
+                    "expert_rationale": "A vulnerability scan can sometimes crash a sensitive server. Protection during testing is about 'Harm Minimization.' You want to find the holes, but you don't want to bring the whole building down to do it.",
+                    "risk_impact": 9,
+                    "criticality": "High"
                 }
             ]
         }

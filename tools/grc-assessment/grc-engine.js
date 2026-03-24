@@ -131,7 +131,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 currentNavIndex++;
                 renderDomain(activeDomainIndices[currentNavIndex]);
                 updateSidebarActiveState();
-                window.scrollTo({ top: 0, behavior: 'instant' });
+                const mainArea = document.querySelector('.content-header');
+                if (mainArea) {
+                    const offset = mainArea.getBoundingClientRect().top + window.scrollY - 100;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
+                } else {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
             }
         });
     }
@@ -281,7 +287,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 currentNavIndex = activeIdx;
                 renderDomain(activeDomainIndices[currentNavIndex]); // Pass global index
                 updateSidebarActiveState();
-                window.scrollTo({ top: 0, behavior: 'instant' });
+                const mainArea = document.querySelector('.content-header');
+                if (mainArea) {
+                    const offset = mainArea.getBoundingClientRect().top + window.scrollY - 100;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
+                } else {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
             });
 
             ui.domainNav.appendChild(navBtn);
@@ -334,6 +346,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="control-header" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:0.5rem;">
                     <span class="control-id" style="background:var(--bg-dark); padding:0.2rem 0.6rem; border-radius:4px; font-weight:bold; color:var(--text-primary); border:1px solid var(--border); font-size:0.9rem;">Control A.${control.control_id}</span>
                     <span class="domain-tag" style="background:rgba(0, 217, 255, 0.1); color:#00D9FF; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.8rem; font-weight:600;"><i class="fas fa-layer-group"></i> ${domain.name}</span>
+                    ${control.criticality ? `<span class="framework-badge criticality" style="background:${control.criticality === 'High' ? 'rgba(239,68,68,0.1)' : control.criticality === 'Medium' ? 'rgba(245,158,11,0.1)' : 'rgba(16,185,129,0.1)'}; color:${control.criticality === 'High' ? '#EF4444' : control.criticality === 'Medium' ? '#F59E0B' : '#10B981'}; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid ${control.criticality === 'High' ? 'rgba(239,68,68,0.3)' : control.criticality === 'Medium' ? 'rgba(245,158,11,0.3)' : 'rgba(16,185,129,0.3)'};">Risk Impact: ${control.risk_impact} (${control.criticality})</span>` : ''}
                     ${control.nist_mapping ? `<span class="framework-badge nist" style="background:rgba(10, 132, 255, 0.1); color:#0A84FF; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid rgba(10, 132, 255, 0.3);">NIST: ${control.nist_mapping}</span>` : ''}
                     ${control.cis_mapping ? `<span class="framework-badge cis" style="background:rgba(255, 159, 10, 0.1); color:#FF9F0A; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid rgba(255, 159, 10, 0.3);">CIS: ${control.cis_mapping}</span>` : ''}
                 </div>
@@ -437,6 +450,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateDomainProgress(domain);
         renderSidebarNav();
         updateOverallScore();
+
+        const completed = domain.controls.filter(c => userState[c.control_id]).length;
+        if (completed === domain.controls.length && currentNavIndex < activeDomainIndices.length - 1) {
+            setTimeout(() => {
+                if (ui.btnNextDomain && ui.btnNextDomain.style.display !== 'none') {
+                    ui.btnNextDomain.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    ui.btnNextDomain.style.boxShadow = '0 0 20px rgba(0, 217, 255, 0.4)';
+                    setTimeout(() => ui.btnNextDomain.style.boxShadow = 'none', 1000);
+                }
+            }, 200);
+        } else if (completed === domain.controls.length && currentNavIndex === activeDomainIndices.length - 1) {
+            setTimeout(() => {
+                if (ui.btnFinishDashboard && ui.btnFinishDashboard.style.display !== 'none') {
+                    ui.btnFinishDashboard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    ui.btnFinishDashboard.style.boxShadow = '0 0 20px rgba(16, 185, 129, 0.4)';
+                    setTimeout(() => ui.btnFinishDashboard.style.boxShadow = 'none', 1000);
+                }
+            }, 200);
+        }
     }
 
     function updateDomainProgress(domain) {
@@ -449,7 +481,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function updateOverallScore() {
         let totalControls = 0;
-        let implementedControls = 0;
+        let totalPossibleImpact = 0;
+        let earnedImpact = 0;
         let answeredControls = 0;
 
         activeDomainIndices.forEach(globalIdx => {
@@ -458,16 +491,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                 totalControls++;
                 if (userState[c.control_id]) {
                     answeredControls++;
-                    if (userState[c.control_id] === 'yes' || userState[c.control_id] === 'na') {
-                        implementedControls++;
+                    const impact = c.risk_impact || 1;
+                    if (userState[c.control_id] === 'yes') {
+                        earnedImpact += impact;
+                        totalPossibleImpact += impact;
                     } else if (userState[c.control_id] === 'partial') {
-                        implementedControls += 0.5;
+                        earnedImpact += (impact * 0.5);
+                        totalPossibleImpact += impact;
+                    } else if (userState[c.control_id] === 'no') {
+                        totalPossibleImpact += impact;
+                    } else if (userState[c.control_id] === 'na') {
+                        // N/A excluded from denominator completely
                     }
                 }
             });
         });
 
-        const score = answeredControls === 0 ? 0 : Math.round((implementedControls / answeredControls) * 100);
+        const score = totalPossibleImpact === 0 ? (answeredControls > 0 ? 100 : 0) : Math.round((earnedImpact / totalPossibleImpact) * 100);
         ui.overallScore.innerText = `${score}%`;
 
         if (score >= 85) ui.overallScore.style.color = '#10B981';
@@ -609,21 +649,34 @@ document.addEventListener('DOMContentLoaded', async () => {
             labels.push(d.name.replace(' Controls', ''));
 
             let answeredTotal = 0;
-            let impl = 0;
+            let totalPossibleImpact = 0;
+            let earnedImpact = 0;
 
             d.controls.forEach(c => {
                 const ans = userState[c.control_id];
                 if (!ans) return; // Skip unanswered for partial dashboard metrics
                 
                 answeredTotal++;
-                const scoreValue = (ans === 'yes' || ans === 'na') ? 1 : (ans === 'partial' ? 0.5 : 0);
+                const impact = c.risk_impact || 1;
                 
-                if (ans === 'yes' || ans === 'na') impl++;
-                else if (ans === 'partial') impl += 0.5;
+                if (ans === 'yes') {
+                    earnedImpact += impact;
+                    totalPossibleImpact += impact;
+                } else if (ans === 'partial') {
+                    earnedImpact += (impact * 0.5);
+                    totalPossibleImpact += impact;
+                } else if (ans === 'no') {
+                    totalPossibleImpact += impact;
+                }
+                
+                // Framework scoring (exclude NA from denominator)
+                let fVal = 0; let fTotal = 0;
+                if (ans === 'yes') { fVal = impact; fTotal = impact; }
+                else if (ans === 'partial') { fVal = (impact * 0.5); fTotal = impact; }
+                else if (ans === 'no') { fVal = 0; fTotal = impact; }
 
-                // Framework scoring
-                if (c.nist_mapping) { nistTotal++; nistValue += scoreValue; }
-                if (c.cis_mapping) { cisTotal++; cisValue += scoreValue; }
+                if (c.nist_mapping && fTotal > 0) { nistTotal += fTotal; nistValue += fVal; }
+                if (c.cis_mapping && fTotal > 0) { cisTotal += fTotal; cisValue += fVal; }
 
                 // Identify critical gaps
                 if (ans === 'no' || ans === 'partial') {
@@ -639,7 +692,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     });
                 }
             });
-            dataset.push(answeredTotal === 0 ? 0 : Math.round((impl / answeredTotal) * 100));
+            dataset.push(totalPossibleImpact === 0 ? (answeredTotal > 0 ? 100 : 0) : Math.round((earnedImpact / totalPossibleImpact) * 100));
         });
 
         // 0. Update Framework Scores with Assessed Scope Denominators
@@ -908,10 +961,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                         }
                         
                         totalC++;
-                        const sVal = (ans === 'yes' || ans === 'na') ? 1 : (ans === 'partial' ? 0.5 : 0);
+                        const impact = c.risk_impact || 1;
+                        let fVal = 0; let fTotal = 0;
+                        if (ans === 'yes') { fVal = impact; fTotal = impact; }
+                        else if (ans === 'partial') { fVal = (impact * 0.5); fTotal = impact; }
+                        else if (ans === 'no') { fVal = 0; fTotal = impact; }
 
-                        if (c.nist_mapping) { nistT++; nistV += sVal; }
-                        if (c.cis_mapping) { cisT++; cisV += sVal; }
+                        if (c.nist_mapping && fTotal > 0) { nistT += fTotal; nistV += fVal; }
+                        if (c.cis_mapping && fTotal > 0) { cisT += fTotal; cisV += fVal; }
 
                         if (ans === 'yes') implC++;
                         else if (ans === 'partial') { 
@@ -1184,7 +1241,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // SHEET 2: Gap Analysis Data
                 const exportData = [];
-                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Applicability Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice", "NIST CSF 2.0", "CIS Controls v8", "N/A Comment / Internal Note", "Expert Rationale"]);
+                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Control Criticality", "Score Impact", "Applicability Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice", "NIST CSF 2.0", "CIS Controls v8", "N/A Comment / Internal Note", "Expert Rationale"]);
 
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
@@ -1198,12 +1255,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                         else if (rawStatus === 'no') { friendlyStatus = "Control Gap"; riskLevel = "High"; }
                         else if (rawStatus === 'na') { friendlyStatus = "Not Applicable"; riskLevel = "None"; }
 
+                        let scoreImpact = "Neutral";
+                        const impact = control.risk_impact || 1;
+                        if (rawStatus === 'yes') scoreImpact = "+" + impact;
+                        else if (rawStatus === 'partial') scoreImpact = "+" + (impact * 0.5);
+                        else if (rawStatus === 'no') scoreImpact = "-" + impact + " (Gap)";
+
                         exportData.push([
                             domain.name,
                             "A." + control.control_id,
                             control.control_title,
                             friendlyStatus,
                             riskLevel,
+                            control.criticality || "Medium",
+                            scoreImpact,
                             userState[control.control_id + '_just'] || "N/A",
                             control.objective,
                             control.auditor_question,
@@ -1226,10 +1291,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // Build Detail Sheet
                 const ws = XLSX.utils.aoa_to_sheet(exportData);
-                ws['!cols'] = [{ wch: 25 }, { wch: 10 }, { wch: 30 }, { wch: 20 }, { wch: 10 }, { wch: 35 }, { wch: 40 }, { wch: 45 }, { wch: 45 }, { wch: 50 }];
+                ws['!cols'] = [{ wch: 25 }, { wch: 10 }, { wch: 30 }, { wch: 20 }, { wch: 10 }, { wch: 15 }, { wch: 15 }, { wch: 35 }, { wch: 40 }, { wch: 45 }];
                 
                 // Add AutoFilter to data sheet
-                ws['!autofilter'] = { ref: `A1:J${exportData.length}` };
+                ws['!autofilter'] = { ref: `A1:P${exportData.length}` };
 
                 XLSX.utils.book_append_sheet(wb, ws, "Detailed Gap Analysis");
 
