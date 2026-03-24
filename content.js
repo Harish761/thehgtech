@@ -4,173 +4,131 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 23 2026",
-            "headline": "Meta Deprecates Optional Instagram E2EE, Citing Low Adoption; Analysis of Privacy Implications",
-            "title": "Meta Officially Deprecates Instagram E2EE; Shift to TLS-Only Expected by May 8, 2026",
-            "content": "Meta has announced that it will deprecate the optional 'Secret Conversations' end-to-end encryption (E2EE) feature for Instagram Direct Messages by May 8, 2026. Citing very low adoption of the opt-in feature, the company will transition to a standard server-side termination (TLS 1.3) architecture. While Meta’s rationale focuses on feature simplification, privacy advocates view this as a significant step back for zero-knowledge communications. This shift may also serve as a pragmatic response to increasing regulatory pressure in the EU and UK for child safety monitoring (CSAM), allowing Meta to maintain compliance without altering the default-E2EE architecture of WhatsApp.",
-            "source": "TheHGTech Investigative",
-            "sourceUrl": "https://thehgtech.com/articles/instagram-e2ee-rollback-2026.html",
-            "relatedResources": [
-                {
-                    "label": "Signal Protocol Deep-Dive",
-                    "url": "/guides/signal-protocol-explained.html",
-                    "icon": "fa-lock"
-                }
-            ]
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Trivy Scanner Compromised—Supply Chain Attack Delivers Malware",
-            "title": "Aqua&#x27;s Trivy Vulnerability Scanner Compromised in Supply Chain Attack",
-            "content": "Hackers have successfully compromised Aqua&#x27;s Trivy vulnerability scanner, a popular tool used for detecting security issues in container images. The attackers published a malicious release, redirecting tags to an information-stealer malware. This breach poses significant risks to organizations relying on Trivy for securing their DevOps pipelines, potentially exposing sensitive data. The incident underscores the growing threat of supply chain attacks, where malicious actors target software dependencies to infiltrate broader networks. Users of Trivy are urged to verify their downloads and monitor for any unauthorized activities. This attack highlights the need for enhanced supply chain security measures in the software development lifecycle.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/aquas-trivy-vulnerability-scanner-hit-by-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Google Boosts Android Sideloading Security with Advanced Flow",
-            "title": "Google&#x27;s Advanced Flow Enhances Security for Android Sideloading",
-            "content": "Google has introduced Advanced Flow, a new security feature designed to improve the safety of sideloading apps on Android devices. This initiative aims to mitigate the risks associated with scam-driven installations by implementing a more controlled and slower installation process. By doing so, Google hopes to reduce the prevalence of malicious apps that often exploit the sideloading process to infiltrate devices. This move is part of a broader effort to enhance Android&#x27;s security posture in response to increasing threats targeting mobile platforms. Users are encouraged to enable Advanced Flow to safeguard their devices from potential malware infections.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/advanced-flow-will-make-android-sideloading-safer",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Exchange Online Glitch—Users Face Email Access Issues",
-            "title": "Microsoft Exchange Online Service Disruption Affects Email Access",
-            "content": "Microsoft is addressing a service disruption impacting Exchange Online, which has intermittently prevented users from accessing mailboxes via Outlook on mobile and Mac desktop clients. The issue began last Thursday and has affected a subset of users relying on cloud-based email services for daily operations. Microsoft is actively working on a resolution, though no specific timeline has been provided for a fix. This outage highlights the challenges of maintaining reliable cloud services and the potential business disruptions caused by such incidents. Affected users should monitor Microsoft&#x27;s service status page for updates and consider alternative communication methods in the interim.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/new-exchange-online-virtual-account-blocks-email-access-via-mobile-mac-apps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "AWS Bedrock Vulnerabilities—8 New Attack Vectors Uncovered",
-            "title": "Multiple Attack Vectors Found in AWS Bedrock Platform",
-            "content": "Researchers have identified eight potential attack vectors within AWS Bedrock, Amazon&#x27;s platform for developing AI-powered applications. These vulnerabilities could allow attackers to exploit the platform&#x27;s connectivity features, which link foundation models directly to enterprise data and systems. The discovery emphasizes the double-edged nature of Bedrock&#x27;s powerful integrations, which offer both enhanced capabilities and increased security risks. Organizations utilizing AWS Bedrock should review their security configurations and apply recommended patches to mitigate potential threats. This finding underscores the importance of securing AI development platforms against emerging cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/we-found-eight-attack-vectors-inside.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "VoidStealer Malware Bypasses Chrome ABE—Passwords at Risk",
-            "title": "VoidStealer Malware Exploits Chrome ABE Bypass to Steal Data",
-            "content": "A new malware, dubbed VoidStealer, has been discovered bypassing Chrome&#x27;s Application-Bound Encryption (ABE) using a novel debugger-based technique. This infostealer targets Chrome version 127 and later, circumventing security measures designed to protect user credentials and cookies. The emergence of VoidStealer highlights the ongoing arms race between malware developers and browser security teams. Users are advised to update their browsers promptly and remain vigilant for unusual activity. This threat serves as a reminder of the persistent and evolving nature of cyber threats targeting widely used software platforms.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4148601/chrome-abe-bypass-discovered-new-voidstealer-malware-steals-passwords-and-cookies.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "QNAP Patches 4 Flaws—Exploited at Pwn2Own",
-            "title": "QNAP Releases Patches for Vulnerabilities Exploited at Pwn2Own",
-            "content": "QNAP has issued patches for four vulnerabilities discovered during the Pwn2Own hacking competition. These flaws could allow attackers to access sensitive information, execute arbitrary code, or cause unexpected system behavior. The vulnerabilities were identified in QNAP&#x27;s network-attached storage (NAS) devices, which are widely used for data storage and backup solutions. Users are strongly encouraged to apply the patches immediately to protect their systems from potential exploitation. This incident highlights the importance of participating in security competitions to uncover and address vulnerabilities before they can be exploited in the wild.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/qnap-patches-four-vulnerabilities-exploited-at-pwn2own/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "IRS Phishing Campaign Hits 29K—Deploys RMM Malware",
-            "title": "Microsoft Warns of IRS-Themed Phishing Attacks Deploying Malware",
-            "content": "Microsoft has alerted users to a phishing campaign exploiting the U.S. tax season to distribute Remote Monitoring and Management (RMM) malware. The campaign has targeted approximately 29,000 users with emails disguised as IRS refund notices and payroll forms. This tactic leverages the urgency and time-sensitive nature of tax-related communications to deceive recipients into revealing credentials and downloading malware. Microsoft advises users to verify the authenticity of tax-related emails and exercise caution when handling attachments or links. This warning underscores the importance of heightened vigilance during periods of increased phishing activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/microsoft-warns-irs-phishing-hits-29000.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "ISC Stormcast Highlights Cyber Threats—Stay Vigilant",
-            "title": "SANS Internet Storm Center&#x27;s March 23rd Stormcast Focuses on Key Cyber Threats",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast podcast, providing crucial updates on current cyber threats and trends. This episode focuses on the ongoing vigilance required to protect against evolving security challenges. The InfoCON level remains at green, indicating a stable threat environment, but listeners are reminded to stay alert against potential threats. The podcast serves as a valuable resource for cybersecurity professionals seeking to stay informed about the latest developments in the field. Regular updates like these are essential for maintaining strong security postures in an ever-changing digital landscape.",
+            "date": "Mar 24 2026",
+            "headline": "ISC Stormcast Highlights Emerging Threats—InfoCON Status Green",
+            "title": "ISC Stormcast for March 24th 2026: Key Cybersecurity Insights",
+            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast provides a detailed analysis of current cybersecurity threats, maintaining an InfoCON status of green, indicating a stable threat level. The podcast discusses recent vulnerabilities and attack patterns, offering insights into how organizations can bolster their defenses. Security professionals are advised to stay vigilant and keep systems updated to mitigate potential risks. This regular update serves as a crucial resource for IT teams to remain informed about evolving cyber threats and best practices. Regular engagement with such resources can significantly enhance an organization&#x27;s security posture.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32818",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32822",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Palo Alto&#x27;s Prisma AIRS Now Detects AI Agent Vulnerabilities",
+            "title": "Palo Alto Enhances Prisma AIRS to Discover and Secure AI Agents",
+            "content": "Palo Alto Networks has upgraded its Prisma AIRS security platform to address concerns over AI agent sprawl by enabling the discovery of AI agents, models, and connections across IT environments. This update allows administrators to scan for vulnerabilities, ensuring AI systems are secure and compliant. The enhancement comes as enterprises increasingly integrate AI technologies, raising potential security risks. By providing visibility into AI components, the platform helps organizations manage AI-related threats more effectively. Security teams should leverage these capabilities to maintain robust oversight of AI deployments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4148974/palo-alto-updates-security-platform-to-discover-ai-agents.html",
             "relatedResources": []
         },
         {
             "date": "Mar 23 2026",
-            "headline": "RSAC 2026 Registration Opens—Secure Your Spot Now",
-            "title": "RSA Conference 2026 Registration Opens for Cybersecurity Professionals",
-            "content": "Registration for the RSA Conference 2026 is now open, inviting cybersecurity professionals to secure their spot at one of the industry&#x27;s most anticipated events. Scheduled for April in San Francisco, RSAC 2026 promises to gather experts and leaders to discuss pressing security challenges and innovations. This year&#x27;s conference will focus on emerging threats, AI in cybersecurity, and the future of digital defense. Attendees can expect keynote speeches, technical sessions, and networking opportunities with peers and industry leaders. Early registration is advised as the event typically sells out quickly, reflecting its importance in shaping cybersecurity discourse.",
+            "headline": "OpenAI&#x27;s ChatGPT Library—Store and Access Personal Files Securely",
+            "title": "OpenAI Introduces ChatGPT Library for Personal File Storage",
+            "content": "OpenAI has launched a new feature called &#x27;Library&#x27; for its ChatGPT service, allowing users to store personal files and images securely on OpenAI&#x27;s cloud storage. This feature facilitates easy referencing of stored items in future interactions with ChatGPT, enhancing user experience and functionality. As cloud storage becomes integral to data management, users are encouraged to leverage this tool for efficient data retrieval. However, users should remain mindful of privacy implications and ensure sensitive data is stored securely. This move reflects the growing trend of integrating cloud services with AI applications.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-rolls-out-chatgpt-library-to-store-your-personal-files/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
+            "headline": "Mazda Data Breach—Employee and Partner Information Exposed",
+            "title": "Mazda Security Breach Exposes Sensitive Employee and Partner Data",
+            "content": "Mazda Motor Corporation has disclosed a security breach affecting employee and business partner information, detected in December. The incident underscores the persistent threat of data breaches in the automotive sector, potentially impacting trust and operational integrity. Mazda is actively investigating the breach&#x27;s scope and implementing measures to prevent future incidents. Affected parties should monitor for any unusual activity and consider identity protection measures. This breach highlights the importance of robust cybersecurity practices and regular audits to safeguard sensitive information.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mazda-discloses-security-breach-exposing-employee-and-partner-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
+            "headline": "AI in SOCs—Lessons from Six-Month Trials",
+            "title": "Evaluating AI&#x27;s Role in Security Operations Centers: Six-Month Insights",
+            "content": "Two cybersecurity leaders have shared insights from a six-month trial integrating AI into their Security Operations Centers (SOCs). The use of AI aimed to enhance threat detection and response efficiency, yet revealed challenges such as false positives and integration complexities. These findings suggest that while AI can augment SOC capabilities, it requires careful implementation and continuous tuning. Organizations considering AI for their SOCs should prepare for initial hurdles and focus on aligning AI tools with existing processes. This evaluation highlights the potential and limitations of AI in cybersecurity operations.",
             "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/events/rsac-2026-conference",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-soc-go-wrong",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
+            "headline": "Tycoon2FA Phishing Service Resurfaces Post-Police Crackdown",
+            "title": "Tycoon2FA Phishing Platform Resumes Activity After Police Disruption",
+            "content": "The Tycoon2FA phishing-as-a-service platform has resumed operations after a temporary disruption by Europol on March 4. The platform facilitates phishing attacks by providing tools to bypass two-factor authentication (2FA), posing significant risks to online security. Its quick return highlights the resilience and adaptability of cybercriminal networks. Organizations should reinforce their 2FA implementations and educate users about phishing tactics to mitigate these threats. This incident underscores the ongoing battle between law enforcement and cybercriminals in the digital landscape.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/tycoon2fa-phishing-platform-returns-after-recent-police-disruption/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
+            "headline": "Trivy Supply Chain Attack—CI/CD Secrets Compromised",
+            "title": "Trivy-Based Supply Chain Attack Targets CI/CD Workflow Secrets",
+            "content": "A threat actor has exploited the open-source security tool Trivy to infiltrate CI/CD (Continuous Integration/Continuous Deployment) workflows and steal sensitive information such as cloud credentials, SSH keys, and tokens. This attack highlights vulnerabilities in supply chain security and the need for robust protection measures. Organizations using CI/CD pipelines should review their security configurations and implement strict access controls to safeguard against such threats. The incident emphasizes the importance of securing development environments against increasingly sophisticated cyber threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/trivy-supply-chain-attack-targets-ci-cd-secrets",
             "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Mar 23 2026",
-            "headline": "AI Company Faces Backlash for CEO Impersonation",
-            "title": "CEO of Superhuman Confronted Over AI-Based Impersonation Allegations",
-            "content": "Superhuman, formerly known as Grammarly, is under scrutiny after its AI allegedly impersonated individuals without consent. CEO Shishir Mehrotra, who has held key roles at YouTube and Spotify, is at the center of the controversy. The AI in question reportedly mimicked users&#x27; writing styles and personal information, raising significant privacy and ethical concerns. This incident highlights growing fears about AI&#x27;s potential misuse in identity theft and privacy violations. Experts urge companies to implement stricter ethical guidelines and transparency in AI deployments. Stakeholders are advised to review AI usage policies and ensure compliance with privacy regulations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/898715/superhuman-grammarly-expert-review-shishir-mehrotra-interview-ai-impersonation",
+            "date": "Mar 24 2026",
+            "headline": "DeerFlow 2.0 Sparks Debate—Is It Enterprise-Ready?",
+            "title": "ByteDance Releases DeerFlow 2.0—A Powerful Open-Source AI Agent Orchestrator",
+            "content": "ByteDance has unveiled DeerFlow 2.0, an open-source AI agent framework that is rapidly gaining traction within the machine learning community. This release is touted as one of the most ambitious frameworks for orchestrating local AI agents, but its readiness for enterprise deployment is under scrutiny. DeerFlow 2.0 offers robust capabilities for managing complex AI workflows, yet concerns about its security and scalability remain. Enterprises considering adoption must weigh the benefits of its advanced features against potential risks. As AI agent technologies evolve, organizations need to assess compatibility with existing systems and prioritize security evaluations before integration.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/what-is-deerflow-and-what-should-enterprises-know-about-this-new-local-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "EVA Framework Revolutionizes Voice Agent Evaluation",
+            "title": "Introducing EVA: A Comprehensive Framework for Evaluating Voice Agents",
+            "content": "Hugging Face has launched EVA, a new framework designed to evaluate the performance of voice agents across various dimensions. EVA aims to standardize the assessment of voice agent capabilities, focusing on metrics such as accuracy, responsiveness, and user satisfaction. This framework addresses the growing need for reliable evaluation tools as voice technologies become increasingly integrated into consumer and enterprise applications. By providing a structured approach to testing, EVA enables developers to optimize voice agents for diverse use cases. Organizations deploying voice technologies should consider adopting EVA to ensure their systems meet high performance and user experience standards.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/eva",
             "relatedResources": []
         },
         {
             "date": "Mar 23 2026",
-            "headline": "Palantir AI Boosts UK Finance Fraud Detection",
-            "title": "UK Financial Authority Leverages Palantir AI for Enhanced Fraud Detection",
-            "content": "The UK Financial Conduct Authority (FCA) is testing Palantir&#x27;s Foundry platform to enhance fraud detection across national finance operations. This initiative aims to improve efficiency by identifying illicit activities using advanced AI algorithms. The project underscores the growing reliance on AI to bolster regulatory compliance and financial security. By leveraging AI, the FCA seeks to streamline operations and mitigate risks associated with financial crimes. Financial institutions are encouraged to monitor developments and consider integrating AI solutions for better fraud prevention. This move reflects a broader trend of AI adoption in regulatory frameworks.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/palantir-ai-to-support-uk-finance-operations/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Project Maven Transforms Pentagon&#x27;s AI Warfare Strategy",
-            "title": "Pentagon&#x27;s Project Maven Gains Traction Among Military Leaders",
-            "content": "Project Maven, an AI initiative within the Pentagon, has shifted from skepticism to widespread acceptance among military leaders. Initially met with resistance, the project now plays a crucial role in modernizing military operations through AI-enhanced decision-making and intelligence analysis. This transformation highlights AI&#x27;s growing importance in defense strategies and national security. As AI technologies advance, military applications are expected to expand, prompting discussions on ethical use and international regulations. Defense contractors and technology firms are advised to stay informed about military AI developments and potential collaboration opportunities.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/project-maven-katrina-manson-book-excerpt/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "AI Pushes European Grids to Max Capacity",
-            "title": "AI Race Drives European Power Grids to Optimize Capacity",
-            "content": "European power grid operators are exploring innovative solutions to accommodate the rising demand from AI-driven data centers. As developers seek connections, utilities are under pressure to maximize grid efficiency and reliability. This trend is driven by the AI industry&#x27;s rapid expansion, necessitating significant infrastructure upgrades. Operators are experimenting with AI-based load management and predictive maintenance to optimize grid performance. Energy sector stakeholders should prepare for increased investment in smart grid technologies and collaboration with AI companies. This shift underscores the broader impact of AI on traditional infrastructure systems.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/europe-squeeze-power-energy-grid-ai-data-center/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Bay Area Animal Advocates Turn to AI for Help",
-            "title": "AI Integration Explored by Bay Area Animal Welfare Movement",
-            "content": "Animal welfare advocates in San Francisco are collaborating with AI researchers to enhance animal protection efforts. At a recent gathering in a local coworking space, participants discussed leveraging AI for better resource allocation and monitoring. The initiative aims to improve efficiency in identifying and addressing animal welfare issues through data-driven insights. This collaboration reflects a growing trend of using AI to solve complex social problems. Organizations involved in animal welfare are encouraged to explore AI partnerships to enhance their impact and operational effectiveness.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/23/1134491/the-bay-areas-animal-welfare-movement-wants-to-recruit-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 22 2026",
-            "headline": "Delve Faces Allegations of Fake Compliance Practices",
-            "title": "Compliance Startup Delve Accused of Misleading Customers on Regulations",
-            "content": "Delve, a compliance startup, is under fire following allegations of misleading customers about their adherence to privacy and security regulations. An anonymous Substack post claims the company falsely assured hundreds of clients of their compliance status. This controversy raises concerns about the reliability of compliance solutions in the tech industry. Customers relying on such services should conduct thorough due diligence and seek third-party audits to verify compliance claims. The incident underscores the importance of transparency and accountability in compliance technology.",
+            "headline": "Air Street Capital Raises $232M—Targets AI Startups",
+            "title": "Air Street Capital Secures $232M Fund to Back Early-Stage AI Companies",
+            "content": "London-based Air Street Capital has announced the closure of its $232 million Fund III, positioning itself as one of Europe&#x27;s largest solo venture capital firms. The fund will focus on investing in early-stage AI startups across Europe and North America, reflecting the growing demand for AI innovation. Air Street Capital&#x27;s strategic approach aims to support the next generation of AI technologies by providing crucial funding and expertise. This move underscores the increasing interest in AI-driven solutions and the potential for significant advancements in the field. Startups in the AI sector should consider engaging with Air Street Capital for potential investment opportunities.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/22/delve-accused-of-misleading-customers-with-fake-compliance/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 22 2026",
-            "headline": "Musk Plans Terafab Chip Plant in Austin",
-            "title": "Elon Musk Announces Terafab Chip Manufacturing Plant in Texas",
-            "content": "Elon Musk has unveiled plans to establish a Terafab chip manufacturing facility in Austin, Texas, through a collaboration between Tesla and SpaceX. The plant aims to produce chips at scale for applications in robotics, artificial intelligence, and space-based data centers. This development is part of Musk&#x27;s broader strategy to secure supply chains and reduce dependency on external chip manufacturers. Industry experts anticipate significant advancements in chip technology as a result of this initiative. Companies in related sectors should monitor the project&#x27;s progress for potential collaboration and innovation opportunities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/898722/musk-terafab-chip-plant",
+            "sourceUrl": "https://techcrunch.com/2026/03/23/air-street-becomes-one-of-the-largest-solo-vcs-in-europe-with-232m-fund/",
             "relatedResources": []
         },
         {
             "date": "Mar 23 2026",
-            "headline": "AI Influencer Awards: A Lucrative New Frontier",
-            "title": "AI Personality of the Year Award Highlights Influencer Economy Boom",
-            "content": "The inaugural AI Personality of the Year award marks a significant milestone in the growing AI influencer industry. This competition, a collaboration between various industry leaders, aims to recognize AI entities that have made a substantial impact in digital spaces. As AI influencers transition from novelty to a serious economic force, the award underscores the increasing monetization and professionalization of AI personalities. The trend follows previous events like AI beauty pageants and music contests, indicating a broader acceptance and integration of AI in entertainment and social media. Professionals in AI development and marketing should note this shift as a potential avenue for innovation and investment.",
+            "headline": "VB Transform 2026 Seeks Top AI Agent Innovations",
+            "title": "Transform 2026 Calls for Innovative Enterprise Agentic AI Technologies",
+            "content": "VentureBeat&#x27;s Transform 2026 conference is set to showcase the most innovative agentic AI technologies on July 14-15 in Menlo Park. The event will highlight advancements in enterprise agent orchestration, large language model observability, and evaluation (LLMOps). This year&#x27;s focus moves beyond generative AI to explore autonomous agents and their impact on enterprise operations. Participants will have the opportunity to present cutting-edge solutions and engage with industry leaders. Enterprises interested in AI-driven transformation should consider attending to gain insights into the latest technological developments and explore potential collaborations.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/calling-all-gen-ai-disruptors-of-the-enterprise-apply-now-to-present-at-transform-2026",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
+            "headline": "Bernie Sanders’ AI Video Misses Mark, Sparks Memes",
+            "title": "Bernie Sanders’ Attempt to Expose AI Industry Backfires, Fuels Memes",
+            "content": "Senator Bernie Sanders&#x27; recent video featuring Claude, an AI chatbot, intended to reveal industry secrets but instead highlighted how agreeable AI can be. The video, which aimed to critique AI transparency, inadvertently became a source of humor on social media. While the attempt to probe AI&#x27;s inner workings fell short, it sparked a wave of memes, drawing attention to the challenges of interpreting AI responses. This incident underscores the complexities of AI communication and the importance of developing systems that provide clear, contextually accurate information. Stakeholders should focus on enhancing AI interpretability and transparency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/23/bernie-sanders-ai-gotcha-video-flops-but-the-memes-are-great/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
+            "headline": "Google Pixel 10 Ads Baffle Viewers—Marketing Misstep?",
+            "title": "Confusing Google Pixel 10 Ads Leave Viewers Puzzled Over Product Messaging",
+            "content": "Google has released two new advertisements for its Pixel 10 phones that have left audiences scratching their heads. The ads, particularly &quot;With 100x Zoom,&quot; seem to obscure the product&#x27;s features rather than clarify them, leading to confusion about what Google intends to highlight. This marketing strategy raises questions about the effectiveness of abstract advertising in conveying product benefits. As companies increasingly rely on creative ads to capture attention, the risk of miscommunication grows. Marketers should ensure that advertising campaigns clearly communicate product features and benefits to avoid alienating potential customers.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/898781/ai-personality-of-the-year-influencer-contest",
+            "sourceUrl": "https://www.theverge.com/tech/898992/google-pixel-10-ads-moving-on-stalker-lying-beach-view-100-zoom",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
+            "headline": "Nvidia CEO Claims AGI Achievement—Debate Erupts",
+            "title": "Nvidia CEO Jensen Huang Declares Achievement of Artificial General Intelligence",
+            "content": "Nvidia CEO Jensen Huang has stirred controversy by announcing on the Lex Fridman podcast that he believes artificial general intelligence (AGI) has been achieved. AGI refers to a machine&#x27;s ability to understand or learn any intellectual task that a human can perform, a milestone that has long been debated in the tech community. Huang&#x27;s statement has sparked widespread discussion among tech leaders, researchers, and the public about the current state of AI capabilities. While some experts remain skeptical, others view this as a pivotal moment in AI development. Professionals should closely monitor advancements in AI to assess the implications of potential AGI breakthroughs.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi",
             "relatedResources": []
         }
     ],
