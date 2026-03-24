@@ -1031,44 +1031,12 @@
       "date": "2025-12-28",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1312",
-      "incident_id": 1312,
-      "title": "ZeroEyes AI Surveillance System Reportedly Flagged Clarinet as Gun, Triggering School Lockdown in Fl",
-      "date": "2025-12-24",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1313",
-      "incident_id": 1313,
-      "title": "Anthropic Claude AI Agent Reportedly Caused Financial Losses While Operating Office Vending Machine ",
-      "date": "2025-12-24",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1314",
-      "incident_id": 1314,
-      "title": "Purported Deepfake Impersonating Doctor Allegedly Used in $200,000 Investment Scam Targeting Florida",
-      "date": "2025-12-24",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1316",
-      "incident_id": 1316,
-      "title": "Google AI-Generated Search Summary Reportedly Falsely Implicated Canadian Musician in Sexual Offense",
-      "date": "2025-12-24",
-      "category": "misinformation",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 133,
+    "total": 129,
     "last7Days": 14,
     "last30Days": 63
   },
-  "lastUpdated": "2026-03-24T02:20:25.010109+05:30"
+  "lastUpdated": "2026-03-24T08:22:31.336938+05:30"
 }
