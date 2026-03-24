@@ -167,6 +167,42 @@ document.addEventListener('DOMContentLoaded', async () => {
             'domain_8': 'HIGHLY RECOMMENDED'
         };
 
+        // Add Selection Toolbar
+        const toolbar = document.createElement('div');
+        toolbar.className = 'selection-toolbar';
+        toolbar.style.cssText = `
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            align-items: center;
+        `;
+        toolbar.innerHTML = `
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Quick Actions:</span>
+            <button id="btnSelectAll" class="btn-mini" style="background: rgba(0, 217, 255, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 217, 255, 0.2); padding: 5px 12px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; transition: all 0.2s;">Select All Domains</button>
+            <button id="btnDeselectAll" class="btn-mini" style="background: rgba(239, 68, 68, 0.1); color: #EF4444; border: 1px solid rgba(239, 68, 68, 0.2); padding: 5px 12px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; transition: all 0.2s;">Clear Selection</button>
+        `;
+        ui.scopeGrid.parentNode.insertBefore(toolbar, ui.scopeGrid);
+
+        document.getElementById('btnSelectAll').addEventListener('click', () => {
+            document.querySelectorAll('.scope-card').forEach((card, idx) => {
+                if (!card.classList.contains('selected')) {
+                    card.click();
+                }
+            });
+        });
+
+        document.getElementById('btnDeselectAll').addEventListener('click', () => {
+            document.querySelectorAll('.scope-card').forEach((card, idx) => {
+                if (card.classList.contains('selected')) {
+                    card.click();
+                }
+            });
+        });
+
         const hasExistingData = Object.keys(userState).length > 0;
 
         grcData.domains.forEach((dom, index) => {
@@ -339,6 +375,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const card = document.createElement('article');
             card.className = 'control-card';
             card.id = `card_${control.control_id}`;
+            card.setAttribute('data-id', control.control_id);
 
             const savedValue = userState[control.control_id] || '';
 
@@ -421,6 +458,45 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             ui.viewport.appendChild(card);
+            
+            // Add "Next Control" button at bottom of card
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'btn-next-control';
+            nextBtn.innerHTML = 'Next Control <i class="fas fa-chevron-down"></i>';
+            nextBtn.style.cssText = `
+                margin-top: 1.5rem;
+                background: transparent;
+                border: 1px solid var(--border);
+                color: var(--text-muted);
+                padding: 0.6rem 1.2rem;
+                border-radius: 6px;
+                font-size: 0.8rem;
+                cursor: pointer;
+                transition: all 0.2s;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            `;
+            nextBtn.addEventListener('click', () => {
+                const nextCard = card.nextElementSibling;
+                if (nextCard && nextCard.classList.contains('control-card')) {
+                    const offset = nextCard.getBoundingClientRect().top + window.scrollY - 150;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
+                } else {
+                    // Try to trigger Next Domain if it's visible
+                    if (ui.btnNextDomain && ui.btnNextDomain.style.display !== 'none') {
+                        ui.btnNextDomain.click();
+                    }
+                }
+            });
+            card.appendChild(nextBtn);
+
+            // Hide next button on last card of domain if next domain is handled by the global button
+            if (idx === domain.controls.length - 1) {
+                nextBtn.style.display = 'none';
+            }
 
             // Reflow for transition
             void card.offsetWidth;
@@ -452,6 +528,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateOverallScore();
 
         const completed = domain.controls.filter(c => userState[c.control_id]).length;
+        
+        // Auto-advance to next question after answering
+        setTimeout(() => {
+            const currentCard = document.querySelector(`.control-card[data-id="${controlId}"]`);
+            if (currentCard) {
+                const nextCard = currentCard.nextElementSibling;
+                if (nextCard && nextCard.classList.contains('control-card')) {
+                    const offset = nextCard.getBoundingClientRect().top + window.scrollY - 150;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
+                }
+            }
+        }, 400);
+
         if (completed === domain.controls.length && currentNavIndex < activeDomainIndices.length - 1) {
             setTimeout(() => {
                 if (ui.btnNextDomain && ui.btnNextDomain.style.display !== 'none') {
@@ -488,21 +577,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         activeDomainIndices.forEach(globalIdx => {
             const d = grcData.domains[globalIdx];
             d.controls.forEach(c => {
+                const impact = c.risk_impact || 1;
+                const status = userState[c.control_id];
+                
                 totalControls++;
-                if (userState[c.control_id]) {
+
+                // Denominator logic: Controls are part of the total POSSIBLE score unless marked N/A
+                if (status !== 'na') {
+                    totalPossibleImpact += impact;
+                }
+
+                if (status) {
                     answeredControls++;
-                    const impact = c.risk_impact || 1;
-                    if (userState[c.control_id] === 'yes') {
+                    if (status === 'yes') {
                         earnedImpact += impact;
-                        totalPossibleImpact += impact;
-                    } else if (userState[c.control_id] === 'partial') {
+                    } else if (status === 'partial') {
                         earnedImpact += (impact * 0.5);
-                        totalPossibleImpact += impact;
-                    } else if (userState[c.control_id] === 'no') {
-                        totalPossibleImpact += impact;
-                    } else if (userState[c.control_id] === 'na') {
-                        // N/A excluded from denominator completely
                     }
+                    // 'no' adds to totalPossible (above) but adds 0 to earned
                 }
             });
         });
