@@ -5,6 +5,69 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 24 2026",
+            "headline": "Lapsus$ Targets AstraZeneca—Internal Code and Data Compromised",
+            "title": "Lapsus$ Hackers Allegedly Breach AstraZeneca&#x27;s Internal Systems",
+            "content": "The notorious cybercriminal group Lapsus$ has claimed responsibility for a security breach at pharmaceutical giant AstraZeneca. The group allegedly accessed internal code repositories, employee credentials, and sensitive data. This breach highlights the ongoing threat posed by extortion groups targeting high-profile companies. AstraZeneca, a key player in the pharmaceutical industry, could face significant operational and reputational impacts. Security experts recommend that organizations enhance their security measures, including regular audits and employee training, to mitigate such risks. The incident underscores the importance of protecting intellectual property and personal data from cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/extortion-group-claims-it-hacked-astrazeneca/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "ShinyHunters Breach: Infinite Campus Data at Risk",
+            "title": "Infinite Campus Alerts Users to Data Breach by ShinyHunters",
+            "content": "Infinite Campus, a leading K-12 student information system, has issued a warning to its users following a data breach perpetrated by the cybercriminal group ShinyHunters. The breach involved the theft of sensitive student and employee data, potentially affecting hundreds of school districts across the United States. ShinyHunters is known for targeting educational institutions, exploiting vulnerabilities to extort victims. Users are advised to monitor their accounts for suspicious activity and update passwords immediately. This incident underscores the vulnerability of educational systems to cyber threats and the importance of robust data protection measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/infinite-campus-warns-of-breach-after-shinyhunters-claims-data-theft/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Russian Hackers Exploit Messaging Apps—FBI, CISA Issue Warning",
+            "title": "FBI and CISA Warn of Russian Hackers Targeting Messaging Apps",
+            "content": "The FBI and the Cybersecurity and Infrastructure Security Agency (CISA), alongside European counterparts, have issued a warning about a social engineering campaign by Russian hackers. The campaign targets popular messaging apps Signal and WhatsApp, aiming to hijack user accounts through sophisticated techniques. This threat poses a significant risk to personal and corporate communications, potentially leading to unauthorized access and data theft. Users are urged to enable two-factor authentication and remain vigilant against phishing attempts. The warning highlights the growing trend of threat actors exploiting messaging platforms for cyber espionage.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/fbi-cisa-warn-of-russian-hackers-hijacking-signal-and-whatsapp-accounts",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Chrome 146 Update Fixes 8 Critical Bugs—Patch Now",
+            "title": "Google Releases Chrome 146 Update to Patch High-Severity Vulnerabilities",
+            "content": "Google has released an update for Chrome, version 146, addressing eight high-severity memory safety vulnerabilities across seven components. These flaws, if exploited, could allow attackers to execute arbitrary code or cause denial-of-service conditions. Users of Chrome are strongly advised to update to the latest version to protect against potential exploits. The vulnerabilities were discovered through Google&#x27;s rigorous internal testing and third-party security research. This update is part of Google&#x27;s ongoing commitment to maintaining the security of its widely-used web browser.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-146-update-patches-high-severity-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "HP&#x27;s TPM Guard Shields Against Physical TPM Attacks",
+            "title": "HP Introduces TPM Guard to Counter Physical TPM Attacks",
+            "content": "HP has launched TPM Guard, a new security feature designed to protect against physical attacks on Trusted Platform Modules (TPMs). TPMs are critical components in Windows 11 systems, safeguarding sensitive information such as encryption keys. Despite their security benefits, TPMs are vulnerable to direct physical manipulation. TPM Guard aims to enhance hardware security by detecting and responding to such attacks. Organizations using Windows 11 are encouraged to implement TPM Guard to bolster their defense against sophisticated physical threats. This development reflects the increasing focus on hardware-level security in the cybersecurity landscape.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4149346/hp-launches-tpm-guard-to-help-defeat-physical-tpm-attacks.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Yanluowang Broker Sentenced—81 Months for Ransomware Role",
+            "title": "Russian National Sentenced for Role in Yanluowang Ransomware Attacks",
+            "content": "A Russian national has been sentenced to 81 months in prison after pleading guilty to acting as an initial access broker for Yanluowang ransomware operations. The individual facilitated unauthorized access to corporate networks, enabling ransomware deployment and extortion. This sentencing marks a significant law enforcement success in the ongoing battle against ransomware syndicates. Organizations are urged to strengthen their network defenses and monitor for unusual access patterns to prevent similar breaches. The case highlights the critical role of initial access brokers in the ransomware ecosystem.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/yanluowang-ransomware-access-broker-gets-81-months-in-prison/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Webinar: Implementing CIS Controls for Scalable Security",
+            "title": "Webinar Offers Insights on Using CIS Controls and Benchmarks Effectively",
+            "content": "Security professionals are invited to attend a webinar focused on the practical application of the Center for Internet Security (CIS) Critical Security Controls and Benchmarks. These frameworks are essential tools for establishing secure configurations at scale, helping organizations mitigate cyber risks. The session will provide actionable guidance on integrating these controls into existing security strategies. Participants will learn how to leverage CIS resources to enhance their cybersecurity posture. This educational opportunity is particularly relevant as organizations face increasing pressure to comply with industry standards and regulations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/webinar-today-putting-cis-controls-and-benchmarks-into-practice/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
             "headline": "ISC Stormcast Highlights Emerging Threats—InfoCON Status Green",
             "title": "ISC Stormcast for March 24th 2026: Key Cybersecurity Insights",
             "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast provides a detailed analysis of current cybersecurity threats, maintaining an InfoCON status of green, indicating a stable threat level. The podcast discusses recent vulnerabilities and attack patterns, offering insights into how organizations can bolster their defenses. Security professionals are advised to stay vigilant and keep systems updated to mitigate potential risks. This regular update serves as a crucial resource for IT teams to remain informed about evolving cyber threats and best practices. Regular engagement with such resources can significantly enhance an organization&#x27;s security posture.",
@@ -20,54 +83,72 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4148974/palo-alto-updates-security-platform-to-discover-ai-agents.html",
             "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "OpenAI&#x27;s ChatGPT Library—Store and Access Personal Files Securely",
-            "title": "OpenAI Introduces ChatGPT Library for Personal File Storage",
-            "content": "OpenAI has launched a new feature called &#x27;Library&#x27; for its ChatGPT service, allowing users to store personal files and images securely on OpenAI&#x27;s cloud storage. This feature facilitates easy referencing of stored items in future interactions with ChatGPT, enhancing user experience and functionality. As cloud storage becomes integral to data management, users are encouraged to leverage this tool for efficient data retrieval. However, users should remain mindful of privacy implications and ensure sensitive data is stored securely. This move reflects the growing trend of integrating cloud services with AI applications.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-rolls-out-chatgpt-library-to-store-your-personal-files/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Mazda Data Breach—Employee and Partner Information Exposed",
-            "title": "Mazda Security Breach Exposes Sensitive Employee and Partner Data",
-            "content": "Mazda Motor Corporation has disclosed a security breach affecting employee and business partner information, detected in December. The incident underscores the persistent threat of data breaches in the automotive sector, potentially impacting trust and operational integrity. Mazda is actively investigating the breach&#x27;s scope and implementing measures to prevent future incidents. Affected parties should monitor for any unusual activity and consider identity protection measures. This breach highlights the importance of robust cybersecurity practices and regular audits to safeguard sensitive information.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mazda-discloses-security-breach-exposing-employee-and-partner-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "AI in SOCs—Lessons from Six-Month Trials",
-            "title": "Evaluating AI&#x27;s Role in Security Operations Centers: Six-Month Insights",
-            "content": "Two cybersecurity leaders have shared insights from a six-month trial integrating AI into their Security Operations Centers (SOCs). The use of AI aimed to enhance threat detection and response efficiency, yet revealed challenges such as false positives and integration complexities. These findings suggest that while AI can augment SOC capabilities, it requires careful implementation and continuous tuning. Organizations considering AI for their SOCs should prepare for initial hurdles and focus on aligning AI tools with existing processes. This evaluation highlights the potential and limitations of AI in cybersecurity operations.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-soc-go-wrong",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Tycoon2FA Phishing Service Resurfaces Post-Police Crackdown",
-            "title": "Tycoon2FA Phishing Platform Resumes Activity After Police Disruption",
-            "content": "The Tycoon2FA phishing-as-a-service platform has resumed operations after a temporary disruption by Europol on March 4. The platform facilitates phishing attacks by providing tools to bypass two-factor authentication (2FA), posing significant risks to online security. Its quick return highlights the resilience and adaptability of cybercriminal networks. Organizations should reinforce their 2FA implementations and educate users about phishing tactics to mitigate these threats. This incident underscores the ongoing battle between law enforcement and cybercriminals in the digital landscape.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/tycoon2fa-phishing-platform-returns-after-recent-police-disruption/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Trivy Supply Chain Attack—CI/CD Secrets Compromised",
-            "title": "Trivy-Based Supply Chain Attack Targets CI/CD Workflow Secrets",
-            "content": "A threat actor has exploited the open-source security tool Trivy to infiltrate CI/CD (Continuous Integration/Continuous Deployment) workflows and steal sensitive information such as cloud credentials, SSH keys, and tokens. This attack highlights vulnerabilities in supply chain security and the need for robust protection measures. Organizations using CI/CD pipelines should review their security configurations and implement strict access controls to safeguard against such threats. The incident emphasizes the importance of securing development environments against increasingly sophisticated cyber threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/trivy-supply-chain-attack-targets-ci-cd-secrets",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Mar 24 2026",
+            "headline": "Anthropic&#x27;s Claude Takes Over Your Computer—Autonomously",
+            "title": "Anthropic&#x27;s Claude Code and Cowork Now Automate Computer Tasks",
+            "content": "Anthropic has enhanced its AI tool, Claude, to autonomously perform tasks on users&#x27; computers via its Code and Cowork features. This update allows the AI to open files, navigate web browsers and apps, and operate development tools without any manual setup. The development is poised to impact developers and tech professionals who seek to streamline workflows even when away from their desks. This advancement highlights a growing trend of AI systems taking on more complex, autonomous roles in tech environments. Users should be aware of security implications and ensure their systems are protected against unauthorized access.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/899430/anthropic-claude-code-cowork-ai-control-computer",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Mirage Secures $75M—Boosts AI Video Editing Capabilities",
+            "title": "Mirage Raises $75 Million to Enhance AI Video Editing App Captions",
+            "content": "Mirage, the company behind the AI video editing app Captions, has secured $75 million in growth funding from General Catalyst&#x27;s Customer Value Fund. This investment aims to advance the development of Mirage&#x27;s AI models, enhancing the app&#x27;s editing capabilities and user experience. The funding underscores a significant trend in the AI video editing market, where demand for intuitive, automated tools is rising. The influx of capital will help Mirage scale its operations and potentially expand its market reach. Professionals in video production and content creation should monitor these developments for new tools that could enhance productivity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/24/mirage-raises-75m-to-continue-building-models-for-its-ai-video-editing-app-captions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Agile Robots Partners with Google DeepMind for AI Integration",
+            "title": "Agile Robots Collaborates with Google DeepMind on Robotics Models",
+            "content": "Agile Robots has announced a partnership with Google DeepMind to integrate DeepMind&#x27;s robotics foundation models into its robotic systems. This collaboration will also involve Agile Robots collecting data to support DeepMind&#x27;s AI research. The partnership is expected to enhance the capabilities of Agile Robots&#x27; products, potentially leading to more efficient and intelligent robotic solutions. This development is part of a broader trend of tech companies leveraging AI to advance robotics, which could impact industries reliant on automation. Stakeholders in robotics and AI sectors should consider the implications of such integrations for future innovations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/24/agile-robots-becomes-the-latest-robotics-company-to-partner-with-google-deepmind/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Chris Hayes on Navigating AI News—Stay Informed",
+            "title": "Chris Hayes Offers Guidance on Keeping Up with AI News",
+            "content": "Chris Hayes, host of MS Now&#x27;s &quot;All In,&quot; shares insights on staying informed in the rapidly evolving world of AI. He emphasizes the importance of maintaining a sober perspective on AI developments and advises focusing on credible sources. As AI continues to permeate various aspects of society, understanding its implications becomes crucial for tech professionals and the public alike. Hayes&#x27; advice reflects a growing need for critical engagement with AI news to navigate its complexities effectively. Readers should prioritize reliable information and remain vigilant about the potential impacts of AI advancements.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/the-big-interview-podcast-chris-hayes/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Biometric Surveillance Threatens Privacy—Americans at Risk",
+            "title": "The Privacy Risks of Biometric Surveillance and Smart Devices",
+            "content": "The increasing attachment to smart devices and biometric surveillance technologies is raising significant privacy concerns in the United States. These technologies potentially expose individuals to invasive police searches, with privacy protections lagging behind technological advancements. The trend highlights a growing vulnerability as biometric data becomes more integrated into daily life. Security professionals and privacy advocates are urged to address these issues and push for stronger legal frameworks to protect citizens. Awareness and proactive measures are essential to counteract the potential erosion of privacy rights.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/book-excerpt-your-data-will-be-used-against-you-andrew-guthrie-ferguson/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
+            "headline": "Generalists Thrive in &#x27;Vibe Work&#x27; Era—Skills Diversify",
+            "title": "The Rise of Generalists in the Evolving &#x27;Vibe Work&#x27; Environment",
+            "content": "In the current &#x27;vibe work&#x27; era, generalists are gaining renewed importance in the workplace. Previously viewed as &quot;jacks of all trades,&quot; generalists now benefit from access to diverse expertise and are valued for their adaptability across multiple disciplines. This shift reflects a broader trend in the workforce, where versatility is increasingly prized over specialization. Organizations are recognizing the strategic advantage of employees who can navigate various roles and functions. Professionals should consider broadening their skill sets to remain competitive in this evolving job market.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/you-thought-the-generalist-was-dead-in-the-vibe-work-era-theyre-more",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 23 2026",
+            "headline": "Vibe-Coding Startup Lovable Seeks Acquisitions—Growth Ahead",
+            "title": "Lovable on Acquisition Hunt to Expand Vibe-Coding Capabilities",
+            "content": "Lovable, a rapidly growing vibe-coding startup, is actively seeking acquisitions to bolster its capabilities and expand its team. The company&#x27;s founder has expressed a keen interest in integrating new startups and teams to enhance Lovable&#x27;s offerings. This move is indicative of the competitive landscape in the tech sector, where companies are pursuing strategic acquisitions to accelerate growth and innovation. Industry professionals should watch for potential partnerships and new market entrants that could reshape the vibe-coding space. Lovable&#x27;s expansion efforts signal a dynamic period of change and opportunity in the field.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/23/vibe-coding-startup-lovable-is-on-the-hunt-for-acquisitions/",
+            "relatedResources": []
+        },
         {
             "date": "Mar 24 2026",
             "headline": "DeerFlow 2.0 Sparks Debate—Is It Enterprise-Ready?",
@@ -84,51 +165,6 @@ const websiteContent = {
             "content": "Hugging Face has launched EVA, a new framework designed to evaluate the performance of voice agents across various dimensions. EVA aims to standardize the assessment of voice agent capabilities, focusing on metrics such as accuracy, responsiveness, and user satisfaction. This framework addresses the growing need for reliable evaluation tools as voice technologies become increasingly integrated into consumer and enterprise applications. By providing a structured approach to testing, EVA enables developers to optimize voice agents for diverse use cases. Organizations deploying voice technologies should consider adopting EVA to ensure their systems meet high performance and user experience standards.",
             "source": "Hugging Face - Blog",
             "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/eva",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Air Street Capital Raises $232M—Targets AI Startups",
-            "title": "Air Street Capital Secures $232M Fund to Back Early-Stage AI Companies",
-            "content": "London-based Air Street Capital has announced the closure of its $232 million Fund III, positioning itself as one of Europe&#x27;s largest solo venture capital firms. The fund will focus on investing in early-stage AI startups across Europe and North America, reflecting the growing demand for AI innovation. Air Street Capital&#x27;s strategic approach aims to support the next generation of AI technologies by providing crucial funding and expertise. This move underscores the increasing interest in AI-driven solutions and the potential for significant advancements in the field. Startups in the AI sector should consider engaging with Air Street Capital for potential investment opportunities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/23/air-street-becomes-one-of-the-largest-solo-vcs-in-europe-with-232m-fund/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "VB Transform 2026 Seeks Top AI Agent Innovations",
-            "title": "Transform 2026 Calls for Innovative Enterprise Agentic AI Technologies",
-            "content": "VentureBeat&#x27;s Transform 2026 conference is set to showcase the most innovative agentic AI technologies on July 14-15 in Menlo Park. The event will highlight advancements in enterprise agent orchestration, large language model observability, and evaluation (LLMOps). This year&#x27;s focus moves beyond generative AI to explore autonomous agents and their impact on enterprise operations. Participants will have the opportunity to present cutting-edge solutions and engage with industry leaders. Enterprises interested in AI-driven transformation should consider attending to gain insights into the latest technological developments and explore potential collaborations.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/calling-all-gen-ai-disruptors-of-the-enterprise-apply-now-to-present-at-transform-2026",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Bernie Sanders’ AI Video Misses Mark, Sparks Memes",
-            "title": "Bernie Sanders’ Attempt to Expose AI Industry Backfires, Fuels Memes",
-            "content": "Senator Bernie Sanders&#x27; recent video featuring Claude, an AI chatbot, intended to reveal industry secrets but instead highlighted how agreeable AI can be. The video, which aimed to critique AI transparency, inadvertently became a source of humor on social media. While the attempt to probe AI&#x27;s inner workings fell short, it sparked a wave of memes, drawing attention to the challenges of interpreting AI responses. This incident underscores the complexities of AI communication and the importance of developing systems that provide clear, contextually accurate information. Stakeholders should focus on enhancing AI interpretability and transparency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/23/bernie-sanders-ai-gotcha-video-flops-but-the-memes-are-great/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Google Pixel 10 Ads Baffle Viewers—Marketing Misstep?",
-            "title": "Confusing Google Pixel 10 Ads Leave Viewers Puzzled Over Product Messaging",
-            "content": "Google has released two new advertisements for its Pixel 10 phones that have left audiences scratching their heads. The ads, particularly &quot;With 100x Zoom,&quot; seem to obscure the product&#x27;s features rather than clarify them, leading to confusion about what Google intends to highlight. This marketing strategy raises questions about the effectiveness of abstract advertising in conveying product benefits. As companies increasingly rely on creative ads to capture attention, the risk of miscommunication grows. Marketers should ensure that advertising campaigns clearly communicate product features and benefits to avoid alienating potential customers.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/898992/google-pixel-10-ads-moving-on-stalker-lying-beach-view-100-zoom",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Nvidia CEO Claims AGI Achievement—Debate Erupts",
-            "title": "Nvidia CEO Jensen Huang Declares Achievement of Artificial General Intelligence",
-            "content": "Nvidia CEO Jensen Huang has stirred controversy by announcing on the Lex Fridman podcast that he believes artificial general intelligence (AGI) has been achieved. AGI refers to a machine&#x27;s ability to understand or learn any intellectual task that a human can perform, a milestone that has long been debated in the tech community. Huang&#x27;s statement has sparked widespread discussion among tech leaders, researchers, and the public about the current state of AI capabilities. While some experts remain skeptical, others view this as a pivotal moment in AI development. Professionals should closely monitor advancements in AI to assess the implications of potential AGI breakthroughs.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi",
             "relatedResources": []
         }
     ],
