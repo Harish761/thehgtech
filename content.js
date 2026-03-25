@@ -4,167 +4,122 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 24 2026",
-            "headline": "Lapsus$ Targets AstraZeneca—Internal Code and Data Compromised",
-            "title": "Lapsus$ Hackers Allegedly Breach AstraZeneca&#x27;s Internal Systems",
-            "content": "The notorious cybercriminal group Lapsus$ has claimed responsibility for a security breach at pharmaceutical giant AstraZeneca. The group allegedly accessed internal code repositories, employee credentials, and sensitive data. This breach highlights the ongoing threat posed by extortion groups targeting high-profile companies. AstraZeneca, a key player in the pharmaceutical industry, could face significant operational and reputational impacts. Security experts recommend that organizations enhance their security measures, including regular audits and employee training, to mitigate such risks. The incident underscores the importance of protecting intellectual property and personal data from cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/extortion-group-claims-it-hacked-astrazeneca/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "ShinyHunters Breach: Infinite Campus Data at Risk",
-            "title": "Infinite Campus Alerts Users to Data Breach by ShinyHunters",
-            "content": "Infinite Campus, a leading K-12 student information system, has issued a warning to its users following a data breach perpetrated by the cybercriminal group ShinyHunters. The breach involved the theft of sensitive student and employee data, potentially affecting hundreds of school districts across the United States. ShinyHunters is known for targeting educational institutions, exploiting vulnerabilities to extort victims. Users are advised to monitor their accounts for suspicious activity and update passwords immediately. This incident underscores the vulnerability of educational systems to cyber threats and the importance of robust data protection measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/infinite-campus-warns-of-breach-after-shinyhunters-claims-data-theft/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Russian Hackers Exploit Messaging Apps—FBI, CISA Issue Warning",
-            "title": "FBI and CISA Warn of Russian Hackers Targeting Messaging Apps",
-            "content": "The FBI and the Cybersecurity and Infrastructure Security Agency (CISA), alongside European counterparts, have issued a warning about a social engineering campaign by Russian hackers. The campaign targets popular messaging apps Signal and WhatsApp, aiming to hijack user accounts through sophisticated techniques. This threat poses a significant risk to personal and corporate communications, potentially leading to unauthorized access and data theft. Users are urged to enable two-factor authentication and remain vigilant against phishing attempts. The warning highlights the growing trend of threat actors exploiting messaging platforms for cyber espionage.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/fbi-cisa-warn-of-russian-hackers-hijacking-signal-and-whatsapp-accounts",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Chrome 146 Update Fixes 8 Critical Bugs—Patch Now",
-            "title": "Google Releases Chrome 146 Update to Patch High-Severity Vulnerabilities",
-            "content": "Google has released an update for Chrome, version 146, addressing eight high-severity memory safety vulnerabilities across seven components. These flaws, if exploited, could allow attackers to execute arbitrary code or cause denial-of-service conditions. Users of Chrome are strongly advised to update to the latest version to protect against potential exploits. The vulnerabilities were discovered through Google&#x27;s rigorous internal testing and third-party security research. This update is part of Google&#x27;s ongoing commitment to maintaining the security of its widely-used web browser.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-146-update-patches-high-severity-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "HP&#x27;s TPM Guard Shields Against Physical TPM Attacks",
-            "title": "HP Introduces TPM Guard to Counter Physical TPM Attacks",
-            "content": "HP has launched TPM Guard, a new security feature designed to protect against physical attacks on Trusted Platform Modules (TPMs). TPMs are critical components in Windows 11 systems, safeguarding sensitive information such as encryption keys. Despite their security benefits, TPMs are vulnerable to direct physical manipulation. TPM Guard aims to enhance hardware security by detecting and responding to such attacks. Organizations using Windows 11 are encouraged to implement TPM Guard to bolster their defense against sophisticated physical threats. This development reflects the increasing focus on hardware-level security in the cybersecurity landscape.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4149346/hp-launches-tpm-guard-to-help-defeat-physical-tpm-attacks.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Yanluowang Broker Sentenced—81 Months for Ransomware Role",
-            "title": "Russian National Sentenced for Role in Yanluowang Ransomware Attacks",
-            "content": "A Russian national has been sentenced to 81 months in prison after pleading guilty to acting as an initial access broker for Yanluowang ransomware operations. The individual facilitated unauthorized access to corporate networks, enabling ransomware deployment and extortion. This sentencing marks a significant law enforcement success in the ongoing battle against ransomware syndicates. Organizations are urged to strengthen their network defenses and monitor for unusual access patterns to prevent similar breaches. The case highlights the critical role of initial access brokers in the ransomware ecosystem.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/yanluowang-ransomware-access-broker-gets-81-months-in-prison/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Webinar: Implementing CIS Controls for Scalable Security",
-            "title": "Webinar Offers Insights on Using CIS Controls and Benchmarks Effectively",
-            "content": "Security professionals are invited to attend a webinar focused on the practical application of the Center for Internet Security (CIS) Critical Security Controls and Benchmarks. These frameworks are essential tools for establishing secure configurations at scale, helping organizations mitigate cyber risks. The session will provide actionable guidance on integrating these controls into existing security strategies. Participants will learn how to leverage CIS resources to enhance their cybersecurity posture. This educational opportunity is particularly relevant as organizations face increasing pressure to comply with industry standards and regulations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/webinar-today-putting-cis-controls-and-benchmarks-into-practice/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "ISC Stormcast Highlights Emerging Threats—InfoCON Status Green",
-            "title": "ISC Stormcast for March 24th 2026: Key Cybersecurity Insights",
-            "content": "The SANS Internet Storm Center&#x27;s latest Stormcast podcast provides a detailed analysis of current cybersecurity threats, maintaining an InfoCON status of green, indicating a stable threat level. The podcast discusses recent vulnerabilities and attack patterns, offering insights into how organizations can bolster their defenses. Security professionals are advised to stay vigilant and keep systems updated to mitigate potential risks. This regular update serves as a crucial resource for IT teams to remain informed about evolving cyber threats and best practices. Regular engagement with such resources can significantly enhance an organization&#x27;s security posture.",
+            "date": "Mar 25 2026",
+            "headline": "Remcos RAT Campaign Exploits SmartApeSG—Immediate Action Required",
+            "title": "SmartApeSG Campaign Deploys Multiple RATs Including Remcos and NetSupport",
+            "content": "The SANS Internet Storm Center reports a new campaign, SmartApeSG, actively distributing several Remote Access Trojans (RATs) including Remcos, NetSupport, StealC, and Sectop RAT (ArechClient2). These RATs allow attackers to gain unauthorized control over infected systems, posing significant threats to enterprise security. The campaign targets organizations worldwide, leveraging phishing emails to deliver malicious payloads. Security professionals should review email filtering policies and enhance endpoint detection capabilities to mitigate these threats. Organizations are urged to update their security tools and educate employees on recognizing phishing attempts.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32822",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32828",
             "relatedResources": []
         },
         {
             "date": "Mar 24 2026",
-            "headline": "Palo Alto&#x27;s Prisma AIRS Now Detects AI Agent Vulnerabilities",
-            "title": "Palo Alto Enhances Prisma AIRS to Discover and Secure AI Agents",
-            "content": "Palo Alto Networks has upgraded its Prisma AIRS security platform to address concerns over AI agent sprawl by enabling the discovery of AI agents, models, and connections across IT environments. This update allows administrators to scan for vulnerabilities, ensuring AI systems are secure and compliant. The enhancement comes as enterprises increasingly integrate AI technologies, raising potential security risks. By providing visibility into AI components, the platform helps organizations manage AI-related threats more effectively. Security teams should leverage these capabilities to maintain robust oversight of AI deployments.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4148974/palo-alto-updates-security-platform-to-discover-ai-agents.html",
+            "headline": "PTC&#x27;s Windchill RCE Flaw Puts Enterprises at Risk—Patch Now",
+            "title": "Critical RCE Vulnerability in PTC&#x27;s Windchill and FlexPLM Demands Urgent Attention",
+            "content": "PTC Inc. has issued an urgent warning regarding a critical remote code execution (RCE) vulnerability affecting its Windchill and FlexPLM product lifecycle management solutions. The flaw could allow attackers to execute arbitrary code on vulnerable systems, potentially compromising sensitive enterprise data. Organizations using these platforms should prioritize applying the available patches and review their network security controls to prevent exploitation. This vulnerability underscores the persistent risk of RCE flaws in widely used enterprise software, emphasizing the need for rigorous patch management practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ptc-warns-of-imminent-threat-from-critical-windchill-flexplm-rce-bug/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "LiteLLM Backdoor Breaches Thousands—Supply Chain Attack Expands",
+            "title": "TeamPCP Backdoors Popular LiteLLM PyPI Package, Steals Credentials",
+            "content": "The TeamPCP hacking group has compromised the popular LiteLLM Python package on the PyPI repository, embedding a backdoor to steal credentials and authentication tokens. This supply chain attack reportedly affected hundreds of thousands of devices, highlighting the vulnerabilities inherent in software dependencies. Developers using LiteLLM should immediately verify the integrity of their installations and consider rolling back to a secure version. This incident is part of a broader trend of supply chain attacks targeting open-source software, emphasizing the need for stringent code review and dependency management.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/popular-litellm-pypi-package-compromised-in-teampcp-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "GitHub Leak Turns iPhone Hacking Into a Mass Threat",
+            "title": "DarkSword GitHub Leak Could Democratize iPhone Exploits for iOS 18",
+            "content": "A recent GitHub leak by DarkSword threatens to democratize iPhone hacking, potentially enabling widespread exploitation of iOS 18 devices. The leaked tools, previously accessible only to nation-state actors, could allow attackers to bypass security measures on hundreds of millions of iPhones. Security experts warn that this development could lead to a surge in iOS-targeted attacks, urging users to ensure their devices are updated with the latest security patches. This incident highlights the growing risk of advanced hacking tools becoming available to a broader audience, increasing the threat landscape for mobile devices.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/darksword-iphone-spyware-leak-ios-18-exploit-threat/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Checkmarx KICS Targeted in Expanding Supply Chain Attacks",
+            "title": "TeamPCP Targets Checkmarx KICS in Widening Supply Chain Attack Campaign",
+            "content": "TeamPCP is suspected of orchestrating a series of supply chain attacks, now targeting Checkmarx&#x27;s KICS code scanner, Trivy, and VS Code plug-ins. These attacks compromise critical development tools, potentially introducing vulnerabilities into software projects. Organizations relying on these tools should conduct thorough security audits and implement robust monitoring to detect unauthorized changes. This campaign is part of an increasing trend of supply chain attacks aimed at undermining software integrity, stressing the importance of securing the software development lifecycle.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/checkmarx-kics-code-scanner-widening-supply-chain",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "AI Coding Tools Breach Endpoint Security—New Challenges Emerge",
+            "title": "AI Coding Tools Undermine Endpoint Security, Exposing New Vulnerabilities",
+            "content": "A cybersecurity researcher has identified that AI coding tools are eroding the effectiveness of endpoint security measures, creating new vulnerabilities. These tools, designed to automate and streamline coding, may inadvertently introduce security risks that traditional defenses cannot address. This development calls for a reevaluation of endpoint protection strategies, emphasizing the need for integrating AI-aware security solutions. As AI continues to revolutionize software development, security professionals must adapt to the evolving threat landscape to safeguard enterprise networks.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/ai-coding-tools-endpoint-security",
             "relatedResources": []
         }
     ],
     "aiShorts": [
         {
+            "date": "Mar 25 2026",
+            "headline": "Kleiner Perkins Bets $3.5B on AI—Early and Late-Stage Focus",
+            "title": "Kleiner Perkins Raises $3.5B to Invest in AI Startups and Growth",
+            "content": "Venture capital firm Kleiner Perkins has announced a substantial $3.5 billion fundraise, earmarked for investments in artificial intelligence. The funding includes $1 billion dedicated to early-stage AI startups and $2.5 billion for late-stage growth businesses. This strategic move underscores the firm&#x27;s commitment to fostering innovation in AI technologies, which are rapidly transforming industries. The investment is expected to significantly boost AI development, offering critical support to emerging companies in the sector. Industry professionals should monitor Kleiner Perkins&#x27; investment choices as they may signal upcoming trends and key players in AI.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/24/with-3-5b-in-fresh-capital-kleiner-perkins-is-going-all-in-on-ai/",
+            "relatedResources": []
+        },
+        {
             "date": "Mar 24 2026",
-            "headline": "Anthropic&#x27;s Claude Takes Over Your Computer—Autonomously",
-            "title": "Anthropic&#x27;s Claude Code and Cowork Now Automate Computer Tasks",
-            "content": "Anthropic has enhanced its AI tool, Claude, to autonomously perform tasks on users&#x27; computers via its Code and Cowork features. This update allows the AI to open files, navigate web browsers and apps, and operate development tools without any manual setup. The development is poised to impact developers and tech professionals who seek to streamline workflows even when away from their desks. This advancement highlights a growing trend of AI systems taking on more complex, autonomous roles in tech environments. Users should be aware of security implications and ensure their systems are protected against unauthorized access.",
+            "headline": "OpenAI’s Sora Shuts Down—AI Social Feed Fails to Engage",
+            "title": "OpenAI Closes Sora App Due to Lack of Sustained Interest",
+            "content": "OpenAI is discontinuing Sora, its AI-driven social media application, citing insufficient user engagement. Despite the impressive capabilities of the Sora 2 model in video and audio generation, the app failed to maintain a strong user base. The decision reflects challenges in integrating AI technologies into consumer-facing platforms, where user retention is crucial. Professionals in AI development should consider the importance of user experience and engagement when designing AI applications. The shutdown highlights the need for AI tools that not only showcase technical prowess but also meet user expectations and market demands.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Kentucky Farm Refuses $26M Data Center Deal—AI Expansion Halted",
+            "title": "Kentucky Woman Declines $26M Offer for AI Data Center on Farm",
+            "content": "A Kentucky family has turned down a $26 million offer from a major artificial intelligence company to convert their farm into a data center. The proposed development was intended to support the growing computational demands of AI technologies. This decision underscores the complex dynamics between technological advancement and community values, as local residents weigh economic benefits against preserving their land and lifestyle. AI companies may need to explore alternative locations or engage more deeply with community stakeholders to address concerns. The refusal could influence future negotiations between tech companies and rural landowners.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/24/kentucky-woman-rejects-26-million-offer-to-turn-her-farm-into-a-data-center/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "Judge Critiques Pentagon’s Actions Against Anthropic—Supply Chain Risk Disputed",
+            "title": "Pentagon&#x27;s Labeling of Anthropic as Supply-Chain Risk Questioned by Judge",
+            "content": "A district court judge has raised concerns over the Pentagon&#x27;s decision to classify Anthropic, developer of the Claude AI, as a supply-chain risk. During a recent hearing, the judge questioned the Department of Defense&#x27;s motivations, suggesting that the move might be an attempt to undermine the AI firm. This development highlights the increasing scrutiny of government actions affecting AI companies, which could have implications for national security policies and industry regulations. Stakeholders in the AI sector should stay informed about regulatory changes that could impact their operations and partnerships.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/pentagons-attempt-to-cripple-anthropic-is-troublesome-judge-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "OpenAI Ends Sora Video Model—API Access Terminated",
+            "title": "OpenAI Discontinues Sora AI Video Model and API Access",
+            "content": "OpenAI has announced the shutdown of its Sora AI video generation app, along with the discontinuation of its API access. The decision affects developers who relied on the Sora 2 model family for video generation pipelines. This move reflects OpenAI&#x27;s strategic pivot away from maintaining stand-alone consumer applications and focusing on other AI initiatives. Developers using Sora&#x27;s API will need to seek alternative solutions for video content creation. The closure serves as a reminder of the volatility in AI services and the need for adaptable development strategies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/openai-is-shutting-down-sora-its-powerful-ai-video-app",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 24 2026",
+            "headline": "OpenAI Abandons Sora—Disney Deal Dissolved",
+            "title": "OpenAI Shuts Down Sora, Cancels Billion-Dollar Disney Licensing Deal",
+            "content": "OpenAI has officially terminated its Sora video generation tool, ending a high-profile licensing agreement with Disney. Launched in late 2024, Sora was part of a billion-dollar deal intended to revolutionize content creation. Despite initial excitement, the tool failed to achieve widespread adoption. The dissolution of the Disney deal illustrates the challenges AI companies face in meeting the commercial expectations of large partners. This development may prompt AI firms to reassess their product offerings and partnership strategies to ensure alignment with market needs.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/899430/anthropic-claude-code-cowork-ai-control-computer",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt",
             "relatedResources": []
         },
         {
             "date": "Mar 24 2026",
-            "headline": "Mirage Secures $75M—Boosts AI Video Editing Capabilities",
-            "title": "Mirage Raises $75 Million to Enhance AI Video Editing App Captions",
-            "content": "Mirage, the company behind the AI video editing app Captions, has secured $75 million in growth funding from General Catalyst&#x27;s Customer Value Fund. This investment aims to advance the development of Mirage&#x27;s AI models, enhancing the app&#x27;s editing capabilities and user experience. The funding underscores a significant trend in the AI video editing market, where demand for intuitive, automated tools is rising. The influx of capital will help Mirage scale its operations and potentially expand its market reach. Professionals in video production and content creation should monitor these developments for new tools that could enhance productivity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/24/mirage-raises-75m-to-continue-building-models-for-its-ai-video-editing-app-captions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Agile Robots Partners with Google DeepMind for AI Integration",
-            "title": "Agile Robots Collaborates with Google DeepMind on Robotics Models",
-            "content": "Agile Robots has announced a partnership with Google DeepMind to integrate DeepMind&#x27;s robotics foundation models into its robotic systems. This collaboration will also involve Agile Robots collecting data to support DeepMind&#x27;s AI research. The partnership is expected to enhance the capabilities of Agile Robots&#x27; products, potentially leading to more efficient and intelligent robotic solutions. This development is part of a broader trend of tech companies leveraging AI to advance robotics, which could impact industries reliant on automation. Stakeholders in robotics and AI sectors should consider the implications of such integrations for future innovations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/24/agile-robots-becomes-the-latest-robotics-company-to-partner-with-google-deepmind/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Chris Hayes on Navigating AI News—Stay Informed",
-            "title": "Chris Hayes Offers Guidance on Keeping Up with AI News",
-            "content": "Chris Hayes, host of MS Now&#x27;s &quot;All In,&quot; shares insights on staying informed in the rapidly evolving world of AI. He emphasizes the importance of maintaining a sober perspective on AI developments and advises focusing on credible sources. As AI continues to permeate various aspects of society, understanding its implications becomes crucial for tech professionals and the public alike. Hayes&#x27; advice reflects a growing need for critical engagement with AI news to navigate its complexities effectively. Readers should prioritize reliable information and remain vigilant about the potential impacts of AI advancements.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/the-big-interview-podcast-chris-hayes/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Biometric Surveillance Threatens Privacy—Americans at Risk",
-            "title": "The Privacy Risks of Biometric Surveillance and Smart Devices",
-            "content": "The increasing attachment to smart devices and biometric surveillance technologies is raising significant privacy concerns in the United States. These technologies potentially expose individuals to invasive police searches, with privacy protections lagging behind technological advancements. The trend highlights a growing vulnerability as biometric data becomes more integrated into daily life. Security professionals and privacy advocates are urged to address these issues and push for stronger legal frameworks to protect citizens. Awareness and proactive measures are essential to counteract the potential erosion of privacy rights.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/book-excerpt-your-data-will-be-used-against-you-andrew-guthrie-ferguson/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Generalists Thrive in &#x27;Vibe Work&#x27; Era—Skills Diversify",
-            "title": "The Rise of Generalists in the Evolving &#x27;Vibe Work&#x27; Environment",
-            "content": "In the current &#x27;vibe work&#x27; era, generalists are gaining renewed importance in the workplace. Previously viewed as &quot;jacks of all trades,&quot; generalists now benefit from access to diverse expertise and are valued for their adaptability across multiple disciplines. This shift reflects a broader trend in the workforce, where versatility is increasingly prized over specialization. Organizations are recognizing the strategic advantage of employees who can navigate various roles and functions. Professionals should consider broadening their skill sets to remain competitive in this evolving job market.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/you-thought-the-generalist-was-dead-in-the-vibe-work-era-theyre-more",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 23 2026",
-            "headline": "Vibe-Coding Startup Lovable Seeks Acquisitions—Growth Ahead",
-            "title": "Lovable on Acquisition Hunt to Expand Vibe-Coding Capabilities",
-            "content": "Lovable, a rapidly growing vibe-coding startup, is actively seeking acquisitions to bolster its capabilities and expand its team. The company&#x27;s founder has expressed a keen interest in integrating new startups and teams to enhance Lovable&#x27;s offerings. This move is indicative of the competitive landscape in the tech sector, where companies are pursuing strategic acquisitions to accelerate growth and innovation. Industry professionals should watch for potential partnerships and new market entrants that could reshape the vibe-coding space. Lovable&#x27;s expansion efforts signal a dynamic period of change and opportunity in the field.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/23/vibe-coding-startup-lovable-is-on-the-hunt-for-acquisitions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "DeerFlow 2.0 Sparks Debate—Is It Enterprise-Ready?",
-            "title": "ByteDance Releases DeerFlow 2.0—A Powerful Open-Source AI Agent Orchestrator",
-            "content": "ByteDance has unveiled DeerFlow 2.0, an open-source AI agent framework that is rapidly gaining traction within the machine learning community. This release is touted as one of the most ambitious frameworks for orchestrating local AI agents, but its readiness for enterprise deployment is under scrutiny. DeerFlow 2.0 offers robust capabilities for managing complex AI workflows, yet concerns about its security and scalability remain. Enterprises considering adoption must weigh the benefits of its advanced features against potential risks. As AI agent technologies evolve, organizations need to assess compatibility with existing systems and prioritize security evaluations before integration.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/what-is-deerflow-and-what-should-enterprises-know-about-this-new-local-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "EVA Framework Revolutionizes Voice Agent Evaluation",
-            "title": "Introducing EVA: A Comprehensive Framework for Evaluating Voice Agents",
-            "content": "Hugging Face has launched EVA, a new framework designed to evaluate the performance of voice agents across various dimensions. EVA aims to standardize the assessment of voice agent capabilities, focusing on metrics such as accuracy, responsiveness, and user satisfaction. This framework addresses the growing need for reliable evaluation tools as voice technologies become increasingly integrated into consumer and enterprise applications. By providing a structured approach to testing, EVA enables developers to optimize voice agents for diverse use cases. Organizations deploying voice technologies should consider adopting EVA to ensure their systems meet high performance and user experience standards.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/eva",
+            "headline": "EFF Leadership Change Amid Rising AI and ICE Tensions",
+            "title": "Electronic Frontier Foundation Appoints New Leader as AI, ICE Conflicts Grow",
+            "content": "The Electronic Frontier Foundation (EFF) is undergoing a leadership change as public interest in technology-related government abuses intensifies. The new leader aims to address escalating concerns about artificial intelligence and U.S. Immigration and Customs Enforcement (ICE) practices. This transition comes at a critical time, with the EFF playing a pivotal role in advocating for digital rights and privacy. Professionals in cybersecurity and AI should watch for shifts in EFF&#x27;s strategies and priorities, as they could influence policy debates and regulatory frameworks. The leadership change signals a potential recalibration of efforts to tackle emerging tech challenges.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/03/trump-made-opposing-government-spying-cool-again-effs-departing-chief-says/",
             "relatedResources": []
         }
     ],
@@ -314,28 +269,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20131",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-66376",
-            "dateAdded": "Mar 18, 2026",
-            "vendor": "Synacor Zimbra Collaboration Suite (ZCS)",
-            "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability in the Classic UI where attackers could abuse Cascading Style Sheets (CSS) @import directives in email HTML.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66376",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20963",
-            "dateAdded": "Mar 18, 2026",
-            "vendor": "Microsoft SharePoint",
-            "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20963",
             "isZeroDay": false
         }
     ],
