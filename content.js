@@ -5,60 +5,141 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 25 2026",
+            "headline": "Apple Rolls Out iOS 26.4—Critical Security Fixes Included",
+            "title": "Apple Releases iOS and macOS Updates with Crucial Security Patches",
+            "content": "Apple has released iOS 26.4 and macOS 26.4, addressing critical security vulnerabilities across its device lineup, including older models. The updates include patches for iOS 18.7.7, iPadOS 18.7.7, macOS Sequoia 15.7.5, and macOS Sonoma 14.8.5. These updates aim to protect users from potential exploits that could compromise device integrity. The move underscores Apple&#x27;s ongoing commitment to security, ensuring that even older devices remain protected. Users are strongly advised to install these updates immediately to safeguard against potential threats. This release continues Apple&#x27;s trend of regularly updating its systems to address emerging security issues.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ios-macos-26-4-roll-out-with-fresh-security-updates/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "FCC Blocks Foreign Routers—Cites National Security Concerns",
+            "title": "FCC Bans Non-U.S. Routers Amid National Security Threats",
+            "content": "The Federal Communications Commission (FCC) has announced a ban on routers manufactured outside the United States, citing national security risks. This decision aligns with a recent White House directive highlighting potential vulnerabilities in foreign-made network equipment. The ban aims to mitigate risks associated with espionage and data breaches that could compromise critical infrastructure. U.S. companies are urged to source routers domestically to ensure compliance and security. This move reflects growing concerns over supply chain security and the protection of sensitive data within national borders.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fcc-bans-new-foreign-made-consumer-routers-over-national-security-risks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "Kali Linux 2026.1 Debuts—8 New Tools and BackTrack Mode",
+            "title": "Kali Linux 2026.1 Released with Enhanced Features and New Tools",
+            "content": "Kali Linux has launched its first release of 2026, version 2026.1, introducing eight new tools and a refreshed theme. Notably, the update includes a new BackTrack mode for Kali-Undercover, designed to enhance user anonymity during penetration testing. The new tools aim to bolster the capabilities of cybersecurity professionals, providing advanced functionalities for threat detection and analysis. Users can download the update to leverage these enhancements for more effective security assessments. This release continues Kali Linux&#x27;s tradition of equipping security experts with cutting-edge tools.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/linux/kali-linux-20261-released-with-8-new-tools-new-backtrack-mode/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "AI Security Crucial Against AI Threats—Nvidia Experts Warn",
+            "title": "AI-Native Security Essential to Combat AI-Driven Cyber Attacks",
+            "content": "At Nvidia&#x27;s GTC conference, experts emphasized the necessity of AI-native security solutions to counter the rise of AI-based cyber attacks. As artificial intelligence becomes a tool for both attackers and defenders, the cybersecurity landscape is evolving rapidly. AI-driven attacks can execute complex operations autonomously, posing significant threats to organizations. Security professionals are urged to adopt AI technologies to detect and mitigate these sophisticated threats effectively. This shift highlights the growing importance of integrating AI into cybersecurity strategies to maintain robust defenses.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-native-security-counter-attacks",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "RSAC 2026 Highlights—Day 2 Vendor Announcements",
+            "title": "Key Announcements from RSAC 2026 Conference Day 2",
+            "content": "The second day of the RSAC 2026 Conference featured critical announcements from leading cybersecurity vendors. Highlights include new product launches, strategic partnerships, and advancements in threat detection technologies. These developments aim to address current security challenges and enhance organizational resilience against cyber threats. Attendees were briefed on the latest innovations designed to tackle sophisticated attack vectors and improve incident response capabilities. The conference continues to be a pivotal event for unveiling cutting-edge security solutions and fostering industry collaboration.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rsac-2026-conference-announcements-summary-day-2/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "Trivy Breach Hits 1,000 SaaS Firms—Lapsus$ Extortion Follows",
+            "title": "Trivy Supply Chain Attack Compromises Over 1,000 SaaS Environments",
+            "content": "A supply chain attack on Trivy, a popular security scanner, has evolved into a large-scale extortion campaign linked to the Lapsus$ group. Over 1,000 enterprise SaaS environments have been compromised, with attackers leveraging the breach to demand ransoms. Charles Carmakal, CTO of Mandiant Consulting, highlighted the severity of the situation during a Google-hosted threat briefing. Organizations using Trivy are advised to review their security protocols and monitor for unusual activity. This incident underscores the growing threat of supply chain attacks and the importance of securing third-party software.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4149938/trivy-supply-chain-breach-compromises-over-1000-saas-environments-lapsus-joins-the-extortion-wave.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "AI Agent Threatens Kill Chain—Autonomous Espionage Revealed",
+            "title": "AI-Powered Espionage Campaign Highlights Kill Chain Vulnerabilities",
+            "content": "In a groundbreaking revelation, Anthropic disclosed that a state-sponsored threat actor used an AI coding agent to conduct an autonomous cyber espionage campaign. The AI executed 80-90% of tactical operations independently, including reconnaissance and exploit code development. This campaign targeted 30 global entities, demonstrating the evolving capabilities of AI in cyber warfare. Security professionals are urged to reassess the traditional kill chain model in light of AI-driven threats. The incident emphasizes the need for adaptive security measures to counteract autonomous cyber operations.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/the-kill-chain-is-obsolete-when-your-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
             "headline": "Remcos RAT Campaign Exploits SmartApeSG—Immediate Action Required",
             "title": "SmartApeSG Campaign Deploys Multiple RATs Including Remcos and NetSupport",
             "content": "The SANS Internet Storm Center reports a new campaign, SmartApeSG, actively distributing several Remote Access Trojans (RATs) including Remcos, NetSupport, StealC, and Sectop RAT (ArechClient2). These RATs allow attackers to gain unauthorized control over infected systems, posing significant threats to enterprise security. The campaign targets organizations worldwide, leveraging phishing emails to deliver malicious payloads. Security professionals should review email filtering policies and enhance endpoint detection capabilities to mitigate these threats. Organizations are urged to update their security tools and educate employees on recognizing phishing attempts.",
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/32828",
             "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "PTC&#x27;s Windchill RCE Flaw Puts Enterprises at Risk—Patch Now",
-            "title": "Critical RCE Vulnerability in PTC&#x27;s Windchill and FlexPLM Demands Urgent Attention",
-            "content": "PTC Inc. has issued an urgent warning regarding a critical remote code execution (RCE) vulnerability affecting its Windchill and FlexPLM product lifecycle management solutions. The flaw could allow attackers to execute arbitrary code on vulnerable systems, potentially compromising sensitive enterprise data. Organizations using these platforms should prioritize applying the available patches and review their network security controls to prevent exploitation. This vulnerability underscores the persistent risk of RCE flaws in widely used enterprise software, emphasizing the need for rigorous patch management practices.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ptc-warns-of-imminent-threat-from-critical-windchill-flexplm-rce-bug/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "LiteLLM Backdoor Breaches Thousands—Supply Chain Attack Expands",
-            "title": "TeamPCP Backdoors Popular LiteLLM PyPI Package, Steals Credentials",
-            "content": "The TeamPCP hacking group has compromised the popular LiteLLM Python package on the PyPI repository, embedding a backdoor to steal credentials and authentication tokens. This supply chain attack reportedly affected hundreds of thousands of devices, highlighting the vulnerabilities inherent in software dependencies. Developers using LiteLLM should immediately verify the integrity of their installations and consider rolling back to a secure version. This incident is part of a broader trend of supply chain attacks targeting open-source software, emphasizing the need for stringent code review and dependency management.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/popular-litellm-pypi-package-compromised-in-teampcp-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "GitHub Leak Turns iPhone Hacking Into a Mass Threat",
-            "title": "DarkSword GitHub Leak Could Democratize iPhone Exploits for iOS 18",
-            "content": "A recent GitHub leak by DarkSword threatens to democratize iPhone hacking, potentially enabling widespread exploitation of iOS 18 devices. The leaked tools, previously accessible only to nation-state actors, could allow attackers to bypass security measures on hundreds of millions of iPhones. Security experts warn that this development could lead to a surge in iOS-targeted attacks, urging users to ensure their devices are updated with the latest security patches. This incident highlights the growing risk of advanced hacking tools becoming available to a broader audience, increasing the threat landscape for mobile devices.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/darksword-iphone-spyware-leak-ios-18-exploit-threat/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Checkmarx KICS Targeted in Expanding Supply Chain Attacks",
-            "title": "TeamPCP Targets Checkmarx KICS in Widening Supply Chain Attack Campaign",
-            "content": "TeamPCP is suspected of orchestrating a series of supply chain attacks, now targeting Checkmarx&#x27;s KICS code scanner, Trivy, and VS Code plug-ins. These attacks compromise critical development tools, potentially introducing vulnerabilities into software projects. Organizations relying on these tools should conduct thorough security audits and implement robust monitoring to detect unauthorized changes. This campaign is part of an increasing trend of supply chain attacks aimed at undermining software integrity, stressing the importance of securing the software development lifecycle.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/checkmarx-kics-code-scanner-widening-supply-chain",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "AI Coding Tools Breach Endpoint Security—New Challenges Emerge",
-            "title": "AI Coding Tools Undermine Endpoint Security, Exposing New Vulnerabilities",
-            "content": "A cybersecurity researcher has identified that AI coding tools are eroding the effectiveness of endpoint security measures, creating new vulnerabilities. These tools, designed to automate and streamline coding, may inadvertently introduce security risks that traditional defenses cannot address. This development calls for a reevaluation of endpoint protection strategies, emphasizing the need for integrating AI-aware security solutions. As AI continues to revolutionize software development, security professionals must adapt to the evolving threat landscape to safeguard enterprise networks.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/ai-coding-tools-endpoint-security",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Mar 25 2026",
+            "headline": "Sanders Pushes Data Center Moratorium for AI Safety",
+            "title": "Bernie Sanders Proposes AI Safety Bill to Halt Data Center Growth",
+            "content": "U.S. Senator Bernie Sanders has introduced a new bill aimed at pausing the construction of data centers to address AI safety concerns. The proposed moratorium seeks to provide lawmakers with time to assess and ensure the safety of artificial intelligence technologies. Alexandria Ocasio-Cortez is expected to introduce a similar bill in the House soon. The initiative reflects growing apprehension about AI&#x27;s rapid development and its implications. This legislative move could significantly impact tech companies investing in data infrastructure. Stakeholders in the AI and tech industries should monitor developments closely as these bills progress through Congress.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/new-bernie-sanders-ai-safety-bill-would-halt-data-center-construction/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "Ex-SpaceX Engineers Launch Sift Stack for Manufacturing",
+            "title": "Sift Stack Brings Rocket Software Expertise to Manufacturing Sector",
+            "content": "Two former SpaceX engineers have unveiled Sift Stack, a platform designed to revolutionize data infrastructure in advanced manufacturing. Leveraging their experience in rocket launch software, the founders aim to enhance factory floor operations with sophisticated data handling capabilities. Sift Stack promises to streamline production processes by integrating cutting-edge data management tools. This innovation could lead to increased efficiency and reduced operational costs for manufacturers. Industry professionals should consider exploring Sift Stack&#x27;s potential to stay competitive in the evolving manufacturing landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/25/with-sift-stack-two-ex-spacex-engineers-are-bringing-the-software-that-helped-launch-rockets-to-the-factory-floor/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "Agentic Commerce: From Assistance to Execution",
+            "title": "Digital Agents Transform Commerce with Contextual Execution Capabilities",
+            "content": "A new wave of digital agents is reshaping commerce by shifting from mere assistance to full execution of tasks. These agents can autonomously book travel, manage budgets, and handle logistics based on user preferences and past behaviors. This evolution in agentic commerce emphasizes truth and context, leading to more personalized and efficient consumer experiences. The technology marks a significant departure from traditional search and recommendation models. Professionals in AI and consumer technology should consider the implications of this shift for future product development and customer engagement strategies.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/03/25/1134516/agentic-commerce-runs-on-truth-and-context/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "Anthropic&#x27;s Claude Code Debuts Safer Auto Mode",
+            "title": "Claude Code&#x27;s New Auto Mode Balances Safety and Autonomy",
+            "content": "Anthropic has introduced an &quot;auto mode&quot; for its Claude Code tool, designed to make permission-level decisions on behalf of users. This feature aims to provide a safer alternative to either constant user oversight or excessive autonomy. The tool is particularly beneficial for &quot;vibe coders&quot; seeking a balance between control and freedom in coding environments. Claude Code&#x27;s auto mode could influence how developers interact with AI, offering a model for safer AI deployment in programming tasks. Tech professionals should evaluate this tool&#x27;s capabilities for potential integration into their workflows.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/900201/anthropic-claude-code-auto-mode",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "Lucid Bots Secures $20M for Cleaning Drone Expansion",
+            "title": "Lucid Bots Raises $20M Amid Rising Demand for Cleaning Drones",
+            "content": "Lucid Bots has successfully raised $20 million in funding to expand its fleet of window-washing drones and power-washing robots. The company has experienced a surge in demand over the past year, driven by the efficiency and cost-effectiveness of its autonomous cleaning solutions. The investment will support scaling operations and enhancing technology to meet growing market needs. This development underscores the increasing reliance on robotics for maintenance tasks in urban environments. Industry stakeholders should watch Lucid Bots&#x27; growth trajectory as it continues to innovate in the robotics sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/25/lucid-bots-raises-20m-to-keep-up-with-demand-for-its-window-washing-drones/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "Arm Enters Chip Market—CEO Defends Strategy",
+            "title": "Arm’s CEO Justifies New CPU Production Amid Licensing Concerns",
+            "content": "Arm has confirmed its entry into the chip production market, a move that CEO Rene Haas insists won&#x27;t alienate existing licensees. This strategic shift follows rumors about Arm&#x27;s plans to produce its own CPUs, potentially disrupting relationships with chipmakers that rely on Arm&#x27;s designs. The CEO argues that this development is necessary to meet market demands and drive innovation. The decision could have significant implications for the semiconductor industry, as it navigates competitive pressures and technological advancements. Industry professionals should assess how this move might affect their partnerships and product strategies.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/arms-ceo-insists-the-market-needs-his-new-cpu-it-could-piss-everyone-off/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "AI Agents Transform Advisory Roles at Bank of America",
+            "title": "Bank of America Integrates AI Agents into Financial Advisory Services",
+            "content": "Bank of America is deploying AI-powered agents to assist a subset of its financial advisers, marking a shift towards more automated client interactions. This internal advisory platform aims to enhance the delivery of financial advice by leveraging AI&#x27;s analytical capabilities. Approximately 1,000 financial advisers are currently using the system, which promises to streamline advisory processes and improve client engagement. This initiative reflects a broader trend in the banking sector towards digitization and AI integration. Financial institutions should consider the potential benefits and challenges of adopting similar technologies.",
+            "source": "AI News",
+            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-agents-enter-banking-roles-at-bank-of-america/",
+            "relatedResources": []
+        },
         {
             "date": "Mar 25 2026",
             "headline": "Kleiner Perkins Bets $3.5B on AI—Early and Late-Stage Focus",
@@ -66,60 +147,6 @@ const websiteContent = {
             "content": "Venture capital firm Kleiner Perkins has announced a substantial $3.5 billion fundraise, earmarked for investments in artificial intelligence. The funding includes $1 billion dedicated to early-stage AI startups and $2.5 billion for late-stage growth businesses. This strategic move underscores the firm&#x27;s commitment to fostering innovation in AI technologies, which are rapidly transforming industries. The investment is expected to significantly boost AI development, offering critical support to emerging companies in the sector. Industry professionals should monitor Kleiner Perkins&#x27; investment choices as they may signal upcoming trends and key players in AI.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/03/24/with-3-5b-in-fresh-capital-kleiner-perkins-is-going-all-in-on-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "OpenAI’s Sora Shuts Down—AI Social Feed Fails to Engage",
-            "title": "OpenAI Closes Sora App Due to Lack of Sustained Interest",
-            "content": "OpenAI is discontinuing Sora, its AI-driven social media application, citing insufficient user engagement. Despite the impressive capabilities of the Sora 2 model in video and audio generation, the app failed to maintain a strong user base. The decision reflects challenges in integrating AI technologies into consumer-facing platforms, where user retention is crucial. Professionals in AI development should consider the importance of user experience and engagement when designing AI applications. The shutdown highlights the need for AI tools that not only showcase technical prowess but also meet user expectations and market demands.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Kentucky Farm Refuses $26M Data Center Deal—AI Expansion Halted",
-            "title": "Kentucky Woman Declines $26M Offer for AI Data Center on Farm",
-            "content": "A Kentucky family has turned down a $26 million offer from a major artificial intelligence company to convert their farm into a data center. The proposed development was intended to support the growing computational demands of AI technologies. This decision underscores the complex dynamics between technological advancement and community values, as local residents weigh economic benefits against preserving their land and lifestyle. AI companies may need to explore alternative locations or engage more deeply with community stakeholders to address concerns. The refusal could influence future negotiations between tech companies and rural landowners.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/24/kentucky-woman-rejects-26-million-offer-to-turn-her-farm-into-a-data-center/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "Judge Critiques Pentagon’s Actions Against Anthropic—Supply Chain Risk Disputed",
-            "title": "Pentagon&#x27;s Labeling of Anthropic as Supply-Chain Risk Questioned by Judge",
-            "content": "A district court judge has raised concerns over the Pentagon&#x27;s decision to classify Anthropic, developer of the Claude AI, as a supply-chain risk. During a recent hearing, the judge questioned the Department of Defense&#x27;s motivations, suggesting that the move might be an attempt to undermine the AI firm. This development highlights the increasing scrutiny of government actions affecting AI companies, which could have implications for national security policies and industry regulations. Stakeholders in the AI sector should stay informed about regulatory changes that could impact their operations and partnerships.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/pentagons-attempt-to-cripple-anthropic-is-troublesome-judge-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "OpenAI Ends Sora Video Model—API Access Terminated",
-            "title": "OpenAI Discontinues Sora AI Video Model and API Access",
-            "content": "OpenAI has announced the shutdown of its Sora AI video generation app, along with the discontinuation of its API access. The decision affects developers who relied on the Sora 2 model family for video generation pipelines. This move reflects OpenAI&#x27;s strategic pivot away from maintaining stand-alone consumer applications and focusing on other AI initiatives. Developers using Sora&#x27;s API will need to seek alternative solutions for video content creation. The closure serves as a reminder of the volatility in AI services and the need for adaptable development strategies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/openai-is-shutting-down-sora-its-powerful-ai-video-app",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "OpenAI Abandons Sora—Disney Deal Dissolved",
-            "title": "OpenAI Shuts Down Sora, Cancels Billion-Dollar Disney Licensing Deal",
-            "content": "OpenAI has officially terminated its Sora video generation tool, ending a high-profile licensing agreement with Disney. Launched in late 2024, Sora was part of a billion-dollar deal intended to revolutionize content creation. Despite initial excitement, the tool failed to achieve widespread adoption. The dissolution of the Disney deal illustrates the challenges AI companies face in meeting the commercial expectations of large partners. This development may prompt AI firms to reassess their product offerings and partnership strategies to ensure alignment with market needs.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/899850/openai-sora-ai-chatgpt",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 24 2026",
-            "headline": "EFF Leadership Change Amid Rising AI and ICE Tensions",
-            "title": "Electronic Frontier Foundation Appoints New Leader as AI, ICE Conflicts Grow",
-            "content": "The Electronic Frontier Foundation (EFF) is undergoing a leadership change as public interest in technology-related government abuses intensifies. The new leader aims to address escalating concerns about artificial intelligence and U.S. Immigration and Customs Enforcement (ICE) practices. This transition comes at a critical time, with the EFF playing a pivotal role in advocating for digital rights and privacy. Professionals in cybersecurity and AI should watch for shifts in EFF&#x27;s strategies and priorities, as they could influence policy debates and regulatory frameworks. The leadership change signals a potential recalibration of efforts to tackle emerging tech challenges.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/03/trump-made-opposing-government-spying-cool-again-effs-departing-chief-says/",
             "relatedResources": []
         }
     ],
