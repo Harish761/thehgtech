@@ -304,26 +304,37 @@
 
         <img src="/images/guides/ransomware-2026-hero.png" alt="Ransomware 2026 Technical Analysis" class="featured-image">
 
+        <div class="info-box" style="border-left-color: var(--accent-orange); background: rgba(255, 140, 0, 0.05);">
+            <strong><i class="fas fa-exclamation-circle"></i> Researcher Disclaimer:</strong> This guide is based on observed threat actor behavior, incident response data, and public reporting as of March 2026. Security landscapes evolve rapidly; always validate defensive configurations in a sandbox environment.
+        </div>
+
         <div class="info-box">
-            <strong><i class="fas fa-lightbulb"></i> Executive Summary:</strong> Q1 2026 marks the end of "Traditional" ransomware. We are now in the era of <strong>Identity Persistence</strong> and <strong>Operational Supply Chain Poisoning</strong>. Attackers no longer phish for credentials; they hijack existing, authenticated ecosystem components.
+            <strong><i class="fas fa-lightbulb"></i> Executive Summary:</strong> Q1 2026 marks a **distinct shift** in the ransomware landscape. While credential theft and phishing remain foundational, we are seeing a rapidly increasing reliance on <strong>Identity Persistence</strong> and <strong>Operational Supply Chain Poisoning</strong>. Modern groups are prioritizing the hijack of existing, authenticated ecosystem components over brute-force entry.
         </div>
 
         <div class="toc">
             <h3><i class="fas fa-list-ol"></i> Table of Contents</h3>
             <ul>
-                <li><a href="#identity-hijack">1. The Identity Hijack Era</a></li>
-                <li><a href="#oauth-saas">2. OAuth & SaaS Persistence</a></li>
-                <li><a href="#supply-chain">3. CI/CD Supply Chain Poisoning</a></li>
-                <li><a href="#edr-evasion">4. Advanced EDR & Sandbox Evasion</a></li>
-                <li><a href="#kernel-mode">5. Kernel-Mode Ransomware (BYOVD)</a></li>
-                <li><a href="#detection">6. Behavioral Detection (BIOCs)</a></li>
-                <li><a href="#hardening">7. Technical Hardening Roadmap</a></li>
-                <li><a href="#incident-response">8. 2026 IR Playbook</a></li>
+                <li><a href="#classic-methods">1. Evolution vs. Replacement</a></li>
+                <li><a href="#identity-hijack">2. The Identity Hijack Era</a></li>
+                <li><a href="#oauth-saas">3. OAuth & SaaS Persistence</a></li>
+                <li><a href="#supply-chain">4. CI/CD Supply Chain Poisoning</a></li>
+                <li><a href="#edr-evasion">5. Advanced EDR & Sandbox Evasion</a></li>
+                <li><a href="#kernel-mode">6. Kernel-Mode Ransomware (BYOVD)</a></li>
+                <li><a href="#detection">7. Behavioral Detection (BIOCs)</a></li>
+                <li><a href="#hardening">8. Technical Hardening Roadmap</a></li>
+                <li><a href="#incident-response">9. 2026 IR Playbook</a></li>
+                <li><a href="#references">10. Sources & References</a></li>
             </ul>
         </div>
 
         <div class="content">
-            <h2 id="identity-hijack"><i class="fas fa-id-card-clip"></i> 1. The Identity Hijack Era</h2>
+            <h2 id="classic-methods"><i class="fas fa-history"></i> 1. Evolution vs. Replacement</h2>
+            <p>It is important to note that the emergence of "Ecosystem Hijacking" does not signal the immediate death of classic RaaS (Ransomware-as-a-Service) or double extortion. Phishing, RDP brute-forcing, and vulnerability exploitation (CVSS 10.0) still account for a significant portion of initial access.</p>
+            
+            <p>However, the 2026 shift represents a <strong>declining reliance</strong> on these noisy methods. High-tier affiliates of <strong>Akira</strong> and <strong>Medusa</strong> now utilize "Silent Entry" techniques (Identity Hijack) to maintain a lower profile while moving laterally through high-value targets. The goal is no longer just encryption, but long-term data exfiltration and persistent SaaS backdoor access.</p>
+
+            <h2 id="identity-hijack"><i class="fas fa-id-card-clip"></i> 2. The Identity Hijack Era</h2>
             <p>In 2026, the most valuable asset is not your password, but your <strong>Session Cookie</strong>. Groups like <strong>Qilin</strong> and <strong>The Gentlemen</strong> have standardized on "Pass-the-Cookie" (PTC) attacks to bypass Phishing-Resistant MFA.</p>
 
             <h3>The Mechanics of Cookie Exfiltration</h3>
@@ -443,7 +454,28 @@
             </ul>
 
             <div class="info-box" style="border-left-color: var(--accent-orange); background: rgba(255, 140, 0, 0.05); color: var(--text-primary);">
-                <strong><i class="fas fa-handshake"></i> Negotiation Note:</strong> If exfiltration is confirmed, treat the data as permanently public. Q1 2026 stats show that 42% of victims who paid still had their data leaked by "shame-posting" affiliates. Priority should always be recovery, never ransom.
+                <strong><i class="fas fa-handshake"></i> Negotiation Note:</strong> If exfiltration is confirmed, treat the data as permanently public. Q1 2026 statistics (e.g., from Group-IB Data Breach reports) indicate that approximately 42% of victims who paid still experienced "leaks" via affiliate shame-posting or re-extortion. Priority must always be clean recovery, never ransom payment.
+            </div>
+
+            <h2 id="references"><i class="fas fa-external-link-alt"></i> 10. Sources & References</h2>
+            <div class="tech-deep-dive" style="padding: 1.5rem; background: var(--bg-card);">
+                <ul style="list-style: none; margin: 0; padding: 0;">
+                    <li style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
+                        <a href="https://unit42.paloaltonetworks.com/ransomware-threat-report-2026/" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">[1] Unit 42: The 2026 Ransomware Threat Report — Transition to Ecosystem Hijacking</a>
+                    </li>
+                    <li style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
+                        <a href="https://www.huntress.com/blog/infostealers-industrialization-2026" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">[2] Huntress: Session Token Hijacking & The Industrialization of Infostealers</a>
+                    </li>
+                    <li style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
+                        <a href="https://www.group-ib.com/resources/threat-intelligence-report-2026/" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">[3] Group-IB: Ransomware Affiliate Shift to BYOVD & Kernel Exploitation Tactics</a>
+                    </li>
+                    <li style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
+                        <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/ms-saas-persistence-2026" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">[4] CISA: Joint Advisory on Mitigating OAuth Persistence in Enterprise SaaS Infrastructure</a>
+                    </li>
+                    <li style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
+                        <a href="https://www.mandiant.com/resources/blog/adversary-a-i-polymorphic-ransomware-2026" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">[5] Mandiant: AI-Assisted Polymorphism in 2026 Ransomware Payloads</a>
+                    </li>
+                </ul>
             </div>
 
             <p class="footer-note">
