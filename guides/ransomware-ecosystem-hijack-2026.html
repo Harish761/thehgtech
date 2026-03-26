@@ -158,6 +158,7 @@
             border-radius: 12px;
             position: relative;
             overflow: hidden;
+            text-align: left;
         }
 
         .info-box { background: rgba(0, 217, 255, 0.08); border-left: 6px solid var(--accent-cyan); }
@@ -371,7 +372,7 @@
             <h2 id="classic-methods"><i class="fas fa-history"></i> 1. Evolution vs. Replacement</h2>
             <p>It is important to note that the emergence of "Ecosystem Hijacking" does not signal the immediate death of classic RaaS (Ransomware-as-a-Service) or double extortion. Phishing, RDP brute-forcing, and vulnerability exploitation (CVSS 10.0) still account for a significant portion of initial access.</p>
             
-            <p>But the 2026 shift represents a <strong>declining reliance</strong> on these noisy methods. High-tier affiliates of <strong>Akira</strong> and <strong>Medusa</strong> now utilize "Silent Entry" techniques (Identity Hijack) to maintain a lower profile while moving laterally through high-value targets. The goal is no longer just encryption, but long-term data exfiltration and persistent SaaS backdoor access.</p>
+            <p>However, the 2026 shift represents a <strong>declining reliance</strong> on these noisy methods. High-tier affiliates of groups like <strong>Akira</strong> and <strong>Medusa</strong> now utilize "Silent Entry" techniques (Identity Hijack) to maintain a lower profile while moving laterally through high-value targets. The goal has evolved beyond simple encryption; it now centers on long-term data exfiltration and persistent SaaS backdoor access.</p>
 
             <h2 id="identity-hijack"><i class="fas fa-id-card-clip"></i> 2. The Identity Hijack Era</h2>
             <p>In 2026, the most valuable asset is not your password, but your <strong>Session Cookie</strong>. Groups like <strong>Qilin</strong> and <strong>The Gentlemen</strong> have standardized on "Pass-the-Cookie" (PTC) attacks to bypass Phishing-Resistant MFA.</p>
@@ -385,7 +386,7 @@
             </div>
 
             <div class="warning-box">
-                <strong><i class="fas fa-exclamation-triangle"></i> The MFA Bypass:</strong> Hardware security keys (YubiKeys) protect the <em>Establishment</em> of a session. They do <strong>NOT</strong> protect the session token once issued. If an attacker injects a stolen session token into a fresh browser profile, they inherit the "Authenticated" state without ever seeing an MFA prompt.
+                <strong><i class="fas fa-exclamation-triangle"></i> The MFA Bypass:</strong> Hardware security keys (YubiKeys) protect the <em>Establishment</em> of a session. They do <strong>NOT</strong> protect the session token once it has already been issued. If an attacker injects a stolen session token into a fresh browser profile, they inherit the "Authenticated" state without ever needing to solve an MFA prompt.
             </div>
 
             <h2 id="oauth-saas"><i class="fas fa-cloud-lock"></i> 3. OAuth & SaaS Persistence</h2>
@@ -422,7 +423,7 @@
             </table>
 
             <h2 id="supply-chain"><i class="fas fa-project-diagram"></i> 4. CI/CD Supply Chain Poisoning</h2>
-            <p>The <strong>Advantest</strong> and <strong>trivy-action</strong> incidents of early 2026 demonstrate the weaponization of the "Trust Fabric." Attackers target the GitHub Actions and Jenkins pipelines of security vendors.</p>
+            <p>The <strong>Advantest</strong> and <strong>trivy-action</strong> incidents of early 2026 demonstrate the weaponization of the "Trust Fabric." Attackers target the GitHub Actions and Jenkins pipelines of security vendors in order to inject malicious payloads into trusted software update channels.</p>
 
             <div class="diagram-container">
                 <img src="/images/guides/ransomware-2026-supply-chain.png" alt="CI/CD Supply Chain Poisoning">
