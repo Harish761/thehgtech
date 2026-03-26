@@ -12,7 +12,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-28T23:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Microsoft Teams Phishing: Hackers Exploit Guest Feature for Credential Theft</news:title>
       <news:keywords>Microsoft Teams phishing, Teams guest exploit, credential theft, phishing bypass email security, enterprise phishing, collaboration platform security</news:keywords>
     </news:news>
@@ -26,7 +26,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-28T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Microsoft Office Zero-Day CVE-2026-21509 Actively Exploited - Emergency Patch Released</news:title>
       <news:keywords>CVE-2026-21509, Microsoft Office zero-day, OLE security bypass, CISA KEV, KB5002713, emergency patch, active exploitation</news:keywords>
     </news:news>
@@ -40,7 +40,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-27T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Infostealer Malware: Why Your MFA Is Already Compromised</news:title>
       <news:keywords>Infostealer, Lumma, RedLine, session hijacking, MFA bypass, credential theft, cookie theft</news:keywords>
     </news:news>
@@ -53,7 +53,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-27T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>OAuth Worms: The Silent SaaS-to-SaaS Attack Vector Nobody's Watching</news:title>
       <news:keywords>OAuth worm, SaaS security, consent phishing, Microsoft 365, Google Workspace, cloud attack</news:keywords>
     </news:news>
@@ -66,7 +66,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-27T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Prompt Injection Goes Physical: Hacking Self-Driving Cars and Drones with Text</news:title>
       <news:keywords>prompt injection, autonomous vehicles, self-driving cars, drones, embodied AI, CHAI attack</news:keywords>
     </news:news>
@@ -79,7 +79,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-27T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>ShinyHunters Voice Phishing: How Hackers Are Bypassing MFA in Real-Time</news:title>
       <news:keywords>ShinyHunters, vishing, voice phishing, MFA bypass, SSO hijacking, Okta, social engineering</news:keywords>
     </news:news>
@@ -93,7 +93,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-17T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>CrowdStrike Acquires Seraphic Security for $420M: Securing the Browser Battlefield</news:title>
       <news:keywords>CrowdStrike, Seraphic Security, acquisition, browser security, Shadow AI, BYOD, Falcon Platform</news:keywords>
     </news:news>
@@ -107,7 +107,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-16T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, One Actively Exploited</news:title>
       <news:keywords>Microsoft, Patch Tuesday, CVE-2026-20805, zero-day, CISA KEV, Windows security</news:keywords>
     </news:news>
@@ -120,7 +120,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-16T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>TotalEnergies Breach: 183 Million Customer Records Allegedly Stolen</news:title>
       <news:keywords>TotalEnergies, data breach, France, energy sector, banking data, customer records</news:keywords>
     </news:news>
@@ -133,7 +133,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-16T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>91,000 LLM Attack Sessions: Massive AI Reconnaissance Campaign</news:title>
       <news:keywords>LLM attacks, AI security, OpenAI, Gemini, reconnaissance, API security</news:keywords>
     </news:news>
@@ -146,7 +146,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-16T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Microsoft 365 US Government Breach: Cloud Espionage Campaign</news:title>
       <news:keywords>Microsoft 365, government breach, nation-state, cloud espionage, federal agencies</news:keywords>
     </news:news>
@@ -160,7 +160,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-12T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>CrowdStrike Acquires SGNL for $740M: The Future of Identity Security in the AI Agent Era</news:title>
       <news:keywords>CrowdStrike, SGNL, acquisition, identity security, AI agent security, zero standing privileges, CAEP</news:keywords>
     </news:news>
@@ -173,7 +173,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-12T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Ledger Customers Exposed in Global-e Supply Chain Attack: What You Need to Know</news:title>
       <news:keywords>Ledger, Global-e, supply chain attack, data breach, cryptocurrency, phishing</news:keywords>
     </news:news>
@@ -187,7 +187,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-08T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Ni8mare: Two CVSS 10.0 Vulnerabilities Put 100K n8n Automation Servers at Risk</news:title>
       <news:keywords>n8n, CVE-2026-21858, CVE-2026-21877, Ni8mare, CVSS 10.0, RCE, workflow automation</news:keywords>
     </news:news>
@@ -201,7 +201,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Agentic AI: The New Insider Threat - When AI Employees Go Rogue</news:title>
       <news:keywords>Agentic AI, AI insider threat, autonomous AI, shadow AI, AI governance, enterprise security</news:keywords>
     </news:news>
@@ -214,7 +214,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Deepfake-as-a-Service: Criminals Rent AI Impersonation Tools for $20</news:title>
       <news:keywords>Deepfake, DaaS, AI fraud, voice cloning, Narayana Murthy scam, UK detection challenge</news:keywords>
     </news:news>
@@ -227,7 +227,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Claude AI Used to Hack Itself: Critical CVE-2025-54794 and CVE-2025-54795</news:title>
       <news:keywords>Claude AI, Anthropic, CVE-2025-54794, CVE-2025-54795, InversePrompt, AI vulnerability</news:keywords>
     </news:news>
@@ -240,7 +240,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Sedgwick Government Solutions Hit by TridentLocker Ransomware: 3.4GB Stolen</news:title>
       <news:keywords>TridentLocker, ransomware, Sedgwick, federal contractor, government breach</news:keywords>
     </news:news>
@@ -253,7 +253,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Taiwan: 2.63 Million Chinese Cyberattacks Daily - Energy Infrastructure Siege</news:title>
       <news:keywords>Taiwan, China, cyberattacks, nation-state, energy infrastructure, cyber warfare</news:keywords>
     </news:news>
@@ -266,7 +266,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-05T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>European Space Agency Cyberattack: Threat Actor '888' Claims 200GB Data Theft</news:title>
       <news:keywords>ESA, European Space Agency, threat actor 888, space security, aerospace breach</news:keywords>
     </news:news>
@@ -279,7 +279,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>IBM API Connect CVE-2025-13915: Critical Enterprise Gateway Vulnerability</news:title>
       <news:keywords>IBM API Connect, CVE-2025-13915, enterprise security, RCE, API gateway, critical vulnerability</news:keywords>
     </news:news>
@@ -292,7 +292,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>ClickFix Surge: 517% Increase in Fake CAPTCHA Social Engineering Attacks</news:title>
       <news:keywords>ClickFix, social engineering, fake CAPTCHA, PowerShell malware, phishing, 2026 threat</news:keywords>
     </news:news>
@@ -305,7 +305,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>ManageMyHealth NZ Breach: $60,000 Ransom Deadline for Patient Data</news:title>
       <news:keywords>ManageMyHealth, New Zealand, healthcare breach, ransom, patient data, NHI</news:keywords>
     </news:news>
@@ -318,7 +318,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Covenant Health Ransomware: Qilin Steals 850GB from 478,000 Patients</news:title>
       <news:keywords>Covenant Health, Qilin ransomware, healthcare breach, patient data, Massachusetts</news:keywords>
     </news:news>
@@ -331,7 +331,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-01-02T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Electric Wheelchair Bluetooth Hack CVE-2025-14346: IoT Medical Device Vulnerability</news:title>
       <news:keywords>wheelchair hack, Bluetooth vulnerability, CVE-2025-14346, IoT security, medical device, WHILL</news:keywords>
     </news:news>
@@ -344,7 +344,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-29T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>MongoBleed CVE-2025-14847: Critical MongoDB Memory Leak Exposes Credentials</news:title>
       <news:keywords>MongoBleed, CVE-2025-14847, MongoDB, database security, memory leak, credential theft</news:keywords>
     </news:news>
@@ -357,7 +357,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-29T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Scattered Spider Teen Hacker: 19-Year-Old Stole $115 Million from 47 US Companies</news:title>
       <news:keywords>Scattered Spider, teen hacker, ransomware, social engineering, Octo Tempest, cyberattack 2025</news:keywords>
     </news:news>
@@ -370,7 +370,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-27T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>React2Shell CVE-2025-55182: CVSS 10.0 Vulnerability in React Server Components</news:title>
       <news:keywords>React2Shell, CVE-2025-55182, React 19, Next.js, RCE, zero-day, CVSS 10.0</news:keywords>
     </news:news>
@@ -383,7 +383,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-27T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>TrustWallet Chrome Extension Hack: Millions Lost in Browser Extension Crisis</news:title>
       <news:keywords>TrustWallet, Chrome extension, crypto hack, wallet compromise, cryptocurrency theft</news:keywords>
     </news:news>
@@ -396,7 +396,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-27T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>LangChain CVE-2025-68664: AI Agent Vulnerability Allows Secret Theft</news:title>
       <news:keywords>LangChain, CVE-2025-68664, AI security, LLM vulnerability, serialization injection</news:keywords>
     </news:news>
@@ -409,7 +409,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-25T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Operation PCPcat: 59,000 Next.js Servers Hacked in 48 Hours</news:title>
       <news:keywords>Operation PCPcat, Next.js, React, CVE-2025-29927, CVE-2025-66478, credential theft, react.py</news:keywords>
     </news:news>
@@ -422,7 +422,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-25T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Romania Water Authority Ransomware Attack: 1,000 Systems Encrypted Using BitLocker</news:title>
       <news:keywords>Romania, ANAR, ransomware, BitLocker, critical infrastructure, water utilities, LOTL</news:keywords>
     </news:news>
@@ -435,7 +435,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-25T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>n8n RCE Vulnerability CVE-2025-68613: Why Automation Platforms Are Your Biggest Blind Spot</news:title>
       <news:keywords>n8n, CVE-2025-68613, RCE, automation, shadow IT, workflow automation, vulnerability</news:keywords>
     </news:news>
@@ -449,7 +449,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-23T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Nissan Customer Data Breach: Red Hat GitLab Compromise Exposes 21,000 Customers</news:title>
       <news:keywords>Nissan breach, Red Hat, GitLab, supply chain attack, Crimson Collective, data breach</news:keywords>
     </news:news>
@@ -462,7 +462,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-22T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>WatchGuard Firebox Zero-Day CVE-2025-14733 Under Active Exploitation</news:title>
       <news:keywords>WatchGuard, Firebox, CVE-2025-14733, zero-day, VPN vulnerability, CISA KEV</news:keywords>
     </news:news>
@@ -475,7 +475,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-22T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>DOJ Charges 54 in Massive ATM Jackpotting Scheme Using Ploutus Malware</news:title>
       <news:keywords>ATM jackpotting, Ploutus malware, DOJ, Tren de Aragua, ATM fraud</news:keywords>
     </news:news>
@@ -488,7 +488,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-22T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>North Korea Stole $2.02 Billion in Cryptocurrency in 2025</news:title>
       <news:keywords>North Korea, cryptocurrency, Lazarus Group, DPRK hackers, crypto theft</news:keywords>
     </news:news>
@@ -501,7 +501,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-20T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>700Credit Data Breach Exposes 5.6 Million SSNs: Automotive Industry Supply Chain Attack</news:title>
       <news:keywords>700Credit breach, data breach, SSN exposed, automotive industry, supply chain attack</news:keywords>
     </news:news>
@@ -514,7 +514,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-20T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>DXS International NHS Breach: DevMan Ransomware Claims 300GB from UK Healthcare Provider</news:title>
       <news:keywords>DXS International, NHS breach, DevMan ransomware, UK healthcare, patient data</news:keywords>
     </news:news>
@@ -527,7 +527,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-20T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Former Cybersecurity Professionals Plead Guilty to ALPHV BlackCat Ransomware Attacks</news:title>
       <news:keywords>ALPHV ransomware, BlackCat, insider threat, cybersecurity professionals, ransomware prosecution</news:keywords>
     </news:news>
@@ -540,7 +540,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-20T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Nefilim Ransomware Operator Pleads Guilty: Ukrainian National Faces 10 Years</news:title>
       <news:keywords>Nefilim ransomware, Artem Stryzhak, ransomware prosecution, Ukraine, DOJ</news:keywords>
     </news:news>
@@ -553,7 +553,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>99% of Organizations Had Their AI Systems Attacked in 2025</news:title>
       <news:keywords>AI security, Palo Alto Networks, enterprise AI attacks, cloud security, API attacks</news:keywords>
     </news:news>
@@ -566,7 +566,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Red Hat Acquires Chatterbox Labs: A New Era of Enterprise AI Safety</news:title>
       <news:keywords>Red Hat, Chatterbox Labs, AI safety, AI guardrails, enterprise AI, acquisition</news:keywords>
     </news:news>
@@ -579,7 +579,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>6 Cybersecurity Predictions for 2026: The AI Economy's New Rules</news:title>
       <news:keywords>cybersecurity predictions, 2026, Palo Alto Networks, AI attacks, quantum computing</news:keywords>
     </news:news>
@@ -592,7 +592,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>How a Single Phone Call Breached Harvard: The Rise of AI-Assisted Vishing</news:title>
       <news:keywords>Harvard breach, vishing attack, phone phishing, social engineering, voice cloning</news:keywords>
     </news:news>
@@ -605,7 +605,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-17T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>The Billion-Record Heist: Salesforce Data Extortion Threatens Enterprise Cloud Security</news:title>
       <news:keywords>Salesforce breach, data extortion, cloud security, CRM security, billion records</news:keywords>
     </news:news>
@@ -618,7 +618,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-15T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Gentlemen Ransomware: The 'Polite' Threat Ripping Through Corporate Networks</news:title>
       <news:keywords>Gentlemen ransomware, BYOVD, ransomware, GPO manipulation, EDR evasion</news:keywords>
     </news:news>
@@ -631,7 +631,7 @@
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2025-12-15T00:00:00+05:30</news:publication_date>
+      <news:publication_date>2026-03-23T09:00:00+05:30</news:publication_date>
       <news:title>Critical 7-Zip Vulnerability: What You Need to Know Right Now</news:title>
       <news:keywords>7-Zip vulnerability, CVE, critical vulnerability, file compression security</news:keywords>
     </news:news>

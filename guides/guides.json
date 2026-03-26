@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "ransomware-ecosystem-hijack-2026",
+      "title": "Ransomware 2026: The Ecosystem Hijack Technical Defense Guide",
+      "category": "Ransomware & Malware",
+      "excerpt": "Post-mortem analysis of Q1 2026 ransomware shifts. Master technical defenses against 'Pass-the-Cookie' session theft, OAuth hijacking, and CI/CD supply chain poisoning. Includes technical diagrams and hardening checklists.",
+      "readTime": "25 min",
+      "level": "Advanced",
+      "date": "Mar 26, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/ransomware-2026-hero.png"
+    },
+    {
       "id": "oauth-security-attacks-defense-2026",
       "title": "OAuth Security in 2026: How Attackers Exploit the Protocol You Trust",
       "category": "Identity & Access Management",
