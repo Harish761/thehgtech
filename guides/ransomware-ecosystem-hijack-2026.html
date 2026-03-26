@@ -242,6 +242,45 @@
             .toc ul { grid-template-columns: 1fr; }
         }
     </style>
+
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        // Inline theme set to avoid FOUC
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+    <!-- Google Analytics 4 -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+    <!-- Fullres Analytics -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
 </head>
 
 <body>
@@ -309,7 +348,7 @@
         </div>
 
         <div class="info-box">
-            <strong><i class="fas fa-lightbulb"></i> Executive Summary:</strong> Q1 2026 marks a **distinct shift** in the ransomware landscape. While credential theft and phishing remain foundational, we are seeing a rapidly increasing reliance on <strong>Identity Persistence</strong> and <strong>Operational Supply Chain Poisoning</strong>. Modern groups are prioritizing the hijack of existing, authenticated ecosystem components over brute-force entry.
+            <strong><i class="fas fa-lightbulb"></i> Executive Summary:</strong> Q1 2026 marks a <strong>distinct shift</strong> in the ransomware landscape. While credential theft and phishing remain foundational, we are seeing a rapidly increasing reliance on <strong>Identity Persistence</strong> and <strong>Operational Supply Chain Poisoning</strong>. Modern groups are prioritizing the hijack of existing, authenticated ecosystem components over brute-force entry.
         </div>
 
         <div class="toc">
@@ -332,7 +371,7 @@
             <h2 id="classic-methods"><i class="fas fa-history"></i> 1. Evolution vs. Replacement</h2>
             <p>It is important to note that the emergence of "Ecosystem Hijacking" does not signal the immediate death of classic RaaS (Ransomware-as-a-Service) or double extortion. Phishing, RDP brute-forcing, and vulnerability exploitation (CVSS 10.0) still account for a significant portion of initial access.</p>
             
-            <p>However, the 2026 shift represents a <strong>declining reliance</strong> on these noisy methods. High-tier affiliates of <strong>Akira</strong> and <strong>Medusa</strong> now utilize "Silent Entry" techniques (Identity Hijack) to maintain a lower profile while moving laterally through high-value targets. The goal is no longer just encryption, but long-term data exfiltration and persistent SaaS backdoor access.</p>
+            <p>But the 2026 shift represents a <strong>declining reliance</strong> on these noisy methods. High-tier affiliates of <strong>Akira</strong> and <strong>Medusa</strong> now utilize "Silent Entry" techniques (Identity Hijack) to maintain a lower profile while moving laterally through high-value targets. The goal is no longer just encryption, but long-term data exfiltration and persistent SaaS backdoor access.</p>
 
             <h2 id="identity-hijack"><i class="fas fa-id-card-clip"></i> 2. The Identity Hijack Era</h2>
             <p>In 2026, the most valuable asset is not your password, but your <strong>Session Cookie</strong>. Groups like <strong>Qilin</strong> and <strong>The Gentlemen</strong> have standardized on "Pass-the-Cookie" (PTC) attacks to bypass Phishing-Resistant MFA.</p>
@@ -349,7 +388,7 @@
                 <strong><i class="fas fa-exclamation-triangle"></i> The MFA Bypass:</strong> Hardware security keys (YubiKeys) protect the <em>Establishment</em> of a session. They do <strong>NOT</strong> protect the session token once issued. If an attacker injects a stolen session token into a fresh browser profile, they inherit the "Authenticated" state without ever seeing an MFA prompt.
             </div>
 
-            <h2 id="oauth-saas"><i class="fas fa-cloud-lock"></i> 2. OAuth & SaaS Persistence</h2>
+            <h2 id="oauth-saas"><i class="fas fa-cloud-lock"></i> 3. OAuth & SaaS Persistence</h2>
             <p>Traditional ransomware stayed on the disk. 2026 ransomware lives in your SaaS integrations. Through **Consent Phishing**, attackers trick users into authorizing malicious OAuth applications.</p>
 
             <h3>The "Ghost" Integration</h3>
@@ -382,7 +421,7 @@
                 </tbody>
             </table>
 
-            <h2 id="supply-chain"><i class="fas fa-project-diagram"></i> 3. CI/CD Supply Chain Poisoning</h2>
+            <h2 id="supply-chain"><i class="fas fa-project-diagram"></i> 4. CI/CD Supply Chain Poisoning</h2>
             <p>The **Advantest** and **trivy-action** incidents of early 2026 demonstrate the weaponization of the "Trust Fabric." Attackers target the GitHub Actions and Jenkins pipelines of security vendors.</p>
 
             <div class="diagram-container">
@@ -402,20 +441,20 @@
                 </div>
             </div>
 
-            <h2 id="edr-evasion"><i class="fas fa-user-secret"></i> 4. Advanced EDR & Sandbox Evasion</h2>
+            <h2 id="edr-evasion"><i class="fas fa-user-secret"></i> 5. Advanced EDR & Sandbox Evasion</h2>
             <p>Ransomware in 2026 uses <strong>AI-assisted Polymorphism</strong>. Every payload is custom-compiled on the victim's machine to ensure the file hash is unique and the import tables are obfuscated.</p>
 
             <h3>Intermittent Encryption</h3>
             <p>To bypass Behavioral EDR (which looks for high I/O rates of file modification), groups like **Akira** now use intermittent encryption. They encrypt only every 16th or 32nd byte of a file. This is fast enough to destroy data but "quiet" enough to blend in with standard background OS telemetry.</p>
 
-            <h2 id="kernel-mode"><i class="fas fa-microchip"></i> 5. Kernel-Mode Ransomware (BYOVD)</h2>
+            <h2 id="kernel-mode"><i class="fas fa-microchip"></i> 6. Kernel-Mode Ransomware (BYOVD)</h2>
             <p>The most dangerous trend is **Bring Your Own Vulnerable Driver (BYOVD)**. This involves loading a legitimate, digitally signed but vulnerable driver (e.g., an old anti-cheat or hardware driver) to gain Kernel-Mode access.</p>
             
             <div class="warning-box">
                 <strong><i class="fas fa-skull"></i> The EDR Terminator:</strong> Once in the Kernel (Ring 0), the ransomware can disable the EDR's callbacks and filters, making the system completely "blind" before the encryption process even begins.
             </div>
 
-            <h2 id="detection"><i class="fas fa-radar"></i> 6. Behavioral Detection (BIOCs)</h2>
+            <h2 id="detection"><i class="fas fa-radar"></i> 7. Behavioral Detection (BIOCs)</h2>
             <p>Since hashes and IPs are ephemeral, SOC teams must hunt for behavioral anomalies.</p>
 
             <div class="success-box">
@@ -431,7 +470,7 @@
                 | where array_length(IPs) > 1
             </div>
 
-            <h2 id="hardening"><i class="fas fa-tools"></i> 7. Technical Hardening Roadmap</h2>
+            <h2 id="hardening"><i class="fas fa-tools"></i> 8. Technical Hardening Roadmap</h2>
             <p>To survive 2026, you must implement these three pillars of defense.</p>
 
             <h3>Pillar 1: Hardware-Bound Everything</h3>
@@ -443,7 +482,7 @@
             <h3>Pillar 3: Micro-Segmentation for the VM Layer</h3>
             <p>Modern ransomware (Play, DragonForce) targets hypervisors directly. Isolate your **vCenter** and **ESXi** management interfaces on an non-routed management VLAN accessible only via a physical Break-Glass console.</p>
 
-            <h2 id="incident-response"><i class="fas fa-briefcase-medical"></i> 8. 2026 IR Playbook</h2>
+            <h2 id="incident-response"><i class="fas fa-briefcase-medical"></i> 9. 2026 IR Playbook</h2>
             <p>If you detect an intrusion, the first 60 minutes are critical. The 2026 "Shift-Left" Response focuses on **Identity Isolation** over network isolation.</p>
 
             <ul>
@@ -503,7 +542,7 @@
 
     <footer>
         <p>&copy; 2026 TheHGTech. All rights reserved. | <a href="/tools/grc-assessment/" style="color: var(--accent-cyan);">GRC Tool Dashboard</a></p>
-    </footer
+    </footer>
     
     <script src="/interaction-bar.js?v=20251217"></script>
     <script src="/ui-enhancements.js?v=20260220" defer></script>
