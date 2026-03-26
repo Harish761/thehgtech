@@ -389,7 +389,7 @@
             </div>
 
             <h2 id="oauth-saas"><i class="fas fa-cloud-lock"></i> 3. OAuth & SaaS Persistence</h2>
-            <p>Traditional ransomware stayed on the disk. 2026 ransomware lives in your SaaS integrations. Through **Consent Phishing**, attackers trick users into authorizing malicious OAuth applications.</p>
+            <p>Traditional ransomware stayed on the disk. 2026 ransomware lives in your SaaS integrations. Through <strong>Consent Phishing</strong>, attackers trick users into authorizing malicious OAuth applications.</p>
 
             <h3>The "Ghost" Integration</h3>
             <p>Once an OAuth app is authorized with <code>Files.ReadWrite.All</code> or <code>Mail.Send</code>, the attacker has persistence that <strong>survives password resets and session revocations</strong>. They use these hooks to encrypt files in SharePoint/OneDrive via API, avoiding local EDR detection entirely.</p>
@@ -422,7 +422,7 @@
             </table>
 
             <h2 id="supply-chain"><i class="fas fa-project-diagram"></i> 4. CI/CD Supply Chain Poisoning</h2>
-            <p>The **Advantest** and **trivy-action** incidents of early 2026 demonstrate the weaponization of the "Trust Fabric." Attackers target the GitHub Actions and Jenkins pipelines of security vendors.</p>
+            <p>The <strong>Advantest</strong> and <strong>trivy-action</strong> incidents of early 2026 demonstrate the weaponization of the "Trust Fabric." Attackers target the GitHub Actions and Jenkins pipelines of security vendors.</p>
 
             <div class="diagram-container">
                 <img src="/images/guides/ransomware-2026-supply-chain.png" alt="CI/CD Supply Chain Poisoning">
@@ -431,7 +431,7 @@
 
             <div class="tech-deep-dive">
                 <h3>Case Study: Mutable Reference Exploitation</h3>
-                <p>In the **trivy-action** compromise, attackers identified that many enterprises were using <code>uses: security-tool/action@v1</code>. By force-pushing a malicious commit to the <code>v1</code> tag, the malware was instantly pulled into thousands of production build pipelines globally.</p>
+                <p>In the <strong>trivy-action</strong> compromise, attackers identified that many enterprises were using <code>uses: security-tool/action@v1</code>. By force-pushing a malicious commit to the <code>v1</code> tag, the malware was instantly pulled into thousands of production build pipelines globally.</p>
                 <div class="code-block">
                     <span class="keyword-red"># VULNERABLE (Mutable Tag)</span>
                     - <span class="keyword-cyan">uses</span>: actions/checkout@v3
@@ -445,10 +445,10 @@
             <p>Ransomware in 2026 uses <strong>AI-assisted Polymorphism</strong>. Every payload is custom-compiled on the victim's machine to ensure the file hash is unique and the import tables are obfuscated.</p>
 
             <h3>Intermittent Encryption</h3>
-            <p>To bypass Behavioral EDR (which looks for high I/O rates of file modification), groups like **Akira** now use intermittent encryption. They encrypt only every 16th or 32nd byte of a file. This is fast enough to destroy data but "quiet" enough to blend in with standard background OS telemetry.</p>
+            <p>To bypass Behavioral EDR (which looks for high I/O rates of file modification), groups like <strong>Akira</strong> now use intermittent encryption. They encrypt only every 16th or 32nd byte of a file. This is fast enough to destroy data but "quiet" enough to blend in with standard background OS telemetry.</p>
 
             <h2 id="kernel-mode"><i class="fas fa-microchip"></i> 6. Kernel-Mode Ransomware (BYOVD)</h2>
-            <p>The most dangerous trend is **Bring Your Own Vulnerable Driver (BYOVD)**. This involves loading a legitimate, digitally signed but vulnerable driver (e.g., an old anti-cheat or hardware driver) to gain Kernel-Mode access.</p>
+            <p>The most dangerous trend is <strong>Bring Your Own Vulnerable Driver (BYOVD)</strong>. This involves loading a legitimate, digitally signed but vulnerable driver (e.g., an old anti-cheat or hardware driver) to gain Kernel-Mode access.</p>
             
             <div class="warning-box">
                 <strong><i class="fas fa-skull"></i> The EDR Terminator:</strong> Once in the Kernel (Ring 0), the ransomware can disable the EDR's callbacks and filters, making the system completely "blind" before the encryption process even begins.
@@ -480,10 +480,10 @@
             <p>Treat your production environment as a read-only entity. Use <strong>FIDO2-based Hardware MFA</strong> for <code>sudo</code> and <code>ssh</code> access, and never allow manual changes to CI/CD workflows.</p>
 
             <h3>Pillar 3: Micro-Segmentation for the VM Layer</h3>
-            <p>Modern ransomware (Play, DragonForce) targets hypervisors directly. Isolate your **vCenter** and **ESXi** management interfaces on an non-routed management VLAN accessible only via a physical Break-Glass console.</p>
+            <p>Modern ransomware (Play, DragonForce) targets hypervisors directly. Isolate your <strong>vCenter</strong> and <strong>ESXi</strong> management interfaces on an non-routed management VLAN accessible only via a physical Break-Glass console.</p>
 
             <h2 id="incident-response"><i class="fas fa-briefcase-medical"></i> 9. 2026 IR Playbook</h2>
-            <p>If you detect an intrusion, the first 60 minutes are critical. The 2026 "Shift-Left" Response focuses on **Identity Isolation** over network isolation.</p>
+            <p>If you detect an intrusion, the first 60 minutes are critical. The 2026 "Shift-Left" Response focuses on <strong>Identity Isolation</strong> over network isolation.</p>
 
             <ul>
                 <li><strong>T+0:</strong> Trigger absolute session revocation for the compromised User/App.</li>
