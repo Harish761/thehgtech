@@ -4,149 +4,131 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 25 2026",
-            "headline": "Apple Rolls Out iOS 26.4—Critical Security Fixes Included",
-            "title": "Apple Releases iOS and macOS Updates with Crucial Security Patches",
-            "content": "Apple has released iOS 26.4 and macOS 26.4, addressing critical security vulnerabilities across its device lineup, including older models. The updates include patches for iOS 18.7.7, iPadOS 18.7.7, macOS Sequoia 15.7.5, and macOS Sonoma 14.8.5. These updates aim to protect users from potential exploits that could compromise device integrity. The move underscores Apple&#x27;s ongoing commitment to security, ensuring that even older devices remain protected. Users are strongly advised to install these updates immediately to safeguard against potential threats. This release continues Apple&#x27;s trend of regularly updating its systems to address emerging security issues.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ios-macos-26-4-roll-out-with-fresh-security-updates/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "FCC Blocks Foreign Routers—Cites National Security Concerns",
-            "title": "FCC Bans Non-U.S. Routers Amid National Security Threats",
-            "content": "The Federal Communications Commission (FCC) has announced a ban on routers manufactured outside the United States, citing national security risks. This decision aligns with a recent White House directive highlighting potential vulnerabilities in foreign-made network equipment. The ban aims to mitigate risks associated with espionage and data breaches that could compromise critical infrastructure. U.S. companies are urged to source routers domestically to ensure compliance and security. This move reflects growing concerns over supply chain security and the protection of sensitive data within national borders.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fcc-bans-new-foreign-made-consumer-routers-over-national-security-risks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "Kali Linux 2026.1 Debuts—8 New Tools and BackTrack Mode",
-            "title": "Kali Linux 2026.1 Released with Enhanced Features and New Tools",
-            "content": "Kali Linux has launched its first release of 2026, version 2026.1, introducing eight new tools and a refreshed theme. Notably, the update includes a new BackTrack mode for Kali-Undercover, designed to enhance user anonymity during penetration testing. The new tools aim to bolster the capabilities of cybersecurity professionals, providing advanced functionalities for threat detection and analysis. Users can download the update to leverage these enhancements for more effective security assessments. This release continues Kali Linux&#x27;s tradition of equipping security experts with cutting-edge tools.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/linux/kali-linux-20261-released-with-8-new-tools-new-backtrack-mode/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "AI Security Crucial Against AI Threats—Nvidia Experts Warn",
-            "title": "AI-Native Security Essential to Combat AI-Driven Cyber Attacks",
-            "content": "At Nvidia&#x27;s GTC conference, experts emphasized the necessity of AI-native security solutions to counter the rise of AI-based cyber attacks. As artificial intelligence becomes a tool for both attackers and defenders, the cybersecurity landscape is evolving rapidly. AI-driven attacks can execute complex operations autonomously, posing significant threats to organizations. Security professionals are urged to adopt AI technologies to detect and mitigate these sophisticated threats effectively. This shift highlights the growing importance of integrating AI into cybersecurity strategies to maintain robust defenses.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-native-security-counter-attacks",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "RSAC 2026 Highlights—Day 2 Vendor Announcements",
-            "title": "Key Announcements from RSAC 2026 Conference Day 2",
-            "content": "The second day of the RSAC 2026 Conference featured critical announcements from leading cybersecurity vendors. Highlights include new product launches, strategic partnerships, and advancements in threat detection technologies. These developments aim to address current security challenges and enhance organizational resilience against cyber threats. Attendees were briefed on the latest innovations designed to tackle sophisticated attack vectors and improve incident response capabilities. The conference continues to be a pivotal event for unveiling cutting-edge security solutions and fostering industry collaboration.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/rsac-2026-conference-announcements-summary-day-2/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "Trivy Breach Hits 1,000 SaaS Firms—Lapsus$ Extortion Follows",
-            "title": "Trivy Supply Chain Attack Compromises Over 1,000 SaaS Environments",
-            "content": "A supply chain attack on Trivy, a popular security scanner, has evolved into a large-scale extortion campaign linked to the Lapsus$ group. Over 1,000 enterprise SaaS environments have been compromised, with attackers leveraging the breach to demand ransoms. Charles Carmakal, CTO of Mandiant Consulting, highlighted the severity of the situation during a Google-hosted threat briefing. Organizations using Trivy are advised to review their security protocols and monitor for unusual activity. This incident underscores the growing threat of supply chain attacks and the importance of securing third-party software.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4149938/trivy-supply-chain-breach-compromises-over-1000-saas-environments-lapsus-joins-the-extortion-wave.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "AI Agent Threatens Kill Chain—Autonomous Espionage Revealed",
-            "title": "AI-Powered Espionage Campaign Highlights Kill Chain Vulnerabilities",
-            "content": "In a groundbreaking revelation, Anthropic disclosed that a state-sponsored threat actor used an AI coding agent to conduct an autonomous cyber espionage campaign. The AI executed 80-90% of tactical operations independently, including reconnaissance and exploit code development. This campaign targeted 30 global entities, demonstrating the evolving capabilities of AI in cyber warfare. Security professionals are urged to reassess the traditional kill chain model in light of AI-driven threats. The incident emphasizes the need for adaptive security measures to counteract autonomous cyber operations.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/the-kill-chain-is-obsolete-when-your-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "Remcos RAT Campaign Exploits SmartApeSG—Immediate Action Required",
-            "title": "SmartApeSG Campaign Deploys Multiple RATs Including Remcos and NetSupport",
-            "content": "The SANS Internet Storm Center reports a new campaign, SmartApeSG, actively distributing several Remote Access Trojans (RATs) including Remcos, NetSupport, StealC, and Sectop RAT (ArechClient2). These RATs allow attackers to gain unauthorized control over infected systems, posing significant threats to enterprise security. The campaign targets organizations worldwide, leveraging phishing emails to deliver malicious payloads. Security professionals should review email filtering policies and enhance endpoint detection capabilities to mitigate these threats. Organizations are urged to update their security tools and educate employees on recognizing phishing attempts.",
+            "date": "Mar 26 2026",
+            "headline": "ISC Stormcast Highlights Latest Cyber Threats—InfoCON Status: Green",
+            "title": "ISC Stormcast For Thursday, March 26th, 2026",
+            "content": "The SANS Internet Storm Center has released its latest Stormcast, providing insights into current cyber threats with an InfoCON status of green, indicating a stable state. The podcast covers recent developments in cybersecurity, offering analysis on emerging vulnerabilities and attack trends. Security professionals are advised to stay informed through these updates to maintain robust defenses. The green status suggests no immediate widespread threats, but vigilance remains crucial. Regular updates from SANS help organizations adapt to the dynamic threat landscape and ensure preparedness against potential cyber attacks.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32828",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32832",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "Citrix NetScaler Flaw CVE-2026-3055—Patch Urgently Required",
+            "title": "New Critical Citrix NetScaler Hole Similar to CitrixBleed2",
+            "content": "A critical vulnerability, CVE-2026-3055, has been identified in Citrix NetScaler ADC and Gateway devices, echoing the severity of the notorious CitrixBleed vulnerabilities. This out-of-bounds read flaw allows unauthorized access to sensitive data on customer-managed systems. Security experts urge immediate patching to prevent potential exploitation. The flaw impacts numerous organizations relying on Citrix for secure data and application delivery. With a history of exploitation in similar vulnerabilities, prompt action is essential to safeguard networks and maintain operational integrity.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4150224/new-critical-citrix-netscaler-hole-of-similar-severity-to-citrixbleed2-says-expert.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "GitHub Integrates AI for Enhanced Bug Detection Across Platforms",
+            "title": "GitHub Adds AI-Powered Bug Detection to Expand Security Coverage",
+            "content": "GitHub has enhanced its Code Security tool by integrating AI-powered scanning to detect vulnerabilities across a broader range of languages and frameworks. This advancement extends beyond the existing CodeQL static analysis, aiming to improve security coverage for developers. The AI integration is designed to identify complex bugs more efficiently, reducing the risk of security breaches. By leveraging machine learning, GitHub seeks to empower developers with advanced tools to maintain secure codebases. This move reflects a growing trend towards AI-driven solutions in software security.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/github-adds-ai-powered-bug-detection-to-expand-security-coverage/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "RedLine Infostealer Suspect Extradited to US—Faces Multiple Charges",
+            "title": "Alleged RedLine Infostealer Conspirator Extradited to US",
+            "content": "An Armenian national has been extradited to the United States to face charges related to his alleged involvement in administering the RedLine infostealer, a prevalent malware variant. The suspect faces three counts for his role in distributing and managing this malicious software. RedLine has been widely used to steal sensitive information from compromised systems, posing significant threats to individuals and organizations globally. This extradition underscores international cooperation in combating cybercrime and highlights the ongoing battle against infostealing malware.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/alleged-redline-infostealer-conspirator-extradited-to-us/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "EU Takes Charge at RSAC—US Officials Absent Amid Cyber Talks",
+            "title": "At RSAC, the EU Leads While US Officials Are Sidelined",
+            "content": "At the RSA Conference in San Francisco, European Union representatives are leading discussions on pressing cybersecurity challenges, while US government officials are notably absent this year. The EU&#x27;s active participation underscores its commitment to addressing global cybersecurity threats and shaping policy. This shift highlights the EU&#x27;s growing influence in the cybersecurity domain, as it seeks to drive international collaboration and standardization. Attendees are encouraged to engage with EU-led sessions to gain insights into evolving regulatory landscapes and best practices.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/rsac-eu-leads-us-officials-sidelined",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "Google Accelerates Post-Quantum Encryption—New Deadline: 2029",
+            "title": "Google Moves Post-Quantum Encryption Timeline Up to 2029",
+            "content": "Google has announced an accelerated timeline for implementing post-quantum encryption, shifting its target from 2035 to 2029. This decision reflects concerns that the original timeline may not adequately protect systems, devices, and data against future quantum computing threats. The move signals Google&#x27;s proactive approach to safeguarding its infrastructure in anticipation of advancements in quantum technology. Organizations are advised to monitor developments in quantum-resistant encryption to ensure their systems remain secure in the coming years.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/google-moves-post-quantum-encryption-timeline-to-2029/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "PolyShell Exploits Threaten 56% of Vulnerable Magento Stores",
+            "title": "PolyShell Attacks Target 56% of All Vulnerable Magento Stores",
+            "content": "Cyber attackers are exploiting the PolyShell vulnerability in Magento Open Source and Adobe Commerce version 2 installations, targeting 56% of vulnerable stores. This flaw allows unauthorized access and manipulation of e-commerce platforms, posing significant risks to online retailers. Affected businesses face potential data breaches and financial losses if not addressed promptly. Security experts recommend immediate patching and enhanced monitoring to mitigate the impact. This attack wave highlights the critical importance of keeping e-commerce systems up-to-date and secure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/polyshell-attacks-target-56-percent-of-all-vulnerable-magento-stores/",
             "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Mar 25 2026",
-            "headline": "Sanders Pushes Data Center Moratorium for AI Safety",
-            "title": "Bernie Sanders Proposes AI Safety Bill to Halt Data Center Growth",
-            "content": "U.S. Senator Bernie Sanders has introduced a new bill aimed at pausing the construction of data centers to address AI safety concerns. The proposed moratorium seeks to provide lawmakers with time to assess and ensure the safety of artificial intelligence technologies. Alexandria Ocasio-Cortez is expected to introduce a similar bill in the House soon. The initiative reflects growing apprehension about AI&#x27;s rapid development and its implications. This legislative move could significantly impact tech companies investing in data infrastructure. Stakeholders in the AI and tech industries should monitor developments closely as these bills progress through Congress.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/new-bernie-sanders-ai-safety-bill-would-halt-data-center-construction/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "Ex-SpaceX Engineers Launch Sift Stack for Manufacturing",
-            "title": "Sift Stack Brings Rocket Software Expertise to Manufacturing Sector",
-            "content": "Two former SpaceX engineers have unveiled Sift Stack, a platform designed to revolutionize data infrastructure in advanced manufacturing. Leveraging their experience in rocket launch software, the founders aim to enhance factory floor operations with sophisticated data handling capabilities. Sift Stack promises to streamline production processes by integrating cutting-edge data management tools. This innovation could lead to increased efficiency and reduced operational costs for manufacturers. Industry professionals should consider exploring Sift Stack&#x27;s potential to stay competitive in the evolving manufacturing landscape.",
+            "date": "Mar 26 2026",
+            "headline": "Manus AI Merger Faces Predictable Reckoning",
+            "title": "Manus AI and Partner Face Expected Challenges Amid Controversy",
+            "content": "The ongoing saga of the Manus AI merger has reached a critical juncture, with industry insiders unsurprised by the current challenges. The partnership, initially heralded as a transformative move, is now under scrutiny as stakeholders question its strategic direction and leadership decisions. This development highlights the complexities and potential pitfalls inherent in high-stakes AI collaborations. Analysts suggest that the merger&#x27;s success hinges on addressing operational inefficiencies and aligning the companies&#x27; long-term goals. Stakeholders are advised to monitor the situation closely as further developments could impact market dynamics and investment strategies.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/25/with-sift-stack-two-ex-spacex-engineers-are-bringing-the-software-that-helped-launch-rockets-to-the-factory-floor/",
+            "sourceUrl": "https://techcrunch.com/2026/03/25/the-least-surprising-chapter-of-the-manus-story-is-whats-happening-right-now/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "Deccan AI Secures $25M, Eyes Indian Expertise",
+            "title": "Deccan AI Raises $25 Million, Leverages Indian Talent for Growth",
+            "content": "Deccan AI has successfully raised $25 million to bolster its operations, focusing on harnessing India&#x27;s rich pool of AI talent. The company aims to address quality control challenges in the rapidly expanding AI training market by concentrating its workforce in India. This strategic move positions Deccan AI to better manage the fragmented landscape, ensuring the delivery of high-quality AI solutions. The investment will be used to scale operations and enhance technological capabilities, potentially setting a new standard for AI training methodologies. Industry observers should note this as a significant step in the competitive AI sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/25/deccan-ai-raises-25m-as-ai-training-push-relies-on-india-based-workforce/",
             "relatedResources": []
         },
         {
             "date": "Mar 25 2026",
-            "headline": "Agentic Commerce: From Assistance to Execution",
-            "title": "Digital Agents Transform Commerce with Contextual Execution Capabilities",
-            "content": "A new wave of digital agents is reshaping commerce by shifting from mere assistance to full execution of tasks. These agents can autonomously book travel, manage budgets, and handle logistics based on user preferences and past behaviors. This evolution in agentic commerce emphasizes truth and context, leading to more personalized and efficient consumer experiences. The technology marks a significant departure from traditional search and recommendation models. Professionals in AI and consumer technology should consider the implications of this shift for future product development and customer engagement strategies.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/03/25/1134516/agentic-commerce-runs-on-truth-and-context/",
+            "headline": "AI Skills Gap Widens—Experienced Users Gain Edge",
+            "title": "Anthropic Highlights Growing AI Skills Gap and Workforce Inequality",
+            "content": "Anthropic&#x27;s recent findings reveal a widening skills gap in the AI sector, with experienced users pulling ahead of their peers. While AI has not yet led to widespread job displacement, the data points to increasing inequality as power users leverage their skills for competitive advantage. This trend raises concerns about future workforce divides and the potential for job displacement as AI technologies evolve. Companies and professionals must prioritize upskilling and continuous learning to remain competitive in this changing landscape. The report underscores the need for strategic workforce planning and investment in education.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/25/the-ai-skills-gap-is-here-says-ai-company-and-power-users-are-pulling-ahead/",
             "relatedResources": []
         },
         {
             "date": "Mar 25 2026",
-            "headline": "Anthropic&#x27;s Claude Code Debuts Safer Auto Mode",
-            "title": "Claude Code&#x27;s New Auto Mode Balances Safety and Autonomy",
-            "content": "Anthropic has introduced an &quot;auto mode&quot; for its Claude Code tool, designed to make permission-level decisions on behalf of users. This feature aims to provide a safer alternative to either constant user oversight or excessive autonomy. The tool is particularly beneficial for &quot;vibe coders&quot; seeking a balance between control and freedom in coding environments. Claude Code&#x27;s auto mode could influence how developers interact with AI, offering a model for safer AI deployment in programming tasks. Tech professionals should evaluate this tool&#x27;s capabilities for potential integration into their workflows.",
+            "headline": "Meta Lays Off Hundreds Amid AI Investment Shift",
+            "title": "Meta Reduces Workforce as It Increases Investment in AI Technologies",
+            "content": "Meta is laying off hundreds of employees across various departments, including recruiting, social media, and Reality Labs, as it reallocates resources to AI development. This move, reported by The New York Times and other sources, reflects Meta&#x27;s strategic pivot towards advancing its AI capabilities. The layoffs underscore the company&#x27;s commitment to remaining competitive in the AI sector, despite the immediate impact on affected employees. Industry experts suggest this could be a harbinger of further restructuring as Meta seeks to streamline operations and focus on its AI initiatives. Affected employees are encouraged to explore opportunities in the growing AI market.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/900201/anthropic-claude-code-auto-mode",
+            "sourceUrl": "https://www.theverge.com/tech/900946/meta-layoffs-hundreds-employees",
             "relatedResources": []
         },
         {
             "date": "Mar 25 2026",
-            "headline": "Lucid Bots Secures $20M for Cleaning Drone Expansion",
-            "title": "Lucid Bots Raises $20M Amid Rising Demand for Cleaning Drones",
-            "content": "Lucid Bots has successfully raised $20 million in funding to expand its fleet of window-washing drones and power-washing robots. The company has experienced a surge in demand over the past year, driven by the efficiency and cost-effectiveness of its autonomous cleaning solutions. The investment will support scaling operations and enhancing technology to meet growing market needs. This development underscores the increasing reliance on robotics for maintenance tasks in urban environments. Industry stakeholders should watch Lucid Bots&#x27; growth trajectory as it continues to innovate in the robotics sector.",
+            "headline": "Google’s TurboQuant Sparks &#x27;Pied Piper&#x27; Comparisons",
+            "title": "Google Introduces TurboQuant AI Memory Compression Algorithm",
+            "content": "Google&#x27;s introduction of the TurboQuant algorithm has ignited online comparisons to HBO&#x27;s &quot;Silicon Valley&quot; due to its ambitious memory compression capabilities. Promising to reduce AI working memory by up to six times, TurboQuant is currently in the experimental phase. This innovation addresses the growing demand for efficient AI processing, potentially revolutionizing how AI models handle data. While still in the lab, the algorithm&#x27;s potential impact on AI development and cost reduction is significant. Professionals in the field should watch for further developments as Google refines this technology.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/25/lucid-bots-raises-20m-to-keep-up-with-demand-for-its-window-washing-drones/",
+            "sourceUrl": "https://techcrunch.com/2026/03/25/google-turboquant-ai-memory-compression-silicon-valley-pied-piper/",
             "relatedResources": []
         },
         {
             "date": "Mar 25 2026",
-            "headline": "Arm Enters Chip Market—CEO Defends Strategy",
-            "title": "Arm’s CEO Justifies New CPU Production Amid Licensing Concerns",
-            "content": "Arm has confirmed its entry into the chip production market, a move that CEO Rene Haas insists won&#x27;t alienate existing licensees. This strategic shift follows rumors about Arm&#x27;s plans to produce its own CPUs, potentially disrupting relationships with chipmakers that rely on Arm&#x27;s designs. The CEO argues that this development is necessary to meet market demands and drive innovation. The decision could have significant implications for the semiconductor industry, as it navigates competitive pressures and technological advancements. Industry professionals should assess how this move might affect their partnerships and product strategies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/arms-ceo-insists-the-market-needs-his-new-cpu-it-could-piss-everyone-off/",
+            "headline": "Disney Faces Metaverse, AI Challenges Under New CEO",
+            "title": "Disney&#x27;s Metaverse and AI Ventures Struggle Amid Leadership Change",
+            "content": "Disney&#x27;s new CEO, Josh D&#x27;Amaro, is confronting immediate challenges as the company&#x27;s metaverse and AI initiatives falter. The closure of OpenAI&#x27;s Sora image-generation program, shortly after Disney&#x27;s $1 billion investment, highlights the difficulties in executing these ambitious projects. These setbacks raise questions about Disney&#x27;s strategic direction and its ability to innovate in these emerging fields. Industry analysts suggest that Disney must reassess its approach to remain competitive in the rapidly evolving tech landscape. Stakeholders should stay informed on Disney&#x27;s next moves as they could influence broader industry trends.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/streaming/900837/disney-open-ai-sora-epic-fortnite-metaverse",
             "relatedResources": []
         },
         {
             "date": "Mar 25 2026",
-            "headline": "AI Agents Transform Advisory Roles at Bank of America",
-            "title": "Bank of America Integrates AI Agents into Financial Advisory Services",
-            "content": "Bank of America is deploying AI-powered agents to assist a subset of its financial advisers, marking a shift towards more automated client interactions. This internal advisory platform aims to enhance the delivery of financial advice by leveraging AI&#x27;s analytical capabilities. Approximately 1,000 financial advisers are currently using the system, which promises to streamline advisory processes and improve client engagement. This initiative reflects a broader trend in the banking sector towards digitization and AI integration. Financial institutions should consider the potential benefits and challenges of adopting similar technologies.",
-            "source": "AI News",
-            "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-agents-enter-banking-roles-at-bank-of-america/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "Kleiner Perkins Bets $3.5B on AI—Early and Late-Stage Focus",
-            "title": "Kleiner Perkins Raises $3.5B to Invest in AI Startups and Growth",
-            "content": "Venture capital firm Kleiner Perkins has announced a substantial $3.5 billion fundraise, earmarked for investments in artificial intelligence. The funding includes $1 billion dedicated to early-stage AI startups and $2.5 billion for late-stage growth businesses. This strategic move underscores the firm&#x27;s commitment to fostering innovation in AI technologies, which are rapidly transforming industries. The investment is expected to significantly boost AI development, offering critical support to emerging companies in the sector. Industry professionals should monitor Kleiner Perkins&#x27; investment choices as they may signal upcoming trends and key players in AI.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/24/with-3-5b-in-fresh-capital-kleiner-perkins-is-going-all-in-on-ai/",
+            "headline": "Google’s TurboQuant Boosts AI Memory 8x, Cuts Costs 50%",
+            "title": "TurboQuant Algorithm Enhances AI Memory Efficiency and Reduces Costs",
+            "content": "Google&#x27;s TurboQuant algorithm promises to significantly enhance AI memory efficiency by speeding up memory processes eightfold and cutting operational costs by over 50%. This innovation addresses the &quot;Key-Value cache bottleneck,&quot; a major challenge for Large Language Models (LLMs) handling extensive data sets. By optimizing how AI models store high-dimensional vectors, TurboQuant could transform AI operations, making them more cost-effective and efficient. The algorithm is poised to benefit organizations managing large-scale AI deployments, offering a potential competitive edge. Professionals should consider the implications for AI infrastructure and budget planning.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/googles-new-turboquant-algorithm-speeds-up-ai-memory-8x-cutting-costs-by-50",
             "relatedResources": []
         }
     ],
@@ -233,6 +215,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-33017",
+            "dateAdded": "Mar 25, 2026",
+            "vendor": "Langflow Langflow",
+            "description": "Langflow contains a code injection vulnerability that could allow building public flows without requiring authentication.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33017",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2025-32432",
             "dateAdded": "Mar 20, 2026",
             "vendor": "Craft CMS Craft CMS",
@@ -285,17 +278,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31277",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20131",
-            "dateAdded": "Mar 19, 2026",
-            "vendor": "Cisco Secure Firewall Management Center (FMC)",
-            "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain a deserialization of untrusted data vulnerability in the web-based management",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20131",
             "isZeroDay": false
         }
     ],
