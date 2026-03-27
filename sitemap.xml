@@ -1476,4 +1476,75 @@
     <lastmod>2026-03-23</lastmod>
   </url>
 
+  <!-- March 2026 - Missing pages added via SEO audit -->
+  <url>
+    <loc>https://thehgtech.com/articles/checkbox-security-illusion.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/articles/india-ai-summit-2026-wrapper-epidemic.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/guides/cloud-security-hardening.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/guides/incident-response-plan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/guides/penetration-testing-methodology.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/guides/soc-analyst-fundamentals.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/comparisons/proofpoint-vs-mimecast-vs-microsoft-defender-o365.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/tools/grc-assessment/iso27001-grc-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thehgtech.com/tools/zero-day-checker.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-03-27</lastmod>
+  </url>
+
 </urlset>

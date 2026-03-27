@@ -1846,6 +1846,7 @@
                         line-height: 1.4;
                         display: -webkit-box;
                         -webkit-line-clamp: 1;
+                        line-clamp: 1;
                         -webkit-box-orient: vertical;
                         overflow: hidden;
                     }
@@ -1857,6 +1858,7 @@
                         margin: 0 0 0.5rem;
                         display: -webkit-box;
                         -webkit-line-clamp: 2;
+                        line-clamp: 2;
                         -webkit-box-orient: vertical;
                         overflow: hidden;
                     }
@@ -3334,7 +3336,8 @@
                         <div style="flex: 1; min-width: 0;">
                             ${isFirst ? '<span style="display: inline-block; background: linear-gradient(135deg, #ec4899, #8B5CF6); color: #000; font-size: 0.6rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.5rem;">Latest</span>' : ''}
                             <h3 style="color: var(--text-primary); font-size: 0.95rem; font-weight: 600; margin: 0 0 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${escapeHTML(article.title)}</h3>
-                            <p style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(article.excerpt || '')}</p>
+                            <p style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2;
+ line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(article.excerpt || '')}</p>
                         </div>
                     </a>`;
                 });
@@ -3375,7 +3378,8 @@
                         <div style="flex: 1; min-width: 0;">
                             ${isFirst ? '<span style="display: inline-block; background: linear-gradient(135deg, var(--accent-cyan), #8B5CF6); color: #000; font-size: 0.6rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.5rem;">New</span>' : ''}
                             <h3 style="color: var(--text-primary); font-size: 0.95rem; font-weight: 600; margin: 0 0 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${escapeHTML(guide.title)}</h3>
-                            <p style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(guide.excerpt || '')}</p>
+                            <p style="color: var(--text-muted); font-size: 0.8rem; line-height: 1.4; margin: 0; display: -webkit-box; -webkit-line-clamp: 2;
+ line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(guide.excerpt || '')}</p>
                         </div>
                     </a>`;
                 });
