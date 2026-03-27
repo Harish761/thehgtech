@@ -447,16 +447,29 @@
             class="m-bottom-nav__item"><i class="fas fa-newspaper"></i><span>Articles</span></a><a href="/guides/"
             class="m-bottom-nav__item"><i class="fas fa-book"></i><span>Guides</span></a></nav>
 
+    <!-- Desktop Header -->
     <header class="header" role="banner">
         <div class="header-content">
-            <div class="logo"><a href="/index.html"
-                    style="text-decoration:none;display:flex;align-items:center;gap:0.75rem;"><img src="/logo-dark.png"
-                        alt="TheHGTech Logo" class="logo-img logo-dark"><img src="/logo-light.png" alt="TheHGTech Logo"
-                        class="logo-img logo-light"><span class="logo-text">TheHGTech</span></a></div>
-            <nav class="nav nav-modern" role="navigation"><a href="/index.html#news">News</a>
-                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Intelligence<span
-                            class="nav-live-badge">LIVE</span><i class="fas fa-chevron-down dropdown-arrow"></i></span>
-                    <div class="nav-dropdown-panel"><a href="/threat-intel.html" class="dropdown-item">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
                             <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Threat Intelligence <span
@@ -464,39 +477,55 @@
                                 <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
                                 </div>
                             </div>
-                        </a><a href="/cve-tracker.html" class="dropdown-item">
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
                             <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">CVE Tracker</div>
                                 <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
                                 </div>
                             </div>
-                        </a><a href="/ransomware-tracker.html" class="dropdown-item">
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
                             <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Ransomware Tracker</div>
                                 <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
                             </div>
-                        </a></div>
+                        </a>
+                    </div>
                 </div>
-                <div class="nav-dropdown"><span class="nav-dropdown-trigger">Resources<i
-                            class="fas fa-chevron-down dropdown-arrow"></i></span>
-                    <div class="nav-dropdown-panel"><a href="/guides/" class="dropdown-item">
+
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                             <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Security Guides <span
-                                        class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span>
+                                </div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
-                        </a><a href="/workflows/" class="dropdown-item" style="background:rgba(255,107,53,0.08);">
-                            <div class="dropdown-item-icon" style="background:rgba(255,107,53,0.15);color:#FF6B35;"><i
-                                    class="fas fa-cogs"></i></div>
+                        </a>
+                        
+                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
+                                <i class="fas fa-cogs"></i>
+                            </div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color:#FF6B35;">n8n Workflows<span
-                                        class="dropdown-badge" style="background:#FF6B35;">NEW</span></div>
+                                <div class="dropdown-item-title" style="color: #FF6B35;">
+                                    n8n Workflows
+                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
+                                </div>
                                 <div class="dropdown-item-desc">Security automation templates</div>
                             </div>
-                        </a><a href="/comparisons/" class="dropdown-item">
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
                             <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Tool Comparisons</div>
@@ -515,15 +544,18 @@
                                 <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
                             </div>
                         </a>
-                        <div class="dropdown-divider"></div><a href="/articles.html" class="dropdown-item">
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
                             <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
                                 <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
                             </div>
                         </a>
                     </div>
-                </div>                <!-- Tools Dropdown -->
+                </div>
+
+                <!-- Tools Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger" style="cursor:pointer;">
                         <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
@@ -546,12 +578,16 @@
                     </div>
                 </div>
 
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme"
-                    style="margin-left:20px;display:inline-flex;position:relative;width:56px;height:28px;background:linear-gradient(135deg,#1a1a2e,#16213e);border:1.5px solid rgba(255,255,255,0.15);border-radius:50px;cursor:pointer;transform:scale(0.9);"><span
-                        class="m-theme-toggle__thumb"
-                        style="position:absolute;top:2px;left:2px;width:22px;height:22px;background:linear-gradient(135deg,#c0c0c0,#e8e8e8);border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.3);transition:all 0.3s ease;"></span></button>
-            </nav><button class="mobile-menu-btn"
-                aria-label="Toggle menu"><span></span><span></span><span></span></button>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+                </button>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 

@@ -657,9 +657,9 @@
         </div>
     </header>
 
-    <!-- Bottom Navigation (5 items: Home, CVE, Intel, Articles, Guides) -->
+    <!-- Bottom Navigation -->
     <nav class="m-bottom-nav m-only">
-        <a href="/" class="m-bottom-nav__item">
+        <a href="/" class="m-bottom-nav__item active">
             <i class="fas fa-home"></i>
             <span>Home</span>
         </a>
@@ -667,17 +667,13 @@
             <i class="fas fa-bolt"></i>
             <span>News</span>
         </a>
+        <a href="/threat-intel.html" class="m-bottom-nav__item">
+            <i class="fas fa-satellite-dish"></i>
+            <span>Intel</span>
+        </a>
         <a href="/cve-tracker.html" class="m-bottom-nav__item">
             <i class="fas fa-bug"></i>
             <span>CVEs</span>
-        </a>
-        <a href="/ransomware-tracker.html" class="m-bottom-nav__item">
-            <i class="fas fa-skull-crossbones"></i>
-            <span>Ransomware</span>
-        </a>
-        <a href="/threat-intel.html" class="m-bottom-nav__item">
-            <i class="fas fa-shield-alt"></i>
-            <span>Intel</span>
         </a>
         <a href="/articles.html" class="m-bottom-nav__item">
             <i class="fas fa-newspaper"></i>
@@ -686,10 +682,6 @@
         <a href="/guides/" class="m-bottom-nav__item">
             <i class="fas fa-book"></i>
             <span>Guides</span>
-        </a>
-        <a href="/tools/grc-assessment/" class="m-bottom-nav__item">
-            <i class="fas fa-tools"></i>
-            <span>Tools</span>
         </a>
     </nav>
 
@@ -809,19 +801,19 @@
     </div>
 
     <!-- Header -->
+    <!-- Desktop Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <img src="logo-dark.png"
-                    alt="TheHGTech - Free Real-Time Cybersecurity and AI Threat Intelligence Dashboard"
-                    class="logo-img logo-dark" width="40" height="40" style="object-fit: contain;">
-                <img src="logo-light.png"
-                    alt="TheHGTech - Free Real-Time Cybersecurity and AI Threat Intelligence Dashboard"
-                    class="logo-img logo-light" width="40" height="40" style="object-fit: contain;">
-                <span class="logo-text">TheHGTech</span>
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
             </div>
+
             <nav class="nav nav-modern" role="navigation">
-                <a href="#news">News</a>
+                <a href="/index.html#news">News</a>
 
                 <!-- Intelligence Dropdown -->
                 <div class="nav-dropdown">
@@ -831,33 +823,25 @@
                         <i class="fas fa-chevron-down dropdown-arrow"></i>
                     </span>
                     <div class="nav-dropdown-panel">
-                        <a href="threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel">
-                                <i class="fas fa-satellite-dish"></i>
-                            </div>
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">
-                                    Threat Intelligence
-                                    <span class="dropdown-badge live">LIVE</span>
-                                </div>
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
                                 <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
                                 </div>
                             </div>
                         </a>
-                        <a href="cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve">
-                                <i class="fas fa-bug"></i>
-                            </div>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">CVE Tracker</div>
                                 <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
                                 </div>
                             </div>
                         </a>
-                        <a href="ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware">
-                                <i class="fas fa-skull-crossbones"></i>
-                            </div>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Ransomware Tracker</div>
                                 <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
@@ -873,21 +857,18 @@
                         <i class="fas fa-chevron-down dropdown-arrow"></i>
                     </span>
                     <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item">
-                            <div class="dropdown-item-icon guides">
-                                <i class="fas fa-book"></i>
-                            </div>
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">
-                                    Security Guides
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
                                     <span class="dropdown-badge popular">40+</span>
                                 </div>
                                 <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
                             </div>
                         </a>
+                        
                         <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon"
-                                style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
+                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
                                 <i class="fas fa-cogs"></i>
                             </div>
                             <div class="dropdown-item-content">
@@ -899,29 +880,36 @@
                             </div>
                         </a>
                         <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Tool Comparisons</div>
                                 <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
                             </div>
                         </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="articles.html" class="dropdown-item">
-                            <div class="dropdown-item-icon articles">
-                                <i class="fas fa-newspaper"></i>
+                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
+                                <i class="fas fa-shield-halved"></i>
                             </div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-title" style="color: #10B981;">
+                                    GRC Assessment
+                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
                                 <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-
-                                <!-- Tools Dropdown -->
+                <!-- Tools Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger" style="cursor:pointer;">
                         <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
@@ -944,185 +932,16 @@
                     </div>
                 </div>
 
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 220px;">
-                        <a href="#" onclick="openModal('about'); return false;" class="dropdown-item">
-                            <div class="dropdown-item-icon about">
-                                <i class="fas fa-info-circle"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">About Us</div>
-                                <div class="dropdown-item-desc">Learn about TheHGTech</div>
-                            </div>
-                        </a>
-                        <a href="#" onclick="openModal('contact'); return false;" class="dropdown-item">
-                            <div class="dropdown-item-icon contact">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">Get in touch with us</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme">
-                    <span class="m-theme-toggle__thumb"></span>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
                 </button>
             </nav>
-            <button class="desktop-search-btn" aria-label="Search (CMD+K)">
-                <span class="search-btn-glow"></span>
-                <span class="search-btn-content">
-                    <i class="fas fa-search search-btn-icon"></i>
-                    <span class="search-btn-text">Search</span>
-                    <span class="search-btn-divider"></span>
-                    <kbd class="search-btn-kbd">⌘K</kbd>
-                </span>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <style>
-                .desktop-search-btn {
-                    position: relative;
-                    background: rgba(255, 255, 255, 0.03);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
-                    border-radius: 12px;
-                    padding: 0.5rem 0.9rem;
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    font-size: 0.85rem;
-                    margin-left: 1rem;
-                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                    overflow: hidden;
-                    backdrop-filter: blur(10px);
-                    -webkit-backdrop-filter: blur(10px);
-                }
-
-                .desktop-search-btn:hover {
-                    background: rgba(0, 217, 255, 0.08);
-                    border-color: rgba(0, 217, 255, 0.4);
-                    transform: translateY(-1px);
-                    box-shadow: 0 4px 20px rgba(0, 217, 255, 0.15),
-                        0 0 40px rgba(0, 217, 255, 0.05);
-                }
-
-                .desktop-search-btn:active {
-                    transform: translateY(0);
-                }
-
-                .search-btn-glow {
-                    position: absolute;
-                    top: 0;
-                    left: -100%;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(90deg,
-                            transparent,
-                            rgba(0, 217, 255, 0.1),
-                            transparent);
-                    transition: left 0.5s ease;
-                }
-
-                .desktop-search-btn:hover .search-btn-glow {
-                    left: 100%;
-                }
-
-                .search-btn-content {
-                    display: flex;
-                    align-items: center;
-                    gap: 0.5rem;
-                    position: relative;
-                    z-index: 1;
-                }
-
-                .search-btn-icon {
-                    color: #00D9FF;
-                    font-size: 0.85rem;
-                    transition: transform 0.3s ease;
-                }
-
-                .desktop-search-btn:hover .search-btn-icon {
-                    transform: scale(1.1);
-                }
-
-                .search-btn-text {
-                    color: rgba(255, 255, 255, 0.7);
-                    font-weight: 500;
-                    font-size: 0.85rem;
-                    letter-spacing: 0.02em;
-                }
-
-                .desktop-search-btn:hover .search-btn-text {
-                    color: rgba(255, 255, 255, 0.9);
-                }
-
-                .search-btn-divider {
-                    width: 1px;
-                    height: 14px;
-                    background: rgba(255, 255, 255, 0.15);
-                }
-
-                .search-btn-kbd {
-                    background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05));
-                    border: 1px solid rgba(0, 217, 255, 0.2);
-                    color: #00D9FF;
-                    padding: 0.15rem 0.4rem;
-                    border-radius: 5px;
-                    font-size: 0.65rem;
-                    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
-                    font-weight: 600;
-                    letter-spacing: 0.05em;
-                    transition: all 0.3s ease;
-                }
-
-                .desktop-search-btn:hover .search-btn-kbd {
-                    background: linear-gradient(135deg, rgba(0, 217, 255, 0.25), rgba(0, 217, 255, 0.1));
-                    box-shadow: 0 0 10px rgba(0, 217, 255, 0.2);
-                }
-
-                /* Light mode */
-                .light-mode .desktop-search-btn {
-                    background: rgba(0, 0, 0, 0.03);
-                    border-color: rgba(0, 0, 0, 0.1);
-                }
-
-                .light-mode .desktop-search-btn:hover {
-                    background: rgba(0, 150, 200, 0.08);
-                    border-color: rgba(0, 150, 200, 0.3);
-                }
-
-                .light-mode .search-btn-text {
-                    color: rgba(0, 0, 0, 0.6);
-                }
-
-                .light-mode .desktop-search-btn:hover .search-btn-text {
-                    color: rgba(0, 0, 0, 0.8);
-                }
-
-                .light-mode .search-btn-divider {
-                    background: rgba(0, 0, 0, 0.1);
-                }
-
-                .light-mode .search-btn-kbd {
-                    background: linear-gradient(135deg, rgba(0, 150, 200, 0.12), rgba(0, 150, 200, 0.05));
-                    border-color: rgba(0, 150, 200, 0.2);
-                    color: #0099cc;
-                }
-
-                /* Hide on mobile */
-                @media (max-width: 768px) {
-                    .desktop-search-btn {
-                        display: none !important;
-                    }
-                }
-            </style>
-            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open navigation menu"
-                aria-expanded="false">☰</button>
         </div>
     </header>
 
