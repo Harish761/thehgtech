@@ -5,6 +5,69 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Mar 27 2026",
+            "headline": "Criminals Rent Virtual Phones to Bypass Bank Fraud Checks",
+            "title": "Cybercriminals Use Virtual Devices to Evade Banking Security Measures",
+            "content": "Researchers have uncovered a scheme where cybercriminals are renting virtual phones to circumvent bank security protocols. These virtual devices mimic real smartphones closely enough to pass fraud detection systems used by financial institutions. This technique allows attackers to bypass two-factor authentication (2FA) and other security measures, posing a significant threat to online banking security. The use of virtual phones in fraud is part of a broader trend of increasingly sophisticated digital deception tactics. Banks and security professionals are advised to enhance their fraud detection systems to identify and mitigate such virtual device activities.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/criminals-are-renting-virtual-phones-to-bypass-bank-security",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 27 2026",
+            "headline": "OpenAI Offers Rewards for Reporting AI Safety Flaws",
+            "title": "OpenAI Initiates Bug Bounty Program Targeting AI Abuse and Safety Risks",
+            "content": "OpenAI has launched a bug bounty program to incentivize the discovery and reporting of vulnerabilities that could lead to AI model abuse or safety risks. The program focuses on identifying design or implementation flaws that might cause material harm, offering financial rewards to security researchers who contribute. This initiative underscores OpenAI&#x27;s commitment to securing its AI models against misuse and ensuring their safe deployment. As AI technologies continue to evolve, addressing potential security and ethical concerns remains a priority for the industry. Participants are encouraged to report any findings through the designated OpenAI platform.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/openai-launches-bug-bounty-program-for-abuse-and-safety-risks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 27 2026",
+            "headline": "Google Targets 2029 for Quantum-Safe Cryptography Readiness",
+            "title": "Google Sets Ambitious 2029 Deadline for Quantum-Resilient Cryptography",
+            "content": "Google has announced its plan to transition to quantum-safe cryptography by 2029, preparing for the post-quantum computing era. This initiative aims to protect data against potential threats posed by quantum computers, which could break current encryption standards. The move is part of a broader industry effort to develop and implement post-quantum cryptographic algorithms. Organizations are urged to begin assessing their cryptographic needs and plan for future migrations to quantum-resistant solutions. Google&#x27;s timeline reflects the urgency and complexity of adapting to the upcoming quantum computing challenges.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/google-2029-deadline-quantum-safe-cryptography",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 27 2026",
+            "headline": "EU Probes Security Breach After Amazon Cloud Hack",
+            "title": "European Commission Investigates Breach Following Amazon Cloud Compromise",
+            "content": "The European Commission is investigating a security breach after unauthorized access was detected in its Amazon cloud infrastructure. The incident raises concerns over the security of cloud services and the potential exposure of sensitive EU data. The breach&#x27;s impact is still being assessed, but it highlights the ongoing vulnerabilities in cloud environments. This investigation is part of broader EU efforts to enhance cybersecurity resilience and protect critical digital infrastructure. Organizations using cloud services are advised to review their security measures and ensure compliance with best practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/european-commission-investigating-breach-after-amazon-cloud-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 27 2026",
+            "headline": "Langflow RCE Exploited Within Hours—CISA Urges Immediate Fix",
+            "title": "Attackers Exploit Critical Langflow RCE Prompting CISA Alert for Urgent Patch",
+            "content": "A critical remote code execution (RCE) vulnerability in Langflow was exploited by attackers just hours after its disclosure, leading the U.S. Cybersecurity and Infrastructure Security Agency (CISA) to issue an urgent remediation alert. This flaw allows attackers to execute arbitrary code on unprotected Langflow instances without needing credentials. The rapid exploitation underscores the need for prompt patching and vigilant monitoring of exposed systems. Administrators are urged to apply the available patches immediately to mitigate potential risks. This incident highlights the critical importance of timely vulnerability management.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4151203/attackers-exploit-critical-langflow-rce-within-hours-as-cisa-sounds-alarm.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 27 2026",
+            "headline": "AitM Phishing Campaign Targets TikTok Business Accounts",
+            "title": "Adversary-in-the-Middle Phishing Threatens TikTok for Business Accounts",
+            "content": "Threat actors are leveraging adversary-in-the-middle (AitM) phishing techniques to compromise TikTok for Business accounts, according to a new report from Push Security. This campaign uses Cloudflare Turnstile evasion to bypass security measures and gain unauthorized access. Business accounts on social media platforms are particularly attractive targets due to their potential for misuse and data theft. Organizations managing TikTok accounts should enhance their security posture by implementing multi-factor authentication (MFA) and monitoring for suspicious activities. This incident highlights the evolving nature of phishing threats targeting high-value digital assets.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/aitm-phishing-targets-tiktok-business.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 27 2026",
+            "headline": "TP-Link Fixes Severe Router Flaws—Update Recommended",
+            "title": "TP-Link Addresses High-Severity Vulnerabilities in Router Firmware",
+            "content": "TP-Link has released patches for several high-severity vulnerabilities affecting its router firmware, which could allow attackers to bypass authentication, execute arbitrary commands, and decrypt configuration files. These vulnerabilities, if exploited, pose significant risks to network security and user privacy. The company urges users to update their router firmware immediately to protect against potential exploitation. These patches are part of TP-Link&#x27;s ongoing efforts to improve the security of its networking products. Network administrators should prioritize applying these updates to maintain robust security postures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/tp-link-patches-high-severity-router-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 27 2026",
             "headline": "Social Engineering Threats Exploit Human Psychology—Stay Vigilant",
             "title": "Understanding and Mitigating Social Engineering Attacks in Cybersecurity",
             "content": "Social engineering remains a potent tool for cybercriminals, exploiting human psychology to bypass technical defenses. These tactics manipulate individuals into divulging confidential information or granting unauthorized access, often through phishing emails or fraudulent phone calls. Despite robust security measures in data centers and cloud environments, human error continues to be a significant vulnerability. Organizations must prioritize training employees to recognize and resist manipulation attempts. Implementing multi-factor authentication and regular security audits can further mitigate risks. As social engineering techniques evolve, staying informed and vigilant is crucial for maintaining security.",
@@ -29,45 +92,72 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4150887/google-the-quantum-apocalypse-is-coming-sooner-than-we-thought.html",
             "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "ODNI Reviews AI and Cybersecurity—Year One Under Gabbard",
-            "title": "ODNI&#x27;s Year-One Review Focuses on AI and Cybersecurity Initiatives",
-            "content": "Under the leadership of Director of National Intelligence Tulsi Gabbard, the Office of the Director of National Intelligence (ODNI) has released its first-year review focusing on AI, threat hunting, and application cybersecurity. The review outlines significant strides in integrating AI to enhance threat detection and response capabilities. It also highlights efforts to improve application security through advanced threat hunting techniques. These initiatives aim to bolster national security by leveraging cutting-edge technologies. Security professionals should monitor these developments to align with emerging government strategies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/odni-tackles-ai-threat-hunting-app-cybersecurity-in-year-one-tech-review/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Ajax Hack Compromises Fan Data—Ticket Systems Breached",
-            "title": "Ajax Amsterdam Cyberattack Exposes Fan Data and Ticketing Vulnerabilities",
-            "content": "Ajax Amsterdam, a prominent Dutch football club, has disclosed a cyberattack that exploited vulnerabilities in its IT systems, compromising data of several hundred fans. The breach enabled unauthorized access to ticketing systems, potentially allowing ticket hijacking. This incident underscores the importance of robust cybersecurity measures for organizations handling sensitive customer data. Ajax is working to secure its systems and prevent future breaches. Affected individuals are advised to monitor their accounts for suspicious activity and change passwords as a precaution.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ajax-football-club-hack-exposed-fan-data-enabled-ticket-hijack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "FCC Router Ban Sparks Debate—Security or Setback?",
-            "title": "FCC&#x27;s Ban on Foreign Routers Raises Security and Supply Chain Concerns",
-            "content": "The Federal Communications Commission (FCC) has banned foreign-made consumer routers, citing national security risks. However, this move has sparked debate over potential supply chain disruptions and the effectiveness of such bans. Critics argue that the ban could lead to increased costs and limited options for consumers, while not necessarily addressing underlying security vulnerabilities. The FCC&#x27;s decision highlights the ongoing challenge of balancing security with market stability. Industry stakeholders are encouraged to engage in discussions to find comprehensive solutions to router security issues.",
-            "source": "Dark Reading",
-            "sourceUrl": "https://www.darkreading.com/endpoint-security/fcc-router-ban-wrong-fix",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Connected Cars Face Rising Cyber Threats—Stay Secure",
-            "title": "Growing Cybersecurity Threats in Connected and Autonomous Vehicles",
-            "content": "As the automotive industry advances towards connected and autonomous vehicles, cybersecurity threats continue to escalate. More than a decade after the infamous 2015 Jeep hack, vehicle cybersecurity remains a critical concern. Modern cars, equipped with complex software and connectivity features, present new attack surfaces for cybercriminals. Manufacturers are urged to prioritize robust security measures, including regular software updates and threat assessments. As vehicles become more integrated into the digital ecosystem, protecting them from cyber threats is essential to ensure safety and consumer trust.",
-            "source": "Dark Reading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/automotive-cybersecurity-threats-grow-connected-autonomous-vehicles",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Mar 27 2026",
+            "headline": "AI Doc Criticized for Soft Stance on Tech CEOs",
+            "title": "Documentary on AI Fails to Challenge Tech Executives&#x27; Accountability",
+            "content": "The new documentary &quot;The AI Doc: Or How I Became an Apocaloptimist&quot; is under scrutiny for its lenient portrayal of tech executives like Sam Altman. The film attempts to strike a balanced view on AI&#x27;s societal impact but is critiqued for not holding leaders accountable for ethical and technological challenges. As AI continues to evolve rapidly, the role of executives in shaping its trajectory is a critical discussion point. The documentary&#x27;s approach has sparked debate among tech professionals about the need for more rigorous scrutiny of leadership in AI advancements. Viewers are encouraged to critically assess the narratives presented in such media to better understand the complexities of AI governance.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/a-new-ai-documentary-puts-ceos-in-the-hot-seat-but-goes-too-easy-on-them/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 27 2026",
+            "headline": "ChatGPT Ads: What Users See After 500 Questions",
+            "title": "ChatGPT&#x27;s Free Tier Introduces Targeted Ads Across the U.S.",
+            "content": "OpenAI&#x27;s ChatGPT has begun displaying ads on its free tier, prompting an analysis of how these ads correlate with user prompts. After asking the AI 500 questions, it was observed that the ads are contextually tied to the queries, suggesting a sophisticated ad-targeting mechanism. This move marks a significant shift in monetizing AI models, potentially affecting user experience and privacy. As AI systems become more integrated into daily use, understanding their monetization strategies is crucial for users and developers alike. Professionals should consider the implications of ad-supported AI on user data privacy and model transparency.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/i-asked-chatgpt-500-questions-here-are-the-ads-i-saw-most-often/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "Siri to Integrate Third-Party AI Chatbots in iOS 27",
+            "title": "Apple to Allow Third-Party AI Chatbots Integration with Siri",
+            "content": "Apple&#x27;s upcoming iOS 27 update will enable users to link third-party AI chatbots with Siri, according to a report by Bloomberg&#x27;s Mark Gurman. This update will allow chatbots like Google&#x27;s Gemini and Anthropic&#x27;s Claude to be downloaded from the App Store and integrated with Apple&#x27;s voice assistant. This development could significantly enhance Siri&#x27;s capabilities by leveraging diverse AI models, providing users with more personalized and varied interactions. For developers, this opens new opportunities to innovate in the AI chatbot space and potentially reach a broader audience through Apple&#x27;s ecosystem. Users should prepare for a more customizable Siri experience.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/902048/apple-siri-ai-chatbot-update-ios-27",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "Apple&#x27;s AI Playlist Struggles with Music Preferences",
+            "title": "Apple&#x27;s AI Playlist Feature Fails to Meet User Expectations",
+            "content": "Apple&#x27;s AI Playlist Playground, a feature within Apple Music, is receiving criticism for its inability to accurately curate music based on user preferences. Despite requests for specific genres like atmospheric instrumental black metal, the AI-generated playlists often include unrelated tracks, highlighting limitations in AI&#x27;s understanding of nuanced musical tastes. This raises questions about the readiness of AI to handle complex, subjective tasks such as music curation. Music enthusiasts and developers should be aware of these shortcomings as they explore AI-driven personalization tools. Feedback from users may drive improvements in future iterations of the feature.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/902005/apple-ai-playlist-playground-bad-at-music",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "Google&#x27;s AI Search Expands to 200 Countries, Dozens of Languages",
+            "title": "Google’s Search Live AI Assistant Extends Global Reach and Language Support",
+            "content": "Google has announced the expansion of its Search Live feature, an AI-powered search assistant that now supports voice and camera-based queries in over 200 countries and dozens of languages. This expansion aims to enhance accessibility and user engagement by providing real-time information retrieval across diverse linguistic and cultural contexts. The rollout signifies Google&#x27;s commitment to broadening its AI capabilities and improving user experience worldwide. Professionals in the AI and tech sectors should note this trend towards more inclusive and versatile AI applications, which could influence future developments in global digital ecosystems.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/901816/google-search-live-ai-assistant-expansion",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "OpenAI Drops ChatGPT&#x27;s Controversial Erotic Mode",
+            "title": "OpenAI Discontinues ChatGPT&#x27;s Erotic Mode Amid Strategic Refocus",
+            "content": "OpenAI has decided to discontinue the erotic mode of ChatGPT, marking the latest in a series of abandoned side projects by the AI startup. This decision reflects a strategic shift towards refining core functionalities and addressing ethical concerns related to AI-generated content. The removal of this mode may impact users who engaged with the feature, but it aligns with OpenAI&#x27;s broader goal of maintaining responsible AI development. Stakeholders in the AI community should monitor OpenAI&#x27;s evolving project priorities, which may influence industry standards and ethical guidelines.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/26/openai-abandons-yet-another-side-quest-chatgpts-erotic-mode/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "Senate Demands Data Centers&#x27; Power Usage Reports",
+            "title": "U.S. Senate Requests Detailed Power Usage Data from Data Centers",
+            "content": "Senators Josh Hawley and Elizabeth Warren are calling on the Energy Information Administration to collect comprehensive data on power usage by data centers. This initiative aims to understand the impact of data centers on the national power grid and address concerns about energy consumption and sustainability. As data centers continue to proliferate with the rise of cloud computing and AI, their energy demands pose significant challenges to infrastructure and environmental policies. Operators of data centers should prepare for increased scrutiny and potential regulatory measures aimed at optimizing energy efficiency and reducing carbon footprints.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/26/data-centers-get-ready-the-senate-wants-to-see-your-power-bills/",
+            "relatedResources": []
+        },
         {
             "date": "Mar 27 2026",
             "headline": "Anthropic Wins Injunction Against Trump Administration Restrictions",
@@ -84,51 +174,6 @@ const websiteContent = {
             "content": "Anthropic secured a preliminary injunction from a federal judge, temporarily blocking the Pentagon&#x27;s ban that had effectively blacklisted the company. This legal development comes after weeks of tension between Anthropic and the Department of Defense. The injunction allows Anthropic to operate without the blacklisting&#x27;s constraints while the case proceeds through the judicial system. The decision underscores the complexities of government-imposed restrictions on AI companies and their potential impact on innovation and business operations. Stakeholders in the AI industry should stay informed on this evolving legal battle.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/902149/anthropic-dod-pentagon-lawsuit-supply-chain-risk-injunction",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Google Launches Tools for Seamless Chatbot Switching to Gemini",
-            "title": "Google Introduces &quot;Switching Tools&quot; for Easy Transition to Gemini Chatbot",
-            "content": "Google has unveiled new &quot;switching tools&quot; designed to facilitate the transfer of chats and personal information from other chatbots to its Gemini platform. This feature aims to simplify the user transition process, making it more attractive for those considering a switch to Gemini. The tools are part of Google&#x27;s strategy to enhance user experience and expand Gemini&#x27;s market share in the competitive AI chatbot industry. Users can now migrate their existing data seamlessly, reducing the friction typically associated with changing platforms. AI developers and users should evaluate these tools for potential integration and user retention strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/26/you-can-now-transfer-your-chats-and-personal-information-from-other-chatbots-directly-into-gemini/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "David Sacks Departs as White House AI and Crypto Czar",
-            "title": "Venture Capitalist David Sacks Steps Down from White House AI Role",
-            "content": "David Sacks, a prominent venture capitalist and tech billionaire, has announced his departure from his role as the White House AI and Crypto Czar. Sacks played a crucial role in shaping aggressive AI policy initiatives within the Biden administration. His exit marks a significant change in the administration&#x27;s approach to AI and cryptocurrency regulation. Sacks&#x27; departure may lead to shifts in policy direction, impacting AI and crypto stakeholders. Industry professionals should watch for new appointments and potential changes in regulatory focus.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/902140/david-sacks-out-ai-crypto-czar",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Judge Halts Anthropic&#x27;s Supply-Chain-Risk Designation",
-            "title": "Court Blocks Trump Administration&#x27;s Supply-Chain-Risk Label on Anthropic",
-            "content": "A judge has temporarily blocked the Trump administration&#x27;s designation of AI company Anthropic as a supply-chain risk. This decision allows Anthropic to continue its business activities without the constraints of the label, which had threatened to disrupt its operations. The ruling is a critical development in the ongoing legal battle between Anthropic and the government, highlighting the challenges AI companies face with regulatory designations. Industry professionals should consider the implications of such legal interventions on business continuity and regulatory compliance.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/anthropic-supply-chain-risk-designation-injunction/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Wikipedia Restricts AI Use in Article Writing",
-            "title": "Wikipedia Implements New Policies to Curb AI-Generated Content",
-            "content": "Wikipedia has announced new restrictions on the use of AI in article writing, aiming to address challenges associated with AI-generated content. The platform has struggled with maintaining content quality and accuracy amid the rise of AI tools capable of generating text. These policy changes reflect Wikipedia&#x27;s commitment to preserving the integrity of its information. Contributors and editors must now adhere to stricter guidelines, ensuring human oversight in content creation. This move is significant for AI developers and content creators who rely on Wikipedia&#x27;s open-editing model.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Google Enhances Gemini with New &quot;Import Memory&quot; Features",
-            "title": "Google Rolls Out &quot;Import Memory&quot; Tools for Gemini AI Platform",
-            "content": "Google has introduced &quot;Import Memory&quot; and &quot;Import Chat History&quot; features for its Gemini AI platform, enabling users to transfer existing AI knowledge and chat history seamlessly. This update follows Anthropic&#x27;s similar tool for its Claude AI, highlighting the competitive landscape in AI development. The new features aim to streamline user experience by reducing the effort required to switch AI platforms. Developers and users should consider these capabilities when evaluating AI solutions for integration and data migration needs. The enhancement positions Gemini as a flexible and user-friendly option in the AI market.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history",
             "relatedResources": []
         }
     ],
