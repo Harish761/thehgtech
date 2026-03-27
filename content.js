@@ -4,158 +4,131 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Mar 26 2026",
-            "headline": "Multi-Stage Fraud Attacks—Bots to Account Takeovers Exposed",
-            "title": "Modern Fraud Attacks Use Bots and Stolen Credentials for Account Takeovers",
-            "content": "Sophisticated multi-stage fraud attacks are increasingly using bots, proxies, and stolen credentials to move from initial signups to full account takeovers. Research from IPQualityScore (IPQS) highlights the importance of correlating IP addresses, device fingerprints, user identity, and behavior patterns to effectively combat these threats. The attacks typically begin with automated bot signups, followed by the use of proxies to hide the true origin of requests, and culminate in the exploitation of compromised credentials. Such tactics pose significant risks to online platforms, potentially impacting millions of users. Security professionals are advised to enhance their threat detection capabilities and implement stronger identity verification processes to mitigate these risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/inside-a-modern-fraud-attack-from-bot-signups-to-account-takeovers/",
+            "date": "Mar 27 2026",
+            "headline": "Social Engineering Threats Exploit Human Psychology—Stay Vigilant",
+            "title": "Understanding and Mitigating Social Engineering Attacks in Cybersecurity",
+            "content": "Social engineering remains a potent tool for cybercriminals, exploiting human psychology to bypass technical defenses. These tactics manipulate individuals into divulging confidential information or granting unauthorized access, often through phishing emails or fraudulent phone calls. Despite robust security measures in data centers and cloud environments, human error continues to be a significant vulnerability. Organizations must prioritize training employees to recognize and resist manipulation attempts. Implementing multi-factor authentication and regular security audits can further mitigate risks. As social engineering techniques evolve, staying informed and vigilant is crucial for maintaining security.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/3491733/was-ist-social-engineering.html",
             "relatedResources": []
         },
         {
-            "date": "Mar 26 2026",
-            "headline": "BIND Vulnerabilities—Patch Now to Prevent Memory Leaks",
-            "title": "BIND Updates Address High-Severity Vulnerabilities Causing Memory Leaks",
-            "content": "Critical updates have been released for BIND, the widely used DNS software, to fix high-severity vulnerabilities that could lead to memory leaks. These flaws, triggered by specially crafted domain queries, can cause out-of-memory conditions in BIND resolvers, potentially disrupting DNS services. The vulnerabilities affect versions prior to BIND 9.16.42 and 9.18.16. Organizations using BIND are urged to apply the patches immediately to prevent potential service interruptions and security breaches. This update is crucial for maintaining the integrity and performance of DNS infrastructure, a backbone component of internet connectivity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/bind-updates-patch-high-severity-vulnerabilities-2/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Validate Your Defenses—Webinar on Real Attack Simulations",
-            "title": "Webinar Offers Insights on Validating Security Defenses Against Real Attacks",
-            "content": "Security teams often have tools in place that generate alerts and clean dashboards, but questions remain about their effectiveness against real-world attacks. A new webinar aims to address this issue by teaching professionals how to validate their defenses through realistic attack simulations. Attendees will learn to assess their security infrastructure beyond surface-level indicators and ensure their systems can withstand actual threats. This educational session is crucial for cybersecurity professionals seeking to enhance their threat detection and response capabilities. Participants are encouraged to register to gain practical insights and improve their organization&#x27;s security posture.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/webinar-stop-guessing-learn-to-validate.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Zero-Click XSS Flaw in Claude Extension—Patch Released",
-            "title": "Claude Extension Vulnerability Allowed Zero-Click XSS Prompt Injection",
-            "content": "A significant vulnerability in Anthropic&#x27;s Claude Google Chrome Extension has been disclosed, allowing zero-click cross-site scripting (XSS) prompt injections via any website. The flaw enabled malicious actors to silently inject prompts into the assistant without user interaction, posing severe security risks. This vulnerability could have been exploited to execute arbitrary actions or steal sensitive information from users. Anthropic has released an urgent patch to address this flaw, and users are advised to update their extensions immediately. This incident underscores the need for rigorous security assessments of browser extensions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/claude-extension-flaw-enabled-zero.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Coruna Framework—iOS Exploit Linked to Triangulation Attacks",
-            "title": "Coruna iOS Exploit Framework Traced to Operation Triangulation",
-            "content": "The Coruna exploit framework has been identified as an evolution of the tools used in the Operation Triangulation espionage campaign. This campaign, which emerged in 2023, targeted iPhones using zero-click iMessage exploits to gain unauthorized access. The Coruna framework enhances these capabilities, posing a persistent threat to iOS users. Security experts warn that such sophisticated exploits can bypass traditional security measures, necessitating advanced detection techniques. Organizations are urged to implement robust mobile security solutions to protect against these evolving threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/coruna-ios-exploit-framework-linked-to-triangulation-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "GlassWorm Attack—Fake Extensions for Data Surveillance",
-            "title": "GlassWorm Attack Installs Malicious Browser Extensions for Surveillance",
-            "content": "The GlassWorm attack has been discovered installing fake browser extensions to conduct surveillance and data theft. This attack hides within developer tools and monitors user activity, posing a significant risk to supply chain security. Once a system is infected, the malicious extension can exfiltrate sensitive data, potentially affecting a wide range of organizations. Security professionals are advised to scrutinize browser extensions and developer tools for unauthorized modifications. Early detection and removal of these malicious components are crucial to prevent data breaches and maintain system integrity.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/03/glassworm-attack-installs-fake-browser-extension-for-surveillance",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Chinese Hackers Embedded in Telecom Infrastructure—Espionage Alert",
-            "title": "Chinese Hackers Found Deep in Telecom Backbone Infrastructure",
-            "content": "State-sponsored Chinese hackers have been discovered deeply embedded within the backbone infrastructure of telecom networks, using kernel implants and passive backdoors for long-term espionage. This intrusion allows for extensive data collection and monitoring, posing a severe threat to national security and privacy. The attackers&#x27; ability to maintain persistent access highlights the sophistication of their methods. Telecom companies are urged to conduct thorough security audits and enhance their network defenses to detect and mitigate such intrusions. This incident emphasizes the ongoing challenges in securing critical infrastructure against state-level cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chinese-hackers-caught-deep-within-telecom-backbone-infrastructure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "ISC Stormcast Highlights Latest Cyber Threats—InfoCON Status: Green",
-            "title": "ISC Stormcast For Thursday, March 26th, 2026",
-            "content": "The SANS Internet Storm Center has released its latest Stormcast, providing insights into current cyber threats with an InfoCON status of green, indicating a stable state. The podcast covers recent developments in cybersecurity, offering analysis on emerging vulnerabilities and attack trends. Security professionals are advised to stay informed through these updates to maintain robust defenses. The green status suggests no immediate widespread threats, but vigilance remains crucial. Regular updates from SANS help organizations adapt to the dynamic threat landscape and ensure preparedness against potential cyber attacks.",
+            "date": "Mar 27 2026",
+            "headline": "ISC Stormcast Highlights—March 27th Cybersecurity Update",
+            "title": "SANS Internet Storm Center Provides Key Cybersecurity Insights for March 27th",
+            "content": "The SANS Internet Storm Center&#x27;s latest podcast highlights critical cybersecurity developments as of March 27th. This update includes analysis of recent vulnerabilities, emerging threat vectors, and defensive strategies. The InfoCON level remains green, indicating a stable threat environment, but experts emphasize the importance of staying proactive. Security professionals are encouraged to review the latest advisories and patch systems promptly. The podcast serves as a valuable resource for staying informed about the dynamic cybersecurity landscape.",
             "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32832",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32836",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 27 2026",
+            "headline": "Google Warns of Accelerating Quantum Apocalypse Timeline",
+            "title": "Google Predicts Imminent Quantum Computing Security Threats",
+            "content": "Google has raised alarms about the accelerated timeline for quantum computing breakthroughs, potentially undermining current encryption standards. As a leader in both internet encryption and quantum computing development, Google is well-positioned to assess the threat. Previously aligned with the National Institute of Standards and Technology (NIST) timeline, Google now suggests that quantum capabilities may arrive sooner than anticipated. This advancement could render traditional cryptographic methods obsolete, posing risks to data security across the internet. Organizations should begin exploring quantum-resistant encryption solutions to safeguard sensitive information.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4150887/google-the-quantum-apocalypse-is-coming-sooner-than-we-thought.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "ODNI Reviews AI and Cybersecurity—Year One Under Gabbard",
+            "title": "ODNI&#x27;s Year-One Review Focuses on AI and Cybersecurity Initiatives",
+            "content": "Under the leadership of Director of National Intelligence Tulsi Gabbard, the Office of the Director of National Intelligence (ODNI) has released its first-year review focusing on AI, threat hunting, and application cybersecurity. The review outlines significant strides in integrating AI to enhance threat detection and response capabilities. It also highlights efforts to improve application security through advanced threat hunting techniques. These initiatives aim to bolster national security by leveraging cutting-edge technologies. Security professionals should monitor these developments to align with emerging government strategies.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/odni-tackles-ai-threat-hunting-app-cybersecurity-in-year-one-tech-review/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "Ajax Hack Compromises Fan Data—Ticket Systems Breached",
+            "title": "Ajax Amsterdam Cyberattack Exposes Fan Data and Ticketing Vulnerabilities",
+            "content": "Ajax Amsterdam, a prominent Dutch football club, has disclosed a cyberattack that exploited vulnerabilities in its IT systems, compromising data of several hundred fans. The breach enabled unauthorized access to ticketing systems, potentially allowing ticket hijacking. This incident underscores the importance of robust cybersecurity measures for organizations handling sensitive customer data. Ajax is working to secure its systems and prevent future breaches. Affected individuals are advised to monitor their accounts for suspicious activity and change passwords as a precaution.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ajax-football-club-hack-exposed-fan-data-enabled-ticket-hijack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "FCC Router Ban Sparks Debate—Security or Setback?",
+            "title": "FCC&#x27;s Ban on Foreign Routers Raises Security and Supply Chain Concerns",
+            "content": "The Federal Communications Commission (FCC) has banned foreign-made consumer routers, citing national security risks. However, this move has sparked debate over potential supply chain disruptions and the effectiveness of such bans. Critics argue that the ban could lead to increased costs and limited options for consumers, while not necessarily addressing underlying security vulnerabilities. The FCC&#x27;s decision highlights the ongoing challenge of balancing security with market stability. Industry stakeholders are encouraged to engage in discussions to find comprehensive solutions to router security issues.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/endpoint-security/fcc-router-ban-wrong-fix",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "Connected Cars Face Rising Cyber Threats—Stay Secure",
+            "title": "Growing Cybersecurity Threats in Connected and Autonomous Vehicles",
+            "content": "As the automotive industry advances towards connected and autonomous vehicles, cybersecurity threats continue to escalate. More than a decade after the infamous 2015 Jeep hack, vehicle cybersecurity remains a critical concern. Modern cars, equipped with complex software and connectivity features, present new attack surfaces for cybercriminals. Manufacturers are urged to prioritize robust security measures, including regular software updates and threat assessments. As vehicles become more integrated into the digital ecosystem, protecting them from cyber threats is essential to ensure safety and consumer trust.",
+            "source": "Dark Reading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/automotive-cybersecurity-threats-grow-connected-autonomous-vehicles",
             "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Mar 26 2026",
-            "headline": "Conntour Secures $7M—AI to Revolutionize Security Footage Search",
-            "title": "Conntour Raises $7M to Develop AI-Powered Security Video Search Engine",
-            "content": "Conntour has successfully raised $7 million in funding from General Catalyst and Y Combinator to develop an innovative AI search engine tailored for security video systems. This cutting-edge tool allows security teams to query camera feeds using natural language, enabling efficient searches for specific objects, individuals, or situations. The AI model&#x27;s ability to process vast amounts of video data could significantly enhance security monitoring and response times. By leveraging natural language processing, Conntour aims to simplify complex security operations and make surveillance systems more intuitive. This funding round underscores the growing interest in AI solutions that improve security infrastructure.",
+            "date": "Mar 27 2026",
+            "headline": "Anthropic Wins Injunction Against Trump Administration Restrictions",
+            "title": "Federal Judge Orders Rescission of Defense Department Restrictions on Anthropic",
+            "content": "A federal judge has ordered the Trump administration to rescind recent restrictions imposed on AI company Anthropic. The injunction allows Anthropic to continue its operations without the constraints previously placed by the Department of Defense. This legal victory is significant for Anthropic, which had been embroiled in a standoff with the Pentagon over its supply-chain-risk designation. The judge&#x27;s decision highlights ongoing tensions between tech companies and government regulatory bodies. Professionals in the AI sector should monitor this case as it may set precedents for future government interactions with AI firms.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/26/conntour-raises-7m-from-general-catalyst-yc-to-build-an-ai-search-engine-for-security-video-systems/",
+            "sourceUrl": "https://techcrunch.com/2026/03/26/anthropic-wins-injunction-against-trump-administration-over-defense-department-saga/",
             "relatedResources": []
         },
         {
-            "date": "Mar 26 2026",
-            "headline": "Cohere Unveils Open-Source Voice Model—Transcription Simplified",
-            "title": "Cohere Launches Lightweight Open-Source Voice Model for Transcription",
-            "content": "Cohere has released a new open-source voice model designed specifically for transcription tasks, boasting a relatively lightweight architecture with just 2 billion parameters. This model is accessible for those using consumer-grade GPUs, making it an attractive option for individuals and organizations wishing to self-host. Supporting 14 languages, the model broadens the accessibility of transcription technology across diverse linguistic landscapes. By providing an open-source alternative, Cohere empowers developers to integrate transcription capabilities into their projects without the need for high-end hardware. This move aligns with the growing trend of democratizing AI tools and resources.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/26/cohere-launches-an-open-source-voice-model-specifically-for-transcription/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Webtoon Integrates AI—Boosts Global Comic Reach",
-            "title": "Webtoon Introduces AI Localization to Enhance Comics Platform",
-            "content": "Webtoon is set to enhance its Canvas platform with AI localization tools, aiming to expand the reach of user-uploaded comics. This significant update is designed to enable creators to monetize their work more effectively and share their art with a broader audience. By incorporating AI-driven translation and localization, Webtoon hopes to bridge language barriers, allowing comics to be more accessible globally. This initiative reflects a broader industry trend of leveraging AI to support content creators in reaching international markets. The updates are part of Webtoon&#x27;s ongoing efforts to empower artists and diversify their audience base.",
+            "date": "Mar 27 2026",
+            "headline": "Anthropic&#x27;s Legal Win Blocks Pentagon Ban Temporarily",
+            "title": "Judge Grants Preliminary Injunction to Anthropic Against Pentagon Blacklisting",
+            "content": "Anthropic secured a preliminary injunction from a federal judge, temporarily blocking the Pentagon&#x27;s ban that had effectively blacklisted the company. This legal development comes after weeks of tension between Anthropic and the Department of Defense. The injunction allows Anthropic to operate without the blacklisting&#x27;s constraints while the case proceeds through the judicial system. The decision underscores the complexities of government-imposed restrictions on AI companies and their potential impact on innovation and business operations. Stakeholders in the AI industry should stay informed on this evolving legal battle.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/899108/webtoon-canvas-ai-translation-localization-yongsoo-kim",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/902149/anthropic-dod-pentagon-lawsuit-supply-chain-risk-injunction",
             "relatedResources": []
         },
         {
             "date": "Mar 26 2026",
-            "headline": "EU Delays AI Act—Bans Nudify Apps",
-            "title": "EU Votes to Delay AI Act Compliance and Ban Nudify Apps",
-            "content": "The European Parliament has voted to delay key components of the EU AI Act, the primary legislation for regulating artificial intelligence within the bloc. This decision comes alongside a significant move to ban nudify apps, which digitally undress individuals in photos. The delay aims to provide more time for developers to comply with the complex regulations outlined in the AI Act. The ban on nudify apps highlights growing concerns over privacy and consent in AI applications. These developments underscore the EU&#x27;s ongoing efforts to balance innovation with ethical considerations in AI deployment.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/901315/eu-ai-act-delays-ban-nudify-apps",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Data Centers Targeted—Senator Proposes AI Job Loss Tax",
-            "title": "Senator Proposes Tax on Data Centers to Offset AI Job Losses",
-            "content": "In response to escalating concerns over AI-driven job losses, Senator Mark Warner has suggested imposing a tax on data centers to support workers affected by the transition. As AI technologies increasingly automate tasks, the potential for significant employment disruption has prompted legislative attention. The proposed tax aims to create a financial buffer for workers, facilitating retraining and job placement initiatives. This proposal reflects broader societal debates about the economic impact of AI and the responsibilities of tech infrastructure in addressing workforce displacement. Stakeholders in the tech industry may need to prepare for potential regulatory changes.",
+            "headline": "Google Launches Tools for Seamless Chatbot Switching to Gemini",
+            "title": "Google Introduces &quot;Switching Tools&quot; for Easy Transition to Gemini Chatbot",
+            "content": "Google has unveiled new &quot;switching tools&quot; designed to facilitate the transfer of chats and personal information from other chatbots to its Gemini platform. This feature aims to simplify the user transition process, making it more attractive for those considering a switch to Gemini. The tools are part of Google&#x27;s strategy to enhance user experience and expand Gemini&#x27;s market share in the competitive AI chatbot industry. Users can now migrate their existing data seamlessly, reducing the friction typically associated with changing platforms. AI developers and users should evaluate these tools for potential integration and user retention strategies.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/26/a-pound-of-flesh-from-data-centers-one-senators-answer-to-ai-job-losses/",
+            "sourceUrl": "https://techcrunch.com/2026/03/26/you-can-now-transfer-your-chats-and-personal-information-from-other-chatbots-directly-into-gemini/",
             "relatedResources": []
         },
         {
             "date": "Mar 26 2026",
-            "headline": "Senators Demand Energy Usage Transparency from Data Centers",
-            "title": "Warren and Hawley Call for Mandatory Energy Disclosure by Data Centers",
-            "content": "Senators Elizabeth Warren and Josh Hawley have formally requested the Energy Information Agency to mandate annual electricity usage disclosures from data centers. This initiative is part of a broader effort to address the environmental impact of data center operations, which are known to consume significant amounts of energy. By requiring transparency, the senators aim to encourage more sustainable practices within the industry. The push for disclosure aligns with growing public and governmental scrutiny of the tech sector&#x27;s carbon footprint. Data center operators may need to prepare for increased regulatory oversight regarding their energy consumption.",
+            "headline": "David Sacks Departs as White House AI and Crypto Czar",
+            "title": "Venture Capitalist David Sacks Steps Down from White House AI Role",
+            "content": "David Sacks, a prominent venture capitalist and tech billionaire, has announced his departure from his role as the White House AI and Crypto Czar. Sacks played a crucial role in shaping aggressive AI policy initiatives within the Biden administration. His exit marks a significant change in the administration&#x27;s approach to AI and cryptocurrency regulation. Sacks&#x27; departure may lead to shifts in policy direction, impacting AI and crypto stakeholders. Industry professionals should watch for new appointments and potential changes in regulatory focus.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/902140/david-sacks-out-ai-crypto-czar",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "Judge Halts Anthropic&#x27;s Supply-Chain-Risk Designation",
+            "title": "Court Blocks Trump Administration&#x27;s Supply-Chain-Risk Label on Anthropic",
+            "content": "A judge has temporarily blocked the Trump administration&#x27;s designation of AI company Anthropic as a supply-chain risk. This decision allows Anthropic to continue its business activities without the constraints of the label, which had threatened to disrupt its operations. The ruling is a critical development in the ongoing legal battle between Anthropic and the government, highlighting the challenges AI companies face with regulatory designations. Industry professionals should consider the implications of such legal interventions on business continuity and regulatory compliance.",
             "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/senators-demand-to-know-how-much-energy-data-centers-use/",
+            "sourceUrl": "https://www.wired.com/story/anthropic-supply-chain-risk-designation-injunction/",
             "relatedResources": []
         },
         {
             "date": "Mar 26 2026",
-            "headline": "OpenAI Halts Erotic Chatbot—Focus Shifts Back to Core Products",
-            "title": "OpenAI Shelves Plans for Erotic Chatbot Amid Internal Pushback",
-            "content": "OpenAI has decided to indefinitely pause the development of a sexualized &quot;adult mode&quot; for its ChatGPT platform. This decision follows internal concerns from employees and investors, prompting the company to refocus on its core product offerings. The shelved project highlights the ongoing challenges tech companies face in balancing innovative product development with ethical considerations and stakeholder expectations. OpenAI&#x27;s move reflects a strategic pivot to prioritize areas with broader acceptance and alignment with its mission. This development may influence other AI firms considering similar ventures in the adult content space.",
+            "headline": "Wikipedia Restricts AI Use in Article Writing",
+            "title": "Wikipedia Implements New Policies to Curb AI-Generated Content",
+            "content": "Wikipedia has announced new restrictions on the use of AI in article writing, aiming to address challenges associated with AI-generated content. The platform has struggled with maintaining content quality and accuracy amid the rise of AI tools capable of generating text. These policy changes reflect Wikipedia&#x27;s commitment to preserving the integrity of its information. Contributors and editors must now adhere to stricter guidelines, ensuring human oversight in content creation. This move is significant for AI developers and content creators who rely on Wikipedia&#x27;s open-editing model.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 26 2026",
+            "headline": "Google Enhances Gemini with New &quot;Import Memory&quot; Features",
+            "title": "Google Rolls Out &quot;Import Memory&quot; Tools for Gemini AI Platform",
+            "content": "Google has introduced &quot;Import Memory&quot; and &quot;Import Chat History&quot; features for its Gemini AI platform, enabling users to transfer existing AI knowledge and chat history seamlessly. This update follows Anthropic&#x27;s similar tool for its Claude AI, highlighting the competitive landscape in AI development. The new features aim to streamline user experience by reducing the effort required to switch AI platforms. Developers and users should consider these capabilities when evaluating AI solutions for integration and data migration needs. The enhancement positions Gemini as a flexible and user-friendly option in the AI market.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/901293/openai-adult-mode-erotic-chatbot-shelved-indefinitely",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Manus AI Merger Faces Predictable Reckoning",
-            "title": "Manus AI and Partner Face Expected Challenges Amid Controversy",
-            "content": "The ongoing saga of the Manus AI merger has reached a critical juncture, with industry insiders unsurprised by the current challenges. The partnership, initially heralded as a transformative move, is now under scrutiny as stakeholders question its strategic direction and leadership decisions. This development highlights the complexities and potential pitfalls inherent in high-stakes AI collaborations. Analysts suggest that the merger&#x27;s success hinges on addressing operational inefficiencies and aligning the companies&#x27; long-term goals. Stakeholders are advised to monitor the situation closely as further developments could impact market dynamics and investment strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/25/the-least-surprising-chapter-of-the-manus-story-is-whats-happening-right-now/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 26 2026",
-            "headline": "Deccan AI Secures $25M, Eyes Indian Expertise",
-            "title": "Deccan AI Raises $25 Million, Leverages Indian Talent for Growth",
-            "content": "Deccan AI has successfully raised $25 million to bolster its operations, focusing on harnessing India&#x27;s rich pool of AI talent. The company aims to address quality control challenges in the rapidly expanding AI training market by concentrating its workforce in India. This strategic move positions Deccan AI to better manage the fragmented landscape, ensuring the delivery of high-quality AI solutions. The investment will be used to scale operations and enhance technological capabilities, potentially setting a new standard for AI training methodologies. Industry observers should note this as a significant step in the competitive AI sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/25/deccan-ai-raises-25m-as-ai-training-push-relies-on-india-based-workforce/",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history",
             "relatedResources": []
         }
     ],
@@ -242,6 +215,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-33634",
+            "dateAdded": "Mar 26, 2026",
+            "vendor": "Aquasecurity Trivy",
+            "description": "Aquasecurity Trivy contains an embedded malicious code vulnerability that could allow an attacker to gain access to everything in the CI/CD environment, including all tokens, SSH keys, cloud credentia",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33634",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-33017",
             "dateAdded": "Mar 25, 2026",
             "vendor": "Langflow Langflow",
@@ -250,61 +234,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33017",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-32432",
-            "dateAdded": "Mar 20, 2026",
-            "vendor": "Craft CMS Craft CMS",
-            "description": "Craft CMS contains a code injection vulnerability that allows a remote attacker to execute arbitrary code.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32432",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-54068",
-            "dateAdded": "Mar 20, 2026",
-            "vendor": "Laravel Livewire",
-            "description": "Laravel Livewire contain a code injection vulnerability that could allow unauthenticated attackers to achieve remote command execution in specific scenarios.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54068",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-43510",
-            "dateAdded": "Mar 20, 2026",
-            "vendor": "Apple Multiple Products",
-            "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, and tvOS contain an improper locking vulnerability that could allow a malicious application to cause unexpected changes in memory shared between processes.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43510",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-43520",
-            "dateAdded": "Mar 20, 2026",
-            "vendor": "Apple Multiple Products",
-            "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, tvOS, and iPadOS contain a classic buffer overflow vulnerability which could allow a malicious application to cause unexpected system termination or write",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43520",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-31277",
-            "dateAdded": "Mar 20, 2026",
-            "vendor": "Apple Multiple Products",
-            "description": "Apple Safari, iOS, watchOS, visionOS, iPadOS, macOS, and tvOS contain a buffer overflow vulnerability that could allow the processing of maliciously crafted web content which may lead to memory corrup",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31277",
             "isZeroDay": false
         }
     ],
