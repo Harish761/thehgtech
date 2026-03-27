@@ -1,9 +1,39 @@
 /**
- * TheHGTech GRC Gap Analysis Engine
+ * TheHGTech GRC Gap Analysis Engine v2.0
  * Multi-Phase Architecture: Scope Selection -> Engine -> Dashboard
+ * Phase 1 Enhancements: Maturity Slider, Evidence Notes, Assessor Labels,
+ *   Keyboard Navigation, Auto-Save Indicator, JSON Export
  */
 
 document.addEventListener('DOMContentLoaded', async () => {
+
+    // --- MATURITY LEVELS (CMMI-inspired, replaces binary Partial) ---
+    const MATURITY_LEVELS = {
+        'yes':       { label: 'Fully Implemented', multiplier: 1.0,  color: '#10B981', icon: 'fa-check-circle' },
+        'optimized': { label: 'Optimized (Continuously Improved)', multiplier: 1.0,  color: '#10B981', icon: 'fa-gem' },
+        'managed':   { label: 'Managed (Measured & Controlled)', multiplier: 0.8,  color: '#34D399', icon: 'fa-chart-line' },
+        'defined':   { label: 'Defined (Documented Process)', multiplier: 0.6,  color: '#FBBF24', icon: 'fa-file-alt' },
+        'repeatable':{ label: 'Repeatable (Ad-hoc but Consistent)', multiplier: 0.4,  color: '#F59E0B', icon: 'fa-redo' },
+        'adhoc':     { label: 'Ad Hoc (Initial / Informal)', multiplier: 0.2,  color: '#EF4444', icon: 'fa-exclamation-circle' },
+        'no':        { label: 'Not Implemented (Gap)', multiplier: 0.0,  color: '#EF4444', icon: 'fa-times-circle' },
+        'na':        { label: 'Not Applicable', multiplier: null, color: '#6B7280', icon: 'fa-ban' }
+    };
+
+    function getMultiplier(val) {
+        if (!val) return 0;
+        // Backward compat: 'partial' maps to 'defined' (0.6)
+        if (val === 'partial') return 0.5;
+        const level = MATURITY_LEVELS[val];
+        return level ? (level.multiplier !== null ? level.multiplier : 0) : 0;
+    }
+
+    function isAnswered(val) {
+        return val && MATURITY_LEVELS[val] !== undefined;
+    }
+
+    function isNA(val) {
+        return val === 'na';
+    }
 
     const ui = {
         // Views
@@ -39,7 +69,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         btnShareState: document.getElementById('btnShareState'),
         btnResetEngine: document.getElementById('btnResetEngine'),
         resetModal: document.getElementById('resetModal'),
-        btnConfirmReset: document.getElementById('btnConfirmReset')
+        btnConfirmReset: document.getElementById('btnConfirmReset'),
+        btnJsonExport: document.getElementById('btnJsonExport')
     };
 
     let grcData = null;
@@ -49,6 +80,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     const HISTORY_KEY = 'thehgtech_grc_history_v2';
     let userState = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
     let radarChartInstance = null;
+
+    // --- AUTO-SAVE INDICATOR ---
+    let saveIndicatorTimeout = null;
+    function flashSaveIndicator() {
+        const el = document.getElementById('autoSaveIndicator');
+        if (!el) return;
+        el.innerHTML = '<i class="fas fa-check-circle" style="color:#10B981;"></i> Saved';
+        el.style.opacity = '1';
+        clearTimeout(saveIndicatorTimeout);
+        saveIndicatorTimeout = setTimeout(() => {
+            const now = new Date();
+            el.innerHTML = '<i class="fas fa-save" style="color:var(--text-muted);"></i> Last saved ' + now.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+            el.style.opacity = '0.7';
+        }, 2000);
+    }
+
+    function persistState() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+        flashSaveIndicator();
+    }
 
     // --- NEW: History & Progress Tracking ---
     function saveToHistory(score) {
@@ -287,6 +338,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateScopeMetrics();
 
         ui.btnStartAssess.addEventListener('click', () => {
+            // Save assessor metadata
+            const nameInput = document.getElementById('assessorNameInput');
+            const orgInput = document.getElementById('orgNameInput');
+            if (nameInput && nameInput.value) userState._assessorName = nameInput.value.trim();
+            if (orgInput && orgInput.value) userState._orgName = orgInput.value.trim();
+            persistState();
+
             activeDomainIndices.sort(); 
             ui.viewScope.classList.remove('active');
             ui.viewEngine.style.display = 'flex';
@@ -379,6 +437,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const savedValue = userState[control.control_id] || '';
 
+            // Determine which maturity level is selected (backward compat with 'partial')
+            const isMaturityAnswer = ['adhoc','repeatable','defined','managed','optimized'].includes(savedValue);
+            const showMaturityPanel = isMaturityAnswer || savedValue === 'partial';
+
             card.innerHTML = `
                 <div class="control-header" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:0.5rem;">
                     <span class="control-id" style="background:var(--bg-dark); padding:0.2rem 0.6rem; border-radius:4px; font-weight:bold; color:var(--text-primary); border:1px solid var(--border); font-size:0.9rem;">Control A.${control.control_id}</span>
@@ -422,22 +484,69 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </details>
                 
                 <div class="options-grid" data-control="${control.control_id}">
-                    <button class="btn-option ${savedValue === 'yes' ? 'active' : ''}" data-val="yes">
-                        <i class="fas fa-check-circle"></i> Yes (Implemented)
+                    <button class="btn-option ${savedValue === 'yes' || savedValue === 'optimized' ? 'active' : ''}" data-val="yes" title="Press 1">
+                        <i class="fas fa-check-circle"></i> Yes <span class="kbd-hint">1</span>
                     </button>
-                    <button class="btn-option ${savedValue === 'partial' ? 'active' : ''}" data-val="partial">
-                        <i class="fas fa-adjust"></i> Partial (In-Progress)
+                    <button class="btn-option btn-option-maturity ${showMaturityPanel ? 'active' : ''}" data-val="maturity" title="Press 2 — Set Maturity Level">
+                        <i class="fas fa-layer-group"></i> Partial <span class="kbd-hint">2</span>
                     </button>
-                    <button class="btn-option ${savedValue === 'no' ? 'active' : ''}" data-val="no">
-                        <i class="fas fa-times-circle"></i> No (Gap)
+                    <button class="btn-option ${savedValue === 'no' ? 'active' : ''}" data-val="no" title="Press 3">
+                        <i class="fas fa-times-circle"></i> No (Gap) <span class="kbd-hint">3</span>
                     </button>
-                    <button class="btn-option ${savedValue === 'na' ? 'active' : ''}" data-val="na">
-                        <i class="fas fa-ban"></i> N/A
+                    <button class="btn-option ${savedValue === 'na' ? 'active' : ''}" data-val="na" title="Press 4">
+                        <i class="fas fa-ban"></i> N/A <span class="kbd-hint">4</span>
                     </button>
                 </div>
+
+                <!-- Maturity Slider Panel -->
+                <div class="maturity-panel" id="maturity_panel_${control.control_id}" style="display:${showMaturityPanel ? 'block' : 'none'};">
+                    <div class="maturity-panel-header">
+                        <i class="fas fa-sliders-h"></i> Select Implementation Maturity (CMMI Scale)
+                    </div>
+                    <div class="maturity-levels">
+                        <button class="maturity-btn ${savedValue === 'adhoc' ? 'active' : ''}" data-mval="adhoc" style="--m-color:#EF4444;">
+                            <span class="m-score">20%</span>
+                            <span class="m-label">Ad Hoc</span>
+                            <span class="m-desc">Informal, undocumented</span>
+                        </button>
+                        <button class="maturity-btn ${savedValue === 'repeatable' ? 'active' : ''}" data-mval="repeatable" style="--m-color:#F59E0B;">
+                            <span class="m-score">40%</span>
+                            <span class="m-label">Repeatable</span>
+                            <span class="m-desc">Consistent but not documented</span>
+                        </button>
+                        <button class="maturity-btn ${savedValue === 'defined' || savedValue === 'partial' ? 'active' : ''}" data-mval="defined" style="--m-color:#FBBF24;">
+                            <span class="m-score">60%</span>
+                            <span class="m-label">Defined</span>
+                            <span class="m-desc">Documented process exists</span>
+                        </button>
+                        <button class="maturity-btn ${savedValue === 'managed' ? 'active' : ''}" data-mval="managed" style="--m-color:#34D399;">
+                            <span class="m-score">80%</span>
+                            <span class="m-label">Managed</span>
+                            <span class="m-desc">Measured & controlled</span>
+                        </button>
+                        <button class="maturity-btn ${savedValue === 'optimized' ? 'active' : ''}" data-mval="optimized" style="--m-color:#10B981;">
+                            <span class="m-score">100%</span>
+                            <span class="m-label">Optimized</span>
+                            <span class="m-desc">Continuously improved</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- N/A Justification -->
                 <div class="na-justification-container" id="na_container_${control.control_id}" style="display:${savedValue === 'na' ? 'block' : 'none'}; margin-top: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 8px; border-left: 3px solid #6c757d;">
                     <label style="display:block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; font-weight: bold;">Justification for Not Applicable (N/A):</label>
                     <textarea class="na-justification-input" data-control="${control.control_id}" rows="2" style="width: 100%; border-radius: 4px; padding: 0.5rem; border: 1px solid var(--border); background: var(--bg-dark); color: var(--text-primary); font-family: inherit; resize: vertical;" placeholder="Briefly explain why this control is out of scope for your audit footprint...">${userState[control.control_id + '_just'] || ''}</textarea>
+                </div>
+
+                <!-- Evidence Notes (Feature #2) -->
+                <div class="evidence-notes-container" style="margin-top: 1rem;">
+                    <details ${userState[control.control_id + '_notes'] ? 'open' : ''}>
+                        <summary style="font-weight:600; color:var(--accent-cyan); cursor:pointer; font-size:0.85rem; outline:none; user-select:none;">
+                            <i class="fas fa-sticky-note"></i> Evidence Notes / Artifact Reference
+                            ${userState[control.control_id + '_notes'] ? '<span style="color:var(--text-muted); font-weight:400; font-size:0.75rem; margin-left:8px;">(has notes)</span>' : ''}
+                        </summary>
+                        <textarea class="evidence-notes-input" data-control="${control.control_id}" rows="2" style="width: 100%; margin-top: 0.5rem; border-radius: 6px; padding: 0.6rem; border: 1px solid var(--border); background: rgba(0, 217, 255, 0.03); color: var(--text-primary); font-family: inherit; font-size: 0.85rem; resize: vertical;" placeholder="e.g., 'See Confluence page /security/policies/AUP-v3.2' or 'Evidence: screenshots in Jira SEC-1234'">${userState[control.control_id + '_notes'] || ''}</textarea>
+                    </details>
                 </div>
             `;
 
@@ -445,7 +554,31 @@ document.addEventListener('DOMContentLoaded', async () => {
             btns.forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     const value = e.currentTarget.getAttribute('data-val');
-                    saveAnswer(control.control_id, value, btns);
+                    if (value === 'maturity') {
+                        // Toggle maturity panel visibility
+                        const panel = document.getElementById(`maturity_panel_${control.control_id}`);
+                        if (panel) panel.style.display = panel.style.display === 'none' ? 'block' : 'block';
+                        // Don't save 'maturity' as a value — user must pick a level
+                        btns.forEach(b => b.classList.remove('active'));
+                        e.currentTarget.classList.add('active');
+                        return;
+                    }
+                    saveAnswer(control.control_id, value, btns, card);
+                });
+            });
+
+            // Maturity level buttons
+            const maturityBtns = card.querySelectorAll('.maturity-btn');
+            maturityBtns.forEach(mb => {
+                mb.addEventListener('click', (e) => {
+                    const mval = e.currentTarget.getAttribute('data-mval');
+                    maturityBtns.forEach(b => b.classList.remove('active'));
+                    e.currentTarget.classList.add('active');
+                    // Set the main "Partial" button as active
+                    btns.forEach(b => b.classList.remove('active'));
+                    const partialBtn = card.querySelector('[data-val="maturity"]');
+                    if (partialBtn) partialBtn.classList.add('active');
+                    saveAnswer(control.control_id, mval, btns, card);
                 });
             });
 
@@ -453,7 +586,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (naInput) {
                 naInput.addEventListener('input', (e) => {
                     userState[control.control_id + '_just'] = e.target.value;
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+                    persistState();
+                });
+            }
+
+            // Evidence notes handler (Feature #2)
+            const notesInput = card.querySelector('.evidence-notes-input');
+            if (notesInput) {
+                notesInput.addEventListener('input', (e) => {
+                    userState[control.control_id + '_notes'] = e.target.value;
+                    persistState();
                 });
             }
 
@@ -507,10 +649,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateSidebarActiveState();
     }
 
-    function saveAnswer(controlId, value, allButtonsInGroup) {
-        allButtonsInGroup.forEach(b => b.classList.remove('active'));
-        const clickedBtn = Array.from(allButtonsInGroup).find(b => b.getAttribute('data-val') === value);
-        if (clickedBtn) clickedBtn.classList.add('active');
+    function saveAnswer(controlId, value, allButtonsInGroup, cardEl) {
+        // For non-maturity answers, clear maturity panel highlighting
+        if (!['adhoc','repeatable','defined','managed','optimized'].includes(value)) {
+            allButtonsInGroup.forEach(b => b.classList.remove('active'));
+            const clickedBtn = Array.from(allButtonsInGroup).find(b => b.getAttribute('data-val') === value);
+            if (clickedBtn) clickedBtn.classList.add('active');
+        }
 
         userState[controlId] = value;
         
@@ -519,7 +664,20 @@ document.addEventListener('DOMContentLoaded', async () => {
             naContainer.style.display = value === 'na' ? 'block' : 'none';
         }
 
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+        // Show/hide maturity panel
+        const maturityPanel = document.getElementById(`maturity_panel_${controlId}`);
+        if (maturityPanel) {
+            const isMaturityVal = ['adhoc','repeatable','defined','managed','optimized'].includes(value);
+            maturityPanel.style.display = isMaturityVal ? 'block' : 'none';
+            // If user clicks Yes or No, hide the maturity panel
+            if (value === 'yes' || value === 'no' || value === 'na') {
+                maturityPanel.style.display = 'none';
+                // Clear maturity button highlights
+                if (cardEl) cardEl.querySelectorAll('.maturity-btn').forEach(b => b.classList.remove('active'));
+            }
+        }
+
+        persistState();
         updateURLState(); // Sync to URL on every answer
 
         const domain = grcData.domains[activeDomainIndices[currentNavIndex]];
@@ -562,7 +720,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function updateDomainProgress(domain) {
         const total = domain.controls.length;
-        const completed = domain.controls.filter(c => userState[c.control_id]).length;
+        const completed = domain.controls.filter(c => {
+            const v = userState[c.control_id];
+            return v && MATURITY_LEVELS[v] !== undefined;
+        }).length;
         const pct = Math.round((completed / total) * 100);
         ui.progressText.innerText = `${completed} / ${total} Completed`;
         ui.progressBar.style.width = `${pct}%`;
@@ -583,18 +744,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 totalControls++;
 
                 // Denominator logic: Controls are part of the total POSSIBLE score unless marked N/A
-                if (status !== 'na') {
+                if (!isNA(status)) {
                     totalPossibleImpact += impact;
                 }
 
-                if (status) {
+                if (status && MATURITY_LEVELS[status] !== undefined) {
                     answeredControls++;
-                    if (status === 'yes') {
-                        earnedImpact += impact;
-                    } else if (status === 'partial') {
-                        earnedImpact += (impact * 0.5);
-                    }
-                    // 'no' adds to totalPossible (above) but adds 0 to earned
+                    earnedImpact += (impact * getMultiplier(status));
+                    // 'no' has multiplier 0, so adds 0 to earned
                 }
             });
         });
@@ -750,33 +907,34 @@ document.addEventListener('DOMContentLoaded', async () => {
                 
                 answeredTotal++;
                 const impact = c.risk_impact || 1;
+                const mult = getMultiplier(ans);
                 
-                if (ans === 'yes') {
-                    earnedImpact += impact;
+                if (!isNA(ans)) {
                     totalPossibleImpact += impact;
-                } else if (ans === 'partial') {
-                    earnedImpact += (impact * 0.5);
-                    totalPossibleImpact += impact;
-                } else if (ans === 'no') {
-                    totalPossibleImpact += impact;
+                    earnedImpact += (impact * mult);
                 }
                 
                 // Framework scoring (exclude NA from denominator)
                 let fVal = 0; let fTotal = 0;
-                if (ans === 'yes') { fVal = impact; fTotal = impact; }
-                else if (ans === 'partial') { fVal = (impact * 0.5); fTotal = impact; }
-                else if (ans === 'no') { fVal = 0; fTotal = impact; }
+                if (!isNA(ans)) {
+                    fVal = impact * mult;
+                    fTotal = impact;
+                }
 
                 if (c.nist_mapping && fTotal > 0) { nistTotal += fTotal; nistValue += fVal; }
                 if (c.cis_mapping && fTotal > 0) { cisTotal += fTotal; cisValue += fVal; }
 
-                // Identify critical gaps
-                if (ans === 'no' || ans === 'partial') {
+                // Identify critical gaps (anything not fully implemented or N/A)
+                const isGap = ans === 'no' || ans === 'adhoc' || ans === 'repeatable' || ans === 'defined' || ans === 'managed' || ans === 'partial';
+                if (isGap) {
+                    const matLevel = MATURITY_LEVELS[ans];
                     criticalGaps.push({
                         id: c.control_id,
                         title: c.control_title,
                         domain: d.name,
                         ans: ans,
+                        maturityLabel: matLevel ? matLevel.label : ans,
+                        multiplier: mult,
                         remediation: c.remediation_advice || "Review control requirements to implement baseline security.",
                         nist: c.nist_mapping,
                         cis: c.cis_mapping,
@@ -786,6 +944,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
             dataset.push(totalPossibleImpact === 0 ? (answeredTotal > 0 ? 100 : 0) : Math.round((earnedImpact / totalPossibleImpact) * 100));
         });
+
 
         // 0. Update Framework Scores with Assessed Scope Denominators
         // Only counting controls that the user actually evaluated to avoid penalty on partial dashboards.
@@ -852,9 +1011,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         const scopeCoveredEl = document.getElementById('scopeCovered');
         if (scopeCoveredEl) scopeCoveredEl.innerText = `${activeDomainIndices.length} Domains`;
 
-        // Extract Top 3 Priority Actions
+        // Extract Top 3 Priority Actions — sorted by multiplier (lowest first = biggest gap)
         const priorityActions = criticalGaps
-            .sort((a, b) => (a.ans === 'no' ? -1 : 1)) // Prioritize NOs over PARTIALs
+            .sort((a, b) => (a.multiplier || 0) - (b.multiplier || 0))
             .slice(0, 3);
 
         const priorityContainer = document.getElementById('priorityActionPlan');
@@ -958,28 +1117,40 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (criticalGaps.length === 0) {
             ui.gapsContainer.innerHTML += `<div class="gap-item" style="border-left-color: #10B981;"><p style="color:#10B981; margin:0;"><i class="fas fa-check-circle"></i> Outstanding! No critical gaps identified in the evaluated scope.</p></div>`;
         } else {
-            // Sort gaps by priority: Missing (High) -> Partial (Medium)
-            criticalGaps.sort((a,b) => (a.ans === 'partial' ? 1 : -1));
+            // Sort gaps by priority: lowest multiplier first (most urgent)
+            criticalGaps.sort((a,b) => (a.multiplier || 0) - (b.multiplier || 0));
 
             criticalGaps.forEach(g => {
                 const item = document.createElement('div');
                 item.className = 'gap-item';
                 
-                // Prioritization Logic
-                let priorityTag = '<span class="priority-tag" style="background:#EF4444; color:#fff; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:800; margin-right:8px;">HIGH PRIORITY</span>';
-                let outcome = "Reduces critical vulnerability surface.";
+                // Prioritization Logic based on maturity multiplier
+                let priorityTag, outcome;
+                const mult = g.multiplier || 0;
+                const matLevelInfo = MATURITY_LEVELS[g.ans];
+                const statusColor = matLevelInfo ? matLevelInfo.color : '#EF4444';
+                const statusLabel = g.maturityLabel || g.ans;
                 
-                if (g.ans === 'partial') {
-                    item.style.borderLeftColor = '#F59E0B';
-                    item.style.backgroundColor = 'rgba(245, 158, 11, 0.05)';
-                    priorityTag = '<span class="priority-tag" style="background:#F59E0B; color:#000; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:800; margin-right:8px;">QUICK WIN</span>';
-                    outcome = "Hardens existing process to enterprise compliance standard.";
-                } else {
-                    // It's a 'Missing' gap
+                if (mult === 0) {
+                    // Not implemented at all
+                    priorityTag = '<span class="priority-tag" style="background:#EF4444; color:#fff; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:800; margin-right:8px;">HIGH PRIORITY</span>';
+                    outcome = "Reduces critical vulnerability surface.";
                     if (g.id.startsWith('5.') || g.id.startsWith('8.5')) {
                         priorityTag = '<span class="priority-tag" style="background:#8B5CF6; color:#fff; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:800; margin-right:8px;">FOUNDATIONAL</span>';
                         outcome = "Establishes mandatory governance/identity boundary.";
                     }
+                } else if (mult <= 0.4) {
+                    // Ad Hoc or Repeatable — still high priority
+                    item.style.borderLeftColor = '#F59E0B';
+                    item.style.backgroundColor = 'rgba(245, 158, 11, 0.05)';
+                    priorityTag = '<span class="priority-tag" style="background:#F59E0B; color:#000; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:800; margin-right:8px;">NEEDS FORMALIZATION</span>';
+                    outcome = "Formalizing process reduces risk of inconsistent execution.";
+                } else {
+                    // Defined or Managed — quick win to reach Optimized
+                    item.style.borderLeftColor = '#34D399';
+                    item.style.backgroundColor = 'rgba(52, 211, 153, 0.03)';
+                    priorityTag = '<span class="priority-tag" style="background:#34D399; color:#000; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:800; margin-right:8px;">QUICK WIN</span>';
+                    outcome = "Hardens existing process to enterprise compliance standard.";
                 }
 
                 // Extract custom outcome from rationale if present
@@ -995,7 +1166,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 item.innerHTML = `
                     <div class="gap-item-header">
                         <span class="gap-id">${priorityTag} <span style="color:var(--text-muted); font-size:0.8rem;">[${g.domain}]</span> Control ${g.id}</span>
-                        <span class="domain-badge" style="border-color:${g.ans === 'partial' ? '#F59E0B' : '#EF4444'}; color:${g.ans === 'partial' ? '#F59E0B' : '#EF4444'};">${g.ans === 'partial' ? 'Partial' : 'Missing'}</span>
+                        <span class="domain-badge" style="border: 1px solid ${statusColor}; color:${statusColor}; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:600;">${statusLabel}</span>
                     </div>
                     <h4 class="gap-title">${g.title}</h4>
                     <div class="gap-mappings" style="display:flex; gap:8px; margin-bottom: 0.8rem;">
@@ -1405,6 +1576,57 @@ document.addEventListener('DOMContentLoaded', async () => {
     ui.btnExportDraft.addEventListener('click', () => handleExcelExport(ui.btnExportDraft));
     ui.btnFinalExcelExport.addEventListener('click', () => handleExcelExport(ui.btnFinalExcelExport));
 
+    // --- JSON EXPORT (Feature #8) ---
+    if (ui.btnJsonExport) {
+        ui.btnJsonExport.addEventListener('click', () => {
+            const exportObj = {
+                meta: {
+                    tool: 'TheHGTech GRC Gap Analysis Engine v2.0',
+                    version: grcData ? grcData.version : '2.0',
+                    exportDate: new Date().toISOString(),
+                    assessorName: userState._assessorName || '',
+                    organizationName: userState._orgName || '',
+                    overallScore: ui.overallScore ? ui.overallScore.innerText : '0%'
+                },
+                controls: []
+            };
+
+            activeDomainIndices.forEach(globalIdx => {
+                const domain = grcData.domains[globalIdx];
+                domain.controls.forEach(c => {
+                    const status = userState[c.control_id] || 'not_evaluated';
+                    const level = MATURITY_LEVELS[status];
+                    exportObj.controls.push({
+                        domain: domain.name,
+                        controlId: 'A.' + c.control_id,
+                        title: c.control_title,
+                        status: status,
+                        maturityLabel: level ? level.label : 'Not Evaluated',
+                        multiplier: getMultiplier(status),
+                        riskImpact: c.risk_impact,
+                        criticality: c.criticality,
+                        nistMapping: c.nist_mapping,
+                        cisMapping: c.cis_mapping,
+                        evidenceNotes: userState[c.control_id + '_notes'] || '',
+                        naJustification: userState[c.control_id + '_just'] || ''
+                    });
+                });
+            });
+
+            const blob = new Blob([JSON.stringify(exportObj, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'GRC_Assessment_' + new Date().toISOString().split('T')[0] + '.json';
+            a.click();
+            URL.revokeObjectURL(url);
+
+            const origText = ui.btnJsonExport.innerHTML;
+            ui.btnJsonExport.innerHTML = '<i class="fas fa-check"></i> Downloaded!';
+            setTimeout(() => { ui.btnJsonExport.innerHTML = origText; }, 2000);
+        });
+    }
+
     // Share Link Handler
     if (ui.btnShareState) {
         ui.btnShareState.addEventListener('click', () => {
@@ -1435,6 +1657,80 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
         });
     }
+
+    // --- KEYBOARD NAVIGATION (Feature #10) ---
+    document.addEventListener('keydown', (e) => {
+        // Only active when engine view is visible
+        if (!ui.viewEngine || ui.viewEngine.style.display === 'none') return;
+        // Don't capture if user is typing in a textarea/input
+        if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+
+        const cards = document.querySelectorAll('.control-card');
+        if (!cards.length) return;
+
+        // Find the currently focused/visible card
+        let focusedCard = null;
+        let focusedIdx = -1;
+        cards.forEach((c, i) => {
+            const rect = c.getBoundingClientRect();
+            if (rect.top >= 50 && rect.top < window.innerHeight * 0.6 && !focusedCard) {
+                focusedCard = c;
+                focusedIdx = i;
+            }
+        });
+        if (!focusedCard) {
+            focusedCard = cards[0];
+            focusedIdx = 0;
+        }
+
+        const controlId = focusedCard.getAttribute('data-id');
+        const btns = focusedCard.querySelectorAll('.btn-option');
+
+        switch(e.key) {
+            case '1': // Yes
+                e.preventDefault();
+                saveAnswer(controlId, 'yes', btns, focusedCard);
+                break;
+            case '2': // Partial → open maturity panel
+                e.preventDefault();
+                saveAnswer(controlId, 'defined', btns, focusedCard); // Default to 'defined' (60%)
+                const panel = document.getElementById(`maturity_panel_${controlId}`);
+                if (panel) panel.style.display = 'block';
+                btns.forEach(b => b.classList.remove('active'));
+                const partBtn = focusedCard.querySelector('[data-val="maturity"]');
+                if (partBtn) partBtn.classList.add('active');
+                focusedCard.querySelectorAll('.maturity-btn').forEach(b => b.classList.remove('active'));
+                const defBtn = focusedCard.querySelector('[data-mval="defined"]');
+                if (defBtn) defBtn.classList.add('active');
+                break;
+            case '3': // No
+                e.preventDefault();
+                saveAnswer(controlId, 'no', btns, focusedCard);
+                break;
+            case '4': // N/A
+                e.preventDefault();
+                saveAnswer(controlId, 'na', btns, focusedCard);
+                break;
+            case 'j': // Next control
+            case 'J':
+                e.preventDefault();
+                if (focusedIdx < cards.length - 1) {
+                    const next = cards[focusedIdx + 1];
+                    const offset = next.getBoundingClientRect().top + window.scrollY - 150;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
+                }
+                break;
+            case 'k': // Previous control
+            case 'K':
+                e.preventDefault();
+                if (focusedIdx > 0) {
+                    const prev = cards[focusedIdx - 1];
+                    const offset = prev.getBoundingClientRect().top + window.scrollY - 150;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
+                }
+                break;
+        }
+    });
 
     // Kickoff
     loadGRCData();
