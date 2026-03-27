@@ -1888,3 +1888,270 @@ body.light-mode {
     color: #111827 !important;
     border-color: rgba(0, 0, 0, 0.1) !important;
 }
+
+/* ============================================================== */
+/*           PHASE 2: RISK HEATMAP & COMPLIANCE TIMELINE          */
+/* ============================================================== */
+
+/* --- Risk Heatmap (Feature #3) --- */
+.heatmap-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.heatmap-y-label {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-right: 0.5rem;
+}
+
+.heatmap-grid-area {
+    flex: 1;
+}
+
+.heatmap-grid {
+    display: grid;
+    grid-template-columns: 70px repeat(4, 1fr);
+    gap: 4px;
+}
+
+.heatmap-row-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.heatmap-cell {
+    aspect-ratio: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: default;
+    min-height: 60px;
+}
+
+.heatmap-cell:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.heatmap-count {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.heatmap-x-labels {
+    display: grid;
+    grid-template-columns: 70px repeat(4, 1fr);
+    gap: 4px;
+    margin-top: 6px;
+}
+
+.heatmap-x-labels span {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.heatmap-x-label {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.heatmap-summary {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.heatmap-stat {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.heatmap-stat strong {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+    .heatmap-grid {
+        grid-template-columns: 50px repeat(4, 1fr);
+    }
+    .heatmap-cell {
+        min-height: 45px;
+    }
+    .heatmap-summary {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* --- 90-Day Compliance Timeline (Feature #5) --- */
+.timeline-phases {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-phase {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.timeline-phase-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.timeline-phase-badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.timeline-phase-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-phase-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+.timeline-count {
+    margin-left: auto;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.timeline-items {
+    padding: 0 1.5rem 1rem;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-item-id {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.timeline-item-title {
+    color: var(--text-secondary);
+}
+
+.timeline-item-status {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.timeline-item-empty {
+    padding: 1rem 0;
+    color: #10B981;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.timeline-item-more {
+    padding: 0.5rem 0;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+    }
+    .timeline-phase-header {
+        flex-wrap: wrap;
+    }
+}
+
+/* --- Light mode overrides for Phase 2 --- */
+.light-mode .heatmap-stat strong {
+    color: #111827;
+}
+
+.light-mode .timeline-phase {
+    background: rgba(0, 0, 0, 0.01);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.light-mode .timeline-phase-header {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.light-mode .timeline-phase-title {
+    color: #111827;
+}
+
+.light-mode .timeline-item-title {
+    color: #374151;
+}

@@ -256,6 +256,69 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const hasExistingData = Object.keys(userState).length > 0;
 
+        // --- INDUSTRY PRESETS (Feature #9) ---
+        const presetBar = document.createElement('div');
+        presetBar.className = 'industry-preset-bar';
+        presetBar.style.cssText = `
+            display: flex;
+            gap: 0.6rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(139, 92, 246, 0.03);
+            border-radius: 12px;
+            border: 1px solid rgba(139, 92, 246, 0.1);
+            align-items: center;
+            flex-wrap: wrap;
+        `;
+        const presets = [
+            { label: 'SaaS Startup', icon: 'fa-cloud', domains: [0,1,2,3,5,7], desc: 'Cloud-first: Access Control, Crypto, Ops Security, Comms Security' },
+            { label: 'Healthcare', icon: 'fa-hospital', domains: [0,1,2,3,4,5,6,7], desc: 'Full scope — HIPAA crosswalk requires all domains' },
+            { label: 'Financial Services', icon: 'fa-university', domains: [0,1,2,3,4,5,6,7], desc: 'PCI-DSS & SOX crosswalk — comprehensive coverage required' },
+            { label: 'Government', icon: 'fa-landmark', domains: [0,1,2,3,4,5,7], desc: 'FedRAMP aligned — Physical Security optional for cloud' },
+            { label: 'Essential Only', icon: 'fa-bolt', domains: [0,1,5], desc: 'Minimum viable: People, Organizational, Technology Controls' }
+        ];
+        presetBar.innerHTML = `
+            <span style="font-size: 0.75rem; color: var(--accent-purple); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; white-space:nowrap;">
+                <i class="fas fa-industry"></i> Industry Presets:
+            </span>
+        `;
+        presets.forEach(preset => {
+            const btn = document.createElement('button');
+            btn.className = 'preset-btn';
+            btn.innerHTML = `<i class="fas ${preset.icon}"></i> ${preset.label}`;
+            btn.title = preset.desc;
+            btn.style.cssText = `
+                background: rgba(255,255,255,0.04); color: var(--text-muted); border: 1px solid var(--border);
+                padding: 5px 12px; border-radius: 6px; font-size: 0.75rem; cursor: pointer;
+                transition: all 0.2s; font-weight: 600; white-space: nowrap;
+            `;
+            btn.addEventListener('click', () => {
+                // Deselect all
+                document.querySelectorAll('.scope-card').forEach((card) => {
+                    if (card.classList.contains('selected')) card.click();
+                });
+                activeDomainIndices = [];
+                // Select preset domains
+                const allCards = document.querySelectorAll('.scope-card');
+                preset.domains.forEach(idx => {
+                    if (allCards[idx] && !allCards[idx].classList.contains('selected')) {
+                        allCards[idx].click();
+                    }
+                });
+                // Flash the button
+                btn.style.background = 'rgba(139, 92, 246, 0.2)';
+                btn.style.color = '#C4B5FD';
+                btn.style.borderColor = 'rgba(139, 92, 246, 0.4)';
+                setTimeout(() => {
+                    btn.style.background = 'rgba(255,255,255,0.04)';
+                    btn.style.color = 'var(--text-muted)';
+                    btn.style.borderColor = 'var(--border)';
+                }, 1500);
+            });
+            presetBar.appendChild(btn);
+        });
+        ui.scopeGrid.parentNode.insertBefore(presetBar, toolbar.nextSibling);
+
         grcData.domains.forEach((dom, index) => {
             const card = document.createElement('div');
             card.className = 'scope-card';
@@ -1193,6 +1256,183 @@ document.addEventListener('DOMContentLoaded', async () => {
                 ui.gapsContainer.appendChild(item);
             });
         }
+
+        // ==========================================
+        // RISK HEATMAP (Feature #3)
+        // ==========================================
+        renderRiskHeatmap(criticalGaps);
+
+        // ==========================================
+        // COMPLIANCE TIMELINE (Feature #5)
+        // ==========================================
+        renderComplianceTimeline(criticalGaps);
+    }
+
+    // --- RISK HEATMAP RENDERER ---
+    function renderRiskHeatmap(gaps) {
+        const container = document.getElementById('riskHeatmapContainer');
+        if (!container) return;
+        container.innerHTML = '';
+
+        // Build 4x4 grid: Impact (Y: Low→Critical) x Likelihood (X: Low→Critical)
+        const grid = [
+            [[], [], [], []], // Impact row 1 (Low)
+            [[], [], [], []], // Impact row 2 (Medium)
+            [[], [], [], []], // Impact row 3 (High)
+            [[], [], [], []]  // Impact row 4 (Critical)
+        ];
+
+        // Map controls to grid cells
+        activeDomainIndices.forEach(globalIdx => {
+            const d = grcData.domains[globalIdx];
+            d.controls.forEach(c => {
+                const ans = userState[c.control_id];
+                if (!ans || ans === 'na' || ans === 'yes' || ans === 'optimized') return;
+                
+                const impact = c.risk_impact || 1;
+                const mult = getMultiplier(ans);
+                
+                // Impact axis (Y): based on risk_impact from data
+                let impactIdx = 0;
+                if (impact >= 4) impactIdx = 3;
+                else if (impact >= 3) impactIdx = 2;
+                else if (impact >= 2) impactIdx = 1;
+                
+                // Likelihood axis (X): inverse of implementation maturity
+                let likelihoodIdx = 3; // Default: highest likelihood if not implemented
+                if (mult >= 0.8) likelihoodIdx = 0;
+                else if (mult >= 0.6) likelihoodIdx = 1;
+                else if (mult >= 0.2) likelihoodIdx = 2;
+                
+                grid[impactIdx][likelihoodIdx].push({
+                    id: c.control_id,
+                    title: c.control_title,
+                    impact: impact,
+                    maturity: mult
+                });
+            });
+        });
+
+        const colors = [
+            ['#10B981', '#FBBF24', '#F59E0B', '#EF4444'],
+            ['#FBBF24', '#F59E0B', '#EF4444', '#DC2626'],
+            ['#F59E0B', '#EF4444', '#DC2626', '#991B1B'],
+            ['#EF4444', '#DC2626', '#991B1B', '#7F1D1D']
+        ];
+
+        const impactLabels = ['Low', 'Medium', 'High', 'Critical'];
+        const likelihoodLabels = ['Low', 'Medium', 'High', 'Critical'];
+
+        let html = `
+            <div class="heatmap-wrapper">
+                <div class="heatmap-y-label"><span>← Impact →</span></div>
+                <div class="heatmap-grid-area">
+                    <div class="heatmap-grid">
+        `;
+
+        // Render top-down (Critical impact first)
+        for (let y = 3; y >= 0; y--) {
+            html += `<div class="heatmap-row-label">${impactLabels[y]}</div>`;
+            for (let x = 0; x < 4; x++) {
+                const cellControls = grid[y][x];
+                const bgColor = colors[y][x];
+                const opacity = cellControls.length > 0 ? 0.85 : 0.15;
+                html += `
+                    <div class="heatmap-cell" style="background:${bgColor}; opacity:${opacity};" title="${cellControls.map(c => 'A.' + c.id).join(', ') || 'No gaps'}">
+                        ${cellControls.length > 0 ? `<span class="heatmap-count">${cellControls.length}</span>` : ''}
+                    </div>
+                `;
+            }
+        }
+
+        html += `
+                    </div>
+                    <div class="heatmap-x-labels">
+                        <span></span>
+                        ${likelihoodLabels.map(l => `<span>${l}</span>`).join('')}
+                    </div>
+                    <div class="heatmap-x-label">← Likelihood of Exploitation →</div>
+                </div>
+            </div>
+        `;
+
+        // Count cells in danger zone
+        const dangerCount = grid[3][2].length + grid[3][3].length + grid[2][3].length;
+        const warningCount = grid[2][2].length + grid[1][3].length + grid[3][1].length;
+
+        html += `
+            <div class="heatmap-summary">
+                <div class="heatmap-stat" style="border-left:3px solid #991B1B;"><strong>${dangerCount}</strong> controls in <span style="color:#EF4444;">Critical Zone</span></div>
+                <div class="heatmap-stat" style="border-left:3px solid #F59E0B;"><strong>${warningCount}</strong> controls in <span style="color:#F59E0B;">Warning Zone</span></div>
+                <div class="heatmap-stat" style="border-left:3px solid #10B981;"><strong>${gaps.length === 0 ? 'All clear' : gaps.length + ' total gaps'}</strong></div>
+            </div>
+        `;
+
+        container.innerHTML = html;
+    }
+
+    // --- COMPLIANCE TIMELINE RENDERER (Feature #5) ---
+    function renderComplianceTimeline(gaps) {
+        const container = document.getElementById('complianceTimeline');
+        if (!container) return;
+        container.innerHTML = '';
+
+        if (gaps.length === 0) {
+            container.innerHTML = '<p style="color:var(--text-muted); font-style:italic; text-align:center; padding:2rem;">No gaps to remediate — maintain current posture.</p>';
+            return;
+        }
+
+        // Sort by multiplier (lowest first = most urgent)
+        const sorted = [...gaps].sort((a, b) => (a.multiplier || 0) - (b.multiplier || 0));
+
+        // Bucket into 30/60/90 day phases
+        const phase1 = sorted.filter(g => (g.multiplier || 0) <= 0.2); // Not implemented + Ad Hoc
+        const phase2 = sorted.filter(g => (g.multiplier || 0) > 0.2 && (g.multiplier || 0) <= 0.5); // Repeatable + Defined
+        const phase3 = sorted.filter(g => (g.multiplier || 0) > 0.5); // Managed ones (quick wins to optimize)
+
+        const phases = [
+            { label: 'Days 1–30', title: 'Critical Remediation', items: phase1, color: '#EF4444', icon: 'fa-fire' },
+            { label: 'Days 31–60', title: 'Process Formalization', items: phase2, color: '#F59E0B', icon: 'fa-cogs' },
+            { label: 'Days 61–90', title: 'Optimization & Audit Prep', items: phase3, color: '#10B981', icon: 'fa-chart-line' }
+        ];
+
+        let html = '<div class="timeline-phases">';
+        phases.forEach(phase => {
+            html += `
+                <div class="timeline-phase">
+                    <div class="timeline-phase-header" style="border-left: 4px solid ${phase.color};">
+                        <div class="timeline-phase-badge" style="background:${phase.color};">
+                            <i class="fas ${phase.icon}"></i>
+                        </div>
+                        <div>
+                            <div class="timeline-phase-label" style="color:${phase.color};">${phase.label}</div>
+                            <div class="timeline-phase-title">${phase.title}</div>
+                        </div>
+                        <span class="timeline-count">${phase.items.length} control${phase.items.length !== 1 ? 's' : ''}</span>
+                    </div>
+                    <div class="timeline-items">
+            `;
+            if (phase.items.length === 0) {
+                html += '<div class="timeline-item-empty">No actions in this phase ✓</div>';
+            } else {
+                phase.items.slice(0, 5).forEach(g => {
+                    const matLabel = g.maturityLabel || g.ans;
+                    html += `
+                        <div class="timeline-item">
+                            <span class="timeline-item-id">A.${g.id}</span>
+                            <span class="timeline-item-title">${g.title}</span>
+                            <span class="timeline-item-status" style="color:${MATURITY_LEVELS[g.ans] ? MATURITY_LEVELS[g.ans].color : '#EF4444'};">${matLabel}</span>
+                        </div>
+                    `;
+                });
+                if (phase.items.length > 5) {
+                    html += `<div class="timeline-item-more">+ ${phase.items.length - 5} more controls</div>`;
+                }
+            }
+            html += '</div></div>';
+        });
+        html += '</div>';
+        container.innerHTML = html;
     }
 
     // ==========================================
@@ -1207,7 +1447,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         setTimeout(() => {
             try {
-                // 1. Gather Calculations
+                // 1. Gather Calculations — uses maturity multipliers
                 let totalC = 0, implC = 0, partC = 0, gapC = 0, naC = 0, pendingC = 0;
                 const criticalGaps = [];
 
@@ -1220,28 +1460,33 @@ document.addEventListener('DOMContentLoaded', async () => {
                         if (!ans) {
                             pendingC++;
                             criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Pending Evaluation', effort: 'TBD', rem: 'Control requires formal evaluation to determine compliance posture.', nist: c.nist_mapping, cis: c.cis_mapping, just: 'Pending formal evaluation.', rationale: 'Visibility Gap: Baseline not established.'}); 
-                            return; // Skip from totalC denominator so score is accurate
+                            return;
                         }
                         
                         totalC++;
                         const impact = c.risk_impact || 1;
+                        const mult = getMultiplier(ans);
                         let fVal = 0; let fTotal = 0;
-                        if (ans === 'yes') { fVal = impact; fTotal = impact; }
-                        else if (ans === 'partial') { fVal = (impact * 0.5); fTotal = impact; }
-                        else if (ans === 'no') { fVal = 0; fTotal = impact; }
+                        if (!isNA(ans)) {
+                            fVal = impact * mult;
+                            fTotal = impact;
+                        }
 
                         if (c.nist_mapping && fTotal > 0) { nistT += fTotal; nistV += fVal; }
                         if (c.cis_mapping && fTotal > 0) { cisT += fTotal; cisV += fVal; }
 
-                        if (ans === 'yes') implC++;
-                        else if (ans === 'partial') { 
-                            partC++; 
-                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Medium', effort: 'Medium', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
-                        }
-                        else if (ans === 'na') naC++;
+                        if (ans === 'yes' || ans === 'optimized') implC++;
+                        else if (isNA(ans)) naC++;
                         else if (ans === 'no') { 
                             gapC++; 
                             criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', effort: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
+                        }
+                        else {
+                            // Maturity levels (adhoc, repeatable, defined, managed)
+                            partC++; 
+                            const ml = MATURITY_LEVELS[ans];
+                            const riskLvl = mult <= 0.4 ? 'High' : 'Medium';
+                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: riskLvl, effort: riskLvl, rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale, maturityLabel: ml ? ml.label : ans}); 
                         }
                     });
                 });
@@ -1318,15 +1563,19 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const logoBase64 = "data:image/png;base64,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";
 
                 // 4. Document Definition
+                // Assessor metadata for PDF
+                const assessorName = userState._assessorName || '';
+                const orgName = userState._orgName || '';
+
                 const docDefinition = {
-                    info: { title: 'ISO 27001 Gap Assessment', author: 'TheHGTech', subject: 'Enterprise GRC Report' },
+                    info: { title: 'ISO 27001 Gap Assessment' + (orgName ? ' — ' + orgName : ''), author: assessorName || 'TheHGTech', subject: 'Enterprise GRC Report' },
                     pageMargins: [40, 60, 40, 60],
                     header: function(currentPage, pageCount) {
                         return { 
                             margin: [40, 20, 40, 0],
                             columns: [
                                 logoBase64 ? { image: logoBase64, width: 20 } : { text: 'TheHGTech', bold: true, color: '#00d9ff' },
-                                { text: 'TheHGTech Enterprise GRC Tool', alignment: 'right', color: '#00d9ff', bold: true, fontSize: 10, margin: [0, 5, 0, 0] }
+                                { text: (orgName ? orgName + ' | ' : '') + 'TheHGTech Enterprise GRC Tool', alignment: 'right', color: '#00d9ff', bold: true, fontSize: 10, margin: [0, 5, 0, 0] }
                             ]
                         };
                     },
@@ -1346,6 +1595,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     content: [
                         { text: 'ISO 27001 Gap Analysis Executive Summary', style: 'mainHeader' },
                         { text: 'Framework: ISO/IEC 27001:2022', style: 'subHeader' },
+                        (assessorName || orgName) ? { text: (orgName ? 'Organization: ' + orgName + '   |   ' : '') + (assessorName ? 'Assessed by: ' + assessorName : ''), fontSize: 10, color: '#374151', margin: [0, 0, 0, 5] } : {},
                         { text: 'Generated on: ' + new Date().toLocaleDateString(), style: 'dateToken' },
                         
                         {
@@ -1465,7 +1715,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let totalC = 0, implC = 0, partC = 0, gapC = 0, naC = 0, pendingC = 0;
                 const criticalGaps = [];
 
-                // Re-calculate totals across active scoping
+                // Assessor metadata for Excel
+                const assessorName = userState._assessorName || '';
+                const orgName = userState._orgName || '';
+                if (assessorName) execSummary.push(["Assessed by:", assessorName]);
+                if (orgName) execSummary.push(["Organization:", orgName]);
+                execSummary.push([]);
+
+                // Re-calculate totals with maturity awareness
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
                     domain.controls.forEach(c => {
@@ -1477,69 +1734,78 @@ document.addEventListener('DOMContentLoaded', async () => {
                         }
                         
                         totalC++;
-                        if (ans === 'yes') implC++;
-                        else if (ans === 'partial') partC++;
-                        else if (ans === 'na') naC++;
-                        else if (ans === 'no') gapC++;
-
-                        if (ans === 'no' || ans === 'partial') {
+                        if (ans === 'yes' || ans === 'optimized') implC++;
+                        else if (isNA(ans)) naC++;
+                        else if (ans === 'no') {
+                            gapC++;
                             const riskText = c.expert_rationale && c.expert_rationale.includes('|') ? c.expert_rationale.split('|')[0].replace('Risk:', '').trim() : "Direct exposure to control failure.";
-                            criticalGaps.push([c.control_id, c.control_title, ans === 'partial' ? 'Medium' : 'High', riskText, c.remediation_advice]);
+                            criticalGaps.push([c.control_id, c.control_title, 'High', riskText, c.remediation_advice]);
+                        } else {
+                            // Maturity levels
+                            partC++;
+                            const ml = MATURITY_LEVELS[ans];
+                            const riskText = c.expert_rationale && c.expert_rationale.includes('|') ? c.expert_rationale.split('|')[0].replace('Risk:', '').trim() : "Process not fully mature.";
+                            criticalGaps.push([c.control_id, c.control_title, ml ? ml.label : 'Partial', riskText, c.remediation_advice]);
                         }
                     });
                 });
 
                 execSummary.push(["Total Controls evaluated:", totalC]);
                 execSummary.push(["Pending Evaluation:", pendingC]);
-                execSummary.push(["Implemented:", implC]);
-                execSummary.push(["Partial (In-Progress):", partC]);
-                execSummary.push(["Control Gap:", gapC]);
+                execSummary.push(["Fully Implemented:", implC]);
+                execSummary.push(["Maturity In-Progress:", partC]);
+                execSummary.push(["Control Gap (Not Implemented):", gapC]);
                 execSummary.push(["Not Applicable:", naC]);
                 execSummary.push(["Overall Readiness Score:", ui.overallScore.innerText]);
                 execSummary.push([]);
                 
                 execSummary.push(["Top Risk Gaps (Priority Remediation Checklist)"]);
-                execSummary.push(["Control ID", "Control Title", "Risk Priority", "Risk & Consequence", "Strategic Remediation Advice"]);
+                execSummary.push(["Control ID", "Control Title", "Risk / Maturity Level", "Risk & Consequence", "Strategic Remediation Advice"]);
                 criticalGaps.forEach(g => execSummary.push(g));
 
-                // SHEET 2: Gap Analysis Data
+                // SHEET 2: Enriched Gap Analysis Data (Feature #7)
                 const exportData = [];
-                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Risk Level", "Control Criticality", "Score Impact", "Applicability Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice", "NIST CSF 2.0", "CIS Controls v8", "N/A Comment / Internal Note", "Expert Rationale"]);
+                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Maturity Level", "Maturity Score", "Risk Level", "Control Criticality", "Score Impact", "Evidence Notes", "N/A Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice", "NIST CSF 2.0", "CIS Controls v8", "Expert Rationale"]);
 
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
                     domain.controls.forEach(control => {
                         const rawStatus = userState[control.control_id] || "Not Evaluated";
+                        const ml = MATURITY_LEVELS[rawStatus];
+                        const mult = getMultiplier(rawStatus);
                         let friendlyStatus = "Not Evaluated";
+                        let maturityLabel = "N/A";
                         let riskLevel = "High";
 
-                        if (rawStatus === 'yes') { friendlyStatus = "Implemented"; riskLevel = "Low"; }
-                        else if (rawStatus === 'partial') { friendlyStatus = "Partial (In-Progress)"; riskLevel = "Medium"; }
-                        else if (rawStatus === 'no') { friendlyStatus = "Control Gap"; riskLevel = "High"; }
-                        else if (rawStatus === 'na') { friendlyStatus = "Not Applicable"; riskLevel = "None"; }
+                        if (rawStatus === 'yes' || rawStatus === 'optimized') { friendlyStatus = "Fully Implemented"; maturityLabel = "Optimized (100%)"; riskLevel = "Low"; }
+                        else if (rawStatus === 'managed') { friendlyStatus = "Managed"; maturityLabel = "Managed (80%)"; riskLevel = "Low"; }
+                        else if (rawStatus === 'defined' || rawStatus === 'partial') { friendlyStatus = "Defined"; maturityLabel = "Defined (60%)"; riskLevel = "Medium"; }
+                        else if (rawStatus === 'repeatable') { friendlyStatus = "Repeatable"; maturityLabel = "Repeatable (40%)"; riskLevel = "Medium"; }
+                        else if (rawStatus === 'adhoc') { friendlyStatus = "Ad Hoc"; maturityLabel = "Ad Hoc (20%)"; riskLevel = "High"; }
+                        else if (rawStatus === 'no') { friendlyStatus = "Not Implemented"; maturityLabel = "None (0%)"; riskLevel = "Critical"; }
+                        else if (rawStatus === 'na') { friendlyStatus = "Not Applicable"; maturityLabel = "N/A"; riskLevel = "None"; }
 
-                        let scoreImpact = "Neutral";
                         const impact = control.risk_impact || 1;
-                        if (rawStatus === 'yes') scoreImpact = "+" + impact;
-                        else if (rawStatus === 'partial') scoreImpact = "+" + (impact * 0.5);
-                        else if (rawStatus === 'no') scoreImpact = "-" + impact + " (Gap)";
+                        const scoreImpact = '+' + (impact * mult).toFixed(1) + ' / ' + impact;
 
                         exportData.push([
                             domain.name,
                             "A." + control.control_id,
                             control.control_title,
                             friendlyStatus,
+                            maturityLabel,
+                            (mult * 100) + '%',
                             riskLevel,
                             control.criticality || "Medium",
                             scoreImpact,
-                            userState[control.control_id + '_just'] || "N/A",
+                            userState[control.control_id + '_notes'] || "",
+                            userState[control.control_id + '_just'] || "",
                             control.objective,
                             control.auditor_question,
                             control.evidence_required,
                             control.remediation_advice,
                             control.nist_mapping || "N/A",
                             control.cis_mapping || "N/A",
-                            userState[control.control_id + '_just'] || "",
                             control.expert_rationale || ""
                         ]);
                     });
