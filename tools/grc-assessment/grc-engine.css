@@ -183,13 +183,14 @@ body {
 
 .grc-container {
     display: flex;
-    height: 800px;
-    /* Fixed height for embedded app */
+    min-height: 85vh;
+    /* Auto height to fit all content */
     background: rgba(10, 10, 10, 0.4);
     border: 1px solid var(--border);
     border-radius: 24px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 /* Sidebar with glassmorphism */
@@ -202,6 +203,11 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 10;
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    align-self: flex-start;
+    overflow-y: auto;
 }
 
 .sidebar-header {

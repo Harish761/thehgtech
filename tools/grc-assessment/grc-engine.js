@@ -492,7 +492,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
         ui.viewport.appendChild(intro);
 
-        domain.controls.forEach(control => {
+        domain.controls.forEach((control, idx) => {
             const card = document.createElement('article');
             card.className = 'control-card';
             card.id = `card_${control.control_id}`;
@@ -685,12 +685,16 @@ document.addEventListener('DOMContentLoaded', async () => {
                 gap: 8px;
             `;
             nextBtn.addEventListener('click', () => {
-                const nextCard = card.nextElementSibling;
-                if (nextCard && nextCard.classList.contains('control-card')) {
-                    const offset = nextCard.getBoundingClientRect().top + window.scrollY - 150;
+                // Find the next control-card sibling (skip non-card elements)
+                let nextSibling = card.nextElementSibling;
+                while (nextSibling && !nextSibling.classList.contains('control-card')) {
+                    nextSibling = nextSibling.nextElementSibling;
+                }
+                if (nextSibling) {
+                    const offset = nextSibling.getBoundingClientRect().top + window.scrollY - 150;
                     window.scrollTo({ top: offset, behavior: 'smooth' });
                 } else {
-                    // Try to trigger Next Domain if it's visible
+                    // Last card — try to trigger Next Domain
                     if (ui.btnNextDomain && ui.btnNextDomain.style.display !== 'none') {
                         ui.btnNextDomain.click();
                     }
