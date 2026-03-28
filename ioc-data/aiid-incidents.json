@@ -993,50 +993,18 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1318",
-      "incident_id": 1318,
-      "title": "School's Suspected AI-Cheating Allegation Precedes Student's Reported Suicide in Greater Noida, Indi",
-      "date": "2025-12-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1319",
       "incident_id": 1319,
       "title": "Purported Deepfake Investment Video Reportedly Used in Scam That Defrauded Turkish Couple of 1.5 Mil",
       "date": "2025-12-28",
       "category": "deepfake",
       "severity": "critical"
-    },
-    {
-      "id": "AIID-1320",
-      "incident_id": 1320,
-      "title": "Purportedly AI-Manipulated Image Reported to Falsely Depict Taiwanese Politician Kao Chia-yu Posing ",
-      "date": "2025-12-28",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1321",
-      "incident_id": 1321,
-      "title": "Shilpa Shetty Alleges AI-Enabled Impersonation and Misuse of Likeness in Mumbai High Court Filing",
-      "date": "2025-12-28",
-      "category": "fraud",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1322",
-      "incident_id": 1322,
-      "title": "Senior Kerala Congress Leader N. Subrahmanian Reportedly Booked for Sharing Purportedly AI-Generated",
-      "date": "2025-12-28",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 129,
+    "total": 125,
     "last7Days": 14,
     "last30Days": 63
   },
-  "lastUpdated": "2026-03-28T02:22:26.833939+05:30"
+  "lastUpdated": "2026-03-28T08:43:45.633262+05:30"
 }
