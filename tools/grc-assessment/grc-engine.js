@@ -96,6 +96,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         }, 2000);
     }
 
+    function parseMarkdown(text) {
+        if (!text) return '';
+        return text
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.*?)\*/g, '<em>$1</em>')
+            .replace(/\n\n/g, '<br/><br/>');
+    }
+
     function persistState() {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
         flashSaveIndicator();
@@ -514,7 +522,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
                 <h3 class="control-title" style="margin-top:0.2rem;">${control.control_title}</h3>
                 <p class="control-objective" style="color:var(--text-muted); font-size:0.85rem; margin-bottom: 2rem; font-style: italic;">
-                    <i class="fas fa-bullseye"></i> Objective: ${control.objective}
+                    <i class="fas fa-bullseye"></i> Objective: ${parseMarkdown(control.objective)}
                 </p>
 
                 ${control.expert_rationale ? `
@@ -526,23 +534,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                         ${control.expert_rationale.includes('|') 
                             ? control.expert_rationale.split('|').map(part => {
                                 const [label, text] = part.split(':');
-                                return `<div style="margin-bottom:8px;"><strong>${label}:</strong> ${text}</div>`;
+                                return `<div style="margin-bottom:8px;"><strong>${label}:</strong> ${parseMarkdown(text)}</div>`;
                             }).join('')
-                            : `"${control.expert_rationale}"`
+                            : parseMarkdown(control.expert_rationale)
                         }
                     </div>
                 </div>
                 ` : ''}
 
                 <div class="control-question">
-                    <strong>Auditor Check:</strong> ${control.auditor_question}
+                    <strong>Auditor Check:</strong> ${parseMarkdown(control.auditor_question)}
                 </div>
                 <details class="control-evidence" style="margin-top:1rem; cursor:pointer;" open>
                     <summary style="font-weight:bold; color:var(--accent-green); outline:none;">
                         <i class="fas fa-folder-open"></i> Example Evidence
                     </summary>
                     <div style="padding-top:0.5rem; color:var(--text-muted); font-size:0.9rem;">
-                        ${control.evidence_required}
+                        ${parseMarkdown(control.evidence_required)}
                     </div>
                 </details>
                 
