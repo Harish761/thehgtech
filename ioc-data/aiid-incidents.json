@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1430",
+      "incident_id": 1430,
+      "title": "Anthropic's Claude Was Reportedly Jailbroken To Allegedly Help Steal Sensitive Mexican Government Da",
+      "date": "2026-03-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1431",
+      "incident_id": 1431,
+      "title": "Google Gemini Reportedly Reinforced Delusions,  Allegedly Contributing to Florida User's Near-Harm E",
+      "date": "2026-03-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-71",
       "incident_id": 71,
       "title": "Google Waymo Vehicle and Bus Allegedly Collide in California",
@@ -991,20 +1007,12 @@
       "date": "2025-12-30",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1319",
-      "incident_id": 1319,
-      "title": "Purported Deepfake Investment Video Reportedly Used in Scam That Defrauded Turkish Couple of 1.5 Mil",
-      "date": "2025-12-28",
-      "category": "deepfake",
-      "severity": "critical"
     }
   ],
   "stats": {
-    "total": 125,
-    "last7Days": 14,
-    "last30Days": 63
+    "total": 126,
+    "last7Days": 16,
+    "last30Days": 65
   },
-  "lastUpdated": "2026-03-28T18:46:41.719160+05:30"
+  "lastUpdated": "2026-03-28T22:18:10.069900+05:30"
 }
