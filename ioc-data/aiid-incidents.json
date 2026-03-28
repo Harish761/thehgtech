@@ -25,6 +25,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1433",
+      "incident_id": 1433,
+      "title": "Google Antigravity Reportedly Deleted User's Entire D: Drive While Clearing Project Cache",
+      "date": "2026-03-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1434",
+      "incident_id": 1434,
+      "title": "DOJ Attorney Reportedly Used AI to File Brief With Purportedly Fabricated Quotes and Misstated Case ",
+      "date": "2026-03-28",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-71",
       "incident_id": 71,
       "title": "Google Waymo Vehicle and Bus Allegedly Collide in California",
@@ -1018,9 +1034,9 @@
     }
   ],
   "stats": {
-    "total": 127,
-    "last7Days": 9,
-    "last30Days": 66
+    "total": 129,
+    "last7Days": 11,
+    "last30Days": 68
   },
-  "lastUpdated": "2026-03-29T00:37:10.846822+05:30"
+  "lastUpdated": "2026-03-29T02:16:33.593827+05:30"
 }
