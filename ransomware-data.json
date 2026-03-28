@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-03-28T02:11:44.069052",
+  "last_updated": "2026-03-28T12:56:40.117722",
   "period": "Last 7 days",
-  "total_groups": 24,
-  "total_victims": 245,
+  "total_groups": 23,
+  "total_victims": 240,
   "groups": [
     {
       "name": "Qilin",
@@ -633,88 +633,85 @@
       ]
     },
     {
-      "name": "Thegentlemen",
-      "count": 11,
+      "name": "Payload",
+      "count": 9,
       "victims": [
         {
-          "name": "Delta Ducon Engenharia",
-          "date": "2026-03-23T14:40:07+00:00",
-          "url": "https://www.ransomware.live/id/RGVsdGEgRHVjb24gRW5nZW5oYXJpYUB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-03-23T14:40:07+00:00"
+          "name": "A A Al Moosa Enterprises (ARENCO Group)",
+          "date": "2026-03-28 08:18:45.086030",
+          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/c41b26fb-d454-4eb3-a1d1-e07b9abb64a1",
+          "discovered_date": "2026-03-28T08:18:45.086030"
         },
         {
-          "name": "Grupo Tawa",
-          "date": "2026-03-23T14:38:42+00:00",
-          "url": "https://www.ransomware.live/id/R3J1cG8gVGF3YUB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-03-23T14:38:42+00:00"
+          "name": "carlysle.net",
+          "date": "2026-03-26 23:47:14.441041",
+          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/788aae8a-ed19-43c2-b23d-f9ec73282173",
+          "discovered_date": "2026-03-26T23:47:14.441041"
         },
         {
-          "name": "Omikenshi",
-          "date": "2026-03-23T14:37:17+00:00",
-          "url": "https://www.ransomware.live/id/T21pa2Vuc2hpQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-03-23T14:37:17+00:00"
+          "name": "Vancompare Insurance",
+          "date": "2026-03-25 11:20:27.663738",
+          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/cdfce212-ac3c-4271-a05a-b5cceb8cc366",
+          "discovered_date": "2026-03-25T11:20:27.663738"
         },
         {
-          "name": "Distritech",
-          "date": "2026-03-23T14:35:52+00:00",
-          "url": "https://www.ransomware.live/id/RGlzdHJpdGVjaEB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-03-23T14:35:52+00:00"
+          "name": "iGLS",
+          "date": "2026-03-23 22:05:00.543853",
+          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/a98b42af-a6d6-4981-b5f0-a6c2f8d438c1",
+          "discovered_date": "2026-03-23T22:05:00.543853"
         },
         {
-          "name": "PTT Philippines",
-          "date": "2026-03-22T10:43:26+00:00",
-          "url": "https://www.ransomware.live/id/UFRUIFBoaWxpcHBpbmVzQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-03-22T10:43:26+00:00"
+          "name": "A A Al Moosa Enterprises (ARENCO Group)",
+          "date": "2026-03-28T08:18:45+00:00",
+          "url": "https://www.ransomware.live/id/QSBBIEFsIE1vb3NhIEVudGVycHJpc2VzIChBUkVOQ08gR3JvdXApQHBheWxvYWQ=",
+          "discovered_date": "2026-03-28T08:18:45+00:00"
         },
         {
-          "name": "SATS Sports Club Sweden",
-          "date": "2026-03-22T10:42:37+00:00",
-          "url": "https://www.ransomware.live/id/U0FUUyBTcG9ydHMgQ2x1YiBTd2VkZW5AdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-03-22T10:42:37+00:00"
+          "name": "carlysle.net",
+          "date": "2026-03-26T23:47:14+00:00",
+          "url": "https://www.ransomware.live/id/Y2FybHlzbGUubmV0QHBheWxvYWQ=",
+          "discovered_date": "2026-03-26T23:47:14+00:00"
         },
         {
-          "name": "MEDICUS SHUPPAN",
-          "date": "2026-03-21T12:10:45+00:00",
-          "url": "https://www.ransomware.live/id/TUVESUNVUyBTSFVQUEFOQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-03-21T12:10:45+00:00"
+          "name": "Vancompare Insurance",
+          "date": "2026-03-25T11:20:27+00:00",
+          "url": "https://www.ransomware.live/id/VmFuY29tcGFyZSBJbnN1cmFuY2VAcGF5bG9hZA==",
+          "discovered_date": "2026-03-25T11:20:27+00:00"
         },
         {
-          "name": "Rajagiri Hospital",
-          "date": "2026-03-21T12:09:20+00:00",
-          "url": "https://www.ransomware.live/id/UmFqYWdpcmkgSG9zcGl0YWxAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-03-21T12:09:20+00:00"
+          "name": "iGLS",
+          "date": "2026-03-23T22:05:00+00:00",
+          "url": "https://www.ransomware.live/id/aUdMU0BwYXlsb2Fk",
+          "discovered_date": "2026-03-23T22:05:00+00:00"
         },
         {
-          "name": "Micro Leasing",
-          "date": "2026-03-21T12:07:51+00:00",
-          "url": "https://www.ransomware.live/id/TWljcm8gTGVhc2luZ0B0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-03-21T12:07:51+00:00"
-        },
-        {
-          "name": "Groupe Caddac",
-          "date": "2026-03-21T12:06:21+00:00",
-          "url": "https://www.ransomware.live/id/R3JvdXBlIENhZGRhY0B0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-03-21T12:06:21+00:00"
+          "name": "HOPPECKE Singapore",
+          "date": "2026-03-22T12:04:12+00:00",
+          "url": "https://www.ransomware.live/id/SE9QUEVDS0UgU2luZ2Fwb3JlQHBheWxvYWQ=",
+          "discovered_date": "2026-03-22T12:04:12+00:00"
         }
       ],
-      "industries": [],
-      "countries": [
-        "BR",
-        "CA",
-        "IN",
-        "JP",
-        "N/A"
+      "industries": [
+        "Financial Services",
+        "Not Found"
       ],
-      "trend": "up",
-      "trend_percentage": 15,
+      "countries": [
+        "AE",
+        "ES",
+        "GB",
+        "SG",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
       "daily_counts": [
+        1,
         2,
-        4,
         0,
+        2,
+        2,
         0,
-        0,
-        0,
-        0
+        2
       ]
     },
     {
@@ -874,75 +871,6 @@
       ]
     },
     {
-      "name": "Payload",
-      "count": 7,
-      "victims": [
-        {
-          "name": "carlysle.net",
-          "date": "2026-03-26 23:47:14.441041",
-          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/788aae8a-ed19-43c2-b23d-f9ec73282173",
-          "discovered_date": "2026-03-26T23:47:14.441041"
-        },
-        {
-          "name": "Vancompare Insurance",
-          "date": "2026-03-25 11:20:27.663738",
-          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/cdfce212-ac3c-4271-a05a-b5cceb8cc366",
-          "discovered_date": "2026-03-25T11:20:27.663738"
-        },
-        {
-          "name": "iGLS",
-          "date": "2026-03-23 22:05:00.543853",
-          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/a98b42af-a6d6-4981-b5f0-a6c2f8d438c1",
-          "discovered_date": "2026-03-23T22:05:00.543853"
-        },
-        {
-          "name": "carlysle.net",
-          "date": "2026-03-26T23:47:14+00:00",
-          "url": "https://www.ransomware.live/id/Y2FybHlzbGUubmV0QHBheWxvYWQ=",
-          "discovered_date": "2026-03-26T23:47:14+00:00"
-        },
-        {
-          "name": "Vancompare Insurance",
-          "date": "2026-03-25T11:20:27+00:00",
-          "url": "https://www.ransomware.live/id/VmFuY29tcGFyZSBJbnN1cmFuY2VAcGF5bG9hZA==",
-          "discovered_date": "2026-03-25T11:20:27+00:00"
-        },
-        {
-          "name": "iGLS",
-          "date": "2026-03-23T22:05:00+00:00",
-          "url": "https://www.ransomware.live/id/aUdMU0BwYXlsb2Fk",
-          "discovered_date": "2026-03-23T22:05:00+00:00"
-        },
-        {
-          "name": "HOPPECKE Singapore",
-          "date": "2026-03-22T12:04:12+00:00",
-          "url": "https://www.ransomware.live/id/SE9QUEVDS0UgU2luZ2Fwb3JlQHBheWxvYWQ=",
-          "discovered_date": "2026-03-22T12:04:12+00:00"
-        }
-      ],
-      "industries": [
-        "Financial Services",
-        "Not Found"
-      ],
-      "countries": [
-        "ES",
-        "GB",
-        "SG",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        1,
-        2,
-        0,
-        2,
-        2,
-        0,
-        0
-      ]
-    },
-    {
       "name": "ALP-001",
       "count": 7,
       "victims": [
@@ -1007,6 +935,67 @@
         0,
         2,
         2,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Thegentlemen",
+      "count": 6,
+      "victims": [
+        {
+          "name": "Delta Ducon Engenharia",
+          "date": "2026-03-23T14:40:07+00:00",
+          "url": "https://www.ransomware.live/id/RGVsdGEgRHVjb24gRW5nZW5oYXJpYUB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-03-23T14:40:07+00:00"
+        },
+        {
+          "name": "Grupo Tawa",
+          "date": "2026-03-23T14:38:42+00:00",
+          "url": "https://www.ransomware.live/id/R3J1cG8gVGF3YUB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-03-23T14:38:42+00:00"
+        },
+        {
+          "name": "Omikenshi",
+          "date": "2026-03-23T14:37:17+00:00",
+          "url": "https://www.ransomware.live/id/T21pa2Vuc2hpQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-03-23T14:37:17+00:00"
+        },
+        {
+          "name": "Distritech",
+          "date": "2026-03-23T14:35:52+00:00",
+          "url": "https://www.ransomware.live/id/RGlzdHJpdGVjaEB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-03-23T14:35:52+00:00"
+        },
+        {
+          "name": "PTT Philippines",
+          "date": "2026-03-22T10:43:26+00:00",
+          "url": "https://www.ransomware.live/id/UFRUIFBoaWxpcHBpbmVzQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-03-22T10:43:26+00:00"
+        },
+        {
+          "name": "SATS Sports Club Sweden",
+          "date": "2026-03-22T10:42:37+00:00",
+          "url": "https://www.ransomware.live/id/U0FUUyBTcG9ydHMgQ2x1YiBTd2VkZW5AdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-03-22T10:42:37+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "BR",
+        "JP",
+        "PE",
+        "PH",
+        "SE"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        2,
+        4,
+        0,
+        0,
+        0,
         0,
         0
       ]
@@ -1396,14 +1385,8 @@
     },
     {
       "name": "Osiris",
-      "count": 2,
+      "count": 1,
       "victims": [
-        {
-          "name": "Mantra Softech Pvt",
-          "date": "2026-03-23 14:50:37.512656",
-          "url": "",
-          "discovered_date": "2026-03-23T14:50:37.512656"
-        },
         {
           "name": "Mantra Softech Pvt",
           "date": "2026-03-23T14:50:37+00:00",
@@ -1411,9 +1394,7 @@
           "discovered_date": "2026-03-23T14:50:37+00:00"
         }
       ],
-      "industries": [
-        "Technology"
-      ],
+      "industries": [],
       "countries": [
         "IN"
       ],
@@ -1421,34 +1402,7 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Kairos",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Resch Maschinenbau",
-          "date": "2026-03-21T08:58:59+00:00",
-          "url": "https://www.ransomware.live/id/UmVzY2ggTWFzY2hpbmVuYmF1QGthaXJvcw==",
-          "discovered_date": "2026-03-21T08:58:59+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "DE"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
+        1,
         0,
         0,
         0,
