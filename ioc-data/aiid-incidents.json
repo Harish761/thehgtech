@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1434",
+      "incident_id": 1434,
+      "title": "DOJ Attorney Reportedly Used AI to File Brief With Purportedly Fabricated Quotes and Misstated Case ",
+      "date": "2026-03-29",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1435",
+      "incident_id": 1435,
+      "title": "Purportedly AI-Edited Obscene Clip Reportedly Impersonated Thai Actor Khunnapat Pichetworawut in Pai",
+      "date": "2026-03-29",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1436",
+      "incident_id": 1436,
+      "title": "Acclarent TruDi Navigation System Was Alleged to Have Misguided Sinus Surgery, Reportedly Contributi",
+      "date": "2026-03-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1430",
       "incident_id": 1430,
       "title": "Anthropic's Claude Was Reportedly Jailbroken To Allegedly Help Steal Sensitive Mexican Government Da",
@@ -30,14 +54,6 @@
       "title": "Google Antigravity Reportedly Deleted User's Entire D: Drive While Clearing Project Cache",
       "date": "2026-03-28",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1434",
-      "incident_id": 1434,
-      "title": "DOJ Attorney Reportedly Used AI to File Brief With Purportedly Fabricated Quotes and Misstated Case ",
-      "date": "2026-03-28",
-      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -1034,9 +1050,9 @@
     }
   ],
   "stats": {
-    "total": 129,
-    "last7Days": 11,
-    "last30Days": 68
+    "total": 131,
+    "last7Days": 13,
+    "last30Days": 70
   },
-  "lastUpdated": "2026-03-29T02:16:33.593827+05:30"
+  "lastUpdated": "2026-03-29T09:01:49.705244+05:30"
 }
