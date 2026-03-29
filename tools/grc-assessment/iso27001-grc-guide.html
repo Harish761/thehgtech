@@ -478,10 +478,11 @@
         <aside class="doc-sidebar">
             <div style="font-size:0.7rem; color:var(--accent-purple); font-weight:800; text-transform:uppercase; margin-bottom:1.5rem; letter-spacing:1.5px;">Product Documentation</div>
             <nav id="toc">
-                <a href="#introduction" class="sidebar-item active">The GRC Engine Engine</a>
+                <a href="#introduction" class="sidebar-item active">The GRC Engine</a>
                 <a href="#what-it-is" class="sidebar-item">Technical Scope</a>
                 <a href="#workflow" class="sidebar-item">Assessment Workflow</a>
-                <a href="#the-scoring-math" class="sidebar-item">Scoring Logic (The Math)</a>
+                <a href="#the-scoring-math" class="sidebar-item">Scoring Methodology</a>
+                <a href="#benchmarks" class="sidebar-item">Realistic Scenarios</a>
                 <a href="#output-strategy" class="sidebar-item">Output Strategy</a>
             </nav>
         </aside>
@@ -490,14 +491,14 @@
         <main class="doc-main">
             
             <section class="doc-section" id="introduction">
-                <div class="hero-badge"><i class="fas fa-microchip"></i> v1.2.4 Product Manual</div>
-                <h1>The GRC Engine: <span class="gradient-text">Documentation</span></h1>
-                <p class="lead-text">Welcome to the definitive methodology guide for the TheHGTech Triple Framework GRC Engine. This manual covers the scoring logic, multi-framework mapping, and operational utilization of the toolkit.</p>
+                <div class="hero-badge"><i class="fas fa-microchip"></i> v1.3.0 (Decoupled Engine)</div>
+                <h1>The GRC Engine: <span class="gradient-text">Methodology</span></h1>
+                <p class="lead-text">Welcome to the definitive methodology guide for the TheHGTech Decoupled Triple-Framework GRC Engine. This manual covers the independent scoring logic, mapping depth, and operational utilization of the toolkit.</p>
 
                 <div class="reality-check">
                     <h3 style="color:#EF4444; margin-top:0;"><i class="fas fa-triangle-exclamation"></i> Critical Expectations</h3>
                     <p style="margin-bottom:0; font-size:1.05rem; opacity:0.9;">
-                        The GRC Engine is a <strong>High-Precision Discovery Tool</strong> designed for gap analysis and readiness preparation. It is NOT a formal certification platform. An 80% score here does not mean you are ISO 27001 certified; it means your internal controls are statistically prepared for a formal external audit.
+                        The GRC Engine is a <strong>High-Precision Discovery Tool</strong> designed for gap analysis. It is NOT a formal certification platform. Scores are intentionally decoupled; achieving 100% on ISO does not imply 100% on CIS, as technical safeguards are measured with significantly higher rigor.
                     </p>
                 </div>
             </section>
@@ -534,73 +535,112 @@
                     <h3 style="color:var(--accent-cyan);"><i class="fas fa-compass"></i> Phase 1: Dynamic Scoping</h3>
                     <p>The first step is selecting your relevant ISO Domains. The engine will hide irrelevant controls, ensuring a lean, high-velocity audit experience. For most technical firms, <strong>Domain 5 (Organizational)</strong> and <strong>Domain 8 (Technological)</strong> are the high-impact starting points.</p>
 
-                    <h3 style="color:var(--accent-cyan);"><i class="fas fa-pencil"></i> Phase 2: Maturity Selection</h3>
-                    <p>The engine offers three maturity levels per control point:</p>
-                    <ul>
-                        <li><strong>Yes (Full)</strong>: Control is documented, socialized, and generating logs/proof.</li>
-                        <li><strong>Partial</strong>: Control is active but lacks formal documentation or regular reviews.</li>
-                        <li><strong>No (Gap)</strong>: Control is non-existent. This triggers "Remediation Insights" in the results.</li>
-                    </ul>
+                    <h3 style="color:var(--accent-cyan);"><i class="fas fa-pencil"></i> Phase 2: Maturity Assessment (8-Tier Multi-Framework Scale)</h3>
+                    <p>The v1.3.0 engine utilizes a nuanced maturity scale to reward progress while maintaining strict technical rigor. Notice how <strong>Managed</strong> processes provide 80% credit for ISO but only 40% for CIS due to the lack of technical evidence.</p>
+
+                    <div class="tech-table-wrapper">
+                        <table class="tech-table">
+                            <thead>
+                                <tr>
+                                    <th>Maturity Level</th>
+                                    <th>Auditor Definition</th>
+                                    <th>ISO Credit</th>
+                                    <th>NIST Multi.</th>
+                                    <th>CIS Multi.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="prop-key">Optimized</td><td>Automated, continuous monitoring.</td><td>100%</td><td>1.0x</td><td>1.0x</td></tr>
+                                <tr><td class="prop-key">Yes / Full</td><td>Fully implemented; Audit-ready.</td><td>100%</td><td>1.0x</td><td>1.00x</td></tr>
+                                <tr><td class="prop-key">Managed</td><td>Measured and Supervised.</td><td>80%</td><td>0.75x</td><td>0.40x</td></tr>
+                                <tr><td class="prop-key">Defined</td><td>Standardized and Documented.</td><td>60%</td><td>0.60x</td><td>0.30x</td></tr>
+                                <tr><td class="prop-key">Repeatable</td><td>Consistent but informal.</td><td>40%</td><td>0.40x</td><td>0.20x</td></tr>
+                                <tr><td class="prop-key">Ad Hoc</td><td>Reactive and inconsistent.</td><td>20%</td><td>0.20x</td><td>0.10x</td></tr>
+                                <tr><td class="prop-key">No / Gap</td><td>No evidence of control.</td><td>0%</td><td>0x</td><td>0x</td></tr>
+                                <tr><td class="prop-key">N / A</td><td>Formally scoped out.</td><td>Excluded</td><td>Excluded</td><td>Excluded</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <h3 style="color:var(--accent-cyan);"><i class="fas fa-eye"></i> Phase 3: Consultant Mode</h3>
                     <p>Toggling "Consultant Insights" allows teams to understand the <strong>Technical Rationale</strong> behind the compliance requirement. This bridges the gap between the CISO's office and the DevOps team.</p>
                 </div>
             </section>
 
-            <!-- 4. Scoring Logic -->
+            <!-- 4. Scoring Methodology -->
             <section class="doc-section" id="the-scoring-math">
-                <h2>Scoring Methodology & Variances</h2>
+                <h2>Scoring Methodology: Decoupled Engines</h2>
                 <div class="doc-content">
-                    <h3 style="color:var(--accent-cyan);"><i class="fas fa-balance-scale"></i> 1. The Risk-Based Weighting Engine</h3>
-                    <p>Unlike basic checklist tools that treat "Clean Desk Policy" and "Multi-Factor Authentication" as equal failures, TheHGTech GRC Engine utilizes a <strong>1-10 Risk Impact Scaling</strong> model.</p>
-                    <ul>
-                        <li><strong>High Criticality (Impact 8-10):</strong> Controls preventing direct data breaches or existential threats (e.g., Cryptography, MFA, Incident Response).</li>
-                        <li><strong>Medium Criticality (Impact 5-7):</strong> Vital operational or governance controls (e.g., Supplier Risk, Asset Inventories).</li>
-                        <li><strong>Low Criticality (Impact 1-4):</strong> Administrative or minor physical controls (e.g., Cabling Security).</li>
-                    </ul>
-                    <p>Your score is calculated as: <code>(Sum of Earned Impact) &divide; (Total Applicable Risk Impact)</code>.</p>
+                    <p>Your assessment answer ripples through three mathematically independent calculators. Each framework evaluates your response against its own benchmark denominator and technical rigor requirement.</p>
 
-                    <h3 style="color:var(--accent-cyan); margin-top: 2rem;"><i class="fas fa-ban"></i> 2. The N/A Mathematical Exclusion</h3>
-                    <p>Answering "Not Applicable" does not grant you free points, nor does it penalize you. Instead, the Risk Engine completely removes that control's Risk Impact from the denominator. This ensures that your Readiness Score only reflects your posture against the controls that actively apply to your scoped threat landscape.</p>
-
-                    <h3 style="color:var(--accent-cyan); margin-top: 2rem;"><i class="fas fa-layer-group"></i> 3. Cross-Framework Variances</h3>
-                    <p>A common executive question: <em>"Why is my ISO Readiness 70% but my CIS score only 45%?"</em></p>
-                    <p>This is expected. Each framework has a different <strong>Audit Tolerance</strong>:</p>
+                    <h3 style="color:var(--accent-cyan); margin-top: 2rem;"><i class="fas fa-microchip"></i> 1. The Decoupling Matrix</h3>
+                    <p>Unlike basic tools, TheHGTech engine uses a <strong>Framework-Specific Mapping Matrix</strong> to maintain audit realism:</p>
 
                     <div class="tech-table-wrapper">
                         <table class="tech-table">
                             <thead>
                                 <tr>
                                     <th>Metric</th>
-                                    <th>ISO 27001 Logic</th>
-                                    <th>NIST CSF Logic</th>
-                                    <th>CIS v8 Logic</th>
+                                    <th>ISO 27001:2022</th>
+                                    <th>NIST CSF 2.0</th>
+                                    <th>CIS v8</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="prop-key">Focus Area</td>
-                                    <td>Policy & Governance</td>
-                                    <td>Operational Balance</td>
-                                    <td>Technical Safeguards</td>
+                                    <td class="prop-key">Target Benchmarks</td>
+                                    <td>93 Controls</td>
+                                    <td>106 Subcategories</td>
+                                    <td>153 Safeguards</td>
                                 </tr>
                                 <tr>
-                                    <td class="prop-key">Mapping</td>
-                                    <td>Direct (1:1 per Annex A)</td>
-                                    <td>Cross-Mapped (1:N)</td>
-                                    <td>Deep Technical (1:NN)</td>
+                                    <td class="prop-key">Mapping Strength</td>
+                                    <td>1.00 (Direct)</td>
+                                    <td>0.95 (High Alignment)</td>
+                                    <td>0.85 (Partial / Tech)</td>
                                 </tr>
                                 <tr>
-                                    <td class="prop-key">Scoring Rigor</td>
-                                    <td>Moderate (Design)</td>
-                                    <td>Strategic (Function)</td>
-                                    <td>Extremely Strict (Tech)</td>
+                                    <td class="prop-key">Weighting Goal</td>
+                                    <td>ISO Management (ISMS)</td>
+                                    <td>Outcome Delivery</td>
+                                    <td>Engineering Rigor</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <p>In essence: <strong>CIS v8</strong> requires specific technical proofs. If you answer "Partial" to an ISO control about Access Control, ISO gives you partial credit. However, CIS checks for specific technical safeguards—if you only do 1 of them, your CIS score will naturally plummet. <strong>This provides a realistic view of technical risk versus paper-based compliance.</strong></p>
+                    <h3 style="color:var(--accent-cyan); margin-top: 2rem;"><i class="fas fa-ban"></i> 2. The N/A Mathematical Exclusion</h3>
+                    <p>Answering "Not Applicable" ensures that your Readiness Score only reflects your posture against the controls that actively apply to your scoped threat landscape. The risk engine completely removes that control's impact from the denominator, preventing artificial inflation of your score.</p>
+                </div>
+            </section>
+
+            <!-- 5. Benchmarks -->
+            <section class="doc-section" id="benchmarks">
+                <h2>Realistic Scoring Scenarios</h2>
+                <p>Use these calibration results to understand the natural (and auditor-expected) divergence between framework scores.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card" style="border-left: 4px solid var(--accent-green);">
+                        <h4 style="color:var(--accent-green);">Scenario 1: The "Best-in-Class" Firm</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">All 93 ISO controls are <strong>Optimized/Full</strong>.</p>
+                        <div style="font-family: 'JetBrains Mono'; font-size: 0.9rem; color: #fff; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px;">
+                            ISO 27001 Readiness: <span style="color:var(--accent-green);">~100%</span><br>
+                            NIST CSF 2.0 Readiness: <span style="color:var(--accent-cyan);">~86%</span><br>
+                            CIS v8 Technical Readiness: <span style="color:#0A84FF;">~62%</span>
+                        </div>
+                        <p style="font-size: 0.75rem; margin-top:10px; line-height: 1.4;">Rationale: Reflects that while the ISMS is complete, the organization still lacks the specific technical configurations required for the 153 CIS Safeguards.</p>
+                    </div>
+                    
+                    <div class="feature-card" style="border-left: 4px solid #F59E0B;">
+                        <h4 style="color:#F59E0B;">Scenario 2: The "Process-Heavy" Firm</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">All 93 ISO controls are <strong>Managed</strong> (Audited but Manual).</p>
+                        <div style="font-family: 'JetBrains Mono'; font-size: 0.9rem; color: #fff; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px;">
+                            ISO 27001 Readiness: <span style="color:#F59E0B;">~80%</span><br>
+                            NIST CSF 2.0 Readiness: <span style="color:#F59E0B;">~65%</span><br>
+                            CIS v8 Technical Readiness: <span style="color:#EF4444;">~24%</span>
+                        </div>
+                        <p style="font-size: 0.75rem; margin-top:10px; line-height: 1.4;">Rationale: The punitive CIS multiplier detects the "Compliance debt"—where a policy exists but engineering controls are not automated.</p>
+                    </div>
                 </div>
             </section>
 
