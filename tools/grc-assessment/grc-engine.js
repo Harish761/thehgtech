@@ -20,30 +20,33 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     /**
-     * FRAMEWORK SCORING CONFIGURATION (Audit-Ready Baseline)
-     * ISO 27001 Scoring is untouched as per requirements.
-     * CIS v8: Stricter technical weighting, lower credit for partial states.
-     * NIST CSF 2.0: Equal weighting across 6 main functions for outcome focus.
+     * INDEPENDENT FRAMEWORK SCORING CONFIGURATION
+     * ISO Multipliers remain untouched in getMultiplier() as per requirements.
+     * CIS v8: Strict technical rigor (high penalty for non-optimized states).
+     * NIST CSF 2.0: Outcome-focused (moderate credit for managing processes).
      */
     const CIS_MULTIPLIERS = {
-        'yes': 1.0,
-        'optimized': 1.0,
-        'managed': 0.7,
-        'defined': 0.35,
-        'repeatable': 0.1,
-        'adhoc': 0.05,
-        'no': 0.0,
-        'na': 0.0
+        'yes': 1.0, 'optimized': 1.0, 
+        'managed': 0.4, 'defined': 0.25, 
+        'repeatable': 0.1, 'adhoc': 0.05, 'no': 0.0, 'na': 0.0
+    };
+
+    const NIST_MULTIPLIERS = {
+        'yes': 1.0, 'optimized': 1.0, 
+        'managed': 0.75, 'defined': 0.65, 
+        'repeatable': 0.4, 'adhoc': 0.2, 'no': 0.0, 'na': 0.0
     };
 
     const NIST_FUNCTIONS = {
-        'GV': 'Govern',
-        'ID': 'Identify',
-        'PR': 'Protect',
-        'DE': 'Detect',
-        'RS': 'Respond',
-        'RC': 'Recover'
+        'GV': 'Govern', 'ID': 'Identify', 'PR': 'Protect',
+        'DE': 'Detect', 'RS': 'Respond', 'RC': 'Recover'
     };
+
+    // Framework Benchmarks (Full target denominators)
+    const NIST_SUB_TOTAL = 106; // Framework target counts
+    const CIS_SAFEGUARD_TOTAL = 153; // Framework target counts
+    const NIST_MAPPING_STRENGTH = 0.95; // Conceptual alignment factor
+    const CIS_MAPPING_STRENGTH = 0.85; // Technical alignment factor
 
     function getMultiplier(val) {
         if (val === 'yes' || val === 'optimized') return 1.0;
@@ -865,26 +868,28 @@ document.addEventListener('DOMContentLoaded', async () => {
             earnedImpact += (impact * getMultiplier(status));
             totalPossibleImpact += impact;
 
-            // 2. NIST Score (Outcome-focused - Bucket by 6 functions)
+            // 2. NIST Score (Outcome-focused - Managed processes worth 0.75x)
             if (control.nist_mapping) {
-                const func = control.nist_mapping.split('.')[0]; // e.g., "GV" from "GV.PO-1"
+                const func = control.nist_mapping.split('.')[0];
                 if (nistStats[func]) {
-                    nistStats[func].earned += (impact * getMultiplier(status));
+                    nistStats[func].earned += (impact * NIST_MULTIPLIERS[status]);
                     nistStats[func].possible += impact;
                 }
             }
 
-            // 3. CIS Score (Stricter technical multipliers)
+            // 3. CIS Score (Technical-Rigor - Managed processes worth only 0.40x)
             if (control.cis_mapping) {
-                cisEarnedImpact += (impact * getCISMultiplier(status));
+                cisEarnedImpact += (impact * CIS_MULTIPLIERS[status]);
                 cisTotalPossibleImpact += impact;
             }
         });
 
-        // Final ISO Score
+        // --- Final ISO 27001 Score ---
+        // Applicable Scope Denominator remains 100% untouched.
         const finalScore = totalPossibleImpact > 0 ? Math.round((earnedImpact / totalPossibleImpact) * 100) : 0;
         
-        // Final NIST Score (Average of function percentages)
+        // --- Independent NIST CSF 2.0 Calculation ---
+        // Calculating outcome-focused readiness (Avg functional % benchmarked vs framework target)
         let nistScoresCount = 0;
         let nistTotalPercent = 0;
         Object.keys(nistStats).forEach(f => {
@@ -893,10 +898,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                 nistScoresCount++;
             }
         });
-        const finalNist = nistScoresCount > 0 ? Math.round((nistTotalPercent / nistScoresCount) * 100) : 0;
+        
+        // Final NIST Alignment = (Mean Functional Readiness) * (Mapping Depth 93/106) * (Alignment Strength 0.95)
+        const meanNistReadiness = nistScoresCount > 0 ? (nistTotalPercent / nistScoresCount) : 0;
+        const nistBenchmark = meanNistReadiness * (93 / NIST_SUB_TOTAL) * NIST_MAPPING_STRENGTH;
+        const finalNist = Math.round(nistBenchmark * 100);
 
-        // Final CIS Score
-        const finalCis = cisTotalPossibleImpact > 0 ? Math.round((cisEarnedImpact / cisTotalPossibleImpact) * 100) : 0;
+        // --- Independent CIS Controls v8 Calculation ---
+        // Calculating technical-rigor (Weighted Earned vs Applicable, benchmarked vs CIS 153)
+        const rawCisReadiness = cisTotalPossibleImpact > 0 ? (cisEarnedImpact / cisTotalPossibleImpact) : 0;
+        // Final CIS Readiness = (Technical Safeguard Coverage) * (Mapping Depth 93/153) * (Alignment Strength 0.85)
+        const cisBenchmark = rawCisReadiness * (93 / CIS_SAFEGUARD_TOTAL) * CIS_MAPPING_STRENGTH;
+        const finalCis = Math.round(cisBenchmark * 100);
 
         // Update Global UI
         if (ui.overallScore) ui.overallScore.innerText = `${finalScore}%`;
