@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-03-29T02:32:08.985887",
+  "last_updated": "2026-03-29T12:57:33.627478",
   "period": "Last 7 days",
   "total_groups": 24,
-  "total_victims": 242,
+  "total_victims": 245,
   "groups": [
     {
       "name": "Qilin",
@@ -97,8 +97,14 @@
     },
     {
       "name": "Nightspire",
-      "count": 29,
+      "count": 31,
       "victims": [
+        {
+          "name": "D**o*s** Fr**e* *A",
+          "date": "2026-03-29 02:34:17.026456",
+          "url": "",
+          "discovered_date": "2026-03-29T02:34:17.026456"
+        },
         {
           "name": "*H* G** **O**",
           "date": "2026-03-28 18:54:34.059163",
@@ -152,12 +158,6 @@
           "date": "2026-03-28 20:17:40.436577",
           "url": "",
           "discovered_date": "2026-03-28T20:17:40.436577"
-        },
-        {
-          "name": "A*v**c** *e**c** ***em**i**",
-          "date": "2026-03-27 01:25:06.914517",
-          "url": "",
-          "discovered_date": "2026-03-27T01:25:06.914517"
         }
       ],
       "industries": [
@@ -183,7 +183,7 @@
         0,
         2,
         10,
-        0
+        2
       ]
     },
     {
@@ -453,6 +453,95 @@
       ]
     },
     {
+      "name": "ALP-001",
+      "count": 15,
+      "victims": [
+        {
+          "name": "polsat.pl",
+          "date": "2026-03-29 01:40:21.080472",
+          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#polsat.pl",
+          "discovered_date": "2026-03-29T01:40:21.080472"
+        },
+        {
+          "name": "lacor.es",
+          "date": "2026-03-29 01:39:38.184881",
+          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#lacor.es",
+          "discovered_date": "2026-03-29T01:39:38.184881"
+        },
+        {
+          "name": "kob.com",
+          "date": "2026-03-29 01:38:31.222681",
+          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#kob.com",
+          "discovered_date": "2026-03-29T01:38:31.222681"
+        },
+        {
+          "name": "terix.com",
+          "date": "2026-03-28 13:20:38.283967",
+          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#terix.com",
+          "discovered_date": "2026-03-28T13:20:38.283967"
+        },
+        {
+          "name": "jaxa.jp",
+          "date": "2026-03-26 22:53:48.612552",
+          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#jaxa.jp",
+          "discovered_date": "2026-03-26T22:53:48.612552"
+        },
+        {
+          "name": "esprinet.com",
+          "date": "2026-03-25 20:28:03.835950",
+          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#esprinet.com",
+          "discovered_date": "2026-03-25T20:28:03.835950"
+        },
+        {
+          "name": "kyoceradocumentsolutions.eu",
+          "date": "2026-03-29 01:38:55.694202",
+          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#kyoceradocumentsolutions.eu",
+          "discovered_date": "2026-03-29T01:38:55.694202"
+        },
+        {
+          "name": "polsat.pl",
+          "date": "2026-03-29T01:40:21+00:00",
+          "url": "https://www.ransomware.live/id/cG9sc2F0LnBsQEFMUC0wMDE=",
+          "discovered_date": "2026-03-29T01:40:21+00:00"
+        },
+        {
+          "name": "lacor.es",
+          "date": "2026-03-29T01:39:38+00:00",
+          "url": "https://www.ransomware.live/id/bGFjb3IuZXNAQUxQLTAwMQ==",
+          "discovered_date": "2026-03-29T01:39:38+00:00"
+        },
+        {
+          "name": "kyoceradocumentsolutions.eu",
+          "date": "2026-03-29T01:38:55+00:00",
+          "url": "https://www.ransomware.live/id/a3lvY2VyYWRvY3VtZW50c29sdXRpb25zLmV1QEFMUC0wMDE=",
+          "discovered_date": "2026-03-29T01:38:55+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found",
+        "Technology",
+        "Telecommunication"
+      ],
+      "countries": [
+        "ES",
+        "EU",
+        "FR",
+        "IT",
+        "JP"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        8
+      ]
+    },
+    {
       "name": "Dragonforce",
       "count": 15,
       "victims": [
@@ -544,7 +633,7 @@
     },
     {
       "name": "Play",
-      "count": 15,
+      "count": 13,
       "victims": [
         {
           "name": "TPIS Industrial Services",
@@ -571,18 +660,6 @@
           "discovered_date": "2026-03-24T19:25:47.913100"
         },
         {
-          "name": "Capital Wholesale Drug",
-          "date": "2026-03-24 19:25:02.090019",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=gBEXSajCsUYnQu",
-          "discovered_date": "2026-03-24T19:25:02.090019"
-        },
-        {
-          "name": "Block Engineering",
-          "date": "2026-03-24 19:24:15.337531",
-          "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=sDPb1TozpBJOdp",
-          "discovered_date": "2026-03-24T19:24:15.337531"
-        },
-        {
           "name": "Pinnacle",
           "date": "2026-03-24 19:26:08.030596",
           "url": "http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion/topic.php?id=QBgj83ap5rxgDe",
@@ -605,14 +682,26 @@
           "date": "2026-03-24T19:26:47+00:00",
           "url": "https://www.ransomware.live/id/Um94aXRpY3VzIEdvbGYgQ2x1YkBwbGF5",
           "discovered_date": "2026-03-24T19:26:47+00:00"
+        },
+        {
+          "name": "Pinnacle",
+          "date": "2026-03-24T19:26:08+00:00",
+          "url": "https://www.ransomware.live/id/UGlubmFjbGVAcGxheQ==",
+          "discovered_date": "2026-03-24T19:26:08+00:00"
+        },
+        {
+          "name": "Ascent Asset Group",
+          "date": "2026-03-24T19:25:47+00:00",
+          "url": "https://www.ransomware.live/id/QXNjZW50IEFzc2V0IEdyb3VwQHBsYXk=",
+          "discovered_date": "2026-03-24T19:25:47+00:00"
         }
       ],
       "industries": [
         "Business Services",
         "Financial Services",
-        "Healthcare",
         "Hospitality and Tourism",
-        "Manufacturing"
+        "Manufacturing",
+        "Not Found"
       ],
       "countries": [
         "N/A",
@@ -622,7 +711,7 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        13,
+        11,
         0,
         2,
         0,
@@ -632,7 +721,7 @@
     },
     {
       "name": "Payload",
-      "count": 12,
+      "count": 11,
       "victims": [
         {
           "name": "Q2 Artificial Lift Services",
@@ -705,7 +794,7 @@
         "CA",
         "ES",
         "GB",
-        "SG"
+        "US"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -717,95 +806,6 @@
         0,
         6,
         0
-      ]
-    },
-    {
-      "name": "ALP-001",
-      "count": 11,
-      "victims": [
-        {
-          "name": "polsat.pl",
-          "date": "2026-03-29 01:40:21.080472",
-          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#polsat.pl",
-          "discovered_date": "2026-03-29T01:40:21.080472"
-        },
-        {
-          "name": "lacor.es",
-          "date": "2026-03-29 01:39:38.184881",
-          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#lacor.es",
-          "discovered_date": "2026-03-29T01:39:38.184881"
-        },
-        {
-          "name": "kob.com",
-          "date": "2026-03-29 01:38:31.222681",
-          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#kob.com",
-          "discovered_date": "2026-03-29T01:38:31.222681"
-        },
-        {
-          "name": "terix.com",
-          "date": "2026-03-28 13:20:38.283967",
-          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#terix.com",
-          "discovered_date": "2026-03-28T13:20:38.283967"
-        },
-        {
-          "name": "jaxa.jp",
-          "date": "2026-03-26 22:53:48.612552",
-          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#jaxa.jp",
-          "discovered_date": "2026-03-26T22:53:48.612552"
-        },
-        {
-          "name": "esprinet.com",
-          "date": "2026-03-25 20:28:03.835950",
-          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#esprinet.com",
-          "discovered_date": "2026-03-25T20:28:03.835950"
-        },
-        {
-          "name": "kyoceradocumentsolutions.eu",
-          "date": "2026-03-29 01:38:55.694202",
-          "url": "http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#kyoceradocumentsolutions.eu",
-          "discovered_date": "2026-03-29T01:38:55.694202"
-        },
-        {
-          "name": "terix.com",
-          "date": "2026-03-28T13:20:38+00:00",
-          "url": "https://www.ransomware.live/id/dGVyaXguY29tQEFMUC0wMDE=",
-          "discovered_date": "2026-03-28T13:20:38+00:00"
-        },
-        {
-          "name": "jaxa.jp",
-          "date": "2026-03-26T22:53:48+00:00",
-          "url": "https://www.ransomware.live/id/amF4YS5qcEBBTFAtMDAx",
-          "discovered_date": "2026-03-26T22:53:48+00:00"
-        },
-        {
-          "name": "esprinet.com",
-          "date": "2026-03-25T20:28:03+00:00",
-          "url": "https://www.ransomware.live/id/ZXNwcmluZXQuY29tQEFMUC0wMDE=",
-          "discovered_date": "2026-03-25T20:28:03+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found",
-        "Technology",
-        "Telecommunication"
-      ],
-      "countries": [
-        "ES",
-        "EU",
-        "FR",
-        "IT",
-        "JP"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        2,
-        0,
-        2,
-        4
       ]
     },
     {
@@ -978,67 +978,6 @@
       ]
     },
     {
-      "name": "Thegentlemen",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Delta Ducon Engenharia",
-          "date": "2026-03-23T14:40:07+00:00",
-          "url": "https://www.ransomware.live/id/RGVsdGEgRHVjb24gRW5nZW5oYXJpYUB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-03-23T14:40:07+00:00"
-        },
-        {
-          "name": "Grupo Tawa",
-          "date": "2026-03-23T14:38:42+00:00",
-          "url": "https://www.ransomware.live/id/R3J1cG8gVGF3YUB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-03-23T14:38:42+00:00"
-        },
-        {
-          "name": "Omikenshi",
-          "date": "2026-03-23T14:37:17+00:00",
-          "url": "https://www.ransomware.live/id/T21pa2Vuc2hpQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-03-23T14:37:17+00:00"
-        },
-        {
-          "name": "Distritech",
-          "date": "2026-03-23T14:35:52+00:00",
-          "url": "https://www.ransomware.live/id/RGlzdHJpdGVjaEB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-03-23T14:35:52+00:00"
-        },
-        {
-          "name": "PTT Philippines",
-          "date": "2026-03-22T10:43:26+00:00",
-          "url": "https://www.ransomware.live/id/UFRUIFBoaWxpcHBpbmVzQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-03-22T10:43:26+00:00"
-        },
-        {
-          "name": "SATS Sports Club Sweden",
-          "date": "2026-03-22T10:42:37+00:00",
-          "url": "https://www.ransomware.live/id/U0FUUyBTcG9ydHMgQ2x1YiBTd2VkZW5AdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-03-22T10:42:37+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "BR",
-        "JP",
-        "PE",
-        "PH",
-        "SE"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Anubis",
       "count": 4,
       "victims": [
@@ -1085,6 +1024,96 @@
         4,
         0,
         0
+      ]
+    },
+    {
+      "name": "Thegentlemen",
+      "count": 4,
+      "victims": [
+        {
+          "name": "Delta Ducon Engenharia",
+          "date": "2026-03-23T14:40:07+00:00",
+          "url": "https://www.ransomware.live/id/RGVsdGEgRHVjb24gRW5nZW5oYXJpYUB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-03-23T14:40:07+00:00"
+        },
+        {
+          "name": "Grupo Tawa",
+          "date": "2026-03-23T14:38:42+00:00",
+          "url": "https://www.ransomware.live/id/R3J1cG8gVGF3YUB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-03-23T14:38:42+00:00"
+        },
+        {
+          "name": "Omikenshi",
+          "date": "2026-03-23T14:37:17+00:00",
+          "url": "https://www.ransomware.live/id/T21pa2Vuc2hpQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-03-23T14:37:17+00:00"
+        },
+        {
+          "name": "Distritech",
+          "date": "2026-03-23T14:35:52+00:00",
+          "url": "https://www.ransomware.live/id/RGlzdHJpdGVjaEB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-03-23T14:35:52+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "BR",
+        "JP",
+        "PE",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Exitium",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Ming Hwei Energy",
+          "date": "2026-03-29 10:43:14.779262",
+          "url": "http://m3ksukzn2glzfdvlusohril7n3iyk4z4fudf6mm22lwhpbpt5aiee5qd.onion#Ming%20Hwei%20Energy",
+          "discovered_date": "2026-03-29T10:43:14.779262"
+        },
+        {
+          "name": "Ming Hwei Energy",
+          "date": "2026-03-29T10:43:14+00:00",
+          "url": "https://www.ransomware.live/id/TWluZyBId2VpIEVuZXJneUBleGl0aXVt",
+          "discovered_date": "2026-03-29T10:43:14+00:00"
+        },
+        {
+          "name": "Marborges Agroindustria",
+          "date": "2026-03-23T19:56:04+00:00",
+          "url": "https://www.ransomware.live/id/TWFyYm9yZ2VzIEFncm9pbmR1c3RyaWFAZXhpdGl1bQ==",
+          "discovered_date": "2026-03-23T19:56:04+00:00"
+        }
+      ],
+      "industries": [
+        "Energy"
+      ],
+      "countries": [
+        "BR",
+        "TW"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
@@ -1375,33 +1404,6 @@
         0,
         0,
         2,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Exitium",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Marborges Agroindustria",
-          "date": "2026-03-23T19:56:04+00:00",
-          "url": "https://www.ransomware.live/id/TWFyYm9yZ2VzIEFncm9pbmR1c3RyaWFAZXhpdGl1bQ==",
-          "discovered_date": "2026-03-23T19:56:04+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "BR"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
         0,
         0,
         0
