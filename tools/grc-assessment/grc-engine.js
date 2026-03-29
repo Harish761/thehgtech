@@ -19,12 +19,43 @@ document.addEventListener('DOMContentLoaded', async () => {
         'na':        { label: 'Not Applicable', multiplier: null, color: '#6B7280', icon: 'fa-ban' }
     };
 
+    /**
+     * FRAMEWORK SCORING CONFIGURATION (Audit-Ready Baseline)
+     * ISO 27001 Scoring is untouched as per requirements.
+     * CIS v8: Stricter technical weighting, lower credit for partial states.
+     * NIST CSF 2.0: Equal weighting across 6 main functions for outcome focus.
+     */
+    const CIS_MULTIPLIERS = {
+        'yes': 1.0,
+        'optimized': 1.0,
+        'managed': 0.7,
+        'defined': 0.35,
+        'repeatable': 0.1,
+        'adhoc': 0.05,
+        'no': 0.0,
+        'na': 0.0
+    };
+
+    const NIST_FUNCTIONS = {
+        'GV': 'Govern',
+        'ID': 'Identify',
+        'PR': 'Protect',
+        'DE': 'Detect',
+        'RS': 'Respond',
+        'RC': 'Recover'
+    };
+
     function getMultiplier(val) {
-        if (!val) return 0;
-        // Backward compat: 'partial' maps to 'defined' (0.6)
-        if (val === 'partial') return 0.5;
-        const level = MATURITY_LEVELS[val];
-        return level ? (level.multiplier !== null ? level.multiplier : 0) : 0;
+        if (val === 'yes' || val === 'optimized') return 1.0;
+        if (val === 'managed') return 0.8;
+        if (val === 'defined') return 0.6;
+        if (val === 'repeatable') return 0.4;
+        if (val === 'adhoc') return 0.2;
+        return 0;
+    }
+
+    function getCISMultiplier(val) {
+        return CIS_MULTIPLIERS[val] || 0;
     }
 
     function isAnswered(val) {
@@ -805,38 +836,88 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function updateOverallScore() {
-        let totalControls = 0;
-        let totalPossibleImpact = 0;
         let earnedImpact = 0;
-        let answeredControls = 0;
+        let totalPossibleImpact = 0;
 
-        activeDomainIndices.forEach(globalIdx => {
-            const d = grcData.domains[globalIdx];
-            d.controls.forEach(c => {
-                const impact = c.risk_impact || 1;
-                const status = userState[c.control_id];
-                
-                totalControls++;
+        // NIST Accumulators (6 functions for CSF 2.0)
+        const nistStats = {};
+        Object.keys(NIST_FUNCTIONS).forEach(f => nistStats[f] = { earned: 0, possible: 0 });
 
-                // Denominator logic: Controls are part of the total POSSIBLE score unless marked N/A
-                if (!isNA(status)) {
-                    totalPossibleImpact += impact;
+        // CIS Accumulators
+        let cisEarnedImpact = 0;
+        let cisTotalPossibleImpact = 0;
+
+        // Flatten all controls in scope for iteration
+        const allControls = [];
+        activeDomainIndices.forEach(idx => allControls.push(...grcData.domains[idx].controls));
+
+        Object.keys(userState).forEach(controlId => {
+            if (controlId.startsWith('_')) return;
+            const status = userState[controlId];
+            if (status === 'na') return;
+
+            const control = allControls.find(c => c.control_id === controlId);
+            if (!control) return;
+
+            const impact = control.risk_impact || 5;
+
+            // 1. ISO Score (Original Logic)
+            earnedImpact += (impact * getMultiplier(status));
+            totalPossibleImpact += impact;
+
+            // 2. NIST Score (Outcome-focused - Bucket by 6 functions)
+            if (control.nist_mapping) {
+                const func = control.nist_mapping.split('.')[0]; // e.g., "GV" from "GV.PO-1"
+                if (nistStats[func]) {
+                    nistStats[func].earned += (impact * getMultiplier(status));
+                    nistStats[func].possible += impact;
                 }
+            }
 
-                if (status && MATURITY_LEVELS[status] !== undefined) {
-                    answeredControls++;
-                    earnedImpact += (impact * getMultiplier(status));
-                    // 'no' has multiplier 0, so adds 0 to earned
-                }
-            });
+            // 3. CIS Score (Stricter technical multipliers)
+            if (control.cis_mapping) {
+                cisEarnedImpact += (impact * getCISMultiplier(status));
+                cisTotalPossibleImpact += impact;
+            }
         });
 
-        const score = totalPossibleImpact === 0 ? (answeredControls > 0 ? 100 : 0) : Math.round((earnedImpact / totalPossibleImpact) * 100);
-        ui.overallScore.innerText = `${score}%`;
+        // Final ISO Score
+        const finalScore = totalPossibleImpact > 0 ? Math.round((earnedImpact / totalPossibleImpact) * 100) : 0;
+        
+        // Final NIST Score (Average of function percentages)
+        let nistScoresCount = 0;
+        let nistTotalPercent = 0;
+        Object.keys(nistStats).forEach(f => {
+            if (nistStats[f].possible > 0) {
+                nistTotalPercent += (nistStats[f].earned / nistStats[f].possible);
+                nistScoresCount++;
+            }
+        });
+        const finalNist = nistScoresCount > 0 ? Math.round((nistTotalPercent / nistScoresCount) * 100) : 0;
 
-        if (score >= 85) ui.overallScore.style.color = '#10B981';
-        else if (score >= 50) ui.overallScore.style.color = '#F59E0B';
+        // Final CIS Score
+        const finalCis = cisTotalPossibleImpact > 0 ? Math.round((cisEarnedImpact / cisTotalPossibleImpact) * 100) : 0;
+
+        // Update Global UI
+        if (ui.overallScore) ui.overallScore.innerText = `${finalScore}%`;
+        const sideNist = document.getElementById('sideNistScore');
+        const sideCis = document.getElementById('sideCisScore');
+        if (sideNist) sideNist.innerText = `${finalNist}%`;
+        if (sideCis) sideCis.innerText = `${finalCis}%`;
+
+        // Save to global state
+        window.grcSessionScore = finalScore;
+        window.grcNistScore = finalNist;
+        window.grcCisScore = finalCis;
+
+        // Visual feedback
+        if (finalScore >= 85) ui.overallScore.style.color = '#10B981';
+        else if (finalScore >= 50) ui.overallScore.style.color = '#F59E0B';
         else ui.overallScore.style.color = '#EF4444';
+
+        // Button logic
+        const answeredControls = Object.keys(userState).filter(k => !k.startsWith('_') && !k.endsWith('_just') && !k.endsWith('_notes')).length;
+        const totalControls = allControls.length;
 
         if (answeredControls > 0) {
             ui.btnExportDraft.removeAttribute('disabled');
@@ -965,8 +1046,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const labels = [];
         const dataset = [];
         const criticalGaps = [];
-        let nistTotal = 0, nistValue = 0;
-        let cisTotal = 0, cisValue = 0;
 
         activeDomainIndices.forEach(globalIdx => {
             const d = grcData.domains[globalIdx];
@@ -989,15 +1068,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     earnedImpact += (impact * mult);
                 }
                 
-                // Framework scoring (exclude NA from denominator)
-                let fVal = 0; let fTotal = 0;
-                if (!isNA(ans)) {
-                    fVal = impact * mult;
-                    fTotal = impact;
-                }
-
-                if (c.nist_mapping && fTotal > 0) { nistTotal += fTotal; nistValue += fVal; }
-                if (c.cis_mapping && fTotal > 0) { cisTotal += fTotal; cisValue += fVal; }
 
                 // Identify critical gaps (anything not fully implemented or N/A)
                 const isGap = ans === 'no' || ans === 'adhoc' || ans === 'repeatable' || ans === 'defined' || ans === 'managed' || ans === 'partial';
@@ -1021,13 +1091,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
 
-        // 0. Update Framework Scores with Assessed Scope Denominators
-        // Only counting controls that the user actually evaluated to avoid penalty on partial dashboards.
-        const nistPct = nistTotal === 0 ? 0 : Math.round((nistValue / nistTotal) * 100);
-        const cisPct = cisTotal === 0 ? 0 : Math.round((cisValue / cisTotal) * 100);
-        
-        document.getElementById('nistScore').innerText = `${nistPct}%`;
-        document.getElementById('cisScore').innerText = `${cisPct}%`;
+        // 0. Update Framework Scores from Global State
+        const nistScoreEl = document.getElementById('nistScore');
+        const cisScoreEl = document.getElementById('cisScore');
+        if (nistScoreEl) nistScoreEl.innerText = `${window.grcNistScore || 0}%`;
+        if (cisScoreEl) cisScoreEl.innerText = `${window.grcCisScore || 0}%`;
 
         // 2. Decision Engine: Maturity & Priority Actions
         const finalScoreVal = parseInt(ui.overallScore.innerText.replace('%', ''));
@@ -1768,7 +1836,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 execSummary.push(["Maturity In-Progress:", partC]);
                 execSummary.push(["Control Gap (Not Implemented):", gapC]);
                 execSummary.push(["Not Applicable:", naC]);
-                execSummary.push(["Overall Readiness Score:", ui.overallScore.innerText]);
+                execSummary.push(["Overall ISO 27001 Score:", ui.overallScore.innerText]);
+                execSummary.push(["NIST CSF 2.0 Readiness:", (window.grcNistScore || 0) + "%"]);
+                execSummary.push(["CIS Controls v8 Alignment:", (window.grcCisScore || 0) + "%"]);
                 execSummary.push([]);
                 
                 execSummary.push(["Top Risk Gaps (Priority Remediation Checklist)"]);
@@ -1864,7 +1934,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     exportDate: new Date().toISOString(),
                     assessorName: userState._assessorName || '',
                     organizationName: userState._orgName || '',
-                    overallScore: ui.overallScore ? ui.overallScore.innerText : '0%'
+                    overallScore: ui.overallScore ? ui.overallScore.innerText : '0%',
+                    nistScore: (window.grcNistScore || 0) + '%',
+                    cisScore: (window.grcCisScore || 0) + '%'
                 },
                 controls: []
             };

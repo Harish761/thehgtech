@@ -684,9 +684,21 @@
                                 <i class="fas fa-shield-alt text-accent" style="font-size:1rem;"></i>
                                 <h2 style="font-size:1.1rem;">GRC Assessor</h2>
                             </div>
-                            <div class="readiness-score" style="padding:0.5rem 0.8rem; border-radius:10px; min-width:70px;">
-                                <span class="score-label" style="font-size:0.55rem; margin-bottom:2px;">Readiness</span>
-                                <div class="score-value" id="overallScore" style="font-size:1.8rem;">0%</div>
+                            <div class="readiness-score" style="padding:0.5rem 0.8rem; border-radius:10px; min-width:70px; display: flex; flex-direction: column; align-items: flex-end;">
+                                <div style="display: flex; flex-direction: column; align-items: flex-end; margin-bottom: 5px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; width: 100%;">
+                                    <span class="score-label" style="font-size:0.55rem; margin-bottom:2px; color: var(--accent-green);">ISO Readiness</span>
+                                    <div class="score-value" id="overallScore" style="font-size:1.4rem;">0%</div>
+                                </div>
+                                <div style="display: flex; gap: 10px;">
+                                    <div style="text-align: right;">
+                                        <span class="score-label" style="font-size:0.45rem; color: #0A84FF; text-transform: uppercase;">NIST</span>
+                                        <div class="score-value" id="sideNistScore" style="font-size:0.9rem; color: #0A84FF;">0%</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <span class="score-label" style="font-size:0.45rem; color: #FF9F0A; text-transform: uppercase;">CIS</span>
+                                        <div class="score-value" id="sideCisScore" style="font-size:0.9rem; color: #FF9F0A;">0%</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
