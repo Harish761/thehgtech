@@ -509,6 +509,11 @@ def fetch_recent_articles(feeds, hours_back=72):  # INCREASED FROM 48 to 72
     
     print(f"📡 Fetching articles from {len(feeds)} feeds (past {hours_back} hours)...")
     
+    user_agents = [
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+    ]
+    
     for feed_url in feeds:
         # Skip blacklisted feeds
         if feed_url in BLACKLISTED_FEEDS:
@@ -517,7 +522,19 @@ def fetch_recent_articles(feeds, hours_back=72):  # INCREASED FROM 48 to 72
             
         try:
             print(f"   → Fetching: {feed_url}")
-            feed = feedparser.parse(feed_url)
+            
+            # Use requests with browser-like User-Agent to bypass 403 blocks
+            headers = {
+                'User-Agent': user_agents[0],
+                'Accept': 'application/rss+xml, application/xml, text/xml; q=0.9, */*; q=0.8'
+            }
+            
+            response = requests.get(feed_url, headers=headers, timeout=15)
+            if response.status_code != 200:
+                print(f"      ❌ Failed (Status {response.status_code}): {feed_url}")
+                continue
+                
+            feed = feedparser.parse(response.text)
             
             for entry in feed.entries[:15]:  # INCREASED FROM 10 to 15
                 pub_date = None
@@ -1132,9 +1149,9 @@ def update_shorts():
     
     print(f"📚 Current content: {len(existing_cyber)} cyber, {len(existing_ai)} AI shorts, {len(existing_cves)} CVEs")
     
-    # Fetch real articles from RSS feeds
-    cyber_articles = fetch_recent_articles(CYBER_FEEDS, hours_back=72)
-    ai_articles = fetch_recent_articles(AI_FEEDS, hours_back=72)
+    # Fetch real articles from RSS feeds - RELAXED TO 168h (7 days) to repopulate pruned content
+    cyber_articles = fetch_recent_articles(CYBER_FEEDS, hours_back=168)
+    ai_articles = fetch_recent_articles(AI_FEEDS, hours_back=168)
     
     # ✨ NEW: Filter out promotional content BEFORE processing
     cyber_articles = filter_promotional_content(cyber_articles)
