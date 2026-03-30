@@ -1057,52 +1057,56 @@ document.addEventListener('DOMContentLoaded', async () => {
         initHistoryUI(); // Refresh top strip and card
 
         const labels = [];
-        const dataset = [];
+        const datasetISO = [];
+        const datasetNIST = [];
+        const datasetCIS = [];
         const criticalGaps = [];
 
-        activeDomainIndices.forEach(globalIdx => {
-            const d = grcData.domains[globalIdx];
+        activeDomainIndices.forEach(idx => {
+            const d = grcData.domains[idx];
             labels.push(d.name.replace(' Controls', ''));
-
-            let answeredTotal = 0;
-            let totalPossibleImpact = 0;
-            let earnedImpact = 0;
+            
+            let earnedISO = 0, totalISO = 0;
+            let earnedNIST = 0, totalNIST = 0;
+            let earnedCIS = 0, totalCIS = 0;
 
             d.controls.forEach(c => {
                 const ans = userState[c.control_id];
-                if (!ans) return; // Skip unanswered for partial dashboard metrics
-                
-                answeredTotal++;
-                const impact = c.risk_impact || 1;
-                const mult = getMultiplier(ans);
-                
-                if (!isNA(ans)) {
-                    totalPossibleImpact += impact;
-                    earnedImpact += (impact * mult);
-                }
-                
+                if (ans && ans !== 'na') {
+                    const impact = c.risk_impact || 5;
+                    const multISO = getMultiplier(ans);
+                    const multNIST = NIST_MULTIPLIERS[ans] || 0;
+                    const multCIS = CIS_MULTIPLIERS[ans] || 0;
 
-                // Identify critical gaps (anything not fully implemented or N/A)
-                const isGap = ans === 'no' || ans === 'adhoc' || ans === 'repeatable' || ans === 'defined' || ans === 'managed' || ans === 'partial';
-                if (isGap) {
-                    const matLevel = MATURITY_LEVELS[ans];
-                    criticalGaps.push({
-                        id: c.control_id,
-                        title: c.control_title,
-                        domain: d.name,
-                        ans: ans,
-                        maturityLabel: matLevel ? matLevel.label : ans,
-                        multiplier: mult,
-                        remediation: c.remediation_advice || "Review control requirements to implement baseline security.",
-                        nist: c.nist_mapping,
-                        cis: c.cis_mapping,
-                        rationale: c.expert_rationale
-                    });
+                    earnedISO += (impact * multISO);
+                    totalISO += impact;
+                    earnedNIST += (impact * multNIST);
+                    totalNIST += impact;
+                    earnedCIS += (impact * multCIS);
+                    totalCIS += impact;
+
+                    // Identify critical gaps (anything not fully implemented or N/A)
+                    if (ans !== 'yes' && ans !== 'optimized') {
+                        const matLevel = MATURITY_LEVELS[ans];
+                        criticalGaps.push({
+                            id: c.control_id,
+                            title: c.control_title,
+                            domain: d.name,
+                            ans: ans,
+                            maturityLabel: matLevel ? matLevel.label : ans,
+                            multiplier: getMultiplier(ans),
+                            remediation: c.remediation_advice || "Review control requirements to implement baseline security.",
+                            nist: c.nist_mapping,
+                            cis: c.cis_mapping,
+                            rationale: c.expert_rationale
+                        });
+                    }
                 }
             });
-            dataset.push(totalPossibleImpact === 0 ? (answeredTotal > 0 ? 100 : 0) : Math.round((earnedImpact / totalPossibleImpact) * 100));
+            datasetISO.push(totalISO === 0 ? 0 : Math.round((earnedISO / totalISO) * 100));
+            datasetNIST.push(totalNIST === 0 ? 0 : Math.round((earnedNIST / totalNIST) * (93 / 106) * 0.95 * 100));
+            datasetCIS.push(totalCIS === 0 ? 0 : Math.round((earnedCIS / totalCIS) * (93 / 153) * 0.85 * 100));
         });
-
 
         // 0. Update Framework Scores from Global State
         const nistScoreEl = document.getElementById('nistScore');
@@ -1146,7 +1150,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (lastScore) {
                 const diff = finalScoreVal - parseInt(lastScore);
                 if (diff > 0) {
-                    scoreComparisonEl.innerHTML = `<span style="color:#10B981;"><i class="fas fa-caret-up"></i> Improved ${diff}%</span> vs last session`;
+                    scoreComparisonEl.innerHTML = `<span style="color:#10B981;"><i class="fas fa-caret-up"></i> Up ${diff}%</span> vs last session`;
                 } else if (diff < 0) {
                     scoreComparisonEl.innerHTML = `<span style="color:#EF4444;"><i class="fas fa-caret-down"></i> Down ${Math.abs(diff)}%</span> vs last session`;
                 } else {
@@ -1167,7 +1171,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const scopeCoveredEl = document.getElementById('scopeCovered');
         if (scopeCoveredEl) scopeCoveredEl.innerText = `${activeDomainIndices.length} Domains`;
 
-        // Extract Top 3 Priority Actions — sorted by multiplier (lowest first = biggest gap)
+        // Extract Top 3 Priority Actions
         const priorityActions = criticalGaps
             .sort((a, b) => (a.multiplier || 0) - (b.multiplier || 0))
             .slice(0, 3);
@@ -1179,12 +1183,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 priorityContainer.innerHTML = '<p style="color:var(--text-muted); font-style:italic;">Maintain current posture. No immediate critical fixes required.</p>';
             } else {
                 priorityActions.forEach((act, i) => {
-                    // Parse risk from rationale if available
                     const riskParts = act.rationale && act.rationale.includes('|') ? act.rationale.split('|') : null;
                     const riskText = riskParts ? riskParts[0].replace('Risk:', '').trim() : "Direct exposure to control failure.";
-                    const rawImpact = (riskParts && riskParts.length > 2) ? riskParts[1].replace('Impact:', '').trim() : "Compromise of confidentiality and integrity.";
-                    
-                    // Derive Expected Outcome
                     const outcomes = [
                         "Dramatically reduces likelihood of successful exploitation.",
                         "Stabilizes foundational security posture for external audits.",
@@ -1192,7 +1192,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                         "Strengthens identity boundary against unauthorized access."
                     ];
                     const expectedOutcome = outcomes[i % outcomes.length];
-
                     const effortLevel = (act.ans === 'no') ? 'High' : 'Medium';
                     const effortColor = effortLevel === 'High' ? '#EF4444' : '#F59E0B';
 
@@ -1204,16 +1203,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                             </div>
                             <h4 style="margin:0 0 10px; color:#fff; font-size:1.05rem; font-family:'Outfit';">Fix Control ${act.id}</h4>
                             <p style="font-size:0.85rem; color:#fff; margin-bottom:12px; font-weight:600;">${act.title}</p>
-                            
                             <div style="display:flex; flex-direction:column; gap:8px;">
-                                <div style="font-size:0.8rem; color:var(--text-muted);">
-                                    <strong style="color:#EF4444; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:2px;">Risk & Consequence:</strong>
-                                    ${riskText}
-                                </div>
-                                <div style="font-size:0.8rem; color:var(--text-muted); border-top:1px solid rgba(255,255,255,0.03); padding-top:8px;">
-                                    <strong style="color:#10B981; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:2px;">Expected Outcome:</strong>
-                                    ${expectedOutcome}
-                                </div>
+                                <div style="font-size:0.8rem; color:var(--text-muted);"><strong style="color:#EF4444; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:2px;">Risk & Consequence:</strong>${riskText}</div>
+                                <div style="font-size:0.8rem; color:var(--text-muted); border-top:1px solid rgba(255,255,255,0.03); padding-top:8px;"><strong style="color:#10B981; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:2px;">Expected Outcome:</strong>${expectedOutcome}</div>
                             </div>
                         </div>
                     `;
@@ -1223,33 +1215,38 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // 1. Render Chart.js Radar
         const ctx = document.getElementById('radarChart').getContext('2d');
-        if (radarChartInstance) radarChartInstance.destroy(); // clear previous
+        if (radarChartInstance) radarChartInstance.destroy();
 
         radarChartInstance = new Chart(ctx, {
             type: 'radar',
             data: {
                 labels: labels,
-                datasets: [{
-                    label: 'Your Readiness (%)',
-                    data: dataset,
-                    backgroundColor: 'rgba(0, 217, 255, 0.15)',
-                    borderColor: '#00D9FF',
-                    pointBackgroundColor: '#8B5CF6',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: '#00D9FF',
-                    borderWidth: 3,
-                    fill: true
-                }, {
-                    label: 'Global Industry Avg (%)',
-                    data: labels.map(() => 45 + Math.floor(Math.random() * 15)), // Baseline SMB comparison
-                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                    borderColor: 'rgba(255, 255, 255, 0.15)',
-                    borderDash: [4, 4],
-                    pointRadius: 0,
-                    borderWidth: 1,
-                    fill: true
-                }]
+                datasets: [
+                    {
+                        label: 'ISO 27001 (Policy)',
+                        data: datasetISO,
+                        backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                        borderColor: '#8B5CF6',
+                        borderWidth: 2,
+                        fill: true
+                    },
+                    {
+                        label: 'NIST CSF 2.0 (Outcome)',
+                        data: datasetNIST,
+                        backgroundColor: 'rgba(6, 182, 212, 0.15)',
+                        borderColor: '#06B6D4',
+                        borderWidth: 2,
+                        fill: true
+                    },
+                    {
+                        label: 'CIS Controls v8 (Technical)',
+                        data: datasetCIS,
+                        backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                        borderColor: '#F59E0B',
+                        borderWidth: 2,
+                        fill: true
+                    }
+                ]
             },
             options: {
                 responsive: true,
@@ -1258,12 +1255,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                     r: {
                         angleLines: { color: 'rgba(255, 255, 255, 0.1)' },
                         grid: { color: 'rgba(255, 255, 255, 0.1)' },
-                        pointLabels: { color: '#9CA3AF', font: { size: 12, family: 'Inter' } },
-                        ticks: { display: false, min: 0, max: 100 }
+                        pointLabels: { color: '#9CA3AF', font: { size: 11, family: 'Inter' } },
+                        ticks: { display: false, min: 0, max: 100 },
+                        suggestedMax: 100
                     }
                 },
                 plugins: {
-                    legend: { display: false }
+                    legend: {
+                        display: true,
+                        position: 'bottom',
+                        labels: { color: '#fff', font: { size: 10, family: 'Inter' }, padding: 15 }
+                    }
                 }
             }
         });
