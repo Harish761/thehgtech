@@ -14,13 +14,12 @@ import json
 import re
 from datetime import datetime, timedelta
 import pytz
-from openai import OpenAI
 import feedparser
 from html import unescape, escape
 import requests
 
-# Initialize OpenAI client
-client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
+# client is initialized inside format_with_gpt only when needed
+client = None
 
 # CISA Known Exploited Vulnerabilities Catalog
 CISA_KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'
@@ -424,12 +423,76 @@ AI_FEEDS = [
 ]
 
 # ===== OPTIONAL: RSS FEED BLACKLIST =====
-# If certain feeds consistently produce promotional content, add them here
-# These feeds will be completely skipped
-BLACKLISTED_FEEDS = [
-    # Example: 'https://example.com/feed/',
-    # Add problematic feeds here if keyword filtering isn't enough
+BLACKLISTED_FEEDS = []
+
+# Tier 1 Sources for Scoring
+TIER_1_SOURCES = [
+    'BleepingComputer', 'The Hacker News', 'Dark Reading', 'SecurityWeek', 
+    'CISA', 'Krebs on Security', 'TechCrunch', 'The Verge', 'WIRED', 
+    'Ars Technica', 'OpenAI', 'Anthropic', 'DeepMind', 'Hugging Face'
 ]
+
+# High-Value Keywords for Scoring
+CRITICAL_KEYWORDS = [
+    'zero-day', '0-day', 'rce', 'remote code execution', 'actively exploited',
+    'critical', 'data breach', 'ransomware', 'cve-202', 'jailbreak', 'prompt injection',
+    'CISA KEV', 'zero-day exploit', 'supply chain attack', 'critical vulnerability',
+    'actively being exploited', 'security advisory'
+]
+
+# Promotional Keywords for Penalizing
+PROMO_PENALTY_KEYWORDS = [
+    'sponsored', 'partner', 'webinar', 'whitepaper', 'promoted', 'offers a solution',
+    'invites you to', 'attend our', 'register now'
+]
+
+def score_article(article):
+    """
+    Score an article based on source reputation, keywords, recency, and promotional penalties.
+    Helps select top 6 for GPT processing.
+    """
+    score = 0
+    text = (article.get('title', '') + ' ' + article.get('summary', '')).lower()
+    
+    # 1. Source Reputation
+    if any(source.lower() in article.get('source', '').lower() for source in TIER_1_SOURCES):
+        score += 15
+    
+    # 2. Critical Keywords (+20)
+    if any(keyword in text for keyword in CRITICAL_KEYWORDS):
+        score += 20
+    
+    # 3. Promotional Penalty (-10)
+    if any(keyword in text for keyword in PROMO_PENALTY_KEYWORDS):
+        score -= 10
+        
+    # 4. Freshness (bonus for articles under 12h old)
+    pub_date = article.get('published')
+    if pub_date:
+        now = datetime.now(pytz.UTC)
+        diff_hours = (now - pub_date).total_seconds() / 3600
+        if diff_hours < 12:
+            score += 10
+        elif diff_hours < 24:
+            score += 5
+            
+    return score
+
+def better_deduplicate(articles):
+    """
+    Deduplicate articles using title slugs to catch across different sources.
+    """
+    seen_slugs = set()
+    unique_articles = []
+    
+    for article in articles:
+        # Create a simplified slug (just alphanumeric, first 50 chars)
+        slug = re.sub(r'[^a-z0-9]', '', article['title'].lower())[:50]
+        if slug not in seen_slugs:
+            seen_slugs.add(slug)
+            unique_articles.append(article)
+            
+    return unique_articles
 
 
 def get_current_time_ist():
@@ -518,7 +581,17 @@ def format_with_gpt(articles, content_type):
     if not articles:
         return None
     
-    top_articles = articles[:7]  # Increased from 5 to 7 for better coverage
+    # Deduplicate before scoring
+    articles = better_deduplicate(articles)
+    
+    # Score and select top 6 for GPT (Cost Optimization)
+    for a in articles:
+        a['relevance_score'] = score_article(a)
+    
+    articles.sort(key=lambda x: x['relevance_score'], reverse=True)
+    top_articles = articles[:6]  # Firm limit of 6 per section
+    
+    print(f"   🏆 Selected top {len(top_articles)} articles for GPT based on relevance scores")
     
     articles_text = ""
     for i, article in enumerate(top_articles, 1):
@@ -632,35 +705,69 @@ At the end of each short's Content, add an Entities line with comma-separated va
 
 Create a short for EACH of the {len(top_articles)} articles above."""
     
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-                {"role": "system", "content": "You are a professional tech journalist specializing in cybersecurity and AI. You write in plain text without any markdown formatting."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.5,
-            max_tokens=4000
-        )
-        
-        content = response.choices[0].message.content
-        
-        # Decode HTML entities (fix &#x27; → ')
-        content = unescape(content)
-        
-        # Replace placeholders with actual URLs
+    # Check for Dry Run mode (no API key)
+    api_key = os.environ.get('OPENAI_API_KEY')
+    dry_run = api_key is None or api_key == ""
+    
+    if dry_run:
+        print(f"   🧪 [DRY RUN] Simulating AI Summarization for {len(top_articles)} articles...")
+        fake_content = ""
         for i, article in enumerate(top_articles, 1):
-            placeholder = f"ARTICLE_{i}_URL_PLACEHOLDER"
-            actual_url = article['link']
-            content = content.replace(placeholder, actual_url)
-            print(f"   🔗 Replaced {placeholder} with {actual_url[:60]}...")
-        
-        print(f"✅ Successfully formatted {content_type} articles with real URLs")
-        return content
-        
-    except Exception as e:
-        print(f"❌ Error formatting {content_type} articles: {e}")
-        return None
+            date_str = article['published'].strftime('%b %d %Y') if hasattr(article['published'], 'strftime') else str(article['published'])
+            fake_content += f"""
+Date: {date_str}
+Source Name: {article['source']}
+Source URL: {article['link']}
+Headline: [DRY RUN] {article['title'][:60]}...
+Title: {article['title']}
+Content:
+This is a simulated professional summary for '{article['title']}'. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of {article.get('relevance_score', 0)} based on your new ranking algorithm. Key entities like {article['source']} would be extracted for internal linking.
+Entities: {article['source']}, security-intel, dry-run
+"""
+        return fake_content
+
+    # Real GPT Run sequence
+    from openai import OpenAI
+    client = OpenAI(api_key=api_key)
+    
+    # Retry logic for GPT API
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            print(f"   🤖 GPT Request (Attempt {attempt + 1}/{max_retries})...")
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                messages=[
+                    {"role": "system", "content": "You are a professional tech journalist specializing in cybersecurity and AI. You write in plain text without any markdown formatting."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.5,
+                max_tokens=4000,
+                timeout=60 # Add timeout to prevent hanging
+            )
+            
+            content = response.choices[0].message.content
+            
+            # Decode HTML entities (fix &#x27; → ')
+            content = unescape(content)
+            
+            # Replace placeholders with actual URLs
+            for i, article in enumerate(top_articles, 1):
+                placeholder = f"ARTICLE_{i}_URL_PLACEHOLDER"
+                actual_url = article['link']
+                content = content.replace(placeholder, actual_url)
+                print(f"   🔗 Replaced {placeholder} with {actual_url[:60]}...")
+            
+            print(f"✅ Successfully formatted {content_type} articles with real URLs")
+            return content
+            
+        except Exception as e:
+            print(f"⚠️  GPT Attempt {attempt + 1} failed: {e}")
+            if attempt < max_retries - 1:
+                time.sleep(2 * (attempt + 1)) # Exponential backoff
+            else:
+                print(f"❌ Error formatting {content_type} articles after {max_retries} attempts")
+                return None
 
 
 def parse_shorts(content):
@@ -1060,12 +1167,10 @@ def update_shorts():
     cyber_articles_new = filter_existing_urls(cyber_articles, existing_cyber)
     ai_articles_new = filter_existing_urls(ai_articles, existing_ai)
     
-    print(f"✨ New articles to add: {len(cyber_articles_new)} cyber, {len(ai_articles_new)} AI")
-    
-    # FIXED LOGIC: Always filter old content, regardless of new articles
-    print(f"\n🗑️  Filtering old content (24+ hours)...")
-    filtered_cyber = [s for s in existing_cyber if not is_older_than_hours(s.get('date', ''), 24)]
-    filtered_ai = [s for s in existing_ai if not is_older_than_hours(s.get('date', ''), 24)]
+    # FIXED LOGIC: Prune content older than 72 hours for safer buffer
+    print(f"\n🗑️  Filtering old content (72+ hours)...")
+    filtered_cyber = [s for s in existing_cyber if not is_older_than_hours(s.get('date', ''), 72)]
+    filtered_ai = [s for s in existing_ai if not is_older_than_hours(s.get('date', ''), 72)]
     
     removed_cyber = len(existing_cyber) - len(filtered_cyber)
     removed_ai = len(existing_ai) - len(filtered_ai)
@@ -1103,7 +1208,7 @@ def update_shorts():
             data['recentCVEs'] = filtered_cves[:15]  # Limit to 15 CVEs
             
             # Ensure minimum content exists
-            MIN_CONTENT = 2
+            MIN_CONTENT = 5
             if len(data['cyberShorts']) < MIN_CONTENT:
                 print(f"⚠️  Only {len(data['cyberShorts'])} cyber shorts remaining after filtering")
             if len(data['aiShorts']) < MIN_CONTENT:
@@ -1129,6 +1234,28 @@ def update_shorts():
     new_cyber_shorts = parse_shorts(cyber_content) if cyber_content else []
     new_ai_shorts = parse_shorts(ai_content) if ai_content else []
     
+    # Detailed Selection Logging
+    if cyber_articles_new:
+        print(f"\n📊 Selection Stats: Cybersecurity")
+        print(f"   - Total Fetched: {len(cyber_articles)}")
+        print(f"   - Unique (New): {len(cyber_articles_new)}")
+        print(f"   - GPT Summary Limit: 6")
+        print(f"   🏆 Top 3 Scored Articles:")
+        # Show top 3 in logs based on score
+        scored_cyber = sorted(cyber_articles_new, key=lambda x: x.get('relevance_score', 0), reverse=True)
+        for i, a in enumerate(scored_cyber[:3], 1):
+            print(f"     {i}. [{a.get('relevance_score', 0)} pts] {a['title'][:60]}...")
+            
+    if ai_articles_new:
+        print(f"\n📊 Selection Stats: AI")
+        print(f"   - Total Fetched: {len(ai_articles)}")
+        print(f"   - Unique (New): {len(ai_articles_new)}")
+        print(f"   - GPT Summary Limit: 6")
+        print(f"   🏆 Top 3 Scored Articles:")
+        scored_ai = sorted(ai_articles_new, key=lambda x: x.get('relevance_score', 0), reverse=True)
+        for i, a in enumerate(scored_ai[:3], 1):
+            print(f"     {i}. [{a.get('relevance_score', 0)} pts] {a['title'][:60]}...")
+
     print(f"\n📊 Parsed {len(new_cyber_shorts)} new cybersecurity shorts")
     print(f"📊 Parsed {len(new_ai_shorts)} new AI shorts")
     
@@ -1150,7 +1277,7 @@ def update_shorts():
     data['recentCVEs'] = data['recentCVEs'][:15]
     
     # Final safeguard: Ensure we have content
-    MIN_CONTENT = 2
+    MIN_CONTENT = 5
     if len(data['cyberShorts']) < MIN_CONTENT and len(existing_cyber) > 0:
         print(f"⚠️  Keeping {MIN_CONTENT} most recent cyber shorts as backup")
         data['cyberShorts'] = existing_cyber[:MIN_CONTENT]
