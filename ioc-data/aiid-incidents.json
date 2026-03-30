@@ -1039,20 +1039,12 @@
       "date": "2026-01-02",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1323",
-      "incident_id": 1323,
-      "title": "Madhya Pradesh Congress Alleges AI-Generated Images Were Submitted in National Water Award Process",
-      "date": "2025-12-30",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 131,
+    "total": 130,
     "last7Days": 8,
     "last30Days": 70
   },
-  "lastUpdated": "2026-03-30T02:17:51.415891+05:30"
+  "lastUpdated": "2026-03-30T09:04:15.752788+05:30"
 }
