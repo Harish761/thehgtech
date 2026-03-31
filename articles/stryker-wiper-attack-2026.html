@@ -358,7 +358,7 @@
     </nav>
     <!-- Header/Nav remains consistent with site -->
     <article>
-        <header class="article-header">
+        <header class="article-header" style="margin-top: 100px;">
             <h1>Stryker Wiper Deep-Dive: Handala's Abuse of Microsoft Intune to Remote-Wipe 80,000 Devices</h1>
             <div class="meta" style="color: var(--text-secondary); margin-bottom: 2rem;">
                 <span><i class="fas fa-user"></i> Harish G</span> &bull; 
@@ -369,146 +369,165 @@
 
         <div class="exec-summary">
             <h4>Executive Summary</h4>
-            <p>On March 11, 2026, a coordinated "cloud-native" wiper attack targeted global enterprises, resulting in the remote wiping of over 80,000 devices via Microsoft Intune. Attributed to the Iran-linked "Handala" group, the attack relied entirely on the abuse of legitimate administrative features rather than traditional malware. This technical analysis explores the "Living-off-the-Cloud" (LotC) techniques used, the bypass of MFA through session hijacking, and provides a comprehensive resilience framework for Microsoft Entra ID and Intune environments.</p>
+            <p>On March 11, 2026, the cybersecurity landscape witnessed a significant event: a mass remote-wipe campaign targeting global enterprises. Approximately 80,000 devices across 79 countries were rendered inoperable through the exploitation of Microsoft Intune’s administrative capabilities. Attributed to the Iran-linked group "Handala," the attack represents a sophisticated example of "Living-off-the-Cloud" (LotC) tactics. By bypassing traditional security perimeters through session hijacking and abusing legitimate device management features, the attackers demonstrated the vulnerability of centralized cloud management when not sufficiently hardened. This technical deep-dive analyzes the attack sequence and provides a detailed strategy for organizational resilience.</p>
         </div>
 
-        <p>I’ve been closely tracking this incident since March 11 by following verified news reports, Reddit threads in r/netsec and r/cybersecurity, official Microsoft advisories, and public technical analysis from security researchers globally. What we are witnessing is not just another data breach; it is a fundamental shift in how state-sponsored hacktivists define "impact" in the cloud era.</p>
+        <p>I’ve been closely tracking the Stryker Wiper incident for three weeks, following it since the first reports emerged on March 11. By synthesizing information from verified news reports, active discussions in developer and security communities like r/netsec and r/cybersecurity, official Microsoft security advisories, and public technical analysis from incident responders, a clear picture of the event has developed. This analysis moves beyond the headlines to examine the technical mechanics of the attack and, crucially, the specific architectural changes required to prevent a recurrence.</p>
 
-        <h2>1. The Timeline: 48 Hours of Operational Decapitation</h2>
+        <p>The significance of this event lies not in the use of novel malware—of which there was none—but in the clinical abuse of legitimate enterprise tools. This is the new reality of cloud-native threats: the tools used to manage our environments are being turned into the primary vectors for their destruction.</p>
+
+        <h2>1. The Timeline: Sequence of a Cloud-Native Attack</h2>
         
-        <p>The Stryker Wiper campaign didn't start with a bang, but with a silent series of credential thefts. Based on multiple incident reports and forensic reconstructions, the timeline followed a clinical progression:</p>
+        <p>Reconstructing the event timeline reveals a phased approach that prioritized stealth and reconnaissance before the final execution of the wipe commands. The attackers spent several days inside the targeted environments before taking any destructive action.</p>
 
-        <h3>Phase 1: Session Hijacking (March 5 - March 10)</h3>
-        <p>Before the first wipe command was ever sent, the Handala group spent days harvesting administrative sessions. Rather than attempting to crack passwords, they leveraged AitM (Adversary-in-the-Middle) phishing and infostealer malware to capture authenticated session cookies. This allowed them to bypass Conditional Access policies that required MFA, as they were effectively "riding" on an already established, trusted session of a Global Administrator.</p>
+        <h3>Phase 1: Session Hijacking and Initial Access (March 5 - March 10)</h3>
+        <p>Access was not gained through brute force but through sophisticated session hijacking. By leveraging Adversary-in-the-Middle (AitM) phishing and infostealer malware, the Handala group captured authenticated session cookies from administrative accounts. This allowed them to reuse established, trusted sessions that had already satisfied Multi-Factor Authentication (MFA) requirements, effectively bypassing security policies meant to verify identity.</p>
 
-        <h3>Phase 2: The Intune Reconnaissance (March 10)</h3>
-        <p>Logs from multiple affected tenants show that on March 10, compromised accounts were used to enumerate Intune device lists. Attackers were not looking for data to steal; they were mapping the scope of the "Remote Wipe" and "Factory Reset" capabilities across corporate workstations and mobile devices.</p>
+        <h3>Phase 2: Tenant Reconnaissance (March 10)</h3>
+        <p>Once inside the Microsoft Entra ID (formerly Azure AD) environment, the attackers used the compromised Global Administrator credentials to enumerate the device inventory in Microsoft Intune. Forensic logs show systematic querying of the Microsoft Graph API to identify high-value targets and map out the device management landscape. This was a targeted mapping exercise intended to maximize the impact of the subsequent phase.</p>
 
-        <h3>Phase 3: The Mass Wipe (March 11, 04:00 UTC)</h3>
-        <p>The attackers executed a series of automated scripts hitting the Graph API. Within a 4-hour window, mass wipe commands were issued to approximately 80,000 devices across 79 countries. By the time IT teams woke up in London and New York, their fleets were already displaying the Windows "Resetting this PC" screen.</p>
+        <h3>Phase 3: Execution of the Mass Wipe (March 11, 04:00 UTC)</h3>
+        <p>The destructive phase was automated and rapid. Utilizing scripts to interact directly with the Graph API, the attackers issued mass <code>wipe</code> commands. Within a four-hour window, corporate workstations, laptops, and mobile devices across the globe began the Windows "Resetting this PC" process. Because the management plane itself was the source of the command, endpoint protection platforms (EPP) and EDRs did not intervene, treating the command as a legitimate administrative action.</p>
 
         <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
             <img src="../images/articles/stryker-wiper-01.png" alt="Stryker Wiper Attack Timeline" style="width: 100%; height: auto; display: block;">
             <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
-                <strong>Attack Reconstruction:</strong> Visual timeline from initial session theft to mass remote wipe execution.
+                <strong>Attack Reconstruction:</strong> Visual timeline from initial session hijacking to the execution of mass remote wipe commands via the Microsoft Graph API.
             </div>
         </div>
 
-        <h2>2. Technical Breakdown: The "Living-off-the-Cloud" Tactic</h2>
+        <h2>2. Technical Analysis: The "Living-off-the-Cloud" Methodology</h2>
         
-        <p>The most striking aspect of the Stryker attack is the total absence of traditional malware. There was no `.exe`, no PowerShell obfuscation, and no C2 beaconing in the traditional sense. The "malware" was simply the Microsoft Graph API.</p>
+        <p>The defining characteristic of the Stryker event was the complete absence of traditional malware. The attackers did not need to bypass antivirus or endpoint detection and response (EDR) systems on individual devices because they were issuing commands through the management layer that these systems are designed to trust.</p>
 
-        <h3>Abusing the 'Remote Wipe' Command</h3>
-        <p>The core of the attack was the abuse of the `managedDevices/wipe` and `managedDevices/retire` commands in Microsoft Intune. By programmatically iterating through every device ID in a tenant, the attackers could issue a "Factory Reset" command that effectively turns a $2,000 corporate laptop into a paperweight until it can be re-imaged.</p>
+        <h3>Abuse of the Graph API and Intune Commands</h3>
+        <p>The core of the attack involved programmatic calls to the Microsoft Graph API, specifically targeting the <code>managedDevices/wipe</code> and <code>managedDevices/retire</code> endpoints. These are standard features used by IT departments to clear data from lost or stolen devices or to decommission old hardware. By automating these calls at scale, the attackers turned a management feature into a weapon for mass data destruction.</p>
 
-        <p>Critically, the attackers frequently selected the option to <strong>"Wipe device, and continue to wipe even if device loses power."</strong> This flag ensured that even if a user noticed the reset starting and pulled the plug, the process would resume the moment power was restored, guaranteeing data destruction.</p>
+        <p>Specifically, the attackers utilized the flag to <strong>"Wipe device, and continue to wipe even if device loses power."</strong> This setting ensures that the reset process is persistent; if a user attempts to interrupt the process by powering down the machine, it simply resumes once the device is restarted, making it exceptionally difficult to halt once initiated.</p>
 
-        <h3>The MFA Bypass Gap</h3>
-        <p>Many organisations believed they were safe because they had MFA enabled for all admins. However, the Stryker attack proved that <strong>MFA is not a silver bullet against session theft.</strong> If an admin logs in from a trusted device and their cookie is stolen, that cookie is still valid for hours—sometimes days—depending on the Token Lifetime policies. Handala simply imported these cookies into a hardened browser and proceeded as the legitimate user.</p>
+        <h3>The Failure of Traditional MFA</h3>
+        <p>This event highlights a critical weakness in many current security implementations: the reliance on session-based MFA that can be bypassed through ticket/cookie theft. Because the Handala group captured the session cookies rather than the credentials themselves, the Entra ID platform treated the attacker's traffic as a continuation of a previously verified, legitimate session. This underscores the need for phishing-resistant authentication methods that bind a session to a specific physical device.</p>
 
         <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
             <img src="../images/articles/stryker-wiper-02.png" alt="Ransomware vs Wiper Attack Comparison" style="width: 100%; height: auto; display: block;">
             <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
-                <strong>Operational Difference:</strong> Traditional ransomware (locking files) vs. Modern Device Management abuse (remote wipe commands).
+                <strong>Operational Comparison:</strong> Traditional ransomware (which encrypts files for ransom) versus the cloud-native wiper approach (which abuses management tools for direct destruction).
             </div>
         </div>
 
-        <h2>3. Victimology: Why Hospitals Were Spared But Banks Weren't</h2>
+        <h2>3. Victimology and Targeted Sectors</h2>
         
-        <p>Initial reports suggested a random spray-and-pray attack, but deeper analysis reveals a targeted approach. While 80,000 devices were hit, patient-facing medical devices were notably unaffected. This is likely due to the fact that medical IoT devices are rarely managed via Intune or Entra ID in the same way corporate laptops are.</p>
+        <p>While the attack was global, its impact was not uniform. Handala appears to have prioritized sectors where a mass wipe would cause significant operational disruption, such as finance, logistics, and large-scale manufacturing. These industries depend heavily on centralized device management for distributed workforces.</p>
 
-        <p>Conversely, financial institutions and logistics firms saw the highest impact. These organisations rely heavily on Intune for "Zero Touch Deployment" of workstations. By hitting the management layer, Handala didn't just delete files; they destroyed the very mechanism used to fix the systems.</p>
+        <p>A notable observation in several research reports is that patient-facing medical equipment remained largely unaffected. This is likely due to the separate management networks often used for critical healthcare IoT, which are frequently isolated from the primary corporate Intune tenant. This isolation provided an unintended layer of protection, emphasizing the value of network and management segmentation.</p>
 
-        <h2>4. Forensic Artifacts and Detection</h2>
+
+        <h2>4. Organizational Resilience: A Detailed Hardening Strategy</h2>
         
-        <p>For organisations currently performing "clean-room" audits of their Entra ID environment, specific artifacts have emerged as "smoking guns" of the Stryker activity:</p>
+        <p>The Stryker incident necessitates a re-evaluation of how organizations secure their cloud management planes. The following sections provide a technical roadmap for hardening Microsoft Entra ID and Intune environments against similar LotC attacks. This section constitutes the core of our technical recommendations for security architects.</p>
 
-        <ul>
-            <li><strong>AuditLogs:</strong> Look for `Wipe managed device` operations originating from unexpected IP addresses or through "Managed Search" API calls.</li>
-            <li><strong>Sign-in Logs:</strong> Anomalous browser strings. Attackers used specific versions of "Hardened Firefox" and "Go-Login" browsers to simulate legitimate sessions while avoiding detection by generic bot-blockers.</li>
-            <li><strong>Graph API Calls:</strong> Mass calls to `https://graph.microsoft.com/beta/deviceManagement/managedDevices` within short timeframes.</li>
-        </ul>
+        <h3>4.1. Implementing Phishing-Resistant Authentication</h3>
+        <p>Standard MFA (SMS, Voice, or Push notifications) is no longer sufficient for administrative accounts. The absolute priority for any organization using Microsoft 365 is to transition all high-privilege users to phishing-resistant MFA.</p>
 
-        <h2>5. How to Protect Your Organisation: The Resilience Framework</h2>
-        
-        <p>This is the most critical section of this analysis. If your current security posture assumes that "MFA + Global Admin = Secure," the Stryker attack has proven you wrong. We must move toward a model of <strong>Zero Standing Privileges</strong> and <strong>Multi-Party Authorization.</strong></p>
-
-        <h3>5.1. Hardening Conditional Access (CA)</h3>
-        <p>Generic CA policies are no longer enough. You must implement <strong>Phishing-Resistant MFA</strong>. If you are still using SMS, Voice, or Push Notifications for Global Admins, you are vulnerable to the same session hijacking used in Stryker.</p>
-
-        <p><strong>Recommendation:</strong> Create a CA policy that mandates FIDO2 Security Keys (e.g., YubiKey) or Windows Hello for Business for all administrative paths. This ensures that even if a session cookie is stolen, the attacker cannot re-authenticate or perform high-sensitivity actions without physical hardware possession.</p>
-
-        <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
-            <img src="../images/articles/stryker-wiper-03.png" alt="Hardened Intune Architecture" style="width: 100%; height: auto; display: block;">
-            <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
-                <strong>Resilience Blueprint:</strong> Implementing Privileged Identity Management (PIM) and Multi-Party Authorization (MPA) for destructive commands.
-            </div>
-        </div>
-
-        <h3>5.2. Implementing "Non-Destructive" Custom RBAC Roles</h3>
-        <p>Why does your L1 helpdesk need the ability to wipe 10,000 devices? In most organisations, the default "Intune Administrator" role is vastly over-privileged.</p>
-
-        <p><strong>Step-by-step:</strong>
+        <p><strong>Configuring Conditional Access for Phishing-Resistance:</strong><br>
+        To enforce this, you should create or modify a Conditional Access (CA) policy in Microsoft Entra Admin Center:</p>
         <ol>
-            <li>Navigate to Intune > Tenant Administration > Roles.</li>
-            <li>Create a <strong>Custom Role</strong> named "Helpdesk Support - No Wipe".</li>
-            <li>In permissions, grant `Remote tasks` for everything <em>except</em> Wipe and Retire.</li>
-            <li>Assign this to your primary support staff via Entra ID Groups.</li>
-            <li>Reserve the full Wipe capability for a separate, highly restricted group that requires PIM (Privileged Identity Management) activation WITH an approval workflow.</li>
-        </ol></p>
+            <li><strong>Assignment:</strong> Target binary "Global Administrator" and other high-privilege roles.</li>
+            <li><strong>Target Resources:</strong> Apply to "All Cloud Apps" or specifically to "Microsoft Intune" and "Microsoft Azure Management".</li>
+            <li><strong>Access Controls:</strong> Under "Grant," select "Require authentication strength."</li>
+            <li><strong>Authentication Strength:</strong> Choose "Phishing-resistant MFA." This strictly limits access to methods like FIDO2 security keys (e.g., Yubikey) or Windows Hello for Business, which bind the authentication to the physical hardware and cannot be captured via AitM phishing.</li>
+        </ol>
 
         <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
             <img src="../images/articles/stryker-wiper-04.png" alt="Phishing-Resistant MFA Settings" style="width: 100%; height: auto; display: block;">
             <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
-                <strong>Hardening CA Policies:</strong> Mandating phishing-resistant MFA (FIDO2) for all administrative paths in Microsoft Entra ID.
+                <strong>Hardening Access:</strong> Configuring Microsoft Entra ID Conditional Access to mandate phishing-resistant MFA for administrative roles.
             </div>
         </div>
 
-        <h3>5.3. Production-Ready KQL for Sentinel/Defender</h3>
-        <p>You cannot wait for users to call the helpdesk. You must alert on mass wipe attempts in real-time. Use the following KQL query in Microsoft Sentinel to detect potential Stryker-like activity:</p>
+        <h3>4.2. Eliminating Standing Privileges via PIM</h3>
+        <p>No administrator should have permanent Global Admin rights. The "Stryker" attack succeeded because the compromised sessions had persistent, high-level access. Privileged Identity Management (PIM) must be used to ensure that administrative rights are only available when needed and only after additional verification.</p>
+
+        <p><strong>Configuring PIM with Multi-Party Approval:</strong><br>
+        For destructive or sensitive roles like "Intune Administrator," implement a "Just-In-Time" (JIT) access workflow:</p>
+        <ol>
+            <li><strong>Activation Requirement:</strong> Require MFA for activation (this must be phishing-resistant).</li>
+            <li><strong>Approval Requirement:</strong> Require approval for activation. Designate at least two "Approvers" (e.g., a Security Manager and a Lead Infrastructure Architect).</li>
+            <li><strong>Activation Duration:</strong> Limit the activation to a short window (e.g., 2-4 hours).</li>
+            <li><strong>Justification:</strong> Require a ticket number and business justification for the activation.</li>
+        </ol>
+
+        <h3>4.3. Custom RBAC Roles: The Principle of Least Privilege</h3>
+        <p>The standard "Intune Administrator" role is often too broad for daily operational tasks. Organizations should decompose this role into specific, lower-privilege custom roles to limit the potential blast radius of a single compromised session.</p>
+
+        <p><strong>Creating a "Helpdesk - Non-Destructive" Role in Intune:</strong><br>
+        By creating a custom role, you can allow support staff to perform their jobs without the ability to trigger a mass wipe.</p>
+        <ol>
+            <li>Navigate to <strong>Tenant Administration > roles > All roles > Create</strong>.</li>
+            <li><strong>Permissions:</strong> Grant permissions for "Remote tasks" like <code>Remote lock</code>, <code>Reset password</code>, and <code>Sync</code>.</li>
+            <li><strong>Restriction:</strong> Do <strong>not</strong> grant permissions for <code>Wipe</code>, <code>Retire</code>, or <code>Delete</code>.</li>
+            <li><strong>Assignment:</strong> Assign this role to your primary support staff via Entra ID Groups. Reserve full Wipe capability for a separate, highly restricted group behind PIM.</li>
+        </ol>
+
+        <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
+            <img src="../images/articles/stryker-wiper-03.png" alt="Hardened Intune Architecture" style="width: 100%; height: auto; display: block;">
+            <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
+                <strong>Management Plane Hardening:</strong> Implementing a tiered administration model with JIT access and decomposed RBAC roles to minimize systemic risk.
+            </div>
+        </div>
+
+        <h3>4.4. Proactive Detection and Monitoring with KQL</h3>
+        <p>Real-time detection is essential to catch an attack in its early stages. Security teams should implement automated alerting in Microsoft Sentinel (or their SIEM of choice) to monitor for anomalous administrative actions.</p>
+
+        <p><strong>KQL Query: Detection of Bulk Remote Wipe Actions</strong><br>
+        This query alerts when multiple wipe commands are issued by a single account within a short timeframe, which is a key indicator of automated attack scripts.</p>
 
         <div class="kql-box">
             <div class="kql-header">
-                <span>Detection: Mass Remote Wipe Activity</span>
-                <span>Category: Threat Detection</span>
+                <span>Alert Rule: Bulk Intune Device Wipe</span>
+                <span>Category: Administrative Abuse</span>
             </div>
-            <pre><code>// Detect more than 5 Remote Wipe commands from a single user in 10 minutes
+            <pre><code>// Detects more than 10 'Wipe managed device' commands from a single user in 15 minutes.
 AuditLogs
-| where OperationName has "Wipe managed device" or OperationName has "Retire managed device"
+| where OperationName == "Wipe managed device" or OperationName == "Retire managed device"
 | where Result == "success"
-| summarize count(), DeviceList = make_set(TargetResources[0].displayName) by InitiatedBy.user.userPrincipalName, bin(TimeGenerated, 10m)
-| where count_ > 5
-| project TimeGenerated, InitiatedBy_user_userPrincipalName, count_, DeviceList
+| summarize Count = count(), DeviceNames = make_set(TargetResources[0].displayName) by InitiatedBy.user.userPrincipalName, bin(TimeGenerated, 15m)
+| where Count > 10
+| project TimeGenerated, InitiatedBy_user_userPrincipalName, Count, DeviceNames
 | extend AccountCustomEntity = InitiatedBy_user_userPrincipalName</code></pre>
         </div>
 
-        <h3>5.4. Backup via Microsoft365DSC (Configuration-as-Code)</h3>
-        <p>Most organisations backup their data, but almost none backup their <strong>Intune Configuration.</strong> If an attacker deletes your Autopilot profiles or CA policies, how long would it take you to rebuild from memory?</p>
+        <h3>4.5. Configuration-as-Code and Recovery Workflows</h3>
+        <p>Resilience is not just about prevention; it is about the speed of recovery. Organizations must have the ability to rebuild their management environment from a known good state.</p>
 
-        <p>Start using <strong>Microsoft365DSC</strong> (Digital Storage Cloud). This allows you to export your entire Intune configuration as a PowerShell script. Store this in a private GitHub repository. If your tenant is ever "wiped" at the config level, you can redeploy your entire security posture in minutes.</p>
+        <p><strong>Using Microsoft365DSC for Configuration Backup:</strong><br>
+        Microsoft365DSC allows you to treat your M365 tenant configuration as code. You can "export" your entire Intune configuration into a series of DSC scripts.</p>
+        <ul>
+            <li><strong>Schedule Regular Exports:</strong> Run a weekly export of your tenant configuration.</li>
+            <li><strong>Store in Secure Repository:</strong> Store these scripts in a version-controlled repository outside your M365 environment.</li>
+            <li><strong>Automated Recovery:</strong> If your tenant's configuration is tampered with, you can "push" the known-good configuration back to the tenant, restoring your security posture in minutes.</li>
+        </ul>
 
-        <h2>6. Conclusion: The Paradigm of Cloud Resilience</h2>
+        <h2>5. Conclusion: The Shift to Management Plane Security</h2>
         
-        <p>The Stryker Wiper attack is a painful reminder that the cloud provides as much leverage to defenders as it does to attackers. When we centralise management into Intune, we gain efficiency, but we also create a "God Mode" that, once compromised, can destroy an entire global fleet in an afternoon.</p>
-
-        <p>True resilience in 2026 isn't just about better firewalls; it’s about <strong>limiting the blast radius</strong> of your own administrative features. Disable what you don't use, restrict who can initiate destruction, and always — always — have your configuration stored as code.</p>
+        <p>The Stryker Wiper incident represents an evolution in threat activity where the management plane itself is the target. By technical analysis of the Handala group's methods, it is clear that traditional endpoint security is insufficient when the administrative controls themselves are compromised. Moving forward, organizations must prioritize the security of their identity and management platforms with the same intensity they apply to their data and network perimeters. Transitioning to phishing-resistant MFA, eliminating standing privileges via PIM, and adopting configuration-as-code are now the essential foundations of enterprise resilience in a cloud-first world.</p>
 
         <div class="backlink-grid">
             <a href="../guides/third-party-risk-management.html" class="backlink-card">
                 <h4>Third-Party Risk Management</h4>
-                <p>Learn how to manage the risks associated with cloud vendors and third-party integrators.</p>
+                <p>Establishing security controls and oversight for cloud vendors and management partners.</p>
             </a>
             <a href="../guides/passkeys-fido2-passwordless-authentication.html" class="backlink-card">
-                <h4>FIDO2 & Passkeys Guide</h4>
-                <p>The definitive guide to implementing phishing-resistant MFA across your enterprise.</p>
+                <h4>FIDO2 & Passkeys Implementation</h4>
+                <p>Technical roadmap for deploying phishing-resistant authentication across the enterprise.</p>
             </a>
             <a href="../guides/incident-response-plan.html" class="backlink-card">
-                <h4>Incidence Response Planning</h4>
-                <p>Build a robust IR plan that accounts for cloud-native wiper attacks.</p>
+                <h4>Incident Response for Cloud Threats</h4>
+                <p>Modernizing IR playbooks to address mass device destruction and management plane abuse.</p>
             </a>
             <a href="../guides/cloud-security-hardening.html" class="backlink-card">
-                <h4>Cloud Hardening 2026</h4>
-                <p>Advanced strategies for securing Entra ID, AWS, and GCP environments.</p>
+                <h4>Entra ID Hardening Framework</h4>
+                <p>Advanced security configurations for Microsoft Entra ID and modern device management.</p>
             </a>
         </div>
 
