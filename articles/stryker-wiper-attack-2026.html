@@ -201,9 +201,92 @@
             .placeholder-box { padding: 1.5rem; }
         }
     </style>
+    <link rel="stylesheet" href="../ui-enhancements.css?v=20260220">
+
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        // Inline theme set to avoid FOUC
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+    <!-- Google Analytics 4 -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+    <!-- Fullres Analytics -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
 </head>
 
 <body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="../logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark"
+                style="height: 28px; width: auto; margin: 0;">
+            <img src="../logo-light.png" alt="TheHGTech" class="m-logo-img logo-light"
+                style="height: 28px; width: auto; margin: 0;">
+            <span
+                style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </div>
+        <div class="m-header__actions">
+                <button class="m-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+                <span class="m-theme-toggle__thumb"></span>
+                <span class="m-theme-toggle__stars">
+                    <span class="m-theme-toggle__star"></span>
+                    <span class="m-theme-toggle__star"></span>
+                </span>
+            </button>
+            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bottom Navigation -->
+    <nav class="m-bottom-nav m-only">
+        <a href="/" class="m-bottom-nav__item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="/index.html#news" class="m-bottom-nav__item">
+            <i class="fas fa-bolt"></i>
+            <span>News</span>
+        </a>
+        <a href="/articles.html" class="m-bottom-nav__item">
+            <i class="fas fa-newspaper"></i>
+            <span>Articles</span>
+        </a>
+        <a href="/guides/" class="m-bottom-nav__item">
+            <i class="fas fa-book"></i>
+            <span>Guides</span>
+        </a>
+    </nav>
     <!-- Header/Nav remains consistent with site -->
     <article>
         <header class="article-header">
@@ -254,10 +337,11 @@
         <h3>The MFA Bypass Gap</h3>
         <p>Many organisations believed they were safe because they had MFA enabled for all admins. However, the Stryker attack proved that <strong>MFA is not a silver bullet against session theft.</strong> If an admin logs in from a trusted device and their cookie is stolen, that cookie is still valid for hours—sometimes days—depending on the Token Lifetime policies. Handala simply imported these cookies into a hardened browser and proceeded as the legitimate user.</p>
 
-        <div class="placeholder-box">
-            <i class="fas fa-exchange-alt"></i>
-            <strong>[IMAGE PLACEHOLDER: Comparison diagram between traditional ransomware (encryption) vs. LotC Wiper (remote wipe command abuse)]</strong><br>
-            <span>Suggested filename: stryker-wiper-02.png</span>
+        <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
+            <img src="../images/articles/stryker-wiper-02.png" alt="Ransomware vs Wiper Attack Comparison" style="width: 100%; height: auto; display: block;">
+            <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
+                <strong>Operational Difference:</strong> Traditional ransomware (locking files) vs. Modern Device Management abuse (remote wipe commands).
+            </div>
         </div>
 
         <h2>3. Victimology: Why Hospitals Were Spared But Banks Weren't</h2>
@@ -285,10 +369,11 @@
 
         <p><strong>Recommendation:</strong> Create a CA policy that mandates FIDO2 Security Keys (e.g., YubiKey) or Windows Hello for Business for all administrative paths. This ensures that even if a session cookie is stolen, the attacker cannot re-authenticate or perform high-sensitivity actions without physical hardware possession.</p>
 
-        <div class="placeholder-box">
-            <i class="fas fa-shield-alt"></i>
-            <strong>[IMAGE PLACEHOLDER: Architectural diagram of a hardened Intune environment using Multi-Party Authorization and PIM]</strong><br>
-            <span>Suggested filename: stryker-wiper-03.png</span>
+        <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
+            <img src="../images/articles/stryker-wiper-03.png" alt="Hardened Intune Architecture" style="width: 100%; height: auto; display: block;">
+            <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
+                <strong>Resilience Blueprint:</strong> Implementing Privileged Identity Management (PIM) and Multi-Party Authorization (MPA) for destructive commands.
+            </div>
         </div>
 
         <h3>5.2. Implementing "Non-Destructive" Custom RBAC Roles</h3>
@@ -303,10 +388,11 @@
             <li>Reserve the full Wipe capability for a separate, highly restricted group that requires PIM (Privileged Identity Management) activation WITH an approval workflow.</li>
         </ol></p>
 
-        <div class="placeholder-box">
-            <i class="fas fa-lock"></i>
-            <strong>[IMAGE PLACEHOLDER: Mockup of the Microsoft Entra ID Conditional Access UI showing the "Require phishing-resistant MFA" setting]</strong><br>
-            <span>Suggested filename: stryker-wiper-04.png</span>
+        <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
+            <img src="../images/articles/stryker-wiper-04.png" alt="Phishing-Resistant MFA Settings" style="width: 100%; height: auto; display: block;">
+            <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
+                <strong>Hardening CA Policies:</strong> Mandating phishing-resistant MFA (FIDO2) for all administrative paths in Microsoft Entra ID.
+            </div>
         </div>
 
         <h3>5.3. Production-Ready KQL for Sentinel/Defender</h3>
