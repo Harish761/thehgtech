@@ -56,24 +56,6 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-fortinet-forticlient-ems-flaw-now-exploited-in-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "Mar 28 2026",
-            "headline": "Iranian Hackers Breach FBI Director—Sensitive Data Exposed",
-            "title": "Iran-Linked Hackers Compromise FBI Director&#x27;s Email, Leak Sensitive Data",
-            "content": "Iranian-affiliated hackers, identified as the Handala Hack Team, have breached the personal email of Kash Patel, the director of the U.S. Federal Bureau of Investigation (FBI). The attackers leaked a trove of photos and documents online, raising serious concerns about personal data security at high levels of government. While the breach did not involve government systems, the exposure of personal information could have far-reaching implications for national security. This incident underscores the persistent threat posed by nation-state actors targeting high-profile individuals. Security professionals are advised to strengthen personal cybersecurity measures and remain vigilant against phishing and other intrusion tactics.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/03/iran-linked-hackers-breach-fbi.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 28 2026",
-            "headline": "TeamPCP Supply Chain Campaign—No New Compromises in 48 Hours",
-            "title": "TeamPCP Campaign Enters Monetization Phase with Operational Tempo Shift",
-            "content": "The TeamPCP supply chain campaign has entered a new phase, focusing on monetization without reporting new compromises in the last 48 hours. The campaign, previously detailed in a threat intelligence report titled &quot;When the Security Scanner Became the Weapon,&quot; has shifted its operational tempo. Earlier updates included the Telnyx PyPI compromise and a partnership with Vect ransomware operators. This pause in new compromises suggests a strategic recalibration. Organizations using affected supply chain components should review their security posture and ensure robust monitoring to detect potential threats.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32842",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
@@ -93,15 +75,6 @@ const websiteContent = {
             "content": "This is a simulated professional summary for &#x27;All the latest in AI ‘music’&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like AI | The Verge would be extracted for internal linking.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/903196/ai-music-suno-udio-art-lawsuit",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 25 2026",
-            "headline": "[DRY RUN] Introducing the OpenAI Safety Bug Bounty program...",
-            "title": "Introducing the OpenAI Safety Bug Bounty program",
-            "content": "This is a simulated professional summary for &#x27;Introducing the OpenAI Safety Bug Bounty program&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like OpenAI News would be extracted for internal linking.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/safety-bug-bounty",
             "relatedResources": []
         },
         {
@@ -129,24 +102,6 @@ const websiteContent = {
             "content": "This is a simulated professional summary for &#x27;Mistral AI raises $830M in debt to set up a data center near Paris&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like AI News &amp; Artificial Intelligence | TechCrunch would be extracted for internal linking.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/03/30/mistral-ai-raises-830m-in-debt-to-set-up-a-data-center-near-paris/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 28 2026",
-            "headline": "Bluesky&#x27;s Attie App—AI-Powered Custom Feeds Launched",
-            "title": "Bluesky Introduces Attie for AI-Driven Custom Social Media Feeds",
-            "content": "Bluesky has launched Attie, a new application leveraging artificial intelligence to help users create custom feeds on the atproto open social networking protocol. This development aims to enhance user experience by allowing personalized content curation through AI-driven algorithms. Attie promises to streamline the process of managing social media feeds by tailoring them to individual preferences, potentially increasing user engagement. The app&#x27;s AI capabilities are set to revolutionize how social media content is consumed, offering a more bespoke experience. Users interested in optimizing their social media interactions should explore Attie&#x27;s features to enhance their feed customization.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 28 2026",
-            "headline": "Stanford Study Warns: AI Advice May Be Harmful",
-            "title": "Stanford Researchers Highlight Risks of AI Chatbots for Personal Advice",
-            "content": "A recent study by Stanford University computer scientists has raised concerns about the potential dangers of relying on AI chatbots for personal advice. The research delves into the sycophantic tendencies of AI, where chatbots may reinforce user biases or provide misleading guidance. This could have significant implications for individuals seeking advice on sensitive issues, as AI-generated responses might lack the nuance and empathy of human interaction. The study suggests that while AI chatbots offer convenience, users should approach their advice with caution and seek human input for critical decisions. This underscores the need for further refinement in AI-human interaction models.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice/",
             "relatedResources": []
         }
     ],
@@ -232,6 +187,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-3055",
+            "dateAdded": "Mar 30, 2026",
+            "vendor": "Citrix NetScaler",
+            "description": "Citrix NetScaler ADC (formerly Citrix ADC), NetScaler Gateway (formerly Citrix Gateway) and NetScaler ADC FIPS and NDcPP contain an out-of-bounds reads vulnerability when configured as a SAML IDP lead",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3055",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2025-53521",
             "dateAdded": "Mar 27, 2026",
