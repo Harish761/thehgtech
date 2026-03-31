@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "stryker-wiper-attack-2026",
-      "title": "I’ve Been Tracking the Stryker Wiper Attack for Three Weeks — Here’s Exactly What Happened, How the Attackers Did It, and What Every Organisation Must Do Now",
+      "title": "Stryker Wiper Deep-Dive: Handala's Abuse of Microsoft Intune to Remote-Wipe 80,000 Devices",
       "date": "March 31, 2026",
       "category": "Active Threat",
       "badge": "CRITICAL",
