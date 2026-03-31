@@ -1,6 +1,29 @@
 {
   "articles": [
     {
+      "id": "stryker-wiper-attack-2026",
+      "title": "I’ve Been Tracking the Stryker Wiper Attack for Three Weeks — Here’s Exactly What Happened, How the Attackers Did It, and What Every Organisation Must Do Now",
+      "date": "March 31, 2026",
+      "category": "Active Threat",
+      "badge": "CRITICAL",
+      "author": "Harish G",
+      "excerpt": "80,000 devices wiped via Intune. No malware. Just abused cloud features. Here is the full 7,500-word deep-dive into the LotC (Living-off-the-Cloud) tactics used by the Handala group and how to stop them.",
+      "image": "/images/articles/stryker-wiper-01.png",
+      "externalUrl": "articles/stryker-wiper-attack-2026.html",
+      "readTime": "25 min read",
+      "tags": [
+        "Stryker Wiper",
+        "Handala",
+        "Intune",
+        "Entra ID",
+        "LotC",
+        "Remote Wipe",
+        "Cyber Warfare",
+        "KQL",
+        "Microsoft365DSC"
+      ]
+    },
+    {
       "id": "report-20260330",
       "title": "Weekly Threat Report: March 30, 2026",
       "date": "March 30, 2026",

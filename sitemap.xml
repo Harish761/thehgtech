@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- March 31, 2026 - Stryker Wiper Attack -->
+  <url>
+    <loc>https://thehgtech.com/articles/stryker-wiper-attack-2026.html</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/stryker-wiper-01.png</image:loc>
+      <image:caption>I’ve Been Tracking the Stryker Wiper Attack for Three Weeks — Here’s Exactly What Happened, How the Attackers Did It, and What Every Organisation Must Do Now</image:caption>
+    </image:image>
+  </url>
+
   <!-- March 23, 2026 - Instagram E2EE Rollback -->
   <url>
     <loc>https://thehgtech.com/articles/instagram-e2ee-rollback-2026.html</loc>

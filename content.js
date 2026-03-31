@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] Healthcare IT Platform CareCloud Probing Potential Data Brea...",
+            "title": "Healthcare IT Platform CareCloud Probing Potential Data Breach",
+            "content": "This is a simulated professional summary for &#x27;Healthcare IT Platform CareCloud Probing Potential Data Breach&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like SecurityWeek would be extracted for internal linking.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/healthcare-it-platform-carecloud-probing-potential-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] ⚡ Weekly Recap: Telecom Sleeper Cells, LLM Jailbreaks, Apple...",
+            "title": "⚡ Weekly Recap: Telecom Sleeper Cells, LLM Jailbreaks, Apple Forces U.K. Age Checks and More",
+            "content": "This is a simulated professional summary for &#x27;⚡ Weekly Recap: Telecom Sleeper Cells, LLM Jailbreaks, Apple Forces U.K. Age Checks and More&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/03/weekly-recap-telecom-sleeper-cells-llm.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] Hackers now exploit critical F5 BIG-IP flaw in attacks, patc...",
+            "title": "Hackers now exploit critical F5 BIG-IP flaw in attacks, patch now",
+            "content": "This is a simulated professional summary for &#x27;Hackers now exploit critical F5 BIG-IP flaw in attacks, patch now&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like BleepingComputer would be extracted for internal linking.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-f5-big-ip-flaw-in-attacks-patch-now/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] Telnyx Targeted in Growing TeamPCP Supply Chain Attack...",
+            "title": "Telnyx Targeted in Growing TeamPCP Supply Chain Attack",
+            "content": "This is a simulated professional summary for &#x27;Telnyx Targeted in Growing TeamPCP Supply Chain Attack&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like SecurityWeek would be extracted for internal linking.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/telnyx-targeted-in-growing-teampcp-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] Exploitation of Fresh Citrix NetScaler Vulnerability Begins...",
+            "title": "Exploitation of Fresh Citrix NetScaler Vulnerability Begins",
+            "content": "This is a simulated professional summary for &#x27;Exploitation of Fresh Citrix NetScaler Vulnerability Begins&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like SecurityWeek would be extracted for internal linking.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploitation-of-fresh-citrix-netscaler-vulnerability-begins/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] Critical Fortinet Forticlient EMS flaw now exploited in atta...",
+            "title": "Critical Fortinet Forticlient EMS flaw now exploited in attacks",
+            "content": "This is a simulated professional summary for &#x27;Critical Fortinet Forticlient EMS flaw now exploited in attacks&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like BleepingComputer would be extracted for internal linking.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-fortinet-forticlient-ems-flaw-now-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
             "date": "Mar 28 2026",
             "headline": "Iranian Hackers Breach FBI Director—Sensitive Data Exposed",
             "title": "Iran-Linked Hackers Compromise FBI Director&#x27;s Email, Leak Sensitive Data",
@@ -23,6 +77,60 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] Mantis Biotech is making ‘digital twins’ of humans to help s...",
+            "title": "Mantis Biotech is making ‘digital twins’ of humans to help solve medicine’s data availability problem",
+            "content": "This is a simulated professional summary for &#x27;Mantis Biotech is making ‘digital twins’ of humans to help solve medicine’s data availability problem&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like AI News &amp; Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/30/mantis-biotech-is-making-digital-twins-of-humans-to-help-solve-medicines-data-availability-problem/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] All the latest in AI ‘music’...",
+            "title": "All the latest in AI ‘music’",
+            "content": "This is a simulated professional summary for &#x27;All the latest in AI ‘music’&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like AI | The Verge would be extracted for internal linking.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/903196/ai-music-suno-udio-art-lawsuit",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 25 2026",
+            "headline": "[DRY RUN] Introducing the OpenAI Safety Bug Bounty program...",
+            "title": "Introducing the OpenAI Safety Bug Bounty program",
+            "content": "This is a simulated professional summary for &#x27;Introducing the OpenAI Safety Bug Bounty program&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like OpenAI News would be extracted for internal linking.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/safety-bug-bounty",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] ScaleOps raises $130M to improve computing efficiency amid A...",
+            "title": "ScaleOps raises $130M to improve computing efficiency amid AI demand",
+            "content": "This is a simulated professional summary for &#x27;ScaleOps raises $130M to improve computing efficiency amid AI demand&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like AI News &amp; Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] AI chip startup Rebellions raises $400 million at $2.3B valu...",
+            "title": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round",
+            "content": "This is a simulated professional summary for &#x27;AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like AI News &amp; Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 30 2026",
+            "headline": "[DRY RUN] Mistral AI raises $830M in debt to set up a data center near...",
+            "title": "Mistral AI raises $830M in debt to set up a data center near Paris",
+            "content": "This is a simulated professional summary for &#x27;Mistral AI raises $830M in debt to set up a data center near Paris&#x27;. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like AI News &amp; Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/30/mistral-ai-raises-830m-in-debt-to-set-up-a-data-center-near-paris/",
+            "relatedResources": []
+        },
         {
             "date": "Mar 28 2026",
             "headline": "Bluesky&#x27;s Attie App—AI-Powered Custom Feeds Launched",
