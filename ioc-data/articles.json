@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "axios-supply-chain-attack-2026",
+      "title": "The Axios npm Supply Chain Attack: Full Technical Breakdown, Detection IOCs, and Production Hardening Guide",
+      "date": "April 1, 2026",
+      "category": "Supply Chain",
+      "badge": "CRITICAL",
+      "author": "Harish G",
+      "excerpt": "A deep dive into the 180-minute Axios npm compromise targeting millions of CI pipelines. From postinstall exploits to eBPF containment and robust CI/CD hardening.",
+      "image": "images/articles/axios-supply-chain-attack-2026.png",
+      "externalUrl": "articles/axios-supply-chain-attack-2026.html",
+      "readTime": "25 min read",
+      "tags": [
+        "Axios",
+        "Supply Chain",
+        "npm",
+        "Zero Trust",
+        "CI/CD Hardening",
+        "Incident Response"
+      ]
+    },
+    {
       "id": "stryker-wiper-attack-2026",
       "title": "Stryker Wiper Deep-Dive: Handala's Abuse of Microsoft Intune to Remote-Wipe 80,000 Devices",
       "date": "March 31, 2026",
