@@ -219,17 +219,6 @@ const websiteContent = {
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33634",
             "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-33017",
-            "dateAdded": "Mar 25, 2026",
-            "vendor": "Langflow Langflow",
-            "description": "Langflow contains a code injection vulnerability that could allow building public flows without requiring authentication.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33017",
-            "isZeroDay": false
         }
     ],
     "featureCards": []
