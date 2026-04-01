@@ -15,8 +15,8 @@ import re
 import time
 from datetime import datetime, timedelta
 import pytz
-from google import genai
-from google.genai import types
+import openai
+from openai import OpenAI
 import feedparser
 from html import unescape, escape
 import requests
@@ -726,7 +726,7 @@ At the end of each short's Content, add an Entities line with comma-separated va
 Create a short for EACH of the {len(top_articles)} articles above."""
     
     # Check for Dry Run mode (no API key)
-    api_key = os.environ.get('GEMINI_API_KEY')
+    api_key = os.environ.get('OPENAI_API_KEY')
     dry_run = api_key is None or api_key == ""
     
     if dry_run:
@@ -741,38 +741,32 @@ Source URL: {article['link']}
 Headline: [DRY RUN] {article['title'][:60]}...
 Title: {article['title']}
 Content:
-This is a simulated professional summary for '{article['title']}'. In a real run, Gemini 1.5 Flash would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of {article.get('relevance_score', 0)} based on your new ranking algorithm. Key entities like {article['source']} would be extracted for internal linking.
+This is a simulated professional summary for '{article['title']}'. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of {article.get('relevance_score', 0)} based on your new ranking algorithm. Key entities like {article['source']} would be extracted for internal linking.
 Entities: {article['source']}, security-intel, dry-run
 """
         return fake_content
 
-    # Real Gemini Run sequence
+    # Real OpenAI Run sequence
     global client
     if client is None:
-        client = genai.Client(api_key=api_key)
+        client = OpenAI(api_key=api_key)
         
-    grounding_tool = types.Tool(
-        google_search=types.GoogleSearch()
-    )
-    
-    config = types.GenerateContentConfig(
-        tools=[grounding_tool],
-        temperature=0.3, # precise, professional tone
-        max_output_tokens=4000
-    )
-    
-    # Retry logic for Gemini API
+    # Retry logic for OpenAI API
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            print(f"   🤖 Gemini Request (Attempt {attempt + 1}/{max_retries})...")
-            response = client.models.generate_content(
-                model='gemini-1.5-flash',
-                contents=prompt,
-                config=config
+            print(f"   🤖 OpenAI Request (Attempt {attempt + 1}/{max_retries})...")
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                messages=[
+                    {"role": "system", "content": "You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.3,
+                max_tokens=4000
             )
             
-            content = response.text
+            content = response.choices[0].message.content
             
             # Decode HTML entities (fix &#x27; → ')
             content = unescape(content)
@@ -788,7 +782,7 @@ Entities: {article['source']}, security-intel, dry-run
             return content
             
         except Exception as e:
-            print(f"⚠️  Gemini Attempt {attempt + 1} failed: {e}")
+            print(f"⚠️  OpenAI Attempt {attempt + 1} failed: {e}")
             if attempt < max_retries - 1:
                 time.sleep(2 * (attempt + 1)) # Exponential backoff
             else:
