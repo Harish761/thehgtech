@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 02 2026",
+            "headline": "Vacant Homes Used in Hybrid Cybercrime—Mail Fraud Rises",
+            "title": "Cybercriminals Exploit Vacant Homes for Mail Interception and Fraud",
+            "content": "Cybercriminals are increasingly using vacant homes as &quot;drop addresses&quot; to intercept mail and commit fraud, according to a report by Flare. By exploiting postal services and creating fake identities, these threat actors turn mail into a vector for fraud, impacting individuals and businesses alike. The scheme involves redirecting sensitive mail, such as financial documents, to unoccupied properties where criminals can easily collect them. This trend highlights a hybrid approach to cybercrime, blending physical and digital tactics to exploit vulnerabilities in postal systems. Security professionals are advised to monitor for unusual mail activity and verify address changes with clients to mitigate risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/adversaries-exploit-vacant-homes-to-intercept-mail-in-hybrid-cybercrime/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Progress ShareFile Flaws Enable Pre-Auth RCE—Patch Urgently",
+            "title": "Critical Vulnerabilities in Progress ShareFile Allow Unauthenticated RCE",
+            "content": "Two critical vulnerabilities in Progress ShareFile, a secure file transfer solution, have been identified, allowing unauthenticated remote code execution (RCE) when chained together. These flaws, which affect all versions prior to the latest patch, enable attackers to exfiltrate files from compromised environments without authentication. The vulnerabilities pose a significant risk to enterprises relying on ShareFile for secure data transfers. Organizations using ShareFile should immediately apply the latest security updates to prevent potential data breaches and unauthorized access. This incident underscores the importance of regular security assessments and timely patch management in enterprise environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-progress-sharefile-flaws-can-be-chained-in-pre-auth-rce-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Cisco Patches Critical Bugs—Update to Prevent Exploits",
+            "title": "Cisco Addresses Critical Vulnerabilities in Latest Security Update",
+            "content": "Cisco has released patches for several critical and high-severity vulnerabilities that could lead to authentication bypass, remote code execution, information disclosure, and privilege escalation. These vulnerabilities affect a range of Cisco products, emphasizing the need for immediate updates to prevent potential exploitation. Security professionals are urged to review Cisco&#x27;s advisories and apply the necessary patches to secure their networks. This update is part of Cisco&#x27;s ongoing efforts to address security flaws and protect its customers from evolving cyber threats. Regular patching and vulnerability management remain crucial for maintaining robust cybersecurity defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-and-high-severity-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "250K Records Exposed in Nacogdoches Hospital Breach",
+            "title": "Data Breach at Nacogdoches Memorial Hospital Affects 250,000 Patients",
+            "content": "A data breach at Nacogdoches Memorial Hospital has compromised the personal and health information of approximately 250,000 individuals. The breach, which occurred in January 2026, involved unauthorized access to the hospital&#x27;s internal network by a threat actor. This incident highlights the vulnerabilities in healthcare systems and the critical need for enhanced cybersecurity measures. Affected individuals are advised to monitor their personal information for signs of misuse and consider identity protection services. The healthcare sector remains a prime target for cybercriminals due to the sensitive nature of the data it handles.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/250000-affected-by-data-breach-at-nacogdoches-memorial-hospital/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Trusted Open Source Report Reveals Key Security Insights",
+            "title": "The State of Trusted Open Source Report Highlights Security Trends",
+            "content": "The State of Trusted Open Source report, released in December 2025, provides valuable insights into open source consumption and security across various projects and libraries. The report analyzes data from container image projects, versions, images, language libraries, and builds, offering a comprehensive view of current trends and challenges in open source security. It emphasizes the importance of maintaining trust and security in open source software, which is widely used across industries. Developers and organizations are encouraged to adopt best practices for managing open source dependencies and to stay informed about potential vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/the-state-of-trusted-open-source-report.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Cisco IMC Flaw Allows Admin Access—Patch Immediately",
+            "title": "Critical Cisco IMC Authentication Bypass Grants Admin Privileges",
+            "content": "Cisco has addressed a critical authentication bypass vulnerability in its Integrated Management Controller (IMC) that could allow attackers to gain administrative access. This flaw, among other high-severity vulnerabilities patched by Cisco, poses a significant threat to affected systems, enabling unauthorized control over network devices. Organizations using Cisco IMC are urged to apply the latest patches to protect against potential exploitation. This vulnerability highlights the ongoing need for vigilant security practices and timely updates to safeguard network infrastructure from sophisticated cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-cisco-imc-auth-bypass-gives-attackers-admin-access/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 01 2026",
             "headline": "Apple Expands iOS 18 Updates to Combat DarkSword Exploits",
             "title": "Apple Extends iOS 18 Security Updates to Mitigate DarkSword Threat",
@@ -59,6 +113,60 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Mar 31 2026",
+            "headline": "AI Disrupts Art Schools—Creativity Faces New Challenges",
+            "title": "Art Schools Grapple with AI&#x27;s Impact on Creative Education",
+            "content": "Art schools are facing significant upheaval as artificial intelligence technologies increasingly influence creative fields. Students in disciplines like 3D modeling and animation are experiencing heightened competition as AI tools automate tasks traditionally performed by human artists. This shift is causing concern among educators and students, who fear that AI could devalue human creativity and alter career prospects. The trend reflects a broader industry movement where AI-generated content is becoming more prevalent, challenging the traditional roles of artists and designers. Institutions must now consider integrating AI into their curricula to prepare students for a rapidly evolving job market.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/903954/art-schools-generative-ai-education-creative-jobs",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Microsoft Pursues Superintelligence—Restructures AI Leadership",
+            "title": "Microsoft Restructures to Focus on Superintelligence Development",
+            "content": "Microsoft has restructured its leadership to prioritize the pursuit of superintelligence, appointing Mustafa Suleyman as its inaugural CEO of AI. This strategic shift follows a large-scale company restructuring in March, allowing Suleyman to concentrate on advancing AI capabilities beyond current limitations. The move underscores Microsoft&#x27;s commitment to leading the development of superintelligent systems, which promise to transform business operations and enhance decision-making processes. As AI continues to evolve, companies like Microsoft are investing heavily in research and development to maintain competitive advantages in the tech industry. Professionals should monitor these advancements closely, as they could redefine industry standards and practices.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/905791/mustafa-suleyman-microsoft-ai-transcription-model",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Google Home Update Enhances Gemini AI&#x27;s Command Understanding",
+            "title": "Google Home&#x27;s Gemini AI Update Improves Command Interpretation",
+            "content": "Google has released an update to its Home app, enhancing the Gemini AI assistant&#x27;s ability to understand and execute user commands more naturally. The update allows users to specify lighting preferences with greater precision, such as requesting &quot;the perfect reading light.&quot; This improvement aims to make smart home interactions more intuitive and reliable, addressing previous user feedback about command misinterpretation. As smart home technology becomes increasingly integrated into daily life, advancements like these are crucial for enhancing user experience and satisfaction. Developers and tech leaders should consider similar updates to improve AI interactions in their own products.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/905805/google-home-gemini-temperature-controls-lighting",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 01 2026",
+            "headline": "Claude Code Leak—512K Lines of Source Exposed",
+            "title": "Anthropic&#x27;s Claude Code Source Leak: Security Measures for Enterprises",
+            "content": "Anthropic inadvertently exposed 512,000 lines of TypeScript source code from its Claude Code AI coding agent, following a mishap with the npm package version 2.1.88. This significant leak, involving 1,906 files, poses a potential security risk for enterprises utilizing AI coding agents. The exposed code could be exploited by malicious actors to identify vulnerabilities or replicate proprietary technology. Security leaders are advised to conduct immediate code audits, review access controls, and implement robust monitoring systems to mitigate potential threats. This incident highlights the critical importance of secure software development practices in safeguarding intellectual property.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/claude-code-512000-line-source-leak-attack-paths-audit-security-leaders",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 01 2026",
+            "headline": "Meta&#x27;s Hyperion AI Center—Fueled by 10 Gas Plants",
+            "title": "Meta&#x27;s Hyperion AI Data Center to Use Natural Gas Power",
+            "content": "Meta plans to power its forthcoming Hyperion AI data center with energy from 10 newly constructed natural gas plants. This decision reflects Meta&#x27;s strategy to ensure reliable energy supply for its advanced AI operations, despite environmental concerns associated with fossil fuels. The move is part of a broader trend where tech giants are investing in dedicated energy sources to support their growing data infrastructure needs. While this approach guarantees operational stability, it also raises questions about sustainability and carbon footprint. Industry leaders should weigh the benefits of energy security against the environmental impact when planning future data center expansions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/01/metas-natural-gas-binge-could-power-south-dakota/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 01 2026",
+            "headline": "Holo3 Revolutionizes Computer Interaction—A New Frontier",
+            "title": "Holo3: Transforming Human-Computer Interaction with Innovative Technology",
+            "content": "Holo3 is set to redefine computer usage by introducing groundbreaking interaction methods that transcend traditional interfaces. This new technology promises to enhance user engagement through immersive experiences, potentially revolutionizing sectors such as gaming, education, and professional training. By leveraging advanced holographic displays and intuitive controls, Holo3 aims to bridge the gap between digital and physical environments. As industries increasingly seek innovative solutions to improve user interaction, Holo3 represents a significant leap forward. Developers and tech leaders should explore the potential applications of this technology to stay ahead in the rapidly evolving digital landscape.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/Hcompany/holo3",
+            "relatedResources": []
+        },
         {
             "date": "Apr 01 2026",
             "headline": "Anthropic&#x27;s GitHub Takedown Error—Thousands of Repos Affected",
