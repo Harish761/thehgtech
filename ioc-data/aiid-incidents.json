@@ -1031,20 +1031,12 @@
       "date": "2026-01-10",
       "category": "autonomous_vehicle",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1324",
-      "incident_id": 1324,
-      "title": "Pieces Technologies' Clinical AI Systems Allegedly Marketed With Misleading Performance Claims",
-      "date": "2026-01-02",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 130,
+    "total": 129,
     "last7Days": 7,
     "last30Days": 49
   },
-  "lastUpdated": "2026-04-02T19:20:20.549137+05:30"
+  "lastUpdated": "2026-04-02T22:36:53.197502+05:30"
 }
