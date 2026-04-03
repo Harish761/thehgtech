@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 03 2026",
+            "headline": "TrueConf Zero-Day Exploited in Asian Government Cyberattacks",
+            "title": "Chinese Threat Actor Exploits TrueConf Zero-Day in Government Attacks",
+            "content": "A Chinese threat actor has exploited a zero-day vulnerability in the TrueConf video conferencing platform, targeting Asian government entities. The attack involved reconnaissance, privilege escalation, and the execution of additional payloads, posing a significant threat to governmental operations. The exploitation of this vulnerability underscores the persistent risk of zero-day attacks in critical infrastructure. Security teams in affected regions are urged to monitor network traffic for unusual activity and apply any available patches or mitigations promptly. This incident highlights the importance of securing communication platforms against sophisticated cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/trueconf-zero-day-exploited-in-asian-government-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "ChatGPT Data Leak, Android Rootkit, Water Facility Ransomware Hit",
+            "title": "ChatGPT Data Leak Among Multiple Cybersecurity Incidents Reported",
+            "content": "Recent cybersecurity incidents include a data leak involving ChatGPT, an Android rootkit discovery, and a ransomware attack on a water facility. The ChatGPT data leak raises concerns about AI model security and data privacy. Meanwhile, the Android rootkit poses a severe threat to mobile device security, potentially allowing attackers to gain unauthorized access and control. The ransomware attack on the water facility highlights vulnerabilities in critical infrastructure. Organizations should review their security protocols, ensure regular updates, and conduct thorough risk assessments to mitigate these diverse threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-chatgpt-data-leak-android-rootkit-water-facility-hit-by-ransomware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "ShareFile Flaws Enable Unauthenticated Remote Code Execution",
+            "title": "Critical Vulnerabilities in ShareFile Allow Unauthenticated RCE",
+            "content": "Critical vulnerabilities in Citrix&#x27;s ShareFile have been identified, enabling unauthenticated remote code execution (RCE) through chained exploits. These flaws allow attackers to bypass authentication and upload arbitrary files to the server, posing a severe risk to organizations using the platform. Affected systems include those running specific versions of ShareFile, necessitating immediate attention from IT departments. Organizations are advised to apply patches released by Citrix and conduct security audits to ensure their systems are not compromised. This incident underscores the ongoing challenges of securing enterprise file-sharing solutions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-sharefile-flaws-lead-to-unauthenticated-rce/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Axios npm Package Compromised in Supply Chain Attack",
+            "title": "UNC1069 Social Engineering Attack Targets Axios npm Package Maintainer",
+            "content": "The Axios npm package maintainer confirmed a supply chain attack orchestrated by North Korean threat actors known as UNC1069. The attack involved a sophisticated social engineering campaign that successfully compromised the package, posing a risk to developers relying on Axios. This incident highlights the vulnerabilities in open-source supply chains and the need for robust security measures. Developers are urged to verify package integrity and monitor for any suspicious activity. The attack serves as a reminder of the persistent threat posed by state-sponsored actors in the software development ecosystem.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/unc1069-social-engineering-of-axios.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "T-Mobile Clarifies Insider Breach Impact—Minimal Damage Reported",
+            "title": "T-Mobile Addresses Insider Data Breach with Limited Impact",
+            "content": "T-Mobile has clarified the details surrounding its latest data breach, attributing the incident to an insider threat with limited impact. The telecom giant emphasized that the breach affected only a small subset of data and has been contained. This incident highlights the ongoing risk of insider threats within large organizations. T-Mobile has taken steps to enhance its internal security measures and prevent future occurrences. Companies are reminded of the importance of monitoring insider activities and implementing robust access controls to safeguard sensitive information.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/t-mobile-sets-the-record-straight-on-latest-data-breach-filing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Microsoft Forces Windows 11 24H2 PCs to Upgrade",
+            "title": "Microsoft Initiates Forced Upgrade for Unmanaged Windows 11 24H2 PCs",
+            "content": "Microsoft has begun force-upgrading unmanaged devices running Windows 11 24H2 Home and Pro editions to Windows 11 25H2. This move aims to ensure users receive the latest security updates and features, addressing potential vulnerabilities in older versions. The forced upgrade affects users who have not manually updated their systems, highlighting the importance of staying current with software updates. IT professionals managing Windows environments should prepare for the transition and ensure compatibility with the new version. This action underscores Microsoft&#x27;s commitment to maintaining a secure and up-to-date user base.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-force-upgrades-unmanaged-windows-11-24h2-pcs/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 02 2026",
             "headline": "Claude Code Leak Exploited—Vidar Malware Hits GitHub",
             "title": "Threat Actors Use Claude Code Leak to Deploy Vidar Infostealer on GitHub",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-and-high-severity-vulnerabilities/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "250K Records Exposed in Nacogdoches Hospital Breach",
-            "title": "Data Breach at Nacogdoches Memorial Hospital Affects 250,000 Patients",
-            "content": "A data breach at Nacogdoches Memorial Hospital has compromised the personal and health information of approximately 250,000 individuals. The breach, which occurred in January 2026, involved unauthorized access to the hospital&#x27;s internal network by a threat actor. This incident highlights the vulnerabilities in healthcare systems and the critical need for enhanced cybersecurity measures. Affected individuals are advised to monitor their personal information for signs of misuse and consider identity protection services. The healthcare sector remains a prime target for cybercriminals due to the sensitive nature of the data it handles.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/250000-affected-by-data-breach-at-nacogdoches-memorial-hospital/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Trusted Open Source Report Reveals Key Security Insights",
-            "title": "The State of Trusted Open Source Report Highlights Security Trends",
-            "content": "The State of Trusted Open Source report, released in December 2025, provides valuable insights into open source consumption and security across various projects and libraries. The report analyzes data from container image projects, versions, images, language libraries, and builds, offering a comprehensive view of current trends and challenges in open source security. It emphasizes the importance of maintaining trust and security in open source software, which is widely used across industries. Developers and organizations are encouraged to adopt best practices for managing open source dependencies and to stay informed about potential vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/the-state-of-trusted-open-source-report.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Cisco IMC Flaw Allows Admin Access—Patch Immediately",
-            "title": "Critical Cisco IMC Authentication Bypass Grants Admin Privileges",
-            "content": "Cisco has addressed a critical authentication bypass vulnerability in its Integrated Management Controller (IMC) that could allow attackers to gain administrative access. This flaw, among other high-severity vulnerabilities patched by Cisco, poses a significant threat to affected systems, enabling unauthorized control over network devices. Organizations using Cisco IMC are urged to apply the latest patches to protect against potential exploitation. This vulnerability highlights the ongoing need for vigilant security practices and timely updates to safeguard network infrastructure from sophisticated cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-cisco-imc-auth-bypass-gives-attackers-admin-access/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Apple Expands iOS 18 Updates to Combat DarkSword Exploits",
-            "title": "Apple Extends iOS 18 Security Updates to Mitigate DarkSword Threat",
-            "content": "Apple has expanded its security updates to cover more iPhones still operating on iOS 18, aiming to protect against the DarkSword exploit kit. This move addresses vulnerabilities that have been actively exploited, allowing attackers to compromise affected devices. The DarkSword exploit kit is known for its sophisticated techniques that can bypass security measures, posing a significant risk to users. By extending these updates, Apple seeks to mitigate potential breaches and enhance device security. Users are urged to update their devices promptly to safeguard against these threats. This proactive approach underscores Apple&#x27;s commitment to device security amidst evolving cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/apple-expands-ios-18-updates-to-more-iphones-to-block-darksword-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "TrueConf Zero-Day Exploited—Malicious Updates Deployed",
-            "title": "Hackers Exploit TrueConf Zero-Day to Deploy Malicious Software Updates",
-            "content": "Hackers have exploited a zero-day vulnerability in TrueConf conference servers, enabling them to execute arbitrary files on connected endpoints. This vulnerability allows attackers to push malicious software updates, compromising the security of systems using TrueConf. The attack highlights the critical need for robust security measures in conferencing software, especially as remote work continues to proliferate. Organizations utilizing TrueConf are advised to monitor their systems for unusual activity and apply any available patches immediately. This incident serves as a reminder of the persistent threats targeting communication platforms.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trueconf-zero-day-to-push-malicious-software-updates/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Chrome Patches 21 Vulnerabilities—Zero-Day Among Them",
-            "title": "Google Patches Exploited Zero-Day Among 21 Chrome Vulnerabilities",
-            "content": "Google has released updates for its Chrome browser, addressing 21 vulnerabilities, including the actively exploited zero-day CVE-2026-5281. This zero-day, a use-after-free bug in Chrome&#x27;s Dawn component, poses a high-severity risk to users. The vulnerability allows attackers to execute arbitrary code, potentially leading to full system compromise. Users are strongly encouraged to update to the latest Chrome version to protect against these threats. This patch marks the latest in a series of security updates aimed at fortifying Chrome against sophisticated attacks. The ongoing targeting of Chrome underscores the importance of timely updates.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exploited-zero-day-among-21-vulnerabilities-patched-in-chrome/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Mar 31 2026",
+            "headline": "Salesforce Unveils 30 AI-Powered Slack Features",
+            "title": "Salesforce Integrates 30 AI Features into Slack for Enhanced Productivity",
+            "content": "Salesforce has announced a significant update to Slack, integrating 30 new AI-driven features designed to enhance productivity and collaboration. This overhaul includes advanced AI capabilities such as automated task management, intelligent search, and real-time language translation. The update aims to streamline workflows for businesses and improve user experience by leveraging Salesforce&#x27;s AI expertise. This move positions Slack as a more competitive tool in the enterprise communication landscape, addressing the growing demand for AI-enhanced workplace solutions. Organizations using Slack should explore these new features to optimize their operations and stay ahead in the rapidly evolving digital workspace.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/31/salesforce-announces-an-ai-heavy-makeover-for-slack-with-30-new-features/",
+            "relatedResources": []
+        },
+        {
+            "date": "Mar 31 2026",
+            "headline": "Yupp Shuts Down After $33M Funding from a16z",
+            "title": "Yupp Closes Operations Despite $33M Investment from Andreessen Horowitz",
+            "content": "Yupp, a startup focused on crowdsourced AI model feedback, has announced its closure less than a year after its launch, despite securing $33 million in funding from prominent investors like Andreessen Horowitz&#x27;s Chris Dixon. The company aimed to revolutionize AI model development by leveraging community feedback but faced challenges in scaling its operations and achieving sustainable growth. This shutdown highlights the volatility and high-risk nature of the AI startup ecosystem, where even well-funded ventures can struggle to survive. Investors and stakeholders in AI startups should carefully evaluate market viability and scalability before committing resources.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/03/31/yupp-ai-shuts-down-33m-a16z-crypto-chris-dixon/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Apple’s 50th Anniversary: Top 50 Products Ranked",
+            "title": "Apple Celebrates 50 Years with Public Ranking of Top Products",
+            "content": "In celebration of its 50th anniversary, Apple engaged its global community to rank the top 50 products in its history, receiving over 1.6 million votes. This initiative not only highlights Apple&#x27;s enduring impact on technology but also reflects its strong consumer engagement and brand loyalty. The ranking includes iconic products such as the iPhone, MacBook, and iPad, showcasing the company&#x27;s innovation over the decades. As Apple marks this milestone, it continues to influence the tech industry with its design and technological advancements. Tech professionals and enthusiasts can explore the full list to gain insights into Apple&#x27;s legacy and future directions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/906548/best-apple-product-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Utah Allows AI to Prescribe Psychiatric Drugs",
+            "title": "AI System Authorized to Prescribe Psychiatric Drugs in Utah",
+            "content": "Utah has become the second state in the U.S. to permit an AI system to prescribe psychiatric medications without direct doctor oversight. This groundbreaking decision aims to reduce healthcare costs and address the shortage of psychiatric care providers. However, the move has sparked debate, with some physicians expressing concerns about the AI&#x27;s decision-making accuracy and potential risks to patient safety. This development underscores the growing role of AI in healthcare and the need for careful regulation and oversight. Healthcare professionals should monitor this trend and consider its implications for clinical practice and patient care.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/906525/ai-chatbot-prescribe-refill-psychiatric-drugs",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Microsoft Debuts 3 New AI Models for Audio and Image Generation",
+            "title": "Microsoft Introduces Three Foundational AI Models for Enhanced Media Creation",
+            "content": "Microsoft has launched three new foundational AI models capable of transcribing voice to text and generating audio and images, marking a significant advancement in its AI capabilities. These models, developed by Microsoft&#x27;s AI division MAI, aim to enhance media creation and accessibility across various platforms. The release comes six months after the group&#x27;s formation, highlighting Microsoft&#x27;s commitment to advancing AI technology. This development is poised to impact industries reliant on media production and content creation, offering new tools for developers and businesses. Stakeholders should evaluate these models for potential integration into their workflows to leverage AI-driven efficiencies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Google Updates Gemma 4 AI Models, Adopts Apache 2.0 License",
+            "title": "Google Releases Gemma 4 AI Models with Open Source Licensing",
+            "content": "Google has announced the release of Gemma 4, the latest update to its open AI models, now available under the Apache 2.0 license. This marks the first major update in a year, reflecting Google&#x27;s commitment to open-source development and collaboration. The Apache 2.0 license allows for greater flexibility and integration by developers, potentially accelerating innovation and adoption across various applications. This strategic move is expected to enhance Google&#x27;s position in the AI community by fostering a more inclusive and collaborative environment. Developers and tech leaders should explore Gemma 4&#x27;s capabilities and consider its integration into their AI projects.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/04/google-announces-gemma-4-open-ai-models-switches-to-apache-2-0-license/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 02 2026",
             "headline": "Kintsugi&#x27;s AI Fails FDA—Tech Goes Open Source",
@@ -219,51 +273,6 @@ const websiteContent = {
             "content": "Anthropic inadvertently exposed 512,000 lines of TypeScript source code from its Claude Code AI coding agent, following a mishap with the npm package version 2.1.88. This significant leak, involving 1,906 files, poses a potential security risk for enterprises utilizing AI coding agents. The exposed code could be exploited by malicious actors to identify vulnerabilities or replicate proprietary technology. Security leaders are advised to conduct immediate code audits, review access controls, and implement robust monitoring systems to mitigate potential threats. This incident highlights the critical importance of secure software development practices in safeguarding intellectual property.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/security/claude-code-512000-line-source-leak-attack-paths-audit-security-leaders",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Meta&#x27;s Hyperion AI Center—Fueled by 10 Gas Plants",
-            "title": "Meta&#x27;s Hyperion AI Data Center to Use Natural Gas Power",
-            "content": "Meta plans to power its forthcoming Hyperion AI data center with energy from 10 newly constructed natural gas plants. This decision reflects Meta&#x27;s strategy to ensure reliable energy supply for its advanced AI operations, despite environmental concerns associated with fossil fuels. The move is part of a broader trend where tech giants are investing in dedicated energy sources to support their growing data infrastructure needs. While this approach guarantees operational stability, it also raises questions about sustainability and carbon footprint. Industry leaders should weigh the benefits of energy security against the environmental impact when planning future data center expansions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/01/metas-natural-gas-binge-could-power-south-dakota/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Holo3 Revolutionizes Computer Interaction—A New Frontier",
-            "title": "Holo3: Transforming Human-Computer Interaction with Innovative Technology",
-            "content": "Holo3 is set to redefine computer usage by introducing groundbreaking interaction methods that transcend traditional interfaces. This new technology promises to enhance user engagement through immersive experiences, potentially revolutionizing sectors such as gaming, education, and professional training. By leveraging advanced holographic displays and intuitive controls, Holo3 aims to bridge the gap between digital and physical environments. As industries increasingly seek innovative solutions to improve user interaction, Holo3 represents a significant leap forward. Developers and tech leaders should explore the potential applications of this technology to stay ahead in the rapidly evolving digital landscape.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/Hcompany/holo3",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Anthropic&#x27;s GitHub Takedown Error—Thousands of Repos Affected",
-            "title": "Anthropic&#x27;s Accidental GitHub Takedown: Thousands of Repos Impacted",
-            "content": "Anthropic inadvertently issued takedown notices for thousands of GitHub repositories, mistakenly targeting its own leaked source code. The company quickly retracted the majority of these notices, citing an internal error as the cause. This incident highlights the challenges companies face in managing intellectual property in the open-source ecosystem. Developers who had their repositories affected should verify their content&#x27;s integrity and ensure compliance with GitHub&#x27;s policies. This event underscores the importance of robust internal controls to prevent accidental overreach in digital rights management.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Falcon Perception—New AI Model Enhances Visual Understanding",
-            "title": "Falcon Perception: Advanced AI Model for Enhanced Visual Analysis",
-            "content": "Hugging Face has unveiled Falcon Perception, a cutting-edge AI model designed to significantly improve visual data analysis. This model leverages advanced neural network architectures to enhance image recognition and interpretation capabilities, offering superior accuracy and efficiency. Falcon Perception is poised to impact industries reliant on visual data, such as healthcare, autonomous vehicles, and security. By integrating this model, organizations can expect improved decision-making processes and operational efficiencies. Developers and AI professionals should explore Falcon Perception&#x27;s capabilities to stay ahead in the rapidly evolving AI landscape.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-perception",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Mercor Data Breach—LiteLLM Project Compromised",
-            "title": "Mercor Confirms Data Breach Linked to LiteLLM Project Compromise",
-            "content": "Mercor, an AI recruiting startup, has confirmed a data breach following a cyberattack linked to the compromise of the open-source LiteLLM project. An extortion hacking group has claimed responsibility for the attack, alleging the theft of sensitive company data. This breach underscores the vulnerabilities inherent in open-source projects and the need for stringent security measures. Organizations using LiteLLM should conduct thorough security audits and consider additional protective measures. The incident serves as a reminder of the critical importance of securing open-source dependencies in enterprise environments.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/",
             "relatedResources": []
         }
     ],
