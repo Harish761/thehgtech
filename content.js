@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 02 2026",
+            "headline": "Claude Code Leak Exploited—Vidar Malware Hits GitHub",
+            "title": "Threat Actors Use Claude Code Leak to Deploy Vidar Infostealer on GitHub",
+            "content": "Cybercriminals are leveraging the recent leak of Claude Code&#x27;s source code to distribute the Vidar information-stealing malware via fake GitHub repositories. The malicious actors create repositories mimicking legitimate projects, tricking developers into downloading compromised code. Vidar is known for extracting sensitive data such as credentials and financial information from infected systems. This incident underscores the growing trend of exploiting open-source platforms for malware distribution. Developers are advised to verify the authenticity of repositories and employ robust security practices to mitigate risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/claude-code-leak-used-to-push-infostealer-malware-on-github/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "CVE-2025-55182 Exploited—766 Next.js Hosts Compromised",
+            "title": "React2Shell Vulnerability CVE-2025-55182 Used to Breach Next.js Hosts",
+            "content": "A widespread credential theft campaign has been identified, exploiting the React2Shell vulnerability, CVE-2025-55182, to compromise 766 Next.js hosts. Attackers are using this flaw as an entry point to exfiltrate database credentials, SSH keys, AWS secrets, and other sensitive data. Cisco Talos reports that the breach impacts organizations relying on Next.js for web application development. The exploitation of this vulnerability highlights the critical need for timely patching and security monitoring. Affected entities should prioritize updating their systems and reviewing access logs for suspicious activity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/hackers-exploit-cve-2025-55182-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Claude Code Vulnerability Found—Days After Source Leak",
+            "title": "Critical Vulnerability Discovered in Claude Code Following Source Code Leak",
+            "content": "Just days after the source code for Claude Code was leaked, a critical vulnerability has been identified by Adversa AI. This flaw could potentially allow attackers to execute unauthorized actions within systems using Claude Code. The rapid discovery of this vulnerability post-leak highlights the risks associated with exposed source code. Organizations utilizing Claude Code are urged to implement immediate security reviews and apply any available patches. This incident emphasizes the importance of safeguarding proprietary code against unauthorized access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-vulnerability-in-claude-code-emerges-days-after-source-leak/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Cisco Patches Critical IMC Flaw—Remote Compromise Risk",
+            "title": "Cisco Releases Patch for Critical IMC and SSM Vulnerabilities",
+            "content": "Cisco has issued patches for a critical security vulnerability in its Integrated Management Controller (IMC), which could allow remote attackers to bypass authentication and gain elevated system access. The flaw, rated 9.8 on the CVSS scale, poses a significant risk to systems if left unpatched. This vulnerability affects Cisco&#x27;s IMC and Smart Software Manager (SSM) products, potentially impacting a wide range of enterprise environments. Administrators are strongly advised to apply the updates immediately to prevent unauthorized access and potential system compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/cisco-patches-98-cvss-imc-and-ssm-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Mercor Data Breach—4TB Stolen in LiteLLM Attack",
+            "title": "Mercor Investigates 4TB Data Theft in LiteLLM Supply Chain Attack",
+            "content": "The AI recruiting firm Mercor is probing a significant data breach following a supply chain attack involving LiteLLM, with the Lapsus$ group claiming responsibility for the theft of 4TB of data. This breach highlights the vulnerabilities in supply chain security, particularly for companies relying on third-party AI tools. The incident underscores the importance of comprehensive security measures and regular audits of third-party integrations. Organizations are encouraged to review their supply chain security protocols to mitigate similar risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mercor-hit-by-litellm-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "14,000 F5 BIG-IP APM Instances Vulnerable to RCE",
+            "title": "Shadowserver Finds 14,000 Exposed F5 BIG-IP APM Instances Amid RCE Attacks",
+            "content": "Security watchdog Shadowserver has identified over 14,000 F5 BIG-IP Access Policy Manager (APM) instances exposed online, vulnerable to a critical remote code execution (RCE) flaw. This vulnerability allows attackers to execute arbitrary code on affected systems, posing severe risks to organizations using these devices. The ongoing exploitation of this flaw highlights the urgent need for patching and securing exposed systems. Administrators should immediately apply the latest security updates from F5 to protect against potential breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-14-000-f5-big-ip-apm-instances-still-exposed-to-rce-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
             "headline": "Vacant Homes Used in Hybrid Cybercrime—Mail Fraud Rises",
             "title": "Cybercriminals Exploit Vacant Homes for Mail Interception and Fraud",
             "content": "Cybercriminals are increasingly using vacant homes as &quot;drop addresses&quot; to intercept mail and commit fraud, according to a report by Flare. By exploiting postal services and creating fake identities, these threat actors turn mail into a vector for fraud, impacting individuals and businesses alike. The scheme involves redirecting sensitive mail, such as financial documents, to unoccupied properties where criminals can easily collect them. This trend highlights a hybrid approach to cybercrime, blending physical and digital tactics to exploit vulnerabilities in postal systems. Security professionals are advised to monitor for unusual mail activity and verify address changes with clients to mitigate risks.",
@@ -83,43 +137,61 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/exploited-zero-day-among-21-vulnerabilities-patched-in-chrome/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Google Releases Patch for Active Chrome Zero-Day Exploit",
-            "title": "New Chrome Zero-Day CVE-2026-5281 Under Active Exploitation—Patch Released",
-            "content": "Google has issued a security update for Chrome to address 21 vulnerabilities, including the zero-day CVE-2026-5281, which is currently being exploited in the wild. This high-severity flaw, a use-after-free vulnerability in the Dawn component, could allow attackers to execute arbitrary code on affected systems. Users are urged to update their browsers immediately to mitigate potential risks. This vulnerability is part of a broader trend of increasing zero-day exploits targeting popular software platforms. Google&#x27;s rapid response highlights the critical need for vigilance and prompt patching in maintaining cybersecurity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/new-chrome-zero-day-cve-2026-5281-under.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Fourth Chrome Zero-Day of 2026 Patched by Google",
-            "title": "Google Fixes Fourth Chrome Zero-Day Exploited in Attacks in 2026",
-            "content": "Google has addressed the fourth zero-day vulnerability in Chrome exploited this year, reinforcing the need for continuous vigilance against emerging threats. This latest patch is part of a series of updates aimed at closing security gaps in the widely used browser. The consistent targeting of Chrome by threat actors highlights the importance of regular updates and security awareness among users. Organizations and individuals are advised to ensure their browsers are up-to-date to protect against potential exploits. This ongoing battle against zero-day vulnerabilities underscores the dynamic nature of cybersecurity challenges.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-fixes-fourth-chrome-zero-day-exploited-in-attacks-in-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Axios NPM Package Compromised in North Korean Attack",
-            "title": "Axios NPM Package Breached in North Korean Supply Chain Attack",
-            "content": "A North Korean threat actor has breached the Axios NPM package, exploiting a long-lived NPM access token to bypass GitHub Actions&#x27; OIDC-based CI/CD workflow. This breach allowed attackers to push backdoored versions of the package, potentially impacting numerous projects relying on Axios. The incident highlights the vulnerabilities in supply chain security, particularly in open-source ecosystems. Developers using Axios are urged to verify package integrity and update to secure versions. This attack underscores the persistent threat posed by nation-state actors targeting software supply chains.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/axios-npm-package-breached-in-north-korean-supply-chain-attack/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Mar 31 2026",
-            "headline": "AI Disrupts Art Schools—Creativity Faces New Challenges",
-            "title": "Art Schools Grapple with AI&#x27;s Impact on Creative Education",
-            "content": "Art schools are facing significant upheaval as artificial intelligence technologies increasingly influence creative fields. Students in disciplines like 3D modeling and animation are experiencing heightened competition as AI tools automate tasks traditionally performed by human artists. This shift is causing concern among educators and students, who fear that AI could devalue human creativity and alter career prospects. The trend reflects a broader industry movement where AI-generated content is becoming more prevalent, challenging the traditional roles of artists and designers. Institutions must now consider integrating AI into their curricula to prepare students for a rapidly evolving job market.",
+            "date": "Apr 02 2026",
+            "headline": "Kintsugi&#x27;s AI Fails FDA—Tech Goes Open Source",
+            "title": "Kintsugi Shuts Down After Failing to Secure FDA Clearance for AI",
+            "content": "Kintsugi, a California-based startup, has ceased operations after failing to obtain FDA clearance for its AI technology designed to detect depression and anxiety through speech analysis. The company spent seven years developing the AI, which aimed to provide a non-invasive method for mental health assessment. Despite its potential, the lack of regulatory approval has forced Kintsugi to release most of its technology as open-source, allowing developers and researchers to access and build upon the code. This move highlights the challenges faced by AI companies in navigating regulatory landscapes, particularly in healthcare. Professionals in AI and mental health fields should explore the open-source release for potential integration and innovation.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/903954/art-schools-generative-ai-education-creative-jobs",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/905864/depression-detecting-ai-kintsugi-clinical-ai-startup-shut-down",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Arcee&#x27;s Trinity-Large-Thinking—A Customizable U.S. AI Model",
+            "title": "Arcee Releases Trinity-Large-Thinking, a Powerful Open Source AI Model",
+            "content": "Arcee has launched Trinity-Large-Thinking, a rare, U.S.-made open-source AI model that enterprises can download and customize. This move comes as Chinese companies pivot back to proprietary models, leaving a gap in the open-source AI landscape. Trinity-Large-Thinking offers robust capabilities for businesses seeking adaptable AI solutions, marking a significant development in the AI community. The model&#x27;s release underscores the ongoing competition between U.S. and Chinese AI advancements and provides an opportunity for enterprises to leverage cutting-edge technology without the constraints of proprietary systems. Organizations should consider evaluating Trinity-Large-Thinking for their AI needs.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/arcees-new-open-source-trinity-large-thinking-is-the-rare-powerful-u-s-made",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Granola Notes Privacy Flaw—Check Your Settings Now",
+            "title": "Granola&#x27;s AI-Powered Notes App Exposes User Data by Default",
+            "content": "Users of Granola, an AI-powered note-taking app, should review their privacy settings immediately. Although Granola claims notes are &quot;private by default,&quot; they are accessible to anyone with a link and are used for internal AI training unless users opt out. This default setting poses a significant privacy risk, especially for users handling sensitive information. The app&#x27;s approach raises concerns about data security and user consent in AI applications. Users are advised to adjust their settings to restrict access and opt out of data sharing to protect their information.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/906253/granola-note-links-ai-training-psa",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "OpenAI Acquires TBPN—Tech Podcast to Operate Independently",
+            "title": "OpenAI Purchases TBPN, Maintains Independent Operations",
+            "content": "OpenAI has acquired TBPN, a popular Silicon Valley tech podcast known for its in-depth discussions with industry leaders. Despite the acquisition, TBPN will continue to operate independently, with oversight by Chris Lehane, a prominent political strategist. This acquisition reflects OpenAI&#x27;s strategic interest in expanding its influence and engagement within the tech community. TBPN&#x27;s continued independence ensures that its unique voice and content remain unchanged, offering valuable insights to tech professionals. The acquisition may lead to enhanced content and reach for the podcast, benefiting its audience.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/02/openai-acquires-tbpn-the-buzzy-founder-led-business-talk-show/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "SpaceX IPO Speculation—Mark June 7th for Potential Filing",
+            "title": "Elon Musk&#x27;s SpaceX IPO Filing Date Speculated for June 7th",
+            "content": "Speculation surrounds Elon Musk&#x27;s potential filing for SpaceX&#x27;s initial public offering (IPO), with industry insiders suggesting June 7th as a possible date. This follows an unexpected confidential filing on April 1st, sparking discussions about Musk&#x27;s strategic timing. The anticipated IPO could significantly impact the aerospace sector, offering new investment opportunities and reshaping market dynamics. Professionals in finance and technology should monitor developments closely, as the IPO could influence trends and valuations in space exploration and related industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/906027/elon-musk-lawsuit-ipo-spacex-tesla",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "OpenAI Buys TBPN—Expands Media Influence",
+            "title": "OpenAI Acquires TBPN, Enhancing Its Media Presence",
+            "content": "OpenAI has acquired TBPN, an online talk show renowned for interviews with AI executives and tech leaders. The show, which airs weekdays at 2 PM PT, features prominent figures like OpenAI CEO Sam Altman and executives from Meta and Microsoft. This acquisition enhances OpenAI&#x27;s media presence, allowing it to directly engage with audiences and shape conversations around AI and technology. The move aligns with OpenAI&#x27;s broader strategy to influence public discourse and connect with key stakeholders in the tech industry.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/906022/openai-buys-tbpn",
             "relatedResources": []
         },
         {
@@ -192,33 +264,6 @@ const websiteContent = {
             "content": "Mercor, an AI recruiting startup, has confirmed a data breach following a cyberattack linked to the compromise of the open-source LiteLLM project. An extortion hacking group has claimed responsibility for the attack, alleging the theft of sensitive company data. This breach underscores the vulnerabilities inherent in open-source projects and the need for stringent security measures. Organizations using LiteLLM should conduct thorough security audits and consider additional protective measures. The incident serves as a reminder of the critical importance of securing open-source dependencies in enterprise environments.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 31 2026",
-            "headline": "Slack&#x27;s AI Overhaul—30 New Features Unveiled",
-            "title": "Salesforce Transforms Slack with AI-Driven Features and Enhancements",
-            "content": "Salesforce has announced a comprehensive AI-driven update for Slack, introducing 30 new features aimed at enhancing user productivity and collaboration. These updates include advanced AI capabilities for automating routine tasks, improving communication efficiency, and providing intelligent insights. The integration of AI into Slack reflects a broader trend of embedding machine learning into workplace tools to streamline operations. Users should explore these new features to maximize their workflow and leverage AI for improved team collaboration. This update positions Slack as a leading platform in the AI-enhanced workplace solutions market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/31/salesforce-announces-an-ai-heavy-makeover-for-slack-with-30-new-features/",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 31 2026",
-            "headline": "Claude Code Leak—Tamagotchi Pet and Agent Exposed",
-            "title": "Claude Code Leak Reveals Tamagotchi-Style Pet and Always-On Agent",
-            "content": "Following the release of Claude Code&#x27;s version 2.1.88, users discovered a significant leak of its TypeScript codebase, revealing a Tamagotchi-style digital pet and an always-on agent. This leak was brought to light by a user on X, who shared the source map file containing sensitive details. The exposure of these features raises concerns about intellectual property security and the potential misuse of proprietary code. Developers should review their security practices to prevent similar leaks and protect their innovations. This incident highlights the ongoing challenges in securing software updates and source code integrity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/904776/anthropic-claude-source-code-leak",
-            "relatedResources": []
-        },
-        {
-            "date": "Mar 31 2026",
-            "headline": "Yupp Shuts Down—$33M Funding Gone",
-            "title": "Yupp Closes Operations After Securing $33M in Funding from a16z",
-            "content": "Yupp, a crowdsourced AI model feedback startup, has announced its closure less than a year after launching, despite securing $33 million in funding from prominent investors, including a16z crypto&#x27;s Chris Dixon. The decision to shut down comes as a surprise, considering the significant financial backing and interest in AI-driven feedback mechanisms. This development reflects the volatile nature of the startup ecosystem, where even well-funded ventures face challenges in achieving sustainability. Stakeholders and investors should reassess their strategies to mitigate risks associated with early-stage tech investments.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/31/yupp-ai-shuts-down-33m-a16z-crypto-chris-dixon/",
             "relatedResources": []
         }
     ],
@@ -316,14 +361,14 @@ const websiteContent = {
             "isZeroDay": false
         },
         {
-            "cveId": "CVE-2025-53521",
-            "dateAdded": "Mar 27, 2026",
-            "vendor": "F5 BIG-IP",
-            "description": "F5 BIG-IP APM contains an unspecified vulnerability that could allow a threat actor to achieve remote code execution.",
+            "cveId": "CVE-2026-3502",
+            "dateAdded": "Apr 02, 2026",
+            "vendor": "TrueConf Client",
+            "description": "TrueConf Client contains a download of code without integrity check vulnerability. An attacker who is able to influence the update delivery path can substitute a tampered update payload. If the payloa",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-53521",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3502",
             "isZeroDay": false
         },
         {
