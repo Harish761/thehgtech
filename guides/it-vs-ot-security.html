@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>IT vs OT Security: Architecture Guide 2026 | TheHGTech</title>
+    <title>IT vs OT Security Explained: Purdue Model, ICS Threats &amp; Hardening Guide (2026) | TheHGTech</title>
 
     <!-- Twitter Card -->
     <meta name="twitter:image" content="https://thehgtech.com/images/guides/it-vs-ot-security-header.png">
@@ -14,7 +14,7 @@
     <!-- Open Graph -->
     <meta property="og:site_name" content="TheHGTech">
     <meta name="description"
-        content="Technical guide on IT vs OT security differences, Purdue Model, network segmentation, and detecting anomalies in converged environments.">
+        content="Learn IT vs OT security differences, real ICS attacks like Triton and Colonial Pipeline, Purdue Model architecture, and how to secure PLC/SCADA environments with practical hardening strategies.">
     <meta name="keywords"
         content="IT vs OT security, industrial control systems security, SCADA security, Purdue Model architecture, OT network segmentation, IEC 62443, NIST SP 800-82, OT security anomalies">
     <meta name="author" content="TheHGTech">
@@ -52,17 +52,33 @@
     }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKQKTJ9S1L"></script>
+    <!-- Google Analytics 4 -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HKQKTJ9S1L');
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
     </script>
-    
-    <!-- Fullres Script -->
-    <script defer src="https://t.fullres.com/01J6A1YYT94TQQXXF2SBD8DPF3.js" data-nopt="true"></script>
+    <!-- Fullres Analytics -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -443,7 +459,10 @@
         <div class="guide-header">
             <span class="ai-badge"><i class="fas fa-industry"></i> ICS/OT Security</span>
             <h1>IT vs OT Security: Key Differences, Common Confusions, and Practical Hardening</h1>
-            <p style="font-size: 1.1rem; color: #fff;">A complete technical roadmap to understanding and securing converged IT/OT environments, including Purdue Model implementation and active anomaly detection.</p>
+            <div class="warning-box" style="margin-top: 1.5rem;">
+                <strong>⚠️ Why This Matters:</strong> A single compromised IT credential shut down a 5,500-mile fuel pipeline (Colonial). In OT environments, cyber incidents don't just leak data — they stop physical operations.
+            </div>
+            <p style="font-size: 1.1rem; color: #fff; margin-top: 1rem;">A complete technical roadmap to understanding and securing converged IT/OT environments, including Purdue Model implementation and active anomaly detection.</p>
             <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 1.5rem; color: var(--text-muted);">
                 <span><i class="fas fa-calendar"></i> April 3, 2026</span>
                 <span><i class="fas fa-clock"></i> 30 mins read</span>
@@ -451,9 +470,10 @@
             </div>
         </div>
 
+        <img src="/images/guides/it-vs-ot-security-header.png" alt="IT vs OT Security Architecture Overview" class="architecture-diagram" loading="eager">
         <img src="/images/guides/purdue-model-idmz-architecture.png" alt="Purdue Model Architecture Visualization" class="architecture-diagram" loading="lazy">
         
-        <br><br>
+        <br>
 
         <!-- Table of Contents -->
         <div class="info-box" style="background: rgba(0,217,255,0.06); border-left-color: var(--accent-cyan);">
@@ -486,9 +506,9 @@
         
         <p>Today, this strict separation no longer exists. The pursuit of operational efficiency, predictive maintenance, and real-time analytics (Industry 4.0) has driven profound IT/OT convergence. Industrial Control Systems (ICS), Supervisory Control and Data Acquisition (SCADA) systems, and Distributed Control Systems (DCS) now routinely interoperate with corporate IT networks. While this connectivity drives massive business value, it has also definitively eroded the traditional air gap, exposing legacy OT systems to modern cyber threats.</p>
 
-        <p>The stakes in OT security differ fundamentally from those in IT security. A cybersecurity incident on an IT network typically results in data loss, regulatory fines, and reputational damage. An intrusion into an OT environment, however, can lead to halted production lines, compromised critical infrastructure, environmental damage, and potential loss of human life. Threat actors, ranging from advanced persistent threats (APTs) to financially motivated ransomware syndicates, recognize this leverage and continuously target industrial environments.</p>
+        <p>The stakes in OT security differ fundamentally from those in IT security. A cybersecurity incident on an IT network typically results in data loss, regulatory fines, and reputational damage. An intrusion into an OT environment, however, can lead to halted production lines, compromised critical infrastructure, environmental damage, and potential loss of human life. Threat actors, ranging from advanced persistent threats (APTs) to financially motivated <a href="/guides/ransomware-response-playbook.html" style="color: var(--accent-cyan);">ransomware</a> syndicates, recognize this leverage and continuously target industrial environments.</p>
 
-        <h2 id="core-definitions">2. Core Definitions: IT vs. OT Comparison</h2>
+        <h2 id="core-definitions">2. IT vs OT Security Explained: Core Definitions and Comparison</h2>
         
         <p>Defending a converged environment requires a firm understanding of the operational distinctions between IT and OT.</p>
 
@@ -613,7 +633,7 @@
 
         <h2 id="mitre">6. MITRE ATT&amp;CK for ICS — Threat Mapping</h2>
 
-        <p>MITRE ATT&amp;CK for ICS (<a href="https://ics.mitre.org" style="color: var(--accent-cyan);">ics.mitre.org</a>) provides a structured taxonomy of adversary behaviors specific to industrial environments. Unlike the Enterprise matrix, techniques here map to physical process impact — not just data confidentiality. Use this to assess your detection coverage gaps.</p>
+        <p><a href="/guides/mitre-attack-mapping.html" style="color: var(--accent-cyan);">MITRE ATT&amp;CK</a> for ICS (<a href="https://ics.mitre.org" style="color: var(--accent-cyan);">ics.mitre.org</a>) provides a structured taxonomy of adversary behaviors specific to industrial environments. Unlike the Enterprise matrix, techniques here map to physical process impact — not just data confidentiality. Use this to assess your detection coverage gaps.</p>
 
         <table>
             <thead>
@@ -634,7 +654,7 @@
             <p>Map your existing detections against the ICS matrix using the ATT&amp;CK Navigator (navigate.mitre.org). Identify tactic columns with zero coverage. Prioritize covering the <strong>Inhibit Response Function</strong> tactic first — these attacks prevent safe shutdown and carry the highest physical consequence. Share the coverage heatmap with plant operations leadership as part of the annual security review.</p>
         </div>
 
-        <h2 id="hardening-strategies">7. Practical Hardening: Securing OT Devices</h2>
+        <h2 id="hardening-strategies">7. How to Secure OT Devices: Practical ICS Hardening Guide</h2>
 
         <p>Securing OT environments requires acknowledging that Level 0 and Level 1 devices (PLCs, RTUs, sensors) almost universally lack native authentication or encryption. Security must therefore be built into the network architecture around those devices, not into the devices themselves.</p>
 
@@ -652,7 +672,7 @@
 
         <div class="defense-box">
             <h4>Defense 1: Industrial DMZ (iDMZ) — Enforce No-Direct-Routing</h4>
-            <p>No traffic should route directly between Level 4 and Level 3. Enforce this at the firewall with a default-deny conduit policy. Only permit whitelisted, application-specific flows through the iDMZ. Example policy: <code>DENY ip any any</code> between L4↔L3; permit only <code>TCP/44818</code> (EtherNet/IP historian replication) from specific OT historian source to iDMZ replica destination. For remote access, require jump server hop via the iDMZ with MFA + session recording before reaching Level 3 engineering workstations.</p>
+            <p>No traffic should route directly between Level 4 and Level 3. Enforce this at the firewall with a default-deny conduit policy. Only permit whitelisted, application-specific flows through the iDMZ. Example policy: <code>DENY ip any any</code> between L4↔L3; permit only <code>TCP/44818</code> (EtherNet/IP historian replication) from specific OT historian source to iDMZ replica destination. For remote access, require jump server hop via the iDMZ with MFA + session recording before reaching Level 3 engineering workstations. See <a href="/guides/network-segmentation-zero-trust.html" style="color: var(--accent-cyan);">Zero Trust Network Architecture</a> for a full enterprise segmentation model.</p>
         </div>
 
         <div class="defense-box">
@@ -662,7 +682,7 @@
 
         <div class="defense-box">
             <h4>Defense 3: ZTNA for Vendor Remote Access</h4>
-            <p>Always-on site-to-site VPNs for third-party vendors are a primary intrusion vector (Colonial Pipeline). Replace with Zero Trust Network Access (ZTNA): time-bounded sessions, mandatory MFA, video session recording, just-in-time provisioned access scoped to a specific jump host — never the entire OT subnet. Revoke access automatically after the maintenance window closes.</p>
+            <p>Always-on site-to-site VPNs for third-party vendors are a primary intrusion vector (Colonial Pipeline). Replace with <a href="/guides/network-segmentation-zero-trust.html" style="color: var(--accent-cyan);">Zero Trust</a> Network Access (ZTNA): time-bounded sessions, mandatory MFA, video session recording, just-in-time provisioned access scoped to a specific jump host — never the entire OT subnet. Revoke access automatically after the maintenance window closes.</p>
         </div>
 
         <div class="defense-box">
@@ -670,7 +690,7 @@
             <p>Shared IT/OT Active Directory domains with shared service accounts are the primary lateral-movement escalation path used by XENOTIME and other ICS threat actors. Maintain a fully isolated OT Active Directory forest with no trust relationships to the corporate forest. OT credentials must never be usable on IT systems. Implement a Privileged Access Workstation (PAW) architecture for all OT administrative access.</p>
         </div>
 
-        <h2 id="anomaly-detection">8. Detecting Anomalies in ICS Networks</h2>
+        <h2 id="anomaly-detection">8. ICS Anomaly Detection: Monitoring OT Networks and PLC Behavior</h2>
 
         <p>When preventative controls fail, reliable detection is the final barrier. Traditional EDR is often impossible on legacy OT OS kernels (Windows XP/7 embedded, real-time OS). Detection is therefore primarily network-centric and logic-centric.</p>
 
@@ -743,8 +763,13 @@
             </ul>
         </div>
 
-        <p style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
-            <strong>Author:</strong> TheHGTech Research Team<br>
+        <div class="info-box" style="margin-top: 2rem;">
+            <strong>Want more deep-dive security analysis?</strong><br>
+            Follow on LinkedIn → <a href="https://www.linkedin.com/in/harish-g-2216955b/" style="color: var(--accent-cyan);">Harish G</a>
+        </div>
+
+        <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
+            <strong>Author:</strong> Harish G | Cybersecurity | Threat Research | OT Security<br>
             <strong>Standard Alignments:</strong> IEC 62443, NIST SP 800-82r3, NERC CIP, NIS2 Directive, MITRE ATT&amp;CK for ICS<br>
             <strong>Last Updated:</strong> April 2026<br>
         </p>
