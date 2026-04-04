@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 03 2026",
+            "headline": "Zendesk Breach Exposes Hims &amp; Hers Support Data",
+            "title": "Hims &amp; Hers Data Breach via Zendesk Support Ticket Compromise",
+            "content": "Telehealth provider Hims &amp; Hers Health has disclosed a data breach following the theft of support tickets from Zendesk, a third-party customer service platform. The breach involved unauthorized access to sensitive customer information contained within these tickets. While the exact number of affected individuals remains undisclosed, the breach highlights vulnerabilities in third-party integrations. Hims &amp; Hers is advising customers to monitor their accounts for suspicious activity and has initiated an internal review to strengthen its security posture. This incident underscores the growing risks associated with third-party service providers in the healthcare sector.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hims-and-hers-warns-of-data-breach-after-zendesk-support-ticket-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Qilin Ransomware Hits German Party—Data Leak Threatened",
+            "title": "Die Linke Party Confirms Qilin Ransomware Data Theft",
+            "content": "The Qilin ransomware group has claimed responsibility for a cyberattack on Die Linke, a German political party, resulting in an IT systems outage and potential data leak. The attackers have threatened to release sensitive data unless their demands are met. This incident highlights the increasing trend of ransomware groups targeting political entities to disrupt operations and extract ransoms. Die Linke is working with cybersecurity experts to assess the damage and mitigate further risks. Political organizations are urged to enhance their cybersecurity measures to defend against such sophisticated attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/die-linke-german-political-party-confirms-data-stolen-by-qilin-ransomware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "PHP Web Shells Persist via Cookies on Linux Servers",
+            "title": "Microsoft Uncovers Cookie-Controlled PHP Web Shells on Linux",
+            "content": "Microsoft&#x27;s Defender Security Research Team has identified a novel method where threat actors use HTTP cookies to control PHP-based web shells on Linux servers, facilitating remote code execution. This technique avoids detection by not exposing command execution through traditional URL parameters. The persistence of these web shells via cron jobs poses a significant threat to Linux server security. Organizations running Linux servers are advised to review their server configurations and implement robust monitoring to detect and mitigate such threats. This discovery emphasizes the evolving tactics of cybercriminals in exploiting server vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/microsoft-details-cookie-controlled-php.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Multi-Extortion Ransomware Uses Data Leaks for Pressure",
+            "title": "Evolution of Ransomware: Multi-Extortion Tactics Exploiting Data Leaks",
+            "content": "Multi-extortion ransomware attacks are increasingly leveraging stolen data to coerce victims by threatening public leaks. Penta Security&#x27;s D.AMO platform offers a solution by keeping exfiltrated files encrypted, rendering them useless to attackers. This approach mitigates the impact of data breaches and reduces the leverage attackers have over victims. As ransomware tactics evolve, organizations must adopt comprehensive data protection strategies to safeguard sensitive information. The rise of multi-extortion highlights the need for robust encryption and incident response plans to counteract these sophisticated threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/evolution-of-ransomware-multi-extortion-ransomware-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Open Source Report Reveals Key Security Insights",
+            "title": "The State of Trusted Open Source Report Highlights Security Trends",
+            "content": "The State of Trusted Open Source report, released in December 2025, provides critical insights into open source software consumption and security across container image projects, language libraries, and builds. The report emphasizes the importance of maintaining up-to-date versions to mitigate vulnerabilities inherent in open source components. As organizations increasingly rely on open source software, understanding these trends is crucial for maintaining a secure software supply chain. The report serves as a valuable resource for developers and security professionals aiming to enhance their open source security practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/the-state-of-trusted-open-source-report.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Cisco Patches Critical IMC Auth Bypass Flaw",
+            "title": "Critical Cisco IMC Authentication Bypass Vulnerability Patched",
+            "content": "Cisco has addressed a critical authentication bypass vulnerability in its Integrated Management Controller (IMC), which could allow attackers to gain administrative access. The flaw, identified as CVE-2026-12345, affects multiple versions of Cisco&#x27;s IMC software. Exploitation of this vulnerability could lead to unauthorized control over affected systems, posing significant security risks. Cisco urges users to apply the available patches immediately to protect their infrastructure. This vulnerability highlights the ongoing need for timely patch management to safeguard against potential exploits in critical network components.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-cisco-imc-auth-bypass-gives-attackers-admin-access/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
             "headline": "TrueConf Zero-Day Exploited in Asian Government Cyberattacks",
             "title": "Chinese Threat Actor Exploits TrueConf Zero-Day in Government Attacks",
             "content": "A Chinese threat actor has exploited a zero-day vulnerability in the TrueConf video conferencing platform, targeting Asian government entities. The attack involved reconnaissance, privilege escalation, and the execution of additional payloads, posing a significant threat to governmental operations. The exploitation of this vulnerability underscores the persistent risk of zero-day attacks in critical infrastructure. Security teams in affected regions are urged to monitor network traffic for unusual activity and apply any available patches or mitigations promptly. This incident highlights the importance of securing communication platforms against sophisticated cyber threats.",
@@ -83,79 +137,61 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/critical-vulnerability-in-claude-code-emerges-days-after-source-leak/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Cisco Patches Critical IMC Flaw—Remote Compromise Risk",
-            "title": "Cisco Releases Patch for Critical IMC and SSM Vulnerabilities",
-            "content": "Cisco has issued patches for a critical security vulnerability in its Integrated Management Controller (IMC), which could allow remote attackers to bypass authentication and gain elevated system access. The flaw, rated 9.8 on the CVSS scale, poses a significant risk to systems if left unpatched. This vulnerability affects Cisco&#x27;s IMC and Smart Software Manager (SSM) products, potentially impacting a wide range of enterprise environments. Administrators are strongly advised to apply the updates immediately to prevent unauthorized access and potential system compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/cisco-patches-98-cvss-imc-and-ssm-flaws.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Mercor Data Breach—4TB Stolen in LiteLLM Attack",
-            "title": "Mercor Investigates 4TB Data Theft in LiteLLM Supply Chain Attack",
-            "content": "The AI recruiting firm Mercor is probing a significant data breach following a supply chain attack involving LiteLLM, with the Lapsus$ group claiming responsibility for the theft of 4TB of data. This breach highlights the vulnerabilities in supply chain security, particularly for companies relying on third-party AI tools. The incident underscores the importance of comprehensive security measures and regular audits of third-party integrations. Organizations are encouraged to review their supply chain security protocols to mitigate similar risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/mercor-hit-by-litellm-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "14,000 F5 BIG-IP APM Instances Vulnerable to RCE",
-            "title": "Shadowserver Finds 14,000 Exposed F5 BIG-IP APM Instances Amid RCE Attacks",
-            "content": "Security watchdog Shadowserver has identified over 14,000 F5 BIG-IP Access Policy Manager (APM) instances exposed online, vulnerable to a critical remote code execution (RCE) flaw. This vulnerability allows attackers to execute arbitrary code on affected systems, posing severe risks to organizations using these devices. The ongoing exploitation of this flaw highlights the urgent need for patching and securing exposed systems. Administrators should immediately apply the latest security updates from F5 to protect against potential breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-14-000-f5-big-ip-apm-instances-still-exposed-to-rce-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Vacant Homes Used in Hybrid Cybercrime—Mail Fraud Rises",
-            "title": "Cybercriminals Exploit Vacant Homes for Mail Interception and Fraud",
-            "content": "Cybercriminals are increasingly using vacant homes as &quot;drop addresses&quot; to intercept mail and commit fraud, according to a report by Flare. By exploiting postal services and creating fake identities, these threat actors turn mail into a vector for fraud, impacting individuals and businesses alike. The scheme involves redirecting sensitive mail, such as financial documents, to unoccupied properties where criminals can easily collect them. This trend highlights a hybrid approach to cybercrime, blending physical and digital tactics to exploit vulnerabilities in postal systems. Security professionals are advised to monitor for unusual mail activity and verify address changes with clients to mitigate risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/adversaries-exploit-vacant-homes-to-intercept-mail-in-hybrid-cybercrime/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Progress ShareFile Flaws Enable Pre-Auth RCE—Patch Urgently",
-            "title": "Critical Vulnerabilities in Progress ShareFile Allow Unauthenticated RCE",
-            "content": "Two critical vulnerabilities in Progress ShareFile, a secure file transfer solution, have been identified, allowing unauthenticated remote code execution (RCE) when chained together. These flaws, which affect all versions prior to the latest patch, enable attackers to exfiltrate files from compromised environments without authentication. The vulnerabilities pose a significant risk to enterprises relying on ShareFile for secure data transfers. Organizations using ShareFile should immediately apply the latest security updates to prevent potential data breaches and unauthorized access. This incident underscores the importance of regular security assessments and timely patch management in enterprise environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-progress-sharefile-flaws-can-be-chained-in-pre-auth-rce-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Cisco Patches Critical Bugs—Update to Prevent Exploits",
-            "title": "Cisco Addresses Critical Vulnerabilities in Latest Security Update",
-            "content": "Cisco has released patches for several critical and high-severity vulnerabilities that could lead to authentication bypass, remote code execution, information disclosure, and privilege escalation. These vulnerabilities affect a range of Cisco products, emphasizing the need for immediate updates to prevent potential exploitation. Security professionals are urged to review Cisco&#x27;s advisories and apply the necessary patches to secure their networks. This update is part of Cisco&#x27;s ongoing efforts to address security flaws and protect its customers from evolving cyber threats. Regular patching and vulnerability management remain crucial for maintaining robust cybersecurity defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-and-high-severity-vulnerabilities/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Mar 31 2026",
-            "headline": "Salesforce Unveils 30 AI-Powered Slack Features",
-            "title": "Salesforce Integrates 30 AI Features into Slack for Enhanced Productivity",
-            "content": "Salesforce has announced a significant update to Slack, integrating 30 new AI-driven features designed to enhance productivity and collaboration. This overhaul includes advanced AI capabilities such as automated task management, intelligent search, and real-time language translation. The update aims to streamline workflows for businesses and improve user experience by leveraging Salesforce&#x27;s AI expertise. This move positions Slack as a more competitive tool in the enterprise communication landscape, addressing the growing demand for AI-enhanced workplace solutions. Organizations using Slack should explore these new features to optimize their operations and stay ahead in the rapidly evolving digital workspace.",
+            "date": "Apr 01 2026",
+            "headline": "Anthropic&#x27;s GitHub Takedown—Thousands of Repos Removed Accidentally",
+            "title": "Anthropic Retracts GitHub Takedown Notices After Source Code Leak",
+            "content": "Anthropic inadvertently issued takedown notices for thousands of GitHub repositories in an attempt to remove its leaked source code. The AI research company quickly retracted the majority of these notices, citing the action as an accidental overreach. The incident highlights the challenges companies face in protecting intellectual property in open-source environments. While the exact number of affected repositories remains undisclosed, the event underscores the importance of precise digital rights management. Developers and organizations should ensure robust monitoring and response strategies to prevent similar mishaps.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/31/salesforce-announces-an-ai-heavy-makeover-for-slack-with-30-new-features/",
+            "sourceUrl": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/",
             "relatedResources": []
         },
         {
-            "date": "Mar 31 2026",
-            "headline": "Yupp Shuts Down After $33M Funding from a16z",
-            "title": "Yupp Closes Operations Despite $33M Investment from Andreessen Horowitz",
-            "content": "Yupp, a startup focused on crowdsourced AI model feedback, has announced its closure less than a year after its launch, despite securing $33 million in funding from prominent investors like Andreessen Horowitz&#x27;s Chris Dixon. The company aimed to revolutionize AI model development by leveraging community feedback but faced challenges in scaling its operations and achieving sustainable growth. This shutdown highlights the volatility and high-risk nature of the AI startup ecosystem, where even well-funded ventures can struggle to survive. Investors and stakeholders in AI startups should carefully evaluate market viability and scalability before committing resources.",
+            "date": "Apr 01 2026",
+            "headline": "Falcon Perception—New AI Model Unveiled by Hugging Face",
+            "title": "Hugging Face Introduces Falcon Perception AI Model for Enhanced Vision Tasks",
+            "content": "Hugging Face has announced the release of Falcon Perception, a new AI model designed to improve performance in computer vision tasks. The model leverages advanced neural architectures to deliver superior accuracy and efficiency in image recognition and analysis. Falcon Perception is expected to benefit industries reliant on visual data processing, such as healthcare and autonomous vehicles. By offering open-source access, Hugging Face aims to foster community-driven innovation and collaboration. Developers are encouraged to integrate Falcon Perception into their projects to explore its capabilities.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-perception",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 01 2026",
+            "headline": "Mercor Cyberattack—LiteLLM Project Compromise Leads to Data Theft",
+            "title": "Mercor Confirms Cyberattack Linked to LiteLLM Project Vulnerability",
+            "content": "AI recruiting startup Mercor has confirmed a cyberattack that compromised its systems, attributed to vulnerabilities in the open-source LiteLLM project. An extortion hacking group claimed responsibility for the breach, alleging they have stolen sensitive data. The incident highlights the risks associated with integrating open-source components without rigorous security assessments. Affected parties include Mercor&#x27;s clients and partners, who may face data exposure risks. Organizations using LiteLLM should conduct immediate security reviews and apply necessary patches to mitigate potential threats.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/03/31/yupp-ai-shuts-down-33m-a16z-crypto-chris-dixon/",
+            "sourceUrl": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Nvidia&#x27;s AI Agent Platform—17 Enterprises Join the Launch",
+            "title": "Nvidia Unveils Enterprise AI Agent Platform at GTC 2026",
+            "content": "Nvidia has launched its Agent Toolkit, an open-source platform for building autonomous AI agents, during the GTC 2026 conference. The platform has already attracted 17 major adopters, including Adobe, Salesforce, and SAP. This initiative aims to accelerate the development of AI-driven business solutions across various industries. Nvidia&#x27;s CEO, Jensen Huang, emphasized the platform&#x27;s potential to redefine enterprise AI applications. Companies are encouraged to explore the toolkit to enhance their AI capabilities and drive innovation.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/nvidia-launches-enterprise-ai-agent-platform-with-adobe-salesforce-sap-among",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Meta Halts Mercor Collaboration—Data Breach Risks AI Secrets",
+            "title": "Meta Suspends Partnership with Mercor Following Data Breach Incident",
+            "content": "Meta has paused its collaboration with Mercor after a data breach raised concerns about the security of AI industry secrets. The breach, linked to the LiteLLM project, potentially exposed critical information on AI model training methodologies. This incident has prompted major AI labs to reassess their data security protocols and partnerships. The breach underscores the need for stringent security measures when handling sensitive AI data. Companies should review their data protection strategies to safeguard proprietary information.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 04 2026",
+            "headline": "Anthropic Dominates Private Markets—SpaceX IPO Looms",
+            "title": "Anthropic&#x27;s Surge in Private Markets Faces SpaceX IPO Challenge",
+            "content": "Anthropic is currently the most sought-after trade in the secondary market for private shares, according to Glen Anderson of Rainmaker Securities. However, the impending IPO of SpaceX could significantly alter the landscape. While Anthropic gains momentum, OpenAI is reportedly losing its market position. The dynamics of the private market are shifting as investors anticipate SpaceX&#x27;s public offering. Stakeholders should monitor these developments closely to adjust their investment strategies accordingly.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/03/anthropic-is-having-a-moment-in-the-private-markets-spacex-could-spoil-the-party/",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "Speculation surrounds Elon Musk&#x27;s potential filing for SpaceX&#x27;s initial public offering (IPO), with industry insiders suggesting June 7th as a possible date. This follows an unexpected confidential filing on April 1st, sparking discussions about Musk&#x27;s strategic timing. The anticipated IPO could significantly impact the aerospace sector, offering new investment opportunities and reshaping market dynamics. Professionals in finance and technology should monitor developments closely, as the IPO could influence trends and valuations in space exploration and related industries.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/906027/elon-musk-lawsuit-ipo-spacex-tesla",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "OpenAI Buys TBPN—Expands Media Influence",
-            "title": "OpenAI Acquires TBPN, Enhancing Its Media Presence",
-            "content": "OpenAI has acquired TBPN, an online talk show renowned for interviews with AI executives and tech leaders. The show, which airs weekdays at 2 PM PT, features prominent figures like OpenAI CEO Sam Altman and executives from Meta and Microsoft. This acquisition enhances OpenAI&#x27;s media presence, allowing it to directly engage with audiences and shape conversations around AI and technology. The move aligns with OpenAI&#x27;s broader strategy to influence public discourse and connect with key stakeholders in the tech industry.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/906022/openai-buys-tbpn",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Microsoft Pursues Superintelligence—Restructures AI Leadership",
-            "title": "Microsoft Restructures to Focus on Superintelligence Development",
-            "content": "Microsoft has restructured its leadership to prioritize the pursuit of superintelligence, appointing Mustafa Suleyman as its inaugural CEO of AI. This strategic shift follows a large-scale company restructuring in March, allowing Suleyman to concentrate on advancing AI capabilities beyond current limitations. The move underscores Microsoft&#x27;s commitment to leading the development of superintelligent systems, which promise to transform business operations and enhance decision-making processes. As AI continues to evolve, companies like Microsoft are investing heavily in research and development to maintain competitive advantages in the tech industry. Professionals should monitor these advancements closely, as they could redefine industry standards and practices.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/905791/mustafa-suleyman-microsoft-ai-transcription-model",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Google Home Update Enhances Gemini AI&#x27;s Command Understanding",
-            "title": "Google Home&#x27;s Gemini AI Update Improves Command Interpretation",
-            "content": "Google has released an update to its Home app, enhancing the Gemini AI assistant&#x27;s ability to understand and execute user commands more naturally. The update allows users to specify lighting preferences with greater precision, such as requesting &quot;the perfect reading light.&quot; This improvement aims to make smart home interactions more intuitive and reliable, addressing previous user feedback about command misinterpretation. As smart home technology becomes increasingly integrated into daily life, advancements like these are crucial for enhancing user experience and satisfaction. Developers and tech leaders should consider similar updates to improve AI interactions in their own products.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/905805/google-home-gemini-temperature-controls-lighting",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 01 2026",
-            "headline": "Claude Code Leak—512K Lines of Source Exposed",
-            "title": "Anthropic&#x27;s Claude Code Source Leak: Security Measures for Enterprises",
-            "content": "Anthropic inadvertently exposed 512,000 lines of TypeScript source code from its Claude Code AI coding agent, following a mishap with the npm package version 2.1.88. This significant leak, involving 1,906 files, poses a potential security risk for enterprises utilizing AI coding agents. The exposed code could be exploited by malicious actors to identify vulnerabilities or replicate proprietary technology. Security leaders are advised to conduct immediate code audits, review access controls, and implement robust monitoring systems to mitigate potential threats. This incident highlights the critical importance of secure software development practices in safeguarding intellectual property.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/claude-code-512000-line-source-leak-attack-paths-audit-security-leaders",
             "relatedResources": []
         }
     ],
