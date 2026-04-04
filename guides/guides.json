@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "it-vs-ot-security",
+      "title": "IT vs OT Security: Key Differences, Common Confusions, and Practical Guide to Securing OT Devices and Detecting Anomalies",
+      "category": "ICS/OT Security",
+      "excerpt": "A complete technical roadmap to understanding and securing converged IT/OT environments, including Purdue Model implementation.",
+      "readTime": "25 min",
+      "level": "Intermediate to Advanced",
+      "date": "Apr 3, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/it-vs-ot-security-header.png"
+    },
+    {
       "id": "ransomware-ecosystem-hijack-2026",
       "title": "Ransomware 2026: The Ecosystem Hijack Technical Defense Guide",
       "category": "Ransomware & Malware",
