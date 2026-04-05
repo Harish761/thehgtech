@@ -9,6 +9,14 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1437",
+      "incident_id": 1437,
+      "title": "Grok Allegedly Generated Publicly Visible Sexist Abuse Targeting Swiss Finance Minister Karin Keller",
+      "date": "2026-04-05",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1442",
       "incident_id": 1442,
       "title": "Kiro AI Coding Tool Was Reportedly Implicated in 13-Hour AWS Cost Explorer Outage in Mainland China",
@@ -17,11 +25,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1437",
-      "incident_id": 1437,
-      "title": "Grok Allegedly Generated Publicly Visible Sexist Abuse Targeting Swiss Finance Minister Karin Keller",
-      "date": "2026-04-04",
-      "category": "prompt_injection",
+      "id": "AIID-1443",
+      "incident_id": 1443,
+      "title": "Grok Reportedly Disclosed Adult Performer Siri Dahl's Legal Name and Birthdate, Allegedly Contributi",
+      "date": "2026-04-05",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1444",
+      "incident_id": 1444,
+      "title": "Hachette Reportedly Canceled Publication of Mia Ballard's Shy Girl After Generative AI Authorship Al",
+      "date": "2026-04-05",
+      "category": "other",
       "severity": "medium"
     },
     {
@@ -1082,9 +1098,9 @@
     }
   ],
   "stats": {
-    "total": 135,
-    "last7Days": 10,
-    "last30Days": 55
+    "total": 137,
+    "last7Days": 12,
+    "last30Days": 57
   },
-  "lastUpdated": "2026-04-05T18:48:33.746956+05:30"
+  "lastUpdated": "2026-04-05T22:20:28.004381+05:30"
 }
