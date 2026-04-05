@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1416",
+      "incident_id": 1416,
+      "title": "Purported Facial Recognition Error Reportedly Led to Arrest and Monthslong Jailing of Tennessee Woma",
+      "date": "2026-04-05",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1442",
+      "incident_id": 1442,
+      "title": "Kiro AI Coding Tool Was Reportedly Implicated in 13-Hour AWS Cost Explorer Outage in Mainland China",
+      "date": "2026-04-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1437",
       "incident_id": 1437,
       "title": "Grok Allegedly Generated Publicly Visible Sexist Abuse Targeting Swiss Finance Minister Karin Keller",
@@ -207,14 +223,6 @@
       "date": "2026-03-21",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1416",
-      "incident_id": 1416,
-      "title": "Purported Facial Recognition Error Reportedly Led to Arrest and Jailing of Tennessee Woman in North ",
-      "date": "2026-03-16",
-      "category": "fraud",
-      "severity": "high"
     },
     {
       "id": "AIID-1417",
@@ -1074,9 +1082,9 @@
     }
   ],
   "stats": {
-    "total": 134,
-    "last7Days": 8,
-    "last30Days": 54
+    "total": 135,
+    "last7Days": 10,
+    "last30Days": 55
   },
-  "lastUpdated": "2026-04-05T14:27:32.302310+05:30"
+  "lastUpdated": "2026-04-05T18:48:33.746956+05:30"
 }
