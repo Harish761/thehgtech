@@ -9,6 +9,38 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1438",
+      "incident_id": 1438,
+      "title": "Jiushi Autonomous Delivery Vehicle Reportedly Dragged Fallen Electric Scooter During Delivery Run in",
+      "date": "2026-04-04",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1439",
+      "incident_id": 1439,
+      "title": "Former New Orleans Isidore Newman School Teacher Allegedly Used AI to Create Fake Nude Images from S",
+      "date": "2026-04-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1440",
+      "incident_id": 1440,
+      "title": "Coco Robotics Delivery Robot Reportedly Became Stuck on Railroad Tracks and Was Struck by Train in M",
+      "date": "2026-04-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1441",
+      "incident_id": 1441,
+      "title": "Claude Cowork Allegedly Deleted Folder Containing 15 Years of Family Photos While Organizing User's ",
+      "date": "2026-04-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1434",
       "incident_id": 1434,
       "title": "DOJ Attorney Reportedly Used AI to File Brief With Purportedly Fabricated Quotes and Misstated Case ",
@@ -1042,9 +1074,9 @@
     }
   ],
   "stats": {
-    "total": 130,
-    "last7Days": 4,
-    "last30Days": 50
+    "total": 134,
+    "last7Days": 8,
+    "last30Days": 54
   },
-  "lastUpdated": "2026-04-05T02:17:28.691388+05:30"
+  "lastUpdated": "2026-04-05T09:03:51.353613+05:30"
 }
