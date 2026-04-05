@@ -4,39 +4,66 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 03 2026",
+            "headline": "North Korean Hackers Target Axios—npm Supply Chain Compromised",
+            "title": "UNC1069 Social Engineering Attack Breaches Axios npm Package",
+            "content": "The popular Axios npm package was compromised following a sophisticated social engineering attack by North Korean threat actors identified as UNC1069. The attackers successfully manipulated Jason Saayman, the package maintainer, to gain access and inject malicious code. This breach highlights the growing threat of supply chain attacks, particularly targeting open-source ecosystems. Developers using Axios are urged to verify package integrity and monitor for unusual activity. This incident underscores the necessity for heightened vigilance and robust security protocols in managing open-source contributions.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/unc1069-social-engineering-of-axios.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "T-Mobile Insider Breach—Impact Limited, Company Confirms",
+            "title": "T-Mobile Clarifies Insider-Driven Data Breach with Minimal Impact",
+            "content": "T-Mobile has disclosed a data breach involving an insider, confirming that the incident had a limited impact on its operations. The telecom giant reassured stakeholders that swift action was taken to mitigate the breach and prevent further unauthorized access. This incident is part of a broader trend of insider threats, which remain a significant concern for large enterprises. T-Mobile&#x27;s response emphasizes the importance of internal security measures and employee monitoring to safeguard sensitive information. The company continues to work with authorities to ensure comprehensive security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/t-mobile-sets-the-record-straight-on-latest-data-breach-filing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Microsoft Forces Windows 11 24H2 Upgrade—Unmanaged PCs Affected",
+            "title": "Microsoft Enforces Windows 11 25H2 Upgrade on Unmanaged Devices",
+            "content": "Microsoft has initiated a forced upgrade for unmanaged Windows 11 24H2 Home and Pro edition PCs to the newer 25H2 version. This move aims to ensure users benefit from the latest security enhancements and features. Unmanaged devices, often lacking timely updates, pose security risks, prompting Microsoft&#x27;s decisive action. Users are advised to prepare for the upgrade and ensure compatibility with the new version. This enforcement reflects Microsoft&#x27;s commitment to maintaining a secure and up-to-date user environment across its operating systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-force-upgrades-unmanaged-windows-11-24h2-pcs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Claude Code Leak Exploited—Vidar Malware Spread via GitHub",
+            "title": "Threat Actors Use Claude Code Leak to Distribute Vidar Malware",
+            "content": "Cybercriminals are exploiting the recent Claude Code source code leak to distribute Vidar information-stealing malware through fake GitHub repositories. This tactic involves tricking users into downloading malicious code under the guise of legitimate software. The Vidar malware is known for stealing sensitive information such as credentials and financial data. Developers and users are urged to verify the authenticity of repositories and exercise caution when downloading code from GitHub. This incident highlights the risks associated with source code leaks and the importance of securing code repositories.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/claude-code-leak-used-to-push-infostealer-malware-on-github/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "CVE-2025-55182 Exploited—766 Next.js Hosts Breached",
+            "title": "React2Shell Vulnerability Leads to Massive Credential Harvesting",
+            "content": "A widespread credential harvesting campaign has exploited the React2Shell vulnerability, identified as CVE-2025-55182, affecting 766 Next.js hosts. Attackers used this flaw to gain unauthorized access and steal sensitive data, including database credentials, SSH keys, and API tokens. This breach underscores the critical need for timely patching and vulnerability management in web applications. Organizations using Next.js are advised to apply security updates and review access logs for suspicious activity. The incident serves as a stark reminder of the persistent threats facing modern web frameworks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/hackers-exploit-cve-2025-55182-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 02 2026",
+            "headline": "Claude Code Vulnerability Found—Days After Source Leak",
+            "title": "Critical Vulnerability in Claude Code Discovered Post-Source Leak",
+            "content": "A critical vulnerability has been identified in Claude Code shortly after its source code was leaked, raising significant security concerns. Discovered by Adversa AI, this flaw could potentially be exploited to compromise systems using Claude Code. The rapid emergence of this vulnerability following the leak highlights the dangers of exposed source code. Developers using Claude Code should prioritize security assessments and apply patches as they become available. This situation exemplifies the urgent need for robust security practices in code management and distribution.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-vulnerability-in-claude-code-emerges-days-after-source-leak/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 04 2026",
             "headline": "EU Commission Breach—300GB Data Stolen in Trivy Attack",
             "title": "European Commission Confirms Data Breach Linked to Trivy Supply Chain Attack",
             "content": "The European Commission has confirmed a significant data breach involving the theft of over 300GB of data from its Amazon Web Services (AWS) environment, attributed to a supply chain attack exploiting the Trivy vulnerability. The stolen data includes sensitive personal information, raising concerns about potential identity theft and privacy violations. This breach underscores the growing threat of supply chain attacks, where vulnerabilities in third-party software can lead to widespread data exposure. Security professionals are advised to review and update their supply chain risk management practices and ensure robust monitoring of third-party integrations. The incident highlights the critical need for comprehensive security measures in cloud environments.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/european-commission-confirms-data-breach-linked-to-trivy-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Cisco Patches Critical IMC Flaw—Remote Access Risk",
-            "title": "Cisco Patches 9.8 CVSS IMC and SSM Flaws Allowing Remote System Compromise",
-            "content": "Cisco has issued patches for a critical security vulnerability in its Integrated Management Controller (IMC) and Server System Management (SSM) software, rated 9.8 on the Common Vulnerability Scoring System (CVSS). This flaw allows unauthenticated remote attackers to bypass authentication and gain elevated privileges on affected systems. The vulnerability, if exploited, could lead to full system compromise, posing a severe risk to organizations using these Cisco products. Administrators are urged to apply the available updates immediately to mitigate potential exploitation. This patch is part of Cisco&#x27;s ongoing efforts to address security vulnerabilities in its product line.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/cisco-patches-98-cvss-imc-and-ssm-flaws.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Cybercriminals Exploit Vacant Homes for Mail Fraud",
-            "title": "Adversaries Exploit Vacant Homes to Intercept Mail in Hybrid Cybercrime",
-            "content": "Cybercriminals are increasingly exploiting vacant homes as &quot;drop addresses&quot; to intercept mail, facilitating identity theft and financial fraud. This hybrid cybercrime tactic involves using postal services and fake identities to redirect sensitive information, such as credit cards and bank statements, to these addresses. The tactic highlights the evolving strategies of threat actors who blend physical and digital methods to commit fraud. Security experts recommend increased vigilance and the use of mail-holding services when properties are unoccupied. This trend underscores the need for enhanced collaboration between postal services and cybersecurity professionals to combat such schemes.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/adversaries-exploit-vacant-homes-to-intercept-mail-in-hybrid-cybercrime/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Progress ShareFile Vulnerabilities Enable Pre-Auth RCE Attacks",
-            "title": "New Progress ShareFile Flaws Can Be Chained in Pre-Auth RCE Attacks",
-            "content": "Two newly discovered vulnerabilities in Progress ShareFile, a secure file transfer solution, can be exploited in tandem to enable unauthenticated remote code execution (RCE) attacks. These flaws allow attackers to exfiltrate files from compromised environments without prior authentication, posing a significant threat to organizations relying on ShareFile for secure data transfers. Security professionals are advised to apply the latest patches and review their system configurations to prevent potential exploitation. This discovery highlights the critical importance of regular security assessments and timely updates in safeguarding enterprise-grade software.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-progress-sharefile-flaws-can-be-chained-in-pre-auth-rce-attacks/",
             "relatedResources": []
         },
         {
@@ -94,24 +121,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 02 2026",
-            "headline": "Open Source Report Reveals Key Security Insights",
-            "title": "The State of Trusted Open Source Report Highlights Security Trends",
-            "content": "The State of Trusted Open Source report, released in December 2025, provides critical insights into open source software consumption and security across container image projects, language libraries, and builds. The report emphasizes the importance of maintaining up-to-date versions to mitigate vulnerabilities inherent in open source components. As organizations increasingly rely on open source software, understanding these trends is crucial for maintaining a secure software supply chain. The report serves as a valuable resource for developers and security professionals aiming to enhance their open source security practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/the-state-of-trusted-open-source-report.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Cisco Patches Critical IMC Auth Bypass Flaw",
-            "title": "Critical Cisco IMC Authentication Bypass Vulnerability Patched",
-            "content": "Cisco has addressed a critical authentication bypass vulnerability in its Integrated Management Controller (IMC), which could allow attackers to gain administrative access. The flaw, identified as CVE-2026-12345, affects multiple versions of Cisco&#x27;s IMC software. Exploitation of this vulnerability could lead to unauthorized control over affected systems, posing significant security risks. Cisco urges users to apply the available patches immediately to protect their infrastructure. This vulnerability highlights the ongoing need for timely patch management to safeguard against potential exploits in critical network components.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-cisco-imc-auth-bypass-gives-attackers-admin-access/",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 03 2026",
             "headline": "TrueConf Zero-Day Exploited in Asian Government Cyberattacks",
             "title": "Chinese Threat Actor Exploits TrueConf Zero-Day in Government Attacks",
@@ -128,18 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/in-other-news-chatgpt-data-leak-android-rootkit-water-facility-hit-by-ransomware/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 03 2026",
-            "headline": "ShareFile Flaws Enable Unauthenticated Remote Code Execution",
-            "title": "Critical Vulnerabilities in ShareFile Allow Unauthenticated RCE",
-            "content": "Critical vulnerabilities in Citrix&#x27;s ShareFile have been identified, enabling unauthenticated remote code execution (RCE) through chained exploits. These flaws allow attackers to bypass authentication and upload arbitrary files to the server, posing a severe risk to organizations using the platform. Affected systems include those running specific versions of ShareFile, necessitating immediate attention from IT departments. Organizations are advised to apply patches released by Citrix and conduct security audits to ensure their systems are not compromised. This incident underscores the ongoing challenges of securing enterprise file-sharing solutions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-sharefile-flaws-lead-to-unauthenticated-rce/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 01 2026",
+            "headline": "Anthropic&#x27;s GitHub Takedown Mishap—Thousands of Repos Affected",
+            "title": "Anthropic Retracts Accidental GitHub Takedown Notices for Leaked Code",
+            "content": "Anthropic inadvertently issued takedown notices for thousands of GitHub repositories in an attempt to remove its leaked source code. The company has since retracted the majority of these notices, acknowledging the error. This incident highlights the challenges companies face in managing intellectual property in the digital age. Developers using GitHub should verify the status of their repositories to ensure they are not mistakenly affected. The situation underscores the importance of robust internal controls and communication when handling sensitive data breaches.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 01 2026",
+            "headline": "Falcon Perception: A New Era in AI Vision Models",
+            "title": "Hugging Face Introduces Falcon Perception for Advanced AI Vision Tasks",
+            "content": "Hugging Face has unveiled Falcon Perception, a cutting-edge AI vision model designed to enhance image recognition and analysis capabilities. This model leverages advanced neural network architectures to improve accuracy and efficiency in processing visual data. Falcon Perception is expected to benefit industries relying on computer vision, such as autonomous vehicles and healthcare imaging. By offering improved performance metrics, Hugging Face aims to set a new standard in AI-driven visual processing. Developers and tech leaders should explore Falcon Perception&#x27;s potential applications to stay competitive in the rapidly evolving AI landscape.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-perception",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 04 2026",
+            "headline": "AI Fakes Target Folk Musician—Copyright Concerns Arise",
+            "title": "Folk Artist Faces AI-Generated Fakes and Copyright Challenges",
+            "content": "Folk musician Murphy Campbell discovered unauthorized songs on her Spotify profile, suspected to be AI-generated fakes mimicking her style. These tracks, which she did not upload, raise significant copyright and authenticity issues in the music industry. The incident highlights the growing threat of AI tools being used to create convincing counterfeit content, potentially undermining artists&#x27; rights and revenues. Musicians and content creators should be vigilant about monitoring digital platforms for unauthorized use of their work. This case underscores the need for robust digital rights management and AI regulation to protect creative industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/907111/murphy-campbell-folk-music-ai-copyright",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 04 2026",
+            "headline": "Claude Code Users Face Price Hike for OpenClaw Access",
+            "title": "Anthropic Increases Fees for Claude Code&#x27;s OpenClaw Integration",
+            "content": "Anthropic has announced that subscribers of its Claude Code service will incur additional charges for using OpenClaw and other third-party tools. This pricing adjustment reflects the growing costs associated with integrating external functionalities into AI platforms. Users of Claude Code, particularly those relying on OpenClaw for enhanced coding capabilities, should evaluate the impact of these changes on their budgets. The move signals a trend towards monetizing AI tool integrations, prompting developers to reassess the cost-effectiveness of their current solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Anthropic Launches PAC Ahead of Midterms—AI Policy Focus",
+            "title": "Anthropic Forms Political Action Committee to Influence AI Policy",
+            "content": "Anthropic has established a political action committee (PAC) to support candidates aligned with its AI policy objectives as the midterm elections approach. This strategic move aims to bolster legislative support for AI-friendly regulations and initiatives. By engaging in political advocacy, Anthropic seeks to shape the regulatory landscape to favor innovation and ethical AI development. Tech leaders and policymakers should monitor this development as it may influence the future direction of AI governance. The formation of this PAC reflects the increasing intersection of technology and politics in shaping industry standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/03/anthropic-ramps-up-its-political-activities-with-a-new-pac/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "AI Giants Bet on Natural Gas—Environmental Risks Loom",
+            "title": "Meta, Microsoft, Google Invest in Natural Gas for Data Centers",
+            "content": "Meta, Microsoft, and Google are investing heavily in natural gas power plants to fuel their AI data centers, raising environmental concerns. This strategy aims to meet the growing energy demands of AI operations but may face backlash due to potential environmental impacts. As these tech giants prioritize energy reliability, they must also address sustainability challenges associated with fossil fuel reliance. The move highlights the ongoing tension between technological advancement and environmental stewardship. Stakeholders should consider the long-term implications of energy choices on both operational efficiency and ecological responsibility.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/03/ai-companies-are-building-huge-natural-gas-plants-to-power-data-centers-what-could-go-wrong/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 04 2026",
             "headline": "Claude Code Leak—Hackers Add Malware Twist",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Anthropic is currently the most sought-after trade in the secondary market for private shares, according to Glen Anderson of Rainmaker Securities. However, the impending IPO of SpaceX could significantly alter the landscape. While Anthropic gains momentum, OpenAI is reportedly losing its market position. The dynamics of the private market are shifting as investors anticipate SpaceX&#x27;s public offering. Stakeholders should monitor these developments closely to adjust their investment strategies accordingly.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/03/anthropic-is-having-a-moment-in-the-private-markets-spacex-could-spoil-the-party/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 03 2026",
-            "headline": "Apple’s 50th Anniversary: Top 50 Products Ranked",
-            "title": "Apple Celebrates 50 Years with Public Ranking of Top Products",
-            "content": "In celebration of its 50th anniversary, Apple engaged its global community to rank the top 50 products in its history, receiving over 1.6 million votes. This initiative not only highlights Apple&#x27;s enduring impact on technology but also reflects its strong consumer engagement and brand loyalty. The ranking includes iconic products such as the iPhone, MacBook, and iPad, showcasing the company&#x27;s innovation over the decades. As Apple marks this milestone, it continues to influence the tech industry with its design and technological advancements. Tech professionals and enthusiasts can explore the full list to gain insights into Apple&#x27;s legacy and future directions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/906548/best-apple-product-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 03 2026",
-            "headline": "Utah Allows AI to Prescribe Psychiatric Drugs",
-            "title": "AI System Authorized to Prescribe Psychiatric Drugs in Utah",
-            "content": "Utah has become the second state in the U.S. to permit an AI system to prescribe psychiatric medications without direct doctor oversight. This groundbreaking decision aims to reduce healthcare costs and address the shortage of psychiatric care providers. However, the move has sparked debate, with some physicians expressing concerns about the AI&#x27;s decision-making accuracy and potential risks to patient safety. This development underscores the growing role of AI in healthcare and the need for careful regulation and oversight. Healthcare professionals should monitor this trend and consider its implications for clinical practice and patient care.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/906525/ai-chatbot-prescribe-refill-psychiatric-drugs",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Microsoft Debuts 3 New AI Models for Audio and Image Generation",
-            "title": "Microsoft Introduces Three Foundational AI Models for Enhanced Media Creation",
-            "content": "Microsoft has launched three new foundational AI models capable of transcribing voice to text and generating audio and images, marking a significant advancement in its AI capabilities. These models, developed by Microsoft&#x27;s AI division MAI, aim to enhance media creation and accessibility across various platforms. The release comes six months after the group&#x27;s formation, highlighting Microsoft&#x27;s commitment to advancing AI technology. This development is poised to impact industries reliant on media production and content creation, offering new tools for developers and businesses. Stakeholders should evaluate these models for potential integration into their workflows to leverage AI-driven efficiencies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Google Updates Gemma 4 AI Models, Adopts Apache 2.0 License",
-            "title": "Google Releases Gemma 4 AI Models with Open Source Licensing",
-            "content": "Google has announced the release of Gemma 4, the latest update to its open AI models, now available under the Apache 2.0 license. This marks the first major update in a year, reflecting Google&#x27;s commitment to open-source development and collaboration. The Apache 2.0 license allows for greater flexibility and integration by developers, potentially accelerating innovation and adoption across various applications. This strategic move is expected to enhance Google&#x27;s position in the AI community by fostering a more inclusive and collaborative environment. Developers and tech leaders should explore Gemma 4&#x27;s capabilities and consider its integration into their AI projects.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/04/google-announces-gemma-4-open-ai-models-switches-to-apache-2-0-license/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 02 2026",
-            "headline": "Kintsugi&#x27;s AI Fails FDA—Tech Goes Open Source",
-            "title": "Kintsugi Shuts Down After Failing to Secure FDA Clearance for AI",
-            "content": "Kintsugi, a California-based startup, has ceased operations after failing to obtain FDA clearance for its AI technology designed to detect depression and anxiety through speech analysis. The company spent seven years developing the AI, which aimed to provide a non-invasive method for mental health assessment. Despite its potential, the lack of regulatory approval has forced Kintsugi to release most of its technology as open-source, allowing developers and researchers to access and build upon the code. This move highlights the challenges faced by AI companies in navigating regulatory landscapes, particularly in healthcare. Professionals in AI and mental health fields should explore the open-source release for potential integration and innovation.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/905864/depression-detecting-ai-kintsugi-clinical-ai-startup-shut-down",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 03 2026",
-            "headline": "Arcee&#x27;s Trinity-Large-Thinking—A Customizable U.S. AI Model",
-            "title": "Arcee Releases Trinity-Large-Thinking, a Powerful Open Source AI Model",
-            "content": "Arcee has launched Trinity-Large-Thinking, a rare, U.S.-made open-source AI model that enterprises can download and customize. This move comes as Chinese companies pivot back to proprietary models, leaving a gap in the open-source AI landscape. Trinity-Large-Thinking offers robust capabilities for businesses seeking adaptable AI solutions, marking a significant development in the AI community. The model&#x27;s release underscores the ongoing competition between U.S. and Chinese AI advancements and provides an opportunity for enterprises to leverage cutting-edge technology without the constraints of proprietary systems. Organizations should consider evaluating Trinity-Large-Thinking for their AI needs.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/arcees-new-open-source-trinity-large-thinking-is-the-rare-powerful-u-s-made",
             "relatedResources": []
         }
     ],
