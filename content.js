@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 06 2026",
+            "headline": "LiteLLM Exploits Developer Machines—Credential Vaults for Attackers",
+            "title": "LiteLLM Turns Developer Workstations into Credential Vaults for Threat Actors",
+            "content": "The TeamPCP threat actor has leveraged LiteLLM to transform developer workstations into credential vaults, posing a significant security risk. This attack exploits the frequent creation, testing, and caching of credentials on developer machines, which are now targeted by local AI agents. The breach underscores the vulnerability of developer environments in enterprise infrastructure, as credentials are reused across various services and tools. Organizations should prioritize securing developer workstations and consider implementing stricter access controls and credential management practices. This incident highlights the critical need for robust security measures in developer environments to prevent unauthorized access and data breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/how-litellm-turned-developer-machines.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "North Korean Hackers Target Node.js Maintainers—Supply Chain Risk",
+            "title": "North Korean Threat Actors Target High-Profile Node.js Maintainers",
+            "content": "North Korean hackers, linked to the Axios supply chain attack, are now targeting high-profile Node.js maintainers through sophisticated social engineering campaigns. This strategic move aims to compromise widely used open-source libraries, potentially affecting millions of downstream applications. The campaign highlights the growing threat to software supply chains, emphasizing the need for maintainers to exercise heightened vigilance and adopt stringent security practices. Developers should verify the integrity of code dependencies and consider using tools that detect malicious code injections. This incident serves as a stark reminder of the persistent threats facing open-source ecosystems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/north-korean-hackers-target-high-profile-node-js-maintainers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Qilin, Warlock Ransomware Exploit Drivers—300+ EDR Tools Disabled",
+            "title": "Qilin and Warlock Ransomware Use Vulnerable Drivers to Disable EDR Tools",
+            "content": "Ransomware groups Qilin and Warlock have been identified using the Bring Your Own Vulnerable Driver (BYOVD) technique to disable over 300 Endpoint Detection and Response (EDR) tools on compromised systems. This method involves exploiting known vulnerabilities in drivers to bypass security measures, allowing ransomware to operate undetected. Cisco Talos and Trend Micro&#x27;s analysis reveals the sophistication of these attacks, which pose a severe threat to enterprise security. Organizations are urged to update drivers and employ advanced threat detection solutions to mitigate these risks. The use of BYOVD techniques marks a concerning evolution in ransomware tactics.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Fortinet Patches Zero-Day—Remote Code Execution Risk",
+            "title": "Fortinet Releases Emergency Fixes for Exploited Zero-Day Vulnerability",
+            "content": "Fortinet has issued emergency patches for a critical zero-day vulnerability in FortiClient EMS, identified as an improper access control flaw. This vulnerability allows unauthenticated attackers to execute arbitrary code remotely, posing a significant threat to affected systems. Organizations using FortiClient EMS are strongly advised to apply the patches immediately to prevent potential exploitation. This incident underscores the importance of timely patch management and the need for continuous monitoring of security advisories. Fortinet&#x27;s swift response highlights the ongoing challenges of securing enterprise environments against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fortinet-rushes-emergency-fixes-for-exploited-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "BKA Unmasks REvil Leaders—130 German Attacks Solved",
+            "title": "BKA Identifies Key Figures Behind REvil Ransomware Attacks in Germany",
+            "content": "Germany&#x27;s Federal Criminal Police Office (BKA) has successfully identified two key figures behind the notorious REvil ransomware operation, which was responsible for 130 attacks in Germany. One of the unmasked individuals operated under the alias UNKN, playing a pivotal role in the ransomware-as-a-service (RaaS) scheme. This breakthrough in the investigation marks a significant step in dismantling the remnants of the REvil group, which has caused extensive damage worldwide. The identification of these individuals highlights the importance of international cooperation in combating cybercrime. Organizations are reminded to bolster their defenses against ransomware threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/bka-identifies-revil-leaders-behind-130.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Hims &amp; Hers Data Breach—Zendesk Ticket Compromise",
+            "title": "Hims &amp; Hers Warns of Data Breach Following Zendesk Support Ticket Theft",
+            "content": "Telehealth company Hims &amp; Hers has disclosed a data breach involving the theft of support tickets from a third-party platform, Zendesk. The breach potentially exposed sensitive customer information, raising concerns about data privacy and security. Affected customers are advised to monitor their accounts for suspicious activity and change passwords as a precaution. This incident highlights the vulnerabilities associated with third-party service providers and the need for robust security measures. Companies are encouraged to conduct thorough security assessments of their vendors to prevent similar breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hims-and-hers-warns-of-data-breach-after-zendesk-support-ticket-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
             "headline": "Germany Doxes REvil Leader—Daniil Shchukin Unmasked",
             "title": "German Authorities Identify Daniil Shchukin as Leader of REvil, GandCrab",
             "content": "German authorities have unveiled the identity of &quot;UNKN,&quot; the notorious leader behind the Russian ransomware groups REvil and GandCrab. Daniil Maksimovich Shchukin, a 31-year-old Russian national, is accused of orchestrating over 130 cyberattacks. These ransomware groups have been responsible for significant global disruptions, demanding ransoms in millions of dollars from victims worldwide. The unmasking of Shchukin marks a critical development in international efforts to combat ransomware. Security professionals should remain vigilant and ensure robust defenses against potential retaliatory attacks from these groups.",
@@ -31,33 +85,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 03 2026",
-            "headline": "Multi-Extortion Ransomware: Data Leaks as Leverage",
-            "title": "Multi-Extortion Ransomware Uses Data Leaks to Pressure Victims",
-            "content": "The evolution of ransomware has taken a new turn with the rise of multi-extortion tactics, where attackers use stolen data to coerce victims into paying ransoms. Penta Security&#x27;s D.AMO platform offers a solution by keeping exfiltrated files encrypted, rendering them useless to attackers. This approach aims to mitigate the impact of public data leaks, which are increasingly used as leverage in ransomware negotiations. Organizations are advised to adopt robust encryption and data protection strategies to defend against these sophisticated attacks. The trend underscores the need for comprehensive cybersecurity measures beyond traditional defenses.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/evolution-of-ransomware-multi-extortion-ransomware-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 03 2026",
-            "headline": "TrueConf Zero-Day Hits Asian Governments—Chinese APT Suspected",
-            "title": "Chinese Threat Actor Exploits TrueConf Zero-Day in Government Attacks",
-            "content": "A Chinese threat actor has exploited a zero-day vulnerability in the TrueConf video conferencing platform to target Asian government entities. The attackers used the flaw to conduct reconnaissance, escalate privileges, and deploy additional malicious payloads. This incident highlights the persistent threat posed by state-sponsored actors targeting critical infrastructure and government systems. Organizations using TrueConf should apply available security patches and enhance monitoring for suspicious activities. The attack serves as a reminder of the vulnerabilities inherent in widely used communication platforms.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/trueconf-zero-day-exploited-in-asian-government-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 03 2026",
-            "headline": "ChatGPT Data Leak and Android Rootkit Among Key Incidents",
-            "title": "ChatGPT Data Leak, Android Rootkit, and Water Facility Ransomware Attack",
-            "content": "Recent cybersecurity incidents include a data leak involving ChatGPT, the discovery of an Android rootkit, and a ransomware attack on a water facility. These events highlight the diverse range of threats facing organizations today, from AI-related data breaches to critical infrastructure attacks. The ChatGPT data leak raises concerns about the security of AI-driven platforms, while the Android rootkit represents a growing threat to mobile device security. Organizations are urged to review their security postures and ensure robust defenses against these varied threats. The incidents underscore the importance of a comprehensive approach to cybersecurity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-chatgpt-data-leak-android-rootkit-water-facility-hit-by-ransomware/",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 05 2026",
             "headline": "Fortinet Flaw Exploited—Patch CVE-2026-35616 Now",
             "title": "Fortinet Releases Emergency Patch for CVE-2026-35616 in FortiClient EMS",
@@ -78,21 +105,57 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Apr 01 2026",
-            "headline": "Anthropic&#x27;s GitHub Takedown—Thousands of Repos Removed Accidentally",
-            "title": "Anthropic Retracts GitHub Takedown Notices After Source Code Leak",
-            "content": "Anthropic inadvertently issued takedown notices to thousands of GitHub repositories in an attempt to remove leaked source code, according to company executives. The move, which was described as accidental, led to the retraction of the majority of these notices. The incident highlights the challenges companies face in controlling the dissemination of proprietary code on open platforms. Developers using GitHub should remain vigilant about repository content to avoid similar issues. This event underscores the importance of robust internal controls and communication in managing intellectual property leaks.",
+            "date": "Apr 06 2026",
+            "headline": "Xoople Secures $130M—Plans Earth Mapping for AI",
+            "title": "Xoople Raises $130 Million to Advance AI Earth Mapping with L3Harris",
+            "content": "Xoople, a Spanish startup, has successfully raised $130 million in a Series B funding round to enhance its AI-driven Earth mapping capabilities. The company has also announced a strategic partnership with L3Harris to develop advanced sensors for its spacecraft. These sensors aim to provide high-resolution data crucial for AI applications in environmental monitoring, urban planning, and disaster response. The funding and partnership underscore a growing trend of integrating AI with geospatial data to address complex global challenges. Stakeholders in AI and geospatial sectors should monitor Xoople&#x27;s developments as they could significantly impact data availability and precision for AI models.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/",
+            "sourceUrl": "https://techcrunch.com/2026/04/06/spains-xoople-raises-130-million-series-b-to-map-the-earth-for-ai/",
             "relatedResources": []
         },
         {
-            "date": "Apr 01 2026",
-            "headline": "Falcon Perception: A New Era in AI Vision Models",
-            "title": "Falcon Perception Introduces Advanced AI Vision Capabilities",
-            "content": "Hugging Face has unveiled Falcon Perception, a cutting-edge AI vision model designed to enhance image recognition and analysis. This new model promises improved accuracy and efficiency in processing visual data, potentially transforming applications in fields such as autonomous vehicles and surveillance. Falcon Perception leverages advanced neural network architectures to achieve superior performance metrics compared to existing models. Organizations utilizing AI for visual tasks should consider integrating Falcon Perception to benefit from its enhanced capabilities. This development marks a significant step forward in AI-driven visual processing technology.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-perception",
+            "date": "Apr 06 2026",
+            "headline": "OpenAI Proposes Bold Industrial Policy for AI Era",
+            "title": "OpenAI Advocates People-First Industrial Policy for AI Advancement",
+            "content": "OpenAI has unveiled a comprehensive industrial policy framework aimed at fostering equitable growth and resilient institutions in the AI era. The proposal emphasizes expanding opportunities and sharing prosperity as advanced intelligence technologies evolve. This initiative reflects a broader industry trend towards ensuring AI development aligns with societal needs and ethical standards. As AI continues to transform industries, stakeholders are encouraged to consider these policy ideas to mitigate risks and enhance benefits. The policy&#x27;s focus on inclusivity and sustainability highlights the necessity of balancing technological progress with human-centric values.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 05 2026",
+            "headline": "Google Maps&#x27; Gemini Plans Days—Surprisingly Effective",
+            "title": "Gemini in Google Maps Enhances Day Planning with AI",
+            "content": "Gemini, Google&#x27;s AI integration, has expanded its presence to Google Maps, offering users a novel way to plan their daily activities. Previously integrated into services like Gmail, Gemini now provides personalized itineraries and real-time adjustments based on user preferences and traffic conditions. This enhancement demonstrates the increasing role of AI in everyday applications, aiming to streamline user experiences and optimize time management. Users should explore this feature to leverage AI&#x27;s potential in enhancing daily productivity. As AI becomes more embedded in consumer technologies, its ability to adapt and personalize services is set to redefine user interactions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/907015/gemini-google-maps-hands-on",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Nvidia Unveils AI Agent Platform—17 Partners Onboard",
+            "title": "Nvidia Launches Open-Source AI Agent Toolkit with Major Industry Support",
+            "content": "At GTC 2026, Nvidia CEO Jensen Huang introduced the Agent Toolkit, an open-source platform designed for building autonomous AI agents. This initiative has garnered support from 17 major companies, including Adobe, Salesforce, and SAP, signaling a significant shift towards collaborative AI development. The platform aims to simplify the creation of AI agents capable of automating complex tasks across various industries. Professionals in AI development should consider exploring the toolkit&#x27;s capabilities to enhance their projects. Nvidia&#x27;s move highlights the growing trend of open-source collaboration in AI, fostering innovation and accessibility.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/nvidia-launches-enterprise-ai-agent-platform-with-adobe-salesforce-sap-among",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Meta Halts Mercor Partnership After Data Breach",
+            "title": "Meta Suspends Collaboration with Mercor Following Data Breach Investigation",
+            "content": "Meta has paused its partnership with Mercor, a prominent data vendor, following a security breach that potentially exposed sensitive AI industry secrets. The breach has prompted major AI labs to investigate the incident&#x27;s impact on their data training processes. This incident underscores the critical importance of robust cybersecurity measures in protecting proprietary AI data. Organizations relying on third-party data vendors should reassess their security protocols to prevent similar breaches. The event highlights the vulnerabilities in the AI supply chain and the need for stringent data protection standards.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 03 2026",
+            "headline": "Arcee&#x27;s Trinity-Large-Thinking: Open Source AI for Enterprises",
+            "title": "Arcee Releases Trinity-Large-Thinking, a Customizable Open Source AI Model",
+            "content": "Arcee has launched Trinity-Large-Thinking, a powerful open-source AI model available for enterprise customization. This U.S.-made model offers a rare alternative to proprietary systems, allowing businesses to tailor AI capabilities to their specific needs. The release marks a significant moment in the open-source AI landscape, as Chinese companies pivot back to proprietary models. Enterprises seeking flexible AI solutions should consider integrating Trinity-Large-Thinking into their operations. Arcee&#x27;s contribution reinforces the importance of open-source models in fostering innovation and competition in the AI industry.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/arcees-new-open-source-trinity-large-thinking-is-the-rare-powerful-u-s-made",
             "relatedResources": []
         },
         {
