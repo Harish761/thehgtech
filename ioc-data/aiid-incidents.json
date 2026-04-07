@@ -9,6 +9,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1446",
+      "incident_id": 1446,
+      "title": "KBS AI Translation Subtitles Reportedly Broadcast Profanity During Artemis II Launch Livestream",
+      "date": "2026-04-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1416",
       "incident_id": 1416,
       "title": "Purported Facial Recognition Error Reportedly Led to Arrest and Monthslong Jailing of Tennessee Woma",
@@ -1106,9 +1114,9 @@
     }
   ],
   "stats": {
-    "total": 138,
-    "last7Days": 10,
-    "last30Days": 53
+    "total": 139,
+    "last7Days": 11,
+    "last30Days": 54
   },
-  "lastUpdated": "2026-04-07T02:20:51.567823+05:30"
+  "lastUpdated": "2026-04-07T08:55:55.594168+05:30"
 }
