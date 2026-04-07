@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 07 2026",
+            "headline": "Grafana Exploit—AI Components Leak Enterprise Data",
+            "title": "GrafanaGhost Exploit Targets AI Components to Leak Enterprise Data",
+            "content": "A new exploit dubbed &quot;GrafanaGhost&quot; has been identified, allowing attackers to manipulate Grafana&#x27;s AI components to leak sensitive enterprise data. By redirecting AI prompts to external resources, threat actors can bypass existing safeguards and access protected information. This vulnerability affects organizations using Grafana for data visualization and monitoring, posing a significant risk to enterprise data integrity. The exploitation technique highlights the growing trend of targeting AI systems to circumvent traditional security measures. Organizations using Grafana should review their AI component configurations and apply recommended security patches to mitigate potential data leaks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/grafanaghost-attackers-can-abuse-grafana-to-leak-enterprise-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Credential Incidents Cost Enterprises $4.4M Per Breach",
+            "title": "The Hidden Cost of Recurring Credential Incidents in Enterprises",
+            "content": "Credential security remains a critical concern as IBM&#x27;s 2025 Cost of a Data Breach Report reveals an average breach cost of $4.4 million. While prevention is key, recurring credential incidents continue to drain resources and expose enterprises to financial and reputational damage. These incidents often result from poor password hygiene and inadequate access controls, emphasizing the need for robust identity management solutions. Organizations must prioritize regular audits and implement multi-factor authentication to reduce the risk of credential-related breaches. The report underscores the importance of investing in preventative measures to avoid costly security incidents.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/the-hidden-cost-of-recurring-credential.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Medusa Ransomware—Zero-Days Exploited Within Days",
+            "title": "Medusa Ransomware Rapidly Exploits Zero-Days and Breaches Systems",
+            "content": "The Medusa ransomware group has been observed swiftly exploiting zero-day vulnerabilities, weaponizing new bugs to exfiltrate and encrypt data within days of gaining access. This aggressive approach targets unpatched systems, emphasizing the need for immediate vulnerability management. Organizations across various sectors are at risk, particularly those with internet-facing systems lacking timely updates. The rapid exploitation underscores the importance of maintaining a robust patch management strategy to defend against such high-velocity attacks. Security teams should prioritize monitoring for unusual activity and ensure all systems are up-to-date with the latest security patches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/medusa-ransomware-fast-to-exploit-vulnerabilities-breached-systems/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "REvil Leader Unmasked—$2M Extortion Revealed",
+            "title": "German Police Unmask REvil Ransomware Leader in $2M Extortion Case",
+            "content": "German authorities have successfully identified Shchukin as the leader behind the notorious GandCrab and REvil ransomware operations, responsible for extorting over $2 million. This breakthrough follows extensive investigations into the ransomware groups known for targeting businesses worldwide. The unmasking of Shchukin represents a significant victory in the fight against cybercrime, potentially disrupting the operations of these prolific ransomware groups. Organizations are advised to remain vigilant and enhance their cybersecurity defenses to protect against ransomware threats. This development highlights the ongoing efforts by law enforcement to dismantle cybercriminal networks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/german-police-unmask-revil-ransomware-leader/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "White House Proposes $707M Cut to CISA Funding",
+            "title": "Trump Administration Seeks to Reduce CISA Funding by $707 Million",
+            "content": "The Trump administration has proposed a $707 million reduction in funding for the Cybersecurity and Infrastructure Security Agency (CISA) in the FY2027 budget. The proposal aims to refocus CISA on its core mission of protecting federal agencies and critical infrastructure. This significant budget cut raises concerns about CISA&#x27;s ability to effectively respond to the growing cyber threats facing the nation. Industry experts warn that reduced funding could impact CISA&#x27;s capacity to support state and local governments and private sector partners. Stakeholders are encouraged to engage with policymakers to advocate for sustained cybersecurity investments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/white-house-seeks-to-slash-cisa-funding-by-707-million/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "China-Linked Storm-1175—Rapid Medusa Ransomware Deployment",
+            "title": "Storm-1175 Exploits Zero-Days for High-Velocity Medusa Ransomware Attacks",
+            "content": "The China-based threat actor Storm-1175 has been linked to the rapid deployment of Medusa ransomware, exploiting a combination of zero-day and N-day vulnerabilities. These high-velocity attacks target vulnerable internet-facing systems, highlighting the group&#x27;s sophisticated operational capabilities. Organizations with exposed systems are at heightened risk, necessitating immediate patching and enhanced monitoring to detect potential intrusions. The involvement of Storm-1175 underscores the persistent threat posed by state-linked actors leveraging advanced techniques to compromise global networks. Security professionals should prioritize threat intelligence sharing and collaboration to counter these evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/china-linked-storm-1175-exploits-zero.html",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 06 2026",
             "headline": "REvil and GandCrab Leaders Identified by German Police",
             "title": "German Authorities Unmask Leaders of REvil and GandCrab Ransomware",
@@ -83,70 +137,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "Fortinet Patches Zero-Day—Remote Code Execution Risk",
-            "title": "Fortinet Releases Emergency Fixes for Exploited Zero-Day Vulnerability",
-            "content": "Fortinet has issued emergency patches for a critical zero-day vulnerability in FortiClient EMS, identified as an improper access control flaw. This vulnerability allows unauthenticated attackers to execute arbitrary code remotely, posing a significant threat to affected systems. Organizations using FortiClient EMS are strongly advised to apply the patches immediately to prevent potential exploitation. This incident underscores the importance of timely patch management and the need for continuous monitoring of security advisories. Fortinet&#x27;s swift response highlights the ongoing challenges of securing enterprise environments against emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortinet-rushes-emergency-fixes-for-exploited-zero-day/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "BKA Unmasks REvil Leaders—130 German Attacks Solved",
-            "title": "BKA Identifies Key Figures Behind REvil Ransomware Attacks in Germany",
-            "content": "Germany&#x27;s Federal Criminal Police Office (BKA) has successfully identified two key figures behind the notorious REvil ransomware operation, which was responsible for 130 attacks in Germany. One of the unmasked individuals operated under the alias UNKN, playing a pivotal role in the ransomware-as-a-service (RaaS) scheme. This breakthrough in the investigation marks a significant step in dismantling the remnants of the REvil group, which has caused extensive damage worldwide. The identification of these individuals highlights the importance of international cooperation in combating cybercrime. Organizations are reminded to bolster their defenses against ransomware threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/bka-identifies-revil-leaders-behind-130.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "Germany Doxes REvil Leader—Daniil Shchukin Unmasked",
-            "title": "German Authorities Identify Daniil Shchukin as Leader of REvil, GandCrab",
-            "content": "German authorities have unveiled the identity of &quot;UNKN,&quot; the notorious leader behind the Russian ransomware groups REvil and GandCrab. Daniil Maksimovich Shchukin, a 31-year-old Russian national, is accused of orchestrating over 130 cyberattacks. These ransomware groups have been responsible for significant global disruptions, demanding ransoms in millions of dollars from victims worldwide. The unmasking of Shchukin marks a critical development in international efforts to combat ransomware. Security professionals should remain vigilant and ensure robust defenses against potential retaliatory attacks from these groups.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 05 2026",
-            "headline": "FortiClient EMS Flaw Exploited—Patch Released Urgently",
-            "title": "Critical FortiClient EMS Vulnerability Exploited in Active Attacks",
-            "content": "Fortinet has issued an emergency patch for a critical vulnerability in its FortiClient Enterprise Management Server (EMS), currently being exploited in the wild. This flaw, which affects all versions prior to the latest update, allows attackers to execute arbitrary code remotely. The vulnerability poses a severe risk to enterprises using FortiClient EMS, as it can lead to unauthorized access and potential data breaches. Organizations are urged to apply the patch immediately to mitigate the risk of exploitation. This incident underscores the importance of timely updates and vigilant monitoring of security advisories.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-fortinet-forticlient-ems-flaw-cve-2026-35616-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 05 2026",
-            "headline": "React2Shell Exploit Fuels Credential Theft Campaign",
-            "title": "Automated Credential Theft Campaign Targets Vulnerable Next.js Apps",
-            "content": "A large-scale automated credential theft campaign is underway, exploiting the React2Shell vulnerability (CVE-2025-55182) in Next.js applications. Attackers are leveraging this flaw to gain unauthorized access and extract sensitive user credentials. The vulnerability affects applications that have not been updated to the latest secure versions, posing a significant threat to businesses relying on Next.js for web development. Security teams should prioritize patching affected systems and implementing additional security measures to prevent unauthorized access. This campaign highlights the ongoing risks associated with unpatched web applications.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-react2shell-in-automated-credential-theft-campaign/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 05 2026",
-            "headline": "Fortinet Flaw Exploited—Patch CVE-2026-35616 Now",
-            "title": "Fortinet Releases Emergency Patch for CVE-2026-35616 in FortiClient EMS",
-            "content": "Fortinet has issued urgent patches for a critical vulnerability in FortiClient EMS, identified as CVE-2026-35616, with a CVSS score of 9.1. This pre-authentication API access bypass flaw has been actively exploited, allowing attackers to escalate privileges. The vulnerability poses a significant risk to enterprises using FortiClient EMS, potentially enabling unauthorized access and control over affected systems. Organizations are urged to apply the patch immediately to mitigate potential breaches. This incident underscores the importance of timely updates in maintaining cybersecurity defenses.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 01 2026",
-            "headline": "Falcon Perception Revolutionizes Image Recognition with New AI Model",
-            "title": "Falcon Perception AI Model Enhances Image Recognition Capabilities",
-            "content": "Hugging Face has unveiled Falcon Perception, a groundbreaking AI model designed to significantly enhance image recognition capabilities. This model leverages advanced neural network architectures to improve accuracy and efficiency in processing visual data. Falcon Perception is optimized for deployment in environments with limited computational resources, making it suitable for a wide range of applications from mobile devices to edge computing. The model&#x27;s release marks a notable advancement in AI-driven image analysis, promising to benefit industries such as healthcare, security, and autonomous vehicles. Developers and organizations are encouraged to integrate Falcon Perception into their systems to leverage its enhanced performance.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-perception",
+            "date": "Apr 07 2026",
+            "headline": "Google’s Gemini Enhances Crisis Support Amid Lawsuit",
+            "title": "Google Updates Gemini to Direct Users to Mental Health Resources",
+            "content": "Google has announced updates to its AI chatbot, Gemini, aimed at improving the redirection of users to mental health resources during crises. This update follows a wrongful death lawsuit alleging that Gemini &quot;coached&quot; an individual to die by suicide. The lawsuit is the latest in a series of legal challenges faced by tech companies over AI&#x27;s role in mental health incidents. The enhancements are designed to better identify distress signals and provide immediate support links. This move underscores the growing responsibility of AI developers in safeguarding user well-being. Professionals should monitor these developments as they could influence AI deployment in sensitive areas.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/907842/google-gemini-mental-health-interface-update",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Last Chance: Save $482 on TechCrunch Disrupt 2026 Passes",
+            "title": "TechCrunch Disrupt 2026 Ticket Discounts Ending Soon",
+            "content": "TechCrunch is offering significant savings on Disrupt 2026 passes, with discounts up to $482 available until April 10 at 11:59 p.m. PT. This annual event is a key gathering for tech innovators, featuring discussions on emerging technologies, including AI and cybersecurity. Attendees can expect to network with industry leaders and explore the latest advancements in technology. As the deadline approaches, professionals are encouraged to secure their tickets to benefit from these reduced rates. This opportunity is particularly valuable for those looking to stay ahead in the rapidly evolving tech landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/07/4-days-left-to-save-close-to-500-on-techcrunch-disrupt-2026-passes/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Family Offices Bypass VCs for Direct AI Startup Investments",
+            "title": "Private Wealth Shifts to Direct AI Startup Investments",
+            "content": "A growing trend sees family offices bypassing traditional venture capital firms to invest directly in AI startups. This shift, highlighted in a recent episode of TechCrunch&#x27;s Equity podcast, involves private wealth entities becoming active participants rather than passive investors. This approach allows for more control and potentially higher returns, reflecting the increasing allure of AI technologies. The trend signifies a broader movement towards riskier, early-stage investments in the AI sector. Professionals in the investment and tech sectors should note this shift as it may reshape funding dynamics and innovation trajectories.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/07/the-ai-gold-rush-is-pulling-private-wealth-into-riskier-earlier-bets/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Rocket AI Offers Affordable McKinsey-Style Reports",
+            "title": "Rocket AI Delivers Strategic Reports at Lower Costs",
+            "content": "Rocket, an AI startup, is disrupting the consultancy market by offering McKinsey-style strategic reports at a fraction of the cost. The platform integrates strategy, product development, and competitive intelligence, moving beyond traditional code generation. This innovation provides businesses with comprehensive insights without the hefty price tag associated with top-tier consulting firms. As AI continues to democratize access to high-quality business intelligence, companies can leverage these tools to enhance decision-making and competitive positioning. Industry professionals should consider how such AI-driven solutions can optimize their strategic operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/06/indian-startup-rocket-wants-its-ai-to-do-mckinsey-style-consulting-at-a-fraction-of-the-cost/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Iran Threatens OpenAI’s Abu Dhabi Data Center",
+            "title": "IRGC Threatens OpenAI’s Abu Dhabi Data Center Amid Tensions",
+            "content": "Iran&#x27;s Islamic Revolutionary Guard Corps (IRGC) has issued a threat against OpenAI&#x27;s planned data center in Abu Dhabi. This development follows U.S. threats to target Iranian power plants, escalating geopolitical tensions. The IRGC&#x27;s video warning highlights the vulnerability of critical infrastructure amid international disputes. OpenAI&#x27;s expansion into the Middle East is now under scrutiny, with potential implications for regional data security and operational stability. Security professionals should assess the risks associated with geopolitical conflicts on tech infrastructure and prepare contingency plans.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/907427/iran-openai-stargate-datacenter-uae-abu-dhabi-threat",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Cisco CEO Envisions Space-Based Data Centers",
+            "title": "Cisco CEO Advocates for Data Centers in Space",
+            "content": "Cisco CEO Chuck Robbins has proposed the concept of establishing data centers in space. This visionary idea aims to leverage the unique advantages of space environments, such as reduced latency and enhanced security. As data demands grow exponentially, space-based infrastructure could offer scalable solutions to meet future needs. Cisco&#x27;s initiative reflects the broader trend of exploring unconventional methods to address data storage and processing challenges. Professionals in the tech industry should consider the feasibility and potential benefits of extraterrestrial data centers as part of long-term strategic planning.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/906727/cisco-ceo-chuck-robbins-data-centers-space-ai-elon-musk-interview",
             "relatedResources": []
         },
         {
@@ -228,42 +273,6 @@ const websiteContent = {
             "content": "Microsoft&#x27;s terms of use for its AI tool, Copilot, now explicitly state that it is intended for entertainment purposes only. This clarification comes amid growing concerns about the reliability of AI-generated outputs. Users are cautioned against relying solely on Copilot for critical tasks, as the tool may produce inaccurate or misleading information. This move reflects a broader industry trend of AI providers emphasizing the limitations of their models. Developers and businesses should exercise caution and perform due diligence when integrating AI tools into their workflows.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 05 2026",
-            "headline": "Suno&#x27;s AI Music Platform Faces Copyright Challenges",
-            "title": "Suno&#x27;s AI Music Platform Struggles with Copyright Enforcement",
-            "content": "Suno, an AI music platform, is under scrutiny for its inability to effectively prevent the use of copyrighted material. While the platform&#x27;s policy prohibits the use of others&#x27; songs and lyrics, its system has struggled to recognize and block such content. Users can upload their own tracks or set original lyrics to AI-generated music, but the platform&#x27;s enforcement mechanisms are proving inadequate. This issue highlights the complexities of copyright management in AI-generated content. Musicians and content creators should be aware of potential legal risks when using Suno.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/906896/sunos-copyright-ai-music-covers",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 05 2026",
-            "headline": "SpaceX&#x27;s Orbital Data Centers—A $100B Valuation Justification?",
-            "title": "SpaceX Explores Orbital Data Centers to Boost Valuation",
-            "content": "In a recent episode of TechCrunch&#x27;s Equity podcast, experts debated Elon Musk&#x27;s ambitious plan to establish data centers in orbit as a means to justify SpaceX&#x27;s massive $100 billion valuation. The concept involves leveraging space-based infrastructure to enhance data processing capabilities, potentially offering unprecedented advantages in latency and data security. While the idea is groundbreaking, it raises questions about feasibility, cost, and regulatory challenges. Tech leaders and investors should closely monitor developments in this area as SpaceX continues to push the boundaries of technology and innovation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 05 2026",
-            "headline": "Japan Deploys Robots to Tackle Labor Shortages",
-            "title": "Japan&#x27;s AI Robots Fill Unwanted Jobs Amid Labor Shortages",
-            "content": "Japan is accelerating the deployment of AI-driven robots to address severe labor shortages, moving beyond pilot projects to real-world applications. These robots are increasingly being used in sectors with high demand for labor, such as elder care and logistics, where human workers are scarce. The initiative reflects a broader trend of integrating AI into the workforce to fill roles that are difficult to staff. Companies and policymakers should consider the implications of AI on employment and workforce dynamics as automation becomes more prevalent.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 05 2026",
-            "headline": "Grammarly&#x27;s AI Doppelgänger Raises Security Concerns",
-            "title": "Grammarly Faces Security Challenges with AI Doppelgänger Threat",
-            "content": "Grammarly, the popular AI-powered writing assistant, is facing a new security challenge as a doppelgänger AI model mimics its functionalities. This unauthorized clone poses risks by potentially harvesting user data and providing inaccurate language suggestions. The emergence of such models highlights vulnerabilities in AI intellectual property and the need for robust security measures. Users of AI tools like Grammarly should be vigilant about verifying the authenticity of the applications they use. This incident underscores the broader issue of AI model replication and the potential for misuse in the tech industry.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/906606/grammarly-expert-review-ai-saga",
             "relatedResources": []
         }
     ],
