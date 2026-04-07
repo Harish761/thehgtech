@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 06 2026",
+            "headline": "REvil and GandCrab Leaders Identified by German Police",
+            "title": "German Authorities Unmask Leaders of REvil and GandCrab Ransomware",
+            "content": "The German Federal Police (BKA) have identified two Russian nationals as the masterminds behind the notorious GandCrab and REvil ransomware operations active between 2019 and 2021. These ransomware groups were responsible for extensive cybercrime activities, extorting millions from victims globally by encrypting data and demanding ransoms. The identification marks a significant breakthrough in international efforts to dismantle cybercriminal networks. The BKA&#x27;s findings could lead to further arrests and disruptions of ransomware operations. Security professionals should remain vigilant and ensure robust defenses against ransomware threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/german-authorities-identify-revil-and-gangcrab-ransomware-bosses/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Windows Zero-Day Exploit Leaked by Disgruntled Researcher",
+            "title": "BlueHammer Windows Zero-Day Privilege Escalation Exploit Leaked",
+            "content": "A zero-day exploit, dubbed &quot;BlueHammer,&quot; has been leaked by a disgruntled researcher, targeting an unpatched Windows privilege escalation vulnerability. The flaw allows attackers to gain SYSTEM or elevated administrator permissions on affected systems. This exploit poses a significant risk to Windows users, particularly those who have not applied recent security updates. The leak underscores the importance of maintaining strong relationships between researchers and vendors to prevent such incidents. Organizations should monitor for patches from Microsoft and apply them promptly to mitigate potential attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/disgruntled-researcher-leaks-bluehammer-windows-zero-day-exploit/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Medusa Ransomware Group Linked to Zero-Day Exploits",
+            "title": "Microsoft Connects Medusa Ransomware Affiliate to Zero-Day Attacks",
+            "content": "Microsoft has attributed recent high-velocity attacks using n-day and zero-day exploits to Storm-1175, a China-based group affiliated with Medusa ransomware. This financially motivated cybercriminal group has been deploying sophisticated exploits to compromise systems and deploy ransomware payloads. The use of zero-day vulnerabilities highlights the group&#x27;s advanced capabilities and the ongoing threat they pose to organizations worldwide. Security teams should prioritize patch management and threat intelligence to defend against such attacks. This development emphasizes the need for continuous monitoring and proactive defense strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-links-medusa-ransomware-affiliate-to-zero-day-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "CISA Mandates Fortinet EMS Patch by Friday",
+            "title": "CISA Orders Federal Agencies to Patch Fortinet EMS Vulnerability",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has mandated that federal agencies patch a critical vulnerability in Fortinet&#x27;s Enterprise Management Server (EMS) by Friday. This vulnerability is actively exploited and poses a significant risk to federal networks if left unpatched. Fortinet EMS is widely used for managing security across enterprise environments, making this directive crucial for maintaining national cybersecurity. Agencies are urged to apply the patch immediately to prevent potential breaches. This order reflects CISA&#x27;s proactive stance in safeguarding federal infrastructure from emerging threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-fortinet-flaw-exploited-in-attacks-by-friday/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "SOCs Tackle Multi-OS Cyberattacks in 3 Steps",
+            "title": "Addressing Multi-OS Cyberattacks: SOCs Implement Three-Step Strategy",
+            "content": "Security Operations Centers (SOCs) are increasingly challenged by cyberattacks that traverse multiple operating systems, including Windows, macOS, Linux, and mobile platforms. Attackers exploit the diverse attack surface, moving laterally across devices and systems. To counter this, SOCs are adopting a three-step strategy: enhancing cross-platform visibility, integrating threat intelligence, and automating response workflows. This approach aims to close critical security gaps and improve incident response times. Organizations should evaluate their SOC capabilities to ensure they are equipped to handle multi-OS threats effectively.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/multi-os-cyberattacks-how-socs-close.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Weekly Recap: Axios Hack, Chrome 0-Day, Fortinet Exploits",
+            "title": "Weekly Cybersecurity Recap: Key Exploits and Vulnerabilities Highlighted",
+            "content": "This week&#x27;s cybersecurity landscape saw significant developments, including the Axios hack, a Chrome zero-day vulnerability, and active Fortinet exploits. These incidents highlight the persistent threats facing critical software and infrastructure. The Chrome zero-day, in particular, poses a risk to billions of users, emphasizing the urgency for immediate patching. The Fortinet exploits further underscore the importance of timely vulnerability management. Organizations must remain vigilant, ensuring their systems are updated and secure against these evolving threats. This week&#x27;s events serve as a reminder of the dynamic nature of cybersecurity challenges.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/weekly-recap-axios-hack-chrome-0-day.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
             "headline": "LiteLLM Exploits Developer Machines—Credential Vaults for Attackers",
             "title": "LiteLLM Turns Developer Workstations into Credential Vaults for Threat Actors",
             "content": "The TeamPCP threat actor has leveraged LiteLLM to transform developer workstations into credential vaults, posing a significant security risk. This attack exploits the frequent creation, testing, and caching of credentials on developer machines, which are now targeted by local AI agents. The breach underscores the vulnerability of developer environments in enterprise infrastructure, as credentials are reused across various services and tools. Organizations should prioritize securing developer workstations and consider implementing stricter access controls and credential management practices. This incident highlights the critical need for robust security measures in developer environments to prevent unauthorized access and data breaches.",
@@ -49,15 +103,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 03 2026",
-            "headline": "Hims &amp; Hers Data Breach—Zendesk Ticket Compromise",
-            "title": "Hims &amp; Hers Warns of Data Breach Following Zendesk Support Ticket Theft",
-            "content": "Telehealth company Hims &amp; Hers has disclosed a data breach involving the theft of support tickets from a third-party platform, Zendesk. The breach potentially exposed sensitive customer information, raising concerns about data privacy and security. Affected customers are advised to monitor their accounts for suspicious activity and change passwords as a precaution. This incident highlights the vulnerabilities associated with third-party service providers and the need for robust security measures. Companies are encouraged to conduct thorough security assessments of their vendors to prevent similar breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hims-and-hers-warns-of-data-breach-after-zendesk-support-ticket-breach/",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 06 2026",
             "headline": "Germany Doxes REvil Leader—Daniil Shchukin Unmasked",
             "title": "German Authorities Identify Daniil Shchukin as Leader of REvil, GandCrab",
@@ -92,18 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 04 2026",
-            "headline": "EU Commission Breach—300GB Data Stolen in Trivy Attack",
-            "title": "European Commission Confirms Data Breach Linked to Trivy Supply Chain Attack",
-            "content": "The European Commission has confirmed a significant data breach involving the theft of over 300GB of data from its Amazon Web Services (AWS) environment, attributed to a supply chain attack exploiting the Trivy vulnerability. The stolen data includes sensitive personal information, raising concerns about potential identity theft and privacy violations. This breach underscores the growing threat of supply chain attacks, where vulnerabilities in third-party software can lead to widespread data exposure. Security professionals are advised to review and update their supply chain risk management practices and ensure robust monitoring of third-party integrations. The incident highlights the critical need for comprehensive security measures in cloud environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/european-commission-confirms-data-breach-linked-to-trivy-supply-chain-attack/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 01 2026",
+            "headline": "Falcon Perception Revolutionizes Image Recognition with New AI Model",
+            "title": "Falcon Perception AI Model Enhances Image Recognition Capabilities",
+            "content": "Hugging Face has unveiled Falcon Perception, a groundbreaking AI model designed to significantly enhance image recognition capabilities. This model leverages advanced neural network architectures to improve accuracy and efficiency in processing visual data. Falcon Perception is optimized for deployment in environments with limited computational resources, making it suitable for a wide range of applications from mobile devices to edge computing. The model&#x27;s release marks a notable advancement in AI-driven image analysis, promising to benefit industries such as healthcare, security, and autonomous vehicles. Developers and organizations are encouraged to integrate Falcon Perception into their systems to leverage its enhanced performance.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-perception",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "OpenAI Alums Launch $100M Fund—Zero Shot Targets AI Startups",
+            "title": "Zero Shot Fund by OpenAI Alumni Aims for $100 Million Investment",
+            "content": "Zero Shot, a venture capital fund established by former OpenAI employees, is in the process of raising $100 million to support AI startups. The fund has already begun investing, focusing on companies that are pioneering advancements in artificial intelligence. This initiative underscores the growing trend of AI experts transitioning into venture capital to foster innovation within the industry. With deep ties to OpenAI, Zero Shot is poised to leverage its founders&#x27; expertise and network to identify and nurture promising AI technologies. Entrepreneurs in the AI space should consider engaging with Zero Shot for potential funding opportunities.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "OpenAI Insiders Question Leadership—Sam Altman Faces Trust Issues",
+            "title": "OpenAI Leadership Under Scrutiny as Insiders Question CEO Sam Altman",
+            "content": "Internal tensions at OpenAI have surfaced as insiders express concerns over CEO Sam Altman&#x27;s leadership. The organization is actively exploring ways AI can positively impact humanity, aiming to counteract negative perceptions. This internal discord highlights the challenges faced by tech companies in balancing innovation with ethical considerations. As OpenAI continues to play a pivotal role in AI development, maintaining trust and alignment among its leadership and staff is crucial. Stakeholders and industry observers should monitor these developments closely, as they may influence OpenAI&#x27;s strategic direction and public image.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/04/the-problem-is-sam-altman-openai-insiders-dont-trust-ceo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Google Launches Offline AI Dictation App—Gemma Models Power Innovation",
+            "title": "Google&#x27;s Offline AI Dictation App Utilizes Gemma AI Models",
+            "content": "Google has discreetly launched an offline-first AI dictation app, leveraging its proprietary Gemma AI models to enhance voice-to-text capabilities. This app is designed to operate without an internet connection, providing users with privacy and reliability advantages over cloud-dependent alternatives like Wispr Flow. By enabling offline functionality, Google addresses growing concerns about data privacy and connectivity issues. The app&#x27;s release represents a strategic move to capture a segment of the market seeking robust, offline AI solutions. Users and developers interested in integrating advanced dictation technology should explore the potential of Google&#x27;s new offering.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/06/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Iran Threatens U.S.-Linked AI Data Centers Amid Escalating Tensions",
+            "title": "Iran Targets U.S.-Linked AI Data Centers in Missile Strike Threat",
+            "content": "Amid escalating tensions with the United States, Iran has announced its intention to target U.S.-linked AI data centers with missile strikes. This development raises significant concerns about the security of critical infrastructure supporting AI operations. As geopolitical conflicts increasingly intersect with technological assets, organizations must reassess their risk management strategies to safeguard data centers and associated technologies. The threat underscores the importance of robust cybersecurity measures and contingency planning for entities operating in volatile regions. Security professionals should prioritize enhancing defenses and monitoring geopolitical developments closely.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/06/iran-threatens-stargate-ai-data-centers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "OpenAI Proposes AI Economy Overhaul—Robot Taxes and Wealth Funds",
+            "title": "OpenAI&#x27;s Vision for AI Economy Includes Robot Taxes and Public Wealth Funds",
+            "content": "OpenAI has proposed a transformative approach to the AI-driven economy, advocating for the implementation of robot taxes and the creation of public wealth funds. These measures aim to address potential job displacement and economic inequality resulting from AI advancements. OpenAI suggests that these initiatives could blend redistribution with capitalism, providing expanded safety nets while fostering innovation. As policymakers debate the economic implications of AI, OpenAI&#x27;s proposals offer a framework for balancing technological progress with social responsibility. Industry leaders and policymakers should consider these ideas as part of broader discussions on the future of work and economic equity.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 06 2026",
             "headline": "Xoople Secures $130M—Plans Earth Mapping for AI",
@@ -129,33 +219,6 @@ const websiteContent = {
             "content": "Gemini, Google&#x27;s AI integration, has expanded its presence to Google Maps, offering users a novel way to plan their daily activities. Previously integrated into services like Gmail, Gemini now provides personalized itineraries and real-time adjustments based on user preferences and traffic conditions. This enhancement demonstrates the increasing role of AI in everyday applications, aiming to streamline user experiences and optimize time management. Users should explore this feature to leverage AI&#x27;s potential in enhancing daily productivity. As AI becomes more embedded in consumer technologies, its ability to adapt and personalize services is set to redefine user interactions.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/907015/gemini-google-maps-hands-on",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 03 2026",
-            "headline": "Nvidia Unveils AI Agent Platform—17 Partners Onboard",
-            "title": "Nvidia Launches Open-Source AI Agent Toolkit with Major Industry Support",
-            "content": "At GTC 2026, Nvidia CEO Jensen Huang introduced the Agent Toolkit, an open-source platform designed for building autonomous AI agents. This initiative has garnered support from 17 major companies, including Adobe, Salesforce, and SAP, signaling a significant shift towards collaborative AI development. The platform aims to simplify the creation of AI agents capable of automating complex tasks across various industries. Professionals in AI development should consider exploring the toolkit&#x27;s capabilities to enhance their projects. Nvidia&#x27;s move highlights the growing trend of open-source collaboration in AI, fostering innovation and accessibility.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/nvidia-launches-enterprise-ai-agent-platform-with-adobe-salesforce-sap-among",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 03 2026",
-            "headline": "Meta Halts Mercor Partnership After Data Breach",
-            "title": "Meta Suspends Collaboration with Mercor Following Data Breach Investigation",
-            "content": "Meta has paused its partnership with Mercor, a prominent data vendor, following a security breach that potentially exposed sensitive AI industry secrets. The breach has prompted major AI labs to investigate the incident&#x27;s impact on their data training processes. This incident underscores the critical importance of robust cybersecurity measures in protecting proprietary AI data. Organizations relying on third-party data vendors should reassess their security protocols to prevent similar breaches. The event highlights the vulnerabilities in the AI supply chain and the need for stringent data protection standards.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 03 2026",
-            "headline": "Arcee&#x27;s Trinity-Large-Thinking: Open Source AI for Enterprises",
-            "title": "Arcee Releases Trinity-Large-Thinking, a Customizable Open Source AI Model",
-            "content": "Arcee has launched Trinity-Large-Thinking, a powerful open-source AI model available for enterprise customization. This U.S.-made model offers a rare alternative to proprietary systems, allowing businesses to tailor AI capabilities to their specific needs. The release marks a significant moment in the open-source AI landscape, as Chinese companies pivot back to proprietary models. Enterprises seeking flexible AI solutions should consider integrating Trinity-Large-Thinking into their operations. Arcee&#x27;s contribution reinforces the importance of open-source models in fostering innovation and competition in the AI industry.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/arcees-new-open-source-trinity-large-thinking-is-the-rare-powerful-u-s-made",
             "relatedResources": []
         },
         {
@@ -201,42 +264,6 @@ const websiteContent = {
             "content": "Grammarly, the popular AI-powered writing assistant, is facing a new security challenge as a doppelgänger AI model mimics its functionalities. This unauthorized clone poses risks by potentially harvesting user data and providing inaccurate language suggestions. The emergence of such models highlights vulnerabilities in AI intellectual property and the need for robust security measures. Users of AI tools like Grammarly should be vigilant about verifying the authenticity of the applications they use. This incident underscores the broader issue of AI model replication and the potential for misuse in the tech industry.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/column/906606/grammarly-expert-review-ai-saga",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 04 2026",
-            "headline": "AI Fakes Target Folk Musician—Copyright Concerns Arise",
-            "title": "Folk Artist Faces AI-Generated Fakes and Copyright Challenges",
-            "content": "Folk musician Murphy Campbell discovered unauthorized songs on her Spotify profile, suspected to be AI-generated fakes mimicking her style. These tracks, which she did not upload, raise significant copyright and authenticity issues in the music industry. The incident highlights the growing threat of AI tools being used to create convincing counterfeit content, potentially undermining artists&#x27; rights and revenues. Musicians and content creators should be vigilant about monitoring digital platforms for unauthorized use of their work. This case underscores the need for robust digital rights management and AI regulation to protect creative industries.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/907111/murphy-campbell-folk-music-ai-copyright",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 04 2026",
-            "headline": "Claude Code Users Face Price Hike for OpenClaw Access",
-            "title": "Anthropic Increases Fees for Claude Code&#x27;s OpenClaw Integration",
-            "content": "Anthropic has announced that subscribers of its Claude Code service will incur additional charges for using OpenClaw and other third-party tools. This pricing adjustment reflects the growing costs associated with integrating external functionalities into AI platforms. Users of Claude Code, particularly those relying on OpenClaw for enhanced coding capabilities, should evaluate the impact of these changes on their budgets. The move signals a trend towards monetizing AI tool integrations, prompting developers to reassess the cost-effectiveness of their current solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 04 2026",
-            "headline": "Claude Code Leak—Hackers Add Malware Twist",
-            "title": "Hackers Exploit Claude Code Leak with Embedded Malware",
-            "content": "Hackers have escalated the Claude code leak by embedding malware into the leaked source code, posing significant cybersecurity threats. The FBI has flagged this incident as part of a broader hacking campaign that also compromised Cisco&#x27;s source code, highlighting vulnerabilities in supply chain security. The leaked code, now circulating on dark web forums, could enable attackers to develop sophisticated exploits targeting AI systems. Security professionals are urged to monitor for unusual activity and apply patches where available. This breach underscores the critical need for robust supply chain defenses and proactive threat intelligence strategies.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/security-news-this-week-hackers-are-posting-the-claude-code-leak-with-bonus-malware/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 04 2026",
-            "headline": "AI Skepticism Grows—Creators Must Prove Authenticity",
-            "title": "Creators Face Growing Demand to Prove Non-AI Origin of Works",
-            "content": "In an era where generative AI can mimic human creativity with increasing precision, creators are facing heightened scrutiny over the authenticity of their work. The phrase &quot;This looks like AI&quot; is becoming a common challenge, as audiences demand proof that artworks and photographs are human-made. This skepticism is fueled by the rapid advancement of AI technologies capable of producing highly realistic outputs. Creators are encouraged to document their creative processes and consider using digital watermarks to verify authenticity. This trend reflects broader concerns about AI&#x27;s impact on creative industries and intellectual property rights.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/906453/human-made-ai-free-logo-creative-content",
             "relatedResources": []
         }
     ],
@@ -322,6 +349,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-35616",
+            "dateAdded": "Apr 06, 2026",
+            "vendor": "Fortinet FortiClient EMS",
+            "description": "Fortinet FortiClient EMS contains an improper access control vulnerability that may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35616",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-3502",
             "dateAdded": "Apr 02, 2026",
