@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 08 2026",
+            "headline": "Iran-Linked Hackers Target US Infrastructure—PLC Systems Compromised",
+            "title": "Iranian Hackers Disrupt US Critical Infrastructure via PLC and SCADA Attacks",
+            "content": "Federal agencies have issued warnings about Iranian-linked hackers manipulating programmable logic controllers (PLCs) and supervisory control and data acquisition (SCADA) systems across multiple sectors in the United States. These attacks have triggered significant operational disruptions, raising alarms about potential broader targeting of operational technology (OT) environments. The attackers have exploited vulnerabilities in these systems, which are crucial for managing industrial processes. This incident underscores the increasing threat to critical infrastructure from state-sponsored actors. Organizations are urged to review their OT security protocols and ensure robust defenses against such sophisticated intrusions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/iran-linked-hackers-disrupt-us-critical-infrastructure-via-plc-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Critical Flaw in Ninja Forms Plugin—Remote Code Execution Risk",
+            "title": "Hackers Exploit Critical Vulnerability in Ninja Forms WordPress Plugin",
+            "content": "A critical vulnerability in the Ninja Forms File Uploads premium add-on for WordPress has been discovered, allowing unauthenticated users to upload arbitrary files. This flaw can lead to remote code execution, posing a significant risk to websites using this plugin. The vulnerability affects all versions of the plugin prior to the latest patch. Website administrators are advised to update immediately to mitigate potential exploitation. This incident highlights the ongoing risks associated with third-party plugins in widely used content management systems like WordPress.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-flaw-in-ninja-forms-wordpress-plugin/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Americans Lose $21 Billion to Cybercrime—FBI Report Reveals",
+            "title": "FBI Reports Record $21 Billion Loss to Cybercrime in the US",
+            "content": "The Federal Bureau of Investigation (FBI) reports that U.S. victims lost nearly $21 billion to cyber-enabled crimes in the past year. The primary drivers of these losses include investment scams, business email compromise (BEC), tech support fraud, and data breaches. This record-breaking figure underscores the growing sophistication and prevalence of cybercriminal activities targeting individuals and businesses. The FBI urges vigilance and recommends implementing robust cybersecurity measures to protect against these threats. This trend reflects the increasing financial impact of cybercrime on the U.S. economy.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-americans-lost-a-record-21-billion-to-cybercrime-last-year/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Fortinet Releases Hotfix for FortiClient EMS Zero-Day Exploit",
+            "title": "Emergency Hotfix Issued for FortiClient EMS Zero-Day Vulnerability",
+            "content": "Fortinet has released an emergency hotfix for a critical zero-day vulnerability in its FortiClient Endpoint Management Server (EMS), which has been actively exploited since late March. The vulnerability allows attackers to compromise affected deployments, posing a severe risk to organizations using this software. Fortinet advises all users to apply the hotfix immediately while a fully patched version is being developed. This incident highlights the importance of timely vulnerability management and the need for organizations to stay vigilant against emerging threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4155221/fortinet-releases-emergency-hotfix-for-forticlient-ems-zero-day-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Strengthen Attack Resilience—5 Steps for Effective Surface Management",
+            "title": "Practical Steps to Enhance Attack Resilience with Surface Management",
+            "content": "As digital environments grow increasingly complex, managing the attack surface has become critical for cybersecurity resilience. Internet-facing applications, cloud workloads, credentials, endpoints, and third-party integrations all represent potential entry points for attackers. Organizations can strengthen their defenses by implementing five practical steps: inventorying assets, assessing vulnerabilities, prioritizing risks, automating security processes, and continuously monitoring for threats. These measures are essential for reducing exposure and improving an organization&#x27;s ability to withstand cyberattacks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4155177/5-practical-steps-to-strengthen-attack-resilience-with-attack-surface-management.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "5 Steps to Bolster Supply Chain Security—Enhance Cyber Resilience",
+            "title": "Strengthening Supply Chain Security to Improve Cyber Resilience",
+            "content": "Supply chain attacks have emerged as a formidable threat, allowing adversaries to bypass traditional defenses by compromising trusted vendors or components. To combat this, organizations should implement five key steps: vetting third-party vendors, securing software components, monitoring cloud services, safeguarding MSP tools, and establishing incident response plans. These actions are crucial for preventing breaches and ensuring robust cybersecurity postures. As supply chain threats continue to evolve, proactive measures are essential for maintaining organizational resilience.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4155175/5-steps-to-strengthen-supply-chain-security-and-improve-cyber-resilience.html",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 07 2026",
             "headline": "Grafana Exploit—AI Components Leak Enterprise Data",
             "title": "GrafanaGhost Exploit Targets AI Components to Leak Enterprise Data",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-links-medusa-ransomware-affiliate-to-zero-day-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "CISA Mandates Fortinet EMS Patch by Friday",
-            "title": "CISA Orders Federal Agencies to Patch Fortinet EMS Vulnerability",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has mandated that federal agencies patch a critical vulnerability in Fortinet&#x27;s Enterprise Management Server (EMS) by Friday. This vulnerability is actively exploited and poses a significant risk to federal networks if left unpatched. Fortinet EMS is widely used for managing security across enterprise environments, making this directive crucial for maintaining national cybersecurity. Agencies are urged to apply the patch immediately to prevent potential breaches. This order reflects CISA&#x27;s proactive stance in safeguarding federal infrastructure from emerging threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-fortinet-flaw-exploited-in-attacks-by-friday/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "SOCs Tackle Multi-OS Cyberattacks in 3 Steps",
-            "title": "Addressing Multi-OS Cyberattacks: SOCs Implement Three-Step Strategy",
-            "content": "Security Operations Centers (SOCs) are increasingly challenged by cyberattacks that traverse multiple operating systems, including Windows, macOS, Linux, and mobile platforms. Attackers exploit the diverse attack surface, moving laterally across devices and systems. To counter this, SOCs are adopting a three-step strategy: enhancing cross-platform visibility, integrating threat intelligence, and automating response workflows. This approach aims to close critical security gaps and improve incident response times. Organizations should evaluate their SOC capabilities to ensure they are equipped to handle multi-OS threats effectively.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/multi-os-cyberattacks-how-socs-close.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "Weekly Recap: Axios Hack, Chrome 0-Day, Fortinet Exploits",
-            "title": "Weekly Cybersecurity Recap: Key Exploits and Vulnerabilities Highlighted",
-            "content": "This week&#x27;s cybersecurity landscape saw significant developments, including the Axios hack, a Chrome zero-day vulnerability, and active Fortinet exploits. These incidents highlight the persistent threats facing critical software and infrastructure. The Chrome zero-day, in particular, poses a risk to billions of users, emphasizing the urgency for immediate patching. The Fortinet exploits further underscore the importance of timely vulnerability management. Organizations must remain vigilant, ensuring their systems are updated and secure against these evolving threats. This week&#x27;s events serve as a reminder of the dynamic nature of cybersecurity challenges.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/weekly-recap-axios-hack-chrome-0-day.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "LiteLLM Exploits Developer Machines—Credential Vaults for Attackers",
-            "title": "LiteLLM Turns Developer Workstations into Credential Vaults for Threat Actors",
-            "content": "The TeamPCP threat actor has leveraged LiteLLM to transform developer workstations into credential vaults, posing a significant security risk. This attack exploits the frequent creation, testing, and caching of credentials on developer machines, which are now targeted by local AI agents. The breach underscores the vulnerability of developer environments in enterprise infrastructure, as credentials are reused across various services and tools. Organizations should prioritize securing developer workstations and consider implementing stricter access controls and credential management practices. This incident highlights the critical need for robust security measures in developer environments to prevent unauthorized access and data breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/how-litellm-turned-developer-machines.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "North Korean Hackers Target Node.js Maintainers—Supply Chain Risk",
-            "title": "North Korean Threat Actors Target High-Profile Node.js Maintainers",
-            "content": "North Korean hackers, linked to the Axios supply chain attack, are now targeting high-profile Node.js maintainers through sophisticated social engineering campaigns. This strategic move aims to compromise widely used open-source libraries, potentially affecting millions of downstream applications. The campaign highlights the growing threat to software supply chains, emphasizing the need for maintainers to exercise heightened vigilance and adopt stringent security practices. Developers should verify the integrity of code dependencies and consider using tools that detect malicious code injections. This incident serves as a stark reminder of the persistent threats facing open-source ecosystems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/north-korean-hackers-target-high-profile-node-js-maintainers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "Qilin, Warlock Ransomware Exploit Drivers—300+ EDR Tools Disabled",
-            "title": "Qilin and Warlock Ransomware Use Vulnerable Drivers to Disable EDR Tools",
-            "content": "Ransomware groups Qilin and Warlock have been identified using the Bring Your Own Vulnerable Driver (BYOVD) technique to disable over 300 Endpoint Detection and Response (EDR) tools on compromised systems. This method involves exploiting known vulnerabilities in drivers to bypass security measures, allowing ransomware to operate undetected. Cisco Talos and Trend Micro&#x27;s analysis reveals the sophistication of these attacks, which pose a severe threat to enterprise security. Organizations are urged to update drivers and employ advanced threat detection solutions to mitigate these risks. The use of BYOVD techniques marks a concerning evolution in ransomware tactics.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 07 2026",
+            "headline": "Arcee&#x27;s Open Source LLM Gains Traction Among Developers",
+            "title": "Arcee&#x27;s Open Source LLM Attracts OpenClaw Community with High Performance",
+            "content": "Arcee, a small U.S.-based startup with just 26 employees, has developed a high-performing open source large language model (LLM) that is gaining popularity among OpenClaw users. Despite its modest size, Arcee&#x27;s model competes with larger, proprietary systems, offering a compelling alternative for developers seeking open source solutions. The model&#x27;s performance and accessibility have made it a favorite in the open source community, highlighting a growing trend towards democratizing AI technology. This development underscores the potential for small startups to make significant impacts in the AI landscape. Developers interested in leveraging Arcee&#x27;s LLM can access it freely, fostering innovation and collaboration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Google&#x27;s AI Overviews—Accuracy Concerns Amid Rapid Growth",
+            "title": "Google&#x27;s AI Overviews Under Scrutiny for High Error Rates",
+            "content": "Recent testing has revealed that Google&#x27;s AI Overviews, a feature designed to enhance search results, may be generating millions of inaccuracies per hour. With an accuracy rate of only 90%, the system&#x27;s errors could significantly impact users relying on it for precise information. This raises questions about the reliability of AI-driven search enhancements and the potential consequences for misinformation. As AI continues to integrate into search technologies, ensuring higher accuracy rates becomes crucial. Users and developers should be aware of these limitations and consider cross-verifying information obtained through AI Overviews.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 01 2026",
+            "headline": "Falcon Perception—A New Frontier in AI Vision Models",
+            "title": "Falcon Perception Advances AI Vision with Innovative Model Capabilities",
+            "content": "Falcon Perception, a new AI vision model, has been introduced, promising to enhance image recognition and analysis capabilities. Developed by a team at Hugging Face, this model leverages advanced algorithms to improve accuracy and efficiency in processing visual data. The introduction of Falcon Perception marks a significant step forward in AI vision technology, potentially benefiting industries reliant on image analysis, such as healthcare and autonomous vehicles. As AI continues to evolve, models like Falcon Perception are crucial for pushing the boundaries of what machines can perceive and understand. Developers are encouraged to explore this model for cutting-edge applications.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-perception",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "GLM-5.1 Outperforms Rivals—Open Source AI Gains Momentum",
+            "title": "Z.ai&#x27;s GLM-5.1 Surpasses Competitors in SWE-Bench Pro Performance",
+            "content": "Z.ai, a Chinese AI startup, has released GLM-5.1, an open source large language model that outperforms Opus 4.6 and GPT-5.4 on the SWE-Bench Pro benchmark. Released under the permissive MIT License, GLM-5.1 allows enterprises to download, customize, and use it commercially, signaling China&#x27;s renewed commitment to open source AI development. This development could shift the competitive landscape, as businesses seek cost-effective, customizable AI solutions. The model&#x27;s superior performance underscores the potential for open source models to rival proprietary offerings. Organizations should consider evaluating GLM-5.1 for integration into their AI strategies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/ai-joins-the-8-hour-work-day-as-glm-ships-5-1-open-source-llm-beating-opus-4",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Spotify Expands Prompted Playlists to Include Podcasts",
+            "title": "Spotify&#x27;s Prompted Playlists Now Feature Podcasts for Enhanced Discovery",
+            "content": "Spotify has expanded its Prompted Playlists feature to include podcasts, enhancing the platform&#x27;s ability to help users discover new content. Initially launched as a beta feature for music in December, this update allows Premium users to explore podcasts through curated playlists. This move aims to improve user engagement by simplifying the discovery process and offering personalized recommendations. As the podcast market continues to grow, Spotify&#x27;s integration of podcasts into Prompted Playlists could attract more users seeking diverse audio content. Premium users are encouraged to explore this feature to find new and interesting podcasts.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/908339/spotify-prompted-playlists-podcasts",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Firmus Reaches $5.5B Valuation with Nvidia&#x27;s Backing",
+            "title": "Nvidia-Backed Firmus Achieves $5.5B Valuation in AI Data Center Expansion",
+            "content": "Firmus, an Asia-based AI data center provider backed by Nvidia, has reached a valuation of $5.5 billion following a successful $1.35 billion fundraising round over six months. Specializing in the construction of AI-focused data centers, Firmus is positioned to capitalize on the growing demand for AI infrastructure. Nvidia&#x27;s support underscores the strategic importance of Firmus in the AI ecosystem, as data centers become critical for AI deployment and scalability. This development highlights the increasing investment in AI infrastructure, with Firmus poised to play a significant role in the industry&#x27;s future. Stakeholders should monitor Firmus&#x27;s growth as a key player in AI infrastructure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/07/firmus-the-southgate-ai-datacenter-builder-backed-by-nvidia-hits-5-5b-valuation/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 07 2026",
             "headline": "Google’s Gemini Enhances Crisis Support Amid Lawsuit",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Google has discreetly launched an offline-first AI dictation app, leveraging its proprietary Gemma AI models to enhance voice-to-text capabilities. This app is designed to operate without an internet connection, providing users with privacy and reliability advantages over cloud-dependent alternatives like Wispr Flow. By enabling offline functionality, Google addresses growing concerns about data privacy and connectivity issues. The app&#x27;s release represents a strategic move to capture a segment of the market seeking robust, offline AI solutions. Users and developers interested in integrating advanced dictation technology should explore the potential of Google&#x27;s new offering.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/06/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "Iran Threatens U.S.-Linked AI Data Centers Amid Escalating Tensions",
-            "title": "Iran Targets U.S.-Linked AI Data Centers in Missile Strike Threat",
-            "content": "Amid escalating tensions with the United States, Iran has announced its intention to target U.S.-linked AI data centers with missile strikes. This development raises significant concerns about the security of critical infrastructure supporting AI operations. As geopolitical conflicts increasingly intersect with technological assets, organizations must reassess their risk management strategies to safeguard data centers and associated technologies. The threat underscores the importance of robust cybersecurity measures and contingency planning for entities operating in volatile regions. Security professionals should prioritize enhancing defenses and monitoring geopolitical developments closely.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/06/iran-threatens-stargate-ai-data-centers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "OpenAI Proposes AI Economy Overhaul—Robot Taxes and Wealth Funds",
-            "title": "OpenAI&#x27;s Vision for AI Economy Includes Robot Taxes and Public Wealth Funds",
-            "content": "OpenAI has proposed a transformative approach to the AI-driven economy, advocating for the implementation of robot taxes and the creation of public wealth funds. These measures aim to address potential job displacement and economic inequality resulting from AI advancements. OpenAI suggests that these initiatives could blend redistribution with capitalism, providing expanded safety nets while fostering innovation. As policymakers debate the economic implications of AI, OpenAI&#x27;s proposals offer a framework for balancing technological progress with social responsibility. Industry leaders and policymakers should consider these ideas as part of broader discussions on the future of work and economic equity.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "Xoople Secures $130M—Plans Earth Mapping for AI",
-            "title": "Xoople Raises $130 Million to Advance AI Earth Mapping with L3Harris",
-            "content": "Xoople, a Spanish startup, has successfully raised $130 million in a Series B funding round to enhance its AI-driven Earth mapping capabilities. The company has also announced a strategic partnership with L3Harris to develop advanced sensors for its spacecraft. These sensors aim to provide high-resolution data crucial for AI applications in environmental monitoring, urban planning, and disaster response. The funding and partnership underscore a growing trend of integrating AI with geospatial data to address complex global challenges. Stakeholders in AI and geospatial sectors should monitor Xoople&#x27;s developments as they could significantly impact data availability and precision for AI models.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/06/spains-xoople-raises-130-million-series-b-to-map-the-earth-for-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "OpenAI Proposes Bold Industrial Policy for AI Era",
-            "title": "OpenAI Advocates People-First Industrial Policy for AI Advancement",
-            "content": "OpenAI has unveiled a comprehensive industrial policy framework aimed at fostering equitable growth and resilient institutions in the AI era. The proposal emphasizes expanding opportunities and sharing prosperity as advanced intelligence technologies evolve. This initiative reflects a broader industry trend towards ensuring AI development aligns with societal needs and ethical standards. As AI continues to transform industries, stakeholders are encouraged to consider these policy ideas to mitigate risks and enhance benefits. The policy&#x27;s focus on inclusivity and sustainability highlights the necessity of balancing technological progress with human-centric values.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 05 2026",
-            "headline": "Google Maps&#x27; Gemini Plans Days—Surprisingly Effective",
-            "title": "Gemini in Google Maps Enhances Day Planning with AI",
-            "content": "Gemini, Google&#x27;s AI integration, has expanded its presence to Google Maps, offering users a novel way to plan their daily activities. Previously integrated into services like Gmail, Gemini now provides personalized itineraries and real-time adjustments based on user preferences and traffic conditions. This enhancement demonstrates the increasing role of AI in everyday applications, aiming to streamline user experiences and optimize time management. Users should explore this feature to leverage AI&#x27;s potential in enhancing daily productivity. As AI becomes more embedded in consumer technologies, its ability to adapt and personalize services is set to redefine user interactions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/907015/gemini-google-maps-hands-on",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 05 2026",
-            "headline": "Microsoft Labels Copilot as &#x27;Entertainment&#x27; in Terms of Use",
-            "title": "Microsoft Warns Users: Copilot AI for Entertainment Purposes Only",
-            "content": "Microsoft&#x27;s terms of use for its AI tool, Copilot, now explicitly state that it is intended for entertainment purposes only. This clarification comes amid growing concerns about the reliability of AI-generated outputs. Users are cautioned against relying solely on Copilot for critical tasks, as the tool may produce inaccurate or misleading information. This move reflects a broader industry trend of AI providers emphasizing the limitations of their models. Developers and businesses should exercise caution and perform due diligence when integrating AI tools into their workflows.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/",
             "relatedResources": []
         }
     ],
@@ -378,17 +378,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3502",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-5281",
-            "dateAdded": "Apr 01, 2026",
-            "vendor": "Google Dawn",
-            "description": "Google Dawn contains an use-after-free vulnerability that could allow a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. This vulnerability c",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5281",
             "isZeroDay": false
         }
     ],
