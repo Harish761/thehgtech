@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-04-08T02:30:50.186010",
+  "last_updated": "2026-04-08T13:21:27.213083",
   "period": "Last 7 days",
-  "total_groups": 29,
-  "total_victims": 268,
+  "total_groups": 28,
+  "total_victims": 259,
   "groups": [
     {
       "name": "Thegentlemen",
@@ -186,97 +186,6 @@
       ]
     },
     {
-      "name": "Nightspire",
-      "count": 31,
-      "victims": [
-        {
-          "name": "Sa**** A** Products",
-          "date": "2026-04-06 15:40:23.490618",
-          "url": "",
-          "discovered_date": "2026-04-06T15:40:23.490618"
-        },
-        {
-          "name": "C***n** **tu*e *n S**ur*** P**ot**hn**u*",
-          "date": "2026-04-06 07:00:03.484190",
-          "url": "",
-          "discovered_date": "2026-04-06T07:00:03.484190"
-        },
-        {
-          "name": "Cabinet d’Étude en Sécurité Pyrotechnique",
-          "date": "2026-04-07 07:40:18.268885",
-          "url": "",
-          "discovered_date": "2026-04-07T07:40:18.268885"
-        },
-        {
-          "name": "Carmelo Candy Inc",
-          "date": "2026-04-06 07:00:28.782969",
-          "url": "",
-          "discovered_date": "2026-04-06T07:00:28.782969"
-        },
-        {
-          "name": "PARS AR-GE",
-          "date": "2026-04-03 12:47:41.092040",
-          "url": "",
-          "discovered_date": "2026-04-03T12:47:41.092040"
-        },
-        {
-          "name": "Siena Construction",
-          "date": "2026-04-03 12:47:44.393519",
-          "url": "",
-          "discovered_date": "2026-04-03T12:47:44.393519"
-        },
-        {
-          "name": "Dubosson Frères SA",
-          "date": "2026-04-03 12:48:07.812117",
-          "url": "",
-          "discovered_date": "2026-04-03T12:48:07.812117"
-        },
-        {
-          "name": "Southeastern Conference of Seventh-day Adventists",
-          "date": "2026-04-03 12:48:31.335524",
-          "url": "",
-          "discovered_date": "2026-04-03T12:48:31.335524"
-        },
-        {
-          "name": "Advanced Vehicle Assemblies",
-          "date": "2026-04-04 00:25:23.386739",
-          "url": "",
-          "discovered_date": "2026-04-04T00:25:23.386739"
-        },
-        {
-          "name": "Cabinet d’Étude en Sécurité Pyrotechnique",
-          "date": "2026-04-07T07:40:18+00:00",
-          "url": "https://www.ransomware.live/id/Q2FiaW5ldCBk4oCZw4l0dWRlIGVuIFPDqWN1cml0w6kgUHlyb3RlY2huaXF1ZUBuaWdodHNwaXJl",
-          "discovered_date": "2026-04-07T07:40:18+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Construction",
-        "Consumer Services",
-        "Education",
-        "Manufacturing"
-      ],
-      "countries": [
-        "CH",
-        "FR",
-        "N/A",
-        "PK",
-        "SG"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        1,
-        12,
-        2,
-        0,
-        6,
-        2,
-        0
-      ]
-    },
-    {
       "name": "Akira",
       "count": 30,
       "victims": [
@@ -362,6 +271,97 @@
         0,
         6,
         10,
+        0
+      ]
+    },
+    {
+      "name": "Nightspire",
+      "count": 21,
+      "victims": [
+        {
+          "name": "Sa**** A** Products",
+          "date": "2026-04-06 15:40:23.490618",
+          "url": "",
+          "discovered_date": "2026-04-06T15:40:23.490618"
+        },
+        {
+          "name": "C***n** **tu*e *n S**ur*** P**ot**hn**u*",
+          "date": "2026-04-06 07:00:03.484190",
+          "url": "",
+          "discovered_date": "2026-04-06T07:00:03.484190"
+        },
+        {
+          "name": "Cabinet d’Étude en Sécurité Pyrotechnique",
+          "date": "2026-04-07 07:40:18.268885",
+          "url": "",
+          "discovered_date": "2026-04-07T07:40:18.268885"
+        },
+        {
+          "name": "Carmelo Candy Inc",
+          "date": "2026-04-06 07:00:28.782969",
+          "url": "",
+          "discovered_date": "2026-04-06T07:00:28.782969"
+        },
+        {
+          "name": "Dubosson Frères SA",
+          "date": "2026-04-03 12:48:07.812117",
+          "url": "",
+          "discovered_date": "2026-04-03T12:48:07.812117"
+        },
+        {
+          "name": "Southeastern Conference of Seventh-day Adventists",
+          "date": "2026-04-03 12:48:31.335524",
+          "url": "",
+          "discovered_date": "2026-04-03T12:48:31.335524"
+        },
+        {
+          "name": "Advanced Vehicle Assemblies",
+          "date": "2026-04-04 00:25:23.386739",
+          "url": "",
+          "discovered_date": "2026-04-04T00:25:23.386739"
+        },
+        {
+          "name": "Cabinet d’Étude en Sécurité Pyrotechnique",
+          "date": "2026-04-07T07:40:18+00:00",
+          "url": "https://www.ransomware.live/id/Q2FiaW5ldCBk4oCZw4l0dWRlIGVuIFPDqWN1cml0w6kgUHlyb3RlY2huaXF1ZUBuaWdodHNwaXJl",
+          "discovered_date": "2026-04-07T07:40:18+00:00"
+        },
+        {
+          "name": "Sa**** A** Products",
+          "date": "2026-04-06T15:40:23+00:00",
+          "url": "https://www.ransomware.live/id/U2EqKioqIEEqKiBQcm9kdWN0c0BuaWdodHNwaXJl",
+          "discovered_date": "2026-04-06T15:40:23+00:00"
+        },
+        {
+          "name": "Carmelo Candy Inc",
+          "date": "2026-04-06T07:00:28+00:00",
+          "url": "https://www.ransomware.live/id/Q2FybWVsbyBDYW5keSBJbmNAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-04-06T07:00:28+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Consumer Services",
+        "Education",
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "CH",
+        "FR",
+        "N/A",
+        "SG",
+        "TR"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        1,
+        10,
+        2,
+        0,
+        6,
+        2,
         0
       ]
     },
@@ -633,8 +633,14 @@
     },
     {
       "name": "Krybit",
-      "count": 12,
+      "count": 13,
       "victims": [
+        {
+          "name": "Gerald Zisser GmbH",
+          "date": "2026-04-08 13:08:39.027782",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/3483b78af6ee44881238e7fc60509b54c0e83edce7687f606c2682e60ab9b981/",
+          "discovered_date": "2026-04-08T13:08:39.027782"
+        },
         {
           "name": "fraper.com",
           "date": "2026-04-07 13:15:36.149242",
@@ -688,15 +694,10 @@
           "date": "2026-04-04T11:57:18+00:00",
           "url": "https://www.ransomware.live/id/bGtjLmFjLmJ3QGtyeWJpdA==",
           "discovered_date": "2026-04-04T11:57:18+00:00"
-        },
-        {
-          "name": "BJ Grupo",
-          "date": "2026-04-03T20:32:36+00:00",
-          "url": "https://www.ransomware.live/id/QkogR3J1cG9Aa3J5Yml0",
-          "discovered_date": "2026-04-03T20:32:36+00:00"
         }
       ],
       "industries": [
+        "Business Services",
         "Consumer Services",
         "Education",
         "Not Found"
@@ -704,9 +705,9 @@
       "countries": [
         "AT",
         "BW",
+        "DE",
         "ES",
-        "HK",
-        "JP"
+        "HK"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -717,7 +718,7 @@
         0,
         2,
         2,
-        0
+        1
       ]
     },
     {
@@ -1060,7 +1061,7 @@
     },
     {
       "name": "Anubis",
-      "count": 7,
+      "count": 6,
       "victims": [
         {
           "name": "Star Fuels",
@@ -1097,12 +1098,6 @@
           "date": "2026-04-04T13:00:17+00:00",
           "url": "https://www.ransomware.live/id/U2hpbmUgQXZpYXRpb25AYW51Ymlz",
           "discovered_date": "2026-04-04T13:00:17+00:00"
-        },
-        {
-          "name": "Publishers Clearing House",
-          "date": "2026-04-01T10:37:21+00:00",
-          "url": "https://www.ransomware.live/id/UHVibGlzaGVycyBDbGVhcmluZyBIb3VzZUBhbnViaXM=",
-          "discovered_date": "2026-04-01T10:37:21+00:00"
         }
       ],
       "industries": [
@@ -1112,8 +1107,7 @@
       ],
       "countries": [
         "AU",
-        "N/A",
-        "US"
+        "N/A"
       ],
       "trend": "stable",
       "trend_percentage": 0,
@@ -1125,6 +1119,61 @@
         2,
         2,
         0
+      ]
+    },
+    {
+      "name": "Worldleaks",
+      "count": 5,
+      "victims": [
+        {
+          "name": "Deaconess Health System",
+          "date": "2026-04-08 12:28:25.424636",
+          "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/0543941525",
+          "discovered_date": "2026-04-08T12:28:25.424636"
+        },
+        {
+          "name": "Deaconess Health System",
+          "date": "2026-04-08T12:28:25+00:00",
+          "url": "https://www.ransomware.live/id/RGVhY29uZXNzIEhlYWx0aCBTeXN0ZW1Ad29ybGRsZWFrcw==",
+          "discovered_date": "2026-04-08T12:28:25+00:00"
+        },
+        {
+          "name": "National Aerospace Fasteners",
+          "date": "2026-04-02T15:07:35+00:00",
+          "url": "https://www.ransomware.live/id/TmF0aW9uYWwgQWVyb3NwYWNlIEZhc3RlbmVyc0B3b3JsZGxlYWtz",
+          "discovered_date": "2026-04-02T15:07:35+00:00"
+        },
+        {
+          "name": "AMBAU Personalservice",
+          "date": "2026-04-01T14:53:47+00:00",
+          "url": "https://www.ransomware.live/id/QU1CQVUgUGVyc29uYWxzZXJ2aWNlQHdvcmxkbGVha3M=",
+          "discovered_date": "2026-04-01T14:53:47+00:00"
+        },
+        {
+          "name": "Alamo Heights School District",
+          "date": "2026-04-01T14:53:08+00:00",
+          "url": "https://www.ransomware.live/id/QWxhbW8gSGVpZ2h0cyBTY2hvb2wgRGlzdHJpY3RAd29ybGRsZWFrcw==",
+          "discovered_date": "2026-04-01T14:53:08+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "DE",
+        "TW",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
@@ -1309,47 +1358,6 @@
         0,
         0,
         2,
-        0
-      ]
-    },
-    {
-      "name": "Worldleaks",
-      "count": 3,
-      "victims": [
-        {
-          "name": "National Aerospace Fasteners",
-          "date": "2026-04-02T15:07:35+00:00",
-          "url": "https://www.ransomware.live/id/TmF0aW9uYWwgQWVyb3NwYWNlIEZhc3RlbmVyc0B3b3JsZGxlYWtz",
-          "discovered_date": "2026-04-02T15:07:35+00:00"
-        },
-        {
-          "name": "AMBAU Personalservice",
-          "date": "2026-04-01T14:53:47+00:00",
-          "url": "https://www.ransomware.live/id/QU1CQVUgUGVyc29uYWxzZXJ2aWNlQHdvcmxkbGVha3M=",
-          "discovered_date": "2026-04-01T14:53:47+00:00"
-        },
-        {
-          "name": "Alamo Heights School District",
-          "date": "2026-04-01T14:53:08+00:00",
-          "url": "https://www.ransomware.live/id/QWxhbW8gSGVpZ2h0cyBTY2hvb2wgRGlzdHJpY3RAd29ybGRsZWFrcw==",
-          "discovered_date": "2026-04-01T14:53:08+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "DE",
-        "TW",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ]
     },
@@ -1683,33 +1691,6 @@
       "trend_percentage": -5,
       "daily_counts": [
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Shinyhunters",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Cisco Systems, Inc. (cisco.com)",
-          "date": "2026-04-01T13:14:13+00:00",
-          "url": "https://www.ransomware.live/id/Q2lzY28gU3lzdGVtcywgSW5jLiAoY2lzY28uY29tKUBzaGlueWh1bnRlcnM=",
-          "discovered_date": "2026-04-01T13:14:13+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
         0,
         0,
         0,
