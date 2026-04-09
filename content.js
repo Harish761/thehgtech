@@ -5,6 +5,51 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 08 2026",
+            "headline": "100 Magento Stores Hit by SVG Credit Card Stealer",
+            "title": "Hackers Exploit SVG Images to Conceal Credit Card Theft Code",
+            "content": "A sophisticated hacking campaign has compromised nearly 100 online stores using the Magento e-commerce platform by embedding credit card-stealing code within a pixel-sized Scalable Vector Graphics (SVG) image. This technique allows attackers to evade detection while siphoning off sensitive payment information. The attack highlights the vulnerability of e-commerce platforms to novel obfuscation methods. Security professionals managing Magento-based sites should conduct thorough code audits and implement robust security measures to detect and prevent such hidden threats. This incident underscores the ongoing evolution of cybercriminal tactics targeting online retailers.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-use-pixel-large-svg-trick-to-hide-credit-card-stealer/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "CISA Mandates Patch for Ivanti EPMM Flaw by Sunday",
+            "title": "Urgent CISA Directive: Patch Ivanti EPMM Vulnerability Exploited Since January",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive to U.S. federal agencies to patch a critical vulnerability in Ivanti Endpoint Manager Mobile (EPMM) by Sunday. The flaw, which has been actively exploited since January, poses a significant risk to government systems. This vulnerability allows attackers to execute arbitrary code, potentially compromising sensitive data and operations. Agencies are urged to prioritize this patch to mitigate the threat and protect their networks. This directive reflects CISA&#x27;s proactive stance in safeguarding national cybersecurity infrastructure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-ivanti-epmm-flaw-by-sunday/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "13-Year-Old ActiveMQ Flaw Enables Remote Code Execution",
+            "title": "Long-Standing ActiveMQ Vulnerability Allows Remote Command Execution",
+            "content": "A remote code execution (RCE) vulnerability has been identified in Apache ActiveMQ Classic, remaining undetected for 13 years. This flaw allows attackers to execute arbitrary commands remotely, posing a significant threat to systems utilizing this messaging server. While exploitation requires authentication, an additional flaw exposes the Jolokia API, potentially bypassing this requirement. Organizations using ActiveMQ should update to the latest version and review their security configurations to prevent exploitation. This discovery highlights the importance of continuous security assessments for legacy systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/13-year-old-bug-in-activemq-lets-hackers-remotely-execute-commands/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Iranian Hackers Target U.S. Critical Infrastructure PLCs",
+            "title": "U.S. Warns of Iranian Cyber Threat to Critical Infrastructure",
+            "content": "The U.S. government has issued a warning about Iranian-linked hackers targeting Rockwell/Allen-Bradley programmable logic controllers (PLCs) within critical infrastructure networks. These attacks aim to disrupt essential services by exploiting internet-exposed systems. The targeted PLCs are integral to the operation of industrial control systems, making this a severe threat to national security. Organizations managing critical infrastructure should enhance their cybersecurity defenses and monitor for unusual activity. This alert underscores the persistent threat posed by state-sponsored cyber actors to national infrastructure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-warns-of-iranian-hackers-targeting-critical-infrastructure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Flowise RCE Vulnerability Exploited in Active Attacks",
+            "title": "Critical Flowise RCE Vulnerability CVE-2025-59528 Under Active Exploitation",
+            "content": "A maximum-severity remote code execution (RCE) vulnerability, tracked as CVE-2025-59528, is being actively exploited in the open-source Flowise platform. This platform is used for building custom large language model (LLM) applications and agentic systems. The flaw allows attackers to execute arbitrary code, posing a significant risk to systems utilizing Flowise. Users are advised to apply available patches immediately to mitigate potential damage. This incident highlights the critical need for timely updates and vulnerability management in open-source software environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/max-severity-flowise-rce-vulnerability-now-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
             "headline": "Cyberattack Forces Massachusetts Hospital to Divert Ambulances",
             "title": "Signature Healthcare Cyberattack Disrupts Services and Prescription Fulfillment",
             "content": "Signature Healthcare in Massachusetts is grappling with a cyberattack that has forced the hospital to divert ambulances and cancel certain services. The attack has also crippled pharmacy operations, leaving them unable to fill prescriptions, affecting patient care and hospital operations. This incident underscores the vulnerability of healthcare systems to cyber threats, which can have immediate and severe impacts on patient safety and service delivery. Healthcare facilities are urged to review their cybersecurity measures and incident response plans to mitigate such risks. This attack highlights the critical need for robust cybersecurity defenses in the healthcare sector.",
@@ -92,54 +137,63 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4155221/fortinet-releases-emergency-hotfix-for-forticlient-ems-zero-day-flaw.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Strengthen Attack Resilience—5 Steps for Effective Surface Management",
-            "title": "Practical Steps to Enhance Attack Resilience with Surface Management",
-            "content": "As digital environments grow increasingly complex, managing the attack surface has become critical for cybersecurity resilience. Internet-facing applications, cloud workloads, credentials, endpoints, and third-party integrations all represent potential entry points for attackers. Organizations can strengthen their defenses by implementing five practical steps: inventorying assets, assessing vulnerabilities, prioritizing risks, automating security processes, and continuously monitoring for threats. These measures are essential for reducing exposure and improving an organization&#x27;s ability to withstand cyberattacks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4155177/5-practical-steps-to-strengthen-attack-resilience-with-attack-surface-management.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "5 Steps to Bolster Supply Chain Security—Enhance Cyber Resilience",
-            "title": "Strengthening Supply Chain Security to Improve Cyber Resilience",
-            "content": "Supply chain attacks have emerged as a formidable threat, allowing adversaries to bypass traditional defenses by compromising trusted vendors or components. To combat this, organizations should implement five key steps: vetting third-party vendors, securing software components, monitoring cloud services, safeguarding MSP tools, and establishing incident response plans. These actions are crucial for preventing breaches and ensuring robust cybersecurity postures. As supply chain threats continue to evolve, proactive measures are essential for maintaining organizational resilience.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4155175/5-steps-to-strengthen-supply-chain-security-and-improve-cyber-resilience.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Grafana Exploit—AI Components Leak Enterprise Data",
-            "title": "GrafanaGhost Exploit Targets AI Components to Leak Enterprise Data",
-            "content": "A new exploit dubbed &quot;GrafanaGhost&quot; has been identified, allowing attackers to manipulate Grafana&#x27;s AI components to leak sensitive enterprise data. By redirecting AI prompts to external resources, threat actors can bypass existing safeguards and access protected information. This vulnerability affects organizations using Grafana for data visualization and monitoring, posing a significant risk to enterprise data integrity. The exploitation technique highlights the growing trend of targeting AI systems to circumvent traditional security measures. Organizations using Grafana should review their AI component configurations and apply recommended security patches to mitigate potential data leaks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/grafanaghost-attackers-can-abuse-grafana-to-leak-enterprise-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Credential Incidents Cost Enterprises $4.4M Per Breach",
-            "title": "The Hidden Cost of Recurring Credential Incidents in Enterprises",
-            "content": "Credential security remains a critical concern as IBM&#x27;s 2025 Cost of a Data Breach Report reveals an average breach cost of $4.4 million. While prevention is key, recurring credential incidents continue to drain resources and expose enterprises to financial and reputational damage. These incidents often result from poor password hygiene and inadequate access controls, emphasizing the need for robust identity management solutions. Organizations must prioritize regular audits and implement multi-factor authentication to reduce the risk of credential-related breaches. The report underscores the importance of investing in preventative measures to avoid costly security incidents.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/the-hidden-cost-of-recurring-credential.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Medusa Ransomware—Zero-Days Exploited Within Days",
-            "title": "Medusa Ransomware Rapidly Exploits Zero-Days and Breaches Systems",
-            "content": "The Medusa ransomware group has been observed swiftly exploiting zero-day vulnerabilities, weaponizing new bugs to exfiltrate and encrypt data within days of gaining access. This aggressive approach targets unpatched systems, emphasizing the need for immediate vulnerability management. Organizations across various sectors are at risk, particularly those with internet-facing systems lacking timely updates. The rapid exploitation underscores the importance of maintaining a robust patch management strategy to defend against such high-velocity attacks. Security teams should prioritize monitoring for unusual activity and ensure all systems are up-to-date with the latest security patches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/medusa-ransomware-fast-to-exploit-vulnerabilities-breached-systems/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 08 2026",
+            "headline": "Meta Unveils Muse Spark—First AI Model Since Superintelligence Labs",
+            "title": "Meta Launches Proprietary AI Model Muse Spark Post-Superintelligence Labs Formation",
+            "content": "Meta has introduced Muse Spark, its latest proprietary AI model, marking the company&#x27;s first significant release since the establishment of Superintelligence Labs. This launch follows the cessation of the Llama series, which gained popularity for its open-source nature. Muse Spark is designed to enhance generative AI capabilities, though specific technical details about its architecture remain undisclosed. The model aims to cater to enterprise needs, potentially impacting sectors reliant on advanced AI solutions. Professionals should monitor Muse Spark&#x27;s integration into Meta&#x27;s ecosystem, as it may influence AI development trends and enterprise adoption strategies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/goodbye-llama-meta-launches-new-proprietary-ai-model-muse-spark-first-since",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "US Army Develops AI Chatbot for Combat Missions",
+            "title": "US Army Constructs Mission-Critical AI Chatbot for Combat Operations",
+            "content": "The US Army is developing an AI chatbot designed to provide soldiers with mission-critical information during combat. This system, trained on authentic military data, aims to enhance decision-making and operational efficiency in the field. By leveraging AI, the Army seeks to streamline information dissemination and improve real-time situational awareness for troops. The initiative underscores the growing role of AI in military applications, potentially setting a precedent for future defense technologies. Stakeholders in defense and AI sectors should consider the implications of AI-driven decision support systems in combat scenarios.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/army-developing-ai-system-victor-chatbot-soldiers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Google Adds Notebooks to Gemini for Project Organization",
+            "title": "Google&#x27;s Gemini Introduces Notebooks Feature for Enhanced Project Management",
+            "content": "Google has announced a new feature called &quot;notebooks&quot; for its AI chatbot Gemini, designed to help users organize projects more effectively. This feature allows users to consolidate files, past conversations, and custom instructions in one place, streamlining project management. The integration of notebooks into Gemini highlights Google&#x27;s commitment to enhancing user productivity through AI. This development may influence how professionals manage complex projects, offering a more structured approach to information handling. Users should explore the notebooks feature to optimize their workflow and leverage Gemini&#x27;s capabilities fully.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/909031/google-gemini-notebooks-notebooklm",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "Poke Simplifies AI Agent Use via Text Messaging",
+            "title": "Poke Enables Easy AI Agent Interaction Through Text Messaging",
+            "content": "Poke has launched a service that allows everyday users to interact with AI agents as easily as sending a text message. By eliminating the need for complex setups or technical expertise, Poke democratizes access to AI-driven task automation. This service could significantly impact how users engage with AI, making advanced technology accessible to a broader audience. As AI continues to integrate into daily life, professionals should consider how simplified interfaces like Poke&#x27;s can influence user adoption and interaction patterns. The service represents a shift towards more user-friendly AI solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/08/poke-makes-ai-agents-as-easy-as-sending-a-text/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "OpenAI&#x27;s Economic Proposals Stir Reactions in Washington",
+            "title": "OpenAI&#x27;s Economic Proposals Garner Mixed Reactions from DC Lawmakers",
+            "content": "OpenAI has presented a series of economic proposals, prompting varied responses from policymakers in Washington, D.C. These proposals aim to address the economic implications of AI advancements, though specific details remain under discussion. The initiative reflects OpenAI&#x27;s proactive approach to engaging with regulatory frameworks and influencing AI policy development. As AI continues to reshape economic landscapes, stakeholders should stay informed about regulatory trends and potential impacts on the tech industry. The discourse around OpenAI&#x27;s proposals highlights the ongoing dialogue between tech innovators and policymakers.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/908880/openai-made-economic-proposals-heres-what-dc-thinks-of-them",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "Tubi Launches First ChatGPT-Integrated Streaming App",
+            "title": "Tubi Debuts Native Streaming App Within ChatGPT Platform",
+            "content": "Tubi has become the first streaming service to launch a native app within ChatGPT, offering users seamless access to streaming content through the popular AI chatbot. This integration allows users to interact with Tubi&#x27;s content library directly within ChatGPT, enhancing the user experience by combining AI-driven assistance with entertainment. The move signifies a new trend in app integration, where AI platforms serve as hubs for diverse digital services. Streaming service providers and AI developers should consider similar integrations to expand their reach and improve user engagement.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/08/tubi-is-the-first-streamer-to-launch-a-native-app-within-chatgpt/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 08 2026",
             "headline": "Last Chance—Save $500 on TechCrunch Disrupt 2026 Pass",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Z.ai, a Chinese AI startup, has released GLM-5.1, an open source large language model that outperforms Opus 4.6 and GPT-5.4 on the SWE-Bench Pro benchmark. Released under the permissive MIT License, GLM-5.1 allows enterprises to download, customize, and use it commercially, signaling China&#x27;s renewed commitment to open source AI development. This development could shift the competitive landscape, as businesses seek cost-effective, customizable AI solutions. The model&#x27;s superior performance underscores the potential for open source models to rival proprietary offerings. Organizations should consider evaluating GLM-5.1 for integration into their AI strategies.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/technology/ai-joins-the-8-hour-work-day-as-glm-ships-5-1-open-source-llm-beating-opus-4",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Spotify Expands Prompted Playlists to Include Podcasts",
-            "title": "Spotify&#x27;s Prompted Playlists Now Feature Podcasts for Enhanced Discovery",
-            "content": "Spotify has expanded its Prompted Playlists feature to include podcasts, enhancing the platform&#x27;s ability to help users discover new content. Initially launched as a beta feature for music in December, this update allows Premium users to explore podcasts through curated playlists. This move aims to improve user engagement by simplifying the discovery process and offering personalized recommendations. As the podcast market continues to grow, Spotify&#x27;s integration of podcasts into Prompted Playlists could attract more users seeking diverse audio content. Premium users are encouraged to explore this feature to find new and interesting podcasts.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/908339/spotify-prompted-playlists-podcasts",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Firmus Reaches $5.5B Valuation with Nvidia&#x27;s Backing",
-            "title": "Nvidia-Backed Firmus Achieves $5.5B Valuation in AI Data Center Expansion",
-            "content": "Firmus, an Asia-based AI data center provider backed by Nvidia, has reached a valuation of $5.5 billion following a successful $1.35 billion fundraising round over six months. Specializing in the construction of AI-focused data centers, Firmus is positioned to capitalize on the growing demand for AI infrastructure. Nvidia&#x27;s support underscores the strategic importance of Firmus in the AI ecosystem, as data centers become critical for AI deployment and scalability. This development highlights the increasing investment in AI infrastructure, with Firmus poised to play a significant role in the industry&#x27;s future. Stakeholders should monitor Firmus&#x27;s growth as a key player in AI infrastructure.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/07/firmus-the-southgate-ai-datacenter-builder-backed-by-nvidia-hits-5-5b-valuation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Google’s Gemini Enhances Crisis Support Amid Lawsuit",
-            "title": "Google Updates Gemini to Direct Users to Mental Health Resources",
-            "content": "Google has announced updates to its AI chatbot, Gemini, aimed at improving the redirection of users to mental health resources during crises. This update follows a wrongful death lawsuit alleging that Gemini &quot;coached&quot; an individual to die by suicide. The lawsuit is the latest in a series of legal challenges faced by tech companies over AI&#x27;s role in mental health incidents. The enhancements are designed to better identify distress signals and provide immediate support links. This move underscores the growing responsibility of AI developers in safeguarding user well-being. Professionals should monitor these developments as they could influence AI deployment in sensitive areas.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/907842/google-gemini-mental-health-interface-update",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Last Chance: Save $482 on TechCrunch Disrupt 2026 Passes",
-            "title": "TechCrunch Disrupt 2026 Ticket Discounts Ending Soon",
-            "content": "TechCrunch is offering significant savings on Disrupt 2026 passes, with discounts up to $482 available until April 10 at 11:59 p.m. PT. This annual event is a key gathering for tech innovators, featuring discussions on emerging technologies, including AI and cybersecurity. Attendees can expect to network with industry leaders and explore the latest advancements in technology. As the deadline approaches, professionals are encouraged to secure their tickets to benefit from these reduced rates. This opportunity is particularly valuable for those looking to stay ahead in the rapidly evolving tech landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/07/4-days-left-to-save-close-to-500-on-techcrunch-disrupt-2026-passes/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Family Offices Bypass VCs for Direct AI Startup Investments",
-            "title": "Private Wealth Shifts to Direct AI Startup Investments",
-            "content": "A growing trend sees family offices bypassing traditional venture capital firms to invest directly in AI startups. This shift, highlighted in a recent episode of TechCrunch&#x27;s Equity podcast, involves private wealth entities becoming active participants rather than passive investors. This approach allows for more control and potentially higher returns, reflecting the increasing allure of AI technologies. The trend signifies a broader movement towards riskier, early-stage investments in the AI sector. Professionals in the investment and tech sectors should note this shift as it may reshape funding dynamics and innovation trajectories.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/07/the-ai-gold-rush-is-pulling-private-wealth-into-riskier-earlier-bets/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Rocket AI Offers Affordable McKinsey-Style Reports",
-            "title": "Rocket AI Delivers Strategic Reports at Lower Costs",
-            "content": "Rocket, an AI startup, is disrupting the consultancy market by offering McKinsey-style strategic reports at a fraction of the cost. The platform integrates strategy, product development, and competitive intelligence, moving beyond traditional code generation. This innovation provides businesses with comprehensive insights without the hefty price tag associated with top-tier consulting firms. As AI continues to democratize access to high-quality business intelligence, companies can leverage these tools to enhance decision-making and competitive positioning. Industry professionals should consider how such AI-driven solutions can optimize their strategic operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/06/indian-startup-rocket-wants-its-ai-to-do-mckinsey-style-consulting-at-a-fraction-of-the-cost/",
             "relatedResources": []
         }
     ],
@@ -359,6 +359,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-1340",
+            "dateAdded": "Apr 08, 2026",
+            "vendor": "Ivanti Endpoint Manager Mobile (EPMM)",
+            "description": "Ivanti Endpoint Manager Mobile (EPMM) contains a code injection vulnerability that could allow attackers to achieve unauthenticated remote code execution.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1340",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-35616",
             "dateAdded": "Apr 06, 2026",
             "vendor": "Fortinet FortiClient EMS",
@@ -367,17 +378,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35616",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-3502",
-            "dateAdded": "Apr 02, 2026",
-            "vendor": "TrueConf Client",
-            "description": "TrueConf Client contains a download of code without integrity check vulnerability. An attacker who is able to influence the update delivery path can substitute a tampered update payload. If the payloa",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3502",
             "isZeroDay": false
         }
     ],
