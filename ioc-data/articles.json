@@ -1,6 +1,28 @@
 {
   "articles": [
     {
+      "id": "forticlient-ems-zero-day-cve-2026-35616",
+      "title": "FortiClient EMS Zero-Day CVE-2026-35616: Actively Exploited RCE – Patch Now + Full Mitigation Guide",
+      "date": "April 9, 2026",
+      "category": "Zero-Day Vulnerability",
+      "badge": "ZERO-DAY",
+      "author": "Harish G",
+      "excerpt": "Critical CVSS 9.1 SQL injection to RCE in FortiClient EMS 7.4.5–7.4.6 exploited since March 31. Unauthenticated attackers gain full OS command execution on endpoint management servers. CISA KEV listed. Patch to 7.4.7 immediately.",
+      "image": "/images/articles/forticlient-ems-zero-day-cve-2026-35616.png",
+      "externalUrl": "articles/forticlient-ems-zero-day-cve-2026-35616.html",
+      "readTime": "22 min read",
+      "tags": [
+        "FortiClient EMS",
+        "CVE-2026-35616",
+        "Fortinet",
+        "Zero-Day",
+        "RCE",
+        "SQL Injection",
+        "CISA KEV",
+        "FG-IR-26-099"
+      ]
+    },
+    {
       "id": "report-20260406",
       "title": "Weekly Threat Report: April 06, 2026",
       "date": "April 06, 2026",
