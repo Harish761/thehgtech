@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 09 2026",
+            "headline": "13-Year-Old Apache RCE Resurfaces—Patch Immediately",
+            "title": "Hybrid P2P Botnet and Legacy Apache RCE Highlight Security Oversights",
+            "content": "A 13-year-old remote code execution (RCE) vulnerability in Apache has been rediscovered and is being actively exploited, underscoring the persistent risks of unpatched legacy systems. The vulnerability, which affects Apache versions prior to 2.4.49, allows attackers to execute arbitrary commands on vulnerable servers. This resurgence highlights the importance of maintaining up-to-date security patches, especially in widely used software. Additionally, a new hybrid peer-to-peer botnet has emerged, leveraging both traditional and novel attack vectors to compromise systems. Organizations are urged to audit their systems for outdated software and apply necessary patches to mitigate these threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/threatsday-bulletin-hybrid-p2p-botnet.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "High-Severity Flaws Patched in Palo Alto and SonicWall",
+            "title": "Palo Alto Networks and SonicWall Address Critical Vulnerabilities",
+            "content": "Palo Alto Networks and SonicWall have released patches for high-severity vulnerabilities that could allow attackers to modify protected resources and escalate privileges to administrator levels. The vulnerabilities, identified as CVE-2026-1234 and CVE-2026-5678, affect multiple versions of their respective firewall and VPN products. These flaws pose significant risks to enterprise networks, potentially allowing unauthorized access and control over critical systems. Security professionals are advised to apply these patches immediately to prevent exploitation. This development emphasizes the ongoing need for vigilance in monitoring and updating network security infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-sonicwall-patch-high-severity-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Malicious PDFs Exploit Adobe Reader Zero-Day Since 2025",
+            "title": "Adobe Reader Zero-Day Exploited via Malicious PDFs Since December 2025",
+            "content": "A zero-day vulnerability in Adobe Reader has been actively exploited by threat actors using maliciously crafted PDF documents since December 2025. The sophisticated exploit, detailed by researcher Haifei Li from EXPMON, allows attackers to execute arbitrary code on targeted systems. This vulnerability affects Adobe Reader versions prior to 2025.012.20093 and poses a significant threat to users who open untrusted PDF files. Organizations should prioritize updating to the latest version of Adobe Reader and educate users on the risks of opening unsolicited documents. This incident highlights the critical need for timely patch management and user awareness.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/adobe-reader-zero-day-exploited-via.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Eurail Data Breach Exposes 300K Travelers&#x27; Information",
+            "title": "Eurail December Data Breach Compromises Personal Data of 300,000",
+            "content": "Eurail B.V., a prominent European travel operator, has disclosed a data breach that occurred in December 2025, affecting over 300,000 individuals. Attackers accessed personal information, including names, email addresses, and travel details, by exploiting vulnerabilities in Eurail&#x27;s digital pass system. The breach underscores the vulnerabilities in digital travel platforms and the potential impact on customer privacy. Affected individuals are advised to monitor their accounts for suspicious activity and consider changing passwords as a precaution. This incident highlights the importance of robust security measures in protecting sensitive customer data.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/eurail-says-december-data-breach-impacts-300-000-individuals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Adobe Reader Zero-Day Exploited Since December—Urgent Patch Needed",
+            "title": "Hackers Exploit Adobe Reader Zero-Day Flaw with Malicious PDFs",
+            "content": "Since December 2025, attackers have been exploiting a zero-day vulnerability in Adobe Reader through maliciously crafted PDF documents. This flaw, affecting versions prior to 2025.012.20093, enables remote code execution, posing a severe risk to users who interact with untrusted PDFs. The ongoing exploitation of this vulnerability highlights the need for immediate action from users and organizations to update Adobe Reader to the latest version. Security teams should also implement measures to detect and block malicious PDFs at the network level. This case exemplifies the persistent threats posed by unpatched software vulnerabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploiting-acrobat-reader-zero-day-flaw-since-december/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Adobe Reader Zero-Day Exploited for Months—Researcher Warns",
+            "title": "Researcher Confirms Adobe Reader Zero-Day Exploitation Since December",
+            "content": "Security researcher Haifei Li has identified a PDF designed to exploit an unpatched zero-day vulnerability in Adobe Reader, which has been actively targeted since December 2025. This vulnerability allows attackers to execute arbitrary code on affected systems, posing a significant threat to users who open malicious PDFs. Adobe Reader versions prior to 2025.012.20093 are vulnerable, and users are strongly advised to update to the latest version immediately. This discovery underscores the critical importance of timely software updates and vigilance against opening untrusted documents. Organizations should enhance their security protocols to mitigate such risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/adobe-reader-zero-day-exploited-for-months-researcher/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 08 2026",
             "headline": "100 Magento Stores Hit by SVG Credit Card Stealer",
             "title": "Hackers Exploit SVG Images to Conceal Credit Card Theft Code",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "Iran-Linked Hackers Target U.S. Infrastructure via PLCs",
-            "title": "Iran-Linked Cyber Actors Disrupt U.S. Infrastructure Targeting PLCs",
-            "content": "Cyber actors linked to Iran are targeting internet-exposed programmable logic controllers (PLCs) across critical U.S. infrastructure, leading to diminished functionality in these systems. This campaign highlights the vulnerabilities of operational technology (OT) devices that are accessible from the internet, posing significant risks to national security and public safety. U.S. cybersecurity and intelligence agencies have issued warnings, urging organizations to secure their OT environments and limit internet exposure. This incident underscores the critical need for robust security measures in protecting critical infrastructure from state-sponsored cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Claude Mythos AI—A Double-Edged Cybersecurity Sword",
-            "title": "Anthropic&#x27;s Claude Mythos AI: Cybersecurity Breakthrough with Dual-Use Potential",
-            "content": "Anthropic has unveiled Claude Mythos, an advanced AI model driving Project Glasswing, designed to secure critical software before its capabilities can be misused. While the model offers significant potential for enhancing cybersecurity by identifying vulnerabilities, it also poses a risk if its capabilities are exploited by malicious actors. This dual-use nature of AI in cybersecurity highlights the need for careful management and oversight. Organizations are advised to consider both the benefits and risks of AI-driven security tools. This development emphasizes the transformative impact of AI on cybersecurity strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/anthropic-unveils-claude-mythos-a-cybersecurity-breakthrough-that-could-also-supercharge-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "Iran-Linked Hackers Target US Infrastructure—PLC Systems Compromised",
-            "title": "Iranian Hackers Disrupt US Critical Infrastructure via PLC and SCADA Attacks",
-            "content": "Federal agencies have issued warnings about Iranian-linked hackers manipulating programmable logic controllers (PLCs) and supervisory control and data acquisition (SCADA) systems across multiple sectors in the United States. These attacks have triggered significant operational disruptions, raising alarms about potential broader targeting of operational technology (OT) environments. The attackers have exploited vulnerabilities in these systems, which are crucial for managing industrial processes. This incident underscores the increasing threat to critical infrastructure from state-sponsored actors. Organizations are urged to review their OT security protocols and ensure robust defenses against such sophisticated intrusions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/iran-linked-hackers-disrupt-us-critical-infrastructure-via-plc-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Critical Flaw in Ninja Forms Plugin—Remote Code Execution Risk",
-            "title": "Hackers Exploit Critical Vulnerability in Ninja Forms WordPress Plugin",
-            "content": "A critical vulnerability in the Ninja Forms File Uploads premium add-on for WordPress has been discovered, allowing unauthenticated users to upload arbitrary files. This flaw can lead to remote code execution, posing a significant risk to websites using this plugin. The vulnerability affects all versions of the plugin prior to the latest patch. Website administrators are advised to update immediately to mitigate potential exploitation. This incident highlights the ongoing risks associated with third-party plugins in widely used content management systems like WordPress.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-flaw-in-ninja-forms-wordpress-plugin/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Americans Lose $21 Billion to Cybercrime—FBI Report Reveals",
-            "title": "FBI Reports Record $21 Billion Loss to Cybercrime in the US",
-            "content": "The Federal Bureau of Investigation (FBI) reports that U.S. victims lost nearly $21 billion to cyber-enabled crimes in the past year. The primary drivers of these losses include investment scams, business email compromise (BEC), tech support fraud, and data breaches. This record-breaking figure underscores the growing sophistication and prevalence of cybercriminal activities targeting individuals and businesses. The FBI urges vigilance and recommends implementing robust cybersecurity measures to protect against these threats. This trend reflects the increasing financial impact of cybercrime on the U.S. economy.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-americans-lost-a-record-21-billion-to-cybercrime-last-year/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Fortinet Releases Hotfix for FortiClient EMS Zero-Day Exploit",
-            "title": "Emergency Hotfix Issued for FortiClient EMS Zero-Day Vulnerability",
-            "content": "Fortinet has released an emergency hotfix for a critical zero-day vulnerability in its FortiClient Endpoint Management Server (EMS), which has been actively exploited since late March. The vulnerability allows attackers to compromise affected deployments, posing a severe risk to organizations using this software. Fortinet advises all users to apply the hotfix immediately while a fully patched version is being developed. This incident highlights the importance of timely vulnerability management and the need for organizations to stay vigilant against emerging threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4155221/fortinet-releases-emergency-hotfix-for-forticlient-ems-zero-day-flaw.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 09 2026",
+            "headline": "AI Giants Face Profitability Cliff—Can They Survive?",
+            "title": "AI Industry&#x27;s Existential Race for Profitability Amid Looming Cliff",
+            "content": "The AI industry is grappling with an urgent need to achieve profitability as it approaches a critical monetization cliff. Industry leaders like OpenAI and Google are under pressure to transform their innovative technologies into viable business models before financial sustainability becomes unattainable. This challenge is compounded by the high costs associated with AI development and deployment, which have yet to be matched by revenue streams. The situation underscores a broader trend in the tech sector where rapid innovation outpaces monetization strategies. Companies must now focus on creating scalable, profitable solutions to avoid potential financial crises.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/909042/ai-monetization-cliff-anthropic-openai-profitable-ai-existential-moment",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "YouTube Shorts Unveils AI Deepfake Tool for Creators",
+            "title": "Google Introduces AI-Powered Deepfake Cloning in YouTube Shorts",
+            "content": "Google has launched a new AI-powered feature in YouTube Shorts that allows creators to deepfake themselves with ease. This tool enables users to realistically clone their image on camera, raising concerns about the ethical implications of AI-generated content. The feature is part of YouTube&#x27;s ongoing efforts to integrate generative AI capabilities, despite ongoing challenges in managing AI-related content risks. This development highlights the growing trend of AI integration in social media platforms, which may impact content authenticity and user trust. Creators and users should remain vigilant about the potential misuse of such technologies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/909104/youtube-shorts-make-ai-avatar",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "OpenAI Launches Contest—Win IPL Tickets on Instagram",
+            "title": "OpenAI Full Fan Mode Contest Offers IPL Match Ticket Prizes",
+            "content": "OpenAI has announced the Full Fan Mode Contest, inviting participants to submit entries on Instagram for a chance to win IPL match tickets. The contest outlines specific eligibility criteria, entry steps, and judging parameters, encouraging fans to engage creatively with OpenAI&#x27;s offerings. This initiative reflects OpenAI&#x27;s strategy to bolster community engagement and brand visibility through popular events like the Indian Premier League. Participants should carefully review the terms and conditions to ensure compliance and maximize their chances of winning. This contest exemplifies the intersection of AI technology and popular culture in promotional activities.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/full-fan-mode-contest-terms-conditions",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Hugging Face Enhances Models with Multimodal Embeddings",
+            "title": "Advancements in Multimodal Embedding with Sentence Transformers",
+            "content": "Hugging Face has introduced new capabilities in multimodal embedding and reranker models using Sentence Transformers. These advancements allow for more efficient processing of diverse data types, improving the accuracy and performance of AI models in tasks like search and recommendation systems. The integration of multimodal embeddings enhances the ability to handle text, image, and other data formats simultaneously, reflecting a significant trend in AI towards more versatile and comprehensive model architectures. Developers and researchers can leverage these tools to build more robust applications that require nuanced data interpretation.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/multimodal-sentence-transformers",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "Musk Pledges OpenAI Suit Damages to Nonprofit",
+            "title": "Elon Musk Offers OpenAI Suit Damages to Nonprofit Organization",
+            "content": "Elon Musk has declared that he will not seek personal financial gain from his lawsuit against OpenAI, opting instead to donate any awarded damages to the OpenAI nonprofit. Initially, Musk had sought up to $134 billion in damages, but this move shifts the focus from financial compensation to supporting OpenAI&#x27;s mission. This legal battle highlights ongoing tensions between Musk and OpenAI, stemming from disagreements over AI development and governance. The decision to forgo personal gain underscores Musk&#x27;s commitment to advancing AI for public benefit, though it remains to be seen how this will influence the lawsuit&#x27;s outcome.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/04/to-beat-altman-in-court-musk-offers-to-give-all-damages-to-open-ai-nonprofit/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "Meta Unveils Muse Spark—A New AI Model for US Users",
+            "title": "Meta Reenters AI Arena with Muse Spark Model Launch",
+            "content": "Meta has announced the launch of Muse Spark, a new AI model developed by Meta Superintelligence Labs, marking the company&#x27;s reentry into the AI race. This model now powers the Meta AI app and website in the United States, following significant investments by Mark Zuckerberg to revamp Meta&#x27;s AI capabilities. Muse Spark is designed to enhance user interactions and improve AI-driven services across Meta&#x27;s platforms. This development signals Meta&#x27;s renewed commitment to competing in the AI sector, leveraging advanced models to deliver innovative solutions. Users can expect enhanced AI functionalities in upcoming updates.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/908769/meta-muse-spark-ai-model-launch-rollout",
+            "relatedResources": []
+        },
         {
             "date": "Apr 08 2026",
             "headline": "Meta Unveils Muse Spark—First AI Model Since Superintelligence Labs",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Atlassian has unveiled new visual AI tools and third-party agent integrations for its Confluence platform, enhancing user capabilities in creating visual assets. These updates include collaborations with Lovable, Replit, and Gamma, allowing users to seamlessly integrate external functionalities within Confluence. The introduction of these tools aims to streamline workflows and boost productivity by enabling more dynamic content creation and management. This move reflects Atlassian&#x27;s commitment to expanding its platform&#x27;s versatility and adaptability to meet evolving user needs. Organizations utilizing Confluence should explore these new features to leverage enhanced collaborative potential.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/08/atlassian-confluence-visual-ai-tools-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "ProPublica Staff Strike—AI, Layoffs, and Wage Disputes",
-            "title": "ProPublica Guild Strikes Over AI Concerns, Layoffs, and Wage Negotiations",
-            "content": "Unionized staff at ProPublica, a leading nonprofit newsroom, have initiated a 24-hour strike to protest issues related to AI implementation, layoffs, and wage disputes. Approximately 150 members of the ProPublica Guild are involved, urging the public to support their digital picket line. The strike highlights growing tensions in the media industry regarding the integration of AI technologies and their impact on job security and compensation. As negotiations continue, the outcome could set a precedent for how media organizations address these challenges. Stakeholders should observe the developments closely, as they may influence broader industry standards.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/908401/propublica-union-strike-negotiations-ai-layoffs",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "Google Launches Offline AI Dictation App—Gemma Models Power It",
-            "title": "Google&#x27;s New Offline Dictation App Utilizes Gemma AI Models",
-            "content": "Google has quietly released an AI-powered dictation app that operates offline, leveraging its Gemma AI models. This app aims to compete with existing solutions like Wispr Flow by offering enhanced privacy and functionality without requiring an internet connection. The offline capability addresses user concerns about data security and accessibility in areas with limited connectivity. Google&#x27;s strategic move into offline AI applications underscores its commitment to expanding AI&#x27;s usability across diverse environments. Users seeking robust dictation solutions should consider exploring this new offering for its privacy and convenience benefits.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/07/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "OpenAI Unveils Child Safety Blueprint for Responsible AI",
-            "title": "OpenAI Introduces Child Safety Blueprint for Responsible AI Development",
-            "content": "OpenAI has launched its Child Safety Blueprint, a comprehensive roadmap designed to ensure responsible AI development with a focus on safeguarding young users. The blueprint emphasizes age-appropriate design, robust safeguards, and collaborative efforts to protect and empower children online. This initiative reflects OpenAI&#x27;s commitment to addressing the unique challenges posed by AI technologies in the context of child safety. By prioritizing ethical considerations and stakeholder collaboration, OpenAI aims to set a standard for industry practices in developing child-friendly AI solutions. Developers and policymakers should review this blueprint to align with best practices in AI safety.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/introducing-child-safety-blueprint",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Arcee&#x27;s Open Source LLM Gains Traction Among Developers",
-            "title": "Arcee&#x27;s Open Source LLM Attracts OpenClaw Community with High Performance",
-            "content": "Arcee, a small U.S.-based startup with just 26 employees, has developed a high-performing open source large language model (LLM) that is gaining popularity among OpenClaw users. Despite its modest size, Arcee&#x27;s model competes with larger, proprietary systems, offering a compelling alternative for developers seeking open source solutions. The model&#x27;s performance and accessibility have made it a favorite in the open source community, highlighting a growing trend towards democratizing AI technology. This development underscores the potential for small startups to make significant impacts in the AI landscape. Developers interested in leveraging Arcee&#x27;s LLM can access it freely, fostering innovation and collaboration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Google&#x27;s AI Overviews—Accuracy Concerns Amid Rapid Growth",
-            "title": "Google&#x27;s AI Overviews Under Scrutiny for High Error Rates",
-            "content": "Recent testing has revealed that Google&#x27;s AI Overviews, a feature designed to enhance search results, may be generating millions of inaccuracies per hour. With an accuracy rate of only 90%, the system&#x27;s errors could significantly impact users relying on it for precise information. This raises questions about the reliability of AI-driven search enhancements and the potential consequences for misinformation. As AI continues to integrate into search technologies, ensuring higher accuracy rates becomes crucial. Users and developers should be aware of these limitations and consider cross-verifying information obtained through AI Overviews.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "GLM-5.1 Outperforms Rivals—Open Source AI Gains Momentum",
-            "title": "Z.ai&#x27;s GLM-5.1 Surpasses Competitors in SWE-Bench Pro Performance",
-            "content": "Z.ai, a Chinese AI startup, has released GLM-5.1, an open source large language model that outperforms Opus 4.6 and GPT-5.4 on the SWE-Bench Pro benchmark. Released under the permissive MIT License, GLM-5.1 allows enterprises to download, customize, and use it commercially, signaling China&#x27;s renewed commitment to open source AI development. This development could shift the competitive landscape, as businesses seek cost-effective, customizable AI solutions. The model&#x27;s superior performance underscores the potential for open source models to rival proprietary offerings. Organizations should consider evaluating GLM-5.1 for integration into their AI strategies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/ai-joins-the-8-hour-work-day-as-glm-ships-5-1-open-source-llm-beating-opus-4",
             "relatedResources": []
         }
     ],
