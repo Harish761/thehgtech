@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- April 9, 2026 - Anthropic Project Glasswing -->
+  <url>
+    <loc>https://thehgtech.com/articles/anthropic-project-glasswing-2026.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/anthropic-project-glasswing-2026.png</image:loc>
+      <image:title>Anthropic Project Glasswing AI Security</image:title>
+    </image:image>
+  </url>
+
   <!-- April 9, 2026 - FortiClient EMS Zero-Day CVE-2026-35616 -->
   <url>
     <loc>https://thehgtech.com/articles/forticlient-ems-zero-day-cve-2026-35616.html</loc>

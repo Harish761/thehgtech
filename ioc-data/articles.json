@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "anthropic-project-glasswing-2026",
+      "title": "Anthropic Project Glasswing: AI-Powered Zero-Day Hunting Is Here – What It Means for Defenders in 2026",
+      "date": "April 9, 2026",
+      "category": "AI Security",
+      "badge": "AI",
+      "author": "Harish G",
+      "excerpt": "Project Glasswing changes everything. How Anthropic's Claude Mythos and unprecedented partner alliance bring defensive AI parity to the battlefield.",
+      "image": "/images/articles/anthropic-project-glasswing-2026.png",
+      "externalUrl": "articles/anthropic-project-glasswing-2026.html",
+      "readTime": "14 min read",
+      "tags": [
+        "Project Glasswing",
+        "Anthropic",
+        "Claude Mythos",
+        "AI Security",
+        "Zero-Day Hunting"
+      ]
+    },
+    {
       "id": "forticlient-ems-zero-day-cve-2026-35616",
       "title": "FortiClient EMS Zero-Day CVE-2026-35616: Actively Exploited RCE – Patch Now + Full Mitigation Guide",
       "date": "April 9, 2026",

@@ -4,6 +4,20 @@
 
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
 
+  <!-- April 9, 2026 - Anthropic Project Glasswing -->
+  <url>
+    <loc>https://thehgtech.com/articles/anthropic-project-glasswing-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-09T14:30:00+05:30</news:publication_date>
+      <news:title>Anthropic Project Glasswing: AI-Powered Zero-Day Hunting Is Here – What It Means for Defenders in 2026</news:title>
+      <news:keywords>Project Glasswing, Anthropic Claude Mythos, AI zero-day detection 2026, AI-powered vulnerability hunting</news:keywords>
+    </news:news>
+  </url>
+
   <!-- April 9, 2026 - FortiClient EMS Zero-Day CVE-2026-35616 -->
   <url>
     <loc>https://thehgtech.com/articles/forticlient-ems-zero-day-cve-2026-35616.html</loc>
