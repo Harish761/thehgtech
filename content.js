@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 10 2026",
+            "headline": "Juniper Networks Fixes Critical Junos OS Flaw—Patch Now",
+            "title": "Juniper Networks Patches Critical Remote Exploitation Flaw in Junos OS",
+            "content": "Juniper Networks has released patches for multiple vulnerabilities in its Junos OS, including a critical-severity flaw that can be exploited remotely without authentication. This vulnerability, if left unpatched, allows attackers to take full control of affected devices, posing significant risks to network security. The vulnerabilities impact various versions of Junos OS, widely used in enterprise and service provider networks. Organizations using Junos OS should prioritize applying these updates to mitigate potential exploitation. This patch release underscores the ongoing challenges in securing network infrastructure against sophisticated cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/juniper-networks-patches-dozens-of-junos-os-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "CPUID Supply Chain Attack—Malware in CPU-Z Downloads",
+            "title": "CPUID&#x27;s API Breach Leads to Malware Distribution via CPU-Z and HWMonitor",
+            "content": "Hackers have compromised CPUID&#x27;s API, altering download links on its official site to distribute malware through popular tools CPU-Z and HWMonitor. This supply chain attack highlights the vulnerability of third-party software distribution channels. Users downloading these tools may inadvertently install malicious executables, risking data breaches and system integrity. CPUID has since rectified the issue, but users should verify the integrity of their downloads and consider reinstallation from trusted sources. This incident emphasizes the importance of securing software supply chains to prevent similar attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/supply-chain-attack-at-cpuid-pushes-malware-with-cpu-z-hwmonitor/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Iran Hacks Critical Infrastructure—US Warns of ICS Threats",
+            "title": "US Warns of Iran-Linked ICS Hacking in Critical Infrastructure",
+            "content": "The US government has issued warnings about Iran-linked hackers targeting industrial control systems (ICS) and supervisory control and data acquisition (SCADA) systems in critical infrastructure. These attacks aim to manipulate programmable logic controllers (PLCs) to disrupt operations, posing significant risks to national security and public safety. The hacking activities reflect a growing trend of state-sponsored cyber threats targeting vital infrastructure. Organizations in critical sectors should enhance their cybersecurity measures and remain vigilant against such threats. This development underscores the need for robust defenses in protecting critical infrastructure from cyber espionage and sabotage.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/industry-reactions-to-iran-hacking-ics-in-critical-infrastructure-feedback-friday/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Orthanc DICOM Flaws Allow RCE—Patch Immediately",
+            "title": "Orthanc DICOM Vulnerabilities Enable Remote Code Execution and Crashes",
+            "content": "Security vulnerabilities in Orthanc&#x27;s DICOM server software could be exploited for denial-of-service (DoS), information disclosure, and remote code execution (RCE) attacks. These flaws affect healthcare systems relying on DICOM for medical imaging, potentially compromising patient data and system functionality. Attackers could exploit these vulnerabilities to crash systems or execute arbitrary code, leading to severe operational disruptions. Healthcare organizations using Orthanc should apply available patches promptly to safeguard their systems. This incident highlights the critical need for securing medical software against cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/orthanc-dicom-vulnerabilities-lead-to-crashes-rce/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Chrome 147 Fixes 60 Bugs—$86K for Critical Flaws",
+            "title": "Chrome 147 Update Addresses 60 Vulnerabilities, Including Critical WebML Flaws",
+            "content": "Google has released Chrome version 147, patching 60 vulnerabilities, including two critical flaws in the WebML component. These critical vulnerabilities, reported by anonymous researchers, could allow attackers to execute arbitrary code, posing significant security risks. The total bounty for these critical flaws reached $86,000, reflecting their severity. Users are urged to update to the latest version to protect against potential exploitation. This update is part of Google&#x27;s ongoing efforts to enhance browser security and protect users from emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-147-patches-60-vulnerabilities-including-two-critical-flaws-worth-86000/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Marimo Flaw Exploited in 9 Hours—Immediate Action Required",
+            "title": "Critical Marimo Vulnerability Exploited Hours After Disclosure",
+            "content": "A critical vulnerability in the Marimo software was exploited just nine hours after its public disclosure, highlighting the rapid response capabilities of threat actors. The unauthenticated bug allows attackers to execute arbitrary code, posing severe risks to affected systems. This swift exploitation underscores the importance of timely patching and vulnerability management. Organizations using Marimo should apply the latest patches immediately to mitigate potential attacks. This incident serves as a stark reminder of the speed at which cyber threats can evolve and the necessity for proactive security measures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-marimo-flaw-exploited-hours-after-public-disclosure/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 09 2026",
             "headline": "ChipSoft Ransomware Attack Disrupts Dutch Healthcare Services",
             "title": "Ransomware Attack Forces ChipSoft to Halt Digital Healthcare Services",
@@ -37,15 +91,6 @@ const websiteContent = {
             "content": "Iran-affiliated cyber actors are actively targeting internet-exposed operational technology (OT) devices, including programmable logic controllers (PLCs), across critical U.S. infrastructure sectors. This campaign has led to reduced functionality of PLCs, which are essential for industrial control systems. The attacks highlight the vulnerabilities of OT devices when exposed to the internet, posing significant risks to national security and public safety. Organizations are urged to secure their OT environments by implementing network segmentation and regular security audits.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "Germany Unmasks &quot;UNKN&quot;—Leader of REvil, GandCrab Gangs",
-            "title": "German Authorities Identify Daniil Shchukin as Head of REvil, GandCrab",
-            "content": "German authorities have revealed the identity of &quot;UNKN,&quot; the elusive leader of Russian ransomware groups GandCrab and REvil, as 31-year-old Daniil Maksimovich Shchukin. Shchukin is accused of orchestrating over 130 cybercrime operations, significantly impacting global cybersecurity. This revelation marks a significant breakthrough in international efforts to combat ransomware and hold cybercriminals accountable. The identification of Shchukin underscores the importance of international collaboration in tackling cybercrime. Security professionals are encouraged to remain vigilant against ransomware threats and ensure robust defenses.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
             "relatedResources": []
         },
         {
@@ -92,54 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/eurail-says-december-data-breach-impacts-300-000-individuals/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Adobe Reader Zero-Day Exploited Since December—Urgent Patch Needed",
-            "title": "Hackers Exploit Adobe Reader Zero-Day Flaw with Malicious PDFs",
-            "content": "Since December 2025, attackers have been exploiting a zero-day vulnerability in Adobe Reader through maliciously crafted PDF documents. This flaw, affecting versions prior to 2025.012.20093, enables remote code execution, posing a severe risk to users who interact with untrusted PDFs. The ongoing exploitation of this vulnerability highlights the need for immediate action from users and organizations to update Adobe Reader to the latest version. Security teams should also implement measures to detect and block malicious PDFs at the network level. This case exemplifies the persistent threats posed by unpatched software vulnerabilities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploiting-acrobat-reader-zero-day-flaw-since-december/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Adobe Reader Zero-Day Exploited for Months—Researcher Warns",
-            "title": "Researcher Confirms Adobe Reader Zero-Day Exploitation Since December",
-            "content": "Security researcher Haifei Li has identified a PDF designed to exploit an unpatched zero-day vulnerability in Adobe Reader, which has been actively targeted since December 2025. This vulnerability allows attackers to execute arbitrary code on affected systems, posing a significant threat to users who open malicious PDFs. Adobe Reader versions prior to 2025.012.20093 are vulnerable, and users are strongly advised to update to the latest version immediately. This discovery underscores the critical importance of timely software updates and vigilance against opening untrusted documents. Organizations should enhance their security protocols to mitigate such risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/adobe-reader-zero-day-exploited-for-months-researcher/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "100 Magento Stores Hit by SVG Credit Card Stealer",
-            "title": "Hackers Exploit SVG Images to Conceal Credit Card Theft Code",
-            "content": "A sophisticated hacking campaign has compromised nearly 100 online stores using the Magento e-commerce platform by embedding credit card-stealing code within a pixel-sized Scalable Vector Graphics (SVG) image. This technique allows attackers to evade detection while siphoning off sensitive payment information. The attack highlights the vulnerability of e-commerce platforms to novel obfuscation methods. Security professionals managing Magento-based sites should conduct thorough code audits and implement robust security measures to detect and prevent such hidden threats. This incident underscores the ongoing evolution of cybercriminal tactics targeting online retailers.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-use-pixel-large-svg-trick-to-hide-credit-card-stealer/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "CISA Mandates Patch for Ivanti EPMM Flaw by Sunday",
-            "title": "Urgent CISA Directive: Patch Ivanti EPMM Vulnerability Exploited Since January",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive to U.S. federal agencies to patch a critical vulnerability in Ivanti Endpoint Manager Mobile (EPMM) by Sunday. The flaw, which has been actively exploited since January, poses a significant risk to government systems. This vulnerability allows attackers to execute arbitrary code, potentially compromising sensitive data and operations. Agencies are urged to prioritize this patch to mitigate the threat and protect their networks. This directive reflects CISA&#x27;s proactive stance in safeguarding national cybersecurity infrastructure.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-ivanti-epmm-flaw-by-sunday/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "13-Year-Old ActiveMQ Flaw Enables Remote Code Execution",
-            "title": "Long-Standing ActiveMQ Vulnerability Allows Remote Command Execution",
-            "content": "A remote code execution (RCE) vulnerability has been identified in Apache ActiveMQ Classic, remaining undetected for 13 years. This flaw allows attackers to execute arbitrary commands remotely, posing a significant threat to systems utilizing this messaging server. While exploitation requires authentication, an additional flaw exposes the Jolokia API, potentially bypassing this requirement. Organizations using ActiveMQ should update to the latest version and review their security configurations to prevent exploitation. This discovery highlights the importance of continuous security assessments for legacy systems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/13-year-old-bug-in-activemq-lets-hackers-remotely-execute-commands/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 10 2026",
+            "headline": "Sam Altman Reinstated as OpenAI CEO Amidst Organizational Overhaul",
+            "title": "OpenAI&#x27;s Leadership Turmoil: Sam Altman&#x27;s Brief Ouster and Return",
+            "content": "Sam Altman&#x27;s leadership at OpenAI has been turbulent, culminating in his brief removal as CEO before being reinstated. The New Yorker recently published an in-depth examination of Altman&#x27;s tenure, highlighting significant organizational changes he initiated upon his return. These changes are aimed at reshaping OpenAI&#x27;s strategic direction and operational structure. The internal upheaval reflects broader challenges faced by AI companies in balancing innovation with governance. Stakeholders are closely watching how these developments will impact OpenAI&#x27;s future projects and collaborations. The incident underscores the volatility and high stakes in the AI industry.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/909621/openai-sam-altman-drama-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Gen Z&#x27;s AI Disillusionment: Usage Remains Despite Waning Hype",
+            "title": "Gallup Report Reveals Gen Z&#x27;s Complex Relationship with AI",
+            "content": "A Gallup report reveals that Gen Z, despite growing disillusionment, continues to heavily utilize AI technologies. Surveying nearly 1,600 individuals aged 14 to 29 across the U.S., the report indicates a decline in enthusiasm as AI becomes more integrated into educational and personal spheres. This trend suggests a maturing perspective on AI&#x27;s role and limitations among digital natives. The findings highlight a need for AI developers to address user concerns and enhance transparency. As AI&#x27;s presence in daily life expands, understanding generational attitudes becomes crucial for future adoption strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/909687/gen-z-doesnt-like-ai-gallup",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Microsoft Streamlines Windows 11 Apps—Removes Copilot Buttons",
+            "title": "Microsoft Revamps Windows 11 Apps by Eliminating Copilot Buttons",
+            "content": "Microsoft is refining its Windows 11 apps by removing the Copilot buttons deemed unnecessary, starting with the Notepad and Snipping Tool applications. In the latest Windows Insider update, these buttons are replaced with a &quot;writing tools&quot; menu, streamlining user interfaces and enhancing functionality. This move reflects Microsoft&#x27;s ongoing efforts to optimize user experience and reduce interface clutter. The changes are part of a broader strategy to integrate AI-driven features more seamlessly into Windows applications. Users should anticipate further updates as Microsoft continues to refine its software ecosystem.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/909640/microsoft-removing-copilot-windows-11-buttons",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Florida AG Probes OpenAI Over ChatGPT&#x27;s Alleged Role in Shooting",
+            "title": "Investigation Launched into ChatGPT&#x27;s Alleged Involvement in Florida Shooting",
+            "content": "The Florida Attorney General has initiated an investigation into OpenAI following allegations that ChatGPT was used to plan a deadly shooting at Florida State University. The incident resulted in two fatalities and five injuries, prompting legal action from the victim&#x27;s family against OpenAI. This case raises significant questions about AI&#x27;s role in facilitating criminal activities and the responsibilities of AI developers. The investigation could lead to increased regulatory scrutiny and calls for enhanced safety measures in AI deployment. Stakeholders should monitor developments closely as they may influence future AI governance frameworks.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Meta AI App Surges to No. 5 on App Store Rankings",
+            "title": "Meta AI&#x27;s Muse Spark Propels App to Top 5 on App Store",
+            "content": "Meta AI&#x27;s latest model, Muse Spark, has catapulted its app from No. 57 to No. 5 on the App Store rankings. This rapid ascent underscores the model&#x27;s popularity and effectiveness in capturing user interest. Muse Spark&#x27;s launch has significantly boosted app engagement, reflecting Meta&#x27;s strategic focus on AI-driven innovation. The app&#x27;s success highlights the competitive landscape of AI applications and the importance of continuous model development. Developers and tech leaders should note the impact of cutting-edge AI models on market positioning and user adoption.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Anthropic Limits Mythos Release Citing Security Exploit Concerns",
+            "title": "Anthropic Restricts Mythos Model Release Over Security Exploit Fears",
+            "content": "Anthropic has decided to limit the release of its latest AI model, Mythos, citing its advanced capability to identify security exploits in widely used software. This decision raises questions about whether the restriction is genuinely for cybersecurity reasons or to protect Anthropic&#x27;s interests. The model&#x27;s potential to uncover vulnerabilities poses both opportunities and risks, necessitating careful consideration of its deployment. This move reflects ongoing debates about the ethical and practical implications of powerful AI technologies. Stakeholders should evaluate the balance between innovation and security in AI advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 09 2026",
             "headline": "Mercor Faces Lawsuits After $10B Startup&#x27;s Data Breach",
@@ -147,15 +201,6 @@ const websiteContent = {
             "content": "Mercor, a startup valued at $10 billion, is grappling with significant fallout after a recent data breach. The breach has led to multiple lawsuits and a reported loss of high-profile clients. The incident underscores the vulnerabilities even well-funded tech companies face in safeguarding sensitive data. As the company works to contain the damage, affected clients are evaluating their security protocols and considering alternative service providers. This breach highlights the critical need for robust cybersecurity measures and incident response plans in high-value startups. Security professionals should monitor developments closely as the situation evolves.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Google&#x27;s AI Overviews—Millions of Errors Per Hour",
-            "title": "Google&#x27;s AI Overviews Under Scrutiny for High Error Rate",
-            "content": "Google&#x27;s AI Overviews, a feature designed to enhance search results, is under fire for generating millions of inaccuracies per hour. Despite achieving a 90% accuracy rate, the sheer volume of queries processed means a significant number of errors persist. This raises concerns about the reliability of AI-driven search enhancements, particularly in critical information contexts. Users relying on these overviews for decision-making should exercise caution and verify information through multiple sources. The situation highlights ongoing challenges in AI accuracy and the need for continuous improvement in AI models.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Hugging Face has introduced new capabilities in multimodal embedding and reranker models using Sentence Transformers. These advancements allow for more efficient processing of diverse data types, improving the accuracy and performance of AI models in tasks like search and recommendation systems. The integration of multimodal embeddings enhances the ability to handle text, image, and other data formats simultaneously, reflecting a significant trend in AI towards more versatile and comprehensive model architectures. Developers and researchers can leverage these tools to build more robust applications that require nuanced data interpretation.",
             "source": "Hugging Face - Blog",
             "sourceUrl": "https://huggingface.co/blog/multimodal-sentence-transformers",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "Musk Pledges OpenAI Suit Damages to Nonprofit",
-            "title": "Elon Musk Offers OpenAI Suit Damages to Nonprofit Organization",
-            "content": "Elon Musk has declared that he will not seek personal financial gain from his lawsuit against OpenAI, opting instead to donate any awarded damages to the OpenAI nonprofit. Initially, Musk had sought up to $134 billion in damages, but this move shifts the focus from financial compensation to supporting OpenAI&#x27;s mission. This legal battle highlights ongoing tensions between Musk and OpenAI, stemming from disagreements over AI development and governance. The decision to forgo personal gain underscores Musk&#x27;s commitment to advancing AI for public benefit, though it remains to be seen how this will influence the lawsuit&#x27;s outcome.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/04/to-beat-altman-in-court-musk-offers-to-give-all-damages-to-open-ai-nonprofit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "Meta Unveils Muse Spark—A New AI Model for US Users",
-            "title": "Meta Reenters AI Arena with Muse Spark Model Launch",
-            "content": "Meta has announced the launch of Muse Spark, a new AI model developed by Meta Superintelligence Labs, marking the company&#x27;s reentry into the AI race. This model now powers the Meta AI app and website in the United States, following significant investments by Mark Zuckerberg to revamp Meta&#x27;s AI capabilities. Muse Spark is designed to enhance user interactions and improve AI-driven services across Meta&#x27;s platforms. This development signals Meta&#x27;s renewed commitment to competing in the AI sector, leveraging advanced models to deliver innovative solutions. Users can expect enhanced AI functionalities in upcoming updates.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/908769/meta-muse-spark-ai-model-launch-rollout",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "Meta Unveils Muse Spark—First AI Model Since Superintelligence Labs",
-            "title": "Meta Launches Proprietary AI Model Muse Spark Post-Superintelligence Labs Formation",
-            "content": "Meta has introduced Muse Spark, its latest proprietary AI model, marking the company&#x27;s first significant release since the establishment of Superintelligence Labs. This launch follows the cessation of the Llama series, which gained popularity for its open-source nature. Muse Spark is designed to enhance generative AI capabilities, though specific technical details about its architecture remain undisclosed. The model aims to cater to enterprise needs, potentially impacting sectors reliant on advanced AI solutions. Professionals should monitor Muse Spark&#x27;s integration into Meta&#x27;s ecosystem, as it may influence AI development trends and enterprise adoption strategies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/goodbye-llama-meta-launches-new-proprietary-ai-model-muse-spark-first-since",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "US Army Develops AI Chatbot for Combat Missions",
-            "title": "US Army Constructs Mission-Critical AI Chatbot for Combat Operations",
-            "content": "The US Army is developing an AI chatbot designed to provide soldiers with mission-critical information during combat. This system, trained on authentic military data, aims to enhance decision-making and operational efficiency in the field. By leveraging AI, the Army seeks to streamline information dissemination and improve real-time situational awareness for troops. The initiative underscores the growing role of AI in military applications, potentially setting a precedent for future defense technologies. Stakeholders in defense and AI sectors should consider the implications of AI-driven decision support systems in combat scenarios.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/army-developing-ai-system-victor-chatbot-soldiers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Google Adds Notebooks to Gemini for Project Organization",
-            "title": "Google&#x27;s Gemini Introduces Notebooks Feature for Enhanced Project Management",
-            "content": "Google has announced a new feature called &quot;notebooks&quot; for its AI chatbot Gemini, designed to help users organize projects more effectively. This feature allows users to consolidate files, past conversations, and custom instructions in one place, streamlining project management. The integration of notebooks into Gemini highlights Google&#x27;s commitment to enhancing user productivity through AI. This development may influence how professionals manage complex projects, offering a more structured approach to information handling. Users should explore the notebooks feature to optimize their workflow and leverage Gemini&#x27;s capabilities fully.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/909031/google-gemini-notebooks-notebooklm",
             "relatedResources": []
         }
     ],
