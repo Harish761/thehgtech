@@ -1031,20 +1031,12 @@
       "date": "2026-01-10",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1336",
-      "incident_id": 1336,
-      "title": "BJP Used Deepfake Videos of Manoj Tiwari to Target Haryanvi Voters in 2020 Delhi Election",
-      "date": "2026-01-10",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 130,
+    "total": 129,
     "last7Days": 11,
-    "last30Days": 50
+    "last30Days": 49
   },
-  "lastUpdated": "2026-04-10T22:32:11.015527+05:30"
+  "lastUpdated": "2026-04-11T00:57:01.537862+05:30"
 }
