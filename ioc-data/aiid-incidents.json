@@ -1025,14 +1025,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1325",
-      "incident_id": 1325,
-      "title": "Reported AI-Generated Deepfake Videos Impersonating Elon Musk and Dragon\u2019s Den Allegedly Used in Cry",
-      "date": "2026-01-10",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1335",
       "incident_id": 1335,
       "title": "OpenDream AI Platform Reportedly Commercialized AI-Generated CSAM and Non-consensual Deepfake Sexual",
@@ -1050,9 +1042,9 @@
     }
   ],
   "stats": {
-    "total": 131,
+    "total": 130,
     "last7Days": 11,
     "last30Days": 50
   },
-  "lastUpdated": "2026-04-10T14:51:16.866544+05:30"
+  "lastUpdated": "2026-04-10T19:14:11.440800+05:30"
 }
