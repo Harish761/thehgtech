@@ -1033,62 +1033,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1326",
-      "incident_id": 1326,
-      "title": "Waymo Robotaxis Allegedly Contributed to Traffic Gridlock During San Francisco PG&E Power Outage",
-      "date": "2026-01-10",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1327",
-      "incident_id": 1327,
-      "title": "Reported AI-Generated Deepfake Romance Scam Allegedly Used to Steal One Bitcoin From Recently Divorc",
-      "date": "2026-01-10",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1328",
-      "incident_id": 1328,
-      "title": "Purported Deepfake Impersonating Elon Musk Allegedly Defrauded Elderly U.S. Woman of $50,000 via Gif",
-      "date": "2026-01-10",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1330",
-      "incident_id": 1330,
-      "title": "Purportedly AI-Generated 'Eric Langford' Missing Boy Scout Hoax Circulating Across Multiple Social M",
-      "date": "2026-01-10",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1331",
-      "incident_id": 1331,
-      "title": "Purported Deepfake Videos Reportedly Impersonated Yanis Varoufakis on YouTube and Social Media",
-      "date": "2026-01-10",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1332",
-      "incident_id": 1332,
-      "title": "National Weather Service Reportedly Published AI-Generated Forecast Map With Fabricated Idaho Town N",
-      "date": "2026-01-10",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1333",
-      "incident_id": 1333,
-      "title": "Purportedly AI-Generated Images and Videos Reportedly Spread Misinformation About Nicol\u00e1s Maduro's C",
-      "date": "2026-01-10",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1335",
       "incident_id": 1335,
       "title": "OpenDream AI Platform Reportedly Commercialized AI-Generated CSAM and Non-consensual Deepfake Sexual",
@@ -1103,20 +1047,12 @@
       "date": "2026-01-10",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1337",
-      "incident_id": 1337,
-      "title": "Waymo Robotaxi Reportedly Transported Undetected Person Trapped in Trunk in Los Angeles",
-      "date": "2026-01-10",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 139,
+    "total": 131,
     "last7Days": 11,
     "last30Days": 50
   },
-  "lastUpdated": "2026-04-10T02:33:30.149563+05:30"
+  "lastUpdated": "2026-04-10T09:06:14.970360+05:30"
 }
