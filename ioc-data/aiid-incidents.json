@@ -9,6 +9,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1448",
+      "incident_id": 1448,
+      "title": "Ohio Man Pleaded Guilty after Prosecutors Alleged He Used AI to Create and Distribute Nonconsensual ",
+      "date": "2026-04-11",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1445",
       "incident_id": 1445,
       "title": "Lower Saxony CDU Employee Allegedly Shared Sexualized Purported Deepfake of Colleague in Internal Wh",
@@ -1010,9 +1018,9 @@
     }
   ],
   "stats": {
-    "total": 126,
-    "last7Days": 12,
+    "total": 127,
+    "last7Days": 9,
     "last30Days": 50
   },
-  "lastUpdated": "2026-04-11T22:21:50.216836+05:30"
+  "lastUpdated": "2026-04-12T00:41:49.929069+05:30"
 }
