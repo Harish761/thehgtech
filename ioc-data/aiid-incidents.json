@@ -999,44 +999,12 @@
       "date": "2026-01-17",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1338",
-      "incident_id": 1338,
-      "title": "Purported Deepfake Endorsements Reportedly Used to Promote Fraudulent Health and Investment Products",
-      "date": "2026-01-11",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1339",
-      "incident_id": 1339,
-      "title": "Purportedly AI-Cloned Voice Allegedly Used to Defraud Play School Owner of \u20b997,500 (~$1.080 USD) in ",
-      "date": "2026-01-11",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-826",
-      "incident_id": 826,
-      "title": "Character.ai Chatbot Allegedly Influenced Teen User Toward Suicide Amid Claims of Missing Guardrails",
-      "date": "2026-01-10",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1335",
-      "incident_id": 1335,
-      "title": "OpenDream AI Platform Reportedly Commercialized AI-Generated CSAM and Non-consensual Deepfake Sexual",
-      "date": "2026-01-10",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 129,
+    "total": 125,
     "last7Days": 11,
     "last30Days": 49
   },
-  "lastUpdated": "2026-04-11T02:22:10.433858+05:30"
+  "lastUpdated": "2026-04-11T08:45:29.015455+05:30"
 }
