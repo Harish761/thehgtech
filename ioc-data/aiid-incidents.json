@@ -17,6 +17,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1449",
+      "incident_id": 1449,
+      "title": "Delaware Court Found Krafton Followed Most of ChatGPT's Recommendations in Campaign that Wrongfully ",
+      "date": "2026-04-11",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1450",
+      "incident_id": 1450,
+      "title": "Florida Man Allegedly Used Purported Deepfake Video to Report Break-In of Deputy's Patrol Vehicle in",
+      "date": "2026-04-11",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1445",
       "incident_id": 1445,
       "title": "Lower Saxony CDU Employee Allegedly Shared Sexualized Purported Deepfake of Colleague in Internal Wh",
@@ -1018,9 +1034,9 @@
     }
   ],
   "stats": {
-    "total": 127,
-    "last7Days": 9,
-    "last30Days": 50
+    "total": 129,
+    "last7Days": 11,
+    "last30Days": 52
   },
-  "lastUpdated": "2026-04-12T00:41:49.929069+05:30"
+  "lastUpdated": "2026-04-12T02:18:54.377477+05:30"
 }
