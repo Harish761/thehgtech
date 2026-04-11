@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 11 2026",
+            "headline": "Webloc Tool Tracks 500M Devices—Law Enforcement Implicated",
+            "title": "Global Surveillance System Webloc Used by Law Enforcement to Track Devices",
+            "content": "Citizen Lab has revealed that law enforcement agencies in Hungary, El Salvador, and the U.S. have utilized Webloc, a geolocation surveillance tool developed by Cobwebs Technologies, to track 500 million devices worldwide. Webloc leverages advertising data to pinpoint device locations, raising significant privacy concerns. The tool&#x27;s deployment highlights the increasing use of commercial surveillance technologies by government entities. This development underscores the need for stricter regulations on the use of such technologies to protect individual privacy. Security professionals should be aware of the potential misuse of advertising data in surveillance activities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Hybrid P2P Botnet and Apache RCE—ThreatsDay Highlights",
+            "title": "ThreatsDay Bulletin: Hybrid P2P Botnet and Apache RCE Among 20 Stories",
+            "content": "The latest ThreatsDay Bulletin highlights a range of cybersecurity issues, including a hybrid peer-to-peer botnet and a 13-year-old remote code execution (RCE) vulnerability in Apache. The bulletin emphasizes the resurgence of old vulnerabilities and the exploitation of platforms and tools in unexpected ways. Security professionals are urged to review their systems for these vulnerabilities and apply necessary patches. The bulletin serves as a reminder of the persistent nature of cybersecurity threats and the importance of proactive defense measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/threatsday-bulletin-hybrid-p2p-botnet.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Adobe Reader Zero-Day Exploited Since December—Patch Urgently",
+            "title": "Adobe Reader Zero-Day Vulnerability Exploited via Malicious PDFs",
+            "content": "A zero-day vulnerability in Adobe Reader has been actively exploited since December 2025 through maliciously crafted PDF documents. Discovered by EXPMON&#x27;s Haifei Li, the exploit involves a sophisticated PDF artifact dubbed &quot;Invoice.&quot; This vulnerability poses a significant risk to Adobe Reader users, potentially allowing attackers to execute arbitrary code. Users are advised to update Adobe Reader to the latest version immediately to mitigate this threat. The incident highlights the ongoing challenge of securing widely-used software against advanced threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/adobe-reader-zero-day-exploited-via.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Eurail Data Breach Exposes 300K Individuals&#x27; Information",
+            "title": "Eurail December Data Breach Affects 300,000 Individuals",
+            "content": "Eurail B.V., a provider of digital rail passes across Europe, has disclosed a data breach that compromised the personal information of over 300,000 individuals in December 2025. The breach involved unauthorized access to sensitive data, raising concerns about data protection practices. Affected individuals may face risks such as identity theft and fraud. Eurail is taking steps to enhance its security measures and prevent future incidents. Customers are advised to monitor their accounts for suspicious activity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/eurail-says-december-data-breach-impacts-300-000-individuals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 11 2026",
+            "headline": "ChatGPT Pro Subscription Launches—Challenges Claude at $100",
+            "title": "OpenAI Introduces $100 Pro Subscription for ChatGPT to Compete with Claude",
+            "content": "OpenAI has launched a new Pro subscription for ChatGPT, priced at $100, aligning with Claude&#x27;s pricing strategy. This move aims to enhance ChatGPT&#x27;s competitive edge in the AI market, offering advanced features and capabilities to subscribers. The subscription model reflects the growing trend of monetizing AI services through tiered pricing. Users considering the Pro plan should evaluate the additional benefits against their specific needs. This development highlights the evolving landscape of AI service offerings and pricing strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-rolls-out-new-100-pro-subscription-to-challenge-claude/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Docker Authorization Bypass Resurfaces—Patch Urgently Needed",
+            "title": "Old Docker Authorization Bypass Vulnerability Resurfaces Despite Patch",
+            "content": "Researchers have identified a vulnerability in Docker Engine that allows attackers to bypass authorization plug-ins, gaining root-level access to host systems. This flaw, similar to a previously patched vulnerability from 2024, underscores persistent security challenges in container environments. The issue affects systems using Docker&#x27;s authorization mechanisms, posing significant risks to containerized applications. Administrators are urged to review their Docker configurations and apply security updates promptly. This incident highlights the need for continuous vigilance in securing container technologies.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4157405/old-docker-authorization-bypass-pops-up-despite-previous-patch.html",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 10 2026",
             "headline": "4,000 US Industrial Devices Vulnerable to Iranian Cyberattacks",
             "title": "Iranian Hackers Target 4,000 US Industrial Devices in Cyberattacks",
@@ -49,15 +103,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 06 2026",
-            "headline": "Germany Unmasks &quot;UNKN&quot;—Leader of REvil, GandCrab",
-            "title": "German Authorities Reveal Identity of REvil and GandCrab Leader",
-            "content": "German authorities have identified Daniil Maksimovich Shchukin as the elusive hacker known as &quot;UNKN,&quot; who led the notorious Russian ransomware groups REvil and GandCrab. Shchukin is accused of orchestrating at least 130 cybercrimes, including high-profile ransomware attacks that have caused significant financial and operational damage worldwide. This revelation marks a significant breakthrough in the fight against ransomware, as law enforcement agencies continue to dismantle cybercriminal networks. Organizations are reminded to bolster their defenses against ransomware by implementing robust backup solutions, employee training, and incident response plans. The unmasking of &quot;UNKN&quot; serves as a reminder of the persistent threat posed by organized cybercrime.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 10 2026",
             "headline": "Juniper Networks Fixes Critical Junos OS Flaw—Patch Now",
             "title": "Juniper Networks Patches Critical Remote Exploitation Flaw in Junos OS",
@@ -92,54 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/orthanc-dicom-vulnerabilities-lead-to-crashes-rce/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Chrome 147 Fixes 60 Bugs—$86K for Critical Flaws",
-            "title": "Chrome 147 Update Addresses 60 Vulnerabilities, Including Critical WebML Flaws",
-            "content": "Google has released Chrome version 147, patching 60 vulnerabilities, including two critical flaws in the WebML component. These critical vulnerabilities, reported by anonymous researchers, could allow attackers to execute arbitrary code, posing significant security risks. The total bounty for these critical flaws reached $86,000, reflecting their severity. Users are urged to update to the latest version to protect against potential exploitation. This update is part of Google&#x27;s ongoing efforts to enhance browser security and protect users from emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-147-patches-60-vulnerabilities-including-two-critical-flaws-worth-86000/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Marimo Flaw Exploited in 9 Hours—Immediate Action Required",
-            "title": "Critical Marimo Vulnerability Exploited Hours After Disclosure",
-            "content": "A critical vulnerability in the Marimo software was exploited just nine hours after its public disclosure, highlighting the rapid response capabilities of threat actors. The unauthenticated bug allows attackers to execute arbitrary code, posing severe risks to affected systems. This swift exploitation underscores the importance of timely patching and vulnerability management. Organizations using Marimo should apply the latest patches immediately to mitigate potential attacks. This incident serves as a stark reminder of the speed at which cyber threats can evolve and the necessity for proactive security measures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-marimo-flaw-exploited-hours-after-public-disclosure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "ChipSoft Ransomware Attack Disrupts Dutch Healthcare Services",
-            "title": "Ransomware Attack Forces ChipSoft to Halt Digital Healthcare Services",
-            "content": "Dutch healthcare IT provider ChipSoft has been hit by a ransomware attack, compelling the company to take its website and digital services offline. This disruption affects both patients and healthcare providers who rely on ChipSoft&#x27;s systems for critical operations. The attack underscores the vulnerability of healthcare IT infrastructure to cyber threats, particularly ransomware, which can severely impact patient care and data security. While the specific ransomware variant has not been disclosed, the incident highlights the urgent need for robust cybersecurity measures in healthcare. Organizations are advised to review their cybersecurity protocols and ensure all systems are updated and backed up regularly.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/healthcare-it-solutions-provider-chipsoft-hit-by-ransomware-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Eurail Data Breach Exposes 300K Passengers&#x27; Personal Data",
-            "title": "Eurail Breach Compromises Names and Passport Numbers of 300,000 Travelers",
-            "content": "A data breach at European travel company Eurail has exposed the names and passport numbers of 300,000 individuals. The breach, which occurred in December 2025, involved unauthorized access to Eurail&#x27;s network, compromising sensitive personal information. This incident raises significant privacy concerns and highlights the ongoing risks of data breaches in the travel industry. Affected individuals should monitor their personal accounts for suspicious activity and consider identity protection services. Eurail is urged to enhance its cybersecurity measures to prevent future breaches and protect customer data.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/300000-people-impacted-by-eurail-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Microsoft Halts Dev Accounts—Open Source Projects in Limbo",
-            "title": "Microsoft Suspends Developer Accounts for Key Open Source Projects",
-            "content": "Microsoft has suspended several developer accounts responsible for maintaining high-profile open-source projects, leaving them unable to publish software updates or security patches. The suspension was enacted without prior notification, causing significant disruption to the open-source community and potentially impacting Windows users who rely on these projects for security and functionality. This move raises concerns about the management of developer accounts and the need for clear communication channels between platform providers and developers. Affected developers are seeking reinstatement and clarity on the suspension criteria.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-suspends-dev-accounts-for-high-profile-open-source-projects/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 11 2026",
+            "headline": "Iran’s Media Blitz Outpaces White House in Information Warfare",
+            "title": "Iran’s State Media Dominates Early War Narrative with Ground Videos",
+            "content": "In the initial phase of the conflict with Iran, the Iranian regime&#x27;s state media effectively overshadowed the White House&#x27;s digital efforts by disseminating a continuous stream of on-the-ground videos. These videos depicted real-time explosions and smoke over Tehran, contrasting sharply with the White House&#x27;s reliance on AI-generated content and memes. This strategic media blitz by Iran highlights the power of real-time, authentic content in shaping public perception during conflicts. The White House&#x27;s approach, featuring AI-generated imagery, failed to resonate with audiences seeking tangible updates. This case underscores the importance of strategic communication in modern warfare, where digital narratives can significantly influence global opinion.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/910401/iran-war-propaganda-blackout-lego-ai-slop",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Molotov Attack on OpenAI CEO’s Home—Suspect Arrested",
+            "title": "20-Year-Old Arrested for Molotov Cocktail Attack on Sam Altman’s Residence",
+            "content": "San Francisco police have apprehended a 20-year-old man suspected of launching a Molotov cocktail at the residence of Sam Altman, CEO of OpenAI, in the Russian Hill area. The incident, captured on surveillance cameras, occurred early Friday morning, shortly before 7 AM ET. This attack raises concerns about the safety of tech executives amid rising tensions surrounding AI developments. The suspect&#x27;s motives remain unclear, but the incident underscores the potential risks faced by high-profile figures in the tech industry. Security measures for executives may need reevaluation in light of such threats.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/910393/openai-sam-altman-house-molotov-cocktail",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Iranian AI Lego Videos Go Viral—Creators Credit ‘Heart’",
+            "title": "Iranian AI-Generated Lego Videos Gain Virality Amidst Conflict",
+            "content": "Iranian content creators from Explosive Media have achieved viral success with AI-generated Lego videos depicting alternative narratives of recent military events. These videos, contrasting with official accounts, have captivated audiences by blending creativity with current events. The creators attribute their success to the emotional depth and relatability embedded in their content, which resonates with viewers globally. This phenomenon illustrates the growing influence of AI in media production and its ability to challenge traditional narratives. As AI tools become more accessible, content creators worldwide are leveraging them to craft compelling stories that engage diverse audiences.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/909948/explosive-media-lego-iran-war-trump-netanyahu",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Stalking Victim Sues OpenAI—ChatGPT Allegedly Ignored Warnings",
+            "title": "Lawsuit Claims OpenAI’s ChatGPT Ignored Warnings About Dangerous User",
+            "content": "A new lawsuit has been filed against OpenAI, alleging that the company ignored multiple warnings about a ChatGPT user who stalked and harassed his ex-girlfriend. Despite receiving three warnings, including a mass-casualty flag, OpenAI purportedly failed to take action. This case highlights the potential risks associated with AI platforms when user behavior is not adequately monitored or addressed. The lawsuit raises questions about the responsibility of AI developers in preventing misuse of their technologies. As AI systems become more integrated into daily life, ensuring user safety and addressing harmful behavior remain critical challenges for developers.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/10/stalking-victim-sues-openai-claims-chatgpt-fueled-her-abusers-delusions-and-ignored-her-warnings/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "TechCrunch Takes Startup Battlefield to Tokyo—Focus on AI and Robotics",
+            "title": "TechCrunch’s SusHi Tech 2026 to Spotlight AI, Robotics, and Resilience",
+            "content": "TechCrunch is set to host its SusHi Tech 2026 event in Tokyo, focusing on four transformative technology domains: AI, Robotics, Resilience, and Entertainment. The event will feature live demonstrations of humanoid robots, discussions on the software revolution in autonomous driving, and deep dives into cyber defense and climate technology. This gathering aims to foster innovation and collaboration among tech leaders, developers, and startups. Attendees can expect candid conversations on the future of technology and its societal impacts. The event underscores Tokyo&#x27;s growing role as a hub for technological advancement and innovation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/10/techcrunch-is-heading-to-tokyo-and-bringing-the-startup-battlefield-with-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "Meta Unveils Muse Spark—First AI Model Since Superintelligence Labs",
+            "title": "Meta Launches Proprietary AI Model Muse Spark Post-Llama Era",
+            "content": "Meta has introduced Muse Spark, its first proprietary AI model since the formation of Superintelligence Labs, marking a shift from its previous Llama family of large language models (LLMs). The launch follows the discontinuation of Llama 4, which had previously garnered a significant user base. Muse Spark aims to enhance Meta&#x27;s capabilities in generative AI, offering improved performance and scalability. This development reflects Meta&#x27;s strategic pivot towards proprietary solutions in the competitive AI landscape. The introduction of Muse Spark is expected to influence the direction of AI research and application across various sectors.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/goodbye-llama-meta-launches-new-proprietary-ai-model-muse-spark-first-since",
+            "relatedResources": []
+        },
         {
             "date": "Apr 10 2026",
             "headline": "ChatGPT Transforms Research—Enhance Insights with AI",
@@ -165,15 +219,6 @@ const websiteContent = {
             "content": "OpenAI has detailed how ChatGPT can be effectively used for research purposes, focusing on gathering sources, analyzing information, and creating structured, citation-backed insights. This approach empowers researchers to efficiently compile and interpret data, enhancing the credibility and depth of their findings. The integration of AI in research processes reflects a broader trend towards data-driven decision-making and evidence-based analysis. Researchers are encouraged to adopt ChatGPT to streamline their research methodologies, ensuring accuracy and comprehensiveness in their outputs. This development underscores the transformative potential of AI in academic and professional research environments.",
             "source": "OpenAI News",
             "sourceUrl": "https://openai.com/academy/research",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Google AI Overviews—Accuracy Concerns Amidst Rapid Output",
-            "title": "Google AI Overviews Under Scrutiny for Accuracy Issues",
-            "content": "Testing has revealed that Google&#x27;s AI Overviews may be generating millions of inaccuracies per hour, raising concerns about the reliability of its search outputs. Despite a reported 90 percent accuracy rate, the sheer volume of queries handled by the AI results in significant misinformation. This issue highlights the challenges faced by AI systems in maintaining precision at scale, particularly in critical applications like search engines. Users and developers are urged to critically evaluate AI-generated information and consider supplementary verification methods. The situation underscores the need for continuous improvement in AI accuracy and reliability.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "The Florida Attorney General has initiated an investigation into OpenAI following allegations that ChatGPT was used to plan a deadly shooting at Florida State University. The incident resulted in two fatalities and five injuries, prompting legal action from the victim&#x27;s family against OpenAI. This case raises significant questions about AI&#x27;s role in facilitating criminal activities and the responsibilities of AI developers. The investigation could lead to increased regulatory scrutiny and calls for enhanced safety measures in AI deployment. Stakeholders should monitor developments closely as they may influence future AI governance frameworks.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Meta AI App Surges to No. 5 on App Store Rankings",
-            "title": "Meta AI&#x27;s Muse Spark Propels App to Top 5 on App Store",
-            "content": "Meta AI&#x27;s latest model, Muse Spark, has catapulted its app from No. 57 to No. 5 on the App Store rankings. This rapid ascent underscores the model&#x27;s popularity and effectiveness in capturing user interest. Muse Spark&#x27;s launch has significantly boosted app engagement, reflecting Meta&#x27;s strategic focus on AI-driven innovation. The app&#x27;s success highlights the competitive landscape of AI applications and the importance of continuous model development. Developers and tech leaders should note the impact of cutting-edge AI models on market positioning and user adoption.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Anthropic Limits Mythos Release Citing Security Exploit Concerns",
-            "title": "Anthropic Restricts Mythos Model Release Over Security Exploit Fears",
-            "content": "Anthropic has decided to limit the release of its latest AI model, Mythos, citing its advanced capability to identify security exploits in widely used software. This decision raises questions about whether the restriction is genuinely for cybersecurity reasons or to protect Anthropic&#x27;s interests. The model&#x27;s potential to uncover vulnerabilities poses both opportunities and risks, necessitating careful consideration of its deployment. This move reflects ongoing debates about the ethical and practical implications of powerful AI technologies. Stakeholders should evaluate the balance between innovation and security in AI advancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Mercor Faces Lawsuits After $10B Startup&#x27;s Data Breach",
-            "title": "Mercor&#x27;s Data Breach Leads to Legal Challenges and Customer Losses",
-            "content": "Mercor, a startup valued at $10 billion, is grappling with significant fallout after a recent data breach. The breach has led to multiple lawsuits and a reported loss of high-profile clients. The incident underscores the vulnerabilities even well-funded tech companies face in safeguarding sensitive data. As the company works to contain the damage, affected clients are evaluating their security protocols and considering alternative service providers. This breach highlights the critical need for robust cybersecurity measures and incident response plans in high-value startups. Security professionals should monitor developments closely as the situation evolves.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "OpenAI Supports Bill Limiting AI Liability in Disasters",
-            "title": "OpenAI Advocates for Limited Liability in AI-Induced Catastrophes",
-            "content": "OpenAI has expressed support for an Illinois bill that seeks to limit liability for AI labs in cases of mass deaths or financial disasters caused by their technologies. The legislation aims to define the extent of accountability for AI developers when their products result in critical harm. OpenAI&#x27;s backing of this bill reflects the industry&#x27;s concern over potential legal repercussions as AI systems become more autonomous and impactful. This move could set a precedent for future regulatory frameworks governing AI liability. Stakeholders should monitor legislative developments and assess their implications for AI governance.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-backs-bill-exempt-ai-firms-model-harm-lawsuits/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "ChatGPT Pro Subscription—$100 Monthly for Power Users",
-            "title": "OpenAI Launches $100/Month ChatGPT Pro Subscription for Enhanced Usage",
-            "content": "OpenAI has introduced a new ChatGPT Pro subscription tier priced at $100 per month, targeting users with high-demand coding needs. This plan offers five times the usage of the Codex coding tool compared to the existing $20 per month Plus subscription. The Pro tier is designed for users requiring extended, intensive Codex sessions, providing a more robust solution for developers and tech professionals. This pricing strategy reflects OpenAI&#x27;s focus on catering to power users while monetizing its advanced AI capabilities. Developers should evaluate their usage patterns to determine the most cost-effective subscription option.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/909599/chatgpt-pro-subscription-new",
             "relatedResources": []
         }
     ],
