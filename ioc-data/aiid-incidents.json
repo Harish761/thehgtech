@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1447",
+      "incident_id": 1447,
+      "title": "Sixth Circuit Sanctioned Lawyers in Whiting v. City of Athens over Alleged Fake Appellate Citations ",
+      "date": "2026-04-11",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1445",
       "incident_id": 1445,
       "title": "Lower Saxony CDU Employee Allegedly Shared Sexualized Purported Deepfake of Colleague in Internal Wh",
@@ -1002,9 +1010,9 @@
     }
   ],
   "stats": {
-    "total": 125,
-    "last7Days": 11,
-    "last30Days": 49
+    "total": 126,
+    "last7Days": 12,
+    "last30Days": 50
   },
-  "lastUpdated": "2026-04-11T18:49:24.571276+05:30"
+  "lastUpdated": "2026-04-11T22:21:50.216836+05:30"
 }
