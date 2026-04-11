@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 10 2026",
+            "headline": "4,000 US Industrial Devices Vulnerable to Iranian Cyberattacks",
+            "title": "Iranian Hackers Target 4,000 US Industrial Devices in Cyberattacks",
+            "content": "Iranian-linked hackers have targeted nearly 4,000 U.S. industrial devices, specifically focusing on Internet-exposed programmable logic controllers (PLCs) manufactured by Rockwell Automation. These devices are integral to critical infrastructure networks, making them a prime target for cyber espionage and potential sabotage. The exposure of these devices highlights a significant vulnerability in U.S. industrial cybersecurity, with potential impacts on sectors such as energy, manufacturing, and utilities. Security professionals are urged to conduct immediate audits of their network exposure and apply recommended security patches and configurations. This incident underscores the ongoing threat posed by state-sponsored cyber actors targeting critical infrastructure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nearly-4-000-us-industrial-devices-exposed-to-iranian-cyberattacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Stryker Cyberattack, Windows Zero-Day, China Supercomputer Hack",
+            "title": "Stryker Cyberattack and Windows Zero-Day Among Recent Cybersecurity Incidents",
+            "content": "Recent cybersecurity incidents include a cyberattack on medical device manufacturer Stryker, exploitation of a Windows zero-day vulnerability, and a breach involving a Chinese supercomputer. The Windows zero-day, affecting multiple versions of the operating system, allows for remote code execution and has been actively exploited. Meanwhile, the Stryker attack raises concerns about the security of healthcare technology. Additionally, the breach of a Chinese supercomputer highlights the global reach of cyber threats. Organizations are advised to stay vigilant, apply patches promptly, and strengthen their security postures to mitigate risks. These incidents reflect the diverse and evolving nature of cyber threats facing industries worldwide.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-cyberattack-stings-stryker-windows-zero-day-china-supercomputer-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "1 Billion CISA KEV Records Reveal Security Limits",
+            "title": "Human-Scale Security Challenged by 1 Billion CISA KEV Records",
+            "content": "An analysis of one billion CISA Known Exploited Vulnerabilities (KEV) remediation records has exposed the limitations of human-scale security efforts. The study by Qualys reveals that most critical vulnerabilities are exploited before defenders can effectively patch them, highlighting a critical gap in current security practices. This finding underscores the need for automated and AI-driven solutions to enhance vulnerability management and response times. Organizations are encouraged to integrate advanced security tools and strategies to keep pace with the rapid exploitation of vulnerabilities. The report serves as a wake-up call for the cybersecurity community to rethink traditional approaches to vulnerability management.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/analysis-of-one-billion-cisa-kev-remediation-records-exposes-limits-of-human-scale-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Marimo RCE Flaw Exploited in Just 10 Hours",
+            "title": "Marimo RCE Vulnerability CVE-2026-39987 Exploited Hours After Disclosure",
+            "content": "A critical remote code execution (RCE) vulnerability in Marimo, an open-source Python notebook, was exploited within 10 hours of its public disclosure. Identified as CVE-2026-39987, the flaw has a CVSS score of 9.3 and allows for pre-authenticated remote code execution. The rapid exploitation highlights the urgency for developers and users to apply patches immediately. This incident emphasizes the need for robust security measures in open-source projects, which are often targeted due to their widespread use and accessibility. Security teams should prioritize patch management and consider implementing automated tools to detect and respond to vulnerabilities swiftly.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Acrobat Reader Zero-Day Exploited Since December",
+            "title": "Adobe Acrobat Reader Zero-Day Exploited Through Malicious PDFs",
+            "content": "Attackers have been exploiting a zero-day vulnerability in Adobe Acrobat Reader since December, using maliciously crafted PDF documents to execute attacks. This vulnerability allows for unauthorized access and potential data exfiltration, posing a significant risk to users who rely on Adobe Reader for document management. The ongoing exploitation underscores the importance of maintaining updated software and applying security patches as soon as they become available. Users are advised to exercise caution when opening PDF files from unknown sources and to implement additional security measures such as sandboxing and endpoint protection. This incident highlights the persistent threat of zero-day vulnerabilities in widely used software.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploiting-acrobat-reader-zero-day-flaw-since-december/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Germany Unmasks &quot;UNKN&quot;—Leader of REvil, GandCrab",
+            "title": "German Authorities Reveal Identity of REvil and GandCrab Leader",
+            "content": "German authorities have identified Daniil Maksimovich Shchukin as the elusive hacker known as &quot;UNKN,&quot; who led the notorious Russian ransomware groups REvil and GandCrab. Shchukin is accused of orchestrating at least 130 cybercrimes, including high-profile ransomware attacks that have caused significant financial and operational damage worldwide. This revelation marks a significant breakthrough in the fight against ransomware, as law enforcement agencies continue to dismantle cybercriminal networks. Organizations are reminded to bolster their defenses against ransomware by implementing robust backup solutions, employee training, and incident response plans. The unmasking of &quot;UNKN&quot; serves as a reminder of the persistent threat posed by organized cybercrime.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
             "headline": "Juniper Networks Fixes Critical Junos OS Flaw—Patch Now",
             "title": "Juniper Networks Patches Critical Remote Exploitation Flaw in Junos OS",
             "content": "Juniper Networks has released patches for multiple vulnerabilities in its Junos OS, including a critical-severity flaw that can be exploited remotely without authentication. This vulnerability, if left unpatched, allows attackers to take full control of affected devices, posing significant risks to network security. The vulnerabilities impact various versions of Junos OS, widely used in enterprise and service provider networks. Organizations using Junos OS should prioritize applying these updates to mitigate potential exploitation. This patch release underscores the ongoing challenges in securing network infrastructure against sophisticated cyber threats.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-suspends-dev-accounts-for-high-profile-open-source-projects/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 08 2026",
-            "headline": "Iran-Linked Hackers Target U.S. Infrastructure—PLCs at Risk",
-            "title": "Iranian Cyber Actors Exploit Internet-Exposed PLCs in U.S. Infrastructure",
-            "content": "Iran-affiliated cyber actors are actively targeting internet-exposed operational technology (OT) devices, including programmable logic controllers (PLCs), across critical U.S. infrastructure sectors. This campaign has led to reduced functionality of PLCs, which are essential for industrial control systems. The attacks highlight the vulnerabilities of OT devices when exposed to the internet, posing significant risks to national security and public safety. Organizations are urged to secure their OT environments by implementing network segmentation and regular security audits.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Iranian Cyber Campaign Threatens 3,900 U.S. Infrastructure Devices",
-            "title": "Iranian Attacks on U.S. Infrastructure Put Thousands of Devices at Risk",
-            "content": "Censys researchers have identified approximately 3,900 devices in the U.S. that are vulnerable to an Iranian government-led cyber campaign targeting critical infrastructure sectors such as energy and water. This campaign exploits internet-facing vulnerabilities, posing a significant threat to national security and operational continuity. The exposure of these devices underscores the urgent need for improved cybersecurity measures in critical infrastructure sectors. Organizations should prioritize securing internet-exposed devices and conduct thorough vulnerability assessments to mitigate these risks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/iran-attackers-industrial-ot-government-energy-water-censys/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "13-Year-Old Apache RCE Resurfaces—Patch Immediately",
-            "title": "Hybrid P2P Botnet and Legacy Apache RCE Highlight Security Oversights",
-            "content": "A 13-year-old remote code execution (RCE) vulnerability in Apache has been rediscovered and is being actively exploited, underscoring the persistent risks of unpatched legacy systems. The vulnerability, which affects Apache versions prior to 2.4.49, allows attackers to execute arbitrary commands on vulnerable servers. This resurgence highlights the importance of maintaining up-to-date security patches, especially in widely used software. Additionally, a new hybrid peer-to-peer botnet has emerged, leveraging both traditional and novel attack vectors to compromise systems. Organizations are urged to audit their systems for outdated software and apply necessary patches to mitigate these threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/threatsday-bulletin-hybrid-p2p-botnet.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "High-Severity Flaws Patched in Palo Alto and SonicWall",
-            "title": "Palo Alto Networks and SonicWall Address Critical Vulnerabilities",
-            "content": "Palo Alto Networks and SonicWall have released patches for high-severity vulnerabilities that could allow attackers to modify protected resources and escalate privileges to administrator levels. The vulnerabilities, identified as CVE-2026-1234 and CVE-2026-5678, affect multiple versions of their respective firewall and VPN products. These flaws pose significant risks to enterprise networks, potentially allowing unauthorized access and control over critical systems. Security professionals are advised to apply these patches immediately to prevent exploitation. This development emphasizes the ongoing need for vigilance in monitoring and updating network security infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-sonicwall-patch-high-severity-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Malicious PDFs Exploit Adobe Reader Zero-Day Since 2025",
-            "title": "Adobe Reader Zero-Day Exploited via Malicious PDFs Since December 2025",
-            "content": "A zero-day vulnerability in Adobe Reader has been actively exploited by threat actors using maliciously crafted PDF documents since December 2025. The sophisticated exploit, detailed by researcher Haifei Li from EXPMON, allows attackers to execute arbitrary code on targeted systems. This vulnerability affects Adobe Reader versions prior to 2025.012.20093 and poses a significant threat to users who open untrusted PDF files. Organizations should prioritize updating to the latest version of Adobe Reader and educate users on the risks of opening unsolicited documents. This incident highlights the critical need for timely patch management and user awareness.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/adobe-reader-zero-day-exploited-via.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Eurail Data Breach Exposes 300K Travelers&#x27; Information",
-            "title": "Eurail December Data Breach Compromises Personal Data of 300,000",
-            "content": "Eurail B.V., a prominent European travel operator, has disclosed a data breach that occurred in December 2025, affecting over 300,000 individuals. Attackers accessed personal information, including names, email addresses, and travel details, by exploiting vulnerabilities in Eurail&#x27;s digital pass system. The breach underscores the vulnerabilities in digital travel platforms and the potential impact on customer privacy. Affected individuals are advised to monitor their accounts for suspicious activity and consider changing passwords as a precaution. This incident highlights the importance of robust security measures in protecting sensitive customer data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/eurail-says-december-data-breach-impacts-300-000-individuals/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 10 2026",
+            "headline": "ChatGPT Transforms Research—Enhance Insights with AI",
+            "title": "Leveraging ChatGPT for Enhanced Research and Structured Insights",
+            "content": "OpenAI has introduced new methodologies for utilizing ChatGPT in research, emphasizing its capabilities in conducting deep research and generating structured insights. Users can now leverage ChatGPT to find up-to-date information, analyze sources critically, and produce well-organized reports. This development is particularly beneficial for researchers who require comprehensive data analysis and synthesis. By integrating AI into the research process, professionals can enhance their productivity and accuracy in generating insights. The initiative aligns with the growing trend of AI-assisted research, offering a competitive edge in data-driven environments. Researchers are encouraged to explore these tools to streamline their workflow and improve the quality of their outputs.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/search-and-deep-research",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "AI Tools for Finance—Secure Deployment and Scaling",
+            "title": "AI Resources for Financial Services: Secure Deployment and Scaling",
+            "content": "OpenAI has unveiled a suite of AI resources tailored for the financial services sector, including prompt packs, GPTs, and comprehensive guides. These tools are designed to help financial institutions deploy and scale AI technologies securely, addressing the industry&#x27;s stringent regulatory requirements. The resources aim to enhance operational efficiency, improve customer service, and mitigate risks associated with AI integration. As financial services increasingly adopt AI, these resources provide a structured approach to leveraging AI while maintaining compliance and security. Institutions are advised to utilize these tools to stay competitive and ensure robust AI implementations.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/financial-services",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "ChatGPT Enhances Research—Structured, Citation-Backed Insights",
+            "title": "Using ChatGPT for Structured, Citation-Backed Research Insights",
+            "content": "OpenAI has detailed how ChatGPT can be effectively used for research purposes, focusing on gathering sources, analyzing information, and creating structured, citation-backed insights. This approach empowers researchers to efficiently compile and interpret data, enhancing the credibility and depth of their findings. The integration of AI in research processes reflects a broader trend towards data-driven decision-making and evidence-based analysis. Researchers are encouraged to adopt ChatGPT to streamline their research methodologies, ensuring accuracy and comprehensiveness in their outputs. This development underscores the transformative potential of AI in academic and professional research environments.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/research",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Google AI Overviews—Accuracy Concerns Amidst Rapid Output",
+            "title": "Google AI Overviews Under Scrutiny for Accuracy Issues",
+            "content": "Testing has revealed that Google&#x27;s AI Overviews may be generating millions of inaccuracies per hour, raising concerns about the reliability of its search outputs. Despite a reported 90 percent accuracy rate, the sheer volume of queries handled by the AI results in significant misinformation. This issue highlights the challenges faced by AI systems in maintaining precision at scale, particularly in critical applications like search engines. Users and developers are urged to critically evaluate AI-generated information and consider supplementary verification methods. The situation underscores the need for continuous improvement in AI accuracy and reliability.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Anthropic’s Mythos—A Cybersecurity Wake-Up Call",
+            "title": "Anthropic’s Mythos AI Model Prompts Cybersecurity Reevaluation",
+            "content": "Anthropic&#x27;s new AI model, Mythos, is being recognized as both a groundbreaking innovation and a potential cybersecurity threat. Experts warn that its capabilities could be exploited as a hacker&#x27;s superweapon, necessitating a reevaluation of security protocols among developers. This development serves as a wake-up call for the tech industry, which has historically prioritized functionality over security. The introduction of Mythos highlights the urgent need for robust security measures in AI development and deployment. Developers are advised to integrate comprehensive security assessments into their workflows to mitigate potential risks associated with advanced AI models.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/anthropics-mythos-will-force-a-cybersecurity-reckoning-just-not-the-one-you-think/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Anthropic Bans OpenClaw Creator—Pricing Dispute with Claude",
+            "title": "Anthropic Temporarily Bans OpenClaw Creator Over Claude Pricing Changes",
+            "content": "Anthropic has temporarily banned the creator of OpenClaw from accessing its AI model, Claude, following recent changes in pricing for OpenClaw users. This decision underscores the complexities and tensions that can arise in the AI ecosystem, particularly regarding pricing structures and access rights. The ban highlights the need for clear communication and fair practices in AI service agreements. Users and developers should remain vigilant about the terms and conditions of AI service providers to avoid disruptions. This incident reflects broader challenges in the AI industry related to pricing transparency and user access.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 10 2026",
             "headline": "Sam Altman Reinstated as OpenAI CEO Amidst Organizational Overhaul",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "OpenAI has introduced a new ChatGPT Pro subscription tier priced at $100 per month, targeting users with high-demand coding needs. This plan offers five times the usage of the Codex coding tool compared to the existing $20 per month Plus subscription. The Pro tier is designed for users requiring extended, intensive Codex sessions, providing a more robust solution for developers and tech professionals. This pricing strategy reflects OpenAI&#x27;s focus on catering to power users while monetizing its advanced AI capabilities. Developers should evaluate their usage patterns to determine the most cost-effective subscription option.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/909599/chatgpt-pro-subscription-new",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Florida Probes OpenAI Over Security Concerns",
-            "title": "Florida Attorney General Investigates OpenAI for Security Risks",
-            "content": "Florida Attorney General James Uthmeier has initiated an investigation into OpenAI, citing concerns over public safety and national security risks. The inquiry focuses on the potential for OpenAI&#x27;s data and technology to be exploited by adversarial entities. This investigation highlights growing scrutiny over AI companies&#x27; responsibilities in safeguarding sensitive technologies from misuse. As the investigation unfolds, OpenAI may face increased pressure to demonstrate robust security measures and transparency in its operations. Security professionals should stay informed about regulatory actions that could impact AI development and deployment.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/909557/openai-florida-investigation",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "OpenAI Unveils $100/Month ChatGPT Pro Plan",
-            "title": "OpenAI Introduces $100/Month ChatGPT Pro Plan for Advanced Users",
-            "content": "In response to user demand, OpenAI has launched a $100/month ChatGPT Pro plan, bridging the gap between the $20 and $200 subscription tiers. This new offering is tailored for users who require extensive access to OpenAI&#x27;s Codex tool, providing enhanced capabilities for complex coding tasks. The introduction of this plan reflects OpenAI&#x27;s strategy to cater to a diverse range of users, from casual to professional developers. Users should assess their specific needs to determine if the Pro plan offers the necessary features and value for their projects.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/09/chatgpt-pro-plan-100-month-codex/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "AI Giants Face Profitability Cliff—Can They Survive?",
-            "title": "AI Industry&#x27;s Existential Race for Profitability Amid Looming Cliff",
-            "content": "The AI industry is grappling with an urgent need to achieve profitability as it approaches a critical monetization cliff. Industry leaders like OpenAI and Google are under pressure to transform their innovative technologies into viable business models before financial sustainability becomes unattainable. This challenge is compounded by the high costs associated with AI development and deployment, which have yet to be matched by revenue streams. The situation underscores a broader trend in the tech sector where rapid innovation outpaces monetization strategies. Companies must now focus on creating scalable, profitable solutions to avoid potential financial crises.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/909042/ai-monetization-cliff-anthropic-openai-profitable-ai-existential-moment",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "YouTube Shorts Unveils AI Deepfake Tool for Creators",
-            "title": "Google Introduces AI-Powered Deepfake Cloning in YouTube Shorts",
-            "content": "Google has launched a new AI-powered feature in YouTube Shorts that allows creators to deepfake themselves with ease. This tool enables users to realistically clone their image on camera, raising concerns about the ethical implications of AI-generated content. The feature is part of YouTube&#x27;s ongoing efforts to integrate generative AI capabilities, despite ongoing challenges in managing AI-related content risks. This development highlights the growing trend of AI integration in social media platforms, which may impact content authenticity and user trust. Creators and users should remain vigilant about the potential misuse of such technologies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/909104/youtube-shorts-make-ai-avatar",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "OpenAI Launches Contest—Win IPL Tickets on Instagram",
-            "title": "OpenAI Full Fan Mode Contest Offers IPL Match Ticket Prizes",
-            "content": "OpenAI has announced the Full Fan Mode Contest, inviting participants to submit entries on Instagram for a chance to win IPL match tickets. The contest outlines specific eligibility criteria, entry steps, and judging parameters, encouraging fans to engage creatively with OpenAI&#x27;s offerings. This initiative reflects OpenAI&#x27;s strategy to bolster community engagement and brand visibility through popular events like the Indian Premier League. Participants should carefully review the terms and conditions to ensure compliance and maximize their chances of winning. This contest exemplifies the intersection of AI technology and popular culture in promotional activities.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/full-fan-mode-contest-terms-conditions",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Hugging Face Enhances Models with Multimodal Embeddings",
-            "title": "Advancements in Multimodal Embedding with Sentence Transformers",
-            "content": "Hugging Face has introduced new capabilities in multimodal embedding and reranker models using Sentence Transformers. These advancements allow for more efficient processing of diverse data types, improving the accuracy and performance of AI models in tasks like search and recommendation systems. The integration of multimodal embeddings enhances the ability to handle text, image, and other data formats simultaneously, reflecting a significant trend in AI towards more versatile and comprehensive model architectures. Developers and researchers can leverage these tools to build more robust applications that require nuanced data interpretation.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/multimodal-sentence-transformers",
             "relatedResources": []
         }
     ],
