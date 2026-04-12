@@ -5,38 +5,65 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 11 2026",
+            "headline": "20,000 Crypto Fraud Victims Identified in Global Crackdown",
+            "title": "International Effort Uncovers 20,000 Victims of Cryptocurrency Fraud",
+            "content": "An international law enforcement operation spearheaded by the UK&#x27;s National Crime Agency (NCA) has identified over 20,000 victims of cryptocurrency fraud across Canada, the United Kingdom, and the United States. This large-scale crackdown highlights the pervasive nature of crypto-related scams, which have exploited victims for millions of dollars. The operation involved cooperation between multiple international agencies, reflecting a growing trend of cross-border collaboration in combating cybercrime. Victims are urged to report any suspicious activity and ensure their digital wallets and accounts are secured with multi-factor authentication. This development underscores the importance of vigilance in the rapidly evolving cryptocurrency landscape.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-identifies-20-000-victims-in-international-crypto-fraud-crackdown/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Chrome 147 Fixes 60 Bugs—$86K Bounty for Critical Flaws",
+            "title": "Chrome 147 Update Addresses 60 Vulnerabilities, Including Two Critical Flaws",
+            "content": "Google has released Chrome version 147, addressing 60 security vulnerabilities, including two critical flaws in the WebML component, which were reported by anonymous researchers. The critical vulnerabilities have been awarded a total bounty of $86,000, underscoring the severity of the issues. These flaws could potentially allow attackers to execute arbitrary code, posing significant risks to users. Chrome users are advised to update to the latest version immediately to mitigate potential threats. This update is part of Google&#x27;s ongoing efforts to enhance browser security and protect users from emerging cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-147-patches-60-vulnerabilities-including-two-critical-flaws-worth-86000/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Marimo Flaw Exploited Within Hours of Disclosure",
+            "title": "Critical Marimo Vulnerability Exploited Just Hours After Disclosure",
+            "content": "A critical vulnerability in the Marimo software was exploited within nine hours of its public disclosure, highlighting the rapid pace at which threat actors can weaponize newly discovered flaws. The unauthenticated bug allows attackers to gain unauthorized access, posing a significant threat to systems running Marimo. This incident serves as a stark reminder of the importance of timely patching and vulnerability management. Organizations using Marimo are urged to apply the available patches immediately to prevent exploitation. The swift exploitation of this flaw underscores the need for robust security practices in software development and deployment.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-marimo-flaw-exploited-hours-after-public-disclosure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Ransomware Attack Disrupts Dutch Healthcare IT Provider",
+            "title": "ChipSoft Ransomware Attack Halts Healthcare IT Services",
+            "content": "Dutch healthcare IT solutions provider ChipSoft has been hit by a ransomware attack, forcing the company to take its website and digital services offline. The disruption affects patients and healthcare providers relying on ChipSoft&#x27;s software for critical operations. This incident highlights the growing threat of ransomware attacks targeting the healthcare sector, which can have severe implications for patient care and data security. ChipSoft is currently working to restore its systems and has advised clients to implement contingency plans. The attack underscores the urgent need for robust cybersecurity measures in healthcare IT infrastructure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/healthcare-it-solutions-provider-chipsoft-hit-by-ransomware-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 06 2026",
+            "headline": "Germany Unmasks “UNKN”—Leader of REvil and GandCrab",
+            "title": "German Authorities Identify Leader of REvil and GandCrab Ransomware Gangs",
+            "content": "German authorities have revealed the identity of &quot;UNKN,&quot; the elusive hacker behind the notorious Russian ransomware groups REvil and GandCrab. Daniil Maksimovich Shchukin, a 31-year-old Russian national, is alleged to have orchestrated over 130 cyberattacks as the head of these criminal organizations. This revelation marks a significant breakthrough in the fight against ransomware, which has plagued organizations worldwide. Shchukin&#x27;s identification may lead to further arrests and dismantling of these ransomware operations. Security professionals are advised to remain vigilant and ensure their systems are protected against ransomware threats.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Europol Adds Notorious Hacker “UNKN” to Most-Wanted List",
+            "title": "Europol Names Daniil Shchukin as Leader of GandCrab Ransomware",
+            "content": "Europol has added Daniil Shchukin, also known as &quot;UNKN&quot; or &quot;Unknown,&quot; to its most-wanted list, identifying him as the leader of the GandCrab ransomware group. Shchukin is accused of orchestrating numerous high-profile ransomware attacks, making him one of the most notorious cybercriminals globally. This development follows a detailed investigation by German police, who have linked Shchukin to the operation of GandCrab and other ransomware campaigns. Organizations are urged to strengthen their cybersecurity defenses and remain alert to ransomware threats. The identification of Shchukin represents a critical step in international efforts to combat cybercrime.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4157283/hacker-unknown-now-known-named-on-europols-most-wanted-list.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 11 2026",
             "headline": "Webloc Tool Tracks 500M Devices—Law Enforcement Implicated",
             "title": "Global Surveillance System Webloc Used by Law Enforcement to Track Devices",
             "content": "Citizen Lab has revealed that law enforcement agencies in Hungary, El Salvador, and the U.S. have utilized Webloc, a geolocation surveillance tool developed by Cobwebs Technologies, to track 500 million devices worldwide. Webloc leverages advertising data to pinpoint device locations, raising significant privacy concerns. The tool&#x27;s deployment highlights the increasing use of commercial surveillance technologies by government entities. This development underscores the need for stricter regulations on the use of such technologies to protect individual privacy. Security professionals should be aware of the potential misuse of advertising data in surveillance activities.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Hybrid P2P Botnet and Apache RCE—ThreatsDay Highlights",
-            "title": "ThreatsDay Bulletin: Hybrid P2P Botnet and Apache RCE Among 20 Stories",
-            "content": "The latest ThreatsDay Bulletin highlights a range of cybersecurity issues, including a hybrid peer-to-peer botnet and a 13-year-old remote code execution (RCE) vulnerability in Apache. The bulletin emphasizes the resurgence of old vulnerabilities and the exploitation of platforms and tools in unexpected ways. Security professionals are urged to review their systems for these vulnerabilities and apply necessary patches. The bulletin serves as a reminder of the persistent nature of cybersecurity threats and the importance of proactive defense measures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/threatsday-bulletin-hybrid-p2p-botnet.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Adobe Reader Zero-Day Exploited Since December—Patch Urgently",
-            "title": "Adobe Reader Zero-Day Vulnerability Exploited via Malicious PDFs",
-            "content": "A zero-day vulnerability in Adobe Reader has been actively exploited since December 2025 through maliciously crafted PDF documents. Discovered by EXPMON&#x27;s Haifei Li, the exploit involves a sophisticated PDF artifact dubbed &quot;Invoice.&quot; This vulnerability poses a significant risk to Adobe Reader users, potentially allowing attackers to execute arbitrary code. Users are advised to update Adobe Reader to the latest version immediately to mitigate this threat. The incident highlights the ongoing challenge of securing widely-used software against advanced threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/adobe-reader-zero-day-exploited-via.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Eurail Data Breach Exposes 300K Individuals&#x27; Information",
-            "title": "Eurail December Data Breach Affects 300,000 Individuals",
-            "content": "Eurail B.V., a provider of digital rail passes across Europe, has disclosed a data breach that compromised the personal information of over 300,000 individuals in December 2025. The breach involved unauthorized access to sensitive data, raising concerns about data protection practices. Affected individuals may face risks such as identity theft and fraud. Eurail is taking steps to enhance its security measures and prevent future incidents. Customers are advised to monitor their accounts for suspicious activity.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/eurail-says-december-data-breach-impacts-300-000-individuals/",
             "relatedResources": []
         },
         {
@@ -94,15 +121,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 09 2026",
-            "headline": "Acrobat Reader Zero-Day Exploited Since December",
-            "title": "Adobe Acrobat Reader Zero-Day Exploited Through Malicious PDFs",
-            "content": "Attackers have been exploiting a zero-day vulnerability in Adobe Acrobat Reader since December, using maliciously crafted PDF documents to execute attacks. This vulnerability allows for unauthorized access and potential data exfiltration, posing a significant risk to users who rely on Adobe Reader for document management. The ongoing exploitation underscores the importance of maintaining updated software and applying security patches as soon as they become available. Users are advised to exercise caution when opening PDF files from unknown sources and to implement additional security measures such as sandboxing and endpoint protection. This incident highlights the persistent threat of zero-day vulnerabilities in widely used software.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploiting-acrobat-reader-zero-day-flaw-since-december/",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 10 2026",
             "headline": "Juniper Networks Fixes Critical Junos OS Flaw—Patch Now",
             "title": "Juniper Networks Patches Critical Remote Exploitation Flaw in Junos OS",
@@ -119,27 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/supply-chain-attack-at-cpuid-pushes-malware-with-cpu-z-hwmonitor/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Iran Hacks Critical Infrastructure—US Warns of ICS Threats",
-            "title": "US Warns of Iran-Linked ICS Hacking in Critical Infrastructure",
-            "content": "The US government has issued warnings about Iran-linked hackers targeting industrial control systems (ICS) and supervisory control and data acquisition (SCADA) systems in critical infrastructure. These attacks aim to manipulate programmable logic controllers (PLCs) to disrupt operations, posing significant risks to national security and public safety. The hacking activities reflect a growing trend of state-sponsored cyber threats targeting vital infrastructure. Organizations in critical sectors should enhance their cybersecurity measures and remain vigilant against such threats. This development underscores the need for robust defenses in protecting critical infrastructure from cyber espionage and sabotage.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/industry-reactions-to-iran-hacking-ics-in-critical-infrastructure-feedback-friday/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Orthanc DICOM Flaws Allow RCE—Patch Immediately",
-            "title": "Orthanc DICOM Vulnerabilities Enable Remote Code Execution and Crashes",
-            "content": "Security vulnerabilities in Orthanc&#x27;s DICOM server software could be exploited for denial-of-service (DoS), information disclosure, and remote code execution (RCE) attacks. These flaws affect healthcare systems relying on DICOM for medical imaging, potentially compromising patient data and system functionality. Attackers could exploit these vulnerabilities to crash systems or execute arbitrary code, leading to severe operational disruptions. Healthcare organizations using Orthanc should apply available patches promptly to safeguard their systems. This incident highlights the critical need for securing medical software against cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/orthanc-dicom-vulnerabilities-lead-to-crashes-rce/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 09 2026",
+            "headline": "Mercor Faces Lawsuits After $10B Data Breach",
+            "title": "Mercor&#x27;s $10B Valuation at Risk Amid Data Breach Fallout",
+            "content": "Mercor, a startup valued at $10 billion, is grappling with significant challenges following a recent data breach. The breach has led to multiple lawsuits and the potential loss of major clients, threatening the company&#x27;s market position. While specific technical details of the breach remain undisclosed, the impact is severe, with sensitive customer data reportedly compromised. This incident underscores the escalating risks associated with cyber threats for high-value tech companies. Industry professionals are advised to review their own data protection measures and incident response plans to mitigate similar risks.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Google&#x27;s AI Overviews—Millions of Lies Per Hour",
+            "title": "Google&#x27;s AI Overviews Under Fire for Accuracy Issues",
+            "content": "Google&#x27;s AI Overviews feature is under scrutiny after testing revealed it generates millions of inaccuracies per hour. Despite a 90% accuracy rate, the remaining 10% of errors raise concerns about the reliability of AI-driven search results. This issue affects users relying on AI for accurate information, potentially leading to misinformation. The findings highlight the ongoing challenge of balancing AI capabilities with accuracy, especially in search technologies. Developers and tech leaders should prioritize enhancing AI accuracy to maintain user trust and information integrity.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 11 2026",
+            "headline": "Sam Altman Responds to New Yorker Criticism After Home Attack",
+            "title": "OpenAI CEO Sam Altman Addresses Criticism and Security Concerns",
+            "content": "Sam Altman, CEO of OpenAI, has issued a response following an attack on his home and a critical New Yorker article questioning his credibility. In a blog post, Altman addresses the personal and professional challenges posed by these events, emphasizing his commitment to transparency and security. The New Yorker profile raised questions about Altman&#x27;s trustworthiness, impacting his reputation and OpenAI&#x27;s public perception. This situation highlights the intense scrutiny faced by leaders in the AI industry. Security professionals should note the importance of robust personal and organizational security measures.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/11/sam-altman-responds-to-incendiary-new-yorker-article-after-attack-on-his-home/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 11 2026",
+            "headline": "AI Art Sparks Debate in Media Coverage",
+            "title": "Controversy Over AI Art in Media: The New Yorker Case",
+            "content": "The use of AI-generated art in media has sparked debate, following The New Yorker&#x27;s profile of OpenAI CEO Sam Altman. The illustration, featuring unsettling AI-generated faces, has been criticized for its eerie depiction and potential to mislead readers. This incident raises questions about the appropriateness and impact of AI art in journalism, especially in sensitive contexts. Media professionals are encouraged to consider the implications of using AI-generated content and to prioritize accuracy and clarity in visual storytelling.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/910460/new-yorker-david-szauder-illustration-generative-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 11 2026",
+            "headline": "AI Rumors: Mitski&#x27;s CIA Connection Sparks Curiosity",
+            "title": "AI-Driven Rumors: The Mitski CIA Operative Speculation",
+            "content": "A peculiar rumor about musician Mitski&#x27;s father being a CIA operative has surfaced, reportedly originating from an AI-generated message. This highlights the potential for AI to spread unverified information, raising concerns about the reliability of AI-driven communications. The incident underscores the need for critical evaluation of AI-generated content, particularly in personal and professional communications. Tech leaders should be aware of the implications of AI in rumor propagation and consider implementing checks to ensure information accuracy.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/910008/fawn-friends-ai-companion",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "OpenAI Supports Bill Limiting AI Liability in Disasters",
+            "title": "OpenAI Endorses Illinois Bill to Limit AI Liability in Crises",
+            "content": "OpenAI has expressed support for an Illinois bill that seeks to limit the liability of AI labs in cases of mass deaths or financial disasters caused by AI systems. The bill aims to define the circumstances under which AI developers can be held accountable, raising ethical and legal questions about AI responsibility. This legislative move reflects growing concerns about the potential consequences of AI technologies and the need for clear regulatory frameworks. AI developers and policymakers should stay informed about such legislative developments and their implications for the industry.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/openai-backs-bill-exempt-ai-firms-model-harm-lawsuits/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 11 2026",
             "headline": "Iran’s Media Blitz Outpaces White House in Information Warfare",
@@ -186,15 +240,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 08 2026",
-            "headline": "Meta Unveils Muse Spark—First AI Model Since Superintelligence Labs",
-            "title": "Meta Launches Proprietary AI Model Muse Spark Post-Llama Era",
-            "content": "Meta has introduced Muse Spark, its first proprietary AI model since the formation of Superintelligence Labs, marking a shift from its previous Llama family of large language models (LLMs). The launch follows the discontinuation of Llama 4, which had previously garnered a significant user base. Muse Spark aims to enhance Meta&#x27;s capabilities in generative AI, offering improved performance and scalability. This development reflects Meta&#x27;s strategic pivot towards proprietary solutions in the competitive AI landscape. The introduction of Muse Spark is expected to influence the direction of AI research and application across various sectors.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/goodbye-llama-meta-launches-new-proprietary-ai-model-muse-spark-first-since",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 10 2026",
             "headline": "ChatGPT Transforms Research—Enhance Insights with AI",
             "title": "Leveraging ChatGPT for Enhanced Research and Structured Insights",
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Anthropic&#x27;s new AI model, Mythos, is being recognized as both a groundbreaking innovation and a potential cybersecurity threat. Experts warn that its capabilities could be exploited as a hacker&#x27;s superweapon, necessitating a reevaluation of security protocols among developers. This development serves as a wake-up call for the tech industry, which has historically prioritized functionality over security. The introduction of Mythos highlights the urgent need for robust security measures in AI development and deployment. Developers are advised to integrate comprehensive security assessments into their workflows to mitigate potential risks associated with advanced AI models.",
             "source": "Feed: Artificial Intelligence Latest",
             "sourceUrl": "https://www.wired.com/story/anthropics-mythos-will-force-a-cybersecurity-reckoning-just-not-the-one-you-think/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Anthropic Bans OpenClaw Creator—Pricing Dispute with Claude",
-            "title": "Anthropic Temporarily Bans OpenClaw Creator Over Claude Pricing Changes",
-            "content": "Anthropic has temporarily banned the creator of OpenClaw from accessing its AI model, Claude, following recent changes in pricing for OpenClaw users. This decision underscores the complexities and tensions that can arise in the AI ecosystem, particularly regarding pricing structures and access rights. The ban highlights the need for clear communication and fair practices in AI service agreements. Users and developers should remain vigilant about the terms and conditions of AI service providers to avoid disruptions. This incident reflects broader challenges in the AI industry related to pricing transparency and user access.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Sam Altman Reinstated as OpenAI CEO Amidst Organizational Overhaul",
-            "title": "OpenAI&#x27;s Leadership Turmoil: Sam Altman&#x27;s Brief Ouster and Return",
-            "content": "Sam Altman&#x27;s leadership at OpenAI has been turbulent, culminating in his brief removal as CEO before being reinstated. The New Yorker recently published an in-depth examination of Altman&#x27;s tenure, highlighting significant organizational changes he initiated upon his return. These changes are aimed at reshaping OpenAI&#x27;s strategic direction and operational structure. The internal upheaval reflects broader challenges faced by AI companies in balancing innovation with governance. Stakeholders are closely watching how these developments will impact OpenAI&#x27;s future projects and collaborations. The incident underscores the volatility and high stakes in the AI industry.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/909621/openai-sam-altman-drama-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Gen Z&#x27;s AI Disillusionment: Usage Remains Despite Waning Hype",
-            "title": "Gallup Report Reveals Gen Z&#x27;s Complex Relationship with AI",
-            "content": "A Gallup report reveals that Gen Z, despite growing disillusionment, continues to heavily utilize AI technologies. Surveying nearly 1,600 individuals aged 14 to 29 across the U.S., the report indicates a decline in enthusiasm as AI becomes more integrated into educational and personal spheres. This trend suggests a maturing perspective on AI&#x27;s role and limitations among digital natives. The findings highlight a need for AI developers to address user concerns and enhance transparency. As AI&#x27;s presence in daily life expands, understanding generational attitudes becomes crucial for future adoption strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/909687/gen-z-doesnt-like-ai-gallup",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Microsoft Streamlines Windows 11 Apps—Removes Copilot Buttons",
-            "title": "Microsoft Revamps Windows 11 Apps by Eliminating Copilot Buttons",
-            "content": "Microsoft is refining its Windows 11 apps by removing the Copilot buttons deemed unnecessary, starting with the Notepad and Snipping Tool applications. In the latest Windows Insider update, these buttons are replaced with a &quot;writing tools&quot; menu, streamlining user interfaces and enhancing functionality. This move reflects Microsoft&#x27;s ongoing efforts to optimize user experience and reduce interface clutter. The changes are part of a broader strategy to integrate AI-driven features more seamlessly into Windows applications. Users should anticipate further updates as Microsoft continues to refine its software ecosystem.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/909640/microsoft-removing-copilot-windows-11-buttons",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Florida AG Probes OpenAI Over ChatGPT&#x27;s Alleged Role in Shooting",
-            "title": "Investigation Launched into ChatGPT&#x27;s Alleged Involvement in Florida Shooting",
-            "content": "The Florida Attorney General has initiated an investigation into OpenAI following allegations that ChatGPT was used to plan a deadly shooting at Florida State University. The incident resulted in two fatalities and five injuries, prompting legal action from the victim&#x27;s family against OpenAI. This case raises significant questions about AI&#x27;s role in facilitating criminal activities and the responsibilities of AI developers. The investigation could lead to increased regulatory scrutiny and calls for enhanced safety measures in AI deployment. Stakeholders should monitor developments closely as they may influence future AI governance frameworks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/",
             "relatedResources": []
         }
     ],
