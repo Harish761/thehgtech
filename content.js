@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 12 2026",
+            "headline": "Adobe Reader Zero-Day Exploited for Months—Patch Released",
+            "title": "Adobe Patches Reader Zero-Day CVE-2026-34621 Exploited for Months",
+            "content": "Adobe has issued a critical patch for CVE-2026-34621, a zero-day vulnerability in Adobe Reader that has been actively exploited for several months. This flaw allows attackers to execute arbitrary code on affected systems, posing a significant threat to users. The vulnerability impacts all versions of Adobe Reader prior to the latest update, and users are urged to apply the patch immediately to mitigate potential risks. This incident underscores the persistent targeting of widely-used software by threat actors, emphasizing the need for timely updates. Security professionals should prioritize this patch to safeguard their systems against ongoing exploitation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/adobe-patches-reader-zero-day-exploited-for-months/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 12 2026",
+            "headline": "Emergency Fix for Acrobat Reader Flaw—CVE-2026-34621",
+            "title": "Adobe Patches Actively Exploited Acrobat Reader Flaw CVE-2026-34621",
+            "content": "Adobe has released an emergency update to address CVE-2026-34621, a critical vulnerability in Acrobat Reader that has been actively exploited in the wild. With a CVSS score of 8.6, this flaw enables attackers to execute arbitrary code, posing a severe risk to users. The vulnerability affects all versions of Acrobat Reader prior to the latest patch, and Adobe strongly advises users to update immediately. This development highlights the ongoing challenges in securing popular software against sophisticated attacks. IT departments should ensure that all systems are updated to prevent potential breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Iran Hacks ICS—US Warns of Critical Infrastructure Threats",
+            "title": "Industry Reactions to Iran Hacking ICS in Critical Infrastructure",
+            "content": "The US government has issued a warning about Iranian-linked hackers targeting industrial control systems (ICS) and supervisory control and data acquisition (SCADA) systems to disrupt critical infrastructure. These attacks involve manipulating programmable logic controllers (PLCs) to cause significant operational disruptions. The threat actors aim to exploit vulnerabilities in these systems, potentially affecting sectors such as energy, water, and transportation. This development highlights the increasing geopolitical tensions and the need for robust cybersecurity measures in critical infrastructure. Organizations should enhance their monitoring and incident response capabilities to mitigate these threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/industry-reactions-to-iran-hacking-ics-in-critical-infrastructure-feedback-friday/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Orthanc DICOM Flaws Enable RCE and System Crashes",
+            "title": "Orthanc DICOM Vulnerabilities Lead to Crashes, RCE",
+            "content": "Security researchers have identified multiple vulnerabilities in Orthanc, an open-source DICOM server, which could be exploited for remote code execution (RCE), denial-of-service (DoS), and information disclosure attacks. These flaws could allow attackers to crash systems or gain unauthorized access to sensitive medical data. The vulnerabilities affect all versions of Orthanc prior to the latest security update. Healthcare organizations using Orthanc are advised to apply the patches immediately to protect patient data and ensure system integrity. This incident underscores the critical need for securing medical imaging systems against cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/orthanc-dicom-vulnerabilities-lead-to-crashes-rce/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Hybrid P2P Botnet and 13-Year-Old Apache RCE—ThreatsDay Bulletin",
+            "title": "ThreatsDay Bulletin: Hybrid P2P Botnet, 13-Year-Old Apache RCE",
+            "content": "This week&#x27;s ThreatsDay Bulletin highlights a range of cybersecurity issues, including the resurgence of a 13-year-old remote code execution (RCE) vulnerability in Apache software and the emergence of a hybrid peer-to-peer (P2P) botnet. These vulnerabilities have been exploited by attackers to compromise systems and launch distributed denial-of-service (DDoS) attacks. The bulletin emphasizes the importance of addressing legacy vulnerabilities and monitoring emerging threats. Security teams should prioritize patching outdated software and enhancing network defenses to mitigate these risks. This report serves as a reminder of the evolving threat landscape and the need for proactive security measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/threatsday-bulletin-hybrid-p2p-botnet.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 09 2026",
+            "headline": "Malicious PDFs Exploit Adobe Reader Zero-Day Since Dec 2025",
+            "title": "Adobe Reader Zero-Day Exploited via Malicious PDFs Since December 2025",
+            "content": "Threat actors have been exploiting a zero-day vulnerability in Adobe Reader, identified as CVE-2026-34621, using maliciously crafted PDF documents since December 2025. This sophisticated exploit, detailed by researcher Haifei Li from EXPMON, allows attackers to execute arbitrary code on targeted systems. The vulnerability affects all versions of Adobe Reader released before the recent patch, and users are urged to update immediately. This case highlights the persistent threat posed by zero-day vulnerabilities and the importance of timely patch management. Organizations should review their security protocols to protect against similar exploits.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/adobe-reader-zero-day-exploited-via.html",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 11 2026",
             "headline": "20,000 Crypto Fraud Victims Identified in Global Crackdown",
             "title": "International Effort Uncovers 20,000 Victims of Cryptocurrency Fraud",
@@ -28,24 +82,6 @@ const websiteContent = {
             "content": "A critical vulnerability in the Marimo software was exploited within nine hours of its public disclosure, highlighting the rapid pace at which threat actors can weaponize newly discovered flaws. The unauthenticated bug allows attackers to gain unauthorized access, posing a significant threat to systems running Marimo. This incident serves as a stark reminder of the importance of timely patching and vulnerability management. Organizations using Marimo are urged to apply the available patches immediately to prevent exploitation. The swift exploitation of this flaw underscores the need for robust security practices in software development and deployment.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/critical-marimo-flaw-exploited-hours-after-public-disclosure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 09 2026",
-            "headline": "Ransomware Attack Disrupts Dutch Healthcare IT Provider",
-            "title": "ChipSoft Ransomware Attack Halts Healthcare IT Services",
-            "content": "Dutch healthcare IT solutions provider ChipSoft has been hit by a ransomware attack, forcing the company to take its website and digital services offline. The disruption affects patients and healthcare providers relying on ChipSoft&#x27;s software for critical operations. This incident highlights the growing threat of ransomware attacks targeting the healthcare sector, which can have severe implications for patient care and data security. ChipSoft is currently working to restore its systems and has advised clients to implement contingency plans. The attack underscores the urgent need for robust cybersecurity measures in healthcare IT infrastructure.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/healthcare-it-solutions-provider-chipsoft-hit-by-ransomware-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 06 2026",
-            "headline": "Germany Unmasks “UNKN”—Leader of REvil and GandCrab",
-            "title": "German Authorities Identify Leader of REvil and GandCrab Ransomware Gangs",
-            "content": "German authorities have revealed the identity of &quot;UNKN,&quot; the elusive hacker behind the notorious Russian ransomware groups REvil and GandCrab. Daniil Maksimovich Shchukin, a 31-year-old Russian national, is alleged to have orchestrated over 130 cyberattacks as the head of these criminal organizations. This revelation marks a significant breakthrough in the fight against ransomware, which has plagued organizations worldwide. Shchukin&#x27;s identification may lead to further arrests and dismantling of these ransomware operations. Security professionals are advised to remain vigilant and ensure their systems are protected against ransomware threats.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
             "relatedResources": []
         },
         {
@@ -101,61 +137,61 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/in-other-news-cyberattack-stings-stryker-windows-zero-day-china-supercomputer-hack/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "1 Billion CISA KEV Records Reveal Security Limits",
-            "title": "Human-Scale Security Challenged by 1 Billion CISA KEV Records",
-            "content": "An analysis of one billion CISA Known Exploited Vulnerabilities (KEV) remediation records has exposed the limitations of human-scale security efforts. The study by Qualys reveals that most critical vulnerabilities are exploited before defenders can effectively patch them, highlighting a critical gap in current security practices. This finding underscores the need for automated and AI-driven solutions to enhance vulnerability management and response times. Organizations are encouraged to integrate advanced security tools and strategies to keep pace with the rapid exploitation of vulnerabilities. The report serves as a wake-up call for the cybersecurity community to rethink traditional approaches to vulnerability management.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/analysis-of-one-billion-cisa-kev-remediation-records-exposes-limits-of-human-scale-security/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Marimo RCE Flaw Exploited in Just 10 Hours",
-            "title": "Marimo RCE Vulnerability CVE-2026-39987 Exploited Hours After Disclosure",
-            "content": "A critical remote code execution (RCE) vulnerability in Marimo, an open-source Python notebook, was exploited within 10 hours of its public disclosure. Identified as CVE-2026-39987, the flaw has a CVSS score of 9.3 and allows for pre-authenticated remote code execution. The rapid exploitation highlights the urgency for developers and users to apply patches immediately. This incident emphasizes the need for robust security measures in open-source projects, which are often targeted due to their widespread use and accessibility. Security teams should prioritize patch management and consider implementing automated tools to detect and respond to vulnerabilities swiftly.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Juniper Networks Fixes Critical Junos OS Flaw—Patch Now",
-            "title": "Juniper Networks Patches Critical Remote Exploitation Flaw in Junos OS",
-            "content": "Juniper Networks has released patches for multiple vulnerabilities in its Junos OS, including a critical-severity flaw that can be exploited remotely without authentication. This vulnerability, if left unpatched, allows attackers to take full control of affected devices, posing significant risks to network security. The vulnerabilities impact various versions of Junos OS, widely used in enterprise and service provider networks. Organizations using Junos OS should prioritize applying these updates to mitigate potential exploitation. This patch release underscores the ongoing challenges in securing network infrastructure against sophisticated cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/juniper-networks-patches-dozens-of-junos-os-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "CPUID Supply Chain Attack—Malware in CPU-Z Downloads",
-            "title": "CPUID&#x27;s API Breach Leads to Malware Distribution via CPU-Z and HWMonitor",
-            "content": "Hackers have compromised CPUID&#x27;s API, altering download links on its official site to distribute malware through popular tools CPU-Z and HWMonitor. This supply chain attack highlights the vulnerability of third-party software distribution channels. Users downloading these tools may inadvertently install malicious executables, risking data breaches and system integrity. CPUID has since rectified the issue, but users should verify the integrity of their downloads and consider reinstallation from trusted sources. This incident emphasizes the importance of securing software supply chains to prevent similar attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/supply-chain-attack-at-cpuid-pushes-malware-with-cpu-z-hwmonitor/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 09 2026",
-            "headline": "Mercor Faces Lawsuits After $10B Data Breach",
-            "title": "Mercor&#x27;s $10B Valuation at Risk Amid Data Breach Fallout",
-            "content": "Mercor, a startup valued at $10 billion, is grappling with significant challenges following a recent data breach. The breach has led to multiple lawsuits and the potential loss of major clients, threatening the company&#x27;s market position. While specific technical details of the breach remain undisclosed, the impact is severe, with sensitive customer data reportedly compromised. This incident underscores the escalating risks associated with cyber threats for high-value tech companies. Industry professionals are advised to review their own data protection measures and incident response plans to mitigate similar risks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month/",
+            "date": "Apr 12 2026",
+            "headline": "AI Code Wars Intensify—Developers Face New Challenges",
+            "title": "The AI Code Wars: A Deep Dive into the Current Landscape",
+            "content": "The AI code wars are escalating as developers navigate the rapidly evolving landscape of AI coding and vibe-coding. This surge in AI-driven development is reshaping the tech industry, with companies racing to leverage AI for competitive advantage. The trend began with AI&#x27;s ability to automate code writing, but has now expanded into more nuanced applications like vibe-coding, which tailors software experiences to user emotions. This shift presents both opportunities and challenges for developers, who must adapt to new tools and methodologies. As AI continues to integrate into coding practices, professionals need to stay informed about emerging trends and technologies to remain competitive.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic",
             "relatedResources": []
         },
         {
-            "date": "Apr 07 2026",
-            "headline": "Google&#x27;s AI Overviews—Millions of Lies Per Hour",
-            "title": "Google&#x27;s AI Overviews Under Fire for Accuracy Issues",
-            "content": "Google&#x27;s AI Overviews feature is under scrutiny after testing revealed it generates millions of inaccuracies per hour. Despite a 90% accuracy rate, the remaining 10% of errors raise concerns about the reliability of AI-driven search results. This issue affects users relying on AI for accurate information, potentially leading to misinformation. The findings highlight the ongoing challenge of balancing AI capabilities with accuracy, especially in search technologies. Developers and tech leaders should prioritize enhancing AI accuracy to maintain user trust and information integrity.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
+            "date": "Apr 10 2026",
+            "headline": "OpenAI Responds to Axios Tool Compromise—No Data Breach",
+            "title": "OpenAI&#x27;s Swift Response to Axios Developer Tool Supply Chain Attack",
+            "content": "OpenAI has taken decisive action following a supply chain attack on the Axios developer tool, which involved the compromise of macOS code signing certificates. The organization has rotated these certificates and updated affected applications, ensuring no user data was compromised in the incident. This proactive response underscores the importance of maintaining robust security measures in the face of supply chain vulnerabilities. Developers using Axios tools are advised to update their applications immediately to mitigate potential risks. OpenAI&#x27;s handling of the situation highlights the critical need for vigilance and rapid response in safeguarding software supply chains.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/axios-developer-tool-compromise",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 08 2026",
+            "headline": "Meta Unveils Muse Spark—A New Proprietary AI Model",
+            "title": "Meta&#x27;s Muse Spark: A New Chapter in AI Model Development",
+            "content": "Meta has launched Muse Spark, its first proprietary AI model since the formation of Superintelligence Labs, marking a departure from its previous open-source Llama models. Muse Spark aims to enhance generative AI capabilities, offering advanced features that cater to a diverse range of applications. This move comes after the discontinuation of the Llama series, which had gained significant traction among developers. Meta&#x27;s strategic pivot reflects the growing trend of tech giants developing proprietary AI solutions to maintain competitive edges. Professionals in AI development should monitor Muse Spark&#x27;s performance and integration potential in various industries.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/goodbye-llama-meta-launches-new-proprietary-ai-model-muse-spark-first-since",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Anthropic Bans OpenClaw Creator—Claude Pricing Controversy",
+            "title": "Anthropic Temporarily Bans OpenClaw Creator Amid Claude Pricing Dispute",
+            "content": "Anthropic has temporarily banned the creator of OpenClaw from accessing its AI model, Claude, following recent changes in pricing for OpenClaw users. This decision highlights the ongoing tensions between AI service providers and developers over pricing structures and access rights. The ban reflects Anthropic&#x27;s stance on enforcing its pricing policies, which have sparked debate within the developer community. As AI models become integral to various applications, the balance between accessibility and profitability remains a critical issue. Developers relying on Claude should review their usage agreements and consider alternative solutions if necessary.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Sam Altman Reinstated as OpenAI CEO After Brief Ouster",
+            "title": "Sam Altman&#x27;s Tumultuous Tenure at OpenAI: A Leadership Saga",
+            "content": "Sam Altman&#x27;s leadership at OpenAI has been marked by significant upheaval, including a brief ouster from his role as CEO. Following his reinstatement, Altman has initiated a series of organizational changes aimed at reshaping OpenAI&#x27;s strategic direction. This leadership turbulence comes as The New Yorker published an in-depth examination of Altman&#x27;s impact on the company and the broader AI industry. The events underscore the challenges of steering a leading AI organization amidst rapid technological advancements and internal dynamics. Stakeholders should stay informed about OpenAI&#x27;s evolving strategies and leadership developments.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/909621/openai-sam-altman-drama-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Gen Z&#x27;s AI Disillusionment Grows—Usage Remains High",
+            "title": "Gen Z&#x27;s Complex Relationship with AI: Disillusionment Yet Continued Use",
+            "content": "A new Gallup report reveals that while Gen Z is increasingly disillusioned with AI, their usage of the technology remains high. The survey, involving nearly 1,600 individuals aged 14 to 29 across the U.S., indicates that the initial excitement surrounding AI is waning as it becomes more embedded in educational and social contexts. Despite this disillusionment, AI tools continue to play a significant role in Gen Z&#x27;s daily activities, highlighting a complex relationship with technology. Educators and developers should consider these insights when designing AI-driven solutions to better align with Gen Z&#x27;s expectations and needs.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/909687/gen-z-doesnt-like-ai-gallup",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "TechCrunch is set to host its SusHi Tech 2026 event in Tokyo, focusing on four transformative technology domains: AI, Robotics, Resilience, and Entertainment. The event will feature live demonstrations of humanoid robots, discussions on the software revolution in autonomous driving, and deep dives into cyber defense and climate technology. This gathering aims to foster innovation and collaboration among tech leaders, developers, and startups. Attendees can expect candid conversations on the future of technology and its societal impacts. The event underscores Tokyo&#x27;s growing role as a hub for technological advancement and innovation.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/10/techcrunch-is-heading-to-tokyo-and-bringing-the-startup-battlefield-with-it/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "ChatGPT Transforms Research—Enhance Insights with AI",
-            "title": "Leveraging ChatGPT for Enhanced Research and Structured Insights",
-            "content": "OpenAI has introduced new methodologies for utilizing ChatGPT in research, emphasizing its capabilities in conducting deep research and generating structured insights. Users can now leverage ChatGPT to find up-to-date information, analyze sources critically, and produce well-organized reports. This development is particularly beneficial for researchers who require comprehensive data analysis and synthesis. By integrating AI into the research process, professionals can enhance their productivity and accuracy in generating insights. The initiative aligns with the growing trend of AI-assisted research, offering a competitive edge in data-driven environments. Researchers are encouraged to explore these tools to streamline their workflow and improve the quality of their outputs.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/search-and-deep-research",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "AI Tools for Finance—Secure Deployment and Scaling",
-            "title": "AI Resources for Financial Services: Secure Deployment and Scaling",
-            "content": "OpenAI has unveiled a suite of AI resources tailored for the financial services sector, including prompt packs, GPTs, and comprehensive guides. These tools are designed to help financial institutions deploy and scale AI technologies securely, addressing the industry&#x27;s stringent regulatory requirements. The resources aim to enhance operational efficiency, improve customer service, and mitigate risks associated with AI integration. As financial services increasingly adopt AI, these resources provide a structured approach to leveraging AI while maintaining compliance and security. Institutions are advised to utilize these tools to stay competitive and ensure robust AI implementations.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/financial-services",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "ChatGPT Enhances Research—Structured, Citation-Backed Insights",
-            "title": "Using ChatGPT for Structured, Citation-Backed Research Insights",
-            "content": "OpenAI has detailed how ChatGPT can be effectively used for research purposes, focusing on gathering sources, analyzing information, and creating structured, citation-backed insights. This approach empowers researchers to efficiently compile and interpret data, enhancing the credibility and depth of their findings. The integration of AI in research processes reflects a broader trend towards data-driven decision-making and evidence-based analysis. Researchers are encouraged to adopt ChatGPT to streamline their research methodologies, ensuring accuracy and comprehensiveness in their outputs. This development underscores the transformative potential of AI in academic and professional research environments.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/research",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Anthropic’s Mythos—A Cybersecurity Wake-Up Call",
-            "title": "Anthropic’s Mythos AI Model Prompts Cybersecurity Reevaluation",
-            "content": "Anthropic&#x27;s new AI model, Mythos, is being recognized as both a groundbreaking innovation and a potential cybersecurity threat. Experts warn that its capabilities could be exploited as a hacker&#x27;s superweapon, necessitating a reevaluation of security protocols among developers. This development serves as a wake-up call for the tech industry, which has historically prioritized functionality over security. The introduction of Mythos highlights the urgent need for robust security measures in AI development and deployment. Developers are advised to integrate comprehensive security assessments into their workflows to mitigate potential risks associated with advanced AI models.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/anthropics-mythos-will-force-a-cybersecurity-reckoning-just-not-the-one-you-think/",
             "relatedResources": []
         }
     ],
