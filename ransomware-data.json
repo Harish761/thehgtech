@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-04-12T02:39:01.340406",
+  "last_updated": "2026-04-12T13:03:07.201466",
   "period": "Last 7 days",
   "total_groups": 31,
-  "total_victims": 268,
+  "total_victims": 263,
   "groups": [
     {
       "name": "Gunra",
@@ -188,7 +188,7 @@
     },
     {
       "name": "Thegentlemen",
-      "count": 27,
+      "count": 26,
       "victims": [
         {
           "name": "Aichi Electric",
@@ -213,12 +213,6 @@
           "date": "2026-04-08 15:34:18.578175",
           "url": "",
           "discovered_date": "2026-04-08T15:34:18.578175"
-        },
-        {
-          "name": "Gesvalt",
-          "date": "2026-04-08 15:33:54.279955",
-          "url": "",
-          "discovered_date": "2026-04-08T15:33:54.279955"
         },
         {
           "name": "Aichi Electric",
@@ -249,6 +243,12 @@
           "date": "2026-04-08T15:33:54+00:00",
           "url": "https://www.ransomware.live/id/R2VzdmFsdEB0aGVnZW50bGVtZW4=",
           "discovered_date": "2026-04-08T15:33:54+00:00"
+        },
+        {
+          "name": "DYSA",
+          "date": "2026-04-08T15:33:30+00:00",
+          "url": "https://www.ransomware.live/id/RFlTQUB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-04-08T15:33:30+00:00"
         }
       ],
       "industries": [
@@ -267,7 +267,7 @@
       "daily_counts": [
         0,
         0,
-        27,
+        26,
         0,
         0,
         0,
@@ -1268,59 +1268,6 @@
       ]
     },
     {
-      "name": "Lapsus$",
-      "count": 5,
-      "victims": [
-        {
-          "name": "AXCERA.IO",
-          "date": "2026-04-05T06:15:11+00:00",
-          "url": "https://www.ransomware.live/id/QVhDRVJBLklPQGxhcHN1cyQ=",
-          "discovered_date": "2026-04-05T06:15:11+00:00"
-        },
-        {
-          "name": "FR MINISTRY AGRICULTURE",
-          "date": "2026-04-05T06:14:48+00:00",
-          "url": "https://www.ransomware.live/id/RlIgTUlOSVNUUlkgQUdSSUNVTFRVUkVAbGFwc3VzJA==",
-          "discovered_date": "2026-04-05T06:14:48+00:00"
-        },
-        {
-          "name": "UNIV LILLE",
-          "date": "2026-04-05T06:14:42+00:00",
-          "url": "https://www.ransomware.live/id/VU5JViBMSUxMRUBsYXBzdXMk",
-          "discovered_date": "2026-04-05T06:14:42+00:00"
-        },
-        {
-          "name": "ASTRAZENECA CORP",
-          "date": "2026-04-05T06:14:38+00:00",
-          "url": "https://www.ransomware.live/id/QVNUUkFaRU5FQ0EgQ09SUEBsYXBzdXMk",
-          "discovered_date": "2026-04-05T06:14:38+00:00"
-        },
-        {
-          "name": "VirtaHealth",
-          "date": "2026-04-05T06:14:34+00:00",
-          "url": "https://www.ransomware.live/id/VmlydGFIZWFsdGhAbGFwc3VzJA==",
-          "discovered_date": "2026-04-05T06:14:34+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "FR",
-        "GB",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Anubis",
       "count": 4,
       "victims": [
@@ -1451,45 +1398,6 @@
       ]
     },
     {
-      "name": "Dragonforce",
-      "count": 3,
-      "victims": [
-        {
-          "name": "AnchorsGordon",
-          "date": "2026-04-07T14:26:17+00:00",
-          "url": "https://www.ransomware.live/id/QW5jaG9yc0dvcmRvbkBkcmFnb25mb3JjZQ==",
-          "discovered_date": "2026-04-07T14:26:17+00:00"
-        },
-        {
-          "name": "Bit-Wizards",
-          "date": "2026-04-07T14:25:02+00:00",
-          "url": "https://www.ransomware.live/id/Qml0LVdpemFyZHNAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2026-04-07T14:25:02+00:00"
-        },
-        {
-          "name": "Innovision Holdings",
-          "date": "2026-04-05T12:37:27+00:00",
-          "url": "https://www.ransomware.live/id/SW5ub3Zpc2lvbiBIb2xkaW5nc0BkcmFnb25mb3JjZQ==",
-          "discovered_date": "2026-04-05T12:37:27+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Nova",
       "count": 3,
       "victims": [
@@ -1601,6 +1509,41 @@
       ]
     },
     {
+      "name": "Blackwater",
+      "count": 2,
+      "victims": [
+        {
+          "name": "medical-park",
+          "date": "2026-04-12 07:27:21.127700",
+          "url": "http://ejzl7cjxmkx7lzhiqwidmrwtfjv45pkczbc4fnyaut3t7gll3yaiq5id.onion/blog?uuid=500eaba7-8a1c-3f42-a247-4be113b72b6e",
+          "discovered_date": "2026-04-12T07:27:21.127700"
+        },
+        {
+          "name": "medical-park",
+          "date": "2026-04-12T07:27:21+00:00",
+          "url": "https://www.ransomware.live/id/bWVkaWNhbC1wYXJrQGJsYWNrd2F0ZXI=",
+          "discovered_date": "2026-04-12T07:27:21+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "TR"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Beast",
       "count": 2,
       "victims": [
@@ -1629,6 +1572,39 @@
         0,
         0,
         2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Dragonforce",
+      "count": 2,
+      "victims": [
+        {
+          "name": "AnchorsGordon",
+          "date": "2026-04-07T14:26:17+00:00",
+          "url": "https://www.ransomware.live/id/QW5jaG9yc0dvcmRvbkBkcmFnb25mb3JjZQ==",
+          "discovered_date": "2026-04-07T14:26:17+00:00"
+        },
+        {
+          "name": "Bit-Wizards",
+          "date": "2026-04-07T14:25:02+00:00",
+          "url": "https://www.ransomware.live/id/Qml0LVdpemFyZHNAZHJhZ29uZm9yY2U=",
+          "discovered_date": "2026-04-07T14:25:02+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        2,
+        0,
         0,
         0,
         0,
