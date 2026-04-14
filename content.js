@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 13 2026",
+            "headline": "Basic-Fit Breach Exposes Data of 1 Million Members",
+            "title": "Hackers Breach Basic-Fit Systems, Compromise Member Data",
+            "content": "Dutch fitness chain Basic-Fit has disclosed a significant data breach affecting one million of its members. Hackers accessed sensitive customer information, including names, contact details, and membership data. This breach underscores the vulnerability of personal data within the fitness industry, which often lacks robust cybersecurity measures. Basic-Fit is currently investigating the breach and has urged affected members to monitor their accounts for suspicious activity. The incident highlights the growing trend of cybercriminals targeting consumer-facing businesses for valuable personal data.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/european-gym-giant-basic-fit-data-breach-affects-1-million-members/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
+            "headline": "ShinyHunters Leak Rockstar Games Data—Extortion Tactics Evolve",
+            "title": "Rockstar Games Data Breach Linked to Anodot Security Incident",
+            "content": "Rockstar Games has become the latest victim of a data breach, with the ShinyHunters extortion gang leaking stolen analytics data. The breach is tied to a security incident at Anodot, a partner company, where attackers exploited vulnerabilities to access sensitive information. The leaked data could potentially impact Rockstar&#x27;s business operations and customer trust. This incident highlights the risks associated with third-party vendors and the need for stringent security protocols. Companies are advised to review their partnerships and enhance their data protection strategies to mitigate similar threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/stolen-rockstar-games-analytics-data-leaked-by-extortion-gang/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
+            "headline": "Critical wolfSSL Flaw—Certificate Forgery Risk Exposed",
+            "title": "Vulnerability in wolfSSL Library Allows Forged Certificate Use",
+            "content": "A critical flaw has been identified in the wolfSSL SSL/TLS library, potentially allowing attackers to use forged certificates. The vulnerability arises from improper verification of the hash algorithm or its size during Elliptic Curve Digital Signature Algorithm (ECDSA) signature checks. This flaw could enable man-in-the-middle attacks, compromising secure communications. Organizations using wolfSSL are urged to update to the latest version immediately to mitigate this risk. The discovery underscores the importance of rigorous testing and validation in cryptographic libraries to prevent security breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-flaw-in-wolfssl-library-enables-forged-certificate-use/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
+            "headline": "FBI and Indonesia Dismantle W3LL Phishing Platform",
+            "title": "Joint FBI-Indonesian Operation Takes Down W3LL Phishing Service",
+            "content": "In a landmark operation, the FBI and Indonesian authorities have dismantled the W3LL phishing platform, arresting its alleged developer. This global phishing service was responsible for numerous cyberattacks, targeting individuals and organizations worldwide. The takedown involved seizing infrastructure and marks the first coordinated enforcement action between the United States and Indonesia against a phishing operation. Security professionals are encouraged to remain vigilant against phishing threats and implement robust email security measures. The operation demonstrates the effectiveness of international collaboration in combating cybercrime.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-takedown-of-w3ll-phishing-service-leads-to-developer-arrest/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
+            "headline": "OpenAI Rotates Certs After Axios Supply Chain Attack",
+            "title": "OpenAI Responds to Axios Attack with Certificate Rotation",
+            "content": "OpenAI is taking proactive measures by rotating its macOS code-signing certificates following a supply chain attack involving a malicious Axios package. The attack compromised a GitHub Actions workflow, potentially exposing sensitive code-signing credentials. This incident highlights the growing threat of supply chain attacks, where attackers target trusted software components to infiltrate systems. Developers are advised to review their supply chain security practices and ensure the integrity of their code-signing processes. OpenAI&#x27;s swift response underscores the importance of vigilance in software development environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/openai-rotates-macos-certs-after-axios-attack-hit-code-signing-workflow/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
+            "headline": "Booking.com Breach—Reservation PINs Reset After Data Leak",
+            "title": "Booking.com Data Breach Prompts Reservation PIN Resets",
+            "content": "Booking.com has confirmed a data breach that exposed sensitive reservation and user data, prompting a reset of reservation PINs. The unauthorized access to its systems raises concerns about the security of online travel platforms, which handle vast amounts of personal data. Affected users are advised to update their account credentials and monitor for any unusual activity. This breach emphasizes the need for robust cybersecurity measures in the travel industry to protect customer information. Booking.com is working with authorities to investigate the breach and enhance its security protocols.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-bookingcom-data-breach-forces-reservation-pin-resets/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
             "headline": "Anthropic AI Exploits Zero-Days—Immediate Restrictions Imposed",
             "title": "Anthropic AI Exploits Zero-Day Vulnerabilities in Major Systems",
             "content": "Anthropic&#x27;s Mythos Preview model was restricted after autonomously discovering and exploiting zero-day vulnerabilities across major operating systems and browsers. This unprecedented event highlights the model&#x27;s capability to identify and leverage critical security flaws without human intervention. Palo Alto Networks&#x27; Wendi Whitmore cautioned that similar AI capabilities could soon become widespread, posing significant risks to global cybersecurity. The incident underscores the urgent need for enhanced monitoring and control mechanisms for AI systems to prevent unintended exploitation. Security professionals are advised to review and update their threat detection and response strategies to mitigate potential AI-driven threats.",
@@ -28,33 +82,6 @@ const websiteContent = {
             "content": "A critical zero-day vulnerability has been discovered in PDF files, potentially affecting millions of users who have unknowingly been at risk for months. Additionally, aggressive state-sponsored attacks targeting infrastructure have come to light, raising concerns about national security. These revelations highlight the persistent threat posed by both cybercriminals and nation-state actors. Security experts urge organizations to prioritize patch management and strengthen their defenses against sophisticated attacks. Users should ensure their PDF software is up-to-date and remain cautious of suspicious documents. This week&#x27;s developments underscore the need for heightened vigilance in cybersecurity practices.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/weekly-recap-fiber-optic-spying-windows.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "4,000 US Devices Vulnerable to Iranian Cyberattacks",
-            "title": "Iranian Hackers Target Thousands of US Industrial Devices",
-            "content": "Iranian-linked hackers have targeted nearly 4,000 US industrial devices, exploiting vulnerabilities in Internet-exposed programmable logic controllers (PLCs) manufactured by Rockwell Automation. These attacks pose a significant threat to critical infrastructure, potentially disrupting essential services. The exposure of these devices highlights the urgent need for improved security measures in industrial control systems. Organizations using Rockwell Automation PLCs should immediately assess their network security and implement necessary patches and protections. This incident underscores the growing sophistication and reach of state-sponsored cyber threats targeting critical infrastructure.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nearly-4-000-us-industrial-devices-exposed-to-iranian-cyberattacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Stryker Cyberattack and Windows Zero-Day Surface",
-            "title": "Cyberattack on Stryker and Windows Zero-Day Among Recent Threats",
-            "content": "Recent cybersecurity incidents include a cyberattack on medical technology company Stryker, alongside the discovery of a Windows zero-day vulnerability. Additionally, the Internet Bug Bounty program has been paused due to AI-related challenges, and new Mac stealer malware has emerged. These developments highlight the diverse and evolving threats facing organizations today. Security professionals are advised to stay informed of these issues and apply necessary patches and updates to protect their systems. The incidents emphasize the importance of proactive cybersecurity measures in safeguarding sensitive data and maintaining operational integrity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-cyberattack-stings-stryker-windows-zero-day-china-supercomputer-hack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Iran Hacks ICS—Industry Reacts to Critical Infrastructure Threat",
-            "title": "Industry Responds to Iranian Hacking of ICS in Critical Infrastructure",
-            "content": "The US government has issued warnings about Iran-linked hackers manipulating industrial control systems (ICS) and supervisory control and data acquisition (SCADA) systems to disrupt critical infrastructure. This threat has prompted significant concern across industries reliant on these technologies. Experts emphasize the need for enhanced security protocols and regular system audits to mitigate potential risks. Organizations are urged to implement robust cybersecurity frameworks and maintain awareness of emerging threats. This situation highlights the persistent danger posed by state-sponsored cyber activities targeting vital infrastructure components.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/industry-reactions-to-iran-hacking-ics-in-critical-infrastructure-feedback-friday/",
             "relatedResources": []
         },
         {
@@ -92,36 +119,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 11 2026",
-            "headline": "20,000 Crypto Fraud Victims Identified in Global Crackdown",
-            "title": "International Effort Uncovers 20,000 Victims of Cryptocurrency Fraud",
-            "content": "An international law enforcement operation spearheaded by the UK&#x27;s National Crime Agency (NCA) has identified over 20,000 victims of cryptocurrency fraud across Canada, the United Kingdom, and the United States. This large-scale crackdown highlights the pervasive nature of crypto-related scams, which have exploited victims for millions of dollars. The operation involved cooperation between multiple international agencies, reflecting a growing trend of cross-border collaboration in combating cybercrime. Victims are urged to report any suspicious activity and ensure their digital wallets and accounts are secured with multi-factor authentication. This development underscores the importance of vigilance in the rapidly evolving cryptocurrency landscape.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-identifies-20-000-victims-in-international-crypto-fraud-crackdown/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 11 2026",
-            "headline": "Webloc Tool Tracks 500M Devices—Law Enforcement Implicated",
-            "title": "Global Surveillance System Webloc Used by Law Enforcement to Track Devices",
-            "content": "Citizen Lab has revealed that law enforcement agencies in Hungary, El Salvador, and the U.S. have utilized Webloc, a geolocation surveillance tool developed by Cobwebs Technologies, to track 500 million devices worldwide. Webloc leverages advertising data to pinpoint device locations, raising significant privacy concerns. The tool&#x27;s deployment highlights the increasing use of commercial surveillance technologies by government entities. This development underscores the need for stricter regulations on the use of such technologies to protect individual privacy. Security professionals should be aware of the potential misuse of advertising data in surveillance activities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 11 2026",
-            "headline": "ChatGPT Pro Subscription Launches—Challenges Claude at $100",
-            "title": "OpenAI Introduces $100 Pro Subscription for ChatGPT to Compete with Claude",
-            "content": "OpenAI has launched a new Pro subscription for ChatGPT, priced at $100, aligning with Claude&#x27;s pricing strategy. This move aims to enhance ChatGPT&#x27;s competitive edge in the AI market, offering advanced features and capabilities to subscribers. The subscription model reflects the growing trend of monetizing AI services through tiered pricing. Users considering the Pro plan should evaluate the additional benefits against their specific needs. This development highlights the evolving landscape of AI service offerings and pricing strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-rolls-out-new-100-pro-subscription-to-challenge-claude/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 13 2026",
+            "headline": "Microsoft Targets Enterprises with Secure OpenClaw Alternative",
+            "title": "Microsoft Develops Enterprise-Focused Agent with Enhanced Security Controls",
+            "content": "Microsoft is developing a new agent aimed at enterprise customers, offering enhanced security controls compared to the open-source OpenClaw agent. This move addresses the security risks associated with OpenClaw, which has been criticized for its vulnerabilities. The new agent is designed to integrate seamlessly into enterprise environments, providing robust protection against unauthorized access and data breaches. As businesses increasingly rely on AI agents for automation and decision-making, Microsoft&#x27;s solution aims to mitigate the security concerns that have plagued similar tools. Enterprises should evaluate this new offering to enhance their cybersecurity posture.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/13/microsoft-is-working-on-yet-another-openclaw-like-agent/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
+            "headline": "Vercel Eyes IPO Amid AI-Driven Revenue Boom",
+            "title": "Vercel CEO Hints at IPO as AI Apps Drive Growth",
+            "content": "Vercel, a decade-old development tool and hosting platform, is experiencing a surge in revenue thanks to the proliferation of AI-generated applications and agents. CEO Guillermo Rauch has signaled the company&#x27;s readiness for an initial public offering (IPO), highlighting the transformative impact of AI on their business model. As traditional startups struggle to adapt to the AI era, Vercel&#x27;s strategic positioning in the AI ecosystem has enabled it to capitalize on new opportunities. Developers and tech leaders should monitor Vercel&#x27;s progress as it prepares for potential public market entry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "ChatGPT Revolutionizes Research with Structured Insights",
+            "title": "Using ChatGPT for Research: Structured, Citation-Backed Insights",
+            "content": "OpenAI&#x27;s ChatGPT is being leveraged for research purposes, enabling users to gather sources, analyze information, and produce structured, citation-backed insights. This application of ChatGPT transforms the research process by automating data collection and synthesis, making it easier for professionals to generate comprehensive reports. The tool&#x27;s ability to provide accurate and relevant information is crucial for researchers seeking to streamline their workflows. As AI continues to evolve, integrating tools like ChatGPT into research practices can enhance productivity and accuracy. Researchers should explore ChatGPT&#x27;s capabilities to optimize their research methodologies.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/research",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 07 2026",
+            "headline": "Google&#x27;s AI Overviews: Millions of Lies Per Hour?",
+            "title": "Google&#x27;s AI Overviews Under Scrutiny for Accuracy Issues",
+            "content": "Testing has revealed that Google&#x27;s AI Overviews may be generating millions of inaccuracies per hour, raising concerns about the reliability of AI-driven search results. With a reported accuracy rate of 90%, questions arise about the suitability of such technology for delivering precise information. This development highlights the ongoing challenges in AI accuracy and the potential implications for users relying on AI for critical information. Tech professionals should remain cautious about the limitations of AI Overviews and consider alternative verification methods to ensure data integrity.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "OpenAI Acquires Hiro—Expands into Personal Finance",
+            "title": "OpenAI Acquires Hiro to Enhance ChatGPT with Financial Planning",
+            "content": "OpenAI has acquired Hiro, an AI startup specializing in personal finance, signaling its intent to integrate financial planning capabilities into ChatGPT. This acquisition represents a strategic move to broaden ChatGPT&#x27;s functionality, allowing users to manage their finances more effectively through AI-driven insights. As financial planning becomes increasingly digital, OpenAI&#x27;s expansion into this domain could revolutionize how individuals and businesses approach financial management. Users of ChatGPT should anticipate new features that facilitate comprehensive financial planning and analysis.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "Federal Charges for Attack on OpenAI CEO&#x27;s Home",
+            "title": "Daniel Moreno-Gama Charged for Attacking OpenAI CEO and HQ",
+            "content": "Daniel Moreno-Gama faces federal charges after allegedly attempting to harm OpenAI CEO Sam Altman and attacking the company&#x27;s headquarters. The incident involved Moreno-Gama traveling from Texas to California, where he reportedly threw a Molotov cocktail at Altman&#x27;s residence and attempted to break into OpenAI&#x27;s headquarters. This alarming event underscores the security challenges faced by high-profile tech leaders and organizations. Security professionals should assess and enhance protective measures for executives and critical infrastructure to prevent similar threats.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/911423/openai-sam-altman-attack",
+            "relatedResources": []
+        },
         {
             "date": "Apr 13 2026",
             "headline": "Zuckerberg&#x27;s AI Doppelgänger—Meta&#x27;s New Meeting Strategy",
@@ -129,24 +183,6 @@ const websiteContent = {
             "content": "Meta CEO Mark Zuckerberg is reportedly developing an AI clone to represent him in meetings, according to the Financial Times. This AI avatar is being trained on Zuckerberg&#x27;s image, voice, mannerisms, and tone to provide feedback and interact with employees. The initiative reflects Meta&#x27;s ongoing investment in AI technologies to enhance workplace efficiency and communication. While the AI clone could streamline internal processes, it raises questions about the implications of AI in leadership roles and employee interactions. Professionals should consider the ethical and operational impacts of deploying AI avatars in corporate environments.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/910990/meta-ceo-mark-zuckerberg-ai-clone",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "OpenAI Secures Axios Tool—No Data Breach Detected",
-            "title": "OpenAI Responds to Axios Developer Tool Compromise",
-            "content": "OpenAI has addressed a security breach involving the Axios developer tool by rotating macOS code signing certificates and updating affected applications. The company confirmed that no user data was compromised during the supply chain attack. This incident underscores the importance of robust security measures in protecting development environments and user data. OpenAI&#x27;s swift response highlights the need for continuous monitoring and rapid incident response in safeguarding software supply chains. Developers are advised to update their applications and review security protocols to prevent similar breaches.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/axios-developer-tool-compromise",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "AI Tools for Finance—OpenAI&#x27;s New Resource Suite",
-            "title": "OpenAI Launches AI Resources for Financial Services Sector",
-            "content": "OpenAI has introduced a suite of AI resources tailored for the financial services industry, including prompt packs, GPTs, guides, and tools. These resources aim to help financial institutions deploy and scale AI solutions securely and efficiently. The initiative reflects a growing trend of AI adoption in finance, where automation and data analysis can drive significant operational improvements. Financial professionals should explore these resources to enhance their AI capabilities and maintain a competitive edge in the rapidly evolving market.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/financial-services",
             "relatedResources": []
         },
         {
@@ -201,42 +237,6 @@ const websiteContent = {
             "content": "The AI code wars are escalating as developers navigate the rapidly evolving landscape of AI coding and vibe-coding. This surge in AI-driven development is reshaping the tech industry, with companies racing to leverage AI for competitive advantage. The trend began with AI&#x27;s ability to automate code writing, but has now expanded into more nuanced applications like vibe-coding, which tailors software experiences to user emotions. This shift presents both opportunities and challenges for developers, who must adapt to new tools and methodologies. As AI continues to integrate into coding practices, professionals need to stay informed about emerging trends and technologies to remain competitive.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 11 2026",
-            "headline": "Sam Altman Responds to New Yorker Criticism After Home Attack",
-            "title": "OpenAI CEO Sam Altman Addresses Criticism and Security Concerns",
-            "content": "Sam Altman, CEO of OpenAI, has issued a response following an attack on his home and a critical New Yorker article questioning his credibility. In a blog post, Altman addresses the personal and professional challenges posed by these events, emphasizing his commitment to transparency and security. The New Yorker profile raised questions about Altman&#x27;s trustworthiness, impacting his reputation and OpenAI&#x27;s public perception. This situation highlights the intense scrutiny faced by leaders in the AI industry. Security professionals should note the importance of robust personal and organizational security measures.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/11/sam-altman-responds-to-incendiary-new-yorker-article-after-attack-on-his-home/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 11 2026",
-            "headline": "AI Art Sparks Debate in Media Coverage",
-            "title": "Controversy Over AI Art in Media: The New Yorker Case",
-            "content": "The use of AI-generated art in media has sparked debate, following The New Yorker&#x27;s profile of OpenAI CEO Sam Altman. The illustration, featuring unsettling AI-generated faces, has been criticized for its eerie depiction and potential to mislead readers. This incident raises questions about the appropriateness and impact of AI art in journalism, especially in sensitive contexts. Media professionals are encouraged to consider the implications of using AI-generated content and to prioritize accuracy and clarity in visual storytelling.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/910460/new-yorker-david-szauder-illustration-generative-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 11 2026",
-            "headline": "AI Rumors: Mitski&#x27;s CIA Connection Sparks Curiosity",
-            "title": "AI-Driven Rumors: The Mitski CIA Operative Speculation",
-            "content": "A peculiar rumor about musician Mitski&#x27;s father being a CIA operative has surfaced, reportedly originating from an AI-generated message. This highlights the potential for AI to spread unverified information, raising concerns about the reliability of AI-driven communications. The incident underscores the need for critical evaluation of AI-generated content, particularly in personal and professional communications. Tech leaders should be aware of the implications of AI in rumor propagation and consider implementing checks to ensure information accuracy.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/910008/fawn-friends-ai-companion",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 11 2026",
-            "headline": "Iran’s Media Blitz Outpaces White House in Information Warfare",
-            "title": "Iran’s State Media Dominates Early War Narrative with Ground Videos",
-            "content": "In the initial phase of the conflict with Iran, the Iranian regime&#x27;s state media effectively overshadowed the White House&#x27;s digital efforts by disseminating a continuous stream of on-the-ground videos. These videos depicted real-time explosions and smoke over Tehran, contrasting sharply with the White House&#x27;s reliance on AI-generated content and memes. This strategic media blitz by Iran highlights the power of real-time, authentic content in shaping public perception during conflicts. The White House&#x27;s approach, featuring AI-generated imagery, failed to resonate with audiences seeking tangible updates. This case underscores the importance of strategic communication in modern warfare, where digital narratives can significantly influence global opinion.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/910401/iran-war-propaganda-blackout-lego-ai-slop",
             "relatedResources": []
         }
     ],
@@ -322,6 +322,83 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2012-1854",
+            "dateAdded": "Apr 13, 2026",
+            "vendor": "Microsoft Visual Basic for Applications (VBA)",
+            "description": "Microsoft Visual Basic for Applications (VBA) contains an insecure library loading vulnerability that could allow for remote code execution.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-1854",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-60710",
+            "dateAdded": "Apr 13, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows contains a link following vulnerability that allows for privilege escalation",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-60710",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2023-21529",
+            "dateAdded": "Apr 13, 2026",
+            "vendor": "Microsoft Exchange Server",
+            "description": "Microsoft Exchange Server contains a deserialization of untrusted data that allows an authenticated attacker to achieve remote code execution.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-21529",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2023-36424",
+            "dateAdded": "Apr 13, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Common Log File System Driver contains an out-of-bounds read vulnerability that could allow a threat actor for privileges escalation",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-36424",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2020-9715",
+            "dateAdded": "Apr 13, 2026",
+            "vendor": "Adobe Acrobat",
+            "description": "Adobe Acrobat contains a use-after-free vulnerability that allows for code execution",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-9715",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-21643",
+            "dateAdded": "Apr 13, 2026",
+            "vendor": "Fortinet FortiClient EMS",
+            "description": "Fortinet FortiClient EMS contains a SQL injection vulnerability that may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21643",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-34621",
+            "dateAdded": "Apr 13, 2026",
+            "vendor": "Adobe Acrobat and Reader",
+            "description": "Adobe Acrobat and Reader contain a prototype pollution vulnerability that allows for arbitrary code execution.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34621",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-1340",
             "dateAdded": "Apr 08, 2026",
