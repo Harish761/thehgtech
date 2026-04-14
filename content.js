@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 14 2026",
+            "headline": "Zero Trust Boosts Identity Security—5 Key Strategies",
+            "title": "How Zero Trust Architecture Enhances Identity Security Against Breaches",
+            "content": "Stolen credentials continue to be a primary vector for security breaches, often resulting in unchecked privilege escalation. Specops highlights how an identity-first Zero Trust architecture can mitigate these risks by limiting access, enforcing device trust, and blocking lateral movement within networks. This approach ensures that only authenticated and authorized users can access specific resources, reducing the attack surface. By integrating continuous verification and least privilege principles, organizations can better protect sensitive information against unauthorized access. Security professionals are encouraged to adopt Zero Trust models to enhance identity security and reduce potential breach impacts.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/5-ways-zero-trust-maximizes-identity-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "Basic-Fit Breach Exposes 1M Members&#x27; Data",
+            "title": "Data Breach at Basic-Fit Affects 1 Million Members&#x27; Personal Information",
+            "content": "Europe&#x27;s largest gym chain, Basic-Fit, has disclosed a data breach affecting approximately 1 million members. Hackers have accessed sensitive information, including names, dates of birth, and bank account details. The breach highlights the ongoing vulnerabilities in protecting personal data within large organizations. Basic-Fit is currently investigating the incident and has advised members to monitor their bank accounts for suspicious activity. This breach underscores the critical need for robust data protection measures and timely incident response strategies in the fitness industry and beyond.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/europes-largest-gym-chain-says-data-breach-impacts-1-million-members/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "SAP Fixes Critical ABAP Flaw—Update Urgently",
+            "title": "SAP Releases Patches for Critical ABAP Vulnerability in Enterprise Products",
+            "content": "SAP has issued 19 new security notes addressing vulnerabilities across more than a dozen of its enterprise products, including a critical flaw in the ABAP platform. This vulnerability, if left unpatched, could allow attackers to execute arbitrary code, compromising system integrity. Organizations using SAP systems are urged to apply these patches immediately to mitigate potential risks. The release of these security notes is part of SAP&#x27;s ongoing commitment to maintaining the security of its software ecosystem. Regular updates and patch management are essential practices for safeguarding enterprise environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sap-patches-critical-abap-vulnerability/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "Critical Risks Quadruple in 2026—OX Security Report",
+            "title": "OX Security Report Reveals 400% Increase in Critical Security Risks",
+            "content": "OX Security&#x27;s analysis of 216 million security findings from 250 organizations over a 90-day period reveals a staggering 400% increase in prioritized critical risks. The report attributes this surge to the rapid adoption of AI-assisted development, which has created a &quot;velocity gap&quot; in addressing security vulnerabilities. While the overall alert volume grew by 52% year-over-year, the disproportionate rise in critical risks highlights the urgent need for enhanced security measures. Organizations must prioritize risk management and invest in AI-driven security solutions to keep pace with evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/analysis-of-216m-security-findings.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "RCI Hospitality Data Breach via IDOR Flaw",
+            "title": "RCI Hospitality Reports Data Breach Due to IDOR Vulnerability",
+            "content": "RCI Hospitality has reported a data breach stemming from an Insecure Direct Object Reference (IDOR) vulnerability affecting its RCI Internet Services. This flaw exposed sensitive contractor data, raising concerns about data security practices within the company. The breach was disclosed in an SEC filing, prompting RCI to review and strengthen its security protocols. Organizations are reminded of the importance of securing web applications against IDOR vulnerabilities to prevent unauthorized data access. This incident serves as a cautionary tale for businesses handling sensitive information.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nightclub-giant-rci-hospitality-reports-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "ShowDoc RCE Flaw Exploited—Patch CVE-2025-0520 Now",
+            "title": "Critical RCE Vulnerability CVE-2025-0520 in ShowDoc Actively Exploited",
+            "content": "A critical remote code execution (RCE) vulnerability, CVE-2025-0520, is actively being exploited in ShowDoc, a popular document management and collaboration service in China. With a CVSS score of 9.4, this flaw allows attackers to execute arbitrary code on unpatched servers, posing significant risks to organizations using the platform. Security experts urge immediate patching to mitigate potential exploitation. This incident highlights the importance of timely vulnerability management and the need for organizations to maintain up-to-date security practices to protect against emerging threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/showdoc-rce-flaw-cve-2025-0520-actively.html",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 13 2026",
             "headline": "Basic-Fit Breach Exposes Data of 1 Million Members",
             "title": "Hackers Breach Basic-Fit Systems, Compromise Member Data",
@@ -83,45 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/weekly-recap-fiber-optic-spying-windows.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 12 2026",
-            "headline": "Marimo RCE Exploited—Credential Theft Risk Escalates",
-            "title": "Critical Marimo Pre-Auth RCE Vulnerability Actively Exploited for Credential Theft",
-            "content": "A critical pre-authentication remote code execution (RCE) vulnerability in Marimo is now being actively exploited by threat actors to facilitate credential theft. Identified as CVE-2026-39987, this flaw affects Marimo, an open-source Python notebook used for data science and analysis. The vulnerability allows attackers to execute arbitrary code on vulnerable systems without requiring authentication, posing a significant risk to users. Security experts warn that exploitation is occurring rapidly, emphasizing the need for immediate patching. Organizations using Marimo are urged to apply the latest security updates to mitigate potential breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-marimo-pre-auth-rce-flaw-now-under-active-exploitation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 12 2026",
-            "headline": "CPUID Breach—STX RAT Deployed via Trojanized Downloads",
-            "title": "CPUID Breach Distributes STX RAT via Compromised Software Downloads",
-            "content": "Unknown threat actors have compromised CPUID&#x27;s website, which hosts popular hardware monitoring tools like CPU-Z and HWMonitor, to distribute a remote access trojan (RAT) known as STX RAT. The breach lasted less than 24 hours, during which malicious executables were served to users downloading these tools. This incident underscores the risks associated with software supply chain attacks, where trusted platforms are leveraged to distribute malware. Users who downloaded CPU-Z or HWMonitor during the breach period should conduct thorough security scans and consider reinstalling clean versions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/cpuid-breach-distributes-stx-rat-via.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 12 2026",
-            "headline": "Adobe Reader Zero-Day Exploited for Months—Patch Released",
-            "title": "Adobe Patches Reader Zero-Day CVE-2026-34621 Exploited for Months",
-            "content": "Adobe has issued a critical patch for CVE-2026-34621, a zero-day vulnerability in Adobe Reader that has been actively exploited for several months. This flaw allows attackers to execute arbitrary code on affected systems, posing a significant threat to users. The vulnerability impacts all versions of Adobe Reader prior to the latest update, and users are urged to apply the patch immediately to mitigate potential risks. This incident underscores the persistent targeting of widely-used software by threat actors, emphasizing the need for timely updates. Security professionals should prioritize this patch to safeguard their systems against ongoing exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/adobe-patches-reader-zero-day-exploited-for-months/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 12 2026",
-            "headline": "Emergency Fix for Acrobat Reader Flaw—CVE-2026-34621",
-            "title": "Adobe Patches Actively Exploited Acrobat Reader Flaw CVE-2026-34621",
-            "content": "Adobe has released an emergency update to address CVE-2026-34621, a critical vulnerability in Acrobat Reader that has been actively exploited in the wild. With a CVSS score of 8.6, this flaw enables attackers to execute arbitrary code, posing a severe risk to users. The vulnerability affects all versions of Acrobat Reader prior to the latest patch, and Adobe strongly advises users to update immediately. This development highlights the ongoing challenges in securing popular software against sophisticated attacks. IT departments should ensure that all systems are updated to prevent potential breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 14 2026",
+            "headline": "Google AI Watermarking Allegedly Cracked—DeepMind Denies Claims",
+            "title": "Developer Claims to Reverse-Engineer Google DeepMind&#x27;s SynthID Watermarking",
+            "content": "A developer, known by the username Aloshdenny, claims to have reverse-engineered Google DeepMind&#x27;s SynthID system, potentially allowing AI watermarks to be removed from generated images or inserted into other works. Google has refuted these claims, asserting the integrity of their watermarking technology. SynthID is designed to embed imperceptible identifiers into AI-generated images to help differentiate them from human-created content. If true, this reverse-engineering could undermine efforts to maintain transparency and authenticity in AI-generated media. Security professionals should monitor developments closely as the implications could affect digital content verification processes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/911579/google-synthid-ai-watermarking-system-reverse-engineered",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "OpenAI Secures Systems After Axios Tool Supply Chain Attack",
+            "title": "OpenAI Rotates Certificates Following Axios Developer Tool Compromise",
+            "content": "OpenAI has responded to a supply chain attack involving the Axios developer tool by rotating macOS code signing certificates and updating affected applications. The company confirmed that no user data was compromised during the incident. This proactive measure aims to prevent unauthorized code execution and maintain the integrity of OpenAI&#x27;s software distribution. Supply chain attacks, which exploit vulnerabilities in third-party software, are a growing concern for developers and security teams. OpenAI&#x27;s swift response underscores the importance of vigilance and timely action in mitigating potential threats.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/axios-developer-tool-compromise",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "OpenAI Unveils AI Tools for Financial Sector Deployment",
+            "title": "OpenAI Releases AI Resources to Enhance Financial Services",
+            "content": "OpenAI has introduced a suite of AI resources tailored for the financial services industry, including prompt packs, GPTs (Generative Pre-trained Transformers), guides, and tools designed to help institutions deploy and scale AI securely. These resources aim to enhance operational efficiency, risk management, and customer engagement within financial institutions. As AI continues to transform the financial sector, the availability of specialized tools and guidance is crucial for secure and effective implementation. Financial professionals are encouraged to explore these resources to stay competitive and compliant in a rapidly evolving landscape.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/financial-services",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
+            "headline": "AI Influencers Dominate Coachella—A New Digital Trend",
+            "title": "AI-Generated Influencers Make Waves at Coachella Festival",
+            "content": "The Coachella music festival has seen a surge in AI-generated influencers, with social media feeds flooded with images of digitally crafted personas in glamorous outfits. These AI influencers, designed to capture attention with their striking appearances, are becoming a ubiquitous presence at high-profile events. This trend highlights the growing influence of AI in digital marketing and social media, raising questions about authenticity and the future of influencer culture. Brands and marketers should consider the implications of AI-generated personas on consumer engagement and brand perception.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/911267/ai-influencers-coachella",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
+            "headline": "Stanford AI Report Reveals Expert-Public Disconnect",
+            "title": "Stanford AI Index Highlights Growing Gap Between Experts and Public",
+            "content": "Stanford University&#x27;s latest AI Index report reveals a widening gap between AI experts and the general public, with increasing concerns about the impact of AI on jobs, healthcare, and the economy. The report indicates that while AI professionals are optimistic about technological advancements, the public remains anxious about potential disruptions. This disconnect underscores the need for better communication and education to bridge understanding and address societal concerns. Policymakers and industry leaders should prioritize transparency and dialogue to align AI development with public interests.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 13 2026",
+            "headline": "OpenAI Memo Reveals Strategy to Outpace Competitors",
+            "title": "OpenAI&#x27;s Strategic Memo Focuses on User Retention and Growth",
+            "content": "OpenAI&#x27;s chief revenue officer, Denise Dresser, has outlined the company&#x27;s strategic direction in a memo emphasizing user retention and enterprise growth. The memo, viewed by The Verge, stresses the importance of building robust customer relationships and expanding OpenAI&#x27;s presence in the enterprise market. This strategic focus comes amid increasing competition from rivals like Anthropic. OpenAI&#x27;s approach highlights the need for innovation and customer-centric strategies to maintain a competitive edge in the rapidly evolving AI landscape. Industry stakeholders should watch for potential shifts in market dynamics as OpenAI implements these strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/911118/openai-memo-cro-ai-competition-anthropic",
+            "relatedResources": []
+        },
         {
             "date": "Apr 13 2026",
             "headline": "Microsoft Targets Enterprises with Secure OpenClaw Alternative",
@@ -138,24 +210,6 @@ const websiteContent = {
             "content": "Vercel, a decade-old development tool and hosting platform, is experiencing a surge in revenue thanks to the proliferation of AI-generated applications and agents. CEO Guillermo Rauch has signaled the company&#x27;s readiness for an initial public offering (IPO), highlighting the transformative impact of AI on their business model. As traditional startups struggle to adapt to the AI era, Vercel&#x27;s strategic positioning in the AI ecosystem has enabled it to capitalize on new opportunities. Developers and tech leaders should monitor Vercel&#x27;s progress as it prepares for potential public market entry.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "ChatGPT Revolutionizes Research with Structured Insights",
-            "title": "Using ChatGPT for Research: Structured, Citation-Backed Insights",
-            "content": "OpenAI&#x27;s ChatGPT is being leveraged for research purposes, enabling users to gather sources, analyze information, and produce structured, citation-backed insights. This application of ChatGPT transforms the research process by automating data collection and synthesis, making it easier for professionals to generate comprehensive reports. The tool&#x27;s ability to provide accurate and relevant information is crucial for researchers seeking to streamline their workflows. As AI continues to evolve, integrating tools like ChatGPT into research practices can enhance productivity and accuracy. Researchers should explore ChatGPT&#x27;s capabilities to optimize their research methodologies.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/research",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 07 2026",
-            "headline": "Google&#x27;s AI Overviews: Millions of Lies Per Hour?",
-            "title": "Google&#x27;s AI Overviews Under Scrutiny for Accuracy Issues",
-            "content": "Testing has revealed that Google&#x27;s AI Overviews may be generating millions of inaccuracies per hour, raising concerns about the reliability of AI-driven search results. With a reported accuracy rate of 90%, questions arise about the suitability of such technology for delivering precise information. This development highlights the ongoing challenges in AI accuracy and the potential implications for users relying on AI for critical information. Tech professionals should remain cautious about the limitations of AI Overviews and consider alternative verification methods to ensure data integrity.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
             "relatedResources": []
         },
         {
@@ -219,24 +273,6 @@ const websiteContent = {
             "content": "In a surprising move, Trump administration officials are reportedly encouraging banks to test Anthropic&#x27;s Mythos AI model, despite the Department of Defense labeling it a supply-chain risk. This development highlights a potential conflict between innovation and security, as financial institutions weigh the benefits of cutting-edge AI against potential vulnerabilities. The Mythos model, known for its advanced capabilities, could offer significant advantages in financial analytics and decision-making. However, the security concerns raised by the Department of Defense necessitate a cautious approach. Financial institutions are advised to conduct thorough risk assessments before integrating the model into their operations.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 12 2026",
-            "headline": "Apple Explores Four Designs for Smart Glasses—Testing Underway",
-            "title": "Apple Testing Multiple Designs for Upcoming Smart Glasses",
-            "content": "Apple is reportedly testing four different designs for its upcoming smart glasses, marking a strategic shift from its previous plans for a broader range of mixed and augmented reality devices. This move indicates Apple&#x27;s focus on refining its product offerings in the competitive wearable tech market. The smart glasses are expected to integrate seamlessly with Apple&#x27;s ecosystem, offering users enhanced augmented reality experiences. As the company evaluates these prototypes, industry analysts are keenly observing potential impacts on the AR market and consumer adoption. Stakeholders should stay informed about further developments as Apple finalizes its design choices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/12/apple-reportedly-testing-four-designs-for-upcoming-smart-glasses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 12 2026",
-            "headline": "AI Code Wars Intensify—Developers Face New Challenges",
-            "title": "The AI Code Wars: A Deep Dive into the Current Landscape",
-            "content": "The AI code wars are escalating as developers navigate the rapidly evolving landscape of AI coding and vibe-coding. This surge in AI-driven development is reshaping the tech industry, with companies racing to leverage AI for competitive advantage. The trend began with AI&#x27;s ability to automate code writing, but has now expanded into more nuanced applications like vibe-coding, which tailors software experiences to user emotions. This shift presents both opportunities and challenges for developers, who must adapt to new tools and methodologies. As AI continues to integrate into coding practices, professionals need to stay informed about emerging trends and technologies to remain competitive.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic",
             "relatedResources": []
         }
     ],
