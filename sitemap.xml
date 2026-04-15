@@ -167,8 +167,19 @@
     <priority>1.0</priority>
     <lastmod>2026-03-23</lastmod>
   </url>
-  
-  <!-- ========== CORE TRACKERS - DAILY UPDATES ========== -->
+  <!-- ========== CORE PAGES ========== -->
+  <url>
+    <loc>https://thehgtech.com/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2026-04-15</lastmod>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/about-harish-hero.png</image:loc>
+      <image:title>About Harish G — Cybersecurity Expert &amp; Founder of TheHGTech</image:title>
+    </image:image>
+  </url>
+
+
   <url>
     <loc>https://thehgtech.com/tools/grc-assessment/</loc>
     <changefreq>daily</changefreq>
