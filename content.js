@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 15 2026",
+            "headline": "Anthropic&#x27;s MCP Flaw—AI Supply Chains at Risk",
+            "title": "&#x27;By Design&#x27; Flaw in Anthropic&#x27;s MCP Threatens AI Supply Chains",
+            "content": "Researchers have identified a critical flaw in Anthropic&#x27;s Model Context Protocol (MCP) that could enable widespread AI supply chain attacks. This vulnerability allows unsanitized commands to execute silently, potentially leading to full system compromise in AI environments. The flaw poses a significant risk to organizations relying on AI systems for critical operations, as it could be exploited to manipulate AI models or disrupt services. As AI becomes increasingly integrated into enterprise operations, securing the supply chain is paramount. Organizations using Anthropic&#x27;s MCP should review their security measures and apply any available patches or mitigations immediately.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/by-design-flaw-in-mcp-could-enable-widespread-ai-supply-chain-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 15 2026",
+            "headline": "CVE-2026-33032—nginx-ui Flaw Allows Server Takeover",
+            "title": "Critical nginx-ui Flaw CVE-2026-33032 Under Active Exploitation",
+            "content": "A critical vulnerability, CVE-2026-33032, in the nginx-ui management tool is being actively exploited, allowing attackers to bypass authentication and take control of Nginx servers. With a CVSS score of 9.8, this flaw represents a severe threat to organizations using nginx-ui for server management. Exploitation of this vulnerability could lead to unauthorized access and potential data breaches. Administrators are urged to apply patches immediately to mitigate the risk of server compromise. This incident underscores the importance of regular security audits and timely updates in maintaining server integrity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 15 2026",
+            "headline": "April Patch Tuesday—Critical Fixes for SAP, Adobe, Microsoft",
+            "title": "April Patch Tuesday Addresses Critical Vulnerabilities in Major Software",
+            "content": "April&#x27;s Patch Tuesday has delivered crucial updates for vulnerabilities in products from SAP, Adobe, Microsoft, and Fortinet. Notably, an SQL injection flaw in SAP Business Planning and Consolidation and SAP Business Warehouse (CVE-2026-2) is among the critical issues addressed. These vulnerabilities could allow attackers to execute arbitrary code or access sensitive data. Organizations using affected products should prioritize applying these patches to protect against potential exploits. The consistent emergence of such vulnerabilities highlights the ongoing need for robust patch management strategies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/april-patch-tuesday-fixes-critical.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 15 2026",
+            "headline": "Fortinet Fixes Critical Flaws in FortiSandbox",
+            "title": "Fortinet Releases Patches for Critical FortiSandbox Vulnerabilities",
+            "content": "Fortinet has issued patches for critical vulnerabilities in its FortiSandbox product that could allow attackers to bypass authentication or execute arbitrary code via HTTP requests. These flaws pose a significant risk to organizations using FortiSandbox for network security analysis. Exploitation could result in unauthorized access or system manipulation. Security teams should apply the patches promptly to safeguard their systems. This update is part of Fortinet&#x27;s ongoing efforts to enhance the security of its products against evolving threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fortinet-patches-critical-fortisandbox-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 15 2026",
+            "headline": "Microsoft Patches 169 Flaws—Includes SharePoint Zero-Day",
+            "title": "Microsoft Addresses SharePoint Zero-Day and 168 Other Vulnerabilities",
+            "content": "Microsoft has released patches for a record 169 security vulnerabilities, including a zero-day in SharePoint that has been actively exploited. Of these, eight are rated Critical, and 157 are Important, affecting a wide range of Microsoft products. The zero-day vulnerability poses a significant risk, as it could be used to gain unauthorized access to sensitive data. IT administrators should prioritize these updates to protect their systems from potential exploitation. This extensive patch release underscores the importance of maintaining up-to-date security protocols in enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/microsoft-issues-patches-for-sharepoint.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "PHP Composer Flaws Allow Command Execution—Patches Available",
+            "title": "PHP Composer Vulnerabilities Enable Arbitrary Command Execution",
+            "content": "Two high-severity vulnerabilities in PHP&#x27;s Composer package manager have been disclosed, potentially allowing arbitrary command execution. These command injection flaws affect the Perforce version control software integration, posing a risk to developers using Composer for PHP projects. Successful exploitation could lead to unauthorized system access or data manipulation. Developers are advised to apply the released patches to mitigate these risks. This incident highlights the critical need for secure development practices and regular updates in software dependencies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/new-php-composer-flaws-enable-arbitrary.html",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 14 2026",
             "headline": "Microsoft Secures RDP Files—Phishing Attacks Thwarted",
             "title": "Microsoft Enhances Windows Security Against Malicious Remote Desktop Files",
@@ -83,79 +137,61 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/sap-patches-critical-abap-vulnerability/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Critical Risks Quadruple in 2026—OX Security Report",
-            "title": "OX Security Report Reveals 400% Increase in Critical Security Risks",
-            "content": "OX Security&#x27;s analysis of 216 million security findings from 250 organizations over a 90-day period reveals a staggering 400% increase in prioritized critical risks. The report attributes this surge to the rapid adoption of AI-assisted development, which has created a &quot;velocity gap&quot; in addressing security vulnerabilities. While the overall alert volume grew by 52% year-over-year, the disproportionate rise in critical risks highlights the urgent need for enhanced security measures. Organizations must prioritize risk management and invest in AI-driven security solutions to keep pace with evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/analysis-of-216m-security-findings.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "RCI Hospitality Data Breach via IDOR Flaw",
-            "title": "RCI Hospitality Reports Data Breach Due to IDOR Vulnerability",
-            "content": "RCI Hospitality has reported a data breach stemming from an Insecure Direct Object Reference (IDOR) vulnerability affecting its RCI Internet Services. This flaw exposed sensitive contractor data, raising concerns about data security practices within the company. The breach was disclosed in an SEC filing, prompting RCI to review and strengthen its security protocols. Organizations are reminded of the importance of securing web applications against IDOR vulnerabilities to prevent unauthorized data access. This incident serves as a cautionary tale for businesses handling sensitive information.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/nightclub-giant-rci-hospitality-reports-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "ShowDoc RCE Flaw Exploited—Patch CVE-2025-0520 Now",
-            "title": "Critical RCE Vulnerability CVE-2025-0520 in ShowDoc Actively Exploited",
-            "content": "A critical remote code execution (RCE) vulnerability, CVE-2025-0520, is actively being exploited in ShowDoc, a popular document management and collaboration service in China. With a CVSS score of 9.4, this flaw allows attackers to execute arbitrary code on unpatched servers, posing significant risks to organizations using the platform. Security experts urge immediate patching to mitigate potential exploitation. This incident highlights the importance of timely vulnerability management and the need for organizations to maintain up-to-date security practices to protect against emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/showdoc-rce-flaw-cve-2025-0520-actively.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "Basic-Fit Breach Exposes Data of 1 Million Members",
-            "title": "Hackers Breach Basic-Fit Systems, Compromise Member Data",
-            "content": "Dutch fitness chain Basic-Fit has disclosed a significant data breach affecting one million of its members. Hackers accessed sensitive customer information, including names, contact details, and membership data. This breach underscores the vulnerability of personal data within the fitness industry, which often lacks robust cybersecurity measures. Basic-Fit is currently investigating the breach and has urged affected members to monitor their accounts for suspicious activity. The incident highlights the growing trend of cybercriminals targeting consumer-facing businesses for valuable personal data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/european-gym-giant-basic-fit-data-breach-affects-1-million-members/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "ShinyHunters Leak Rockstar Games Data—Extortion Tactics Evolve",
-            "title": "Rockstar Games Data Breach Linked to Anodot Security Incident",
-            "content": "Rockstar Games has become the latest victim of a data breach, with the ShinyHunters extortion gang leaking stolen analytics data. The breach is tied to a security incident at Anodot, a partner company, where attackers exploited vulnerabilities to access sensitive information. The leaked data could potentially impact Rockstar&#x27;s business operations and customer trust. This incident highlights the risks associated with third-party vendors and the need for stringent security protocols. Companies are advised to review their partnerships and enhance their data protection strategies to mitigate similar threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/stolen-rockstar-games-analytics-data-leaked-by-extortion-gang/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "Critical wolfSSL Flaw—Certificate Forgery Risk Exposed",
-            "title": "Vulnerability in wolfSSL Library Allows Forged Certificate Use",
-            "content": "A critical flaw has been identified in the wolfSSL SSL/TLS library, potentially allowing attackers to use forged certificates. The vulnerability arises from improper verification of the hash algorithm or its size during Elliptic Curve Digital Signature Algorithm (ECDSA) signature checks. This flaw could enable man-in-the-middle attacks, compromising secure communications. Organizations using wolfSSL are urged to update to the latest version immediately to mitigate this risk. The discovery underscores the importance of rigorous testing and validation in cryptographic libraries to prevent security breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-flaw-in-wolfssl-library-enables-forged-certificate-use/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 12 2026",
-            "headline": "AI Code Wars Intensify—Developers Brace for Impact",
-            "title": "The AI Code Wars: A New Era of Software Development Competition",
-            "content": "The competitive landscape of AI-driven code generation is rapidly evolving, as highlighted in The Verge&#x27;s latest edition of The Stepback. The newsletter delves into the burgeoning field of AI coding and vibe-coding, where developers are leveraging AI tools to streamline and enhance software development processes. This shift is reminiscent of past technological revolutions, such as the rise of open-source software and the adoption of DevOps methodologies. As AI tools become more sophisticated, developers face both opportunities and challenges in maintaining code quality and security. Industry professionals should stay informed about these advancements to remain competitive and ensure robust software development practices.",
+            "date": "Apr 15 2026",
+            "headline": "Apple Threatens Grok Over Sexual Deepfakes—App Store Ban Averted",
+            "title": "Grok Faces App Store Ban Due to Nonconsensual Sexual Deepfakes",
+            "content": "Apple nearly removed Elon Musk&#x27;s AI app, Grok, from its App Store after a surge of nonconsensual sexual deepfakes appeared on X, as reported by NBC News. The app faced criticism for not effectively curbing the spread of these harmful images, which violate privacy and consent. Apple&#x27;s intervention highlights the increasing scrutiny tech companies face over AI-generated content and the responsibilities of platform owners. This incident underscores the need for robust content moderation systems in AI applications to prevent misuse. Developers and platform operators should prioritize implementing stringent safeguards to protect user privacy and comply with app store policies.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/912297/apple-app-store-ban-grok-x-deepfakes",
             "relatedResources": []
         },
         {
             "date": "Apr 10 2026",
-            "headline": "ChatGPT Revolutionizes Research—Structured Insights Made Easy",
-            "title": "Utilizing ChatGPT for Enhanced Research and Structured Insights",
-            "content": "OpenAI&#x27;s ChatGPT is transforming the research landscape by offering tools to gather sources, analyze data, and generate structured, citation-backed insights. This AI model assists researchers in navigating vast amounts of information efficiently, providing a competitive edge in data-driven fields. By automating the initial stages of research, ChatGPT allows professionals to focus on deeper analysis and interpretation. Researchers and analysts are encouraged to integrate ChatGPT into their workflows to enhance productivity and accuracy. As AI continues to evolve, its role in research methodologies is expected to expand, offering new possibilities for innovation and discovery.",
+            "headline": "Master Research with ChatGPT—New Tools and Techniques",
+            "title": "Enhancing Research Capabilities with ChatGPT&#x27;s Advanced Features",
+            "content": "OpenAI has introduced new methodologies for using ChatGPT to conduct research, focusing on search capabilities and deep research techniques. These enhancements allow users to find up-to-date information, analyze sources critically, and generate structured insights efficiently. By leveraging ChatGPT&#x27;s advanced natural language processing capabilities, researchers can streamline their workflow and improve the accuracy of their findings. This development is particularly beneficial for professionals in academia and industry who require precise and timely data analysis. Users are encouraged to explore these new features to enhance their research productivity and maintain a competitive edge.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/research",
+            "sourceUrl": "https://openai.com/academy/search-and-deep-research",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "AI Tools for Finance—Secure Deployment and Scaling",
+            "title": "Comprehensive AI Resources for Financial Services Deployment",
+            "content": "OpenAI has released a suite of AI resources tailored for the financial services sector, including prompt packs, GPTs, guides, and tools designed to facilitate secure AI deployment and scaling. These resources aim to assist financial institutions in integrating AI technologies while maintaining compliance with industry regulations. By providing structured guidance and specialized tools, OpenAI addresses the sector&#x27;s unique challenges, such as data privacy and risk management. Financial professionals are advised to utilize these resources to enhance operational efficiency and drive innovation within their organizations.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/financial-services",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "OpenAI Secures Axios Tools—No Data Compromised",
+            "title": "OpenAI&#x27;s Response to Axios Developer Tool Supply Chain Attack",
+            "content": "In response to a supply chain attack affecting Axios developer tools, OpenAI has taken swift action by rotating macOS code signing certificates and updating affected applications. The company confirmed that no user data was compromised during the incident, demonstrating the effectiveness of its security protocols. This attack highlights the ongoing threat of supply chain vulnerabilities in software development environments. Developers should remain vigilant and regularly update their security measures to protect against similar threats. OpenAI&#x27;s proactive response serves as a model for handling such incidents efficiently.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/axios-developer-tool-compromise",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 15 2026",
+            "headline": "Reid Hoffman on AI Tokens—Context is Key",
+            "title": "Reid Hoffman Discusses AI Token Use and Adoption Metrics",
+            "content": "Reid Hoffman has weighed in on the debate surrounding &#x27;tokenmaxxing,&#x27; emphasizing the importance of context when tracking AI token usage as a measure of adoption. While token metrics can provide insights into AI technology uptake, Hoffman cautions against using them as direct indicators of productivity. This perspective is crucial for businesses and developers who rely on AI metrics to assess performance and growth. Understanding the broader implications of token usage can lead to more informed decision-making and strategic planning in AI deployment.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/15/reid-hoffman-weighs-in-on-the-tokenmaxxing-debate/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 15 2026",
+            "headline": "Adobe Firefly AI—Streamlining Creative Cloud Tasks",
+            "title": "Adobe Introduces Firefly AI Assistant for Creative Cloud Integration",
+            "content": "Adobe has unveiled its new Firefly AI assistant, designed to enhance productivity by automating tasks across its suite of Creative Cloud applications, including Photoshop, Premiere, and Illustrator. The assistant leverages AI to streamline workflows, allowing users to focus on creative processes rather than repetitive tasks. This integration reflects a growing trend of AI-driven tools in creative industries, aimed at boosting efficiency and innovation. Creative professionals should explore Firefly&#x27;s capabilities to optimize their use of Adobe&#x27;s software suite and stay competitive in the evolving digital landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/15/adobes-new-firefly-ai-assistant-can-use-creative-cloud-apps-to-complete-tasks/",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "Microsoft is developing a new agent aimed at enterprise customers, offering enhanced security controls compared to the open-source OpenClaw agent. This move addresses the security risks associated with OpenClaw, which has been criticized for its vulnerabilities. The new agent is designed to integrate seamlessly into enterprise environments, providing robust protection against unauthorized access and data breaches. As businesses increasingly rely on AI agents for automation and decision-making, Microsoft&#x27;s solution aims to mitigate the security concerns that have plagued similar tools. Enterprises should evaluate this new offering to enhance their cybersecurity posture.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/13/microsoft-is-working-on-yet-another-openclaw-like-agent/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "Vercel Eyes IPO Amid AI-Driven Revenue Boom",
-            "title": "Vercel CEO Hints at IPO as AI Apps Drive Growth",
-            "content": "Vercel, a decade-old development tool and hosting platform, is experiencing a surge in revenue thanks to the proliferation of AI-generated applications and agents. CEO Guillermo Rauch has signaled the company&#x27;s readiness for an initial public offering (IPO), highlighting the transformative impact of AI on their business model. As traditional startups struggle to adapt to the AI era, Vercel&#x27;s strategic positioning in the AI ecosystem has enabled it to capitalize on new opportunities. Developers and tech leaders should monitor Vercel&#x27;s progress as it prepares for potential public market entry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "OpenAI Acquires Hiro—Expands into Personal Finance",
-            "title": "OpenAI Acquires Hiro to Enhance ChatGPT with Financial Planning",
-            "content": "OpenAI has acquired Hiro, an AI startup specializing in personal finance, signaling its intent to integrate financial planning capabilities into ChatGPT. This acquisition represents a strategic move to broaden ChatGPT&#x27;s functionality, allowing users to manage their finances more effectively through AI-driven insights. As financial planning becomes increasingly digital, OpenAI&#x27;s expansion into this domain could revolutionize how individuals and businesses approach financial management. Users of ChatGPT should anticipate new features that facilitate comprehensive financial planning and analysis.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Federal Charges for Attack on OpenAI CEO&#x27;s Home",
-            "title": "Daniel Moreno-Gama Charged for Attacking OpenAI CEO and HQ",
-            "content": "Daniel Moreno-Gama faces federal charges after allegedly attempting to harm OpenAI CEO Sam Altman and attacking the company&#x27;s headquarters. The incident involved Moreno-Gama traveling from Texas to California, where he reportedly threw a Molotov cocktail at Altman&#x27;s residence and attempted to break into OpenAI&#x27;s headquarters. This alarming event underscores the security challenges faced by high-profile tech leaders and organizations. Security professionals should assess and enhance protective measures for executives and critical infrastructure to prevent similar threats.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/911423/openai-sam-altman-attack",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "Zuckerberg&#x27;s AI Doppelgänger—Meta&#x27;s New Meeting Strategy",
-            "title": "Mark Zuckerberg Develops AI Clone for Meeting Interactions",
-            "content": "Meta CEO Mark Zuckerberg is reportedly developing an AI clone to represent him in meetings, according to the Financial Times. This AI avatar is being trained on Zuckerberg&#x27;s image, voice, mannerisms, and tone to provide feedback and interact with employees. The initiative reflects Meta&#x27;s ongoing investment in AI technologies to enhance workplace efficiency and communication. While the AI clone could streamline internal processes, it raises questions about the implications of AI in leadership roles and employee interactions. Professionals should consider the ethical and operational impacts of deploying AI avatars in corporate environments.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/910990/meta-ceo-mark-zuckerberg-ai-clone",
             "relatedResources": []
         }
     ],
