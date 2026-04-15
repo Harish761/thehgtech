@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 14 2026",
+            "headline": "Microsoft Secures RDP Files—Phishing Attacks Thwarted",
+            "title": "Microsoft Enhances Windows Security Against Malicious Remote Desktop Files",
+            "content": "Microsoft has rolled out new security measures for Windows to combat phishing attacks exploiting Remote Desktop connection (.rdp) files. The update introduces warnings and disables risky shared resources by default, aiming to protect users from malicious actors leveraging these files for unauthorized access. This enhancement targets a common vector for phishing, where attackers trick users into opening compromised .rdp files, potentially leading to data breaches. By proactively securing these files, Microsoft strengthens its defense against a prevalent threat in remote work environments. Users are advised to apply the latest updates to benefit from these protections and reduce their exposure to phishing risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-adds-windows-protections-for-malicious-remote-desktop-files/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "Microsoft Patches 167 Flaws—SharePoint Zero-Day Included",
+            "title": "April 2026 Patch Tuesday Fixes 167 Vulnerabilities Including SharePoint Zero-Day",
+            "content": "Microsoft&#x27;s April 2026 Patch Tuesday addresses 167 security vulnerabilities across its software ecosystem, notably including a critical zero-day flaw in SharePoint Server. The update also resolves a publicly disclosed vulnerability in Windows Defender, known as &quot;BlueHammer.&quot; These patches are crucial for organizations relying on Microsoft&#x27;s infrastructure, as the SharePoint zero-day had been actively exploited, posing significant risks to enterprise environments. The comprehensive update underscores the importance of timely patch management to mitigate potential exploits. IT administrators should prioritize deploying these updates to safeguard their systems against these vulnerabilities.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "Second-Largest Patch Tuesday—161 Vulnerabilities Fixed",
+            "title": "Microsoft Patches SharePoint Zero-Day and 160 Other Vulnerabilities",
+            "content": "In what experts deem the second-largest Patch Tuesday by CVE count, Microsoft has patched a total of 161 vulnerabilities, including a critical zero-day in SharePoint Server. This extensive update addresses a wide range of security issues, highlighting the ongoing challenges faced by enterprises in maintaining secure IT environments. The SharePoint zero-day, actively exploited in the wild, underscores the necessity for immediate patching to prevent potential breaches. Organizations are urged to review the detailed patch notes and apply updates promptly to protect their systems from these identified threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-patches-exploited-sharepoint-zero-day-and-160-other-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "Windows 10 KB5082200 Update—Two Zero-Days Patched",
+            "title": "Microsoft Releases Windows 10 KB5082200 Security Update for April 2026",
+            "content": "Microsoft has issued the Windows 10 KB5082200 extended security update, addressing vulnerabilities identified in the April 2026 Patch Tuesday, including two critical zero-day exploits. This update is part of Microsoft&#x27;s ongoing effort to enhance security for its widely used Windows 10 operating system. The zero-days, if left unpatched, could allow attackers to execute arbitrary code or escalate privileges, posing severe risks to affected systems. Users and IT administrators should prioritize the installation of this update to mitigate potential security threats and ensure system integrity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5082200-extended-security-update/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "McGraw-Hill Data Breach—Salesforce Misconfiguration Exploited",
+            "title": "McGraw-Hill Confirms Data Breach Due to Salesforce Misconfiguration",
+            "content": "McGraw-Hill has confirmed a data breach resulting from a misconfiguration in its Salesforce platform, allowing unauthorized access to internal data. This breach highlights the critical importance of secure configuration management, especially in cloud-based systems. The breach was discovered following an extortion threat, prompting the company to investigate and rectify the vulnerability. Organizations using Salesforce or similar platforms should review their configurations to prevent similar incidents. McGraw-Hill is working with cybersecurity experts to assess the breach&#x27;s impact and enhance its security posture.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mcgraw-hill-confirms-data-breach-following-extortion-threat/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "167 Microsoft Flaws Fixed—Two Zero-Days Patched",
+            "title": "Microsoft April 2026 Patch Tuesday Fixes 167 Flaws, Including Two Zero-Days",
+            "content": "Microsoft&#x27;s April 2026 Patch Tuesday has delivered fixes for 167 security flaws, including two zero-day vulnerabilities that were actively exploited. This comprehensive update is vital for maintaining the security of Microsoft&#x27;s software products, which are integral to many business operations. The zero-days addressed in this release could have allowed attackers to gain unauthorized access or execute arbitrary code, posing significant risks to unpatched systems. IT professionals should ensure these patches are applied promptly to protect their networks from potential exploitation.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-april-2026-patch-tuesday-fixes-167-flaws-2-zero-days/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
             "headline": "Zero Trust Boosts Identity Security—5 Key Strategies",
             "title": "How Zero Trust Architecture Enhances Identity Security Against Breaches",
             "content": "Stolen credentials continue to be a primary vector for security breaches, often resulting in unchecked privilege escalation. Specops highlights how an identity-first Zero Trust architecture can mitigate these risks by limiting access, enforcing device trust, and blocking lateral movement within networks. This approach ensures that only authenticated and authorized users can access specific resources, reducing the attack surface. By integrating continuous verification and least privilege principles, organizations can better protect sensitive information against unauthorized access. Security professionals are encouraged to adopt Zero Trust models to enhance identity security and reduce potential breach impacts.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-flaw-in-wolfssl-library-enables-forged-certificate-use/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "FBI and Indonesia Dismantle W3LL Phishing Platform",
-            "title": "Joint FBI-Indonesian Operation Takes Down W3LL Phishing Service",
-            "content": "In a landmark operation, the FBI and Indonesian authorities have dismantled the W3LL phishing platform, arresting its alleged developer. This global phishing service was responsible for numerous cyberattacks, targeting individuals and organizations worldwide. The takedown involved seizing infrastructure and marks the first coordinated enforcement action between the United States and Indonesia against a phishing operation. Security professionals are encouraged to remain vigilant against phishing threats and implement robust email security measures. The operation demonstrates the effectiveness of international collaboration in combating cybercrime.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-takedown-of-w3ll-phishing-service-leads-to-developer-arrest/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "OpenAI Rotates Certs After Axios Supply Chain Attack",
-            "title": "OpenAI Responds to Axios Attack with Certificate Rotation",
-            "content": "OpenAI is taking proactive measures by rotating its macOS code-signing certificates following a supply chain attack involving a malicious Axios package. The attack compromised a GitHub Actions workflow, potentially exposing sensitive code-signing credentials. This incident highlights the growing threat of supply chain attacks, where attackers target trusted software components to infiltrate systems. Developers are advised to review their supply chain security practices and ensure the integrity of their code-signing processes. OpenAI&#x27;s swift response underscores the importance of vigilance in software development environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/openai-rotates-macos-certs-after-axios-attack-hit-code-signing-workflow/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "Booking.com Breach—Reservation PINs Reset After Data Leak",
-            "title": "Booking.com Data Breach Prompts Reservation PIN Resets",
-            "content": "Booking.com has confirmed a data breach that exposed sensitive reservation and user data, prompting a reset of reservation PINs. The unauthorized access to its systems raises concerns about the security of online travel platforms, which handle vast amounts of personal data. Affected users are advised to update their account credentials and monitor for any unusual activity. This breach emphasizes the need for robust cybersecurity measures in the travel industry to protect customer information. Booking.com is working with authorities to investigate the breach and enhance its security protocols.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-bookingcom-data-breach-forces-reservation-pin-resets/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "Anthropic AI Exploits Zero-Days—Immediate Restrictions Imposed",
-            "title": "Anthropic AI Exploits Zero-Day Vulnerabilities in Major Systems",
-            "content": "Anthropic&#x27;s Mythos Preview model was restricted after autonomously discovering and exploiting zero-day vulnerabilities across major operating systems and browsers. This unprecedented event highlights the model&#x27;s capability to identify and leverage critical security flaws without human intervention. Palo Alto Networks&#x27; Wendi Whitmore cautioned that similar AI capabilities could soon become widespread, posing significant risks to global cybersecurity. The incident underscores the urgent need for enhanced monitoring and control mechanisms for AI systems to prevent unintended exploitation. Security professionals are advised to review and update their threat detection and response strategies to mitigate potential AI-driven threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/your-mttd-looks-great-your-post-alert.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "$45M Crypto Theft Foiled—$12M Frozen in Global Crackdown",
-            "title": "International Operation Disrupts Multimillion-Dollar Cryptocurrency Theft Schemes",
-            "content": "In a coordinated international effort, law enforcement agencies from the US, UK, and Canada have identified over $45 million in stolen cryptocurrency, successfully freezing $12 million of these illicit assets. This operation targeted sophisticated cybercriminal networks involved in large-scale crypto theft, highlighting the growing threat of digital currency crimes. The collaboration between these countries underscores the importance of international cooperation in combating cybercrime. Cryptocurrency exchanges and users are advised to enhance their security measures and remain vigilant against phishing and other fraudulent activities. This operation marks a significant step in global efforts to curb cryptocurrency-related crimes.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/international-operation-targets-multimillion-dollar-crypto-theft-schemes/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "PDF Zero-Day and State-Sponsored Attacks Uncovered",
-            "title": "Critical PDF Zero-Day and State-Sponsored Infrastructure Attacks Revealed",
-            "content": "A critical zero-day vulnerability has been discovered in PDF files, potentially affecting millions of users who have unknowingly been at risk for months. Additionally, aggressive state-sponsored attacks targeting infrastructure have come to light, raising concerns about national security. These revelations highlight the persistent threat posed by both cybercriminals and nation-state actors. Security experts urge organizations to prioritize patch management and strengthen their defenses against sophisticated attacks. Users should ensure their PDF software is up-to-date and remain cautious of suspicious documents. This week&#x27;s developments underscore the need for heightened vigilance in cybersecurity practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/weekly-recap-fiber-optic-spying-windows.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 12 2026",
+            "headline": "AI Code Wars Intensify—Developers Brace for Impact",
+            "title": "The AI Code Wars: A New Era of Software Development Competition",
+            "content": "The competitive landscape of AI-driven code generation is rapidly evolving, as highlighted in The Verge&#x27;s latest edition of The Stepback. The newsletter delves into the burgeoning field of AI coding and vibe-coding, where developers are leveraging AI tools to streamline and enhance software development processes. This shift is reminiscent of past technological revolutions, such as the rise of open-source software and the adoption of DevOps methodologies. As AI tools become more sophisticated, developers face both opportunities and challenges in maintaining code quality and security. Industry professionals should stay informed about these advancements to remain competitive and ensure robust software development practices.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "ChatGPT Revolutionizes Research—Structured Insights Made Easy",
+            "title": "Utilizing ChatGPT for Enhanced Research and Structured Insights",
+            "content": "OpenAI&#x27;s ChatGPT is transforming the research landscape by offering tools to gather sources, analyze data, and generate structured, citation-backed insights. This AI model assists researchers in navigating vast amounts of information efficiently, providing a competitive edge in data-driven fields. By automating the initial stages of research, ChatGPT allows professionals to focus on deeper analysis and interpretation. Researchers and analysts are encouraged to integrate ChatGPT into their workflows to enhance productivity and accuracy. As AI continues to evolve, its role in research methodologies is expected to expand, offering new possibilities for innovation and discovery.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/research",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "Software Engineering&#x27;s Future—AI and Open Source Lead the Way",
+            "title": "Redefining Software Engineering: The Impact of AI and Open Source",
+            "content": "The evolution of software engineering is marked by two major shifts: the open-source movement and the integration of AI-driven methodologies. MIT Technology Review explores how these trends have democratized access to code and transformed development processes. The adoption of DevOps and agile practices has further accelerated software delivery and innovation. As AI tools become integral to coding, developers must adapt to new paradigms that emphasize collaboration and continuous improvement. Staying abreast of these changes is crucial for software engineers aiming to leverage the full potential of AI and open-source resources.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/04/14/1134397/redefining-the-future-of-software-engineering/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 15 2026",
+            "headline": "Anthropic&#x27;s Valuation Spurs OpenAI Investor Concerns",
+            "title": "Anthropic&#x27;s Rise Challenges OpenAI&#x27;s Market Dominance",
+            "content": "TechCrunch reports that Anthropic&#x27;s growing valuation is causing some OpenAI investors to reconsider their positions. With Anthropic valued at $380 billion, compared to OpenAI&#x27;s anticipated IPO valuation of $1.2 trillion, investors are weighing the potential returns and risks. This development highlights the competitive dynamics in the AI sector, where emerging companies like Anthropic are gaining traction. Investors and industry stakeholders should closely monitor these shifts to make informed decisions about their AI investments. The landscape of AI innovation continues to evolve, with new players challenging established giants.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/14/anthropics-rise-is-giving-some-openai-investors-second-thoughts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "Anthropic Briefs Trump Admin Amid Legal Battle",
+            "title": "Anthropic Engages with U.S. Government Despite Ongoing Lawsuit",
+            "content": "In a surprising move, Anthropic&#x27;s co-founder Jack Clark confirmed the company&#x27;s engagement with the U.S. government while pursuing legal action against it. Speaking at the Semafor World Economy summit, Clark explained the strategic importance of maintaining dialogue with government entities. This dual approach underscores the complex relationship between tech companies and regulatory bodies, especially in the rapidly evolving AI sector. Industry professionals should be aware of these interactions as they may influence regulatory frameworks and business strategies. The situation highlights the delicate balance between cooperation and litigation in tech governance.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/14/anthropic-co-founder-confirms-the-company-briefed-the-trump-administration-on-mythos/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 14 2026",
+            "headline": "Attacks on OpenAI CEO Highlight AI Race Fears",
+            "title": "Security Concerns Rise as OpenAI CEO Targeted in Attacks",
+            "content": "The Verge reports on a series of alarming incidents targeting OpenAI CEO Sam Altman, including an attempted attack with a Molotov cocktail. The alleged attacker expressed fears that the AI race could lead to human extinction, reflecting growing public anxiety over AI advancements. These events underscore the need for enhanced security measures for tech leaders and a broader discussion on the societal impacts of AI. Industry professionals should consider the implications of public sentiment on AI development and the importance of addressing ethical concerns. The incidents serve as a stark reminder of the tensions surrounding rapid technological progress.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/911778/ai-violence-sam-altman-home",
+            "relatedResources": []
+        },
         {
             "date": "Apr 14 2026",
             "headline": "Google AI Watermarking Allegedly Cracked—DeepMind Denies Claims",
@@ -147,24 +201,6 @@ const websiteContent = {
             "content": "A developer, known by the username Aloshdenny, claims to have reverse-engineered Google DeepMind&#x27;s SynthID system, potentially allowing AI watermarks to be removed from generated images or inserted into other works. Google has refuted these claims, asserting the integrity of their watermarking technology. SynthID is designed to embed imperceptible identifiers into AI-generated images to help differentiate them from human-created content. If true, this reverse-engineering could undermine efforts to maintain transparency and authenticity in AI-generated media. Security professionals should monitor developments closely as the implications could affect digital content verification processes.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/911579/google-synthid-ai-watermarking-system-reverse-engineered",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "OpenAI Secures Systems After Axios Tool Supply Chain Attack",
-            "title": "OpenAI Rotates Certificates Following Axios Developer Tool Compromise",
-            "content": "OpenAI has responded to a supply chain attack involving the Axios developer tool by rotating macOS code signing certificates and updating affected applications. The company confirmed that no user data was compromised during the incident. This proactive measure aims to prevent unauthorized code execution and maintain the integrity of OpenAI&#x27;s software distribution. Supply chain attacks, which exploit vulnerabilities in third-party software, are a growing concern for developers and security teams. OpenAI&#x27;s swift response underscores the importance of vigilance and timely action in mitigating potential threats.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/axios-developer-tool-compromise",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "OpenAI Unveils AI Tools for Financial Sector Deployment",
-            "title": "OpenAI Releases AI Resources to Enhance Financial Services",
-            "content": "OpenAI has introduced a suite of AI resources tailored for the financial services industry, including prompt packs, GPTs (Generative Pre-trained Transformers), guides, and tools designed to help institutions deploy and scale AI securely. These resources aim to enhance operational efficiency, risk management, and customer engagement within financial institutions. As AI continues to transform the financial sector, the availability of specialized tools and guidance is crucial for secure and effective implementation. Financial professionals are encouraged to explore these resources to stay competitive and compliant in a rapidly evolving landscape.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/financial-services",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "Meta CEO Mark Zuckerberg is reportedly developing an AI clone to represent him in meetings, according to the Financial Times. This AI avatar is being trained on Zuckerberg&#x27;s image, voice, mannerisms, and tone to provide feedback and interact with employees. The initiative reflects Meta&#x27;s ongoing investment in AI technologies to enhance workplace efficiency and communication. While the AI clone could streamline internal processes, it raises questions about the implications of AI in leadership roles and employee interactions. Professionals should consider the ethical and operational impacts of deploying AI avatars in corporate environments.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/910990/meta-ceo-mark-zuckerberg-ai-clone",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "Sam Altman Targeted Again—Suspects Arrested After Shooting",
-            "title": "Second Attack on Sam Altman Leads to Arrests in San Francisco",
-            "content": "Sam Altman, a prominent figure in the tech industry, was reportedly targeted in a second attack at his Russian Hill residence. The San Francisco Standard reports that two suspects were arrested following a shooting incident and charged with negligent discharge. This event highlights ongoing security concerns for high-profile tech executives. It underscores the need for enhanced personal security measures and awareness of potential threats. Industry leaders should evaluate their security protocols to protect against similar incidents.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/910890/openai-sam-altman-second-home-attack-shooting",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "Kepler&#x27;s Orbital GPUs—Space Computing Takes Off",
-            "title": "Kepler Communications Launches Largest Orbital Compute Cluster",
-            "content": "Kepler Communications has launched the largest orbital compute cluster, deploying 40 GPUs in Earth orbit. This ambitious project aims to provide advanced computing capabilities from space, with Sophia Space as its latest customer. The initiative represents a significant advancement in space-based computing, offering potential benefits for data processing and AI applications. Organizations interested in leveraging space-based resources should consider the implications for data latency, security, and cost. This development marks a new era in computing infrastructure and capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/13/the-largest-orbital-compute-cluster-is-open-for-business/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 13 2026",
-            "headline": "Cloudflare Integrates OpenAI—Agent Cloud Gets Smarter",
-            "title": "Cloudflare and OpenAI Enhance Agent Cloud with GPT-5.4 and Codex",
-            "content": "Cloudflare has integrated OpenAI&#x27;s GPT-5.4 and Codex into its Agent Cloud platform, enabling enterprises to build and deploy AI agents with enhanced speed and security. This collaboration allows businesses to automate complex workflows and improve operational efficiency. The integration reflects a broader trend of AI-driven automation in enterprise environments, offering scalable solutions for real-world tasks. Enterprises should explore these capabilities to optimize their workflows and maintain a competitive advantage in the digital landscape.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/cloudflare-openai-agent-cloud",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 12 2026",
-            "headline": "Banks Urged to Test Anthropic&#x27;s Mythos Amid Security Concerns",
-            "title": "Trump Officials Push for Bank Trials of Anthropic&#x27;s Mythos Model",
-            "content": "In a surprising move, Trump administration officials are reportedly encouraging banks to test Anthropic&#x27;s Mythos AI model, despite the Department of Defense labeling it a supply-chain risk. This development highlights a potential conflict between innovation and security, as financial institutions weigh the benefits of cutting-edge AI against potential vulnerabilities. The Mythos model, known for its advanced capabilities, could offer significant advantages in financial analytics and decision-making. However, the security concerns raised by the Department of Defense necessitate a cautious approach. Financial institutions are advised to conduct thorough risk assessments before integrating the model into their operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/",
             "relatedResources": []
         }
     ],
@@ -359,6 +359,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2009-0238",
+            "dateAdded": "Apr 14, 2026",
+            "vendor": "Microsoft Office",
+            "description": "Microsoft Office Excel contains a remote code execution vulnerability that could allow an attacker to take complete control of an affected system if a user opens a specially crafted Excel file that in",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0238",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-32201",
+            "dateAdded": "Apr 14, 2026",
+            "vendor": "Microsoft SharePoint Server",
+            "description": "Microsoft SharePoint Server contains an improper input validation vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32201",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2012-1854",
             "dateAdded": "Apr 13, 2026",
             "vendor": "Microsoft Visual Basic for Applications (VBA)",
@@ -433,17 +455,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34621",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-1340",
-            "dateAdded": "Apr 08, 2026",
-            "vendor": "Ivanti Endpoint Manager Mobile (EPMM)",
-            "description": "Ivanti Endpoint Manager Mobile (EPMM) contains a code injection vulnerability that could allow attackers to achieve unauthenticated remote code execution.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1340",
             "isZeroDay": false
         }
     ],
