@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 16 2026",
+            "headline": "17-Year-Old Excel RCE Exploited—Patch Systems Immediately",
+            "title": "Microsoft Defender 0-Day and Excel RCE Highlight Critical Vulnerabilities",
+            "content": "This week&#x27;s ThreatsDay Bulletin reveals a series of critical vulnerabilities, including a 17-year-old remote code execution (RCE) flaw in Microsoft Excel and a zero-day in Microsoft Defender. The Excel vulnerability, which has been exploited in the wild, allows attackers to execute arbitrary code by tricking users into opening malicious files. Additionally, SonicWall devices are facing brute-force attacks, further compounding security challenges. Organizations using these products are urged to apply patches immediately to mitigate potential breaches. These incidents underscore the persistent threat of legacy vulnerabilities being exploited by cybercriminals.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/threatsday-bulletin-17-year-old-excel.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Rhysida Ransomware Hits Tennessee Hospital—337,000 Affected",
+            "title": "Cookeville Regional Medical Center Data Breach Exposes 500GB of Data",
+            "content": "Cookeville Regional Medical Center in Tennessee has suffered a significant data breach, impacting approximately 337,000 individuals. The breach, orchestrated by the Rhysida ransomware group, resulted in the theft of 500GB of sensitive data. This attack highlights the ongoing vulnerability of healthcare institutions to ransomware threats, which can lead to severe operational disruptions and data privacy violations. Affected individuals should monitor their personal information for signs of misuse. Healthcare providers are advised to enhance their cybersecurity measures to prevent future incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/data-breach-at-tennessee-hospital-affects-337000/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Critical Webex Flaw—Immediate Customer Action Required",
+            "title": "Cisco Urges Action on Webex Services Certificate Validation Vulnerability",
+            "content": "Cisco has issued security updates to address four critical vulnerabilities in its Webex Services, including a flaw in certificate validation that demands immediate customer action. The vulnerability could allow attackers to impersonate legitimate services, leading to unauthorized access and data breaches. Users of Cisco&#x27;s cloud-based Webex platform should apply the latest patches and verify their configurations to ensure security. This incident emphasizes the importance of regular updates and vigilant security practices in cloud services.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-says-critical-webex-services-flaw-requires-customer-action/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Splunk Patches RCE Vulnerability—Update Urgently",
+            "title": "Splunk Enterprise Update Fixes Remote Code Execution Flaw",
+            "content": "Splunk has released an update to address a critical remote code execution (RCE) vulnerability in its Enterprise platform. The flaw permits low-privileged users to upload files to a temporary directory, potentially leading to unauthorized code execution. Organizations using Splunk Enterprise should apply the patch immediately to protect their systems from exploitation. This vulnerability highlights the risks associated with insufficient access controls and the need for robust security measures in enterprise software.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/splunk-enterprise-update-patches-code-execution-vulnerability/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Cisco Patches Critical Flaws in Identity Services, Webex",
+            "title": "Cisco Addresses Critical Code Execution Vulnerabilities in Key Services",
+            "content": "Cisco has announced patches for four critical security vulnerabilities affecting its Identity Services and Webex Services platforms. These flaws, including CVE-2026-20184, could enable attackers to execute arbitrary code and impersonate users within the services. The vulnerabilities pose significant risks to organizations relying on these platforms for secure communications and identity management. Cisco customers are strongly encouraged to implement the patches immediately to safeguard against potential exploits. This development underscores the critical nature of maintaining up-to-date security protocols.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/cisco-patches-four-critical-identity.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "NIST Prioritizes CVE Enrichment for Critical Software",
+            "title": "NIST Enhances NVD Enrichment for CISA KEV and Critical Software",
+            "content": "The National Institute of Standards and Technology (NIST) is prioritizing the enrichment of Common Vulnerabilities and Exposures (CVE) entries in the National Vulnerability Database (NVD) for critical software and CISA&#x27;s Known Exploited Vulnerabilities (KEV) list. This initiative aims to optimize the management of CVE volume by focusing on entries that meet specific criteria, thereby enhancing the database&#x27;s utility for security professionals. Organizations are encouraged to leverage this enriched data to improve their vulnerability management processes. This move reflects the growing need for precise and actionable vulnerability information in cybersecurity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nist-prioritizes-nvd-enrichment-for-cves-in-cisa-kev-critical-software/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 15 2026",
             "headline": "Nginx UI Flaw Exploited—Servers at Risk of Takeover",
             "title": "Critical Nginx UI Authentication Bypass Flaw Actively Exploited",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/april-patch-tuesday-fixes-critical.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "Fortinet Fixes Critical Flaws in FortiSandbox",
-            "title": "Fortinet Releases Patches for Critical FortiSandbox Vulnerabilities",
-            "content": "Fortinet has issued patches for critical vulnerabilities in its FortiSandbox product that could allow attackers to bypass authentication or execute arbitrary code via HTTP requests. These flaws pose a significant risk to organizations using FortiSandbox for network security analysis. Exploitation could result in unauthorized access or system manipulation. Security teams should apply the patches promptly to safeguard their systems. This update is part of Fortinet&#x27;s ongoing efforts to enhance the security of its products against evolving threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortinet-patches-critical-fortisandbox-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "Microsoft Patches 169 Flaws—Includes SharePoint Zero-Day",
-            "title": "Microsoft Addresses SharePoint Zero-Day and 168 Other Vulnerabilities",
-            "content": "Microsoft has released patches for a record 169 security vulnerabilities, including a zero-day in SharePoint that has been actively exploited. Of these, eight are rated Critical, and 157 are Important, affecting a wide range of Microsoft products. The zero-day vulnerability poses a significant risk, as it could be used to gain unauthorized access to sensitive data. IT administrators should prioritize these updates to protect their systems from potential exploitation. This extensive patch release underscores the importance of maintaining up-to-date security protocols in enterprise environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/microsoft-issues-patches-for-sharepoint.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "PHP Composer Flaws Allow Command Execution—Patches Available",
-            "title": "PHP Composer Vulnerabilities Enable Arbitrary Command Execution",
-            "content": "Two high-severity vulnerabilities in PHP&#x27;s Composer package manager have been disclosed, potentially allowing arbitrary command execution. These command injection flaws affect the Perforce version control software integration, posing a risk to developers using Composer for PHP projects. Successful exploitation could lead to unauthorized system access or data manipulation. Developers are advised to apply the released patches to mitigate these risks. This incident highlights the critical need for secure development practices and regular updates in software dependencies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/new-php-composer-flaws-enable-arbitrary.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Microsoft Secures RDP Files—Phishing Attacks Thwarted",
-            "title": "Microsoft Enhances Windows Security Against Malicious Remote Desktop Files",
-            "content": "Microsoft has rolled out new security measures for Windows to combat phishing attacks exploiting Remote Desktop connection (.rdp) files. The update introduces warnings and disables risky shared resources by default, aiming to protect users from malicious actors leveraging these files for unauthorized access. This enhancement targets a common vector for phishing, where attackers trick users into opening compromised .rdp files, potentially leading to data breaches. By proactively securing these files, Microsoft strengthens its defense against a prevalent threat in remote work environments. Users are advised to apply the latest updates to benefit from these protections and reduce their exposure to phishing risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-adds-windows-protections-for-malicious-remote-desktop-files/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Microsoft Patches 167 Flaws—SharePoint Zero-Day Included",
-            "title": "April 2026 Patch Tuesday Fixes 167 Vulnerabilities Including SharePoint Zero-Day",
-            "content": "Microsoft&#x27;s April 2026 Patch Tuesday addresses 167 security vulnerabilities across its software ecosystem, notably including a critical zero-day flaw in SharePoint Server. The update also resolves a publicly disclosed vulnerability in Windows Defender, known as &quot;BlueHammer.&quot; These patches are crucial for organizations relying on Microsoft&#x27;s infrastructure, as the SharePoint zero-day had been actively exploited, posing significant risks to enterprise environments. The comprehensive update underscores the importance of timely patch management to mitigate potential exploits. IT administrators should prioritize deploying these updates to safeguard their systems against these vulnerabilities.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Second-Largest Patch Tuesday—161 Vulnerabilities Fixed",
-            "title": "Microsoft Patches SharePoint Zero-Day and 160 Other Vulnerabilities",
-            "content": "In what experts deem the second-largest Patch Tuesday by CVE count, Microsoft has patched a total of 161 vulnerabilities, including a critical zero-day in SharePoint Server. This extensive update addresses a wide range of security issues, highlighting the ongoing challenges faced by enterprises in maintaining secure IT environments. The SharePoint zero-day, actively exploited in the wild, underscores the necessity for immediate patching to prevent potential breaches. Organizations are urged to review the detailed patch notes and apply updates promptly to protect their systems from these identified threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-patches-exploited-sharepoint-zero-day-and-160-other-vulnerabilities/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 16 2026",
+            "headline": "Character.AI&#x27;s Books Mode—Interactive Reading for Teens",
+            "title": "Character.AI Launches Books Mode Amidst Legal Concerns Over Chatbot Interactions",
+            "content": "Character.AI has introduced a new &quot;Books&quot; mode, allowing users to engage in structured roleplaying within familiar literary worlds. This move comes as the company faces scrutiny over its chatbots&#x27; interactions with teenagers, prompting a shift towards safer, more controlled experiences. The Books mode offers a guided roleplay environment, potentially reducing the risks associated with unmoderated chatbot conversations. This development reflects a growing trend in AI applications focusing on user safety and content moderation. Users can now explore narratives interactively, with Character.AI aiming to balance engagement with responsibility.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/912997/character-ai-books-mode",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "Master Research with ChatGPT—New Tools and Techniques",
+            "title": "OpenAI Enhances Research Capabilities with ChatGPT for In-Depth Analysis",
+            "content": "OpenAI has unveiled new methodologies for conducting research using ChatGPT, emphasizing search capabilities and deep research techniques. These enhancements enable users to access up-to-date information, critically analyze sources, and generate structured insights efficiently. The update aims to streamline the research process for professionals who rely on AI for data analysis and decision-making. This initiative aligns with the broader trend of integrating AI into research workflows, offering a competitive edge in information gathering and synthesis. Users are encouraged to explore these tools to enhance their research productivity.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/search-and-deep-research",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "AI in Finance—Secure Deployment Resources Released",
+            "title": "OpenAI Provides Comprehensive AI Resources for Financial Services",
+            "content": "OpenAI has released a suite of resources tailored for the financial services sector, including prompt packs, GPTs, and deployment guides. These tools are designed to help financial institutions implement and scale AI solutions securely, addressing industry-specific challenges. The resources aim to enhance operational efficiency and innovation while maintaining stringent security standards. This release underscores the increasing adoption of AI in finance, where institutions seek to leverage technology for competitive advantage. Financial professionals are advised to utilize these resources to optimize their AI strategies.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/financial-services",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 10 2026",
+            "headline": "OpenAI Secures Systems Post-Axios Tool Compromise",
+            "title": "OpenAI Responds to Axios Developer Tool Supply Chain Attack",
+            "content": "In response to a supply chain attack involving the Axios developer tool, OpenAI has taken decisive measures to secure its systems. The company rotated macOS code signing certificates and updated affected applications, confirming that no user data was compromised. This incident highlights the vulnerabilities inherent in software supply chains and the importance of proactive security measures. OpenAI&#x27;s swift response aims to reassure users and partners of its commitment to safeguarding data integrity. Developers are encouraged to review their own security protocols to prevent similar threats.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/axios-developer-tool-compromise",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "AI Revolutionizes Film Production—50 Movies for $100M",
+            "title": "Runway CEO Envisions AI-Driven Transformation in Film Production Economics",
+            "content": "Runway&#x27;s CEO has proposed a transformative vision for Hollywood, suggesting that AI could enable studios to produce 50 films for the cost of a single $100 million blockbuster. This approach emphasizes volume over high-budget productions, potentially increasing the likelihood of creating successful hits. The integration of AI in film production could revolutionize the industry by reducing costs and streamlining processes. This perspective reflects a broader trend of AI adoption across creative sectors, where efficiency and innovation are paramount. Industry stakeholders are urged to consider AI&#x27;s potential to reshape production strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/16/runway-ceo-says-ai-could-help-hollywood-make-50-films-instead-of-one-100m-blockbuster/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Ronan Farrow Critiques Sam Altman&#x27;s Truthfulness",
+            "title": "Ronan Farrow Discusses Sam Altman&#x27;s Approach to Truth in New Interview",
+            "content": "In a recent interview on Decoder, investigative journalist Ronan Farrow discussed OpenAI CEO Sam Altman&#x27;s &quot;unconstrained&quot; relationship with the truth. Farrow, known for his impactful reporting, highlighted concerns about transparency and accountability within AI leadership. This conversation follows a detailed feature in The New Yorker, co-authored by Farrow, examining Altman&#x27;s influence and decision-making. The discussion raises important questions about ethical leadership in the rapidly evolving AI industry. Professionals in the field should consider these insights when evaluating leadership practices and organizational transparency.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/911753/sam-altman-openai-ronan-farrow-new-yorker-feature-trust-liar-ai-industry",
+            "relatedResources": []
+        },
         {
             "date": "Apr 15 2026",
             "headline": "Trump Shares AI Trump-Jesus Art—Sparks Social Media Frenzy",
@@ -156,15 +210,6 @@ const websiteContent = {
             "content": "Allbirds, known for its eco-friendly footwear, has announced a strategic pivot from shoe manufacturing to artificial intelligence, resulting in a 600% surge in its stock value. After struggling financially post-IPO, with sales dropping nearly 50% between 2022 and 2025, the company decided to sell its brand and assets for $39 million to American Exchange. This move reflects a broader trend of traditional companies embracing AI to revitalize their business models. Investors and stakeholders should note the potential for significant returns as Allbirds repositions itself within the tech industry. This shift underscores the transformative impact of AI across diverse sectors.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/news/912484/allbirds-ai-hyperscale",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "ChatGPT Revolutionizes Research—Structured Insights Now Easier",
-            "title": "Utilizing ChatGPT for Efficient and Structured Research Insights",
-            "content": "OpenAI has released guidance on using ChatGPT for research, enabling users to gather sources, analyze information, and generate structured, citation-backed insights. This development empowers researchers and professionals to streamline their workflow by leveraging AI for data collection and analysis. ChatGPT&#x27;s capabilities in processing and synthesizing large volumes of information make it a valuable tool for academic and corporate research. As AI continues to evolve, its role in enhancing productivity and accuracy in research settings becomes increasingly significant. Users are encouraged to integrate ChatGPT into their research methodologies to maximize efficiency and insight generation.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/research",
             "relatedResources": []
         },
         {
@@ -228,42 +273,6 @@ const websiteContent = {
             "content": "The evolution of software engineering is marked by two major shifts: the open-source movement and the integration of AI-driven methodologies. MIT Technology Review explores how these trends have democratized access to code and transformed development processes. The adoption of DevOps and agile practices has further accelerated software delivery and innovation. As AI tools become integral to coding, developers must adapt to new paradigms that emphasize collaboration and continuous improvement. Staying abreast of these changes is crucial for software engineers aiming to leverage the full potential of AI and open-source resources.",
             "source": "MIT Technology Review",
             "sourceUrl": "https://www.technologyreview.com/2026/04/14/1134397/redefining-the-future-of-software-engineering/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "Anthropic&#x27;s Valuation Spurs OpenAI Investor Concerns",
-            "title": "Anthropic&#x27;s Rise Challenges OpenAI&#x27;s Market Dominance",
-            "content": "TechCrunch reports that Anthropic&#x27;s growing valuation is causing some OpenAI investors to reconsider their positions. With Anthropic valued at $380 billion, compared to OpenAI&#x27;s anticipated IPO valuation of $1.2 trillion, investors are weighing the potential returns and risks. This development highlights the competitive dynamics in the AI sector, where emerging companies like Anthropic are gaining traction. Investors and industry stakeholders should closely monitor these shifts to make informed decisions about their AI investments. The landscape of AI innovation continues to evolve, with new players challenging established giants.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/14/anthropics-rise-is-giving-some-openai-investors-second-thoughts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Anthropic Briefs Trump Admin Amid Legal Battle",
-            "title": "Anthropic Engages with U.S. Government Despite Ongoing Lawsuit",
-            "content": "In a surprising move, Anthropic&#x27;s co-founder Jack Clark confirmed the company&#x27;s engagement with the U.S. government while pursuing legal action against it. Speaking at the Semafor World Economy summit, Clark explained the strategic importance of maintaining dialogue with government entities. This dual approach underscores the complex relationship between tech companies and regulatory bodies, especially in the rapidly evolving AI sector. Industry professionals should be aware of these interactions as they may influence regulatory frameworks and business strategies. The situation highlights the delicate balance between cooperation and litigation in tech governance.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/14/anthropic-co-founder-confirms-the-company-briefed-the-trump-administration-on-mythos/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Attacks on OpenAI CEO Highlight AI Race Fears",
-            "title": "Security Concerns Rise as OpenAI CEO Targeted in Attacks",
-            "content": "The Verge reports on a series of alarming incidents targeting OpenAI CEO Sam Altman, including an attempted attack with a Molotov cocktail. The alleged attacker expressed fears that the AI race could lead to human extinction, reflecting growing public anxiety over AI advancements. These events underscore the need for enhanced security measures for tech leaders and a broader discussion on the societal impacts of AI. Industry professionals should consider the implications of public sentiment on AI development and the importance of addressing ethical concerns. The incidents serve as a stark reminder of the tensions surrounding rapid technological progress.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/911778/ai-violence-sam-altman-home",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Google AI Watermarking Allegedly Cracked—DeepMind Denies Claims",
-            "title": "Developer Claims to Reverse-Engineer Google DeepMind&#x27;s SynthID Watermarking",
-            "content": "A developer, known by the username Aloshdenny, claims to have reverse-engineered Google DeepMind&#x27;s SynthID system, potentially allowing AI watermarks to be removed from generated images or inserted into other works. Google has refuted these claims, asserting the integrity of their watermarking technology. SynthID is designed to embed imperceptible identifiers into AI-generated images to help differentiate them from human-created content. If true, this reverse-engineering could undermine efforts to maintain transparency and authenticity in AI-generated media. Security professionals should monitor developments closely as the implications could affect digital content verification processes.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/911579/google-synthid-ai-watermarking-system-reverse-engineered",
             "relatedResources": []
         }
     ],
