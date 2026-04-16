@@ -21,7 +21,7 @@ def fetch_incident_feed():
     
     try:
         # Public Endpoint (Updates daily, 100+ latest victims, no token required)
-        url = 'https://api.ransomware.live/v2/recentvictims'
+        url = 'https://api.ransomware.live/recentvictims'
         req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=30) as response:
             raw_data = json.loads(response.read().decode())
