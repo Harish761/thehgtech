@@ -679,13 +679,21 @@
 
             // Screenshot Evidence
             const screenshotContainer = document.getElementById('modalScreenshotContainer');
-            const screenshotImg = document.getElementById('modalScreenshot');
             if (incident.screenshot) {
                 screenshotContainer.style.display = 'block';
-                screenshotImg.src = incident.screenshot;
+                screenshotContainer.innerHTML = `
+                    <h3 style="font-size: 0.9rem; color: var(--text-muted); margin: 0 0 0.75rem 0; text-align: left; text-transform: uppercase;">Raw Dark Web Evidence</h3>
+                    <img id="modalScreenshot" src="${incident.screenshot}" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                `;
             } else {
-                screenshotContainer.style.display = 'none';
-                screenshotImg.src = '';
+                screenshotContainer.style.display = 'block';
+                screenshotContainer.innerHTML = `
+                    <div style="text-align:center; padding: 2.5rem 1rem; border: 1px dashed rgba(255,255,255,0.1); border-radius: 8px;">
+                        <i class="fas fa-camera-slash" style="font-size: 2rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
+                        <div style="font-weight: 600; color: var(--text-secondary); margin-bottom: 0.25rem;">Awaiting Photographic Evidence</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); max-width: 300px; margin: 0 auto;">OSINT engines have not yet captured a screenshot of the threat actor's leak site. This will automatically update when available.</div>
+                    </div>
+                `;
             }
 
             // Action Links
@@ -716,7 +724,12 @@
                     linkCon.innerHTML = `<a href="${incident.url}" target="_blank" rel="noopener noreferrer" class="safe-link" style="padding: 0.75rem 1.25rem; font-size:0.9rem;"><i class="fas fa-external-link-alt"></i> View OSINT Source</a>`;
                 }
             } else {
-                linkCon.innerHTML = `<span style="color:var(--text-muted); font-size:0.85rem;">No external reference link available</span>`;
+                linkCon.innerHTML = `
+                    <div style="text-align: center; padding: 1.5rem; background: rgba(0,0,0,0.2); border-radius: 8px;">
+                        <span style="color:var(--text-muted); font-size:0.9rem; display: block; margin-bottom: 0.25rem;"><i class="fas fa-link-slash"></i> Source URL Pending</span>
+                        <span style="color:rgba(255,255,255,0.3); font-size:0.75rem;">The threat actor has not yet provided an accessible access node.</span>
+                    </div>
+                `;
             }
 
             modalBackdrop.classList.add('active');

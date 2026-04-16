@@ -73,11 +73,21 @@ def merge_data(existing_incidents, new_incidents):
     db = {incident['id']: incident for incident in existing_incidents}
     
     added = 0
-    for new_inc in new_incidents:
-        if new_inc['id'] not in db:
-            db[new_inc['id']] = new_inc
+    for incident in new_incidents:
+        incident_id = incident['id']
+        if incident_id not in db:
+            db[incident_id] = incident
             added += 1
+        else:
+            # Backfill missing metadata for existing incidents
+            for k in ['screenshot', 'url', 'website', 'claim']:
+                if (not db[incident_id].get(k)) and incident.get(k):
+                    db[incident_id][k] = incident[k]
             
+            # If the OSINT feed updated the claim text specifically, we should override
+            if incident.get('claim') and incident['claim'] != db[incident_id].get('claim') and "AI generated" not in incident['claim']:
+                 db[incident_id]['claim'] = incident['claim']
+    
     print(f"🔀 Merged {added} completely new incidents into the database.")
     
     # Sort chronologically, newest first
