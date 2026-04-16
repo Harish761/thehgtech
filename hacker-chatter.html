@@ -506,9 +506,19 @@
                     </div>
                 </div>
                 
-                <h3 style="font-size: 1.1rem; color: var(--accent-chatter-light); margin: 0 0 0.75rem 0;">Stated Claim / AI Description</h3>
-                <div id="modalClaim" style="background: rgba(0,0,0,0.3); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); color: var(--text-secondary); font-size: 0.95rem; white-space: pre-wrap; word-break: break-word; margin-bottom: 1.5rem;">
-                    Claim goes here...
+                <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div>
+                        <h3 style="font-size: 0.9rem; color: var(--text-muted); margin: 0 0 0.5rem 0; text-transform: uppercase;">Company Profile <span style="background: rgba(255, 165, 0, 0.15); color: #FFA500; font-size: 0.60rem; padding: 0.1rem 0.3rem; border-radius: 3px; border: 1px solid rgba(255, 165, 0, 0.3); vertical-align: middle; margin-left: 5px;">AI GENERATED</span></h3>
+                        <div id="modalCompanyProfile" style="background: rgba(0,0,0,0.2); padding: 1.25rem; border-radius: 8px; border: 1px dashed rgba(255,255,255,0.1); color: var(--text-secondary); font-size: 0.9rem; white-space: pre-wrap; word-break: break-word;">
+                            Profile goes here...
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 0.9rem; color: var(--accent-chatter-light); margin: 0 0 0.5rem 0; text-transform: uppercase;"><i class="fas fa-file-alt"></i> Threat Actor Claim</h3>
+                        <div id="modalActorClaim" style="background: rgba(139, 92, 246, 0.08); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(139, 92, 246, 0.3); color: var(--text-primary); font-size: 0.95rem; white-space: pre-wrap; word-break: break-word;">
+                            Claim goes here...
+                        </div>
+                    </div>
                 </div>
                 
                 <div id="modalScreenshotContainer" style="display:none; text-align:center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
@@ -668,13 +678,27 @@
             }
             document.getElementById('modalDate').textContent = dateStr;
             
-            // Format Claim
-            const claimEl = document.getElementById('modalClaim');
-            if(incident.claim) {
-                // Keep the [AI generated] text but maybe style it slightly
-                claimEl.innerHTML = incident.claim.replace(/\[AI generated\]/g, '<span style="color:var(--accent-orange);font-weight:600;font-size:0.8rem;background:rgba(255,140,0,0.1);padding:2px 6px;border-radius:4px;margin-right:6px;">AI OSINT Summary</span>');
+            // Segregate Claim vs AI Profile
+            const profileEl = document.getElementById('modalCompanyProfile');
+            const actorClaimEl = document.getElementById('modalActorClaim');
+            
+            if (incident.claim) {
+                if (incident.claim.toLowerCase() === '[ai generated] n/a' || incident.claim === 'N/A') {
+                    // Null case
+                    profileEl.innerHTML = '<i style="color: var(--text-muted);">N/A - No company profile available.</i>';
+                    actorClaimEl.innerHTML = '<i style="color: var(--text-muted);">N/A - No claim provided by threat actor.</i>';
+                } else if (incident.claim.startsWith('[AI generated]')) {
+                    // AI overrides the raw claim
+                    profileEl.innerHTML = incident.claim.replace('[AI generated]', '').trim();
+                    actorClaimEl.innerHTML = '<i style="color: var(--text-muted);">N/A - Raw claim overwritten by upstream OSINT scanner. Check screenshot evidence below if available.</i>';
+                } else {
+                    // Pure threat actor claim with no AI
+                    profileEl.innerHTML = '<i style="color: var(--text-muted);">N/A - No AI profile generated.</i>';
+                    actorClaimEl.innerHTML = incident.claim;
+                }
             } else {
-                claimEl.innerHTML = '<i style="color: var(--text-muted);">No detailed claim or summary was provided.</i>';
+                profileEl.innerHTML = '<i style="color: var(--text-muted);">N/A</i>';
+                actorClaimEl.innerHTML = '<i style="color: var(--text-muted);">N/A</i>';
             }
 
             // Screenshot Evidence
