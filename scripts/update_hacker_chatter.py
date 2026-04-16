@@ -34,7 +34,9 @@ def fetch_incident_feed():
                 "threat_actor": item.get('group_name') or item.get('group', 'Unknown Actor'),
                 "date_discovered": item.get('discovered') or item.get('published', datetime.now().isoformat()),
                 "industry": item.get('activity') or item.get('industry', 'Unknown'),
+                "website": item.get('website', ''),
                 "claim": item.get('description', ''),
+                "screenshot": item.get('screenshot', ''),
                 "url": item.get('post_url') or item.get('claim_url', ''),
                 "source": "Ransomware.live OSINT API"
             }
