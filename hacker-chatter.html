@@ -499,8 +499,9 @@
                 <i class="fas fa-search"></i> SEARCH ENGINE
             </div>
             <div class="gradient-text">Hacker Chatter</div>
-            <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 700px; margin-top:1rem;">
-                A searchable database of global cyber incidents, ransomware victims, and deep web data breaches. Type a company name to instantly verify if their data has been claimed.
+            <p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 800px; margin-top:1rem; line-height: 1.6;">
+                A real-time, searchable OSINT engine tracking global ransomware victims, deep web data leaks, and cyber incidents. 
+                Designed for SOC analysts, threat hunters, and security researchers, Hacker Chatter provides an actively curated, safely sanitized view into the dark web. Instantly verify if an organization's data has been claimed by active threat actors, bypassing the operational risks of interacting with Tor network leak sites.
             </p>
         </div>
     </section>
@@ -509,10 +510,13 @@
     <div class="trust-banner">
         <div class="trust-icon"><i class="fas fa-shield-check"></i></div>
         <div class="trust-content">
-            <h3>Methodology & Safe OSINT Engine</h3>
-            <p>
-                <strong>Legal & Safe:</strong> This database is generated entirely using public Open Source Intelligence (OSINT) and reputable third-party threat feeds (e.g., <i>Ransomware.live</i>). 
-                We <strong>do not</strong> connect to Tor (.onion sites) nor do we host or link directly to stolen data files. This tool is designed purely for cybersecurity defenders and threat researchers to track metadata (who, when, what) of cyber attacks safely.
+            <h3>Methodology & Operational Safety</h3>
+            <p style="margin-bottom: 0.5rem; line-height: 1.6;">
+                <strong>Legal & Safe Edge-Computing:</strong> This database is generated entirely using public Open Source Intelligence (OSINT) and reputable third-party threat feeds (e.g., <i>Ransomware.live</i>). 
+                We <strong>do not</strong> connect your browser to Tor (.onion networks) nor do we host, mirror, or link directly to stolen data files.
+            </p>
+            <p style="line-height: 1.6;">
+                <strong>Data Lifecycle:</strong> Metadata and safely redacted proof-of-breach screenshots are synchronized automatically every 12 hours. This tool acts exclusively as a defensive threat intelligence dashboard to track metadata (who, when, what) of cyber attacks without violating corporate compliance or global privacy frameworks.
             </p>
         </div>
     </div>
@@ -548,6 +552,57 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <!-- Educational Section -->
+    <div style="max-width: 1200px; margin: 4rem auto 0; padding: 0 1rem;">
+        <h2 style="font-size: 1.8rem; color: #fff; margin-bottom: 2rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
+            <i class="fas fa-graduation-cap" style="color: var(--accent-chatter); margin-right: 10px;"></i> Hacker Chatter: OSINT Primer
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <!-- Card 1 -->
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 12px; padding: 1.5rem;">
+                <h3 style="color: var(--accent-cyan); margin-bottom: 1rem; font-size: 1.1rem;"><i class="fas fa-user-secret"></i> How Threat Actors Operate</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                    Modern ransomware gangs operate like corporate syndicates via <strong>Ransomware-as-a-Service (RaaS)</strong>. When a victim is breached, they are added to a "Deep Web Leak Site" hosted on the Tor network (.onion). 
+                </p>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                    The actors post a <em>Stated Claim</em> proving the compromise (often attaching passports, financial data, or credentials) and initiate a countdown timer to force extortion. If unpaid, the data is dumped publicly.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: 12px; padding: 1.5rem;">
+                <h3 style="color: #10B981; margin-bottom: 1rem; font-size: 1.1rem;"><i class="fas fa-search-shield"></i> Why Use Safe OSINT?</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                    Navigating directly to threat actor leak sites using corporate infrastructure or personal VPNs is highly dangerous. It exposes your IP to adversary tracking and triggers internal SOC alerts for communicating with known malicious infrastructure.
+                </p>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                    Hacker Chatter leverages secure backend parsers to aggregate this data. You get the <strong>Threat Intelligence</strong> (Who, When, What) securely delivered to your clearnet browser.
+                </p>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div style="grid-column: 1 / -1; background: rgba(0,0,0,0.2); border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem; margin-top: 1rem;">
+                <h3 style="color: #fff; margin-bottom: 1.5rem; font-size: 1.2rem;">Frequently Asked Questions</h3>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 0.95rem;">How accurate is the Stated Claim / AI Description?</h4>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">Our backend parses raw threat actor drops. However, when threat actors post minimal information, our upstream providers use AI to generate a functional <strong>Company Profile</strong> to provide context. The UI explicitly separates raw actor claims from AI-generated profiles to ensure intel fidelity.</p>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 0.95rem;">Why are the Evidence Screenshots blurry?</h4>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">Threat actors regularly post highly sensitive PII (Personally Identifiable Information) such as passports or SSNs as proof. Our pipeline actively scrambles and blurs these images upstream (PII Scrubber) to ensure your research complies with GDPR/CCPA and prevents the accidental hosting of contraband.</p>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 0.95rem;">Is it illegal to view metadata from ransomware attacks?</h4>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">Tracking public attack metadata (which companies were hit via OSINT) is entirely legal and fundamental to defensive cybersecurity. Our platform explicitly blocks direct links to the deep web payload repositories to maintain strict legal compliance.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- The Glass Modal -->
