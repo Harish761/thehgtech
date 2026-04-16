@@ -706,8 +706,13 @@
             if (incident.screenshot) {
                 screenshotContainer.style.display = 'block';
                 screenshotContainer.innerHTML = `
-                    <h3 style="font-size: 0.9rem; color: var(--text-muted); margin: 0 0 0.75rem 0; text-align: left; text-transform: uppercase;">Raw Dark Web Evidence</h3>
-                    <img id="modalScreenshot" src="${incident.screenshot}" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                        <h3 style="font-size: 0.9rem; color: var(--text-muted); margin: 0; text-transform: uppercase;">Raw Dark Web Evidence</h3>
+                        <span style="font-size: 0.65rem; color: #10B981; background: rgba(16, 185, 129, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid rgba(16, 185, 129, 0.3);" title="Image intentionally obfuscated upstream to prevent exposure of PII (Personally Identifiable Information) and comply with global privacy laws."><i class="fas fa-user-shield"></i> PII Scrubber Active</span>
+                    </div>
+                    <div style="position: relative;">
+                        <img id="modalScreenshot" src="${incident.screenshot}" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                    </div>
                 `;
             } else {
                 screenshotContainer.style.display = 'block';
