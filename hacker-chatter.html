@@ -436,15 +436,23 @@
                     return;
                 }
 
-                data.forEach(incident => {
+                // Render maximum of 500 rows to prevent DOM lagging
+                const maxRows = 500;
+                const renderData = data.slice(0, maxRows);
+
+                renderData.forEach(incident => {
                     const tr = document.createElement('tr');
                     
                     // Parse Date safely
                     let dateStr = 'Unknown';
                     if (incident.date_discovered) {
                         try {
-                            const d = new Date(incident.date_discovered);
-                            dateStr = d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+                            // Extract just the actual YYYY-MM-DD
+                            const extracted = incident.date_discovered.split(' ')[0];
+                            const d = new Date(extracted);
+                            if(!isNaN(d.getTime())) {
+                                dateStr = d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+                            }
                         } catch(e) {}
                     }
                     
@@ -474,6 +482,14 @@
                     `;
                     tableBody.appendChild(tr);
                 });
+
+                if (data.length > maxRows) {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `<td colspan="5" style="text-align:center; padding:2rem; color:var(--text-muted); font-size:0.9rem;">
+                        <i class="fas fa-info-circle"></i> Rendering the top ${maxRows} results. Narrow down your search to see more specific historical victims (Total matches: ${data.length}).
+                    </td>`;
+                    tableBody.appendChild(tr);
+                }
             }
         });
     </script>
