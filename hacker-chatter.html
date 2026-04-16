@@ -252,19 +252,20 @@
             -webkit-box-orient: vertical;
         }
 
-        .onion-warning {
+        .onion-warning-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: rgba(255, 61, 61, 0.1);
+            background: rgba(255, 61, 61, 0.05);
             color: var(--accent-danger);
-            border: 1px solid rgba(255, 61, 61, 0.2);
-            padding: 0.4rem 0.8rem;
-            border-radius: 6px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-decoration: none;
-            margin-top: 0.5rem;
+            border: 1px solid rgba(255, 61, 61, 0.15);
+            padding: 0.4rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.70rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
         }
         
         .safe-link {
@@ -589,7 +590,7 @@
                     let refHtml = '';
                     if (incident.url) {
                         if (incident.url.includes('.onion')) {
-                            refHtml = `<a href="#" onclick="alert('Raw Dark Web URL detected. Connecting to Tor nodes is prohibited for safety.\\nURL: ${incident.url}'); return false;" class="onion-warning" title="Dark Web Source"><i class="fas fa-exclamation-triangle"></i> .ONION SOURCE</a>`;
+                            refHtml = `<span class="onion-warning-badge" title="Source mapped to dark web"><i class="fas fa-eye-slash"></i> .ONION SOURCE</span>`;
                         } else {
                             refHtml = `<a href="${incident.url}" target="_blank" rel="noopener noreferrer" class="safe-link" title="View OSINT Source"><i class="fas fa-external-link-alt"></i> View</a>`;
                         }
@@ -691,7 +692,26 @@
             const linkCon = document.getElementById('modalLinkContainer');
             if (incident.url) {
                 if (incident.url.includes('.onion')) {
-                    linkCon.innerHTML = `<button onclick="alert('Raw Dark Web URL detected. Connecting to Tor nodes is prohibited for safety.\\nURL: ${incident.url}');" class="onion-warning" style="cursor:pointer; border:1px solid rgba(255,61,61,0.3); padding: 0.75rem 1.25rem;"><i class="fas fa-exclamation-triangle"></i> VIEW .ONION SOURCE</button>`;
+                    linkCon.innerHTML = `
+                        <div style="background: rgba(255, 61, 61, 0.05); border: 1px solid rgba(255, 61, 61, 0.2); border-radius: 8px; padding: 1.25rem; text-align: left;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem; flex-wrap:wrap; gap:10px;">
+                                <h4 style="margin:0; color:var(--accent-danger); font-size:0.95rem;"><i class="fas fa-exclamation-triangle"></i> Safe-Guarded Dark Web URL</h4>
+                                <button onclick="navigator.clipboard.writeText('${incident.url}'); this.innerHTML='<i class=\\\'fas fa-check\\\'></i> Copied!';" style="background:rgba(255,255,255,0.1); border:none; color:#fff; padding:0.4rem 0.75rem; border-radius:4px; font-size:0.8rem; cursor:pointer; font-family:inherit; transition:background 0.2s;"><i class="fas fa-copy"></i> Copy Link</button>
+                            </div>
+                            <div style="background:rgba(0,0,0,0.5); padding:0.75rem; border-radius:4px; font-family:monospace; font-size:0.85rem; color:#ccc; word-break:break-all; border:1px solid rgba(255,255,255,0.05); user-select:all;">
+                                ${incident.url}
+                            </div>
+                            <div style="margin-top: 1rem; padding-top:1rem; border-top:1px dashed rgba(255,61,61,0.2); font-size: 0.82rem; color: #aaa; line-height:1.6;">
+                                <strong style="color:var(--accent-danger);"><i class="fas fa-shield-alt"></i> LEGAL & SAFETY PRECAUTIONS:</strong><br>
+                                <ul style="margin:0.5rem 0 0 0; padding-left:1.2rem;">
+                                    <li>Attempting to visit this URL directly in a standard browser will fail. It requires the Tor Network.</li>
+                                    <li>Do <strong>NOT</strong> access dark web leak sites using a corporate network or personal ISP connection without VPN obfuscation.</li>
+                                    <li>Always utilize isolated sandboxes (e.g., VMs like Whonix/Tails).</li>
+                                    <li><strong>Never</strong> interact, communicate, or negotiate with threat actors directly. This URL is indexed exclusively for defensive OSINT research.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    `;
                 } else {
                     linkCon.innerHTML = `<a href="${incident.url}" target="_blank" rel="noopener noreferrer" class="safe-link" style="padding: 0.75rem 1.25rem; font-size:0.9rem;"><i class="fas fa-external-link-alt"></i> View OSINT Source</a>`;
                 }
