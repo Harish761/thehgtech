@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-04-16T05:16:18.272549",
-  "total_incidents": 27343,
+  "last_updated": "2026-04-16T16:05:23.961142",
+  "total_incidents": 27350,
   "incidents": [
+    {
+      "id": "payload_franziskusschule_wilhelmshaven",
+      "victim_name": "Franziskusschule Wilhelmshaven",
+      "threat_actor": "payload",
+      "date_discovered": "2026-04-16 12:26:10.942784",
+      "industry": "Education",
+      "website": "",
+      "claim": "Franziskusschule Wilhelmshaven is a school located in Wilhelmshaven, a city in northern Germany on the North Sea coast. The name “Franziskusschule” indicates that it is a Franciscan or Catholic school, often inspired by the values of Saint Francis of Assisi, emphasizing community, social responsibility, and moral education alongside academic learning.",
+      "screenshot": "https://images.ransomware.live/victims/b4493e602dda6d46ffefb7f3284c5643.png",
+      "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/7c90fc7c-33c6-4fbe-913c-b43b396b278a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "payload_marino_food_products_pvt",
+      "victim_name": "Marino Food Products Pvt",
+      "threat_actor": "payload",
+      "date_discovered": "2026-04-16 12:25:43.808599",
+      "industry": "Agriculture and Food Production",
+      "website": "",
+      "claim": "Marino Food Products Pvt Ltd, based in Hyderabad, India, specializes in a wide range of healthy and delicious bakery items including biscuits, cookies, cakes, and breads. The company is dedicated to providing high-quality food products that combine wellness with taste, making them an ideal choice for health-conscious consumers. Their offerings are available for online ordering and in various retail stores, ensuring accessibility for their clients. Marino aims to be the go-to destination for snacking bliss, with a commitment to crafting irresistible snacks that satisfy cravings while promoting a healthy lifestyle.",
+      "screenshot": "https://images.ransomware.live/victims/425f6e9658320ecc2a0210fd13b9b99e.png",
+      "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/0de813bc-eaed-452e-9b1e-10c6c085e000",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "payload_sunlight_express_airways",
+      "victim_name": "Sunlight Express Airways",
+      "threat_actor": "payload",
+      "date_discovered": "2026-04-16 12:25:17.550689",
+      "industry": "Transportation/Logistics",
+      "website": "",
+      "claim": "Sunlight Air offers affordable flights to popular Philippine island destinations such as Cebu, Coron, Boracay, Siquijor, and Siargao. The airline provides various services including private charters, vacation packages, and a loyalty program called Sunlight Miles. Targeting both leisure and business travelers, Sunlight Air aims to enhance the travel experience with exclusive passenger perks and flexible booking options. With a commitment to expanding flight frequencies and routes, the company continues to facilitate convenient travel across the Philippines.",
+      "screenshot": "https://images.ransomware.live/victims/350c764276f1d091e7f54b8d4da56735.png",
+      "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/b4c9d63d-2827-4bb9-b1b9-edf84f780a74",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "payload_orientalweavers.com",
+      "victim_name": "orientalweavers.com",
+      "threat_actor": "payload",
+      "date_discovered": "2026-04-16 12:24:51.128097",
+      "industry": "Manufacturing",
+      "website": "orientalweavers.com",
+      "claim": "Established in 1979, Oriental Weavers is a manufacturer of textiles used to construct rugs, carpet, upholstery, and more. This company is headquartered in Cairo, Egypt",
+      "screenshot": "https://images.ransomware.live/victims/506acd28db14e581b7c018ea5cd8d01f.png",
+      "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/b32ffa64-bd8e-487d-a358-cdb8f7d2bb8d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "payload_tfe_group",
+      "victim_name": "TFE Group",
+      "threat_actor": "payload",
+      "date_discovered": "2026-04-16 12:24:01.281814",
+      "industry": "Consumer Services",
+      "website": "",
+      "claim": "TFE Group is a company that operates in the Architecture, Engineering & Design industry.",
+      "screenshot": "https://images.ransomware.live/victims/5516b9c67b13fa8b56abd4c5a2382b8a.png",
+      "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/555031f0-db54-4cc0-b7ed-c5b3c1d5f400",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_empower_group",
+      "victim_name": "Empower Group",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-16 11:31:30.473241",
+      "industry": "Business Services",
+      "website": "goempowergroup.com",
+      "claim": "Empower Group has positioned itself in this space as a hub for it's clients to access these different types of funding products. Empower Group has leveraged partnerships with the top lenders in the space to better service Empower Group's client's specific needs. Through Empower Group's relationships, with access to more than 40 private finance institutions, Empower Group prides ourselves at being able to meet Empower Group's clients right where they are to service their specific needs for working capital. Empower Group is committed to continually growing and evolving with the industry as a service to Empower Group's partners; both business owners and lenders alike.",
+      "screenshot": "https://images.ransomware.live/victims/06b28153e9f8cff6cf4e166e901608dd.png",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=06c26b79-4599-4008-8434-79fb6415c22e",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lamashtu_biotehnos",
+      "victim_name": "Biotehnos",
+      "threat_actor": "lamashtu",
+      "date_discovered": "2026-04-16 09:33:56.647678",
+      "industry": "Healthcare",
+      "website": "biotehnos.ro",
+      "claim": "Biotehnos is a Romanian pharmaceutical company founded in 1993 by Prof. Dr. Ioan Manzatu. It is currently headquartered in Otopeni, Ilfov County, near the country’s capital, Bucharest, and celebrated its 30th anniversary in 2023.",
+      "screenshot": "https://images.ransomware.live/victims/f2df7a698a3967d6628ddbe38690e5f3.png",
+      "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/2bff47b8b7414902df9b5c49cf876d81",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "silentransomgroup_harris_beach_murtha",
       "victim_name": "Harris Beach Murtha",
