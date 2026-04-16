@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Hacker Chatter - Data Breach Search Engine | TheHGTech</title>
+    <meta name="description" content="Searchable database of cyber incidents, ransomware victims, and dark web data breaches. Track who was breached, the threat actors involved, and leaked data claims.">
+    <meta name="keywords" content="hacker chatter, data breach search engine, ransomware victims, dark web tracker, cyber incidents, leaked data, OSINT">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header-dropdown.css?v=1">
+    <link rel="stylesheet" href="light-mode.css">
+    <link rel="stylesheet" href="theme-toggle.css">
+    
+    <!-- Using CVE's grid css for similarity -->
+    <link rel="stylesheet" href="cve-display.css"> 
+
+    <!-- Mobile Optimization -->
+    <link rel="stylesheet" href="m-core.css?v=4.1">
+    <link rel="stylesheet" href="m-layout.css?v=3.2">
+    <link rel="stylesheet" href="m-components.css?v=3.0">
+    <script src="m-app.js?v=4.3" defer></script>
+    <script src="theme-toggle.js" defer></script>
+    <link rel="stylesheet" href="ui-enhancements.css?v=1.0">
+    <script src="ui-enhancements.js?v=1.0" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-chatter: #8a2be2; /* Violet theme for deep web */
+            --accent-chatter-light: #b97ff0;
+            --accent-danger: #FF3D3D;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Hero Section for Hacker Chatter (Violet hues) */
+        .chatter-hero {
+            position: relative;
+            padding: 10rem 2rem 5rem;
+            overflow: hidden;
+            background: var(--bg-primary);
+        }
+
+        .chatter-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 20% 20%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 70% 50% at 80% 30%, rgba(255, 61, 61, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            text-align: left;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.6rem 1.25rem;
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.15), rgba(138, 43, 226, 0.05));
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--accent-chatter-light);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 2rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, var(--accent-chatter-light) 50%, var(--accent-chatter) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+        }
+
+        /* Methodology & Trust Banner */
+        .trust-banner {
+            background: rgba(16, 185, 129, 0.05);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-left: 4px solid #10B981;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            max-width: 1400px;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .trust-icon {
+            font-size: 2rem;
+            color: #10B981;
+        }
+
+        .trust-content h3 {
+            margin: 0 0 0.5rem 0;
+            color: #10B981;
+            font-size: 1.1rem;
+        }
+
+        .trust-content p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Controls / Search Bar */
+        .controls-wrapper {
+            max-width: 1400px;
+            margin: 0 auto 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-chatter);
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.1);
+        }
+
+        /* The Data Table */
+        .table-container {
+            max-width: 1400px;
+            margin: 0 auto 4rem;
+            overflow-x: auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 1.25rem 1rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 1.25rem 1rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .victim-name {
+            font-weight: 700;
+            color: #fff;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .victim-industry {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .actor-tag {
+            display: inline-block;
+            background: rgba(138, 43, 226, 0.1);
+            color: var(--accent-chatter-light);
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .claim-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            max-width: 400px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .onion-warning {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 61, 61, 0.1);
+            color: var(--accent-danger);
+            border: 1px solid rgba(255, 61, 61, 0.2);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+        
+        .safe-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0, 217, 255, 0.1);
+            color: #00D9FF;
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+
+        .date-col {
+            white-space: nowrap;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Light mode adjustments */
+        html body.light-mode .chatter-hero {
+            background: #faf8fc !important;
+        }
+        html body.light-mode .gradient-text {
+            background: linear-gradient(135deg, #444 0%, #6b21a8 100%) !important;
+            -webkit-background-clip: text !important;
+            color: #6b21a8 !important;
+            -webkit-text-fill-color: transparent !important;
+        }
+        html body.light-mode .trust-banner {
+            background: #e8f5e9 !important;
+        }
+        html body.light-mode .table-container, html body.light-mode .search-input {
+            background: #fff !important;
+            border-color: #ddd !important;
+        }
+        html body.light-mode td { border-color: #eee; color: #333; }
+        html body.light-mode .victim-name { color: #111; }
+        html body.light-mode th { background: #f9f9f9; color: #666; border-color: #ddd;}
+    </style>
+</head>
+
+<body>
+    <!-- Top Header (Desktop & Mobile) -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <a href="/threat-intel.html" style="color: var(--accent-cyan);">Intelligence</a>
+                <a href="/ransomware-tracker.html">Ransomware Tracker</a>
+                <a href="/cve-tracker.html">CVE Tracker</a>
+                <button class="m-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left:auto; display:inline-flex; width:50px;height:24px;border-radius:20px;border:1px solid #444;background:#222;position:relative;">
+                    <span style="position:absolute; width:18px;height:18px;background:#fff;border-radius:50%;top:2px;left:2px;"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="chatter-hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-search"></i> SEARCH ENGINE
+            </div>
+            <div class="gradient-text">Hacker Chatter</div>
+            <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 700px; margin-top:1rem;">
+                A searchable database of global cyber incidents, ransomware victims, and deep web data breaches. Type a company name to instantly verify if their data has been claimed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Methodology & Trust Banner -->
+    <div class="trust-banner">
+        <div class="trust-icon"><i class="fas fa-shield-check"></i></div>
+        <div class="trust-content">
+            <h3>Methodology & Safe OSINT Engine</h3>
+            <p>
+                <strong>Legal & Safe:</strong> This database is generated entirely using public Open Source Intelligence (OSINT) and reputable third-party threat feeds (e.g., <i>Ransomware.live</i>). 
+                We <strong>do not</strong> connect to Tor (.onion sites) nor do we host or link directly to stolen data files. This tool is designed purely for cybersecurity defenders and threat researchers to track metadata (who, when, what) of cyber attacks safely.
+            </p>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls-wrapper">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search by victim company, threat actor, or keyword...">
+        </div>
+        <div style="display: flex; align-items: center; background: var(--bg-card); padding: 0 1rem; border-radius: 12px; border: 1px solid var(--border);">
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Database Size: <span id="dbSize" style="color:var(--accent-chatter-light); font-weight:700;">Loading...</span> Incidents</span>
+        </div>
+    </div>
+
+    <!-- Data Table -->
+    <div class="table-container">
+        <table id="breachTable">
+            <thead>
+                <tr>
+                    <th style="width: 25%">Victim & Industry</th>
+                    <th style="width: 15%">Threat Actor</th>
+                    <th style="width: 40%">Stated Claim / Chatter</th>
+                    <th style="width: 10%">Date</th>
+                    <th style="width: 10%">Reference</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr id="loadingRow">
+                    <td colspan="5" style="text-align: center; padding: 3rem;">
+                        <i class="fas fa-circle-notch fa-spin" style="font-size: 2rem; color: var(--accent-chatter);"></i>
+                        <p style="margin-top: 1rem; color: var(--text-muted);">Loading global cyber incidents...</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const tableBody = document.getElementById('tableBody');
+            const searchInput = document.getElementById('searchInput');
+            const dbSize = document.getElementById('dbSize');
+            
+            let incidentsData = [];
+
+            try {
+                // Fetch the dataset (which our GitHub action creates)
+                const response = await fetch('data/hacker-chatter.json');
+                if (!response.ok) throw new Error('Data file not found');
+                const rawData = await response.json();
+                
+                incidentsData = rawData.incidents || [];
+                dbSize.textContent = incidentsData.length;
+                
+                renderTable(incidentsData);
+                
+            } catch (error) {
+                console.error("Error loading data:", error);
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color: var(--accent-danger);">Could not load breach database. Please try again later.</td></tr>`;
+            }
+
+            // Search logic
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                const filtered = incidentsData.filter(incident => {
+                    return (incident.victim_name && incident.victim_name.toLowerCase().includes(query)) ||
+                           (incident.threat_actor && incident.threat_actor.toLowerCase().includes(query)) ||
+                           (incident.claim && incident.claim.toLowerCase().includes(query));
+                });
+                renderTable(filtered);
+            });
+
+            function renderTable(data) {
+                tableBody.innerHTML = '';
+                
+                if (data.length === 0) {
+                    tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:3rem; color:var(--text-muted);">No matching incidents found in database.</td></tr>`;
+                    return;
+                }
+
+                data.forEach(incident => {
+                    const tr = document.createElement('tr');
+                    
+                    // Parse Date safely
+                    let dateStr = 'Unknown';
+                    if (incident.date_discovered) {
+                        try {
+                            const d = new Date(incident.date_discovered);
+                            dateStr = d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+                        } catch(e) {}
+                    }
+                    
+                    // Button logic: check if URL is an onion link
+                    let refHtml = '';
+                    if (incident.url) {
+                        if (incident.url.includes('.onion')) {
+                            refHtml = `<a href="#" onclick="alert('Raw Dark Web URL detected. Connecting to Tor nodes is prohibited for safety.\\nURL: ${incident.url}'); return false;" class="onion-warning" title="Dark Web Source"><i class="fas fa-exclamation-triangle"></i> .ONION SOURCE</a>`;
+                        } else {
+                            refHtml = `<a href="${incident.url}" target="_blank" rel="noopener noreferrer" class="safe-link" title="View OSINT Source"><i class="fas fa-external-link-alt"></i> View</a>`;
+                        }
+                    }
+
+                    tr.innerHTML = `
+                        <td>
+                            <span class="victim-name">${incident.victim_name}</span>
+                            <span class="victim-industry">${incident.industry || 'Unknown Sector'}</span>
+                        </td>
+                        <td>
+                            <span class="actor-tag">${incident.threat_actor}</span>
+                        </td>
+                        <td>
+                            <div class="claim-text">${incident.claim || '<i>No detailed claim provided by actor</i>'}</div>
+                        </td>
+                        <td class="date-col">${dateStr}</td>
+                        <td>${refHtml}</td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

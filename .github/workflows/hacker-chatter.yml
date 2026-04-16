@@ -1,0 +1,52 @@
+name: Update Hacker Chatter Data
+
+on:
+  schedule:
+    # Run twice daily (every 12 hours)
+    - cron: '30 2,14 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-hacker-chatter:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Fetch recent incidents
+        run: python3 scripts/update_hacker_chatter.py
+      
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          
+          # Check if there are changes
+          if git diff --quiet data/hacker-chatter.json; then
+            echo "No new incidents to commit"
+            exit 0
+          fi
+          
+          git add data/hacker-chatter.json
+          git commit -m "🕵️ Update Hacker Chatter DB - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main && git push
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "### 🕵️ Hacker Chatter Sync Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Source**: Ransomware.live OSINT API" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY

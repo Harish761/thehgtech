@@ -1,0 +1,1006 @@
+{
+  "last_updated": "2026-04-16T06:46:15.395209",
+  "total_incidents": 100,
+  "incidents": [
+    {
+      "id": "silentransomgroup_harris_beach_murtha",
+      "victim_name": "Harris Beach Murtha",
+      "threat_actor": "SilentRansomGroup",
+      "date_discovered": "2026-04-15 22:25:48.649042",
+      "industry": "Business Services",
+      "claim": "[AI generated] Harris Beach Murtha is a full-service law firm operating in the United States, primarily in the northeastern region. Formed through the merger of Harris Beach and Murtha Cullina, the firm provides legal services across areas including corporate law, litigation, real estate, healthcare, and public finance. It serves clients ranging from businesses and municipalities to nonprofits and individuals across Connecticut, New York, and nearby states.",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "kairos_friendlycare_pharmacy",
+      "victim_name": "FriendlyCare Pharmacy",
+      "threat_actor": "kairos",
+      "date_discovered": "2026-04-15 20:47:05.756189",
+      "industry": "Healthcare",
+      "claim": "FriendlyCare Pharmacy offers a wide range of health and beauty products, including cosmetics, skincare, personal care, and medical devices. Their services cater to various health needs such as asthma care, diabetes management, and first aid supplies. The pharmacy targets a diverse clientele, including individuals seeking general health products, beauty enthusiasts, and families in need of baby care items. With multiple store locations and a commitment to customer satisfaction, they provide a price match guarantee and free shipping on orders over $99.",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_clearwater_marine_aquarium",
+      "victim_name": "Clearwater Marine Aquarium",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-04-15 20:26:59.814312",
+      "industry": "Consumer Services",
+      "claim": "N/A",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=1b2b5018-bc00-3fc8-b5b5-01b2110c9924",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "interlock_uniwersytet_warszawski",
+      "victim_name": "Uniwersytet Warszawski",
+      "threat_actor": "interlock",
+      "date_discovered": "2026-04-15 19:15:18.072523",
+      "industry": "Education",
+      "claim": "The Faculty of Management at the University of Warsaw is a leading institution in the field of business education, offering a wide range of undergraduate and graduate programs that combine theory with practical experience. However, it is not known for its high level of security and data storage reliability, resulting in the leak of data on students, instructors, and leading professors, as well as student projects and papers.",
+      "url": "http://efs3fkrjyvqsk7nugzteelo5i5jxoch5ziqhf37dzmmlmzzlymhawmid.onion/index.php?p=",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "vect_s&pglobal,_litellm/trivy_campaign_(teampcp)",
+      "victim_name": "S&PGLOBAL, LiteLLM/Trivy campaign (TeamPCP)",
+      "threat_actor": "vect",
+      "date_discovered": "2026-04-15 19:08:36.473129",
+      "industry": "Technology",
+      "claim": "Status: STATUS: NEGOTIATING | Sector: Business Services | Internal projects, secrets, api keys etc DATA SIZE: 250GB | Deadline: 8d 8h",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "vect_guesty,_litellm/trivy_campaign_(teampcp)",
+      "victim_name": "guesty, LITELLM/TRIVY CAMPAIGN (TEAMPCP)",
+      "threat_actor": "vect",
+      "date_discovered": "2026-04-15 19:08:31.637742",
+      "industry": "Technology",
+      "claim": "Status: STATUS: NEGOTIATING | Sector: property management | internal projects, 4 million sent/received mails with attachments, userbase, Airbnb and booking.com data stolen from guesty DATA SIZE: 700GB | Deadline: 9d 8h",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_limkon",
+      "victim_name": "Limkon",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-04-15 18:59:33.389359",
+      "industry": "Not Found",
+      "claim": "N/A",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=433a4569-2ad7-3b40-b1d1-1b5bf391aa35",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_the_epoch_times",
+      "victim_name": "The Epoch Times",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 16:33:19.724150",
+      "industry": "Consumer Services",
+      "claim": "[AI generated] The Epoch Times is a American media company founded in 2000 by John Tang and other Falun Gong practitioners. It operates as a multi-platform news outlet publishing print and digital content in multiple languages across numerous countries. The company is known for promoting conservative viewpoints and has been associated with spreading misinformation. It operates primarily in the United States with a significant global reach.",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/theepoch",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_truckload_carriers_association",
+      "victim_name": "Truckload Carriers Association",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-15 14:58:22.388124",
+      "industry": "Transportation/Logistics",
+      "claim": "Truckload Carriers Association is a national trade association fo\ncused on the truckload segment of the motor carrier industry.\n\nWe will upload 21gb of corporate data soon. Personal data of empl\noyees, detailed financials, contracts and agreements, customer an\nd partner files, projects, etc.\n",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_gruppo_icm_spa",
+      "victim_name": "Gruppo ICM SPA",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-04-15 14:45:47.909710",
+      "industry": "Not Found",
+      "claim": "N/A",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c7f1fef9-9aab-3ba9-8758-9a21b1cb1bf3",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_uom_university",
+      "victim_name": "UOM University",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:43:11.526411",
+      "industry": "Education",
+      "claim": "[AI generated] N/A",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/uom",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_vluznet",
+      "victim_name": "Vluznet",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:42:34.284227",
+      "industry": "Not Found",
+      "claim": "[AI generated] N/A",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/vlz",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_epoch_times",
+      "victim_name": "Epoch Times",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:41:57.428130",
+      "industry": "Consumer Services",
+      "claim": "[AI generated] Epoch Times is an American media company founded in 2000 by Chinese-American Falun Gong practitioners. It operates newspapers, websites, and video content across multiple countries, publishing in numerous languages. The company covers news, politics, health, and culture, but has drawn scrutiny from researchers and platforms for spreading misinformation and promoting far-right narratives. It is headquartered in New York, USA.",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/epoch",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_superintendency_of_territorial_planning",
+      "victim_name": "Superintendency of territorial planning",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:41:17.779451",
+      "industry": "Public Sector",
+      "claim": "[AI generated] N/A",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/sot",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_gl_steel",
+      "victim_name": "GL Steel",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:40:41.332225",
+      "industry": "Manufacturing",
+      "claim": "[AI generated] N/A",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/glsteel",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_wayne_brothers_construction",
+      "victim_name": "Wayne Brothers Construction",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:40:03.230642",
+      "industry": "Construction",
+      "claim": "[AI generated] N/A",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/bros",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_questivity",
+      "victim_name": "Questivity",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:39:24.669231",
+      "industry": "Business Services",
+      "claim": "[AI generated] N/A",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/quest",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_millenium_packaging",
+      "victim_name": "Millenium Packaging",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:38:47.526919",
+      "industry": "Manufacturing",
+      "claim": "[AI generated] N/A",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/pkg",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_kemenpppa",
+      "victim_name": "Kemenpppa",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:38:10.581731",
+      "industry": "Public Sector",
+      "claim": "[AI generated] Kemenpppa, short for Kementerian Pemberdayaan Perempuan dan Perlindungan Anak, is an Indonesian government ministry responsible for empowering women and protecting children. Operating in Indonesia, it develops and oversees policies related to gender equality, women's rights, child protection, and social welfare. The ministry works to eliminate discrimination, violence, and exploitation affecting women and children across the country.",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/kemen",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_rogiken_/_institute_of_science_tokyo",
+      "victim_name": "Rogiken / institute of Science Tokyo",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:37:31.142418",
+      "industry": "Education",
+      "claim": "[AI generated] Rogiken is a research organization affiliated with the Institute of Science Tokyo, a Japanese national university formed through the merger of Tokyo Institute of Technology and Tokyo Medical and Dental University. It operates in Japan within the academic and scientific research sector, focusing on advanced engineering, natural sciences, and interdisciplinary studies. The institute supports innovation, technology development, and collaboration between academia and industry.",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/tokyo",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_la_maison_bleue_france",
+      "victim_name": "La Maison Bleue France",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:36:52.810332",
+      "industry": "Hospitality and Tourism",
+      "claim": "[AI generated] N/A",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/bleue",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_sampol",
+      "victim_name": "Sampol",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:36:14.751209",
+      "industry": "Not Found",
+      "claim": "[AI generated] Sampol is a Spanish engineering and services company headquartered in Mallorca, Spain. It operates in the energy, industrial, and infrastructure sectors, offering services such as electrical installations, renewable energy solutions, facility management, and maintenance. The company works across multiple countries, primarily in Spain and international markets, serving both public and private clients in areas including smart grids, sustainability, and industrial automation.",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/sampol",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_astreya",
+      "victim_name": "Astreya",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:35:36.811458",
+      "industry": "Technology",
+      "claim": "[AI generated] Astreya is a US-based IT managed services company headquartered in Sunnyvale, California. It provides technology workforce solutions, IT support, infrastructure management, and digital workplace services to large enterprises. Operating primarily in the information technology services industry, Astreya partners with major technology firms globally, delivering staffing and managed IT services across multiple countries while maintaining its core operations in the United States.",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/astraya",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_cognizant",
+      "victim_name": "Cognizant",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-15 13:34:57.809297",
+      "industry": "Business Services",
+      "claim": "[AI generated] Cognizant is a multinational information technology and professional services company headquartered in Teaneck, New Jersey, USA. It operates in the IT services and consulting industry, offering digital transformation, technology, and business process outsourcing services. Founded in 1994, Cognizant serves clients across healthcare, financial services, manufacturing, and retail sectors globally, with major delivery centers in India.",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/cog",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_cir_realty",
+      "victim_name": "CIR Realty",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-15 13:29:47.906509",
+      "industry": "Not Found",
+      "claim": "Established in 1983, CIR Realty is a real estate brokerage in Can\nada, serving the Central and Southern Alberta markets. They are h\neadquartered in Calgary, Alberta.\n\nWe will upload 25gb of corporate data soon. Detailed personal dat\na of employees (names, emails, addresses, phones, photos, persona\nl documents) and clients (names, emails, addresses, driver licens\nes, phones, payment detailed, account details and so on), detaile\nd financials, contracts and agreements, lots of client files, pro\njects, NDA, internal confidential files and so on.\n",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_indesmalla",
+      "victim_name": "INDESMALLA",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-15 12:03:39.340762",
+      "industry": "Manufacturing",
+      "claim": "Indesmalla is a family business with two production plants, one w\nith raschel machines and the other with Ketten machines. It produ\nces knitted weft (circular) fabric and knitted and finished weft \nfabrics in different weights, draws and elasticity.\n\nWe will upload corporate data soon. Personal data of employees, f\ninancials, contracts and agreements, lots of client files, projec\nts, NDA, internal confidential files and so on.\n",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_fletcher_chrysler_products",
+      "victim_name": "Fletcher Chrysler Products",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-15 12:03:36.319097",
+      "industry": "Manufacturing",
+      "claim": "Fletcher Chrysler Dodge Jeep Ram is a dealership located in Frank\nlin, IN, offering a wide selection of new and used Chrysler, Dodg\ne, Jeep, and Ram vehicles. They serve clients in Franklin, Indian\napolis, Shelbyville, and surrounding areas, providing assistance \nin vehicle purchasing, financing options, and automotive services\n.\n\nWe will upload 28gb of corporate data soon. Personal data of empl\noyees (passports, DLs, SSNs and others), financials, contracts an\nd agreements, client files, and so on.\n",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lamashtu_volterries",
+      "victim_name": "VOLTERRIES",
+      "threat_actor": "lamashtu",
+      "date_discovered": "2026-04-15 11:01:58.682220",
+      "industry": "Energy",
+      "claim": "Volterres, a subsidiary of the Eiffage group, is reinventing the supply of green electricity for businesses and public sector players.\r\n",
+      "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/72196be43f72a424ca72de5127a3cdbf",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_curtis_design_group",
+      "victim_name": "Curtis Design Group",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-15 10:43:30.531019",
+      "industry": "Business Services",
+      "claim": "Curtis Design Group specializes in home architecture and design, creating beautiful and livable spaces tailored to the needs of families and developers. They focus on understanding client dreams and site specifics to produce detailed blueprints that reflect those visions. The company emphasizes a collaborative approach, ensuring clients are delighted with the final designs before working with builders. Their services extend beyond Utah, aiming to create homes that endure and bring joy for generations.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=2558ad00-e293-441a-b326-9bedc8fcb40a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_mccor",
+      "victim_name": "McCOR",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-15 10:42:02.811527",
+      "industry": "Not Found",
+      "claim": "McCor is a leading real estate and property management company in Canada, specializing in commercial, retail, and residential property management services. The company offers a comprehensive range of services including investment management, advisory services, leasing, and project management, targeting clients involved in real estate developments. McCor prides itself on building long-term partnerships through innovation, collaboration, and a strong focus on value creation. Their proactive approach ensures high levels of tenant satisfaction and operational efficiency, catering to a diverse clientele across various market segments",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=eef14cd1-1d68-4f9a-a8e2-3a4c7b94bf63",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_bela_-_pharm",
+      "victim_name": "bela - pharm",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-15 10:40:38.205987",
+      "industry": "Healthcare",
+      "claim": "bela-pharm GmbH specializes in the production of veterinary pharmaceuticals aimed at enhancing animal health. Their product range includes solutions for various livestock such as pigs, cattle, poultry, horses, sheep, goats, and small pets. The company serves veterinarians and international clients, offering expertise in drug production and approval. Committed to quality and innovation, bela-pharm focuses on ensuring safe and effective treatments for animals worldwide.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=745d9b0c-738f-4dbe-b203-1b404f2cbd39",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_flash_charm_inc_-_(idera)",
+      "victim_name": "Flash Charm INC - (IDERA)",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-14 21:35:28.542754",
+      "industry": "Technology",
+      "claim": "[AI generated] Flash Charm Inc is a software company associated with Idera, Inc., a US-based technology firm headquartered in Houston, Texas. Idera develops and provides database management, developer tools, and test management software solutions. Its products support database administrators and developers across multiple platforms. Flash Charm Inc appears to operate as a subsidiary or affiliated entity within Idera's broader portfolio of software brands serving enterprise IT markets.",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/idera",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lamashtu_lacroix",
+      "victim_name": "LACROIX",
+      "threat_actor": "lamashtu",
+      "date_discovered": "2026-04-14 20:23:16.768843",
+      "industry": "Manufacturing",
+      "claim": "Pièces d'Auto Lacroix is a Canadian company specializing in the retail distribution of automotive parts and accessories across several locations in Quebec.",
+      "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/8da3233a0fc6f66616e5d6042c2ae0a8",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_hacked_0apt",
+      "victim_name": "Hacked 0APT",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-04-14 20:22:16.615122",
+      "industry": "Technology",
+      "claim": "Next time, don't play with the big boys.\n\nThe response will be fast....",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/65dc321e50f74c6fd042423cf707e16ef0ff3b265b0049db4d6c17249dbfb76a/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "exitium_gastroenterology_&_hepatology_of_cny",
+      "victim_name": "Gastroenterology & Hepatology of CNY",
+      "threat_actor": "exitium",
+      "date_discovered": "2026-04-14 20:06:20.603210",
+      "industry": "Healthcare",
+      "claim": "Website: gandhofcny.com\nZoominfo: https://www.zoominfo.com/c/gastroenterology--hepatology-of-cny-pc/346091487\n\nData sample, whole internal data will be sold if they wouldn't pay ransom.\n\nAlso Digestive Disease Center of CNY, LLC (ddcofcny.com)\n\nGI practice + AAAHC-accredited endoscopy center. Syracuse, New York, USA.\n\nFull database for sale — 167,303 patients, 124,761 SSN, 49,798 with sensitive diagnoses:\n- 167,303 patients — 124,761 with SSN, 166,402 (99%) with address, 164,296 (98%) with phone, 85,318 (51%) with email\n- 1,093,863 diagnoses (ICD-10), 1,547,142 medications, 186,246 pathology specimens with narrative reports\n- Sensitive (dx + meds): 49,798 patients — 44,861 with SSN. Mental health: 43,902 | Substance/Alcohol: 5,111 | STIs: 2,779 | Cancer: 2,708 | Hepatitis C: 1,906\n- Includes notable individuals (politicians, businesspeople, public figures)",
+      "url": "http://m3ksukzn2glzfdvlusohril7n3iyk4z4fudf6mm22lwhpbpt5aiee5qd.onion#Gastroenterology%20%26%20Hepatology%20of%20CNY",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lynx_stonehenge",
+      "victim_name": "Stonehenge",
+      "threat_actor": "lynx",
+      "date_discovered": "2026-04-14 19:07:29.994665",
+      "industry": "Not Found",
+      "claim": "Stonehenge Co Ltd is a company that operates in the Commercial & Residential Construction industry. It employs 250to499 people and has 10Mto25M of revenue. The company is headquartered in Phra Nakhon Si Ayutthaya, Phra Nakhon Si Ayutthaya, Thailand.",
+      "url": "http://lynxchatly4zludmhmi75jrwhycnoqvkxb4prohxmyzf4euf5gjxroad.onion/leaks/69d442099c439c5f45f25fd7",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nightspire_d-troy_logistics",
+      "victim_name": "D-Troy Logistics",
+      "threat_actor": "nightspire",
+      "date_discovered": "2026-04-14 17:35:51.993904",
+      "industry": "Transportation/Logistics",
+      "claim": "- Internal Documents- Employee Data",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_apply_capnor",
+      "victim_name": "Apply Capnor",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 16:55:03.604678",
+      "industry": "Not Found",
+      "claim": "Capnor specializes in laser scanning, engineering, and 3D data management services, offering a comprehensive range of solutions including design engineering, reverse engineering, and dimensional control. Their services cater to various industries such as oil and gas, marine, chemical, power, pulp and paper, automotive, steel, and food. Capnor utilizes advanced technologies like drone inspections and 3D modeling to enhance project efficiency and accuracy. The company is dedicated to providing innovative solutions that improve project lifecycle phases and ensure quality and safety",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=698b5229-4f01-4707-a64c-0dc5b42b9a5f",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "chaos_coastappliances.com",
+      "victim_name": "coastappliances.com",
+      "threat_actor": "chaos",
+      "date_discovered": "2026-04-14 16:50:03.110859",
+      "industry": "Consumer Services",
+      "claim": "It offers refrigerators, freezers, wall ovens, washers, and electric ranges.",
+      "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/KGan5zh1NKkLgZjJkdq5jUzLeUfvSO0x",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "chaos_itc-group.com",
+      "victim_name": "itc-group.com",
+      "threat_actor": "chaos",
+      "date_discovered": "2026-04-14 16:49:25.694144",
+      "industry": "Business Services",
+      "claim": "Founded in 1983, ITC Construction Group is a Commercial and Residential Construction company that specializes in residential high rises, mixed-use developments, and select commercial projects.",
+      "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/GhKwrjbUfSi9CAxsiPlUSnOSeYeK6DWP",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_csa_spa",
+      "victim_name": "CSA SpA",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-14 15:35:18.487464",
+      "industry": "Not Found",
+      "claim": "CSA S.p.A. is a company that provides a broad range of quality pr\noducts and services tailored to the shipping industry, emphasizin\ng safety and customer satisfaction. Their offerings include ship \nservices, liner agency, and logistics, all designed to meet the h\nighest international standards.\n\nWe will upload 10gb of corporate data soon. Personal data of empl\noyees, financials, contracts and agreements, client files, and a \nlot of other internal files.\n",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_la_tuilerie",
+      "victim_name": "La Tuilerie",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-14 15:35:15.460685",
+      "industry": "Agriculture and Food Production",
+      "claim": "La Tuilerie is your local home renovation shop that helps homeown\ners and contractors find the perfect ceramic tiles, mosaics, and \nflooring. They focus on giving customers high-quality materials w\nith great personal service.\n\nWe will upload 11gb of corporate data soon. Personal data of empl\noyees, financials, contracts and agreements, lots of client files\n, projects, etc.\n",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_asesoriauriel.com",
+      "victim_name": "asesoriauriel.com",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-04-14 14:36:17.957505",
+      "industry": "Business Services",
+      "claim": "Asesoría Uriel is a consultancy and management firm located in Soria, specialized in providing services to individuals,...",
+      "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/404e2516d4022752f93dc9844fb4712339199312accc129b66a85bcb379cda09/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_unipest.co.th",
+      "victim_name": "unipest.co.th",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-04-14 14:35:36.737239",
+      "industry": "Consumer Services",
+      "claim": "Unipest Company Limited specializes in pest control services, including the elimination of termites, ants, cockroaches, ...",
+      "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/7e4d2cc0b26635dfe620f21d6729f4cd122f8f73c1a95c65bf38693f4a6f0751/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_palladium.gen.tr",
+      "victim_name": "palladium.gen.tr",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-04-14 14:34:57.010238",
+      "industry": "Not Found",
+      "claim": "Palladium Teknoloji ve Mühendislik Ltd. Şti. is a private Turkish company operating in the field of industrial enginee...",
+      "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/bc5723b509285febe34720381141a5509f50a50f44f48f250c899b37ff117b41/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_secran.com.br",
+      "victim_name": "secran.com.br",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-04-14 14:34:18.238952",
+      "industry": "Business Services",
+      "claim": "SECRAN Group is a trusted partner with over 40 years of experience, focusing on providing a comprehensive portfolio of b...",
+      "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/59817f58a05bc6e9720a72bfca2c7857539f7a9ee0e56f52b937752d26bde155/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_some_0apt_false_claims",
+      "victim_name": "Some 0APT false claims",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-04-14 14:33:42.878765",
+      "industry": "Not Found",
+      "claim": "We apologize for this data leak, but it did not affect our operations. The error was in the server settings; the phpMyAd...",
+      "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/9f0cdb3a132b8c6cbd7e2edace269a145da2fcb8ee744931c4e7bdf61180bcd2/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_breslinbuilders.com",
+      "victim_name": "breslinbuilders.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 14:15:32.964223",
+      "industry": "Construction",
+      "claim": "Breslin Builders is a general contractor specializing in design and construction, based in Las Vegas, Nevada, and serving the Las Vegas Valley and Southern Nevada since 1980.\nThe company specializes in a wide range of commercial construction services, including pre-development, design, and construction, as well as construction management for various types of projects, such as apartment buildings, retail spaces, and hotel complexes.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=fcfc9d37-cabe-44dd-9c33-ba7ccd1e7f4d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_tulsachamber.com",
+      "victim_name": "tulsachamber.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 14:14:08.799109",
+      "industry": "Business Services",
+      "claim": "The Talsi Regional Chamber of Commerce is committed to serving as a leading business-oriented organization and improving the quality of life in the community by fostering regional economic prosperity.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=407fd775-a942-4759-ab2b-ddd81b5932cc",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_servicemaster_clean_services",
+      "victim_name": "ServiceMaster Clean services",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-14 14:07:30.140920",
+      "industry": "Consumer Services",
+      "claim": "ServiceMaster Services, Inc. is a privately owned and operated co\nmmercial contract cleaning company. Founded in 1974, ServiceMaste\nr specializes on servicing office buildings and other large facil\nities. It is headquartered in Memphis, Tennessee.\n\nWe will upload corporate data soon. Personal data of employees (p\nassports, 20  DLs, SSNs and others), financials, contracts and ag\nreements, client files, and so on.\n",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nightspire_bk_tomorrow",
+      "victim_name": "BK Tomorrow",
+      "threat_actor": "nightspire",
+      "date_discovered": "2026-04-14 13:43:14.787158",
+      "industry": "Not Found",
+      "claim": "Source Code of BK Tomorrow",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_milliondollarbabyco.com",
+      "victim_name": "milliondollarbabyco.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 13:09:08.388230",
+      "industry": "Consumer Services",
+      "claim": "Million Dollar Baby Co. was founded in 1990 and is a proudly family-owned business based in Los Angeles. Since then, MDB has grown to include seven distinct children’s furniture brands, each with its own style, aesthetic, and price point, while offering some of the most eco-friendly and award-winning designs in the industry. Our products are available at retailers such as Target and Amazon, as well as specialty stores like Pottery Barn Kids and Crate & Barrel. The parent company, Million Dollar Baby Co., includes our brands: Babyletto, daVinci, Nursery Works, and Namesake.\n",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=04a980e8-5299-465c-bf27-621fa02e8daf",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_graphicinfo.com",
+      "victim_name": "graphicinfo.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 13:07:39.538933",
+      "industry": "Business Services",
+      "claim": "Graphic Information Systems Inc. specializes in the custom production of barcode labels, product number/identification labels, and warehouse signage, serving businesses \nthat require inventory management solutions. They also offer a wide range of promotional products and apparel to enhance a company’s brand recognition. Their services include the installation of warehouse labels and signs, as well as design services. Based in Cincinnati, Ohio, GIS strives to provide high-quality, affordable products to improve warehouse operations and marketing efforts.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=c64d7c32-4781-4cb0-9415-08581b25281d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_gtlcompany.com",
+      "victim_name": "gtlcompany.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 13:06:15.741556",
+      "industry": "Business Services",
+      "claim": "Gloyer-Taylor Laboratories, Inc. (GTL) is a high-tech company specializing in providing revolutionary technologies for the aerospace industry. Its product portfolio includes advanced composite cryogenic tanks, propulsion systems, as well as aerospace system design and analysis services. GTL serves customers in the aerospace sector, with a particular focus on innovative solutions for launch vehicles and high-temperature structures. The company also collaborates with organizations such as NASA to develop cutting-edge technologies for space exploration.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=c47d2fb2-1f75-422f-ba73-d89a787826a3",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_tremcar.com",
+      "victim_name": "tremcar.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 13:05:06.722049",
+      "industry": "Transportation/Logistics",
+      "claim": "Tremcar Drummond Inc. manufactures and designs high-quality textile machinery and equipment. The company was founded in 1962",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=8db5a061-8ab7-446a-9c8e-c00b77adf62c",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_imadesign.com",
+      "victim_name": "imadesign.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 13:03:56.286063",
+      "industry": "Business Services",
+      "claim": "IMA Design Group, Inc. specializes in master planning, development services, and landscape architecture, with a particular focus on creating exceptional spaces for its clients. \nThe company is distinguished by its unique artistic approach and strives to ensure maximum cost-effectiveness in its projects. \nThe company’s portfolio includes a wide range of projects—from affordable and student housing to commercial spaces—located both in California and beyond.\nThe company strives to help clients create socially oriented environments that harmoniously blend recreational elements with modern technology.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=9b6e3e04-9791-4e93-ad79-beb5974076ce",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_advprograms.com",
+      "victim_name": "advprograms.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 13:02:19.162882",
+      "industry": "Technology",
+      "claim": "Advanced Programs, Incorporated (API) specializes in providing secure, high-quality integrated \nsystem solutions designed specifically for government and industrial clients, particularly in the fields of intelligence, defense, and foreign policy. \nThe product portfolio includes TEMPEST-certified computers, networking equipment, and secure communication devices that \nmeet stringent security standards. API retrofits existing products from leading manufacturers and develops new \ndesigns to ensure reliability in high-risk environments. The company’s typical customers are program management offices \nresponsible for deploying and maintaining secure IT solutions in remote locations.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=83b95c5a-633b-4f5d-9309-8aa68a611bcf",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_novafp.com",
+      "victim_name": "novafp.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 13:00:37.396562",
+      "industry": "Business Services",
+      "claim": "Nova Fire Protection Inc. specializes in sprinkler fire suppression systems, \noffering design, installation, repair, inspection, and testing services to homeowners and \nbusinesses in the Chicago area. Their team is ready to tackle projects of any scale, from residential homes to large \ncommercial buildings, providing comprehensive fire safety solutions. The company also provides \n24/7 emergency services and system upgrades to maintain their effectiveness. With years of experience \nin the region, Nova Fire Protection is committed to protecting lives and property across various communities. ",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=abf898a3-5883-4657-a4f0-a336b44a231e",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_ppiplastics.com",
+      "victim_name": "ppiplastics.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 12:59:01.387593",
+      "industry": "Manufacturing",
+      "claim": "Preproduction Plastics Inc. is a company specializing in structural foam injection molding and gas-assisted injection molding.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=814f56ab-0d7f-473f-abad-b239deb9abcd",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_je-nyc.com",
+      "victim_name": "je-nyc.com",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-14 12:57:40.844193",
+      "industry": "Not Found",
+      "claim": " Jacmel Enterprise Inc. offers a wide range of IT services, including Microsoft Dynamics solutions, project services such as data cabling and server configuration, as well as cloud services using Microsoft Office 365.",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=f0a6c94f-b964-4b83-a15c-63c8f17955ff",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_r_l_larson_excavating",
+      "victim_name": "R L Larson Excavating",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-14 12:49:30.564332",
+      "industry": "Construction",
+      "claim": "R. L. Larson Excavating Inc., is an excavating contractor based i\nn St. Cloud, MN. \n\nWe will upload 30gb of corporate data soon. Personal data of empl\noyees (DLs, w9 forms and others), financials, drawings and specif\nications, contracts and agreements, projects, and so on.\n",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lamashtu_weda_robotics",
+      "victim_name": "WEDA ROBOTICS",
+      "threat_actor": "lamashtu",
+      "date_discovered": "2026-04-14 12:03:39.011803",
+      "industry": "Manufacturing",
+      "claim": "Over 100 Years of Engineering. Now Pioneering the Future of Sustainable Cleaning.\r\nFrom mechanical pool cleaners in the 1920s to submerged, no drain robotic\r\nsystems used across 40+ countries. ",
+      "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/f38d9c6b2ab7f32218aaad1f043b0180",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_fastindustria.com.br",
+      "victim_name": "fastindustria.com.br",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 11:01:28.034548",
+      "industry": "Manufacturing",
+      "claim": "Fast Tecnologia Industrial specializes in industrial equipment and systems for wastewater treatment...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/c12e5c622022fe3694473c0b3bc513a9",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_sportvision.ba",
+      "victim_name": "sportvision.ba",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 11:00:28.435466",
+      "industry": "Technology",
+      "claim": "SportVision is a sports gear shop that helps athletes and fitness fans find exactly what they need....",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/8a094297f844e798772725e2ecb9419b",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_townoforangeva.gov",
+      "victim_name": "townoforangeva.gov",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:59:46.007508",
+      "industry": "Public Sector",
+      "claim": "The Town of Orange, Virginia, is the seat of Orange County and serves as its business center, offeri...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/00c859168837cbf0d4606f84b4d39ed7",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_gas.mercedes-benz.com.eg",
+      "victim_name": "gas.mercedes-benz.com.eg",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:58:57.952841",
+      "industry": "Transportation/Logistics",
+      "claim": "Mercedes-Benz, founded in 1967 and headquartered in Giza, Egypt, is a automobile dealer and motor ve...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/33cd3932416d997324162442e6ef7cb8",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_abuhatim.com",
+      "victim_name": "abuhatim.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:58:24.191391",
+      "industry": "Not Found",
+      "claim": "Abu Hatim Co LLC is an Excellent Grade Engineering Construction Company established in 1991, special...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/a9c9feec1a75387b9f56b655bb8fe615",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_milanocavi.com",
+      "victim_name": "milanocavi.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:57:49.555552",
+      "industry": "Manufacturing",
+      "claim": "Wineuropa is a web agency based in Arezzo that specializes in web marketing, SEO services, and websi...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/86f78122ae31c73d46ef258497fa6477",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_zsfh.cz",
+      "victim_name": "zsfh.cz",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:57:14.214582",
+      "industry": "Not Found",
+      "claim": "Základní škola a Mateřská škola F. Hrubína Havířov-Podlesí",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/ce887ccfa0dd84e59ec8341d9f040e4e",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_contrar.it",
+      "victim_name": "contrar.it",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:56:40.417606",
+      "industry": "Not Found",
+      "claim": "Il consorzio CON.TR.AR. nasce nel 1985 dall’aggregazione di alcuni padroncini artigiani che sentiron...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/179df44036efeb7da32c0002ccd9dfc3",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_awvgrazerfeld.at",
+      "victim_name": "awvgrazerfeld.at",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:56:06.631874",
+      "industry": "Agriculture and Food Production",
+      "claim": "Verwaltung Unter dem Motto \"Weg vom Kostenumleger und hin zum Dienstleister\" hat sich die Geschäfts...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/c1bde493c2d5b49db7824ae746389c1c",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_douglasstruckbodies.com",
+      "victim_name": "douglasstruckbodies.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:55:27.359773",
+      "industry": "Manufacturing",
+      "claim": "Douglass Truck Bodies specializes in the manufacturing and design of standard and custom truck bodie...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/8aa129dcac8ee270dd2de768be2b8a56",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_mesto-jemnice.cz",
+      "victim_name": "mesto-jemnice.cz",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:54:49.943553",
+      "industry": "Public Sector",
+      "claim": "Historie města Jemnice Město Jemnice je správním, hospodářským a kulturním střediskem kraje mezi Da...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/13744344206ec4cb841cc232af093afd",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_meyzietp.com",
+      "victim_name": "meyzietp.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:54:16.244169",
+      "industry": "Not Found",
+      "claim": "Fondée en 1954, l’entreprise MEYZIE TP est spécialisée dans les travaux de terrassements routiers et...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/4f0211de29729f02ae8e55657d820c2b",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_pegasussrl.com",
+      "victim_name": "pegasussrl.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:53:40.873422",
+      "industry": "Business Services",
+      "claim": "Agenzia Unipol Assicurazioni 39547 Prato - Pegasus srl Agenzia 39547 Prato R.U.I. N. A000671187- P....",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/f3f85c6d129371a31960935069bb979d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_villa-romane.fr",
+      "victim_name": "villa-romane.fr",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:53:02.728267",
+      "industry": "Hospitality and Tourism",
+      "claim": "Villa Romane, constructeur de maison à Perpignan Fondée en 1982, Villa Romane est une entreprise fa...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/f4c3d7e351be8e2fc506c506fdfc043a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_vitropor.pt",
+      "victim_name": "vitropor.pt",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:52:29.123116",
+      "industry": "Manufacturing",
+      "claim": "Tal como o nosso vidro, somos transparentes, seguros e resistentes. Com mais de 30 anos na indústri...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/aaf3f2ed04d803c0befe664feec979a0",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_vitexpharma.com",
+      "victim_name": "vitexpharma.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:51:54.961450",
+      "industry": "Healthcare",
+      "claim": "Vitex Pharmaceuticals is Australia&#039;s leading contract manufacturer specializing in vitamins, mi...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/66b50491d737d542be2708632f80942d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_seleniaravenna.it",
+      "victim_name": "seleniaravenna.it",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:51:04.876308",
+      "industry": "Not Found",
+      "claim": "Servizi all&#039;avanguardia a Ravenna Nato nel 1992 dall&#039;unione delle principali realtà coope...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/c126309e63f127e42b053d663736428a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_aplast.ro",
+      "victim_name": "aplast.ro",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:50:31.307476",
+      "industry": "Manufacturing",
+      "claim": "You are welcome in our offices across Central and Eastern Europe. With international presence since...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/43b17c6157880975105f7ff8034b3661",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_shunhinggroup.com",
+      "victim_name": "shunhinggroup.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:49:56.236762",
+      "industry": "Manufacturing",
+      "claim": "The Shun Hing Group (信興集團) is a prominent Hong Kong-based conglomerate founded in 1953, primarily kn...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/87b1fcc2f27f800858ca030b21fef20e",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_earthprotect.co.jp",
+      "victim_name": "earthprotect.co.jp",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:49:19.857517",
+      "industry": "Agriculture and Food Production",
+      "claim": "Earth Protect Co., Ltd  Thinking about what we can do to protect and create tomorrow&#039;s global...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/5429d2c74d54ec6da98a470c2f48d1bd",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_wibeats.it",
+      "victim_name": "wibeats.it",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:48:46.017063",
+      "industry": "Technology",
+      "claim": "WIBEATS is an independent Asset Management and Loans Service groups, highly specialised in the selec...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/2e84bd195247a45faa74902578f2ef22",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_comunidadandina.org",
+      "victim_name": "comunidadandina.org",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:48:12.060390",
+      "industry": "Public Sector",
+      "claim": "La Comunidad Andina (CAN) es un organismo internacional de integración subregional fundado el 26 de...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/bbaac87b25aaf8c1f764b7fca126c0dc",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_fondonorma.org.ve",
+      "victim_name": "fondonorma.org.ve",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:47:38.222473",
+      "industry": "Financial Services",
+      "claim": "Fondonorma is a Venezuelan certification company that helps businesses prove they meet quality and s...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/8a65d62506b2d1b2570b3e894e71e15e",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_cegasa.com",
+      "victim_name": "cegasa.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:47:01.501211",
+      "industry": "Manufacturing",
+      "claim": "Cegasa is a leading European company specializing in innovative energy solutions, particularly lithi...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/ab4e5c1cd83cb07eaafdb3ef43f58558",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_nucleodediagnostico.mx",
+      "victim_name": "nucleodediagnostico.mx",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:46:27.234995",
+      "industry": "Healthcare",
+      "claim": "Núcleo de Diagnóstico Núcleo de Diagnóstico es un laboratorio de análisis clínicos ubicado en Guada...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/9f98bc6c2e7cb045ef87df9ceb43ee19",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_marti.do",
+      "victim_name": "marti.do",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:45:52.988194",
+      "industry": "Not Found",
+      "claim": "ABOUT THE GROUP Somos un grupo empresarial con más de 60 años de experiencia, sirviendo con entusia...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/4fa8270015958266c4c3f6866f6f46d7",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_decaturdiagnosticlab.net",
+      "victim_name": "decaturdiagnosticlab.net",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-14 10:45:18.576840",
+      "industry": "Healthcare",
+      "claim": "Located inside the Med-Surg Complex; Decatur Diagnostic Lab is a privately owned lab servicing the D...",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/fe10588cc70183ad263865cacfe96b96",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_psychplus",
+      "victim_name": "PsychPlus",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:29:29.164216",
+      "industry": "Healthcare",
+      "claim": "psychplus.com zoominfo.com/c/psychplus/1319245304 PsychPlus is a Houston-based mental health company founded in 2019–2020, offering virtual and in-person care via licensed psychiatrists and therapists. It focuses on accessibility by accepting 99% of commercial insurances (including Medicare/Medicaid), providing same/next-day appointments, and enabling 24/7 online booking through its app and EHR platform, with over 200 providers and plans to expand into 20 new U.S. markets in 2025",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_uk_electronics",
+      "victim_name": "UK Electronics",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:29:05.365808",
+      "industry": "Manufacturing",
+      "claim": "ukelectronics.co.uk zoominfo.com/c/uk-electronics-ltd/51921022 UK Electronics specializes in the manufacture of high-quality electronic assemblies, offering a comprehensive range of services including PCB assembly, mechanical assembly, and testing. With over 40 years of experience, they provide full turnkey solutions from concept to manufacture, catering to various industries such as military, aviation, medical, and manufacturing",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_intra",
+      "victim_name": "Intra",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:28:41.961182",
+      "industry": "Not Found",
+      "claim": "intracare.co.nz zoominfo.com/c/intra-ltd/430152179 IntraCare is New Zealand's leading private centre of excellence for advanced image-guided medical diagnostics and interventions, founded in 1990 in Auckland. It specialises in three areas: Interventional Cardiology, Electrophysiology, and Interventional Radiology, with over 30 practising specialists treating more than 2,000 patients per year. The clinic operates from two locations — Allevia Hospital Epsom and Southern Cross Hospital North Shore — and is internationally recognized for pioneering procedures like TAVI, implanting the first device in the Asia-Pacific region in 2008",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_gem_terminal",
+      "victim_name": "GEM Terminal",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:28:37.811908",
+      "industry": "Technology",
+      "claim": "gem.com.tw zoominfo.com/c/gem-terminal-industry-co-ltd/46452181 Gem Terminal Ind. Co., Ltd. is engaged in the manufacture and sale of terminals used for electronic communication, automobile transportation and electrical plugs. The Company also offers ceramic ferrules, bushings and modules. During the year ended December 31, 2007, the Company obtained approximately 92% of its total revenue from terminals",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_brand_collective",
+      "victim_name": "Brand Collective",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:28:33.826164",
+      "industry": "Business Services",
+      "claim": "brandcollective.com.au zoominfo.com/c/brand-collective-pty-ltd/366644163 Brand Collective is Australia's leading house of apparel, footwear, and sports brands. They manage owned and licensed brands across the full product lifecycle — from strategy, design, and development to sales, supply chain, retail operations, e-commerce, and marketing.",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_cleor",
+      "victim_name": "Cleor",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:28:09.955199",
+      "industry": "Not Found",
+      "claim": "cleor.com zoominfo.com/c/cleor/355616744 CLEOR is a historic French jewelry brand with over 20 years of experience, offering jewelry, watches, and accessories for men, women, and children online and in stores across France. They control the full production chain — from raw material sourcing to creative design and assembly — with a focus on quality precious materials (18K gold, diamonds, pearls, gemstones) at fair prices",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_harlem_stage",
+      "victim_name": "Harlem Stage",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:27:46.671307",
+      "industry": "Consumer Services",
+      "claim": "harlemstage.org zoominfo.com/c/harlem-stage/109888723 Founded in 1983, Harlem Stage is a New York-based performing arts organization dedicated to empowering artists of the Global Majority — amplifying stories that have been whispered, silenced, or erased. Operating under the motto \"Harlem is our home; the world is our stage,\" it supports dance, music, theater, film, and visual arts through commissions, festivals, education programs, and global partnerships.",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_international_maritime_hospita",
+      "victim_name": "International Maritime Hospita",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:27:22.807975",
+      "industry": "Healthcare",
+      "claim": "imah.gov.gh zoominfo.com/c/international-maritime-hospital-imah/1339985496  IMaH (International Maritime Hospital) is a government-affiliated, world-class healthcare facility located in Tema, Ghana, operating 24/7 year-round including holidays. It specializes in maritime and general health services, offering a wide range of facilities including operating theatres, maternity wards, an oxygen plant, morgue, and emergency care. The hospital is ranked among the top ten hospitals in Ghana and actively participates in international medical tourism expos",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_double_c_farm",
+      "victim_name": "Double C Farm",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:26:59.299479",
+      "industry": "Agriculture and Food Production",
+      "claim": "doublecfarm.net zoominfo.com/c/double-c-farm-llc/356570449 Double C Farm is a private equestrian facility in Montgomery County, Maryland, near Sugarloaf Mountain, owned and operated by Cridder Halle. It features an Extreme Mountain Trail Obstacle Course with 30+ obstacles (bridges, balance beams, water obstacles, trenches) and offers Ranch Riding clinics, group/private lessons, and schooling shows for all skill levels — approved by the East Coast Ranch Riding Association (ECRRA).",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_brc_biotechnology",
+      "victim_name": "BRC Biotechnology",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:26:34.312881",
+      "industry": "Healthcare",
+      "claim": "brcbiotech.com BRC Biotechnology is a biopharmaceutical contract development and manufacturing company that strictly adheres to GMP standards from China, the USA, and Europe. It holds certifications including EU GMP QP compliance, US FDA FEI registration, and ISO 9001:2015, offering professional risk assessments, customized biomanufacturing solutions, and welcoming regular client audits.",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_nsoft",
+      "victim_name": "NSOFT",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-14 10:26:10.648302",
+      "industry": "Technology",
+      "claim": "nsoft.in zoominfo.com/c/nsoft-india-services-pvt-ltd/442822236 Founded in 1996 in Bangalore, NSOFT India Services is a leading utility automation and Smart Metering/AMI specialist, helping electricity, water, and gas utilities maximize revenue and reduce losses. The company serves over 16 million consumers across 11+ utilities in India, handling transactions worth more than ₹10,000 crores annually, with a team of 1,000+ employees. It is certified CMMI Level 5, ISO 9001, ISO 27001, and ISO 20000, founded and led by Dr. Naagaraj Subramanya (IIT/IISc).",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    }
+  ]
+}
