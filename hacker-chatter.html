@@ -288,6 +288,94 @@
             font-size: 0.85rem;
         }
 
+        /* Glass Modal Styles */
+        .incident-modal-backdrop {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .incident-modal-backdrop.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .incident-modal {
+            background: rgba(20, 20, 25, 0.95);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 16px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(138, 43, 226, 0.1);
+            transform: scale(0.95) translateY(20px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            max-height: 90vh;
+        }
+
+        .incident-modal-backdrop.active .incident-modal {
+            transform: scale(1) translateY(0);
+        }
+
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background: linear-gradient(to right, rgba(138, 43, 226, 0.1), transparent);
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+            overflow-y: auto;
+            color: var(--text-primary);
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.2s;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .close-modal:hover {
+            color: var(--accent-danger);
+        }
+
+        .clickable-row {
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .clickable-row:hover {
+            background: rgba(138, 43, 226, 0.05) !important;
+        }
+        
+        .clickable-instruction {
+            font-size: 0.75rem;
+            color: var(--accent-chatter);
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            opacity: 0.8;
+        }
+
         /* Light mode adjustments */
         html body.light-mode .chatter-hero {
             background: #faf8fc !important;
@@ -370,7 +458,6 @@
         </div>
     </div>
 
-    <!-- Data Table -->
     <div class="table-container">
         <table id="breachTable">
             <thead>
@@ -391,6 +478,40 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <!-- The Glass Modal -->
+    <div class="incident-modal-backdrop" id="incidentModal">
+        <div class="incident-modal">
+            <div class="modal-header">
+                <div>
+                    <h2 id="modalVictimName" style="margin: 0 0 0.25rem 0; font-size: 1.4rem; color: #fff;">Victim Name</h2>
+                    <span id="modalIndustry" class="victim-industry" style="display:inline-block;">Industry</span>
+                </div>
+                <button class="close-modal" onclick="closeIncidentModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Threat Actor</div>
+                        <div id="modalActor" class="actor-tag" style="margin-top: 0.25rem;">Actor</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Discovered Date</div>
+                        <div id="modalDate" style="margin-top: 0.25rem; font-weight: 600;">Date</div>
+                    </div>
+                </div>
+                
+                <h3 style="font-size: 1.1rem; color: var(--accent-chatter-light); margin: 0 0 0.75rem 0;">Stated Claim / AI Description</h3>
+                <div id="modalClaim" style="background: rgba(0,0,0,0.3); padding: 1.25rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); color: var(--text-secondary); font-size: 0.95rem; white-space: pre-wrap; word-break: break-word;">
+                    Claim goes here...
+                </div>
+                
+                <div id="modalLinkContainer" style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); text-align: right;">
+                    <!-- Action button goes here -->
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -466,19 +587,27 @@
                         }
                     }
 
+                    tr.className = "clickable-row";
+                    
+                    // We need to encode the object so it safely passes into the inline onclick handler
+                    // without breaking the HTML string literals
+                    const safeIncidentData = encodeURIComponent(JSON.stringify(incident)).replace(/'/g, "%27");
+                    tr.setAttribute("onclick", `openIncidentModal('${safeIncidentData}')`);
+
                     tr.innerHTML = `
                         <td>
-                            <span class="victim-name">${incident.victim_name}</span>
+                            <span class="victim-name">${incident.victim_name || 'Unknown'}</span>
                             <span class="victim-industry">${incident.industry || 'Unknown Sector'}</span>
                         </td>
                         <td>
-                            <span class="actor-tag">${incident.threat_actor}</span>
+                            <span class="actor-tag">${incident.threat_actor || 'Unknown'}</span>
                         </td>
                         <td>
                             <div class="claim-text">${incident.claim || '<i>No detailed claim provided by actor</i>'}</div>
+                            <div class="clickable-instruction"><i class="fas fa-expand-arrows-alt"></i> Click row to view full details</div>
                         </td>
                         <td class="date-col">${dateStr}</td>
-                        <td>${refHtml}</td>
+                        <td onclick="event.stopPropagation();">${refHtml}</td>
                     `;
                     tableBody.appendChild(tr);
                 });
@@ -492,6 +621,66 @@
                 }
             }
         });
+
+        // Modal Functions
+        const modalBackdrop = document.getElementById('incidentModal');
+        
+        function openIncidentModal(encodedIncident) {
+            const incident = JSON.parse(decodeURIComponent(encodedIncident));
+            
+            document.getElementById('modalVictimName').textContent = incident.victim_name || 'Unknown Victim';
+            document.getElementById('modalIndustry').textContent = incident.industry || 'Unknown Sector';
+            document.getElementById('modalActor').textContent = incident.threat_actor || 'Unknown Actor';
+            
+            // Format Date
+            let dateStr = 'Unknown';
+            if (incident.date_discovered) {
+                try {
+                    const extracted = incident.date_discovered.split(' ')[0];
+                    const d = new Date(extracted);
+                    if(!isNaN(d.getTime())) {
+                        dateStr = d.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+                    }
+                } catch(e) {}
+            }
+            document.getElementById('modalDate').textContent = dateStr;
+            
+            // Format Claim
+            const claimEl = document.getElementById('modalClaim');
+            if(incident.claim) {
+                // Keep the [AI generated] text but maybe style it slightly
+                claimEl.innerHTML = incident.claim.replace(/\[AI generated\]/g, '<span style="color:var(--accent-orange);font-weight:600;font-size:0.8rem;background:rgba(255,140,0,0.1);padding:2px 6px;border-radius:4px;margin-right:6px;">AI OSINT Summary</span>');
+            } else {
+                claimEl.innerHTML = '<i style="color: var(--text-muted);">No detailed claim or summary was provided.</i>';
+            }
+
+            // Action Links
+            const linkCon = document.getElementById('modalLinkContainer');
+            if (incident.url) {
+                if (incident.url.includes('.onion')) {
+                    linkCon.innerHTML = `<button onclick="alert('Raw Dark Web URL detected. Connecting to Tor nodes is prohibited for safety.\\nURL: ${incident.url}');" class="onion-warning" style="cursor:pointer; border:1px solid rgba(255,61,61,0.3); padding: 0.75rem 1.25rem;"><i class="fas fa-exclamation-triangle"></i> VIEW .ONION SOURCE</button>`;
+                } else {
+                    linkCon.innerHTML = `<a href="${incident.url}" target="_blank" rel="noopener noreferrer" class="safe-link" style="padding: 0.75rem 1.25rem; font-size:0.9rem;"><i class="fas fa-external-link-alt"></i> View OSINT Source</a>`;
+                }
+            } else {
+                linkCon.innerHTML = `<span style="color:var(--text-muted); font-size:0.85rem;">No external reference link available</span>`;
+            }
+
+            modalBackdrop.classList.add('active');
+            document.body.style.overflow = 'hidden'; // prevent scrolling
+        }
+
+        function closeIncidentModal() {
+            modalBackdrop.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close on outside click
+        window.onclick = function(event) {
+            if (event.target == modalBackdrop) {
+                closeIncidentModal();
+            }
+        }
     </script>
 </body>
 </html>
