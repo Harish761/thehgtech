@@ -1429,6 +1429,29 @@
                                 Start Assessment <i class="fas fa-arrow-right"></i>
                             </a>
                         </article>
+
+                        <!-- Slide 8: Hacker Chatter OSINT -->
+                        <article class="feature-slide" data-index="8" data-accent="#8a2be2"
+                            style="position: absolute; inset: 0; padding: 2.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; pointer-events: none;">
+                            <div class="feature-icon"
+                                style="width: 64px; height: 64px; border-radius: 16px; background: rgba(138, 43, 226, 0.1); border: 1px solid rgba(138, 43, 226, 0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                                <i class="fas fa-search" style="font-size: 1.75rem; color: #8a2be2;"></i>
+                            </div>
+                            <h2
+                                style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0 0 0.75rem 0; background: linear-gradient(135deg, #8a2be2, #6b21a8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                Hacker Chatter OSINT Engine
+                            </h2>
+                            <p
+                                style="font-size: 1rem; color: #a0a0a0; margin: 0 0 1.5rem 0; max-width: 550px; line-height: 1.6;">
+                                Real-time, searchable OSINT database tracking global ransomware victims, active threat actors, and dark web data leak evidence.
+                            </p>
+                            <a href="/hacker-chatter.html" class="feature-cta"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; background: linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(138, 43, 226, 0.1)); border: 1px solid rgba(138, 43, 226, 0.4); color: #8a2be2; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='rgba(138, 43, 226, 0.25)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(138, 43, 226, 0.3)';"
+                                onmouseout="this.style.background='linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(138, 43, 226, 0.1))'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                                Search Intel <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </article>
                     </div>
 
                     <!-- Navigation Dots -->
@@ -1458,6 +1481,9 @@
                         <button class="nav-dot" data-index="7" aria-label="GRC Assessment Engine" aria-selected="false"
                             role="tab"
                             style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #555; cursor: pointer; transition: all 0.3s ease; opacity: 0.5;"></button>
+                        <button class="nav-dot" data-index="8" aria-label="Hacker Chatter" aria-selected="false"
+                            role="tab"
+                            style="width: 10px; height: 10px; border-radius: 50%; border: none; background: #555; cursor: pointer; transition: all 0.3s ease; opacity: 0.5;"></button>
                     </div>
                 </div>
 
@@ -1469,7 +1495,7 @@
                         const slides = document.querySelectorAll('.feature-slide');
                         const dots = document.querySelectorAll('.nav-dot');
                         const totalSlides = slides.length;
-                        const accentColors = ['#00d9ff', '#FF3D3D', '#8b5cf6', '#10b981', '#FF6B35', '#f59e0b', '#ec4899'];
+                        const accentColors = ['#00d9ff', '#FF3D3D', '#8b5cf6', '#10b981', '#FF6B35', '#f59e0b', '#ec4899', '#10B981', '#8a2be2'];
 
                         function showSlide(index) {
                             // Hide all slides
