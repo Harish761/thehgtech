@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-04-16T13:46:06.494643",
+  "last_updated": "2026-04-17T02:37:50.896552",
   "period": "Last 7 days",
-  "total_groups": 28,
-  "total_victims": 300,
+  "total_groups": 27,
+  "total_victims": 290,
   "groups": [
     {
       "name": "Lockbit5",
@@ -89,8 +89,8 @@
         0,
         0,
         0,
-        0,
         54,
+        0,
         0,
         0
       ]
@@ -178,12 +178,12 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         1,
         5,
         24,
         6,
-        2
+        2,
+        0
       ]
     },
     {
@@ -269,11 +269,11 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         3,
         0,
         2,
         30,
+        0,
         0
       ]
     },
@@ -356,12 +356,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        12,
         0,
         0,
         7,
         0,
         6,
+        0,
         0
       ]
     },
@@ -447,12 +447,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        2,
         0,
         0,
         1,
         8,
         8,
+        0,
         0
       ]
     },
@@ -540,8 +540,8 @@
         0,
         0,
         0,
-        0,
         19,
+        0,
         0,
         0
       ]
@@ -628,16 +628,16 @@
       "daily_counts": [
         0,
         0,
-        0,
         8,
         6,
         2,
-        2
+        2,
+        0
       ]
     },
     {
       "name": "Krybit",
-      "count": 15,
+      "count": 14,
       "victims": [
         {
           "name": "Hacked 0APT",
@@ -716,11 +716,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         1,
         1,
         0,
         12,
+        0,
         0,
         0
       ]
@@ -812,79 +812,7 @@
         0,
         0,
         0,
-        0,
-        10
-      ]
-    },
-    {
-      "name": "Incransom",
-      "count": 8,
-      "victims": [
-        {
-          "name": "bdac.com.au",
-          "date": "2026-04-12T23:59:39+00:00",
-          "url": "https://www.ransomware.live/id/YmRhYy5jb20uYXVAaW5jcmFuc29t",
-          "discovered_date": "2026-04-12T23:59:39+00:00"
-        },
-        {
-          "name": "Straten & Kollegen",
-          "date": "2026-04-12T13:28:25+00:00",
-          "url": "https://www.ransomware.live/id/U3RyYXRlbiAmIEtvbGxlZ2VuQGluY3JhbnNvbQ==",
-          "discovered_date": "2026-04-12T13:28:25+00:00"
-        },
-        {
-          "name": "mastercom.com.au",
-          "date": "2026-04-11T23:59:00+00:00",
-          "url": "https://www.ransomware.live/id/bWFzdGVyY29tLmNvbS5hdUBpbmNyYW5zb20=",
-          "discovered_date": "2026-04-11T23:59:00+00:00"
-        },
-        {
-          "name": "morgancountyga.gov",
-          "date": "2026-04-11T23:58:27+00:00",
-          "url": "https://www.ransomware.live/id/bW9yZ2FuY291bnR5Z2EuZ292QGluY3JhbnNvbQ==",
-          "discovered_date": "2026-04-11T23:58:27+00:00"
-        },
-        {
-          "name": "www.campbell.edu",
-          "date": "2026-04-11T02:17:14+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LmNhbXBiZWxsLmVkdUBpbmNyYW5zb20=",
-          "discovered_date": "2026-04-11T02:17:14+00:00"
-        },
-        {
-          "name": "wright-ryan.com",
-          "date": "2026-04-10T18:38:03+00:00",
-          "url": "https://www.ransomware.live/id/d3JpZ2h0LXJ5YW4uY29tQGluY3JhbnNvbQ==",
-          "discovered_date": "2026-04-10T18:38:03+00:00"
-        },
-        {
-          "name": "martek co ltd.",
-          "date": "2026-04-10T03:42:29+00:00",
-          "url": "https://www.ransomware.live/id/bWFydGVrIGNvIGx0ZC5AaW5jcmFuc29t",
-          "discovered_date": "2026-04-10T03:42:29+00:00"
-        },
-        {
-          "name": "Kannarr Eye Care",
-          "date": "2026-04-10T00:33:02+00:00",
-          "url": "https://www.ransomware.live/id/S2FubmFyciBFeWUgQ2FyZUBpbmNyYW5zb20=",
-          "discovered_date": "2026-04-10T00:33:02+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "AU",
-        "DE",
-        "TW",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        3,
-        3,
-        2,
-        0,
-        0,
-        0,
+        10,
         0
       ]
     },
@@ -951,188 +879,77 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         8,
         0,
         0,
         0,
+        0,
         0
       ]
     },
     {
-      "name": "Pear",
+      "name": "Incransom",
       "count": 7,
       "victims": [
         {
-          "name": "Colorado Pulmonary Intensivists",
-          "date": "2026-04-13T20:08:32+00:00",
-          "url": "https://www.ransomware.live/id/Q29sb3JhZG8gUHVsbW9uYXJ5IEludGVuc2l2aXN0c0BwZWFy",
-          "discovered_date": "2026-04-13T20:08:32+00:00"
+          "name": "bdac.com.au",
+          "date": "2026-04-12T23:59:39+00:00",
+          "url": "https://www.ransomware.live/id/YmRhYy5jb20uYXVAaW5jcmFuc29t",
+          "discovered_date": "2026-04-12T23:59:39+00:00"
         },
         {
-          "name": "Arkansas Oral & Maxillofacial Surgeons",
-          "date": "2026-04-10T13:21:23+00:00",
-          "url": "https://www.ransomware.live/id/QXJrYW5zYXMgT3JhbCAmIE1heGlsbG9mYWNpYWwgU3VyZ2VvbnNAcGVhcg==",
-          "discovered_date": "2026-04-10T13:21:23+00:00"
+          "name": "Straten & Kollegen",
+          "date": "2026-04-12T13:28:25+00:00",
+          "url": "https://www.ransomware.live/id/U3RyYXRlbiAmIEtvbGxlZ2VuQGluY3JhbnNvbQ==",
+          "discovered_date": "2026-04-12T13:28:25+00:00"
         },
         {
-          "name": "Colonial Presbyterian Church",
-          "date": "2026-04-10T13:20:34+00:00",
-          "url": "https://www.ransomware.live/id/Q29sb25pYWwgUHJlc2J5dGVyaWFuIENodXJjaEBwZWFy",
-          "discovered_date": "2026-04-10T13:20:34+00:00"
+          "name": "mastercom.com.au",
+          "date": "2026-04-11T23:59:00+00:00",
+          "url": "https://www.ransomware.live/id/bWFzdGVyY29tLmNvbS5hdUBpbmNyYW5zb20=",
+          "discovered_date": "2026-04-11T23:59:00+00:00"
         },
         {
-          "name": "Siegel Lewitter Malkani",
-          "date": "2026-04-09T16:54:31+00:00",
-          "url": "https://www.ransomware.live/id/U2llZ2VsIExld2l0dGVyIE1hbGthbmlAcGVhcg==",
-          "discovered_date": "2026-04-09T16:54:31+00:00"
+          "name": "morgancountyga.gov",
+          "date": "2026-04-11T23:58:27+00:00",
+          "url": "https://www.ransomware.live/id/bW9yZ2FuY291bnR5Z2EuZ292QGluY3JhbnNvbQ==",
+          "discovered_date": "2026-04-11T23:58:27+00:00"
         },
         {
-          "name": "Family Psychological Associates",
-          "date": "2026-04-09T16:53:47+00:00",
-          "url": "https://www.ransomware.live/id/RmFtaWx5IFBzeWNob2xvZ2ljYWwgQXNzb2NpYXRlc0BwZWFy",
-          "discovered_date": "2026-04-09T16:53:47+00:00"
+          "name": "www.campbell.edu",
+          "date": "2026-04-11T02:17:14+00:00",
+          "url": "https://www.ransomware.live/id/d3d3LmNhbXBiZWxsLmVkdUBpbmNyYW5zb20=",
+          "discovered_date": "2026-04-11T02:17:14+00:00"
         },
         {
-          "name": "Powell, Powell & Powell, P.A.",
-          "date": "2026-04-09T16:53:04+00:00",
-          "url": "https://www.ransomware.live/id/UG93ZWxsLCBQb3dlbGwgJiBQb3dlbGwsIFAuQS5AcGVhcg==",
-          "discovered_date": "2026-04-09T16:53:04+00:00"
+          "name": "wright-ryan.com",
+          "date": "2026-04-10T18:38:03+00:00",
+          "url": "https://www.ransomware.live/id/d3JpZ2h0LXJ5YW4uY29tQGluY3JhbnNvbQ==",
+          "discovered_date": "2026-04-10T18:38:03+00:00"
         },
         {
-          "name": "The McLamb Group, Inc",
-          "date": "2026-04-09T16:52:24+00:00",
-          "url": "https://www.ransomware.live/id/VGhlIE1jTGFtYiBHcm91cCwgSW5jQHBlYXI=",
-          "discovered_date": "2026-04-09T16:52:24+00:00"
+          "name": "martek co ltd.",
+          "date": "2026-04-10T03:42:29+00:00",
+          "url": "https://www.ransomware.live/id/bWFydGVrIGNvIGx0ZC5AaW5jcmFuc29t",
+          "discovered_date": "2026-04-10T03:42:29+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        2,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Silentransomgroup",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Harris Beach Murtha",
-          "date": "2026-04-15 22:25:48.649042",
-          "url": "",
-          "discovered_date": "2026-04-15T22:25:48.649042"
-        },
-        {
-          "name": "Harris Beach Murtha",
-          "date": "2026-04-15T22:25:48+00:00",
-          "url": "https://www.ransomware.live/id/SGFycmlzIEJlYWNoIE11cnRoYUBTaWxlbnRSYW5zb21Hcm91cA==",
-          "discovered_date": "2026-04-15T22:25:48+00:00"
-        },
-        {
-          "name": "T..t Ste..ius & Ho.i.ter LLP",
-          "date": "2026-04-13T16:20:17+00:00",
-          "url": "https://www.ransomware.live/id/VC4udCBTdGUuLml1cyAmIEhvLmkudGVyIExMUEBTaWxlbnRSYW5zb21Hcm91cA==",
-          "discovered_date": "2026-04-13T16:20:17+00:00"
-        },
-        {
-          "name": "T..t Ste..ius & Ho..ter LLP",
-          "date": "2026-04-10T15:26:22+00:00",
-          "url": "https://www.ransomware.live/id/VC4udCBTdGUuLml1cyAmIEhvLi50ZXIgTExQQFNpbGVudFJhbnNvbUdyb3Vw",
-          "discovered_date": "2026-04-10T15:26:22+00:00"
-        },
-        {
-          "name": "Goulston & Storrs",
-          "date": "2026-04-10T00:58:38+00:00",
-          "url": "https://www.ransomware.live/id/R291bHN0b24gJiBTdG9ycnNAU2lsZW50UmFuc29tR3JvdXA=",
-          "discovered_date": "2026-04-10T00:58:38+00:00"
-        },
-        {
-          "name": "Cox, Castle & Nicholson LLP",
-          "date": "2026-04-09T21:18:11+00:00",
-          "url": "https://www.ransomware.live/id/Q294LCBDYXN0bGUgJiBOaWNob2xzb24gTExQQFNpbGVudFJhbnNvbUdyb3Vw",
-          "discovered_date": "2026-04-09T21:18:11+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services"
-      ],
-      "countries": [
-        "NZ",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        2,
-        0,
-        0,
-        1,
-        0,
-        2,
-        0
-      ]
-    },
-    {
-      "name": "Kairos",
-      "count": 5,
-      "victims": [
-        {
-          "name": "FriendlyCare Pharmacy",
-          "date": "2026-04-15 20:47:05.756189",
-          "url": "",
-          "discovered_date": "2026-04-15T20:47:05.756189"
-        },
-        {
-          "name": "FriendlyCare Pharmacy",
-          "date": "2026-04-15T20:47:05+00:00",
-          "url": "https://www.ransomware.live/id/RnJpZW5kbHlDYXJlIFBoYXJtYWN5QGthaXJvcw==",
-          "discovered_date": "2026-04-15T20:47:05+00:00"
-        },
-        {
-          "name": "Pullen Moving",
-          "date": "2026-04-13T21:02:39+00:00",
-          "url": "https://www.ransomware.live/id/UHVsbGVuIE1vdmluZ0BrYWlyb3M=",
-          "discovered_date": "2026-04-13T21:02:39+00:00"
-        },
-        {
-          "name": "Colonial Presbyterian Church",
-          "date": "2026-04-13T19:36:31+00:00",
-          "url": "https://www.ransomware.live/id/Q29sb25pYWwgUHJlc2J5dGVyaWFuIENodXJjaEBrYWlyb3M=",
-          "discovered_date": "2026-04-13T19:36:31+00:00"
-        },
-        {
-          "name": "South Florida Injury Centers",
-          "date": "2026-04-09T20:42:16+00:00",
-          "url": "https://www.ransomware.live/id/U291dGggRmxvcmlkYSBJbmp1cnkgQ2VudGVyc0BrYWlyb3M=",
-          "discovered_date": "2026-04-09T20:42:16+00:00"
-        }
-      ],
-      "industries": [
-        "Healthcare"
-      ],
-      "countries": [
         "AU",
+        "DE",
+        "TW",
         "US"
       ],
-      "trend": "down",
-      "trend_percentage": -5,
+      "trend": "stable",
+      "trend_percentage": 0,
       "daily_counts": [
-        0,
-        0,
-        0,
+        3,
         2,
         0,
-        2,
+        0,
+        0,
+        0,
         0
       ]
     },
@@ -1182,11 +999,59 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         4,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Silentransomgroup",
+      "count": 4,
+      "victims": [
+        {
+          "name": "Harris Beach Murtha",
+          "date": "2026-04-15 22:25:48.649042",
+          "url": "",
+          "discovered_date": "2026-04-15T22:25:48.649042"
+        },
+        {
+          "name": "Harris Beach Murtha",
+          "date": "2026-04-15T22:25:48+00:00",
+          "url": "https://www.ransomware.live/id/SGFycmlzIEJlYWNoIE11cnRoYUBTaWxlbnRSYW5zb21Hcm91cA==",
+          "discovered_date": "2026-04-15T22:25:48+00:00"
+        },
+        {
+          "name": "T..t Ste..ius & Ho.i.ter LLP",
+          "date": "2026-04-13T16:20:17+00:00",
+          "url": "https://www.ransomware.live/id/VC4udCBTdGUuLml1cyAmIEhvLmkudGVyIExMUEBTaWxlbnRSYW5zb21Hcm91cA==",
+          "discovered_date": "2026-04-13T16:20:17+00:00"
+        },
+        {
+          "name": "T..t Ste..ius & Ho..ter LLP",
+          "date": "2026-04-10T15:26:22+00:00",
+          "url": "https://www.ransomware.live/id/VC4udCBTdGUuLml1cyAmIEhvLi50ZXIgTExQQFNpbGVudFJhbnNvbUdyb3Vw",
+          "discovered_date": "2026-04-10T15:26:22+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services"
+      ],
+      "countries": [
+        "NZ",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        2,
         0,
         0
       ]
@@ -1234,8 +1099,56 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Kairos",
+      "count": 4,
+      "victims": [
+        {
+          "name": "FriendlyCare Pharmacy",
+          "date": "2026-04-15 20:47:05.756189",
+          "url": "",
+          "discovered_date": "2026-04-15T20:47:05.756189"
+        },
+        {
+          "name": "FriendlyCare Pharmacy",
+          "date": "2026-04-15T20:47:05+00:00",
+          "url": "https://www.ransomware.live/id/RnJpZW5kbHlDYXJlIFBoYXJtYWN5QGthaXJvcw==",
+          "discovered_date": "2026-04-15T20:47:05+00:00"
+        },
+        {
+          "name": "Pullen Moving",
+          "date": "2026-04-13T21:02:39+00:00",
+          "url": "https://www.ransomware.live/id/UHVsbGVuIE1vdmluZ0BrYWlyb3M=",
+          "discovered_date": "2026-04-13T21:02:39+00:00"
+        },
+        {
+          "name": "Colonial Presbyterian Church",
+          "date": "2026-04-13T19:36:31+00:00",
+          "url": "https://www.ransomware.live/id/Q29sb25pYWwgUHJlc2J5dGVyaWFuIENodXJjaEBrYWlyb3M=",
+          "discovered_date": "2026-04-13T19:36:31+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "AU",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
         0
       ]
     },
@@ -1282,8 +1195,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0,
         0
       ]
@@ -1330,9 +1243,9 @@
       "daily_counts": [
         0,
         0,
+        2,
+        2,
         0,
-        2,
-        2,
         0,
         0
       ]
@@ -1377,8 +1290,47 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pear",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Colorado Pulmonary Intensivists",
+          "date": "2026-04-13T20:08:32+00:00",
+          "url": "https://www.ransomware.live/id/Q29sb3JhZG8gUHVsbW9uYXJ5IEludGVuc2l2aXN0c0BwZWFy",
+          "discovered_date": "2026-04-13T20:08:32+00:00"
+        },
+        {
+          "name": "Arkansas Oral & Maxillofacial Surgeons",
+          "date": "2026-04-10T13:21:23+00:00",
+          "url": "https://www.ransomware.live/id/QXJrYW5zYXMgT3JhbCAmIE1heGlsbG9mYWNpYWwgU3VyZ2VvbnNAcGVhcg==",
+          "discovered_date": "2026-04-10T13:21:23+00:00"
+        },
+        {
+          "name": "Colonial Presbyterian Church",
+          "date": "2026-04-10T13:20:34+00:00",
+          "url": "https://www.ransomware.live/id/Q29sb25pYWwgUHJlc2J5dGVyaWFuIENodXJjaEBwZWFy",
+          "discovered_date": "2026-04-10T13:20:34+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        0,
         0,
         0
       ]
@@ -1413,8 +1365,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1447,8 +1399,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1480,8 +1432,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1506,8 +1458,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -1533,8 +1485,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -1560,8 +1512,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -1587,8 +1539,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -1608,33 +1560,6 @@
       "industries": [],
       "countries": [
         "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Insomnia",
-      "count": 1,
-      "victims": [
-        {
-          "name": "United Medical Doctors",
-          "date": "2026-04-09T16:16:31+00:00",
-          "url": "https://www.ransomware.live/id/VW5pdGVkIE1lZGljYWwgRG9jdG9yc0BpbnNvbW5pYQ==",
-          "discovered_date": "2026-04-09T16:16:31+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,

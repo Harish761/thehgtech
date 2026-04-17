@@ -1009,34 +1009,18 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1343",
-      "incident_id": 1343,
-      "title": "ICE AI Resume Screening Error Allegedly Routed Inexperienced Recruits Into Inadequate Training Pathw",
-      "date": "2026-01-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1345",
       "incident_id": 1345,
       "title": "Purported Deepfake Video Allegedly Used to Harass Washington State Patrol Trooper",
       "date": "2026-01-17",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1347",
-      "incident_id": 1347,
-      "title": "Automated Shuttle Bus Was Reportedly Rear-Ended During U.S. Department of Transportation Demonstrati",
-      "date": "2026-01-17",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 129,
+    "total": 127,
     "last7Days": 4,
     "last30Days": 36
   },
-  "lastUpdated": "2026-04-17T02:30:25.291752+05:30"
+  "lastUpdated": "2026-04-17T09:08:03.407559+05:30"
 }
