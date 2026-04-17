@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-04-17T05:15:07.254111",
-  "total_incidents": 27350,
+  "last_updated": "2026-04-17T15:36:27.435946",
+  "total_incidents": 27357,
   "incidents": [
+    {
+      "id": "incransom_treelawoffice.com",
+      "victim_name": "treelawoffice.com",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-04-17 14:48:13.421106",
+      "industry": "Business Services",
+      "website": "treelawoffice.com",
+      "claim": "Tree Law is a Social Security Disability law firm with 25 years of experience, dedicated to representing claimants in their pursuit of Social Security disability benefits. The firm specializes in assisting disabled individuals who are unable to work, guiding them through the entire Social Security process from initial applications to federal court. With a proven track record of helping thousands of clients, Tree Law aims to provide financial and medical benefits to those in need. Their services are available in Yakima and Tri-Cities, WA.\r Employees: 50\r Revenue: $5 Million\r Industry: Law Firms & Legal Services\r Phone Number: (509) 452-1700",
+      "screenshot": "https://images.ransomware.live/victims/df21b7e14af16f97b7f003d6288867dc.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69e1639f8f1d14b743245150",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_bgcsnv.org",
+      "victim_name": "bgcsnv.org",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-04-17 14:47:16.247057",
+      "industry": "Not Found",
+      "website": "bgcsnv.org",
+      "claim": "Boys & Girls Club of Southern Nevada provides a safe and engaging environment for youth through various programs, including early childhood learning, summer camps, and mental health services. With 13 clubhouses across the region, they aim to support children in achieving their potential regardless of their background. The organization encourages community involvement and offers opportunities for volunteering and sponsorship. Their mission is to create a positive impact on the lives of young people in Southern Nevada.\r Employees: 200\r Revenue: 15.3 Million\r Industry: Membership Organizations\r Phone Number: (702) 367-2582",
+      "screenshot": "https://images.ransomware.live/victims/c4dae8096739c89c1acf833edc03d2e1.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69e16db28f1d14b743252555",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_medicalnetworks_cj_gmbh_&_co._kg",
+      "victim_name": "medicalnetworks CJ GmbH & Co. KG",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-04-17 14:42:24.674016",
+      "industry": "Healthcare",
+      "website": "medicalnetworks.de",
+      "claim": "Medicalnetworks specializes in integrated healthcare solutions, offering services such as ascleoncare and Hybrid-DRG billing. Their products are designed to streamline processes for health insurance providers and medical practices. The company aims to enhance the efficiency of healthcare delivery through innovative technology. Their intended clients include healthcare providers and insurance companies seeking to improve their operational workflows",
+      "screenshot": "https://images.ransomware.live/victims/61499c6b87e54fdda82ec2f72c2b8569.png",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=14833707-9066-410f-b6a8-b9db41ec1b4f",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "crypto24_qatar_biomedical_research_institute_(qbri)",
+      "victim_name": "Qatar Biomedical Research Institute (QBRI)",
+      "threat_actor": "crypto24",
+      "date_discovered": "2026-04-17 14:40:02.090670",
+      "industry": "Healthcare",
+      "website": "www.hbku.edu.qa/en/qbri",
+      "claim": "[AI generated] Qatar Biomedical Research Institute (QBRI) is a research institute based in Qatar, operating under Hamad Bin Khalifa University. It focuses on biomedical research in areas such as genomics, diabetes, cancer, and neurological disorders. QBRI aims to advance precision medicine and translational research to address health challenges prevalent in Qatar and the broader region, contributing to the country's science and innovation goals.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_law_offices_of_jamesc_shields",
+      "victim_name": "Law Offices of JamesC Shields",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-17 14:32:50.462250",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "The Law Offices of James C. Shields specializes in bankruptcy, es\ntate planning, and probate services, providing tailored legal sol\nutions to clients in Southern California. With over 15 years of e\nxperience, the firm has assisted thousands in navigating financia\nl difficulties and planning for the future.\n\nWe will upload corporate data soon. Personal data of clients (pas\nsports, DLs, SSNs, death/birth certificates, financials and other\ndocs), detailed financials, court files, investigations, police \nreports, etc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_pharmathek",
+      "victim_name": "Pharmathek",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-17 14:32:47.223858",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Pharmathek specializes in the development, production, and instal\nlation of automated warehouses and robots specifically designed f\nor pharmacies. The company offers innovative technologies, includ\ning the third-generation SINTESI robot, which enhances performanc\ne and user experience with customizable interfaces and smartphone\nconnectivity.\n\nWe will upload corporate data soon. Personal data of clients and \nemployees (passports, contacts and so on), financials, client dat\na, projects, NDAs, etc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_r_roese_contracting",
+      "victim_name": "R Roese Contracting",
+      "threat_actor": "akira",
+      "date_discovered": "2026-04-17 14:32:44.009313",
+      "industry": "Construction",
+      "website": "",
+      "claim": "R. Roese Contracting Company Inc. is a leading provider of underg\nround and aerial construction services, specializing in telecommu\nnications, water and sewer, electric, and gas transmission and di\nstribution.\n\nWe will upload 61gb of corporate data soon. Personal data of empl\noyees (passports, phones, emails and so on), financials, client d\nata, lots of project files, NDAs, etc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "payload_franziskusschule_wilhelmshaven",
       "victim_name": "Franziskusschule Wilhelmshaven",
