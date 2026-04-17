@@ -993,22 +993,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1341",
-      "incident_id": 1341,
-      "title": "Purported Deepfake Advertisement Falsely Depicting Physician Endorsement Used to Sell Lipedema Cream",
-      "date": "2026-01-17",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1342",
-      "incident_id": 1342,
-      "title": "Purported Deepfake Nude Images of Students Circulated Without Consent at Valencia Educational Instit",
-      "date": "2026-01-17",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1345",
       "incident_id": 1345,
       "title": "Purported Deepfake Video Allegedly Used to Harass Washington State Patrol Trooper",
@@ -1018,9 +1002,9 @@
     }
   ],
   "stats": {
-    "total": 127,
+    "total": 125,
     "last7Days": 4,
     "last30Days": 36
   },
-  "lastUpdated": "2026-04-17T15:12:46.755255+05:30"
+  "lastUpdated": "2026-04-17T19:23:59.200080+05:30"
 }

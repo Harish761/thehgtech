@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-04-17T02:37:50.896552",
+  "last_updated": "2026-04-17T13:21:40.631325",
   "period": "Last 7 days",
-  "total_groups": 27,
-  "total_victims": 290,
+  "total_groups": 26,
+  "total_victims": 285,
   "groups": [
     {
       "name": "Lockbit5",
@@ -366,97 +366,6 @@
       ]
     },
     {
-      "name": "Akira",
-      "count": 19,
-      "victims": [
-        {
-          "name": "Fletcher Chrysler Products",
-          "date": "2026-04-15 12:03:36.319097",
-          "url": "",
-          "discovered_date": "2026-04-15T12:03:36.319097"
-        },
-        {
-          "name": "CIR Realty",
-          "date": "2026-04-15 13:29:47.906509",
-          "url": "",
-          "discovered_date": "2026-04-15T13:29:47.906509"
-        },
-        {
-          "name": "Truckload Carriers Association",
-          "date": "2026-04-15 14:58:22.388124",
-          "url": "",
-          "discovered_date": "2026-04-15T14:58:22.388124"
-        },
-        {
-          "name": "R L Larson Excavating",
-          "date": "2026-04-14 12:49:30.564332",
-          "url": "",
-          "discovered_date": "2026-04-14T12:49:30.564332"
-        },
-        {
-          "name": "ServiceMaster Clean services",
-          "date": "2026-04-14 14:07:30.140920",
-          "url": "",
-          "discovered_date": "2026-04-14T14:07:30.140920"
-        },
-        {
-          "name": "La Tuilerie",
-          "date": "2026-04-14 15:35:15.460685",
-          "url": "",
-          "discovered_date": "2026-04-14T15:35:15.460685"
-        },
-        {
-          "name": "CSA SpA",
-          "date": "2026-04-14 15:35:18.487464",
-          "url": "",
-          "discovered_date": "2026-04-14T15:35:18.487464"
-        },
-        {
-          "name": "INDESMALLA",
-          "date": "2026-04-15 12:03:39.340762",
-          "url": "",
-          "discovered_date": "2026-04-15T12:03:39.340762"
-        },
-        {
-          "name": "Truckload Carriers Association",
-          "date": "2026-04-15T14:58:22+00:00",
-          "url": "https://www.ransomware.live/id/VHJ1Y2tsb2FkIENhcnJpZXJzIEFzc29jaWF0aW9uQGFraXJh",
-          "discovered_date": "2026-04-15T14:58:22+00:00"
-        },
-        {
-          "name": "CIR Realty",
-          "date": "2026-04-15T13:29:47+00:00",
-          "url": "https://www.ransomware.live/id/Q0lSIFJlYWx0eUBha2lyYQ==",
-          "discovered_date": "2026-04-15T13:29:47+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Construction",
-        "Consumer Services",
-        "Manufacturing",
-        "Not Found"
-      ],
-      "countries": [
-        "AR",
-        "CA",
-        "IT",
-        "N/A",
-        "QC"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        1,
-        8,
-        8,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Thegentlemen",
       "count": 19,
       "victims": [
@@ -632,6 +541,97 @@
         6,
         2,
         2,
+        0
+      ]
+    },
+    {
+      "name": "Akira",
+      "count": 18,
+      "victims": [
+        {
+          "name": "Fletcher Chrysler Products",
+          "date": "2026-04-15 12:03:36.319097",
+          "url": "",
+          "discovered_date": "2026-04-15T12:03:36.319097"
+        },
+        {
+          "name": "CIR Realty",
+          "date": "2026-04-15 13:29:47.906509",
+          "url": "",
+          "discovered_date": "2026-04-15T13:29:47.906509"
+        },
+        {
+          "name": "Truckload Carriers Association",
+          "date": "2026-04-15 14:58:22.388124",
+          "url": "",
+          "discovered_date": "2026-04-15T14:58:22.388124"
+        },
+        {
+          "name": "R L Larson Excavating",
+          "date": "2026-04-14 12:49:30.564332",
+          "url": "",
+          "discovered_date": "2026-04-14T12:49:30.564332"
+        },
+        {
+          "name": "ServiceMaster Clean services",
+          "date": "2026-04-14 14:07:30.140920",
+          "url": "",
+          "discovered_date": "2026-04-14T14:07:30.140920"
+        },
+        {
+          "name": "La Tuilerie",
+          "date": "2026-04-14 15:35:15.460685",
+          "url": "",
+          "discovered_date": "2026-04-14T15:35:15.460685"
+        },
+        {
+          "name": "CSA SpA",
+          "date": "2026-04-14 15:35:18.487464",
+          "url": "",
+          "discovered_date": "2026-04-14T15:35:18.487464"
+        },
+        {
+          "name": "INDESMALLA",
+          "date": "2026-04-15 12:03:39.340762",
+          "url": "",
+          "discovered_date": "2026-04-15T12:03:39.340762"
+        },
+        {
+          "name": "Truckload Carriers Association",
+          "date": "2026-04-15T14:58:22+00:00",
+          "url": "https://www.ransomware.live/id/VHJ1Y2tsb2FkIENhcnJpZXJzIEFzc29jaWF0aW9uQGFraXJh",
+          "discovered_date": "2026-04-15T14:58:22+00:00"
+        },
+        {
+          "name": "CIR Realty",
+          "date": "2026-04-15T13:29:47+00:00",
+          "url": "https://www.ransomware.live/id/Q0lSIFJlYWx0eUBha2lyYQ==",
+          "discovered_date": "2026-04-15T13:29:47+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Construction",
+        "Consumer Services",
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "AR",
+        "CA",
+        "IT",
+        "N/A",
+        "QC"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        8,
+        8,
+        0,
         0
       ]
     },
@@ -889,7 +889,7 @@
     },
     {
       "name": "Incransom",
-      "count": 7,
+      "count": 6,
       "victims": [
         {
           "name": "bdac.com.au",
@@ -926,19 +926,12 @@
           "date": "2026-04-10T18:38:03+00:00",
           "url": "https://www.ransomware.live/id/d3JpZ2h0LXJ5YW4uY29tQGluY3JhbnNvbQ==",
           "discovered_date": "2026-04-10T18:38:03+00:00"
-        },
-        {
-          "name": "martek co ltd.",
-          "date": "2026-04-10T03:42:29+00:00",
-          "url": "https://www.ransomware.live/id/bWFydGVrIGNvIGx0ZC5AaW5jcmFuc29t",
-          "discovered_date": "2026-04-10T03:42:29+00:00"
         }
       ],
       "industries": [],
       "countries": [
         "AU",
         "DE",
-        "TW",
         "US"
       ],
       "trend": "stable",
@@ -1297,45 +1290,6 @@
       ]
     },
     {
-      "name": "Pear",
-      "count": 3,
-      "victims": [
-        {
-          "name": "Colorado Pulmonary Intensivists",
-          "date": "2026-04-13T20:08:32+00:00",
-          "url": "https://www.ransomware.live/id/Q29sb3JhZG8gUHVsbW9uYXJ5IEludGVuc2l2aXN0c0BwZWFy",
-          "discovered_date": "2026-04-13T20:08:32+00:00"
-        },
-        {
-          "name": "Arkansas Oral & Maxillofacial Surgeons",
-          "date": "2026-04-10T13:21:23+00:00",
-          "url": "https://www.ransomware.live/id/QXJrYW5zYXMgT3JhbCAmIE1heGlsbG9mYWNpYWwgU3VyZ2VvbnNAcGVhcg==",
-          "discovered_date": "2026-04-10T13:21:23+00:00"
-        },
-        {
-          "name": "Colonial Presbyterian Church",
-          "date": "2026-04-10T13:20:34+00:00",
-          "url": "https://www.ransomware.live/id/Q29sb25pYWwgUHJlc2J5dGVyaWFuIENodXJjaEBwZWFy",
-          "discovered_date": "2026-04-10T13:20:34+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Interlock",
       "count": 2,
       "victims": [
@@ -1466,6 +1420,33 @@
       ]
     },
     {
+      "name": "Pear",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Colorado Pulmonary Intensivists",
+          "date": "2026-04-13T20:08:32+00:00",
+          "url": "https://www.ransomware.live/id/Q29sb3JhZG8gUHVsbW9uYXJ5IEludGVuc2l2aXN0c0BwZWFy",
+          "discovered_date": "2026-04-13T20:08:32+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Securotrop",
       "count": 1,
       "victims": [
@@ -1540,33 +1521,6 @@
         0,
         0,
         1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Ailock",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Alvi Associates",
-          "date": "2026-04-10T09:28:35+00:00",
-          "url": "https://www.ransomware.live/id/QWx2aSBBc3NvY2lhdGVzQEFpTG9jaw==",
-          "discovered_date": "2026-04-10T09:28:35+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
         0,
         0,
         0,
