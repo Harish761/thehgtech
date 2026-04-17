@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 17 2026",
+            "headline": "Apache ActiveMQ Flaw Exploited—CISA Urges Immediate Action",
+            "title": "Apache ActiveMQ CVE-2026-34197 Added to CISA KEV Amid Active Exploitation",
+            "content": "A critical vulnerability in Apache ActiveMQ Classic, tracked as CVE-2026-34197, has been actively exploited, prompting the U.S. Cybersecurity and Infrastructure Security Agency (CISA) to add it to its Known Exploited Vulnerabilities (KEV) catalog. This flaw, with a CVSS score of 8.8, allows remote attackers to execute arbitrary code on affected systems. Organizations using Apache ActiveMQ Classic are at risk, particularly those that have not yet applied available patches. This vulnerability highlights the persistent targeting of widely-used open-source software by threat actors. CISA advises immediate patching to mitigate potential exploitation risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Microsoft Defender &quot;RedSun&quot; Zero-Day PoC Released Online",
+            "title": "New Microsoft Defender “RedSun” Zero-Day PoC Grants SYSTEM Privileges",
+            "content": "A proof-of-concept (PoC) exploit for a zero-day vulnerability in Microsoft Defender, dubbed &quot;RedSun,&quot; has been released by a researcher known as &quot;Chaotic Eclipse.&quot; This vulnerability allows attackers to gain SYSTEM privileges, posing a significant risk to systems relying on Microsoft Defender for protection. The release is part of a protest against Microsoft&#x27;s handling of vulnerabilities reported by researchers. Organizations using Microsoft Defender should be aware of this threat and monitor for any unusual activity. This incident underscores ongoing tensions between tech companies and security researchers over vulnerability disclosure practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/new-microsoft-defender-redsun-zero-day-poc-grants-system-privileges/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "PowMix Botnet Targets Czech Workforce with Randomized Traffic",
+            "title": "Newly Discovered PowMix Botnet Hits Czech Workers Using Randomized C2 Traffic",
+            "content": "Cybersecurity researchers have identified a new botnet, named PowMix, actively targeting workers in the Czech Republic since December 2025. PowMix utilizes randomized command-and-control (C2) beaconing intervals to evade detection, making it a sophisticated threat. This botnet&#x27;s activity highlights the increasing use of advanced techniques by cybercriminals to target specific regions and sectors. Organizations in the Czech Republic should enhance their network monitoring and implement robust security measures to detect and mitigate such threats. The discovery of PowMix adds to the growing list of region-specific cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/newly-discovered-powmix-botnet-hits.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Marimo Flaw Exploited to Spread NKAbuse Malware via Hugging Face",
+            "title": "Hackers Exploit Marimo Flaw to Deploy NKAbuse Malware from Hugging Face",
+            "content": "Hackers are exploiting a critical vulnerability in the Marimo reactive Python notebook to deploy NKAbuse malware, which is hosted on Hugging Face Spaces. This exploitation allows attackers to execute malicious code on vulnerable systems, posing a significant threat to users of Marimo notebooks. The use of Hugging Face Spaces for malware distribution highlights the evolving tactics of cybercriminals in leveraging popular platforms for malicious purposes. Users of Marimo are advised to apply security patches immediately and monitor for any signs of compromise. This incident underscores the need for vigilance in securing development environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-marimo-flaw-to-deploy-nkabuse-malware-from-hugging-face/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "McGraw Hill Breach Exposes 13.5M Accounts—Data Leaked",
+            "title": "Data Breach at Edtech Giant McGraw Hill Affects 13.5 Million Accounts",
+            "content": "The ShinyHunters extortion group has leaked data from 13.5 million user accounts following a breach of McGraw Hill&#x27;s Salesforce environment. This breach exposes sensitive information, potentially impacting students, educators, and institutions relying on McGraw Hill&#x27;s services. The incident highlights the ongoing threat posed by cybercriminal groups targeting large databases for extortion and data theft. Affected users should be vigilant for phishing attempts and consider changing passwords associated with their accounts. This breach serves as a reminder of the critical need for robust security measures in protecting educational data.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/data-breach-at-edtech-giant-mcgraw-hill-affects-135-million-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Cisco Patches Critical Webex, ISE Vulnerabilities—Update Now",
+            "title": "Cisco Patches Critical Vulnerabilities in Webex, ISE",
+            "content": "Cisco has released patches for critical vulnerabilities in its Webex and Identity Services Engine (ISE) products, which could be exploited remotely to impersonate users or execute arbitrary commands on the underlying operating system. These vulnerabilities pose a significant risk to organizations using these Cisco products, particularly those that have not yet applied the security updates. The timely release of patches underscores Cisco&#x27;s commitment to addressing security flaws promptly. Users are urged to update their systems immediately to protect against potential exploitation. This action is crucial to maintaining the integrity and security of enterprise communications and identity management systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-vulnerabilities-in-webex-ise/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 16 2026",
             "headline": "17-Year-Old Excel RCE Exploited—Patch Systems Immediately",
             "title": "Microsoft Defender 0-Day and Excel RCE Highlight Critical Vulnerabilities",
@@ -76,33 +130,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 14 2026",
-            "headline": "Critical Risks Quadruple—AI Development Fuels Security Gaps",
-            "title": "2026 Report Shows 4x Increase in Critical Security Risks",
-            "content": "OX Security&#x27;s recent analysis of 216 million security findings across 250 organizations reveals a staggering 400% increase in prioritized critical risks, despite a 52% rise in overall alert volume. This surge is attributed to the rapid pace of AI-assisted development, which is outstripping traditional security measures and creating a &quot;velocity gap.&quot; The findings underscore the growing challenge for security teams to manage and mitigate risks in increasingly complex environments. Organizations must enhance their security frameworks and leverage advanced threat detection tools to address these escalating threats effectively.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/analysis-of-216m-security-findings.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "ShowDoc RCE Flaw Exploited—Patch Critical CVE-2025-0520",
-            "title": "ShowDoc RCE Flaw CVE-2025-0520 Actively Exploited on Unpatched Servers",
-            "content": "A critical remote code execution (RCE) vulnerability, CVE-2025-0520, is actively exploited in ShowDoc, a document management service popular in China. The flaw, with a CVSS score of 9.4, allows attackers to execute arbitrary code on unpatched servers, leading to potential data breaches and system compromises. ShowDoc users are at significant risk, especially if their systems remain unpatched. This vulnerability highlights the importance of timely updates and robust security practices in managing document collaboration tools. Administrators should prioritize applying security patches and reviewing access controls to mitigate this threat.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/showdoc-rce-flaw-cve-2025-0520-actively.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "CISA Adds 6 Exploited Flaws—Fortinet, Microsoft, Adobe Affected",
-            "title": "CISA Updates KEV Catalog with 6 New Exploited Vulnerabilities",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added six security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing active exploitation. Notable among these is CVE-2026-21643, an SQL injection vulnerability with a CVSS score of 9.1, affecting Fortinet, Microsoft, and Adobe software. These vulnerabilities pose significant threats to organizations using these platforms, potentially leading to data breaches and unauthorized access. Security teams should prioritize patching these vulnerabilities and reviewing their security postures to protect against exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/cisa-adds-6-known-exploited-flaws-in.html",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 15 2026",
             "headline": "Anthropic Code Leak—AI Firm&#x27;s Source Exposed, Security Concerns Rise",
             "title": "Smashing Security Podcast: Anthropic Leaks Its Own Source Code",
@@ -110,36 +137,63 @@ const websiteContent = {
             "source": "GRAHAM CLULEY",
             "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-463/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "Anthropic&#x27;s MCP Flaw—AI Supply Chains at Risk",
-            "title": "&#x27;By Design&#x27; Flaw in Anthropic&#x27;s MCP Threatens AI Supply Chains",
-            "content": "Researchers have identified a critical flaw in Anthropic&#x27;s Model Context Protocol (MCP) that could enable widespread AI supply chain attacks. This vulnerability allows unsanitized commands to execute silently, potentially leading to full system compromise in AI environments. The flaw poses a significant risk to organizations relying on AI systems for critical operations, as it could be exploited to manipulate AI models or disrupt services. As AI becomes increasingly integrated into enterprise operations, securing the supply chain is paramount. Organizations using Anthropic&#x27;s MCP should review their security measures and apply any available patches or mitigations immediately.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/by-design-flaw-in-mcp-could-enable-widespread-ai-supply-chain-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "CVE-2026-33032—nginx-ui Flaw Allows Server Takeover",
-            "title": "Critical nginx-ui Flaw CVE-2026-33032 Under Active Exploitation",
-            "content": "A critical vulnerability, CVE-2026-33032, in the nginx-ui management tool is being actively exploited, allowing attackers to bypass authentication and take control of Nginx servers. With a CVSS score of 9.8, this flaw represents a severe threat to organizations using nginx-ui for server management. Exploitation of this vulnerability could lead to unauthorized access and potential data breaches. Administrators are urged to apply patches immediately to mitigate the risk of server compromise. This incident underscores the importance of regular security audits and timely updates in maintaining server integrity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "April Patch Tuesday—Critical Fixes for SAP, Adobe, Microsoft",
-            "title": "April Patch Tuesday Addresses Critical Vulnerabilities in Major Software",
-            "content": "April&#x27;s Patch Tuesday has delivered crucial updates for vulnerabilities in products from SAP, Adobe, Microsoft, and Fortinet. Notably, an SQL injection flaw in SAP Business Planning and Consolidation and SAP Business Warehouse (CVE-2026-2) is among the critical issues addressed. These vulnerabilities could allow attackers to execute arbitrary code or access sensitive data. Organizations using affected products should prioritize applying these patches to protect against potential exploits. The consistent emergence of such vulnerabilities highlights the ongoing need for robust patch management strategies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/april-patch-tuesday-fixes-critical.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 16 2026",
+            "headline": "OpenAI Codex Update Challenges Anthropic&#x27;s Claude Code",
+            "title": "OpenAI Enhances Codex with Image Generation and Memory Capabilities",
+            "content": "OpenAI has released a significant update to its Codex system, enhancing its capabilities to include image generation and memory retention from past interactions. This update positions Codex as a formidable competitor to Anthropic&#x27;s Claude Code, which has seen considerable success in the AI development space. The new features allow Codex to interact more dynamically with users&#x27; computers, potentially streamlining coding and development tasks. As the rivalry between OpenAI and Anthropic heats up, developers and tech companies may benefit from increased innovation and improved AI tools. Users are encouraged to explore the updated Codex functionalities to leverage these advancements in their projects.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Google Chrome AI Mode—Open Links Side by Side",
+            "title": "Google Enhances Chrome&#x27;s AI Mode with Side-by-Side Link Viewing",
+            "content": "Google has upgraded the AI Mode in its Chrome browser, introducing a feature that allows users to open links alongside their chat interface. This update eliminates the need to open new tabs, enabling users to view source websites side by side with AI Mode. This functionality is designed to facilitate seamless follow-up questioning and enhance user experience by maintaining context. The update is part of Google&#x27;s ongoing efforts to integrate AI more deeply into everyday browsing activities. Users should update their Chrome browser to access this new feature and improve their workflow efficiency.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/913109/google-ai-mode-tabs-sources",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Salesforce Unveils Headless 360—AI Agents Gain Full Control",
+            "title": "Salesforce Launches Headless 360 for Comprehensive AI Agent Integration",
+            "content": "Salesforce has announced &quot;Headless 360,&quot; a transformative architectural update that exposes all platform capabilities as APIs, MCP tools, or CLI commands. This initiative allows AI agents to operate Salesforce&#x27;s entire system autonomously, marking the most significant change in the company&#x27;s 27-year history. By turning its platform into a fully accessible infrastructure, Salesforce aims to enhance automation and efficiency for its enterprise clients. Organizations using Salesforce can expect improved integration and operational capabilities, potentially reducing manual intervention and increasing productivity. Users should explore these new API offerings to fully leverage AI-driven automation.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/salesforce-launches-headless-360-to-turn-its-entire-platform-into-infrastructure-for-ai-agents",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "OpenAI&#x27;s GPT-Rosalind Targets Life Sciences Innovation",
+            "title": "OpenAI Introduces GPT-Rosalind for Life Sciences and Codex Plugin Expansion",
+            "content": "OpenAI has launched GPT-Rosalind, a new model tailored for the life sciences sector, offering limited access to researchers and developers. This model aims to streamline the complex process of drug development, which traditionally spans over a decade and requires substantial investment. Additionally, OpenAI has expanded its Codex plugin on GitHub, broadening its applicability for developers. These initiatives are part of OpenAI&#x27;s strategy to address the fragmented and challenging nature of biological research. Life sciences professionals are encouraged to explore GPT-Rosalind to accelerate research and development efforts.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "UK Invests $675M in Sovereign AI Fund for Startups",
+            "title": "UK Government Launches $675 Million Fund to Boost AI Independence",
+            "content": "The UK government has announced the creation of a $675 million Sovereign AI Fund aimed at reducing the nation&#x27;s reliance on foreign technology. This fund will support domestic AI startups, fostering innovation and growth within the UK&#x27;s tech sector. The initiative is part of a broader strategy to enhance national security and economic resilience by nurturing homegrown technological capabilities. UK-based AI startups are encouraged to apply for funding to accelerate their development and contribute to the country&#x27;s technological independence.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/the-uk-launches-its-dollar675-million-sovereign-ai-fund/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Factory Reaches $1.5B Valuation with $150M Funding Round",
+            "title": "Factory Secures $150 Million to Enhance AI Coding for Enterprises",
+            "content": "Factory, a startup focused on developing AI-driven coding solutions for enterprises, has achieved a $1.5 billion valuation following a successful $150 million funding round led by Khosla Ventures. Founded three years ago, Factory aims to revolutionize enterprise software development by automating coding processes and improving efficiency. The new funding will be used to expand its product offerings and scale operations to meet growing demand. Enterprises seeking to streamline their development processes should consider integrating Factory&#x27;s AI solutions to enhance productivity and innovation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/16/factory-hits-1-5b-valuation-to-build-ai-coding-for-enterprises/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 16 2026",
             "headline": "Character.AI&#x27;s Books Mode—Interactive Reading for Teens",
@@ -147,33 +201,6 @@ const websiteContent = {
             "content": "Character.AI has introduced a new &quot;Books&quot; mode, allowing users to engage in structured roleplaying within familiar literary worlds. This move comes as the company faces scrutiny over its chatbots&#x27; interactions with teenagers, prompting a shift towards safer, more controlled experiences. The Books mode offers a guided roleplay environment, potentially reducing the risks associated with unmoderated chatbot conversations. This development reflects a growing trend in AI applications focusing on user safety and content moderation. Users can now explore narratives interactively, with Character.AI aiming to balance engagement with responsibility.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/912997/character-ai-books-mode",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "Master Research with ChatGPT—New Tools and Techniques",
-            "title": "OpenAI Enhances Research Capabilities with ChatGPT for In-Depth Analysis",
-            "content": "OpenAI has unveiled new methodologies for conducting research using ChatGPT, emphasizing search capabilities and deep research techniques. These enhancements enable users to access up-to-date information, critically analyze sources, and generate structured insights efficiently. The update aims to streamline the research process for professionals who rely on AI for data analysis and decision-making. This initiative aligns with the broader trend of integrating AI into research workflows, offering a competitive edge in information gathering and synthesis. Users are encouraged to explore these tools to enhance their research productivity.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/search-and-deep-research",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "AI in Finance—Secure Deployment Resources Released",
-            "title": "OpenAI Provides Comprehensive AI Resources for Financial Services",
-            "content": "OpenAI has released a suite of resources tailored for the financial services sector, including prompt packs, GPTs, and deployment guides. These tools are designed to help financial institutions implement and scale AI solutions securely, addressing industry-specific challenges. The resources aim to enhance operational efficiency and innovation while maintaining stringent security standards. This release underscores the increasing adoption of AI in finance, where institutions seek to leverage technology for competitive advantage. Financial professionals are advised to utilize these resources to optimize their AI strategies.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/financial-services",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 10 2026",
-            "headline": "OpenAI Secures Systems Post-Axios Tool Compromise",
-            "title": "OpenAI Responds to Axios Developer Tool Supply Chain Attack",
-            "content": "In response to a supply chain attack involving the Axios developer tool, OpenAI has taken decisive measures to secure its systems. The company rotated macOS code signing certificates and updated affected applications, confirming that no user data was compromised. This incident highlights the vulnerabilities inherent in software supply chains and the importance of proactive security measures. OpenAI&#x27;s swift response aims to reassure users and partners of its commitment to safeguarding data integrity. Developers are encouraged to review their own security protocols to prevent similar threats.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/axios-developer-tool-compromise",
             "relatedResources": []
         },
         {
@@ -246,33 +273,6 @@ const websiteContent = {
             "content": "Apple nearly removed Elon Musk&#x27;s AI app, Grok, from its App Store after a surge of nonconsensual sexual deepfakes appeared on X, as reported by NBC News. The app faced criticism for not effectively curbing the spread of these harmful images, which violate privacy and consent. Apple&#x27;s intervention highlights the increasing scrutiny tech companies face over AI-generated content and the responsibilities of platform owners. This incident underscores the need for robust content moderation systems in AI applications to prevent misuse. Developers and platform operators should prioritize implementing stringent safeguards to protect user privacy and comply with app store policies.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/912297/apple-app-store-ban-grok-x-deepfakes",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "Reid Hoffman on AI Tokens—Context is Key",
-            "title": "Reid Hoffman Discusses AI Token Use and Adoption Metrics",
-            "content": "Reid Hoffman has weighed in on the debate surrounding &#x27;tokenmaxxing,&#x27; emphasizing the importance of context when tracking AI token usage as a measure of adoption. While token metrics can provide insights into AI technology uptake, Hoffman cautions against using them as direct indicators of productivity. This perspective is crucial for businesses and developers who rely on AI metrics to assess performance and growth. Understanding the broader implications of token usage can lead to more informed decision-making and strategic planning in AI deployment.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/15/reid-hoffman-weighs-in-on-the-tokenmaxxing-debate/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "Adobe Firefly AI—Streamlining Creative Cloud Tasks",
-            "title": "Adobe Introduces Firefly AI Assistant for Creative Cloud Integration",
-            "content": "Adobe has unveiled its new Firefly AI assistant, designed to enhance productivity by automating tasks across its suite of Creative Cloud applications, including Photoshop, Premiere, and Illustrator. The assistant leverages AI to streamline workflows, allowing users to focus on creative processes rather than repetitive tasks. This integration reflects a growing trend of AI-driven tools in creative industries, aimed at boosting efficiency and innovation. Creative professionals should explore Firefly&#x27;s capabilities to optimize their use of Adobe&#x27;s software suite and stay competitive in the evolving digital landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/15/adobes-new-firefly-ai-assistant-can-use-creative-cloud-apps-to-complete-tasks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Software Engineering&#x27;s Future—AI and Open Source Lead the Way",
-            "title": "Redefining Software Engineering: The Impact of AI and Open Source",
-            "content": "The evolution of software engineering is marked by two major shifts: the open-source movement and the integration of AI-driven methodologies. MIT Technology Review explores how these trends have democratized access to code and transformed development processes. The adoption of DevOps and agile practices has further accelerated software delivery and innovation. As AI tools become integral to coding, developers must adapt to new paradigms that emphasize collaboration and continuous improvement. Staying abreast of these changes is crucial for software engineers aiming to leverage the full potential of AI and open-source resources.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/04/14/1134397/redefining-the-future-of-software-engineering/",
             "relatedResources": []
         }
     ],
@@ -358,6 +358,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-34197",
+            "dateAdded": "Apr 16, 2026",
+            "vendor": "Apache ActiveMQ",
+            "description": "Apache ActiveMQ contains an improper input validation vulnerability that allows for code injection.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34197",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2009-0238",
             "dateAdded": "Apr 14, 2026",
