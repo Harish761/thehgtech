@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1451",
+      "incident_id": 1451,
+      "title": "Purportedly AI-Generated Facebook Video Allegedly Misused Sk\u00ebnder Brataj and Blendi Fevziu to Promot",
+      "date": "2026-04-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1447",
       "incident_id": 1447,
       "title": "Sixth Circuit Sanctioned Lawyers in Whiting v. City of Athens over Alleged Fake Appellate Citations ",
@@ -986,9 +994,9 @@
     }
   ],
   "stats": {
-    "total": 123,
-    "last7Days": 0,
-    "last30Days": 36
+    "total": 124,
+    "last7Days": 1,
+    "last30Days": 37
   },
-  "lastUpdated": "2026-04-19T00:54:00.236151+05:30"
+  "lastUpdated": "2026-04-19T02:20:21.589661+05:30"
 }
