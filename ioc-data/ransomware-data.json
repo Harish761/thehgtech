@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-18T02:29:02.598270",
+  "last_updated": "2026-04-18T13:03:41.965190",
   "period": "Last 7 days",
   "total_groups": 31,
   "total_victims": 297,
@@ -188,14 +188,8 @@
     },
     {
       "name": "Lockbit5",
-      "count": 30,
+      "count": 29,
       "victims": [
-        {
-          "name": "townoforangeva.gov",
-          "date": "2026-04-14 10:59:46.007508",
-          "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/00c859168837cbf0d4606f84b4d39ed7",
-          "discovered_date": "2026-04-14T10:59:46.007508"
-        },
         {
           "name": "sportvision.ba",
           "date": "2026-04-14 11:00:28.435466",
@@ -249,11 +243,16 @@
           "date": "2026-04-14T10:57:14+00:00",
           "url": "https://www.ransomware.live/id/enNmaC5jekBsb2NrYml0NQ==",
           "discovered_date": "2026-04-14T10:57:14+00:00"
+        },
+        {
+          "name": "contrar.it",
+          "date": "2026-04-14T10:56:40+00:00",
+          "url": "https://www.ransomware.live/id/Y29udHJhci5pdEBsb2NrYml0NQ==",
+          "discovered_date": "2026-04-14T10:56:40+00:00"
         }
       ],
       "industries": [
         "Manufacturing",
-        "Public Sector",
         "Technology"
       ],
       "countries": [
@@ -268,7 +267,7 @@
       "daily_counts": [
         0,
         0,
-        30,
+        29,
         0,
         0,
         0,
@@ -363,97 +362,6 @@
         8,
         0,
         6,
-        0
-      ]
-    },
-    {
-      "name": "Krybit",
-      "count": 18,
-      "victims": [
-        {
-          "name": "rhode-hv.de",
-          "date": "2026-04-17 20:12:42.032000",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/346fe18c28421843210f79b8bd2549f8d8765b4fe20dc5348a42dd1ac0e468c3/",
-          "discovered_date": "2026-04-17T20:12:42.032000"
-        },
-        {
-          "name": "putzbaer.berlin",
-          "date": "2026-04-17 15:51:35.719088",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/36488a24bdf98e19b64735365ea6d9a34384e0337e949bb08667a22ec852d572/",
-          "discovered_date": "2026-04-17T15:51:35.719088"
-        },
-        {
-          "name": "Hacked 0APT",
-          "date": "2026-04-14 20:22:16.615122",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/65dc321e50f74c6fd042423cf707e16ef0ff3b265b0049db4d6c17249dbfb76a/",
-          "discovered_date": "2026-04-14T20:22:16.615122"
-        },
-        {
-          "name": "asesoriauriel.com",
-          "date": "2026-04-14 14:36:17.957505",
-          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/404e2516d4022752f93dc9844fb4712339199312accc129b66a85bcb379cda09/",
-          "discovered_date": "2026-04-14T14:36:17.957505"
-        },
-        {
-          "name": "unipest.co.th",
-          "date": "2026-04-14 14:35:36.737239",
-          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/7e4d2cc0b26635dfe620f21d6729f4cd122f8f73c1a95c65bf38693f4a6f0751/",
-          "discovered_date": "2026-04-14T14:35:36.737239"
-        },
-        {
-          "name": "palladium.gen.tr",
-          "date": "2026-04-14 14:34:57.010238",
-          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/bc5723b509285febe34720381141a5509f50a50f44f48f250c899b37ff117b41/",
-          "discovered_date": "2026-04-14T14:34:57.010238"
-        },
-        {
-          "name": "secran.com.br",
-          "date": "2026-04-14 14:34:18.238952",
-          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/59817f58a05bc6e9720a72bfca2c7857539f7a9ee0e56f52b937752d26bde155/",
-          "discovered_date": "2026-04-14T14:34:18.238952"
-        },
-        {
-          "name": "Some 0APT false claims",
-          "date": "2026-04-14 14:33:42.878765",
-          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/9f0cdb3a132b8c6cbd7e2edace269a145da2fcb8ee744931c4e7bdf61180bcd2/",
-          "discovered_date": "2026-04-14T14:33:42.878765"
-        },
-        {
-          "name": "rhode-hv.de",
-          "date": "2026-04-17T20:12:42+00:00",
-          "url": "https://www.ransomware.live/id/cmhvZGUtaHYuZGVAa3J5Yml0",
-          "discovered_date": "2026-04-17T20:12:42+00:00"
-        },
-        {
-          "name": "putzbaer.berlin",
-          "date": "2026-04-17T15:51:35+00:00",
-          "url": "https://www.ransomware.live/id/cHV0emJhZXIuYmVybGluQGtyeWJpdA==",
-          "discovered_date": "2026-04-17T15:51:35+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Consumer Services",
-        "Manufacturing",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "BR",
-        "DE",
-        "MX",
-        "N/A",
-        "NZ"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        1,
-        0,
-        12,
-        0,
-        0,
-        4,
         0
       ]
     },
@@ -634,6 +542,97 @@
         2,
         2,
         0,
+        0
+      ]
+    },
+    {
+      "name": "Krybit",
+      "count": 17,
+      "victims": [
+        {
+          "name": "rhode-hv.de",
+          "date": "2026-04-17 20:12:42.032000",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/346fe18c28421843210f79b8bd2549f8d8765b4fe20dc5348a42dd1ac0e468c3/",
+          "discovered_date": "2026-04-17T20:12:42.032000"
+        },
+        {
+          "name": "putzbaer.berlin",
+          "date": "2026-04-17 15:51:35.719088",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/36488a24bdf98e19b64735365ea6d9a34384e0337e949bb08667a22ec852d572/",
+          "discovered_date": "2026-04-17T15:51:35.719088"
+        },
+        {
+          "name": "Hacked 0APT",
+          "date": "2026-04-14 20:22:16.615122",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/65dc321e50f74c6fd042423cf707e16ef0ff3b265b0049db4d6c17249dbfb76a/",
+          "discovered_date": "2026-04-14T20:22:16.615122"
+        },
+        {
+          "name": "asesoriauriel.com",
+          "date": "2026-04-14 14:36:17.957505",
+          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/404e2516d4022752f93dc9844fb4712339199312accc129b66a85bcb379cda09/",
+          "discovered_date": "2026-04-14T14:36:17.957505"
+        },
+        {
+          "name": "unipest.co.th",
+          "date": "2026-04-14 14:35:36.737239",
+          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/7e4d2cc0b26635dfe620f21d6729f4cd122f8f73c1a95c65bf38693f4a6f0751/",
+          "discovered_date": "2026-04-14T14:35:36.737239"
+        },
+        {
+          "name": "palladium.gen.tr",
+          "date": "2026-04-14 14:34:57.010238",
+          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/bc5723b509285febe34720381141a5509f50a50f44f48f250c899b37ff117b41/",
+          "discovered_date": "2026-04-14T14:34:57.010238"
+        },
+        {
+          "name": "secran.com.br",
+          "date": "2026-04-14 14:34:18.238952",
+          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/59817f58a05bc6e9720a72bfca2c7857539f7a9ee0e56f52b937752d26bde155/",
+          "discovered_date": "2026-04-14T14:34:18.238952"
+        },
+        {
+          "name": "Some 0APT false claims",
+          "date": "2026-04-14 14:33:42.878765",
+          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/9f0cdb3a132b8c6cbd7e2edace269a145da2fcb8ee744931c4e7bdf61180bcd2/",
+          "discovered_date": "2026-04-14T14:33:42.878765"
+        },
+        {
+          "name": "rhode-hv.de",
+          "date": "2026-04-17T20:12:42+00:00",
+          "url": "https://www.ransomware.live/id/cmhvZGUtaHYuZGVAa3J5Yml0",
+          "discovered_date": "2026-04-17T20:12:42+00:00"
+        },
+        {
+          "name": "putzbaer.berlin",
+          "date": "2026-04-17T15:51:35+00:00",
+          "url": "https://www.ransomware.live/id/cHV0emJhZXIuYmVybGluQGtyeWJpdA==",
+          "discovered_date": "2026-04-17T15:51:35+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Consumer Services",
+        "Manufacturing",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "BR",
+        "DE",
+        "MX",
+        "N/A",
+        "NZ"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        1,
+        0,
+        12,
+        0,
+        0,
+        4,
         0
       ]
     },
@@ -1062,6 +1061,74 @@
       ]
     },
     {
+      "name": "Nightspire",
+      "count": 7,
+      "victims": [
+        {
+          "name": "S***s*a A**ul***e C***s",
+          "date": "2026-04-18 02:42:29.354748",
+          "url": "",
+          "discovered_date": "2026-04-18T02:42:29.354748"
+        },
+        {
+          "name": "D-Troy Logistics",
+          "date": "2026-04-14 17:35:51.993904",
+          "url": "",
+          "discovered_date": "2026-04-14T17:35:51.993904"
+        },
+        {
+          "name": "BK Tomorrow",
+          "date": "2026-04-14 13:43:14.787158",
+          "url": "",
+          "discovered_date": "2026-04-14T13:43:14.787158"
+        },
+        {
+          "name": "S***s*a A**ul***e C***s",
+          "date": "2026-04-18T02:42:29+00:00",
+          "url": "https://www.ransomware.live/id/UyoqKnMqYSBBKip1bCoqKmUgQyoqKnNAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-04-18T02:42:29+00:00"
+        },
+        {
+          "name": "D-Troy Logistics",
+          "date": "2026-04-14T17:35:51+00:00",
+          "url": "https://www.ransomware.live/id/RC1Ucm95IExvZ2lzdGljc0BuaWdodHNwaXJl",
+          "discovered_date": "2026-04-14T17:35:51+00:00"
+        },
+        {
+          "name": "BK Tomorrow",
+          "date": "2026-04-14T13:43:14+00:00",
+          "url": "https://www.ransomware.live/id/QksgVG9tb3Jyb3dAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-04-14T13:43:14+00:00"
+        },
+        {
+          "name": "Sahara Air Products",
+          "date": "2026-04-11T16:59:49+00:00",
+          "url": "https://www.ransomware.live/id/U2FoYXJhIEFpciBQcm9kdWN0c0BuaWdodHNwaXJl",
+          "discovered_date": "2026-04-11T16:59:49+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found",
+        "Transportation/Logistics"
+      ],
+      "countries": [
+        "MX",
+        "N/A",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Kairos",
       "count": 6,
       "victims": [
@@ -1174,61 +1241,6 @@
         2,
         0,
         2,
-        0
-      ]
-    },
-    {
-      "name": "Nightspire",
-      "count": 5,
-      "victims": [
-        {
-          "name": "D-Troy Logistics",
-          "date": "2026-04-14 17:35:51.993904",
-          "url": "",
-          "discovered_date": "2026-04-14T17:35:51.993904"
-        },
-        {
-          "name": "BK Tomorrow",
-          "date": "2026-04-14 13:43:14.787158",
-          "url": "",
-          "discovered_date": "2026-04-14T13:43:14.787158"
-        },
-        {
-          "name": "D-Troy Logistics",
-          "date": "2026-04-14T17:35:51+00:00",
-          "url": "https://www.ransomware.live/id/RC1Ucm95IExvZ2lzdGljc0BuaWdodHNwaXJl",
-          "discovered_date": "2026-04-14T17:35:51+00:00"
-        },
-        {
-          "name": "BK Tomorrow",
-          "date": "2026-04-14T13:43:14+00:00",
-          "url": "https://www.ransomware.live/id/QksgVG9tb3Jyb3dAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-04-14T13:43:14+00:00"
-        },
-        {
-          "name": "Sahara Air Products",
-          "date": "2026-04-11T16:59:49+00:00",
-          "url": "https://www.ransomware.live/id/U2FoYXJhIEFpciBQcm9kdWN0c0BuaWdodHNwaXJl",
-          "discovered_date": "2026-04-11T16:59:49+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found",
-        "Transportation/Logistics"
-      ],
-      "countries": [
-        "MX",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        4,
-        0,
-        0,
-        0,
         0
       ]
     },
