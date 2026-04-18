@@ -175,9 +175,8 @@ html, body {
 
 /* HOMEPAGE MOBILE OVERHAUL CSS */
 @media(max-width: 768px) {
-    main#main-content > *:not(.m-home-layout) {
-        display: none !important;
-    }
+      .hero, .trust-section, .solutions-section, .featured-section, .cveSection { display: none !important; }
+
     .m-home-layout.m-only {
         display: block !important;
         margin-top: 60px; /* Offset for sticky header */
