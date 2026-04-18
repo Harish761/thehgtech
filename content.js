@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 18 2026",
+            "headline": "Mirai Variant Hijacks TBK DVRs—Exploits CVE-2024-3721",
+            "title": "Mirai Variant Nexcorium Exploits CVE-2024-3721 to Hijack TBK DVRs for DDoS Botnet",
+            "content": "Threat actors are leveraging CVE-2024-3721 to compromise TBK DVRs and outdated TP-Link Wi-Fi routers, deploying a new Mirai botnet variant called Nexcorium. This vulnerability allows attackers to hijack these devices, integrating them into a distributed denial-of-service (DDoS) botnet. Fortinet FortiGuard Labs and Palo Alto Networks Unit 42 have identified this exploitation, which poses a significant threat to network security by amplifying DDoS attacks. Organizations using affected devices should prioritize firmware updates and consider replacing end-of-life hardware to mitigate risks. This incident underscores the persistent threat of IoT device vulnerabilities being exploited by botnets.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/mirai-variant-nexcorium-exploits-cve.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "NKAbuse Malware Deployed via Marimo Flaw on Hugging Face",
+            "title": "Hackers Exploit Marimo Flaw to Deploy NKAbuse Malware from Hugging Face",
+            "content": "A critical vulnerability in the Marimo reactive Python notebook is being exploited to deploy NKAbuse malware, hosted on Hugging Face Spaces. This flaw allows attackers to execute arbitrary code, compromising systems running the affected software. The exploitation of this vulnerability highlights the growing trend of leveraging popular platforms for malware distribution. Users of Marimo are urged to apply patches immediately to prevent unauthorized access and potential data breaches. This incident emphasizes the importance of securing development environments against emerging threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-marimo-flaw-to-deploy-nkabuse-malware-from-hugging-face/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Defender 0-Day and SonicWall Brute-Force Highlight ThreatsDay",
+            "title": "ThreatsDay Bulletin: Defender 0-Day, SonicWall Brute-Force, and Excel RCE",
+            "content": "This week&#x27;s ThreatsDay Bulletin reveals a series of alarming vulnerabilities, including a zero-day in Microsoft Defender, brute-force attacks on SonicWall, and a 17-year-old remote code execution (RCE) flaw in Excel. These vulnerabilities are being actively exploited, posing significant risks to enterprises relying on these technologies. The bulletin underscores the need for immediate patching and enhanced security measures to protect against these sophisticated threats. Security professionals should prioritize updates and monitor for unusual activity to mitigate potential breaches. This highlights the ongoing challenge of managing legacy vulnerabilities and the evolving tactics of cybercriminals.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/threatsday-bulletin-17-year-old-excel.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 18 2026",
+            "headline": "Phishing Surge as Tycoon 2FA Tools Reused",
+            "title": "Tycoon 2FA Loses Phishing Kit Crown Amid Surge in Attacks",
+            "content": "Following the disruption of the Tycoon 2FA platform, threat actors are repurposing its tools across various phishing kits, leading to a surge in phishing attacks. This trend reflects the adaptability of cybercriminals in exploiting existing tools to bypass two-factor authentication (2FA) defenses. Organizations are advised to enhance their phishing detection capabilities and educate users on recognizing phishing attempts. The increased reuse of Tycoon 2FA tools highlights the persistent threat of phishing and the need for robust security strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/tycoon-2fa-loses-phishing-kit-crown-amid-surge-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 18 2026",
+            "headline": "$13.74M Hack Forces Grinex Exchange Shutdown",
+            "title": "$13.74M Hack Shuts Down Sanctioned Grinex Exchange After Intelligence Claims",
+            "content": "The Grinex cryptocurrency exchange, sanctioned by the U.K. and U.S., has suspended operations following a $13.74 million hack, which it attributes to Western intelligence agencies. The attack involved a large-scale breach, significantly impacting the exchange&#x27;s financial stability. This incident highlights the vulnerabilities faced by cryptocurrency platforms, particularly those under international sanctions. Stakeholders in the cryptocurrency sector should review their security postures and consider geopolitical risks in their threat models. The Grinex case serves as a reminder of the complex interplay between cybersecurity and international relations.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/1374m-hack-shuts-down-sanctioned-grinex.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "Thymeleaf Sandbox Bypass CVE-2026-40478 Fixed",
+            "title": "Critical Sandbox Bypass Fixed in Popular Thymeleaf Java Template Engine",
+            "content": "Thymeleaf maintainers have addressed CVE-2026-40478, a critical sandbox bypass vulnerability in the widely used Java template engine. This flaw, rated 9.1 on the CVSS scale, allowed unauthenticated attackers to execute malicious code on servers, posing a severe risk to web applications utilizing Thymeleaf. Developers are urged to update to the latest version to protect against potential exploits. The resolution of this vulnerability underscores the importance of regular security audits and timely patching in maintaining secure software environments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4160520/critical-sandbox-bypass-fixed-in-popular-thymeleaf-java-template-engine.html",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 17 2026",
             "headline": "Payouts King Ransomware Evades Detection Using QEMU VMs",
             "title": "Payouts King Ransomware Employs QEMU VMs to Bypass Endpoint Security",
@@ -28,33 +82,6 @@ const websiteContent = {
             "content": "Cisco has released patches addressing four critical vulnerabilities in its Identity Services and Webex platforms, which could lead to arbitrary code execution and user impersonation. The vulnerabilities include CVE-2026-20184, which has a high CVSS score, underscoring the severity of the threat. These flaws could allow attackers to gain unauthorized access and control over affected systems. Cisco urges users to apply the patches immediately to mitigate potential exploitation risks. This update is part of Cisco&#x27;s ongoing commitment to maintaining the security and integrity of its services.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/cisco-patches-four-critical-identity.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "Critical nginx-ui Flaw Exploited—Full Server Takeover Risk",
-            "title": "Actively Exploited nginx-ui Flaw Enables Complete Server Compromise",
-            "content": "A critical vulnerability, CVE-2026-33032, affecting nginx-ui, an open-source Nginx management tool, is being actively exploited in the wild. This authentication bypass flaw, with a CVSS score of 9.8, allows attackers to gain full control over Nginx servers. The exploitation of this vulnerability poses a severe risk to organizations relying on nginx-ui for server management. Administrators are urged to apply available patches or implement alternative security measures to prevent unauthorized access. The incident underscores the importance of timely updates in the face of emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 15 2026",
-            "headline": "April Patch Tuesday: Critical Flaws Fixed in SAP, Adobe, Microsoft",
-            "title": "April Patch Tuesday Addresses Critical Vulnerabilities Across Major Platforms",
-            "content": "The latest Patch Tuesday has seen critical vulnerabilities addressed across products from SAP, Adobe, Microsoft, and Fortinet. Notably, an SQL injection vulnerability, CVE-2026-23456, affects SAP Business Planning and Consolidation and SAP Business Warehouse. These patches are crucial for preventing potential exploitation that could lead to data breaches or system compromise. Organizations using these platforms should prioritize applying the updates to safeguard their systems. This comprehensive update cycle highlights the ongoing need for vigilance in patch management practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/april-patch-tuesday-fixes-critical.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Microsoft Patches 167 Vulnerabilities—SharePoint Zero-Day Included",
-            "title": "Microsoft April Patch Tuesday Fixes 167 Vulnerabilities, Including Zero-Days",
-            "content": "Microsoft has released fixes for 167 security vulnerabilities in its April Patch Tuesday update, addressing critical issues across Windows operating systems and related software. Among these, a zero-day vulnerability in SharePoint Server and a publicly disclosed flaw in Windows Defender, dubbed &quot;BlueHammer,&quot; stand out. These vulnerabilities pose significant risks, including potential unauthorized access and data breaches. Users are strongly advised to apply these updates immediately to protect against exploitation. The scale of this update reflects the persistent threat landscape and the importance of regular patching.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition/",
             "relatedResources": []
         },
         {
@@ -110,36 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/recently-leaked-windows-zero-days-now-exploited-in-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Apache ActiveMQ Flaw Exploited—CISA Urges Immediate Action",
-            "title": "Apache ActiveMQ CVE-2026-34197 Added to CISA KEV Amid Active Exploitation",
-            "content": "A critical vulnerability in Apache ActiveMQ Classic, tracked as CVE-2026-34197, has been actively exploited, prompting the U.S. Cybersecurity and Infrastructure Security Agency (CISA) to add it to its Known Exploited Vulnerabilities (KEV) catalog. This flaw, with a CVSS score of 8.8, allows remote attackers to execute arbitrary code on affected systems. Organizations using Apache ActiveMQ Classic are at risk, particularly those that have not yet applied available patches. This vulnerability highlights the persistent targeting of widely-used open-source software by threat actors. CISA advises immediate patching to mitigate potential exploitation risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Microsoft Defender &quot;RedSun&quot; Zero-Day PoC Released Online",
-            "title": "New Microsoft Defender “RedSun” Zero-Day PoC Grants SYSTEM Privileges",
-            "content": "A proof-of-concept (PoC) exploit for a zero-day vulnerability in Microsoft Defender, dubbed &quot;RedSun,&quot; has been released by a researcher known as &quot;Chaotic Eclipse.&quot; This vulnerability allows attackers to gain SYSTEM privileges, posing a significant risk to systems relying on Microsoft Defender for protection. The release is part of a protest against Microsoft&#x27;s handling of vulnerabilities reported by researchers. Organizations using Microsoft Defender should be aware of this threat and monitor for any unusual activity. This incident underscores ongoing tensions between tech companies and security researchers over vulnerability disclosure practices.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/new-microsoft-defender-redsun-zero-day-poc-grants-system-privileges/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "PowMix Botnet Targets Czech Workforce with Randomized Traffic",
-            "title": "Newly Discovered PowMix Botnet Hits Czech Workers Using Randomized C2 Traffic",
-            "content": "Cybersecurity researchers have identified a new botnet, named PowMix, actively targeting workers in the Czech Republic since December 2025. PowMix utilizes randomized command-and-control (C2) beaconing intervals to evade detection, making it a sophisticated threat. This botnet&#x27;s activity highlights the increasing use of advanced techniques by cybercriminals to target specific regions and sectors. Organizations in the Czech Republic should enhance their network monitoring and implement robust security measures to detect and mitigate such threats. The discovery of PowMix adds to the growing list of region-specific cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/newly-discovered-powmix-botnet-hits.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 18 2026",
+            "headline": "EU Age-Verification App Hacked in 2 Minutes—Security Flaw Exposed",
+            "title": "Security Flaws in EU&#x27;s Age-Verification App Allow Quick Hacks",
+            "content": "A critical security flaw in the European Union&#x27;s new age-verification app has been exposed, allowing hackers to bypass its protections in just two minutes. This vulnerability raises serious concerns about the app&#x27;s ability to safeguard personal data, especially as it is intended to verify users&#x27; ages for accessing age-restricted content. The breach highlights the need for immediate security enhancements to protect users&#x27; sensitive information. This incident is part of a broader trend of increasing cyberattacks, including recent data breaches at a gym chain and a hotel giant, as well as a disruptive distributed denial-of-service (DDoS) attack against Bluesky. Organizations are advised to review their security protocols and ensure robust defenses against such vulnerabilities.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/security-news-this-week-it-takes-2-minutes-to-hack-the-eus-new-age-verification-app/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 18 2026",
+            "headline": "App Store Surge—AI Tools Drive 2026 Mobile Boom",
+            "title": "AI Tools Fuel Resurgence in App Store Launches in 2026",
+            "content": "The App Store is experiencing a significant resurgence, with new data from Appfigures indicating a notable increase in app launches in 2026. This growth is largely attributed to the integration of AI tools, which are enabling developers to create more sophisticated and innovative mobile applications. The trend suggests a revitalization of the mobile software market, driven by advancements in AI technology. Developers and tech companies are capitalizing on these tools to enhance app functionality and user engagement. As the demand for AI-enhanced applications continues to rise, stakeholders should consider investing in AI capabilities to remain competitive in the evolving app ecosystem.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "NanoClaw, Vercel Simplify AI Agent Policy Across Messaging Apps",
+            "title": "NanoClaw and Vercel Launch AI Agent Policy Tools for Messaging",
+            "content": "NanoClaw and Vercel have introduced new tools designed to simplify policy setting and approval processes for autonomous AI agents across 15 messaging applications. These tools address a critical challenge faced by early adopters of AI agents: balancing functionality with security. By providing clearer policy frameworks, the tools help prevent AI agents from executing potentially harmful commands, such as data deletions. This development is crucial for enterprises looking to harness AI agents&#x27; capabilities without compromising data integrity or security. Organizations using AI agents should evaluate these tools to enhance their operational efficiency and safeguard against unintended actions.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/should-my-enterprise-ai-agent-do-that-nanoclaw-and-vercel-launch-easier-agentic-policy-setting-and-approval-dialogs-across-15-messaging-apps",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "Tokenmaxxing—A Hidden Productivity Drain for Developers",
+            "title": "Tokenmaxxing Leads to Increased Code Rewrites and Costs",
+            "content": "The phenomenon of &quot;tokenmaxxing&quot; is emerging as a significant productivity issue for developers, leading to increased code volume but also higher costs and frequent rewrites. This trend involves maximizing the use of tokens in coding, which can result in more complex and less efficient codebases. As developers strive to leverage AI and machine learning, the unintended consequence is often a bloated code structure that requires substantial maintenance. Companies should be aware of this trend and consider implementing strategies to optimize code efficiency and reduce unnecessary complexity. Addressing tokenmaxxing can lead to better resource management and improved project outcomes.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "Poetry Camera—Charming Gadget Produces Bad AI Poetry",
+            "title": "Poetry Camera: A Delightful Yet Frustrating AI Poetry Device",
+            "content": "The Poetry Camera, a new gadget that generates AI poetry, has captured both charm and frustration from users. With its playful design featuring a white and cherry red color scheme, the device is visually appealing but produces poetry of questionable quality. Despite its shortcomings in poetic output, the gadget highlights the intersection of technology and creativity, sparking discussions about the role of AI in artistic expression. As AI continues to evolve, developers and artists alike should explore ways to enhance AI&#x27;s creative capabilities while maintaining artistic integrity. The Poetry Camera serves as a reminder of the potential and limitations of AI in the arts.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/gadgets/913981/poetry-camera-ai-hands-on",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "Fast Multilingual OCR Model Built with Synthetic Data",
+            "title": "Building Efficient Multilingual OCR Models Using Synthetic Data",
+            "content": "Hugging Face has developed a fast and efficient multilingual optical character recognition (OCR) model using synthetic data, showcasing the potential of synthetic datasets in training advanced AI models. This approach allows for the rapid development of OCR systems capable of recognizing text in multiple languages, enhancing accessibility and usability across diverse linguistic contexts. The use of synthetic data addresses the challenges of acquiring large, labeled datasets, providing a scalable solution for training robust AI models. Organizations looking to implement OCR technology should consider the benefits of synthetic data in developing versatile and high-performing systems.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ocr-v2",
+            "relatedResources": []
+        },
         {
             "date": "Apr 17 2026",
             "headline": "Cursor Eyes $50B Valuation Amid Enterprise Surge",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Luma has launched an AI-powered production studio, with its inaugural project being a film about Moses featuring Academy Award-winner Ben Kingsley. Scheduled for release this spring on Prime Video, this project is part of the Wonder Project, which focuses on faith-based narratives. The studio utilizes AI to enhance production efficiency and storytelling capabilities, marking a significant step in the integration of AI within the entertainment industry. This initiative aims to attract audiences interested in faith-focused content while showcasing the potential of AI in creative processes. Professionals in the media and entertainment sectors should monitor this trend for future opportunities.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/16/luma-launches-ai-powered-production-studio-with-faith-focused-wonder-project/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Upscale AI Eyes $2B Valuation in New Funding Round",
-            "title": "Upscale AI in Talks for Funding at $2 Billion Valuation",
-            "content": "Upscale AI, an AI infrastructure company, is reportedly negotiating its third funding round, targeting a $2 billion valuation just seven months after its inception. This rapid growth highlights the increasing demand for robust AI infrastructure solutions as businesses seek to enhance their AI capabilities. The company&#x27;s offerings focus on scalable AI systems that can support diverse applications across industries. Investors and tech leaders should watch Upscale AI&#x27;s progress as it reflects broader trends in AI investment and infrastructure development. The outcome of these talks could significantly impact the competitive landscape of AI infrastructure providers.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/16/upscale-ai-in-talks-to-raise-at-2b-valuation-says-report/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Physical Intelligence Unveils π0.7—A Leap Toward General AI",
-            "title": "Physical Intelligence&#x27;s π0.7 Model Tackles Unfamiliar Tasks with Ease",
-            "content": "Physical Intelligence, a burgeoning robotics startup, has introduced π0.7, a new model designed to execute tasks it has never been explicitly programmed to perform. This development marks a significant step towards achieving a general-purpose robot brain, a long-standing goal in robotics and AI. The π0.7 model leverages advanced algorithms to adapt to new challenges, potentially transforming industries reliant on automation. Robotics professionals should consider the implications of such technology for future applications in manufacturing, logistics, and beyond. This innovation underscores the ongoing evolution of AI in enhancing robotic autonomy and versatility.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "OpenAI&#x27;s Codex Upgrade Challenges Anthropic in Desktop Control",
-            "title": "OpenAI Enhances Codex for Greater Desktop Control, Targets Anthropic",
-            "content": "OpenAI has significantly upgraded its Codex tool, enhancing its capabilities to exert more control over desktop environments. This agentic coding tool now offers a broader range of functions, positioning it as a direct competitor to Anthropic&#x27;s offerings. The enhanced Codex can automate complex tasks and streamline workflows, providing developers with a powerful tool for increasing productivity. This development reflects OpenAI&#x27;s strategic push to dominate the AI-driven coding tools market. Tech leaders and developers should evaluate the potential of integrating Codex into their operations to leverage its expanded functionalities.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/16/openai-takes-aim-at-anthropic-with-beefed-up-codex-that-gives-it-more-power-over-your-desktop/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "OpenAI Codex Update Challenges Anthropic&#x27;s Claude Code",
-            "title": "OpenAI Enhances Codex with Image Generation and Memory Capabilities",
-            "content": "OpenAI has released a significant update to its Codex system, enhancing its capabilities to include image generation and memory retention from past interactions. This update positions Codex as a formidable competitor to Anthropic&#x27;s Claude Code, which has seen considerable success in the AI development space. The new features allow Codex to interact more dynamically with users&#x27; computers, potentially streamlining coding and development tasks. As the rivalry between OpenAI and Anthropic heats up, developers and tech companies may benefit from increased innovation and improved AI tools. Users are encouraged to explore the updated Codex functionalities to leverage these advancements in their projects.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Google Chrome AI Mode—Open Links Side by Side",
-            "title": "Google Enhances Chrome&#x27;s AI Mode with Side-by-Side Link Viewing",
-            "content": "Google has upgraded the AI Mode in its Chrome browser, introducing a feature that allows users to open links alongside their chat interface. This update eliminates the need to open new tabs, enabling users to view source websites side by side with AI Mode. This functionality is designed to facilitate seamless follow-up questioning and enhance user experience by maintaining context. The update is part of Google&#x27;s ongoing efforts to integrate AI more deeply into everyday browsing activities. Users should update their Chrome browser to access this new feature and improve their workflow efficiency.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/913109/google-ai-mode-tabs-sources",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Salesforce Unveils Headless 360—AI Agents Gain Full Control",
-            "title": "Salesforce Launches Headless 360 for Comprehensive AI Agent Integration",
-            "content": "Salesforce has announced &quot;Headless 360,&quot; a transformative architectural update that exposes all platform capabilities as APIs, MCP tools, or CLI commands. This initiative allows AI agents to operate Salesforce&#x27;s entire system autonomously, marking the most significant change in the company&#x27;s 27-year history. By turning its platform into a fully accessible infrastructure, Salesforce aims to enhance automation and efficiency for its enterprise clients. Organizations using Salesforce can expect improved integration and operational capabilities, potentially reducing manual intervention and increasing productivity. Users should explore these new API offerings to fully leverage AI-driven automation.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/salesforce-launches-headless-360-to-turn-its-entire-platform-into-infrastructure-for-ai-agents",
             "relatedResources": []
         }
     ],
