@@ -324,10 +324,11 @@
         .orb-1 {
             width: 600px;
             height: 600px;
-            background: linear-gradient(135deg, #FF3D3D, #FF5555);
-            top: -200px;
+            background: linear-gradient(135deg, #00D9FF, #8b5cf6);
+            top: -300px;
             right: -200px;
             animation-delay: 0s;
+            opacity: 0.1;
         }
 
         .orb-2 {
@@ -342,11 +343,12 @@
         .orb-3 {
             width: 400px;
             height: 400px;
-            background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
+            background: linear-gradient(135deg, #00D9FF, #ffffff);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             animation-delay: -14s;
+            opacity: 0.05;
         }
 
         @keyframes float {
@@ -412,7 +414,7 @@
         .logo-text {
             font-size: 1.8rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
+            background: linear-gradient(135deg, #00D9FF, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -680,7 +682,7 @@
         }
 
         .hero h1 span {
-            background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
+            background: linear-gradient(135deg, #00D9FF, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -2605,7 +2607,7 @@
         .footer-brand {
             font-size: 1.5rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
+            background: linear-gradient(135deg, #00D9FF, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;

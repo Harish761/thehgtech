@@ -32,62 +32,55 @@
         if (window._pctUpgraded) return;
         window._pctUpgraded = true;
 
-        // Target any legacy or modern theme toggle button
-        const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle, .m-header__btn--theme');
-
-        // Wire up the mobile top-header theme button (simple icon swap, no track UI)
+        // 1. Setup the mobile top-header theme button (simple icon swap)
         const mobileTopBtn = document.getElementById('m-theme-toggle-top');
-        if (mobileTopBtn && !mobileTopBtn._themeWired) {
-            mobileTopBtn._themeWired = true;
+        if (mobileTopBtn) {
+            // Function to sync only the top button icon
             const syncTopIcon = () => {
                 const icon = mobileTopBtn.querySelector('i');
                 if (!icon) return;
                 const isLight = document.body.classList.contains('light-mode');
                 icon.className = isLight ? 'fas fa-sun' : 'fas fa-moon';
+                console.log('[theme-toggle.js] Top icon synced:', isLight ? 'light' : 'dark');
             };
+
+            // Remove inline onclick if we're wiring it via JS to prevent double-fire
+            mobileTopBtn.removeAttribute('onclick');
+            
             mobileTopBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
                 window.toggleTheme();
-                syncTopIcon();
             });
+
+            // Listen for changes to keep in sync
             window.addEventListener('themeChanged', syncTopIcon);
-            syncTopIcon(); // Set correct icon on page load
+            syncTopIcon(); // Initial sync
         }
 
+        // 2. Setup all other premium toggles (toggles with track UI)
+        const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle, .m-header__btn--theme');
         toggles.forEach(btn => {
+            if (btn === mobileTopBtn) return; // Skip top button already handled
             if (btn.classList.contains('premium-cyber-toggle')) return;
-            // Strip out old properties
+            
+            // Re-use logic to build the sliding track
             btn.innerHTML = '';
             btn.removeAttribute('style');
+            btn.removeAttribute('onclick');
             btn.classList.add('premium-cyber-toggle');
 
-            // Remove legacy inline onClick to prevent double firing
-            btn.removeAttribute('onclick');
-
-            // Build new container
             const track = document.createElement('div');
             track.className = 'pct-track';
+            const iconDark = document.createElement('i'); iconDark.className = 'fas fa-moon pct-icon-dark';
+            const iconLight = document.createElement('i'); iconLight.className = 'fas fa-sun pct-icon-light';
+            const thumb = document.createElement('div'); thumb.className = 'pct-thumb';
 
-            // Moon icon (Dark Mode side)
-            const iconDark = document.createElement('i');
-            iconDark.className = 'fas fa-moon pct-icon-dark';
-
-            // Sun icon (Light Mode side)
-            const iconLight = document.createElement('i');
-            iconLight.className = 'fas fa-sun pct-icon-light';
-
-            // The moving thumb
-            const thumb = document.createElement('div');
-            thumb.className = 'pct-thumb';
-
-            // Assemble
             track.appendChild(iconDark);
             track.appendChild(iconLight);
             track.appendChild(thumb);
             btn.appendChild(track);
 
-            // Add clean event listener
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
@@ -95,7 +88,7 @@
             });
         });
 
-        console.log(`[theme-toggle.js] ✓ Upgraded ${toggles.length} desktop toggles + mobile top-bar button.`);
+        console.log(`[theme-toggle.js] ✓ Upgraded ${toggles.length} toggles.`);
     }
 
     if (document.readyState === 'loading') {

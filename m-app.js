@@ -8,65 +8,17 @@
 (function () {
     'use strict';
 
-    // ========== THEME TOGGLE (Global) ==========
+    // ========== THEME TOGGLE (Compat Wrapper) ==========
+    // We now rely on theme-toggle.js for primary logic.
+    // This wrapper ensures internal m-app.js calls still work if any.
     function toggleTheme() {
-        const body = document.body;
-        const html = document.documentElement;
-        const isLight = body.classList.contains('light-mode');
-
-        if (isLight) {
-            // Switch to dark
-            html.setAttribute('data-theme', 'dark');
-            body.classList.remove('light-mode');
-            localStorage.setItem('theme', 'dark');
-            console.log('Switched to dark mode');
-        } else {
-            // Switch to light
-            html.setAttribute('data-theme', 'light');
-            body.classList.add('light-mode');
-            localStorage.setItem('theme', 'light');
-            console.log('Switched to light mode');
+        if (typeof window.toggleTheme === 'function' && window.toggleTheme !== toggleTheme) {
+            window.toggleTheme();
         }
-
-        updateThemeIcon();
-
-        // Dispatch custom event for other scripts (e.g. charts)
-        window.dispatchEvent(new CustomEvent('themeChanged', {
-            detail: { theme: isLight ? 'dark' : 'light' }
-        }));
     }
-
-    function updateThemeIcon() {
-        const isLight = document.body.classList.contains('light-mode');
-        const moonIcons = document.querySelectorAll('.m-header__btn--theme:not(.premium-cyber-toggle) .fa-moon');
-        const sunIcons = document.querySelectorAll('.m-header__btn--theme:not(.premium-cyber-toggle) .fa-sun');
-
-        moonIcons.forEach(icon => {
-            icon.style.display = isLight ? 'none' : 'inline-block';
-        });
-        sunIcons.forEach(icon => {
-            icon.style.display = isLight ? 'inline-block' : 'none';
-        });
-    }
-
-    function initTheme() {
-        const saved = localStorage.getItem('theme');
-        if (saved === 'light') {
-            document.documentElement.setAttribute('data-theme', 'light');
-            document.body.classList.add('light-mode');
-        } else {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            document.body.classList.remove('light-mode');
-        }
-        updateThemeIcon();
-    }
-
-    // Run immediately when script evaluates
-    initTheme();
-
-    // Expose globally IMMEDIATELY
-    window.toggleTheme = toggleTheme;
-    window.mToggleTheme = toggleTheme; // legacy compat
+    
+    // Legacy support
+    window.mToggleTheme = toggleTheme;
 
 
     // ========== HIDE BMC WIDGET ==========
@@ -460,64 +412,3 @@
 
 })();
 
-// Also add CSS to forcefully hide BMC
-
-// ==========================================
-// PREMIUM CYBER TOGGLE REWRITER (Injected)
-// ==========================================
-function upgradeToggles() {
-    if (window._pctUpgraded) return;
-    window._pctUpgraded = true;
-
-    const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle, .m-header__btn--theme');
-
-    toggles.forEach(oldBtn => {
-        if (oldBtn.classList.contains('premium-cyber-toggle')) return;
-
-        // Clone node completely destroys ALL old event listeners attached!
-        const btn = oldBtn.cloneNode(false);
-        if (oldBtn.parentNode) {
-            oldBtn.parentNode.replaceChild(btn, oldBtn);
-        }
-
-        btn.innerHTML = '';
-        btn.removeAttribute('style');
-        btn.classList.add('premium-cyber-toggle');
-
-        // Unify clicks
-        btn.removeAttribute('onclick');
-
-        const track = document.createElement('div');
-        track.className = 'pct-track';
-
-        const iconDark = document.createElement('i');
-        iconDark.className = 'fas fa-moon pct-icon-dark';
-
-        const iconLight = document.createElement('i');
-        iconLight.className = 'fas fa-sun pct-icon-light';
-
-        const thumb = document.createElement('div');
-        thumb.className = 'pct-thumb';
-
-        track.appendChild(iconDark);
-        track.appendChild(iconLight);
-        track.appendChild(thumb);
-        btn.appendChild(track);
-
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            if (window.toggleTheme) {
-                window.toggleTheme();
-            } else if (window.mToggleTheme) {
-                window.mToggleTheme();
-            }
-        });
-    });
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', upgradeToggles);
-} else {
-    upgradeToggles();
-}

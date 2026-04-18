@@ -54,13 +54,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-    <meta name="theme-color" content="#FF3D3D">
-    <meta name="msapplication-TileColor" content="#FF3D3D">
+    <meta name="theme-color" content="#0a0a0c">
+    <meta name="msapplication-TileColor" content="#0a0a0c">
 
     <!-- ========== MOBILE OPTIMIZATION ========== -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="TheHGTech">
 
     <!-- ========== SITEMAP ========== -->
@@ -637,11 +637,11 @@
         <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
             <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
             <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #00D9FF, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
         </a>
     </div>
     <div class="m-header__actions">
-        <button class="m-header__btn" id="m-theme-toggle-top" aria-label="Toggle Theme">
+        <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
             <i class="fas fa-moon"></i>
         </button>
         <!-- Search triggers Command Palette -->
