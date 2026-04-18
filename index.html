@@ -2885,7 +2885,142 @@
 
 
         </div>
-    </main>
+    
+<!-- ========== MOBILE-ONLY HOMEPAGE STREAM ========== -->
+<div class="m-home-layout m-only">
+    
+    <!-- Block A: Actionable Minimalist Hero -->
+    <div class="m-hero-block" style="padding: 2.5rem 1.25rem 2rem; background: linear-gradient(180deg, var(--bg-primary, #0A0A0C) 0%, rgba(10,10,12,0.8) 100%);">
+        <div style="display:inline-block; padding: 4px 10px; background: rgba(0, 217, 255, 0.1); border: 1px solid rgba(0, 217, 255, 0.2); border-radius: 50px; color: var(--accent-cyan); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">TheHGTech Platform</div>
+        <h1 style="font-size: 2.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; color: var(--text-primary);">Cybersecurity Intelligence & Research.</h1>
+        <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.5;">Defensible security requires actionable intelligence. Read our latest deep-dive research and zero-day coverage.</p>
+        
+        <div style="display: flex; gap: 10px;">
+            <a href="#m-news" style="flex: 1; text-align: center; background: var(--text-primary); color: var(--bg-primary); padding: 12px 0; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.95rem;">Read News</a>
+            <a href="/guides/" style="flex: 1; text-align: center; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--text-primary); padding: 12px 0; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 0.95rem;">Browse Guides</a>
+        </div>
+    </div>
+
+    <!-- Block B: Horizontal Snapping News Block -->
+    <div id="m-news" class="m-section" style="padding: 2rem 0; border-top: 1px solid var(--glass-border);">
+        <div style="padding: 0 1.25rem; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <h2 style="font-size: 1.3rem; font-weight: 800; margin: 0; color: var(--text-primary);">Breaking Intelligence</h2>
+            <div style="font-size: 0.75rem; color: #FF3D3D; font-weight: 700; display: flex; align-items: center; gap: 5px;"><span style="width:6px; height:6px; background:#FF3D3D; border-radius:50%; display:inline-block;"></span> LIVE</div>
+        </div>
+        
+        <div class="m-news-carousel" style="display: flex; gap: 12px; overflow-x: auto; padding: 0 1.25rem 20px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
+            
+            <!-- Dynamic Injection will fill this area, wait let's hardcode the top 3-4 news for the perfect UI -->
+            <a href="/articles.html" class="m-news-card" style="flex: 0 0 85vw; scroll-snap-align: center; background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); border: 1px solid var(--glass-border); border-radius: 16px; padding: 1.25rem; text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 160px;">
+                <div>
+                    <div style="font-size: 0.7rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; font-weight: 700;">Zero-Day / Exploit</div>
+                    <h3 style="font-size: 1.15rem; color: var(--text-primary); font-weight: 700; line-height: 1.3; margin: 0 0 10px 0;">Critical Zero-Day Exposes Global Infrastructure</h3>
+                </div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); display:flex; align-items: center; gap: 5px;"><i class="fas fa-clock"></i> 2 hours ago</div>
+            </a>
+
+            <a href="/ransomware-tracker.html" class="m-news-card" style="flex: 0 0 85vw; scroll-snap-align: center; background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); border: 1px solid var(--glass-border); border-radius: 16px; padding: 1.25rem; text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 160px;">
+                <div>
+                    <div style="font-size: 0.7rem; color: #FF3D3D; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; font-weight: 700;">Ransomware Alert</div>
+                    <h3 style="font-size: 1.15rem; color: var(--text-primary); font-weight: 700; line-height: 1.3; margin: 0 0 10px 0;">LockBit Re-emerges on Dark Web Intel Feeds</h3>
+                </div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); display:flex; align-items: center; gap: 5px;"><i class="fas fa-clock"></i> 5 hours ago</div>
+            </a>
+            
+            <a href="/cve-tracker.html" class="m-news-card" style="flex: 0 0 85vw; scroll-snap-align: center; background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); border: 1px solid var(--glass-border); border-radius: 16px; padding: 1.25rem; text-decoration: none; display: flex; flex-direction: column; justify-content: space-between; min-height: 160px;">
+                <div>
+                    <div style="font-size: 0.7rem; color: #10B981; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; font-weight: 700;">Patch Management</div>
+                    <h3 style="font-size: 1.15rem; color: var(--text-primary); font-weight: 700; line-height: 1.3; margin: 0 0 10px 0;">New High-Severity CVEs Added to KEV Catalog</h3>
+                </div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); display:flex; align-items: center; gap: 5px;"><i class="fas fa-clock"></i> Yesterday</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Block C: Top 5 Deep-Dive Articles -->
+    <div class="m-section" style="padding: 2rem 1.25rem; border-top: 1px solid var(--glass-border);">
+        <h2 style="font-size: 1.3rem; font-weight: 800; margin: 0 0 1.25rem 0; color: var(--text-primary);">Deep Dives & Research</h2>
+        <div class="m-article-feed" style="display: flex; flex-direction: column; gap: 15px;">
+            <a href="/articles/glassworm-openvsx-supply-chain-2026.html" style="display: flex; gap: 15px; text-decoration: none; padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div style="width: 75px; height: 75px; border-radius: 10px; background: url('/images/glassworm-banner.jpeg') center/cover; flex-shrink: 0;"></div>
+                <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="font-size: 0.65rem; color: #8b5cf6; font-weight: 700; text-transform: uppercase;">Supply Chain Insight</div>
+                    <h4 style="font-size: 0.95rem; font-weight: 700; margin: 0; color: var(--text-primary); line-height: 1.3; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">GlassWorm: The Open VSX Supply Chain Nightmare</h4>
+                    <div style="font-size: 0.75rem; color: var(--text-muted);">Feb 23, 2026</div>
+                </div>
+            </a>
+            
+            <a href="/articles/anthropic-project-glasswing-2026.html" style="display: flex; gap: 15px; text-decoration: none; padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div style="width: 75px; height: 75px; border-radius: 10px; background: url('/images/project-glasswing-banner.jpg') center/cover; flex-shrink: 0;"></div>
+                <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="font-size: 0.65rem; color: #ec4899; font-weight: 700; text-transform: uppercase;">AI Security</div>
+                    <h4 style="font-size: 0.95rem; font-weight: 700; margin: 0; color: var(--text-primary); line-height: 1.3; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">Anthropic's Project Glasswing Analysis</h4>
+                    <div style="font-size: 0.75rem; color: var(--text-muted);">Feb 20, 2026</div>
+                </div>
+            </a>
+            
+            <a href="/articles/booking-com-breach-2026.html" style="display: flex; gap: 15px; text-decoration: none; padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div style="width: 75px; height: 75px; border-radius: 10px; background: url('/images/booking-com-breach.jpg') center/cover; flex-shrink: 0;"></div>
+                <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div style="font-size: 0.65rem; color: #FF6B35; font-weight: 700; text-transform: uppercase;">Threat Analysis</div>
+                    <h4 style="font-size: 0.95rem; font-weight: 700; margin: 0; color: var(--text-primary); line-height: 1.3; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">Booking.com OAuth Exploitation Chain</h4>
+                    <div style="font-size: 0.75rem; color: var(--text-muted);">Feb 16, 2026</div>
+                </div>
+            </a>
+            
+            <div style="text-align: center; margin-top: 5px;">
+                <a href="/articles.html" style="color: var(--accent-cyan); font-weight: 700; font-size: 0.85rem; text-decoration: none;">View All Articles <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Block D: Top Tactical Guides (Glass Stack) -->
+    <div class="m-section" style="padding: 2.5rem 1.25rem; background: rgba(0,0,0,0.2);">
+        <h2 style="font-size: 1.3rem; font-weight: 800; margin: 0 0 1.25rem 0; color: var(--text-primary);">Security Frameworks & Guides</h2>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="/guides/iso-27001-certification-roadmap.html" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 1.15rem; border-radius: 12px; text-decoration: none; display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 12px; color: var(--text-primary); font-weight: 600;"><i class="fas fa-clipboard-check" style="color: #10B981; width:20px; text-align:center;"></i> ISO 27001 Roadmap</div>
+                <i class="fas fa-chevron-right" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+            </a>
+            <a href="/guides/nist-csf-2-implementation.html" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 1.15rem; border-radius: 12px; text-decoration: none; display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 12px; color: var(--text-primary); font-weight: 600;"><i class="fas fa-sitemap" style="color: #3b82f6; width:20px; text-align:center;"></i> NIST CSF 2.0 Guide</div>
+                <i class="fas fa-chevron-right" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+            </a>
+            <a href="/guides/phishing-simulation-security-awareness.html" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 1.15rem; border-radius: 12px; text-decoration: none; display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 12px; color: var(--text-primary); font-weight: 600;"><i class="fas fa-fish" style="color: #ec4899; width:20px; text-align:center;"></i> Phishing Awareness Automation</div>
+                <i class="fas fa-chevron-right" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+            </a>
+            <div style="text-align: center; margin-top: 10px;">
+                <a href="/guides/" style="color: var(--text-muted); font-weight: 600; font-size: 0.85rem; text-decoration: none;">View 20+ Free Guides</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Block E: Tool & Resource Hub (iOS Settings Style) -->
+    <div class="m-section" style="padding: 2rem 1.25rem;">
+        <h2 style="font-size: 1.3rem; font-weight: 800; margin: 0 0 1.25rem 0; color: var(--text-primary);">Tools & Analytics</h2>
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; overflow: hidden;">
+            <a href="/threat-intel.html" style="padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div style="display: flex; align-items: center; gap: 12px;"><div style="width:28px;height:28px;background:rgba(0,217,255,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--accent-cyan);"><i class="fas fa-chart-network"></i></div> <span style="color: var(--text-primary); font-weight: 600;">Live Threat Dashboard</span></div>
+                <i class="fas fa-chevron-right" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+            </a>
+            <a href="/hacker-chatter.html" style="padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div style="display: flex; align-items: center; gap: 12px;"><div style="width:28px;height:28px;background:rgba(138,43,226,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#8a2be2;"><i class="fas fa-user-secret"></i></div> <span style="color: var(--text-primary); font-weight: 600;">Hacker Chatter OSINT</span></div>
+                <i class="fas fa-chevron-right" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+            </a>
+            <a href="/tools/grc-assessment/" style="padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div style="display: flex; align-items: center; gap: 12px;"><div style="width:28px;height:28px;background:rgba(16,185,129,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#10B981;"><i class="fas fa-clipboard-check"></i></div> <span style="color: var(--text-primary); font-weight: 600;">ISO 27001 GRC Tool</span></div>
+                <i class="fas fa-chevron-right" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+            </a>
+            <a href="/comparisons/" style="padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; text-decoration: none;">
+                <div style="display: flex; align-items: center; gap: 12px;"><div style="width:28px;height:28px;background:rgba(255,107,53,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#FF6B35;"><i class="fas fa-balance-scale"></i></div> <span style="color: var(--text-primary); font-weight: 600;">Tool Comparisons</span></div>
+                <i class="fas fa-chevron-right" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+</main>
 
     <!-- ========== FAQ SECTION (SEO + User Value) ========== -->
     <section class="faq-section" id="faq">

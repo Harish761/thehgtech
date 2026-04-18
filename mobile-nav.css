@@ -172,3 +172,17 @@ html, body {
         color: #111;
     }
 }
+
+/* HOMEPAGE MOBILE OVERHAUL CSS */
+@media(max-width: 768px) {
+    main#main-content > *:not(.m-home-layout) {
+        display: none !important;
+    }
+    .m-home-layout.m-only {
+        display: block !important;
+        margin-top: 60px; /* Offset for sticky header */
+    }
+    .main-footer {
+        display: block !important; /* Ensure footer displays below our mobile block */
+    }
+}
