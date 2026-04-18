@@ -175,13 +175,33 @@ html, body {
 
 /* HOMEPAGE MOBILE OVERHAUL CSS */
 @media(max-width: 768px) {
-      .hero, .trust-section, .solutions-section, .featured-section, .cveSection { display: none !important; }
 
-    .m-home-layout.m-only {
+    /* ---- Hide desktop-only homepage sections ---- */
+    .hero, .trust-section, .solutions-section, .featured-section, .cveSection { display: none !important; }
+
+    /* ---- Restore the main container so mobile sections are visible ---- */
+    main#main-content {
         display: block !important;
-        margin-top: 60px; /* Offset for sticky header */
+        padding-top: 60px; /* offset for fixed m-header */
     }
+
+    /* ---- New mobile-first hero & feed blocks (m-only) ---- */
+    .m-mobile-hero.m-only {
+        display: block !important;
+    }
+
+    .m-mobile-feed.m-only {
+        display: block !important;
+    }
+
+    /* ---- Show the #news section's mobile swipe cards ---- */
+    #news {
+        display: block !important;
+        padding: 1.5rem 1rem !important;
+    }
+
+    /* ---- Footer still renders ---- */
     .main-footer {
-        display: block !important; /* Ensure footer displays below our mobile block */
+        display: block !important;
     }
 }

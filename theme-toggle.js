@@ -35,6 +35,26 @@
         // Target any legacy or modern theme toggle button
         const toggles = document.querySelectorAll('.theme-toggle, .m-theme-toggle, #themeToggle, .mobile-theme-toggle, .m-header__btn--theme');
 
+        // Wire up the mobile top-header theme button (simple icon swap, no track UI)
+        const mobileTopBtn = document.getElementById('m-theme-toggle-top');
+        if (mobileTopBtn && !mobileTopBtn._themeWired) {
+            mobileTopBtn._themeWired = true;
+            const syncTopIcon = () => {
+                const icon = mobileTopBtn.querySelector('i');
+                if (!icon) return;
+                const isLight = document.body.classList.contains('light-mode');
+                icon.className = isLight ? 'fas fa-sun' : 'fas fa-moon';
+            };
+            mobileTopBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                window.toggleTheme();
+                syncTopIcon();
+            });
+            window.addEventListener('themeChanged', syncTopIcon);
+            syncTopIcon(); // Set correct icon on page load
+        }
+
         toggles.forEach(btn => {
             if (btn.classList.contains('premium-cyber-toggle')) return;
             // Strip out old properties
@@ -75,7 +95,7 @@
             });
         });
 
-        console.log(`[theme-toggle.js] ✓ Upgraded ${toggles.length} theme toggles to Premium Cyber variant.`);
+        console.log(`[theme-toggle.js] ✓ Upgraded ${toggles.length} desktop toggles + mobile top-bar button.`);
     }
 
     if (document.readyState === 'loading') {
