@@ -524,52 +524,68 @@
             document.head.appendChild(fullres);
         });
     </script>
+    <link rel="stylesheet" href="/mobile-nav.css">
 </head>
 
 <body>
     <!-- Mobile Header -->
-    <header class="m-header m-only">
-        <div class="m-header__logo" style="display: flex; align-items: center; gap: 0.75rem;">
-            <img src="/logo-dark.png" alt="TheHGTech Logo" class="m-logo-img logo-dark" width="28" height="28" style="height: 28px; width: 28px; margin: 0; object-fit: contain;">
-            <img src="/logo-light.png" alt="TheHGTech Logo" class="m-logo-img logo-light" width="28" height="28" style="height: 28px; width: 28px; margin: 0; object-fit: contain;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #ec4899, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-        </div>
-        <div class="m-header__actions">
-            <button class="m-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
-                <span class="m-theme-toggle__thumb"></span>
-                <span class="m-theme-toggle__stars"><span class="m-theme-toggle__star"></span><span class="m-theme-toggle__star"></span></span>
-            </button>
-            <button class="m-header__btn m-header__btn--search" data-action="search" aria-label="Search"><i class="fas fa-search"></i></button>
-        </div>
-    </header>
+<!-- ========== NEW SMART MOBILE HEADER ========== -->
+<header class="m-header m-only">
+    <div class="m-header__logo">
+        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </a>
+    </div>
+    <div class="m-header__actions">
+        <!-- Search triggers Command Palette -->
+        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </button>
+        <!-- Hamburger Menu Toggle -->
+        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
 
-    <!-- Bottom Navigation -->
-    <nav class="m-bottom-nav m-only">
-        <a href="/" class="m-bottom-nav__item">
-            <i class="fas fa-home"></i>
-            <span>Home</span>
-        </a>
-        <a href="/index.html#news" class="m-bottom-nav__item">
-            <i class="fas fa-bolt"></i>
-            <span>News</span>
-        </a>
-        <a href="/threat-intel.html" class="m-bottom-nav__item">
-            <i class="fas fa-satellite-dish"></i>
-            <span>Intel</span>
-        </a>
-        <a href="/cve-tracker.html" class="m-bottom-nav__item">
-            <i class="fas fa-bug"></i>
-            <span>CVEs</span>
-        </a>
-        <a href="/articles.html" class="m-bottom-nav__item">
-            <i class="fas fa-newspaper"></i>
-            <span>Articles</span>
-        </a>
-        <a href="/guides/" class="m-bottom-nav__item active">
-            <i class="fas fa-book"></i>
-            <span>Guides</span>
-        </a>
-    </nav>
+<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+<div class="m-menu-overlay m-only" id="m-menu-overlay">
+    <div class="m-menu-header">
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="m-menu-content">
+        <div class="m-menu-section">
+            <div class="m-menu-title">Intelligence</div>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Resources</div>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Tools</div>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Settings</div>
+            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+            </button>
+        </div>
+    </div>
+</div>
+
 
     <!-- Search Overlay -->
     <div class="m-search-overlay m-only">
@@ -1352,6 +1368,7 @@ index=llm_logs
 <script src="../ui-enhancements.js?v=20260220" defer></script>
 
     <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
 </body>
 
 </html>
