@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-04-19T02:44:24.443104",
+  "last_updated": "2026-04-19T13:02:46.921527",
   "period": "Last 7 days",
   "total_groups": 30,
-  "total_victims": 292,
+  "total_victims": 294,
   "groups": [
     {
       "name": "Coinbasecartel",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Dragonforce",
-      "count": 38,
+      "count": 36,
       "victims": [
         {
           "name": "medicalnetworks CJ GmbH & Co. KG",
@@ -148,16 +148,16 @@
           "discovered_date": "2026-04-14T14:15:32.964223"
         },
         {
-          "name": "novafp.com",
-          "date": "2026-04-14 13:00:37.396562",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=abf898a3-5883-4657-a4f0-a336b44a231e",
-          "discovered_date": "2026-04-14T13:00:37.396562"
+          "name": "imadesign.com",
+          "date": "2026-04-14 13:03:56.286063",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=9b6e3e04-9791-4e93-ad79-beb5974076ce",
+          "discovered_date": "2026-04-14T13:03:56.286063"
         },
         {
-          "name": "advprograms.com",
-          "date": "2026-04-14 13:02:19.162882",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=83b95c5a-633b-4f5d-9309-8aa68a611bcf",
-          "discovered_date": "2026-04-14T13:02:19.162882"
+          "name": "tremcar.com",
+          "date": "2026-04-14 13:05:06.722049",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=8db5a061-8ab7-446a-9c8e-c00b77adf62c",
+          "discovered_date": "2026-04-14T13:05:06.722049"
         }
       ],
       "industries": [
@@ -178,7 +178,7 @@
       "trend_percentage": 15,
       "daily_counts": [
         5,
-        22,
+        20,
         6,
         2,
         2,
@@ -363,6 +363,95 @@
       ]
     },
     {
+      "name": "Qilin",
+      "count": 21,
+      "victims": [
+        {
+          "name": "Nanometrics",
+          "date": "2026-04-19 12:47:14.130349",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=762b5171-94c3-4331-89b6-75515cad5217",
+          "discovered_date": "2026-04-19T12:47:14.130349"
+        },
+        {
+          "name": "Henley",
+          "date": "2026-04-19 12:46:32.620198",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=58b388ea-37db-4113-870f-16d1eb041d0b",
+          "discovered_date": "2026-04-19T12:46:32.620198"
+        },
+        {
+          "name": "HS Technology Group",
+          "date": "2026-04-18 17:55:08.579295",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=6277f05c-0c36-4af9-a003-6217d7cf60c5",
+          "discovered_date": "2026-04-18T17:55:08.579295"
+        },
+        {
+          "name": "HBX Group",
+          "date": "2026-04-17 16:20:32.925402",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=a00422e2-f93b-3e47-9c2b-35386294a918",
+          "discovered_date": "2026-04-17T16:20:32.925402"
+        },
+        {
+          "name": "Clearwater Marine Aquarium",
+          "date": "2026-04-15 20:26:59.814312",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=1b2b5018-bc00-3fc8-b5b5-01b2110c9924",
+          "discovered_date": "2026-04-15T20:26:59.814312"
+        },
+        {
+          "name": "Limkon",
+          "date": "2026-04-15 18:59:33.389359",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=433a4569-2ad7-3b40-b1d1-1b5bf391aa35",
+          "discovered_date": "2026-04-15T18:59:33.389359"
+        },
+        {
+          "name": "Gruppo ICM SPA",
+          "date": "2026-04-15 14:45:47.909710",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c7f1fef9-9aab-3ba9-8758-9a21b1cb1bf3",
+          "discovered_date": "2026-04-15T14:45:47.909710"
+        },
+        {
+          "name": "Nanometrics",
+          "date": "2026-04-19T12:47:14+00:00",
+          "url": "https://www.ransomware.live/id/TmFub21ldHJpY3NAcWlsaW4=",
+          "discovered_date": "2026-04-19T12:47:14+00:00"
+        },
+        {
+          "name": "Henley",
+          "date": "2026-04-19T12:46:32+00:00",
+          "url": "https://www.ransomware.live/id/SGVubGV5QHFpbGlu",
+          "discovered_date": "2026-04-19T12:46:32+00:00"
+        },
+        {
+          "name": "HS Technology Group",
+          "date": "2026-04-18T17:55:08+00:00",
+          "url": "https://www.ransomware.live/id/SFMgVGVjaG5vbG9neSBHcm91cEBxaWxpbg==",
+          "discovered_date": "2026-04-18T17:55:08+00:00"
+        }
+      ],
+      "industries": [
+        "Consumer Services",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "CL",
+        "CO",
+        "DE",
+        "FR",
+        "GB"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        7,
+        0,
+        6,
+        0,
+        2,
+        2,
+        4
+      ]
+    },
+    {
       "name": "Safepay",
       "count": 18,
       "victims": [
@@ -450,95 +539,6 @@
         0,
         18,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Qilin",
-      "count": 17,
-      "victims": [
-        {
-          "name": "HS Technology Group",
-          "date": "2026-04-18 17:55:08.579295",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=6277f05c-0c36-4af9-a003-6217d7cf60c5",
-          "discovered_date": "2026-04-18T17:55:08.579295"
-        },
-        {
-          "name": "HBX Group",
-          "date": "2026-04-17 16:20:32.925402",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=a00422e2-f93b-3e47-9c2b-35386294a918",
-          "discovered_date": "2026-04-17T16:20:32.925402"
-        },
-        {
-          "name": "Clearwater Marine Aquarium",
-          "date": "2026-04-15 20:26:59.814312",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=1b2b5018-bc00-3fc8-b5b5-01b2110c9924",
-          "discovered_date": "2026-04-15T20:26:59.814312"
-        },
-        {
-          "name": "Limkon",
-          "date": "2026-04-15 18:59:33.389359",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=433a4569-2ad7-3b40-b1d1-1b5bf391aa35",
-          "discovered_date": "2026-04-15T18:59:33.389359"
-        },
-        {
-          "name": "Gruppo ICM SPA",
-          "date": "2026-04-15 14:45:47.909710",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/view?uuid=c7f1fef9-9aab-3ba9-8758-9a21b1cb1bf3",
-          "discovered_date": "2026-04-15T14:45:47.909710"
-        },
-        {
-          "name": "HS Technology Group",
-          "date": "2026-04-18T17:55:08+00:00",
-          "url": "https://www.ransomware.live/id/SFMgVGVjaG5vbG9neSBHcm91cEBxaWxpbg==",
-          "discovered_date": "2026-04-18T17:55:08+00:00"
-        },
-        {
-          "name": "HBX Group",
-          "date": "2026-04-17T16:20:32+00:00",
-          "url": "https://www.ransomware.live/id/SEJYIEdyb3VwQHFpbGlu",
-          "discovered_date": "2026-04-17T16:20:32+00:00"
-        },
-        {
-          "name": "Clearwater Marine Aquarium",
-          "date": "2026-04-15T20:26:59+00:00",
-          "url": "https://www.ransomware.live/id/Q2xlYXJ3YXRlciBNYXJpbmUgQXF1YXJpdW1AcWlsaW4=",
-          "discovered_date": "2026-04-15T20:26:59+00:00"
-        },
-        {
-          "name": "Limkon",
-          "date": "2026-04-15T18:59:33+00:00",
-          "url": "https://www.ransomware.live/id/TGlta29uQHFpbGlu",
-          "discovered_date": "2026-04-15T18:59:33+00:00"
-        },
-        {
-          "name": "Gruppo ICM SPA",
-          "date": "2026-04-15T14:45:47+00:00",
-          "url": "https://www.ransomware.live/id/R3J1cHBvIElDTSBTUEFAcWlsaW4=",
-          "discovered_date": "2026-04-15T14:45:47+00:00"
-        }
-      ],
-      "industries": [
-        "Consumer Services",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "CL",
-        "CO",
-        "DE",
-        "FR",
-        "IT"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        7,
-        0,
-        6,
-        0,
-        2,
-        2,
         0
       ]
     },
