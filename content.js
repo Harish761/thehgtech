@@ -5,29 +5,65 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 18 2026",
+            "headline": "Protobuf.js Flaw—Remote Code Execution Threat for JavaScript Apps",
+            "title": "Critical Flaw in Protobuf.js Enables Remote JavaScript Code Execution",
+            "content": "A critical remote code execution vulnerability has been identified in protobuf.js, a popular JavaScript implementation of Google&#x27;s Protocol Buffers. The flaw allows attackers to execute arbitrary code, posing a significant threat to applications relying on this library. Security researchers have released proof-of-concept exploit code, highlighting the urgency for developers to update their systems. This vulnerability underscores the risks associated with third-party libraries in software development. Organizations using protobuf.js should prioritize patching to mitigate potential exploitation. The flaw&#x27;s discovery emphasizes the need for rigorous security assessments in open-source projects.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-flaw-in-protobuf-library-enables-javascript-code-execution/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 18 2026",
+            "headline": "NAKIVO v11.2 Boosts Ransomware Defense and Replication Speed",
+            "title": "NAKIVO v11.2 Enhances Ransomware Defense and Supports vSphere 9",
+            "content": "NAKIVO Inc. has launched version 11.2 of its Backup &amp; Replication software, introducing enhanced ransomware defense and faster data replication capabilities. The update includes support for VMware vSphere 9 and Proxmox VE 9.0, catering to a broader range of virtualization environments. This release aims to provide proactive data protection, crucial for organizations facing increasing ransomware threats. The improved replication speed promises reduced downtime and enhanced data recovery processes. Users are encouraged to upgrade to leverage these new features and bolster their data resilience strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nakivo-v112-ransomware-defense-faster-replication-vsphere-9-and-proxmox-ve-90-support/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "Apache ActiveMQ Flaw Exploited—CISA Adds to KEV List",
+            "title": "Apache ActiveMQ CVE-2026-34197 Actively Exploited, Added to CISA KEV",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-34197, a high-severity vulnerability in Apache ActiveMQ Classic, to its Known Exploited Vulnerabilities (KEV) catalog. The flaw, with a CVSS score of 8.8, is under active exploitation, allowing attackers to compromise affected systems. Apache ActiveMQ is widely used in enterprise environments, making this vulnerability particularly concerning. Organizations using ActiveMQ should apply available patches immediately to prevent potential breaches. This addition to the KEV list highlights the ongoing threat landscape and the importance of timely vulnerability management.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Microsoft Defender Zero-Day—RedSun Exploit Grants SYSTEM Access",
+            "title": "Microsoft Defender &quot;RedSun&quot; Zero-Day PoC Grants SYSTEM Privileges",
+            "content": "A new zero-day vulnerability in Microsoft Defender, dubbed &quot;RedSun,&quot; has been exposed by the researcher &quot;Chaotic Eclipse.&quot; The proof-of-concept exploit allows attackers to gain SYSTEM privileges, posing a severe threat to Windows systems. This marks the second zero-day disclosure by the researcher in recent weeks, highlighting concerns over Microsoft&#x27;s collaboration with cybersecurity researchers. Organizations using Microsoft Defender should monitor updates and apply patches promptly to mitigate risks. The disclosure underscores the critical nature of zero-day vulnerabilities in widely used security products.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/new-microsoft-defender-redsun-zero-day-poc-grants-system-privileges/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "PowMix Botnet Targets Czech Workforce with Randomized C2 Traffic",
+            "title": "PowMix Botnet Hits Czech Workers Using Randomized Command-and-Control Traffic",
+            "content": "A newly discovered botnet, PowMix, is actively targeting workers in the Czech Republic, employing randomized command-and-control (C2) traffic to evade detection. Active since at least December 2025, PowMix represents a sophisticated threat to the region&#x27;s workforce. The botnet&#x27;s use of randomized C2 beaconing intervals complicates traditional detection methods, posing challenges for cybersecurity defenses. Organizations in the Czech Republic should enhance their network monitoring and implement advanced threat detection solutions. This campaign highlights the evolving tactics of botnet operators in targeting specific geographic regions.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/newly-discovered-powmix-botnet-hits.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 15 2026",
+            "headline": "nginx-ui Flaw—CVE-2026-33032 Enables Full Server Takeover",
+            "title": "Actively Exploited nginx-ui Flaw (CVE-2026-33032) Allows Server Takeover",
+            "content": "A critical security flaw in nginx-ui, tracked as CVE-2026-33032, is being actively exploited, enabling attackers to take full control of Nginx servers. This authentication bypass vulnerability has a CVSS score of 9.8, indicating its severe impact. As nginx-ui is a widely used web-based management tool, the flaw poses a significant risk to affected systems. Administrators are urged to apply patches immediately to secure their servers against potential exploitation. This incident highlights the critical need for timely updates and robust security measures in server management tools.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 18 2026",
             "headline": "Mirai Variant Hijacks TBK DVRs—Exploits CVE-2024-3721",
             "title": "Mirai Variant Nexcorium Exploits CVE-2024-3721 to Hijack TBK DVRs for DDoS Botnet",
             "content": "Threat actors are leveraging CVE-2024-3721 to compromise TBK DVRs and outdated TP-Link Wi-Fi routers, deploying a new Mirai botnet variant called Nexcorium. This vulnerability allows attackers to hijack these devices, integrating them into a distributed denial-of-service (DDoS) botnet. Fortinet FortiGuard Labs and Palo Alto Networks Unit 42 have identified this exploitation, which poses a significant threat to network security by amplifying DDoS attacks. Organizations using affected devices should prioritize firmware updates and consider replacing end-of-life hardware to mitigate risks. This incident underscores the persistent threat of IoT device vulnerabilities being exploited by botnets.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/mirai-variant-nexcorium-exploits-cve.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "NKAbuse Malware Deployed via Marimo Flaw on Hugging Face",
-            "title": "Hackers Exploit Marimo Flaw to Deploy NKAbuse Malware from Hugging Face",
-            "content": "A critical vulnerability in the Marimo reactive Python notebook is being exploited to deploy NKAbuse malware, hosted on Hugging Face Spaces. This flaw allows attackers to execute arbitrary code, compromising systems running the affected software. The exploitation of this vulnerability highlights the growing trend of leveraging popular platforms for malware distribution. Users of Marimo are urged to apply patches immediately to prevent unauthorized access and potential data breaches. This incident emphasizes the importance of securing development environments against emerging threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-marimo-flaw-to-deploy-nkabuse-malware-from-hugging-face/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Defender 0-Day and SonicWall Brute-Force Highlight ThreatsDay",
-            "title": "ThreatsDay Bulletin: Defender 0-Day, SonicWall Brute-Force, and Excel RCE",
-            "content": "This week&#x27;s ThreatsDay Bulletin reveals a series of alarming vulnerabilities, including a zero-day in Microsoft Defender, brute-force attacks on SonicWall, and a 17-year-old remote code execution (RCE) flaw in Excel. These vulnerabilities are being actively exploited, posing significant risks to enterprises relying on these technologies. The bulletin underscores the need for immediate patching and enhanced security measures to protect against these sophisticated threats. Security professionals should prioritize updates and monitor for unusual activity to mitigate potential breaches. This highlights the ongoing challenge of managing legacy vulnerabilities and the evolving tactics of cybercriminals.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/threatsday-bulletin-17-year-old-excel.html",
             "relatedResources": []
         },
         {
@@ -76,15 +112,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 16 2026",
-            "headline": "Cisco Patches Critical Flaws in Identity Services, Webex",
-            "title": "Cisco Issues Patches for Critical Identity Services and Webex Vulnerabilities",
-            "content": "Cisco has released patches addressing four critical vulnerabilities in its Identity Services and Webex platforms, which could lead to arbitrary code execution and user impersonation. The vulnerabilities include CVE-2026-20184, which has a high CVSS score, underscoring the severity of the threat. These flaws could allow attackers to gain unauthorized access and control over affected systems. Cisco urges users to apply the patches immediately to mitigate potential exploitation risks. This update is part of Cisco&#x27;s ongoing commitment to maintaining the security and integrity of its services.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/cisco-patches-four-critical-identity.html",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 17 2026",
             "headline": "Microsoft Defender Zero-Days—Two Still Unpatched",
             "title": "Three Microsoft Defender Zero-Days Exploited; Two Remain Unpatched",
@@ -110,36 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-apache-activemq-flaw-as-actively-exploited-in-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Cursor AI Flaw Exposes Developer Devices to Attack",
-            "title": "Vulnerability in Cursor AI Allows Unauthorized Access to Developer Machines",
-            "content": "A vulnerability in Cursor AI has been found to expose developer devices to potential attacks. The flaw involves an indirect prompt injection that can be combined with a sandbox bypass and Cursor&#x27;s remote tunnel feature to gain shell access to affected machines. This vulnerability poses a significant risk to developers using Cursor AI, as it could lead to unauthorized access and data theft. Organizations relying on Cursor AI should review their security configurations and apply any available updates or mitigations to safeguard their systems. This incident highlights the need for robust security measures in AI development environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cursor-ai-vulnerability-exposed-developer-devices/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Global Crackdown Shuts Down 53 DDoS Domains",
-            "title": "International Law Enforcement Takes Down 53 DDoS-for-Hire Domains",
-            "content": "In a coordinated international effort, authorities from 21 countries have successfully dismantled 53 domains offering DDoS-for-hire services. These services allowed malicious actors to launch distributed denial-of-service (DDoS) attacks against targeted networks, disrupting operations and causing significant damage. The takedown is part of a broader initiative to combat cybercrime and reduce the availability of illegal DDoS services. Organizations are encouraged to remain vigilant against DDoS threats and consider implementing robust DDoS protection measures. This operation demonstrates the effectiveness of global collaboration in tackling cybercriminal activities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/53-ddos-domains-taken-down-by-law-enforcement/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Windows Zero-Days Exploited for Elevated Access",
-            "title": "Leaked Windows Zero-Days Exploited to Gain Elevated Permissions",
-            "content": "Threat actors are actively exploiting three recently leaked zero-day vulnerabilities in Windows to gain SYSTEM or elevated administrator permissions. These vulnerabilities, which have not yet been patched, pose a severe risk to Windows users, particularly those without robust security measures in place. The exploitation allows attackers to bypass security controls and potentially take full control of affected systems. Organizations using Windows should closely monitor security advisories from Microsoft and apply any available mitigations to protect their networks. This situation highlights the critical importance of timely vulnerability management and threat monitoring.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/recently-leaked-windows-zero-days-now-exploited-in-attacks/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 18 2026",
+            "headline": "Global DRAM Shortage—60% Demand Met by 2027",
+            "title": "Prolonged DRAM Shortage Expected to Last Until 2030",
+            "content": "The global DRAM (Dynamic Random-Access Memory) shortage is projected to persist, with manufacturers only meeting 60% of demand by the end of 2027, as reported by Nikkei Asia. Despite increased production efforts by major memory makers such as Samsung, SK Hynix, and Micron, SK Group&#x27;s chairman warns that shortages could extend until 2030. This ongoing deficit impacts a wide range of industries reliant on memory chips, from consumer electronics to automotive sectors. The shortage underscores the critical need for diversified supply chains and increased investment in semiconductor manufacturing capabilities. Industry professionals should prepare for continued constraints in memory availability and consider strategic sourcing and inventory management.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "OpenAI Codex Update Challenges Anthropic&#x27;s Claude Code",
+            "title": "OpenAI Enhances Codex with New Capabilities Amidst Rivalry",
+            "content": "OpenAI has launched a significant update to its Codex system, enhancing its capabilities to include computer usage, image generation, and memory of past interactions. This update intensifies OpenAI&#x27;s competition with Anthropic, following the success of Anthropic&#x27;s Claude Code. The new features in Codex aim to streamline coding processes and improve developer efficiency, potentially reshaping how software development is approached. These advancements could impact developers and tech companies by offering more robust AI-driven coding assistance. Professionals in software development should explore these new capabilities to leverage AI in their workflows effectively.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Google Chrome AI Mode—Open Links Without Leaving Page",
+            "title": "Google Chrome&#x27;s AI Mode Update Enhances User Experience",
+            "content": "Google has updated its AI Mode in Chrome, allowing users to open links to sources alongside their chat without leaving the current page. This feature enables users to view websites side by side with AI Mode, facilitating seamless follow-up questions and interactions. This update is part of Google&#x27;s ongoing efforts to integrate AI more deeply into its browser, enhancing user experience and productivity. The feature is expected to benefit users who frequently engage in research or multitasking online. Chrome users should update to the latest version to take advantage of this improved functionality.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/913109/google-ai-mode-tabs-sources",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 18 2026",
+            "headline": "Tesla Expands Robotaxi Service to Texas Cities",
+            "title": "Tesla Launches Robotaxi Service in Dallas and Houston",
+            "content": "Tesla has announced the expansion of its robotaxi service to Dallas and Houston, marking a significant step in its autonomous vehicle rollout. The service features Tesla vehicles operating without human monitors or drivers, showcasing advancements in self-driving technology. This expansion is part of Tesla&#x27;s broader strategy to increase its presence in urban mobility solutions. The rollout in these major Texas cities highlights the growing acceptance and integration of autonomous vehicles in public transportation. Residents and visitors in Dallas and Houston can now experience Tesla&#x27;s cutting-edge robotaxi services firsthand.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/18/tesla-brings-its-robotaxi-service-to-dallas-and-houston/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 18 2026",
+            "headline": "Cerebras Files for IPO—$10B OpenAI Deal Secured",
+            "title": "AI Chip Innovator Cerebras Prepares for Public Offering",
+            "content": "Cerebras, a leading AI chip startup, has filed for an initial public offering (IPO) following significant agreements with Amazon Web Services and OpenAI. The deal with OpenAI, reportedly exceeding $10 billion, underscores Cerebras&#x27; pivotal role in advancing AI hardware capabilities. This move positions Cerebras to capitalize on the growing demand for specialized AI chips in data centers and cloud services. The IPO is expected to attract substantial interest from investors looking to tap into the burgeoning AI hardware market. Industry stakeholders should monitor Cerebras&#x27; market entry for potential impacts on AI chip competition and innovation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 18 2026",
+            "headline": "Anthropic and Trump Administration—Supply-Chain Risk Discussions",
+            "title": "Anthropic Engages with Trump Administration Despite Pentagon Concerns",
+            "content": "Anthropic, an AI research company, is reportedly in discussions with high-level members of the Trump administration, despite being designated a supply-chain risk by the Pentagon. This engagement suggests a potential thawing in relations and highlights the complex dynamics between AI companies and government entities. The designation as a supply-chain risk reflects ongoing concerns about national security and technological dependencies. Professionals in the AI and cybersecurity sectors should be aware of these developments, as they may influence regulatory and operational landscapes. Monitoring government interactions with AI firms is crucial for understanding future policy directions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 18 2026",
             "headline": "EU Age-Verification App Hacked in 2 Minutes—Security Flaw Exposed",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Bill Peebles, the head of OpenAI&#x27;s Sora video generation tool, has announced his departure from the company. This follows OpenAI&#x27;s decision to discontinue Sora last month as part of a strategic pivot away from consumer-focused projects. The move aligns with OpenAI&#x27;s broader strategy to concentrate on core AI research and enterprise applications, minimizing involvement in non-essential ventures. Peebles&#x27; exit marks a significant shift in OpenAI&#x27;s operational focus, reflecting its commitment to refining its AI offerings and enhancing its competitive edge in the enterprise sector.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/914463/openai-sora-bill-peebles-kevin-weil-leaving-departing",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Tinder Embraces Sam Altman&#x27;s Orb for User Verification",
-            "title": "Tinder Offers Free Boosts for Users Verified by Altman&#x27;s Orb",
-            "content": "Tinder is integrating an innovative identity verification method using a biometric orb developed by World, co-founded by OpenAI CEO Sam Altman. Users who verify their identity through this orb will receive five free boosts in the app, enhancing their visibility. This initiative is part of a broader trend of adopting advanced verification technologies to combat fake profiles and enhance user trust. The orb&#x27;s deployment on Tinder signals a growing acceptance of biometric solutions in digital identity verification, potentially setting a new standard for online platforms.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/914385/world-id-tinder-identity-verifying-orb",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "OpenAI Shifts Focus—Weil and Peebles Exit",
-            "title": "Kevin Weil and Bill Peebles Leave OpenAI Amid Strategic Refocus",
-            "content": "OpenAI is undergoing a significant restructuring, resulting in the departure of key figures Kevin Weil and Bill Peebles. The company has decided to shut down its Sora project and dissolve its science team, marking a decisive shift away from consumer-oriented projects. This strategic refocus aims to bolster OpenAI&#x27;s enterprise AI capabilities, aligning with its long-term vision of leading in AI research and development. The exits of Weil and Peebles highlight OpenAI&#x27;s commitment to streamlining operations and concentrating resources on core AI innovations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Anthropic&#x27;s Cybersecurity Model Could Mend Government Ties",
-            "title": "Anthropic Develops Cybersecurity Model to Reconcile with Government",
-            "content": "Anthropic, an AI company previously criticized by the Trump administration as a &quot;radical left&quot; entity, is making strides to improve its standing with the government. The company has introduced a new cybersecurity model designed to address national security concerns and demonstrate its commitment to robust security practices. This development could ease tensions and foster collaboration between Anthropic and governmental bodies. The model&#x27;s introduction reflects a broader industry trend towards enhancing AI security measures, crucial for maintaining trust and ensuring compliance with regulatory standards.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/914229/tides-turning-anthropic-trump-administration-cybersecurity-mythos-preview",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Ecom-RLVE Enhances E-Commerce AI with Verifiable Environments",
-            "title": "Ecom-RLVE Introduces Adaptive Verifiable Environments for E-Commerce AI Agents",
-            "content": "Hugging Face has unveiled Ecom-RLVE, a new framework designed to enhance the capabilities of conversational AI agents in e-commerce settings. This adaptive system provides verifiable environments that allow AI models to interact with simulated e-commerce scenarios, improving their decision-making and customer interaction skills. By leveraging reinforcement learning, Ecom-RLVE aims to optimize the performance of AI agents, making them more reliable and efficient in handling complex customer queries. This development is poised to benefit e-commerce platforms by reducing error rates and increasing customer satisfaction. Industry professionals should consider integrating such frameworks to stay competitive in the rapidly evolving AI landscape.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ecom-rlve",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Allbirds&#x27; AI Pivot—Stock Price Soars Sevenfold",
-            "title": "Allbirds Declares AI Focus, Temporarily Boosts Stock Sevenfold",
-            "content": "In a surprising move, footwear company Allbirds announced its transition into an AI-focused enterprise, causing its stock price to increase sevenfold temporarily. This shift highlights a growing trend among companies to capitalize on AI&#x27;s perceived inevitability, despite lacking substantial AI infrastructure or expertise. The announcement has sparked discussions about the sustainability of such pivots and whether they reflect genuine technological advancements or market speculation. Industry experts caution investors to scrutinize the underlying AI capabilities of companies making similar announcements. This incident underscores the need for due diligence in evaluating AI claims in the business sector.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/913792/ai-divide-sam-altman-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Luma&#x27;s AI Studio Debuts with Moses Film on Prime",
-            "title": "Luma Launches AI-Powered Studio with Moses Film Starring Ben Kingsley",
-            "content": "Luma has launched an AI-powered production studio, with its inaugural project being a film about Moses featuring Academy Award-winner Ben Kingsley. Scheduled for release this spring on Prime Video, this project is part of the Wonder Project, which focuses on faith-based narratives. The studio utilizes AI to enhance production efficiency and storytelling capabilities, marking a significant step in the integration of AI within the entertainment industry. This initiative aims to attract audiences interested in faith-focused content while showcasing the potential of AI in creative processes. Professionals in the media and entertainment sectors should monitor this trend for future opportunities.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/16/luma-launches-ai-powered-production-studio-with-faith-focused-wonder-project/",
             "relatedResources": []
         }
     ],
