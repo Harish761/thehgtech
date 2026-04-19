@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-04-18T15:05:53.005541",
-  "total_incidents": 27379,
+  "last_updated": "2026-04-19T05:15:17.011598",
+  "total_incidents": 27385,
   "incidents": [
+    {
+      "id": "coinbasecartel_astm_group",
+      "victim_name": "ASTM Group",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-18 23:00:34.569080",
+      "industry": "Business Services",
+      "website": "astim.it",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/45dc9fdcadc3c66088a9fe5ca543ce80.png",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/astm",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_hs_technology_group",
+      "victim_name": "HS Technology Group",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-04-18 17:55:08.579295",
+      "industry": "Technology",
+      "website": "www.hstechgroup.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/0533fec96fb0cb43dae943c49da10342.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=6277f05c-0c36-4af9-a003-6217d7cf60c5",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_securitevolfeu",
+      "victim_name": "Securitevolfeu",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-18 17:16:02.982356",
+      "industry": "Technology",
+      "website": "www.securitevolfeu.fr",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/c8afe6d75a34490ab5b2fa41fe8fd19d.png",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/securitevolfeu",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_altpro",
+      "victim_name": "Altpro",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-18 17:15:25.273300",
+      "industry": "Not Found",
+      "website": "altpro.hr",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/ce8340e00951a2c10274a0e97505f6a9.png",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/altpro",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_mccuaig_and_associates_engineering",
+      "victim_name": "McCuaig and associates Engineering",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-18 17:14:49.787292",
+      "industry": "Business Services",
+      "website": "mccuaig.net",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/39a3d282a054e8f43019b901b8cccff2.png",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/mccuaig",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_evict_them_for_me",
+      "victim_name": "Evict them for me",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-04-18 15:31:08.299258",
+      "industry": "Business Services",
+      "website": "evictthemforme.com",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/1b0ecab03bc0c8a66d60e900b51025e8.png",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/evict",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "nightspire_s***s*a_a**ul***e_c***s",
       "victim_name": "S***s*a A**ul***e C***s",
