@@ -9,6 +9,38 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1452",
+      "incident_id": 1452,
+      "title": "Purported AI-Generated Impersonations of Albanian Cardiologist Spiro Qirko and Journalist Ilir Topi ",
+      "date": "2026-04-18",
+      "category": "fraud",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1453",
+      "incident_id": 1453,
+      "title": "Attorney in Fletcher v. Experian Information Solutions, Inc. Reportedly Submitted Reply Brief with P",
+      "date": "2026-04-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1454",
+      "incident_id": 1454,
+      "title": "Purported Deepfake Video Reportedly Portrayed Nirmala Sitharaman Endorsing Investment Scheme",
+      "date": "2026-04-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1455",
+      "incident_id": 1455,
+      "title": "Purported Deepfake Videos Allegedly Impersonated Optometrist Joseph Allen to Promote Myopia-Reversal",
+      "date": "2026-04-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1447",
       "incident_id": 1447,
       "title": "Sixth Circuit Sanctioned Lawyers in Whiting v. City of Athens over Alleged Fake Appellate Citations ",
@@ -994,9 +1026,9 @@
     }
   ],
   "stats": {
-    "total": 124,
-    "last7Days": 1,
-    "last30Days": 37
+    "total": 128,
+    "last7Days": 5,
+    "last30Days": 41
   },
-  "lastUpdated": "2026-04-19T02:20:21.589661+05:30"
+  "lastUpdated": "2026-04-19T09:15:52.771175+05:30"
 }
