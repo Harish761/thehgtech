@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-04-19T05:15:17.011598",
-  "total_incidents": 27385,
+  "last_updated": "2026-04-19T15:06:15.985903",
+  "total_incidents": 27388,
   "incidents": [
+    {
+      "id": "qilin_the_great_cookie",
+      "victim_name": "The Great Cookie",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-04-19 14:07:03.041835",
+      "industry": "Agriculture and Food Production",
+      "website": "www.thegreatcookie.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/935103b412c134948d2626748320890e.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=d7010d59-68cd-4652-bc4d-9718ef78674e",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_nanometrics",
+      "victim_name": "Nanometrics",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-04-19 12:47:14.130349",
+      "industry": "Technology",
+      "website": "www.nanometrics.ca",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/b582ec9feeecfcd566fd23ef9497952b.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=762b5171-94c3-4331-89b6-75515cad5217",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_henley",
+      "victim_name": "Henley",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-04-19 12:46:32.620198",
+      "industry": "Not Found",
+      "website": "www.henleyandcompany.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/40a349c594e138ba683675131b80c632.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=58b388ea-37db-4113-870f-16d1eb041d0b",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "coinbasecartel_astm_group",
       "victim_name": "ASTM Group",
