@@ -1,6 +1,46 @@
 {
   "incidents": [
     {
+      "id": "AIID-1456",
+      "incident_id": 1456,
+      "title": "Video with Reportedly AI-Generated Audio Purported to Show Croatian Footballer Luka Modri\u0107 Endorsing",
+      "date": "2026-04-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1457",
+      "incident_id": 1457,
+      "title": "Video with Reportedly AI-Generated Media Purported to Show Croatian Immunologist Stipan Jonji\u0107 Promo",
+      "date": "2026-04-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1458",
+      "incident_id": 1458,
+      "title": "Video with Reportedly AI-Generated Media Purported to Show Croatian Neurosurgeon Josip Paladino Endo",
+      "date": "2026-04-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1459",
+      "incident_id": 1459,
+      "title": "Video with Reportedly AI-Generated Media Purported to Show Croatian Physician Alemka Markoti\u0107 Endors",
+      "date": "2026-04-19",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1460",
+      "incident_id": 1460,
+      "title": "Baidu Apollo Go Robotaxis Stopped in Traffic During Reported System Failure in Wuhan, Stranding Some",
+      "date": "2026-04-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1451",
       "incident_id": 1451,
       "title": "Purportedly AI-Generated Facebook Video Allegedly Misused Sk\u00ebnder Brataj and Blendi Fevziu to Promot",
@@ -1026,9 +1066,9 @@
     }
   ],
   "stats": {
-    "total": 128,
-    "last7Days": 5,
-    "last30Days": 41
+    "total": 133,
+    "last7Days": 10,
+    "last30Days": 46
   },
-  "lastUpdated": "2026-04-20T02:21:01.569473+05:30"
+  "lastUpdated": "2026-04-20T09:17:27.536675+05:30"
 }
