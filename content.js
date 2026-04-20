@@ -4,57 +4,57 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 19 2026",
+            "headline": "Vercel Breach—Hackers Claim Stolen Data for Sale",
+            "title": "Vercel Confirms Security Breach Amid Hacker Data Sale Claims",
+            "content": "Vercel, a prominent cloud development platform, has confirmed a security breach following claims by threat actors that they have infiltrated its systems and are selling stolen data. The breach has raised concerns over the potential exposure of sensitive information, although specific details about the compromised data have not been disclosed. Vercel&#x27;s security team is actively investigating the incident to assess the scope and impact. This breach underscores the growing trend of cybercriminals targeting cloud service providers to exploit their extensive user bases. Users are advised to monitor their accounts for unusual activity and ensure that security measures, such as two-factor authentication, are in place.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 17 2026",
-            "headline": "Cursor AI Flaw Exposes Developer Devices to Remote Attacks",
-            "title": "Critical Vulnerability in Cursor AI Allows Remote Shell Access to Developer Machines",
-            "content": "A newly discovered vulnerability in Cursor AI has been found to expose developer devices to potential remote attacks. The flaw involves an indirect prompt injection that can be combined with a sandbox bypass and Cursor&#x27;s remote tunnel feature, granting attackers shell access to affected machines. This vulnerability poses a significant risk to developers using Cursor AI, as it could lead to unauthorized access and data breaches. Security experts recommend immediate updates and reviewing system configurations to mitigate potential exploitation. This incident underscores the growing need for robust security measures in AI development environments.",
+            "headline": "Microsoft Defender Zero-Days Exploited—Patch Urgently Needed",
+            "title": "Three Microsoft Defender Zero-Day Vulnerabilities Actively Exploited",
+            "content": "Security firm Huntress has reported active exploitation of three zero-day vulnerabilities in Microsoft Defender, identified as BlueHammer, RedSun, and an unnamed third flaw. These vulnerabilities allow attackers to gain elevated privileges on compromised systems, posing a significant threat to enterprise environments. While Microsoft has yet to release patches for two of the vulnerabilities, organizations are urged to implement mitigation strategies and monitor for unusual activity. The exploitation of these flaws highlights the persistent targeting of security solutions by threat actors seeking to bypass defenses. Users should stay informed on patch releases and apply updates as soon as they become available.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "Apache ActiveMQ RCE Vulnerability Exploited in the Wild",
+            "title": "CVE-2026-34197: Apache ActiveMQ Vulnerability Actively Exploited",
+            "content": "A remote code execution (RCE) vulnerability in Apache ActiveMQ, tracked as CVE-2026-34197, is being actively exploited in the wild. Discovered in early April, this flaw allows attackers to execute arbitrary code on vulnerable systems, potentially leading to full system compromise. Organizations using Apache ActiveMQ are at risk, particularly if they have not yet applied the available patch. This incident highlights the critical need for timely patch management, especially for widely used open-source software. Security teams should prioritize updating to the patched version to mitigate potential exploitation.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cursor-ai-vulnerability-exposed-developer-devices/",
+            "sourceUrl": "https://www.securityweek.com/recent-apache-activemq-vulnerability-exploited-in-the-wild/",
             "relatedResources": []
         },
         {
             "date": "Apr 17 2026",
-            "headline": "Windows Zero-Days Exploited—Threat Actors Gain Elevated Access",
-            "title": "Exploitation of Recent Windows Zero-Days Grants SYSTEM Permissions",
-            "content": "Threat actors are actively exploiting three newly disclosed Windows zero-day vulnerabilities to gain SYSTEM or elevated administrator permissions. These vulnerabilities, affecting various versions of Windows, allow attackers to execute arbitrary code and escalate privileges. The exploitation of these flaws poses a severe threat to organizations relying on Windows systems, potentially leading to unauthorized access and data compromise. Security professionals are urged to apply patches as soon as they become available and to monitor systems for unusual activity. This development highlights the critical importance of timely patch management in maintaining system security.",
+            "headline": "CISA Warns of Active Exploitation of Apache ActiveMQ Flaw",
+            "title": "CISA Alerts on Actively Exploited Apache ActiveMQ Vulnerability",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning regarding the active exploitation of a high-severity vulnerability in Apache ActiveMQ, which went undetected for 13 years before being patched this month. This vulnerability poses a significant risk to organizations using the messaging service, as it can be leveraged for unauthorized access and control. CISA&#x27;s alert underscores the importance of applying security patches promptly to protect against emerging threats. Organizations should review their systems for exposure and ensure that the latest updates are applied to mitigate this risk.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/recently-leaked-windows-zero-days-now-exploited-in-attacks/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-apache-activemq-flaw-as-actively-exploited-in-attacks/",
             "relatedResources": []
         },
         {
             "date": "Apr 16 2026",
-            "headline": "Marimo Flaw Exploited—NKAbuse Malware Deployed via Hugging Face",
-            "title": "Critical Marimo Vulnerability Used to Spread NKAbuse Malware from Hugging Face",
-            "content": "Hackers are leveraging a critical vulnerability in the Marimo reactive Python notebook to deploy a new variant of NKAbuse malware hosted on Hugging Face Spaces. This flaw allows attackers to execute malicious code within compromised environments, posing a significant threat to users of Marimo notebooks. The NKAbuse malware is capable of data exfiltration and system compromise, making it a potent tool for cybercriminals. Users are advised to update their Marimo installations and review security settings to prevent exploitation. This incident highlights the risks associated with vulnerabilities in widely used development tools.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-marimo-flaw-to-deploy-nkabuse-malware-from-hugging-face/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "ThreatsDay: Defender 0-Day, SonicWall Brute-Force, Excel RCE",
-            "title": "Weekly ThreatsDay Bulletin Highlights Critical Security Concerns",
-            "content": "This week&#x27;s ThreatsDay Bulletin reveals a range of critical security threats, including a zero-day vulnerability in Microsoft Defender, a brute-force attack on SonicWall, and a 17-year-old remote code execution (RCE) flaw in Excel. These vulnerabilities highlight the diverse tactics employed by cybercriminals to exploit both new and longstanding weaknesses in widely used software. Organizations are urged to prioritize patching and enhance their security postures to defend against these threats. The bulletin serves as a reminder of the persistent and evolving nature of cybersecurity challenges.",
+            "headline": "PowMix Botnet Targets Czech Workers with Randomized Traffic",
+            "title": "PowMix Botnet Campaign Targets Czech Republic Workforce",
+            "content": "Cybersecurity researchers have identified a new botnet, dubbed PowMix, actively targeting workers in the Czech Republic since December 2025. PowMix employs randomized command-and-control (C2) beaconing intervals to evade detection, complicating efforts to track and mitigate its activities. This campaign highlights the evolving tactics of cybercriminals in targeting specific geographic regions with sophisticated malware. Organizations in the Czech Republic are advised to enhance their network monitoring and implement advanced threat detection solutions to identify and neutralize such threats. The discovery of PowMix underscores the need for continuous vigilance and adaptive security measures.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/threatsday-bulletin-17-year-old-excel.html",
+            "sourceUrl": "https://thehackernews.com/2026/04/newly-discovered-powmix-botnet-hits.html",
             "relatedResources": []
         },
         {
-            "date": "Apr 16 2026",
-            "headline": "Cisco Patches Critical Flaws—Identity Services, Webex at Risk",
-            "title": "Cisco Releases Patches for Critical Identity Services and Webex Vulnerabilities",
-            "content": "Cisco has issued patches to address four critical security vulnerabilities affecting its Identity Services and Webex platforms. These flaws, identified as CVE-2026-20184 and others, could enable arbitrary code execution and allow attackers to impersonate users within the services. The vulnerabilities pose a significant risk to organizations utilizing these Cisco solutions, potentially leading to data breaches and unauthorized access. Cisco users are strongly advised to apply the patches immediately to secure their systems. This action reflects Cisco&#x27;s ongoing commitment to enhancing the security of its products.",
+            "date": "Apr 15 2026",
+            "headline": "Critical nginx-ui Flaw Enables Full Server Takeover",
+            "title": "CVE-2026-33032: nginx-ui Flaw Allows Server Takeover",
+            "content": "A critical security flaw in nginx-ui, an open-source management tool for Nginx servers, is being actively exploited, allowing attackers to bypass authentication and gain full control of affected servers. The vulnerability, identified as CVE-2026-33032, carries a CVSS score of 9.8, reflecting its severe impact. Administrators using nginx-ui are urged to apply the latest security patches immediately to prevent unauthorized access and potential data breaches. This incident serves as a stark reminder of the importance of securing web management interfaces and regularly updating software to protect against exploitation.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/cisco-patches-four-critical-identity.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Patch Tuesday: 167 Windows Vulnerabilities Fixed—Update Now",
-            "title": "Microsoft Addresses 167 Vulnerabilities in April 2026 Patch Tuesday",
-            "content": "Microsoft&#x27;s April 2026 Patch Tuesday release includes fixes for 167 security vulnerabilities across its Windows operating systems and related software. Notably, the update addresses a zero-day vulnerability in SharePoint Server and a publicly disclosed flaw in Windows Defender, dubbed &quot;BlueHammer.&quot; These vulnerabilities could lead to unauthorized access and system compromise if left unpatched. Organizations are urged to apply these updates promptly to protect against potential exploits. This extensive patch release underscores the ongoing challenges in securing complex software ecosystems.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition/",
+            "sourceUrl": "https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html",
             "relatedResources": []
         },
         {
@@ -73,15 +73,6 @@ const websiteContent = {
             "content": "NAKIVO Inc. has launched version 11.2 of its Backup &amp; Replication software, introducing enhanced ransomware defense and faster data replication capabilities. The update includes support for VMware vSphere 9 and Proxmox VE 9.0, catering to a broader range of virtualization environments. This release aims to provide proactive data protection, crucial for organizations facing increasing ransomware threats. The improved replication speed promises reduced downtime and enhanced data recovery processes. Users are encouraged to upgrade to leverage these new features and bolster their data resilience strategies.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/nakivo-v112-ransomware-defense-faster-replication-vsphere-9-and-proxmox-ve-90-support/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Apache ActiveMQ Flaw Exploited—CISA Adds to KEV List",
-            "title": "Apache ActiveMQ CVE-2026-34197 Actively Exploited, Added to CISA KEV",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-34197, a high-severity vulnerability in Apache ActiveMQ Classic, to its Known Exploited Vulnerabilities (KEV) catalog. The flaw, with a CVSS score of 8.8, is under active exploitation, allowing attackers to compromise affected systems. Apache ActiveMQ is widely used in enterprise environments, making this vulnerability particularly concerning. Organizations using ActiveMQ should apply available patches immediately to prevent potential breaches. This addition to the KEV list highlights the ongoing threat landscape and the importance of timely vulnerability management.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
             "relatedResources": []
         },
         {
@@ -110,88 +101,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/1374m-hack-shuts-down-sanctioned-grinex.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Thymeleaf Sandbox Bypass CVE-2026-40478 Fixed",
-            "title": "Critical Sandbox Bypass Fixed in Popular Thymeleaf Java Template Engine",
-            "content": "Thymeleaf maintainers have addressed CVE-2026-40478, a critical sandbox bypass vulnerability in the widely used Java template engine. This flaw, rated 9.1 on the CVSS scale, allowed unauthenticated attackers to execute malicious code on servers, posing a severe risk to web applications utilizing Thymeleaf. Developers are urged to update to the latest version to protect against potential exploits. The resolution of this vulnerability underscores the importance of regular security audits and timely patching in maintaining secure software environments.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4160520/critical-sandbox-bypass-fixed-in-popular-thymeleaf-java-template-engine.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Payouts King Ransomware Evades Detection Using QEMU VMs",
-            "title": "Payouts King Ransomware Employs QEMU VMs to Bypass Endpoint Security",
-            "content": "The Payouts King ransomware has adopted a novel evasion technique by utilizing QEMU, an open-source emulator, to run hidden virtual machines on compromised systems. This method involves deploying QEMU as a reverse SSH backdoor, effectively bypassing traditional endpoint security measures. By operating within these virtual environments, the ransomware can execute malicious activities without triggering standard security alerts. This development highlights a growing trend among cybercriminals to leverage virtualization technology for stealthier attacks. Security professionals are advised to enhance monitoring capabilities to detect anomalies associated with virtual machine deployments on endpoints.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/payouts-king-ransomware-uses-qemu-vms-to-bypass-endpoint-security/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Operation PowerOFF Shuts Down 53 DDoS Domains—3M Accounts Exposed",
-            "title": "Operation PowerOFF Seizes DDoS Domains, Exposes Millions of Criminal Accounts",
-            "content": "An international law enforcement initiative, Operation PowerOFF, has dismantled 53 domains linked to commercial distributed denial-of-service (DDoS) operations, resulting in the arrest of four individuals. The operation uncovered over 3 million criminal accounts used by more than 75,000 cybercriminals to launch DDoS attacks. This crackdown represents a significant effort to disrupt the infrastructure supporting these illicit activities. The exposed accounts provide valuable intelligence for ongoing investigations and potential future arrests. Organizations are encouraged to review their DDoS mitigation strategies in light of these developments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/operation-poweroff-seizes-53-ddos.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 16 2026",
-            "headline": "Ecom-RLVE Boosts E-Commerce AI—Adaptive Environments Unveiled",
-            "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce AI Agents",
-            "content": "Hugging Face has introduced Ecom-RLVE, a novel framework designed to enhance the capabilities of conversational agents in e-commerce settings. This adaptive environment allows AI models to interact with dynamic, verifiable data, improving their ability to assist users in real-time shopping scenarios. By integrating adaptive learning mechanisms, Ecom-RLVE aims to reduce errors and increase the efficiency of AI-driven customer interactions. This development is particularly significant for online retailers seeking to streamline operations and enhance customer satisfaction. Industry professionals should explore integrating Ecom-RLVE to leverage its potential for improving AI agent performance in e-commerce applications.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ecom-rlve",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Salesforce Unveils Headless 360—AI Agents Gain Full Control",
-            "title": "Salesforce Launches Headless 360 for AI-Driven Platform Management",
-            "content": "Salesforce has announced Headless 360, a transformative initiative that exposes every capability of its platform as an API, enabling AI agents to manage the system autonomously. This architectural overhaul allows for seamless integration of AI tools, providing developers with MCP tools and CLI commands to automate complex processes. The initiative is poised to revolutionize how businesses leverage Salesforce, offering unprecedented flexibility and efficiency. Organizations using Salesforce should consider adopting Headless 360 to enhance their AI-driven operations, potentially reducing manual intervention and increasing productivity across various departments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/salesforce-launches-headless-360-to-turn-its-entire-platform-into-infrastructure-for-ai-agents",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "OpenAI&#x27;s GPT-Rosalind Targets Life Sciences—Codex Plugin Expands",
-            "title": "OpenAI Debuts GPT-Rosalind and Expands Codex Plugin on GitHub",
-            "content": "OpenAI has launched GPT-Rosalind, a limited access AI model tailored for the life sciences sector, alongside a broader release of its Codex plugin on GitHub. GPT-Rosalind aims to streamline the lengthy and costly drug development process by addressing fragmented data challenges in the industry. The Codex plugin expansion facilitates enhanced code generation and integration capabilities for developers. These advancements are expected to accelerate innovation in life sciences and software development, offering new tools for researchers and engineers. Professionals in these fields should explore these offerings to improve efficiency and collaboration.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "UK Invests $675M in Sovereign AI—Boosts Domestic Tech",
-            "title": "The UK Launches Its $675 Million Sovereign AI Fund",
-            "content": "The UK government has unveiled a $675 million Sovereign AI Fund aimed at fostering domestic AI innovation and reducing reliance on foreign technology. This strategic investment seeks to support homegrown startups, encouraging the development of cutting-edge AI solutions within the country. The fund is part of a broader initiative to position the UK as a leader in the global AI landscape, ensuring technological sovereignty and economic growth. AI startups and tech entrepreneurs in the UK should consider applying for funding to accelerate their projects and contribute to the national AI ecosystem.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/the-uk-launches-its-dollar675-million-sovereign-ai-fund/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 14 2026",
-            "headline": "Software Engineering&#x27;s Future—Open Source and DevOps Lead",
-            "title": "Redefining the Future of Software Engineering with Open Source and DevOps",
-            "content": "The landscape of software engineering is undergoing significant transformation, driven by the rise of open source and the adoption of DevOps and agile methodologies. These shifts have democratized access to code and facilitated more collaborative, efficient development processes. As software engineering evolves, professionals must adapt to these changes by embracing continuous integration and delivery practices. The integration of AI tools is further redefining the field, offering new opportunities for automation and innovation. Developers and engineers should stay informed about these trends to remain competitive and leverage emerging technologies effectively.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/04/14/1134397/redefining-the-future-of-software-engineering/",
+            "date": "Apr 19 2026",
+            "headline": "Vercel Breach—ShinyHunters Sell Stolen Data Online",
+            "title": "Vercel Compromised by ShinyHunters; Data Sale Underway",
+            "content": "Vercel, a prominent cloud development platform, has been breached by the notorious hacking group ShinyHunters, who are now attempting to sell stolen data online. The breach exposed sensitive information, including employee names and email addresses, raising significant security concerns for Vercel&#x27;s extensive user base. ShinyHunters, previously linked to the Rockstar Games hack, posted samples of the data to prove the breach&#x27;s legitimacy. This incident highlights the ongoing threat posed by sophisticated cybercriminal groups targeting high-profile tech companies. Vercel users are advised to monitor their accounts for suspicious activity and update their security credentials promptly.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/914723/vercel-hacked",
             "relatedResources": []
         },
         {
             "date": "Apr 17 2026",
-            "headline": "Tinder Embraces Orb Verification—Boosts for Real Users",
-            "title": "Should You Stare into Sam Altman’s Orb Before Your Next Date?",
-            "content": "Tinder is implementing a novel identity verification system using an orb developed by Worldcoin, co-founded by OpenAI CEO Sam Altman. Users who verify their identity with the orb will receive five free boosts on the app, incentivizing authenticity and enhancing user experience. This move reflects a growing trend of integrating biometric verification in digital platforms to combat fake profiles and improve trust. Tinder users should consider participating in the orb verification to gain additional visibility and ensure a safer dating environment. This initiative highlights the increasing intersection of AI and social platforms.",
+            "headline": "Cursor Eyes $2B+ Funding at $50B Valuation",
+            "title": "Cursor in Talks for $2B+ Funding Amid Enterprise Growth Surge",
+            "content": "Cursor, a leading AI enterprise, is reportedly in discussions to secure over $2 billion in funding, potentially valuing the company at an impressive $50 billion. The funding round is expected to be led by returning investors Andreessen Horowitz (a16z) and Thrive Capital, reflecting strong confidence in Cursor&#x27;s growth trajectory. This move comes as demand for AI solutions in enterprise environments continues to rise, positioning Cursor as a key player in the market. The influx of capital is likely to fuel further expansion and innovation, solidifying Cursor&#x27;s competitive edge. Stakeholders should watch for official announcements as negotiations progress.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "OpenAI Codex Update Challenges Claude Code",
+            "title": "OpenAI Enhances Codex with New Features Amid Anthropic Rivalry",
+            "content": "OpenAI has launched a significant update to its Codex platform, enhancing its capabilities in coding and development. The update introduces features that enable Codex to utilize user computers, generate images, and retain memory from past interactions. This development intensifies the competition with Anthropic&#x27;s Claude Code, which has seen notable success recently. OpenAI&#x27;s strategic enhancements aim to bolster Codex&#x27;s functionality and user experience, potentially attracting more developers to its platform. Users should explore these new features to leverage Codex&#x27;s expanded capabilities in their projects.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/914385/world-id-tinder-identity-verifying-orb",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Google Chrome AI Mode—Open Links Side-by-Side",
+            "title": "Google Chrome AI Mode Update Enhances User Experience with Side-by-Side Links",
+            "content": "Google has updated the AI Mode in its Chrome browser, introducing a feature that allows users to open links alongside their current page without navigating away. This enhancement enables users to view source websites side by side with AI Mode, facilitating more interactive and efficient browsing. The update aims to improve user engagement by allowing follow-up questions and deeper exploration of content. This feature is part of Google&#x27;s ongoing efforts to integrate AI more seamlessly into its products, enhancing productivity and user satisfaction. Users are encouraged to update Chrome to take advantage of this new functionality.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/913109/google-ai-mode-tabs-sources",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 19 2026",
+            "headline": "OpenAI&#x27;s Strategic Acquisitions Tackle Existential Challenges",
+            "title": "OpenAI&#x27;s Latest Acquisitions Address Key Existential Issues",
+            "content": "In a recent episode of the Equity podcast, OpenAI&#x27;s latest acquisitions were discussed in the context of addressing two major existential challenges facing the company. These strategic moves are part of OpenAI&#x27;s broader efforts to secure its position in the rapidly evolving AI landscape. The acquisitions aim to enhance OpenAI&#x27;s technological capabilities and market reach, ensuring its continued relevance and competitiveness. As OpenAI navigates these challenges, stakeholders should monitor how these acquisitions impact the company&#x27;s strategic direction and operational effectiveness.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/19/openais-existential-questions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 19 2026",
+            "headline": "AI Startups Face 12-Month Expansion Window",
+            "title": "AI Startups Navigate Limited Timeframe Before Foundation Model Expansion",
+            "content": "The AI startup ecosystem is experiencing a critical 12-month window as foundation models have yet to expand into certain categories. This period presents both opportunities and challenges for startups aiming to establish themselves before larger players enter their domains. Industry insiders acknowledge that this window won&#x27;t last indefinitely, urging startups to innovate and capture market share swiftly. As foundation models continue to evolve, startups must strategically position themselves to maintain relevance and competitiveness. Investors and entrepreneurs should focus on rapid development and differentiation to capitalize on this transient opportunity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/19/the-12-month-window/",
             "relatedResources": []
         },
         {
@@ -246,33 +210,6 @@ const websiteContent = {
             "content": "The App Store is experiencing a significant resurgence, with new data from Appfigures indicating a notable increase in app launches in 2026. This growth is largely attributed to the integration of AI tools, which are enabling developers to create more sophisticated and innovative mobile applications. The trend suggests a revitalization of the mobile software market, driven by advancements in AI technology. Developers and tech companies are capitalizing on these tools to enhance app functionality and user engagement. As the demand for AI-enhanced applications continues to rise, stakeholders should consider investing in AI capabilities to remain competitive in the evolving app ecosystem.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "NanoClaw, Vercel Simplify AI Agent Policy Across Messaging Apps",
-            "title": "NanoClaw and Vercel Launch AI Agent Policy Tools for Messaging",
-            "content": "NanoClaw and Vercel have introduced new tools designed to simplify policy setting and approval processes for autonomous AI agents across 15 messaging applications. These tools address a critical challenge faced by early adopters of AI agents: balancing functionality with security. By providing clearer policy frameworks, the tools help prevent AI agents from executing potentially harmful commands, such as data deletions. This development is crucial for enterprises looking to harness AI agents&#x27; capabilities without compromising data integrity or security. Organizations using AI agents should evaluate these tools to enhance their operational efficiency and safeguard against unintended actions.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/should-my-enterprise-ai-agent-do-that-nanoclaw-and-vercel-launch-easier-agentic-policy-setting-and-approval-dialogs-across-15-messaging-apps",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Tokenmaxxing—A Hidden Productivity Drain for Developers",
-            "title": "Tokenmaxxing Leads to Increased Code Rewrites and Costs",
-            "content": "The phenomenon of &quot;tokenmaxxing&quot; is emerging as a significant productivity issue for developers, leading to increased code volume but also higher costs and frequent rewrites. This trend involves maximizing the use of tokens in coding, which can result in more complex and less efficient codebases. As developers strive to leverage AI and machine learning, the unintended consequence is often a bloated code structure that requires substantial maintenance. Companies should be aware of this trend and consider implementing strategies to optimize code efficiency and reduce unnecessary complexity. Addressing tokenmaxxing can lead to better resource management and improved project outcomes.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Poetry Camera—Charming Gadget Produces Bad AI Poetry",
-            "title": "Poetry Camera: A Delightful Yet Frustrating AI Poetry Device",
-            "content": "The Poetry Camera, a new gadget that generates AI poetry, has captured both charm and frustration from users. With its playful design featuring a white and cherry red color scheme, the device is visually appealing but produces poetry of questionable quality. Despite its shortcomings in poetic output, the gadget highlights the intersection of technology and creativity, sparking discussions about the role of AI in artistic expression. As AI continues to evolve, developers and artists alike should explore ways to enhance AI&#x27;s creative capabilities while maintaining artistic integrity. The Poetry Camera serves as a reminder of the potential and limitations of AI in the arts.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/gadgets/913981/poetry-camera-ai-hands-on",
             "relatedResources": []
         }
     ],
@@ -389,83 +326,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32201",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2012-1854",
-            "dateAdded": "Apr 13, 2026",
-            "vendor": "Microsoft Visual Basic for Applications (VBA)",
-            "description": "Microsoft Visual Basic for Applications (VBA) contains an insecure library loading vulnerability that could allow for remote code execution.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-1854",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-60710",
-            "dateAdded": "Apr 13, 2026",
-            "vendor": "Microsoft Windows",
-            "description": "Microsoft Windows contains a link following vulnerability that allows for privilege escalation",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-60710",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2023-21529",
-            "dateAdded": "Apr 13, 2026",
-            "vendor": "Microsoft Exchange Server",
-            "description": "Microsoft Exchange Server contains a deserialization of untrusted data that allows an authenticated attacker to achieve remote code execution.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-21529",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2023-36424",
-            "dateAdded": "Apr 13, 2026",
-            "vendor": "Microsoft Windows",
-            "description": "Microsoft Windows Common Log File System Driver contains an out-of-bounds read vulnerability that could allow a threat actor for privileges escalation",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-36424",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2020-9715",
-            "dateAdded": "Apr 13, 2026",
-            "vendor": "Adobe Acrobat",
-            "description": "Adobe Acrobat contains a use-after-free vulnerability that allows for code execution",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-9715",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-21643",
-            "dateAdded": "Apr 13, 2026",
-            "vendor": "Fortinet FortiClient EMS",
-            "description": "Fortinet FortiClient EMS contains a SQL injection vulnerability that may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21643",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-34621",
-            "dateAdded": "Apr 13, 2026",
-            "vendor": "Adobe Acrobat and Reader",
-            "description": "Adobe Acrobat and Reader contain a prototype pollution vulnerability that allows for arbitrary code execution.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34621",
             "isZeroDay": false
         }
     ],
