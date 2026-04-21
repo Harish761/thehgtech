@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 21 2026",
+            "headline": "1,500 Perforce Servers Leak Data—Check Your Configurations",
+            "title": "Unsecured Perforce Servers Expose Sensitive Data From Major Organizations",
+            "content": "A security researcher has identified over 1,500 Perforce P4 instances that are improperly configured, allowing unauthorized access to sensitive files on the servers. These instances, used by major organizations for version control, pose a significant risk as attackers can exploit these misconfigurations to access proprietary code and other critical data. While improvements have been noted, the exposure underscores the persistent threat of misconfigured systems. Organizations using Perforce should immediately review their server configurations to ensure they are not publicly accessible and apply any necessary security patches. This incident highlights the ongoing challenge of securing development environments against unauthorized access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/unsecured-perforce-servers-expose-sensitive-data-from-major-orgs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "CISA Warns: SD-WAN Flaw Exploited—Secure Systems in 4 Days",
+            "title": "CISA Flags New SD-WAN Vulnerability as Actively Exploited in Attacks",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive for U.S. government agencies to secure their systems against a newly discovered vulnerability in the Catalyst SD-WAN Manager. This flaw is being actively exploited in the wild, posing a significant threat to network integrity and data security. Affected entities must patch their systems within four days to prevent potential breaches. The vulnerability highlights the increasing targeting of SD-WAN solutions by threat actors seeking to exploit network management tools. Organizations are advised to follow CISA&#x27;s guidelines and ensure their systems are up-to-date to mitigate this risk.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-new-sd-wan-flaw-as-actively-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Progress Fixes Critical MOVEit WAF, LoadMaster Flaws—Patch Now",
+            "title": "Progress Patches Multiple Vulnerabilities in MOVEit WAF and LoadMaster",
+            "content": "Progress Software has released patches addressing several critical vulnerabilities in its MOVEit Web Application Firewall (WAF) and LoadMaster products. These vulnerabilities, which include remote code execution and operating system command injection, could allow attackers to bypass security measures and execute arbitrary commands. Organizations using these products are urged to apply the updates immediately to protect against potential exploitation. The vulnerabilities underscore the importance of regular patch management and the need for organizations to stay vigilant against emerging threats. This proactive patching effort by Progress is crucial in maintaining the security of their widely used solutions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/progress-patches-multiple-vulnerabilities-in-moveit-waf-loadmaster/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Identity Attacks Surge—Stolen Credentials Still Top Threat",
+            "title": "No Exploit Needed: Attackers Use Stolen Credentials for Easy Access",
+            "content": "Despite advancements in cybersecurity, identity-based attacks using stolen credentials remain a prevalent threat vector. Attackers continue to exploit these vulnerabilities, bypassing sophisticated defenses by simply logging in with compromised credentials. This method remains one of the most reliable for gaining unauthorized access to systems. Organizations are encouraged to implement robust identity management solutions, including multi-factor authentication (MFA) and regular credential audits, to mitigate this risk. The persistence of identity-based attacks highlights the need for continuous vigilance and the importance of securing user credentials against theft and misuse.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/no-exploit-needed-how-attackers-walk.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "6,400 Apache ActiveMQ Servers Vulnerable—Patch Code Injection Flaw",
+            "title": "Actively Exploited Apache ActiveMQ Flaw Impacts Thousands of Servers",
+            "content": "Security researchers from Shadowserver have identified over 6,400 Apache ActiveMQ servers exposed online that are vulnerable to a high-severity code injection flaw. This vulnerability, actively exploited in the wild, allows attackers to execute arbitrary code on affected systems, posing a severe risk to data integrity and system operations. Administrators are urged to apply the latest security patches to protect their servers from potential exploitation. This incident underscores the critical need for timely vulnerability management and the importance of securing middleware components against emerging threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/actively-exploited-apache-activemq-flaw-impacts-6-400-servers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "600,000 Affected in Illinois, Texas Healthcare Data Breaches",
+            "title": "Data Breaches at Healthcare Organizations in Illinois and Texas Affect 600,000",
+            "content": "Recent data breaches at Southern Illinois Dermatology, Saint Anthony Hospital, and North Texas Behavioral Health Authority have compromised the personal information of approximately 600,000 individuals. These incidents highlight the ongoing vulnerability of healthcare organizations to cyberattacks, which often target sensitive patient data. Affected entities are working to notify impacted individuals and enhance their security measures to prevent future breaches. The healthcare sector remains a prime target for cybercriminals due to the high value of medical data on the black market. Organizations are advised to strengthen their cybersecurity posture and ensure compliance with data protection regulations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/data-breaches-at-healthcare-organizations-in-illinois-and-texas-affect-600000/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 20 2026",
             "headline": "Gentlemen Ransomware Uses Botnet—1,570 Hosts Compromised",
             "title": "Gentlemen Ransomware Leverages SystemBC Botnet for Enhanced Attack Capabilities",
@@ -28,33 +82,6 @@ const websiteContent = {
             "content": "This week&#x27;s cybersecurity recap highlights multiple incidents, including a breach via a third-party tool affecting Vercel, and the emergence of new Android Remote Access Trojans (RATs). Attackers exploited trusted download paths and browser extensions to deliver malware, while QEMU was abused for unauthorized access. These incidents reflect a growing trend of exploiting third-party tools and update channels for cyberattacks. Security teams should scrutinize third-party integrations and ensure robust update mechanisms to safeguard against such threats.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/weekly-recap-vercel-hack-push-fraud.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Microsoft Defender Zero-Days—Two Still Unpatched",
-            "title": "Active Exploitation of Microsoft Defender Zero-Days Leaves Systems Vulnerable",
-            "content": "Three zero-day vulnerabilities in Microsoft Defender, codenamed BlueHammer, RedSun, and another unnamed flaw, are being actively exploited, with two still unpatched. These vulnerabilities allow threat actors to gain elevated privileges on compromised systems. Huntress has issued warnings about the ongoing exploitation, urging organizations to implement mitigations and monitor for suspicious activity. The persistence of unpatched zero-days in widely used security software highlights the critical need for timely updates and vigilant security practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Operation PowerOFF—53 DDoS Domains Seized, 3M Accounts Exposed",
-            "title": "Global Crackdown on DDoS Services: Operation PowerOFF Seizes 53 Domains",
-            "content": "Operation PowerOFF, an international law enforcement initiative, has dismantled 53 domains linked to commercial distributed denial-of-service (DDoS) operations, revealing over 3 million criminal accounts. This operation led to the arrest of four individuals and disrupted services used by more than 75,000 cybercriminals. The crackdown aims to curb the availability of DDoS-for-hire services, which have been increasingly used to target businesses and infrastructure. Organizations are advised to review their DDoS mitigation strategies in light of these developments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/operation-poweroff-seizes-53-ddos.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "Apache ActiveMQ Flaw Exploited—CISA Adds CVE-2026-34197",
-            "title": "Apache ActiveMQ CVE-2026-34197 Under Active Exploitation, CISA Warns",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-34197, a high-severity vulnerability in Apache ActiveMQ Classic, to its Known Exploited Vulnerabilities catalog. This flaw, with a CVSS score of 8.8, is being actively exploited, allowing attackers to execute arbitrary code on vulnerable systems. Organizations using Apache ActiveMQ should apply patches immediately and review security configurations to mitigate risks. This incident underscores the critical need for proactive vulnerability management in open-source software deployments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
             "relatedResources": []
         },
         {
@@ -113,6 +140,60 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 18 2026",
+            "headline": "Global DRAM Shortage—60% Demand Met by 2027",
+            "title": "Prolonged DRAM Shortage Expected to Last Until 2030",
+            "content": "A global shortage of DRAM (Dynamic Random-Access Memory) is projected to persist until 2030, despite increased production efforts by major suppliers. According to Nikkei Asia, manufacturers like Samsung, SK Hynix, and Micron are expected to meet only 60% of the global demand by the end of 2027. This shortage impacts a wide range of industries, including consumer electronics, automotive, and data centers, potentially leading to increased costs and slowed technological advancements. The SK Group chairman has highlighted the severity of the situation, urging stakeholders to brace for long-term supply constraints. Companies reliant on DRAM should consider strategic inventory management and explore alternative memory solutions to mitigate potential disruptions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Ecom-RLVE Transforms E-Commerce Chatbots with Verifiable AI",
+            "title": "Ecom-RLVE: Enhancing E-Commerce Conversational Agents with Adaptive Environments",
+            "content": "Hugging Face has introduced Ecom-RLVE, a new framework designed to enhance e-commerce conversational agents by providing adaptive and verifiable environments. This innovation aims to improve the accuracy and reliability of AI-driven customer interactions, ensuring that chatbots can adapt to dynamic user queries while maintaining verifiable responses. The framework leverages reinforcement learning to optimize agent behavior, offering a significant upgrade over traditional static models. E-commerce platforms can benefit from this technology by delivering more personalized and trustworthy customer service experiences. Developers are encouraged to integrate Ecom-RLVE to enhance their chatbot capabilities and improve user satisfaction.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ecom-rlve",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Apple CEO Transition—AI Challenges Await John Ternus",
+            "title": "John Ternus Faces AI Challenges as New Apple CEO",
+            "content": "John Ternus, Apple&#x27;s new CEO, steps into his role amid growing expectations for AI integration, despite the company&#x27;s previous lack of AI announcements. Ternus, formerly Apple&#x27;s hardware executive, succeeds Tim Cook but faces scrutiny as the official release of his appointment did not mention AI—a critical area for competitors. With AI becoming a pivotal technology across industries, Apple&#x27;s strategy under Ternus will be closely watched by investors and tech enthusiasts. The company&#x27;s ability to innovate in AI could determine its competitive edge in the coming years. Stakeholders should monitor Apple&#x27;s AI developments and strategic pivots under Ternus&#x27;s leadership.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/915662/john-ternus-apple-ceo-tim-cook-ai-problem-siri",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "GRAI: AI Makes Music Social, Not Replacing Artists",
+            "title": "GRAI Advocates for AI-Enhanced Social Music Experiences",
+            "content": "AI music startup GRAI is championing the use of artificial intelligence to make music more social rather than replacing artists. The company argues that fans are more interested in remixing existing tracks than generating new songs from scratch. This approach allows artists to engage with their audience in innovative ways, fostering a collaborative environment. GRAI&#x27;s stance highlights a growing trend in the music industry where AI is used to enhance creativity and fan interaction. Musicians and producers should consider leveraging AI tools to expand their creative horizons and connect with audiences on a deeper level.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/21/grai-believes-ai-can-make-music-more-social-not-replace-artists/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Yelp Chatbot Evolves—From Assistant to Digital Concierge",
+            "title": "Yelp Enhances Chatbot with New Features for Task Management",
+            "content": "Yelp has significantly upgraded its AI chatbot, transforming it into a digital concierge capable of managing a variety of tasks. The updated platform now includes features designed to streamline user interactions and improve task efficiency, aligning with the broader industry trend of enhancing AI-driven customer service tools. This development is part of Yelp&#x27;s ongoing efforts to integrate more sophisticated AI functionalities into its services. Businesses using Yelp can expect improved customer engagement and operational efficiency. Users are encouraged to explore the new capabilities to maximize their experience on the platform.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/915626/yelp-ai-assistant-chatbot-major-upgrade",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "QIMMA: Arabic LLM Leaderboard Prioritizes Quality",
+            "title": "QIMMA: A New Benchmark for Arabic Language Models",
+            "content": "Hugging Face has launched QIMMA, a quality-first leaderboard for evaluating Arabic large language models (LLMs). This initiative aims to provide a standardized benchmark for assessing the performance of Arabic LLMs, focusing on quality metrics rather than size alone. QIMMA addresses the growing need for high-quality Arabic language processing tools, offering researchers and developers a valuable resource for model comparison and improvement. The leaderboard is expected to drive advancements in Arabic NLP (Natural Language Processing) by encouraging the development of more accurate and efficient models. Stakeholders in the Arabic AI community should leverage QIMMA to enhance their language model capabilities.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
+            "relatedResources": []
+        },
         {
             "date": "Apr 21 2026",
             "headline": "Korean AI Grounded with Synthetic Personas—Bridging Demographic Gaps",
@@ -192,33 +273,6 @@ const websiteContent = {
             "content": "Uber is entering what it calls its &quot;assetmaxxing&quot; era, focusing on maximizing the utility of its assets through advanced AI technologies. This strategic shift aims to enhance Uber&#x27;s operational efficiency and service delivery in the competitive mobility sector. By integrating AI-driven insights and automation, Uber seeks to optimize its fleet management and improve customer experiences. This move aligns with broader industry trends where AI is increasingly pivotal in transforming transportation services. Stakeholders in the mobility sector should consider how AI can be leveraged to drive operational improvements and maintain competitive advantage.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/19/techcrunch-mobility-uber-enters-its-assetmaxxing-era/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 19 2026",
-            "headline": "Vercel Breach—ShinyHunters Sell Stolen Data Online",
-            "title": "Vercel Compromised by ShinyHunters; Data Sale Underway",
-            "content": "Vercel, a prominent cloud development platform, has been breached by the notorious hacking group ShinyHunters, who are now attempting to sell stolen data online. The breach exposed sensitive information, including employee names and email addresses, raising significant security concerns for Vercel&#x27;s extensive user base. ShinyHunters, previously linked to the Rockstar Games hack, posted samples of the data to prove the breach&#x27;s legitimacy. This incident highlights the ongoing threat posed by sophisticated cybercriminal groups targeting high-profile tech companies. Vercel users are advised to monitor their accounts for suspicious activity and update their security credentials promptly.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/914723/vercel-hacked",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 19 2026",
-            "headline": "OpenAI&#x27;s Strategic Acquisitions Tackle Existential Challenges",
-            "title": "OpenAI&#x27;s Latest Acquisitions Address Key Existential Issues",
-            "content": "In a recent episode of the Equity podcast, OpenAI&#x27;s latest acquisitions were discussed in the context of addressing two major existential challenges facing the company. These strategic moves are part of OpenAI&#x27;s broader efforts to secure its position in the rapidly evolving AI landscape. The acquisitions aim to enhance OpenAI&#x27;s technological capabilities and market reach, ensuring its continued relevance and competitiveness. As OpenAI navigates these challenges, stakeholders should monitor how these acquisitions impact the company&#x27;s strategic direction and operational effectiveness.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/19/openais-existential-questions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 19 2026",
-            "headline": "AI Startups Face 12-Month Expansion Window",
-            "title": "AI Startups Navigate Limited Timeframe Before Foundation Model Expansion",
-            "content": "The AI startup ecosystem is experiencing a critical 12-month window as foundation models have yet to expand into certain categories. This period presents both opportunities and challenges for startups aiming to establish themselves before larger players enter their domains. Industry insiders acknowledge that this window won&#x27;t last indefinitely, urging startups to innovate and capture market share swiftly. As foundation models continue to evolve, startups must strategically position themselves to maintain relevance and competitiveness. Investors and entrepreneurs should focus on rapid development and differentiation to capitalize on this transient opportunity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/19/the-12-month-window/",
             "relatedResources": []
         }
     ],
