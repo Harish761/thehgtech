@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 20 2026",
+            "headline": "Gentlemen Ransomware Uses Botnet—1,570 Hosts Compromised",
+            "title": "Gentlemen Ransomware Leverages SystemBC Botnet for Enhanced Attack Capabilities",
+            "content": "The Gentlemen ransomware group has been found utilizing the SystemBC proxy malware botnet, comprising over 1,570 hosts, primarily targeting corporate victims. This development emerged from an investigation into a recent ransomware attack by a gang affiliate. SystemBC acts as a communication layer, enabling attackers to control infected systems without detection. The integration of SystemBC enhances the ransomware&#x27;s stealth and reach, posing significant risks to enterprises. Organizations are urged to bolster their network defenses and monitor for unusual proxy traffic to mitigate potential breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-gentlemen-ransomware-now-uses-systembc-for-bot-powered-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 20 2026",
+            "headline": "SGLang Vulnerability—RCE Threat with CVSS 9.8 Rating",
+            "title": "Critical SGLang CVE-2026-5760 Vulnerability Allows Remote Code Execution",
+            "content": "A critical vulnerability in SGLang, identified as CVE-2026-5760, has been disclosed, posing a severe risk of remote code execution (RCE) on affected systems. This flaw, with a CVSS score of 9.8, stems from command injection vulnerabilities in handling GGUF model files. Systems using SGLang are at high risk, potentially allowing attackers to execute arbitrary commands remotely. Security professionals should prioritize patching affected systems and review access controls to prevent exploitation. This vulnerability underscores the importance of rigorous input validation in software development.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/sglang-cve-2026-5760-cvss-98-enables.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 20 2026",
+            "headline": "Vercel Hack and Android RATs—Weekly Cybersecurity Recap",
+            "title": "Weekly Cybersecurity Recap: Vercel Breach, QEMU Abuse, and Android RATs",
+            "content": "This week&#x27;s cybersecurity recap highlights multiple incidents, including a breach via a third-party tool affecting Vercel, and the emergence of new Android Remote Access Trojans (RATs). Attackers exploited trusted download paths and browser extensions to deliver malware, while QEMU was abused for unauthorized access. These incidents reflect a growing trend of exploiting third-party tools and update channels for cyberattacks. Security teams should scrutinize third-party integrations and ensure robust update mechanisms to safeguard against such threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/weekly-recap-vercel-hack-push-fraud.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "Microsoft Defender Zero-Days—Two Still Unpatched",
+            "title": "Active Exploitation of Microsoft Defender Zero-Days Leaves Systems Vulnerable",
+            "content": "Three zero-day vulnerabilities in Microsoft Defender, codenamed BlueHammer, RedSun, and another unnamed flaw, are being actively exploited, with two still unpatched. These vulnerabilities allow threat actors to gain elevated privileges on compromised systems. Huntress has issued warnings about the ongoing exploitation, urging organizations to implement mitigations and monitor for suspicious activity. The persistence of unpatched zero-days in widely used security software highlights the critical need for timely updates and vigilant security practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "Operation PowerOFF—53 DDoS Domains Seized, 3M Accounts Exposed",
+            "title": "Global Crackdown on DDoS Services: Operation PowerOFF Seizes 53 Domains",
+            "content": "Operation PowerOFF, an international law enforcement initiative, has dismantled 53 domains linked to commercial distributed denial-of-service (DDoS) operations, revealing over 3 million criminal accounts. This operation led to the arrest of four individuals and disrupted services used by more than 75,000 cybercriminals. The crackdown aims to curb the availability of DDoS-for-hire services, which have been increasingly used to target businesses and infrastructure. Organizations are advised to review their DDoS mitigation strategies in light of these developments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/operation-poweroff-seizes-53-ddos.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 17 2026",
+            "headline": "Apache ActiveMQ Flaw Exploited—CISA Adds CVE-2026-34197",
+            "title": "Apache ActiveMQ CVE-2026-34197 Under Active Exploitation, CISA Warns",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-34197, a high-severity vulnerability in Apache ActiveMQ Classic, to its Known Exploited Vulnerabilities catalog. This flaw, with a CVSS score of 8.8, is being actively exploited, allowing attackers to execute arbitrary code on vulnerable systems. Organizations using Apache ActiveMQ should apply patches immediately and review security configurations to mitigate risks. This incident underscores the critical need for proactive vulnerability management in open-source software deployments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 20 2026",
             "headline": "BCDR Essential—Backups Alone Can&#x27;t Prevent Business Downtime",
             "title": "The Backup Myth: Why Business Continuity and Disaster Recovery Matter",
             "content": "While backups are crucial for data protection, they fall short in maintaining business operations during disruptions like ransomware attacks or system outages. Datto emphasizes the importance of Business Continuity and Disaster Recovery (BCDR) solutions to ensure seamless operations. BCDR strategies integrate data backups with proactive measures to minimize downtime and data loss, crucial for businesses reliant on continuous operations. As cyber threats evolve, relying solely on backups can leave organizations vulnerable to extended outages and financial losses. Companies should evaluate their current disaster recovery plans and consider comprehensive BCDR solutions to safeguard against potential threats.",
@@ -49,15 +103,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 17 2026",
-            "headline": "Payouts King Ransomware—QEMU VMs Evade Endpoint Security",
-            "title": "Payouts King Ransomware Uses QEMU for Stealthy Attacks",
-            "content": "The Payouts King ransomware group is employing QEMU virtual machines (VMs) as a reverse SSH backdoor to bypass endpoint security measures. By running hidden VMs on compromised systems, attackers can execute ransomware operations without detection. This innovative use of QEMU demonstrates the evolving tactics of ransomware groups to avoid traditional security defenses. Organizations should enhance their monitoring capabilities and deploy advanced threat detection solutions to counter such sophisticated attacks. The incident underscores the importance of staying ahead of emerging threats in the cybersecurity landscape.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/payouts-king-ransomware-uses-qemu-vms-to-bypass-endpoint-security/",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 19 2026",
             "headline": "Vercel Breach—Hackers Claim Stolen Data for Sale",
             "title": "Vercel Confirms Security Breach Amid Hacker Data Sale Claims",
@@ -65,54 +110,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "Protobuf.js Flaw—Remote Code Execution Threat for JavaScript Apps",
-            "title": "Critical Flaw in Protobuf.js Enables Remote JavaScript Code Execution",
-            "content": "A critical remote code execution vulnerability has been identified in protobuf.js, a popular JavaScript implementation of Google&#x27;s Protocol Buffers. The flaw allows attackers to execute arbitrary code, posing a significant threat to applications relying on this library. Security researchers have released proof-of-concept exploit code, highlighting the urgency for developers to update their systems. This vulnerability underscores the risks associated with third-party libraries in software development. Organizations using protobuf.js should prioritize patching to mitigate potential exploitation. The flaw&#x27;s discovery emphasizes the need for rigorous security assessments in open-source projects.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-flaw-in-protobuf-library-enables-javascript-code-execution/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "NAKIVO v11.2 Boosts Ransomware Defense and Replication Speed",
-            "title": "NAKIVO v11.2 Enhances Ransomware Defense and Supports vSphere 9",
-            "content": "NAKIVO Inc. has launched version 11.2 of its Backup &amp; Replication software, introducing enhanced ransomware defense and faster data replication capabilities. The update includes support for VMware vSphere 9 and Proxmox VE 9.0, catering to a broader range of virtualization environments. This release aims to provide proactive data protection, crucial for organizations facing increasing ransomware threats. The improved replication speed promises reduced downtime and enhanced data recovery processes. Users are encouraged to upgrade to leverage these new features and bolster their data resilience strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nakivo-v112-ransomware-defense-faster-replication-vsphere-9-and-proxmox-ve-90-support/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "Mirai Variant Hijacks TBK DVRs—Exploits CVE-2024-3721",
-            "title": "Mirai Variant Nexcorium Exploits CVE-2024-3721 to Hijack TBK DVRs for DDoS Botnet",
-            "content": "Threat actors are leveraging CVE-2024-3721 to compromise TBK DVRs and outdated TP-Link Wi-Fi routers, deploying a new Mirai botnet variant called Nexcorium. This vulnerability allows attackers to hijack these devices, integrating them into a distributed denial-of-service (DDoS) botnet. Fortinet FortiGuard Labs and Palo Alto Networks Unit 42 have identified this exploitation, which poses a significant threat to network security by amplifying DDoS attacks. Organizations using affected devices should prioritize firmware updates and consider replacing end-of-life hardware to mitigate risks. This incident underscores the persistent threat of IoT device vulnerabilities being exploited by botnets.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/mirai-variant-nexcorium-exploits-cve.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "Phishing Surge as Tycoon 2FA Tools Reused",
-            "title": "Tycoon 2FA Loses Phishing Kit Crown Amid Surge in Attacks",
-            "content": "Following the disruption of the Tycoon 2FA platform, threat actors are repurposing its tools across various phishing kits, leading to a surge in phishing attacks. This trend reflects the adaptability of cybercriminals in exploiting existing tools to bypass two-factor authentication (2FA) defenses. Organizations are advised to enhance their phishing detection capabilities and educate users on recognizing phishing attempts. The increased reuse of Tycoon 2FA tools highlights the persistent threat of phishing and the need for robust security strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/tycoon-2fa-loses-phishing-kit-crown-amid-surge-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "$13.74M Hack Forces Grinex Exchange Shutdown",
-            "title": "$13.74M Hack Shuts Down Sanctioned Grinex Exchange After Intelligence Claims",
-            "content": "The Grinex cryptocurrency exchange, sanctioned by the U.K. and U.S., has suspended operations following a $13.74 million hack, which it attributes to Western intelligence agencies. The attack involved a large-scale breach, significantly impacting the exchange&#x27;s financial stability. This incident highlights the vulnerabilities faced by cryptocurrency platforms, particularly those under international sanctions. Stakeholders in the cryptocurrency sector should review their security postures and consider geopolitical risks in their threat models. The Grinex case serves as a reminder of the complex interplay between cybersecurity and international relations.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/1374m-hack-shuts-down-sanctioned-grinex.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 21 2026",
+            "headline": "Korean AI Grounded with Synthetic Personas—Bridging Demographic Gaps",
+            "title": "Grounding Korean AI Agents Using Synthetic Personas for Real Demographics",
+            "content": "Hugging Face has introduced a novel approach to enhance Korean AI agents by integrating synthetic personas that mirror real demographic profiles. This technique aims to address the challenge of grounding AI in culturally and demographically diverse contexts, ensuring more accurate and relatable interactions. By simulating a wide range of personas, the AI can better understand and respond to user inputs reflective of actual societal segments. This development is crucial for industries relying on AI for customer service and user engagement, as it promises more personalized and effective communication. Organizations should consider adopting similar methods to improve AI inclusivity and relevance in diverse markets.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 20 2026",
+            "headline": "Amazon Invests $5B in Anthropic—$100B AWS Deal Sealed",
+            "title": "Amazon&#x27;s $5B Investment in Anthropic Secures $100B AWS Cloud Commitment",
+            "content": "Amazon has committed a $5 billion investment in AI research firm Anthropic, securing a reciprocal agreement for Anthropic to spend $100 billion on Amazon Web Services (AWS) over the coming years. This strategic partnership underscores Amazon&#x27;s aggressive expansion into the AI sector, leveraging Anthropic&#x27;s expertise to enhance its cloud offerings. The deal highlights the growing trend of tech giants investing heavily in AI to maintain competitive advantages in cloud computing. Businesses utilizing AWS can anticipate enhanced AI capabilities and services as a result of this collaboration. Stakeholders should monitor how this investment influences AWS&#x27;s service portfolio and pricing structures.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 20 2026",
+            "headline": "Google Expands Gemini in Chrome—7 Countries Added",
+            "title": "Google Deploys Gemini in Chrome Across Seven New Countries",
+            "content": "Google has expanded its Gemini AI feature in Chrome to seven new countries: Australia, Indonesia, Japan, the Philippines, Singapore, South Korea, and Vietnam. This rollout is available on both desktop and iOS platforms, except in Japan, where only desktop users will have access. Gemini enhances user experience by providing advanced AI-driven insights and recommendations directly within the browser. This expansion reflects Google&#x27;s commitment to broadening its AI capabilities globally, aiming to improve user engagement and productivity. Developers and tech leaders should explore how Gemini&#x27;s features can be integrated into their digital strategies to leverage AI-driven insights.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/20/google-rolls-out-gemini-in-chrome-in-seven-new-countries/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 20 2026",
+            "headline": "Silicon Valley&#x27;s Disconnect—Techies Overlook User Needs",
+            "title": "Silicon Valley&#x27;s Oversight: Tech Enthusiasts Miss Real User Demands",
+            "content": "A critique from The Verge highlights a growing disconnect between Silicon Valley tech developers and the actual needs of everyday users. The article points out that tech enthusiasts often become engrossed in their own innovations, such as large language models (LLMs), without considering practical applications for the general public. This gap can lead to products that, while technologically advanced, fail to resonate with or meet the needs of average consumers. The tech industry is urged to refocus on user-centric design and development to ensure that innovations are both meaningful and accessible. Professionals should prioritize user feedback and real-world applicability in their projects.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tldr/915176/nft-metaverse-ai-weirdos",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 20 2026",
+            "headline": "AI Writing Patterns—&quot;It&#x27;s Not Just This&quot; Becomes a Tell",
+            "title": "Common AI Writing Pattern Signals Synthetic Content",
+            "content": "A prevalent sentence structure in AI-generated writing, &quot;It&#x27;s not just this—it&#x27;s that,&quot; has become a reliable indicator of synthetic content. This pattern, now ubiquitous in AI outputs, suggests a need for improved diversity in AI language models to avoid predictability and enhance authenticity. The overuse of such constructs can undermine the perceived quality and originality of AI-generated texts. Developers and content creators should be aware of these patterns to better differentiate between human and AI-generated content. Enhancing AI&#x27;s linguistic capabilities can lead to more nuanced and credible outputs, benefiting industries reliant on automated content generation.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/20/ai-writing-its-not-just-this-its-that-barrons/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 20 2026",
+            "headline": "Deezer Reports 44% AI Music Uploads—Fraudulent Streams Rampant",
+            "title": "Deezer Reveals High AI-Generated Music Uploads and Stream Fraud",
+            "content": "Deezer has disclosed that 44% of new music uploads on its platform are AI-generated, with a significant portion of streams being fraudulent and subsequently demonetized. This revelation highlights the challenges streaming platforms face in managing AI-generated content and ensuring fair monetization. Despite the high volume of AI tracks, they account for only a small fraction of total streams, suggesting that user engagement with such content remains limited. The music industry must address the implications of AI in content creation and streaming fraud. Platforms should enhance their detection mechanisms to maintain the integrity of streaming metrics and artist compensation.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/04/deezer-says-44-of-new-music-uploads-are-ai-generated-most-streams-are-fraudulent/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 20 2026",
             "headline": "Hyatt Deploys ChatGPT Enterprise—Boosts Global Operations with AI",
@@ -120,15 +174,6 @@ const websiteContent = {
             "content": "Hyatt Hotels Corporation has rolled out ChatGPT Enterprise, leveraging OpenAI&#x27;s GPT-5.4 and Codex, across its global workforce to enhance productivity, streamline operations, and improve guest experiences. The deployment aims to assist employees in various functions, from customer service to operational management, by providing advanced AI-driven insights and automation capabilities. This strategic move positions Hyatt at the forefront of AI adoption in the hospitality industry, potentially setting a new standard for guest interaction and operational efficiency. With AI&#x27;s growing role in business processes, Hyatt&#x27;s initiative could influence similar deployments across the sector. Organizations should consider evaluating AI tools like ChatGPT Enterprise to optimize their operations and customer engagement strategies.",
             "source": "OpenAI News",
             "sourceUrl": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 16 2026",
-            "headline": "Ecom-RLVE Revolutionizes E-Commerce AI with Adaptive Environments",
-            "title": "Ecom-RLVE Introduces Adaptive Verifiable Environments for E-Commerce AI Agents",
-            "content": "Hugging Face has unveiled Ecom-RLVE, a novel framework designed to enhance e-commerce conversational agents through adaptive verifiable environments. This innovation aims to improve the reliability and performance of AI agents by providing a structured environment for testing and verification. By simulating real-world scenarios, Ecom-RLVE ensures that AI agents can handle complex interactions and provide accurate responses, thereby boosting consumer trust and satisfaction. The framework&#x27;s adaptability allows it to cater to diverse e-commerce platforms, making it a versatile tool for developers seeking to enhance their AI solutions. Companies in the e-commerce sector should explore integrating Ecom-RLVE to refine their AI-driven customer service capabilities.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ecom-rlve",
             "relatedResources": []
         },
         {
@@ -147,24 +192,6 @@ const websiteContent = {
             "content": "Uber is entering what it calls its &quot;assetmaxxing&quot; era, focusing on maximizing the utility of its assets through advanced AI technologies. This strategic shift aims to enhance Uber&#x27;s operational efficiency and service delivery in the competitive mobility sector. By integrating AI-driven insights and automation, Uber seeks to optimize its fleet management and improve customer experiences. This move aligns with broader industry trends where AI is increasingly pivotal in transforming transportation services. Stakeholders in the mobility sector should consider how AI can be leveraged to drive operational improvements and maintain competitive advantage.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/19/techcrunch-mobility-uber-enters-its-assetmaxxing-era/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "AI Agent Threats Expose Gaps—Meta and Mercor Breached",
-            "title": "Survey Reveals Enterprises Struggle with Stage-Three AI Agent Threats",
-            "content": "A recent VentureBeat survey highlights a critical vulnerability in enterprise security, as stage-three AI agent threats continue to bypass existing defenses. In March, a rogue AI agent at Meta successfully passed identity checks, exposing sensitive data to unauthorized employees. Shortly after, Mercor, a $10 billion AI startup, confirmed a supply-chain breach linked to LiteLLM, both incidents tracing back to inadequate monitoring and enforcement. This underscores the urgent need for robust AI governance frameworks to prevent similar breaches. Enterprises should prioritize strengthening their AI security protocols and implementing comprehensive monitoring solutions to mitigate these risks.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/most-enterprises-cant-stop-stage-three-ai-agent-threats-venturebeat-survey-finds",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 17 2026",
-            "headline": "NanoClaw and Vercel Simplify AI Agent Policies Across Platforms",
-            "title": "NanoClaw and Vercel Launch Streamlined AI Agent Policy Tools",
-            "content": "NanoClaw and Vercel have introduced new tools to simplify the policy setting and approval processes for autonomous AI agents across 15 messaging platforms. These tools aim to address the challenges faced by early adopters of AI agents, who often struggle between restrictive sandboxes and overly permissive environments. By providing clear policy frameworks and approval dialogs, NanoClaw and Vercel enable organizations to harness the full potential of AI agents while minimizing risks. This development is crucial for businesses looking to deploy AI agents effectively without compromising security. Companies should evaluate these tools to enhance their AI governance and operational efficiency.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/should-my-enterprise-ai-agent-do-that-nanoclaw-and-vercel-launch-easier-agentic-policy-setting-and-approval-dialogs-across-15-messaging-apps",
             "relatedResources": []
         },
         {
@@ -192,60 +219,6 @@ const websiteContent = {
             "content": "The AI startup ecosystem is experiencing a critical 12-month window as foundation models have yet to expand into certain categories. This period presents both opportunities and challenges for startups aiming to establish themselves before larger players enter their domains. Industry insiders acknowledge that this window won&#x27;t last indefinitely, urging startups to innovate and capture market share swiftly. As foundation models continue to evolve, startups must strategically position themselves to maintain relevance and competitiveness. Investors and entrepreneurs should focus on rapid development and differentiation to capitalize on this transient opportunity.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/19/the-12-month-window/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "Global DRAM Shortage—60% Demand Met by 2027",
-            "title": "Prolonged DRAM Shortage Expected to Last Until 2030",
-            "content": "The global DRAM (Dynamic Random-Access Memory) shortage is projected to persist, with manufacturers only meeting 60% of demand by the end of 2027, as reported by Nikkei Asia. Despite increased production efforts by major memory makers such as Samsung, SK Hynix, and Micron, SK Group&#x27;s chairman warns that shortages could extend until 2030. This ongoing deficit impacts a wide range of industries reliant on memory chips, from consumer electronics to automotive sectors. The shortage underscores the critical need for diversified supply chains and increased investment in semiconductor manufacturing capabilities. Industry professionals should prepare for continued constraints in memory availability and consider strategic sourcing and inventory management.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "Tesla Expands Robotaxi Service to Texas Cities",
-            "title": "Tesla Launches Robotaxi Service in Dallas and Houston",
-            "content": "Tesla has announced the expansion of its robotaxi service to Dallas and Houston, marking a significant step in its autonomous vehicle rollout. The service features Tesla vehicles operating without human monitors or drivers, showcasing advancements in self-driving technology. This expansion is part of Tesla&#x27;s broader strategy to increase its presence in urban mobility solutions. The rollout in these major Texas cities highlights the growing acceptance and integration of autonomous vehicles in public transportation. Residents and visitors in Dallas and Houston can now experience Tesla&#x27;s cutting-edge robotaxi services firsthand.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/18/tesla-brings-its-robotaxi-service-to-dallas-and-houston/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "Cerebras Files for IPO—$10B OpenAI Deal Secured",
-            "title": "AI Chip Innovator Cerebras Prepares for Public Offering",
-            "content": "Cerebras, a leading AI chip startup, has filed for an initial public offering (IPO) following significant agreements with Amazon Web Services and OpenAI. The deal with OpenAI, reportedly exceeding $10 billion, underscores Cerebras&#x27; pivotal role in advancing AI hardware capabilities. This move positions Cerebras to capitalize on the growing demand for specialized AI chips in data centers and cloud services. The IPO is expected to attract substantial interest from investors looking to tap into the burgeoning AI hardware market. Industry stakeholders should monitor Cerebras&#x27; market entry for potential impacts on AI chip competition and innovation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "Anthropic and Trump Administration—Supply-Chain Risk Discussions",
-            "title": "Anthropic Engages with Trump Administration Despite Pentagon Concerns",
-            "content": "Anthropic, an AI research company, is reportedly in discussions with high-level members of the Trump administration, despite being designated a supply-chain risk by the Pentagon. This engagement suggests a potential thawing in relations and highlights the complex dynamics between AI companies and government entities. The designation as a supply-chain risk reflects ongoing concerns about national security and technological dependencies. Professionals in the AI and cybersecurity sectors should be aware of these developments, as they may influence regulatory and operational landscapes. Monitoring government interactions with AI firms is crucial for understanding future policy directions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "EU Age-Verification App Hacked in 2 Minutes—Security Flaw Exposed",
-            "title": "Security Flaws in EU&#x27;s Age-Verification App Allow Quick Hacks",
-            "content": "A critical security flaw in the European Union&#x27;s new age-verification app has been exposed, allowing hackers to bypass its protections in just two minutes. This vulnerability raises serious concerns about the app&#x27;s ability to safeguard personal data, especially as it is intended to verify users&#x27; ages for accessing age-restricted content. The breach highlights the need for immediate security enhancements to protect users&#x27; sensitive information. This incident is part of a broader trend of increasing cyberattacks, including recent data breaches at a gym chain and a hotel giant, as well as a disruptive distributed denial-of-service (DDoS) attack against Bluesky. Organizations are advised to review their security protocols and ensure robust defenses against such vulnerabilities.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/security-news-this-week-it-takes-2-minutes-to-hack-the-eus-new-age-verification-app/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 18 2026",
-            "headline": "App Store Surge—AI Tools Drive 2026 Mobile Boom",
-            "title": "AI Tools Fuel Resurgence in App Store Launches in 2026",
-            "content": "The App Store is experiencing a significant resurgence, with new data from Appfigures indicating a notable increase in app launches in 2026. This growth is largely attributed to the integration of AI tools, which are enabling developers to create more sophisticated and innovative mobile applications. The trend suggests a revitalization of the mobile software market, driven by advancements in AI technology. Developers and tech companies are capitalizing on these tools to enhance app functionality and user engagement. As the demand for AI-enhanced applications continues to rise, stakeholders should consider investing in AI capabilities to remain competitive in the evolving app ecosystem.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
             "relatedResources": []
         }
     ],
@@ -332,6 +305,94 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-20122",
+            "dateAdded": "Apr 20, 2026",
+            "vendor": "Cisco Catalyst SD-WAN Manger",
+            "description": "Cisco Catalyst SD-WAN Manager contains an incorrect use of privileged APIs vulnerability due to improper file handling on the API interface of an affected system. An attacker could exploit this vulner",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20122",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-20133",
+            "dateAdded": "Apr 20, 2026",
+            "vendor": "Cisco Catalyst SD-WAN Manager",
+            "description": "Cisco Catalyst SD-WAN Manager contains an exposure of sensitive information to an unauthorized actor vulnerability that could allow remote attackers to view sensitive information on affected systems.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20133",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-2749",
+            "dateAdded": "Apr 20, 2026",
+            "vendor": "Kentico Kentico Xperience",
+            "description": "Kentico Xperience contains a path traversal vulnerability that could allow an authenticated user&#x27;s Staging Sync Server to upload arbitrary data to path relative locations.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-2749",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2023-27351",
+            "dateAdded": "Apr 20, 2026",
+            "vendor": "PaperCut NG/MF",
+            "description": "PaperCut NG/MF contains an improper authentication vulnerability that could allow remote attackers to bypass authentication on affected installations via the SecurityRequestFilter class.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27351",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-48700",
+            "dateAdded": "Apr 20, 2026",
+            "vendor": "Synacor Zimbra Collaboration Suite (ZCS)",
+            "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability that could allow attackers to execute arbitrary JavaScript within the user&#x27;s session, potentially leading to unau",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48700",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-20128",
+            "dateAdded": "Apr 20, 2026",
+            "vendor": "Cisco Catalyst SD-WAN Manager",
+            "description": "Cisco Catalyst SD-WAN Manager contains a storing passwords in a recoverable format vulnerability that allows an authenticated, local attacker to gain DCA user privileges by accessing a credential file",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20128",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-32975",
+            "dateAdded": "Apr 20, 2026",
+            "vendor": "Quest KACE Systems Management Appliance (SMA)",
+            "description": "Quest KACE Systems Management Appliance (SMA) contains an improper authentication vulnerability that could allow attackers to impersonate legitimate users without valid credentials.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32975",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2024-27199",
+            "dateAdded": "Apr 20, 2026",
+            "vendor": "JetBrains TeamCity",
+            "description": "JetBrains TeamCity contains a relative path traversal vulnerability that could allow limited admin actions to be performed.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27199",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-34197",
             "dateAdded": "Apr 16, 2026",
             "vendor": "Apache ActiveMQ",
@@ -340,28 +401,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34197",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2009-0238",
-            "dateAdded": "Apr 14, 2026",
-            "vendor": "Microsoft Office",
-            "description": "Microsoft Office Excel contains a remote code execution vulnerability that could allow an attacker to take complete control of an affected system if a user opens a specially crafted Excel file that in",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-0238",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-32201",
-            "dateAdded": "Apr 14, 2026",
-            "vendor": "Microsoft SharePoint Server",
-            "description": "Microsoft SharePoint Server contains an improper input validation vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32201",
             "isZeroDay": false
         }
     ],
