@@ -254,6 +254,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Consultant logic for recommendations
         const recommendations = {
+            'domain_0': 'MANDATORY',
             'domain_5': 'CRITICAL',
             'domain_6': 'REQUIRED',
             'domain_7': 'OPTIONAL FOR REMOTE',
@@ -364,64 +365,86 @@ document.addEventListener('DOMContentLoaded', async () => {
         grcData.domains.forEach((dom, index) => {
             const card = document.createElement('div');
             card.className = 'scope-card';
+            const isMandatory = dom.isMandatory === true;
 
             const recLabel = recommendations[dom.id] || 'RECOMMENDED';
-            const recClass = recLabel.includes('CRITICAL') ? 'badge-critical' : 
+            const recClass = isMandatory ? 'badge-critical' :
+                             recLabel.includes('CRITICAL') ? 'badge-critical' : 
                              recLabel.includes('OPTIONAL') ? 'badge-optional' : 'badge-recommended';
 
-            // Check if this domain has answered questions
-            let hasAnswersInDomain = false;
-            if (hasExistingData) {
-                const answered = dom.controls.filter(c => userState[c.control_id]).length;
-                if (answered > 0) hasAnswersInDomain = true;
-            }
-
-            // Auto-select if no previous baseline, or if it had existing answers
-            if (!hasExistingData || hasAnswersInDomain) {
+            // Mandatory domains are always pre-selected and locked
+            if (isMandatory) {
                 card.classList.add('selected');
                 if (!activeDomainIndices.includes(index)) activeDomainIndices.push(index);
+            } else {
+                // Check if this domain has answered questions
+                let hasAnswersInDomain = false;
+                if (hasExistingData) {
+                    const answered = dom.controls.filter(c => userState[c.control_id]).length;
+                    if (answered > 0) hasAnswersInDomain = true;
+                }
+                // Auto-select if no previous baseline, or if it had existing answers
+                if (!hasExistingData || hasAnswersInDomain) {
+                    card.classList.add('selected');
+                    if (!activeDomainIndices.includes(index)) activeDomainIndices.push(index);
+                }
             }
 
+            // Mandatory domain banner
+            const mandatoryBanner = isMandatory ? `
+                <div style="position:absolute; top:0; left:0; right:0; background:linear-gradient(90deg, rgba(239,68,68,0.15), rgba(239,68,68,0.05)); border-bottom:1px solid rgba(239,68,68,0.3); padding:6px 14px; font-size:0.65rem; font-weight:800; color:#EF4444; text-transform:uppercase; letter-spacing:1.5px; display:flex; align-items:center; gap:6px;">
+                    <i class="fas fa-lock"></i> MANDATORY — Cannot be excluded from scope
+                </div>
+            ` : '';
+
             card.innerHTML = `
-                <div class="scope-card-header" style="display:flex; justify-content:space-between; width:100%; align-items:flex-start;">
-                    <div class="scope-icon-box">
+                ${mandatoryBanner}
+                <div class="scope-card-header" style="display:flex; justify-content:space-between; width:100%; align-items:flex-start; ${isMandatory ? 'margin-top:2rem;' : ''}">
+                    <div class="scope-icon-box" style="${isMandatory ? 'background:rgba(239,68,68,0.1); border-color:rgba(239,68,68,0.3); color:#EF4444;' : ''}">
                         <i class="fas ${dom.icon || 'fa-folder'}"></i>
                     </div>
                     <div class="custom-checkbox-container">
-                        <input type="checkbox" ${card.classList.contains('selected') ? 'checked' : ''} id="check_${dom.id}" style="display:none;">
-                        <div class="custom-check-visual ${card.classList.contains('selected') ? 'checked' : ''}">
-                            <i class="fas fa-check"></i>
+                        <input type="checkbox" ${card.classList.contains('selected') ? 'checked' : ''} id="check_${dom.id}" ${isMandatory ? 'disabled' : ''} style="display:none;">
+                        <div class="custom-check-visual ${card.classList.contains('selected') ? 'checked' : ''}" style="${isMandatory ? 'opacity:0.5; cursor:not-allowed;' : ''}">
+                            <i class="fas ${isMandatory ? 'fa-lock' : 'fa-check'}"></i>
                         </div>
                     </div>
                 </div>
-                <div class="scope-badge ${recClass}">${recLabel}</div>
-                <h3>${dom.name}</h3>
+                <div class="scope-badge ${recClass}">${isMandatory ? '🔒 MANDATORY' : recLabel}</div>
+                <h3 style="${isMandatory ? 'color:#EF4444;' : ''}">${dom.name}</h3>
                 <p>${dom.description}</p>
                 <div class="scope-stats">
-                    <span class="control-pill"><i class="fas fa-microchip"></i> ${dom.controls.length} Controls</span>
-                    <span class="impact-pill"><i class="fas fa-shield-virus"></i> High Impact</span>
+                    <span class="control-pill"><i class="fas fa-microchip"></i> ${dom.controls.length} Clauses</span>
+                    <span class="impact-pill" style="${isMandatory ? 'background:rgba(239,68,68,0.1); color:#EF4444; border-color:rgba(239,68,68,0.3);' : ''}"><i class="fas ${isMandatory ? 'fa-exclamation-triangle' : 'fa-shield-virus'}"></i> ${isMandatory ? 'Certification Blocker' : 'High Impact'}</span>
                 </div>
             `;
 
-            card.addEventListener('click', () => {
-                const checkbox = card.querySelector('.custom-check-visual');
-                const input = card.querySelector('input');
-                
-                card.classList.toggle('selected');
-                const isSelected = card.classList.contains('selected');
-                input.checked = isSelected;
-                
-                if (isSelected) {
-                    if (!activeDomainIndices.includes(index)) activeDomainIndices.push(index);
-                    checkbox.classList.add('checked');
-                } else {
-                    activeDomainIndices = activeDomainIndices.filter(i => i !== index);
-                    checkbox.classList.remove('checked');
-                }
+            if (isMandatory) {
+                // Mandatory card: apply locked styling, no toggle on click
+                card.style.cssText += 'border-color: rgba(239,68,68,0.4); position: relative; overflow: hidden;';
+                card.style.cursor = 'default';
+                card.addEventListener('click', (e) => e.preventDefault());
+            } else {
+                card.addEventListener('click', () => {
+                    const checkbox = card.querySelector('.custom-check-visual');
+                    const input = card.querySelector('input');
+                    
+                    card.classList.toggle('selected');
+                    const isSelected = card.classList.contains('selected');
+                    input.checked = isSelected;
+                    
+                    if (isSelected) {
+                        if (!activeDomainIndices.includes(index)) activeDomainIndices.push(index);
+                        checkbox.classList.add('checked');
+                    } else {
+                        activeDomainIndices = activeDomainIndices.filter(i => i !== index);
+                        checkbox.classList.remove('checked');
+                    }
 
-                ui.btnStartAssess.disabled = activeDomainIndices.length === 0;
-                updateScopeMetrics();
-            });
+                    ui.btnStartAssess.disabled = activeDomainIndices.length === 0;
+                    updateScopeMetrics();
+                });
+            }
 
             ui.scopeGrid.appendChild(card);
         });
@@ -841,6 +864,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     function updateOverallScore() {
         let earnedImpact = 0;
         let totalPossibleImpact = 0;
+        // [8] Full Scope denominator (unanswered controls count as 0)
+        let fullScopeTotalImpact = 0;
 
         // NIST Accumulators (6 functions for CSF 2.0)
         const nistStats = {};
@@ -854,6 +879,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         const allControls = [];
         activeDomainIndices.forEach(idx => allControls.push(...grcData.domains[idx].controls));
 
+        // [8] Full scope denominator: every selected control counts
+        allControls.forEach(c => {
+            const ans = userState[c.control_id];
+            if (ans !== 'na') fullScopeTotalImpact += (c.risk_impact || 5);
+        });
+
         Object.keys(userState).forEach(controlId => {
             if (controlId.startsWith('_')) return;
             const status = userState[controlId];
@@ -864,7 +895,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const impact = control.risk_impact || 5;
 
-            // 1. ISO Score (Original Logic)
+            // 1. ISO Score (Scoped — only answered controls in denominator)
             earnedImpact += (impact * getMultiplier(status));
             totalPossibleImpact += impact;
 
@@ -884,9 +915,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
 
-        // --- Final ISO 27001 Score ---
-        // Applicable Scope Denominator remains 100% untouched.
-        const finalScore = totalPossibleImpact > 0 ? Math.round((earnedImpact / totalPossibleImpact) * 100) : 0;
+        // --- Final ISO 27001 Scores ([8] Dual Scoring) ---
+        // Scoped Score: only answered controls in denominator
+        const scopedScore = totalPossibleImpact > 0 ? Math.round((earnedImpact / totalPossibleImpact) * 100) : 0;
+        // Full Scope Score: all selected controls in denominator (unanswered = 0)
+        const fullScopeScore = fullScopeTotalImpact > 0 ? Math.round((earnedImpact / fullScopeTotalImpact) * 100) : 0;
+        // Primary displayed score is Full Scope
+        const finalScore = fullScopeScore;
         
         // --- Independent NIST CSF 2.0 Calculation ---
         // Calculating outcome-focused readiness (Avg functional % benchmarked vs framework target)
@@ -920,6 +955,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Save to global state
         window.grcSessionScore = finalScore;
+        window.grcScopedScore = scopedScore;  // [8]
+        window.grcFullScopeScore = fullScopeScore;  // [8]
         window.grcNistScore = finalNist;
         window.grcCisScore = finalCis;
 
@@ -1064,7 +1101,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         activeDomainIndices.forEach(idx => {
             const d = grcData.domains[idx];
-            labels.push(d.name.replace(' Controls', ''));
+            labels.push(d.name.replace(' Controls', '').replace(' Management System Requirements', 'Clauses 4–10'));
             
             let earnedISO = 0, totalISO = 0;
             let earnedNIST = 0, totalNIST = 0;
@@ -1092,6 +1129,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                             id: c.control_id,
                             title: c.control_title,
                             domain: d.name,
+                            isMandatoryDomain: d.isMandatory === true,
+                            criticality: c.criticality || 'Medium',
                             ans: ans,
                             maturityLabel: matLevel ? matLevel.label : ans,
                             multiplier: getMultiplier(ans),
@@ -1113,6 +1152,102 @@ document.addEventListener('DOMContentLoaded', async () => {
         const cisScoreEl = document.getElementById('cisScore');
         if (nistScoreEl) nistScoreEl.innerText = `${window.grcNistScore || 0}%`;
         if (cisScoreEl) cisScoreEl.innerText = `${window.grcCisScore || 0}%`;
+
+        // [8] Show dual scores on dashboard
+        const dualScoreEl = document.getElementById('dualScorePanel');
+        if (dualScoreEl) {
+            const scopedVal = window.grcScopedScore || 0;
+            const fullVal = window.grcFullScopeScore || 0;
+            dualScoreEl.innerHTML = `
+                <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:center; padding:1rem 1.5rem; background:rgba(255,255,255,0.03); border:1px solid var(--border); border-radius:12px; margin-bottom:1.5rem; font-size:0.85rem;">
+                    <i class="fas fa-calculator" style="color:var(--accent-cyan);"></i>
+                    <div><span style="color:var(--text-muted);">Full Scope Score (primary):</span> <strong style="color:${fullVal>=75?'#10B981':fullVal>=40?'#F59E0B':'#EF4444'}; font-size:1.1rem;">${fullVal}%</strong> <span style="color:var(--text-muted); font-size:0.75rem;">(all selected controls in denominator)</span></div>
+                    <div style="border-left:1px solid var(--border); padding-left:1.5rem;"><span style="color:var(--text-muted);">Scoped Score (answered only):</span> <strong style="color:var(--text-primary);">${scopedVal}%</strong> <span style="color:var(--text-muted); font-size:0.75rem;">(only answered controls counted)</span></div>
+                </div>
+            `;
+        }
+
+        // [1] Clause failure banner — check domain_0 controls below 'defined' level
+        const domain0 = grcData.domains.find(d => d.id === 'domain_0');
+        let clauseFailures = [];
+        if (domain0) {
+            domain0.controls.forEach(c => {
+                const ans = userState[c.control_id];
+                // Anything below 'defined' (multiplier < 0.6) or unanswered = clause gap
+                const mult = ans ? getMultiplier(ans) : -1;
+                if (!ans || (ans !== 'na' && mult < 0.6)) {
+                    clauseFailures.push(c.control_title);
+                }
+            });
+        }
+        const clauseBannerEl = document.getElementById('clauseFailureBanner');
+        if (clauseBannerEl) {
+            if (clauseFailures.length > 0) {
+                clauseBannerEl.style.display = 'block';
+                clauseBannerEl.innerHTML = `
+                    <div style="background:linear-gradient(135deg, rgba(239,68,68,0.15), rgba(239,68,68,0.05)); border:2px solid rgba(239,68,68,0.5); border-radius:16px; padding:1.5rem 2rem; margin-bottom:2rem; display:flex; align-items:flex-start; gap:1.5rem;">
+                        <div style="font-size:2rem; line-height:1;">🚨</div>
+                        <div>
+                            <div style="font-size:0.7rem; font-weight:800; color:#EF4444; text-transform:uppercase; letter-spacing:2px; margin-bottom:0.5rem;">MAJOR GAP: Certification is Blocked</div>
+                            <div style="font-weight:700; color:#fff; font-size:1.05rem; margin-bottom:0.5rem;">ISO 27001 Clause gaps must be resolved before Stage 1 audit</div>
+                            <div style="color:var(--text-muted); font-size:0.85rem; line-height:1.6;">The following mandatory ISMS clauses are below the minimum <strong style="color:#F59E0B;">Defined</strong> maturity threshold required for certification: <strong style="color:#EF4444;">${clauseFailures.slice(0,3).join(', ')}${clauseFailures.length > 3 ? ` +${clauseFailures.length-3} more` : ''}</strong>. Resolve these before attempting an external audit.</div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                clauseBannerEl.style.display = 'none';
+            }
+        }
+
+        // [9] Certification Readiness Verdict panel
+        const verdictEl = document.getElementById('certReadinessVerdict');
+        if (verdictEl) {
+            // MNCs: High-criticality controls at 'no' (multiplier 0)
+            const mncs = criticalGaps.filter(g => g.criticality === 'High' && g.multiplier === 0);
+            // Minor NCs: High-criticality at adhoc (0.2) or repeatable (0.4)
+            const minorNCs = criticalGaps.filter(g => g.criticality === 'High' && g.multiplier > 0 && g.multiplier <= 0.4);
+            // Observations: Defined/Managed controls needing uplift
+            const observations = criticalGaps.filter(g => g.multiplier > 0.4 && g.multiplier < 1.0);
+
+            let verdictText, verdictColor, verdictIcon;
+            if (mncs.length === 0 && minorNCs.length === 0) {
+                verdictText = 'STAGE 1 READY'; verdictColor = '#10B981'; verdictIcon = 'fa-check-circle';
+            } else if (mncs.length === 0 && minorNCs.length <= 3) {
+                verdictText = 'BORDERLINE — Resolve Minor NCs First'; verdictColor = '#F59E0B'; verdictIcon = 'fa-exclamation-triangle';
+            } else {
+                verdictText = 'NOT READY FOR STAGE 1 AUDIT'; verdictColor = '#EF4444'; verdictIcon = 'fa-times-circle';
+            }
+
+            verdictEl.innerHTML = `
+                <div style="padding:2rem; background:rgba(255,255,255,0.02); border:1px solid var(--border); border-radius:20px; margin-bottom:3rem;">
+                    <h3 style="font-family:'Outfit'; font-size:1.4rem; margin:0 0 1.5rem; color:#fff; display:flex; align-items:center; gap:10px;"><i class="fas fa-certificate" style="color:var(--accent-cyan);"></i> Certification Readiness Verdict</h3>
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+                        <div style="background:rgba(239,68,68,0.07); border:1px solid rgba(239,68,68,0.25); border-radius:12px; padding:1.2rem; text-align:center;">
+                            <div style="font-size:2.5rem; font-weight:800; color:#EF4444; font-family:'JetBrains Mono';">${mncs.length}</div>
+                            <div style="font-size:0.7rem; font-weight:800; color:#EF4444; text-transform:uppercase; letter-spacing:1px; margin-top:4px;">🔴 Major Non-Conformities</div>
+                            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:6px;">High-criticality controls at 'Not Implemented' — auto-fail Stage 1</div>
+                        </div>
+                        <div style="background:rgba(245,158,11,0.07); border:1px solid rgba(245,158,11,0.25); border-radius:12px; padding:1.2rem; text-align:center;">
+                            <div style="font-size:2.5rem; font-weight:800; color:#F59E0B; font-family:'JetBrains Mono';">${minorNCs.length}</div>
+                            <div style="font-size:0.7rem; font-weight:800; color:#F59E0B; text-transform:uppercase; letter-spacing:1px; margin-top:4px;">🟡 Minor Non-Conformities</div>
+                            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:6px;">High-criticality controls at Ad Hoc or Repeatable maturity</div>
+                        </div>
+                        <div style="background:rgba(52,211,153,0.07); border:1px solid rgba(52,211,153,0.25); border-radius:12px; padding:1.2rem; text-align:center;">
+                            <div style="font-size:2.5rem; font-weight:800; color:#34D399; font-family:'JetBrains Mono';">${observations.length}</div>
+                            <div style="font-size:0.7rem; font-weight:800; color:#34D399; text-transform:uppercase; letter-spacing:1px; margin-top:4px;">🟢 Observations</div>
+                            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:6px;">Defined/Managed controls that need uplift to Optimized</div>
+                        </div>
+                    </div>
+                    <div style="padding:1.2rem 1.5rem; background:rgba(0,0,0,0.2); border-radius:12px; border-left:5px solid ${verdictColor}; display:flex; align-items:center; gap:1rem;">
+                        <i class="fas ${verdictIcon}" style="color:${verdictColor}; font-size:1.5rem;"></i>
+                        <div>
+                            <div style="font-weight:800; color:${verdictColor}; font-size:1rem; letter-spacing:0.5px;">${verdictText}</div>
+                            <div style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">${mncs.length > 0 ? `Resolve ${mncs.length} MNC${mncs.length>1?'s':''} before scheduling external audit.` : minorNCs.length > 0 ? 'Address minor NCs to strengthen audit confidence.' : 'No blocking issues found. You may proceed to Stage 1.'}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
 
         // 2. Decision Engine: Maturity & Priority Actions
         const finalScoreVal = parseInt(ui.overallScore.innerText.replace('%', ''));
@@ -1802,8 +1937,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             try {
                 // SHEET 1: Executive Summary
                 const execSummary = [];
-                execSummary.push(["ISO 27001:2022 Executive Summary"]);
+                execSummary.push(["ISO 27001:2022 Statement of Applicability — Executive Summary"]);
+                execSummary.push(["Version:", "v" + (grcData ? grcData.version : '2.0')]);
                 execSummary.push(["Generated on:", new Date().toLocaleDateString()]);
+                execSummary.push(["Assessment Date:", new Date().toLocaleDateString()]);
                 execSummary.push(["Framework:", grcData.framework]);
                 execSummary.push([]);
                 
@@ -1862,7 +1999,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // SHEET 2: Enriched Gap Analysis Data (Feature #7)
                 const exportData = [];
-                exportData.push(["Domain", "Control ID", "Control Title", "Implementation Status", "Maturity Level", "Maturity Score", "Risk Level", "Control Criticality", "Score Impact", "Evidence Notes", "N/A Justification", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice", "NIST CSF 2.0", "CIS Controls v8", "Expert Rationale"]);
+                exportData.push(["Domain", "Control ID", "Control Title", "Justification for Inclusion", "Implementation Status", "Maturity Level", "Maturity Score", "Risk Level", "Control Criticality", "Score Impact", "Justification for Exclusion (N/A only)", "Treatment Reference", "Assessment Date", "Evidence Notes", "Objective", "Auditor Check", "Evidence Required", "Remediation Advice", "NIST CSF 2.0", "CIS Controls v8", "Expert Rationale"]);
 
                 activeDomainIndices.forEach(globalIdx => {
                     const domain = grcData.domains[globalIdx];
@@ -1885,18 +2022,28 @@ document.addEventListener('DOMContentLoaded', async () => {
                         const impact = control.risk_impact || 1;
                         const scoreImpact = '+' + (impact * mult).toFixed(1) + ' / ' + impact;
 
+                        const inclJustification = (rawStatus === 'na') ? 'Excluded — see N/A justification' :
+                            (control.objective || 'Applicable to organisation scope');
+                        const exclusionJustification = (rawStatus === 'na') ?
+                            (userState[control.control_id + '_just'] || 'Not provided') : '';
+                        const treatmentRef = ''; // Placeholder for Risk Treatment Plan link
+                        const assessmentDate = new Date().toLocaleDateString();
+
                         exportData.push([
                             domain.name,
                             "A." + control.control_id,
                             control.control_title,
+                            inclJustification,
                             friendlyStatus,
                             maturityLabel,
                             (mult * 100) + '%',
                             riskLevel,
                             control.criticality || "Medium",
                             scoreImpact,
+                            exclusionJustification,
+                            treatmentRef,
+                            assessmentDate,
                             userState[control.control_id + '_notes'] || "",
-                            userState[control.control_id + '_just'] || "",
                             control.objective,
                             control.auditor_question,
                             control.evidence_required,
