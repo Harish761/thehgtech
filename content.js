@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 21 2026",
+            "headline": "France Titres Breach—Citizen Data for Sale by Hacker",
+            "title": "French Government Agency France Titres Confirms Data Breach",
+            "content": "France Titres, the French government agency responsible for issuing administrative documents, has confirmed a data breach following claims by a threat actor of stealing citizen data. The hacker is reportedly offering the stolen data for sale, raising concerns about the security of sensitive personal information. The breach highlights vulnerabilities in government systems and underscores the need for enhanced cybersecurity measures. Affected citizens are advised to monitor their personal accounts for suspicious activity and consider identity protection services. This incident adds to a growing list of government data breaches worldwide, emphasizing the critical need for robust security protocols.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/french-govt-agency-confirms-breach-as-hacker-offers-to-sell-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "SystemBC C2 Server Exposes 1,570 Victims in Ransomware Attack",
+            "title": "SystemBC C2 Server Links to 1,570 Victims in The Gentlemen Ransomware Operation",
+            "content": "Check Point researchers have uncovered a command-and-control (C2) server associated with SystemBC, revealing over 1,570 victims of The Gentlemen ransomware-as-a-service (RaaS) operation. SystemBC, a known proxy malware, is used by threat actors to facilitate ransomware deployment. The discovery highlights the scale and reach of The Gentlemen operation, which targets various sectors with sophisticated ransomware attacks. Organizations are urged to strengthen their network defenses and monitor for indicators of compromise related to SystemBC. This finding underscores the persistent threat of RaaS models in the cybersecurity landscape.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/systembc-c2-server-reveals-1570-victims.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Third US Expert Admits Aiding BlackCat Ransomware Gang",
+            "title": "US Security Expert Pleads Guilty to Assisting BlackCat Ransomware Group",
+            "content": "Angelo Martino, a Florida-based security expert, has pleaded guilty to collaborating with the BlackCat ransomware group while serving as a ransomware negotiator. This marks the third U.S. security professional implicated in aiding cybercriminals, highlighting a troubling trend within the industry. Martino&#x27;s involvement with BlackCat, also known as ALPHV, involved facilitating ransomware attacks against U.S. companies. The case underscores the importance of vetting and monitoring cybersecurity professionals to prevent insider threats. Organizations are advised to review their incident response protocols and ensure the integrity of their security teams.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/third-us-security-expert-admits-helping-ransomware-gang/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Ransomware Negotiator Guilty—Helped BlackCat in 2023 Attacks",
+            "title": "Ransomware Negotiator Angelo Martino Pleads Guilty to BlackCat Attacks in 2023",
+            "content": "Angelo Martino, a former ransomware negotiator from Land O&#x27;Lakes, Florida, has admitted to aiding the BlackCat ransomware group in executing attacks against U.S. companies in 2023. Martino&#x27;s collaboration with BlackCat involved providing critical support to the e-crime group, facilitating their ransomware operations. This case highlights the risks posed by insiders with specialized knowledge and access to sensitive information. Companies should enhance their background checks and implement continuous monitoring of employees in sensitive roles. The guilty plea serves as a reminder of the complex challenges in combating ransomware threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/ransomware-negotiator-pleads-guilty-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Google Fixes Antigravity IDE Flaw Allowing Code Execution",
+            "title": "Google Patches Critical Vulnerability in Antigravity IDE Enabling Code Execution",
+            "content": "Google has addressed a critical vulnerability in its Antigravity integrated development environment (IDE) that allowed for prompt injection leading to code execution. The flaw, which combined Antigravity&#x27;s file-creation capabilities with insufficient input validation, has been patched to prevent exploitation. Developers using Antigravity are urged to update to the latest version to mitigate potential security risks. This vulnerability underscores the importance of rigorous security testing in development tools to prevent exploitation by malicious actors. Google&#x27;s swift response highlights the ongoing need for vigilance in securing software development environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/google-patches-antigravity-ide-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Ex-Ransomware Negotiator Guilty in BlackCat Attacks",
+            "title": "Former Ransomware Negotiator Angelo Martino Pleads Guilty to BlackCat Involvement",
+            "content": "Angelo Martino, a former ransomware negotiator with DigitalMint, has pleaded guilty to participating in BlackCat (ALPHV) ransomware attacks targeting U.S. companies in 2023. Martino&#x27;s role involved leveraging his expertise to assist the cybercrime group in executing their operations. This case highlights the potential for insider threats within cybersecurity firms and the need for stringent oversight. Organizations are encouraged to review their security practices and ensure robust measures are in place to detect and prevent insider collaboration with threat actors. The plea serves as a cautionary tale for the cybersecurity industry.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/former-ransomware-negotiator-pleads-guilty-to-blackcat-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
             "headline": "1,500 Perforce Servers Leak Data—Check Your Configurations",
             "title": "Unsecured Perforce Servers Expose Sensitive Data From Major Organizations",
             "content": "A security researcher has identified over 1,500 Perforce P4 instances that are improperly configured, allowing unauthorized access to sensitive files on the servers. These instances, used by major organizations for version control, pose a significant risk as attackers can exploit these misconfigurations to access proprietary code and other critical data. While improvements have been noted, the exposure underscores the persistent threat of misconfigured systems. Organizations using Perforce should immediately review their server configurations to ensure they are not publicly accessible and apply any necessary security patches. This incident highlights the ongoing challenge of securing development environments against unauthorized access.",
@@ -83,79 +137,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/weekly-recap-vercel-hack-push-fraud.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "BCDR Essential—Backups Alone Can&#x27;t Prevent Business Downtime",
-            "title": "The Backup Myth: Why Business Continuity and Disaster Recovery Matter",
-            "content": "While backups are crucial for data protection, they fall short in maintaining business operations during disruptions like ransomware attacks or system outages. Datto emphasizes the importance of Business Continuity and Disaster Recovery (BCDR) solutions to ensure seamless operations. BCDR strategies integrate data backups with proactive measures to minimize downtime and data loss, crucial for businesses reliant on continuous operations. As cyber threats evolve, relying solely on backups can leave organizations vulnerable to extended outages and financial losses. Companies should evaluate their current disaster recovery plans and consider comprehensive BCDR solutions to safeguard against potential threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-backup-myth-that-is-putting-businesses-at-risk/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Hackers Exploit QEMU—Ransomware and RATs Evade Detection",
-            "title": "QEMU Abused in Ransomware and Remote Access Tool Campaigns",
-            "content": "Cybercriminals have leveraged QEMU, a popular machine emulator, in at least two separate campaigns to distribute ransomware and remote access tools (RATs). By utilizing QEMU for defense evasion, attackers can bypass traditional security measures and execute malicious activities undetected. This technique highlights the growing sophistication of threat actors in exploiting legitimate tools for nefarious purposes. Organizations using QEMU should review their security configurations and monitor for unusual activity to mitigate potential risks. The abuse of QEMU underscores the need for robust security practices and continuous monitoring of network activities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hackers-abuse-qemu-for-defense-evasion/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Anthropic MCP Flaw—RCE Threatens AI Supply Chain",
-            "title": "Critical Design Vulnerability in Anthropic MCP Enables Remote Code Execution",
-            "content": "Researchers have identified a critical vulnerability in the Model Context Protocol (MCP) architecture used by Anthropic, which could lead to remote code execution (RCE). This &quot;by design&quot; flaw poses a significant threat to the AI supply chain, potentially allowing attackers to manipulate AI models and systems. The vulnerability&#x27;s impact could be widespread, affecting organizations relying on AI technologies for critical operations. Companies using Anthropic&#x27;s MCP should assess their exposure and implement necessary security patches or mitigations. This discovery highlights the importance of rigorous security assessments in AI development and deployment.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Vercel Breach—ShinyHunters Demand $2M for Stolen Data",
-            "title": "Vercel Confirms Data Breach Linked to ShinyHunters Hacker Group",
-            "content": "Vercel, the creator of Next.js, has confirmed a data breach after a hacker associated with the ShinyHunters group offered stolen data for sale at $2 million. The breach involved unauthorized access to Vercel&#x27;s systems, potentially compromising sensitive information. This incident underscores the persistent threat posed by cybercriminal groups targeting tech companies. Organizations should remain vigilant and enhance their security measures to protect against similar attacks. Vercel is currently investigating the breach and working to secure its systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/next-js-creator-vercel-hacked/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Vercel Breach Linked to Context AI—Customer Data Exposed",
-            "title": "Vercel Security Breach Traced to Compromised Context AI Tool",
-            "content": "Vercel has disclosed a security breach resulting from the compromise of Context.ai, a third-party AI tool used by an employee. This breach allowed unauthorized access to certain internal systems and exposed limited customer credentials. The incident highlights the risks associated with third-party integrations and the need for stringent security protocols. Affected customers are advised to monitor their accounts for suspicious activity and update their credentials. Vercel is taking steps to enhance its security posture and prevent future incidents.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 19 2026",
-            "headline": "Vercel Breach—Hackers Claim Stolen Data for Sale",
-            "title": "Vercel Confirms Security Breach Amid Hacker Data Sale Claims",
-            "content": "Vercel, a prominent cloud development platform, has confirmed a security breach following claims by threat actors that they have infiltrated its systems and are selling stolen data. The breach has raised concerns over the potential exposure of sensitive information, although specific details about the compromised data have not been disclosed. Vercel&#x27;s security team is actively investigating the incident to assess the scope and impact. This breach underscores the growing trend of cybercriminals targeting cloud service providers to exploit their extensive user bases. Users are advised to monitor their accounts for unusual activity and ensure that security measures, such as two-factor authentication, are in place.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 18 2026",
-            "headline": "Global DRAM Shortage—60% Demand Met by 2027",
-            "title": "Prolonged DRAM Shortage Expected to Last Until 2030",
-            "content": "A global shortage of DRAM (Dynamic Random-Access Memory) is projected to persist until 2030, despite increased production efforts by major suppliers. According to Nikkei Asia, manufacturers like Samsung, SK Hynix, and Micron are expected to meet only 60% of the global demand by the end of 2027. This shortage impacts a wide range of industries, including consumer electronics, automotive, and data centers, potentially leading to increased costs and slowed technological advancements. The SK Group chairman has highlighted the severity of the situation, urging stakeholders to brace for long-term supply constraints. Companies reliant on DRAM should consider strategic inventory management and explore alternative memory solutions to mitigate potential disruptions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years",
+            "date": "Apr 21 2026",
+            "headline": "China&#x27;s Open-Source AI Models Challenge Silicon Valley&#x27;s API Approach",
+            "title": "China&#x27;s AI Labs Embrace Open-Source Models Over Proprietary APIs",
+            "content": "In a strategic departure from Silicon Valley&#x27;s API-centric model, China&#x27;s leading AI labs are distributing AI models as open-weight packages, allowing developers to download, adapt, and run them independently. This approach contrasts with the traditional model where companies charge for API access, keeping proprietary algorithms under wraps. By offering open-source models, Chinese labs aim to foster innovation and adaptability among developers, potentially accelerating AI advancements. This shift could impact global AI development dynamics, challenging Western companies to reconsider their business models. Developers should explore these open-weight models for greater flexibility and customization in AI applications.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/",
             "relatedResources": []
         },
         {
-            "date": "Apr 16 2026",
-            "headline": "Ecom-RLVE Transforms E-Commerce Chatbots with Verifiable AI",
-            "title": "Ecom-RLVE: Enhancing E-Commerce Conversational Agents with Adaptive Environments",
-            "content": "Hugging Face has introduced Ecom-RLVE, a new framework designed to enhance e-commerce conversational agents by providing adaptive and verifiable environments. This innovation aims to improve the accuracy and reliability of AI-driven customer interactions, ensuring that chatbots can adapt to dynamic user queries while maintaining verifiable responses. The framework leverages reinforcement learning to optimize agent behavior, offering a significant upgrade over traditional static models. E-commerce platforms can benefit from this technology by delivering more personalized and trustworthy customer service experiences. Developers are encouraged to integrate Ecom-RLVE to enhance their chatbot capabilities and improve user satisfaction.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ecom-rlve",
+            "date": "Apr 21 2026",
+            "headline": "Google Unveils Deep Research Agents—Integrate Web and Private Data",
+            "title": "Google&#x27;s Deep Research Agents Merge Web and Enterprise Data for AI",
+            "content": "Google has announced the launch of Deep Research and Deep Research Max, two advanced AI agents that integrate open web data with proprietary enterprise information. This marks a significant enhancement in Google&#x27;s autonomous research capabilities, allowing developers to leverage a broader data spectrum for AI model training. By fusing public and private data, these agents can provide more comprehensive insights and improve decision-making processes. This development is particularly relevant for enterprises seeking to harness AI for competitive advantage. Organizations should evaluate these tools to enhance their data-driven strategies and maintain a competitive edge.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/googles-new-deep-research-and-deep-research-max-agents-can-search-the-web-and-your-private-data",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Vercel Breach Exposes OAuth Vulnerability—Security Teams on Alert",
+            "title": "Vercel Breach Highlights OAuth Security Gaps in Production Environments",
+            "content": "A breach at Vercel, the cloud platform behind Next.js, has exposed a critical OAuth vulnerability that security teams struggle to detect and mitigate. The incident occurred when an employee used an AI tool from a vendor compromised by an infostealer, granting unauthorized access to Vercel&#x27;s production environments. This breach underscores the challenges of managing OAuth grants and the potential risks they pose to cloud infrastructure. Security professionals must review OAuth implementations and conduct thorough audits to prevent similar vulnerabilities. This incident serves as a reminder of the importance of robust security practices in cloud environments.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/vercel-breach-exposes-the-oauth-gap-most-security-teams-cannot-detect-scope-or-contain",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Meta to Use Employee Keystrokes for AI Model Training",
+            "title": "Meta Collects Employee Keystrokes to Enhance AI Model Training",
+            "content": "Meta has introduced an internal tool that records employee keystrokes, mouse movements, and button clicks to generate data for training its AI models. This initiative aims to improve the accuracy and performance of Meta&#x27;s AI systems by leveraging real-world user interactions. While this approach may enhance AI capabilities, it raises privacy and ethical concerns regarding employee monitoring. Companies considering similar strategies should weigh the benefits against potential privacy implications and ensure transparent communication with employees. This development highlights the growing trend of using behavioral data to refine AI technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/21/meta-will-record-employees-keystrokes-and-use-it-to-train-its-ai-models/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Anthropic&#x27;s Mythos Tool Breached—Unauthorized Access Reported",
+            "title": "Unauthorized Access to Anthropic&#x27;s Mythos Cyber Tool Under Investigation",
+            "content": "Reports have emerged of unauthorized access to Anthropic&#x27;s exclusive cyber tool, Mythos, prompting an investigation by the company. Despite these claims, Anthropic asserts there is no evidence of system compromise. Mythos, a critical tool in Anthropic&#x27;s cybersecurity arsenal, is designed to protect against sophisticated cyber threats. The potential breach raises concerns about the security of proprietary cybersecurity tools and the implications for organizations relying on them. Security teams should remain vigilant and review their own security measures to safeguard against similar threats. This incident underscores the importance of robust cybersecurity protocols.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/21/unauthorized-group-has-gained-access-to-anthropics-exclusive-cyber-tool-mythos-report-claims/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "SpaceX Eyes $60B Acquisition of AI Startup Cursor",
+            "title": "SpaceX Collaborates with Cursor, Considers $60B Acquisition Option",
+            "content": "SpaceX is exploring a collaboration with AI startup Cursor, with an option to acquire the company for $60 billion. This partnership aims to address weaknesses in both companies&#x27; AI capabilities, as neither currently possesses proprietary models on par with industry leaders like Anthropic and OpenAI. By potentially acquiring Cursor, SpaceX seeks to bolster its AI offerings and compete more effectively in the developer market. This move reflects the growing trend of tech giants investing heavily in AI to maintain competitive advantage. Stakeholders should monitor this development for its potential impact on the AI landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "A prevalent sentence structure in AI-generated writing, &quot;It&#x27;s not just this—it&#x27;s that,&quot; has become a reliable indicator of synthetic content. This pattern, now ubiquitous in AI outputs, suggests a need for improved diversity in AI language models to avoid predictability and enhance authenticity. The overuse of such constructs can undermine the perceived quality and originality of AI-generated texts. Developers and content creators should be aware of these patterns to better differentiate between human and AI-generated content. Enhancing AI&#x27;s linguistic capabilities can lead to more nuanced and credible outputs, benefiting industries reliant on automated content generation.",
             "source": "AI News &amp; Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/20/ai-writing-its-not-just-this-its-that-barrons/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Deezer Reports 44% AI Music Uploads—Fraudulent Streams Rampant",
-            "title": "Deezer Reveals High AI-Generated Music Uploads and Stream Fraud",
-            "content": "Deezer has disclosed that 44% of new music uploads on its platform are AI-generated, with a significant portion of streams being fraudulent and subsequently demonetized. This revelation highlights the challenges streaming platforms face in managing AI-generated content and ensuring fair monetization. Despite the high volume of AI tracks, they account for only a small fraction of total streams, suggesting that user engagement with such content remains limited. The music industry must address the implications of AI in content creation and streaming fraud. Platforms should enhance their detection mechanisms to maintain the integrity of streaming metrics and artist compensation.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/04/deezer-says-44-of-new-music-uploads-are-ai-generated-most-streams-are-fraudulent/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Hyatt Deploys ChatGPT Enterprise—Boosts Global Operations with AI",
-            "title": "Hyatt Integrates ChatGPT Enterprise to Enhance Workforce Productivity and Guest Experience",
-            "content": "Hyatt Hotels Corporation has rolled out ChatGPT Enterprise, leveraging OpenAI&#x27;s GPT-5.4 and Codex, across its global workforce to enhance productivity, streamline operations, and improve guest experiences. The deployment aims to assist employees in various functions, from customer service to operational management, by providing advanced AI-driven insights and automation capabilities. This strategic move positions Hyatt at the forefront of AI adoption in the hospitality industry, potentially setting a new standard for guest interaction and operational efficiency. With AI&#x27;s growing role in business processes, Hyatt&#x27;s initiative could influence similar deployments across the sector. Organizations should consider evaluating AI tools like ChatGPT Enterprise to optimize their operations and customer engagement strategies.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 19 2026",
-            "headline": "Palantir Criticizes Inclusivity—Defends Western Ideals in New Manifesto",
-            "title": "Palantir&#x27;s Mini-Manifesto Challenges Inclusivity and Defends Western Values",
-            "content": "Palantir Technologies has released a mini-manifesto that critiques inclusivity and what it terms &quot;regressive&quot; cultural trends, positioning itself as a staunch defender of Western ideals. This ideological stance has sparked debate, particularly given Palantir&#x27;s controversial collaborations with U.S. Immigration and Customs Enforcement (ICE) and its broader geopolitical positioning. The manifesto underscores the company&#x27;s commitment to its foundational principles, which it argues are essential for safeguarding freedom and democracy. This development may influence Palantir&#x27;s relationships with clients and stakeholders, potentially affecting its market positioning. Organizations should monitor how such ideological declarations might impact partnerships and public perception.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/19/palantir-posts-mini-manifesto-denouncing-regressive-and-harmful-cultures/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 19 2026",
-            "headline": "Uber Embraces AI—Enters Assetmaxxing Era in Mobility Shift",
-            "title": "Uber Leverages AI to Transform Operations in Assetmaxxing Era",
-            "content": "Uber is entering what it calls its &quot;assetmaxxing&quot; era, focusing on maximizing the utility of its assets through advanced AI technologies. This strategic shift aims to enhance Uber&#x27;s operational efficiency and service delivery in the competitive mobility sector. By integrating AI-driven insights and automation, Uber seeks to optimize its fleet management and improve customer experiences. This move aligns with broader industry trends where AI is increasingly pivotal in transforming transportation services. Stakeholders in the mobility sector should consider how AI can be leveraged to drive operational improvements and maintain competitive advantage.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/19/techcrunch-mobility-uber-enters-its-assetmaxxing-era/",
             "relatedResources": []
         }
     ],
