@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 22 2026",
+            "headline": "npm Supply Chain Attack—Auth Tokens at Risk",
+            "title": "npm Ecosystem Hit by Self-Spreading Supply Chain Attack",
+            "content": "A new supply chain attack is targeting the Node Package Manager (npm) ecosystem, compromising developer credentials and spreading through packages from affected accounts. The attack is designed to steal authentication tokens, which can lead to unauthorized access to sensitive projects and data. This incident underscores the growing threat of supply chain attacks in open-source ecosystems, where trust in package integrity is crucial. Developers using npm are advised to review their package dependencies and rotate credentials as a precaution. This attack highlights the need for enhanced security measures in package management systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-npm-supply-chain-attack-self-spreads-to-steal-auth-tokens/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Microsoft Teams Efficiency Mode—Boost for Low-Resource PCs",
+            "title": "Microsoft Teams Introduces Efficiency Mode for Resource-Constrained PCs",
+            "content": "Microsoft is set to launch a new Efficiency Mode for Microsoft Teams, aimed at improving performance on PCs with limited CPU and memory resources. This feature is designed to optimize app responsiveness by reducing resource consumption, making Teams more accessible for users with older or less powerful hardware. As remote work continues to drive demand for collaboration tools, this update could significantly enhance user experience on a wide range of devices. IT administrators should prepare to deploy this update to ensure seamless performance improvements for their users.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-gets-efficiency-mode-for-hardware-constrained-devices/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "SBOMs Under Scrutiny—Supply Chain Attacks Surge",
+            "title": "SBOMs Struggle to Mitigate Rising Supply Chain Attacks",
+            "content": "Recent research highlights the challenges security teams face in utilizing Software Bill of Materials (SBOMs) to prevent supply chain attacks. The study suggests that a governance-driven intelligence layer is needed to translate SBOM and Vulnerability Exploitability eXchange (VEX) data into actionable security decisions. As supply chain attacks increase, the effectiveness of SBOMs is being questioned, emphasizing the need for improved data interpretation and decision-making frameworks. Organizations must enhance their SBOM strategies to better protect against these sophisticated threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/are-sboms-failing-supply-chain-attacks-rise-as-security-teams-struggle-with-sbom-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Google Antigravity RCE Flaw—Malware Delivery Risk",
+            "title": "Google Antigravity Vulnerability Exploited for Malware Distribution",
+            "content": "Security researchers have identified a remote code execution (RCE) vulnerability in Google Antigravity, which cybercriminals are exploiting to distribute malware. This flaw allows attackers to execute arbitrary code, potentially leading to unauthorized access and data breaches. The exploitation of Google Antigravity&#x27;s reputation for malware delivery highlights the ongoing risks associated with high-profile software vulnerabilities. Users and administrators should apply patches promptly and monitor systems for unusual activity to mitigate potential threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/google-antigravity-in-crosshairs-of-security-researchers-cybercriminals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Microsoft Fixes Critical ASP.NET Core Privilege Escalation",
+            "title": "Critical ASP.NET Core CVE-2026-40372 Patched by Microsoft",
+            "content": "Microsoft has issued out-of-band updates to address a critical privilege escalation vulnerability in ASP.NET Core, identified as CVE-2026-40372. With a CVSS score of 9.1, this flaw allows attackers to gain elevated privileges, posing significant security risks. The vulnerability affects systems running ASP.NET Core, necessitating immediate action from administrators to apply the patch and secure their environments. This update is crucial for maintaining the integrity and security of applications built on the ASP.NET Core framework.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/microsoft-patches-critical-aspnet-core.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Emergency Patches for ASP.NET Core—Critical Flaw Fixed",
+            "title": "Microsoft Releases Emergency Patches for ASP.NET Core Vulnerability",
+            "content": "Microsoft has released emergency out-of-band security updates to address a critical privilege escalation vulnerability in ASP.NET Core. This flaw, tracked as CVE-2026-40372, could allow attackers to gain unauthorized access by escalating privileges on affected systems. With a high CVSS score, the vulnerability poses a severe threat to applications using ASP.NET Core, prompting immediate patching. Administrators are urged to deploy the updates swiftly to protect their systems from potential exploitation.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-security-updates-for-critical-aspnet-flaw/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 21 2026",
             "headline": "France Titres Breach—Citizen Data for Sale by Hacker",
             "title": "French Government Agency France Titres Confirms Data Breach",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/progress-patches-multiple-vulnerabilities-in-moveit-waf-loadmaster/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Identity Attacks Surge—Stolen Credentials Still Top Threat",
-            "title": "No Exploit Needed: Attackers Use Stolen Credentials for Easy Access",
-            "content": "Despite advancements in cybersecurity, identity-based attacks using stolen credentials remain a prevalent threat vector. Attackers continue to exploit these vulnerabilities, bypassing sophisticated defenses by simply logging in with compromised credentials. This method remains one of the most reliable for gaining unauthorized access to systems. Organizations are encouraged to implement robust identity management solutions, including multi-factor authentication (MFA) and regular credential audits, to mitigate this risk. The persistence of identity-based attacks highlights the need for continuous vigilance and the importance of securing user credentials against theft and misuse.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/no-exploit-needed-how-attackers-walk.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "6,400 Apache ActiveMQ Servers Vulnerable—Patch Code Injection Flaw",
-            "title": "Actively Exploited Apache ActiveMQ Flaw Impacts Thousands of Servers",
-            "content": "Security researchers from Shadowserver have identified over 6,400 Apache ActiveMQ servers exposed online that are vulnerable to a high-severity code injection flaw. This vulnerability, actively exploited in the wild, allows attackers to execute arbitrary code on affected systems, posing a severe risk to data integrity and system operations. Administrators are urged to apply the latest security patches to protect their servers from potential exploitation. This incident underscores the critical need for timely vulnerability management and the importance of securing middleware components against emerging threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/actively-exploited-apache-activemq-flaw-impacts-6-400-servers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "600,000 Affected in Illinois, Texas Healthcare Data Breaches",
-            "title": "Data Breaches at Healthcare Organizations in Illinois and Texas Affect 600,000",
-            "content": "Recent data breaches at Southern Illinois Dermatology, Saint Anthony Hospital, and North Texas Behavioral Health Authority have compromised the personal information of approximately 600,000 individuals. These incidents highlight the ongoing vulnerability of healthcare organizations to cyberattacks, which often target sensitive patient data. Affected entities are working to notify impacted individuals and enhance their security measures to prevent future breaches. The healthcare sector remains a prime target for cybercriminals due to the high value of medical data on the black market. Organizations are advised to strengthen their cybersecurity posture and ensure compliance with data protection regulations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/data-breaches-at-healthcare-organizations-in-illinois-and-texas-affect-600000/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Gentlemen Ransomware Uses Botnet—1,570 Hosts Compromised",
-            "title": "Gentlemen Ransomware Leverages SystemBC Botnet for Enhanced Attack Capabilities",
-            "content": "The Gentlemen ransomware group has been found utilizing the SystemBC proxy malware botnet, comprising over 1,570 hosts, primarily targeting corporate victims. This development emerged from an investigation into a recent ransomware attack by a gang affiliate. SystemBC acts as a communication layer, enabling attackers to control infected systems without detection. The integration of SystemBC enhances the ransomware&#x27;s stealth and reach, posing significant risks to enterprises. Organizations are urged to bolster their network defenses and monitor for unusual proxy traffic to mitigate potential breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-gentlemen-ransomware-now-uses-systembc-for-bot-powered-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "SGLang Vulnerability—RCE Threat with CVSS 9.8 Rating",
-            "title": "Critical SGLang CVE-2026-5760 Vulnerability Allows Remote Code Execution",
-            "content": "A critical vulnerability in SGLang, identified as CVE-2026-5760, has been disclosed, posing a severe risk of remote code execution (RCE) on affected systems. This flaw, with a CVSS score of 9.8, stems from command injection vulnerabilities in handling GGUF model files. Systems using SGLang are at high risk, potentially allowing attackers to execute arbitrary commands remotely. Security professionals should prioritize patching affected systems and review access controls to prevent exploitation. This vulnerability underscores the importance of rigorous input validation in software development.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/sglang-cve-2026-5760-cvss-98-enables.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Vercel Hack and Android RATs—Weekly Cybersecurity Recap",
-            "title": "Weekly Cybersecurity Recap: Vercel Breach, QEMU Abuse, and Android RATs",
-            "content": "This week&#x27;s cybersecurity recap highlights multiple incidents, including a breach via a third-party tool affecting Vercel, and the emergence of new Android Remote Access Trojans (RATs). Attackers exploited trusted download paths and browser extensions to deliver malware, while QEMU was abused for unauthorized access. These incidents reflect a growing trend of exploiting third-party tools and update channels for cyberattacks. Security teams should scrutinize third-party integrations and ensure robust update mechanisms to safeguard against such threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/weekly-recap-vercel-hack-push-fraud.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 20 2026",
+            "headline": "Hyatt Deploys GPT-5.4—Boosts Global Workforce Efficiency",
+            "title": "Hyatt Integrates ChatGPT Enterprise with GPT-5.4 for Enhanced Operations",
+            "content": "Hyatt Hotels Corporation has implemented ChatGPT Enterprise, powered by OpenAI&#x27;s GPT-5.4 and Codex, across its global workforce to enhance productivity and operational efficiency. This integration aims to streamline internal processes and elevate guest experiences by providing employees with advanced AI tools for real-time problem-solving and decision-making. The deployment underscores a growing trend in the hospitality industry towards leveraging AI to optimize service delivery and operational workflows. Hyatt&#x27;s initiative is expected to set a benchmark for AI adoption in large-scale, service-oriented enterprises. Employees are encouraged to familiarize themselves with the new system to maximize its potential benefits.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 16 2026",
+            "headline": "Ecom-RLVE: Revolutionizing E-Commerce AI with Verifiable Environments",
+            "title": "Ecom-RLVE Introduces Adaptive Verifiable Environments for E-Commerce AI Agents",
+            "content": "Hugging Face has unveiled Ecom-RLVE, a novel framework designed to enhance the reliability and adaptability of conversational agents in e-commerce settings. This framework allows for the creation of verifiable environments where AI agents can be rigorously tested and validated, ensuring robust performance in real-world applications. Ecom-RLVE addresses the critical need for adaptive systems that can handle dynamic customer interactions and complex queries. By providing a structured testing environment, it aims to boost consumer trust and improve transaction efficiency. E-commerce developers should explore integrating Ecom-RLVE to enhance their AI-driven customer service solutions.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ecom-rlve",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "AI Adoption Surges—50% of Firms Use AI by 2025",
+            "title": "Strong Data Fabric Essential for AI&#x27;s Business Value Delivery",
+            "content": "MIT Technology Review highlights the rapid integration of artificial intelligence in enterprise operations, with projections indicating that by the end of 2025, half of all companies will have deployed AI solutions. These include copilots, agents, and predictive systems across various domains such as finance, supply chains, and customer operations. The report emphasizes the necessity of a robust data fabric to support these AI applications, ensuring seamless data integration and accessibility. Organizations are urged to invest in scalable data infrastructure to fully leverage AI&#x27;s potential and drive business value. This trend reflects AI&#x27;s transition from experimental to essential in corporate strategy.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/04/22/1135295/ai-needs-a-strong-data-fabric-to-deliver-business-value/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "10x Science Secures $4.8M to Decode AI-Generated Drugs",
+            "title": "10x Science Raises $4.8M to Evaluate AI-Generated Drug Compounds",
+            "content": "10x Science has successfully raised $4.8 million in a seed funding round to advance its mission of helping pharmaceutical researchers decode complex molecules generated by AI systems. The startup aims to address the challenge of identifying viable drug candidates from the vast number of potential compounds produced by AI algorithms. This funding will enable 10x Science to enhance its analytical capabilities and support pharmaceutical innovation. The initiative highlights the growing reliance on AI in drug discovery and the need for specialized tools to interpret AI outputs effectively. Researchers should consider collaborating with 10x Science to optimize their drug development processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/22/ai-is-spitting-out-more-potential-drugs-than-ever-this-start-up-wants-to-figure-out-which-ones-matter/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Google Cloud Next 2026—AI Startups Take Center Stage",
+            "title": "Google Showcases Promising AI Startups at Cloud Next 2026",
+            "content": "At its annual Google Cloud Next 2026 conference, Google spotlighted a diverse array of AI startups, emphasizing its commitment to fostering innovation within its cloud ecosystem. The showcased startups are leveraging Google&#x27;s cloud infrastructure to develop cutting-edge AI solutions across various sectors. This initiative underscores Google&#x27;s strategic focus on attracting AI-driven businesses to its platform, enhancing its competitive edge in the cloud services market. Tech leaders and developers are encouraged to explore partnerships with these startups to integrate advanced AI capabilities into their operations. The event reflects a broader trend of cloud providers supporting AI innovation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/22/the-most-interesting-startups-showcased-at-google-cloud-next-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Google Maps Integrates Generative AI—Enhances User Experience",
+            "title": "Google Maps to Incorporate Generative AI for Improved Navigation",
+            "content": "Google Maps is set to receive a significant upgrade with the integration of generative AI, aimed at enhancing user experience and navigation capabilities. This update will enable more personalized and context-aware map features, improving route suggestions and local recommendations. The infusion of AI into Google Maps reflects a broader trend of incorporating advanced technologies into everyday applications to increase utility and user engagement. Users can expect more intuitive interactions and tailored experiences as AI continues to evolve within the platform. Developers should prepare for potential API updates and explore new opportunities for integrating AI-driven features into their applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/22/google-maps-is-about-to-get-a-big-dose-of-ai/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 21 2026",
             "headline": "China&#x27;s Open-Source AI Models Challenge Silicon Valley&#x27;s API Approach",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Yelp has significantly upgraded its AI chatbot, transforming it into a digital concierge capable of managing a variety of tasks. The updated platform now includes features designed to streamline user interactions and improve task efficiency, aligning with the broader industry trend of enhancing AI-driven customer service tools. This development is part of Yelp&#x27;s ongoing efforts to integrate more sophisticated AI functionalities into its services. Businesses using Yelp can expect improved customer engagement and operational efficiency. Users are encouraged to explore the new capabilities to maximize their experience on the platform.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/915626/yelp-ai-assistant-chatbot-major-upgrade",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "QIMMA: Arabic LLM Leaderboard Prioritizes Quality",
-            "title": "QIMMA: A New Benchmark for Arabic Language Models",
-            "content": "Hugging Face has launched QIMMA, a quality-first leaderboard for evaluating Arabic large language models (LLMs). This initiative aims to provide a standardized benchmark for assessing the performance of Arabic LLMs, focusing on quality metrics rather than size alone. QIMMA addresses the growing need for high-quality Arabic language processing tools, offering researchers and developers a valuable resource for model comparison and improvement. The leaderboard is expected to drive advancements in Arabic NLP (Natural Language Processing) by encouraging the development of more accurate and efficient models. Stakeholders in the Arabic AI community should leverage QIMMA to enhance their language model capabilities.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Korean AI Grounded with Synthetic Personas—Bridging Demographic Gaps",
-            "title": "Grounding Korean AI Agents Using Synthetic Personas for Real Demographics",
-            "content": "Hugging Face has introduced a novel approach to enhance Korean AI agents by integrating synthetic personas that mirror real demographic profiles. This technique aims to address the challenge of grounding AI in culturally and demographically diverse contexts, ensuring more accurate and relatable interactions. By simulating a wide range of personas, the AI can better understand and respond to user inputs reflective of actual societal segments. This development is crucial for industries relying on AI for customer service and user engagement, as it promises more personalized and effective communication. Organizations should consider adopting similar methods to improve AI inclusivity and relevance in diverse markets.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Amazon Invests $5B in Anthropic—$100B AWS Deal Sealed",
-            "title": "Amazon&#x27;s $5B Investment in Anthropic Secures $100B AWS Cloud Commitment",
-            "content": "Amazon has committed a $5 billion investment in AI research firm Anthropic, securing a reciprocal agreement for Anthropic to spend $100 billion on Amazon Web Services (AWS) over the coming years. This strategic partnership underscores Amazon&#x27;s aggressive expansion into the AI sector, leveraging Anthropic&#x27;s expertise to enhance its cloud offerings. The deal highlights the growing trend of tech giants investing heavily in AI to maintain competitive advantages in cloud computing. Businesses utilizing AWS can anticipate enhanced AI capabilities and services as a result of this collaboration. Stakeholders should monitor how this investment influences AWS&#x27;s service portfolio and pricing structures.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Google Expands Gemini in Chrome—7 Countries Added",
-            "title": "Google Deploys Gemini in Chrome Across Seven New Countries",
-            "content": "Google has expanded its Gemini AI feature in Chrome to seven new countries: Australia, Indonesia, Japan, the Philippines, Singapore, South Korea, and Vietnam. This rollout is available on both desktop and iOS platforms, except in Japan, where only desktop users will have access. Gemini enhances user experience by providing advanced AI-driven insights and recommendations directly within the browser. This expansion reflects Google&#x27;s commitment to broadening its AI capabilities globally, aiming to improve user engagement and productivity. Developers and tech leaders should explore how Gemini&#x27;s features can be integrated into their digital strategies to leverage AI-driven insights.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/20/google-rolls-out-gemini-in-chrome-in-seven-new-countries/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "Silicon Valley&#x27;s Disconnect—Techies Overlook User Needs",
-            "title": "Silicon Valley&#x27;s Oversight: Tech Enthusiasts Miss Real User Demands",
-            "content": "A critique from The Verge highlights a growing disconnect between Silicon Valley tech developers and the actual needs of everyday users. The article points out that tech enthusiasts often become engrossed in their own innovations, such as large language models (LLMs), without considering practical applications for the general public. This gap can lead to products that, while technologically advanced, fail to resonate with or meet the needs of average consumers. The tech industry is urged to refocus on user-centric design and development to ensure that innovations are both meaningful and accessible. Professionals should prioritize user feedback and real-world applicability in their projects.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tldr/915176/nft-metaverse-ai-weirdos",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 20 2026",
-            "headline": "AI Writing Patterns—&quot;It&#x27;s Not Just This&quot; Becomes a Tell",
-            "title": "Common AI Writing Pattern Signals Synthetic Content",
-            "content": "A prevalent sentence structure in AI-generated writing, &quot;It&#x27;s not just this—it&#x27;s that,&quot; has become a reliable indicator of synthetic content. This pattern, now ubiquitous in AI outputs, suggests a need for improved diversity in AI language models to avoid predictability and enhance authenticity. The overuse of such constructs can undermine the perceived quality and originality of AI-generated texts. Developers and content creators should be aware of these patterns to better differentiate between human and AI-generated content. Enhancing AI&#x27;s linguistic capabilities can lead to more nuanced and credible outputs, benefiting industries reliant on automated content generation.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/20/ai-writing-its-not-just-this-its-that-barrons/",
             "relatedResources": []
         }
     ],
