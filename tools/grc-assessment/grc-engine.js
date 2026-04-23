@@ -112,7 +112,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentNavIndex = 0;          // Index relative to the activeDomainIndices array
     const STORAGE_KEY = 'thehgtech_grc_state_v2';
     const HISTORY_KEY = 'thehgtech_grc_history_v2';
+    const RISK_REGISTER_KEY = 'thehgtech_grc_risk_register_v1';  // [2]
+    const REMEDIATION_KEY = 'thehgtech_grc_remediation_v1';       // [10]
     let userState = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    let riskRegisterState = JSON.parse(localStorage.getItem(RISK_REGISTER_KEY)) || {}; // [2]
+    let remediationState = JSON.parse(localStorage.getItem(REMEDIATION_KEY)) || {};    // [10]
     let radarChartInstance = null;
 
     // --- AUTO-SAVE INDICATOR ---
@@ -188,6 +192,41 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
     initHistoryUI();
+
+    // ==========================================
+    // [15] WELCOME BACK SESSION RECOVERY
+    // ==========================================
+    (function initWelcomeBack() {
+        const answered = Object.keys(userState).filter(k => !k.startsWith('_')).length;
+        if (answered < 3) return; // Don't show for trivial sessions
+        const modal = document.getElementById('welcomeBackModal');
+        if (!modal) return;
+
+        const lastHistory = JSON.parse(localStorage.getItem(HISTORY_KEY)) || [];
+        const lastEntry = lastHistory[lastHistory.length - 1];
+        const infoEl = document.getElementById('wbSessionInfo');
+        const scoreEl = document.getElementById('wbSessionScore');
+        const startedDate = userState._started ? new Date(userState._started).toLocaleDateString() : 'recently';
+        if (infoEl) infoEl.innerText = `Session started ${startedDate} · ${answered} controls answered`;
+        if (scoreEl && lastEntry) scoreEl.innerHTML = `Last recorded score: <strong style="color:var(--accent-cyan);">${lastEntry.score}%</strong>`;
+
+        modal.style.display = 'flex';
+
+        document.getElementById('btnWBResume').addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+        document.getElementById('btnWBFresh').addEventListener('click', () => {
+            if (confirm('This will permanently delete your saved session. Are you sure?')) {
+                localStorage.removeItem(STORAGE_KEY);
+                localStorage.removeItem(RISK_REGISTER_KEY);
+                localStorage.removeItem(REMEDIATION_KEY);
+                const url = new URL(window.location);
+                url.searchParams.delete('s');
+                window.history.replaceState({}, '', url);
+                location.reload();
+            }
+        });
+    })();
 
     // --- NEW: URL Persistence Support ---
     function updateURLState() {
@@ -666,14 +705,51 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <textarea class="na-justification-input" data-control="${control.control_id}" rows="2" style="width: 100%; border-radius: 4px; padding: 0.5rem; border: 1px solid var(--border); background: var(--bg-dark); color: var(--text-primary); font-family: inherit; resize: vertical;" placeholder="Briefly explain why this control is out of scope for your audit footprint...">${userState[control.control_id + '_just'] || ''}</textarea>
                 </div>
 
-                <!-- Evidence Notes (Feature #2) -->
+                <!-- [4] Structured Evidence Form (replaces free-text textarea) -->
                 <div class="evidence-notes-container" style="margin-top: 1rem;">
-                    <details ${userState[control.control_id + '_notes'] ? 'open' : ''}>
+                    <details ${(userState[control.control_id + '_ev_docname'] || userState[control.control_id + '_notes']) ? 'open' : ''}>
                         <summary style="font-weight:600; color:var(--accent-cyan); cursor:pointer; font-size:0.85rem; outline:none; user-select:none;">
-                            <i class="fas fa-sticky-note"></i> Evidence Notes / Artifact Reference
-                            ${userState[control.control_id + '_notes'] ? '<span style="color:var(--text-muted); font-weight:400; font-size:0.75rem; margin-left:8px;">(has notes)</span>' : ''}
+                            <i class="fas fa-folder-open"></i> Evidence Record &amp; Artifact Reference
+                            ${userState[control.control_id + '_ev_docname'] ? '<span style="color:var(--text-muted); font-weight:400; font-size:0.75rem; margin-left:8px;">(logged)</span>' : ''}
                         </summary>
-                        <textarea class="evidence-notes-input" data-control="${control.control_id}" rows="2" style="width: 100%; margin-top: 0.5rem; border-radius: 6px; padding: 0.6rem; border: 1px solid var(--border); background: rgba(0, 217, 255, 0.03); color: var(--text-primary); font-family: inherit; font-size: 0.85rem; resize: vertical;" placeholder="e.g., 'See Confluence page /security/policies/AUP-v3.2' or 'Evidence: screenshots in Jira SEC-1234'">${userState[control.control_id + '_notes'] || ''}</textarea>
+                        <div style="margin-top:0.8rem; display:grid; grid-template-columns:1fr 1fr; gap:0.7rem;">
+                            <div>
+                                <label style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; font-weight:700;">Document Name</label>
+                                <input type="text" class="ev-docname" data-control="${control.control_id}" placeholder="e.g., AUP-v3.2, IS Policy" value="${userState[control.control_id + '_ev_docname'] || ''}" style="width:100%; margin-top:0.3rem; padding:0.5rem 0.7rem; border-radius:6px; border:1px solid var(--border); background:rgba(0,217,255,0.03); color:var(--text-primary); font-size:0.85rem; font-family:inherit;">
+                            </div>
+                            <div>
+                                <label style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; font-weight:700;">Version / Date</label>
+                                <input type="text" class="ev-version" data-control="${control.control_id}" placeholder="e.g., v2.1 / 2026-01" value="${userState[control.control_id + '_ev_version'] || ''}" style="width:100%; margin-top:0.3rem; padding:0.5rem 0.7rem; border-radius:6px; border:1px solid var(--border); background:rgba(0,217,255,0.03); color:var(--text-primary); font-size:0.85rem; font-family:inherit;">
+                            </div>
+                            <div>
+                                <label style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; font-weight:700;">Document Owner</label>
+                                <input type="text" class="ev-owner" data-control="${control.control_id}" placeholder="e.g., CISO, IT Manager" value="${userState[control.control_id + '_ev_owner'] || ''}" style="width:100%; margin-top:0.3rem; padding:0.5rem 0.7rem; border-radius:6px; border:1px solid var(--border); background:rgba(0,217,255,0.03); color:var(--text-primary); font-size:0.85rem; font-family:inherit;">
+                            </div>
+                            <div>
+                                <label style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; font-weight:700;">Document Type</label>
+                                <select class="ev-type" data-control="${control.control_id}" style="width:100%; margin-top:0.3rem; padding:0.5rem 0.7rem; border-radius:6px; border:1px solid var(--border); background:var(--bg-dark); color:var(--text-primary); font-size:0.85rem; font-family:inherit;">
+                                    <option value="">Select type...</option>
+                                    <option value="Policy" ${userState[control.control_id + '_ev_type'] === 'Policy' ? 'selected' : ''}>Policy</option>
+                                    <option value="Procedure" ${userState[control.control_id + '_ev_type'] === 'Procedure' ? 'selected' : ''}>Procedure</option>
+                                    <option value="Technical Config" ${userState[control.control_id + '_ev_type'] === 'Technical Config' ? 'selected' : ''}>Technical Config</option>
+                                    <option value="Record" ${userState[control.control_id + '_ev_type'] === 'Record' ? 'selected' : ''}>Record / Log</option>
+                                    <option value="Screenshot" ${userState[control.control_id + '_ev_type'] === 'Screenshot' ? 'selected' : ''}>Screenshot</option>
+                                    <option value="Contract" ${userState[control.control_id + '_ev_type'] === 'Contract' ? 'selected' : ''}>Contract / Agreement</option>
+                                </select>
+                            </div>
+                            <div style="grid-column:1/-1;">
+                                <label style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; font-weight:700;">Verification Status</label>
+                                <div style="display:flex; gap:0.5rem; margin-top:0.4rem; flex-wrap:wrap;">
+                                    ${['Self-Assessed','Internally Verified','Externally Audited'].map(s => `
+                                        <button class="ev-status-btn" data-control="${control.control_id}" data-status="${s}" style="padding:0.35rem 0.8rem; border-radius:6px; font-size:0.75rem; font-weight:700; cursor:pointer; border:1px solid var(--border); background:${userState[control.control_id + '_ev_status'] === s ? 'rgba(0,217,255,0.15)' : 'rgba(255,255,255,0.03)'}; color:${userState[control.control_id + '_ev_status'] === s ? 'var(--accent-cyan)' : 'var(--text-muted)'}; border-color:${userState[control.control_id + '_ev_status'] === s ? 'var(--accent-cyan)' : 'var(--border)'}; transition:all 0.2s;">${s}</button>
+                                    `).join('')}
+                                </div>
+                            </div>
+                            <div style="grid-column:1/-1;">
+                                <label style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; font-weight:700;">Additional Notes / Reference Link</label>
+                                <textarea class="evidence-notes-input" data-control="${control.control_id}" rows="2" style="width:100%; margin-top:0.3rem; border-radius:6px; padding:0.5rem 0.7rem; border:1px solid var(--border); background:rgba(0,217,255,0.03); color:var(--text-primary); font-family:inherit; font-size:0.85rem; resize:vertical;" placeholder="e.g., 'See Confluence /security/AUP' or Jira SEC-1234">${userState[control.control_id + '_notes'] || ''}</textarea>
+                            </div>
+                        </div>
                     </details>
                 </div>
             `;
@@ -718,7 +794,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 });
             }
 
-            // Evidence notes handler (Feature #2)
+            // Evidence notes handler
             const notesInput = card.querySelector('.evidence-notes-input');
             if (notesInput) {
                 notesInput.addEventListener('input', (e) => {
@@ -726,6 +802,38 @@ document.addEventListener('DOMContentLoaded', async () => {
                     persistState();
                 });
             }
+
+            // [4] Structured Evidence field handlers
+            ['ev-docname','ev-version','ev-owner'].forEach(cls => {
+                const input = card.querySelector('.' + cls);
+                if (input) {
+                    input.addEventListener('input', (e) => {
+                        userState[control.control_id + '_' + cls.replace('-','_')] = e.target.value;
+                        persistState();
+                    });
+                }
+            });
+            const evType = card.querySelector('.ev-type');
+            if (evType) {
+                evType.addEventListener('change', (e) => {
+                    userState[control.control_id + '_ev_type'] = e.target.value;
+                    persistState();
+                });
+            }
+            card.querySelectorAll('.ev-status-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const status = btn.getAttribute('data-status');
+                    userState[control.control_id + '_ev_status'] = status;
+                    persistState();
+                    // Update visual state
+                    card.querySelectorAll('.ev-status-btn').forEach(b => {
+                        const active = b.getAttribute('data-status') === status;
+                        b.style.background = active ? 'rgba(0,217,255,0.15)' : 'rgba(255,255,255,0.03)';
+                        b.style.color = active ? 'var(--accent-cyan)' : 'var(--text-muted)';
+                        b.style.borderColor = active ? 'var(--accent-cyan)' : 'var(--border)';
+                    });
+                });
+            });
 
             ui.viewport.appendChild(card);
             
@@ -1483,9 +1591,47 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                     ` : ''}
                 `;
+                // [10] Remediation Task Tracker row
+                const remState = remediationState[g.id] || {};
+                const remRow = document.createElement('div');
+                remRow.style.cssText = 'margin-top:0.8rem; padding:0.8rem 1rem; background:rgba(255,255,255,0.02); border-radius:8px; border:1px solid var(--border); display:flex; gap:0.8rem; align-items:center; flex-wrap:wrap;';
+                remRow.innerHTML = `
+                    <i class="fas fa-tasks" style="color:var(--accent-cyan); font-size:0.85rem;"></i>
+                    <input type="text" class="rem-owner" data-gid="${g.id}" placeholder="Assign owner..." value="${remState.owner||''}" style="flex:1; min-width:120px; padding:0.35rem 0.6rem; border-radius:5px; border:1px solid var(--border); background:var(--bg-dark); color:var(--text-primary); font-size:0.8rem; font-family:inherit;">
+                    <input type="date" class="rem-due" data-gid="${g.id}" value="${remState.due||''}" style="padding:0.35rem 0.6rem; border-radius:5px; border:1px solid var(--border); background:var(--bg-dark); color:var(--text-primary); font-size:0.8rem; font-family:inherit;">
+                    <label style="display:flex; align-items:center; gap:5px; cursor:pointer; font-size:0.8rem; color:var(--text-muted); white-space:nowrap;">
+                        <input type="checkbox" class="rem-resolved" data-gid="${g.id}" ${remState.resolved?'checked':''} style="accent-color:var(--accent-green);">
+                        <span style="color:${remState.resolved?'#10B981':'var(--text-muted)'};">Mark Resolved</span>
+                    </label>
+                `;
+                item.appendChild(remRow);
+
+                // Persist remediation state
+                remRow.querySelector('.rem-owner').addEventListener('input', e => {
+                    remediationState[g.id] = remediationState[g.id] || {};
+                    remediationState[g.id].owner = e.target.value;
+                    localStorage.setItem(REMEDIATION_KEY, JSON.stringify(remediationState));
+                });
+                remRow.querySelector('.rem-due').addEventListener('change', e => {
+                    remediationState[g.id] = remediationState[g.id] || {};
+                    remediationState[g.id].due = e.target.value;
+                    localStorage.setItem(REMEDIATION_KEY, JSON.stringify(remediationState));
+                });
+                remRow.querySelector('.rem-resolved').addEventListener('change', e => {
+                    remediationState[g.id] = remediationState[g.id] || {};
+                    remediationState[g.id].resolved = e.target.checked;
+                    localStorage.setItem(REMEDIATION_KEY, JSON.stringify(remediationState));
+                    const lbl = remRow.querySelector('label span');
+                    if (lbl) lbl.style.color = e.target.checked ? '#10B981' : 'var(--text-muted)';
+                    updateRemediationProgressBar(criticalGaps);
+                });
+
                 ui.gapsContainer.appendChild(item);
             });
         }
+
+        // [10] Remediation Progress Bar
+        updateRemediationProgressBar(criticalGaps);
 
         // ==========================================
         // RISK HEATMAP (Feature #3)
@@ -1496,6 +1642,205 @@ document.addEventListener('DOMContentLoaded', async () => {
         // COMPLIANCE TIMELINE (Feature #5)
         // ==========================================
         renderComplianceTimeline(criticalGaps);
+    }
+
+    // ==========================================
+    // [10] REMEDIATION PROGRESS BAR HELPER
+    // ==========================================
+    function updateRemediationProgressBar(gaps) {
+        const total = gaps.length;
+        if (total === 0) return;
+        const resolved = gaps.filter(g => remediationState[g.id] && remediationState[g.id].resolved).length;
+        const pct = Math.round((resolved / total) * 100);
+        let bar = document.getElementById('remediationProgressBar');
+        if (!bar) {
+            const section = document.getElementById('gapsContainer');
+            if (!section) return;
+            const wrapper = document.createElement('div');
+            wrapper.id = 'remediationProgressWrapper';
+            wrapper.style.cssText = 'margin-bottom:1.5rem; padding:1rem 1.5rem; background:rgba(16,185,129,0.05); border:1px solid rgba(16,185,129,0.2); border-radius:12px;';
+            wrapper.innerHTML = `
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+                    <span style="font-size:0.8rem; font-weight:700; color:var(--accent-green);"><i class="fas fa-tasks"></i> Remediation Progress</span>
+                    <span id="remediationProgressText" style="font-size:0.8rem; color:var(--text-muted);">${resolved} / ${total} resolved</span>
+                </div>
+                <div style="height:6px; background:rgba(255,255,255,0.05); border-radius:3px; overflow:hidden;">
+                    <div id="remediationProgressBar" style="height:100%; width:${pct}%; background:linear-gradient(90deg,#10B981,#34D399); border-radius:3px; transition:width 0.4s ease;"></div>
+                </div>
+            `;
+            const firstChild = section.querySelector('h3');
+            if (firstChild && firstChild.nextSibling) {
+                section.insertBefore(wrapper, firstChild.nextSibling);
+            } else {
+                section.appendChild(wrapper);
+            }
+            bar = document.getElementById('remediationProgressBar');
+        }
+        if (bar) bar.style.width = pct + '%';
+        const txt = document.getElementById('remediationProgressText');
+        if (txt) txt.innerText = resolved + ' / ' + total + ' resolved';
+    }
+
+    // ==========================================
+    // [2] RISK REGISTER MODULE
+    // ==========================================
+    const TREATMENT_OPTIONS = ['', 'Mitigate', 'Accept', 'Transfer', 'Avoid'];
+    const TREATMENT_COLORS = { 'Mitigate': '#10B981', 'Accept': '#F59E0B', 'Transfer': '#0A84FF', 'Avoid': '#EF4444' };
+
+    function renderRiskRegister() {
+        const tbody = document.getElementById('riskRegisterBody');
+        if (!tbody) return;
+        tbody.innerHTML = '';
+
+        const allGaps = [];
+        activeDomainIndices.forEach(idx => {
+            const d = grcData.domains[idx];
+            d.controls.forEach(c => {
+                const ans = userState[c.control_id];
+                if (!ans || ans === 'na' || ans === 'yes' || ans === 'optimized') return;
+                allGaps.push({ control: c, domain: d, ans });
+            });
+        });
+        allGaps.sort((a, b) => (b.control.risk_impact || 0) - (a.control.risk_impact || 0));
+
+        if (allGaps.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="6" style="padding:2rem; text-align:center; color:var(--text-muted);">No active risks. All controls are implemented or N/A.</td></tr>`;
+        } else {
+            allGaps.forEach(({ control, domain, ans }, i) => {
+                const rr = riskRegisterState[control.control_id] || {};
+                const ml = MATURITY_LEVELS[ans];
+                const impact = control.risk_impact || 5;
+                const riskScore = Math.round(impact * (1 - (ml ? ml.multiplier : 0)));
+                const riskColor = riskScore >= 8 ? '#EF4444' : riskScore >= 5 ? '#F59E0B' : '#34D399';
+                const riskLabel = riskScore >= 8 ? 'Critical' : riskScore >= 5 ? 'High' : 'Medium';
+                const treatment = rr.treatment || '';
+                const tColor = TREATMENT_COLORS[treatment] || 'var(--text-muted)';
+
+                const tr = document.createElement('tr');
+                tr.style.cssText = 'border-bottom:1px solid rgba(255,255,255,0.04);' + (i % 2 ? 'background:rgba(255,255,255,0.01);' : '');
+                tr.innerHTML = `
+                    <td style="padding:0.9rem 1rem; white-space:nowrap;">
+                        <span style="font-family:'JetBrains Mono'; font-size:0.75rem; color:var(--accent-cyan);">A.${control.control_id}</span><br>
+                        <span style="font-size:0.7rem; color:var(--text-muted);">${domain.name.split(' ')[0]}</span>
+                    </td>
+                    <td style="padding:0.9rem 1rem; color:var(--text-primary); font-size:0.85rem; line-height:1.4;">${control.control_title}</td>
+                    <td style="padding:0.9rem 1rem; text-align:center;">
+                        <span style="font-size:1.3rem; font-weight:800; color:${riskColor}; font-family:'JetBrains Mono';">${riskScore}</span><br>
+                        <span style="font-size:0.65rem; color:${riskColor}; font-weight:700; text-transform:uppercase;">${riskLabel}</span>
+                    </td>
+                    <td style="padding:0.9rem 1rem; text-align:center;">
+                        <span style="font-size:0.75rem; color:${ml ? ml.color : '#EF4444'}; font-weight:700; background:${ml ? ml.color + '22' : 'rgba(239,68,68,0.1)'}; padding:3px 8px; border-radius:4px;">${ml ? ml.label : 'Not Implemented'}</span>
+                    </td>
+                    <td style="padding:0.9rem 1rem; text-align:center;">
+                        <select class="rr-treatment" data-cid="${control.control_id}" style="padding:0.4rem 0.6rem; border-radius:6px; border:1px solid ${tColor !== 'var(--text-muted)' ? tColor + '55' : 'var(--border)'}; background:${tColor !== 'var(--text-muted)' ? tColor + '15' : 'var(--bg-dark)'}; color:${tColor}; font-size:0.8rem; font-weight:700; font-family:inherit; width:100%; cursor:pointer;">
+                            <option value="">— Select —</option>
+                            ${['Mitigate', 'Accept', 'Transfer', 'Avoid'].map(o => `<option value="${o}" ${treatment === o ? 'selected' : ''}>${o}</option>`).join('')}
+                        </select>
+                    </td>
+                    <td style="padding:0.9rem 1rem;">
+                        <input type="text" class="rr-notes" data-cid="${control.control_id}" placeholder="Notes / owner / due date..." value="${rr.notes || ''}" style="width:100%; padding:0.4rem 0.6rem; border-radius:5px; border:1px solid var(--border); background:var(--bg-dark); color:var(--text-primary); font-size:0.8rem; font-family:inherit;">
+                    </td>
+                `;
+                tbody.appendChild(tr);
+
+                tr.querySelector('.rr-treatment').addEventListener('change', e => {
+                    riskRegisterState[control.control_id] = riskRegisterState[control.control_id] || {};
+                    riskRegisterState[control.control_id].treatment = e.target.value;
+                    localStorage.setItem(RISK_REGISTER_KEY, JSON.stringify(riskRegisterState));
+                    renderRiskRegisterSummary(allGaps);
+                });
+                tr.querySelector('.rr-notes').addEventListener('input', e => {
+                    riskRegisterState[control.control_id] = riskRegisterState[control.control_id] || {};
+                    riskRegisterState[control.control_id].notes = e.target.value;
+                    localStorage.setItem(RISK_REGISTER_KEY, JSON.stringify(riskRegisterState));
+                });
+            });
+        }
+
+        renderRiskRegisterSummary(allGaps);
+        window._rrAllGaps = allGaps;
+    }
+
+    function renderRiskRegisterSummary(allGaps) {
+        const el = document.getElementById('riskRegisterSummary');
+        if (!el) return;
+        const counts = { Mitigate: 0, Accept: 0, Transfer: 0, Avoid: 0, Unset: 0 };
+        allGaps.forEach(({ control }) => {
+            const t = (riskRegisterState[control.control_id] || {}).treatment || '';
+            if (t && counts[t] !== undefined) counts[t]++;
+            else counts.Unset++;
+        });
+        const items = [
+            { label: 'Total Risks', val: allGaps.length, color: '#fff' },
+            { label: 'Mitigate', val: counts.Mitigate, color: '#10B981' },
+            { label: 'Accept', val: counts.Accept, color: '#F59E0B' },
+            { label: 'Transfer', val: counts.Transfer, color: '#0A84FF' },
+            { label: 'Avoid', val: counts.Avoid, color: '#EF4444' },
+            { label: 'No Decision', val: counts.Unset, color: 'var(--text-muted)' }
+        ];
+        el.innerHTML = items.map(c => `
+            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); border-radius:12px; padding:1rem; text-align:center;">
+                <div style="font-size:1.8rem; font-weight:800; color:${c.color}; font-family:'JetBrains Mono';">${c.val}</div>
+                <div style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px; font-weight:700;">${c.label}</div>
+            </div>
+        `).join('');
+    }
+
+    // [2] Risk Register navigation wiring
+    const btnGoToRR = document.getElementById('btnGoToRiskRegister');
+    const btnRRBack = document.getElementById('btnRiskRegisterBack');
+    const viewRR = document.getElementById('viewRiskRegister');
+
+    if (btnGoToRR && viewRR) {
+        btnGoToRR.addEventListener('click', () => {
+            ui.viewDashboard.style.display = 'none';
+            ui.viewDashboard.classList.remove('active');
+            viewRR.style.display = 'flex';
+            window.scrollTo({ top: 0, behavior: 'instant' });
+            renderRiskRegister();
+        });
+    }
+    if (btnRRBack && viewRR) {
+        btnRRBack.addEventListener('click', () => {
+            viewRR.style.display = 'none';
+            ui.viewDashboard.style.display = 'flex';
+            setTimeout(() => ui.viewDashboard.classList.add('active'), 50);
+        });
+    }
+
+    // [2] Risk Register Excel Export
+    const btnExportRR = document.getElementById('btnExportRiskRegister');
+    if (btnExportRR) {
+        btnExportRR.addEventListener('click', () => {
+            const gaps = window._rrAllGaps || [];
+            if (gaps.length === 0) { alert('No risk entries to export.'); return; }
+            const rows = [['Control ID', 'Control Title', 'Domain', 'Inherent Risk Score', 'Risk Level', 'Current Maturity', 'Treatment Decision', 'Treatment Notes', 'Assessor', 'Assessment Date']];
+            gaps.forEach(({ control, domain, ans }) => {
+                const ml = MATURITY_LEVELS[ans];
+                const impact = control.risk_impact || 5;
+                const riskScore = Math.round(impact * (1 - (ml ? ml.multiplier : 0)));
+                const riskLabel = riskScore >= 8 ? 'Critical' : riskScore >= 5 ? 'High' : 'Medium';
+                const rr = riskRegisterState[control.control_id] || {};
+                rows.push([
+                    'A.' + control.control_id,
+                    control.control_title,
+                    domain.name,
+                    riskScore,
+                    riskLabel,
+                    ml ? ml.label : 'Not Implemented',
+                    rr.treatment || 'Awaiting Decision',
+                    rr.notes || '',
+                    userState._assessorName || '',
+                    new Date().toLocaleDateString()
+                ]);
+            });
+            const wb = XLSX.utils.book_new();
+            const ws = XLSX.utils.aoa_to_sheet(rows);
+            ws['!cols'] = [{ wch: 12 }, { wch: 35 }, { wch: 25 }, { wch: 14 }, { wch: 10 }, { wch: 22 }, { wch: 18 }, { wch: 40 }, { wch: 20 }, { wch: 14 }];
+            ws['!autofilter'] = { ref: 'A1:J' + rows.length };
+            XLSX.utils.book_append_sheet(wb, ws, 'Risk Treatment Plan');
+            XLSX.writeFile(wb, 'Risk_Treatment_Plan_' + new Date().toISOString().split('T')[0] + '.xlsx');
+        });
     }
 
     // --- RISK HEATMAP RENDERER ---

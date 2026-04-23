@@ -801,6 +801,9 @@
                         <button class="btn-share-state" id="btnShareState">
                             <i class="fas fa-link"></i> Get Shareable Link
                         </button>
+                        <button class="btn-nav" id="btnGoToRiskRegister" style="background:rgba(139,92,246,0.1); color:#C4B5FD; border:1px solid rgba(139,92,246,0.3); padding:0.5rem 1rem; border-radius:8px; font-size:0.8rem; font-weight:700; cursor:pointer;">
+                            <i class="fas fa-table"></i> Risk Register
+                        </button>
                         <button class="btn-export-pdf" id="btnPdfExport"><i class="fas fa-file-pdf"></i> Download PDF
                             Report</button>
                         <button class="btn-export" id="btnFinalExcelExport"><i class="fas fa-file-excel"></i> Export
@@ -1021,8 +1024,70 @@
                 </div>
             </div>
 
+            <!-- VIEW 4: RISK REGISTER -->
+            <div id="viewRiskRegister" class="grc-view" style="display:none; flex-direction:column; padding:2rem; max-width:1400px; margin:0 auto; width:100%;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem; flex-wrap:wrap; gap:1rem;">
+                    <div>
+                        <div style="font-size:0.7rem; font-weight:800; color:var(--accent-purple); text-transform:uppercase; letter-spacing:2px; margin-bottom:0.5rem;"><i class="fas fa-table"></i> Live Document</div>
+                        <h2 style="font-family:'Outfit'; font-size:1.8rem; margin:0; color:#fff;">Risk Register &amp; Treatment Plan</h2>
+                        <p style="color:var(--text-muted); font-size:0.9rem; margin-top:0.4rem;">Auto-populated from your assessment. Set treatment decisions and export for your auditor.</p>
+                    </div>
+                    <div style="display:flex; gap:0.8rem; flex-wrap:wrap;">
+                        <button id="btnRiskRegisterBack" style="padding:0.6rem 1.2rem; background:transparent; border:1px solid var(--border); color:var(--text-muted); border-radius:8px; cursor:pointer; font-size:0.85rem;">
+                            <i class="fas fa-arrow-left"></i> Back to Dashboard
+                        </button>
+                        <button id="btnExportRiskRegister" style="padding:0.6rem 1.4rem; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.3); color:#10B981; border-radius:8px; cursor:pointer; font-weight:700; font-size:0.85rem;">
+                            <i class="fas fa-file-excel"></i> Export Risk Treatment Plan
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Risk Register Summary Bar -->
+                <div id="riskRegisterSummary" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:1rem; margin-bottom:2rem;"></div>
+
+                <!-- Risk Register Table -->
+                <div style="overflow-x:auto; border-radius:16px; border:1px solid var(--border);">
+                    <table id="riskRegisterTable" style="width:100%; border-collapse:collapse; font-size:0.85rem;">
+                        <thead>
+                            <tr style="background:rgba(255,255,255,0.04); border-bottom:2px solid var(--border);">
+                                <th style="padding:1rem; text-align:left; color:var(--text-muted); font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; white-space:nowrap;">Control</th>
+                                <th style="padding:1rem; text-align:left; color:var(--text-muted); font-size:0.7rem; text-transform:uppercase; letter-spacing:1px;">Risk Statement</th>
+                                <th style="padding:1rem; text-align:center; color:var(--text-muted); font-size:0.7rem; text-transform:uppercase; letter-spacing:1px;">Inherent Risk</th>
+                                <th style="padding:1rem; text-align:center; color:var(--text-muted); font-size:0.7rem; text-transform:uppercase; letter-spacing:1px;">Current Maturity</th>
+                                <th style="padding:1rem; text-align:center; color:var(--text-muted); font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; min-width:160px;">Treatment Decision</th>
+                                <th style="padding:1rem; text-align:left; color:var(--text-muted); font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; min-width:200px;">Treatment Notes / Owner</th>
+                            </tr>
+                        </thead>
+                        <tbody id="riskRegisterBody">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <p style="color:var(--text-muted); font-size:0.75rem; margin-top:1rem; text-align:center;"><i class="fas fa-lock"></i> All data stays in your browser. Nothing is sent to any server.</p>
+            </div>
+
         </div>
     </section>
+
+    <!-- [15] Welcome Back Session Recovery Modal -->
+    <div id="welcomeBackModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center; backdrop-filter:blur(8px);">
+        <div style="background:var(--bg-card); border:1px solid rgba(0,217,255,0.25); border-radius:24px; padding:2.5rem; max-width:500px; width:90%; text-align:center; box-shadow:0 0 60px rgba(0,217,255,0.1);">
+            <div style="font-size:2.5rem; margin-bottom:1rem;">👋</div>
+            <div style="font-size:0.7rem; font-weight:800; color:var(--accent-cyan); text-transform:uppercase; letter-spacing:2px; margin-bottom:0.8rem;">Previous Session Found</div>
+            <h3 style="font-family:'Outfit'; font-size:1.4rem; color:#fff; margin:0 0 0.5rem;">Welcome back!</h3>
+            <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:0.5rem;" id="wbSessionInfo">Your last assessment is saved locally.</p>
+            <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:2rem;" id="wbSessionScore"></p>
+            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                <button id="btnWBResume" style="padding:0.85rem 2rem; background:linear-gradient(135deg,var(--accent-cyan),var(--accent-purple)); color:#000; border:none; border-radius:12px; font-weight:800; font-size:0.95rem; cursor:pointer; flex:1; min-width:140px;">
+                    <i class="fas fa-play"></i> Resume Assessment
+                </button>
+                <button id="btnWBFresh" style="padding:0.85rem 2rem; background:transparent; color:#EF4444; border:2px solid rgba(239,68,68,0.4); border-radius:12px; font-weight:700; font-size:0.95rem; cursor:pointer; flex:1; min-width:140px;">
+                    <i class="fas fa-redo"></i> Start Fresh
+                </button>
+            </div>
+            <p style="color:var(--text-muted); font-size:0.7rem; margin-top:1.5rem;"><i class="fas fa-lock"></i> All data is stored exclusively in your browser.</p>
+        </div>
+    </div>
 
     <!-- UX Enhancements -->
     <script src="../../command-palette.js" defer></script>
