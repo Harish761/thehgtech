@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 22 2026",
+            "headline": "Mirai Botnet Exploits D-Link Router Flaw—Patch Urgently",
+            "title": "Mirai Campaign Targets D-Link DIR-823X Routers with RCE Vulnerability",
+            "content": "A new malware campaign leveraging the notorious Mirai botnet is actively exploiting a command-injection vulnerability, CVE-2025-29635, in D-Link DIR-823X routers. This high-severity flaw allows attackers to execute remote commands, enlisting vulnerable devices into the botnet. The affected routers are end-of-life (EoL), meaning they no longer receive security updates, leaving users exposed to potential attacks. This development underscores the ongoing risk posed by unpatched IoT devices in home and business networks. Users are advised to replace outdated hardware or implement network segmentation to mitigate risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-mirai-campaign-exploits-rce-flaw-in-eol-d-link-routers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Kyber Ransomware Tests Post-Quantum Encryption on Windows",
+            "title": "Kyber Ransomware Gang Adopts Post-Quantum Encryption in Latest Attacks",
+            "content": "The Kyber ransomware group has introduced a new variant targeting Windows systems and VMware ESXi endpoints, incorporating Kyber1024 post-quantum encryption. This move marks a significant shift in ransomware tactics, as the group experiments with encryption algorithms designed to withstand future quantum computing capabilities. The adoption of such advanced encryption methods could complicate decryption efforts and increase the threat level for affected organizations. Security professionals should prioritize monitoring for unusual activity and ensure robust backup strategies are in place to counter potential data loss.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/kyber-ransomware-gang-toys-with-post-quantum-encryption-on-windows/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Terrarium Sandbox Flaw Allows Root Code Execution",
+            "title": "Critical Flaw in Terrarium Sandbox Enables Container Escape and Code Execution",
+            "content": "A critical vulnerability, CVE-2026-5752, has been identified in the Terrarium sandbox, a Python-based environment, allowing arbitrary code execution and container escape. Rated 9.3 on the CVSS scale, this flaw poses a severe risk to systems utilizing the sandbox for isolating code execution. The vulnerability could be exploited to gain root access, compromising the host system&#x27;s security. Organizations using Terrarium are urged to apply available patches immediately and review security protocols to prevent unauthorized access. This incident highlights the importance of securing development environments against potential threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/cohere-ai-terrarium-sandbox-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "1,300 SharePoint Servers Exposed to Ongoing Spoofing Attacks",
+            "title": "Unpatched Microsoft SharePoint Servers Vulnerable to Persistent Spoofing Exploits",
+            "content": "Over 1,300 Microsoft SharePoint servers remain unpatched and vulnerable to a spoofing vulnerability that has been exploited as a zero-day. Despite being known and actively abused, these servers have not been updated, leaving them susceptible to ongoing attacks. The vulnerability allows attackers to impersonate users and gain unauthorized access to sensitive data. Organizations using SharePoint should immediately apply the latest security updates and review access controls to mitigate the risk of data breaches. This situation underscores the critical need for timely patch management in enterprise environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-1-300-microsoft-sharepoint-servers-vulnerable-to-ongoing-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 21 2026",
+            "headline": "Identity Attacks Bypass Security—Stolen Credentials Still Key",
+            "title": "Identity-Based Attacks Exploit Stolen Credentials as Primary Entry Point",
+            "content": "Despite advances in cybersecurity, stolen credentials remain the most reliable entry point for attackers, bypassing sophisticated defenses like zero-days and AI-generated exploits. Identity-based attacks continue to dominate the threat landscape, exploiting weak or reused passwords to gain unauthorized access. Cybersecurity professionals are advised to implement multi-factor authentication (MFA) and conduct regular security awareness training to mitigate these risks. This trend highlights the importance of robust identity management practices in safeguarding sensitive information and preventing unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/no-exploit-needed-how-attackers-walk.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Vulnerable Serial-to-Ethernet Converters Threaten Infrastructure",
+            "title": "Critical Infrastructure at Risk Due to Flawed Serial-to-Ethernet Converters",
+            "content": "Serial-to-Ethernet converters, crucial for linking serial devices to TCP/IP networks in industrial, retail, and healthcare sectors, are riddled with vulnerabilities. Researchers warn that these flaws, coupled with outdated open-source components, could allow attackers to take full control of critical systems. The converters&#x27; widespread use in mission-critical environments amplifies the potential impact of these vulnerabilities. Organizations are urged to conduct thorough security assessments and update or replace vulnerable devices to protect against potential exploitation. This issue highlights the ongoing challenge of securing legacy systems in critical infrastructure.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4162289/riddled-with-flaws-serial-to-ethernet-converters-endanger-critical-infrastructure.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
             "headline": "npm Supply Chain Attack—Auth Tokens at Risk",
             "title": "npm Ecosystem Hit by Self-Spreading Supply Chain Attack",
             "content": "A new supply chain attack is targeting the Node Package Manager (npm) ecosystem, compromising developer credentials and spreading through packages from affected accounts. The attack is designed to steal authentication tokens, which can lead to unauthorized access to sensitive projects and data. This incident underscores the growing threat of supply chain attacks in open-source ecosystems, where trust in package integrity is crucial. Developers using npm are advised to review their package dependencies and rotate credentials as a precaution. This attack highlights the need for enhanced security measures in package management systems.",
@@ -83,79 +137,61 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/third-us-security-expert-admits-helping-ransomware-gang/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Ransomware Negotiator Guilty—Helped BlackCat in 2023 Attacks",
-            "title": "Ransomware Negotiator Angelo Martino Pleads Guilty to BlackCat Attacks in 2023",
-            "content": "Angelo Martino, a former ransomware negotiator from Land O&#x27;Lakes, Florida, has admitted to aiding the BlackCat ransomware group in executing attacks against U.S. companies in 2023. Martino&#x27;s collaboration with BlackCat involved providing critical support to the e-crime group, facilitating their ransomware operations. This case highlights the risks posed by insiders with specialized knowledge and access to sensitive information. Companies should enhance their background checks and implement continuous monitoring of employees in sensitive roles. The guilty plea serves as a reminder of the complex challenges in combating ransomware threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/ransomware-negotiator-pleads-guilty-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Google Fixes Antigravity IDE Flaw Allowing Code Execution",
-            "title": "Google Patches Critical Vulnerability in Antigravity IDE Enabling Code Execution",
-            "content": "Google has addressed a critical vulnerability in its Antigravity integrated development environment (IDE) that allowed for prompt injection leading to code execution. The flaw, which combined Antigravity&#x27;s file-creation capabilities with insufficient input validation, has been patched to prevent exploitation. Developers using Antigravity are urged to update to the latest version to mitigate potential security risks. This vulnerability underscores the importance of rigorous security testing in development tools to prevent exploitation by malicious actors. Google&#x27;s swift response highlights the ongoing need for vigilance in securing software development environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/google-patches-antigravity-ide-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Ex-Ransomware Negotiator Guilty in BlackCat Attacks",
-            "title": "Former Ransomware Negotiator Angelo Martino Pleads Guilty to BlackCat Involvement",
-            "content": "Angelo Martino, a former ransomware negotiator with DigitalMint, has pleaded guilty to participating in BlackCat (ALPHV) ransomware attacks targeting U.S. companies in 2023. Martino&#x27;s role involved leveraging his expertise to assist the cybercrime group in executing their operations. This case highlights the potential for insider threats within cybersecurity firms and the need for stringent oversight. Organizations are encouraged to review their security practices and ensure robust measures are in place to detect and prevent insider collaboration with threat actors. The plea serves as a cautionary tale for the cybersecurity industry.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/former-ransomware-negotiator-pleads-guilty-to-blackcat-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "1,500 Perforce Servers Leak Data—Check Your Configurations",
-            "title": "Unsecured Perforce Servers Expose Sensitive Data From Major Organizations",
-            "content": "A security researcher has identified over 1,500 Perforce P4 instances that are improperly configured, allowing unauthorized access to sensitive files on the servers. These instances, used by major organizations for version control, pose a significant risk as attackers can exploit these misconfigurations to access proprietary code and other critical data. While improvements have been noted, the exposure underscores the persistent threat of misconfigured systems. Organizations using Perforce should immediately review their server configurations to ensure they are not publicly accessible and apply any necessary security patches. This incident highlights the ongoing challenge of securing development environments against unauthorized access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/unsecured-perforce-servers-expose-sensitive-data-from-major-orgs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "CISA Warns: SD-WAN Flaw Exploited—Secure Systems in 4 Days",
-            "title": "CISA Flags New SD-WAN Vulnerability as Actively Exploited in Attacks",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive for U.S. government agencies to secure their systems against a newly discovered vulnerability in the Catalyst SD-WAN Manager. This flaw is being actively exploited in the wild, posing a significant threat to network integrity and data security. Affected entities must patch their systems within four days to prevent potential breaches. The vulnerability highlights the increasing targeting of SD-WAN solutions by threat actors seeking to exploit network management tools. Organizations are advised to follow CISA&#x27;s guidelines and ensure their systems are up-to-date to mitigate this risk.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-new-sd-wan-flaw-as-actively-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Progress Fixes Critical MOVEit WAF, LoadMaster Flaws—Patch Now",
-            "title": "Progress Patches Multiple Vulnerabilities in MOVEit WAF and LoadMaster",
-            "content": "Progress Software has released patches addressing several critical vulnerabilities in its MOVEit Web Application Firewall (WAF) and LoadMaster products. These vulnerabilities, which include remote code execution and operating system command injection, could allow attackers to bypass security measures and execute arbitrary commands. Organizations using these products are urged to apply the updates immediately to protect against potential exploitation. The vulnerabilities underscore the importance of regular patch management and the need for organizations to stay vigilant against emerging threats. This proactive patching effort by Progress is crucial in maintaining the security of their widely used solutions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/progress-patches-multiple-vulnerabilities-in-moveit-waf-loadmaster/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 20 2026",
-            "headline": "Hyatt Deploys GPT-5.4—Boosts Global Workforce Efficiency",
-            "title": "Hyatt Integrates ChatGPT Enterprise with GPT-5.4 for Enhanced Operations",
-            "content": "Hyatt Hotels Corporation has implemented ChatGPT Enterprise, powered by OpenAI&#x27;s GPT-5.4 and Codex, across its global workforce to enhance productivity and operational efficiency. This integration aims to streamline internal processes and elevate guest experiences by providing employees with advanced AI tools for real-time problem-solving and decision-making. The deployment underscores a growing trend in the hospitality industry towards leveraging AI to optimize service delivery and operational workflows. Hyatt&#x27;s initiative is expected to set a benchmark for AI adoption in large-scale, service-oriented enterprises. Employees are encouraged to familiarize themselves with the new system to maximize its potential benefits.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
+            "date": "Apr 22 2026",
+            "headline": "OpenAI’s Privacy Filter—Local Data Protection for Enterprises",
+            "title": "OpenAI Releases Privacy Filter for On-Device Data Sanitization",
+            "content": "OpenAI has launched Privacy Filter, an open-source model designed to sanitize enterprise datasets by detecting and redacting personally identifiable information (PII) before it reaches cloud servers. This model, available on the Hugging Face platform, underscores a shift towards local-first privacy solutions, enhancing data security by keeping sensitive information on-device. Enterprises can integrate this model to protect user privacy without compromising on data utility. The move is expected to benefit sectors like finance and healthcare, where data privacy is paramount. Organizations should consider adopting Privacy Filter to bolster their data protection strategies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/data/openai-launches-privacy-filter-an-open-source-on-device-data-sanitization-model-that-removes-personal-information-from-enterprise-datasets",
             "relatedResources": []
         },
         {
-            "date": "Apr 16 2026",
-            "headline": "Ecom-RLVE: Revolutionizing E-Commerce AI with Verifiable Environments",
-            "title": "Ecom-RLVE Introduces Adaptive Verifiable Environments for E-Commerce AI Agents",
-            "content": "Hugging Face has unveiled Ecom-RLVE, a novel framework designed to enhance the reliability and adaptability of conversational agents in e-commerce settings. This framework allows for the creation of verifiable environments where AI agents can be rigorously tested and validated, ensuring robust performance in real-world applications. Ecom-RLVE addresses the critical need for adaptive systems that can handle dynamic customer interactions and complex queries. By providing a structured testing environment, it aims to boost consumer trust and improve transaction efficiency. E-commerce developers should explore integrating Ecom-RLVE to enhance their AI-driven customer service solutions.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ecom-rlve",
+            "date": "Apr 22 2026",
+            "headline": "Tesla’s $25B Capex Surge—Negative Cash Flow Ahead",
+            "title": "Tesla Increases 2026 Capex to $25 Billion, Impacting Cash Flow",
+            "content": "Tesla has announced an increase in its capital expenditure plan for 2026 to $25 billion, a significant rise from its historical spending levels. This strategic decision, disclosed by Tesla&#x27;s CFO, is expected to result in negative free cash flow for the remainder of the year. The increased spending will likely focus on expanding production capabilities and advancing research in autonomous driving technologies. While this move positions Tesla for long-term growth, it raises concerns about short-term financial stability. Investors and stakeholders should monitor Tesla’s financial health and strategic investments closely.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/22/tesla-just-increased-its-capex-to-25b-heres-where-the-money-is-going/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Google Workspace AI—Your New Office Intern",
+            "title": "Google Enhances Workspace with AI-Driven Automation Features",
+            "content": "Google has updated its Workspace suite with new AI-driven features under the Workspace Intelligence initiative. These enhancements aim to automate routine office tasks, effectively acting as a digital intern for users. The updates include AI-powered scheduling, document drafting, and data analysis tools, designed to increase productivity and efficiency in professional settings. This development aligns with the broader trend of integrating AI into everyday business operations. Organizations using Google Workspace should explore these features to optimize workflow and reduce manual workload.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/22/google-updates-workspace-to-make-ai-your-new-office-intern/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "X Introduces AI-Powered Custom Feeds—Communities Replaced",
+            "title": "X Launches AI-Powered Custom Timelines, Replacing Communities",
+            "content": "X has rolled out AI-powered custom timelines, replacing its previous Communities feature. These new timelines, curated by the AI system Grok, offer personalized content feeds and introduce new advertising slots, enhancing user engagement and monetization opportunities. This shift reflects X&#x27;s strategy to leverage AI for more tailored user experiences. Users and advertisers should adapt to these changes to maximize content reach and engagement. The update marks a significant evolution in how X structures and delivers content to its audience.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/22/hands-on-with-xs-new-ai-powered-custom-feeds/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "AI Bubble Warning—Elizabeth Warren Sounds Alarm",
+            "title": "Senator Warren Warns of AI-Induced Financial Crisis Risk",
+            "content": "Senator Elizabeth Warren has issued a warning about the potential for an AI-driven financial crisis, drawing parallels to the 2008 recession. Speaking at a Vanderbilt Policy Accelerator event, Warren highlighted the risks of an AI bubble, emphasizing the need for regulatory oversight to prevent systemic failures. Her remarks underscore growing concerns about the unchecked expansion of AI technologies in financial markets. Policymakers and financial institutions should heed these warnings and consider implementing safeguards to mitigate potential risks.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/917026/ai-economy-bubble-elizabeth-warren",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "OpenAI Empowers Teams with Customizable AI Bots",
+            "title": "OpenAI Enables Custom Bot Creation for Business and Education Plans",
+            "content": "OpenAI has expanded its offerings by allowing users in Business, Enterprise, Edu, and Teachers plans to create custom AI bots within ChatGPT. These cloud-based &quot;workspace&quot; agents can autonomously perform tasks such as gathering product feedback and generating reports. This feature empowers teams to tailor AI capabilities to specific business needs, enhancing operational efficiency. Organizations should explore these customizable bots to streamline processes and improve productivity. This development highlights OpenAI&#x27;s commitment to providing versatile AI solutions for diverse professional environments.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/917065/openai-chatgpt-workspace-agents-custom-teams-bots",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "Reports have emerged of unauthorized access to Anthropic&#x27;s exclusive cyber tool, Mythos, prompting an investigation by the company. Despite these claims, Anthropic asserts there is no evidence of system compromise. Mythos, a critical tool in Anthropic&#x27;s cybersecurity arsenal, is designed to protect against sophisticated cyber threats. The potential breach raises concerns about the security of proprietary cybersecurity tools and the implications for organizations relying on them. Security teams should remain vigilant and review their own security measures to safeguard against similar threats. This incident underscores the importance of robust cybersecurity protocols.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/21/unauthorized-group-has-gained-access-to-anthropics-exclusive-cyber-tool-mythos-report-claims/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "SpaceX Eyes $60B Acquisition of AI Startup Cursor",
-            "title": "SpaceX Collaborates with Cursor, Considers $60B Acquisition Option",
-            "content": "SpaceX is exploring a collaboration with AI startup Cursor, with an option to acquire the company for $60 billion. This partnership aims to address weaknesses in both companies&#x27; AI capabilities, as neither currently possesses proprietary models on par with industry leaders like Anthropic and OpenAI. By potentially acquiring Cursor, SpaceX seeks to bolster its AI offerings and compete more effectively in the developer market. This move reflects the growing trend of tech giants investing heavily in AI to maintain competitive advantage. Stakeholders should monitor this development for its potential impact on the AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Apple CEO Transition—AI Challenges Await John Ternus",
-            "title": "John Ternus Faces AI Challenges as New Apple CEO",
-            "content": "John Ternus, Apple&#x27;s new CEO, steps into his role amid growing expectations for AI integration, despite the company&#x27;s previous lack of AI announcements. Ternus, formerly Apple&#x27;s hardware executive, succeeds Tim Cook but faces scrutiny as the official release of his appointment did not mention AI—a critical area for competitors. With AI becoming a pivotal technology across industries, Apple&#x27;s strategy under Ternus will be closely watched by investors and tech enthusiasts. The company&#x27;s ability to innovate in AI could determine its competitive edge in the coming years. Stakeholders should monitor Apple&#x27;s AI developments and strategic pivots under Ternus&#x27;s leadership.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/915662/john-ternus-apple-ceo-tim-cook-ai-problem-siri",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "GRAI: AI Makes Music Social, Not Replacing Artists",
-            "title": "GRAI Advocates for AI-Enhanced Social Music Experiences",
-            "content": "AI music startup GRAI is championing the use of artificial intelligence to make music more social rather than replacing artists. The company argues that fans are more interested in remixing existing tracks than generating new songs from scratch. This approach allows artists to engage with their audience in innovative ways, fostering a collaborative environment. GRAI&#x27;s stance highlights a growing trend in the music industry where AI is used to enhance creativity and fan interaction. Musicians and producers should consider leveraging AI tools to expand their creative horizons and connect with audiences on a deeper level.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/21/grai-believes-ai-can-make-music-more-social-not-replace-artists/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Yelp Chatbot Evolves—From Assistant to Digital Concierge",
-            "title": "Yelp Enhances Chatbot with New Features for Task Management",
-            "content": "Yelp has significantly upgraded its AI chatbot, transforming it into a digital concierge capable of managing a variety of tasks. The updated platform now includes features designed to streamline user interactions and improve task efficiency, aligning with the broader industry trend of enhancing AI-driven customer service tools. This development is part of Yelp&#x27;s ongoing efforts to integrate more sophisticated AI functionalities into its services. Businesses using Yelp can expect improved customer engagement and operational efficiency. Users are encouraged to explore the new capabilities to maximize their experience on the platform.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/915626/yelp-ai-assistant-chatbot-major-upgrade",
             "relatedResources": []
         }
     ],
@@ -359,6 +359,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-33825",
+            "dateAdded": "Apr 22, 2026",
+            "vendor": "Microsoft Defender",
+            "description": "Microsoft Defender contains an insufficient granularity of access control vulnerability that could allow an authorized attacker to escalate privileges locally.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33825",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-20122",
             "dateAdded": "Apr 20, 2026",
             "vendor": "Cisco Catalyst SD-WAN Manger",
@@ -444,17 +455,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27199",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-34197",
-            "dateAdded": "Apr 16, 2026",
-            "vendor": "Apache ActiveMQ",
-            "description": "Apache ActiveMQ contains an improper input validation vulnerability that allows for code injection.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34197",
             "isZeroDay": false
         }
     ],
