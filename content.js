@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 23 2026",
+            "headline": "Rituals Data Breach—Customer Information Compromised",
+            "title": "Rituals Discloses Data Breach Affecting &quot;My Rituals&quot; Membership Database",
+            "content": "Dutch cosmetics giant Rituals has disclosed a data breach impacting its &quot;My Rituals&quot; membership database, resulting in the theft of customer personal information. The breach involved unauthorized access to sensitive data, including names and addresses, though the exact number of affected customers remains undisclosed. This incident underscores the increasing threat to consumer data in the retail sector, where personal information is a valuable target for cybercriminals. Rituals is currently notifying affected members and has implemented additional security measures to prevent future breaches. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precaution.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cosmetics-giant-rituals-discloses-data-breach-affecting-customers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "CISA Mandates Patch for Exploited BlueHammer Flaw",
+            "title": "CISA Orders Federal Agencies to Patch BlueHammer Zero-Day Exploit",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an emergency directive requiring U.S. federal agencies to patch a critical vulnerability in Microsoft Defender, known as BlueHammer. This privilege escalation flaw has been actively exploited in zero-day attacks, allowing attackers to gain unauthorized access to sensitive systems. The vulnerability affects the Security Account Manager (SAM) database, enabling the extraction of NTLM hashes and escalation to System privileges. Agencies are urged to apply the patch immediately to mitigate potential exploitation risks. This directive highlights the ongoing challenges in securing government infrastructure against sophisticated cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-microsoft-defender-flaw-exploited-in-zero-day-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Rituals Hack Exposes Customer Data—Names, Addresses Stolen",
+            "title": "Rituals Notifies Members of Data Breach Compromising Personal Information",
+            "content": "Rituals, a luxury cosmetics company, has informed members of its &quot;My Rituals&quot; program about a data breach that resulted in the unauthorized download of customer data, including names and addresses. This breach is part of a broader trend of cyberattacks targeting consumer data in the retail sector. The company is taking steps to enhance its security posture and prevent future incidents. Affected customers are encouraged to remain vigilant for phishing attempts and unauthorized transactions. Rituals&#x27; response includes notifying relevant authorities and collaborating with cybersecurity experts to investigate the breach.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/luxury-cosmetics-giant-rituals-discloses-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Vercel Expands Breach Investigation—More Accounts Compromised",
+            "title": "Vercel Identifies Additional Compromised Accounts in Context.ai Breach",
+            "content": "Vercel has uncovered more compromised customer accounts linked to a security incident involving unauthorized access to its internal systems. The discovery came after the company expanded its investigation to include additional data sets. This breach is associated with Context.ai, highlighting the interconnected risks in software supply chains. Vercel is actively notifying affected customers and has implemented enhanced security measures to safeguard its systems. Customers are advised to review their account security settings and monitor for any unusual activity. This incident underscores the importance of robust security practices in protecting cloud-based services.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/vercel-finds-more-compromised-accounts.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Apple Patches iOS Flaw—FBI Access to Signal Messages Blocked",
+            "title": "Apple Fixes iOS Notification Services Flaw Allowing Data Recovery",
+            "content": "Apple has released a patch for a vulnerability in iOS and iPadOS that allowed the FBI to recover deleted Signal messages. The flaw, identified as CVE-2026-28950, was a logging issue within the Notification Services that stored notifications marked for deletion. This vulnerability posed a significant privacy risk for users relying on secure messaging apps. The patch improves data handling to prevent unauthorized access to deleted notifications. Users are urged to update their devices to the latest software version to protect their privacy and ensure data security.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/apple-patches-ios-flaw-that-stored.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Microsoft Defender Zero-Day—SAM Database Exploit Discovered",
+            "title": "Microsoft Defender Vulnerability Exploited to Gain System Privileges",
+            "content": "A recent zero-day vulnerability in Microsoft Defender has been exploited, allowing attackers to access the Security Account Manager (SAM) database and extract NTLM hashes. This flaw enables privilege escalation to System level, posing a severe threat to affected systems. Security experts emphasize the need for immediate patching to prevent exploitation. This vulnerability highlights the critical importance of maintaining up-to-date security measures in enterprise environments. Organizations using Microsoft Defender should prioritize applying the latest security updates to mitigate potential risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/recent-microsoft-defender-vulnerability-exploited-as-zero-day/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 22 2026",
             "headline": "Mirai Botnet Exploits D-Link Router Flaw—Patch Urgently",
             "title": "Mirai Campaign Targets D-Link DIR-823X Routers with RCE Vulnerability",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/are-sboms-failing-supply-chain-attacks-rise-as-security-teams-struggle-with-sbom-data/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Google Antigravity RCE Flaw—Malware Delivery Risk",
-            "title": "Google Antigravity Vulnerability Exploited for Malware Distribution",
-            "content": "Security researchers have identified a remote code execution (RCE) vulnerability in Google Antigravity, which cybercriminals are exploiting to distribute malware. This flaw allows attackers to execute arbitrary code, potentially leading to unauthorized access and data breaches. The exploitation of Google Antigravity&#x27;s reputation for malware delivery highlights the ongoing risks associated with high-profile software vulnerabilities. Users and administrators should apply patches promptly and monitor systems for unusual activity to mitigate potential threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-antigravity-in-crosshairs-of-security-researchers-cybercriminals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Microsoft Fixes Critical ASP.NET Core Privilege Escalation",
-            "title": "Critical ASP.NET Core CVE-2026-40372 Patched by Microsoft",
-            "content": "Microsoft has issued out-of-band updates to address a critical privilege escalation vulnerability in ASP.NET Core, identified as CVE-2026-40372. With a CVSS score of 9.1, this flaw allows attackers to gain elevated privileges, posing significant security risks. The vulnerability affects systems running ASP.NET Core, necessitating immediate action from administrators to apply the patch and secure their environments. This update is crucial for maintaining the integrity and security of applications built on the ASP.NET Core framework.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/microsoft-patches-critical-aspnet-core.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Emergency Patches for ASP.NET Core—Critical Flaw Fixed",
-            "title": "Microsoft Releases Emergency Patches for ASP.NET Core Vulnerability",
-            "content": "Microsoft has released emergency out-of-band security updates to address a critical privilege escalation vulnerability in ASP.NET Core. This flaw, tracked as CVE-2026-40372, could allow attackers to gain unauthorized access by escalating privileges on affected systems. With a high CVSS score, the vulnerability poses a severe threat to applications using ASP.NET Core, prompting immediate patching. Administrators are urged to deploy the updates swiftly to protect their systems from potential exploitation.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-security-updates-for-critical-aspnet-flaw/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "France Titres Breach—Citizen Data for Sale by Hacker",
-            "title": "French Government Agency France Titres Confirms Data Breach",
-            "content": "France Titres, the French government agency responsible for issuing administrative documents, has confirmed a data breach following claims by a threat actor of stealing citizen data. The hacker is reportedly offering the stolen data for sale, raising concerns about the security of sensitive personal information. The breach highlights vulnerabilities in government systems and underscores the need for enhanced cybersecurity measures. Affected citizens are advised to monitor their personal accounts for suspicious activity and consider identity protection services. This incident adds to a growing list of government data breaches worldwide, emphasizing the critical need for robust security protocols.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/french-govt-agency-confirms-breach-as-hacker-offers-to-sell-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "SystemBC C2 Server Exposes 1,570 Victims in Ransomware Attack",
-            "title": "SystemBC C2 Server Links to 1,570 Victims in The Gentlemen Ransomware Operation",
-            "content": "Check Point researchers have uncovered a command-and-control (C2) server associated with SystemBC, revealing over 1,570 victims of The Gentlemen ransomware-as-a-service (RaaS) operation. SystemBC, a known proxy malware, is used by threat actors to facilitate ransomware deployment. The discovery highlights the scale and reach of The Gentlemen operation, which targets various sectors with sophisticated ransomware attacks. Organizations are urged to strengthen their network defenses and monitor for indicators of compromise related to SystemBC. This finding underscores the persistent threat of RaaS models in the cybersecurity landscape.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/systembc-c2-server-reveals-1570-victims.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Third US Expert Admits Aiding BlackCat Ransomware Gang",
-            "title": "US Security Expert Pleads Guilty to Assisting BlackCat Ransomware Group",
-            "content": "Angelo Martino, a Florida-based security expert, has pleaded guilty to collaborating with the BlackCat ransomware group while serving as a ransomware negotiator. This marks the third U.S. security professional implicated in aiding cybercriminals, highlighting a troubling trend within the industry. Martino&#x27;s involvement with BlackCat, also known as ALPHV, involved facilitating ransomware attacks against U.S. companies. The case underscores the importance of vetting and monitoring cybersecurity professionals to prevent insider threats. Organizations are advised to review their incident response protocols and ensure the integrity of their security teams.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/third-us-security-expert-admits-helping-ransomware-gang/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 20 2026",
+            "headline": "Hyatt Deploys GPT-5.4—Boosts Global Workforce Efficiency",
+            "title": "Hyatt Leverages ChatGPT Enterprise with GPT-5.4 for Enhanced Operations",
+            "content": "Hyatt has integrated ChatGPT Enterprise, utilizing the advanced capabilities of GPT-5.4 and Codex, across its global workforce to enhance productivity, streamline operations, and improve guest experiences. This deployment marks a significant step in Hyatt&#x27;s digital transformation strategy, aiming to leverage AI for operational excellence. The integration allows for more efficient handling of customer inquiries, personalized guest interactions, and optimized internal processes. By adopting these AI tools, Hyatt positions itself at the forefront of the hospitality industry’s technological evolution. Employees are encouraged to familiarize themselves with the new systems to maximize the benefits of this AI-driven initiative.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "StrictlyVC San Francisco—Last Call for Tickets",
+            "title": "StrictlyVC San Francisco Event to Unite VCs and Founders",
+            "content": "The first StrictlyVC event of 2026 is set to take place at the Sentro Filipino Cultural Center in San Francisco on April 30. This gathering promises to bring together venture capitalists and startup founders for a day of networking and discussions on the latest trends in technology and investment. Attendees will have the opportunity to engage with industry leaders and explore potential collaborations. With only a week left, interested participants are urged to secure their tickets promptly to avoid missing out on this pivotal event in the tech community.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/23/grab-a-ticket-today-the-first-strictlyvc-of-2026-kicks-off-in-just-a-week-in-san-francisco/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Delve&#x27;s Client Context AI Hit by Security Breach",
+            "title": "Context AI Security Incident Linked to Delve&#x27;s Compliance Services",
+            "content": "TechCrunch has confirmed that Delve, a compliance company, was responsible for the security certifications of Context AI, an AI agent training startup that recently disclosed a significant security incident. This breach raises concerns about the reliability of Delve&#x27;s compliance processes and the potential vulnerabilities in Context AI&#x27;s systems. The incident underscores the importance of rigorous security measures and thorough vetting of third-party compliance providers. Organizations relying on Delve&#x27;s services should reassess their security protocols and consider additional safeguards to protect sensitive data.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/23/another-customer-of-troubled-startup-delve-suffered-a-big-security-incident/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Automation Skepticism Grows Amid AI Advancements",
+            "title": "Public Sentiment Shifts Against Automation in AI Discourse",
+            "content": "In a recent episode of Decoder, a growing skepticism towards automation and AI&#x27;s pervasive influence was discussed. The concept of &quot;software brain&quot;—the tendency to fit all aspects of life into algorithms and databases—was explored as a critique of current AI trends. This perspective highlights a societal pushback against the unchecked expansion of automation, emphasizing the need for a balanced approach that considers human values and ethical implications. Tech leaders are encouraged to engage in dialogues that address these concerns and foster a more inclusive vision for AI&#x27;s role in society.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "OpenClaw Users Face Restrictions Amid AI Strain",
+            "title": "Anthropic Restricts OpenClaw Usage to Alleviate System Strain",
+            "content": "Anthropic has imposed severe restrictions on OpenClaw, a popular AI agent tool, in response to mounting pressures to reduce system strain. This decision affects millions of users who have relied on OpenClaw for various applications, highlighting the challenges faced by AI labs in managing resource demands. The move reflects a broader industry trend towards optimizing AI infrastructure to ensure sustainability and performance. Users are advised to explore alternative solutions or adjust their usage patterns to adapt to these new limitations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/917380/ai-monetization-anthropic-openai-token-economics-revenue",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "GPU Demand Surges as Astronomers Hunt Galaxies",
+            "title": "Astronomers&#x27; GPU Usage Intensifies Global Shortage Amid Galaxy Research",
+            "content": "Astronomers are increasingly utilizing Graphics Processing Units (GPUs) to enhance their search for galaxies, contributing to the ongoing global GPU shortage. This trend underscores the growing demand for computational power in scientific research, as GPUs offer significant advantages in processing large datasets and complex calculations. The intensified usage by the astronomical community adds pressure to an already strained supply chain, impacting industries reliant on these critical components. Stakeholders are urged to consider strategic investments in GPU production and explore alternative computing resources to mitigate the shortage&#x27;s effects.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/23/ai-galaxy-hunters-are-adding-to-the-global-gpu-crunch/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 22 2026",
             "headline": "OpenAI’s Privacy Filter—Local Data Protection for Enterprises",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "At its annual Google Cloud Next 2026 conference, Google spotlighted a diverse array of AI startups, emphasizing its commitment to fostering innovation within its cloud ecosystem. The showcased startups are leveraging Google&#x27;s cloud infrastructure to develop cutting-edge AI solutions across various sectors. This initiative underscores Google&#x27;s strategic focus on attracting AI-driven businesses to its platform, enhancing its competitive edge in the cloud services market. Tech leaders and developers are encouraged to explore partnerships with these startups to integrate advanced AI capabilities into their operations. The event reflects a broader trend of cloud providers supporting AI innovation.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/22/the-most-interesting-startups-showcased-at-google-cloud-next-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Google Maps Integrates Generative AI—Enhances User Experience",
-            "title": "Google Maps to Incorporate Generative AI for Improved Navigation",
-            "content": "Google Maps is set to receive a significant upgrade with the integration of generative AI, aimed at enhancing user experience and navigation capabilities. This update will enable more personalized and context-aware map features, improving route suggestions and local recommendations. The infusion of AI into Google Maps reflects a broader trend of incorporating advanced technologies into everyday applications to increase utility and user engagement. Users can expect more intuitive interactions and tailored experiences as AI continues to evolve within the platform. Developers should prepare for potential API updates and explore new opportunities for integrating AI-driven features into their applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/22/google-maps-is-about-to-get-a-big-dose-of-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "China&#x27;s Open-Source AI Models Challenge Silicon Valley&#x27;s API Approach",
-            "title": "China&#x27;s AI Labs Embrace Open-Source Models Over Proprietary APIs",
-            "content": "In a strategic departure from Silicon Valley&#x27;s API-centric model, China&#x27;s leading AI labs are distributing AI models as open-weight packages, allowing developers to download, adapt, and run them independently. This approach contrasts with the traditional model where companies charge for API access, keeping proprietary algorithms under wraps. By offering open-source models, Chinese labs aim to foster innovation and adaptability among developers, potentially accelerating AI advancements. This shift could impact global AI development dynamics, challenging Western companies to reconsider their business models. Developers should explore these open-weight models for greater flexibility and customization in AI applications.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Google Unveils Deep Research Agents—Integrate Web and Private Data",
-            "title": "Google&#x27;s Deep Research Agents Merge Web and Enterprise Data for AI",
-            "content": "Google has announced the launch of Deep Research and Deep Research Max, two advanced AI agents that integrate open web data with proprietary enterprise information. This marks a significant enhancement in Google&#x27;s autonomous research capabilities, allowing developers to leverage a broader data spectrum for AI model training. By fusing public and private data, these agents can provide more comprehensive insights and improve decision-making processes. This development is particularly relevant for enterprises seeking to harness AI for competitive advantage. Organizations should evaluate these tools to enhance their data-driven strategies and maintain a competitive edge.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/googles-new-deep-research-and-deep-research-max-agents-can-search-the-web-and-your-private-data",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Vercel Breach Exposes OAuth Vulnerability—Security Teams on Alert",
-            "title": "Vercel Breach Highlights OAuth Security Gaps in Production Environments",
-            "content": "A breach at Vercel, the cloud platform behind Next.js, has exposed a critical OAuth vulnerability that security teams struggle to detect and mitigate. The incident occurred when an employee used an AI tool from a vendor compromised by an infostealer, granting unauthorized access to Vercel&#x27;s production environments. This breach underscores the challenges of managing OAuth grants and the potential risks they pose to cloud infrastructure. Security professionals must review OAuth implementations and conduct thorough audits to prevent similar vulnerabilities. This incident serves as a reminder of the importance of robust security practices in cloud environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/vercel-breach-exposes-the-oauth-gap-most-security-teams-cannot-detect-scope-or-contain",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Meta to Use Employee Keystrokes for AI Model Training",
-            "title": "Meta Collects Employee Keystrokes to Enhance AI Model Training",
-            "content": "Meta has introduced an internal tool that records employee keystrokes, mouse movements, and button clicks to generate data for training its AI models. This initiative aims to improve the accuracy and performance of Meta&#x27;s AI systems by leveraging real-world user interactions. While this approach may enhance AI capabilities, it raises privacy and ethical concerns regarding employee monitoring. Companies considering similar strategies should weigh the benefits against potential privacy implications and ensure transparent communication with employees. This development highlights the growing trend of using behavioral data to refine AI technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/21/meta-will-record-employees-keystrokes-and-use-it-to-train-its-ai-models/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Anthropic&#x27;s Mythos Tool Breached—Unauthorized Access Reported",
-            "title": "Unauthorized Access to Anthropic&#x27;s Mythos Cyber Tool Under Investigation",
-            "content": "Reports have emerged of unauthorized access to Anthropic&#x27;s exclusive cyber tool, Mythos, prompting an investigation by the company. Despite these claims, Anthropic asserts there is no evidence of system compromise. Mythos, a critical tool in Anthropic&#x27;s cybersecurity arsenal, is designed to protect against sophisticated cyber threats. The potential breach raises concerns about the security of proprietary cybersecurity tools and the implications for organizations relying on them. Security teams should remain vigilant and review their own security measures to safeguard against similar threats. This incident underscores the importance of robust cybersecurity protocols.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/21/unauthorized-group-has-gained-access-to-anthropics-exclusive-cyber-tool-mythos-report-claims/",
             "relatedResources": []
         }
     ],
