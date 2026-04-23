@@ -1045,6 +1045,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Reflow for transition
             void card.offsetWidth;
             card.style.opacity = '1';
+            
+            // [FIX] Restore missing append to viewport
+            ui.viewport.appendChild(card);
         });
 
         // [11] Sidebar Wizard Progress Strip
