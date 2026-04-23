@@ -110,6 +110,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     let grcData = null;
     let activeDomainIndices = [];     // Which domains the user selected to scope in
     let currentNavIndex = 0;          // Index relative to the activeDomainIndices array
+    let currentControlIndex = 0;      // [11] For Wizard Mode
+    let wizardMode = true;            // [11] Default to Wizard Mode
     const STORAGE_KEY = 'thehgtech_grc_state_v2';
     const HISTORY_KEY = 'thehgtech_grc_history_v2';
     const RISK_REGISTER_KEY = 'thehgtech_grc_risk_register_v1';  // [2]
@@ -153,14 +155,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         const entry = {
             date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
             timestamp: Date.now(),
-            score: score
+            score: score,
+            nist: window.grcNistScore || 0,  // [7]
+            cis: window.grcCisScore || 0      // [7]
         };
-        // Avoid duplicate entries for same day/score if recently saved
         const last = history[history.length - 1];
         if (last && last.score === score && (Date.now() - last.timestamp < 3600000)) return;
-        
         history.push(entry);
-        if (history.length > 5) history.shift(); // Keep last 5
+        if (history.length > 12) history.shift(); // [7] bumped from 5 to 12
         localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
     }
 
@@ -183,15 +185,95 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (noHistory) noHistory.style.display = 'none';
             if (historyFound) historyFound.style.display = 'block';
             if (prevScoreVal) prevScoreVal.innerText = last.score + '%';
-            
-            // Calculate trend if we have at least 2 entries
-            if (history.length >= 1) {
-                // For UI demo, if user just finished, we compare current (in view) vs last.
-                // But for the card on load, it shows the "Most recent known".
-            }
         }
     }
     initHistoryUI();
+
+    // ==========================================
+    // [7] HISTORICAL TREND LINE CHART
+    // ==========================================
+    let trendChartInstance = null;
+    function renderTrendChart() {
+        const history = JSON.parse(localStorage.getItem(HISTORY_KEY)) || [];
+        const card = document.getElementById('historyCard');
+        if (!card) return;
+
+        if (history.length < 2) {
+            // Not enough data — show placeholder
+            const noHistEl = document.getElementById('noHistory');
+            if (noHistEl) noHistEl.innerText = 'Complete 2+ assessments to see your score trend chart here.';
+            return;
+        }
+
+        // Replace card content with canvas
+        const noHistEl = document.getElementById('noHistory');
+        const histFoundEl = document.getElementById('historyFound');
+        if (noHistEl) noHistEl.style.display = 'none';
+        if (histFoundEl) histFoundEl.style.display = 'none';
+
+        let canvas = document.getElementById('trendChartCanvas');
+        if (!canvas) {
+            canvas = document.createElement('canvas');
+            canvas.id = 'trendChartCanvas';
+            canvas.style.cssText = 'width:100%; height:200px; margin-top:0.8rem;';
+            card.appendChild(canvas);
+        }
+
+        if (trendChartInstance) trendChartInstance.destroy();
+
+        const labels = history.map(e => e.date);
+        trendChartInstance = new Chart(canvas.getContext('2d'), {
+            type: 'line',
+            data: {
+                labels,
+                datasets: [
+                    {
+                        label: 'ISO 27001',
+                        data: history.map(e => e.score || 0),
+                        borderColor: '#8B5CF6',
+                        backgroundColor: 'rgba(139,92,246,0.08)',
+                        borderWidth: 2,
+                        pointRadius: 3,
+                        tension: 0.35,
+                        fill: true
+                    },
+                    {
+                        label: 'NIST CSF',
+                        data: history.map(e => e.nist || 0),
+                        borderColor: '#06B6D4',
+                        backgroundColor: 'transparent',
+                        borderWidth: 1.5,
+                        pointRadius: 2,
+                        tension: 0.35,
+                        fill: false
+                    },
+                    {
+                        label: 'CIS v8',
+                        data: history.map(e => e.cis || 0),
+                        borderColor: '#F59E0B',
+                        backgroundColor: 'transparent',
+                        borderWidth: 1.5,
+                        pointRadius: 2,
+                        tension: 0.35,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { ticks: { color: '#6B7280', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
+                    y: { min: 0, max: 100, ticks: { color: '#6B7280', font: { size: 10 }, callback: v => v + '%' }, grid: { color: 'rgba(255,255,255,0.06)' } }
+                },
+                plugins: {
+                    legend: { display: true, position: 'bottom', labels: { color: '#9CA3AF', font: { size: 10 }, boxWidth: 12, padding: 10 } }
+                }
+            }
+        });
+    }
+
+
 
     // ==========================================
     // [15] WELCOME BACK SESSION RECOVERY
@@ -364,6 +446,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <i class="fas fa-industry"></i> Industry Presets:
             </span>
         `;
+        let activePresetBtn = null; // [13] track active preset
         presets.forEach(preset => {
             const btn = document.createElement('button');
             btn.className = 'preset-btn';
@@ -374,28 +457,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                 padding: 5px 12px; border-radius: 6px; font-size: 0.75rem; cursor: pointer;
                 transition: all 0.2s; font-weight: 600; white-space: nowrap;
             `;
+            const applyActive = (b) => { b.style.background='rgba(139,92,246,0.2)'; b.style.color='#C4B5FD'; b.style.borderColor='rgba(139,92,246,0.4)'; };
+            const applyInactive = (b) => { b.style.background='rgba(255,255,255,0.04)'; b.style.color='var(--text-muted)'; b.style.borderColor='var(--border)'; };
             btn.addEventListener('click', () => {
-                // Deselect all
-                document.querySelectorAll('.scope-card').forEach((card) => {
+                // [13] Reset all preset buttons, then activate this one
+                if (activePresetBtn && activePresetBtn !== btn) applyInactive(activePresetBtn);
+                applyActive(btn);
+                activePresetBtn = btn;
+                // Deselect all non-mandatory
+                document.querySelectorAll('.scope-card:not([data-mandatory])').forEach((card) => {
                     if (card.classList.contains('selected')) card.click();
                 });
-                activeDomainIndices = [];
-                // Select preset domains
+                activeDomainIndices = activeDomainIndices.filter(i => grcData.domains[i].isMandatory);
                 const allCards = document.querySelectorAll('.scope-card');
                 preset.domains.forEach(idx => {
-                    if (allCards[idx] && !allCards[idx].classList.contains('selected')) {
+                    if (allCards[idx] && !allCards[idx].classList.contains('selected') && !allCards[idx].dataset.mandatory) {
                         allCards[idx].click();
                     }
                 });
-                // Flash the button
-                btn.style.background = 'rgba(139, 92, 246, 0.2)';
-                btn.style.color = '#C4B5FD';
-                btn.style.borderColor = 'rgba(139, 92, 246, 0.4)';
-                setTimeout(() => {
-                    btn.style.background = 'rgba(255,255,255,0.04)';
-                    btn.style.color = 'var(--text-muted)';
-                    btn.style.borderColor = 'var(--border)';
-                }, 1500);
             });
             presetBar.appendChild(btn);
         });
@@ -436,6 +515,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             ` : '';
 
+            // [13] Mini progress bar for returning sessions
+            const answeredCount = dom.controls.filter(c => userState[c.control_id]).length;
+            const miniPct = dom.controls.length > 0 ? Math.round((answeredCount / dom.controls.length) * 100) : 0;
+            const miniBarHtml = (hasExistingData && !isMandatory && answeredCount > 0) ? `
+                <div style="margin-top:0.6rem; width:100%;">
+                    <div style="display:flex; justify-content:space-between; font-size:0.65rem; color:var(--text-muted); margin-bottom:3px;">
+                        <span>Prior session</span><span>${answeredCount}/${dom.controls.length} answered</span>
+                    </div>
+                    <div style="height:4px; background:rgba(255,255,255,0.06); border-radius:2px; overflow:hidden;">
+                        <div style="height:100%; width:${miniPct}%; background:${miniPct>=80?'#10B981':miniPct>=40?'#F59E0B':'#EF4444'}; border-radius:2px;"></div>
+                    </div>
+                </div>
+            ` : '';
+
             card.innerHTML = `
                 ${mandatoryBanner}
                 <div class="scope-card-header" style="display:flex; justify-content:space-between; width:100%; align-items:flex-start; ${isMandatory ? 'margin-top:2rem;' : ''}">
@@ -456,6 +549,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <span class="control-pill"><i class="fas fa-microchip"></i> ${dom.controls.length} Clauses</span>
                     <span class="impact-pill" style="${isMandatory ? 'background:rgba(239,68,68,0.1); color:#EF4444; border-color:rgba(239,68,68,0.3);' : ''}"><i class="fas ${isMandatory ? 'fa-exclamation-triangle' : 'fa-shield-virus'}"></i> ${isMandatory ? 'Certification Blocker' : 'High Impact'}</span>
                 </div>
+                ${miniBarHtml}
             `;
 
             if (isMandatory) {
@@ -536,17 +630,28 @@ document.addEventListener('DOMContentLoaded', async () => {
             const dom = grcData.domains[globalIndex];
             const completedInDomain = dom.controls.filter(c => userState[c.control_id]).length;
             const totalInDomain = dom.controls.length;
+            const pct = totalInDomain > 0 ? Math.round((completedInDomain / totalInDomain) * 100) : 0;
+
+            // [14] Color coding: green ≥80%, amber ≥40%, red >0%, grey = untouched
+            const dotColor = pct >= 80 ? '#10B981' : pct >= 40 ? '#F59E0B' : pct > 0 ? '#EF4444' : '#6B7280';
+            const barColor = dotColor;
 
             const navBtn = document.createElement('div');
             navBtn.className = `nav-item ${activeIdx === currentNavIndex ? 'active' : ''}`;
             navBtn.innerHTML = `
-                <div class="nav-item-title">${dom.name}</div>
-                <div class="nav-item-progress">${completedInDomain}/${totalInDomain}</div>
+                <div style="display:flex; align-items:center; gap:8px; width:100%;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:${dotColor}; flex-shrink:0; box-shadow:0 0 6px ${dotColor}55; transition:background 0.3s;"></span>
+                    <div class="nav-item-title" style="flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${dom.name.replace(' Controls','').replace(' Management System Requirements','Clauses 4–10')}</div>
+                    <div class="nav-item-progress" style="color:${dotColor};">${pct}%</div>
+                </div>
+                <div style="margin-top:5px; height:3px; background:rgba(255,255,255,0.05); border-radius:2px; overflow:hidden;">
+                    <div style="height:100%; width:${pct}%; background:${barColor}; border-radius:2px; transition:width 0.4s ease;"></div>
+                </div>
             `;
 
             navBtn.addEventListener('click', () => {
                 currentNavIndex = activeIdx;
-                renderDomain(activeDomainIndices[currentNavIndex]); // Pass global index
+                renderDomain(activeDomainIndices[currentNavIndex]);
                 updateSidebarActiveState();
                 const mainArea = document.querySelector('.content-header');
                 if (mainArea) {
@@ -569,38 +674,74 @@ document.addEventListener('DOMContentLoaded', async () => {
         ui.domainBadge.innerText = `Domain ${cleanDomainId}`;
         ui.domainTitle.innerText = domain.name;
 
+        // [11] Add View Toggle to Header if not exists
+        let toolbar = document.getElementById('engineViewToolbar');
+        if (!toolbar) {
+            toolbar = document.createElement('div');
+            toolbar.id = 'engineViewToolbar';
+            toolbar.style.cssText = 'display:flex; gap:0.5rem; margin-top:1rem; background:rgba(255,255,255,0.03); padding:0.4rem; border-radius:10px; border:1px solid var(--border); width:fit-content;';
+            toolbar.innerHTML = `
+                <button id="btnToggleWizard" class="view-toggle-btn ${wizardMode ? 'active' : ''}" style="padding:0.4rem 0.8rem; border-radius:6px; border:none; font-size:0.7rem; font-weight:700; cursor:pointer; background:${wizardMode ? 'var(--accent-cyan)' : 'transparent'}; color:${wizardMode ? '#000' : 'var(--text-muted)'};"><i class="fas fa-magic"></i> Wizard</button>
+                <button id="btnToggleScroll" class="view-toggle-btn ${!wizardMode ? 'active' : ''}" style="padding:0.4rem 0.8rem; border-radius:6px; border:none; font-size:0.7rem; font-weight:700; cursor:pointer; background:${!wizardMode ? 'var(--accent-cyan)' : 'transparent'}; color:${!wizardMode ? '#000' : 'var(--text-muted)'};"><i class="fas fa-align-justify"></i> Scroll</button>
+            `;
+            ui.domainTitle.parentNode.appendChild(toolbar);
+
+            toolbar.querySelector('#btnToggleWizard').addEventListener('click', () => {
+                wizardMode = true;
+                currentControlIndex = 0;
+                renderDomain(globalIndex);
+            });
+            toolbar.querySelector('#btnToggleScroll').addEventListener('click', () => {
+                wizardMode = false;
+                renderDomain(globalIndex);
+            });
+        }
+        
+        // Update button states
+        toolbar.querySelector('#btnToggleWizard').className = `view-toggle-btn ${wizardMode ? 'active' : ''}`;
+        toolbar.querySelector('#btnToggleWizard').style.background = wizardMode ? 'var(--accent-cyan)' : 'transparent';
+        toolbar.querySelector('#btnToggleWizard').style.color = wizardMode ? '#000' : 'var(--text-muted)';
+        toolbar.querySelector('#btnToggleScroll').className = `view-toggle-btn ${!wizardMode ? 'active' : ''}`;
+        toolbar.querySelector('#btnToggleScroll').style.background = !wizardMode ? 'var(--accent-cyan)' : 'transparent';
+        toolbar.querySelector('#btnToggleScroll').style.color = !wizardMode ? '#000' : 'var(--text-muted)';
+
         // Render Cards
-        // Render Section Intro Header
         ui.viewport.innerHTML = '';
         
-        const intro = document.createElement('div');
-        intro.className = 'section-intro-card';
-        intro.style.cssText = `
-            background: linear-gradient(135deg, rgba(0, 217, 255, 0.03), rgba(139, 92, 246, 0.03));
-            border: 1px solid var(--border);
-            padding: 2rem;
-            border-radius: 20px;
-            margin-bottom: 3rem;
-            position: relative;
-            border-left: 5px solid var(--accent-cyan);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        `;
-        intro.innerHTML = `
-            <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-cyan); font-weight: 800; margin-bottom: 0.8rem; display:flex; align-items:center; gap:8px;">
-                <i class="fas fa-compass"></i> Audit Context & Scope
-            </div>
-            <h2 style="margin: 0 0 1rem; font-family:'Outfit'; font-size: 2rem; color:#fff;">${domain.name}</h2>
-            <p style="margin: 0; color: var(--text-muted); line-height: 1.6; font-size: 1.1rem; font-style:italic;">
-                ${domain.description || "Evaluating core controls and operational compliance markers for this domain."}
-            </p>
-        `;
-        ui.viewport.appendChild(intro);
+        // Intro Card (only in Scroll mode)
+        if (!wizardMode) {
+            const intro = document.createElement('div');
+            intro.className = 'section-intro-card';
+            intro.style.cssText = `
+                background: linear-gradient(135deg, rgba(0, 217, 255, 0.03), rgba(139, 92, 246, 0.03));
+                border: 1px solid var(--border);
+                padding: 2rem;
+                border-radius: 20px;
+                margin-bottom: 3rem;
+                position: relative;
+                border-left: 5px solid var(--accent-cyan);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            `;
+            intro.innerHTML = `
+                <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-cyan); font-weight: 800; margin-bottom: 0.8rem; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-compass"></i> Audit Context & Scope
+                </div>
+                <h2 style="margin: 0 0 1rem; font-family:'Outfit'; font-size: 2rem; color:#fff;">${domain.name}</h2>
+                <p style="margin: 0; color: var(--text-muted); line-height: 1.6; font-size: 1.1rem; font-style:italic;">
+                    ${domain.description || "Evaluating core controls and operational compliance markers for this domain."}
+                </p>
+            `;
+            ui.viewport.appendChild(intro);
+        }
 
         domain.controls.forEach((control, idx) => {
+            if (wizardMode && idx !== currentControlIndex) return;
+
             const card = document.createElement('article');
             card.className = 'control-card';
             card.id = `card_${control.control_id}`;
             card.setAttribute('data-id', control.control_id);
+            if (wizardMode) card.style.boxShadow = '0 20px 50px rgba(0,0,0,0.3)';
 
             const savedValue = userState[control.control_id] || '';
 
@@ -835,55 +976,96 @@ document.addEventListener('DOMContentLoaded', async () => {
                 });
             });
 
-            ui.viewport.appendChild(card);
-            
-            // Add "Next Control" button at bottom of card
-            const nextBtn = document.createElement('button');
-            nextBtn.className = 'btn-next-control';
-            nextBtn.innerHTML = 'Next Control <i class="fas fa-chevron-down"></i>';
-            nextBtn.style.cssText = `
-                margin-top: 1.5rem;
-                background: transparent;
-                border: 1px solid var(--border);
-                color: var(--text-muted);
-                padding: 0.6rem 1.2rem;
-                border-radius: 6px;
-                font-size: 0.8rem;
-                cursor: pointer;
-                transition: all 0.2s;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 8px;
-            `;
-            nextBtn.addEventListener('click', () => {
-                // Find the next control-card sibling (skip non-card elements)
-                let nextSibling = card.nextElementSibling;
-                while (nextSibling && !nextSibling.classList.contains('control-card')) {
-                    nextSibling = nextSibling.nextElementSibling;
-                }
-                if (nextSibling) {
-                    const offset = nextSibling.getBoundingClientRect().top + window.scrollY - 150;
-                    window.scrollTo({ top: offset, behavior: 'smooth' });
-                } else {
-                    // Last card — try to trigger Next Domain
-                    if (ui.btnNextDomain && ui.btnNextDomain.style.display !== 'none') {
-                        ui.btnNextDomain.click();
+            // [11] Wizard Mode Navigation
+            if (wizardMode) {
+                const wizNav = document.createElement('div');
+                wizNav.style.cssText = 'display:flex; justify-content:space-between; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border); gap:1rem;';
+                
+                const btnPrev = document.createElement('button');
+                btnPrev.innerHTML = '<i class="fas fa-arrow-left"></i> Previous';
+                btnPrev.disabled = (idx === 0);
+                btnPrev.style.cssText = `flex:1; padding:0.8rem; border-radius:10px; border:1px solid var(--border); background:rgba(255,255,255,0.03); color:${idx===0?'#444':'#fff'}; cursor:${idx===0?'default':'pointer'}; font-weight:700; font-size:0.85rem;`;
+                btnPrev.addEventListener('click', () => {
+                    if (idx > 0) {
+                        currentControlIndex--;
+                        renderDomain(globalIndex);
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
-                }
-            });
-            card.appendChild(nextBtn);
+                });
 
-            // Hide next button on last card of domain if next domain is handled by the global button
-            if (idx === domain.controls.length - 1) {
-                nextBtn.style.display = 'none';
+                const btnNext = document.createElement('button');
+                const isLast = (idx === domain.controls.length - 1);
+                btnNext.innerHTML = isLast ? 'Next Domain <i class="fas fa-forward"></i>' : 'Next Control <i class="fas fa-arrow-right"></i>';
+                btnNext.style.cssText = `flex:2; padding:0.8rem; border-radius:10px; border:none; background:var(--accent-cyan); color:#000; cursor:pointer; font-weight:800; font-size:0.85rem; box-shadow:0 0 15px rgba(0,217,255,0.3);`;
+                btnNext.addEventListener('click', () => {
+                    if (!isLast) {
+                        currentControlIndex++;
+                        renderDomain(globalIndex);
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    } else {
+                        if (ui.btnNextDomain && ui.btnNextDomain.style.display !== 'none') {
+                            ui.btnNextDomain.click();
+                        }
+                    }
+                });
+
+                wizNav.appendChild(btnPrev);
+                wizNav.appendChild(btnNext);
+                card.appendChild(wizNav);
+            } else {
+                // Add "Next Control" button at bottom of card (Original Scroll Mode)
+                const nextBtn = document.createElement('button');
+                nextBtn.className = 'btn-next-control';
+                nextBtn.innerHTML = 'Next Control <i class="fas fa-chevron-down"></i>';
+                nextBtn.style.cssText = `
+                    margin-top: 1.5rem; background: transparent; border: 1px solid var(--border);
+                    color: var(--text-muted); padding: 0.6rem 1.2rem; border-radius: 6px;
+                    font-size: 0.8rem; cursor: pointer; transition: all 0.2s; width: 100%;
+                    display: flex; align-items: center; justify-content: center; gap: 8px;
+                `;
+                nextBtn.addEventListener('click', () => {
+                    let nextSibling = card.nextElementSibling;
+                    while (nextSibling && !nextSibling.classList.contains('control-card')) {
+                        nextSibling = nextSibling.nextElementSibling;
+                    }
+                    if (nextSibling) {
+                        const offset = nextSibling.getBoundingClientRect().top + window.scrollY - 150;
+                        window.scrollTo({ top: offset, behavior: 'smooth' });
+                    } else {
+                        if (ui.btnNextDomain && ui.btnNextDomain.style.display !== 'none') {
+                            ui.btnNextDomain.click();
+                        }
+                    }
+                });
+                if (idx < domain.controls.length - 1) {
+                    card.appendChild(nextBtn);
+                }
             }
 
             // Reflow for transition
             void card.offsetWidth;
             card.style.opacity = '1';
         });
+
+        // [11] Sidebar Wizard Progress Strip
+        if (wizardMode) {
+            const strip = document.createElement('div');
+            strip.id = 'wizardProgressStrip';
+            strip.style.cssText = 'margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:5px; padding:1rem; background:rgba(255,255,255,0.02); border-radius:12px; border:1px solid var(--border);';
+            domain.controls.forEach((c, i) => {
+                const dot = document.createElement('div');
+                const isAnswered = !!userState[c.control_id];
+                const isActive = (i === currentControlIndex);
+                dot.style.cssText = `width:8px; height:8px; border-radius:50%; background:${isActive ? 'var(--accent-cyan)' : (isAnswered ? '#10B981' : '#333')}; cursor:pointer; border:${isActive ? '2px solid #fff' : 'none'}; box-shadow:${isActive ? '0 0 10px var(--accent-cyan)' : 'none'};`;
+                dot.title = c.control_title;
+                dot.addEventListener('click', () => {
+                    currentControlIndex = i;
+                    renderDomain(globalIndex);
+                });
+                strip.appendChild(dot);
+            });
+            ui.viewport.appendChild(strip);
+        }
 
         updateDomainProgress(domain);
         updateSidebarActiveState();
@@ -927,17 +1109,31 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const completed = domain.controls.filter(c => userState[c.control_id]).length;
         
-        // Auto-advance to next question after answering
-        setTimeout(() => {
-            const currentCard = document.querySelector(`.control-card[data-id="${controlId}"]`);
-            if (currentCard) {
-                const nextCard = currentCard.nextElementSibling;
-                if (nextCard && nextCard.classList.contains('control-card')) {
-                    const offset = nextCard.getBoundingClientRect().top + window.scrollY - 150;
-                    window.scrollTo({ top: offset, behavior: 'smooth' });
+        // Auto-advance logic [11]
+        if (wizardMode) {
+            setTimeout(() => {
+                if (currentControlIndex < domain.controls.length - 1) {
+                    currentControlIndex++;
+                    renderDomain(activeDomainIndices[currentNavIndex]);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    // Domain complete in wizard mode
+                    renderDomain(activeDomainIndices[currentNavIndex]); // Refresh UI for the last card
                 }
-            }
-        }, 400);
+            }, 600);
+        } else {
+            // Auto-advance to next question after answering (Scroll Mode)
+            setTimeout(() => {
+                const currentCard = document.querySelector(`.control-card[data-id="${controlId}"]`);
+                if (currentCard) {
+                    const nextCard = currentCard.nextElementSibling;
+                    if (nextCard && nextCard.classList.contains('control-card')) {
+                        const offset = nextCard.getBoundingClientRect().top + window.scrollY - 150;
+                        window.scrollTo({ top: offset, behavior: 'smooth' });
+                    }
+                }
+            }, 400);
+        }
 
         if (completed === domain.controls.length && currentNavIndex < activeDomainIndices.length - 1) {
             setTimeout(() => {
@@ -1118,6 +1314,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (idx === currentNavIndex) item.classList.add('active');
             else item.classList.remove('active');
         });
+        // [14] Pulse the score displays on update
+        const scoreEl = document.getElementById('overallScore');
+        if (scoreEl) {
+            scoreEl.style.transition = 'transform 0.15s ease, opacity 0.15s ease';
+            scoreEl.style.transform = 'scale(1.15)';
+            scoreEl.style.opacity = '0.8';
+            setTimeout(() => { scoreEl.style.transform = 'scale(1)'; scoreEl.style.opacity = '1'; }, 200);
+        }
     }
 
     // ==========================================
@@ -1177,9 +1381,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function generateDashboard() {
         ui.dashDate.innerText = `Generated on: ${new Date().toLocaleDateString()}`;
-        ui.dashOverallScore.innerText = ui.overallScore.innerText;
-        ui.dashOverallScore.style.color = ui.overallScore.style.color;
-        ui.dashOverallScore.style.borderColor = ui.overallScore.style.color;
+
+        // [12] Score odometer animation
+        const finalScoreNum = parseInt(ui.overallScore.innerText.replace('%', '')) || 0;
+        const scoreColor = ui.overallScore.style.color;
+        ui.dashOverallScore.style.color = scoreColor;
+        ui.dashOverallScore.style.borderColor = scoreColor;
+        let currentCount = 0;
+        const step = Math.max(1, Math.round(finalScoreNum / 40));
+        const raf = () => {
+            currentCount = Math.min(currentCount + step, finalScoreNum);
+            ui.dashOverallScore.innerText = currentCount + '%';
+            if (currentCount < finalScoreNum) requestAnimationFrame(raf);
+        };
+        requestAnimationFrame(raf);
 
         // --- Update Badge Preview ---
         const badgeFill = document.getElementById('badgeFill');
@@ -1198,8 +1413,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // --- Authority: Save to History ---
-        saveToHistory(parseInt(currentScore.replace('%', '')));
-        initHistoryUI(); // Refresh top strip and card
+        saveToHistory(parseInt(ui.overallScore.innerText.replace('%', '')));
+        initHistoryUI(); // Refresh top strip
+        renderTrendChart(); // [7] Trend line chart
 
         const labels = [];
         const datasetISO = [];
@@ -1488,6 +1704,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                         borderColor: '#F59E0B',
                         borderWidth: 2,
                         fill: true
+                    },
+                    {
+                        // [12] Industry benchmark ghost ring — ISO 27001 Stage 1 target
+                        label: 'Stage 1 Benchmark (70%)',
+                        data: labels.map(() => 70),
+                        backgroundColor: 'transparent',
+                        borderColor: 'rgba(255,255,255,0.15)',
+                        borderWidth: 1.5,
+                        borderDash: [5, 5],
+                        pointRadius: 0,
+                        fill: false
                     }
                 ]
             },
@@ -1513,12 +1740,70 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
 
-        // 2. Render Gaps
-        ui.gapsContainer.innerHTML = '<h3>Critical Gaps & Recommended Remediation</h3>';
+        // [12] Dynamic framework divergence text
+        const isoVal = window.grcFullScopeScore || 0;
+        const nistVal = window.grcNistScore || 0;
+        const cisVal = window.grcCisScore || 0;
+        const divergenceEl = document.getElementById('frameworkDivergenceText');
+        if (divergenceEl) {
+            const isoCisGap = Math.abs(isoVal - cisVal);
+            const isoNistGap = Math.abs(isoVal - nistVal);
+            let divText;
+            if (isoNistGap > 20) {
+                divText = `Your ISO score (${isoVal}%) is ${isoVal > nistVal ? 'ahead of' : 'behind'} your NIST readiness (${nistVal}%). This ${isoVal > nistVal ? 'suggests strong policy docs but gaps in operational detection/response.' : 'indicates processes exist but formal ISMS documentation lags.'}`;
+            } else if (isoCisGap > 25) {
+                divText = `CIS technical enforcement (${cisVal}%) lags your governance posture (${isoVal}%). Prioritise technical hardening — MFA, endpoint controls, network segmentation.`;
+            } else {
+                divText = `Framework scores are broadly aligned (ISO: ${isoVal}%, NIST: ${nistVal}%, CIS: ${cisVal}%). Balanced maturity detected. Focus on resolving top non-conformities below.`;
+            }
+            divergenceEl.innerText = divText;
+        }
+
+        // 2. Render Gaps — with Top 3 Strongest Controls [12]
+        ui.gapsContainer.innerHTML = '';
+
+        // [12] Top 3 Strongest Controls (positive reinforcement)
+        const strongControls = [];
+        activeDomainIndices.forEach(idx => {
+            const d = grcData.domains[idx];
+            d.controls.forEach(c => {
+                const ans = userState[c.control_id];
+                if (ans === 'yes' || ans === 'optimized' || ans === 'managed') {
+                    strongControls.push({ control: c, domain: d, ans });
+                }
+            });
+        });
+        strongControls.sort((a, b) => (b.control.risk_impact || 0) - (a.control.risk_impact || 0));
+        const top3 = strongControls.slice(0, 3);
+        if (top3.length > 0) {
+            const strengthsDiv = document.createElement('div');
+            strengthsDiv.style.cssText = 'margin-bottom:2rem; padding:1.2rem 1.5rem; background:rgba(16,185,129,0.04); border:1px solid rgba(16,185,129,0.2); border-radius:14px;';
+            strengthsDiv.innerHTML = `
+                <div style="font-size:0.7rem; font-weight:800; color:#10B981; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:0.8rem;"><i class="fas fa-trophy"></i> Top 3 Strongest Controls</div>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0.7rem;">
+                    ${top3.map((s, i) => `
+                        <div style="background:rgba(16,185,129,0.06); border:1px solid rgba(16,185,129,0.15); border-radius:10px; padding:0.8rem 1rem;">
+                            <div style="font-size:0.65rem; color:#10B981; font-weight:800; margin-bottom:3px;">#${i+1} &mdash; Impact ${s.control.risk_impact || '?'}</div>
+                            <div style="font-size:0.82rem; color:var(--text-primary); font-weight:600; line-height:1.4;">${s.control.control_title}</div>
+                            <div style="font-size:0.7rem; color:var(--text-muted); margin-top:3px;">${MATURITY_LEVELS[s.ans]?.label || s.ans}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            ui.gapsContainer.appendChild(strengthsDiv);
+        }
+
+        const gapsHeader = document.createElement('h3');
+        gapsHeader.innerHTML = 'Critical Gaps &amp; Recommended Remediation';
+        ui.gapsContainer.appendChild(gapsHeader);
+
         if (criticalGaps.length === 0) {
-            ui.gapsContainer.innerHTML += `<div class="gap-item" style="border-left-color: #10B981;"><p style="color:#10B981; margin:0;"><i class="fas fa-check-circle"></i> Outstanding! No critical gaps identified in the evaluated scope.</p></div>`;
+            const noneEl = document.createElement('div');
+            noneEl.className = 'gap-item';
+            noneEl.style.borderLeftColor = '#10B981';
+            noneEl.innerHTML = '<p style="color:#10B981; margin:0;"><i class="fas fa-check-circle"></i> Outstanding! No critical gaps identified in the evaluated scope.</p>';
+            ui.gapsContainer.appendChild(noneEl);
         } else {
-            // Sort gaps by priority: lowest multiplier first (most urgent)
             criticalGaps.sort((a,b) => (a.multiplier || 0) - (b.multiplier || 0));
 
             criticalGaps.forEach(g => {
