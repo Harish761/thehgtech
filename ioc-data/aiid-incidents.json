@@ -33,6 +33,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1465",
+      "incident_id": 1465,
+      "title": "Purportedly AI-Generated Video Reportedly Depicted Bulgarian Politician Kostadin Kostadinov Falling ",
+      "date": "2026-04-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1456",
       "incident_id": 1456,
       "title": "Video with Reportedly AI-Generated Audio Purported to Show Croatian Footballer Luka Modri\u0107 Endorsing",
@@ -1063,20 +1071,12 @@
       "date": "2026-01-24",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1352",
-      "incident_id": 1352,
-      "title": "Malaysian Teenager Allegedly Arrested for Creating and Selling AI-Generated Deepfake Images of Schoo",
-      "date": "2026-01-24",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
     "total": 134,
-    "last7Days": 14,
-    "last30Days": 36
+    "last7Days": 15,
+    "last30Days": 37
   },
-  "lastUpdated": "2026-04-25T01:00:19.288724+05:30"
+  "lastUpdated": "2026-04-25T02:31:42.547426+05:30"
 }
