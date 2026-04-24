@@ -1065,22 +1065,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1350",
-      "incident_id": 1350,
-      "title": "Reported Use of AI Apps to Create Sexualized Deepfake Images of High School Students at Cascade High",
-      "date": "2026-01-24",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1351",
-      "incident_id": 1351,
-      "title": "Alleged Use of AI to Create Sexualized Deepfake Images of Middle School Students Under Investigation",
-      "date": "2026-01-24",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1352",
       "incident_id": 1352,
       "title": "Malaysian Teenager Allegedly Arrested for Creating and Selling AI-Generated Deepfake Images of Schoo",
@@ -1090,9 +1074,9 @@
     }
   ],
   "stats": {
-    "total": 136,
+    "total": 134,
     "last7Days": 14,
     "last30Days": 36
   },
-  "lastUpdated": "2026-04-24T22:40:25.687151+05:30"
+  "lastUpdated": "2026-04-25T01:00:19.288724+05:30"
 }
