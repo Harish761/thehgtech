@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 24 2026",
+            "headline": "Critical Flaws in CrowdStrike, Tenable—Patch Now",
+            "title": "CrowdStrike and Tenable Patch Critical Vulnerabilities in Security Products",
+            "content": "CrowdStrike and Tenable have released patches for critical vulnerabilities affecting their security products. CrowdStrike addressed a critical issue in its LogScale product, while Tenable fixed a high-severity flaw in its Nessus vulnerability scanner. These vulnerabilities could allow attackers to exploit systems, potentially leading to unauthorized access or data breaches. Security professionals using these products are urged to apply the patches immediately to mitigate risks. The swift response highlights the importance of regular updates and monitoring in maintaining cybersecurity defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/vulnerabilities-patched-in-crowdstrike-tenable-products/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Bitwarden NPM Package Compromised in Supply Chain Attack",
+            "title": "Bitwarden NPM Package Targeted in Supply Chain Attack by TeamPCP",
+            "content": "A supply chain attack has compromised the Bitwarden NPM package, linked to a new campaign by the threat actor group TeamPCP. The attack involves the Shai-Hulud worm, which has been used to infiltrate software supply chains, posing significant risks to developers and end-users. This incident underscores the growing threat of supply chain attacks, where malicious actors target dependencies to spread malware. Developers using the affected package should verify their installations and consider implementing additional security measures, such as dependency scanning and monitoring.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/bitwarden-npm-package-hit-in-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "LMDeploy Flaw Exploited Within Hours—Patch Urgently",
+            "title": "High-Severity LMDeploy Vulnerability CVE-2026-33626 Exploited Rapidly",
+            "content": "A high-severity vulnerability in LMDeploy, an open-source toolkit for managing large language models (LLMs), has been actively exploited within 13 hours of its disclosure. The flaw, identified as CVE-2026-33626, involves a server-side request forgery (SSRF) vulnerability with a CVSS score of 7.5. This rapid exploitation highlights the critical need for immediate patching and vigilant monitoring of open-source tools. Organizations using LMDeploy should prioritize updating to the latest version to protect against potential data breaches and unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "10,000+ Zimbra Servers at Risk—XSS Attacks Ongoing",
+            "title": "Over 10,000 Zimbra Servers Vulnerable to Persistent XSS Attacks",
+            "content": "More than 10,000 instances of the Zimbra Collaboration Suite (ZCS) are currently exposed to ongoing cross-site scripting (XSS) attacks. This vulnerability allows attackers to inject malicious scripts into web pages viewed by other users, potentially leading to data theft and unauthorized actions. The widespread exposure of these servers emphasizes the need for immediate action by administrators to secure their systems. Applying the latest security patches and implementing robust input validation can help mitigate these risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-says-zimbra-flaw-now-exploited-over-10k-servers-vulnerable/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Cybersecurity Faces New Challenges with Autonomous Agents",
+            "title": "Rethinking Cyber Defense in the Era of Autonomous Agents",
+            "content": "The cybersecurity landscape is evolving with the rise of autonomous agents capable of generating code and making decisions without human intervention. This shift necessitates a reevaluation of traditional defense strategies to address new vulnerabilities and threats. As these agents become more prevalent, organizations must adapt by implementing advanced monitoring and response systems. The integration of AI-driven security measures can help mitigate risks associated with autonomous technologies. Cybersecurity professionals should stay informed on these developments to effectively safeguard their networks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/why-cybersecurity-must-rethink-defense-in-the-age-of-autonomous-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Locked Shields 2026—41 Nations Enhance Cyber Defense",
+            "title": "Locked Shields 2026: Global Cyber Defense Exercise Expands to 41 Nations",
+            "content": "Locked Shields 2026, the world&#x27;s largest cyber defense exercise, has expanded to include 41 participating nations, up from just four in its inaugural event. This annual exercise, organized by the NATO Cooperative Cyber Defence Centre of Excellence, simulates large-scale cyber attacks to test and improve the resilience of national infrastructures. The growing participation reflects the increasing importance of international collaboration in cybersecurity. Participants gain valuable insights into threat detection, incident response, and strategic decision-making.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/locked-shields-2026-41-nations-strengthen-cyber-resilience-in-worlds-biggest-exercise/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 23 2026",
             "headline": "Breeze Cache Exploit—WordPress Sites Vulnerable to File Upload Attacks",
             "title": "Hackers Exploit Critical Vulnerability in Breeze Cache WordPress Plugin",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/luxury-cosmetics-giant-rituals-discloses-data-breach/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Vercel Expands Breach Investigation—More Accounts Compromised",
-            "title": "Vercel Identifies Additional Compromised Accounts in Context.ai Breach",
-            "content": "Vercel has uncovered more compromised customer accounts linked to a security incident involving unauthorized access to its internal systems. The discovery came after the company expanded its investigation to include additional data sets. This breach is associated with Context.ai, highlighting the interconnected risks in software supply chains. Vercel is actively notifying affected customers and has implemented enhanced security measures to safeguard its systems. Customers are advised to review their account security settings and monitor for any unusual activity. This incident underscores the importance of robust security practices in protecting cloud-based services.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/vercel-finds-more-compromised-accounts.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Apple Patches iOS Flaw—FBI Access to Signal Messages Blocked",
-            "title": "Apple Fixes iOS Notification Services Flaw Allowing Data Recovery",
-            "content": "Apple has released a patch for a vulnerability in iOS and iPadOS that allowed the FBI to recover deleted Signal messages. The flaw, identified as CVE-2026-28950, was a logging issue within the Notification Services that stored notifications marked for deletion. This vulnerability posed a significant privacy risk for users relying on secure messaging apps. The patch improves data handling to prevent unauthorized access to deleted notifications. Users are urged to update their devices to the latest software version to protect their privacy and ensure data security.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/apple-patches-ios-flaw-that-stored.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Microsoft Defender Zero-Day—SAM Database Exploit Discovered",
-            "title": "Microsoft Defender Vulnerability Exploited to Gain System Privileges",
-            "content": "A recent zero-day vulnerability in Microsoft Defender has been exploited, allowing attackers to access the Security Account Manager (SAM) database and extract NTLM hashes. This flaw enables privilege escalation to System level, posing a severe threat to affected systems. Security experts emphasize the need for immediate patching to prevent exploitation. This vulnerability highlights the critical importance of maintaining up-to-date security measures in enterprise environments. Organizations using Microsoft Defender should prioritize applying the latest security updates to mitigate potential risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/recent-microsoft-defender-vulnerability-exploited-as-zero-day/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Mirai Botnet Exploits D-Link Router Flaw—Patch Urgently",
-            "title": "Mirai Campaign Targets D-Link DIR-823X Routers with RCE Vulnerability",
-            "content": "A new malware campaign leveraging the notorious Mirai botnet is actively exploiting a command-injection vulnerability, CVE-2025-29635, in D-Link DIR-823X routers. This high-severity flaw allows attackers to execute remote commands, enlisting vulnerable devices into the botnet. The affected routers are end-of-life (EoL), meaning they no longer receive security updates, leaving users exposed to potential attacks. This development underscores the ongoing risk posed by unpatched IoT devices in home and business networks. Users are advised to replace outdated hardware or implement network segmentation to mitigate risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-mirai-campaign-exploits-rce-flaw-in-eol-d-link-routers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Kyber Ransomware Tests Post-Quantum Encryption on Windows",
-            "title": "Kyber Ransomware Gang Adopts Post-Quantum Encryption in Latest Attacks",
-            "content": "The Kyber ransomware group has introduced a new variant targeting Windows systems and VMware ESXi endpoints, incorporating Kyber1024 post-quantum encryption. This move marks a significant shift in ransomware tactics, as the group experiments with encryption algorithms designed to withstand future quantum computing capabilities. The adoption of such advanced encryption methods could complicate decryption efforts and increase the threat level for affected organizations. Security professionals should prioritize monitoring for unusual activity and ensure robust backup strategies are in place to counter potential data loss.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/kyber-ransomware-gang-toys-with-post-quantum-encryption-on-windows/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Terrarium Sandbox Flaw Allows Root Code Execution",
-            "title": "Critical Flaw in Terrarium Sandbox Enables Container Escape and Code Execution",
-            "content": "A critical vulnerability, CVE-2026-5752, has been identified in the Terrarium sandbox, a Python-based environment, allowing arbitrary code execution and container escape. Rated 9.3 on the CVSS scale, this flaw poses a severe risk to systems utilizing the sandbox for isolating code execution. The vulnerability could be exploited to gain root access, compromising the host system&#x27;s security. Organizations using Terrarium are urged to apply available patches immediately and review security protocols to prevent unauthorized access. This incident highlights the importance of securing development environments against potential threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/cohere-ai-terrarium-sandbox-flaw.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 24 2026",
+            "headline": "DeepSeek V4 Challenges US AI Giants—Open Source Revolution",
+            "title": "DeepSeek Unveils V4 AI Model to Compete with US Rivals",
+            "content": "Chinese AI firm DeepSeek has unveiled a preview of its latest AI model, V4, which the company claims can rival closed-source systems from US tech giants like Anthropic, Google, and OpenAI. The open-source model represents a significant leap from its predecessor, offering enhanced performance and efficiency. This development is poised to intensify the competitive landscape in AI, particularly as open-source models gain traction for their transparency and collaborative potential. Industry experts suggest that V4 could democratize access to cutting-edge AI capabilities, challenging the dominance of proprietary models. Stakeholders in AI development should monitor this evolution closely, as it may influence future innovation and collaboration strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/918035/deepseek-preview-v4-ai-model",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "85% Test AI Agents—Only 5% Trust for Production",
+            "title": "Trust Issues Stall AI Agent Deployment Despite Widespread Testing",
+            "content": "A staggering 85% of enterprises are piloting AI agents, yet only 5% have transitioned these agents into production, according to Cisco President Jeetu Patel at the RSA Conference 2026. The primary barrier is trust, as organizations remain cautious about the reliability and security of AI-driven decisions. This hesitancy underscores a critical gap between AI capabilities and enterprise confidence, highlighting the need for robust validation and transparency in AI systems. Companies are advised to focus on building trust through rigorous testing and clear accountability frameworks to harness AI&#x27;s full potential. As AI continues to evolve, bridging this trust gap will be essential for widespread adoption.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/85-of-enterprises-are-running-ai-agents-only-5-trust-them-enough-to-ship",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Think Twice: ChatGPT for Financial Advice Raises Concerns",
+            "title": "Caution Urged When Using ChatGPT for Financial Guidance",
+            "content": "As AI chatbots like ChatGPT become increasingly popular for financial advice, experts warn of potential pitfalls. Users should exercise caution due to the risk of inaccurate or incomplete information, which could lead to poor financial decisions. The inherent limitations of AI in understanding complex financial contexts and regulations are significant concerns. Financial professionals emphasize the importance of consulting qualified advisors alongside AI tools to ensure comprehensive and reliable advice. This trend highlights the need for enhanced AI training and oversight to improve the quality of chatbot-driven guidance.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/5-reasons-to-think-twice-before-using-chatgpt-for-financial-advice/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Uber CTO Joins StrictlyVC SF—Insights Await at April 30 Event",
+            "title": "Uber CTO Praveen Neppalli Naga to Speak at StrictlyVC SF Event",
+            "content": "Uber&#x27;s Chief Technology Officer, Praveen Neppalli Naga, is set to join the speaker lineup at the StrictlyVC San Francisco event on April 30. Hosted at the Sentro Filipino Cultural Center, the event promises to offer valuable insights into the latest technological advancements and operational strategies from industry leaders. Naga&#x27;s participation is expected to provide attendees with a deeper understanding of Uber&#x27;s approach to innovation and technology integration. This event is a must-attend for professionals seeking to stay ahead in the fast-evolving tech landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/24/uber-cto-praveen-neppalli-naga-joins-stacked-strictlyvc-sf-lineup-for-april-30-event/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Nothing&#x27;s AI Dictation Tool—100 Languages Supported",
+            "title": "Nothing Launches AI-Powered Dictation Tool with Multilingual Support",
+            "content": "Nothing has introduced a new AI-powered dictation tool capable of supporting over 100 languages, enhancing accessibility and productivity for users worldwide. This on-device tool leverages advanced AI algorithms to deliver accurate and efficient transcription services, catering to a diverse global audience. The tool&#x27;s multilingual capabilities position it as a versatile solution for businesses and individuals seeking seamless communication across language barriers. As AI-driven tools continue to evolve, this development underscores the growing importance of language inclusivity in technology.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/24/nothing-introduces-an-ai-powered-dictation-tool/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "DeepSeek&#x27;s V4 Model—Efficiency Boost Closes AI Gap",
+            "title": "DeepSeek&#x27;s V4 AI Model Narrows Gap with Leading Frontier Models",
+            "content": "DeepSeek has previewed its V4 AI model, claiming significant efficiency and performance improvements over its predecessor, V3.2. The architectural advancements in V4 bring it closer to matching the capabilities of leading frontier models, both open and closed-source, on reasoning benchmarks. This progress reflects DeepSeek&#x27;s commitment to enhancing AI performance while maintaining open-source accessibility. The model&#x27;s potential to rival established players could shift the competitive dynamics in the AI sector. Industry stakeholders should consider the implications of this development for future AI strategies and collaborations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 23 2026",
             "headline": "Meta to Cut 8,000 Jobs—10% Workforce Reduction",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "In a recent episode of Decoder, a growing skepticism towards automation and AI&#x27;s pervasive influence was discussed. The concept of &quot;software brain&quot;—the tendency to fit all aspects of life into algorithms and databases—was explored as a critique of current AI trends. This perspective highlights a societal pushback against the unchecked expansion of automation, emphasizing the need for a balanced approach that considers human values and ethical implications. Tech leaders are encouraged to engage in dialogues that address these concerns and foster a more inclusive vision for AI&#x27;s role in society.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "OpenClaw Users Face Restrictions Amid AI Strain",
-            "title": "Anthropic Restricts OpenClaw Usage to Alleviate System Strain",
-            "content": "Anthropic has imposed severe restrictions on OpenClaw, a popular AI agent tool, in response to mounting pressures to reduce system strain. This decision affects millions of users who have relied on OpenClaw for various applications, highlighting the challenges faced by AI labs in managing resource demands. The move reflects a broader industry trend towards optimizing AI infrastructure to ensure sustainability and performance. Users are advised to explore alternative solutions or adjust their usage patterns to adapt to these new limitations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/917380/ai-monetization-anthropic-openai-token-economics-revenue",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "GPU Demand Surges as Astronomers Hunt Galaxies",
-            "title": "Astronomers&#x27; GPU Usage Intensifies Global Shortage Amid Galaxy Research",
-            "content": "Astronomers are increasingly utilizing Graphics Processing Units (GPUs) to enhance their search for galaxies, contributing to the ongoing global GPU shortage. This trend underscores the growing demand for computational power in scientific research, as GPUs offer significant advantages in processing large datasets and complex calculations. The intensified usage by the astronomical community adds pressure to an already strained supply chain, impacting industries reliant on these critical components. Stakeholders are urged to consider strategic investments in GPU production and explore alternative computing resources to mitigate the shortage&#x27;s effects.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/23/ai-galaxy-hunters-are-adding-to-the-global-gpu-crunch/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "OpenAI’s Privacy Filter—Local Data Protection for Enterprises",
-            "title": "OpenAI Releases Privacy Filter for On-Device Data Sanitization",
-            "content": "OpenAI has launched Privacy Filter, an open-source model designed to sanitize enterprise datasets by detecting and redacting personally identifiable information (PII) before it reaches cloud servers. This model, available on the Hugging Face platform, underscores a shift towards local-first privacy solutions, enhancing data security by keeping sensitive information on-device. Enterprises can integrate this model to protect user privacy without compromising on data utility. The move is expected to benefit sectors like finance and healthcare, where data privacy is paramount. Organizations should consider adopting Privacy Filter to bolster their data protection strategies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/openai-launches-privacy-filter-an-open-source-on-device-data-sanitization-model-that-removes-personal-information-from-enterprise-datasets",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Tesla’s $25B Capex Surge—Negative Cash Flow Ahead",
-            "title": "Tesla Increases 2026 Capex to $25 Billion, Impacting Cash Flow",
-            "content": "Tesla has announced an increase in its capital expenditure plan for 2026 to $25 billion, a significant rise from its historical spending levels. This strategic decision, disclosed by Tesla&#x27;s CFO, is expected to result in negative free cash flow for the remainder of the year. The increased spending will likely focus on expanding production capabilities and advancing research in autonomous driving technologies. While this move positions Tesla for long-term growth, it raises concerns about short-term financial stability. Investors and stakeholders should monitor Tesla’s financial health and strategic investments closely.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/22/tesla-just-increased-its-capex-to-25b-heres-where-the-money-is-going/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Google Workspace AI—Your New Office Intern",
-            "title": "Google Enhances Workspace with AI-Driven Automation Features",
-            "content": "Google has updated its Workspace suite with new AI-driven features under the Workspace Intelligence initiative. These enhancements aim to automate routine office tasks, effectively acting as a digital intern for users. The updates include AI-powered scheduling, document drafting, and data analysis tools, designed to increase productivity and efficiency in professional settings. This development aligns with the broader trend of integrating AI into everyday business operations. Organizations using Google Workspace should explore these features to optimize workflow and reduce manual workload.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/22/google-updates-workspace-to-make-ai-your-new-office-intern/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "X Introduces AI-Powered Custom Feeds—Communities Replaced",
-            "title": "X Launches AI-Powered Custom Timelines, Replacing Communities",
-            "content": "X has rolled out AI-powered custom timelines, replacing its previous Communities feature. These new timelines, curated by the AI system Grok, offer personalized content feeds and introduce new advertising slots, enhancing user engagement and monetization opportunities. This shift reflects X&#x27;s strategy to leverage AI for more tailored user experiences. Users and advertisers should adapt to these changes to maximize content reach and engagement. The update marks a significant evolution in how X structures and delivers content to its audience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/22/hands-on-with-xs-new-ai-powered-custom-feeds/",
             "relatedResources": []
         }
     ],
