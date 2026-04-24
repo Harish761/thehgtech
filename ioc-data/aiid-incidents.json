@@ -1033,14 +1033,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1349",
-      "incident_id": 1349,
-      "title": "AI Training Dataset for Detecting Nudity Allegedly Found to Contain CSAM Images of Identified Victim",
-      "date": "2026-01-24",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1350",
       "incident_id": 1350,
       "title": "Reported Use of AI Apps to Create Sexualized Deepfake Images of High School Students at Cascade High",
@@ -1066,9 +1058,9 @@
     }
   ],
   "stats": {
-    "total": 133,
+    "total": 132,
     "last7Days": 10,
     "last30Days": 32
   },
-  "lastUpdated": "2026-04-24T02:31:47.910918+05:30"
+  "lastUpdated": "2026-04-24T09:14:13.795263+05:30"
 }
