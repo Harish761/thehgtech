@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 23 2026",
+            "headline": "Breeze Cache Exploit—WordPress Sites Vulnerable to File Upload Attacks",
+            "title": "Hackers Exploit Critical Vulnerability in Breeze Cache WordPress Plugin",
+            "content": "A critical vulnerability in the Breeze Cache plugin for WordPress is being actively exploited by hackers to upload arbitrary files to servers without authentication. This flaw poses a significant risk to websites using the plugin, potentially allowing attackers to execute malicious code remotely. The vulnerability underscores the ongoing threat to WordPress sites, which are frequent targets due to their widespread use. Administrators are urged to disable the plugin immediately and monitor for updates or patches from the developers. This incident highlights the importance of regular security audits and updates for all WordPress plugins to mitigate potential threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-file-upload-bug-in-breeze-cache-wordpress-plugin/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Trigona Ransomware—Custom Tool Accelerates Data Theft",
+            "title": "Trigona Ransomware Attacks Employ Custom Exfiltration Tool for Data Theft",
+            "content": "Recent Trigona ransomware attacks have been observed using a custom command-line tool designed to expedite data exfiltration from compromised environments. This tool enhances the efficiency of data theft operations, posing an increased threat to targeted organizations. The sophistication of this approach indicates a growing trend among ransomware groups to develop proprietary tools for more effective attacks. Organizations are advised to enhance their monitoring capabilities and employ robust data protection measures to mitigate the risk of data loss. Understanding these evolving tactics is crucial for maintaining cybersecurity resilience.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trigona-ransomware-attacks-use-custom-exfiltration-tool-to-steal-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 22 2026",
+            "headline": "Microsoft Fixes Critical ASP.NET Core Privilege Escalation Bug",
+            "title": "Microsoft Releases Patch for Critical ASP.NET Core CVE-2026-40372 Vulnerability",
+            "content": "Microsoft has issued out-of-band updates to patch a critical privilege escalation vulnerability in ASP.NET Core, identified as CVE-2026-40372. With a CVSS score of 9.1, this flaw allows attackers to gain elevated privileges on affected systems, posing a severe risk to organizations using this framework. The vulnerability was discovered by an anonymous researcher, prompting Microsoft to act swiftly to mitigate potential exploitation. Users of ASP.NET Core are strongly encouraged to apply the updates immediately to protect their systems from unauthorized access. This patch is part of Microsoft&#x27;s ongoing efforts to address security vulnerabilities promptly.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/microsoft-patches-critical-aspnet-core.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Bitwarden CLI Trojanized—Supply Chain Attack Alert",
+            "title": "Bitwarden CLI Password Manager Compromised in Supply Chain Attack",
+            "content": "A new software supply chain attack has compromised the Bitwarden CLI, the command-line version of the popular open-source password manager. Researchers attribute this attack to a series of recent supply chain compromises linked to a threat group. The malicious version of the Bitwarden CLI could potentially expose sensitive user credentials, posing a significant risk to developers and organizations relying on this tool. Users are advised to verify the integrity of their installations and update to secure versions as soon as possible. This incident underscores the critical need for vigilance in monitoring software dependencies.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4162865/bitwarden-cli-password-manager-trojanized-in-supply-chain-attack.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Vercel Attack Impact Worsens—More Customers, Systems Compromised",
+            "title": "Vercel Attack Fallout Expands to Additional Customers and Systems",
+            "content": "Vercel has reported further evidence of compromise affecting more customers and third-party systems following a recent cyberattack. The extent of the exposure remains undefined, but the potential downstream risk is significant, affecting numerous stakeholders. This development highlights the cascading impact of cyber incidents on interconnected digital ecosystems. Organizations using Vercel&#x27;s services should review their security measures and assess potential vulnerabilities. The incident serves as a reminder of the importance of comprehensive security strategies to mitigate the effects of such attacks.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/vercel-attack-fallout-expands/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Bitwarden CLI npm Package Breach—Credentials at Risk",
+            "title": "Bitwarden CLI npm Package Compromised to Steal Developer Credentials",
+            "content": "The Bitwarden CLI npm package was briefly compromised after attackers uploaded a malicious version containing a credential-stealing payload. This breach could facilitate the spread of compromised credentials to other projects, posing a severe threat to developers and organizations using the package. Users are urged to verify their installations and replace any affected versions immediately. This incident highlights the vulnerabilities inherent in software supply chains and the critical need for rigorous security practices in package management. Developers should remain vigilant and employ tools to detect and prevent such compromises.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitwarden-cli-npm-package-compromised-to-steal-developer-credentials/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
             "headline": "Rituals Data Breach—Customer Information Compromised",
             "title": "Rituals Discloses Data Breach Affecting &quot;My Rituals&quot; Membership Database",
             "content": "Dutch cosmetics giant Rituals has disclosed a data breach impacting its &quot;My Rituals&quot; membership database, resulting in the theft of customer personal information. The breach involved unauthorized access to sensitive data, including names and addresses, though the exact number of affected customers remains undisclosed. This incident underscores the increasing threat to consumer data in the retail sector, where personal information is a valuable target for cybercriminals. Rituals is currently notifying affected members and has implemented additional security measures to prevent future breaches. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precaution.",
@@ -83,70 +137,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/cohere-ai-terrarium-sandbox-flaw.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "1,300 SharePoint Servers Exposed to Ongoing Spoofing Attacks",
-            "title": "Unpatched Microsoft SharePoint Servers Vulnerable to Persistent Spoofing Exploits",
-            "content": "Over 1,300 Microsoft SharePoint servers remain unpatched and vulnerable to a spoofing vulnerability that has been exploited as a zero-day. Despite being known and actively abused, these servers have not been updated, leaving them susceptible to ongoing attacks. The vulnerability allows attackers to impersonate users and gain unauthorized access to sensitive data. Organizations using SharePoint should immediately apply the latest security updates and review access controls to mitigate the risk of data breaches. This situation underscores the critical need for timely patch management in enterprise environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-1-300-microsoft-sharepoint-servers-vulnerable-to-ongoing-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 21 2026",
-            "headline": "Identity Attacks Bypass Security—Stolen Credentials Still Key",
-            "title": "Identity-Based Attacks Exploit Stolen Credentials as Primary Entry Point",
-            "content": "Despite advances in cybersecurity, stolen credentials remain the most reliable entry point for attackers, bypassing sophisticated defenses like zero-days and AI-generated exploits. Identity-based attacks continue to dominate the threat landscape, exploiting weak or reused passwords to gain unauthorized access. Cybersecurity professionals are advised to implement multi-factor authentication (MFA) and conduct regular security awareness training to mitigate these risks. This trend highlights the importance of robust identity management practices in safeguarding sensitive information and preventing unauthorized access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/no-exploit-needed-how-attackers-walk.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Vulnerable Serial-to-Ethernet Converters Threaten Infrastructure",
-            "title": "Critical Infrastructure at Risk Due to Flawed Serial-to-Ethernet Converters",
-            "content": "Serial-to-Ethernet converters, crucial for linking serial devices to TCP/IP networks in industrial, retail, and healthcare sectors, are riddled with vulnerabilities. Researchers warn that these flaws, coupled with outdated open-source components, could allow attackers to take full control of critical systems. The converters&#x27; widespread use in mission-critical environments amplifies the potential impact of these vulnerabilities. Organizations are urged to conduct thorough security assessments and update or replace vulnerable devices to protect against potential exploitation. This issue highlights the ongoing challenge of securing legacy systems in critical infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4162289/riddled-with-flaws-serial-to-ethernet-converters-endanger-critical-infrastructure.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "npm Supply Chain Attack—Auth Tokens at Risk",
-            "title": "npm Ecosystem Hit by Self-Spreading Supply Chain Attack",
-            "content": "A new supply chain attack is targeting the Node Package Manager (npm) ecosystem, compromising developer credentials and spreading through packages from affected accounts. The attack is designed to steal authentication tokens, which can lead to unauthorized access to sensitive projects and data. This incident underscores the growing threat of supply chain attacks in open-source ecosystems, where trust in package integrity is crucial. Developers using npm are advised to review their package dependencies and rotate credentials as a precaution. This attack highlights the need for enhanced security measures in package management systems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-npm-supply-chain-attack-self-spreads-to-steal-auth-tokens/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Microsoft Teams Efficiency Mode—Boost for Low-Resource PCs",
-            "title": "Microsoft Teams Introduces Efficiency Mode for Resource-Constrained PCs",
-            "content": "Microsoft is set to launch a new Efficiency Mode for Microsoft Teams, aimed at improving performance on PCs with limited CPU and memory resources. This feature is designed to optimize app responsiveness by reducing resource consumption, making Teams more accessible for users with older or less powerful hardware. As remote work continues to drive demand for collaboration tools, this update could significantly enhance user experience on a wide range of devices. IT administrators should prepare to deploy this update to ensure seamless performance improvements for their users.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-gets-efficiency-mode-for-hardware-constrained-devices/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "SBOMs Under Scrutiny—Supply Chain Attacks Surge",
-            "title": "SBOMs Struggle to Mitigate Rising Supply Chain Attacks",
-            "content": "Recent research highlights the challenges security teams face in utilizing Software Bill of Materials (SBOMs) to prevent supply chain attacks. The study suggests that a governance-driven intelligence layer is needed to translate SBOM and Vulnerability Exploitability eXchange (VEX) data into actionable security decisions. As supply chain attacks increase, the effectiveness of SBOMs is being questioned, emphasizing the need for improved data interpretation and decision-making frameworks. Organizations must enhance their SBOM strategies to better protect against these sophisticated threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/are-sboms-failing-supply-chain-attacks-rise-as-security-teams-struggle-with-sbom-data/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 20 2026",
-            "headline": "Hyatt Deploys GPT-5.4—Boosts Global Workforce Efficiency",
-            "title": "Hyatt Leverages ChatGPT Enterprise with GPT-5.4 for Enhanced Operations",
-            "content": "Hyatt has integrated ChatGPT Enterprise, utilizing the advanced capabilities of GPT-5.4 and Codex, across its global workforce to enhance productivity, streamline operations, and improve guest experiences. This deployment marks a significant step in Hyatt&#x27;s digital transformation strategy, aiming to leverage AI for operational excellence. The integration allows for more efficient handling of customer inquiries, personalized guest interactions, and optimized internal processes. By adopting these AI tools, Hyatt positions itself at the forefront of the hospitality industry’s technological evolution. Employees are encouraged to familiarize themselves with the new systems to maximize the benefits of this AI-driven initiative.",
+            "date": "Apr 23 2026",
+            "headline": "Meta to Cut 8,000 Jobs—10% Workforce Reduction",
+            "title": "Meta Announces 10% Workforce Layoff and Closure of 6,000 Open Positions",
+            "content": "Meta is set to lay off approximately 10% of its workforce, translating to around 8,000 employees, as revealed in a memo by Chief People Officer Janelle Gale. The company will also close 6,000 open roles, signaling a significant restructuring effort. This move comes amidst ongoing challenges in the tech industry, where companies are optimizing operations to maintain profitability. The layoffs are expected to impact various departments, with a focus on streamlining operations and enhancing efficiency. Employees and stakeholders are advised to stay informed about further announcements from Meta regarding the restructuring process. This development highlights the broader trend of tech giants adjusting their workforce in response to market pressures.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "GPT-5.5 Bio Bug Bounty—Earn Up to $25,000",
+            "title": "OpenAI Launches GPT-5.5 Bio Bug Bounty for Bio Safety Risks",
+            "content": "OpenAI has announced a bug bounty program for its GPT-5.5 Bio model, offering rewards up to $25,000 for identifying universal jailbreaks related to bio safety risks. This initiative invites red teams to rigorously test the model&#x27;s resilience against potential exploits that could compromise bio safety. The program underscores OpenAI&#x27;s commitment to ensuring the security and reliability of its AI models, particularly in sensitive applications. Participants are encouraged to explore vulnerabilities that could lead to misuse or unintended consequences. This proactive approach aims to enhance the model&#x27;s robustness and safeguard against potential threats in bioinformatics and related fields.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
+            "sourceUrl": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Anthropic Identifies Cause of Claude&#x27;s Performance Issues",
+            "title": "Anthropic Reveals Changes to Claude&#x27;s Instructions Caused Performance Degradation",
+            "content": "Anthropic has addressed concerns from developers and AI users regarding the perceived performance degradation of its Claude models. The company identified that recent changes to Claude&#x27;s harnesses and operating instructions were responsible for the so-called &quot;AI shrinkflation.&quot; Users had reported that Claude seemed less capable of sustaining complex tasks, sparking widespread discussion across platforms like GitHub and Reddit. Anthropic&#x27;s transparency in acknowledging and resolving these issues is crucial for maintaining trust among its user base. Developers relying on Claude for AI-driven applications should monitor updates and adjust their implementations accordingly. This incident highlights the challenges of maintaining AI model performance amidst continuous updates.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/mystery-solved-anthropic-reveals-changes-to-claudes-harnesses-and-operating-instructions-likely-caused-degradation",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Claude Expands to Personal Apps—Spotify, Uber Eats, TurboTax",
+            "title": "Anthropic&#x27;s Claude Now Connects to Personal Apps Including Spotify and TurboTax",
+            "content": "Anthropic has expanded the capabilities of its AI, Claude, by enabling connections to a range of personal applications such as Spotify, Uber Eats, and TurboTax. This development allows users to integrate Claude into their daily routines, enhancing convenience and productivity. Previously, Claude supported work-related apps like Microsoft Office, but this expansion into personal apps marks a significant shift towards broader usability. Users can now leverage Claude for tasks ranging from entertainment to financial management. This move reflects a growing trend of AI integration into everyday life, offering seamless interaction across various platforms.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Sierra Acquires YC-Backed AI Startup Fragment",
+            "title": "Bret Taylor&#x27;s Sierra Acquires AI Startup Fragment from Y Combinator",
+            "content": "Sierra, an AI-driven customer service startup founded by Bret Taylor, has acquired Fragment, a French AI startup backed by Y Combinator. This strategic acquisition aims to enhance Sierra&#x27;s capabilities in delivering advanced AI solutions for customer service applications. Fragment&#x27;s innovative technologies will be integrated into Sierra&#x27;s platform, potentially improving service efficiency and customer satisfaction. The acquisition highlights the ongoing consolidation in the AI sector, where established companies are acquiring startups to bolster their technological edge. Stakeholders should watch for further developments as Sierra leverages Fragment&#x27;s expertise to expand its market presence.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Noscroll AI Bot—Automates Your Doomscrolling",
+            "title": "Noscroll Introduces AI Bot to Automate Internet Browsing and Reduce Doomscrolling",
+            "content": "Noscroll has launched an AI bot designed to automate the process of doomscrolling, aiming to alleviate the mental strain associated with excessive internet browsing. The bot reads and summarizes online content, allowing users to stay informed without the need for continuous scrolling. This innovation addresses the growing concern over digital well-being, offering a solution to manage information overload. By using AI to filter and present relevant content, Noscroll seeks to enhance user experience and promote healthier online habits. Professionals and tech enthusiasts should consider integrating such tools to optimize their digital consumption patterns.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/23/meet-noscroll-an-ai-bot-that-does-your-doomscrolling-for-you/",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "X has rolled out AI-powered custom timelines, replacing its previous Communities feature. These new timelines, curated by the AI system Grok, offer personalized content feeds and introduce new advertising slots, enhancing user engagement and monetization opportunities. This shift reflects X&#x27;s strategy to leverage AI for more tailored user experiences. Users and advertisers should adapt to these changes to maximize content reach and engagement. The update marks a significant evolution in how X structures and delivers content to its audience.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/22/hands-on-with-xs-new-ai-powered-custom-feeds/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "AI Bubble Warning—Elizabeth Warren Sounds Alarm",
-            "title": "Senator Warren Warns of AI-Induced Financial Crisis Risk",
-            "content": "Senator Elizabeth Warren has issued a warning about the potential for an AI-driven financial crisis, drawing parallels to the 2008 recession. Speaking at a Vanderbilt Policy Accelerator event, Warren highlighted the risks of an AI bubble, emphasizing the need for regulatory oversight to prevent systemic failures. Her remarks underscore growing concerns about the unchecked expansion of AI technologies in financial markets. Policymakers and financial institutions should heed these warnings and consider implementing safeguards to mitigate potential risks.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/917026/ai-economy-bubble-elizabeth-warren",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "OpenAI Empowers Teams with Customizable AI Bots",
-            "title": "OpenAI Enables Custom Bot Creation for Business and Education Plans",
-            "content": "OpenAI has expanded its offerings by allowing users in Business, Enterprise, Edu, and Teachers plans to create custom AI bots within ChatGPT. These cloud-based &quot;workspace&quot; agents can autonomously perform tasks such as gathering product feedback and generating reports. This feature empowers teams to tailor AI capabilities to specific business needs, enhancing operational efficiency. Organizations should explore these customizable bots to streamline processes and improve productivity. This development highlights OpenAI&#x27;s commitment to providing versatile AI solutions for diverse professional environments.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/917065/openai-chatgpt-workspace-agents-custom-teams-bots",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "AI Adoption Surges—50% of Firms Use AI by 2025",
-            "title": "Strong Data Fabric Essential for AI&#x27;s Business Value Delivery",
-            "content": "MIT Technology Review highlights the rapid integration of artificial intelligence in enterprise operations, with projections indicating that by the end of 2025, half of all companies will have deployed AI solutions. These include copilots, agents, and predictive systems across various domains such as finance, supply chains, and customer operations. The report emphasizes the necessity of a robust data fabric to support these AI applications, ensuring seamless data integration and accessibility. Organizations are urged to invest in scalable data infrastructure to fully leverage AI&#x27;s potential and drive business value. This trend reflects AI&#x27;s transition from experimental to essential in corporate strategy.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/04/22/1135295/ai-needs-a-strong-data-fabric-to-deliver-business-value/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "10x Science Secures $4.8M to Decode AI-Generated Drugs",
-            "title": "10x Science Raises $4.8M to Evaluate AI-Generated Drug Compounds",
-            "content": "10x Science has successfully raised $4.8 million in a seed funding round to advance its mission of helping pharmaceutical researchers decode complex molecules generated by AI systems. The startup aims to address the challenge of identifying viable drug candidates from the vast number of potential compounds produced by AI algorithms. This funding will enable 10x Science to enhance its analytical capabilities and support pharmaceutical innovation. The initiative highlights the growing reliance on AI in drug discovery and the need for specialized tools to interpret AI outputs effectively. Researchers should consider collaborating with 10x Science to optimize their drug development processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/22/ai-is-spitting-out-more-potential-drugs-than-ever-this-start-up-wants-to-figure-out-which-ones-matter/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 22 2026",
-            "headline": "Google Cloud Next 2026—AI Startups Take Center Stage",
-            "title": "Google Showcases Promising AI Startups at Cloud Next 2026",
-            "content": "At its annual Google Cloud Next 2026 conference, Google spotlighted a diverse array of AI startups, emphasizing its commitment to fostering innovation within its cloud ecosystem. The showcased startups are leveraging Google&#x27;s cloud infrastructure to develop cutting-edge AI solutions across various sectors. This initiative underscores Google&#x27;s strategic focus on attracting AI-driven businesses to its platform, enhancing its competitive edge in the cloud services market. Tech leaders and developers are encouraged to explore partnerships with these startups to integrate advanced AI capabilities into their operations. The event reflects a broader trend of cloud providers supporting AI innovation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/22/the-most-interesting-startups-showcased-at-google-cloud-next-2026/",
             "relatedResources": []
         }
     ],
@@ -358,6 +358,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-39987",
+            "dateAdded": "Apr 23, 2026",
+            "vendor": "Marimo Marimo",
+            "description": "Marimo contains an pre-authorization remote code execution vulnerability, allowing an unauthenticated attacked to shell access and execute arbitrary system commands.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39987",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-33825",
             "dateAdded": "Apr 22, 2026",
