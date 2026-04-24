@@ -1,6 +1,38 @@
 {
   "incidents": [
     {
+      "id": "AIID-1461",
+      "incident_id": 1461,
+      "title": "Purportedly AI-Manipulated Medical Scam Advertisement Reportedly Used Bulgarian TV Host and Physicia",
+      "date": "2026-04-24",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1462",
+      "incident_id": 1462,
+      "title": "Purported Deepfake Facebook Advertisement Reportedly Used Bulgarian Actor and TV Host Mihail Bilalov",
+      "date": "2026-04-24",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1463",
+      "incident_id": 1463,
+      "title": "Purported Deepfake Facebook Advertisement Reportedly Used Bulgarian Actor, Director, and Playwright ",
+      "date": "2026-04-24",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1464",
+      "incident_id": 1464,
+      "title": "Purportedly AI-Manipulated Video Reportedly Misrepresented Bulgarian DPS Figure Ahmed Dogan and Spre",
+      "date": "2026-04-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1456",
       "incident_id": 1456,
       "title": "Video with Reportedly AI-Generated Audio Purported to Show Croatian Footballer Luka Modri\u0107 Endorsing",
@@ -1058,9 +1090,9 @@
     }
   ],
   "stats": {
-    "total": 132,
-    "last7Days": 10,
-    "last30Days": 32
+    "total": 136,
+    "last7Days": 14,
+    "last30Days": 36
   },
-  "lastUpdated": "2026-04-24T19:32:08.432589+05:30"
+  "lastUpdated": "2026-04-24T22:40:25.687151+05:30"
 }
