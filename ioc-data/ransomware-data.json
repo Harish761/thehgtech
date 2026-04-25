@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-04-25T02:30:39.881049",
+  "last_updated": "2026-04-25T13:06:02.047272",
   "period": "Last 7 days",
-  "total_groups": 26,
+  "total_groups": 25,
   "total_victims": 251,
   "groups": [
     {
@@ -1195,6 +1195,47 @@
       ]
     },
     {
+      "name": "Lamashtu",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Malaysian NPK Fertilizer Sdn. Bhd",
+          "date": "2026-04-25 10:35:51.127017",
+          "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/c3fa318d5729400079ca178fae6196bc",
+          "discovered_date": "2026-04-25T10:35:51.127017"
+        },
+        {
+          "name": "Malaysian NPK Fertilizer Sdn. Bhd",
+          "date": "2026-04-25T10:35:51+00:00",
+          "url": "https://www.ransomware.live/id/TWFsYXlzaWFuIE5QSyBGZXJ0aWxpemVyIFNkbi4gQmhkQGxhbWFzaHR1",
+          "discovered_date": "2026-04-25T10:35:51+00:00"
+        },
+        {
+          "name": "Jesin Group",
+          "date": "2026-04-20T13:12:28+00:00",
+          "url": "https://www.ransomware.live/id/SmVzaW4gR3JvdXBAbGFtYXNodHU=",
+          "discovered_date": "2026-04-20T13:12:28+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production"
+      ],
+      "countries": [
+        "MY"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Morpheus",
       "count": 2,
       "victims": [
@@ -1335,41 +1376,6 @@
       ]
     },
     {
-      "name": "Krybit",
-      "count": 2,
-      "victims": [
-        {
-          "name": "imbriefamilylaw.com",
-          "date": "2026-04-20 14:39:23.207293",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/0cbe2cfa2acb52ec5056aa36a769b8048d2526aff127309aa81be8adb8267f49/",
-          "discovered_date": "2026-04-20T14:39:23.207293"
-        },
-        {
-          "name": "imbriefamilylaw.com",
-          "date": "2026-04-20T14:39:23+00:00",
-          "url": "https://www.ransomware.live/id/aW1icmllZmFtaWx5bGF3LmNvbUBrcnliaXQ=",
-          "discovered_date": "2026-04-20T14:39:23+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services"
-      ],
-      "countries": [
-        "GB"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Beast",
       "count": 2,
       "victims": [
@@ -1440,52 +1446,25 @@
       ]
     },
     {
-      "name": "Lamashtu",
+      "name": "Krybit",
       "count": 1,
       "victims": [
         {
-          "name": "Jesin Group",
-          "date": "2026-04-20T13:12:28+00:00",
-          "url": "https://www.ransomware.live/id/SmVzaW4gR3JvdXBAbGFtYXNodHU=",
-          "discovered_date": "2026-04-20T13:12:28+00:00"
+          "name": "imbriefamilylaw.com",
+          "date": "2026-04-20T14:39:23+00:00",
+          "url": "https://www.ransomware.live/id/aW1icmllZmFtaWx5bGF3LmNvbUBrcnliaXQ=",
+          "discovered_date": "2026-04-20T14:39:23+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "MY"
+        "GB"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Nightspire",
-      "count": 1,
-      "victims": [
-        {
-          "name": "S***s*a A**ul***e C***s",
-          "date": "2026-04-18T02:42:29+00:00",
-          "url": "https://www.ransomware.live/id/UyoqKnMqYSBBKip1bCoqKmUgQyoqKnNAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-04-18T02:42:29+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
         0,
         0,
         0,
