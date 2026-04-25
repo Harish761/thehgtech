@@ -283,6 +283,16 @@
         });
     </script>
     <link rel="stylesheet" href="/mobile-nav.css">
+
+    <!-- Fullres Analytics -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
 </head>
 
 <body>
