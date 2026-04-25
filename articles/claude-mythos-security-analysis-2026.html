@@ -58,7 +58,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- Style System -->
     <link rel="stylesheet" href="/header.css">
@@ -457,7 +457,7 @@
 
             <div class="article-content">
                 <div class="technical-box" style="margin-top: 0;">
-                    <h3><i class="fas fa-file-alt"></i> Executive Summary</h3>
+                    <h2 style="font-size: 1.3rem; margin-bottom: 1rem; margin-top: 0; border-bottom: none; color: var(--text-primary);"><i class="fas fa-file-alt"></i> Executive Summary</h2>
                     <ul style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0;">
                         <li><strong>Who:</strong> Anthropic's newly announced frontier AI model, "Claude Mythos".</li>
                         <li><strong>What:</strong> A specialized LLM designed for autonomous cybersecurity operations, capable of deep-binary reverse-engineering and zero-day exploit chaining.</li>
@@ -474,7 +474,7 @@
                 <h2>2. The Mechanics: Reverse-Engineering at Scale</h2>
                 <p>Unlike previous general-purpose models (such as Opus or Sonnet) that could spot basic SQL injections in provided source code, Mythos is operational. It has demonstrated an incredible proficiency for ingesting massive, raw, closed-source binaries and decompiling them into human-readable logic.</p>
 
-                <img src="/images/articles/mythos-binary-analysis.png" alt="Mythos AI Binary Parsing" class="article-image">
+                <img src="/images/articles/mythos-binary-analysis.png" alt="Mythos AI Binary Parsing" class="article-image" loading="lazy">
 
                 <p>Mythos can isolate complex memory corruption vulnerabilities—such as <strong>Use-After-Free (UAF)</strong> or <strong>Out-of-Bounds (OOB)</strong> writes—in mere minutes. A task that traditionally takes a senior reverse engineer weeks of manual tracing through IDA Pro or Ghidra is now accomplished essentially in real time.</p>
                 
@@ -523,7 +523,7 @@ Node[ALLOC(ptr_A)] -> Edge[FREE(ptr_A)] -> Edge[WRITE(ptr_A)] = Critical Vulnera
                 <h2>6. How the Security Specialist Adapts</h2>
                 <p>Mythos does not replace the human security specialist—it forces an immediate evolution of the job role.</p>
 
-                <img src="/images/articles/soc-analyst-evolution.png" alt="Evolution of the SOC Analyst" class="article-image">
+                <img src="/images/articles/soc-analyst-evolution.png" alt="Evolution of the SOC Analyst" class="article-image" loading="lazy">
 
                 <p>If your career relies exclusively on finding standard vulnerabilities (like basic XSS or misconfigurations) or running automated vulnerability scanners, that role is evaporating. AI will scrub these from codebases instantly.</p>
 
