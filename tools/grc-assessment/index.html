@@ -570,10 +570,10 @@
                 <i class="fas fa-microchip"></i> 100% LOCAL PROCESSING ENGINE
             </div>
             <h1 class="grc-hero-title">
-                Triple Framework <span class="gradient-text">GRC Engine</span>
+                Multi-Framework <span class="gradient-text">GRC Engine</span>
             </h1>
             <p class="grc-hero-subtitle">
-                The industry's first browser-native decision engine for <span style="color:var(--text-primary); font-weight:800; border-bottom: 2px solid var(--accent-cyan-glow);">ISO 27001:2022</span>, <span style="color:#0A84FF; font-weight:800;">NIST CSF 2.0</span>, and <span style="color:#FF9F0A; font-weight:800;">CIS v8</span>.
+                The industry's first browser-native decision engine for <span style="color:var(--text-primary); font-weight:800; border-bottom: 2px solid var(--accent-cyan-glow);">ISO 27001:2022</span>, <span style="color:#0A84FF; font-weight:800;">NIST CSF 2.0</span>, <span style="color:#FF9F0A; font-weight:800;">CIS v8</span>, <span style="color:#8B5CF6; font-weight:800;">GDPR</span>, and <span style="color:#EC4899; font-weight:800;">SOC 2</span>. Now featuring <strong style="color:var(--accent-cyan);">Wizard Mode</strong>, <strong style="color:var(--accent-green);">Auto-Generated Risk Registers</strong>, and Team JSON Collaboration.
             </p>
         </div>
     </section>
@@ -759,6 +759,10 @@
                                 <span style="color:var(--accent-cyan);">1</span>-<span style="color:var(--accent-cyan);">4</span> Answer &nbsp;
                                 <span style="color:var(--accent-cyan);">J/K</span> Nav
                             </div>
+                            <button id="btnImportJson" style="padding:0.4rem 0.6rem; background:transparent; border:1px solid rgba(139,92,246,0.3); color:#8B5CF6; border-radius:6px; font-size:0.6rem; cursor:pointer; opacity:0.7; white-space:nowrap; margin-right: 0.2rem;" title="Import Assessment JSON">
+                                <i class="fas fa-file-import"></i>
+                            </button>
+                            <input type="file" id="jsonImportInput" accept=".json" style="display:none;">
                             <button id="btnResetEngine" onclick="const m=document.getElementById('resetModal'); if(m) m.style.display='flex';" style="padding:0.4rem 0.6rem; background:transparent; border:1px solid rgba(239,68,68,0.3); color:#EF4444; border-radius:6px; font-size:0.6rem; cursor:pointer; opacity:0.7; white-space:nowrap;" title="Reset All Session Data">
                                 <i class="fas fa-trash-alt"></i>
                             </button>
@@ -879,6 +883,10 @@
                                         <span style="color:#FF9F0A;">CIS v8 Controls</span>
                                         <span style="color:var(--border);">|</span>
                                         <span style="color:var(--accent-green);">ISO 27001:2022</span>
+                                        <span style="color:var(--border);">|</span>
+                                        <span style="color:#8B5CF6;">GDPR</span>
+                                        <span style="color:var(--border);">|</span>
+                                        <span style="color:#EC4899;">SOC 2</span>
                                     </div>
                                 </div>
                             </div>

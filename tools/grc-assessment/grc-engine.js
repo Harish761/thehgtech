@@ -756,6 +756,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                     ${control.criticality ? `<span class="framework-badge criticality" style="background:${control.criticality === 'High' ? 'rgba(239,68,68,0.1)' : control.criticality === 'Medium' ? 'rgba(245,158,11,0.1)' : 'rgba(16,185,129,0.1)'}; color:${control.criticality === 'High' ? '#EF4444' : control.criticality === 'Medium' ? '#F59E0B' : '#10B981'}; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid ${control.criticality === 'High' ? 'rgba(239,68,68,0.3)' : control.criticality === 'Medium' ? 'rgba(245,158,11,0.3)' : 'rgba(16,185,129,0.3)'};">Risk Impact: ${control.risk_impact} (${control.criticality})</span>` : ''}
                     ${control.nist_mapping ? `<span class="framework-badge nist" style="background:rgba(10, 132, 255, 0.1); color:#0A84FF; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid rgba(10, 132, 255, 0.3);">NIST: ${control.nist_mapping}</span>` : ''}
                     ${control.cis_mapping ? `<span class="framework-badge cis" style="background:rgba(255, 159, 10, 0.1); color:#FF9F0A; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid rgba(255, 159, 10, 0.3);">CIS: ${control.cis_mapping}</span>` : ''}
+                    ${control.gdpr_mapping ? `<span class="framework-badge gdpr" style="background:rgba(139, 92, 246, 0.1); color:#8B5CF6; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid rgba(139, 92, 246, 0.3);">GDPR: ${control.gdpr_mapping}</span>` : ''}
+                    ${control.soc2_mapping ? `<span class="framework-badge soc2" style="background:rgba(236, 72, 153, 0.1); color:#EC4899; padding:0.2rem 0.6rem; border-radius:4px; font-size:0.75rem; border:1px solid rgba(236, 72, 153, 0.3);">SOC 2: ${control.soc2_mapping}</span>` : ''}
                 </div>
                 <h3 class="control-title" style="margin-top:0.2rem;">${control.control_title}</h3>
                 <p class="control-objective" style="color:var(--text-muted); font-size:0.85rem; margin-bottom: 2rem; font-style: italic;">
@@ -1181,6 +1183,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         // CIS Accumulators
         let cisEarnedImpact = 0;
         let cisTotalPossibleImpact = 0;
+        let gdprEarnedImpact = 0;
+        let gdprTotalPossibleImpact = 0;
+        let soc2EarnedImpact = 0;
+        let soc2TotalPossibleImpact = 0;
 
         // Flatten all controls in scope for iteration
         const allControls = [];
@@ -1220,6 +1226,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 cisEarnedImpact += (impact * CIS_MULTIPLIERS[status]);
                 cisTotalPossibleImpact += impact;
             }
+            if (control.gdpr_mapping) {
+                gdprEarnedImpact += (impact * getMultiplier(status));
+                gdprTotalPossibleImpact += impact;
+            }
+            if (control.soc2_mapping) {
+                soc2EarnedImpact += (impact * getMultiplier(status));
+                soc2TotalPossibleImpact += impact;
+            }
         });
 
         // --- Final ISO 27001 Scores ([8] Dual Scoring) ---
@@ -1253,6 +1267,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         const cisBenchmark = rawCisReadiness * (93 / CIS_SAFEGUARD_TOTAL) * CIS_MAPPING_STRENGTH;
         const finalCis = Math.round(cisBenchmark * 100);
 
+        const finalGdpr = gdprTotalPossibleImpact > 0 ? Math.round((gdprEarnedImpact / gdprTotalPossibleImpact) * 100) : 0;
+        const finalSoc2 = soc2TotalPossibleImpact > 0 ? Math.round((soc2EarnedImpact / soc2TotalPossibleImpact) * 100) : 0;
+
         // Update Global UI
         if (ui.overallScore) ui.overallScore.innerText = `${finalScore}%`;
         const sideNist = document.getElementById('sideNistScore');
@@ -1266,6 +1283,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.grcFullScopeScore = fullScopeScore;  // [8]
         window.grcNistScore = finalNist;
         window.grcCisScore = finalCis;
+        window.grcGdprScore = finalGdpr;
+        window.grcSoc2Score = finalSoc2;
 
         // Visual feedback
         if (finalScore >= 85) ui.overallScore.style.color = '#10B981';
@@ -1489,7 +1508,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:center; padding:1rem 1.5rem; background:rgba(255,255,255,0.03); border:1px solid var(--border); border-radius:12px; margin-bottom:1.5rem; font-size:0.85rem;">
                     <i class="fas fa-calculator" style="color:var(--accent-cyan);"></i>
                     <div><span style="color:var(--text-muted);">Full Scope Score (primary):</span> <strong style="color:${fullVal>=75?'#10B981':fullVal>=40?'#F59E0B':'#EF4444'}; font-size:1.1rem;">${fullVal}%</strong> <span style="color:var(--text-muted); font-size:0.75rem;">(all selected controls in denominator)</span></div>
-                    <div style="border-left:1px solid var(--border); padding-left:1.5rem;"><span style="color:var(--text-muted);">Scoped Score (answered only):</span> <strong style="color:var(--text-primary);">${scopedVal}%</strong> <span style="color:var(--text-muted); font-size:0.75rem;">(only answered controls counted)</span></div>
+                    <div style="border-left:1px solid var(--border); padding-left:1.5rem;"><span style="color:var(--text-muted);">Scoped Score (answered only):</span> <strong style="color:var(--text-primary);">${scopedVal}%</strong></div>
+                    <div style="border-left:1px solid var(--border); padding-left:1.5rem;"><span style="color:var(--text-muted);">GDPR Readiness:</span> <strong style="color:#8B5CF6;">${window.grcGdprScore || 0}%</strong></div>
+                    <div style="border-left:1px solid var(--border); padding-left:1.5rem;"><span style="color:var(--text-muted);">SOC 2 Compliance:</span> <strong style="color:#EC4899;">${window.grcSoc2Score || 0}%</strong></div>
                 </div>
             `;
         }
@@ -2322,7 +2343,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         const ans = userState[c.control_id];
                         if (!ans) {
                             pendingC++;
-                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Pending Evaluation', effort: 'TBD', rem: 'Control requires formal evaluation to determine compliance posture.', nist: c.nist_mapping, cis: c.cis_mapping, just: 'Pending formal evaluation.', rationale: 'Visibility Gap: Baseline not established.'}); 
+                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Pending Evaluation', effort: 'TBD', rem: 'Control requires formal evaluation to determine compliance posture.', nist: c.nist_mapping, cis: c.cis_mapping, gdpr: c.gdpr_mapping, soc2: c.soc2_mapping, just: 'Pending formal evaluation.', rationale: 'Visibility Gap: Baseline not established.'}); 
                             return;
                         }
                         
@@ -2342,14 +2363,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                         else if (isNA(ans)) naC++;
                         else if (ans === 'no') { 
                             gapC++; 
-                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', effort: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
+                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', effort: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, gdpr: c.gdpr_mapping, soc2: c.soc2_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
                         }
                         else {
                             // Maturity levels (adhoc, repeatable, defined, managed)
                             partC++; 
                             const ml = MATURITY_LEVELS[ans];
                             const riskLvl = mult <= 0.4 ? 'High' : 'Medium';
-                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: riskLvl, effort: riskLvl, rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale, maturityLabel: ml ? ml.label : ans}); 
+                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: riskLvl, effort: riskLvl, rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, gdpr: c.gdpr_mapping, soc2: c.soc2_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale, maturityLabel: ml ? ml.label : ans}); 
                         }
                     });
                 });
@@ -2876,6 +2897,58 @@ document.addEventListener('DOMContentLoaded', async () => {
                 break;
         }
     });
+
+    // ==========================================
+    // PHASE 4: JSON IMPORT / MERGE
+    // ==========================================
+    const btnImportJson = document.getElementById('btnImportJson');
+    const jsonImportInput = document.getElementById('jsonImportInput');
+
+    if (btnImportJson && jsonImportInput) {
+        btnImportJson.addEventListener('click', () => {
+            jsonImportInput.click();
+        });
+
+        jsonImportInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+                try {
+                    const importedData = JSON.parse(evt.target.result);
+                    
+                    // Basic validation to ensure it's a state object (could have control IDs)
+                    if (!importedData || typeof importedData !== 'object') {
+                        alert("Invalid Assessment JSON format.");
+                        return;
+                    }
+
+                    // Merge strategy: Overwrite local state with imported state
+                    const confirmMerge = confirm("Are you sure you want to import this assessment? This will overwrite any conflicting answers in your current session.");
+                    if (!confirmMerge) return;
+
+                    // Merge userState
+                    Object.keys(importedData).forEach(key => {
+                        userState[key] = importedData[key];
+                    });
+                    
+                    persistState();
+                    alert("Assessment data imported successfully!");
+                    
+                    // Reload UI to reflect new state
+                    location.reload();
+                    
+                } catch (error) {
+                    alert("Error parsing JSON file. Please ensure it is a valid GRC export.");
+                    console.error(error);
+                }
+            };
+            reader.readAsText(file);
+            // Reset input so the same file can be selected again
+            e.target.value = '';
+        });
+    }
 
     // Kickoff
     loadGRCData();

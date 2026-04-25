@@ -4,28 +4,30 @@ const THEHGTECH_GRC_DATA = {
     "domains": [
         {
             "id": "domain_0",
-            "name": "Management System Requirements (Clauses 4–10)",
+            "name": "Management System Requirements (Clauses 4\u201310)",
             "icon": "fa-landmark",
             "isMandatory": true,
-            "description": "MANDATORY — ISO Management System Requirements. The governance backbone of ISO 27001:2022. These clauses evaluate the ISMS itself — not individual controls. Failure here results in a Major Non-Conformity that blocks certification regardless of your Annex A scores.",
+            "description": "MANDATORY \u2014 ISO Management System Requirements. The governance backbone of ISO 27001:2022. These clauses evaluate the ISMS itself \u2014 not individual controls. Failure here results in a Major Non-Conformity that blocks certification regardless of your Annex A scores.",
             "controls": [
                 {
                     "control_id": "CL4.1",
-                    "control_title": "Clause 4.1–4.2: Context of the Organisation",
+                    "control_title": "Clause 4.1\u20134.2: Context of the Organisation",
                     "auditor_question": "Has the organisation formally documented the internal and external issues relevant to its ISMS, and identified the needs and expectations of interested parties (regulators, customers, partners)?",
                     "evidence_required": "Provide the documented Context Analysis (or equivalent PESTLE/stakeholder analysis) showing the organisation's ISMS boundary definition and list of interested parties with their requirements.",
-                    "objective": "Establish a clear, formally scoped ISMS that is aligned to business context and stakeholder expectations — the foundation for all risk-based decisions.",
+                    "objective": "Establish a clear, formally scoped ISMS that is aligned to business context and stakeholder expectations \u2014 the foundation for all risk-based decisions.",
                     "remediation_advice": "Conduct a formal context workshop to document internal factors (culture, capabilities) and external factors (legal landscape, market). Capture interested party requirements in an ISMS Scope document signed by executive leadership.",
                     "nist_mapping": "GV.OC-01",
                     "cis_mapping": "1.1",
                     "expert_rationale": "**Risk:** Operating an ISMS without understanding its environment. | **Impact:** Controls are misaligned to actual threats, causing over-investment in irrelevant areas and blind spots in critical ones. | **Guidance:** Context is the lens through which all risk decisions are made. Without it, your ISMS is built on assumptions, not facts.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL4.3",
-                    "control_title": "Clause 4.3–4.4: ISMS Scope and Design",
-                    "auditor_question": "Is the scope of the ISMS formally defined, documented, and approved — clearly stating which organisational units, locations, assets, and processes are included and excluded?",
+                    "control_title": "Clause 4.3\u20134.4: ISMS Scope and Design",
+                    "auditor_question": "Is the scope of the ISMS formally defined, documented, and approved \u2014 clearly stating which organisational units, locations, assets, and processes are included and excluded?",
                     "evidence_required": "Provide the signed ISMS Scope Statement document, including a rationale for any exclusions and confirmation it has been approved at the executive level.",
                     "objective": "Ensure the certification boundary is explicit, auditable, and defensible, preventing scope creep or ambiguity during Stage 2 audits.",
                     "remediation_advice": "Draft a formal ISMS Scope Statement referencing specific business units, geographies, and system boundaries. Explicitly list any excluded areas with written justification. Obtain formal sign-off from the CISO and executive sponsor.",
@@ -33,137 +35,159 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "**Risk:** Ambiguous or unapproved ISMS scope. | **Impact:** Auditors will flag undefined boundaries as a Major Non-Conformity, forcing a re-audit. | **Guidance:** The scope statement is the ISMS's legal perimeter. Vagueness here invalidates the entire certification effort.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL5.1",
                     "control_title": "Clause 5.1: Leadership and Commitment",
-                    "auditor_question": "Does top management demonstrably champion the ISMS — through signed policies, budget allocation for security, and active participation in management reviews?",
+                    "auditor_question": "Does top management demonstrably champion the ISMS \u2014 through signed policies, budget allocation for security, and active participation in management reviews?",
                     "evidence_required": "Provide the executive-signed Information Security Policy (with date), evidence of security budget line items, and minutes from a management review meeting where information security was a formal agenda item.",
                     "objective": "Ensure information security is treated as a strategic business priority, not an IT side-project, by requiring visible, documented executive sponsorship.",
                     "remediation_advice": "Have the CEO or Board formally sign the Information Security Policy. Add 'Information Security' as a standing agenda item in quarterly board meetings. Allocate a dedicated security budget line and document the approval.",
                     "nist_mapping": "GV.RR-01",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "**Risk:** Security treated as a purely technical function without business accountability. | **Impact:** Budget starvation, poor adoption of controls, and certification failure at Clause 5 — which cannot be compensated for by technical controls. | **Guidance:** ISO 27001 requires proof of executive commitment, not just an org chart. Auditors will ask for signed documents and meeting minutes.",
+                    "expert_rationale": "**Risk:** Security treated as a purely technical function without business accountability. | **Impact:** Budget starvation, poor adoption of controls, and certification failure at Clause 5 \u2014 which cannot be compensated for by technical controls. | **Guidance:** ISO 27001 requires proof of executive commitment, not just an org chart. Auditors will ask for signed documents and meeting minutes.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL5.2",
-                    "control_title": "Clause 5.2–5.3: ISMS Policy and Roles",
+                    "control_title": "Clause 5.2\u20135.3: ISMS Policy and Roles",
                     "auditor_question": "Is there an executive-approved, published Information Security Policy that references ISMS objectives, and are information security roles and responsibilities formally assigned to named individuals?",
                     "evidence_required": "Provide the current Information Security Policy (with version history and approval signature), plus the RACI matrix or role-responsibility document mapping ISMS functions to specific job titles.",
                     "objective": "Establish a clear governance hierarchy with named accountability for ISMS outcomes, preventing 'everyone and no one' from being responsible for security.",
-                    "remediation_advice": "Create a concise (1–2 page) Information Security Policy stating your ISMS objectives and commitment. Build a security RACI matrix mapping every critical ISMS process to a named owner. Publish both on the intranet.",
+                    "remediation_advice": "Create a concise (1\u20132 page) Information Security Policy stating your ISMS objectives and commitment. Build a security RACI matrix mapping every critical ISMS process to a named owner. Publish both on the intranet.",
                     "nist_mapping": "GV.RR-02",
                     "cis_mapping": "1.1",
                     "expert_rationale": "If nobody is formally named as responsible for an ISMS process, auditors treat it as uncontrolled. Documented roles turn 'best effort' into 'accountable obligation.'",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL6.1",
                     "control_title": "Clause 6.1: Risk Assessment Methodology",
-                    "auditor_question": "Has the organisation defined and consistently applied a formal information security risk assessment methodology — including risk criteria, acceptance levels, and a documented process for identifying, analysing, and evaluating risks?",
+                    "auditor_question": "Has the organisation defined and consistently applied a formal information security risk assessment methodology \u2014 including risk criteria, acceptance levels, and a documented process for identifying, analysing, and evaluating risks?",
                     "evidence_required": "Provide the Risk Assessment Methodology document and a completed Risk Register from the most recent assessment cycle, showing identified threats, vulnerabilities, likelihood, impact, and risk scores.",
-                    "objective": "Ensure risk-based decision-making is systematic and repeatable — not ad hoc — so that risk treatment priorities reflect real business exposure.",
-                    "remediation_advice": "Adopt a published risk assessment methodology (e.g., ISO 27005 or NIST SP 800-30). Define your risk scoring matrix (likelihood × impact). Conduct and document a formal risk assessment covering all in-scope assets. Review annually or after major changes.",
+                    "objective": "Ensure risk-based decision-making is systematic and repeatable \u2014 not ad hoc \u2014 so that risk treatment priorities reflect real business exposure.",
+                    "remediation_advice": "Adopt a published risk assessment methodology (e.g., ISO 27005 or NIST SP 800-30). Define your risk scoring matrix (likelihood \u00d7 impact). Conduct and document a formal risk assessment covering all in-scope assets. Review annually or after major changes.",
                     "nist_mapping": "GV.RM-01",
                     "cis_mapping": "1.1",
                     "expert_rationale": "**Risk:** Risk decisions made informally or inconsistently. | **Impact:** Controls are applied to the wrong threats, leaving genuine high-probability risks unmitigated. | **Guidance:** Auditors expect a documented methodology, not gut feeling. The Risk Register is the single most scrutinised document in any ISO 27001 audit.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL6.2",
-                    "control_title": "Clause 6.2–6.3: ISMS Objectives and Planning",
-                    "auditor_question": "Are information security objectives formally defined, measurable, and tracked — and is there a documented plan for achieving them, including owner, timeline, and required resources?",
+                    "control_title": "Clause 6.2\u20136.3: ISMS Objectives and Planning",
+                    "auditor_question": "Are information security objectives formally defined, measurable, and tracked \u2014 and is there a documented plan for achieving them, including owner, timeline, and required resources?",
                     "evidence_required": "Provide the ISMS Objectives document (e.g., 'Reduce critical vulnerability MTTR to <72h by Q3') with evidence of progress tracking (e.g., dashboard, KPI report, or OKR tracker).",
                     "objective": "Translate the abstract commitment to security into concrete, measurable targets that drive accountability and continuous improvement.",
-                    "remediation_advice": "Define 3–5 SMART information security objectives tied to your top risks. Assign an owner and a target date to each. Track progress in your existing project management or OKR tool. Review at each management review.",
+                    "remediation_advice": "Define 3\u20135 SMART information security objectives tied to your top risks. Assign an owner and a target date to each. Track progress in your existing project management or OKR tool. Review at each management review.",
                     "nist_mapping": "GV.RM-05",
                     "cis_mapping": "1.1",
                     "expert_rationale": "Objectives without measurement are wishes. ISO 27001 requires you to prove you are moving in the right direction, not just claiming to be. Auditors will look for trend data, not just a list of goals.",
                     "risk_impact": 7,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL7.1",
-                    "control_title": "Clause 7.1–7.2: Resources and Competence",
+                    "control_title": "Clause 7.1\u20137.2: Resources and Competence",
                     "auditor_question": "Has the organisation determined and allocated the necessary resources for the ISMS, and ensured that personnel performing ISMS functions are competent (via education, training, or experience)?",
                     "evidence_required": "Provide the security team org chart or resource allocation document, plus training completion records or certifications (e.g., CISSP, ISO 27001 Lead Implementer) for ISMS personnel.",
                     "objective": "Ensure the ISMS is not under-resourced or staffed by unqualified individuals, which are the most common causes of implementation failure.",
                     "remediation_advice": "Document the security team's roles and competency requirements. Establish a training plan mapping current skill gaps to formal training actions. Record all training completions and certifications. Budget explicitly for external expertise or certification.",
                     "nist_mapping": "GV.RR-04",
                     "cis_mapping": "14.1",
-                    "expert_rationale": "An ISMS staffed by untrained personnel is a liability. Competence is not assumed — it must be demonstrated with documented evidence. This is a frequent finding in first-time certifications.",
+                    "expert_rationale": "An ISMS staffed by untrained personnel is a liability. Competence is not assumed \u2014 it must be demonstrated with documented evidence. This is a frequent finding in first-time certifications.",
                     "risk_impact": 7,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL7.3",
-                    "control_title": "Clause 7.3–7.5: Awareness, Communication and Documentation",
+                    "control_title": "Clause 7.3\u20137.5: Awareness, Communication and Documentation",
                     "auditor_question": "Are relevant personnel aware of the Information Security Policy and their ISMS responsibilities? Are all required ISMS documents controlled, versioned, and available to authorised parties?",
                     "evidence_required": "Provide security awareness training completion records, a communication log or intranet post evidencing policy distribution, and the ISMS Document Register showing document versions and approval dates.",
-                    "objective": "Ensure the ISMS is not a paper exercise — its policies must be understood by those who must implement them, and documents must be controlled to prevent use of obsolete versions.",
+                    "objective": "Ensure the ISMS is not a paper exercise \u2014 its policies must be understood by those who must implement them, and documents must be controlled to prevent use of obsolete versions.",
                     "remediation_advice": "Send a formal communication to all staff when policies are updated. Track acknowledgement signatures or e-learning completion. Maintain a Document Control Register listing all ISMS documents, their version, date, and approver.",
                     "nist_mapping": "GV.RR-04",
                     "cis_mapping": "14.1",
-                    "expert_rationale": "A policy nobody has read is worthless in an audit. Clause 7.3 specifically requires evidence of awareness — not just distribution. Document control prevents the catastrophic mistake of an employee following an outdated procedure.",
+                    "expert_rationale": "A policy nobody has read is worthless in an audit. Clause 7.3 specifically requires evidence of awareness \u2014 not just distribution. Document control prevents the catastrophic mistake of an employee following an outdated procedure.",
                     "risk_impact": 6,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL8.1",
-                    "control_title": "Clause 8.1–8.2: Operational Planning and Risk Assessment Execution",
-                    "auditor_question": "Are the risk assessment and risk treatment processes actually being executed at planned intervals — not just documented in theory — with evidence of current, completed assessments on record?",
+                    "control_title": "Clause 8.1\u20138.2: Operational Planning and Risk Assessment Execution",
+                    "auditor_question": "Are the risk assessment and risk treatment processes actually being executed at planned intervals \u2014 not just documented in theory \u2014 with evidence of current, completed assessments on record?",
                     "evidence_required": "Provide the most recent completed Risk Assessment Report (dated within the last 12 months) and the Risk Treatment Plan showing accepted, mitigated, transferred, or avoided risks with treatment owners.",
-                    "objective": "Prove that risk management is operational, not just planned — a living process that actually drives control implementation decisions.",
+                    "objective": "Prove that risk management is operational, not just planned \u2014 a living process that actually drives control implementation decisions.",
                     "remediation_advice": "Schedule a formal risk assessment at least annually (or after major changes). Complete and sign off the Risk Register and Risk Treatment Plan. Assign a named owner to each risk treatment action. Track treatment completion in your project management tool.",
                     "nist_mapping": "ID.RA-01",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "**Risk:** Risk framework exists on paper but is never actually executed. | **Impact:** Stage 1 audit failure — auditors will ask for evidence of the last completed risk assessment. | **Guidance:** The most common certification blocker. 'We are planning to' is not acceptable.",
+                    "expert_rationale": "**Risk:** Risk framework exists on paper but is never actually executed. | **Impact:** Stage 1 audit failure \u2014 auditors will ask for evidence of the last completed risk assessment. | **Guidance:** The most common certification blocker. 'We are planning to' is not acceptable.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL9.1",
-                    "control_title": "Clause 9.1–9.2: Performance Monitoring and Internal Audit",
+                    "control_title": "Clause 9.1\u20139.2: Performance Monitoring and Internal Audit",
                     "auditor_question": "Is the organisation monitoring and measuring ISMS performance against defined metrics, and conducting internal audits of the ISMS at planned intervals with a formally documented audit programme?",
                     "evidence_required": "Provide the Internal Audit Programme, the most recent completed Internal Audit Report (including findings and nonconformities), and evidence of corrective actions taken in response to audit findings.",
-                    "objective": "Ensure the ISMS has a self-correction mechanism — internal audits are the primary way the organisation identifies weaknesses before external auditors do.",
+                    "objective": "Ensure the ISMS has a self-correction mechanism \u2014 internal audits are the primary way the organisation identifies weaknesses before external auditors do.",
                     "remediation_advice": "Establish an annual internal audit schedule covering all ISMS processes. Use a trained internal auditor (or engage an external consultancy). Document all findings as formal nonconformity reports. Ensure corrective actions are assigned and tracked to closure.",
                     "nist_mapping": "GV.MT-01",
                     "cis_mapping": "1.1",
-                    "expert_rationale": "**Risk:** Undiscovered ISMS failures accumulating unchecked. | **Impact:** External auditors discover major issues that internal audits should have caught — damaging credibility and triggering mandatory corrective action periods. | **Guidance:** Internal audit is the ISMS's immune system. Without it, the body cannot detect or fight infection.",
+                    "expert_rationale": "**Risk:** Undiscovered ISMS failures accumulating unchecked. | **Impact:** External auditors discover major issues that internal audits should have caught \u2014 damaging credibility and triggering mandatory corrective action periods. | **Guidance:** Internal audit is the ISMS's immune system. Without it, the body cannot detect or fight infection.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL9.3",
                     "control_title": "Clause 9.3: Management Review",
-                    "auditor_question": "Is management reviewing the ISMS at planned intervals — with documented minutes covering required inputs (audit results, risk treatment status, objective progress) and resulting decisions and actions?",
+                    "auditor_question": "Is management reviewing the ISMS at planned intervals \u2014 with documented minutes covering required inputs (audit results, risk treatment status, objective progress) and resulting decisions and actions?",
                     "evidence_required": "Provide signed Management Review Meeting Minutes from the past 12 months, showing the standard required inputs were discussed and that outputs (decisions, resource allocations) were formally recorded.",
-                    "objective": "Ensure executive accountability is exercised periodically — not just at certification time — keeping the ISMS aligned to evolving business strategy and risk landscape.",
+                    "objective": "Ensure executive accountability is exercised periodically \u2014 not just at certification time \u2014 keeping the ISMS aligned to evolving business strategy and risk landscape.",
                     "remediation_advice": "Schedule a formal ISMS Management Review at least annually (ideally twice yearly). Use a structured agenda covering all ISO 27001-required inputs. Document outcomes, decisions, and action items with owners. Store signed minutes in the ISMS document repository.",
                     "nist_mapping": "GV.MT-03",
                     "cis_mapping": "1.1",
                     "expert_rationale": "Management Review is the top-level feedback loop of the ISMS. Without it, executives are managing security blindly. Auditors treat missing or superficial review minutes as a direct indicator of weak governance.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 },
                 {
                     "control_id": "CL10.1",
-                    "control_title": "Clause 10.1–10.2: Nonconformity and Continual Improvement",
-                    "auditor_question": "Does the organisation have a formal process for identifying, logging, investigating, and resolving nonconformities — and is there evidence of continual improvement actions being initiated and tracked to closure?",
+                    "control_title": "Clause 10.1\u201310.2: Nonconformity and Continual Improvement",
+                    "auditor_question": "Does the organisation have a formal process for identifying, logging, investigating, and resolving nonconformities \u2014 and is there evidence of continual improvement actions being initiated and tracked to closure?",
                     "evidence_required": "Provide the Corrective Action Register (or equivalent NCR tracking log) showing at least 3 examples of nonconformities raised, investigated, and closed within the past year, with root cause analysis documented.",
-                    "objective": "Demonstrate that the ISMS learns from failures and continuously improves — the key differentiator between a living management system and a static compliance exercise.",
-                    "remediation_advice": "Implement a Corrective Action Request (CAR) process — even a simple spreadsheet is sufficient. For every audit finding or incident, log the NC, assign a root cause, define a corrective action, set a deadline, and verify closure. Review the CAR log in each Management Review.",
+                    "objective": "Demonstrate that the ISMS learns from failures and continuously improves \u2014 the key differentiator between a living management system and a static compliance exercise.",
+                    "remediation_advice": "Implement a Corrective Action Request (CAR) process \u2014 even a simple spreadsheet is sufficient. For every audit finding or incident, log the NC, assign a root cause, define a corrective action, set a deadline, and verify closure. Review the CAR log in each Management Review.",
                     "nist_mapping": "GV.MT-06",
                     "cis_mapping": "1.1",
                     "expert_rationale": "Certification bodies look for a pattern of continuous improvement, not perfection. An organisation that can demonstrate it has found issues and fixed them is more trustworthy than one that claims to have no nonconformities at all.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC1, CC2",
+                    "gdpr_mapping": "Art. 24"
                 }
             ]
         },
@@ -184,7 +208,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "**Risk:** Lack of strategic direction and management backing. | **Impact:** Security becomes an 'IT problem' ignored by the business, leading to budget cuts and non-compliance. | **Guidance:** Policies are your legal baseline; without executive signatures, they lack the authority to drive organizational change.",
                     "risk_impact": 7,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.2",
@@ -197,7 +223,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "**Risk:** Critical security tasks falling through the cracks. | **Impact:** 'Ambiguity of ownership' leads to unpatched systems or missed backups. | **Guidance:** Explicitly naming owners in job descriptions ensures that when a crisis hits, there is no confusion about who is responsible for the response.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.3",
@@ -210,7 +238,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "3.3",
                     "expert_rationale": "**Risk:** Internal fraud or catastrophic accidental errors. | **Impact:** A single compromised or disgruntled employee could delete your entire production environment. | **Guidance:** Enforce 'Two-Person' rules (like PR reviews) for all critical changes to prevent a 'single point of human failure' from destroying the business.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.4",
@@ -223,7 +253,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Security is only as strong as its enforcement. If management ignores policy violations for 'high performers,' it sends a signal to the whole organization that security is optional.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.5",
@@ -236,7 +268,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "17.4",
                     "expert_rationale": "In a breach, every minute counts for legal notification windows (like the 72-hour GDPR limit). Searching for the FBI's phone number during an active ransomware attack is a massive failure.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.6",
@@ -249,7 +283,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Cybersecurity is a team sport. Being part of an ISAC means you hear about an exploit targeting your industry hours before it hits the news\u2014giving you time to patch before you're attacked.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.7",
@@ -262,7 +298,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "**Risk:** Blindness to emerging adversary maneuvers. | **Impact:** Being hit by an exploit that your industry peers were already warned about via threat feeds. | **Guidance:** Cybersecurity is a team sport. Threat intel shifts you from reactive 'firefighting' to proactive hunting. It is your 'early warning system'.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.8",
@@ -275,7 +313,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "16.1",
                     "expert_rationale": "Fixing a security flaw during the design phase costs $10. Fixing it after a breach costs $1,000,000. 'Shift-Left' security is not just safer\u2014it\u2019s far cheaper for the business.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.9",
@@ -288,7 +328,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "**Risk:** Shadow IT and forgotten, unmanaged assets. | **Impact:** Most breaches occur on 'forgotten' servers that aren't being patched because they aren't in the inventory. | **Guidance:** You cannot protect what you do not know you have. A definitive inventory is the foundation of all other security controls.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.10",
@@ -301,7 +343,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "An AUP is your first line of defense in court. If an employee uses a work laptop for gambling or personal storage, the AUP allows the organization to take immediate legal and disciplinary action.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.11",
@@ -314,7 +358,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Departed employees with active laptops are a major source of data leaks. A strict asset return policy ensures that proprietary code and customer data don't walk out the door forever.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.12",
@@ -327,7 +373,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Treating all data equally is inefficient. You wouldn't lock a company lunch menu in a vault. Data classification allows you to focus your expensive security resources on what actually matters (Confidential/Restricted data).",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.13",
@@ -340,7 +388,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Labeling is visual friction that prevents mistakes. If a document is clearly marked [CONFIDENTIAL], an employee is much less likely to accidentally forward it to an external vendor.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.14",
@@ -353,7 +403,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Sending PII over unencrypted email is a 'Critical Risk'. Secure transfer protocols ensure that even if an attacker intercepts the data, they cannot read it or alter it during transit.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.15",
@@ -366,7 +418,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "3.1",
                     "expert_rationale": "Access control is the heart of security. If everyone has access to everything, you don't have a perimeter\u2014you have a free-for-all. RBAC ensures that if one account is compromised, the attacker can only see what that specific role allows.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.16",
@@ -379,7 +433,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "6.1",
                     "expert_rationale": "Orphaned accounts (accounts belonging to people who left the company) are a top target for hackers. A formal identity lifecycle ensures that when an employee walks out the door, their digital keys are revoked instantly.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.17",
@@ -392,7 +448,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "6.1",
                     "expert_rationale": "Passwords written on sticky notes or stored in 'passwords.txt' are a security nightmare. Secret management tools ensure that credentials are encrypted, rotated, and only accessible to those who need them.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.18",
@@ -405,7 +463,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "6.8",
                     "expert_rationale": "Privilege creep happens when an employee changes roles but keeps their old permissions. Regular access reviews are the only way to catch 'over-privileged' users before an attacker exploits their excessive access.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.19",
@@ -418,7 +478,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "15.1",
                     "expert_rationale": "You might be secure, but if your vendor isn't, your data is still at risk. Third-party risks (like the MoveIT or SolarWinds attacks) are now the #1 cause of major data breaches globally.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.20",
@@ -431,7 +493,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "15.1",
                     "expert_rationale": "A 'handshake agreement' won't help you after a breach. You need clear, legally binding clauses that force your vendors to notify you immediately if your customers' data is exposed.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.21",
@@ -444,7 +508,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "15.1",
                     "expert_rationale": "Modern software is built from thousands of open-source parts. If one of those parts is 'poisoned' (Supply Chain attack), your entire product is vulnerable. SBOMs allow you to audit what\u2019s actually inside your software.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.22",
@@ -457,7 +523,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "15.1",
                     "expert_rationale": "A vendor's security is not static. A company that was safe last year might have laid off their security team or changed their stack this year. Annual 'check-ins' are the only way to ensure your vendors aren't drifting into unsafe territory.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.23",
@@ -470,7 +538,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "15.1",
                     "expert_rationale": "The biggest lie in cloud computing is 'The Cloud is Secure.' AWS secures the 'Cloud,' but YOU secure what\u2019s 'In the Cloud.' Misunderstanding this 'Shared Responsibility Model' is the cause of almost all major S3 bucket leaks.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.24",
@@ -483,7 +553,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "17.1",
                     "expert_rationale": "**Risk:** Chaos and catastrophic delays during a live breach. | **Impact:** Failing legal notification windows (like the 72hr GDPR limit) or making the breach worse via 'panic' decisions. | **Guidance:** An IRP is like a fire drill; it ensures that when the house is on fire, everyone knows exactly where the exits are and how to use the fire extinguisher.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.25",
@@ -496,7 +568,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "17.1",
                     "expert_rationale": "If you treat every 'anti-virus alert' like a nation-state attack, your team will burn out in a week. Triage allows you to ignore the 'noise' and focus all your firepower on the 'signals' that actually threaten the business.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.26",
@@ -509,7 +583,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "17.1",
                     "expert_rationale": "Execution beats planning. It doesn't matter how good your PDF plan is if your sysadmin doesn't know which server to pull the plug on during an attack. Regular 'Tabletop Exercises' turn theory into muscle memory.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.27",
@@ -522,7 +598,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "17.9",
                     "expert_rationale": "Making a mistake is fine; making the same mistake twice is a failure of governance. 'Lessons Learned' sessions are the only way to ensure an attacker can't use the same back door next month.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.28",
@@ -535,7 +613,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "17.6",
                     "expert_rationale": "If you don't follow a technical 'Chain of Custody,' your evidence is useless in a court of law. Proper evidence collection is what allows you to prosecute hackers or defend your company against regulatory fines.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.29",
@@ -548,7 +628,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "11.2",
                     "expert_rationale": "Hackers love a crisis. If your backup server doesn't have the same firewall rules as your main server, an attacker will simply wait for a system crash and enter through the weakened 'Failover' door.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.30",
@@ -561,7 +643,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "11.1",
                     "expert_rationale": "A backup that has never been tested is not a backup\u2014it\u2019s a hope. ICT readiness is the technical proof that the company can survive a total data center loss without going out of business.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.31",
@@ -574,7 +658,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Ignorance of the law is not a defense. If you operate in California or Europe, you are legally bound by CCPA/GDPR. A compliance register ensures you aren't blindsided by a massive fine because you didn't know a new law applied to you.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.32",
@@ -587,7 +673,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Unlicensed software is a double threat: it brings legal liability and it\u2019s a primary carrier for malware. Managing IP rights is about protecting the company\u2019s pocketbook and its perimeter at the same time.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.33",
@@ -600,7 +688,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "11.1",
                     "expert_rationale": "If an attacker deletes your audit logs during a breach, you can't prove what happened. record protection (using WORM storage) ensures that your history is 'tamper-proof,' which is vital for forensic investigations and tax audits.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.34",
@@ -613,7 +703,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Privacy is a civil right. If you lose a customer's credit card, it's bad. If you lose their home address, health data, or social security number (PII), it's a lifespan-altering event for the victim and a business-ending event for the company.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.35",
@@ -626,7 +718,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Every security team has blind spots. An independent review (like a Pentest) is a 'reality check' that finds the gaps you became too familiar to see. It\u2019s the difference between 'thinking' you're secure and 'knowing' you are.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.36",
@@ -639,7 +733,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Policies only matter if they are followed. Constant internal compliance checks ensure that security isn't just a 'once-a-year' audit exercise, but a continuous operational reality.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 },
                 {
                     "control_id": "5.37",
@@ -652,7 +748,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "The 'Bus Factor': If your lead sysadmin is hit by a bus tomorrow, can the rest of the team still patch the firewall? Documented SOPs prevent 'Tribal Knowledge' from being a single point of failure.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC3, CC4",
+                    "gdpr_mapping": "Art. 32"
                 }
             ]
         },
@@ -673,7 +771,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "**Risk:** Hiring an insider threat or someone with a fraudulent history. | **Impact:** Data theft, sabotage, or financial embezzlement by a trusted employee. | **Guidance:** Background checks are a low-cost, high-impact 'Trust but Verify' control that screens out high-risk individuals before they touch your data.",
                     "risk_impact": 3,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC2",
+                    "gdpr_mapping": "Art. 28, 29"
                 },
                 {
                     "control_id": "6.2",
@@ -686,7 +786,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "If a security expectation isn't in the contract, it's very hard to enforce in court. Defining responsibilities 'by law' protects the company's IP if an employee decides to leak data to a competitor.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC2",
+                    "gdpr_mapping": "Art. 28, 29"
                 },
                 {
                     "control_id": "6.3",
@@ -699,7 +801,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "14.1",
                     "expert_rationale": "**Risk:** Human vulnerability is the easiest entry point for attackers. | **Impact:** 90% of breaches start with a single phishing click. | **Guidance:** Transform your staff into a 'Human Firewall.' Continuous, bite-sized training is far more effective than a once-a-year compliance video.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC2",
+                    "gdpr_mapping": "Art. 28, 29"
                 },
                 {
                     "control_id": "6.4",
@@ -712,7 +816,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Rules without consequences are merely suggestions. If an employee intentionally disables the firewall or steals customer data, an clear disciplinary process ensures the company can terminate them legally and swiftly.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC2",
+                    "gdpr_mapping": "Art. 28, 29"
                 },
                 {
                     "control_id": "6.5",
@@ -725,7 +831,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "The day an employee leaves to join a competitor is the highest risk day for data theft. Reaffirming their NDA during the exit interview serves as a critical legal reminder that 'taking the customer list' is illegal.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC2",
+                    "gdpr_mapping": "Art. 28, 29"
                 },
                 {
                     "control_id": "6.6",
@@ -738,7 +846,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "An NDA is your baseline defensive shield. It defines what is 'secret' and sets the penalty for telling those secrets. Without it, your trade secrets are legally 'public domain.'",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC2",
+                    "gdpr_mapping": "Art. 28, 29"
                 },
                 {
                     "control_id": "6.7",
@@ -751,7 +861,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "The home office is the new front line. Remote work bypasses your office firewalls. Ensuring employees use corporate VPNs and encrypted disks is the only way to maintain a secure perimeter when everyone is remote.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC2",
+                    "gdpr_mapping": "Art. 28, 29"
                 },
                 {
                     "control_id": "6.8",
@@ -764,7 +876,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "17.1",
                     "expert_rationale": "Your employees see things your software won't. If an employee sees a stranger in the data center or a weird popup, you want them to report it immediately. A 'No-Fear Reporting' culture can stop a breach before it even starts.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC2",
+                    "gdpr_mapping": "Art. 28, 29"
                 }
             ]
         },
@@ -785,7 +899,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "If a stranger can walk off the street and into your server room, your digital firewalls don't matter. Physical perimeters are the first layer of defense, ensuring that only authorized personnel can even get near your critical hardware.",
                     "risk_impact": 5,
-                    "criticality": "Medium"
+                    "criticality": "Medium",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.2",
@@ -798,7 +914,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Identity verification shouldn't stop at the login screen. Physical entry controls (badges/biometrics) ensure that you know exactly who was in the office when a piece of hardware goes missing or a 'rubber ducky' is plugged into a workstation.",
                     "risk_impact": 3,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.3",
@@ -811,7 +929,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Insider threats are real. Just because someone works for the company doesn't mean they should have access to the HR files or the core switch. internal physical security creates 'compartmentalization,' limiting the damage one person can do.",
                     "risk_impact": 4,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.4",
@@ -824,7 +944,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Monitoring is the physical equivalent of 'logging.' If a theft occurs at 3 AM, CCTV allows you to identify the culprit. Without monitoring, physical security is entirely reactive and blind.",
                     "risk_impact": 3,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.5",
@@ -837,7 +959,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "A flood can be just as damaging as a hacker. Protecting against environmental threats is about 'Physical Availability.' If your only server room is in a basement with no water sensors, your business is one broken pipe away from bankruptcy.",
                     "risk_impact": 4,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.6",
@@ -850,7 +974,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "One photo of a server rack can reveal hardware versions, cable layouts, and even passwords on sticky notes. Banning cameras in secure areas is a standard 'Anti-Espionage' measure.",
                     "risk_impact": 3,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.7",
@@ -863,7 +989,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "An unlocked screen or a printed salary list on a desk is an 'Open Invitation' for data theft. Clear desk/screen policies ensure that sensitive info is only visible when an authorized person is actively working on it.",
                     "risk_impact": 2,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.8",
@@ -876,7 +1004,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "equipment siting is common sense turned into a control. You don't put your main database server directly under an AC unit that might leak, or next to a window where it can be seen\u2014or smashed\u2014from the street.",
                     "risk_impact": 2,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.9",
@@ -889,7 +1019,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Laptops are stolen every day. If the disk is encrypted, the thief has a $1,000 piece of hardware. If it's NOT encrypted, they have your entire company's source code, customer list, and financial history. Off-premises security is about 'Data Non-Disclosure' after physical loss.",
                     "risk_impact": 4,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.10",
@@ -902,7 +1034,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "3.1",
                     "expert_rationale": "One forgotten USB stick in a parking lot can lead to a 'Rubber Ducky' attack. One hard drive sold on eBay without being wiped can lead to a total data breach. Media management is about controlling every bit of 'removable' data.",
                     "risk_impact": 4,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.11",
@@ -915,7 +1049,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "A power surge can 'fry' a $50,000 firewall in a millisecond. Supporting utilities like UPS and surge protectors are the 'Life Support' for your hardware, ensuring continuity when the grid fails.",
                     "risk_impact": 4,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.12",
@@ -928,7 +1064,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "If your network cables are exposed in the hallway, an attacker can simply plug in a 'Packet Sniffer' and watch your network traffic. Cabling security ensures the 'Physical Integrity' of your data pathways.",
                     "risk_impact": 2,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.13",
@@ -941,7 +1079,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Hardware wears out. A server fan that fails because it was full of dust can cause a $10,000 CPU to melt. Proactive maintenance is a 'Reliability Control' that prevents unplanned outages.",
                     "risk_impact": 3,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 },
                 {
                     "control_id": "7.14",
@@ -954,7 +1094,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Old hardware is a goldmine for data recovery experts. If you don't 'Securely Dispose' of your old servers, you are essentially giving away your company secrets to whoever buys your old gear at an auction.",
                     "risk_impact": 3,
-                    "criticality": "Low"
+                    "criticality": "Low",
+                    "soc2_mapping": "CC6.4",
+                    "gdpr_mapping": "Art. 32(1)(b)"
                 }
             ]
         },
@@ -975,7 +1117,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "2.1",
                     "expert_rationale": "**Risk:** Malware, ransomware, and unauthorized access at the entry point. | **Impact:** Total encryption of work data or credential theft leading to network-wide compromise. | **Guidance:** Modern EDR/MDR is non-negotiable. It provides the visibility needed to stop an attack at the 'front door' before it moves laterally into your servers.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.2",
@@ -988,7 +1132,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "5.1",
                     "expert_rationale": "**Risk:** Unrestricted admin power being weaponized by an attacker. | **Impact:** A single 'Domain Admin' compromise allows a complete takeover of your company's identity and data. | **Guidance:** Implement 'Just-In-Time' (JIT) access. No one should be an admin 24/7; they should only 'elevate' when doing specific, approved work.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.3",
@@ -1001,7 +1147,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "3.1",
                     "expert_rationale": "Internal partitioning is key. Access restriction ensures that if your marketing intern's account is hacked, the attacker can't download your patent portfolio or payroll data. It's about containing the 'Blast Radius' of a compromise.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.4",
@@ -1014,7 +1162,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "3.3",
                     "expert_rationale": "Your source code is your secret sauce. If an attacker gets write access to your code, they can insert a backdoor and hide it in plain sight. Protecting code access is a 'Fundamental IP Control' for any tech-driven company.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.5",
@@ -1027,7 +1177,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "6.1",
                     "expert_rationale": "**Risk:** Credential theft via phishing or password spraying. | **Impact:** Passwords alone are no longer a sufficient defense against modern attackers. | **Guidance:** MFA is the single most effective control you can implement. It neutralizes 99% of bulk credential attacks. Without it, you are essentially leaving the keys under the mat.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.6",
@@ -1040,7 +1192,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "A crashed server is a 'Security Incident.' If your website goes down because the disk was full, you've failed the 'Availability' pillar of security. Capacity management is about predicting and preventing outages before they happen.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.7",
@@ -1053,7 +1207,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "10.1",
                     "expert_rationale": "Malware is the #1 tool for cybercriminals. Protection (using EDR and User Awareness) is about creating layers. If the user clicks the link, the EDR should catch the download. If the download happens, the sandbox should catch the execution.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.8",
@@ -1066,7 +1222,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "7.1",
                     "expert_rationale": "**Risk:** Exploitation of known technical weaknesses. | **Impact:** Hackers don't always find new exploits; they mostly use the ones you haven't patched yet. | **Guidance:** Vulnerability management is about 'Patching the Holes' before the rain starts. If you don't patch, you're essentially leaving your windows unlocked.",
                     "risk_impact": 10,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.9",
@@ -1079,7 +1237,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "4.1",
                     "expert_rationale": "Defaults are insecure. Configuration management (Hardening) is about 'Tightening the Screws.' It ensures that your servers aren't running services they don't need, which reduces your overall 'Attack Surface.'",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.10",
@@ -1092,7 +1252,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "3.11",
                     "expert_rationale": "Old data is a liability, not an asset. If you are hacked, you will be fined for every record stolen. if you delete old data you no longer need, that data can't be stolen. It's the ultimate 'Data Minimization' strategy.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.11",
@@ -1105,7 +1267,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "3.1",
                     "expert_rationale": "Developers don't need real credit card numbers to fix a bug. Data masking ensures that even if your 'Staging' environment is hacked, the attacker only gets useless, fake data instead of your real customer list.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.12",
@@ -1118,7 +1282,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "3.3",
                     "expert_rationale": "Accidents happen. DLP is the 'Safety Net' that stops an employee from accidentally emailing a sensitive spreadsheet to the wrong person. It watches for patterns like credit card numbers and stops the data before it leaves the building.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.13",
@@ -1131,7 +1297,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "11.1",
                     "expert_rationale": "A backup is only as good as its last successful 'Restore' test. If you aren't testing your backups, you don't actually have backups\u2014you just have 'Hope.' In a ransomware attack, your off-site backups are your only lifeline.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.14",
@@ -1144,7 +1312,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "11.1",
                     "expert_rationale": "Redundancy is about 'Resilience.' If your entire business runs on one server and that server dies, your business dies with it. high-availability architectures ensure that if one 'piece' breaks, the customer never even notices.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.15",
@@ -1157,7 +1327,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "8.1",
                     "expert_rationale": "Logs are the 'Black Box' of your infrastructure. Without logs, you are blind. You won't know HOW an attacker got in, WHAT they took, or IF they are still inside. Logging is the foundation of incident response.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.16",
@@ -1170,7 +1342,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "8.1",
                     "expert_rationale": "Logging is 'Recording'; Monitoring is 'Processing.' You need systems that watch your logs 24/7 and scream for help when they see an attacker. Passive logging without active monitoring is like recording a robbery but not calling the police.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.17",
@@ -1183,7 +1357,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "8.2",
                     "expert_rationale": "Forensics 101: You cannot reconstruct a hack if the Firewall says 2:00 PM and the Database says 2:05 PM. Clock synchronization is 'Evidence Integrity.' It\u2019s a boring control that becomes critical the second you have a real incident.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.18",
@@ -1196,7 +1372,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "5.1",
                     "expert_rationale": "Privileged utilities are 'Double-Edged Swords.' A tool that helps an admin fix a server is the same tool an attacker uses to dump passwords. Restricting these tools limits the 'Arsenal' an attacker has once they get inside.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.19",
@@ -1209,7 +1387,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "2.1",
                     "expert_rationale": "If a user can install whatever they want, you have NO control over your security. One 'Free PDF Converter' can contain malware that leads to a full breach. Controlling software installation is about maintaining 'System Integrity.'",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.20",
@@ -1222,7 +1402,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "12.1",
                     "expert_rationale": "Your network is your 'Wilderness.' Network security (Firewalls/IPS) is about 'Traffic Policing.' If you don't control the flow of data, an attacker can easily communicate with their Command & Control (C2) server once they are inside.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.21",
@@ -1235,7 +1417,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "12.1",
                     "expert_rationale": "DNS and VPNs are the 'Nervous System' of your network. If an attacker hijacks your DNS, they can make 'gmail.com' point to their own fake login page. Securing these core services is 'Critical Infrastructure' defense.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.22",
@@ -1248,7 +1432,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "12.2",
                     "expert_rationale": "Compartmentalization is the #1 rule of security. If your office printer is hacked, the attacker shouldn't be able to talk to your production database. Network segregation ensures that one compromise doesn't lead to a total downfall.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.23",
@@ -1261,7 +1447,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "9.2",
                     "expert_rationale": "90% of the internet is 'Noise' or 'Danger.' Web filtering is about 'Proactive Defense.' By blocking known malicious sites at the DNS level, you prevent the 'Initial Access' phase of a hack before the user even clicks the link.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.24",
@@ -1274,7 +1462,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "3.10",
                     "expert_rationale": "Encryption is the 'Final Defense.' If a thief steals a laptop, encryption makes the data useless. If a hacker sniffs your wifi, encryption makes the traffic unreadable. Modern business cannot exist securely without robust, industry-standard cryptography.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.25",
@@ -1287,7 +1477,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "16.1",
                     "expert_rationale": "It is 100x cheaper to fix a bug in design than it is to fix it after a breach. A Secure SDLC ensures that 'Security by Design' isn't just a buzzword, but a documented requirement for every piece of code your team writes.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.26",
@@ -1300,7 +1492,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "16.1",
                     "expert_rationale": "If you don't define 'Security' as a requirement, developers will prioritize 'Functionality' every time. Requiring security sign-off on new features ensures that the business is making an informed decision about the risk of new code.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.27",
@@ -1313,7 +1507,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Architecture is the 'Foundation.' A secure building with a weak foundation will still collapse. Secure engineering principles (like Defense in Depth) ensure that even if one layer fails, there are three more between the attacker and your data.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.28",
@@ -1326,7 +1522,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "16.1",
                     "expert_rationale": "Human developers make mistakes. Secure coding tools (SAST/DAST) act as an 'Automated Editor,' catching things like buffer overflows or hardcoded passwords before they ever reach a production server.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.29",
@@ -1339,7 +1537,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "16.10",
                     "expert_rationale": "Static code analysis (SAST) looks at the blueprint; Dynamic testing (DAST) looks at the finished house. You need both. Security testing in development ensures that you find the 'Functional' security bugs that static tools miss.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.30",
@@ -1352,7 +1552,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "15.1",
                     "expert_rationale": "When you outsource development, you are 'Exporting Risk.' If the agency has bad security habits, those habits become your vulnerabilities. Outsourced development controls ensure that external teams follow your internal security high-bars.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.31",
@@ -1365,7 +1567,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "12.1",
                     "expert_rationale": "Separation of concerns. A mistake in Dev should never take down your website. By separating environments, you ensure that 'The Real World' (Production) is isolated from 'The Playground' (Development).",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.32",
@@ -1378,7 +1582,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "Most outages are caused by 'Human Change.' Change management is the 'Guardrail.' It ensures that every change is reviewed, tested, and has a plan to 'Undo' it if things go wrong.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.33",
@@ -1391,7 +1597,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "If you use a copy of your production database for testing, you have just doubled your attack surface. If the test server is hacked, the breach is just as real. Never test with real PII if you can avoid it.",
                     "risk_impact": 8,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 },
                 {
                     "control_id": "8.34",
@@ -1404,7 +1612,9 @@ const THEHGTECH_GRC_DATA = {
                     "cis_mapping": "1.1",
                     "expert_rationale": "A vulnerability scan can sometimes crash a sensitive server. Protection during testing is about 'Harm Minimization.' You want to find the holes, but you don't want to bring the whole building down to do it.",
                     "risk_impact": 9,
-                    "criticality": "High"
+                    "criticality": "High",
+                    "soc2_mapping": "CC6, CC7",
+                    "gdpr_mapping": "Art. 32(1)(a)"
                 }
             ]
         }
