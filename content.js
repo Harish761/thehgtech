@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 24 2026",
+            "headline": "ADT Breach—ShinyHunters Threaten Data Leak Over Ransom",
+            "title": "ADT Confirms Data Breach Following ShinyHunters&#x27; Extortion Threat",
+            "content": "Home security giant ADT has confirmed a data breach after the ShinyHunters extortion group threatened to leak stolen data unless a ransom is paid. The breach involves sensitive customer information, raising concerns over privacy and security for ADT&#x27;s extensive user base. ShinyHunters, known for targeting large corporations, has a history of selling stolen data on dark web forums. ADT is currently investigating the extent of the breach and has advised customers to monitor their accounts for suspicious activity. This incident underscores the persistent threat posed by cyber extortion groups and the importance of robust security measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/adt-confirms-data-breach-after-shinyhunters-leak-threat/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Windows Update—New Controls to Minimize Forced Restarts",
+            "title": "Microsoft Introduces Enhanced Controls for Windows Update Installations",
+            "content": "Microsoft is enhancing Windows Update with new controls aimed at reducing the disruption caused by forced restarts. Users will now have more flexibility in scheduling updates, minimizing the impact on productivity and system availability. This update addresses longstanding user complaints about poorly timed restarts, which have been a source of frustration for both individual and enterprise users. By providing more control over update timing, Microsoft aims to improve user experience and system reliability. IT administrators should review the new settings to optimize update schedules in their environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-update-gets-new-controls-to-reduce-forced-restarts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Microsoft Entra—Passkeys Coming to Windows in April",
+            "title": "Microsoft to Launch Entra Passkeys for Passwordless Authentication on Windows",
+            "content": "Microsoft is set to roll out passkey support for Microsoft Entra-protected resources on Windows devices by late April. This move introduces phishing-resistant, passwordless authentication, enhancing security for enterprise users. Passkeys, which replace traditional passwords, are designed to prevent credential theft by eliminating the need for users to remember complex passwords. This update aligns with the broader industry trend towards passwordless security solutions, offering a more secure and user-friendly authentication method. Organizations using Microsoft Entra should prepare to integrate passkeys into their security protocols.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-roll-out-entra-passkeys-on-windows-in-late-april/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Vercel Breach Expands—More Accounts Compromised",
+            "title": "Vercel Identifies Additional Accounts Compromised in Context.ai-Linked Breach",
+            "content": "Vercel has discovered more customer accounts compromised in a breach linked to Context.ai, following an expanded investigation. The breach allowed unauthorized access to Vercel&#x27;s internal systems, raising concerns over data integrity and security. Vercel&#x27;s ongoing investigation aims to fully assess the breach&#x27;s scope and implement enhanced security measures. Affected customers are advised to review their account activity and update security credentials. This incident highlights the challenges of securing third-party integrations and the need for vigilant monitoring of external partnerships.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/vercel-finds-more-compromised-accounts.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Apple Patches iOS Flaw—FBI Could Recover Deleted Messages",
+            "title": "Apple Fixes iOS Vulnerability Allowing Recovery of Deleted Signal Messages",
+            "content": "Apple has released a fix for a vulnerability in iOS and iPadOS that allowed the recovery of deleted Signal messages. The flaw, identified as CVE-2026-28950, involved the Notification Services storing notifications marked for deletion, posing a privacy risk. This logging issue has been addressed with improved data handling practices. Users are urged to update their devices to the latest software version to ensure their data remains secure. This patch emphasizes Apple&#x27;s commitment to user privacy and the importance of timely updates to mitigate security risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/apple-patches-ios-flaw-that-stored.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Firestarter Malware—Survives Cisco Firewall Updates",
+            "title": "Firestarter Malware Persists Despite Cisco Firewall Security Patches",
+            "content": "Cybersecurity agencies in the U.S. and U.K. are warning about the persistence of Firestarter malware on Cisco Firepower and Secure Firewall devices. Despite updates to the Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD) software, the malware continues to evade detection. Firestarter&#x27;s resilience poses a significant threat to network security, potentially compromising sensitive data and operations. Organizations using affected Cisco devices should conduct thorough security assessments and consider additional protective measures. This situation highlights the evolving nature of malware threats and the need for robust, multi-layered defense strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/firestarter-malware-survives-cisco-firewall-updates-security-patches/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
             "headline": "Critical Flaws in CrowdStrike, Tenable—Patch Now",
             "title": "CrowdStrike and Tenable Patch Critical Vulnerabilities in Security Products",
             "content": "CrowdStrike and Tenable have released patches for critical vulnerabilities affecting their security products. CrowdStrike addressed a critical issue in its LogScale product, while Tenable fixed a high-severity flaw in its Nessus vulnerability scanner. These vulnerabilities could allow attackers to exploit systems, potentially leading to unauthorized access or data breaches. Security professionals using these products are urged to apply the patches immediately to mitigate risks. The swift response highlights the importance of regular updates and monitoring in maintaining cybersecurity defenses.",
@@ -76,15 +130,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 22 2026",
-            "headline": "Microsoft Fixes Critical ASP.NET Core Privilege Escalation Bug",
-            "title": "Microsoft Releases Patch for Critical ASP.NET Core CVE-2026-40372 Vulnerability",
-            "content": "Microsoft has issued out-of-band updates to patch a critical privilege escalation vulnerability in ASP.NET Core, identified as CVE-2026-40372. With a CVSS score of 9.1, this flaw allows attackers to gain elevated privileges on affected systems, posing a severe risk to organizations using this framework. The vulnerability was discovered by an anonymous researcher, prompting Microsoft to act swiftly to mitigate potential exploitation. Users of ASP.NET Core are strongly encouraged to apply the updates immediately to protect their systems from unauthorized access. This patch is part of Microsoft&#x27;s ongoing efforts to address security vulnerabilities promptly.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/microsoft-patches-critical-aspnet-core.html",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 23 2026",
             "headline": "Bitwarden CLI Trojanized—Supply Chain Attack Alert",
             "title": "Bitwarden CLI Password Manager Compromised in Supply Chain Attack",
@@ -92,54 +137,63 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4162865/bitwarden-cli-password-manager-trojanized-in-supply-chain-attack.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Vercel Attack Impact Worsens—More Customers, Systems Compromised",
-            "title": "Vercel Attack Fallout Expands to Additional Customers and Systems",
-            "content": "Vercel has reported further evidence of compromise affecting more customers and third-party systems following a recent cyberattack. The extent of the exposure remains undefined, but the potential downstream risk is significant, affecting numerous stakeholders. This development highlights the cascading impact of cyber incidents on interconnected digital ecosystems. Organizations using Vercel&#x27;s services should review their security measures and assess potential vulnerabilities. The incident serves as a reminder of the importance of comprehensive security strategies to mitigate the effects of such attacks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/vercel-attack-fallout-expands/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Bitwarden CLI npm Package Breach—Credentials at Risk",
-            "title": "Bitwarden CLI npm Package Compromised to Steal Developer Credentials",
-            "content": "The Bitwarden CLI npm package was briefly compromised after attackers uploaded a malicious version containing a credential-stealing payload. This breach could facilitate the spread of compromised credentials to other projects, posing a severe threat to developers and organizations using the package. Users are urged to verify their installations and replace any affected versions immediately. This incident highlights the vulnerabilities inherent in software supply chains and the critical need for rigorous security practices in package management. Developers should remain vigilant and employ tools to detect and prevent such compromises.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/bitwarden-cli-npm-package-compromised-to-steal-developer-credentials/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Rituals Data Breach—Customer Information Compromised",
-            "title": "Rituals Discloses Data Breach Affecting &quot;My Rituals&quot; Membership Database",
-            "content": "Dutch cosmetics giant Rituals has disclosed a data breach impacting its &quot;My Rituals&quot; membership database, resulting in the theft of customer personal information. The breach involved unauthorized access to sensitive data, including names and addresses, though the exact number of affected customers remains undisclosed. This incident underscores the increasing threat to consumer data in the retail sector, where personal information is a valuable target for cybercriminals. Rituals is currently notifying affected members and has implemented additional security measures to prevent future breaches. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precaution.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cosmetics-giant-rituals-discloses-data-breach-affecting-customers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "CISA Mandates Patch for Exploited BlueHammer Flaw",
-            "title": "CISA Orders Federal Agencies to Patch BlueHammer Zero-Day Exploit",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an emergency directive requiring U.S. federal agencies to patch a critical vulnerability in Microsoft Defender, known as BlueHammer. This privilege escalation flaw has been actively exploited in zero-day attacks, allowing attackers to gain unauthorized access to sensitive systems. The vulnerability affects the Security Account Manager (SAM) database, enabling the extraction of NTLM hashes and escalation to System privileges. Agencies are urged to apply the patch immediately to mitigate potential exploitation risks. This directive highlights the ongoing challenges in securing government infrastructure against sophisticated cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-microsoft-defender-flaw-exploited-in-zero-day-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Rituals Hack Exposes Customer Data—Names, Addresses Stolen",
-            "title": "Rituals Notifies Members of Data Breach Compromising Personal Information",
-            "content": "Rituals, a luxury cosmetics company, has informed members of its &quot;My Rituals&quot; program about a data breach that resulted in the unauthorized download of customer data, including names and addresses. This breach is part of a broader trend of cyberattacks targeting consumer data in the retail sector. The company is taking steps to enhance its security posture and prevent future incidents. Affected customers are encouraged to remain vigilant for phishing attempts and unauthorized transactions. Rituals&#x27; response includes notifying relevant authorities and collaborating with cybersecurity experts to investigate the breach.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/luxury-cosmetics-giant-rituals-discloses-data-breach/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 24 2026",
+            "headline": "DeepSeek V4—Longer Prompts, Greater Efficiency",
+            "title": "DeepSeek&#x27;s V4 Model Enhances Text Processing with Extended Prompt Capabilities",
+            "content": "Chinese AI firm DeepSeek has unveiled its latest model, V4, which significantly improves upon its predecessors by handling much longer text prompts. This advancement is attributed to a novel design that enhances the model&#x27;s efficiency in processing extensive text inputs. The release is particularly relevant for industries relying on large-scale data analysis and natural language processing. By offering near state-of-the-art intelligence at a fraction of the cost of competitors like Opus 4.7 and GPT-5.5, DeepSeek continues to challenge the dominance of established AI giants. Professionals utilizing AI for complex text analysis should consider integrating V4 into their workflows to leverage its enhanced capabilities.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Chained CVEs Grant Root Access to 13,000 Palo Alto Devices",
+            "title": "Exploited CVEs in Palo Alto Networks Devices Lead to Widespread Root Access",
+            "content": "During Operation Lunar Peek, attackers exploited two vulnerabilities in Palo Alto Networks devices, gaining root access to over 13,000 systems. The vulnerabilities, CVE-2024-0012 and CVE-2024-9474, were initially rated as manageable with CVSS scores of 9.3 and 6.9, respectively. However, when chained, they allowed unauthenticated remote administrative access, highlighting the potential risks of underestimating combined vulnerabilities. Organizations using affected Palo Alto Networks products should urgently review their security measures and apply patches to mitigate these threats. This incident underscores the importance of comprehensive vulnerability management in cybersecurity strategies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/cvss-triage-failure-chained-vulnerability-audit-security-directors",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "DeepSeek-V4—Affordable AI Rivals Opus and GPT",
+            "title": "DeepSeek-V4 Offers Cost-Effective AI Intelligence Comparable to Leading Models",
+            "content": "DeepSeek has launched its V4 model, delivering near state-of-the-art AI capabilities at just one-sixth the cost of leading models like Opus 4.7 and GPT-5.5. This release marks a significant milestone for the Chinese AI startup, which gained global attention with its open-source R1 model. V4&#x27;s affordability and performance make it an attractive option for businesses seeking powerful AI solutions without the high costs associated with proprietary models. As the AI landscape evolves, DeepSeek&#x27;s competitive pricing strategy could disrupt the market, prompting other companies to reconsider their pricing models.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Talent Tug-of-War: Meta and Thinking Machines",
+            "title": "Meta and Thinking Machines Exchange Talent in Competitive AI Landscape",
+            "content": "In a dynamic shift within the AI industry, Meta and Thinking Machines Lab are engaged in a talent exchange, with both companies recruiting from each other. While Meta has been actively poaching experts from Thinking Machines, the latter has also benefited from acquiring talent from Meta. This two-way street reflects the intense competition for skilled professionals in the AI sector, as companies strive to enhance their capabilities and maintain a competitive edge. Organizations should be aware of the ongoing talent dynamics and consider strategies to retain and attract top AI talent.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/24/metas-loss-is-thinking-machines-gain/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "ComfyUI Valuation Soars to $500M Amid Creator Demand",
+            "title": "ComfyUI Reaches $500M Valuation as Demand for AI Media Control Grows",
+            "content": "ComfyUI has achieved a $500 million valuation following a successful $30 million funding round, driven by increasing demand for tools that offer creators greater control over AI-generated media. The company&#x27;s platform empowers users to fine-tune AI outputs in image, video, and audio generation, addressing a growing need for customization in creative industries. As AI-generated content becomes more prevalent, platforms like ComfyUI are crucial for creators seeking to maintain artistic integrity and originality. Investors and developers should monitor this trend as the market for AI-driven creative tools continues to expand.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Google Commits Up to $40B to Anthropic—AI Compute Race Heats Up",
+            "title": "Google&#x27;s $40B Investment in Anthropic Signals AI Compute Arms Race",
+            "content": "Google has announced plans to invest up to $40 billion in Anthropic, focusing on both cash and compute resources. This move comes as AI companies compete to secure vast compute capacities, essential for developing advanced AI models. The investment follows the limited release of Anthropic&#x27;s Mythos model, which is geared towards cybersecurity applications. As the demand for powerful AI infrastructure grows, Google&#x27;s substantial commitment highlights the strategic importance of compute resources in maintaining a competitive edge. Industry stakeholders should consider the implications of this investment on the future landscape of AI development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 24 2026",
             "headline": "DeepSeek V4 Challenges US AI Giants—Open Source Revolution",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Anthropic has addressed concerns from developers and AI users regarding the perceived performance degradation of its Claude models. The company identified that recent changes to Claude&#x27;s harnesses and operating instructions were responsible for the so-called &quot;AI shrinkflation.&quot; Users had reported that Claude seemed less capable of sustaining complex tasks, sparking widespread discussion across platforms like GitHub and Reddit. Anthropic&#x27;s transparency in acknowledging and resolving these issues is crucial for maintaining trust among its user base. Developers relying on Claude for AI-driven applications should monitor updates and adjust their implementations accordingly. This incident highlights the challenges of maintaining AI model performance amidst continuous updates.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/technology/mystery-solved-anthropic-reveals-changes-to-claudes-harnesses-and-operating-instructions-likely-caused-degradation",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Claude Expands to Personal Apps—Spotify, Uber Eats, TurboTax",
-            "title": "Anthropic&#x27;s Claude Now Connects to Personal Apps Including Spotify and TurboTax",
-            "content": "Anthropic has expanded the capabilities of its AI, Claude, by enabling connections to a range of personal applications such as Spotify, Uber Eats, and TurboTax. This development allows users to integrate Claude into their daily routines, enhancing convenience and productivity. Previously, Claude supported work-related apps like Microsoft Office, but this expansion into personal apps marks a significant shift towards broader usability. Users can now leverage Claude for tasks ranging from entertainment to financial management. This move reflects a growing trend of AI integration into everyday life, offering seamless interaction across various platforms.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Sierra Acquires YC-Backed AI Startup Fragment",
-            "title": "Bret Taylor&#x27;s Sierra Acquires AI Startup Fragment from Y Combinator",
-            "content": "Sierra, an AI-driven customer service startup founded by Bret Taylor, has acquired Fragment, a French AI startup backed by Y Combinator. This strategic acquisition aims to enhance Sierra&#x27;s capabilities in delivering advanced AI solutions for customer service applications. Fragment&#x27;s innovative technologies will be integrated into Sierra&#x27;s platform, potentially improving service efficiency and customer satisfaction. The acquisition highlights the ongoing consolidation in the AI sector, where established companies are acquiring startups to bolster their technological edge. Stakeholders should watch for further developments as Sierra leverages Fragment&#x27;s expertise to expand its market presence.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Noscroll AI Bot—Automates Your Doomscrolling",
-            "title": "Noscroll Introduces AI Bot to Automate Internet Browsing and Reduce Doomscrolling",
-            "content": "Noscroll has launched an AI bot designed to automate the process of doomscrolling, aiming to alleviate the mental strain associated with excessive internet browsing. The bot reads and summarizes online content, allowing users to stay informed without the need for continuous scrolling. This innovation addresses the growing concern over digital well-being, offering a solution to manage information overload. By using AI to filter and present relevant content, Noscroll seeks to enhance user experience and promote healthier online habits. Professionals and tech enthusiasts should consider integrating such tools to optimize their digital consumption patterns.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/23/meet-noscroll-an-ai-bot-that-does-your-doomscrolling-for-you/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "StrictlyVC San Francisco—Last Call for Tickets",
-            "title": "StrictlyVC San Francisco Event to Unite VCs and Founders",
-            "content": "The first StrictlyVC event of 2026 is set to take place at the Sentro Filipino Cultural Center in San Francisco on April 30. This gathering promises to bring together venture capitalists and startup founders for a day of networking and discussions on the latest trends in technology and investment. Attendees will have the opportunity to engage with industry leaders and explore potential collaborations. With only a week left, interested participants are urged to secure their tickets promptly to avoid missing out on this pivotal event in the tech community.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/23/grab-a-ticket-today-the-first-strictlyvc-of-2026-kicks-off-in-just-a-week-in-san-francisco/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Delve&#x27;s Client Context AI Hit by Security Breach",
-            "title": "Context AI Security Incident Linked to Delve&#x27;s Compliance Services",
-            "content": "TechCrunch has confirmed that Delve, a compliance company, was responsible for the security certifications of Context AI, an AI agent training startup that recently disclosed a significant security incident. This breach raises concerns about the reliability of Delve&#x27;s compliance processes and the potential vulnerabilities in Context AI&#x27;s systems. The incident underscores the importance of rigorous security measures and thorough vetting of third-party compliance providers. Organizations relying on Delve&#x27;s services should reassess their security protocols and consider additional safeguards to protect sensitive data.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/23/another-customer-of-troubled-startup-delve-suffered-a-big-security-incident/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Automation Skepticism Grows Amid AI Advancements",
-            "title": "Public Sentiment Shifts Against Automation in AI Discourse",
-            "content": "In a recent episode of Decoder, a growing skepticism towards automation and AI&#x27;s pervasive influence was discussed. The concept of &quot;software brain&quot;—the tendency to fit all aspects of life into algorithms and databases—was explored as a critique of current AI trends. This perspective highlights a societal pushback against the unchecked expansion of automation, emphasizing the need for a balanced approach that considers human values and ethical implications. Tech leaders are encouraged to engage in dialogues that address these concerns and foster a more inclusive vision for AI&#x27;s role in society.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation",
             "relatedResources": []
         }
     ],
@@ -358,6 +358,50 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-29635",
+            "dateAdded": "Apr 24, 2026",
+            "vendor": "D-Link DIR-823X",
+            "description": "D-Link DIR-823X contains a command injection vulnerability that allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via t",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-29635",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2024-7399",
+            "dateAdded": "Apr 24, 2026",
+            "vendor": "Samsung MagicINFO 9 Server",
+            "description": "Samsung MagicINFO 9 Server contains a path traversal vulnerability that could allow an attacker to write arbitrary files as system authority.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7399",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2024-57728",
+            "dateAdded": "Apr 24, 2026",
+            "vendor": "SimpleHelp SimpleHelp",
+            "description": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-57728",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2024-57726",
+            "dateAdded": "Apr 24, 2026",
+            "vendor": "SimpleHelp SimpleHelp",
+            "description": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges t",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-57726",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-39987",
             "dateAdded": "Apr 23, 2026",
