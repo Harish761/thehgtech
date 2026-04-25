@@ -863,10 +863,20 @@
                 screenshotContainer.innerHTML = `
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
                         <h3 style="font-size: 0.9rem; color: var(--text-muted); margin: 0; text-transform: uppercase;">Raw Dark Web Evidence</h3>
-                        <span style="font-size: 0.65rem; color: #10B981; background: rgba(16, 185, 129, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid rgba(16, 185, 129, 0.3);" title="Image intentionally obfuscated upstream to prevent exposure of PII (Personally Identifiable Information) and comply with global privacy laws."><i class="fas fa-user-shield"></i> PII Scrubber Active</span>
+                        <span style="font-size: 0.65rem; color: #10B981; background: rgba(16, 185, 129, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid rgba(16, 185, 129, 0.3);" title="Image intentionally obfuscated upstream to prevent exposure of PII."><i class="fas fa-user-shield"></i> PII Scrubber Active</span>
                     </div>
-                    <div style="position: relative;">
-                        <img id="modalScreenshot" src="${incident.screenshot}" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                    <div id="ndrSafeBox" style="background: rgba(255, 61, 61, 0.05); border: 1px dashed rgba(255, 61, 61, 0.3); border-radius: 8px; padding: 2rem; text-align: center;">
+                        <i class="fas fa-eye-slash" style="font-size: 2rem; color: var(--accent-danger); margin-bottom: 1rem;"></i>
+                        <h4 style="color: var(--accent-danger); margin: 0 0 0.5rem 0;">NDR / Firewall Protection Active</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); max-width: 450px; margin: 0 auto 1.5rem auto; line-height: 1.5;">
+                            To prevent triggering corporate security tools (e.g., Darktrace, CrowdStrike) with automated requests to ransomware tracking infrastructure, this image has been blocked from auto-loading.
+                        </p>
+                        <button onclick="document.getElementById('ndrSafeBox').style.display='none'; document.getElementById('actualScreenshotWrapper').style.display='block'; document.getElementById('modalScreenshot').src='${incident.screenshot}';" style="background: rgba(255, 61, 61, 0.1); border: 1px solid rgba(255, 61, 61, 0.4); color: var(--accent-danger); padding: 0.6rem 1.2rem; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.8rem; transition: all 0.2s;">
+                            <i class="fas fa-exclamation-triangle"></i> Override & Load Image
+                        </button>
+                    </div>
+                    <div id="actualScreenshotWrapper" style="display:none; position: relative;">
+                        <img id="modalScreenshot" src="" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
                     </div>
                 `;
             } else {
