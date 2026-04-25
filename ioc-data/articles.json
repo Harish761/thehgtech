@@ -1,6 +1,27 @@
 {
   "articles": [
     {
+      "id": "claude-mythos-security-analysis-2026",
+      "title": "Deep Dive: Claude Mythos & The Autonomous Zero-Day Engine",
+      "date": "April 25, 2026",
+      "category": "AI Security",
+      "badge": "RESEARCH",
+      "author": "Harish G",
+      "excerpt": "A research-grade technical analysis of Anthropic's Claude Mythos (Project Glasswing). We separate the hype from the reality of autonomous AI vulnerability discovery, and what it means for SOC analysts.",
+      "image": "/images/articles/claude-mythos-security-analysis-2026.png",
+      "externalUrl": "articles/claude-mythos-security-analysis-2026.html",
+      "readTime": "15 min read",
+      "tags": [
+        "Claude Mythos",
+        "Project Glasswing",
+        "AI Security",
+        "Zero-Day",
+        "Anthropic",
+        "SOC",
+        "Vulnerability"
+      ]
+    },
+    {
       "id": "report-20260420",
       "title": "Weekly Threat Report: April 20, 2026",
       "date": "April 20, 2026",

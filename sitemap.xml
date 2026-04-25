@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- April 25, 2026 - Claude Mythos Security Analysis -->
+  <url>
+    <loc>https://thehgtech.com/articles/claude-mythos-security-analysis-2026.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/claude-mythos-security-analysis-2026.png</image:loc>
+      <image:title>Claude Mythos &amp; The Autonomous Zero-Day Engine</image:title>
+    </image:image>
+  </url>
+
   <!-- April 15, 2026 - Booking.com Breach 2026 -->
   <url>
     <loc>https://thehgtech.com/articles/booking-com-breach-2026.html</loc>
