@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 25 2026",
+            "headline": "CISA Adds 4 Flaws to KEV—May 2026 Federal Deadline",
+            "title": "CISA Updates KEV Catalog with Exploited Flaws in SimpleHelp and Samsung",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has expanded its Known Exploited Vulnerabilities (KEV) catalog by adding four new vulnerabilities, emphasizing their active exploitation. The affected systems include SimpleHelp, Samsung MagicINFO 9 Server, and D-Link DIR-823X series routers. This update mandates federal agencies to address these vulnerabilities by May 2026, underscoring the critical nature of these flaws. The inclusion of these vulnerabilities highlights ongoing threats to widely used systems, necessitating immediate attention from IT departments. Organizations should prioritize patching these vulnerabilities to mitigate potential security breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Rituals Data Breach—Customer Information Compromised",
+            "title": "Rituals Cosmetics Discloses Data Breach Impacting Customer Data",
+            "content": "Dutch cosmetics company Rituals has announced a data breach affecting its &quot;My Rituals&quot; membership database, resulting in the theft of customer personal information. The company has not disclosed the number of affected customers, but the breach underscores the vulnerability of consumer data in retail sectors. Rituals is currently investigating the incident and has urged customers to monitor their accounts for suspicious activity. This breach highlights the ongoing risks faced by companies in protecting consumer data from cyber threats. Customers are advised to change passwords and be vigilant against phishing attempts.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cosmetics-giant-rituals-discloses-data-breach-affecting-customers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 25 2026",
+            "headline": "GopherWhisper APT Exploits Legit Services in Gov Attacks",
+            "title": "China-Linked APT GopherWhisper Targets Governments with Go-Based Backdoors",
+            "content": "The advanced persistent threat (APT) group known as GopherWhisper, linked to China, has been identified using legitimate services to conduct attacks on government entities. The group employs multiple Go-based backdoors, alongside custom loaders and injectors, to infiltrate and maintain persistence within targeted networks. This sophisticated approach allows GopherWhisper to evade detection and complicates attribution efforts. The discovery of these tactics highlights the ongoing evolution of APT strategies and the need for robust threat detection mechanisms. Security teams should enhance monitoring of network traffic for unusual patterns indicative of such intrusions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/china-linked-apt-gopherwhisper-abuses-legitimate-services-in-government-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 25 2026",
+            "headline": "Pre-Stuxnet Malware &#x27;fast16&#x27; Targets Engineering Software",
+            "title": "Researchers Discover &#x27;fast16&#x27; Malware Predating Stuxnet Targeting Engineering Systems",
+            "content": "Cybersecurity researchers have uncovered &#x27;fast16&#x27;, a Lua-based malware predating the infamous Stuxnet worm, designed to target engineering software. According to SentinelOne, this previously undocumented malware aimed to disrupt industrial control systems, similar to Stuxnet&#x27;s attack on Iran&#x27;s nuclear facilities. The discovery of &#x27;fast16&#x27; provides insight into early cyber sabotage efforts against critical infrastructure. This finding underscores the importance of securing engineering software and industrial systems against sophisticated threats. Organizations in the industrial sector should review their security protocols to defend against such legacy and emerging threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/researchers-uncover-pre-stuxnet-fast16.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "BlackFile Group Fuels Vishing Attack Surge",
+            "title": "BlackFile Extortion Group Linked to Increase in Vishing Attacks",
+            "content": "The newly identified hacking group BlackFile has been connected to a series of vishing attacks targeting retail and hospitality sectors since February 2026. These attacks involve voice phishing techniques to deceive employees into divulging sensitive information, leading to data theft and extortion. The rise of BlackFile&#x27;s activities highlights the growing threat of social engineering tactics in cybercrime. Organizations are urged to enhance employee training on recognizing and responding to vishing attempts. Implementing robust authentication measures can also mitigate the risk of unauthorized access resulting from these attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-blackfile-extortion-gang-targets-retail-and-hospitality-orgs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Pack2TheRoot Flaw Grants Root Access on Linux",
+            "title": "Pack2TheRoot Vulnerability in PackageKit Allows Root Access on Linux",
+            "content": "A critical vulnerability named Pack2TheRoot has been identified in the PackageKit daemon, potentially allowing local Linux users to gain root access by installing or removing system packages. This flaw poses a significant risk to Linux systems, as it can be exploited to escalate privileges and compromise system integrity. Security experts recommend immediate patching and monitoring of Linux environments to prevent exploitation. The discovery of Pack2TheRoot underscores the need for continuous vigilance and timely updates in maintaining secure Linux operations. Administrators should apply available patches and review user permissions to mitigate this threat.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-pack2theroot-flaw-gives-hackers-root-linux-access/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 24 2026",
             "headline": "ADT Breach—ShinyHunters Threaten Data Leak Over Ransom",
             "title": "ADT Confirms Data Breach Following ShinyHunters&#x27; Extortion Threat",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "10,000+ Zimbra Servers at Risk—XSS Attacks Ongoing",
-            "title": "Over 10,000 Zimbra Servers Vulnerable to Persistent XSS Attacks",
-            "content": "More than 10,000 instances of the Zimbra Collaboration Suite (ZCS) are currently exposed to ongoing cross-site scripting (XSS) attacks. This vulnerability allows attackers to inject malicious scripts into web pages viewed by other users, potentially leading to data theft and unauthorized actions. The widespread exposure of these servers emphasizes the need for immediate action by administrators to secure their systems. Applying the latest security patches and implementing robust input validation can help mitigate these risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-says-zimbra-flaw-now-exploited-over-10k-servers-vulnerable/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Cybersecurity Faces New Challenges with Autonomous Agents",
-            "title": "Rethinking Cyber Defense in the Era of Autonomous Agents",
-            "content": "The cybersecurity landscape is evolving with the rise of autonomous agents capable of generating code and making decisions without human intervention. This shift necessitates a reevaluation of traditional defense strategies to address new vulnerabilities and threats. As these agents become more prevalent, organizations must adapt by implementing advanced monitoring and response systems. The integration of AI-driven security measures can help mitigate risks associated with autonomous technologies. Cybersecurity professionals should stay informed on these developments to effectively safeguard their networks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/why-cybersecurity-must-rethink-defense-in-the-age-of-autonomous-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Locked Shields 2026—41 Nations Enhance Cyber Defense",
-            "title": "Locked Shields 2026: Global Cyber Defense Exercise Expands to 41 Nations",
-            "content": "Locked Shields 2026, the world&#x27;s largest cyber defense exercise, has expanded to include 41 participating nations, up from just four in its inaugural event. This annual exercise, organized by the NATO Cooperative Cyber Defence Centre of Excellence, simulates large-scale cyber attacks to test and improve the resilience of national infrastructures. The growing participation reflects the increasing importance of international collaboration in cybersecurity. Participants gain valuable insights into threat detection, incident response, and strategic decision-making.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/locked-shields-2026-41-nations-strengthen-cyber-resilience-in-worlds-biggest-exercise/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Breeze Cache Exploit—WordPress Sites Vulnerable to File Upload Attacks",
-            "title": "Hackers Exploit Critical Vulnerability in Breeze Cache WordPress Plugin",
-            "content": "A critical vulnerability in the Breeze Cache plugin for WordPress is being actively exploited by hackers to upload arbitrary files to servers without authentication. This flaw poses a significant risk to websites using the plugin, potentially allowing attackers to execute malicious code remotely. The vulnerability underscores the ongoing threat to WordPress sites, which are frequent targets due to their widespread use. Administrators are urged to disable the plugin immediately and monitor for updates or patches from the developers. This incident highlights the importance of regular security audits and updates for all WordPress plugins to mitigate potential threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-file-upload-bug-in-breeze-cache-wordpress-plugin/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Trigona Ransomware—Custom Tool Accelerates Data Theft",
-            "title": "Trigona Ransomware Attacks Employ Custom Exfiltration Tool for Data Theft",
-            "content": "Recent Trigona ransomware attacks have been observed using a custom command-line tool designed to expedite data exfiltration from compromised environments. This tool enhances the efficiency of data theft operations, posing an increased threat to targeted organizations. The sophistication of this approach indicates a growing trend among ransomware groups to develop proprietary tools for more effective attacks. Organizations are advised to enhance their monitoring capabilities and employ robust data protection measures to mitigate the risk of data loss. Understanding these evolving tactics is crucial for maintaining cybersecurity resilience.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trigona-ransomware-attacks-use-custom-exfiltration-tool-to-steal-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Bitwarden CLI Trojanized—Supply Chain Attack Alert",
-            "title": "Bitwarden CLI Password Manager Compromised in Supply Chain Attack",
-            "content": "A new software supply chain attack has compromised the Bitwarden CLI, the command-line version of the popular open-source password manager. Researchers attribute this attack to a series of recent supply chain compromises linked to a threat group. The malicious version of the Bitwarden CLI could potentially expose sensitive user credentials, posing a significant risk to developers and organizations relying on this tool. Users are advised to verify the integrity of their installations and update to secure versions as soon as possible. This incident underscores the critical need for vigilance in monitoring software dependencies.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4162865/bitwarden-cli-password-manager-trojanized-in-supply-chain-attack.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 24 2026",
+            "headline": "Elon Musk Eyes $60B Cursor Acquisition Amid Apple CEO Shift",
+            "title": "Apple CEO Transition as Musk Considers $60B Cursor Purchase",
+            "content": "Apple is set to undergo a significant leadership change as Tim Cook prepares to step down as CEO in September, with hardware chief John Ternus poised to take over. This transition comes at a time when Elon Musk is reportedly interested in acquiring Cursor, an AI company, for a staggering $60 billion. Ternus will inherit a robust tech giant but faces a rapidly evolving ecosystem shaped by AI advancements and competitive pressures. The potential acquisition by Musk highlights the growing strategic importance of AI capabilities in tech leadership. Industry professionals should monitor these developments closely, as they could signal shifts in market dynamics and innovation trajectories.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/apples-new-ceo-and-why-elon-musk-wants-to-buy-cursor-for-60b/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "AI-Driven Strikes Double Military Targeting Efficiency in Iran",
+            "title": "Project Maven&#x27;s AI Systems Double US Military Targeting Efficiency in Iran",
+            "content": "The US military&#x27;s recent assault on Iran saw a dramatic increase in targeting efficiency, with over 1,000 targets struck in the first 24 hours—nearly double the scale of previous operations. This acceleration was enabled by AI systems developed under Project Maven, which streamline the targeting process. The deployment of these AI technologies marks a significant shift in military strategy, emphasizing the role of advanced algorithms in modern warfare. Defense professionals should consider the implications of AI integration in military operations, as it enhances precision and operational speed, potentially reshaping future conflict engagements.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "AI Memory Shortage Threatens Samsung&#x27;s Smartphone Profitability",
+            "title": "Samsung Faces Potential Smartphone Losses Amid AI-Driven Memory Shortage",
+            "content": "Samsung executives are expressing concern over potential financial losses in their smartphone division for the first time, driven by an AI-induced memory shortage. The scarcity of memory components, crucial for smartphone production, is impacting Samsung&#x27;s ability to meet market demand and maintain profitability. This development underscores the broader challenges tech companies face as AI technologies drive up demand for critical hardware components. Industry stakeholders should evaluate supply chain vulnerabilities and consider strategic adjustments to mitigate the impact of such shortages on production and revenue.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/gadgets/2026/04/samsung-may-be-bracing-for-first-ever-annual-loss-in-smartphone-business/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Mac Mini Shortages Spark eBay Price Surge Amid AI Demand",
+            "title": "AI Demand Drives Mac Mini Shortages and eBay Price Inflation",
+            "content": "Apple&#x27;s Mac Mini is experiencing unprecedented demand, leading to shortages and a surge in marked-up listings on eBay. The compact desktop has become increasingly popular for running local AI models and tools, driving up its value among tech enthusiasts and professionals. This trend illustrates the growing need for powerful yet accessible hardware capable of supporting advanced AI applications. Buyers should be cautious of inflated prices on secondary markets and consider alternative solutions for their AI computing needs.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/24/mac-mini-price-expensive-ebay-shortage-ai-memory/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Tim Cook&#x27;s Departure Marks New Era for Apple Leadership",
+            "title": "Tim Cook&#x27;s Legacy and the Implications of Apple&#x27;s Leadership Transition",
+            "content": "Tim Cook&#x27;s announcement to step down as Apple&#x27;s CEO marks the end of an era characterized by innovations like AirPods and Touch Bars. John Ternus, the anticipated successor, is expected to bring new perspectives to Apple&#x27;s leadership. This transition could lead to significant changes in Apple&#x27;s strategic direction, particularly as the company navigates the evolving tech landscape. Industry observers should watch for shifts in product development and market strategies as Ternus takes the helm, potentially influencing Apple&#x27;s future trajectory.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/917965/apple-ceo-cook-ternus-transition",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Apple&#x27;s Future Uncertain as Tim Cook Steps Down",
+            "title": "Tim Cook&#x27;s Departure Raises Questions About Apple&#x27;s Strategic Future",
+            "content": "With Tim Cook stepping down as CEO, Apple faces a pivotal moment in its corporate history. John Ternus, the incoming CEO, will inherit a company with a strong legacy but must navigate a tech ecosystem vastly different from the one Cook shaped. Key challenges include adapting to the App Store&#x27;s evolving revenue model and maintaining Apple&#x27;s competitive edge in a rapidly changing market. Professionals in the tech industry should consider the potential impacts of this leadership change on Apple&#x27;s innovation and market strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/tim-cook-is-stepping-down-what-happens-to-apple-now/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 24 2026",
             "headline": "DeepSeek V4—Longer Prompts, Greater Efficiency",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "As AI chatbots like ChatGPT become increasingly popular for financial advice, experts warn of potential pitfalls. Users should exercise caution due to the risk of inaccurate or incomplete information, which could lead to poor financial decisions. The inherent limitations of AI in understanding complex financial contexts and regulations are significant concerns. Financial professionals emphasize the importance of consulting qualified advisors alongside AI tools to ensure comprehensive and reliable advice. This trend highlights the need for enhanced AI training and oversight to improve the quality of chatbot-driven guidance.",
             "source": "Artificial Intelligence Latest",
             "sourceUrl": "https://www.wired.com/story/5-reasons-to-think-twice-before-using-chatgpt-for-financial-advice/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Uber CTO Joins StrictlyVC SF—Insights Await at April 30 Event",
-            "title": "Uber CTO Praveen Neppalli Naga to Speak at StrictlyVC SF Event",
-            "content": "Uber&#x27;s Chief Technology Officer, Praveen Neppalli Naga, is set to join the speaker lineup at the StrictlyVC San Francisco event on April 30. Hosted at the Sentro Filipino Cultural Center, the event promises to offer valuable insights into the latest technological advancements and operational strategies from industry leaders. Naga&#x27;s participation is expected to provide attendees with a deeper understanding of Uber&#x27;s approach to innovation and technology integration. This event is a must-attend for professionals seeking to stay ahead in the fast-evolving tech landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/24/uber-cto-praveen-neppalli-naga-joins-stacked-strictlyvc-sf-lineup-for-april-30-event/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Nothing&#x27;s AI Dictation Tool—100 Languages Supported",
-            "title": "Nothing Launches AI-Powered Dictation Tool with Multilingual Support",
-            "content": "Nothing has introduced a new AI-powered dictation tool capable of supporting over 100 languages, enhancing accessibility and productivity for users worldwide. This on-device tool leverages advanced AI algorithms to deliver accurate and efficient transcription services, catering to a diverse global audience. The tool&#x27;s multilingual capabilities position it as a versatile solution for businesses and individuals seeking seamless communication across language barriers. As AI-driven tools continue to evolve, this development underscores the growing importance of language inclusivity in technology.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/24/nothing-introduces-an-ai-powered-dictation-tool/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "DeepSeek&#x27;s V4 Model—Efficiency Boost Closes AI Gap",
-            "title": "DeepSeek&#x27;s V4 AI Model Narrows Gap with Leading Frontier Models",
-            "content": "DeepSeek has previewed its V4 AI model, claiming significant efficiency and performance improvements over its predecessor, V3.2. The architectural advancements in V4 bring it closer to matching the capabilities of leading frontier models, both open and closed-source, on reasoning benchmarks. This progress reflects DeepSeek&#x27;s commitment to enhancing AI performance while maintaining open-source accessibility. The model&#x27;s potential to rival established players could shift the competitive dynamics in the AI sector. Industry stakeholders should consider the implications of this development for future AI strategies and collaborations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Meta to Cut 8,000 Jobs—10% Workforce Reduction",
-            "title": "Meta Announces 10% Workforce Layoff and Closure of 6,000 Open Positions",
-            "content": "Meta is set to lay off approximately 10% of its workforce, translating to around 8,000 employees, as revealed in a memo by Chief People Officer Janelle Gale. The company will also close 6,000 open roles, signaling a significant restructuring effort. This move comes amidst ongoing challenges in the tech industry, where companies are optimizing operations to maintain profitability. The layoffs are expected to impact various departments, with a focus on streamlining operations and enhancing efficiency. Employees and stakeholders are advised to stay informed about further announcements from Meta regarding the restructuring process. This development highlights the broader trend of tech giants adjusting their workforce in response to market pressures.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "GPT-5.5 Bio Bug Bounty—Earn Up to $25,000",
-            "title": "OpenAI Launches GPT-5.5 Bio Bug Bounty for Bio Safety Risks",
-            "content": "OpenAI has announced a bug bounty program for its GPT-5.5 Bio model, offering rewards up to $25,000 for identifying universal jailbreaks related to bio safety risks. This initiative invites red teams to rigorously test the model&#x27;s resilience against potential exploits that could compromise bio safety. The program underscores OpenAI&#x27;s commitment to ensuring the security and reliability of its AI models, particularly in sensitive applications. Participants are encouraged to explore vulnerabilities that could lead to misuse or unintended consequences. This proactive approach aims to enhance the model&#x27;s robustness and safeguard against potential threats in bioinformatics and related fields.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Anthropic Identifies Cause of Claude&#x27;s Performance Issues",
-            "title": "Anthropic Reveals Changes to Claude&#x27;s Instructions Caused Performance Degradation",
-            "content": "Anthropic has addressed concerns from developers and AI users regarding the perceived performance degradation of its Claude models. The company identified that recent changes to Claude&#x27;s harnesses and operating instructions were responsible for the so-called &quot;AI shrinkflation.&quot; Users had reported that Claude seemed less capable of sustaining complex tasks, sparking widespread discussion across platforms like GitHub and Reddit. Anthropic&#x27;s transparency in acknowledging and resolving these issues is crucial for maintaining trust among its user base. Developers relying on Claude for AI-driven applications should monitor updates and adjust their implementations accordingly. This incident highlights the challenges of maintaining AI model performance amidst continuous updates.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/mystery-solved-anthropic-reveals-changes-to-claudes-harnesses-and-operating-instructions-likely-caused-degradation",
             "relatedResources": []
         }
     ],
