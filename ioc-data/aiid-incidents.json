@@ -41,6 +41,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1466",
+      "incident_id": 1466,
+      "title": "Network of Allegedly Fake Facebook Profiles with Purportedly AI-Generated Images Amplified Posts by ",
+      "date": "2026-04-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1456",
       "incident_id": 1456,
       "title": "Video with Reportedly AI-Generated Audio Purported to Show Croatian Footballer Luka Modri\u0107 Endorsing",
@@ -1063,20 +1071,12 @@
       "date": "2026-01-31",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1348",
-      "incident_id": 1348,
-      "title": "Purported Deepfake Explicit Images of Middle School Students Allegedly Created and Circulated Using ",
-      "date": "2026-01-24",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
     "total": 134,
-    "last7Days": 15,
-    "last30Days": 37
+    "last7Days": 16,
+    "last30Days": 38
   },
-  "lastUpdated": "2026-04-25T02:31:42.547426+05:30"
+  "lastUpdated": "2026-04-25T08:57:37.287772+05:30"
 }
