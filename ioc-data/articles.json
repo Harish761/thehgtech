@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "claude-mythos-security-analysis-2026",
-      "title": "Deep Dive: Claude Mythos & The Autonomous Zero-Day Engine",
+      "title": "Can Claude Mythos Autonomously Exploit Zero-Days? A Security Analysis",
       "date": "April 25, 2026",
       "category": "AI Security",
       "badge": "RESEARCH",
