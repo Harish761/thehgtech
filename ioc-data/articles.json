@@ -10,7 +10,7 @@
       "excerpt": "A research-grade technical analysis of Anthropic's Claude Mythos (Project Glasswing). We separate the hype from the reality of autonomous AI vulnerability discovery, and what it means for SOC analysts.",
       "image": "/images/articles/claude-mythos-security-analysis-2026.png",
       "externalUrl": "articles/claude-mythos-security-analysis-2026.html",
-      "readTime": "15 min read",
+      "readTime": "20 min read",
       "tags": [
         "Claude Mythos",
         "Project Glasswing",
