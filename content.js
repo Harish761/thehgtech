@@ -4,21 +4,66 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 23 2026",
+            "headline": "WordPress Breeze Cache Exploit—Hackers Upload Files Unchecked",
+            "title": "Critical Vulnerability in Breeze Cache Plugin Allows Unauthorized File Uploads",
+            "content": "Hackers are actively exploiting a critical vulnerability in the Breeze Cache plugin for WordPress, allowing unauthorized file uploads to servers. This flaw, identified in version 1.2.0, enables attackers to bypass authentication mechanisms and execute arbitrary code. The vulnerability poses a significant risk to websites using this plugin, potentially leading to data breaches and server compromise. WordPress site administrators are urged to disable the plugin immediately and apply any available patches. This incident underscores the persistent risks associated with third-party plugins in content management systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-file-upload-bug-in-breeze-cache-wordpress-plugin/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Trigona Ransomware Uses Custom Tool for Faster Data Theft",
+            "title": "Trigona Ransomware Employs Custom Exfiltration Tool in Recent Attacks",
+            "content": "Recent Trigona ransomware attacks have been observed utilizing a custom command-line tool designed to expedite data exfiltration from compromised environments. This tool enhances the attackers&#x27; ability to steal sensitive information rapidly, increasing the threat to affected organizations. Trigona&#x27;s approach highlights the evolving sophistication of ransomware operations, emphasizing the need for robust data protection strategies. Organizations are advised to strengthen their network defenses and monitor for unusual data transfer activities. This development is part of a broader trend of ransomware groups enhancing their technical capabilities to maximize impact.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trigona-ransomware-attacks-use-custom-exfiltration-tool-to-steal-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 25 2026",
+            "headline": "Microsoft Revamps Windows Insider Program—Boosts Performance Focus",
+            "title": "Microsoft Overhauls Windows Insider Program to Address Performance Issues",
+            "content": "Microsoft has announced a revamp of its Windows Insider Program, aiming to tackle performance and reliability concerns in Windows 11. The updated program introduces new testing channels and feedback mechanisms to better address user issues. This move is part of Microsoft&#x27;s broader strategy to enhance the operating system&#x27;s stability and user experience. Windows 11 users and developers are encouraged to participate in the program to help identify and resolve potential problems early. The initiative reflects Microsoft&#x27;s commitment to continuous improvement and user-centric development.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-revamped-windows-insider-program/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 25 2026",
+            "headline": "UNC6692 Deploys &quot;Snow&quot; Malware via Microsoft Teams",
+            "title": "UNC6692 Uses Microsoft Teams for &quot;Snow&quot; Malware Distribution",
+            "content": "A threat group identified as UNC6692 is leveraging Microsoft Teams to distribute a new malware suite named &quot;Snow.&quot; This suite includes a browser extension, a tunneler, and a backdoor, deployed through sophisticated social engineering tactics. The use of Microsoft Teams as a delivery vector highlights the increasing exploitation of collaboration tools by cybercriminals. Organizations using Teams should enhance their security protocols and educate employees on recognizing phishing attempts. This development underscores the need for vigilance as threat actors continue to innovate in their attack methods.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/threat-actor-uses-microsoft-teams-to-deploy-new-snow-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Bitwarden CLI Compromised—Supply Chain Attack Alert",
+            "title": "Malicious Version of Bitwarden CLI Found in Supply Chain Attack",
+            "content": "Researchers have identified a supply chain attack that resulted in a trojanized version of Bitwarden CLI, the command-line interface of the popular open-source password manager. This attack is linked to a series of recent supply chain compromises attributed to an unidentified group. The malicious version poses a significant risk to users, potentially exposing sensitive credentials. Users of Bitwarden CLI should verify their installations and consider alternative security measures until a verified clean version is available. This incident highlights the ongoing vulnerabilities in software supply chains.",
+            "source": "New US House privacy bills raise hard questions about enterprise data collection | CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4162865/bitwarden-cli-password-manager-trojanized-in-supply-chain-attack.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Vercel Attack Expands—More Customers and Systems Affected",
+            "title": "Vercel Attack Fallout Widens, Affecting Additional Customers and Systems",
+            "content": "Vercel has reported further evidence of compromise across its customer base following a recent cyberattack. The extent of exposure remains undefined, but it poses significant downstream risks to affected parties. The company is actively investigating the breach and working to mitigate its impact. Customers using Vercel&#x27;s services should review their security measures and monitor for any signs of unauthorized access. This incident is part of a growing trend of attacks targeting cloud service providers, emphasizing the need for enhanced security practices in cloud environments.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/vercel-attack-fallout-expands/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 25 2026",
             "headline": "CISA Adds 4 Flaws to KEV—May 2026 Federal Deadline",
             "title": "CISA Updates KEV Catalog with Exploited Flaws in SimpleHelp and Samsung",
             "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has expanded its Known Exploited Vulnerabilities (KEV) catalog by adding four new vulnerabilities, emphasizing their active exploitation. The affected systems include SimpleHelp, Samsung MagicINFO 9 Server, and D-Link DIR-823X series routers. This update mandates federal agencies to address these vulnerabilities by May 2026, underscoring the critical nature of these flaws. The inclusion of these vulnerabilities highlights ongoing threats to widely used systems, necessitating immediate attention from IT departments. Organizations should prioritize patching these vulnerabilities to mitigate potential security breaches.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Rituals Data Breach—Customer Information Compromised",
-            "title": "Rituals Cosmetics Discloses Data Breach Impacting Customer Data",
-            "content": "Dutch cosmetics company Rituals has announced a data breach affecting its &quot;My Rituals&quot; membership database, resulting in the theft of customer personal information. The company has not disclosed the number of affected customers, but the breach underscores the vulnerability of consumer data in retail sectors. Rituals is currently investigating the incident and has urged customers to monitor their accounts for suspicious activity. This breach highlights the ongoing risks faced by companies in protecting consumer data from cyber threats. Customers are advised to change passwords and be vigilant against phishing attempts.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cosmetics-giant-rituals-discloses-data-breach-affecting-customers/",
             "relatedResources": []
         },
         {
@@ -85,24 +130,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 23 2026",
-            "headline": "Vercel Breach Expands—More Accounts Compromised",
-            "title": "Vercel Identifies Additional Accounts Compromised in Context.ai-Linked Breach",
-            "content": "Vercel has discovered more customer accounts compromised in a breach linked to Context.ai, following an expanded investigation. The breach allowed unauthorized access to Vercel&#x27;s internal systems, raising concerns over data integrity and security. Vercel&#x27;s ongoing investigation aims to fully assess the breach&#x27;s scope and implement enhanced security measures. Affected customers are advised to review their account activity and update security credentials. This incident highlights the challenges of securing third-party integrations and the need for vigilant monitoring of external partnerships.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/vercel-finds-more-compromised-accounts.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Apple Patches iOS Flaw—FBI Could Recover Deleted Messages",
-            "title": "Apple Fixes iOS Vulnerability Allowing Recovery of Deleted Signal Messages",
-            "content": "Apple has released a fix for a vulnerability in iOS and iPadOS that allowed the recovery of deleted Signal messages. The flaw, identified as CVE-2026-28950, involved the Notification Services storing notifications marked for deletion, posing a privacy risk. This logging issue has been addressed with improved data handling practices. Users are urged to update their devices to the latest software version to ensure their data remains secure. This patch emphasizes Apple&#x27;s commitment to user privacy and the importance of timely updates to mitigate security risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/apple-patches-ios-flaw-that-stored.html",
-            "relatedResources": []
-        },
-        {
             "date": "Apr 24 2026",
             "headline": "Firestarter Malware—Survives Cisco Firewall Updates",
             "title": "Firestarter Malware Persists Despite Cisco Firewall Security Patches",
@@ -110,36 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/firestarter-malware-survives-cisco-firewall-updates-security-patches/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Critical Flaws in CrowdStrike, Tenable—Patch Now",
-            "title": "CrowdStrike and Tenable Patch Critical Vulnerabilities in Security Products",
-            "content": "CrowdStrike and Tenable have released patches for critical vulnerabilities affecting their security products. CrowdStrike addressed a critical issue in its LogScale product, while Tenable fixed a high-severity flaw in its Nessus vulnerability scanner. These vulnerabilities could allow attackers to exploit systems, potentially leading to unauthorized access or data breaches. Security professionals using these products are urged to apply the patches immediately to mitigate risks. The swift response highlights the importance of regular updates and monitoring in maintaining cybersecurity defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vulnerabilities-patched-in-crowdstrike-tenable-products/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Bitwarden NPM Package Compromised in Supply Chain Attack",
-            "title": "Bitwarden NPM Package Targeted in Supply Chain Attack by TeamPCP",
-            "content": "A supply chain attack has compromised the Bitwarden NPM package, linked to a new campaign by the threat actor group TeamPCP. The attack involves the Shai-Hulud worm, which has been used to infiltrate software supply chains, posing significant risks to developers and end-users. This incident underscores the growing threat of supply chain attacks, where malicious actors target dependencies to spread malware. Developers using the affected package should verify their installations and consider implementing additional security measures, such as dependency scanning and monitoring.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/bitwarden-npm-package-hit-in-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "LMDeploy Flaw Exploited Within Hours—Patch Urgently",
-            "title": "High-Severity LMDeploy Vulnerability CVE-2026-33626 Exploited Rapidly",
-            "content": "A high-severity vulnerability in LMDeploy, an open-source toolkit for managing large language models (LLMs), has been actively exploited within 13 hours of its disclosure. The flaw, identified as CVE-2026-33626, involves a server-side request forgery (SSRF) vulnerability with a CVSS score of 7.5. This rapid exploitation highlights the critical need for immediate patching and vigilant monitoring of open-source tools. Organizations using LMDeploy should prioritize updating to the latest version to protect against potential data breaches and unauthorized access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 25 2026",
+            "headline": "Anthropic Tests AI Commerce—Agents Trade Real Goods",
+            "title": "Anthropic Launches AI Agent Marketplace for Real-World Transactions",
+            "content": "Anthropic has unveiled a groundbreaking experiment, creating a marketplace where AI agents autonomously conduct commerce as both buyers and sellers. These agents successfully negotiated real deals involving tangible goods and monetary transactions. This initiative explores the potential of AI in automating commercial activities, potentially transforming e-commerce landscapes. The experiment highlights AI&#x27;s growing capabilities in decision-making and negotiation, raising questions about future applications and ethical considerations. Professionals should monitor developments in AI-driven commerce for potential integration and security implications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 25 2026",
+            "headline": "OpenAI CEO Apologizes—Missed Alert on Shooting Suspect",
+            "title": "OpenAI CEO Issues Apology for Oversight in Tumbler Ridge Incident",
+            "content": "Sam Altman, CEO of OpenAI, has issued a public apology to the residents of Tumbler Ridge, Canada, acknowledging the company&#x27;s failure to notify law enforcement about a suspect involved in a recent mass shooting. This oversight has sparked discussions on the ethical responsibilities of AI companies in monitoring and reporting potential threats. OpenAI&#x27;s lapse underscores the need for robust protocols in AI systems to prevent similar incidents. Security professionals should consider the implications of AI in public safety and the importance of integrating alert mechanisms in AI platforms.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Meta to Cut 8,000 Jobs—10% Workforce Reduction",
+            "title": "Meta Announces 10% Workforce Reduction, Affecting 8,000 Employees",
+            "content": "Meta has announced plans to reduce its workforce by 10%, resulting in approximately 8,000 job cuts, as revealed in a memo from Chief People Officer Janelle Gale. Additionally, the company will close around 6,000 open positions. This decision reflects ongoing challenges in the tech industry, as companies streamline operations in response to economic pressures. The layoffs will impact various departments, emphasizing the need for professionals to stay adaptable in a rapidly evolving job market. Industry observers should watch for potential shifts in Meta&#x27;s strategic focus following these reductions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "GPT-5.5 Bio Bug Bounty—$25K Rewards for Jailbreaks",
+            "title": "OpenAI Launches GPT-5.5 Bio Bug Bounty for Bio Safety Risks",
+            "content": "OpenAI has introduced the GPT-5.5 Bio Bug Bounty, a red-teaming challenge aimed at identifying universal jailbreaks that pose bio safety risks. Participants can earn rewards of up to $25,000 for successful discoveries. This initiative highlights OpenAI&#x27;s commitment to ensuring the safety and security of its AI models, particularly in sensitive applications like biotechnology. Security professionals and researchers are encouraged to participate, contributing to the development of robust safeguards against potential misuse of AI technologies.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 25 2026",
+            "headline": "Maine Governor Vetoes Data Center Moratorium",
+            "title": "Maine Governor Rejects Statewide Moratorium on New Data Centers",
+            "content": "Maine&#x27;s governor has vetoed L.D. 307, a proposed bill that would have established the nation&#x27;s first statewide moratorium on new data centers until November 1, 2027. This decision maintains the state&#x27;s openness to data center development, reflecting the growing demand for data infrastructure. The veto is significant for tech companies planning expansions, as it ensures continued opportunities for investment and development in Maine. Stakeholders should consider the implications for regional data strategies and potential regulatory shifts in other states.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/25/maines-governor-vetoes-data-center-moratorium/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 25 2026",
+            "headline": "Cohere Merges with Aleph Alpha—Backed by Schwarz Group",
+            "title": "Cohere Acquires Aleph Alpha to Offer Sovereign AI Solutions",
+            "content": "Canadian AI startup Cohere is merging with Germany-based Aleph Alpha, supported by the Schwarz Group, owner of Lidl. This strategic acquisition aims to provide a sovereign AI alternative in a market dominated by American tech giants. With governmental support, the merger seeks to enhance AI capabilities and foster innovation within Europe and Canada. This move highlights the growing trend of regional collaborations to counterbalance US-centric AI dominance. Industry professionals should evaluate the impact on global AI competition and potential opportunities for cross-border partnerships.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 24 2026",
             "headline": "Elon Musk Eyes $60B Cursor Acquisition Amid Apple CEO Shift",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "DeepSeek has launched its V4 model, delivering near state-of-the-art AI capabilities at just one-sixth the cost of leading models like Opus 4.7 and GPT-5.5. This release marks a significant milestone for the Chinese AI startup, which gained global attention with its open-source R1 model. V4&#x27;s affordability and performance make it an attractive option for businesses seeking powerful AI solutions without the high costs associated with proprietary models. As the AI landscape evolves, DeepSeek&#x27;s competitive pricing strategy could disrupt the market, prompting other companies to reconsider their pricing models.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Talent Tug-of-War: Meta and Thinking Machines",
-            "title": "Meta and Thinking Machines Exchange Talent in Competitive AI Landscape",
-            "content": "In a dynamic shift within the AI industry, Meta and Thinking Machines Lab are engaged in a talent exchange, with both companies recruiting from each other. While Meta has been actively poaching experts from Thinking Machines, the latter has also benefited from acquiring talent from Meta. This two-way street reflects the intense competition for skilled professionals in the AI sector, as companies strive to enhance their capabilities and maintain a competitive edge. Organizations should be aware of the ongoing talent dynamics and consider strategies to retain and attract top AI talent.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/24/metas-loss-is-thinking-machines-gain/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "ComfyUI Valuation Soars to $500M Amid Creator Demand",
-            "title": "ComfyUI Reaches $500M Valuation as Demand for AI Media Control Grows",
-            "content": "ComfyUI has achieved a $500 million valuation following a successful $30 million funding round, driven by increasing demand for tools that offer creators greater control over AI-generated media. The company&#x27;s platform empowers users to fine-tune AI outputs in image, video, and audio generation, addressing a growing need for customization in creative industries. As AI-generated content becomes more prevalent, platforms like ComfyUI are crucial for creators seeking to maintain artistic integrity and originality. Investors and developers should monitor this trend as the market for AI-driven creative tools continues to expand.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/24/comfyui-hits-500m-valuation-as-creators-seek-more-control-over-ai-generated-media/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Google Commits Up to $40B to Anthropic—AI Compute Race Heats Up",
-            "title": "Google&#x27;s $40B Investment in Anthropic Signals AI Compute Arms Race",
-            "content": "Google has announced plans to invest up to $40 billion in Anthropic, focusing on both cash and compute resources. This move comes as AI companies compete to secure vast compute capacities, essential for developing advanced AI models. The investment follows the limited release of Anthropic&#x27;s Mythos model, which is geared towards cybersecurity applications. As the demand for powerful AI infrastructure grows, Google&#x27;s substantial commitment highlights the strategic importance of compute resources in maintaining a competitive edge. Industry stakeholders should consider the implications of this investment on the future landscape of AI development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "DeepSeek V4 Challenges US AI Giants—Open Source Revolution",
-            "title": "DeepSeek Unveils V4 AI Model to Compete with US Rivals",
-            "content": "Chinese AI firm DeepSeek has unveiled a preview of its latest AI model, V4, which the company claims can rival closed-source systems from US tech giants like Anthropic, Google, and OpenAI. The open-source model represents a significant leap from its predecessor, offering enhanced performance and efficiency. This development is poised to intensify the competitive landscape in AI, particularly as open-source models gain traction for their transparency and collaborative potential. Industry experts suggest that V4 could democratize access to cutting-edge AI capabilities, challenging the dominance of proprietary models. Stakeholders in AI development should monitor this evolution closely, as it may influence future innovation and collaboration strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/918035/deepseek-preview-v4-ai-model",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "85% Test AI Agents—Only 5% Trust for Production",
-            "title": "Trust Issues Stall AI Agent Deployment Despite Widespread Testing",
-            "content": "A staggering 85% of enterprises are piloting AI agents, yet only 5% have transitioned these agents into production, according to Cisco President Jeetu Patel at the RSA Conference 2026. The primary barrier is trust, as organizations remain cautious about the reliability and security of AI-driven decisions. This hesitancy underscores a critical gap between AI capabilities and enterprise confidence, highlighting the need for robust validation and transparency in AI systems. Companies are advised to focus on building trust through rigorous testing and clear accountability frameworks to harness AI&#x27;s full potential. As AI continues to evolve, bridging this trust gap will be essential for widespread adoption.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/85-of-enterprises-are-running-ai-agents-only-5-trust-them-enough-to-ship",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Think Twice: ChatGPT for Financial Advice Raises Concerns",
-            "title": "Caution Urged When Using ChatGPT for Financial Guidance",
-            "content": "As AI chatbots like ChatGPT become increasingly popular for financial advice, experts warn of potential pitfalls. Users should exercise caution due to the risk of inaccurate or incomplete information, which could lead to poor financial decisions. The inherent limitations of AI in understanding complex financial contexts and regulations are significant concerns. Financial professionals emphasize the importance of consulting qualified advisors alongside AI tools to ensure comprehensive and reliable advice. This trend highlights the need for enhanced AI training and oversight to improve the quality of chatbot-driven guidance.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/5-reasons-to-think-twice-before-using-chatgpt-for-financial-advice/",
             "relatedResources": []
         }
     ],
