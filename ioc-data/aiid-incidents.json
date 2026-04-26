@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1467",
+      "incident_id": 1467,
+      "title": "South Africa Draft National AI Policy Reportedly Included Fictitious References Believed to Be AI Ha",
+      "date": "2026-04-25",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1468",
+      "incident_id": 1468,
+      "title": "Purportedly AI-Enhanced Images of Iranian Women Protesters Were Reportedly Spread With Unverified Ex",
+      "date": "2026-04-25",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1461",
       "incident_id": 1461,
       "title": "Purportedly AI-Manipulated Medical Scam Advertisement Reportedly Used Bulgarian TV Host and Physicia",
@@ -1074,9 +1090,9 @@
     }
   ],
   "stats": {
-    "total": 134,
-    "last7Days": 11,
-    "last30Days": 38
+    "total": 136,
+    "last7Days": 13,
+    "last30Days": 40
   },
-  "lastUpdated": "2026-04-26T02:23:26.137453+05:30"
+  "lastUpdated": "2026-04-26T09:21:02.516390+05:30"
 }
