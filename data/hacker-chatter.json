@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-04-26T05:24:28.275843",
-  "total_incidents": 27545,
+  "last_updated": "2026-04-26T15:08:24.048344",
+  "total_incidents": 27552,
   "incidents": [
+    {
+      "id": "lockbit5_studiopiu.net",
+      "victim_name": "studiopiu.net",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-26 09:56:07.556475",
+      "industry": "Consumer Services",
+      "website": "studiopiu.net",
+      "claim": "Di fronte al Lago di Garda, a Desenzano, batte uno dei cuori storici della radiofonia dance italiana...",
+      "screenshot": "https://images.ransomware.live/victims/3ae46d2b8118d7d64d31e549744797d6.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/0d88adf2c6849b1ea53b8980c49142c6",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_murni.co.id",
+      "victim_name": "murni.co.id",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-26 09:55:53.680025",
+      "industry": "Agriculture and Food Production",
+      "website": "murni.co.id",
+      "claim": "PT Murni Solusindo Nusantara is an ICT-based solution provider company with ISO 9001:2015 certificat...",
+      "screenshot": "https://images.ransomware.live/victims/e51369541d6bcb44e49996a36c5aed0b.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/1f6ace0b98cd8870617e578fb83bcd4e",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_bardehle.com",
+      "victim_name": "bardehle.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-26 09:55:39.740020",
+      "industry": "Business Services",
+      "website": "bardehle.com",
+      "claim": "BARDEHLE PAGENBERG is a leading intellectual property law firm in Europe, specializing in patent lit...",
+      "screenshot": "https://images.ransomware.live/victims/c250f24fc156d25f2e16eacb2a3a97fd.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/6af067af1a852b63a94cba574c937cdb",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_erstransportes.com.br",
+      "victim_name": "erstransportes.com.br",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-26 09:55:26.020219",
+      "industry": "Transportation/Logistics",
+      "website": "erstransportes.com.br",
+      "claim": "A ERS Transportes, iniciou suas atividades em 2003, transportando cargas em equipamentos porta contê...",
+      "screenshot": "https://images.ransomware.live/victims/4e4aa183ef8a05fdc70d7bbda84d39c5.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/f0a14e58baf5f2243d0d636c7fff5b2f",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_bladex.com",
+      "victim_name": "bladex.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-26 09:55:11.614035",
+      "industry": "Technology",
+      "website": "bladex.com",
+      "claim": "Bladex, a multinational bank originally established by the central banks of Latin-American and Carib...",
+      "screenshot": "https://images.ransomware.live/victims/6aba66a86cf879b3e9964dfdb9a3c1c1.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/3afc24512af0e66dcc0e4ca36ddfb290",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_heinrichs-logistic.de",
+      "victim_name": "heinrichs-logistic.de",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-26 09:54:54.922142",
+      "industry": "Transportation/Logistics",
+      "website": "heinrichs-logistic.de",
+      "claim": "D. Heinrichs Logistic GmbH is a leading logistics service provider based in Bremerhaven, specializin...",
+      "screenshot": "https://images.ransomware.live/victims/5a6d55a0aed1cffa55f5c641344e8ec1.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/5a1998fd944e3b312b5feadb0425f846",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_merlo.de",
+      "victim_name": "merlo.de",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-04-26 09:54:38.517363",
+      "industry": "Not Found",
+      "website": "merlo.de",
+      "claim": "Merlo Teleskoplader: von Profis für Profis Teleskoplader für jeden Einsatz – plus Dienstleistung! M...",
+      "screenshot": "https://images.ransomware.live/victims/cb2cd31a86ffed7da85a9bf99ecb8240.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/4b7edcbde0f820b818d0f6731345ef62",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "lapsus$_checkmarx",
       "victim_name": "CHECKMARX",
