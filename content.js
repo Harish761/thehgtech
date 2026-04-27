@@ -5,56 +5,56 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 24 2026",
-            "headline": "Critical Flaws Patched in CrowdStrike, Tenable Products",
-            "title": "CrowdStrike and Tenable Address Critical Vulnerabilities in Recent Updates",
-            "content": "CrowdStrike and Tenable have released patches for critical vulnerabilities affecting their products. CrowdStrike&#x27;s update addresses a critical LogScale vulnerability, while Tenable has fixed a high-severity flaw in its Nessus vulnerability scanner. These vulnerabilities could potentially allow attackers to execute arbitrary code or gain unauthorized access to sensitive systems. Organizations utilizing these products should prioritize applying these patches to mitigate potential exploitation risks. The swift response underscores the importance of maintaining up-to-date security measures to protect against evolving threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vulnerabilities-patched-in-crowdstrike-tenable-products/",
+            "headline": "Microsoft Entra Passkeys—Phishing-Resistant Authentication Arrives",
+            "title": "Microsoft Introduces Entra Passkeys for Passwordless Authentication on Windows",
+            "content": "Microsoft is set to enhance security for its Entra-protected resources by introducing passkey support for Windows devices starting in late April. This move aims to bolster phishing-resistant, passwordless authentication, reducing reliance on traditional passwords. The update targets environments using Microsoft Entra, Microsoft&#x27;s identity and access management solution, providing a more secure and user-friendly authentication method. As cyber threats evolve, this development underscores the industry&#x27;s shift towards passwordless solutions to mitigate phishing risks. Organizations using Windows devices are encouraged to prepare for this transition to enhance their security posture.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-roll-out-entra-passkeys-on-windows-in-late-april/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Critical Bug in Breeze Cache Plugin—WordPress Sites at Risk",
+            "title": "Hackers Exploit Vulnerability in Breeze Cache WordPress Plugin",
+            "content": "A critical vulnerability in the Breeze Cache plugin for WordPress is being actively exploited by hackers, allowing unauthorized file uploads to servers. This flaw poses a significant risk to websites using the plugin, potentially leading to data breaches or server compromise. The vulnerability affects all versions of Breeze Cache prior to the latest patch, urging administrators to update immediately. This incident highlights the ongoing challenges in securing WordPress plugins, which are frequent targets due to their widespread use. Site owners should review their security measures and apply necessary updates to protect against exploitation.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-file-upload-bug-in-breeze-cache-wordpress-plugin/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "Trigona Ransomware—Custom Tool Boosts Data Theft Speed",
+            "title": "Trigona Ransomware Uses Custom Tool for Efficient Data Exfiltration",
+            "content": "Recent Trigona ransomware attacks have been observed utilizing a custom command-line tool to expedite data exfiltration from compromised environments. This tool enhances the efficiency and speed of data theft, posing a heightened threat to affected organizations. The attacks primarily target businesses with valuable data, emphasizing the need for robust cybersecurity defenses. Trigona&#x27;s evolving tactics reflect a broader trend of ransomware groups developing bespoke tools to maximize impact. Organizations should bolster their incident response strategies and ensure comprehensive data protection measures are in place.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trigona-ransomware-attacks-use-custom-exfiltration-tool-to-steal-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 26 2026",
+            "headline": "Itron Breach—Utility Firm&#x27;s Internal Systems Compromised",
+            "title": "American Utility Firm Itron Discloses Cybersecurity Breach",
+            "content": "Itron, Inc., a prominent utility firm, has reported a cybersecurity breach involving unauthorized access to its internal IT network. Disclosed through an 8-K filing with the U.S. Securities and Exchange Commission, the breach underscores vulnerabilities in critical infrastructure sectors. The incident highlights the persistent threat of cyberattacks on utility companies, which can have far-reaching implications for service delivery and data security. Itron is currently assessing the breach&#x27;s impact and implementing measures to prevent future incidents. Stakeholders are advised to stay informed on developments and review their own security protocols.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/american-utility-firm-itron-discloses-breach-of-internal-it-network/",
             "relatedResources": []
         },
         {
             "date": "Apr 24 2026",
-            "headline": "Bitwarden NPM Package Compromised in Supply Chain Attack",
-            "title": "Bitwarden NPM Package Targeted in Checkmarx Supply Chain Attack",
-            "content": "The Bitwarden NPM package has been compromised in a supply chain attack linked to TeamPCP, as reported by Checkmarx. This incident involves the Shai-Hulud worm, which has been used to infiltrate the package, potentially impacting developers relying on Bitwarden for secure password management. Supply chain attacks continue to pose significant risks, emphasizing the need for rigorous security practices in software development. Developers using the Bitwarden NPM package should verify the integrity of their installations and monitor for any suspicious activity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/bitwarden-npm-package-hit-in-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "LMDeploy Flaw Exploited Within 13 Hours of Disclosure",
-            "title": "CVE-2026-33626 in LMDeploy Exploited Rapidly After Disclosure",
-            "content": "A high-severity vulnerability in LMDeploy, identified as CVE-2026-33626, has been exploited in the wild within 13 hours of its disclosure. This flaw, with a CVSS score of 7.5, involves a Server-Side Request Forgery (SSRF) vulnerability in the open-source toolkit used for compressing and deploying large language models (LLMs). The rapid exploitation highlights the critical need for immediate patching and vigilance in monitoring systems for unusual activity. Organizations using LMDeploy should apply the available patches and review their security protocols to prevent unauthorized access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html",
+            "headline": "Romance Scam Victims—Call for Coordinated Support Efforts",
+            "title": "Experts Advocate for Proactive Support for Romance Scam Victims",
+            "content": "Victims of romance scams often face a challenging path to recovery, with experts urging a coordinated approach from law enforcement, financial institutions, and government bodies. These scams, which exploit victims&#x27; emotions for financial gain, require a comprehensive support system to address the psychological and financial aftermath. The call for action emphasizes the need for empathy and proactive measures to assist victims effectively. As romance scams continue to proliferate, stakeholders are encouraged to collaborate on strategies to prevent these crimes and support affected individuals.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/building-teams-to-help-cyber-scam-victims",
             "relatedResources": []
         },
         {
             "date": "Apr 23 2026",
-            "headline": "Vercel Expands Investigation, Finds More Compromised Accounts",
-            "title": "Vercel Identifies Additional Compromised Accounts in Context.ai Breach",
-            "content": "Vercel has uncovered more compromised customer accounts linked to a breach involving unauthorized access to its internal systems. This discovery came after the company extended its investigation to include a broader set of data. The breach, associated with Context.ai, underscores the persistent threat of unauthorized access and the importance of comprehensive security reviews. Affected customers should be vigilant and consider resetting passwords and enabling multi-factor authentication to enhance account security. Vercel is continuing its investigation to ensure the integrity of its systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/vercel-finds-more-compromised-accounts.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Windows IKEv2 Vulnerability Allows Remote Code Execution",
-            "title": "CVE-2026-33824: Critical RCE Vulnerability in Windows IKEv2 Patched",
-            "content": "Microsoft has patched a critical remote code execution (RCE) vulnerability, CVE-2026-33824, in the Windows Internet Key Exchange version 2 (IKEv2) service. Discovered by the WARP &amp; MORSE team, this double free vulnerability could allow attackers to execute arbitrary code on affected systems. Organizations using Windows IKEv2 should apply the latest security updates to protect against potential exploitation. This vulnerability highlights the ongoing challenges in securing network protocols and the necessity for timely patch management.",
-            "source": "Zero Day Initiative - Blog",
-            "sourceUrl": "https://www.thezdi.com/blog/2026/4/22/cve-2026-33824-remote-code-execution-in-windows-ikev2",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Apple Fixes iOS Bug Exposing Deleted Notifications",
-            "title": "iOS Vulnerability Allowed Recovery of Deleted Notifications, Now Patched",
-            "content": "Apple has addressed a vulnerability in iOS that allowed the recovery of deleted notifications, including chat previews from apps like Signal. This flaw posed privacy risks, particularly in scenarios involving law enforcement access to devices. Users should update their iPhones and iPads to the latest iOS version to ensure their notifications remain private. This incident highlights the critical need for robust privacy protections in mobile operating systems and the importance of regular security updates.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/04/apple-fixes-ios-bug-that-kept-deleted-notifications-including-chat-previews",
+            "headline": "Bitwarden CLI Compromised—Supply Chain Attack Warning",
+            "title": "Bitwarden CLI Password Manager Trojanized in Supply Chain Attack",
+            "content": "Security researchers have identified a supply chain attack that compromised the Bitwarden CLI, a command-line interface version of the popular open-source password manager. This attack, linked to recent supply chain compromises by a known threat group, resulted in a malicious version of the software being distributed. The incident underscores the vulnerabilities inherent in software supply chains and the potential for widespread impact. Users of Bitwarden CLI are advised to verify their installations and apply updates from verified sources. This case highlights the critical need for robust supply chain security practices.",
+            "source": "4 Wege aus der Security-Akronymhölle | CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4162865/bitwarden-cli-password-manager-trojanized-in-supply-chain-attack.html",
             "relatedResources": []
         },
         {
@@ -101,52 +101,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/researchers-uncover-pre-stuxnet-fast16.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "BlackFile Group Fuels Vishing Attack Surge",
-            "title": "BlackFile Extortion Group Linked to Increase in Vishing Attacks",
-            "content": "The newly identified hacking group BlackFile has been connected to a series of vishing attacks targeting retail and hospitality sectors since February 2026. These attacks involve voice phishing techniques to deceive employees into divulging sensitive information, leading to data theft and extortion. The rise of BlackFile&#x27;s activities highlights the growing threat of social engineering tactics in cybercrime. Organizations are urged to enhance employee training on recognizing and responding to vishing attempts. Implementing robust authentication measures can also mitigate the risk of unauthorized access resulting from these attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-blackfile-extortion-gang-targets-retail-and-hospitality-orgs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Pack2TheRoot Flaw Grants Root Access on Linux",
-            "title": "Pack2TheRoot Vulnerability in PackageKit Allows Root Access on Linux",
-            "content": "A critical vulnerability named Pack2TheRoot has been identified in the PackageKit daemon, potentially allowing local Linux users to gain root access by installing or removing system packages. This flaw poses a significant risk to Linux systems, as it can be exploited to escalate privileges and compromise system integrity. Security experts recommend immediate patching and monitoring of Linux environments to prevent exploitation. The discovery of Pack2TheRoot underscores the need for continuous vigilance and timely updates in maintaining secure Linux operations. Administrators should apply available patches and review user permissions to mitigate this threat.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-pack2theroot-flaw-gives-hackers-root-linux-access/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "ADT Breach—ShinyHunters Threaten Data Leak Over Ransom",
-            "title": "ADT Confirms Data Breach Following ShinyHunters&#x27; Extortion Threat",
-            "content": "Home security giant ADT has confirmed a data breach after the ShinyHunters extortion group threatened to leak stolen data unless a ransom is paid. The breach involves sensitive customer information, raising concerns over privacy and security for ADT&#x27;s extensive user base. ShinyHunters, known for targeting large corporations, has a history of selling stolen data on dark web forums. ADT is currently investigating the extent of the breach and has advised customers to monitor their accounts for suspicious activity. This incident underscores the persistent threat posed by cyber extortion groups and the importance of robust security measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/adt-confirms-data-breach-after-shinyhunters-leak-threat/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Windows Update—New Controls to Minimize Forced Restarts",
-            "title": "Microsoft Introduces Enhanced Controls for Windows Update Installations",
-            "content": "Microsoft is enhancing Windows Update with new controls aimed at reducing the disruption caused by forced restarts. Users will now have more flexibility in scheduling updates, minimizing the impact on productivity and system availability. This update addresses longstanding user complaints about poorly timed restarts, which have been a source of frustration for both individual and enterprise users. By providing more control over update timing, Microsoft aims to improve user experience and system reliability. IT administrators should review the new settings to optimize update schedules in their environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-update-gets-new-controls-to-reduce-forced-restarts/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 24 2026",
-            "headline": "DeepSeek V4 Challenges US AI Giants—Open-Source Model Unveiled",
-            "title": "DeepSeek&#x27;s V4 AI Model Aims to Rival US Closed-Source Systems",
-            "content": "Chinese AI company DeepSeek has unveiled a preview of its next-generation AI model, V4, positioning it as a formidable competitor to leading closed-source systems from US companies like Anthropic, Google, and OpenAI. The open-source model reportedly offers significant improvements over its predecessors, though specific technical details remain under wraps. This development could shift the competitive landscape in AI, particularly as open-source models gain traction for their transparency and collaborative potential. Industry observers are keenly watching how V4&#x27;s capabilities will influence enterprise adoption and innovation. Professionals should evaluate the model&#x27;s potential integration into existing systems and its implications for AI strategy.",
+            "date": "Apr 23 2026",
+            "headline": "Meta to Cut 8,000 Jobs—10% Workforce Reduction Announced",
+            "title": "Meta Announces 10% Workforce Reduction, Affecting 8,000 Employees",
+            "content": "Meta is set to lay off approximately 10% of its workforce, translating to around 8,000 employees, as revealed in a memo from Janelle Gale, the company&#x27;s chief people officer. This decision, expected to take effect in May, also includes the closure of about 6,000 open roles. The layoffs are part of Meta&#x27;s broader strategy to streamline operations amid ongoing challenges in the tech sector. Employees across various departments are likely to be affected, though specific details on impacted roles have not been disclosed. This move follows a trend of significant workforce reductions across major tech companies as they adapt to changing market conditions. Stakeholders should monitor further announcements from Meta regarding restructuring plans.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/918035/deepseek-preview-v4-ai-model",
+            "sourceUrl": "https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 23 2026",
+            "headline": "GPT-5.5 Bio Bug Bounty—$25K for Universal Jailbreaks",
+            "title": "OpenAI Launches GPT-5.5 Bio Bug Bounty with $25,000 Rewards",
+            "content": "OpenAI has announced the GPT-5.5 Bio Bug Bounty, inviting security researchers to identify universal jailbreaks that pose bio safety risks. This initiative offers rewards of up to $25,000 for successful discoveries, emphasizing OpenAI&#x27;s commitment to enhancing the security and reliability of its AI models. The bug bounty program is part of a broader effort to engage the security community in safeguarding AI technologies against misuse. Participants are encouraged to explore potential vulnerabilities that could lead to unauthorized access or manipulation of the model&#x27;s capabilities. This proactive approach aims to address potential threats before they can be exploited in real-world scenarios.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 26 2026",
+            "headline": "OpenAI&#x27;s Five Principles for AGI—Ensuring Global Benefit",
+            "title": "OpenAI Outlines Five Guiding Principles for AGI Development",
+            "content": "OpenAI CEO Sam Altman has shared five core principles that guide the organization&#x27;s work towards ensuring artificial general intelligence (AGI) benefits all of humanity. These principles emphasize safety, transparency, and collaboration with global stakeholders. OpenAI&#x27;s mission is to develop AGI that is safe and aligned with human values, while fostering an open dialogue with the public and policymakers. The organization is committed to sharing its research and engaging with diverse communities to address ethical and technical challenges. This announcement underscores OpenAI&#x27;s dedication to responsible AI development amid growing concerns about the societal impacts of advanced AI systems.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/our-principles",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 26 2026",
+            "headline": "Bay Area Home Sale Requires Anthropic Equity—Unique Real Estate Deal",
+            "title": "Unique Real Estate Offer: Bay Area Home for Anthropic Equity",
+            "content": "A 13-acre property in Mill Valley, north of San Francisco, is being offered for sale with a unique condition: the buyer must possess equity in Anthropic, an AI research company. This unconventional real estate deal highlights the growing influence of tech companies in the Bay Area&#x27;s housing market. The property, known for its scenic views and proximity to tech hubs, is attracting interest from potential buyers within the tech industry. This trend reflects the increasing integration of tech assets into traditional markets, as property owners seek innovative ways to leverage the region&#x27;s booming tech economy. Prospective buyers should consider the implications of such equity-based transactions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/26/to-buy-this-bay-area-home-youll-need-anthropic-equity/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "DeepSeek V4 Model Released—Handles Longer Prompts Efficiently",
+            "title": "DeepSeek Unveils V4 Model with Enhanced Text Processing Capabilities",
+            "content": "Chinese AI firm DeepSeek has released a preview of its V4 model, showcasing significant advancements in processing longer text prompts. The new model features a design that enhances its ability to handle large volumes of text more efficiently than previous iterations. This development is crucial for applications requiring extensive data analysis and natural language processing. DeepSeek&#x27;s V4 model continues the company&#x27;s tradition of innovation, building on the success of its earlier models. The release is expected to impact industries reliant on AI for data-driven decision-making, offering improved performance and scalability. Stakeholders should evaluate the potential of integrating V4 into their AI strategies.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 24 2026",
+            "headline": "Palo Alto CVEs Exploited—13,000 Devices Compromised",
+            "title": "Chained Palo Alto CVEs Lead to Root Access on 13,000 Devices",
+            "content": "During Operation Lunar Peek in November 2024, attackers exploited two vulnerabilities in Palo Alto Networks&#x27; management interfaces, gaining unauthenticated remote admin access and eventual root control over more than 13,000 devices. The vulnerabilities, identified as CVE-2024-0012 and CVE-2024-9474, were initially scored at 9.3 and 6.9 under the Common Vulnerability Scoring System (CVSS) v4.0. Despite being rated as manageable individually, their combination allowed for significant exploitation. This incident underscores the importance of addressing chained vulnerabilities and implementing robust security measures. Organizations using affected systems should prioritize patching and review their security protocols to prevent similar breaches.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/cvss-triage-failure-chained-vulnerability-audit-security-directors",
             "relatedResources": []
         },
         {
@@ -165,33 +174,6 @@ const websiteContent = {
             "content": "With John Ternus stepping in as Apple&#x27;s CEO, the tech giant appears poised to refocus on hardware innovation. Ternus, known for his hardware expertise, suggests a strategic pivot back to devices as central to Apple&#x27;s growth. This shift may lead to new product developments and enhancements in Apple&#x27;s existing lineup, potentially impacting market dynamics and consumer expectations. Industry stakeholders should monitor Apple&#x27;s forthcoming announcements for insights into the company&#x27;s evolving strategy and potential opportunities for collaboration or competition.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/25/apple-under-ternus-what-comes-next-for-the-tech-giants-hardware-strategy/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "AI Trust Gap—85% of Enterprises Hesitant to Deploy Agents",
-            "title": "Enterprise AI Adoption Stalls as Trust in AI Agents Lags",
-            "content": "Despite 85% of enterprises piloting AI agents, only 5% have transitioned these pilots into production, according to Cisco&#x27;s Jeetu Patel at RSA Conference 2026. The primary barrier is trust, with organizations wary of deploying AI agents without assurance of reliability and security. This hesitancy underscores a broader industry challenge in bridging the trust gap to fully leverage AI&#x27;s potential. Enterprises must focus on building robust validation frameworks and transparent AI governance to enhance confidence in AI deployments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/85-of-enterprises-are-running-ai-agents-only-5-trust-them-enough-to-ship",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "ChatGPT for Finance? 5 Reasons to Be Cautious",
-            "title": "Caution Advised When Using Chatbots for Financial Advice",
-            "content": "As reliance on AI chatbots like ChatGPT for financial advice grows, experts urge caution due to potential inaccuracies and lack of personalized insights. These tools, while convenient, may not account for individual financial circumstances or evolving market conditions, leading to suboptimal advice. Users should maintain a critical perspective and seek professional financial guidance when necessary. This trend highlights the need for improved AI training and validation in sensitive domains like finance.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/5-reasons-to-think-twice-before-using-chatgpt-for-financial-advice/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Anthropic&#x27;s Claude Faces &quot;AI Shrinkflation&quot;—User Concerns Addressed",
-            "title": "Anthropic Identifies Causes of Perceived Degradation in Claude AI",
-            "content": "Anthropic has addressed user concerns regarding a perceived decline in performance, termed &quot;AI shrinkflation,&quot; in its Claude models. Developers and AI users reported that Claude seemed less capable, prompting investigations into recent changes in its harnesses and operating instructions. Anthropic&#x27;s transparency in identifying these issues is crucial for maintaining trust and ensuring model efficacy. AI professionals should consider these findings when evaluating Claude&#x27;s suitability for their applications and remain vigilant about updates that may impact performance.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/mystery-solved-anthropic-reveals-changes-to-claudes-harnesses-and-operating-instructions-likely-caused-degradation",
             "relatedResources": []
         },
         {
@@ -228,51 +210,6 @@ const websiteContent = {
             "content": "Canadian AI startup Cohere is merging with Germany-based Aleph Alpha, supported by the Schwarz Group, owner of Lidl. This strategic acquisition aims to provide a sovereign AI alternative in a market dominated by American tech giants. With governmental support, the merger seeks to enhance AI capabilities and foster innovation within Europe and Canada. This move highlights the growing trend of regional collaborations to counterbalance US-centric AI dominance. Industry professionals should evaluate the impact on global AI competition and potential opportunities for cross-border partnerships.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Elon Musk Eyes $60B Cursor Acquisition Amid Apple CEO Shift",
-            "title": "Apple CEO Transition as Musk Considers $60B Cursor Purchase",
-            "content": "Apple is set to undergo a significant leadership change as Tim Cook prepares to step down as CEO in September, with hardware chief John Ternus poised to take over. This transition comes at a time when Elon Musk is reportedly interested in acquiring Cursor, an AI company, for a staggering $60 billion. Ternus will inherit a robust tech giant but faces a rapidly evolving ecosystem shaped by AI advancements and competitive pressures. The potential acquisition by Musk highlights the growing strategic importance of AI capabilities in tech leadership. Industry professionals should monitor these developments closely, as they could signal shifts in market dynamics and innovation trajectories.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/apples-new-ceo-and-why-elon-musk-wants-to-buy-cursor-for-60b/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "AI-Driven Strikes Double Military Targeting Efficiency in Iran",
-            "title": "Project Maven&#x27;s AI Systems Double US Military Targeting Efficiency in Iran",
-            "content": "The US military&#x27;s recent assault on Iran saw a dramatic increase in targeting efficiency, with over 1,000 targets struck in the first 24 hours—nearly double the scale of previous operations. This acceleration was enabled by AI systems developed under Project Maven, which streamline the targeting process. The deployment of these AI technologies marks a significant shift in military strategy, emphasizing the role of advanced algorithms in modern warfare. Defense professionals should consider the implications of AI integration in military operations, as it enhances precision and operational speed, potentially reshaping future conflict engagements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "AI Memory Shortage Threatens Samsung&#x27;s Smartphone Profitability",
-            "title": "Samsung Faces Potential Smartphone Losses Amid AI-Driven Memory Shortage",
-            "content": "Samsung executives are expressing concern over potential financial losses in their smartphone division for the first time, driven by an AI-induced memory shortage. The scarcity of memory components, crucial for smartphone production, is impacting Samsung&#x27;s ability to meet market demand and maintain profitability. This development underscores the broader challenges tech companies face as AI technologies drive up demand for critical hardware components. Industry stakeholders should evaluate supply chain vulnerabilities and consider strategic adjustments to mitigate the impact of such shortages on production and revenue.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/gadgets/2026/04/samsung-may-be-bracing-for-first-ever-annual-loss-in-smartphone-business/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Mac Mini Shortages Spark eBay Price Surge Amid AI Demand",
-            "title": "AI Demand Drives Mac Mini Shortages and eBay Price Inflation",
-            "content": "Apple&#x27;s Mac Mini is experiencing unprecedented demand, leading to shortages and a surge in marked-up listings on eBay. The compact desktop has become increasingly popular for running local AI models and tools, driving up its value among tech enthusiasts and professionals. This trend illustrates the growing need for powerful yet accessible hardware capable of supporting advanced AI applications. Buyers should be cautious of inflated prices on secondary markets and consider alternative solutions for their AI computing needs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/24/mac-mini-price-expensive-ebay-shortage-ai-memory/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Tim Cook&#x27;s Departure Marks New Era for Apple Leadership",
-            "title": "Tim Cook&#x27;s Legacy and the Implications of Apple&#x27;s Leadership Transition",
-            "content": "Tim Cook&#x27;s announcement to step down as Apple&#x27;s CEO marks the end of an era characterized by innovations like AirPods and Touch Bars. John Ternus, the anticipated successor, is expected to bring new perspectives to Apple&#x27;s leadership. This transition could lead to significant changes in Apple&#x27;s strategic direction, particularly as the company navigates the evolving tech landscape. Industry observers should watch for shifts in product development and market strategies as Ternus takes the helm, potentially influencing Apple&#x27;s future trajectory.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/917965/apple-ceo-cook-ternus-transition",
             "relatedResources": []
         }
     ],
@@ -422,94 +359,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33825",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20122",
-            "dateAdded": "Apr 20, 2026",
-            "vendor": "Cisco Catalyst SD-WAN Manger",
-            "description": "Cisco Catalyst SD-WAN Manager contains an incorrect use of privileged APIs vulnerability due to improper file handling on the API interface of an affected system. An attacker could exploit this vulner",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20122",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20133",
-            "dateAdded": "Apr 20, 2026",
-            "vendor": "Cisco Catalyst SD-WAN Manager",
-            "description": "Cisco Catalyst SD-WAN Manager contains an exposure of sensitive information to an unauthorized actor vulnerability that could allow remote attackers to view sensitive information on affected systems.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20133",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-2749",
-            "dateAdded": "Apr 20, 2026",
-            "vendor": "Kentico Kentico Xperience",
-            "description": "Kentico Xperience contains a path traversal vulnerability that could allow an authenticated user&#x27;s Staging Sync Server to upload arbitrary data to path relative locations.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-2749",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2023-27351",
-            "dateAdded": "Apr 20, 2026",
-            "vendor": "PaperCut NG/MF",
-            "description": "PaperCut NG/MF contains an improper authentication vulnerability that could allow remote attackers to bypass authentication on affected installations via the SecurityRequestFilter class.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-27351",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-48700",
-            "dateAdded": "Apr 20, 2026",
-            "vendor": "Synacor Zimbra Collaboration Suite (ZCS)",
-            "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability that could allow attackers to execute arbitrary JavaScript within the user&#x27;s session, potentially leading to unau",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48700",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20128",
-            "dateAdded": "Apr 20, 2026",
-            "vendor": "Cisco Catalyst SD-WAN Manager",
-            "description": "Cisco Catalyst SD-WAN Manager contains a storing passwords in a recoverable format vulnerability that allows an authenticated, local attacker to gain DCA user privileges by accessing a credential file",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20128",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-32975",
-            "dateAdded": "Apr 20, 2026",
-            "vendor": "Quest KACE Systems Management Appliance (SMA)",
-            "description": "Quest KACE Systems Management Appliance (SMA) contains an improper authentication vulnerability that could allow attackers to impersonate legitimate users without valid credentials.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32975",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2024-27199",
-            "dateAdded": "Apr 20, 2026",
-            "vendor": "JetBrains TeamCity",
-            "description": "JetBrains TeamCity contains a relative path traversal vulnerability that could allow limited admin actions to be performed.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27199",
             "isZeroDay": false
         }
     ],
