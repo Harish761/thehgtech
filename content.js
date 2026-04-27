@@ -4,30 +4,57 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 27 2026",
+            "headline": "Google Warns of Rising AI Prompt Injection Attacks",
+            "title": "Google Reports Increase in Malicious AI Prompt Injection Attempts",
+            "content": "Google has identified a rise in malicious AI prompt injection attacks, although the sophistication of these exploits remains low. The tech giant&#x27;s analysis reveals that while many indirect prompt injection attempts are benign, some have been used for harmful purposes. These attacks exploit vulnerabilities in AI systems by manipulating input prompts to produce unintended outputs. As AI becomes more integrated into various applications, the potential for exploitation grows, posing risks to data integrity and system reliability. Security professionals are advised to implement robust input validation and monitoring to mitigate these threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/malicious-ai-prompt-injection-attacks-increasing-but-sophistication-still-low-google/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 27 2026",
+            "headline": "Firefox Flaw CVE-2026-6770 Enables Tor User Tracking",
+            "title": "Critical Firefox Vulnerability Allows Fingerprinting of Tor Users",
+            "content": "A critical vulnerability in Firefox, tracked as CVE-2026-6770, has been patched, addressing a significant privacy concern for Tor users. The flaw allowed attackers to fingerprint users of the Tor browser, potentially compromising their anonymity. Mozilla has released Firefox 150 and Tor version 15.0.10 to resolve the issue. This vulnerability underscores the ongoing challenges in maintaining user privacy in web browsers, especially for those relying on Tor for anonymity. Users should update to the latest versions immediately to protect against potential exploitation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/firefox-vulnerability-allows-tor-user-fingerprinting/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 24 2026",
-            "headline": "Microsoft Entra Passkeys—Phishing-Resistant Authentication Arrives",
-            "title": "Microsoft Introduces Entra Passkeys for Passwordless Authentication on Windows",
-            "content": "Microsoft is set to enhance security for its Entra-protected resources by introducing passkey support for Windows devices starting in late April. This move aims to bolster phishing-resistant, passwordless authentication, reducing reliance on traditional passwords. The update targets environments using Microsoft Entra, Microsoft&#x27;s identity and access management solution, providing a more secure and user-friendly authentication method. As cyber threats evolve, this development underscores the industry&#x27;s shift towards passwordless solutions to mitigate phishing risks. Organizations using Windows devices are encouraged to prepare for this transition to enhance their security posture.",
+            "headline": "ADT Confirms Breach Amid ShinyHunters Ransom Threat",
+            "title": "ADT Data Breach Confirmed Following ShinyHunters Extortion Threat",
+            "content": "ADT has confirmed a data breach after the ShinyHunters group threatened to leak stolen data unless a ransom was paid. The breach highlights the persistent threat of data extortion faced by large enterprises. ShinyHunters, known for targeting high-profile companies, has previously leaked data from other major organizations. ADT is currently investigating the extent of the breach and working with cybersecurity experts to mitigate the impact. Customers are advised to monitor their accounts for unusual activity and update security credentials as a precaution.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-roll-out-entra-passkeys-on-windows-in-late-april/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/adt-confirms-data-breach-after-shinyhunters-leak-threat/",
             "relatedResources": []
         },
         {
-            "date": "Apr 23 2026",
-            "headline": "Critical Bug in Breeze Cache Plugin—WordPress Sites at Risk",
-            "title": "Hackers Exploit Vulnerability in Breeze Cache WordPress Plugin",
-            "content": "A critical vulnerability in the Breeze Cache plugin for WordPress is being actively exploited by hackers, allowing unauthorized file uploads to servers. This flaw poses a significant risk to websites using the plugin, potentially leading to data breaches or server compromise. The vulnerability affects all versions of Breeze Cache prior to the latest patch, urging administrators to update immediately. This incident highlights the ongoing challenges in securing WordPress plugins, which are frequent targets due to their widespread use. Site owners should review their security measures and apply necessary updates to protect against exploitation.",
+            "date": "Apr 24 2026",
+            "headline": "Microsoft Eases Windows Update Restarts with New Controls",
+            "title": "Microsoft Introduces New Controls to Manage Windows Update Restarts",
+            "content": "Microsoft is enhancing Windows Update with new controls designed to minimize disruptions caused by forced restarts. These improvements aim to give users more flexibility in scheduling updates, reducing the inconvenience of unexpected system reboots. The update is part of Microsoft&#x27;s ongoing effort to improve user experience and system reliability. By allowing users to better manage update timing, Microsoft hopes to decrease the frustration associated with poorly timed restarts. Users are encouraged to explore the new settings to optimize their update schedules.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-file-upload-bug-in-breeze-cache-wordpress-plugin/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-update-gets-new-controls-to-reduce-forced-restarts/",
             "relatedResources": []
         },
         {
-            "date": "Apr 23 2026",
-            "headline": "Trigona Ransomware—Custom Tool Boosts Data Theft Speed",
-            "title": "Trigona Ransomware Uses Custom Tool for Efficient Data Exfiltration",
-            "content": "Recent Trigona ransomware attacks have been observed utilizing a custom command-line tool to expedite data exfiltration from compromised environments. This tool enhances the efficiency and speed of data theft, posing a heightened threat to affected organizations. The attacks primarily target businesses with valuable data, emphasizing the need for robust cybersecurity defenses. Trigona&#x27;s evolving tactics reflect a broader trend of ransomware groups developing bespoke tools to maximize impact. Organizations should bolster their incident response strategies and ensure comprehensive data protection measures are in place.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trigona-ransomware-attacks-use-custom-exfiltration-tool-to-steal-data/",
+            "date": "Apr 24 2026",
+            "headline": "LMDeploy Flaw Exploited Hours After Disclosure—CVE-2026-33626",
+            "title": "LMDeploy Vulnerability CVE-2026-33626 Exploited Within 13 Hours",
+            "content": "A high-severity vulnerability in LMDeploy, identified as CVE-2026-33626, was exploited in the wild less than 13 hours after its disclosure. LMDeploy, an open-source toolkit for managing large language models, was found to have a flaw with a CVSS score of 7.5, indicating significant risk. The rapid exploitation highlights the critical need for immediate patching and vigilance in open-source software management. Organizations using LMDeploy should apply the available patches without delay to protect their systems from potential compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 27 2026",
+            "headline": "TeamPCP Resumes with Triple Supply Chain Compromises",
+            "title": "TeamPCP Supply Chain Campaign Resumes with Multiple Compromises",
+            "content": "The TeamPCP supply chain campaign has resumed after a 26-day pause, resulting in three concurrent compromises involving Checkmarx KICS, Bitwarden CLI, and xinference PyPI. Additionally, a new npm worm, CanisterSprawl, has been identified, further complicating the threat landscape. This campaign, previously linked to the theft of Cisco source code, continues to pose significant risks to software supply chains. Organizations are advised to enhance their supply chain security measures and monitor for indicators of compromise.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32926",
             "relatedResources": []
         },
         {
@@ -37,24 +64,6 @@ const websiteContent = {
             "content": "Itron, Inc., a prominent utility firm, has reported a cybersecurity breach involving unauthorized access to its internal IT network. Disclosed through an 8-K filing with the U.S. Securities and Exchange Commission, the breach underscores vulnerabilities in critical infrastructure sectors. The incident highlights the persistent threat of cyberattacks on utility companies, which can have far-reaching implications for service delivery and data security. Itron is currently assessing the breach&#x27;s impact and implementing measures to prevent future incidents. Stakeholders are advised to stay informed on developments and review their own security protocols.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/american-utility-firm-itron-discloses-breach-of-internal-it-network/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Romance Scam Victims—Call for Coordinated Support Efforts",
-            "title": "Experts Advocate for Proactive Support for Romance Scam Victims",
-            "content": "Victims of romance scams often face a challenging path to recovery, with experts urging a coordinated approach from law enforcement, financial institutions, and government bodies. These scams, which exploit victims&#x27; emotions for financial gain, require a comprehensive support system to address the psychological and financial aftermath. The call for action emphasizes the need for empathy and proactive measures to assist victims effectively. As romance scams continue to proliferate, stakeholders are encouraged to collaborate on strategies to prevent these crimes and support affected individuals.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/building-teams-to-help-cyber-scam-victims",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "Bitwarden CLI Compromised—Supply Chain Attack Warning",
-            "title": "Bitwarden CLI Password Manager Trojanized in Supply Chain Attack",
-            "content": "Security researchers have identified a supply chain attack that compromised the Bitwarden CLI, a command-line interface version of the popular open-source password manager. This attack, linked to recent supply chain compromises by a known threat group, resulted in a malicious version of the software being distributed. The incident underscores the vulnerabilities inherent in software supply chains and the potential for widespread impact. Users of Bitwarden CLI are advised to verify their installations and apply updates from verified sources. This case highlights the critical need for robust supply chain security practices.",
-            "source": "4 Wege aus der Security-Akronymhölle | CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4162865/bitwarden-cli-password-manager-trojanized-in-supply-chain-attack.html",
             "relatedResources": []
         },
         {
@@ -105,21 +114,57 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Apr 23 2026",
-            "headline": "Meta to Cut 8,000 Jobs—10% Workforce Reduction Announced",
-            "title": "Meta Announces 10% Workforce Reduction, Affecting 8,000 Employees",
-            "content": "Meta is set to lay off approximately 10% of its workforce, translating to around 8,000 employees, as revealed in a memo from Janelle Gale, the company&#x27;s chief people officer. This decision, expected to take effect in May, also includes the closure of about 6,000 open roles. The layoffs are part of Meta&#x27;s broader strategy to streamline operations amid ongoing challenges in the tech sector. Employees across various departments are likely to be affected, though specific details on impacted roles have not been disclosed. This move follows a trend of significant workforce reductions across major tech companies as they adapt to changing market conditions. Stakeholders should monitor further announcements from Meta regarding restructuring plans.",
+            "date": "Apr 24 2026",
+            "headline": "DeepSeek&#x27;s V4 AI Model Challenges US Giants—Open Source Unveiled",
+            "title": "DeepSeek Unveils V4 AI Model to Compete with US Rivals",
+            "content": "Chinese AI firm DeepSeek has unveiled a preview of its latest AI model, V4, which is positioned to rival leading closed-source systems from US companies such as Anthropic, Google, and OpenAI. The open-source V4 model reportedly offers significant improvements over its predecessors, potentially reshaping the competitive landscape in AI development. This move underscores China&#x27;s growing influence in the AI sector, challenging the dominance of US tech giants. Industry professionals should monitor V4&#x27;s performance metrics and integration capabilities as it becomes available. The release of V4 could prompt a shift towards more open-source solutions in AI, impacting developers and enterprises globally.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/918035/deepseek-preview-v4-ai-model",
             "relatedResources": []
         },
         {
-            "date": "Apr 23 2026",
-            "headline": "GPT-5.5 Bio Bug Bounty—$25K for Universal Jailbreaks",
-            "title": "OpenAI Launches GPT-5.5 Bio Bug Bounty with $25,000 Rewards",
-            "content": "OpenAI has announced the GPT-5.5 Bio Bug Bounty, inviting security researchers to identify universal jailbreaks that pose bio safety risks. This initiative offers rewards of up to $25,000 for successful discoveries, emphasizing OpenAI&#x27;s commitment to enhancing the security and reliability of its AI models. The bug bounty program is part of a broader effort to engage the security community in safeguarding AI technologies against misuse. Participants are encouraged to explore potential vulnerabilities that could lead to unauthorized access or manipulation of the model&#x27;s capabilities. This proactive approach aims to address potential threats before they can be exploited in real-world scenarios.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+            "date": "Apr 27 2026",
+            "headline": "Canva AI Glitch Alters Designs—Replaces &quot;Palestine&quot;",
+            "title": "Canva Apologizes for AI Tool Replacing &quot;Palestine&quot; in Designs",
+            "content": "Canva has issued an apology after its AI feature, Magic Layers, was found replacing the word &quot;Palestine&quot; in user designs. Magic Layers, intended to deconstruct flat images into editable components, inadvertently altered design content, sparking user backlash. The glitch highlights potential risks in automated design tools, especially regarding sensitive content. Canva is investigating the issue and working on a fix to prevent future occurrences. Designers using AI tools should remain vigilant about unexpected content changes and report anomalies to developers. This incident underscores the importance of robust testing and user feedback in AI tool deployment.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/919028/canva-magic-layers-ai-replacing-palestine",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 27 2026",
+            "headline": "China Halts Meta&#x27;s $2B Manus Acquisition—AI Ambitions Stalled",
+            "title": "China Blocks Meta&#x27;s $2B Acquisition of Manus After Probe",
+            "content": "China has ordered Meta to unwind its $2 billion acquisition of Manus, following a comprehensive investigation. This decision poses a significant hurdle to Meta&#x27;s strategic expansion into AI-driven agents, a key focus for CEO Mark Zuckerberg. The blockage reflects China&#x27;s increasing regulatory scrutiny over foreign tech investments, particularly in AI and data-centric sectors. Meta&#x27;s plans to integrate Manus&#x27;s capabilities into its AI ecosystem are now uncertain, potentially affecting its competitive edge. Tech leaders should consider the geopolitical landscape&#x27;s impact on cross-border tech mergers and acquisitions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/27/china-vetoes-metas-2b-manus-deal-after-months-long-probe/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 27 2026",
+            "headline": "OpenAI&#x27;s AI-Powered Phone—Apps Replaced by Agents by 2028",
+            "title": "OpenAI Plans AI-Driven Phone with Agent-Based Interface by 2028",
+            "content": "OpenAI is reportedly developing a smartphone that could replace traditional apps with AI agents, aiming for mass production by 2028. This innovative approach could redefine user interaction, leveraging AI to perform tasks traditionally managed by individual apps. The concept aligns with trends towards more integrated and intelligent user interfaces, potentially setting a new standard in mobile technology. Developers and tech leaders should watch for further announcements on hardware specifications and software integration. The move could accelerate the shift towards AI-centric mobile ecosystems, impacting app development strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 27 2026",
+            "headline": "AI-Designed Cars Emerge—Revolutionizing Auto Design Process",
+            "title": "AI-Designed Vehicles Transform Traditional Automotive Design Practices",
+            "content": "The automotive industry is witnessing a shift as AI-designed cars begin to take shape, moving beyond traditional sketch-based design processes. Advanced 3D visualization and VR sculpting platforms are now integral to developing new vehicle models, streamlining design iterations and enhancing precision. This evolution could significantly reduce time-to-market and production costs, offering a competitive edge to manufacturers who adopt these technologies. Automotive designers and engineers should explore AI-driven tools to stay ahead in the rapidly evolving market. The trend towards AI integration in design highlights the broader impact of AI across industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/transportation/918411/gm-ai-car-design-nissan-neural-concept",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 27 2026",
+            "headline": "Meta&#x27;s Space Solar Deal—Powering Nights with Beamed Energy",
+            "title": "Meta Secures Space-Based Solar Power Deal for Nighttime Energy",
+            "content": "Meta has signed a groundbreaking contract with Overview Energy to receive solar power beamed from space, marking a significant step towards sustainable energy solutions. This initiative aims to provide power during nighttime hours, addressing a critical limitation of traditional solar energy. The deal represents a pioneering move in the use of space-based solar technology, potentially setting a precedent for other tech giants. Energy professionals and tech leaders should evaluate the feasibility and scalability of such solutions for broader application. This development highlights the intersection of space technology and renewable energy in addressing global power challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/27/meta-inks-deal-for-solar-power-at-night-beamed-from-space/",
             "relatedResources": []
         },
         {
@@ -138,24 +183,6 @@ const websiteContent = {
             "content": "A 13-acre property in Mill Valley, north of San Francisco, is being offered for sale with a unique condition: the buyer must possess equity in Anthropic, an AI research company. This unconventional real estate deal highlights the growing influence of tech companies in the Bay Area&#x27;s housing market. The property, known for its scenic views and proximity to tech hubs, is attracting interest from potential buyers within the tech industry. This trend reflects the increasing integration of tech assets into traditional markets, as property owners seek innovative ways to leverage the region&#x27;s booming tech economy. Prospective buyers should consider the implications of such equity-based transactions.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/26/to-buy-this-bay-area-home-youll-need-anthropic-equity/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "DeepSeek V4 Model Released—Handles Longer Prompts Efficiently",
-            "title": "DeepSeek Unveils V4 Model with Enhanced Text Processing Capabilities",
-            "content": "Chinese AI firm DeepSeek has released a preview of its V4 model, showcasing significant advancements in processing longer text prompts. The new model features a design that enhances its ability to handle large volumes of text more efficiently than previous iterations. This development is crucial for applications requiring extensive data analysis and natural language processing. DeepSeek&#x27;s V4 model continues the company&#x27;s tradition of innovation, building on the success of its earlier models. The release is expected to impact industries reliant on AI for data-driven decision-making, offering improved performance and scalability. Stakeholders should evaluate the potential of integrating V4 into their AI strategies.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 24 2026",
-            "headline": "Palo Alto CVEs Exploited—13,000 Devices Compromised",
-            "title": "Chained Palo Alto CVEs Lead to Root Access on 13,000 Devices",
-            "content": "During Operation Lunar Peek in November 2024, attackers exploited two vulnerabilities in Palo Alto Networks&#x27; management interfaces, gaining unauthenticated remote admin access and eventual root control over more than 13,000 devices. The vulnerabilities, identified as CVE-2024-0012 and CVE-2024-9474, were initially scored at 9.3 and 6.9 under the Common Vulnerability Scoring System (CVSS) v4.0. Despite being rated as manageable individually, their combination allowed for significant exploitation. This incident underscores the importance of addressing chained vulnerabilities and implementing robust security measures. Organizations using affected systems should prioritize patching and review their security protocols to prevent similar breaches.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/cvss-triage-failure-chained-vulnerability-audit-security-directors",
             "relatedResources": []
         },
         {
