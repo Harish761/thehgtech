@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-04-26T15:08:24.048344",
-  "total_incidents": 27552,
+  "last_updated": "2026-04-27T05:38:46.224334",
+  "total_incidents": 27556,
   "incidents": [
+    {
+      "id": "thegentlemen_eec_group",
+      "victim_name": "EEC Group",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-26 15:52:07.360558",
+      "industry": "Business Services",
+      "website": "eecegypt.com",
+      "claim": "eecegypt.com zoominfo.com/c/eec-group/372746808 EEC Group (Engineering Enterprises for Civil & Steel Constructions S.A.E.) is an Egyptian engineering and construction conglomerate headquartered at EEC Tower, Sheraton Heliopolis, Cairo. Founded in 1977 as a construction company, it expanded into steel structure manufacturing in 1983 and became a telecom infrastructure turnkey contractor from 1996 onwards",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_coralina",
+      "victim_name": "Coralina",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-26 15:52:02.120892",
+      "industry": "Not Found",
+      "website": "coralina.gov.co",
+      "claim": "coralina.gov.co zoominfo.com/c/coralina/425697881 CORALINA (Corporación para el Desarrollo Sostenible del Archipiélago de San Andrés, Providencia y Santa Catalina) is the official Colombian government environmental authority responsible for managing and protecting the natural resources of the San Andrés, Providencia, and Santa Catalina archipelago in the Caribbean. It was created under Article 37 of Law 99 of December 22, 1993 and operates as a public entity with administrative and financial autonomy, its own assets, and legal status",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_lawson_software",
+      "victim_name": "Lawson Software",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-26 15:51:57.855644",
+      "industry": "Business Services",
+      "website": "lawson.co.th",
+      "claim": "lawson.co.th zoominfo.com/c/lawson-software-co-ltd/454540883 Lawson Software (Thailand) Co., Ltd. is a Bangkok-based IT consulting firm specializing in ERP (Enterprise Resource Planning) implementation and business software solutions, founded in 1999. The company is headquartered at Gypsum Metropolitan Tower, Si Ayutthaya Road, Ratchathewi, Bangkok, and has a team of 11–50 employees",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_suzhou_yike_kejian",
+      "victim_name": "Suzhou Yike Kejian",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-04-26 15:51:53.760530",
+      "industry": "Manufacturing",
+      "website": "dnb.com/business-directory/company-profiles.suzhou_yike_kejian_architectural_design_research_institute_co_ltd_nanjing_bra_nch.12f22121a67d4f912a7d8a5b634d830a.html",
+      "claim": "dnb.com/business-directory/company-profiles.suzhou_yike_kejian_architectural_design_research_institute_co_ltd_nanjing_bra_nch.12f22121a67d4f912a7d8a5b634d830a.html Suzhou Yike Kejian Architectural Design Research Institute Co., Ltd. (Nanjing Branch) is a Chinese architectural design and research firm operating in the Residential Building Construction sector, classified under the Construction of Buildings industry. The company is registered in Nanjing, Jiangsu Province, and operates as a branch of the parent entity headquartered in Suzhou, Jiangsu. It is a small regional design institute serving the competitive Yangtze River Delta construction market, with professionally certified engineers on staff",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "lockbit5_studiopiu.net",
       "victim_name": "studiopiu.net",
