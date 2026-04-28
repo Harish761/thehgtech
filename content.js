@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 28 2026",
+            "headline": "VECT 2.0 Ransomware Destroys Files Beyond Recovery",
+            "title": "VECT 2.0 Ransomware Acts as Wiper on Windows, Linux, ESXi",
+            "content": "Threat hunters have identified a critical flaw in the VECT 2.0 ransomware, which acts more like a wiper due to its flawed encryption implementation. This flaw affects Windows, Linux, and ESXi systems, leading to irreversible destruction of files larger than 131KB. Even the threat actors behind VECT 2.0 cannot recover the encrypted data, posing a severe risk to affected organizations. This development underscores the growing trend of ransomware evolving into more destructive forms. Security professionals are advised to ensure robust backup strategies and monitor systems for signs of VECT 2.0 infiltration.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/vect-20-ransomware-irreversibly.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Hugging Face LeRobot Flaw—Remote Code Execution Risk",
+            "title": "Critical RCE Vulnerability in Hugging Face&#x27;s LeRobot Platform Uncovered",
+            "content": "Cybersecurity researchers have disclosed CVE-2026-25874, a critical vulnerability in Hugging Face&#x27;s LeRobot, an open-source robotics platform. This flaw, with a CVSS score of 9.8, allows unauthenticated remote code execution, posing a significant threat to systems running the platform. LeRobot, boasting nearly 24,000 stars on GitHub, is widely used, amplifying the potential impact of this vulnerability. Users of LeRobot are urged to implement mitigations and await a patch to secure their systems. This incident highlights the importance of securing open-source platforms against emerging threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Windows Shell Exploit Confirmed by Microsoft—Patch Now",
+            "title": "Microsoft Confirms Active Exploitation of Windows Shell CVE-2026-32202",
+            "content": "Microsoft has confirmed active exploitation of CVE-2026-32202, a spoofing vulnerability in Windows Shell, now patched. This high-severity flaw, with a CVSS score of 4.3, allows attackers to craft malicious files that appear legitimate, potentially leading to unauthorized actions. The vulnerability affects multiple Windows versions, making it critical for users to apply the latest security updates. This acknowledgment by Microsoft underscores the persistent threat landscape targeting Windows environments. Security teams should prioritize patching and monitor systems for unusual activity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 25 2026",
+            "headline": "CISA Adds 4 Flaws to Exploited Vulnerabilities List",
+            "title": "CISA Adds Four Exploited Vulnerabilities to Known Exploited Vulnerabilities Catalog",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, affecting SimpleHelp, Samsung MagicINFO 9 Server, and D-Link DIR-823X routers. These vulnerabilities are actively exploited, prompting CISA to set a May 2026 deadline for federal agencies to address them. This move reflects CISA&#x27;s ongoing efforts to mitigate risks from exploited vulnerabilities in critical infrastructure. Organizations using these products should prioritize patching and strengthen their security postures to prevent potential breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "X-Vercel-Set-Bypass-Cookie Header in Honeypot Requests",
+            "title": "Unusual HTTP Requests with X-Vercel-Set-Bypass-Cookie Header Detected",
+            "content": "Security analysts at the SANS Internet Storm Center have observed unusual HTTP requests containing the &quot;X-Vercel-Set-Bypass-Cookie&quot; header in their honeypot systems. This header, appearing in recent traffic, suggests potential attempts to bypass security mechanisms or exploit vulnerabilities. While the exact purpose remains unclear, such activity warrants attention from security teams. Organizations should monitor their networks for similar requests and investigate any anomalies. This finding highlights the need for vigilance against evolving tactics in web-based attacks.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32930",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Cursor IDE Bug—Routine Git Actions Turn Risky",
+            "title": "Critical Vulnerability in Cursor IDE Enables Remote Code Execution via Git",
+            "content": "A high-severity vulnerability in the Cursor Integrated Development Environment (IDE) has been disclosed, allowing arbitrary code execution through routine Git interactions. Identified by Novee Security, this flaw poses a significant risk to developers using Cursor IDE, as it can be exploited when cloning and interacting with repositories. The vulnerability underscores the critical need for secure coding practices and regular updates to development tools. Developers are advised to apply patches and review their security protocols to mitigate potential exploitation.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4164250/critical-cursor-bug-could-turn-routine-git-into-rce.html",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 27 2026",
             "headline": "ADT Data Breach Exposes 5.5M Users—ShinyHunters Suspected",
             "title": "ShinyHunters Breach ADT Systems, Compromising 5.5 Million Users&#x27; Data",
@@ -83,18 +137,63 @@ const websiteContent = {
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/32926",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 26 2026",
-            "headline": "Itron Breach—Utility Firm&#x27;s Internal Systems Compromised",
-            "title": "American Utility Firm Itron Discloses Cybersecurity Breach",
-            "content": "Itron, Inc., a prominent utility firm, has reported a cybersecurity breach involving unauthorized access to its internal IT network. Disclosed through an 8-K filing with the U.S. Securities and Exchange Commission, the breach underscores vulnerabilities in critical infrastructure sectors. The incident highlights the persistent threat of cyberattacks on utility companies, which can have far-reaching implications for service delivery and data security. Itron is currently assessing the breach&#x27;s impact and implementing measures to prevent future incidents. Stakeholders are advised to stay informed on developments and review their own security protocols.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/american-utility-firm-itron-discloses-breach-of-internal-it-network/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 25 2026",
+            "headline": "Anthropic Tests AI Marketplace—Agents Trade Real Goods, Real Money",
+            "title": "Anthropic Launches AI-Driven Marketplace for Agent-on-Agent Commerce",
+            "content": "Anthropic has unveiled an experimental marketplace where AI agents autonomously engage in commerce, acting as both buyers and sellers to negotiate real transactions involving tangible goods and actual currency. This innovative platform aims to explore the capabilities of AI in handling complex commercial interactions without human intervention. The marketplace&#x27;s design allows for dynamic pricing and negotiation strategies, potentially revolutionizing e-commerce by reducing human labor in transactional processes. While the experiment is in its early stages, it raises questions about the future role of AI in global markets and the ethical considerations of autonomous economic agents. Professionals should monitor developments for potential applications in automated trading and supply chain management.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 25 2026",
+            "headline": "OpenAI CEO Apologizes for Oversight in Tumbler Ridge Incident",
+            "title": "OpenAI CEO Issues Apology for Failing to Alert Authorities in Shooting Case",
+            "content": "OpenAI CEO Sam Altman has publicly apologized to the Tumbler Ridge community in Canada for his company&#x27;s failure to notify law enforcement about a suspect involved in a recent mass shooting. In a letter addressed to the residents, Altman expressed regret over the oversight, which has sparked discussions about the responsibilities of AI companies in monitoring and reporting potential threats. This incident highlights the ongoing debate over privacy versus security in AI surveillance and the ethical obligations of tech firms in preventing harm. Security professionals should consider the implications of AI-driven monitoring systems and the need for robust protocols to ensure public safety.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Musk vs. Altman—Court Battle Over AI&#x27;s Early Days Begins",
+            "title": "Legal Showdown Between Elon Musk and OpenAI Over AI Origins",
+            "content": "The courtroom battle between Elon Musk and OpenAI has commenced, focusing on the contentious early history of AI development and the distribution of credit and financial rewards. This high-profile trial is expected to reveal confidential details about the foundational days of AI innovation, with both parties vying for recognition and compensation. The case underscores the competitive nature of AI advancements and the complex web of intellectual property rights in the tech industry. Developers and tech leaders should watch for insights into the collaborative and competitive dynamics that have shaped AI&#x27;s evolution.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/919534/musk-openai-trial-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "YouTube Tests AI Search—Guided Answers for Premium Users",
+            "title": "YouTube Introduces AI-Powered Search Feature for Enhanced User Experience",
+            "content": "YouTube is piloting an AI-enhanced search feature that provides guided answers, available to Premium subscribers in the United States on an opt-in basis. This new functionality leverages artificial intelligence to deliver more precise search results and assist users in finding relevant content more efficiently. By integrating AI into its search capabilities, YouTube aims to improve user engagement and satisfaction, setting a precedent for other platforms to enhance their search functionalities. Tech professionals should evaluate the potential impact of AI-driven search tools on content discovery and user interaction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/28/youtube-is-testing-an-ai-powered-search-feature-that-shows-guided-answers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Neurable Seeks Partners for Consumer &#x27;Mind-Reading&#x27; Wearables",
+            "title": "Neurable Aims to License Neural Tech for Consumer Wearable Market",
+            "content": "BCI startup Neurable is exploring licensing opportunities for its non-invasive &quot;mind-reading&quot; technology, targeting consumer wearable applications. The company&#x27;s neural data collection technology allows for the interpretation of brain signals, which could be integrated into various consumer devices to enhance user experiences. Neurable&#x27;s CEO envisions applications ranging from gaming to health monitoring, potentially transforming how users interact with technology. This move signifies a growing trend in brain-computer interface (BCI) technology, highlighting the need for ethical considerations and data privacy in consumer applications. Industry stakeholders should assess the implications of BCI advancements on product development and user privacy.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/28/bci-startup-neurable-looks-to-license-its-mind-reading-tech-for-consumer-wearables/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Red Hat Enhances OpenClaw Security with Tank OS",
+            "title": "Tank OS Boosts Security for Red Hat&#x27;s OpenClaw AI Deployments",
+            "content": "Red Hat has enhanced the security of its OpenClaw AI deployments with the introduction of Tank OS, a containerization solution designed to improve reliability and safety. Tank OS encapsulates OpenClaw AI agents, allowing them to operate more securely, particularly in environments managing large fleets of AI systems. This development addresses the growing need for robust security measures in enterprise AI applications, ensuring that AI agents can perform tasks without compromising system integrity. IT professionals managing AI deployments should consider adopting containerization strategies to mitigate risks and enhance operational security.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/28/red-hats-openclaw-maintainer-just-made-enterprise-claw-deployments-a-lot-safer/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 27 2026",
             "headline": "Symphony Boosts Engineering—Open-Source Codex Orchestration Unveiled",
@@ -102,15 +201,6 @@ const websiteContent = {
             "content": "OpenAI has introduced Symphony, an open-source specification designed to transform issue trackers into continuous agent systems. This innovation aims to enhance engineering productivity by reducing the need for context switching, a common challenge in software development. Symphony leverages Codex orchestration to automate and streamline workflows, potentially increasing output and efficiency across engineering teams. This development is part of a broader trend towards open-source solutions that empower developers with more flexible and customizable tools. Organizations are encouraged to explore Symphony&#x27;s capabilities to optimize their engineering processes and improve overall productivity.",
             "source": "OpenAI News",
             "sourceUrl": "https://openai.com/index/open-source-codex-orchestration-symphony",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 23 2026",
-            "headline": "GPT-5.5 Bio Bug Bounty—$25K for Jailbreak Discoveries",
-            "title": "OpenAI Launches GPT-5.5 Bio Bug Bounty for Bio Safety Jailbreaks",
-            "content": "OpenAI has announced the GPT-5.5 Bio Bug Bounty, a red-teaming initiative aimed at identifying universal jailbreaks that pose bio safety risks. Participants in this challenge can earn rewards of up to $25,000 for uncovering vulnerabilities that could compromise the safety of biological data processed by GPT-5.5. This initiative underscores OpenAI&#x27;s commitment to ensuring the security and integrity of its AI models, particularly in sensitive applications involving biological information. Security professionals and researchers are encouraged to participate in this bounty to help fortify the model against potential misuse.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
             "relatedResources": []
         },
         {
@@ -183,33 +273,6 @@ const websiteContent = {
             "content": "The automotive industry is witnessing a shift as AI-designed cars begin to take shape, moving beyond traditional sketch-based design processes. Advanced 3D visualization and VR sculpting platforms are now integral to developing new vehicle models, streamlining design iterations and enhancing precision. This evolution could significantly reduce time-to-market and production costs, offering a competitive edge to manufacturers who adopt these technologies. Automotive designers and engineers should explore AI-driven tools to stay ahead in the rapidly evolving market. The trend towards AI integration in design highlights the broader impact of AI across industries.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/transportation/918411/gm-ai-car-design-nissan-neural-concept",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Meta&#x27;s Space Solar Deal—Powering Nights with Beamed Energy",
-            "title": "Meta Secures Space-Based Solar Power Deal for Nighttime Energy",
-            "content": "Meta has signed a groundbreaking contract with Overview Energy to receive solar power beamed from space, marking a significant step towards sustainable energy solutions. This initiative aims to provide power during nighttime hours, addressing a critical limitation of traditional solar energy. The deal represents a pioneering move in the use of space-based solar technology, potentially setting a precedent for other tech giants. Energy professionals and tech leaders should evaluate the feasibility and scalability of such solutions for broader application. This development highlights the intersection of space technology and renewable energy in addressing global power challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/27/meta-inks-deal-for-solar-power-at-night-beamed-from-space/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 26 2026",
-            "headline": "OpenAI&#x27;s Five Principles for AGI—Ensuring Global Benefit",
-            "title": "OpenAI Outlines Five Guiding Principles for AGI Development",
-            "content": "OpenAI CEO Sam Altman has shared five core principles that guide the organization&#x27;s work towards ensuring artificial general intelligence (AGI) benefits all of humanity. These principles emphasize safety, transparency, and collaboration with global stakeholders. OpenAI&#x27;s mission is to develop AGI that is safe and aligned with human values, while fostering an open dialogue with the public and policymakers. The organization is committed to sharing its research and engaging with diverse communities to address ethical and technical challenges. This announcement underscores OpenAI&#x27;s dedication to responsible AI development amid growing concerns about the societal impacts of advanced AI systems.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/our-principles",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 26 2026",
-            "headline": "Bay Area Home Sale Requires Anthropic Equity—Unique Real Estate Deal",
-            "title": "Unique Real Estate Offer: Bay Area Home for Anthropic Equity",
-            "content": "A 13-acre property in Mill Valley, north of San Francisco, is being offered for sale with a unique condition: the buyer must possess equity in Anthropic, an AI research company. This unconventional real estate deal highlights the growing influence of tech companies in the Bay Area&#x27;s housing market. The property, known for its scenic views and proximity to tech hubs, is attracting interest from potential buyers within the tech industry. This trend reflects the increasing integration of tech assets into traditional markets, as property owners seek innovative ways to leverage the region&#x27;s booming tech economy. Prospective buyers should consider the implications of such equity-based transactions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/26/to-buy-this-bay-area-home-youll-need-anthropic-equity/",
             "relatedResources": []
         }
     ],
