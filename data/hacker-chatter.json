@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-28T05:43:47.016927",
+  "last_updated": "2026-04-28T16:22:58.616001",
   "total_incidents": 27632,
   "incidents": [
     {
@@ -330452,7 +330452,7 @@
       "threat_actor": "cryptolocker",
       "date_discovered": "2019-04-01 00:00:00.000000",
       "industry": "Communication",
-      "website": "",
+      "website": "townsquaremedia.com",
       "claim": "",
       "screenshot": "",
       "url": "",
@@ -330956,7 +330956,7 @@
       "threat_actor": "wannacry",
       "date_discovered": "2017-05-12 00:00:00.000000",
       "industry": "Transportation Systems",
-      "website": "",
+      "website": "fedex.com",
       "claim": "",
       "screenshot": "",
       "url": "",
