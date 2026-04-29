@@ -85,6 +85,36 @@ def generate_html(control, domain):
             <a href="/tools/grc-assessment/" class="cta-btn">Start Free Gap Analysis</a>
         </div>
     </div>
+
+    <!-- Carbon Ads via Fullres -->
+    <script>
+        (function () {{
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        }})();
+    </script>
+
+    <!-- Google Analytics 4 -->
+    <script>
+        window.addEventListener('load', function () {{
+            setTimeout(function () {{
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+
+                gtmScript.onload = function () {{
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() {{ dataLayer.push(arguments); }}
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                }};
+            }}, 500); // Small delay to prioritize visual rendering
+        }});
+    </script>
 </body>
 </html>
 """
@@ -151,6 +181,36 @@ def main():
             
     glossary_html += """        </div>
     </div>
+
+    <!-- Carbon Ads via Fullres -->
+    <script>
+        (function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        })();
+    </script>
+
+    <!-- Google Analytics 4 -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 500);
+        });
+    </script>
 </body>
 </html>"""
     
