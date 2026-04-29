@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO 27001 Data Masking | Gap Analysis & Evidence Guide</title>
+    <meta name="description" content="Free expert guidance, evidence requirements, and remediation advice for ISO 27001 Data Masking. Part of TheHGTech's free GRC Engine.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/m-core.css">
+    <link rel="stylesheet" href="/m-layout.css">
+    <style>
+        body { background-color: #0a0a0a; color: #fff; font-family: 'Inter', sans-serif; }
+        .container { max-width: 800px; margin: 100px auto; padding: 20px; }
+        h1 { background: linear-gradient(90deg, #00d9ff, #0055ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+        .card h3 { color: #00d9ff; margin-top: 0; }
+        .cta-btn { display: inline-block; background: #00d9ff; color: #000; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/tools/grc-assessment/" style="color: #888; text-decoration: none;">&larr; Back to GRC Engine</a>
+        <h1 style="margin-top:20px;">ISO 27001 Data Masking</h1>
+        <p><strong>Domain:</strong> Technological Controls</p>
+        
+        <div class="card">
+            <h3>Auditor Question</h3>
+            <p>Is data masking (anonymization, pseudonymization) implemented to protect sensitive data to reduce risk during testing or analysis?</p>
+        </div>
+        
+        <div class="card">
+            <h3>Objective</h3>
+            <p>Prevent the exposure of real customer data to developers or testers who do not have a business need to see it.</p>
+        </div>
+        
+        <div class="card">
+            <h3>Evidence Required</h3>
+            <p>Provide a screenshot of the database masking rule or a snippet of the data obfuscation script used for non-production environments.</p>
+        </div>
+        
+        <div class="card">
+            <h3>Expert Rationale</h3>
+            <p>Developers don't need real credit card numbers to fix a bug. Data masking ensures that even if your 'Staging' environment is hacked, the attacker only gets useless, fake data instead of your real customer list.</p>
+        </div>
+        
+        <div class="card">
+            <h3>Remediation Advice</h3>
+            <p>Implement automated data masking in all non-production SQL environments. Replace real names/emails with randomized synthetic data.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <h2>Ready to assess your entire ISMS?</h2>
+            <p>Run a complete, 100% free gap analysis in your browser.</p>
+            <a href="/tools/grc-assessment/" class="cta-btn">Start Free Gap Analysis</a>
+        </div>
+    </div>
+</body>
+</html>
