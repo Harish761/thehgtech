@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-04-29T02:55:33.160317",
+  "last_updated": "2026-04-29T13:58:16.047618",
   "period": "Last 7 days",
-  "total_groups": 28,
+  "total_groups": 27,
   "total_victims": 200,
   "groups": [
     {
@@ -175,93 +175,8 @@
       ]
     },
     {
-      "name": "Incransom",
-      "count": 15,
-      "victims": [
-        {
-          "name": "https://www.fulcrumre.com/",
-          "date": "2026-04-29T02:23:08+00:00",
-          "url": "https://www.ransomware.live/id/aHR0cHM6Ly93d3cuZnVsY3J1bXJlLmNvbS9AaW5jcmFuc29t",
-          "discovered_date": "2026-04-29T02:23:08+00:00"
-        },
-        {
-          "name": "nbd3pl.com",
-          "date": "2026-04-29T00:22:28+00:00",
-          "url": "https://www.ransomware.live/id/bmJkM3BsLmNvbUBpbmNyYW5zb20=",
-          "discovered_date": "2026-04-29T00:22:28+00:00"
-        },
-        {
-          "name": "www.durable-tech.com",
-          "date": "2026-04-28T09:46:08+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LmR1cmFibGUtdGVjaC5jb21AaW5jcmFuc29t",
-          "discovered_date": "2026-04-28T09:46:08+00:00"
-        },
-        {
-          "name": "sumacinc.com",
-          "date": "2026-04-28T03:49:46+00:00",
-          "url": "https://www.ransomware.live/id/c3VtYWNpbmMuY29tQGluY3JhbnNvbQ==",
-          "discovered_date": "2026-04-28T03:49:46+00:00"
-        },
-        {
-          "name": "BELFOR",
-          "date": "2026-04-27T13:57:55+00:00",
-          "url": "https://www.ransomware.live/id/QkVMRk9SQGluY3JhbnNvbQ==",
-          "discovered_date": "2026-04-27T13:57:55+00:00"
-        },
-        {
-          "name": "Selex - Gruppo Commerciale",
-          "date": "2026-04-27T13:57:41+00:00",
-          "url": "https://www.ransomware.live/id/U2VsZXggLSBHcnVwcG8gQ29tbWVyY2lhbGVAaW5jcmFuc29t",
-          "discovered_date": "2026-04-27T13:57:41+00:00"
-        },
-        {
-          "name": "ldisolutions.com",
-          "date": "2026-04-27T12:05:36+00:00",
-          "url": "https://www.ransomware.live/id/bGRpc29sdXRpb25zLmNvbUBpbmNyYW5zb20=",
-          "discovered_date": "2026-04-27T12:05:36+00:00"
-        },
-        {
-          "name": "MTCI",
-          "date": "2026-04-27T07:38:46+00:00",
-          "url": "https://www.ransomware.live/id/TVRDSUBpbmNyYW5zb20=",
-          "discovered_date": "2026-04-27T07:38:46+00:00"
-        },
-        {
-          "name": "reddycardiology.com",
-          "date": "2026-04-27T07:38:14+00:00",
-          "url": "https://www.ransomware.live/id/cmVkZHljYXJkaW9sb2d5LmNvbUBpbmNyYW5zb20=",
-          "discovered_date": "2026-04-27T07:38:14+00:00"
-        },
-        {
-          "name": "krauseundco",
-          "date": "2026-04-25T00:04:02+00:00",
-          "url": "https://www.ransomware.live/id/a3JhdXNldW5kY29AaW5jcmFuc29t",
-          "discovered_date": "2026-04-25T00:04:02+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "DE",
-        "IT",
-        "SE",
-        "SG",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        2,
-        1,
-        0,
-        5,
-        2,
-        2
-      ]
-    },
-    {
       "name": "Dragonforce",
-      "count": 14,
+      "count": 13,
       "victims": [
         {
           "name": "Promotion AB",
@@ -345,82 +260,246 @@
       ]
     },
     {
-      "name": "Thegentlemen",
-      "count": 9,
+      "name": "Lockbit5",
+      "count": 12,
       "victims": [
         {
-          "name": "St Stephens International",
-          "date": "2026-04-27T14:04:57+00:00",
-          "url": "https://www.ransomware.live/id/U3QgU3RlcGhlbnMgSW50ZXJuYXRpb25hbEB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-04-27T14:04:57+00:00"
+          "name": "defcon5italy.com",
+          "date": "2026-04-29T10:33:20+00:00",
+          "url": "https://www.ransomware.live/id/ZGVmY29uNWl0YWx5LmNvbUBsb2NrYml0NQ==",
+          "discovered_date": "2026-04-29T10:33:20+00:00"
         },
         {
-          "name": "EEC Group",
-          "date": "2026-04-26T15:52:07+00:00",
-          "url": "https://www.ransomware.live/id/RUVDIEdyb3VwQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-04-26T15:52:07+00:00"
+          "name": "planetsport.ma",
+          "date": "2026-04-29T10:33:04+00:00",
+          "url": "https://www.ransomware.live/id/cGxhbmV0c3BvcnQubWFAbG9ja2JpdDU=",
+          "discovered_date": "2026-04-29T10:33:04+00:00"
         },
         {
-          "name": "Coralina",
-          "date": "2026-04-26T15:52:02+00:00",
-          "url": "https://www.ransomware.live/id/Q29yYWxpbmFAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-04-26T15:52:02+00:00"
+          "name": "pricon.com.ph",
+          "date": "2026-04-29T10:32:51+00:00",
+          "url": "https://www.ransomware.live/id/cHJpY29uLmNvbS5waEBsb2NrYml0NQ==",
+          "discovered_date": "2026-04-29T10:32:51+00:00"
         },
         {
-          "name": "Lawson Software",
-          "date": "2026-04-26T15:51:57+00:00",
-          "url": "https://www.ransomware.live/id/TGF3c29uIFNvZnR3YXJlQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-04-26T15:51:57+00:00"
+          "name": "instapack.es",
+          "date": "2026-04-29T10:32:35+00:00",
+          "url": "https://www.ransomware.live/id/aW5zdGFwYWNrLmVzQGxvY2tiaXQ1",
+          "discovered_date": "2026-04-29T10:32:35+00:00"
         },
         {
-          "name": "Suzhou Yike Kejian",
-          "date": "2026-04-26T15:51:53+00:00",
-          "url": "https://www.ransomware.live/id/U3V6aG91IFlpa2UgS2VqaWFuQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-04-26T15:51:53+00:00"
+          "name": "stllc.org",
+          "date": "2026-04-29T10:32:22+00:00",
+          "url": "https://www.ransomware.live/id/c3RsbGMub3JnQGxvY2tiaXQ1",
+          "discovered_date": "2026-04-29T10:32:22+00:00"
         },
         {
-          "name": "SmartSystems",
-          "date": "2026-04-23T06:28:07+00:00",
-          "url": "https://www.ransomware.live/id/U21hcnRTeXN0ZW1zQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-04-23T06:28:07+00:00"
+          "name": "studiopiu.net",
+          "date": "2026-04-26T09:56:07+00:00",
+          "url": "https://www.ransomware.live/id/c3R1ZGlvcGl1Lm5ldEBsb2NrYml0NQ==",
+          "discovered_date": "2026-04-26T09:56:07+00:00"
         },
         {
-          "name": "Champion Homes",
-          "date": "2026-04-23T06:27:43+00:00",
-          "url": "https://www.ransomware.live/id/Q2hhbXBpb24gSG9tZXNAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-04-23T06:27:43+00:00"
+          "name": "murni.co.id",
+          "date": "2026-04-26T09:55:53+00:00",
+          "url": "https://www.ransomware.live/id/bXVybmkuY28uaWRAbG9ja2JpdDU=",
+          "discovered_date": "2026-04-26T09:55:53+00:00"
         },
         {
-          "name": "Euro Creations",
-          "date": "2026-04-23T06:27:39+00:00",
-          "url": "https://www.ransomware.live/id/RXVybyBDcmVhdGlvbnNAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-04-23T06:27:39+00:00"
+          "name": "bardehle.com",
+          "date": "2026-04-26T09:55:39+00:00",
+          "url": "https://www.ransomware.live/id/YmFyZGVobGUuY29tQGxvY2tiaXQ1",
+          "discovered_date": "2026-04-26T09:55:39+00:00"
         },
         {
-          "name": "Uniview Technologies",
-          "date": "2026-04-23T06:27:15+00:00",
-          "url": "https://www.ransomware.live/id/VW5pdmlldyBUZWNobm9sb2dpZXNAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-04-23T06:27:15+00:00"
+          "name": "erstransportes.com.br",
+          "date": "2026-04-26T09:55:26+00:00",
+          "url": "https://www.ransomware.live/id/ZXJzdHJhbnNwb3J0ZXMuY29tLmJyQGxvY2tiaXQ1",
+          "discovered_date": "2026-04-26T09:55:26+00:00"
+        },
+        {
+          "name": "bladex.com",
+          "date": "2026-04-26T09:55:11+00:00",
+          "url": "https://www.ransomware.live/id/YmxhZGV4LmNvbUBsb2NrYml0NQ==",
+          "discovered_date": "2026-04-26T09:55:11+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "BR",
+        "DE",
+        "ES",
+        "ID",
+        "IT"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "Incransom",
+      "count": 12,
+      "victims": [
+        {
+          "name": "https://www.fulcrumre.com/",
+          "date": "2026-04-29T02:23:08+00:00",
+          "url": "https://www.ransomware.live/id/aHR0cHM6Ly93d3cuZnVsY3J1bXJlLmNvbS9AaW5jcmFuc29t",
+          "discovered_date": "2026-04-29T02:23:08+00:00"
+        },
+        {
+          "name": "nbd3pl.com",
+          "date": "2026-04-29T00:22:28+00:00",
+          "url": "https://www.ransomware.live/id/bmJkM3BsLmNvbUBpbmNyYW5zb20=",
+          "discovered_date": "2026-04-29T00:22:28+00:00"
+        },
+        {
+          "name": "www.durable-tech.com",
+          "date": "2026-04-28T09:46:08+00:00",
+          "url": "https://www.ransomware.live/id/d3d3LmR1cmFibGUtdGVjaC5jb21AaW5jcmFuc29t",
+          "discovered_date": "2026-04-28T09:46:08+00:00"
+        },
+        {
+          "name": "sumacinc.com",
+          "date": "2026-04-28T03:49:46+00:00",
+          "url": "https://www.ransomware.live/id/c3VtYWNpbmMuY29tQGluY3JhbnNvbQ==",
+          "discovered_date": "2026-04-28T03:49:46+00:00"
+        },
+        {
+          "name": "BELFOR",
+          "date": "2026-04-27T13:57:55+00:00",
+          "url": "https://www.ransomware.live/id/QkVMRk9SQGluY3JhbnNvbQ==",
+          "discovered_date": "2026-04-27T13:57:55+00:00"
+        },
+        {
+          "name": "Selex - Gruppo Commerciale",
+          "date": "2026-04-27T13:57:41+00:00",
+          "url": "https://www.ransomware.live/id/U2VsZXggLSBHcnVwcG8gQ29tbWVyY2lhbGVAaW5jcmFuc29t",
+          "discovered_date": "2026-04-27T13:57:41+00:00"
+        },
+        {
+          "name": "ldisolutions.com",
+          "date": "2026-04-27T12:05:36+00:00",
+          "url": "https://www.ransomware.live/id/bGRpc29sdXRpb25zLmNvbUBpbmNyYW5zb20=",
+          "discovered_date": "2026-04-27T12:05:36+00:00"
+        },
+        {
+          "name": "MTCI",
+          "date": "2026-04-27T07:38:46+00:00",
+          "url": "https://www.ransomware.live/id/TVRDSUBpbmNyYW5zb20=",
+          "discovered_date": "2026-04-27T07:38:46+00:00"
+        },
+        {
+          "name": "reddycardiology.com",
+          "date": "2026-04-27T07:38:14+00:00",
+          "url": "https://www.ransomware.live/id/cmVkZHljYXJkaW9sb2d5LmNvbUBpbmNyYW5zb20=",
+          "discovered_date": "2026-04-27T07:38:14+00:00"
+        },
+        {
+          "name": "krauseundco",
+          "date": "2026-04-25T00:04:02+00:00",
+          "url": "https://www.ransomware.live/id/a3JhdXNldW5kY29AaW5jcmFuc29t",
+          "discovered_date": "2026-04-25T00:04:02+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "DE",
+        "IT",
+        "SE",
+        "SG",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        2,
+        1,
+        0,
+        5,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "M3Rx",
+      "count": 8,
+      "victims": [
+        {
+          "name": "dmschweiz.ch",
+          "date": "2026-04-29T10:10:38+00:00",
+          "url": "https://www.ransomware.live/id/ZG1zY2h3ZWl6LmNoQG0zcng=",
+          "discovered_date": "2026-04-29T10:10:38+00:00"
+        },
+        {
+          "name": "anvilarts.org.uk",
+          "date": "2026-04-29T10:10:21+00:00",
+          "url": "https://www.ransomware.live/id/YW52aWxhcnRzLm9yZy51a0BtM3J4",
+          "discovered_date": "2026-04-29T10:10:21+00:00"
+        },
+        {
+          "name": "primeproperties.com.au",
+          "date": "2026-04-29T10:10:00+00:00",
+          "url": "https://www.ransomware.live/id/cHJpbWVwcm9wZXJ0aWVzLmNvbS5hdUBtM3J4",
+          "discovered_date": "2026-04-29T10:10:00+00:00"
+        },
+        {
+          "name": "airdriephysio.com",
+          "date": "2026-04-29T10:09:42+00:00",
+          "url": "https://www.ransomware.live/id/YWlyZHJpZXBoeXNpby5jb21AbTNyeA==",
+          "discovered_date": "2026-04-29T10:09:42+00:00"
+        },
+        {
+          "name": "rainforestclean.com",
+          "date": "2026-04-29T10:09:24+00:00",
+          "url": "https://www.ransomware.live/id/cmFpbmZvcmVzdGNsZWFuLmNvbUBtM3J4",
+          "discovered_date": "2026-04-29T10:09:24+00:00"
+        },
+        {
+          "name": "rotak.it",
+          "date": "2026-04-29T10:09:07+00:00",
+          "url": "https://www.ransomware.live/id/cm90YWsuaXRAbTNyeA==",
+          "discovered_date": "2026-04-29T10:09:07+00:00"
+        },
+        {
+          "name": "osoftec.com",
+          "date": "2026-04-29T10:08:49+00:00",
+          "url": "https://www.ransomware.live/id/b3NvZnRlYy5jb21AbTNyeA==",
+          "discovered_date": "2026-04-29T10:08:49+00:00"
+        },
+        {
+          "name": "boxtopia.co.uk",
+          "date": "2026-04-29T10:08:27+00:00",
+          "url": "https://www.ransomware.live/id/Ym94dG9waWEuY28udWtAbTNyeA==",
+          "discovered_date": "2026-04-29T10:08:27+00:00"
         }
       ],
       "industries": [],
       "countries": [
         "AU",
-        "CN",
-        "CO",
-        "EG",
-        "GB"
+        "CH",
+        "DE",
+        "GB",
+        "IT"
       ],
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        4,
         0,
         0,
-        4,
-        1,
         0,
-        0
+        0,
+        0,
+        0,
+        8
       ]
     },
     {
@@ -497,73 +576,6 @@
       ]
     },
     {
-      "name": "Lockbit5",
-      "count": 7,
-      "victims": [
-        {
-          "name": "studiopiu.net",
-          "date": "2026-04-26T09:56:07+00:00",
-          "url": "https://www.ransomware.live/id/c3R1ZGlvcGl1Lm5ldEBsb2NrYml0NQ==",
-          "discovered_date": "2026-04-26T09:56:07+00:00"
-        },
-        {
-          "name": "murni.co.id",
-          "date": "2026-04-26T09:55:53+00:00",
-          "url": "https://www.ransomware.live/id/bXVybmkuY28uaWRAbG9ja2JpdDU=",
-          "discovered_date": "2026-04-26T09:55:53+00:00"
-        },
-        {
-          "name": "bardehle.com",
-          "date": "2026-04-26T09:55:39+00:00",
-          "url": "https://www.ransomware.live/id/YmFyZGVobGUuY29tQGxvY2tiaXQ1",
-          "discovered_date": "2026-04-26T09:55:39+00:00"
-        },
-        {
-          "name": "erstransportes.com.br",
-          "date": "2026-04-26T09:55:26+00:00",
-          "url": "https://www.ransomware.live/id/ZXJzdHJhbnNwb3J0ZXMuY29tLmJyQGxvY2tiaXQ1",
-          "discovered_date": "2026-04-26T09:55:26+00:00"
-        },
-        {
-          "name": "bladex.com",
-          "date": "2026-04-26T09:55:11+00:00",
-          "url": "https://www.ransomware.live/id/YmxhZGV4LmNvbUBsb2NrYml0NQ==",
-          "discovered_date": "2026-04-26T09:55:11+00:00"
-        },
-        {
-          "name": "heinrichs-logistic.de",
-          "date": "2026-04-26T09:54:54+00:00",
-          "url": "https://www.ransomware.live/id/aGVpbnJpY2hzLWxvZ2lzdGljLmRlQGxvY2tiaXQ1",
-          "discovered_date": "2026-04-26T09:54:54+00:00"
-        },
-        {
-          "name": "merlo.de",
-          "date": "2026-04-26T09:54:38+00:00",
-          "url": "https://www.ransomware.live/id/bWVybG8uZGVAbG9ja2JpdDU=",
-          "discovered_date": "2026-04-26T09:54:38+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "BR",
-        "DE",
-        "ID",
-        "IT",
-        "PA"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        7,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Worldleaks",
       "count": 6,
       "victims": [
@@ -625,6 +637,61 @@
       ]
     },
     {
+      "name": "Thegentlemen",
+      "count": 5,
+      "victims": [
+        {
+          "name": "St Stephens International",
+          "date": "2026-04-27T14:04:57+00:00",
+          "url": "https://www.ransomware.live/id/U3QgU3RlcGhlbnMgSW50ZXJuYXRpb25hbEB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-04-27T14:04:57+00:00"
+        },
+        {
+          "name": "EEC Group",
+          "date": "2026-04-26T15:52:07+00:00",
+          "url": "https://www.ransomware.live/id/RUVDIEdyb3VwQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-04-26T15:52:07+00:00"
+        },
+        {
+          "name": "Coralina",
+          "date": "2026-04-26T15:52:02+00:00",
+          "url": "https://www.ransomware.live/id/Q29yYWxpbmFAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-04-26T15:52:02+00:00"
+        },
+        {
+          "name": "Lawson Software",
+          "date": "2026-04-26T15:51:57+00:00",
+          "url": "https://www.ransomware.live/id/TGF3c29uIFNvZnR3YXJlQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-04-26T15:51:57+00:00"
+        },
+        {
+          "name": "Suzhou Yike Kejian",
+          "date": "2026-04-26T15:51:53+00:00",
+          "url": "https://www.ransomware.live/id/U3V6aG91IFlpa2UgS2VqaWFuQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-04-26T15:51:53+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "CN",
+        "CO",
+        "EG",
+        "GB",
+        "TH"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        4,
+        1,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Payload",
       "count": 5,
       "victims": [
@@ -680,53 +747,6 @@
       ]
     },
     {
-      "name": "Silentransomgroup",
-      "count": 4,
-      "victims": [
-        {
-          "name": "Floyd Skeren Manukian Langevin, LLP",
-          "date": "2026-04-28T14:45:13+00:00",
-          "url": "https://www.ransomware.live/id/RmxveWQgU2tlcmVuIE1hbnVraWFuIExhbmdldmluLCBMTFBAU2lsZW50UmFuc29tR3JvdXA=",
-          "discovered_date": "2026-04-28T14:45:13+00:00"
-        },
-        {
-          "name": "Floyd Skeren Manukian Langevin, LLP Information",
-          "date": "2026-04-28T03:49:13+00:00",
-          "url": "https://www.ransomware.live/id/RmxveWQgU2tlcmVuIE1hbnVraWFuIExhbmdldmluLCBMTFAgSW5mb3JtYXRpb25AU2lsZW50UmFuc29tR3JvdXA=",
-          "discovered_date": "2026-04-28T03:49:13+00:00"
-        },
-        {
-          "name": "Chartwell Law",
-          "date": "2026-04-23T20:18:57+00:00",
-          "url": "https://www.ransomware.live/id/Q2hhcnR3ZWxsIExhd0BTaWxlbnRSYW5zb21Hcm91cA==",
-          "discovered_date": "2026-04-23T20:18:57+00:00"
-        },
-        {
-          "name": "Jackson Lewis",
-          "date": "2026-04-22T22:40:37+00:00",
-          "url": "https://www.ransomware.live/id/SmFja3NvbiBMZXdpc0BTaWxlbnRSYW5zb21Hcm91cA==",
-          "discovered_date": "2026-04-22T22:40:37+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "GB",
-        "N/A",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
       "name": "Nightspire",
       "count": 4,
       "victims": [
@@ -769,6 +789,47 @@
         0,
         2,
         0,
+        0
+      ]
+    },
+    {
+      "name": "Silentransomgroup",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Floyd Skeren Manukian Langevin, LLP",
+          "date": "2026-04-28T14:45:13+00:00",
+          "url": "https://www.ransomware.live/id/RmxveWQgU2tlcmVuIE1hbnVraWFuIExhbmdldmluLCBMTFBAU2lsZW50UmFuc29tR3JvdXA=",
+          "discovered_date": "2026-04-28T14:45:13+00:00"
+        },
+        {
+          "name": "Floyd Skeren Manukian Langevin, LLP Information",
+          "date": "2026-04-28T03:49:13+00:00",
+          "url": "https://www.ransomware.live/id/RmxveWQgU2tlcmVuIE1hbnVraWFuIExhbmdldmluLCBMTFAgSW5mb3JtYXRpb25AU2lsZW50UmFuc29tR3JvdXA=",
+          "discovered_date": "2026-04-28T03:49:13+00:00"
+        },
+        {
+          "name": "Chartwell Law",
+          "date": "2026-04-23T20:18:57+00:00",
+          "url": "https://www.ransomware.live/id/Q2hhcnR3ZWxsIExhd0BTaWxlbnRSYW5zb21Hcm91cA==",
+          "discovered_date": "2026-04-23T20:18:57+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "GB",
+        "N/A",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -882,39 +943,6 @@
         0,
         0,
         2,
-        0
-      ]
-    },
-    {
-      "name": "Chaos",
-      "count": 2,
-      "victims": [
-        {
-          "name": "cadencepetroleum.com",
-          "date": "2026-04-28T20:51:15+00:00",
-          "url": "https://www.ransomware.live/id/Y2FkZW5jZXBldHJvbGV1bS5jb21AY2hhb3M=",
-          "discovered_date": "2026-04-28T20:51:15+00:00"
-        },
-        {
-          "name": "alexandergroup.com",
-          "date": "2026-04-22T21:28:12+00:00",
-          "url": "https://www.ransomware.live/id/YWxleGFuZGVyZ3JvdXAuY29tQGNoYW9z",
-          "discovered_date": "2026-04-22T21:28:12+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
         0
       ]
     },
@@ -1122,36 +1150,29 @@
       ]
     },
     {
-      "name": "Anubis",
-      "count": 2,
+      "name": "Chaos",
+      "count": 1,
       "victims": [
         {
-          "name": "Tractial",
-          "date": "2026-04-23T02:59:05+00:00",
-          "url": "https://www.ransomware.live/id/VHJhY3RpYWxAYW51Ymlz",
-          "discovered_date": "2026-04-23T02:59:05+00:00"
-        },
-        {
-          "name": "Marnell Financial Services",
-          "date": "2026-04-23T02:58:33+00:00",
-          "url": "https://www.ransomware.live/id/TWFybmVsbCBGaW5hbmNpYWwgU2VydmljZXNAYW51Ymlz",
-          "discovered_date": "2026-04-23T02:58:33+00:00"
+          "name": "cadencepetroleum.com",
+          "date": "2026-04-28T20:51:15+00:00",
+          "url": "https://www.ransomware.live/id/Y2FkZW5jZXBldHJvbGV1bS5jb21AY2hhb3M=",
+          "discovered_date": "2026-04-28T20:51:15+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "GB",
         "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        2,
         0,
         0,
         0,
         0,
         0,
+        1,
         0
       ]
     },
@@ -1283,33 +1304,6 @@
       "daily_counts": [
         0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Kairos",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Gregory Jewellers",
-          "date": "2026-04-22T21:38:47+00:00",
-          "url": "https://www.ransomware.live/id/R3JlZ29yeSBKZXdlbGxlcnNAa2Fpcm9z",
-          "discovered_date": "2026-04-22T21:38:47+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "AU"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
         0,
         0,
         0,
