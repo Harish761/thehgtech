@@ -4,14 +4,14 @@ const THEHGTECH_GRC_DATA = {
     "domains": [
         {
             "id": "domain_0",
-            "name": "Management System Requirements (Clauses 4\u201310)",
+            "name": "Management System Requirements (Governance Core)",
             "icon": "fa-landmark",
             "isMandatory": true,
-            "description": "MANDATORY \u2014 ISO Management System Requirements. The governance backbone of ISO 27001:2022. These clauses evaluate the ISMS itself \u2014 not individual controls. Failure here results in a Major Non-Conformity that blocks certification regardless of your Annex A scores.",
+            "description": "MANDATORY \u2014 Core Management System Requirements. The governance backbone of a certified Information Security Management System. These requirements evaluate the ISMS itself \u2014 not individual controls. Failure here results in a Major Non-Conformity that blocks certification regardless of your operational control scores.",
             "controls": [
                 {
                     "control_id": "CL4.1",
-                    "control_title": "Clause 4.1\u20134.2: Context of the Organisation",
+                    "control_title": "Governance Requirement 4.x: Business Context & Organization",
                     "auditor_question": "Has the organisation formally documented the internal and external issues relevant to its ISMS, and identified the needs and expectations of interested parties (regulators, customers, partners)?",
                     "evidence_required": "Provide the documented Context Analysis (or equivalent PESTLE/stakeholder analysis) showing the organisation's ISMS boundary definition and list of interested parties with their requirements.",
                     "objective": "Establish a clear, formally scoped ISMS that is aligned to business context and stakeholder expectations \u2014 the foundation for all risk-based decisions.",
@@ -26,7 +26,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL4.3",
-                    "control_title": "Clause 4.3\u20134.4: ISMS Scope and Design",
+                    "control_title": "Governance Requirement 4.x: ISMS Boundary Definition",
                     "auditor_question": "Is the scope of the ISMS formally defined, documented, and approved \u2014 clearly stating which organisational units, locations, assets, and processes are included and excluded?",
                     "evidence_required": "Provide the signed ISMS Scope Statement document, including a rationale for any exclusions and confirmation it has been approved at the executive level.",
                     "objective": "Ensure the certification boundary is explicit, auditable, and defensible, preventing scope creep or ambiguity during Stage 2 audits.",
@@ -41,7 +41,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL5.1",
-                    "control_title": "Clause 5.1: Leadership and Commitment",
+                    "control_title": "Governance Requirement 5.x: Executive Leadership & Commitment",
                     "auditor_question": "Does top management demonstrably champion the ISMS \u2014 through signed policies, budget allocation for security, and active participation in management reviews?",
                     "evidence_required": "Provide the executive-signed Information Security Policy (with date), evidence of security budget line items, and minutes from a management review meeting where information security was a formal agenda item.",
                     "objective": "Ensure information security is treated as a strategic business priority, not an IT side-project, by requiring visible, documented executive sponsorship.",
@@ -56,7 +56,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL5.2",
-                    "control_title": "Clause 5.2\u20135.3: ISMS Policy and Roles",
+                    "control_title": "Governance Requirement 5.x: Security Policy & Assigned Roles",
                     "auditor_question": "Is there an executive-approved, published Information Security Policy that references ISMS objectives, and are information security roles and responsibilities formally assigned to named individuals?",
                     "evidence_required": "Provide the current Information Security Policy (with version history and approval signature), plus the RACI matrix or role-responsibility document mapping ISMS functions to specific job titles.",
                     "objective": "Establish a clear governance hierarchy with named accountability for ISMS outcomes, preventing 'everyone and no one' from being responsible for security.",
@@ -71,7 +71,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL6.1",
-                    "control_title": "Clause 6.1: Risk Assessment Methodology",
+                    "control_title": "Governance Requirement 6.x: Risk Management Framework",
                     "auditor_question": "Has the organisation defined and consistently applied a formal information security risk assessment methodology \u2014 including risk criteria, acceptance levels, and a documented process for identifying, analysing, and evaluating risks?",
                     "evidence_required": "Provide the Risk Assessment Methodology document and a completed Risk Register from the most recent assessment cycle, showing identified threats, vulnerabilities, likelihood, impact, and risk scores.",
                     "objective": "Ensure risk-based decision-making is systematic and repeatable \u2014 not ad hoc \u2014 so that risk treatment priorities reflect real business exposure.",
@@ -86,7 +86,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL6.2",
-                    "control_title": "Clause 6.2\u20136.3: ISMS Objectives and Planning",
+                    "control_title": "Governance Requirement 6.x: Strategic Security Objectives",
                     "auditor_question": "Are information security objectives formally defined, measurable, and tracked \u2014 and is there a documented plan for achieving them, including owner, timeline, and required resources?",
                     "evidence_required": "Provide the ISMS Objectives document (e.g., 'Reduce critical vulnerability MTTR to <72h by Q3') with evidence of progress tracking (e.g., dashboard, KPI report, or OKR tracker).",
                     "objective": "Translate the abstract commitment to security into concrete, measurable targets that drive accountability and continuous improvement.",
@@ -101,7 +101,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL7.1",
-                    "control_title": "Clause 7.1\u20137.2: Resources and Competence",
+                    "control_title": "Governance Requirement 7.x: Resourcing & Staff Competence",
                     "auditor_question": "Has the organisation determined and allocated the necessary resources for the ISMS, and ensured that personnel performing ISMS functions are competent (via education, training, or experience)?",
                     "evidence_required": "Provide the security team org chart or resource allocation document, plus training completion records or certifications (e.g., CISSP, ISO 27001 Lead Implementer) for ISMS personnel.",
                     "objective": "Ensure the ISMS is not under-resourced or staffed by unqualified individuals, which are the most common causes of implementation failure.",
@@ -116,7 +116,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL7.3",
-                    "control_title": "Clause 7.3\u20137.5: Awareness, Communication and Documentation",
+                    "control_title": "Governance Requirement 7.x: Security Awareness & Document Control",
                     "auditor_question": "Are relevant personnel aware of the Information Security Policy and their ISMS responsibilities? Are all required ISMS documents controlled, versioned, and available to authorised parties?",
                     "evidence_required": "Provide security awareness training completion records, a communication log or intranet post evidencing policy distribution, and the ISMS Document Register showing document versions and approval dates.",
                     "objective": "Ensure the ISMS is not a paper exercise \u2014 its policies must be understood by those who must implement them, and documents must be controlled to prevent use of obsolete versions.",
@@ -131,7 +131,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL8.1",
-                    "control_title": "Clause 8.1\u20138.2: Operational Planning and Risk Assessment Execution",
+                    "control_title": "Governance Requirement 8.x: Operational Risk Execution",
                     "auditor_question": "Are the risk assessment and risk treatment processes actually being executed at planned intervals \u2014 not just documented in theory \u2014 with evidence of current, completed assessments on record?",
                     "evidence_required": "Provide the most recent completed Risk Assessment Report (dated within the last 12 months) and the Risk Treatment Plan showing accepted, mitigated, transferred, or avoided risks with treatment owners.",
                     "objective": "Prove that risk management is operational, not just planned \u2014 a living process that actually drives control implementation decisions.",
@@ -146,7 +146,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL9.1",
-                    "control_title": "Clause 9.1\u20139.2: Performance Monitoring and Internal Audit",
+                    "control_title": "Governance Requirement 9.x: Performance Metrics & Internal Audits",
                     "auditor_question": "Is the organisation monitoring and measuring ISMS performance against defined metrics, and conducting internal audits of the ISMS at planned intervals with a formally documented audit programme?",
                     "evidence_required": "Provide the Internal Audit Programme, the most recent completed Internal Audit Report (including findings and nonconformities), and evidence of corrective actions taken in response to audit findings.",
                     "objective": "Ensure the ISMS has a self-correction mechanism \u2014 internal audits are the primary way the organisation identifies weaknesses before external auditors do.",
@@ -161,7 +161,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL9.3",
-                    "control_title": "Clause 9.3: Management Review",
+                    "control_title": "Governance Requirement 9.x: Executive Management Review",
                     "auditor_question": "Is management reviewing the ISMS at planned intervals \u2014 with documented minutes covering required inputs (audit results, risk treatment status, objective progress) and resulting decisions and actions?",
                     "evidence_required": "Provide signed Management Review Meeting Minutes from the past 12 months, showing the standard required inputs were discussed and that outputs (decisions, resource allocations) were formally recorded.",
                     "objective": "Ensure executive accountability is exercised periodically \u2014 not just at certification time \u2014 keeping the ISMS aligned to evolving business strategy and risk landscape.",
@@ -176,7 +176,7 @@ const THEHGTECH_GRC_DATA = {
                 },
                 {
                     "control_id": "CL10.1",
-                    "control_title": "Clause 10.1\u201310.2: Nonconformity and Continual Improvement",
+                    "control_title": "Governance Requirement 10.x: Corrective Actions & Continual Improvement",
                     "auditor_question": "Does the organisation have a formal process for identifying, logging, investigating, and resolving nonconformities \u2014 and is there evidence of continual improvement actions being initiated and tracked to closure?",
                     "evidence_required": "Provide the Corrective Action Register (or equivalent NCR tracking log) showing at least 3 examples of nonconformities raised, investigated, and closed within the past year, with root cause analysis documented.",
                     "objective": "Demonstrate that the ISMS learns from failures and continuously improves \u2014 the key differentiator between a living management system and a static compliance exercise.",
