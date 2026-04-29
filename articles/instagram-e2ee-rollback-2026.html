@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Meta Deprecates Optional E2EE in Instagram DMs by May 2026: Low Adoption Cited, Privacy Concerns Remain | TheHGTech</title>
+    <title>Meta Deprecates Optional E2EE in Instagram DMs by May 2026: Low Adoption Cited, Privacy Concerns Remain | TheHGTech [2026]</title>
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -292,6 +292,38 @@
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
         });
+    </script>
+
+    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What are the main security risks with AI and LLM systems?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key risks include prompt injection attacks, data poisoning, model theft, adversarial inputs, hallucinations leading to misinformation, and privacy breaches from training data exposure."
+        }
+      },
+{
+        "@type": "Question",
+        "name": "How can organizations secure their AI deployments?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Implement input validation, output filtering, model access controls, regular security testing, monitoring for anomalies, and follow frameworks like OWASP LLM Top 10 and MITRE ATLAS."
+        }
+      },
+{
+        "@type": "Question",
+        "name": "What is prompt injection and how do you prevent it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prompt injection is an attack where malicious inputs manipulate AI behavior. Prevention includes input sanitization, output validation, system prompt protection, and using AI-specific security tools."
+        }
+      }]
+    }
     </script>
 </head>
 
