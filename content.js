@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 29 2026",
+            "headline": "Vercel Breach Exposes OAuth Risks—Shadow AI Threats Loom",
+            "title": "Vercel Breach Highlights Dangers of Shadow AI and OAuth Sprawl",
+            "content": "The recent breach at Vercel underscores the vulnerabilities associated with third-party OAuth integrations, as a compromised OAuth application can become a conduit for widespread damage. The incident highlights how unauthorized access through a single OAuth app can impact downstream customers significantly. This breach serves as a cautionary tale about the unchecked proliferation of shadow AI tools within corporate environments. Organizations are urged to audit their OAuth integrations and enforce strict access controls to mitigate similar risks. The Vercel breach is a stark reminder of the complex security landscape introduced by third-party applications.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/learning-from-the-vercel-breach-shadow-ai-and-oauth-sprawl/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "GitHub Patches Critical RCE Flaw—Millions of Repos at Risk",
+            "title": "GitHub Fixes Critical RCE Vulnerability in Private Repositories",
+            "content": "GitHub has patched a critical remote code execution (RCE) vulnerability identified as CVE-2026-3854, which threatened the security of millions of private repositories. Discovered in early March, the flaw could have allowed attackers to execute arbitrary code, potentially exposing sensitive data across GitHub&#x27;s vast user base. This vulnerability underscores the importance of timely updates and vigilant security practices for developers relying on GitHub&#x27;s platform. Users are advised to review their repository settings and apply security patches promptly to safeguard their code. The incident highlights ongoing challenges in securing cloud-based development environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/github-fixes-rce-flaw-that-gave-access-to-millions-of-private-repos/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "Checkmarx Supply Chain Attack—Data Stolen from GitHub",
+            "title": "Checkmarx Confirms Data Exfiltration in Supply Chain Attack",
+            "content": "Checkmarx has confirmed a data breach resulting from a supply chain attack, with hackers exfiltrating data from its GitHub environment on March 30. The breach occurred a week after malicious code was published, highlighting the vulnerabilities inherent in software supply chains. This incident underscores the critical need for robust security measures and continuous monitoring of code repositories to detect unauthorized changes. Organizations are encouraged to implement stringent code review processes and employ automated tools to identify potential threats. The Checkmarx breach serves as a reminder of the persistent risks posed by supply chain attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/checkmarx-confirms-data-stolen-in-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "CISA Mandates Windows Patch—Zero-Day Exploited",
+            "title": "CISA Orders Federal Agencies to Patch Windows Zero-Day Vulnerability",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a directive for federal agencies to patch a Windows vulnerability actively exploited in zero-day attacks. This urgent order reflects the critical nature of the flaw, which could allow attackers to gain unauthorized access to affected systems. The directive emphasizes the need for immediate action to secure federal networks against potential threats. Agencies are advised to apply the necessary updates and review their security protocols to prevent exploitation. This move by CISA highlights the ongoing battle against zero-day vulnerabilities in widely used software.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-windows-flaw-exploited-in-zero-day-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "cPanel Vulnerability—Update Servers to Prevent Unauthorized Access",
+            "title": "Critical cPanel Authentication Vulnerability Requires Immediate Server Update",
+            "content": "cPanel has released critical security updates to address a vulnerability affecting various authentication paths, which could allow attackers to gain unauthorized access to the control panel software. This issue impacts all currently supported versions of cPanel, necessitating immediate action from users to secure their servers. The vulnerability highlights the importance of regular software updates and proactive security measures to protect sensitive web hosting environments. Users are urged to apply the updates promptly to mitigate potential risks. This incident serves as a reminder of the critical role of timely patch management in maintaining secure systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/critical-cpanel-authentication.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "Chrome 147, Firefox 150—Security Updates Fix Critical Flaws",
+            "title": "Chrome 147 and Firefox 150 Security Updates Address Critical Vulnerabilities",
+            "content": "Google and Mozilla have rolled out security updates for Chrome 147 and Firefox 150, addressing critical and high-severity vulnerabilities that could lead to arbitrary code execution. These updates are crucial for maintaining the security of users&#x27; browsing environments, as the flaws could be exploited by attackers to compromise systems. Users are advised to update their browsers immediately to protect against potential threats. The release of these updates underscores the ongoing efforts by browser developers to enhance security and protect users from evolving cyber threats. Regular updates remain a key defense against vulnerabilities in widely used software.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-147-firefox-150-security-updates-rolling-out/",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 28 2026",
             "headline": "VECT 2.0 Ransomware Destroys Large Files—Data Wiper Alert",
             "title": "Broken VECT 2.0 Ransomware Acts as Data Wiper for Large Files",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "X-Vercel-Set-Bypass-Cookie Header in Honeypot Requests",
-            "title": "Unusual HTTP Requests with X-Vercel-Set-Bypass-Cookie Header Detected",
-            "content": "Security analysts at the SANS Internet Storm Center have observed unusual HTTP requests containing the &quot;X-Vercel-Set-Bypass-Cookie&quot; header in their honeypot systems. This header, appearing in recent traffic, suggests potential attempts to bypass security mechanisms or exploit vulnerabilities. While the exact purpose remains unclear, such activity warrants attention from security teams. Organizations should monitor their networks for similar requests and investigate any anomalies. This finding highlights the need for vigilance against evolving tactics in web-based attacks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32930",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Cursor IDE Bug—Routine Git Actions Turn Risky",
-            "title": "Critical Vulnerability in Cursor IDE Enables Remote Code Execution via Git",
-            "content": "A high-severity vulnerability in the Cursor Integrated Development Environment (IDE) has been disclosed, allowing arbitrary code execution through routine Git interactions. Identified by Novee Security, this flaw poses a significant risk to developers using Cursor IDE, as it can be exploited when cloning and interacting with repositories. The vulnerability underscores the critical need for secure coding practices and regular updates to development tools. Developers are advised to apply patches and review their security protocols to mitigate potential exploitation.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4164250/critical-cursor-bug-could-turn-routine-git-into-rce.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "ADT Data Breach Exposes 5.5M Users—ShinyHunters Suspected",
-            "title": "ShinyHunters Breach ADT Systems, Compromising 5.5 Million Users&#x27; Data",
-            "content": "The ShinyHunters extortion group has reportedly breached ADT&#x27;s systems, compromising the personal data of 5.5 million individuals. The breach, disclosed by Have I Been Pwned, involved the theft of sensitive information, potentially including names, addresses, and contact details. ADT, a major player in home security, is now facing scrutiny over its data protection measures. This incident underscores the ongoing threat posed by cybercriminal groups targeting large databases for extortion and resale on underground forums. Affected users are advised to monitor their accounts for suspicious activity and consider identity theft protection services.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/home-security-giant-adt-data-breach-affects-55-million-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Checkmarx Data Leaked on Dark Web—GitHub Repository Compromised",
-            "title": "Checkmarx Confirms GitHub Repository Data Published on Dark Web",
-            "content": "Checkmarx has confirmed that data from its GitHub repository has been leaked on the dark web following a cyberattack on March 23. The breach, attributed to a cybercriminal group, has raised concerns about the security of supply chain processes. The leaked data could potentially expose sensitive information related to Checkmarx&#x27;s software development and security tools. This incident highlights the vulnerabilities within software supply chains and the importance of securing code repositories. Organizations using Checkmarx&#x27;s services should review their security protocols and monitor for any unusual activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/checkmarx-confirms-github-repository.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Robinhood Flaw Exploited for Phishing—Account Creation Abused",
-            "title": "Robinhood Account Creation Vulnerability Exploited for Phishing Campaigns",
-            "content": "A vulnerability in Robinhood&#x27;s account creation process has been exploited by threat actors to insert phishing messages into legitimate emails. This flaw allowed attackers to deceive users into believing their accounts were compromised, prompting them to divulge sensitive information. The exploitation of this vulnerability highlights the risks associated with automated email systems and the need for robust validation mechanisms. Robinhood users are urged to verify any suspicious communications and report them to the company. This incident serves as a reminder of the importance of securing user onboarding processes.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/robinhood-account-creation-flaw-abused-to-send-phishing-emails/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "GlassWorm Malware Resurfaces—73 OpenVSX Extensions Infected",
-            "title": "GlassWorm Malware Campaign Targets OpenVSX with Malicious Extensions",
-            "content": "The GlassWorm malware campaign has reemerged, targeting the OpenVSX ecosystem with 73 &quot;sleeper&quot; extensions that become malicious after updates. These extensions, initially appearing benign, are designed to execute harmful activities once activated, posing a significant threat to developers using OpenVSX. The campaign underscores the persistent risk of supply chain attacks and the need for vigilance in monitoring third-party software components. Developers are advised to audit their extensions and apply security patches promptly. This resurgence of GlassWorm highlights the evolving tactics of malware authors in exploiting software distribution platforms.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/glassworm-malware-attacks-return-via-73-openvsx-sleeper-extensions/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 29 2026",
+            "headline": "GitHub Fixes Critical Flaw in Under 6 Hours",
+            "title": "GitHub Patches Critical Remote Code Execution Vulnerability in Record Time",
+            "content": "GitHub swiftly addressed a critical remote code execution vulnerability within its internal git infrastructure, resolving the issue in under six hours. Discovered by Wiz Research using AI models, the flaw could have potentially exposed millions of public and private code repositories to unauthorized access. This vulnerability underscores the importance of rapid response in safeguarding software development environments. GitHub&#x27;s quick action prevented potential exploitation, highlighting the platform&#x27;s commitment to security. Developers using GitHub should ensure their repositories are secure and monitor for any unusual activity.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/920295/github-remote-code-execution-vulnerability-fix",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "OpenAI&#x27;s 5-Step Plan for Cybersecurity in AI Era",
+            "title": "OpenAI Proposes Five-Part Strategy to Enhance Cybersecurity in Intelligence Age",
+            "content": "OpenAI has introduced a comprehensive five-part action plan aimed at bolstering cybersecurity as AI technologies become increasingly integrated into critical systems. The strategy emphasizes democratizing AI-powered cyber defense tools and enhancing the protection of vital infrastructures. As AI continues to evolve, the risk of sophisticated cyber threats grows, necessitating proactive measures to safeguard digital environments. OpenAI&#x27;s initiative seeks to empower organizations with advanced defense capabilities, ensuring resilience against emerging threats. Stakeholders in cybersecurity should consider adopting AI-driven solutions to stay ahead of potential vulnerabilities.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "Oracle&#x27;s AI Gamble—A Risky Pivot from Databases",
+            "title": "Oracle&#x27;s Bold Shift to AI Sparks Industry Debate on Market Viability",
+            "content": "Oracle, traditionally known for its database solutions, has made a bold pivot towards artificial intelligence, raising questions about the sustainability of the AI market. Unlike companies like OpenAI that focus on foundational AI models, Oracle&#x27;s approach diverges by integrating AI into its existing business framework. This strategic shift reflects broader industry trends where tech giants are increasingly investing in AI to drive innovation and growth. However, the move also highlights the risks associated with over-reliance on AI amidst market volatility. Industry professionals should monitor Oracle&#x27;s progress as a potential indicator of AI market trends.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920378/oracle-openai-datacenter-buildout",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "Firestorm Labs Secures $82M for Mobile Drone Factories",
+            "title": "Firestorm Labs Raises $82 Million to Deploy Drone Factories in the Field",
+            "content": "Firestorm Labs, a defense startup, has successfully raised $82 million in funding to revolutionize drone manufacturing by deploying mobile factories inside shipping containers. This innovative approach aims to bring production capabilities directly to the front lines, enhancing operational efficiency and responsiveness in defense scenarios. The funding round reflects growing investor confidence in the potential of mobile manufacturing solutions to transform military logistics. Defense industry stakeholders should consider the implications of on-site production for strategic deployment and supply chain optimization.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/29/firestorm-labs-raises-82m-to-take-drone-factories-into-the-field/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "Shapes App Merges Humans and AI in Group Chats",
+            "title": "Shapes App Introduces AI Characters to Human Group Chats for Enhanced Interaction",
+            "content": "The new app, Shapes, is redefining digital communication by integrating AI characters into group chat environments, akin to platforms like Discord. This innovation allows users to interact with AI alongside human participants, offering unique conversational dynamics and enhanced engagement. As AI becomes more prevalent in social applications, Shapes exemplifies the trend of blending human and machine interactions. Users and developers should explore the potential of AI-driven communication tools to enrich user experiences and foster new forms of digital interaction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "Taylor Swift Deepfakes Fuel TikTok Scams",
+            "title": "AI-Generated Celebrity Deepfakes Used in TikTok Scams, Warns Copyleaks",
+            "content": "Authentication company Copyleaks has identified a surge in AI-generated deepfake videos featuring celebrities like Taylor Swift and Rihanna, used to promote fraudulent services on TikTok. These videos often depict celebrities in familiar settings, such as interviews or red carpet events, misleading viewers into believing the endorsements are genuine. The rise of deepfake technology poses significant challenges for digital platforms in verifying content authenticity. Users should remain vigilant and verify the legitimacy of online promotions, while platforms enhance their detection capabilities to combat deepfake scams.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920351/ai-celebrity-deepfake-ads-tiktok-copyleaks",
+            "relatedResources": []
+        },
         {
             "date": "Apr 28 2026",
             "headline": "Otter Integrates Gmail, Salesforce—Expands Enterprise Search Capabilities",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "BCI startup Neurable is exploring licensing opportunities for its non-invasive &quot;mind-reading&quot; technology, targeting consumer wearable applications. The company&#x27;s neural data collection technology allows for the interpretation of brain signals, which could be integrated into various consumer devices to enhance user experiences. Neurable&#x27;s CEO envisions applications ranging from gaming to health monitoring, potentially transforming how users interact with technology. This move signifies a growing trend in brain-computer interface (BCI) technology, highlighting the need for ethical considerations and data privacy in consumer applications. Industry stakeholders should assess the implications of BCI advancements on product development and user privacy.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/28/bci-startup-neurable-looks-to-license-its-mind-reading-tech-for-consumer-wearables/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Red Hat Enhances OpenClaw Security with Tank OS",
-            "title": "Tank OS Boosts Security for Red Hat&#x27;s OpenClaw AI Deployments",
-            "content": "Red Hat has enhanced the security of its OpenClaw AI deployments with the introduction of Tank OS, a containerization solution designed to improve reliability and safety. Tank OS encapsulates OpenClaw AI agents, allowing them to operate more securely, particularly in environments managing large fleets of AI systems. This development addresses the growing need for robust security measures in enterprise AI applications, ensuring that AI agents can perform tasks without compromising system integrity. IT professionals managing AI deployments should consider adopting containerization strategies to mitigate risks and enhance operational security.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/28/red-hats-openclaw-maintainer-just-made-enterprise-claw-deployments-a-lot-safer/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Symphony Boosts Engineering—Open-Source Codex Orchestration Unveiled",
-            "title": "Symphony: Open-Source Specification for Codex Orchestration Enhances Engineering Efficiency",
-            "content": "OpenAI has introduced Symphony, an open-source specification designed to transform issue trackers into continuous agent systems. This innovation aims to enhance engineering productivity by reducing the need for context switching, a common challenge in software development. Symphony leverages Codex orchestration to automate and streamline workflows, potentially increasing output and efficiency across engineering teams. This development is part of a broader trend towards open-source solutions that empower developers with more flexible and customizable tools. Organizations are encouraged to explore Symphony&#x27;s capabilities to optimize their engineering processes and improve overall productivity.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/open-source-codex-orchestration-symphony",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Xiaomi MiMo-V2.5 Models—Affordable AI for Agentic Tasks",
-            "title": "Xiaomi Releases MiMo-V2.5 and V2.5-Pro for Efficient AI Agentic Tasks",
-            "content": "Xiaomi has launched the MiMo-V2.5 and MiMo-V2.5-Pro, two open-source AI models designed to perform agentic &#x27;claw&#x27; tasks efficiently and affordably. Known for its smartphones and electric vehicles, Xiaomi is expanding its AI portfolio with these high-powered models, which are available under open-source licenses. The MiMo-V2.5 series is optimized for tasks requiring precise manipulation and control, making it suitable for various applications in robotics and automation. This release highlights Xiaomi&#x27;s strategy to democratize access to advanced AI capabilities, offering cost-effective solutions for developers and businesses alike.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/open-source-xiaomi-mimo-v2-5-and-v2-5-pro-are-among-the-most-efficient-and-affordable-at-agentic-claw-tasks",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Musk v. Altman Jury Selection—Public Opinion Challenges",
-            "title": "Jury Selection Begins in Elon Musk vs. Sam Altman Courtroom Battle",
-            "content": "The legal dispute between Elon Musk and Sam Altman has commenced with jury selection, revealing a challenging landscape due to public perceptions of Musk. The case centers on allegations of broken promises related to OpenAI, with potential jurors expressing preconceived opinions about Musk. This trial is set against the backdrop of Musk&#x27;s high-profile ventures and public persona, which may influence the proceedings. Legal experts suggest that the outcome could have significant implications for leadership accountability in tech companies. Observers are advised to monitor the trial for developments that could impact corporate governance practices.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/919469/elon-musk-dont-like",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Adaptive Ultrasound AI—Physics-Informed Imaging Breakthrough",
-            "title": "Physics-Informed AI Enhances Adaptive Ultrasound Imaging with NV-Raw2Insights-US",
-            "content": "Hugging Face has unveiled a physics-informed AI model, NV-Raw2Insights-US, designed to advance adaptive ultrasound imaging. This innovative approach integrates physical principles into AI algorithms, improving the accuracy and reliability of ultrasound diagnostics. The model&#x27;s adaptive capabilities allow for enhanced image quality and diagnostic precision, potentially transforming medical imaging practices. This development is part of a growing trend towards using AI to augment traditional diagnostic tools, offering significant benefits for healthcare providers and patients. Medical professionals are encouraged to explore this technology to enhance diagnostic outcomes.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/raw2insights-adaptive-ultrasound-imaging",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Google Tests AI Chatbot Search—YouTube&#x27;s Conversational Shift",
-            "title": "Google Experiments with AI Chatbot Search for Enhanced YouTube Experience",
-            "content": "Google is piloting a new AI-driven search experience for YouTube, aiming to make searches more conversational and intuitive. This experimental feature, reminiscent of AI Mode, integrates longform videos, YouTube Shorts, and textual content into search results, providing a comprehensive response to user queries. The initiative reflects Google&#x27;s ongoing efforts to leverage AI for improving user engagement and content discovery on its platforms. Users and content creators should anticipate changes in how content is surfaced and interacted with on YouTube, potentially affecting search strategies and video visibility.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/streaming/919441/google-ask-youtube-ai-chatbot-search",
             "relatedResources": []
         }
     ],
