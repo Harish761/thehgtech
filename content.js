@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 28 2026",
+            "headline": "VECT 2.0 Ransomware Destroys Large Files—Data Wiper Alert",
+            "title": "Broken VECT 2.0 Ransomware Acts as Data Wiper for Large Files",
+            "content": "Researchers have identified a critical flaw in the VECT 2.0 ransomware, which inadvertently functions as a data wiper for large files due to improper encryption nonce handling. This defect leads to the permanent destruction of data instead of encryption, posing a severe risk to organizations relying on large file storage. The issue primarily affects systems targeted by VECT 2.0, a variant known for its aggressive encryption tactics. This development underscores the importance of robust backup strategies and highlights the potential for ransomware to cause unintended data loss. Security professionals should prioritize verifying the integrity of their backup systems and consider additional layers of data protection.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/broken-vect-20-ransomware-acts-as-a-data-wiper-for-large-files/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Hackers Exploit LiteLLM SQLi Flaw—CVE-2026-42208 Targeted",
+            "title": "Hackers Exploiting Critical LiteLLM Pre-auth SQLi Vulnerability",
+            "content": "A critical SQL injection vulnerability in the LiteLLM open-source large-language model gateway, tracked as CVE-2026-42208, is being actively exploited by hackers. This flaw allows attackers to access sensitive information without authentication, posing a significant threat to systems using LiteLLM. The vulnerability highlights the ongoing risks associated with open-source software, especially in AI and machine learning applications. Organizations using LiteLLM should immediately apply available patches and review their security configurations to mitigate potential data breaches. This incident serves as a reminder of the importance of regular security audits and prompt vulnerability management.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-are-exploiting-a-critical-litellm-pre-auth-sqli-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "GitHub RCE Flaw—CVE-2026-3854 Exploitable via Single Push",
+            "title": "Critical GitHub CVE-2026-3854 RCE Flaw Discovered",
+            "content": "Cybersecurity researchers have disclosed CVE-2026-3854, a critical remote code execution (RCE) vulnerability affecting GitHub.com and GitHub Enterprise Server. This flaw allows authenticated users to execute arbitrary code with a single &quot;git push&quot; command, posing a severe risk to repositories and their data integrity. With a CVSS score of 8.8, the vulnerability requires immediate attention from GitHub administrators and users. The discovery emphasizes the need for stringent access controls and regular updates to development environments. Users are urged to apply the latest patches and review their security policies to prevent exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/researchers-discover-critical-github.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Vimeo Data Breach—ShinyHunters Demand Ransom",
+            "title": "Vimeo Confirms User and Customer Data Breach by ShinyHunters",
+            "content": "Vimeo has confirmed a data breach involving user and customer information, with the ShinyHunters group threatening to leak the stolen data unless a ransom is paid. This breach raises concerns about data security practices and the potential impact on Vimeo&#x27;s user base. The incident highlights the persistent threat posed by cybercriminal groups targeting digital platforms. Vimeo users should remain vigilant for phishing attempts and consider changing their passwords as a precaution. This breach underscores the critical need for robust cybersecurity measures and incident response plans in digital service providers.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/vimeo-confirms-user-and-customer-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "AI Workforce Overhaul—Job Loss Anxiety Tops Concerns",
+            "title": "Spy Agency Officials Highlight AI Workforce Overhaul Challenges",
+            "content": "Spy agency officials have identified job loss anxiety and the challenge of implementing AI tools safely and swiftly as top concerns in the ongoing AI workforce overhaul. As tech leaders strategize on deploying AI to enhance human intelligence capabilities, employees express fears about job security and the pace of change. This tension reflects broader trends in the tech industry, where AI integration is reshaping workforce dynamics. Organizations must balance innovation with workforce stability, ensuring that AI deployment is both effective and considerate of human factors. Transparent communication and retraining programs are essential to address these challenges.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/national-geospatial-intelligence-ai-agency-leaders-say-job-loss-safety-top-concerns/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Ransomware Rivalry—0APT and KryBit Leak Each Other&#x27;s Data",
+            "title": "Feuding Ransomware Groups 0APT and KryBit Expose Operational Data",
+            "content": "A conflict between ransomware groups 0APT and KryBit has led to the exposure of their infrastructure and operational data, providing cybersecurity defenders with rare insights into ransomware operations. This internal feud has inadvertently benefited security professionals by revealing tactics, techniques, and procedures used by these groups. The incident highlights the volatile nature of cybercriminal alliances and the potential for internal strife to disrupt malicious activities. Security teams should leverage this intelligence to enhance their defensive strategies and better understand ransomware ecosystems. This development underscores the importance of continuous monitoring and intelligence sharing in cybersecurity.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/feuding-ransomware-groups-leak-data",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
             "headline": "VECT 2.0 Ransomware Destroys Files Beyond Recovery",
             "title": "VECT 2.0 Ransomware Acts as Wiper on Windows, Linux, ESXi",
             "content": "Threat hunters have identified a critical flaw in the VECT 2.0 ransomware, which acts more like a wiper due to its flawed encryption implementation. This flaw affects Windows, Linux, and ESXi systems, leading to irreversible destruction of files larger than 131KB. Even the threat actors behind VECT 2.0 cannot recover the encrypted data, posing a severe risk to affected organizations. This development underscores the growing trend of ransomware evolving into more destructive forms. Security professionals are advised to ensure robust backup strategies and monitor systems for signs of VECT 2.0 infiltration.",
@@ -28,15 +82,6 @@ const websiteContent = {
             "content": "Microsoft has confirmed active exploitation of CVE-2026-32202, a spoofing vulnerability in Windows Shell, now patched. This high-severity flaw, with a CVSS score of 4.3, allows attackers to craft malicious files that appear legitimate, potentially leading to unauthorized actions. The vulnerability affects multiple Windows versions, making it critical for users to apply the latest security updates. This acknowledgment by Microsoft underscores the persistent threat landscape targeting Windows environments. Security teams should prioritize patching and monitor systems for unusual activity.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 25 2026",
-            "headline": "CISA Adds 4 Flaws to Exploited Vulnerabilities List",
-            "title": "CISA Adds Four Exploited Vulnerabilities to Known Exploited Vulnerabilities Catalog",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, affecting SimpleHelp, Samsung MagicINFO 9 Server, and D-Link DIR-823X routers. These vulnerabilities are actively exploited, prompting CISA to set a May 2026 deadline for federal agencies to address them. This move reflects CISA&#x27;s ongoing efforts to mitigate risks from exploited vulnerabilities in critical infrastructure. Organizations using these products should prioritize patching and strengthen their security postures to prevent potential breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
             "relatedResources": []
         },
         {
@@ -92,70 +137,61 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/glassworm-malware-attacks-return-via-73-openvsx-sleeper-extensions/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Toronto SMS Blaster Operators Arrested—Phishing Scheme Disrupted",
-            "title": "Three Arrested in Toronto for Operating SMS Blaster Phishing Device",
-            "content": "Canadian authorities have arrested three individuals in Toronto for operating an &quot;SMS blaster&quot; device that impersonated cellular towers to send phishing texts. This device was used to target nearby phones, attempting to steal personal information through deceptive messages. The arrests mark a significant disruption in local phishing operations, highlighting law enforcement&#x27;s efforts to combat mobile-based cybercrime. Residents in the affected areas are encouraged to remain vigilant and report any suspicious SMS activity. This case illustrates the ongoing challenge of securing mobile communications against sophisticated phishing tactics.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/canada-arrests-three-for-operating-sms-blaster-device-in-toronto/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Silk Typhoon Hacker Extradited—Faces US Cyberespionage Charges",
-            "title": "Alleged Silk Typhoon Hacker Extradited to US for Cyberespionage",
-            "content": "A Chinese national, accused of conducting cyberespionage for China&#x27;s intelligence services under the alias Silk Typhoon, has been extradited from Italy to the United States. The individual faces charges related to unauthorized access and data theft from U.S. government and private sector networks. This extradition underscores international cooperation in addressing state-sponsored cyber threats and the legal consequences for cyberespionage activities. Security professionals are advised to enhance their defenses against state-backed cyber operations. This case highlights the global nature of cybercrime and the importance of cross-border collaboration in cybersecurity enforcement.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/alleged-silk-typhoon-hacker-extradited-to-us-for-cyberespionage/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Google Warns of Rising AI Prompt Injection Attacks",
-            "title": "Google Reports Increase in Malicious AI Prompt Injection Attempts",
-            "content": "Google has identified a rise in malicious AI prompt injection attacks, although the sophistication of these exploits remains low. The tech giant&#x27;s analysis reveals that while many indirect prompt injection attempts are benign, some have been used for harmful purposes. These attacks exploit vulnerabilities in AI systems by manipulating input prompts to produce unintended outputs. As AI becomes more integrated into various applications, the potential for exploitation grows, posing risks to data integrity and system reliability. Security professionals are advised to implement robust input validation and monitoring to mitigate these threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/malicious-ai-prompt-injection-attacks-increasing-but-sophistication-still-low-google/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Firefox Flaw CVE-2026-6770 Enables Tor User Tracking",
-            "title": "Critical Firefox Vulnerability Allows Fingerprinting of Tor Users",
-            "content": "A critical vulnerability in Firefox, tracked as CVE-2026-6770, has been patched, addressing a significant privacy concern for Tor users. The flaw allowed attackers to fingerprint users of the Tor browser, potentially compromising their anonymity. Mozilla has released Firefox 150 and Tor version 15.0.10 to resolve the issue. This vulnerability underscores the ongoing challenges in maintaining user privacy in web browsers, especially for those relying on Tor for anonymity. Users should update to the latest versions immediately to protect against potential exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/firefox-vulnerability-allows-tor-user-fingerprinting/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "TeamPCP Resumes with Triple Supply Chain Compromises",
-            "title": "TeamPCP Supply Chain Campaign Resumes with Multiple Compromises",
-            "content": "The TeamPCP supply chain campaign has resumed after a 26-day pause, resulting in three concurrent compromises involving Checkmarx KICS, Bitwarden CLI, and xinference PyPI. Additionally, a new npm worm, CanisterSprawl, has been identified, further complicating the threat landscape. This campaign, previously linked to the theft of Cisco source code, continues to pose significant risks to software supply chains. Organizations are advised to enhance their supply chain security measures and monitor for indicators of compromise.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32926",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 25 2026",
-            "headline": "Anthropic Tests AI Marketplace—Agents Trade Real Goods, Real Money",
-            "title": "Anthropic Launches AI-Driven Marketplace for Agent-on-Agent Commerce",
-            "content": "Anthropic has unveiled an experimental marketplace where AI agents autonomously engage in commerce, acting as both buyers and sellers to negotiate real transactions involving tangible goods and actual currency. This innovative platform aims to explore the capabilities of AI in handling complex commercial interactions without human intervention. The marketplace&#x27;s design allows for dynamic pricing and negotiation strategies, potentially revolutionizing e-commerce by reducing human labor in transactional processes. While the experiment is in its early stages, it raises questions about the future role of AI in global markets and the ethical considerations of autonomous economic agents. Professionals should monitor developments for potential applications in automated trading and supply chain management.",
+            "date": "Apr 28 2026",
+            "headline": "Otter Integrates Gmail, Salesforce—Expands Enterprise Search Capabilities",
+            "title": "Otter Enhances Enterprise Search with New Tool Integrations",
+            "content": "Otter has launched a new feature allowing users to search across various enterprise tools, including Gmail, Google Drive, Notion, Jira, and Salesforce. This integration enables seamless querying of data from these platforms alongside existing meeting data, streamlining information retrieval for enterprise users. The company plans to extend this capability to Microsoft Outlook, Teams, SharePoint, and Slack, further broadening its reach. This development is poised to enhance productivity by reducing the time spent switching between applications. Enterprises can leverage these integrations to improve data accessibility and collaboration across teams.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/",
+            "sourceUrl": "https://techcrunch.com/2026/04/28/otters-new-feature-lets-users-search-across-their-enterprise-tools/",
             "relatedResources": []
         },
         {
-            "date": "Apr 25 2026",
-            "headline": "OpenAI CEO Apologizes for Oversight in Tumbler Ridge Incident",
-            "title": "OpenAI CEO Issues Apology for Failing to Alert Authorities in Shooting Case",
-            "content": "OpenAI CEO Sam Altman has publicly apologized to the Tumbler Ridge community in Canada for his company&#x27;s failure to notify law enforcement about a suspect involved in a recent mass shooting. In a letter addressed to the residents, Altman expressed regret over the oversight, which has sparked discussions about the responsibilities of AI companies in monitoring and reporting potential threats. This incident highlights the ongoing debate over privacy versus security in AI surveillance and the ethical obligations of tech firms in preventing harm. Security professionals should consider the implications of AI-driven monitoring systems and the need for robust protocols to ensure public safety.",
+            "date": "Apr 28 2026",
+            "headline": "OpenAI Strengthens ChatGPT Safety with New Safeguards",
+            "title": "OpenAI Enhances Community Safety Measures for ChatGPT",
+            "content": "OpenAI has outlined its commitment to community safety by implementing robust safeguards for ChatGPT. These measures include advanced model safeguards, misuse detection systems, and stringent policy enforcement. OpenAI collaborates with safety experts to ensure these protocols effectively mitigate risks associated with AI misuse. This initiative aims to protect users from potential harm while maintaining the platform&#x27;s integrity. As AI technologies become more prevalent, such proactive measures are crucial for fostering a safe and trustworthy AI environment.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/our-commitment-to-community-safety",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "JD.com Innovates AI Training—Cuts Compute Costs for Enterprises",
+            "title": "JD.com Develops Efficient AI Reasoning Model Training Techniques",
+            "content": "Researchers at JD.com have introduced methods to build custom AI reasoning agents with significantly reduced computational resources. Traditional AI model training often requires extensive resources, forcing enterprises to choose between costly models or sparse feedback from reinforcement learning. JD.com&#x27;s approach offers a solution by optimizing the training process, making it accessible for enterprise teams with limited resources. This advancement could democratize AI capabilities, allowing more organizations to develop sophisticated AI solutions without prohibitive costs.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/how-to-build-custom-reasoning-agents-with-a-fraction-of-the-compute",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "Musk Testifies in OpenAI Trial—Revisits Past Alliances",
+            "title": "Elon Musk Relitigates Past Relationships in OpenAI Legal Battle",
+            "content": "During his testimony in the ongoing OpenAI trial, Elon Musk revisited his past relationships and alliances, a narrative he has shared in various interviews and his biography by Walter Isaacson. This marks the first time Musk has recounted these events under oath, adding a new dimension to the high-profile legal proceedings. The trial, which pits Musk against OpenAI co-founder Sam Altman, centers on complex issues of leadership and vision within the AI industry. The outcome could have significant implications for the future direction of AI development and governance.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/",
+            "sourceUrl": "https://techcrunch.com/2026/04/28/at-his-openai-trial-musk-relitigates-an-old-friendship/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Musk&#x27;s Courtroom Demeanor Surprises—Appears Unprepared in Testimony",
+            "title": "Elon Musk&#x27;s Courtroom Performance Lacks Impact in OpenAI Trial",
+            "content": "In the first day of testimony for the Musk v. Altman trial, Elon Musk&#x27;s demeanor was unexpectedly subdued, contrasting with his previous court appearances. Known for his charismatic courtroom presence, Musk appeared adrift, lacking the assertiveness that once swayed juries in his favor. This shift in demeanor could influence the trial&#x27;s outcome, as Musk&#x27;s testimony is pivotal in the legal battle against OpenAI CEO Sam Altman. Observers noted the stark difference from his previous defamation suit, where his charm played a crucial role in the verdict.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920191/elon-musk-sam-altman-trial-day-one",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "Musk Positions as Humanity&#x27;s Savior in OpenAI Court Battle",
+            "title": "Elon Musk Frames Himself as a Humanitarian in OpenAI Trial",
+            "content": "Elon Musk took the stand in the high-stakes trial against OpenAI co-founder Sam Altman, portraying himself as a savior of humanity. Musk recounted his journey from South Africa to Canada, emphasizing his lifelong mission to advance technology for the greater good. This narrative is central to his defense strategy, aiming to align his personal history with his professional endeavors in AI. The trial&#x27;s outcome could shape public perception of Musk&#x27;s role in the AI industry and influence future collaborations or conflicts within the sector.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920048/elon-musk-testimony-save-humanity",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "Google is piloting a new AI-driven search experience for YouTube, aiming to make searches more conversational and intuitive. This experimental feature, reminiscent of AI Mode, integrates longform videos, YouTube Shorts, and textual content into search results, providing a comprehensive response to user queries. The initiative reflects Google&#x27;s ongoing efforts to leverage AI for improving user engagement and content discovery on its platforms. Users and content creators should anticipate changes in how content is surfaced and interacted with on YouTube, potentially affecting search strategies and video visibility.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/streaming/919441/google-ask-youtube-ai-chatbot-search",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Canva AI Glitch Alters Designs—Replaces &quot;Palestine&quot;",
-            "title": "Canva Apologizes for AI Tool Replacing &quot;Palestine&quot; in Designs",
-            "content": "Canva has issued an apology after its AI feature, Magic Layers, was found replacing the word &quot;Palestine&quot; in user designs. Magic Layers, intended to deconstruct flat images into editable components, inadvertently altered design content, sparking user backlash. The glitch highlights potential risks in automated design tools, especially regarding sensitive content. Canva is investigating the issue and working on a fix to prevent future occurrences. Designers using AI tools should remain vigilant about unexpected content changes and report anomalies to developers. This incident underscores the importance of robust testing and user feedback in AI tool deployment.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/919028/canva-magic-layers-ai-replacing-palestine",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "China Halts Meta&#x27;s $2B Manus Acquisition—AI Ambitions Stalled",
-            "title": "China Blocks Meta&#x27;s $2B Acquisition of Manus After Probe",
-            "content": "China has ordered Meta to unwind its $2 billion acquisition of Manus, following a comprehensive investigation. This decision poses a significant hurdle to Meta&#x27;s strategic expansion into AI-driven agents, a key focus for CEO Mark Zuckerberg. The blockage reflects China&#x27;s increasing regulatory scrutiny over foreign tech investments, particularly in AI and data-centric sectors. Meta&#x27;s plans to integrate Manus&#x27;s capabilities into its AI ecosystem are now uncertain, potentially affecting its competitive edge. Tech leaders should consider the geopolitical landscape&#x27;s impact on cross-border tech mergers and acquisitions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/27/china-vetoes-metas-2b-manus-deal-after-months-long-probe/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "OpenAI&#x27;s AI-Powered Phone—Apps Replaced by Agents by 2028",
-            "title": "OpenAI Plans AI-Driven Phone with Agent-Based Interface by 2028",
-            "content": "OpenAI is reportedly developing a smartphone that could replace traditional apps with AI agents, aiming for mass production by 2028. This innovative approach could redefine user interaction, leveraging AI to perform tasks traditionally managed by individual apps. The concept aligns with trends towards more integrated and intelligent user interfaces, potentially setting a new standard in mobile technology. Developers and tech leaders should watch for further announcements on hardware specifications and software integration. The move could accelerate the shift towards AI-centric mobile ecosystems, impacting app development strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "AI-Designed Cars Emerge—Revolutionizing Auto Design Process",
-            "title": "AI-Designed Vehicles Transform Traditional Automotive Design Practices",
-            "content": "The automotive industry is witnessing a shift as AI-designed cars begin to take shape, moving beyond traditional sketch-based design processes. Advanced 3D visualization and VR sculpting platforms are now integral to developing new vehicle models, streamlining design iterations and enhancing precision. This evolution could significantly reduce time-to-market and production costs, offering a competitive edge to manufacturers who adopt these technologies. Automotive designers and engineers should explore AI-driven tools to stay ahead in the rapidly evolving market. The trend towards AI integration in design highlights the broader impact of AI across industries.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/transportation/918411/gm-ai-car-design-nissan-neural-concept",
             "relatedResources": []
         }
     ],
@@ -359,6 +359,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2024-1708",
+            "dateAdded": "Apr 28, 2026",
+            "vendor": "ConnectWise ScreenConnect",
+            "description": "ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1708",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-32202",
+            "dateAdded": "Apr 28, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Shell contains a protection mechanism failure vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32202",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2025-29635",
             "dateAdded": "Apr 24, 2026",
             "vendor": "D-Link DIR-823X",
@@ -411,17 +433,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39987",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-33825",
-            "dateAdded": "Apr 22, 2026",
-            "vendor": "Microsoft Defender",
-            "description": "Microsoft Defender contains an insufficient granularity of access control vulnerability that could allow an authorized attacker to escalate privileges locally.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33825",
             "isZeroDay": false
         }
     ],
