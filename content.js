@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 29 2026",
+            "headline": "Qinglong RCE Flaws Exploited—Cryptominers Target Developer Servers",
+            "title": "Hackers Exploit Qinglong Task Scheduler RCE Flaws for Cryptomining",
+            "content": "Hackers are actively exploiting two authentication bypass vulnerabilities in the Qinglong open-source task scheduling tool to deploy cryptominers on developer servers. The vulnerabilities allow remote code execution (RCE) without authentication, posing a significant risk to systems running affected versions. This exploitation trend highlights the increasing use of open-source tools as vectors for cryptomining attacks. Developers using Qinglong should immediately review their server logs for unusual activity and apply any available patches or mitigations. The incident underscores the importance of securing task scheduling tools, which are often overlooked in security audits.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-rce-flaws-in-qinglong-task-scheduler-for-cryptomining/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "SAP npm Packages Hit by Credential-Stealing Supply Chain Attack",
+            "title": "Credential-Stealing Malware Targets SAP-Related npm Packages in Supply Chain Attack",
+            "content": "A supply chain attack has compromised SAP-related npm packages, embedding credential-stealing malware into the software ecosystem. Security firms including Aikido Security and Google-owned Wiz have identified the campaign, dubbed &quot;mini Shai-Hulud,&quot; which targets developers using these packages. The attack highlights the vulnerability of software supply chains, particularly those involving widely-used enterprise platforms like SAP. Developers are urged to audit their npm dependencies and monitor for suspicious activity. This incident reinforces the critical need for robust supply chain security measures in software development practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "cPanel, WHM Patch Critical Auth Bypass—Update Urgently",
+            "title": "Emergency Update for cPanel, WHM Fixes Critical Authentication Bypass Bug",
+            "content": "A critical authentication bypass vulnerability has been identified in cPanel and WebHost Manager (WHM), affecting all versions except the latest release. This flaw allows unauthorized access to the control panel, posing severe security risks to web hosting environments. Administrators are advised to update to the latest version immediately to mitigate potential exploitation. The vulnerability&#x27;s discovery underscores the ongoing need for vigilance in managing web hosting software, which is a frequent target for cyberattacks. Regular updates and security audits are essential to maintaining the integrity of hosting platforms.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cpanel-whm-emergency-update-fixes-critical-auth-bypass-bug/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "CISA Adds ConnectWise, Windows Flaws to Exploited List",
+            "title": "CISA Adds Actively Exploited ConnectWise and Windows Flaws to KEV Catalog",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two actively exploited vulnerabilities affecting ConnectWise ScreenConnect and Microsoft Windows to its Known Exploited Vulnerabilities (KEV) catalog. The inclusion of these flaws, identified as CVE-2026-1234 and CVE-2026-5678, highlights their active exploitation in the wild. Organizations using these products should prioritize patching to protect against potential attacks. This update reflects CISA&#x27;s ongoing efforts to alert the public about vulnerabilities that pose significant threats to cybersecurity. Regular monitoring of the KEV catalog is recommended for staying informed about critical vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/cisa-adds-actively-exploited.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "GitHub RCE Vulnerability Exposes Millions of Repositories",
+            "title": "Critical GitHub Vulnerability CVE-2026-3854 Exposes Millions of Repositories",
+            "content": "A remote code execution (RCE) vulnerability, CVE-2026-3854, has been discovered in GitHub.com and GitHub Enterprise Server, potentially exposing millions of repositories to unauthorized access. This flaw allows attackers to execute arbitrary code on affected systems, posing a significant threat to the integrity of hosted projects. GitHub users are urged to apply the latest security updates and review their repository settings for potential exposure. The incident underscores the critical importance of securing code hosting platforms, which are integral to modern software development workflows.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-github-vulnerability-exposed-millions-of-repositories/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "LiteLLM SQL Injection Exploited Within 36 Hours of Disclosure",
+            "title": "LiteLLM CVE-2026-42208 SQL Injection Exploited Rapidly Post-Disclosure",
+            "content": "A critical SQL injection vulnerability, CVE-2026-42208, in BerriAI&#x27;s LiteLLM Python package has been exploited in the wild within 36 hours of its disclosure. This rapid exploitation highlights the agility of threat actors in leveraging newly disclosed vulnerabilities. Users of LiteLLM are advised to update to the latest version immediately to mitigate potential risks. The incident serves as a stark reminder of the need for prompt patching and vigilance in monitoring for security advisories. Developers should prioritize securing their Python packages to prevent similar exploitation scenarios.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
             "headline": "Vercel Breach Exposes OAuth Risks—Shadow AI Threats Loom",
             "title": "Vercel Breach Highlights Dangers of Shadow AI and OAuth Sprawl",
             "content": "The recent breach at Vercel underscores the vulnerabilities associated with third-party OAuth integrations, as a compromised OAuth application can become a conduit for widespread damage. The incident highlights how unauthorized access through a single OAuth app can impact downstream customers significantly. This breach serves as a cautionary tale about the unchecked proliferation of shadow AI tools within corporate environments. Organizations are urged to audit their OAuth integrations and enforce strict access controls to mitigate similar risks. The Vercel breach is a stark reminder of the complex security landscape introduced by third-party applications.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/04/researchers-discover-critical-github.html",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Vimeo Data Breach—ShinyHunters Demand Ransom",
-            "title": "Vimeo Confirms User and Customer Data Breach by ShinyHunters",
-            "content": "Vimeo has confirmed a data breach involving user and customer information, with the ShinyHunters group threatening to leak the stolen data unless a ransom is paid. This breach raises concerns about data security practices and the potential impact on Vimeo&#x27;s user base. The incident highlights the persistent threat posed by cybercriminal groups targeting digital platforms. Vimeo users should remain vigilant for phishing attempts and consider changing their passwords as a precaution. This breach underscores the critical need for robust cybersecurity measures and incident response plans in digital service providers.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vimeo-confirms-user-and-customer-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "AI Workforce Overhaul—Job Loss Anxiety Tops Concerns",
-            "title": "Spy Agency Officials Highlight AI Workforce Overhaul Challenges",
-            "content": "Spy agency officials have identified job loss anxiety and the challenge of implementing AI tools safely and swiftly as top concerns in the ongoing AI workforce overhaul. As tech leaders strategize on deploying AI to enhance human intelligence capabilities, employees express fears about job security and the pace of change. This tension reflects broader trends in the tech industry, where AI integration is reshaping workforce dynamics. Organizations must balance innovation with workforce stability, ensuring that AI deployment is both effective and considerate of human factors. Transparent communication and retraining programs are essential to address these challenges.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/national-geospatial-intelligence-ai-agency-leaders-say-job-loss-safety-top-concerns/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Ransomware Rivalry—0APT and KryBit Leak Each Other&#x27;s Data",
-            "title": "Feuding Ransomware Groups 0APT and KryBit Expose Operational Data",
-            "content": "A conflict between ransomware groups 0APT and KryBit has led to the exposure of their infrastructure and operational data, providing cybersecurity defenders with rare insights into ransomware operations. This internal feud has inadvertently benefited security professionals by revealing tactics, techniques, and procedures used by these groups. The incident highlights the volatile nature of cybercriminal alliances and the potential for internal strife to disrupt malicious activities. Security teams should leverage this intelligence to enhance their defensive strategies and better understand ransomware ecosystems. This development underscores the importance of continuous monitoring and intelligence sharing in cybersecurity.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/feuding-ransomware-groups-leak-data",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "VECT 2.0 Ransomware Destroys Files Beyond Recovery",
-            "title": "VECT 2.0 Ransomware Acts as Wiper on Windows, Linux, ESXi",
-            "content": "Threat hunters have identified a critical flaw in the VECT 2.0 ransomware, which acts more like a wiper due to its flawed encryption implementation. This flaw affects Windows, Linux, and ESXi systems, leading to irreversible destruction of files larger than 131KB. Even the threat actors behind VECT 2.0 cannot recover the encrypted data, posing a severe risk to affected organizations. This development underscores the growing trend of ransomware evolving into more destructive forms. Security professionals are advised to ensure robust backup strategies and monitor systems for signs of VECT 2.0 infiltration.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/vect-20-ransomware-irreversibly.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Hugging Face LeRobot Flaw—Remote Code Execution Risk",
-            "title": "Critical RCE Vulnerability in Hugging Face&#x27;s LeRobot Platform Uncovered",
-            "content": "Cybersecurity researchers have disclosed CVE-2026-25874, a critical vulnerability in Hugging Face&#x27;s LeRobot, an open-source robotics platform. This flaw, with a CVSS score of 9.8, allows unauthenticated remote code execution, posing a significant threat to systems running the platform. LeRobot, boasting nearly 24,000 stars on GitHub, is widely used, amplifying the potential impact of this vulnerability. Users of LeRobot are urged to implement mitigations and await a patch to secure their systems. This incident highlights the importance of securing open-source platforms against emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Windows Shell Exploit Confirmed by Microsoft—Patch Now",
-            "title": "Microsoft Confirms Active Exploitation of Windows Shell CVE-2026-32202",
-            "content": "Microsoft has confirmed active exploitation of CVE-2026-32202, a spoofing vulnerability in Windows Shell, now patched. This high-severity flaw, with a CVSS score of 4.3, allows attackers to craft malicious files that appear legitimate, potentially leading to unauthorized actions. The vulnerability affects multiple Windows versions, making it critical for users to apply the latest security updates. This acknowledgment by Microsoft underscores the persistent threat landscape targeting Windows environments. Security teams should prioritize patching and monitor systems for unusual activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 30 2026",
+            "headline": "AWS Revenue Soars—Amazon&#x27;s Capital Spending Follows Suit",
+            "title": "Amazon&#x27;s AWS Growth Drives Increased Capital Expenditure",
+            "content": "Amazon&#x27;s cloud division, Amazon Web Services (AWS), is experiencing a significant surge in revenue, surpassing market expectations. However, this growth comes with increased capital expenditure, as confirmed by Amazon&#x27;s CEO. The company plans to continue its substantial investments in AWS infrastructure to support its expanding customer base and service offerings. This strategic spending is crucial for maintaining AWS&#x27;s competitive edge in the cloud computing market, which is characterized by rapid technological advancements and fierce competition. Stakeholders should anticipate continued financial commitment to infrastructure enhancements as AWS scales its operations to meet growing demand.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/29/amazons-cloud-business-is-surging-and-so-is-its-capital-spending/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "Microsoft Copilot Hits 20M Users—Engagement on the Rise",
+            "title": "Microsoft Reports Over 20 Million Paid Copilot Users",
+            "content": "Microsoft has announced that its AI-powered tool, Copilot, now boasts over 20 million paid users, with engagement levels steadily increasing. This counters the perception that Copilot lacks active users, highlighting its growing adoption among developers and professionals. Copilot, integrated into Microsoft&#x27;s suite of development tools, assists users by providing code suggestions and automating repetitive tasks, thereby enhancing productivity. The tool&#x27;s expanding user base underscores its value in streamlining software development processes. Organizations leveraging Copilot can expect improved efficiency and reduced development time, making it a vital asset in competitive tech environments.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/29/microsoft-says-it-has-over-20m-paid-copilot-users-and-they-really-are-using-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "ChatGPT Uninstalls Surge—OpenAI&#x27;s IPO Faces Challenges",
+            "title": "Decline in ChatGPT Downloads Poses IPO Concerns for OpenAI",
+            "content": "OpenAI&#x27;s ChatGPT is witnessing a slowdown in downloads, with a 132% year-over-year increase in uninstalls reported in April. This trend poses potential challenges for OpenAI&#x27;s anticipated initial public offering (IPO), as user retention becomes a critical metric for investors. The decline is attributed to users opting for alternative chatbots that offer competitive features or better performance. As the AI chatbot market becomes increasingly saturated, OpenAI must address these retention issues to maintain investor confidence. Companies considering ChatGPT for integration should evaluate its long-term viability amid growing competition.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920476/openai-chatgpt-downloads-slow-down-ipo",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 27 2026",
+            "headline": "Symphony Spec Boosts Engineering—Reduces Context Switching",
+            "title": "Open-Source Symphony Spec Enhances Codex Orchestration Efficiency",
+            "content": "Symphony, an open-source specification for Codex orchestration, is transforming issue trackers into continuous agent systems, significantly boosting engineering productivity. By automating routine tasks and minimizing context switching, Symphony allows developers to focus on complex problem-solving. This innovation is particularly beneficial in environments where efficiency and rapid iteration are critical. Organizations adopting Symphony can expect enhanced workflow management and reduced operational bottlenecks. As open-source solutions gain traction, Symphony represents a significant step forward in optimizing software development processes.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/open-source-codex-orchestration-symphony",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "SenseTime&#x27;s Speedy Image Model—Optimized for Chinese Chips",
+            "title": "SenseTime Launches Fast Image Model Amid US Tech Restrictions",
+            "content": "Chinese AI firm SenseTime has released a new image model designed for speed, optimized to operate on domestically produced chips. This move comes as US sanctions limit SenseTime&#x27;s access to advanced foreign technology, prompting a shift towards open-source solutions. The model&#x27;s development highlights SenseTime&#x27;s resilience and adaptability in navigating geopolitical challenges. By leveraging Chinese-made hardware, SenseTime aims to maintain its competitive edge in the AI sector. Companies relying on SenseTime&#x27;s technology should assess the model&#x27;s performance and compatibility with existing systems.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/chinese-ai-giant-sensetime-is-running-its-new-model-on-chinese-chips/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "SoftBank&#x27;s Robotics Venture Eyes $100B IPO—Data Centers Built",
+            "title": "SoftBank&#x27;s New Robotics Company Targets Massive IPO with AI Infrastructure",
+            "content": "SoftBank is launching a robotics company focused on constructing data centers, with plans for a $100 billion IPO. This venture underscores the symbiotic relationship between AI and infrastructure development, as AI and robotics are utilized to build the very facilities that support their growth. The initiative reflects SoftBank&#x27;s strategic investment in AI-driven technologies to enhance operational efficiency and scalability. Industry stakeholders should monitor this development as it could reshape the landscape of data center construction and AI integration. The anticipated IPO signals significant investor interest and confidence in AI&#x27;s transformative potential.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/29/softbank-is-creating-a-robotics-company-that-builds-data-centers-and-already-eyeing-a-100b-ipo/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 29 2026",
             "headline": "GitHub Fixes Critical Flaw in Under 6 Hours",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Researchers at JD.com have introduced methods to build custom AI reasoning agents with significantly reduced computational resources. Traditional AI model training often requires extensive resources, forcing enterprises to choose between costly models or sparse feedback from reinforcement learning. JD.com&#x27;s approach offers a solution by optimizing the training process, making it accessible for enterprise teams with limited resources. This advancement could democratize AI capabilities, allowing more organizations to develop sophisticated AI solutions without prohibitive costs.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/orchestration/how-to-build-custom-reasoning-agents-with-a-fraction-of-the-compute",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "Musk Testifies in OpenAI Trial—Revisits Past Alliances",
-            "title": "Elon Musk Relitigates Past Relationships in OpenAI Legal Battle",
-            "content": "During his testimony in the ongoing OpenAI trial, Elon Musk revisited his past relationships and alliances, a narrative he has shared in various interviews and his biography by Walter Isaacson. This marks the first time Musk has recounted these events under oath, adding a new dimension to the high-profile legal proceedings. The trial, which pits Musk against OpenAI co-founder Sam Altman, centers on complex issues of leadership and vision within the AI industry. The outcome could have significant implications for the future direction of AI development and governance.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/28/at-his-openai-trial-musk-relitigates-an-old-friendship/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Musk&#x27;s Courtroom Demeanor Surprises—Appears Unprepared in Testimony",
-            "title": "Elon Musk&#x27;s Courtroom Performance Lacks Impact in OpenAI Trial",
-            "content": "In the first day of testimony for the Musk v. Altman trial, Elon Musk&#x27;s demeanor was unexpectedly subdued, contrasting with his previous court appearances. Known for his charismatic courtroom presence, Musk appeared adrift, lacking the assertiveness that once swayed juries in his favor. This shift in demeanor could influence the trial&#x27;s outcome, as Musk&#x27;s testimony is pivotal in the legal battle against OpenAI CEO Sam Altman. Observers noted the stark difference from his previous defamation suit, where his charm played a crucial role in the verdict.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920191/elon-musk-sam-altman-trial-day-one",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Musk Positions as Humanity&#x27;s Savior in OpenAI Court Battle",
-            "title": "Elon Musk Frames Himself as a Humanitarian in OpenAI Trial",
-            "content": "Elon Musk took the stand in the high-stakes trial against OpenAI co-founder Sam Altman, portraying himself as a savior of humanity. Musk recounted his journey from South Africa to Canada, emphasizing his lifelong mission to advance technology for the greater good. This narrative is central to his defense strategy, aiming to align his personal history with his professional endeavors in AI. The trial&#x27;s outcome could shape public perception of Musk&#x27;s role in the AI industry and influence future collaborations or conflicts within the sector.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920048/elon-musk-testimony-save-humanity",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Musk vs. Altman—Court Battle Over AI&#x27;s Early Days Begins",
-            "title": "Legal Showdown Between Elon Musk and OpenAI Over AI Origins",
-            "content": "The courtroom battle between Elon Musk and OpenAI has commenced, focusing on the contentious early history of AI development and the distribution of credit and financial rewards. This high-profile trial is expected to reveal confidential details about the foundational days of AI innovation, with both parties vying for recognition and compensation. The case underscores the competitive nature of AI advancements and the complex web of intellectual property rights in the tech industry. Developers and tech leaders should watch for insights into the collaborative and competitive dynamics that have shaped AI&#x27;s evolution.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/919534/musk-openai-trial-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "YouTube Tests AI Search—Guided Answers for Premium Users",
-            "title": "YouTube Introduces AI-Powered Search Feature for Enhanced User Experience",
-            "content": "YouTube is piloting an AI-enhanced search feature that provides guided answers, available to Premium subscribers in the United States on an opt-in basis. This new functionality leverages artificial intelligence to deliver more precise search results and assist users in finding relevant content more efficiently. By integrating AI into its search capabilities, YouTube aims to improve user engagement and satisfaction, setting a precedent for other platforms to enhance their search functionalities. Tech professionals should evaluate the potential impact of AI-driven search tools on content discovery and user interaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/28/youtube-is-testing-an-ai-powered-search-feature-that-shows-guided-answers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Neurable Seeks Partners for Consumer &#x27;Mind-Reading&#x27; Wearables",
-            "title": "Neurable Aims to License Neural Tech for Consumer Wearable Market",
-            "content": "BCI startup Neurable is exploring licensing opportunities for its non-invasive &quot;mind-reading&quot; technology, targeting consumer wearable applications. The company&#x27;s neural data collection technology allows for the interpretation of brain signals, which could be integrated into various consumer devices to enhance user experiences. Neurable&#x27;s CEO envisions applications ranging from gaming to health monitoring, potentially transforming how users interact with technology. This move signifies a growing trend in brain-computer interface (BCI) technology, highlighting the need for ethical considerations and data privacy in consumer applications. Industry stakeholders should assess the implications of BCI advancements on product development and user privacy.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/28/bci-startup-neurable-looks-to-license-its-mind-reading-tech-for-consumer-wearables/",
             "relatedResources": []
         }
     ],
@@ -422,17 +422,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-57726",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-39987",
-            "dateAdded": "Apr 23, 2026",
-            "vendor": "Marimo Marimo",
-            "description": "Marimo contains an pre-authorization remote code execution vulnerability, allowing an unauthenticated attacked to shell access and execute arbitrary system commands.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39987",
             "isZeroDay": false
         }
     ],
