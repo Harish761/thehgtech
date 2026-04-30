@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "copy-fail-cve-2026-31431",
+      "title": "Copy Fail (CVE-2026-31431): The Most Dangerous Linux Kernel LPE Since Dirty COW",
+      "date": "April 30, 2026",
+      "category": "Vulnerability Research",
+      "badge": "CRITICAL",
+      "author": "Harish G",
+      "excerpt": "A 732-byte Python script roots every Linux distro since 2017. Deep technical analysis of CVE-2026-31431 — no race conditions, invisible to file integrity tools, and capable of Kubernetes container escape.",
+      "image": "/images/articles/copy-fail-cve-2026-31431.png",
+      "externalUrl": "articles/copy-fail-cve-2026-31431.html",
+      "tags": ["CVE", "Linux Kernel", "Privilege Escalation", "Container Escape", "Critical"]
+    },
+    {
       "id": "report-20260427",
       "title": "Weekly Threat Report: April 27, 2026",
       "date": "April 27, 2026",
