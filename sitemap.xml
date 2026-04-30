@@ -3,106 +3,10 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- April 25, 2026 - Claude Mythos Security Analysis -->
-  <url>
-    <loc>https://thehgtech.com/articles/claude-mythos-security-analysis-2026.html</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/claude-mythos-security-analysis-2026.png</image:loc>
-      <image:title>Claude Mythos &amp; The Autonomous Zero-Day Engine</image:title>
-    </image:image>
-  </url>
-
-  <!-- April 15, 2026 - Booking.com Breach 2026 -->
-  <url>
-    <loc>https://thehgtech.com/articles/booking-com-breach-2026.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/booking-com-breach-2026.png</image:loc>
-      <image:title>Booking.com Breach 2026: Reservation Data Stolen, AI-Powered Phishing Threat Analysis</image:title>
-    </image:image>
-  </url>
-
-  <!-- April 9, 2026 - Anthropic Project Glasswing -->
-  <url>
-    <loc>https://thehgtech.com/articles/anthropic-project-glasswing-2026.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/anthropic-project-glasswing-2026.png</image:loc>
-      <image:title>Anthropic Project Glasswing AI Security</image:title>
-    </image:image>
-  </url>
-
-  <!-- April 9, 2026 - FortiClient EMS Zero-Day CVE-2026-35616 -->
-  <url>
-    <loc>https://thehgtech.com/articles/forticlient-ems-zero-day-cve-2026-35616.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/forticlient-ems-zero-day-cve-2026-35616.png</image:loc>
-      <image:title>FortiClient EMS Zero-Day CVE-2026-35616 Actively Exploited RCE Analysis</image:title>
-    </image:image>
-  </url>
-
-  <!-- April 3, 2026 - IT vs OT Security Guide -->
-  <url>
-    <loc>https://thehgtech.com/guides/it-vs-ot-security.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/it-vs-ot-security-header.png</image:loc>
-      <image:title>IT vs OT Security Convergence Guide</image:title>
-    </image:image>
-  </url>
-
-  <!-- March 31, 2026 - Stryker Wiper Attack -->
-  <url>
-    <loc>https://thehgtech.com/articles/stryker-wiper-attack-2026.html</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/stryker-wiper-01.png</image:loc>
-      <image:caption>Stryker Wiper Deep-Dive: Handala's Abuse of Microsoft Intune to Remote-Wipe 80,000 Devices</image:caption>
-    </image:image>
-  </url>
-
-  <!-- March 23, 2026 - Instagram E2EE Rollback -->
-  <url>
-    <loc>https://thehgtech.com/articles/instagram-e2ee-rollback-2026.html</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/instagram-e2ee-rollback-2026.png</image:loc>
-      <image:caption>Meta Deprecates Optional E2EE in Instagram DMs by May 2026: Low Adoption Cited, Privacy Concerns Remain</image:caption>
-    </image:image>
-  </url>
-
-  <!-- March 22, 2026 - Delve Scandal -->
-  <url>
-    <loc>https://thehgtech.com/articles/delve-ai-compliance-scandal-2026.html</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/delve-ai-compliance-scandal-2026.png</image:loc>
-      <image:title>The Delve Scandal: Why 493 Fabricated Audit Reports Just Killed "Checkbox Security"</image:title>
-    </image:image>
-  </url>
-
   <!-- March 9, 2026 - OpenAI Codex Security -->
   <url>
     <loc>https://thehgtech.com/articles/openai-codex-security-11000-bugs-2026.html</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.99</priority>
     <image:image>
@@ -114,7 +18,7 @@
   <!-- March 9, 2026 - Fake Claude Code InstallFix -->
   <url>
     <loc>https://thehgtech.com/articles/fake-claude-code-installfix-malware-2026.html</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.99</priority>
     <image:image>
@@ -126,7 +30,7 @@
   <!-- March 9, 2026 - MuddyWater Iran US Banks -->
   <url>
     <loc>https://thehgtech.com/articles/muddywater-iran-us-banks-airports-2026.html</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.99</priority>
     <image:image>
@@ -137,37 +41,37 @@
 
         <url>
     <loc>https://thehgtech.com/articles/mj-rathbun-matplotlib-ai-hallucination-2026.html</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/articles/anthropic-openai-privacy-ultimatum-2026.html</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
         <loc>https://thehgtech.com/articles/ai-soc-analyst-future-2026.html</loc>
-        <lastmod>2026-03-23</lastmod>
+        <lastmod>2026-02-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://thehgtech.com/articles/semiconductor-ransomware-chips-act-2026.html</loc>
-        <lastmod>2026-03-23</lastmod>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://thehgtech.com/articles/ai-hacker-fortigate-600-devices-2026.html</loc>
-        <lastmod>2026-03-23</lastmod>
+        <lastmod>2026-02-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://thehgtech.com/articles/beast-ransomware-api-exploits.html</loc>
-        <lastmod>2026-03-23</lastmod>
+        <lastmod>2026-02-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -177,37 +81,15 @@
     <loc>https://thehgtech.com/</loc>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-03-23</lastmod>
-  </url>
-  <!-- ========== CORE PAGES ========== -->
-  <url>
-    <loc>https://thehgtech.com/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-04-15</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/about-harish-hero.png</image:loc>
-      <image:title>About Harish G — Cybersecurity Expert &amp; Founder of TheHGTech</image:title>
-    </image:image>
-  </url>
-
-
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/grc-assessment-og.jpg</image:loc>
-      <image:title>Enterprise GRC Gap Analysis &amp; ISO 27001 Readiness Engine</image:title>
-    </image:image>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
+  <!-- ========== CORE TRACKERS - DAILY UPDATES ========== -->
   <url>
     <loc>https://thehgtech.com/cve-tracker.html</loc>
     <changefreq>hourly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/cve-tracker-og.jpg</image:loc>
       <image:title>CVE Vulnerability Tracker Dashboard</image:title>
@@ -218,7 +100,7 @@
     <loc>https://thehgtech.com/ransomware-tracker.html</loc>
     <changefreq>hourly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-04</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/ransomware-tracker-og.jpg</image:loc>
       <image:title>Live Ransomware Tracker - Active Groups and Victims</image:title>
@@ -229,7 +111,7 @@
     <loc>https://thehgtech.com/threat-intel.html</loc>
     <changefreq>hourly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/threat-intel-og.jpg</image:loc>
       <image:title>Live Threat Intelligence Dashboard</image:title>
@@ -241,46 +123,35 @@
     <loc>https://thehgtech.com/articles.html</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-26</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/ransomware-ecosystem-hijack-2026.html</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/ransomware-2026-hero.png</image:loc>
-      <image:title>Ransomware 2026 Ecosystem Hijack Technical Guide</image:title>
-    </image:image>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/comparisons/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/workflows/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-30</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/workflows/cve-slack-alerts.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-30</lastmod>
   </url>
   
   <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
@@ -289,7 +160,7 @@
     <loc>https://thehgtech.com/articles/anthropic-claude-code-security-launch-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/anthropic-claude-code-security-launch-2026.png</image:loc>
       <image:title>Anthropic's Claude Code Security: What It Actually Does and Why $10-15B in Cybersecurity Stocks Dropped</image:title>
@@ -301,7 +172,7 @@
     <loc>https://thehgtech.com/articles/openclaw-ai-log-poisoning-cve-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/openclaw-ai-log-poisoning-cve-2026.png</image:loc>
       <image:title>OpenClaw AI Log Poisoning Vulnerability CVE-2026-25253 Analysis</image:title>
@@ -313,7 +184,7 @@
     <loc>https://thehgtech.com/articles/chrome-zero-day-cve-2026-2441.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/chrome-zero-day-cve-2026-2441.png</image:loc>
       <image:title>Chrome Zero-Day CVE-2026-2441 CSS Use-After-Free Exploit Analysis</image:title>
@@ -325,7 +196,7 @@
     <loc>https://thehgtech.com/articles/odido-data-breach-6m-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/odido-data-breach-6m-2026.png</image:loc>
       <image:title>Odido Data Breach 6.2 Million Dutch Telecom Customers Salesforce CRM</image:title>
@@ -337,7 +208,7 @@
     <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-february-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/microsoft-patch-tuesday-february-2026.png</image:loc>
       <image:title>Microsoft Patch Tuesday February 2026 6 Zero-Days</image:title>
@@ -349,7 +220,7 @@
     <loc>https://thehgtech.com/articles/apple-dyld-zero-day-cve-2026-20700.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/apple-dyld-zero-day-cve-2026-20700.png</image:loc>
       <image:title>Apple dyld Zero-Day CVE-2026-20700 Memory Corruption Exploit Chain</image:title>
@@ -361,7 +232,7 @@
     <loc>https://thehgtech.com/articles/windows-notepad-rce-cve-2026-20841.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-11</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/windows-notepad-rce-cve-2026-20841.png</image:loc>
       <image:title>Windows Notepad RCE CVE-2026-20841 Markdown Link Injection</image:title>
@@ -374,7 +245,7 @@
     <loc>https://thehgtech.com/articles/langflow-ai-rce-cve-2025-3248.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/langflow-ai-rce-cve-2025-3248.png</image:loc>
       <image:title>Langflow AI RCE CVE-2025-3248 Unauthenticated Code Execution</image:title>
@@ -386,7 +257,7 @@
     <loc>https://thehgtech.com/articles/fortinet-auth-bypass-cve-2026-24858.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/fortinet-auth-bypass-cve-2026-24858.png</image:loc>
       <image:title>Fortinet Authentication Bypass CVE-2026-24858 FortiCloud SSO</image:title>
@@ -398,7 +269,7 @@
     <loc>https://thehgtech.com/articles/harvard-shinyhunters-breach-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/harvard-shinyhunters-breach-2026.png</image:loc>
       <image:title>Harvard ShinyHunters Data Breach Vishing Attack</image:title>
@@ -410,7 +281,7 @@
     <loc>https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.99</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-03</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/notepad-supply-chain-apt31-2026.png</image:loc>
       <image:title>Notepad++ APT31 Chrysalis Backdoor Supply Chain Attack</image:title>
@@ -422,7 +293,7 @@
     <loc>https://thehgtech.com/articles/purerat-ai-malware-vietnam-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-03</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/purerat-ai-malware-vietnam-2026.png</image:loc>
       <image:title>PureRAT AI-Generated Malware Vietnamese Campaign</image:title>
@@ -434,7 +305,7 @@
     <loc>https://thehgtech.com/articles/glassworm-openvsx-supply-chain-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-03</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/glassworm-openvsx-supply-chain-2026.png</image:loc>
       <image:title>GlassWorm Open VSX VS Code Extensions Supply Chain Attack</image:title>
@@ -446,7 +317,7 @@
     <loc>https://thehgtech.com/articles/ivanti-epmm-zeroday-cve-2026-1281.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-01</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/ivanti-epmm-zeroday-2026.png</image:loc>
       <image:title>Ivanti Endpoint Zero-Days CVE-2026-1281</image:title>
@@ -458,7 +329,7 @@
     <loc>https://thehgtech.com/articles/nike-data-breach-1tb-stolen-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-31</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/nike-data-breach-2026.png</image:loc>
       <image:title>Nike Data Breach 1.4TB Stolen</image:title>
@@ -470,7 +341,7 @@
     <loc>https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/vscode-malicious-extensions-2026.png</image:loc>
       <image:title>VS Code Malicious Extensions MaliciousCorgi</image:title>
@@ -480,7 +351,7 @@
     <loc>https://thehgtech.com/articles/microsoft-teams-phishing-guest-exploit-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/microsoft-teams-phishing-2026.png</image:loc>
       <image:title>Microsoft Teams Phishing Guest Feature Exploit</image:title>
@@ -492,7 +363,7 @@
     <loc>https://thehgtech.com/articles/ms-office-zero-day-cve-2026-21509.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/ms-office-zero-day-cve-2026-21509.png</image:loc>
       <image:title>Microsoft Office Zero-Day CVE-2026-21509 Actively Exploited</image:title>
@@ -504,7 +375,7 @@
     <loc>https://thehgtech.com/articles/infostealer-mfa-bypass-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/infostealer-mfa-bypass-2026.png</image:loc>
       <image:title>Infostealer Malware: Why Your MFA Is Already Compromised</image:title>
@@ -515,7 +386,7 @@
     <loc>https://thehgtech.com/articles/oauth-worms-saas-attack-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/oauth-worms-saas-attack-2026.png</image:loc>
       <image:title>OAuth Worms: The Silent SaaS-to-SaaS Attack Vector</image:title>
@@ -526,7 +397,7 @@
     <loc>https://thehgtech.com/articles/prompt-injection-physical-ai-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/prompt-injection-physical-ai-2026.png</image:loc>
       <image:title>Prompt Injection Goes Physical: Hacking Self-Driving Cars with Text</image:title>
@@ -537,7 +408,7 @@
     <loc>https://thehgtech.com/articles/shinyhunters-vishing-mfa-bypass-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/shinyhunters-vishing-mfa-bypass-2026.png</image:loc>
       <image:title>ShinyHunters Voice Phishing: Bypassing MFA in Real-Time</image:title>
@@ -549,7 +420,7 @@
     <loc>https://thehgtech.com/articles/luxshare-apple-breach-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/luxshare-apple-breach-2025.png</image:loc>
       <image:title>Luxshare Ransomware Attack - Apple Vision Pro CAD Designs Stolen</image:title>
@@ -561,7 +432,7 @@
     <loc>https://thehgtech.com/articles/ai-agents-attack-vectors-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/ai-agents-attack-vectors-2026.png</image:loc>
       <image:title>AI Agents Will Be the Primary Attack Vector in 2026</image:title>
@@ -572,7 +443,7 @@
     <loc>https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/dragonforce-ransomware-cartel-2026.png</image:loc>
       <image:title>DragonForce Ransomware Cartel - LockBit and Conti DNA</image:title>
@@ -583,7 +454,7 @@
     <loc>https://thehgtech.com/articles/lastpass-vault-cracks-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/lastpass-vault-cracks-2026.png</image:loc>
       <image:title>LastPass Vault Cracks - 2022 Breach Still Affecting Users in 2026</image:title>
@@ -595,7 +466,7 @@
     <loc>https://thehgtech.com/articles/crowdstrike-seraphic-browser-security-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/crowdstrike-seraphic-browser-security-2026.png</image:loc>
       <image:title>CrowdStrike Acquires Seraphic Security for $420M - Browser Security Analysis</image:title>
@@ -607,7 +478,7 @@
     <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/microsoft-patch-tuesday-january-2026.png</image:loc>
       <image:title>Microsoft Patch Tuesday January 2026: 114 CVEs and 3 Zero-Days</image:title>
@@ -618,7 +489,7 @@
     <loc>https://thehgtech.com/articles/totalenergies-data-breach-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/totalenergies-data-breach-2026.png</image:loc>
       <image:title>TotalEnergies 183 Million Records Data Breach</image:title>
@@ -629,7 +500,7 @@
     <loc>https://thehgtech.com/articles/llm-attack-reconnaissance-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/llm-attack-reconnaissance-2026.png</image:loc>
       <image:title>91,000 LLM Attack Sessions - AI Security Threat</image:title>
@@ -640,7 +511,7 @@
     <loc>https://thehgtech.com/articles/microsoft-365-gov-breach-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/microsoft-365-gov-breach-2026.png</image:loc>
       <image:title>Microsoft 365 US Government Breach Cloud Espionage</image:title>
@@ -652,7 +523,7 @@
     <loc>https://thehgtech.com/articles/crowdstrike-sgnl-acquisition-identity-security-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-12</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/crowdstrike-sgnl-acquisition-2026.png</image:loc>
       <image:title>CrowdStrike Acquires SGNL for $740M - Identity Security Analysis</image:title>
@@ -663,7 +534,7 @@
     <loc>https://thehgtech.com/articles/ledger-global-e-supply-chain-breach-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-12</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/articles/ledger-global-e-supply-chain-breach-2026.png</image:loc>
       <image:title>Ledger Supply Chain Breach via Global-e Payment Processor</image:title>
@@ -675,7 +546,7 @@
     <loc>https://thehgtech.com/articles/n8n-ni8mare-critical-vulnerability-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-08</lastmod>
   </url>
 
   <!-- January 5, 2026 Articles -->
@@ -683,133 +554,133 @@
     <loc>https://thehgtech.com/articles/agentic-ai-insider-threat-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/deepfake-as-a-service-explosion-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/claude-ai-vulnerability-inverseprompt-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/sedgwick-tridentlocker-ransomware-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/taiwan-263-million-daily-chinese-cyberattacks-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/esa-cyberattack-200gb-data-theft-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-05</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/ibm-api-connect-cve-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-02</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/clickfix-social-engineering-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-02</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/managemyhealth-nz-breach-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-02</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/covenant-health-qilin-ransomware-2026.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-02</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/wheelchair-bluetooth-hack-cve-2025-14346.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-02</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/mongodb-mongobleed-cve-2025-14847.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-29</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/scattered-spider-teen-hacker-115-million.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-29</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/react2shell-cve-2025-55182-react-vulnerability.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-27</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/trustwallet-chrome-extension-hack-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-27</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/langchain-cve-2025-68664-ai-vulnerability.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-27</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/operation-pcpcat-nextjs-hack-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-25</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/romania-water-ransomware-bitlocker-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-25</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/n8n-rce-vulnerability-cve-2025-68613.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-25</lastmod>
   </url>
 
   <url>
@@ -817,63 +688,63 @@
     <loc>https://thehgtech.com/articles/nissan-redhat-breach-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/watchguard-firebox-zero-day-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-22</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/doj-atm-jackpotting-ploutus-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-22</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/north-korea-crypto-theft-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-22</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/700credit-breach-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-20</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/dxs-nhs-ransomware-breach-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-20</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/cybersecurity-pros-guilty-alphv-ransomware-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-20</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/nefilim-ransomware-operator-guilty-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-20</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/99-percent-ai-systems-attacked-2025.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/ai-attacks-99-hero.png</image:loc>
       <image:title>99% of AI Systems Attacked in 2025</image:title>
@@ -884,28 +755,28 @@
     <loc>https://thehgtech.com/articles/french-ministry-interior-hack-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-18</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/kimwolf-botnet-android-ddos-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-18</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/fortinet-fortigate-critical-exploit-2025.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-18</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/articles/redhat-chatterbox-ai-safety-acquisition-2025.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/redhat-chatterbox-hero.png</image:loc>
       <image:title>Red Hat Acquires Chatterbox Labs for AI Safety</image:title>
@@ -916,7 +787,7 @@
     <loc>https://thehgtech.com/articles/cybersecurity-predictions-2026.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/2026-predictions-hero.png</image:loc>
       <image:title>6 Cybersecurity Predictions for 2026</image:title>
@@ -927,7 +798,7 @@
     <loc>https://thehgtech.com/articles/harvard-phone-phishing-breach-2025.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/harvard-breach-hero.png</image:loc>
       <image:title>Harvard University Phone Phishing Breach</image:title>
@@ -938,7 +809,7 @@
     <loc>https://thehgtech.com/articles/salesforce-billion-record-extortion-2025.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/salesforce-breach-hero.png</image:loc>
       <image:title>Salesforce 1 Billion Records Data Extortion</image:title>
@@ -949,7 +820,7 @@
     <loc>https://thehgtech.com/articles/gentlemen-ransomware-threat-2025.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-15</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/gentlemen_ransomware.png</image:loc>
       <image:title>Gentlemen Ransomware Threat Analysis</image:title>
@@ -960,7 +831,7 @@
     <loc>https://thehgtech.com/articles/7zip-critical-vulnerability.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-15</lastmod>
   </url>
 
   <!-- ========== TOOL COMPARISONS - HIGH VALUE SEO ========== -->
@@ -968,14 +839,14 @@
     <loc>https://thehgtech.com/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/comparisons/splunk-vs-elastic-security-vs-logrhythm.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
 
   <!-- ========== SECURITY GUIDES - HIGH VALUE LONG-TAIL KEYWORDS ========== -->
@@ -985,7 +856,7 @@
     <loc>https://thehgtech.com/guides/oauth-security-attacks-defense-2026.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/oauth-security-attacks-defense-2026.png</image:loc>
       <image:title>OAuth Security in 2026: How Attackers Exploit the Protocol You Trust</image:title>
@@ -997,7 +868,7 @@
     <loc>https://thehgtech.com/guides/dark-web-monitoring-security-teams.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-06</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/dark-web-monitoring-security-teams.png</image:loc>
       <image:title>Dark Web Monitoring for Security Teams: A Practitioners Guide 2026</image:title>
@@ -1009,7 +880,7 @@
     <loc>https://thehgtech.com/guides/passkeys-fido2-passwordless-authentication.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-18</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/passkeys-fido2-passwordless-authentication.png</image:loc>
       <image:title>Passkeys FIDO2 Passwordless Authentication Enterprise Guide 2026</image:title>
@@ -1021,7 +892,7 @@
     <loc>https://thehgtech.com/guides/sbom-software-supply-chain-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-18</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/sbom-software-supply-chain-security.png</image:loc>
       <image:title>SBOM Software Supply Chain Security Implementation Guide 2026</image:title>
@@ -1033,7 +904,7 @@
     <loc>https://thehgtech.com/guides/soc-analyst-career-roadmap.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-11</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/soc-analyst-career-roadmap.png</image:loc>
       <image:title>SOC Analyst Career Roadmap 2026 - Tier 1 to Security Architect</image:title>
@@ -1045,7 +916,7 @@
     <loc>https://thehgtech.com/guides/ceh-vs-oscp-certification.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-02-11</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/ceh-vs-oscp-certification.png</image:loc>
       <image:title>CEH vs OSCP Certification Comparison 2026</image:title>
@@ -1057,7 +928,7 @@
     <loc>https://thehgtech.com/guides/clawdbot-moltbot-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/clawdbot-moltbot-security.png</image:loc>
       <image:title>Clawdbot Moltbot Security Guide - AI Assistant Risks and Hardening</image:title>
@@ -1069,7 +940,7 @@
     <loc>https://thehgtech.com/guides/ai-crawler-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/ai-crawler-security.png</image:loc>
       <image:title>AI Crawler Security Guide - ClaudeBot GPTBot Blocking</image:title>
@@ -1081,7 +952,7 @@
     <loc>https://thehgtech.com/guides/medusa-security-scanner.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-27</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/medusa-security-scanner.png</image:loc>
       <image:title>MEDUSA Security Scanner Guide</image:title>
@@ -1093,7 +964,7 @@
     <loc>https://thehgtech.com/guides/ai-agent-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/ai-agent-security.png</image:loc>
       <image:title>Securing Autonomous AI Agents: The 2026 Architecture Guide</image:title>
@@ -1104,7 +975,7 @@
     <loc>https://thehgtech.com/guides/kubernetes-ai-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/kubernetes-ai-security.png</image:loc>
       <image:title>Kubernetes AI Security: Protecting the ML Pipeline</image:title>
@@ -1115,7 +986,7 @@
     <loc>https://thehgtech.com/guides/deepfake-defense.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/deepfake-defense.png</image:loc>
       <image:title>Deepfake Defense: Technical Detection of Synthetic Identities</image:title>
@@ -1126,7 +997,7 @@
     <loc>https://thehgtech.com/guides/compliance-checklist-2026.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/compliance-checklist-2026.png</image:loc>
       <image:title>2026 Compliance Checklist: DORA, EU AI Act &amp; NIST Mastery</image:title>
@@ -1138,7 +1009,7 @@
     <loc>https://thehgtech.com/guides/chatgpt-system-prompt-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-13</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/chatgpt-system-prompt-security.png</image:loc>
       <image:title>ChatGPT System Prompt Security: Extraction Attacks &amp; Defense</image:title>
@@ -1149,7 +1020,7 @@
     <loc>https://thehgtech.com/guides/llm-jailbreaking-defense.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-13</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/llm-jailbreaking-defense.png</image:loc>
       <image:title>LLM Jailbreaking Defense: DAN Prompts &amp; Attack Patterns</image:title>
@@ -1160,7 +1031,7 @@
     <loc>https://thehgtech.com/guides/llm-jailbreaking-defense-advanced.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-13</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/llm-jailbreaking-defense-advanced.png</image:loc>
       <image:title>Advanced LLM Jailbreaking Defense: Token-Level Attacks</image:title>
@@ -1171,7 +1042,7 @@
     <loc>https://thehgtech.com/guides/ai-red-teaming-playbook.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-13</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/ai-red-teaming-playbook.png</image:loc>
       <image:title>AI Red Teaming Playbook: LLM Security Testing Guide</image:title>
@@ -1182,7 +1053,7 @@
     <loc>https://thehgtech.com/guides/owasp-llm-top-10.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-13</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/owasp-llm-top-10.png</image:loc>
       <image:title>OWASP Top 10 for LLM Applications: Complete Breakdown</image:title>
@@ -1194,7 +1065,7 @@
     <loc>https://thehgtech.com/guides/unicode-llm-attacks.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-18</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/unicode-llm-attacks.png</image:loc>
       <image:title>Unicode Smuggling: How Hackers Hide Instructions in Emojis</image:title>
@@ -1205,7 +1076,7 @@
     <loc>https://thehgtech.com/guides/unicode-llm-attacks-advanced.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-18</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/unicode-llm-attacks-advanced.png</image:loc>
       <image:title>Advanced Unicode LLM Attacks: Variation Selectors &amp; Token Exploitation</image:title>
@@ -1217,7 +1088,7 @@
     <loc>https://thehgtech.com/guides/wireshark-network-analysis.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/wireshark-network-analysis.png</image:loc>
       <image:title>Wireshark Network Analysis: Packet Capture Guide</image:title>
@@ -1228,7 +1099,7 @@
     <loc>https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/email-security-spf-dkim-dmarc.png</image:loc>
       <image:title>Email Security: SPF, DKIM &amp; DMARC Configuration Guide</image:title>
@@ -1239,7 +1110,7 @@
     <loc>https://thehgtech.com/guides/aws-security-best-practices.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/aws-security-best-practices.png</image:loc>
       <image:title>AWS Security Best Practices: IAM, S3, VPC Guide</image:title>
@@ -1250,7 +1121,7 @@
     <loc>https://thehgtech.com/guides/devsecops-pipeline-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/devsecops-pipeline-security.png</image:loc>
       <image:title>DevSecOps Pipeline Security: SAST, DAST, SCA Guide</image:title>
@@ -1261,7 +1132,7 @@
     <loc>https://thehgtech.com/guides/digital-forensics-fundamentals.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/digital-forensics-fundamentals.png</image:loc>
       <image:title>Digital Forensics Fundamentals: Evidence Collection Guide</image:title>
@@ -1273,7 +1144,7 @@
     <loc>https://thehgtech.com/guides/yara-rules-advanced.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-12</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/yara-rules-advanced.png</image:loc>
       <image:title>Advanced YARA Techniques: Expert Malware Detection Guide</image:title>
@@ -1285,7 +1156,7 @@
     <loc>https://thehgtech.com/guides/yara-rules-malware-detection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-09</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/yara-rules-malware-detection.png</image:loc>
       <image:title>YARA Rules for Malware Detection Guide</image:title>
@@ -1296,7 +1167,7 @@
     <loc>https://thehgtech.com/guides/sigma-rules-siem-detection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-09</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/sigma-rules-siem-detection.png</image:loc>
       <image:title>Sigma Rules for SIEM Detection Guide</image:title>
@@ -1308,7 +1179,7 @@
     <loc>https://thehgtech.com/guides/iso-27001-gap-analysis.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/iso-27001-gap-analysis.png</image:loc>
       <image:title>ISO 27001:2022 Gap Analysis Guide</image:title>
@@ -1319,7 +1190,7 @@
     <loc>https://thehgtech.com/guides/iso-27001-certification-roadmap.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/iso-27001-certification-roadmap.png</image:loc>
       <image:title>ISO 27001:2022 Certification Roadmap</image:title>
@@ -1331,7 +1202,7 @@
     <loc>https://thehgtech.com/guides/edr-vs-xdr.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-31</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/edr-vs-xdr.png</image:loc>
       <image:title>EDR vs XDR Complete Security Guide 2025</image:title>
@@ -1343,70 +1214,70 @@
     <loc>https://thehgtech.com/guides/dora-compliance.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/nist-csf-2-implementation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/ai-governance-framework.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/ztna-deployment.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/third-party-risk-management.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/splunk-spl-guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/cve-prioritization-patch-management.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/mitre-attack-mapping.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/threat-intelligence-feeds-integration.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/soc2-compliance-checklist.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-23</lastmod>
   </url>
 
   <!-- Existing guides -->
@@ -1414,35 +1285,35 @@
     <loc>https://thehgtech.com/guides/cisa-kev-tracker.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/siem-log-analysis.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/api-security-best-practices.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/ransomware-response-playbook.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-14</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/ransomware-response-playbook.png</image:loc>
       <image:title>Ransomware Response Playbook 2026: Complete IR Guide</image:title>
@@ -1453,84 +1324,84 @@
     <loc>https://thehgtech.com/guides/zero-day-detection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/incident-response-automation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/insider-threat-detection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/network-segmentation-zero-trust.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/container-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/phishing-simulation-security-awareness.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/security-metrics-kpis-dashboard.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/threat-intelligence-soc.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/openphish-integration.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
   
   <url>
     <loc>https://thehgtech.com/guides/malware-hash-analysis.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/threat-hunting-techniques.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/active-directory-security-hardening.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-01-14</lastmod>
     <image:image>
       <image:loc>https://thehgtech.com/images/guides/active-directory-security-hardening.png</image:loc>
       <image:title>Active Directory Security Hardening Guide 2026</image:title>
@@ -1541,7 +1412,7 @@
     <loc>https://thehgtech.com/guides/windows-event-log-analysis.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
 
   <!-- AI Security Guides -->
@@ -1549,727 +1420,14 @@
     <loc>https://thehgtech.com/guides/securing-ai-ml-pipelines.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
 
   <url>
     <loc>https://thehgtech.com/guides/llm-security-prompt-injection.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2025-12-17</lastmod>
   </url>
 
-  <!-- March 2026 - Missing pages added via SEO audit -->
-  <url>
-    <loc>https://thehgtech.com/articles/checkbox-security-illusion.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/india-ai-summit-2026-wrapper-epidemic.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/cloud-security-hardening.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/incident-response-plan.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/penetration-testing-methodology.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/soc-analyst-fundamentals.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/comparisons/proofpoint-vs-mimecast-vs-microsoft-defender-o365.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/iso27001-grc-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/tools/zero-day-checker.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-03-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/index.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl43-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-71-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-531-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-714-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-83-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-520-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-517-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-57-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-810-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-827-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl52-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-79-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-711-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-86-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-65-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-52-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-822-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-815-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-512-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-525-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-534-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-833-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl71-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-74-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-528-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-818-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-68-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-828-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-58-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-518-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl41-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-834-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-73-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-533-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-515-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-522-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-62-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-55-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-825-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-812-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-81-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-67-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl62-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-817-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-820-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-527-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-510-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-713-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl81-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-84-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-536-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-89-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-831-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl73-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-76-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-710-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-87-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-78-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-513-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-524-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-64-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-53-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl61-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-823-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-814-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-832-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-75-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-535-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-819-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-529-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl93-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-530-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl101-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-82-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-56-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-61-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-811-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-826-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-521-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-516-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-526-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-511-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-51-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-66-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-816-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-821-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-712-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-85-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl91-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-830-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-77-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-537-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-88-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-519-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-829-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-59-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-532-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-72-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-63-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-54-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-824-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-813-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-cl51-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-514-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/tools/grc-assessment/controls/iso-27001-523-guide.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thehgtech.com/articles/copy-fail-cve-2026-31431.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
 </urlset>
