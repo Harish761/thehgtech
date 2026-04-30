@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Apr 30 2026",
+            "headline": "SAP NPM Packages Compromised—Supply Chain Attack Alert",
+            "title": "Mini Shai-Hulud Attack Targets SAP NPM Packages with Preinstall Hook",
+            "content": "A sophisticated supply chain attack, dubbed Mini Shai-Hulud, has targeted SAP NPM packages by introducing a preinstall hook designed to fetch and execute a Bun binary, effectively bypassing security monitoring mechanisms. This attack highlights vulnerabilities within the software supply chain, as attackers leverage package management systems to infiltrate enterprise environments. The incident underscores the critical need for developers and organizations to implement robust security measures, including code integrity checks and dependency audits, to protect against such threats. The attack&#x27;s impact is significant, potentially affecting numerous SAP environments reliant on these compromised packages. Security teams should immediately review their package dependencies and apply any necessary patches or mitigations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sap-npm-packages-targeted-in-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Gemini CLI Flaw Enables Host Code Execution—Patch Urgently",
+            "title": "Critical Vulnerability in Gemini CLI Allows Host Code Execution and Supply Chain Attacks",
+            "content": "A critical vulnerability in the Gemini CLI has been identified, allowing attackers to execute commands outside the sandbox by planting malicious configurations. This flaw poses a severe risk to systems using the Gemini CLI, potentially enabling supply chain attacks. Security professionals are advised to assess their systems for this vulnerability and apply patches immediately to mitigate potential exploitation. The vulnerability underscores the ongoing challenges in securing command-line interfaces and the importance of regular security audits. Organizations should prioritize updating their Gemini CLI installations to prevent unauthorized code execution and safeguard their infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-gemini-cli-flaw-enabled-host-code-execution-supply-chain-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "CISA Urges Zero Trust for Critical Infrastructure Security",
+            "title": "CISA Advises Zero Trust Adoption for Operational Technology Networks",
+            "content": "The US Cybersecurity and Infrastructure Security Agency (CISA) has issued a call to action for critical infrastructure operators to dismantle implicit trust within their operational technology (OT) networks. CISA&#x27;s new guidance emphasizes the adoption of zero trust principles to enhance security across industrial systems supporting essential services like power, water, and transportation. This initiative aims to address the growing threats targeting OT environments, urging operators to reassess their security postures and implement comprehensive access controls. By adopting zero trust, organizations can better protect against unauthorized access and potential cyberattacks, ensuring the resilience of critical infrastructure.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4165486/dismantle-implicit-trust-in-ot-networks-cisa-tells-critical-infrastructure-operators.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "EnOcean SmartServer Vulnerabilities Risk Remote Hacks",
+            "title": "EnOcean SmartServer Flaws Allow Security Bypass and Remote Code Execution",
+            "content": "Researchers at Claroty have uncovered two critical vulnerabilities in EnOcean SmartServer that could be exploited for security bypass and remote code execution. These flaws pose a significant risk to buildings utilizing EnOcean technology, potentially allowing attackers to gain unauthorized access and control over building management systems. The vulnerabilities highlight the importance of securing IoT devices and infrastructure against cyber threats. Building operators and IT teams should prioritize patching these vulnerabilities and enhancing their security protocols to prevent potential exploitation. The discovery underscores the ongoing need for vigilance in securing smart building technologies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/enocean-smartserver-flaws-expose-buildings-to-remote-hacking/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "cPanel Zero-Day Exploited—Proof of Concept Released",
+            "title": "Critical cPanel and WHM Zero-Day CVE-2026-41940 Actively Exploited",
+            "content": "A critical zero-day vulnerability, CVE-2026-41940, affecting cPanel, WHM, and WP Squared, is being actively exploited in the wild. This authentication bypass flaw has been targeted since late February, with a proof of concept now publicly available, escalating the risk of widespread exploitation. Administrators are urged to apply patches immediately and review their systems for signs of compromise. The vulnerability highlights the persistent threat posed by zero-day exploits and the need for timely updates and robust security measures. Organizations using these platforms should prioritize securing their environments to prevent unauthorized access and potential data breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-cpanel-and-whm-bug-exploited-as-a-zero-day-poc-now-available/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Google Gemini CLI Vulnerability—Max Severity RCE Risk",
+            "title": "Max-Severity RCE Vulnerability Found in Google Gemini CLI",
+            "content": "A maximum severity remote code execution (RCE) vulnerability has been discovered in the Google Gemini CLI, posing a significant threat to environments processing untrusted inputs. Disclosed by Novee Security researchers, this flaw affects the @google/gemini-cli package and its associated systems. The vulnerability allows attackers to execute arbitrary code, potentially compromising affected systems. Security teams should prioritize applying patches and reviewing their configurations to mitigate this risk. This discovery underscores the critical importance of securing development tools and maintaining vigilance against emerging threats in software environments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4165470/max-severity-rce-flaw-found-in-google-gemini-cli.html",
+            "relatedResources": []
+        },
+        {
             "date": "Apr 29 2026",
             "headline": "Qinglong RCE Flaws Exploited—Cryptominers Target Developer Servers",
             "title": "Hackers Exploit Qinglong Task Scheduler RCE Flaws for Cryptomining",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/checkmarx-confirms-data-stolen-in-supply-chain-attack/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "CISA Mandates Windows Patch—Zero-Day Exploited",
-            "title": "CISA Orders Federal Agencies to Patch Windows Zero-Day Vulnerability",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a directive for federal agencies to patch a Windows vulnerability actively exploited in zero-day attacks. This urgent order reflects the critical nature of the flaw, which could allow attackers to gain unauthorized access to affected systems. The directive emphasizes the need for immediate action to secure federal networks against potential threats. Agencies are advised to apply the necessary updates and review their security protocols to prevent exploitation. This move by CISA highlights the ongoing battle against zero-day vulnerabilities in widely used software.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-windows-flaw-exploited-in-zero-day-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "cPanel Vulnerability—Update Servers to Prevent Unauthorized Access",
-            "title": "Critical cPanel Authentication Vulnerability Requires Immediate Server Update",
-            "content": "cPanel has released critical security updates to address a vulnerability affecting various authentication paths, which could allow attackers to gain unauthorized access to the control panel software. This issue impacts all currently supported versions of cPanel, necessitating immediate action from users to secure their servers. The vulnerability highlights the importance of regular software updates and proactive security measures to protect sensitive web hosting environments. Users are urged to apply the updates promptly to mitigate potential risks. This incident serves as a reminder of the critical role of timely patch management in maintaining secure systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/critical-cpanel-authentication.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "Chrome 147, Firefox 150—Security Updates Fix Critical Flaws",
-            "title": "Chrome 147 and Firefox 150 Security Updates Address Critical Vulnerabilities",
-            "content": "Google and Mozilla have rolled out security updates for Chrome 147 and Firefox 150, addressing critical and high-severity vulnerabilities that could lead to arbitrary code execution. These updates are crucial for maintaining the security of users&#x27; browsing environments, as the flaws could be exploited by attackers to compromise systems. Users are advised to update their browsers immediately to protect against potential threats. The release of these updates underscores the ongoing efforts by browser developers to enhance security and protect users from evolving cyber threats. Regular updates remain a key defense against vulnerabilities in widely used software.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-147-firefox-150-security-updates-rolling-out/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "VECT 2.0 Ransomware Destroys Large Files—Data Wiper Alert",
-            "title": "Broken VECT 2.0 Ransomware Acts as Data Wiper for Large Files",
-            "content": "Researchers have identified a critical flaw in the VECT 2.0 ransomware, which inadvertently functions as a data wiper for large files due to improper encryption nonce handling. This defect leads to the permanent destruction of data instead of encryption, posing a severe risk to organizations relying on large file storage. The issue primarily affects systems targeted by VECT 2.0, a variant known for its aggressive encryption tactics. This development underscores the importance of robust backup strategies and highlights the potential for ransomware to cause unintended data loss. Security professionals should prioritize verifying the integrity of their backup systems and consider additional layers of data protection.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/broken-vect-20-ransomware-acts-as-a-data-wiper-for-large-files/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Hackers Exploit LiteLLM SQLi Flaw—CVE-2026-42208 Targeted",
-            "title": "Hackers Exploiting Critical LiteLLM Pre-auth SQLi Vulnerability",
-            "content": "A critical SQL injection vulnerability in the LiteLLM open-source large-language model gateway, tracked as CVE-2026-42208, is being actively exploited by hackers. This flaw allows attackers to access sensitive information without authentication, posing a significant threat to systems using LiteLLM. The vulnerability highlights the ongoing risks associated with open-source software, especially in AI and machine learning applications. Organizations using LiteLLM should immediately apply available patches and review their security configurations to mitigate potential data breaches. This incident serves as a reminder of the importance of regular security audits and prompt vulnerability management.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-are-exploiting-a-critical-litellm-pre-auth-sqli-flaw/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "GitHub RCE Flaw—CVE-2026-3854 Exploitable via Single Push",
-            "title": "Critical GitHub CVE-2026-3854 RCE Flaw Discovered",
-            "content": "Cybersecurity researchers have disclosed CVE-2026-3854, a critical remote code execution (RCE) vulnerability affecting GitHub.com and GitHub Enterprise Server. This flaw allows authenticated users to execute arbitrary code with a single &quot;git push&quot; command, posing a severe risk to repositories and their data integrity. With a CVSS score of 8.8, the vulnerability requires immediate attention from GitHub administrators and users. The discovery emphasizes the need for stringent access controls and regular updates to development environments. Users are urged to apply the latest patches and review their security policies to prevent exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/researchers-discover-critical-github.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 30 2026",
+            "headline": "GPT-5.5-Cyber: OpenAI&#x27;s Exclusive Model for Cybersecurity Pros",
+            "title": "OpenAI Unveils GPT-5.5-Cyber for Select Cybersecurity Defenders",
+            "content": "OpenAI is set to release GPT-5.5-Cyber, a specialized AI model aimed exclusively at bolstering cybersecurity defenses. CEO Sam Altman announced that this model will initially be accessible only to a select group of trusted &quot;cyber defenders&quot; to help institutions enhance their security measures. Unlike previous models, GPT-5.5-Cyber is designed to address complex cyber threats and will not be available to the general public. This move underscores OpenAI&#x27;s strategic focus on empowering critical infrastructure against sophisticated cyber attacks. Organizations in the cybersecurity sector should prepare to integrate this advanced tool into their defense strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/921073/openai-sam-altman-new-cybersecurity-model-gpt-5-5-cyber",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "OpenAI Clarifies &quot;Goblin&quot; Coding Model Confusion",
+            "title": "OpenAI Addresses Goblin-Related Restrictions in Coding Model",
+            "content": "OpenAI has responded to recent reports about its coding model&#x27;s peculiar restrictions on discussing mythical creatures like goblins and trolls. Following a Wired article, OpenAI clarified these instructions were part of an internal test to improve model safety and prevent inappropriate content generation. This revelation highlights the ongoing challenges AI developers face in balancing model creativity with content moderation. Developers using OpenAI&#x27;s models should be aware of these restrictions and the company&#x27;s commitment to refining AI safety protocols.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/921181/openai-codex-goblins",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Spotify&#x27;s &quot;Verified&quot; Badge Fights AI Music Fakes",
+            "title": "Spotify Introduces &quot;Verified by Spotify&quot; Badge to Combat AI Music",
+            "content": "Spotify has launched a &quot;Verified by Spotify&quot; badge to help users distinguish between human and AI-generated music. This initiative aims to tackle the growing issue of fake and spam accounts by providing a green checkmark for verified artists. Initially, the program will focus on high-profile artists, ensuring listeners can trust the authenticity of the music they consume. This move reflects Spotify&#x27;s proactive stance in maintaining platform integrity amid rising concerns over AI-generated content. Artists and listeners should look for the verification badge to ensure genuine music experiences.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/921048/verified-by-spotify-badge",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Meta&#x27;s AI Powers 10M Weekly Business Conversations",
+            "title": "Meta&#x27;s Business AI Surpasses 10 Million Weekly Conversations",
+            "content": "Meta has announced that its business AI tools now facilitate over 10 million conversations weekly, showcasing the widespread adoption of its generative AI technologies. With over 8 billion advertisers leveraging these tools, Meta&#x27;s AI is becoming integral to customer engagement strategies. This milestone underscores the growing reliance on AI to enhance business communications and streamline operations. Companies utilizing Meta&#x27;s AI solutions can expect improved interaction efficiency and customer satisfaction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/30/meta-says-its-business-ai-now-facilitates-10-million-conversations-a-week/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Meta Loses 20M Users—Boosts AI Investment",
+            "title": "Meta Reports User Decline Amid Increased AI Investment Plans",
+            "content": "Meta revealed a loss of 20 million users last quarter, yet remains committed to investing billions in AI advancements. During an earnings call, the company noted a decline in &quot;Family daily active people,&quot; a metric encompassing its suite of platforms. Despite user attrition, Meta is doubling down on AI to drive future growth and innovation. This strategic pivot highlights the tech giant&#x27;s belief in AI as a cornerstone for its long-term success. Industry observers should monitor how these investments impact Meta&#x27;s user engagement and platform evolution.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/921089/meta-earnings-q1-2026-user-decline-ai-investments",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Google&#x27;s AI Defaults—Privacy Concerns Arise",
+            "title": "Google&#x27;s AI Defaults Raise Privacy and User Choice Concerns",
+            "content": "Google&#x27;s commitment to user privacy in AI is under scrutiny as reports suggest its default settings may not fully respect user autonomy. While Google claims to prioritize privacy, the complexity of its AI systems often leaves users with limited control over data usage. This situation raises questions about the transparency and ethical implications of AI defaults. Professionals in the field should critically assess Google&#x27;s privacy practices and advocate for clearer user consent mechanisms.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/04/googles-privacy-maze-how-gemini-traps-you-and-your-data/",
+            "relatedResources": []
+        },
         {
             "date": "Apr 30 2026",
             "headline": "AWS Revenue Soars—Amazon&#x27;s Capital Spending Follows Suit",
@@ -165,15 +219,6 @@ const websiteContent = {
             "content": "OpenAI&#x27;s ChatGPT is witnessing a slowdown in downloads, with a 132% year-over-year increase in uninstalls reported in April. This trend poses potential challenges for OpenAI&#x27;s anticipated initial public offering (IPO), as user retention becomes a critical metric for investors. The decline is attributed to users opting for alternative chatbots that offer competitive features or better performance. As the AI chatbot market becomes increasingly saturated, OpenAI must address these retention issues to maintain investor confidence. Companies considering ChatGPT for integration should evaluate its long-term viability amid growing competition.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920476/openai-chatgpt-downloads-slow-down-ipo",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 27 2026",
-            "headline": "Symphony Spec Boosts Engineering—Reduces Context Switching",
-            "title": "Open-Source Symphony Spec Enhances Codex Orchestration Efficiency",
-            "content": "Symphony, an open-source specification for Codex orchestration, is transforming issue trackers into continuous agent systems, significantly boosting engineering productivity. By automating routine tasks and minimizing context switching, Symphony allows developers to focus on complex problem-solving. This innovation is particularly beneficial in environments where efficiency and rapid iteration are critical. Organizations adopting Symphony can expect enhanced workflow management and reduced operational bottlenecks. As open-source solutions gain traction, Symphony represents a significant step forward in optimizing software development processes.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/open-source-codex-orchestration-symphony",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Firestorm Labs, a defense startup, has successfully raised $82 million in funding to revolutionize drone manufacturing by deploying mobile factories inside shipping containers. This innovative approach aims to bring production capabilities directly to the front lines, enhancing operational efficiency and responsiveness in defense scenarios. The funding round reflects growing investor confidence in the potential of mobile manufacturing solutions to transform military logistics. Defense industry stakeholders should consider the implications of on-site production for strategic deployment and supply chain optimization.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/04/29/firestorm-labs-raises-82m-to-take-drone-factories-into-the-field/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "Shapes App Merges Humans and AI in Group Chats",
-            "title": "Shapes App Introduces AI Characters to Human Group Chats for Enhanced Interaction",
-            "content": "The new app, Shapes, is redefining digital communication by integrating AI characters into group chat environments, akin to platforms like Discord. This innovation allows users to interact with AI alongside human participants, offering unique conversational dynamics and enhanced engagement. As AI becomes more prevalent in social applications, Shapes exemplifies the trend of blending human and machine interactions. Users and developers should explore the potential of AI-driven communication tools to enrich user experiences and foster new forms of digital interaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "Taylor Swift Deepfakes Fuel TikTok Scams",
-            "title": "AI-Generated Celebrity Deepfakes Used in TikTok Scams, Warns Copyleaks",
-            "content": "Authentication company Copyleaks has identified a surge in AI-generated deepfake videos featuring celebrities like Taylor Swift and Rihanna, used to promote fraudulent services on TikTok. These videos often depict celebrities in familiar settings, such as interviews or red carpet events, misleading viewers into believing the endorsements are genuine. The rise of deepfake technology poses significant challenges for digital platforms in verifying content authenticity. Users should remain vigilant and verify the legitimacy of online promotions, while platforms enhance their detection capabilities to combat deepfake scams.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920351/ai-celebrity-deepfake-ads-tiktok-copyleaks",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "Otter Integrates Gmail, Salesforce—Expands Enterprise Search Capabilities",
-            "title": "Otter Enhances Enterprise Search with New Tool Integrations",
-            "content": "Otter has launched a new feature allowing users to search across various enterprise tools, including Gmail, Google Drive, Notion, Jira, and Salesforce. This integration enables seamless querying of data from these platforms alongside existing meeting data, streamlining information retrieval for enterprise users. The company plans to extend this capability to Microsoft Outlook, Teams, SharePoint, and Slack, further broadening its reach. This development is poised to enhance productivity by reducing the time spent switching between applications. Enterprises can leverage these integrations to improve data accessibility and collaboration across teams.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/28/otters-new-feature-lets-users-search-across-their-enterprise-tools/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "OpenAI Strengthens ChatGPT Safety with New Safeguards",
-            "title": "OpenAI Enhances Community Safety Measures for ChatGPT",
-            "content": "OpenAI has outlined its commitment to community safety by implementing robust safeguards for ChatGPT. These measures include advanced model safeguards, misuse detection systems, and stringent policy enforcement. OpenAI collaborates with safety experts to ensure these protocols effectively mitigate risks associated with AI misuse. This initiative aims to protect users from potential harm while maintaining the platform&#x27;s integrity. As AI technologies become more prevalent, such proactive measures are crucial for fostering a safe and trustworthy AI environment.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/our-commitment-to-community-safety",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "JD.com Innovates AI Training—Cuts Compute Costs for Enterprises",
-            "title": "JD.com Develops Efficient AI Reasoning Model Training Techniques",
-            "content": "Researchers at JD.com have introduced methods to build custom AI reasoning agents with significantly reduced computational resources. Traditional AI model training often requires extensive resources, forcing enterprises to choose between costly models or sparse feedback from reinforcement learning. JD.com&#x27;s approach offers a solution by optimizing the training process, making it accessible for enterprise teams with limited resources. This advancement could democratize AI capabilities, allowing more organizations to develop sophisticated AI solutions without prohibitive costs.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/how-to-build-custom-reasoning-agents-with-a-fraction-of-the-compute",
             "relatedResources": []
         }
     ],
