@@ -1063,20 +1063,12 @@
       "date": "2026-01-31",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1356",
-      "incident_id": 1356,
-      "title": "Urban VPN Proxy Browser Extension Reportedly Harvested and Sold Private AI Chatbot Conversations via",
-      "date": "2026-01-31",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 134,
+    "total": 133,
     "last7Days": 10,
     "last30Days": 35
   },
-  "lastUpdated": "2026-05-01T19:19:09.546051+05:30"
+  "lastUpdated": "2026-05-01T22:40:09.300605+05:30"
 }
