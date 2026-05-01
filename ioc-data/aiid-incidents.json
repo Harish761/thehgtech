@@ -1065,14 +1065,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1355",
-      "incident_id": 1355,
-      "title": "Reported AI Impersonations of Pastors Used in Online Donation and Influence Scams",
-      "date": "2026-01-31",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1356",
       "incident_id": 1356,
       "title": "Urban VPN Proxy Browser Extension Reportedly Harvested and Sold Private AI Chatbot Conversations via",
@@ -1082,9 +1074,9 @@
     }
   ],
   "stats": {
-    "total": 135,
+    "total": 134,
     "last7Days": 10,
     "last30Days": 35
   },
-  "lastUpdated": "2026-05-01T15:25:55.843914+05:30"
+  "lastUpdated": "2026-05-01T19:19:09.546051+05:30"
 }
