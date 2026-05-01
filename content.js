@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Apr 30 2026",
+            "headline": "PyTorch Lightning Compromised—Credential Theft via Malicious Versions",
+            "title": "PyTorch Lightning Supply Chain Attack Targets Credentials with Malicious Updates",
+            "content": "In a recent supply chain attack, threat actors have compromised the Python package PyTorch Lightning, releasing two malicious versions, 2.6.2 and 2.6.3, designed to steal credentials. Security firms Aikido Security, OX Security, Socket, and StepSecurity identified the breach, which highlights the ongoing vulnerability of software supply chains. The attack specifically targets developers and organizations using these versions, potentially exposing sensitive information. This incident underscores the critical need for vigilance in monitoring software dependencies and implementing robust security practices. Users are advised to verify their package versions and update to secure releases immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "cPanel Zero-Day Exploited for Months—Admin Access Risk",
+            "title": "Critical cPanel &amp; WHM Zero-Day Exploited for Administrative Access",
+            "content": "A critical authentication bypass vulnerability in cPanel &amp; WHM has been exploited as a zero-day for several months, allowing attackers to gain administrative access to affected servers. This flaw poses a significant risk to web hosting environments, potentially compromising the integrity and security of hosted websites. Security professionals are urged to apply the latest patches released by cPanel to mitigate this threat. The incident highlights the importance of timely vulnerability management and the need for continuous monitoring of server security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-cpanel-whm-vulnerability-exploited-as-zero-day-for-months/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Linux &#x27;Copy Fail&#x27; Bug—Root Access on Major Distros",
+            "title": "Linux &#x27;Copy Fail&#x27; Vulnerability Allows Root Access on Major Distributions",
+            "content": "Researchers have disclosed a high-severity local privilege escalation vulnerability in Linux, dubbed &#x27;Copy Fail,&#x27; tracked as CVE-2026-31431 with a CVSS score of 7.8. This flaw allows unprivileged local users to gain root access on major Linux distributions, posing a significant security risk. Discovered by Xint.io and Theori, the vulnerability affects systems that rely on specific file copying operations. Administrators are advised to apply patches as soon as they become available and review system configurations to mitigate potential exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Sandhills Medical Ransomware Breach—170,000 Affected",
+            "title": "Sandhills Medical Ransomware Breach Exposes Data of 170,000 Patients",
+            "content": "Sandhills Medical has revealed a ransomware attack by the Inc Ransom group that compromised personal data of 170,000 patients. The breach, which occurred nearly a year ago, was only recently disclosed, raising concerns about delayed breach notifications in the healthcare sector. The attack underscores the vulnerability of healthcare organizations to ransomware threats and the critical need for improved cybersecurity measures. Affected individuals are advised to monitor their personal information for signs of misuse.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sandhills-medical-says-ransomware-breach-affects-170000/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Google Patches CVSS 10 Flaw—Gemini CLI RCE Risk",
+            "title": "Google Fixes Critical RCE Vulnerability in Gemini CLI Package",
+            "content": "Google has patched a maximum severity remote code execution (RCE) vulnerability in the Gemini CLI npm package and its associated GitHub Actions workflow. The flaw, rated CVSS 10, could have allowed attackers to execute arbitrary commands on host systems, posing a severe risk to developers using these tools. Users are strongly encouraged to update to the latest versions to protect against potential exploitation. This incident highlights the ongoing challenges in securing open-source software and the importance of prompt patch management.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "cPanel Authentication Flaw—Update Servers Now",
+            "title": "cPanel Releases Security Update for Critical Authentication Vulnerability",
+            "content": "cPanel has issued security updates to address a critical vulnerability affecting various authentication paths, which could allow unauthorized access to the control panel software. This issue impacts all supported versions of cPanel and WebHost Manager (WHM), necessitating immediate action from administrators to secure their systems. The vulnerability underscores the importance of regular updates and vigilance in managing server security. Users should apply the patches promptly to mitigate potential threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/critical-cpanel-authentication.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
             "headline": "SAP NPM Packages Compromised—Supply Chain Attack Alert",
             "title": "Mini Shai-Hulud Attack Targets SAP NPM Packages with Preinstall Hook",
             "content": "A sophisticated supply chain attack, dubbed Mini Shai-Hulud, has targeted SAP NPM packages by introducing a preinstall hook designed to fetch and execute a Bun binary, effectively bypassing security monitoring mechanisms. This attack highlights vulnerabilities within the software supply chain, as attackers leverage package management systems to infiltrate enterprise environments. The incident underscores the critical need for developers and organizations to implement robust security measures, including code integrity checks and dependency audits, to protect against such threats. The attack&#x27;s impact is significant, potentially affecting numerous SAP environments reliant on these compromised packages. Security teams should immediately review their package dependencies and apply any necessary patches or mitigations.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/cpanel-whm-emergency-update-fixes-critical-auth-bypass-bug/",
             "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "CISA Adds ConnectWise, Windows Flaws to Exploited List",
-            "title": "CISA Adds Actively Exploited ConnectWise and Windows Flaws to KEV Catalog",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two actively exploited vulnerabilities affecting ConnectWise ScreenConnect and Microsoft Windows to its Known Exploited Vulnerabilities (KEV) catalog. The inclusion of these flaws, identified as CVE-2026-1234 and CVE-2026-5678, highlights their active exploitation in the wild. Organizations using these products should prioritize patching to protect against potential attacks. This update reflects CISA&#x27;s ongoing efforts to alert the public about vulnerabilities that pose significant threats to cybersecurity. Regular monitoring of the KEV catalog is recommended for staying informed about critical vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/cisa-adds-actively-exploited.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "GitHub RCE Vulnerability Exposes Millions of Repositories",
-            "title": "Critical GitHub Vulnerability CVE-2026-3854 Exposes Millions of Repositories",
-            "content": "A remote code execution (RCE) vulnerability, CVE-2026-3854, has been discovered in GitHub.com and GitHub Enterprise Server, potentially exposing millions of repositories to unauthorized access. This flaw allows attackers to execute arbitrary code on affected systems, posing a significant threat to the integrity of hosted projects. GitHub users are urged to apply the latest security updates and review their repository settings for potential exposure. The incident underscores the critical importance of securing code hosting platforms, which are integral to modern software development workflows.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-github-vulnerability-exposed-millions-of-repositories/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "LiteLLM SQL Injection Exploited Within 36 Hours of Disclosure",
-            "title": "LiteLLM CVE-2026-42208 SQL Injection Exploited Rapidly Post-Disclosure",
-            "content": "A critical SQL injection vulnerability, CVE-2026-42208, in BerriAI&#x27;s LiteLLM Python package has been exploited in the wild within 36 hours of its disclosure. This rapid exploitation highlights the agility of threat actors in leveraging newly disclosed vulnerabilities. Users of LiteLLM are advised to update to the latest version immediately to mitigate potential risks. The incident serves as a stark reminder of the need for prompt patching and vigilance in monitoring for security advisories. Developers should prioritize securing their Python packages to prevent similar exploitation scenarios.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "Vercel Breach Exposes OAuth Risks—Shadow AI Threats Loom",
-            "title": "Vercel Breach Highlights Dangers of Shadow AI and OAuth Sprawl",
-            "content": "The recent breach at Vercel underscores the vulnerabilities associated with third-party OAuth integrations, as a compromised OAuth application can become a conduit for widespread damage. The incident highlights how unauthorized access through a single OAuth app can impact downstream customers significantly. This breach serves as a cautionary tale about the unchecked proliferation of shadow AI tools within corporate environments. Organizations are urged to audit their OAuth integrations and enforce strict access controls to mitigate similar risks. The Vercel breach is a stark reminder of the complex security landscape introduced by third-party applications.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/learning-from-the-vercel-breach-shadow-ai-and-oauth-sprawl/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "GitHub Patches Critical RCE Flaw—Millions of Repos at Risk",
-            "title": "GitHub Fixes Critical RCE Vulnerability in Private Repositories",
-            "content": "GitHub has patched a critical remote code execution (RCE) vulnerability identified as CVE-2026-3854, which threatened the security of millions of private repositories. Discovered in early March, the flaw could have allowed attackers to execute arbitrary code, potentially exposing sensitive data across GitHub&#x27;s vast user base. This vulnerability underscores the importance of timely updates and vigilant security practices for developers relying on GitHub&#x27;s platform. Users are advised to review their repository settings and apply security patches promptly to safeguard their code. The incident highlights ongoing challenges in securing cloud-based development environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/github-fixes-rce-flaw-that-gave-access-to-millions-of-private-repos/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "Checkmarx Supply Chain Attack—Data Stolen from GitHub",
-            "title": "Checkmarx Confirms Data Exfiltration in Supply Chain Attack",
-            "content": "Checkmarx has confirmed a data breach resulting from a supply chain attack, with hackers exfiltrating data from its GitHub environment on March 30. The breach occurred a week after malicious code was published, highlighting the vulnerabilities inherent in software supply chains. This incident underscores the critical need for robust security measures and continuous monitoring of code repositories to detect unauthorized changes. Organizations are encouraged to implement stringent code review processes and employ automated tools to identify potential threats. The Checkmarx breach serves as a reminder of the persistent risks posed by supply chain attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/checkmarx-confirms-data-stolen-in-supply-chain-attack/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Apr 30 2026",
+            "headline": "Anthropic Eyes $900B Valuation—Investor Decisions Due in 48 Hours",
+            "title": "Anthropic&#x27;s $900B+ Valuation Round Nears as Investor Allocations Close",
+            "content": "Anthropic is reportedly on the brink of a valuation round exceeding $900 billion, with investors given a tight 48-hour window to submit their allocations. This rapid fundraising effort underscores the intense interest and confidence in Anthropic&#x27;s AI capabilities, particularly as the company continues to innovate in the AI space. The move comes amid a competitive landscape where AI firms are aggressively securing capital to fuel growth and technological advancements. Investors and stakeholders should be prepared for potential shifts in market dynamics as Anthropic&#x27;s valuation could set new benchmarks in the industry. The outcome of this round will likely influence investment trends and strategic partnerships in the AI sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "OpenAI Limits GPT-5.5 Cyber—Exclusive to Key Defenders",
+            "title": "OpenAI Restricts GPT-5.5 Cyber Access to Essential Cybersecurity Defenders",
+            "content": "OpenAI has announced that its latest cybersecurity testing tool, GPT-5.5 Cyber, will initially be available only to &quot;critical cyber defenders.&quot; This strategic limitation aims to ensure that the tool is deployed where it can have the most significant impact on cybersecurity infrastructure. The decision follows OpenAI&#x27;s previous criticism of Anthropic for similar access restrictions, highlighting a trend towards controlled distribution of advanced AI tools. Organizations involved in critical infrastructure protection should anticipate potential access to GPT-5.5 Cyber, which promises enhanced capabilities for identifying and mitigating cyber threats. This move reflects the growing emphasis on targeted AI deployment in cybersecurity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Salesforce Taps Customers for AI Roadmap Insights",
+            "title": "Salesforce Engages Customers to Shape Its AI Product Roadmap",
+            "content": "Salesforce is pioneering a customer-centric approach to developing its AI product roadmap, inviting enterprise clients to share their challenges and needs. This crowdsourcing initiative is based on the premise that issues faced by one customer are likely shared by others, enabling Salesforce to prioritize features that deliver the most value across its user base. By leveraging customer insights, Salesforce aims to enhance its AI offerings and maintain its competitive edge in the enterprise software market. This strategy underscores the importance of aligning product development with real-world user requirements in the rapidly evolving AI landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/30/salesforce-is-crowdsourcing-its-ai-roadmap-with-customers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "OpenAI Enhances ChatGPT Safety with New Safeguards",
+            "title": "OpenAI Strengthens ChatGPT Community Safety with Advanced Protections",
+            "content": "OpenAI has detailed its commitment to community safety in ChatGPT through a series of robust measures, including model safeguards, misuse detection, and policy enforcement. These enhancements are designed to prevent misuse and ensure that ChatGPT operates within ethical and safety guidelines. OpenAI collaborates with safety experts to continuously refine these protections, reflecting the organization&#x27;s proactive stance on AI safety. Users and developers should be aware of these safeguards as they interact with ChatGPT, ensuring compliance with OpenAI&#x27;s usage policies. This initiative highlights the critical role of safety in AI deployment and user interaction.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/our-commitment-to-community-safety",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 27 2026",
+            "headline": "Symphony Spec Boosts Codex Orchestration Efficiency",
+            "title": "OpenAI Introduces Symphony: An Open-Source Spec for Codex Orchestration",
+            "content": "OpenAI has launched Symphony, an open-source specification designed to enhance Codex orchestration by transforming issue trackers into always-on agent systems. This innovation aims to increase engineering productivity and minimize context switching, thereby streamlining development workflows. Symphony&#x27;s introduction is part of OpenAI&#x27;s broader strategy to leverage open-source tools for improved software engineering processes. Developers and engineering teams are encouraged to adopt Symphony to optimize their project management and coding efficiency. This development underscores the potential of open-source solutions in advancing AI-driven engineering practices.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/open-source-codex-orchestration-symphony",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Alibaba&#x27;s Metis Agent Slashes AI Tool Calls by 96%",
+            "title": "Alibaba&#x27;s Metis Agent Enhances Efficiency by Reducing Redundant AI Tool Calls",
+            "content": "Alibaba&#x27;s Metis agent has achieved a significant reduction in redundant AI tool calls, cutting them from 98% to just 2%, while simultaneously improving accuracy. This advancement addresses a common challenge in AI agent development: the tendency of large language models to over-rely on external tools, which can lead to increased latency and costs. By optimizing tool invocation, Metis enhances operational efficiency and reduces unnecessary API expenses. Organizations utilizing AI agents should consider similar strategies to improve performance and cost-effectiveness. This breakthrough highlights the importance of intelligent resource management in AI systems.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/alibabas-metis-agent-cuts-redundant-ai-tool-calls-from-98-to-2-and-gets-more-accurate-doing-it",
+            "relatedResources": []
+        },
         {
             "date": "Apr 30 2026",
             "headline": "GPT-5.5-Cyber: OpenAI&#x27;s Exclusive Model for Cybersecurity Pros",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "OpenAI&#x27;s ChatGPT is witnessing a slowdown in downloads, with a 132% year-over-year increase in uninstalls reported in April. This trend poses potential challenges for OpenAI&#x27;s anticipated initial public offering (IPO), as user retention becomes a critical metric for investors. The decline is attributed to users opting for alternative chatbots that offer competitive features or better performance. As the AI chatbot market becomes increasingly saturated, OpenAI must address these retention issues to maintain investor confidence. Companies considering ChatGPT for integration should evaluate its long-term viability amid growing competition.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920476/openai-chatgpt-downloads-slow-down-ipo",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "SenseTime&#x27;s Speedy Image Model—Optimized for Chinese Chips",
-            "title": "SenseTime Launches Fast Image Model Amid US Tech Restrictions",
-            "content": "Chinese AI firm SenseTime has released a new image model designed for speed, optimized to operate on domestically produced chips. This move comes as US sanctions limit SenseTime&#x27;s access to advanced foreign technology, prompting a shift towards open-source solutions. The model&#x27;s development highlights SenseTime&#x27;s resilience and adaptability in navigating geopolitical challenges. By leveraging Chinese-made hardware, SenseTime aims to maintain its competitive edge in the AI sector. Companies relying on SenseTime&#x27;s technology should assess the model&#x27;s performance and compatibility with existing systems.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/chinese-ai-giant-sensetime-is-running-its-new-model-on-chinese-chips/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "SoftBank&#x27;s Robotics Venture Eyes $100B IPO—Data Centers Built",
-            "title": "SoftBank&#x27;s New Robotics Company Targets Massive IPO with AI Infrastructure",
-            "content": "SoftBank is launching a robotics company focused on constructing data centers, with plans for a $100 billion IPO. This venture underscores the symbiotic relationship between AI and infrastructure development, as AI and robotics are utilized to build the very facilities that support their growth. The initiative reflects SoftBank&#x27;s strategic investment in AI-driven technologies to enhance operational efficiency and scalability. Industry stakeholders should monitor this development as it could reshape the landscape of data center construction and AI integration. The anticipated IPO signals significant investor interest and confidence in AI&#x27;s transformative potential.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/29/softbank-is-creating-a-robotics-company-that-builds-data-centers-and-already-eyeing-a-100b-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "GitHub Fixes Critical Flaw in Under 6 Hours",
-            "title": "GitHub Patches Critical Remote Code Execution Vulnerability in Record Time",
-            "content": "GitHub swiftly addressed a critical remote code execution vulnerability within its internal git infrastructure, resolving the issue in under six hours. Discovered by Wiz Research using AI models, the flaw could have potentially exposed millions of public and private code repositories to unauthorized access. This vulnerability underscores the importance of rapid response in safeguarding software development environments. GitHub&#x27;s quick action prevented potential exploitation, highlighting the platform&#x27;s commitment to security. Developers using GitHub should ensure their repositories are secure and monitor for any unusual activity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/920295/github-remote-code-execution-vulnerability-fix",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "OpenAI&#x27;s 5-Step Plan for Cybersecurity in AI Era",
-            "title": "OpenAI Proposes Five-Part Strategy to Enhance Cybersecurity in Intelligence Age",
-            "content": "OpenAI has introduced a comprehensive five-part action plan aimed at bolstering cybersecurity as AI technologies become increasingly integrated into critical systems. The strategy emphasizes democratizing AI-powered cyber defense tools and enhancing the protection of vital infrastructures. As AI continues to evolve, the risk of sophisticated cyber threats grows, necessitating proactive measures to safeguard digital environments. OpenAI&#x27;s initiative seeks to empower organizations with advanced defense capabilities, ensuring resilience against emerging threats. Stakeholders in cybersecurity should consider adopting AI-driven solutions to stay ahead of potential vulnerabilities.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "Oracle&#x27;s AI Gamble—A Risky Pivot from Databases",
-            "title": "Oracle&#x27;s Bold Shift to AI Sparks Industry Debate on Market Viability",
-            "content": "Oracle, traditionally known for its database solutions, has made a bold pivot towards artificial intelligence, raising questions about the sustainability of the AI market. Unlike companies like OpenAI that focus on foundational AI models, Oracle&#x27;s approach diverges by integrating AI into its existing business framework. This strategic shift reflects broader industry trends where tech giants are increasingly investing in AI to drive innovation and growth. However, the move also highlights the risks associated with over-reliance on AI amidst market volatility. Industry professionals should monitor Oracle&#x27;s progress as a potential indicator of AI market trends.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920378/oracle-openai-datacenter-buildout",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "Firestorm Labs Secures $82M for Mobile Drone Factories",
-            "title": "Firestorm Labs Raises $82 Million to Deploy Drone Factories in the Field",
-            "content": "Firestorm Labs, a defense startup, has successfully raised $82 million in funding to revolutionize drone manufacturing by deploying mobile factories inside shipping containers. This innovative approach aims to bring production capabilities directly to the front lines, enhancing operational efficiency and responsiveness in defense scenarios. The funding round reflects growing investor confidence in the potential of mobile manufacturing solutions to transform military logistics. Defense industry stakeholders should consider the implications of on-site production for strategic deployment and supply chain optimization.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/29/firestorm-labs-raises-82m-to-take-drone-factories-into-the-field/",
             "relatedResources": []
         }
     ],
@@ -359,6 +359,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-41940",
+            "dateAdded": "Apr 30, 2026",
+            "vendor": "WebPros cPanel &amp; WHM and WP2 (WordPress Squared)",
+            "description": "WebPros cPanel &amp; WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized ac",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41940",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2024-1708",
             "dateAdded": "Apr 28, 2026",
             "vendor": "ConnectWise ScreenConnect",
@@ -378,50 +389,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32202",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-29635",
-            "dateAdded": "Apr 24, 2026",
-            "vendor": "D-Link DIR-823X",
-            "description": "D-Link DIR-823X contains a command injection vulnerability that allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via t",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-29635",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2024-7399",
-            "dateAdded": "Apr 24, 2026",
-            "vendor": "Samsung MagicINFO 9 Server",
-            "description": "Samsung MagicINFO 9 Server contains a path traversal vulnerability that could allow an attacker to write arbitrary files as system authority.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7399",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2024-57728",
-            "dateAdded": "Apr 24, 2026",
-            "vendor": "SimpleHelp SimpleHelp",
-            "description": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-57728",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2024-57726",
-            "dateAdded": "Apr 24, 2026",
-            "vendor": "SimpleHelp SimpleHelp",
-            "description": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges t",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-57726",
             "isZeroDay": false
         }
     ],
