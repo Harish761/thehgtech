@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1469",
+      "incident_id": 1469,
+      "title": "PocketOS Production Database Was Reportedly Deleted by Cursor AI Agent Running Claude Opus 4.6",
+      "date": "2026-04-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1470",
+      "incident_id": 1470,
+      "title": "DisMech AI Curation Agent Reportedly Completed GitHub Issue Intended as New Contributor's Learning T",
+      "date": "2026-04-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1467",
       "incident_id": 1467,
       "title": "South Africa Draft National AI Policy Reportedly Included Fictitious References Believed to Be AI Ha",
@@ -1049,14 +1065,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1353",
-      "incident_id": 1353,
-      "title": "ICE Facial Recognition App Mobile Fortify Reportedly Misidentified Woman Twice During Immigration En",
-      "date": "2026-01-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1355",
       "incident_id": 1355,
       "title": "Reported AI Impersonations of Pastors Used in Online Donation and Influence Scams",
@@ -1071,28 +1079,12 @@
       "date": "2026-01-31",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1357",
-      "incident_id": 1357,
-      "title": "White House Reportedly Shares Purportedly AI-Altered Arrest Photo Depicting Minnesota Protester Neki",
-      "date": "2026-01-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1358",
-      "incident_id": 1358,
-      "title": "Purportedly AI-Altered Images Reportedly Distort Evidence After Minneapolis Shooting of ICU Nurse Al",
-      "date": "2026-01-31",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 136,
-    "last7Days": 8,
-    "last30Days": 33
+    "total": 135,
+    "last7Days": 10,
+    "last30Days": 35
   },
-  "lastUpdated": "2026-05-01T02:43:07.043701+05:30"
+  "lastUpdated": "2026-05-01T09:41:26.943314+05:30"
 }
