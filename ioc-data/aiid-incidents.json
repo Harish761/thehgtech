@@ -1,6 +1,38 @@
 {
   "incidents": [
     {
+      "id": "AIID-1471",
+      "incident_id": 1471,
+      "title": "Meta Internal AI Agent Reportedly Gave Advice That Allegedly Exposed Sensitive Data to Unauthorized ",
+      "date": "2026-05-02",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1472",
+      "incident_id": 1472,
+      "title": "Ahmedabad Aadhaar Fraud Racket Reportedly Used Purportedly AI-Generated Deepfakes to Change Business",
+      "date": "2026-05-02",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1473",
+      "incident_id": 1473,
+      "title": "Jasper County Student in Texas Reportedly Posted Purported AI-Generated Nude Image of Classmate on S",
+      "date": "2026-05-02",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1474",
+      "incident_id": 1474,
+      "title": "Tasmanian School Students Reportedly Created Purported AI-Generated Pornographic Images of Female Cl",
+      "date": "2026-05-02",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1469",
       "incident_id": 1469,
       "title": "PocketOS Production Database Was Reportedly Deleted by Cursor AI Agent Running Claude Opus 4.6",
@@ -1034,9 +1066,9 @@
     }
   ],
   "stats": {
-    "total": 129,
-    "last7Days": 4,
-    "last30Days": 35
+    "total": 133,
+    "last7Days": 6,
+    "last30Days": 39
   },
-  "lastUpdated": "2026-05-02T22:31:48.807990+05:30"
+  "lastUpdated": "2026-05-03T01:05:53.951556+05:30"
 }
