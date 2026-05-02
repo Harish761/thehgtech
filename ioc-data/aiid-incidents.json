@@ -1031,36 +1031,12 @@
       "date": "2026-02-02",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1360",
-      "incident_id": 1360,
-      "title": "CISA Acting Director Reportedly Uploaded Sensitive Government Documents to Public ChatGPT Instance",
-      "date": "2026-02-01",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1361",
-      "incident_id": 1361,
-      "title": "Waymo Autonomous Vehicle Reportedly Struck Child Near Elementary School in Santa Monica, California",
-      "date": "2026-02-01",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-481",
-      "incident_id": 481,
-      "title": "Purported Deepfake TikTok Video Reportedly Featured Joe Rogan Endorsing Supplement Brand",
-      "date": "2026-01-31",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 132,
+    "total": 129,
     "last7Days": 4,
     "last30Days": 35
   },
-  "lastUpdated": "2026-05-02T02:34:24.558419+05:30"
+  "lastUpdated": "2026-05-02T09:15:06.117844+05:30"
 }
