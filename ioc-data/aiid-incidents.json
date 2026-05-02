@@ -33,6 +33,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1475",
+      "incident_id": 1475,
+      "title": "Suspected AI-Generated Deepfake Video Reportedly Targeted Former Chhattisgarh Chief Minister Bhupesh",
+      "date": "2026-05-02",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1469",
       "incident_id": 1469,
       "title": "PocketOS Production Database Was Reportedly Deleted by Cursor AI Agent Running Claude Opus 4.6",
@@ -1066,9 +1074,9 @@
     }
   ],
   "stats": {
-    "total": 133,
-    "last7Days": 6,
-    "last30Days": 39
+    "total": 134,
+    "last7Days": 7,
+    "last30Days": 40
   },
-  "lastUpdated": "2026-05-03T01:05:53.951556+05:30"
+  "lastUpdated": "2026-05-03T02:24:57.750341+05:30"
 }
