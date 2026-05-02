@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 02 2026",
+            "headline": "Trellix Source Code Breach—Unauthorized Repository Access Confirmed",
+            "title": "Trellix Confirms Breach of Source Code Repository with Forensic Investigation",
+            "content": "Cybersecurity firm Trellix has confirmed a breach involving unauthorized access to a portion of its source code repository. The company detected the compromise recently and has engaged leading forensic experts to investigate the incident. While the exact scope of the breach remains under assessment, Trellix assures that its core products and services remain unaffected. This incident underscores the persistent threat of source code breaches, which can lead to intellectual property theft and potential exploitation. Security professionals are advised to review their own code repository access controls and monitor for any unusual activity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Google Patches Critical RCE in Gemini CLI—Update Now",
+            "title": "Google Fixes CVSS 10 RCE Vulnerability in Gemini CLI and GitHub Actions",
+            "content": "Google has addressed a critical remote code execution (RCE) vulnerability in the Gemini CLI npm package and the google-github-actions/run-gemini-cli GitHub Actions workflow. Rated with a CVSS score of 10, this flaw allowed attackers to execute arbitrary commands on host systems. The vulnerability, if exploited, could have severe implications for developers using these tools, potentially leading to unauthorized access and data breaches. Users are urged to update to the latest versions immediately to mitigate any risks. This fix highlights the importance of regular updates and security audits in software development environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 02 2026",
+            "headline": "Bluekit Phishing Kit—AI Assistant Enhances Threat Capabilities",
+            "title": "New Bluekit Phishing Kit Integrates AI Assistant for Sophisticated Attacks",
+            "content": "The emerging Bluekit phishing kit, still under development, now features an AI Assistant and automated domain registration, enhancing its phishing capabilities. This development allows attackers to streamline the creation and deployment of phishing campaigns, potentially increasing their success rates. The integration of AI tools in phishing kits represents a growing trend in cybercrime, where automation and machine learning are leveraged to bypass traditional security measures. Organizations should bolster their phishing defenses and train employees to recognize increasingly sophisticated phishing attempts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-bluekit-phishing-kit-features-ai-assistant/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 02 2026",
+            "headline": "Microsoft Tests Faster Windows Run—Modern Dialog in Preview",
+            "title": "Microsoft Introduces Modern Windows Run Dialog with Enhanced Performance",
+            "content": "Microsoft has announced a new modern Run dialog for Windows 11, featuring improved performance and dark mode support, now available in a preview build. This update aims to replace the legacy Run dialog, promising faster execution and a more streamlined user experience. The modern Run dialog reflects Microsoft&#x27;s ongoing efforts to modernize Windows 11 and enhance its usability. Users participating in the Windows Insider Program can test this feature, providing feedback to help refine its functionality before a broader release.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-modern-windows-run-says-its-faster-than-legacy-dialog/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Instructure Cyber Incident—Impact Under Investigation",
+            "title": "Edu Tech Firm Instructure Discloses Cybersecurity Incident, Probes Impact",
+            "content": "Instructure, the company behind the Canvas learning platform, has disclosed a recent cybersecurity incident and is currently investigating its impact. While specific details about the breach are not yet public, the company is working to determine the extent of the incident and any potential data exposure. As educational institutions increasingly rely on digital platforms, the security of these systems remains paramount. Stakeholders are advised to stay informed about the investigation&#x27;s progress and ensure their own systems are secure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/edu-tech-firm-instructure-discloses-cyber-incident-probes-impact/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "30,000 Facebook Accounts Compromised—AppSheet Phishing Campaign",
+            "title": "Vietnamese Operation Hacks 30,000 Facebook Accounts via Google AppSheet",
+            "content": "A Vietnamese-linked operation, codenamed AccountDumpling, has compromised 30,000 Facebook accounts using Google AppSheet as a phishing relay. This campaign involved distributing phishing emails designed to capture Facebook credentials, which were then sold on underground markets. The use of legitimate platforms like Google AppSheet to facilitate phishing highlights the evolving tactics of cybercriminals. Facebook users should be vigilant about suspicious emails and consider enabling two-factor authentication to protect their accounts.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/30000-facebook-accounts-hacked-via.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 01 2026",
             "headline": "Teen Arrested—French Government Data Breach Exposed",
             "title": "15-Year-Old Detained for Selling Data from French Government Agency Breach",
@@ -19,15 +73,6 @@ const websiteContent = {
             "content": "BleepingComputer has retracted a story regarding a supposed new data breach at Instructure, after realizing the information was based on outdated details from a previous incident. The publication has issued an apology for the error and removed the article from their site. This serves as a reminder of the importance of verifying information before publication, especially in the rapidly evolving field of cybersecurity. Readers are advised to rely on verified sources and updates for accurate information about potential security incidents.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/story-retracted/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "SAP npm Packages Hit by Credential-Stealing Malware",
-            "title": "Credential-Stealing Malware Targets SAP-Related npm Packages in Supply Chain Attack",
-            "content": "A new supply chain attack has compromised SAP-related npm packages, embedding credential-stealing malware that poses a significant threat to developers and organizations using these packages. Security firms including Aikido Security and Onapsis have identified the campaign, which targets software supply chains to exfiltrate sensitive credentials. This attack highlights the vulnerabilities inherent in open-source ecosystems and the need for stringent security measures. Developers should immediately audit their npm dependencies and consider using tools that detect malicious code in package repositories.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
             "relatedResources": []
         },
         {
@@ -92,70 +137,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "BlackCat Ransomware Negotiators Jailed—4-Year Sentences",
-            "title": "US Ransomware Negotiators Get 4 Years in Prison Over BlackCat Attacks",
-            "content": "Two former employees of cybersecurity firms Sygnia and DigitalMint have been sentenced to four years in prison for their involvement in orchestrating BlackCat (ALPHV) ransomware attacks against U.S. companies. The individuals exploited their positions to facilitate negotiations and payments, exacerbating the impact of the ransomware campaigns. This case highlights the ethical and legal responsibilities of cybersecurity professionals in handling ransomware incidents. Organizations are urged to establish clear protocols and ethical guidelines for incident response teams to prevent misuse of authority. The sentencing serves as a cautionary tale for those tempted to engage in illicit activities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-ransomware-negotiators-get-4-years-in-prison-over-blackcat-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "PyTorch Lightning Compromised—Credential Theft via Malicious Versions",
-            "title": "PyTorch Lightning Supply Chain Attack Targets Credentials with Malicious Updates",
-            "content": "In a recent supply chain attack, threat actors have compromised the Python package PyTorch Lightning, releasing two malicious versions, 2.6.2 and 2.6.3, designed to steal credentials. Security firms Aikido Security, OX Security, Socket, and StepSecurity identified the breach, which highlights the ongoing vulnerability of software supply chains. The attack specifically targets developers and organizations using these versions, potentially exposing sensitive information. This incident underscores the critical need for vigilance in monitoring software dependencies and implementing robust security practices. Users are advised to verify their package versions and update to secure releases immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "cPanel Zero-Day Exploited for Months—Admin Access Risk",
-            "title": "Critical cPanel &amp; WHM Zero-Day Exploited for Administrative Access",
-            "content": "A critical authentication bypass vulnerability in cPanel &amp; WHM has been exploited as a zero-day for several months, allowing attackers to gain administrative access to affected servers. This flaw poses a significant risk to web hosting environments, potentially compromising the integrity and security of hosted websites. Security professionals are urged to apply the latest patches released by cPanel to mitigate this threat. The incident highlights the importance of timely vulnerability management and the need for continuous monitoring of server security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-cpanel-whm-vulnerability-exploited-as-zero-day-for-months/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Linux &#x27;Copy Fail&#x27; Bug—Root Access on Major Distros",
-            "title": "Linux &#x27;Copy Fail&#x27; Vulnerability Allows Root Access on Major Distributions",
-            "content": "Researchers have disclosed a high-severity local privilege escalation vulnerability in Linux, dubbed &#x27;Copy Fail,&#x27; tracked as CVE-2026-31431 with a CVSS score of 7.8. This flaw allows unprivileged local users to gain root access on major Linux distributions, posing a significant security risk. Discovered by Xint.io and Theori, the vulnerability affects systems that rely on specific file copying operations. Administrators are advised to apply patches as soon as they become available and review system configurations to mitigate potential exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Sandhills Medical Ransomware Breach—170,000 Affected",
-            "title": "Sandhills Medical Ransomware Breach Exposes Data of 170,000 Patients",
-            "content": "Sandhills Medical has revealed a ransomware attack by the Inc Ransom group that compromised personal data of 170,000 patients. The breach, which occurred nearly a year ago, was only recently disclosed, raising concerns about delayed breach notifications in the healthcare sector. The attack underscores the vulnerability of healthcare organizations to ransomware threats and the critical need for improved cybersecurity measures. Affected individuals are advised to monitor their personal information for signs of misuse.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sandhills-medical-says-ransomware-breach-affects-170000/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 28 2026",
-            "headline": "OpenAI Strengthens ChatGPT Safety with New Safeguards",
-            "title": "OpenAI Implements Enhanced Safeguards for ChatGPT Community Safety",
-            "content": "OpenAI has announced new measures to bolster community safety in its ChatGPT model, focusing on model safeguards, misuse detection, and policy enforcement. These enhancements are part of a broader strategy to collaborate with safety experts and ensure responsible AI deployment. The safeguards aim to prevent misuse by identifying and mitigating harmful outputs, while policy enforcement ensures adherence to community guidelines. This initiative reflects OpenAI&#x27;s commitment to maintaining a safe interaction environment as AI systems become more integrated into daily life. Users and developers are encouraged to stay informed about these updates to understand their implications for AI usage.",
+            "date": "Apr 29 2026",
+            "headline": "OpenAI Unveils 5-Part Plan for Cyber Defense in AI Era",
+            "title": "OpenAI&#x27;s Five-Part Action Plan to Enhance Cybersecurity in the Intelligence Age",
+            "content": "OpenAI has announced a comprehensive five-part action plan aimed at bolstering cybersecurity in the Intelligence Age. The initiative focuses on democratizing access to AI-powered cyber defense tools and safeguarding critical infrastructure against evolving threats. This plan includes developing open-source AI models for security, enhancing threat detection capabilities, and fostering collaboration between tech companies and governments. As cyber threats become increasingly sophisticated, OpenAI&#x27;s strategy emphasizes the need for collective action and innovation in defense mechanisms. Security professionals are encouraged to engage with these resources to enhance their own cybersecurity measures.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/our-commitment-to-community-safety",
+            "sourceUrl": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
             "relatedResources": []
         },
         {
-            "date": "Apr 27 2026",
-            "headline": "Symphony: Open-Source Spec Boosts Codex Orchestration",
-            "title": "Symphony Open-Source Spec Revolutionizes Codex Orchestration for Developers",
-            "content": "OpenAI has introduced Symphony, an open-source specification designed to enhance Codex orchestration by transforming issue trackers into always-on agent systems. This innovation aims to significantly boost engineering productivity and reduce context switching, a common challenge in software development. By automating routine tasks and maintaining continuous operation, Symphony allows developers to focus on complex problem-solving. This development aligns with the growing trend of integrating AI into software engineering workflows to streamline processes and improve efficiency. Developers are encouraged to explore Symphony&#x27;s capabilities to optimize their project management systems.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/open-source-codex-orchestration-symphony",
+            "date": "May 01 2026",
+            "headline": "Musk Battles OpenAI in Court Over Nonprofit Conversion",
+            "title": "Elon Musk&#x27;s Lawsuit Against OpenAI Over Nonprofit to For-Profit Transition",
+            "content": "Elon Musk has taken the stand in a legal battle against OpenAI, challenging the company&#x27;s transition from a nonprofit to a for-profit entity. The lawsuit, which has already seen the emergence of numerous emails, texts, and tweets, centers on Musk&#x27;s claim that OpenAI&#x27;s conversion undermines its original mission. The case highlights the complexities of balancing AI innovation with ethical considerations. As the trial unfolds, industry stakeholders are closely monitoring the implications for governance and accountability in AI organizations. Professionals in the field should stay informed on the potential impacts of this legal precedent.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/did-you-know-you-cant-steal-a-charity-dont-worry-elon-musk-will-remind-you/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Pentagon Partners with Nvidia, Microsoft, AWS for AI Deployment",
+            "title": "Pentagon Secures AI Deployment Deals with Nvidia, Microsoft, and AWS",
+            "content": "The Pentagon has finalized agreements with Nvidia, Microsoft, and Amazon Web Services (AWS) to deploy artificial intelligence on classified networks. This strategic move follows a contentious dispute with Anthropic over AI model usage terms, prompting the Department of Defense to diversify its AI vendor portfolio. The partnerships aim to enhance the military&#x27;s technological capabilities while ensuring secure and compliant AI integration. These developments underscore the growing importance of AI in national security and the need for robust vendor relationships. Defense contractors and tech firms should consider the implications for future collaborations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Pentagon&#x27;s AI Deals Exclude Anthropic—Focus on OpenAI, Google, Nvidia",
+            "title": "Pentagon&#x27;s Classified AI Partnerships Omit Anthropic, Include Major Tech Players",
+            "content": "The Pentagon has announced new partnerships with leading tech companies, including OpenAI, Google, Microsoft, Amazon, Nvidia, and Elon Musk&#x27;s xAI, for deploying AI tools in classified environments. Notably absent from these agreements is Anthropic, following a dispute over AI model usage terms. This strategic alignment with major players reflects the Department of Defense&#x27;s commitment to leveraging cutting-edge AI technologies while managing vendor risks. The exclusion of Anthropic raises questions about the future of AI vendor relationships in defense applications. Industry professionals should assess the potential shifts in AI procurement strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Musk vs. Altman: Legal Clash Over OpenAI&#x27;s Direction Intensifies",
+            "title": "Elon Musk and Sam Altman&#x27;s Legal Dispute Over OpenAI&#x27;s Mission Escalates",
+            "content": "The legal confrontation between Elon Musk and Sam Altman over OpenAI&#x27;s transformation from a nonprofit to a for-profit entity is intensifying. Musk&#x27;s testimony, accompanied by a trove of emails, texts, and tweets, argues that the shift contradicts OpenAI&#x27;s foundational goals. This high-profile case is drawing attention to the ethical and operational challenges faced by AI organizations as they scale. The outcome could influence future governance models for AI companies. Stakeholders in the AI community should monitor the proceedings for insights into balancing innovation with ethical responsibilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/musk-v-altman-is-just-getting-started/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "ChatGPT Images 2.0 Gains Traction in India—Global Impact Limited",
+            "title": "ChatGPT Images 2.0 Sees Strong Adoption in India, Limited Elsewhere",
+            "content": "ChatGPT Images 2.0, the latest iteration of OpenAI&#x27;s image generation tool, is experiencing significant uptake in India, where users are leveraging it for creative projects such as avatars and cinematic portraits. Despite its popularity in India, the tool has yet to achieve widespread adoption in other markets. This disparity highlights regional differences in AI tool engagement and potential cultural influences on technology adoption. Developers and marketers should consider these factors when strategizing global rollouts of AI products. The success in India suggests a promising market for further AI-driven creative solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "Runpod has released Runpod Flash, an open source Python tool designed to eliminate the need for containers in AI development. This enterprise-friendly tool, licensed under MIT, promises faster creation, iteration, and deployment of AI systems. By removing container dependencies, Runpod Flash aims to streamline workflows and enhance performance for developers. This innovation could significantly impact AI development practices, offering a more efficient alternative to traditional container-based approaches. Developers are encouraged to explore Runpod Flash to optimize their AI projects.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/infrastructure/one-tool-call-to-rule-them-all-new-open-source-python-tool-runpod-flash-eliminates-containers-for-faster-ai-dev",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Anthropic Eyes $900B Valuation—Investor Decisions Due in 48 Hours",
-            "title": "Anthropic&#x27;s $900B+ Valuation Round Nears as Investor Allocations Close",
-            "content": "Anthropic is reportedly on the brink of a valuation round exceeding $900 billion, with investors given a tight 48-hour window to submit their allocations. This rapid fundraising effort underscores the intense interest and confidence in Anthropic&#x27;s AI capabilities, particularly as the company continues to innovate in the AI space. The move comes amid a competitive landscape where AI firms are aggressively securing capital to fuel growth and technological advancements. Investors and stakeholders should be prepared for potential shifts in market dynamics as Anthropic&#x27;s valuation could set new benchmarks in the industry. The outcome of this round will likely influence investment trends and strategic partnerships in the AI sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "OpenAI Limits GPT-5.5 Cyber—Exclusive to Key Defenders",
-            "title": "OpenAI Restricts GPT-5.5 Cyber Access to Essential Cybersecurity Defenders",
-            "content": "OpenAI has announced that its latest cybersecurity testing tool, GPT-5.5 Cyber, will initially be available only to &quot;critical cyber defenders.&quot; This strategic limitation aims to ensure that the tool is deployed where it can have the most significant impact on cybersecurity infrastructure. The decision follows OpenAI&#x27;s previous criticism of Anthropic for similar access restrictions, highlighting a trend towards controlled distribution of advanced AI tools. Organizations involved in critical infrastructure protection should anticipate potential access to GPT-5.5 Cyber, which promises enhanced capabilities for identifying and mitigating cyber threats. This move reflects the growing emphasis on targeted AI deployment in cybersecurity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Salesforce Taps Customers for AI Roadmap Insights",
-            "title": "Salesforce Engages Customers to Shape Its AI Product Roadmap",
-            "content": "Salesforce is pioneering a customer-centric approach to developing its AI product roadmap, inviting enterprise clients to share their challenges and needs. This crowdsourcing initiative is based on the premise that issues faced by one customer are likely shared by others, enabling Salesforce to prioritize features that deliver the most value across its user base. By leveraging customer insights, Salesforce aims to enhance its AI offerings and maintain its competitive edge in the enterprise software market. This strategy underscores the importance of aligning product development with real-world user requirements in the rapidly evolving AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/30/salesforce-is-crowdsourcing-its-ai-roadmap-with-customers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Alibaba&#x27;s Metis Agent Slashes AI Tool Calls by 96%",
-            "title": "Alibaba&#x27;s Metis Agent Enhances Efficiency by Reducing Redundant AI Tool Calls",
-            "content": "Alibaba&#x27;s Metis agent has achieved a significant reduction in redundant AI tool calls, cutting them from 98% to just 2%, while simultaneously improving accuracy. This advancement addresses a common challenge in AI agent development: the tendency of large language models to over-rely on external tools, which can lead to increased latency and costs. By optimizing tool invocation, Metis enhances operational efficiency and reduces unnecessary API expenses. Organizations utilizing AI agents should consider similar strategies to improve performance and cost-effectiveness. This breakthrough highlights the importance of intelligent resource management in AI systems.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/alibabas-metis-agent-cuts-redundant-ai-tool-calls-from-98-to-2-and-gets-more-accurate-doing-it",
             "relatedResources": []
         }
     ],
