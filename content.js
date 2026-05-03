@@ -5,20 +5,65 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 02 2026",
+            "headline": "cPanel Flaw Exploited—&quot;Sorry&quot; Ransomware Hits Websites",
+            "title": "Critical cPanel Vulnerability CVE-2026-41940 Exploited in &quot;Sorry&quot; Ransomware Attacks",
+            "content": "A newly disclosed vulnerability in cPanel, identified as CVE-2026-41940, is being actively exploited to deploy the &quot;Sorry&quot; ransomware, compromising websites and encrypting their data. This flaw allows attackers to gain unauthorized access and execute malicious code on affected servers. The vulnerability impacts numerous websites relying on cPanel for server management, posing a significant threat to data integrity and availability. Security experts urge administrators to apply patches immediately to mitigate the risk. This incident underscores the critical need for regular updates and vigilance in server management practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critrical-cpanel-flaw-mass-exploited-in-sorry-ransomware-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "BlackCat Negotiators Jailed—4-Year Sentence for Ransomware Collusion",
+            "title": "US Ransomware Negotiators Sentenced for Involvement in BlackCat Attacks",
+            "content": "Two former employees of cybersecurity firms Sygnia and DigitalMint have been sentenced to four years in prison for their roles in facilitating BlackCat (ALPHV) ransomware attacks against U.S. companies. The individuals used their positions to negotiate ransoms, effectively aiding the ransomware group. This case highlights the complex ethical challenges and potential for insider threats within cybersecurity roles. Organizations are advised to implement robust internal controls and conduct thorough background checks to prevent similar incidents. The sentencing serves as a warning to those considering collusion with cybercriminals.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-ransomware-negotiators-get-4-years-in-prison-over-blackcat-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "PyTorch Lightning Compromised—Supply Chain Attack Steals Credentials",
+            "title": "PyTorch Lightning and Intercom-client Targeted in Credential-Stealing Supply Chain Attacks",
+            "content": "Threat actors have compromised the popular Python package PyTorch Lightning, releasing malicious versions 2.6.2 and 2.6.3 to steal credentials. This supply chain attack also affected the Intercom-client package, posing a risk to developers and organizations relying on these tools. Security firms Aikido Security, OX Security, Socket, and StepSecurity identified the breach, emphasizing the growing threat of supply chain attacks in the software development ecosystem. Developers are urged to verify package integrity and update to secure versions immediately. This incident highlights the critical need for vigilance in dependency management.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Linux &quot;Copy Fail&quot; Bug—Root Access Vulnerability Discovered",
+            "title": "New Linux &quot;Copy Fail&quot; Vulnerability CVE-2026-31431 Enables Root Access",
+            "content": "A high-severity local privilege escalation vulnerability, CVE-2026-31431, has been discovered in Linux, allowing unprivileged users to gain root access. Dubbed &quot;Copy Fail,&quot; this flaw affects major Linux distributions and has a CVSS score of 7.8. Researchers from Xint.io and Theori revealed that the vulnerability stems from improper handling of file operations. Administrators are advised to apply patches provided by their distribution maintainers to prevent exploitation. This vulnerability highlights the ongoing challenges in securing open-source operating systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "SAP npm Packages Breached—Credential-Stealing Malware Found",
+            "title": "SAP-Related npm Packages Compromised in Credential-Stealing Supply Chain Attack",
+            "content": "Cybersecurity researchers have identified a supply chain attack targeting SAP-related npm packages, embedding credential-stealing malware. The campaign, reported by Aikido Security, Onapsis, OX Security, SafeDep, Socket, StepSecurity, and Wiz, compromises the integrity of these packages, posing a threat to enterprises using SAP systems. Developers are urged to scrutinize package dependencies and apply security updates to mitigate risks. This attack underscores the vulnerabilities in software supply chains and the importance of maintaining rigorous security practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 02 2026",
+            "headline": "ConsentFix v3 Targets Azure—OAuth Abuse Automated",
+            "title": "ConsentFix v3 Attacks Exploit Azure with Automated OAuth Abuse",
+            "content": "A new attack method, ConsentFix v3, has emerged, targeting Microsoft Azure by automating OAuth abuse. This technique, circulating on hacker forums, enhances previous methods with automation and scalability, posing a significant risk to Azure users. The attack exploits OAuth&#x27;s consent framework, potentially allowing unauthorized access to sensitive data. Organizations using Azure are advised to review their OAuth configurations and implement stricter access controls. This development highlights the evolving tactics of threat actors in exploiting cloud services.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/consentfix-v3-attacks-target-azure-with-automated-oauth-abuse/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 02 2026",
             "headline": "Trellix Source Code Breach—Unauthorized Repository Access Confirmed",
             "title": "Trellix Confirms Breach of Source Code Repository with Forensic Investigation",
             "content": "Cybersecurity firm Trellix has confirmed a breach involving unauthorized access to a portion of its source code repository. The company detected the compromise recently and has engaged leading forensic experts to investigate the incident. While the exact scope of the breach remains under assessment, Trellix assures that its core products and services remain unaffected. This incident underscores the persistent threat of source code breaches, which can lead to intellectual property theft and potential exploitation. Security professionals are advised to review their own code repository access controls and monitor for any unusual activity.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Google Patches Critical RCE in Gemini CLI—Update Now",
-            "title": "Google Fixes CVSS 10 RCE Vulnerability in Gemini CLI and GitHub Actions",
-            "content": "Google has addressed a critical remote code execution (RCE) vulnerability in the Gemini CLI npm package and the google-github-actions/run-gemini-cli GitHub Actions workflow. Rated with a CVSS score of 10, this flaw allowed attackers to execute arbitrary commands on host systems. The vulnerability, if exploited, could have severe implications for developers using these tools, potentially leading to unauthorized access and data breaches. Users are urged to update to the latest versions immediately to mitigate any risks. This fix highlights the importance of regular updates and security audits in software development environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
             "relatedResources": []
         },
         {
@@ -92,61 +137,61 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4166080/windows-shell-spoofing-vulnerability-puts-sensitive-data-at-risk.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "US Issues AI Deployment Guidance—Critical Infrastructure at Risk",
-            "title": "US Government and Allies Release Guidance on Secure AI Agent Deployment",
-            "content": "The US government, alongside international allies, has published guidance on safely deploying AI agents within critical infrastructure. The document warns that AI agents, capable of autonomous actions, are being granted excessive access, posing security risks. Organizations are advised to implement strict access controls and continuous monitoring to prevent potential misuse. This guidance reflects growing concerns about the unchecked deployment of AI technologies and the need for comprehensive security frameworks to manage their integration into sensitive environments.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cisa-nsa-five-eyes-guidance-secure-deployment-ai-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "US Experts Jailed—Aided Ransomware Gang&#x27;s Operations",
-            "title": "Two US Security Experts Sentenced to Prison for Aiding Ransomware Gang",
-            "content": "Ryan Goldberg from Georgia and Kevin Martin from Texas have been sentenced to four years in prison for their involvement in supporting a ransomware gang. The cybersecurity professionals were found guilty of facilitating attacks that exploited vulnerabilities in U.S. companies, contributing to the ransomware operations. This case highlights the increasing trend of insiders aiding cybercriminals, posing significant risks to organizations&#x27; security. Companies are urged to implement stringent insider threat detection measures and conduct regular audits to mitigate such risks. The sentencing underscores the legal consequences of colluding with cybercriminals, serving as a deterrent to potential insiders.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/two-us-security-experts-sentenced-to-prison-for-helping-ransomware-gang/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Cisco Launches Tool—Secures AI Model Integrity",
-            "title": "Cisco Releases Open Source Tool for AI Model Provenance",
-            "content": "Cisco has introduced an open-source tool designed to ensure the provenance and integrity of AI models, addressing critical risks such as model poisoning and supply chain vulnerabilities. This tool aids in regulatory compliance and enhances incident response capabilities by providing transparency in AI model development and deployment. As AI becomes increasingly integrated into business operations, ensuring the security of AI models is paramount to prevent malicious tampering and data breaches. Organizations are encouraged to adopt this tool to safeguard their AI systems and maintain trust in AI-driven processes. This initiative reflects a growing industry focus on AI security and accountability.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-releases-open-source-tool-for-ai-model-provenance/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "BlackCat Facilitators Sentenced—4 Years for Cybercrime Role",
-            "title": "Two Cybersecurity Professionals Get 4-Year Sentences in BlackCat Ransomware Attacks",
-            "content": "The U.S. Department of Justice has sentenced Ryan Goldberg and Kevin Martin to four years in prison for their roles in facilitating the BlackCat ransomware attacks in 2023. The professionals were involved in deploying ransomware that targeted U.S. companies, causing significant financial and operational disruptions. This case highlights the severe consequences of cybersecurity professionals abusing their expertise for criminal activities. Organizations should reinforce their cybersecurity policies and conduct thorough background checks to prevent insider threats. The sentencing serves as a stark reminder of the legal repercussions of engaging in cybercrime.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/two-cybersecurity-professionals-get-4.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Supply Chain Attack—Poisoned Gems Steal Credentials",
-            "title": "Poisoned Ruby Gems and Go Modules Exploit CI Pipelines for Credential Theft",
-            "content": "A new supply chain attack campaign has been detected, utilizing sleeper packages in Ruby Gems and Go Modules to deploy malicious payloads. These payloads enable credential theft, tampering with GitHub Actions, and establishing SSH persistence. The attack is attributed to the GitHub account &quot;BufferZoneCorp,&quot; highlighting the ongoing threat of compromised software dependencies. Developers are advised to scrutinize third-party packages and implement robust security measures in their CI/CD pipelines. This incident underscores the critical need for vigilance in managing software supply chains to prevent unauthorized access and data breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Apr 29 2026",
-            "headline": "OpenAI Unveils 5-Part Plan for Cyber Defense in AI Era",
-            "title": "OpenAI&#x27;s Five-Part Action Plan to Enhance Cybersecurity in the Intelligence Age",
-            "content": "OpenAI has announced a comprehensive five-part action plan aimed at bolstering cybersecurity in the Intelligence Age. The initiative focuses on democratizing access to AI-powered cyber defense tools and safeguarding critical infrastructure against evolving threats. This plan includes developing open-source AI models for security, enhancing threat detection capabilities, and fostering collaboration between tech companies and governments. As cyber threats become increasingly sophisticated, OpenAI&#x27;s strategy emphasizes the need for collective action and innovation in defense mechanisms. Security professionals are encouraged to engage with these resources to enhance their own cybersecurity measures.",
+            "date": "Apr 30 2026",
+            "headline": "Anthropic Eyes $900B Valuation—Investor Deadline Looms",
+            "title": "Anthropic&#x27;s $900B+ Valuation Round Seeks Investor Commitments",
+            "content": "Anthropic, a prominent AI company, is reportedly on the brink of securing a valuation exceeding $900 billion in its latest fundraising round. Sources indicate that the company has set a tight deadline, asking investors to submit their allocation requests within the next 48 hours. This aggressive timeline underscores the high demand and rapid pace of investment in the AI sector. The potential valuation reflects Anthropic&#x27;s significant advancements and influence in AI development, positioning it as a key player in the industry. Investors and stakeholders should prepare for swift decision-making as the window for participation narrows.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "OpenAI Limits GPT-5.5 Cyber to Key Defenders",
+            "title": "OpenAI Restricts GPT-5.5 Cyber Access to Critical Defenders",
+            "content": "OpenAI has announced that its latest cybersecurity testing tool, GPT-5.5 Cyber, will initially be available only to &quot;critical cyber defenders.&quot; This strategic rollout aims to enhance the security infrastructure of essential organizations by providing them with advanced AI capabilities to detect and mitigate threats. The decision follows OpenAI&#x27;s previous criticism of Anthropic for similar access limitations, highlighting a trend towards controlled distribution of powerful AI tools. Cybersecurity professionals in critical sectors should anticipate potential access and prepare to integrate these tools into their defense strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "OpenAI Enhances ChatGPT Safety Measures",
+            "title": "OpenAI&#x27;s Commitment to Community Safety in ChatGPT",
+            "content": "OpenAI has reaffirmed its dedication to community safety by implementing robust safeguards in ChatGPT. The company employs model safeguards, misuse detection, and policy enforcement to prevent harmful use of its AI models. Collaboration with safety experts further strengthens these measures, ensuring that ChatGPT operates within ethical and secure boundaries. This initiative reflects OpenAI&#x27;s proactive stance in addressing potential misuse and maintaining user trust. Developers and users should stay informed about these safety protocols to ensure responsible AI usage.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+            "sourceUrl": "https://openai.com/index/our-commitment-to-community-safety",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 27 2026",
+            "headline": "Symphony Boosts Engineering with Open-Source Orchestration",
+            "title": "Symphony: Open-Source Spec for Codex Orchestration Unveiled",
+            "content": "OpenAI has introduced Symphony, an open-source specification designed to enhance Codex orchestration by transforming issue trackers into always-on agent systems. This innovation aims to increase engineering output and reduce context switching, providing a seamless workflow for developers. By leveraging Symphony, teams can automate routine tasks and focus on complex problem-solving, ultimately boosting productivity. The open-source nature of Symphony invites collaboration and further development from the global tech community. Engineers and developers are encouraged to explore Symphony&#x27;s capabilities to optimize their workflows.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/open-source-codex-orchestration-symphony",
+            "relatedResources": []
+        },
+        {
+            "date": "May 02 2026",
+            "headline": "Oscars Ban AI-Generated Actors, Scripts",
+            "title": "AI-Generated Content Deemed Ineligible for Oscars Consideration",
+            "content": "The Oscars have officially ruled out AI-generated actors and scripts from eligibility, marking a significant stance on the use of artificial intelligence in film production. This decision impacts creators like Tilly Norwood, who have utilized AI technologies to produce cinematic content. The move underscores the Academy&#x27;s commitment to preserving traditional filmmaking practices and ensuring that human creativity remains at the forefront of the industry. Filmmakers and studios employing AI should reassess their strategies to align with these new eligibility criteria.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 02 2026",
+            "headline": "Top AI Dictation Apps Ranked for Professionals",
+            "title": "Comprehensive Review of Leading AI Dictation Apps for Efficiency",
+            "content": "AI-powered dictation apps have become indispensable tools for professionals, facilitating tasks such as email responses, note-taking, and even coding through voice commands. A recent evaluation ranks these apps based on accuracy, user interface, and integration capabilities, providing valuable insights for users seeking to enhance productivity. The review highlights the strengths and weaknesses of each app, guiding professionals in selecting the most suitable tool for their needs. As voice-driven technology continues to evolve, staying informed about the latest advancements is crucial for maintaining competitive efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "The ongoing Musk v. Altman trial has unveiled a trove of evidence, including email exchanges, photos, and corporate documents from the early days of OpenAI. These revelations provide insight into the foundational decisions and strategic directions that shaped the AI lab before it even had a name. The trial highlights the complex legal and ethical considerations surrounding AI development and leadership. As the case progresses, industry professionals are keenly observing the implications for corporate governance and innovation in the AI sector. Stakeholders should stay informed about the trial&#x27;s outcomes and potential impacts on AI policy.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Musk vs. OpenAI: Courtroom Drama Unfolds—Outcome Uncertain",
-            "title": "Elon Musk&#x27;s Legal Battle with OpenAI Faces Uphill Struggle",
-            "content": "Elon Musk&#x27;s legal challenge against OpenAI, accusing the company of misappropriating nonprofit resources, is facing significant hurdles. Musk has claimed he was the pivotal force behind OpenAI&#x27;s inception, but the court proceedings suggest he may not prevail. This case highlights tensions over intellectual property and the governance of AI organizations. The outcome could influence how tech companies manage transitions from nonprofit to for-profit models. Industry observers are closely watching for potential implications on AI governance and corporate accountability.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/922009/musk-openai-trial-testimony-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Microsoft-OpenAI Partnership: New Deal Details Revealed",
-            "title": "Microsoft and OpenAI Restructure Partnership Amidst Strategic Tensions",
-            "content": "Microsoft and OpenAI have restructured their partnership, addressing longstanding strategic disagreements and contract complexities. The new deal aims to streamline AI infrastructure and improve collaboration, despite past executive tensions. This partnership remains crucial as both companies navigate the competitive AI landscape. The revised terms could set a precedent for how tech giants manage collaborative ventures in AI development. Stakeholders should monitor this evolving relationship for insights into future AI industry dynamics.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/921210/microsoft-openai-partnership-divorce-notepad",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "AI Gig Economy: Fiverr Workers Adapt to Demand",
-            "title": "Christian Content Creators Leverage AI via Fiverr Gig Workers",
-            "content": "Christian content creators are increasingly turning to Fiverr gig workers to produce AI-generated content. This trend reflects a shift in the gig economy, where freelancers utilize generative AI tools to meet client expectations. The use of AI in content creation raises questions about quality and authenticity, as well as the evolving nature of creative labor. This development underscores the growing influence of AI across diverse sectors, including religious content production. Professionals should consider the implications of AI on traditional creative roles.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/920881/ai-generated-bible-videos-christian-creators-fiverr-slop",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Microsoft Unveils AI Legal Agent for Document Management",
-            "title": "Microsoft&#x27;s AI Agent Revolutionizes Legal Document Handling in Word",
-            "content": "Microsoft has introduced a specialized AI agent within Word, designed to assist legal teams with document management. The Legal Agent automates tasks such as contract review, negotiation tracking, and complex document edits. This tool aims to enhance efficiency and accuracy in legal workflows, reducing reliance on general AI models. Legal professionals should assess the potential of this AI agent to streamline operations and improve document handling. This innovation reflects Microsoft&#x27;s ongoing commitment to integrating AI into professional tools.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/921944/microsoft-word-legal-agent-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Runpod Flash: Speeding AI Development Without Containers",
-            "title": "Runpod Launches Open Source Tool to Accelerate AI Development",
-            "content": "Runpod has released Runpod Flash, an open source Python tool designed to eliminate the need for containers in AI development. This enterprise-friendly tool, licensed under MIT, promises faster creation, iteration, and deployment of AI systems. By removing container dependencies, Runpod Flash aims to streamline workflows and enhance performance for developers. This innovation could significantly impact AI development practices, offering a more efficient alternative to traditional container-based approaches. Developers are encouraged to explore Runpod Flash to optimize their AI projects.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/one-tool-call-to-rule-them-all-new-open-source-python-tool-runpod-flash-eliminates-containers-for-faster-ai-dev",
             "relatedResources": []
         }
     ],
