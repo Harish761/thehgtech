@@ -1017,14 +1017,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1260",
-      "incident_id": 1260,
-      "title": "Purported Deepfake of Andrew Forrest Used to Promote Fraudulent 'Quantum AI' Crypto Platform on Face",
-      "date": "2026-02-02",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1315",
       "incident_id": 1315,
       "title": "Purportedly AI-Generated Nude Images of Middle School Students Reportedly Circulated at Louisiana Sc",
@@ -1074,9 +1066,9 @@
     }
   ],
   "stats": {
-    "total": 134,
+    "total": 133,
     "last7Days": 7,
     "last30Days": 40
   },
-  "lastUpdated": "2026-05-03T19:13:27.016119+05:30"
+  "lastUpdated": "2026-05-03T22:33:13.441656+05:30"
 }
