@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1476",
+      "incident_id": 1476,
+      "title": "Maryland Police Allegedly Relied on Facial Recognition Lead in Wrongful Arrest and Detention of Kimb",
+      "date": "2026-05-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1471",
       "incident_id": 1471,
       "title": "Meta Internal AI Agent Reportedly Gave Advice That Allegedly Exposed Sensitive Data to Unauthorized ",
@@ -1015,20 +1023,12 @@
       "date": "2026-02-04",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1317",
-      "incident_id": 1317,
-      "title": "Purported Deepfake Impersonation of Elon Musk Used to Promote Fraudulent '17-Hour' Diabetes Treatmen",
-      "date": "2026-02-02",
-      "category": "deepfake",
-      "severity": "high"
     }
   ],
   "stats": {
     "total": 128,
-    "last7Days": 7,
-    "last30Days": 40
+    "last7Days": 8,
+    "last30Days": 41
   },
-  "lastUpdated": "2026-05-04T01:04:32.659079+05:30"
+  "lastUpdated": "2026-05-04T02:27:47.182233+05:30"
 }
