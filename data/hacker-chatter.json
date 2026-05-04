@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-05-03T15:10:31.520181",
-  "total_incidents": 27795,
+  "last_updated": "2026-05-04T05:48:37.317438",
+  "total_incidents": 27797,
   "incidents": [
+    {
+      "id": "incransom_https://www.wilkemgroup.com/",
+      "victim_name": "https://www.wilkemgroup.com/",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-05-04T04:24:00.390072+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "wilkemsolutions.com wilkemgroup.com 400gb gov contract etc",
+      "screenshot": "https://images.ransomware.live/victims/5608e4fed2a53f5f752e7c4aa7371e6e.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69f817388f1d14b743413276",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "shinyhunters_instructure_holdings,_inc._(canva_lms,_instructure.com)",
+      "victim_name": "Instructure Holdings, Inc. (Canva LMS, instructure.com)",
+      "threat_actor": "shinyhunters",
+      "date_discovered": "2026-05-03T17:23:58.446567+00:00",
+      "industry": "Education",
+      "website": "instructure.com",
+      "claim": "Nearly 9,000 schools worldwide affected. 275 million individuals data ranging from students, teachers, and other staff containing PII. Several billions of private messages among students and teachers and students and other students involved, containing personal conversations and other PII. Your Salesforce instance was also breached and a lot more other data is involved. Pay or Leak. This is a final warning to reach out by 6 May 2026 before we leak along with several annoying (digital) problems that'll come your way. Make the right decision, don't be the next headline. | Size: 3.65TB+ (uncompressed) | Updated: 3 May 2026 | Warning: FINAL WARNING PAY OR LEAK",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "m3rx_emtco.com",
       "victim_name": "emtco.com",
