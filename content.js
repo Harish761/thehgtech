@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 04 2026",
+            "headline": "MOVEit Automation Flaw—Patch Critical Auth Bypass Now",
+            "title": "Progress Software Warns of Critical MOVEit Automation Authentication Bypass Vulnerability",
+            "content": "Progress Software has issued an urgent advisory to patch a critical authentication bypass vulnerability in its MOVEit Automation managed file transfer application. The flaw, which affects all versions prior to the latest update, could allow unauthorized access to sensitive data transfers. This vulnerability poses a significant risk to enterprises relying on MOVEit for secure file exchanges, potentially exposing sensitive information to attackers. Progress Software has released a patch and strongly advises all users to update immediately to mitigate potential exploitation. This incident underscores the ongoing challenges in securing enterprise-grade file transfer systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/moveit-automation-customers-warned-to-patch-critical-auth-bypass-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "cPanel Flaw Exploited—Govt and MSP Networks at Risk",
+            "title": "Critical cPanel Vulnerability Weaponized Against Government and MSP Networks",
+            "content": "A newly discovered threat actor is actively exploiting a critical cPanel vulnerability to target government and military entities in Southeast Asia, as well as managed service providers (MSPs) in multiple countries including the Philippines, Laos, Canada, South Africa, and the U.S. The vulnerability, recently disclosed, allows attackers to gain unauthorized access to sensitive systems, posing a severe threat to national security and service provider networks. Security experts urge organizations using cPanel to apply the latest security patches and review their network security protocols. This attack highlights the increasing sophistication of threat actors targeting critical infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/critical-cpanel-vulnerability.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "40,000 Servers Hit—cPanel Zero-Day Exploited",
+            "title": "Over 40,000 Servers Compromised in cPanel Zero-Day Exploitation",
+            "content": "A massive exploitation campaign has compromised over 40,000 servers by targeting CVE-2026-41940, a recently patched zero-day vulnerability in cPanel. This flaw allows attackers to gain administrative access, posing a significant threat to affected systems. The widespread nature of the attack underscores the critical need for immediate patching and system audits. Organizations using cPanel are advised to update their systems to the latest version and enhance monitoring for unusual activities. This incident highlights the persistent threat of zero-day vulnerabilities in widely used server management software.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/over-40000-servers-compromised-in-ongoing-cpanel-exploitation/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "Instructure Breach—Hackers Leak Student Data",
+            "title": "Edtech Firm Instructure Discloses Data Breach Amid Hacker Leak Threats",
+            "content": "Instructure, a prominent edtech company, has disclosed a data breach following threats from hackers to leak stolen information. The breach compromised names, email addresses, student ID numbers, and user messages, affecting a significant portion of its user base. The company is working with cybersecurity experts to investigate the breach and secure its systems. Users are advised to monitor their accounts for suspicious activity and change passwords as a precaution. This incident highlights the vulnerabilities in educational technology platforms and the importance of robust security measures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/edtech-firm-instructure-discloses-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Teen Detained—French Govt Data Breach Uncovered",
+            "title": "15-Year-Old Detained Over French Government Agency Data Breach",
+            "content": "French authorities have detained a 15-year-old suspected of orchestrating a cyberattack on France Titres (ANTS), the agency responsible for issuing administrative documents. The teenager allegedly sold data stolen during the breach, which included sensitive information from the agency&#x27;s databases. This arrest highlights the increasing involvement of younger individuals in cybercrime and the need for enhanced cybersecurity education and prevention measures. The French government is conducting a thorough investigation to assess the full impact of the breach and prevent future incidents.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/15-year-old-detained-over-french-govt-agency-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Cyber Pros Jailed—BlackCat Ransomware Facilitators Sentenced",
+            "title": "Two Cybersecurity Professionals Sentenced for BlackCat Ransomware Attacks",
+            "content": "The U.S. Department of Justice has sentenced two cybersecurity professionals, Ryan Goldberg and Kevin Martin, to four years in prison for their involvement in facilitating BlackCat ransomware attacks in 2023. The duo was found guilty of deploying ransomware that targeted various organizations, causing significant financial and operational damage. This case underscores the ethical responsibilities of cybersecurity professionals and the severe consequences of engaging in cybercriminal activities. Organizations are reminded to conduct thorough background checks and promote ethical standards within their cybersecurity teams.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/two-cybersecurity-professionals-get-4.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 03 2026",
             "headline": "Instructure Data Breach—ShinyHunters Claims Responsibility",
             "title": "Instructure Confirms Data Breach Amid ShinyHunters Extortion Claims",
@@ -19,42 +73,6 @@ const websiteContent = {
             "content": "The US Department of Defense has announced partnerships with seven major tech companies, including Google, Microsoft, and Amazon Web Services, to integrate artificial intelligence into its classified systems. This initiative aims to enhance decision-making capabilities in complex operational environments. The collaboration involves leveraging AI technologies from Nvidia, OpenAI, Reflection, and SpaceX, marking a significant step in military modernization efforts. This move reflects a broader trend of integrating advanced AI solutions into national defense strategies. The partnerships are expected to improve operational efficiency and strategic planning, although specific deployment timelines remain undisclosed.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/us-military-reaches-deals-with-7-tech-companies-to-use-their-ai-on-classified-systems/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Instructure Breach Story Retracted—Initial Report Incorrect",
-            "title": "BleepingComputer Retracts Instructure Data Breach Report Due to Errors",
-            "content": "BleepingComputer has retracted a previously published story regarding a data breach at Instructure after discovering inaccuracies in the report. The initial article was based on outdated information from a prior incident, leading to the erroneous publication. BleepingComputer has issued an apology for the oversight and removed the article from its platform. This retraction serves as a reminder of the importance of verifying information before publication, particularly in the fast-paced world of cybersecurity reporting. Readers are advised to seek updates directly from Instructure for accurate information regarding their security status.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/story-retracted/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "PyTorch Lightning Compromised—Credential Theft in Supply Chain Attack",
-            "title": "PyTorch Lightning and Intercom-client Targeted in Credential-Stealing Supply Chain Attacks",
-            "content": "A supply chain attack has compromised the popular Python package PyTorch Lightning, with threat actors deploying two malicious versions to steal credentials. Security firms Aikido Security, OX Security, Socket, and StepSecurity identified versions 2.6.2 and 2.6.3 as containing the malicious code. These versions were used to exfiltrate sensitive user data, posing a significant risk to developers relying on these packages. This incident highlights the growing threat of supply chain attacks targeting open-source software. Developers are urged to verify package integrity and update to secure versions immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Linux &#x27;Copy Fail&#x27; Flaw—Root Access Vulnerability Exposed",
-            "title": "High-Severity &#x27;Copy Fail&#x27; Vulnerability in Linux Allows Root Access",
-            "content": "Researchers have disclosed a high-severity local privilege escalation vulnerability in Linux, dubbed &#x27;Copy Fail,&#x27; tracked as CVE-2026-31431. This flaw, with a CVSS score of 7.8, allows unprivileged local users to gain root access on affected systems. The vulnerability impacts major Linux distributions, posing a critical security risk. Discovered by Xint.io and Theori, the flaw underscores the need for immediate patching to prevent exploitation. System administrators are advised to apply available patches and monitor systems for unusual activity. This vulnerability highlights ongoing challenges in securing open-source operating systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "SAP npm Packages Compromised—Credential Theft in Supply Chain Attack",
-            "title": "SAP-Related npm Packages Hit by Credential-Stealing Supply Chain Attack",
-            "content": "A new supply chain attack has targeted SAP-related npm packages, embedding credential-stealing malware. Security experts from Aikido Security, Onapsis, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz have reported the campaign. The attack, aimed at exfiltrating sensitive credentials, underscores the vulnerabilities present in software supply chains. Developers using these npm packages are at risk of data theft, necessitating immediate action to secure their environments. The incident highlights the critical need for robust supply chain security measures in software development.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
             "relatedResources": []
         },
         {
@@ -114,30 +132,57 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Apr 30 2026",
-            "headline": "Anthropic Eyes $900B Valuation—Investor Deadline Looms",
-            "title": "Anthropic Seeks $900B+ Valuation in Upcoming Funding Round",
-            "content": "Anthropic is reportedly gearing up for a significant funding round that could push its valuation beyond $900 billion. Sources indicate that the AI company has asked investors to submit their allocations within the next 48 hours, signaling a rapid approach to finalizing the deal. This move comes as Anthropic continues to expand its influence in the AI sector, leveraging its advanced language models to compete with industry giants. The potential valuation underscores the growing investor confidence in AI technologies and their transformative potential across various industries. Stakeholders should monitor this development closely as it could set a new benchmark for AI company valuations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
+            "date": "May 01 2026",
+            "headline": "Musk&#x27;s Legal Battle Against OpenAI Falters in Court",
+            "title": "Elon Musk&#x27;s Lawsuit Against OpenAI Faces Uphill Battle",
+            "content": "Elon Musk&#x27;s legal efforts to claim ownership over OpenAI&#x27;s origins and operations are facing significant challenges in court. Musk has accused OpenAI of &quot;stealing a nonprofit&quot; and asserted his role as the primary visionary behind the organization. Despite these claims, indications suggest that Musk is unlikely to succeed in his lawsuit. This legal dispute highlights ongoing tensions in the tech industry regarding intellectual property and leadership claims. Professionals in the field should monitor this case for its potential implications on corporate governance and innovation ownership.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/922009/musk-openai-trial-testimony-vergecast",
             "relatedResources": []
         },
         {
-            "date": "Apr 30 2026",
-            "headline": "OpenAI Limits GPT-5.5 Cyber to Key Defenders",
-            "title": "OpenAI Restricts GPT-5.5 Cyber Access to Critical Cyber Defenders",
-            "content": "OpenAI has announced that its latest cybersecurity testing tool, GPT-5.5 Cyber, will initially be available only to critical cyber defenders. This strategic limitation aims to ensure that the tool is used effectively to bolster cybersecurity measures against sophisticated threats. The decision follows OpenAI&#x27;s previous criticism of Anthropic for similar access restrictions, highlighting a trend towards controlled deployment of advanced AI tools in sensitive domains. Organizations involved in cybersecurity should prepare for potential collaboration opportunities with OpenAI to leverage GPT-5.5 Cyber&#x27;s capabilities. This move reflects the increasing importance of AI in fortifying digital defenses.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 28 2026",
-            "headline": "OpenAI Enhances ChatGPT Safety Measures",
-            "title": "OpenAI Details Safety Protocols for ChatGPT Community Protection",
-            "content": "OpenAI has outlined its comprehensive approach to ensuring community safety in the use of ChatGPT. The company employs model safeguards, misuse detection systems, and strict policy enforcement to mitigate risks associated with AI misuse. OpenAI collaborates with safety experts to continuously refine these measures, aiming to prevent harmful outputs and ensure responsible AI deployment. This commitment to safety is crucial as AI models become more integrated into everyday applications, posing potential risks if not properly managed. Developers and users should stay informed about these protocols to align with best practices in AI safety.",
+            "date": "Apr 29 2026",
+            "headline": "OpenAI&#x27;s 5-Part Plan to Secure the Intelligence Age",
+            "title": "OpenAI Proposes Comprehensive Cybersecurity Strategy for AI Era",
+            "content": "OpenAI has unveiled a five-part action plan aimed at bolstering cybersecurity in the evolving Intelligence Age. This initiative focuses on democratizing AI-driven cyber defenses and safeguarding critical infrastructure from emerging threats. The plan emphasizes collaboration across sectors to enhance resilience against sophisticated cyberattacks. As AI technologies become more integrated into essential systems, this strategy seeks to address vulnerabilities and ensure robust protection. Security professionals should consider these guidelines to enhance their own cybersecurity frameworks in an increasingly AI-dependent landscape.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/our-commitment-to-community-safety",
+            "sourceUrl": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Salesforce&#x27;s Agentforce Tackles AI Workflow Challenges",
+            "title": "Salesforce Introduces Agentforce Operations to Streamline AI Workflows",
+            "content": "Salesforce has launched Agentforce Operations, a new solution designed to address workflow inefficiencies in enterprise AI systems. The initiative targets the breakdowns occurring as AI agents are integrated into back-office operations, where existing workflows are ill-suited for agent-based tasks. By introducing a new architectural layer, Salesforce aims to improve task execution and reduce workflow disruptions. This development is crucial for organizations seeking to maximize the efficiency and effectiveness of their AI deployments. IT leaders should evaluate Agentforce Operations as a potential enhancement to their AI infrastructure.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/salesforce-launches-agentforce-operations-to-fix-the-workflows-breaking-enterprise-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Alibaba&#x27;s Metis Agent Slashes AI Tool Calls by 96%",
+            "title": "Alibaba&#x27;s Metis Agent Optimizes AI Tool Usage and Accuracy",
+            "content": "Alibaba&#x27;s Metis agent has achieved a significant reduction in redundant AI tool calls, cutting them from 98% to just 2%, while simultaneously improving accuracy. This advancement addresses a common challenge in AI development: deciding when to utilize external tools versus relying on internal capabilities. By minimizing unnecessary API interactions, Metis enhances processing efficiency and reduces costs. This breakthrough is particularly relevant for developers seeking to optimize AI performance and resource allocation. Organizations should consider similar strategies to streamline their AI operations and improve system responsiveness.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/alibabas-metis-agent-cuts-redundant-ai-tool-calls-from-98-to-2-and-gets-more-accurate-doing-it",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Runpod Flash Speeds AI Development—No Containers Needed",
+            "title": "Runpod Launches Open Source Tool to Accelerate AI Development",
+            "content": "Runpod has introduced Runpod Flash, an open source Python tool designed to eliminate the need for containers in AI development, thereby accelerating the creation and deployment of AI systems. Licensed under MIT, this enterprise-friendly tool promises to streamline workflows and enhance productivity for AI developers. By removing container dependencies, Runpod Flash reduces complexity and speeds up iteration cycles. This innovation is poised to benefit developers seeking efficient, scalable solutions for AI projects. Technical teams should explore Runpod Flash to optimize their development processes and reduce overhead.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/infrastructure/one-tool-call-to-rule-them-all-new-open-source-python-tool-runpod-flash-eliminates-containers-for-faster-ai-dev",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Replit CEO Discusses Cursor Deal Amid SpaceX Rumors",
+            "title": "Replit&#x27;s Amjad Masad on Cursor Acquisition Talks and Apple Dispute",
+            "content": "At the TechCrunch StrictlyVC event, Replit CEO Amjad Masad addressed industry speculation regarding Cursor&#x27;s potential $60 billion acquisition by SpaceX. Masad also discussed Replit&#x27;s ongoing legal battle with Apple, emphasizing the company&#x27;s commitment to independence and innovation. The conversation highlighted the competitive dynamics in the tech sector, with major players vying for strategic acquisitions and market positioning. Stakeholders should watch these developments closely, as they may influence industry trends and corporate strategies. This situation underscores the importance of agility and foresight in navigating tech industry challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/",
             "relatedResources": []
         },
         {
@@ -156,15 +201,6 @@ const websiteContent = {
             "content": "A Harvard study has revealed that large language models can outperform human doctors in diagnosing emergency room cases. The research compared AI-generated diagnoses with those of two human doctors, finding that at least one AI model provided more accurate assessments. This finding underscores the potential of AI to enhance medical diagnostics and improve patient outcomes. However, it also raises questions about the role of human oversight in AI-driven healthcare solutions. Medical professionals should consider integrating AI tools to augment diagnostic accuracy while maintaining critical oversight to ensure patient safety.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Meta Acquires Robotics Startup for AI Expansion",
-            "title": "Meta Acquires Assured Robot Intelligence to Enhance AI for Robotics",
-            "content": "Meta has acquired Assured Robot Intelligence, a startup specializing in humanoid robotics, to strengthen its AI capabilities in the robotics sector. This acquisition aims to integrate advanced AI models into robotic systems, enhancing their functionality and adaptability. Meta&#x27;s move reflects a broader industry trend towards merging AI with robotics to create more sophisticated and autonomous systems. The acquisition is expected to accelerate Meta&#x27;s efforts in developing humanoid robots capable of performing complex tasks. Industry professionals should watch for new developments in AI-driven robotics as Meta expands its technological footprint.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
             "relatedResources": []
         },
         {
