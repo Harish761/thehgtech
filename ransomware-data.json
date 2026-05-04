@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T13:12:10.649439",
+  "last_updated": "2026-05-04T02:54:56.899383",
   "period": "Last 7 days",
   "total_groups": 34,
   "total_victims": 300,
@@ -89,8 +89,8 @@
         0,
         0,
         0,
-        0,
         42,
+        0,
         0,
         0
       ]
@@ -173,8 +173,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         39,
+        0,
         0,
         0,
         0
@@ -262,12 +262,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         2,
         5,
         18,
         2,
         10,
+        0,
         0
       ]
     },
@@ -356,8 +356,8 @@
         0,
         0,
         0,
-        0,
         20,
+        0,
         0,
         0
       ]
@@ -446,8 +446,8 @@
         0,
         0,
         0,
-        0,
         17,
+        0,
         0,
         0
       ]
@@ -533,12 +533,12 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         8,
         0,
         0,
         0,
-        6
+        6,
+        0
       ]
     },
     {
@@ -619,13 +619,13 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         1,
         0,
         4,
         0,
         6,
-        2
+        2,
+        0
       ]
     },
     {
@@ -708,10 +708,10 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         5,
         0,
         8,
+        0,
         0,
         0
       ]
@@ -722,9 +722,9 @@
       "victims": [
         {
           "name": "Instructure Holdings, Inc. (Canva LMS, instructure.com)",
-          "date": "2026-05-03T09:00:08.806602+00:00",
+          "date": "2026-05-03T17:23:58.446567+00:00",
           "url": "",
-          "discovered_date": "2026-05-03T09:00:08.806602+00:00"
+          "discovered_date": "2026-05-03T17:23:58.446567+00:00"
         },
         {
           "name": "Cushman & Wakefield Inc.",
@@ -746,9 +746,9 @@
         },
         {
           "name": "Instructure Holdings, Inc. (Canva LMS, instructure.com)",
-          "date": "2026-05-03T09:00:08+00:00",
+          "date": "2026-05-03T17:23:58+00:00",
           "url": "https://www.ransomware.live/id/SW5zdHJ1Y3R1cmUgSG9sZGluZ3MsIEluYy4gKENhbnZhIExNUywgaW5zdHJ1Y3R1cmUuY29tKUBzaGlueWh1bnRlcnM=",
-          "discovered_date": "2026-05-03T09:00:08+00:00"
+          "discovered_date": "2026-05-03T17:23:58+00:00"
         },
         {
           "name": "Cushman & Wakefield Inc.",
@@ -782,11 +782,11 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
         0,
         0,
-        4
+        4,
+        0
       ]
     },
     {
@@ -861,9 +861,9 @@
         0,
         0,
         0,
-        0,
         2,
-        6
+        6,
+        0
       ]
     },
     {
@@ -936,8 +936,8 @@
         0,
         0,
         0,
-        0,
         8,
+        0,
         0
       ]
     },
@@ -1007,8 +1007,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         8,
+        0,
         0,
         0,
         0
@@ -1074,9 +1074,9 @@
         0,
         0,
         0,
-        0,
         5,
         2,
+        0,
         0
       ]
     },
@@ -1138,8 +1138,8 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         7,
+        0,
         0,
         0,
         0,
@@ -1201,10 +1201,10 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1259,11 +1259,11 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         3,
         1,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1321,9 +1321,9 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
         4,
+        0,
         0,
         0
       ]
@@ -1379,8 +1379,8 @@
         0,
         0,
         0,
-        0,
         5,
+        0,
         0
       ]
     },
@@ -1432,10 +1432,10 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
         2,
         2,
+        0,
         0,
         0
       ]
@@ -1483,8 +1483,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0,
         0
       ]
@@ -1531,8 +1531,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0,
         0
       ]
@@ -1579,8 +1579,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
+        0,
         0,
         0,
         0
@@ -1625,10 +1625,10 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
         2,
         1,
+        0,
         0
       ]
     },
@@ -1662,8 +1662,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1696,8 +1696,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1731,8 +1731,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1766,8 +1766,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1792,8 +1792,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -1818,8 +1818,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1845,8 +1845,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1872,8 +1872,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1899,8 +1899,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1925,8 +1925,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1952,8 +1952,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
