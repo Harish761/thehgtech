@@ -5,56 +5,65 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 03 2026",
+            "headline": "Instructure Data Breach—ShinyHunters Claims Responsibility",
+            "title": "Instructure Confirms Data Breach Amid ShinyHunters Extortion Claims",
+            "content": "Instructure, a leader in educational technology, has confirmed a data breach following claims by the ShinyHunters extortion group. The breach reportedly involved the theft of sensitive data, though specifics on the data types or volume remain undisclosed. ShinyHunters, known for targeting high-profile organizations, has previously been linked to several data theft incidents. The breach underscores ongoing vulnerabilities in the education sector&#x27;s cybersecurity defenses. Instructure is urging users to monitor their accounts for suspicious activity and change passwords as a precautionary measure. This incident highlights the persistent threat of extortion gangs exploiting digital infrastructures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/instructure-confirms-data-breach-shinyhunters-claims-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 03 2026",
+            "headline": "US Military Taps AI Giants for Classified System Enhancements",
+            "title": "US Military Partners with Tech Giants to Integrate AI into Classified Systems",
+            "content": "The US Department of Defense has announced partnerships with seven major tech companies, including Google, Microsoft, and Amazon Web Services, to integrate artificial intelligence into its classified systems. This initiative aims to enhance decision-making capabilities in complex operational environments. The collaboration involves leveraging AI technologies from Nvidia, OpenAI, Reflection, and SpaceX, marking a significant step in military modernization efforts. This move reflects a broader trend of integrating advanced AI solutions into national defense strategies. The partnerships are expected to improve operational efficiency and strategic planning, although specific deployment timelines remain undisclosed.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/us-military-reaches-deals-with-7-tech-companies-to-use-their-ai-on-classified-systems/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Instructure Breach Story Retracted—Initial Report Incorrect",
+            "title": "BleepingComputer Retracts Instructure Data Breach Report Due to Errors",
+            "content": "BleepingComputer has retracted a previously published story regarding a data breach at Instructure after discovering inaccuracies in the report. The initial article was based on outdated information from a prior incident, leading to the erroneous publication. BleepingComputer has issued an apology for the oversight and removed the article from its platform. This retraction serves as a reminder of the importance of verifying information before publication, particularly in the fast-paced world of cybersecurity reporting. Readers are advised to seek updates directly from Instructure for accurate information regarding their security status.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/story-retracted/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "PyTorch Lightning Compromised—Credential Theft in Supply Chain Attack",
+            "title": "PyTorch Lightning and Intercom-client Targeted in Credential-Stealing Supply Chain Attacks",
+            "content": "A supply chain attack has compromised the popular Python package PyTorch Lightning, with threat actors deploying two malicious versions to steal credentials. Security firms Aikido Security, OX Security, Socket, and StepSecurity identified versions 2.6.2 and 2.6.3 as containing the malicious code. These versions were used to exfiltrate sensitive user data, posing a significant risk to developers relying on these packages. This incident highlights the growing threat of supply chain attacks targeting open-source software. Developers are urged to verify package integrity and update to secure versions immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 30 2026",
+            "headline": "Linux &#x27;Copy Fail&#x27; Flaw—Root Access Vulnerability Exposed",
+            "title": "High-Severity &#x27;Copy Fail&#x27; Vulnerability in Linux Allows Root Access",
+            "content": "Researchers have disclosed a high-severity local privilege escalation vulnerability in Linux, dubbed &#x27;Copy Fail,&#x27; tracked as CVE-2026-31431. This flaw, with a CVSS score of 7.8, allows unprivileged local users to gain root access on affected systems. The vulnerability impacts major Linux distributions, posing a critical security risk. Discovered by Xint.io and Theori, the flaw underscores the need for immediate patching to prevent exploitation. System administrators are advised to apply available patches and monitor systems for unusual activity. This vulnerability highlights ongoing challenges in securing open-source operating systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 29 2026",
+            "headline": "SAP npm Packages Compromised—Credential Theft in Supply Chain Attack",
+            "title": "SAP-Related npm Packages Hit by Credential-Stealing Supply Chain Attack",
+            "content": "A new supply chain attack has targeted SAP-related npm packages, embedding credential-stealing malware. Security experts from Aikido Security, Onapsis, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz have reported the campaign. The attack, aimed at exfiltrating sensitive credentials, underscores the vulnerabilities present in software supply chains. Developers using these npm packages are at risk of data theft, necessitating immediate action to secure their environments. The incident highlights the critical need for robust supply chain security measures in software development.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 03 2026",
             "headline": "Linux Root Access Bug Exploited—CISA Adds to KEV List",
             "title": "CISA Flags Actively Exploited Linux Vulnerability CVE-2026-31431",
             "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-31431, a critical Linux vulnerability, to its Known Exploited Vulnerabilities (KEV) catalog. This flaw, affecting multiple Linux distributions, allows attackers to gain root access, posing a significant threat to system integrity. Evidence of active exploitation in the wild has prompted CISA&#x27;s action, urging administrators to prioritize patching. The vulnerability underscores the persistent targeting of Linux systems, which are integral to enterprise and cloud environments. Security teams should review their systems for exposure and apply available patches immediately to mitigate potential risks.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "U.S. Experts Jailed—Aided Ransomware Gang Operations",
-            "title": "Two U.S. Security Experts Sentenced for Assisting Ransomware Gang",
-            "content": "Ryan Goldberg and Kevin Martin, cybersecurity professionals from Georgia and Texas, respectively, have been sentenced to four years in prison for their involvement with a ransomware gang. The U.S. Department of Justice revealed that the pair facilitated attacks by deploying ransomware, contributing to the operations of the notorious BlackCat group. This case highlights the severe legal consequences for insiders aiding cybercriminal activities. Organizations are reminded to enforce strict internal security protocols and conduct thorough background checks to prevent insider threats. The sentencing serves as a deterrent to professionals considering similar illicit collaborations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/two-us-security-experts-sentenced-to-prison-for-helping-ransomware-gang/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Cisco Launches Tool for AI Model Security—Open Source Solution",
-            "title": "Cisco Unveils Open Source Tool for AI Model Provenance",
-            "content": "Cisco has released an open-source toolkit designed to enhance the security and integrity of AI models by addressing risks associated with poisoned models and supply chain vulnerabilities. This tool aids in regulatory compliance and incident response by providing transparency into AI model provenance. As AI systems become increasingly integral to business operations, ensuring their security against tampering and unauthorized modifications is critical. Developers and security teams are encouraged to integrate this tool into their workflows to safeguard AI deployments. Cisco&#x27;s initiative reflects a growing industry focus on AI security and supply chain integrity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-releases-open-source-tool-for-ai-model-provenance/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "BlackCat Ransomware Facilitators Sentenced—4-Year Prison Terms",
-            "title": "Cybersecurity Professionals Sentenced for Role in BlackCat Ransomware Attacks",
-            "content": "The U.S. Department of Justice has sentenced Ryan Goldberg and Kevin Martin to four years in prison for their roles in facilitating BlackCat ransomware attacks in 2023. The professionals, hailing from Georgia and Texas, were implicated in deploying ransomware that caused significant disruption and financial loss. This sentencing highlights the critical issue of insider threats within the cybersecurity industry. Organizations must remain vigilant and implement robust security measures to detect and prevent internal collusion with cybercriminals. The case serves as a stark reminder of the potential consequences of breaching professional ethics.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/two-cybersecurity-professionals-get-4.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Credential Theft via Poisoned Ruby and Go Modules",
-            "title": "Supply Chain Attack Exploits CI Pipelines with Malicious Ruby and Go Modules",
-            "content": "A new software supply chain attack has been detected, leveraging poisoned Ruby Gems and Go Modules to infiltrate CI pipelines and steal credentials. The attack, attributed to the GitHub account &quot;BufferZoneCorp,&quot; involves sleeper packages that deliver malicious payloads, compromising GitHub Actions and establishing SSH persistence. This campaign highlights the vulnerabilities in CI/CD environments, emphasizing the need for rigorous package vetting and monitoring. Developers are urged to scrutinize dependencies and implement security measures to protect against such infiltration. The incident underscores the growing sophistication of supply chain attacks targeting development ecosystems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Google Patches Critical Gemini CLI RCE Flaw",
-            "title": "Google Fixes Critical RCE Vulnerability in Gemini CLI",
-            "content": "Google has patched a critical remote code execution (RCE) vulnerability in the Gemini CLI, identified as a CVSS 10 flaw. This vulnerability, affecting the &quot;@google/gemini-cli&quot; npm package and the &quot;google-github-actions/run-gemini-cli&quot; GitHub Actions workflow, allowed attackers to execute arbitrary commands on host systems. The flaw&#x27;s severity underscores the importance of immediate updates to prevent exploitation. Developers using these tools should upgrade to the latest versions to secure their environments. This patch is part of Google&#x27;s ongoing efforts to enhance the security of its development tools and protect against high-impact vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
             "relatedResources": []
         },
         {
@@ -64,15 +73,6 @@ const websiteContent = {
             "content": "A newly disclosed vulnerability in cPanel, identified as CVE-2026-41940, is being actively exploited to deploy the &quot;Sorry&quot; ransomware, compromising websites and encrypting their data. This flaw allows attackers to gain unauthorized access and execute malicious code on affected servers. The vulnerability impacts numerous websites relying on cPanel for server management, posing a significant threat to data integrity and availability. Security experts urge administrators to apply patches immediately to mitigate the risk. This incident underscores the critical need for regular updates and vigilance in server management practices.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/critrical-cpanel-flaw-mass-exploited-in-sorry-ransomware-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "BlackCat Negotiators Jailed—4-Year Sentence for Ransomware Collusion",
-            "title": "US Ransomware Negotiators Sentenced for Involvement in BlackCat Attacks",
-            "content": "Two former employees of cybersecurity firms Sygnia and DigitalMint have been sentenced to four years in prison for their roles in facilitating BlackCat (ALPHV) ransomware attacks against U.S. companies. The individuals used their positions to negotiate ransoms, effectively aiding the ransomware group. This case highlights the complex ethical challenges and potential for insider threats within cybersecurity roles. Organizations are advised to implement robust internal controls and conduct thorough background checks to prevent similar incidents. The sentencing serves as a warning to those considering collusion with cybercriminals.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-ransomware-negotiators-get-4-years-in-prison-over-blackcat-attacks/",
             "relatedResources": []
         },
         {
@@ -110,52 +110,61 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-modern-windows-run-says-its-faster-than-legacy-dialog/",
             "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Instructure Cyber Incident—Impact Under Investigation",
-            "title": "Edu Tech Firm Instructure Discloses Cybersecurity Incident, Probes Impact",
-            "content": "Instructure, the company behind the Canvas learning platform, has disclosed a recent cybersecurity incident and is currently investigating its impact. While specific details about the breach are not yet public, the company is working to determine the extent of the incident and any potential data exposure. As educational institutions increasingly rely on digital platforms, the security of these systems remains paramount. Stakeholders are advised to stay informed about the investigation&#x27;s progress and ensure their own systems are secure.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/edu-tech-firm-instructure-discloses-cyber-incident-probes-impact/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "30,000 Facebook Accounts Compromised—AppSheet Phishing Campaign",
-            "title": "Vietnamese Operation Hacks 30,000 Facebook Accounts via Google AppSheet",
-            "content": "A Vietnamese-linked operation, codenamed AccountDumpling, has compromised 30,000 Facebook accounts using Google AppSheet as a phishing relay. This campaign involved distributing phishing emails designed to capture Facebook credentials, which were then sold on underground markets. The use of legitimate platforms like Google AppSheet to facilitate phishing highlights the evolving tactics of cybercriminals. Facebook users should be vigilant about suspicious emails and consider enabling two-factor authentication to protect their accounts.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/30000-facebook-accounts-hacked-via.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Teen Arrested—French Government Data Breach Exposed",
-            "title": "15-Year-Old Detained for Selling Data from French Government Agency Breach",
-            "content": "French authorities have detained a 15-year-old suspected of selling data stolen from France Titres (ANTS), the agency responsible for issuing administrative documents. The breach involved unauthorized access to sensitive personal information, potentially affecting thousands of citizens. Investigators are working to determine the full extent of the data compromised and how the breach was executed. This incident underscores the growing trend of young individuals engaging in cybercrime, exploiting vulnerabilities in government systems. Security professionals are urged to review their systems for similar vulnerabilities and strengthen their defenses against unauthorized access.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/15-year-old-detained-over-french-govt-agency-data-breach/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 01 2026",
-            "headline": "Elon Musk&#x27;s OpenAI Lawsuit Falters in Court",
-            "title": "Elon Musk Faces Setback in Legal Battle Against OpenAI",
-            "content": "Elon Musk&#x27;s legal pursuit against OpenAI, where he claims the company was wrongfully transformed from a nonprofit to a for-profit entity, is facing significant challenges. Musk has argued that he was the primary visionary behind OpenAI, but the court proceedings suggest he is unlikely to win the case. The lawsuit highlights ongoing tensions in the tech industry over the commercialization of AI research. If Musk&#x27;s claims are dismissed, it could set a precedent for how AI startups navigate nonprofit-to-profit transitions. Industry observers are closely watching the case for its potential impact on AI governance and ethics.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/922009/musk-openai-trial-testimony-vergecast",
+            "date": "Apr 30 2026",
+            "headline": "Anthropic Eyes $900B Valuation—Investor Deadline Looms",
+            "title": "Anthropic Seeks $900B+ Valuation in Upcoming Funding Round",
+            "content": "Anthropic is reportedly gearing up for a significant funding round that could push its valuation beyond $900 billion. Sources indicate that the AI company has asked investors to submit their allocations within the next 48 hours, signaling a rapid approach to finalizing the deal. This move comes as Anthropic continues to expand its influence in the AI sector, leveraging its advanced language models to compete with industry giants. The potential valuation underscores the growing investor confidence in AI technologies and their transformative potential across various industries. Stakeholders should monitor this development closely as it could set a new benchmark for AI company valuations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
             "relatedResources": []
         },
         {
-            "date": "Apr 29 2026",
-            "headline": "OpenAI Unveils 5-Part Cybersecurity Plan for AI Era",
-            "title": "OpenAI&#x27;s Comprehensive Strategy to Bolster Cybersecurity in the Intelligence Age",
-            "content": "OpenAI has announced a five-part action plan aimed at enhancing cybersecurity in what it terms the Intelligence Age. The strategy focuses on democratizing access to AI-powered cyber defense tools and safeguarding critical infrastructure. Key components include developing open-source security frameworks and fostering international collaboration to address emerging threats. This initiative comes as cyber threats become increasingly sophisticated, leveraging AI to bypass traditional defenses. Security professionals are encouraged to integrate AI-driven tools into their defense strategies to mitigate risks effectively.",
+            "date": "Apr 30 2026",
+            "headline": "OpenAI Limits GPT-5.5 Cyber to Key Defenders",
+            "title": "OpenAI Restricts GPT-5.5 Cyber Access to Critical Cyber Defenders",
+            "content": "OpenAI has announced that its latest cybersecurity testing tool, GPT-5.5 Cyber, will initially be available only to critical cyber defenders. This strategic limitation aims to ensure that the tool is used effectively to bolster cybersecurity measures against sophisticated threats. The decision follows OpenAI&#x27;s previous criticism of Anthropic for similar access restrictions, highlighting a trend towards controlled deployment of advanced AI tools in sensitive domains. Organizations involved in cybersecurity should prepare for potential collaboration opportunities with OpenAI to leverage GPT-5.5 Cyber&#x27;s capabilities. This move reflects the increasing importance of AI in fortifying digital defenses.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/",
+            "relatedResources": []
+        },
+        {
+            "date": "Apr 28 2026",
+            "headline": "OpenAI Enhances ChatGPT Safety Measures",
+            "title": "OpenAI Details Safety Protocols for ChatGPT Community Protection",
+            "content": "OpenAI has outlined its comprehensive approach to ensuring community safety in the use of ChatGPT. The company employs model safeguards, misuse detection systems, and strict policy enforcement to mitigate risks associated with AI misuse. OpenAI collaborates with safety experts to continuously refine these measures, aiming to prevent harmful outputs and ensure responsible AI deployment. This commitment to safety is crucial as AI models become more integrated into everyday applications, posing potential risks if not properly managed. Developers and users should stay informed about these protocols to align with best practices in AI safety.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+            "sourceUrl": "https://openai.com/index/our-commitment-to-community-safety",
+            "relatedResources": []
+        },
+        {
+            "date": "May 03 2026",
+            "headline": "&quot;This is Fine&quot; Artist Claims AI Art Theft",
+            "title": "&quot;This is Fine&quot; Creator Accuses AI Startup of Art Misappropriation",
+            "content": "The creator of the iconic &quot;This is Fine&quot; meme has accused Artisan, an AI startup, of using his artwork without permission in their advertising campaign. Artisan&#x27;s billboards, which controversially urge businesses to &quot;stop hiring humans,&quot; allegedly feature the artist&#x27;s work without proper attribution or compensation. This incident highlights ongoing tensions between artists and AI companies over intellectual property rights in the digital age. Artists and content creators should be vigilant about protecting their work from unauthorized use by AI technologies. Legal experts may need to address these emerging challenges to ensure fair use and compensation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/03/this-is-fine-creator-says-ai-startup-stole-his-art/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 03 2026",
+            "headline": "AI Outperforms Doctors in ER Diagnoses—Harvard Study",
+            "title": "Harvard Study Finds AI More Accurate Than Doctors in ER Diagnoses",
+            "content": "A Harvard study has revealed that large language models can outperform human doctors in diagnosing emergency room cases. The research compared AI-generated diagnoses with those of two human doctors, finding that at least one AI model provided more accurate assessments. This finding underscores the potential of AI to enhance medical diagnostics and improve patient outcomes. However, it also raises questions about the role of human oversight in AI-driven healthcare solutions. Medical professionals should consider integrating AI tools to augment diagnostic accuracy while maintaining critical oversight to ensure patient safety.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 01 2026",
+            "headline": "Meta Acquires Robotics Startup for AI Expansion",
+            "title": "Meta Acquires Assured Robot Intelligence to Enhance AI for Robotics",
+            "content": "Meta has acquired Assured Robot Intelligence, a startup specializing in humanoid robotics, to strengthen its AI capabilities in the robotics sector. This acquisition aims to integrate advanced AI models into robotic systems, enhancing their functionality and adaptability. Meta&#x27;s move reflects a broader industry trend towards merging AI with robotics to create more sophisticated and autonomous systems. The acquisition is expected to accelerate Meta&#x27;s efforts in developing humanoid robots capable of performing complex tasks. Industry professionals should watch for new developments in AI-driven robotics as Meta expands its technological footprint.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
             "relatedResources": []
         },
         {
@@ -177,24 +186,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Apr 30 2026",
-            "headline": "Alibaba&#x27;s Metis Agent Slashes AI Tool Calls by 96%",
-            "title": "Alibaba&#x27;s Metis Agent Optimizes AI Tool Utilization with Precision",
-            "content": "Alibaba&#x27;s Metis agent has achieved a remarkable reduction in redundant AI tool calls, cutting them from 98% to just 2%, while simultaneously improving accuracy. This breakthrough addresses a common issue in AI development where large language models default to unnecessary tool usage, leading to increased latency and costs. By optimizing decision-making processes, Metis enhances efficiency and performance. This development is crucial for AI developers seeking to streamline operations and reduce overhead. The success of Metis underscores the importance of intelligent resource management in AI systems.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/alibabas-metis-agent-cuts-redundant-ai-tool-calls-from-98-to-2-and-gets-more-accurate-doing-it",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Runpod Flash Speeds AI Dev by Eliminating Containers",
-            "title": "Runpod Flash: A Game-Changer for AI Development Efficiency",
-            "content": "Runpod has launched Runpod Flash, an open-source Python tool that eliminates the need for containers, significantly accelerating AI development processes. Licensed under MIT, this tool is designed to enhance the creation, iteration, and deployment of AI systems by reducing setup time and complexity. By removing container dependencies, Runpod Flash offers a streamlined workflow for developers, enabling faster prototyping and deployment. This innovation is poised to benefit enterprises seeking agile and efficient AI development solutions. Developers should explore Runpod Flash to leverage its potential for improving productivity.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/one-tool-call-to-rule-them-all-new-open-source-python-tool-runpod-flash-eliminates-containers-for-faster-ai-dev",
-            "relatedResources": []
-        },
-        {
             "date": "May 02 2026",
             "headline": "Oscars Ban AI-Generated Actors, Scripts",
             "title": "AI-Generated Content Deemed Ineligible for Oscars Consideration",
@@ -210,69 +201,6 @@ const websiteContent = {
             "content": "AI-powered dictation apps have become indispensable tools for professionals, facilitating tasks such as email responses, note-taking, and even coding through voice commands. A recent evaluation ranks these apps based on accuracy, user interface, and integration capabilities, providing valuable insights for users seeking to enhance productivity. The review highlights the strengths and weaknesses of each app, guiding professionals in selecting the most suitable tool for their needs. As voice-driven technology continues to evolve, staying informed about the latest advancements is crucial for maintaining competitive efficiency.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Musk Battles OpenAI in Court Over Nonprofit Conversion",
-            "title": "Elon Musk&#x27;s Lawsuit Against OpenAI Over Nonprofit to For-Profit Transition",
-            "content": "Elon Musk has taken the stand in a legal battle against OpenAI, challenging the company&#x27;s transition from a nonprofit to a for-profit entity. The lawsuit, which has already seen the emergence of numerous emails, texts, and tweets, centers on Musk&#x27;s claim that OpenAI&#x27;s conversion undermines its original mission. The case highlights the complexities of balancing AI innovation with ethical considerations. As the trial unfolds, industry stakeholders are closely monitoring the implications for governance and accountability in AI organizations. Professionals in the field should stay informed on the potential impacts of this legal precedent.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/did-you-know-you-cant-steal-a-charity-dont-worry-elon-musk-will-remind-you/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Pentagon Partners with Nvidia, Microsoft, AWS for AI Deployment",
-            "title": "Pentagon Secures AI Deployment Deals with Nvidia, Microsoft, and AWS",
-            "content": "The Pentagon has finalized agreements with Nvidia, Microsoft, and Amazon Web Services (AWS) to deploy artificial intelligence on classified networks. This strategic move follows a contentious dispute with Anthropic over AI model usage terms, prompting the Department of Defense to diversify its AI vendor portfolio. The partnerships aim to enhance the military&#x27;s technological capabilities while ensuring secure and compliant AI integration. These developments underscore the growing importance of AI in national security and the need for robust vendor relationships. Defense contractors and tech firms should consider the implications for future collaborations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Pentagon&#x27;s AI Deals Exclude Anthropic—Focus on OpenAI, Google, Nvidia",
-            "title": "Pentagon&#x27;s Classified AI Partnerships Omit Anthropic, Include Major Tech Players",
-            "content": "The Pentagon has announced new partnerships with leading tech companies, including OpenAI, Google, Microsoft, Amazon, Nvidia, and Elon Musk&#x27;s xAI, for deploying AI tools in classified environments. Notably absent from these agreements is Anthropic, following a dispute over AI model usage terms. This strategic alignment with major players reflects the Department of Defense&#x27;s commitment to leveraging cutting-edge AI technologies while managing vendor risks. The exclusion of Anthropic raises questions about the future of AI vendor relationships in defense applications. Industry professionals should assess the potential shifts in AI procurement strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Musk vs. Altman: Legal Clash Over OpenAI&#x27;s Direction Intensifies",
-            "title": "Elon Musk and Sam Altman&#x27;s Legal Dispute Over OpenAI&#x27;s Mission Escalates",
-            "content": "The legal confrontation between Elon Musk and Sam Altman over OpenAI&#x27;s transformation from a nonprofit to a for-profit entity is intensifying. Musk&#x27;s testimony, accompanied by a trove of emails, texts, and tweets, argues that the shift contradicts OpenAI&#x27;s foundational goals. This high-profile case is drawing attention to the ethical and operational challenges faced by AI organizations as they scale. The outcome could influence future governance models for AI companies. Stakeholders in the AI community should monitor the proceedings for insights into balancing innovation with ethical responsibilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/musk-v-altman-is-just-getting-started/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "ChatGPT Images 2.0 Gains Traction in India—Global Impact Limited",
-            "title": "ChatGPT Images 2.0 Sees Strong Adoption in India, Limited Elsewhere",
-            "content": "ChatGPT Images 2.0, the latest iteration of OpenAI&#x27;s image generation tool, is experiencing significant uptake in India, where users are leveraging it for creative projects such as avatars and cinematic portraits. Despite its popularity in India, the tool has yet to achieve widespread adoption in other markets. This disparity highlights regional differences in AI tool engagement and potential cultural influences on technology adoption. Developers and marketers should consider these factors when strategizing global rollouts of AI products. The success in India suggests a promising market for further AI-driven creative solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Salesforce Unveils Agentforce to Streamline Enterprise AI Workflows",
-            "title": "Salesforce Launches Agentforce Operations to Enhance Enterprise AI Workflows",
-            "content": "Salesforce has launched Agentforce Operations, a new architectural layer designed to address the inefficiencies in enterprise AI workflows. The initiative targets the underlying workflow issues that cause task failures and broken handoffs as organizations integrate AI agents into back-office systems. By providing a robust framework for agent operations, Agentforce aims to streamline processes and improve the reliability of AI-driven tasks. This development is crucial for enterprises seeking to leverage AI effectively without being hindered by outdated workflow structures. IT leaders and developers should consider integrating Agentforce to optimize their AI implementations.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/salesforce-launches-agentforce-operations-to-fix-the-workflows-breaking-enterprise-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Replit CEO Discusses Cursor Deal Amid Acquisition Rumors",
-            "title": "Replit&#x27;s Amjad Masad on Cursor Deal and Industry Dynamics",
-            "content": "At the TechCrunch StrictlyVC event, Replit CEO Amjad Masad addressed industry speculation surrounding Cursor&#x27;s potential acquisition by SpaceX for $60 billion. Masad emphasized Replit&#x27;s strategic focus and expressed reluctance to sell, highlighting the company&#x27;s commitment to innovation and independence. The discussion reflects broader industry trends where tech giants are increasingly eyeing AI startups for strategic acquisitions. As the AI landscape evolves, companies like Replit are navigating complex market dynamics while maintaining their core mission. Stakeholders should monitor these developments to understand their impact on the AI sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/",
             "relatedResources": []
         }
     ],
