@@ -1015,20 +1015,12 @@
       "date": "2026-02-07",
       "category": "data_leak",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-824",
-      "incident_id": 824,
-      "title": "Purported Deepfake Allegedly Misattributes Claims to Former Student in Attack on Vice-Presidential C",
-      "date": "2026-02-04",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 128,
+    "total": 127,
     "last7Days": 10,
-    "last30Days": 39
+    "last30Days": 34
   },
-  "lastUpdated": "2026-05-05T23:15:42.275726+05:30"
+  "lastUpdated": "2026-05-06T01:27:41.758739+05:30"
 }
