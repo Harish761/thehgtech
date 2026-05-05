@@ -6,7 +6,7 @@
       "date": "May 5, 2026",
       "category": "Security News",
       "badge": "INCIDENT",
-      "author": "Harish Kumar",
+      "author": "Harish G",
       "excerpt": "Trellix disclosed unauthorized access to its internal source code repository. Discover what happened, the implications for supply chain security, and why read-only access still matters.",
       "image": "/images/articles/trellix-breach-hero.png",
       "externalUrl": "articles/trellix-source-code-breach-2026.html",
