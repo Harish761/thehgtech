@@ -4,7 +4,19 @@
 
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
 
-  <!-- April 15, 2026 - Booking.com Breach 2026 -->
+  <!-- May 5, 2026 - Trellix Source Code Breach -->
+  <url>
+    <loc>https://thehgtech.com/articles/trellix-source-code-breach-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05T12:00:00+05:30</news:publication_date>
+      <news:title>Trellix Source Code Breach: What Actually Happened & Why It Matters</news:title>
+      <news:keywords>Trellix, Source Code Breach, Cyber Attack, Supply Chain Security, CI/CD</news:keywords>
+    </news:news>
+  </url>  <!-- April 15, 2026 - Booking.com Breach 2026 -->
   <url>
     <loc>https://thehgtech.com/articles/booking-com-breach-2026.html</loc>
     <news:news>

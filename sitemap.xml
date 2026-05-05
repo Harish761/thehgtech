@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- May 5, 2026 - Trellix Source Code Breach -->
+  <url>
+    <loc>https://thehgtech.com/articles/trellix-source-code-breach-2026.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.99</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/trellix-breach-hero.png</image:loc>
+      <image:title>Trellix Source Code Breach: What Actually Happened & Why It Matters</image:title>
+    </image:image>
+  </url>
+
   <!-- March 9, 2026 - OpenAI Codex Security -->
   <url>
     <loc>https://thehgtech.com/articles/openai-codex-security-11000-bugs-2026.html</loc>

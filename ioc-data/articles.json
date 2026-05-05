@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "trellix-source-code-breach-2026",
+      "title": "Trellix Source Code Breach: What Actually Happened & Why It Matters",
+      "date": "May 5, 2026",
+      "category": "Security News",
+      "badge": "INCIDENT",
+      "author": "Harish Kumar",
+      "excerpt": "Trellix disclosed unauthorized access to its internal source code repository. Discover what happened, the implications for supply chain security, and why read-only access still matters.",
+      "image": "/images/articles/trellix-breach-hero.png",
+      "externalUrl": "articles/trellix-source-code-breach-2026.html",
+      "readTime": "8 min read",
+      "tags": ["Trellix", "Source Code Breach", "Cyber Attack", "Supply Chain Security"],
+    {
       "id": "report-20260504",
       "title": "Weekly Threat Report: May 04, 2026",
       "date": "May 04, 2026",
