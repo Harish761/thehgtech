@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1412",
+      "incident_id": 1412,
+      "title": "CodeWall's Autonomous Agent Reportedly Obtained Unauthorized Access to McKinsey's Lilli AI Platform ",
+      "date": "2026-05-05",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1383",
       "incident_id": 1383,
       "title": "User Reportedly Developed Emotional Dependence on Customized ChatGPT 'Boyfriend,' Citing Grief After",
@@ -625,14 +633,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1412",
-      "incident_id": 1412,
-      "title": "CodeWall's Autonomous Agent Reportedly Obtained Unauthorized Access to McKinsey\u2019s Lilli AI Platform ",
-      "date": "2026-03-14",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1404",
       "incident_id": 1404,
       "title": "Purported AI-Generated Nude Images Reportedly Used to Extort Wichita Man in Kansas",
@@ -1027,8 +1027,8 @@
   ],
   "stats": {
     "total": 128,
-    "last7Days": 9,
-    "last30Days": 38
+    "last7Days": 10,
+    "last30Days": 39
   },
-  "lastUpdated": "2026-05-05T15:40:12.141618+05:30"
+  "lastUpdated": "2026-05-05T23:15:42.275726+05:30"
 }
