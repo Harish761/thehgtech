@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1383",
+      "incident_id": 1383,
+      "title": "User Reportedly Developed Emotional Dependence on Customized ChatGPT 'Boyfriend,' Citing Grief After",
+      "date": "2026-05-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1476",
       "incident_id": 1476,
       "title": "Maryland Police Allegedly Relied on Facial Recognition Lead in Wrongful Arrest and Detention of Kimb",
@@ -809,14 +817,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1383",
-      "incident_id": 1383,
-      "title": "User Reportedly Developed Emotional Dependence on Customized ChatGPT \"Boyfriend,\" Citing Grief After",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1384",
       "incident_id": 1384,
       "title": "Purported Deepfake Video Impersonating Elton John Reportedly Induced Northeast Ohio Man to Authorize",
@@ -1027,8 +1027,8 @@
   ],
   "stats": {
     "total": 128,
-    "last7Days": 8,
-    "last30Days": 37
+    "last7Days": 9,
+    "last30Days": 38
   },
-  "lastUpdated": "2026-05-05T02:47:03.940878+05:30"
+  "lastUpdated": "2026-05-05T09:13:36.729802+05:30"
 }
