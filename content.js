@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 04 2026",
+            "headline": "Weaver E-cology Exploit—Critical Bug CVE-2026-22679 Abused",
+            "title": "Critical Vulnerability in Weaver E-cology Exploited Since March",
+            "content": "A critical vulnerability identified as CVE-2026-22679 in Weaver E-cology&#x27;s office automation software has been actively exploited by hackers since mid-March. This flaw allows attackers to execute discovery commands, potentially compromising sensitive data and operations. Weaver E-cology, widely used in enterprise environments for workflow automation, has not yet released a patch, leaving users at risk. Organizations using this software should immediately implement network segmentation and monitor for unusual activity. The ongoing exploitation underscores the need for rapid vulnerability management and threat detection capabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/weaver-e-cology-critical-bug-exploited-in-attacks-since-march/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "Trellix Source Code Breach—No Release Impact Found",
+            "title": "Trellix Confirms Source Code Repository Breach, No Release Impact",
+            "content": "Trellix has disclosed a breach of its source code repository, though initial investigations reveal no impact on the company&#x27;s source code release or distribution processes. The cybersecurity firm is conducting a thorough review to ensure the integrity of its software and reassure customers. While the breach highlights vulnerabilities in software supply chains, Trellix&#x27;s swift response and transparency are crucial in maintaining trust. Security professionals should review their own source code management practices to prevent similar incidents. This event emphasizes the importance of robust access controls and continuous monitoring in protecting critical assets.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/trellix-source-code-repository-breached/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "MOVEit Automation Flaw—Critical Authentication Bypass Patched",
+            "title": "Progress Software Patches Critical MOVEit Automation Authentication Bypass",
+            "content": "Progress Software has issued patches for two security vulnerabilities in its MOVEit Automation platform, including a critical authentication bypass flaw. This vulnerability, if exploited, could allow unauthorized access to sensitive data managed by the platform, which is used for secure, automated file transfers. Users of MOVEit Automation should apply the updates immediately to mitigate potential risks. The patch addresses issues in versions prior to the latest release, underscoring the importance of maintaining up-to-date systems. This incident highlights the ongoing challenges in securing managed file transfer solutions against evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/progress-patches-critical-moveit.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "Trellix Discloses Breach—Source Code Repository Compromised",
+            "title": "Trellix Reveals Data Breach Following Source Code Repository Hack",
+            "content": "Trellix has publicly disclosed a data breach after attackers accessed part of its source code repository. The company is actively investigating the extent of the breach and its potential implications for product security. While no direct impact on software distribution has been reported, the incident raises concerns about the security of software development environments. Trellix&#x27;s transparency in handling the breach is a critical step in maintaining customer trust. Security teams should evaluate their own code repository security measures to prevent unauthorized access.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trellix-discloses-data-breach-after-source-code-repository-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "Weekly Cyber Recap—AI Phishing, Linux Exploit, GitHub RCE",
+            "title": "Weekly Cybersecurity Recap: AI Phishing, Linux Exploit, GitHub RCE",
+            "content": "This week&#x27;s cybersecurity landscape saw rapid developments, with attackers leveraging AI-powered phishing, exploiting Linux vulnerabilities, and targeting GitHub with remote code execution (RCE) attacks. These incidents highlight a shift from traditional breaches to more sophisticated occupation strategies, where attackers gain persistent access to systems. Security teams are urged to prioritize patch management and enhance monitoring capabilities to detect and respond to these evolving threats. The increasing complexity of attacks underscores the need for proactive threat intelligence and adaptive defense mechanisms.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "Fake IT Workers—A Growing Threat to Organizations",
+            "title": "The Rising Threat of Fake IT Workers in Cybersecurity",
+            "content": "The issue of hiring fake IT workers has become a significant concern for organizations, from Fortune 500 companies to smaller enterprises. These fraudulent hires exploit remote work practices to gain unauthorized access to sensitive systems, posing severe security risks. Companies must enhance their hiring processes, including thorough background checks and verification of credentials, to mitigate this threat. The trend reflects broader challenges in securing remote work environments and underscores the need for robust identity verification measures. Security leaders should prioritize addressing this vulnerability to protect organizational assets.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4166139/the-fake-it-worker-problem-cisos-cant-ignore.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
             "headline": "MOVEit Automation Flaw—Patch Critical Auth Bypass Now",
             "title": "Progress Software Warns of Critical MOVEit Automation Authentication Bypass Vulnerability",
             "content": "Progress Software has issued an urgent advisory to patch a critical authentication bypass vulnerability in its MOVEit Automation managed file transfer application. The flaw, which affects all versions prior to the latest update, could allow unauthorized access to sensitive data transfers. This vulnerability poses a significant risk to enterprises relying on MOVEit for secure file exchanges, potentially exposing sensitive information to attackers. Progress Software has released a patch and strongly advises all users to update immediately to mitigate potential exploitation. This incident underscores the ongoing challenges in securing enterprise-grade file transfer systems.",
@@ -40,24 +94,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 01 2026",
-            "headline": "Teen Detained—French Govt Data Breach Uncovered",
-            "title": "15-Year-Old Detained Over French Government Agency Data Breach",
-            "content": "French authorities have detained a 15-year-old suspected of orchestrating a cyberattack on France Titres (ANTS), the agency responsible for issuing administrative documents. The teenager allegedly sold data stolen during the breach, which included sensitive information from the agency&#x27;s databases. This arrest highlights the increasing involvement of younger individuals in cybercrime and the need for enhanced cybersecurity education and prevention measures. The French government is conducting a thorough investigation to assess the full impact of the breach and prevent future incidents.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/15-year-old-detained-over-french-govt-agency-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Cyber Pros Jailed—BlackCat Ransomware Facilitators Sentenced",
-            "title": "Two Cybersecurity Professionals Sentenced for BlackCat Ransomware Attacks",
-            "content": "The U.S. Department of Justice has sentenced two cybersecurity professionals, Ryan Goldberg and Kevin Martin, to four years in prison for their involvement in facilitating BlackCat ransomware attacks in 2023. The duo was found guilty of deploying ransomware that targeted various organizations, causing significant financial and operational damage. This case underscores the ethical responsibilities of cybersecurity professionals and the severe consequences of engaging in cybercriminal activities. Organizations are reminded to conduct thorough background checks and promote ethical standards within their cybersecurity teams.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/two-cybersecurity-professionals-get-4.html",
-            "relatedResources": []
-        },
-        {
             "date": "May 03 2026",
             "headline": "Instructure Data Breach—ShinyHunters Claims Responsibility",
             "title": "Instructure Confirms Data Breach Amid ShinyHunters Extortion Claims",
@@ -83,106 +119,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 02 2026",
-            "headline": "cPanel Flaw Exploited—&quot;Sorry&quot; Ransomware Hits Websites",
-            "title": "Critical cPanel Vulnerability CVE-2026-41940 Exploited in &quot;Sorry&quot; Ransomware Attacks",
-            "content": "A newly disclosed vulnerability in cPanel, identified as CVE-2026-41940, is being actively exploited to deploy the &quot;Sorry&quot; ransomware, compromising websites and encrypting their data. This flaw allows attackers to gain unauthorized access and execute malicious code on affected servers. The vulnerability impacts numerous websites relying on cPanel for server management, posing a significant threat to data integrity and availability. Security experts urge administrators to apply patches immediately to mitigate the risk. This incident underscores the critical need for regular updates and vigilance in server management practices.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critrical-cpanel-flaw-mass-exploited-in-sorry-ransomware-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 02 2026",
-            "headline": "ConsentFix v3 Targets Azure—OAuth Abuse Automated",
-            "title": "ConsentFix v3 Attacks Exploit Azure with Automated OAuth Abuse",
-            "content": "A new attack method, ConsentFix v3, has emerged, targeting Microsoft Azure by automating OAuth abuse. This technique, circulating on hacker forums, enhances previous methods with automation and scalability, posing a significant risk to Azure users. The attack exploits OAuth&#x27;s consent framework, potentially allowing unauthorized access to sensitive data. Organizations using Azure are advised to review their OAuth configurations and implement stricter access controls. This development highlights the evolving tactics of threat actors in exploiting cloud services.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/consentfix-v3-attacks-target-azure-with-automated-oauth-abuse/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 02 2026",
-            "headline": "Trellix Source Code Breach—Unauthorized Repository Access Confirmed",
-            "title": "Trellix Confirms Breach of Source Code Repository with Forensic Investigation",
-            "content": "Cybersecurity firm Trellix has confirmed a breach involving unauthorized access to a portion of its source code repository. The company detected the compromise recently and has engaged leading forensic experts to investigate the incident. While the exact scope of the breach remains under assessment, Trellix assures that its core products and services remain unaffected. This incident underscores the persistent threat of source code breaches, which can lead to intellectual property theft and potential exploitation. Security professionals are advised to review their own code repository access controls and monitor for any unusual activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 02 2026",
-            "headline": "Bluekit Phishing Kit—AI Assistant Enhances Threat Capabilities",
-            "title": "New Bluekit Phishing Kit Integrates AI Assistant for Sophisticated Attacks",
-            "content": "The emerging Bluekit phishing kit, still under development, now features an AI Assistant and automated domain registration, enhancing its phishing capabilities. This development allows attackers to streamline the creation and deployment of phishing campaigns, potentially increasing their success rates. The integration of AI tools in phishing kits represents a growing trend in cybercrime, where automation and machine learning are leveraged to bypass traditional security measures. Organizations should bolster their phishing defenses and train employees to recognize increasingly sophisticated phishing attempts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-bluekit-phishing-kit-features-ai-assistant/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 02 2026",
-            "headline": "Microsoft Tests Faster Windows Run—Modern Dialog in Preview",
-            "title": "Microsoft Introduces Modern Windows Run Dialog with Enhanced Performance",
-            "content": "Microsoft has announced a new modern Run dialog for Windows 11, featuring improved performance and dark mode support, now available in a preview build. This update aims to replace the legacy Run dialog, promising faster execution and a more streamlined user experience. The modern Run dialog reflects Microsoft&#x27;s ongoing efforts to modernize Windows 11 and enhance its usability. Users participating in the Windows Insider Program can test this feature, providing feedback to help refine its functionality before a broader release.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-modern-windows-run-says-its-faster-than-legacy-dialog/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 01 2026",
-            "headline": "Musk&#x27;s Legal Battle Against OpenAI Falters in Court",
-            "title": "Elon Musk&#x27;s Lawsuit Against OpenAI Faces Uphill Battle",
-            "content": "Elon Musk&#x27;s legal efforts to claim ownership over OpenAI&#x27;s origins and operations are facing significant challenges in court. Musk has accused OpenAI of &quot;stealing a nonprofit&quot; and asserted his role as the primary visionary behind the organization. Despite these claims, indications suggest that Musk is unlikely to succeed in his lawsuit. This legal dispute highlights ongoing tensions in the tech industry regarding intellectual property and leadership claims. Professionals in the field should monitor this case for its potential implications on corporate governance and innovation ownership.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/922009/musk-openai-trial-testimony-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 29 2026",
-            "headline": "OpenAI&#x27;s 5-Part Plan to Secure the Intelligence Age",
-            "title": "OpenAI Proposes Comprehensive Cybersecurity Strategy for AI Era",
-            "content": "OpenAI has unveiled a five-part action plan aimed at bolstering cybersecurity in the evolving Intelligence Age. This initiative focuses on democratizing AI-driven cyber defenses and safeguarding critical infrastructure from emerging threats. The plan emphasizes collaboration across sectors to enhance resilience against sophisticated cyberattacks. As AI technologies become more integrated into essential systems, this strategy seeks to address vulnerabilities and ensure robust protection. Security professionals should consider these guidelines to enhance their own cybersecurity frameworks in an increasingly AI-dependent landscape.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Salesforce&#x27;s Agentforce Tackles AI Workflow Challenges",
-            "title": "Salesforce Introduces Agentforce Operations to Streamline AI Workflows",
-            "content": "Salesforce has launched Agentforce Operations, a new solution designed to address workflow inefficiencies in enterprise AI systems. The initiative targets the breakdowns occurring as AI agents are integrated into back-office operations, where existing workflows are ill-suited for agent-based tasks. By introducing a new architectural layer, Salesforce aims to improve task execution and reduce workflow disruptions. This development is crucial for organizations seeking to maximize the efficiency and effectiveness of their AI deployments. IT leaders should evaluate Agentforce Operations as a potential enhancement to their AI infrastructure.",
+            "date": "May 04 2026",
+            "headline": "Amex&#x27;s AI Agents Revolutionize Transactions—But Trust Issues Loom",
+            "title": "Amex&#x27;s AI-Driven Agentic Commerce Faces Trust and Auditability Challenges",
+            "content": "American Express (Amex) is pioneering a new frontier in digital transactions with its agentic commerce stack, allowing AI agents to shop and pay on behalf of users. This system currently operates exclusively within Amex&#x27;s payment network, leveraging intent contracts and single-use tokens to enforce transactions. However, the reliance on a black-box approach raises significant concerns about trust and auditability, potentially hindering broader adoption. While Amex&#x27;s participation in agentic commerce protocol projects highlights its commitment to innovation, the opacity of the system could deter users wary of untraceable transactions. Professionals in the financial and tech sectors should monitor this development closely, as it may set precedents for future AI-driven transaction systems.",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/salesforce-launches-agentforce-operations-to-fix-the-workflows-breaking-enterprise-ai",
+            "sourceUrl": "https://venturebeat.com/orchestration/inside-amexs-agentic-commerce-stack-how-intent-contracts-and-single-use-tokens-enforce-ai-transactions",
             "relatedResources": []
         },
         {
-            "date": "Apr 30 2026",
-            "headline": "Alibaba&#x27;s Metis Agent Slashes AI Tool Calls by 96%",
-            "title": "Alibaba&#x27;s Metis Agent Optimizes AI Tool Usage and Accuracy",
-            "content": "Alibaba&#x27;s Metis agent has achieved a significant reduction in redundant AI tool calls, cutting them from 98% to just 2%, while simultaneously improving accuracy. This advancement addresses a common challenge in AI development: deciding when to utilize external tools versus relying on internal capabilities. By minimizing unnecessary API interactions, Metis enhances processing efficiency and reduces costs. This breakthrough is particularly relevant for developers seeking to optimize AI performance and resource allocation. Organizations should consider similar strategies to streamline their AI operations and improve system responsiveness.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/alibabas-metis-agent-cuts-redundant-ai-tool-calls-from-98-to-2-and-gets-more-accurate-doing-it",
-            "relatedResources": []
-        },
-        {
-            "date": "Apr 30 2026",
-            "headline": "Runpod Flash Speeds AI Development—No Containers Needed",
-            "title": "Runpod Launches Open Source Tool to Accelerate AI Development",
-            "content": "Runpod has introduced Runpod Flash, an open source Python tool designed to eliminate the need for containers in AI development, thereby accelerating the creation and deployment of AI systems. Licensed under MIT, this enterprise-friendly tool promises to streamline workflows and enhance productivity for AI developers. By removing container dependencies, Runpod Flash reduces complexity and speeds up iteration cycles. This innovation is poised to benefit developers seeking efficient, scalable solutions for AI projects. Technical teams should explore Runpod Flash to optimize their development processes and reduce overhead.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/infrastructure/one-tool-call-to-rule-them-all-new-open-source-python-tool-runpod-flash-eliminates-containers-for-faster-ai-dev",
-            "relatedResources": []
-        },
-        {
-            "date": "May 01 2026",
-            "headline": "Replit CEO Discusses Cursor Deal Amid SpaceX Rumors",
-            "title": "Replit&#x27;s Amjad Masad on Cursor Acquisition Talks and Apple Dispute",
-            "content": "At the TechCrunch StrictlyVC event, Replit CEO Amjad Masad addressed industry speculation regarding Cursor&#x27;s potential $60 billion acquisition by SpaceX. Masad also discussed Replit&#x27;s ongoing legal battle with Apple, emphasizing the company&#x27;s commitment to independence and innovation. The conversation highlighted the competitive dynamics in the tech sector, with major players vying for strategic acquisitions and market positioning. Stakeholders should watch these developments closely, as they may influence industry trends and corporate strategies. This situation underscores the importance of agility and foresight in navigating tech industry challenges.",
+            "date": "May 05 2026",
+            "headline": "Nvidia&#x27;s CEO: AI Job Creation Outpaces Fears of Automation",
+            "title": "Nvidia&#x27;s Jensen Huang Asserts AI&#x27;s Role in Job Creation Amid Automation Fears",
+            "content": "Nvidia CEO Jensen Huang has addressed growing concerns about AI&#x27;s potential to displace jobs, asserting that AI is, in fact, generating a substantial number of new employment opportunities. Huang&#x27;s comments come amid widespread anxiety among workers about AI-driven automation. He argues that AI technologies are not only enhancing productivity but also creating demand for new roles in AI development, deployment, and maintenance. This perspective challenges the narrative that AI will lead to massive job losses, suggesting instead that the tech industry may see a shift in job types rather than a reduction. Professionals should consider the evolving landscape of AI-related employment and the potential for new career paths.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/",
+            "sourceUrl": "https://techcrunch.com/2026/05/04/as-workers-worry-about-ai-nvidias-jensen-huang-says-ai-is-creating-an-enormous-number-of-jobs/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "OpenAI Trial: Brockman&#x27;s Testimony Highlights Internal Tensions",
+            "title": "OpenAI President Greg Brockman Testifies in Elon Musk&#x27;s Legal Battle",
+            "content": "In a pivotal moment during Elon Musk&#x27;s legal proceedings against OpenAI, Greg Brockman, OpenAI&#x27;s president, provided testimony that underscored internal tensions within the organization. Brockman&#x27;s journal, presented as evidence, has emerged as a critical element in the case, revealing insights into OpenAI&#x27;s decision-making processes. The unusual sequence of cross-examination followed by direct examination highlighted Brockman&#x27;s significant role and potential conflicts within OpenAI. This trial could have far-reaching implications for AI governance and transparency, especially concerning how AI organizations manage internal dissent and strategic decisions. Stakeholders in AI development and policy should pay close attention to the trial&#x27;s outcomes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/923684/musk-brockman-altman-openai-trial",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "Image AI Models Boost App Downloads—Revenue Growth Lags",
+            "title": "Visual AI Models Drive App Downloads but Struggle with Revenue Conversion",
+            "content": "Recent findings from Appfigures reveal that the launch of image-based AI models significantly boosts app downloads, achieving a 6.5-fold increase compared to chatbot upgrades. Despite this surge in user acquisition, these visual models often fail to convert the increased downloads into substantial revenue. This trend suggests a gap between user interest and monetization strategies, posing a challenge for developers seeking to capitalize on AI-driven app enhancements. As visual AI continues to evolve, developers and tech leaders must explore innovative monetization approaches to bridge this gap and sustain growth. Understanding user engagement and refining business models will be crucial for leveraging AI&#x27;s full potential in the app market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "AGI Arms Race Concerns Raised in OpenAI Trial Testimony",
+            "title": "Stuart Russell Warns of AGI Arms Race in OpenAI Legal Proceedings",
+            "content": "Stuart Russell, a prominent AI researcher and the sole expert witness for Elon Musk in the OpenAI trial, has voiced concerns about an impending artificial general intelligence (AGI) arms race. Russell&#x27;s testimony emphasized the need for governmental oversight to prevent unchecked competition among frontier labs developing AGI technologies. His warnings highlight the potential risks associated with rapid AGI advancements, including ethical dilemmas and global security threats. This testimony underscores the importance of establishing regulatory frameworks to manage AGI development responsibly. Policymakers and AI researchers should consider these insights to mitigate risks and ensure the safe progression of AGI technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/04/elon-musks-only-expert-witness-at-the-openai-trial-fears-an-agi-arms-race/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 04 2026",
+            "headline": "Roomba Creator Unveils Robotic Companion—A New Era of Home AI",
+            "title": "Colin Angle Introduces Furry Robot Companion from Familiar Machines &amp; Magic",
+            "content": "Colin Angle, the visionary behind the Roomba, has launched a new venture with Familiar Machines &amp; Magic, unveiling a dog-sized robotic companion designed to enhance human interaction. Unlike traditional cleaning robots, this AI-driven companion focuses on providing emotional support and companionship, marking a shift in the role of household robots. This development reflects a growing trend towards integrating AI into everyday life in more personal and interactive ways. As AI technology continues to evolve, the introduction of such companion robots could redefine human-robot relationships, offering new opportunities for emotional engagement and assistance. Industry professionals should explore the implications of this shift for future AI applications in domestic settings.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/922947/roomba-creator-new-robot-familiar-machines-magic-ai-launch",
             "relatedResources": []
         },
         {
@@ -219,24 +210,6 @@ const websiteContent = {
             "content": "AI-generated music is increasingly populating streaming services, raising questions about its impact on the music industry. This trend is driven by advancements in AI capabilities that allow for the creation of complex musical compositions without human intervention. While some listeners embrace the novelty, others question the authenticity and artistic value of AI-produced tracks. The influx of AI music presents both opportunities and challenges for artists and record labels, who must adapt to a rapidly changing landscape. Industry stakeholders should consider strategies for integrating AI music while preserving traditional artistic integrity.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/column/921599/ai-music-is-flooding-streaming-services-but-who-wants-it",
-            "relatedResources": []
-        },
-        {
-            "date": "May 02 2026",
-            "headline": "Oscars Ban AI-Generated Actors, Scripts",
-            "title": "AI-Generated Content Deemed Ineligible for Oscars Consideration",
-            "content": "The Oscars have officially ruled out AI-generated actors and scripts from eligibility, marking a significant stance on the use of artificial intelligence in film production. This decision impacts creators like Tilly Norwood, who have utilized AI technologies to produce cinematic content. The move underscores the Academy&#x27;s commitment to preserving traditional filmmaking practices and ensuring that human creativity remains at the forefront of the industry. Filmmakers and studios employing AI should reassess their strategies to align with these new eligibility criteria.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 02 2026",
-            "headline": "Top AI Dictation Apps Ranked for Professionals",
-            "title": "Comprehensive Review of Leading AI Dictation Apps for Efficiency",
-            "content": "AI-powered dictation apps have become indispensable tools for professionals, facilitating tasks such as email responses, note-taking, and even coding through voice commands. A recent evaluation ranks these apps based on accuracy, user interface, and integration capabilities, providing valuable insights for users seeking to enhance productivity. The review highlights the strengths and weaknesses of each app, guiding professionals in selecting the most suitable tool for their needs. As voice-driven technology continues to evolve, staying informed about the latest advancements is crucial for maintaining competitive efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/",
             "relatedResources": []
         }
     ],
@@ -342,28 +315,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41940",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2024-1708",
-            "dateAdded": "Apr 28, 2026",
-            "vendor": "ConnectWise ScreenConnect",
-            "description": "ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1708",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-32202",
-            "dateAdded": "Apr 28, 2026",
-            "vendor": "Microsoft Windows",
-            "description": "Microsoft Windows Shell contains a protection mechanism failure vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32202",
             "isZeroDay": false
         }
     ],
