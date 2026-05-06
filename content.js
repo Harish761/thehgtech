@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 06 2026",
+            "headline": "Ransomware Destroys Backups—Recovery Plans at Risk",
+            "title": "Ransomware Attacks Succeed by Targeting Backup Systems First",
+            "content": "Acronis has revealed that ransomware attacks often succeed even when organizations have backup systems in place. Attackers are increasingly targeting and destroying backup systems before encrypting primary data, leaving victims with no recovery options. This tactic underscores the importance of securing backup systems against unauthorized access and implementing robust isolation measures. Organizations are advised to regularly test their backup integrity and ensure backups are stored offline or in immutable storage. As ransomware tactics evolve, businesses must adapt their cybersecurity strategies to protect critical recovery paths.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/why-ransomware-attacks-succeed-even-when-backups-exist/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "MuddyWater Uses Chaos Ransomware as Decoy in Attacks",
+            "title": "MuddyWater Hackers Deploy Chaos Ransomware to Mask Operations",
+            "content": "The Iranian threat actor group MuddyWater has been using Chaos ransomware as a decoy to disguise their cyber operations. By leveraging social engineering tactics through Microsoft Teams, they gain access and establish persistence within targeted networks. This approach allows them to conduct credential harvesting and data theft while diverting attention to the ransomware. Security professionals should be vigilant about unusual activity in collaboration tools and enhance monitoring for signs of unauthorized access. This incident highlights the sophisticated methods employed by state-sponsored groups to achieve their objectives.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/muddywater-hackers-use-chaos-ransomware-as-a-decoy-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "Iranian APT Masquerades as Chaos Ransomware Attack",
+            "title": "Iranian APT Intrusion Disguised as Chaos Ransomware Incident",
+            "content": "An Iranian Advanced Persistent Threat (APT) group, likely MuddyWater, has been implicated in an attack that masquerades as a Chaos ransomware incident. The operation involves social engineering, persistence mechanisms, credential harvesting, and data exfiltration. By disguising their activities as ransomware, the attackers aim to mislead investigators and victims. Organizations should enhance their detection capabilities to identify such deceptive tactics and protect sensitive information. This case exemplifies the growing trend of APT groups using ransomware as a cover for espionage activities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/iranian-apt-intrusion-masquerades-as-chaos-ransomware-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "CISA Urges Critical Infrastructure to Master Isolation, Recovery",
+            "title": "CISA Issues Guidance for Critical Infrastructure Cyberattack Preparedness",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has released new guidance to help critical infrastructure operators prepare for potential cyberattacks by foreign threat actors. The guidance emphasizes the importance of mastering isolation and recovery strategies to mitigate the impact of attacks. CISA advises operators to implement network segmentation, regular backup testing, and incident response planning. As geopolitical tensions rise, critical infrastructure remains a prime target for cyberattacks, making proactive measures essential. Organizations should review and update their cybersecurity frameworks to align with CISA&#x27;s recommendations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisa-critical-infrastructure-must-master-isolation-recovery/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "Palo Alto Firewall Zero-Day Exploited—Patch Urgently",
+            "title": "Palo Alto Networks Warns of Zero-Day Exploited in Firewall Attacks",
+            "content": "Palo Alto Networks has alerted customers to a critical zero-day vulnerability in the PAN-OS User-ID Authentication Portal, which is currently being exploited in the wild. This unpatched flaw allows remote code execution, posing a significant risk to affected systems. Organizations using PAN-OS are urged to apply mitigations and monitor for unusual activity until a patch is available. The vulnerability underscores the importance of maintaining up-to-date security measures and vigilance against emerging threats. Security teams should prioritize reviewing access logs and implementing additional protective measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-actively-exploited-firewall-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "Google Expands Android Verification to Combat Supply Chain Attacks",
+            "title": "Google Introduces Public Verification for Android Apps to Enhance Security",
+            "content": "Google has announced the expansion of Binary Transparency for Android apps to protect against supply chain attacks. This initiative involves a public ledger that verifies the integrity of Google apps, ensuring they are as intended by the developers. By enhancing transparency, Google aims to prevent unauthorized modifications and bolster user trust in the Android ecosystem. Developers and security teams should familiarize themselves with this new verification process to ensure compliance and enhance app security. This move reflects the growing emphasis on securing software supply chains against sophisticated threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/android-apps-get-public-verification.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 05 2026",
             "headline": "Apache HTTP/2 Flaw—RCE Risk for Web Servers",
             "title": "Critical Apache HTTP/2 Vulnerability CVE-2026-23918 Allows Potential RCE",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/progress-patches-critical-moveit.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Trellix Discloses Breach—Source Code Repository Compromised",
-            "title": "Trellix Reveals Data Breach Following Source Code Repository Hack",
-            "content": "Trellix has publicly disclosed a data breach after attackers accessed part of its source code repository. The company is actively investigating the extent of the breach and its potential implications for product security. While no direct impact on software distribution has been reported, the incident raises concerns about the security of software development environments. Trellix&#x27;s transparency in handling the breach is a critical step in maintaining customer trust. Security teams should evaluate their own code repository security measures to prevent unauthorized access.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trellix-discloses-data-breach-after-source-code-repository-hack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Weekly Cyber Recap—AI Phishing, Linux Exploit, GitHub RCE",
-            "title": "Weekly Cybersecurity Recap: AI Phishing, Linux Exploit, GitHub RCE",
-            "content": "This week&#x27;s cybersecurity landscape saw rapid developments, with attackers leveraging AI-powered phishing, exploiting Linux vulnerabilities, and targeting GitHub with remote code execution (RCE) attacks. These incidents highlight a shift from traditional breaches to more sophisticated occupation strategies, where attackers gain persistent access to systems. Security teams are urged to prioritize patch management and enhance monitoring capabilities to detect and respond to these evolving threats. The increasing complexity of attacks underscores the need for proactive threat intelligence and adaptive defense mechanisms.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Fake IT Workers—A Growing Threat to Organizations",
-            "title": "The Rising Threat of Fake IT Workers in Cybersecurity",
-            "content": "The issue of hiring fake IT workers has become a significant concern for organizations, from Fortune 500 companies to smaller enterprises. These fraudulent hires exploit remote work practices to gain unauthorized access to sensitive systems, posing severe security risks. Companies must enhance their hiring processes, including thorough background checks and verification of credentials, to mitigate this threat. The trend reflects broader challenges in securing remote work environments and underscores the need for robust identity verification measures. Security leaders should prioritize addressing this vulnerability to protect organizational assets.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4166139/the-fake-it-worker-problem-cisos-cant-ignore.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "MOVEit Automation Flaw—Patch Critical Auth Bypass Now",
-            "title": "Progress Software Warns of Critical MOVEit Automation Authentication Bypass Vulnerability",
-            "content": "Progress Software has issued an urgent advisory to patch a critical authentication bypass vulnerability in its MOVEit Automation managed file transfer application. The flaw, which affects all versions prior to the latest update, could allow unauthorized access to sensitive data transfers. This vulnerability poses a significant risk to enterprises relying on MOVEit for secure file exchanges, potentially exposing sensitive information to attackers. Progress Software has released a patch and strongly advises all users to update immediately to mitigate potential exploitation. This incident underscores the ongoing challenges in securing enterprise-grade file transfer systems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/moveit-automation-customers-warned-to-patch-critical-auth-bypass-flaw/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "cPanel Flaw Exploited—Govt and MSP Networks at Risk",
-            "title": "Critical cPanel Vulnerability Weaponized Against Government and MSP Networks",
-            "content": "A newly discovered threat actor is actively exploiting a critical cPanel vulnerability to target government and military entities in Southeast Asia, as well as managed service providers (MSPs) in multiple countries including the Philippines, Laos, Canada, South Africa, and the U.S. The vulnerability, recently disclosed, allows attackers to gain unauthorized access to sensitive systems, posing a severe threat to national security and service provider networks. Security experts urge organizations using cPanel to apply the latest security patches and review their network security protocols. This attack highlights the increasing sophistication of threat actors targeting critical infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/critical-cpanel-vulnerability.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "40,000 Servers Hit—cPanel Zero-Day Exploited",
-            "title": "Over 40,000 Servers Compromised in cPanel Zero-Day Exploitation",
-            "content": "A massive exploitation campaign has compromised over 40,000 servers by targeting CVE-2026-41940, a recently patched zero-day vulnerability in cPanel. This flaw allows attackers to gain administrative access, posing a significant threat to affected systems. The widespread nature of the attack underscores the critical need for immediate patching and system audits. Organizations using cPanel are advised to update their systems to the latest version and enhance monitoring for unusual activities. This incident highlights the persistent threat of zero-day vulnerabilities in widely used server management software.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-40000-servers-compromised-in-ongoing-cpanel-exploitation/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 06 2026",
+            "headline": "Google&#x27;s AI Search Now Quotes Reddit—Boosts User Trust",
+            "title": "Google Enhances AI Search with Reddit and Social Media Perspectives",
+            "content": "Google has updated its AI Search features to incorporate firsthand perspectives from platforms like Reddit and other social media forums. This enhancement aims to provide users with more trusted and relatable information by linking directly to discussions and insights from real users. By integrating these sources, Google seeks to improve the reliability and depth of search results, particularly for topics where user experiences and opinions are valuable. This move reflects a broader trend of leveraging community-driven content to enhance AI-driven search capabilities. Users can expect more diverse and nuanced search results, potentially increasing engagement and satisfaction.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/924993/google-ai-search-mode-overviews-update-reddit-links",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "Microsoft Reshuffle—LinkedIn Chief Takes Over Teams",
+            "title": "Microsoft Restructures Leadership: LinkedIn Chief to Oversee Teams",
+            "content": "Microsoft has announced a significant leadership reshuffle, with LinkedIn chief Ryan Roslansky now overseeing the Microsoft Teams organization. This strategic move follows his expanded role last year as head of Office, reflecting Microsoft&#x27;s commitment to integrating its productivity and communication platforms more closely. The reshuffle aims to streamline operations and enhance collaboration across Microsoft&#x27;s suite of services. This change could impact the development and integration of Teams with other Microsoft products, potentially leading to more cohesive user experiences. Industry professionals should monitor these developments for potential shifts in Microsoft&#x27;s enterprise communication strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/924931/microsoft-office-copilot-windows-reorg-shuffle",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "Hugging Face Unveils Robot App Store—200+ Apps Available",
+            "title": "Hugging Face Launches Open-Source Reachy Mini App Store for Robots",
+            "content": "Hugging Face has launched the Reachy Mini App Store, an open-source platform offering over 200 applications specifically designed for robots. This initiative marks a significant shift in the app ecosystem, traditionally dominated by smartphone applications, by extending it to robotic devices. The app store aims to cater to a wide range of robotic use cases, fostering innovation and accessibility in robotics development. By providing a centralized hub for robot applications, Hugging Face is poised to accelerate the adoption and versatility of robotic solutions across various industries. Developers and robotics enthusiasts should explore this new resource for potential opportunities and collaborations.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/the-app-store-for-robots-has-arrived-hugging-face-launches-open-source-reachy-mini-app-store-with-200-apps",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "Apple Settles Siri AI Lawsuit—$250M Payout",
+            "title": "Apple to Pay $250 Million in Siri AI Features Lawsuit Settlement",
+            "content": "Apple has agreed to a $250 million settlement to resolve a class-action lawsuit concerning delays in the rollout of promised AI features for Siri. The lawsuit alleged that Apple overpromised and underdelivered on enhancements to Siri&#x27;s AI capabilities, leading to user dissatisfaction. This settlement underscores the challenges tech companies face in managing user expectations and delivering on AI advancements. The payout is expected to compensate affected users and potentially influence Apple&#x27;s future AI development and communication strategies. Stakeholders should consider the implications of this settlement on Apple&#x27;s product roadmap and user trust.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/06/apple-to-pay-250m-to-settle-lawsuit-over-siris-delayed-ai-features/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "Ethos Secures $22.75M from a16z—Expands Expert Network",
+            "title": "Ethos Raises $22.75 Million to Enhance Expert Network with Voice Onboarding",
+            "content": "Ethos has successfully raised $22.75 million in funding from Andreessen Horowitz (a16z) to expand its expert network platform, which now boasts onboarding of 35,000 experts per week. The platform leverages voice onboarding technology to streamline the integration of new experts, enhancing the user experience and operational efficiency. This funding will support further development and scaling of the platform, positioning Ethos as a leader in connecting professionals across industries. The investment highlights the growing demand for expert networks and the role of innovative technologies in facilitating professional connections. Industry professionals should watch for new opportunities arising from Ethos&#x27;s expanded capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/06/ethos-raises-22-75m-from-a16z-for-its-expert-network-with-voice-onboarding/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "M&amp;A Strategies Unveiled at TechCrunch Disrupt 2026",
+            "title": "TechCrunch Disrupt 2026 to Address M&amp;A as Early-Stage Strategy",
+            "content": "TechCrunch Disrupt 2026 will feature discussions from leaders at Coinbase, M13, and Mignano Law Group on the role of mergers and acquisitions (M&amp;A) as an early-stage strategy. This event aims to provide insights into how startups can leverage M&amp;A to accelerate growth and innovation. Attendees will gain valuable perspectives on navigating the complexities of M&amp;A, including legal, financial, and strategic considerations. The conference underscores the importance of M&amp;A in the tech industry, particularly for startups seeking competitive advantages. Professionals interested in strategic growth should consider attending to enhance their understanding of M&amp;A dynamics.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/06/at-techcrunch-disrupt-2026-all-your-ma-questions-will-be-answered/",
+            "relatedResources": []
+        },
         {
             "date": "May 05 2026",
             "headline": "Google, Microsoft, xAI Open AI Models to U.S. Scrutiny",
@@ -219,33 +273,6 @@ const websiteContent = {
             "content": "In a pivotal moment during Elon Musk&#x27;s legal proceedings against OpenAI, Greg Brockman, OpenAI&#x27;s president, provided testimony that underscored internal tensions within the organization. Brockman&#x27;s journal, presented as evidence, has emerged as a critical element in the case, revealing insights into OpenAI&#x27;s decision-making processes. The unusual sequence of cross-examination followed by direct examination highlighted Brockman&#x27;s significant role and potential conflicts within OpenAI. This trial could have far-reaching implications for AI governance and transparency, especially concerning how AI organizations manage internal dissent and strategic decisions. Stakeholders in AI development and policy should pay close attention to the trial&#x27;s outcomes.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/923684/musk-brockman-altman-openai-trial",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Image AI Models Boost App Downloads—Revenue Growth Lags",
-            "title": "Visual AI Models Drive App Downloads but Struggle with Revenue Conversion",
-            "content": "Recent findings from Appfigures reveal that the launch of image-based AI models significantly boosts app downloads, achieving a 6.5-fold increase compared to chatbot upgrades. Despite this surge in user acquisition, these visual models often fail to convert the increased downloads into substantial revenue. This trend suggests a gap between user interest and monetization strategies, posing a challenge for developers seeking to capitalize on AI-driven app enhancements. As visual AI continues to evolve, developers and tech leaders must explore innovative monetization approaches to bridge this gap and sustain growth. Understanding user engagement and refining business models will be crucial for leveraging AI&#x27;s full potential in the app market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "AGI Arms Race Concerns Raised in OpenAI Trial Testimony",
-            "title": "Stuart Russell Warns of AGI Arms Race in OpenAI Legal Proceedings",
-            "content": "Stuart Russell, a prominent AI researcher and the sole expert witness for Elon Musk in the OpenAI trial, has voiced concerns about an impending artificial general intelligence (AGI) arms race. Russell&#x27;s testimony emphasized the need for governmental oversight to prevent unchecked competition among frontier labs developing AGI technologies. His warnings highlight the potential risks associated with rapid AGI advancements, including ethical dilemmas and global security threats. This testimony underscores the importance of establishing regulatory frameworks to manage AGI development responsibly. Policymakers and AI researchers should consider these insights to mitigate risks and ensure the safe progression of AGI technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/04/elon-musks-only-expert-witness-at-the-openai-trial-fears-an-agi-arms-race/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Roomba Creator Unveils Robotic Companion—A New Era of Home AI",
-            "title": "Colin Angle Introduces Furry Robot Companion from Familiar Machines &amp; Magic",
-            "content": "Colin Angle, the visionary behind the Roomba, has launched a new venture with Familiar Machines &amp; Magic, unveiling a dog-sized robotic companion designed to enhance human interaction. Unlike traditional cleaning robots, this AI-driven companion focuses on providing emotional support and companionship, marking a shift in the role of household robots. This development reflects a growing trend towards integrating AI into everyday life in more personal and interactive ways. As AI technology continues to evolve, the introduction of such companion robots could redefine human-robot relationships, offering new opportunities for emotional engagement and assistance. Industry professionals should explore the implications of this shift for future AI applications in domestic settings.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/922947/roomba-creator-new-robot-familiar-machines-magic-ai-launch",
             "relatedResources": []
         }
     ],
