@@ -1,6 +1,19 @@
 {
   "articles": [
     {
+      "id": "entra-id-ghost-takeover-2026",
+      "title": "The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You [2026]",
+      "date": "May 6, 2026",
+      "category": "Cloud Security",
+      "badge": "VULNERABILITY",
+      "author": "Harish G",
+      "excerpt": "A built-in AI role handed attackers the keys to Microsoft tenants. Deep technical analysis of the Agent ID Administrator flaw and Service Principal Takeover.",
+      "image": "/images/articles/entra-id-ghost-takeover-2026.png",
+      "externalUrl": "articles/entra-id-ghost-takeover-2026.html",
+      "readTime": "22 min read",
+      "tags": ["Entra ID", "Cloud Security", "Privilege Escalation", "Vulnerability"]
+    },
+    {
       "id": "trellix-source-code-breach-2026",
       "title": "Trellix Source Code Breach: What Actually Happened & Why It Matters",
       "date": "May 5, 2026",

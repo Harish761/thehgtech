@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You [2026]</title>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You [2026]">
+    <meta name="twitter:description" content="A built-in AI role handed attackers the keys to Microsoft tenants. Deep technical analysis of the Agent ID Administrator flaw and Service Principal Takeover.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/entra-id-ghost-takeover-2026.png">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="TheHGTech">
+    <meta name="title" content="The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You [2026]">
+    <meta name="description"
+        content="A built-in AI role handed attackers the keys to Microsoft tenants. Deep technical analysis of the Agent ID Administrator flaw and Service Principal Takeover.">
+    <meta name="keywords"
+        content="Entra ID, Azure AD, Privilege Escalation, Agent ID Administrator, Service Principal Takeover, Cloud Security, Microsoft Security">
+    <meta name="author" content="Harish G">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/entra-id-ghost-takeover-2026.html">
+    <meta property="og:title" content="The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You [2026]">
+    <meta property="og:description"
+        content="A built-in AI role handed attackers the keys to Microsoft tenants. Deep technical analysis of the Agent ID Administrator flaw and Service Principal Takeover.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/entra-id-ghost-takeover-2026.png">
+
+    <link rel="canonical" href="https://thehgtech.com/articles/entra-id-ghost-takeover-2026.html">
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You [2026]",
+      "image": [
+        "https://thehgtech.com/images/articles/entra-id-ghost-takeover-2026.png"
+       ],
+      "datePublished": "2026-05-06T12:00:00+00:00",
+      "dateModified": "2026-05-06T12:00:00+00:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Harish G",
+          "url": "https://www.linkedin.com/in/harish-g-03704815a/"
+        }],
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        }
+      },
+      "articleSection": "Cloud Security",
+      "keywords": "Entra ID, Privilege Escalation, Agent ID Administrator, Service Principal"
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Style System -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --border: rgba(255, 255, 255, 0.1);
+            --code-bg: #111;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-content h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .technical-box {
+            background: rgba(0, 217, 255, 0.03);
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--accent-cyan);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.05);
+            border: 1px solid rgba(255, 61, 61, 0.2);
+            border-left: 5px solid var(--accent-red);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+        
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-left: 5px solid #10B981;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        pre {
+            background: #000;
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.95rem;
+            color: #fff;
+            line-height: 1.5;
+        }
+        
+        .article-content p code, .article-content li code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .article-container {
+                margin: 0;
+                padding: 1.5rem 1rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            .article-content p, .article-content ul, .article-content ol {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+    <!-- Analytics -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="article-container">
+        <a href="/articles.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <article>
+            <header class="article-header">
+                <div class="article-meta">
+                    <span><i class="far fa-calendar-alt"></i> May 6, 2026</span>
+                    <span><i class="far fa-clock"></i> 22 min read</span>
+                    <span><i class="fas fa-folder-open"></i> Cloud Security</span>
+                </div>
+                <h1>The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You</h1>
+            </header>
+
+            <img src="/images/articles/entra-id-ghost-takeover-2026.png" alt="Entra ID Ghost Takeover" class="featured-image">
+
+            <div class="article-content">
+
+                <p style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); margin-bottom: 2rem;"><em>Your cloud perimeter is secure, your MFA is enforced, and your Conditional Access policies are ironclad. But a built-in AI role you didn't even know existed just handed attackers the keys to your entire Microsoft tenant.</em></p>
+                <p>While the cybersecurity world was heavily focused on ransomware groups and third-party SaaS compromises, a catastrophic privilege escalation vulnerability sat silently inside Microsoft Entra ID. Security researchers recently disclosed that a highly specific, default administrative role could be abused to execute a "Service Principal Takeover." The most terrifying part? Microsoft patched this on the backend on April 9, 2026, meaning many security teams are entirely unaware their environments were vulnerable to total compromise.</p>
+
+                <div class="success-box" style="margin-bottom: 2rem;">
+                    <ul style="color: var(--text-secondary); margin-bottom: 0; padding-left: 1.25rem; line-height: 1.6; font-size: 0.95rem;">
+                        <li><strong>What happened:</strong> Researchers disclosed a critical privilege escalation vulnerability in Entra ID involving the "Agent ID Administrator" role.</li>
+                        <li><strong>Why it matters:</strong> Attackers could abuse this role to hijack service principals, completely bypassing MFA and gaining highly privileged API access.</li>
+                        <li><strong>Who is at risk:</strong> Any organization using Microsoft Entra ID that did not actively monitor service principal credential modifications.</li>
+                        <li><strong>What to do:</strong> The vulnerability is patched server-side, but you must audit your audit logs prior to April 9 for unauthorized credential additions to service principals.</li>
+                    </ul>
+                </div>
+
+                <h2>The Cloud Illusion: Responsibility for Phantom Roles</h2>
+                <p>One of the foundational problems with modern cloud architecture is what I call the "Cloud Illusion." We build incredibly complex RBAC (Role-Based Access Control) matrices. We review them. We audit them. But we often ignore the phantom roles—built-in directory roles provisioned by the cloud provider for specific future integrations or backend services.</p>
+                
+                <p>In Microsoft Entra ID (formerly Azure AD), one such role is the <strong>Agent ID Administrator</strong>. Originally conceptualized for managing identities associated with AI agents and automated services, this role possessed a dangerous, undocumented capability: the ability to modify the credentials of certain Service Principals.</p>
+
+                <h2>The Mechanics of a Service Principal Takeover</h2>
+                <p>To understand why this is so devastating, we have to look at how Service Principals operate. A Service Principal is essentially the local representation, or application instance, of a global application object in a single tenant. Think of it as a non-human identity—a machine user.</p>
+                
+                <p>Unlike human users, Service Principals do not use Multi-Factor Authentication (MFA). They authenticate via client secrets (passwords) or certificates. If an attacker can add a new client secret or certificate to an existing, highly-privileged Service Principal, they can authenticate as that Service Principal. This is the essence of a <strong>Service Principal Takeover</strong>.</p>
+                
+                <div class="technical-box">
+                    <h3><i class="fas fa-project-diagram"></i> The Attack Chain</h3>
+                    <ol>
+                        <li><strong>Initial Access:</strong> Attacker compromises a low-level account that happens to hold the "Agent ID Administrator" role (or escalates to it).</li>
+                        <li><strong>Target Selection:</strong> Attacker identifies a target Service Principal in the tenant that holds powerful API permissions (e.g., <code>RoleManagement.ReadWrite.Directory</code> or <code>AppRoleAssignment.ReadWrite.All</code>).</li>
+                        <li><strong>Credential Injection:</strong> Using the flawed Agent ID Administrator permissions, the attacker injects a new asymmetric certificate or client secret into the target Service Principal.</li>
+                        <li><strong>Authentication:</strong> The attacker requests a new OAuth access token from Entra ID, authenticating with the newly injected credentials.</li>
+                        <li><strong>Execution:</strong> The attacker now operates with the permissions of the hijacked Service Principal, completely invisible to standard user-based Conditional Access policies.</li>
+                    </ol>
+                </div>
+
+                <h2>The Anatomy of the Exploit (Technical Breakdown)</h2>
+                <p>Let's look at what this actually looked like on the wire. The vulnerability stemmed from an authorization bypass in the Microsoft Graph API when evaluating the permissions of the Agent ID Administrator role against the <code>addPassword</code> or <code>addKey</code> endpoints of the Service Principal object.</p>
+
+                <p>An attacker could execute a simple HTTP POST request to inject their own credential:</p>
+
+                <pre><code class="language-http">POST https://graph.microsoft.com/v1.0/servicePrincipals/{target-sp-object-id}/addPassword
+Content-Type: application/json
+Authorization: Bearer {attacker-agent-id-admin-token}
+
+{
+  "passwordCredential": {
+    "displayName": "Backup_Service_Key",
+    "endDateTime": "2027-01-01T00:00:00Z"
+  }
+}</code></pre>
+
+                <p>If successful, the Graph API would respond with the new plaintext secret. The attacker immediately pivots, requesting a token as the application:</p>
+
+                <pre><code class="language-bash">curl -X POST https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/token \
+  -d 'client_id={target-app-id}' \
+  -d 'scope=https://graph.microsoft.com/.default' \
+  -d 'client_secret={newly-generated-secret}' \
+  -d 'grant_type=client_credentials'</code></pre>
+
+                <p>With this new bearer token, the attacker has achieved total persistence. Even if you discover the compromised user account and reset their password, the attacker maintains access through the modified Service Principal.</p>
+
+                <h2>Silent Patching: The Defender's Dilemma</h2>
+                <p>Microsoft patched this vulnerability on the backend around April 9, 2026. Because Entra ID is a Managed SaaS platform, the vulnerability was remediated without any intervention required from customer security teams. This is the promised land of cloud computing, right?</p>
+                
+                <p>Not exactly. While silent patching protects you from future exploitation, it creates a massive blind spot for past compromises. If an attacker exploited this vulnerability in March 2026, the backdoor (the injected client secret) remains in your environment today, completely unaffected by Microsoft's backend API fix.</p>
+
+                <div class="warning-box">
+                    <h3><i class="fas fa-exclamation-triangle"></i> The Persistence Problem</h3>
+                    <p>Microsoft patching the API authorization flaw does <strong>NOT</strong> remove credentials that attackers already injected. If you do not actively hunt for these rogue credentials, the attacker retains persistent, highly-privileged access to your tenant.</p>
+                </div>
+
+                <h2>Hunting for Ghost Takeovers (KQL Playbook)</h2>
+                <p>As defenders, we cannot assume we are safe just because the CVE is closed. You must hunt through your Microsoft Sentinel or Entra ID Audit Logs for anomalous Service Principal credential updates prior to the patch date.</p>
+
+                <p>Here is the Kusto Query Language (KQL) query you should run immediately to identify suspicious credential modifications:</p>
+
+                <pre><code class="language-sql">// Hunt for anomalous Service Principal credential additions
+AuditLogs
+| where TimeGenerated >= ago(90d)
+| where OperationName has_any ("Update application - Certificates and secrets management", "Update service principal")
+| where Result == "success"
+// Extract the actor who made the change
+| extend ActorName = tostring(InitiatedBy.user.userPrincipalName)
+// Extract the target application/service principal
+| extend TargetResourceName = tostring(TargetResources[0].displayName)
+| extend TargetResourceType = tostring(TargetResources[0].type)
+// Filter for modifications made by users (not expected automated pipelines)
+| where ActorName != "" and ActorName !contains "pipeline" and ActorName !contains "automation"
+| project TimeGenerated, OperationName, ActorName, TargetResourceName, TargetResourceType, CorrelationId
+| sort by TimeGenerated desc</code></pre>
+
+                <p>If you see a human user—especially one that recently held the Agent ID Administrator role—adding secrets to a high-privilege application (like Microsoft Graph PowerShell, or a custom backup application), you must immediately revoke that secret and initiate an incident response protocol.</p>
+
+                <h2>The New Era of Identity Security</h2>
+                <p>The Entra ID Agent ID Administrator flaw serves as a brutal reminder: Identity is the new perimeter, and Non-Human Identities (NHIs) are the weakest link in that perimeter. Securing human users with FIDO2 hardware keys is excellent, but if a threat actor can pivot into a Service Principal, your human defenses are irrelevant.</p>
+
+                <p>Moving forward, organizations must implement continuous monitoring of Service Principal credentials, alert on high-privilege role assignments, and adopt a Zero Trust posture not just for employees, but for the automated agents and machine identities that run the modern cloud.</p>
+
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 3rem; font-style: italic;">Disclaimer: This analysis is based on vulnerability disclosures and security research verified as of May 2026. The vulnerability has been patched by Microsoft, but proactive hunting is strongly recommended.</p>
+
+            </div>
+
+            <div class="article-footer">
+                <p><strong>Author:</strong> Harish G</p>
+                <p><strong>Published:</strong> May 6, 2026</p>
+                <p><strong>Last Updated:</strong> May 6, 2026</p>
+            </div>
+        </article>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+
+    <script src="/interaction-bar.js?v=20260220"></script>
+</body>
+</html>

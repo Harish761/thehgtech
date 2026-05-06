@@ -1,0 +1,92 @@
+{
+  "delve-ai-compliance-scandal-2026.html": {
+    "title": "Delve Scandal Deep Dive: The $300M Death of Checkbox Security | TheHGTech [2026]",
+    "description": "Technical analysis of the Delve AI compliance scandal. How one startup fabricated 493 audit reports and why this breaks the trust of modern GRC.",
+    "h1": "The Delve Scandal: Why 493 Fabricated Audit Reports Just Killed \"Checkbox Security\"",
+    "paragraphs": [
+      "I have been tracking the chatter around Delve since early last week. Initially, it sounded like a typical disgruntled ex-employee post. But over the last 72 hours, the evidence compiled by researchers has moved from \"allegation\" to \"compelling case.\" In my view, this is potentially the Theranos moment for the GRC (Governance, Risk, and Compliance) industry.",
+      "As I noted in our recent deep dive, \"The Illusion of Checkbox Security,\" our industry has a fatal flaw: we have prioritized the appearance of security (compliance) over the reality of security (practice)."
+    ]
+  },
+  "ai-soc-analyst-future-2026.html": {
+    "title": "The Future of L1 SOC Analysts After AI: Who Watches the Watchers? | TheHGTech [2026]",
+    "description": "AI is automating Tier 1 SOC alert triage. But what happens when AI hallucinations miss a disguised threat? We examine the real trade-offs, verified data, and what L1 analysts should do next.",
+    "h1": "The Future of L1 SOC Analysts After AI: Who Watches the Watchers?\n                ",
+    "paragraphs": [
+      "There is a saying that has been repeated so often in cybersecurity that it has become wallpaper:\n                    \"The defender has to be right 100% of the time. The attacker only has to be right\n                        once.\"\n",
+      "This asymmetry has defined security operations since the first firewall was deployed. It is the\n                    reason SOC analysts exist \u2014 humans who sit in front of dashboards, watching alerts scroll by, making\n                    judgment calls at 3 AM about whether a particular login event is a legitimate employee working late\n                    or a threat actor using stolen credentials from an infostealer log."
+    ]
+  },
+  "semiconductor-ransomware-chips-act-2026.html": {
+    "title": "Silicon Under Siege: The Semiconductor Ransomware Crisis the CHIPS Act Ignores | TheHGTech [2026]",
+    "description": "Ransomware attacks on semiconductor companies surged 600% since 2022. With the CHIPS Act investing $52.7B in chip manufacturing, we map the cybersecurity gap that leaves the industry exposed.",
+    "h1": "Silicon Under Siege: The Semiconductor Ransomware Crisis the CHIPS Act Ignores\n                ",
+    "paragraphs": [
+      "There is a peculiar kind of negligence unique to governments that spend lavishly on building things\n                    while budgeting nothing to protect them. The United States is in the middle of the most ambitious\n                    industrial policy experiment since the Apollo program \u2014 a $52.7 billion bet, via the CHIPS and Science Act of 2022, to repatriate semiconductor\n                    manufacturing from East Asia and secure a domestic supply of the silicon that runs every piece of\n                    critical infrastructure in the country.",
+      "Meanwhile, ransomware operators have discovered that the semiconductor industry is a spectacularly\n                    profitable target. According to a CloudSEK threat report published via CSO Online, titled\n                    \"Silicon Under Siege: The Cyber War Reshaping the Global Semiconductor Industry,\"\n                    cyberattacks targeting the global semiconductor sector have surged over 600% since\n                        2022. Confirmed ransomware losses in the industry have exceeded $1.05 billion\n                        since 2018.\n                "
+    ]
+  },
+  "totalenergies-data-breach-2026.html": {
+    "title": "TotalEnergies Breach: 183 Million Customer Records Allegedly Stolen | TheHGTech [2026]",
+    "description": "French energy giant TotalEnergies targeted in massive data breach. Attackers claim 183 million customer records stolen including bank accounts, emails, and phone numbers. Full analysis and protection guidance.",
+    "h1": "TotalEnergies Breach: 183 Million Customer Records Allegedly Stolen from French Energy Giant",
+    "paragraphs": []
+  },
+  "india-ai-summit-2026-wrapper-epidemic.html": {
+    "title": "The Wrapper Epidemic: Behind the Curtain of the India AI Summit 2026 | TheHGTech [2026]",
+    "description": "Uncover the 'wrapper epidemic' at the India AI Summit 2026, from hardware fiascos like Galgotias' robot to genuine innovations and sovereign tech.",
+    "h1": "The Wrapper Epidemic: Behind the Curtain of the India AI Summit 2026",
+    "paragraphs": [
+      "Disclaimer: The following investigative analysis is constructed from verified news media,\n                        technical reports, and public statements emerging from the India AI Impact Summit 2026. While\n                        the author did not physically attend the expo floors, this piece relies on aggregated,\n                        verifiable source material to provide an independent assessment of the events.",
+      "NEW DELHI \u2014 The Bharat Mandapam, a colossal architectural marvel built for the G20,\n                    was pulsing with the electric hum of the future. From February 16th through the 21st, it hosted the\n                    India AI Impact Summit 2026. Billed heavily by the IndiaAI Mission and the Ministry\n                    of Electronics & IT, the goal was audacious but vital: to cement the Global South\u2019s definitive voice\n                    in the artificial intelligence arms race.\n                "
+    ]
+  },
+  "axios-supply-chain-attack-2026.html": {
+    "title": "The Axios npm Supply Chain Attack: Full Technical Breakdown | TheHGTech [2026]",
+    "description": "Technical analysis of the Axios npm supply chain attack. Full breakdown, detection IOCs, and production hardening guide.",
+    "h1": "The Axios npm Supply Chain Attack: Full Technical Breakdown, Detection IOCs, and Production Hardening Guide",
+    "paragraphs": [
+      "There are certain foundational libraries in software engineering so universally adopted that they become effectively invisible. They are the quiet, unassuming workhorses that carry the internet on their backs. If your engineering teams built, deployed, tested, or scaled a Node.js or frontend application in the last 48 hours, there is a statistical certainty your infrastructure heavily relied on one of them. Unfortunately, there is also a statistical certainty your infrastructure briefly hosted a state-grade Remote Access Trojan (RAT).",
+      "On the evening of March 30, 2026, the heartbeat of the modern web\u2014the axios package\u2014suffered a catastrophic, globally distributed supply chain compromise. Averaging well over 100 million weekly downloads, Axios manages network requests in nearly every enterprise dashboard, backend microservice, and heavily automated CI/CD pipeline on the planet. I was tracking the incident as it unfolded in real-time. Watching the chaos erupt across Reddit threads in r/netsec and r/cybersecurity felt remarkably different from the usual, easily contained crypto-miner panics. Security engineers were frantically comparing anomalous network logs, incident responders were sharing bizarre, memory-resident IOCs, and a grim consensus quickly materialized: this was not a script-kiddie smash-and-grab. This was a highly resilient, meticulously targeted corporate espionage operation that had just walked through the front door of the world's secure facilities."
+    ]
+  },
+  "kimwolf-botnet-android-ddos-2025.html": {
+    "title": "Kimwolf Botnet Hijacks 1.8 Million Android Devices for DDoS Attacks | December 2025 | TheHGTech [2026]",
+    "description": "New Kimwolf botnet infects 1.8 million Android TVs, tablets, and set-top boxes. Launched 1.7 billion DDoS commands in 3 days. Major IoT security threat.",
+    "h1": "Kimwolf Botnet Hijacks 1.8 Million Android Devices",
+    "paragraphs": []
+  },
+  "prompt-injection-physical-ai-2026.html": {
+    "title": "Prompt Injection Goes Physical: Hacking Self-Driving Cars and Drones with Text [2026] | TheHGTech",
+    "description": "UC Santa Cruz researchers reveal CHAI attacks: text in the physical environment can hijack autonomous vehicles, drones, and robots. Deep dive into environmental indirect prompt injection.",
+    "h1": "Prompt Injection Goes Physical: Hacking Self-Driving Cars and Drones with Text",
+    "paragraphs": []
+  },
+  "claude-mythos-security-analysis-2026.html": {
+    "title": "Claude Mythos Zero-Day AI: Reality Check & Defense Strategy",
+    "description": "A research-grade technical analysis of Anthropic's Claude Mythos (Project Glasswing). We separate the hype from the reality of autonomous AI vulnerability discovery.",
+    "h1": "Can Claude Mythos Autonomously Exploit Zero-Days? A Security Analysis",
+    "paragraphs": [
+      "Can AI really discover and exploit zero-days autonomously? With the unveiling of Anthropic's Claude Mythos, the security industry is asking if the barrier to elite exploitation has finally fallen\u2014and what this means for enterprise defenders.",
+      "If you read the headlines this week, you might believe the era of human-driven cybersecurity is over. On April 7, 2026, Anthropic formally unveiled Claude Mythos\u2014an advanced language model built, from the ground up, to autonomously find, analyze, and exploit software vulnerabilities. "
+    ]
+  },
+  "n8n-ni8mare-critical-vulnerability-2026.html": {
+    "title": "Why 100K Servers Are at Risk: The Ni8mare n8n Exploit Explained | TheHGTech [2026]",
+    "description": "\u26a0\ufe0f Are your automation workflows exposing you? Unauthenticated hackers can take over n8n servers via CVSS 10.0 flaws. Here is the technical breakdown and patch guide.",
+    "h1": "Ni8mare: Two CVSS 10.0 Vulnerabilities Put 100,000 n8n Automation Servers at Risk",
+    "paragraphs": []
+  },
+  "lastpass-vault-cracks-2026.html": {
+    "title": "LastPass Vault Cracks Continue: 2022 Breach Still Draining Crypto Wallets in 2026 | TheHGTech [2026]",
+    "description": "The 2022 LastPass breach is still claiming victims in 2026. Attackers cracking encrypted vaults to steal cryptocurrency. $200M+ in losses. What you need to know.",
+    "h1": "LastPass Vault Cracks Continue: The 2022 Breach Still Draining Crypto Wallets in 2026",
+    "paragraphs": []
+  },
+  "oauth-worms-saas-attack-2026.html": {
+    "title": "OAuth Worms: The Silent SaaS-to-SaaS Attack Vector Nobody's Watching [2026] | TheHGTech",
+    "description": "OAuth worms spread across M365, Google Workspace, Slack, and Salesforce using trusted app authorizations. Deep technical analysis of consent-based attacks that bypass MFA.",
+    "h1": "OAuth Worms: The Silent SaaS-to-SaaS Attack Vector Nobody's Watching",
+    "paragraphs": []
+  }
+}

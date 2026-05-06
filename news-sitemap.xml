@@ -4,6 +4,20 @@
 
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
 
+  <!-- May 6, 2026 - Entra ID Ghost Takeover -->
+  <url>
+    <loc>https://thehgtech.com/articles/entra-id-ghost-takeover-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-06T12:00:00+05:30</news:publication_date>
+      <news:title>The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You [2026]</news:title>
+      <news:keywords>Entra ID, Privilege Escalation, Agent ID Administrator, Service Principal</news:keywords>
+    </news:news>
+  </url>
+
   <!-- May 5, 2026 - Trellix Source Code Breach -->
   <url>
     <loc>https://thehgtech.com/articles/trellix-source-code-breach-2026.html</loc>
