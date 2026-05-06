@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1412",
+      "incident_id": 1412,
+      "title": "CodeWall's Autonomous Agent Reportedly Obtained Unauthorized Access to McKinsey's Lilli AI Platform ",
+      "date": "2026-05-05",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1383",
       "incident_id": 1383,
       "title": "User Reportedly Developed Emotional Dependence on Customized ChatGPT 'Boyfriend,' Citing Grief After",
@@ -625,14 +633,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1412",
-      "incident_id": 1412,
-      "title": "CodeWall's Autonomous Agent Reportedly Obtained Unauthorized Access to McKinsey\u2019s Lilli AI Platform ",
-      "date": "2026-03-14",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1404",
       "incident_id": 1404,
       "title": "Purported AI-Generated Nude Images Reportedly Used to Extort Wichita Man in Kansas",
@@ -1015,20 +1015,12 @@
       "date": "2026-02-07",
       "category": "data_leak",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-824",
-      "incident_id": 824,
-      "title": "Purported Deepfake Allegedly Misattributes Claims to Former Student in Attack on Vice-Presidential C",
-      "date": "2026-02-04",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 128,
-    "last7Days": 9,
-    "last30Days": 38
+    "total": 127,
+    "last7Days": 10,
+    "last30Days": 34
   },
-  "lastUpdated": "2026-05-05T11:56:25.090619+05:30"
+  "lastUpdated": "2026-05-06T15:56:06.935187+05:30"
 }

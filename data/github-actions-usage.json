@@ -5974,6 +5974,55 @@
       "durationSeconds": 180,
       "durationMinutes": 3.0,
       "status": "success"
+    },
+    {
+      "timestamp": "2026-05-05T10:10:45.632322",
+      "workflow": "threat-intel",
+      "durationSeconds": 180,
+      "durationMinutes": 3.0,
+      "status": "success"
+    },
+    {
+      "timestamp": "2026-05-05T17:46:20.315567",
+      "workflow": "threat-intel",
+      "durationSeconds": 180,
+      "durationMinutes": 3.0,
+      "status": "success"
+    },
+    {
+      "timestamp": "2026-05-05T19:58:15.741065",
+      "workflow": "threat-intel",
+      "durationSeconds": 180,
+      "durationMinutes": 3.0,
+      "status": "success"
+    },
+    {
+      "timestamp": "2026-05-05T21:13:22.027836",
+      "workflow": "threat-intel",
+      "durationSeconds": 180,
+      "durationMinutes": 3.0,
+      "status": "success"
+    },
+    {
+      "timestamp": "2026-05-06T03:59:20.425985",
+      "workflow": "threat-intel",
+      "durationSeconds": 180,
+      "durationMinutes": 3.0,
+      "status": "success"
+    },
+    {
+      "timestamp": "2026-05-06T06:41:03.854441",
+      "workflow": "threat-intel",
+      "durationSeconds": 180,
+      "durationMinutes": 3.0,
+      "status": "success"
+    },
+    {
+      "timestamp": "2026-05-06T10:26:56.211501",
+      "workflow": "threat-intel",
+      "durationSeconds": 180,
+      "durationMinutes": 3.0,
+      "status": "success"
     }
   ],
   "dailyStats": {
@@ -7208,12 +7257,22 @@
       }
     },
     "2026-05-05": {
-      "totalMinutes": 6.0,
-      "runCount": 2,
+      "totalMinutes": 18.0,
+      "runCount": 6,
       "workflows": {
         "threat-intel": {
-          "runs": 2,
-          "minutes": 6.0
+          "runs": 6,
+          "minutes": 18.0
+        }
+      }
+    },
+    "2026-05-06": {
+      "totalMinutes": 9.0,
+      "runCount": 3,
+      "workflows": {
+        "threat-intel": {
+          "runs": 3,
+          "minutes": 9.0
         }
       }
     }
