@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 05 2026",
+            "headline": "Apache HTTP/2 Flaw—RCE Risk for Web Servers",
+            "title": "Critical Apache HTTP/2 Vulnerability CVE-2026-23918 Allows Potential RCE",
+            "content": "The Apache Software Foundation has issued patches for a critical vulnerability in the Apache HTTP Server, identified as CVE-2026-23918, with a CVSS score of 8.8. This flaw could enable remote code execution (RCE) on affected servers, posing a significant threat to web applications relying on Apache HTTP/2. The vulnerability affects versions prior to the latest patch and could be exploited by attackers to disrupt services or gain unauthorized access. This development underscores the importance of timely updates in maintaining server security. Administrators are urged to apply the latest security updates immediately to mitigate potential risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/critical-apache-http2-flaw-cve-2026.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "DAEMON Tools Supply Chain Attack—Malware in Installers",
+            "title": "DAEMON Tools Installers Compromised in Supply Chain Attack",
+            "content": "A supply chain attack has compromised DAEMON Tools software installers, embedding them with malware, as reported by Kaspersky. The malicious installers, distributed from DAEMON Tools&#x27; official website, were signed with legitimate digital certificates, making detection challenging. This breach highlights the vulnerabilities in software distribution channels and the risks of trusted sources being exploited. Users who downloaded DAEMON Tools recently should verify their installations and consider using security tools to detect and remove potential malware. This incident serves as a reminder of the growing sophistication of supply chain attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/daemon-tools-supply-chain-attack.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "EOL Software—A Hidden Threat in CVE Feeds",
+            "title": "End-of-Life Software Creates Blind Spots in CVE Feeds and SCA Tools",
+            "content": "HeroDevs has identified a critical oversight in software composition analysis (SCA) tools: the failure to account for end-of-life (EOL) software in CVE feeds. This oversight leaves organizations vulnerable to unpatched vulnerabilities in outdated open-source components. As EOL software is no longer maintained, it can harbor severe security risks that are not flagged by standard scanning tools. HeroDevs offers a free EOL scan to help organizations identify and address these hidden threats. This revelation emphasizes the need for comprehensive vulnerability management strategies that include EOL software assessments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-eol-blind-spot-in-your-cve-feed-what-sca-tools-miss/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "Hacking AI—Joey Melo&#x27;s Insights on AI Vulnerabilities",
+            "title": "AI Red Team Specialist Joey Melo Discusses Hacking AI Guardrails",
+            "content": "Joey Melo, an AI red team specialist, shares his expertise on exploiting vulnerabilities in AI systems through techniques like jailbreaking and data poisoning. These methods allow attackers to bypass AI guardrails, potentially leading to unintended model behaviors. Melo&#x27;s insights are crucial for developers aiming to strengthen machine learning models against such manipulations. As AI systems become more integrated into critical applications, understanding and mitigating these vulnerabilities is essential. Developers are encouraged to adopt robust security measures and continuous testing to protect AI models from sophisticated attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hacker-conversations-joey-melo-on-hacking-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "Vimeo Breach—119,000 Users&#x27; Data Exposed",
+            "title": "ShinyHunters Gang Hacks Vimeo, Exposing 119,000 Users&#x27; Personal Data",
+            "content": "The ShinyHunters extortion group has breached Vimeo, compromising the personal information of over 119,000 users. The data breach, confirmed by Have I Been Pwned, includes sensitive details that could be exploited for identity theft or phishing attacks. This incident highlights the persistent threat posed by cybercriminal groups targeting online platforms. Affected users should monitor their accounts for suspicious activity and consider changing passwords as a precaution. Vimeo&#x27;s breach underscores the need for robust security measures and user awareness to mitigate the impact of such attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/vimeo-data-breach-exposes-personal-information-of-119-000-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "Bleeding Llama Bug—300,000 Deployments at Risk",
+            "title": "Critical Bleeding Llama Vulnerability Exposes 300,000 Ollama Deployments",
+            "content": "A critical vulnerability, dubbed Bleeding Llama, has been discovered in Ollama deployments, affecting approximately 300,000 instances. This heap out-of-bounds read issue can be exploited remotely without authentication, potentially leading to information theft. The widespread nature of this vulnerability poses a significant risk to organizations using Ollama for their operations. Administrators are advised to apply available patches immediately and review their security configurations to prevent unauthorized access. This incident highlights the importance of proactive vulnerability management and timely patching in safeguarding sensitive data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-bug-could-expose-300000-ollama-deployments-to-information-theft/",
+            "relatedResources": []
+        },
+        {
             "date": "May 04 2026",
             "headline": "Weaver E-cology Exploit—Critical Bug CVE-2026-22679 Abused",
             "title": "Critical Vulnerability in Weaver E-cology Exploited Since March",
@@ -83,45 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/over-40000-servers-compromised-in-ongoing-cpanel-exploitation/",
             "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Instructure Breach—Hackers Leak Student Data",
-            "title": "Edtech Firm Instructure Discloses Data Breach Amid Hacker Leak Threats",
-            "content": "Instructure, a prominent edtech company, has disclosed a data breach following threats from hackers to leak stolen information. The breach compromised names, email addresses, student ID numbers, and user messages, affecting a significant portion of its user base. The company is working with cybersecurity experts to investigate the breach and secure its systems. Users are advised to monitor their accounts for suspicious activity and change passwords as a precaution. This incident highlights the vulnerabilities in educational technology platforms and the importance of robust security measures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/edtech-firm-instructure-discloses-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 03 2026",
-            "headline": "Instructure Data Breach—ShinyHunters Claims Responsibility",
-            "title": "Instructure Confirms Data Breach Amid ShinyHunters Extortion Claims",
-            "content": "Instructure, a leader in educational technology, has confirmed a data breach following claims by the ShinyHunters extortion group. The breach reportedly involved the theft of sensitive data, though specifics on the data types or volume remain undisclosed. ShinyHunters, known for targeting high-profile organizations, has previously been linked to several data theft incidents. The breach underscores ongoing vulnerabilities in the education sector&#x27;s cybersecurity defenses. Instructure is urging users to monitor their accounts for suspicious activity and change passwords as a precautionary measure. This incident highlights the persistent threat of extortion gangs exploiting digital infrastructures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/instructure-confirms-data-breach-shinyhunters-claims-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 03 2026",
-            "headline": "US Military Taps AI Giants for Classified System Enhancements",
-            "title": "US Military Partners with Tech Giants to Integrate AI into Classified Systems",
-            "content": "The US Department of Defense has announced partnerships with seven major tech companies, including Google, Microsoft, and Amazon Web Services, to integrate artificial intelligence into its classified systems. This initiative aims to enhance decision-making capabilities in complex operational environments. The collaboration involves leveraging AI technologies from Nvidia, OpenAI, Reflection, and SpaceX, marking a significant step in military modernization efforts. This move reflects a broader trend of integrating advanced AI solutions into national defense strategies. The partnerships are expected to improve operational efficiency and strategic planning, although specific deployment timelines remain undisclosed.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-military-reaches-deals-with-7-tech-companies-to-use-their-ai-on-classified-systems/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 03 2026",
-            "headline": "Linux Root Access Bug Exploited—CISA Adds to KEV List",
-            "title": "CISA Flags Actively Exploited Linux Vulnerability CVE-2026-31431",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-31431, a critical Linux vulnerability, to its Known Exploited Vulnerabilities (KEV) catalog. This flaw, affecting multiple Linux distributions, allows attackers to gain root access, posing a significant threat to system integrity. Evidence of active exploitation in the wild has prompted CISA&#x27;s action, urging administrators to prioritize patching. The vulnerability underscores the persistent targeting of Linux systems, which are integral to enterprise and cloud environments. Security teams should review their systems for exposure and apply available patches immediately to mitigate potential risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 05 2026",
+            "headline": "Google, Microsoft, xAI Open AI Models to U.S. Scrutiny",
+            "title": "Tech Giants Agree to U.S. Government Review of AI Models Before Release",
+            "content": "Google DeepMind, Microsoft, and Elon Musk&#x27;s xAI have agreed to allow the U.S. government to review their AI models before public release. This collaboration with the Commerce Department&#x27;s Center for AI Standards and Innovation (CAISI) aims to ensure AI safety and compliance with emerging regulations. The initiative reflects growing concerns over AI&#x27;s potential risks and the need for oversight in AI development. This move could set a precedent for other AI developers and impact the pace of AI innovation. Industry professionals should monitor regulatory developments and prepare for potential compliance requirements.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/924017/google-microsoft-xai-government-review",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "ElevenLabs Secures $500M ARR—Attracts BlackRock, Jamie Foxx, Eva Longoria",
+            "title": "ElevenLabs Expands with New Investors and $500M Annual Recurring Revenue",
+            "content": "Voice AI company ElevenLabs has announced new investments from BlackRock, Jamie Foxx, and Eva Longoria, alongside reaching a $500 million annual recurring revenue milestone. This funding will support ElevenLabs&#x27; expansion into enterprise markets as voice AI becomes increasingly integral to user interfaces. The company&#x27;s growth underscores the rising demand for sophisticated voice technologies in various sectors. Industry stakeholders should consider the implications of voice AI advancements on customer interaction strategies and competitive positioning. ElevenLabs&#x27; success highlights the potential for AI-driven interfaces to transform business operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-eva-longoria-as-new-investors/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "OpenClaw Exploits Repos—No Scanner Detects AI Agent Backdoor",
+            "title": "OpenClaw Highlights Vulnerability in Open-Source Repositories with AI Backdoor",
+            "content": "Researchers at the University of Hong Kong&#x27;s Data Intelligence Lab have revealed a critical vulnerability in open-source repositories through a tool called CLI-Anything. This tool can transform any repository into an AI agent backdoor with a single command, bypassing existing supply-chain scanners. The OpenClaw exploit demonstrates a significant gap in current security measures, potentially affecting countless open-source projects. Developers and security professionals should prioritize enhancing supply-chain security and explore new detection methodologies to mitigate such risks. This discovery emphasizes the urgent need for robust security frameworks in open-source environments.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/one-command-open-source-repo-ai-agent-backdoor-openclaw-supply-chain-scanner",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "SAP Invests $1.16B in German AI Startup Prior Labs",
+            "title": "SAP Acquires Prior Labs and Embraces Nvidia&#x27;s NemoClaw for AI Innovation",
+            "content": "SAP has announced a $1.16 billion investment to acquire German AI startup Prior Labs, aiming to bolster its AI capabilities. The acquisition includes a strategic decision to limit customer AI agent usage to select platforms like Nvidia&#x27;s NemoClaw. This move reflects SAP&#x27;s commitment to integrating cutting-edge AI technologies while maintaining control over AI deployment. The investment highlights the growing trend of major tech companies investing in AI startups to accelerate innovation. SAP customers should anticipate enhanced AI solutions and prepare for potential changes in AI integration strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/05/sap-bets-1-16b-on-18-month-old-german-ai-lab-and-says-yes-to-nemoclaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "Altara Raises $7M to Accelerate Physical Sciences R&amp;D",
+            "title": "Altara Secures Funding to Unify Data and Speed Up Scientific Research",
+            "content": "Altara has raised $7 million to develop AI solutions aimed at bridging data gaps in physical sciences research. The company&#x27;s technology focuses on diagnosing failures and accelerating R&amp;D by integrating data from disparate sources like spreadsheets and legacy systems. This funding will enable Altara to enhance its platform and address the inefficiencies plaguing scientific research. Researchers and institutions should explore Altara&#x27;s solutions to improve data management and streamline research processes. The investment underscores the critical role of AI in transforming traditional scientific methodologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/05/altara-secures-7m-to-bridge-the-data-gap-thats-slowing-down-physical-sciences/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 05 2026",
+            "headline": "Google Home&#x27;s Gemini 3.1 Boosts Smart Assistant Capabilities",
+            "title": "Google Home&#x27;s Gemini AI Update Enhances Multi-Step Task Handling",
+            "content": "Google has updated its smart home assistant, Gemini, to version 3.1, significantly improving its ability to handle complex, multi-step tasks. This upgrade allows users to combine multiple requests into a single command, enhancing the efficiency and functionality of Google Home devices. The update reflects Google&#x27;s ongoing commitment to advancing AI capabilities in consumer products. Users should update their devices to leverage these new features and improve their smart home experience. This development highlights the growing sophistication of AI in everyday technology and its impact on user convenience.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/924755/google-home-gemini-3-1-upgrade",
+            "relatedResources": []
+        },
         {
             "date": "May 04 2026",
             "headline": "Amex&#x27;s AI Agents Revolutionize Transactions—But Trust Issues Loom",
@@ -174,42 +246,6 @@ const websiteContent = {
             "content": "Colin Angle, the visionary behind the Roomba, has launched a new venture with Familiar Machines &amp; Magic, unveiling a dog-sized robotic companion designed to enhance human interaction. Unlike traditional cleaning robots, this AI-driven companion focuses on providing emotional support and companionship, marking a shift in the role of household robots. This development reflects a growing trend towards integrating AI into everyday life in more personal and interactive ways. As AI technology continues to evolve, the introduction of such companion robots could redefine human-robot relationships, offering new opportunities for emotional engagement and assistance. Industry professionals should explore the implications of this shift for future AI applications in domestic settings.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/922947/roomba-creator-new-robot-familiar-machines-magic-ai-launch",
-            "relatedResources": []
-        },
-        {
-            "date": "May 03 2026",
-            "headline": "&quot;This is Fine&quot; Artist Claims AI Art Theft",
-            "title": "&quot;This is Fine&quot; Creator Accuses AI Startup of Art Misappropriation",
-            "content": "The creator of the iconic &quot;This is Fine&quot; meme has accused Artisan, an AI startup, of using his artwork without permission in their advertising campaign. Artisan&#x27;s billboards, which controversially urge businesses to &quot;stop hiring humans,&quot; allegedly feature the artist&#x27;s work without proper attribution or compensation. This incident highlights ongoing tensions between artists and AI companies over intellectual property rights in the digital age. Artists and content creators should be vigilant about protecting their work from unauthorized use by AI technologies. Legal experts may need to address these emerging challenges to ensure fair use and compensation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/03/this-is-fine-creator-says-ai-startup-stole-his-art/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 03 2026",
-            "headline": "AI Outperforms Doctors in ER Diagnoses—Harvard Study",
-            "title": "Harvard Study Finds AI More Accurate Than Doctors in ER Diagnoses",
-            "content": "A Harvard study has revealed that large language models can outperform human doctors in diagnosing emergency room cases. The research compared AI-generated diagnoses with those of two human doctors, finding that at least one AI model provided more accurate assessments. This finding underscores the potential of AI to enhance medical diagnostics and improve patient outcomes. However, it also raises questions about the role of human oversight in AI-driven healthcare solutions. Medical professionals should consider integrating AI tools to augment diagnostic accuracy while maintaining critical oversight to ensure patient safety.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 03 2026",
-            "headline": "DualShot Recorder Tops App Store in 12 Hours",
-            "title": "DualShot Recorder&#x27;s Rapid Rise: From Squirrel Dad to App Store Leader",
-            "content": "DualShot Recorder has become an overnight sensation, reaching the top of the App Store&#x27;s paid apps list within just 12 hours of its release. The app&#x27;s success story is as unconventional as its creator, known affectionately as the internet&#x27;s &quot;squirrel dad.&quot; This rapid ascent underscores the growing demand for innovative camera applications that offer unique features. The app&#x27;s popularity highlights a trend towards user-friendly, creative tools in digital media. Developers are advised to focus on niche markets and unique user experiences to capture similar success.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/921690/dualshot-recorder-iphone-camera-app-derrick-downey-jr",
-            "relatedResources": []
-        },
-        {
-            "date": "May 03 2026",
-            "headline": "AI Music Floods Streaming—Industry Faces New Challenges",
-            "title": "The Surge of AI-Generated Music on Streaming Platforms",
-            "content": "AI-generated music is increasingly populating streaming services, raising questions about its impact on the music industry. This trend is driven by advancements in AI capabilities that allow for the creation of complex musical compositions without human intervention. While some listeners embrace the novelty, others question the authenticity and artistic value of AI-produced tracks. The influx of AI music presents both opportunities and challenges for artists and record labels, who must adapt to a rapidly changing landscape. Industry stakeholders should consider strategies for integrating AI music while preserving traditional artistic integrity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/921599/ai-music-is-flooding-streaming-services-but-who-wants-it",
             "relatedResources": []
         }
     ],
