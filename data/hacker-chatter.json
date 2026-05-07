@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-05-07T05:45:40.310810",
-  "total_incidents": 27911,
+  "last_updated": "2026-05-07T16:22:08.192564",
+  "total_incidents": 27918,
   "incidents": [
+    {
+      "id": "lockbit5_rjrgleanergroup.com",
+      "victim_name": "rjrgleanergroup.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-05-07T16:14:18.999691+00:00",
+      "industry": "Business Services",
+      "website": "rjrgleanergroup.com",
+      "claim": "RJRGLEANER Communications Group is a leading media company based in Jamaica, with operations extendi...",
+      "screenshot": "https://images.ransomware.live/victims/8d1fa86b2c213c5fef63e0871cd8f61a.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/a09ebd7fbe877fbd5ecdcf20fffb2796",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_de.yangming.com",
+      "victim_name": "de.yangming.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-05-07T16:13:55.879377+00:00",
+      "industry": "Transportation/Logistics",
+      "website": "de.yangming.com",
+      "claim": "Yang Ming Marine Transport Corporation is a major Taiwanese shipping line whose German division man...",
+      "screenshot": "https://images.ransomware.live/victims/621a01707737df32b64603c907ef595e.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/3c25660594bf7b465b2faf955d4dcd54",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_anser-coding.com",
+      "victim_name": "anser-coding.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-05-07T16:13:32.598289+00:00",
+      "industry": "Technology",
+      "website": "anser-coding.com",
+      "claim": "FOUNDED IN 1986 ANSER is one of the world leading solution provider of product coding & marking equ...",
+      "screenshot": "https://images.ransomware.live/victims/011f307eb8ec1b1dd820ef51f13c3cc0.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/4eee4fd14ca89be01260b5705ce3627c",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_rhactushotel.com",
+      "victim_name": "rhactushotel.com",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-05-07T16:13:07.098896+00:00",
+      "industry": "Hospitality and Tourism",
+      "website": "rhactushotel.com",
+      "claim": "Rhactus Hotel is a premier accommodation provider located in El-Alamein, Egypt, offering a variety o...",
+      "screenshot": "https://images.ransomware.live/victims/c163c1c5ac39d37ad545b60b5bb46af7.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/d31502c73b53b08c83038991b9ed763b",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_elia_law_firm",
+      "victim_name": "Elia Law Firm",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-07T15:20:16.644932+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "Elia Law Firm APC is a top San Diego law firm specializing in personal injury, civil litigation\n, and business law. They are dedicated to fighting for their clients' rights and maximizing rec\novery for physical, mental, and financial losses.\n\nWe will upload 100gb of corporate data soon. Detailed employee personal information (passport, \nDLs, SSN, death and birth certificates, financial information, payment details and so on), lots\nof legal files (court hearings, police reports and so on), financials, etc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_jacobs_doland_beer",
+      "victim_name": "Jacobs Doland Beer",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-07T14:50:34.014508+00:00",
+      "industry": "Consumer Services",
+      "website": "",
+      "claim": "Jacobs Doland Beer (JDB) is a specialized foodservice design firm based in New York City, focus\ning on foodservice consulting for various projects across the country. The firm has worked on n\notable projects such as Eleven Madison Park, Mutual of America, and several food halls in New Y\nork City.\n\nWe will upload 170gb of corporate data soon. Employee personal information, client documents (D\nOB, name, address and so on), financials, credit card statements, contracts and agreements, NDA\ns, internal confidential files and so on.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_grau_gmbh",
+      "victim_name": "Grau GmbH",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-07T14:50:19.841276+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Grau GmbH is a Retail, and Furniture and Home Furnishings Manufacturing company located in Hamb\nurg.\n\nWe will upload 19gb of corporate data soon. Employee personal information (German passports and\nother information), projects, financials, client data and so on.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "m3rx_pvdd.ca",
       "victim_name": "pvdd.ca",
