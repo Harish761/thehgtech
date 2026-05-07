@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1339",
+      "incident_id": 1339,
+      "title": "Purportedly AI-Cloned Voice Allegedly Used to Defraud Play School Owner of \u20b997,500 (~$1,080 USD) in ",
+      "date": "2026-05-07",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1477",
       "incident_id": 1477,
       "title": "Scammers Reportedly Used AI-Generated Image of Missing Puppy Hazel to Solicit Fraudulent Vet Payment",
@@ -1050,9 +1058,9 @@
     }
   ],
   "stats": {
-    "total": 131,
-    "last7Days": 12,
-    "last30Days": 36
+    "total": 132,
+    "last7Days": 13,
+    "last30Days": 37
   },
-  "lastUpdated": "2026-05-08T01:32:12.069904+05:30"
+  "lastUpdated": "2026-05-08T02:43:09.255498+05:30"
 }
