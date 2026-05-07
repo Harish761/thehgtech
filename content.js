@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 07 2026",
+            "headline": "Claude Code OAuth Tokens Vulnerable—MCP Hijacking Risk",
+            "title": "OAuth Tokens at Risk: Claude Code MCP Hijacking Exploit Uncovered",
+            "content": "Researchers at Mitiga have identified a vulnerability in Claude Code&#x27;s Managed Cloud Platform (MCP) that allows attackers to intercept OAuth tokens. By silently redirecting MCP traffic, malicious actors can gain persistent access to connected Software-as-a-Service (SaaS) platforms. This exploit poses a significant risk to organizations relying on Claude Code for cloud operations, as unauthorized access could lead to data breaches and service disruptions. The vulnerability highlights the ongoing challenges in securing OAuth implementations, a critical component for authentication and authorization in cloud environments. Organizations using Claude Code should review their security configurations and monitor for unusual activity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/claude-code-oauth-tokens-can-be-stolen-through-stealthy-mcp-hijacking/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Chrome 148 Update—127 Security Fixes Released",
+            "title": "Chrome 148 Addresses Critical Vulnerabilities with 127 Security Fixes",
+            "content": "Google has released Chrome version 148, which includes 127 security fixes addressing critical vulnerabilities such as integer overflow and use-after-free issues. These vulnerabilities, if exploited, could allow attackers to execute arbitrary code or crash the browser. The update is crucial for maintaining browser security, especially given Chrome&#x27;s widespread use across various platforms. Users are urged to update to the latest version immediately to protect against potential exploits. This release underscores the importance of regular software updates in mitigating security risks and maintaining robust cybersecurity postures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-148-rolls-out-with-127-security-fixes/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "AI Vision Models at Risk—Pixel-Level Exploits",
+            "title": "Cisco Uncovers Vulnerability in AI Vision Models via Pixel Perturbation",
+            "content": "Cisco&#x27;s AI security team has identified a method to exploit vision-language models (VLMs) through imperceptible pixel-level changes. These subtle perturbations can manipulate AI systems&#x27; outputs, potentially leading to incorrect image recognition or classification. The discovery raises concerns about the reliability of AI systems in critical applications, such as autonomous vehicles and surveillance. As AI models become more integrated into various sectors, ensuring their robustness against such attacks is paramount. Developers and security teams should consider implementing adversarial training and robust testing to safeguard AI systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/attackers-could-exploit-ai-vision-models-using-imperceptible-image-changes/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "PAN-OS Exploit—Root Access Threat Detected",
+            "title": "Active Exploitation of PAN-OS RCE Vulnerability CVE-2026-0300",
+            "content": "Palo Alto Networks has reported active attempts to exploit a critical buffer overflow vulnerability, CVE-2026-0300, in its PAN-OS User-ID Authentication. This flaw, with a CVSS score of 9.3, could allow attackers to gain root access and conduct espionage activities. The vulnerability was first disclosed in April 2026, and organizations using affected PAN-OS versions are urged to apply patches immediately. This incident highlights the persistent threat of remote code execution (RCE) vulnerabilities in network security devices. Regular patch management and monitoring are essential to prevent unauthorized access and data breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/pan-os-rce-exploit-under-active-use.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Daemon Tools Supply Chain Attack Contained",
+            "title": "Daemon Tools Supply Chain Attack Mitigated by Vendor",
+            "content": "The developers of Daemon Tools have successfully contained a supply chain attack by identifying and removing compromised files from affected systems. The attack involved unauthorized modifications to installation packages, potentially exposing users to malware. The vendor has validated new installation packages to ensure their integrity and security. This incident underscores the critical importance of securing software supply chains, as attackers increasingly target them to distribute malicious code. Users are advised to verify their software sources and apply updates from trusted vendors to mitigate such risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/vendor-says-daemon-tools-supply-chain-attack-contained/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "ThreatsDay Bulletin—Edge Passwords, ICS 0-Days, and More",
+            "title": "ThreatsDay Bulletin Highlights Edge Password Risks and ICS 0-Days",
+            "content": "The latest ThreatsDay Bulletin reveals ongoing cybersecurity challenges, including plaintext password vulnerabilities in Microsoft Edge and zero-day threats in Industrial Control Systems (ICS). These issues highlight the persistent risks posed by outdated software, insecure configurations, and neglected digital assets. The bulletin emphasizes the need for organizations to adopt comprehensive security strategies, including regular patching, user education, and robust access controls. As cyber threats continue to evolve, staying informed and proactive remains crucial for safeguarding digital infrastructures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/threatsday-bulletin-edge-plaintext.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 06 2026",
             "headline": "Critical Node.js Sandbox Bug—Hosts at Risk",
             "title": "Critical Vulnerability in Node.js vm2 Sandbox Allows Host Code Execution",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/iranian-apt-intrusion-masquerades-as-chaos-ransomware-attack/",
             "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "CISA Urges Critical Infrastructure to Master Isolation, Recovery",
-            "title": "CISA Issues Guidance for Critical Infrastructure Cyberattack Preparedness",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has released new guidance to help critical infrastructure operators prepare for potential cyberattacks by foreign threat actors. The guidance emphasizes the importance of mastering isolation and recovery strategies to mitigate the impact of attacks. CISA advises operators to implement network segmentation, regular backup testing, and incident response planning. As geopolitical tensions rise, critical infrastructure remains a prime target for cyberattacks, making proactive measures essential. Organizations should review and update their cybersecurity frameworks to align with CISA&#x27;s recommendations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisa-critical-infrastructure-must-master-isolation-recovery/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Palo Alto Firewall Zero-Day Exploited—Patch Urgently",
-            "title": "Palo Alto Networks Warns of Zero-Day Exploited in Firewall Attacks",
-            "content": "Palo Alto Networks has alerted customers to a critical zero-day vulnerability in the PAN-OS User-ID Authentication Portal, which is currently being exploited in the wild. This unpatched flaw allows remote code execution, posing a significant risk to affected systems. Organizations using PAN-OS are urged to apply mitigations and monitor for unusual activity until a patch is available. The vulnerability underscores the importance of maintaining up-to-date security measures and vigilance against emerging threats. Security teams should prioritize reviewing access logs and implementing additional protective measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-actively-exploited-firewall-zero-day/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Google Expands Android Verification to Combat Supply Chain Attacks",
-            "title": "Google Introduces Public Verification for Android Apps to Enhance Security",
-            "content": "Google has announced the expansion of Binary Transparency for Android apps to protect against supply chain attacks. This initiative involves a public ledger that verifies the integrity of Google apps, ensuring they are as intended by the developers. By enhancing transparency, Google aims to prevent unauthorized modifications and bolster user trust in the Android ecosystem. Developers and security teams should familiarize themselves with this new verification process to ensure compliance and enhance app security. This move reflects the growing emphasis on securing software supply chains against sophisticated threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/android-apps-get-public-verification.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "Apache HTTP/2 Flaw—RCE Risk for Web Servers",
-            "title": "Critical Apache HTTP/2 Vulnerability CVE-2026-23918 Allows Potential RCE",
-            "content": "The Apache Software Foundation has issued patches for a critical vulnerability in the Apache HTTP Server, identified as CVE-2026-23918, with a CVSS score of 8.8. This flaw could enable remote code execution (RCE) on affected servers, posing a significant threat to web applications relying on Apache HTTP/2. The vulnerability affects versions prior to the latest patch and could be exploited by attackers to disrupt services or gain unauthorized access. This development underscores the importance of timely updates in maintaining server security. Administrators are urged to apply the latest security updates immediately to mitigate potential risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/critical-apache-http2-flaw-cve-2026.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "DAEMON Tools Supply Chain Attack—Malware in Installers",
-            "title": "DAEMON Tools Installers Compromised in Supply Chain Attack",
-            "content": "A supply chain attack has compromised DAEMON Tools software installers, embedding them with malware, as reported by Kaspersky. The malicious installers, distributed from DAEMON Tools&#x27; official website, were signed with legitimate digital certificates, making detection challenging. This breach highlights the vulnerabilities in software distribution channels and the risks of trusted sources being exploited. Users who downloaded DAEMON Tools recently should verify their installations and consider using security tools to detect and remove potential malware. This incident serves as a reminder of the growing sophistication of supply chain attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/daemon-tools-supply-chain-attack.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "EOL Software—A Hidden Threat in CVE Feeds",
-            "title": "End-of-Life Software Creates Blind Spots in CVE Feeds and SCA Tools",
-            "content": "HeroDevs has identified a critical oversight in software composition analysis (SCA) tools: the failure to account for end-of-life (EOL) software in CVE feeds. This oversight leaves organizations vulnerable to unpatched vulnerabilities in outdated open-source components. As EOL software is no longer maintained, it can harbor severe security risks that are not flagged by standard scanning tools. HeroDevs offers a free EOL scan to help organizations identify and address these hidden threats. This revelation emphasizes the need for comprehensive vulnerability management strategies that include EOL software assessments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-eol-blind-spot-in-your-cve-feed-what-sca-tools-miss/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 07 2026",
+            "headline": "Moonshot AI Secures $2B—Valuation Soars to $20B",
+            "title": "Moonshot AI&#x27;s Valuation Hits $20B Amid Open-Source AI Demand Surge",
+            "content": "Moonshot AI has successfully raised $2 billion, catapulting its valuation to an impressive $20 billion as the demand for open-source AI solutions continues to rise. The company&#x27;s annualized recurring revenue surpassed $200 million in April, driven by a surge in paid subscriptions and API usage. This growth highlights the increasing reliance on open-source AI platforms by enterprises seeking customizable and cost-effective AI solutions. The funding round positions Moonshot AI to further expand its offerings and capture a larger market share in the competitive AI landscape. Stakeholders should monitor Moonshot&#x27;s strategic moves as it leverages this capital to enhance its technological capabilities and market reach.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Anthropic Skill Scanners Miss Malicious Code in Test File",
+            "title": "Anthropic Skill Scanners Overlook Malicious Code in Test File Analysis",
+            "content": "Anthropic&#x27;s Skill scanners have passed all checks, yet a recent incident revealed a significant oversight when malicious code was embedded within a test file. The scanners effectively analyzed markdown instructions and SKILL.md files, detecting no prompt injections or shell commands. However, the scanners failed to inspect the .test.ts file, allowing malicious code to bypass security measures. This incident underscores the importance of comprehensive file analysis in cybersecurity tools. Developers and security teams should ensure that all file types are scrutinized to prevent similar vulnerabilities from being exploited.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/anthropic-skill-scanners-passed-every-check-malicious-code-test-file",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Last Call: Startup Battlefield 200 Applications Close May 27",
+            "title": "Startup Battlefield 200 Offers $100K and Global Exposure—Apply by May 27",
+            "content": "TechCrunch&#x27;s Startup Battlefield 200 is nearing its application deadline, with submissions closing on May 27. This prestigious competition offers pre-Series A startups the chance to secure $100,000 in equity-free funding, gain global visibility, and receive extensive TechCrunch coverage. The event is a prime opportunity for startups to connect with venture capitalists and industry leaders, potentially accelerating their growth and scaling efforts. Founders should seize this opportunity to showcase their innovations and gain a competitive edge in the startup ecosystem.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/07/startup-battlefield-200-applications-close-may-27-a-shot-at-vc-access-global-visibility-techcrunch-coverage-and-100k/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Exhibit at TechCrunch Disrupt 2026—Reach 10,000 Decision-Makers",
+            "title": "Secure Your Spot at TechCrunch Disrupt 2026 to Boost Visibility",
+            "content": "TechCrunch Disrupt 2026 is calling for exhibitors to secure their presence on the exhibit floor, offering exposure to over 10,000 decision-makers. With limited space available, startups are encouraged to reserve their 6&#x27; exhibit tables promptly to maximize visibility, traction, and potential deal-making opportunities. This event is a critical platform for startups aiming to enhance their market presence and engage with key industry stakeholders. Companies should act swiftly to ensure they don&#x27;t miss out on this influential networking and showcasing opportunity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/07/exhibit-at-techcrunch-disrupt-2026-get-in-front-of-10000-decision-makers-before-space-runs-out/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Aurora&#x27;s Self-Driving Trucks Ready to Scale—CEO Chris Urmson",
+            "title": "Aurora&#x27;s Chris Urmson Declares Self-Driving Trucks Ready for Expansion",
+            "content": "Aurora&#x27;s CEO, Chris Urmson, has announced that the company&#x27;s self-driving trucks are finally poised for large-scale deployment. After years of development and testing, including commercial driverless operations between Dallas and Houston, Aurora is set to revolutionize freight transportation. This milestone marks a significant shift in the autonomous vehicle industry, which has long anticipated the widespread adoption of self-driving technology. Logistics companies should prepare for the integration of autonomous trucks, which promise to enhance efficiency and reduce operational costs.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/auroras-chris-urmson-on-why-self-driving-trucks-are-finally-ready-to-scale/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Save AI Podcasts to Spotify with OpenClaw and Claude",
+            "title": "OpenClaw and Claude Enable AI-Generated Podcasts on Spotify",
+            "content": "A new command-line tool, Save to Spotify, now allows users to upload AI-generated podcasts directly to Spotify using AI agents like OpenClaw, Claude Code, or OpenAI Codex. This tool is designed for individuals who compile research and create audio summaries or personal podcasts via AI. By facilitating seamless integration with Spotify, the tool enhances the accessibility and distribution of AI-generated content. Users interested in leveraging AI for content creation should explore this tool to expand their podcasting capabilities and reach broader audiences.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/925916/save-to-spotify-ai-podcasts",
+            "relatedResources": []
+        },
         {
             "date": "May 06 2026",
             "headline": "Barry Diller Warns on AGI—Trust Alone Isn&#x27;t Enough",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Hugging Face has launched the Reachy Mini App Store, an open-source platform offering over 200 applications specifically designed for robots. This initiative marks a significant shift in the app ecosystem, traditionally dominated by smartphone applications, by extending it to robotic devices. The app store aims to cater to a wide range of robotic use cases, fostering innovation and accessibility in robotics development. By providing a centralized hub for robot applications, Hugging Face is poised to accelerate the adoption and versatility of robotic solutions across various industries. Developers and robotics enthusiasts should explore this new resource for potential opportunities and collaborations.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/technology/the-app-store-for-robots-has-arrived-hugging-face-launches-open-source-reachy-mini-app-store-with-200-apps",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Apple Settles Siri AI Lawsuit—$250M Payout",
-            "title": "Apple to Pay $250 Million in Siri AI Features Lawsuit Settlement",
-            "content": "Apple has agreed to a $250 million settlement to resolve a class-action lawsuit concerning delays in the rollout of promised AI features for Siri. The lawsuit alleged that Apple overpromised and underdelivered on enhancements to Siri&#x27;s AI capabilities, leading to user dissatisfaction. This settlement underscores the challenges tech companies face in managing user expectations and delivering on AI advancements. The payout is expected to compensate affected users and potentially influence Apple&#x27;s future AI development and communication strategies. Stakeholders should consider the implications of this settlement on Apple&#x27;s product roadmap and user trust.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/06/apple-to-pay-250m-to-settle-lawsuit-over-siris-delayed-ai-features/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Ethos Secures $22.75M from a16z—Expands Expert Network",
-            "title": "Ethos Raises $22.75 Million to Enhance Expert Network with Voice Onboarding",
-            "content": "Ethos has successfully raised $22.75 million in funding from Andreessen Horowitz (a16z) to expand its expert network platform, which now boasts onboarding of 35,000 experts per week. The platform leverages voice onboarding technology to streamline the integration of new experts, enhancing the user experience and operational efficiency. This funding will support further development and scaling of the platform, positioning Ethos as a leader in connecting professionals across industries. The investment highlights the growing demand for expert networks and the role of innovative technologies in facilitating professional connections. Industry professionals should watch for new opportunities arising from Ethos&#x27;s expanded capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/06/ethos-raises-22-75m-from-a16z-for-its-expert-network-with-voice-onboarding/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "M&amp;A Strategies Unveiled at TechCrunch Disrupt 2026",
-            "title": "TechCrunch Disrupt 2026 to Address M&amp;A as Early-Stage Strategy",
-            "content": "TechCrunch Disrupt 2026 will feature discussions from leaders at Coinbase, M13, and Mignano Law Group on the role of mergers and acquisitions (M&amp;A) as an early-stage strategy. This event aims to provide insights into how startups can leverage M&amp;A to accelerate growth and innovation. Attendees will gain valuable perspectives on navigating the complexities of M&amp;A, including legal, financial, and strategic considerations. The conference underscores the importance of M&amp;A in the tech industry, particularly for startups seeking competitive advantages. Professionals interested in strategic growth should consider attending to enhance their understanding of M&amp;A dynamics.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/06/at-techcrunch-disrupt-2026-all-your-ma-questions-will-be-answered/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "Google, Microsoft, xAI Open AI Models to U.S. Scrutiny",
-            "title": "Tech Giants Agree to U.S. Government Review of AI Models Before Release",
-            "content": "Google DeepMind, Microsoft, and Elon Musk&#x27;s xAI have agreed to allow the U.S. government to review their AI models before public release. This collaboration with the Commerce Department&#x27;s Center for AI Standards and Innovation (CAISI) aims to ensure AI safety and compliance with emerging regulations. The initiative reflects growing concerns over AI&#x27;s potential risks and the need for oversight in AI development. This move could set a precedent for other AI developers and impact the pace of AI innovation. Industry professionals should monitor regulatory developments and prepare for potential compliance requirements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/924017/google-microsoft-xai-government-review",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "ElevenLabs Secures $500M ARR—Attracts BlackRock, Jamie Foxx, Eva Longoria",
-            "title": "ElevenLabs Expands with New Investors and $500M Annual Recurring Revenue",
-            "content": "Voice AI company ElevenLabs has announced new investments from BlackRock, Jamie Foxx, and Eva Longoria, alongside reaching a $500 million annual recurring revenue milestone. This funding will support ElevenLabs&#x27; expansion into enterprise markets as voice AI becomes increasingly integral to user interfaces. The company&#x27;s growth underscores the rising demand for sophisticated voice technologies in various sectors. Industry stakeholders should consider the implications of voice AI advancements on customer interaction strategies and competitive positioning. ElevenLabs&#x27; success highlights the potential for AI-driven interfaces to transform business operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-eva-longoria-as-new-investors/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "OpenClaw Exploits Repos—No Scanner Detects AI Agent Backdoor",
-            "title": "OpenClaw Highlights Vulnerability in Open-Source Repositories with AI Backdoor",
-            "content": "Researchers at the University of Hong Kong&#x27;s Data Intelligence Lab have revealed a critical vulnerability in open-source repositories through a tool called CLI-Anything. This tool can transform any repository into an AI agent backdoor with a single command, bypassing existing supply-chain scanners. The OpenClaw exploit demonstrates a significant gap in current security measures, potentially affecting countless open-source projects. Developers and security professionals should prioritize enhancing supply-chain security and explore new detection methodologies to mitigate such risks. This discovery emphasizes the urgent need for robust security frameworks in open-source environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/one-command-open-source-repo-ai-agent-backdoor-openclaw-supply-chain-scanner",
             "relatedResources": []
         }
     ],
