@@ -1,6 +1,38 @@
 {
   "incidents": [
     {
+      "id": "AIID-1477",
+      "incident_id": 1477,
+      "title": "Scammers Reportedly Used AI-Generated Image of Missing Puppy Hazel to Solicit Fraudulent Vet Payment",
+      "date": "2026-05-07",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1478",
+      "incident_id": 1478,
+      "title": "Scammers Reportedly Used AI-Generated Images of Missing Dog Archer to Solicit Fraudulent Vet Payment",
+      "date": "2026-05-07",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1479",
+      "incident_id": 1479,
+      "title": "ChatGPT-Generated Image of Nonexistent 'Homeless Man' Was Used in False St. Petersburg, Florida Burg",
+      "date": "2026-05-06",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1480",
+      "incident_id": 1480,
+      "title": "Purportedly AI-Recreated Clips from Beastie Boys' 'Sabotage' Video Reportedly Appeared in FBI Promot",
+      "date": "2026-05-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1412",
       "incident_id": 1412,
       "title": "CodeWall's Autonomous Agent Reportedly Obtained Unauthorized Access to McKinsey's Lilli AI Platform ",
@@ -1018,9 +1050,9 @@
     }
   ],
   "stats": {
-    "total": 127,
-    "last7Days": 10,
-    "last30Days": 32
+    "total": 131,
+    "last7Days": 14,
+    "last30Days": 36
   },
-  "lastUpdated": "2026-05-07T02:49:08.687664+05:30"
+  "lastUpdated": "2026-05-07T09:28:02.937337+05:30"
 }
