@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 07 2026",
+            "headline": "Ivanti EPMM Flaw—Admin Access in Active Exploits",
+            "title": "Ivanti EPMM CVE-2026-6973 RCE Under Active Exploitation Grants Admin-Level Access",
+            "content": "Ivanti has issued a warning about a high-severity vulnerability, CVE-2026-6973, affecting its Endpoint Manager Mobile (EPMM) software. This flaw, with a CVSS score of 7.2, results from improper input validation and is actively exploited in the wild. It impacts EPMM versions prior to 12.6.1.1, 12.7.0.1, and 12.8.0, potentially granting attackers administrative-level access. Organizations using these versions are at risk of unauthorized access and control over their mobile device management systems. Ivanti recommends immediate patching to mitigate potential exploitation. This incident underscores the critical need for timely updates in enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Palo Alto Zero-Day—Suspected Chinese State Hack",
+            "title": "Palo Alto Zero-Day Exploited in Campaign Bearing Hallmarks of Chinese State Hacking",
+            "content": "A zero-day vulnerability in Palo Alto Networks&#x27; security products has been exploited in a cyber campaign with indicators pointing to Chinese state-sponsored actors. While the cybersecurity firm has not formally attributed the attack to China, the tactics and techniques observed align with known Chinese cyber operations. This zero-day exploit poses a significant threat to organizations relying on Palo Alto&#x27;s solutions for network security. Companies are advised to monitor for updates and apply patches as soon as they become available. This development highlights the ongoing geopolitical tensions manifesting in cyberspace.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/palo-alto-zero-day-exploited-in-campaign-bearing-hallmarks-of-chinese-state-hacking/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Ivanti Urges Patch for EPMM Zero-Day Exploit",
+            "title": "Ivanti Warns of New EPMM Flaw Exploited in Zero-Day Attacks",
+            "content": "Ivanti has alerted users to a critical remote code execution vulnerability in its Endpoint Manager Mobile (EPMM) platform, actively exploited in zero-day attacks. Identified as CVE-2026-6973, this flaw affects EPMM versions before 12.6.1.1, 12.7.0.1, and 12.8.0, allowing attackers to execute arbitrary code. The vulnerability&#x27;s exploitation in the wild necessitates immediate action from administrators to apply the available patches. This incident emphasizes the importance of proactive vulnerability management in protecting enterprise mobile infrastructures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-new-epmm-flaw-exploited-in-zero-day-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "vm2 Node.js Flaws—Sandbox Escape Risks",
+            "title": "vm2 Node.js Library Vulnerabilities Enable Sandbox Escape and Arbitrary Code Execution",
+            "content": "Security researchers have disclosed a series of critical vulnerabilities in the vm2 Node.js library, a tool used to run untrusted JavaScript code in a secure environment. These vulnerabilities allow attackers to escape the sandbox and execute arbitrary code on affected systems. The disclosure of these flaws poses significant risks to applications relying on vm2 for security, potentially affecting a wide range of Node.js applications. Developers are urged to update to the latest patched versions to prevent exploitation. This highlights the ongoing challenges in securing open-source software components.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/vm2-nodejs-library-vulnerabilities.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 06 2026",
+            "headline": "Android Apps Gain Public Verification Against Supply Chain Attacks",
+            "title": "Google&#x27;s Android Apps Get Public Verification to Stop Supply Chain Attacks",
+            "content": "Google has expanded its Binary Transparency initiative to include public verification for Android apps, aiming to thwart supply chain attacks. This new public ledger allows users to verify that the Google apps on their devices are authentic and unaltered. By ensuring app integrity, Google seeks to enhance security across the Android ecosystem, protecting users from potentially malicious modifications. This move is part of a broader effort to secure software supply chains, a growing concern in the cybersecurity landscape.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/android-apps-get-public-verification.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Android Bug Bounty—Rewards Hit $1.5 Million",
+            "title": "Become a Millionaire by Bug Hunting on Android",
+            "content": "Google has announced a significant increase in its bug bounty rewards for vulnerabilities discovered in Android and the Chrome browser, with the maximum payout now reaching $1.5 million. This move is part of Google&#x27;s ongoing commitment to incentivizing security research and improving the security of its platforms. The enhanced rewards aim to attract top security talent to identify and report vulnerabilities before they can be exploited by malicious actors. This initiative underscores the value Google places on proactive security measures and community collaboration.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4168634/now-you-can-earn-millions-by-finding-bugs-in-android.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
             "headline": "Claude Code OAuth Tokens Vulnerable—MCP Hijacking Risk",
             "title": "OAuth Tokens at Risk: Claude Code MCP Hijacking Exploit Uncovered",
             "content": "Researchers at Mitiga have identified a vulnerability in Claude Code&#x27;s Managed Cloud Platform (MCP) that allows attackers to intercept OAuth tokens. By silently redirecting MCP traffic, malicious actors can gain persistent access to connected Software-as-a-Service (SaaS) platforms. This exploit poses a significant risk to organizations relying on Claude Code for cloud operations, as unauthorized access could lead to data breaches and service disruptions. The vulnerability highlights the ongoing challenges in securing OAuth implementations, a critical component for authentication and authorization in cloud environments. Organizations using Claude Code should review their security configurations and monitor for unusual activity.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/government-scientific-entities-hit-via-daemon-tools-supply-chain-attack/",
             "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Oracle Launches Monthly Security Patch Updates",
-            "title": "Oracle Introduces Monthly Critical Security Patch Updates for Faster Response",
-            "content": "Oracle has announced the launch of monthly critical security patch updates aimed at addressing high-severity vulnerabilities more swiftly. This new schedule will allow Oracle to prioritize and roll out fixes for critical issues, enhancing the security posture of its products. The initiative is part of Oracle&#x27;s ongoing commitment to proactive security management, responding to the increasing frequency and sophistication of cyber threats. Customers are encouraged to apply these updates promptly to protect their systems from potential exploits. This move aligns with industry trends towards more frequent and timely security updates.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/oracle-debuts-monthly-critical-security-patch-updates/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Palo Alto PAN-OS Flaw Exploited—Remote Code Execution Risk",
-            "title": "Critical Buffer Overflow in Palo Alto PAN-OS Allows Remote Code Execution",
-            "content": "Palo Alto Networks has issued an advisory regarding a critical buffer overflow vulnerability in its PAN-OS software, tracked as CVE-2026-0300. This flaw, which enables unauthenticated remote code execution, has been actively exploited in the wild. It affects the Captive Portal service on PA and VM series firewalls, posing a significant risk to affected systems. With a CVSS score of 9.3, the vulnerability demands immediate attention. Organizations using PAN-OS are urged to apply the recommended patches to mitigate the threat. This incident emphasizes the need for continuous monitoring and timely patching of network security devices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/palo-alto-pan-os-flaw-under-active.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Palo Alto to Patch Zero-Day in Firewalls",
-            "title": "Palo Alto Networks to Address Zero-Day Vulnerability in Firewall Software",
-            "content": "Palo Alto Networks is set to release a patch for a zero-day vulnerability, CVE-2026-0300, affecting its PAN-OS software used in PA and VM series firewalls. This vulnerability, which impacts the Captive Portal service, has been exploited in the wild, allowing attackers to execute unauthorized actions. The company advises users to apply the forthcoming patch to secure their systems against potential breaches. This development highlights the critical nature of zero-day vulnerabilities and the importance of rapid response in cybersecurity defense strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-to-patch-zero-day-exploited-to-hack-firewalls/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Ransomware Destroys Backups—Recovery Plans at Risk",
-            "title": "Ransomware Attacks Succeed by Targeting Backup Systems First",
-            "content": "Acronis has revealed that ransomware attacks often succeed even when organizations have backup systems in place. Attackers are increasingly targeting and destroying backup systems before encrypting primary data, leaving victims with no recovery options. This tactic underscores the importance of securing backup systems against unauthorized access and implementing robust isolation measures. Organizations are advised to regularly test their backup integrity and ensure backups are stored offline or in immutable storage. As ransomware tactics evolve, businesses must adapt their cybersecurity strategies to protect critical recovery paths.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/why-ransomware-attacks-succeed-even-when-backups-exist/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "MuddyWater Uses Chaos Ransomware as Decoy in Attacks",
-            "title": "MuddyWater Hackers Deploy Chaos Ransomware to Mask Operations",
-            "content": "The Iranian threat actor group MuddyWater has been using Chaos ransomware as a decoy to disguise their cyber operations. By leveraging social engineering tactics through Microsoft Teams, they gain access and establish persistence within targeted networks. This approach allows them to conduct credential harvesting and data theft while diverting attention to the ransomware. Security professionals should be vigilant about unusual activity in collaboration tools and enhance monitoring for signs of unauthorized access. This incident highlights the sophisticated methods employed by state-sponsored groups to achieve their objectives.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/muddywater-hackers-use-chaos-ransomware-as-a-decoy-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Iranian APT Masquerades as Chaos Ransomware Attack",
-            "title": "Iranian APT Intrusion Disguised as Chaos Ransomware Incident",
-            "content": "An Iranian Advanced Persistent Threat (APT) group, likely MuddyWater, has been implicated in an attack that masquerades as a Chaos ransomware incident. The operation involves social engineering, persistence mechanisms, credential harvesting, and data exfiltration. By disguising their activities as ransomware, the attackers aim to mislead investigators and victims. Organizations should enhance their detection capabilities to identify such deceptive tactics and protect sensitive information. This case exemplifies the growing trend of APT groups using ransomware as a cover for espionage activities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/iranian-apt-intrusion-masquerades-as-chaos-ransomware-attack/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 07 2026",
+            "headline": "GPT-5.5-Cyber Enhances Critical Infrastructure Defense",
+            "title": "OpenAI Expands Trusted Access with GPT-5.5 and GPT-5.5-Cyber",
+            "content": "OpenAI has announced the release of GPT-5.5 and its specialized variant, GPT-5.5-Cyber, aimed at bolstering cybersecurity efforts. These models are designed to assist verified cybersecurity professionals in accelerating vulnerability research and enhancing the protection of critical infrastructure. The introduction of these models is a strategic move to address the increasing complexity of cyber threats targeting essential services. By providing advanced AI tools, OpenAI aims to empower defenders with enhanced capabilities to identify and mitigate vulnerabilities more effectively. Organizations managing critical infrastructure should consider integrating these models to strengthen their security posture.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Sakana AI&#x27;s RL Conductor Streamlines Model Orchestration",
+            "title": "Sakana AI Trains 7B Model to Orchestrate GPT-5 and More",
+            "content": "Sakana AI has developed the &quot;RL Conductor,&quot; a 7 billion parameter language model designed to orchestrate interactions between larger models like GPT-5, Claude Sonnet 4, and Gemini 2.5 Pro. This innovation addresses the common bottleneck where hardcoded LangChain pipelines fail as query distributions shift. By employing reinforcement learning, the RL Conductor dynamically adapts to changing data patterns, ensuring seamless model orchestration. This advancement is particularly beneficial for teams managing complex AI workflows, reducing the need for constant manual adjustments. Organizations should explore integrating such adaptive models to enhance operational efficiency.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/how-sakana-trained-a-7b-model-to-orchestrate-gpt-5-claude-sonnet-4-and-gemini-2-5-pro",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "OpenAI API Adds Voice Intelligence Features",
+            "title": "OpenAI Launches Advanced Voice Intelligence in API for Diverse Applications",
+            "content": "OpenAI has introduced new voice intelligence features in its API, expanding its utility across sectors such as customer service, education, and content creation. These features enable more natural and intuitive voice interactions, potentially transforming how users engage with AI systems. The enhancements are expected to improve user experience by providing more accurate and context-aware responses. This development aligns with the growing trend of integrating voice technology into various platforms to enhance accessibility and efficiency. Developers and businesses should consider leveraging these capabilities to innovate their service offerings.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Voi Founders&#x27; Startup Pit Secures $16M Seed Funding",
+            "title": "Stockholm&#x27;s AI Startup Pit Gains Momentum with a16z Backing",
+            "content": "Pit, a new AI startup founded by the creators of European scooter giant Voi, has emerged as a promising player in the tech scene, securing $16 million in seed funding led by venture capital firm Andreessen Horowitz (a16z). The startup, based in Stockholm, aims to leverage AI to develop innovative solutions, though specific projects have yet to be disclosed. This investment highlights the continued interest in AI-driven technologies and the potential for startups to disrupt traditional industries. Stakeholders in the AI ecosystem should monitor Pit&#x27;s developments for potential collaborations or insights into emerging trends.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "OpenAI&#x27;s &#x27;Trusted Contact&#x27; Safeguard Targets Self-Harm Risks",
+            "title": "OpenAI Enhances ChatGPT Safety with &#x27;Trusted Contact&#x27; Feature",
+            "content": "OpenAI is expanding its safety measures for ChatGPT users by introducing a &#x27;Trusted Contact&#x27; feature designed to intervene in conversations that may indicate self-harm. This proactive safeguard allows users to designate trusted individuals who can be alerted if concerning dialogue patterns are detected. The initiative reflects OpenAI&#x27;s commitment to user safety and mental health, addressing potential risks associated with AI interactions. As AI becomes more integrated into daily life, such measures are crucial for ensuring responsible usage. Users and developers should be aware of these features to promote safe AI engagement.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/07/openai-introduces-new-trusted-contact-safeguard-for-cases-of-possible-self-harm/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Perplexity&#x27;s AI Agents Now Available on Mac",
+            "title": "Perplexity&#x27;s Personal Computer Brings AI Agents to Mac Users",
+            "content": "Perplexity has announced that its Personal Computer, featuring AI agents, is now accessible to all Mac users. This development allows users to integrate AI-driven functionalities directly into their Mac systems, enhancing productivity and user experience. The availability of these AI agents on Mac signifies a step forward in making advanced AI tools more accessible to a broader audience. As AI continues to permeate various aspects of computing, users should explore these tools to optimize their workflows and leverage AI capabilities effectively.",
+            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/07/perplexitys-personal-computer-is-now-available-everyone-on-mac/",
+            "relatedResources": []
+        },
         {
             "date": "May 07 2026",
             "headline": "Moonshot AI Secures $2B—Valuation Soars to $20B",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Anthropic has entered into a strategic partnership with SpaceX, securing access to computing resources from Elon Musk&#x27;s xAI. This unexpected alliance underscores the intensifying competition in the AI sector, as companies seek to leverage advanced infrastructure to accelerate AI development. The collaboration provides Anthropic with significant computational power, potentially enhancing its AI capabilities and innovation pace. This development highlights the growing trend of cross-industry partnerships to overcome technical and resource limitations in AI research. Industry professionals should monitor such alliances for their potential to reshape AI innovation landscapes.",
             "source": "Artificial Intelligence Latest",
             "sourceUrl": "https://www.wired.com/story/anthropic-spacex-compute-deal-colossus/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Brox&#x27;s Digital Twins—Revolutionizing Market Research",
-            "title": "Brox Develops 60,000 Digital Twins for Instant Market Surveys",
-            "content": "Brox has unveiled a groundbreaking solution to the sluggish traditional market research process by creating 60,000 digital twins of real people. These digital replicas allow for instantaneous and repeated surveys, addressing the inefficiencies of the typical 12-week research cycle. In an era where social media trends can rapidly influence brand perception, Brox&#x27;s innovation offers businesses a competitive edge in capturing timely consumer insights. This approach signifies a shift towards more agile and responsive market research methodologies, crucial for adapting to fast-paced digital environments. Companies should consider integrating digital twin technology to enhance their market analysis capabilities.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/market-research-is-too-slow-for-the-ai-era-so-brox-built-60-000-identical-digital-twins-of-real-people-you-can-survey-instantly-repeatedly",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Musk v. Altman Trial—Zilis&#x27;s Testimony Raises Eyebrows",
-            "title": "Shivon Zilis&#x27;s Role in Musk v. Altman Trial Sparks Debate",
-            "content": "In the ongoing Musk v. Altman trial, Shivon Zilis&#x27;s testimony has drawn significant attention due to her personal ties with Elon Musk. Zilis, who revealed under oath that she is the mother of four of Musk&#x27;s children, has become a focal point in the courtroom drama. Her involvement raises questions about potential conflicts of interest and the broader implications for the trial&#x27;s outcome. The case, which has captivated the tech world, underscores the complex interplay of personal and professional dynamics in high-stakes legal battles. Observers are advised to follow developments closely as they may impact leadership dynamics in major AI firms.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/925665/musk-altman-trial-shivon-zilis-testimony",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Snap and Perplexity—$400M Deal Falls Through",
-            "title": "Snap and Perplexity End $400M AI Search Engine Deal",
-            "content": "Snap Inc. and Perplexity have mutually agreed to terminate their $400 million deal, which aimed to integrate Perplexity&#x27;s AI search engine into Snapchat. Announced last November, the collaboration was expected to enhance Snapchat&#x27;s search capabilities by leveraging Perplexity&#x27;s advanced AI technology. The amicable dissolution of the agreement reflects the challenges companies face in aligning strategic goals and technological integration. This development may prompt Snap to explore alternative partnerships or internal solutions to bolster its AI-driven features. Industry stakeholders should note the potential shifts in AI collaboration strategies as companies reassess their technological alliances.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/06/snap-says-its-400m-deal-with-perplexity-amicably-ended/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Google&#x27;s AI Search Now Quotes Reddit—Boosts User Trust",
-            "title": "Google Enhances AI Search with Reddit and Social Media Perspectives",
-            "content": "Google has updated its AI Search features to incorporate firsthand perspectives from platforms like Reddit and other social media forums. This enhancement aims to provide users with more trusted and relatable information by linking directly to discussions and insights from real users. By integrating these sources, Google seeks to improve the reliability and depth of search results, particularly for topics where user experiences and opinions are valuable. This move reflects a broader trend of leveraging community-driven content to enhance AI-driven search capabilities. Users can expect more diverse and nuanced search results, potentially increasing engagement and satisfaction.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/924993/google-ai-search-mode-overviews-update-reddit-links",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Microsoft Reshuffle—LinkedIn Chief Takes Over Teams",
-            "title": "Microsoft Restructures Leadership: LinkedIn Chief to Oversee Teams",
-            "content": "Microsoft has announced a significant leadership reshuffle, with LinkedIn chief Ryan Roslansky now overseeing the Microsoft Teams organization. This strategic move follows his expanded role last year as head of Office, reflecting Microsoft&#x27;s commitment to integrating its productivity and communication platforms more closely. The reshuffle aims to streamline operations and enhance collaboration across Microsoft&#x27;s suite of services. This change could impact the development and integration of Teams with other Microsoft products, potentially leading to more cohesive user experiences. Industry professionals should monitor these developments for potential shifts in Microsoft&#x27;s enterprise communication strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/924931/microsoft-office-copilot-windows-reorg-shuffle",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Hugging Face Unveils Robot App Store—200+ Apps Available",
-            "title": "Hugging Face Launches Open-Source Reachy Mini App Store for Robots",
-            "content": "Hugging Face has launched the Reachy Mini App Store, an open-source platform offering over 200 applications specifically designed for robots. This initiative marks a significant shift in the app ecosystem, traditionally dominated by smartphone applications, by extending it to robotic devices. The app store aims to cater to a wide range of robotic use cases, fostering innovation and accessibility in robotics development. By providing a centralized hub for robot applications, Hugging Face is poised to accelerate the adoption and versatility of robotic solutions across various industries. Developers and robotics enthusiasts should explore this new resource for potential opportunities and collaborations.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/the-app-store-for-robots-has-arrived-hugging-face-launches-open-source-reachy-mini-app-store-with-200-apps",
             "relatedResources": []
         }
     ],
@@ -359,6 +359,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-6973",
+            "dateAdded": "May 07, 2026",
+            "vendor": "Ivanti Endpoint Manager Mobile (EPMM)",
+            "description": "Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6973",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-0300",
             "dateAdded": "May 06, 2026",
             "vendor": "Palo Alto Networks PAN-OS",
@@ -367,17 +378,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0300",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-31431",
-            "dateAdded": "May 01, 2026",
-            "vendor": "Linux Kernel",
-            "description": "Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-31431",
             "isZeroDay": false
         }
     ],
