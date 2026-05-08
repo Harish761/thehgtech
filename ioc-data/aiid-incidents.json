@@ -1031,36 +1031,12 @@
       "date": "2026-02-08",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1362",
-      "incident_id": 1362,
-      "title": "Border Patrol Agent Allegedly Claimed Facial Recognition Identified Minneapolis ICE Observer and Glo",
-      "date": "2026-02-07",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1363",
-      "incident_id": 1363,
-      "title": "Trump Reportedly Posted Purportedly AI-Generated Racist Video Depicting Barack and Michelle Obama as",
-      "date": "2026-02-07",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1364",
-      "incident_id": 1364,
-      "title": "Moltbook Database Exposure Allegedly Revealed Users' Private Communications and API Authentication T",
-      "date": "2026-02-07",
-      "category": "data_leak",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 132,
+    "total": 129,
     "last7Days": 13,
     "last30Days": 37
   },
-  "lastUpdated": "2026-05-08T02:43:09.255498+05:30"
+  "lastUpdated": "2026-05-08T09:18:41.782877+05:30"
 }
