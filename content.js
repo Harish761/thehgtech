@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 08 2026",
+            "headline": "RansomHouse Breaches Trellix—Source Code Exposed",
+            "title": "RansomHouse Claims Responsibility for Trellix Source Code Breach",
+            "content": "RansomHouse, a notorious ransomware group, has claimed responsibility for breaching the source code repository of cybersecurity firm Trellix. The group has leaked images as proof of their access to Trellix&#x27;s internal systems, raising concerns about potential exploitation of the exposed code. The breach highlights vulnerabilities in source code management and the increasing sophistication of ransomware groups targeting high-profile tech companies. Security professionals are advised to review their source code access protocols and enhance monitoring for unauthorized access. This incident underscores the critical need for robust security measures in protecting intellectual property.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trellix-source-code-breach-claimed-by-ransomhouse-hackers/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "CISA Demands Ivanti Patch—4-Day Deadline for Feds",
+            "title": "CISA Mandates Urgent Patch for Ivanti Zero-Day Vulnerability",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a directive requiring U.S. federal agencies to patch a high-severity vulnerability in Ivanti Endpoint Manager Mobile (EPMM) within four days. This zero-day flaw, actively exploited in the wild, poses significant risks to network security. The vulnerability affects multiple versions of EPMM, potentially allowing attackers to execute arbitrary code and compromise sensitive data. Agencies must prioritize this patch to mitigate the risk of exploitation and protect critical infrastructure. This urgent directive reflects the heightened threat landscape and the need for swift action against zero-day vulnerabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-gives-feds-four-days-to-patch-ivanti-flaw-exploited-as-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Braintrust Data Breach—API Keys Compromised",
+            "title": "Braintrust Initiates API Key Rotation Following AWS Account Breach",
+            "content": "AI firm Braintrust has prompted an API key rotation after hackers breached one of its AWS accounts, compromising sensitive AI provider secrets. The breach underscores the critical importance of securing cloud resources and managing API keys effectively. Braintrust has taken immediate action to mitigate the impact by rotating all affected keys and enhancing its security protocols. This incident highlights the vulnerabilities associated with cloud-based services and the need for continuous monitoring and robust security measures. Organizations are urged to regularly audit their cloud security configurations to prevent similar breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ai-firm-braintrust-prompts-api-key-rotation-after-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Zara Breach Exposes 197K Customers&#x27; Data",
+            "title": "Zara Data Breach Compromises Personal Information of 197,000 Customers",
+            "content": "Spanish fashion retailer Zara has suffered a data breach, exposing the personal information of 197,000 customers. The breach was confirmed by Have I Been Pwned, a data breach notification service, and includes sensitive customer data such as names, addresses, and contact details. This incident raises concerns about data protection practices in the retail sector, especially for companies handling large volumes of customer information. Affected customers should monitor their accounts for suspicious activity and consider changing passwords as a precaution. The breach highlights the ongoing challenges in safeguarding personal data against cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zara-data-breach-exposed-personal-information-of-197-000-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "RansomHouse Claims Trellix Hack—Screenshots Released",
+            "title": "RansomHouse Publishes Evidence of Trellix Hack with Internal Screenshots",
+            "content": "RansomHouse has released screenshots as evidence of their successful breach into Trellix&#x27;s internal services, claiming responsibility for the attack. This development follows the group&#x27;s earlier claim of accessing Trellix&#x27;s source code repository, further validating their intrusion. The release of internal screenshots poses a significant threat to Trellix&#x27;s operational security and highlights the persistent risk posed by ransomware groups. Organizations are advised to strengthen their internal security measures and conduct thorough audits to detect potential vulnerabilities. This incident serves as a reminder of the evolving tactics employed by cybercriminals to exploit corporate networks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ransomware-group-takes-credit-for-trellix-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Dirty Frag Zero-Day—Root Access on Linux Distros",
+            "title": "Dirty Frag Zero-Day Vulnerability Grants Root Access on Major Linux Distros",
+            "content": "A newly discovered zero-day vulnerability, dubbed Dirty Frag, allows local attackers to gain root privileges on most major Linux distributions with a single command. This critical flaw affects a wide range of Linux versions, posing a severe risk to systems running on these platforms. The vulnerability has been identified as a local privilege escalation issue, enabling attackers to execute arbitrary code with elevated permissions. Linux administrators are urged to apply available patches and implement security best practices to mitigate potential exploitation. This discovery underscores the ongoing need for vigilance in maintaining Linux system security.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-linux-dirty-frag-zero-day-with-poc-exploit-gives-root-privileges/",
+            "relatedResources": []
+        },
+        {
             "date": "May 07 2026",
             "headline": "Ivanti EPMM Flaw—Admin Access in Active Exploits",
             "title": "Ivanti EPMM CVE-2026-6973 RCE Under Active Exploitation Grants Admin-Level Access",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/attackers-could-exploit-ai-vision-models-using-imperceptible-image-changes/",
             "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "PAN-OS Exploit—Root Access Threat Detected",
-            "title": "Active Exploitation of PAN-OS RCE Vulnerability CVE-2026-0300",
-            "content": "Palo Alto Networks has reported active attempts to exploit a critical buffer overflow vulnerability, CVE-2026-0300, in its PAN-OS User-ID Authentication. This flaw, with a CVSS score of 9.3, could allow attackers to gain root access and conduct espionage activities. The vulnerability was first disclosed in April 2026, and organizations using affected PAN-OS versions are urged to apply patches immediately. This incident highlights the persistent threat of remote code execution (RCE) vulnerabilities in network security devices. Regular patch management and monitoring are essential to prevent unauthorized access and data breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/pan-os-rce-exploit-under-active-use.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "Daemon Tools Supply Chain Attack Contained",
-            "title": "Daemon Tools Supply Chain Attack Mitigated by Vendor",
-            "content": "The developers of Daemon Tools have successfully contained a supply chain attack by identifying and removing compromised files from affected systems. The attack involved unauthorized modifications to installation packages, potentially exposing users to malware. The vendor has validated new installation packages to ensure their integrity and security. This incident underscores the critical importance of securing software supply chains, as attackers increasingly target them to distribute malicious code. Users are advised to verify their software sources and apply updates from trusted vendors to mitigate such risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vendor-says-daemon-tools-supply-chain-attack-contained/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "ThreatsDay Bulletin—Edge Passwords, ICS 0-Days, and More",
-            "title": "ThreatsDay Bulletin Highlights Edge Password Risks and ICS 0-Days",
-            "content": "The latest ThreatsDay Bulletin reveals ongoing cybersecurity challenges, including plaintext password vulnerabilities in Microsoft Edge and zero-day threats in Industrial Control Systems (ICS). These issues highlight the persistent risks posed by outdated software, insecure configurations, and neglected digital assets. The bulletin emphasizes the need for organizations to adopt comprehensive security strategies, including regular patching, user education, and robust access controls. As cyber threats continue to evolve, staying informed and proactive remains crucial for safeguarding digital infrastructures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/threatsday-bulletin-edge-plaintext.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Critical Node.js Sandbox Bug—Hosts at Risk",
-            "title": "Critical Vulnerability in Node.js vm2 Sandbox Allows Host Code Execution",
-            "content": "A critical vulnerability has been identified in the vm2 sandboxing library for Node.js, allowing attackers to escape the sandbox and execute arbitrary code on the host system. This flaw, which affects all versions of vm2 prior to the latest patch, poses a significant risk to applications relying on the library for secure code execution. The vulnerability could be exploited by attackers to gain control over the host system, potentially leading to data breaches or further network infiltration. Developers using vm2 are urged to update to the latest version immediately to mitigate this risk. This incident underscores the importance of regular security audits for third-party libraries in software development.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-vm2-sandbox-bug-lets-attackers-execute-code-on-hosts/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "DAEMON Tools Breach—Malware-Free Version Released",
-            "title": "DAEMON Tools Lite Compromised in Supply Chain Attack, New Version Available",
-            "content": "Disc Soft Limited, the developer of DAEMON Tools Lite, has confirmed a supply chain attack that resulted in the software being trojanized. The compromised version was distributed to users, potentially exposing them to malicious activities. In response, the company has released a new, malware-free version of the software. Users are advised to download the latest version from the official website to ensure their systems are secure. This breach highlights the growing threat of supply chain attacks, where attackers target software distribution channels to spread malware.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/daemon-tools-devs-confirm-breach-release-malware-free-version/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Daemon Tools Attack Hits Government, Scientific Systems",
-            "title": "Government and Scientific Entities Targeted in Daemon Tools Supply Chain Attack",
-            "content": "A sophisticated supply chain attack involving trojanized versions of Daemon Tools has been uncovered, with a backdoor installed on a select number of systems. While the compromised software was distributed globally, the backdoor was activated on only a dozen systems, primarily affecting government and scientific entities. This targeted approach suggests a highly strategic attack aimed at specific high-value targets. Organizations using Daemon Tools are urged to verify their installations and update to the latest secure version. This incident highlights the critical need for vigilance in monitoring software supply chains.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/government-scientific-entities-hit-via-daemon-tools-supply-chain-attack/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 08 2026",
+            "headline": "CEO Selection Chaos—AI Firms Face Leadership Turmoil",
+            "title": "Unorthodox CEO Selection Highlights Leadership Challenges in AI Firms",
+            "content": "In a surprising turn of events, a leading AI company has appointed a new CEO through an unconventional process involving video calls and informal communications, raising questions about leadership stability in the AI sector. This incident underscores the challenges AI firms face in balancing rapid innovation with structured governance. The informal selection process could impact investor confidence and organizational performance, as leadership plays a crucial role in navigating the competitive AI landscape. Companies are urged to establish clear succession plans to ensure continuity and maintain trust among stakeholders. This event highlights the broader trend of leadership volatility in tech-driven industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/926707/openai-ceo-murati-musk-trial-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "MedQA Innovates—AI Fine-Tuning Without CUDA on AMD ROCm",
+            "title": "MedQA Advances Clinical AI Fine-Tuning Using AMD ROCm, Bypassing CUDA",
+            "content": "MedQA has successfully fine-tuned its clinical AI models using AMD&#x27;s ROCm platform, eliminating the need for NVIDIA&#x27;s CUDA framework. This development is significant for AI researchers and developers seeking alternatives to CUDA, which has been a dominant force in AI model training. By leveraging ROCm, MedQA can optimize performance on AMD hardware, potentially reducing costs and increasing accessibility for institutions with budget constraints. This move reflects a growing trend towards diversifying AI hardware dependencies, offering more flexibility in AI development environments. Developers should consider exploring ROCm for cost-effective and efficient AI model training.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/medqa",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "AI in Healthcare—Balancing Augmentation and Job Displacement",
+            "title": "Basata&#x27;s AI Faces Dilemma: Augmenting Healthcare or Displacing Jobs?",
+            "content": "Basata, an AI company focused on automating healthcare administrative tasks, is navigating the delicate balance between augmenting human workers and potentially displacing them. While current administrative staff express little concern, the broader implications for job security in healthcare remain a pressing issue. As AI continues to automate routine tasks, the industry must address ethical considerations and workforce impacts. This situation highlights the ongoing debate about AI&#x27;s role in enhancing productivity versus its potential to disrupt traditional employment. Stakeholders are encouraged to engage in discussions about responsible AI deployment and workforce adaptation strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "OpenAI Drama—Murati Reveals Altman&#x27;s Ouster Details",
+            "title": "Mira Murati&#x27;s Testimony Sheds Light on Sam Altman&#x27;s OpenAI Departure",
+            "content": "Mira Murati&#x27;s deposition has unveiled new insights into the unexpected removal of Sam Altman from his CEO position at OpenAI in 2023. The board cited Altman&#x27;s lack of candor in communications as the primary reason for his ouster. This revelation provides a deeper understanding of the internal dynamics and governance challenges within OpenAI, a key player in the AI industry. The incident underscores the importance of transparency and trust between leadership and board members in tech companies. Industry leaders should prioritize clear communication and accountability to avoid similar disruptions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/926383/mira-murati-sam-altman-musk-trial-ouster",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Apple&#x27;s AI AirPods—Camera-Equipped Prototypes Near Production",
+            "title": "Apple&#x27;s Camera-Equipped AirPods for AI Applications Near Production",
+            "content": "Apple is reportedly close to initiating early mass production of its innovative AirPods featuring integrated cameras, aimed at enhancing AI capabilities. Currently in the design validation test stage, these prototypes are being actively used by Apple testers. This development could revolutionize wearable technology by integrating AI-driven features such as augmented reality and advanced spatial audio experiences. The move aligns with Apple&#x27;s strategy to expand its ecosystem of AI-enabled devices. Developers and tech leaders should monitor this evolution, as it may open new avenues for AI applications in consumer electronics.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/926376/apple-airpods-cameras-ai-production",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "SpaceX&#x27;s $55B AI Chip Plant—Texas &quot;Terafab&quot; Initiative",
+            "title": "SpaceX to Invest $55 Billion in Texas AI Chip Manufacturing Plant",
+            "content": "SpaceX has announced plans to invest $55 billion in constructing a state-of-the-art AI chip manufacturing facility, dubbed &quot;Terafab,&quot; in Austin, Texas. This ambitious project marks SpaceX&#x27;s entry into the competitive AI hardware market, aiming to produce high-performance chips for AI applications. The investment reflects a significant commitment to advancing AI technology infrastructure in the United States. This initiative could bolster domestic chip production capabilities, reducing reliance on foreign suppliers. Industry stakeholders should consider the implications of this development on the global AI hardware supply chain and potential collaborations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/926356/spacex-terafab-plant-cost-ai-chips",
+            "relatedResources": []
+        },
         {
             "date": "May 07 2026",
             "headline": "GPT-5.5-Cyber Enhances Critical Infrastructure Defense",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "TechCrunch&#x27;s Startup Battlefield 200 is nearing its application deadline, with submissions closing on May 27. This prestigious competition offers pre-Series A startups the chance to secure $100,000 in equity-free funding, gain global visibility, and receive extensive TechCrunch coverage. The event is a prime opportunity for startups to connect with venture capitalists and industry leaders, potentially accelerating their growth and scaling efforts. Founders should seize this opportunity to showcase their innovations and gain a competitive edge in the startup ecosystem.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/07/startup-battlefield-200-applications-close-may-27-a-shot-at-vc-access-global-visibility-techcrunch-coverage-and-100k/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "Exhibit at TechCrunch Disrupt 2026—Reach 10,000 Decision-Makers",
-            "title": "Secure Your Spot at TechCrunch Disrupt 2026 to Boost Visibility",
-            "content": "TechCrunch Disrupt 2026 is calling for exhibitors to secure their presence on the exhibit floor, offering exposure to over 10,000 decision-makers. With limited space available, startups are encouraged to reserve their 6&#x27; exhibit tables promptly to maximize visibility, traction, and potential deal-making opportunities. This event is a critical platform for startups aiming to enhance their market presence and engage with key industry stakeholders. Companies should act swiftly to ensure they don&#x27;t miss out on this influential networking and showcasing opportunity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/07/exhibit-at-techcrunch-disrupt-2026-get-in-front-of-10000-decision-makers-before-space-runs-out/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "Aurora&#x27;s Self-Driving Trucks Ready to Scale—CEO Chris Urmson",
-            "title": "Aurora&#x27;s Chris Urmson Declares Self-Driving Trucks Ready for Expansion",
-            "content": "Aurora&#x27;s CEO, Chris Urmson, has announced that the company&#x27;s self-driving trucks are finally poised for large-scale deployment. After years of development and testing, including commercial driverless operations between Dallas and Houston, Aurora is set to revolutionize freight transportation. This milestone marks a significant shift in the autonomous vehicle industry, which has long anticipated the widespread adoption of self-driving technology. Logistics companies should prepare for the integration of autonomous trucks, which promise to enhance efficiency and reduce operational costs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/auroras-chris-urmson-on-why-self-driving-trucks-are-finally-ready-to-scale/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "Save AI Podcasts to Spotify with OpenClaw and Claude",
-            "title": "OpenClaw and Claude Enable AI-Generated Podcasts on Spotify",
-            "content": "A new command-line tool, Save to Spotify, now allows users to upload AI-generated podcasts directly to Spotify using AI agents like OpenClaw, Claude Code, or OpenAI Codex. This tool is designed for individuals who compile research and create audio summaries or personal podcasts via AI. By facilitating seamless integration with Spotify, the tool enhances the accessibility and distribution of AI-generated content. Users interested in leveraging AI for content creation should explore this tool to expand their podcasting capabilities and reach broader audiences.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/925916/save-to-spotify-ai-podcasts",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Barry Diller Warns on AGI—Trust Alone Isn&#x27;t Enough",
-            "title": "Barry Diller Defends Sam Altman Amid AGI Concerns",
-            "content": "Barry Diller, a prominent media executive, has publicly defended OpenAI CEO Sam Altman while cautioning about the unpredictable nature of Artificial General Intelligence (AGI). Diller emphasized that despite Altman&#x27;s trustworthy leadership, the rapid advancement towards AGI necessitates stringent regulatory guardrails. As AGI development accelerates, the potential for both groundbreaking innovations and unforeseen risks increases, impacting industries reliant on AI technologies. Diller&#x27;s comments highlight the urgent need for comprehensive oversight frameworks to manage AGI&#x27;s societal implications. Stakeholders in AI development are urged to collaborate on establishing ethical guidelines and safety measures to mitigate potential risks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/06/barry-diller-trusts-sam-altman-but-trust-is-irrelevant-as-agi-nears-he-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Google&#x27;s AI Search—Reddit Quotes Stir Controversy",
-            "title": "Google Integrates Reddit Quotes in AI Search Results",
-            "content": "Google has updated its AI-powered search capabilities to include quotes from Reddit and other discussion forums, aiming to provide users with more nuanced answers to niche queries. This integration, however, raises concerns about the potential for chaotic and unreliable information dissemination. By leveraging user-generated content, Google seeks to enhance the depth of search results, but it also faces challenges in maintaining accuracy and credibility. The move reflects a broader trend of AI systems tapping into diverse data sources to improve contextual understanding. Users and developers should be aware of the implications for search reliability and content moderation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/06/google-updates-ai-search-to-include-expert-advice-from-reddit-and-other-web-forums/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 06 2026",
-            "headline": "Anthropic Partners with SpaceX—AI Race Takes Off",
-            "title": "Anthropic and SpaceX Collaborate for AI Computing Resources",
-            "content": "Anthropic has entered into a strategic partnership with SpaceX, securing access to computing resources from Elon Musk&#x27;s xAI. This unexpected alliance underscores the intensifying competition in the AI sector, as companies seek to leverage advanced infrastructure to accelerate AI development. The collaboration provides Anthropic with significant computational power, potentially enhancing its AI capabilities and innovation pace. This development highlights the growing trend of cross-industry partnerships to overcome technical and resource limitations in AI research. Industry professionals should monitor such alliances for their potential to reshape AI innovation landscapes.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/anthropic-spacex-compute-deal-colossus/",
             "relatedResources": []
         }
     ],
