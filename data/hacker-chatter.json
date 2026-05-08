@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-05-07T16:22:08.192564",
-  "total_incidents": 27918,
+  "last_updated": "2026-05-08T05:15:41.375701",
+  "total_incidents": 27922,
   "incidents": [
+    {
+      "id": "bravox_soprolux",
+      "victim_name": "Soprolux",
+      "threat_actor": "bravox",
+      "date_discovered": "2026-05-07T21:21:01.664769+00:00",
+      "industry": "Not Found",
+      "website": "soprolux.com",
+      "claim": "The company provides high-quality gourmet and specialty products.",
+      "screenshot": "https://images.ransomware.live/victims/45fba512679087da91167243d2e42b81.png",
+      "url": "http://bravoxxwcfz5qk43ychgveprpd5mw5hvxfs4a2uz2okx7mumiht4fzyd.onion/blog/f694a27d-555d-44dd-ba93-78109a141cf5",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "everest_rehab_clinics_group_ltd",
+      "victim_name": "Rehab Clinics Group Ltd",
+      "threat_actor": "everest",
+      "date_discovered": "2026-05-07T18:22:35.209923+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "[AI generated] Rehab Clinics Group Ltd is a UK-based healthcare company specialising in rehabilitation and addiction treatment services. Operating across England, it provides residential and outpatient programmes for individuals dealing with substance misuse, alcohol dependency, and mental health conditions. The company works with private patients and NHS referrals, offering medically supervised detox, therapy, and aftercare support through a network of treatment centres.",
+      "screenshot": "https://images.ransomware.live/victims/7f1b18b54fb9c9308c4ffe7a45e034fe.png",
+      "url": "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/Rehab_Clinics_Group_Ltd/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_sylvania",
+      "victim_name": "Sylvania",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-07T17:50:25.695607+00:00",
+      "industry": "Manufacturing",
+      "website": "www.sylvania-group.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/0e6bca5f690717cd2aeb6338b336b069.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=672e3681-95e8-4226-81da-dfb1e87de913",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_norcal_training_center",
+      "victim_name": "Norcal Training Center",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-07T17:49:56.666936+00:00",
+      "industry": "Education",
+      "website": "www.norcaltc.org",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/1decfbb47b28296dcd474cbdd424e4df.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=21bf918d-c3b3-484e-a5e7-471c2e0c549d",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "lockbit5_rjrgleanergroup.com",
       "victim_name": "rjrgleanergroup.com",
