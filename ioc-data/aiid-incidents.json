@@ -1007,28 +1007,12 @@
       "date": "2026-02-14",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1365",
-      "incident_id": 1365,
-      "title": "AkiraBot Reportedly Used OpenAI to Spam Website Chats and Contact Forms at Scale",
-      "date": "2026-02-08",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1366",
-      "incident_id": 1366,
-      "title": "Philippines Senate Hearing Featured Reports of Purported AI-Generated Deepfake Pornography Targeting",
-      "date": "2026-02-08",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 128,
+    "total": 126,
     "last7Days": 13,
     "last30Days": 37
   },
-  "lastUpdated": "2026-05-09T11:55:22.906992+05:30"
+  "lastUpdated": "2026-05-09T15:10:53.560884+05:30"
 }
