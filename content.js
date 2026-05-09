@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 09 2026",
+            "headline": "cPanel Vulnerabilities—Privilege Escalation and Code Execution Risks",
+            "title": "cPanel and WHM Updates Address Critical Security Vulnerabilities",
+            "content": "cPanel has released critical updates to patch three vulnerabilities in its cPanel and Web Host Manager (WHM) software, which could lead to privilege escalation, code execution, and denial-of-service attacks. The vulnerabilities include CVE-2026-29201, which has a CVSS score of 4.3, indicating a moderate severity level due to insufficient input validation. These flaws pose significant risks to web hosting environments, potentially allowing attackers to gain unauthorized access or disrupt services. Users of cPanel and WHM are strongly advised to apply the latest patches immediately to mitigate these threats. This update underscores the importance of timely patch management in maintaining secure hosting infrastructures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "vm2 Node.js Library—12 Critical Vulnerabilities Disclosed",
+            "title": "Critical Vulnerabilities in vm2 Node.js Library Allow Sandbox Escape",
+            "content": "Security researchers have identified a dozen critical vulnerabilities in the vm2 Node.js library, which could enable attackers to escape the sandbox environment and execute arbitrary code. The vm2 library is widely used to run untrusted JavaScript code securely, making these vulnerabilities particularly concerning for developers relying on sandboxing for security. Exploitation of these flaws could lead to unauthorized access and control over affected systems. Developers using vm2 are urged to review their implementations and apply necessary updates or mitigations to protect their applications. This discovery highlights ongoing challenges in securing JavaScript execution environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/vm2-nodejs-library-vulnerabilities.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Dirty Frag: New Linux Privilege Escalation Vulnerability",
+            "title": "&quot;Dirty Frag&quot; Linux Kernel Vulnerability Enables Local Privilege Escalation",
+            "content": "A new local privilege escalation (LPE) vulnerability, dubbed &quot;Dirty Frag,&quot; has been discovered in the Linux kernel, following closely on the heels of the recently disclosed Copy Fail vulnerability (CVE-2026-31431). Discovered by security researcher Hyunwoo Kim, this flaw could allow attackers to gain elevated privileges on affected Linux systems. The vulnerability underscores the persistent threat of LPEs in Linux environments, which can be exploited to compromise system integrity. Administrators should monitor for patches and updates from Linux distributions to address this vulnerability promptly. This incident highlights the need for vigilant security practices in managing Linux systems.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/32968",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "7.3M Downloads—Fake Apps Steal Payments via Google Play",
+            "title": "Fraudulent Android Apps on Google Play Store Steal User Payments",
+            "content": "Cybersecurity researchers have uncovered a scheme involving 28 fraudulent apps on the Google Play Store, which collectively amassed 7.3 million downloads. These apps falsely claimed to provide access to call histories but instead tricked users into subscribing to services that delivered fake data, resulting in financial losses. The discovery highlights the ongoing challenge of malicious apps infiltrating official app stores and exploiting unsuspecting users. Android users are advised to scrutinize app permissions and reviews before downloading and to regularly review their subscription services for unauthorized charges. This case emphasizes the importance of vigilance in app security.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/fake-call-history-apps-stole-payments.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Train Hacker Arrested—PamDOORa Backdoor and CISA News",
+            "title": "Arrest of Train Hacker and Discovery of PamDOORa Linux Backdoor",
+            "content": "In a roundup of notable cybersecurity events, authorities have arrested a hacker involved in compromising train systems, while researchers have identified a new Linux backdoor named PamDOORa. Additionally, the U.S. government is pushing for a 72-hour patch cycle to enhance cybersecurity resilience. These developments reflect the diverse and evolving nature of cyber threats, from critical infrastructure attacks to sophisticated malware targeting Linux environments. Security professionals should stay informed about these trends and adjust their defensive strategies accordingly. The appointment of a new frontrunner for the CISA Director position also signals potential shifts in cybersecurity policy.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-train-hacker-arrested-pamdoora-linux-backdoor-new-cisa-director-frontrunner/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "AI to the Rescue—SOC Alert Overload Solutions",
+            "title": "AI Solutions for Overwhelmed Security Operations Centers (SOCs)",
+            "content": "Security Operations Centers (SOCs) are struggling to keep pace with the volume of alerts generated by modern cybersecurity systems. Prophet Security suggests that artificial intelligence (AI) can play a crucial role in helping analysts prioritize and investigate alerts more efficiently, allowing them to focus on genuine threats. The integration of AI into SOC workflows can enhance threat detection and response times, addressing the challenge of alert fatigue. Security teams are encouraged to explore AI-driven tools to optimize their operations and improve overall security posture. This approach reflects a growing trend towards leveraging AI for cybersecurity efficiency.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/why-more-analysts-wont-solve-your-socs-alert-problem/",
+            "relatedResources": []
+        },
+        {
             "date": "May 08 2026",
             "headline": "NVIDIA GeForce NOW Breach Exposes Armenian User Data",
             "title": "NVIDIA Confirms Data Breach Affecting GeForce NOW Users in Armenia",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/ai-firm-braintrust-prompts-api-key-rotation-after-data-breach/",
             "relatedResources": []
-        },
-        {
-            "date": "May 08 2026",
-            "headline": "Zara Breach Exposes 197K Customers&#x27; Data",
-            "title": "Zara Data Breach Compromises Personal Information of 197,000 Customers",
-            "content": "Spanish fashion retailer Zara has suffered a data breach, exposing the personal information of 197,000 customers. The breach was confirmed by Have I Been Pwned, a data breach notification service, and includes sensitive customer data such as names, addresses, and contact details. This incident raises concerns about data protection practices in the retail sector, especially for companies handling large volumes of customer information. Affected customers should monitor their accounts for suspicious activity and consider changing passwords as a precaution. The breach highlights the ongoing challenges in safeguarding personal data against cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zara-data-breach-exposed-personal-information-of-197-000-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 08 2026",
-            "headline": "RansomHouse Claims Trellix Hack—Screenshots Released",
-            "title": "RansomHouse Publishes Evidence of Trellix Hack with Internal Screenshots",
-            "content": "RansomHouse has released screenshots as evidence of their successful breach into Trellix&#x27;s internal services, claiming responsibility for the attack. This development follows the group&#x27;s earlier claim of accessing Trellix&#x27;s source code repository, further validating their intrusion. The release of internal screenshots poses a significant threat to Trellix&#x27;s operational security and highlights the persistent risk posed by ransomware groups. Organizations are advised to strengthen their internal security measures and conduct thorough audits to detect potential vulnerabilities. This incident serves as a reminder of the evolving tactics employed by cybercriminals to exploit corporate networks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ransomware-group-takes-credit-for-trellix-hack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 08 2026",
-            "headline": "Dirty Frag Zero-Day—Root Access on Linux Distros",
-            "title": "Dirty Frag Zero-Day Vulnerability Grants Root Access on Major Linux Distros",
-            "content": "A newly discovered zero-day vulnerability, dubbed Dirty Frag, allows local attackers to gain root privileges on most major Linux distributions with a single command. This critical flaw affects a wide range of Linux versions, posing a severe risk to systems running on these platforms. The vulnerability has been identified as a local privilege escalation issue, enabling attackers to execute arbitrary code with elevated permissions. Linux administrators are urged to apply available patches and implement security best practices to mitigate potential exploitation. This discovery underscores the ongoing need for vigilance in maintaining Linux system security.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-linux-dirty-frag-zero-day-with-poc-exploit-gives-root-privileges/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "Ivanti EPMM Flaw—Admin Access in Active Exploits",
-            "title": "Ivanti EPMM CVE-2026-6973 RCE Under Active Exploitation Grants Admin-Level Access",
-            "content": "Ivanti has issued a warning about a high-severity vulnerability, CVE-2026-6973, affecting its Endpoint Manager Mobile (EPMM) software. This flaw, with a CVSS score of 7.2, results from improper input validation and is actively exploited in the wild. It impacts EPMM versions prior to 12.6.1.1, 12.7.0.1, and 12.8.0, potentially granting attackers administrative-level access. Organizations using these versions are at risk of unauthorized access and control over their mobile device management systems. Ivanti recommends immediate patching to mitigate potential exploitation. This incident underscores the critical need for timely updates in enterprise environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "Palo Alto Zero-Day—Suspected Chinese State Hack",
-            "title": "Palo Alto Zero-Day Exploited in Campaign Bearing Hallmarks of Chinese State Hacking",
-            "content": "A zero-day vulnerability in Palo Alto Networks&#x27; security products has been exploited in a cyber campaign with indicators pointing to Chinese state-sponsored actors. While the cybersecurity firm has not formally attributed the attack to China, the tactics and techniques observed align with known Chinese cyber operations. This zero-day exploit poses a significant threat to organizations relying on Palo Alto&#x27;s solutions for network security. Companies are advised to monitor for updates and apply patches as soon as they become available. This development highlights the ongoing geopolitical tensions manifesting in cyberspace.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/palo-alto-zero-day-exploited-in-campaign-bearing-hallmarks-of-chinese-state-hacking/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "Ivanti Urges Patch for EPMM Zero-Day Exploit",
-            "title": "Ivanti Warns of New EPMM Flaw Exploited in Zero-Day Attacks",
-            "content": "Ivanti has alerted users to a critical remote code execution vulnerability in its Endpoint Manager Mobile (EPMM) platform, actively exploited in zero-day attacks. Identified as CVE-2026-6973, this flaw affects EPMM versions before 12.6.1.1, 12.7.0.1, and 12.8.0, allowing attackers to execute arbitrary code. The vulnerability&#x27;s exploitation in the wild necessitates immediate action from administrators to apply the available patches. This incident emphasizes the importance of proactive vulnerability management in protecting enterprise mobile infrastructures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-new-epmm-flaw-exploited-in-zero-day-attacks/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 08 2026",
+            "headline": "CyberSecQwen-4B—Small Models Revolutionize Defensive Cyber Strategies",
+            "title": "CyberSecQwen-4B: Localized AI Models Enhance Cyber Defense Capabilities",
+            "content": "Hugging Face has unveiled CyberSecQwen-4B, a compact AI model designed for defensive cybersecurity applications. Unlike larger, cloud-dependent models, CyberSecQwen-4B can be run locally, offering enhanced privacy and reduced latency. This model is optimized for detecting and responding to cyber threats in real-time, making it ideal for organizations with stringent data security requirements. As cyber threats become more sophisticated, the need for specialized, locally-runnable AI models like CyberSecQwen-4B is growing. Organizations are encouraged to explore these models to bolster their cybersecurity posture without compromising data sovereignty.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Chrome&#x27;s 4GB AI Model—Storage Concerns Addressed",
+            "title": "Chrome&#x27;s 4GB AI Model Raises Storage Concerns Among Users",
+            "content": "Ars Technica addresses confusion surrounding Chrome&#x27;s 4GB AI model, which has been consuming significant local storage. While users can disable this feature, the responsibility should not fall on them. The AI model is part of Chrome&#x27;s initiative to enhance user experience through local AI processing, reducing reliance on cloud services. However, the storage demand has sparked debate about resource allocation on personal devices. Users should evaluate the necessity of this feature based on their usage patterns and adjust settings accordingly to manage storage effectively.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/05/no-google-hasnt-changed-chromes-local-ai-features-its-just-as-confusing-as-ever/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "PlayStation Leverages AI—Transforming Game Development",
+            "title": "Sony Explores AI to Enhance PlayStation Game Development",
+            "content": "Sony has revealed its strategic focus on AI as a transformative tool in PlayStation game development. During a recent earnings presentation, the company highlighted its evaluation of generative AI technologies to create more immersive gaming experiences. While major titles are beginning to integrate these AI capabilities, indie developers face challenges in adopting such technologies due to resource constraints. Sony&#x27;s commitment to AI underscores a broader industry trend towards leveraging advanced technologies to enrich interactive entertainment. Developers should monitor these advancements to stay competitive in the evolving gaming landscape.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/games/926914/sony-playstation-ai-powerful-tool-games",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "EMO—Modular AI Models for Enhanced Flexibility",
+            "title": "EMO: Pretraining Mixture of Experts for Modular AI Systems",
+            "content": "Hugging Face introduces EMO, a pretraining mixture of experts model designed to enhance modularity in AI systems. This approach allows for the creation of AI models that can adapt to various tasks by activating specific subsets of the model&#x27;s parameters. EMO&#x27;s architecture promotes efficient resource utilization and scalability, addressing the growing demand for versatile AI solutions. As industries increasingly rely on AI for diverse applications, EMO offers a promising path towards more flexible and efficient AI deployments. Organizations should consider integrating such modular AI systems to optimize performance across different use cases.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/emo",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Enterprise AI Boom—SAP Invests $1B in Prior Labs",
+            "title": "SAP Invests $1B in German AI Startup Amid Enterprise AI Surge",
+            "content": "TechCrunch reports a surge in enterprise AI investments, highlighted by SAP&#x27;s $1 billion acquisition of German AI startup Prior Labs. This move is part of a broader trend where tech giants like Anthropic and OpenAI are forming joint ventures to capitalize on the enterprise AI market. The investment underscores the competitive landscape as companies race to integrate AI into business operations. Startups in the AI sector are poised to benefit from this gold rush, with increased funding and collaboration opportunities. Industry leaders should watch these developments to leverage AI advancements in their strategic planning.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/the-peoples-airline-and-the-enterprise-ai-gold-rush/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "SAP Ensures AI Safety—Governance Over Gatekeeping",
+            "title": "SAP Implements Governance for Safe AI Connectivity in Enterprises",
+            "content": "VentureBeat highlights SAP&#x27;s efforts to enhance AI safety through governance rather than gatekeeping. As the enterprise software industry evolves, SAP is adapting its strategies to protect customers relying on multi-tenant cloud infrastructures. The company emphasizes documented rate limits and usage policies to ensure secure AI connectivity. This approach reflects a shift towards proactive governance, aiming to balance innovation with security. Enterprises should adopt similar governance frameworks to safeguard their AI deployments while fostering innovation and trust among users.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/governance-not-gatekeeping-how-sap-brings-enterprise-grade-safety-to-ai-connectivity",
+            "relatedResources": []
+        },
         {
             "date": "May 08 2026",
             "headline": "Google AI Search to Cite Sources—Boosts Transparency",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Basata, an AI company focused on automating healthcare administrative tasks, is navigating the delicate balance between augmenting human workers and potentially displacing them. While current administrative staff express little concern, the broader implications for job security in healthcare remain a pressing issue. As AI continues to automate routine tasks, the industry must address ethical considerations and workforce impacts. This situation highlights the ongoing debate about AI&#x27;s role in enhancing productivity versus its potential to disrupt traditional employment. Stakeholders are encouraged to engage in discussions about responsible AI deployment and workforce adaptation strategies.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/07/the-back-office-problem-that-explains-why-specialists-never-call-you-back/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "OpenAI Drama—Murati Reveals Altman&#x27;s Ouster Details",
-            "title": "Mira Murati&#x27;s Testimony Sheds Light on Sam Altman&#x27;s OpenAI Departure",
-            "content": "Mira Murati&#x27;s deposition has unveiled new insights into the unexpected removal of Sam Altman from his CEO position at OpenAI in 2023. The board cited Altman&#x27;s lack of candor in communications as the primary reason for his ouster. This revelation provides a deeper understanding of the internal dynamics and governance challenges within OpenAI, a key player in the AI industry. The incident underscores the importance of transparency and trust between leadership and board members in tech companies. Industry leaders should prioritize clear communication and accountability to avoid similar disruptions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/926383/mira-murati-sam-altman-musk-trial-ouster",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "Apple&#x27;s AI AirPods—Camera-Equipped Prototypes Near Production",
-            "title": "Apple&#x27;s Camera-Equipped AirPods for AI Applications Near Production",
-            "content": "Apple is reportedly close to initiating early mass production of its innovative AirPods featuring integrated cameras, aimed at enhancing AI capabilities. Currently in the design validation test stage, these prototypes are being actively used by Apple testers. This development could revolutionize wearable technology by integrating AI-driven features such as augmented reality and advanced spatial audio experiences. The move aligns with Apple&#x27;s strategy to expand its ecosystem of AI-enabled devices. Developers and tech leaders should monitor this evolution, as it may open new avenues for AI applications in consumer electronics.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/926376/apple-airpods-cameras-ai-production",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "SpaceX&#x27;s $55B AI Chip Plant—Texas &quot;Terafab&quot; Initiative",
-            "title": "SpaceX to Invest $55 Billion in Texas AI Chip Manufacturing Plant",
-            "content": "SpaceX has announced plans to invest $55 billion in constructing a state-of-the-art AI chip manufacturing facility, dubbed &quot;Terafab,&quot; in Austin, Texas. This ambitious project marks SpaceX&#x27;s entry into the competitive AI hardware market, aiming to produce high-performance chips for AI applications. The investment reflects a significant commitment to advancing AI technology infrastructure in the United States. This initiative could bolster domestic chip production capabilities, reducing reliance on foreign suppliers. Industry stakeholders should consider the implications of this development on the global AI hardware supply chain and potential collaborations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/926356/spacex-terafab-plant-cost-ai-chips",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "GPT-5.5-Cyber Enhances Critical Infrastructure Defense",
-            "title": "OpenAI Expands Trusted Access with GPT-5.5 and GPT-5.5-Cyber",
-            "content": "OpenAI has announced the release of GPT-5.5 and its specialized variant, GPT-5.5-Cyber, aimed at bolstering cybersecurity efforts. These models are designed to assist verified cybersecurity professionals in accelerating vulnerability research and enhancing the protection of critical infrastructure. The introduction of these models is a strategic move to address the increasing complexity of cyber threats targeting essential services. By providing advanced AI tools, OpenAI aims to empower defenders with enhanced capabilities to identify and mitigate vulnerabilities more effectively. Organizations managing critical infrastructure should consider integrating these models to strengthen their security posture.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "Sakana AI&#x27;s RL Conductor Streamlines Model Orchestration",
-            "title": "Sakana AI Trains 7B Model to Orchestrate GPT-5 and More",
-            "content": "Sakana AI has developed the &quot;RL Conductor,&quot; a 7 billion parameter language model designed to orchestrate interactions between larger models like GPT-5, Claude Sonnet 4, and Gemini 2.5 Pro. This innovation addresses the common bottleneck where hardcoded LangChain pipelines fail as query distributions shift. By employing reinforcement learning, the RL Conductor dynamically adapts to changing data patterns, ensuring seamless model orchestration. This advancement is particularly beneficial for teams managing complex AI workflows, reducing the need for constant manual adjustments. Organizations should explore integrating such adaptive models to enhance operational efficiency.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/how-sakana-trained-a-7b-model-to-orchestrate-gpt-5-claude-sonnet-4-and-gemini-2-5-pro",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "OpenAI API Adds Voice Intelligence Features",
-            "title": "OpenAI Launches Advanced Voice Intelligence in API for Diverse Applications",
-            "content": "OpenAI has introduced new voice intelligence features in its API, expanding its utility across sectors such as customer service, education, and content creation. These features enable more natural and intuitive voice interactions, potentially transforming how users engage with AI systems. The enhancements are expected to improve user experience by providing more accurate and context-aware responses. This development aligns with the growing trend of integrating voice technology into various platforms to enhance accessibility and efficiency. Developers and businesses should consider leveraging these capabilities to innovate their service offerings.",
-            "source": "AI News &amp; Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/",
             "relatedResources": []
         }
     ],
