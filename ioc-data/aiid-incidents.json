@@ -1023,20 +1023,12 @@
       "date": "2026-02-08",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1367",
-      "incident_id": 1367,
-      "title": "Spokane Transit Authority Onboard Navigation System Reportedly Routed Double-Decker Bus to Low Bridg",
-      "date": "2026-02-08",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 129,
+    "total": 128,
     "last7Days": 13,
     "last30Days": 37
   },
-  "lastUpdated": "2026-05-09T02:43:44.349698+05:30"
+  "lastUpdated": "2026-05-09T09:20:23.297663+05:30"
 }
