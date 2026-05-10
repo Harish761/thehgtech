@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 10 2026",
+            "headline": "Ollama Vulnerability Exposes 300K Servers to Memory Leak",
+            "title": "Critical Ollama Out-of-Bounds Read Flaw Enables Remote Memory Leak",
+            "content": "A critical out-of-bounds read vulnerability in Ollama, tracked as CVE-2026-XXXX, has been disclosed by cybersecurity researchers. This flaw potentially allows remote, unauthenticated attackers to leak the entire process memory of affected systems. Over 300,000 servers worldwide are at risk, making this a significant threat to organizations relying on Ollama. The vulnerability underscores the importance of regular security audits and prompt patching. Users are urged to monitor for updates and apply patches as soon as they become available to mitigate potential exploitation. This incident highlights the ongoing challenges in securing server software against sophisticated attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/ollama-out-of-bounds-read-vulnerability.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "RansomHouse Claims Trellix Hack—Internal Data Accessed",
+            "title": "RansomHouse Ransomware Group Takes Responsibility for Trellix Data Breach",
+            "content": "The ransomware group RansomHouse has claimed responsibility for a breach of Trellix, showcasing screenshots of internal services as proof. This incident raises concerns about the security of Trellix's infrastructure and the potential exposure of sensitive data. While the extent of the breach remains unclear, the attack highlights the persistent threat posed by ransomware groups targeting high-profile companies. Organizations are advised to enhance their security measures, including regular backups and employee training, to defend against such attacks. This event underscores the need for comprehensive incident response plans in the face of evolving ransomware tactics.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ransomware-group-takes-credit-for-trellix-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Dirty Frag Zero-Day Grants Root on Linux Distros",
+            "title": "New Linux 'Dirty Frag' Zero-Day Exploit Elevates Privileges to Root",
+            "content": "A newly discovered zero-day exploit, dubbed Dirty Frag, allows local attackers to gain root privileges on major Linux distributions with a single command. This vulnerability affects a wide range of systems, posing a significant risk to Linux users. The exploit is particularly concerning due to its simplicity and the potential for widespread abuse. Security professionals are urged to monitor for patches and apply them immediately once available. This development highlights the critical need for vigilance and rapid response in maintaining Linux system security.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-linux-dirty-frag-zero-day-with-poc-exploit-gives-root-privileges/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Ivanti Patches Exploited Zero-Day in EPMM",
+            "title": "Ivanti Releases Patch for EPMM Zero-Day CVE-2026-6973",
+            "content": "Ivanti has issued a patch for a high-severity zero-day vulnerability, CVE-2026-6973, affecting its Endpoint Manager Mobile (EPMM) software. This flaw allows attackers with admin privileges to execute arbitrary code, posing a significant threat to affected systems. The vulnerability has been exploited in targeted attacks, emphasizing the urgency for users to update to the latest software versions. Organizations using EPMM should prioritize this update to protect against potential exploitation. This incident reflects the ongoing challenges in securing enterprise management solutions against sophisticated threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ivanti-patches-epmm-zero-day-exploited-in-targeted-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Linux Kernel Dirty Frag Exploit—Root Access Risk",
+            "title": "Unpatched Linux Kernel Dirty Frag Exploit Enables Root Privilege Escalation",
+            "content": "Details have emerged about Dirty Frag, a local privilege escalation (LPE) vulnerability in the Linux kernel, affecting major distributions. As a successor to the Copy Fail vulnerability (CVE-2026-31431), Dirty Frag presents a similar risk with a CVSS score of 7.8. This exploit allows attackers to gain root access, posing a severe threat to system integrity. Security teams should remain vigilant for patches and implement mitigations where possible. This vulnerability highlights the ongoing need for robust security practices in managing Linux environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/linux-kernel-dirty-frag-lpe-exploit.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "Ivanti EPMM RCE Exploited—Admin Access Granted",
+            "title": "Ivanti EPMM CVE-2026-6973 Exploited in Active Attacks",
+            "content": "Ivanti has alerted users to a high-severity remote code execution (RCE) vulnerability, CVE-2026-6973, in its Endpoint Manager Mobile (EPMM) software. This flaw, resulting from improper input validation, has been actively exploited in limited attacks. Versions prior to 12.6.1.1, 12.7.0.1, and 12.8.0 are affected, granting attackers admin-level access. Organizations using EPMM should urgently update to the latest versions to mitigate this risk. This incident underscores the critical importance of timely patch management and proactive security measures in enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 09 2026",
             "headline": "cPanel Vulnerabilities—Privilege Escalation and Code Execution Risks",
             "title": "cPanel and WHM Patch Three Vulnerabilities Including Privilege Escalation",
@@ -61,20 +115,65 @@ const websiteContent = {
     "aiShorts": [
         {
             "date": "May 08 2026",
+            "headline": "OpenAI's GPT-5 Voice Models Revolutionize Real-Time Interaction",
+            "title": "OpenAI Introduces GPT-5-Class Voice Models for Enhanced Real-Time Orchestration",
+            "content": "OpenAI has unveiled three new voice models incorporating GPT-5-class reasoning, significantly enhancing the capabilities of real-time voice agents. Previously, enterprises faced challenges with context ceilings, requiring complex session resets and state management layers. These new models alleviate such burdens by offering improved context retention and reasoning capabilities. This development is poised to transform industries reliant on voice interactions, from customer support to smart home devices. Organizations can now deploy voice agents with greater efficiency and reduced overhead. Professionals should evaluate these models for integration into existing voice systems to leverage their advanced orchestration potential.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/openai-brings-gpt-5-class-reasoning-to-real-time-voice-and-it-changes-what-voice-agents-can-actually-orchestrate",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Oracle Denies Severance Negotiations for Laid-Off Workers",
+            "title": "Oracle Refuses Severance Negotiations Amid Layoffs, Citing Remote Worker Classification",
+            "content": "Oracle has declined to negotiate enhanced severance packages for recently laid-off employees, citing their classification as remote workers. This classification exempts them from WARN Act protections, which typically require a two-month notice period. The decision affects numerous employees who were expecting additional severance benefits. This move highlights a growing trend where remote work classifications impact employee rights and benefits. Affected workers are advised to review their employment contracts and consult legal counsel to explore potential recourse. This situation underscores the importance of understanding employment classifications in remote work arrangements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/08/laid-off-oracle-workers-tried-to-negotiate-better-severance-oracle-said-no/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Intel's Stock Surges 490% Amid Turnaround Speculation",
+            "title": "Intel's Remarkable Stock Surge Reflects Market Optimism Despite Turnaround Challenges",
+            "content": "Intel's stock has experienced an extraordinary 490% increase over the past year, driven by investor optimism about the company's turnaround efforts. Despite this surge, analysts caution that the stock's performance may outpace the actual progress of Intel's strategic initiatives. The company is undergoing significant changes to regain its competitive edge in the semiconductor industry. Investors and industry professionals should closely monitor Intel's quarterly reports and strategic announcements to assess the sustainability of this growth. This situation exemplifies the volatile nature of tech stocks amid corporate restructuring.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/08/intels-comeback-story-is-even-wilder-than-it-seems/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "AI Data Centers Spark Global Energy and Environmental Concerns",
+            "title": "Expansion of AI Data Centers Raises Energy and Environmental Challenges Worldwide",
+            "content": "The rapid expansion of AI data centers is fueling global debates over their environmental and energy impacts. These facilities, essential for supporting AI advancements, are criticized for their substantial energy consumption and potential strain on power grids. Communities near new data centers are voicing concerns about increased utility bills and environmental degradation. As tech companies race to build these infrastructures, balancing technological growth with environmental responsibility becomes crucial. Stakeholders should advocate for sustainable practices and policies to mitigate the adverse effects of data center proliferation.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "AI Efficiency Leads to 1,100 Layoffs at Cloudflare",
+            "title": "Cloudflare Attributes 1,100 Job Cuts to AI-Driven Efficiency Gains",
+            "content": "Cloudflare has announced the elimination of 1,100 positions, attributing the layoffs to increased efficiency from AI technologies. Despite achieving record-high revenues, the company determined that AI advancements reduced the need for certain support roles. This marks Cloudflare's first large-scale layoff, reflecting a broader industry trend where AI is reshaping workforce requirements. Affected employees should explore opportunities for reskilling in AI and tech fields to remain competitive. This development highlights the dual impact of AI on business operations—enhancing efficiency while disrupting traditional job roles.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Chrome's 4GB AI Model Storage Sparks User Confusion",
+            "title": "Understanding Chrome's 4GB AI Model Storage and User Options",
+            "content": "Google Chrome users have expressed confusion over the browser's 4GB local storage requirement for AI models. While the feature isn't new, it has raised questions about storage management and user control. Users can disable this feature to reclaim storage space, although it may affect AI functionalities. This situation underscores the importance of user awareness regarding browser settings and resource allocation. Professionals should educate users on managing browser storage and optimizing settings for their needs. This case highlights the ongoing balance between AI capabilities and resource consumption in software applications.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/05/no-google-hasnt-changed-chromes-local-ai-features-its-just-as-confusing-as-ever/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
             "headline": "Google AI Search to Cite Sources—Boosts Transparency",
             "title": "Google Enhances AI Search with New Source Citation Features",
             "content": "Google is set to improve its AI search capabilities by introducing enhanced source citation features. This update aims to provide users with more transparency by linking directly to the original sources of information used in AI-generated overviews. The move addresses growing concerns about the reliability and accountability of AI-generated content. By offering clearer source attribution, Google hopes to build trust with users and mitigate misinformation risks. This development is part of a broader trend towards increased transparency in AI systems, which is critical for maintaining user confidence in automated information services.",
             "source": "Ars Technica",
             "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "OpenAI Unveils GPT-5.5-Cyber—Enhances Cyber Defense",
-            "title": "OpenAI Launches GPT-5.5 and GPT-5.5-Cyber for Enhanced Cybersecurity",
-            "content": "OpenAI has announced the release of GPT-5.5 and a specialized version, GPT-5.5-Cyber, aimed at bolstering cybersecurity efforts. These models are designed to assist verified cybersecurity professionals in accelerating vulnerability research and protecting critical infrastructure. By leveraging advanced natural language processing capabilities, GPT-5.5-Cyber can analyze threat data more efficiently, offering insights into potential vulnerabilities and attack vectors. This initiative underscores OpenAI's commitment to supporting the cybersecurity community in an era of increasing digital threats. Organizations are encouraged to integrate these tools to enhance their defensive strategies.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
             "relatedResources": []
         },
         {
