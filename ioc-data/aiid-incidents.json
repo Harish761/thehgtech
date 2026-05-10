@@ -17,6 +17,22 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1483",
+      "incident_id": 1483,
+      "title": "Facebook Account Reportedly Used AI-Generated Video to Impersonate Indonesian Preacher Ustaz Ujang B",
+      "date": "2026-05-10",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1484",
+      "incident_id": 1484,
+      "title": "Purportedly AI-Generated Image Reportedly Misled Daejeon Authorities Searching for Escaped Wolf Neuk",
+      "date": "2026-05-10",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1339",
       "incident_id": 1339,
       "title": "Purportedly AI-Cloned Voice Allegedly Used to Defraud Play School Owner of \u20b997,500 (~$1,080 USD) in ",
@@ -1026,9 +1042,9 @@
     }
   ],
   "stats": {
-    "total": 128,
-    "last7Days": 10,
-    "last30Days": 39
+    "total": 130,
+    "last7Days": 12,
+    "last30Days": 41
   },
-  "lastUpdated": "2026-05-10T19:20:09.731238+05:30"
+  "lastUpdated": "2026-05-10T22:37:44.135220+05:30"
 }
