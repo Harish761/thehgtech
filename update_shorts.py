@@ -172,19 +172,31 @@ def match_entities_to_internal_content(title, content, entities=None):
 
 def sanitize_content(text):
     """
-    Sanitize content for safe HTML rendering
-    Prevents XSS attacks by removing/escaping dangerous content
+    Sanitize content for safe storage in JSON.
+    Decodes HTML entities and strips tags so JSON contains clean plain text.
+    The JavaScript rendering layer handles XSS protection at display time.
+    
+    IMPORTANT: Do NOT call html.escape() here — that produces &quot; &amp; etc.
+    which get double-encoded when JS escapeHTML() processes them for innerHTML.
+    JSON should store raw characters (quotes, ampersands, apostrophes).
     """
     if not text:
         return ""
     
+    # Decode ALL HTML entities first (e.g., &quot; → ", &#x27; → ', &amp; → &)
     text = unescape(text)
+    # Decode again in case of double-encoded entities (e.g., &amp;quot; → &quot; → ")
+    text = unescape(text)
+    
+    # Strip all HTML tags
     text = re.sub(r'<[^>]*>', '', text)
-    text = escape(text)
+    
+    # Remove dangerous URI schemes (XSS vectors)
     text = re.sub(r'javascript:', '', text, flags=re.IGNORECASE)
     text = re.sub(r'on\w+\s*=', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'data:', '', text, flags=re.IGNORECASE)
     text = re.sub(r'vbscript:', '', text, flags=re.IGNORECASE)
+    
+    # Collapse whitespace
     text = ' '.join(text.split())
     
     return text.strip()
@@ -551,6 +563,8 @@ def fetch_recent_articles(feeds, hours_back=72):  # INCREASED FROM 48 to 72
                     summary = summary[:500]
                     
                     title = sanitize_content(entry.get('title', 'No title'))
+                    # Extra safety: ensure no HTML entities survive in title
+                    title = unescape(title)
                     source = sanitize_content(feed.feed.get('title', 'Unknown Source'))
                     link = validate_url(entry.get('link', ''))
                     

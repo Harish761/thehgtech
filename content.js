@@ -16,7 +16,7 @@ const websiteContent = {
             "date": "May 05 2026",
             "headline": "DAEMON Tools Supply Chain Attack—Malware in Installers",
             "title": "DAEMON Tools Installers Compromised in Supply Chain Attack",
-            "content": "A supply chain attack has compromised DAEMON Tools software installers, embedding them with malware, as reported by Kaspersky. The malicious installers, distributed from DAEMON Tools&#x27; official website, were signed with legitimate digital certificates, making detection challenging. This breach highlights the vulnerabilities in software distribution channels and the risks of trusted sources being exploited. Users who downloaded DAEMON Tools recently should verify their installations and consider using security tools to detect and remove potential malware. This incident serves as a reminder of the growing sophistication of supply chain attacks.",
+            "content": "A supply chain attack has compromised DAEMON Tools software installers, embedding them with malware, as reported by Kaspersky. The malicious installers, distributed from DAEMON Tools' official website, were signed with legitimate digital certificates, making detection challenging. This breach highlights the vulnerabilities in software distribution channels and the risks of trusted sources being exploited. Users who downloaded DAEMON Tools recently should verify their installations and consider using security tools to detect and remove potential malware. This incident serves as a reminder of the growing sophistication of supply chain attacks.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/daemon-tools-supply-chain-attack.html",
             "relatedResources": []
@@ -32,18 +32,18 @@ const websiteContent = {
         },
         {
             "date": "May 05 2026",
-            "headline": "Hacking AI—Joey Melo&#x27;s Insights on AI Vulnerabilities",
+            "headline": "Hacking AI—Joey Melo's Insights on AI Vulnerabilities",
             "title": "AI Red Team Specialist Joey Melo Discusses Hacking AI Guardrails",
-            "content": "Joey Melo, an AI red team specialist, shares his expertise on exploiting vulnerabilities in AI systems through techniques like jailbreaking and data poisoning. These methods allow attackers to bypass AI guardrails, potentially leading to unintended model behaviors. Melo&#x27;s insights are crucial for developers aiming to strengthen machine learning models against such manipulations. As AI systems become more integrated into critical applications, understanding and mitigating these vulnerabilities is essential. Developers are encouraged to adopt robust security measures and continuous testing to protect AI models from sophisticated attacks.",
+            "content": "Joey Melo, an AI red team specialist, shares his expertise on exploiting vulnerabilities in AI systems through techniques like jailbreaking and data poisoning. These methods allow attackers to bypass AI guardrails, potentially leading to unintended model behaviors. Melo's insights are crucial for developers aiming to strengthen machine learning models against such manipulations. As AI systems become more integrated into critical applications, understanding and mitigating these vulnerabilities is essential. Developers are encouraged to adopt robust security measures and continuous testing to protect AI models from sophisticated attacks.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/hacker-conversations-joey-melo-on-hacking-ai/",
             "relatedResources": []
         },
         {
             "date": "May 05 2026",
-            "headline": "Vimeo Breach—119,000 Users&#x27; Data Exposed",
-            "title": "ShinyHunters Gang Hacks Vimeo, Exposing 119,000 Users&#x27; Personal Data",
-            "content": "The ShinyHunters extortion group has breached Vimeo, compromising the personal information of over 119,000 users. The data breach, confirmed by Have I Been Pwned, includes sensitive details that could be exploited for identity theft or phishing attacks. This incident highlights the persistent threat posed by cybercriminal groups targeting online platforms. Affected users should monitor their accounts for suspicious activity and consider changing passwords as a precaution. Vimeo&#x27;s breach underscores the need for robust security measures and user awareness to mitigate the impact of such attacks.",
+            "headline": "Vimeo Breach—119,000 Users' Data Exposed",
+            "title": "ShinyHunters Gang Hacks Vimeo, Exposing 119,000 Users' Personal Data",
+            "content": "The ShinyHunters extortion group has breached Vimeo, compromising the personal information of over 119,000 users. The data breach, confirmed by Have I Been Pwned, includes sensitive details that could be exploited for identity theft or phishing attacks. This incident highlights the persistent threat posed by cybercriminal groups targeting online platforms. Affected users should monitor their accounts for suspicious activity and consider changing passwords as a precaution. Vimeo's breach underscores the need for robust security measures and user awareness to mitigate the impact of such attacks.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/vimeo-data-breach-exposes-personal-information-of-119-000-people/",
             "relatedResources": []
@@ -61,7 +61,7 @@ const websiteContent = {
             "date": "May 04 2026",
             "headline": "Weaver E-cology Exploit—Critical Bug CVE-2026-22679 Abused",
             "title": "Critical Vulnerability in Weaver E-cology Exploited Since March",
-            "content": "A critical vulnerability identified as CVE-2026-22679 in Weaver E-cology&#x27;s office automation software has been actively exploited by hackers since mid-March. This flaw allows attackers to execute discovery commands, potentially compromising sensitive data and operations. Weaver E-cology, widely used in enterprise environments for workflow automation, has not yet released a patch, leaving users at risk. Organizations using this software should immediately implement network segmentation and monitor for unusual activity. The ongoing exploitation underscores the need for rapid vulnerability management and threat detection capabilities.",
+            "content": "A critical vulnerability identified as CVE-2026-22679 in Weaver E-cology's office automation software has been actively exploited by hackers since mid-March. This flaw allows attackers to execute discovery commands, potentially compromising sensitive data and operations. Weaver E-cology, widely used in enterprise environments for workflow automation, has not yet released a patch, leaving users at risk. Organizations using this software should immediately implement network segmentation and monitor for unusual activity. The ongoing exploitation underscores the need for rapid vulnerability management and threat detection capabilities.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/weaver-e-cology-critical-bug-exploited-in-attacks-since-march/",
             "relatedResources": []
@@ -70,7 +70,7 @@ const websiteContent = {
             "date": "May 04 2026",
             "headline": "Trellix Source Code Breach—No Release Impact Found",
             "title": "Trellix Confirms Source Code Repository Breach, No Release Impact",
-            "content": "Trellix has disclosed a breach of its source code repository, though initial investigations reveal no impact on the company&#x27;s source code release or distribution processes. The cybersecurity firm is conducting a thorough review to ensure the integrity of its software and reassure customers. While the breach highlights vulnerabilities in software supply chains, Trellix&#x27;s swift response and transparency are crucial in maintaining trust. Security professionals should review their own source code management practices to prevent similar incidents. This event emphasizes the importance of robust access controls and continuous monitoring in protecting critical assets.",
+            "content": "Trellix has disclosed a breach of its source code repository, though initial investigations reveal no impact on the company's source code release or distribution processes. The cybersecurity firm is conducting a thorough review to ensure the integrity of its software and reassure customers. While the breach highlights vulnerabilities in software supply chains, Trellix's swift response and transparency are crucial in maintaining trust. Security professionals should review their own source code management practices to prevent similar incidents. This event emphasizes the importance of robust access controls and continuous monitoring in protecting critical assets.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/trellix-source-code-repository-breached/",
             "relatedResources": []
@@ -88,7 +88,7 @@ const websiteContent = {
             "date": "May 04 2026",
             "headline": "Trellix Discloses Breach—Source Code Repository Compromised",
             "title": "Trellix Reveals Data Breach Following Source Code Repository Hack",
-            "content": "Trellix has publicly disclosed a data breach after attackers accessed part of its source code repository. The company is actively investigating the extent of the breach and its potential implications for product security. While no direct impact on software distribution has been reported, the incident raises concerns about the security of software development environments. Trellix&#x27;s transparency in handling the breach is a critical step in maintaining customer trust. Security teams should evaluate their own code repository security measures to prevent unauthorized access.",
+            "content": "Trellix has publicly disclosed a data breach after attackers accessed part of its source code repository. The company is actively investigating the extent of the breach and its potential implications for product security. While no direct impact on software distribution has been reported, the incident raises concerns about the security of software development environments. Trellix's transparency in handling the breach is a critical step in maintaining customer trust. Security teams should evaluate their own code repository security measures to prevent unauthorized access.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/trellix-discloses-data-breach-after-source-code-repository-hack/",
             "relatedResources": []
@@ -97,7 +97,7 @@ const websiteContent = {
             "date": "May 04 2026",
             "headline": "Weekly Cyber Recap—AI Phishing, Linux Exploit, GitHub RCE",
             "title": "Weekly Cybersecurity Recap: AI Phishing, Linux Exploit, GitHub RCE",
-            "content": "This week&#x27;s cybersecurity landscape saw rapid developments, with attackers leveraging AI-powered phishing, exploiting Linux vulnerabilities, and targeting GitHub with remote code execution (RCE) attacks. These incidents highlight a shift from traditional breaches to more sophisticated occupation strategies, where attackers gain persistent access to systems. Security teams are urged to prioritize patch management and enhance monitoring capabilities to detect and respond to these evolving threats. The increasing complexity of attacks underscores the need for proactive threat intelligence and adaptive defense mechanisms.",
+            "content": "This week's cybersecurity landscape saw rapid developments, with attackers leveraging AI-powered phishing, exploiting Linux vulnerabilities, and targeting GitHub with remote code execution (RCE) attacks. These incidents highlight a shift from traditional breaches to more sophisticated occupation strategies, where attackers gain persistent access to systems. Security teams are urged to prioritize patch management and enhance monitoring capabilities to detect and respond to these evolving threats. The increasing complexity of attacks underscores the need for proactive threat intelligence and adaptive defense mechanisms.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html",
             "relatedResources": []
@@ -144,7 +144,7 @@ const websiteContent = {
             "date": "May 05 2026",
             "headline": "Google, Microsoft, xAI Open AI Models to U.S. Scrutiny",
             "title": "Tech Giants Agree to U.S. Government Review of AI Models Before Release",
-            "content": "Google DeepMind, Microsoft, and Elon Musk&#x27;s xAI have agreed to allow the U.S. government to review their AI models before public release. This collaboration with the Commerce Department&#x27;s Center for AI Standards and Innovation (CAISI) aims to ensure AI safety and compliance with emerging regulations. The initiative reflects growing concerns over AI&#x27;s potential risks and the need for oversight in AI development. This move could set a precedent for other AI developers and impact the pace of AI innovation. Industry professionals should monitor regulatory developments and prepare for potential compliance requirements.",
+            "content": "Google DeepMind, Microsoft, and Elon Musk's xAI have agreed to allow the U.S. government to review their AI models before public release. This collaboration with the Commerce Department's Center for AI Standards and Innovation (CAISI) aims to ensure AI safety and compliance with emerging regulations. The initiative reflects growing concerns over AI's potential risks and the need for oversight in AI development. This move could set a precedent for other AI developers and impact the pace of AI innovation. Industry professionals should monitor regulatory developments and prepare for potential compliance requirements.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/924017/google-microsoft-xai-government-review",
             "relatedResources": []
@@ -153,7 +153,7 @@ const websiteContent = {
             "date": "May 05 2026",
             "headline": "ElevenLabs Secures $500M ARR—Attracts BlackRock, Jamie Foxx, Eva Longoria",
             "title": "ElevenLabs Expands with New Investors and $500M Annual Recurring Revenue",
-            "content": "Voice AI company ElevenLabs has announced new investments from BlackRock, Jamie Foxx, and Eva Longoria, alongside reaching a $500 million annual recurring revenue milestone. This funding will support ElevenLabs&#x27; expansion into enterprise markets as voice AI becomes increasingly integral to user interfaces. The company&#x27;s growth underscores the rising demand for sophisticated voice technologies in various sectors. Industry stakeholders should consider the implications of voice AI advancements on customer interaction strategies and competitive positioning. ElevenLabs&#x27; success highlights the potential for AI-driven interfaces to transform business operations.",
+            "content": "Voice AI company ElevenLabs has announced new investments from BlackRock, Jamie Foxx, and Eva Longoria, alongside reaching a $500 million annual recurring revenue milestone. This funding will support ElevenLabs' expansion into enterprise markets as voice AI becomes increasingly integral to user interfaces. The company's growth underscores the rising demand for sophisticated voice technologies in various sectors. Industry stakeholders should consider the implications of voice AI advancements on customer interaction strategies and competitive positioning. ElevenLabs' success highlights the potential for AI-driven interfaces to transform business operations.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-eva-longoria-as-new-investors/",
             "relatedResources": []
@@ -162,7 +162,7 @@ const websiteContent = {
             "date": "May 05 2026",
             "headline": "OpenClaw Exploits Repos—No Scanner Detects AI Agent Backdoor",
             "title": "OpenClaw Highlights Vulnerability in Open-Source Repositories with AI Backdoor",
-            "content": "Researchers at the University of Hong Kong&#x27;s Data Intelligence Lab have revealed a critical vulnerability in open-source repositories through a tool called CLI-Anything. This tool can transform any repository into an AI agent backdoor with a single command, bypassing existing supply-chain scanners. The OpenClaw exploit demonstrates a significant gap in current security measures, potentially affecting countless open-source projects. Developers and security professionals should prioritize enhancing supply-chain security and explore new detection methodologies to mitigate such risks. This discovery emphasizes the urgent need for robust security frameworks in open-source environments.",
+            "content": "Researchers at the University of Hong Kong's Data Intelligence Lab have revealed a critical vulnerability in open-source repositories through a tool called CLI-Anything. This tool can transform any repository into an AI agent backdoor with a single command, bypassing existing supply-chain scanners. The OpenClaw exploit demonstrates a significant gap in current security measures, potentially affecting countless open-source projects. Developers and security professionals should prioritize enhancing supply-chain security and explore new detection methodologies to mitigate such risks. This discovery emphasizes the urgent need for robust security frameworks in open-source environments.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/security/one-command-open-source-repo-ai-agent-backdoor-openclaw-supply-chain-scanner",
             "relatedResources": []
@@ -170,53 +170,53 @@ const websiteContent = {
         {
             "date": "May 05 2026",
             "headline": "SAP Invests $1.16B in German AI Startup Prior Labs",
-            "title": "SAP Acquires Prior Labs and Embraces Nvidia&#x27;s NemoClaw for AI Innovation",
-            "content": "SAP has announced a $1.16 billion investment to acquire German AI startup Prior Labs, aiming to bolster its AI capabilities. The acquisition includes a strategic decision to limit customer AI agent usage to select platforms like Nvidia&#x27;s NemoClaw. This move reflects SAP&#x27;s commitment to integrating cutting-edge AI technologies while maintaining control over AI deployment. The investment highlights the growing trend of major tech companies investing in AI startups to accelerate innovation. SAP customers should anticipate enhanced AI solutions and prepare for potential changes in AI integration strategies.",
+            "title": "SAP Acquires Prior Labs and Embraces Nvidia's NemoClaw for AI Innovation",
+            "content": "SAP has announced a $1.16 billion investment to acquire German AI startup Prior Labs, aiming to bolster its AI capabilities. The acquisition includes a strategic decision to limit customer AI agent usage to select platforms like Nvidia's NemoClaw. This move reflects SAP's commitment to integrating cutting-edge AI technologies while maintaining control over AI deployment. The investment highlights the growing trend of major tech companies investing in AI startups to accelerate innovation. SAP customers should anticipate enhanced AI solutions and prepare for potential changes in AI integration strategies.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/05/sap-bets-1-16b-on-18-month-old-german-ai-lab-and-says-yes-to-nemoclaw/",
             "relatedResources": []
         },
         {
             "date": "May 05 2026",
-            "headline": "Altara Raises $7M to Accelerate Physical Sciences R&amp;D",
+            "headline": "Altara Raises $7M to Accelerate Physical Sciences R&D",
             "title": "Altara Secures Funding to Unify Data and Speed Up Scientific Research",
-            "content": "Altara has raised $7 million to develop AI solutions aimed at bridging data gaps in physical sciences research. The company&#x27;s technology focuses on diagnosing failures and accelerating R&amp;D by integrating data from disparate sources like spreadsheets and legacy systems. This funding will enable Altara to enhance its platform and address the inefficiencies plaguing scientific research. Researchers and institutions should explore Altara&#x27;s solutions to improve data management and streamline research processes. The investment underscores the critical role of AI in transforming traditional scientific methodologies.",
+            "content": "Altara has raised $7 million to develop AI solutions aimed at bridging data gaps in physical sciences research. The company's technology focuses on diagnosing failures and accelerating R&D by integrating data from disparate sources like spreadsheets and legacy systems. This funding will enable Altara to enhance its platform and address the inefficiencies plaguing scientific research. Researchers and institutions should explore Altara's solutions to improve data management and streamline research processes. The investment underscores the critical role of AI in transforming traditional scientific methodologies.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/05/altara-secures-7m-to-bridge-the-data-gap-thats-slowing-down-physical-sciences/",
             "relatedResources": []
         },
         {
             "date": "May 05 2026",
-            "headline": "Google Home&#x27;s Gemini 3.1 Boosts Smart Assistant Capabilities",
-            "title": "Google Home&#x27;s Gemini AI Update Enhances Multi-Step Task Handling",
-            "content": "Google has updated its smart home assistant, Gemini, to version 3.1, significantly improving its ability to handle complex, multi-step tasks. This upgrade allows users to combine multiple requests into a single command, enhancing the efficiency and functionality of Google Home devices. The update reflects Google&#x27;s ongoing commitment to advancing AI capabilities in consumer products. Users should update their devices to leverage these new features and improve their smart home experience. This development highlights the growing sophistication of AI in everyday technology and its impact on user convenience.",
+            "headline": "Google Home's Gemini 3.1 Boosts Smart Assistant Capabilities",
+            "title": "Google Home's Gemini AI Update Enhances Multi-Step Task Handling",
+            "content": "Google has updated its smart home assistant, Gemini, to version 3.1, significantly improving its ability to handle complex, multi-step tasks. This upgrade allows users to combine multiple requests into a single command, enhancing the efficiency and functionality of Google Home devices. The update reflects Google's ongoing commitment to advancing AI capabilities in consumer products. Users should update their devices to leverage these new features and improve their smart home experience. This development highlights the growing sophistication of AI in everyday technology and its impact on user convenience.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/924755/google-home-gemini-3-1-upgrade",
             "relatedResources": []
         },
         {
             "date": "May 04 2026",
-            "headline": "Amex&#x27;s AI Agents Revolutionize Transactions—But Trust Issues Loom",
-            "title": "Amex&#x27;s AI-Driven Agentic Commerce Faces Trust and Auditability Challenges",
-            "content": "American Express (Amex) is pioneering a new frontier in digital transactions with its agentic commerce stack, allowing AI agents to shop and pay on behalf of users. This system currently operates exclusively within Amex&#x27;s payment network, leveraging intent contracts and single-use tokens to enforce transactions. However, the reliance on a black-box approach raises significant concerns about trust and auditability, potentially hindering broader adoption. While Amex&#x27;s participation in agentic commerce protocol projects highlights its commitment to innovation, the opacity of the system could deter users wary of untraceable transactions. Professionals in the financial and tech sectors should monitor this development closely, as it may set precedents for future AI-driven transaction systems.",
+            "headline": "Amex's AI Agents Revolutionize Transactions—But Trust Issues Loom",
+            "title": "Amex's AI-Driven Agentic Commerce Faces Trust and Auditability Challenges",
+            "content": "American Express (Amex) is pioneering a new frontier in digital transactions with its agentic commerce stack, allowing AI agents to shop and pay on behalf of users. This system currently operates exclusively within Amex's payment network, leveraging intent contracts and single-use tokens to enforce transactions. However, the reliance on a black-box approach raises significant concerns about trust and auditability, potentially hindering broader adoption. While Amex's participation in agentic commerce protocol projects highlights its commitment to innovation, the opacity of the system could deter users wary of untraceable transactions. Professionals in the financial and tech sectors should monitor this development closely, as it may set precedents for future AI-driven transaction systems.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/orchestration/inside-amexs-agentic-commerce-stack-how-intent-contracts-and-single-use-tokens-enforce-ai-transactions",
             "relatedResources": []
         },
         {
             "date": "May 05 2026",
-            "headline": "Nvidia&#x27;s CEO: AI Job Creation Outpaces Fears of Automation",
-            "title": "Nvidia&#x27;s Jensen Huang Asserts AI&#x27;s Role in Job Creation Amid Automation Fears",
-            "content": "Nvidia CEO Jensen Huang has addressed growing concerns about AI&#x27;s potential to displace jobs, asserting that AI is, in fact, generating a substantial number of new employment opportunities. Huang&#x27;s comments come amid widespread anxiety among workers about AI-driven automation. He argues that AI technologies are not only enhancing productivity but also creating demand for new roles in AI development, deployment, and maintenance. This perspective challenges the narrative that AI will lead to massive job losses, suggesting instead that the tech industry may see a shift in job types rather than a reduction. Professionals should consider the evolving landscape of AI-related employment and the potential for new career paths.",
+            "headline": "Nvidia's CEO: AI Job Creation Outpaces Fears of Automation",
+            "title": "Nvidia's Jensen Huang Asserts AI's Role in Job Creation Amid Automation Fears",
+            "content": "Nvidia CEO Jensen Huang has addressed growing concerns about AI's potential to displace jobs, asserting that AI is, in fact, generating a substantial number of new employment opportunities. Huang's comments come amid widespread anxiety among workers about AI-driven automation. He argues that AI technologies are not only enhancing productivity but also creating demand for new roles in AI development, deployment, and maintenance. This perspective challenges the narrative that AI will lead to massive job losses, suggesting instead that the tech industry may see a shift in job types rather than a reduction. Professionals should consider the evolving landscape of AI-related employment and the potential for new career paths.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/04/as-workers-worry-about-ai-nvidias-jensen-huang-says-ai-is-creating-an-enormous-number-of-jobs/",
             "relatedResources": []
         },
         {
             "date": "May 04 2026",
-            "headline": "OpenAI Trial: Brockman&#x27;s Testimony Highlights Internal Tensions",
-            "title": "OpenAI President Greg Brockman Testifies in Elon Musk&#x27;s Legal Battle",
-            "content": "In a pivotal moment during Elon Musk&#x27;s legal proceedings against OpenAI, Greg Brockman, OpenAI&#x27;s president, provided testimony that underscored internal tensions within the organization. Brockman&#x27;s journal, presented as evidence, has emerged as a critical element in the case, revealing insights into OpenAI&#x27;s decision-making processes. The unusual sequence of cross-examination followed by direct examination highlighted Brockman&#x27;s significant role and potential conflicts within OpenAI. This trial could have far-reaching implications for AI governance and transparency, especially concerning how AI organizations manage internal dissent and strategic decisions. Stakeholders in AI development and policy should pay close attention to the trial&#x27;s outcomes.",
+            "headline": "OpenAI Trial: Brockman's Testimony Highlights Internal Tensions",
+            "title": "OpenAI President Greg Brockman Testifies in Elon Musk's Legal Battle",
+            "content": "In a pivotal moment during Elon Musk's legal proceedings against OpenAI, Greg Brockman, OpenAI's president, provided testimony that underscored internal tensions within the organization. Brockman's journal, presented as evidence, has emerged as a critical element in the case, revealing insights into OpenAI's decision-making processes. The unusual sequence of cross-examination followed by direct examination highlighted Brockman's significant role and potential conflicts within OpenAI. This trial could have far-reaching implications for AI governance and transparency, especially concerning how AI organizations manage internal dissent and strategic decisions. Stakeholders in AI development and policy should pay close attention to the trial's outcomes.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/923684/musk-brockman-altman-openai-trial",
             "relatedResources": []
@@ -225,7 +225,7 @@ const websiteContent = {
             "date": "May 04 2026",
             "headline": "Image AI Models Boost App Downloads—Revenue Growth Lags",
             "title": "Visual AI Models Drive App Downloads but Struggle with Revenue Conversion",
-            "content": "Recent findings from Appfigures reveal that the launch of image-based AI models significantly boosts app downloads, achieving a 6.5-fold increase compared to chatbot upgrades. Despite this surge in user acquisition, these visual models often fail to convert the increased downloads into substantial revenue. This trend suggests a gap between user interest and monetization strategies, posing a challenge for developers seeking to capitalize on AI-driven app enhancements. As visual AI continues to evolve, developers and tech leaders must explore innovative monetization approaches to bridge this gap and sustain growth. Understanding user engagement and refining business models will be crucial for leveraging AI&#x27;s full potential in the app market.",
+            "content": "Recent findings from Appfigures reveal that the launch of image-based AI models significantly boosts app downloads, achieving a 6.5-fold increase compared to chatbot upgrades. Despite this surge in user acquisition, these visual models often fail to convert the increased downloads into substantial revenue. This trend suggests a gap between user interest and monetization strategies, posing a challenge for developers seeking to capitalize on AI-driven app enhancements. As visual AI continues to evolve, developers and tech leaders must explore innovative monetization approaches to bridge this gap and sustain growth. Understanding user engagement and refining business models will be crucial for leveraging AI's full potential in the app market.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades/",
             "relatedResources": []
@@ -234,7 +234,7 @@ const websiteContent = {
             "date": "May 04 2026",
             "headline": "AGI Arms Race Concerns Raised in OpenAI Trial Testimony",
             "title": "Stuart Russell Warns of AGI Arms Race in OpenAI Legal Proceedings",
-            "content": "Stuart Russell, a prominent AI researcher and the sole expert witness for Elon Musk in the OpenAI trial, has voiced concerns about an impending artificial general intelligence (AGI) arms race. Russell&#x27;s testimony emphasized the need for governmental oversight to prevent unchecked competition among frontier labs developing AGI technologies. His warnings highlight the potential risks associated with rapid AGI advancements, including ethical dilemmas and global security threats. This testimony underscores the importance of establishing regulatory frameworks to manage AGI development responsibly. Policymakers and AI researchers should consider these insights to mitigate risks and ensure the safe progression of AGI technologies.",
+            "content": "Stuart Russell, a prominent AI researcher and the sole expert witness for Elon Musk in the OpenAI trial, has voiced concerns about an impending artificial general intelligence (AGI) arms race. Russell's testimony emphasized the need for governmental oversight to prevent unchecked competition among frontier labs developing AGI technologies. His warnings highlight the potential risks associated with rapid AGI advancements, including ethical dilemmas and global security threats. This testimony underscores the importance of establishing regulatory frameworks to manage AGI development responsibly. Policymakers and AI researchers should consider these insights to mitigate risks and ensure the safe progression of AGI technologies.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/04/elon-musks-only-expert-witness-at-the-openai-trial-fears-an-agi-arms-race/",
             "relatedResources": []
@@ -242,8 +242,8 @@ const websiteContent = {
         {
             "date": "May 04 2026",
             "headline": "Roomba Creator Unveils Robotic Companion—A New Era of Home AI",
-            "title": "Colin Angle Introduces Furry Robot Companion from Familiar Machines &amp; Magic",
-            "content": "Colin Angle, the visionary behind the Roomba, has launched a new venture with Familiar Machines &amp; Magic, unveiling a dog-sized robotic companion designed to enhance human interaction. Unlike traditional cleaning robots, this AI-driven companion focuses on providing emotional support and companionship, marking a shift in the role of household robots. This development reflects a growing trend towards integrating AI into everyday life in more personal and interactive ways. As AI technology continues to evolve, the introduction of such companion robots could redefine human-robot relationships, offering new opportunities for emotional engagement and assistance. Industry professionals should explore the implications of this shift for future AI applications in domestic settings.",
+            "title": "Colin Angle Introduces Furry Robot Companion from Familiar Machines & Magic",
+            "content": "Colin Angle, the visionary behind the Roomba, has launched a new venture with Familiar Machines & Magic, unveiling a dog-sized robotic companion designed to enhance human interaction. Unlike traditional cleaning robots, this AI-driven companion focuses on providing emotional support and companionship, marking a shift in the role of household robots. This development reflects a growing trend towards integrating AI into everyday life in more personal and interactive ways. As AI technology continues to evolve, the introduction of such companion robots could redefine human-robot relationships, offering new opportunities for emotional engagement and assistance. Industry professionals should explore the implications of this shift for future AI applications in domestic settings.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/922947/roomba-creator-new-robot-familiar-machines-magic-ai-launch",
             "relatedResources": []
@@ -345,8 +345,8 @@ const websiteContent = {
         {
             "cveId": "CVE-2026-41940",
             "dateAdded": "Apr 30, 2026",
-            "vendor": "WebPros cPanel &amp; WHM and WP2 (WordPress Squared)",
-            "description": "WebPros cPanel &amp; WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized ac",
+            "vendor": "WebPros cPanel & WHM and WP2 (WordPress Squared)",
+            "description": "WebPros cPanel & WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized ac",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
