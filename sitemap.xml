@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- May 10, 2026 - Dirty Frag Page Cache Curse -->
+  <url>
+    <loc>https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.99</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.png</image:loc>
+      <image:title>The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class</image:title>
+    </image:image>
+  </url>
+
   <!-- May 6, 2026 - Entra ID Ghost Takeover -->
   <url>
     <loc>https://thehgtech.com/articles/entra-id-ghost-takeover-2026.html</loc>

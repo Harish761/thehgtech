@@ -4,7 +4,19 @@
 
   <!-- ========== LATEST NEWS ARTICLES (Last 48 hours for Google News) ========== -->
 
-  <!-- May 6, 2026 - Entra ID Ghost Takeover -->
+  <!-- May 10, 2026 - Dirty Frag Page Cache Curse -->
+  <url>
+    <loc>https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-10T12:00:00+05:30</news:publication_date>
+      <news:title>The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]</news:title>
+      <news:keywords>Dirty Frag, Linux Kernel, Page Cache, Privilege Escalation, CVE-2026-43284</news:keywords>
+    </news:news>
+  </url>
   <url>
     <loc>https://thehgtech.com/articles/entra-id-ghost-takeover-2026.html</loc>
     <news:news>

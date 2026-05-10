@@ -1,6 +1,19 @@
 {
   "articles": [
     {
+      "id": "dirty-frag-page-cache-curse-2026",
+      "title": "The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]",
+      "date": "May 10, 2026",
+      "category": "Vulnerability Research",
+      "badge": "VULNERABILITY",
+      "author": "Harish G",
+      "excerpt": "From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis of CVE-2026-43284 and CVE-2026-43500 plus a 7-point kernel hardening playbook.",
+      "image": "/images/articles/dirty-frag-page-cache-curse-2026.png",
+      "externalUrl": "articles/dirty-frag-page-cache-curse-2026.html",
+      "readTime": "25 min read",
+      "tags": ["Dirty Frag", "Linux Kernel", "Page Cache", "Privilege Escalation", "Kernel Hardening"]
+    },
+    {
       "id": "entra-id-ghost-takeover-2026",
       "title": "The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You [2026]",
       "date": "May 6, 2026",
