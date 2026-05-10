@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-05-09T15:29:33.680832",
-  "total_incidents": 27970,
+  "last_updated": "2026-05-10T05:48:49.869225",
+  "total_incidents": 27975,
   "incidents": [
+    {
+      "id": "incransom_https://sibillacapital.com/",
+      "victim_name": "https://sibillacapital.com/",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-05-10T03:52:43.562471+00:00",
+      "industry": "Financial Services",
+      "website": "",
+      "claim": "data",
+      "screenshot": "https://images.ransomware.live/victims/dd0d825b345dabcc364c9af55f1dd7b5.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69fffa6bd152110a6ab10d5a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_lopezlawfl.com",
+      "victim_name": "lopezlawfl.com",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-05-10T03:22:09.738762+00:00",
+      "industry": "Business Services",
+      "website": "lopezlawfl.com",
+      "claim": "full data ",
+      "screenshot": "",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69fff6d3d152110a6ab0bb0a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "stormous_ams-group.co.uk_full_data_dump_33gb",
+      "victim_name": "ams-group.co.uk FULL DATA DUMP 33GB",
+      "threat_actor": "stormous",
+      "date_discovered": "2026-05-10T00:26:33.109855+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "The extracted data comprises administrative and financial records, payroll sheets, and client and partner directories, alongside technical and engineering specifications, employee records, and business plans. It also includes architectural designs, official contracts, detailed engineering reports, and construction site maps, as well as risk assessments, internal correspondence, and tax and legal information.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "fulcrumsec_arup_group",
+      "victim_name": "Arup Group",
+      "threat_actor": "fulcrumsec",
+      "date_discovered": "2026-05-10T00:21:41.939145+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "[AI generated] Arup Group is a British multinational professional services firm headquartered in London, United Kingdom. Founded in 1946, it operates in the engineering, design, planning, and consulting industries. The firm provides structural, civil, mechanical, and electrical engineering services, alongside architecture and project management. Arup works across sectors including infrastructure, buildings, transport, and energy, delivering projects in over 140 countries worldwide.",
+      "screenshot": "https://images.ransomware.live/victims/4745537e9273f56718da3d897d09063b.png",
+      "url": "http://4e3p3in2bl67hxchuwza7qvnpe7pyeloyztr5fnh257fxkovfhappjyd.onion/arup/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_eclagestio360.com",
+      "victim_name": "eclagestio360.com",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-05-09T20:52:25.797691+00:00",
+      "industry": "Business Services",
+      "website": "eclagestio360.com",
+      "claim": "ECLAGESTIÓ\nA Spanish company specializing in comprehensive management for businesses and individuals, operating in the...",
+      "screenshot": "https://images.ransomware.live/victims/364ec5cc0b62ee3f872f2226861bd2e3.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/b97904dfa9f56c1edd2c4bc06a22786ff9ec1bb76c4e5717796b18ca076bbbb5/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "genesis_carepoint_health",
       "victim_name": "CarePoint Health",

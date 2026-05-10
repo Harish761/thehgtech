@@ -4,248 +4,113 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "May 05 2026",
-            "headline": "Apache HTTP/2 Flaw—RCE Risk for Web Servers",
-            "title": "Critical Apache HTTP/2 Vulnerability CVE-2026-23918 Allows Potential RCE",
-            "content": "The Apache Software Foundation has issued patches for a critical vulnerability in the Apache HTTP Server, identified as CVE-2026-23918, with a CVSS score of 8.8. This flaw could enable remote code execution (RCE) on affected servers, posing a significant threat to web applications relying on Apache HTTP/2. The vulnerability affects versions prior to the latest patch and could be exploited by attackers to disrupt services or gain unauthorized access. This development underscores the importance of timely updates in maintaining server security. Administrators are urged to apply the latest security updates immediately to mitigate potential risks.",
+            "date": "May 09 2026",
+            "headline": "cPanel Vulnerabilities—Privilege Escalation and Code Execution Risks",
+            "title": "cPanel and WHM Patch Three Vulnerabilities Including Privilege Escalation",
+            "content": "cPanel has issued updates to address three vulnerabilities in its cPanel and Web Host Manager (WHM) software, which could lead to privilege escalation, code execution, and denial-of-service attacks. The vulnerabilities include CVE-2026-29201, which has a CVSS score of 4.3, indicating moderate severity due to insufficient input validation. These vulnerabilities affect versions prior to the latest patch and could allow attackers to gain unauthorized access or disrupt services. Users and administrators are urged to apply the latest updates immediately to mitigate potential risks. This update underscores the importance of regular software maintenance and vigilance against emerging threats.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/critical-apache-http2-flaw-cve-2026.html",
+            "sourceUrl": "https://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html",
             "relatedResources": []
         },
         {
-            "date": "May 05 2026",
-            "headline": "DAEMON Tools Supply Chain Attack—Malware in Installers",
-            "title": "DAEMON Tools Installers Compromised in Supply Chain Attack",
-            "content": "A supply chain attack has compromised DAEMON Tools software installers, embedding them with malware, as reported by Kaspersky. The malicious installers, distributed from DAEMON Tools' official website, were signed with legitimate digital certificates, making detection challenging. This breach highlights the vulnerabilities in software distribution channels and the risks of trusted sources being exploited. Users who downloaded DAEMON Tools recently should verify their installations and consider using security tools to detect and remove potential malware. This incident serves as a reminder of the growing sophistication of supply chain attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/daemon-tools-supply-chain-attack.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "EOL Software—A Hidden Threat in CVE Feeds",
-            "title": "End-of-Life Software Creates Blind Spots in CVE Feeds and SCA Tools",
-            "content": "HeroDevs has identified a critical oversight in software composition analysis (SCA) tools: the failure to account for end-of-life (EOL) software in CVE feeds. This oversight leaves organizations vulnerable to unpatched vulnerabilities in outdated open-source components. As EOL software is no longer maintained, it can harbor severe security risks that are not flagged by standard scanning tools. HeroDevs offers a free EOL scan to help organizations identify and address these hidden threats. This revelation emphasizes the need for comprehensive vulnerability management strategies that include EOL software assessments.",
+            "date": "May 08 2026",
+            "headline": "NVIDIA GeForce NOW Breach—Armenian User Data Exposed",
+            "title": "NVIDIA Confirms Data Breach Impacting GeForce NOW Users in Armenia",
+            "content": "NVIDIA has confirmed a data breach affecting its GeForce NOW service, specifically targeting users in Armenia. The breach has resulted in the exposure of sensitive user information, though NVIDIA has not disclosed the exact nature of the data compromised. This incident highlights the ongoing challenges in securing cloud gaming platforms against sophisticated cyber threats. Affected users are advised to monitor their accounts for suspicious activity and change passwords as a precautionary measure. NVIDIA is currently investigating the breach and working to enhance its security measures to prevent future incidents.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-eol-blind-spot-in-your-cve-feed-what-sca-tools-miss/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nvidia-confirms-geforce-now-data-breach-affecting-armenian-users/",
             "relatedResources": []
         },
         {
-            "date": "May 05 2026",
-            "headline": "Hacking AI—Joey Melo's Insights on AI Vulnerabilities",
-            "title": "AI Red Team Specialist Joey Melo Discusses Hacking AI Guardrails",
-            "content": "Joey Melo, an AI red team specialist, shares his expertise on exploiting vulnerabilities in AI systems through techniques like jailbreaking and data poisoning. These methods allow attackers to bypass AI guardrails, potentially leading to unintended model behaviors. Melo's insights are crucial for developers aiming to strengthen machine learning models against such manipulations. As AI systems become more integrated into critical applications, understanding and mitigating these vulnerabilities is essential. Developers are encouraged to adopt robust security measures and continuous testing to protect AI models from sophisticated attacks.",
+            "date": "May 08 2026",
+            "headline": "RansomHouse Claims Trellix Source Code Breach",
+            "title": "Trellix Source Code Breach Claimed by RansomHouse Hackers",
+            "content": "The RansomHouse threat group has claimed responsibility for breaching the source code repository of cybersecurity firm Trellix. The hackers have leaked a small set of images as proof of their intrusion, raising concerns about the potential exposure of sensitive software components. This breach underscores the increasing targeting of cybersecurity firms by threat actors seeking to exploit their tools and technologies. Trellix is currently assessing the extent of the breach and implementing measures to secure its systems. Organizations are reminded to review their own source code security practices to prevent similar incidents.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trellix-source-code-breach-claimed-by-ransomhouse-hackers/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "CISA Orders Rapid Patch for Ivanti Zero-Day Flaw",
+            "title": "CISA Mandates Federal Agencies Patch Ivanti Zero-Day Vulnerability",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has mandated that U.S. federal agencies patch a high-severity vulnerability in Ivanti Endpoint Manager Mobile (EPMM) within four days. This zero-day vulnerability has been actively exploited, posing significant risks to federal networks. The flaw allows attackers to gain unauthorized access and potentially disrupt critical operations. Agencies are urged to prioritize this patch to safeguard against potential exploitation. This directive reflects CISA's proactive stance in defending federal infrastructure against emerging cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-gives-feds-four-days-to-patch-ivanti-flaw-exploited-as-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Braintrust Data Breach—API Key Rotation Urged",
+            "title": "AI Firm Braintrust Initiates API Key Rotation After Data Breach",
+            "content": "AI company Braintrust has initiated an API key rotation following a data breach where hackers accessed one of its AWS accounts. The breach compromised sensitive AI provider secrets, prompting immediate security measures to prevent further unauthorized access. This incident highlights the critical importance of securing cloud infrastructure and regularly rotating API keys to mitigate potential risks. Braintrust is working to enhance its security protocols and advises other organizations to review their cloud security practices. This breach serves as a reminder of the vulnerabilities inherent in cloud-based systems.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hacker-conversations-joey-melo-on-hacking-ai/",
+            "sourceUrl": "https://www.securityweek.com/ai-firm-braintrust-prompts-api-key-rotation-after-data-breach/",
             "relatedResources": []
         },
         {
-            "date": "May 05 2026",
-            "headline": "Vimeo Breach—119,000 Users' Data Exposed",
-            "title": "ShinyHunters Gang Hacks Vimeo, Exposing 119,000 Users' Personal Data",
-            "content": "The ShinyHunters extortion group has breached Vimeo, compromising the personal information of over 119,000 users. The data breach, confirmed by Have I Been Pwned, includes sensitive details that could be exploited for identity theft or phishing attacks. This incident highlights the persistent threat posed by cybercriminal groups targeting online platforms. Affected users should monitor their accounts for suspicious activity and consider changing passwords as a precaution. Vimeo's breach underscores the need for robust security measures and user awareness to mitigate the impact of such attacks.",
+            "date": "May 08 2026",
+            "headline": "Zara Data Breach—197,000 Customers Affected",
+            "title": "Zara Data Breach Exposes Personal Information of 197,000 Customers",
+            "content": "Spanish fast-fashion retailer Zara has suffered a data breach, exposing the personal information of over 197,000 customers. The breach was confirmed by the data breach notification service Have I Been Pwned, which identified unauthorized access to Zara's databases. This incident underscores the vulnerabilities in retail cybersecurity, where customer data is a prime target for cybercriminals. Affected customers are advised to monitor their financial accounts and consider identity theft protection measures. Zara is currently investigating the breach and taking steps to enhance its data protection strategies.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/vimeo-data-breach-exposes-personal-information-of-119-000-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "Bleeding Llama Bug—300,000 Deployments at Risk",
-            "title": "Critical Bleeding Llama Vulnerability Exposes 300,000 Ollama Deployments",
-            "content": "A critical vulnerability, dubbed Bleeding Llama, has been discovered in Ollama deployments, affecting approximately 300,000 instances. This heap out-of-bounds read issue can be exploited remotely without authentication, potentially leading to information theft. The widespread nature of this vulnerability poses a significant risk to organizations using Ollama for their operations. Administrators are advised to apply available patches immediately and review their security configurations to prevent unauthorized access. This incident highlights the importance of proactive vulnerability management and timely patching in safeguarding sensitive data.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-bug-could-expose-300000-ollama-deployments-to-information-theft/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Weaver E-cology Exploit—Critical Bug CVE-2026-22679 Abused",
-            "title": "Critical Vulnerability in Weaver E-cology Exploited Since March",
-            "content": "A critical vulnerability identified as CVE-2026-22679 in Weaver E-cology's office automation software has been actively exploited by hackers since mid-March. This flaw allows attackers to execute discovery commands, potentially compromising sensitive data and operations. Weaver E-cology, widely used in enterprise environments for workflow automation, has not yet released a patch, leaving users at risk. Organizations using this software should immediately implement network segmentation and monitor for unusual activity. The ongoing exploitation underscores the need for rapid vulnerability management and threat detection capabilities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/weaver-e-cology-critical-bug-exploited-in-attacks-since-march/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Trellix Source Code Breach—No Release Impact Found",
-            "title": "Trellix Confirms Source Code Repository Breach, No Release Impact",
-            "content": "Trellix has disclosed a breach of its source code repository, though initial investigations reveal no impact on the company's source code release or distribution processes. The cybersecurity firm is conducting a thorough review to ensure the integrity of its software and reassure customers. While the breach highlights vulnerabilities in software supply chains, Trellix's swift response and transparency are crucial in maintaining trust. Security professionals should review their own source code management practices to prevent similar incidents. This event emphasizes the importance of robust access controls and continuous monitoring in protecting critical assets.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/trellix-source-code-repository-breached/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "MOVEit Automation Flaw—Critical Authentication Bypass Patched",
-            "title": "Progress Software Patches Critical MOVEit Automation Authentication Bypass",
-            "content": "Progress Software has issued patches for two security vulnerabilities in its MOVEit Automation platform, including a critical authentication bypass flaw. This vulnerability, if exploited, could allow unauthorized access to sensitive data managed by the platform, which is used for secure, automated file transfers. Users of MOVEit Automation should apply the updates immediately to mitigate potential risks. The patch addresses issues in versions prior to the latest release, underscoring the importance of maintaining up-to-date systems. This incident highlights the ongoing challenges in securing managed file transfer solutions against evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/progress-patches-critical-moveit.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Trellix Discloses Breach—Source Code Repository Compromised",
-            "title": "Trellix Reveals Data Breach Following Source Code Repository Hack",
-            "content": "Trellix has publicly disclosed a data breach after attackers accessed part of its source code repository. The company is actively investigating the extent of the breach and its potential implications for product security. While no direct impact on software distribution has been reported, the incident raises concerns about the security of software development environments. Trellix's transparency in handling the breach is a critical step in maintaining customer trust. Security teams should evaluate their own code repository security measures to prevent unauthorized access.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trellix-discloses-data-breach-after-source-code-repository-hack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Weekly Cyber Recap—AI Phishing, Linux Exploit, GitHub RCE",
-            "title": "Weekly Cybersecurity Recap: AI Phishing, Linux Exploit, GitHub RCE",
-            "content": "This week's cybersecurity landscape saw rapid developments, with attackers leveraging AI-powered phishing, exploiting Linux vulnerabilities, and targeting GitHub with remote code execution (RCE) attacks. These incidents highlight a shift from traditional breaches to more sophisticated occupation strategies, where attackers gain persistent access to systems. Security teams are urged to prioritize patch management and enhance monitoring capabilities to detect and respond to these evolving threats. The increasing complexity of attacks underscores the need for proactive threat intelligence and adaptive defense mechanisms.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Fake IT Workers—A Growing Threat to Organizations",
-            "title": "The Rising Threat of Fake IT Workers in Cybersecurity",
-            "content": "The issue of hiring fake IT workers has become a significant concern for organizations, from Fortune 500 companies to smaller enterprises. These fraudulent hires exploit remote work practices to gain unauthorized access to sensitive systems, posing severe security risks. Companies must enhance their hiring processes, including thorough background checks and verification of credentials, to mitigate this threat. The trend reflects broader challenges in securing remote work environments and underscores the need for robust identity verification measures. Security leaders should prioritize addressing this vulnerability to protect organizational assets.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4166139/the-fake-it-worker-problem-cisos-cant-ignore.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "MOVEit Automation Flaw—Patch Critical Auth Bypass Now",
-            "title": "Progress Software Warns of Critical MOVEit Automation Authentication Bypass Vulnerability",
-            "content": "Progress Software has issued an urgent advisory to patch a critical authentication bypass vulnerability in its MOVEit Automation managed file transfer application. The flaw, which affects all versions prior to the latest update, could allow unauthorized access to sensitive data transfers. This vulnerability poses a significant risk to enterprises relying on MOVEit for secure file exchanges, potentially exposing sensitive information to attackers. Progress Software has released a patch and strongly advises all users to update immediately to mitigate potential exploitation. This incident underscores the ongoing challenges in securing enterprise-grade file transfer systems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/moveit-automation-customers-warned-to-patch-critical-auth-bypass-flaw/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "cPanel Flaw Exploited—Govt and MSP Networks at Risk",
-            "title": "Critical cPanel Vulnerability Weaponized Against Government and MSP Networks",
-            "content": "A newly discovered threat actor is actively exploiting a critical cPanel vulnerability to target government and military entities in Southeast Asia, as well as managed service providers (MSPs) in multiple countries including the Philippines, Laos, Canada, South Africa, and the U.S. The vulnerability, recently disclosed, allows attackers to gain unauthorized access to sensitive systems, posing a severe threat to national security and service provider networks. Security experts urge organizations using cPanel to apply the latest security patches and review their network security protocols. This attack highlights the increasing sophistication of threat actors targeting critical infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/critical-cpanel-vulnerability.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "40,000 Servers Hit—cPanel Zero-Day Exploited",
-            "title": "Over 40,000 Servers Compromised in cPanel Zero-Day Exploitation",
-            "content": "A massive exploitation campaign has compromised over 40,000 servers by targeting CVE-2026-41940, a recently patched zero-day vulnerability in cPanel. This flaw allows attackers to gain administrative access, posing a significant threat to affected systems. The widespread nature of the attack underscores the critical need for immediate patching and system audits. Organizations using cPanel are advised to update their systems to the latest version and enhance monitoring for unusual activities. This incident highlights the persistent threat of zero-day vulnerabilities in widely used server management software.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-40000-servers-compromised-in-ongoing-cpanel-exploitation/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/zara-data-breach-exposed-personal-information-of-197-000-people/",
             "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 05 2026",
-            "headline": "Google, Microsoft, xAI Open AI Models to U.S. Scrutiny",
-            "title": "Tech Giants Agree to U.S. Government Review of AI Models Before Release",
-            "content": "Google DeepMind, Microsoft, and Elon Musk's xAI have agreed to allow the U.S. government to review their AI models before public release. This collaboration with the Commerce Department's Center for AI Standards and Innovation (CAISI) aims to ensure AI safety and compliance with emerging regulations. The initiative reflects growing concerns over AI's potential risks and the need for oversight in AI development. This move could set a precedent for other AI developers and impact the pace of AI innovation. Industry professionals should monitor regulatory developments and prepare for potential compliance requirements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/924017/google-microsoft-xai-government-review",
+            "date": "May 08 2026",
+            "headline": "Google AI Search to Cite Sources—Boosts Transparency",
+            "title": "Google Enhances AI Search with New Source Citation Features",
+            "content": "Google is set to improve its AI search capabilities by introducing enhanced source citation features. This update aims to provide users with more transparency by linking directly to the original sources of information used in AI-generated overviews. The move addresses growing concerns about the reliability and accountability of AI-generated content. By offering clearer source attribution, Google hopes to build trust with users and mitigate misinformation risks. This development is part of a broader trend towards increased transparency in AI systems, which is critical for maintaining user confidence in automated information services.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
             "relatedResources": []
         },
         {
-            "date": "May 05 2026",
-            "headline": "ElevenLabs Secures $500M ARR—Attracts BlackRock, Jamie Foxx, Eva Longoria",
-            "title": "ElevenLabs Expands with New Investors and $500M Annual Recurring Revenue",
-            "content": "Voice AI company ElevenLabs has announced new investments from BlackRock, Jamie Foxx, and Eva Longoria, alongside reaching a $500 million annual recurring revenue milestone. This funding will support ElevenLabs' expansion into enterprise markets as voice AI becomes increasingly integral to user interfaces. The company's growth underscores the rising demand for sophisticated voice technologies in various sectors. Industry stakeholders should consider the implications of voice AI advancements on customer interaction strategies and competitive positioning. ElevenLabs' success highlights the potential for AI-driven interfaces to transform business operations.",
+            "date": "May 07 2026",
+            "headline": "OpenAI Unveils GPT-5.5-Cyber—Enhances Cyber Defense",
+            "title": "OpenAI Launches GPT-5.5 and GPT-5.5-Cyber for Enhanced Cybersecurity",
+            "content": "OpenAI has announced the release of GPT-5.5 and a specialized version, GPT-5.5-Cyber, aimed at bolstering cybersecurity efforts. These models are designed to assist verified cybersecurity professionals in accelerating vulnerability research and protecting critical infrastructure. By leveraging advanced natural language processing capabilities, GPT-5.5-Cyber can analyze threat data more efficiently, offering insights into potential vulnerabilities and attack vectors. This initiative underscores OpenAI's commitment to supporting the cybersecurity community in an era of increasing digital threats. Organizations are encouraged to integrate these tools to enhance their defensive strategies.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+            "relatedResources": []
+        },
+        {
+            "date": "May 10 2026",
+            "headline": "Wispr Flow Expands in India—Voice AI Faces Challenges",
+            "title": "Wispr Flow Sees Growth in India Despite Voice AI Challenges",
+            "content": "Wispr Flow reports accelerated growth in India following the rollout of its Hinglish voice AI product, despite ongoing challenges in the voice AI sector. The company is betting on the unique linguistic landscape of India, where a blend of Hindi and English, known as Hinglish, is widely spoken. Voice AI technologies face hurdles such as accent recognition and language diversity, but Wispr Flow's strategic focus on local dialects has driven user adoption. This expansion highlights the potential of tailored AI solutions in emerging markets, where language diversity presents both challenges and opportunities.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-eva-longoria-as-new-investors/",
+            "sourceUrl": "https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/",
             "relatedResources": []
         },
         {
-            "date": "May 05 2026",
-            "headline": "OpenClaw Exploits Repos—No Scanner Detects AI Agent Backdoor",
-            "title": "OpenClaw Highlights Vulnerability in Open-Source Repositories with AI Backdoor",
-            "content": "Researchers at the University of Hong Kong's Data Intelligence Lab have revealed a critical vulnerability in open-source repositories through a tool called CLI-Anything. This tool can transform any repository into an AI agent backdoor with a single command, bypassing existing supply-chain scanners. The OpenClaw exploit demonstrates a significant gap in current security measures, potentially affecting countless open-source projects. Developers and security professionals should prioritize enhancing supply-chain security and explore new detection methodologies to mitigate such risks. This discovery emphasizes the urgent need for robust security frameworks in open-source environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/one-command-open-source-repo-ai-agent-backdoor-openclaw-supply-chain-scanner",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "SAP Invests $1.16B in German AI Startup Prior Labs",
-            "title": "SAP Acquires Prior Labs and Embraces Nvidia's NemoClaw for AI Innovation",
-            "content": "SAP has announced a $1.16 billion investment to acquire German AI startup Prior Labs, aiming to bolster its AI capabilities. The acquisition includes a strategic decision to limit customer AI agent usage to select platforms like Nvidia's NemoClaw. This move reflects SAP's commitment to integrating cutting-edge AI technologies while maintaining control over AI deployment. The investment highlights the growing trend of major tech companies investing in AI startups to accelerate innovation. SAP customers should anticipate enhanced AI solutions and prepare for potential changes in AI integration strategies.",
+            "date": "May 09 2026",
+            "headline": "Decode AI Jargon—Essential Glossary for Professionals",
+            "title": "Understanding AI: A Glossary of Key Terms and Slang",
+            "content": "As artificial intelligence continues to evolve, a plethora of new terms and slang has emerged, often leaving professionals nodding along without full comprehension. TechCrunch has compiled a comprehensive glossary to demystify these terms, providing clear definitions for key phrases and jargon. This resource is designed to help professionals stay informed and effectively communicate in the rapidly advancing field of AI. Understanding these terms is crucial for navigating the complex landscape of AI technologies and their applications. Readers are encouraged to familiarize themselves with this glossary to enhance their industry knowledge.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/05/sap-bets-1-16b-on-18-month-old-german-ai-lab-and-says-yes-to-nemoclaw/",
+            "sourceUrl": "https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
             "relatedResources": []
         },
         {
-            "date": "May 05 2026",
-            "headline": "Altara Raises $7M to Accelerate Physical Sciences R&D",
-            "title": "Altara Secures Funding to Unify Data and Speed Up Scientific Research",
-            "content": "Altara has raised $7 million to develop AI solutions aimed at bridging data gaps in physical sciences research. The company's technology focuses on diagnosing failures and accelerating R&D by integrating data from disparate sources like spreadsheets and legacy systems. This funding will enable Altara to enhance its platform and address the inefficiencies plaguing scientific research. Researchers and institutions should explore Altara's solutions to improve data management and streamline research processes. The investment underscores the critical role of AI in transforming traditional scientific methodologies.",
+            "date": "May 09 2026",
+            "headline": "OncoAgent: Privacy-Preserving AI for Oncology Decisions",
+            "title": "OncoAgent: A Multi-Agent Framework for Secure Oncology Decision Support",
+            "content": "Hugging Face has introduced OncoAgent, a dual-tier multi-agent framework designed to enhance privacy-preserving clinical decision support in oncology. This innovative system leverages advanced AI to assist healthcare professionals in making informed decisions while safeguarding patient data. OncoAgent's architecture ensures that sensitive information remains secure, addressing critical privacy concerns in medical AI applications. The framework represents a significant advancement in the integration of AI into healthcare, offering a model for balancing technological innovation with ethical considerations. Healthcare providers are encouraged to explore OncoAgent for improved clinical outcomes.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper",
+            "relatedResources": []
+        },
+        {
+            "date": "May 09 2026",
+            "headline": "Nvidia Invests $40B in AI—Strengthens Ecosystem",
+            "title": "Nvidia Commits $40 Billion to AI Equity Deals in 2026",
+            "content": "Nvidia has already allocated $40 billion towards equity deals in the AI sector this year, reinforcing its position as a leading investor in the AI ecosystem. This substantial investment underscores Nvidia's strategic focus on expanding its influence and capabilities within the AI landscape. By funding a diverse range of AI startups and technologies, Nvidia aims to foster innovation and drive growth across the industry. This move reflects the company's commitment to maintaining its competitive edge and supporting the development of cutting-edge AI solutions. Stakeholders in the AI field should monitor Nvidia's investment activities for emerging opportunities.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/05/altara-secures-7m-to-bridge-the-data-gap-thats-slowing-down-physical-sciences/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "Google Home's Gemini 3.1 Boosts Smart Assistant Capabilities",
-            "title": "Google Home's Gemini AI Update Enhances Multi-Step Task Handling",
-            "content": "Google has updated its smart home assistant, Gemini, to version 3.1, significantly improving its ability to handle complex, multi-step tasks. This upgrade allows users to combine multiple requests into a single command, enhancing the efficiency and functionality of Google Home devices. The update reflects Google's ongoing commitment to advancing AI capabilities in consumer products. Users should update their devices to leverage these new features and improve their smart home experience. This development highlights the growing sophistication of AI in everyday technology and its impact on user convenience.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/924755/google-home-gemini-3-1-upgrade",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Amex's AI Agents Revolutionize Transactions—But Trust Issues Loom",
-            "title": "Amex's AI-Driven Agentic Commerce Faces Trust and Auditability Challenges",
-            "content": "American Express (Amex) is pioneering a new frontier in digital transactions with its agentic commerce stack, allowing AI agents to shop and pay on behalf of users. This system currently operates exclusively within Amex's payment network, leveraging intent contracts and single-use tokens to enforce transactions. However, the reliance on a black-box approach raises significant concerns about trust and auditability, potentially hindering broader adoption. While Amex's participation in agentic commerce protocol projects highlights its commitment to innovation, the opacity of the system could deter users wary of untraceable transactions. Professionals in the financial and tech sectors should monitor this development closely, as it may set precedents for future AI-driven transaction systems.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/inside-amexs-agentic-commerce-stack-how-intent-contracts-and-single-use-tokens-enforce-ai-transactions",
-            "relatedResources": []
-        },
-        {
-            "date": "May 05 2026",
-            "headline": "Nvidia's CEO: AI Job Creation Outpaces Fears of Automation",
-            "title": "Nvidia's Jensen Huang Asserts AI's Role in Job Creation Amid Automation Fears",
-            "content": "Nvidia CEO Jensen Huang has addressed growing concerns about AI's potential to displace jobs, asserting that AI is, in fact, generating a substantial number of new employment opportunities. Huang's comments come amid widespread anxiety among workers about AI-driven automation. He argues that AI technologies are not only enhancing productivity but also creating demand for new roles in AI development, deployment, and maintenance. This perspective challenges the narrative that AI will lead to massive job losses, suggesting instead that the tech industry may see a shift in job types rather than a reduction. Professionals should consider the evolving landscape of AI-related employment and the potential for new career paths.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/04/as-workers-worry-about-ai-nvidias-jensen-huang-says-ai-is-creating-an-enormous-number-of-jobs/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "OpenAI Trial: Brockman's Testimony Highlights Internal Tensions",
-            "title": "OpenAI President Greg Brockman Testifies in Elon Musk's Legal Battle",
-            "content": "In a pivotal moment during Elon Musk's legal proceedings against OpenAI, Greg Brockman, OpenAI's president, provided testimony that underscored internal tensions within the organization. Brockman's journal, presented as evidence, has emerged as a critical element in the case, revealing insights into OpenAI's decision-making processes. The unusual sequence of cross-examination followed by direct examination highlighted Brockman's significant role and potential conflicts within OpenAI. This trial could have far-reaching implications for AI governance and transparency, especially concerning how AI organizations manage internal dissent and strategic decisions. Stakeholders in AI development and policy should pay close attention to the trial's outcomes.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/923684/musk-brockman-altman-openai-trial",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Image AI Models Boost App Downloads—Revenue Growth Lags",
-            "title": "Visual AI Models Drive App Downloads but Struggle with Revenue Conversion",
-            "content": "Recent findings from Appfigures reveal that the launch of image-based AI models significantly boosts app downloads, achieving a 6.5-fold increase compared to chatbot upgrades. Despite this surge in user acquisition, these visual models often fail to convert the increased downloads into substantial revenue. This trend suggests a gap between user interest and monetization strategies, posing a challenge for developers seeking to capitalize on AI-driven app enhancements. As visual AI continues to evolve, developers and tech leaders must explore innovative monetization approaches to bridge this gap and sustain growth. Understanding user engagement and refining business models will be crucial for leveraging AI's full potential in the app market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "AGI Arms Race Concerns Raised in OpenAI Trial Testimony",
-            "title": "Stuart Russell Warns of AGI Arms Race in OpenAI Legal Proceedings",
-            "content": "Stuart Russell, a prominent AI researcher and the sole expert witness for Elon Musk in the OpenAI trial, has voiced concerns about an impending artificial general intelligence (AGI) arms race. Russell's testimony emphasized the need for governmental oversight to prevent unchecked competition among frontier labs developing AGI technologies. His warnings highlight the potential risks associated with rapid AGI advancements, including ethical dilemmas and global security threats. This testimony underscores the importance of establishing regulatory frameworks to manage AGI development responsibly. Policymakers and AI researchers should consider these insights to mitigate risks and ensure the safe progression of AGI technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/04/elon-musks-only-expert-witness-at-the-openai-trial-fears-an-agi-arms-race/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 04 2026",
-            "headline": "Roomba Creator Unveils Robotic Companion—A New Era of Home AI",
-            "title": "Colin Angle Introduces Furry Robot Companion from Familiar Machines & Magic",
-            "content": "Colin Angle, the visionary behind the Roomba, has launched a new venture with Familiar Machines & Magic, unveiling a dog-sized robotic companion designed to enhance human interaction. Unlike traditional cleaning robots, this AI-driven companion focuses on providing emotional support and companionship, marking a shift in the role of household robots. This development reflects a growing trend towards integrating AI into everyday life in more personal and interactive ways. As AI technology continues to evolve, the introduction of such companion robots could redefine human-robot relationships, offering new opportunities for emotional engagement and assistance. Industry professionals should explore the implications of this shift for future AI applications in domestic settings.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/922947/roomba-creator-new-robot-familiar-machines-magic-ai-launch",
+            "sourceUrl": "https://techcrunch.com/2026/05/09/nvidia-has-already-committed-40b-to-equity-ai-deals-this-year/",
             "relatedResources": []
         }
     ],
@@ -332,25 +197,36 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
-            "cveId": "CVE-2026-31431",
-            "dateAdded": "May 01, 2026",
-            "vendor": "Linux Kernel",
-            "description": "Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation.",
+            "cveId": "CVE-2026-42208",
+            "dateAdded": "May 08, 2026",
+            "vendor": "BerriAI LiteLLM",
+            "description": "BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorised access to the proxy and the cre",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-31431",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42208",
             "isZeroDay": false
         },
         {
-            "cveId": "CVE-2026-41940",
-            "dateAdded": "Apr 30, 2026",
-            "vendor": "WebPros cPanel & WHM and WP2 (WordPress Squared)",
-            "description": "WebPros cPanel & WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized ac",
+            "cveId": "CVE-2026-6973",
+            "dateAdded": "May 07, 2026",
+            "vendor": "Ivanti Endpoint Manager Mobile (EPMM)",
+            "description": "Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41940",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6973",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-0300",
+            "dateAdded": "May 06, 2026",
+            "vendor": "Palo Alto Networks PAN-OS",
+            "description": "Palo Alto Networks PAN-OS contains an out-of-bounds write vulnerability in the User-ID Authentication Portal (aka Captive Portal) service that can allow an unauthenticated attacker to execute arbitrar",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0300",
             "isZeroDay": false
         }
     ],
