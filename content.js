@@ -5,29 +5,65 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 11 2026",
+            "headline": "Build Firewalls Target Supply Chain Attacks—New Defense Strategy",
+            "title": "Build Application Firewalls Inspect Runtime to Prevent Supply Chain Attacks",
+            "content": "Build Application Firewalls are emerging as a critical defense against supply chain attacks by inspecting runtime behavior within the software build pipeline, rather than relying solely on code scanning. This innovative approach aims to detect anomalies and potential threats during the build process, offering a proactive layer of security. By focusing on runtime behavior, these firewalls can identify suspicious activities that traditional code analysis might miss. This development is particularly relevant as supply chain attacks continue to rise, impacting organizations across various sectors. Security professionals are encouraged to integrate these firewalls into their development environments to enhance protection against sophisticated threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/build-application-firewalls-aim-to-stop-the-next-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "AI-Generated Zero-Day Bypasses 2FA—Google Warns",
+            "title": "Google Detects AI-Crafted Zero-Day Exploit Targeting Two-Factor Authentication",
+            "content": "Google has identified the first AI-generated zero-day exploit designed to bypass two-factor authentication (2FA), developed by a prominent cybercrime group. This exploit represents a significant advancement in cybercriminal tactics, leveraging artificial intelligence to create more sophisticated attacks. The zero-day targets systems that rely on 2FA for security, posing a severe threat to organizations and individuals who depend on this method for account protection. Google's discovery underscores the evolving landscape of cybersecurity threats, where AI is increasingly used to enhance attack capabilities. Organizations are advised to review their authentication processes and consider additional security measures to mitigate this risk.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/google-detects-first-ai-generated-zero-day-exploit/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "AI Powers Zero-Day Exploit in Web Admin Tool",
+            "title": "Google Uncovers AI-Developed Zero-Day Exploit in Web Administration Tool",
+            "content": "Researchers at Google Threat Intelligence Group (GTIG) have uncovered a zero-day exploit targeting a popular open-source web administration tool, believed to be generated using artificial intelligence. This exploit highlights the growing use of AI in crafting sophisticated cyberattacks, posing new challenges for security teams. The affected tool, widely used by administrators, is now a vector for potential data breaches and unauthorized access. The discovery emphasizes the need for enhanced security measures and continuous monitoring of AI developments in the cybersecurity domain. Administrators should apply patches promptly and consider additional security layers to protect their systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-hackers-used-ai-to-develop-zero-day-exploit-for-web-admin-tool/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "AI-Crafted Zero-Day Exploit Discovered by Google",
+            "title": "Google Identifies First AI-Generated Zero-Day Exploit in the Wild",
+            "content": "The Google Threat Intelligence Group (GTIG) has released evidence of a zero-day exploit developed with the assistance of artificial intelligence, marking a first for the security research community. This exploit, created by a cybercriminal group, demonstrates the potential for AI to be weaponized in cyberattacks, significantly increasing their sophistication and impact. The exploit's presence in the wild raises concerns about the future of AI in cybersecurity, where attackers may gain an unprecedented advantage. Security professionals are urged to stay informed about AI advancements and incorporate adaptive security strategies to counteract these evolving threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4169046/google-discovers-weaponized-zero-day-exploits-created-with-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "Malicious AI Model Hits 244K Downloads—Hugging Face Alert",
+            "title": "Fake OpenAI Model on Hugging Face Delivers Infostealer Malware",
+            "content": "A malicious repository on Hugging Face, masquerading as an OpenAI release, has been downloaded 244,000 times, distributing infostealer malware to Windows systems. This incident underscores the risks associated with sourcing AI models from public repositories without proper validation. The repository, named Open-OSS/private, highlights the need for enterprises to implement stringent verification processes when integrating third-party AI models. The widespread downloads before removal indicate a significant exposure risk for organizations relying on these resources. Security teams should audit their AI model sources and enhance monitoring to prevent similar incidents.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4169407/malicious-hugging-face-model-masquerading-as-openai-release-hits-244k-downloads.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "Skoda Breach Exposes Customer Data—Security Flaw Exploited",
+            "title": "Skoda Online Shop Breach Compromises Customer Personal Information",
+            "content": "Hackers exploited a vulnerability in Skoda's online shop portal, accessing sensitive customer data including names, addresses, email addresses, and phone numbers. This breach highlights the ongoing threat of vulnerabilities in e-commerce platforms, which can lead to significant data exposure. Customers of Skoda's online shop are at risk of identity theft and phishing attacks due to the compromised information. The incident serves as a reminder for companies to regularly audit their online systems for vulnerabilities and apply timely security patches. Affected customers should monitor their accounts for suspicious activity and consider identity protection services.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/skoda-data-breach-hits-online-shop-customers/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
             "headline": "500+ Organizations Targeted in Prolonged Phishing Assault",
             "title": "Extensive Phishing Campaign Hits Critical Sectors Over Several Years",
             "content": "A sophisticated phishing campaign has compromised over 500 organizations across sectors such as aviation, critical infrastructure, energy, logistics, public administration, and technology. This prolonged assault highlights the persistent threat of phishing attacks, which often serve as entry points for more severe breaches. The campaign's success underscores the need for enhanced email security measures and user awareness training to mitigate such risks. Organizations in these sectors should review their security protocols and consider implementing advanced threat detection systems. The widespread nature of this attack serves as a stark reminder of the evolving tactics employed by cybercriminals.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/over-500-organizations-hit-in-years-long-phishing-campaign/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "PAN-OS RCE Exploit—Root Access Threat Looms",
-            "title": "Critical PAN-OS RCE Vulnerability CVE-2026-0300 Under Active Exploitation",
-            "content": "Palo Alto Networks has revealed that threat actors have been actively attempting to exploit a critical buffer overflow vulnerability, CVE-2026-0300, in PAN-OS. This flaw, with a CVSS score of 9.3/8.7, allows for remote code execution and potential root access, posing significant espionage risks. The vulnerability affects the User-ID Authentication component, and the first exploitation attempts date back to April 9, 2026. Organizations using affected PAN-OS versions should prioritize patching to prevent unauthorized access and data breaches. This incident highlights the critical importance of timely vulnerability management and patch deployment.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/pan-os-rce-exploit-under-active-use.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "ThreatsDay Bulletin—ICS 0-Days and Patch Alerts",
-            "title": "Weekly Security Bulletin Highlights ICS 0-Days and Patch Imperatives",
-            "content": "The latest ThreatsDay Bulletin warns of ongoing cybersecurity threats, including plaintext password exposures and industrial control system (ICS) zero-day vulnerabilities. Attack vectors remain alarmingly unsophisticated, with threats emerging from shady software packages, fake applications, and compromised DNS configurations. The bulletin emphasizes the critical need for organizations to patch vulnerabilities promptly and maintain robust security hygiene. Security professionals should remain vigilant against these persistent threats, which continue to exploit common weaknesses. This update serves as a reminder of the importance of regular security assessments and proactive threat mitigation strategies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/threatsday-bulletin-edge-plaintext.html",
             "relatedResources": []
         },
         {
@@ -37,24 +73,6 @@ const websiteContent = {
             "content": "German authorities have successfully dismantled a rebooted version of the notorious criminal marketplace 'Crimenetwork,' arresting its operator and seizing assets worth over 3.6 million euros. This marketplace facilitated the trade of illegal goods and services, posing significant risks to cybersecurity and public safety. The shutdown marks a significant victory in the ongoing battle against cybercrime, highlighting the effectiveness of international law enforcement collaboration. Security professionals should remain aware of the evolving landscape of online criminal activities and continue to support efforts to combat such threats.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-shut-down-reboot-of-crimenetwork-marketplace-arrest-admin/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 08 2026",
-            "headline": "Dirty Frag LPE—New Linux Kernel Vulnerability",
-            "title": "Dirty Frag LPE Vulnerability Discovered in Linux Kernel",
-            "content": "A new local privilege escalation (LPE) vulnerability, dubbed \"Dirty Frag,\" has been identified in the Linux kernel, following closely on the heels of the recently disclosed Copy Fail vulnerability (CVE-2026-31431). Discovered by security researcher Hyunwoo Kim, this flaw could allow attackers to gain elevated privileges on affected systems. Linux users are urged to apply patches as soon as they become available to mitigate potential exploitation. This discovery underscores the ongoing challenges in securing open-source software and the critical need for vigilant patch management.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/32968",
-            "relatedResources": []
-        },
-        {
-            "date": "May 08 2026",
-            "headline": "ShinyHunters Breach—9,000 Schools' Data at Risk",
-            "title": "ShinyHunters Claims Massive Data Breach of Canvas Users",
-            "content": "The hacking group ShinyHunters has claimed responsibility for a significant data breach affecting nearly 9,000 educational institutions using Canvas, an online learning platform. The breach reportedly involves the personal data of students, raising concerns about privacy and data security in the education sector. Educational institutions are advised to review their security measures and ensure that sensitive data is adequately protected. This incident highlights the vulnerabilities in educational technology systems and the importance of robust cybersecurity practices.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://edscoop.com/shinyhunters-claims-nearly-9000-schools-affected-by-canvas-data-breach/",
             "relatedResources": []
         },
         {
@@ -78,12 +96,57 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "May 07 2026",
-            "headline": "GPT-5.5-Cyber Boosts Infrastructure Defense—OpenAI's Latest AI Rollout",
-            "title": "OpenAI Launches GPT-5.5 and GPT-5.5-Cyber for Enhanced Cybersecurity",
-            "content": "OpenAI has unveiled GPT-5.5 and its specialized variant GPT-5.5-Cyber, designed to bolster cybersecurity efforts by empowering verified defenders in vulnerability research. These advanced models aim to protect critical infrastructure by accelerating the identification and mitigation of potential threats. The release marks a significant step in leveraging AI for defensive cybersecurity, addressing the increasing complexity of cyber threats. Organizations utilizing these models can expect improved efficiency in threat detection and response, potentially reducing the risk of breaches. Security professionals are encouraged to integrate these tools into their existing cybersecurity frameworks to enhance their defensive capabilities.",
+            "date": "May 08 2026",
+            "headline": "Google AI Search—New Source Citations Enhance Transparency",
+            "title": "Google Enhances AI Search with Comprehensive Source Citations",
+            "content": "Google is updating its AI search capabilities to include more comprehensive source citations, aiming to enhance transparency and trust in its AI-generated overviews. This move addresses previous criticisms regarding the opacity of AI-generated content, especially in critical areas like health and finance. By linking directly to the original sources, Google hopes to provide users with a clearer understanding of the information's origin and credibility. This update is part of a broader trend towards increased accountability in AI systems, as users demand more transparency in automated decision-making processes. Professionals should monitor these changes to better understand how AI-generated content is evolving and impacting information dissemination.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "Musk vs. Altman—OpenAI's Mission Under Legal Scrutiny",
+            "title": "Elon Musk and Sam Altman Clash in Court Over OpenAI's Direction",
+            "content": "Elon Musk and Sam Altman are embroiled in a legal battle that could redefine OpenAI's mission and its flagship product, ChatGPT. Musk's lawsuit, initiated in 2024, accuses OpenAI of deviating from its original mission to develop AI for the benefit of humanity, alleging a shift towards profit maximization. This high-stakes trial could have significant implications for AI governance and ethical standards, influencing how AI organizations balance innovation with societal impact. Industry professionals should closely follow this case, as its outcome may set precedents for AI development and corporate accountability in the tech sector.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "Living with Robots—Joanna Stern's Immersive Experience",
+            "title": "Joanna Stern Explores Life with Robots in Latest Venture",
+            "content": "Joanna Stern, a well-known technology journalist and former senior columnist for The Wall Street Journal, shares her experiences living with robots in a new project. Stern's exploration delves into the integration of robotics in daily life, highlighting both the conveniences and challenges posed by these technologies. Her insights provide a unique perspective on the human-robot interaction, offering valuable lessons for developers and tech leaders aiming to enhance user experience and functionality. As robotics continue to evolve, understanding their impact on everyday life becomes increasingly crucial for shaping future innovations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/926752/joanna-stern-i-am-not-a-robot-new-things-media-youtube-ai-automation",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "Cowboy Space Secures $275M—Aims for Orbital Data Centers",
+            "title": "Cowboy Space Corporation Raises $275 Million for Space-Based Data Centers",
+            "content": "Cowboy Space Corporation has raised $275 million to develop rockets capable of launching data centers into orbit, addressing the growing demand for space-based data infrastructure. The company aims to overcome current limitations in rocket availability, which hinder the deployment of orbital data centers. This ambitious project reflects the increasing interest in leveraging space for data storage and processing, driven by the need for enhanced security and reduced latency. Tech leaders and investors should watch Cowboy Space's progress, as successful implementation could revolutionize data management and open new frontiers in space technology.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/11/there-arent-enough-rockets-for-space-data-centers-cowboy-space-raised-275-million-to-build-them/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "Scaling AI—Enterprises Transform Experiments into Impact",
+            "title": "How Enterprises Successfully Scale AI from Experiments to Impact",
+            "content": "Enterprises are increasingly scaling AI from initial experiments to impactful applications by focusing on trust, governance, workflow design, and quality at scale. This transition involves integrating AI into core business processes, ensuring robust governance frameworks, and maintaining high-quality data standards. Organizations that effectively scale AI report significant improvements in efficiency and decision-making capabilities. As AI continues to mature, businesses must prioritize these elements to harness AI's full potential and drive competitive advantage. Industry professionals should consider these strategies to optimize AI deployment and maximize return on investment.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+            "sourceUrl": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "OpenAI Campus Network—Empowering Student AI Communities",
+            "title": "OpenAI Launches Campus Network to Foster Global Student AI Collaboration",
+            "content": "OpenAI has introduced the OpenAI Campus Network, an initiative designed to connect student clubs worldwide and foster an AI-powered campus community. This network provides students access to AI tools, opportunities to host events, and a platform for collaboration and innovation. By engaging students in AI development and application, OpenAI aims to cultivate the next generation of AI leaders and innovators. Educational institutions and student organizations should explore this opportunity to enhance their AI capabilities and contribute to a global community focused on advancing AI technology.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/openai-campus-network-student-club-interest-form",
             "relatedResources": []
         },
         {
@@ -120,15 +183,6 @@ const websiteContent = {
             "content": "The recent partnership between xAI and Anthropic has sparked discussions about its potential impact on SpaceX's AI strategy. This collaboration could influence the development of AI technologies within SpaceX, as xAI is closely linked to the aerospace giant. While details of the deal remain sparse, industry experts speculate on the strategic motivations behind the partnership and its implications for AI innovation in space exploration. Stakeholders are advised to monitor developments closely, as this alliance may signal shifts in AI research priorities and resource allocation within SpaceX. The partnership highlights the interconnected nature of AI advancements across different sectors.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 08 2026",
-            "headline": "PlayStation Embraces AI—Transforming Game Development",
-            "title": "Sony Explores AI Integration in PlayStation Game Development",
-            "content": "Sony has outlined its vision for integrating AI into PlayStation game development, viewing it as a powerful tool to enhance creativity and efficiency. During a recent earnings presentation, the company detailed how generative AI technologies are being evaluated to streamline game design and production processes. While major game developers are increasingly adopting AI, some indie developers remain cautious, citing concerns over creative integrity. Sony's move reflects a broader industry trend towards leveraging AI to push the boundaries of gaming experiences. Developers should consider the potential of AI to innovate and improve game development workflows.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/games/926914/sony-playstation-ai-powerful-tool-games",
             "relatedResources": []
         },
         {
