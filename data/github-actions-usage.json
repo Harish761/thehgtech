@@ -6240,6 +6240,13 @@
       "durationSeconds": 180,
       "durationMinutes": 3.0,
       "status": "success"
+    },
+    {
+      "timestamp": "2026-05-11T04:19:00.539692",
+      "workflow": "threat-intel",
+      "durationSeconds": 180,
+      "durationMinutes": 3.0,
+      "status": "success"
     }
   ],
   "dailyStats": {
@@ -7530,6 +7537,16 @@
         "threat-intel": {
           "runs": 6,
           "minutes": 18.0
+        }
+      }
+    },
+    "2026-05-11": {
+      "totalMinutes": 3.0,
+      "runCount": 1,
+      "workflows": {
+        "threat-intel": {
+          "runs": 1,
+          "minutes": 3.0
         }
       }
     }
