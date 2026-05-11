@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-05-10T13:19:27.986910",
+  "last_updated": "2026-05-11T03:34:45.826035",
   "period": "Last 7 days",
-  "total_groups": 33,
+  "total_groups": 34,
   "total_victims": 300,
   "groups": [
     {
       "name": "Thegentlemen",
-      "count": 70,
+      "count": 69,
       "victims": [
         {
           "name": "Misr Chemical Industries",
@@ -87,11 +87,11 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
-        50,
+        49,
         0,
         0,
         20,
+        0,
         0
       ]
     },
@@ -177,18 +177,18 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         2,
         13,
         4,
         20,
         2,
+        0,
         0
       ]
     },
     {
       "name": "Safepay",
-      "count": 23,
+      "count": 22,
       "victims": [
         {
           "name": "smp.cat",
@@ -268,9 +268,9 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        5,
         0,
         18,
+        0,
         0,
         0,
         0,
@@ -357,11 +357,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         3,
         4,
         5,
         5,
+        0,
         0,
         0
       ]
@@ -453,8 +453,8 @@
         0,
         0,
         0,
-        0,
-        16
+        16,
+        0
       ]
     },
     {
@@ -533,8 +533,8 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         16,
+        0,
         0,
         0,
         0,
@@ -620,13 +620,13 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         3,
         1,
         0,
         4,
         2,
-        4
+        4,
+        0
       ]
     },
     {
@@ -714,8 +714,8 @@
         0,
         0,
         0,
-        0,
-        13
+        13,
+        0
       ]
     },
     {
@@ -800,8 +800,8 @@
         0,
         0,
         0,
-        0,
         10,
+        0,
         0
       ]
     },
@@ -887,10 +887,10 @@
       "daily_counts": [
         0,
         0,
-        0,
         8,
         0,
         2,
+        0,
         0
       ]
     },
@@ -962,8 +962,8 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         8,
+        0,
         0,
         0,
         0,
@@ -1024,11 +1024,11 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         1,
         1,
         0,
         4,
+        0,
         0,
         0
       ]
@@ -1089,8 +1089,8 @@
         0,
         0,
         0,
-        0,
         6,
+        0,
         0,
         0
       ]
@@ -1145,11 +1145,11 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         4,
         1,
         0,
         1,
+        0,
         0,
         0
       ]
@@ -1199,8 +1199,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         5,
+        0,
         0,
         0,
         0,
@@ -1250,10 +1250,10 @@
         0,
         0,
         0,
-        0,
         2,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1296,12 +1296,12 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
         0,
         0,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1348,8 +1348,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0,
         0
       ]
@@ -1387,12 +1387,12 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1430,12 +1430,12 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
         0,
         0,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1471,12 +1471,47 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         2,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Lapsus$",
+      "count": 2,
+      "victims": [
+        {
+          "name": "AXCERA TRADING",
+          "date": "2026-05-10T13:22:49.803177+00:00",
+          "url": "",
+          "discovered_date": "2026-05-10T13:22:49.803177+00:00"
+        },
+        {
+          "name": "AXCERA TRADING",
+          "date": "2026-05-10T13:22:49+00:00",
+          "url": "https://www.ransomware.live/id/QVhDRVJBIFRSQURJTkdAbGFwc3VzJA==",
+          "discovered_date": "2026-05-10T13:22:49+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -1511,8 +1546,8 @@
         0,
         0,
         0,
-        0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1545,8 +1580,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1579,8 +1614,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1613,8 +1648,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1649,8 +1684,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1683,9 +1718,9 @@
         0,
         0,
         0,
-        0,
         1,
-        1
+        1,
+        0
       ]
     },
     {
@@ -1709,8 +1744,8 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ]
@@ -1734,8 +1769,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1760,8 +1795,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1787,8 +1822,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1814,8 +1849,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1841,7 +1876,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
+        0,
         0,
         0,
         0,
