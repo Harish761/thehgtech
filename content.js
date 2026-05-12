@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 11 2026",
+            "headline": "TeamPCP Strikes Again—Checkmarx Jenkins Plugin Compromised",
+            "title": "TeamPCP Compromises Checkmarx Jenkins AST Plugin in Supply Chain Attack",
+            "content": "Checkmarx has confirmed a security breach involving its Jenkins AST plugin, which was compromised by the threat actor TeamPCP. The malicious version was uploaded to the Jenkins Marketplace, affecting users who downloaded versions after 2.0.13-829.vc72453fa_1c16, released on December 17, 2025. This incident follows a recent supply chain attack on Checkmarx's KICS tool, highlighting the persistent targeting of software supply chains by cybercriminals. Users are urged to verify their plugin version and revert to the safe release if necessary. This breach underscores the critical need for robust supply chain security measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/teampcp-compromises-checkmarx-jenkins.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "cPanel Flaw Exploited—Filemanager Backdoor Deployed",
+            "title": "cPanel CVE-2026-41940 Exploited to Deploy Filemanager Backdoor",
+            "content": "A critical vulnerability, CVE-2026-41940, in cPanel and WebHost Manager (WHM) is being actively exploited by a threat actor known as Mr_Rot13. The exploit allows attackers to deploy a backdoor named Filemanager, compromising affected environments. This vulnerability poses a significant risk to web hosting services, potentially impacting thousands of websites relying on cPanel for management. Administrators are advised to apply available patches immediately to mitigate the threat. This incident highlights the ongoing challenges in securing web hosting platforms against sophisticated cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/cpanel-cve-2026-41940-under-active.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "AI-Powered Zero-Day Bypass Targets 2FA Systems",
+            "title": "Hackers Use AI to Develop Zero-Day 2FA Bypass for Mass Exploitation",
+            "content": "Google has disclosed a zero-day exploit targeting two-factor authentication (2FA) systems, reportedly developed using artificial intelligence (AI). This marks the first known instance of AI being leveraged for malicious vulnerability discovery and exploitation. The exploit, attributed to an unknown threat actor, poses a significant threat to systems relying on 2FA for security. Organizations are advised to review their authentication mechanisms and consider additional security layers. This development underscores the dual-use nature of AI technologies and the evolving landscape of cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "Checkmarx Jenkins Plugin Breached—Supply Chain Attack Confirmed",
+            "title": "Checkmarx Jenkins AST Plugin Compromised in Supply Chain Attack",
+            "content": "A malicious version of the Checkmarx Jenkins AST plugin has been identified in the Jenkins Marketplace, confirming a supply chain attack. This breach, occurring late last week, affects users who downloaded the compromised plugin version. The incident highlights the vulnerabilities inherent in software supply chains and the need for vigilant monitoring and verification of third-party components. Users are urged to check their plugin versions and ensure they are using a secure release. This attack adds to the growing list of supply chain compromises targeting development tools.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/checkmarx-jenkins-ast-plugin-compromised-in-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "'Dirty Frag' Linux Vulnerability—Exploits Emerge Before Patch",
+            "title": "New ‘Dirty Frag’ Linux Vulnerability Possibly Exploited in Attacks",
+            "content": "A newly disclosed Linux vulnerability, known as 'Dirty Frag' and tracked as CVE-2026-43284 and CVE-2026-43500, is reportedly being exploited in the wild. The exploit, also referred to as Copy Fail 2, was made public before a patch was available, raising concerns about potential attacks on unpatched systems. This vulnerability affects Linux kernel versions, posing a risk to a wide range of devices and servers. Administrators are advised to monitor for updates and apply patches as soon as they are released. The incident underscores the importance of timely vulnerability management in open-source ecosystems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-dirty-frag-linux-vulnerability-possibly-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "NVIDIA Data Breach Exposes GeForce NOW Users in Armenia",
+            "title": "NVIDIA Confirms GeForce NOW Data Breach Affecting Armenian Users",
+            "content": "NVIDIA has confirmed a data breach affecting users of its GeForce NOW service in Armenia. The breach resulted in the exposure of user information, although the specific details of the compromised data have not been disclosed. This incident highlights the ongoing risks associated with cloud-based gaming services and the importance of robust data protection measures. Affected users are advised to monitor their accounts for suspicious activity and update their security credentials. NVIDIA's response to the breach will be closely watched as it works to mitigate the impact and prevent future incidents.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nvidia-confirms-geforce-now-data-breach-affecting-armenian-users/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
             "headline": "Build Firewalls Target Supply Chain Attacks—New Defense Strategy",
             "title": "Build Application Firewalls Inspect Runtime to Prevent Supply Chain Attacks",
             "content": "Build Application Firewalls are emerging as a critical defense against supply chain attacks by inspecting runtime behavior within the software build pipeline, rather than relying solely on code scanning. This innovative approach aims to detect anomalies and potential threats during the build process, offering a proactive layer of security. By focusing on runtime behavior, these firewalls can identify suspicious activities that traditional code analysis might miss. This development is particularly relevant as supply chain attacks continue to rise, impacting organizations across various sectors. Security professionals are encouraged to integrate these firewalls into their development environments to enhance protection against sophisticated threats.",
@@ -83,25 +137,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/ollama-out-of-bounds-read-vulnerability.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 09 2026",
-            "headline": "cPanel Vulnerabilities—Privilege Escalation and Code Execution Risks",
-            "title": "cPanel and WHM Patch Three Vulnerabilities Including Privilege Escalation",
-            "content": "cPanel has issued updates to address three vulnerabilities in its cPanel and Web Host Manager (WHM) software, which could lead to privilege escalation, code execution, and denial-of-service attacks. The vulnerabilities include CVE-2026-29201, which has a CVSS score of 4.3, indicating moderate severity due to insufficient input validation. These vulnerabilities affect versions prior to the latest patch and could allow attackers to gain unauthorized access or disrupt services. Users and administrators are urged to apply the latest updates immediately to mitigate potential risks. This update underscores the importance of regular software maintenance and vigilance against emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 08 2026",
-            "headline": "Google AI Search—New Source Citations Enhance Transparency",
-            "title": "Google Enhances AI Search with Comprehensive Source Citations",
-            "content": "Google is updating its AI search capabilities to include more comprehensive source citations, aiming to enhance transparency and trust in its AI-generated overviews. This move addresses previous criticisms regarding the opacity of AI-generated content, especially in critical areas like health and finance. By linking directly to the original sources, Google hopes to provide users with a clearer understanding of the information's origin and credibility. This update is part of a broader trend towards increased accountability in AI systems, as users demand more transparency in automated decision-making processes. Professionals should monitor these changes to better understand how AI-generated content is evolving and impacting information dissemination.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
+            "date": "May 11 2026",
+            "headline": "AI-Crafted Zero-Day Thwarted by Google—Mass Exploit Averted",
+            "title": "Google Stops AI-Developed Zero-Day Exploit Targeting Mass Systems",
+            "content": "Google's Threat Intelligence Group (GTIG) has successfully intercepted a zero-day exploit crafted using artificial intelligence, marking a first in cybersecurity history. The exploit was poised for a \"mass exploitation event\" by prominent cybercrime threat actors, potentially impacting millions of systems. This AI-driven vulnerability underscores the evolving sophistication of cyber threats, where machine learning models are now being leveraged to create more potent attacks. Organizations are urged to enhance their security measures, focusing on AI-driven threat detection and response capabilities. This incident highlights the critical need for continuous innovation in cybersecurity defenses to counteract AI-enhanced threats.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "OpenAI Boosts Cybersecurity with GPT-5.5-Cyber for Defenders",
+            "title": "OpenAI Launches GPT-5.5 and GPT-5.5-Cyber to Enhance Cyber Defense",
+            "content": "OpenAI has unveiled GPT-5.5 and its specialized variant, GPT-5.5-Cyber, designed to bolster cybersecurity efforts by verified defenders. These models aim to accelerate vulnerability research and safeguard critical infrastructure, providing advanced capabilities for threat analysis and mitigation. GPT-5.5-Cyber is tailored for cybersecurity applications, offering enhanced accuracy in identifying potential vulnerabilities and attack vectors. This development reflects a growing trend of integrating AI into cybersecurity frameworks to preemptively address threats. Security professionals should consider leveraging these models to enhance their defensive strategies and protect against increasingly sophisticated cyber threats.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
+            "headline": "Robinhood Eyes IPO for New Startup Fund Amid AI Surge",
+            "title": "Robinhood Prepares Second Retail Venture IPO Targeting AI Startups",
+            "content": "Robinhood has confidentially filed for an IPO of its second venture fund, focusing on growth and early-stage startups, particularly in the AI sector. This move comes as the company seeks to capitalize on the ongoing AI investment boom, aiming to support innovative startups poised for rapid growth. The fund will target emerging technologies and disruptive business models, aligning with Robinhood's strategy to expand its influence in the tech investment landscape. Investors and tech leaders should monitor this development, as it may signal new opportunities in the AI-driven market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/11/riding-an-ai-rally-robinhood-preps-second-retail-venture-ipo/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "AWS and Hugging Face Enhance AI Model Training Infrastructure",
+            "title": "AWS and Hugging Face Collaborate on Foundation Model Training Tools",
+            "content": "Hugging Face has announced a collaboration with AWS to develop new tools for training and inference of foundation models. This partnership aims to streamline the deployment of large-scale AI models, enhancing efficiency and scalability for developers. By leveraging AWS's robust cloud infrastructure, Hugging Face seeks to provide an optimized environment for AI research and application development. This initiative reflects the growing demand for accessible and powerful AI tools, enabling organizations to harness the full potential of machine learning technologies. Developers should explore these new resources to improve their AI model workflows.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "OpenAI's Daybreak Targets Vulnerabilities Before Hackers Strike",
+            "title": "OpenAI Launches Daybreak to Preemptively Address Software Vulnerabilities",
+            "content": "OpenAI has introduced Daybreak, an AI initiative aimed at detecting and addressing software vulnerabilities before they can be exploited by attackers. Utilizing the Codex Security AI agent, Daybreak creates threat models based on organizational code to identify and validate potential attack paths. This proactive approach is designed to enhance cybersecurity by mitigating risks before they manifest. Organizations are encouraged to integrate Daybreak into their security protocols to strengthen their defenses against emerging threats. This launch underscores the importance of preemptive security measures in the face of evolving cyber risks.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/928342/openai-daybreak-security-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "May 11 2026",
+            "headline": "GM Shifts Workforce—Lays Off IT, Hires AI Experts",
+            "title": "GM Restructures IT Workforce to Embrace AI-Driven Development",
+            "content": "General Motors (GM) has laid off hundreds of IT workers as part of a strategic shift to hire professionals with advanced AI skills. The new roles focus on AI-native development, data engineering, cloud-based engineering, and prompt engineering, reflecting GM's commitment to integrating AI into its operations. This restructuring highlights the automotive industry's increasing reliance on AI technologies to drive innovation and efficiency. IT professionals should consider upskilling in AI-related fields to remain competitive in the evolving job market. GM's move signals a broader trend of AI adoption across various sectors.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/",
             "relatedResources": []
         },
         {
@@ -183,42 +273,6 @@ const websiteContent = {
             "content": "The recent partnership between xAI and Anthropic has sparked discussions about its potential impact on SpaceX's AI strategy. This collaboration could influence the development of AI technologies within SpaceX, as xAI is closely linked to the aerospace giant. While details of the deal remain sparse, industry experts speculate on the strategic motivations behind the partnership and its implications for AI innovation in space exploration. Stakeholders are advised to monitor developments closely, as this alliance may signal shifts in AI research priorities and resource allocation within SpaceX. The partnership highlights the interconnected nature of AI advancements across different sectors.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 10 2026",
-            "headline": "Wispr Flow Expands in India—Voice AI Faces Challenges",
-            "title": "Wispr Flow Sees Growth in India Despite Voice AI Challenges",
-            "content": "Wispr Flow reports accelerated growth in India following the rollout of its Hinglish voice AI product, despite ongoing challenges in the voice AI sector. The company is betting on the unique linguistic landscape of India, where a blend of Hindi and English, known as Hinglish, is widely spoken. Voice AI technologies face hurdles such as accent recognition and language diversity, but Wispr Flow's strategic focus on local dialects has driven user adoption. This expansion highlights the potential of tailored AI solutions in emerging markets, where language diversity presents both challenges and opportunities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 09 2026",
-            "headline": "Decode AI Jargon—Essential Glossary for Professionals",
-            "title": "Understanding AI: A Glossary of Key Terms and Slang",
-            "content": "As artificial intelligence continues to evolve, a plethora of new terms and slang has emerged, often leaving professionals nodding along without full comprehension. TechCrunch has compiled a comprehensive glossary to demystify these terms, providing clear definitions for key phrases and jargon. This resource is designed to help professionals stay informed and effectively communicate in the rapidly advancing field of AI. Understanding these terms is crucial for navigating the complex landscape of AI technologies and their applications. Readers are encouraged to familiarize themselves with this glossary to enhance their industry knowledge.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 09 2026",
-            "headline": "OncoAgent: Privacy-Preserving AI for Oncology Decisions",
-            "title": "OncoAgent: A Multi-Agent Framework for Secure Oncology Decision Support",
-            "content": "Hugging Face has introduced OncoAgent, a dual-tier multi-agent framework designed to enhance privacy-preserving clinical decision support in oncology. This innovative system leverages advanced AI to assist healthcare professionals in making informed decisions while safeguarding patient data. OncoAgent's architecture ensures that sensitive information remains secure, addressing critical privacy concerns in medical AI applications. The framework represents a significant advancement in the integration of AI into healthcare, offering a model for balancing technological innovation with ethical considerations. Healthcare providers are encouraged to explore OncoAgent for improved clinical outcomes.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper",
-            "relatedResources": []
-        },
-        {
-            "date": "May 09 2026",
-            "headline": "Nvidia Invests $40B in AI—Strengthens Ecosystem",
-            "title": "Nvidia Commits $40 Billion to AI Equity Deals in 2026",
-            "content": "Nvidia has already allocated $40 billion towards equity deals in the AI sector this year, reinforcing its position as a leading investor in the AI ecosystem. This substantial investment underscores Nvidia's strategic focus on expanding its influence and capabilities within the AI landscape. By funding a diverse range of AI startups and technologies, Nvidia aims to foster innovation and drive growth across the industry. This move reflects the company's commitment to maintaining its competitive edge and supporting the development of cutting-edge AI solutions. Stakeholders in the AI field should monitor Nvidia's investment activities for emerging opportunities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/09/nvidia-has-already-committed-40b-to-equity-ai-deals-this-year/",
             "relatedResources": []
         }
     ],
