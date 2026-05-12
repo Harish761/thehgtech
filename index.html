@@ -4134,7 +4134,7 @@
             loadArticles();
             loadModalContent();
             loadArchives();
-            loadThemePreference();
+            // loadThemePreference(); // Removed: function is not defined
 
             // Initialize magnetic tilt effect on cards
             setTimeout(() => initMagneticTilt(), 100);
@@ -4142,7 +4142,8 @@
             // Show cookie banner after 2 seconds
             setTimeout(() => {
                 if (!localStorage.getItem('cookiesAccepted')) {
-                    document.getElementById('cookieBanner').classList.add('active');
+                    const cookieBanner = document.getElementById('cookieBanner');
+                    if (cookieBanner) cookieBanner.classList.add('active');
                 }
             }, 2000);
         });
@@ -4305,7 +4306,10 @@
             `;
 
             document.body.insertAdjacentHTML('beforeend', modalHTML);
-            setTimeout(() => document.getElementById('newsModal').classList.add('active'), 10);
+            const newsModal = document.getElementById('newsModal');
+            if (newsModal) {
+                setTimeout(() => newsModal.classList.add('active'), 10);
+            }
             document.body.style.overflow = 'hidden';
         }
 
@@ -4754,12 +4758,14 @@
         function openThreatDetailModal(title, content) {
             document.getElementById('threatDetailTitle').textContent = title;
             document.getElementById('threatDetailBody').innerHTML = content;
-            document.getElementById('threatDetailModal').classList.add('active');
+            const detailModal = document.getElementById('threatDetailModal');
+            if (detailModal) detailModal.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
 
         function closeThreatDetailModal() {
-            document.getElementById('threatDetailModal').classList.remove('active');
+            const detailModal = document.getElementById('threatDetailModal');
+            if (detailModal) detailModal.classList.remove('active');
             document.body.style.overflow = '';
         }
 
@@ -4816,7 +4822,8 @@
                 <div class="article-body">${safeContent}</div>
             `;
 
-            document.getElementById('articleOverlay').classList.add('active');
+            const articleOverlay = document.getElementById('articleOverlay');
+            if (articleOverlay) articleOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
 
             // Start particle animation
@@ -4825,7 +4832,8 @@
 
         // Close article overlay
         function closeArticleOverlay() {
-            document.getElementById('articleOverlay').classList.remove('active');
+            const articleOverlay = document.getElementById('articleOverlay');
+            if (articleOverlay) articleOverlay.classList.remove('active');
             document.body.style.overflow = '';
 
             // Stop particle animation
@@ -4910,7 +4918,8 @@
             // Close archives first, then open article
             closeArchives();
             setTimeout(() => {
-                document.getElementById('articleOverlay').classList.add('active');
+                const articleOverlay = document.getElementById('articleOverlay');
+                if (articleOverlay) articleOverlay.classList.add('active');
                 document.body.style.overflow = 'hidden';
                 if (articleParticleSystem) articleParticleSystem.start();
             }, 300);
@@ -4918,7 +4927,8 @@
 
         // Open Archives
         function openArchives() {
-            document.getElementById('archivesOverlay').classList.add('active');
+            const archivesOverlay = document.getElementById('archivesOverlay');
+            if (archivesOverlay) archivesOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
 
             // Start particle animation
@@ -4927,7 +4937,8 @@
 
         // Close Archives
         function closeArchives() {
-            document.getElementById('archivesOverlay').classList.remove('active');
+            const archivesOverlay = document.getElementById('archivesOverlay');
+            if (archivesOverlay) archivesOverlay.classList.remove('active');
             document.body.style.overflow = '';
 
             // Stop particle animation
