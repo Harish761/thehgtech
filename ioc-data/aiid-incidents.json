@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1236",
+      "incident_id": 1236,
+      "title": "Quantum AI and Related AI-Themed Investment Scams Reportedly Used Deepfake Endorsements and Spoofed ",
+      "date": "2026-05-12",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1485",
+      "incident_id": 1485,
+      "title": "Guelph, Ontario, Woman Reportedly Lost $14,000 in Purported Deepfake MrBeast Cryptocurrency Scam",
+      "date": "2026-05-11",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1486",
+      "incident_id": 1486,
+      "title": "AI-Themed Investment Scam Network Reportedly Used Keitaro Cloaking Across 15,500 Domains",
+      "date": "2026-05-11",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1481",
       "incident_id": 1481,
       "title": "Purported AI-Generated YouTube Network Reportedly Promoted Alberta Secession and U.S. Annexation Nar",
@@ -825,14 +849,6 @@
       "severity": "critical"
     },
     {
-      "id": "AIID-1236",
-      "incident_id": 1236,
-      "title": "Quantum AI Scam Reportedly Used AI-Generated Celebrity Endorsements and Spoofed Media Sites to Solic",
-      "date": "2026-02-28",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1329",
       "incident_id": 1329,
       "title": "Grok Reportedly Generated and Distributed Nonconsensual Sexualized Images of Adults and Minors in X ",
@@ -1042,9 +1058,9 @@
     }
   ],
   "stats": {
-    "total": 130,
-    "last7Days": 10,
-    "last30Days": 37
+    "total": 132,
+    "last7Days": 13,
+    "last30Days": 40
   },
-  "lastUpdated": "2026-05-12T03:07:28.723677+05:30"
+  "lastUpdated": "2026-05-12T09:30:53.716159+05:30"
 }
