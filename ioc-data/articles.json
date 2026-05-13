@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "foxconn-nitrogen-ransomware-supply-chain-2026",
+      "title": "The Nitrogen Contagion: What the Foxconn Ransomware Attack Reveals About Supply Chain Fragility",
+      "date": "May 13, 2026",
+      "category": "Threat Intelligence & Supply Chain Security",
+      "badge": "SUPPLY CHAIN",
+      "author": "Harish G",
+      "excerpt": "Foxconn confirms a cyberattack by the Nitrogen ransomware gang. We analyze how this OT breach exposes the ongoing crisis in global manufacturing supply chains.",
+      "image": "/images/articles/foxconn-nitrogen-ransomware-2026.png",
+      "externalUrl": "articles/foxconn-nitrogen-ransomware-supply-chain-2026.html",
+      "readTime": "25 min read",
+      "tags": [
+        "Foxconn",
+        "Nitrogen Ransomware",
+        "Supply Chain Attack",
+        "OT Security",
+        "Manufacturing Cyberattack"
+      ]
+    },
+    {
       "id": "ai-developed-2fa-bypass-2026",
       "title": "The Machine That Picked the Lock: An AI-Developed 2FA Bypass",
       "date": "May 13, 2026",

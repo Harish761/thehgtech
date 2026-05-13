@@ -3,6 +3,18 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- May 13, 2026 - Foxconn Nitrogen Ransomware -->
+  <url>
+    <loc>https://thehgtech.com/articles/foxconn-nitrogen-ransomware-supply-chain-2026.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.99</priority>
+    <image:image>
+      <image:loc>https://thehgtech.com/images/articles/foxconn-nitrogen-ransomware-2026.png</image:loc>
+      <image:title>The Nitrogen Contagion: What the Foxconn Ransomware Attack Reveals About Supply Chain Fragility</image:title>
+    </image:image>
+  </url>
+
   <!-- May 13, 2026 - AI-Developed 2FA Bypass -->
   <url>
     <loc>https://thehgtech.com/articles/ai-developed-2fa-bypass-2026.html</loc>
