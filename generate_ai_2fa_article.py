@@ -7,10 +7,332 @@ import os
 with open("articles/copy-fail-cve-2026-31431.html", "r") as f:
     cf = f.read()
 
-# Extract head block
-head_start = cf.index("<!DOCTYPE html>")
-head_end = cf.index("</head>") + 7
-head = cf[head_start:head_end]
+head = """<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>The Machine That Picked the Lock: An AI-Developed 2FA Bypass</title>
+    <meta name="title" content="The Machine That Picked the Lock: An AI-Developed 2FA Bypass">
+    <meta name="description" content="Google Threat Intelligence Group (GTIG) discovers an autonomous AI agent that successfully fuzzed a complex state-machine to find a zero-day logic flaw, bypassing 2FA without credentials.">
+    <meta name="keywords" content="AI Threats, Zero-Day, 2FA Bypass, State-Machine Flaw, Fuzzing, Google TAG, GTIG, AI Exploit">
+    <meta name="author" content="Harish G">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Machine That Picked the Lock: An AI-Developed 2FA Bypass">
+    <meta name="twitter:description" content="Google Threat Intelligence Group (GTIG) discovers an autonomous AI agent that successfully fuzzed a complex state-machine to find a zero-day logic flaw, bypassing 2FA without credentials.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/ai-2fa-bypass-2026.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/ai-developed-2fa-bypass-2026.html">
+    <meta property="og:title" content="The Machine That Picked the Lock: An AI-Developed 2FA Bypass">
+    <meta property="og:description" content="Google Threat Intelligence Group (GTIG) discovers an autonomous AI agent that successfully fuzzed a complex state-machine to find a zero-day logic flaw, bypassing 2FA without credentials.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/ai-2fa-bypass-2026.png">
+    <meta property="og:site_name" content="TheHGTech">
+
+    <link rel="canonical" href="https://thehgtech.com/articles/ai-developed-2fa-bypass-2026.html">
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "The Machine That Picked the Lock: An AI-Developed 2FA Bypass",
+      "image": [
+        "https://thehgtech.com/images/articles/ai-2fa-bypass-2026.png"
+       ],
+      "datePublished": "2026-05-13T12:00:00+00:00",
+      "dateModified": "2026-05-13T12:00:00+00:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Harish G",
+          "url": "https://www.linkedin.com/in/harish-g-03704815a/"
+        }],
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        }
+      },
+      "articleSection": "AI Threats & Vulnerability Research",
+      "keywords": "AI Threats, Zero-Day, 2FA Bypass, State-Machine Flaw, Fuzzing, Google TAG, GTIG, AI Exploit"
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Style System -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --border: rgba(255, 255, 255, 0.1);
+            --code-bg: #111;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-content h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .article-image {
+            width: 100%;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border);
+        }
+
+        .technical-box {
+            background: rgba(0, 217, 255, 0.03);
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--accent-cyan);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .technical-box > *:first-child,
+        .warning-box > *:first-child {
+            margin-top: 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.05);
+            border: 1px solid rgba(255, 61, 61, 0.2);
+            border-left: 5px solid var(--accent-red);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+        
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-left: 5px solid #10B981;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        pre {
+            background: #000;
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.95rem;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        .article-content p code, .article-content li code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            color: var(--accent-cyan);
+        }
+        
+        /* Author Box Styles */
+        .author-box {
+            display: flex;
+            align-items: center;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            gap: 1.5rem;
+        }
+        .author-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-cyan), #005f73);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .author-info h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--text-primary);
+            font-size: 1.2rem;
+        }
+        .author-info p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+        .author-social {
+            margin-top: 0.75rem;
+        }
+        .author-social a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-right: 1rem;
+            font-size: 1.1rem;
+        }
+        .author-social a:hover {
+            color: #fff;
+        }
+    </style>
+
+    <!-- Google Analytics 4 -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+    <!-- Fullres Analytics -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
+    <link rel="stylesheet" href="/mobile-nav.css">
+</head>
+"""
 
 # Extract mobile header block
 mob_start = cf.index("<!-- Mobile Header -->")
@@ -22,8 +344,7 @@ desk_start = cf.index("<!-- Desktop Header -->")
 desk_end = cf.index('<main class="article-container">')
 desktop_header = cf[desk_start:desk_end]
 
-# Fix title in head
-head = head.replace("<title>Copy Fail (CVE-2026-31431) - TheHGTech</title>", "<title>The Machine That Picked the Lock: An AI-Developed 2FA Bypass - TheHGTech</title>")
+
 
 body = f"""
 <body>
@@ -47,7 +368,7 @@ body = f"""
 
                 <p style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); margin-bottom: 2rem;"><em>For years, the cybersecurity industry speculated about when AI would transition from writing convincing phishing emails to discovering novel zero-day vulnerabilities in enterprise software. That transition has officially occurred.</em></p>
 
-                <p>Google's Threat Analysis Group (TAG) recently disclosed a massive exploitation operation targeting a logic flaw in a popular open-source web administration tool. The vulnerability allowed attackers to seamlessly bypass Two-Factor Authentication (2FA). However, the most chilling detail was not the vulnerability itself, but its origin: forensics indicate the exploit code was <strong>almost certainly developed using an autonomous AI agent</strong>.</p>
+                <p>According to a recently published report by the <strong>Google Threat Intelligence Group (GTIG)</strong>, an advanced exploitation operation targeted a logic flaw in a popular open-source web administration tool. The vulnerability allowed attackers to seamlessly bypass Two-Factor Authentication (2FA). However, the most chilling detail highlighted in the GTIG disclosure was not the vulnerability itself, but its origin: forensics indicate the exploit code was almost certainly developed using an autonomous AI agent.</p>
 
                 <div class="success-box" style="margin-bottom: 2rem;">
                     <strong><i class="fas fa-bullseye"></i> Key Takeaways</strong>
@@ -97,8 +418,8 @@ body = f"""
                 <p>The vulnerability triggered because of a variable shadowing issue combined with improper error handling during a specific race condition. Let's look at the vulnerable logic flow.</p>
 
                 <div class="technical-box">
-                    <h3><i class="fas fa-code"></i> The Vulnerable State Machine (Simplified Go Code)</h3>
-                    <p style="font-size: 0.95rem;">The AI realized that if it sent a malformed JSON payload containing a null 2FA token *while simultaneously* forcing a database timeout, the <code>err</code> variable would be overwritten, defaulting the <code>isAuthenticated</code> boolean to <code>true</code>.</p>
+                    <h3><i class="fas fa-code"></i> The Vulnerable State Machine (Illustrative Code)</h3>
+                    <p style="font-size: 0.95rem;">While the exact source code remains under embargo by GTIG, the vulnerability pattern mirrors a classic state-machine variable shadowing issue. The AI realized that if it sent a malformed JSON payload containing a null 2FA token *while simultaneously* forcing a database timeout, the <code>err</code> variable would be overwritten, defaulting the <code>isAuthenticated</code> boolean to <code>true</code>.</p>
 <pre><code class="language-go">func verify2FA(req *http.Request, session *Session) (bool, error) {{
     // 1. Extract 2FA token from request
     token := req.FormValue("2fa_token")
@@ -177,7 +498,23 @@ body = f"""
 
                 <p>The AI-developed 2FA bypass is a watershed moment in cybersecurity. It proves that artificial intelligence can move beyond simple reconnaissance and social engineering into the realm of deep, logical vulnerability discovery. As threat actors continue to weaponize these models, the lifespan of a zero-day logic flaw will decrease dramatically. The only viable defense is to build systems that are mathematically verifiable and to deploy AI-driven runtime defenses that can out-think the attacker's algorithms.</p>
 
-                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 3rem; font-style: italic;">This analysis is based on incident response telemetry and public disclosures available as of May 13, 2026. Mitigation strategies should be adapted to your specific architectural environment.</p>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 3rem; font-style: italic;">This analysis is based on incident response telemetry and public disclosures available as of May 13, 2026, primarily referencing the Google Threat Intelligence Group (GTIG) report. Code examples are illustrative simplifications of the described logic flaw. Mitigation strategies should be adapted to your specific architectural environment.</p>
+
+                <!-- Author Box -->
+                <div class="author-box">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Harish G</h4>
+                        <p>Cybersecurity researcher and founder of TheHGTech. Specializing in AI threats, zero-day analysis, and enterprise security architecture. Dedicated to providing research-grade intelligence without the vendor noise.</p>
+                        <div class="author-social">
+                            <a href="https://linkedin.com/in/harish-g-03704815a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com/thehgtech" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/Harish761" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
