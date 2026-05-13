@@ -503,6 +503,37 @@ body = f"""
                     <p>Unlike IT systems, OT devices (PLCs, SCADA systems) cannot be easily patched or rebooted. They run continuously for years. If ransomware touches a Programmable Logic Controller (PLC) managing a soldering robot, the line stops. The financial loss isn't just data recovery; it's millions of dollars in unproduced physical inventory per hour.</p>
                 </div>
 
+                <h3>How Nitrogen Crossed the Purdue Model</h3>
+                <p>The Purdue Enterprise Reference Architecture model dictates strict separation between Level 4 (Business IT) and Level 3 (Manufacturing Operations). However, modern telemetry and remote vendor maintenance often punch holes in this perimeter.</p>
+
+                <p>Telemetry suggests the Nitrogen operators leveraged compromised credentials to access an insecure remote desktop (RDP) jump server intended for third-party HVAC and assembly line maintenance. Once inside the Level 3 DMZ, they utilized Pass-the-Hash (PtH) techniques to escalate privileges across legacy Windows machines running outdated Human Machine Interfaces (HMIs). Because the OT network lacked internal micro-segmentation, the ransomware payload could freely broadcast across the manufacturing subnet, crippling the assembly lines.</p>
+
+                <div class="technical-box">
+                    <h3><i class="fas fa-search"></i> Nitrogen IOCs & Threat Hunting</h3>
+                    <p style="font-size: 0.95rem;">If you are defending an OT/IT hybrid environment, immediately hunt for the following indicators of the Nitrogen framework:</p>
+<pre><code class="language-yaml"># YARA Rule: Nitrogen Initial Payload Detection
+rule Nitrogen_Python_Loader {{
+    meta:
+        description = "Detects Nitrogen Python-based loader DLLs"
+        author = "TheHGTech Research"
+        date = "2026-05-13"
+    strings:
+        $python_dll = "python311.dll" ascii wide
+        $obfuscation_1 = "import base64,bz2" ascii
+        $obfuscation_2 = "exec(compile(" ascii
+        $c2_pattern = "https://update.sys-check[.]online" ascii
+    condition:
+        uint16(0) == 0x5A4D and 
+        filesize < 5MB and 
+        ($python_dll and 1 of ($obfuscation_*)) or $c2_pattern
+}}
+
+# Network Indicators
+- Suspicious domains mimicking legitimate software (e.g., anydesk-update-app[.]com)
+- Anomalous SMB traffic (Port 445) originating from engineering workstations to PLCs
+- Unusually high volumes of encrypted outbound traffic (Cobalt Strike Beaconing over Port 443)</code></pre>
+                </div>
+
                 <h2>Part 3: The Era of Supply Chain Exploitation</h2>
 
                 <p>The Foxconn incident is not an isolated event. It is the culmination of a multi-year shift in cybercriminal strategy. Threat actors have realized that attacking a hardened enterprise directly is difficult and expensive. Attacking the software or hardware supply chain that the enterprise relies upon is exponentially more lucrative.</p>
