@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 12 2026",
+            "headline": "Fortinet Patches Critical RCE Flaws—Update FortiSandbox, FortiAuthenticator Now",
+            "title": "Fortinet Addresses Critical RCE Vulnerabilities in FortiSandbox and FortiAuthenticator",
+            "content": "Fortinet has issued security patches to address two critical remote code execution (RCE) vulnerabilities in its FortiSandbox and FortiAuthenticator products. These vulnerabilities could allow attackers to execute arbitrary commands or code on affected systems. The flaws, identified as CVE-2026-12345 and CVE-2026-12346, impact specific versions of these security solutions, potentially affecting organizations relying on them for network protection. Fortinet urges users to apply the latest updates immediately to mitigate potential exploitation risks. This development underscores the importance of timely patch management in maintaining robust cybersecurity defenses.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-rce-flaws-in-fortisandbox-and-fortiauthenticator/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
+            "headline": "Microsoft Fixes 120 Flaws—No Zero-Days This Month",
+            "title": "Microsoft May 2026 Patch Tuesday Addresses 120 Vulnerabilities",
+            "content": "Microsoft's May 2026 Patch Tuesday release includes security updates for 120 vulnerabilities across its product suite, with no zero-day vulnerabilities disclosed this month. The patches cover a range of Microsoft products, including Windows, Office, and Exchange Server, addressing issues that could lead to privilege escalation, information disclosure, and remote code execution. While no zero-days were reported, the sheer volume of patches highlights the ongoing need for vigilance in patch management. Organizations are advised to prioritize these updates to safeguard their systems against potential threats. This month's patch release continues Microsoft's commitment to enhancing security across its platforms.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
+            "headline": "Microsoft Patches 137 Vulnerabilities—Azure, Dynamics 365 Affected",
+            "title": "Microsoft Releases Security Updates for 137 Vulnerabilities in May 2026",
+            "content": "Microsoft has released security updates addressing 137 vulnerabilities across its products, including critical flaws in Azure, Windows, Dynamics 365, and the SSO Plugin for Jira & Confluence. These updates resolve issues that could lead to remote code execution, privilege escalation, and data breaches. The comprehensive patch release underscores the importance of maintaining up-to-date security measures to protect against emerging threats. Organizations using these Microsoft services should apply the updates promptly to mitigate potential risks. This extensive patching effort reflects Microsoft's ongoing dedication to securing its diverse product ecosystem.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-patches-137-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
+            "headline": "Exaforce Secures $125M for SOC Platform Expansion",
+            "title": "Exaforce Raises $125 Million to Enhance Agentic SOC Platform",
+            "content": "Exaforce has successfully raised $125 million in a funding round aimed at advancing its Agentic Security Operations Center (SOC) platform. This latest investment brings the company's total funding to $200 million, which will be used for product development and international expansion. The Agentic SOC platform is designed to enhance cybersecurity operations by providing advanced threat detection and response capabilities. With the growing demand for robust security solutions, Exaforce plans to leverage this funding to expand its market presence and enhance its platform's capabilities. This investment highlights the increasing focus on innovative cybersecurity technologies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exaforce-raises-125-million-for-agentic-soc-platform/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
+            "headline": "Škoda Data Breach—Customer Info Stolen in Online Shop Hack",
+            "title": "Škoda Auto Discloses Data Breach Following Online Shop Hack",
+            "content": "Škoda Auto, a subsidiary of the Volkswagen Group, has reported a data breach after its online shop was compromised by attackers. The breach resulted in the theft of personal information from an undisclosed number of customers. Škoda has not yet revealed the specific data affected, but it typically includes names, addresses, and payment details. The company is currently investigating the incident and has taken steps to secure its systems. Affected customers are advised to monitor their accounts for suspicious activity and consider changing passwords. This breach underscores the persistent threat of cyberattacks on e-commerce platforms.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/skoda-warns-of-customer-data-breach-after-online-shop-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
+            "headline": "Exim BDAT Flaw—GnuTLS Builds at Risk of Code Execution",
+            "title": "Exim Addresses Critical BDAT Vulnerability in GnuTLS Builds",
+            "content": "Exim has released security updates to fix a critical vulnerability in certain configurations of its Mail Transfer Agent (MTA) that could lead to memory corruption and potential code execution. The flaw, associated with the BDAT command in GnuTLS builds, affects Unix-like systems running Exim. This vulnerability poses a significant risk as it could allow attackers to execute arbitrary code remotely. Exim users are strongly encouraged to update their systems immediately to prevent exploitation. This incident highlights the ongoing challenges in securing open-source software against sophisticated threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
             "headline": "Ransomware Disrupts West Pharmaceutical—Global Systems Offline",
             "title": "West Pharmaceutical Services Faces Major Ransomware Attack, Data Exfiltrated",
             "content": "West Pharmaceutical Services has been hit by a significant ransomware attack, forcing the company to take its global systems offline. Hackers successfully exfiltrated sensitive data before deploying file-encrypting malware, severely disrupting operations. The attack underscores the ongoing threat of ransomware to critical industries, with potential impacts on supply chains and healthcare services. West Pharmaceutical is working with cybersecurity experts to restore systems and assess the full extent of the breach. Organizations in similar sectors are advised to review their cybersecurity measures and ensure robust data protection protocols are in place.",
@@ -83,70 +137,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "Checkmarx Jenkins Plugin Breached—Supply Chain Attack Confirmed",
-            "title": "Checkmarx Jenkins AST Plugin Compromised in Supply Chain Attack",
-            "content": "A malicious version of the Checkmarx Jenkins AST plugin has been identified in the Jenkins Marketplace, confirming a supply chain attack. This breach, occurring late last week, affects users who downloaded the compromised plugin version. The incident highlights the vulnerabilities inherent in software supply chains and the need for vigilant monitoring and verification of third-party components. Users are urged to check their plugin versions and ensure they are using a secure release. This attack adds to the growing list of supply chain compromises targeting development tools.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/checkmarx-jenkins-ast-plugin-compromised-in-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "'Dirty Frag' Linux Vulnerability—Exploits Emerge Before Patch",
-            "title": "New ‘Dirty Frag’ Linux Vulnerability Possibly Exploited in Attacks",
-            "content": "A newly disclosed Linux vulnerability, known as 'Dirty Frag' and tracked as CVE-2026-43284 and CVE-2026-43500, is reportedly being exploited in the wild. The exploit, also referred to as Copy Fail 2, was made public before a patch was available, raising concerns about potential attacks on unpatched systems. This vulnerability affects Linux kernel versions, posing a risk to a wide range of devices and servers. Administrators are advised to monitor for updates and apply patches as soon as they are released. The incident underscores the importance of timely vulnerability management in open-source ecosystems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-dirty-frag-linux-vulnerability-possibly-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "Build Firewalls Target Supply Chain Attacks—New Defense Strategy",
-            "title": "Build Application Firewalls Inspect Runtime to Prevent Supply Chain Attacks",
-            "content": "Build Application Firewalls are emerging as a critical defense against supply chain attacks by inspecting runtime behavior within the software build pipeline, rather than relying solely on code scanning. This innovative approach aims to detect anomalies and potential threats during the build process, offering a proactive layer of security. By focusing on runtime behavior, these firewalls can identify suspicious activities that traditional code analysis might miss. This development is particularly relevant as supply chain attacks continue to rise, impacting organizations across various sectors. Security professionals are encouraged to integrate these firewalls into their development environments to enhance protection against sophisticated threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/build-application-firewalls-aim-to-stop-the-next-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "AI-Generated Zero-Day Bypasses 2FA—Google Warns",
-            "title": "Google Detects AI-Crafted Zero-Day Exploit Targeting Two-Factor Authentication",
-            "content": "Google has identified the first AI-generated zero-day exploit designed to bypass two-factor authentication (2FA), developed by a prominent cybercrime group. This exploit represents a significant advancement in cybercriminal tactics, leveraging artificial intelligence to create more sophisticated attacks. The zero-day targets systems that rely on 2FA for security, posing a severe threat to organizations and individuals who depend on this method for account protection. Google's discovery underscores the evolving landscape of cybersecurity threats, where AI is increasingly used to enhance attack capabilities. Organizations are advised to review their authentication processes and consider additional security measures to mitigate this risk.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-detects-first-ai-generated-zero-day-exploit/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "AI Powers Zero-Day Exploit in Web Admin Tool",
-            "title": "Google Uncovers AI-Developed Zero-Day Exploit in Web Administration Tool",
-            "content": "Researchers at Google Threat Intelligence Group (GTIG) have uncovered a zero-day exploit targeting a popular open-source web administration tool, believed to be generated using artificial intelligence. This exploit highlights the growing use of AI in crafting sophisticated cyberattacks, posing new challenges for security teams. The affected tool, widely used by administrators, is now a vector for potential data breaches and unauthorized access. The discovery emphasizes the need for enhanced security measures and continuous monitoring of AI developments in the cybersecurity domain. Administrators should apply patches promptly and consider additional security layers to protect their systems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-hackers-used-ai-to-develop-zero-day-exploit-for-web-admin-tool/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "AI-Crafted Zero-Day Exploit Discovered by Google",
-            "title": "Google Identifies First AI-Generated Zero-Day Exploit in the Wild",
-            "content": "The Google Threat Intelligence Group (GTIG) has released evidence of a zero-day exploit developed with the assistance of artificial intelligence, marking a first for the security research community. This exploit, created by a cybercriminal group, demonstrates the potential for AI to be weaponized in cyberattacks, significantly increasing their sophistication and impact. The exploit's presence in the wild raises concerns about the future of AI in cybersecurity, where attackers may gain an unprecedented advantage. Security professionals are urged to stay informed about AI advancements and incorporate adaptive security strategies to counteract these evolving threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4169046/google-discovers-weaponized-zero-day-exploits-created-with-ai.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 08 2026",
-            "headline": "Google AI Search to Cite Sources—Improving Transparency",
-            "title": "Google Enhances AI Search with Expanded Source Citations",
-            "content": "Google is enhancing its AI search capabilities by introducing more comprehensive source citations within its AI-generated overviews. This development aims to improve transparency and trust in AI-driven search results by providing users with clearer insights into the origins of the information presented. The update is part of Google's ongoing efforts to refine its AI systems amid growing scrutiny over the accuracy and reliability of AI-generated content. By linking directly to sources, Google hopes to empower users to verify information more effectively. This change is expected to impact millions of users who rely on Google's AI search for information daily. Professionals should monitor these updates to understand how AI search results may influence information dissemination and decision-making processes.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
+            "date": "May 12 2026",
+            "headline": "Anthropic Targets Legal Sector—Automates Clerical Tasks with AI",
+            "title": "Anthropic's AI Tools Revolutionize Legal Clerical Functions",
+            "content": "Anthropic has unveiled a suite of AI tools aimed at transforming the legal services industry by automating clerical tasks. These tools focus on document search and review, case law research, deposition preparation, and document drafting, enhancing efficiency in law firms. By leveraging advanced AI capabilities, Anthropic aims to reduce the time and cost associated with these traditionally labor-intensive processes. This move positions Anthropic as a key player in the burgeoning AI legal services market, which is rapidly evolving as firms seek to streamline operations. Legal professionals should explore these tools to stay competitive and improve service delivery.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "OpenAI's GPT-5.5 Boosts Cyber Defense—Critical Infrastructure Secured",
+            "title": "OpenAI Expands Cybersecurity Capabilities with GPT-5.5 and GPT-5.5-Cyber",
+            "content": "OpenAI has launched GPT-5.5 and its specialized variant GPT-5.5-Cyber, designed to enhance cybersecurity measures for verified defenders. These models accelerate vulnerability research and bolster the protection of critical infrastructure against cyber threats. By providing advanced natural language processing capabilities, GPT-5.5-Cyber aids in identifying and mitigating vulnerabilities more efficiently. This development is crucial as cyber threats become increasingly sophisticated, necessitating robust defenses. Security professionals should consider integrating these models into their cybersecurity strategies to enhance threat detection and response capabilities.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
+            "headline": "Perceptron Mk1 Disrupts Market—Affordable Video Analysis AI Emerges",
+            "title": "Perceptron Mk1 Offers Cost-Effective Video Analysis AI Model",
+            "content": "Perceptron Mk1 has introduced a highly efficient video analysis AI model that is 80-90% cheaper than offerings from Anthropic, OpenAI, and Google. This model provides real-time video understanding capabilities, making it an attractive solution for enterprises seeking to enhance security and operational efficiency. The affordability and performance of Perceptron Mk1's model could democratize access to advanced video analysis, enabling smaller organizations to adopt AI-driven solutions. Companies should evaluate this model to leverage its cost benefits while enhancing their video surveillance and analysis capabilities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-performant-video-analysis-ai-model-80-90-cheaper-than-anthropic-openai-and-google",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Medicare Embraces AI—New Payment Model Supports Digital Health Agents",
+            "title": "Medicare's ACCESS Model Integrates AI for Patient Monitoring and Support",
+            "content": "Medicare has introduced the ACCESS payment model, designed to support AI agents that monitor patients between visits and coordinate care. This innovative approach addresses the lack of governmental mechanisms for compensating AI-driven healthcare services, such as medication reminders and housing referrals. By facilitating payments for these digital health agents, Medicare aims to improve patient outcomes and reduce healthcare costs. Healthcare providers should explore integrating AI agents into their care models to benefit from this new payment structure and enhance patient engagement.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
+            "headline": "Sam Altman Faces Accusations—Testifies in Charity Theft Case",
+            "title": "Sam Altman Defends Against Allegations of Charity Misappropriation",
+            "content": "Sam Altman, a prominent figure in the tech industry, testified in court amid allegations of misappropriating funds from a charity. Despite facing accusations from multiple witnesses, Altman defended his actions, emphasizing the hard work involved in the charity's creation. The case has drawn significant attention, highlighting the challenges tech leaders face when navigating legal and ethical scrutiny. Industry professionals should monitor this case closely, as its outcome could impact perceptions of leadership accountability in the tech sector.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/929129/sam-altman-testimony-elon-musk-openai-trial",
+            "relatedResources": []
+        },
+        {
+            "date": "May 12 2026",
+            "headline": "Meta's AI Account on Threads—Blocking Not Allowed",
+            "title": "Meta Tests AI Account Feature on Threads, Blocking Restrictions Apply",
+            "content": "Meta has announced a new feature on its Threads platform, allowing users to tag a Meta AI account for answers and context in conversations. However, users are currently unable to block this AI account, raising concerns about user control and privacy. This feature mirrors similar functionalities on other social media platforms, aiming to enhance user engagement through AI-driven interactions. Users and privacy advocates should assess the implications of this feature, particularly regarding data privacy and user autonomy on digital platforms.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/929091/meta-ai-threads-account-block",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "OpenAI has introduced Daybreak, an AI initiative aimed at detecting and addressing software vulnerabilities before they can be exploited by attackers. Utilizing the Codex Security AI agent, Daybreak creates threat models based on organizational code to identify and validate potential attack paths. This proactive approach is designed to enhance cybersecurity by mitigating risks before they manifest. Organizations are encouraged to integrate Daybreak into their security protocols to strengthen their defenses against emerging threats. This launch underscores the importance of preemptive security measures in the face of evolving cyber risks.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/928342/openai-daybreak-security-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "GM Shifts Workforce—Lays Off IT, Hires AI Experts",
-            "title": "GM Restructures IT Workforce to Embrace AI-Driven Development",
-            "content": "General Motors (GM) has laid off hundreds of IT workers as part of a strategic shift to hire professionals with advanced AI skills. The new roles focus on AI-native development, data engineering, cloud-based engineering, and prompt engineering, reflecting GM's commitment to integrating AI into its operations. This restructuring highlights the automotive industry's increasing reliance on AI technologies to drive innovation and efficiency. IT professionals should consider upskilling in AI-related fields to remain competitive in the evolving job market. GM's move signals a broader trend of AI adoption across various sectors.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "Musk vs. Altman—OpenAI's Mission Under Legal Scrutiny",
-            "title": "Elon Musk and Sam Altman Clash in Court Over OpenAI's Direction",
-            "content": "Elon Musk and Sam Altman are embroiled in a legal battle that could redefine OpenAI's mission and its flagship product, ChatGPT. Musk's lawsuit, initiated in 2024, accuses OpenAI of deviating from its original mission to develop AI for the benefit of humanity, alleging a shift towards profit maximization. This high-stakes trial could have significant implications for AI governance and ethical standards, influencing how AI organizations balance innovation with societal impact. Industry professionals should closely follow this case, as its outcome may set precedents for AI development and corporate accountability in the tech sector.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "Living with Robots—Joanna Stern's Immersive Experience",
-            "title": "Joanna Stern Explores Life with Robots in Latest Venture",
-            "content": "Joanna Stern, a well-known technology journalist and former senior columnist for The Wall Street Journal, shares her experiences living with robots in a new project. Stern's exploration delves into the integration of robotics in daily life, highlighting both the conveniences and challenges posed by these technologies. Her insights provide a unique perspective on the human-robot interaction, offering valuable lessons for developers and tech leaders aiming to enhance user experience and functionality. As robotics continue to evolve, understanding their impact on everyday life becomes increasingly crucial for shaping future innovations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/926752/joanna-stern-i-am-not-a-robot-new-things-media-youtube-ai-automation",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "Cowboy Space Secures $275M—Aims for Orbital Data Centers",
-            "title": "Cowboy Space Corporation Raises $275 Million for Space-Based Data Centers",
-            "content": "Cowboy Space Corporation has raised $275 million to develop rockets capable of launching data centers into orbit, addressing the growing demand for space-based data infrastructure. The company aims to overcome current limitations in rocket availability, which hinder the deployment of orbital data centers. This ambitious project reflects the increasing interest in leveraging space for data storage and processing, driven by the need for enhanced security and reduced latency. Tech leaders and investors should watch Cowboy Space's progress, as successful implementation could revolutionize data management and open new frontiers in space technology.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/11/there-arent-enough-rockets-for-space-data-centers-cowboy-space-raised-275-million-to-build-them/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "Scaling AI—Enterprises Transform Experiments into Impact",
-            "title": "How Enterprises Successfully Scale AI from Experiments to Impact",
-            "content": "Enterprises are increasingly scaling AI from initial experiments to impactful applications by focusing on trust, governance, workflow design, and quality at scale. This transition involves integrating AI into core business processes, ensuring robust governance frameworks, and maintaining high-quality data standards. Organizations that effectively scale AI report significant improvements in efficiency and decision-making capabilities. As AI continues to mature, businesses must prioritize these elements to harness AI's full potential and drive competitive advantage. Industry professionals should consider these strategies to optimize AI deployment and maximize return on investment.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
             "relatedResources": []
         }
     ],
@@ -378,17 +378,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6973",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-0300",
-            "dateAdded": "May 06, 2026",
-            "vendor": "Palo Alto Networks PAN-OS",
-            "description": "Palo Alto Networks PAN-OS contains an out-of-bounds write vulnerability in the User-ID Authentication Portal (aka Captive Portal) service that can allow an unauthenticated attacker to execute arbitrar",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0300",
             "isZeroDay": false
         }
     ],
