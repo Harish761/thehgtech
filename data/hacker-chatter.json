@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-05-13T06:02:09.576877",
-  "total_incidents": 28061,
+  "last_updated": "2026-05-13T16:39:17.342168",
+  "total_incidents": 28066,
   "incidents": [
+    {
+      "id": "coinbasecartel_buenos_aires_software",
+      "victim_name": "Buenos Aires Software",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-05-13T14:21:06.621728+00:00",
+      "industry": "Technology",
+      "website": "bas.com.ar",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/aaa9d1cbd06dbcff2ea3ff842d48a332.png",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/bas",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_allele_diagnostics",
+      "victim_name": "Allele Diagnostics",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-13T13:50:17.079610+00:00",
+      "industry": "Healthcare",
+      "website": "allelediagnostics.com",
+      "claim": "Allele Diagnostics specializes in providing exceptional microarray and cytogenetic testing serv\nices, including neonatal, pediatric, and prenatal testing. The company is dedicated to deliveri\nng accurate, fast, and reliable results, leveraging the extensive experience of its laboratory \nstaff to optimize testing performance.\n\nWe will upload corporate data soon. Detailed employee personal information (passports, DLs, SSN\ns, I9 forms, credit card details and so on), patients information (personal docs and medical in\nformation), contracts and agreements, etc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_institute_of_private_enterprise_development",
+      "victim_name": "Institute of Private Enterprise Development",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-13T13:20:20.618091+00:00",
+      "industry": "Business Services",
+      "website": "ipedgy.com",
+      "claim": "The Institute of Private Enterprise Development focuses on improving the livelihoods of micro a\nnd small entrepreneurs by offering loans ranging from $40,000 to $7,500,000 GYD. Their services\nare designed to support individuals looking to start or grow their businesses, with a signific\nant emphasis on female and youth entrepreneurs, as well as those in rural areas.\n\nWe will upload 55gb of corporate data soon. Detailed clients and employee personal information \n(passports, DLs, SSNs, ID cards, financial information, credit card details and so on), NDAs , \netc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "payload_gorey_community_school",
+      "victim_name": "Gorey Community School",
+      "threat_actor": "payload",
+      "date_discovered": "2026-05-13T12:56:45.919991+00:00",
+      "industry": "Education",
+      "website": "goreycs.ie",
+      "claim": "Gorey Community School is a co-educational, multi-denominational institution located in Gorey, Co. Wexford, under the joint patronage of the Loreto Sisters and Waterford and Wexford ETB",
+      "screenshot": "https://images.ransomware.live/victims/1cde31dce1f62e8145581ba045667770.png",
+      "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/c9049f7c-de08-4099-a2f7-d8ae8e421682",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "payload_inteceng.com.my_(+_tsksynergy.com.my_+_amemanufacturing.com.my_+_woodnova.com.my)",
+      "victim_name": "Inteceng.com.my (+ Tsksynergy.com.my + Amemanufacturing.com.my + Woodnova.com.my)",
+      "threat_actor": "payload",
+      "date_discovered": "2026-05-13T12:56:07.521511+00:00",
+      "industry": "Manufacturing",
+      "website": "Inteceng.com.my",
+      "claim": "These websites represent a synergistic group of Malaysian companies, such as AME Elite and TSK Synergy, specializing in integrated industrial construction and engineering solutions. They provide end-to-end services, including the design and fabrication of steel structures, mechanical engineering, and the development of large-scale industrial parks. Together, they leverage their combined expertise to deliver \"turnkey\" manufacturing facilities and infrastructure projects across the region.",
+      "screenshot": "https://images.ransomware.live/victims/cd2b4f396e76afe2b33e2d3aa0420a7f.png",
+      "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/61827d93-eb95-42af-b264-9b84aeecefb7",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "anubis_a.r.ge.co",
       "victim_name": "A.R.Ge.Co",
