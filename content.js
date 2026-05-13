@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 13 2026",
+            "headline": "Foxconn Hit by Nitrogen Ransomware—North American Ops Disrupted",
+            "title": "Foxconn Confirms Cyberattack by Nitrogen Ransomware, Impacting North American Operations",
+            "content": "Foxconn, the world's largest electronics manufacturer, has confirmed a cyberattack by the Nitrogen ransomware gang, affecting its North American factories. The attack has disrupted operations, with some facilities working to resume normal activities. While specific details about the ransomware's entry point remain undisclosed, the incident underscores the vulnerability of manufacturing giants to sophisticated cyber threats. Foxconn is currently assessing the full scope of the breach and implementing recovery measures. This attack highlights the ongoing risk of ransomware to critical supply chains and the necessity for robust cybersecurity defenses.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/electronics-giant-foxconn-confirms-cyberattack-on-north-american-factories/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "73 Seconds to Breach—Autonomous Validation Urged for Defense",
+            "title": "Autonomous Validation Critical as Breaches Happen in Seconds, Patching Lags",
+            "content": "Picus Security has highlighted the alarming speed at which attackers can breach systems—just 73 seconds—while patching and response can take up to 24 hours. This stark contrast underscores the need for autonomous validation in modern cybersecurity strategies. Autonomous validation involves continuous, automated testing of security controls to ensure they are effective against the latest threats. As cyberattacks become increasingly sophisticated and rapid, organizations must adopt proactive measures to reduce response times and enhance defense capabilities. This approach is crucial for maintaining resilience against evolving cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/73-seconds-to-breach-24-hours-to-patch-the-case-for-autonomous-validation/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Government Probes Instructure Over Canvas Data Breach",
+            "title": "Homeland Security to Investigate Instructure's Canvas Data Breach and Disruption",
+            "content": "The Committee on Homeland Security is set to investigate Instructure following a data breach and disruption of its Canvas learning platform. The breach has raised concerns about the security of educational technology platforms and their ability to protect sensitive user data. Instructure is expected to provide a detailed briefing on the incident and outline its remediation steps. This scrutiny reflects growing governmental oversight of cybersecurity practices in the education sector, emphasizing the need for robust security measures to safeguard student and institutional data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/government-to-scrutinize-instructure-on-canvas-disruption-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "OpenLoop Health Breach Exposes 716,000 Users' Data",
+            "title": "OpenLoop Health Data Breach Affects 716,000 Users, Personal Information Compromised",
+            "content": "OpenLoop, a telehealth platform, has suffered a data breach affecting 716,000 users, with personal information exfiltrated from its systems. The breach, which occurred in January, highlights the vulnerabilities in telehealth services as they become more integral to healthcare delivery. Compromised data includes sensitive personal and possibly medical information, raising concerns about patient privacy and data security. OpenLoop is working to notify affected users and enhance its security protocols. This incident underscores the critical need for robust cybersecurity measures in the rapidly growing telehealth industry.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/716000-impacted-by-openloop-health-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Microsoft Patches 138 Flaws—DNS and Netlogon RCEs Included",
+            "title": "Microsoft Releases Patches for 138 Vulnerabilities, Including Critical DNS and Netlogon RCEs",
+            "content": "Microsoft has issued patches for 138 security vulnerabilities across its product portfolio, addressing critical flaws in DNS and Netlogon that could allow remote code execution (RCE). Of these vulnerabilities, 30 are rated Critical, underscoring the potential risk to enterprise environments. While none of the flaws are currently known to be exploited in the wild, immediate patching is recommended to prevent potential attacks. This extensive update reflects Microsoft's ongoing commitment to addressing security issues and protecting its users from emerging threats. Organizations should prioritize these updates to maintain system integrity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Microsoft Fixes Zero-Click Outlook Flaw—Enterprise Threat Mitigated",
+            "title": "Microsoft Patches Critical Zero-Click Outlook Vulnerability CVE-2026-40361",
+            "content": "Microsoft has patched CVE-2026-40361, a critical zero-click vulnerability in Outlook reminiscent of the decade-old BadWinmail flaw. This vulnerability, dubbed an \"enterprise killer,\" could allow attackers to compromise systems without user interaction. The patch addresses a significant security risk for enterprises relying on Outlook for communication. Organizations are urged to apply the update immediately to mitigate potential exploitation. This fix is part of Microsoft's broader effort to secure its software ecosystem against sophisticated threats targeting enterprise environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-patches-critical-zero-click-outlook-vulnerability-threatening-enterprises/",
+            "relatedResources": []
+        },
+        {
             "date": "May 12 2026",
             "headline": "Fortinet Patches Critical RCE Flaws—Update FortiSandbox, FortiAuthenticator Now",
             "title": "Fortinet Addresses Critical RCE Vulnerabilities in FortiSandbox and FortiAuthenticator",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/mini-shai-hulud-worm-compromises.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "SAP Patches 15 Vulnerabilities—Critical Flaws in Commerce Cloud, S/4HANA",
-            "title": "SAP Addresses Critical Security Flaws in Commerce Cloud and S/4HANA",
-            "content": "SAP's May 2026 security update addresses 15 vulnerabilities, including critical issues in its Commerce Cloud and S/4HANA platforms. The critical flaws could lead to unauthorized access and data breaches if left unpatched. These updates are crucial for maintaining the security of enterprise-grade e-commerce and ERP systems. SAP users are strongly advised to apply these patches promptly to protect against potential exploits. This update reflects SAP's ongoing commitment to securing its software products against evolving cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/sap-fixes-critical-vulnerabilities-in-commerce-cloud-and-s-4hana/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "cPanel Vulnerability Exposes Hosting Environments to Supply-Chain Attacks",
-            "title": "Critical cPanel Flaw CVE-2026-41940 Exploited in Hosting Supply-Chain Attacks",
-            "content": "A critical vulnerability in cPanel, tracked as CVE-2026-41940, is being actively exploited, posing significant risks to web hosting environments. This flaw allows attackers to gain unauthorized access, potentially affecting enterprises that rely on cPanel for website management. The widespread exploitation of this vulnerability highlights the need for improved visibility into hosting supply chains. Enterprises using cPanel should prioritize patching and enhance monitoring of their hosting environments to prevent unauthorized access and data breaches.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4169957/cpanel-flaw-exposes-enterprises-to-hosting-supply-chain-risks.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Mini Shai-Hulud Campaign Hits 400 Malicious Packages—Supply Chain Alert",
-            "title": "TanStack, Mistral AI, UiPath Compromised in Mini Shai-Hulud Supply Chain Attack",
-            "content": "The Mini Shai-Hulud campaign has resulted in the publication of over 400 malicious versions of 170 packages, affecting TanStack, Mistral AI, UiPath, and others. This supply chain attack, linked to TeamPCP, involves the distribution of compromised npm and PyPI packages, posing a significant risk to developers and organizations using these libraries. The attack underscores the critical need for rigorous supply chain security practices and dependency management. Affected parties should conduct thorough audits of their software dependencies and implement robust security measures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/tanstack-mistral-ai-uipath-hit-in-fresh-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "TeamPCP Strikes Again—Checkmarx Jenkins Plugin Compromised",
-            "title": "TeamPCP Compromises Checkmarx Jenkins AST Plugin in Supply Chain Attack",
-            "content": "Checkmarx has confirmed a security breach involving its Jenkins AST plugin, which was compromised by the threat actor TeamPCP. The malicious version was uploaded to the Jenkins Marketplace, affecting users who downloaded versions after 2.0.13-829.vc72453fa_1c16, released on December 17, 2025. This incident follows a recent supply chain attack on Checkmarx's KICS tool, highlighting the persistent targeting of software supply chains by cybercriminals. Users are urged to verify their plugin version and revert to the safe release if necessary. This breach underscores the critical need for robust supply chain security measures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/teampcp-compromises-checkmarx-jenkins.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "cPanel Flaw Exploited—Filemanager Backdoor Deployed",
-            "title": "cPanel CVE-2026-41940 Exploited to Deploy Filemanager Backdoor",
-            "content": "A critical vulnerability, CVE-2026-41940, in cPanel and WebHost Manager (WHM) is being actively exploited by a threat actor known as Mr_Rot13. The exploit allows attackers to deploy a backdoor named Filemanager, compromising affected environments. This vulnerability poses a significant risk to web hosting services, potentially impacting thousands of websites relying on cPanel for management. Administrators are advised to apply available patches immediately to mitigate the threat. This incident highlights the ongoing challenges in securing web hosting platforms against sophisticated cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/cpanel-cve-2026-41940-under-active.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "AI-Powered Zero-Day Bypass Targets 2FA Systems",
-            "title": "Hackers Use AI to Develop Zero-Day 2FA Bypass for Mass Exploitation",
-            "content": "Google has disclosed a zero-day exploit targeting two-factor authentication (2FA) systems, reportedly developed using artificial intelligence (AI). This marks the first known instance of AI being leveraged for malicious vulnerability discovery and exploitation. The exploit, attributed to an unknown threat actor, poses a significant threat to systems relying on 2FA for security. Organizations are advised to review their authentication mechanisms and consider additional security layers. This development underscores the dual-use nature of AI technologies and the evolving landscape of cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 08 2026",
+            "headline": "Google AI Search Boosts Transparency—Links More Sources",
+            "title": "Google Enhances AI Search by Linking Additional Sources in Overviews",
+            "content": "Google has announced an update to its AI-powered search capabilities, now linking more sources in its AI-generated overviews. This enhancement aims to improve transparency and reliability by providing users with direct access to the original content referenced in AI summaries. The update addresses previous criticisms regarding the lack of source attribution in AI-generated content, a concern for both users and content creators. This move aligns with broader industry trends emphasizing transparency and accountability in AI systems. Users can expect to see these changes rolled out across Google's search platform in the coming weeks, enhancing the credibility of AI-generated information.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "WhatsApp Introduces Incognito Mode for Meta AI Chats",
+            "title": "WhatsApp Adds Incognito Mode to Meta AI Conversations for Privacy",
+            "content": "WhatsApp has introduced an incognito mode for its Meta AI-powered chats, enhancing user privacy by ensuring conversations are not stored and messages disappear once the chat is closed. This feature is part of Meta's ongoing efforts to prioritize user privacy and data security in its messaging services. The incognito mode is designed to provide users with more control over their digital footprint, addressing growing concerns about data retention and privacy in AI-driven communications. Users are encouraged to explore this new feature to maintain confidentiality in their interactions with Meta AI.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/13/whatsapp-adds-an-incognito-mode-in-meta-ai-chats/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Anthropic Surpasses OpenAI in Business Customer Base",
+            "title": "Anthropic Overtakes OpenAI in Verified Business Customers, Says Ramp",
+            "content": "According to the latest AI Index from fintech firm Ramp, Anthropic now boasts more verified business customers than OpenAI, marking a significant shift in the competitive landscape of AI service providers. This development highlights Anthropic's growing influence and appeal among enterprise clients seeking reliable AI solutions. The data reflects a broader trend of businesses diversifying their AI partnerships to leverage different capabilities and innovations. Companies using AI technologies should consider evaluating Anthropic's offerings as part of their strategic planning to stay competitive in the rapidly evolving AI market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Poppy Launches AI Assistant for Digital Life Management",
+            "title": "Poppy Unveils AI Assistant to Streamline Digital Life Organization",
+            "content": "Poppy has launched a proactive AI assistant designed to help users organize their digital lives by connecting calendars, emails, messages, and other services. This AI-powered app provides timely reminders, suggestions, and task management based on users' activities and schedules. The introduction of Poppy's assistant reflects the increasing demand for AI tools that enhance productivity and personal management. As digital interactions become more complex, such AI solutions are crucial for individuals and businesses aiming to optimize their time and resources. Users interested in improving their digital organization should consider integrating Poppy into their daily routines.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/13/poppy-debuts-a-proactive-ai-assistant-to-help-organize-your-digital-life/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "AutoScientist Empowers AI Models with Self-Training Capabilities",
+            "title": "Adaption's AutoScientist Tool Enables AI Models to Self-Train Efficiently",
+            "content": "Adaption has introduced AutoScientist, an innovative AI tool designed to enable models to train themselves by automating the conventional fine-tuning process. This tool allows AI models to quickly adapt to specific capabilities, enhancing their performance and reducing the time required for manual adjustments. AutoScientist represents a significant advancement in AI development, providing researchers and developers with a powerful resource to accelerate model optimization. Organizations leveraging AI technologies should explore AutoScientist to improve their model training processes and maintain a competitive edge in AI innovation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/13/adaption-aims-big-with-autoscientist-an-ai-tool-that-helps-models-train-themselves/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Data Centers Transform Rural America—Maine Mill Repurposed",
+            "title": "Rural America Sees Data Center Boom as Maine Mill Transforms",
+            "content": "The former Androscoggin paper mill in Jay, Maine, has been repurposed into a data center, marking a significant shift in the economic landscape of rural America. This transformation follows the mill's closure in 2020 after a catastrophic explosion and its subsequent purchase in 2023. The conversion into a data center reflects a broader trend of tech companies investing in rural areas to capitalize on lower costs and available infrastructure. This development offers new economic opportunities for local communities, potentially revitalizing areas previously reliant on traditional industries. Stakeholders in rural development and tech infrastructure should monitor these trends for future investment opportunities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/928963/data-center-rural-america-jobs-jay-maine",
+            "relatedResources": []
+        },
         {
             "date": "May 12 2026",
             "headline": "Anthropic Targets Legal Sector—Automates Clerical Tasks with AI",
@@ -147,15 +201,6 @@ const websiteContent = {
             "content": "Anthropic has unveiled a suite of AI tools aimed at transforming the legal services industry by automating clerical tasks. These tools focus on document search and review, case law research, deposition preparation, and document drafting, enhancing efficiency in law firms. By leveraging advanced AI capabilities, Anthropic aims to reduce the time and cost associated with these traditionally labor-intensive processes. This move positions Anthropic as a key player in the burgeoning AI legal services market, which is rapidly evolving as firms seek to streamline operations. Legal professionals should explore these tools to stay competitive and improve service delivery.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "OpenAI's GPT-5.5 Boosts Cyber Defense—Critical Infrastructure Secured",
-            "title": "OpenAI Expands Cybersecurity Capabilities with GPT-5.5 and GPT-5.5-Cyber",
-            "content": "OpenAI has launched GPT-5.5 and its specialized variant GPT-5.5-Cyber, designed to enhance cybersecurity measures for verified defenders. These models accelerate vulnerability research and bolster the protection of critical infrastructure against cyber threats. By providing advanced natural language processing capabilities, GPT-5.5-Cyber aids in identifying and mitigating vulnerabilities more efficiently. This development is crucial as cyber threats become increasingly sophisticated, necessitating robust defenses. Security professionals should consider integrating these models into their cybersecurity strategies to enhance threat detection and response capabilities.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Thinking Machines is pioneering a new AI model designed to process input and generate responses simultaneously, akin to a natural conversation. This approach contrasts with traditional models that operate in a sequential manner, potentially transforming how AI interacts with users. The innovation aims to create more fluid and dynamic interactions, similar to human phone conversations rather than text exchanges. By enhancing real-time processing capabilities, Thinking Machines seeks to improve user experience and engagement. This advancement could significantly impact sectors reliant on interactive AI, such as customer service and virtual assistance. Professionals should explore the potential applications of these interaction models in their fields.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/11/thinking-machines-wants-to-build-an-ai-that-actually-listens-while-it-talks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "Mira Murati's Thinking Machines Unveils Interaction Models",
-            "title": "Thinking Machines Introduces Innovative AI Interaction Models",
-            "content": "Founded by former OpenAI CTO Mira Murati, Thinking Machines has announced its work on \"interaction models,\" a novel AI concept aimed at enabling more natural collaboration between humans and AI. These models are designed to facilitate seamless, real-time interactions, allowing users to engage with AI in a manner that mirrors human collaboration. This initiative reflects a broader trend towards creating AI systems that are not only responsive but also intuitive and adaptive to user needs. The development of interaction models could revolutionize how AI is integrated into daily workflows, offering new possibilities for collaboration and productivity. Industry professionals should consider the implications of these advancements for future AI deployments.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/928309/mira-murati-thinking-machines-ai-interaction-model",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "AI-Crafted Zero-Day Thwarted by Google—Mass Exploit Averted",
-            "title": "Google Stops AI-Developed Zero-Day Exploit Targeting Mass Systems",
-            "content": "Google's Threat Intelligence Group (GTIG) has successfully intercepted a zero-day exploit crafted using artificial intelligence, marking a first in cybersecurity history. The exploit was poised for a \"mass exploitation event\" by prominent cybercrime threat actors, potentially impacting millions of systems. This AI-driven vulnerability underscores the evolving sophistication of cyber threats, where machine learning models are now being leveraged to create more potent attacks. Organizations are urged to enhance their security measures, focusing on AI-driven threat detection and response capabilities. This incident highlights the critical need for continuous innovation in cybersecurity defenses to counteract AI-enhanced threats.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Robinhood Eyes IPO for New Startup Fund Amid AI Surge",
-            "title": "Robinhood Prepares Second Retail Venture IPO Targeting AI Startups",
-            "content": "Robinhood has confidentially filed for an IPO of its second venture fund, focusing on growth and early-stage startups, particularly in the AI sector. This move comes as the company seeks to capitalize on the ongoing AI investment boom, aiming to support innovative startups poised for rapid growth. The fund will target emerging technologies and disruptive business models, aligning with Robinhood's strategy to expand its influence in the tech investment landscape. Investors and tech leaders should monitor this development, as it may signal new opportunities in the AI-driven market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/11/riding-an-ai-rally-robinhood-preps-second-retail-venture-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "AWS and Hugging Face Enhance AI Model Training Infrastructure",
-            "title": "AWS and Hugging Face Collaborate on Foundation Model Training Tools",
-            "content": "Hugging Face has announced a collaboration with AWS to develop new tools for training and inference of foundation models. This partnership aims to streamline the deployment of large-scale AI models, enhancing efficiency and scalability for developers. By leveraging AWS's robust cloud infrastructure, Hugging Face seeks to provide an optimized environment for AI research and application development. This initiative reflects the growing demand for accessible and powerful AI tools, enabling organizations to harness the full potential of machine learning technologies. Developers should explore these new resources to improve their AI model workflows.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
-            "relatedResources": []
-        },
-        {
-            "date": "May 11 2026",
-            "headline": "OpenAI's Daybreak Targets Vulnerabilities Before Hackers Strike",
-            "title": "OpenAI Launches Daybreak to Preemptively Address Software Vulnerabilities",
-            "content": "OpenAI has introduced Daybreak, an AI initiative aimed at detecting and addressing software vulnerabilities before they can be exploited by attackers. Utilizing the Codex Security AI agent, Daybreak creates threat models based on organizational code to identify and validate potential attack paths. This proactive approach is designed to enhance cybersecurity by mitigating risks before they manifest. Organizations are encouraged to integrate Daybreak into their security protocols to strengthen their defenses against emerging threats. This launch underscores the importance of preemptive security measures in the face of evolving cyber risks.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/928342/openai-daybreak-security-ai",
             "relatedResources": []
         }
     ],
