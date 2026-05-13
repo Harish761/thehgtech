@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "ai-developed-2fa-bypass-2026",
+      "title": "The Machine That Picked the Lock: An AI-Developed 2FA Bypass",
+      "date": "May 13, 2026",
+      "category": "AI Threats & Vulnerability Research",
+      "badge": "AI ZERO-DAY",
+      "author": "Harish G",
+      "excerpt": "Google TAG discovers an autonomous AI agent that successfully fuzzed a complex state-machine to find a zero-day logic flaw, bypassing 2FA without credentials.",
+      "image": "/images/articles/ai-2fa-bypass-2026.png",
+      "externalUrl": "articles/ai-developed-2fa-bypass-2026.html",
+      "readTime": "25 min read",
+      "tags": [
+        "AI Threats",
+        "Zero-Day",
+        "2FA Bypass",
+        "State-Machine Flaw",
+        "Fuzzing",
+        "Google TAG"
+      ]
+    },
+    {
       "id": "report-20260511",
       "title": "Weekly Threat Report: May 11, 2026",
       "date": "May 11, 2026",
