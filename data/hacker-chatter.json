@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-05-14T06:01:38.286846",
-  "total_incidents": 28083,
+  "last_updated": "2026-05-14T16:28:02.654183",
+  "total_incidents": 28090,
   "incidents": [
+    {
+      "id": "qilin_schulte-lindhorst_gmbh_&_co.",
+      "victim_name": "Schulte-Lindhorst GmbH & Co.",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-14T16:23:05.613110+00:00",
+      "industry": "Manufacturing",
+      "website": "www.schulte-lindhorst.de/impressum.html",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/714a0d97b33d7e731f1ebe98e23d6f2f.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=fc4e2698-9dcc-4f1f-bc54-cd2ecacf3f68",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_institute_of_privateenterprise_development",
+      "victim_name": "Institute of PrivateEnterprise Development",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-14T14:50:21.175649+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "\nThe Institute of Private Enterprise Development focuses on improving the livelihoods of micro \nand small entrepreneurs by offering loans ranging from $40,000 to $7,500,000 GYD. Their servic\nes are designed to support individuals looking to start or grow their businesses, with a signi\nficant emphasis on female and youth entrepreneurs, as well as those in rural areas.\n\nHere is the access to 55gb of corporate data. Detailed clients and employee personal informati\non (passports, DLs, SSNs, ID cards, financial information, credit card details and so on), NDA\ns , etc.\nYou will find several password-free archives. Click on any of them to start the download.\n\nClick the download button.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_fab-masters",
+      "victim_name": "Fab-Masters",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-14T11:54:55.383096+00:00",
+      "industry": "Manufacturing",
+      "website": "www.fabmastersinc.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/50ff0b13157b092af4b807a58c792e11.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=04e96a4b-31cf-4ec4-bcc9-4316c3fb3383",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "abyss_technic.com",
+      "victim_name": "technic.com",
+      "threat_actor": "abyss",
+      "date_discovered": "2026-05-14T11:20:27.870660+00:00",
+      "industry": "Technology",
+      "website": "technic.com",
+      "claim": "Founded in 1944 and headquartered in Woonsocket, Rhode Island, Technic Inc. is an international supplier of electroplating chemicals and equipment.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "cmdorganization_goodstone_group",
+      "victim_name": "Goodstone Group",
+      "threat_actor": "cmdorganization",
+      "date_discovered": "2026-05-14T11:20:10.067874+00:00",
+      "industry": "Not Found",
+      "website": "www.goodstone.com.au",
+      "claim": "Goldberg Coins & Collectibles Inc. is a family-owned business specializing in numismatic auctions and collectibles, with a legacy dating back to 1930. The company offers expert auction services, personal consultations, and has a strong reputation for achieving record-breaking prices for consignors. Their intended clients include coin collectors and investors looking to sell or acquire high-quality numismatic items. With over 80 years of combined experience, Ira and Larry Goldberg provide a professional and personalized service, ensuring client satisfaction and exceptional results.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "morpheus_baytech_a/s",
+      "victim_name": "BAYTECH A/S",
+      "threat_actor": "morpheus",
+      "date_discovered": "2026-05-14T09:24:46.294234+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "**Website**: baytech.dk\n\n**Revenue**: $5 Million\n\nBaytech A/S is a Danish industrial engineering company that provides crane systems, material handling equipment, and logistics solutions for industria",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "cmdorganization_ira_&_larry_goldberg_coins_&_collectibles",
+      "victim_name": "Ira & Larry Goldberg Coins & Collectibles",
+      "threat_actor": "cmdorganization",
+      "date_discovered": "2026-05-14T08:20:12.188506+00:00",
+      "industry": "Consumer Services",
+      "website": "www.goldbergcoins.com",
+      "claim": "Goldberg Coins & Collectibles Inc. is a family-owned business specializing in numismatic auctions and collectibles, with a legacy dating back to 1930. The company offers expert auction services, personal consultations, and has a strong reputation for achieving record-breaking prices for consignors. Their intended clients include coin collectors and investors looking to sell or acquire high-quality numismatic items. With over 80 years of combined experience, Ira and Larry Goldberg provide a professional and personalized service, ensuring client satisfaction and exceptional results.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "killsec_dsdlawfirm.com",
       "victim_name": "dsdlawfirm.com",
