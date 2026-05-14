@@ -1,6 +1,46 @@
 {
   "incidents": [
     {
+      "id": "AIID-1487",
+      "incident_id": 1487,
+      "title": "ChatGPT Was Alleged to Have Aided Planning of Florida State University Mass Shooting",
+      "date": "2026-05-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1488",
+      "incident_id": 1488,
+      "title": "ChatGPT Was Reportedly Consulted on Body-Disposal and Concealment Questions Before and After Univers",
+      "date": "2026-05-14",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1489",
+      "incident_id": 1489,
+      "title": "ChatGPT Was Reportedly Used in Planning School Stabbing in Pirkkala, Finland, That Injured Three Pup",
+      "date": "2026-05-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1490",
+      "incident_id": 1490,
+      "title": "ChatGPT Was Allegedly Consulted About Attack Options Before Teen Attempted to Stab Officer at Tira, ",
+      "date": "2026-05-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1491",
+      "incident_id": 1491,
+      "title": "ChatGPT Use Was Reportedly Cited in Delusional State Before Homicide and Assault in Readfield, Maine",
+      "date": "2026-05-13",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1236",
       "incident_id": 1236,
       "title": "Quantum AI and Related AI-Themed Investment Scams Reportedly Used Deepfake Endorsements and Spoofed ",
@@ -1058,9 +1098,9 @@
     }
   ],
   "stats": {
-    "total": 132,
-    "last7Days": 10,
-    "last30Days": 40
+    "total": 137,
+    "last7Days": 15,
+    "last30Days": 45
   },
-  "lastUpdated": "2026-05-14T03:12:39.733246+05:30"
+  "lastUpdated": "2026-05-14T09:38:35.616590+05:30"
 }
