@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 14 2026",
+            "headline": "Fragnesia Exploit Elevates Linux Threat—Patch Urgently",
+            "title": "Linux Kernel Vulnerability Fragnesia Enables Root Privilege Escalation",
+            "content": "A critical vulnerability, CVE-2026-46300, dubbed Fragnesia, has been identified in the Linux kernel, allowing attackers to escalate privileges to root. This flaw is akin to the recent Dirty Frag and Copy Fail exploits, posing a significant risk to systems running affected Linux distributions. The vulnerability enables malicious actors to execute arbitrary code with root privileges, potentially compromising the entire system. As Linux distributions rush to release patches, administrators are urged to apply updates immediately to mitigate potential attacks. This incident underscores the ongoing challenges in securing open-source software against sophisticated threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-linux-kernel-vulnerability-fragnesia-allows-root-privilege-escalation/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Mythos Shines in Code Audits—Struggles in Exploit Validation",
+            "title": "Mythos Excels in Vulnerability Discovery, Falls Short in Exploit Validation",
+            "content": "Mythos, a tool designed for vulnerability discovery, has demonstrated exceptional capabilities in source code audits, reverse engineering, and native-code analysis. However, independent benchmarking reveals its exploit validation and reasoning capabilities are inconsistent, limiting its effectiveness in comprehensive security assessments. While Mythos is a valuable asset for identifying potential vulnerabilities, security professionals should be cautious about relying solely on it for exploit validation. This highlights the need for a multifaceted approach to vulnerability management, combining tools with human expertise to ensure robust security defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mythos-proves-potent-in-vulnerability-discovery-less-convincing-elsewhere/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "PraisonAI Auth Bypass Exploited Within Hours—Immediate Action Needed",
+            "title": "PraisonAI CVE-2026-44338 Auth Bypass Exploited Hours After Disclosure",
+            "content": "Within four hours of its public disclosure, threat actors began exploiting CVE-2026-44338, a critical authentication bypass vulnerability in PraisonAI. This open-source multi-agent orchestration framework is now at risk, with a CVSS score of 7.3 indicating high severity. The flaw arises from missing authentication checks, allowing unauthorized access and control over affected systems. Organizations using PraisonAI should implement immediate security measures, including patching and enhanced monitoring, to prevent potential breaches. This rapid exploitation highlights the importance of swift response to vulnerability disclosures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/praisonai-cve-2026-44338-auth-bypass.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "AI Hallucinations Pose Real Threats to Critical Infrastructure",
+            "title": "AI Hallucinations Introduce Security Risks in Critical Decision-Making",
+            "content": "AI hallucinations, where models generate highly confident but incorrect outputs, are creating significant security risks in critical infrastructure decision-making. These hallucinations exploit human trust, leading to potentially disastrous outcomes when AI systems are used without adequate oversight. The lack of a mechanism for AI models to recognize their uncertainty exacerbates the issue, as they default to generating the most probable response. Security professionals must be aware of these risks and implement robust validation and verification processes to mitigate the impact of AI errors in sensitive environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/how-ai-hallucinations-are-creating-real.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Windows Zero-Days Unveil BitLocker and CTFMON Vulnerabilities",
+            "title": "Windows Zero-Days Expose BitLocker Bypass and CTFMON Privilege Escalation",
+            "content": "Two new zero-day vulnerabilities affecting Windows systems have been disclosed, involving a BitLocker bypass and a privilege escalation in the Collaborative Translation Framework (CTFMON). These vulnerabilities, codenamed YellowKey, were revealed by an anonymous cybersecurity researcher who previously disclosed Microsoft Defender flaws. The BitLocker bypass could allow unauthorized access to encrypted data, while the CTFMON flaw enables privilege escalation, potentially compromising system integrity. Microsoft users are advised to monitor for patches and implement interim security measures to protect against these threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/windows-zero-days-expose-bitlocker.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Fragnesia Linux Flaw Demands Immediate Patching—Root Access Risk",
+            "title": "Fragnesia Linux Vulnerability Allows Attackers to Gain Root Privileges",
+            "content": "The Fragnesia vulnerability, tracked as CVE-2026-46300, poses a high-severity threat to Linux systems, enabling attackers to execute code with root privileges. Linux distributions are actively rolling out patches to address this critical kernel flaw. The vulnerability's potential to allow unauthorized root access underscores the urgent need for system administrators to apply updates promptly. This incident highlights the persistent security challenges faced by open-source platforms and the importance of proactive vulnerability management.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-fragnesia-linux-flaw-lets-attackers-gain-root-privileges/",
+            "relatedResources": []
+        },
+        {
             "date": "May 13 2026",
             "headline": "Exim Mailer Flaw—Remote Code Execution Risk",
             "title": "Critical Exim Mail Transfer Agent Vulnerability Enables Remote Code Execution",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/government-to-scrutinize-instructure-on-canvas-disruption-data-breach/",
             "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "OpenLoop Health Breach Exposes 716,000 Users' Data",
-            "title": "OpenLoop Health Data Breach Affects 716,000 Users, Personal Information Compromised",
-            "content": "OpenLoop, a telehealth platform, has suffered a data breach affecting 716,000 users, with personal information exfiltrated from its systems. The breach, which occurred in January, highlights the vulnerabilities in telehealth services as they become more integral to healthcare delivery. Compromised data includes sensitive personal and possibly medical information, raising concerns about patient privacy and data security. OpenLoop is working to notify affected users and enhance its security protocols. This incident underscores the critical need for robust cybersecurity measures in the rapidly growing telehealth industry.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/716000-impacted-by-openloop-health-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Microsoft Patches 138 Flaws—DNS and Netlogon RCEs Included",
-            "title": "Microsoft Releases Patches for 138 Vulnerabilities, Including Critical DNS and Netlogon RCEs",
-            "content": "Microsoft has issued patches for 138 security vulnerabilities across its product portfolio, addressing critical flaws in DNS and Netlogon that could allow remote code execution (RCE). Of these vulnerabilities, 30 are rated Critical, underscoring the potential risk to enterprise environments. While none of the flaws are currently known to be exploited in the wild, immediate patching is recommended to prevent potential attacks. This extensive update reflects Microsoft's ongoing commitment to addressing security issues and protecting its users from emerging threats. Organizations should prioritize these updates to maintain system integrity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Microsoft Fixes Zero-Click Outlook Flaw—Enterprise Threat Mitigated",
-            "title": "Microsoft Patches Critical Zero-Click Outlook Vulnerability CVE-2026-40361",
-            "content": "Microsoft has patched CVE-2026-40361, a critical zero-click vulnerability in Outlook reminiscent of the decade-old BadWinmail flaw. This vulnerability, dubbed an \"enterprise killer,\" could allow attackers to compromise systems without user interaction. The patch addresses a significant security risk for enterprises relying on Outlook for communication. Organizations are urged to apply the update immediately to mitigate potential exploitation. This fix is part of Microsoft's broader effort to secure its software ecosystem against sophisticated threats targeting enterprise environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-patches-critical-zero-click-outlook-vulnerability-threatening-enterprises/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Fortinet Patches Critical RCE Flaws—Update FortiSandbox, FortiAuthenticator Now",
-            "title": "Fortinet Addresses Critical RCE Vulnerabilities in FortiSandbox and FortiAuthenticator",
-            "content": "Fortinet has issued security patches to address two critical remote code execution (RCE) vulnerabilities in its FortiSandbox and FortiAuthenticator products. These vulnerabilities could allow attackers to execute arbitrary commands or code on affected systems. The flaws, identified as CVE-2026-12345 and CVE-2026-12346, impact specific versions of these security solutions, potentially affecting organizations relying on them for network protection. Fortinet urges users to apply the latest updates immediately to mitigate potential exploitation risks. This development underscores the importance of timely patch management in maintaining robust cybersecurity defenses.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-rce-flaws-in-fortisandbox-and-fortiauthenticator/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Microsoft Fixes 120 Flaws—No Zero-Days This Month",
-            "title": "Microsoft May 2026 Patch Tuesday Addresses 120 Vulnerabilities",
-            "content": "Microsoft's May 2026 Patch Tuesday release includes security updates for 120 vulnerabilities across its product suite, with no zero-day vulnerabilities disclosed this month. The patches cover a range of Microsoft products, including Windows, Office, and Exchange Server, addressing issues that could lead to privilege escalation, information disclosure, and remote code execution. While no zero-days were reported, the sheer volume of patches highlights the ongoing need for vigilance in patch management. Organizations are advised to prioritize these updates to safeguard their systems against potential threats. This month's patch release continues Microsoft's commitment to enhancing security across its platforms.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Microsoft Patches 137 Vulnerabilities—Azure, Dynamics 365 Affected",
-            "title": "Microsoft Releases Security Updates for 137 Vulnerabilities in May 2026",
-            "content": "Microsoft has released security updates addressing 137 vulnerabilities across its products, including critical flaws in Azure, Windows, Dynamics 365, and the SSO Plugin for Jira & Confluence. These updates resolve issues that could lead to remote code execution, privilege escalation, and data breaches. The comprehensive patch release underscores the importance of maintaining up-to-date security measures to protect against emerging threats. Organizations using these Microsoft services should apply the updates promptly to mitigate potential risks. This extensive patching effort reflects Microsoft's ongoing dedication to securing its diverse product ecosystem.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-patches-137-vulnerabilities/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 14 2026",
+            "headline": "Trump Seeks Tech Titans' Aid in Xi Summit—Chip Policy at Stake",
+            "title": "Trump Enlists Tech Leaders for Crucial Xi Summit on Chip Restrictions",
+            "content": "In a strategic move, former President Donald Trump has called upon tech leaders including Tim Cook, Jensen Huang, and Elon Musk to attend a pivotal summit with Chinese President Xi Jinping. The meeting could compel Trump to reconsider his stance on semiconductor export restrictions and Taiwan policy. The U.S. has been enforcing stringent chip export controls to curb China's technological advancements, impacting global supply chains. This summit aims to address these tensions, with potential implications for the tech industry and international relations. Stakeholders in semiconductor and tech sectors should monitor developments closely as policy shifts could affect market dynamics and geopolitical alliances.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "App Development Revolution—Users Gain Control Over Software Design",
+            "title": "Democratizing Software: Users to Customize Apps Beyond Developer Constraints",
+            "content": "The era of rigid software design is nearing its end as new technologies empower users to customize applications beyond the original developer's constraints. Historically, users have been confined to the features and designs provided by software creators. However, emerging platforms now allow for unprecedented user control, enabling personalized app experiences tailored to individual needs. This shift is poised to disrupt traditional software development models, offering developers new opportunities to engage with users in more dynamic ways. Professionals in software development should explore these platforms to stay competitive and meet evolving user demands.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/928905/vibe-code-personal-software-revolution",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "OpenAI Strengthens Security Post-TanStack Supply Chain Attack",
+            "title": "OpenAI's Proactive Measures Following TanStack Supply Chain Breach",
+            "content": "OpenAI has detailed its response to the TanStack \"Mini Shai-Hulud\" supply chain attack, which compromised npm packages and posed a risk to macOS users. The attack exploited vulnerabilities in package signing certificates, prompting OpenAI to enhance its security protocols. Affected users must update OpenAI applications by June 12, 2026, to mitigate risks. This incident underscores the growing threat of supply chain attacks in software ecosystems. Developers and organizations should prioritize securing their software supply chains and ensure timely updates to protect against similar threats.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+            "relatedResources": []
+        },
+        {
+            "date": "May 08 2026",
+            "headline": "Google AI Enhances Transparency—Cites Sources in Search Overviews",
+            "title": "Google to Improve AI Search Transparency by Citing More Sources",
+            "content": "Google has announced a significant update to its AI-powered search functionality, which will now include more comprehensive source citations in search overviews. This enhancement aims to increase transparency and trust in AI-generated content by providing users with clearer attribution of information. As AI continues to play a pivotal role in search technologies, ensuring the accuracy and reliability of information is critical. This move aligns with broader industry trends towards accountability in AI systems. Professionals in AI and search technologies should consider similar transparency measures to maintain user trust and compliance with emerging standards.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Meta Faces Morale Crisis Amid Record Profits and Job Cuts",
+            "title": "Meta's Record Profits Contrasted by Low Employee Morale and Layoffs",
+            "content": "Meta is set to cut approximately 10% of its workforce next week, despite reporting record high profits. Interviews with current and former employees reveal a pervasive sense of dissatisfaction within the company, as staff grapple with job insecurity and cultural shifts. This paradox of financial success and internal strife highlights challenges in maintaining workforce morale during periods of rapid change. Tech leaders should consider the implications of workforce reductions on company culture and employee engagement, particularly in high-growth environments.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/meta-layoffs-bad-vibes-mark-zuckerberg-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Cisco Lays Off 4,000—Redirects Funds to AI Amid Record Revenue",
+            "title": "Cisco Cuts Workforce to Invest in AI, Reports Record Revenue Growth",
+            "content": "Cisco has announced the layoff of nearly 4,000 employees as it reallocates resources to focus on artificial intelligence initiatives. Despite these cuts, the company reported record quarterly revenue, underscoring its strategic shift towards AI-driven growth. This decision reflects a broader trend in the tech industry, where companies are increasingly prioritizing AI investments to stay competitive. Stakeholders should evaluate the impact of workforce reductions on operational capabilities and consider the long-term benefits of AI integration in business strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/",
+            "relatedResources": []
+        },
         {
             "date": "May 13 2026",
             "headline": "Notion Integrates AI Agents—Boosts Workspace Productivity",
@@ -156,15 +210,6 @@ const websiteContent = {
             "content": "Sam Altman, CEO of OpenAI, is under scrutiny in a trial where he faces accusations of being a prolific liar, a claim that has drawn parallels to Elon Musk's leadership controversies. The trial has brought to light Altman's alleged misrepresentations about his control over OpenAI, raising questions about transparency and governance within the AI industry. This case could have significant implications for OpenAI's reputation and its relationships with stakeholders. Industry professionals are advised to monitor the trial's developments, as the outcome may influence corporate governance practices in tech companies.",
             "source": "Ars Technica",
             "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 07 2026",
-            "headline": "OpenAI Launches GPT-5.5-Cyber for Enhanced Security Research",
-            "title": "OpenAI Expands Cybersecurity Tools with GPT-5.5 and GPT-5.5-Cyber",
-            "content": "OpenAI has introduced GPT-5.5 and its specialized variant, GPT-5.5-Cyber, to bolster cybersecurity efforts. These models are designed to assist verified defenders in accelerating vulnerability research and protecting critical infrastructure. By leveraging advanced language processing capabilities, GPT-5.5-Cyber aids in identifying and mitigating potential threats more efficiently. This expansion is crucial for organizations aiming to enhance their cybersecurity posture amidst increasing cyber threats. Security professionals should consider integrating these tools into their vulnerability management processes to stay ahead of adversaries.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Adaption has introduced AutoScientist, an innovative AI tool designed to enable models to train themselves by automating the conventional fine-tuning process. This tool allows AI models to quickly adapt to specific capabilities, enhancing their performance and reducing the time required for manual adjustments. AutoScientist represents a significant advancement in AI development, providing researchers and developers with a powerful resource to accelerate model optimization. Organizations leveraging AI technologies should explore AutoScientist to improve their model training processes and maintain a competitive edge in AI innovation.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/13/adaption-aims-big-with-autoscientist-an-ai-tool-that-helps-models-train-themselves/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Data Centers Transform Rural America—Maine Mill Repurposed",
-            "title": "Rural America Sees Data Center Boom as Maine Mill Transforms",
-            "content": "The former Androscoggin paper mill in Jay, Maine, has been repurposed into a data center, marking a significant shift in the economic landscape of rural America. This transformation follows the mill's closure in 2020 after a catastrophic explosion and its subsequent purchase in 2023. The conversion into a data center reflects a broader trend of tech companies investing in rural areas to capitalize on lower costs and available infrastructure. This development offers new economic opportunities for local communities, potentially revitalizing areas previously reliant on traditional industries. Stakeholders in rural development and tech infrastructure should monitor these trends for future investment opportunities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/928963/data-center-rural-america-jobs-jay-maine",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Anthropic Targets Legal Sector—Automates Clerical Tasks with AI",
-            "title": "Anthropic's AI Tools Revolutionize Legal Clerical Functions",
-            "content": "Anthropic has unveiled a suite of AI tools aimed at transforming the legal services industry by automating clerical tasks. These tools focus on document search and review, case law research, deposition preparation, and document drafting, enhancing efficiency in law firms. By leveraging advanced AI capabilities, Anthropic aims to reduce the time and cost associated with these traditionally labor-intensive processes. This move positions Anthropic as a key player in the burgeoning AI legal services market, which is rapidly evolving as firms seek to streamline operations. Legal professionals should explore these tools to stay competitive and improve service delivery.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Perceptron Mk1 Disrupts Market—Affordable Video Analysis AI Emerges",
-            "title": "Perceptron Mk1 Offers Cost-Effective Video Analysis AI Model",
-            "content": "Perceptron Mk1 has introduced a highly efficient video analysis AI model that is 80-90% cheaper than offerings from Anthropic, OpenAI, and Google. This model provides real-time video understanding capabilities, making it an attractive solution for enterprises seeking to enhance security and operational efficiency. The affordability and performance of Perceptron Mk1's model could democratize access to advanced video analysis, enabling smaller organizations to adopt AI-driven solutions. Companies should evaluate this model to leverage its cost benefits while enhancing their video surveillance and analysis capabilities.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-performant-video-analysis-ai-model-80-90-cheaper-than-anthropic-openai-and-google",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Medicare Embraces AI—New Payment Model Supports Digital Health Agents",
-            "title": "Medicare's ACCESS Model Integrates AI for Patient Monitoring and Support",
-            "content": "Medicare has introduced the ACCESS payment model, designed to support AI agents that monitor patients between visits and coordinate care. This innovative approach addresses the lack of governmental mechanisms for compensating AI-driven healthcare services, such as medication reminders and housing referrals. By facilitating payments for these digital health agents, Medicare aims to improve patient outcomes and reduce healthcare costs. Healthcare providers should explore integrating AI agents into their care models to benefit from this new payment structure and enhance patient engagement.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Sam Altman Faces Accusations—Testifies in Charity Theft Case",
-            "title": "Sam Altman Defends Against Allegations of Charity Misappropriation",
-            "content": "Sam Altman, a prominent figure in the tech industry, testified in court amid allegations of misappropriating funds from a charity. Despite facing accusations from multiple witnesses, Altman defended his actions, emphasizing the hard work involved in the charity's creation. The case has drawn significant attention, highlighting the challenges tech leaders face when navigating legal and ethical scrutiny. Industry professionals should monitor this case closely, as its outcome could impact perceptions of leadership accountability in the tech sector.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/929129/sam-altman-testimony-elon-musk-openai-trial",
             "relatedResources": []
         }
     ],
