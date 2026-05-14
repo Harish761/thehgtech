@@ -1490,10 +1490,9 @@
             #ai-security-section { display: flex; flex-direction: column; }
             
             /* Stats */
-            .ai-stats-grid { order: 1; display: flex !important; flex-direction: row !important; overflow-x: auto !important; scroll-snap-type: x mandatory; gap: 0.75rem !important; padding: 0.5rem 1rem 1rem !important; margin: 0 !important; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-            .ai-stats-grid::-webkit-scrollbar { display: none; }
-            .ai-stat-card { flex: 0 0 140px !important; scroll-snap-align: start; padding: 1rem !important; }
-            .ai-stat-value { font-size: 1.5rem !important; }
+            .ai-stats-grid { order: 1; display: grid !important; grid-template-columns: 1fr !important; gap: 0.75rem !important; padding: 0.5rem 1rem 1rem !important; margin: 0 !important; }
+            .ai-stat-card { padding: 1.25rem !important; }
+            .ai-stat-value { font-size: 2rem !important; }
 
             /* Top Threats */
             .top-threats-section { order: 2; margin: 0 !important; padding: 0 1rem 1rem !important; }
@@ -1502,9 +1501,8 @@
             .threat-card { flex: 0 0 80vw !important; scroll-snap-align: center; margin: 0 !important; }
 
             /* AI Tabs */
-            .ai-tabs-nav { order: 3; display: flex !important; flex-direction: row !important; overflow-x: auto !important; scroll-snap-type: x mandatory; gap: 0.5rem !important; padding: 0 1rem 1rem !important; margin: 0 !important; scrollbar-width: none; border-bottom: none !important; }
-            .ai-tabs-nav::-webkit-scrollbar { display: none; }
-            .ai-tab-btn { flex: 0 0 auto !important; scroll-snap-align: start; padding: 0.5rem 1rem !important; border-radius: 20px !important; border: 1px solid var(--border) !important; background: rgba(255,255,255,0.02) !important; white-space: nowrap; margin: 0 !important;}
+            .ai-tabs-nav { order: 3; display: flex !important; flex-direction: column !important; gap: 0.5rem !important; padding: 0 1rem 1rem !important; margin: 0 !important; border-bottom: none !important; }
+            .ai-tab-btn { padding: 0.75rem 1rem !important; border-radius: 12px !important; border: 1px solid var(--border) !important; background: rgba(255,255,255,0.02) !important; margin: 0 !important; display: flex !important; justify-content: space-between !important; align-items: center !important; }
             .ai-tab-btn.active { background: #3B82F6 !important; color: #fff !important; border-color: #3B82F6 !important; }
             .ai-tab-btn::after { display: none !important; }
 

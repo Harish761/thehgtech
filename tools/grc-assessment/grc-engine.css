@@ -115,6 +115,16 @@ body {
     padding: 0 2rem;
 }
 
+.methodology-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.assessor-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .info-card {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border);
@@ -179,6 +189,12 @@ body {
 @media (max-width: 1024px) {
     .authority-strip-container { justify-content: center; }
     .info-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .methodology-grid { grid-template-columns: 1fr; }
+    .assessor-meta { grid-template-columns: 1fr; }
+    .teaser-buttons { flex-direction: column !important; }
 }
 
 .grc-container {

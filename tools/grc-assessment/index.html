@@ -587,7 +587,7 @@
         <!-- Methodology Card -->
         <div class="info-card" style="grid-column: 1 / -1;">
             <h3 style="font-family:'Outfit'; font-size:1.4rem; margin-bottom:1.5rem;"><i class="fas fa-calculator"></i> Enterprise Scoring Methodology</h3>
-            <div style="font-size:0.95rem; line-height:1.7; display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem;">
+            <div class="methodology-grid" style="font-size:0.95rem; line-height:1.7; gap:1.5rem;">
                 <div>
                     <h4 style="color:var(--accent-cyan); font-size:0.8rem; text-transform:uppercase; margin-bottom:5px;">1. Risk-Based Weighting</h4>
                     <p style="color:var(--text-muted); margin:0; font-size: 0.9rem;">Not all controls are equal. Each of the 93 ISO controls is assigned a <strong>Risk Impact Score (1-10)</strong> and a <strong>Criticality Tier</strong> based on its real-world ability to prevent data breaches.</p>
@@ -649,7 +649,7 @@
                 </div>
                 <div class="scope-actions" style="margin-top: 1rem;">
                     <!-- Assessor Metadata (Feature #4) -->
-                    <div class="assessor-meta" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; max-width:600px; margin:0 auto 2rem;">
+                    <div class="assessor-meta" style="gap:1rem; max-width:600px; margin:0 auto 2rem;">
                         <div>
                             <label style="display:block; font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:0.5rem;"><i class="fas fa-user-tie"></i> Assessor Name</label>
                             <input type="text" id="assessorNameInput" placeholder="e.g., Jane Doe, CISO" style="width:100%; padding:0.7rem 1rem; border-radius:8px; border:1px solid var(--border); background:rgba(255,255,255,0.03); color:var(--text-primary); font-family:inherit; font-size:0.9rem;" value="">

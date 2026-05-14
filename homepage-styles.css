@@ -808,6 +808,14 @@
             .featured-grid {
                 grid-template-columns: 1fr !important;
             }
+
+            .hero h1 {
+                font-size: 2.5rem !important;
+            }
+
+            .news-card {
+                margin-bottom: 1rem;
+            }
         }
 
 

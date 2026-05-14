@@ -468,10 +468,10 @@ body.light-mode :focus-visible {
         bottom: -150%;
         left: 0;
         transform: none;
-        padding: 24px;
-        padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+        padding: 16px;
+        padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
         text-align: center;
-        gap: 24px;
+        gap: 16px;
         border-bottom: none;
         border-left: none;
         border-right: none;
@@ -487,7 +487,7 @@ body.light-mode :focus-visible {
 
     .cyber-cookie-btn {
         width: 100%;
-        padding: 16px;
+        padding: 12px;
         font-size: 1.05rem;
     }
 }
@@ -869,4 +869,23 @@ body.light-mode :focus-visible {
     font-size: 1rem;
     line-height: 1.7;
     margin: 0;
+}
+
+/* Command Center Mobile Query */
+@media (max-width: 768px) {
+    .cc-modal {
+        width: 95%;
+        padding: 20px;
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+    .cc-modal-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .cc-modal-close {
+        top: 15px;
+        right: 15px;
+    }
 }

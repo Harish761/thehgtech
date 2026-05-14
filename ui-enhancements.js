@@ -343,6 +343,8 @@
         }
 
         injectIcons() {
+            if (document.querySelector('.nav-bell-btn')) return; // Prevent double injection
+            
             // Desktop Header Injection (Before the search button if exists)
             const desktopNav = document.querySelector('.nav-modern');
             if (desktopNav) {
