@@ -466,19 +466,19 @@
                 intelPane.innerHTML = this.articles.map(a => {
                     const isNew = new Date(a.date) > lastView;
                     const dateStr = new Date(a.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-                    return \`
-                        <a href="/\${a.externalUrl || ''}" class="cc-item \${isNew ? 'new-item' : ''}">
+                    return `
+                        <a href="/${a.externalUrl || ''}" class="cc-item ${isNew ? 'new-item' : ''}">
                             <div class="cc-item-icon" style="color: var(--accent-cyan); background: rgba(0, 217, 255, 0.1);"><i class="fas fa-newspaper"></i></div>
                             <div class="cc-item-content">
                                 <div class="cc-item-date">
-                                    <span>\${dateStr}</span>
-                                    \${isNew ? '<span class="cc-item-badge">NEW</span>' : ''}
+                                    <span>${dateStr}</span>
+                                    ${isNew ? '<span class="cc-item-badge">NEW</span>' : ''}
                                 </div>
-                                <h4 class="cc-item-title">\${a.title}</h4>
-                                <p class="cc-item-desc">\${a.excerpt || ''}</p>
+                                <h4 class="cc-item-title">${a.title}</h4>
+                                <p class="cc-item-desc">${a.excerpt || ''}</p>
                             </div>
                         </a>
-                    \`;
+                    `;
                 }).join('');
             }
 
@@ -491,19 +491,19 @@
                     const isNew = new Date(c.date) > lastView;
                     const dateStr = new Date(c.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
                     const tagHtml = c.type === 'feature' ? '<span style="color:#10B981; font-size:0.75rem; margin-right:5px;">[FEATURE]</span>' : '';
-                    return \`
-                        <a href="\${c.url || '#'}" class="cc-item \${isNew ? 'new-item' : ''}" \${!c.url ? 'style="cursor:default"' : ''}>
-                            <div class="cc-item-icon" style="color: #8b5cf6; background: rgba(139, 92, 246, 0.1);"><i class="fas \${c.icon || 'fa-bolt'}"></i></div>
+                    return `
+                        <a href="${c.url || '#'}" class="cc-item ${isNew ? 'new-item' : ''}" ${!c.url ? 'style="cursor:default"' : ''}>
+                            <div class="cc-item-icon" style="color: #8b5cf6; background: rgba(139, 92, 246, 0.1);"><i class="fas ${c.icon || 'fa-bolt'}"></i></div>
                             <div class="cc-item-content">
                                 <div class="cc-item-date">
-                                    <span>\${dateStr}</span>
-                                    \${isNew ? '<span class="cc-item-badge">NEW</span>' : ''}
+                                    <span>${dateStr}</span>
+                                    ${isNew ? '<span class="cc-item-badge">NEW</span>' : ''}
                                 </div>
-                                <h4 class="cc-item-title">\${tagHtml}\${c.title}</h4>
-                                <p class="cc-item-desc">\${c.description || ''}</p>
+                                <h4 class="cc-item-title">${tagHtml}${c.title}</h4>
+                                <p class="cc-item-desc">${c.description || ''}</p>
                             </div>
                         </a>
-                    \`;
+                    `;
                 }).join('');
             }
         }
