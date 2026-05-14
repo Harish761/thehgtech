@@ -1,0 +1,39 @@
+{
+  "changelog": [
+    {
+      "id": "cl-2026-05-14",
+      "date": "2026-05-14T10:00:00Z",
+      "title": "Command Center Launched",
+      "description": "Introduced the new Command Center notification panel. Track the latest cyber intelligence articles and site features instantly from the nav bar.",
+      "type": "feature",
+      "icon": "fa-bell"
+    },
+    {
+      "id": "cl-2026-05-13",
+      "date": "2026-05-13T16:00:00Z",
+      "title": "Foxconn Supply Chain Deep Dive",
+      "description": "Published comprehensive analysis on the Nitrogen ransomware pivot from IT to OT, including YARA rules and IOCs.",
+      "type": "content",
+      "icon": "fa-industry",
+      "url": "/articles/foxconn-nitrogen-ransomware-supply-chain-2026.html"
+    },
+    {
+      "id": "cl-2026-05-13-ai",
+      "date": "2026-05-13T10:00:00Z",
+      "title": "AI Zero-Day Fuzzing Research",
+      "description": "Published new vulnerability research on autonomous AI agents bypassing 2FA via state-machine logic flaws.",
+      "type": "content",
+      "icon": "fa-robot",
+      "url": "/articles/ai-developed-2fa-bypass-2026.html"
+    },
+    {
+      "id": "cl-2026-04-22",
+      "date": "2026-04-22T10:00:00Z",
+      "title": "ISO 27001 GRC Engine Update",
+      "description": "Upgraded the GRC engine to include mandatory Domain 0 (Clauses 4-10) for full certification readiness and CMMI maturity scoring.",
+      "type": "enhancement",
+      "icon": "fa-shield-halved",
+      "url": "/tools/grc-assessment/"
+    }
+  ]
+}

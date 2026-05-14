@@ -319,3 +319,222 @@
         initCyberCookie();
     }
 })();
+
+// ========== COMMAND CENTER NOTIFICATION DRAWER ==========
+(function() {
+    class CommandCenter {
+        constructor() {
+            this.articles = [];
+            this.changelog = [];
+            this.hasNew = false;
+            this.lastViewTime = localStorage.getItem('hg_cc_last_view') || '1970-01-01T00:00:00Z';
+            this.thirtyDaysAgo = new Date();
+            this.thirtyDaysAgo.setDate(this.thirtyDaysAgo.getDate() - 30);
+            
+            this.init();
+        }
+
+        async init() {
+            this.injectIcons();
+            this.createDrawer();
+            await this.fetchData();
+            this.checkNewItems();
+            this.renderTabs();
+        }
+
+        injectIcons() {
+            // Desktop Header Injection (Before the search button if exists)
+            const desktopNav = document.querySelector('.nav-modern');
+            if (desktopNav) {
+                const searchBtn = desktopNav.querySelector('.desktop-search-btn') || desktopNav.querySelector('.m-theme-toggle');
+                const bellHtml = `<button class="nav-bell-btn cc-trigger" aria-label="Command Center" title="What's New">
+                                    <i class="fas fa-bell"></i>
+                                    <span class="pulse"></span>
+                                  </button>`;
+                if (searchBtn) {
+                    searchBtn.insertAdjacentHTML('beforebegin', bellHtml);
+                } else {
+                    desktopNav.insertAdjacentHTML('beforeend', bellHtml);
+                }
+            }
+
+            // Mobile Header Injection
+            const mobileActions = document.querySelector('.m-header__actions');
+            if (mobileActions) {
+                const searchBtn = mobileActions.querySelector('[data-action="command-palette"]');
+                const bellHtml = `<button class="m-header__btn cc-trigger nav-bell-btn" aria-label="Command Center" style="margin-left:0; padding:0; width: 44px; height: 44px;">
+                                    <i class="fas fa-bell"></i>
+                                    <span class="pulse"></span>
+                                  </button>`;
+                if (searchBtn) {
+                    searchBtn.insertAdjacentHTML('beforebegin', bellHtml);
+                } else {
+                    mobileActions.insertAdjacentHTML('afterbegin', bellHtml);
+                }
+            }
+
+            document.querySelectorAll('.cc-trigger').forEach(btn => {
+                btn.addEventListener('click', () => this.toggleDrawer());
+            });
+        }
+
+        createDrawer() {
+            const html = `
+                <div class="cc-overlay" id="ccOverlay"></div>
+                <div class="cc-drawer" id="ccDrawer">
+                    <div class="cc-header">
+                        <h3 class="cc-title"><i class="fas fa-terminal" style="color:var(--accent-cyan)"></i> Command Center</h3>
+                        <button class="cc-close" id="ccClose"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="cc-tabs">
+                        <div class="cc-tab active" data-target="cc-intel">Intel Feed</div>
+                        <div class="cc-tab" data-target="cc-changelog">Changelog</div>
+                    </div>
+                    <div class="cc-content">
+                        <div class="cc-pane active" id="cc-intel"></div>
+                        <div class="cc-pane" id="cc-changelog"></div>
+                    </div>
+                </div>
+            `;
+            document.body.insertAdjacentHTML('beforeend', html);
+
+            document.getElementById('ccOverlay').addEventListener('click', () => this.toggleDrawer());
+            document.getElementById('ccClose').addEventListener('click', () => this.toggleDrawer());
+            
+            document.querySelectorAll('.cc-tab').forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    document.querySelectorAll('.cc-tab, .cc-pane').forEach(el => el.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.target).classList.add('active');
+                });
+            });
+        }
+
+        async fetchData() {
+            try {
+                // Fetch Articles
+                const artRes = await fetch('/ioc-data/articles.json');
+                if (artRes.ok) {
+                    const data = await artRes.json();
+                    this.articles = this.filterAndSort(data.articles || []);
+                }
+
+                // Fetch Changelog
+                const clRes = await fetch('/ioc-data/changelog.json');
+                if (clRes.ok) {
+                    const data = await clRes.json();
+                    this.changelog = this.filterAndSort(data.changelog || []);
+                }
+            } catch (e) {
+                console.error("Command Center fetch error:", e);
+            }
+        }
+
+        filterAndSort(items) {
+            // Sort by date descending
+            let sorted = items.sort((a, b) => new Date(b.date) - new Date(a.date));
+            
+            // Filter: within 30 days OR top 5
+            let filtered = sorted.filter((item, index) => {
+                return new Date(item.date) >= this.thirtyDaysAgo || index < 5;
+            });
+            return filtered;
+        }
+
+        checkNewItems() {
+            const lastView = new Date(this.lastViewTime);
+            let isNew = false;
+            
+            if (this.articles.length > 0 && new Date(this.articles[0].date) > lastView) isNew = true;
+            if (this.changelog.length > 0 && new Date(this.changelog[0].date) > lastView) isNew = true;
+
+            this.hasNew = isNew;
+
+            if (this.hasNew) {
+                document.querySelectorAll('.nav-bell-btn').forEach(b => b.classList.add('has-new'));
+            }
+        }
+
+        renderTabs() {
+            const lastView = new Date(this.lastViewTime);
+
+            // Render Intel
+            const intelPane = document.getElementById('cc-intel');
+            if (this.articles.length === 0) {
+                intelPane.innerHTML = '<div class="cc-empty"><i class="fas fa-inbox"></i><p>No recent intel.</p></div>';
+            } else {
+                intelPane.innerHTML = this.articles.map(a => {
+                    const isNew = new Date(a.date) > lastView;
+                    const dateStr = new Date(a.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                    return \`
+                        <a href="/\${a.externalUrl || ''}" class="cc-item \${isNew ? 'new-item' : ''}">
+                            <div class="cc-item-icon" style="color: var(--accent-cyan); background: rgba(0, 217, 255, 0.1);"><i class="fas fa-newspaper"></i></div>
+                            <div class="cc-item-content">
+                                <div class="cc-item-date">
+                                    <span>\${dateStr}</span>
+                                    \${isNew ? '<span class="cc-item-badge">NEW</span>' : ''}
+                                </div>
+                                <h4 class="cc-item-title">\${a.title}</h4>
+                                <p class="cc-item-desc">\${a.excerpt || ''}</p>
+                            </div>
+                        </a>
+                    \`;
+                }).join('');
+            }
+
+            // Render Changelog
+            const clPane = document.getElementById('cc-changelog');
+            if (this.changelog.length === 0) {
+                clPane.innerHTML = '<div class="cc-empty"><i class="fas fa-inbox"></i><p>No recent updates.</p></div>';
+            } else {
+                clPane.innerHTML = this.changelog.map(c => {
+                    const isNew = new Date(c.date) > lastView;
+                    const dateStr = new Date(c.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                    const tagHtml = c.type === 'feature' ? '<span style="color:#10B981; font-size:0.75rem; margin-right:5px;">[FEATURE]</span>' : '';
+                    return \`
+                        <a href="\${c.url || '#'}" class="cc-item \${isNew ? 'new-item' : ''}" \${!c.url ? 'style="cursor:default"' : ''}>
+                            <div class="cc-item-icon" style="color: #8b5cf6; background: rgba(139, 92, 246, 0.1);"><i class="fas \${c.icon || 'fa-bolt'}"></i></div>
+                            <div class="cc-item-content">
+                                <div class="cc-item-date">
+                                    <span>\${dateStr}</span>
+                                    \${isNew ? '<span class="cc-item-badge">NEW</span>' : ''}
+                                </div>
+                                <h4 class="cc-item-title">\${tagHtml}\${c.title}</h4>
+                                <p class="cc-item-desc">\${c.description || ''}</p>
+                            </div>
+                        </a>
+                    \`;
+                }).join('');
+            }
+        }
+
+        toggleDrawer() {
+            const drawer = document.getElementById('ccDrawer');
+            const overlay = document.getElementById('ccOverlay');
+            
+            const isOpening = !drawer.classList.contains('active');
+            
+            if (isOpening) {
+                drawer.classList.add('active');
+                overlay.classList.add('active');
+                
+                // Update last view time
+                this.lastViewTime = new Date().toISOString();
+                localStorage.setItem('hg_cc_last_view', this.lastViewTime);
+                document.querySelectorAll('.nav-bell-btn').forEach(b => b.classList.remove('has-new'));
+                
+                // Re-render to clear 'new-item' left borders
+                setTimeout(() => this.renderTabs(), 500); 
+            } else {
+                drawer.classList.remove('active');
+                overlay.classList.remove('active');
+            }
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => new CommandCenter());
+    } else {
+        new CommandCenter();
+    }
+})();
