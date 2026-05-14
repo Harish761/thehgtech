@@ -1,6 +1,14 @@
 {
   "changelog": [
     {
+      "id": "cl-2026-05-14-mobile",
+      "date": "2026-05-14T11:30:00Z",
+      "title": "Comprehensive Mobile UI Refactor",
+      "description": "Executed a systematic mobile optimization sweep across the platform. Rigid desktop grids on the AI Threat Dashboard, GRC Assessment tool, and Security Articles hub have been refactored into fluid stacked layouts. Improved header real estate, fixed the duplicate bell icon collision, and optimized touch targets for seamless mobile navigation.",
+      "type": "enhancement",
+      "icon": "fa-mobile-screen-button"
+    },
+    {
       "id": "cl-2026-05-14",
       "date": "2026-05-14T10:00:00Z",
       "title": "Command Center Launched",
