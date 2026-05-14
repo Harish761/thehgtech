@@ -665,7 +665,7 @@ rule Nitrogen_Python_Loader {{
     </footer>
 
     <script src="/interaction-bar.js?v=20260220"></script>
-    <script src="/ui-enhancements.js?v=20260516" defer></script>
+    <script src="/ui-enhancements.js?v=20260517" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
 </body>

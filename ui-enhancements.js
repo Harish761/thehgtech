@@ -431,15 +431,16 @@
 
         async fetchData() {
             try {
+                const cacheBuster = `?v=${Date.now()}`;
                 // Fetch Articles
-                const artRes = await fetch('/ioc-data/articles.json');
+                const artRes = await fetch('/ioc-data/articles.json' + cacheBuster);
                 if (artRes.ok) {
                     const data = await artRes.json();
                     this.articles = this.filterAndSort(data.articles || []);
                 }
 
                 // Fetch Changelog
-                const clRes = await fetch('/ioc-data/changelog.json');
+                const clRes = await fetch('/ioc-data/changelog.json' + cacheBuster);
                 if (clRes.ok) {
                     const data = await clRes.json();
                     this.changelog = this.filterAndSort(data.changelog || []);

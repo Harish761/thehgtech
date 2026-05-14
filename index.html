@@ -391,7 +391,7 @@
     <script src="m-app.js?v=20260220" defer></script>
     <script src="theme-toggle.js" defer></script>
     <link rel="stylesheet" href="light-mode.css">
-    <link rel="stylesheet" href="ui-enhancements.css?v=20260516">
+    <link rel="stylesheet" href="ui-enhancements.css?v=20260517">
 
 
     <!-- ========== STRUCTURED DATA - ORGANIZATION ========== -->
@@ -3394,14 +3394,7 @@
         <div class="archives-grid" id="archivesGrid"></div>
     </div>
 
-    <!-- Cookie Banner -->
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="cookie-content">
-            <p class="cookie-text">We use minimal cookies to enhance your browsing experience. By continuing to use this
-                site, you agree to our use of cookies.</p>
-            <button class="cookie-btn" onclick="acceptCookies()">Accept</button>
-        </div>
-    </div>
+
 
     <!-- Threat Intel Detail Modal -->
     <div class="threat-detail-modal" id="threatDetailModal">
@@ -4139,13 +4132,7 @@
             // Initialize magnetic tilt effect on cards
             setTimeout(() => initMagneticTilt(), 100);
 
-            // Show cookie banner after 2 seconds
-            setTimeout(() => {
-                if (!localStorage.getItem('cookiesAccepted')) {
-                    const cookieBanner = document.getElementById('cookieBanner');
-                    if (cookieBanner) cookieBanner.classList.add('active');
-                }
-            }, 2000);
+
         });
 
         // ========== CONTENT LOADING FUNCTIONS ==========
@@ -5034,26 +5021,7 @@
         }
 
 
-        // Cookie consent
-        // Cookie consent
-        window.acceptCookies = function () {
-            try {
-                localStorage.setItem('cookiesAccepted', 'true');
-                const banner = document.getElementById('cookieBanner');
-                if (banner) {
-                    banner.classList.remove('active');
-                    // Also hide immediately
-                    setTimeout(() => {
-                        banner.style.display = 'none';
-                    }, 500); // Wait for animation to complete
-                }
-            } catch (e) {
-                console.warn('Cookie storage failed:', e);
-                // Still hide banner visually
-                const banner = document.getElementById('cookieBanner');
-                if (banner) banner.classList.remove('active');
-            }
-        };
+
 
 
 
@@ -5254,7 +5222,7 @@
                 'bookmarks.js',
                 'keyboard-shortcuts.js',
                 'share-buttons.js',
-                'ui-enhancements.js?v=20260516'
+                'ui-enhancements.js?v=20260517'
             ];
             scripts.forEach(function (src) { lazyLoadScript(src); });
         }
