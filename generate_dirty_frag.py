@@ -1,309 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]</title>
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]">
-    <meta name="twitter:description" content="From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.">
-    <meta name="twitter:image" content="https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.png">
-    <meta property="og:site_name" content="TheHGTech">
-    <meta name="title" content="The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]">
-    <meta name="description" content="From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.">
-    <meta name="keywords" content="Dirty Frag, CVE-2026-43284, CVE-2026-43500, Linux kernel, page cache, privilege escalation, Copy Fail, Dirty Pipe, Dirty COW, kernel hardening, LKRG, grsecurity">
-    <meta name="author" content="Harish G">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html">
-    <meta property="og:title" content="The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]">
-    <meta property="og:description" content="From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.">
-    <meta property="og:image" content="https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.png">
-    <link rel="canonical" href="https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]",
-      "image": ["https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.png"],
-      "datePublished": "2026-05-10T12:00:00+00:00",
-      "dateModified": "2026-05-10T12:00:00+00:00",
-      "author": [{"@type": "Person", "name": "Harish G", "url": "https://www.linkedin.com/in/harish-g-03704815a/"}],
-      "publisher": {"@type": "Organization", "name": "TheHGTech", "logo": {"@type": "ImageObject", "url": "https://thehgtech.com/logo-dark.png"}},
-      "articleSection": "Vulnerability Research",
-      "keywords": "Dirty Frag, Linux Kernel, Page Cache, Privilege Escalation, Kernel Hardening"
-    }
-    </script>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.2">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
-    <link rel="stylesheet" href="/light-mode.css">
-    <link rel="stylesheet" href="/theme-toggle.css">
-    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-    <link rel="stylesheet" href="/mobile-nav.css">
-    <script src="/m-app.js?v=4.3" defer></script>
-    <script src="/theme-toggle.js" defer></script>
-    <script>
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
-    <style>
-        :root { --bg-primary: #0a0a0a; --bg-secondary: #111111; --text-primary: #ffffff; --text-secondary: #a0a0a0; --accent-cyan: #00D9FF; --accent-red: #FF3D3D; --border: rgba(255, 255, 255, 0.1); --code-bg: #111; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; font-size: 18px; }
-        .article-container { max-width: 800px; margin: 80px auto 0; padding: 2rem; }
-        .back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-cyan); text-decoration: none; margin-bottom: 2rem; font-size: 0.9rem; transition: color 0.3s; }
-        .back-link:hover { color: var(--text-primary); }
-        .article-header { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); text-align: left; }
-        h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 1rem; background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .article-meta { display: flex; flex-wrap: wrap; gap: 1.5rem; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; }
-        .article-content h2 { color: var(--accent-cyan); margin: 2.5rem 0 1rem; font-size: 1.6rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-        .article-content h3 { color: var(--text-primary); margin: 1.5rem 0 1rem; font-size: 1.3rem; }
-        .article-content p { margin-bottom: 1.5rem; font-size: 1.15rem; color: var(--text-secondary); }
-        .featured-image { width: 100%; border-radius: 12px; margin: 2rem 0; border: 1px solid var(--border); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); }
-        .technical-box { background: rgba(0, 217, 255, 0.03); border: 1px solid var(--border); border-left: 5px solid var(--accent-cyan); padding: 1.5rem 2rem; border-radius: 8px; margin: 2.5rem 0; }
-        .technical-box > *:first-child, .warning-box > *:first-child { margin-top: 0; }
-        .warning-box { background: rgba(255, 61, 61, 0.05); border: 1px solid rgba(255, 61, 61, 0.2); border-left: 5px solid var(--accent-red); padding: 1.5rem 2rem; border-radius: 8px; margin: 2.5rem 0; }
-        .success-box { background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-left: 5px solid #10B981; padding: 1.5rem 2rem; border-radius: 8px; margin: 2.5rem 0; }
-        pre { background: #000; border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; overflow-x: auto; }
-        code { font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace; font-size: 0.95rem; color: #fff; line-height: 1.5; }
-        .article-content p code, .article-content li code { background: rgba(255, 255, 255, 0.1); padding: 0.2rem 0.4rem; border-radius: 4px; color: var(--accent-cyan); font-size: 0.9rem; }
-        .article-content ul, .article-content ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-secondary); font-size: 1.15rem; }
-        .article-content li { margin-bottom: 0.5rem; }
-        .article-footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--text-secondary); }
-        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
-        thead { background: rgba(0, 217, 255, 0.1); }
-        th, td { padding: 0.75rem 1rem; text-align: left; border: 1px solid var(--border); color: var(--text-secondary); }
-        th { color: var(--accent-cyan); font-weight: 600; }
-        .timeline-box { background: rgba(0, 217, 255, 0.03); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; margin: 2rem 0; }
-        .timeline-item { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .timeline-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
-        .timeline-year { font-size: 1.5rem; font-weight: 800; color: var(--accent-cyan); min-width: 70px; }
-        .timeline-detail h4 { color: var(--accent-red); margin: 0 0 0.25rem 0; font-size: 1.1rem; }
-        .timeline-detail p { margin: 0; font-size: 0.95rem; color: var(--text-secondary); }
-        .architecture-diagram { background: #000; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; margin: 2rem 0; font-family: 'Monaco', monospace; font-size: 0.85rem; color: var(--accent-cyan); line-height: 1.4; overflow-x: auto; white-space: pre; }
-        @media (max-width: 768px) {
-            .article-container { margin: 0; padding: 1.5rem 1rem; }
-            h1 { font-size: 1.75rem; }
-            .article-content p, .article-content ul, .article-content ol { font-size: 1rem; }
-            .architecture-diagram { font-size: 0.7rem; padding: 1rem; }
-        }
-    </style>
-    <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
-    </script>
-    <script>
-        window.addEventListener('load', function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        });
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "What is Dirty Frag?", "acceptedAnswer": {"@type": "Answer", "text": "Dirty Frag is a deterministic local privilege escalation vulnerability chain in the Linux kernel (CVE-2026-43284 and CVE-2026-43500) that corrupts the page cache through IPsec ESP and RxRPC fragment handling, allowing unprivileged users to gain root."}},
-        {"@type": "Question", "name": "Is Dirty Frag related to Copy Fail?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Both belong to the same page-cache corruption bug class but exploit different kernel subsystems. Patching Copy Fail does NOT protect against Dirty Frag. Both require separate kernel updates."}},
-        {"@type": "Question", "name": "Why does Linux keep having page cache vulnerabilities?", "acceptedAnswer": {"@type": "Answer", "text": "The Linux page cache is a massive shared resource touched by nearly every subsystem. The kernel trusts subsystem code to handle page ownership correctly, but this trust model has been violated four times in ten years (Dirty COW, Dirty Pipe, Copy Fail, Dirty Frag) across different subsystems."}},
-        {"@type": "Question", "name": "How do I harden Linux against future kernel exploits?", "acceptedAnswer": {"@type": "Answer", "text": "Deploy LKRG for runtime integrity checking, enable Kernel Lockdown Mode, use SELinux in enforcing mode, blacklist unnecessary kernel modules, implement live patching solutions, and monitor with eBPF-based tools like Falco."}}
-      ]
-    }
-    </script>
-</head>
+#!/usr/bin/env python3
+"""Generate the Dirty Frag / Page Cache Curse article HTML."""
 
+import os
+
+# Read Part 1 (head) that was already written
+with open("articles/dirty-frag-page-cache-curse-2026.html", "r") as f:
+    head = f.read()
+
+# Read Copy Fail article to extract mobile header + desktop header boilerplate
+with open("articles/copy-fail-cve-2026-31431.html", "r") as f:
+    cf = f.read()
+
+# Extract mobile header block
+mob_start = cf.index("<!-- Mobile Header -->")
+mob_end = cf.index("<!-- Desktop Header -->")
+mobile_header = cf[mob_start:mob_end]
+
+# Extract desktop header block
+desk_start = cf.index("<!-- Desktop Header -->")
+desk_end = cf.index('<main class="article-container">')
+desktop_header = cf[desk_start:desk_end]
+
+body = f"""
 <body>
-    <!-- Mobile Header -->
-<!-- ========== NEW SMART MOBILE HEADER ========== -->
-<header class="m-header m-only">
-    <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-        </a>
-    </div>
-    <div class="m-header__actions">
-        <button class="m-header__btn" id="m-theme-toggle-top" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
-        </button>
-        <!-- Search triggers Command Palette -->
-        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
-        </button>
-        <!-- Hamburger Menu Toggle -->
-        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-</header>
-
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
-<div class="m-menu-overlay m-only" id="m-menu-overlay">
-    <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
-        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
-    <div class="m-menu-content">
-        <div class="m-menu-section">
-            <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Settings</div>
-            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
-            </button>
-        </div>
-    </div>
-</div>
-
-
-    
-    <!-- Desktop Header -->
-    <header class="header" role="banner">
-        <div class="header-content">
-            <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
-                </a>
-            </div>
-
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
-
-                <!-- Intelligence Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Intelligence
-                        <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
-                            </div>
-                        </a>
-                        <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
-                            </div>
-                        </a>
-                        <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Ransomware Tracker</div>
-                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
-                            </div>
-                        </a>
-                        <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Resources Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span class="dropdown-badge popular">40+</span></div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
-                            </div>
-                        </a>
-                        <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Tool Comparisons</div>
-                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
-                </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
-                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
-                </button>
-            </nav>
-
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-
-        
+    {mobile_header}
+    {desktop_header}
     <div class="article-container">
         <a href="/articles.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Articles</a>
         <article>
@@ -649,3 +370,15 @@ auditctl -a always,exit -F arch=b64 -S socket -F a0=33 -k rxrpc_socket</code></p
     <script src="/mobile-nav.js" defer></script>
 </body>
 </html>
+"""
+
+# Combine head + body
+full_html = head + body
+
+output_path = "articles/dirty-frag-page-cache-curse-2026.html"
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write(full_html)
+
+print(f"✅ Article written: {output_path}")
+print(f"   Size: {len(full_html):,} bytes")
+print(f"   Lines: {full_html.count(chr(10)):,}")
