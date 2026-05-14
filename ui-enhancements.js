@@ -395,11 +395,30 @@
                         <div class="cc-pane" id="cc-changelog"></div>
                     </div>
                 </div>
+                <div class="cc-modal-overlay" id="ccModalOverlay">
+                    <div class="cc-modal" id="ccModal">
+                        <div class="cc-modal-header">
+                            <div class="cc-modal-icon" id="ccModalIcon"><i class="fas fa-bolt"></i></div>
+                            <button class="cc-modal-close" id="ccModalClose"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="cc-modal-date" id="ccModalDate"></div>
+                        <h3 class="cc-modal-title" id="ccModalTitle"></h3>
+                        <p class="cc-modal-desc" id="ccModalDesc"></p>
+                        <div id="ccModalAction" style="margin-top: 25px; display: none;">
+                            <a href="#" id="ccModalLink" style="display:inline-block; background:linear-gradient(135deg, rgba(0,217,255,0.1), rgba(0,217,255,0.25)); color:#00D9FF; padding:10px 24px; border:1px solid #00D9FF; border-radius:6px; font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none; font-size:0.9rem; transition:all 0.3s ease;">View Integration</a>
+                        </div>
+                    </div>
+                </div>
             `;
             document.body.insertAdjacentHTML('beforeend', html);
 
             document.getElementById('ccOverlay').addEventListener('click', () => this.toggleDrawer());
             document.getElementById('ccClose').addEventListener('click', () => this.toggleDrawer());
+            
+            document.getElementById('ccModalOverlay').addEventListener('click', (e) => {
+                if (e.target.id === 'ccModalOverlay') this.closeModal();
+            });
+            document.getElementById('ccModalClose').addEventListener('click', () => this.closeModal());
             
             document.querySelectorAll('.cc-tab').forEach(tab => {
                 tab.addEventListener('click', (e) => {
@@ -487,12 +506,12 @@
             if (this.changelog.length === 0) {
                 clPane.innerHTML = '<div class="cc-empty"><i class="fas fa-inbox"></i><p>No recent updates.</p></div>';
             } else {
-                clPane.innerHTML = this.changelog.map(c => {
+                clPane.innerHTML = this.changelog.map((c, index) => {
                     const isNew = new Date(c.date) > lastView;
                     const dateStr = new Date(c.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
                     const tagHtml = c.type === 'feature' ? '<span style="color:#10B981; font-size:0.75rem; margin-right:5px;">[FEATURE]</span>' : '';
                     return `
-                        <a href="${c.url || '#'}" class="cc-item ${isNew ? 'new-item' : ''}" ${!c.url ? 'style="cursor:default"' : ''}>
+                        <div class="cc-item cc-cl-item ${isNew ? 'new-item' : ''}" data-index="${index}" style="cursor:pointer;">
                             <div class="cc-item-icon" style="color: #8b5cf6; background: rgba(139, 92, 246, 0.1);"><i class="fas ${c.icon || 'fa-bolt'}"></i></div>
                             <div class="cc-item-content">
                                 <div class="cc-item-date">
@@ -502,10 +521,41 @@
                                 <h4 class="cc-item-title">${tagHtml}${c.title}</h4>
                                 <p class="cc-item-desc">${c.description || ''}</p>
                             </div>
-                        </a>
+                        </div>
                     `;
                 }).join('');
+
+                // Add click listeners for modal
+                document.querySelectorAll('.cc-cl-item').forEach(el => {
+                    el.addEventListener('click', () => {
+                        this.openModal(this.changelog[el.dataset.index]);
+                    });
+                });
             }
+        }
+
+        openModal(item) {
+            const dateStr = new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            const tagStr = item.type === 'feature' ? '[FEATURE] ' : '[ENHANCEMENT] ';
+            
+            document.getElementById('ccModalIcon').innerHTML = `<i class="fas ${item.icon || 'fa-bolt'}"></i>`;
+            document.getElementById('ccModalDate').innerText = dateStr;
+            document.getElementById('ccModalTitle').innerText = tagStr + item.title;
+            document.getElementById('ccModalDesc').innerText = item.description || '';
+            
+            const actionBtn = document.getElementById('ccModalAction');
+            if (item.url) {
+                actionBtn.style.display = 'block';
+                document.getElementById('ccModalLink').href = item.url;
+            } else {
+                actionBtn.style.display = 'none';
+            }
+
+            document.getElementById('ccModalOverlay').classList.add('active');
+        }
+
+        closeModal() {
+            document.getElementById('ccModalOverlay').classList.remove('active');
         }
 
         toggleDrawer() {
