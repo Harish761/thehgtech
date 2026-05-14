@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 13 2026",
+            "headline": "Exim Mailer Flaw—Remote Code Execution Risk",
+            "title": "Critical Exim Mail Transfer Agent Vulnerability Enables Remote Code Execution",
+            "content": "A critical vulnerability has been identified in certain configurations of the Exim open-source mail transfer agent, allowing unauthenticated remote attackers to execute arbitrary code. This flaw affects Exim versions prior to 4.95.2 and could be exploited via specially crafted network requests. The vulnerability poses a significant risk to organizations relying on Exim for email services, potentially leading to unauthorized access and data breaches. Exim is widely used across various industries, making this a pressing concern for system administrators. Users are advised to upgrade to the latest version immediately to mitigate potential threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-critical-exim-mailer-flaw-allows-remote-code-execution/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Foxconn Cyberattack—8TB Data Stolen by Nitrogen",
+            "title": "Foxconn Confirms Cyberattack on North American Factories, 8TB Data Compromised",
+            "content": "Foxconn has confirmed a cyberattack on its North American factories, with the Nitrogen ransomware group claiming responsibility for the breach. The attackers reportedly exfiltrated 8 terabytes of data, including confidential documents, potentially impacting business operations and supply chain integrity. This incident underscores the growing threat of ransomware attacks on critical manufacturing infrastructure. Foxconn is currently working with cybersecurity experts to assess the damage and strengthen its defenses. Organizations are reminded to review their security protocols and ensure robust data protection measures are in place.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/foxconn-confirms-north-american-factories-hit-by-cyberattack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "BitLocker Zero-Day Exposed—PoC Exploits Released",
+            "title": "Windows BitLocker Zero-Day Vulnerabilities Allow Drive Access, PoC Released",
+            "content": "A cybersecurity researcher has released proof-of-concept exploits for two unpatched Microsoft Windows vulnerabilities, YellowKey and GreenPlasma. These vulnerabilities include a BitLocker bypass and a privilege-escalation flaw, potentially allowing unauthorized access to encrypted drives. The release of these PoC exploits raises the risk of exploitation by threat actors, especially as no official patches are currently available. Organizations using BitLocker for data protection should monitor for updates and consider additional security measures. This development highlights the ongoing challenges in securing widely used encryption technologies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/windows-bitlocker-zero-day-gives-access-to-protected-drives-poc-released/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Fortinet, Ivanti Patch Critical Vulnerabilities—Act Now",
+            "title": "Fortinet and Ivanti Release Patches for Critical Security Flaws",
+            "content": "Fortinet and Ivanti have released patches addressing critical vulnerabilities that could lead to arbitrary code execution and information disclosure. These flaws, identified in Fortinet's FortiOS and Ivanti's Endpoint Manager, pose significant risks if left unpatched, potentially allowing attackers to compromise systems and access sensitive data. Organizations using these products are urged to apply the patches immediately to prevent exploitation. This proactive response from Fortinet and Ivanti underscores the importance of timely vulnerability management in maintaining cybersecurity resilience.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fortinet-ivanti-patch-critical-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "RubyGems Attack—500 Malicious Packages Trigger Registration Halt",
+            "title": "RubyGems Suspends Registrations After Attack with 500 Malicious Packages",
+            "content": "RubyGems has temporarily suspended new package registrations following an attack that introduced over 500 malicious packages into its repository. The attack appears to have targeted RubyGems itself rather than end-users, aiming to compromise the integrity of the platform. This incident highlights the vulnerabilities in software supply chains and the potential for widespread impact if not swiftly addressed. Developers are advised to verify the integrity of packages and monitor for updates from RubyGems. The suspension is a precautionary measure to prevent further infiltration and ensure platform security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hundreds-of-malicious-packages-force-rubygems-to-suspend-registrations/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "ShinyHunters Breach—30M Students' Data Exposed",
+            "title": "ShinyHunters Hack Affects 30 Million Students, Major Universities Compromised",
+            "content": "The ShinyHunters hacking group has executed the largest educational data breach in history, affecting nearly 9,000 institutions, including every Ivy League university. The breach compromised data of 30 million students during finals, following Canvas's parent company's refusal to pay a ransom. Despite deploying security patches, the breach highlights significant vulnerabilities in educational platforms. Institutions are urged to reassess their security strategies and enhance data protection measures. This incident underscores the critical need for robust cybersecurity frameworks in the education sector.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-467/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
             "headline": "Foxconn Hit by Nitrogen Ransomware—North American Ops Disrupted",
             "title": "Foxconn Confirms Cyberattack by Nitrogen Ransomware, Impacting North American Operations",
             "content": "Foxconn, the world's largest electronics manufacturer, has confirmed a cyberattack by the Nitrogen ransomware gang, affecting its North American factories. The attack has disrupted operations, with some facilities working to resume normal activities. While specific details about the ransomware's entry point remain undisclosed, the incident underscores the vulnerability of manufacturing giants to sophisticated cyber threats. Foxconn is currently assessing the full scope of the breach and implementing recovery measures. This attack highlights the ongoing risk of ransomware to critical supply chains and the necessity for robust cybersecurity defenses.",
@@ -83,70 +137,61 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/microsoft-patches-137-vulnerabilities/",
             "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Exaforce Secures $125M for SOC Platform Expansion",
-            "title": "Exaforce Raises $125 Million to Enhance Agentic SOC Platform",
-            "content": "Exaforce has successfully raised $125 million in a funding round aimed at advancing its Agentic Security Operations Center (SOC) platform. This latest investment brings the company's total funding to $200 million, which will be used for product development and international expansion. The Agentic SOC platform is designed to enhance cybersecurity operations by providing advanced threat detection and response capabilities. With the growing demand for robust security solutions, Exaforce plans to leverage this funding to expand its market presence and enhance its platform's capabilities. This investment highlights the increasing focus on innovative cybersecurity technologies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exaforce-raises-125-million-for-agentic-soc-platform/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Škoda Data Breach—Customer Info Stolen in Online Shop Hack",
-            "title": "Škoda Auto Discloses Data Breach Following Online Shop Hack",
-            "content": "Škoda Auto, a subsidiary of the Volkswagen Group, has reported a data breach after its online shop was compromised by attackers. The breach resulted in the theft of personal information from an undisclosed number of customers. Škoda has not yet revealed the specific data affected, but it typically includes names, addresses, and payment details. The company is currently investigating the incident and has taken steps to secure its systems. Affected customers are advised to monitor their accounts for suspicious activity and consider changing passwords. This breach underscores the persistent threat of cyberattacks on e-commerce platforms.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/skoda-warns-of-customer-data-breach-after-online-shop-hack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Exim BDAT Flaw—GnuTLS Builds at Risk of Code Execution",
-            "title": "Exim Addresses Critical BDAT Vulnerability in GnuTLS Builds",
-            "content": "Exim has released security updates to fix a critical vulnerability in certain configurations of its Mail Transfer Agent (MTA) that could lead to memory corruption and potential code execution. The flaw, associated with the BDAT command in GnuTLS builds, affects Unix-like systems running Exim. This vulnerability poses a significant risk as it could allow attackers to execute arbitrary code remotely. Exim users are strongly encouraged to update their systems immediately to prevent exploitation. This incident highlights the ongoing challenges in securing open-source software against sophisticated threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Ransomware Disrupts West Pharmaceutical—Global Systems Offline",
-            "title": "West Pharmaceutical Services Faces Major Ransomware Attack, Data Exfiltrated",
-            "content": "West Pharmaceutical Services has been hit by a significant ransomware attack, forcing the company to take its global systems offline. Hackers successfully exfiltrated sensitive data before deploying file-encrypting malware, severely disrupting operations. The attack underscores the ongoing threat of ransomware to critical industries, with potential impacts on supply chains and healthcare services. West Pharmaceutical is working with cybersecurity experts to restore systems and assess the full extent of the breach. Organizations in similar sectors are advised to review their cybersecurity measures and ensure robust data protection protocols are in place.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/west-pharmaceutical-services-hit-by-disruptive-ransomware-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "SAP Urges Patch for Critical S/4HANA, Commerce Flaws",
-            "title": "SAP Releases Patches for Critical Vulnerabilities in S/4HANA and Commerce",
-            "content": "SAP has issued patches for critical vulnerabilities affecting its S/4HANA ERP suite and Commerce platform, which could allow attackers to inject malicious code. These flaws, if exploited, could lead to unauthorized information disclosure and remote code execution. The vulnerabilities highlight the importance of timely patch management in enterprise environments, especially for widely-used systems like SAP's. Organizations using these platforms should apply the updates immediately to mitigate potential risks. This update is part of SAP's regular security patch schedule, emphasizing the need for continuous vigilance in enterprise software security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sap-patches-critical-s-4hana-commerce-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Mini Shai-Hulud Worm Hits TanStack, Mistral AI—Supply Chain Breach",
-            "title": "Supply Chain Attack Targets TanStack, Mistral AI, and More via Mini Shai-Hulud",
-            "content": "A new supply chain attack, attributed to the threat actor TeamPCP, has compromised npm and PyPI packages from TanStack, Mistral AI, UiPath, and others. The campaign, dubbed Mini Shai-Hulud, involves the insertion of malicious code into popular open-source packages, potentially impacting thousands of developers and enterprises relying on these libraries. This incident highlights the growing threat of supply chain attacks in the software development ecosystem. Developers are urged to verify the integrity of their dependencies and monitor for unusual package behavior.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/mini-shai-hulud-worm-compromises.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 08 2026",
-            "headline": "Google AI Search Boosts Transparency—Links More Sources",
-            "title": "Google Enhances AI Search by Linking Additional Sources in Overviews",
-            "content": "Google has announced an update to its AI-powered search capabilities, now linking more sources in its AI-generated overviews. This enhancement aims to improve transparency and reliability by providing users with direct access to the original content referenced in AI summaries. The update addresses previous criticisms regarding the lack of source attribution in AI-generated content, a concern for both users and content creators. This move aligns with broader industry trends emphasizing transparency and accountability in AI systems. Users can expect to see these changes rolled out across Google's search platform in the coming weeks, enhancing the credibility of AI-generated information.",
+            "date": "May 13 2026",
+            "headline": "Notion Integrates AI Agents—Boosts Workspace Productivity",
+            "title": "Notion's Developer Platform Connects AI Agents and External Data Sources",
+            "content": "Notion has unveiled a new developer platform that transforms its workspace into a dynamic hub for AI agents. This platform allows teams to seamlessly integrate AI agents, external data sources, and custom code directly into their Notion workspace, enhancing productivity and collaboration. By embedding these capabilities, Notion is positioning itself as a leader in agentic productivity software, enabling users to automate complex workflows and access real-time data insights. This development is set to impact businesses relying on Notion for project management and data analysis, offering them a competitive edge. Users should explore the integration options to maximize their workspace efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Altman Faces Accusations of Deception at OpenAI Trial",
+            "title": "OpenAI's Sam Altman Confronted with Lying Allegations in Court",
+            "content": "Sam Altman, CEO of OpenAI, is under scrutiny in a trial where he faces accusations of being a prolific liar, a claim that has drawn parallels to Elon Musk's leadership controversies. The trial has brought to light Altman's alleged misrepresentations about his control over OpenAI, raising questions about transparency and governance within the AI industry. This case could have significant implications for OpenAI's reputation and its relationships with stakeholders. Industry professionals are advised to monitor the trial's developments, as the outcome may influence corporate governance practices in tech companies.",
             "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 07 2026",
+            "headline": "OpenAI Launches GPT-5.5-Cyber for Enhanced Security Research",
+            "title": "OpenAI Expands Cybersecurity Tools with GPT-5.5 and GPT-5.5-Cyber",
+            "content": "OpenAI has introduced GPT-5.5 and its specialized variant, GPT-5.5-Cyber, to bolster cybersecurity efforts. These models are designed to assist verified defenders in accelerating vulnerability research and protecting critical infrastructure. By leveraging advanced language processing capabilities, GPT-5.5-Cyber aids in identifying and mitigating potential threats more efficiently. This expansion is crucial for organizations aiming to enhance their cybersecurity posture amidst increasing cyber threats. Security professionals should consider integrating these tools into their vulnerability management processes to stay ahead of adversaries.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Anthropic Restores OpenClaw Access—With Limitations",
+            "title": "Anthropic Reinstates OpenClaw and Third-Party Agent Usage on Claude",
+            "content": "Anthropic has announced the reinstatement of OpenClaw and third-party agent usage for its Claude AI subscriptions, albeit with certain restrictions. This move comes as a relief to OpenClaw enthusiasts who rely on the open-source, autonomous AI agentic harness. However, users must navigate new limitations imposed by Anthropic, which could affect the deployment and functionality of these agents. The announcement was made via Anthropic's official developer communications account, signaling a shift in policy that may impact developers and businesses utilizing Claude. Stakeholders should review the updated terms to ensure compliance and optimal use.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Anthropic Surpasses OpenAI in Business AI Adoption",
+            "title": "Anthropic Leads in Business AI Adoption Amidst Competitive Threats",
+            "content": "For the first time, Anthropic's Claude AI has surpassed OpenAI's ChatGPT in business adoption, capturing 34.4% of the market according to the Ramp AI Index. This marks a significant milestone in the AI race, with Anthropic's adoption rising by 3.8% in April while OpenAI's fell by 2.9%. Despite this achievement, Anthropic faces three major threats that could jeopardize its lead, including competitive pressures and evolving market demands. Businesses leveraging AI solutions should assess the competitive landscape and consider how these shifts might influence their strategic decisions.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Microsoft Edge Copilot Enhances Tab Information Retrieval",
+            "title": "Microsoft Edge Copilot Update Enables AI-Driven Tab Analysis",
+            "content": "Microsoft has updated its Edge browser with a new feature allowing the Copilot AI chatbot to extract and analyze information from all open tabs. This enhancement enables users to query Copilot about the content of their tabs, facilitating tasks such as product comparisons and article summarizations. By integrating AI-driven insights directly into the browsing experience, Microsoft aims to streamline information retrieval and enhance productivity for its users. Professionals using Edge for research and multitasking should explore this feature to optimize their workflow.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Sam Altman, a prominent figure in the tech industry, testified in court amid allegations of misappropriating funds from a charity. Despite facing accusations from multiple witnesses, Altman defended his actions, emphasizing the hard work involved in the charity's creation. The case has drawn significant attention, highlighting the challenges tech leaders face when navigating legal and ethical scrutiny. Industry professionals should monitor this case closely, as its outcome could impact perceptions of leadership accountability in the tech sector.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/929129/sam-altman-testimony-elon-musk-openai-trial",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Meta's AI Account on Threads—Blocking Not Allowed",
-            "title": "Meta Tests AI Account Feature on Threads, Blocking Restrictions Apply",
-            "content": "Meta has announced a new feature on its Threads platform, allowing users to tag a Meta AI account for answers and context in conversations. However, users are currently unable to block this AI account, raising concerns about user control and privacy. This feature mirrors similar functionalities on other social media platforms, aiming to enhance user engagement through AI-driven interactions. Users and privacy advocates should assess the implications of this feature, particularly regarding data privacy and user autonomy on digital platforms.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/929091/meta-ai-threads-account-block",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "AI Spending Surges—Strategic Growth Opportunities Identified",
-            "title": "Transforming AI Cost Spikes into Strategic Business Growth",
-            "content": "As AI spending continues to rise, organizations face challenges in measuring return on investment (ROI) and aligning AI initiatives with business outcomes. Apptio, an IBM company, highlights the importance of clear governance and measurement frameworks to bridge this gap. The 2026 Technology Investment Management report emphasizes that while AI's potential is vast, its benefits are often underrealized due to unclear metrics and governance. Companies are encouraged to implement robust management practices to ensure AI investments drive tangible business growth. This strategic approach is crucial for tech leaders aiming to maximize the value of their AI expenditures in a rapidly evolving digital landscape.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/turning-ai-cost-spikes-into-strategic-growth-opportunities",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Dessn Secures $6M for AI-Powered Design Tools",
-            "title": "Dessn Raises $6 Million to Advance AI Design Tool Development",
-            "content": "Dessn, a burgeoning startup, has successfully raised $6 million to develop AI-powered design tools that integrate seamlessly with production codebases. This funding round underscores the growing demand for tools that streamline the design-to-production workflow, enhancing efficiency for developers and designers alike. Dessn's innovative approach aims to bridge the gap between design and development, offering a solution that directly impacts productivity and project timelines. The investment highlights the increasing interest in AI solutions that cater to specific industry needs, particularly in the design and development sectors. Professionals in these fields should watch for Dessn's advancements as they promise to redefine traditional workflows.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/12/dessn-raises-6m-for-its-production-focused-design-tool/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Vapi Valued at $500M—Amazon Ring Deal Secured",
-            "title": "Vapi Reaches $500 Million Valuation After Securing Amazon Ring Contract",
-            "content": "Vapi, an AI voice startup, has achieved a $500 million valuation following its successful bid to provide services for Amazon Ring, surpassing 40 competitors. This milestone reflects Vapi's significant growth, with its enterprise business expanding tenfold since early 2025. The company's AI solutions are increasingly adopted for customer support and sales calls, showcasing the shift towards AI-driven communication in enterprise environments. This development positions Vapi as a key player in the AI voice technology sector, with implications for companies looking to enhance customer interaction through AI. Stakeholders should consider the competitive advantages of integrating AI voice solutions in their operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 12 2026",
-            "headline": "Thinking Machines Innovates AI with Real-Time Interaction Models",
-            "title": "Thinking Machines Develops AI for Simultaneous Listening and Responding",
-            "content": "Thinking Machines is pioneering a new AI model designed to process input and generate responses simultaneously, akin to a natural conversation. This approach contrasts with traditional models that operate in a sequential manner, potentially transforming how AI interacts with users. The innovation aims to create more fluid and dynamic interactions, similar to human phone conversations rather than text exchanges. By enhancing real-time processing capabilities, Thinking Machines seeks to improve user experience and engagement. This advancement could significantly impact sectors reliant on interactive AI, such as customer service and virtual assistance. Professionals should explore the potential applications of these interaction models in their fields.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/11/thinking-machines-wants-to-build-an-ai-that-actually-listens-while-it-talks/",
             "relatedResources": []
         }
     ],
@@ -362,22 +362,11 @@ const websiteContent = {
             "cveId": "CVE-2026-42208",
             "dateAdded": "May 08, 2026",
             "vendor": "BerriAI LiteLLM",
-            "description": "BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorised access to the proxy and the cre",
+            "description": "BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorized access to the proxy and the cre",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42208",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-6973",
-            "dateAdded": "May 07, 2026",
-            "vendor": "Ivanti Endpoint Manager Mobile (EPMM)",
-            "description": "Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6973",
             "isZeroDay": false
         }
     ],
