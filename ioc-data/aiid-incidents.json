@@ -1049,14 +1049,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-490",
-      "incident_id": 490,
-      "title": "Clarkesworld Magazine Reportedly Closed Down Submissions Due to Massive Increase in Purportedly AI-G",
-      "date": "2026-02-14",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-754",
       "incident_id": 754,
       "title": "Female Politicians in the United Kingdom Reportedly Victimized by Purported Deepfake Pornography",
@@ -1066,9 +1058,9 @@
     }
   ],
   "stats": {
-    "total": 133,
+    "total": 132,
     "last7Days": 12,
     "last30Days": 45
   },
-  "lastUpdated": "2026-05-15T23:20:19.742744+05:30"
+  "lastUpdated": "2026-05-16T01:32:44.066102+05:30"
 }
