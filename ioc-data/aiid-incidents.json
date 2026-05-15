@@ -1065,14 +1065,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1369",
-      "incident_id": 1369,
-      "title": "Purportedly AI-Generated Image Reportedly Circulated Ahead of Thai Election Depicting PM Anutin Char",
-      "date": "2026-02-14",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1370",
       "incident_id": 1370,
       "title": "California Teen Reportedly Died of Overdose After Repeatedly Seeking Drug-Use Guidance Allegedly fro",
@@ -1098,9 +1090,9 @@
     }
   ],
   "stats": {
-    "total": 137,
+    "total": 136,
     "last7Days": 12,
     "last30Days": 45
   },
-  "lastUpdated": "2026-05-15T02:49:30.302598+05:30"
+  "lastUpdated": "2026-05-15T09:43:24.221004+05:30"
 }
