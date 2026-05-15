@@ -1047,20 +1047,12 @@
       "date": "2026-02-21",
       "category": "prompt_injection",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-754",
-      "incident_id": 754,
-      "title": "Female Politicians in the United Kingdom Reportedly Victimized by Purported Deepfake Pornography",
-      "date": "2026-02-14",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 132,
+    "total": 131,
     "last7Days": 12,
     "last30Days": 45
   },
-  "lastUpdated": "2026-05-16T01:32:44.066102+05:30"
+  "lastUpdated": "2026-05-16T02:46:26.877205+05:30"
 }
