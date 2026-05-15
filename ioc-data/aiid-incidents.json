@@ -1063,28 +1063,12 @@
       "date": "2026-02-14",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1371",
-      "incident_id": 1371,
-      "title": "Purported Deepfake Reportedly Impersonated Consumer Adviser Clark Howard to Promote Auto-Insurance Q",
-      "date": "2026-02-14",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1372",
-      "incident_id": 1372,
-      "title": "Houston Gun Store Co-Owner Allegedly Used AI to Create Sexually Explicit Deepfake Images of a Social",
-      "date": "2026-02-14",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 135,
+    "total": 133,
     "last7Days": 12,
     "last30Days": 45
   },
-  "lastUpdated": "2026-05-15T19:59:56.051911+05:30"
+  "lastUpdated": "2026-05-15T23:20:19.742744+05:30"
 }
