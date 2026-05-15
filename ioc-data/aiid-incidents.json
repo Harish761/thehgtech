@@ -1065,14 +1065,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1370",
-      "incident_id": 1370,
-      "title": "California Teen Reportedly Died of Overdose After Repeatedly Seeking Drug-Use Guidance Allegedly fro",
-      "date": "2026-02-14",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1371",
       "incident_id": 1371,
       "title": "Purported Deepfake Reportedly Impersonated Consumer Adviser Clark Howard to Promote Auto-Insurance Q",
@@ -1090,9 +1082,9 @@
     }
   ],
   "stats": {
-    "total": 136,
+    "total": 135,
     "last7Days": 12,
     "last30Days": 45
   },
-  "lastUpdated": "2026-05-15T16:05:30.354023+05:30"
+  "lastUpdated": "2026-05-15T19:59:56.051911+05:30"
 }
