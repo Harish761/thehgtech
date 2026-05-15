@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 15 2026",
+            "headline": "Big Tech Battles Canada Over Encryption Bill",
+            "title": "Big Tech Opposes Canada's Proposed Encryption Legislation",
+            "content": "Major technology companies are pushing back against a proposed Canadian bill that could mandate backdoor access to encrypted communications. The legislation aims to enhance law enforcement capabilities but has raised significant privacy and security concerns among tech giants like Apple and Google. Critics argue that weakening encryption could expose users to increased cyber threats and undermine trust in digital services. This debate comes amid heightened global scrutiny of encryption practices, as governments seek more control over digital communications. Security professionals should monitor developments closely, as the bill's outcome could set a precedent affecting international encryption standards.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-big-tech-vs-canada-encryption-bill-ciscos-free-ai-security-spec-audi-app-flaws/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Exchange Server Zero-Day Exploited—Mitigations Available",
+            "title": "Microsoft Issues Mitigations for Exchange Server Zero-Day CVE-2026-42897",
+            "content": "Microsoft has released temporary mitigations for CVE-2026-42897, a zero-day vulnerability affecting Exchange Server versions 2016 and 2019. This flaw is actively exploited in the wild, allowing attackers to execute arbitrary code on vulnerable systems. The company is working on a permanent patch, but urges administrators to apply the mitigations immediately to protect their networks. This incident underscores the ongoing risks associated with legacy systems and the importance of timely updates. Organizations should review their security posture and ensure all systems are patched as soon as updates become available.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-warns-of-exchange-server-zero-day-exploited-in-the-wild/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Ransomware Breach at American Lending Center—123K Affected",
+            "title": "American Lending Center Data Breach Exposes 123,000 Individuals' Information",
+            "content": "American Lending Center has disclosed a ransomware attack that compromised the personal data of 123,000 individuals. The breach, initially detected nearly a year ago, involved unauthorized access to sensitive information, including Social Security numbers and financial details. The company has completed its investigation and is notifying affected individuals, offering credit monitoring services. This incident highlights the persistent threat of ransomware and the critical need for robust cybersecurity measures. Financial institutions are urged to review their security protocols and ensure comprehensive data protection strategies are in place.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/american-lending-center-data-breach-affects-123000-individuals/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "TanStack Attack Hits OpenAI—macOS Updates Required",
+            "title": "TanStack Supply Chain Attack Compromises OpenAI Employee Devices",
+            "content": "OpenAI has confirmed that two employee devices were compromised in a supply chain attack involving the TanStack library. The breach, known as the Mini Shai-Hulud attack, did not affect user data or production systems, but prompted immediate security measures, including macOS updates. OpenAI has assured that no intellectual property was compromised, emphasizing the importance of supply chain security. This incident serves as a reminder of the vulnerabilities inherent in third-party dependencies and the need for continuous monitoring and rapid response strategies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "OpenAI Code Repositories Breached in TanStack Attack",
+            "title": "Credential Theft from OpenAI Repositories in TanStack Attack",
+            "content": "The TanStack supply chain attack has led to the compromise of two OpenAI employee devices, resulting in the theft of credential material from code repositories. While OpenAI reports no unauthorized modifications to production systems, the breach highlights significant risks associated with supply chain vulnerabilities. The attack underscores the necessity for rigorous access controls and regular security audits of code repositories. Organizations leveraging open-source libraries should enhance their security practices to mitigate similar threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/openai-hit-by-tanstack-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Shai-Hulud Worm Source Code Released—Supply Chain Threats Loom",
+            "title": "TeamPCP Releases Shai-Hulud Worm Source Code for Supply Chain Attacks",
+            "content": "Hacking group TeamPCP has publicly released the source code for the Shai-Hulud worm, encouraging its use in supply chain attacks. The group is incentivizing cybercriminals with monetary rewards for successful exploits. This development poses a significant threat to software supply chains, as the worm is designed to infiltrate and compromise third-party libraries. Security professionals should prioritize monitoring and securing their supply chain dependencies to prevent potential breaches. The release of such potent malware underscores the increasing sophistication and collaboration among cybercriminal networks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/teampcp-ups-the-game-releases-shai-hulud-worms-source-code/",
+            "relatedResources": []
+        },
+        {
             "date": "May 14 2026",
             "headline": "Mistral AI Code Repos for Sale—TeamPCP Threatens Leak",
             "title": "TeamPCP Hackers Threaten to Leak Mistral AI Source Code",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/praisonai-cve-2026-44338-auth-bypass.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "AI Hallucinations Pose Real Threats to Critical Infrastructure",
-            "title": "AI Hallucinations Introduce Security Risks in Critical Decision-Making",
-            "content": "AI hallucinations, where models generate highly confident but incorrect outputs, are creating significant security risks in critical infrastructure decision-making. These hallucinations exploit human trust, leading to potentially disastrous outcomes when AI systems are used without adequate oversight. The lack of a mechanism for AI models to recognize their uncertainty exacerbates the issue, as they default to generating the most probable response. Security professionals must be aware of these risks and implement robust validation and verification processes to mitigate the impact of AI errors in sensitive environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/how-ai-hallucinations-are-creating-real.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Windows Zero-Days Unveil BitLocker and CTFMON Vulnerabilities",
-            "title": "Windows Zero-Days Expose BitLocker Bypass and CTFMON Privilege Escalation",
-            "content": "Two new zero-day vulnerabilities affecting Windows systems have been disclosed, involving a BitLocker bypass and a privilege escalation in the Collaborative Translation Framework (CTFMON). These vulnerabilities, codenamed YellowKey, were revealed by an anonymous cybersecurity researcher who previously disclosed Microsoft Defender flaws. The BitLocker bypass could allow unauthorized access to encrypted data, while the CTFMON flaw enables privilege escalation, potentially compromising system integrity. Microsoft users are advised to monitor for patches and implement interim security measures to protect against these threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/windows-zero-days-expose-bitlocker.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Fragnesia Linux Flaw Demands Immediate Patching—Root Access Risk",
-            "title": "Fragnesia Linux Vulnerability Allows Attackers to Gain Root Privileges",
-            "content": "The Fragnesia vulnerability, tracked as CVE-2026-46300, poses a high-severity threat to Linux systems, enabling attackers to execute code with root privileges. Linux distributions are actively rolling out patches to address this critical kernel flaw. The vulnerability's potential to allow unauthorized root access underscores the urgent need for system administrators to apply updates promptly. This incident highlights the persistent security challenges faced by open-source platforms and the importance of proactive vulnerability management.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-fragnesia-linux-flaw-lets-attackers-gain-root-privileges/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Exim Mailer Flaw—Remote Code Execution Risk",
-            "title": "Critical Exim Mail Transfer Agent Vulnerability Enables Remote Code Execution",
-            "content": "A critical vulnerability has been identified in certain configurations of the Exim open-source mail transfer agent, allowing unauthenticated remote attackers to execute arbitrary code. This flaw affects Exim versions prior to 4.95.2 and could be exploited via specially crafted network requests. The vulnerability poses a significant risk to organizations relying on Exim for email services, potentially leading to unauthorized access and data breaches. Exim is widely used across various industries, making this a pressing concern for system administrators. Users are advised to upgrade to the latest version immediately to mitigate potential threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-critical-exim-mailer-flaw-allows-remote-code-execution/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Foxconn Cyberattack—8TB Data Stolen by Nitrogen",
-            "title": "Foxconn Confirms Cyberattack on North American Factories, 8TB Data Compromised",
-            "content": "Foxconn has confirmed a cyberattack on its North American factories, with the Nitrogen ransomware group claiming responsibility for the breach. The attackers reportedly exfiltrated 8 terabytes of data, including confidential documents, potentially impacting business operations and supply chain integrity. This incident underscores the growing threat of ransomware attacks on critical manufacturing infrastructure. Foxconn is currently working with cybersecurity experts to assess the damage and strengthen its defenses. Organizations are reminded to review their security protocols and ensure robust data protection measures are in place.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/foxconn-confirms-north-american-factories-hit-by-cyberattack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "BitLocker Zero-Day Exposed—PoC Exploits Released",
-            "title": "Windows BitLocker Zero-Day Vulnerabilities Allow Drive Access, PoC Released",
-            "content": "A cybersecurity researcher has released proof-of-concept exploits for two unpatched Microsoft Windows vulnerabilities, YellowKey and GreenPlasma. These vulnerabilities include a BitLocker bypass and a privilege-escalation flaw, potentially allowing unauthorized access to encrypted drives. The release of these PoC exploits raises the risk of exploitation by threat actors, especially as no official patches are currently available. Organizations using BitLocker for data protection should monitor for updates and consider additional security measures. This development highlights the ongoing challenges in securing widely used encryption technologies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/windows-bitlocker-zero-day-gives-access-to-protected-drives-poc-released/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 08 2026",
+            "headline": "Google AI Search Enhances Source Transparency—Citations Boost Credibility",
+            "title": "Google AI Search to Enhance Source Citations for Greater Transparency",
+            "content": "Google has announced a significant update to its AI search capabilities, focusing on enhancing transparency by linking more sources in AI-generated overviews. This move aims to address concerns about the reliability and verifiability of AI-generated content. By providing direct citations, Google seeks to improve user trust and ensure that information is traceable to credible origins. This update is part of a broader trend in AI development emphasizing accountability and transparency in AI outputs. Professionals relying on AI for research and decision-making should note the improved ability to verify information directly from the source. This development underscores the growing importance of transparency in AI-driven technologies.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Runway Challenges Google—Aims to Lead in AI Video Generation",
+            "title": "Runway Targets AI Video Generation to Compete with Google’s AI Dominance",
+            "content": "Runway, an AI video generation startup, is positioning itself as a formidable competitor to tech giants like Google by focusing on video generation technologies. The company believes that video generation is key to developing comprehensive world models, which are essential for advanced AI applications. Runway's outsider status in the AI industry is seen as an advantage, allowing it to innovate without the constraints faced by larger, established companies. This strategic move highlights a growing trend where smaller AI firms leverage niche technologies to challenge industry leaders. Developers and tech leaders should watch Runway's progress as it could reshape the competitive landscape in AI video technology.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Personalized Health Tech—Promises and Pitfalls Explored",
+            "title": "Exploring the Promises and Pitfalls of Personalized Health Technologies",
+            "content": "The Verge's Optimizer newsletter delves into the evolving landscape of personalized health technologies, examining both their potential benefits and inherent challenges. Personalized health tech promises to revolutionize healthcare by offering tailored solutions based on individual data. However, the integration of these technologies raises concerns about data privacy, accuracy, and accessibility. As the market for personalized health solutions expands, healthcare professionals and tech developers must navigate these complexities to ensure ethical and effective implementation. This exploration underscores the need for robust frameworks to manage the delicate balance between innovation and privacy in health tech.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/931148/optimizer-pmos-pcos-personalized-health",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Osaurus Integrates Local and Cloud AI—Boosts Mac User Capabilities",
+            "title": "Osaurus Combines Local and Cloud AI Models for Enhanced Mac Functionality",
+            "content": "Osaurus has launched a new application for Mac users that seamlessly integrates both local and cloud-based AI models, enhancing user experience by keeping memory, files, and tools on personal hardware. This hybrid approach allows users to leverage the power of cloud AI while maintaining control over their data locally. The app is designed to optimize performance and privacy, addressing common concerns about data security in cloud computing. As more users demand flexible and secure AI solutions, Osaurus's innovation represents a significant step forward in AI application development for personal computing. Mac users should consider this app to enhance their AI capabilities while safeguarding their data.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "AI Research Papers Surge—Citation Overload Challenges Scientists",
+            "title": "Surge in AI Research Paper Citations Presents Challenges for Scientists",
+            "content": "A recent trend in academia shows AI research papers receiving an unprecedented number of citations, sparking concerns among scientists about the implications of citation overload. This phenomenon, exemplified by a 2017 paper on statistical accuracy, highlights the increasing influence of AI research in scientific discourse. However, the surge in citations raises questions about the quality and impact of these references, potentially skewing academic metrics and evaluations. Researchers and academic institutions must adapt to this changing landscape by developing new metrics to assess research impact accurately. This situation underscores the need for a balanced approach to evaluating scientific contributions in the AI era.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/930522/ai-research-papers-slop-peer-review-problem",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Musk v. Altman Trial—Closing Arguments Highlight Legal Drama",
+            "title": "Closing Arguments in Musk v. Altman Trial Reveal Legal Missteps",
+            "content": "The Musk v. Altman trial reached its climax with closing arguments that underscored the high-stakes legal battle between tech titans. Steven Molo, representing Elon Musk, faced challenges as he stumbled over key details, including misnaming co-defendant Greg Brockman. The trial, centered on allegations of competitive misconduct, has captivated the tech industry with its dramatic proceedings. As the case concludes, the outcome could have significant implications for corporate governance and competitive practices in the tech sector. Legal professionals and tech leaders should closely monitor the verdict, which may set precedents for future industry disputes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/931006/musk-v-altman-closing-arguments-analysis",
+            "relatedResources": []
+        },
         {
             "date": "May 14 2026",
             "headline": "Clawdmeter Transforms AI Stats into Desktop Dashboards",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "OpenAI has detailed its response to the TanStack \"Mini Shai-Hulud\" supply chain attack, which compromised npm packages and posed a risk to macOS users. The attack exploited vulnerabilities in package signing certificates, prompting OpenAI to enhance its security protocols. Affected users must update OpenAI applications by June 12, 2026, to mitigate risks. This incident underscores the growing threat of supply chain attacks in software ecosystems. Developers and organizations should prioritize securing their software supply chains and ensure timely updates to protect against similar threats.",
             "source": "OpenAI News",
             "sourceUrl": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Meta Faces Morale Crisis Amid Record Profits and Job Cuts",
-            "title": "Meta's Record Profits Contrasted by Low Employee Morale and Layoffs",
-            "content": "Meta is set to cut approximately 10% of its workforce next week, despite reporting record high profits. Interviews with current and former employees reveal a pervasive sense of dissatisfaction within the company, as staff grapple with job insecurity and cultural shifts. This paradox of financial success and internal strife highlights challenges in maintaining workforce morale during periods of rapid change. Tech leaders should consider the implications of workforce reductions on company culture and employee engagement, particularly in high-growth environments.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/meta-layoffs-bad-vibes-mark-zuckerberg-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Cisco Lays Off 4,000—Redirects Funds to AI Amid Record Revenue",
-            "title": "Cisco Cuts Workforce to Invest in AI, Reports Record Revenue Growth",
-            "content": "Cisco has announced the layoff of nearly 4,000 employees as it reallocates resources to focus on artificial intelligence initiatives. Despite these cuts, the company reported record quarterly revenue, underscoring its strategic shift towards AI-driven growth. This decision reflects a broader trend in the tech industry, where companies are increasingly prioritizing AI investments to stay competitive. Stakeholders should evaluate the impact of workforce reductions on operational capabilities and consider the long-term benefits of AI integration in business strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Notion Integrates AI Agents—Boosts Workspace Productivity",
-            "title": "Notion's Developer Platform Connects AI Agents and External Data Sources",
-            "content": "Notion has unveiled a new developer platform that transforms its workspace into a dynamic hub for AI agents. This platform allows teams to seamlessly integrate AI agents, external data sources, and custom code directly into their Notion workspace, enhancing productivity and collaboration. By embedding these capabilities, Notion is positioning itself as a leader in agentic productivity software, enabling users to automate complex workflows and access real-time data insights. This development is set to impact businesses relying on Notion for project management and data analysis, offering them a competitive edge. Users should explore the integration options to maximize their workspace efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Altman Faces Accusations of Deception at OpenAI Trial",
-            "title": "OpenAI's Sam Altman Confronted with Lying Allegations in Court",
-            "content": "Sam Altman, CEO of OpenAI, is under scrutiny in a trial where he faces accusations of being a prolific liar, a claim that has drawn parallels to Elon Musk's leadership controversies. The trial has brought to light Altman's alleged misrepresentations about his control over OpenAI, raising questions about transparency and governance within the AI industry. This case could have significant implications for OpenAI's reputation and its relationships with stakeholders. Industry professionals are advised to monitor the trial's developments, as the outcome may influence corporate governance practices in tech companies.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Anthropic Restores OpenClaw Access—With Limitations",
-            "title": "Anthropic Reinstates OpenClaw and Third-Party Agent Usage on Claude",
-            "content": "Anthropic has announced the reinstatement of OpenClaw and third-party agent usage for its Claude AI subscriptions, albeit with certain restrictions. This move comes as a relief to OpenClaw enthusiasts who rely on the open-source, autonomous AI agentic harness. However, users must navigate new limitations imposed by Anthropic, which could affect the deployment and functionality of these agents. The announcement was made via Anthropic's official developer communications account, signaling a shift in policy that may impact developers and businesses utilizing Claude. Stakeholders should review the updated terms to ensure compliance and optimal use.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Anthropic Surpasses OpenAI in Business AI Adoption",
-            "title": "Anthropic Leads in Business AI Adoption Amidst Competitive Threats",
-            "content": "For the first time, Anthropic's Claude AI has surpassed OpenAI's ChatGPT in business adoption, capturing 34.4% of the market according to the Ramp AI Index. This marks a significant milestone in the AI race, with Anthropic's adoption rising by 3.8% in April while OpenAI's fell by 2.9%. Despite this achievement, Anthropic faces three major threats that could jeopardize its lead, including competitive pressures and evolving market demands. Businesses leveraging AI solutions should assess the competitive landscape and consider how these shifts might influence their strategic decisions.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead",
             "relatedResources": []
         }
     ],
