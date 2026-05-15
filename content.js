@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 14 2026",
+            "headline": "Mistral AI Code Repos for Sale—TeamPCP Threatens Leak",
+            "title": "TeamPCP Hackers Threaten to Leak Mistral AI Source Code",
+            "content": "The hacker group TeamPCP is threatening to release source code from the Mistral AI project unless a buyer is found for the stolen data. This development raises concerns about intellectual property theft and potential misuse of AI technologies. The Mistral AI project, known for its cutting-edge AI models, could face significant setbacks if the source code becomes public. Organizations relying on Mistral AI should evaluate their security measures and prepare for potential disruptions. This incident underscores the growing trend of cybercriminals targeting AI projects for financial gain.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/teampcp-hackers-advertise-mistral-ai-code-repos-for-sale/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Critical Flaw in Burst Statistics Plugin—Admin Access Gained",
+            "title": "Hackers Exploit Authentication Bypass in Burst Statistics WordPress Plugin",
+            "content": "A critical authentication bypass vulnerability in the Burst Statistics WordPress plugin is being actively exploited by hackers to gain admin-level access to websites. This flaw affects websites using the plugin, potentially compromising sensitive data and site integrity. WordPress site administrators are urged to update the plugin immediately to mitigate this risk. The vulnerability highlights the ongoing challenges in securing third-party plugins and the importance of regular security audits. As WordPress powers a significant portion of the web, vulnerabilities like this can have widespread implications.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-auth-bypass-flaw-in-burst-statistics-wordpress-plugin/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Cisco SD-WAN Zero-Day—Admin Privileges Gained in Attacks",
+            "title": "Cisco Warns of Critical SD-WAN Flaw Exploited in Zero-Day Attacks",
+            "content": "Cisco has issued a warning about a critical authentication bypass flaw in its Catalyst SD-WAN Controller, identified as CVE-2026-20182, which has been exploited in zero-day attacks. This vulnerability allows attackers to gain administrative privileges on affected devices, posing a severe risk to network security. Organizations using Cisco's SD-WAN solutions should apply the latest patches immediately to protect their infrastructure. This incident highlights the increasing sophistication of attacks targeting network management systems. The flaw's CVSS score of 10.0 indicates its maximum severity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-critical-sd-wan-flaw-exploited-in-zero-day-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "OpenAI Breach—TanStack Attack Compromises Employee Devices",
+            "title": "OpenAI Confirms Security Breach in TanStack Supply Chain Attack",
+            "content": "OpenAI has confirmed that two of its employees' devices were compromised in the recent TanStack supply chain attack. This breach affected hundreds of npm and PyPI packages, prompting OpenAI to rotate code-signing certificates as a precautionary measure. The attack underscores the vulnerabilities inherent in software supply chains and the need for robust security practices. Organizations relying on affected packages should review their dependencies and apply necessary updates. This incident highlights the broader trend of supply chain attacks targeting critical software ecosystems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/openai-confirms-security-breach-in-tanstack-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Pwn2Own Berlin 2026—$523K Awarded for 24 Zero-Days",
+            "title": "Windows 11 and Microsoft Edge Hacked at Pwn2Own Berlin 2026",
+            "content": "Security researchers at Pwn2Own Berlin 2026 successfully exploited 24 unique zero-day vulnerabilities, earning $523,000 in cash awards. Among the targets were Windows 11 and Microsoft Edge, highlighting ongoing security challenges in widely used software. The competition serves as a critical platform for uncovering and addressing vulnerabilities before they can be exploited in the wild. Participants demonstrated sophisticated techniques, emphasizing the need for continuous security improvements. Organizations should stay informed about disclosed vulnerabilities and apply patches promptly to mitigate risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/windows-11-and-microsoft-edge-hacked-on-first-day-of-pwn2own-berlin-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Cisco SD-WAN Flaw—Critical Auth Bypass Exploited in Attacks",
+            "title": "Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited",
+            "content": "Cisco has released updates to address a critical authentication bypass vulnerability in its Catalyst SD-WAN Controller, tracked as CVE-2026-20182. This flaw, with a CVSS score of 10.0, has been exploited in limited attacks, allowing unauthorized access to administrative functions. Organizations using affected Cisco products should apply the updates immediately to secure their networks. This vulnerability highlights the importance of timely patch management and vigilance against emerging threats. Cisco's proactive response aims to mitigate potential impacts on its customers' network security.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
             "headline": "Fragnesia Exploit Elevates Linux Threat—Patch Urgently",
             "title": "Linux Kernel Vulnerability Fragnesia Enables Root Privilege Escalation",
             "content": "A critical vulnerability, CVE-2026-46300, dubbed Fragnesia, has been identified in the Linux kernel, allowing attackers to escalate privileges to root. This flaw is akin to the recent Dirty Frag and Copy Fail exploits, posing a significant risk to systems running affected Linux distributions. The vulnerability enables malicious actors to execute arbitrary code with root privileges, potentially compromising the entire system. As Linux distributions rush to release patches, administrators are urged to apply updates immediately to mitigate potential attacks. This incident underscores the ongoing challenges in securing open-source software against sophisticated threats.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/windows-bitlocker-zero-day-gives-access-to-protected-drives-poc-released/",
             "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Fortinet, Ivanti Patch Critical Vulnerabilities—Act Now",
-            "title": "Fortinet and Ivanti Release Patches for Critical Security Flaws",
-            "content": "Fortinet and Ivanti have released patches addressing critical vulnerabilities that could lead to arbitrary code execution and information disclosure. These flaws, identified in Fortinet's FortiOS and Ivanti's Endpoint Manager, pose significant risks if left unpatched, potentially allowing attackers to compromise systems and access sensitive data. Organizations using these products are urged to apply the patches immediately to prevent exploitation. This proactive response from Fortinet and Ivanti underscores the importance of timely vulnerability management in maintaining cybersecurity resilience.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortinet-ivanti-patch-critical-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "RubyGems Attack—500 Malicious Packages Trigger Registration Halt",
-            "title": "RubyGems Suspends Registrations After Attack with 500 Malicious Packages",
-            "content": "RubyGems has temporarily suspended new package registrations following an attack that introduced over 500 malicious packages into its repository. The attack appears to have targeted RubyGems itself rather than end-users, aiming to compromise the integrity of the platform. This incident highlights the vulnerabilities in software supply chains and the potential for widespread impact if not swiftly addressed. Developers are advised to verify the integrity of packages and monitor for updates from RubyGems. The suspension is a precautionary measure to prevent further infiltration and ensure platform security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hundreds-of-malicious-packages-force-rubygems-to-suspend-registrations/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "ShinyHunters Breach—30M Students' Data Exposed",
-            "title": "ShinyHunters Hack Affects 30 Million Students, Major Universities Compromised",
-            "content": "The ShinyHunters hacking group has executed the largest educational data breach in history, affecting nearly 9,000 institutions, including every Ivy League university. The breach compromised data of 30 million students during finals, following Canvas's parent company's refusal to pay a ransom. Despite deploying security patches, the breach highlights significant vulnerabilities in educational platforms. Institutions are urged to reassess their security strategies and enhance data protection measures. This incident underscores the critical need for robust cybersecurity frameworks in the education sector.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-467/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Foxconn Hit by Nitrogen Ransomware—North American Ops Disrupted",
-            "title": "Foxconn Confirms Cyberattack by Nitrogen Ransomware, Impacting North American Operations",
-            "content": "Foxconn, the world's largest electronics manufacturer, has confirmed a cyberattack by the Nitrogen ransomware gang, affecting its North American factories. The attack has disrupted operations, with some facilities working to resume normal activities. While specific details about the ransomware's entry point remain undisclosed, the incident underscores the vulnerability of manufacturing giants to sophisticated cyber threats. Foxconn is currently assessing the full scope of the breach and implementing recovery measures. This attack highlights the ongoing risk of ransomware to critical supply chains and the necessity for robust cybersecurity defenses.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/electronics-giant-foxconn-confirms-cyberattack-on-north-american-factories/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "73 Seconds to Breach—Autonomous Validation Urged for Defense",
-            "title": "Autonomous Validation Critical as Breaches Happen in Seconds, Patching Lags",
-            "content": "Picus Security has highlighted the alarming speed at which attackers can breach systems—just 73 seconds—while patching and response can take up to 24 hours. This stark contrast underscores the need for autonomous validation in modern cybersecurity strategies. Autonomous validation involves continuous, automated testing of security controls to ensure they are effective against the latest threats. As cyberattacks become increasingly sophisticated and rapid, organizations must adopt proactive measures to reduce response times and enhance defense capabilities. This approach is crucial for maintaining resilience against evolving cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/73-seconds-to-breach-24-hours-to-patch-the-case-for-autonomous-validation/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Government Probes Instructure Over Canvas Data Breach",
-            "title": "Homeland Security to Investigate Instructure's Canvas Data Breach and Disruption",
-            "content": "The Committee on Homeland Security is set to investigate Instructure following a data breach and disruption of its Canvas learning platform. The breach has raised concerns about the security of educational technology platforms and their ability to protect sensitive user data. Instructure is expected to provide a detailed briefing on the incident and outline its remediation steps. This scrutiny reflects growing governmental oversight of cybersecurity practices in the education sector, emphasizing the need for robust security measures to safeguard student and institutional data.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/government-to-scrutinize-instructure-on-canvas-disruption-data-breach/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 14 2026",
+            "headline": "Clawdmeter Transforms AI Stats into Desktop Dashboards",
+            "title": "Clawdmeter Offers AI Coding Power Users a Desktop Dashboard for Claude Code",
+            "content": "Clawdmeter, an open-source tool, has been launched to convert Claude Code usage statistics into a compact desktop dashboard, catering to AI coding power users. This tool provides real-time insights into coding activities, enhancing productivity and efficiency for developers who rely heavily on Claude Code. The dashboard's user-friendly interface allows for seamless integration into existing workflows, offering a visual representation of coding metrics. This development is part of a broader trend towards increased transparency and usability in AI tools, empowering developers with actionable data. Users can access Clawdmeter through GitHub, ensuring easy installation and customization.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/14/clawdmeter-turns-your-claude-code-usage-stats-into-a-tiny-desktop-dashboard/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Microsoft Cancels Claude Code Licenses—Impact on Developers",
+            "title": "Microsoft Revokes Claude Code Licenses Amid Strategic Shift",
+            "content": "Microsoft has begun canceling licenses for Claude Code, an AI coding tool developed by Anthropic, initially rolled out to thousands of its developers last December. This move marks a strategic pivot as Microsoft reassesses its AI tool deployment strategy. The cancellation affects project managers, designers, and employees who were encouraged to explore coding through this tool. This decision may signal a shift towards alternative AI solutions or internal tool development. Organizations relying on Claude Code should prepare for potential disruptions and explore other AI coding platforms to maintain workflow continuity.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "70% of Americans Oppose Local AI Data Centers",
+            "title": "Gallup Survey Reveals Strong Opposition to AI Data Centers in Neighborhoods",
+            "content": "A recent Gallup survey reveals that over 70 percent of Americans oppose the construction of AI data centers in their neighborhoods, with only 7 percent expressing strong support. This sentiment surpasses even the opposition to living near nuclear power plants, highlighting significant public concern over the environmental and infrastructural impact of data centers. The findings underscore the growing challenge tech companies face in expanding data infrastructure amid public resistance. Stakeholders in AI development must consider community engagement and sustainable practices to address these concerns and facilitate future data center projects.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/930477/ai-data-centers-gallup-survey-70-percent-opposition",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Raindrop's Workshop Tool Enhances Local AI Debugging",
+            "title": "Raindrop AI Launches Workshop for Local Debugging of AI Agents",
+            "content": "Raindrop AI has released \"Workshop,\" an open-source tool under the MIT License, enabling developers to debug and evaluate AI agents locally. This tool addresses a critical need for enhanced observability in the AI development process, allowing for more precise troubleshooting and performance analysis. Workshop supports a range of AI models and integrates seamlessly with existing development environments, offering a robust solution for developers seeking to optimize AI agent functionality. This launch reflects the industry's shift towards more developer-centric tools, emphasizing transparency and control in AI workflows.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/developers-can-now-debug-and-evaluate-ai-agents-locally-with-raindrops-open-source-tool-workshop",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Cisco's Grieco: Agent Authorization Flaws Worsen Security Risks",
+            "title": "Cisco's Grieco Highlights Critical Flaws in Agent Authorization Systems",
+            "content": "Anthony Grieco, Cisco's SVP and chief security and trust officer, has raised alarms over the increasing frequency of rogue agent incidents affecting Cisco's clientele. In an exclusive interview at RSAC 2026, Grieco emphasized that agent authorization systems are fundamentally flawed, with authentication bypasses exacerbating the issue. These vulnerabilities pose significant risks to enterprise security, potentially leading to unauthorized access and data breaches. Organizations are urged to reassess their authorization protocols and implement robust security measures to mitigate these threats. Grieco's insights highlight the urgent need for improved security frameworks in agent-based systems.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/enterprises-verify-agents-identity-cannot-control-authorization-cisco-rsac-2026",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Musk vs. Altman: Jury to Decide Tech's Biggest Case",
+            "title": "Jury to Decide Outcome in Elon Musk vs. Sam Altman Court Case",
+            "content": "The highly anticipated court case between tech titans Elon Musk and Sam Altman is set to be decided by a jury, marking one of the most significant legal battles in the tech industry this year. The case centers around allegations of intellectual property infringement and competitive practices, with potential implications for AI development and business strategies. As the trial unfolds, industry stakeholders are closely monitoring the proceedings for insights into legal precedents that could shape future tech disputes. The outcome may influence corporate governance and innovation strategies across the tech sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/",
+            "relatedResources": []
+        },
         {
             "date": "May 14 2026",
             "headline": "Trump Seeks Tech Titans' Aid in Xi Summit—Chip Policy at Stake",
@@ -165,15 +219,6 @@ const websiteContent = {
             "content": "OpenAI has detailed its response to the TanStack \"Mini Shai-Hulud\" supply chain attack, which compromised npm packages and posed a risk to macOS users. The attack exploited vulnerabilities in package signing certificates, prompting OpenAI to enhance its security protocols. Affected users must update OpenAI applications by June 12, 2026, to mitigate risks. This incident underscores the growing threat of supply chain attacks in software ecosystems. Developers and organizations should prioritize securing their software supply chains and ensure timely updates to protect against similar threats.",
             "source": "OpenAI News",
             "sourceUrl": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
-            "relatedResources": []
-        },
-        {
-            "date": "May 08 2026",
-            "headline": "Google AI Enhances Transparency—Cites Sources in Search Overviews",
-            "title": "Google to Improve AI Search Transparency by Citing More Sources",
-            "content": "Google has announced a significant update to its AI-powered search functionality, which will now include more comprehensive source citations in search overviews. This enhancement aims to increase transparency and trust in AI-generated content by providing users with clearer attribution of information. As AI continues to play a pivotal role in search technologies, ensuring the accuracy and reliability of information is critical. This move aligns with broader industry trends towards accountability in AI systems. Professionals in AI and search technologies should consider similar transparency measures to maintain user trust and compliance with emerging standards.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "For the first time, Anthropic's Claude AI has surpassed OpenAI's ChatGPT in business adoption, capturing 34.4% of the market according to the Ramp AI Index. This marks a significant milestone in the AI race, with Anthropic's adoption rising by 3.8% in April while OpenAI's fell by 2.9%. Despite this achievement, Anthropic faces three major threats that could jeopardize its lead, including competitive pressures and evolving market demands. Businesses leveraging AI solutions should assess the competitive landscape and consider how these shifts might influence their strategic decisions.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Microsoft Edge Copilot Enhances Tab Information Retrieval",
-            "title": "Microsoft Edge Copilot Update Enables AI-Driven Tab Analysis",
-            "content": "Microsoft has updated its Edge browser with a new feature allowing the Copilot AI chatbot to extract and analyze information from all open tabs. This enhancement enables users to query Copilot about the content of their tabs, facilitating tasks such as product comparisons and article summarizations. By integrating AI-driven insights directly into the browsing experience, Microsoft aims to streamline information retrieval and enhance productivity for its users. Professionals using Edge for research and multitasking should explore this feature to optimize their workflow.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "WhatsApp Introduces Incognito Mode for Meta AI Chats",
-            "title": "WhatsApp Adds Incognito Mode to Meta AI Conversations for Privacy",
-            "content": "WhatsApp has introduced an incognito mode for its Meta AI-powered chats, enhancing user privacy by ensuring conversations are not stored and messages disappear once the chat is closed. This feature is part of Meta's ongoing efforts to prioritize user privacy and data security in its messaging services. The incognito mode is designed to provide users with more control over their digital footprint, addressing growing concerns about data retention and privacy in AI-driven communications. Users are encouraged to explore this new feature to maintain confidentiality in their interactions with Meta AI.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/13/whatsapp-adds-an-incognito-mode-in-meta-ai-chats/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Anthropic Surpasses OpenAI in Business Customer Base",
-            "title": "Anthropic Overtakes OpenAI in Verified Business Customers, Says Ramp",
-            "content": "According to the latest AI Index from fintech firm Ramp, Anthropic now boasts more verified business customers than OpenAI, marking a significant shift in the competitive landscape of AI service providers. This development highlights Anthropic's growing influence and appeal among enterprise clients seeking reliable AI solutions. The data reflects a broader trend of businesses diversifying their AI partnerships to leverage different capabilities and innovations. Companies using AI technologies should consider evaluating Anthropic's offerings as part of their strategic planning to stay competitive in the rapidly evolving AI market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Poppy Launches AI Assistant for Digital Life Management",
-            "title": "Poppy Unveils AI Assistant to Streamline Digital Life Organization",
-            "content": "Poppy has launched a proactive AI assistant designed to help users organize their digital lives by connecting calendars, emails, messages, and other services. This AI-powered app provides timely reminders, suggestions, and task management based on users' activities and schedules. The introduction of Poppy's assistant reflects the increasing demand for AI tools that enhance productivity and personal management. As digital interactions become more complex, such AI solutions are crucial for individuals and businesses aiming to optimize their time and resources. Users interested in improving their digital organization should consider integrating Poppy into their daily routines.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/13/poppy-debuts-a-proactive-ai-assistant-to-help-organize-your-digital-life/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "AutoScientist Empowers AI Models with Self-Training Capabilities",
-            "title": "Adaption's AutoScientist Tool Enables AI Models to Self-Train Efficiently",
-            "content": "Adaption has introduced AutoScientist, an innovative AI tool designed to enable models to train themselves by automating the conventional fine-tuning process. This tool allows AI models to quickly adapt to specific capabilities, enhancing their performance and reducing the time required for manual adjustments. AutoScientist represents a significant advancement in AI development, providing researchers and developers with a powerful resource to accelerate model optimization. Organizations leveraging AI technologies should explore AutoScientist to improve their model training processes and maintain a competitive edge in AI innovation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/13/adaption-aims-big-with-autoscientist-an-ai-tool-that-helps-models-train-themselves/",
             "relatedResources": []
         }
     ],
@@ -359,14 +359,14 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
-            "cveId": "CVE-2026-42208",
-            "dateAdded": "May 08, 2026",
-            "vendor": "BerriAI LiteLLM",
-            "description": "BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorized access to the proxy and the cre",
+            "cveId": "CVE-2026-20182",
+            "dateAdded": "May 14, 2026",
+            "vendor": "Cisco Catalyst SD-WAN",
+            "description": "Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42208",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20182",
             "isZeroDay": false
         }
     ],
