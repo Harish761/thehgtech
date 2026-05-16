@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 15 2026",
+            "headline": "WordPress Plugin Flaw—Credit Card Theft via Funnel Builder",
+            "title": "Critical Vulnerability in Funnel Builder WordPress Plugin Exploited for Card Theft",
+            "content": "A critical security flaw in the Funnel Builder plugin for WordPress is actively being exploited to inject malicious JavaScript into WooCommerce checkout pages. This vulnerability allows attackers to steal credit card information from unsuspecting users during the checkout process. The compromised plugin affects thousands of WordPress sites that utilize WooCommerce for online transactions. Security experts warn that the exploitation of this vulnerability could lead to significant financial losses for businesses and consumers alike. Site administrators are urged to update the Funnel Builder plugin immediately and monitor transactions for any suspicious activity. This incident underscores the ongoing risks associated with third-party plugins in popular content management systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/funnel-builder-wordpress-plugin-bug-exploited-to-steal-credit-cards/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "$385K Awarded—15 Zero-Days Hacked at Pwn2Own Berlin",
+            "title": "Pwn2Own Berlin 2026: 15 Zero-Days Exploited in Major Products",
+            "content": "On the second day of Pwn2Own Berlin 2026, security researchers successfully exploited 15 zero-day vulnerabilities across multiple platforms, including Windows 11, Microsoft Exchange, and Red Hat Enterprise Linux for Workstations, earning a total of $385,750 in cash awards. These vulnerabilities highlight critical security gaps in widely used software, emphasizing the need for robust security measures. The event showcases the skills of top security researchers while providing vendors with crucial insights to enhance their products. Organizations using these systems should stay alert for patches and updates to mitigate potential risks. The competition continues to be a vital platform for advancing cybersecurity research and collaboration.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/pwn2own-day-two-hackers-demo-microsoft-exchange-windows-11-red-had-enterprise-linux-zero-days/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Node-ipc npm Package Compromised—Credentials at Risk",
+            "title": "Credential-Stealing Malware Injected into Popular Node-ipc npm Package",
+            "content": "Hackers have compromised the node-ipc npm package, injecting malware designed to steal credentials in a sophisticated supply chain attack. This package, widely used for inter-process communication in Node.js applications, poses a significant threat to developers and organizations relying on npm for software dependencies. The malicious code was introduced in newly published versions, potentially affecting thousands of projects. Developers are advised to audit their dependencies and update to secure versions immediately. This incident highlights the vulnerabilities inherent in open-source ecosystems and the importance of maintaining vigilant security practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/popular-node-ipc-npm-package-compromised-to-steal-credentials/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Microsoft Exchange Zero-Day—Code Execution via XSS",
+            "title": "Microsoft Warns of Exploited Exchange Server Zero-Day Vulnerability",
+            "content": "Microsoft has issued a warning regarding a high-severity zero-day vulnerability in Exchange Server that is being actively exploited. This flaw allows attackers to execute arbitrary code through cross-site scripting (XSS) attacks targeting Outlook on the web users. The vulnerability poses a significant risk to enterprises using Exchange Server for email communications. Microsoft has provided mitigation strategies to help protect affected systems while a comprehensive patch is being developed. Organizations are urged to apply these mitigations promptly and monitor for unusual activity. This incident underscores the persistent threat of zero-day vulnerabilities in critical enterprise software.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-exchange-zero-day-flaw-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Chrome 148 Update—Critical Bugs Patched",
+            "title": "Google Releases Chrome 148 Update to Patch Critical Vulnerabilities",
+            "content": "Google has released an update for Chrome, version 148, addressing critical vulnerabilities including use-after-free bugs in various browser components. These security flaws could allow attackers to execute arbitrary code or cause denial of service, posing a threat to millions of users worldwide. The update is part of Google's ongoing effort to enhance browser security and protect users from potential exploits. Chrome users are strongly encouraged to update to the latest version immediately to safeguard their systems. This update highlights the importance of regular software maintenance and vigilance against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-148-update-patches-critical-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Cisco SD-WAN Zero-Day—Sixth Exploited This Year",
+            "title": "Cisco Patches Sixth SD-WAN Zero-Day Vulnerability Exploited in 2026",
+            "content": "Cisco has patched a zero-day vulnerability in its SD-WAN software, tracked as CVE-2026-20182, marking the sixth such exploit this year. The vulnerability was used in targeted attacks by a sophisticated threat actor identified as UAT-8616. This flaw could allow attackers to gain unauthorized access to network resources, posing a significant threat to organizations relying on Cisco's SD-WAN for secure connectivity. Cisco has released updates to address the issue, and administrators are urged to apply these patches immediately. This incident highlights the ongoing challenges in securing complex network infrastructures against advanced persistent threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-patches-another-sd-wan-zero-day-the-sixth-exploited-in-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
             "headline": "Big Tech Battles Canada Over Encryption Bill",
             "title": "Big Tech Opposes Canada's Proposed Encryption Legislation",
             "content": "Major technology companies are pushing back against a proposed Canadian bill that could mandate backdoor access to encrypted communications. The legislation aims to enhance law enforcement capabilities but has raised significant privacy and security concerns among tech giants like Apple and Google. Critics argue that weakening encryption could expose users to increased cyber threats and undermine trust in digital services. This debate comes amid heightened global scrutiny of encryption practices, as governments seek more control over digital communications. Security professionals should monitor developments closely, as the bill's outcome could set a precedent affecting international encryption standards.",
@@ -83,70 +137,61 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-critical-sd-wan-flaw-exploited-in-zero-day-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "OpenAI Breach—TanStack Attack Compromises Employee Devices",
-            "title": "OpenAI Confirms Security Breach in TanStack Supply Chain Attack",
-            "content": "OpenAI has confirmed that two of its employees' devices were compromised in the recent TanStack supply chain attack. This breach affected hundreds of npm and PyPI packages, prompting OpenAI to rotate code-signing certificates as a precautionary measure. The attack underscores the vulnerabilities inherent in software supply chains and the need for robust security practices. Organizations relying on affected packages should review their dependencies and apply necessary updates. This incident highlights the broader trend of supply chain attacks targeting critical software ecosystems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/openai-confirms-security-breach-in-tanstack-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Pwn2Own Berlin 2026—$523K Awarded for 24 Zero-Days",
-            "title": "Windows 11 and Microsoft Edge Hacked at Pwn2Own Berlin 2026",
-            "content": "Security researchers at Pwn2Own Berlin 2026 successfully exploited 24 unique zero-day vulnerabilities, earning $523,000 in cash awards. Among the targets were Windows 11 and Microsoft Edge, highlighting ongoing security challenges in widely used software. The competition serves as a critical platform for uncovering and addressing vulnerabilities before they can be exploited in the wild. Participants demonstrated sophisticated techniques, emphasizing the need for continuous security improvements. Organizations should stay informed about disclosed vulnerabilities and apply patches promptly to mitigate risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/windows-11-and-microsoft-edge-hacked-on-first-day-of-pwn2own-berlin-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Cisco SD-WAN Flaw—Critical Auth Bypass Exploited in Attacks",
-            "title": "Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited",
-            "content": "Cisco has released updates to address a critical authentication bypass vulnerability in its Catalyst SD-WAN Controller, tracked as CVE-2026-20182. This flaw, with a CVSS score of 10.0, has been exploited in limited attacks, allowing unauthorized access to administrative functions. Organizations using affected Cisco products should apply the updates immediately to secure their networks. This vulnerability highlights the importance of timely patch management and vigilance against emerging threats. Cisco's proactive response aims to mitigate potential impacts on its customers' network security.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Fragnesia Exploit Elevates Linux Threat—Patch Urgently",
-            "title": "Linux Kernel Vulnerability Fragnesia Enables Root Privilege Escalation",
-            "content": "A critical vulnerability, CVE-2026-46300, dubbed Fragnesia, has been identified in the Linux kernel, allowing attackers to escalate privileges to root. This flaw is akin to the recent Dirty Frag and Copy Fail exploits, posing a significant risk to systems running affected Linux distributions. The vulnerability enables malicious actors to execute arbitrary code with root privileges, potentially compromising the entire system. As Linux distributions rush to release patches, administrators are urged to apply updates immediately to mitigate potential attacks. This incident underscores the ongoing challenges in securing open-source software against sophisticated threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-linux-kernel-vulnerability-fragnesia-allows-root-privilege-escalation/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Mythos Shines in Code Audits—Struggles in Exploit Validation",
-            "title": "Mythos Excels in Vulnerability Discovery, Falls Short in Exploit Validation",
-            "content": "Mythos, a tool designed for vulnerability discovery, has demonstrated exceptional capabilities in source code audits, reverse engineering, and native-code analysis. However, independent benchmarking reveals its exploit validation and reasoning capabilities are inconsistent, limiting its effectiveness in comprehensive security assessments. While Mythos is a valuable asset for identifying potential vulnerabilities, security professionals should be cautious about relying solely on it for exploit validation. This highlights the need for a multifaceted approach to vulnerability management, combining tools with human expertise to ensure robust security defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/mythos-proves-potent-in-vulnerability-discovery-less-convincing-elsewhere/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "PraisonAI Auth Bypass Exploited Within Hours—Immediate Action Needed",
-            "title": "PraisonAI CVE-2026-44338 Auth Bypass Exploited Hours After Disclosure",
-            "content": "Within four hours of its public disclosure, threat actors began exploiting CVE-2026-44338, a critical authentication bypass vulnerability in PraisonAI. This open-source multi-agent orchestration framework is now at risk, with a CVSS score of 7.3 indicating high severity. The flaw arises from missing authentication checks, allowing unauthorized access and control over affected systems. Organizations using PraisonAI should implement immediate security measures, including patching and enhanced monitoring, to prevent potential breaches. This rapid exploitation highlights the importance of swift response to vulnerability disclosures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/praisonai-cve-2026-44338-auth-bypass.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 08 2026",
-            "headline": "Google AI Search Enhances Source Transparency—Citations Boost Credibility",
-            "title": "Google AI Search to Enhance Source Citations for Greater Transparency",
-            "content": "Google has announced a significant update to its AI search capabilities, focusing on enhancing transparency by linking more sources in AI-generated overviews. This move aims to address concerns about the reliability and verifiability of AI-generated content. By providing direct citations, Google seeks to improve user trust and ensure that information is traceable to credible origins. This update is part of a broader trend in AI development emphasizing accountability and transparency in AI outputs. Professionals relying on AI for research and decision-making should note the improved ability to verify information directly from the source. This development underscores the growing importance of transparency in AI-driven technologies.",
+            "date": "May 13 2026",
+            "headline": "Altman Faces Allegations of Deception at OpenAI Trial",
+            "title": "Sam Altman Confronts Accusations of Dishonesty in OpenAI Court Proceedings",
+            "content": "Sam Altman, CEO of OpenAI, faced allegations of dishonesty during a high-profile trial concerning his leadership and control over the AI research company. The trial, which has drawn comparisons to Elon Musk's contentious leadership style, scrutinizes Altman's handling of OpenAI's strategic direction and governance. The proceedings have raised questions about the transparency and trustworthiness of AI leadership, impacting investor confidence and public perception. This trial is pivotal as it coincides with significant developments in AI governance and ethics, emphasizing the need for accountability in tech leadership. Stakeholders are advised to monitor the trial's outcomes for potential shifts in AI industry dynamics.",
             "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Anthropic Challenges Microsoft, OpenAI in AI Agent Control",
+            "title": "Anthropic Enters AI Agent Control Plane Battle Against Industry Giants",
+            "content": "Anthropic is making strategic moves to challenge Microsoft and OpenAI in the enterprise AI agent control plane market. According to VB Pulse data, while Microsoft and OpenAI currently lead in agent orchestration, Anthropic has secured a measurable foothold, signaling a broader competition over AI infrastructure control. This development shifts the focus from AI model superiority to the orchestration of AI agents, which is crucial for enterprise applications. Organizations relying on AI agents should evaluate their infrastructure strategies to ensure alignment with evolving industry standards and competitive dynamics. The outcome of this competition could redefine enterprise AI deployment strategies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/claudes-next-enterprise-battle-is-not-models-its-the-agent-control-plane",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "YouTube Expands AI Deepfake Detection to All Adults",
+            "title": "YouTube's AI Likeness Detection Tool Now Available to All Adult Users",
+            "content": "YouTube has expanded its AI-powered deepfake detection tool to all users over the age of 18, allowing individuals to scan for potential deepfakes of themselves on the platform. This tool employs a selfie-style facial scan to identify and monitor lookalikes, enhancing personal privacy and security. The expansion aims to combat the growing threat of deepfakes, which can be used for misinformation and identity theft. Users are encouraged to utilize this feature to safeguard their digital identities and report any suspicious content. This move underscores YouTube's commitment to leveraging AI for user protection and content integrity.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/931884/youtube-likeness-detection-ai-deepfake-expansion-all-adults",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "ArXiv Cracks Down on AI-Generated Research Errors",
+            "title": "ArXiv to Ban Researchers for Submitting AI-Generated \"Slop\" Papers",
+            "content": "ArXiv, a leading platform for preprint academic research, has announced a new policy to ban researchers who submit papers containing unverified AI-generated content. This decision targets submissions with \"incontrovertible evidence\" of unchecked large language model (LLM) outputs, such as hallucinated references or irrelevant meta-comments. The move aims to maintain the quality and credibility of academic publications amidst the increasing use of AI in research. Researchers are advised to rigorously validate AI-generated content before submission to avoid penalties. This policy highlights the challenges of integrating AI into academic research and the need for stringent quality controls.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/science/931766/arxiv-ai-slop-ban-researchers",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "OpenAI Trial Ends Amid Trust Concerns in AI Leadership",
+            "title": "Musk v. Altman Trial Concludes with Focus on AI Leadership Trust",
+            "content": "The trial between Elon Musk and Sam Altman over OpenAI's leadership has concluded, centering on the critical issue of trust in AI governance. The proceedings questioned whether current AI leaders can be trusted to manage the ethical and strategic direction of AI technologies. This trial's conclusion coincides with SpaceX's impending IPO, which could be one of the largest in U.S. history, further spotlighting Musk's influence in tech. The outcome may influence investor sentiment and regulatory scrutiny in the AI sector. Observers should consider the trial's implications for future AI governance and leadership accountability.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/the-openai-trial-wraps-up-and-the-musk-founder-machine-keeps-spinning/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "OpenAI Restructures Leadership to Focus on AI Agents",
+            "title": "OpenAI Reorganizes Executive Team to Strengthen AI Agent Strategy",
+            "content": "OpenAI has announced a significant reorganization of its executive team, appointing company president Greg Brockman as the head of all product-related initiatives. This restructuring aligns with OpenAI's strategic focus on AI agents, which are central to the company's product strategy for the year. The reorganization aims to streamline operations and enhance the development of AI agent technologies. Industry professionals should note this shift as OpenAI intensifies its efforts to lead in the competitive AI agent market. This move reflects broader trends in AI development, emphasizing the importance of efficient leadership and strategic alignment.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Raindrop AI has released \"Workshop,\" an open-source tool under the MIT License, enabling developers to debug and evaluate AI agents locally. This tool addresses a critical need for enhanced observability in the AI development process, allowing for more precise troubleshooting and performance analysis. Workshop supports a range of AI models and integrates seamlessly with existing development environments, offering a robust solution for developers seeking to optimize AI agent functionality. This launch reflects the industry's shift towards more developer-centric tools, emphasizing transparency and control in AI workflows.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/technology/developers-can-now-debug-and-evaluate-ai-agents-locally-with-raindrops-open-source-tool-workshop",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Cisco's Grieco: Agent Authorization Flaws Worsen Security Risks",
-            "title": "Cisco's Grieco Highlights Critical Flaws in Agent Authorization Systems",
-            "content": "Anthony Grieco, Cisco's SVP and chief security and trust officer, has raised alarms over the increasing frequency of rogue agent incidents affecting Cisco's clientele. In an exclusive interview at RSAC 2026, Grieco emphasized that agent authorization systems are fundamentally flawed, with authentication bypasses exacerbating the issue. These vulnerabilities pose significant risks to enterprise security, potentially leading to unauthorized access and data breaches. Organizations are urged to reassess their authorization protocols and implement robust security measures to mitigate these threats. Grieco's insights highlight the urgent need for improved security frameworks in agent-based systems.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/enterprises-verify-agents-identity-cannot-control-authorization-cisco-rsac-2026",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Musk vs. Altman: Jury to Decide Tech's Biggest Case",
-            "title": "Jury to Decide Outcome in Elon Musk vs. Sam Altman Court Case",
-            "content": "The highly anticipated court case between tech titans Elon Musk and Sam Altman is set to be decided by a jury, marking one of the most significant legal battles in the tech industry this year. The case centers around allegations of intellectual property infringement and competitive practices, with potential implications for AI development and business strategies. As the trial unfolds, industry stakeholders are closely monitoring the proceedings for insights into legal precedents that could shape future tech disputes. The outcome may influence corporate governance and innovation strategies across the tech sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Trump Seeks Tech Titans' Aid in Xi Summit—Chip Policy at Stake",
-            "title": "Trump Enlists Tech Leaders for Crucial Xi Summit on Chip Restrictions",
-            "content": "In a strategic move, former President Donald Trump has called upon tech leaders including Tim Cook, Jensen Huang, and Elon Musk to attend a pivotal summit with Chinese President Xi Jinping. The meeting could compel Trump to reconsider his stance on semiconductor export restrictions and Taiwan policy. The U.S. has been enforcing stringent chip export controls to curb China's technological advancements, impacting global supply chains. This summit aims to address these tensions, with potential implications for the tech industry and international relations. Stakeholders in semiconductor and tech sectors should monitor developments closely as policy shifts could affect market dynamics and geopolitical alliances.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "App Development Revolution—Users Gain Control Over Software Design",
-            "title": "Democratizing Software: Users to Customize Apps Beyond Developer Constraints",
-            "content": "The era of rigid software design is nearing its end as new technologies empower users to customize applications beyond the original developer's constraints. Historically, users have been confined to the features and designs provided by software creators. However, emerging platforms now allow for unprecedented user control, enabling personalized app experiences tailored to individual needs. This shift is poised to disrupt traditional software development models, offering developers new opportunities to engage with users in more dynamic ways. Professionals in software development should explore these platforms to stay competitive and meet evolving user demands.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/928905/vibe-code-personal-software-revolution",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "OpenAI Strengthens Security Post-TanStack Supply Chain Attack",
-            "title": "OpenAI's Proactive Measures Following TanStack Supply Chain Breach",
-            "content": "OpenAI has detailed its response to the TanStack \"Mini Shai-Hulud\" supply chain attack, which compromised npm packages and posed a risk to macOS users. The attack exploited vulnerabilities in package signing certificates, prompting OpenAI to enhance its security protocols. Affected users must update OpenAI applications by June 12, 2026, to mitigate risks. This incident underscores the growing threat of supply chain attacks in software ecosystems. Developers and organizations should prioritize securing their software supply chains and ensure timely updates to protect against similar threats.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
             "relatedResources": []
         }
     ],
@@ -358,6 +358,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-42897",
+            "dateAdded": "May 15, 2026",
+            "vendor": "Microsoft Microsoft",
+            "description": "Microsoft Exchange Server contains a cross-site scripting vulnerability during web page generation in Outlook Web Access and when certain interaction conditions are met, arbitrary JavaScript can be ex",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42897",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-20182",
             "dateAdded": "May 14, 2026",
