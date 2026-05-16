@@ -1,6 +1,6 @@
 {
   "vendor": "OpenPhish",
-  "lastUpdated": "2026-05-16T15:19:03.248441+05:30",
+  "lastUpdated": "2026-05-16T19:24:07.922134+05:30",
   "totalCount": 300,
   "displayedCount": 300,
   "isCapped": false,
@@ -8,4502 +8,4502 @@
   "iocs": [
     {
       "type": "url",
-      "indicator": "hxxps://wavellen[.]github[.]io/Microsoft-Clone-Home-Page",
+      "indicator": "hxxp://www[.]bet73019[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://restoremycreditreport[.]com/bniyycir/dfsj",
+      "indicator": "hxxp://www[.]bet73066[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://nycgyroking[.]com/",
+      "indicator": "hxxp://m[.]imtoken-chinese[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://scotiaonlinebank[.]vercel[.]app/signinfolder/login[.]html",
+      "indicator": "hxxps://www[.]imtoken-chinese[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
-      "campaign": "Financial Phishing"
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
+      "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://osmconsultancy[.]com/sd/er/fe/fsa/sdf/179/",
+      "indicator": "hxxp://wap[.]imtoken-chinese[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://pay-cashapp[.]com/",
+      "indicator": "hxxps://caribemexico[.]com/[.]accountingspreadsheet/docusign[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://qrco[.]de/bgmQxO",
+      "indicator": "hxxps://www[.]roblox[.]et/communities/6946372401/Avatar-Designers",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://xformnewzdnalyan[.]highway[.]biz[.]id/",
+      "indicator": "hxxp://www[.]betffff[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://xnindodlyandanaa[.]safaather[.]biz[.]id/",
+      "indicator": "hxxp://www[.]betwwww[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://perfects10drywall[.]com/",
+      "indicator": "hxxp://www[.]xpjzz[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://pessoleldept[.]com/?r=edbd98b8-9ecd-450f-9654-12c624da270c&rg=eu",
+      "indicator": "hxxp://www[.]xpjll[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://survey[.]refassured[.]com/mEkpOLRB",
+      "indicator": "hxxp://www[.]xpjuu[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://xyfvvfyy[.]elementor[.]cloud/AA/A/AR/ES/argentina/ar/ES9D303ESS/ESS4Z3499SES/82CFGU2554/index[.]html",
+      "indicator": "hxxp://www[.]xpjvv[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://pnelcds[.]ezzzybos[.]us/",
+      "indicator": "hxxp://www[.]dilliverythyme[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://verifyportal-edocavailableo1e2c2b4[.]buddyl[.]workers[.]dev/",
+      "indicator": "hxxp://whatspp[.]icu/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreigdm2txbgx2janmzdmdnezvdfa7i5kiajzltxpx7tj5nvjxikqvhq[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxps://www[.]roblox[.]com[.]bn/games/89469502395769/Kick-a-Lucky-Block?privateServerLinkCode=31931273047850503174984411075545",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreigshati7dqqrv7pcc2i3a57areswxppbtjq5c4df3527scof46bhy[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxps://rashithakoppurouthu[.]github[.]io/amazonclone/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreiekxbe276h45arvmn4phimwdoqhmapypu56rkjcbhibrwfmhm3lxe[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxp://esyun25[.]github[.]io/UFJ/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreifjwfze2ce74zbj6xilrzf3wixlub5w7ixt2iofzkd72vtndj7c2a[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxps://ktayyaba302-stack[.]github[.]io/amazon-clone/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://tagssemparar[.]com/",
+      "indicator": "hxxps://ahmed-bytes[.]github[.]io/login-demo",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreifdr7lz6qv44cqosz75kwam7x6gta3izhq5vqxyyeharddpacresi[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxp://m[.]tica-wx[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreihnxifzmjyq7ateafxv5tk2ref4yuo6d4k3jguxwgjpgrauz23mcq[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxps://ccne-hbfkg4d3aweycth0[.]z03[.]azurefd[.]net/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]rktpe522666[.]shop/",
+      "indicator": "hxxps://verificar-emailmxx[.]iceiy[.]com/?i=1",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://connect-hub[.]partner-programhub[.]com/",
+      "indicator": "hxxps://bgta-cy3si[.]sevalla[.]page/bancolombia",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]roblotx[.]co/share?code=17193233448607162638584389087070&type=Profile&source=ProfileShare&gameid=13379208636",
+      "indicator": "hxxps://www[.]robiox[.]com[.]gr/users/1062443811/profile",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://messenger-three-azure[.]vercel[.]app/",
+      "indicator": "hxxps://www[.]algocompliance[.]co/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreia7tn2zkgorgvqihnjxfmqpvrekdrhs5mh5ppffpuyp43opdkrar4[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxp://mett-amuske-olglin[.]godaddysites[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://b35aaa[.]com/fish/197",
+      "indicator": "hxxps://www[.]agent-wg[.]shop/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://b35aaa[.]com/fish/61",
+      "indicator": "hxxps://meinerechnungen[.]flazio[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]to[.]lk/AGdxsV/",
+      "indicator": "hxxps://sunrise-rechnung[.]flazio[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://a[.]okwokw[.]de/",
+      "indicator": "hxxps://engrmansoor304[.]github[.]io/Amazon-Web-Clone/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://p[.]dongbeilaobo[.]com/www/",
+      "indicator": "hxxp://fibercom-laboratory[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://ninshavu-web[.]github[.]io/FB-Old/",
+      "indicator": "hxxp://www[.]amazshnd[.]lat/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]roblox[.]et/users/7836461843/profile",
+      "indicator": "hxxp://amp[.]padisahbett[.]co/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]roblox[.]et/games/920587237/Adopt-Me?privateServerLinkCode=46645366241997075045841019318178",
+      "indicator": "hxxp://throbbing-hill-724e[.]kwugolimcitctmxikwunoej[.]workers[.]dev/meta-loginaccount/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://confirm-address-changing[.]vercel[.]app/register/",
+      "indicator": "hxxps://payipay[.]cfd/jp",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://janataintgroup[.]com/lisacompany",
+      "indicator": "hxxp://galabet[.]girisler-2026[.]vip/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://dpd[.]cxrmvw[.]cfd/com/",
+      "indicator": "hxxps://www[.]tomaskaraba[.]com/category/news/page/9/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]myloginprofile[.]com/axisbank/authentication/userDetails/auth[.]php",
+      "indicator": "hxxps://roblox[.]et/communities/4718596343/KittyWalker",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
-      "campaign": "Financial Phishing"
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
+      "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://s[.]team-lj[.]cc/pqw/ouqw/qwiw-sows/",
+      "indicator": "hxxps://engrmansoor304[.]github[.]io/netflix-clone/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://dpd[.]fxqtrm[.]cfd/com/",
+      "indicator": "hxxp://krasnodar-nextrehab[.]ru/specialists/sunbsadman/yattscott",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://wetrsn[.]iceiy[.]com/indexupdted[.]html",
+      "indicator": "hxxp://m[.]galabet-guncelqiris[.]vip/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://lgdxt-kbmb-m5yy[.]c-0ijbhkyh[.]workers[.]dev/l/ROITgEM910Y/",
+      "indicator": "hxxp://tr[.]galabet-2026-giris-adresiniz[.]org/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://mfacebookk[.]com[.]vn/timnguoinaygap14052026a",
+      "indicator": "hxxp://information[.]axa-benefits[.]com/form/734bbcc2d0874e0ebf838d09bd8c6d05/dc824aaf4ca2946ad96de243b25474d73",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://amex-doc-collection[.]idmission[.]com/es-mx/soporte/programas-de-tarjeta/journey/begin?name=JOSUE&PCN=2026135TM00066MXN&amexCardId=gold_rcp&jobId=019e2c3f-cb26-600c-1b3a-1468fed0c9ec",
+      "indicator": "hxxp://information[.]axa-benefits[.]com/i/dc824aaf4ca2946ad96de243b25474d73",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://amex-doc[.]short[.]gy/BQuzdr",
+      "indicator": "hxxp://galabet[.]adresii[.]vip/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://mfacebock[.]com[.]vn/can-tim-gap-nguoi-nay-ngay-15-thang-05-nam-2026",
+      "indicator": "hxxp://galabetgiris[.]org/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://roblox[.]com[.]bi/users/936669441272/profile",
+      "indicator": "hxxp://tr[.]galabetguncelgirisadresi[.]icu/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://superofertasdalu[.]netlify[.]app/",
+      "indicator": "hxxp://galabet[.]turkiyeresmi[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meishijia[.]pages[.]dev/",
+      "indicator": "hxxp://tr[.]galabet6[.]vip/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://confidentialitydocsignpreviewhbnz45h[.]pages[.]dev/",
+      "indicator": "hxxp://tr[.]galabet7[.]vip/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://re-netlfix[.]com/captcha[.]php",
+      "indicator": "hxxps://ldrsimnxcg9[.]rodric05[.]workers[.]dev/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://effortless-unicorn-56ea7a[.]netlify[.]app/",
+      "indicator": "hxxps://kiranbuilds[.]github[.]io/netflix-website-design/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://dpd[.]lqvzn-ie[.]link/track/",
+      "indicator": "hxxps://jeona36[.]github[.]io/amazon-clone-js/checkout[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://ejy[.]zex[.]mybluehostin[.]me/wp-admin/Santander/santa2/page/login[.]php",
+      "indicator": "hxxps://robinhood-desk[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://midasbuy-markets[.]topup-mobiles[.]com/",
+      "indicator": "hxxp://p210g[.]xyz/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://checkfort[.]top/",
+      "indicator": "hxxps://www[.]communitypoprefs[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]frtcheck[.]top/",
+      "indicator": "hxxps://duyenbt[.]com/mailbox",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]forthex[.]top/",
+      "indicator": "hxxp://duyenbt[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://tarvex[.]top/",
+      "indicator": "hxxp://www[.]700685[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meet-googles[.]com/",
+      "indicator": "hxxps://htttps-www-roblox[.]com/login?returnUrl=110995730",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://vilario[.]ir/Landing[.]html",
+      "indicator": "hxxp://www[.]shopee-pusat1212[.]blogspot[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://gmeet[.]authroad[.]com/",
+      "indicator": "hxxps://htttps-www-roblox[.]com/charts",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://g2lle-emeet843542456789262421[.]pages[.]dev/",
+      "indicator": "hxxps://yarelosa[.]github[.]io/instagram/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meet-goooglew48938395878[.]pages[.]dev/",
+      "indicator": "hxxps://lomfi-lotra-biz-rentra-dokli-sp19ct3bur[.]pages[.]dev/heartily_welcome?welcome=1804942259817696&id=1804942259817696&page_name=Everman%20ISD",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meet-gooogle-us6764848955945[.]pages[.]dev/",
+      "indicator": "hxxp://www[.]yh2513[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meet-googlee7563454656[.]pages[.]dev/",
+      "indicator": "hxxps://www[.]robloxt[.]cv/users/559211103/profile",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meet-gooogle-us7846597567673[.]pages[.]dev/",
+      "indicator": "hxxps://p[.]dongbeilaobo[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meet-gooogle-us76735785946[.]pages[.]dev/",
+      "indicator": "hxxps://ec2-100-24-254-151[.]compute-1[.]amazonaws[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meet-googlee7823629056[.]pages[.]dev/",
+      "indicator": "hxxp://noorbloach[.]github[.]io/tiktokcoins",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meet-googlee46347975696[.]pages[.]dev/",
+      "indicator": "hxxp://shokofee[.]github[.]io/tiktok-coin-page",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meet-googlee4567898089[.]pages[.]dev/",
+      "indicator": "hxxps://robloxt[.]cv/users/526531808/profile",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meet-gooogle-us65783389343989[.]pages[.]dev/",
+      "indicator": "hxxp://www[.]confirm-address-changing[.]vercel[.]app/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://m33t-eeuugogole8537897809[.]pages[.]dev/",
+      "indicator": "hxxp://www[.]39apm[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://goglle-emeet83862847355[.]pages[.]dev/",
+      "indicator": "hxxps://meta-id17616[.]invoice-partner[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meet-googlee463446729[.]pages[.]dev/",
+      "indicator": "hxxps://meta-id17615[.]invoice-partner[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meet-gooogle-us65745874789[.]pages[.]dev/",
+      "indicator": "hxxps://t-mobile[.]zmlnec[.]top/pay?Xlh=EYdJn?bZK=7LEtS",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meet-gooogle-us767496537936[.]pages[.]dev/",
+      "indicator": "hxxps://t-mobile[.]znhusm[.]top/pay?XSF=XrTP8?kbO=5fA6X",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://g2lle-emeet84354258763ew[.]pages[.]dev/",
+      "indicator": "hxxps://t-mobile[.]ycgusr[.]top/pay?PeQ=ybHH6?ojV=YqBc1",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meet-googlee767585876[.]pages[.]dev/",
+      "indicator": "hxxps://t-mobile[.]zwysti[.]top/pay?jqE=n0T40?Jsf=NYn5f",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bill[.]remote-otp[.]com/portal-access/verifica/documento?rid=pTlu4xf",
+      "indicator": "hxxps://t-mobile[.]ypbgdh[.]top/pay?DAN=OJYmI?ono=ixUus",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://a-atendimentonlineportal[.]shop/",
+      "indicator": "hxxps://streamcapably[.]com/index[.]php",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://p-iniciaratendimentonline[.]shop/",
+      "indicator": "hxxps://t-mobile[.]zrayfd[.]top/pay?nEW=LFGX2?KAU=vJYB1",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://p-portaldoatendimentoonline[.]shop/",
+      "indicator": "hxxps://t-mobile[.]zxbwga[.]top/pay?PMN=sskxa?PJH=B5Bjf",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://c-consultarnoatendimentobr[.]shop/",
+      "indicator": "hxxps://t-mobile[.]zgvsnd[.]top/pay?sfP=32hRg?FJA=bcQn2",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://c-consulteaquiportal[.]shop/",
+      "indicator": "hxxps://20-251-144-161[.]cprapid[.]com/eu/track[.]php?5yj4fxutlyy7s8dz7nj5",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://i-iniciarseuatendimento[.]shop/",
+      "indicator": "hxxps://20-251-144-161[.]cprapid[.]com/eu/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://p-iniciaratendimentobrasil[.]shop/",
+      "indicator": "hxxps://coteaqui[.]planosparavc[.]com[.]br/consorciocx/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://c-consulteagorabrasil[.]shop/",
+      "indicator": "hxxp://www[.]geodnetcompliance[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://p-iniciaratendimentonlinebrasil[.]shop/",
+      "indicator": "hxxps://www[.]roblox[.]com[.]et/users/191896003627/profile",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://p-portaldoatendimentohoje[.]shop/",
+      "indicator": "hxxps://copilot[.]028426[.]com/c35c9f/2b8db1cc-b068-4e49-933e-ca36cdd66b41",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://p-portaldoatendimentobrasil[.]shop/",
+      "indicator": "hxxps://www[.]oydyui[.]top/?iYE=dlH",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://i-iniciarseuatendimentobrasil[.]shop/",
+      "indicator": "hxxps://vmi3235429[.]contaboserver[.]net/tkdp2/index[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://p-portaldoatendimento[.]shop/",
+      "indicator": "hxxp://www[.]facebook-1ogin[.]duckdns[.]org/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://c-consulteaqui[.]shop/",
+      "indicator": "hxxp://information[.]axa-benefits[.]com/home/71c1c40243c84819906d90540b64ea26/d42985f5ae4cf415984adac97a3b81370",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://c-consultarnoatendimentobrasil[.]shop/",
+      "indicator": "hxxp://information[.]axa-benefits[.]com/i/d42985f5ae4cf415984adac97a3b81370",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://i-iniciarseuatendimentobr[.]shop/",
+      "indicator": "hxxp://b35aaa[.]com/sport/19",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://p-iniciaratendimento[.]shop/",
+      "indicator": "hxxp://b35aaa[.]com/casino",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://c-consultarnoatendimento[.]shop/",
+      "indicator": "hxxps://rasebitseirie-maker[.]github[.]io/Netflix-Project",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://i-iniciarseuatendimentonline[.]shop/",
+      "indicator": "hxxps://t-mobile[.]oxinsr[.]top/pay?NCi=mMP5b?sVv=L8SNs",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://mediasync[.]sh/",
+      "indicator": "hxxps://t-mobile[.]wocvsp[.]top/pay?lqO=YuX78?vLH=jlSeB",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://ye[.]dmca-desk[.]com/",
+      "indicator": "hxxps://dbs-form[.]info/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://4x[.]dmca-strike[.]com/",
+      "indicator": "hxxps://app[.]sttarkprontaresposta[.]com[.]br/storage/cgi-ent",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://yx[.]abuse-hub[.]com/",
+      "indicator": "hxxps://habertry1453[.]shop/auth",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://id240941[.]com/",
+      "indicator": "hxxps://habertry1453[.]shop/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://mediasync[.]cv/",
+      "indicator": "hxxp://aicc108-demo[.]pages[.]dev/title/80238738[.]html/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://dmcatracker[.]com/",
+      "indicator": "hxxps://zyexx[.]com/c8b0b71ce670a345a0p97f44a91d3ccdbcd1[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://yc[.]dmca-scan[.]com/",
+      "indicator": "hxxp://register30[.]agency-partner-management[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t[.]mediasync[.]one/",
+      "indicator": "hxxps://cakto[.]app/7Tm34cP/?affiliate=SdGmu2Xt",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://c1[.]strike-verify[.]com/",
+      "indicator": "hxxp://www[.]ngsports-tiyu[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://eb[.]support-dmca[.]click/",
+      "indicator": "hxxps://t-mobile[.]vzimgd[.]top/pay?qzH=c5tuv?ZoA=2pnB2",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://og[.]id240941[.]icu/",
+      "indicator": "hxxps://t-mobile[.]wqgazi[.]top/pay?zrv=mo8ro?gGf=cGMLJ",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://oe[.]id240941[.]com/",
+      "indicator": "hxxps://lcloud[.]com-appleid[.]com/static/pass_map2024/script/code6[.]php?auth=bd0b9&ID=&mode=iPhone+16+Pro+Max",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://3j[.]mediasync[.]blog/",
+      "indicator": "hxxp://acc[.]partner-credit-submission[.]com/__;!!Bt8RZUm9aw!5t7lF5Li5nfeDHSbbwOxmQgLod6rt[.][.][.]",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dmca-notify[.]my/",
+      "indicator": "hxxp://vercel7c0d7509f3a41bdd[.]vercel[.]app/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://yf[.]eco-gear[.]club/",
+      "indicator": "hxxp://991[.]1kes[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://2n[.]dmca-notify[.]my/",
+      "indicator": "hxxp://my-site-108633-104003[.]weeblysite[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://as[.]strikeverify[.]com/",
+      "indicator": "hxxp://gemini[.]oracle[.]gyronee[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t[.]dmca-check[.]com/",
+      "indicator": "hxxp://c[.]3656vip4726[.]cc/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://4e[.]sweeply[.]agency/",
+      "indicator": "hxxp://netflix-clone-fff8b[.]web[.]app/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://dmca-notify[.]xyz/",
+      "indicator": "hxxp://bafybeifj7ml3mxg7ubs72fupwmnabu6sx7bbtwqsh6isqpbviyw6alwv4m[.]ipfs[.]dweb[.]link/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://57[.]dmca-notify[.]ink/",
+      "indicator": "hxxp://bt-101437[.]weeblysite[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://bs[.]dmca-strike[.]works/",
+      "indicator": "hxxps://confirm-address-changing[.]vercel[.]app/landing",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://6c[.]dmca-notify[.]xyz/",
+      "indicator": "hxxps://confirm-address-changing[.]vercel[.]app/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://5o[.]dmca-notify[.]top/",
+      "indicator": "hxxps://dpd[.]bmvxtrq[.]cyou/com",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://7e[.]dmca-strike[.]casa/",
+      "indicator": "hxxps://www[.]hffjdf[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://8n[.]dmca-notify[.]rest/",
+      "indicator": "hxxps://pandoraconstruction[.]com/artcraftmanagement",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://dmca-notify[.]click/",
+      "indicator": "hxxps://myallseasonsinsulation[.]com/artcraft/management[.]html[.]php",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://1t[.]abuse-desk[.]com/",
+      "indicator": "hxxps://support-acctek[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]dmcastrike[.]com/",
+      "indicator": "hxxps://aumentosim001[.]s3[.]us-east-005[.]backblazeb2[.]com/aumento[.]html",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://1z[.]mediasync-cooperation[.]info/",
+      "indicator": "hxxp://nini4d[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://yj[.]sweeply[.]blog/",
+      "indicator": "hxxp://master4d[.]co/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://sweeply[.]at/",
+      "indicator": "hxxps://t-mobile[.]gigksw[.]top/pay?bhE=quYqI?DGR=zVDFb",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://66[.]dmcatracker[.]com/",
+      "indicator": "hxxp://t-mobile[.]mwuzkg[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://dmcaverify[.]com/",
+      "indicator": "hxxp://slot117login[.]net/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://strikeverify[.]com/",
+      "indicator": "hxxp://totplh[.]xyz/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://aq[.]dmca-report[.]click/",
+      "indicator": "hxxp://www[.]robiox[.]com[.]py/users/312735203713/profile/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://f8[.]strike-monitor[.]com/",
+      "indicator": "hxxp://nila777[.]net/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://7u[.]strike-check[.]com/",
+      "indicator": "hxxps://haber252[.]shop/auth",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://xw[.]mediasync[.]cv/",
+      "indicator": "hxxps://haber252[.]shop/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://nv[.]dmca[.]casa/",
+      "indicator": "hxxps://rblx[.]asia/jnUbsHK",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://7l[.]dmca-notify[.]casa/",
+      "indicator": "hxxp://www[.]cutt[.]ly/https-roblox-com-games-733884224862-Privateserver/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://bu[.]sync-creators[.]com/",
+      "indicator": "hxxps://aktifkan-fitur-danaxpay[.]susm[.]my[.]id/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://7t[.]dmca-strike[.]team/",
+      "indicator": "hxxps://t-mobile[.]htlygq[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://rw[.]dmca[.]forum/",
+      "indicator": "hxxps://t-mobile[.]fgyabx[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://cb[.]report-verify[.]com/",
+      "indicator": "hxxps://t-mobile[.]rjnpwl[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://57[.]dmca-hub[.]report/",
+      "indicator": "hxxps://t-mobile[.]jymgax[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]dpdlocoeg[.]shop/com/com",
+      "indicator": "hxxps://t-mobile[.]oyedcj[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreigui3if64yk6aopeq2kykbvsdd2opft55oafux5adfzbeajvd7vbe[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxps://t-mobile[.]ghmsjl[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreifkavk6dpo5xne7o6n274hvgi34gkefoqxdqgyy6tezqb46jyuucq[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxps://t-mobile[.]rvmggy[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreifuoxe5ui52yeaoha3vensn3jvttbrf24pr7x7encyojmyfdidvqy[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxps://t-mobile[.]frvoni[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://bafkreib2ofz55l4gjzluimk6wkhcxlj2avfmbmkjlsp442cnzirap3ckjy[.]ipfs[.]dweb[.]link/",
+      "indicator": "hxxps://t-mobile[.]mxyver[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://magazzineluiza[.]netlify[.]app/",
+      "indicator": "hxxps://t-mobile[.]kvhbqa[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://account[.]remote-otp[.]com/synchronization?rid=At9YVox",
+      "indicator": "hxxps://t-mobile[.]meydio[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoqx[.]top/com",
+      "indicator": "hxxps://t-mobile[.]szjcvg[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://ohavsholom[.]org/sec/",
+      "indicator": "hxxps://t-mobile[.]mnhofz[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://thewanderwave[.]github[.]io/Phisis",
+      "indicator": "hxxps://t-mobile[.]ntgdba[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://bdlimon063-creator[.]github[.]io/facebook[.]com/",
+      "indicator": "hxxps://t-mobile[.]walqpm[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://khankhaznavik-spec[.]github[.]io/Face-Book-Authentucate-Project/create%20new%20page/index[.]html",
+      "indicator": "hxxps://t-mobile[.]ljfocr[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id17613[.]invoice-partner[.]com/",
+      "indicator": "hxxps://t-mobile[.]khyvaw[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocaxi[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]hkgfsx[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://aicc108-demo[.]pages[.]dev/title/70301870[.]html",
+      "indicator": "hxxps://t-mobile[.]fiexat[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meta-id17614[.]invoice-partner[.]com/",
+      "indicator": "hxxps://t-mobile[.]psnkji[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]scotiaonlinebank[.]vercel[.]app/",
+      "indicator": "hxxps://t-mobile[.]rtngwv[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
-      "campaign": "Financial Phishing"
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
+      "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://facebook-1ogin[.]duckdns[.]org/",
+      "indicator": "hxxps://t-mobile[.]hsjydk[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t-mobile[.]aqyhnz[.]top/pay/",
+      "indicator": "hxxps://t-mobile[.]mspakc[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://sharepoint[.]onebrive[.]com/rel/c2VTewRqeGdjamXO1dblCjStOX3cIopC",
+      "indicator": "hxxps://t-mobile[.]ntorwy[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]wzwcrn[.]top/?bza=SMe",
+      "indicator": "hxxps://t-mobile[.]kjeqrh[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://887772225[.]it[.]com/",
+      "indicator": "hxxps://t-mobile[.]tsligx[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://bdowvip[.]com/ph/personal/",
+      "indicator": "hxxps://t-mobile[.]mkicjg[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://hrutb[.]github[.]io/MovieTask-CRUD-/",
+      "indicator": "hxxps://t-mobile[.]rvqhgm[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t-mobile[.]swjted[.]top/pay/",
+      "indicator": "hxxps://t-mobile[.]gruqkz[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoes[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]jushzn[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoed[.]shop/com/com",
+      "indicator": "hxxps://danaa-iindonesiaa[.]olgk[.]my[.]id/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://vieclamonline-shop-pee[.]com/",
+      "indicator": "hxxps://t-mobile[.]okafpv[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://sso-ca-netcoins-com-ca[.]webflow[.]io/",
+      "indicator": "hxxps://t-mobile[.]lxgndo[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocora[.]cyou/com/com",
+      "indicator": "hxxps://t-mobile[.]qyegpm[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocowm[.]cyou/com/com",
+      "indicator": "hxxps://t-mobile[.]sprftj[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocorg[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]kcpnah[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoer[.]shop/com/com",
+      "indicator": "hxxps://t-mobile[.]sjhbdv[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoed[.]cyou/com/com",
+      "indicator": "hxxps://t-mobile[.]fdrsvg[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocord[.]shop/com/com",
+      "indicator": "hxxps://t-mobile[.]wtdqxk[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://notifyhubss[.]net/dd22eb983733b3485ap8774d086252506f67[.]html",
+      "indicator": "hxxps://t-mobile[.]sdhwuz[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://chitransh27309-crypto[.]github[.]io/My-Projects/",
+      "indicator": "hxxps://t-mobile[.]qgkzxr[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id19239220[.]invoice-partner[.]com/",
+      "indicator": "hxxps://t-mobile[.]gtyjde[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://rai606[.]github[.]io/system/",
+      "indicator": "hxxps://t-mobile[.]uwqirh[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://155aes[.]senes[.]at/mining/yet2commis[.]php",
+      "indicator": "hxxps://t-mobile[.]wngakm[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocotg[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]lhxkmi[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoej[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]hxndgv[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://homeobvindenver[.]cyou/repaour/asumme/codir/",
+      "indicator": "hxxps://t-mobile[.]euvgyr[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoeg[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]hkpevd[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocora[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]htfbxv[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id17611[.]invoice-partner[.]com/",
+      "indicator": "hxxps://t-mobile[.]ggzqxa[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id17612[.]invoice-partner[.]com/",
+      "indicator": "hxxps://t-mobile[.]icmbop[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocorq[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]fdzboe[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id19239218[.]invoice-partner[.]com/",
+      "indicator": "hxxps://t-mobile[.]inztau[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocork[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]eaftdu[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoec[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]enxgaf[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocore[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]oelpwv[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoqc[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]xnvaof[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocors[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]whlbus[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocorl[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]xbtqgm[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoeh[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]huflsi[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocorm[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]gczqos[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocorn[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]qmozyd[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoth[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]fdnjsv[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocowf[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]scpiek[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocacz[.]top/com",
+      "indicator": "hxxps://t-mobile[.]oulcdb[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id17610[.]invoice-partner[.]com/",
+      "indicator": "hxxps://t-mobile[.]qcybjh[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id19239217[.]invoice-partner[.]com/",
+      "indicator": "hxxps://t-mobile[.]fagvhe[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocach[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]vhimgp[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocamq[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]hdgwxr[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocabx[.]top/com",
+      "indicator": "hxxps://t-mobile[.]umfise[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocabw[.]top/com",
+      "indicator": "hxxps://t-mobile[.]ilobxf[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://ikumarankit[.]github[.]io/amazon-clone-frontend/",
+      "indicator": "hxxps://t-mobile[.]xsetmq[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocabg[.]top/com",
+      "indicator": "hxxps://t-mobile[.]secpzf[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocamc[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]qguzjc[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocabe[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]vdtkpz[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id17607[.]invoice-partner[.]com/",
+      "indicator": "hxxps://t-mobile[.]qmggae[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocacj[.]top/com",
+      "indicator": "hxxps://t-mobile[.]vekglo[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocavn[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]rhzeyf[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocamw[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]pkjvud[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocamx[.]top/com",
+      "indicator": "hxxps://t-mobile[.]hubxji[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocanl[.]top/com",
+      "indicator": "hxxps://t-mobile[.]grfqmb[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocanz[.]top/com",
+      "indicator": "hxxps://t-mobile[.]qcggme[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocant[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]kbteod[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocavr[.]top/com",
+      "indicator": "hxxps://t-mobile[.]xsucvt[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoea[.]top/com",
+      "indicator": "hxxps://t-mobile[.]txcznd[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocaxv[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]xringu[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocaxw[.]top/com",
+      "indicator": "hxxps://t-mobile[.]rzsmpd[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocavk[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]uygolr[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t-mobile[.]walniut[.]top/pay/",
+      "indicator": "hxxps://t-mobile[.]uhjdkq[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t-mobile[.]ynpzul[.]top/pay/",
+      "indicator": "hxxps://t-mobile[.]nxdjwi[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoqm[.]top/com",
+      "indicator": "hxxp://www[.]aavecompliance[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t-mobile[.]zeiphyr[.]top/pay/",
+      "indicator": "hxxps://copilot[.]028426[.]com/c35c9f/e4e59e05-3a09-4367-9197-0ec18d774784",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t-mobile[.]zwkypm[.]top/pay/",
+      "indicator": "hxxp://roblox[.]com[.]et/communities/521834202410/shoTeRKeTu-%7C-Giveaways",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t-mobile[.]zoietic[.]top/pay/",
+      "indicator": "hxxp://t-mobile[.]avisxp[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://t-mobile[.]ytmuxn[.]top/pay/",
+      "indicator": "hxxps://fusoforte[.]com[.]br/svhnm_file",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://bagadoi101-code[.]github[.]io/Leger/",
+      "indicator": "hxxp://t-mobile[.]bkjcng[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://aicc108-demo[.]pages[.]dev/title/80238738[.]html",
+      "indicator": "hxxps://t-mobile[.]doezbg[.]top/pay?hXN=tNpcE?Tuc=Kwp5d",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://aicc108-demo[.]pages[.]dev/title/80133042[.]html",
+      "indicator": "hxxps://t-mobile[.]ckjobt[.]top/pay?IDo=KoozE?zPP=nBVrO",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://roblotx[.]co/users/3160885791/profile",
+      "indicator": "hxxps://t-mobile[.]cqfplh[.]top/pay?rBI=kr35q?Riu=d7ll1",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://ab[.]winkleoa[.]com/my1rd/kchrtd[.]html",
+      "indicator": "hxxps://cartermobilmadiun[.]com/yessolarsolution",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://hbrhh-kewy-2tqz[.]jack-0a3[.]workers[.]dev/lp/r_hMz3tujEI",
+      "indicator": "hxxps://t-mobile[.]cljnua[.]top/pay?fYu=dlS5v?ooR=zpGnt",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocorf[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]cygskn[.]top/pay?rDd=OsosR?PaM=6DUAG",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoyo[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]bwhodc[.]top/pay?JbU=QjkOB?qUs=2hjIi",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocorn[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]dbucyw[.]top/pay?jZN=puE6q?boF=F6BJ1",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocote[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]dhugft[.]top/pay?Vie=9Hw1W?DbJ=BHCqs",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoyu[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]dhugft[.]top/pay?nMl=24Inz?rmB=7HcTJ",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoen[.]cyou/com",
+      "indicator": "hxxp://t-mobile[.]dcliyk[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoea[.]cyou/com",
+      "indicator": "hxxp://t-mobile[.]ckopvf[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoyo[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]ckvrxy[.]top/pay?WHQ=s1UFP?Jwk=2xmn5",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoej[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]dcaflu[.]top/pay?LPl=eSYN2?Iku=N7iUq",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoer[.]shop/com",
+      "indicator": "hxxp://t-mobile[.]cnadkh[.]top/pay/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocory[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]cgndop[.]top/pay?zPI=luppe?ydI=13C9b",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocorw[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]buzqij[.]top/pay?hHb=foqc3?slp=5MerI",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]dpdlocoru[.]top/com",
+      "indicator": "hxxps://t-mobile[.]cjmsgx[.]top/pay?iqC=PsKpW?RnH=hGO3Q",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://websitedana[.]bantuan-resmi[.]biz[.]id/",
+      "indicator": "hxxps://t-mobile[.]athcgf[.]top/pay?PpB=AhtEw?mqZ=3g5pa",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocane[.]cyou/com",
+      "indicator": "hxxps://t-mobile[.]bqxgmj[.]top/pay?osi=HU7gm?Aol=McpSW",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://eastern247hospital[.]co[.]zw/",
+      "indicator": "hxxps://t-mobile[.]bqstzy[.]top/pay?Hwp=zRKto?sNz=GucKh",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]dpdlocabn[.]shop/com",
+      "indicator": "hxxps://t-mobile[.]brhsav[.]top/pay?rtb=ja1w7?hbf=WVakl",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://marirenono[.]help/a/",
+      "indicator": "hxxps://www[.]dpdlocoty[.]top/com",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://meta-id19239219[.]invoice-partner[.]com/",
+      "indicator": "hxxps://s4w[.]in/roblox-com-users-328195390493-profile",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id17609[.]invoice-partner[.]com/",
+      "indicator": "hxxps://www[.]robiox[.]com[.]py/users/328195390493/profile",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://yahmobilelog[.]weebly[.]com/",
+      "indicator": "hxxp://raffiahmad[.]fu11[.]biz[.]id/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://fluid-footprint-036602[.]framer[.]app/",
+      "indicator": "hxxps://vim-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://inspired-track-124107[.]framer[.]app/",
+      "indicator": "hxxps://www[.]made-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://detailed-process-086156[.]framer[.]app/",
+      "indicator": "hxxps://dream-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://qrco[.]de/bgnxKi",
+      "indicator": "hxxp://bafkreibmvluyhqkdscm56yjdmnwikelvmj52u2jxprwvnurz5ugw3babaa[.]ipfs[.]dweb[.]link/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://fi-delitby[.]cyou/8dgcrm/?ksg=gbxODq",
+      "indicator": "hxxps://prime-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://fi-delitby[.]cyou/8dgcrm/page[.]html",
+      "indicator": "hxxps://www[.]open-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://q-r[.]to/bgmQxO",
+      "indicator": "hxxps://cozy-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://l[.]ead[.]me/bgmQxO",
+      "indicator": "hxxps://high-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://l[.]ead[.]me/bgmQwN",
+      "indicator": "hxxps://beta-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://l[.]ead[.]me/bgncVF",
+      "indicator": "hxxps://www[.]real-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://024365vip[.]com/",
+      "indicator": "hxxps://www[.]enjoy-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://shopee-pusat1212[.]blogspot[.]com/?m=1",
+      "indicator": "hxxps://here-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://seducerhome-xjv7v[.]ondigitalocean[.]app/",
+      "indicator": "hxxps://www[.]choice-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://mmarquetti4-ui[.]github[.]io/cn",
+      "indicator": "hxxps://www[.]cash-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]dpdlocoed[.]cyou/com",
+      "indicator": "hxxps://www[.]sim-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]robiox[.]com[.]gr/users/4288016669/profile",
+      "indicator": "hxxp://blaze-bet365[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]clickcentral[.]site/atendimento",
+      "indicator": "hxxps://www[.]assets-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://48e934e2-f643-4e27-8f23-f14f98ce45b8-00-2j57meopmm1qg[.]worf[.]replit[.]dev/",
+      "indicator": "hxxps://www[.]max-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://meta-id17608[.]invoice-partner[.]com/",
+      "indicator": "hxxps://www[.]skill-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://sso-security[.]com/E[.]OMl9CHZAIBUI8w?=userid",
+      "indicator": "hxxps://new-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]wmsdb[.]com/",
+      "indicator": "hxxps://in-spark-bet365[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://owa-authentication[.]adjust[.]workers[.]dev/",
+      "indicator": "hxxps://www[.]what-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://tkiehthen[.]com/start[.]html",
+      "indicator": "hxxps://www[.]major-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://q[.]usdtw[.]net/jp/",
+      "indicator": "hxxps://great-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://itsuppports[.]com/?r=e2a792bd-e5fd-4b13-9da5-b8a4930b50ec&rg=eu",
+      "indicator": "hxxps://www[.]wap-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://novacontratacao[.]s3[.]us-east-005[.]backblazeb2[.]com/aumento[.]html",
+      "indicator": "hxxps://www[.]full-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://potencialextranu[.]s3[.]us-east-005[.]backblazeb2[.]com/aumento[.]html",
+      "indicator": "hxxps://www[.]with-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxp://www[.]shoshituktukrestaurant[.]com/wp-admin/Vista_Legal_Services/",
+      "indicator": "hxxp://www[.]super-bet365[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://scotiaonlinebank[.]vercel[.]app/global/en/global-site[.]html",
+      "indicator": "hxxp://www[.]mega-bet365[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
-      "campaign": "Financial Phishing"
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
+      "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://scotiaonlinebank[.]vercel[.]app/",
+      "indicator": "hxxps://www[.]your-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
-      "campaign": "Financial Phishing"
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
+      "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://jeona36[.]github[.]io/amazon-clone-js/",
+      "indicator": "hxxps://www[.]shop-bet365[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://brand-050745[.]pages[.]dev/facebook[.]com-1039454400",
+      "indicator": "hxxps://www[.]trip-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://brand-050745[.]pages[.]dev/facebook[.]com-1039454400[.]html",
+      "indicator": "hxxps://super-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://securityawareness[.]cc/landing/form/916d1b4a-b927-40a5-b9e6-abeff110bfd2",
+      "indicator": "hxxps://life-bet365[.]com[.]cn/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     },
     {
       "type": "url",
-      "indicator": "hxxps://www[.]dpdlocoei[.]cyou/com",
+      "indicator": "hxxps://toolbox-bet365[.]com/",
       "description": "Active phishing URL",
       "timestamp": "just now",
       "source": "OpenPhish",
       "sourceUrl": "https://openphish.com/",
-      "analysisTime": "2026-05-16 15:18 IST",
+      "analysisTime": "2026-05-16 19:23 IST",
       "tags": [
         "phishing",
         "live"
       ],
-      "addedAt": "2026-05-16T15:18:50.050494+05:30",
+      "addedAt": "2026-05-16T19:23:55.574422+05:30",
       "campaign": "Generic Phishing"
     }
   ]
