@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 16 2026",
+            "headline": "Microsoft Denies Azure Vulnerability—No CVE Issued",
+            "title": "Microsoft Disputes Azure Backup Vulnerability Claim, No CVE Released",
+            "content": "A security researcher has alleged that Microsoft quietly addressed a vulnerability in Azure Backup for Azure Kubernetes Service (AKS) without issuing a Common Vulnerabilities and Exposures (CVE) identifier. The researcher claims the flaw was significant, yet Microsoft maintains that the behavior was expected and that no product changes were made. This dispute highlights ongoing concerns about transparency in vulnerability disclosures. Users of Azure Backup for AKS should remain vigilant and ensure their systems are up-to-date. The incident underscores the importance of clear communication between vendors and the security community.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-rejects-critical-azure-vulnerability-report-no-cve-issued/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 16 2026",
+            "headline": "WooCommerce Checkout Skimming—Funnel Builder Exploit Active",
+            "title": "Funnel Builder Plugin Exploited to Skim WooCommerce Payment Data",
+            "content": "A critical vulnerability in the Funnel Builder plugin for WordPress is being actively exploited to inject malicious JavaScript into WooCommerce checkout pages. This exploit aims to steal payment data from unsuspecting users, posing a significant risk to e-commerce businesses using the plugin. Sansec, a cybersecurity firm, has documented the ongoing activity, urging site administrators to update their plugins immediately. The incident highlights the persistent threat of skimming attacks in the e-commerce sector. Businesses should regularly audit their WordPress installations and apply security patches promptly to mitigate risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/funnel-builder-flaw-under-active.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "OpenAI Devices Hit by TanStack Supply Chain Attack",
+            "title": "TanStack Supply Chain Attack Compromises OpenAI Employee Devices",
+            "content": "OpenAI has confirmed that two employee devices were compromised due to a supply chain attack involving the Mini Shai-Hulud worm on TanStack. Despite the breach, OpenAI assures that no user data or intellectual property was accessed or altered. The attack underscores the vulnerability of supply chains in tech environments, particularly affecting macOS systems. OpenAI has since implemented security updates to prevent further incidents. Organizations are advised to review their supply chain security measures and ensure robust endpoint protection.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "OpenAI Code Repositories Breached in TanStack Attack",
+            "title": "TanStack Attack Breaches OpenAI Code Repositories, Steals Credentials",
+            "content": "The TanStack supply chain attack has resulted in the compromise of two OpenAI employee devices, leading to the theft of credential material from OpenAI's code repositories. This breach highlights the critical nature of securing code repositories and the potential risks of supply chain vulnerabilities. OpenAI is currently investigating the extent of the breach and has taken steps to secure its systems. The incident serves as a reminder for organizations to implement stringent access controls and regularly audit their code repositories for unauthorized access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/openai-hit-by-tanstack-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Shai-Hulud Worm Source Code Released by TeamPCP",
+            "title": "TeamPCP Releases Shai-Hulud Worm Source Code, Promotes Attacks",
+            "content": "The hacking group TeamPCP has released the source code for the Shai-Hulud worm, encouraging cybercriminals to use it in supply chain attacks. The group is offering monetary rewards for successful exploits, raising concerns about the potential increase in supply chain attacks. Security experts warn that the availability of such code could lead to widespread exploitation across various industries. Organizations should enhance their security posture by monitoring for unusual network activity and implementing robust incident response plans.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/teampcp-ups-the-game-releases-shai-hulud-worms-source-code/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "TeamPCP Threatens to Leak Mistral AI Source Code",
+            "title": "TeamPCP Hackers Attempt to Sell Mistral AI Source Code",
+            "content": "The hacker group TeamPCP is threatening to leak source code from the Mistral AI project unless a buyer is found. This move highlights the ongoing threat of intellectual property theft in the tech industry. The group has not disclosed the specific contents of the code, but the threat alone poses significant risks to Mistral AI's operations and reputation. Companies are urged to bolster their cybersecurity defenses and consider implementing data encryption and access controls to protect sensitive information.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/teampcp-hackers-advertise-mistral-ai-code-repos-for-sale/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 16 2026",
             "headline": "NGINX Critical Flaw—PoC Code Released, Patch Now",
             "title": "PoC Code Released for Critical NGINX Vulnerability Patched in 2026",
             "content": "A critical vulnerability in NGINX, introduced in 2008, has been patched in both NGINX Plus and its open-source version. The flaw, which has now been publicly disclosed with proof-of-concept (PoC) code, poses significant risks to web servers using NGINX. This vulnerability could allow attackers to execute arbitrary code, potentially compromising server integrity and data. Administrators are urged to apply the latest patches immediately to mitigate potential exploitation. This development underscores the importance of timely updates in widely used software to prevent exploitation of long-standing vulnerabilities.",
@@ -28,33 +82,6 @@ const websiteContent = {
             "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-20182, a vulnerability in Cisco Catalyst SD-WAN Controller, to its Known Exploited Vulnerabilities catalog. This flaw allows attackers to gain administrative access, posing a severe threat to network security. Federal Civilian Executive Branch agencies are mandated to remediate this issue by May 30, 2026. The inclusion of this vulnerability in the KEV list underscores the critical nature of securing SD-WAN infrastructures against unauthorized access. Organizations should ensure they have applied the necessary patches to protect their networks.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "OpenAI Breached in TanStack Supply Chain Attack",
-            "title": "OpenAI Confirms Security Breach from TanStack Supply Chain Attack",
-            "content": "OpenAI has confirmed a security breach affecting two employee devices due to the TanStack supply chain attack. This incident impacted hundreds of npm and PyPI packages, prompting OpenAI to rotate code-signing certificates as a precautionary measure. The breach highlights the vulnerabilities within software supply chains, emphasizing the need for rigorous security practices. Organizations should review their dependency management processes and ensure robust security measures are in place to detect and respond to such supply chain threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/openai-confirms-security-breach-in-tanstack-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Pwn2Own Berlin 2026—$523K Awarded for 24 Zero-Days",
-            "title": "Windows 11 and Microsoft Edge Hacked at Pwn2Own Berlin 2026",
-            "content": "Security researchers at Pwn2Own Berlin 2026 earned $523,000 by exploiting 24 unique zero-day vulnerabilities, including those in Windows 11 and Microsoft Edge. This event showcases the ongoing challenges in securing widely used software platforms against sophisticated attacks. Participants demonstrated advanced techniques to bypass security measures, highlighting areas for improvement in software defenses. Organizations should stay informed about these vulnerabilities and apply patches as they become available to safeguard their systems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/windows-11-and-microsoft-edge-hacked-on-first-day-of-pwn2own-berlin-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Cisco SD-WAN Exploit—CVE-2026-20182 Hits Admin Access",
-            "title": "Cisco Catalyst SD-WAN Controller Auth Bypass Exploited for Admin Access",
-            "content": "Cisco has addressed a maximum-severity authentication bypass vulnerability, CVE-2026-20182, in its Catalyst SD-WAN Controller. This flaw, with a CVSS score of 10.0, has been exploited in limited attacks, allowing unauthorized administrative access. The vulnerability stems from weaknesses in peering authentication, underscoring the critical need for secure authentication protocols. Organizations using Cisco SD-WAN solutions should apply the latest updates to prevent potential exploitation. This incident highlights the importance of securing network infrastructure against high-severity vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html",
             "relatedResources": []
         },
         {
@@ -110,52 +137,61 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/cisco-patches-another-sd-wan-zero-day-the-sixth-exploited-in-2026/",
             "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Big Tech Battles Canada Over Encryption Bill",
-            "title": "Big Tech Opposes Canada's Proposed Encryption Legislation",
-            "content": "Major technology companies are pushing back against a proposed Canadian bill that could mandate backdoor access to encrypted communications. The legislation aims to enhance law enforcement capabilities but has raised significant privacy and security concerns among tech giants like Apple and Google. Critics argue that weakening encryption could expose users to increased cyber threats and undermine trust in digital services. This debate comes amid heightened global scrutiny of encryption practices, as governments seek more control over digital communications. Security professionals should monitor developments closely, as the bill's outcome could set a precedent affecting international encryption standards.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-big-tech-vs-canada-encryption-bill-ciscos-free-ai-security-spec-audi-app-flaws/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Exchange Server Zero-Day Exploited—Mitigations Available",
-            "title": "Microsoft Issues Mitigations for Exchange Server Zero-Day CVE-2026-42897",
-            "content": "Microsoft has released temporary mitigations for CVE-2026-42897, a zero-day vulnerability affecting Exchange Server versions 2016 and 2019. This flaw is actively exploited in the wild, allowing attackers to execute arbitrary code on vulnerable systems. The company is working on a permanent patch, but urges administrators to apply the mitigations immediately to protect their networks. This incident underscores the ongoing risks associated with legacy systems and the importance of timely updates. Organizations should review their security posture and ensure all systems are patched as soon as updates become available.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-warns-of-exchange-server-zero-day-exploited-in-the-wild/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Ransomware Breach at American Lending Center—123K Affected",
-            "title": "American Lending Center Data Breach Exposes 123,000 Individuals' Information",
-            "content": "American Lending Center has disclosed a ransomware attack that compromised the personal data of 123,000 individuals. The breach, initially detected nearly a year ago, involved unauthorized access to sensitive information, including Social Security numbers and financial details. The company has completed its investigation and is notifying affected individuals, offering credit monitoring services. This incident highlights the persistent threat of ransomware and the critical need for robust cybersecurity measures. Financial institutions are urged to review their security protocols and ensure comprehensive data protection strategies are in place.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/american-lending-center-data-breach-affects-123000-individuals/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
             "date": "May 14 2026",
-            "headline": "Trump Enlists Tech Titans for High-Stakes Xi Summit",
-            "title": "Trump Seeks Tech Leaders' Support Amidst Xi Summit Pressure on Chip Policy",
-            "content": "In a strategic move, former President Donald Trump has invited prominent tech leaders, including Tim Cook (referred to as \"Tim Apple\"), Jensen Huang, and Elon Musk, to attend a pivotal summit with Chinese President Xi Jinping. The meeting could compel Trump to reconsider his stance on semiconductor export restrictions and the sensitive issue of Taiwan. This gathering underscores the escalating tensions between the U.S. and China over technology dominance and geopolitical influence. The involvement of key industry figures highlights the potential impact on global supply chains and the tech sector. Stakeholders should monitor developments closely as they may influence international trade policies and tech market dynamics.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/",
+            "headline": "Clawdmeter—AI Usage Stats at Your Fingertips",
+            "title": "Clawdmeter Transforms Claude Code Stats into Desktop Dashboard for Developers",
+            "content": "Clawdmeter, a new open-source tool, offers AI developers a streamlined way to monitor their Claude Code usage through a compact desktop dashboard. Designed for power users, Clawdmeter provides real-time insights into coding activity, helping developers optimize their workflows and resource allocation. This tool is particularly beneficial for those managing extensive AI projects, as it allows for quick adjustments based on usage patterns. By visualizing data directly on the desktop, Clawdmeter enhances transparency and efficiency in AI development environments. Developers are encouraged to integrate Clawdmeter into their toolset to gain a competitive edge.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/14/clawdmeter-turns-your-claude-code-usage-stats-into-a-tiny-desktop-dashboard/",
             "relatedResources": []
         },
         {
             "date": "May 13 2026",
-            "headline": "OpenAI Battles TanStack Supply Chain Attack—macOS Users Must Update",
-            "title": "OpenAI Details Response to TanStack \"Mini Shai-Hulud\" Supply Chain Attack",
-            "content": "OpenAI has disclosed its comprehensive response to the TanStack \"Mini Shai-Hulud\" supply chain attack, which compromised signing certificates and targeted macOS users. The attack exploited vulnerabilities in npm packages, affecting OpenAI's application ecosystem. In response, OpenAI has fortified its security measures and urged macOS users to update their OpenAI apps by June 12, 2026, to mitigate potential risks. This incident highlights the growing threat of supply chain attacks in the software development industry. Developers should review their security protocols and ensure robust defenses against similar threats.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+            "headline": "Altman Faces Allegations—OpenAI Trial Drama Unfolds",
+            "title": "OpenAI's Sam Altman Confronts Accusations of Dishonesty in Court",
+            "content": "In a high-stakes trial, OpenAI CEO Sam Altman is under scrutiny as allegations surface regarding his truthfulness in managing the AI powerhouse. The trial, which has captured the tech industry's attention, delves into Altman's leadership style and his reaction to losing control over OpenAI, drawing comparisons to Elon Musk's management controversies. The outcome could significantly impact OpenAI's reputation and Altman's career, as stakeholders await clarity on the organization's internal dynamics. Industry professionals are advised to monitor the trial's developments, which may influence AI governance and leadership practices.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 16 2026",
+            "headline": "AI Gold Rush—Uneven Gains Across Tech Industry",
+            "title": "Disparities Emerge Amidst AI Boom, Affecting Tech Sector Dynamics",
+            "content": "The ongoing AI boom is creating a stark divide within the tech industry, with some companies reaping substantial benefits while others struggle to keep pace. This uneven distribution of success is raising concerns about the sustainability and inclusivity of AI advancements. As investment pours into AI-driven projects, smaller firms and startups face challenges in accessing resources and talent, potentially stifling innovation. Industry leaders are urged to address these disparities to ensure a balanced growth trajectory that fosters widespread technological progress. Stakeholders should consider strategic partnerships and investments to bridge the gap.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 16 2026",
+            "headline": "ArXiv Cracks Down—AI-Generated Papers Face Ban",
+            "title": "ArXiv Enforces Year-Long Ban for AI-Generated Scientific Papers",
+            "content": "ArXiv, a prominent research repository, has announced a stringent policy to ban authors for a year if they submit papers generated entirely by AI. This move aims to uphold the integrity of scientific research by curbing the careless use of large language models in academic submissions. The decision reflects growing concerns over the authenticity and reliability of AI-generated content in scholarly work. Researchers are encouraged to ensure human oversight and contribution in their submissions to avoid penalties. This policy underscores the importance of maintaining rigorous standards in scientific publishing.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 16 2026",
+            "headline": "Sony Defends AI Camera—Clarifies Misunderstandings",
+            "title": "Sony Explains AI Camera Assistant's Functionality Amid Criticism",
+            "content": "Sony has responded to criticism regarding its AI Camera Assistant on the Xperia 1 XIII, clarifying that the feature does not alter photos but offers suggestions based on lighting, depth, and subject. This clarification follows backlash from users who misunderstood the assistant's capabilities. Sony emphasizes that the AI tool aims to enhance user experience by providing real-time guidance for optimal photography. Users are advised to explore the feature's settings to fully leverage its benefits without compromising image authenticity. This incident highlights the importance of clear communication in AI product functionalities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant",
+            "relatedResources": []
+        },
+        {
+            "date": "May 16 2026",
+            "headline": "OpenAI Reshuffles—Brockman Takes Helm of Product Strategy",
+            "title": "Greg Brockman Leads OpenAI's Product Strategy Amid Organizational Changes",
+            "content": "OpenAI has appointed co-founder Greg Brockman to spearhead its product strategy, signaling a strategic shift as the company plans to integrate ChatGPT with its coding tool, Codex. This leadership change aims to streamline OpenAI's product offerings and enhance user experience by combining conversational AI with programming capabilities. The move comes as OpenAI seeks to solidify its position in the competitive AI landscape. Developers and tech leaders should anticipate new synergies between ChatGPT and Codex, potentially transforming AI-assisted coding practices. Stakeholders are encouraged to stay informed about OpenAI's evolving product roadmap.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "OpenAI has announced a significant reorganization of its executive team, appointing company president Greg Brockman as the head of all product-related initiatives. This restructuring aligns with OpenAI's strategic focus on AI agents, which are central to the company's product strategy for the year. The reorganization aims to streamline operations and enhance the development of AI agent technologies. Industry professionals should note this shift as OpenAI intensifies its efforts to lead in the competitive AI agent market. This move reflects broader trends in AI development, emphasizing the importance of efficient leadership and strategic alignment.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Runway Challenges Google—Aims to Lead in AI Video Generation",
-            "title": "Runway Targets AI Video Generation to Compete with Google’s AI Dominance",
-            "content": "Runway, an AI video generation startup, is positioning itself as a formidable competitor to tech giants like Google by focusing on video generation technologies. The company believes that video generation is key to developing comprehensive world models, which are essential for advanced AI applications. Runway's outsider status in the AI industry is seen as an advantage, allowing it to innovate without the constraints faced by larger, established companies. This strategic move highlights a growing trend where smaller AI firms leverage niche technologies to challenge industry leaders. Developers and tech leaders should watch Runway's progress as it could reshape the competitive landscape in AI video technology.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Personalized Health Tech—Promises and Pitfalls Explored",
-            "title": "Exploring the Promises and Pitfalls of Personalized Health Technologies",
-            "content": "The Verge's Optimizer newsletter delves into the evolving landscape of personalized health technologies, examining both their potential benefits and inherent challenges. Personalized health tech promises to revolutionize healthcare by offering tailored solutions based on individual data. However, the integration of these technologies raises concerns about data privacy, accuracy, and accessibility. As the market for personalized health solutions expands, healthcare professionals and tech developers must navigate these complexities to ensure ethical and effective implementation. This exploration underscores the need for robust frameworks to manage the delicate balance between innovation and privacy in health tech.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/931148/optimizer-pmos-pcos-personalized-health",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Osaurus Integrates Local and Cloud AI—Boosts Mac User Capabilities",
-            "title": "Osaurus Combines Local and Cloud AI Models for Enhanced Mac Functionality",
-            "content": "Osaurus has launched a new application for Mac users that seamlessly integrates both local and cloud-based AI models, enhancing user experience by keeping memory, files, and tools on personal hardware. This hybrid approach allows users to leverage the power of cloud AI while maintaining control over their data locally. The app is designed to optimize performance and privacy, addressing common concerns about data security in cloud computing. As more users demand flexible and secure AI solutions, Osaurus's innovation represents a significant step forward in AI application development for personal computing. Mac users should consider this app to enhance their AI capabilities while safeguarding their data.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "AI Research Papers Surge—Citation Overload Challenges Scientists",
-            "title": "Surge in AI Research Paper Citations Presents Challenges for Scientists",
-            "content": "A recent trend in academia shows AI research papers receiving an unprecedented number of citations, sparking concerns among scientists about the implications of citation overload. This phenomenon, exemplified by a 2017 paper on statistical accuracy, highlights the increasing influence of AI research in scientific discourse. However, the surge in citations raises questions about the quality and impact of these references, potentially skewing academic metrics and evaluations. Researchers and academic institutions must adapt to this changing landscape by developing new metrics to assess research impact accurately. This situation underscores the need for a balanced approach to evaluating scientific contributions in the AI era.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/930522/ai-research-papers-slop-peer-review-problem",
             "relatedResources": []
         }
     ],
