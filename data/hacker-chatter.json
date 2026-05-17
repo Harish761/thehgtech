@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-05-16T15:34:07.483428",
-  "total_incidents": 28123,
+  "last_updated": "2026-05-17T06:00:17.559955",
+  "total_incidents": 28127,
   "incidents": [
+    {
+      "id": "lamashtu_parle_agro",
+      "victim_name": "Parle Agro",
+      "threat_actor": "lamashtu",
+      "date_discovered": "2026-05-16T19:22:52.177992+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "parleagro.com",
+      "claim": "Parle Agro — an Indian company that makes non‑alcoholic beverages and packaged foods (brands: Frooti, Appy/Appy Fizz, Bailley, Hippo).\r\n",
+      "screenshot": "https://images.ransomware.live/victims/bbeefb73fc1abb1d4752f52b06f6992a.png",
+      "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/2dfc9ef62282c72beac00fb5221327d1",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "termite_ramar_foods_international",
+      "victim_name": "RAMAR FOODS INTERNATIONAL",
+      "threat_actor": "termite",
+      "date_discovered": "2026-05-16T18:54:03.976120+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "www.ramarfoods.com",
+      "claim": "Ramar Foods is a leading manufacturer and distributor of Filipino frozen food products, established in 1969. The company is committed to bringing the flavors of the Philippines to consumers through its portfolio of brands, which include iconic offerings like Magnolia, Orientex, Manila Gold, and Frescano.\n",
+      "screenshot": "https://images.ransomware.live/victims/8c837855301722092546da103a204a96.png",
+      "url": "http://termiteuslbumdge2zmfmfcsrvmvsfe4gvyudc5j6cdnisnhtftvokid.onion/post/6a024844786a0e50d7a6c969",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_ross_yerger_insurance",
+      "victim_name": "Ross Yerger Insurance",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-05-16T18:00:40.051231+00:00",
+      "industry": "Financial Services",
+      "website": "rossandyerger.com",
+      "claim": "rossandyerger.com zoominfo.com/c/ross--yerger-insurance-inc/101253758 Ross & Yerger is an employee-owned independent insurance agency founded in 1860, specializing in personalized risk management and insurance solutions for businesses and individuals. Their \"Lighthouse\" approach offers holistic protection beyond traditional policies, prioritizing client needs over shareholders. With a culture centered on relationships, community, and expertise in sectors like oil & gas and construction, they help clients protect what matters most",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_clinica_avellaneda_medical_center",
+      "victim_name": "CLINICA AVELLANEDA MEDICAL CENTER",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-16T17:54:10.413241+00:00",
+      "industry": "Healthcare",
+      "website": "CLINICA AVELLANEDA MEDICAL CENTER",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/2abab93f004e47c37357a5aae77e8851.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=f5dd1c52-cb51-4535-a8ee-bfd7ed801e49",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "dragonforce_advancedhealth",
       "victim_name": "AdvancedHEALTH",
@@ -44,7 +92,7 @@
       "threat_actor": "coinbasecartel",
       "date_discovered": "2026-05-15T20:57:26.133736+00:00",
       "industry": "Technology",
-      "website": "",
+      "website": "grafana.com",
       "claim": "We can cause you more damage then you would ever imagine,contact us.",
       "screenshot": "https://images.ransomware.live/victims/4f4fa54d9655f7532e3471b3953c1891.png",
       "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/graf",
