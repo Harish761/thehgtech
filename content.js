@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 18 2026",
+            "headline": "Exchange 0-Day and npm Worm—Critical Flaws Exploited",
+            "title": "Exchange Server 0-Day and npm Worm Highlight Supply Chain Vulnerabilities",
+            "content": "A critical zero-day vulnerability in Microsoft Exchange Server is being actively exploited, raising significant security concerns. Simultaneously, a worm targeting npm packages has been discovered, highlighting the risks of supply chain attacks. The npm worm exploits weak dependencies in trusted packages, potentially affecting thousands of developers and projects. Additionally, a fake AI model repository has been used to distribute information-stealing malware, further complicating the threat landscape. These incidents underscore the need for robust dependency management and vigilant monitoring of software supply chains. Organizations are urged to apply patches promptly and review their security protocols to mitigate these threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-exchange-0-day-npm-worm.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Grafana Source Code Stolen via GitHub Token Breach",
+            "title": "Grafana Labs Confirms Source Code Theft Through GitHub Token Compromise",
+            "content": "Grafana Labs has confirmed a security breach where attackers accessed its source code by exploiting a stolen GitHub access token. The breach highlights the vulnerabilities associated with token-based authentication and the importance of securing development environments. While the company has not disclosed the specific impact on its products, the exposure of source code can lead to further exploitation if not addressed. Grafana Labs is conducting a thorough investigation and has revoked the compromised token to prevent further unauthorized access. Developers are advised to review their token management practices and enhance security measures around access credentials.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/grafana-says-stolen-github-token-let-hackers-steal-codebase/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "US Healthcare Data Breaches Expose Millions",
+            "title": "Massive Data Breaches Impact Millions in US Healthcare Sector",
+            "content": "Recent data breaches have compromised the personal information of millions across the US healthcare sector, as reported on the HHS breach tracker. These breaches involve unauthorized access to sensitive patient data, including medical records and personal identifiers. The incidents highlight ongoing vulnerabilities in healthcare IT systems, which are increasingly targeted by cybercriminals. Affected organizations are working to contain the breaches and notify impacted individuals, while security experts emphasize the need for enhanced data protection measures. Healthcare providers must prioritize cybersecurity to safeguard patient information and comply with regulatory requirements.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/millions-impacted-across-several-us-healthcare-data-breaches/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "7-Eleven Breach—600K Salesforce Records Compromised",
+            "title": "7-Eleven Confirms Data Breach After ShinyHunters Ransom Demand",
+            "content": "7-Eleven has confirmed a data breach involving over 600,000 Salesforce records, following a ransom demand by the cybercriminal group ShinyHunters. The stolen data includes personal and corporate information, posing significant risks to affected individuals and the company. This breach underscores the persistent threat of ransomware and the importance of securing third-party platforms like Salesforce. 7-Eleven is collaborating with cybersecurity experts to investigate the breach and mitigate its impact. Organizations are encouraged to strengthen their security posture by implementing robust access controls and monitoring third-party integrations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/7-eleven-data-breach-confirmed-after-shinyhunters-ransom-demand/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Developer Workstations Targeted in Supply Chain Attacks",
+            "title": "Developer Workstations Become New Target in Supply Chain Attacks",
+            "content": "Recent supply chain attacks have shifted focus to developer workstations, with campaigns targeting npm, PyPI, and Docker Hub within a 48-hour period. These attacks aim to steal credentials and secrets from developer environments, potentially compromising trusted software. The incidents highlight the evolving tactics of threat actors who are now targeting the foundational elements of software development. Developers are urged to secure their workstations by implementing strong authentication measures and regularly auditing access to sensitive information. This trend emphasizes the need for comprehensive security strategies that encompass the entire software development lifecycle.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/developer-workstations-are-now-part-of.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Critical Flaws Patched in Ivanti, Fortinet, SAP, VMware",
+            "title": "Ivanti, Fortinet, SAP, VMware Release Patches for Critical Vulnerabilities",
+            "content": "Ivanti, Fortinet, SAP, and VMware have issued patches for critical vulnerabilities that could allow attackers to bypass authentication and execute arbitrary code. Among these, a severe flaw in Ivanti Xtraction (CVE-2026-8043) with a CVSS score of 9.6 poses a significant risk. These vulnerabilities could be exploited to gain unauthorized access and escalate privileges, affecting enterprise systems worldwide. Organizations using these products should prioritize applying the patches to protect their networks from potential exploitation. Regular updates and vulnerability assessments are essential to maintaining a secure IT environment.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/ivanti-fortinet-sap-vmware-n8n-patch.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 17 2026",
             "headline": "Windows 'MiniPlasma' Exploit—Gain SYSTEM Access on Patched PCs",
             "title": "Windows Zero-Day 'MiniPlasma' Allows SYSTEM Privilege Escalation",
@@ -19,42 +73,6 @@ const websiteContent = {
             "content": "A critical heap buffer overflow vulnerability, CVE-2026-42945, in NGINX Plus and NGINX Open is under active exploitation, causing worker process crashes and potential remote code execution (RCE). With a CVSS score of 9.2, this flaw affects the ngx_http_rewrite_module and has been rapidly targeted by threat actors since its disclosure. Organizations using NGINX should prioritize patching to prevent exploitation and service disruptions. This incident underscores the importance of timely updates and vigilance in managing web server security. Security teams should review their NGINX configurations and apply the latest patches immediately.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/nginx-cve-2026-42945-exploited-in-wild.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Pwn2Own Day 2—$385K for 15 Zero-Days in Windows, Exchange",
-            "title": "Pwn2Own Berlin 2026: Windows 11 and Exchange Hacked on Day 2",
-            "content": "Pwn2Own Berlin 2026 saw competitors earn $385,750 by exploiting 15 zero-day vulnerabilities across multiple platforms, including Windows 11, Microsoft Exchange, and Red Hat Enterprise Linux. These successful exploits highlight vulnerabilities in widely used systems, emphasizing the need for robust security measures. The event serves as a reminder of the persistent threat landscape and the value of ethical hacking in identifying critical security flaws. Organizations should stay informed about these vulnerabilities and apply necessary patches to safeguard their systems. The competition continues to be a crucial platform for advancing cybersecurity research.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/pwn2own-day-two-hackers-demo-microsoft-exchange-windows-11-red-had-enterprise-linux-zero-days/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Node-ipc npm Package Compromised—Credential Theft Alert",
-            "title": "Credential-Stealing Malware Found in Popular node-ipc npm Package",
-            "content": "Hackers have compromised the node-ipc npm package, injecting malware designed to steal credentials in a new supply chain attack. This package, widely used for inter-process communication in Node.js applications, poses a significant risk to developers and organizations relying on it. The attack underscores the vulnerabilities inherent in software supply chains and the need for vigilant monitoring of third-party dependencies. Developers should audit their projects for the affected versions and replace compromised packages immediately. This incident highlights the critical importance of securing software supply chains against malicious actors.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/popular-node-ipc-npm-package-compromised-to-steal-credentials/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Microsoft Exchange Zero-Day—XSS Exploit Mitigations Released",
-            "title": "Microsoft Issues Mitigations for Exchange Server Zero-Day Exploit",
-            "content": "Microsoft has announced mitigations for a high-severity zero-day vulnerability in Exchange Server that allows arbitrary code execution via cross-site scripting (XSS) attacks. This flaw targets Outlook on the web users and has been actively exploited in the wild. Organizations using Exchange Server should apply the recommended mitigations immediately to protect against potential breaches. This vulnerability highlights the ongoing challenges in securing email systems against sophisticated threat actors. Security teams must remain vigilant and ensure all patches and mitigations are applied promptly to safeguard sensitive communications.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-exchange-zero-day-flaw-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 15 2026",
-            "headline": "Chrome 148 Update—Critical Vulnerabilities Patched",
-            "title": "Google Releases Chrome 148 Update to Address Critical Vulnerabilities",
-            "content": "Google has released Chrome 148, addressing critical use-after-free and other vulnerabilities across various browser components. These security flaws posed significant risks, potentially allowing attackers to execute arbitrary code on affected systems. Users are strongly advised to update to the latest version to protect against potential exploits. This update is part of Google's ongoing efforts to enhance browser security and protect users from emerging threats. Regular updates and vigilance are essential for maintaining secure browsing environments in the face of evolving cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-148-update-patches-critical-vulnerabilities/",
             "relatedResources": []
         },
         {
@@ -87,12 +105,57 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "May 13 2026",
-            "headline": "Altman Faces Scrutiny—OpenAI Trial Highlights Trust Issues",
-            "title": "Sam Altman Confronts Allegations of Dishonesty at OpenAI Trial",
-            "content": "In a high-stakes trial, OpenAI CEO Sam Altman is under intense scrutiny as allegations of dishonesty surface, challenging his credibility. The trial, which has drawn comparisons to Elon Musk's high-profile legal battles, centers on Altman's alleged misrepresentations about his control over OpenAI. The proceedings have raised significant questions about leadership integrity and transparency in AI governance. As the trial unfolds, industry stakeholders are closely monitoring the potential implications for OpenAI's operations and reputation. Professionals in the AI field should consider the broader impacts of leadership trust on organizational stability and innovation.",
+            "date": "May 14 2026",
+            "headline": "Trump Courts Tech Titans for Critical Xi Summit",
+            "title": "Trump Seeks Tech Leaders' Support Amid Xi Summit and Chip Tensions",
+            "content": "In a strategic move, former President Donald Trump has enlisted prominent tech figures, including Apple CEO Tim Cook, NVIDIA's Jensen Huang, and Elon Musk, to attend an upcoming summit with Chinese President Xi Jinping. The meeting is anticipated to address pressing issues such as U.S. chip export restrictions and the geopolitical tensions surrounding Taiwan. This gathering could signal a potential shift in U.S. policy, as Trump's administration previously imposed stringent measures on Chinese tech imports. The involvement of these tech leaders highlights the critical role of the semiconductor industry and AI advancements in global politics. Industry professionals should monitor developments, as outcomes may impact international trade and technology regulations.",
             "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "OpenAI Mitigates TanStack Supply Chain Breach",
+            "title": "OpenAI Responds to TanStack \"Mini Shai-Hulud\" Supply Chain Attack",
+            "content": "OpenAI has disclosed its response to the TanStack \"Mini Shai-Hulud\" supply chain attack, which compromised npm packages. The breach affected systems reliant on specific TanStack components, prompting OpenAI to enhance security measures, including the re-signing of certificates and code audits. Notably, macOS users are urged to update OpenAI applications by June 12, 2026, to mitigate potential vulnerabilities. This incident underscores the growing threat of supply chain attacks in the software industry, emphasizing the need for robust security practices. Developers and organizations using npm packages should review their dependencies and apply necessary updates to safeguard their systems.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "NVIDIA Cosmos Predict 2.5 Enhanced with LoRA/DoRA",
+            "title": "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Video Generation",
+            "content": "Hugging Face has announced enhancements to NVIDIA Cosmos Predict 2.5, utilizing LoRA (Low-Rank Adaptation) and DoRA (Domain-Rank Adaptation) techniques for improved robot video generation. These fine-tuning methods enable more efficient model training and adaptation to specific domains, enhancing video output quality and performance. The integration of LoRA/DoRA allows developers to leverage pre-trained models with reduced computational resources, making advanced AI capabilities more accessible. This development is part of a broader trend towards optimizing AI models for specialized tasks, offering significant benefits in robotics and automated content creation. AI professionals should explore these techniques to enhance their projects' efficiency and effectiveness.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Alexa Plus Innovates with AI-Generated Podcasts",
+            "title": "Amazon Alexa Plus Introduces AI-Generated Podcast Creation Feature",
+            "content": "Amazon has unveiled a new capability for Alexa Plus, its advanced AI assistant, allowing users to generate podcasts on virtually any topic. This feature enables users to provide a topic, after which Alexa Plus outlines potential discussions by its AI hosts. The innovation marks a significant expansion of Alexa's content creation abilities, transforming it into a personalized AI content platform. This development reflects a growing trend in AI-driven media production, offering users customized content experiences. Tech professionals and content creators should consider the implications of AI-generated media on traditional content production and distribution models.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/932375/amazon-alexa-plus-ai-podcasts",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "PaddleOCR 3.5 Leverages Transformers for Enhanced OCR",
+            "title": "PaddleOCR 3.5 Integrates Transformers for Document Parsing and OCR Tasks",
+            "content": "Hugging Face has released PaddleOCR 3.5, featuring a transformers-based backend to enhance optical character recognition (OCR) and document parsing tasks. This update improves accuracy and processing speed, leveraging the power of transformer models to handle complex document layouts and diverse languages. The integration of transformers represents a significant advancement in OCR technology, enabling more precise text extraction and analysis. Organizations relying on document digitization and data extraction can benefit from these improvements, reducing manual processing time and increasing efficiency. Developers should explore PaddleOCR 3.5 for projects requiring advanced OCR capabilities.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Alexa+ Expands with Custom AI Podcast Generation",
+            "title": "Amazon's Alexa+ Now Offers On-Demand AI Podcast Creation",
+            "content": "Amazon has expanded the capabilities of Alexa+ by introducing a feature that generates custom AI-driven podcasts on demand. This innovation allows users to request podcast episodes tailored to their interests, with Alexa+ providing an overview of the content before playback. The feature positions Alexa+ as a versatile AI content platform, reflecting a broader industry trend towards personalized media experiences. This advancement highlights the potential of AI in transforming content creation and consumption, offering new opportunities for engagement. Tech leaders and developers should consider the implications of AI in media and its impact on user interaction and content delivery.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/",
             "relatedResources": []
         },
         {
@@ -174,15 +237,6 @@ const websiteContent = {
             "content": "Sony has responded to criticism regarding its AI Camera Assistant on the Xperia 1 XIII, clarifying that the feature does not alter photos but offers suggestions based on lighting, depth, and subject. This clarification follows backlash from users who misunderstood the assistant's capabilities. Sony emphasizes that the AI tool aims to enhance user experience by providing real-time guidance for optimal photography. Users are advised to explore the feature's settings to fully leverage its benefits without compromising image authenticity. This incident highlights the importance of clear communication in AI product functionalities.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant",
-            "relatedResources": []
-        },
-        {
-            "date": "May 16 2026",
-            "headline": "OpenAI Reshuffles—Brockman Takes Helm of Product Strategy",
-            "title": "Greg Brockman Leads OpenAI's Product Strategy Amid Organizational Changes",
-            "content": "OpenAI has appointed co-founder Greg Brockman to spearhead its product strategy, signaling a strategic shift as the company plans to integrate ChatGPT with its coding tool, Codex. This leadership change aims to streamline OpenAI's product offerings and enhance user experience by combining conversational AI with programming capabilities. The move comes as OpenAI seeks to solidify its position in the competitive AI landscape. Developers and tech leaders should anticipate new synergies between ChatGPT and Codex, potentially transforming AI-assisted coding practices. Stakeholders are encouraged to stay informed about OpenAI's evolving product roadmap.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/",
             "relatedResources": []
         }
     ],
