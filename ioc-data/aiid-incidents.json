@@ -1,10 +1,530 @@
 {
   "incidents": [
     {
+      "id": "AIID-9",
+      "incident_id": 9,
+      "title": "New York City Reportedly Released Disputed Value-Added Teacher Ratings for Thousands of Teachers",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-78",
+      "incident_id": 78,
+      "title": "International Baccalaureate\u2019s 2020 Calculated-Grades Model Reportedly Lowered Students' Scores and C",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-96",
+      "incident_id": 96,
+      "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-86",
+      "incident_id": 86,
+      "title": "Ireland\u2019s 2020 Leaving Certificate Calculated-Grades Model Reportedly Issued Incorrect Scores to Tho",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-140",
+      "incident_id": 140,
+      "title": "University of Toronto's ProctorU Deployment Reportedly Disadvantaged BIPOC Students During Exam Chec",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-138",
+      "incident_id": 138,
+      "title": "University of Illinois' Proctorio Remote-Proctoring Deployment Reportedly Raised Student Rights Conc",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-135",
+      "incident_id": 135,
+      "title": "UT Austin\u2019s GRADE Algorithm Reportedly Reduced Review of Lower-Scored PhD Applicants Amid Bias Conce",
+      "date": "2026-05-18",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-339",
+      "incident_id": 339,
+      "title": "Students Reportedly Used Generative Text Tools to Complete School Assignments and Exams",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-302",
+      "incident_id": 302,
+      "title": "Dartmouth's Geisel School of Medicine Reportedly Used Canvas Activity Logs to Accuse Students of Che",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-301",
+      "incident_id": 301,
+      "title": "Honorlock's AI Proctoring System Reportedly Led Broward College to Accuse a Teenager of Cheating",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-374",
+      "incident_id": 374,
+      "title": "UK Ofqual's Algorithm Disproportionately Provided Lower Grades Than Teachers' Assessments",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-466",
+      "incident_id": 466,
+      "title": "AI-Generated Text Detectors Reportedly Misclassified Human and AI-Written Text",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-495",
+      "incident_id": 495,
+      "title": "Carmel High School Students Reportedly Posted Racist Deepfake Videos Making New York Principal Appea",
+      "date": "2026-05-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-538",
+      "incident_id": 538,
+      "title": "Texas A&M-Commerce Professor Reportedly Used ChatGPT to Accuse Students of Cheating and Assign Incom",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-572",
+      "incident_id": 572,
+      "title": "University Student Reportedly Received Zero After Turnitin AI Detector Flagged Essay",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-705",
+      "incident_id": 705,
+      "title": "Turkish Student in Isparta Allegedly Uses AI to Cheat on Exam, Leading to Arrest",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-721",
+      "incident_id": 721,
+      "title": "Reported Use of Purportedly AI-Generated Student Accounts in Online College Courses",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-793",
+      "incident_id": 793,
+      "title": "AllHere's Chatbot 'Ed' Fails and Costs Los Angeles Unified School District $6 Million",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1038",
+      "incident_id": 1038,
+      "title": "Scammers Reportedly Use AI Tools to Impersonate Students and Obtain Federal Aid",
+      "date": "2026-05-18",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1266",
+      "incident_id": 1266,
+      "title": "Purportedly AI-Generated Sexual Images of At Least 400 Minors at Zacatecas School Were Reportedly Cr",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1300",
+      "incident_id": 1300,
+      "title": "Waymo Self-Driving Vehicles Reportedly Passed Stopped School Buses at Least 19 Times, Prompting NHTS",
+      "date": "2026-05-18",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1342",
+      "incident_id": 1342,
+      "title": "Purported Deepfake Nude Images of Students Circulated Without Consent at Valencia Educational Instit",
+      "date": "2026-05-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1348",
+      "incident_id": 1348,
+      "title": "Purported Deepfake Explicit Images of Middle School Students Allegedly Created and Circulated Using ",
+      "date": "2026-05-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1350",
+      "incident_id": 1350,
+      "title": "Reported Use of AI Apps to Create Sexualized Deepfake Images of High School Students at Cascade High",
+      "date": "2026-05-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1351",
+      "incident_id": 1351,
+      "title": "Alleged Use of AI to Create Sexualized Deepfake Images of Middle School Students Under Investigation",
+      "date": "2026-05-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1352",
+      "incident_id": 1352,
+      "title": "Malaysian Teenager Allegedly Arrested for Creating and Selling AI-Generated Deepfake Images of Schoo",
+      "date": "2026-05-18",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1354",
+      "incident_id": 1354,
+      "title": "Purportedly AI-Altered Fake Nude Images of High School Girls and Women Reportedly Created and Dissem",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1361",
+      "incident_id": 1361,
+      "title": "Waymo Autonomous Vehicle Reportedly Struck Child Near Elementary School in Santa Monica, California",
+      "date": "2026-05-18",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1378",
+      "incident_id": 1378,
+      "title": "Purportedly AI-Generated Video Allegedly Depicted Radnor High School Students in Pennsylvania Inappr",
+      "date": "2026-05-18",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-99",
+      "incident_id": 99,
+      "title": "Major Universities Are Reportedly Using Race as a 'High Impact Predictor' of Student Success",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-195",
+      "incident_id": 195,
+      "title": "Predictive Policing Program by Florida Sheriff\u2019s Office Allegedly Violated Residents\u2019 Rights and Tar",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-214",
+      "incident_id": 214,
+      "title": "SN Technologies Reportedly Lied to a New York State School District about Its Facial and Weapon Dete",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-239",
+      "incident_id": 239,
+      "title": "Algorithmic Teacher Evaluation Program Failed Student Outcome Goals and Allegedly Caused Harm Agains",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-252",
+      "incident_id": 252,
+      "title": "Remotely Operated Taser-Armed Drones Proposed by Taser Manufacturer as Defense for School Shootings ",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-349",
+      "incident_id": 349,
+      "title": "Evolv AI Weapons Detection System Allegedly Misrepresents Accuracy, Leading to School Security Gaps",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-404",
+      "incident_id": 404,
+      "title": "Sound Intelligence's Aggression Detector Misidentified Innocuous Sounds",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-514",
+      "incident_id": 514,
+      "title": "Turnitin's ChatGPT-Detection Tool Falsely Flagged Student Essays as AI-Generated",
+      "date": "2026-05-17",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-524",
+      "incident_id": 524,
+      "title": "Synthesized Voices Were Reportedly Used by Torswats to Sell Swatting Calls Targeting Schools and Hom",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-586",
+      "incident_id": 586,
+      "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-808",
+      "incident_id": 808,
+      "title": "Infinite Campus AI-Driven Student Risk Model Leads to Cuts in Support for Nevada's Low-Income School",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-843",
+      "incident_id": 843,
+      "title": "Generative AI Plagiarism Incident at Hingham High School Reportedly Tied to Inaccurate Citation Outp",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-849",
+      "incident_id": 849,
+      "title": "AI Detection Tools Allegedly Misidentify Neurodivergent and ESL Students' Work as AI-Generated in Ac",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-915",
+      "incident_id": 915,
+      "title": "Alaska Education Department Reportedly Published Policy Featuring Erroneous AI-Generated Citations",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-993",
+      "incident_id": 993,
+      "title": "Sydney Students Allegedly Forced to Retake NAPLAN After AI Predictive Text Error",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1009",
+      "incident_id": 1009,
+      "title": "Purportedly AI-Assisted Report by Troms\u00f8 Officials Allegedly Cited Non-Existent Sources in School Cl",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1014",
+      "incident_id": 1014,
+      "title": "Students in Maltese Schools Reportedly Being Targeted by Deepfake Nudes",
+      "date": "2026-05-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1071",
+      "incident_id": 1071,
+      "title": "Student Reportedly Files Complaint Over Professor's Undisclosed Use of Generative AI at Northeastern",
+      "date": "2026-05-17",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1123",
+      "incident_id": 1123,
+      "title": "Reported Student Misuse of ChatGPT, StudyX, and Gemini to Obtain Answers During Vietnam's 2025 Natio",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1156",
+      "incident_id": 1156,
+      "title": "Purported Deepfake Video Circulated Among Students Targets Orrington, Maine Educator",
+      "date": "2026-05-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1167",
+      "incident_id": 1167,
+      "title": "Alleged Gaggle Surveillance Alert Reportedly Leads to Arrest and Detention of 13-Year-Old Student in",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1177",
+      "incident_id": 1177,
+      "title": "Purported AI Monitoring Software Reportedly Flags Unsent Joke Threat, Leading to Arizona Student Sus",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1182",
+      "incident_id": 1182,
+      "title": "Purportedly AI-Generated Video of Tigers at Barasat Madrasa in West Bengal Reportedly Causes Panic a",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1213",
+      "incident_id": 1213,
+      "title": "Gaggle AI Monitoring at Lawrence, Kansas High School Reportedly Misflags Student Content and Blocks ",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1215",
+      "incident_id": 1215,
+      "title": "Gaggle Alert Reportedly Leads to Arrest of 15-Year-Old in Volusia County, Florida, for School Threat",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1234",
+      "incident_id": 1234,
+      "title": "Purported AI-Generated Explicit Deepfakes of Sydney High School Students Reportedly Circulated Onlin",
+      "date": "2026-05-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1245",
+      "incident_id": 1245,
+      "title": "Norwegian Student Reportedly Used AI-Generated Deepfake Videos in Spanish Coursework at University o",
+      "date": "2026-05-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1250",
+      "incident_id": 1250,
+      "title": "Alleged False Positive by Omnilert AI Gun Detection System Prompts Police Search at Baltimore County",
+      "date": "2026-05-17",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1267",
+      "incident_id": 1267,
+      "title": "Omnilert AI Reportedly Triggered False Gun Alert at Parkville High, Prompting Student Relocation",
+      "date": "2026-05-17",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1270",
+      "incident_id": 1270,
+      "title": "Multiple Purported AI-Assisted Cheating Incidents Reported Across South Korea's SKY Universities Dur",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1312",
+      "incident_id": 1312,
+      "title": "ZeroEyes AI Surveillance System Reportedly Flagged Clarinet as Gun, Triggering School Lockdown in Fl",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1315",
+      "incident_id": 1315,
+      "title": "Purportedly AI-Generated Nude Images of Middle School Students Reportedly Circulated at Louisiana Sc",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1318",
+      "incident_id": 1318,
+      "title": "School's Suspected AI-Cheating Allegation Precedes Student's Reported Suicide in Greater Noida, Indi",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1375",
+      "incident_id": 1375,
+      "title": "OpenAI Allegedly Did Not Alert RCMP After ChatGPT Flagged Violent Chats Before British Columbia Scho",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1439",
+      "incident_id": 1439,
+      "title": "Former New Orleans Isidore Newman School Teacher Allegedly Used AI to Create Fake Nude Images from S",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1474",
+      "incident_id": 1474,
+      "title": "Tasmanian School Students Reportedly Created Purported AI-Generated Pornographic Images of Female Cl",
+      "date": "2026-05-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1487",
       "incident_id": 1487,
       "title": "ChatGPT Was Alleged to Have Aided Planning of Florida State University Mass Shooting",
-      "date": "2026-05-14",
+      "date": "2026-05-17",
       "category": "other",
       "severity": "medium"
     },
@@ -12,7 +532,7 @@
       "id": "AIID-1488",
       "incident_id": 1488,
       "title": "ChatGPT Was Reportedly Consulted on Body-Disposal and Concealment Questions Before and After Univers",
-      "date": "2026-05-14",
+      "date": "2026-05-17",
       "category": "other",
       "severity": "critical"
     },
@@ -20,7 +540,7 @@
       "id": "AIID-1489",
       "incident_id": 1489,
       "title": "ChatGPT Was Reportedly Used in Planning School Stabbing in Pirkkala, Finland, That Injured Three Pup",
-      "date": "2026-05-14",
+      "date": "2026-05-17",
       "category": "other",
       "severity": "medium"
     },
@@ -180,14 +700,6 @@
       "id": "AIID-1473",
       "incident_id": 1473,
       "title": "Jasper County Student in Texas Reportedly Posted Purported AI-Generated Nude Image of Classmate on S",
-      "date": "2026-05-02",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1474",
-      "incident_id": 1474,
-      "title": "Tasmanian School Students Reportedly Created Purported AI-Generated Pornographic Images of Female Cl",
       "date": "2026-05-02",
       "category": "other",
       "severity": "medium"
@@ -454,14 +966,6 @@
       "title": "Jiushi Autonomous Delivery Vehicle Reportedly Dragged Fallen Electric Scooter During Delivery Run in",
       "date": "2026-04-04",
       "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1439",
-      "incident_id": 1439,
-      "title": "Former New Orleans Isidore Newman School Teacher Allegedly Used AI to Create Fake Nude Images from S",
-      "date": "2026-04-04",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -905,14 +1409,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1375",
-      "incident_id": 1375,
-      "title": "OpenAI Allegedly Did Not Alert RCMP After ChatGPT Flagged Violent Chats Before British Columbia Scho",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1379",
       "incident_id": 1379,
       "title": "Florida Woman Reportedly Jailed After Ex-Boyfriend Allegedly Submitted AI-Fabricated Text Screenshot",
@@ -1039,20 +1535,12 @@
       "date": "2026-02-21",
       "category": "prompt_injection",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1378",
-      "incident_id": 1378,
-      "title": "Purportedly AI-Generated Video Allegedly Depicted Radnor High School Students Inappropriately, Promp",
-      "date": "2026-02-21",
-      "category": "prompt_injection",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 131,
-    "last7Days": 8,
-    "last30Days": 45
+    "total": 192,
+    "last7Days": 73,
+    "last30Days": 109
   },
-  "lastUpdated": "2026-05-18T02:35:04.209840+05:30"
+  "lastUpdated": "2026-05-18T10:06:50.396490+05:30"
 }
