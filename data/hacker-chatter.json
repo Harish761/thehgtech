@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-05-18T06:37:08.998501",
-  "total_incidents": 28152,
+  "last_updated": "2026-05-18T17:16:50.688755",
+  "total_incidents": 28159,
   "incidents": [
+    {
+      "id": "safepay_berlinmobil.de",
+      "victim_name": "Berlinmobil.de",
+      "threat_actor": "safepay",
+      "date_discovered": "2026-05-18T15:55:06.892240+00:00",
+      "industry": "Transportation/Logistics",
+      "website": "Berlinmobil.de",
+      "claim": "Is a German transportation company headquartered in Berlin, specializing in bus charter services, passenger transportation, school transport, and mobility solutions …",
+      "screenshot": "https://images.ransomware.live/victims/c7d31be34bb47557d1b07f09fcdbb18d.png",
+      "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/berlinmobilde/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_healthtrax_fitness_&_wellness",
+      "victim_name": "Healthtrax Fitness & Wellness",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-18T13:50:18.460608+00:00",
+      "industry": "Consumer Services",
+      "website": "healthtrax.com",
+      "claim": "Healthtrax, founded in 1979 and headquartered Glastonbury, CT, offers facilities and programs t\nhat integrate fitness, wellness education, traditional medical services and rehabilitation. Hea\nlthtrax forms partnerships with leading health care systems to create a welcoming, centralized \nplace for members of the community to achieve their personal fitness and health goals.\n\nWe will upload 10gb of corporate data soon. Employee and clients personal information (name, Dl\nand passport numbers, SSNs), contracts and agreements, personal records, financials, NDA and o\nther confidential docs.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_vacu_-_lug",
+      "victim_name": "Vacu - Lug",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-18T13:21:22.093671+00:00",
+      "industry": "Manufacturing",
+      "website": "vaculug.com",
+      "claim": "Founded in 1950, Vaculug is a long-established commercial tyre retreading specialist based in G\nrantham. Vacu-Lug distributes Westlake light truck tyres, including the WTX1 trailer axle tyre \nfor Max Load application, the WSR 1 steer axle tyre and the WDR 1 drive axle tyre to suit rims \nof 17.5\" and 19.5\". In addition to supplying a range of Westlake light commercial vehicle tyres\n, Vacu-Lug's has its own light truck tyre range. \n\nWe will upload 40gb of corporate data soon. Employee personal information (financial and other \ndocs), contracts and agreements, financials, NDA and other confidential docs.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "cmdorganization_stonehenge_therapeutic_community",
+      "victim_name": "Stonehenge Therapeutic Community",
+      "threat_actor": "cmdorganization",
+      "date_discovered": "2026-05-18T10:50:23.371499+00:00",
+      "industry": "Healthcare",
+      "website": "www.stonehengetc.com",
+      "claim": "Stonehenge Therapeutic Community is dedicated to providing expert services to individuals, families, and communities affected by substance use. Their offerings include addiction medicine and withdrawal support, supportive housing, integrated support and justice, and residential services. The organization emphasizes partnership, support, and advocacy, aiming to help clients learn to live effectively and contribute to society. With a history dating back to 1971, Stonehenge has evolved to offer a full spectrum of residential and community-based programs.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "ailock_design_engineering_&_consulting",
+      "victim_name": "Design Engineering & Consulting",
+      "threat_actor": "AiLock",
+      "date_discovered": "2026-05-18T10:50:05.236911+00:00",
+      "industry": "Business Services",
+      "website": "decusa.com",
+      "claim": "Design Engineering & Consulting provides façade system design, shop drawings, engineering, and consulting services in a cost – effective and professional manner across the world.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "ailock_jazz_hipster",
+      "victim_name": "Jazz Hipster",
+      "threat_actor": "AiLock",
+      "date_discovered": "2026-05-18T10:20:05.703236+00:00",
+      "industry": "Consumer Services",
+      "website": "jazzhipster.com",
+      "claim": "Jazz Hipster was established in 1981 as a professional speaker manufacturer responding to market demands and embracing the evolution in technology.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lamashtu_msc_group",
+      "victim_name": "MSC Group",
+      "threat_actor": "lamashtu",
+      "date_discovered": "2026-05-18T07:25:16.402272+00:00",
+      "industry": "Transportation/Logistics",
+      "website": "msmelt.com",
+      "claim": "MSC Group is a global metals trading and recycling corporation that purchases, processes, and supplies recycled ferrous and non‑ferrous materials to manufacturers and foundries.",
+      "screenshot": "https://images.ransomware.live/victims/463872f9dba8c992465e00390bd484d1.png",
+      "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/29e5e001efac473e86b35e4b83dc8ece",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "incransom_bergen1.net",
       "victim_name": "bergen1.net",
