@@ -57,6 +57,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-158",
+      "incident_id": 158,
+      "title": "Remote Proctoring Facial-Detection Software Reportedly Failed to Detect Black Student During Lab Qui",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-339",
       "incident_id": 339,
       "title": "Students Reportedly Used Generative Text Tools to Complete School Assignments and Exams",
@@ -84,6 +92,14 @@
       "id": "AIID-374",
       "incident_id": 374,
       "title": "UK Ofqual's Algorithm Disproportionately Provided Lower Grades Than Teachers' Assessments",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-424",
+      "incident_id": 424,
+      "title": "Canadian Universities\u2019 AI Proctoring Tools Reportedly Collected Student Biometric Data Without Adequ",
       "date": "2026-05-18",
       "category": "other",
       "severity": "medium"
@@ -1538,9 +1554,9 @@
     }
   ],
   "stats": {
-    "total": 192,
-    "last7Days": 73,
-    "last30Days": 109
+    "total": 194,
+    "last7Days": 75,
+    "last30Days": 111
   },
-  "lastUpdated": "2026-05-18T10:06:50.396490+05:30"
+  "lastUpdated": "2026-05-18T17:22:17.744855+05:30"
 }
