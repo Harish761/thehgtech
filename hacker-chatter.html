@@ -534,7 +534,7 @@
             <div class="success-box" style="margin-top: 2rem; margin-bottom: 2rem; max-width: 800px; background: rgba(138, 43, 226, 0.05); border-color: rgba(138, 43, 226, 0.2);">
                 <ul style="color: var(--text-secondary); margin-bottom: 0; padding-left: 1.25rem; line-height: 1.6; font-size: 0.95rem;">
                     <li><strong>What it is:</strong> A real-time, searchable OSINT engine tracking global cyber incidents and deep web data leaks.</li>
-                    <li><strong>Why it matters:</strong> Instantly verify if an organization's data has been claimed by active threat actors.</li>
+                    <li><strong>HIBP Integration:</strong> Threat actor claims are automatically cross-referenced against the Have I Been Pwned database. Look for the <i class="fas fa-check-circle" style="color:#10B981;"></i> HIBP Verified or <i class="fas fa-times-circle" style="color:#FF3D3D;"></i> No HIBP History indicators on each incident.</li>
                     <li><strong>Safety:</strong> Provides an actively curated, safely sanitized view into the dark web, bypassing the operational risks of Tor.</li>
                 </ul>
             </div>
@@ -795,7 +795,11 @@
                     domain = domain.replace(/https?:\/\/(www\.)?/, '').split('/')[0].toLowerCase();
                     let verifiedHtml = "";
                     if (domain && hibpData[domain]) {
-                        verifiedHtml = ` <i class="fas fa-shield-check" title="Domain has known historical breaches in HIBP database" style="color: #10B981; margin-left: 4px;"></i>`;
+                        verifiedHtml = `<div style="display:inline-flex; align-items:center; gap:4px; font-size:0.65rem; background:rgba(16, 185, 129, 0.1); color:#10B981; padding:0.2rem 0.5rem; border-radius:4px; border:1px solid rgba(16, 185, 129, 0.3); margin-top:0.4rem; font-weight:600;"><i class="fas fa-check-circle"></i> HIBP VERIFIED</div>`;
+                    } else if (domain) {
+                        verifiedHtml = `<div style="display:inline-flex; align-items:center; gap:4px; font-size:0.65rem; background:rgba(255, 61, 61, 0.05); color:#FF3D3D; padding:0.2rem 0.5rem; border-radius:4px; border:1px solid rgba(255, 61, 61, 0.2); margin-top:0.4rem; font-weight:600; opacity:0.8;"><i class="fas fa-times-circle"></i> NO HIBP HISTORY</div>`;
+                    } else {
+                        verifiedHtml = `<div style="display:inline-flex; align-items:center; gap:4px; font-size:0.65rem; background:rgba(255, 255, 255, 0.05); color:var(--text-muted); padding:0.2rem 0.5rem; border-radius:4px; border:1px solid rgba(255, 255, 255, 0.1); margin-top:0.4rem; font-weight:600; opacity:0.8;"><i class="fas fa-question-circle"></i> DOMAIN UNKNOWN</div>`;
                     }
 
                     tr.className = "clickable-row";
@@ -807,8 +811,9 @@
 
                     tr.innerHTML = `
                         <td>
-                            <span class="victim-name">${incident.victim_name || 'Unknown'}${verifiedHtml}</span>
+                            <span class="victim-name">${incident.victim_name || 'Unknown'}</span>
                             <span class="victim-industry">${incident.industry || 'Unknown Sector'}</span>
+                            <div>${verifiedHtml}</div>
                         </td>
                         <td>
                             <span class="actor-tag">${incident.threat_actor || 'Unknown'}</span>
