@@ -27,19 +27,22 @@ jobs:
       - name: Fetch recent incidents
         run: python3 scripts/update_hacker_chatter.py
       
+      - name: Fetch HIBP verified breaches
+        run: python3 scripts/fetch_hibp_data.py
+      
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
           
           # Check if there are changes
-          if git diff --quiet data/hacker-chatter.json; then
-            echo "No new incidents to commit"
+          if git diff --quiet data/hacker-chatter.json ioc-data/verified-breaches.json; then
+            echo "No new incidents or breaches to commit"
             exit 0
           fi
           
-          git add data/hacker-chatter.json
-          git commit -m "🕵️ Update Hacker Chatter DB - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git add data/hacker-chatter.json ioc-data/verified-breaches.json
+          git commit -m "🕵️ Update Hacker Chatter & HIBP DB - $(date -u '+%Y-%m-%d %H:%M UTC')"
           git pull --rebase origin main && git push
       
       - name: Summary
