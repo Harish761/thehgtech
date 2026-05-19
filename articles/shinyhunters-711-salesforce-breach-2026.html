@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Dive: Supply Chain Shattered - 7-Eleven Salesforce Breach | TheHGTech</title>
-    <meta name="description" content="Technical analysis of the 7-Eleven data breach by ShinyHunters via Salesforce Experience Cloud, including IOCs, AuraInspector abuse, and SaaS supply chain mitigation. Research-grade intel.">
+    <title>Supply Chain Shattered: The 7-Eleven Salesforce Breach | TheHGTech</title>
+    <meta name="description" content="Technical analysis of the 7-Eleven data breach by ShinyHunters via Salesforce Experience Cloud. Discover IOCs, AuraInspector abuse, and mitigation strategies for SaaS supply chain security.">
     <link rel="canonical" href="https://thehgtech.com/articles/shinyhunters-711-salesforce-breach-2026.html">
 
     <!-- Open Graph -->
@@ -407,6 +407,54 @@ Content-Type: application/x-www-form-urlencoded
 message={"actions":[{"id":"1","descriptor":"aura://RecordUiController/ACTION$getRecord","callingDescriptor":"UNKNOWN","params":{"recordId":"001[REDACTED]","layoutTypes":["Full"],"modes":["View"]}}]}</code></pre>
                 <p>If the guest profile has read access to the <code>Account</code> or <code>Contact</code> objects, the server responds with the full JSON payload containing the franchisee's PII.</p>
             </div>
+            
+            <h3>Attack Flow Diagram</h3>
+            <div class="mermaid" style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0; text-align: center;">
+            sequenceDiagram
+                participant Attacker as ShinyHunters (Attacker)
+                participant Portal as 7-Eleven Experience Portal
+                participant SFDC as Salesforce Backend
+                
+                Attacker->>Portal: 1. Scan for exposed /aura endpoints
+                Portal-->>Attacker: 2. Expose Context & fwuid
+                Attacker->>Portal: 3. POST Malicious JSON Payload (AuraInspector)
+                Portal->>SFDC: 4. Query RecordUiController (Guest Profile)
+                SFDC-->>Portal: 5. Execute query (Overly Permissive Access)
+                Portal-->>Attacker: 6. Return sensitive franchisee PII (JSON)
+            </div>
+            
+            <h3>Guest User Permissions Comparison</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission / Setting</th>
+                        <th>Standard Security Posture</th>
+                        <th>Exploited / Misconfigured Posture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Object Access (Account/Contact)</strong></td>
+                        <td>No Access</td>
+                        <td>Read / View All</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Field Level Security (PII)</strong></td>
+                        <td>Hidden</td>
+                        <td>Visible</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Secure Guest User Record Access</strong></td>
+                        <td>Enabled</td>
+                        <td>Disabled</td>
+                    </tr>
+                    <tr>
+                        <td><strong>API Enabled</strong></td>
+                        <td>Disabled for Guest</td>
+                        <td>Enabled</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <h2>Indicators of Compromise (IOCs) & Behavioral Forensics</h2>
 
@@ -436,9 +484,9 @@ message={"actions":[{"id":"1","descriptor":"aura://RecordUiController/ACTION$get
                 </ol>
             </div>
 
-            <h2>Conclusion: The Perimeter is Dead</h2>
+            <h2>Conclusion: Reevaluating the Modern Perimeter</h2>
 
-            <p>The 7-Eleven breach is a stark reminder that the traditional corporate perimeter no longer exists. Your attack surface extends to every SaaS platform, partner portal, and API endpoint your organization deploys. Threat actors like ShinyHunters have adapted; they no longer need to hack your firewall if they can simply log in to your misconfigured cloud services.</p>
+            <p>The 7-Eleven breach underscores the evolving nature of the corporate perimeter. The attack surface increasingly extends to SaaS platforms, partner portals, and API endpoints. Threat actors like ShinyHunters have adapted; they no longer need to compromise traditional network boundaries if they can simply exploit misconfigured cloud services.</p>
 
             <p>Security teams must extend their zero-trust principles and continuous auditing practices to their SaaS supply chain before they become the next headline.</p>
 
@@ -477,6 +525,13 @@ message={"actions":[{"id":"1","descriptor":"aura://RecordUiController/ACTION$get
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-http.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var isLight = document.body.classList.contains('light-mode') || document.documentElement.getAttribute('data-theme') === 'light';
+            mermaid.initialize({ startOnLoad: true, theme: isLight ? 'default' : 'dark' });
+        });
+    </script>
     <script src="/interaction-bar.js?v=20260220"></script>
 </body>
 </html>
