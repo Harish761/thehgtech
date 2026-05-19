@@ -684,6 +684,16 @@
                     </div>
                 </div>
                 
+                <div id="modalHibpContainer" style="display:none; margin-bottom: 1.5rem; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 1.25rem;">
+                    <h3 style="font-size: 0.9rem; color: #10B981; margin: 0 0 1rem 0; text-transform: uppercase; display: flex; align-items: center; gap: 8px;"><i class="fas fa-shield-check"></i> Verified Intel Context (HIBP)</h3>
+                    <div id="modalHibpWarning" style="display:none; background: rgba(255, 61, 61, 0.1); border-left: 4px solid var(--accent-danger); padding: 1rem; border-radius: 4px; margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-primary);">
+                        <i class="fas fa-exclamation-triangle" style="color: var(--accent-danger);"></i> <strong>OSINT Warning:</strong> High probability of recycled data. This domain suffered a verified breach of identical data types in the past.
+                    </div>
+                    <div id="modalHibpTimeline" style="position: relative; padding-left: 1rem; border-left: 2px solid rgba(16, 185, 129, 0.3);">
+                        <!-- Timeline entries will be injected here -->
+                    </div>
+                </div>
+                
                 <div id="modalScreenshotContainer" style="display:none; text-align:center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="font-size: 0.9rem; color: var(--text-muted); margin: 0 0 0.75rem 0; text-align: left; text-transform: uppercase;">Raw Dark Web Evidence</h3>
                     <img id="modalScreenshot" src="" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
@@ -697,6 +707,9 @@
     </div>
 
     <script>
+        // Declare hibpData globally so modal can access it
+        let hibpData = {};
+
         document.addEventListener('DOMContentLoaded', async () => {
             const tableBody = document.getElementById('tableBody');
             const searchInput = document.getElementById('searchInput');
@@ -705,10 +718,18 @@
             let incidentsData = [];
 
             try {
-                // Fetch the dataset (which our GitHub action creates)
-                const response = await fetch('data/hacker-chatter.json');
-                if (!response.ok) throw new Error('Data file not found');
-                const rawData = await response.json();
+                // Fetch both datasets concurrently
+                const [incidentRes, hibpRes] = await Promise.all([
+                    fetch('data/hacker-chatter.json'),
+                    fetch('ioc-data/verified-breaches.json').catch(() => null)
+                ]);
+                
+                if (!incidentRes.ok) throw new Error('Data file not found');
+                const rawData = await incidentRes.json();
+                
+                if (hibpRes && hibpRes.ok) {
+                    hibpData = await hibpRes.json();
+                }
                 
                 incidentsData = rawData.incidents || [];
                 dbSize.textContent = incidentsData.length;
@@ -769,6 +790,14 @@
                         }
                     }
 
+                    // HIBP check
+                    let domain = incident.website || "";
+                    domain = domain.replace(/https?:\/\/(www\.)?/, '').split('/')[0].toLowerCase();
+                    let verifiedHtml = "";
+                    if (domain && hibpData[domain]) {
+                        verifiedHtml = ` <i class="fas fa-shield-check" title="Domain has known historical breaches in HIBP database" style="color: #10B981; margin-left: 4px;"></i>`;
+                    }
+
                     tr.className = "clickable-row";
                     
                     // We need to encode the object so it safely passes into the inline onclick handler
@@ -778,7 +807,7 @@
 
                     tr.innerHTML = `
                         <td>
-                            <span class="victim-name">${incident.victim_name || 'Unknown'}</span>
+                            <span class="victim-name">${incident.victim_name || 'Unknown'}${verifiedHtml}</span>
                             <span class="victim-industry">${incident.industry || 'Unknown Sector'}</span>
                         </td>
                         <td>
@@ -816,6 +845,7 @@
             
             // Format Website
             const websiteEl = document.getElementById('modalWebsite');
+            let parsedDomain = "";
             if (incident.website) {
                 websiteEl.style.display = 'inline-block';
                 let rawSite = incident.website;
@@ -824,6 +854,7 @@
                 }
                 websiteEl.href = rawSite;
                 websiteEl.innerHTML = `<i class="fas fa-link"></i> ${incident.website}`;
+                parsedDomain = incident.website.replace(/https?:\/\/(www\.)?/, '').split('/')[0].toLowerCase();
             } else {
                 websiteEl.style.display = 'none';
             }
@@ -862,6 +893,51 @@
             } else {
                 profileEl.innerHTML = '<i style="color: var(--text-muted);">N/A</i>';
                 actorClaimEl.innerHTML = '<i style="color: var(--text-muted);">N/A</i>';
+            }
+
+            // HIBP Integration Logic
+            const hibpContainer = document.getElementById('modalHibpContainer');
+            const hibpTimeline = document.getElementById('modalHibpTimeline');
+            const hibpWarning = document.getElementById('modalHibpWarning');
+            
+            hibpTimeline.innerHTML = '';
+            hibpWarning.style.display = 'none';
+            
+            if (parsedDomain && hibpData[parsedDomain] && hibpData[parsedDomain].length > 0) {
+                hibpContainer.style.display = 'block';
+                const historicalBreaches = hibpData[parsedDomain];
+                
+                // Add Current Incident Node
+                const claimTextLower = (incident.claim || "").toLowerCase();
+                
+                historicalBreaches.forEach(breach => {
+                    // Check for overlap / recycled data warning
+                    let hasOverlap = false;
+                    const bClasses = breach.DataClasses || [];
+                    bClasses.forEach(dc => {
+                        if (claimTextLower.includes(dc.toLowerCase())) {
+                            hasOverlap = true;
+                        }
+                    });
+                    if (hasOverlap) hibpWarning.style.display = 'block';
+
+                    const bDate = breach.BreachDate || "Unknown Date";
+                    const bCount = breach.PwnCount ? breach.PwnCount.toLocaleString() : "Unknown";
+                    const badgesHtml = bClasses.map(c => `<span style="display:inline-block; font-size:0.65rem; background: rgba(0, 217, 255, 0.1); color: #00D9FF; border: 1px solid rgba(0, 217, 255, 0.3); padding: 0.1rem 0.3rem; border-radius: 3px; margin-right: 4px; margin-bottom: 4px;">${c}</span>`).join('');
+                    
+                    const node = document.createElement('div');
+                    node.style.position = 'relative';
+                    node.style.paddingBottom = '1.25rem';
+                    node.innerHTML = `
+                        <div style="position: absolute; left: -1.35rem; top: 0.25rem; width: 8px; height: 8px; background: #10B981; border-radius: 50%; box-shadow: 0 0 8px rgba(16, 185, 129, 0.8);"></div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; margin-bottom: 0.15rem;">${bDate} <span style="font-weight: 400;">(${bCount} records)</span></div>
+                        <div style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.4rem;">${breach.Name || breach.Title}</div>
+                        <div>${badgesHtml}</div>
+                    `;
+                    hibpTimeline.appendChild(node);
+                });
+            } else {
+                hibpContainer.style.display = 'none';
             }
 
             // Screenshot Evidence
