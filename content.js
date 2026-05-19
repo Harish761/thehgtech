@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 19 2026",
+            "headline": "DirtyDecrypt PoC Released—Linux Kernel CVE-2026-31635 Alert",
+            "title": "DirtyDecrypt PoC Exploit Released for Linux Kernel CVE-2026-31635 Vulnerability",
+            "content": "A proof-of-concept (PoC) exploit for the Linux Kernel vulnerability CVE-2026-31635, known as DirtyDecrypt, has been released. This local privilege escalation (LPE) flaw, discovered by Zellic and V12 security teams, affects recent Linux kernel versions and could allow attackers to gain elevated privileges on compromised systems. The vulnerability, also referred to as DirtyCBC, was reported on May 9, 2026, and has since been patched. System administrators are urged to apply the latest security updates to mitigate potential exploitation risks. This development underscores the ongoing challenges in securing open-source software against privilege escalation threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/dirtydecrypt-poc-released-for-linux.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "7-Eleven Breach Confirmed—ShinyHunters Claim Responsibility",
+            "title": "7-Eleven Confirms Data Breach by ShinyHunters Extortion Group",
+            "content": "7-Eleven has confirmed a data breach following a cyberattack by the ShinyHunters extortion group. The breach, which occurred last month, compromised sensitive customer and corporate data. ShinyHunters, known for targeting large corporations, has claimed responsibility for the attack. The extent of the data compromised is still under investigation, but the breach highlights the persistent threat posed by cybercriminal groups targeting retail giants. 7-Eleven is working with cybersecurity experts to enhance its security measures and prevent future incidents. Customers are advised to monitor their accounts for suspicious activity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/7-eleven-confirms-data-breach-claimed-by-the-shinyhunters-gang/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Microsoft Critical Flaws Double—Privilege Escalation Focus",
+            "title": "Surge in Critical Microsoft Vulnerabilities Highlights Escalation Risks",
+            "content": "BeyondTrust reports a significant increase in critical vulnerabilities affecting Microsoft products, with a focus on privilege escalation and identity abuse. While the total number of vulnerabilities remained stable in 2025, critical flaws doubled, indicating a shift in attacker tactics. This trend poses a heightened risk to organizations relying on Microsoft software, as attackers increasingly exploit these vulnerabilities to gain unauthorized access. Security professionals are urged to prioritize patch management and implement robust identity protection measures to mitigate these risks. The report underscores the evolving threat landscape and the need for proactive security strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-microsoft-vulnerabilities-doubled-from-exposure-to-escalation/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "SEPPMail Flaws Enable RCE—Email Security at Risk",
+            "title": "SEPPMail Secure E-Mail Gateway Vulnerabilities Allow RCE and Mail Access",
+            "content": "Critical vulnerabilities in SEPPMail Secure E-Mail Gateway have been disclosed, potentially allowing remote code execution (RCE) and unauthorized access to email traffic. These flaws could enable attackers to execute arbitrary code and read sensitive emails from the virtual appliance. Organizations using SEPPMail solutions are at risk, and immediate patching is recommended to prevent exploitation. The vulnerabilities highlight the importance of securing email gateways, a critical component of enterprise communication infrastructure. Security teams should review their email security configurations and apply updates promptly to safeguard against these threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/seppmail-secure-e-mail-gateway.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Industrial Robots Vulnerable—CVE-2026-8153 Exploits OS Injection",
+            "title": "CVE-2026-8153 Exposes Industrial Robot Fleets to Hacking Risks",
+            "content": "A critical vulnerability, CVE-2026-8153, in Universal Robots PolyScope 5 has been identified, allowing OS command injection attacks. This flaw could enable attackers to gain control over industrial robot fleets, posing significant operational and safety risks. The vulnerability affects systems running PolyScope 5, a widely used interface for programming and controlling industrial robots. Organizations utilizing these robots are urged to apply security patches and review their network security protocols to prevent unauthorized access. This incident underscores the growing cybersecurity challenges in industrial automation and the need for robust security measures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-vulnerability-exposes-industrial-robot-fleets-to-hacking/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "GitHub Action Compromised—CI/CD Credentials at Risk",
+            "title": "GitHub Action Tags Redirected to Imposter Commit for Credential Theft",
+            "content": "A software supply chain attack has targeted the popular GitHub Actions workflow, actions-cool/issues-helper, redirecting tags to a malicious commit. This compromise allows attackers to execute code that harvests CI/CD credentials, exfiltrating them to an attacker-controlled server. All existing tags in the repository have been affected, posing a significant risk to developers relying on this workflow. GitHub users are advised to verify their workflows and review access permissions to mitigate potential credential theft. This incident highlights the vulnerabilities in software supply chains and the importance of securing development environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/github-actions-supply-chain-attack.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 18 2026",
             "headline": "Shai-Hulud Worm Clones Target NPM Developers—Code Reused",
             "title": "First Shai-Hulud Worm Clones Detected in NPM Developer Attacks",
@@ -49,15 +103,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 15 2026",
-            "headline": "Funnel Builder Plugin Flaw—Credit Card Data at Risk",
-            "title": "Funnel Builder WordPress Plugin Exploited to Steal Credit Card Data",
-            "content": "A critical vulnerability in the Funnel Builder plugin for WordPress is being actively exploited to inject malicious JavaScript into WooCommerce checkout pages, leading to credit card data theft. This flaw affects numerous e-commerce sites using the plugin, posing a significant threat to online retailers and their customers. Site administrators are urged to update the plugin immediately and review their security configurations to prevent data breaches. This incident highlights the ongoing risks associated with third-party plugins in content management systems and the importance of regular security audits.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/funnel-builder-wordpress-plugin-bug-exploited-to-steal-credit-cards/",
-            "relatedResources": []
-        },
-        {
             "date": "May 18 2026",
             "headline": "Exchange 0-Day and npm Worm—Critical Flaws Exploited",
             "title": "Exchange Server 0-Day and npm Worm Highlight Supply Chain Vulnerabilities",
@@ -92,52 +137,61 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/7-eleven-data-breach-confirmed-after-shinyhunters-ransom-demand/",
             "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Developer Workstations Targeted in Supply Chain Attacks",
-            "title": "Developer Workstations Become New Target in Supply Chain Attacks",
-            "content": "Recent supply chain attacks have shifted focus to developer workstations, with campaigns targeting npm, PyPI, and Docker Hub within a 48-hour period. These attacks aim to steal credentials and secrets from developer environments, potentially compromising trusted software. The incidents highlight the evolving tactics of threat actors who are now targeting the foundational elements of software development. Developers are urged to secure their workstations by implementing strong authentication measures and regularly auditing access to sensitive information. This trend emphasizes the need for comprehensive security strategies that encompass the entire software development lifecycle.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/developer-workstations-are-now-part-of.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Critical Flaws Patched in Ivanti, Fortinet, SAP, VMware",
-            "title": "Ivanti, Fortinet, SAP, VMware Release Patches for Critical Vulnerabilities",
-            "content": "Ivanti, Fortinet, SAP, and VMware have issued patches for critical vulnerabilities that could allow attackers to bypass authentication and execute arbitrary code. Among these, a severe flaw in Ivanti Xtraction (CVE-2026-8043) with a CVSS score of 9.6 poses a significant risk. These vulnerabilities could be exploited to gain unauthorized access and escalate privileges, affecting enterprise systems worldwide. Organizations using these products should prioritize applying the patches to protect their networks from potential exploitation. Regular updates and vulnerability assessments are essential to maintaining a secure IT environment.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/ivanti-fortinet-sap-vmware-n8n-patch.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 17 2026",
-            "headline": "Windows 'MiniPlasma' Exploit—Gain SYSTEM Access on Patched PCs",
-            "title": "Windows Zero-Day 'MiniPlasma' Allows SYSTEM Privilege Escalation",
-            "content": "A newly disclosed zero-day vulnerability named \"MiniPlasma\" enables attackers to gain SYSTEM privileges on fully patched Windows systems. The exploit, released as a proof-of-concept by a cybersecurity researcher, poses a significant threat to Windows users worldwide. This vulnerability affects all current Windows versions, allowing unauthorized access and control over systems. The release of this exploit highlights the ongoing challenges in maintaining secure Windows environments, even when systems are fully updated. Security professionals are urged to monitor for patches and implement additional security measures to mitigate potential attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/new-windows-miniplasma-zero-day-exploit-gives-system-access-poc-released/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 17 2026",
-            "headline": "NGINX CVE-2026-42945 Exploited—RCE Risk in the Wild",
-            "title": "Critical NGINX Vulnerability CVE-2026-42945 Actively Exploited",
-            "content": "A critical heap buffer overflow vulnerability, CVE-2026-42945, in NGINX Plus and NGINX Open is under active exploitation, causing worker process crashes and potential remote code execution (RCE). With a CVSS score of 9.2, this flaw affects the ngx_http_rewrite_module and has been rapidly targeted by threat actors since its disclosure. Organizations using NGINX should prioritize patching to prevent exploitation and service disruptions. This incident underscores the importance of timely updates and vigilance in managing web server security. Security teams should review their NGINX configurations and apply the latest patches immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/nginx-cve-2026-42945-exploited-in-wild.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 13 2026",
-            "headline": "Altman Faces Allegations of Deception in OpenAI Court Battle",
-            "title": "Sam Altman Confronts Lying Allegations in OpenAI Control Dispute",
-            "content": "Sam Altman, CEO of OpenAI, is under scrutiny in a high-profile court case where he faces accusations of dishonesty regarding his control over the company. The trial, which has drawn comparisons to Elon Musk's contentious leadership style, centers on Altman's alleged misrepresentations during internal power struggles at OpenAI. The case highlights the intense pressures and ethical challenges faced by leaders in the rapidly evolving AI industry. If proven, these allegations could impact Altman's credibility and leadership position, affecting OpenAI's strategic direction. Stakeholders in AI development should monitor the trial's outcomes for potential shifts in leadership dynamics within major AI firms.",
+            "date": "May 19 2026",
+            "headline": "US Deepfake Law—Censorship Concerns Amid Crackdown",
+            "title": "US Enforces Deepfake Removal Law Amidst Censorship Concerns",
+            "content": "The United States has enacted a law mandating the rapid removal of sexual deepfakes and nonconsensual imagery from social media platforms. This legislation, signed as the Take It Down Act by President Donald Trump, aims to protect victims of digital exploitation. However, experts warn that the law could inadvertently lead to increased online censorship without significantly aiding victims. The policy requires platforms to act swiftly, yet the criteria for removal remain vague, potentially impacting freedom of expression. Stakeholders are urged to monitor the law's implementation and its effects on digital rights and platform governance.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/933518/take-it-down-act-notice-removal-social-media-deepfake",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Trump Seeks Tech Giants' Support at Xi Summit",
+            "title": "Trump Engages Tech Leaders for Strategic Xi Jinping Summit",
+            "content": "In a strategic move, President Donald Trump has enlisted tech leaders, including Tim Cook (referred to as \"Tim Apple\"), Jensen Huang, and Elon Musk, to attend a summit with Chinese President Xi Jinping. The meeting is expected to address critical issues such as chip restrictions and the geopolitical tensions surrounding Taiwan. This engagement signals a potential shift in US-China tech relations, as the administration seeks to balance national security concerns with economic interests. Industry leaders are advised to stay informed about policy changes that could impact supply chains and international collaborations.",
             "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "OpenAI Responds to TanStack Supply Chain Breach",
+            "title": "OpenAI Details Response to TanStack Supply Chain Attack",
+            "content": "OpenAI has disclosed its response to the TanStack \"Mini Shai-Hulud\" supply chain attack, which compromised signing certificates and affected macOS users. The attack highlights vulnerabilities in npm package management, prompting OpenAI to enhance security protocols and issue a mandatory update for macOS applications by June 12, 2026. This incident underscores the critical need for robust supply chain defenses in software development. Developers must ensure their systems are updated and review security practices to mitigate future risks.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "AI Graduation Announcer Fails to Deliver",
+            "title": "AI Announcer Missteps Highlight Graduation Ceremony Challenges",
+            "content": "AI-powered announcers, increasingly used in graduation ceremonies, have faced criticism for mispronouncing and omitting student names. Despite their growing popularity as a tool for ensuring name accuracy, these systems have struggled with the task, leading to dissatisfaction among students and families. The reliance on AI for such personal and significant events raises questions about the technology's readiness and reliability. Educational institutions are encouraged to evaluate the effectiveness of AI tools and consider human oversight to enhance ceremony experiences.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/933653/ai-graduation-commencement-glendale-community-college",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Karpathy Joins Anthropic—Strengthens AI Pre-Training Team",
+            "title": "Andrej Karpathy Joins Anthropic to Enhance AI Pre-Training Efforts",
+            "content": "Andrej Karpathy, a co-founder of OpenAI and former head of AI at Tesla, has joined Anthropic to focus on pre-training initiatives. His expertise in computer vision and AI development is expected to bolster Anthropic's capabilities in advancing foundational AI models. This move signifies Anthropic's commitment to attracting top talent to drive innovation in AI research. Industry professionals should watch for potential breakthroughs in AI pre-training methodologies that could emerge from this collaboration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Gemini's Expansion Raises Privacy Concerns",
+            "title": "Gemini's Integration in Google Apps Sparks Privacy Concerns",
+            "content": "Gemini, initially a subtle feature in Google apps, has expanded its presence, raising privacy concerns among users. The feature's integration into services like Gmail and Google Drive has become more pronounced, prompting scrutiny over data handling and user consent. As Gemini's capabilities grow, users and privacy advocates are questioning the transparency of data usage and the potential for intrusive monitoring. Google users should review privacy settings and stay informed about changes to app functionalities to safeguard personal information.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/931752/google-io-2026-gemini-icon-docs-workspace",
             "relatedResources": []
         },
         {
@@ -219,51 +273,6 @@ const websiteContent = {
             "content": "Amazon has expanded the capabilities of Alexa+ by introducing a feature that generates custom AI-driven podcasts on demand. This innovation allows users to request podcast episodes tailored to their interests, with Alexa+ providing an overview of the content before playback. The feature positions Alexa+ as a versatile AI content platform, reflecting a broader industry trend towards personalized media experiences. This advancement highlights the potential of AI in transforming content creation and consumption, offering new opportunities for engagement. Tech leaders and developers should consider the implications of AI in media and its impact on user interaction and content delivery.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 17 2026",
-            "headline": "Apple's Siri Update—Auto-Deleting Chats Enhances Privacy",
-            "title": "Apple to Introduce Auto-Deleting Chat Feature in Siri Overhaul",
-            "content": "Apple is set to enhance user privacy with a new version of Siri that includes an auto-deleting chat feature. This update, expected to debut in iOS 27, aligns with Apple's ongoing commitment to privacy as a competitive differentiator in the AI landscape. The feature will allow users to automatically delete their chat history, addressing growing concerns over data retention and privacy. As digital privacy becomes increasingly paramount, this move positions Apple as a leader in safeguarding user data. Developers and security professionals should evaluate the implications of such privacy-centric features on user trust and data management practices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 17 2026",
-            "headline": "Trust at Stake—Altman's Credibility Questioned in OpenAI Trial",
-            "title": "Trustworthiness of Sam Altman Under Spotlight in OpenAI Legal Battle",
-            "content": "The final days of the Elon Musk-OpenAI trial have spotlighted the trustworthiness of Sam Altman, CEO of OpenAI. Central to the proceedings is whether Altman's statements about his leadership and control over OpenAI were truthful. This trial underscores the critical role of trust in AI leadership and its potential impact on organizational credibility. As AI technologies continue to evolve, maintaining transparency and integrity becomes essential for leaders to foster trust among stakeholders. Security professionals and tech leaders should consider the ramifications of leadership credibility on AI development and deployment.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 17 2026",
-            "headline": "Siri's New Feature—Auto-Deleting Chats to Boost Privacy",
-            "title": "Apple's Revamped Siri to Include Auto-Deleting Chat Option",
-            "content": "Apple's upcoming Siri update, part of iOS 27, will feature an auto-deleting chat option aimed at enhancing user privacy. This strategic move seeks to leverage Apple's strong privacy record as a key differentiator in the competitive AI market. The feature allows users to automatically remove chat histories, addressing concerns over data privacy and retention. As privacy becomes a critical factor in consumer technology choices, Apple's initiative may influence industry standards and consumer expectations. Tech professionals should assess the potential impacts of privacy-focused features on user engagement and data security protocols.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats",
-            "relatedResources": []
-        },
-        {
-            "date": "May 17 2026",
-            "headline": "Eric Schmidt Booed—AI Remarks Unwelcome at Graduation",
-            "title": "University of Arizona Students Reject Eric Schmidt's AI Optimism",
-            "content": "During a commencement address at the University of Arizona, former Google CEO Eric Schmidt faced backlash as students booed his remarks on artificial intelligence. The reaction highlights the contentious nature of AI discussions amid concerns over job market disruptions. As AI technologies rapidly advance, the apprehension among new graduates entering a transforming workforce is palpable. This incident underscores the need for balanced discourse on AI's role in society and its economic implications. Tech leaders and educators should prioritize transparent communication about AI's potential impacts to foster informed public dialogue.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement",
-            "relatedResources": []
-        },
-        {
-            "date": "May 17 2026",
-            "headline": "AI in Commencement Speeches—A Risky Topic in 2026",
-            "title": "AI Mentions in Graduation Speeches Spark Controversy Among Students",
-            "content": "As artificial intelligence continues to shape the future, its mention in commencement speeches has become increasingly contentious. Recent events, including Eric Schmidt's booed address at the University of Arizona, illustrate the growing unease among graduates about AI's impact on career prospects. The tension reflects broader societal concerns about AI-driven job displacement and economic shifts. For educators and industry leaders, this serves as a reminder of the importance of addressing AI's challenges and opportunities with nuance and transparency. Engaging with students and the public on these topics is crucial for fostering a well-informed and adaptable workforce.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/17/if-youre-giving-a-commencement-speech-in-2026-maybe-dont-mention-ai/",
             "relatedResources": []
         }
     ],
