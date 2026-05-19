@@ -17,20 +17,20 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-96",
-      "incident_id": 96,
-      "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-86",
       "incident_id": 86,
       "title": "Ireland\u2019s 2020 Leaving Certificate Calculated-Grades Model Reportedly Issued Incorrect Scores to Tho",
       "date": "2026-05-18",
       "category": "other",
       "severity": "high"
+    },
+    {
+      "id": "AIID-96",
+      "incident_id": 96,
+      "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
+      "date": "2026-05-18",
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-140",
@@ -89,17 +89,17 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-374",
-      "incident_id": 374,
-      "title": "UK Ofqual's Algorithm Disproportionately Provided Lower Grades Than Teachers' Assessments",
+      "id": "AIID-424",
+      "incident_id": 424,
+      "title": "Canadian Universities\u2019 AI Proctoring Tools Reportedly Collected Student Biometric Data Without Adequ",
       "date": "2026-05-18",
       "category": "other",
       "severity": "medium"
     },
     {
-      "id": "AIID-424",
-      "incident_id": 424,
-      "title": "Canadian Universities\u2019 AI Proctoring Tools Reportedly Collected Student Biometric Data Without Adequ",
+      "id": "AIID-374",
+      "incident_id": 374,
+      "title": "UK Ofqual's Algorithm Disproportionately Provided Lower Grades Than Teachers' Assessments",
       "date": "2026-05-18",
       "category": "other",
       "severity": "medium"
@@ -121,19 +121,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-495",
-      "incident_id": 495,
-      "title": "Carmel High School Students Reportedly Posted Racist Deepfake Videos Making New York Principal Appea",
-      "date": "2026-05-18",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-538",
       "incident_id": 538,
       "title": "Texas A&M-Commerce Professor Reportedly Used ChatGPT to Accuse Students of Cheating and Assign Incom",
       "date": "2026-05-18",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-495",
+      "incident_id": 495,
+      "title": "Carmel High School Students Reportedly Posted Racist Deepfake Videos Making New York Principal Appea",
+      "date": "2026-05-18",
+      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -377,14 +377,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-514",
-      "incident_id": 514,
-      "title": "Turnitin's ChatGPT-Detection Tool Falsely Flagged Student Essays as AI-Generated",
-      "date": "2026-05-17",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-524",
       "incident_id": 524,
       "title": "Synthesized Voices Were Reportedly Used by Torswats to Sell Swatting Calls Targeting Schools and Hom",
@@ -398,6 +390,14 @@
       "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
       "date": "2026-05-17",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-514",
+      "incident_id": 514,
+      "title": "Turnitin's ChatGPT-Detection Tool Falsely Flagged Student Essays as AI-Generated",
+      "date": "2026-05-17",
+      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -1630,5 +1630,5 @@
     "last7Days": 82,
     "last30Days": 115
   },
-  "lastUpdated": "2026-05-19T16:59:26.473309+05:30"
+  "lastUpdated": "2026-05-19T21:14:53.086002+05:30"
 }
