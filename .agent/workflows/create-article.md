@@ -324,9 +324,9 @@ Must be the **FIRST element** inside `<div class="container">`, before the artic
 ## 7. Deployment Checklist
 1.  **Create HTML File:** Populate with full content.
 2.  **Generate Image:** Save to `/images/articles/`.
-3.  **Update `articles.json`:**
+3.  **Update `ioc-data/articles.json`:**
     *   **CRITICAL:** Insert new entry at the **VERY TOP** (Index 0) of the JSON array.
-    *   This drives the Homepage "Latest News" feed.
+    *   This drives the Homepage "Latest News" feed, the Articles List, and the Notification Center.
 4.  **Update Sitemap:** Add URL to `sitemap.xml`.
 5.  **Fact-Check Review:** Re-read the article and verify every claim against sources from Step 0.
 6.  **Push:** `git add . && git commit -m "feat(content): new article..." && git push`
