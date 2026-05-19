@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 18 2026",
+            "headline": "Shai-Hulud Worm Clones Target NPM Developers—Code Reused",
+            "title": "First Shai-Hulud Worm Clones Detected in NPM Developer Attacks",
+            "content": "The Shai-Hulud worm, recently open-sourced by TeamPCP, has been cloned and deployed by at least one threat actor targeting NPM developers. This malware variant is being used to compromise developer environments, potentially leading to widespread supply chain attacks. The original worm was designed to propagate through NPM, a popular package manager for JavaScript, and its clones are following suit. Developers using NPM are advised to scrutinize package dependencies and monitor for unusual activity. This incident underscores the risks associated with open-sourcing malware, as it facilitates rapid adoption by malicious actors.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/first-shai-hulud-worm-clones-emerge/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "MiniPlasma 0-Day—Elevate to SYSTEM on Patched Windows",
+            "title": "MiniPlasma 0-Day Exploits SYSTEM Privilege Escalation on Windows",
+            "content": "Security researcher Chaotic Eclipse has released a proof-of-concept for a zero-day vulnerability dubbed MiniPlasma, which allows attackers to gain SYSTEM privileges on fully patched Windows systems. This flaw follows previous disclosures of YellowKey and GreenPlasma vulnerabilities by the same researcher. MiniPlasma affects all current Windows versions, posing a significant risk to enterprises relying on Windows for critical operations. Organizations are urged to monitor for updates from Microsoft and implement additional security measures to mitigate potential exploitation. This development highlights ongoing challenges in maintaining Windows security despite regular patching.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/miniplasma-windows-0-day-enables-system.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Four Malicious NPM Packages—Infostealers and DDoS Tools Found",
+            "title": "Malicious NPM Packages Distribute Infostealers and DDoS Malware",
+            "content": "Researchers have identified four malicious NPM packages, including a clone of the Shai-Hulud worm, designed to distribute information-stealing malware and Phantom Bot DDoS tools. The packages, such as chalk-tempalte and @deadcode09284814/axios-util, have been downloaded hundreds of times, potentially compromising numerous developer environments. This discovery highlights the persistent threat of malicious packages in open-source ecosystems, emphasizing the need for developers to verify package integrity and source reliability. The incident serves as a reminder of the critical importance of securing software supply chains against such threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/four-malicious-npm-packages-deliver.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Critical NGINX Flaw—Exploitation for RCE Begins",
+            "title": "Exploitation of Critical NGINX Vulnerability Leads to RCE and DoS",
+            "content": "A critical vulnerability in NGINX, affecting its default configurations, is now being actively exploited to cause denial-of-service (DoS) and, in cases where Address Space Layout Randomization (ASLR) is disabled, remote code execution (RCE). This flaw poses a severe risk to web servers using NGINX, a widely adopted web server technology. Administrators are advised to apply patches or implement workarounds immediately to prevent exploitation. The vulnerability's exploitation underscores the necessity for robust security practices, including maintaining up-to-date systems and enabling security features like ASLR.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploitation-of-critical-nginx-vulnerability-begins/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Pwn2Own Berlin 2026—$1.3M Awarded for 47 Zero-Days",
+            "title": "Hackers Earn $1,298,250 for 47 Zero-Days at Pwn2Own Berlin 2026",
+            "content": "The Pwn2Own Berlin 2026 hacking contest concluded with security researchers earning $1,298,250 by exploiting 47 zero-day vulnerabilities across various platforms. This event, renowned for its rigorous testing of software and hardware security, saw participants targeting popular products, highlighting ongoing vulnerabilities in widely used technologies. The substantial rewards underscore the value of identifying and responsibly disclosing security flaws. Organizations should take note of the vulnerabilities exposed during the contest and prioritize patching affected systems to mitigate potential risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-earn-1-298-250-for-47-zero-days-at-pwn2own-berlin-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 15 2026",
+            "headline": "Funnel Builder Plugin Flaw—Credit Card Data at Risk",
+            "title": "Funnel Builder WordPress Plugin Exploited to Steal Credit Card Data",
+            "content": "A critical vulnerability in the Funnel Builder plugin for WordPress is being actively exploited to inject malicious JavaScript into WooCommerce checkout pages, leading to credit card data theft. This flaw affects numerous e-commerce sites using the plugin, posing a significant threat to online retailers and their customers. Site administrators are urged to update the plugin immediately and review their security configurations to prevent data breaches. This incident highlights the ongoing risks associated with third-party plugins in content management systems and the importance of regular security audits.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/funnel-builder-wordpress-plugin-bug-exploited-to-steal-credit-cards/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
             "headline": "Exchange 0-Day and npm Worm—Critical Flaws Exploited",
             "title": "Exchange Server 0-Day and npm Worm Highlight Supply Chain Vulnerabilities",
             "content": "A critical zero-day vulnerability in Microsoft Exchange Server is being actively exploited, raising significant security concerns. Simultaneously, a worm targeting npm packages has been discovered, highlighting the risks of supply chain attacks. The npm worm exploits weak dependencies in trusted packages, potentially affecting thousands of developers and projects. Additionally, a fake AI model repository has been used to distribute information-stealing malware, further complicating the threat landscape. These incidents underscore the need for robust dependency management and vigilant monitoring of software supply chains. Organizations are urged to apply patches promptly and review their security protocols to mitigate these threats.",
@@ -74,52 +128,61 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/nginx-cve-2026-42945-exploited-in-wild.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 16 2026",
-            "headline": "Microsoft Denies Azure Vulnerability—No CVE Issued",
-            "title": "Microsoft Disputes Azure Backup Vulnerability Claim, No CVE Released",
-            "content": "A security researcher has alleged that Microsoft quietly addressed a vulnerability in Azure Backup for Azure Kubernetes Service (AKS) without issuing a Common Vulnerabilities and Exposures (CVE) identifier. The researcher claims the flaw was significant, yet Microsoft maintains that the behavior was expected and that no product changes were made. This dispute highlights ongoing concerns about transparency in vulnerability disclosures. Users of Azure Backup for AKS should remain vigilant and ensure their systems are up-to-date. The incident underscores the importance of clear communication between vendors and the security community.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-rejects-critical-azure-vulnerability-report-no-cve-issued/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 16 2026",
-            "headline": "WooCommerce Checkout Skimming—Funnel Builder Exploit Active",
-            "title": "Funnel Builder Plugin Exploited to Skim WooCommerce Payment Data",
-            "content": "A critical vulnerability in the Funnel Builder plugin for WordPress is being actively exploited to inject malicious JavaScript into WooCommerce checkout pages. This exploit aims to steal payment data from unsuspecting users, posing a significant risk to e-commerce businesses using the plugin. Sansec, a cybersecurity firm, has documented the ongoing activity, urging site administrators to update their plugins immediately. The incident highlights the persistent threat of skimming attacks in the e-commerce sector. Businesses should regularly audit their WordPress installations and apply security patches promptly to mitigate risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/funnel-builder-flaw-under-active.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 16 2026",
-            "headline": "NGINX Critical Flaw—PoC Code Released, Patch Now",
-            "title": "PoC Code Released for Critical NGINX Vulnerability Patched in 2026",
-            "content": "A critical vulnerability in NGINX, introduced in 2008, has been patched in both NGINX Plus and its open-source version. The flaw, which has now been publicly disclosed with proof-of-concept (PoC) code, poses significant risks to web servers using NGINX. This vulnerability could allow attackers to execute arbitrary code, potentially compromising server integrity and data. Administrators are urged to apply the latest patches immediately to mitigate potential exploitation. This development underscores the importance of timely updates in widely used software to prevent exploitation of long-standing vulnerabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/poc-code-published-for-critical-nginx-vulnerability/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 14 2026",
-            "headline": "Trump Courts Tech Titans for Critical Xi Summit",
-            "title": "Trump Seeks Tech Leaders' Support Amid Xi Summit and Chip Tensions",
-            "content": "In a strategic move, former President Donald Trump has enlisted prominent tech figures, including Apple CEO Tim Cook, NVIDIA's Jensen Huang, and Elon Musk, to attend an upcoming summit with Chinese President Xi Jinping. The meeting is anticipated to address pressing issues such as U.S. chip export restrictions and the geopolitical tensions surrounding Taiwan. This gathering could signal a potential shift in U.S. policy, as Trump's administration previously imposed stringent measures on Chinese tech imports. The involvement of these tech leaders highlights the critical role of the semiconductor industry and AI advancements in global politics. Industry professionals should monitor developments, as outcomes may impact international trade and technology regulations.",
+            "date": "May 13 2026",
+            "headline": "Altman Faces Allegations of Deception in OpenAI Court Battle",
+            "title": "Sam Altman Confronts Lying Allegations in OpenAI Control Dispute",
+            "content": "Sam Altman, CEO of OpenAI, is under scrutiny in a high-profile court case where he faces accusations of dishonesty regarding his control over the company. The trial, which has drawn comparisons to Elon Musk's contentious leadership style, centers on Altman's alleged misrepresentations during internal power struggles at OpenAI. The case highlights the intense pressures and ethical challenges faced by leaders in the rapidly evolving AI industry. If proven, these allegations could impact Altman's credibility and leadership position, affecting OpenAI's strategic direction. Stakeholders in AI development should monitor the trial's outcomes for potential shifts in leadership dynamics within major AI firms.",
             "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
             "relatedResources": []
         },
         {
-            "date": "May 13 2026",
-            "headline": "OpenAI Mitigates TanStack Supply Chain Breach",
-            "title": "OpenAI Responds to TanStack \"Mini Shai-Hulud\" Supply Chain Attack",
-            "content": "OpenAI has disclosed its response to the TanStack \"Mini Shai-Hulud\" supply chain attack, which compromised npm packages. The breach affected systems reliant on specific TanStack components, prompting OpenAI to enhance security measures, including the re-signing of certificates and code audits. Notably, macOS users are urged to update OpenAI applications by June 12, 2026, to mitigate potential vulnerabilities. This incident underscores the growing threat of supply chain attacks in the software industry, emphasizing the need for robust security practices. Developers and organizations using npm packages should review their dependencies and apply necessary updates to safeguard their systems.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+            "date": "May 18 2026",
+            "headline": "SandboxAQ Democratizes Drug Discovery with Claude Integration",
+            "title": "SandboxAQ Integrates Drug Discovery Models with Claude for Wider Access",
+            "content": "SandboxAQ has integrated its advanced drug discovery models with Claude, aiming to simplify access for researchers without extensive computing expertise. This move positions SandboxAQ alongside competitors like Chai Discovery and Isomorphic Labs, who are also innovating in AI-driven drug discovery. By leveraging Claude, SandboxAQ seeks to overcome access barriers, enabling a broader range of scientists to utilize AI models in pharmaceutical research. This democratization of technology could accelerate drug development processes and foster innovation in the biotech sector. Researchers and developers should explore Claude's capabilities to enhance their drug discovery efforts.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/18/sandboxaq-brings-its-drug-discovery-models-to-claude-no-phd-in-computing-required/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "AI Misfire: Lawsuit Fails Over Fake Citations",
+            "title": "AI-Generated Citations Fail in Facebook Defamation Lawsuit",
+            "content": "A lawsuit involving AI-generated citations collapsed after a plaintiff attempted to sue Facebook users for defamation in a group called \"Are We Dating the Same Guy.\" The case was dismissed due to the reliance on fabricated legal references produced by AI, underscoring the risks of using AI tools without proper verification. This incident highlights the importance of critical evaluation of AI-generated content, especially in legal contexts where accuracy is paramount. Legal professionals should ensure thorough validation of AI outputs to avoid similar pitfalls and maintain the integrity of legal proceedings.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/legal-fail-dont-use-ai-to-sue-facebook-users-for-calling-you-a-bad-date/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Anthropic Acquires Key Dev Tools Startup Stainless",
+            "title": "Anthropic Acquires Stainless, Boosting SDK Automation Capabilities",
+            "content": "Anthropic has acquired Stainless, a New York-based startup known for automating the creation and maintenance of software development kits (SDKs). Stainless has gained traction among tech giants like OpenAI, Google, and Cloudflare for its innovative approach to SDK management. This acquisition is expected to enhance Anthropic's development capabilities, streamlining API interactions for developers. As SDKs are crucial for building robust applications, this move could significantly impact developers relying on Anthropic's tools. Developers should watch for updates on how this acquisition might influence SDK offerings and integration processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Musk v. Altman: AI Leadership Under Fire",
+            "title": "Musk v. Altman Trial Highlights AI Leadership Conflicts",
+            "content": "The Musk v. Altman trial has concluded, spotlighting leadership conflicts within the AI industry. Elon Musk challenged Sam Altman's role in directing OpenAI's future, questioning his suitability to lead the AI giant. Altman's defense highlighted Musk's own credibility issues, leading to a jury verdict that underscored the contentious nature of AI leadership. This trial reflects broader concerns about who should guide AI's development amid ethical and strategic challenges. AI professionals should consider the implications of leadership disputes on the industry's trajectory and governance.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people",
+            "relatedResources": []
+        },
+        {
+            "date": "May 18 2026",
+            "headline": "Jury Rules Against Musk in OpenAI Lawsuit Timing",
+            "title": "Elon Musk's OpenAI Lawsuit Dismissed Over Delayed Filing",
+            "content": "A jury has ruled against Elon Musk in his lawsuit against OpenAI, citing the delayed timing of his legal action. Musk's attempt to challenge OpenAI's operations was deemed untimely, leading to an immediate affirmation of the jury's decision by the judge. Musk plans to appeal the verdict, indicating ongoing legal battles over AI governance. This case highlights the importance of timely legal actions in corporate disputes and could influence future litigation strategies in the tech industry. Legal teams should ensure prompt action when addressing corporate grievances to avoid similar outcomes.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/elon-musk-loses-trial-accusing-sam-altman-openai-of-stealing-a-charity/",
             "relatedResources": []
         },
         {
@@ -201,42 +264,6 @@ const websiteContent = {
             "content": "As artificial intelligence continues to shape the future, its mention in commencement speeches has become increasingly contentious. Recent events, including Eric Schmidt's booed address at the University of Arizona, illustrate the growing unease among graduates about AI's impact on career prospects. The tension reflects broader societal concerns about AI-driven job displacement and economic shifts. For educators and industry leaders, this serves as a reminder of the importance of addressing AI's challenges and opportunities with nuance and transparency. Engaging with students and the public on these topics is crucial for fostering a well-informed and adaptable workforce.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/17/if-youre-giving-a-commencement-speech-in-2026-maybe-dont-mention-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 17 2026",
-            "headline": "AI Drive-Thrus: Fast Food's Next Frontier",
-            "title": "Chatbots Revolutionize Fast Food with Drive-Thru Automation",
-            "content": "AI-driven chatbots are transforming the fast-food industry, starting with drive-thru services. Initially adopted by McDonald's in 2021, these AI systems streamline order processing, reduce wait times, and enhance customer experience. The technology leverages natural language processing and machine learning to accurately interpret and respond to customer orders. As AI continues to integrate into daily life, its application in fast-food services represents a broader trend towards automation in customer-facing roles. Industry analysts predict that AI-driven solutions will become standard in various sectors, reshaping traditional service models.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/928096/chatbots-ai-drive-thru-mcdonalds-wendys",
-            "relatedResources": []
-        },
-        {
-            "date": "May 16 2026",
-            "headline": "AI Gold Rush—Uneven Gains Across Tech Industry",
-            "title": "Disparities Emerge Amidst AI Boom, Affecting Tech Sector Dynamics",
-            "content": "The ongoing AI boom is creating a stark divide within the tech industry, with some companies reaping substantial benefits while others struggle to keep pace. This uneven distribution of success is raising concerns about the sustainability and inclusivity of AI advancements. As investment pours into AI-driven projects, smaller firms and startups face challenges in accessing resources and talent, potentially stifling innovation. Industry leaders are urged to address these disparities to ensure a balanced growth trajectory that fosters widespread technological progress. Stakeholders should consider strategic partnerships and investments to bridge the gap.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 16 2026",
-            "headline": "ArXiv Cracks Down—AI-Generated Papers Face Ban",
-            "title": "ArXiv Enforces Year-Long Ban for AI-Generated Scientific Papers",
-            "content": "ArXiv, a prominent research repository, has announced a stringent policy to ban authors for a year if they submit papers generated entirely by AI. This move aims to uphold the integrity of scientific research by curbing the careless use of large language models in academic submissions. The decision reflects growing concerns over the authenticity and reliability of AI-generated content in scholarly work. Researchers are encouraged to ensure human oversight and contribution in their submissions to avoid penalties. This policy underscores the importance of maintaining rigorous standards in scientific publishing.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 16 2026",
-            "headline": "Sony Defends AI Camera—Clarifies Misunderstandings",
-            "title": "Sony Explains AI Camera Assistant's Functionality Amid Criticism",
-            "content": "Sony has responded to criticism regarding its AI Camera Assistant on the Xperia 1 XIII, clarifying that the feature does not alter photos but offers suggestions based on lighting, depth, and subject. This clarification follows backlash from users who misunderstood the assistant's capabilities. Sony emphasizes that the AI tool aims to enhance user experience by providing real-time guidance for optimal photography. Users are advised to explore the feature's settings to fully leverage its benefits without compromising image authenticity. This incident highlights the importance of clear communication in AI product functionalities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant",
             "relatedResources": []
         }
     ],
