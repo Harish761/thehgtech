@@ -1,4 +1,13 @@
 {
+  "shinyhunters-711-salesforce-breach-2026.html": {
+    "title": "Supply Chain Shattered: The 7-Eleven Salesforce Breach | TheHGTech [2026]",
+    "description": "How the ShinyHunters extortion group bypassed 7-Eleven corporate perimeter by exploiting misconfigured Salesforce Experience Cloud portals.",
+    "h1": "Supply Chain Shattered: The 7-Eleven Salesforce Breach",
+    "paragraphs": [
+      "On April 8, 2026, convenience store giant 7-Eleven confirmed a significant data breach affecting systems used to manage their franchise operations.",
+      "Unlike traditional ransomware attacks that rely on encrypting endpoints to halt operations, ShinyHunters executed a sophisticated \"Living off the Land\" (LotL) data extortion campaign."
+    ]
+  },
   "delve-ai-compliance-scandal-2026.html": {
     "title": "Delve Scandal Deep Dive: The $300M Death of Checkbox Security | TheHGTech [2026]",
     "description": "Technical analysis of the Delve AI compliance scandal. How one startup fabricated 493 audit reports and why this breaks the trust of modern GRC.",
