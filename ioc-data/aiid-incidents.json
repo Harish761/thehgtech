@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-424",
+      "incident_id": 424,
+      "title": "Canadian Universities' AI Proctoring Tools Reportedly Collected Student Biometric Data Without Adequ",
+      "date": "2026-05-20",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-9",
       "incident_id": 9,
       "title": "New York City Reportedly Released Disputed Value-Added Teacher Ratings for Thousands of Teachers",
@@ -84,14 +92,6 @@
       "id": "AIID-301",
       "incident_id": 301,
       "title": "Honorlock's AI Proctoring System Reportedly Led Broward College to Accuse a Teenager of Cheating",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-424",
-      "incident_id": 424,
-      "title": "Canadian Universities\u2019 AI Proctoring Tools Reportedly Collected Student Biometric Data Without Adequ",
       "date": "2026-05-18",
       "category": "other",
       "severity": "medium"
@@ -1630,5 +1630,5 @@
     "last7Days": 81,
     "last30Days": 110
   },
-  "lastUpdated": "2026-05-20T03:11:19.641131+05:30"
+  "lastUpdated": "2026-05-20T09:52:32.179350+05:30"
 }
