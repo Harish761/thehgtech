@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 20 2026",
+            "headline": "Grafana Breach—Token Rotation Missed After Supply-Chain Attack",
+            "title": "Grafana Data Breach Linked to Unrotated Token Post TanStack Attack",
+            "content": "Grafana has confirmed a data breach resulting from a single GitHub workflow token that was not rotated following the recent TanStack npm supply-chain attack. The breach underscores the critical importance of timely token management, especially after incidents involving compromised dependencies. The affected token allowed unauthorized access, potentially exposing sensitive data to threat actors. This incident highlights ongoing risks in the software supply chain, particularly for organizations relying on open-source components. Grafana users are advised to review their token management policies and ensure all tokens are rotated promptly after any security incident.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/grafana-breach-caused-by-missed-token-rotation-after-tanstack-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Microsoft Disrupts Malware-Signing Service—Thousands of Systems Affected",
+            "title": "Microsoft Shuts Down Malware-Signing Service Exploiting Artifact Signing System",
+            "content": "Microsoft has dismantled a malware-signing-as-a-service (MSaaS) operation that exploited its Artifact Signing system to distribute malicious code. This operation facilitated ransomware and other cyberattacks, compromising thousands of machines globally. By leveraging Microsoft's signing infrastructure, attackers were able to bypass traditional security measures, underscoring the need for robust monitoring of code-signing activities. Organizations are urged to audit their systems for any signs of compromise and ensure their security protocols are up-to-date. This takedown is part of Microsoft's ongoing efforts to secure its ecosystem against sophisticated threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-takes-down-malware-signing.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Anthropic Patches Claude Sandbox Bypass—Data Exfiltration Risk Mitigated",
+            "title": "Anthropic Addresses Claude Code Sandbox Bypass Vulnerability",
+            "content": "Anthropic has quietly patched a vulnerability in its Claude AI's code sandbox that could have been exploited for data exfiltration. Discovered by a security researcher, the flaw could be combined with prompt injection attacks to access sensitive information. This vulnerability highlights the ongoing challenges in securing AI models against novel attack vectors. Users of Claude AI should ensure they are using the latest version to benefit from the security improvements. The patch reflects Anthropic's commitment to maintaining the integrity and security of its AI offerings.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/anthropic-silently-patches-claude-code-sandbox-bypass/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Drupal Issues Critical Update—High Exploitation Risk",
+            "title": "Drupal Releases Core Security Update to Address High-Risk Bug",
+            "content": "Drupal has announced a critical core security release to address a vulnerability with a high risk of exploitation. The update is expected to be available later today, and administrators are urged to apply it immediately to prevent potential attacks. Given the rapid development of exploits following disclosure, the window for patching is narrow. This update is part of Drupal's proactive approach to security, ensuring that its platform remains resilient against emerging threats. Users should monitor for the release and prioritize its deployment to safeguard their systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-update-to-fix-bug-with-high-exploitation-risk/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "320+ NPM Packages Compromised—Mini Shai-Hulud Attack Strikes",
+            "title": "Mini Shai-Hulud Supply Chain Attack Hits Over 320 NPM Packages",
+            "content": "A supply chain attack dubbed \"Mini Shai-Hulud\" has compromised over 320 npm packages within the @antv namespace. The attack was facilitated through a compromised maintainer account, leading to the distribution of malicious package versions. This incident highlights the vulnerabilities inherent in open-source ecosystems, where trust in maintainers is paramount. Developers using affected packages should audit their dependencies and update to safe versions immediately. The attack serves as a stark reminder of the need for vigilance in monitoring package integrity and maintainer credentials.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/over-320-npm-packages-hit-by-fresh-mini-shai-hulud-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "AI Security Lags—Enterprises React Post-Production Deployment",
+            "title": "Securing AI Systems Post-Deployment Poses Challenges for Enterprises",
+            "content": "As enterprises accelerate AI deployments into production, security teams are increasingly forced into a reactive posture. The rush to operationalize AI projects often leaves security considerations as an afterthought, exposing systems to potential vulnerabilities. This trend highlights the need for integrating security into the AI development lifecycle from the outset. Organizations should implement robust security frameworks and conduct regular audits to mitigate risks associated with AI deployments. By prioritizing security early, enterprises can better protect their AI investments and maintain trust in their systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/caught-off-guard-securing-ai-after-it-hits-production/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
             "headline": "GitHub Repositories Breached—TeamPCP Claims Access to 4,000 Repos",
             "title": "GitHub Probes TeamPCP's Alleged Breach of 4,000 Internal Repositories",
             "content": "GitHub is currently investigating a potential security breach after the cybercriminal group TeamPCP claimed unauthorized access to approximately 4,000 of its internal repositories. The threat actor has allegedly listed the platform's source code and internal organizational data for sale on a cybercrime forum. While GitHub has not found evidence of customer data being impacted, the breach could have significant implications for the platform's security and integrity. This incident underscores the ongoing threat posed by sophisticated cybercriminal groups targeting major tech companies. Security professionals are advised to monitor for updates and ensure their own repositories are secured against unauthorized access.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-microsoft-vulnerabilities-doubled-from-exposure-to-escalation/",
             "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "SEPPMail Flaws Enable RCE—Email Security at Risk",
-            "title": "SEPPMail Secure E-Mail Gateway Vulnerabilities Allow RCE and Mail Access",
-            "content": "Critical vulnerabilities in SEPPMail Secure E-Mail Gateway have been disclosed, potentially allowing remote code execution (RCE) and unauthorized access to email traffic. These flaws could enable attackers to execute arbitrary code and read sensitive emails from the virtual appliance. Organizations using SEPPMail solutions are at risk, and immediate patching is recommended to prevent exploitation. The vulnerabilities highlight the importance of securing email gateways, a critical component of enterprise communication infrastructure. Security teams should review their email security configurations and apply updates promptly to safeguard against these threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/seppmail-secure-e-mail-gateway.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Industrial Robots Vulnerable—CVE-2026-8153 Exploits OS Injection",
-            "title": "CVE-2026-8153 Exposes Industrial Robot Fleets to Hacking Risks",
-            "content": "A critical vulnerability, CVE-2026-8153, in Universal Robots PolyScope 5 has been identified, allowing OS command injection attacks. This flaw could enable attackers to gain control over industrial robot fleets, posing significant operational and safety risks. The vulnerability affects systems running PolyScope 5, a widely used interface for programming and controlling industrial robots. Organizations utilizing these robots are urged to apply security patches and review their network security protocols to prevent unauthorized access. This incident underscores the growing cybersecurity challenges in industrial automation and the need for robust security measures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-vulnerability-exposes-industrial-robot-fleets-to-hacking/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "GitHub Action Compromised—CI/CD Credentials at Risk",
-            "title": "GitHub Action Tags Redirected to Imposter Commit for Credential Theft",
-            "content": "A software supply chain attack has targeted the popular GitHub Actions workflow, actions-cool/issues-helper, redirecting tags to a malicious commit. This compromise allows attackers to execute code that harvests CI/CD credentials, exfiltrating them to an attacker-controlled server. All existing tags in the repository have been affected, posing a significant risk to developers relying on this workflow. GitHub users are advised to verify their workflows and review access permissions to mitigate potential credential theft. This incident highlights the vulnerabilities in software supply chains and the importance of securing development environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/github-actions-supply-chain-attack.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Shai-Hulud Worm Clones Target NPM Developers—Code Reused",
-            "title": "First Shai-Hulud Worm Clones Detected in NPM Developer Attacks",
-            "content": "The Shai-Hulud worm, recently open-sourced by TeamPCP, has been cloned and deployed by at least one threat actor targeting NPM developers. This malware variant is being used to compromise developer environments, potentially leading to widespread supply chain attacks. The original worm was designed to propagate through NPM, a popular package manager for JavaScript, and its clones are following suit. Developers using NPM are advised to scrutinize package dependencies and monitor for unusual activity. This incident underscores the risks associated with open-sourcing malware, as it facilitates rapid adoption by malicious actors.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/first-shai-hulud-worm-clones-emerge/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "MiniPlasma 0-Day—Elevate to SYSTEM on Patched Windows",
-            "title": "MiniPlasma 0-Day Exploits SYSTEM Privilege Escalation on Windows",
-            "content": "Security researcher Chaotic Eclipse has released a proof-of-concept for a zero-day vulnerability dubbed MiniPlasma, which allows attackers to gain SYSTEM privileges on fully patched Windows systems. This flaw follows previous disclosures of YellowKey and GreenPlasma vulnerabilities by the same researcher. MiniPlasma affects all current Windows versions, posing a significant risk to enterprises relying on Windows for critical operations. Organizations are urged to monitor for updates from Microsoft and implement additional security measures to mitigate potential exploitation. This development highlights ongoing challenges in maintaining Windows security despite regular patching.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/miniplasma-windows-0-day-enables-system.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Four Malicious NPM Packages—Infostealers and DDoS Tools Found",
-            "title": "Malicious NPM Packages Distribute Infostealers and DDoS Malware",
-            "content": "Researchers have identified four malicious NPM packages, including a clone of the Shai-Hulud worm, designed to distribute information-stealing malware and Phantom Bot DDoS tools. The packages, such as chalk-tempalte and @deadcode09284814/axios-util, have been downloaded hundreds of times, potentially compromising numerous developer environments. This discovery highlights the persistent threat of malicious packages in open-source ecosystems, emphasizing the need for developers to verify package integrity and source reliability. The incident serves as a reminder of the critical importance of securing software supply chains against such threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/four-malicious-npm-packages-deliver.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 20 2026",
+            "headline": "OpenClaw's Rise—AI Agents Finally Prove Their Worth",
+            "title": "OpenClaw's Open-Source Platform Revolutionizes AI Personal Assistants",
+            "content": "After years of unmet promises, AI personal assistants are finally becoming more capable, thanks to the open-source platform OpenClaw. This development marks a significant shift in the AI landscape, where previous iterations often fell short of expectations. OpenClaw's platform enables the creation of AI agents that function more like efficient personal assistants rather than inept interns. The platform's success has prompted top AI labs to chase similar advancements, indicating a broader industry trend towards more practical AI solutions. For developers and tech leaders, this signals a new era of AI utility, with potential applications spanning various industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/934478/if-google-cant-make-ai-agents-useful-maybe-no-one-can",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Utah's 40,000-Acre Data Center Sparks Controversy",
+            "title": "Stratos Project Faces Backlash Over Massive Utah Data Center",
+            "content": "The Stratos Project, a 40,000-acre data center in Utah's Hansel Valley, has become a focal point of controversy following its approval by Box Elder County commissioners. Despite warnings from experts and public opposition, the project is set to become one of the world's largest data centers. Concerns center around environmental impact, resource consumption, and data privacy. As data centers become increasingly vital to digital infrastructure, the Stratos Project highlights the challenges of balancing technological advancement with environmental and social responsibilities. Stakeholders in tech and policy must navigate these complexities to ensure sustainable development.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/933687/utah-stratos-project-data-center-kevin-oleary",
+            "relatedResources": []
+        },
+        {
+            "date": "May 14 2026",
+            "headline": "Trump Enlists Tech Titans for Critical Xi Summit",
+            "title": "Trump Seeks Tech Leaders' Support Ahead of Xi Meeting",
+            "content": "In a strategic move, former President Donald Trump has called upon tech leaders, including Tim Cook (referred to as \"Tim Apple\"), Jensen Huang, and Elon Musk, to attend a summit with Chinese President Xi Jinping. The meeting could force Trump to reconsider his stance on chip restrictions and Taiwan, as these issues are pivotal to the tech industry. The involvement of these influential figures underscores the importance of the summit in shaping future tech policies and international relations. Tech professionals should monitor developments closely, as outcomes may impact global supply chains and market dynamics.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "NanoClaw Transforms AI Agents into Enterprise 'Second Brain'",
+            "title": "NanoClaw's Secure AI Agents Aim to Revolutionize Enterprise Operations",
+            "content": "NanoClaw, an enterprise-friendly variant of the open-source AI agent platform OpenClaw, is set to commercialize its technology for large-scale enterprise use. The platform offers secure AI agents equipped with an ever-updating library of workplace context, effectively acting as a 'second brain' for businesses. This move aims to enhance operational efficiency and decision-making processes across industries. As enterprises increasingly adopt AI solutions, NanoClaw's approach could redefine how businesses leverage AI for strategic advantage. Tech leaders should consider integrating such technologies to stay competitive in an evolving digital landscape.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/nanoclaws-creators-are-turning-the-secure-open-source-ai-agent-harness-into-an-enterprise-second-brain",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Google's AI Search Boosts Ads with Custom Explainers",
+            "title": "Google's Gemini AI Enhances Search Ads with Personalized Recommendations",
+            "content": "Google has integrated its Gemini AI chatbot into its search platform, transforming how ads are presented to users. When searching for products, the AI now generates custom explainers to highlight why specific items are recommended, enhancing the advertising experience. This update follows Google's recent unveiling of a new search interface, signaling a shift towards more personalized and engaging user interactions. For marketers and advertisers, this development offers new opportunities to target consumers effectively. Understanding these AI-driven changes is crucial for professionals aiming to optimize their digital marketing strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/934585/google-ai-shopping-ads-search",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "AI Search Startups Surge in Popularity and Investment",
+            "title": "AI Search Startups Attract Significant Attention in Consumer AI Market",
+            "content": "AI search technology has emerged as a hotbed of innovation, drawing substantial interest and investment in the consumer AI sector. Startups in this space are leveraging advanced AI models to enhance search capabilities, offering more intuitive and accurate results. This trend reflects a growing demand for smarter search solutions that cater to user needs more effectively. As AI search continues to evolve, tech professionals and investors should keep an eye on emerging players and technologies that could disrupt traditional search paradigms. Staying informed on these advancements is essential for maintaining a competitive edge in the tech industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/",
+            "relatedResources": []
+        },
         {
             "date": "May 19 2026",
             "headline": "Google's AI Shopping Cart—A Retail Game-Changer",
@@ -147,15 +201,6 @@ const websiteContent = {
             "content": "At Google I/O 2026, Google introduced its AI-driven \"Universal Cart,\" a tool designed to streamline shopping across multiple retailers and Google platforms, including Gemini, YouTube, and Gmail. This ambitious move comes as other tech giants scale back their AI commerce initiatives. The Universal Cart leverages advanced AI algorithms to provide a seamless shopping experience, potentially transforming consumer habits by integrating purchasing power directly into Google's ecosystem. This development could significantly impact online retail dynamics, offering users a more cohesive and intuitive shopping experience. Retailers and developers should prepare for potential shifts in consumer expectations and engagement strategies.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/news/932927/google-io-agentic-ai-shopping-universal-cart",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "Altman Faces Allegations of Deception in OpenAI Trial",
-            "title": "Sam Altman Confronts Accusations of Dishonesty at OpenAI Legal Proceedings",
-            "content": "Sam Altman, CEO of OpenAI, is under scrutiny as he faces allegations of dishonesty during a high-profile trial concerning his leadership at the AI research organization. The trial has brought to light tensions within OpenAI, reminiscent of Elon Musk's tumultuous experiences with corporate control. The proceedings could potentially impact OpenAI's reputation and its ongoing projects, as stakeholders question the transparency and integrity of its leadership. This case underscores the importance of ethical governance in AI development, a critical concern for industry leaders and developers alike. Observers should monitor the trial's outcomes for broader implications on AI governance.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Gemini, initially a subtle feature in Google apps, has expanded its presence, raising privacy concerns among users. The feature's integration into services like Gmail and Google Drive has become more pronounced, prompting scrutiny over data handling and user consent. As Gemini's capabilities grow, users and privacy advocates are questioning the transparency of data usage and the potential for intrusive monitoring. Google users should review privacy settings and stay informed about changes to app functionalities to safeguard personal information.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/931752/google-io-2026-gemini-icon-docs-workspace",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "SandboxAQ Democratizes Drug Discovery with Claude Integration",
-            "title": "SandboxAQ Integrates Drug Discovery Models with Claude for Wider Access",
-            "content": "SandboxAQ has integrated its advanced drug discovery models with Claude, aiming to simplify access for researchers without extensive computing expertise. This move positions SandboxAQ alongside competitors like Chai Discovery and Isomorphic Labs, who are also innovating in AI-driven drug discovery. By leveraging Claude, SandboxAQ seeks to overcome access barriers, enabling a broader range of scientists to utilize AI models in pharmaceutical research. This democratization of technology could accelerate drug development processes and foster innovation in the biotech sector. Researchers and developers should explore Claude's capabilities to enhance their drug discovery efforts.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/18/sandboxaq-brings-its-drug-discovery-models-to-claude-no-phd-in-computing-required/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "AI Misfire: Lawsuit Fails Over Fake Citations",
-            "title": "AI-Generated Citations Fail in Facebook Defamation Lawsuit",
-            "content": "A lawsuit involving AI-generated citations collapsed after a plaintiff attempted to sue Facebook users for defamation in a group called \"Are We Dating the Same Guy.\" The case was dismissed due to the reliance on fabricated legal references produced by AI, underscoring the risks of using AI tools without proper verification. This incident highlights the importance of critical evaluation of AI-generated content, especially in legal contexts where accuracy is paramount. Legal professionals should ensure thorough validation of AI outputs to avoid similar pitfalls and maintain the integrity of legal proceedings.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/legal-fail-dont-use-ai-to-sue-facebook-users-for-calling-you-a-bad-date/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Anthropic Acquires Key Dev Tools Startup Stainless",
-            "title": "Anthropic Acquires Stainless, Boosting SDK Automation Capabilities",
-            "content": "Anthropic has acquired Stainless, a New York-based startup known for automating the creation and maintenance of software development kits (SDKs). Stainless has gained traction among tech giants like OpenAI, Google, and Cloudflare for its innovative approach to SDK management. This acquisition is expected to enhance Anthropic's development capabilities, streamlining API interactions for developers. As SDKs are crucial for building robust applications, this move could significantly impact developers relying on Anthropic's tools. Developers should watch for updates on how this acquisition might influence SDK offerings and integration processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Musk v. Altman: AI Leadership Under Fire",
-            "title": "Musk v. Altman Trial Highlights AI Leadership Conflicts",
-            "content": "The Musk v. Altman trial has concluded, spotlighting leadership conflicts within the AI industry. Elon Musk challenged Sam Altman's role in directing OpenAI's future, questioning his suitability to lead the AI giant. Altman's defense highlighted Musk's own credibility issues, leading to a jury verdict that underscored the contentious nature of AI leadership. This trial reflects broader concerns about who should guide AI's development amid ethical and strategic challenges. AI professionals should consider the implications of leadership disputes on the industry's trajectory and governance.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Jury Rules Against Musk in OpenAI Lawsuit Timing",
-            "title": "Elon Musk's OpenAI Lawsuit Dismissed Over Delayed Filing",
-            "content": "A jury has ruled against Elon Musk in his lawsuit against OpenAI, citing the delayed timing of his legal action. Musk's attempt to challenge OpenAI's operations was deemed untimely, leading to an immediate affirmation of the jury's decision by the judge. Musk plans to appeal the verdict, indicating ongoing legal battles over AI governance. This case highlights the importance of timely legal actions in corporate disputes and could influence future litigation strategies in the tech industry. Legal teams should ensure prompt action when addressing corporate grievances to avoid similar outcomes.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/elon-musk-loses-trial-accusing-sam-altman-openai-of-stealing-a-charity/",
             "relatedResources": []
         }
     ],
