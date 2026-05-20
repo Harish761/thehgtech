@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-86",
+      "incident_id": 86,
+      "title": "Ireland's 2020 Leaving Certificate Calculated-Grades Model Reportedly Issued Incorrect Scores to Tho",
+      "date": "2026-05-20",
+      "category": "other",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-135",
+      "incident_id": 135,
+      "title": "UT Austin's GRADE Algorithm Reportedly Reduced Review of Lower-Scored PhD Applicants Amid Bias Conce",
+      "date": "2026-05-20",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-424",
       "incident_id": 424,
       "title": "Canadian Universities' AI Proctoring Tools Reportedly Collected Student Biometric Data Without Adequ",
@@ -25,14 +41,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-86",
-      "incident_id": 86,
-      "title": "Ireland\u2019s 2020 Leaving Certificate Calculated-Grades Model Reportedly Issued Incorrect Scores to Tho",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "high"
-    },
-    {
       "id": "AIID-96",
       "incident_id": 96,
       "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
@@ -54,14 +62,6 @@
       "title": "University of Illinois' Proctorio Remote-Proctoring Deployment Reportedly Raised Student Rights Conc",
       "date": "2026-05-18",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-135",
-      "incident_id": 135,
-      "title": "UT Austin\u2019s GRADE Algorithm Reportedly Reduced Review of Lower-Scored PhD Applicants Amid Bias Conce",
-      "date": "2026-05-18",
-      "category": "bias",
       "severity": "medium"
     },
     {
@@ -1630,5 +1630,5 @@
     "last7Days": 80,
     "last30Days": 110
   },
-  "lastUpdated": "2026-05-21T02:04:21.917062+05:30"
+  "lastUpdated": "2026-05-21T03:33:09.842503+05:30"
 }
