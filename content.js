@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 20 2026",
+            "headline": "GitHub Repositories Breached—TeamPCP Claims Access to 4,000 Repos",
+            "title": "GitHub Probes TeamPCP's Alleged Breach of 4,000 Internal Repositories",
+            "content": "GitHub is currently investigating a potential security breach after the cybercriminal group TeamPCP claimed unauthorized access to approximately 4,000 of its internal repositories. The threat actor has allegedly listed the platform's source code and internal organizational data for sale on a cybercrime forum. While GitHub has not found evidence of customer data being impacted, the breach could have significant implications for the platform's security and integrity. This incident underscores the ongoing threat posed by sophisticated cybercriminal groups targeting major tech companies. Security professionals are advised to monitor for updates and ensure their own repositories are secured against unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Vulnerability Exploitation Surpasses Credential Theft—Verizon DBIR 2026",
+            "title": "Verizon DBIR 2026: Vulnerability Exploitation Now Top Breach Vector",
+            "content": "Verizon's 2026 Data Breach Investigations Report (DBIR) reveals that vulnerability exploitation has overtaken credential theft as the leading vector for data breaches. The report highlights how advancements in artificial intelligence have accelerated attack capabilities, while delays in patching vulnerabilities have exacerbated risks. Ransomware incidents and third-party compromises continue to rise, contributing to the shifting threat landscape. Organizations are urged to prioritize timely patch management and enhance their vulnerability assessment processes to mitigate these evolving threats. The findings reflect a critical need for robust cybersecurity strategies in an increasingly complex digital environment.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/verizon-dbir-2026-vulnerability-exploitation-overtakes-credential-theft-as-top-breach-vector/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Microsoft Halts Malware-Signing Service Exploiting Artifact Signing",
+            "title": "Cybercrime Service Disrupted for Abusing Microsoft's Artifact Signing",
+            "content": "Microsoft has successfully disrupted a malware-signing-as-a-service (MSaaS) operation that exploited its Artifact Signing service to issue fraudulent code-signing certificates. These certificates were used by ransomware groups and other cybercriminals to disguise malicious software as legitimate applications. This operation highlights the ongoing abuse of legitimate services by threat actors to enhance the credibility of their malware. Security teams should review their certificate management practices and ensure that all software is verified before execution. Microsoft's intervention is a significant step in curbing the misuse of digital certificates in cybercrime.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cybercrime-service-disrupted-for-abusing-microsoft-platform-to-sign-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Drupal Races to Patch Critical Vulnerability Amid Exploit Fears",
+            "title": "Drupal to Patch Highly Critical Vulnerability at Risk of Quick Exploitation",
+            "content": "Drupal has announced plans to patch a highly critical vulnerability that could be exploited within hours or days by attackers. The vulnerability poses a significant risk to websites using the Drupal content management system, potentially allowing unauthorized access or control. Given the rapid pace at which exploits can be developed, administrators are urged to apply patches immediately once released. This incident serves as a reminder of the importance of proactive vulnerability management and the need for swift action to protect web applications from emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/drupal-to-patch-highly-critical-vulnerability-at-risk-of-quick-exploitation/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Microsoft Shuts Down Fox Tempest's Malware-Signing Service",
+            "title": "Microsoft Disrupts Malware-Signing Service Run by ‘Fox Tempest’",
+            "content": "Microsoft has dismantled a malware-signing service operated by the group known as Fox Tempest, which facilitated the distribution of ransomware and other malicious software disguised as legitimate applications. By providing fraudulent code-signing certificates, Fox Tempest enabled cybercriminals to bypass security measures and spread malware more effectively. This action underscores the critical role of certificate management in cybersecurity and the need for vigilance against the misuse of legitimate services. Organizations should ensure robust verification processes for software installations to prevent similar threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-disrupts-malware-signing-service-run-by-fox-tempest/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Mini Shai-Hulud Targets AntV npm Packages in Supply Chain Attack",
+            "title": "Mini Shai-Hulud Pushes Malicious AntV npm Packages via Compromised Account",
+            "content": "Researchers have uncovered a new software supply chain attack linked to the ongoing Mini Shai-Hulud campaign, targeting npm packages within the @antv ecosystem. The attack involves the compromise of the npm maintainer account 'atool', affecting several packages and potentially exposing users to malicious code. This incident highlights the vulnerabilities inherent in open-source ecosystems and the importance of maintaining strict access controls and monitoring for unusual activity. Developers using affected packages should review their dependencies and update to secure versions as soon as possible.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/mini-shai-hulud-pushes-malicious-antv.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 19 2026",
             "headline": "DirtyDecrypt PoC Released—Linux Kernel CVE-2026-31635 Alert",
             "title": "DirtyDecrypt PoC Exploit Released for Linux Kernel CVE-2026-31635 Vulnerability",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/four-malicious-npm-packages-deliver.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Critical NGINX Flaw—Exploitation for RCE Begins",
-            "title": "Exploitation of Critical NGINX Vulnerability Leads to RCE and DoS",
-            "content": "A critical vulnerability in NGINX, affecting its default configurations, is now being actively exploited to cause denial-of-service (DoS) and, in cases where Address Space Layout Randomization (ASLR) is disabled, remote code execution (RCE). This flaw poses a severe risk to web servers using NGINX, a widely adopted web server technology. Administrators are advised to apply patches or implement workarounds immediately to prevent exploitation. The vulnerability's exploitation underscores the necessity for robust security practices, including maintaining up-to-date systems and enabling security features like ASLR.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exploitation-of-critical-nginx-vulnerability-begins/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Pwn2Own Berlin 2026—$1.3M Awarded for 47 Zero-Days",
-            "title": "Hackers Earn $1,298,250 for 47 Zero-Days at Pwn2Own Berlin 2026",
-            "content": "The Pwn2Own Berlin 2026 hacking contest concluded with security researchers earning $1,298,250 by exploiting 47 zero-day vulnerabilities across various platforms. This event, renowned for its rigorous testing of software and hardware security, saw participants targeting popular products, highlighting ongoing vulnerabilities in widely used technologies. The substantial rewards underscore the value of identifying and responsibly disclosing security flaws. Organizations should take note of the vulnerabilities exposed during the contest and prioritize patching affected systems to mitigate potential risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-earn-1-298-250-for-47-zero-days-at-pwn2own-berlin-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Exchange 0-Day and npm Worm—Critical Flaws Exploited",
-            "title": "Exchange Server 0-Day and npm Worm Highlight Supply Chain Vulnerabilities",
-            "content": "A critical zero-day vulnerability in Microsoft Exchange Server is being actively exploited, raising significant security concerns. Simultaneously, a worm targeting npm packages has been discovered, highlighting the risks of supply chain attacks. The npm worm exploits weak dependencies in trusted packages, potentially affecting thousands of developers and projects. Additionally, a fake AI model repository has been used to distribute information-stealing malware, further complicating the threat landscape. These incidents underscore the need for robust dependency management and vigilant monitoring of software supply chains. Organizations are urged to apply patches promptly and review their security protocols to mitigate these threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-exchange-0-day-npm-worm.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Grafana Source Code Stolen via GitHub Token Breach",
-            "title": "Grafana Labs Confirms Source Code Theft Through GitHub Token Compromise",
-            "content": "Grafana Labs has confirmed a security breach where attackers accessed its source code by exploiting a stolen GitHub access token. The breach highlights the vulnerabilities associated with token-based authentication and the importance of securing development environments. While the company has not disclosed the specific impact on its products, the exposure of source code can lead to further exploitation if not addressed. Grafana Labs is conducting a thorough investigation and has revoked the compromised token to prevent further unauthorized access. Developers are advised to review their token management practices and enhance security measures around access credentials.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/grafana-says-stolen-github-token-let-hackers-steal-codebase/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "US Healthcare Data Breaches Expose Millions",
-            "title": "Massive Data Breaches Impact Millions in US Healthcare Sector",
-            "content": "Recent data breaches have compromised the personal information of millions across the US healthcare sector, as reported on the HHS breach tracker. These breaches involve unauthorized access to sensitive patient data, including medical records and personal identifiers. The incidents highlight ongoing vulnerabilities in healthcare IT systems, which are increasingly targeted by cybercriminals. Affected organizations are working to contain the breaches and notify impacted individuals, while security experts emphasize the need for enhanced data protection measures. Healthcare providers must prioritize cybersecurity to safeguard patient information and comply with regulatory requirements.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/millions-impacted-across-several-us-healthcare-data-breaches/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "7-Eleven Breach—600K Salesforce Records Compromised",
-            "title": "7-Eleven Confirms Data Breach After ShinyHunters Ransom Demand",
-            "content": "7-Eleven has confirmed a data breach involving over 600,000 Salesforce records, following a ransom demand by the cybercriminal group ShinyHunters. The stolen data includes personal and corporate information, posing significant risks to affected individuals and the company. This breach underscores the persistent threat of ransomware and the importance of securing third-party platforms like Salesforce. 7-Eleven is collaborating with cybersecurity experts to investigate the breach and mitigate its impact. Organizations are encouraged to strengthen their security posture by implementing robust access controls and monitoring third-party integrations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/7-eleven-data-breach-confirmed-after-shinyhunters-ransom-demand/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 19 2026",
+            "headline": "Google's AI Shopping Cart—A Retail Game-Changer",
+            "title": "Google Unveils AI-Driven Universal Cart at I/O 2026",
+            "content": "At Google I/O 2026, Google introduced its AI-driven \"Universal Cart,\" a tool designed to streamline shopping across multiple retailers and Google platforms, including Gemini, YouTube, and Gmail. This ambitious move comes as other tech giants scale back their AI commerce initiatives. The Universal Cart leverages advanced AI algorithms to provide a seamless shopping experience, potentially transforming consumer habits by integrating purchasing power directly into Google's ecosystem. This development could significantly impact online retail dynamics, offering users a more cohesive and intuitive shopping experience. Retailers and developers should prepare for potential shifts in consumer expectations and engagement strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/932927/google-io-agentic-ai-shopping-universal-cart",
+            "relatedResources": []
+        },
+        {
+            "date": "May 13 2026",
+            "headline": "Altman Faces Allegations of Deception in OpenAI Trial",
+            "title": "Sam Altman Confronts Accusations of Dishonesty at OpenAI Legal Proceedings",
+            "content": "Sam Altman, CEO of OpenAI, is under scrutiny as he faces allegations of dishonesty during a high-profile trial concerning his leadership at the AI research organization. The trial has brought to light tensions within OpenAI, reminiscent of Elon Musk's tumultuous experiences with corporate control. The proceedings could potentially impact OpenAI's reputation and its ongoing projects, as stakeholders question the transparency and integrity of its leadership. This case underscores the importance of ethical governance in AI development, a critical concern for industry leaders and developers alike. Observers should monitor the trial's outcomes for broader implications on AI governance.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/altman-forced-to-confront-claims-at-openai-trial-that-hes-a-prolific-liar/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Google DeepMind's Hassabis on AGI's Potential—A New Era?",
+            "title": "Demis Hassabis Discusses AGI's Promise at Google I/O Keynote",
+            "content": "Demis Hassabis, CEO of Google DeepMind, described the current advancements in AI as the \"foothills of the singularity\" during his keynote at Google I/O 2026. He emphasized the transformative potential of Artificial General Intelligence (AGI) to benefit humanity, highlighting Google's commitment to pioneering research and development. This statement positions Google at the forefront of AI innovation, aiming to harness AGI's capabilities for global good. The announcement reflects a broader industry trend towards exploring AGI's possibilities, urging developers and tech leaders to consider the ethical and practical implications of such advancements.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/934260/google-io-ai-singularity-demis-hassabis",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Google Enters AI Design Arena with New App",
+            "title": "Google Launches AI Design App for Diverse User Base at I/O 2026",
+            "content": "At the I/O 2026 conference, Google announced its entry into the AI design space with a new application tailored for a wide range of users, from educators to small business owners. This app aims to democratize design capabilities, leveraging AI to simplify complex design tasks and enhance creativity. By making sophisticated design tools accessible to non-experts, Google is positioning itself as a key player in the AI-driven design market. This move could disrupt traditional design workflows, encouraging professionals to integrate AI solutions into their creative processes. Stakeholders should evaluate the potential of AI in transforming design methodologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Talk to Gmail—Voice Search Revolutionizes Email",
+            "title": "Google Introduces Conversational Voice Search in Gmail at I/O 2026",
+            "content": "Google has expanded its Gmail capabilities by integrating conversational voice search, allowing users to interact with their inboxes using natural language queries. This feature, powered by Google's AI model Gemini, enables users to efficiently locate specific email details without manual searching. The enhancement reflects a growing trend towards voice-activated digital interactions, offering a more intuitive user experience. As voice search becomes increasingly prevalent, professionals should consider the implications for productivity and user engagement. This development underscores the importance of adapting to evolving communication technologies in both personal and professional contexts.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 19 2026",
+            "headline": "Google's Ambitious Vision—A Search Box for Everything",
+            "title": "Google Envisions an All-Encompassing Search Box at I/O 2026",
+            "content": "During the I/O 2026 keynote, Google outlined its vision for a future where a single search box could handle a wide array of tasks, beyond traditional search functions. This concept aims to integrate various Google services, providing users with a centralized tool for managing daily activities. By leveraging AI and machine learning, Google seeks to enhance user convenience and streamline digital interactions. This initiative could redefine user expectations for search engines, prompting developers to innovate in creating more holistic digital solutions. Industry professionals should assess the potential impacts on user behavior and service integration strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/934217/google-search-box-does-everything-ai-io-2026",
+            "relatedResources": []
+        },
         {
             "date": "May 19 2026",
             "headline": "US Deepfake Law—Censorship Concerns Amid Crackdown",
@@ -147,24 +201,6 @@ const websiteContent = {
             "content": "The United States has enacted a law mandating the rapid removal of sexual deepfakes and nonconsensual imagery from social media platforms. This legislation, signed as the Take It Down Act by President Donald Trump, aims to protect victims of digital exploitation. However, experts warn that the law could inadvertently lead to increased online censorship without significantly aiding victims. The policy requires platforms to act swiftly, yet the criteria for removal remain vague, potentially impacting freedom of expression. Stakeholders are urged to monitor the law's implementation and its effects on digital rights and platform governance.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/policy/933518/take-it-down-act-notice-removal-social-media-deepfake",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Trump Seeks Tech Giants' Support at Xi Summit",
-            "title": "Trump Engages Tech Leaders for Strategic Xi Jinping Summit",
-            "content": "In a strategic move, President Donald Trump has enlisted tech leaders, including Tim Cook (referred to as \"Tim Apple\"), Jensen Huang, and Elon Musk, to attend a summit with Chinese President Xi Jinping. The meeting is expected to address critical issues such as chip restrictions and the geopolitical tensions surrounding Taiwan. This engagement signals a potential shift in US-China tech relations, as the administration seeks to balance national security concerns with economic interests. Industry leaders are advised to stay informed about policy changes that could impact supply chains and international collaborations.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 13 2026",
-            "headline": "OpenAI Responds to TanStack Supply Chain Breach",
-            "title": "OpenAI Details Response to TanStack Supply Chain Attack",
-            "content": "OpenAI has disclosed its response to the TanStack \"Mini Shai-Hulud\" supply chain attack, which compromised signing certificates and affected macOS users. The attack highlights vulnerabilities in npm package management, prompting OpenAI to enhance security protocols and issue a mandatory update for macOS applications by June 12, 2026. This incident underscores the critical need for robust supply chain defenses in software development. Developers must ensure their systems are updated and review security practices to mitigate future risks.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
             "relatedResources": []
         },
         {
@@ -237,42 +273,6 @@ const websiteContent = {
             "content": "A jury has ruled against Elon Musk in his lawsuit against OpenAI, citing the delayed timing of his legal action. Musk's attempt to challenge OpenAI's operations was deemed untimely, leading to an immediate affirmation of the jury's decision by the judge. Musk plans to appeal the verdict, indicating ongoing legal battles over AI governance. This case highlights the importance of timely legal actions in corporate disputes and could influence future litigation strategies in the tech industry. Legal teams should ensure prompt action when addressing corporate grievances to avoid similar outcomes.",
             "source": "Ars Technica",
             "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/elon-musk-loses-trial-accusing-sam-altman-openai-of-stealing-a-charity/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "NVIDIA Cosmos Predict 2.5 Enhanced with LoRA/DoRA",
-            "title": "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Video Generation",
-            "content": "Hugging Face has announced enhancements to NVIDIA Cosmos Predict 2.5, utilizing LoRA (Low-Rank Adaptation) and DoRA (Domain-Rank Adaptation) techniques for improved robot video generation. These fine-tuning methods enable more efficient model training and adaptation to specific domains, enhancing video output quality and performance. The integration of LoRA/DoRA allows developers to leverage pre-trained models with reduced computational resources, making advanced AI capabilities more accessible. This development is part of a broader trend towards optimizing AI models for specialized tasks, offering significant benefits in robotics and automated content creation. AI professionals should explore these techniques to enhance their projects' efficiency and effectiveness.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Alexa Plus Innovates with AI-Generated Podcasts",
-            "title": "Amazon Alexa Plus Introduces AI-Generated Podcast Creation Feature",
-            "content": "Amazon has unveiled a new capability for Alexa Plus, its advanced AI assistant, allowing users to generate podcasts on virtually any topic. This feature enables users to provide a topic, after which Alexa Plus outlines potential discussions by its AI hosts. The innovation marks a significant expansion of Alexa's content creation abilities, transforming it into a personalized AI content platform. This development reflects a growing trend in AI-driven media production, offering users customized content experiences. Tech professionals and content creators should consider the implications of AI-generated media on traditional content production and distribution models.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/932375/amazon-alexa-plus-ai-podcasts",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "PaddleOCR 3.5 Leverages Transformers for Enhanced OCR",
-            "title": "PaddleOCR 3.5 Integrates Transformers for Document Parsing and OCR Tasks",
-            "content": "Hugging Face has released PaddleOCR 3.5, featuring a transformers-based backend to enhance optical character recognition (OCR) and document parsing tasks. This update improves accuracy and processing speed, leveraging the power of transformer models to handle complex document layouts and diverse languages. The integration of transformers represents a significant advancement in OCR technology, enabling more precise text extraction and analysis. Organizations relying on document digitization and data extraction can benefit from these improvements, reducing manual processing time and increasing efficiency. Developers should explore PaddleOCR 3.5 for projects requiring advanced OCR capabilities.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
-            "relatedResources": []
-        },
-        {
-            "date": "May 18 2026",
-            "headline": "Alexa+ Expands with Custom AI Podcast Generation",
-            "title": "Amazon's Alexa+ Now Offers On-Demand AI Podcast Creation",
-            "content": "Amazon has expanded the capabilities of Alexa+ by introducing a feature that generates custom AI-driven podcasts on demand. This innovation allows users to request podcast episodes tailored to their interests, with Alexa+ providing an overview of the content before playback. The feature positions Alexa+ as a versatile AI content platform, reflecting a broader industry trend towards personalized media experiences. This advancement highlights the potential of AI in transforming content creation and consumption, offering new opportunities for engagement. Tech leaders and developers should consider the implications of AI in media and its impact on user interaction and content delivery.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/",
             "relatedResources": []
         }
     ],
