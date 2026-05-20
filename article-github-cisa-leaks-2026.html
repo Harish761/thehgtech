@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets | TheHGTech</title>
-    <meta name="title" content="The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets | TheHGTech">
+    <title>The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets</title>
+    <meta name="title" content="The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets">
     <meta name="description" content="Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak. Includes defense strategies for security engineers.">
     <meta name="keywords" content="GitHub Breach, Git Leaks, CISA, Nightwing, TeamPCP, VS Code Extension, Cyber Attack, Threat Intelligence">
     <meta name="author" content="Harish G">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets | TheHGTech">
+    <meta name="twitter:title" content="The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets">
     <meta name="twitter:description" content="Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak.">
     <meta name="twitter:image" content="https://thehgtech.com/images/articles/github-cisa-leaks-2026.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/article-github-cisa-leaks-2026.html">
-    <meta property="og:title" content="The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets | TheHGTech">
+    <meta property="og:title" content="The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets">
     <meta property="og:description" content="Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/github-cisa-leaks-2026.png">
     <meta property="og:site_name" content="TheHGTech">
+    <meta property="article:published_time" content="2026-05-20T10:00:00Z">
+    <meta property="article:modified_time" content="2026-05-20T10:00:00Z">
+    <meta property="article:author" content="Harish G">
+    <meta property="article:section" content="Threat Intelligence">
 
     <link rel="canonical" href="https://thehgtech.com/article-github-cisa-leaks-2026.html">
 
@@ -56,13 +60,35 @@
       "keywords": "GitHub Breach, Git Leaks, CISA, Nightwing, TeamPCP, VS Code Extension"
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Articles",
+        "item": "https://thehgtech.com/articles.html"
+      }, {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "The May 2026 Git Leaks",
+        "item": "https://thehgtech.com/article-github-cisa-leaks-2026.html"
+      }]
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Style System -->
     <link rel="stylesheet" href="/header.css">
@@ -503,7 +529,7 @@
 
             <div class="article-content">
                 <h2>Executive Summary</h2>
-                <p><strong>BLUF:</strong> In mid-May 2026, the cybersecurity landscape was rocked by two entirely separate but highly damaging Git-related incidents. First, a threat actor group known as TeamPCP successfully breached GitHub's internal infrastructure, exfiltrating over 3,800 internal repositories via a compromised employee workstation. Almost simultaneously, a contractor working for the US Cybersecurity and Infrastructure Security Agency (CISA) inadvertently exposed highly sensitive AWS GovCloud keys in a public GitHub repository.</p>
+                <p><strong>BLUF:</strong> In mid-May 2026, the cybersecurity landscape experienced two entirely separate but highly damaging Git-related incidents. First, a threat actor group known as TeamPCP successfully breached GitHub's internal infrastructure, exfiltrating over 3,800 internal repositories via a compromised employee workstation. Almost simultaneously, a contractor working for the US Cybersecurity and Infrastructure Security Agency (CISA) inadvertently exposed highly sensitive AWS GovCloud keys in a public GitHub repository.</p>
                 <ul>
                     <li style="color: var(--text-secondary); margin-bottom: 0.5rem; margin-left: 1.5rem;"><strong>Confidence Level:</strong> Confirmed. Both GitHub and the involved contractors have acknowledged the incidents.</li>
                     <li style="color: var(--text-secondary); margin-bottom: 0.5rem; margin-left: 1.5rem;"><strong>TLP:</strong> CLEAR / GREEN</li>
@@ -511,13 +537,64 @@
                 </ul>
                 <p><em>This analysis is based on public disclosures, threat intelligence reports, and security researcher analyses as of May 20, 2026; details may evolve.</em></p>
 
+                <h2>Comparing the Breaches</h2>
+                <p>While both incidents revolve around GitHub, their mechanics highlight vastly different failure points in modern DevOps workflows.</p>
+
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-card, rgba(255, 255, 255, 0.03)); border-radius: 8px; overflow: hidden;">
+                    <thead>
+                        <tr>
+                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); background: rgba(0, 217, 255, 0.1); color: var(--accent-cyan);">Feature</th>
+                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); background: rgba(0, 217, 255, 0.1); color: var(--accent-cyan);">GitHub Internal Breach</th>
+                            <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); background: rgba(0, 217, 255, 0.1); color: var(--accent-cyan);">CISA/Nightwing Exposure</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);"><strong>Vector</strong></td>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Poisoned VS Code Extension</td>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Accidental Public Repository Push</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);"><strong>Data Compromised</strong></td>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);">3,800+ Internal Repositories</td>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);">AWS GovCloud Keys, IaC Templates, Passwords</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);"><strong>Threat Actor</strong></td>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);">TeamPCP (UNC6780)</td>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Accidental Insider / Scraping Bots</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);"><strong>Root Cause</strong></td>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Lack of Endpoint/Extension Control</td>
+                            <td style="padding: 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Lack of Secret Scanning & Pre-Commit Hooks</td>
+                        </tr>
+                    </tbody>
+                </table>
+
                 <h2>Incident 1: The TeamPCP GitHub Internal Breach</h2>
-                <p>On the surface, a platform that hosts the world's code being compromised sounds like a doomsday scenario. However, the vector of attack highlights a critical vulnerability in modern developer workflows: <strong>the supply chain of our IDEs</strong>.</p>
+                <p>On the surface, a platform that hosts the world's code being compromised represents a critical systemic risk. However, the vector of attack highlights a subtle but pervasive vulnerability in modern developer workflows: <strong>the supply chain of our IDEs</strong>.</p>
                 
                 <h3>The Attack Vector: Poisoned VS Code Extensions</h3>
                 <p>TeamPCP (also tracked as UNC6780) didn't brute-force GitHub's servers or find a zero-day in their authentication protocol. They targeted the weakest link: a developer's workstation. By utilizing a "poisoned" Microsoft Visual Studio Code (VS Code) extension, they were able to gain persistent access to the corporate device of a GitHub employee.</p>
                 
                 <p>This malicious extension bypassed endpoint detection mechanisms by disguising itself as a legitimate developer tool. Once active, it captured authentication tokens, session cookies, and potentially SSH keys used to access GitHub's internal environments.</p>
+
+                <div class="mermaid" style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0; text-align: center;">
+                sequenceDiagram
+                    participant Dev as Developer Workstation
+                    participant IDE as VS Code (Poisoned Ext)
+                    participant Auth as Local Environment / GitHub Auth
+                    participant C2 as TeamPCP C2 Server
+                    
+                    Dev->>IDE: 1. Install Malicious Extension
+                    IDE->>Auth: 2. Request Access Tokens/SSH Keys
+                    Auth-->>IDE: 3. Expose Tokens
+                    IDE->>C2: 4. Exfiltrate Stolen Credentials (HTTPS POST)
+                    C2->>Auth: 5. Authenticate via Stolen Tokens
+                    Auth-->>C2: 6. Grant Access to Internal Repositories
+                    C2->>C2: 7. Clone & Exfiltrate 3,800+ Repos
+                </div>
 
                 <div class="technical-box">
                     <h3><i class="fas fa-code"></i> The Exploit Primitive: Rogue VS Code Extensions</h3>
@@ -545,12 +622,17 @@ paths.forEach(p => {
                 <p><strong>The Impact:</strong> Approximately 3,800 internal GitHub repositories were stolen and are currently listed for sale on cybercrime forums for an estimated $50,000. GitHub asserts that no customer repositories or non-internal systems were compromised. The company immediately isolated the device, revoked the malicious extension, and rotated all high-impact credentials and cryptographic keys.</p>
 
                 <h2>Incident 2: Nightwing and the CISA GovCloud Exposure</h2>
-                <p>While the GitHub breach was a targeted attack, the second major incident in May 2026 was a catastrophic failure of basic secrets management. A public repository belonging to an employee of Nightwing—a government contractor for CISA—was discovered by GitGuardian researchers to be leaking 844 MB of sensitive data.</p>
+                <p>While the GitHub breach was a targeted attack, the second major incident in May 2026 was a significant breakdown in basic secrets management. A public repository belonging to an employee of Nightwing—a government contractor for CISA—was discovered by GitGuardian researchers to be leaking 844 MB of sensitive data.</p>
                 
-                <p>The leak contained plaintext passwords, internal infrastructure code, and most alarmingly, <strong>AWS GovCloud keys</strong>. GovCloud is Amazon's isolated cloud infrastructure designed to host sensitive data and regulated workloads for the US government.</p>
+                <p>The leak contained plaintext passwords, internal infrastructure code, and most alarmingly, <strong>AWS GovCloud keys</strong>.</p>
+
+                <h3>The Severity of a GovCloud Exposure</h3>
+                <p>AWS GovCloud is an isolated cloud infrastructure specifically designed to host sensitive data, regulated workloads, and ITAR-compliant systems for the US government. Keys to these environments represent the proverbial "keys to the kingdom" for nation-state threat actors looking to establish persistence within federal networks.</p>
+
+                <p>Furthermore, the exposed repository did not just contain credentials; it contained Infrastructure as Code (IaC) templates (such as Terraform and CloudFormation). These files provide adversaries with an exact topographical map of the internal network architecture, detailing security group configurations, open ports, and database deployments, which vastly accelerates the reconnaissance phase of an attack.</p>
 
                 <h3>The Mechanics of the Leak</h3>
-                <p>The developer likely committed their local <code>.env</code> or <code>credentials</code> file directly to a public Git repository. This is a common error when developers use <code>git add .</code> without a properly configured <code>.gitignore</code> file. Despite CISA's status as the nation's premier cybersecurity agency, their contractors' failure to utilize basic pre-commit hooks or secret scanning tools led to a severe exposure.</p>
+                <p>The developer likely committed their local <code>.env</code> or <code>credentials</code> file directly to a public Git repository. This is a common error when developers use <code>git add .</code> without a properly configured <code>.gitignore</code> file. It is estimated that the repository was public for several hours before detection. Despite CISA's status as the nation's premier cybersecurity agency, their contractors' failure to utilize basic pre-commit hooks or secret scanning tools led to a severe exposure.</p>
 
                 <div class="warning-box">
                     <h3><i class="fas fa-shield-alt"></i> THE REALITY OF PUBLIC GITHUB LEAKS</h3>
@@ -633,6 +715,15 @@ paths.forEach(p => {
         <div style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var isLight = document.body.classList.contains('light-mode') || document.documentElement.getAttribute('data-theme') === 'light';
+            if (typeof mermaid !== 'undefined') {
+                mermaid.initialize({ startOnLoad: true, theme: isLight ? 'default' : 'dark' });
+            }
+        });
+    </script>
     <script src="/interaction-bar.js?v=20260220"></script>
 </body>
 </html>
