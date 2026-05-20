@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-05-20T06:32:17.150790",
-  "total_incidents": 28200,
+  "last_updated": "2026-05-20T17:39:23.846712",
+  "total_incidents": 28207,
   "incidents": [
+    {
+      "id": "qilin_cj_architects",
+      "victim_name": "CJ Architects",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-20T15:56:46.473413+00:00",
+      "industry": "Construction",
+      "website": "www.cjarchitects.net",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/714dbd6c13b46d7cc8b288341d83d0f9.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=b643f9eb-7e30-4836-8955-415480cfe9a6",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_wns_lowery",
+      "victim_name": "WNS Lowery",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-20T15:25:35.092742+00:00",
+      "industry": "Business Services",
+      "website": "www.wnslowery.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/c98bb302f2ad80192e92c5283907dd6b.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=e4c4a268-d65e-48e5-8e4c-7cb4de80c2f4",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_cz_collections",
+      "victim_name": "Cz Collections",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-20T15:25:15.635139+00:00",
+      "industry": "Consumer Services",
+      "website": "www.czcollections.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/50193c0c7c8f0fb2b11330ac46d8cf9c.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=7703e181-abfd-4df1-8dfa-42b24cfcae3d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_air_conditioning_florida_&_mrdsllc_&_rte_stucco_&_mr_drywall_services",
+      "victim_name": "Air Conditioning Florida & Mrdsllc & RTE Stucco & MR Drywall Services",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-20T14:55:11.605558+00:00",
+      "industry": "Construction",
+      "website": "www.airconditioning-florida.com, www.mrdsllc.com, www.rtesllc.com, www.mrdrywallservices.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/7c3e7c36d876d644a45eca68d27bbc03.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=51c6ae31-29db-4c4b-88cc-0dd412b17c58",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_vial_agro",
+      "victim_name": "Vial Agro",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-20T14:54:53.920502+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "www.vialagro.com.ar",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/31cb4cfe45dd689c720319a9af8444e8.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=d1cb3efc-3eb6-4a34-b5f1-0ba599964cac",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_sid_harvey's",
+      "victim_name": "Sid Harvey's",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-20T13:52:23.431270+00:00",
+      "industry": "Consumer Services",
+      "website": "",
+      "claim": "Sid Harvey Industries is a wholesale distributor of refrigeration, air conditioning, and heatin\ng equipment and parts for contractors in the United States.\n\nWe will upload 740gb of corporate data soon. Detailed employee personal information (~500 ppl p\nassports, DLs, SSNs, personal financials, death certs, confidential agreements, credit cards an\nd so on), contracts and agreements, financials, clients and partners, etc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_vega",
+      "victim_name": "Vega",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-05-20T12:53:25.464216+00:00",
+      "industry": "Not Found",
+      "website": "vega-corp.com",
+      "claim": "Vega combines elite technical skills with personalized customer service and environmental stewardship to excel in the industrial and manufacturing sector. From the loading docks through the warehouse, assembly line, raw product processing, storage, distribution and into the administration areas, the company's work is designed to support the company's customer's operations in the production of everything from fabrication to perishables. \"I/the company continue to use Vega not because the company has to but because the company want to. Vega brings a lot of knowledge and experience with them to the table and adds a great amount of value to the company's projects. The company value the company's relationship with them and expect it to continue for a long, long time",
+      "screenshot": "https://images.ransomware.live/victims/d11abdfc288e4e671a2d717b650fa3ca.png",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=dcde7455-48bb-468e-99df-a63e0b1eae71",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "safepay_olipes.com",
       "victim_name": "olipes.com",
