@@ -1,6 +1,15 @@
 {
   "changelog": [
     {
+      "id": "cl-2026-05-21-cve",
+      "date": "2026-05-21T10:00:00Z",
+      "title": "Enhanced CVE Tracker Engine",
+      "description": "We've completely overhauled the CVE Tracker backend to surface highly actionable vulnerability data. The new engine integrates CISA KEV ransomware indicators for Exploit Maturity tracking, leverages AI to generate precise Business Impact Scores (like RCE and Blast Radius tags), and calculates historical Patch Lag to expose slow-patching vendors. The UI now features a dynamic 'Must Patch Now' priority algorithm.",
+      "type": "feature",
+      "icon": "fa-spider",
+      "url": "/cve-tracker.html"
+    },
+    {
       "id": "cl-2026-05-14-mobile",
       "date": "2026-05-14T11:30:00Z",
       "title": "Comprehensive Mobile UI Refactor",
