@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 21 2026",
+            "headline": "Drupal Core Flaw—PostgreSQL Sites Vulnerable to RCE",
+            "title": "Critical Drupal Core Vulnerability CVE-2026-9082 Allows Remote Code Execution",
+            "content": "Drupal has issued patches for a critical vulnerability, CVE-2026-9082, in its Core that could lead to remote code execution (RCE), privilege escalation, or information disclosure. The flaw, affecting PostgreSQL database users, has been assigned a CVSS score of 6.5, indicating significant risk. This vulnerability underscores the importance of timely updates as attackers could exploit it to gain unauthorized access or control over affected systems. Drupal users, particularly those using PostgreSQL, should apply the latest security updates immediately to mitigate potential threats. This incident highlights the ongoing challenges in securing open-source platforms against sophisticated cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/highly-critical-drupal-core-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Ukrainian Cyberpolice Bust Infostealer—28,000 Accounts Compromised",
+            "title": "Ukrainian Authorities Identify Infostealer Operator Behind Massive Account Theft",
+            "content": "Ukrainian cyberpolice, in collaboration with U.S. law enforcement, have identified an 18-year-old from Odesa as the operator of an infostealer malware operation. This operation targeted users of a California-based online store, resulting in the theft of 28,000 accounts. The suspect allegedly used malware to harvest sensitive information, posing significant risks to affected users. This case highlights the transnational nature of cybercrime and the importance of international cooperation in tackling such threats. Affected users are advised to change passwords and monitor accounts for suspicious activity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukraine-identifies-infostealer-operator-tied-to-28-000-stolen-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "SonicWall VPN MFA Bypassed—Ransomware Tools Deployed",
+            "title": "Hackers Exploit SonicWall VPN MFA Flaw to Deploy Ransomware Tools",
+            "content": "Threat actors have successfully bypassed multi-factor authentication (MFA) on SonicWall Gen6 SSL-VPN appliances, exploiting incomplete patching to brute-force VPN credentials. This breach facilitated the deployment of tools used in ransomware attacks, posing severe risks to organizations relying on these appliances for secure remote access. The incident underscores the critical need for comprehensive patch management and robust security measures. Organizations using SonicWall VPNs should ensure all patches are applied and consider additional security layers to protect against such vulnerabilities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-bypass-sonicwall-vpn-mfa-due-to-incomplete-patching/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Microsoft Open-Sources RAMPART, Clarity for AI Security",
+            "title": "Microsoft Releases RAMPART and Clarity to Enhance AI Agent Security",
+            "content": "Microsoft has introduced RAMPART and Clarity, two open-source tools aimed at improving the security testing of artificial intelligence (AI) agents. RAMPART, or Risk Assessment and Measurement Platform for Agentic Red Teaming, integrates with Pytest to enhance safety and security evaluations. These tools are designed to help developers identify and mitigate potential vulnerabilities during AI development. This initiative reflects Microsoft's commitment to advancing secure AI technologies and provides developers with valuable resources to safeguard AI systems. Developers are encouraged to integrate these tools into their workflows to enhance AI security.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Microsoft Mitigates YellowKey BitLocker Bypass Vulnerability",
+            "title": "Microsoft Releases Mitigation for BitLocker Bypass CVE-2026-45585",
+            "content": "Microsoft has issued a mitigation for the YellowKey vulnerability, CVE-2026-45585, a zero-day flaw allowing BitLocker security feature bypass. With a CVSS score of 6.8, this vulnerability poses a moderate risk by potentially granting unauthorized access to encrypted drives. The mitigation follows the public disclosure of the flaw, emphasizing the urgency for affected users to apply the provided solutions. This development highlights the ongoing need for vigilance in addressing zero-day vulnerabilities and securing sensitive data. Users should implement the mitigation steps promptly to protect their systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-releases-mitigation-for.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "YellowKey Windows Zero-Day Mitigation Released by Microsoft",
+            "title": "Microsoft Shares Mitigation for YellowKey Windows BitLocker Zero-Day",
+            "content": "Microsoft has released mitigation strategies for the YellowKey zero-day vulnerability affecting Windows BitLocker, which could allow unauthorized access to protected drives. This vulnerability, disclosed as CVE-2026-45585, underscores the critical need for immediate action to safeguard sensitive data. The flaw's public disclosure has prompted Microsoft to act swiftly, providing users with necessary steps to mitigate potential risks. Organizations using BitLocker are advised to implement these mitigations to prevent unauthorized data access. This incident highlights the importance of proactive security measures in the face of emerging threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-mitigation-for-yellowkey-windows-zero-day/",
+            "relatedResources": []
+        },
+        {
             "date": "May 20 2026",
             "headline": "Grafana Breach—Token Rotation Missed After Supply-Chain Attack",
             "title": "Grafana Data Breach Linked to Unrotated Token Post TanStack Attack",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/cybercrime-service-disrupted-for-abusing-microsoft-platform-to-sign-malware/",
             "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Drupal Races to Patch Critical Vulnerability Amid Exploit Fears",
-            "title": "Drupal to Patch Highly Critical Vulnerability at Risk of Quick Exploitation",
-            "content": "Drupal has announced plans to patch a highly critical vulnerability that could be exploited within hours or days by attackers. The vulnerability poses a significant risk to websites using the Drupal content management system, potentially allowing unauthorized access or control. Given the rapid pace at which exploits can be developed, administrators are urged to apply patches immediately once released. This incident serves as a reminder of the importance of proactive vulnerability management and the need for swift action to protect web applications from emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/drupal-to-patch-highly-critical-vulnerability-at-risk-of-quick-exploitation/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Microsoft Shuts Down Fox Tempest's Malware-Signing Service",
-            "title": "Microsoft Disrupts Malware-Signing Service Run by ‘Fox Tempest’",
-            "content": "Microsoft has dismantled a malware-signing service operated by the group known as Fox Tempest, which facilitated the distribution of ransomware and other malicious software disguised as legitimate applications. By providing fraudulent code-signing certificates, Fox Tempest enabled cybercriminals to bypass security measures and spread malware more effectively. This action underscores the critical role of certificate management in cybersecurity and the need for vigilance against the misuse of legitimate services. Organizations should ensure robust verification processes for software installations to prevent similar threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-disrupts-malware-signing-service-run-by-fox-tempest/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Mini Shai-Hulud Targets AntV npm Packages in Supply Chain Attack",
-            "title": "Mini Shai-Hulud Pushes Malicious AntV npm Packages via Compromised Account",
-            "content": "Researchers have uncovered a new software supply chain attack linked to the ongoing Mini Shai-Hulud campaign, targeting npm packages within the @antv ecosystem. The attack involves the compromise of the npm maintainer account 'atool', affecting several packages and potentially exposing users to malicious code. This incident highlights the vulnerabilities inherent in open-source ecosystems and the importance of maintaining strict access controls and monitoring for unusual activity. Developers using affected packages should review their dependencies and update to secure versions as soon as possible.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/mini-shai-hulud-pushes-malicious-antv.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "DirtyDecrypt PoC Released—Linux Kernel CVE-2026-31635 Alert",
-            "title": "DirtyDecrypt PoC Exploit Released for Linux Kernel CVE-2026-31635 Vulnerability",
-            "content": "A proof-of-concept (PoC) exploit for the Linux Kernel vulnerability CVE-2026-31635, known as DirtyDecrypt, has been released. This local privilege escalation (LPE) flaw, discovered by Zellic and V12 security teams, affects recent Linux kernel versions and could allow attackers to gain elevated privileges on compromised systems. The vulnerability, also referred to as DirtyCBC, was reported on May 9, 2026, and has since been patched. System administrators are urged to apply the latest security updates to mitigate potential exploitation risks. This development underscores the ongoing challenges in securing open-source software against privilege escalation threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/dirtydecrypt-poc-released-for-linux.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "7-Eleven Breach Confirmed—ShinyHunters Claim Responsibility",
-            "title": "7-Eleven Confirms Data Breach by ShinyHunters Extortion Group",
-            "content": "7-Eleven has confirmed a data breach following a cyberattack by the ShinyHunters extortion group. The breach, which occurred last month, compromised sensitive customer and corporate data. ShinyHunters, known for targeting large corporations, has claimed responsibility for the attack. The extent of the data compromised is still under investigation, but the breach highlights the persistent threat posed by cybercriminal groups targeting retail giants. 7-Eleven is working with cybersecurity experts to enhance its security measures and prevent future incidents. Customers are advised to monitor their accounts for suspicious activity.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/7-eleven-confirms-data-breach-claimed-by-the-shinyhunters-gang/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Microsoft Critical Flaws Double—Privilege Escalation Focus",
-            "title": "Surge in Critical Microsoft Vulnerabilities Highlights Escalation Risks",
-            "content": "BeyondTrust reports a significant increase in critical vulnerabilities affecting Microsoft products, with a focus on privilege escalation and identity abuse. While the total number of vulnerabilities remained stable in 2025, critical flaws doubled, indicating a shift in attacker tactics. This trend poses a heightened risk to organizations relying on Microsoft software, as attackers increasingly exploit these vulnerabilities to gain unauthorized access. Security professionals are urged to prioritize patch management and implement robust identity protection measures to mitigate these risks. The report underscores the evolving threat landscape and the need for proactive security strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-microsoft-vulnerabilities-doubled-from-exposure-to-escalation/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 21 2026",
+            "headline": "SpaceX IPO: Musk's Financial Web Unveiled",
+            "title": "SpaceX IPO Highlights Elon Musk's Complex Financial Interconnections",
+            "content": "SpaceX's initial public offering (IPO) not only positions Elon Musk as a potential trillionaire but also exposes the intricate financial interdependencies among his companies. The IPO documents reveal how funds are shuffled between Musk's ventures, including Tesla and xAI, complicating financial transparency. This interconnectedness could pose risks to investors, as the financial health of one entity might affect others. The IPO is a landmark event, offering insights into Musk's broader business strategies and ambitions. Investors and stakeholders should scrutinize these financial entanglements to understand potential impacts on their investments.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/science/935102/spacex-ipo-elon-musk-tesla-cybertruck-xai-risk-factor",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Nvidia Eyes $200B AI CPU Market—Huang's Bold Prediction",
+            "title": "Nvidia Targets $200 Billion AI CPU Market, Says CEO Jensen Huang",
+            "content": "Nvidia CEO Jensen Huang has identified a burgeoning $200 billion market for CPUs designed specifically for AI agents. This strategic pivot aims to capitalize on the growing demand for AI-driven applications across various industries. Nvidia's move into AI CPUs represents a significant expansion beyond its traditional GPU stronghold, potentially reshaping the competitive landscape. The company's focus on AI-specific hardware underscores the increasing importance of specialized processors in handling complex AI workloads. Industry professionals should monitor Nvidia's developments in this space, as it could influence future AI infrastructure decisions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Anthropic Projects First Profitable Quarter—Revenue to Hit $10.9B",
+            "title": "Anthropic Anticipates First Profitable Quarter with $10.9 Billion Revenue",
+            "content": "Anthropic has informed investors of its expectation to achieve its first profitable quarter, projecting revenue to more than double to approximately $10.9 billion in Q2. This milestone reflects the company's successful scaling of its AI offerings and increased market adoption. The anticipated profitability marks a significant turnaround, positioning Anthropic as a formidable player in the AI sector. This growth trajectory highlights the increasing demand for advanced AI solutions and the company's ability to meet market needs. Stakeholders should consider the implications of Anthropic's financial performance on the competitive AI landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Clouted Raises $7M to Predict Viral Video Success",
+            "title": "Clouted Secures $7 Million to Enhance Viral Video Prediction Technology",
+            "content": "Video clipping startup Clouted has raised $7 million in a seed funding round led by Slow Ventures, aiming to refine its technology for predicting viral video success. The company's platform leverages AI to analyze video content and optimize it for virality, addressing a critical need in digital marketing and content creation. This funding will accelerate the development of Clouted's predictive algorithms, enhancing its ability to serve creators and brands seeking to maximize online engagement. As short-form video content continues to dominate social media, Clouted's technology could become a valuable tool for marketers.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/20/clouted-wants-to-take-the-guesswork-out-of-making-short-videos-go-viral/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "xAI's $6.4B Loss Revealed in SpaceX IPO Filing",
+            "title": "SpaceX IPO Filing Discloses xAI's $6.4 Billion Loss Amid Expansion Plans",
+            "content": "The SpaceX IPO filing has unveiled that xAI, another of Elon Musk's ventures, incurred a $6.4 billion loss in 2025 while planning an extensive expansion of its Grok AI platform. This disclosure provides the first public insight into xAI's financials and Musk's ambitious AI strategies. Despite the substantial loss, the expansion underscores Musk's commitment to advancing AI capabilities, potentially influencing the broader AI market. Investors should assess the risks associated with xAI's financial trajectory and its impact on Musk's interconnected business ecosystem.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Nvidia's Record Quarter—$43B in Startup Investments Revealed",
+            "title": "Nvidia Reports Record Revenue, Discloses $43 Billion in Startup Holdings",
+            "content": "Nvidia has announced another record-breaking revenue quarter, though it anticipates a slowdown in growth for the upcoming period. The company also revealed $43 billion in holdings across various startups, highlighting its strategic investments in emerging technologies. This financial performance underscores Nvidia's dominant position in the tech industry, driven by its GPU and AI innovations. However, the forecasted revenue deceleration suggests potential market saturation or increased competition. Industry stakeholders should evaluate Nvidia's investment strategy and its implications for future technological advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/20/nvidia-posts-another-record-quarter-reveals-43-billion-of-holdings-in-startups/",
+            "relatedResources": []
+        },
         {
             "date": "May 20 2026",
             "headline": "OpenClaw's Rise—AI Agents Finally Prove Their Worth",
@@ -156,15 +210,6 @@ const websiteContent = {
             "content": "The Stratos Project, a 40,000-acre data center in Utah's Hansel Valley, has become a focal point of controversy following its approval by Box Elder County commissioners. Despite warnings from experts and public opposition, the project is set to become one of the world's largest data centers. Concerns center around environmental impact, resource consumption, and data privacy. As data centers become increasingly vital to digital infrastructure, the Stratos Project highlights the challenges of balancing technological advancement with environmental and social responsibilities. Stakeholders in tech and policy must navigate these complexities to ensure sustainable development.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/933687/utah-stratos-project-data-center-kevin-oleary",
-            "relatedResources": []
-        },
-        {
-            "date": "May 14 2026",
-            "headline": "Trump Enlists Tech Titans for Critical Xi Summit",
-            "title": "Trump Seeks Tech Leaders' Support Ahead of Xi Meeting",
-            "content": "In a strategic move, former President Donald Trump has called upon tech leaders, including Tim Cook (referred to as \"Tim Apple\"), Jensen Huang, and Elon Musk, to attend a summit with Chinese President Xi Jinping. The meeting could force Trump to reconsider his stance on chip restrictions and Taiwan, as these issues are pivotal to the tech industry. The involvement of these influential figures underscores the importance of the summit in shaping future tech policies and international relations. Tech professionals should monitor developments closely, as outcomes may impact global supply chains and market dynamics.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/desperate-trump-taps-tim-apple-jensen-huang-elon-musk-to-attend-xi-summit/",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Google has expanded its Gmail capabilities by integrating conversational voice search, allowing users to interact with their inboxes using natural language queries. This feature, powered by Google's AI model Gemini, enables users to efficiently locate specific email details without manual searching. The enhancement reflects a growing trend towards voice-activated digital interactions, offering a more intuitive user experience. As voice search becomes increasingly prevalent, professionals should consider the implications for productivity and user engagement. This development underscores the importance of adapting to evolving communication technologies in both personal and professional contexts.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Google's Ambitious Vision—A Search Box for Everything",
-            "title": "Google Envisions an All-Encompassing Search Box at I/O 2026",
-            "content": "During the I/O 2026 keynote, Google outlined its vision for a future where a single search box could handle a wide array of tasks, beyond traditional search functions. This concept aims to integrate various Google services, providing users with a centralized tool for managing daily activities. By leveraging AI and machine learning, Google seeks to enhance user convenience and streamline digital interactions. This initiative could redefine user expectations for search engines, prompting developers to innovate in creating more holistic digital solutions. Industry professionals should assess the potential impacts on user behavior and service integration strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/934217/google-search-box-does-everything-ai-io-2026",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "US Deepfake Law—Censorship Concerns Amid Crackdown",
-            "title": "US Enforces Deepfake Removal Law Amidst Censorship Concerns",
-            "content": "The United States has enacted a law mandating the rapid removal of sexual deepfakes and nonconsensual imagery from social media platforms. This legislation, signed as the Take It Down Act by President Donald Trump, aims to protect victims of digital exploitation. However, experts warn that the law could inadvertently lead to increased online censorship without significantly aiding victims. The policy requires platforms to act swiftly, yet the criteria for removal remain vague, potentially impacting freedom of expression. Stakeholders are urged to monitor the law's implementation and its effects on digital rights and platform governance.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/933518/take-it-down-act-notice-removal-social-media-deepfake",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "AI Graduation Announcer Fails to Deliver",
-            "title": "AI Announcer Missteps Highlight Graduation Ceremony Challenges",
-            "content": "AI-powered announcers, increasingly used in graduation ceremonies, have faced criticism for mispronouncing and omitting student names. Despite their growing popularity as a tool for ensuring name accuracy, these systems have struggled with the task, leading to dissatisfaction among students and families. The reliance on AI for such personal and significant events raises questions about the technology's readiness and reliability. Educational institutions are encouraged to evaluate the effectiveness of AI tools and consider human oversight to enhance ceremony experiences.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/933653/ai-graduation-commencement-glendale-community-college",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Karpathy Joins Anthropic—Strengthens AI Pre-Training Team",
-            "title": "Andrej Karpathy Joins Anthropic to Enhance AI Pre-Training Efforts",
-            "content": "Andrej Karpathy, a co-founder of OpenAI and former head of AI at Tesla, has joined Anthropic to focus on pre-training initiatives. His expertise in computer vision and AI development is expected to bolster Anthropic's capabilities in advancing foundational AI models. This move signifies Anthropic's commitment to attracting top talent to drive innovation in AI research. Industry professionals should watch for potential breakthroughs in AI pre-training methodologies that could emerge from this collaboration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Gemini's Expansion Raises Privacy Concerns",
-            "title": "Gemini's Integration in Google Apps Sparks Privacy Concerns",
-            "content": "Gemini, initially a subtle feature in Google apps, has expanded its presence, raising privacy concerns among users. The feature's integration into services like Gmail and Google Drive has become more pronounced, prompting scrutiny over data handling and user consent. As Gemini's capabilities grow, users and privacy advocates are questioning the transparency of data usage and the potential for intrusive monitoring. Google users should review privacy settings and stay informed about changes to app functionalities to safeguard personal information.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/931752/google-io-2026-gemini-icon-docs-workspace",
             "relatedResources": []
         }
     ],
@@ -359,6 +359,83 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2008-4250",
+            "dateAdded": "May 20, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows contains a buffer overflow vulnerability in the Windows Server Service that allows remote attackers to execute arbitrary code via a crafted RPC request that triggers an overflow duri",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-4250",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2009-1537",
+            "dateAdded": "May 20, 2026",
+            "vendor": "Microsoft DirectX",
+            "description": "Microsoft DirectX contains a NULL byte overwrite vulnerability in the QuickTime Movie Parser Filter in quartz.dll in DirectShow which could allow remote attackers to execute arbitrary code via a craft",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-1537",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2009-3459",
+            "dateAdded": "May 20, 2026",
+            "vendor": "Adobe Acrobat and Reader",
+            "description": "Adobe Acrobat and Reader contain a heap-based buffer overflow vulnerability which could allow remote attackers to execute arbitrary code via a crafted PDF file that triggers memory corruption.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-3459",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2010-0249",
+            "dateAdded": "May 20, 2026",
+            "vendor": "Microsoft Internet Explorer",
+            "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code by accessing a pointer associated with a deleted object. The impacted p",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-0249",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2010-0806",
+            "dateAdded": "May 20, 2026",
+            "vendor": "Microsoft Internet Explorer",
+            "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code via vectors involving access to an invalid pointer after the deletion o",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-0806",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-41091",
+            "dateAdded": "May 20, 2026",
+            "vendor": "Microsoft Defender",
+            "description": "Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41091",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-45498",
+            "dateAdded": "May 20, 2026",
+            "vendor": "Microsoft Defender",
+            "description": "Microsoft Defender contains an unspecified vulnerability that allows for denial of service.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45498",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-42897",
             "dateAdded": "May 15, 2026",
             "vendor": "Microsoft Microsoft",
@@ -367,17 +444,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42897",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20182",
-            "dateAdded": "May 14, 2026",
-            "vendor": "Cisco Catalyst SD-WAN",
-            "description": "Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20182",
             "isZeroDay": false
         }
     ],
