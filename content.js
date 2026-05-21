@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 21 2026",
+            "headline": "First VPN Seized—Used in Global Ransomware Attacks",
+            "title": "Law Enforcement Shuts Down 'First VPN' Linked to Cybercrime",
+            "content": "In a coordinated international effort, law enforcement agencies have dismantled 'First VPN,' a virtual private network service implicated in facilitating ransomware and data theft operations. This service was reportedly used by cybercriminals to anonymize their activities, making it a popular choice for executing attacks without detection. The takedown signifies a significant blow to cybercriminal infrastructure, disrupting operations that relied on this VPN for obfuscating malicious activities. Security professionals are advised to review network traffic for connections to 'First VPN' and assess potential exposure. This operation highlights the ongoing global efforts to combat cybercrime by targeting the tools and services that enable it.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seize-first-vpn-service-used-in-ransomware-data-theft-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Cisco Secure Workload Flaw—Patch Critical REST API Vulnerability",
+            "title": "Cisco Addresses Critical REST API Vulnerability in Secure Workload",
+            "content": "Cisco has released a patch for a critical vulnerability in its Secure Workload product, identified as a flaw in the REST API's validation and authentication processes. This vulnerability could allow remote attackers to gain Site Admin privileges, posing a severe risk to affected systems. The flaw underscores the importance of robust API security, as it could be exploited to compromise sensitive data and system integrity. Cisco advises all users to apply the patch immediately to mitigate potential exploitation. This incident serves as a reminder of the critical need for continuous monitoring and updating of security protocols in enterprise environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-vulnerability-in-secure-workload/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "ThreatsDay: Linux Rootkits, Router 0-Day, AI Intrusions",
+            "title": "Weekly ThreatsDay Bulletin Highlights Emerging Cyber Threat Patterns",
+            "content": "The latest ThreatsDay Bulletin reveals a concerning trend in cyber threats, highlighting the use of trusted components for malicious purposes. This week's report includes incidents involving Linux rootkits, a zero-day vulnerability in routers, and AI-driven intrusions. Attackers are increasingly leveraging legitimate tools and packages to bypass security measures, complicating detection and response efforts. Security professionals should be vigilant in monitoring for anomalous behavior in trusted systems and ensure robust security measures are in place. This pattern emphasizes the evolving nature of cyber threats, where traditional defenses may no longer suffice.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/threatsday-bulletin-linux-rootkits.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Drupal CVE-2026-9082—Critical Patch for Website Security",
+            "title": "Drupal Releases Patch for Critical Vulnerability CVE-2026-9082",
+            "content": "Drupal has issued a patch for CVE-2026-9082, a highly critical vulnerability that could be exploited without authentication, leading to information disclosure, privilege escalation, and remote code execution. This vulnerability poses a significant threat to websites using affected versions of Drupal, potentially allowing attackers to take control of web servers. Website administrators are urged to apply the patch immediately to protect against potential exploitation. This incident highlights the critical importance of timely updates and patches in maintaining website security and integrity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/drupal-patches-highly-critical-vulnerability-exposing-websites-to-hacking/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Microsoft Defender Flaws—Active Exploitation Warning",
+            "title": "Microsoft Alerts on Active Exploitation of Defender Vulnerabilities",
+            "content": "Microsoft has issued a warning regarding two vulnerabilities in its Defender product, including a privilege escalation flaw tracked as CVE-2026-41091, which is actively being exploited. Rated 7.8 on the CVSS scale, this vulnerability could allow attackers to gain SYSTEM privileges, posing a significant risk to affected systems. The second flaw involves a denial-of-service condition, further highlighting the need for immediate attention. Microsoft advises users to apply the latest security updates to mitigate these risks. This alert underscores the critical need for vigilance and prompt action in cybersecurity defense strategies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Microsoft Fixes UnDefend, RedSun Zero-Days—Patch Now",
+            "title": "Microsoft Patches Exploited UnDefend and RedSun Defender Zero-Days",
+            "content": "Microsoft has released patches for two zero-day vulnerabilities in its Defender product, known as UnDefend and RedSun. These vulnerabilities could be exploited to elevate privileges to SYSTEM level or create a denial-of-service condition, posing a significant threat to system security. The active exploitation of these flaws highlights the persistent targeting of security solutions by threat actors. Microsoft strongly recommends applying the updates immediately to protect against potential attacks. This development emphasizes the ongoing need for robust patch management and proactive security measures in safeguarding critical systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-patches-exploited-undefend-and-redsun-defender-zero-days/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
             "headline": "Drupal Core Flaw—PostgreSQL Sites Vulnerable to RCE",
             "title": "Critical Drupal Core Vulnerability CVE-2026-9082 Allows Remote Code Execution",
             "content": "Drupal has issued patches for a critical vulnerability, CVE-2026-9082, in its Core that could lead to remote code execution (RCE), privilege escalation, or information disclosure. The flaw, affecting PostgreSQL database users, has been assigned a CVSS score of 6.5, indicating significant risk. This vulnerability underscores the importance of timely updates as attackers could exploit it to gain unauthorized access or control over affected systems. Drupal users, particularly those using PostgreSQL, should apply the latest security updates immediately to mitigate potential threats. This incident highlights the ongoing challenges in securing open-source platforms against sophisticated cyber threats.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/anthropic-silently-patches-claude-code-sandbox-bypass/",
             "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Drupal Issues Critical Update—High Exploitation Risk",
-            "title": "Drupal Releases Core Security Update to Address High-Risk Bug",
-            "content": "Drupal has announced a critical core security release to address a vulnerability with a high risk of exploitation. The update is expected to be available later today, and administrators are urged to apply it immediately to prevent potential attacks. Given the rapid development of exploits following disclosure, the window for patching is narrow. This update is part of Drupal's proactive approach to security, ensuring that its platform remains resilient against emerging threats. Users should monitor for the release and prioritize its deployment to safeguard their systems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-update-to-fix-bug-with-high-exploitation-risk/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "320+ NPM Packages Compromised—Mini Shai-Hulud Attack Strikes",
-            "title": "Mini Shai-Hulud Supply Chain Attack Hits Over 320 NPM Packages",
-            "content": "A supply chain attack dubbed \"Mini Shai-Hulud\" has compromised over 320 npm packages within the @antv namespace. The attack was facilitated through a compromised maintainer account, leading to the distribution of malicious package versions. This incident highlights the vulnerabilities inherent in open-source ecosystems, where trust in maintainers is paramount. Developers using affected packages should audit their dependencies and update to safe versions immediately. The attack serves as a stark reminder of the need for vigilance in monitoring package integrity and maintainer credentials.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-320-npm-packages-hit-by-fresh-mini-shai-hulud-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "AI Security Lags—Enterprises React Post-Production Deployment",
-            "title": "Securing AI Systems Post-Deployment Poses Challenges for Enterprises",
-            "content": "As enterprises accelerate AI deployments into production, security teams are increasingly forced into a reactive posture. The rush to operationalize AI projects often leaves security considerations as an afterthought, exposing systems to potential vulnerabilities. This trend highlights the need for integrating security into the AI development lifecycle from the outset. Organizations should implement robust security frameworks and conduct regular audits to mitigate risks associated with AI deployments. By prioritizing security early, enterprises can better protect their AI investments and maintain trust in their systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/caught-off-guard-securing-ai-after-it-hits-production/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "GitHub Repositories Breached—TeamPCP Claims Access to 4,000 Repos",
-            "title": "GitHub Probes TeamPCP's Alleged Breach of 4,000 Internal Repositories",
-            "content": "GitHub is currently investigating a potential security breach after the cybercriminal group TeamPCP claimed unauthorized access to approximately 4,000 of its internal repositories. The threat actor has allegedly listed the platform's source code and internal organizational data for sale on a cybercrime forum. While GitHub has not found evidence of customer data being impacted, the breach could have significant implications for the platform's security and integrity. This incident underscores the ongoing threat posed by sophisticated cybercriminal groups targeting major tech companies. Security professionals are advised to monitor for updates and ensure their own repositories are secured against unauthorized access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Vulnerability Exploitation Surpasses Credential Theft—Verizon DBIR 2026",
-            "title": "Verizon DBIR 2026: Vulnerability Exploitation Now Top Breach Vector",
-            "content": "Verizon's 2026 Data Breach Investigations Report (DBIR) reveals that vulnerability exploitation has overtaken credential theft as the leading vector for data breaches. The report highlights how advancements in artificial intelligence have accelerated attack capabilities, while delays in patching vulnerabilities have exacerbated risks. Ransomware incidents and third-party compromises continue to rise, contributing to the shifting threat landscape. Organizations are urged to prioritize timely patch management and enhance their vulnerability assessment processes to mitigate these evolving threats. The findings reflect a critical need for robust cybersecurity strategies in an increasingly complex digital environment.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/verizon-dbir-2026-vulnerability-exploitation-overtakes-credential-theft-as-top-breach-vector/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Microsoft Halts Malware-Signing Service Exploiting Artifact Signing",
-            "title": "Cybercrime Service Disrupted for Abusing Microsoft's Artifact Signing",
-            "content": "Microsoft has successfully disrupted a malware-signing-as-a-service (MSaaS) operation that exploited its Artifact Signing service to issue fraudulent code-signing certificates. These certificates were used by ransomware groups and other cybercriminals to disguise malicious software as legitimate applications. This operation highlights the ongoing abuse of legitimate services by threat actors to enhance the credibility of their malware. Security teams should review their certificate management practices and ensure that all software is verified before execution. Microsoft's intervention is a significant step in curbing the misuse of digital certificates in cybercrime.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cybercrime-service-disrupted-for-abusing-microsoft-platform-to-sign-malware/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 21 2026",
+            "headline": "Aluminum Prices Soar 20%—AI Boosts Recycling Efficiency",
+            "title": "AI-Powered Recycling Startups Target Aluminum Amid Price Surge",
+            "content": "Recycling startups are leveraging artificial intelligence to enhance the recovery of critical minerals like aluminum, as prices for the metal have surged by 20%. These startups aim to create a significant supply of aluminum by optimizing sorting and processing techniques through AI-driven systems. The rise in aluminum prices is attributed to increased demand and supply chain disruptions, making efficient recycling more crucial than ever. By improving recovery rates, these companies not only address environmental concerns but also tap into a lucrative market opportunity. Industry professionals should monitor advancements in AI technologies that could further streamline recycling processes and reduce costs.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/21/with-aluminum-prices-up-20-recycling-startups-bet-on-ai-to-cash-in/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Kore.ai Unveils Artemis—Challenges Microsoft, Salesforce in AI Agents",
+            "title": "Kore.ai Launches Artemis AI Agent Platform for Enterprise Optimization",
+            "content": "Kore.ai has introduced the Artemis edition of its Agent Platform, a comprehensive system enabling enterprises to build, manage, and optimize AI agents using AI technology itself. This platform significantly reduces the time required for developing AI agents, compressing months of engineering work into a streamlined process. By challenging industry giants like Microsoft and Salesforce, Kore.ai aims to redefine enterprise AI solutions with enhanced governance and efficiency. The Artemis platform is expected to impact businesses seeking to automate customer interactions and internal processes. Organizations should evaluate the potential of Kore.ai's platform to enhance their AI capabilities and operational efficiency.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/kore-ai-launches-artemis-ai-agent-platform-expands-challenge-to-microsoft-and-salesforce",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Generative AI Makes Brand Consistency Crucial—Design.com Insights",
+            "title": "Generative AI Elevates Brand Consistency to Mission-Critical Status",
+            "content": "Generative AI has revolutionized design accessibility, allowing founders to create logos, websites, and marketing materials rapidly. This technological shift has made brand consistency more critical than ever, as businesses can now produce high-quality designs without traditional agencies or freelancers. The ease of generating diverse content necessitates stringent brand guidelines to maintain a cohesive identity across platforms. As AI continues to democratize design, companies must prioritize brand consistency to stand out in a crowded digital landscape. Professionals in marketing and design should focus on integrating AI tools while ensuring adherence to brand standards.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/ai-didnt-kill-brand-consistency-it-made-it-mission-critical",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Spotify, UMG Deal—AI-Generated Remixes for Premium Users",
+            "title": "Spotify and UMG Collaborate on AI-Generated Music Remixes",
+            "content": "Spotify, in partnership with Universal Music Group (UMG), has announced a licensing agreement that enables Premium subscribers to create AI-generated remixes and covers of streaming songs. This innovative feature will be available as a paid add-on, allowing users to personalize their listening experience. Artists have the option to opt out, but those participating can benefit from increased engagement and revenue streams. This development reflects a growing trend of AI integration in music production, offering new creative possibilities for both artists and listeners. Music industry stakeholders should consider the implications of AI in content creation and distribution.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/935379/spotify-umg-ai-covers-remix",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Spotify Studio AI—Personalized Daily Podcasts via Chatbot",
+            "title": "Spotify Studio's AI Agent Crafts Custom Daily Podcasts",
+            "content": "Spotify Labs has launched Studio, a standalone AI application that generates personalized daily briefings, podcasts, and playlists through chatbot prompts. This AI-driven content is tailored using a user's Spotify listening history and connected apps like email and calendar. The app aims to enhance user engagement by delivering customized audio experiences directly to personal devices. As AI continues to transform media consumption, this innovation highlights the potential for personalized content delivery. Users and developers should explore the integration of AI tools to enrich user experiences and drive engagement.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/935390/spotify-studio-ai-app-personal-podcasts",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "AI Video Advances—Beyond Basic Clip Generation",
+            "title": "AI Video Technology Evolves Beyond Simple Clip Creation",
+            "content": "The landscape of AI-generated video content is rapidly advancing, moving beyond basic clip generation to more sophisticated productions. This evolution is part of a broader trend where AI is increasingly utilized in creative industries, challenging traditional content creation methods. Despite skepticism from some quarters, AI's role in media is expanding, offering new opportunities for innovation and efficiency. As AI video technology matures, it presents both challenges and opportunities for content creators and media companies. Professionals should stay informed about these developments to leverage AI's potential in enhancing video production and storytelling.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/935310/ai-video-luma-hollywood",
+            "relatedResources": []
+        },
         {
             "date": "May 21 2026",
             "headline": "SpaceX IPO: Musk's Financial Web Unveiled",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "NanoClaw, an enterprise-friendly variant of the open-source AI agent platform OpenClaw, is set to commercialize its technology for large-scale enterprise use. The platform offers secure AI agents equipped with an ever-updating library of workplace context, effectively acting as a 'second brain' for businesses. This move aims to enhance operational efficiency and decision-making processes across industries. As enterprises increasingly adopt AI solutions, NanoClaw's approach could redefine how businesses leverage AI for strategic advantage. Tech leaders should consider integrating such technologies to stay competitive in an evolving digital landscape.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/orchestration/nanoclaws-creators-are-turning-the-secure-open-source-ai-agent-harness-into-an-enterprise-second-brain",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Google's AI Search Boosts Ads with Custom Explainers",
-            "title": "Google's Gemini AI Enhances Search Ads with Personalized Recommendations",
-            "content": "Google has integrated its Gemini AI chatbot into its search platform, transforming how ads are presented to users. When searching for products, the AI now generates custom explainers to highlight why specific items are recommended, enhancing the advertising experience. This update follows Google's recent unveiling of a new search interface, signaling a shift towards more personalized and engaging user interactions. For marketers and advertisers, this development offers new opportunities to target consumers effectively. Understanding these AI-driven changes is crucial for professionals aiming to optimize their digital marketing strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/934585/google-ai-shopping-ads-search",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "AI Search Startups Surge in Popularity and Investment",
-            "title": "AI Search Startups Attract Significant Attention in Consumer AI Market",
-            "content": "AI search technology has emerged as a hotbed of innovation, drawing substantial interest and investment in the consumer AI sector. Startups in this space are leveraging advanced AI models to enhance search capabilities, offering more intuitive and accurate results. This trend reflects a growing demand for smarter search solutions that cater to user needs more effectively. As AI search continues to evolve, tech professionals and investors should keep an eye on emerging players and technologies that could disrupt traditional search paradigms. Staying informed on these advancements is essential for maintaining a competitive edge in the tech industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Google's AI Shopping Cart—A Retail Game-Changer",
-            "title": "Google Unveils AI-Driven Universal Cart at I/O 2026",
-            "content": "At Google I/O 2026, Google introduced its AI-driven \"Universal Cart,\" a tool designed to streamline shopping across multiple retailers and Google platforms, including Gemini, YouTube, and Gmail. This ambitious move comes as other tech giants scale back their AI commerce initiatives. The Universal Cart leverages advanced AI algorithms to provide a seamless shopping experience, potentially transforming consumer habits by integrating purchasing power directly into Google's ecosystem. This development could significantly impact online retail dynamics, offering users a more cohesive and intuitive shopping experience. Retailers and developers should prepare for potential shifts in consumer expectations and engagement strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/932927/google-io-agentic-ai-shopping-universal-cart",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Google DeepMind's Hassabis on AGI's Potential—A New Era?",
-            "title": "Demis Hassabis Discusses AGI's Promise at Google I/O Keynote",
-            "content": "Demis Hassabis, CEO of Google DeepMind, described the current advancements in AI as the \"foothills of the singularity\" during his keynote at Google I/O 2026. He emphasized the transformative potential of Artificial General Intelligence (AGI) to benefit humanity, highlighting Google's commitment to pioneering research and development. This statement positions Google at the forefront of AI innovation, aiming to harness AGI's capabilities for global good. The announcement reflects a broader industry trend towards exploring AGI's possibilities, urging developers and tech leaders to consider the ethical and practical implications of such advancements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/934260/google-io-ai-singularity-demis-hassabis",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Google Enters AI Design Arena with New App",
-            "title": "Google Launches AI Design App for Diverse User Base at I/O 2026",
-            "content": "At the I/O 2026 conference, Google announced its entry into the AI design space with a new application tailored for a wide range of users, from educators to small business owners. This app aims to democratize design capabilities, leveraging AI to simplify complex design tasks and enhance creativity. By making sophisticated design tools accessible to non-experts, Google is positioning itself as a key player in the AI-driven design market. This move could disrupt traditional design workflows, encouraging professionals to integrate AI solutions into their creative processes. Stakeholders should evaluate the potential of AI in transforming design methodologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 19 2026",
-            "headline": "Talk to Gmail—Voice Search Revolutionizes Email",
-            "title": "Google Introduces Conversational Voice Search in Gmail at I/O 2026",
-            "content": "Google has expanded its Gmail capabilities by integrating conversational voice search, allowing users to interact with their inboxes using natural language queries. This feature, powered by Google's AI model Gemini, enables users to efficiently locate specific email details without manual searching. The enhancement reflects a growing trend towards voice-activated digital interactions, offering a more intuitive user experience. As voice search becomes increasingly prevalent, professionals should consider the implications for productivity and user engagement. This development underscores the importance of adapting to evolving communication technologies in both personal and professional contexts.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
             "relatedResources": []
         }
     ],
