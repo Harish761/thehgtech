@@ -3789,7 +3789,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In April 2026, <a href=\"https://x.com/DarkWebInformer/status/2048772869312622609\" target=\"_blank\" rel=\"noopener\">data allegedly obtained from CTT, Portugal’s national postal service, was posted to a public hacking forum</a>. The data included 468k unique email addresses along with names, phone numbers and parcel tracking numbers which can be used to retrieve the tracking history of the parcel."
+      "Description": "In April 2026, <a href=\"https://x.com/DarkWebInformer/status/2048772869312622609\" target=\"_blank\" rel=\"noopener\">data allegedly obtained from CTT, Portugal's national postal service, was posted to a public hacking forum</a>. The data included 468k unique email addresses along with names, phone numbers and parcel tracking numbers which can be used to retrieve the tracking history of the parcel."
     }
   ],
   "cultura.com": [
@@ -4594,6 +4594,26 @@
       "IsVerified": true,
       "IsFabricated": false,
       "Description": "In January 2025, <a href=\"https://medium.com/@zuajes/public-statement-on-the-extraction-of-emails-from-doxbin-cfd036c07a24\" target=\"_blank\" rel=\"noopener\">435k email addresses were scraped from the \"doxing\" service Doxbin</a>. Posts to the service are usually intended to disclose the personal information of non-consensually third parties."
+    }
+  ],
+  "playdragonica.eu": [
+    {
+      "Name": "Dragonica",
+      "Title": "Dragonica Lunaris",
+      "BreachDate": "2025-12-06",
+      "AddedDate": "2026-05-21T04:41:32Z",
+      "PwnCount": 126293,
+      "DataClasses": [
+        "Dates of birth",
+        "Email addresses",
+        "Names",
+        "Passwords",
+        "Spoken languages",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In December 2025, <a href=\"https://playdragonica.eu/\" target=\"_blank\" rel=\"noopener\">the European Dragonica private server Dragonica Lunaris</a> suffered a data breach. The incident exposed 126k email addresses, usernames, dates of birth and bcrypt password hashes. The service operator confirmed the breach and advised it has since been fixed."
     }
   ],
   "dragonnest.com": [
@@ -17178,6 +17198,24 @@
       "IsVerified": true,
       "IsFabricated": false,
       "Description": "In September 2013, the <a href=\"http://www.win7vista.com\" target=\"_blank\" rel=\"noopener\">Win7Vista</a> Windows forum (since renamed to the \"Beyond Windows 9\" forum) was hacked and later <a href=\"http://leak.sx/thread-186933\" target=\"_blank\" rel=\"noopener\">had its internal database dumped</a>. The dump included over 200k members’ personal information and other internal data extracted from the forum."
+    }
+  ],
+  "windows93.net": [
+    {
+      "Name": "Windows93",
+      "Title": "Windows93 / Myspace93",
+      "BreachDate": "2021-01-01",
+      "AddedDate": "2026-05-21T03:45:15Z",
+      "PwnCount": 46105,
+      "DataClasses": [
+        "Email addresses",
+        "IP addresses",
+        "Passwords",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In January 2021, the parody site <a href=\"https://web.archive.org/web/20210704163048/https://www.windows93.net/dearCommunity.txt\" target=\"_blank\" rel=\"noopener\">Windows93 suffered a data breach of the Myspace93 sub-site</a> after a beta application was exploited to download server files. The compromised data was later leaked in June and included 46k Myspace93 accounts containing email and IP addresses, usernames and passwords stored in plain text."
     }
   ],
   "wired.com": [
