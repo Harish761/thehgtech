@@ -335,6 +335,81 @@ Answer with just: "YES" (definite zero-day), "LIKELY" (probable), or "NO" (not z
     return 0
 
 
+
+# --- NEW: AI Caching & Business Impact ---
+AI_CACHE_FILE = "cve_ai_cache.json"
+
+def load_ai_cache() -> Dict:
+    if os.path.exists(AI_CACHE_FILE):
+        try:
+            with open(AI_CACHE_FILE, 'r') as f:
+                return json.load(f)
+        except:
+            return {}
+    return {}
+
+def save_ai_cache(cache: Dict):
+    with open(AI_CACHE_FILE, 'w') as f:
+        json.dump(cache, f, indent=2)
+
+def analyze_business_impact(cve_id: str, description: str, cvss_score: float) -> Dict:
+    cache = load_ai_cache()
+    if cve_id in cache:
+        return cache[cve_id]
+        
+    default_result = {
+        "businessImpactScore": "High" if cvss_score >= 7.0 else "Medium",
+        "impactTags": []
+    }
+    
+    if not OPENAI_API_KEY:
+        return default_result
+        
+    try:
+        prompt = f'''Analyze this CVE for a SOC dashboard.
+CVE: {cve_id}
+Description: {description[:800]}
+CVSS Score: {cvss_score}
+
+Return ONLY a JSON object with:
+"businessImpactScore": "High", "Medium", or "Low"
+"impactTags": Array of 1-3 short SOC tags (e.g., "RCE", "Domain Admin Risk", "Ransomware Vector", "Data Exfiltration")
+
+JSON format exactly:
+{{"businessImpactScore": "High", "impactTags": ["tag1", "tag2"]}}'''
+
+        response = requests.post(
+            'https://api.openai.com/v1/chat/completions',
+            headers={
+                'Authorization': f'Bearer {OPENAI_API_KEY}',
+                'Content-Type': 'application/json'
+            },
+            json={
+                'model': 'gpt-4o-mini',
+                'messages': [{'role': 'user', 'content': prompt}],
+                'temperature': 0.1,
+                'max_tokens': 100
+            },
+            timeout=15
+        )
+        
+        if response.status_code == 200:
+            result = response.json()
+            content = result['choices'][0]['message']['content']
+            import re
+            json_match = re.search(r'\{.*\}', content, re.DOTALL)
+            if json_match:
+                parsed = json.loads(json_match.group())
+                cache[cve_id] = parsed
+                save_ai_cache(cache)
+                return parsed
+    except Exception as e:
+        print(f"    ⚠️  AI business impact analysis failed: {e}")
+        
+    return default_result
+
+# -----------------------------------------
+
 def determine_severity(nvd_data: Dict) -> str:
     """Determine severity from NVD CVSS scores"""
     if not nvd_data:
@@ -405,11 +480,39 @@ def process_cve(cisa_vuln: Dict) -> Dict:
         if descriptions:
             full_description = descriptions[0].get('value', full_description)
     
+
+    # Calculate days unpatched
+    date_added_dt = datetime.fromisoformat(cisa_vuln['dateAdded'])
+    days_unpatched = (datetime.now() - date_added_dt).days
+    
+    # Determine exploit maturity
+    exploit_maturity = "In-the-Wild"
+    if cisa_vuln.get('knownRansomwareCampaignUse') == 'Known':
+        exploit_maturity = "Ransomware Used"
+    elif is_zero_day:
+        exploit_maturity = "Weaponized"
+        
+    # Get business impact
+    cvss_score = 9.0
+    if nvd_data and 'metrics' in nvd_data:
+        m = nvd_data['metrics']
+        for v in ['cvssMetricV40', 'cvssMetricV31', 'cvssMetricV30', 'cvssMetricV2']:
+            if v in m:
+                cvss_score = m[v][0]['cvssData']['baseScore']
+                break
+                
+    impact_data = analyze_business_impact(cve_id, full_description, cvss_score)
+    
     cve_entry = {
         'cveId': cve_id,
         'dateAdded': cisa_vuln['dateAdded'],
         'vendor': vendor,
         'product': product,
+        'exploitMaturity': exploit_maturity,
+        'businessImpactScore': impact_data.get('businessImpactScore', 'High'),
+        'impactTags': impact_data.get('impactTags', []),
+        'daysSinceDisclosure': days_unpatched,
+        'daysToPatch': None if not remediation_links else (days_unpatched if is_zero_day else max(0, days_unpatched - 15)),
         'fullDescription': full_description,  # Complete description for modal
         'description': cisa_vuln['vulnerabilityName'],
         'shortDescription': cisa_vuln.get('shortDescription', ''),

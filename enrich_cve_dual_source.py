@@ -420,9 +420,22 @@ def fetch_nvd_critical_cves(days=7, max_results=50) -> List[Dict]:
                         'type': 'vendor' if vendor.lower() in ref['url'].lower() else 'advisory'
                     })
             
+
+            # New fields for NVD CVEs
+            days_unpatched = (datetime.now() - datetime.fromisoformat(date_added)).days
+            
+            # AI caching for NVD
+            from enrich_cve_patches import analyze_business_impact
+            impact_data = analyze_business_impact(cve_id, description, cvss_score)
+            
             critical_cves.append({
                 'cveId': cve_id,
                 'dateAdded': date_added,
+                'exploitMaturity': "PoC Available" if remediation_links else "None", # Conservative for NVD
+                'businessImpactScore': impact_data.get('businessImpactScore', 'High'),
+                'impactTags': impact_data.get('impactTags', []),
+                'daysSinceDisclosure': days_unpatched,
+                'daysToPatch': None if not remediation_links else 0,
                 'vendor': vendor,
                 'product': product,
                 'fullDescription': description,  # Store complete description for modal
@@ -480,11 +493,14 @@ def main_dual_source():
     from enrich_cve_patches import fetch_cisa_kev, process_cve
     
     kev_data = fetch_cisa_kev()
-    seven_days_ago = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
-    recent_kev = [
+    # Fetch 180 days for vendor stats
+    six_months_ago = (datetime.now() - timedelta(days=180)).strftime('%Y-%m-%d')
+    all_recent_kev = [
         v for v in kev_data.get('vulnerabilities', [])
-        if v['dateAdded'] >= seven_days_ago
+        if v['dateAdded'] >= six_months_ago
     ]
+    # But only fully process the top 50 most recent to save time/tokens
+    recent_kev = sorted(all_recent_kev, key=lambda x: x['dateAdded'], reverse=True)[:50]
     
     print(f"Processing {len(recent_kev)} CISA KEV CVEs...")
     
@@ -519,8 +535,34 @@ def main_dual_source():
     # Sort by date (most recent first)
     unique_cves.sort(key=lambda x: x['dateAdded'], reverse=True)
     
+    # Generate Vendor Stats for Leaderboard
+    vendor_stats = {}
+    for cve in unique_cves:
+        v = cve.get('vendor', 'Unknown')
+        if v == 'Unknown': continue
+        if v not in vendor_stats:
+            vendor_stats[v] = {'total': 0, 'unpatched': 0, 'slow_patches': 0, 'avg_days_to_patch': 0, '_days_list': []}
+        
+        vendor_stats[v]['total'] += 1
+        days_to_patch = cve.get('daysToPatch')
+        if days_to_patch is None:
+            vendor_stats[v]['unpatched'] += 1
+            days = cve.get('daysSinceDisclosure', 0)
+            if (cve.get('isZeroDay') and days > 15) or (not cve.get('isZeroDay') and days > 30):
+                vendor_stats[v]['slow_patches'] += 1
+        else:
+            vendor_stats[v]['_days_list'].append(days_to_patch)
+            if (cve.get('isZeroDay') and days_to_patch > 15) or (not cve.get('isZeroDay') and days_to_patch > 30):
+                vendor_stats[v]['slow_patches'] += 1
+                
+    for v, stats in vendor_stats.items():
+        if stats['_days_list']:
+            stats['avg_days_to_patch'] = sum(stats['_days_list']) // len(stats['_days_list'])
+        del stats['_days_list']
+
     # Generate output with source categorization
     output = {
+        'vendorStats': vendor_stats,
         'lastUpdated': datetime.now().isoformat(),
         'totalCVEs': len(unique_cves),
         'sources': {
