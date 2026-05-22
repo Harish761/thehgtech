@@ -1633,14 +1633,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-813",
-      "incident_id": 813,
-      "title": "Starship Technologies Delivery Robot Reportedly Injures Arizona State University Employee",
-      "date": "2026-02-21",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1376",
       "incident_id": 1376,
       "title": "Amazon Delivery Van Reportedly Became Stranded on Essex Mudflats After GPS Routed It Onto the Broomw",
@@ -1650,9 +1642,9 @@
     }
   ],
   "stats": {
-    "total": 206,
+    "total": 205,
     "last7Days": 85,
     "last30Days": 116
   },
-  "lastUpdated": "2026-05-22T16:43:20.985836+05:30"
+  "lastUpdated": "2026-05-22T20:46:38.080562+05:30"
 }
