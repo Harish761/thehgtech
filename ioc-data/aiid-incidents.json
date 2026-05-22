@@ -49,6 +49,30 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1500",
+      "incident_id": 1500,
+      "title": "New Jersey Man Cornelius Shannon Allegedly Published Hundreds of AI-Generated Deepfake Pornography A",
+      "date": "2026-05-22",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1501",
+      "incident_id": 1501,
+      "title": "Texas Man Arturo Hernandez Allegedly Published AI-Generated Deepfake Pornography Depicting Women in ",
+      "date": "2026-05-22",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1502",
+      "incident_id": 1502,
+      "title": "Scammers Reportedly Used Real-Time Deepfake Video to Impersonate Veriff CEO Kaarel Kotkas in WhatsAp",
+      "date": "2026-05-22",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1493",
       "incident_id": 1493,
       "title": "Gemini and Grok Reportedly Misidentified Authentic Minab School-Strike Graveyard Photo as Unrelated ",
@@ -1658,9 +1682,9 @@
     }
   ],
   "stats": {
-    "total": 207,
-    "last7Days": 88,
-    "last30Days": 119
+    "total": 210,
+    "last7Days": 91,
+    "last30Days": 122
   },
-  "lastUpdated": "2026-05-22T23:33:16.183497+05:30"
+  "lastUpdated": "2026-05-23T01:50:24.321635+05:30"
 }
