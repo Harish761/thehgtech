@@ -1,6 +1,54 @@
 {
   "incidents": [
     {
+      "id": "AIID-1406",
+      "incident_id": 1406,
+      "title": "Purported AI-Generated War Footage Reportedly Circulated Widely Online During the Opening Phase of t",
+      "date": "2026-05-22",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1492",
+      "incident_id": 1492,
+      "title": "Purportedly AI-Enabled Targeting System Was Reportedly Implicated in Deadly U.S. Strike on Iranian P",
+      "date": "2026-05-22",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1496",
+      "incident_id": 1496,
+      "title": "Purportedly AI-Generated Jeffrey Epstein Video Reportedly Used by Pro-Iran Accounts to Claim Iran Wa",
+      "date": "2026-05-22",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1493",
+      "incident_id": 1493,
+      "title": "Gemini and Grok Reportedly Misidentified Authentic Minab School-Strike Graveyard Photo as Unrelated ",
+      "date": "2026-05-21",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1494",
+      "incident_id": 1494,
+      "title": "Purportedly AI-Manipulated Satellite Image Reportedly Claimed Iranian Strike Destroyed U.S. Radar in",
+      "date": "2026-05-21",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1495",
+      "incident_id": 1495,
+      "title": "Grok Reportedly Misclassified Netanyahu Proof-of-Life Video as AI-Generated Deepfake Amid Iran War R",
+      "date": "2026-05-21",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-86",
       "incident_id": 86,
       "title": "Ireland's 2020 Leaving Certificate Calculated-Grades Model Reportedly Issued Incorrect Scores to Tho",
@@ -1273,14 +1321,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1406",
-      "incident_id": 1406,
-      "title": "Purported AI-Generated War Footage Reportedly Circulated Widely Online During the Opening Phase of t",
-      "date": "2026-03-15",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1411",
       "incident_id": 1411,
       "title": "Purported Deepfake Scam Ad Reportedly Used Lara Lewington and Martin Lewis to Promote Quantum AI Sch",
@@ -1601,34 +1641,18 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1374",
-      "incident_id": 1374,
-      "title": "Purportedly AI-Generated Sepsis Alert Reportedly Prompted Potentially Inappropriate IV Fluid Adminis",
-      "date": "2026-02-21",
-      "category": "prompt_injection",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1376",
       "incident_id": 1376,
       "title": "Amazon Delivery Van Reportedly Became Stranded on Essex Mudflats After GPS Routed It Onto the Broomw",
       "date": "2026-02-21",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1377",
-      "incident_id": 1377,
-      "title": "Seedance 2.0 Reportedly Generated Viral Tom Cruise\u2013Brad Pitt Fight Video, Prompting Hollywood IP and",
-      "date": "2026-02-21",
-      "category": "prompt_injection",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 203,
-    "last7Days": 79,
-    "last30Days": 110
+    "total": 206,
+    "last7Days": 85,
+    "last30Days": 116
   },
-  "lastUpdated": "2026-05-22T03:14:54.666194+05:30"
+  "lastUpdated": "2026-05-22T09:54:05.471677+05:30"
 }
