@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-05-21T17:13:23.505417",
-  "total_incidents": 28225,
+  "last_updated": "2026-05-22T06:31:13.017103",
+  "total_incidents": 28228,
   "incidents": [
+    {
+      "id": "qilin_roto_immobilien",
+      "victim_name": "ROTO Immobilien",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-21T20:26:12.248975+00:00",
+      "industry": "Construction",
+      "website": "www.roto-immobilien.at",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/6de5a38f64bfd827d2180fedd343ba68.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=723469f2-6713-46a5-a07c-99f446fd6148",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_vernon_&_ginsburg",
+      "victim_name": "Vernon & Ginsburg",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-21T18:55:10.652553+00:00",
+      "industry": "Not Found",
+      "website": "www.vernonginsburg.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/471934d110a55de5dbf1dd71fcba19ab.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=b5d7cd8d-5f29-4f49-b180-326eee4e6ddc",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_snyder_packaging",
+      "victim_name": "Snyder Packaging",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-21T18:25:59.200592+00:00",
+      "industry": "Manufacturing",
+      "website": "www.snyderpkg.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/0c8fb1b6df5da04fd2e93c3fe2db5599.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=b473a74f-5a6a-404b-956c-aac8458821ca",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "apt73_grupopetersen.com.ar",
       "victim_name": "grupopetersen.com.ar",
