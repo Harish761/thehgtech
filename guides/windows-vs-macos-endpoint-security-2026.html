@@ -765,7 +765,7 @@
         <img src="/images/guides/windows-vs-macos-endpoint-security-2026.png"
              alt="Windows vs macOS Endpoint Security 2026 — Harish G analyzing EDR dashboards in a split SOC environment showing CrowdStrike Falcon on Windows and Jamf Pro on macOS"
              class="featured-image"
-             style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin: 2rem 0; box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2); border: 1px solid var(--border);"
+             style="width: 100%; object-fit: cover; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,217,255,0.2);"
              loading="eager">
 
         <!-- Abstract / BLUF -->
@@ -814,13 +814,13 @@
         <ul>
             <li><strong>Legacy application lock-in:</strong> ERP systems, industry-specific software, and internal tooling built for Win32 APIs over two decades represent billions in technical debt that cannot be migrated overnight.</li>
             <li><strong>Group Policy + Active Directory dominance:</strong> Despite Entra ID's evolution, the GPO-driven configuration model is still the backbone of most enterprise environments globally.</li>
-            <li><strong>Tooling ecosystem depth:</strong> The SIEM/SOAR/EDR vendor ecosystem has Windows as a first-class citizen. macOS often ships as an afterthought — same product names, but 6-18 months behind in feature parity.</li>
+            <li><strong>Tooling ecosystem depth:</strong> The SIEM/SOAR/EDR vendor ecosystem often treats Windows as a primary target. However, cross-platform leaders like CrowdStrike, SentinelOne, and Trellix have significantly closed this gap.</li>
             <li><strong>Cost delta at scale:</strong> Enterprise Mac hardware carries a 40-70% cost premium over equivalent Windows hardware. For a 50,000-seat fleet, that's a nine-figure differential.</li>
             <li><strong>Regulatory familiarity:</strong> Auditors, compliance frameworks, and security controls were historically written for Windows environments.</li>
         </ul>
 
         <div class="opinion-box">
-            <p><strong><i class="fas fa-comment-alt" style="color: #FFA500;"></i> Editorial Analysis:</strong> The "Windows is less secure than macOS" narrative is true in kernel architecture terms but <em>false in operational reality</em>. A fully-managed, hardened Windows 11 fleet with Defender XDR and Intune is more secure than a lightly-managed macOS fleet running Jamf with default policies. Security posture is 70% operations and 30% platform.</p>
+            <p><strong><i class="fas fa-comment-alt" style="color: #FFA500; margin-right: 8px;"></i> The "Macs Don't Need AV" Myth:</strong> The narrative that macOS inherently doesn't need security tools is factually incorrect and dangerous in 2026. In any mature enterprise environment, <em>Macs are subject to the exact same baseline controls as Windows</em>. This means mandatory deployment of AV, EDR (CrowdStrike, SentinelOne), Enterprise DLP (Netskope, Proofpoint), and automated patch management. Just because Windows has a larger malware ecosystem doesn't mean macOS is immune — a fully-managed Windows fleet is often more secure than a lightly-managed macOS fleet coasting on its architectural reputation.</p>
         </div>
 
         <h3>1.2 The 2026 Threat Landscape Realities</h3>
@@ -1029,21 +1029,20 @@
 
         <div class="technical-box">
             <h4><i class="fas fa-shield-alt"></i> DLP Comparison: Windows vs macOS</h4>
-            <p><strong>Windows (Microsoft Purview DLP):</strong></p>
+            <p><strong>Windows (Vendor-Agnostic & Microsoft Native):</strong></p>
             <ul>
-                <li>Native DLP deeply integrated with Microsoft 365 apps — inspects Word, Excel, Outlook content in real time</li>
-                <li>Endpoint DLP covers upload to cloud services, USB transfer, clipboard, print, and screen capture</li>
-                <li>Sensitivity label enforcement integrates with DLP policies — document classification drives data handling rules</li>
-                <li>Third-party DLP (Symantec DLP, Forcepoint, Digital Guardian) have mature Windows agents with full kernel visibility</li>
+                <li><strong>Microsoft Purview DLP:</strong> Native integration with Microsoft 365 apps — inspects Word, Excel, Outlook content in real time with endpoint coverage for USB, clipboard, print, and screen capture.</li>
+                <li><strong>Best-of-Breed DLP (Netskope, Trellix, Proofpoint, Digital Guardian):</strong> Mature Windows agents with deep kernel hooks, allowing precise content inspection, network isolation, and strict data-in-motion controls.</li>
+                <li>Sensitivity label enforcement is highly reliable and deeply integrated with the OS file system.</li>
             </ul>
-            <p><strong>macOS (the honest picture):</strong></p>
+            <p><strong>macOS (The Enterprise Reality):</strong></p>
             <ul>
-                <li>Microsoft Purview DLP has macOS coverage for basic scenarios — but print DLP, clipboard DLP, and screen capture DLP are not available on macOS as of May 2026</li>
-                <li>USB DLP on macOS requires Jamf Protect + custom configuration; not turnkey</li>
-                <li>Third-party DLP agents on macOS have significantly reduced capabilities versus Windows counterparts — often 30-40% feature gap</li>
-                <li>Content Inspection on macOS is restricted by file system access controls; full disk access MDM profile helps but user-level processes remain opaque</li>
+                <li><strong>The "No DLP Needed" Myth:</strong> A persistent and dangerous misconception is that Macs do not require DLP. In reality, modern enterprise Mac fleets handle highly sensitive IP, source code, and executive communications, making enterprise-grade DLP absolutely mandatory.</li>
+                <li><strong>Platform Limitations:</strong> Third-party DLP agents (including Netskope, Trellix, and Proofpoint) on macOS often face a 30-40% feature gap due to Apple's Endpoint Security Framework (ESF) limitations.</li>
+                <li><strong>Microsoft Purview on Mac:</strong> Offers basic scenarios but print DLP, clipboard DLP, and screen capture DLP are notoriously unreliable or unavailable on macOS as of May 2026.</li>
+                <li>USB DLP on macOS requires complex MDM configurations (like Jamf Protect Device Controls) rather than turnkey agent policies.</li>
             </ul>
-            <p style="margin:0; font-size: 0.9rem; color: var(--text-secondary);"><em>Practical implication: If you have material DLP requirements (HIPAA, PCI, financial data handling), building a macOS-only environment is significantly more expensive and less complete than Windows. Budget for compensating controls.</em></p>
+            <p style="margin:0; font-size: 0.9rem; color: var(--text-secondary);"><em>Practical implication: Do not fall for the trap of treating macOS as implicitly safe. If you have material DLP requirements (HIPAA, PCI, IP protection), deploying Netskope, Trellix, or Purview on Macs is non-negotiable. Budget for the additional engineering time required to make these tools effective on macOS.</em></p>
         </div>
 
         <h3 id="management">3.5 Configuration Complexity: Intune + Autopilot vs Jamf Pro</h3>
@@ -1299,11 +1298,11 @@
             <p><strong><i class="fas fa-shield-alt"></i> Windows Hardening — Priority Order:</strong></p>
             <p><strong>Tier 1 — Enable First (Week 1):</strong></p>
             <ul>
-                <li>✅ <strong>Enable VBS + HVCI</strong> via Intune: <code>Device Configuration → Endpoint Protection → Device Guard</code> — Credential Guard enabled; HVCI on all compatible devices</li>
-                <li>✅ <strong>Deploy Microsoft Security Baseline</strong> via Intune (Windows 11 23H2+ baseline) — 200+ settings pre-configured to CIS Level 1</li>
-                <li>✅ <strong>Enable BitLocker</strong> with silent encryption + Intune key escrow — all drives, all devices, no exceptions</li>
-                <li>✅ <strong>Configure Windows Hello for Business</strong> — phishing-resistant passkeys; disable NTLM where possible</li>
-                <li>✅ <strong>Enable Microsoft Defender XDR</strong> in Block mode — not audit mode. Accept false positives in week 1. Tune from there.</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Enable VBS + HVCI</strong> via Intune: <code>Device Configuration → Endpoint Protection → Device Guard</code> — Credential Guard enabled; HVCI on all compatible devices</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Deploy Microsoft Security Baseline</strong> via Intune (Windows 11 23H2+ baseline) — 200+ settings pre-configured to CIS Level 1</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Enable BitLocker</strong> with silent encryption + Intune key escrow — all drives, all devices, no exceptions</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Configure Windows Hello for Business</strong> — phishing-resistant passkeys; disable NTLM where possible</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Enable Microsoft Defender XDR</strong> in Block mode — not audit mode. Accept false positives in week 1. Tune from there.</li>
             </ul>
             <p><strong>Tier 2 — Configure Within 30 Days:</strong></p>
             <ul>
@@ -1329,15 +1328,15 @@ $report = @{}
 
 # VBS / Credential Guard
 $dg = Get-ComputerInfo | Select-Object -ExpandProperty DeviceGuardSmartStatus
-$report['VBS/Credential Guard'] = if ($dg -match 'Running') { '✅ ENABLED' } else { '❌ DISABLED' }
+$report['VBS/Credential Guard'] = if ($dg -match 'Running') { '[PASS] ENABLED' } else { '[FAIL] DISABLED' }
 
 # BitLocker
 $bl = Get-BitLockerVolume -MountPoint "C:" | Select-Object -ExpandProperty ProtectionStatus
-$report['BitLocker C:'] = if ($bl -eq 'On') { '✅ ENABLED' } else { '❌ DISABLED' }
+$report['BitLocker C:'] = if ($bl -eq 'On') { '[PASS] ENABLED' } else { '[FAIL] DISABLED' }
 
 # HVCI
 $hvci = (Get-CimInstance -ClassName Win32_DeviceGuard -Namespace root\Microsoft\Windows\DeviceGuard).CodeIntegrityPolicyEnforcementStatus
-$report['HVCI'] = if ($hvci -eq 2) { '✅ ENFORCED' } else { '⚠️ NOT ENFORCED' }
+$report['HVCI'] = if ($hvci -eq 2) { '✅ ENFORCED' } else { '[WARN] NOT ENFORCED' }
 
 # ASR Rules (check via registry)
 $asrKey = 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules'
@@ -1353,11 +1352,11 @@ $report.GetEnumerator() | ForEach-Object { Write-Host "$($_.Key): $($_.Value)" }
             <p><strong><i class="fas fa-apple-alt"></i> macOS Hardening — Priority Order:</strong></p>
             <p><strong>Tier 1 — Enable First (Week 1):</strong></p>
             <ul>
-                <li>✅ <strong>Verify SIP is enabled</strong> — <code>csrutil status</code> must return "enabled"; alert on any device where it's disabled; never disable SIP in production</li>
-                <li>✅ <strong>Deploy FileVault 2</strong> via Jamf — enable for all volumes; escrow recovery key to Jamf; validate compliance via Smart Group</li>
-                <li>✅ <strong>Enable Gatekeeper at "App Store and identified developers"</strong> level — enforce via MDM profile; never set to "Anywhere"</li>
-                <li>✅ <strong>Configure PPPC profiles</strong> via Jamf — pre-approve EDR, Jamf Protect, and corporate applications for full disk access; prevent prompt fatigue</li>
-                <li>✅ <strong>Deploy EDR agent</strong> (CrowdStrike or SentinelOne) with System Extension and Network Extension approved via MDM</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Verify SIP is enabled</strong> — <code>csrutil status</code> must return "enabled"; alert on any device where it's disabled; never disable SIP in production</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Deploy FileVault 2</strong> via Jamf — enable for all volumes; escrow recovery key to Jamf; validate compliance via Smart Group</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Enable Gatekeeper at "App Store and identified developers"</strong> level — enforce via MDM profile; never set to "Anywhere"</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Configure PPPC profiles</strong> via Jamf — pre-approve EDR, Jamf Protect, and corporate applications for full disk access; prevent prompt fatigue</li>
+                <li><i class="fas fa-check" style="color: var(--accent-green); margin-right: 8px;"></i> <strong>Deploy EDR agent</strong> (CrowdStrike or SentinelOne) with System Extension and Network Extension approved via MDM</li>
             </ul>
             <p><strong>Tier 2 — Configure Within 30 Days:</strong></p>
             <ul>
@@ -1384,27 +1383,27 @@ echo "=== macOS Security Posture Check ==="
 
 # SIP Status
 SIP=$(csrutil status 2>&1)
-[[ "$SIP" == *"enabled"* ]] && echo "✅ SIP: ENABLED" || echo "❌ SIP: DISABLED"
+[[ "$SIP" == *"enabled"* ]] && echo "[PASS] SIP: ENABLED" || echo "[FAIL] SIP: DISABLED"
 
 # FileVault Status
 FV=$(fdesetup status 2>&1)
-[[ "$FV" == *"FileVault is On"* ]] && echo "✅ FileVault: ENABLED" || echo "❌ FileVault: DISABLED"
+[[ "$FV" == *"FileVault is On"* ]] && echo "[PASS] FileVault: ENABLED" || echo "[FAIL] FileVault: DISABLED"
 
 # Gatekeeper Status
 GK=$(spctl --status 2>&1)
-[[ "$GK" == *"assessments enabled"* ]] && echo "✅ Gatekeeper: ENABLED" || echo "❌ Gatekeeper: DISABLED"
+[[ "$GK" == *"assessments enabled"* ]] && echo "[PASS] Gatekeeper: ENABLED" || echo "[FAIL] Gatekeeper: DISABLED"
 
 # Firewall Status
 FW=$(/usr/libexec/ApplicationFirewall/socketfilterfw --getglobalstate 2>&1)
-[[ "$FW" == *"enabled"* ]] && echo "✅ Firewall: ENABLED" || echo "❌ Firewall: DISABLED"
+[[ "$FW" == *"enabled"* ]] && echo "[PASS] Firewall: ENABLED" || echo "[FAIL] Firewall: DISABLED"
 
 # Remote Login
 RL=$(sudo systemsetup -getremotelogin 2>&1)
-[[ "$RL" == *"Off"* ]] && echo "✅ SSH Remote Login: DISABLED" || echo "⚠️  SSH Remote Login: ENABLED"
+[[ "$RL" == *"Off"* ]] && echo "[PASS] SSH Remote Login: DISABLED" || echo "[WARN] SSH Remote Login: ENABLED"
 
 # Screen Saver Password
 SSP=$(defaults read com.apple.screensaver askForPassword 2>&1)
-[[ "$SSP" == "1" ]] && echo "✅ Screen Lock: ENABLED" || echo "❌ Screen Lock: DISABLED"
+[[ "$SSP" == "1" ]] && echo "[PASS] Screen Lock: ENABLED" || echo "[FAIL] Screen Lock: DISABLED"
 
 echo "=== Check Complete ==="</code></pre>
         </div>
@@ -1525,7 +1524,6 @@ level: high
             </div>
         </div>
 
-    </div><!-- end .container -->
 
     <!-- Interaction Bar -->
     <div class="interaction-bar">
@@ -1544,7 +1542,12 @@ level: high
             <button onclick="window.print()" class="print-btn" title="Print Guide"><i class="fas fa-print"></i></button>
         </div>
     </div>
-    <script src="/interaction-bar.js?v=20260220"></script>
 
+    </div><!-- end .container -->
+
+    <script src="/interaction-bar.js?v=20260220"></script>
+    <script src="/ui-enhancements.js?v=20260517" defer></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
 </body>
 </html>
