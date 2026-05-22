@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 22 2026",
+            "headline": "Trend Micro Zero-Day Exploited—Patch Your Apex One Now",
+            "title": "Trend Micro Addresses Apex One Zero-Day Vulnerability Exploited in the Wild",
+            "content": "Trend Micro has issued a patch for a zero-day vulnerability in its Apex One security solution, which has been actively exploited in attacks on Windows systems. The flaw, identified as CVE-2026-34926, is a directory traversal vulnerability affecting the on-premise version of Apex One. This vulnerability allows attackers to execute arbitrary code, posing a significant risk to organizations relying on this software for endpoint protection. The exploitation of this zero-day highlights the ongoing threat landscape where attackers are increasingly targeting security solutions themselves. Users are urged to apply the latest updates immediately to mitigate potential risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trend-micro-warns-of-apex-one-zero-day-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Critical SQL Injection in Drupal—Active Exploitation Detected",
+            "title": "Drupal Warns of Active Exploitation of Critical SQL Injection Vulnerability",
+            "content": "Drupal has alerted users to active exploitation attempts targeting a \"highly critical\" SQL injection vulnerability disclosed earlier this week. This flaw affects Drupal versions 10.0 and earlier, allowing attackers to execute arbitrary SQL commands on the database. The vulnerability poses a severe threat to websites running on affected Drupal versions, potentially leading to data breaches or site defacement. This incident underscores the importance of promptly applying security patches to web applications. Drupal administrators are advised to update their installations to the latest secure versions to protect against these attacks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-sql-injection-flaw-now-targeted-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "FBI Shuts Down ‘First VPN’—Administrator Arrested",
+            "title": "‘First VPN’ Cybercrime Service Disrupted by FBI, Administrator in Custody",
+            "content": "The FBI has successfully disrupted the cybercrime service known as First VPN, which was utilized by numerous ransomware groups for network reconnaissance and intrusions. The service's administrator has been arrested, marking a significant blow to cybercriminal operations relying on this tool. First VPN provided anonymity and secure communication channels, aiding ransomware groups in evading detection. This operation highlights law enforcement's ongoing efforts to dismantle infrastructure supporting cybercrime. Organizations are reminded to enhance their network monitoring and threat intelligence capabilities to detect and respond to such threats effectively.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/first-vpn-cybercrime-service-disrupted-administrator-arrested/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "TrendAI Patches Apex One Zero-Day—Immediate Update Required",
+            "title": "TrendAI Releases Patch for Apex One Zero-Day Vulnerability Exploited in the Wild",
+            "content": "TrendAI has released a patch for a critical zero-day vulnerability, CVE-2026-34926, in its Apex One security software, which has been actively exploited. This directory traversal flaw affects the on-premise version of Apex One, allowing attackers to execute arbitrary code. The vulnerability's exploitation demonstrates the persistent targeting of security solutions by threat actors. Organizations using Apex One are strongly advised to apply the patch immediately to safeguard their systems. This incident emphasizes the need for robust patch management practices to mitigate risks associated with zero-day vulnerabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/trendai-patches-apex-one-zero-day-exploited-in-the-wild/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Grafana Codebase Breached—TanStack Supply Chain Attack Blamed",
+            "title": "Grafana Confirms Data Breach via TanStack Supply Chain Attack",
+            "content": "Grafana has reported a security breach involving unauthorized access to its GitHub repositories, resulting from a compromised token in the TanStack supply chain attack. The breach led to the theft of Grafana's codebase and other sensitive data. This incident highlights the vulnerabilities inherent in software supply chains and the critical need for stringent access controls and token management. Organizations using Grafana are advised to review their security practices and ensure that all access tokens are rotated regularly to prevent similar breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/grafana-says-codebase-and-other-data-stolen-via-tanstack-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "CISA Adds Langflow, Apex One Flaws to Exploited List",
+            "title": "CISA Updates KEV Catalog with Langflow and Apex One Vulnerabilities",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two vulnerabilities affecting Langflow and Trend Micro Apex One to its Known Exploited Vulnerabilities (KEV) catalog. This action follows evidence of active exploitation of these security flaws. The vulnerabilities, including CVE-2026-34926 in Apex One, pose significant risks to affected systems, necessitating immediate attention from security teams. Organizations using these products should prioritize patching to mitigate potential exploitation. This update reflects CISA's ongoing efforts to inform and protect critical infrastructure from emerging threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/cisa-adds-exploited-langflow-and-trend.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 21 2026",
             "headline": "Chromium Flaw Exposes Users—JavaScript Runs After Closure",
             "title": "Google Accidentally Reveals Unpatched Chromium Vulnerability Allowing Remote Code Execution",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/threatsday-bulletin-linux-rootkits.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Drupal CVE-2026-9082—Critical Patch for Website Security",
-            "title": "Drupal Releases Patch for Critical Vulnerability CVE-2026-9082",
-            "content": "Drupal has issued a patch for CVE-2026-9082, a highly critical vulnerability that could be exploited without authentication, leading to information disclosure, privilege escalation, and remote code execution. This vulnerability poses a significant threat to websites using affected versions of Drupal, potentially allowing attackers to take control of web servers. Website administrators are urged to apply the patch immediately to protect against potential exploitation. This incident highlights the critical importance of timely updates and patches in maintaining website security and integrity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/drupal-patches-highly-critical-vulnerability-exposing-websites-to-hacking/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Microsoft Defender Flaws—Active Exploitation Warning",
-            "title": "Microsoft Alerts on Active Exploitation of Defender Vulnerabilities",
-            "content": "Microsoft has issued a warning regarding two vulnerabilities in its Defender product, including a privilege escalation flaw tracked as CVE-2026-41091, which is actively being exploited. Rated 7.8 on the CVSS scale, this vulnerability could allow attackers to gain SYSTEM privileges, posing a significant risk to affected systems. The second flaw involves a denial-of-service condition, further highlighting the need for immediate attention. Microsoft advises users to apply the latest security updates to mitigate these risks. This alert underscores the critical need for vigilance and prompt action in cybersecurity defense strategies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Microsoft Fixes UnDefend, RedSun Zero-Days—Patch Now",
-            "title": "Microsoft Patches Exploited UnDefend and RedSun Defender Zero-Days",
-            "content": "Microsoft has released patches for two zero-day vulnerabilities in its Defender product, known as UnDefend and RedSun. These vulnerabilities could be exploited to elevate privileges to SYSTEM level or create a denial-of-service condition, posing a significant threat to system security. The active exploitation of these flaws highlights the persistent targeting of security solutions by threat actors. Microsoft strongly recommends applying the updates immediately to protect against potential attacks. This development emphasizes the ongoing need for robust patch management and proactive security measures in safeguarding critical systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-patches-exploited-undefend-and-redsun-defender-zero-days/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Drupal Core Flaw—PostgreSQL Sites Vulnerable to RCE",
-            "title": "Critical Drupal Core Vulnerability CVE-2026-9082 Allows Remote Code Execution",
-            "content": "Drupal has issued patches for a critical vulnerability, CVE-2026-9082, in its Core that could lead to remote code execution (RCE), privilege escalation, or information disclosure. The flaw, affecting PostgreSQL database users, has been assigned a CVSS score of 6.5, indicating significant risk. This vulnerability underscores the importance of timely updates as attackers could exploit it to gain unauthorized access or control over affected systems. Drupal users, particularly those using PostgreSQL, should apply the latest security updates immediately to mitigate potential threats. This incident highlights the ongoing challenges in securing open-source platforms against sophisticated cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/highly-critical-drupal-core-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Ukrainian Cyberpolice Bust Infostealer—28,000 Accounts Compromised",
-            "title": "Ukrainian Authorities Identify Infostealer Operator Behind Massive Account Theft",
-            "content": "Ukrainian cyberpolice, in collaboration with U.S. law enforcement, have identified an 18-year-old from Odesa as the operator of an infostealer malware operation. This operation targeted users of a California-based online store, resulting in the theft of 28,000 accounts. The suspect allegedly used malware to harvest sensitive information, posing significant risks to affected users. This case highlights the transnational nature of cybercrime and the importance of international cooperation in tackling such threats. Affected users are advised to change passwords and monitor accounts for suspicious activity.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukraine-identifies-infostealer-operator-tied-to-28-000-stolen-accounts/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "SonicWall VPN MFA Bypassed—Ransomware Tools Deployed",
-            "title": "Hackers Exploit SonicWall VPN MFA Flaw to Deploy Ransomware Tools",
-            "content": "Threat actors have successfully bypassed multi-factor authentication (MFA) on SonicWall Gen6 SSL-VPN appliances, exploiting incomplete patching to brute-force VPN credentials. This breach facilitated the deployment of tools used in ransomware attacks, posing severe risks to organizations relying on these appliances for secure remote access. The incident underscores the critical need for comprehensive patch management and robust security measures. Organizations using SonicWall VPNs should ensure all patches are applied and consider additional security layers to protect against such vulnerabilities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-bypass-sonicwall-vpn-mfa-due-to-incomplete-patching/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 22 2026",
+            "headline": "AI Procurement Overlooks Specialization—Scale Isn't Always King",
+            "title": "Specialization in AI Procurement: A Crucial Yet Overlooked Strategy",
+            "content": "In the rapidly evolving landscape of AI procurement, a new analysis suggests that specialization often trumps scale, a factor frequently overlooked by decision-makers. While large-scale AI models like GPT-4 have dominated headlines, the study highlights that specialized models can offer superior performance in niche applications. This insight is crucial for organizations aiming to optimize their AI investments, as it challenges the prevailing notion that bigger is always better. By focusing on specialized AI solutions, companies can achieve more efficient and effective outcomes tailored to specific industry needs. This strategic shift could redefine procurement strategies across sectors, emphasizing the importance of aligning AI capabilities with organizational goals.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "AI-Authored Story Shakes Commonwealth Prize Tradition",
+            "title": "AI-Generated Story Raises Concerns in Commonwealth Short Story Prize",
+            "content": "The British literary magazine Granta has faced controversy after an AI-generated story was selected as a regional winner in the Commonwealth Short Story Prize. The piece, attributed to Jamir Nazir, titled \"The Serpent in the,\" has sparked debates about the role of AI in creative writing. This incident underscores the growing influence of AI in literature, raising questions about authenticity and the future of literary competitions. The inclusion of AI-generated content in such prestigious awards could challenge traditional notions of authorship and creativity. Literary organizations may need to establish clearer guidelines to address the implications of AI in storytelling.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Spotify's AI Tool Sparks Debate Over Music Remixes",
+            "title": "Spotify's AI Remix Tool Raises Concerns Among Music Fans",
+            "content": "Spotify has introduced a new AI tool that enables users to create remixes of popular songs, intensifying the debate over AI's role in music. The tool has already led to a proliferation of AI-generated covers on platforms like YouTube and TikTok, including reggae versions of \"Smells Like Teen Spirit\" and country renditions of The Weeknd. Critics argue that these AI remixes disrespect original artists and dilute the quality of music. This trend highlights the tension between technological innovation and artistic integrity, prompting discussions about copyright and the ethical use of AI in the music industry. Musicians and rights holders may need to adapt to this evolving landscape.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/936072/spotify-umg-ai-music-remix-cover-superfan",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Samsung Chip Workers Secure $340K Bonuses Amid Strike Threat",
+            "title": "Samsung Semiconductor Workers Negotiate $340,000 Bonuses to Avert Strike",
+            "content": "Samsung has reached a tentative agreement with its semiconductor employees, offering bonuses averaging $340,000 to prevent a planned 18-day strike. The negotiations centered around the company's bonus cap, which workers argued was insufficient given the sector's profitability. This development reflects the growing power of tech workers in negotiating better compensation amid a booming semiconductor market. The agreement could set a precedent for similar negotiations in the tech industry, emphasizing the importance of fair compensation in high-demand sectors. Companies may need to reassess their compensation strategies to retain talent and avoid disruptions.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/936002/samsung-memory-chip-employees-deal-strike-bonus",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "AI Guitar Pedal by Polyend: A New Musical Frontier",
+            "title": "Polyend's AI Guitar Pedal Offers Customizable Effects for Musicians",
+            "content": "Polyend, a renowned music gear manufacturer, has launched an AI-powered guitar pedal that allows musicians to create custom effects. This innovative device leverages AI algorithms to generate unique soundscapes, catering to musicians seeking personalized audio experiences. While the demand for AI in music gear was uncertain, Polyend's venture into this niche market highlights the potential for AI to revolutionize music production. The pedal's ability to adapt and evolve with user input offers a new level of creativity for artists. Musicians interested in exploring AI-driven sound design may find this tool a valuable addition to their setup.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/935219/polyend-endless-ai-guitar-effects-pedal",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Spotify Enhances Podcasts with AI-Powered Q&A and Briefings",
+            "title": "Spotify Introduces AI-Driven Q&A and Briefing Features for Podcasts",
+            "content": "Spotify has unveiled new AI-powered features for its podcast platform, enabling users to generate daily or weekly briefs based on specific prompts. This enhancement aims to streamline content consumption by providing personalized summaries and interactive Q&A sessions. The integration of AI into podcasting reflects a broader trend of using technology to enhance user engagement and accessibility. By offering tailored content, Spotify seeks to attract a wider audience and improve user retention. Podcast creators and listeners alike can benefit from these tools, which promise to make podcasting more interactive and informative.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/21/spotify-adds-ai-powered-qa-and-briefing-generation-features-to-podcasts/",
+            "relatedResources": []
+        },
         {
             "date": "May 21 2026",
             "headline": "Alibaba's Qwen3.7-Max Runs 35 Hours Autonomously",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Generative AI has revolutionized design accessibility, allowing founders to create logos, websites, and marketing materials rapidly. This technological shift has made brand consistency more critical than ever, as businesses can now produce high-quality designs without traditional agencies or freelancers. The ease of generating diverse content necessitates stringent brand guidelines to maintain a cohesive identity across platforms. As AI continues to democratize design, companies must prioritize brand consistency to stand out in a crowded digital landscape. Professionals in marketing and design should focus on integrating AI tools while ensuring adherence to brand standards.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/technology/ai-didnt-kill-brand-consistency-it-made-it-mission-critical",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Spotify, UMG Deal—AI-Generated Remixes for Premium Users",
-            "title": "Spotify and UMG Collaborate on AI-Generated Music Remixes",
-            "content": "Spotify, in partnership with Universal Music Group (UMG), has announced a licensing agreement that enables Premium subscribers to create AI-generated remixes and covers of streaming songs. This innovative feature will be available as a paid add-on, allowing users to personalize their listening experience. Artists have the option to opt out, but those participating can benefit from increased engagement and revenue streams. This development reflects a growing trend of AI integration in music production, offering new creative possibilities for both artists and listeners. Music industry stakeholders should consider the implications of AI in content creation and distribution.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/935379/spotify-umg-ai-covers-remix",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Spotify Studio AI—Personalized Daily Podcasts via Chatbot",
-            "title": "Spotify Studio's AI Agent Crafts Custom Daily Podcasts",
-            "content": "Spotify Labs has launched Studio, a standalone AI application that generates personalized daily briefings, podcasts, and playlists through chatbot prompts. This AI-driven content is tailored using a user's Spotify listening history and connected apps like email and calendar. The app aims to enhance user engagement by delivering customized audio experiences directly to personal devices. As AI continues to transform media consumption, this innovation highlights the potential for personalized content delivery. Users and developers should explore the integration of AI tools to enrich user experiences and drive engagement.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/935390/spotify-studio-ai-app-personal-podcasts",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "AI Video Advances—Beyond Basic Clip Generation",
-            "title": "AI Video Technology Evolves Beyond Simple Clip Creation",
-            "content": "The landscape of AI-generated video content is rapidly advancing, moving beyond basic clip generation to more sophisticated productions. This evolution is part of a broader trend where AI is increasingly utilized in creative industries, challenging traditional content creation methods. Despite skepticism from some quarters, AI's role in media is expanding, offering new opportunities for innovation and efficiency. As AI video technology matures, it presents both challenges and opportunities for content creators and media companies. Professionals should stay informed about these developments to leverage AI's potential in enhancing video production and storytelling.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/935310/ai-video-luma-hollywood",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "SpaceX IPO: Musk's Financial Web Unveiled",
-            "title": "SpaceX IPO Highlights Elon Musk's Complex Financial Interconnections",
-            "content": "SpaceX's initial public offering (IPO) not only positions Elon Musk as a potential trillionaire but also exposes the intricate financial interdependencies among his companies. The IPO documents reveal how funds are shuffled between Musk's ventures, including Tesla and xAI, complicating financial transparency. This interconnectedness could pose risks to investors, as the financial health of one entity might affect others. The IPO is a landmark event, offering insights into Musk's broader business strategies and ambitions. Investors and stakeholders should scrutinize these financial entanglements to understand potential impacts on their investments.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/science/935102/spacex-ipo-elon-musk-tesla-cybertruck-xai-risk-factor",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Nvidia Eyes $200B AI CPU Market—Huang's Bold Prediction",
-            "title": "Nvidia Targets $200 Billion AI CPU Market, Says CEO Jensen Huang",
-            "content": "Nvidia CEO Jensen Huang has identified a burgeoning $200 billion market for CPUs designed specifically for AI agents. This strategic pivot aims to capitalize on the growing demand for AI-driven applications across various industries. Nvidia's move into AI CPUs represents a significant expansion beyond its traditional GPU stronghold, potentially reshaping the competitive landscape. The company's focus on AI-specific hardware underscores the increasing importance of specialized processors in handling complex AI workloads. Industry professionals should monitor Nvidia's developments in this space, as it could influence future AI infrastructure decisions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Anthropic Projects First Profitable Quarter—Revenue to Hit $10.9B",
-            "title": "Anthropic Anticipates First Profitable Quarter with $10.9 Billion Revenue",
-            "content": "Anthropic has informed investors of its expectation to achieve its first profitable quarter, projecting revenue to more than double to approximately $10.9 billion in Q2. This milestone reflects the company's successful scaling of its AI offerings and increased market adoption. The anticipated profitability marks a significant turnaround, positioning Anthropic as a formidable player in the AI sector. This growth trajectory highlights the increasing demand for advanced AI solutions and the company's ability to meet market needs. Stakeholders should consider the implications of Anthropic's financial performance on the competitive AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/",
             "relatedResources": []
         }
     ],
