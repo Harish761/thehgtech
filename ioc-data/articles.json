@@ -1,29 +1,6 @@
 {
   "articles": [
     {
-      "id": "windows-vs-macos-endpoint-security-2026",
-      "title": "Windows vs macOS Endpoint Security 2026: Architecture, Tools, Management & Real-World Effectiveness",
-      "date": "May 22, 2026",
-      "category": "Enterprise Security Guide",
-      "badge": "GUIDE",
-      "author": "Harish G",
-      "excerpt": "The definitive 2026 guide from 18+ years of fleet management experience: EDR tools, Intune vs Jamf Pro, OS architecture, detection effectiveness, hardening playbooks, and who should choose what platform.",
-      "image": "/images/articles/windows-vs-macos-endpoint-security-2026.png",
-      "externalUrl": "articles/windows-vs-macos-endpoint-security-2026.html",
-      "readTime": "25 min read",
-      "tags": [
-        "Windows Security",
-        "macOS Security",
-        "EDR Comparison",
-        "Intune",
-        "Jamf Pro",
-        "CrowdStrike Falcon",
-        "Microsoft Defender",
-        "Endpoint Hardening",
-        "Enterprise Security 2026"
-      ]
-    },
-    {
       "id": "github-cisa-leaks-2026",
       "title": "The May 2026 Git Leaks: Malicious VS Code Extensions and CISA's Exposed Secrets",
       "date": "May 20, 2026",

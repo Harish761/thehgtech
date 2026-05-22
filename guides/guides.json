@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "windows-vs-macos-endpoint-security-2026",
+      "title": "Windows vs macOS Endpoint Security 2026: Architecture, Tools, Management & Real-World Effectiveness",
+      "category": "Endpoint Security",
+      "excerpt": "The definitive 2026 guide from 18+ years of enterprise fleet management: EDR/XDR tools, Intune vs Jamf Pro, OS architecture, detection effectiveness, hardening playbooks, and who should choose what.",
+      "readTime": "25 min",
+      "level": "Intermediate to Advanced",
+      "date": "May 22, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/windows-vs-macos-endpoint-security-2026.png"
+    },
+    {
       "id": "it-vs-ot-security",
       "title": "IT vs OT Security: Key Differences, Common Confusions, and Practical Guide to Securing OT Devices and Detecting Anomalies",
       "category": "ICS/OT Security",
