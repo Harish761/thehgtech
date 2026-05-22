@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 21 2026",
+            "headline": "Chromium Flaw Exposes Users—JavaScript Runs After Closure",
+            "title": "Google Accidentally Reveals Unpatched Chromium Vulnerability Allowing Remote Code Execution",
+            "content": "Google has inadvertently disclosed details of an unresolved vulnerability in Chromium that permits JavaScript to execute in the background even after the browser is closed. This flaw, which remains unpatched, could potentially allow remote code execution on affected devices. The issue highlights a significant security risk for users of Chromium-based browsers, potentially impacting millions globally. This revelation underscores the importance of timely patch management and the risks associated with software vulnerabilities. Users are advised to monitor updates from Google and apply patches as soon as they become available to mitigate potential exploitation.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-accidentally-exposed-details-of-unfixed-chromium-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Microsoft Defender Zero-Days Exploited—Patch Immediately",
+            "title": "Microsoft Issues Patches for Defender Zero-Days Exploited in Active Attacks",
+            "content": "Microsoft has released security patches addressing two zero-day vulnerabilities in its Defender antivirus software that have been actively exploited in the wild. These vulnerabilities could allow attackers to bypass security measures, potentially leading to unauthorized access and data breaches. The flaws highlight the ongoing challenges in securing endpoint protection systems against sophisticated threat actors. Users and organizations are strongly urged to apply the latest updates immediately to protect their systems from potential exploitation. This incident serves as a reminder of the critical role timely updates play in maintaining cybersecurity defenses.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-new-defender-zero-days-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "9-Year-Old Linux Kernel Flaw—Root Access Risk",
+            "title": "Long-Standing Linux Kernel Vulnerability Allows Root Command Execution on Major Distros",
+            "content": "A nine-year-old vulnerability in the Linux kernel, identified as CVE-2026-46333, has been disclosed, posing a risk of root command execution across major Linux distributions. This flaw, resulting from improper privilege management, could enable unprivileged local users to escalate privileges and execute arbitrary commands. With a CVSS score of 5.5, the vulnerability affects a wide range of systems, emphasizing the need for vigilance in patching legacy systems. Administrators are advised to review and apply available patches to mitigate the risk of exploitation. This discovery underscores the importance of continuous security assessments in open-source software.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Drupal Urges Immediate Update—High Exploitation Risk",
+            "title": "Drupal Releases Critical Update to Address High-Risk Exploitation Bug",
+            "content": "Drupal has announced a critical core security update to address a vulnerability with a high risk of exploitation. The update, scheduled for release today, aims to prevent threat actors from developing exploits within hours of its disclosure. This vulnerability poses a significant threat to websites running on Drupal, potentially leading to unauthorized access and data breaches. Site administrators are strongly encouraged to apply the update immediately to safeguard against potential attacks. This proactive measure highlights the importance of maintaining up-to-date security practices in content management systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-update-to-fix-bug-with-high-exploitation-risk/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "GitHub Breach—3,800+ Internal Repos Compromised",
+            "title": "GitHub Investigates Breach Following Hack of Employee Device",
+            "content": "GitHub has initiated an investigation into unauthorized access to over 3,800 internal repositories after an employee's device was compromised by the threat actor TeamPCP. The breach, which involved the exfiltration of source code and internal organizational data, has raised concerns about the security of development environments. Although GitHub reports no evidence of customer data being impacted, the incident underscores the importance of securing employee devices and access credentials. Organizations are advised to review their security protocols and consider implementing additional safeguards to protect against similar threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 20 2026",
+            "headline": "Grafana Source Code Exposed—GitHub Breach via npm Attack",
+            "title": "Grafana Labs Confirms Source Code Exposure in GitHub Breach",
+            "content": "Grafana Labs has confirmed that its recent security breach involved unauthorized access to its GitHub environment, exposing both public and private source code. The breach was facilitated through a TanStack npm attack, although Grafana reports no compromise of customer production systems or operations. This incident highlights the vulnerabilities associated with third-party dependencies and the need for robust supply chain security measures. Developers and organizations using Grafana are advised to review their security practices and monitor for any updates or advisories from Grafana Labs. This breach serves as a cautionary tale about the complexities of securing open-source ecosystems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/grafana-github-breach-exposes-source.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
             "headline": "First VPN Seized—Used in Global Ransomware Attacks",
             "title": "Law Enforcement Shuts Down 'First VPN' Linked to Cybercrime",
             "content": "In a coordinated international effort, law enforcement agencies have dismantled 'First VPN,' a virtual private network service implicated in facilitating ransomware and data theft operations. This service was reportedly used by cybercriminals to anonymize their activities, making it a popular choice for executing attacks without detection. The takedown signifies a significant blow to cybercriminal infrastructure, disrupting operations that relied on this VPN for obfuscating malicious activities. Security professionals are advised to review network traffic for connections to 'First VPN' and assess potential exposure. This operation highlights the ongoing global efforts to combat cybercrime by targeting the tools and services that enable it.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-bypass-sonicwall-vpn-mfa-due-to-incomplete-patching/",
             "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Microsoft Open-Sources RAMPART, Clarity for AI Security",
-            "title": "Microsoft Releases RAMPART and Clarity to Enhance AI Agent Security",
-            "content": "Microsoft has introduced RAMPART and Clarity, two open-source tools aimed at improving the security testing of artificial intelligence (AI) agents. RAMPART, or Risk Assessment and Measurement Platform for Agentic Red Teaming, integrates with Pytest to enhance safety and security evaluations. These tools are designed to help developers identify and mitigate potential vulnerabilities during AI development. This initiative reflects Microsoft's commitment to advancing secure AI technologies and provides developers with valuable resources to safeguard AI systems. Developers are encouraged to integrate these tools into their workflows to enhance AI security.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Microsoft Mitigates YellowKey BitLocker Bypass Vulnerability",
-            "title": "Microsoft Releases Mitigation for BitLocker Bypass CVE-2026-45585",
-            "content": "Microsoft has issued a mitigation for the YellowKey vulnerability, CVE-2026-45585, a zero-day flaw allowing BitLocker security feature bypass. With a CVSS score of 6.8, this vulnerability poses a moderate risk by potentially granting unauthorized access to encrypted drives. The mitigation follows the public disclosure of the flaw, emphasizing the urgency for affected users to apply the provided solutions. This development highlights the ongoing need for vigilance in addressing zero-day vulnerabilities and securing sensitive data. Users should implement the mitigation steps promptly to protect their systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-releases-mitigation-for.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "YellowKey Windows Zero-Day Mitigation Released by Microsoft",
-            "title": "Microsoft Shares Mitigation for YellowKey Windows BitLocker Zero-Day",
-            "content": "Microsoft has released mitigation strategies for the YellowKey zero-day vulnerability affecting Windows BitLocker, which could allow unauthorized access to protected drives. This vulnerability, disclosed as CVE-2026-45585, underscores the critical need for immediate action to safeguard sensitive data. The flaw's public disclosure has prompted Microsoft to act swiftly, providing users with necessary steps to mitigate potential risks. Organizations using BitLocker are advised to implement these mitigations to prevent unauthorized data access. This incident highlights the importance of proactive security measures in the face of emerging threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-mitigation-for-yellowkey-windows-zero-day/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Grafana Breach—Token Rotation Missed After Supply-Chain Attack",
-            "title": "Grafana Data Breach Linked to Unrotated Token Post TanStack Attack",
-            "content": "Grafana has confirmed a data breach resulting from a single GitHub workflow token that was not rotated following the recent TanStack npm supply-chain attack. The breach underscores the critical importance of timely token management, especially after incidents involving compromised dependencies. The affected token allowed unauthorized access, potentially exposing sensitive data to threat actors. This incident highlights ongoing risks in the software supply chain, particularly for organizations relying on open-source components. Grafana users are advised to review their token management policies and ensure all tokens are rotated promptly after any security incident.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/grafana-breach-caused-by-missed-token-rotation-after-tanstack-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Microsoft Disrupts Malware-Signing Service—Thousands of Systems Affected",
-            "title": "Microsoft Shuts Down Malware-Signing Service Exploiting Artifact Signing System",
-            "content": "Microsoft has dismantled a malware-signing-as-a-service (MSaaS) operation that exploited its Artifact Signing system to distribute malicious code. This operation facilitated ransomware and other cyberattacks, compromising thousands of machines globally. By leveraging Microsoft's signing infrastructure, attackers were able to bypass traditional security measures, underscoring the need for robust monitoring of code-signing activities. Organizations are urged to audit their systems for any signs of compromise and ensure their security protocols are up-to-date. This takedown is part of Microsoft's ongoing efforts to secure its ecosystem against sophisticated threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-takes-down-malware-signing.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Anthropic Patches Claude Sandbox Bypass—Data Exfiltration Risk Mitigated",
-            "title": "Anthropic Addresses Claude Code Sandbox Bypass Vulnerability",
-            "content": "Anthropic has quietly patched a vulnerability in its Claude AI's code sandbox that could have been exploited for data exfiltration. Discovered by a security researcher, the flaw could be combined with prompt injection attacks to access sensitive information. This vulnerability highlights the ongoing challenges in securing AI models against novel attack vectors. Users of Claude AI should ensure they are using the latest version to benefit from the security improvements. The patch reflects Anthropic's commitment to maintaining the integrity and security of its AI offerings.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/anthropic-silently-patches-claude-code-sandbox-bypass/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 21 2026",
+            "headline": "Alibaba's Qwen3.7-Max Runs 35 Hours Autonomously",
+            "title": "Alibaba's Qwen3.7-Max AI Agent Supports Extended Autonomous Operations",
+            "content": "Alibaba has unveiled its latest AI model, Qwen3.7-Max, capable of operating autonomously for 35 hours, marking a significant advancement in AI agent technology. This model supports external harnesses, including Anthropic's Claude Code, enhancing its ability to execute complex tasks over extended periods. The development underscores the industry's shift towards the \"agent era,\" where AI systems are increasingly tasked with planning and executing long-term operations. This evolution impacts industries reliant on continuous AI-driven processes, such as logistics and customer service. Professionals should evaluate integrating such autonomous agents to improve operational efficiency and reduce human intervention.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/alibabas-proprietary-qwen3-7-max-can-run-for-35-hours-autonomously-and-supports-external-harnesses-like-anthropics-claude-code",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Musk vs. Altman—OpenAI's Future in Legal Crosshairs",
+            "title": "Elon Musk and Sam Altman Clash in OpenAI Mission Lawsuit",
+            "content": "A legal battle between Elon Musk and Sam Altman has intensified, focusing on OpenAI's adherence to its founding mission. Musk's 2024 lawsuit alleges that OpenAI has shifted its focus from benefiting humanity to prioritizing profit, potentially impacting the development and deployment of AI technologies like ChatGPT. This trial could reshape OpenAI's strategic direction and influence regulatory perspectives on AI ethics and corporate governance. Stakeholders in AI development should monitor this case closely, as its outcome may set precedents affecting AI policy and operational transparency.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Grads Heckle Tech CEOs—AI Praise Sparks Backlash",
+            "title": "University Graduates Protest AI Praise at Commencement Ceremonies",
+            "content": "Recent commencement ceremonies have seen university graduates vocally opposing tech executives who laud AI advancements, highlighting a growing discontent with the industry's direction. Viral videos capture incidents where speakers, including former Google CEO Eric Schmidt, faced boos and heckles. This trend reflects a broader societal concern over AI's impact on job markets and ethical considerations. Tech leaders should be aware of this sentiment and consider engaging in dialogues addressing public concerns about AI's societal implications. Understanding these dynamics is crucial for companies aiming to align their AI strategies with public expectations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/935602/graduates-boo-ai-ceos",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Google DeepMind Launches Asia Pacific Accelerator for Environment",
+            "title": "Google DeepMind Accelerator Targets Environmental Risks in Asia Pacific",
+            "content": "Google DeepMind has announced the launch of its Accelerator program in the Asia Pacific region, aimed at addressing environmental risks through AI innovation. This initiative seeks to leverage AI to develop solutions for pressing environmental challenges, such as climate change and resource management. By fostering collaboration with local researchers and institutions, the program aims to enhance regional capabilities in sustainable technology development. Professionals in AI and environmental sciences should explore opportunities for partnership and innovation within this program to contribute to impactful environmental solutions.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Six Search Engines to Try as Google Evolves",
+            "title": "Alternative Search Engines Gain Traction Amid Google's AI Overhaul",
+            "content": "As Google undergoes significant changes with its new AI overview feature, users are exploring alternative search engines that offer different functionalities and privacy options. This shift reflects a growing dissatisfaction with Google's evolving interface and data practices. Search engines like DuckDuckGo, Startpage, and Brave are gaining popularity for their privacy-focused approaches and user-centric designs. Tech professionals should evaluate these alternatives to understand their potential impact on search engine optimization (SEO) strategies and digital marketing efforts. Staying informed about these trends is essential for adapting to the changing digital landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/21/six-search-engines-worth-trying-now-that-google-isnt-really-google-anymore/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Trump Halts AI Security Order Over Language Concerns",
+            "title": "President Trump Delays AI Security Executive Order Over Language Issues",
+            "content": "President Trump has postponed the signing of an executive order intended to mandate pre-release government security reviews of AI models. The delay stems from concerns about the order's language, which Trump indicated could hinder its implementation. This decision impacts the timeline for establishing regulatory frameworks aimed at ensuring AI model security and accountability. AI developers and security professionals should prepare for potential regulatory changes and consider proactive measures to align with anticipated security standards. Monitoring developments in AI policy will be crucial for maintaining compliance and safeguarding AI technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/",
+            "relatedResources": []
+        },
         {
             "date": "May 21 2026",
             "headline": "Aluminum Prices Soar 20%—AI Boosts Recycling Efficiency",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Anthropic has informed investors of its expectation to achieve its first profitable quarter, projecting revenue to more than double to approximately $10.9 billion in Q2. This milestone reflects the company's successful scaling of its AI offerings and increased market adoption. The anticipated profitability marks a significant turnaround, positioning Anthropic as a formidable player in the AI sector. This growth trajectory highlights the increasing demand for advanced AI solutions and the company's ability to meet market needs. Stakeholders should consider the implications of Anthropic's financial performance on the competitive AI landscape.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Clouted Raises $7M to Predict Viral Video Success",
-            "title": "Clouted Secures $7 Million to Enhance Viral Video Prediction Technology",
-            "content": "Video clipping startup Clouted has raised $7 million in a seed funding round led by Slow Ventures, aiming to refine its technology for predicting viral video success. The company's platform leverages AI to analyze video content and optimize it for virality, addressing a critical need in digital marketing and content creation. This funding will accelerate the development of Clouted's predictive algorithms, enhancing its ability to serve creators and brands seeking to maximize online engagement. As short-form video content continues to dominate social media, Clouted's technology could become a valuable tool for marketers.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/20/clouted-wants-to-take-the-guesswork-out-of-making-short-videos-go-viral/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "xAI's $6.4B Loss Revealed in SpaceX IPO Filing",
-            "title": "SpaceX IPO Filing Discloses xAI's $6.4 Billion Loss Amid Expansion Plans",
-            "content": "The SpaceX IPO filing has unveiled that xAI, another of Elon Musk's ventures, incurred a $6.4 billion loss in 2025 while planning an extensive expansion of its Grok AI platform. This disclosure provides the first public insight into xAI's financials and Musk's ambitious AI strategies. Despite the substantial loss, the expansion underscores Musk's commitment to advancing AI capabilities, potentially influencing the broader AI market. Investors should assess the risks associated with xAI's financial trajectory and its impact on Musk's interconnected business ecosystem.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Nvidia's Record Quarter—$43B in Startup Investments Revealed",
-            "title": "Nvidia Reports Record Revenue, Discloses $43 Billion in Startup Holdings",
-            "content": "Nvidia has announced another record-breaking revenue quarter, though it anticipates a slowdown in growth for the upcoming period. The company also revealed $43 billion in holdings across various startups, highlighting its strategic investments in emerging technologies. This financial performance underscores Nvidia's dominant position in the tech industry, driven by its GPU and AI innovations. However, the forecasted revenue deceleration suggests potential market saturation or increased competition. Industry stakeholders should evaluate Nvidia's investment strategy and its implications for future technological advancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/20/nvidia-posts-another-record-quarter-reveals-43-billion-of-holdings-in-startups/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "OpenClaw's Rise—AI Agents Finally Prove Their Worth",
-            "title": "OpenClaw's Open-Source Platform Revolutionizes AI Personal Assistants",
-            "content": "After years of unmet promises, AI personal assistants are finally becoming more capable, thanks to the open-source platform OpenClaw. This development marks a significant shift in the AI landscape, where previous iterations often fell short of expectations. OpenClaw's platform enables the creation of AI agents that function more like efficient personal assistants rather than inept interns. The platform's success has prompted top AI labs to chase similar advancements, indicating a broader industry trend towards more practical AI solutions. For developers and tech leaders, this signals a new era of AI utility, with potential applications spanning various industries.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/934478/if-google-cant-make-ai-agents-useful-maybe-no-one-can",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Utah's 40,000-Acre Data Center Sparks Controversy",
-            "title": "Stratos Project Faces Backlash Over Massive Utah Data Center",
-            "content": "The Stratos Project, a 40,000-acre data center in Utah's Hansel Valley, has become a focal point of controversy following its approval by Box Elder County commissioners. Despite warnings from experts and public opposition, the project is set to become one of the world's largest data centers. Concerns center around environmental impact, resource consumption, and data privacy. As data centers become increasingly vital to digital infrastructure, the Stratos Project highlights the challenges of balancing technological advancement with environmental and social responsibilities. Stakeholders in tech and policy must navigate these complexities to ensure sustainable development.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/933687/utah-stratos-project-data-center-kevin-oleary",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "NanoClaw Transforms AI Agents into Enterprise 'Second Brain'",
-            "title": "NanoClaw's Secure AI Agents Aim to Revolutionize Enterprise Operations",
-            "content": "NanoClaw, an enterprise-friendly variant of the open-source AI agent platform OpenClaw, is set to commercialize its technology for large-scale enterprise use. The platform offers secure AI agents equipped with an ever-updating library of workplace context, effectively acting as a 'second brain' for businesses. This move aims to enhance operational efficiency and decision-making processes across industries. As enterprises increasingly adopt AI solutions, NanoClaw's approach could redefine how businesses leverage AI for strategic advantage. Tech leaders should consider integrating such technologies to stay competitive in an evolving digital landscape.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/nanoclaws-creators-are-turning-the-secure-open-source-ai-agent-harness-into-an-enterprise-second-brain",
             "relatedResources": []
         }
     ],
@@ -359,6 +359,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2025-34291",
+            "dateAdded": "May 21, 2026",
+            "vendor": "Langflow Langflow",
+            "description": "Langflow contains an origin validation error vulnerability in which an overly permissive CORS configuration combined with a refresh token cookie configured as SameSite=None allows a malicious webpage",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34291",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-34926",
+            "dateAdded": "May 21, 2026",
+            "vendor": "Trend Micro Apex One",
+            "description": "Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deplo",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34926",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2008-4250",
             "dateAdded": "May 20, 2026",
             "vendor": "Microsoft Windows",
@@ -433,17 +455,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45498",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-42897",
-            "dateAdded": "May 15, 2026",
-            "vendor": "Microsoft Microsoft",
-            "description": "Microsoft Exchange Server contains a cross-site scripting vulnerability during web page generation in Outlook Web Access and when certain interaction conditions are met, arbitrary JavaScript can be ex",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42897",
             "isZeroDay": false
         }
     ],
