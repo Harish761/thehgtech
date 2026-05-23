@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-05-23T02:58:11.605681",
+  "last_updated": "2026-05-23T13:25:46.963061",
   "period": "Last 7 days",
   "total_groups": 31,
-  "total_victims": 239,
+  "total_victims": 241,
   "groups": [
     {
       "name": "Qilin",
-      "count": 41,
+      "count": 40,
       "victims": [
         {
           "name": "Semgrep",
@@ -86,7 +86,7 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        14,
+        13,
         4,
         0,
         14,
@@ -97,8 +97,14 @@
     },
     {
       "name": "Nova",
-      "count": 21,
+      "count": 23,
       "victims": [
+        {
+          "name": "University of Valencia",
+          "date": "2026-05-23T12:54:23.824614+00:00",
+          "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/university-of-valencia",
+          "discovered_date": "2026-05-23T12:54:23.824614+00:00"
+        },
         {
           "name": "AMACCAO",
           "date": "2026-05-22T19:26:07.826950+00:00",
@@ -152,12 +158,6 @@
           "date": "2026-05-19T01:25:00.450953+00:00",
           "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/asian-lite-international",
           "discovered_date": "2026-05-19T01:25:00.450953+00:00"
-        },
-        {
-          "name": "AMACCAO",
-          "date": "2026-05-22T19:26:07+00:00",
-          "url": "https://www.ransomware.live/id/QU1BQ0NBT0Bub3Zh",
-          "discovered_date": "2026-05-22T19:26:07+00:00"
         }
       ],
       "industries": [
@@ -168,11 +168,11 @@
         "Hospitality and Tourism"
       ],
       "countries": [
+        "BD",
         "DE",
+        "ES",
         "KR",
-        "N/A",
-        "NO",
-        "PH"
+        "N/A"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -183,7 +183,7 @@
         0,
         4,
         4,
-        0
+        2
       ]
     },
     {
@@ -351,8 +351,8 @@
       ],
       "countries": [
         "GB",
+        "IT",
         "N/A",
-        "RU",
         "US"
       ],
       "trend": "up",
@@ -642,7 +642,7 @@
     },
     {
       "name": "Dragonforce",
-      "count": 11,
+      "count": 10,
       "victims": [
         {
           "name": "Le Pain Quotidien US",
@@ -718,8 +718,8 @@
         "N/A",
         "US"
       ],
-      "trend": "up",
-      "trend_percentage": 15,
+      "trend": "stable",
+      "trend_percentage": 0,
       "daily_counts": [
         2,
         0,
@@ -807,6 +807,82 @@
       ]
     },
     {
+      "name": "Incransom",
+      "count": 8,
+      "victims": [
+        {
+          "name": "threadinnovations",
+          "date": "2026-05-22T12:22:53.893934+00:00",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a0f559dd152110a6a4f6395",
+          "discovered_date": "2026-05-22T12:22:53.893934+00:00"
+        },
+        {
+          "name": "Nothing",
+          "date": "2026-05-19T19:52:35.787768+00:00",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a0cac1fd152110a6a17ee94",
+          "discovered_date": "2026-05-19T19:52:35.787768+00:00"
+        },
+        {
+          "name": "bergen1.net",
+          "date": "2026-05-18T01:22:31.577552+00:00",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69fd1aa08f1d14b743bed25b",
+          "discovered_date": "2026-05-18T01:22:31.577552+00:00"
+        },
+        {
+          "name": "Mecanizados y Montajes Aeronáuticos (mymgroup.es)",
+          "date": "2026-05-23T13:22:39+00:00",
+          "url": "https://www.ransomware.live/id/TWVjYW5pemFkb3MgeSBNb250YWplcyBBZXJvbsOhdXRpY29zIChteW1ncm91cC5lcylAaW5jcmFuc29t",
+          "discovered_date": "2026-05-23T13:22:39+00:00"
+        },
+        {
+          "name": "threadinnovations",
+          "date": "2026-05-22T12:22:53+00:00",
+          "url": "https://www.ransomware.live/id/dGhyZWFkaW5ub3ZhdGlvbnNAaW5jcmFuc29t",
+          "discovered_date": "2026-05-22T12:22:53+00:00"
+        },
+        {
+          "name": "Nothing",
+          "date": "2026-05-19T19:52:35+00:00",
+          "url": "https://www.ransomware.live/id/Tm90aGluZ0BpbmNyYW5zb20=",
+          "discovered_date": "2026-05-19T19:52:35+00:00"
+        },
+        {
+          "name": "bergen1.net",
+          "date": "2026-05-18T01:22:31+00:00",
+          "url": "https://www.ransomware.live/id/YmVyZ2VuMS5uZXRAaW5jcmFuc29t",
+          "discovered_date": "2026-05-18T01:22:31+00:00"
+        },
+        {
+          "name": "metaval.com.au",
+          "date": "2026-05-17T11:23:05+00:00",
+          "url": "https://www.ransomware.live/id/bWV0YXZhbC5jb20uYXVAaW5jcmFuc29t",
+          "discovered_date": "2026-05-17T11:23:05+00:00"
+        }
+      ],
+      "industries": [
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "AU",
+        "CA",
+        "ES",
+        "TW",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1
+      ]
+    },
+    {
       "name": "Chaos",
       "count": 8,
       "victims": [
@@ -877,75 +953,6 @@
         0,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Incransom",
-      "count": 7,
-      "victims": [
-        {
-          "name": "threadinnovations",
-          "date": "2026-05-22T12:22:53.893934+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a0f559dd152110a6a4f6395",
-          "discovered_date": "2026-05-22T12:22:53.893934+00:00"
-        },
-        {
-          "name": "Nothing",
-          "date": "2026-05-19T19:52:35.787768+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a0cac1fd152110a6a17ee94",
-          "discovered_date": "2026-05-19T19:52:35.787768+00:00"
-        },
-        {
-          "name": "bergen1.net",
-          "date": "2026-05-18T01:22:31.577552+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69fd1aa08f1d14b743bed25b",
-          "discovered_date": "2026-05-18T01:22:31.577552+00:00"
-        },
-        {
-          "name": "threadinnovations",
-          "date": "2026-05-22T12:22:53+00:00",
-          "url": "https://www.ransomware.live/id/dGhyZWFkaW5ub3ZhdGlvbnNAaW5jcmFuc29t",
-          "discovered_date": "2026-05-22T12:22:53+00:00"
-        },
-        {
-          "name": "Nothing",
-          "date": "2026-05-19T19:52:35+00:00",
-          "url": "https://www.ransomware.live/id/Tm90aGluZ0BpbmNyYW5zb20=",
-          "discovered_date": "2026-05-19T19:52:35+00:00"
-        },
-        {
-          "name": "bergen1.net",
-          "date": "2026-05-18T01:22:31+00:00",
-          "url": "https://www.ransomware.live/id/YmVyZ2VuMS5uZXRAaW5jcmFuc29t",
-          "discovered_date": "2026-05-18T01:22:31+00:00"
-        },
-        {
-          "name": "metaval.com.au",
-          "date": "2026-05-17T11:23:05+00:00",
-          "url": "https://www.ransomware.live/id/bWV0YXZhbC5jb20uYXVAaW5jcmFuc29t",
-          "discovered_date": "2026-05-17T11:23:05+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "AU",
-        "CA",
-        "TW",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        1,
-        2,
-        2,
-        0,
-        0,
-        2,
         0
       ]
     },
@@ -1446,7 +1453,7 @@
         "Business Services"
       ],
       "countries": [
-        "FR"
+        "ES"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1672,8 +1679,14 @@
     },
     {
       "name": "Auditteam",
-      "count": 1,
+      "count": 2,
       "victims": [
+        {
+          "name": "Mopas Online Supermarket",
+          "date": "2026-05-23T09:20:19+00:00",
+          "url": "https://www.ransomware.live/id/TW9wYXMgT25saW5lIFN1cGVybWFya2V0QEF1ZGl0VGVhbQ==",
+          "discovered_date": "2026-05-23T09:20:19+00:00"
+        },
         {
           "name": "Trésor Public",
           "date": "2026-05-18T04:20:17+00:00",
@@ -1683,7 +1696,8 @@
       ],
       "industries": [],
       "countries": [
-        "SN"
+        "SN",
+        "TR"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1694,7 +1708,7 @@
         0,
         0,
         0,
-        0
+        1
       ]
     },
     {
