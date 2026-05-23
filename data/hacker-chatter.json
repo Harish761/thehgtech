@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-05-22T16:40:34.331123",
-  "total_incidents": 28240,
+  "last_updated": "2026-05-23T05:51:43.053216",
+  "total_incidents": 28247,
   "incidents": [
+    {
+      "id": "shinyhunters_baker_distributing_company",
+      "victim_name": "Baker Distributing Company",
+      "threat_actor": "shinyhunters",
+      "date_discovered": "2026-05-23T00:24:53.418510+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "Over 260k Salesforce records containing PII and other internal corporate data have been compromised. This is a final warning to reach out by 27 May 2026 before we leak along with several annoying (digital) problems that'll come your way. Make the right decision, don't be the next headline. Pay or Leak. | Updated: 23 May 2026 | Warning: FINAL WARNING PAY OR LEAK",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "shinyhunters_charter_communications,_inc.",
+      "victim_name": "Charter Communications, Inc.",
+      "threat_actor": "shinyhunters",
+      "date_discovered": "2026-05-23T00:24:34.890391+00:00",
+      "industry": "Telecommunication",
+      "website": "",
+      "claim": "Over 42M records containing PII have been compromised. This is a final warning to reach out by 27 May 2026 before we leak along with several annoying (digital) problems that'll come your way. Make the right decision, don't be the next headline. Pay or Leak. | Updated: 23 May 2026 | Warning: FINAL WARNING PAY OR LEAK",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "shinyhunters_dentaquest.com",
+      "victim_name": "DentaQuest.com",
+      "threat_actor": "shinyhunters",
+      "date_discovered": "2026-05-23T00:24:22.457787+00:00",
+      "industry": "Healthcare",
+      "website": "DentaQuest.com",
+      "claim": "You wouldn't want us to describe what data and how much data was compromised publicly. It is in your best interests to reply to us or we are leaking it all by the deadline. This is a final warning to reach out by 27 May 2026 before we leak along with several annoying (digital) problems that'll come your way. Make the right decision, don't be the next headline. Pay or Leak. | Updated: 23 May 2026 | Warning: FINAL WARNING PAY OR LEAK",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "genesis_****_&_********",
+      "victim_name": "**** & ********",
+      "threat_actor": "genesis",
+      "date_discovered": "2026-05-22T23:51:57.624383+00:00",
+      "industry": "Not Found",
+      "website": ".",
+      "claim": "A legal firm dedicated to safeguard the rights of its clients",
+      "screenshot": "https://images.ransomware.live/victims/b1ca4a1af1d2fae0799d1778f5af7fea.png",
+      "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/069e114bcc3edd29df4c/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_lasevillanita.com",
+      "victim_name": "lasevillanita.com",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-05-22T22:22:56.739827+00:00",
+      "industry": "Hospitality and Tourism",
+      "website": "lasevillanita.com",
+      "claim": "Transportes La Sevillanita Srl is a company that operates in the Freight & Logistics Services industry. It employs 10to1...",
+      "screenshot": "https://images.ransomware.live/victims/8dc16d8f6f059673cf5cad40e49fec10.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/56d5ba2b78a185c8232a69cf3e5be18f67f5ee8704a61dd0556b672b5a92e83c/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nova_amaccao",
+      "victim_name": "AMACCAO",
+      "threat_actor": "nova",
+      "date_discovered": "2026-05-22T19:26:07.826950+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "AMACCAO Group is a reputable and strong multi-industry corporation in Vietnam with 30 years of experience. The company is a pioneer in various fields including energy and environmental investment, real estate investment, industrial production, consumer goods manufacturing, and education and training. AMACCAO aims to serve a diverse clientele through its commitment to sustainable development and innovative solutions. The group also engages in construction and installation services, contributing to the infrastructure and economic growth of the region - Nova Provide tree and samples from stolen data to the company when its get in touch with support department.",
+      "screenshot": "https://images.ransomware.live/victims/f4dc1d615ed767224cf18ff66b90f18c.png",
+      "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/amaccao",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nova_hoy_construction",
+      "victim_name": "Hoy Construction",
+      "threat_actor": "nova",
+      "date_discovered": "2026-05-22T19:25:41.950225+00:00",
+      "industry": "Construction",
+      "website": "",
+      "claim": "Since 1933, Hoy Construction has specialized in commercial construction management for commercial, industrial, and institutional facilities in Hampton Roads, VA. As a 100% employee-owned company, they emphasize a design-build approach, preconstruction services, and open-book transparency. Their experienced team collaborates with owners and architects to effectively manage costs and schedules while delivering high-quality, durable buildings. Hoy Construction is dedicated to building strong partnerships and ensuring accountability and communication throughout the construction process - Nova Provide tree and samples from stolen data to the company when its get in touch with support department.",
+      "screenshot": "https://images.ransomware.live/victims/5ff2e19ccebae916d0eefb08f3fd3710.png",
+      "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/hoy-construction",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "akira_gitis",
       "victim_name": "Gitis",
