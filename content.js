@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 22 2026",
+            "headline": "First VPN Service Dismantled—25 Ransomware Groups Affected",
+            "title": "Global Takedown of First VPN Service Used by Ransomware Groups",
+            "content": "Authorities across Europe and North America have dismantled the First VPN Service, a criminal virtual private network used by 25 ransomware groups to obscure attack origins. This operation, led by French law enforcement, targeted the infrastructure that facilitated ransomware attacks, data theft, and denial-of-service attacks. The takedown is part of a broader effort to disrupt cybercriminal networks that rely on anonymizing services to evade detection. Security professionals should be aware of potential shifts in ransomware tactics as these groups seek alternative methods to mask their activities. Continued vigilance and adaptation of security measures are recommended to counteract evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/first-vpn-dismantled-in-global-takedown.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Drupal Vulnerability Exploited—Thousands of Sites at Risk",
+            "title": "CVE-2026-9082 Exploited in Active Attacks on Drupal Websites",
+            "content": "Drupal has issued a warning following the discovery of active exploitation attempts targeting CVE-2026-9082, a critical vulnerability affecting thousands of websites. This flaw allows attackers to execute remote code, escalate privileges, and disclose sensitive information without authentication. Security firms have observed a surge in attacks shortly after the vulnerability's disclosure, highlighting the urgent need for administrators to apply available patches. Drupal users are advised to update their systems immediately to mitigate potential risks. This incident underscores the importance of timely patch management in maintaining web application security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/drupal-vulnerability-in-hacker-crosshairs-shortly-after-disclosure/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Cisco Patches Critical Flaw—Secure Workload at Risk",
+            "title": "CVE-2026-20223: Cisco Secure Workload REST API Flaw Patched",
+            "content": "Cisco has released patches for CVE-2026-20223, a critical vulnerability in its Secure Workload REST API, which scored a maximum CVSS rating of 10.0. This flaw could allow unauthenticated remote attackers to access sensitive data due to insufficient validation and authentication processes. Organizations using Cisco Secure Workload are urged to apply the updates immediately to prevent potential data breaches. The vulnerability's severity highlights the critical need for robust security measures in API management. Cisco's prompt response is a reminder for companies to maintain up-to-date security practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/cisco-patches-cvss-100-secure-workload.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Drupal Patches Critical CVE—Websites Vulnerable to Hacking",
+            "title": "Critical Drupal Vulnerability CVE-2026-9082 Patched to Prevent Exploits",
+            "content": "Drupal has addressed CVE-2026-9082, a highly critical vulnerability that could lead to information disclosure, privilege escalation, and remote code execution. This flaw, which can be exploited without authentication, posed significant risks to Drupal-powered websites. Administrators are strongly advised to implement the latest security updates to protect against potential attacks. The rapid response to this vulnerability reflects the ongoing challenges in securing open-source platforms against sophisticated cyber threats. Ensuring timely patching remains a crucial defense strategy for web administrators.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/drupal-patches-highly-critical-vulnerability-exposing-websites-to-hacking/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Microsoft Defender Flaws Exploited—Patch Urgently Needed",
+            "title": "Active Exploitation of Microsoft Defender Vulnerabilities CVE-2026-41091",
+            "content": "Microsoft has reported active exploitation of two vulnerabilities in its Defender software, including CVE-2026-41091, a privilege escalation flaw with a CVSS score of 7.8. Attackers exploiting this vulnerability could gain SYSTEM privileges, posing a serious threat to affected systems. The second flaw involves denial-of-service attacks, further compromising system integrity. Microsoft urges users to apply the latest patches to mitigate these risks. This incident highlights the critical importance of maintaining up-to-date security measures to protect against evolving threats in widely used security products.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Critical Drupal Core Flaw—PostgreSQL Sites at RCE Risk",
+            "title": "CVE-2026-9082: Critical Drupal Core Flaw Exposes PostgreSQL Sites",
+            "content": "Drupal has released updates for a critical vulnerability, CVE-2026-9082, affecting Drupal Core and exposing PostgreSQL-based sites to remote code execution (RCE) attacks. With a CVSS score of 6.5, this flaw allows attackers to execute arbitrary code, escalate privileges, and disclose sensitive information. Site administrators using PostgreSQL with Drupal are urged to apply the security updates immediately to prevent potential exploitation. This vulnerability underscores the importance of securing database-driven web applications against sophisticated cyber threats. Regular updates and security audits are essential for maintaining robust defenses.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/highly-critical-drupal-core-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
             "headline": "Trend Micro Zero-Day Exploited—Patch Your Apex One Now",
             "title": "Trend Micro Addresses Apex One Zero-Day Vulnerability Exploited in the Wild",
             "content": "Trend Micro has issued a patch for a zero-day vulnerability in its Apex One security solution, which has been actively exploited in attacks on Windows systems. The flaw, identified as CVE-2026-34926, is a directory traversal vulnerability affecting the on-premise version of Apex One. This vulnerability allows attackers to execute arbitrary code, posing a significant risk to organizations relying on this software for endpoint protection. The exploitation of this zero-day highlights the ongoing threat landscape where attackers are increasingly targeting security solutions themselves. Users are urged to apply the latest updates immediately to mitigate potential risks.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Drupal Urges Immediate Update—High Exploitation Risk",
-            "title": "Drupal Releases Critical Update to Address High-Risk Exploitation Bug",
-            "content": "Drupal has announced a critical core security update to address a vulnerability with a high risk of exploitation. The update, scheduled for release today, aims to prevent threat actors from developing exploits within hours of its disclosure. This vulnerability poses a significant threat to websites running on Drupal, potentially leading to unauthorized access and data breaches. Site administrators are strongly encouraged to apply the update immediately to safeguard against potential attacks. This proactive measure highlights the importance of maintaining up-to-date security practices in content management systems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-update-to-fix-bug-with-high-exploitation-risk/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "GitHub Breach—3,800+ Internal Repos Compromised",
-            "title": "GitHub Investigates Breach Following Hack of Employee Device",
-            "content": "GitHub has initiated an investigation into unauthorized access to over 3,800 internal repositories after an employee's device was compromised by the threat actor TeamPCP. The breach, which involved the exfiltration of source code and internal organizational data, has raised concerns about the security of development environments. Although GitHub reports no evidence of customer data being impacted, the incident underscores the importance of securing employee devices and access credentials. Organizations are advised to review their security protocols and consider implementing additional safeguards to protect against similar threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 20 2026",
-            "headline": "Grafana Source Code Exposed—GitHub Breach via npm Attack",
-            "title": "Grafana Labs Confirms Source Code Exposure in GitHub Breach",
-            "content": "Grafana Labs has confirmed that its recent security breach involved unauthorized access to its GitHub environment, exposing both public and private source code. The breach was facilitated through a TanStack npm attack, although Grafana reports no compromise of customer production systems or operations. This incident highlights the vulnerabilities associated with third-party dependencies and the need for robust supply chain security measures. Developers and organizations using Grafana are advised to review their security practices and monitor for any updates or advisories from Grafana Labs. This breach serves as a cautionary tale about the complexities of securing open-source ecosystems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/grafana-github-breach-exposes-source.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "First VPN Seized—Used in Global Ransomware Attacks",
-            "title": "Law Enforcement Shuts Down 'First VPN' Linked to Cybercrime",
-            "content": "In a coordinated international effort, law enforcement agencies have dismantled 'First VPN,' a virtual private network service implicated in facilitating ransomware and data theft operations. This service was reportedly used by cybercriminals to anonymize their activities, making it a popular choice for executing attacks without detection. The takedown signifies a significant blow to cybercriminal infrastructure, disrupting operations that relied on this VPN for obfuscating malicious activities. Security professionals are advised to review network traffic for connections to 'First VPN' and assess potential exposure. This operation highlights the ongoing global efforts to combat cybercrime by targeting the tools and services that enable it.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seize-first-vpn-service-used-in-ransomware-data-theft-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Cisco Secure Workload Flaw—Patch Critical REST API Vulnerability",
-            "title": "Cisco Addresses Critical REST API Vulnerability in Secure Workload",
-            "content": "Cisco has released a patch for a critical vulnerability in its Secure Workload product, identified as a flaw in the REST API's validation and authentication processes. This vulnerability could allow remote attackers to gain Site Admin privileges, posing a severe risk to affected systems. The flaw underscores the importance of robust API security, as it could be exploited to compromise sensitive data and system integrity. Cisco advises all users to apply the patch immediately to mitigate potential exploitation. This incident serves as a reminder of the critical need for continuous monitoring and updating of security protocols in enterprise environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-vulnerability-in-secure-workload/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "ThreatsDay: Linux Rootkits, Router 0-Day, AI Intrusions",
-            "title": "Weekly ThreatsDay Bulletin Highlights Emerging Cyber Threat Patterns",
-            "content": "The latest ThreatsDay Bulletin reveals a concerning trend in cyber threats, highlighting the use of trusted components for malicious purposes. This week's report includes incidents involving Linux rootkits, a zero-day vulnerability in routers, and AI-driven intrusions. Attackers are increasingly leveraging legitimate tools and packages to bypass security measures, complicating detection and response efforts. Security professionals should be vigilant in monitoring for anomalous behavior in trusted systems and ensure robust security measures are in place. This pattern emphasizes the evolving nature of cyber threats, where traditional defenses may no longer suffice.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/threatsday-bulletin-linux-rootkits.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 23 2026",
+            "headline": "Nemotron-Labs Unveils Lightning-Fast Diffusion Language Models",
+            "title": "Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
+            "content": "Nemotron-Labs has announced a breakthrough in text generation with its new diffusion language models, promising unprecedented speeds. These models leverage advanced diffusion techniques to generate text at near speed-of-light processing times, significantly outperforming existing models. This innovation is set to impact industries relying on real-time text processing, such as customer service and content creation. By reducing latency, Nemotron-Labs aims to enhance user experience and operational efficiency. Professionals should monitor these developments as they could redefine AI-driven text applications. The diffusion models represent a leap forward in AI capabilities, challenging competitors to match this speed.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "AI Resurrects Voices of Dead Pilots—NTSB Blocks Access",
+            "title": "AI Used to Reconstruct Voices from Cockpit Recordings, NTSB Responds",
+            "content": "AI technology has been employed to recreate the voices of deceased pilots from spectrogram images of cockpit recordings, leading to a temporary block by the National Transportation Safety Board (NTSB) on its docket system. This use of AI raises ethical and privacy concerns, as it involves sensitive data from aviation incidents. The reconstruction process involves analyzing spectrograms to synthesize voices, potentially affecting investigations and family privacy. The NTSB's action highlights the need for regulatory frameworks around AI's use in sensitive areas. Stakeholders in AI and aviation should consider the implications of such technology on privacy and ethics.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Google Introduces Disco-Ball Icons for Pixel Devices",
+            "title": "Google Adds Disco-Ball Icons to Pixel Home Screens",
+            "content": "Google has launched a new feature allowing Pixel users to transform their home screen icons into disco-ball designs. This update is part of Google's ongoing efforts to enhance user customization and engagement with its devices. The disco-ball icons are available through a simple update, offering a playful aesthetic change for users. While primarily a cosmetic update, it reflects Google's strategy to differentiate its products in a competitive smartphone market. Users interested in personalizing their devices can access this feature through the latest Pixel software update. This move underscores the trend towards greater user interface customization in tech products.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "AI Startups Inflate ARR—VCs Aware of Revenue Stretching",
+            "title": "VCs and Founders Inflate ARR Metrics in AI Startup Valuations",
+            "content": "Venture capitalists and AI startup founders are reportedly inflating annual recurring revenue (ARR) metrics to enhance company valuations. This practice involves stretching traditional revenue metrics, raising concerns about transparency and accuracy in financial reporting. Investors are aware of these inflated figures, which can mislead stakeholders about a startup's true financial health. The trend reflects the intense pressure on AI companies to demonstrate rapid growth in a competitive market. Industry professionals should exercise caution and conduct thorough due diligence when evaluating AI startups. This issue highlights the need for standardized financial reporting practices in the tech sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Google's AI Search Fails—Misinterprets Queries Like \"Disregard\"",
+            "title": "Google's AI Search Overview Misinterprets User Queries",
+            "content": "Google's AI Search Overviews are encountering issues, notably misinterpreting user queries such as \"disregard.\" Instead of providing a concise summary, the AI delivers responses akin to traditional chatbots, indicating a flaw in the system's understanding. This problem affects users relying on Google's AI for accurate search results, potentially leading to misinformation. The incident underscores the challenges in developing AI systems capable of nuanced language comprehension. Users are advised to verify AI-generated information with alternative sources. This development highlights the ongoing need for improvements in AI search technologies to ensure reliability and accuracy.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "SpaceX S-1 Reveals $1.75T IPO Ambitions—Mars Colony Tied",
+            "title": "SpaceX S-1 Filing Details $1.75 Trillion IPO and Mars Goals",
+            "content": "SpaceX has filed its S-1, revealing ambitious plans for a $1.75 trillion IPO, with a focus extending beyond rockets to a Mars colony. The filing includes 36 pages of risk factors and outlines a $28 trillion total addressable market. Elon Musk's compensation is tied to the establishment of a Mars colony, reflecting SpaceX's long-term vision. This IPO could significantly impact the aerospace industry and investor landscape, attracting attention from both sectors. Stakeholders should consider the implications of SpaceX's plans on future space exploration and market dynamics. The filing positions SpaceX as a leader in the commercial space race.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
+            "relatedResources": []
+        },
         {
             "date": "May 22 2026",
             "headline": "AI Procurement Overlooks Specialization—Scale Isn't Always King",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Recent commencement ceremonies have seen university graduates vocally opposing tech executives who laud AI advancements, highlighting a growing discontent with the industry's direction. Viral videos capture incidents where speakers, including former Google CEO Eric Schmidt, faced boos and heckles. This trend reflects a broader societal concern over AI's impact on job markets and ethical considerations. Tech leaders should be aware of this sentiment and consider engaging in dialogues addressing public concerns about AI's societal implications. Understanding these dynamics is crucial for companies aiming to align their AI strategies with public expectations.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/935602/graduates-boo-ai-ceos",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Google DeepMind Launches Asia Pacific Accelerator for Environment",
-            "title": "Google DeepMind Accelerator Targets Environmental Risks in Asia Pacific",
-            "content": "Google DeepMind has announced the launch of its Accelerator program in the Asia Pacific region, aimed at addressing environmental risks through AI innovation. This initiative seeks to leverage AI to develop solutions for pressing environmental challenges, such as climate change and resource management. By fostering collaboration with local researchers and institutions, the program aims to enhance regional capabilities in sustainable technology development. Professionals in AI and environmental sciences should explore opportunities for partnership and innovation within this program to contribute to impactful environmental solutions.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Six Search Engines to Try as Google Evolves",
-            "title": "Alternative Search Engines Gain Traction Amid Google's AI Overhaul",
-            "content": "As Google undergoes significant changes with its new AI overview feature, users are exploring alternative search engines that offer different functionalities and privacy options. This shift reflects a growing dissatisfaction with Google's evolving interface and data practices. Search engines like DuckDuckGo, Startpage, and Brave are gaining popularity for their privacy-focused approaches and user-centric designs. Tech professionals should evaluate these alternatives to understand their potential impact on search engine optimization (SEO) strategies and digital marketing efforts. Staying informed about these trends is essential for adapting to the changing digital landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/21/six-search-engines-worth-trying-now-that-google-isnt-really-google-anymore/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Trump Halts AI Security Order Over Language Concerns",
-            "title": "President Trump Delays AI Security Executive Order Over Language Issues",
-            "content": "President Trump has postponed the signing of an executive order intended to mandate pre-release government security reviews of AI models. The delay stems from concerns about the order's language, which Trump indicated could hinder its implementation. This decision impacts the timeline for establishing regulatory frameworks aimed at ensuring AI model security and accountability. AI developers and security professionals should prepare for potential regulatory changes and consider proactive measures to align with anticipated security standards. Monitoring developments in AI policy will be crucial for maintaining compliance and safeguarding AI technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Aluminum Prices Soar 20%—AI Boosts Recycling Efficiency",
-            "title": "AI-Powered Recycling Startups Target Aluminum Amid Price Surge",
-            "content": "Recycling startups are leveraging artificial intelligence to enhance the recovery of critical minerals like aluminum, as prices for the metal have surged by 20%. These startups aim to create a significant supply of aluminum by optimizing sorting and processing techniques through AI-driven systems. The rise in aluminum prices is attributed to increased demand and supply chain disruptions, making efficient recycling more crucial than ever. By improving recovery rates, these companies not only address environmental concerns but also tap into a lucrative market opportunity. Industry professionals should monitor advancements in AI technologies that could further streamline recycling processes and reduce costs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/21/with-aluminum-prices-up-20-recycling-startups-bet-on-ai-to-cash-in/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Kore.ai Unveils Artemis—Challenges Microsoft, Salesforce in AI Agents",
-            "title": "Kore.ai Launches Artemis AI Agent Platform for Enterprise Optimization",
-            "content": "Kore.ai has introduced the Artemis edition of its Agent Platform, a comprehensive system enabling enterprises to build, manage, and optimize AI agents using AI technology itself. This platform significantly reduces the time required for developing AI agents, compressing months of engineering work into a streamlined process. By challenging industry giants like Microsoft and Salesforce, Kore.ai aims to redefine enterprise AI solutions with enhanced governance and efficiency. The Artemis platform is expected to impact businesses seeking to automate customer interactions and internal processes. Organizations should evaluate the potential of Kore.ai's platform to enhance their AI capabilities and operational efficiency.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/kore-ai-launches-artemis-ai-agent-platform-expands-challenge-to-microsoft-and-salesforce",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Generative AI Makes Brand Consistency Crucial—Design.com Insights",
-            "title": "Generative AI Elevates Brand Consistency to Mission-Critical Status",
-            "content": "Generative AI has revolutionized design accessibility, allowing founders to create logos, websites, and marketing materials rapidly. This technological shift has made brand consistency more critical than ever, as businesses can now produce high-quality designs without traditional agencies or freelancers. The ease of generating diverse content necessitates stringent brand guidelines to maintain a cohesive identity across platforms. As AI continues to democratize design, companies must prioritize brand consistency to stand out in a crowded digital landscape. Professionals in marketing and design should focus on integrating AI tools while ensuring adherence to brand standards.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/ai-didnt-kill-brand-consistency-it-made-it-mission-critical",
             "relatedResources": []
         }
     ],
@@ -358,6 +358,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-9082",
+            "dateAdded": "May 22, 2026",
+            "vendor": "Drupal Core",
+            "description": "Drupal Core contains a SQL injection vulnerability that could allow for privilege escalation and remote code execution via specially crafted requests sent with the database abstraction API.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9082",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2025-34291",
             "dateAdded": "May 21, 2026",
