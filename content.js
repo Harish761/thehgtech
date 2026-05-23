@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 23 2026",
+            "headline": "Laravel-Lang PHP Packages Compromised—Credential Stealer Deployed",
+            "title": "Supply Chain Attack Targets Laravel-Lang PHP Packages with Credential Stealer",
+            "content": "A new supply chain attack has compromised several PHP packages from Laravel-Lang, deploying a cross-platform credential-stealing framework. The affected packages include laravel-lang/lang, laravel-lang/http-statuses, and others, threatening developers who rely on these components. This attack underscores the vulnerability of open-source ecosystems to malicious code injection, potentially impacting thousands of applications that integrate these packages. Security professionals are advised to audit their dependencies and apply necessary patches or remove compromised packages immediately. This incident highlights the growing trend of targeting software supply chains to distribute malware.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/laravel-lang-php-packages-compromised.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 23 2026",
+            "headline": "CVE-2026-48172 Exploited—LiteSpeed Plugin Runs Scripts as Root",
+            "title": "Critical LiteSpeed cPanel Plugin Vulnerability Exploited in the Wild",
+            "content": "A critical vulnerability, CVE-2026-48172, in the LiteSpeed User-End cPanel Plugin is being actively exploited, allowing attackers to execute scripts with root privileges. This flaw, with a CVSS score of 10.0, results from incorrect privilege assignment, posing a severe risk to systems using this plugin. Administrators are urged to apply security patches immediately to prevent unauthorized access and potential system compromise. This exploitation underscores the importance of timely patch management in mitigating risks associated with high-severity vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/litespeed-cpanel-plugin-cve-2026-48172.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 23 2026",
+            "headline": "Drupal Core SQL Injection Flaw—CISA Adds to KEV",
+            "title": "Active Exploitation of Drupal Core SQL Injection Bug CVE-2026-9082",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-9082, a critical SQL injection vulnerability in Drupal Core, to its Known Exploited Vulnerabilities catalog. This flaw, with a CVSS score of 6.5, is actively exploited, threatening websites running on affected Drupal versions. Site administrators should prioritize patching to protect against potential data breaches and unauthorized data manipulation. This addition to the KEV catalog highlights the ongoing threat of SQL injection attacks in widely used content management systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 23 2026",
+            "headline": "Project Glasswing Uncovers 10,000 Critical Software Flaws",
+            "title": "Anthropic's Project Glasswing Identifies Thousands of High-Severity Vulnerabilities",
+            "content": "Anthropic's Project Glasswing has revealed over 10,000 high- or critical-severity vulnerabilities in crucial software systems worldwide since its launch last month. This initiative, part of the Claude Mythos AI project, aims to enhance global cybersecurity by identifying systemic weaknesses in widely used software. The discovery of these vulnerabilities underscores the critical need for continuous security assessments and proactive vulnerability management. Organizations are encouraged to leverage such AI-driven tools to bolster their security posture and mitigate potential threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "\"First VPN\" Seized—Used in Ransomware, Data Theft",
+            "title": "Law Enforcement Shuts Down \"First VPN\" Service Linked to Cybercrime",
+            "content": "An international law enforcement operation has dismantled \"First VPN,\" a virtual private network service implicated in facilitating ransomware and data theft attacks. This service was reportedly used by cybercriminals to mask their activities and evade detection, highlighting the role of anonymizing tools in cybercrime. The seizure of \"First VPN\" marks a significant step in disrupting the infrastructure supporting illicit online activities. Organizations should remain vigilant about the use of VPN services and ensure compliance with cybersecurity best practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seize-first-vpn-service-used-in-ransomware-data-theft-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Cisco Patches Critical Secure Workload Vulnerability",
+            "title": "Critical Vulnerability in Cisco Secure Workload REST APIs Patched",
+            "content": "Cisco has addressed a critical vulnerability in its Secure Workload product, which allowed remote attackers to gain Site Admin privileges through insufficient validation and authentication in the REST APIs. Organizations using Secure Workload should apply the latest patches to mitigate the risk of unauthorized access and potential data breaches. This vulnerability underscores the importance of robust API security measures in protecting sensitive enterprise environments. Cisco's swift response highlights the need for continuous monitoring and timely updates in maintaining secure IT infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-vulnerability-in-secure-workload/",
+            "relatedResources": []
+        },
+        {
             "date": "May 22 2026",
             "headline": "First VPN Service Dismantled—25 Ransomware Groups Affected",
             "title": "Global Takedown of First VPN Service Used by Ransomware Groups",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/first-vpn-cybercrime-service-disrupted-administrator-arrested/",
             "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "TrendAI Patches Apex One Zero-Day—Immediate Update Required",
-            "title": "TrendAI Releases Patch for Apex One Zero-Day Vulnerability Exploited in the Wild",
-            "content": "TrendAI has released a patch for a critical zero-day vulnerability, CVE-2026-34926, in its Apex One security software, which has been actively exploited. This directory traversal flaw affects the on-premise version of Apex One, allowing attackers to execute arbitrary code. The vulnerability's exploitation demonstrates the persistent targeting of security solutions by threat actors. Organizations using Apex One are strongly advised to apply the patch immediately to safeguard their systems. This incident emphasizes the need for robust patch management practices to mitigate risks associated with zero-day vulnerabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/trendai-patches-apex-one-zero-day-exploited-in-the-wild/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Grafana Codebase Breached—TanStack Supply Chain Attack Blamed",
-            "title": "Grafana Confirms Data Breach via TanStack Supply Chain Attack",
-            "content": "Grafana has reported a security breach involving unauthorized access to its GitHub repositories, resulting from a compromised token in the TanStack supply chain attack. The breach led to the theft of Grafana's codebase and other sensitive data. This incident highlights the vulnerabilities inherent in software supply chains and the critical need for stringent access controls and token management. Organizations using Grafana are advised to review their security practices and ensure that all access tokens are rotated regularly to prevent similar breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/grafana-says-codebase-and-other-data-stolen-via-tanstack-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "CISA Adds Langflow, Apex One Flaws to Exploited List",
-            "title": "CISA Updates KEV Catalog with Langflow and Apex One Vulnerabilities",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two vulnerabilities affecting Langflow and Trend Micro Apex One to its Known Exploited Vulnerabilities (KEV) catalog. This action follows evidence of active exploitation of these security flaws. The vulnerabilities, including CVE-2026-34926 in Apex One, pose significant risks to affected systems, necessitating immediate attention from security teams. Organizations using these products should prioritize patching to mitigate potential exploitation. This update reflects CISA's ongoing efforts to inform and protect critical infrastructure from emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/cisa-adds-exploited-langflow-and-trend.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Chromium Flaw Exposes Users—JavaScript Runs After Closure",
-            "title": "Google Accidentally Reveals Unpatched Chromium Vulnerability Allowing Remote Code Execution",
-            "content": "Google has inadvertently disclosed details of an unresolved vulnerability in Chromium that permits JavaScript to execute in the background even after the browser is closed. This flaw, which remains unpatched, could potentially allow remote code execution on affected devices. The issue highlights a significant security risk for users of Chromium-based browsers, potentially impacting millions globally. This revelation underscores the importance of timely patch management and the risks associated with software vulnerabilities. Users are advised to monitor updates from Google and apply patches as soon as they become available to mitigate potential exploitation.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-accidentally-exposed-details-of-unfixed-chromium-flaw/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Microsoft Defender Zero-Days Exploited—Patch Immediately",
-            "title": "Microsoft Issues Patches for Defender Zero-Days Exploited in Active Attacks",
-            "content": "Microsoft has released security patches addressing two zero-day vulnerabilities in its Defender antivirus software that have been actively exploited in the wild. These vulnerabilities could allow attackers to bypass security measures, potentially leading to unauthorized access and data breaches. The flaws highlight the ongoing challenges in securing endpoint protection systems against sophisticated threat actors. Users and organizations are strongly urged to apply the latest updates immediately to protect their systems from potential exploitation. This incident serves as a reminder of the critical role timely updates play in maintaining cybersecurity defenses.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-new-defender-zero-days-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "9-Year-Old Linux Kernel Flaw—Root Access Risk",
-            "title": "Long-Standing Linux Kernel Vulnerability Allows Root Command Execution on Major Distros",
-            "content": "A nine-year-old vulnerability in the Linux kernel, identified as CVE-2026-46333, has been disclosed, posing a risk of root command execution across major Linux distributions. This flaw, resulting from improper privilege management, could enable unprivileged local users to escalate privileges and execute arbitrary commands. With a CVSS score of 5.5, the vulnerability affects a wide range of systems, emphasizing the need for vigilance in patching legacy systems. Administrators are advised to review and apply available patches to mitigate the risk of exploitation. This discovery underscores the importance of continuous security assessments in open-source software.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 23 2026",
+            "headline": "Elon Musk's xAI Shifts Focus—Solar Power Abandoned",
+            "title": "Elon Musk's xAI Abandons Solar for Natural Gas and Orbital Data Centers",
+            "content": "Elon Musk's xAI has pivoted from its previous commitment to a solar-electric economy, now focusing on natural gas and orbital data centers. This strategic shift marks a departure from Musk's earlier vision of sustainable energy, raising questions about the future of solar initiatives under his leadership. SpaceX's investment in orbital data centers suggests a new direction in leveraging space technology for data processing. The move could impact stakeholders in the renewable energy sector, as well as those invested in Musk's broader technological ecosystem. Industry experts are watching closely to see how this shift will affect innovation and sustainability goals.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 23 2026",
+            "headline": "Google's Gemini AI Model—A Leap in Deepfake Technology",
+            "title": "Google's Gemini AI Model Transforms Deepfake Capabilities with Anything-to-Anything Tech",
+            "content": "Google's latest AI model, Gemini, showcases groundbreaking anything-to-anything transformation capabilities, allowing users to create sophisticated deepfakes with unprecedented ease. This model can manipulate images and videos, exemplified by a user deepfaking a child's stuffed animal into various scenarios. While the technology offers creative possibilities, it also raises significant ethical and security concerns about misuse in creating deceptive content. Professionals in cybersecurity and digital media should be aware of the potential for increased deepfake proliferation and consider implementing robust verification measures. This development underscores the need for ongoing dialogue about AI ethics and regulation.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Elon Musk's Grok AI—Struggling for Relevance",
+            "title": "Elon Musk's Grok AI Chatbot Fails to Gain Traction in Federal Use",
+            "content": "Elon Musk's AI chatbot, Grok, has not achieved the expected impact, with minimal adoption reported in federal AI applications. A Reuters investigation highlights Grok's limited presence in government records, suggesting challenges in its deployment and acceptance. This underperformance raises questions about xAI's strategy and the chatbot's capabilities in a competitive AI landscape. The lack of traction could affect xAI's reputation and future projects, prompting a reassessment of its AI offerings. Stakeholders should monitor developments to understand the implications for AI innovation and market positioning.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/936219/elon-stop-trying-to-make-grok-happen",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "AI Safety EO Delayed—Trump Cites Innovation Concerns",
+            "title": "Trump Cancels AI Safety Executive Order Signing Amid CEO Absences",
+            "content": "President Trump has postponed the signing of an executive order on AI safety testing, citing concerns that it could hinder innovation. The decision followed the absence of key AI firm CEOs from the event, highlighting potential industry resistance to regulatory measures. This delay may impact the pace of AI safety advancements and regulatory frameworks, affecting developers and companies navigating the evolving AI landscape. Professionals should stay informed about policy developments and prepare for potential regulatory changes that could influence AI deployment and innovation strategies.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/trump-canceled-ai-safety-testing-eo-after-snub-from-tech-ceos/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Google Search Glitch—'Disregard' Breaks Interface",
+            "title": "Google Search AI Update Causes 'Disregard' Keyword Malfunction",
+            "content": "A recent AI update to Google Search has introduced a glitch where the keyword \"disregard\" disrupts the search interface. This issue has caused significant inconvenience for users relying on precise search capabilities, highlighting challenges in AI-driven search enhancements. The malfunction underscores the complexities of integrating AI into search algorithms, necessitating prompt resolution to restore functionality. Users and developers should be aware of potential disruptions and consider alternative search strategies until the issue is resolved. Google's response to this glitch will be crucial in maintaining user trust and search reliability.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/22/you-can-no-longer-google-the-word-disregard/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Google's AI Glasses—Near-Future Tech in Action",
+            "title": "Google's Prototype AI Glasses Enhance Reality with Gemini-Powered Features",
+            "content": "Google has unveiled prototype Android XR glasses that integrate Gemini-powered AI features, offering real-time translation, navigation, and information overlays. These augmented reality glasses represent a significant step towards seamless digital-physical integration, enhancing user experience in various contexts. While the technology is still in development, its potential applications in education, travel, and professional environments are vast. Tech leaders and developers should consider the implications for future AR innovations and user interaction models. As Google refines this technology, it could redefine how users engage with digital content in real-world settings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/",
+            "relatedResources": []
+        },
         {
             "date": "May 23 2026",
             "headline": "Nemotron-Labs Unveils Lightning-Fast Diffusion Language Models",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Spotify has introduced a new AI tool that enables users to create remixes of popular songs, intensifying the debate over AI's role in music. The tool has already led to a proliferation of AI-generated covers on platforms like YouTube and TikTok, including reggae versions of \"Smells Like Teen Spirit\" and country renditions of The Weeknd. Critics argue that these AI remixes disrespect original artists and dilute the quality of music. This trend highlights the tension between technological innovation and artistic integrity, prompting discussions about copyright and the ethical use of AI in the music industry. Musicians and rights holders may need to adapt to this evolving landscape.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/936072/spotify-umg-ai-music-remix-cover-superfan",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Samsung Chip Workers Secure $340K Bonuses Amid Strike Threat",
-            "title": "Samsung Semiconductor Workers Negotiate $340,000 Bonuses to Avert Strike",
-            "content": "Samsung has reached a tentative agreement with its semiconductor employees, offering bonuses averaging $340,000 to prevent a planned 18-day strike. The negotiations centered around the company's bonus cap, which workers argued was insufficient given the sector's profitability. This development reflects the growing power of tech workers in negotiating better compensation amid a booming semiconductor market. The agreement could set a precedent for similar negotiations in the tech industry, emphasizing the importance of fair compensation in high-demand sectors. Companies may need to reassess their compensation strategies to retain talent and avoid disruptions.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/936002/samsung-memory-chip-employees-deal-strike-bonus",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "AI Guitar Pedal by Polyend: A New Musical Frontier",
-            "title": "Polyend's AI Guitar Pedal Offers Customizable Effects for Musicians",
-            "content": "Polyend, a renowned music gear manufacturer, has launched an AI-powered guitar pedal that allows musicians to create custom effects. This innovative device leverages AI algorithms to generate unique soundscapes, catering to musicians seeking personalized audio experiences. While the demand for AI in music gear was uncertain, Polyend's venture into this niche market highlights the potential for AI to revolutionize music production. The pedal's ability to adapt and evolve with user input offers a new level of creativity for artists. Musicians interested in exploring AI-driven sound design may find this tool a valuable addition to their setup.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/935219/polyend-endless-ai-guitar-effects-pedal",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Spotify Enhances Podcasts with AI-Powered Q&A and Briefings",
-            "title": "Spotify Introduces AI-Driven Q&A and Briefing Features for Podcasts",
-            "content": "Spotify has unveiled new AI-powered features for its podcast platform, enabling users to generate daily or weekly briefs based on specific prompts. This enhancement aims to streamline content consumption by providing personalized summaries and interactive Q&A sessions. The integration of AI into podcasting reflects a broader trend of using technology to enhance user engagement and accessibility. By offering tailored content, Spotify seeks to attract a wider audience and improve user retention. Podcast creators and listeners alike can benefit from these tools, which promise to make podcasting more interactive and informative.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/21/spotify-adds-ai-powered-qa-and-briefing-generation-features-to-podcasts/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Alibaba's Qwen3.7-Max Runs 35 Hours Autonomously",
-            "title": "Alibaba's Qwen3.7-Max AI Agent Supports Extended Autonomous Operations",
-            "content": "Alibaba has unveiled its latest AI model, Qwen3.7-Max, capable of operating autonomously for 35 hours, marking a significant advancement in AI agent technology. This model supports external harnesses, including Anthropic's Claude Code, enhancing its ability to execute complex tasks over extended periods. The development underscores the industry's shift towards the \"agent era,\" where AI systems are increasingly tasked with planning and executing long-term operations. This evolution impacts industries reliant on continuous AI-driven processes, such as logistics and customer service. Professionals should evaluate integrating such autonomous agents to improve operational efficiency and reduce human intervention.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/alibabas-proprietary-qwen3-7-max-can-run-for-35-hours-autonomously-and-supports-external-harnesses-like-anthropics-claude-code",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Musk vs. Altman—OpenAI's Future in Legal Crosshairs",
-            "title": "Elon Musk and Sam Altman Clash in OpenAI Mission Lawsuit",
-            "content": "A legal battle between Elon Musk and Sam Altman has intensified, focusing on OpenAI's adherence to its founding mission. Musk's 2024 lawsuit alleges that OpenAI has shifted its focus from benefiting humanity to prioritizing profit, potentially impacting the development and deployment of AI technologies like ChatGPT. This trial could reshape OpenAI's strategic direction and influence regulatory perspectives on AI ethics and corporate governance. Stakeholders in AI development should monitor this case closely, as its outcome may set precedents affecting AI policy and operational transparency.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Grads Heckle Tech CEOs—AI Praise Sparks Backlash",
-            "title": "University Graduates Protest AI Praise at Commencement Ceremonies",
-            "content": "Recent commencement ceremonies have seen university graduates vocally opposing tech executives who laud AI advancements, highlighting a growing discontent with the industry's direction. Viral videos capture incidents where speakers, including former Google CEO Eric Schmidt, faced boos and heckles. This trend reflects a broader societal concern over AI's impact on job markets and ethical considerations. Tech leaders should be aware of this sentiment and consider engaging in dialogues addressing public concerns about AI's societal implications. Understanding these dynamics is crucial for companies aiming to align their AI strategies with public expectations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/935602/graduates-boo-ai-ceos",
             "relatedResources": []
         }
     ],
