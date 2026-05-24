@@ -1,12 +1,103 @@
 {
-  "last_updated": "2026-05-24T03:38:56.527284",
+  "last_updated": "2026-05-24T13:26:55.291521",
   "period": "Last 7 days",
-  "total_groups": 30,
-  "total_victims": 239,
+  "total_groups": 29,
+  "total_victims": 246,
   "groups": [
     {
+      "name": "Thegentlemen",
+      "count": 38,
+      "victims": [
+        {
+          "name": "Openmind Networks",
+          "date": "2026-05-24T09:00:34.364687+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:00:34.364687+00:00"
+        },
+        {
+          "name": "Koa Glass",
+          "date": "2026-05-24T09:00:48.058406+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:00:48.058406+00:00"
+        },
+        {
+          "name": "ACAM Systemautomation",
+          "date": "2026-05-24T09:01:01.591394+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:01:01.591394+00:00"
+        },
+        {
+          "name": "TRANSSYSTEM Group",
+          "date": "2026-05-24T09:01:17.495332+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:01:17.495332+00:00"
+        },
+        {
+          "name": "Caka Grup Lojistik",
+          "date": "2026-05-24T09:01:30.868386+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:01:30.868386+00:00"
+        },
+        {
+          "name": "Hussey Seatway",
+          "date": "2026-05-24T09:01:33.846569+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:01:33.846569+00:00"
+        },
+        {
+          "name": "Sanatorio Delta",
+          "date": "2026-05-24T09:01:46.838660+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:01:46.838660+00:00"
+        },
+        {
+          "name": "Le Perreux sur Marne",
+          "date": "2026-05-24T09:01:59.936188+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:01:59.936188+00:00"
+        },
+        {
+          "name": "Seeley Office Systems",
+          "date": "2026-05-24T09:02:13.001401+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:02:13.001401+00:00"
+        },
+        {
+          "name": "YMCA of Columbia",
+          "date": "2026-05-21T09:53:15.690701+00:00",
+          "url": "",
+          "discovered_date": "2026-05-21T09:53:15.690701+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Business Services",
+        "Consumer Services",
+        "Education",
+        "Healthcare"
+      ],
+      "countries": [
+        "AR",
+        "AT",
+        "AU",
+        "CH",
+        "CZ"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        14,
+        0,
+        0,
+        6,
+        0,
+        0,
+        18
+      ]
+    },
+    {
       "name": "Qilin",
-      "count": 35,
+      "count": 33,
       "victims": [
         {
           "name": "Semgrep",
@@ -81,7 +172,7 @@
         "AT",
         "AU",
         "CA",
-        "CL"
+        "CZ"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -97,7 +188,7 @@
     },
     {
       "name": "Nova",
-      "count": 23,
+      "count": 22,
       "victims": [
         {
           "name": "University of Valencia",
@@ -171,8 +262,8 @@
         "BD",
         "DE",
         "ES",
-        "KR",
-        "N/A"
+        "N/A",
+        "NO"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -187,99 +278,99 @@
       ]
     },
     {
-      "name": "Thegentlemen",
-      "count": 20,
+      "name": "Dragonforce",
+      "count": 16,
       "victims": [
         {
-          "name": "YMCA of Columbia",
-          "date": "2026-05-21T09:53:15.690701+00:00",
-          "url": "",
-          "discovered_date": "2026-05-21T09:53:15.690701+00:00"
+          "name": "Prologic Construction",
+          "date": "2026-05-24T09:51:34.510860+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=3ef65c5b-aea3-4460-a83f-ae710367e4ec",
+          "discovered_date": "2026-05-24T09:51:34.510860+00:00"
         },
         {
-          "name": "MBM Corp",
-          "date": "2026-05-21T09:53:20.463672+00:00",
-          "url": "",
-          "discovered_date": "2026-05-21T09:53:20.463672+00:00"
+          "name": "HELIX INTERNATIONAL",
+          "date": "2026-05-24T09:52:16.930939+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=421f3e88-aad6-405d-b978-08c157ee72e5",
+          "discovered_date": "2026-05-24T09:52:16.930939+00:00"
         },
         {
-          "name": "Grupo Pasquel",
-          "date": "2026-05-21T09:53:23.408494+00:00",
-          "url": "",
-          "discovered_date": "2026-05-21T09:53:23.408494+00:00"
+          "name": "Heartland Growers",
+          "date": "2026-05-24T09:52:59.644194+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=a1dccd4b-e34d-4c85-9e31-b5daa4ca41aa",
+          "discovered_date": "2026-05-24T09:52:59.644194+00:00"
         },
         {
-          "name": "University of Finance and Administration",
-          "date": "2026-05-18T18:53:20.785407+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T18:53:20.785407+00:00"
+          "name": "Le Pain Quotidien US",
+          "date": "2026-05-22T10:51:35.717611+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=b4d29f61-59ef-4ca0-9bff-959c292d6225",
+          "discovered_date": "2026-05-22T10:51:35.717611+00:00"
         },
         {
-          "name": "Modern Display",
-          "date": "2026-05-18T18:53:36.687835+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T18:53:36.687835+00:00"
+          "name": "Vega",
+          "date": "2026-05-20T12:53:25.464216+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=dcde7455-48bb-468e-99df-a63e0b1eae71",
+          "discovered_date": "2026-05-20T12:53:25.464216+00:00"
         },
         {
-          "name": "DEVO-Tech",
-          "date": "2026-05-18T18:53:51.105730+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T18:53:51.105730+00:00"
+          "name": "TAURUS INVESTMENT HOLDINGS",
+          "date": "2026-05-19T17:52:23.978613+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=235ea5ca-db75-4e61-ba9b-02289478af59",
+          "discovered_date": "2026-05-19T17:52:23.978613+00:00"
         },
         {
-          "name": "E-Control Systems",
-          "date": "2026-05-18T18:54:05.085821+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T18:54:05.085821+00:00"
+          "name": "ZFG ALTHERM Engineering",
+          "date": "2026-05-19T17:52:57.324224+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=b4c8e56d-f86c-4d17-af4c-2eb1157d3ddc",
+          "discovered_date": "2026-05-19T17:52:57.324224+00:00"
         },
         {
-          "name": "Internet Technologies Designs",
-          "date": "2026-05-18T18:54:18.599039+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T18:54:18.599039+00:00"
+          "name": "Heartland Growers",
+          "date": "2026-05-24T09:52:59+00:00",
+          "url": "https://www.ransomware.live/id/SGVhcnRsYW5kIEdyb3dlcnNAZHJhZ29uZm9yY2U=",
+          "discovered_date": "2026-05-24T09:52:59+00:00"
         },
         {
-          "name": "Polyrack",
-          "date": "2026-05-18T18:54:38.117670+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T18:54:38.117670+00:00"
+          "name": "HELIX INTERNATIONAL",
+          "date": "2026-05-24T09:52:16+00:00",
+          "url": "https://www.ransomware.live/id/SEVMSVggSU5URVJOQVRJT05BTEBkcmFnb25mb3JjZQ==",
+          "discovered_date": "2026-05-24T09:52:16+00:00"
         },
         {
-          "name": "Internal Medicine",
-          "date": "2026-05-18T18:54:53.559651+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T18:54:53.559651+00:00"
+          "name": "Prologic Construction",
+          "date": "2026-05-24T09:51:34+00:00",
+          "url": "https://www.ransomware.live/id/UHJvbG9naWMgQ29uc3RydWN0aW9uQGRyYWdvbmZvcmNl",
+          "discovered_date": "2026-05-24T09:51:34+00:00"
         }
       ],
       "industries": [
         "Agriculture and Food Production",
-        "Consumer Services",
-        "Education",
-        "Healthcare",
+        "Construction",
+        "Financial Services",
+        "Hospitality and Tourism",
         "Manufacturing"
       ],
       "countries": [
         "AT",
-        "CH",
-        "CZ",
-        "EC",
-        "FR"
+        "CA",
+        "CY",
+        "ES",
+        "GB"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        14,
         0,
+        4,
+        2,
         0,
-        6,
+        2,
         0,
-        0,
-        0
+        6
       ]
     },
     {
       "name": "Akira",
-      "count": 18,
+      "count": 16,
       "victims": [
         {
           "name": "Gitis",
@@ -324,22 +415,22 @@
           "discovered_date": "2026-05-19T14:50:21.229807+00:00"
         },
         {
-          "name": "Healthtrax Fitness & Wellness",
-          "date": "2026-05-18T13:50:18.460608+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T13:50:18.460608+00:00"
-        },
-        {
-          "name": "Vacu - Lug",
-          "date": "2026-05-18T13:21:22.093671+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T13:21:22.093671+00:00"
-        },
-        {
           "name": "Gitis",
           "date": "2026-05-22T15:50:26+00:00",
           "url": "https://www.ransomware.live/id/R2l0aXNAYWtpcmE=",
           "discovered_date": "2026-05-22T15:50:26+00:00"
+        },
+        {
+          "name": "Karlin Foods",
+          "date": "2026-05-22T15:20:22+00:00",
+          "url": "https://www.ransomware.live/id/S2FybGluIEZvb2RzQGFraXJh",
+          "discovered_date": "2026-05-22T15:20:22+00:00"
+        },
+        {
+          "name": "Buffalo Niagara Convention Center",
+          "date": "2026-05-22T13:20:34+00:00",
+          "url": "https://www.ransomware.live/id/QnVmZmFsbyBOaWFnYXJhIENvbnZlbnRpb24gQ2VudGVyQGFraXJh",
+          "discovered_date": "2026-05-22T13:20:34+00:00"
         }
       ],
       "industries": [
@@ -347,7 +438,7 @@
         "Business Services",
         "Consumer Services",
         "Hospitality and Tourism",
-        "Manufacturing"
+        "Not Found"
       ],
       "countries": [
         "GB",
@@ -358,102 +449,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        4,
+        2,
         4,
         2,
         0,
         8,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Apt73",
-      "count": 14,
-      "victims": [
-        {
-          "name": "tkgm.gov.tr",
-          "date": "2026-05-22T14:50:39.992561+00:00",
-          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=168",
-          "discovered_date": "2026-05-22T14:50:39.992561+00:00"
-        },
-        {
-          "name": "minsa.com.mx",
-          "date": "2026-05-22T14:20:40.658584+00:00",
-          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=167",
-          "discovered_date": "2026-05-22T14:20:40.658584+00:00"
-        },
-        {
-          "name": "tvnmedia.com",
-          "date": "2026-05-22T09:50:34.524704+00:00",
-          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=166",
-          "discovered_date": "2026-05-22T09:50:34.524704+00:00"
-        },
-        {
-          "name": "grupopetersen.com.ar",
-          "date": "2026-05-21T16:22:34.651196+00:00",
-          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=165",
-          "discovered_date": "2026-05-21T16:22:34.651196+00:00"
-        },
-        {
-          "name": "narit.or.th",
-          "date": "2026-05-21T15:53:01.625984+00:00",
-          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=164",
-          "discovered_date": "2026-05-21T15:53:01.625984+00:00"
-        },
-        {
-          "name": "alkaloid.com.mk",
-          "date": "2026-05-21T15:22:37.344545+00:00",
-          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=163",
-          "discovered_date": "2026-05-21T15:22:37.344545+00:00"
-        },
-        {
-          "name": "ungererandcompany.com",
-          "date": "2026-05-21T09:22:32.395006+00:00",
-          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=162",
-          "discovered_date": "2026-05-21T09:22:32.395006+00:00"
-        },
-        {
-          "name": "tkgm.gov.tr",
-          "date": "2026-05-22T14:50:39+00:00",
-          "url": "https://www.ransomware.live/id/dGtnbS5nb3YudHJAYXB0NzM=",
-          "discovered_date": "2026-05-22T14:50:39+00:00"
-        },
-        {
-          "name": "minsa.com.mx",
-          "date": "2026-05-22T14:20:40+00:00",
-          "url": "https://www.ransomware.live/id/bWluc2EuY29tLm14QGFwdDcz",
-          "discovered_date": "2026-05-22T14:20:40+00:00"
-        },
-        {
-          "name": "tvnmedia.com",
-          "date": "2026-05-22T09:50:34+00:00",
-          "url": "https://www.ransomware.live/id/dHZubWVkaWEuY29tQGFwdDcz",
-          "discovered_date": "2026-05-22T09:50:34+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Healthcare",
-        "Not Found",
-        "Public Sector",
-        "Telecommunication"
-      ],
-      "countries": [
-        "AR",
-        "DE",
-        "MK",
-        "MX",
-        "PL"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        8,
-        6,
         0,
         0
       ]
@@ -641,6 +641,97 @@
       ]
     },
     {
+      "name": "Apt73",
+      "count": 12,
+      "victims": [
+        {
+          "name": "tkgm.gov.tr",
+          "date": "2026-05-22T14:50:39.992561+00:00",
+          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=168",
+          "discovered_date": "2026-05-22T14:50:39.992561+00:00"
+        },
+        {
+          "name": "minsa.com.mx",
+          "date": "2026-05-22T14:20:40.658584+00:00",
+          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=167",
+          "discovered_date": "2026-05-22T14:20:40.658584+00:00"
+        },
+        {
+          "name": "tvnmedia.com",
+          "date": "2026-05-22T09:50:34.524704+00:00",
+          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=166",
+          "discovered_date": "2026-05-22T09:50:34.524704+00:00"
+        },
+        {
+          "name": "grupopetersen.com.ar",
+          "date": "2026-05-21T16:22:34.651196+00:00",
+          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=165",
+          "discovered_date": "2026-05-21T16:22:34.651196+00:00"
+        },
+        {
+          "name": "narit.or.th",
+          "date": "2026-05-21T15:53:01.625984+00:00",
+          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=164",
+          "discovered_date": "2026-05-21T15:53:01.625984+00:00"
+        },
+        {
+          "name": "alkaloid.com.mk",
+          "date": "2026-05-21T15:22:37.344545+00:00",
+          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=163",
+          "discovered_date": "2026-05-21T15:22:37.344545+00:00"
+        },
+        {
+          "name": "tkgm.gov.tr",
+          "date": "2026-05-22T14:50:39+00:00",
+          "url": "https://www.ransomware.live/id/dGtnbS5nb3YudHJAYXB0NzM=",
+          "discovered_date": "2026-05-22T14:50:39+00:00"
+        },
+        {
+          "name": "minsa.com.mx",
+          "date": "2026-05-22T14:20:40+00:00",
+          "url": "https://www.ransomware.live/id/bWluc2EuY29tLm14QGFwdDcz",
+          "discovered_date": "2026-05-22T14:20:40+00:00"
+        },
+        {
+          "name": "tvnmedia.com",
+          "date": "2026-05-22T09:50:34+00:00",
+          "url": "https://www.ransomware.live/id/dHZubWVkaWEuY29tQGFwdDcz",
+          "discovered_date": "2026-05-22T09:50:34+00:00"
+        },
+        {
+          "name": "grupopetersen.com.ar",
+          "date": "2026-05-21T16:22:34+00:00",
+          "url": "https://www.ransomware.live/id/Z3J1cG9wZXRlcnNlbi5jb20uYXJAYXB0NzM=",
+          "discovered_date": "2026-05-21T16:22:34+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Healthcare",
+        "Not Found",
+        "Public Sector",
+        "Telecommunication"
+      ],
+      "countries": [
+        "AR",
+        "MK",
+        "MX",
+        "PL",
+        "TH"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        6,
+        6,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Krybit",
       "count": 10,
       "victims": [
@@ -731,98 +822,8 @@
       ]
     },
     {
-      "name": "Dragonforce",
-      "count": 10,
-      "victims": [
-        {
-          "name": "Le Pain Quotidien US",
-          "date": "2026-05-22T10:51:35.717611+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=b4d29f61-59ef-4ca0-9bff-959c292d6225",
-          "discovered_date": "2026-05-22T10:51:35.717611+00:00"
-        },
-        {
-          "name": "Vega",
-          "date": "2026-05-20T12:53:25.464216+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=dcde7455-48bb-468e-99df-a63e0b1eae71",
-          "discovered_date": "2026-05-20T12:53:25.464216+00:00"
-        },
-        {
-          "name": "TAURUS INVESTMENT HOLDINGS",
-          "date": "2026-05-19T17:52:23.978613+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=235ea5ca-db75-4e61-ba9b-02289478af59",
-          "discovered_date": "2026-05-19T17:52:23.978613+00:00"
-        },
-        {
-          "name": "ZFG ALTHERM Engineering",
-          "date": "2026-05-19T17:52:57.324224+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=b4c8e56d-f86c-4d17-af4c-2eb1157d3ddc",
-          "discovered_date": "2026-05-19T17:52:57.324224+00:00"
-        },
-        {
-          "name": "Le Pain Quotidien US",
-          "date": "2026-05-22T10:51:35+00:00",
-          "url": "https://www.ransomware.live/id/TGUgUGFpbiBRdW90aWRpZW4gVVNAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2026-05-22T10:51:35+00:00"
-        },
-        {
-          "name": "Vega",
-          "date": "2026-05-20T12:53:25+00:00",
-          "url": "https://www.ransomware.live/id/VmVnYUBkcmFnb25mb3JjZQ==",
-          "discovered_date": "2026-05-20T12:53:25+00:00"
-        },
-        {
-          "name": "ZFG ALTHERM Engineering",
-          "date": "2026-05-19T17:52:57+00:00",
-          "url": "https://www.ransomware.live/id/WkZHIEFMVEhFUk0gRW5naW5lZXJpbmdAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2026-05-19T17:52:57+00:00"
-        },
-        {
-          "name": "TAURUS INVESTMENT HOLDINGS",
-          "date": "2026-05-19T17:52:23+00:00",
-          "url": "https://www.ransomware.live/id/VEFVUlVTIElOVkVTVE1FTlQgSE9MRElOR1NAZHJhZ29uZm9yY2U=",
-          "discovered_date": "2026-05-19T17:52:23+00:00"
-        },
-        {
-          "name": "Plan",
-          "date": "2026-05-17T14:52:04+00:00",
-          "url": "https://www.ransomware.live/id/UGxhbkBkcmFnb25mb3JjZQ==",
-          "discovered_date": "2026-05-17T14:52:04+00:00"
-        },
-        {
-          "name": "Ingelan",
-          "date": "2026-05-17T14:21:42+00:00",
-          "url": "https://www.ransomware.live/id/SW5nZWxhbkBkcmFnb25mb3JjZQ==",
-          "discovered_date": "2026-05-17T14:21:42+00:00"
-        }
-      ],
-      "industries": [
-        "Financial Services",
-        "Hospitality and Tourism",
-        "Manufacturing",
-        "Not Found"
-      ],
-      "countries": [
-        "AT",
-        "CY",
-        "ES",
-        "N/A",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        4,
-        2,
-        0,
-        2,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Incransom",
-      "count": 9,
+      "count": 7,
       "victims": [
         {
           "name": "Mecanizados y Montajes Aeronáuticos (mymgroup.es)",
@@ -841,12 +842,6 @@
           "date": "2026-05-19T19:52:35.787768+00:00",
           "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a0cac1fd152110a6a17ee94",
           "discovered_date": "2026-05-19T19:52:35.787768+00:00"
-        },
-        {
-          "name": "bergen1.net",
-          "date": "2026-05-18T01:22:31.577552+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/69fd1aa08f1d14b743bed25b",
-          "discovered_date": "2026-05-18T01:22:31.577552+00:00"
         },
         {
           "name": "Mecanizados y Montajes Aeronáuticos (mymgroup.es)",
@@ -871,21 +866,13 @@
           "date": "2026-05-18T01:22:31+00:00",
           "url": "https://www.ransomware.live/id/YmVyZ2VuMS5uZXRAaW5jcmFuc29t",
           "discovered_date": "2026-05-18T01:22:31+00:00"
-        },
-        {
-          "name": "metaval.com.au",
-          "date": "2026-05-17T11:23:05+00:00",
-          "url": "https://www.ransomware.live/id/bWV0YXZhbC5jb20uYXVAaW5jcmFuc29t",
-          "discovered_date": "2026-05-17T11:23:05+00:00"
         }
       ],
       "industries": [
         "Manufacturing",
-        "Not Found",
         "Technology"
       ],
       "countries": [
-        "AU",
         "CA",
         "ES",
         "TW",
@@ -894,153 +881,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
+        1,
+        2,
+        0,
+        0,
         2,
         2,
-        0,
-        0,
-        2,
-        2,
-        0
-      ]
-    },
-    {
-      "name": "Chaos",
-      "count": 8,
-      "victims": [
-        {
-          "name": "challenge-mfg.com",
-          "date": "2026-05-17T19:52:16.001018+00:00",
-          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/SP6HPs3K609iS8rmatQO9PbvAA3Ky4fT",
-          "discovered_date": "2026-05-17T19:52:16.001018+00:00"
-        },
-        {
-          "name": "wtitransport.com",
-          "date": "2026-05-17T19:51:51.325860+00:00",
-          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/e4KoedyitHjpW0zJMn7tNzN3OlHRasDa",
-          "discovered_date": "2026-05-17T19:51:51.325860+00:00"
-        },
-        {
-          "name": "cstindustries.com",
-          "date": "2026-05-17T19:51:24.632468+00:00",
-          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/0MTAQq7Ed4lUE8W3ugU98DfljN4VCpIR",
-          "discovered_date": "2026-05-17T19:51:24.632468+00:00"
-        },
-        {
-          "name": "fallprotect.com",
-          "date": "2026-05-17T19:50:58.947759+00:00",
-          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/ngIdlxFwmPKCFUaS7A2RfORm21tjkugm",
-          "discovered_date": "2026-05-17T19:50:58.947759+00:00"
-        },
-        {
-          "name": "challenge-mfg.com",
-          "date": "2026-05-17T19:52:16+00:00",
-          "url": "https://www.ransomware.live/id/Y2hhbGxlbmdlLW1mZy5jb21AY2hhb3M=",
-          "discovered_date": "2026-05-17T19:52:16+00:00"
-        },
-        {
-          "name": "wtitransport.com",
-          "date": "2026-05-17T19:51:51+00:00",
-          "url": "https://www.ransomware.live/id/d3RpdHJhbnNwb3J0LmNvbUBjaGFvcw==",
-          "discovered_date": "2026-05-17T19:51:51+00:00"
-        },
-        {
-          "name": "cstindustries.com",
-          "date": "2026-05-17T19:51:24+00:00",
-          "url": "https://www.ransomware.live/id/Y3N0aW5kdXN0cmllcy5jb21AY2hhb3M=",
-          "discovered_date": "2026-05-17T19:51:24+00:00"
-        },
-        {
-          "name": "fallprotect.com",
-          "date": "2026-05-17T19:50:58+00:00",
-          "url": "https://www.ransomware.live/id/ZmFsbHByb3RlY3QuY29tQGNoYW9z",
-          "discovered_date": "2026-05-17T19:50:58+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Manufacturing",
-        "Transportation/Logistics"
-      ],
-      "countries": [
-        "DE",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Nightspire",
-      "count": 7,
-      "victims": [
-        {
-          "name": "C***r*o T**uc**n*",
-          "date": "2026-05-18T18:55:16.094754+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T18:55:16.094754+00:00"
-        },
-        {
-          "name": "m***o*ul",
-          "date": "2026-05-18T18:55:02.334994+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T18:55:02.334994+00:00"
-        },
-        {
-          "name": "Vantage Energy LLC",
-          "date": "2026-05-18T18:55:28+00:00",
-          "url": "https://www.ransomware.live/id/VmFudGFnZSBFbmVyZ3kgTExDQG5pZ2h0c3BpcmU=",
-          "discovered_date": "2026-05-18T18:55:28+00:00"
-        },
-        {
-          "name": "C***r*o T**uc**n*",
-          "date": "2026-05-18T18:55:16+00:00",
-          "url": "https://www.ransomware.live/id/QyoqKnIqbyBUKip1YyoqbipAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-05-18T18:55:16+00:00"
-        },
-        {
-          "name": "m***o*ul",
-          "date": "2026-05-18T18:55:02+00:00",
-          "url": "https://www.ransomware.live/id/bSoqKm8qdWxAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-05-18T18:55:02+00:00"
-        },
-        {
-          "name": "Huse Incorporated",
-          "date": "2026-05-18T18:24:01+00:00",
-          "url": "https://www.ransomware.live/id/SHVzZSBJbmNvcnBvcmF0ZWRAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-05-18T18:24:01+00:00"
-        },
-        {
-          "name": "TAKOSAN OTOMOBIL",
-          "date": "2026-05-18T18:23:59+00:00",
-          "url": "https://www.ransomware.live/id/VEFLT1NBTiBPVE9NT0JJTEBuaWdodHNwaXJl",
-          "discovered_date": "2026-05-18T18:23:59+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [
-        "N/A",
-        "TR",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        7,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ]
     },
@@ -1173,6 +1019,112 @@
       ]
     },
     {
+      "name": "Ailock",
+      "count": 5,
+      "victims": [
+        {
+          "name": "Artso International, Inc.",
+          "date": "2026-05-24T09:20:05.564402+00:00",
+          "url": "",
+          "discovered_date": "2026-05-24T09:20:05.564402+00:00"
+        },
+        {
+          "name": "Design Engineering & Consulting",
+          "date": "2026-05-18T10:50:05.236911+00:00",
+          "url": "",
+          "discovered_date": "2026-05-18T10:50:05.236911+00:00"
+        },
+        {
+          "name": "Artso International, Inc.",
+          "date": "2026-05-24T09:20:05+00:00",
+          "url": "https://www.ransomware.live/id/QXJ0c28gSW50ZXJuYXRpb25hbCwgSW5jLkBBaUxvY2s=",
+          "discovered_date": "2026-05-24T09:20:05+00:00"
+        },
+        {
+          "name": "Design Engineering & Consulting",
+          "date": "2026-05-18T10:50:05+00:00",
+          "url": "https://www.ransomware.live/id/RGVzaWduIEVuZ2luZWVyaW5nICYgQ29uc3VsdGluZ0BBaUxvY2s=",
+          "discovered_date": "2026-05-18T10:50:05+00:00"
+        },
+        {
+          "name": "Jazz Hipster",
+          "date": "2026-05-18T10:20:05+00:00",
+          "url": "https://www.ransomware.live/id/SmF6eiBIaXBzdGVyQEFpTG9jaw==",
+          "discovered_date": "2026-05-18T10:20:05+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Nightspire",
+      "count": 5,
+      "victims": [
+        {
+          "name": "Vantage Energy LLC",
+          "date": "2026-05-18T18:55:28+00:00",
+          "url": "https://www.ransomware.live/id/VmFudGFnZSBFbmVyZ3kgTExDQG5pZ2h0c3BpcmU=",
+          "discovered_date": "2026-05-18T18:55:28+00:00"
+        },
+        {
+          "name": "C***r*o T**uc**n*",
+          "date": "2026-05-18T18:55:16+00:00",
+          "url": "https://www.ransomware.live/id/QyoqKnIqbyBUKip1YyoqbipAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-05-18T18:55:16+00:00"
+        },
+        {
+          "name": "m***o*ul",
+          "date": "2026-05-18T18:55:02+00:00",
+          "url": "https://www.ransomware.live/id/bSoqKm8qdWxAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-05-18T18:55:02+00:00"
+        },
+        {
+          "name": "Huse Incorporated",
+          "date": "2026-05-18T18:24:01+00:00",
+          "url": "https://www.ransomware.live/id/SHVzZSBJbmNvcnBvcmF0ZWRAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-05-18T18:24:01+00:00"
+        },
+        {
+          "name": "TAKOSAN OTOMOBIL",
+          "date": "2026-05-18T18:23:59+00:00",
+          "url": "https://www.ransomware.live/id/VEFLT1NBTiBPVE9NT0JJTEBuaWdodHNwaXJl",
+          "discovered_date": "2026-05-18T18:23:59+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "N/A",
+        "TR",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Bravox",
       "count": 4,
       "victims": [
@@ -1222,103 +1174,6 @@
       ]
     },
     {
-      "name": "Lamashtu",
-      "count": 4,
-      "victims": [
-        {
-          "name": "ROTH‑TECHNIK AUSTRIA",
-          "date": "2026-05-19T13:23:47.646187+00:00",
-          "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/0522f9eaa57f29972a81829a210bd9fe",
-          "discovered_date": "2026-05-19T13:23:47.646187+00:00"
-        },
-        {
-          "name": "MSC Group",
-          "date": "2026-05-18T07:25:16.402272+00:00",
-          "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/29e5e001efac473e86b35e4b83dc8ece",
-          "discovered_date": "2026-05-18T07:25:16.402272+00:00"
-        },
-        {
-          "name": "ROTH‑TECHNIK AUSTRIA",
-          "date": "2026-05-19T13:23:47+00:00",
-          "url": "https://www.ransomware.live/id/Uk9USOKAkVRFQ0hOSUsgQVVTVFJJQUBsYW1hc2h0dQ==",
-          "discovered_date": "2026-05-19T13:23:47+00:00"
-        },
-        {
-          "name": "MSC Group",
-          "date": "2026-05-18T07:25:16+00:00",
-          "url": "https://www.ransomware.live/id/TVNDIEdyb3VwQGxhbWFzaHR1",
-          "discovered_date": "2026-05-18T07:25:16+00:00"
-        }
-      ],
-      "industries": [
-        "Manufacturing",
-        "Transportation/Logistics"
-      ],
-      "countries": [
-        "AT",
-        "MY"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        2,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Ailock",
-      "count": 4,
-      "victims": [
-        {
-          "name": "Design Engineering & Consulting",
-          "date": "2026-05-18T10:50:05.236911+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T10:50:05.236911+00:00"
-        },
-        {
-          "name": "Jazz Hipster",
-          "date": "2026-05-18T10:20:05.703236+00:00",
-          "url": "",
-          "discovered_date": "2026-05-18T10:20:05.703236+00:00"
-        },
-        {
-          "name": "Design Engineering & Consulting",
-          "date": "2026-05-18T10:50:05+00:00",
-          "url": "https://www.ransomware.live/id/RGVzaWduIEVuZ2luZWVyaW5nICYgQ29uc3VsdGluZ0BBaUxvY2s=",
-          "discovered_date": "2026-05-18T10:50:05+00:00"
-        },
-        {
-          "name": "Jazz Hipster",
-          "date": "2026-05-18T10:20:05+00:00",
-          "url": "https://www.ransomware.live/id/SmF6eiBIaXBzdGVyQEFpTG9jaw==",
-          "discovered_date": "2026-05-18T10:20:05+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Consumer Services"
-      ],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        4,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Pear",
       "count": 4,
       "victims": [
@@ -1358,6 +1213,52 @@
         0,
         0,
         4,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Chaos",
+      "count": 4,
+      "victims": [
+        {
+          "name": "challenge-mfg.com",
+          "date": "2026-05-17T19:52:16+00:00",
+          "url": "https://www.ransomware.live/id/Y2hhbGxlbmdlLW1mZy5jb21AY2hhb3M=",
+          "discovered_date": "2026-05-17T19:52:16+00:00"
+        },
+        {
+          "name": "wtitransport.com",
+          "date": "2026-05-17T19:51:51+00:00",
+          "url": "https://www.ransomware.live/id/d3RpdHJhbnNwb3J0LmNvbUBjaGFvcw==",
+          "discovered_date": "2026-05-17T19:51:51+00:00"
+        },
+        {
+          "name": "cstindustries.com",
+          "date": "2026-05-17T19:51:24+00:00",
+          "url": "https://www.ransomware.live/id/Y3N0aW5kdXN0cmllcy5jb21AY2hhb3M=",
+          "discovered_date": "2026-05-17T19:51:24+00:00"
+        },
+        {
+          "name": "fallprotect.com",
+          "date": "2026-05-17T19:50:58+00:00",
+          "url": "https://www.ransomware.live/id/ZmFsbHByb3RlY3QuY29tQGNoYW9z",
+          "discovered_date": "2026-05-17T19:50:58+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "DE",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -1454,6 +1355,48 @@
       ]
     },
     {
+      "name": "Lamashtu",
+      "count": 3,
+      "victims": [
+        {
+          "name": "ROTH‑TECHNIK AUSTRIA",
+          "date": "2026-05-19T13:23:47.646187+00:00",
+          "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/0522f9eaa57f29972a81829a210bd9fe",
+          "discovered_date": "2026-05-19T13:23:47.646187+00:00"
+        },
+        {
+          "name": "ROTH‑TECHNIK AUSTRIA",
+          "date": "2026-05-19T13:23:47+00:00",
+          "url": "https://www.ransomware.live/id/Uk9USOKAkVRFQ0hOSUsgQVVTVFJJQUBsYW1hc2h0dQ==",
+          "discovered_date": "2026-05-19T13:23:47+00:00"
+        },
+        {
+          "name": "MSC Group",
+          "date": "2026-05-18T07:25:16+00:00",
+          "url": "https://www.ransomware.live/id/TVNDIEdyb3VwQGxhbWFzaHR1",
+          "discovered_date": "2026-05-18T07:25:16+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing"
+      ],
+      "countries": [
+        "AT",
+        "MY"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Cmdorganization",
       "count": 3,
       "victims": [
@@ -1492,41 +1435,6 @@
         0,
         0,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Stormous",
-      "count": 2,
-      "victims": [
-        {
-          "name": "vspsolutions.com.au FULL DATA DUMP",
-          "date": "2026-05-23T21:54:42.464903+00:00",
-          "url": "",
-          "discovered_date": "2026-05-23T21:54:42.464903+00:00"
-        },
-        {
-          "name": "vspsolutions.com.au FULL DATA DUMP",
-          "date": "2026-05-23T21:54:42+00:00",
-          "url": "https://www.ransomware.live/id/dnNwc29sdXRpb25zLmNvbS5hdSBGVUxMIERBVEEgRFVNUEBzdG9ybW91cw==",
-          "discovered_date": "2026-05-23T21:54:42+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services"
-      ],
-      "countries": [
-        "AU"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
         0
       ]
     },
