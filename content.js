@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 22 2026",
+            "headline": "FBI Shuts Down 'First VPN'—Key Cybercrime Tool Dismantled",
+            "title": "'First VPN' Cybercrime Service Disrupted; Administrator Arrested",
+            "content": "The FBI has successfully disrupted the 'First VPN' service, a notorious tool used by numerous ransomware groups for network reconnaissance and intrusions. The operation led to the arrest of the service's administrator, marking a significant blow to cybercriminals leveraging VPNs for illicit activities. 'First VPN' was implicated in facilitating attacks by providing anonymity and secure communication channels for threat actors. This takedown is part of a broader international effort to dismantle cybercrime infrastructure. Security professionals should remain vigilant and consider alternative VPN solutions that ensure compliance with legal standards.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/first-vpn-cybercrime-service-disrupted-administrator-arrested/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Google Leak Exposes Chromium Flaw—Remote Code Execution Risk",
+            "title": "Google Accidentally Exposes Unfixed Chromium Flaw Allowing RCE",
+            "content": "Google inadvertently leaked details of an unfixed vulnerability in Chromium, which allows JavaScript to continue running in the background even after the browser is closed. This flaw poses a remote code execution (RCE) risk, potentially enabling attackers to execute arbitrary code on affected devices. The issue underscores the importance of timely patch management and vulnerability disclosure protocols. Users of Chromium-based browsers should remain cautious and monitor updates from Google for a forthcoming patch. This incident highlights ongoing challenges in securing widely-used open-source software.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-accidentally-exposed-details-of-unfixed-chromium-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Global Police Operation Seizes 'First VPN' in Cybercrime Crackdown",
+            "title": "Police Seize 'First VPN' Service Used in Ransomware, Data Theft Attacks",
+            "content": "In a coordinated international law enforcement operation, authorities have seized the 'First VPN' service, a tool extensively used in ransomware and data theft attacks. This VPN service provided cybercriminals with the means to obfuscate their activities and evade detection. The operation's success is a testament to the growing collaboration among global agencies to combat cybercrime. Organizations should reassess their VPN usage policies and ensure they are not inadvertently supporting illicit activities. This seizure marks a critical step in disrupting the infrastructure of cybercriminal networks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seize-first-vpn-service-used-in-ransomware-data-theft-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Cisco Patches Critical Secure Workload Flaw—Admin Privileges Risk",
+            "title": "Cisco Patches Critical Vulnerability in Secure Workload",
+            "content": "Cisco has released a patch for a critical vulnerability in its Secure Workload product, which could allow remote attackers to gain Site Admin privileges. The flaw, stemming from insufficient validation and authentication in the REST APIs, poses a significant risk to organizations relying on this security solution. Affected users should apply the patch immediately to mitigate potential exploitation. This vulnerability highlights the importance of rigorous validation processes in API development. Cisco's prompt response demonstrates the company's commitment to maintaining robust security standards.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-vulnerability-in-secure-workload/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "ThreatsDay: Linux Rootkits, Router 0-Day, AI Intrusions Uncovered",
+            "title": "ThreatsDay Bulletin: Linux Rootkits, Router 0-Day, AI Intrusions",
+            "content": "This week's ThreatsDay Bulletin reveals a concerning pattern of attacks exploiting trusted components, including Linux rootkits, a router zero-day vulnerability, and AI-driven intrusions. Attackers are increasingly leveraging existing trusted tools and infrastructure to bypass traditional security measures. Security professionals should enhance monitoring of trusted components and implement anomaly detection systems. The bulletin emphasizes the need for a proactive approach to cybersecurity, focusing on the integrity of trusted systems. This trend underscores the evolving tactics of threat actors in the cyber landscape.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/threatsday-bulletin-linux-rootkits.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 23 2026",
+            "headline": "Italy Dismantles CINEMAGOAL—Streaming Piracy Network Crushed",
+            "title": "Italy Disrupts CINEMAGOAL Piracy App That Stole Streaming Auth Codes",
+            "content": "Italian authorities have dismantled the CINEMAGOAL app, a piracy ecosystem that illegally accessed streaming platforms like Netflix, Disney+, and Spotify by stealing authentication codes. This crackdown is part of a broader effort to combat digital piracy and protect intellectual property rights. The operation highlights the vulnerabilities in streaming service security and the need for enhanced authentication mechanisms. Streaming service providers should review their security protocols to prevent similar breaches. This action represents a significant victory in the fight against digital piracy.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/legal/italy-disrupts-cinemagoal-piracy-app-that-stole-streaming-auth-codes/",
+            "relatedResources": []
+        },
+        {
             "date": "May 23 2026",
             "headline": "Laravel Lang Packages Hijacked—Credential-Stealing Malware Alert",
             "title": "Supply Chain Attack on Laravel Lang Packages Deploys Credential-Stealing Malware",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Project Glasswing Uncovers 10,000 Critical Software Flaws",
-            "title": "Anthropic's Project Glasswing Identifies Thousands of High-Severity Vulnerabilities",
-            "content": "Anthropic's Project Glasswing has revealed over 10,000 high- or critical-severity vulnerabilities in crucial software systems worldwide since its launch last month. This initiative, part of the Claude Mythos AI project, aims to enhance global cybersecurity by identifying systemic weaknesses in widely used software. The discovery of these vulnerabilities underscores the critical need for continuous security assessments and proactive vulnerability management. Organizations are encouraged to leverage such AI-driven tools to bolster their security posture and mitigate potential threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "First VPN Service Dismantled—25 Ransomware Groups Affected",
-            "title": "Global Takedown of First VPN Service Used by Ransomware Groups",
-            "content": "Authorities across Europe and North America have dismantled the First VPN Service, a criminal virtual private network used by 25 ransomware groups to obscure attack origins. This operation, led by French law enforcement, targeted the infrastructure that facilitated ransomware attacks, data theft, and denial-of-service attacks. The takedown is part of a broader effort to disrupt cybercriminal networks that rely on anonymizing services to evade detection. Security professionals should be aware of potential shifts in ransomware tactics as these groups seek alternative methods to mask their activities. Continued vigilance and adaptation of security measures are recommended to counteract evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/first-vpn-dismantled-in-global-takedown.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Drupal Vulnerability Exploited—Thousands of Sites at Risk",
-            "title": "CVE-2026-9082 Exploited in Active Attacks on Drupal Websites",
-            "content": "Drupal has issued a warning following the discovery of active exploitation attempts targeting CVE-2026-9082, a critical vulnerability affecting thousands of websites. This flaw allows attackers to execute remote code, escalate privileges, and disclose sensitive information without authentication. Security firms have observed a surge in attacks shortly after the vulnerability's disclosure, highlighting the urgent need for administrators to apply available patches. Drupal users are advised to update their systems immediately to mitigate potential risks. This incident underscores the importance of timely patch management in maintaining web application security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/drupal-vulnerability-in-hacker-crosshairs-shortly-after-disclosure/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Cisco Patches Critical Flaw—Secure Workload at Risk",
-            "title": "CVE-2026-20223: Cisco Secure Workload REST API Flaw Patched",
-            "content": "Cisco has released patches for CVE-2026-20223, a critical vulnerability in its Secure Workload REST API, which scored a maximum CVSS rating of 10.0. This flaw could allow unauthenticated remote attackers to access sensitive data due to insufficient validation and authentication processes. Organizations using Cisco Secure Workload are urged to apply the updates immediately to prevent potential data breaches. The vulnerability's severity highlights the critical need for robust security measures in API management. Cisco's prompt response is a reminder for companies to maintain up-to-date security practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/cisco-patches-cvss-100-secure-workload.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Trend Micro Zero-Day Exploited—Patch Your Apex One Now",
-            "title": "Trend Micro Addresses Apex One Zero-Day Vulnerability Exploited in the Wild",
-            "content": "Trend Micro has issued a patch for a zero-day vulnerability in its Apex One security solution, which has been actively exploited in attacks on Windows systems. The flaw, identified as CVE-2026-34926, is a directory traversal vulnerability affecting the on-premise version of Apex One. This vulnerability allows attackers to execute arbitrary code, posing a significant risk to organizations relying on this software for endpoint protection. The exploitation of this zero-day highlights the ongoing threat landscape where attackers are increasingly targeting security solutions themselves. Users are urged to apply the latest updates immediately to mitigate potential risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trend-micro-warns-of-apex-one-zero-day-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Critical SQL Injection in Drupal—Active Exploitation Detected",
-            "title": "Drupal Warns of Active Exploitation of Critical SQL Injection Vulnerability",
-            "content": "Drupal has alerted users to active exploitation attempts targeting a \"highly critical\" SQL injection vulnerability disclosed earlier this week. This flaw affects Drupal versions 10.0 and earlier, allowing attackers to execute arbitrary SQL commands on the database. The vulnerability poses a severe threat to websites running on affected Drupal versions, potentially leading to data breaches or site defacement. This incident underscores the importance of promptly applying security patches to web applications. Drupal administrators are advised to update their installations to the latest secure versions to protect against these attacks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-sql-injection-flaw-now-targeted-in-attacks/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 24 2026",
+            "headline": "Chatbots Hacked—Exploiting AI Personalities for Malicious Gains",
+            "title": "Hackers Exploit AI Chatbot Personalities to Breach Systems",
+            "content": "Hackers are increasingly targeting AI chatbots by exploiting their programmed personalities to manipulate responses and gain unauthorized access to systems. This new wave of attacks leverages the inherent conversational nature of chatbots, which can be tricked into revealing sensitive information or executing harmful commands. The vulnerabilities primarily affect first-generation AI chatbots, which lack robust security measures against such manipulative tactics. Organizations using these chatbots are at risk of data breaches and unauthorized transactions. Security professionals are advised to implement stricter input validation and continuously monitor chatbot interactions to mitigate these risks.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/935545/hackers-ai-chatbots",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "AI Startups Inflate ARR—Investors Turn a Blind Eye",
+            "title": "AI Startups and VCs Inflate Annual Recurring Revenue Metrics",
+            "content": "AI startups are reportedly inflating their Annual Recurring Revenue (ARR) metrics to attract investment, with venture capitalists often complicit in this practice. This trend involves stretching traditional revenue definitions to present a more favorable financial outlook, potentially misleading stakeholders about the company's actual performance. The practice raises concerns about the sustainability and transparency of the AI startup ecosystem, as inflated metrics can lead to overvaluation and subsequent market corrections. Investors and industry analysts are urged to scrutinize financial statements and question revenue assumptions to ensure accurate assessments of startup viability.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Google AI Search Flaw—Ignores User Queries",
+            "title": "Google's AI Search Overviews Misinterpret User Queries",
+            "content": "Google's AI-powered search feature is experiencing issues where it misinterprets user queries, providing irrelevant AI-generated summaries instead of accurate search results. This problem was highlighted when searches for specific terms like \"disregard\" returned chatbot-like responses rather than concise overviews. The flaw affects users relying on Google's AI search for precise information retrieval, potentially leading to misinformation or inefficient research processes. Google is urged to refine its AI algorithms to improve query interpretation and ensure reliable search experiences. Users should verify AI-generated content against multiple sources until the issue is resolved.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "SpaceX IPO—$1.75 Trillion Valuation Targets Mars",
+            "title": "SpaceX's $1.75 Trillion IPO Aims for Mars Colonization",
+            "content": "SpaceX has filed for an initial public offering (IPO) with a staggering $1.75 trillion valuation, highlighting its ambitious plans beyond space travel. The company's S-1 filing outlines a total addressable market of $28 trillion and includes a compensation package for Elon Musk tied to establishing a Mars colony. The IPO reflects SpaceX's strategic vision to dominate the space industry and expand human presence beyond Earth. Investors are closely watching the company's financials and risk factors, which include technological and regulatory challenges. The IPO could redefine the space exploration market and investment landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "AI Procurement—Specialization Over Scale for Success",
+            "title": "Specialization Key in AI Procurement Decisions Over Scale",
+            "content": "In AI procurement, a strategic focus on specialization rather than scale can lead to more successful outcomes, according to a recent analysis. Organizations often overlook the benefits of specialized AI solutions that cater to specific needs, opting instead for large-scale, generalized systems. This approach can result in inefficiencies and suboptimal performance. The analysis suggests that tailored AI solutions can provide better alignment with organizational goals and deliver superior results. Decision-makers are encouraged to evaluate AI solutions based on their specific capabilities and relevance to business objectives rather than sheer size or market presence.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "AI-Penned Story Wins Literary Prize—Raises Authenticity Concerns",
+            "title": "AI-Generated Story Wins Commonwealth Prize, Stirs Debate",
+            "content": "The literary community is grappling with the implications of AI-generated content after a story penned by an AI, \"The Serpent in the Garden,\" won a regional prize in the Commonwealth Short Story competition. The British literary magazine Granta published the work, sparking debate over the authenticity and originality of AI-generated literature. This incident highlights the challenges of distinguishing human creativity from machine-generated content, raising questions about the future of literary awards and the criteria for judging originality. Literary professionals are urged to develop new frameworks to assess AI contributions in creative fields.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize",
+            "relatedResources": []
+        },
         {
             "date": "May 23 2026",
             "headline": "Ferrari Partners with IBM AI to Boost F1 Fan Engagement",
@@ -147,15 +201,6 @@ const websiteContent = {
             "content": "Ferrari is collaborating with IBM to enhance the Formula 1 fan experience using advanced artificial intelligence. The partnership aims to create \"superfans\" by personalizing content and interactions through IBM's AI capabilities. This initiative involves analyzing vast amounts of data to tailor experiences that deepen fan engagement and loyalty. The move reflects a broader trend in sports where teams and brands leverage AI to connect more deeply with their audiences. Fans can expect more immersive and interactive experiences as AI continues to redefine how sports are consumed.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Alibaba's Qwen3.7-Max—35-Hour Autonomous AI Agent Unveiled",
-            "title": "Alibaba's Qwen3.7-Max AI Agent Operates Autonomously for 35 Hours",
-            "content": "Alibaba has introduced Qwen3.7-Max, an AI model capable of operating autonomously for 35 hours, marking a significant advancement in AI technology. This model supports external harnesses like Anthropic's Claude Code, enabling it to plan, execute, and adjust complex tasks over extended periods. This development underscores the industry's shift towards the \"agent era,\" where AI systems perform beyond text generation to handle intricate, long-duration tasks. The implications are profound for industries reliant on continuous operations, such as logistics and customer service, where autonomous AI can enhance efficiency and reduce human intervention.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/alibabas-proprietary-qwen3-7-max-can-run-for-35-hours-autonomously-and-supports-external-harnesses-like-anthropics-claude-code",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "President Trump has postponed the signing of an executive order on AI safety testing, citing concerns that it could hinder innovation. The decision followed the absence of key AI firm CEOs from the event, highlighting potential industry resistance to regulatory measures. This delay may impact the pace of AI safety advancements and regulatory frameworks, affecting developers and companies navigating the evolving AI landscape. Professionals should stay informed about policy developments and prepare for potential regulatory changes that could influence AI deployment and innovation strategies.",
             "source": "Ars Technica",
             "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/trump-canceled-ai-safety-testing-eo-after-snub-from-tech-ceos/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Google Search Glitch—'Disregard' Breaks Interface",
-            "title": "Google Search AI Update Causes 'Disregard' Keyword Malfunction",
-            "content": "A recent AI update to Google Search has introduced a glitch where the keyword \"disregard\" disrupts the search interface. This issue has caused significant inconvenience for users relying on precise search capabilities, highlighting challenges in AI-driven search enhancements. The malfunction underscores the complexities of integrating AI into search algorithms, necessitating prompt resolution to restore functionality. Users and developers should be aware of potential disruptions and consider alternative search strategies until the issue is resolved. Google's response to this glitch will be crucial in maintaining user trust and search reliability.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/you-can-no-longer-google-the-word-disregard/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Google's AI Glasses—Near-Future Tech in Action",
-            "title": "Google's Prototype AI Glasses Enhance Reality with Gemini-Powered Features",
-            "content": "Google has unveiled prototype Android XR glasses that integrate Gemini-powered AI features, offering real-time translation, navigation, and information overlays. These augmented reality glasses represent a significant step towards seamless digital-physical integration, enhancing user experience in various contexts. While the technology is still in development, its potential applications in education, travel, and professional environments are vast. Tech leaders and developers should consider the implications for future AR innovations and user interaction models. As Google refines this technology, it could redefine how users engage with digital content in real-world settings.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Nemotron-Labs Unveils Lightning-Fast Diffusion Language Models",
-            "title": "Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
-            "content": "Nemotron-Labs has announced a breakthrough in text generation with its new diffusion language models, promising unprecedented speeds. These models leverage advanced diffusion techniques to generate text at near speed-of-light processing times, significantly outperforming existing models. This innovation is set to impact industries relying on real-time text processing, such as customer service and content creation. By reducing latency, Nemotron-Labs aims to enhance user experience and operational efficiency. Professionals should monitor these developments as they could redefine AI-driven text applications. The diffusion models represent a leap forward in AI capabilities, challenging competitors to match this speed.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "AI Resurrects Voices of Dead Pilots—NTSB Blocks Access",
-            "title": "AI Used to Reconstruct Voices from Cockpit Recordings, NTSB Responds",
-            "content": "AI technology has been employed to recreate the voices of deceased pilots from spectrogram images of cockpit recordings, leading to a temporary block by the National Transportation Safety Board (NTSB) on its docket system. This use of AI raises ethical and privacy concerns, as it involves sensitive data from aviation incidents. The reconstruction process involves analyzing spectrograms to synthesize voices, potentially affecting investigations and family privacy. The NTSB's action highlights the need for regulatory frameworks around AI's use in sensitive areas. Stakeholders in AI and aviation should consider the implications of such technology on privacy and ethics.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Google Introduces Disco-Ball Icons for Pixel Devices",
-            "title": "Google Adds Disco-Ball Icons to Pixel Home Screens",
-            "content": "Google has launched a new feature allowing Pixel users to transform their home screen icons into disco-ball designs. This update is part of Google's ongoing efforts to enhance user customization and engagement with its devices. The disco-ball icons are available through a simple update, offering a playful aesthetic change for users. While primarily a cosmetic update, it reflects Google's strategy to differentiate its products in a competitive smartphone market. Users interested in personalizing their devices can access this feature through the latest Pixel software update. This move underscores the trend towards greater user interface customization in tech products.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
             "relatedResources": []
         }
     ],
