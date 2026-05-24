@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 23 2026",
+            "headline": "Laravel Lang Packages Hijacked—Credential-Stealing Malware Alert",
+            "title": "Supply Chain Attack on Laravel Lang Packages Deploys Credential-Stealing Malware",
+            "content": "A sophisticated supply chain attack has compromised the Laravel Lang localization packages, deploying credential-stealing malware through Composer packages. Attackers exploited GitHub version tags to insert malicious code, targeting developers who rely on these packages for localization tasks. This breach underscores the vulnerabilities in software supply chains, particularly affecting developers using Laravel frameworks. The attack's impact is significant, potentially exposing sensitive credentials and affecting the integrity of applications built with these packages. Developers are urged to verify package integrity and monitor for suspicious activity to mitigate potential damage.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/laravel-lang-packages-hijacked-to-deploy-credential-stealing-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 23 2026",
+            "headline": "npm Enhances Security—2FA-Gated Publishing Now Live",
+            "title": "npm Introduces 2FA-Gated Publishing to Combat Supply Chain Threats",
+            "content": "GitHub has enhanced npm's security by implementing two-factor authentication (2FA) gated publishing, allowing package maintainers to approve releases before public availability. This new feature, known as staged publishing, aims to fortify the software supply chain against unauthorized alterations. By requiring explicit maintainer approval, the risk of malicious code insertion is significantly reduced. This update is part of a broader effort to secure open-source ecosystems and protect developers and users from supply chain attacks. Developers are encouraged to adopt these new controls to enhance package security.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/npm-adds-2fa-gated-publishing-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 23 2026",
+            "headline": "Packagist Attack Infects 8 Packages—Linux Malware Deployed",
+            "title": "Packagist Supply Chain Attack Infects Multiple Packages with Linux Malware",
+            "content": "A coordinated supply chain attack has compromised eight Packagist packages, deploying Linux malware via GitHub-hosted binaries. The attack involved injecting malicious code that retrieves a Linux binary from a GitHub Releases URL, bypassing composer.json configurations. This incident highlights the persistent threat of supply chain vulnerabilities, particularly in open-source ecosystems. Developers using affected packages are at risk of malware execution on their systems, potentially leading to unauthorized access and data breaches. Immediate package verification and updates are recommended to mitigate risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/packagist-supply-chain-attack-infects-8.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "TrendAI Patches Zero-Day—Apex One Vulnerability Exploited",
+            "title": "TrendAI Releases Patch for Apex One Zero-Day Vulnerability CVE-2026-34926",
+            "content": "TrendAI has issued a patch for CVE-2026-34926, a zero-day directory traversal vulnerability affecting the on-premise version of Apex One. This flaw, actively exploited in the wild, allows attackers to access sensitive directories and execute unauthorized actions. The vulnerability poses a significant risk to organizations using Apex One, potentially leading to data breaches and system compromise. TrendAI's swift response underscores the importance of timely patch management in mitigating zero-day threats. Users are advised to apply the patch immediately to secure their systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/trendai-patches-apex-one-zero-day-exploited-in-the-wild/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Grafana Breach—Codebase Stolen via TanStack Attack",
+            "title": "Grafana's Codebase Compromised in TanStack Supply Chain Attack",
+            "content": "Grafana has confirmed a breach of its GitHub repositories, resulting in the theft of its codebase and other sensitive data. The breach occurred after a token compromised in the TanStack supply chain attack was not rotated, allowing unauthorized access. This incident highlights the critical need for robust token management and regular rotation to prevent unauthorized access. The breach's impact could extend to users relying on Grafana's services, emphasizing the importance of securing development environments. Organizations are urged to review their access controls and token management practices.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/grafana-says-codebase-and-other-data-stolen-via-tanstack-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "CISA Adds Langflow, Apex One Flaws to Exploited List",
+            "title": "CISA Updates KEV with Langflow and Trend Micro Apex One Vulnerabilities",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added vulnerabilities affecting Langflow and Trend Micro Apex One to its Known Exploited Vulnerabilities (KEV) catalog. These vulnerabilities, including CVE-2026-34926, have been actively exploited, posing significant risks to affected systems. CISA's inclusion of these flaws in the KEV catalog underscores the urgency for organizations to address these vulnerabilities promptly. Security teams are advised to prioritize patching and mitigation efforts to protect against potential exploits. This update reflects ongoing threats to software supply chains and the need for vigilant security practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/cisa-adds-exploited-langflow-and-trend.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 23 2026",
             "headline": "Laravel-Lang PHP Packages Compromised—Credential Stealer Deployed",
             "title": "Supply Chain Attack Targets Laravel-Lang PHP Packages with Credential Stealer",
             "content": "A new supply chain attack has compromised several PHP packages from Laravel-Lang, deploying a cross-platform credential-stealing framework. The affected packages include laravel-lang/lang, laravel-lang/http-statuses, and others, threatening developers who rely on these components. This attack underscores the vulnerability of open-source ecosystems to malicious code injection, potentially impacting thousands of applications that integrate these packages. Security professionals are advised to audit their dependencies and apply necessary patches or remove compromised packages immediately. This incident highlights the growing trend of targeting software supply chains to distribute malware.",
@@ -40,24 +94,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 21 2026",
-            "headline": "\"First VPN\" Seized—Used in Ransomware, Data Theft",
-            "title": "Law Enforcement Shuts Down \"First VPN\" Service Linked to Cybercrime",
-            "content": "An international law enforcement operation has dismantled \"First VPN,\" a virtual private network service implicated in facilitating ransomware and data theft attacks. This service was reportedly used by cybercriminals to mask their activities and evade detection, highlighting the role of anonymizing tools in cybercrime. The seizure of \"First VPN\" marks a significant step in disrupting the infrastructure supporting illicit online activities. Organizations should remain vigilant about the use of VPN services and ensure compliance with cybersecurity best practices.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seize-first-vpn-service-used-in-ransomware-data-theft-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Cisco Patches Critical Secure Workload Vulnerability",
-            "title": "Critical Vulnerability in Cisco Secure Workload REST APIs Patched",
-            "content": "Cisco has addressed a critical vulnerability in its Secure Workload product, which allowed remote attackers to gain Site Admin privileges through insufficient validation and authentication in the REST APIs. Organizations using Secure Workload should apply the latest patches to mitigate the risk of unauthorized access and potential data breaches. This vulnerability underscores the importance of robust API security measures in protecting sensitive enterprise environments. Cisco's swift response highlights the need for continuous monitoring and timely updates in maintaining secure IT infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-patches-critical-vulnerability-in-secure-workload/",
-            "relatedResources": []
-        },
-        {
             "date": "May 22 2026",
             "headline": "First VPN Service Dismantled—25 Ransomware Groups Affected",
             "title": "Global Takedown of First VPN Service Used by Ransomware Groups",
@@ -85,33 +121,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 21 2026",
-            "headline": "Drupal Patches Critical CVE—Websites Vulnerable to Hacking",
-            "title": "Critical Drupal Vulnerability CVE-2026-9082 Patched to Prevent Exploits",
-            "content": "Drupal has addressed CVE-2026-9082, a highly critical vulnerability that could lead to information disclosure, privilege escalation, and remote code execution. This flaw, which can be exploited without authentication, posed significant risks to Drupal-powered websites. Administrators are strongly advised to implement the latest security updates to protect against potential attacks. The rapid response to this vulnerability reflects the ongoing challenges in securing open-source platforms against sophisticated cyber threats. Ensuring timely patching remains a crucial defense strategy for web administrators.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/drupal-patches-highly-critical-vulnerability-exposing-websites-to-hacking/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Microsoft Defender Flaws Exploited—Patch Urgently Needed",
-            "title": "Active Exploitation of Microsoft Defender Vulnerabilities CVE-2026-41091",
-            "content": "Microsoft has reported active exploitation of two vulnerabilities in its Defender software, including CVE-2026-41091, a privilege escalation flaw with a CVSS score of 7.8. Attackers exploiting this vulnerability could gain SYSTEM privileges, posing a serious threat to affected systems. The second flaw involves denial-of-service attacks, further compromising system integrity. Microsoft urges users to apply the latest patches to mitigate these risks. This incident highlights the critical importance of maintaining up-to-date security measures to protect against evolving threats in widely used security products.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Critical Drupal Core Flaw—PostgreSQL Sites at RCE Risk",
-            "title": "CVE-2026-9082: Critical Drupal Core Flaw Exposes PostgreSQL Sites",
-            "content": "Drupal has released updates for a critical vulnerability, CVE-2026-9082, affecting Drupal Core and exposing PostgreSQL-based sites to remote code execution (RCE) attacks. With a CVSS score of 6.5, this flaw allows attackers to execute arbitrary code, escalate privileges, and disclose sensitive information. Site administrators using PostgreSQL with Drupal are urged to apply the security updates immediately to prevent potential exploitation. This vulnerability underscores the importance of securing database-driven web applications against sophisticated cyber threats. Regular updates and security audits are essential for maintaining robust defenses.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/highly-critical-drupal-core-flaw.html",
-            "relatedResources": []
-        },
-        {
             "date": "May 22 2026",
             "headline": "Trend Micro Zero-Day Exploited—Patch Your Apex One Now",
             "title": "Trend Micro Addresses Apex One Zero-Day Vulnerability Exploited in the Wild",
@@ -128,18 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-sql-injection-flaw-now-targeted-in-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "FBI Shuts Down ‘First VPN’—Administrator Arrested",
-            "title": "‘First VPN’ Cybercrime Service Disrupted by FBI, Administrator in Custody",
-            "content": "The FBI has successfully disrupted the cybercrime service known as First VPN, which was utilized by numerous ransomware groups for network reconnaissance and intrusions. The service's administrator has been arrested, marking a significant blow to cybercriminal operations relying on this tool. First VPN provided anonymity and secure communication channels, aiding ransomware groups in evading detection. This operation highlights law enforcement's ongoing efforts to dismantle infrastructure supporting cybercrime. Organizations are reminded to enhance their network monitoring and threat intelligence capabilities to detect and respond to such threats effectively.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/first-vpn-cybercrime-service-disrupted-administrator-arrested/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 23 2026",
+            "headline": "Ferrari Partners with IBM AI to Boost F1 Fan Engagement",
+            "title": "Ferrari and IBM Leverage AI to Transform Formula 1 Fan Experience",
+            "content": "Ferrari is collaborating with IBM to enhance the Formula 1 fan experience using advanced artificial intelligence. The partnership aims to create \"superfans\" by personalizing content and interactions through IBM's AI capabilities. This initiative involves analyzing vast amounts of data to tailor experiences that deepen fan engagement and loyalty. The move reflects a broader trend in sports where teams and brands leverage AI to connect more deeply with their audiences. Fans can expect more immersive and interactive experiences as AI continues to redefine how sports are consumed.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Alibaba's Qwen3.7-Max—35-Hour Autonomous AI Agent Unveiled",
+            "title": "Alibaba's Qwen3.7-Max AI Agent Operates Autonomously for 35 Hours",
+            "content": "Alibaba has introduced Qwen3.7-Max, an AI model capable of operating autonomously for 35 hours, marking a significant advancement in AI technology. This model supports external harnesses like Anthropic's Claude Code, enabling it to plan, execute, and adjust complex tasks over extended periods. This development underscores the industry's shift towards the \"agent era,\" where AI systems perform beyond text generation to handle intricate, long-duration tasks. The implications are profound for industries reliant on continuous operations, such as logistics and customer service, where autonomous AI can enhance efficiency and reduce human intervention.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/alibabas-proprietary-qwen3-7-max-can-run-for-35-hours-autonomously-and-supports-external-harnesses-like-anthropics-claude-code",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "SpaceX IPO Filing Reveals $28 Trillion Market Ambition",
+            "title": "SpaceX's IPO Filing Highlights Ambitious $28 Trillion Market Potential",
+            "content": "SpaceX has filed for an initial public offering (IPO), revealing ambitious plans that extend beyond its rocket business. The S-1 filing outlines a $28 trillion total addressable market, with a compensation package linked to establishing a Mars colony. The document includes 36 pages of risk factors, reflecting the high stakes involved in SpaceX's ventures. This filing comes as the space industry sees increased interest from investors, driven by the potential for commercial space travel and satellite internet services. Stakeholders should closely monitor SpaceX's market entry, which could reshape the aerospace sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/spacex-files-to-go-public-and-the-math-requires-a-little-faith/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Samsung Chip Workers Secure $340K Bonuses Amid Strike Threat",
+            "title": "Samsung Semiconductor Employees Negotiate $340,000 Bonuses to Avert Strike",
+            "content": "Samsung has reached a tentative agreement with its semiconductor employees, averting a potential 18-day strike. The deal includes average annual bonuses of $340,000 for eligible workers, addressing concerns over the company's bonus cap. This negotiation highlights the growing tensions in the tech industry as employees demand better compensation amid record profits. The resolution is crucial for Samsung, ensuring continued production in its critical memory chip division. Industry observers note that such labor negotiations could set precedents for other tech companies facing similar workforce pressures.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/936002/samsung-memory-chip-employees-deal-strike-bonus",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "OpenAI Leads in Enterprise AI Coding—Gartner Report",
+            "title": "OpenAI Recognized as Leader in Enterprise AI Coding by Gartner",
+            "content": "OpenAI has been named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with its Codex platform highlighted for innovation and scalability. Codex, known for its ability to generate code from natural language prompts, is recognized for its enterprise-scale deployment capabilities. This accolade underscores OpenAI's position at the forefront of AI-driven software development, offering tools that enhance productivity and reduce coding time. Organizations leveraging Codex can expect improved efficiency in software development processes, aligning with the growing demand for AI integration in enterprise environments.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Virgin Atlantic Speeds App Launch with OpenAI's Codex",
+            "title": "Virgin Atlantic Utilizes Codex for Rapid Mobile App Deployment",
+            "content": "Virgin Atlantic has successfully launched a revamped mobile app using OpenAI's Codex, achieving near-total unit test coverage and zero P1 defects. The airline met its fixed holiday travel deadline by leveraging Codex's capabilities to streamline the development process. This case illustrates the practical benefits of AI in accelerating software delivery, particularly in high-stakes industries like aviation. By integrating Codex, Virgin Atlantic not only improved its app's reliability but also demonstrated the potential of AI to enhance operational efficiency and customer satisfaction.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/virgin-atlantic",
+            "relatedResources": []
+        },
         {
             "date": "May 23 2026",
             "headline": "Elon Musk's xAI Shifts Focus—Solar Power Abandoned",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Google has launched a new feature allowing Pixel users to transform their home screen icons into disco-ball designs. This update is part of Google's ongoing efforts to enhance user customization and engagement with its devices. The disco-ball icons are available through a simple update, offering a playful aesthetic change for users. While primarily a cosmetic update, it reflects Google's strategy to differentiate its products in a competitive smartphone market. Users interested in personalizing their devices can access this feature through the latest Pixel software update. This move underscores the trend towards greater user interface customization in tech products.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "AI Startups Inflate ARR—VCs Aware of Revenue Stretching",
-            "title": "VCs and Founders Inflate ARR Metrics in AI Startup Valuations",
-            "content": "Venture capitalists and AI startup founders are reportedly inflating annual recurring revenue (ARR) metrics to enhance company valuations. This practice involves stretching traditional revenue metrics, raising concerns about transparency and accuracy in financial reporting. Investors are aware of these inflated figures, which can mislead stakeholders about a startup's true financial health. The trend reflects the intense pressure on AI companies to demonstrate rapid growth in a competitive market. Industry professionals should exercise caution and conduct thorough due diligence when evaluating AI startups. This issue highlights the need for standardized financial reporting practices in the tech sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Google's AI Search Fails—Misinterprets Queries Like \"Disregard\"",
-            "title": "Google's AI Search Overview Misinterprets User Queries",
-            "content": "Google's AI Search Overviews are encountering issues, notably misinterpreting user queries such as \"disregard.\" Instead of providing a concise summary, the AI delivers responses akin to traditional chatbots, indicating a flaw in the system's understanding. This problem affects users relying on Google's AI for accurate search results, potentially leading to misinformation. The incident underscores the challenges in developing AI systems capable of nuanced language comprehension. Users are advised to verify AI-generated information with alternative sources. This development highlights the ongoing need for improvements in AI search technologies to ensure reliability and accuracy.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "SpaceX S-1 Reveals $1.75T IPO Ambitions—Mars Colony Tied",
-            "title": "SpaceX S-1 Filing Details $1.75 Trillion IPO and Mars Goals",
-            "content": "SpaceX has filed its S-1, revealing ambitious plans for a $1.75 trillion IPO, with a focus extending beyond rockets to a Mars colony. The filing includes 36 pages of risk factors and outlines a $28 trillion total addressable market. Elon Musk's compensation is tied to the establishment of a Mars colony, reflecting SpaceX's long-term vision. This IPO could significantly impact the aerospace industry and investor landscape, attracting attention from both sectors. Stakeholders should consider the implications of SpaceX's plans on future space exploration and market dynamics. The filing positions SpaceX as a leader in the commercial space race.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "AI Procurement Overlooks Specialization—Scale Isn't Always King",
-            "title": "Specialization in AI Procurement: A Crucial Yet Overlooked Strategy",
-            "content": "In the rapidly evolving landscape of AI procurement, a new analysis suggests that specialization often trumps scale, a factor frequently overlooked by decision-makers. While large-scale AI models like GPT-4 have dominated headlines, the study highlights that specialized models can offer superior performance in niche applications. This insight is crucial for organizations aiming to optimize their AI investments, as it challenges the prevailing notion that bigger is always better. By focusing on specialized AI solutions, companies can achieve more efficient and effective outcomes tailored to specific industry needs. This strategic shift could redefine procurement strategies across sectors, emphasizing the importance of aligning AI capabilities with organizational goals.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "AI-Authored Story Shakes Commonwealth Prize Tradition",
-            "title": "AI-Generated Story Raises Concerns in Commonwealth Short Story Prize",
-            "content": "The British literary magazine Granta has faced controversy after an AI-generated story was selected as a regional winner in the Commonwealth Short Story Prize. The piece, attributed to Jamir Nazir, titled \"The Serpent in the,\" has sparked debates about the role of AI in creative writing. This incident underscores the growing influence of AI in literature, raising questions about authenticity and the future of literary competitions. The inclusion of AI-generated content in such prestigious awards could challenge traditional notions of authorship and creativity. Literary organizations may need to establish clearer guidelines to address the implications of AI in storytelling.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/936073/ai-writing-granta-commonwealth-prize",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Spotify's AI Tool Sparks Debate Over Music Remixes",
-            "title": "Spotify's AI Remix Tool Raises Concerns Among Music Fans",
-            "content": "Spotify has introduced a new AI tool that enables users to create remixes of popular songs, intensifying the debate over AI's role in music. The tool has already led to a proliferation of AI-generated covers on platforms like YouTube and TikTok, including reggae versions of \"Smells Like Teen Spirit\" and country renditions of The Weeknd. Critics argue that these AI remixes disrespect original artists and dilute the quality of music. This trend highlights the tension between technological innovation and artistic integrity, prompting discussions about copyright and the ethical use of AI in the music industry. Musicians and rights holders may need to adapt to this evolving landscape.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/936072/spotify-umg-ai-music-remix-cover-superfan",
             "relatedResources": []
         }
     ],
