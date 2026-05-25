@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "edr-false-positives-soc-panic-2026",
+      "title": "The False Positive Paradox: Why EDRs Flag Genuine Processes",
+      "date": "May 25, 2026",
+      "category": "Threat Analysis",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "Technical analysis of why EDRs flag genuine developer tools and vulnerability scanners, and how SOC teams should react without panic.",
+      "image": "/images/articles/edr-false-positives-soc-panic-2026.png",
+      "externalUrl": "articles/edr-false-positives-soc-panic-2026.html",
+      "readTime": "10 min read",
+      "tags": [
+        "EDR",
+        "False Positives",
+        "SOC",
+        "CrowdStrike",
+        "Microsoft Defender",
+        "Incident Response"
+      ]
+    },
+    {
       "id": "github-cisa-leaks-2026",
       "title": "The May 2026 Git Leaks: Malicious VS Code Extensions and CISA's Exposed Secrets",
       "date": "May 20, 2026",

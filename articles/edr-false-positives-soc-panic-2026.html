@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Deep Dive: The False Positive Paradox - Why EDRs Flag Genuine Processes | TheHGTech</title>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The False Positive Paradox: Why EDRs Flag Genuine Processes">
+    <meta name="twitter:description" content="Technical analysis of why EDRs flag genuine developer tools and vulnerability scanners, and how SOC teams should react without panic. Research-grade intel.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/edr-false-positives-soc-panic-2026.png">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="TheHGTech">
+    <meta name="description"
+        content="Technical analysis of why EDRs flag genuine developer tools and vulnerability scanners, and how SOC teams should react without panic. Research-grade intel.">
+    <meta name="keywords"
+        content="CrowdStrike false positive, Microsoft Defender false positive, Nessus blocked by EDR, SOC panic, EDR heuristics, cybersecurity">
+    <meta name="author" content="Harish G">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/articles/edr-false-positives-soc-panic-2026.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/edr-false-positives-soc-panic-2026.html">
+    <meta property="og:title" content="The False Positive Paradox: Why EDRs Flag Genuine Processes">
+    <meta property="og:description"
+        content="Technical analysis of why EDRs flag genuine developer tools and vulnerability scanners, and how SOC teams should react without panic.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/edr-false-positives-soc-panic-2026.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Style System - FULL SET REQUIRED -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/mobile-nav.css">
+
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.js" defer></script>
+
+    <!-- ========== ANALYTICS (MANDATORY on every page) ========== -->
+    <!-- GA4 -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+    <!-- Fullres -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Mobile Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">
+            <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+                <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+                <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+            </a>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-header__btn" id="m-theme-toggle-top" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">37+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <div class="toggle-stars">
+                            <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/articles.html" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        <article>
+            <header class="article-header">
+                <div style="margin-bottom: 1rem;">
+                    <span class="badge badge-intel" style="background: var(--accent-cyan); color: #000; padding: 0.25rem 0.75rem; border-radius: 20px; font-weight: 600; font-size: 0.75rem;"><i class="fas fa-microscope"></i> Threat Analysis</span>
+                </div>
+                <h1 style="font-size: 2.2rem; background: linear-gradient(135deg, var(--accent-cyan), #FF3D3D); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; line-height: 1.3;">The False Positive Paradox: Why EDRs Flag Genuine Processes (and How SOCs Should React)</h1>
+                <div class="meta-info" style="display: flex; gap: 1rem; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                    <span><i class="far fa-calendar-alt"></i> May 25, 2026</span>
+                    <span><i class="fas fa-clock"></i> 10 min read</span>
+                    <span><i class="fas fa-user"></i> Harish G, TheHGTech Security Team</span>
+                </div>
+            </header>
+
+            <img src="/images/articles/edr-false-positives-soc-panic-2026.png"
+                alt="Realistic SOC analyst in panic looking at red alerts on monitors"
+                class="featured-image" style="width: 100%; border-radius: 12px; margin: 2rem 0; border: 1px solid rgba(255, 255, 255, 0.1);" loading="lazy">
+
+            <div class="info-box" style="background: rgba(0, 217, 255, 0.08); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+                <strong><i class="fas fa-lightbulb"></i> Executive Summary</strong>
+                <p style="margin-top: 0.5rem; color: var(--text-secondary);">
+                    <strong>BLUF:</strong> As EDR and AV tools shift from signature-based detection to aggressive behavioral heuristics, false positives are no longer rare anomalies. Recent high-profile incidents involving CrowdStrike, Microsoft Defender, and Nessus highlight a growing operational challenge for Security Operations Centers (SOCs).<br><br>
+                    <strong>Confidence Level:</strong> Confirmed. <br>
+                    <strong>TLP:</strong> CLEAR.<br><br>
+                    <small><em>This analysis is based on recent telemetry and vendor disclosures as of May 2026; details may evolve.</em></small>
+                </p>
+            </div>
+
+            <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                It’s 3:00 AM on a Saturday. PagerDuty triggers a P1 critical alert: multiple endpoints across your engineering environment are experiencing process terminations and heuristic blocks. The culprit? A vulnerability scanner (like Tenable Nessus) or a routine developer workflow (<code>git push</code>). The SOC drops everything, suspecting a massive supply chain breach. Hours later, the dust settles—it was a false positive.
+            </p>
+
+            <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                False positives from tools like CrowdStrike, Defender, and SentinelOne are not bugs—they are often the tools working exactly as designed. Instead of complaining about EDR noise, SOCs need to understand <em>why</em> the heuristic engines behave this way and how to respond systematically instead of reacting with panic.
+            </p>
+
+            <h2 style="color: var(--accent-cyan); margin: 2.5rem 0 1rem; font-size: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);"><i class="fas fa-bolt"></i> 1. The Incidents: When Defenders Clash with Defense</h2>
+            
+            <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                The last six months have seen several high-profile incidents where major EDR/AV solutions aggressively flagged genuine processes, causing massive alert fatigue.
+            </p>
+
+            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary);">
+                <li style="margin-bottom: 0.5rem;"><strong>CrowdStrike vs. Tenable Nessus (Late May 2026):</strong> CrowdStrike Falcon actively blocked and terminated legitimate Nessus PowerShell scripts checking for the "Miniplasma" zero-day. Vulnerability scans were killed mid-flight, triggering mass alerts.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>CrowdStrike vs. GitHub Assets (March 2026):</strong> A widespread false positive where routine DNS resolutions to <code>release-assets.githubusercontent.com</code> triggered critical Indicator of Compromise (IOC) alerts, briefly halting CI/CD pipelines as SOC teams scrambled to isolate developer machines.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Microsoft Defender vs. DigiCert (Early May 2026):</strong> In response to a DigiCert security incident, Microsoft pushed an aggressive signature update aiming to catch compromised certificates. Instead, Defender flagged legitimate DigiCert root certificates as <code>Trojan:Win32/Cerdigent.A!dha</code>, removing them from the Windows trust store and breaking corporate applications.</li>
+            </ul>
+
+            <img src="/images/articles/edr-false-positives-clash.png"
+                alt="Clash between blue security shield and green developer code representing false positive"
+                style="width: 100%; border-radius: 8px; margin: 1.5rem 0; border: 1px solid rgba(255, 255, 255, 0.1);" loading="lazy">
+
+            <h2 style="color: var(--accent-cyan); margin: 2.5rem 0 1rem; font-size: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);"><i class="fas fa-cogs"></i> 2. Under the Hood: Why Heuristic Engines Overreact</h2>
+            
+            <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                Explain the technical reality of why EDRs flag legitimate tools. Security tools are not broken; they are hyper-vigilant.
+            </p>
+
+            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary);">
+                <li style="margin-bottom: 0.5rem;"><strong>Behavioral Parity (Scanner vs. Attacker):</strong> When Nessus scans a network for a vulnerability, it often executes the exact same WMI queries, PowerShell commands, and port sweeps that a threat actor or ransomware strain would use during lateral movement. To a behavioral engine, a match is a match.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Supply Chain Hyper-Sensitivity:</strong> In a post-SolarWinds and post-XZ Utils world, attackers love hiding in developer environments. Consequently, EDRs now aggressively monitor developer tools like Git, compilers, and CI/CD runners.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>The "Catch Rate" Trade-off During Zero-Days:</strong> When a massive vulnerability is announced, EDR vendors immediately dial up their sensitivity rules. They intentionally prioritize a high "catch rate" over the operational inconvenience of a false positive.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Packed & Obfuscated Binaries:</strong> Many legitimate developer tools use packers to compress their binaries. EDRs inherently distrust packed executables because malware authors use the exact same techniques to evade detection.</li>
+            </ul>
+
+            <div class="technical-box" style="background: #111; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1.5rem; margin: 2rem 0;">
+                <h3 style="color: #00D9FF; margin-top: 0;"><i class="fas fa-code"></i> Example Detection Logic</h3>
+                <p style="color: var(--text-secondary);">Why Nessus triggers EDR behaviors during a scan:</p>
+                <pre style="background: #0d1117; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1rem; overflow-x: auto; margin: 1rem 0;"><code class="language-python" style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #10b981;"># Pseudo-logic of an EDR Behavioral Rule
+if (Process.Name == "powershell.exe" and 
+    Process.CommandLine.Contains("-EncodedCommand") and 
+    ParentProcess.IsUnrecognizedNetworkAgent()):
+    # Attacker lateral movement... OR just Nessus scanning remotely.
+    Trigger.CriticalAlert("Suspected Remote Code Execution via PowerShell")
+    Action.TerminateProcessHierarchy()</code></pre>
+            </div>
+
+            <h2 style="color: var(--accent-cyan); margin: 2.5rem 0 1rem; font-size: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);"><i class="fas fa-exclamation-triangle"></i> 3. The Anatomy of SOC Panic</h2>
+            
+            <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                What happens operationally and psychologically when SOCs react poorly to these alerts?
+            </p>
+
+            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-secondary);">
+                <li style="margin-bottom: 0.5rem;"><strong>Alert Fatigue & The "Boy Who Cried Wolf":</strong> When analysts spend 8 hours clearing 500 benign alerts generated by a routine Nessus scan or a Git deployment, they become desensitized. If a real PowerShell threat hides within that noise, the fatigued analyst is likely to bulk-close it.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Business Interruption:</strong> Uncoordinated, panic-driven responses—such as instantly isolating developer laptops off the network because a GitHub domain triggered an alert—disrupt engineering velocity and damage trust.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>The Danger of Knee-Jerk Exclusions:</strong> In the heat of a false-positive storm, panicked IT admins often implement the most dangerous "fix": blanket whitelisting. Excluding an entire directory like <code>C:\Program Files\Tenable\</code> creates massive, unmonitored blind spots for attackers to leverage.</li>
+            </ul>
+
+            <h2 style="color: var(--accent-cyan); margin: 2.5rem 0 1rem; font-size: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);"><i class="fas fa-shield-alt"></i> 4. The Strategic Playbook: Taming the Noise</h2>
+
+            <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                Actionable, step-by-step advice for security operations teams to handle aggressive EDRs without compromising security.
+            </p>
+
+            <img src="/images/articles/edr-mutual-trust.png"
+                alt="Glowing green connection showing mutual trust between vulnerability scanner and EDR"
+                style="width: 100%; border-radius: 8px; margin: 1.5rem 0; border: 1px solid rgba(255, 255, 255, 0.1);" loading="lazy">
+
+            <div class="success-box" style="background: rgba(16, 185, 129, 0.08); border-left: 4px solid #10b981; padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+                <strong style="color: var(--text-primary);"><i class="fas fa-check-circle" style="color: #10b981;"></i> THE RESPONSE PLAYBOOK:</strong>
+                <ul style="margin-left: 1.5rem; margin-bottom: 0; margin-top: 1rem; color: var(--text-secondary);">
+                    <li style="margin-bottom: 0.5rem;"><strong>Step 1: Contextualize Before Escalating.</strong> Check the telemetry. Did <code>git.exe</code> launch from a known developer machine during normal hours? Context is the antidote to panic.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Step 2: Mutual Security Tool Trust.</strong> Security tools will attack each other if not properly introduced. Add your verified vulnerability scanners (like Nessus) to your primary AV/EDR's exclusion scanning list so some routine alerts can be suppressed. <br><em><small>Note: Reach out to your security vendors to get the exact process information and start adding them safely.</small></em></li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Step 3: Surgical Exclusions, Not Blanket Allow-Lists.</strong> Never exclude whole folders. Use highly targeted parameters (e.g., specific file hashes, strict command-line argument matches, or Machine Learning exclusions).</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Step 4: Verify Against Vendor Intelligence.</strong> Check vendor portals (CrowdStrike Technical Alerts, Microsoft WDSI) immediately. High-profile false positives are usually acknowledged within 1–2 hours.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Step 5: Cross-Team Communication.</strong> Maintain a direct channel between the SOC, Vulnerability Management, and Engineering to anticipate scan noise.</li>
+                </ul>
+            </div>
+
+            <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                <strong>Conclusion:</strong> EDRs are hyper-vigilant by necessity. A false positive on a vulnerable process isn't a failure—it is proof that the behavioral engine is watching the right things. SOCs must treat these alerts not as "tool failures" but as expected operational friction. By establishing mutual tool trust, building robust triage processes, and communicating with engineering, teams can handle the noise without losing their edge.
+            </p>
+
+            <!-- Required Interaction Bar -->
+            <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); color: var(--text-secondary);">
+                <p><strong>Author:</strong> Harish G</p>
+                <p><strong>Published:</strong> May 25, 2026</p>
+                <p><strong>Last Updated:</strong> May 25, 2026</p>
+            </div>
+        </article>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
+            </div>
+        </div>
+
+        <footer style="margin-top: 3rem;">
+            <p style="text-align: center; color: var(--text-secondary); padding: 2rem;">&copy; <script>document.write(new Date().getFullYear())</script> TheHGTech. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

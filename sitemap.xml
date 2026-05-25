@@ -3,6 +3,16 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
+        <loc>https://thehgtech.com/articles/edr-false-positives-soc-panic-2026.html</loc>
+        <lastmod>2026-05-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.99</priority>
+        <image:image>
+            <image:loc>https://thehgtech.com/images/articles/edr-false-positives-soc-panic-2026.png</image:loc>
+            <image:title>The False Positive Paradox: Why EDRs Flag Genuine Processes</image:title>
+        </image:image>
+    </url>
+    <url>
         <loc>https://thehgtech.com/guides/windows-vs-macos-endpoint-security-2026.html</loc>
         <lastmod>2026-05-22</lastmod>
         <changefreq>monthly</changefreq>
