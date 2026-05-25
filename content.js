@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 25 2026",
+            "headline": "Linux Flaws and Defender 0-Days—Security Chaos Ensues",
+            "title": "Weekly Recap: Linux Vulnerabilities and Microsoft Defender 0-Day Exploits",
+            "content": "This week in cybersecurity, a series of vulnerabilities have been unearthed, including critical flaws in Linux systems and zero-day exploits targeting Microsoft Defender. These issues have forced companies to scramble, revisiting outdated systems and unpatched servers. The vulnerabilities highlight the persistent challenges in maintaining secure infrastructures, especially when legacy systems are involved. Security professionals are urged to conduct thorough audits of their systems, ensure all patches are up to date, and remain vigilant against potential exploitation. The ongoing issues underscore the importance of proactive security measures in an increasingly complex threat landscape.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-linux-flaws-defender-0.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "Oncology Institute Breach—Patient Data at Risk",
+            "title": "Oncology Institute Reports Data Breach Potentially Involving TriZetto Vendor",
+            "content": "The Oncology Institute has disclosed a data breach involving a third-party vendor, with TriZetto speculated as a potential source. The breach has raised concerns over patient data security, as sensitive information may have been compromised. While the exact impact remains under investigation, healthcare organizations are reminded of the critical need for robust third-party risk management. This incident highlights the vulnerabilities within the healthcare sector's supply chain, emphasizing the necessity for stringent data protection measures. Organizations should review their vendor management practices to mitigate similar risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/oncology-institute-discloses-third-party-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "Ghost CMS Flaw Exploited—700+ Sites Hijacked",
+            "title": "CVE-2026-26980 Exploited to Compromise Over 700 Ghost CMS Sites",
+            "content": "A critical SQL injection vulnerability, CVE-2026-26980, in Ghost CMS has been actively exploited, compromising over 700 websites. Threat actors have injected malicious JavaScript to conduct ClickFix attacks, aiming to manipulate web traffic for fraudulent purposes. With a CVSS score of 9.4, this vulnerability poses a severe risk to affected sites, necessitating immediate action from administrators. The exploitation underscores the importance of timely patching and monitoring for unusual activity. Users of Ghost CMS should apply the latest security updates and review their systems for signs of compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/ghost-cms-cve-2026-26980-exploited-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "Richmond Radiology Breach—266,000 Patients Affected",
+            "title": "Data Breach at Radiology Associates of Richmond Impacts 266,000 Patients",
+            "content": "Radiology Associates of Richmond has suffered a data breach, resulting in the theft of files containing names and protected health information of 266,000 individuals. The breach highlights the ongoing risks faced by healthcare organizations in protecting sensitive patient data. As threat actors continue to target the healthcare sector, entities must prioritize cybersecurity measures to safeguard against such intrusions. Affected individuals should be vigilant for signs of identity theft and consider monitoring their credit reports. Healthcare providers are urged to enhance their security protocols to prevent future breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/266000-affected-by-data-breach-at-radiology-associates-of-richmond/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "Mythos Detects 23,000 Vulnerabilities in OSS Projects",
+            "title": "Anthropic's Mythos Uncovers 23,000 Vulnerabilities Across Open Source Projects",
+            "content": "Anthropic's Mythos tool has identified 23,000 potential vulnerabilities across 1,000 open-source software (OSS) projects, with many confirmed as critical or high-severity. This discovery underscores the pervasive security challenges within the OSS ecosystem, where vulnerabilities can have widespread implications. Developers and maintainers are encouraged to prioritize vulnerability assessments and apply necessary patches promptly. The findings highlight the need for continuous security monitoring and the adoption of best practices in software development. Organizations relying on OSS should ensure robust security measures are in place to mitigate risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/anthropic-mythos-detected-23000-potential-vulnerabilities-across-1000-oss-projects/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "Megalodon Attack—5,500 GitHub Repos Compromised",
+            "title": "Megalodon Supply Chain Attack Infects Over 5,500 GitHub Repositories",
+            "content": "A sophisticated supply chain attack, dubbed \"Megalodon,\" has compromised over 5,500 GitHub repositories. Attackers injected fake automated commits into GitHub Actions workflows, deploying payloads designed to steal credentials, continuous integration (CI) secrets, keys, and tokens. This incident highlights the vulnerabilities within software supply chains and the potential for widespread impact. Developers using GitHub are advised to review their repositories for unauthorized changes and enhance their security practices. The attack serves as a stark reminder of the importance of securing CI/CD pipelines against unauthorized access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/over-5500-github-repositories-infected-in-megalodon-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
             "date": "May 24 2026",
             "headline": "Ghost CMS SQL Flaw Exploited—ClickFix Campaign Unleashed",
             "title": "Ghost CMS Vulnerability CVE-2026-26980 Exploited in ClickFix Campaign",
@@ -19,42 +73,6 @@ const websiteContent = {
             "content": "Anthropic's Project Glasswing has identified over 10,000 high- or critical-severity vulnerabilities in widely used software since its launch last month. Leveraging the capabilities of Claude Mythos AI, this initiative focuses on software deemed systemically important across various industries. The findings highlight the pervasive security challenges in critical software infrastructure, underscoring the need for continuous vulnerability assessment. Organizations using affected software should prioritize patch management and vulnerability scanning to protect against potential exploitation. This initiative marks a significant advancement in proactive cybersecurity measures.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Operation Saffron Dismantles VPN Used by 25 Ransomware Groups",
-            "title": "Global Takedown of Criminal VPN Service in Operation Saffron",
-            "content": "Authorities in Europe and North America have dismantled a criminal VPN service, First VPN, used by 25 ransomware groups to obscure attack origins. Codenamed Operation Saffron, this effort targeted the infrastructure facilitating ransomware, data theft, and denial-of-service attacks. The takedown disrupts a critical tool for cybercriminals, potentially reducing the operational capabilities of these groups. Security professionals should remain vigilant for shifts in attack patterns as threat actors adapt to this disruption. This operation underscores the importance of international collaboration in combating cybercrime.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/first-vpn-dismantled-in-global-takedown.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Drupal Vulnerability CVE-2026-9082 Targeted by Hackers",
-            "title": "Exploitation Attempts Surge for Drupal Vulnerability CVE-2026-9082",
-            "content": "Shortly after its disclosure, CVE-2026-9082, a vulnerability in Drupal, is being actively targeted by hackers. Security firms report attacks against thousands of websites, exploiting this flaw to gain unauthorized access. This vulnerability affects Drupal versions prior to the latest security release, posing a significant threat to websites that have not yet been updated. Administrators should prioritize applying the available patches to protect against potential data breaches and service disruptions. The rapid exploitation highlights the need for timely vulnerability management in open-source platforms.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/drupal-vulnerability-in-hacker-crosshairs-shortly-after-disclosure/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Trend Micro Patches Apex One Zero-Day Exploited in Attacks",
-            "title": "Apex One Zero-Day Vulnerability Addressed by Trend Micro",
-            "content": "Trend Micro has released a patch for a zero-day vulnerability in its Apex One security solution, which was being exploited in the wild. This flaw affected Windows systems, allowing attackers to execute arbitrary code and compromise affected machines. The vulnerability underscores the critical nature of maintaining up-to-date security software to prevent exploitation. Organizations using Apex One should apply the patch immediately to mitigate potential risks. This incident highlights the ongoing challenges in securing endpoint protection solutions against sophisticated threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trend-micro-warns-of-apex-one-zero-day-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Critical SQL Injection Flaw in Drupal Under Attack",
-            "title": "Drupal Faces Attacks on Critical SQL Injection Vulnerability",
-            "content": "Drupal is warning of active exploitation attempts against a critical SQL injection vulnerability disclosed earlier this week. This flaw, affecting all unpatched versions of Drupal, allows attackers to execute arbitrary SQL commands, potentially leading to data breaches and system compromise. The vulnerability is classified as \"highly critical,\" emphasizing the urgency for administrators to apply security updates. The attacks reflect a broader trend of targeting open-source platforms for vulnerabilities shortly after disclosure. Prompt patching and monitoring are essential to safeguard against these threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-sql-injection-flaw-now-targeted-in-attacks/",
             "relatedResources": []
         },
         {
@@ -123,6 +141,60 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "May 25 2026",
+            "headline": "Pope's AI Encyclical—A Call to Address Power Imbalances",
+            "title": "Pope Leo XIV's AI Encyclical Tackles Power and Democracy Issues",
+            "content": "Pope Leo XIV's first encyclical, while framed around artificial intelligence (AI), primarily addresses longstanding societal challenges such as concentrated power and the erosion of democratic principles. The document critiques how a technology elite is shaping global dynamics to its advantage, using AI as a lens to highlight these issues. By focusing on the ethical implications of technological advancements, the pope urges a reevaluation of how power is distributed in the digital age. This encyclical serves as a reminder to tech leaders and policymakers to consider the broader societal impacts of AI. The document calls for a more equitable approach to technology governance, emphasizing the need for inclusive and democratic frameworks.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "Pope Leo Warns—AI Risks to Human Dignity",
+            "title": "Pope Leo XIV Advocates for Humanity Amidst AI Advancements",
+            "content": "In his inaugural papal document, \"Magnifica Humanitas,\" Pope Leo XIV addresses the profound implications of artificial intelligence on human dignity. Released on Monday, the manifesto warns against the unchecked power of AI technologies and their potential to undermine human values. The pope emphasizes the importance of safeguarding the human person in the face of rapid technological change, highlighting the ethical challenges posed by AI-driven systems. This call to action urges developers and tech leaders to prioritize human-centric design and ethical considerations in AI development. The document underscores the necessity for a balanced approach that respects human dignity while embracing technological progress.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "Last Call—Apply for Startup Battlefield 200 by May 27",
+            "title": "Startup Battlefield 200 Deadline Approaches: Apply for $100K and Visibility",
+            "content": "The application window for Startup Battlefield 200, a premier platform for emerging tech companies, is closing on May 27. This opportunity offers startups a chance to compete for $100,000, gain valuable venture capital access, and receive global visibility through TechCrunch coverage. Participants will benefit from networking with industry leaders and showcasing their innovations on a prominent stage. The event is a critical opportunity for startups aiming to accelerate their growth and secure funding. Interested parties are encouraged to apply promptly to avoid missing out on this unique platform for innovation and recognition.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "AI Terminology—Clarifying 'Harness' and 'Scaffold'",
+            "title": "Understanding Key AI Terms: Harness, Scaffold, and AI Agents",
+            "content": "The AI community is urged to standardize terminology around concepts like \"harness,\" \"scaffold,\" and \"AI agents\" to enhance clarity and communication. These terms, often used interchangeably, have distinct meanings that are crucial for precise discourse in AI development. \"Harness\" refers to the integration of AI capabilities into existing systems, while \"scaffold\" denotes the framework supporting AI model training and deployment. Understanding these distinctions is vital for developers and researchers to effectively collaborate and innovate. As AI technologies evolve, clear and consistent terminology will facilitate better understanding and advancement in the field.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/agent-glossary",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "Save $410—TechCrunch Disrupt 2026 Early Bird Ends Soon",
+            "title": "Last Chance for Early Bird Discounts on TechCrunch Disrupt 2026 Passes",
+            "content": "Tech professionals and enthusiasts have until May 29 at 11:59 p.m. PT to secure early bird discounts for TechCrunch Disrupt 2026 in San Francisco. Attendees can save up to $410 on passes, gaining access to a premier event featuring industry leaders, groundbreaking startups, and insightful discussions. This annual conference is a hub for networking, learning, and exploring the latest trends in technology and innovation. Participants are encouraged to register now to take advantage of the savings and ensure their place at this influential gathering. The event promises valuable insights and opportunities for collaboration across the tech sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/25/5-days-left-save-up-to-410-on-techcrunch-disrupt-2026-passes-before-prices-increase/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Inflated ARR—VCs and Founders Boost AI Startup Valuations",
+            "title": "AI Startups Inflate ARR Metrics to Attract Investment",
+            "content": "A growing trend among AI startups involves inflating annual recurring revenue (ARR) metrics to enhance their appeal to investors. This practice, while boosting perceived valuation, raises concerns about transparency and long-term sustainability. Venture capitalists (VCs) are reportedly aware of these inflated figures but continue to support startups based on potential growth and innovation. The manipulation of traditional revenue metrics highlights the competitive pressures in the AI sector, where securing funding is crucial for development and scaling. Stakeholders are advised to scrutinize financial disclosures carefully and consider the broader implications of such practices on market integrity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
+            "relatedResources": []
+        },
+        {
             "date": "May 24 2026",
             "headline": "Google Faces AI Security Challenges Amid Industry Transition",
             "title": "Google and Industry Grapple with Real-Time AI Security Challenges",
@@ -132,48 +204,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 21 2026",
-            "headline": "Alibaba's Qwen3.7-Max: 35-Hour Autonomous AI Agent",
-            "title": "Alibaba's Qwen3.7-Max AI Model Enhances Autonomous Task Execution",
-            "content": "Alibaba's Qwen Team has unveiled Qwen3.7-Max, an AI model capable of operating autonomously for up to 35 hours, marking a significant milestone in the \"agent era\" of AI. This model supports external harnesses such as Anthropic's Claude Code, allowing it to plan, execute, and adjust complex tasks over extended periods. This advancement underscores a shift from traditional text generation to more dynamic, task-oriented AI applications. Organizations leveraging such models can expect enhanced operational efficiency but must also consider the security implications of extended autonomous operations. Staying updated on AI capabilities and security measures is crucial for developers and tech leaders.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/alibabas-proprietary-qwen3-7-max-can-run-for-35-hours-autonomously-and-supports-external-harnesses-like-anthropics-claude-code",
-            "relatedResources": []
-        },
-        {
             "date": "May 23 2026",
             "headline": "Nemotron-Labs Aims for Instant Text with Diffusion Models",
             "title": "Nemotron-Labs Develops Diffusion Language Models for Faster Text Generation",
             "content": "Nemotron-Labs is pushing the boundaries of text generation speed with its diffusion language models, aiming for near-instantaneous output. These models leverage advanced diffusion techniques to enhance processing speeds, potentially revolutionizing real-time applications in natural language processing. The development is part of a broader trend towards optimizing AI models for efficiency and responsiveness. For developers and tech leaders, integrating such cutting-edge models could significantly improve user experiences and operational capabilities. However, understanding the underlying technology and its implications for system performance and security remains essential.",
             "source": "Hugging Face - Blog",
             "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "AI Reconstructs Voices of Deceased Pilots from Cockpit Recordings",
-            "title": "AI Utilized to Recreate Voices of Dead Pilots from Spectrograms",
-            "content": "AI technology has been employed to reconstruct the voices of deceased pilots using spectrogram images of cockpit recordings, prompting the National Transportation Safety Board (NTSB) to temporarily restrict access to its docket system. This innovative use of AI raises ethical and privacy concerns, as well as potential implications for forensic investigations. The ability to recreate voices from audio data could transform how historical and investigative audio records are analyzed. Security professionals and policymakers must consider the ramifications of such technology on privacy and data protection.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Google Introduces Disco-Ball Icons for Pixel Home Screens",
-            "title": "Google Adds Disco-Ball Icons to Pixel Devices for Customization",
-            "content": "Google has launched a new feature allowing Pixel device users to customize their home screens with disco-ball icons, adding a playful element to the user interface. This update reflects Google's ongoing efforts to enhance user personalization options across its products. While the feature is primarily aesthetic, it highlights the company's focus on user engagement and satisfaction. For developers, this trend towards increased customization may influence future app design and user interface considerations. Staying abreast of such updates can inform design strategies and user experience enhancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Google's AI Update Breaks Search for 'Disregard'",
-            "title": "Google Search AI Update Disables Queries for 'Disregard'",
-            "content": "Following a recent AI update to Google Search, the word \"disregard\" now disrupts the search interface, effectively rendering it unusable for such queries. This unexpected glitch highlights the complexities involved in integrating AI into search algorithms, where even minor updates can lead to significant user experience issues. The impact is primarily on users attempting to search for this specific term, underscoring the need for rigorous testing and validation in AI deployments. Developers and tech leaders should monitor such developments to anticipate potential disruptions and ensure robust system performance.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/you-can-no-longer-google-the-word-disregard/",
             "relatedResources": []
         },
         {
