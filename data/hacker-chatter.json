@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-05-26T06:30:42.888103",
-  "total_incidents": 28310,
+  "last_updated": "2026-05-26T17:42:36.479471",
+  "total_incidents": 28316,
   "incidents": [
+    {
+      "id": "krybit_ctps.tp.edu.tw",
+      "victim_name": "ctps.tp.edu.tw",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-05-26T13:53:14.047516+00:00",
+      "industry": "Education",
+      "website": "ctps.tp.edu.tw",
+      "claim": "ctps.tp.edu.tw — Taiwanese Public Elementary School\n\nctps.tp.edu.tw is the official website of 臺北市南港區成...",
+      "screenshot": "https://images.ransomware.live/victims/518586a68f3172a6356feea2b95a75ea.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/b4a7f8a258b93ba3de493134d47355ffb5b1247dc32f06d17d036c2fab17c457/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_hamister_group",
+      "victim_name": "Hamister Group",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-05-26T12:55:07.138858+00:00",
+      "industry": "Business Services",
+      "website": "www.hamistergroup.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/b0c43855a51886e9d19fa0559538295d.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=3a5f1ef5-7aec-4f4e-8f12-f36f57f7008c",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_sunrise,_toscana_country_club,andalusia_country_club.",
+      "victim_name": "Sunrise, Toscana Country Club,Andalusia Country Club.",
+      "threat_actor": "akira",
+      "date_discovered": "2026-05-26T12:50:15.706395+00:00",
+      "industry": "Hospitality and Tourism",
+      "website": "",
+      "claim": "Sunrise Company is a renowned real estate developer and builder specializing in resort and golf\ncourse communities. Established in 1963, the company has developed over 16,000 homes and condo\nminiums, along with creating multiple resort hotels and commercial structures. \n\nToscana Country Club is a luxury private equity club and residential community located in India\nn Wells, California, offering an exceptional lifestyle amidst beautiful olive and cypress lands\ncapes.\n\nAndalusia Country Club is a luxurious community near Palm Springs, offering distinctive golf co\nurse homes and a premier country club experience.\n\nWe will upload 13gb of corporate data of the above mentioned entities. Employee personal inform\nation including family of the CEO (passports, DLs, death records and so on), contracts and agre\nements, detailed financials, clients information, projects, etc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nova_sandox_info",
+      "victim_name": "sandox info",
+      "threat_actor": "nova",
+      "date_discovered": "2026-05-26T10:26:32.341262+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "since the site down after the attack, we didn't get much OSINT about it, sandox.info, Nova Provide tree and samples from stolen data to the company when its get in touch with support department.",
+      "screenshot": "https://images.ransomware.live/victims/f14a58d107760b496d6f81c58d636711.png",
+      "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/sandox-info",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nova_eriell",
+      "victim_name": "Eriell",
+      "threat_actor": "nova",
+      "date_discovered": "2026-05-26T10:26:06.281654+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "ERIELL Group RU specializes in providing oil and gas engineering services. The company focuses on advanced drilling solutions and offers a range of services tailored to the energy sector. Its clients include various oil and gas companies seeking innovative drilling technologies and operational enhancements. Established in 2014, ERIELL Group has expanded its workforce and capabilities to serve clients effectively - Nova Provide tree and samples from stolen data to the company when its get in touch with support department.",
+      "screenshot": "https://images.ransomware.live/victims/3eaa6399bda9f18114301fc4a1ed87d7.png",
+      "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/eriell",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lamashtu_h-w-g_&_acros_sport",
+      "victim_name": "H-W-G & Acros Sport",
+      "threat_actor": "lamashtu",
+      "date_discovered": "2026-05-26T08:22:58.976912+00:00",
+      "industry": "Consumer Services",
+      "website": "h-w-g.com",
+      "claim": "HWG (h-w-g.com): German manufacturer of bearings and mechanical components for industrial machinery and automation.\r\nAcros Components (acros-components.com): Distributor and supplier of electronic components and related logistics/technical support.",
+      "screenshot": "https://images.ransomware.live/victims/b7e27dbd71a2272c91c9cf78f17e1300.png",
+      "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/43f1975a183ce59f91589cd160602c8f",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "spacebears_base_spa",
       "victim_name": "BASE SPA",
