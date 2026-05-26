@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 25 2026",
+            "headline": "TrapDoor Attack Hits npm, PyPI, Crates.io—Steals Credentials",
+            "title": "TrapDoor Supply Chain Attack Targets npm, PyPI, and Crates.io with Malware",
+            "content": "A sophisticated software supply chain attack, dubbed TrapDoor, has been identified targeting npm, PyPI, and Crates.io repositories to distribute credential-stealing malware. This campaign involves over 34 malicious packages across more than 384 versions, with initial activity traced back to May 22, 2026. The malware aims to compromise developers' systems by stealing sensitive credentials, posing a significant threat to the integrity of software projects and their users. This attack underscores the growing vulnerability of open-source ecosystems to supply chain threats. Developers are urged to scrutinize package dependencies and employ security tools to detect and mitigate such threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/trapdoor-supply-chain-attack-spreads.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Operation Saffron Dismantles VPN Used by 25 Ransomware Gangs",
+            "title": "First VPN Service Dismantled in Global Crackdown on Ransomware Operations",
+            "content": "In a major international law enforcement effort, authorities have dismantled a VPN service known as First VPN, which was used by at least 25 ransomware groups to obscure their activities. Operation Saffron, conducted by agencies in Europe and North America, targeted the infrastructure that facilitated ransomware, data theft, and denial-of-service attacks. The takedown is a significant blow to cybercriminals who rely on anonymizing services to evade detection. This action highlights the critical role of VPNs in cybercrime and the ongoing efforts to disrupt criminal networks. Security professionals should remain vigilant and consider the implications of VPN misuse in their threat models.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/first-vpn-dismantled-in-global-takedown.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Drupal CVE-2026-9082 Exploited—Thousands of Sites at Risk",
+            "title": "Drupal Vulnerability CVE-2026-9082 Actively Exploited Following Disclosure",
+            "content": "Drupal has issued a warning regarding active exploitation attempts against CVE-2026-9082, a recently disclosed vulnerability. Security firms have detected attacks targeting thousands of websites, emphasizing the urgency for administrators to apply patches. This vulnerability allows attackers to compromise Drupal sites, potentially leading to data breaches and unauthorized access. The rapid targeting of this flaw post-disclosure highlights the need for prompt vulnerability management and patch application. Drupal users are advised to update their installations immediately to mitigate potential risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/drupal-vulnerability-in-hacker-crosshairs-shortly-after-disclosure/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Apex One Zero-Day Exploited—Trend Micro Issues Fix",
+            "title": "Trend Micro Addresses Apex One Zero-Day Vulnerability Exploited in the Wild",
+            "content": "Trend Micro has released a fix for a zero-day vulnerability in its Apex One security solution, which has been actively exploited in attacks on Windows systems. This vulnerability allowed attackers to execute arbitrary code, posing a significant risk to affected systems. The exploitation of this zero-day highlights the persistent targeting of security software by threat actors. Trend Micro customers are strongly encouraged to apply the latest updates to protect their systems from potential compromise. This incident underscores the importance of maintaining up-to-date security solutions to defend against emerging threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trend-micro-warns-of-apex-one-zero-day-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Critical SQL Injection in Drupal—Hackers Exploit Flaw",
+            "title": "Drupal Faces Attacks on Critical SQL Injection Vulnerability",
+            "content": "Drupal has alerted users to active exploitation attempts against a \"highly critical\" SQL injection vulnerability disclosed earlier this week. This flaw allows attackers to manipulate database queries, potentially leading to data breaches and unauthorized access to sensitive information. The targeting of this vulnerability underscores the ongoing threat landscape facing web applications. Drupal site administrators are urged to implement the latest security patches to safeguard their systems against these attacks. The incident highlights the critical need for timely patch management in maintaining web application security.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-sql-injection-flaw-now-targeted-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Chromium Flaw Exposed—Google Leaks Unfixed Vulnerability Details",
+            "title": "Google Accidentally Reveals Unfixed Chromium Flaw Allowing Remote Code Execution",
+            "content": "Google has inadvertently disclosed details of an unfixed vulnerability in Chromium that allows JavaScript to continue running in the background even after the browser is closed. This flaw could enable remote code execution on affected devices, posing a significant security risk. The accidental exposure of this issue highlights the challenges in managing vulnerability disclosures and the potential consequences of premature information release. Users of Chromium-based browsers should be aware of this risk and monitor for updates that address the flaw. This incident emphasizes the importance of secure vulnerability management practices.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-accidentally-exposed-details-of-unfixed-chromium-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
             "headline": "Linux Flaws and Defender 0-Days—Security Chaos Ensues",
             "title": "Weekly Recap: Linux Vulnerabilities and Microsoft Defender 0-Day Exploits",
             "content": "This week in cybersecurity, a series of vulnerabilities have been unearthed, including critical flaws in Linux systems and zero-day exploits targeting Microsoft Defender. These issues have forced companies to scramble, revisiting outdated systems and unpatched servers. The vulnerabilities highlight the persistent challenges in maintaining secure infrastructures, especially when legacy systems are involved. Security professionals are urged to conduct thorough audits of their systems, ensure all patches are up to date, and remain vigilant against potential exploitation. The ongoing issues underscore the importance of proactive security measures in an increasingly complex threat landscape.",
@@ -65,81 +119,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/ghost-cms-sql-injection-flaw-exploited-in-large-scale-clickfix-campaign/",
             "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Claude Mythos AI Uncovers 10,000 Critical Software Flaws",
-            "title": "Project Glasswing by Anthropic Identifies 10,000 High-Severity Vulnerabilities",
-            "content": "Anthropic's Project Glasswing has identified over 10,000 high- or critical-severity vulnerabilities in widely used software since its launch last month. Leveraging the capabilities of Claude Mythos AI, this initiative focuses on software deemed systemically important across various industries. The findings highlight the pervasive security challenges in critical software infrastructure, underscoring the need for continuous vulnerability assessment. Organizations using affected software should prioritize patch management and vulnerability scanning to protect against potential exploitation. This initiative marks a significant advancement in proactive cybersecurity measures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Italy Dismantles CINEMAGOAL—Streaming Piracy Network Crushed",
-            "title": "Italy Disrupts CINEMAGOAL Piracy App That Stole Streaming Auth Codes",
-            "content": "Italian authorities have dismantled the CINEMAGOAL app, a piracy ecosystem that illegally accessed streaming platforms like Netflix, Disney+, and Spotify by stealing authentication codes. This crackdown is part of a broader effort to combat digital piracy and protect intellectual property rights. The operation highlights the vulnerabilities in streaming service security and the need for enhanced authentication mechanisms. Streaming service providers should review their security protocols to prevent similar breaches. This action represents a significant victory in the fight against digital piracy.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/legal/italy-disrupts-cinemagoal-piracy-app-that-stole-streaming-auth-codes/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Laravel Lang Packages Hijacked—Credential-Stealing Malware Alert",
-            "title": "Supply Chain Attack on Laravel Lang Packages Deploys Credential-Stealing Malware",
-            "content": "A sophisticated supply chain attack has compromised the Laravel Lang localization packages, deploying credential-stealing malware through Composer packages. Attackers exploited GitHub version tags to insert malicious code, targeting developers who rely on these packages for localization tasks. This breach underscores the vulnerabilities in software supply chains, particularly affecting developers using Laravel frameworks. The attack's impact is significant, potentially exposing sensitive credentials and affecting the integrity of applications built with these packages. Developers are urged to verify package integrity and monitor for suspicious activity to mitigate potential damage.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/laravel-lang-packages-hijacked-to-deploy-credential-stealing-malware/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "npm Enhances Security—2FA-Gated Publishing Now Live",
-            "title": "npm Introduces 2FA-Gated Publishing to Combat Supply Chain Threats",
-            "content": "GitHub has enhanced npm's security by implementing two-factor authentication (2FA) gated publishing, allowing package maintainers to approve releases before public availability. This new feature, known as staged publishing, aims to fortify the software supply chain against unauthorized alterations. By requiring explicit maintainer approval, the risk of malicious code insertion is significantly reduced. This update is part of a broader effort to secure open-source ecosystems and protect developers and users from supply chain attacks. Developers are encouraged to adopt these new controls to enhance package security.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/npm-adds-2fa-gated-publishing-and.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Packagist Attack Infects 8 Packages—Linux Malware Deployed",
-            "title": "Packagist Supply Chain Attack Infects Multiple Packages with Linux Malware",
-            "content": "A coordinated supply chain attack has compromised eight Packagist packages, deploying Linux malware via GitHub-hosted binaries. The attack involved injecting malicious code that retrieves a Linux binary from a GitHub Releases URL, bypassing composer.json configurations. This incident highlights the persistent threat of supply chain vulnerabilities, particularly in open-source ecosystems. Developers using affected packages are at risk of malware execution on their systems, potentially leading to unauthorized access and data breaches. Immediate package verification and updates are recommended to mitigate risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/packagist-supply-chain-attack-infects-8.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Laravel-Lang PHP Packages Compromised—Credential Stealer Deployed",
-            "title": "Supply Chain Attack Targets Laravel-Lang PHP Packages with Credential Stealer",
-            "content": "A new supply chain attack has compromised several PHP packages from Laravel-Lang, deploying a cross-platform credential-stealing framework. The affected packages include laravel-lang/lang, laravel-lang/http-statuses, and others, threatening developers who rely on these components. This attack underscores the vulnerability of open-source ecosystems to malicious code injection, potentially impacting thousands of applications that integrate these packages. Security professionals are advised to audit their dependencies and apply necessary patches or remove compromised packages immediately. This incident highlights the growing trend of targeting software supply chains to distribute malware.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/laravel-lang-php-packages-compromised.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "CVE-2026-48172 Exploited—LiteSpeed Plugin Runs Scripts as Root",
-            "title": "Critical LiteSpeed cPanel Plugin Vulnerability Exploited in the Wild",
-            "content": "A critical vulnerability, CVE-2026-48172, in the LiteSpeed User-End cPanel Plugin is being actively exploited, allowing attackers to execute scripts with root privileges. This flaw, with a CVSS score of 10.0, results from incorrect privilege assignment, posing a severe risk to systems using this plugin. Administrators are urged to apply security patches immediately to prevent unauthorized access and potential system compromise. This exploitation underscores the importance of timely patch management in mitigating risks associated with high-severity vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/litespeed-cpanel-plugin-cve-2026-48172.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Drupal Core SQL Injection Flaw—CISA Adds to KEV",
-            "title": "Active Exploitation of Drupal Core SQL Injection Bug CVE-2026-9082",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-9082, a critical SQL injection vulnerability in Drupal Core, to its Known Exploited Vulnerabilities catalog. This flaw, with a CVSS score of 6.5, is actively exploited, threatening websites running on affected Drupal versions. Site administrators should prioritize patching to protect against potential data breaches and unauthorized data manipulation. This addition to the KEV catalog highlights the ongoing threat of SQL injection attacks in widely used content management systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 25 2026",
+            "headline": "ClickUp Replaces Hundreds with AI—Future of Work Shifts",
+            "title": "ClickUp's Mass Layoff Highlights AI's Growing Role in Workforce",
+            "content": "In a significant move reflecting the evolving landscape of employment, ClickUp, a nine-year-old productivity startup, has laid off hundreds of employees, replacing them with thousands of AI agents. This transition underscores a broader trend where AI is increasingly taking on complex tasks traditionally performed by humans. The AI agents are designed to handle a variety of functions, from project management to customer support, showcasing the potential for AI to reshape operational efficiencies. This shift raises questions about the future of human roles in tech-driven industries and the skills required to thrive. Companies and professionals must adapt to this changing dynamic, focusing on AI integration and upskilling to remain competitive.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 21 2026",
+            "headline": "Alibaba's Qwen3.7-Max—35-Hour Autonomous AI Revolution",
+            "title": "Alibaba's Qwen3.7-Max AI Model Sets New Standards in Autonomy",
+            "content": "Alibaba's latest AI model, Qwen3.7-Max, marks a significant advancement in the \"agent era\" of AI technology, capable of operating autonomously for up to 35 hours. This model supports external harnesses, including Anthropic's Claude Code, enabling it to plan, execute, and adjust complex tasks over extended periods. The development highlights a shift in AI capabilities from mere text generation to sophisticated task management, impacting industries reliant on continuous operations. As AI models become more autonomous, businesses must evaluate their integration strategies to leverage these capabilities effectively. This evolution demands a reevaluation of AI deployment in operational workflows.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/alibabas-proprietary-qwen3-7-max-can-run-for-35-hours-autonomously-and-supports-external-harnesses-like-anthropics-claude-code",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "AI Resurrects Voices of Dead Pilots—NTSB Blocks Access",
+            "title": "AI Technology Reconstructs Pilot Voices from Cockpit Recordings",
+            "content": "AI technology has been employed to reconstruct the voices of deceased pilots using spectrogram images of cockpit recordings, prompting the National Transportation Safety Board (NTSB) to temporarily block access to its docket system. This development raises ethical and privacy concerns regarding the use of AI in sensitive areas such as aviation safety investigations. The ability to recreate voices from audio data represents a powerful tool for analysis but also poses challenges in terms of data security and consent. Stakeholders in the aviation and AI sectors must navigate these complexities to ensure responsible use of technology.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Google Adds Disco-Ball Icons—Pixel Home Screens Get Flashy",
+            "title": "Google's Pixel Update Introduces Disco-Ball Icons for Home Screens",
+            "content": "Google has introduced a new feature allowing users to transform their Pixel home screens with disco-ball icons, enhancing the visual customization options available to users. This update is part of Google's broader strategy to offer more personalized user experiences through its devices. While the feature may seem trivial, it reflects Google's ongoing efforts to differentiate its products in a competitive market by focusing on user engagement and satisfaction. Developers and tech leaders should consider the implications of such customizable features on user interface design and user interaction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "Google's AI Search Glitch—Misinterprets Queries, Causes Confusion",
+            "title": "Google's AI Search Overview Faces Query Misinterpretation Issues",
+            "content": "Google's AI search functionality is experiencing issues where the AI Overview section misinterprets user queries, providing responses akin to traditional AI chatbots rather than concise summaries. This glitch, highlighted by searches for terms like \"disregard,\" underscores the challenges in refining AI algorithms to accurately understand and process user intent. The problem affects users relying on precise search results, potentially impacting productivity and decision-making. Google is likely to address these issues to enhance the reliability of its AI-driven search features. Users should remain vigilant and provide feedback to improve AI search accuracy.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
+            "relatedResources": []
+        },
+        {
+            "date": "May 22 2026",
+            "headline": "SpaceX's $1.75T IPO—Musk's Ambitious Mars Plans Unveiled",
+            "title": "SpaceX S-1 Filing Reveals $1.75 Trillion IPO and Mars Ambitions",
+            "content": "SpaceX has filed its S-1, revealing plans for a $1.75 trillion IPO, with ambitions extending beyond rockets to establishing a Mars colony. The filing includes 36 pages of risk factors and outlines a $28 trillion total addressable market, reflecting the company's expansive vision. Elon Musk's compensation is tied to achieving milestones related to Mars colonization, highlighting the bold objectives driving SpaceX's strategy. This IPO represents a significant moment in the aerospace industry, with implications for investors and competitors as SpaceX seeks to redefine the boundaries of space exploration. Stakeholders should assess the risks and opportunities presented by this ambitious venture.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
+            "relatedResources": []
+        },
         {
             "date": "May 25 2026",
             "headline": "Pope's AI Encyclical—A Call to Address Power Imbalances",
@@ -186,15 +222,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 22 2026",
-            "headline": "Inflated ARR—VCs and Founders Boost AI Startup Valuations",
-            "title": "AI Startups Inflate ARR Metrics to Attract Investment",
-            "content": "A growing trend among AI startups involves inflating annual recurring revenue (ARR) metrics to enhance their appeal to investors. This practice, while boosting perceived valuation, raises concerns about transparency and long-term sustainability. Venture capitalists (VCs) are reportedly aware of these inflated figures but continue to support startups based on potential growth and innovation. The manipulation of traditional revenue metrics highlights the competitive pressures in the AI sector, where securing funding is crucial for development and scaling. Stakeholders are advised to scrutinize financial disclosures carefully and consider the broader implications of such practices on market integrity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
-            "relatedResources": []
-        },
-        {
             "date": "May 24 2026",
             "headline": "Google Faces AI Security Challenges Amid Industry Transition",
             "title": "Google and Industry Grapple with Real-Time AI Security Challenges",
@@ -204,48 +231,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 23 2026",
-            "headline": "Nemotron-Labs Aims for Instant Text with Diffusion Models",
-            "title": "Nemotron-Labs Develops Diffusion Language Models for Faster Text Generation",
-            "content": "Nemotron-Labs is pushing the boundaries of text generation speed with its diffusion language models, aiming for near-instantaneous output. These models leverage advanced diffusion techniques to enhance processing speeds, potentially revolutionizing real-time applications in natural language processing. The development is part of a broader trend towards optimizing AI models for efficiency and responsiveness. For developers and tech leaders, integrating such cutting-edge models could significantly improve user experiences and operational capabilities. However, understanding the underlying technology and its implications for system performance and security remains essential.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
-            "relatedResources": []
-        },
-        {
             "date": "May 24 2026",
             "headline": "Chatbots Hacked—Exploiting AI Personalities for Malicious Gains",
             "title": "Hackers Exploit AI Chatbot Personalities to Breach Systems",
             "content": "Hackers are increasingly targeting AI chatbots by exploiting their programmed personalities to manipulate responses and gain unauthorized access to systems. This new wave of attacks leverages the inherent conversational nature of chatbots, which can be tricked into revealing sensitive information or executing harmful commands. The vulnerabilities primarily affect first-generation AI chatbots, which lack robust security measures against such manipulative tactics. Organizations using these chatbots are at risk of data breaches and unauthorized transactions. Security professionals are advised to implement stricter input validation and continuously monitor chatbot interactions to mitigate these risks.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/column/935545/hackers-ai-chatbots",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Ferrari Partners with IBM AI to Boost F1 Fan Engagement",
-            "title": "Ferrari and IBM Leverage AI to Transform Formula 1 Fan Experience",
-            "content": "Ferrari is collaborating with IBM to enhance the Formula 1 fan experience using advanced artificial intelligence. The partnership aims to create \"superfans\" by personalizing content and interactions through IBM's AI capabilities. This initiative involves analyzing vast amounts of data to tailor experiences that deepen fan engagement and loyalty. The move reflects a broader trend in sports where teams and brands leverage AI to connect more deeply with their audiences. Fans can expect more immersive and interactive experiences as AI continues to redefine how sports are consumed.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Elon Musk's xAI Shifts Focus—Solar Power Abandoned",
-            "title": "Elon Musk's xAI Abandons Solar for Natural Gas and Orbital Data Centers",
-            "content": "Elon Musk's xAI has pivoted from its previous commitment to a solar-electric economy, now focusing on natural gas and orbital data centers. This strategic shift marks a departure from Musk's earlier vision of sustainable energy, raising questions about the future of solar initiatives under his leadership. SpaceX's investment in orbital data centers suggests a new direction in leveraging space technology for data processing. The move could impact stakeholders in the renewable energy sector, as well as those invested in Musk's broader technological ecosystem. Industry experts are watching closely to see how this shift will affect innovation and sustainability goals.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 23 2026",
-            "headline": "Google's Gemini AI Model—A Leap in Deepfake Technology",
-            "title": "Google's Gemini AI Model Transforms Deepfake Capabilities with Anything-to-Anything Tech",
-            "content": "Google's latest AI model, Gemini, showcases groundbreaking anything-to-anything transformation capabilities, allowing users to create sophisticated deepfakes with unprecedented ease. This model can manipulate images and videos, exemplified by a user deepfaking a child's stuffed animal into various scenarios. While the technology offers creative possibilities, it also raises significant ethical and security concerns about misuse in creating deceptive content. Professionals in cybersecurity and digital media should be aware of the potential for increased deepfake proliferation and consider implementing robust verification measures. This development underscores the need for ongoing dialogue about AI ethics and regulation.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video",
             "relatedResources": []
         }
     ],
