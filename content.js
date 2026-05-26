@@ -4,57 +4,66 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 26 2026",
+            "headline": "185,000 Affected—7-Eleven Data Breach Exposes Personal Details",
+            "title": "ShinyHunters Leak Compromises 185,000 in 7-Eleven Data Breach",
+            "content": "A data breach at 7-Eleven has potentially impacted 185,000 individuals, with the hacker group ShinyHunters leaking sensitive information. The compromised data includes email addresses, names, addresses, and dates of birth, raising significant privacy concerns. This incident underscores the ongoing threat posed by cybercriminals targeting retail giants, exploiting vulnerabilities to access customer data. Affected individuals should monitor their accounts for suspicious activity and consider identity theft protection measures. This breach highlights the critical need for robust data protection strategies in retail operations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/185000-likely-impacted-by-7-eleven-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "Microsoft Fixes SharePoint RCE Flaw—CVE-2026-45659 Patched",
+            "title": "Microsoft Patches Critical SharePoint RCE Vulnerability CVE-2026-45659",
+            "content": "Microsoft has released crucial updates addressing a remote code execution (RCE) vulnerability in SharePoint, identified as CVE-2026-45659. This flaw, with a CVSS score of 8.8, could allow attackers to execute arbitrary code on affected servers without needing special conditions. The vulnerability affects multiple versions of SharePoint, posing a significant risk to organizations relying on this platform for collaboration and document management. Administrators are urged to apply the patches immediately to safeguard their systems against potential exploitation. This patch is part of Microsoft's ongoing efforts to enhance security across its product suite.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-patches-sharepoint-rce-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "Zero-Day Exploit—Hackers Deploy Web Shells via KnowledgeDeliver",
+            "title": "KnowledgeDeliver Zero-Day Enables Web Shell Deployment via ViewState Exploits",
+            "content": "Hackers have exploited a zero-day vulnerability in KnowledgeDeliver, leveraging hardcoded machineKey values to conduct ViewState deserialization attacks. These attacks enable remote code execution, allowing threat actors to deploy web shells on compromised systems. The vulnerability highlights the risks associated with insecure configuration files, particularly in enterprise software. Organizations using KnowledgeDeliver should review their security configurations and apply any available patches to mitigate this threat. This incident underscores the importance of securing application configurations to prevent unauthorized access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hackers-exploited-knowledgedeliver-zero-day-for-web-shell-deployment/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "DockSec AI Cuts Docker Vulnerability Noise—Improves Security",
+            "title": "DockSec Uses AI to Simplify Docker Image Vulnerability Management",
+            "content": "DockSec, an OWASP incubator project, is leveraging artificial intelligence to streamline vulnerability management in Docker images. By correlating data from multiple container security scanners, DockSec provides clear remediation guidance and precise Dockerfile fixes in plain English. This tool aims to reduce the complexity and noise associated with container security, enabling developers to focus on critical vulnerabilities. As container adoption grows, tools like DockSec are essential for maintaining secure DevOps practices. Organizations should consider integrating DockSec into their security workflows to enhance their container security posture.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/open-source-docksec-uses-ai-to-cut-through-vulnerability-noise-in-docker-images/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "MFA Prompt Bombing—A New Threat to Identity Security",
+            "title": "MFA Prompt Bombing Undermines Multi-Factor Authentication Effectiveness",
+            "content": "Multi-factor authentication (MFA), once a cornerstone of identity security, is being undermined by a technique known as prompt bombing. Attackers exploit this method by overwhelming users with authentication requests, leading to accidental approvals. This tactic bypasses the security MFA was designed to provide, highlighting the need for more robust authentication strategies. Organizations should educate users on recognizing and responding to suspicious MFA prompts and consider implementing additional security layers. This development calls for a reevaluation of MFA practices to ensure continued protection against unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/mfa-prompt-bombing-why-your-second.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "CERT-In: Patch Internet-Facing Flaws in 12 Hours Amid AI Threats",
+            "title": "CERT-In Issues 12-Hour Patching Directive for Internet-Exposed Systems",
+            "content": "The Indian Computer Emergency Response Team (CERT-In) has mandated a 12-hour patching window for critical vulnerabilities in internet-facing systems. This directive aims to counteract the rising threat of AI-assisted cyberattacks exploiting unpatched flaws. Organizations are urged to prioritize patch management to protect against potential breaches. The guidance reflects the increasing speed and sophistication of cyber threats, necessitating rapid response measures. Adhering to these guidelines will help organizations mitigate risks and safeguard their digital infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 25 2026",
             "headline": "TrapDoor Attack Hits npm, PyPI, Crates.io—Steals Credentials",
             "title": "TrapDoor Supply Chain Attack Targets npm, PyPI, and Crates.io with Malware",
             "content": "A sophisticated software supply chain attack, dubbed TrapDoor, has been identified targeting npm, PyPI, and Crates.io repositories to distribute credential-stealing malware. This campaign involves over 34 malicious packages across more than 384 versions, with initial activity traced back to May 22, 2026. The malware aims to compromise developers' systems by stealing sensitive credentials, posing a significant threat to the integrity of software projects and their users. This attack underscores the growing vulnerability of open-source ecosystems to supply chain threats. Developers are urged to scrutinize package dependencies and employ security tools to detect and mitigate such threats.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/trapdoor-supply-chain-attack-spreads.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Operation Saffron Dismantles VPN Used by 25 Ransomware Gangs",
-            "title": "First VPN Service Dismantled in Global Crackdown on Ransomware Operations",
-            "content": "In a major international law enforcement effort, authorities have dismantled a VPN service known as First VPN, which was used by at least 25 ransomware groups to obscure their activities. Operation Saffron, conducted by agencies in Europe and North America, targeted the infrastructure that facilitated ransomware, data theft, and denial-of-service attacks. The takedown is a significant blow to cybercriminals who rely on anonymizing services to evade detection. This action highlights the critical role of VPNs in cybercrime and the ongoing efforts to disrupt criminal networks. Security professionals should remain vigilant and consider the implications of VPN misuse in their threat models.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/first-vpn-dismantled-in-global-takedown.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Drupal CVE-2026-9082 Exploited—Thousands of Sites at Risk",
-            "title": "Drupal Vulnerability CVE-2026-9082 Actively Exploited Following Disclosure",
-            "content": "Drupal has issued a warning regarding active exploitation attempts against CVE-2026-9082, a recently disclosed vulnerability. Security firms have detected attacks targeting thousands of websites, emphasizing the urgency for administrators to apply patches. This vulnerability allows attackers to compromise Drupal sites, potentially leading to data breaches and unauthorized access. The rapid targeting of this flaw post-disclosure highlights the need for prompt vulnerability management and patch application. Drupal users are advised to update their installations immediately to mitigate potential risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/drupal-vulnerability-in-hacker-crosshairs-shortly-after-disclosure/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Apex One Zero-Day Exploited—Trend Micro Issues Fix",
-            "title": "Trend Micro Addresses Apex One Zero-Day Vulnerability Exploited in the Wild",
-            "content": "Trend Micro has released a fix for a zero-day vulnerability in its Apex One security solution, which has been actively exploited in attacks on Windows systems. This vulnerability allowed attackers to execute arbitrary code, posing a significant risk to affected systems. The exploitation of this zero-day highlights the persistent targeting of security software by threat actors. Trend Micro customers are strongly encouraged to apply the latest updates to protect their systems from potential compromise. This incident underscores the importance of maintaining up-to-date security solutions to defend against emerging threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/trend-micro-warns-of-apex-one-zero-day-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Critical SQL Injection in Drupal—Hackers Exploit Flaw",
-            "title": "Drupal Faces Attacks on Critical SQL Injection Vulnerability",
-            "content": "Drupal has alerted users to active exploitation attempts against a \"highly critical\" SQL injection vulnerability disclosed earlier this week. This flaw allows attackers to manipulate database queries, potentially leading to data breaches and unauthorized access to sensitive information. The targeting of this vulnerability underscores the ongoing threat landscape facing web applications. Drupal site administrators are urged to implement the latest security patches to safeguard their systems against these attacks. The incident highlights the critical need for timely patch management in maintaining web application security.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-critical-sql-injection-flaw-now-targeted-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Chromium Flaw Exposed—Google Leaks Unfixed Vulnerability Details",
-            "title": "Google Accidentally Reveals Unfixed Chromium Flaw Allowing Remote Code Execution",
-            "content": "Google has inadvertently disclosed details of an unfixed vulnerability in Chromium that allows JavaScript to continue running in the background even after the browser is closed. This flaw could enable remote code execution on affected devices, posing a significant security risk. The accidental exposure of this issue highlights the challenges in managing vulnerability disclosures and the potential consequences of premature information release. Users of Chromium-based browsers should be aware of this risk and monitor for updates that address the flaw. This incident emphasizes the importance of secure vulnerability management practices.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-accidentally-exposed-details-of-unfixed-chromium-flaw/",
             "relatedResources": []
         },
         {
@@ -123,57 +132,66 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "May 26 2026",
+            "headline": "AI Hatred Fuels Anti-Tech Extremism—Feds Issue Warning",
+            "title": "US Law Enforcement Warns of Rising Anti-Tech Extremism Amid AI Concerns",
+            "content": "US federal authorities have issued a warning about the emergence of anti-tech extremism, driven by growing public resentment towards artificial intelligence (AI) and its perceived threats to jobs and communities. Documents obtained by WIRED reveal that this new category of threat is linked to fears of AI replacing human jobs and the expansion of data centers in residential areas. The warning highlights the potential for increased hostility and violence against tech companies and infrastructure. Security professionals are urged to monitor these developments closely and consider the implications for both physical and cybersecurity measures. This trend underscores the need for balanced discussions on AI's societal impact to mitigate extremist sentiments.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/us-law-enforcement-warns-of-anti-tech-extremism/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "Indian Gig Workers Train Robots—Startup Human Archive's Bold Bet",
+            "title": "Human Archive Leverages India's Gig Economy to Train Global Robotics",
+            "content": "Human Archive, a startup founded by researchers from Berkeley and Stanford, is tapping into India's gig economy to gather essential training data for AI and robotics. The company equips gig workers with camera-equipped caps and sensor devices to capture real-world interactions, providing valuable datasets for AI labs worldwide. This innovative approach addresses the high demand for diverse and accurate training data in the AI and robotics sectors. By leveraging India's vast pool of gig workers, Human Archive aims to accelerate advancements in robotic capabilities and AI model training. This initiative highlights the growing intersection of AI development and global labor markets.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "UMG and TikTok Unite Against Unauthorized AI Music",
+            "title": "Universal Music Group and TikTok Renew Pact to Tackle AI Music Infringements",
+            "content": "Universal Music Group (UMG) and TikTok have renewed their agreement to combat unauthorized AI-generated music on the platform. This partnership reinforces UMG's ongoing efforts to push for stricter content moderation policies across digital platforms and streaming services. The renewed agreement aims to protect artists' rights and ensure that AI-generated content does not infringe on copyrighted material. This move is part of a broader industry trend towards safeguarding intellectual property in the age of AI, as music labels and tech companies collaborate to address the challenges posed by AI in content creation. Stakeholders in the music and tech industries should stay informed about evolving content policies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "Last Chance for TechCrunch Disrupt 2026 Early Bird Rates",
+            "title": "TechCrunch Disrupt 2026 Early Bird Ticket Discounts End May 29",
+            "content": "Tech professionals and enthusiasts have until May 29 at 11:59 p.m. PT to secure early bird rates for TechCrunch Disrupt 2026 in San Francisco. Attendees can save up to $410 on their passes, making this a prime opportunity to join one of the tech industry's most anticipated events. TechCrunch Disrupt offers a platform for startups, investors, and innovators to connect and explore the latest trends and technologies. The event promises a lineup of influential speakers and networking opportunities, making it a must-attend for those looking to stay ahead in the tech world. Interested participants should register promptly to take advantage of the discounted rates.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "Sundar Pichai Discusses AI's Impact on Web and Search",
+            "title": "Sundar Pichai Talks AI, Future of Search, and Web Evolution",
+            "content": "In a post-Google I/O conversation, Sundar Pichai, CEO of Google and Alphabet, shared insights on AI's transformative role in search and the broader web landscape. Pichai emphasized AI's potential to enhance search capabilities, making information retrieval more intuitive and context-aware. He also addressed concerns about AI's impact on traditional web structures, highlighting the need for adaptive strategies to harness AI's benefits while mitigating risks. This discussion underscores the critical role of AI in shaping the future of digital interactions and the importance of strategic planning for tech leaders. Professionals should consider the implications of AI advancements on their digital strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/936445/sundar-pichai-ai-search-google-zero-youtube-web",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "AI Music Trend: Suno Users Ditch Streaming for Custom Tracks",
+            "title": "Suno Users Embrace AI-Generated Music, Shun Traditional Streaming Platforms",
+            "content": "An emerging trend in the Suno subreddit reveals users increasingly favoring AI-generated music over traditional streaming services. Enthusiasts are creating and listening to personalized AI tracks, often referred to as \"slop,\" and expressing a preference for these over conventional music platforms. This shift highlights a growing interest in AI's creative capabilities and its potential to disrupt the music industry. The trend raises questions about the future of music consumption and the role of AI in artistic expression. Industry stakeholders should monitor this development as it may signal broader changes in consumer behavior and content creation.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/937059/nobody-wants-to-tell-me-why-they-only-listen-their-own-suno-slop",
+            "relatedResources": []
+        },
+        {
             "date": "May 25 2026",
             "headline": "ClickUp Replaces Hundreds with AI—Future of Work Shifts",
             "title": "ClickUp's Mass Layoff Highlights AI's Growing Role in Workforce",
             "content": "In a significant move reflecting the evolving landscape of employment, ClickUp, a nine-year-old productivity startup, has laid off hundreds of employees, replacing them with thousands of AI agents. This transition underscores a broader trend where AI is increasingly taking on complex tasks traditionally performed by humans. The AI agents are designed to handle a variety of functions, from project management to customer support, showcasing the potential for AI to reshape operational efficiencies. This shift raises questions about the future of human roles in tech-driven industries and the skills required to thrive. Companies and professionals must adapt to this changing dynamic, focusing on AI integration and upskilling to remain competitive.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 21 2026",
-            "headline": "Alibaba's Qwen3.7-Max—35-Hour Autonomous AI Revolution",
-            "title": "Alibaba's Qwen3.7-Max AI Model Sets New Standards in Autonomy",
-            "content": "Alibaba's latest AI model, Qwen3.7-Max, marks a significant advancement in the \"agent era\" of AI technology, capable of operating autonomously for up to 35 hours. This model supports external harnesses, including Anthropic's Claude Code, enabling it to plan, execute, and adjust complex tasks over extended periods. The development highlights a shift in AI capabilities from mere text generation to sophisticated task management, impacting industries reliant on continuous operations. As AI models become more autonomous, businesses must evaluate their integration strategies to leverage these capabilities effectively. This evolution demands a reevaluation of AI deployment in operational workflows.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/alibabas-proprietary-qwen3-7-max-can-run-for-35-hours-autonomously-and-supports-external-harnesses-like-anthropics-claude-code",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "AI Resurrects Voices of Dead Pilots—NTSB Blocks Access",
-            "title": "AI Technology Reconstructs Pilot Voices from Cockpit Recordings",
-            "content": "AI technology has been employed to reconstruct the voices of deceased pilots using spectrogram images of cockpit recordings, prompting the National Transportation Safety Board (NTSB) to temporarily block access to its docket system. This development raises ethical and privacy concerns regarding the use of AI in sensitive areas such as aviation safety investigations. The ability to recreate voices from audio data represents a powerful tool for analysis but also poses challenges in terms of data security and consent. Stakeholders in the aviation and AI sectors must navigate these complexities to ensure responsible use of technology.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Google Adds Disco-Ball Icons—Pixel Home Screens Get Flashy",
-            "title": "Google's Pixel Update Introduces Disco-Ball Icons for Home Screens",
-            "content": "Google has introduced a new feature allowing users to transform their Pixel home screens with disco-ball icons, enhancing the visual customization options available to users. This update is part of Google's broader strategy to offer more personalized user experiences through its devices. While the feature may seem trivial, it reflects Google's ongoing efforts to differentiate its products in a competitive market by focusing on user engagement and satisfaction. Developers and tech leaders should consider the implications of such customizable features on user interface design and user interaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "Google's AI Search Glitch—Misinterprets Queries, Causes Confusion",
-            "title": "Google's AI Search Overview Faces Query Misinterpretation Issues",
-            "content": "Google's AI search functionality is experiencing issues where the AI Overview section misinterprets user queries, providing responses akin to traditional AI chatbots rather than concise summaries. This glitch, highlighted by searches for terms like \"disregard,\" underscores the challenges in refining AI algorithms to accurately understand and process user intent. The problem affects users relying on precise search results, potentially impacting productivity and decision-making. Google is likely to address these issues to enhance the reliability of its AI-driven search features. Users should remain vigilant and provide feedback to improve AI search accuracy.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
-            "relatedResources": []
-        },
-        {
-            "date": "May 22 2026",
-            "headline": "SpaceX's $1.75T IPO—Musk's Ambitious Mars Plans Unveiled",
-            "title": "SpaceX S-1 Filing Reveals $1.75 Trillion IPO and Mars Ambitions",
-            "content": "SpaceX has filed its S-1, revealing plans for a $1.75 trillion IPO, with ambitions extending beyond rockets to establishing a Mars colony. The filing includes 36 pages of risk factors and outlines a $28 trillion total addressable market, reflecting the company's expansive vision. Elon Musk's compensation is tied to achieving milestones related to Mars colonization, highlighting the bold objectives driving SpaceX's strategy. This IPO represents a significant moment in the aerospace industry, with implications for investors and competitors as SpaceX seeks to redefine the boundaries of space exploration. Stakeholders should assess the risks and opportunities presented by this ambitious venture.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
             "relatedResources": []
         },
         {
