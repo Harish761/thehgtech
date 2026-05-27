@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "active-directory-vs-entra-id-security-2026",
+      "title": "Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift",
+      "category": "Identity & Access Management",
+      "excerpt": "How security controls move from the Enterprise Admin to the Cloud Provider, the real risk of single points of failure, and the ultimate migration playbook for 2026.",
+      "readTime": "35 min",
+      "level": "Intermediate to Advanced",
+      "date": "May 27, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/active-directory-vs-entra-id-security-2026.png"
+    },
+    {
       "id": "windows-vs-macos-endpoint-security-2026",
       "title": "Windows vs macOS Endpoint Security 2026: Architecture, Tools, Management & Real-World Effectiveness",
       "category": "Endpoint Security",
@@ -375,7 +387,7 @@
       "id": "yara-rules-malware-detection",
       "title": "YARA Rules Fundamentals",
       "category": "Detection Engineering",
-      "excerpt": "Learn YARA from scratch — syntax, patterns, conditions, and modules. Perfect foundation before tackling advanced techniques.",
+      "excerpt": "Learn YARA from scratch \u2014 syntax, patterns, conditions, and modules. Perfect foundation before tackling advanced techniques.",
       "readTime": "14 min",
       "level": "Beginner to Intermediate",
       "date": "Jan 9, 2026",
