@@ -895,6 +895,27 @@
       "Description": "In May 2022, the Australian retailer <a href=\"https://www.ozbargain.com.au/node/701231\" target=\"_blank\" rel=\"noopener\">Amart Furniture advised that their warranty claims database hosted on Amazon Web Services had been the target of a cyber attack</a>. Over 100k records containing email and physical address, names, phone numbers and passwords stored as bcrypt hashes were exposed and shared online by the attacker."
     }
   ],
+  "ameriprise.com": [
+    {
+      "Name": "Ameriprise",
+      "Title": "Ameriprise",
+      "BreachDate": "2026-03-02",
+      "AddedDate": "2026-05-26T22:03:42Z",
+      "PwnCount": 502597,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Financial transactions",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In March 2026, the financial services firm <a href=\"https://cybernews.com/security/shinyhunters-ameriprise-financial-data-breach/\" target=\"_blank\" rel=\"noopener\">Ameriprise Financial was named by the ShinyHunters group in a \"pay or leak\" extortion campaign</a>. The group claimed possession of more than 200GB of compressed data exfiltrated from Ameriprise's Salesforce environment and internal SharePoint infrastructure, and subsequently published the data after negotiations allegedly failed. The published data contained 500k unique email addresses as well as names, phone numbers, physical addresses and employer information. <a href=\"https://www.maine.gov/agviewer/content/ag/985235c7-cb95-4be2-8792-a1252b4f8318/d8179c59-c088-4bee-b3fe-ceb870a26508.html\" target=\"_blank\" rel=\"noopener\">In their disclosure to state attorneys general</a>, Ameriprise reported 47,876 affected people; the larger email address population represents contacts from Ameriprise's broader operational systems, including internal staff. Ameriprise further advised that they have \"implemented heightened monitoring of your account(s) to include enhanced identity verification procedures\"."
+    }
+  ],
   "amtrak.com": [
     {
       "Name": "Amtrak",
@@ -10712,6 +10733,27 @@
       "IsVerified": true,
       "IsFabricated": false,
       "Description": "In approximately 2008, <a href=\"http://motherboard.vice.com/read/427-million-myspace-passwords-emails-data-breach\" target=\"_blank\" rel=\"noopener\">MySpace suffered a data breach that exposed almost 360 million accounts</a>. In May 2016 the data was offered up for sale on the \"Real Deal\" dark market website and included email addresses, usernames and SHA1 hashes of the first 10 characters of the password converted to lowercase and stored without a salt. The exact breach date is unknown, but <a href=\"https://www.troyhunt.com/dating-the-ginormous-myspace-breach\" target=\"_blank\" rel=\"noopener\">analysis of the data suggests it was 8 years before being made public</a>."
+    }
+  ],
+  "mytheresa.com": [
+    {
+      "Name": "Mytheresa",
+      "Title": "Mytheresa",
+      "BreachDate": "2026-04-12",
+      "AddedDate": "2026-05-27T05:17:45Z",
+      "PwnCount": 84108,
+      "DataClasses": [
+        "Email addresses",
+        "Names",
+        "Partial credit card data",
+        "Phone numbers",
+        "Physical addresses",
+        "Purchases",
+        "Salutations"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In April 2026, the luxury fashion e-commerce platform <a href=\"https://cybernews.com/news/shinyhunters-myteresa-zara-carnival-7eleven-data-leak/\" target=\"_blank\" rel=\"noopener\">Mytheresa was listed as a victim of the ShinyHunters \"pay or leak\" extortion group</a>. After the ransom deadline passed, the group publicly released the data which contained 84k unique email addresses. The exposed data also included names, phone numbers, physical addresses, purchases and partial credit card data including card type, last 4 digits and expiry date."
     }
   ],
   "myvidster.com": [

@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-05-26T17:42:36.479471",
-  "total_incidents": 28316,
+  "last_updated": "2026-05-27T06:45:18.903773",
+  "total_incidents": 28317,
   "incidents": [
+    {
+      "id": "nova_textile_testing_services_of_america",
+      "victim_name": "Textile Testing Services of America",
+      "threat_actor": "nova",
+      "date_discovered": "2026-05-26T19:53:34.014394+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Textile Testing Services of America is a company that operates in the Training industry. It employs 250to499 people and has 10Mto25M of revenue. The company is headquartered in Mexico City, Mexico City, Mexico - Correction, After First post about sandox.info was posted by affiliate, after he provide us the Full informations, our Team made the OSINT, and discover that the domain sandox.info was initial access (IP 64.76.20.226), the Full Data is related to ttsamexico.com, Confirmed by Nova OSINT team, published the IP will not effect on company because its already public by ping administracion.ttsamexico.com, about public media don't worry, we will correct any false informations maybe posted by misunderstanding - Nova Provide tree and samples from stolen data to the company when its get in touch with support department, Nova will oversee the target verification processes for accurate Posts deployment.",
+      "screenshot": "https://images.ransomware.live/victims/1369a222bf5b06a14714c41b82857a6a.png",
+      "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/textile-testing-services-of-america",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "krybit_ctps.tp.edu.tw",
       "victim_name": "ctps.tp.edu.tw",
