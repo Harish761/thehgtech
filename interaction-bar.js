@@ -225,35 +225,8 @@ function injectLeadMagnet() {
     }
 }
 
-// Inject Floating Coffee Widget
-function injectCoffeeWidget() {
-    // SECURITY: Ensure we are NOT on the homepage before doing anything
-    const path = window.location.pathname;
-    const isHomePage = path === '/' || path === '' || path.endsWith('index.html') || document.body.classList.contains('home-page');
-
-    if (isHomePage) return; // Homepage already has its own widget
-
-    // Prevent duplicate injections
-    if (document.getElementById('hg-coffee-floating-widget')) return;
-
-    const widgetHTML = `
-        <div id="hg-coffee-floating-widget" class="hg-coffee-widget">
-            <a href="https://buymeacoffee.com/thehgtech" target="_blank" rel="noopener noreferrer" class="hg-coffee-btn" aria-label="Support the lab">
-                <i class="fas fa-coffee"></i>
-            </a>
-            <div class="hg-coffee-tooltip">
-                <strong><i class="fas fa-shield-alt"></i> Keep it Free & Ad-Free</strong>
-                We spend dozens of hours researching and writing these guides. If this helped secure your environment, consider supporting the lab coffee fund.
-            </div>
-        </div>
-    `;
-
-    document.body.insertAdjacentHTML('beforeend', widgetHTML);
-}
-
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function () {
     checkLikeStatus();
     injectLeadMagnet(); // Automatically append the newsletter UI
-    injectCoffeeWidget(); // Append floating coffee widget
 });

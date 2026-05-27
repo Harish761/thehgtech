@@ -322,6 +322,33 @@
         }
     }
 
+
+    // ========== FLOATING COFFEE WIDGET ==========
+    function injectCoffeeWidget() {
+        // Ensure we are NOT on the homepage before doing anything
+        const path = window.location.pathname;
+        const isHomePage = path === '/' || path === '' || path.endsWith('index.html') || document.body.classList.contains('home-page');
+
+        if (isHomePage) return; // Homepage already has its own widget
+
+        // Prevent duplicate injections
+        if (document.getElementById('hg-coffee-floating-widget')) return;
+
+        const widgetHTML = `
+            <div id="hg-coffee-floating-widget" class="hg-coffee-widget">
+                <a href="https://buymeacoffee.com/thehgtech" target="_blank" rel="noopener noreferrer" class="hg-coffee-btn" aria-label="Support the lab">
+                    <i class="fas fa-coffee"></i>
+                </a>
+                <div class="hg-coffee-tooltip">
+                    <strong><i class="fas fa-shield-alt"></i> Keep it Free & Ad-Free</strong>
+                    We spend dozens of hours researching and writing. If this helped you, consider supporting the lab coffee fund.
+                </div>
+            </div>
+        `;
+
+        document.body.insertAdjacentHTML('beforeend', widgetHTML);
+    }
+
     // ========== INIT ON DOM READY ==========
     function init() {
         // Skip on desktop
@@ -329,6 +356,7 @@
 
         initBottomNav();
         hideBMC();
+        injectCoffeeWidget();
 
         // Load mobile news after a short delay (content.js needs to load first)
         setTimeout(() => {
