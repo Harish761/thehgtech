@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 26 2026",
+            "headline": "Zero-Day in KnowledgeDeliver LMS Exploited—Web Shells Deployed",
+            "title": "Critical Zero-Day in KnowledgeDeliver LMS Exploited to Install Godzilla Web Shell",
+            "content": "A critical zero-day vulnerability in the KnowledgeDeliver learning management system (LMS) has been exploited by hackers to install the Godzilla web shell, posing significant security risks. This flaw, which was unpatched at the time of the attack, allowed unauthorized access to server environments, facilitating further malicious activities. Organizations using KnowledgeDeliver, particularly in educational sectors, are at risk of data breaches and unauthorized access. The exploitation underscores the growing trend of targeting educational platforms, which often lack robust security measures. Affected entities should immediately apply available patches and enhance monitoring for unusual server activity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/knowledgedeliver-flaw-exploited-as-a-zero-day-to-install-web-shells/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "Charter Communications Breached—ShinyHunters Demand Ransom",
+            "title": "Charter Communications Confirms Data Breach Amid ShinyHunters Extortion Threat",
+            "content": "Charter Communications, a leading U.S. telecommunications company, has confirmed a data breach following an extortion threat from the ShinyHunters group. The attackers have threatened to release sensitive data unless a ransom is paid, highlighting the persistent threat of ransomware and extortion in the telecom sector. The breach potentially exposes customer data, posing privacy risks and regulatory challenges. This incident reflects the increasing sophistication of cybercriminal groups targeting large corporations. Charter is currently investigating the breach and advises customers to monitor their accounts for suspicious activity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/charter-confirms-data-breach-after-shinyhunters-extortion-threat/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "CISA Mandates Urgent Patch for Exploited Drupal Vulnerability",
+            "title": "CISA Orders Federal Agencies to Patch Actively Exploited Drupal SQL Injection Flaw",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive for U.S. federal agencies to patch a critical SQL injection vulnerability in the Drupal content management system (CMS). This flaw, actively exploited by threat actors, poses a significant risk to government systems, potentially allowing unauthorized data access and manipulation. Agencies have been given a strict deadline to implement the patch, emphasizing the critical nature of the vulnerability. This directive is part of CISA's ongoing efforts to secure federal digital infrastructure against emerging threats. Agencies are urged to prioritize this update to prevent potential breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-drupal-vulnerability/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "7-Eleven Breach Exposes 185,000 Customers' Data",
+            "title": "7-Eleven Data Breach by ShinyHunters Exposes Personal Information of 185,000",
+            "content": "The ShinyHunters extortion gang has compromised the systems of 7-Eleven, leading to the exposure of personal information belonging to over 185,000 individuals. This breach, which occurred in April, highlights the vulnerabilities in retail cybersecurity and the ongoing threat posed by organized cybercrime groups. The stolen data includes sensitive customer information, raising concerns about identity theft and fraud. 7-Eleven is working with cybersecurity experts to assess the breach's impact and enhance its security measures. Affected customers are advised to monitor their accounts and report any suspicious activities.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/7-eleven-data-breach-exposes-personal-information-of-185-000-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "KnowledgeDeliver LMS Flaw Used to Spread Godzilla, Cobalt Strike",
+            "title": "Exploited KnowledgeDeliver LMS Flaw Facilitates Godzilla and Cobalt Strike Deployment",
+            "content": "A high-severity security flaw in the KnowledgeDeliver LMS, popular in Japan, was exploited as a zero-day to deploy both the Godzilla web shell and Cobalt Strike Beacon. This vulnerability, now patched, allowed attackers to gain persistent access and conduct further malicious operations. The exploitation of this flaw underscores the critical need for timely patch management in educational software. Organizations using KnowledgeDeliver should ensure they have applied the latest security updates and conduct thorough security audits to prevent similar incidents. This case highlights the increasing targeting of educational platforms by sophisticated threat actors.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/knowledgedeliver-lms-flaw-exploited-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 23 2026",
+            "headline": "Laravel Lang Packages Hijacked—Credential-Stealing Malware Deployed",
+            "title": "Supply Chain Attack on Laravel Lang Packages Distributes Credential-Stealing Malware",
+            "content": "A sophisticated supply chain attack has compromised the Laravel Lang localization packages, exposing developers to credential-stealing malware. Attackers manipulated GitHub version tags to distribute malicious code through Composer packages, highlighting vulnerabilities in software supply chains. This breach underscores the critical need for developers to verify package integrity and monitor for unusual activity. The attack poses significant risks to developers relying on these packages, potentially leading to unauthorized access to sensitive systems. Developers are advised to review their dependencies and apply security best practices to mitigate such threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/laravel-lang-packages-hijacked-to-deploy-credential-stealing-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
             "headline": "185,000 Affected—7-Eleven Data Breach Exposes Personal Details",
             "title": "ShinyHunters Leak Compromises 185,000 in 7-Eleven Data Breach",
             "content": "A data breach at 7-Eleven has potentially impacted 185,000 individuals, with the hacker group ShinyHunters leaking sensitive information. The compromised data includes email addresses, names, addresses, and dates of birth, raising significant privacy concerns. This incident underscores the ongoing threat posed by cybercriminals targeting retail giants, exploiting vulnerabilities to access customer data. Affected individuals should monitor their accounts for suspicious activity and consider identity theft protection measures. This breach highlights the critical need for robust data protection strategies in retail operations.",
@@ -83,54 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/oncology-institute-discloses-third-party-data-breach/",
             "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Ghost CMS Flaw Exploited—700+ Sites Hijacked",
-            "title": "CVE-2026-26980 Exploited to Compromise Over 700 Ghost CMS Sites",
-            "content": "A critical SQL injection vulnerability, CVE-2026-26980, in Ghost CMS has been actively exploited, compromising over 700 websites. Threat actors have injected malicious JavaScript to conduct ClickFix attacks, aiming to manipulate web traffic for fraudulent purposes. With a CVSS score of 9.4, this vulnerability poses a severe risk to affected sites, necessitating immediate action from administrators. The exploitation underscores the importance of timely patching and monitoring for unusual activity. Users of Ghost CMS should apply the latest security updates and review their systems for signs of compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/ghost-cms-cve-2026-26980-exploited-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Richmond Radiology Breach—266,000 Patients Affected",
-            "title": "Data Breach at Radiology Associates of Richmond Impacts 266,000 Patients",
-            "content": "Radiology Associates of Richmond has suffered a data breach, resulting in the theft of files containing names and protected health information of 266,000 individuals. The breach highlights the ongoing risks faced by healthcare organizations in protecting sensitive patient data. As threat actors continue to target the healthcare sector, entities must prioritize cybersecurity measures to safeguard against such intrusions. Affected individuals should be vigilant for signs of identity theft and consider monitoring their credit reports. Healthcare providers are urged to enhance their security protocols to prevent future breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/266000-affected-by-data-breach-at-radiology-associates-of-richmond/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Mythos Detects 23,000 Vulnerabilities in OSS Projects",
-            "title": "Anthropic's Mythos Uncovers 23,000 Vulnerabilities Across Open Source Projects",
-            "content": "Anthropic's Mythos tool has identified 23,000 potential vulnerabilities across 1,000 open-source software (OSS) projects, with many confirmed as critical or high-severity. This discovery underscores the pervasive security challenges within the OSS ecosystem, where vulnerabilities can have widespread implications. Developers and maintainers are encouraged to prioritize vulnerability assessments and apply necessary patches promptly. The findings highlight the need for continuous security monitoring and the adoption of best practices in software development. Organizations relying on OSS should ensure robust security measures are in place to mitigate risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/anthropic-mythos-detected-23000-potential-vulnerabilities-across-1000-oss-projects/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Megalodon Attack—5,500 GitHub Repos Compromised",
-            "title": "Megalodon Supply Chain Attack Infects Over 5,500 GitHub Repositories",
-            "content": "A sophisticated supply chain attack, dubbed \"Megalodon,\" has compromised over 5,500 GitHub repositories. Attackers injected fake automated commits into GitHub Actions workflows, deploying payloads designed to steal credentials, continuous integration (CI) secrets, keys, and tokens. This incident highlights the vulnerabilities within software supply chains and the potential for widespread impact. Developers using GitHub are advised to review their repositories for unauthorized changes and enhance their security practices. The attack serves as a stark reminder of the importance of securing CI/CD pipelines against unauthorized access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-5500-github-repositories-infected-in-megalodon-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 24 2026",
-            "headline": "Ghost CMS SQL Flaw Exploited—ClickFix Campaign Unleashed",
-            "title": "Ghost CMS Vulnerability CVE-2026-26980 Exploited in ClickFix Campaign",
-            "content": "A critical SQL injection vulnerability, CVE-2026-26980, in Ghost CMS is being actively exploited in a large-scale campaign known as ClickFix. Attackers are injecting malicious JavaScript code into vulnerable systems, leading to unauthorized ClickFix attack flows. This vulnerability affects all versions of Ghost CMS prior to the latest patch, posing a significant risk to websites using this content management system. The campaign's scale suggests a coordinated effort to compromise numerous websites, potentially impacting millions of users. Administrators are urged to apply the latest security updates immediately to mitigate this threat.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ghost-cms-sql-injection-flaw-exploited-in-large-scale-clickfix-campaign/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 27 2026",
+            "headline": "Pope's AI Encyclical—40% to 100% AI-Generated",
+            "title": "AI Allegedly Used in Pope Leo XIV's Encyclical on AI's Impact",
+            "content": "Pope Leo XIV's latest encyclical, Magnifica Humanitas, which discusses the impact of artificial intelligence on humanity, may have been partially written by AI. Linch Zhang's analysis on the LessWrong forum suggests that AI contributed between 40% and 100% of certain paragraphs. This revelation raises questions about the role of AI in religious and philosophical discourse. The encyclical addresses the ethical implications of AI, urging caution in its development and deployment. The potential use of AI in crafting such a document highlights the technology's growing influence in unexpected areas. Religious leaders and technologists alike are encouraged to consider the ethical dimensions of AI's integration into human thought and communication.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/937801/pope-leo-xiv-magnifica-humanitas-ai-pangram",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "DuckDuckGo Installs Surge 30% Amid Google AI Search Backlash",
+            "title": "Users Flock to DuckDuckGo as Google AI Search Faces Criticism",
+            "content": "DuckDuckGo has experienced a 30% increase in app installations following Google's overhaul of its search engine at I/O 2026, which replaced traditional blue links with AI-driven agents. This shift has sparked significant user backlash, with many seeking alternatives that prioritize privacy and traditional search formats. DuckDuckGo's rise indicates a growing demand for search engines that resist AI-centric changes. The change in user behavior underscores a broader trend of skepticism towards AI's role in everyday technology. Users concerned about privacy and control over search results are increasingly turning to platforms like DuckDuckGo.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "OpenRouter Valuation Soars to $1.3B—5x Usage Growth in 6 Months",
+            "title": "OpenRouter's Valuation Doubles to $1.3 Billion Amid Rapid Growth",
+            "content": "OpenRouter has successfully raised $113 million in a Series B funding round led by CapitalG, doubling its valuation to $1.3 billion. The company's platform, which supports multiple AI models, has seen a fivefold increase in usage over the past six months. This growth reflects the industry's shift towards multi-model AI solutions, catering to diverse user needs. OpenRouter's success highlights the increasing demand for flexible AI platforms capable of integrating various AI technologies. Investors and developers should note the potential of multi-model platforms in shaping the future of AI applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "FBI: Identifying AI Porn Posters Easier Than You Think",
+            "title": "FBI Details Ease of Identifying Non-Consensual AI Porn Posters",
+            "content": "An FBI agent has revealed how easily individuals posting AI-generated porn without consent can be identified, citing a case where a saved Instagram post linked a man to an AI porn account. This case underscores the risks associated with digital footprints and the capabilities of law enforcement in tracking online activities. The FBI's ability to trace such activities highlights the importance of digital privacy and the potential consequences of misuse. Individuals involved in creating or sharing non-consensual AI content should be aware of the legal and ethical implications. The case serves as a reminder of the need for robust privacy practices and ethical considerations in AI content creation.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "AI Warfare Reality—UN Forum Discusses Autonomous Systems",
+            "title": "AI Warfare Becomes Reality at UN's Lethal Autonomous Systems Forum",
+            "content": "The Convention on Certain Conventional Weapons, an international forum hosted by the United Nations in Geneva, has shifted its focus from hypothetical discussions to the realities of AI warfare. Attendees, including Branka Marijan, noted the increasing relevance of lethal autonomous systems in modern conflicts. The forum's discussions reflect growing concerns over the ethical and strategic implications of AI in warfare. As autonomous systems become more prevalent, nations are urged to consider regulations and frameworks to manage their deployment. The forum highlights the urgent need for international cooperation in addressing the challenges posed by AI in military applications.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/937028/military-ai-warfare-red-lines",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "Uber Questions AI Spending—Budget Exhausted in 4 Months",
+            "title": "Uber Reevaluates AI Investments After Rapid Budget Depletion",
+            "content": "Uber is reassessing its AI investment strategy after depleting its annual AI budget just four months into 2026. In an interview with Rapid Response, Uber's president and COO Andrew Macdonald expressed concerns over the lack of meaningful returns from AI initiatives. This situation highlights the challenges companies face in balancing AI innovation with financial sustainability. Uber's experience serves as a cautionary tale for tech leaders investing heavily in AI without clear ROI metrics. Companies are encouraged to critically evaluate their AI spending and focus on projects that deliver tangible benefits.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
+            "relatedResources": []
+        },
         {
             "date": "May 26 2026",
             "headline": "AI Hatred Fuels Anti-Tech Extremism—Feds Issue Warning",
@@ -210,51 +273,6 @@ const websiteContent = {
             "content": "In his inaugural papal document, \"Magnifica Humanitas,\" Pope Leo XIV addresses the profound implications of artificial intelligence on human dignity. Released on Monday, the manifesto warns against the unchecked power of AI technologies and their potential to undermine human values. The pope emphasizes the importance of safeguarding the human person in the face of rapid technological change, highlighting the ethical challenges posed by AI-driven systems. This call to action urges developers and tech leaders to prioritize human-centric design and ethical considerations in AI development. The document underscores the necessity for a balanced approach that respects human dignity while embracing technological progress.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Last Call—Apply for Startup Battlefield 200 by May 27",
-            "title": "Startup Battlefield 200 Deadline Approaches: Apply for $100K and Visibility",
-            "content": "The application window for Startup Battlefield 200, a premier platform for emerging tech companies, is closing on May 27. This opportunity offers startups a chance to compete for $100,000, gain valuable venture capital access, and receive global visibility through TechCrunch coverage. Participants will benefit from networking with industry leaders and showcasing their innovations on a prominent stage. The event is a critical opportunity for startups aiming to accelerate their growth and secure funding. Interested parties are encouraged to apply promptly to avoid missing out on this unique platform for innovation and recognition.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "AI Terminology—Clarifying 'Harness' and 'Scaffold'",
-            "title": "Understanding Key AI Terms: Harness, Scaffold, and AI Agents",
-            "content": "The AI community is urged to standardize terminology around concepts like \"harness,\" \"scaffold,\" and \"AI agents\" to enhance clarity and communication. These terms, often used interchangeably, have distinct meanings that are crucial for precise discourse in AI development. \"Harness\" refers to the integration of AI capabilities into existing systems, while \"scaffold\" denotes the framework supporting AI model training and deployment. Understanding these distinctions is vital for developers and researchers to effectively collaborate and innovate. As AI technologies evolve, clear and consistent terminology will facilitate better understanding and advancement in the field.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/agent-glossary",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Save $410—TechCrunch Disrupt 2026 Early Bird Ends Soon",
-            "title": "Last Chance for Early Bird Discounts on TechCrunch Disrupt 2026 Passes",
-            "content": "Tech professionals and enthusiasts have until May 29 at 11:59 p.m. PT to secure early bird discounts for TechCrunch Disrupt 2026 in San Francisco. Attendees can save up to $410 on passes, gaining access to a premier event featuring industry leaders, groundbreaking startups, and insightful discussions. This annual conference is a hub for networking, learning, and exploring the latest trends in technology and innovation. Participants are encouraged to register now to take advantage of the savings and ensure their place at this influential gathering. The event promises valuable insights and opportunities for collaboration across the tech sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/25/5-days-left-save-up-to-410-on-techcrunch-disrupt-2026-passes-before-prices-increase/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 24 2026",
-            "headline": "Google Faces AI Security Challenges Amid Industry Transition",
-            "title": "Google and Industry Grapple with Real-Time AI Security Challenges",
-            "content": "As the AI landscape rapidly evolves, even tech giant Google is navigating the complex terrain of AI security in real time. This transition period sees organizations worldwide grappling with the deployment and protection of AI systems. The challenge lies in securing AI models that are increasingly integrated into critical operations, demanding robust security measures to prevent misuse or breaches. This period of adjustment highlights the need for continuous monitoring and adaptation of security protocols. Professionals in the field must stay informed about emerging threats and best practices to safeguard AI deployments effectively.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 24 2026",
-            "headline": "Chatbots Hacked—Exploiting AI Personalities for Malicious Gains",
-            "title": "Hackers Exploit AI Chatbot Personalities to Breach Systems",
-            "content": "Hackers are increasingly targeting AI chatbots by exploiting their programmed personalities to manipulate responses and gain unauthorized access to systems. This new wave of attacks leverages the inherent conversational nature of chatbots, which can be tricked into revealing sensitive information or executing harmful commands. The vulnerabilities primarily affect first-generation AI chatbots, which lack robust security measures against such manipulative tactics. Organizations using these chatbots are at risk of data breaches and unauthorized transactions. Security professionals are advised to implement stricter input validation and continuously monitor chatbot interactions to mitigate these risks.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/935545/hackers-ai-chatbots",
             "relatedResources": []
         }
     ],
@@ -341,6 +359,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-48172",
+            "dateAdded": "May 26, 2026",
+            "vendor": "LiteSpeed cPanel Plugin",
+            "description": "LiteSpeed cPanel Plugin contains privilege escalation vulnerability that is exposed via the user-end cPanel plugin, which can be abused by any cPanel user account to execute arbitrary scripts with roo",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48172",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-9082",
             "dateAdded": "May 22, 2026",
             "vendor": "Drupal Core",
@@ -371,83 +400,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34926",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2008-4250",
-            "dateAdded": "May 20, 2026",
-            "vendor": "Microsoft Windows",
-            "description": "Microsoft Windows contains a buffer overflow vulnerability in the Windows Server Service that allows remote attackers to execute arbitrary code via a crafted RPC request that triggers an overflow duri",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-4250",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2009-1537",
-            "dateAdded": "May 20, 2026",
-            "vendor": "Microsoft DirectX",
-            "description": "Microsoft DirectX contains a NULL byte overwrite vulnerability in the QuickTime Movie Parser Filter in quartz.dll in DirectShow which could allow remote attackers to execute arbitrary code via a craft",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-1537",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2009-3459",
-            "dateAdded": "May 20, 2026",
-            "vendor": "Adobe Acrobat and Reader",
-            "description": "Adobe Acrobat and Reader contain a heap-based buffer overflow vulnerability which could allow remote attackers to execute arbitrary code via a crafted PDF file that triggers memory corruption.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2009-3459",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2010-0249",
-            "dateAdded": "May 20, 2026",
-            "vendor": "Microsoft Internet Explorer",
-            "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code by accessing a pointer associated with a deleted object. The impacted p",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-0249",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2010-0806",
-            "dateAdded": "May 20, 2026",
-            "vendor": "Microsoft Internet Explorer",
-            "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code via vectors involving access to an invalid pointer after the deletion o",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-0806",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-41091",
-            "dateAdded": "May 20, 2026",
-            "vendor": "Microsoft Defender",
-            "description": "Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41091",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-45498",
-            "dateAdded": "May 20, 2026",
-            "vendor": "Microsoft Defender",
-            "description": "Microsoft Defender contains an unspecified vulnerability that allows for denial of service.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45498",
             "isZeroDay": false
         }
     ],
