@@ -351,12 +351,20 @@
 
     // ========== INIT ON DOM READY ==========
     function init() {
-        // Skip on desktop
+        // Run global features first (regardless of desktop or mobile)
+        hideBMC();
+        injectCoffeeWidget();
+
+        // Keep hiding BMC periodically (it loads async)
+        setTimeout(hideBMC, 500);
+        setTimeout(hideBMC, 1000);
+        setTimeout(hideBMC, 2000);
+        setTimeout(hideBMC, 5000);
+
+        // Skip mobile-specific features on desktop
         if (window.innerWidth > 768) return;
 
         initBottomNav();
-        hideBMC();
-        injectCoffeeWidget();
 
         // Load mobile news after a short delay (content.js needs to load first)
         setTimeout(() => {
@@ -379,11 +387,7 @@
             initNewsSwipe();
         }, 700);
 
-        // Keep hiding BMC periodically (it loads async)
-        setTimeout(hideBMC, 500);
-        setTimeout(hideBMC, 1000);
-        setTimeout(hideBMC, 2000);
-        setTimeout(hideBMC, 5000);
+
     }
 
     // ========== SWIPE GESTURE HANDLING ==========
