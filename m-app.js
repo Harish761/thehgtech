@@ -29,7 +29,7 @@
             '.bmc-btn',
             'script[src*="buymeacoffee"]',
             'div[class*="bmc"]',
-            'a[href*="buymeacoffee"]'
+            'a[href*="buymeacoffee"]:not(.hg-coffee-btn):not(.coffee-btn)'
         ];
 
         bmcSelectors.forEach(sel => {
@@ -329,7 +329,7 @@
         const path = window.location.pathname;
         const isHomePage = path === '/' || path === '' || path.endsWith('index.html') || document.body.classList.contains('home-page');
 
-        if (isHomePage) return; // Homepage already has its own widget
+        // if (isHomePage) return; // Homepage now gets the global widget too
 
         // Prevent duplicate injections
         if (document.getElementById('hg-coffee-floating-widget')) return;
