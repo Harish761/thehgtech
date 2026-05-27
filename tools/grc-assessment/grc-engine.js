@@ -1,3 +1,4 @@
+function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 /**
  * TheHGTech GRC Gap Analysis Engine v2.0
  * Multi-Phase Architecture: Scope Selection -> Engine -> Dashboard
@@ -290,7 +291,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const scoreEl = document.getElementById('wbSessionScore');
         const startedDate = userState._started ? new Date(userState._started).toLocaleDateString() : 'recently';
         if (infoEl) infoEl.innerText = `Session started ${startedDate} · ${answered} controls answered`;
-        if (scoreEl && lastEntry) scoreEl.innerHTML = `Last recorded score: <strong style="color:var(--accent-cyan);">${lastEntry.score}%</strong>`;
+        if (scoreEl && lastEntry) scoreEl.innerHTML = `Last recorded score: <strong style="color:var(--accent-cyan);">${escapeHTMLBasic(lastEntry.score)}%</strong>`;
 
         modal.style.display = 'flex';
 
@@ -450,7 +451,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         presets.forEach(preset => {
             const btn = document.createElement('button');
             btn.className = 'preset-btn';
-            btn.innerHTML = `<i class="fas ${preset.icon}"></i> ${preset.label}`;
+            btn.innerHTML = `<i class="fas ${escapeHTMLBasic(preset.icon)}"></i> ${escapeHTMLBasic(preset.label)}`;
             btn.title = preset.desc;
             btn.style.cssText = `
                 background: rgba(255,255,255,0.04); color: var(--text-muted); border: 1px solid var(--border);
@@ -1633,9 +1634,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (lastScore) {
                 const diff = finalScoreVal - parseInt(lastScore);
                 if (diff > 0) {
-                    scoreComparisonEl.innerHTML = `<span style="color:#10B981;"><i class="fas fa-caret-up"></i> Up ${diff}%</span> vs last session`;
+                    scoreComparisonEl.innerHTML = `<span style="color:#10B981;"><i class="fas fa-caret-up"></i> Up ${escapeHTMLBasic(diff)}%</span> vs last session`;
                 } else if (diff < 0) {
-                    scoreComparisonEl.innerHTML = `<span style="color:#EF4444;"><i class="fas fa-caret-down"></i> Down ${Math.abs(diff)}%</span> vs last session`;
+                    scoreComparisonEl.innerHTML = `<span style="color:#EF4444;"><i class="fas fa-caret-down"></i> Down ${escapeHTMLBasic(Math.abs(diff))}%</span> vs last session`;
                 } else {
                     scoreComparisonEl.innerHTML = `<span style="color:var(--text-muted);">Stable</span> vs last session`;
                 }

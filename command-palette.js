@@ -202,8 +202,13 @@ class CommandPalette {
         results.push(...this.searchIndex.filter(i => i.title.toLowerCase().includes(q) || i.desc?.toLowerCase().includes(q)).slice(0, 8));
         this.results = results;
 
-        if (!results.length) {
-            this.resultsContainer.innerHTML = `<div class="cmd-palette__empty"><i class="fas fa-search"></i><div>No results for "${query}"</div></div>`;
+        function escapeHTMLBasic(str) {
+            if (!str) return '';
+            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+        
+        if (results.length === 0) {
+            this.resultsContainer.innerHTML = `<div class="cmd-palette__empty"><i class="fas fa-search"></i><div>No results for "${escapeHTMLBasic(query)}"</div></div>`;
             return;
         }
 

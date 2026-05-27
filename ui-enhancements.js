@@ -1,3 +1,4 @@
+function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 /**
  * UI ENHANCEMENTS - Back to Top, Skeleton Loaders, etc.
  * Version: 1.0
@@ -541,7 +542,7 @@
             const dateStr = new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
             const tagStr = item.type === 'feature' ? '[FEATURE] ' : '[ENHANCEMENT] ';
             
-            document.getElementById('ccModalIcon').innerHTML = `<i class="fas ${item.icon || 'fa-bolt'}"></i>`;
+            document.getElementById('ccModalIcon').innerHTML = `<i class="fas ${escapeHTMLBasic(item.icon) || 'fa-bolt'}"></i>`;
             document.getElementById('ccModalDate').innerText = dateStr;
             document.getElementById('ccModalTitle').innerText = tagStr + item.title;
             document.getElementById('ccModalDesc').innerText = item.description || '';

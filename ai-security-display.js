@@ -1,3 +1,4 @@
+function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 /**
  * AI Security Display v3.0 - Unified Threat Intelligence Dashboard
  * ═══════════════════════════════════════════════════════════════════
@@ -976,7 +977,7 @@
             `;
         }
 
-        icon.innerHTML = `<i class="fas ${iconClass}" style="color: ${iconColor};"></i>`;
+        icon.innerHTML = `<i class="fas ${escapeHTMLBasic(iconClass)}" style="color: ${escapeHTMLBasic(iconColor)};"></i>`;
         body.innerHTML = bodyContent;
         sourceLink.href = sourceUrl;
 

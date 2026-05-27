@@ -1,3 +1,4 @@
+function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 // Comprehensive Threat Intelligence Analytics
 // Calculates metrics and generates professional analytics dashboard
 
@@ -307,7 +308,7 @@ async function loadAIInsightsSidebar() {
 
     } catch (error) {
         console.error('Error loading AI insights:', error);
-        container.innerHTML = `<p style="text-align:center; color:var(--accent-red);">Failed to load insights. <br><small>${error.message}</small></p>`;
+        container.innerHTML = `<p style="text-align:center; color:var(--accent-red);">Failed to load insights. <br><small>${escapeHTMLBasic(error.message)}</small></p>`;
     }
 }
 
