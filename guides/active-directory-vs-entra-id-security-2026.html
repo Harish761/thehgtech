@@ -706,7 +706,7 @@
         <!-- BLUF -->
         <div class="info-box">
             <strong><i class="fas fa-shield-alt"></i> BLUF (Bottom Line Up Front):</strong>
-            Moving from on-premises Active Directory to Microsoft Entra ID is not a migration — it is a complete inversion of the security responsibility model. You are trading total infrastructure control for massive operational simplification, but in doing so you hand Microsoft the keys to your availability, and you introduce an entirely new class of identity-centric attack vectors. This guide will tell you exactly what you gain, what you lose, and what you must do differently as a Security Engineer.
+            Moving from on-premises Active Directory to Microsoft Entra ID is a fundamental inversion of the security responsibility model — and it is largely <em>the right direction</em> for most modern enterprises. Entra ID eliminates entire classes of on-prem attack vectors (Kerberoasting, Golden Ticket, DCSync), delivers Just-in-Time privileged access, and provides globally-distributed, always-updated authentication infrastructure you could never afford to build yourself. The risks are real — vendor dependency, new attack surfaces, and a steep learning curve — but they are manageable with the right controls. This guide gives you both sides: what you gain, what you lose, and exactly what you must do differently as a Security Engineer.
             <br><br>
             <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                 <span class="confidence-badge"><i class="fas fa-check-circle"></i> Research-Grade</span>
@@ -728,15 +728,18 @@
                     </ul>
                 </li>
                 <li><a href="#shared-responsibility">3. Shared Responsibility &amp; Vendor Control</a></li>
-                <li><a href="#controls">4. Granular Controls: GPOs to Conditional Access</a></li>
-                <li><a href="#cia-triad">5. The CIA Triad Impact &amp; The Outage Problem</a></li>
-                <li><a href="#attack-vectors">6. New Attack Vectors in the Cloud Identity Plane</a></li>
-                <li><a href="#monitoring">7. Security Tools &amp; Monitoring Reality</a></li>
-                <li><a href="#migration">8. Migration Security Playbook</a></li>
-                <li><a href="#hardening">9. Entra ID Security Hardening Checklist</a></li>
-                <li><a href="#upskill">10. How to Adapt &amp; Upskill as a Security Engineer</a></li>
-                <li><a href="#decision">11. Decision Framework: AD or Entra ID?</a></li>
-                <li><a href="#future">12. Future Outlook 2027–2028</a></li>
+                <li><a href="#entra-wins">4. What Entra ID Gets Right: The Security Wins</a></li>
+                <li><a href="#attack-surface">5. Attack Surface Comparison: AD vs Entra ID</a></li>
+                <li><a href="#controls">6. Granular Controls: GPOs to Conditional Access (Deep Dive)</a></li>
+                <li><a href="#cia-triad">7. The CIA Triad Impact &amp; The Outage Problem</a></li>
+                <li><a href="#attack-vectors">8. New Attack Vectors in the Cloud Identity Plane</a></li>
+                <li><a href="#monitoring">9. Security Tools &amp; Monitoring Reality</a></li>
+                <li><a href="#migration">10. Migration Security Playbook</a></li>
+                <li><a href="#cis">11. CIS Benchmarks: Gap Analysis for AD &amp; Entra ID</a></li>
+                <li><a href="#hardening">12. Entra ID Security Hardening Checklist</a></li>
+                <li><a href="#upskill">13. How to Adapt &amp; Upskill as a Security Engineer</a></li>
+                <li><a href="#decision">14. Decision Framework: AD or Entra ID?</a></li>
+                <li><a href="#future">15. Future Outlook 2027–2028</a></li>
             </ul>
         </div>
 
@@ -896,11 +899,103 @@
 
         <div class="warning-box">
             <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-red);"></i> The Black Box &amp; Vendor Lock-In Reality</strong>
-            <p style="margin-top: 0.75rem;">Microsoft controls the token signing infrastructure. If the government of a sovereign nation demanded Microsoft invalidate tokens for a specific tenant — or if a rogue Microsoft insider modified the root signing keys — you would have no visibility and no recourse. The 2023 Storm-0558 incident, where Chinese nation-state actors forged Entra ID access tokens using a compromised Microsoft signing key, is the most chilling proof of this model's systemic risk. That was not your misconfiguration. That was a failure inside Microsoft's "black box" — and your tenant was exposed regardless.</p>
+            <p style="margin-top: 0.75rem;">Microsoft controls the token signing infrastructure. The 2023 Storm-0558 incident, where Chinese nation-state actors forged Entra ID access tokens using a compromised Microsoft signing key, is the clearest proof of this systemic risk. That was not a tenant misconfiguration. That was a failure inside Microsoft's infrastructure — and US Government tenants were exposed regardless of how well they managed their own security posture.</p>
         </div>
 
-        <!-- ===== SECTION 4 ===== -->
-        <h2 id="controls">4. Granular Controls: From GPOs to Conditional Access</h2>
+        <!-- ===== SECTION 4: What Entra ID Gets Right ===== -->
+        <h2 id="entra-wins">4. What Entra ID Gets Right: The Security Wins</h2>
+
+        <p>A balanced assessment requires acknowledging what Entra ID fundamentally solves that on-prem AD never could. For most enterprise environments, migrating to Entra ID <em>raises</em> the security baseline — but only if the transition is executed correctly.</p>
+
+        <div class="success-box">
+            <strong><i class="fas fa-thumbs-up"></i> Entra ID Eliminates Entire Attack Classes</strong>
+            <ul style="margin-top: 1rem; margin-bottom: 0;">
+                <li>✅ <strong>No more Kerberoasting:</strong> Entra ID uses OAuth 2.0 — there are no Service Principal Names (SPNs) with crackable encrypted service tickets. The entire Kerberoasting technique is architecturally irrelevant in a cloud-only tenant.</li>
+                <li>✅ <strong>No Golden Ticket attacks:</strong> Without a KRBTGT account or Kerberos KDC, Golden Ticket forgery is impossible. Attackers cannot forge long-lived authentication tokens offline.</li>
+                <li>✅ <strong>No DCSync:</strong> There are no domain controllers for attackers to force-replicate credentials from. Credential database extraction via DRSUAPI replication is eliminated.</li>
+                <li>✅ <strong>No lateral movement via SMB/NTLM:</strong> Cloud-native workloads don't expose SMB shares or NTLM challenges on the network. Pass-the-Hash becomes far less viable.</li>
+                <li>✅ <strong>Built-in JIT Privileged Access via PIM:</strong> On-prem AD required complex PAM solutions (CyberArk, BeyondTrust) to achieve JIT access. Entra ID PIM is native, included with P2 licensing, and enforces approval workflows, time limits, and MFA on role activation.</li>
+                <li>✅ <strong>Global infrastructure with 99.99% SLA:</strong> A typical SME or mid-market company cannot build and maintain 99.99% uptime for their AD infrastructure. Microsoft's global data center network, geo-replication, and investment scale delivers higher availability than any self-managed DC setup.</li>
+                <li>✅ <strong>Continuous threat intelligence:</strong> Entra ID Protection analyzes trillions of signals per day across Microsoft's global tenant ecosystem. When a credential appears in a breach dump or a sign-in pattern matches a known AiTM kit, Entra ID can automatically flag or block that sign-in — before you even write a detection rule.</li>
+            </ul>
+        </div>
+
+        <!-- ===== SECTION 5: Attack Surface Comparison ===== -->
+        <h2 id="attack-surface">5. Attack Surface Comparison: AD vs Entra ID</h2>
+
+        <p>The attack surface does not disappear with Entra ID — it transforms. Understanding this transformation is the most critical mental model shift for any Security Engineer.</p>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Attack Category</th>
+                        <th class="ad-col">Active Directory (On-Prem)</th>
+                        <th class="entra-col">Microsoft Entra ID (Cloud)</th>
+                        <th>Severity Shift</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature">Credential Attacks</td>
+                        <td>NTLM hash cracking, Kerberoasting, AS-REP Roasting, Pass-the-Hash</td>
+                        <td>Password spray, credential stuffing against Entra ID endpoints</td>
+                        <td><span class="badge-entra">Reduced</span> — No hashes to crack</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Privilege Escalation</td>
+                        <td>Golden Ticket, Silver Ticket, ACL abuse (WriteDACL), AdminSDHolder</td>
+                        <td>Consent abuse, PIM policy gaps, role assignment misconfiguration</td>
+                        <td><span class="badge-tie">Different Surface</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Persistence</td>
+                        <td>Golden Ticket (10-year expiry), skeleton key malware, DC backdoor</td>
+                        <td>OAuth app credential addition, federated domain backdoors, rogue PIM assignments</td>
+                        <td><span class="badge-tie">Different Surface</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Lateral Movement</td>
+                        <td>Pass-the-Hash via SMB, WMI, Remote Registry, PsExec</td>
+                        <td>Permission-based (access one app → enumerate all apps the identity can access)</td>
+                        <td><span class="badge-entra">Reduced Network Exposure</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">MFA Bypass</td>
+                        <td>N/A — AD doesn't natively support MFA</td>
+                        <td>AiTM proxy, Push bombing, Device Code flow, SIM swap</td>
+                        <td><span class="badge-ad">New AD Advantage</span> — Cloud-specific</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Session Hijacking</td>
+                        <td>Pass-the-Ticket (Kerberos TGT theft via Mimikatz)</td>
+                        <td>Pass-the-Cookie, PRT theft, Refresh Token extraction</td>
+                        <td><span class="badge-tie">Different Surface</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Supply Chain / App</td>
+                        <td>Malicious GPO scripts, domain controller compromise via vuln</td>
+                        <td>Consent phishing, OAuth app supply chain, malicious Microsoft Graph integrations</td>
+                        <td><span class="badge-ad">New AD Advantage</span> — Cloud-specific</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Infrastructure Attacks</td>
+                        <td>DC RCE (ZeroLogon, PrintNightmare, EternalBlue), LDAP injection</td>
+                        <td>None — you have no DC to attack; Microsoft manages infrastructure</td>
+                        <td><span class="badge-entra">Major Reduction</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Availability Disruption</td>
+                        <td>DC outage limited to site/domain; resilient via secondary DCs</td>
+                        <td>Global Entra ID outage cascades to all dependent SaaS/apps</td>
+                        <td><span class="badge-ad">AD Advantage</span> — Blast radius control</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== SECTION 6 ===== -->
+        <h2 id="controls">6. Granular Controls: From GPOs to Conditional Access (Deep Dive)</h2>
 
         <p>Group Policy Objects gave administrators enormous, low-level control. A GPO can configure 4,000+ settings — from disabling USB ports to setting the NTP server. This granularity is gone in Entra ID's native cloud model.</p>
 
@@ -919,45 +1014,75 @@
                 <tbody>
                     <tr>
                         <td class="feature">Password Policy</td>
-                        <td>Default Domain Policy, Fine-Grained Password Policy (PSO)</td>
-                        <td>Entra ID Password Protection + Authentication Strength policies</td>
-                        <td><span class="badge-risk">High</span> — Weak passwords &rarr; password spray</td>
+                        <td>Default Domain Policy + Fine-Grained PSO per OU</td>
+                        <td>Entra ID Password Protection, Authentication Strength, Smart Lockout</td>
+                        <td><span class="badge-risk">High</span> — Weak passwords &rarr; password spray at scale</td>
                     </tr>
                     <tr>
                         <td class="feature">MFA Enforcement</td>
-                        <td>N/A natively (requires RADIUS/NPS for VPN)</td>
-                        <td>Conditional Access — require MFA per app, per risk, per location</td>
-                        <td><span class="badge-risk">Critical</span> — Missing CA rules = MFA bypass</td>
+                        <td>N/A natively (RADIUS/NPS extension for VPN only)</td>
+                        <td>Conditional Access — require MFA per app, per risk level, per named location</td>
+                        <td><span class="badge-risk">Critical</span> — Missing or misconfigured CA rules = full MFA bypass</td>
                     </tr>
                     <tr>
                         <td class="feature">Privileged Access</td>
-                        <td>Domain Admin / Protected Users group, Admin tier model</td>
-                        <td>PIM with JIT activation, approval workflows, access reviews</td>
-                        <td><span class="badge-risk">Critical</span> — Standing GA roles are instant SPOF</td>
+                        <td>Domain Admin / Enterprise Admin (persistent), Admin tier model, Protected Users</td>
+                        <td>PIM — JIT activation, approval workflow, justification, time-bound (1–8 hrs max)</td>
+                        <td><span class="badge-risk">Critical</span> — Standing GA roles are instant tenant SPOF</td>
                     </tr>
                     <tr>
                         <td class="feature">App Access Control</td>
-                        <td>Software Restriction Policies / AppLocker / WDAC via GPO</td>
-                        <td>Enterprise Applications, App Registration consent policies</td>
-                        <td><span class="badge-risk">High</span> — Rogue OAuth apps can read all mail</td>
+                        <td>AppLocker / WDAC / SRP via GPO for local execution</td>
+                        <td>Enterprise App registration + admin consent policy + App Governance</td>
+                        <td><span class="badge-risk">High</span> — Rogue OAuth apps can exfiltrate all mail and files</td>
                     </tr>
                     <tr>
                         <td class="feature">Session Lifetime</td>
-                        <td>Kerberos ticket lifetime (10 hrs), Kerberos renewal (7 days)</td>
-                        <td>Token lifetime policies, Continuous Access Evaluation (CAE)</td>
-                        <td><span class="badge-risk">High</span> — Long refresh tokens enable persistent attacks</td>
+                        <td>Kerberos TGT lifetime (10 hrs default), renewable for 7 days</td>
+                        <td>Token lifetime policy + CAE (real-time revocation within seconds for M365)</td>
+                        <td><span class="badge-risk">High</span> — 90-day refresh tokens enable persistent post-compromise access</td>
                     </tr>
                     <tr>
                         <td class="feature">Device Trust</td>
-                        <td>Domain Join (machine account in AD)</td>
-                        <td>Entra Join + Intune compliant device = CA requirement</td>
-                        <td><span class="badge-risk">Medium</span> — Unmanaged devices bypass device CA controls</td>
+                        <td>Domain Join (computer account in AD, trust based on machine cert)</td>
+                        <td>Entra Join or Hybrid Join + Intune compliance CA condition</td>
+                        <td><span class="badge-risk">Medium</span> — Personal/unmanaged devices bypass device-based CA rules</td>
                     </tr>
                     <tr>
-                        <td class="feature">Script Execution</td>
-                        <td>PowerShell execution policy via GPO</td>
-                        <td>Intune Win32 app + PowerShell script deployment</td>
-                        <td><span class="badge-risk">Medium</span> — Poor script signing = LOLBin abuse</td>
+                        <td class="feature">Network Access Control</td>
+                        <td>IP subnet GPO restrictions, 802.1X via NPS/RADIUS, VPN group policy</td>
+                        <td>Named Locations in CA, compliant network check, Global Secure Access (GSA)</td>
+                        <td><span class="badge-risk">Medium</span> — Overly permissive Named Locations = location bypass</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Account Lockout</td>
+                        <td>AD Lockout Policy — lockout after N failed attempts, unlock via admin or wait</td>
+                        <td>Entra ID Smart Lockout — cloud-intelligent, tracks familiar vs unfamiliar locations</td>
+                        <td><span class="badge-entra">Advantage</span> — Smart Lockout is more resilient to distributed spray</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Logging &amp; Auditability</td>
+                        <td>Windows Event Log (DC Security Log): 4624, 4625, 4728, 4732 — stored locally</td>
+                        <td>Entra ID Sign-in Logs + Audit Logs via API — 30-day retention (P2); Stream to Sentinel</td>
+                        <td><span class="badge-risk">Medium</span> — Logs deleted after retention window; export is critical</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Script Execution Policy</td>
+                        <td>PowerShell execution policy + WDAC via GPO; AMSI on endpoints</td>
+                        <td>Intune PowerShell script deployment + Defender for Endpoint ASR rules</td>
+                        <td><span class="badge-risk">Medium</span> — No script signing enforcement = living-off-the-land abuse</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Guest &amp; External Access</td>
+                        <td>External trusts or explicit guest accounts in AD — manual lifecycle</td>
+                        <td>Entra ID B2B + External Collaboration settings + Entitlement Management</td>
+                        <td><span class="badge-risk">High</span> — Overly permissive B2B settings = shadow tenant exposure</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Delegation Model</td>
+                        <td>OU-level delegation via ACLs, AdminSDHolder protection for admin objects</td>
+                        <td>Administrative Units (AUs) + scoped role assignments (e.g., User Admin scoped to AU)</td>
+                        <td><span class="badge-tie">Similar Risk</span> — Both require rigorous least-privilege design</td>
                     </tr>
                 </tbody>
             </table>
@@ -983,8 +1108,8 @@
             <div class="defense-box">Set user consent to "Do not allow user consent." Require admin consent for all apps. Use the App Governance add-on in Defender for Cloud Apps to get visibility into all app permissions granted.</div>
         </div>
 
-        <!-- ===== SECTION 5 ===== -->
-        <h2 id="cia-triad">5. The CIA Triad Impact &amp; The Outage Problem</h2>
+        <!-- ===== SECTION 7 ===== -->
+        <h2 id="cia-triad">7. The CIA Triad Impact &amp; The Outage Problem</h2>
 
         <p>The CIA Triad — Confidentiality, Integrity, and Availability — is the foundational security model. Moving to Entra ID shifts the threat profile for all three pillars dramatically.</p>
 
@@ -1046,8 +1171,8 @@
 
         <p>Attackers who have compromised a cloud identity no longer need to move laterally through networks. They move laterally through permissions. Compromising a user with SharePoint Admin grants immediate read/write access to every SharePoint site. Compromising an Application Administrator allows the attacker to add credentials to any App Registration, creating a persistent backdoor that survives password resets.</p>
 
-        <!-- ===== SECTION 6 ===== -->
-        <h2 id="attack-vectors">6. New Attack Vectors in the Cloud Identity Plane</h2>
+        <!-- ===== SECTION 8 ===== -->
+        <h2 id="attack-vectors">8. New Attack Vectors in the Cloud Identity Plane</h2>
 
         <div class="exploit-box">
             <span class="exploit-label"><i class="fas fa-exclamation-triangle"></i> Attack Vector 1: Consent Phishing</span>
@@ -1074,7 +1199,7 @@
         </div>
 
         <!-- ===== SECTION 7 ===== -->
-        <h2 id="monitoring">7. Security Tools &amp; Monitoring Reality</h2>
+        <h2 id="monitoring">9. Security Tools &amp; Monitoring Reality</h2>
 
         <img src="/images/guides/entra_id_cloud_dashboard.png"
              alt="A SOC analyst at multiple monitors displaying Entra ID sign-in logs, identity threat detection graphs, and cloud security analytics"
@@ -1156,33 +1281,65 @@
 | where count_ > 3</code></pre>
 
         <!-- ===== SECTION 8 ===== -->
-        <h2 id="migration">8. Migration Security Playbook</h2>
+        <h2 id="migration">10. Migration Security Playbook</h2>
 
-        <p>A secure migration is a phased migration. Organizations that attempt to cut over all at once consistently introduce critical misconfigurations that take months to identify. The following five-phase approach is designed to harden at each step before advancing.</p>
+        <p>A secure migration is a phased migration. Organizations that attempt to cut over all at once consistently introduce critical misconfigurations that take months to identify. The following five-phase approach is designed to harden at each step before advancing. Each phase includes explicit <strong>security gate criteria</strong> — do not proceed to the next phase until all gates are passed.</p>
 
         <div class="phase-card">
-            <h4><i class="fas fa-plug" style="color: #4ca3ff;"></i> Phase 1: Hybrid Sync (Weeks 1–8)</h4>
-            <p>Deploy <strong>Microsoft Entra Connect</strong> (formerly AD Connect) to sync identities from on-prem AD to Entra ID. Run in <strong>Staging Mode</strong> first — sync without writing back. Validate the sync rule configuration meticulously. Do not sync service accounts with standing elevated permissions.</p>
+            <h4><i class="fas fa-plug" style="color: #4ca3ff;"></i> Phase 1: Hybrid Sync &amp; Inventory (Weeks 1–8)</h4>
+            <p>Deploy <strong>Microsoft Entra Connect</strong> (v2.x) in <strong>Staging Mode</strong> first. Sync without write-back. Validate sync rule configuration — use <code>IdFix</code> to clean up UPN and attribute conflicts before first sync.</p>
+            <ul>
+                <li>🔒 <strong>Security Gate:</strong> Audit all accounts being synced — exclude service accounts with DA/EA group membership. Never sync Tier 0 accounts to Entra ID.</li>
+                <li>🔒 <strong>Security Gate:</strong> Enable Password Hash Sync (PHS) — this enables Entra ID Protection leaked credential detection.</li>
+                <li>🔒 <strong>Security Gate:</strong> Create 2 break-glass cloud-only accounts (<code>@tenantname.onmicrosoft.com</code>) before any CA policies are enforced.</li>
+                <li>🔒 <strong>Security Gate:</strong> Enable Entra ID Audit Logs streaming to a storage account or Log Analytics Workspace before any policy changes.</li>
+            </ul>
         </div>
 
         <div class="phase-card">
-            <h4><i class="fas fa-shield-alt" style="color: #10b981;"></i> Phase 2: Modern Authentication Enablement (Weeks 6–14)</h4>
-            <p>Enforce Modern Authentication on all M365 services. Register all users for MFA. Deploy Entra ID Password Protection to synchronize banned password lists to on-prem AD DCs. Create initial Conditional Access policies in <strong>Report-Only</strong> mode first to understand impact before enforcing.</p>
+            <h4><i class="fas fa-shield-alt" style="color: #10b981;"></i> Phase 2: Modern Authentication &amp; MFA Rollout (Weeks 6–14)</h4>
+            <p>Register all users for MFA. Use the <strong>MFA Registration Campaign</strong> feature in Entra ID to force registration without blocking access immediately. Deploy Entra ID Password Protection to on-prem DCs to synchronize the banned password list.</p>
+            <ul>
+                <li>🔒 <strong>Security Gate:</strong> MFA registration must reach &gt;95% of users before enforcing CA policies.</li>
+                <li>🔒 <strong>Security Gate:</strong> Enable <em>Number Matching</em> on Authenticator push — disable Simple Approve button.</li>
+                <li>🔒 <strong>Security Gate:</strong> Create all CA policies in <strong>Report-Only mode</strong> first. Analyze impact using the Sign-in Logs CA impact report for minimum 2 weeks before enforcing.</li>
+                <li>🔒 <strong>Security Gate:</strong> Verify break-glass accounts can authenticate successfully without CA policies.</li>
+            </ul>
         </div>
 
         <div class="phase-card">
             <h4><i class="fas fa-filter" style="color: #a78bfa;"></i> Phase 3: Conditional Access Hardening (Weeks 12–20)</h4>
-            <p>Enforce baseline CA policies: Require MFA for all users, require MFA for all admins (separate policy), block legacy authentication protocols (IMAP, POP3, MAPI over HTTP), require compliant device for sensitive data access. Enable <strong>Entra ID Protection</strong> risk-based CA policies: sign-in risk Medium → require MFA, user risk High → require password change.</p>
+            <p>Enforce baseline CA policies progressively. Start with admin accounts (highest risk), then guests, then all users.</p>
+            <ul>
+                <li>🔒 <strong>Policy 1 — Admin MFA:</strong> All users in directory roles → Require MFA (Authentication Strength: Phishing-resistant preferred)</li>
+                <li>🔒 <strong>Policy 2 — All Users MFA:</strong> All users, All cloud apps → Require MFA (exclude break-glass, exclude service accounts)</li>
+                <li>🔒 <strong>Policy 3 — Block Legacy Auth:</strong> All users, All cloud apps, Filter: Client app = legacy authentication clients → Block</li>
+                <li>🔒 <strong>Policy 4 — Risk-based (P2):</strong> Sign-in risk ≥ Medium → Require MFA; User risk = High → Require password change</li>
+                <li>🔒 <strong>Security Gate:</strong> Confirm legacy auth block has not broken any business workflow via support ticket analysis over 2-week observation period.</li>
+            </ul>
         </div>
 
         <div class="phase-card">
-            <h4><i class="fas fa-ban" style="color: #f59e0b;"></i> Phase 4: Legacy Protocol Elimination (Weeks 18–28)</h4>
-            <p>Deprecate NTLM authentication systematically. Audit NTLM usage with Event ID 8004 on DCs. Create Intune device compliance policies. Migrate service accounts to Managed Identities wherever possible. Migrate application authentication from NTLM to Kerberos (for on-prem) or OAuth 2.0 Client Credentials flow (for cloud apps).</p>
+            <h4><i class="fas fa-ban" style="color: #f59e0b;"></i> Phase 4: PIM, Governance &amp; Legacy Protocol Elimination (Weeks 18–28)</h4>
+            <p>Implement PIM for all privileged roles. Deprecate NTLM systematically. Migrate service accounts to Managed Identities.</p>
+            <ul>
+                <li>🔒 <strong>Security Gate:</strong> Audit NTLM usage with Event ID 8004 on all DCs. Categorize all NTLM-dependent apps before blocking.</li>
+                <li>🔒 <strong>Security Gate:</strong> All GA, Application Admin, Exchange Admin, SharePoint Admin roles must be PIM-eligible (not permanently assigned) before proceeding.</li>
+                <li>🔒 <strong>Security Gate:</strong> Run Access Reviews for all privileged roles and all Group memberships. Remove stale access.</li>
+                <li>🔒 <strong>Security Gate:</strong> Audit all App Registrations. Justify or remove any with <code>*.All</code> API permissions. Set secret expiration policies (&lt;12 months).</li>
+                <li>🔒 <strong>Security Gate:</strong> Disable user consent for OAuth apps. Configure admin consent workflow.</li>
+            </ul>
         </div>
 
         <div class="phase-card">
-            <h4><i class="fas fa-cloud" style="color: #00D9FF;"></i> Phase 5: Cloud-Native Identity Management (Month 6+)</h4>
-            <p>Begin device migrations from Domain Join to <strong>Entra Join</strong>. Implement PIM for all admin roles. Deploy Access Reviews quarterly. Consider decommissioning on-prem AD for cloud-first workloads. Retain hybrid or on-prem AD for OT systems, legacy line-of-business apps, and print infrastructure.</p>
+            <h4><i class="fas fa-cloud" style="color: #00D9FF;"></i> Phase 5: Cloud-Native Identity &amp; Decommission Planning (Month 6+)</h4>
+            <p>Begin device migrations from Domain Join to Entra Join. Evaluate AD decommission for cloud-first workloads. Retain hybrid AD for OT/ICS, legacy ERP, and Kerberos-dependent applications.</p>
+            <ul>
+                <li>🔒 <strong>Security Gate:</strong> All devices must show Intune compliance status before Entra Join migration wave begins.</li>
+                <li>🔒 <strong>Security Gate:</strong> Define explicit CA policies requiring Entra-Joined OR Hybrid-Joined compliant devices for all sensitive data access.</li>
+                <li>🔒 <strong>Security Gate:</strong> Maester automated security test suite must pass all checks before declaring Phase 5 complete. Run monthly thereafter.</li>
+                <li>🔒 <strong>Security Gate:</strong> If decommissioning AD, test authentication for every application using AD authentication before cutting over. Maintain a parallel environment for minimum 90 days.</li>
+            </ul>
         </div>
 
         <h3>8.1 Break-Glass Account Strategy</h3>
@@ -1201,7 +1358,139 @@
         </div>
 
         <!-- ===== SECTION 9 ===== -->
-        <h2 id="hardening">9. Entra ID Security Hardening Checklist</h2>
+        <!-- ===== CIS BENCHMARKS ===== -->
+        <h2 id="cis">11. CIS Benchmarks: Gap Analysis for AD &amp; Entra ID</h2>
+
+        <p>The Center for Internet Security (CIS) publishes authoritative benchmarks for both Active Directory environments and Microsoft 365 / Entra ID. Running these benchmarks against your environment gives you a scored, prioritized gap analysis.</p>
+
+        <h3>11.1 CIS Microsoft 365 Foundations Benchmark (v3.1, 2025)</h3>
+        <p>This is your primary benchmark for Entra ID / M365. It covers 226 recommendations across Identity, Device, Data Protection, and Applications. Key Level 1 (baseline) checks include:</p>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>CIS Control ID</th>
+                        <th>Control Description</th>
+                        <th>Level</th>
+                        <th>How to Audit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature">1.1.1</td>
+                        <td>Ensure Security Defaults or Conditional Access is enabled (not both)</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>Entra ID Portal &rarr; Properties &rarr; Manage Security Defaults</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">1.1.3</td>
+                        <td>Ensure that between 2 and 4 Global Admins are designated</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>Entra ID &rarr; Roles &rarr; Global Administrator &rarr; Assignments count</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">1.2.1</td>
+                        <td>Ensure per-user MFA is disabled in favor of Conditional Access MFA</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>Check for legacy per-user MFA settings vs CA policy enforcement</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">1.3.1</td>
+                        <td>Ensure the 'Password expiration policy' is set to 'Password never expires'</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>M365 Admin Center &rarr; Security &rarr; Password policy</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">2.1.1</td>
+                        <td>Ensure Safe Links for Office Applications is enabled</td>
+                        <td><span class="badge-risk">L2</span></td>
+                        <td>Defender for Office 365 &rarr; Safe Links policy</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">5.1.1</td>
+                        <td>Ensure user consent to apps accessing company data is disabled</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>Entra ID &rarr; Enterprise Apps &rarr; User Consent Settings</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">5.2.1</td>
+                        <td>Ensure Integrated Apps &amp; admin consent workflow is enabled</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>Entra ID &rarr; Enterprise Apps &rarr; Admin consent workflow</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">6.1.1</td>
+                        <td>Ensure Microsoft 365 audit log search is enabled</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>Compliance portal &rarr; Audit &rarr; Audit log status</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>11.2 CIS Microsoft Active Directory Benchmark (v2.0, 2024)</h3>
+        <p>For on-prem AD environments or hybrid configurations, the CIS AD Benchmark provides ~60 recommendations across domain security policy, privileged access, LDAP signing, and auditing. Critical Level 1 controls include:</p>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>CIS Control</th>
+                        <th>Control Description</th>
+                        <th>Level</th>
+                        <th>Verification Method</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature">1.1</td>
+                        <td>Ensure password history is set to 24 or more remembered passwords</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td><code>Get-ADDefaultDomainPasswordPolicy</code> — PasswordHistoryCount ≥ 24</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">1.5</td>
+                        <td>Ensure 'Store passwords using reversible encryption' is disabled</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>GPO: Computer Config &rarr; Windows Settings &rarr; Account Policy</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">2.1</td>
+                        <td>Ensure LDAP server signing requirements are set to 'Require signing'</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>Group Policy: Domain Controller Security Policy &rarr; LDAP server signing</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">2.3</td>
+                        <td>Ensure SMB signing is enabled and required on Domain Controllers</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>GPO: Microsoft network server: Digitally sign communications (always)</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">3.2</td>
+                        <td>Ensure the default Administrator account is disabled or renamed</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td><code>Get-ADUser -Filter {SamAccountName -eq 'Administrator'}</code></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">4.1</td>
+                        <td>Ensure 'Audit Account Logon Events' is set to 'Success and Failure'</td>
+                        <td><span class="badge-risk">L1</span></td>
+                        <td>Advanced Audit Policy Configuration via GPO or auditpol.exe</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>11.3 How to Run an Automated CIS Gap Analysis</h3>
+        <ul>
+            <li><strong>For Entra ID / M365:</strong> Use <a href="https://maester.dev" target="_blank" rel="noopener noreferrer">Maester</a> — open-source PowerShell framework that maps tests directly to CIS M365 Foundations Benchmark controls. Run <code>Install-Module Maester</code>, then <code>Invoke-Maester</code> for an HTML report.</li>
+            <li><strong>For On-Prem AD:</strong> Use <strong>PingCastle</strong> (free tier available) — generates a risk-scored HTML report against AD best practices aligned to CIS and Microsoft Tier Model. Run <code>PingCastle.exe --healthcheck --server your.domain.com</code>.</li>
+            <li><strong>For M365 posture scoring:</strong> Microsoft Secure Score in the Defender portal maps directly to many CIS M365 controls. Track your score trend over time as a management-level identity security metric.</li>
+        </ul>
+
+        <h2 id="hardening">12. Entra ID Security Hardening Checklist</h2>
 
         <div class="success-box">
             <strong><i class="fas fa-check-double"></i> Entra ID Security Baseline — Priority Controls</strong>
@@ -1224,7 +1513,7 @@
         </div>
 
         <!-- ===== SECTION 10 ===== -->
-        <h2 id="upskill">10. How to Adapt &amp; Upskill as a Security Engineer</h2>
+        <h2 id="upskill">13. How to Adapt &amp; Upskill as a Security Engineer</h2>
 
         <p>The single most important career shift for any security professional working in an enterprise environment today is moving from <strong>infrastructure-centric skills</strong> to <strong>identity-centric skills</strong>. Here is the exact learning path and toolset you need to master.</p>
 
@@ -1321,7 +1610,7 @@
         </ul>
 
         <!-- ===== SECTION 11 ===== -->
-        <h2 id="decision">11. Decision Framework: Stay with AD or Move to Entra ID?</h2>
+        <h2 id="decision">14. Decision Framework: Stay with AD or Move to Entra ID?</h2>
 
         <div class="comparison-table-wrapper">
             <table class="comparison-table">
@@ -1363,7 +1652,7 @@
         </div>
 
         <!-- ===== SECTION 12 ===== -->
-        <h2 id="future">12. Future Outlook 2027–2028</h2>
+        <h2 id="future">15. Future Outlook 2027–2028</h2>
 
         <ul>
             <li><strong>NTLM End of Life:</strong> Microsoft has confirmed it is progressively retiring NTLM authentication. By 2027, expect NTLM to be disabled by default in Windows Server 2025+. All legacy NTLM dependencies must be migrated to Kerberos or OAuth before this deadline.</li>
