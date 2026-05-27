@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 27 2026",
+            "headline": "Pretalx Flaw Allows 100% Talk Acceptance—Patch Urgently",
+            "title": "Critical Vulnerability in Pretalx Enables Unauthorized Conference Talk Approvals",
+            "content": "Researchers from Novee have identified a critical account takeover vulnerability in Pretalx, an open-source conference management tool. This flaw allows attackers to gain unauthorized access and achieve a 100% acceptance rate for conference talks, bypassing standard approval processes. The vulnerability poses a significant risk to event organizers relying on Pretalx for managing submissions and scheduling. Users of Pretalx are advised to apply the latest security patches immediately to mitigate potential exploitation. This discovery underscores the importance of regular security audits for open-source software used in professional settings.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/vulnerability-in-popular-conference-software-granted-attackers-a-100-talk-acceptance-rate/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "Balancing Security and Usability in Active Directory Passwords",
+            "title": "Enhancing Active Directory Security with User-Friendly Password Policies",
+            "content": "Specops Software has outlined strategies to enforce robust Active Directory password policies without compromising user experience. By implementing passphrases, breached password protection, and self-service password resets, organizations can enhance security while maintaining usability. These measures help prevent unauthorized access and reduce the risk of password-related breaches, a common vulnerability in enterprise environments. IT administrators are encouraged to adopt these practices to strengthen their security posture without alienating users. This approach reflects a growing trend towards balancing security with user convenience in corporate IT policies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/can-you-enforce-strong-active-directory-password-rules-without-frustrating-users/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "SymJack Attack Exploits AI Agents—Supply Chain at Risk",
+            "title": "SymJack Attack Converts AI Coding Agents into Supply Chain Threats",
+            "content": "A new attack vector, dubbed SymJack, has been discovered, targeting AI coding agents through malicious repositories and disguised symlinks. This method allows attackers to install malicious MCP servers, compromising CI pipelines and deploying harmful code. The attack can lead to data theft and operational disruptions, posing a severe threat to organizations relying on AI-driven development tools. Security teams should scrutinize third-party code repositories and implement stringent validation processes to mitigate this risk. This incident highlights the growing sophistication of supply chain attacks leveraging AI technologies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/symjack-attack-turns-ai-coding-agents-into-supply-chain-attack-delivery-systems/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "Gitea Flaw Exposes Private Images—Immediate Action Required",
+            "title": "Gitea Vulnerability Allows Unauthorized Access to Private Container Images",
+            "content": "A security flaw in Gitea, an open-source version control platform, has been disclosed, enabling unauthenticated attackers to access private container images. This vulnerability does not require any credentials, making it a critical concern for developers using Gitea for sensitive projects. The flaw could lead to unauthorized data exposure and potential exploitation in software development environments. Users are urged to update their Gitea installations to the latest version to secure their deployments. This incident underscores the importance of securing self-hosted platforms against unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/gitea-vulnerability-exposes-private.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "CISA Demands Quick Patch for cPanel Plugin Flaw",
+            "title": "CISA Orders Immediate Patch for Exploited cPanel LiteSpeed Vulnerability",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has mandated federal agencies to patch a critical vulnerability in the LiteSpeed cPanel plugin within four days. This flaw is actively exploited, posing a significant risk to server security and potentially leading to unauthorized access and data breaches. Federal IT departments must act swiftly to apply the necessary updates and secure their systems. This directive highlights the urgency of addressing vulnerabilities in widely-used web hosting platforms to protect sensitive government data.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-gives-feds-4-days-to-patch-actively-exploited-cpanel-plugin-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "GlassWorm Malware Network Dismantled—Developer Safety Improved",
+            "title": "GlassWorm Malware Takedown Secures Developer Supply Chain Infrastructure",
+            "content": "CrowdStrike, in collaboration with Google and the Shadowserver Foundation, has successfully disrupted the command-and-control infrastructure of the GlassWorm malware. This operation targeted a persistent campaign that compromised software developers through malicious packages and extensions. The takedown significantly reduces the threat to developers and their projects, enhancing overall software supply chain security. Organizations are advised to review their security measures and ensure robust defenses against similar threats. This effort marks a critical step in safeguarding the integrity of software development environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/glassworm-malware-takedown-disrupts.html",
+            "relatedResources": []
+        },
+        {
             "date": "May 26 2026",
             "headline": "Zero-Day in KnowledgeDeliver LMS Exploited—Web Shells Deployed",
             "title": "Critical Zero-Day in KnowledgeDeliver LMS Exploited to Install Godzilla Web Shell",
@@ -49,15 +103,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 23 2026",
-            "headline": "Laravel Lang Packages Hijacked—Credential-Stealing Malware Deployed",
-            "title": "Supply Chain Attack on Laravel Lang Packages Distributes Credential-Stealing Malware",
-            "content": "A sophisticated supply chain attack has compromised the Laravel Lang localization packages, exposing developers to credential-stealing malware. Attackers manipulated GitHub version tags to distribute malicious code through Composer packages, highlighting vulnerabilities in software supply chains. This breach underscores the critical need for developers to verify package integrity and monitor for unusual activity. The attack poses significant risks to developers relying on these packages, potentially leading to unauthorized access to sensitive systems. Developers are advised to review their dependencies and apply security best practices to mitigate such threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/laravel-lang-packages-hijacked-to-deploy-credential-stealing-malware/",
-            "relatedResources": []
-        },
-        {
             "date": "May 26 2026",
             "headline": "185,000 Affected—7-Eleven Data Breach Exposes Personal Details",
             "title": "ShinyHunters Leak Compromises 185,000 in 7-Eleven Data Breach",
@@ -92,54 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/open-source-docksec-uses-ai-to-cut-through-vulnerability-noise-in-docker-images/",
             "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "MFA Prompt Bombing—A New Threat to Identity Security",
-            "title": "MFA Prompt Bombing Undermines Multi-Factor Authentication Effectiveness",
-            "content": "Multi-factor authentication (MFA), once a cornerstone of identity security, is being undermined by a technique known as prompt bombing. Attackers exploit this method by overwhelming users with authentication requests, leading to accidental approvals. This tactic bypasses the security MFA was designed to provide, highlighting the need for more robust authentication strategies. Organizations should educate users on recognizing and responding to suspicious MFA prompts and consider implementing additional security layers. This development calls for a reevaluation of MFA practices to ensure continued protection against unauthorized access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/mfa-prompt-bombing-why-your-second.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "CERT-In: Patch Internet-Facing Flaws in 12 Hours Amid AI Threats",
-            "title": "CERT-In Issues 12-Hour Patching Directive for Internet-Exposed Systems",
-            "content": "The Indian Computer Emergency Response Team (CERT-In) has mandated a 12-hour patching window for critical vulnerabilities in internet-facing systems. This directive aims to counteract the rising threat of AI-assisted cyberattacks exploiting unpatched flaws. Organizations are urged to prioritize patch management to protect against potential breaches. The guidance reflects the increasing speed and sophistication of cyber threats, necessitating rapid response measures. Adhering to these guidelines will help organizations mitigate risks and safeguard their digital infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "TrapDoor Attack Hits npm, PyPI, Crates.io—Steals Credentials",
-            "title": "TrapDoor Supply Chain Attack Targets npm, PyPI, and Crates.io with Malware",
-            "content": "A sophisticated software supply chain attack, dubbed TrapDoor, has been identified targeting npm, PyPI, and Crates.io repositories to distribute credential-stealing malware. This campaign involves over 34 malicious packages across more than 384 versions, with initial activity traced back to May 22, 2026. The malware aims to compromise developers' systems by stealing sensitive credentials, posing a significant threat to the integrity of software projects and their users. This attack underscores the growing vulnerability of open-source ecosystems to supply chain threats. Developers are urged to scrutinize package dependencies and employ security tools to detect and mitigate such threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/trapdoor-supply-chain-attack-spreads.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Linux Flaws and Defender 0-Days—Security Chaos Ensues",
-            "title": "Weekly Recap: Linux Vulnerabilities and Microsoft Defender 0-Day Exploits",
-            "content": "This week in cybersecurity, a series of vulnerabilities have been unearthed, including critical flaws in Linux systems and zero-day exploits targeting Microsoft Defender. These issues have forced companies to scramble, revisiting outdated systems and unpatched servers. The vulnerabilities highlight the persistent challenges in maintaining secure infrastructures, especially when legacy systems are involved. Security professionals are urged to conduct thorough audits of their systems, ensure all patches are up to date, and remain vigilant against potential exploitation. The ongoing issues underscore the importance of proactive security measures in an increasingly complex threat landscape.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-linux-flaws-defender-0.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Oncology Institute Breach—Patient Data at Risk",
-            "title": "Oncology Institute Reports Data Breach Potentially Involving TriZetto Vendor",
-            "content": "The Oncology Institute has disclosed a data breach involving a third-party vendor, with TriZetto speculated as a potential source. The breach has raised concerns over patient data security, as sensitive information may have been compromised. While the exact impact remains under investigation, healthcare organizations are reminded of the critical need for robust third-party risk management. This incident highlights the vulnerabilities within the healthcare sector's supply chain, emphasizing the necessity for stringent data protection measures. Organizations should review their vendor management practices to mitigate similar risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/oncology-institute-discloses-third-party-data-breach/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 27 2026",
+            "headline": "Cognition's $1B Funding Boosts Valuation to $25B",
+            "title": "AI Startup Cognition Secures $1B, Doubling Valuation to $25B",
+            "content": "Cognition, an AI coding startup, has successfully raised $1 billion in its latest funding round, catapulting its valuation to $25 billion. This impressive leap comes as the company reports an annualized revenue run rate of $492 million, more than doubling its valuation in just eight months. Cognition's platform, which automates software development processes, is gaining significant traction among enterprises seeking to enhance productivity and reduce costs. The funding will likely accelerate Cognition's expansion and innovation efforts, positioning it as a formidable player in the AI development landscape. Investors and tech leaders should monitor Cognition's growth trajectory as it continues to reshape the coding industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "AI Battle in NY Primary Elevates Unknown Politician",
+            "title": "AI Firms' Political Clash Boosts Profile of NY Congressional Candidate",
+            "content": "The Democratic primary for New York's 12th congressional district has become a battleground for AI giants Anthropic and OpenAI, who are investing millions in a bid to influence AI regulation. As these companies vie for control over the future of AI policy, an unexpected outcome has emerged: the increased visibility of a previously lesser-known candidate. The intense focus on AI regulation has thrust this politician into the spotlight, potentially altering the dynamics of the race. This development underscores the growing intersection of technology and politics, as AI's influence extends beyond the tech industry into legislative arenas. Stakeholders in both fields should consider the implications of such corporate involvement in political processes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/937650/ai-alex-bores-openai-anthropic-ny12",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "Robinhood Enables AI Agents for Stock Trading",
+            "title": "Robinhood Introduces AI Agent Accounts for Stock Trading",
+            "content": "Robinhood has announced a new feature allowing users to create dedicated accounts for AI agents to trade stocks on their behalf. This innovative offering enables traders to allocate specific funds to these AI-driven accounts, which can autonomously buy and sell stocks across the market. The move is part of Robinhood's strategy to leverage AI for enhanced trading experiences, potentially increasing both profits and risks for users. As AI continues to permeate financial services, traders and investors should evaluate the benefits and challenges of integrating AI agents into their investment strategies. This development highlights the evolving role of AI in personal finance management.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "Last Call for Startup Battlefield 200 Applications",
+            "title": "Final Day to Apply for TechCrunch's Startup Battlefield 200",
+            "content": "Today marks the deadline for applications to TechCrunch's Startup Battlefield 200, a prestigious competition offering $100,000 in equity-free funding. Startups and founders have until 11:59 p.m. PT to submit their entries for a chance to gain global visibility and connect with top investors. The event, part of TechCrunch Disrupt, provides a platform for emerging companies to showcase their innovations and compete on a global stage. Participants can expect significant exposure and networking opportunities, potentially accelerating their growth and market presence. Entrepreneurs should seize this last-minute opportunity to participate in one of the tech industry's most influential startup competitions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/27/startup-battlefield-200-applications-close-today-nominate-a-founder-or-submit-your-startup/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "ElevenLabs Model Switches Music Genres Mid-Track",
+            "title": "ElevenLabs Unveils Music Model Capable of Genre Switching",
+            "content": "ElevenLabs has launched a groundbreaking music generation model that allows users to regenerate sections of a song while seamlessly switching genres mid-track. This innovative capability enables artists and producers to experiment with diverse musical styles within a single composition, offering unprecedented creative flexibility. The model's ability to maintain the integrity of the original track while introducing genre variations represents a significant advancement in AI-driven music production. Musicians and content creators should explore this tool to enhance their creative processes and expand their artistic horizons. ElevenLabs continues to push the boundaries of AI in the music industry with this latest offering.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "SOND Emerges with $7M for AI Sleep Earbuds",
+            "title": "SOND Launches with $7M Funding for AI-Powered Sleep Technology",
+            "content": "SOND, a sleep tech startup founded by Bose's former head of sleep products, has emerged from stealth mode with $7 million in funding. The company is developing AI-powered sleep earbuds designed to enhance sleep quality through personalized soundscapes and noise-cancellation features. This funding will support SOND's efforts to refine its technology and bring its innovative sleep solutions to market. The startup's emergence highlights the growing interest in AI applications for health and wellness, particularly in improving sleep. Investors and tech enthusiasts should watch SOND's progress as it seeks to revolutionize the sleep tech industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
+            "relatedResources": []
+        },
         {
             "date": "May 27 2026",
             "headline": "Pope's AI Encyclical—40% to 100% AI-Generated",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Universal Music Group (UMG) and TikTok have renewed their agreement to combat unauthorized AI-generated music on the platform. This partnership reinforces UMG's ongoing efforts to push for stricter content moderation policies across digital platforms and streaming services. The renewed agreement aims to protect artists' rights and ensure that AI-generated content does not infringe on copyrighted material. This move is part of a broader industry trend towards safeguarding intellectual property in the age of AI, as music labels and tech companies collaborate to address the challenges posed by AI in content creation. Stakeholders in the music and tech industries should stay informed about evolving content policies.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "Last Chance for TechCrunch Disrupt 2026 Early Bird Rates",
-            "title": "TechCrunch Disrupt 2026 Early Bird Ticket Discounts End May 29",
-            "content": "Tech professionals and enthusiasts have until May 29 at 11:59 p.m. PT to secure early bird rates for TechCrunch Disrupt 2026 in San Francisco. Attendees can save up to $410 on their passes, making this a prime opportunity to join one of the tech industry's most anticipated events. TechCrunch Disrupt offers a platform for startups, investors, and innovators to connect and explore the latest trends and technologies. The event promises a lineup of influential speakers and networking opportunities, making it a must-attend for those looking to stay ahead in the tech world. Interested participants should register promptly to take advantage of the discounted rates.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "Sundar Pichai Discusses AI's Impact on Web and Search",
-            "title": "Sundar Pichai Talks AI, Future of Search, and Web Evolution",
-            "content": "In a post-Google I/O conversation, Sundar Pichai, CEO of Google and Alphabet, shared insights on AI's transformative role in search and the broader web landscape. Pichai emphasized AI's potential to enhance search capabilities, making information retrieval more intuitive and context-aware. He also addressed concerns about AI's impact on traditional web structures, highlighting the need for adaptive strategies to harness AI's benefits while mitigating risks. This discussion underscores the critical role of AI in shaping the future of digital interactions and the importance of strategic planning for tech leaders. Professionals should consider the implications of AI advancements on their digital strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/936445/sundar-pichai-ai-search-google-zero-youtube-web",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "AI Music Trend: Suno Users Ditch Streaming for Custom Tracks",
-            "title": "Suno Users Embrace AI-Generated Music, Shun Traditional Streaming Platforms",
-            "content": "An emerging trend in the Suno subreddit reveals users increasingly favoring AI-generated music over traditional streaming services. Enthusiasts are creating and listening to personalized AI tracks, often referred to as \"slop,\" and expressing a preference for these over conventional music platforms. This shift highlights a growing interest in AI's creative capabilities and its potential to disrupt the music industry. The trend raises questions about the future of music consumption and the role of AI in artistic expression. Industry stakeholders should monitor this development as it may signal broader changes in consumer behavior and content creation.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/937059/nobody-wants-to-tell-me-why-they-only-listen-their-own-suno-slop",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "ClickUp Replaces Hundreds with AI—Future of Work Shifts",
-            "title": "ClickUp's Mass Layoff Highlights AI's Growing Role in Workforce",
-            "content": "In a significant move reflecting the evolving landscape of employment, ClickUp, a nine-year-old productivity startup, has laid off hundreds of employees, replacing them with thousands of AI agents. This transition underscores a broader trend where AI is increasingly taking on complex tasks traditionally performed by humans. The AI agents are designed to handle a variety of functions, from project management to customer support, showcasing the potential for AI to reshape operational efficiencies. This shift raises questions about the future of human roles in tech-driven industries and the skills required to thrive. Companies and professionals must adapt to this changing dynamic, focusing on AI integration and upskilling to remain competitive.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Pope's AI Encyclical—A Call to Address Power Imbalances",
-            "title": "Pope Leo XIV's AI Encyclical Tackles Power and Democracy Issues",
-            "content": "Pope Leo XIV's first encyclical, while framed around artificial intelligence (AI), primarily addresses longstanding societal challenges such as concentrated power and the erosion of democratic principles. The document critiques how a technology elite is shaping global dynamics to its advantage, using AI as a lens to highlight these issues. By focusing on the ethical implications of technological advancements, the pope urges a reevaluation of how power is distributed in the digital age. This encyclical serves as a reminder to tech leaders and policymakers to consider the broader societal impacts of AI. The document calls for a more equitable approach to technology governance, emphasizing the need for inclusive and democratic frameworks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Pope Leo Warns—AI Risks to Human Dignity",
-            "title": "Pope Leo XIV Advocates for Humanity Amidst AI Advancements",
-            "content": "In his inaugural papal document, \"Magnifica Humanitas,\" Pope Leo XIV addresses the profound implications of artificial intelligence on human dignity. Released on Monday, the manifesto warns against the unchecked power of AI technologies and their potential to undermine human values. The pope emphasizes the importance of safeguarding the human person in the face of rapid technological change, highlighting the ethical challenges posed by AI-driven systems. This call to action urges developers and tech leaders to prioritize human-centric design and ethical considerations in AI development. The document underscores the necessity for a balanced approach that respects human dignity while embracing technological progress.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
             "relatedResources": []
         }
     ],
