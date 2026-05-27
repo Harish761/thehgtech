@@ -67,13 +67,15 @@
                 </div>
             </header>
 
-            <img src="../images/guides/active-directory-vs-entra-id-security-2026.png" alt="Conceptual illustration bridging physical Active Directory servers with the glowing cloud structure of Entra ID" class="article-hero-image" loading="lazy">
+            <img src="../images/guides/ad_vs_entra_architecture.png" alt="Detailed architectural diagram comparing physical Active Directory infrastructure with cloud-based Entra ID zero-trust architecture" class="article-hero-image" loading="lazy">
 
             <div class="article-body">
                 <h2>1. Introduction: The Death of the Perimeter</h2>
                 <p>For over two decades, the security industry relied on the "castle-and-moat" paradigm. If a user was physically sitting in the office connected to the LAN, authenticated against a local Domain Controller (DC), they were deemed trustworthy. The network perimeter was the ultimate line of defense.</p>
                 
                 <p>The transition from on-premises <strong>Active Directory (AD)</strong> to cloud-native <strong>Microsoft Entra ID</strong> (formerly Azure AD) completely obliterates this model. Today, the network is untrusted by default. The identity itself has become the perimeter.</p>
+                
+                <img src="../images/guides/identity_perimeter_concept.png" alt="Conceptual illustration showing the death of the physical firewall, replaced by glowing zero-trust authentication nodes" style="width: 100%; border-radius: 12px; margin: 2rem 0;" loading="lazy">
                 
                 <div class="info-box info">
                     <i class="fas fa-info-circle"></i>
@@ -138,6 +140,7 @@
                 </div>
 
                 <h2>3. The Shared Responsibility Model & Vendor Control</h2>
+                <img src="../images/guides/real_world_server_room_ad.png" alt="Real-world illustration of an IT administrator managing physical Active Directory domain controllers in a server room" style="width: 100%; border-radius: 12px; margin: 1rem 0 2rem;" loading="lazy">
                 <p>When you run on-prem AD, you own everything. If a server goes down, you reboot it. If a vulnerability is found, you patch it. You hold the proverbial keys to the kingdom.</p>
                 
                 <p>Moving to Entra ID shifts the burden of physical hardware, network availability, and database security to Microsoft. This is the <strong>Shared Responsibility Model</strong>.</p>
@@ -256,6 +259,7 @@
                 </ul>
 
                 <h2>8. How Security Teams Must Adapt</h2>
+                <img src="../images/guides/entra_id_cloud_dashboard.png" alt="SOC analyst monitoring Entra ID cloud security analytics on multiple screens" style="width: 100%; border-radius: 12px; margin: 1rem 0 2rem;" loading="lazy">
                 <p>The role of the Security Engineer is shifting from network engineering and patch management to Identity Threat Detection and Response (ITDR).</p>
                 <p>Teams must learn to hunt for anomalous OAuth grants, investigate impossible travel alerts within Entra ID Protection, and write KQL (Kusto Query Language) queries to trace token theft across Azure logs. The focus is no longer on scanning IPs for open ports, but rather querying APIs for excessive permissions.</p>
 
