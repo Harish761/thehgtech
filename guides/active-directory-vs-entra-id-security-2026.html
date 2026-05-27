@@ -910,13 +910,13 @@
         <div class="success-box">
             <strong><i class="fas fa-thumbs-up"></i> Entra ID Eliminates Entire Attack Classes</strong>
             <ul style="margin-top: 1rem; margin-bottom: 0;">
-                <li>✅ <strong>No more Kerberoasting:</strong> Entra ID uses OAuth 2.0 — there are no Service Principal Names (SPNs) with crackable encrypted service tickets. The entire Kerberoasting technique is architecturally irrelevant in a cloud-only tenant.</li>
-                <li>✅ <strong>No Golden Ticket attacks:</strong> Without a KRBTGT account or Kerberos KDC, Golden Ticket forgery is impossible. Attackers cannot forge long-lived authentication tokens offline.</li>
-                <li>✅ <strong>No DCSync:</strong> There are no domain controllers for attackers to force-replicate credentials from. Credential database extraction via DRSUAPI replication is eliminated.</li>
-                <li>✅ <strong>No lateral movement via SMB/NTLM:</strong> Cloud-native workloads don't expose SMB shares or NTLM challenges on the network. Pass-the-Hash becomes far less viable.</li>
-                <li>✅ <strong>Built-in JIT Privileged Access via PIM:</strong> On-prem AD required complex PAM solutions (CyberArk, BeyondTrust) to achieve JIT access. Entra ID PIM is native, included with P2 licensing, and enforces approval workflows, time limits, and MFA on role activation.</li>
-                <li>✅ <strong>Global infrastructure with 99.99% SLA:</strong> A typical SME or mid-market company cannot build and maintain 99.99% uptime for their AD infrastructure. Microsoft's global data center network, geo-replication, and investment scale delivers higher availability than any self-managed DC setup.</li>
-                <li>✅ <strong>Continuous threat intelligence:</strong> Entra ID Protection analyzes trillions of signals per day across Microsoft's global tenant ecosystem. When a credential appears in a breach dump or a sign-in pattern matches a known AiTM kit, Entra ID can automatically flag or block that sign-in — before you even write a detection rule.</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>No more Kerberoasting:</strong> Entra ID uses OAuth 2.0 — there are no Service Principal Names (SPNs) with crackable encrypted service tickets. The entire Kerberoasting technique is architecturally irrelevant in a cloud-only tenant.</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>No Golden Ticket attacks:</strong> Without a KRBTGT account or Kerberos KDC, Golden Ticket forgery is impossible. Attackers cannot forge long-lived authentication tokens offline.</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>No DCSync:</strong> There are no domain controllers for attackers to force-replicate credentials from. Credential database extraction via DRSUAPI replication is eliminated.</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>No lateral movement via SMB/NTLM:</strong> Cloud-native workloads don't expose SMB shares or NTLM challenges on the network. Pass-the-Hash becomes far less viable.</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Built-in JIT Privileged Access via PIM:</strong> On-prem AD required complex PAM solutions (CyberArk, BeyondTrust) to achieve JIT access. Entra ID PIM is native, included with P2 licensing, and enforces approval workflows, time limits, and MFA on role activation.</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Global infrastructure with 99.99% SLA:</strong> A typical SME or mid-market company cannot build and maintain 99.99% uptime for their AD infrastructure. Microsoft's global data center network, geo-replication, and investment scale delivers higher availability than any self-managed DC setup.</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Continuous threat intelligence:</strong> Entra ID Protection analyzes trillions of signals per day across Microsoft's global tenant ecosystem. When a credential appears in a breach dump or a sign-in pattern matches a known AiTM kit, Entra ID can automatically flag or block that sign-in — before you even write a detection rule.</li>
             </ul>
         </div>
 
@@ -1289,10 +1289,10 @@
             <h4><i class="fas fa-plug" style="color: #4ca3ff;"></i> Phase 1: Hybrid Sync &amp; Inventory (Weeks 1–8)</h4>
             <p>Deploy <strong>Microsoft Entra Connect</strong> (v2.x) in <strong>Staging Mode</strong> first. Sync without write-back. Validate sync rule configuration — use <code>IdFix</code> to clean up UPN and attribute conflicts before first sync.</p>
             <ul>
-                <li>🔒 <strong>Security Gate:</strong> Audit all accounts being synced — exclude service accounts with DA/EA group membership. Never sync Tier 0 accounts to Entra ID.</li>
-                <li>🔒 <strong>Security Gate:</strong> Enable Password Hash Sync (PHS) — this enables Entra ID Protection leaked credential detection.</li>
-                <li>🔒 <strong>Security Gate:</strong> Create 2 break-glass cloud-only accounts (<code>@tenantname.onmicrosoft.com</code>) before any CA policies are enforced.</li>
-                <li>🔒 <strong>Security Gate:</strong> Enable Entra ID Audit Logs streaming to a storage account or Log Analytics Workspace before any policy changes.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Audit all accounts being synced — exclude service accounts with DA/EA group membership. Never sync Tier 0 accounts to Entra ID.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Enable Password Hash Sync (PHS) — this enables Entra ID Protection leaked credential detection.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Create 2 break-glass cloud-only accounts (<code>@tenantname.onmicrosoft.com</code>) before any CA policies are enforced.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Enable Entra ID Audit Logs streaming to a storage account or Log Analytics Workspace before any policy changes.</li>
             </ul>
         </div>
 
@@ -1300,10 +1300,10 @@
             <h4><i class="fas fa-shield-alt" style="color: #10b981;"></i> Phase 2: Modern Authentication &amp; MFA Rollout (Weeks 6–14)</h4>
             <p>Register all users for MFA. Use the <strong>MFA Registration Campaign</strong> feature in Entra ID to force registration without blocking access immediately. Deploy Entra ID Password Protection to on-prem DCs to synchronize the banned password list.</p>
             <ul>
-                <li>🔒 <strong>Security Gate:</strong> MFA registration must reach &gt;95% of users before enforcing CA policies.</li>
-                <li>🔒 <strong>Security Gate:</strong> Enable <em>Number Matching</em> on Authenticator push — disable Simple Approve button.</li>
-                <li>🔒 <strong>Security Gate:</strong> Create all CA policies in <strong>Report-Only mode</strong> first. Analyze impact using the Sign-in Logs CA impact report for minimum 2 weeks before enforcing.</li>
-                <li>🔒 <strong>Security Gate:</strong> Verify break-glass accounts can authenticate successfully without CA policies.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> MFA registration must reach &gt;95% of users before enforcing CA policies.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Enable <em>Number Matching</em> on Authenticator push — disable Simple Approve button.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Create all CA policies in <strong>Report-Only mode</strong> first. Analyze impact using the Sign-in Logs CA impact report for minimum 2 weeks before enforcing.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Verify break-glass accounts can authenticate successfully without CA policies.</li>
             </ul>
         </div>
 
@@ -1311,11 +1311,11 @@
             <h4><i class="fas fa-filter" style="color: #a78bfa;"></i> Phase 3: Conditional Access Hardening (Weeks 12–20)</h4>
             <p>Enforce baseline CA policies progressively. Start with admin accounts (highest risk), then guests, then all users.</p>
             <ul>
-                <li>🔒 <strong>Policy 1 — Admin MFA:</strong> All users in directory roles → Require MFA (Authentication Strength: Phishing-resistant preferred)</li>
-                <li>🔒 <strong>Policy 2 — All Users MFA:</strong> All users, All cloud apps → Require MFA (exclude break-glass, exclude service accounts)</li>
-                <li>🔒 <strong>Policy 3 — Block Legacy Auth:</strong> All users, All cloud apps, Filter: Client app = legacy authentication clients → Block</li>
-                <li>🔒 <strong>Policy 4 — Risk-based (P2):</strong> Sign-in risk ≥ Medium → Require MFA; User risk = High → Require password change</li>
-                <li>🔒 <strong>Security Gate:</strong> Confirm legacy auth block has not broken any business workflow via support ticket analysis over 2-week observation period.</li>
+                <li><i class="fas fa-filter" style="color: #a78bfa; margin-right: 6px;"></i> <strong>Policy 1 — Admin MFA:</strong> All users in directory roles → Require MFA (Authentication Strength: Phishing-resistant preferred)</li>
+                <li><i class="fas fa-filter" style="color: #a78bfa; margin-right: 6px;"></i> <strong>Policy 2 — All Users MFA:</strong> All users, All cloud apps → Require MFA (exclude break-glass, exclude service accounts)</li>
+                <li><i class="fas fa-filter" style="color: #a78bfa; margin-right: 6px;"></i> <strong>Policy 3 — Block Legacy Auth:</strong> All users, All cloud apps, Filter: Client app = legacy authentication clients → Block</li>
+                <li><i class="fas fa-filter" style="color: #a78bfa; margin-right: 6px;"></i> <strong>Policy 4 — Risk-based (P2):</strong> Sign-in risk ≥ Medium → Require MFA; User risk = High → Require password change</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Confirm legacy auth block has not broken any business workflow via support ticket analysis over 2-week observation period.</li>
             </ul>
         </div>
 
@@ -1323,11 +1323,11 @@
             <h4><i class="fas fa-ban" style="color: #f59e0b;"></i> Phase 4: PIM, Governance &amp; Legacy Protocol Elimination (Weeks 18–28)</h4>
             <p>Implement PIM for all privileged roles. Deprecate NTLM systematically. Migrate service accounts to Managed Identities.</p>
             <ul>
-                <li>🔒 <strong>Security Gate:</strong> Audit NTLM usage with Event ID 8004 on all DCs. Categorize all NTLM-dependent apps before blocking.</li>
-                <li>🔒 <strong>Security Gate:</strong> All GA, Application Admin, Exchange Admin, SharePoint Admin roles must be PIM-eligible (not permanently assigned) before proceeding.</li>
-                <li>🔒 <strong>Security Gate:</strong> Run Access Reviews for all privileged roles and all Group memberships. Remove stale access.</li>
-                <li>🔒 <strong>Security Gate:</strong> Audit all App Registrations. Justify or remove any with <code>*.All</code> API permissions. Set secret expiration policies (&lt;12 months).</li>
-                <li>🔒 <strong>Security Gate:</strong> Disable user consent for OAuth apps. Configure admin consent workflow.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Audit NTLM usage with Event ID 8004 on all DCs. Categorize all NTLM-dependent apps before blocking.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> All GA, Application Admin, Exchange Admin, SharePoint Admin roles must be PIM-eligible (not permanently assigned) before proceeding.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Run Access Reviews for all privileged roles and all Group memberships. Remove stale access.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Audit all App Registrations. Justify or remove any with <code>*.All</code> API permissions. Set secret expiration policies (&lt;12 months).</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Disable user consent for OAuth apps. Configure admin consent workflow.</li>
             </ul>
         </div>
 
@@ -1335,10 +1335,10 @@
             <h4><i class="fas fa-cloud" style="color: #00D9FF;"></i> Phase 5: Cloud-Native Identity &amp; Decommission Planning (Month 6+)</h4>
             <p>Begin device migrations from Domain Join to Entra Join. Evaluate AD decommission for cloud-first workloads. Retain hybrid AD for OT/ICS, legacy ERP, and Kerberos-dependent applications.</p>
             <ul>
-                <li>🔒 <strong>Security Gate:</strong> All devices must show Intune compliance status before Entra Join migration wave begins.</li>
-                <li>🔒 <strong>Security Gate:</strong> Define explicit CA policies requiring Entra-Joined OR Hybrid-Joined compliant devices for all sensitive data access.</li>
-                <li>🔒 <strong>Security Gate:</strong> Maester automated security test suite must pass all checks before declaring Phase 5 complete. Run monthly thereafter.</li>
-                <li>🔒 <strong>Security Gate:</strong> If decommissioning AD, test authentication for every application using AD authentication before cutting over. Maintain a parallel environment for minimum 90 days.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> All devices must show Intune compliance status before Entra Join migration wave begins.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Define explicit CA policies requiring Entra-Joined OR Hybrid-Joined compliant devices for all sensitive data access.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> Maester automated security test suite must pass all checks before declaring Phase 5 complete. Run monthly thereafter.</li>
+                <li><i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Security Gate:</strong> If decommissioning AD, test authentication for every application using AD authentication before cutting over. Maintain a parallel environment for minimum 90 days.</li>
             </ul>
         </div>
 
@@ -1495,20 +1495,20 @@
         <div class="success-box">
             <strong><i class="fas fa-check-double"></i> Entra ID Security Baseline — Priority Controls</strong>
             <ul style="margin-top: 1rem; margin-bottom: 0;">
-                <li>✅ <strong>PIM for all privileged roles</strong> — No standing Global Admin, Application Admin, or Exchange Admin roles</li>
-                <li>✅ <strong>Legacy authentication blocked</strong> — CA policy blocking all basic auth protocols</li>
-                <li>✅ <strong>User consent disabled</strong> — Admin approval required for all OAuth app consent</li>
-                <li>✅ <strong>MFA required for all users</strong> — No exceptions. SSPR requires MFA re-auth.</li>
-                <li>✅ <strong>Number matching enabled</strong> — Authenticator app push bombing mitigation</li>
-                <li>✅ <strong>Entra ID Protection enabled</strong> — Risk-based CA policies for both sign-in and user risk</li>
-                <li>✅ <strong>Break-glass accounts configured</strong> — Cloud-only, FIDO2, monitored with real-time alerts</li>
-                <li>✅ <strong>App Registration audit complete</strong> — All *.All permissions reviewed and justified</li>
-                <li>✅ <strong>Access Reviews scheduled</strong> — Quarterly for privileged roles, semi-annual for all group memberships</li>
-                <li>✅ <strong>Diagnostic logs to Sentinel</strong> — Sign-in Logs, Audit Logs, Identity Protection risk events all streamed</li>
-                <li>✅ <strong>SSPR scoped to non-admins</strong> — Admins must use a higher authentication bar for password reset</li>
-                <li>✅ <strong>Named Locations defined</strong> — Trusted IP ranges defined for CA and Identity Protection baselining</li>
-                <li>✅ <strong>External collaboration restricted</strong> — Guest user access and B2B invitation scope defined and limited</li>
-                <li>✅ <strong>Token lifetime policies reviewed</strong> — Enable CAE for real-time token revocation for critical apps</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>PIM for all privileged roles</strong> — No standing Global Admin, Application Admin, or Exchange Admin roles</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Legacy authentication blocked</strong> — CA policy blocking all basic auth protocols</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>User consent disabled</strong> — Admin approval required for all OAuth app consent</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>MFA required for all users</strong> — No exceptions. SSPR requires MFA re-auth.</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Number matching enabled</strong> — Authenticator app push bombing mitigation</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Entra ID Protection enabled</strong> — Risk-based CA policies for both sign-in and user risk</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Break-glass accounts configured</strong> — Cloud-only, FIDO2, monitored with real-time alerts</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>App Registration audit complete</strong> — All *.All permissions reviewed and justified</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Access Reviews scheduled</strong> — Quarterly for privileged roles, semi-annual for all group memberships</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Diagnostic logs to Sentinel</strong> — Sign-in Logs, Audit Logs, Identity Protection risk events all streamed</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>SSPR scoped to non-admins</strong> — Admins must use a higher authentication bar for password reset</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Named Locations defined</strong> — Trusted IP ranges defined for CA and Identity Protection baselining</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>External collaboration restricted</strong> — Guest user access and B2B invitation scope defined and limited</li>
+                <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 6px;"></i> <strong>Token lifetime policies reviewed</strong> — Enable CAE for real-time token revocation for critical apps</li>
             </ul>
         </div>
 
