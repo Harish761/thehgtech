@@ -1,339 +1,1404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="theme-color" content="#000000">
     <title>Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift | TheHGTech</title>
-    <meta name="description" content="A comprehensive 2026 guide on the security paradigm shift from Active Directory to Microsoft Entra ID. Learn about the Shared Responsibility Model, granular controls, new attack surfaces, and migration playbooks.">
+
+    <meta name="description" content="A deep-dive security engineer's guide to the shift from on-premises Active Directory to Microsoft Entra ID. Learn how controls move from enterprise admin to cloud provider, new attack surfaces, migration playbooks, and how to upskill in 2026.">
+    <meta name="keywords" content="Active Directory vs Entra ID, Azure AD security 2026, Entra ID security hardening, GPO vs Conditional Access, identity security shift, Microsoft Entra ID migration, Kerberos vs OAuth, PIM Azure AD, zero trust identity 2026, Entra ID outage availability, break-glass accounts, KQL queries Entra ID, Microsoft Defender for Identity">
     <meta name="author" content="Harish G">
-    <meta property="og:title" content="Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift">
-    <meta property="og:description" content="A comprehensive 2026 guide on the security paradigm shift from Active Directory to Microsoft Entra ID. Learn about the Shared Responsibility Model, granular controls, new attack surfaces, and migration playbooks.">
-    <meta property="og:image" content="https://thehgtech.com/images/guides/active-directory-vs-entra-id-security-2026.png">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html">
+    <meta property="og:title" content="Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift">
+    <meta property="og:description" content="A deep-dive security engineer's guide to the shift from on-premises Active Directory to Microsoft Entra ID. Covers shared responsibility, Conditional Access, CIA triad impact, migration playbook, and upskilling.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/ad_vs_entra_architecture.png">
+    <meta property="og:site_name" content="TheHGTech">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/ui-enhancements.css">
+    <meta name="twitter:site" content="@TheHGTech">
+    <meta name="twitter:creator" content="@TheHGTech">
+    <meta name="twitter:title" content="Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift | TheHGTech">
+    <meta name="twitter:description" content="How security controls move from Enterprise Admin to Cloud Provider, the real risk of Entra ID as a SPOF, and the ultimate migration and upskilling playbook.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/ad_vs_entra_architecture.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift",
+      "description": "A deep-dive security engineer's guide to the shift from on-premises Active Directory to Microsoft Entra ID. Covers shared responsibility, Conditional Access, CIA triad impact, migration playbook, and upskilling.",
+      "image": ["https://thehgtech.com/images/guides/ad_vs_entra_architecture.png"],
+      "datePublished": "2026-05-27T00:00:00+00:00",
+      "dateModified": "2026-05-27T00:00:00+00:00",
+      "author": [{"@type": "Person", "name": "Harish G", "url": "https://www.linkedin.com/in/harish-g-4648781a7/", "sameAs": ["https://www.linkedin.com/in/harish-g-4648781a7/"]}],
+      "publisher": {"@type": "Organization", "name": "TheHGTech", "url": "https://thehgtech.com"},
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html"},
+      "articleSection": "Identity & Access Management",
+      "keywords": ["Active Directory", "Entra ID", "Azure AD", "Zero Trust", "Conditional Access", "PIM", "Identity Security", "Migration", "Security Engineer"],
+      "wordCount": "11000",
+      "timeRequired": "PT38M"
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+        {"@type": "ListItem", "position": 3, "name": "Active Directory vs Entra ID Security 2026", "item": "https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html"}
+      ]
+    }
+    </script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+    <!-- Style System -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+
+    <!-- Global Theme Script -->
     <script>
-        mermaid.initialize({
-            startOnLoad: true,
-            theme: 'dark',
-            securityLevel: 'loose',
-            fontFamily: 'Inter, sans-serif'
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+
+    <style>
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .guide-header {
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+            margin-top: 60px;
+        }
+
+        .guide-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #00D9FF, #0099cc);
+            color: #000;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #00D9FF 60%, #FF3D3D 100%);
+            -webkit-background-clip: text;
+            color: #ffffff; -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.8rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--accent-cyan);
+            margin: 1.25rem 0 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.02rem;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.3);
+            transition: border-color 0.3s;
+        }
+
+        a:hover { border-color: var(--accent-cyan); }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            border-bottom: none;
+            font-size: 0.95rem;
+        }
+
+        .back-link:hover { text-decoration: underline; border-bottom: none; }
+
+        /* Info boxes */
+        .info-box {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: rgba(255, 76, 76, 0.05);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .opinion-box {
+            background: rgba(255, 165, 0, 0.05);
+            border-left: 4px solid var(--accent-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .technical-box {
+            background: rgba(0, 217, 255, 0.03);
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--accent-cyan);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .exploit-box {
+            background: rgba(255, 61, 61, 0.08);
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        .exploit-label {
+            display: block;
+            color: var(--accent-red);
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .defense-box {
+            background: rgba(16, 185, 129, 0.08);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .defense-box::before {
+            content: "Defense Strategy";
+            display: block;
+            color: var(--accent-green);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Code */
+        code {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background: #000;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green);
+        }
+
+        /* Tables */
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table th {
+            background: rgba(0, 217, 255, 0.08);
+            color: var(--accent-cyan);
+            padding: 0.85rem 1.2rem;
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+        }
+
+        .comparison-table th.ad-col { background: rgba(0, 120, 215, 0.12); color: #4ca3ff; }
+        .comparison-table th.entra-col { background: rgba(120, 80, 200, 0.12); color: #a78bfa; }
+
+        .comparison-table td {
+            padding: 0.8rem 1.2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+
+        .comparison-table tr:last-child td { border-bottom: none; }
+        .comparison-table tr:hover td { background: rgba(255,255,255,0.02); }
+        .comparison-table td.feature { color: var(--text-primary); font-weight: 600; font-size: 0.9rem; }
+
+        .badge-ad { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(0,120,215,0.15); color: #4ca3ff; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
+        .badge-entra { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(120,80,200,0.15); color: #a78bfa; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
+        .badge-both { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(16,185,129,0.15); color: #10B981; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
+        .badge-risk { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(255,61,61,0.15); color: #FF3D3D; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
+        .badge-tie { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(255,165,0,0.15); color: #FFA500; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
+
+        /* Score cards */
+        .score-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .score-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+
+        .score-card.ad-card { border-top: 3px solid #4ca3ff; }
+        .score-card.entra-card { border-top: 3px solid #a78bfa; }
+
+        .score-card .os-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .score-card.ad-card .os-label { color: #4ca3ff; }
+        .score-card.entra-card .os-label { color: #a78bfa; }
+        .score-card h4 { color: var(--text-primary); font-size: 1.05rem; margin: 0 0 0.75rem; }
+
+        .score-metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.4rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            font-size: 0.9rem;
+        }
+
+        .score-metric:last-child { border-bottom: none; }
+        .score-metric .label { color: var(--text-secondary); }
+        .score-metric .value { font-weight: 700; font-size: 0.85rem; padding: 0.15rem 0.5rem; border-radius: 4px; }
+        .score-high { background: rgba(16,185,129,0.15); color: #10B981; }
+        .score-medium { background: rgba(255,165,0,0.15); color: #FFA500; }
+        .score-low { background: rgba(255,61,61,0.15); color: #FF3D3D; }
+
+        /* TOC */
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 { margin-top: 0; color: var(--accent-cyan); }
+        .toc ul { list-style: none; margin-left: 0; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--text-secondary); text-decoration: none; border-bottom: none; }
+        .toc a:hover { color: var(--accent-cyan); }
+
+        /* Confidence/TLP badges */
+        .tlp-badge {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.75rem;
+            font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+        }
+
+        .tlp-clear { background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); }
+
+        .confidence-badge {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            padding: 0.3rem 0.8rem; background: rgba(16,185,129,0.15);
+            color: #10B981; border: 1px solid rgba(16,185,129,0.3);
+            border-radius: 4px; font-size: 0.75rem; font-weight: 700;
+            letter-spacing: 1px; text-transform: uppercase;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, rgba(0,217,255,0.08), rgba(255,61,61,0.08));
+            border: 1px solid rgba(0,217,255,0.2);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 { border-top: none !important; border-bottom: none !important; margin-bottom: 1rem !important; }
+        .cta-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+
+        .cta-btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.95rem;
+            font-weight: 600; text-decoration: none !important;
+            border-bottom: none !important; transition: all 0.3s;
+        }
+
+        .cta-btn-primary { background: var(--accent-cyan); color: #000; }
+        .cta-btn-primary:hover { background: #00b8d9; transform: translateY(-2px); }
+        .cta-btn-secondary { background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan) !important; }
+        .cta-btn-secondary:hover { background: rgba(0,217,255,0.1); transform: translateY(-2px); }
+
+        /* Skill cards */
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .skill-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+
+        .skill-card:hover { border-color: rgba(0,217,255,0.3); transform: translateY(-2px); }
+        .skill-card .skill-icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
+        .skill-card h4 { color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1rem; }
+        .skill-card p { color: var(--text-secondary); font-size: 0.9rem; margin: 0; }
+
+        .phase-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent-cyan);
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .phase-card h4 { margin: 0 0 0.5rem; color: var(--accent-cyan); font-size: 1rem; }
+        .phase-card p { margin: 0; font-size: 0.95rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .container { padding: 1rem; }
+            .score-grid { grid-template-columns: 1fr; }
+            .skill-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
+    <!-- Google Analytics 4 -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var gtmScript = document.createElement('script');
+                gtmScript.async = true;
+                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
+                document.head.appendChild(gtmScript);
+                gtmScript.onload = function () {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', 'G-XL6RCXZJE2');
+                };
+            }, 100);
+        });
+    </script>
+    <!-- Fullres Analytics -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
         });
     </script>
 </head>
-<body class="dark-mode">
-    <div id="theme-toggle" class="theme-toggle">
-        <i class="fas fa-moon"></i>
+
+<body>
+<!-- ========== NEW SMART MOBILE HEADER ========== -->
+<header class="m-header m-only">
+    <div class="m-header__logo">
+        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; color: #ffffff; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </a>
+    </div>
+    <div class="m-header__actions">
+        <button class="m-header__btn" id="m-theme-toggle-top" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </button>
+        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+    <!-- Fullscreen Mobile Menu -->
+    <div class="m-menu-overlay m-only" id="m-menu-overlay">
+        <div class="m-menu-header">
+            <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="m-menu-content">
+            <div class="m-menu-section">
+                <div class="m-menu-title">Intelligence</div>
+                <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
+                <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
+                <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Resources</div>
+                <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
+                <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles &amp; News</a>
+                <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Settings</div>
+                <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                    <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+                </button>
+            </div>
+        </div>
     </div>
 
-    <!-- Navigation Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="../index.html" class="logo">TheHG<span class="highlight">Tech</span></a>
-            <nav class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../threat-intel.html">Threat Intel</a>
-                <a href="../cve-tracker.html">CVE Tracker</a>
-                <a href="../guides.html" class="active">Guides</a>
-                <a href="../about.html">About</a>
+    <!-- Desktop Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem; border-bottom: none;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span class="dropdown-badge popular">60+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';"><i class="fas fa-search"></i></button>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255,255,255,0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3); transition: all 0.3s ease;"></span>
+                </button>
             </nav>
-            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
-    <main class="article-container">
-        <article class="article-content">
-            <header class="article-header">
-                <div class="article-meta">
-                    <span class="category-badge">Identity & Access Management</span>
-                    <span class="article-date"><i class="far fa-calendar-alt"></i> May 27, 2026</span>
-                    <span class="article-reading-time"><i class="far fa-clock"></i> 35 min read</span>
-                </div>
-                
-                <h1 class="article-title">Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift</h1>
-                <p class="article-subtitle">How security controls move from the Enterprise Admin to the Cloud Provider, the real risk of single points of failure, and the ultimate migration playbook for 2026.</p>
-                
-                <div class="author-block">
-                    <div class="author-avatar"><i class="fas fa-user-shield"></i></div>
-                    <div class="author-info">
-                        <strong>Harish G</strong>
-                        <span>Security Architect & Researcher</span>
-                    </div>
-                </div>
-            </header>
+    <div class="container">
+        <!-- Back Link -->
+        <a href="/guides/" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none; border-bottom: none;">
+            <i class="fas fa-arrow-left"></i> Back to Guides
+        </a>
 
-            <img src="../images/guides/ad_vs_entra_architecture.png" alt="Detailed architectural diagram comparing physical Active Directory infrastructure with cloud-based Entra ID zero-trust architecture" class="article-hero-image" loading="lazy">
-
-            <div class="article-body">
-                <h2>1. Introduction: The Death of the Perimeter</h2>
-                <p>For over two decades, the security industry relied on the "castle-and-moat" paradigm. If a user was physically sitting in the office connected to the LAN, authenticated against a local Domain Controller (DC), they were deemed trustworthy. The network perimeter was the ultimate line of defense.</p>
-                
-                <p>The transition from on-premises <strong>Active Directory (AD)</strong> to cloud-native <strong>Microsoft Entra ID</strong> (formerly Azure AD) completely obliterates this model. Today, the network is untrusted by default. The identity itself has become the perimeter.</p>
-                
-                <img src="../images/guides/identity_perimeter_concept.png" alt="Conceptual illustration showing the death of the physical firewall, replaced by glowing zero-trust authentication nodes" style="width: 100%; border-radius: 12px; margin: 2rem 0;" loading="lazy">
-                
-                <div class="info-box info">
-                    <i class="fas fa-info-circle"></i>
-                    <div>
-                        <strong>Key Concept: Zero Trust Identity</strong>
-                        <p>In the modern Entra ID paradigm, every access request must be explicitly verified regardless of where the request originates. Trust is evaluated dynamically based on device health, user risk, and location—not IP address alone.</p>
-                    </div>
-                </div>
-
-                <h3>At a Glance: AD vs Entra ID Paradigm Shift</h3>
-                <div class="responsive-table-container">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Element</th>
-                                <th>On-Premises Active Directory</th>
-                                <th>Microsoft Entra ID (Cloud)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Core Perimeter</strong></td>
-                                <td>The physical/corporate network boundary (Firewalls, LAN)</td>
-                                <td>The Identity and Device state (Zero Trust)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Management Model</strong></td>
-                                <td>Enterprise Admin controls the infrastructure (OS, servers, patching)</td>
-                                <td>Tenant Admin controls policies; Microsoft controls infrastructure</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Authentication Protocols</strong></td>
-                                <td>Kerberos, NTLM, LDAP</td>
-                                <td>OAuth 2.0, OpenID Connect (OIDC), SAML 2.0</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Primary Attack Surface</strong></td>
-                                <td>Pass-the-Hash, Kerberoasting, DC replication abuse</td>
-                                <td>Consent phishing, Pass-the-Cookie, OAuth App abuse, MFA fatigue</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h2>2. Core Architecture Comparison</h2>
-                <p>Active Directory was built in a time of flat networks and trusted domains. It utilizes <strong>LDAP</strong> (Lightweight Directory Access Protocol) for queries and <strong>Kerberos</strong> or <strong>NTLM</strong> for authentication. It heavily relies on DNS to locate domain controllers. It is fundamentally a hierarchical, X.500-based structure consisting of Domains, Trees, and Forests.</p>
-                
-                <p><strong>Entra ID is not Active Directory in the cloud.</strong> It is a flat, HTTP-based, multi-tenant directory service. It does not use OUs (Organizational Units), GPOs, or Kerberos. It communicates exclusively via web-friendly protocols like <strong>OAuth 2.0</strong>, <strong>SAML</strong>, and <strong>OpenID Connect</strong>, and relies on the Microsoft Graph API for queries and management.</p>
-                
-                <div class="mermaid">
-                graph TD
-                    subgraph On-Premises AD
-                    A[User on LAN] -->|Kerberos/NTLM| B[Domain Controller]
-                    B -->|LDAP| C[File Shares / Apps]
-                    end
-                    
-                    subgraph Microsoft Entra ID
-                    D[Remote User] -->|HTTPS / OAuth 2.0| E[Entra ID Cloud Control Plane]
-                    E -->|OIDC / SAML| F[SaaS Apps / M365]
-                    E -.->|Conditional Access Check| G{Device / Risk Eval}
-                    end
-                </div>
-
-                <h2>3. The Shared Responsibility Model & Vendor Control</h2>
-                <img src="../images/guides/real_world_server_room_ad.png" alt="Real-world illustration of an IT administrator managing physical Active Directory domain controllers in a server room" style="width: 100%; border-radius: 12px; margin: 1rem 0 2rem;" loading="lazy">
-                <p>When you run on-prem AD, you own everything. If a server goes down, you reboot it. If a vulnerability is found, you patch it. You hold the proverbial keys to the kingdom.</p>
-                
-                <p>Moving to Entra ID shifts the burden of physical hardware, network availability, and database security to Microsoft. This is the <strong>Shared Responsibility Model</strong>.</p>
-                
-                <div class="stats-grid" style="margin: 2rem 0;">
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Microsoft Control over Backend Infra</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">Zero</div>
-                        <div class="stat-label">Visibility into underlying hypervisors</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Customer Responsibility for Policy Config</div>
-                    </div>
-                </div>
-
-                <div class="info-box warning">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <div>
-                        <strong>The Black Box Problem & Vendor Lock-In</strong>
-                        <p>By delegating infrastructure to Microsoft, you create absolute vendor dependency. If Microsoft's authentication backbone suffers a catastrophic bug, you cannot "fix" it. Your ability to operate is entirely dependent on Microsoft's SLA. Furthermore, entangling your entire SaaS ecosystem into Entra ID makes migrating away functionally impossible for most large enterprises.</p>
-                    </div>
-                </div>
-
-                <h2>4. Granular Controls: From GPOs to Conditional Access</h2>
-                <p>In the AD world, <strong>Group Policy Objects (GPOs)</strong> ruled supreme. They configured registry keys, mapped drives, and enforced password policies based on OUs.</p>
-                
-                <p>In Entra ID, device management shifts to Intune (MDM), and access control shifts to <strong>Conditional Access (CA)</strong>. Conditional Access acts as an intelligent "if-then" engine evaluating every authentication request.</p>
-
-                <div class="responsive-table-container">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Feature</th>
-                                <th>On-Premises AD</th>
-                                <th>Entra ID</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Policy Enforcement</strong></td>
-                                <td>GPOs (applied at login/refresh intervals)</td>
-                                <td>Conditional Access (evaluated dynamically per session)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Privileged Access</strong></td>
-                                <td>Domain Admins, Enterprise Admins (Persistent)</td>
-                                <td>Privileged Identity Management (PIM) (JIT, time-bound)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Device Trust</strong></td>
-                                <td>Domain Joined</td>
-                                <td>Intune Compliant / Hybrid Joined</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Misconfiguration Risk</strong></td>
-                                <td>Open file shares, overly broad GPO links</td>
-                                <td>Excluding accounts from MFA, bad CA rule overlapping</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h2>5. The CIA Triad Impact: When the Cloud Fails</h2>
-                <p>The centralization of identity creates a massive shift in how we view the <strong>CIA Triad (Confidentiality, Integrity, Availability)</strong>. Entra ID is essentially a global Single Point of Failure (SPOF).</p>
-                
-                <h3>Availability: The 2024-2026 Outages</h3>
-                <p>In the past, if a local DC went down, a secondary DC in the same site would seamlessly take over. But what happens when the global Azure front door fails? Recent incidents in late 2024 and mid-2025 demonstrated that when the Entra ID control plane experiences an outage, it creates a cascading failure. Not only do users lose access to email and Teams, but they also lose access to AWS, Salesforce, and HR systems because Entra ID acts as the sole identity provider (IdP).</p>
-
-                <h3>Confidentiality & Integrity: The New Attack Vectors</h3>
-                <ul class="article-list">
-                    <li><strong>Pass-the-Cookie / Token Theft:</strong> Attackers no longer need passwords. If they steal a valid session token from a user's browser, they bypass MFA entirely.</li>
-                    <li><strong>Consent Phishing:</strong> Instead of tricking users into giving up passwords, attackers trick users into granting malicious OAuth "App Registrations" permission to read their emails or access SharePoint files.</li>
-                    <li><strong>AiTM (Adversary-in-the-Middle):</strong> Proxies like Evilginx intercept the authentication flow, capturing both the credentials and the MFA session token in real-time.</li>
-                </ul>
-
-                <h2>6. Security Tools & Monitoring Reality</h2>
-                <p>In an on-prem world, monitoring meant pulling event logs (like Event ID 4624) from Domain Controllers into a local SIEM like Splunk. In the cloud, the visibility paradigm changes.</p>
-
-                <p>Microsoft pushes organizations toward its proprietary security stack: <strong>Microsoft Defender for Identity</strong> (for hybrid AD monitoring), <strong>Entra ID Protection</strong> (for detecting risky sign-ins), and <strong>Microsoft Sentinel</strong> (the cloud-native SIEM).</p>
-
-                <div class="info-box danger">
-                    <i class="fas fa-radiation"></i>
-                    <div>
-                        <strong>The Hidden Cost of Cloud Visibility</strong>
-                        <p>While Microsoft provides native logs (Sign-in logs, Audit logs), exporting these logs to a third-party SIEM (like Splunk or Datadog) via Event Hubs incurs significant egress and ingestion costs. Microsoft explicitly designs its ecosystem to make keeping data inside Sentinel the most cost-effective path, further cementing vendor lock-in.</p>
-                    </div>
-                </div>
-
-                <h2>7. Migration Security Playbook</h2>
-                <p>A secure migration from AD to Entra ID requires meticulous planning. Moving too fast can expose your directory to the internet; moving too slow leaves legacy protocols vulnerable.</p>
-
-                <div class="mermaid">
-                flowchart TD
-                    A[Phase 1: Hybrid Sync] --> B[Phase 2: Modern Auth]
-                    B --> C[Phase 3: CA Policies]
-                    C --> D[Phase 4: Deprecate Legacy Auth]
-                    D --> E[Phase 5: Cloud Native]
-                    
-                    style A fill:#1e293b,stroke:#3b82f6
-                    style B fill:#1e293b,stroke:#3b82f6
-                    style C fill:#1e293b,stroke:#3b82f6
-                    style D fill:#1e293b,stroke:#ef4444
-                    style E fill:#1e293b,stroke:#10b981
-                </div>
-
-                <h3>The Cutover Checklist</h3>
-                <ul class="article-list">
-                    <li><strong>Implement Break-Glass Accounts:</strong> Create two highly monitored, cloud-only Global Administrator accounts (e.g., <code>emerg.admin@yourdomain.onmicrosoft.com</code>). Exclude these from conditional access rules to prevent locking yourself out if a CA policy breaks or MFA services go down.</li>
-                    <li><strong>Disable Legacy Authentication:</strong> Block IMAP, POP3, and legacy MAPI globally via Conditional Access to kill 99% of password-spraying attacks.</li>
-                    <li><strong>Tiered Administration:</strong> Implement the Enterprise Access Model. Ensure that users syncing from on-prem AD cannot escalate privileges to Entra ID Global Admin roles.</li>
-                    <li><strong>Review App Registrations:</strong> Audit all Enterprise Applications. Remove apps with "Read/Write All Directory" permissions that lack a clear business owner.</li>
-                </ul>
-
-                <h2>8. How Security Teams Must Adapt</h2>
-                <img src="../images/guides/entra_id_cloud_dashboard.png" alt="SOC analyst monitoring Entra ID cloud security analytics on multiple screens" style="width: 100%; border-radius: 12px; margin: 1rem 0 2rem;" loading="lazy">
-                <p>The role of the Security Engineer is shifting from network engineering and patch management to Identity Threat Detection and Response (ITDR).</p>
-                <p>Teams must learn to hunt for anomalous OAuth grants, investigate impossible travel alerts within Entra ID Protection, and write KQL (Kusto Query Language) queries to trace token theft across Azure logs. The focus is no longer on scanning IPs for open ports, but rather querying APIs for excessive permissions.</p>
-
-                <h2>9. Decision Framework: Stay AD or Move to Entra ID?</h2>
-                <p>For almost every organization moving forward, the answer is <strong>Entra ID</strong>. However, the path there varies:</p>
-                <ul class="article-list">
-                    <li><strong>Startups / Cloud-First:</strong> Go 100% cloud-native Entra ID immediately. Avoid on-prem AD entirely.</li>
-                    <li><strong>Mid-to-Large Enterprises:</strong> Operate a Hybrid environment. Keep on-prem AD for legacy manufacturing systems, local file shares, and OT networks, but migrate all user identities and M365 access to Entra ID.</li>
-                    <li><strong>Air-Gapped / High Security Gov:</strong> Rely on isolated on-prem Active Directory forests where internet connectivity is strictly prohibited.</li>
-                </ul>
-
-                <h2>10. Future Outlook 2027–2028</h2>
-                <p>Looking ahead, Microsoft will continue deprecating legacy protocols like NTLM. We expect a massive push toward Continuous Access Evaluation (CAE), where token revocation happens in near real-time if a user’s risk changes, and an aggressive push towards FIDO2/Passkeys, ultimately making passwords obsolete.</p>
-                <p>Security engineers must accept that the cloud identity plane is the new battlefield. Securing it requires treating API configurations with the same reverence we once treated the enterprise firewall.</p>
-            </div>
-            
-            <div class="article-footer">
-                <div class="article-tags">
-                    <span class="tag">Active Directory</span>
-                    <span class="tag">Entra ID</span>
-                    <span class="tag">Zero Trust</span>
-                    <span class="tag">Cloud Security</span>
-                    <span class="tag">Identity Management</span>
-                    <span class="tag">Microsoft</span>
-                </div>
-            </div>
-        </article>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <h3>TheHG<span class="highlight">Tech</span></h3>
-                <p>Demystifying advanced threats, vulnerability research, and security engineering.</p>
-            </div>
-            <div class="footer-links">
-                <div class="link-group">
-                    <h4>Content</h4>
-                    <a href="../threat-intel.html">Threat Intelligence</a>
-                    <a href="../cve-tracker.html">CVE Tracker</a>
-                    <a href="../guides.html">Security Guides</a>
-                </div>
-                <div class="link-group">
-                    <h4>Connect</h4>
-                    <a href="https://github.com/Harish761" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://x.com/Harish__761" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="https://linkedin.com/in/harish-g-4648781a7" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </div>
+        <div class="guide-header">
+            <span class="guide-badge"><i class="fas fa-id-card"></i> Identity &amp; Access Management</span>
+            <h1>Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift</h1>
+            <div style="font-size: 0.9rem; color: var(--accent-cyan); margin-bottom: 1.5rem;"><i class="fas fa-calendar-check"></i> <strong>Last updated:</strong> May 2026</div>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">How security controls move from the Enterprise Admin to the Cloud Provider. A deep-dive into the architectural shift, new attack surfaces, Entra ID hardening, migration playbook, and the skills every Security Engineer needs now.</p>
+            <div style="margin-top: 1rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1.5rem;">
+                <span><i class="fas fa-book-open"></i> 38 min read</span>
+                <span>|</span>
+                <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span>
+                <span>|</span>
+                <span><i class="far fa-calendar-alt"></i> May 2026</span>
+                <span>|</span>
+                <span><i class="fas fa-user"></i> Harish G</span>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 TheHGTech. Designed by Harish G.</p>
+
+        <!-- Hero Image -->
+        <img src="/images/guides/ad_vs_entra_architecture.png"
+             alt="Architectural comparison illustration showing on-premises Active Directory infrastructure on the left versus Microsoft Entra ID cloud zero-trust architecture on the right"
+             class="featured-image"
+             style="width: 100%; object-fit: cover; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,217,255,0.2);"
+             loading="eager">
+
+        <!-- BLUF -->
+        <div class="info-box">
+            <strong><i class="fas fa-shield-alt"></i> BLUF (Bottom Line Up Front):</strong>
+            Moving from on-premises Active Directory to Microsoft Entra ID is not a migration — it is a complete inversion of the security responsibility model. You are trading total infrastructure control for massive operational simplification, but in doing so you hand Microsoft the keys to your availability, and you introduce an entirely new class of identity-centric attack vectors. This guide will tell you exactly what you gain, what you lose, and what you must do differently as a Security Engineer.
+            <br><br>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <span class="confidence-badge"><i class="fas fa-check-circle"></i> Research-Grade</span>
+                <span class="tlp-badge tlp-clear"><i class="fas fa-globe"></i> TLP: CLEAR</span>
+                <span style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.8rem; background: rgba(168,85,247,0.15); color: #a855f7; border: 1px solid rgba(168,85,247,0.3); border-radius: 4px; font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;"><i class="fas fa-user-shield"></i> Security Engineer Guide</span>
+            </div>
         </div>
-    </footer>
 
-    <!-- Theme toggler script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggle = document.getElementById('theme-toggle');
-            const body = document.body;
-            const icon = themeToggle.querySelector('i');
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
+            <ul>
+                <li><a href="#paradigm">1. Introduction: The Death of the Perimeter</a></li>
+                <li><a href="#architecture">2. Core Architecture &amp; Protocol Deep-Dive</a>
+                    <ul style="margin-top: 0.4rem;">
+                        <li><a href="#ad-arch">2.1 On-Premises Active Directory Architecture</a></li>
+                        <li><a href="#entra-arch">2.2 Microsoft Entra ID Architecture</a></li>
+                        <li><a href="#protocol-compare">2.3 Protocol Comparison Table</a></li>
+                    </ul>
+                </li>
+                <li><a href="#shared-responsibility">3. Shared Responsibility &amp; Vendor Control</a></li>
+                <li><a href="#controls">4. Granular Controls: GPOs to Conditional Access</a></li>
+                <li><a href="#cia-triad">5. The CIA Triad Impact &amp; The Outage Problem</a></li>
+                <li><a href="#attack-vectors">6. New Attack Vectors in the Cloud Identity Plane</a></li>
+                <li><a href="#monitoring">7. Security Tools &amp; Monitoring Reality</a></li>
+                <li><a href="#migration">8. Migration Security Playbook</a></li>
+                <li><a href="#hardening">9. Entra ID Security Hardening Checklist</a></li>
+                <li><a href="#upskill">10. How to Adapt &amp; Upskill as a Security Engineer</a></li>
+                <li><a href="#decision">11. Decision Framework: AD or Entra ID?</a></li>
+                <li><a href="#future">12. Future Outlook 2027–2028</a></li>
+            </ul>
+        </div>
 
-            themeToggle.addEventListener('click', () => {
-                body.classList.toggle('dark-mode');
-                if (body.classList.contains('dark-mode')) {
-                    icon.classList.remove('fa-sun');
-                    icon.classList.add('fa-moon');
-                } else {
-                    icon.classList.remove('fa-moon');
-                    icon.classList.add('fa-sun');
-                }
-            });
-        });
-    </script>
+        <!-- ===== SECTION 1 ===== -->
+        <h2 id="paradigm">1. Introduction: The Death of the Perimeter</h2>
+
+        <img src="/images/guides/identity_perimeter_concept.png"
+             alt="Conceptual illustration showing a crumbling brick wall (the network perimeter) replaced by glowing zero-trust authentication nodes protecting a remote worker"
+             style="width: 100%; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.4);"
+             loading="lazy">
+
+        <p>For over two decades, enterprise security operated on a simple, intuitive assumption: <em>if you're on the network, you're trusted</em>. Your domain controllers sat behind firewalls. Workstations joined a domain. Group Policy configured every registry key, drive mapping, and password policy from a central point you fully controlled. The "castle-and-moat" model worked — until it didn't.</p>
+
+        <p>The shift to remote work, SaaS adoption, and cloud-hosted workloads comprehensively obliterated the usefulness of the network perimeter. A user sitting in a Bangalore coffee shop accessing SharePoint Online via a personal device cannot be "trusted" based on their IP address. This is the fundamental crisis that drove the move to <strong>Microsoft Entra ID</strong> and the Zero Trust model: <strong>identity has become the new security perimeter.</strong></p>
+
+        <div class="opinion-box">
+            <p><strong><i class="fas fa-comment-alt" style="color: #FFA500; margin-right: 8px;"></i> The Uncomfortable Truth:</strong> Entra ID is not Active Directory in the cloud. They share a namespace (user accounts, groups) but are architecturally, fundamentally, and philosophically different systems. Treating an Entra ID migration as a "lift and shift" is one of the most dangerous and common misconceptions in enterprise IT today. Security Engineers who carry on thinking in GPOs and LDAP will be blindsided by the new attack surface.</p>
+        </div>
+
+        <!-- ===== SECTION 2 ===== -->
+        <h2 id="architecture">2. Core Architecture &amp; Protocol Deep-Dive</h2>
+
+        <h3 id="ad-arch">2.1 On-Premises Active Directory Architecture</h3>
+
+        <p>Active Directory Domain Services (AD DS) was built for a world of physical offices connected by LAN. Its architecture is built around a hierarchical, X.500-based LDAP directory.</p>
+
+        <div class="technical-box">
+            <h4><i class="fas fa-server"></i> Active Directory Technical Stack</h4>
+            <ul>
+                <li><strong>Directory Service:</strong> LDAP (Lightweight Directory Access Protocol) — TCP port 389 / LDAPS port 636. Used for all directory queries, searches, and modifications.</li>
+                <li><strong>Authentication:</strong> Kerberos v5 (default, ticket-based) and NTLM (legacy fallback). Kerberos relies on time synchronization (5-minute skew tolerance) and requires a reachable Domain Controller for every auth event.</li>
+                <li><strong>Replication:</strong> Multi-master AD replication via DRSUAPI (Directory Replication Service Remote Protocol). Sites and Services manage replication topology.</li>
+                <li><strong>Policy Enforcement:</strong> Group Policy Objects (GPOs) linked to OUs, Sites, or the Domain. GPOs apply at login and refresh every 90 minutes (± 30 min random offset). Critical GPOs can be force-refreshed with <code>gpupdate /force</code>.</li>
+                <li><strong>Global Catalog:</strong> Read-only partial replica of all objects in the forest. Required for Universal Group membership lookups and cross-domain logins.</li>
+                <li><strong>Trust Relationships:</strong> Domain Trusts (transitive or non-transitive). Forest Trusts for cross-forest resource access. External Trusts for isolated domain access.</li>
+                <li><strong>Schema:</strong> A single schema partition shared by the entire forest. Schema extensions are one-way and permanent — a critical operational risk.</li>
+            </ul>
+        </div>
+
+        <img src="/images/guides/real_world_server_room_ad.png"
+             alt="An IT administrator managing physical Active Directory domain controllers in a server room, surrounded by cabling and hardware racks"
+             style="width: 100%; border-radius: 12px; margin: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.4);"
+             loading="lazy">
+
+        <h3 id="entra-arch">2.2 Microsoft Entra ID Architecture</h3>
+
+        <p>Entra ID is a cloud-native, globally distributed, multi-tenant directory service built on REST APIs. It does not use LDAP, Kerberos, or OUs. It operates at the HTTP layer and communicates exclusively via industry-standard open protocols.</p>
+
+        <div class="technical-box">
+            <h4><i class="fas fa-cloud"></i> Microsoft Entra ID Technical Stack</h4>
+            <ul>
+                <li><strong>Directory Service:</strong> Microsoft Graph API (REST/JSON, HTTPS port 443). This is your new "LDAP" — everything from reading user attributes to managing group memberships goes through Graph API calls.</li>
+                <li><strong>Authentication Protocols:</strong> OAuth 2.0 (delegated and application permission flows), OpenID Connect (OIDC for identity tokens), SAML 2.0 (legacy enterprise SSO).</li>
+                <li><strong>Token Types:</strong> Access Tokens (short-lived JWTs, 1 hour default), Refresh Tokens (long-lived, up to 90 days for persistent sessions), ID Tokens (identity claims for OIDC).</li>
+                <li><strong>Policy Enforcement:</strong> Conditional Access Policies — evaluated dynamically per authentication request. Conditions: user/group, device compliance, location (Named Location), app, sign-in risk score, user risk score. Controls: Require MFA, block access, require compliant device, require Hybrid Join.</li>
+                <li><strong>Privileged Access:</strong> Privileged Identity Management (PIM) — enables just-in-time (JIT) activation of elevated roles. Roles remain "eligible" and require explicit activation with justification and approval workflow.</li>
+                <li><strong>Directory Structure:</strong> Flat structure within a Tenant. No OUs. Administrative Units (AUs) provide scoped delegation but are not a full OU equivalent. Management is all policy-driven, not structure-driven.</li>
+                <li><strong>App Registration:</strong> Service Principals and App Registrations define how applications authenticate and what permissions they hold. Every SaaS app integrated via SSO gets an Enterprise Application object in the tenant.</li>
+            </ul>
+        </div>
+
+        <h3 id="protocol-compare">2.3 Protocol Comparison Table</h3>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th class="ad-col">Active Directory (On-Prem)</th>
+                        <th class="entra-col">Microsoft Entra ID (Cloud)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature">Core Protocol</td>
+                        <td>LDAP / LDAPS (port 389/636)</td>
+                        <td>Microsoft Graph API (HTTPS/443)</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Authentication</td>
+                        <td>Kerberos v5, NTLM (fallback)</td>
+                        <td>OAuth 2.0, OpenID Connect (OIDC), SAML 2.0</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Session Model</td>
+                        <td>Kerberos ticket (TGT + Service Tickets), valid for 10 hrs default</td>
+                        <td>JWT Access Token (1 hr) + Refresh Token (up to 90 days)</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Policy Engine</td>
+                        <td>Group Policy Objects (GPOs), applied at login/refresh</td>
+                        <td>Conditional Access — evaluated per-request dynamically</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Privileged Access</td>
+                        <td>Domain Admin / Enterprise Admin (always-on persistent roles)</td>
+                        <td>PIM (Just-in-Time roles, time-bound, approval workflow)</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Directory Structure</td>
+                        <td>Hierarchical: Forest &gt; Domains &gt; OUs &gt; Objects</td>
+                        <td>Flat: Tenant &gt; Administrative Units (scoped delegation only)</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Device Management</td>
+                        <td>Domain Join, Computer Objects, Machine GPO</td>
+                        <td>Entra Join / Hybrid Join + Intune MDM/MAM Policies</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Primary Attack Vector</td>
+                        <td>Pass-the-Hash, Kerberoasting, DCSync, Golden Ticket</td>
+                        <td>Token theft, consent phishing, MFA fatigue, OAuth abuse</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Monitoring</td>
+                        <td>Windows Event Logs (DC Security Log), Sysmon, LDAP queries</td>
+                        <td>Entra ID Sign-in Logs, Audit Logs, Identity Protection risk events</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Infrastructure Ownership</td>
+                        <td>Full (hardware, OS, patching, backups)</td>
+                        <td>Microsoft owns infra; you own config, policy, identity lifecycle</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== SECTION 3 ===== -->
+        <h2 id="shared-responsibility">3. Shared Responsibility &amp; Vendor Control</h2>
+
+        <p>This is where the mental model shift is most pronounced, and most dangerous if misunderstood. When you run on-premises AD, <strong>you own everything</strong>. Every patch, every server, every backup, every replication failure — the responsibility, and the control, is yours.</p>
+
+        <p>The Shared Responsibility Model for Entra ID looks like this:</p>
+
+        <div class="score-grid">
+            <div class="score-card ad-card">
+                <div class="os-label">You Manage (Always)</div>
+                <h4>Your Responsibilities</h4>
+                <div class="score-metric"><span class="label">Identity lifecycle</span><span class="value score-high">Owner</span></div>
+                <div class="score-metric"><span class="label">Conditional Access policy design</span><span class="value score-high">Owner</span></div>
+                <div class="score-metric"><span class="label">Role assignments &amp; PIM config</span><span class="value score-high">Owner</span></div>
+                <div class="score-metric"><span class="label">App registrations &amp; API permissions</span><span class="value score-high">Owner</span></div>
+                <div class="score-metric"><span class="label">MFA enforcement</span><span class="value score-high">Owner</span></div>
+                <div class="score-metric"><span class="label">Break-glass account management</span><span class="value score-high">Owner</span></div>
+            </div>
+            <div class="score-card entra-card">
+                <div class="os-label">Microsoft Manages (No Visibility)</div>
+                <h4>Microsoft's Responsibilities</h4>
+                <div class="score-metric"><span class="label">Global infrastructure</span><span class="value score-low">MSFT</span></div>
+                <div class="score-metric"><span class="label">Backend database &amp; replication</span><span class="value score-low">MSFT</span></div>
+                <div class="score-metric"><span class="label">Token signing key management</span><span class="value score-low">MSFT</span></div>
+                <div class="score-metric"><span class="label">Platform availability &amp; SLA</span><span class="value score-medium">MSFT (99.99%)</span></div>
+                <div class="score-metric"><span class="label">Physical &amp; network security</span><span class="value score-low">MSFT</span></div>
+                <div class="score-metric"><span class="label">Software patching &amp; updates</span><span class="value score-low">MSFT</span></div>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <strong><i class="fas fa-exclamation-triangle" style="color: var(--accent-red);"></i> The Black Box &amp; Vendor Lock-In Reality</strong>
+            <p style="margin-top: 0.75rem;">Microsoft controls the token signing infrastructure. If the government of a sovereign nation demanded Microsoft invalidate tokens for a specific tenant — or if a rogue Microsoft insider modified the root signing keys — you would have no visibility and no recourse. The 2023 Storm-0558 incident, where Chinese nation-state actors forged Entra ID access tokens using a compromised Microsoft signing key, is the most chilling proof of this model's systemic risk. That was not your misconfiguration. That was a failure inside Microsoft's "black box" — and your tenant was exposed regardless.</p>
+        </div>
+
+        <!-- ===== SECTION 4 ===== -->
+        <h2 id="controls">4. Granular Controls: From GPOs to Conditional Access</h2>
+
+        <p>Group Policy Objects gave administrators enormous, low-level control. A GPO can configure 4,000+ settings — from disabling USB ports to setting the NTP server. This granularity is gone in Entra ID's native cloud model.</p>
+
+        <p>Device configuration in Intune uses a different paradigm: profile-based MDM policies. For identity access control, Conditional Access has replaced GPO-based network-boundary enforcement entirely.</p>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Control Area</th>
+                        <th class="ad-col">AD / GPO Mechanism</th>
+                        <th class="entra-col">Entra ID / Intune Equivalent</th>
+                        <th>Risk if Misconfigured</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature">Password Policy</td>
+                        <td>Default Domain Policy, Fine-Grained Password Policy (PSO)</td>
+                        <td>Entra ID Password Protection + Authentication Strength policies</td>
+                        <td><span class="badge-risk">High</span> — Weak passwords &rarr; password spray</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">MFA Enforcement</td>
+                        <td>N/A natively (requires RADIUS/NPS for VPN)</td>
+                        <td>Conditional Access — require MFA per app, per risk, per location</td>
+                        <td><span class="badge-risk">Critical</span> — Missing CA rules = MFA bypass</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Privileged Access</td>
+                        <td>Domain Admin / Protected Users group, Admin tier model</td>
+                        <td>PIM with JIT activation, approval workflows, access reviews</td>
+                        <td><span class="badge-risk">Critical</span> — Standing GA roles are instant SPOF</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">App Access Control</td>
+                        <td>Software Restriction Policies / AppLocker / WDAC via GPO</td>
+                        <td>Enterprise Applications, App Registration consent policies</td>
+                        <td><span class="badge-risk">High</span> — Rogue OAuth apps can read all mail</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Session Lifetime</td>
+                        <td>Kerberos ticket lifetime (10 hrs), Kerberos renewal (7 days)</td>
+                        <td>Token lifetime policies, Continuous Access Evaluation (CAE)</td>
+                        <td><span class="badge-risk">High</span> — Long refresh tokens enable persistent attacks</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Device Trust</td>
+                        <td>Domain Join (machine account in AD)</td>
+                        <td>Entra Join + Intune compliant device = CA requirement</td>
+                        <td><span class="badge-risk">Medium</span> — Unmanaged devices bypass device CA controls</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Script Execution</td>
+                        <td>PowerShell execution policy via GPO</td>
+                        <td>Intune Win32 app + PowerShell script deployment</td>
+                        <td><span class="badge-risk">Medium</span> — Poor script signing = LOLBin abuse</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>4.1 Common Entra ID / Conditional Access Misconfigurations</h3>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-skull-crossbones"></i> Misconfiguration #1: Break-Glass Excluded from ALL Policies</span>
+            <p>Break-glass accounts <em>should</em> be excluded from Conditional Access — but organizations often accidentally exclude them from <em>all</em> policies including risky sign-in policies. An attacker who compromises a break-glass account faces zero Conditional Access controls.</p>
+            <div class="defense-box">Exclude break-glass only from MFA and device compliance CA policies. Keep them in scope for Identity Protection risk-based sign-in policies. Monitor sign-ins from break-glass accounts with real-time alerts in Sentinel.</div>
+        </div>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-skull-crossbones"></i> Misconfiguration #2: Persistent Global Administrator Roles</span>
+            <p>Having Global Administrator assigned directly (not as an eligible PIM role) means any compromise of that account is instantly catastrophic. No JIT, no approval workflow, no time limit.</p>
+            <div class="defense-box">No user should have standing GA. All GA assignments must flow through PIM with justification, manager approval, and 1-4 hour maximum activation windows. Enforce this with an Access Review.</div>
+        </div>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-skull-crossbones"></i> Misconfiguration #3: User Consent for OAuth Apps Enabled</span>
+            <p>By default (in older tenants), end users can consent to third-party apps reading their email, files, and contacts. This is the foundation of every consent phishing attack. Attackers register a legitimate-looking app ("OneDrive Helper Pro") and phish users into clicking "Accept".</p>
+            <div class="defense-box">Set user consent to "Do not allow user consent." Require admin consent for all apps. Use the App Governance add-on in Defender for Cloud Apps to get visibility into all app permissions granted.</div>
+        </div>
+
+        <!-- ===== SECTION 5 ===== -->
+        <h2 id="cia-triad">5. The CIA Triad Impact &amp; The Outage Problem</h2>
+
+        <p>The CIA Triad — Confidentiality, Integrity, and Availability — is the foundational security model. Moving to Entra ID shifts the threat profile for all three pillars dramatically.</p>
+
+        <h3>5.1 Availability: Entra ID as a Global Single Point of Failure</h3>
+
+        <p>This is the most underappreciated risk in modern enterprise IT. On-premises AD could survive a data center outage by having secondary DCs in branch offices. If the DC in London fails, the one in Dubai takes over automatically — no user notices.</p>
+
+        <p>When Entra ID fails, there is no secondary DC you control. Microsoft's 99.99% SLA sounds solid until you calculate that 0.01% downtime = 52 minutes per year. But real-world incidents have lasted far longer.</p>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Incident</th>
+                        <th>Date</th>
+                        <th>Root Cause</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature">Azure AD / Entra ID Global Outage</td>
+                        <td>July 2024</td>
+                        <td>Configuration change to Azure Front Door affected token issuance</td>
+                        <td>Teams, M365, Azure Portal inaccessible globally for ~5 hours</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Entra ID Authentication Degradation</td>
+                        <td>September 2024</td>
+                        <td>Token validation service degradation; MFA service partial failure</td>
+                        <td>Intermittent login failures for M365, Entra ID-backed SaaS apps</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Storm-0558 Token Forgery</td>
+                        <td>May–June 2023</td>
+                        <td>Microsoft signing key compromise by Chinese nation-state</td>
+                        <td>Forged tokens used to access US Government M365 tenants; confidentiality breach</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="warning-box">
+            <strong><i class="fas fa-radiation" style="color: var(--accent-red);"></i> The Cascading Failure Problem</strong>
+            <p style="margin-top: 0.75rem;">When Entra ID goes down, it is not just M365 that fails. Every SaaS application using Entra ID as its SSO Identity Provider also fails. If your organization uses Entra ID as the IdP for Salesforce, ServiceNow, Workday, Slack, and AWS, all of them become inaccessible simultaneously. The identity plane is the single most critical dependency in a cloud-first organization.</p>
+        </div>
+
+        <h3>5.2 Confidentiality: Token Theft &amp; The Cookie Monster</h3>
+
+        <p>In the AD world, the crown jewel was the NTLM hash or the Kerberos ticket. In the cloud world, the crown jewel is the OAuth refresh token — and it is stored in plaintext in your browser's session storage or token cache.</p>
+
+        <ul>
+            <li><strong>Pass-the-Cookie:</strong> Attackers use tools like Evilginx or commodity stealers (Raccoon, Vidar, RedLine) to steal authenticated browser cookies. These cookies contain the session context needed to bypass MFA entirely — the attacker just imports the cookie into their browser and they are logged in as the victim.</li>
+            <li><strong>AiTM (Adversary-in-the-Middle) Proxies:</strong> Phishing kits using reverse proxy frameworks (Evilginx2, Modlishka, Muraena) intercept the authentication flow in real time. The victim authenticates successfully (including MFA), the proxy captures the session token, and forwards it to the attacker. MFA is bypassed.</li>
+            <li><strong>Primary Refresh Token (PRT) Theft:</strong> The PRT is the master credential on an Entra ID-joined Windows device. It is used to silently authenticate to all Azure/M365 services. Tools like <code>roadtx</code> and <code>AADInternals</code> can extract PRTs from device memory.</li>
+        </ul>
+
+        <h3>5.3 Integrity: Identity-Based Lateral Movement</h3>
+
+        <p>Attackers who have compromised a cloud identity no longer need to move laterally through networks. They move laterally through permissions. Compromising a user with SharePoint Admin grants immediate read/write access to every SharePoint site. Compromising an Application Administrator allows the attacker to add credentials to any App Registration, creating a persistent backdoor that survives password resets.</p>
+
+        <!-- ===== SECTION 6 ===== -->
+        <h2 id="attack-vectors">6. New Attack Vectors in the Cloud Identity Plane</h2>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-exclamation-triangle"></i> Attack Vector 1: Consent Phishing</span>
+            <p>Attacker registers a malicious OAuth app ("Outlook Calendar Sync") and distributes a phishing link. When the victim clicks "Accept," the app gains permissions (e.g., <code>Mail.Read</code>, <code>Files.ReadWrite.All</code>) that persist indefinitely, even after the victim changes their password. Password resets do not revoke OAuth consent grants.</p>
+            <div class="defense-box">Block user consent; require admin approval for all OAuth apps. Use Defender for Cloud Apps to audit existing grants. Run regular KQL queries against Entra ID Audit Logs to detect new consent grants.</div>
+        </div>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-exclamation-triangle"></i> Attack Vector 2: MFA Fatigue (Push Bombing)</span>
+            <p>Attacker has a valid username/password (from a phishing campaign or credential dump). They spam the victim's authenticator app with push notifications until the victim approves one by mistake (or to stop the notifications).</p>
+            <div class="defense-box">Disable Microsoft Authenticator push notifications in favor of number matching + additional context in push. Better: migrate to FIDO2 hardware tokens or passkeys, which are completely phishing-resistant and immune to push bombing.</div>
+        </div>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-exclamation-triangle"></i> Attack Vector 3: Device Code Phishing (Storm-2372 Technique)</span>
+            <p>The OAuth Device Code Flow is designed for devices without keyboards (smart TVs, IoT). Attackers abuse it by sending victims a legitimate-looking Microsoft page asking them to enter a device code. When the victim enters the code, the attacker's script captures a fully authenticated access token — no password, no MFA needed from the attacker's side.</p>
+            <div class="defense-box">Block the Device Code flow in Conditional Access for all users unless explicitly required. Use a Conditional Access policy: "Block — Grant: N/A — Condition: Authentication Flow = Device Code Flow" for all users except specific service accounts.</div>
+        </div>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-exclamation-triangle"></i> Attack Vector 4: Service Principal &amp; App Registration Abuse</span>
+            <p>App Registrations with excessive API permissions are a persistent backdoor. An attacker who gains access to the client secret or certificate of an App Registration with <code>Directory.ReadWrite.All</code> has full tenant admin power — and this access survives user password resets and MFA enforcement because it is not a user identity.</p>
+            <div class="defense-box">Audit all App Registrations and their API permissions quarterly. Flag any with <code>*.All</code> permissions — these are highest risk. Use Managed Identities (instead of client secrets) for Azure-hosted workloads. Enforce secret expiration policies and rotate secrets automatically.</div>
+        </div>
+
+        <!-- ===== SECTION 7 ===== -->
+        <h2 id="monitoring">7. Security Tools &amp; Monitoring Reality</h2>
+
+        <img src="/images/guides/entra_id_cloud_dashboard.png"
+             alt="A SOC analyst at multiple monitors displaying Entra ID sign-in logs, identity threat detection graphs, and cloud security analytics"
+             style="width: 100%; border-radius: 12px; margin: 1.5rem 0 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.4);"
+             loading="lazy">
+
+        <p>Visibility has fundamentally changed. You can no longer tap a SPAN port or pull Windows Event Logs directly from a Domain Controller. Everything is API-driven, and not all logs are free.</p>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Monitoring Capability</th>
+                        <th class="ad-col">On-Premises AD</th>
+                        <th class="entra-col">Entra ID Cloud</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature">Authentication Events</td>
+                        <td>Windows Event ID 4624 (logon success) / 4625 (failure) on DC Security Log</td>
+                        <td>Entra ID Sign-in Logs (interactive, non-interactive, service principal)</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Admin Activity</td>
+                        <td>Event ID 4728/4732 (group changes), 4720 (user creation) on DC</td>
+                        <td>Entra ID Audit Logs — all changes, role assignments, policy edits</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Log Retention (Default)</td>
+                        <td>As long as your disk allows</td>
+                        <td>7 days (Free/P1), 30 days (P2). Must export to Sentinel/Storage for longer.</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Log Cost</td>
+                        <td>SIEM ingestion costs only</td>
+                        <td>Entra ID logs + Sentinel ingestion cost (~$2.50/GB). Can add up fast.</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Lateral Movement Detection</td>
+                        <td>Sysmon (process creation, network, registry), network flow</td>
+                        <td>Microsoft Defender for Identity (covers hybrid), Entra ID Protection</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Threat Analytics</td>
+                        <td>SIEM correlation rules, manual IOC matching</td>
+                        <td>Entra ID Protection: User Risk Score, Sign-in Risk Score (ML-driven)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>7.1 KQL Detection Queries for Entra ID Threats</h3>
+
+        <p>As a Security Engineer, you must shift from writing Splunk SPL to writing <strong>KQL (Kusto Query Language)</strong> in Microsoft Sentinel. Here are essential detection queries:</p>
+
+        <h4>Detect Impossible Travel (Anomalous Sign-in Locations)</h4>
+        <pre><code>SigninLogs
+| where TimeGenerated > ago(1d)
+| project UserPrincipalName, IPAddress, Location, TimeGenerated
+| summarize Locations = make_set(Location), SigninCount = count() by UserPrincipalName, bin(TimeGenerated, 1h)
+| where array_length(Locations) > 2</code></pre>
+
+        <h4>Detect New OAuth Consent Grants</h4>
+        <pre><code>AuditLogs
+| where OperationName == "Consent to application"
+| extend AppName = tostring(TargetResources[0].displayName)
+| extend UserWhoConsented = tostring(InitiatedBy.user.userPrincipalName)
+| extend Permissions = tostring(AdditionalDetails)
+| project TimeGenerated, UserWhoConsented, AppName, Permissions
+| order by TimeGenerated desc</code></pre>
+
+        <h4>Detect PIM Role Activation Spikes</h4>
+        <pre><code>AuditLogs
+| where OperationName contains "Add member to role completed (PIM activation)"
+| extend ActivatedRole = tostring(TargetResources[0].displayName)
+| extend ActivatedBy = tostring(InitiatedBy.user.userPrincipalName)
+| summarize count() by ActivatedBy, ActivatedRole, bin(TimeGenerated, 1h)
+| where count_ > 3</code></pre>
+
+        <!-- ===== SECTION 8 ===== -->
+        <h2 id="migration">8. Migration Security Playbook</h2>
+
+        <p>A secure migration is a phased migration. Organizations that attempt to cut over all at once consistently introduce critical misconfigurations that take months to identify. The following five-phase approach is designed to harden at each step before advancing.</p>
+
+        <div class="phase-card">
+            <h4><i class="fas fa-plug" style="color: #4ca3ff;"></i> Phase 1: Hybrid Sync (Weeks 1–8)</h4>
+            <p>Deploy <strong>Microsoft Entra Connect</strong> (formerly AD Connect) to sync identities from on-prem AD to Entra ID. Run in <strong>Staging Mode</strong> first — sync without writing back. Validate the sync rule configuration meticulously. Do not sync service accounts with standing elevated permissions.</p>
+        </div>
+
+        <div class="phase-card">
+            <h4><i class="fas fa-shield-alt" style="color: #10b981;"></i> Phase 2: Modern Authentication Enablement (Weeks 6–14)</h4>
+            <p>Enforce Modern Authentication on all M365 services. Register all users for MFA. Deploy Entra ID Password Protection to synchronize banned password lists to on-prem AD DCs. Create initial Conditional Access policies in <strong>Report-Only</strong> mode first to understand impact before enforcing.</p>
+        </div>
+
+        <div class="phase-card">
+            <h4><i class="fas fa-filter" style="color: #a78bfa;"></i> Phase 3: Conditional Access Hardening (Weeks 12–20)</h4>
+            <p>Enforce baseline CA policies: Require MFA for all users, require MFA for all admins (separate policy), block legacy authentication protocols (IMAP, POP3, MAPI over HTTP), require compliant device for sensitive data access. Enable <strong>Entra ID Protection</strong> risk-based CA policies: sign-in risk Medium → require MFA, user risk High → require password change.</p>
+        </div>
+
+        <div class="phase-card">
+            <h4><i class="fas fa-ban" style="color: #f59e0b;"></i> Phase 4: Legacy Protocol Elimination (Weeks 18–28)</h4>
+            <p>Deprecate NTLM authentication systematically. Audit NTLM usage with Event ID 8004 on DCs. Create Intune device compliance policies. Migrate service accounts to Managed Identities wherever possible. Migrate application authentication from NTLM to Kerberos (for on-prem) or OAuth 2.0 Client Credentials flow (for cloud apps).</p>
+        </div>
+
+        <div class="phase-card">
+            <h4><i class="fas fa-cloud" style="color: #00D9FF;"></i> Phase 5: Cloud-Native Identity Management (Month 6+)</h4>
+            <p>Begin device migrations from Domain Join to <strong>Entra Join</strong>. Implement PIM for all admin roles. Deploy Access Reviews quarterly. Consider decommissioning on-prem AD for cloud-first workloads. Retain hybrid or on-prem AD for OT systems, legacy line-of-business apps, and print infrastructure.</p>
+        </div>
+
+        <h3>8.1 Break-Glass Account Strategy</h3>
+
+        <div class="technical-box">
+            <h4><i class="fas fa-fire-extinguisher"></i> Break-Glass Account Requirements</h4>
+            <ul>
+                <li><strong>Quantity:</strong> Maintain exactly 2 break-glass accounts per tenant. Not more (increases risk), not fewer (no redundancy).</li>
+                <li><strong>Identity:</strong> Use cloud-only identities (<code>user@tenantname.onmicrosoft.com</code>). Never sync from on-prem AD — if AD is compromised, break-glass must still work.</li>
+                <li><strong>Role:</strong> Assign Global Administrator directly (not via PIM) so it works even when PIM service is degraded.</li>
+                <li><strong>MFA Method:</strong> Use FIDO2 hardware key (e.g., YubiKey 5) stored physically in a secure location. Do not use phone-based MFA — phones can be lost, stolen, or SIM-swapped.</li>
+                <li><strong>CA Exclusions:</strong> Exclude from device compliance and MFA Conditional Access policies. Keep in scope for Identity Protection sign-in risk policies.</li>
+                <li><strong>Monitoring:</strong> Alert on <em>any</em> sign-in from break-glass accounts. In Sentinel: <code>SigninLogs | where UserPrincipalName contains "breakglass"</code> → high-priority alert to Security leadership.</li>
+                <li><strong>Testing:</strong> Test break-glass access quarterly in a controlled manner. Verify the FIDO2 key still works, credentials are not expired, and the account is not accidentally blocked.</li>
+            </ul>
+        </div>
+
+        <!-- ===== SECTION 9 ===== -->
+        <h2 id="hardening">9. Entra ID Security Hardening Checklist</h2>
+
+        <div class="success-box">
+            <strong><i class="fas fa-check-double"></i> Entra ID Security Baseline — Priority Controls</strong>
+            <ul style="margin-top: 1rem; margin-bottom: 0;">
+                <li>✅ <strong>PIM for all privileged roles</strong> — No standing Global Admin, Application Admin, or Exchange Admin roles</li>
+                <li>✅ <strong>Legacy authentication blocked</strong> — CA policy blocking all basic auth protocols</li>
+                <li>✅ <strong>User consent disabled</strong> — Admin approval required for all OAuth app consent</li>
+                <li>✅ <strong>MFA required for all users</strong> — No exceptions. SSPR requires MFA re-auth.</li>
+                <li>✅ <strong>Number matching enabled</strong> — Authenticator app push bombing mitigation</li>
+                <li>✅ <strong>Entra ID Protection enabled</strong> — Risk-based CA policies for both sign-in and user risk</li>
+                <li>✅ <strong>Break-glass accounts configured</strong> — Cloud-only, FIDO2, monitored with real-time alerts</li>
+                <li>✅ <strong>App Registration audit complete</strong> — All *.All permissions reviewed and justified</li>
+                <li>✅ <strong>Access Reviews scheduled</strong> — Quarterly for privileged roles, semi-annual for all group memberships</li>
+                <li>✅ <strong>Diagnostic logs to Sentinel</strong> — Sign-in Logs, Audit Logs, Identity Protection risk events all streamed</li>
+                <li>✅ <strong>SSPR scoped to non-admins</strong> — Admins must use a higher authentication bar for password reset</li>
+                <li>✅ <strong>Named Locations defined</strong> — Trusted IP ranges defined for CA and Identity Protection baselining</li>
+                <li>✅ <strong>External collaboration restricted</strong> — Guest user access and B2B invitation scope defined and limited</li>
+                <li>✅ <strong>Token lifetime policies reviewed</strong> — Enable CAE for real-time token revocation for critical apps</li>
+            </ul>
+        </div>
+
+        <!-- ===== SECTION 10 ===== -->
+        <h2 id="upskill">10. How to Adapt &amp; Upskill as a Security Engineer</h2>
+
+        <p>The single most important career shift for any security professional working in an enterprise environment today is moving from <strong>infrastructure-centric skills</strong> to <strong>identity-centric skills</strong>. Here is the exact learning path and toolset you need to master.</p>
+
+        <h3>10.1 Skills You Must Gain</h3>
+
+        <div class="skill-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🔍</div>
+                <h4>KQL (Kusto Query Language)</h4>
+                <p>Your new SPL. Every detection rule, hunting query, and incident investigation in Microsoft Sentinel and Defender runs on KQL. Master it to the level you know Splunk SPL.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🏗️</div>
+                <h4>Conditional Access Design</h4>
+                <p>Learn to architect CA policies that enforce Zero Trust without breaking business workflows. Understand policy ordering, named locations, authentication strengths, and report-only mode.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔑</div>
+                <h4>OAuth 2.0 &amp; OIDC Deep Dive</h4>
+                <p>Understand token flows: Authorization Code, Client Credentials, Device Code, ROPC. Know what an access token contains (claims), how to inspect JWTs, and why refresh tokens are so dangerous.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h4>Microsoft Graph API</h4>
+                <p>The new LDAP. Learn to query user objects, audit permissions, list App Registrations, and detect misconfigurations programmatically via PowerShell and Python using the Graph API.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🏛️</div>
+                <h4>Entra ID PIM &amp; Governance</h4>
+                <p>Configure JIT role activation, approval workflows, access reviews, and entitlement management. These are your replacements for the tiered administration model in on-prem AD.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🕵️</div>
+                <h4>Identity Threat Detection &amp; Response (ITDR)</h4>
+                <p>Learn the cloud attacker kill chain: phishing → credential theft → MFA bypass → token abuse → tenant takeover. Tools: AADInternals, roadtx, TokenTacticsV2 — understand the attacker's toolkit to defend against it.</p>
+            </div>
+        </div>
+
+        <h3>10.2 Recommended Certifications for this Shift</h3>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Certification</th>
+                        <th>Provider</th>
+                        <th>Focus</th>
+                        <th>Worth It?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature">SC-300: Identity &amp; Access Administrator</td>
+                        <td>Microsoft</td>
+                        <td>Entra ID, PIM, CA, External Identities, Governance</td>
+                        <td><span class="badge-both">Essential</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">SC-200: Security Operations Analyst</td>
+                        <td>Microsoft</td>
+                        <td>Microsoft Sentinel, KQL, Defender XDR, Entra ID Protection</td>
+                        <td><span class="badge-both">Essential</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">AZ-500: Azure Security Engineer</td>
+                        <td>Microsoft</td>
+                        <td>Key Vault, RBAC, Azure Defender, Network Security</td>
+                        <td><span class="badge-entra">High Value</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">GIAC GCIH (cloud track)</td>
+                        <td>SANS/GIAC</td>
+                        <td>Cloud incident response, identity forensics, threat hunting</td>
+                        <td><span class="badge-entra">High Value</span></td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Certified Identity &amp; Access Manager (CIAM)</td>
+                        <td>IDPRO</td>
+                        <td>IAM architecture, identity governance, standards</td>
+                        <td><span class="badge-tie">Situational</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>10.3 Essential Tools for the Cloud Identity Security Engineer</h3>
+
+        <ul>
+            <li><strong><a href="https://github.com/dirkjanm/ROADtools" target="_blank" rel="noopener noreferrer" style="border-bottom: 1px solid rgba(0,217,255,0.3);">ROADtools</a></strong> — Python toolkit for enumerating and analyzing Entra ID tenant configurations. Run it against your own tenant quarterly for a red team's-eye view of your exposure.</li>
+            <li><strong><a href="https://github.com/dafthack/GraphRunner" target="_blank" rel="noopener noreferrer" style="border-bottom: 1px solid rgba(0,217,255,0.3);">GraphRunner</a></strong> — PowerShell toolkit for post-compromise enumeration via the Microsoft Graph API. Use it to understand what an attacker sees after compromising a regular user account.</li>
+            <li><strong>AADInternals</strong> — Comprehensive PowerShell module by Dr. Nestori Syynimaa. Essential for understanding PRT theft, Golden SAML attacks, and Entra ID internals. Know it to defend against it.</li>
+            <li><strong>Microsoft Entra Recommendations</strong> — The built-in Recommendations blade in Entra ID portal. Run this first before any manual audit — it flags the highest-risk configurations in your tenant automatically.</li>
+            <li><strong>Maester</strong> — Open-source Entra ID security testing framework. Runs automated security checks against your tenant and generates a prioritized remediation report. Run it monthly.</li>
+        </ul>
+
+        <!-- ===== SECTION 11 ===== -->
+        <h2 id="decision">11. Decision Framework: Stay with AD or Move to Entra ID?</h2>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Organization Type</th>
+                        <th>Recommended Identity Architecture</th>
+                        <th>Rationale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature">Startup / SaaS company, &lt;500 employees</td>
+                        <td><span class="badge-entra">Entra ID Only</span></td>
+                        <td>No legacy apps, no DC overhead, cloud-native from day one. Maximize Modern Auth, use Intune for device management.</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Mid-size enterprise, 500–5,000, mixed legacy</td>
+                        <td><span class="badge-both">Hybrid (AD Sync + Entra ID)</span></td>
+                        <td>Legacy ERP / MES systems, domain-joined PCs in offices, but cloud M365 and SaaS. Run AD for on-prem resources, Entra ID for cloud SSO.</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Large enterprise, 5,000+, regulated industry</td>
+                        <td><span class="badge-both">Hybrid, phased cloud shift</span></td>
+                        <td>Compliance mandates, legacy apps, OT/ICS systems. Entra ID as the primary IAM control plane, AD retained for Kerberos-dependent systems with strict segmentation.</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">Government / Defence / Air-gapped</td>
+                        <td><span class="badge-ad">On-Prem AD Only</span></td>
+                        <td>Data sovereignty, air-gap requirements, no cloud dependency acceptable. Full control of the identity plane is a hard requirement.</td>
+                    </tr>
+                    <tr>
+                        <td class="feature">OT/ICS environments (manufacturing, utilities)</td>
+                        <td><span class="badge-ad">On-Prem AD (isolated)</span></td>
+                        <td>Industrial devices often cannot authenticate against cloud endpoints. Purdue Model isolation requires AD within the OT zone, with strict firewall rules to prevent AD from bridging IT and OT.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== SECTION 12 ===== -->
+        <h2 id="future">12. Future Outlook 2027–2028</h2>
+
+        <ul>
+            <li><strong>NTLM End of Life:</strong> Microsoft has confirmed it is progressively retiring NTLM authentication. By 2027, expect NTLM to be disabled by default in Windows Server 2025+. All legacy NTLM dependencies must be migrated to Kerberos or OAuth before this deadline.</li>
+            <li><strong>Continuous Access Evaluation (CAE) Expansion:</strong> CAE currently works for select M365 apps. By 2027, expect near-universal CAE coverage — meaning token revocation will happen in near real-time (seconds) rather than waiting for the 1-hour access token expiry window. This will significantly reduce Pass-the-Cookie viability.</li>
+            <li><strong>AI-Driven Identity Risk:</strong> Entra ID Protection's risk scoring is already ML-driven. By 2028, expect behavioral baselines to be generated per-user (not just per-tenant), making impossible travel, anomalous consent grants, and atypical app access detections dramatically more precise.</li>
+            <li><strong>Passkeys Everywhere:</strong> FIDO2 passkeys are already available in Entra ID. By 2027, expect Microsoft to deprecate SMS/voice OTP methods entirely. Security Engineers must begin migrating MFA methods to FIDO2 hardware keys or device-bound passkeys now to avoid being caught off-guard.</li>
+            <li><strong>Microsoft Identity Consolidation:</strong> Microsoft continues to consolidate identity products (Entra ID, External ID, Permissions Management, Verified ID) under the Entra umbrella. Mastery of the Entra identity ecosystem will be as foundational a skill as Active Directory administration was in 2010.</li>
+        </ul>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <h2><i class="fas fa-rocket"></i> Continue Your Identity Security Journey</h2>
+            <p style="color: var(--text-secondary);">Now that you understand the architectural shift, dive into the practical tools and frameworks that will help you secure, monitor, and manage an Entra ID-first environment.</p>
+            <div class="cta-buttons">
+                <a href="/guides/passkeys-fido2-passwordless-authentication.html" class="cta-btn cta-btn-primary"><i class="fas fa-key"></i> Passkeys &amp; FIDO2 Guide</a>
+                <a href="/guides/oauth-security-attacks-defense-2026.html" class="cta-btn cta-btn-secondary"><i class="fas fa-shield-virus"></i> OAuth Attack Defense</a>
+                <a href="/guides/siem-log-analysis.html" class="cta-btn cta-btn-secondary"><i class="fas fa-chart-bar"></i> SIEM &amp; Log Analysis</a>
+            </div>
+        </div>
+
+        <!-- Tags -->
+        <div style="margin: 2rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">Active Directory</span>
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">Entra ID</span>
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">Zero Trust</span>
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">Conditional Access</span>
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">PIM</span>
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">Identity Security</span>
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">Microsoft Sentinel</span>
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">KQL</span>
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">CIA Triad</span>
+            <span style="background: rgba(0,217,255,0.1); color: var(--accent-cyan); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid rgba(0,217,255,0.2);">Upskilling</span>
+        </div>
+
+    </div><!-- end container -->
+
 </body>
 </html>
