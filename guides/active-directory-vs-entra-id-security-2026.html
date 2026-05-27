@@ -7,9 +7,9 @@
 
     <!-- SEO Meta Tags -->
     <meta name="theme-color" content="#000000">
-    <title>Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift | TheHGTech</title>
+    <title>Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift | TheHGTech</title>
 
-    <meta name="description" content="A deep-dive security engineer's guide to the shift from on-premises Active Directory to Microsoft Entra ID. Learn how controls move from enterprise admin to cloud provider, new attack surfaces, migration playbooks, and how to upskill in 2026.">
+    <meta name="description" content="A deep-dive security engineer\'s guide to the shift from on-premises Active Directory to Azure AD (now Microsoft Entra ID). Defend against OAuth token abuse and master the identity trust chain.">
     <meta name="keywords" content="Active Directory vs Entra ID, Azure AD security 2026, Entra ID security hardening, GPO vs Conditional Access, identity security shift, Microsoft Entra ID migration, Kerberos vs OAuth, PIM Azure AD, zero trust identity 2026, Entra ID outage availability, break-glass accounts, KQL queries Entra ID, Microsoft Defender for Identity">
     <meta name="author" content="Harish G">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -18,8 +18,8 @@
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html">
-    <meta property="og:title" content="Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift">
-    <meta property="og:description" content="A deep-dive security engineer's guide to the shift from on-premises Active Directory to Microsoft Entra ID. Covers shared responsibility, Conditional Access, CIA triad impact, migration playbook, and upskilling.">
+    <meta property="og:title" content="Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift">
+    <meta property="og:description" content="A deep-dive security engineer\'s guide to the shift from on-premises Active Directory to Azure AD (now Microsoft Entra ID). Defend against OAuth token abuse and master the identity trust chain.">
     <meta property="og:image" content="https://thehgtech.com/images/guides/ad_vs_entra_architecture.png">
     <meta property="og:site_name" content="TheHGTech">
     <meta property="og:locale" content="en_US">
@@ -28,7 +28,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@TheHGTech">
     <meta name="twitter:creator" content="@TheHGTech">
-    <meta name="twitter:title" content="Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift | TheHGTech">
+    <meta name="twitter:title" content="Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift | TheHGTech">
     <meta name="twitter:description" content="How security controls move from Enterprise Admin to Cloud Provider, the real risk of Entra ID as a SPOF, and the ultimate migration and upskilling playbook.">
     <meta name="twitter:image" content="https://thehgtech.com/images/guides/ad_vs_entra_architecture.png">
 
@@ -682,7 +682,7 @@
 
         <div class="guide-header">
             <span class="guide-badge"><i class="fas fa-id-card"></i> Identity &amp; Access Management</span>
-            <h1>Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift</h1>
+            <h1>Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift</h1>
             <div style="font-size: 0.9rem; color: var(--accent-cyan); margin-bottom: 1.5rem;"><i class="fas fa-calendar-check"></i> <strong>Last updated:</strong> May 2026</div>
             <p style="color: var(--text-muted); font-size: 1.1rem;">How security controls move from the Enterprise Admin to the Cloud Provider. A deep-dive into the architectural shift, new attack surfaces, Entra ID hardening, migration playbook, and the skills every Security Engineer needs now.</p>
             <div style="margin-top: 1rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1.5rem;">
@@ -698,7 +698,7 @@
 
         <!-- Hero Image -->
         <img src="/images/guides/ad_vs_entra_architecture.png"
-             alt="Architectural comparison illustration showing on-premises Active Directory infrastructure on the left versus Microsoft Entra ID cloud zero-trust architecture on the right"
+             alt="Architectural comparison illustration showing on-premises Active Directory infrastructure on the left versus Azure AD (now Microsoft Entra ID) cloud zero-trust architecture on the right"
              class="featured-image"
              style="width: 100%; object-fit: cover; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,217,255,0.2);"
              loading="eager">
@@ -716,7 +716,7 @@
         </div>
 
         <!-- Table of Contents -->
-        <div class="toc">
+                <div class="toc">
             <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
             <ul>
                 <li><a href="#paradigm">1. Introduction: The Death of the Perimeter</a></li>
@@ -733,13 +733,15 @@
                 <li><a href="#controls">6. Granular Controls: GPOs to Conditional Access (Deep Dive)</a></li>
                 <li><a href="#cia-triad">7. The CIA Triad Impact &amp; The Outage Problem</a></li>
                 <li><a href="#attack-vectors">8. New Attack Vectors in the Cloud Identity Plane</a></li>
-                <li><a href="#monitoring">9. Security Tools &amp; Monitoring Reality</a></li>
-                <li><a href="#migration">10. Migration Security Playbook</a></li>
-                <li><a href="#cis">11. CIS Benchmarks: Gap Analysis for AD &amp; Entra ID</a></li>
-                <li><a href="#hardening">12. Entra ID Security Hardening Checklist</a></li>
-                <li><a href="#upskill">13. How to Adapt &amp; Upskill as a Security Engineer</a></li>
-                <li><a href="#decision">14. Decision Framework: AD or Entra ID?</a></li>
-                <li><a href="#future">15. Future Outlook 2027–2028</a></li>
+                <li><a href="#breach-scenarios">9. Real-World Breach Scenarios</a></li>
+                <li><a href="#monitoring">10. Security Tools &amp; Monitoring Reality</a></li>
+                <li><a href="#migration">11. Migration Security Playbook</a></li>
+                <li><a href="#cis">12. CIS Benchmarks: Gap Analysis for AD &amp; Entra ID</a></li>
+                <li><a href="#hardening">13. Azure AD (Entra ID) Security Hardening Checklist</a></li>
+                <li><a href="#upskill">14. How to Adapt &amp; Upskill as a Security Engineer</a></li>
+                <li><a href="#decision">15. Decision Framework: Stay with AD or Move to Azure AD?</a></li>
+                <li><a href="#future">16. Future Outlook 2027–2028</a></li>
+                <li><a href="#faq">17. Frequently Asked Questions (FAQ)</a></li>
             </ul>
         </div>
 
@@ -1088,7 +1090,7 @@
             </table>
         </div>
 
-        <h3>4.1 Common Entra ID / Conditional Access Misconfigurations</h3>
+        <h3>6.1 Common Azure AD / Conditional Access Misconfigurations</h3>
 
         <div class="exploit-box">
             <span class="exploit-label"><i class="fas fa-skull-crossbones"></i> Misconfiguration #1: Break-Glass Excluded from ALL Policies</span>
@@ -1113,7 +1115,7 @@
 
         <p>The CIA Triad — Confidentiality, Integrity, and Availability — is the foundational security model. Moving to Entra ID shifts the threat profile for all three pillars dramatically.</p>
 
-        <h3>5.1 Availability: Entra ID as a Global Single Point of Failure</h3>
+        <h3>7.1 Availability: Entra ID as a Global Single Point of Failure</h3>
 
         <p>This is the most underappreciated risk in modern enterprise IT. On-premises AD could survive a data center outage by having secondary DCs in branch offices. If the DC in London fails, the one in Dubai takes over automatically — no user notices.</p>
 
@@ -1157,7 +1159,7 @@
             <p style="margin-top: 0.75rem;">When Entra ID goes down, it is not just M365 that fails. Every SaaS application using Entra ID as its SSO Identity Provider also fails. If your organization uses Entra ID as the IdP for Salesforce, ServiceNow, Workday, Slack, and AWS, all of them become inaccessible simultaneously. The identity plane is the single most critical dependency in a cloud-first organization.</p>
         </div>
 
-        <h3>5.2 Confidentiality: Token Theft &amp; The Cookie Monster</h3>
+        <h3>7.2 Confidentiality: Token Theft &amp; The Cookie Monster</h3>
 
         <p>In the AD world, the crown jewel was the NTLM hash or the Kerberos ticket. In the cloud world, the crown jewel is the OAuth refresh token — and it is stored in plaintext in your browser's session storage or token cache.</p>
 
@@ -1167,7 +1169,7 @@
             <li><strong>Primary Refresh Token (PRT) Theft:</strong> The PRT is the master credential on an Entra ID-joined Windows device. It is used to silently authenticate to all Azure/M365 services. Tools like <code>roadtx</code> and <code>AADInternals</code> can extract PRTs from device memory.</li>
         </ul>
 
-        <h3>5.3 Integrity: Identity-Based Lateral Movement</h3>
+        <h3>7.3 Integrity: Identity-Based Lateral Movement</h3>
 
         <p>Attackers who have compromised a cloud identity no longer need to move laterally through networks. They move laterally through permissions. Compromising a user with SharePoint Admin grants immediate read/write access to every SharePoint site. Compromising an Application Administrator allows the attacker to add credentials to any App Registration, creating a persistent backdoor that survives password resets.</p>
 
@@ -1199,7 +1201,45 @@
         </div>
 
         <!-- ===== SECTION 7 ===== -->
-        <h2 id="monitoring">9. Security Tools &amp; Monitoring Reality</h2>
+                <!-- ===== SECTION 9 ===== -->
+        <h2 id="breach-scenarios">9. Real-World Breach Scenarios</h2>
+
+        <p>The theoretical attack vectors above are being executed daily by nation-states and ransomware syndicates. Here is how modern attackers operationalize these vectors against Azure AD (Microsoft Entra ID) environments, and how you must defend against them.</p>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-skull-crossbones"></i> Scenario 1: AiTM Phishing &amp; Session Hijacking</span>
+            <p><strong>The Attack:</strong> The attacker sets up an Evilginx2 reverse proxy. When the user logs in, the proxy intercepts the entire authentication flow—including the MFA prompt. Once authenticated, the proxy captures the <strong>session cookie</strong> (Primary Refresh Token or PRT equivalent). The attacker imports this cookie into their own browser and accesses Microsoft 365, bypassing MFA entirely because the session is already established.</p>
+            <div class="defense-box">
+                <i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Mitigation:</strong> Enforce <strong>FIDO2 security keys</strong> (phishing-resistant MFA) or configure Conditional Access to require a <strong>Compliant Device</strong>. AiTM proxies cannot pass device compliance checks or proxy FIDO2 hardware assertions.
+            </div>
+        </div>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-skull-crossbones"></i> Scenario 2: OAuth Consent Abuse (Illicit Consent Grant)</span>
+            <p><strong>The Attack:</strong> Instead of stealing passwords, the attacker sends a highly convincing email asking the user to authorize a new "HR Portal Integration." The link points to a real Microsoft login page. The user clicks "Accept," unwittingly granting a malicious OAuth app the <code>Mail.ReadWrite</code> and <code>Files.Read.All</code> permissions. The attacker now has persistent, API-level access to the user's data that survives password resets and MFA.</p>
+            <div class="defense-box">
+                <i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Mitigation:</strong> Disable user consent for apps completely in Entra ID (<code>Properties &rarr; User consent settings</code>). Implement an <strong>Admin Consent Workflow</strong> so all third-party app integrations must be vetted by security teams before deployment.
+            </div>
+        </div>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-skull-crossbones"></i> Scenario 3: Rogue App Registration Backdoors</span>
+            <p><strong>The Attack:</strong> An attacker compromises a developer or Application Administrator account. Instead of causing immediate damage, they create a new Enterprise Application or add a new client secret/certificate to an existing, highly privileged App Registration. Months later, long after the compromised user's password was changed, the attacker uses the hidden client secret to authenticate as the application and extract data.</p>
+            <div class="defense-box">
+                <i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Mitigation:</strong> Monitor all changes to Application credentials via Sentinel. Limit the lifetime of App Registration secrets to 6 months or less. Regularly audit Service Principals holding <code>RoleManagement.ReadWrite.Directory</code> or <code>AppRoleAssignment.ReadWrite.All</code> permissions.
+            </div>
+        </div>
+
+        <div class="exploit-box">
+            <span class="exploit-label"><i class="fas fa-skull-crossbones"></i> Scenario 4: Infostealer Token Theft</span>
+            <p><strong>The Attack:</strong> A user downloads compromised software (e.g., cracked software) on their personal unmanaged home PC, which they occasionally use to check webmail. An infostealer (like RedLine or Lumma) runs silently, extracts the active Microsoft Entra ID session tokens from the browser database, and sends them to a Telegram channel. The attacker uses the token to access corporate resources.</p>
+            <div class="defense-box">
+                <i class="fas fa-shield-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> <strong>Mitigation:</strong> Enable <strong>Continuous Access Evaluation (CAE)</strong> and enforce Conditional Access policies that strictly require Intune-managed, compliant corporate devices for all access to M365 resources. 
+            </div>
+        </div>
+
+        <!-- ===== SECTION 10 ===== -->
+        <h2 id="monitoring">10. Security Tools &amp; Monitoring Reality</h2>
 
         <img src="/images/guides/entra_id_cloud_dashboard.png"
              alt="A SOC analyst at multiple monitors displaying Entra ID sign-in logs, identity threat detection graphs, and cloud security analytics"
@@ -1252,7 +1292,7 @@
             </table>
         </div>
 
-        <h3>7.1 KQL Detection Queries for Entra ID Threats</h3>
+        <h3>10.1 KQL Detection Queries for Entra ID Threats</h3>
 
         <p>As a Security Engineer, you must shift from writing Splunk SPL to writing <strong>KQL (Kusto Query Language)</strong> in Microsoft Sentinel. Here are essential detection queries:</p>
 
@@ -1281,7 +1321,7 @@
 | where count_ > 3</code></pre>
 
         <!-- ===== SECTION 8 ===== -->
-        <h2 id="migration">10. Migration Security Playbook</h2>
+        <h2 id="migration">11. Migration Security Playbook</h2>
 
         <p>A secure migration is a phased migration. Organizations that attempt to cut over all at once consistently introduce critical misconfigurations that take months to identify. The following five-phase approach is designed to harden at each step before advancing. Each phase includes explicit <strong>security gate criteria</strong> — do not proceed to the next phase until all gates are passed.</p>
 
@@ -1342,7 +1382,7 @@
             </ul>
         </div>
 
-        <h3>8.1 Break-Glass Account Strategy</h3>
+        <h3>11.1 Break-Glass Account Strategy</h3>
 
         <div class="technical-box">
             <h4><i class="fas fa-fire-extinguisher"></i> Break-Glass Account Requirements</h4>
@@ -1359,11 +1399,11 @@
 
         <!-- ===== SECTION 9 ===== -->
         <!-- ===== CIS BENCHMARKS ===== -->
-        <h2 id="cis">11. CIS Benchmarks: Gap Analysis for AD &amp; Entra ID</h2>
+        <h2 id="cis">12. CIS Benchmarks: Gap Analysis for AD &amp; Entra ID</h2>
 
         <p>The Center for Internet Security (CIS) publishes authoritative benchmarks for both Active Directory environments and Microsoft 365 / Entra ID. Running these benchmarks against your environment gives you a scored, prioritized gap analysis.</p>
 
-        <h3>11.1 CIS Microsoft 365 Foundations Benchmark (v3.1, 2025)</h3>
+        <h3>12.1 CIS Microsoft 365 Foundations Benchmark (v3.1, 2025)</h3>
         <p>This is your primary benchmark for Entra ID / M365. It covers 226 recommendations across Identity, Device, Data Protection, and Applications. Key Level 1 (baseline) checks include:</p>
 
         <div class="comparison-table-wrapper">
@@ -1429,7 +1469,7 @@
             </table>
         </div>
 
-        <h3>11.2 CIS Microsoft Active Directory Benchmark (v2.0, 2024)</h3>
+        <h3>12.2 CIS Microsoft Active Directory Benchmark (v2.0, 2024)</h3>
         <p>For on-prem AD environments or hybrid configurations, the CIS AD Benchmark provides ~60 recommendations across domain security policy, privileged access, LDAP signing, and auditing. Critical Level 1 controls include:</p>
 
         <div class="comparison-table-wrapper">
@@ -1483,14 +1523,14 @@
             </table>
         </div>
 
-        <h3>11.3 How to Run an Automated CIS Gap Analysis</h3>
+        <h3>12.3 How to Run an Automated CIS Gap Analysis</h3>
         <ul>
             <li><strong>For Entra ID / M365:</strong> Use <a href="https://maester.dev" target="_blank" rel="noopener noreferrer">Maester</a> — open-source PowerShell framework that maps tests directly to CIS M365 Foundations Benchmark controls. Run <code>Install-Module Maester</code>, then <code>Invoke-Maester</code> for an HTML report.</li>
             <li><strong>For On-Prem AD:</strong> Use <strong>PingCastle</strong> (free tier available) — generates a risk-scored HTML report against AD best practices aligned to CIS and Microsoft Tier Model. Run <code>PingCastle.exe --healthcheck --server your.domain.com</code>.</li>
             <li><strong>For M365 posture scoring:</strong> Microsoft Secure Score in the Defender portal maps directly to many CIS M365 controls. Track your score trend over time as a management-level identity security metric.</li>
         </ul>
 
-        <h2 id="hardening">12. Entra ID Security Hardening Checklist</h2>
+        <h2 id="hardening">13. Azure AD (Entra ID) Security Hardening Checklist</h2>
 
         <div class="success-box">
             <strong><i class="fas fa-check-double"></i> Entra ID Security Baseline — Priority Controls</strong>
@@ -1513,11 +1553,11 @@
         </div>
 
         <!-- ===== SECTION 10 ===== -->
-        <h2 id="upskill">13. How to Adapt &amp; Upskill as a Security Engineer</h2>
+        <h2 id="upskill">14. How to Adapt &amp; Upskill as a Security Engineer</h2>
 
         <p>The single most important career shift for any security professional working in an enterprise environment today is moving from <strong>infrastructure-centric skills</strong> to <strong>identity-centric skills</strong>. Here is the exact learning path and toolset you need to master.</p>
 
-        <h3>10.1 Skills You Must Gain</h3>
+        <h3>14.1 Skills You Must Gain</h3>
 
         <div class="skill-grid">
             <div class="skill-card">
@@ -1552,7 +1592,7 @@
             </div>
         </div>
 
-        <h3>10.2 Recommended Certifications for this Shift</h3>
+        <h3>14.2 Recommended Certifications for this Shift</h3>
 
         <div class="comparison-table-wrapper">
             <table class="comparison-table">
@@ -1599,7 +1639,7 @@
             </table>
         </div>
 
-        <h3>10.3 Essential Tools for the Cloud Identity Security Engineer</h3>
+        <h3>14.3 Essential Tools for the Cloud Identity Security Engineer</h3>
 
         <ul>
             <li><strong><a href="https://github.com/dirkjanm/ROADtools" target="_blank" rel="noopener noreferrer" style="border-bottom: 1px solid rgba(0,217,255,0.3);">ROADtools</a></strong> — Python toolkit for enumerating and analyzing Entra ID tenant configurations. Run it against your own tenant quarterly for a red team's-eye view of your exposure.</li>
@@ -1610,7 +1650,7 @@
         </ul>
 
         <!-- ===== SECTION 11 ===== -->
-        <h2 id="decision">14. Decision Framework: Stay with AD or Move to Entra ID?</h2>
+        <h2 id="decision">15. Decision Framework: Stay with AD or Move to Azure AD (Entra ID)?</h2>
 
         <div class="comparison-table-wrapper">
             <table class="comparison-table">
@@ -1652,7 +1692,7 @@
         </div>
 
         <!-- ===== SECTION 12 ===== -->
-        <h2 id="future">15. Future Outlook 2027–2028</h2>
+        <h2 id="future">16. Future Outlook 2027–2028</h2>
 
         <ul>
             <li><strong>NTLM End of Life:</strong> Microsoft has confirmed it is progressively retiring NTLM authentication. By 2027, expect NTLM to be disabled by default in Windows Server 2025+. All legacy NTLM dependencies must be migrated to Kerberos or OAuth before this deadline.</li>
@@ -1664,7 +1704,92 @@
 
         <!-- CTA -->
         <div class="cta-section">
-            <h2><i class="fas fa-rocket"></i> Continue Your Identity Security Journey</h2>
+                    <!-- ===== SECTION 17: FAQ ===== -->
+        <h2 id="faq">17. Frequently Asked Questions (FAQ)</h2>
+
+        <div class="faq-container" style="margin-bottom: 2rem;">
+            <div class="faq-item" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+                <h3 style="margin-top: 0; color: var(--accent-cyan); font-size: 1.1rem;"><i class="fas fa-question-circle"></i> Is Azure AD the exact same thing as Microsoft Entra ID?</h3>
+                <p style="margin-bottom: 0;">Yes. In 2023, Microsoft officially renamed Azure Active Directory (Azure AD) to Microsoft Entra ID. It is exactly the same product, codebase, and infrastructure. The rename was primarily a branding exercise to group Microsoft's expanding portfolio of identity products (like Entra Permissions Management and Entra Private Access) under a single "Entra" umbrella.</p>
+            </div>
+
+            <div class="faq-item" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+                <h3 style="margin-top: 0; color: var(--accent-cyan); font-size: 1.1rem;"><i class="fas fa-question-circle"></i> Can Microsoft Entra ID completely replace on-premises Active Directory?</h3>
+                <p style="margin-bottom: 0;">For modern, cloud-first organizations, yes. If your infrastructure relies primarily on SaaS applications, Microsoft 365, and modern Windows 11 devices, Entra ID can completely replace AD. However, if you rely on legacy line-of-business applications requiring Kerberos/NTLM, complex Group Policies, or on-prem file shares, you will likely need to maintain a Hybrid identity model using Entra Connect.</p>
+            </div>
+
+            <div class="faq-item" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+                <h3 style="margin-top: 0; color: var(--accent-cyan); font-size: 1.1rem;"><i class="fas fa-question-circle"></i> Does Entra ID use Group Policy Objects (GPOs)?</h3>
+                <p style="margin-bottom: 0;">No. Entra ID is a cloud-native identity provider and does not support traditional Group Policy Objects (GPOs). Device management in the cloud world is handled by Mobile Device Management (MDM) solutions like Microsoft Intune, which uses Configuration Profiles to manage settings, software deployment, and compliance.</p>
+            </div>
+
+            <div class="faq-item" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+                <h3 style="margin-top: 0; color: var(--accent-cyan); font-size: 1.1rem;"><i class="fas fa-question-circle"></i> How does an attacker bypass MFA in Azure AD environments?</h3>
+                <p style="margin-bottom: 0;">Attackers typically bypass MFA using Adversary-in-the-Middle (AiTM) phishing proxies (such as Evilginx2) to steal the active session token after the user successfully completes the MFA challenge. They may also use MFA Fatigue (push bombing) or exploit legacy authentication protocols (like IMAP/POP3) if they haven't been explicitly blocked by Conditional Access.</p>
+            </div>
+
+            <div class="faq-item" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+                <h3 style="margin-top: 0; color: var(--accent-cyan); font-size: 1.1rem;"><i class="fas fa-question-circle"></i> What is a break-glass account in Entra ID and why is it necessary?</h3>
+                <p style="margin-bottom: 0;">A break-glass account is a highly privileged, cloud-only emergency access account configured to bypass typical Conditional Access policies. It ensures you can still access your tenant if a configuration error, MFA outage, or federated identity provider failure locks all normal administrators out of the system. It should use a long, complex password, FIDO2 hardware keys, and trigger critical alerts upon any login.</p>
+            </div>
+
+            <div class="faq-item" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+                <h3 style="margin-top: 0; color: var(--accent-cyan); font-size: 1.1rem;"><i class="fas fa-question-circle"></i> Is Azure AD (Entra ID) vulnerable to Kerberoasting?</h3>
+                <p style="margin-bottom: 0;">No. Entra ID utilizes modern authentication protocols like OAuth 2.0, OpenID Connect, and SAML. Because it does not use Kerberos, attacks specific to Kerberos architecture—such as Kerberoasting, AS-REP Roasting, and Golden Ticket creation—are structurally impossible in a pure cloud-native Entra ID environment.</p>
+            </div>
+        </div>
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "Is Azure AD the exact same thing as Microsoft Entra ID?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. In 2023, Microsoft officially renamed Azure Active Directory (Azure AD) to Microsoft Entra ID. It is exactly the same product, codebase, and infrastructure. The rename was primarily a branding exercise to group Microsoft's expanding portfolio of identity products under a single umbrella."
+            }
+          }, {
+            "@type": "Question",
+            "name": "Can Microsoft Entra ID completely replace on-premises Active Directory?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For modern, cloud-first organizations, yes. If your infrastructure relies primarily on SaaS applications, Microsoft 365, and modern Windows 11 devices, Entra ID can completely replace AD. However, if you rely on legacy line-of-business applications requiring Kerberos/NTLM, you will likely need to maintain a Hybrid identity model."
+            }
+          }, {
+            "@type": "Question",
+            "name": "Does Entra ID use Group Policy Objects (GPOs)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Entra ID is a cloud-native identity provider and does not support traditional Group Policy Objects (GPOs). Device management in the cloud world is handled by Mobile Device Management (MDM) solutions like Microsoft Intune."
+            }
+          }, {
+            "@type": "Question",
+            "name": "How does an attacker bypass MFA in Azure AD environments?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Attackers typically bypass MFA using Adversary-in-the-Middle (AiTM) phishing proxies (such as Evilginx2) to steal the active session token after the user successfully completes the MFA challenge. They may also use MFA Fatigue or exploit legacy authentication protocols."
+            }
+          }, {
+            "@type": "Question",
+            "name": "What is a break-glass account in Entra ID and why is it necessary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A break-glass account is a highly privileged, cloud-only emergency access account configured to bypass typical Conditional Access policies. It ensures you can still access your tenant if an MFA outage or configuration error locks all normal administrators out."
+            }
+          }, {
+            "@type": "Question",
+            "name": "Is Azure AD (Entra ID) vulnerable to Kerberoasting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Entra ID utilizes modern authentication protocols like OAuth 2.0, OpenID Connect, and SAML. Because it does not use Kerberos, attacks like Kerberoasting and Golden Ticket forgery are structurally impossible in a pure cloud-native Entra ID environment."
+            }
+          }]
+        }
+        </script>
+
+        <h2><i class="fas fa-rocket"></i> Continue Your Identity Security Journey</h2>
             <p style="color: var(--text-secondary);">Now that you understand the architectural shift, dive into the practical tools and frameworks that will help you secure, monitor, and manage an Entra ID-first environment.</p>
             <div class="cta-buttons">
                 <a href="/guides/passkeys-fido2-passwordless-authentication.html" class="cta-btn cta-btn-primary"><i class="fas fa-key"></i> Passkeys &amp; FIDO2 Guide</a>
