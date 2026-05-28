@@ -1,6 +1,70 @@
 {
   "incidents": [
     {
+      "id": "AIID-186",
+      "incident_id": 186,
+      "title": "Algorithm Assessing Risk Faced by Victims of Gender Violence Misclassified Low-Risk Cases, Allegedly",
+      "date": "2026-05-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-239",
+      "incident_id": 239,
+      "title": "Algorithmic Teacher Evaluation Program Reportedly Failed to Improve Student Outcomes and Was Alleged",
+      "date": "2026-05-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-357",
+      "incident_id": 357,
+      "title": "GPT-2 Reportedly Reproduced Personal Data from Its Training Data",
+      "date": "2026-05-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-433",
+      "incident_id": 433,
+      "title": "Chicago Police's Strategic Subject List Reportedly Biased Along Racial Lines",
+      "date": "2026-05-28",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-603",
+      "incident_id": 603,
+      "title": "Algorithmic Allocation of Resources in Healthcare for Disabled and Elderly Care Services Allegedly H",
+      "date": "2026-05-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-808",
+      "incident_id": 808,
+      "title": "Infinite Campus AI-Driven Student Risk Model Leads to Cuts in Support for Nevada's Low-Income School",
+      "date": "2026-05-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-868",
+      "incident_id": 868,
+      "title": "Portland Water Bureau SERVUS Algorithm Reportedly Allocates Utility Bill Discount to High-Wealth Con",
+      "date": "2026-05-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-894",
+      "incident_id": 894,
+      "title": "RealPage's YieldStar Allegedly Facilitated Rent Price Coordination Among Canadian Landlords",
+      "date": "2026-05-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1406",
       "incident_id": 1406,
       "title": "Purported AI-Generated War Footage Reportedly Circulated Widely Online During the Opening Phase of t",
@@ -441,14 +505,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-239",
-      "incident_id": 239,
-      "title": "Algorithmic Teacher Evaluation Program Failed Student Outcome Goals and Allegedly Caused Harm Agains",
-      "date": "2026-05-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-252",
       "incident_id": 252,
       "title": "Remotely Operated Taser-Armed Drones Proposed by Taser Manufacturer as Defense for School Shootings ",
@@ -492,14 +548,6 @@
       "id": "AIID-586",
       "incident_id": 586,
       "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
-      "date": "2026-05-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-808",
-      "incident_id": 808,
-      "title": "Infinite Campus AI-Driven Student Risk Model Leads to Cuts in Support for Nevada's Low-Income School",
       "date": "2026-05-17",
       "category": "other",
       "severity": "medium"
@@ -1682,9 +1730,9 @@
     }
   ],
   "stats": {
-    "total": 210,
-    "last7Days": 12,
-    "last30Days": 114
+    "total": 216,
+    "last7Days": 17,
+    "last30Days": 120
   },
-  "lastUpdated": "2026-05-28T21:51:44.581812+05:30"
+  "lastUpdated": "2026-05-29T02:26:43.029111+05:30"
 }
