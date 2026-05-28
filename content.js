@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 28 2026",
+            "headline": "FortiClient EMS Flaw Exploited—Credential Stealer Deployed",
+            "title": "Threat Actors Exploit FortiClient EMS Flaw to Deploy Credential Stealer",
+            "content": "Threat actors are actively exploiting a critical vulnerability in FortiClient Endpoint Management Server (EMS) to deploy credential-stealing malware. The flaw, which has been patched, was used to compromise trusted endpoint management infrastructure, enabling malware distribution across managed endpoints. This vulnerability affects FortiClient EMS versions prior to the latest patch and poses significant risks to organizations relying on Fortinet's endpoint management solutions. Security professionals are advised to apply the latest patches immediately to mitigate potential breaches. This incident underscores the importance of timely patch management in safeguarding enterprise networks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Carnival Breach Exposes 6M Customers to Identity Theft",
+            "title": "Carnival Data Breach Exposes 6 Million Customers' Personal Information",
+            "content": "A data breach at Carnival Corporation has exposed the personal information of nearly 6 million customers, heightening the risk of identity theft. The breach compromised sensitive data, including names, addresses, and possibly financial details, affecting a significant portion of Carnival's customer base. This incident highlights the ongoing vulnerabilities in data protection within the travel and leisure industry. Affected individuals are urged to monitor their financial accounts and credit reports for suspicious activity. Carnival is currently investigating the breach and working to enhance its cybersecurity measures to prevent future incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/carnival-data-breach-exposed-6-million-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Gogs Zero-Day Allows Remote Code Execution—Patch Pending",
+            "title": "Unpatched Gogs Zero-Day Flaw Enables Remote Code Execution",
+            "content": "A zero-day vulnerability in the Gogs self-hosted Git service is being exploited to achieve remote code execution (RCE) on Internet-facing instances. This unpatched flaw affects all versions of Gogs currently in use, posing a severe threat to organizations utilizing this service for version control. Attackers can leverage this vulnerability to execute arbitrary code, potentially leading to data breaches or system compromises. Administrators are advised to implement network-level protections and monitor for unusual activity until a patch is released. This incident highlights the critical need for robust security practices in open-source software management.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-gogs-zero-day-flaw-lets-hackers-get-remote-code-execution/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Microsoft Criticizes Public Zero-Day Disclosures—Researcher Account Removed",
+            "title": "Microsoft Advocates for Coordinated Vulnerability Disclosure Practices",
+            "content": "Microsoft has reiterated its support for Coordinated Vulnerability Disclosure (CVD) following the removal of a GitHub researcher's account. The tech giant emphasizes the importance of sharing security findings with vendors before public disclosure to allow for adequate response time. This stance comes amid growing tensions between researchers and vendors over the handling of zero-day vulnerabilities. Microsoft urges the research community to collaborate more closely with affected parties to enhance security measures and reduce the risk of exploitation. This development highlights the ongoing debate over responsible disclosure practices in the cybersecurity industry.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-slams-public-zero-day.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "FortiClient EMS Vulnerability Exploited—Patch Immediately",
+            "title": "Critical FortiClient EMS Vulnerability Exploited in New Attacks",
+            "content": "A critical vulnerability in FortiClient Endpoint Management Server (EMS) has been exploited in recent attacks, prompting urgent patching recommendations. Fortinet released hotfixes in April after the flaw was used as a zero-day, affecting systems prior to the update. This vulnerability allows attackers to deploy malware across managed endpoints, posing a significant threat to enterprise security. Organizations using FortiClient EMS should apply the latest patches without delay to prevent potential breaches. This incident underscores the persistent threat of zero-day vulnerabilities in widely-used security products.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-forticlient-ems-vulnerability-exploited-in-fresh-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "IBM, Red Hat Invest $5B in Open Source Security",
+            "title": "IBM and Red Hat Launch $5B Project Lightwell for Open Source Security",
+            "content": "IBM and Red Hat have announced a $5 billion investment in Project Lightwell, aimed at securing open source supply chains. The initiative focuses on fixing vulnerabilities without disrupting existing production environments, addressing a critical need in the software development community. This substantial investment reflects the growing importance of open source security as software supply chains become increasingly complex and interconnected. Developers and organizations are encouraged to participate in Project Lightwell to enhance the resilience of open source ecosystems. This move signifies a major commitment to improving the security posture of open source software globally.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ibm-and-red-hat-commit-5-billion-to-secure-open-source-supply-chains-under-project-lightwell/",
+            "relatedResources": []
+        },
+        {
             "date": "May 27 2026",
             "headline": "UK Cyberspying Chief Warns of AI and Russian Threats",
             "title": "AI Deemed 'Unstoppable Force' Amid Rising Russian Cyber Activities",
@@ -28,15 +82,6 @@ const websiteContent = {
             "content": "The Indian Computer Emergency Response Team (CERT-In) has issued a directive requiring organizations to patch critical vulnerabilities in internet-facing systems within 12 hours of detection, where feasible. This urgent measure responds to the increasing use of AI by threat actors to exploit vulnerabilities swiftly. The guideline aims to mitigate risks associated with AI-assisted attacks that can rapidly escalate into significant breaches. Organizations are advised to enhance their vulnerability management processes and ensure that patching is prioritized to protect against potential exploitation. This move highlights the growing importance of speed and efficiency in cybersecurity defense strategies.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 25 2026",
-            "headline": "Weekly Recap: Linux Flaws and Supply Chain Chaos",
-            "title": "Linux Flaws, Defender 0-Days, and Botnets Dominate Weekly Cyber Recap",
-            "content": "This week's cybersecurity landscape was marked by a resurgence of old vulnerabilities and new threats, including critical flaws in Linux systems and zero-day vulnerabilities in Microsoft Defender. Additionally, router botnets and supply chain attacks have kept security teams on high alert. Organizations are urged to revisit their patch management strategies and ensure that outdated systems are not left vulnerable to exploitation. The chaotic state of cybersecurity underscores the need for continuous monitoring and proactive threat management. As threat actors exploit both new and old vulnerabilities, maintaining robust security postures is more crucial than ever.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-linux-flaws-defender-0.html",
             "relatedResources": []
         },
         {
@@ -92,54 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/gitea-vulnerability-exposes-private.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "CISA Demands Quick Patch for cPanel Plugin Flaw",
-            "title": "CISA Orders Immediate Patch for Exploited cPanel LiteSpeed Vulnerability",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has mandated federal agencies to patch a critical vulnerability in the LiteSpeed cPanel plugin within four days. This flaw is actively exploited, posing a significant risk to server security and potentially leading to unauthorized access and data breaches. Federal IT departments must act swiftly to apply the necessary updates and secure their systems. This directive highlights the urgency of addressing vulnerabilities in widely-used web hosting platforms to protect sensitive government data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-gives-feds-4-days-to-patch-actively-exploited-cpanel-plugin-flaw/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "GlassWorm Malware Network Dismantled—Developer Safety Improved",
-            "title": "GlassWorm Malware Takedown Secures Developer Supply Chain Infrastructure",
-            "content": "CrowdStrike, in collaboration with Google and the Shadowserver Foundation, has successfully disrupted the command-and-control infrastructure of the GlassWorm malware. This operation targeted a persistent campaign that compromised software developers through malicious packages and extensions. The takedown significantly reduces the threat to developers and their projects, enhancing overall software supply chain security. Organizations are advised to review their security measures and ensure robust defenses against similar threats. This effort marks a critical step in safeguarding the integrity of software development environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/glassworm-malware-takedown-disrupts.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "Zero-Day in KnowledgeDeliver LMS Exploited—Web Shells Deployed",
-            "title": "Critical Zero-Day in KnowledgeDeliver LMS Exploited to Install Godzilla Web Shell",
-            "content": "A critical zero-day vulnerability in the KnowledgeDeliver learning management system (LMS) has been exploited by hackers to install the Godzilla web shell, posing significant security risks. This flaw, which was unpatched at the time of the attack, allowed unauthorized access to server environments, facilitating further malicious activities. Organizations using KnowledgeDeliver, particularly in educational sectors, are at risk of data breaches and unauthorized access. The exploitation underscores the growing trend of targeting educational platforms, which often lack robust security measures. Affected entities should immediately apply available patches and enhance monitoring for unusual server activity.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/knowledgedeliver-flaw-exploited-as-a-zero-day-to-install-web-shells/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "Charter Communications Breached—ShinyHunters Demand Ransom",
-            "title": "Charter Communications Confirms Data Breach Amid ShinyHunters Extortion Threat",
-            "content": "Charter Communications, a leading U.S. telecommunications company, has confirmed a data breach following an extortion threat from the ShinyHunters group. The attackers have threatened to release sensitive data unless a ransom is paid, highlighting the persistent threat of ransomware and extortion in the telecom sector. The breach potentially exposes customer data, posing privacy risks and regulatory challenges. This incident reflects the increasing sophistication of cybercriminal groups targeting large corporations. Charter is currently investigating the breach and advises customers to monitor their accounts for suspicious activity.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/charter-confirms-data-breach-after-shinyhunters-extortion-threat/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "CISA Mandates Urgent Patch for Exploited Drupal Vulnerability",
-            "title": "CISA Orders Federal Agencies to Patch Actively Exploited Drupal SQL Injection Flaw",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive for U.S. federal agencies to patch a critical SQL injection vulnerability in the Drupal content management system (CMS). This flaw, actively exploited by threat actors, poses a significant risk to government systems, potentially allowing unauthorized data access and manipulation. Agencies have been given a strict deadline to implement the patch, emphasizing the critical nature of the vulnerability. This directive is part of CISA's ongoing efforts to secure federal digital infrastructure against emerging threats. Agencies are urged to prioritize this update to prevent potential breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-drupal-vulnerability/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 28 2026",
+            "headline": "Vertu Unveils $6,880 AI Foldable for CEOs",
+            "title": "Vertu's Luxury AI Foldable Aims to Revolutionize Enterprise Management",
+            "content": "Vertu has launched a high-end AI-powered foldable device designed for CEOs, priced at $6,880. Built on the open-source Hermes project, this foldable integrates AI-agent workflows and enterprise solutions, wrapped in luxury finishes. The device targets executives seeking to manage complex business operations on-the-go, offering seamless integration with existing enterprise systems. This move reflects a trend towards combining cutting-edge AI capabilities with premium hardware to cater to high-level business needs. Potential users should evaluate the device's compatibility with their current enterprise infrastructure to maximize its benefits.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/28/vertu-wants-ceos-to-run-companies-from-an-ai-foldable-starting-at-6880/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Data Sovereignty Reshapes Critical Infrastructure Governance",
+            "title": "Data Sovereignty's Impact on Critical Infrastructure Governance Models",
+            "content": "Equinix highlights the growing importance of data sovereignty in reshaping governance models for critical infrastructure. Traditional governance frameworks, designed for centralized systems, are increasingly inadequate as digital systems expand across jurisdictions. This shift necessitates new models that prioritize local control over data to enhance economic resilience. Organizations managing critical infrastructure must adapt to these changes by implementing policies that respect data sovereignty while ensuring robust security measures. Understanding the implications of these evolving governance models is crucial for maintaining operational integrity and compliance.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/data/control-within-connection-how-data-sovereignty-is-rewriting-the-rules-of-critical-infrastructure",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "AI-Generated Film Premieres at Tribeca for $2,000",
+            "title": "AI-Generated Film \"Dreams of Violets\" Debuts at Tribeca Festival",
+            "content": "\"Dreams of Violets,\" an AI-generated film, will premiere at the Tribeca Festival, marking a significant milestone in AI-driven content creation. The 75-minute film, produced for just $2,000, dramatizes the Iranian government's January crackdown on protestors, with all characters and visuals created by AI. This development underscores the potential of AI in transforming film production, offering cost-effective alternatives to traditional filmmaking. Filmmakers and content creators should explore AI's capabilities to innovate storytelling and production processes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "YouTube Enhances Podcast Experience for Premium Users",
+            "title": "YouTube Introduces Audio-First Features for Podcast Listening",
+            "content": "YouTube is rolling out new features to enhance podcast listening for Premium subscribers on Android, with iOS support coming soon. The \"on-the-go mode\" offers an audio-first layout, featuring larger playback buttons and a static image, optimizing the platform for podcast consumption. This update positions YouTube as a more competitive player in the podcast app market, responding to user demand for improved audio experiences. Podcast creators and listeners should leverage these features to enhance content accessibility and engagement.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/streaming/939051/youtube-premium-podcast-features",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Musk Reframes xAI's Anthropic Deal as Short-Term",
+            "title": "Elon Musk Recasts xAI's Anthropic Compute Deal Duration",
+            "content": "Elon Musk has publicly described xAI's compute agreement with Anthropic as short-term and cancellable, despite SpaceX's S-1 filing indicating payments through May 2029. This discrepancy raises questions about the long-term strategic plans of xAI and its reliance on Anthropic's computing resources. Stakeholders should monitor developments closely, as changes in this partnership could impact xAI's operational capabilities and strategic direction. Understanding the nuances of such agreements is vital for assessing the stability and future of AI ventures.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Sesame Launches Conversational AI App on iOS",
+            "title": "Sesame's iOS App Brings Advanced Conversational AI to Users",
+            "content": "Sesame, founded by Oculus creators, has launched its iOS app featuring advanced conversational AI agents. The app aims to provide more natural and human-like interactions, moving beyond traditional chatbot limitations. This release reflects a growing trend towards enhancing AI communication capabilities, making interactions more intuitive and engaging for users. Developers and businesses should consider integrating such AI solutions to improve customer service and user experience. Evaluating the app's performance and user feedback will be crucial for further development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/28/sesame-the-conversational-ai-startup-from-oculus-founders-launches-its-ios-app/",
+            "relatedResources": []
+        },
         {
             "date": "May 27 2026",
             "headline": "Warp Leverages GPT-5.5 for Open-Source Coding Revolution",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Robinhood has announced a new feature allowing users to create dedicated accounts for AI agents to trade stocks on their behalf. This innovative offering enables traders to allocate specific funds to these AI-driven accounts, which can autonomously buy and sell stocks across the market. The move is part of Robinhood's strategy to leverage AI for enhanced trading experiences, potentially increasing both profits and risks for users. As AI continues to permeate financial services, traders and investors should evaluate the benefits and challenges of integrating AI agents into their investment strategies. This development highlights the evolving role of AI in personal finance management.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Last Call for Startup Battlefield 200 Applications",
-            "title": "Final Day to Apply for TechCrunch's Startup Battlefield 200",
-            "content": "Today marks the deadline for applications to TechCrunch's Startup Battlefield 200, a prestigious competition offering $100,000 in equity-free funding. Startups and founders have until 11:59 p.m. PT to submit their entries for a chance to gain global visibility and connect with top investors. The event, part of TechCrunch Disrupt, provides a platform for emerging companies to showcase their innovations and compete on a global stage. Participants can expect significant exposure and networking opportunities, potentially accelerating their growth and market presence. Entrepreneurs should seize this last-minute opportunity to participate in one of the tech industry's most influential startup competitions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/27/startup-battlefield-200-applications-close-today-nominate-a-founder-or-submit-your-startup/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "ElevenLabs Model Switches Music Genres Mid-Track",
-            "title": "ElevenLabs Unveils Music Model Capable of Genre Switching",
-            "content": "ElevenLabs has launched a groundbreaking music generation model that allows users to regenerate sections of a song while seamlessly switching genres mid-track. This innovative capability enables artists and producers to experiment with diverse musical styles within a single composition, offering unprecedented creative flexibility. The model's ability to maintain the integrity of the original track while introducing genre variations represents a significant advancement in AI-driven music production. Musicians and content creators should explore this tool to enhance their creative processes and expand their artistic horizons. ElevenLabs continues to push the boundaries of AI in the music industry with this latest offering.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "SOND Emerges with $7M for AI Sleep Earbuds",
-            "title": "SOND Launches with $7M Funding for AI-Powered Sleep Technology",
-            "content": "SOND, a sleep tech startup founded by Bose's former head of sleep products, has emerged from stealth mode with $7 million in funding. The company is developing AI-powered sleep earbuds designed to enhance sleep quality through personalized soundscapes and noise-cancellation features. This funding will support SOND's efforts to refine its technology and bring its innovative sleep solutions to market. The startup's emergence highlights the growing interest in AI applications for health and wellness, particularly in improving sleep. Investors and tech enthusiasts should watch SOND's progress as it seeks to revolutionize the sleep tech industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Pope's AI Encyclical—40% to 100% AI-Generated",
-            "title": "AI Allegedly Used in Pope Leo XIV's Encyclical on AI's Impact",
-            "content": "Pope Leo XIV's latest encyclical, Magnifica Humanitas, which discusses the impact of artificial intelligence on humanity, may have been partially written by AI. Linch Zhang's analysis on the LessWrong forum suggests that AI contributed between 40% and 100% of certain paragraphs. This revelation raises questions about the role of AI in religious and philosophical discourse. The encyclical addresses the ethical implications of AI, urging caution in its development and deployment. The potential use of AI in crafting such a document highlights the technology's growing influence in unexpected areas. Religious leaders and technologists alike are encouraged to consider the ethical dimensions of AI's integration into human thought and communication.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/937801/pope-leo-xiv-magnifica-humanitas-ai-pangram",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "DuckDuckGo Installs Surge 30% Amid Google AI Search Backlash",
-            "title": "Users Flock to DuckDuckGo as Google AI Search Faces Criticism",
-            "content": "DuckDuckGo has experienced a 30% increase in app installations following Google's overhaul of its search engine at I/O 2026, which replaced traditional blue links with AI-driven agents. This shift has sparked significant user backlash, with many seeking alternatives that prioritize privacy and traditional search formats. DuckDuckGo's rise indicates a growing demand for search engines that resist AI-centric changes. The change in user behavior underscores a broader trend of skepticism towards AI's role in everyday technology. Users concerned about privacy and control over search results are increasingly turning to platforms like DuckDuckGo.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "OpenRouter Valuation Soars to $1.3B—5x Usage Growth in 6 Months",
-            "title": "OpenRouter's Valuation Doubles to $1.3 Billion Amid Rapid Growth",
-            "content": "OpenRouter has successfully raised $113 million in a Series B funding round led by CapitalG, doubling its valuation to $1.3 billion. The company's platform, which supports multiple AI models, has seen a fivefold increase in usage over the past six months. This growth reflects the industry's shift towards multi-model AI solutions, catering to diverse user needs. OpenRouter's success highlights the increasing demand for flexible AI platforms capable of integrating various AI technologies. Investors and developers should note the potential of multi-model platforms in shaping the future of AI applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
             "relatedResources": []
         }
     ],
