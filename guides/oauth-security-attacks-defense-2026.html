@@ -1072,12 +1072,12 @@ STORM-2372 DEVICE CODE PHISHING ATTACK FLOW
 https://login.microsoftonline.com/common/oauth2/v2.0/authorize
   ?client_id=ATTACKER_APP_ID
   &response_type=code
-  &redirect_uri=https://attacker-site.com/callback
+  &redirect_uri=hxxps://attacker-site.com/callback
   &scope=INVALID_SCOPE_TO_TRIGGER_ERROR
   &prompt=none
 
 # Result: Microsoft's auth server redirects to:
-# https://attacker-site.com/callback?error=invalid_scope
+# hxxps://attacker-site.com/callback?error=invalid_scope
 # → User is now on the attacker's phishing site
 # → The URL they clicked was login.microsoftonline.com
 # → All email/browser reputation checks passed</code></pre>

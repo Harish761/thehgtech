@@ -943,7 +943,7 @@
                     <pre><code># Attacker creates a service with a name that mimics legitimate Windows telemetry
 # AI triage model trained on "normal" baselines may classify this as benign
 
-sc create "WinDefendUpdate" binPath= "C:\Windows\Temp\payload.exe" start= auto
+sc create "WinDefendUpdate" binPath= "C:\Windows\Temp\payload[.]exe" start= auto
 
 # The service name "WinDefendUpdate" is designed to look like a Windows Defender update
 # An AI model pattern-matching against known-good service names may score this as LOW risk
