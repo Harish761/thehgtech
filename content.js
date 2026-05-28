@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 27 2026",
+            "headline": "UK Cyberspying Chief Warns of AI and Russian Threats",
+            "title": "AI Deemed 'Unstoppable Force' Amid Rising Russian Cyber Activities",
+            "content": "The UK's cyberspying chief has labeled artificial intelligence (AI) as an \"unstoppable force\" while cautioning against Russia's increasing cyber activities in the \"gray zone\" of conflict. This warning comes as intelligence experts observe a rise in hostile cyber operations by Russia that stop short of war but pose significant threats to national security. The use of AI in these operations could enhance the sophistication and impact of cyberattacks, making them harder to detect and mitigate. Organizations are urged to bolster their defenses by integrating AI-driven security solutions to anticipate and counteract these evolving threats. The call to action emphasizes the need for international cooperation and proactive measures to safeguard critical infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/uk-cyberspying-chief-calls-ai-an-unstoppable-force-and-warns-about-russia/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "MFA Prompt Bombing—Why Your Second Factor Fails",
+            "title": "MFA Prompt Bombing Exposes Vulnerabilities in Identity Security",
+            "content": "Multi-factor authentication (MFA), once a cornerstone of identity security, is now being undermined by a technique known as \"prompt bombing.\" Attackers exploit this by overwhelming users with authentication requests, leading them to approve access inadvertently. This tactic bypasses the security benefits of MFA, leaving systems vulnerable to unauthorized access even when credentials are not compromised. Security professionals must educate users on recognizing and resisting such attacks while considering adaptive MFA solutions that can detect and mitigate these attempts. As attackers continue to innovate, organizations must remain vigilant and proactive in securing their authentication processes.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/mfa-prompt-bombing-why-your-second.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 26 2026",
+            "headline": "CERT-In Mandates 12-Hour Patching for Critical Flaws",
+            "title": "CERT-In Urges Rapid Patching to Combat AI-Assisted Cyber Threats",
+            "content": "The Indian Computer Emergency Response Team (CERT-In) has issued a directive requiring organizations to patch critical vulnerabilities in internet-facing systems within 12 hours of detection, where feasible. This urgent measure responds to the increasing use of AI by threat actors to exploit vulnerabilities swiftly. The guideline aims to mitigate risks associated with AI-assisted attacks that can rapidly escalate into significant breaches. Organizations are advised to enhance their vulnerability management processes and ensure that patching is prioritized to protect against potential exploitation. This move highlights the growing importance of speed and efficiency in cybersecurity defense strategies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 25 2026",
+            "headline": "Weekly Recap: Linux Flaws and Supply Chain Chaos",
+            "title": "Linux Flaws, Defender 0-Days, and Botnets Dominate Weekly Cyber Recap",
+            "content": "This week's cybersecurity landscape was marked by a resurgence of old vulnerabilities and new threats, including critical flaws in Linux systems and zero-day vulnerabilities in Microsoft Defender. Additionally, router botnets and supply chain attacks have kept security teams on high alert. Organizations are urged to revisit their patch management strategies and ensure that outdated systems are not left vulnerable to exploitation. The chaotic state of cybersecurity underscores the need for continuous monitoring and proactive threat management. As threat actors exploit both new and old vulnerabilities, maintaining robust security postures is more crucial than ever.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/weekly-recap-linux-flaws-defender-0.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "CISA Contractor Leaks Credentials on GitHub",
+            "title": "CISA Contractor's GitHub Mishap Exposes Critical Infrastructure Risks",
+            "content": "In a significant security lapse, a contractor for the Cybersecurity and Infrastructure Security Agency (CISA) inadvertently published plain-text credentials on a public GitHub repository. This incident highlights the persistent risks associated with human error in cybersecurity, especially within organizations tasked with protecting critical infrastructure. The breach underscores the importance of stringent access controls and regular audits of code repositories to prevent unauthorized data exposure. Security professionals must prioritize securing development environments and educating personnel on best practices for handling sensitive information. This event serves as a stark reminder of the vulnerabilities inherent in digital supply chains.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-469/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "Akira Ransomware Kill Chain Unveiled Through Logs",
+            "title": "Analyzing Akira Ransomware: Insights from Perimeter and Endpoint Logs",
+            "content": "A detailed analysis of the Akira ransomware's kill chain has been reconstructed using perimeter and endpoint logs, offering valuable insights into its operational tactics. Unlike previous reports focusing on ransom notes, this study delves into the initial access vectors, lateral movement, and privilege escalation techniques employed by the attackers. Understanding these stages is crucial for defenders aiming to detect and disrupt ransomware activities before encryption occurs. Security teams are encouraged to enhance their log analysis capabilities and implement robust monitoring systems to identify suspicious activities early. This proactive approach is essential in mitigating the impact of ransomware attacks.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/33024",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
             "headline": "Pretalx Flaw Allows 100% Talk Acceptance—Patch Urgently",
             "title": "Critical Vulnerability in Pretalx Enables Unauthorized Conference Talk Approvals",
             "content": "Researchers from Novee have identified a critical account takeover vulnerability in Pretalx, an open-source conference management tool. This flaw allows attackers to gain unauthorized access and achieve a 100% acceptance rate for conference talks, bypassing standard approval processes. The vulnerability poses a significant risk to event organizers relying on Pretalx for managing submissions and scheduling. Users of Pretalx are advised to apply the latest security patches immediately to mitigate potential exploitation. This discovery underscores the importance of regular security audits for open-source software used in professional settings.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-drupal-vulnerability/",
             "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "7-Eleven Breach Exposes 185,000 Customers' Data",
-            "title": "7-Eleven Data Breach by ShinyHunters Exposes Personal Information of 185,000",
-            "content": "The ShinyHunters extortion gang has compromised the systems of 7-Eleven, leading to the exposure of personal information belonging to over 185,000 individuals. This breach, which occurred in April, highlights the vulnerabilities in retail cybersecurity and the ongoing threat posed by organized cybercrime groups. The stolen data includes sensitive customer information, raising concerns about identity theft and fraud. 7-Eleven is working with cybersecurity experts to assess the breach's impact and enhance its security measures. Affected customers are advised to monitor their accounts and report any suspicious activities.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/7-eleven-data-breach-exposes-personal-information-of-185-000-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "KnowledgeDeliver LMS Flaw Used to Spread Godzilla, Cobalt Strike",
-            "title": "Exploited KnowledgeDeliver LMS Flaw Facilitates Godzilla and Cobalt Strike Deployment",
-            "content": "A high-severity security flaw in the KnowledgeDeliver LMS, popular in Japan, was exploited as a zero-day to deploy both the Godzilla web shell and Cobalt Strike Beacon. This vulnerability, now patched, allowed attackers to gain persistent access and conduct further malicious operations. The exploitation of this flaw underscores the critical need for timely patch management in educational software. Organizations using KnowledgeDeliver should ensure they have applied the latest security updates and conduct thorough security audits to prevent similar incidents. This case highlights the increasing targeting of educational platforms by sophisticated threat actors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/knowledgedeliver-lms-flaw-exploited-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "185,000 Affected—7-Eleven Data Breach Exposes Personal Details",
-            "title": "ShinyHunters Leak Compromises 185,000 in 7-Eleven Data Breach",
-            "content": "A data breach at 7-Eleven has potentially impacted 185,000 individuals, with the hacker group ShinyHunters leaking sensitive information. The compromised data includes email addresses, names, addresses, and dates of birth, raising significant privacy concerns. This incident underscores the ongoing threat posed by cybercriminals targeting retail giants, exploiting vulnerabilities to access customer data. Affected individuals should monitor their accounts for suspicious activity and consider identity theft protection measures. This breach highlights the critical need for robust data protection strategies in retail operations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/185000-likely-impacted-by-7-eleven-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "Microsoft Fixes SharePoint RCE Flaw—CVE-2026-45659 Patched",
-            "title": "Microsoft Patches Critical SharePoint RCE Vulnerability CVE-2026-45659",
-            "content": "Microsoft has released crucial updates addressing a remote code execution (RCE) vulnerability in SharePoint, identified as CVE-2026-45659. This flaw, with a CVSS score of 8.8, could allow attackers to execute arbitrary code on affected servers without needing special conditions. The vulnerability affects multiple versions of SharePoint, posing a significant risk to organizations relying on this platform for collaboration and document management. Administrators are urged to apply the patches immediately to safeguard their systems against potential exploitation. This patch is part of Microsoft's ongoing efforts to enhance security across its product suite.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-patches-sharepoint-rce-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "Zero-Day Exploit—Hackers Deploy Web Shells via KnowledgeDeliver",
-            "title": "KnowledgeDeliver Zero-Day Enables Web Shell Deployment via ViewState Exploits",
-            "content": "Hackers have exploited a zero-day vulnerability in KnowledgeDeliver, leveraging hardcoded machineKey values to conduct ViewState deserialization attacks. These attacks enable remote code execution, allowing threat actors to deploy web shells on compromised systems. The vulnerability highlights the risks associated with insecure configuration files, particularly in enterprise software. Organizations using KnowledgeDeliver should review their security configurations and apply any available patches to mitigate this threat. This incident underscores the importance of securing application configurations to prevent unauthorized access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hackers-exploited-knowledgedeliver-zero-day-for-web-shell-deployment/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "DockSec AI Cuts Docker Vulnerability Noise—Improves Security",
-            "title": "DockSec Uses AI to Simplify Docker Image Vulnerability Management",
-            "content": "DockSec, an OWASP incubator project, is leveraging artificial intelligence to streamline vulnerability management in Docker images. By correlating data from multiple container security scanners, DockSec provides clear remediation guidance and precise Dockerfile fixes in plain English. This tool aims to reduce the complexity and noise associated with container security, enabling developers to focus on critical vulnerabilities. As container adoption grows, tools like DockSec are essential for maintaining secure DevOps practices. Organizations should consider integrating DockSec into their security workflows to enhance their container security posture.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/open-source-docksec-uses-ai-to-cut-through-vulnerability-noise-in-docker-images/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 27 2026",
+            "headline": "Warp Leverages GPT-5.5 for Open-Source Coding Revolution",
+            "title": "Warp Utilizes GPT-5.5 to Enhance Open-Source Development Workflows",
+            "content": "Warp has integrated GPT-5.5 and OpenAI models to streamline coordination among coding agents across local, cloud, and open-source development environments. This strategic move aims to enhance productivity and collaboration by leveraging advanced AI capabilities to manage complex workflows. The adoption of GPT-5.5 allows Warp to offer more efficient code generation and error detection, significantly benefiting developers working in distributed teams. As open-source projects continue to grow in complexity, Warp’s approach could set a new standard for AI-assisted coding. Developers should consider integrating similar AI models to optimize their development processes and stay competitive in the evolving tech landscape.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/warp",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "MiniMax's M3 Model—15.6X Faster with Sparse Attention",
+            "title": "MiniMax Unveils M3 Model Featuring Sparse Attention and Speed Boost",
+            "content": "MiniMax has announced its upcoming M3 model, which incorporates a new sparse attention mechanism to deliver a 15.6X increase in long-context response speed. This advancement positions MiniMax as a leader among Chinese AI firms competing on the global stage, offering cutting-edge intelligence across text, coding, and video modalities. The M3 model's enhanced capabilities are expected to improve performance in complex AI tasks, providing significant advantages in processing efficiency and accuracy. Organizations utilizing AI for large-scale data analysis and content generation should evaluate the potential benefits of integrating MiniMax's M3 model into their operations.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/minimax-teases-upcoming-m3-model-with-new-sparse-attention-mechanism-and-15-6x-response-speed-boost",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Google AI's Spelling Woes—A Recurring Embarrassment",
+            "title": "Google's AI Struggles with Spelling Errors Highlight System Limitations",
+            "content": "Google's AI systems have once again come under scrutiny for their inability to accurately spell even the company's own name. This recurring issue underscores the limitations of current AI models in handling basic language tasks, raising concerns about their reliability in more complex applications. The persistent spelling errors suggest that Google's AI may require further refinement to meet user expectations and maintain credibility. As AI continues to play a larger role in everyday applications, developers and users alike should remain vigilant about the potential for such errors and advocate for improvements in AI language processing capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/27/why-googles-ai-cant-spell-google-or-anything-else/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "AWS Secures $6B AI Chip Deal with Snowflake",
+            "title": "Snowflake Signs $6B Agreement with AWS for AI Chip Supply",
+            "content": "Snowflake has entered into a substantial five-year agreement with Amazon Web Services (AWS) to procure AI CPU chips valued at $6 billion. This deal underscores the increasing demand for AI infrastructure and positions AWS as a key player in the AI hardware market, challenging Nvidia's dominance. The partnership is expected to enhance Snowflake's AI capabilities, enabling more efficient data processing and analytics. Companies relying on AI-driven insights should monitor this development closely, as it may influence the availability and pricing of AI hardware solutions in the near future.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "Remote Boosts Revenue 50% Per Employee—No New Hires",
+            "title": "Remote Achieves 50% Revenue Growth Per Employee via AI Integration",
+            "content": "Payroll service provider Remote has reported a 50% increase in revenue per employee, reaching over $300 million in annual recurring revenue (ARR) without expanding its workforce. This growth is attributed to the company's strategic adoption of AI technologies, which have streamlined operations and improved efficiency. By becoming cash-flow positive, Remote demonstrates the potential for AI to drive substantial business growth without proportional increases in headcount. Organizations looking to optimize their operations should consider similar AI-driven strategies to enhance productivity and profitability.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/27/payroll-startup-remote-says-it-grew-revenue-50-per-employee-without-adding-headcount/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "SEO Strategies Upended by AI-Driven Search Changes",
+            "title": "AI-Generated Answers Redefine SEO Strategies in Google's Search",
+            "content": "Google I/O has officially announced a shift towards AI-generated answers taking precedence in search results, fundamentally altering traditional SEO strategies. This change means that brands have limited visibility into how AI describes them to users, challenging the effectiveness of long-established SEO practices centered around traditional search links. As AI-driven search becomes the norm, companies must adapt by focusing on how their content is interpreted by AI models. Marketing and SEO professionals should reassess their strategies to ensure their brands remain visible and accurately represented in this new search landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/your-seo-strategy-is-optimized-for-a-search-engine-that-no-longer-exists/",
+            "relatedResources": []
+        },
         {
             "date": "May 27 2026",
             "headline": "Cognition's $1B Funding Boosts Valuation to $25B",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "OpenRouter has successfully raised $113 million in a Series B funding round led by CapitalG, doubling its valuation to $1.3 billion. The company's platform, which supports multiple AI models, has seen a fivefold increase in usage over the past six months. This growth reflects the industry's shift towards multi-model AI solutions, catering to diverse user needs. OpenRouter's success highlights the increasing demand for flexible AI platforms capable of integrating various AI technologies. Investors and developers should note the potential of multi-model platforms in shaping the future of AI applications.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "FBI: Identifying AI Porn Posters Easier Than You Think",
-            "title": "FBI Details Ease of Identifying Non-Consensual AI Porn Posters",
-            "content": "An FBI agent has revealed how easily individuals posting AI-generated porn without consent can be identified, citing a case where a saved Instagram post linked a man to an AI porn account. This case underscores the risks associated with digital footprints and the capabilities of law enforcement in tracking online activities. The FBI's ability to trace such activities highlights the importance of digital privacy and the potential consequences of misuse. Individuals involved in creating or sharing non-consensual AI content should be aware of the legal and ethical implications. The case serves as a reminder of the need for robust privacy practices and ethical considerations in AI content creation.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "AI Warfare Reality—UN Forum Discusses Autonomous Systems",
-            "title": "AI Warfare Becomes Reality at UN's Lethal Autonomous Systems Forum",
-            "content": "The Convention on Certain Conventional Weapons, an international forum hosted by the United Nations in Geneva, has shifted its focus from hypothetical discussions to the realities of AI warfare. Attendees, including Branka Marijan, noted the increasing relevance of lethal autonomous systems in modern conflicts. The forum's discussions reflect growing concerns over the ethical and strategic implications of AI in warfare. As autonomous systems become more prevalent, nations are urged to consider regulations and frameworks to manage their deployment. The forum highlights the urgent need for international cooperation in addressing the challenges posed by AI in military applications.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/937028/military-ai-warfare-red-lines",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "Uber Questions AI Spending—Budget Exhausted in 4 Months",
-            "title": "Uber Reevaluates AI Investments After Rapid Budget Depletion",
-            "content": "Uber is reassessing its AI investment strategy after depleting its annual AI budget just four months into 2026. In an interview with Rapid Response, Uber's president and COO Andrew Macdonald expressed concerns over the lack of meaningful returns from AI initiatives. This situation highlights the challenges companies face in balancing AI innovation with financial sustainability. Uber's experience serves as a cautionary tale for tech leaders investing heavily in AI without clear ROI metrics. Companies are encouraged to critically evaluate their AI spending and focus on projects that deliver tangible benefits.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "AI Hatred Fuels Anti-Tech Extremism—Feds Issue Warning",
-            "title": "US Law Enforcement Warns of Rising Anti-Tech Extremism Amid AI Concerns",
-            "content": "US federal authorities have issued a warning about the emergence of anti-tech extremism, driven by growing public resentment towards artificial intelligence (AI) and its perceived threats to jobs and communities. Documents obtained by WIRED reveal that this new category of threat is linked to fears of AI replacing human jobs and the expansion of data centers in residential areas. The warning highlights the potential for increased hostility and violence against tech companies and infrastructure. Security professionals are urged to monitor these developments closely and consider the implications for both physical and cybersecurity measures. This trend underscores the need for balanced discussions on AI's societal impact to mitigate extremist sentiments.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/us-law-enforcement-warns-of-anti-tech-extremism/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "Indian Gig Workers Train Robots—Startup Human Archive's Bold Bet",
-            "title": "Human Archive Leverages India's Gig Economy to Train Global Robotics",
-            "content": "Human Archive, a startup founded by researchers from Berkeley and Stanford, is tapping into India's gig economy to gather essential training data for AI and robotics. The company equips gig workers with camera-equipped caps and sensor devices to capture real-world interactions, providing valuable datasets for AI labs worldwide. This innovative approach addresses the high demand for diverse and accurate training data in the AI and robotics sectors. By leveraging India's vast pool of gig workers, Human Archive aims to accelerate advancements in robotic capabilities and AI model training. This initiative highlights the growing intersection of AI development and global labor markets.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "UMG and TikTok Unite Against Unauthorized AI Music",
-            "title": "Universal Music Group and TikTok Renew Pact to Tackle AI Music Infringements",
-            "content": "Universal Music Group (UMG) and TikTok have renewed their agreement to combat unauthorized AI-generated music on the platform. This partnership reinforces UMG's ongoing efforts to push for stricter content moderation policies across digital platforms and streaming services. The renewed agreement aims to protect artists' rights and ensure that AI-generated content does not infringe on copyrighted material. This move is part of a broader industry trend towards safeguarding intellectual property in the age of AI, as music labels and tech companies collaborate to address the challenges posed by AI in content creation. Stakeholders in the music and tech industries should stay informed about evolving content policies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
             "relatedResources": []
         }
     ],
@@ -359,6 +359,39 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-48027",
+            "dateAdded": "May 27, 2026",
+            "vendor": "Nx Nx Console",
+            "description": "Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harveste",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48027",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-45321",
+            "dateAdded": "May 27, 2026",
+            "vendor": "TanStack TanStack",
+            "description": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45321",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-8398",
+            "dateAdded": "May 27, 2026",
+            "vendor": "Daemon Daemon Tools Lite",
+            "description": "Daemon Tools contains an unspecified vulnerability that has a high impact on confidentiality, integrity, and availability.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8398",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-48172",
             "dateAdded": "May 26, 2026",
             "vendor": "LiteSpeed cPanel Plugin",
@@ -378,28 +411,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9082",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-34291",
-            "dateAdded": "May 21, 2026",
-            "vendor": "Langflow Langflow",
-            "description": "Langflow contains an origin validation error vulnerability in which an overly permissive CORS configuration combined with a refresh token cookie configured as SameSite=None allows a malicious webpage",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34291",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-34926",
-            "dateAdded": "May 21, 2026",
-            "vendor": "Trend Micro Apex One",
-            "description": "Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deplo",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34926",
             "isZeroDay": false
         }
     ],
