@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-412",
+      "incident_id": 412,
+      "title": "Finnish Police Were Reportedly Reprimanded After National Bureau of Investigation Unit Allegedly Use",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-424",
+      "incident_id": 424,
+      "title": "Canadian Universities' AI Proctoring Tools Reportedly Collected Student Biometric Data Without Adequ",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-438",
       "incident_id": 438,
       "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
@@ -614,14 +630,6 @@
       "title": "UT Austin's GRADE Algorithm Reportedly Reduced Review of Lower-Scored PhD Applicants Amid Bias Conce",
       "date": "2026-05-20",
       "category": "bias",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-424",
-      "incident_id": 424,
-      "title": "Canadian Universities' AI Proctoring Tools Reportedly Collected Student Biometric Data Without Adequ",
-      "date": "2026-05-20",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -1991,20 +1999,12 @@
       "date": "2026-02-28",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1393",
-      "incident_id": 1393,
-      "title": "Woolworths' Olive Chatbot Reportedly Generated 'Angry Mother' Anecdotes During Support Calls After G",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
     "total": 250,
-    "last7Days": 63,
-    "last30Days": 169
+    "last7Days": 65,
+    "last30Days": 170
   },
-  "lastUpdated": "2026-05-30T00:10:33.492634+05:30"
+  "lastUpdated": "2026-05-30T02:28:38.095071+05:30"
 }
