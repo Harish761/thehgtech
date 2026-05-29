@@ -1657,46 +1657,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1379",
-      "incident_id": 1379,
-      "title": "Florida Woman Reportedly Jailed After Ex-Boyfriend Allegedly Submitted AI-Fabricated Text Screenshot",
-      "date": "2026-02-28",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1380",
-      "incident_id": 1380,
-      "title": "Purported AI Voice Clone Allegedly Narrated Shaun Rein's 'The Split' in Unauthorized YouTube 'Podcas",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1381",
-      "incident_id": 1381,
-      "title": "Purportedly AI-Generated TikTok Videos Reportedly Urged 'Polexit' Campaign, Prompting Polish Governm",
-      "date": "2026-02-28",
-      "category": "prompt_injection",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1382",
-      "incident_id": 1382,
-      "title": "Tencent's WeChat-Integrated Yuanbao Chatbot Reportedly Insulted User During Coding Debug Request",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1384",
-      "incident_id": 1384,
-      "title": "Purported Deepfake Video Impersonating Elton John Reportedly Induced Northeast Ohio Man to Authorize",
-      "date": "2026-02-28",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1385",
       "incident_id": 1385,
       "title": "X Users Reportedly Prompted Grok to Sexualize Images of Ren\u00e9e Good After Her Killing in Minneapolis",
@@ -1738,9 +1698,9 @@
     }
   ],
   "stats": {
-    "total": 217,
+    "total": 212,
     "last7Days": 20,
     "last30Days": 123
   },
-  "lastUpdated": "2026-05-29T10:07:35.421319+05:30"
+  "lastUpdated": "2026-05-29T17:08:31.877176+05:30"
 }
