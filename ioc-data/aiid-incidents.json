@@ -1,6 +1,158 @@
 {
   "incidents": [
     {
+      "id": "AIID-438",
+      "incident_id": 438,
+      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-441",
+      "incident_id": 441,
+      "title": "South Korean Agencies Reportedly Shared Airport Travelers' Face Images with Companies to Train Immig",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-465",
+      "incident_id": 465,
+      "title": "Private Medical Photos Were Reportedly Found in LAION-5B AI Training Dataset",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-491",
+      "incident_id": 491,
+      "title": "Replika's AI Experience Reportedly Lacked Protection for Minors, Resulting in Data Ban",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-513",
+      "incident_id": 513,
+      "title": "ChatGPT Reportedly Banned by Italian Authority Due to OpenAI's Purported Lack of Legal Basis for Dat",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-516",
+      "incident_id": 516,
+      "title": "ChatGPT Reportedly Exposed Users' Private Data Reportedly Due to Bug",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-521",
+      "incident_id": 521,
+      "title": "iRobot Roomba J7 R&D Images Reportedly Appeared in Private Online Groups After Data Labeling",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-556",
+      "incident_id": 556,
+      "title": "Amazon Allegedly Violated Children's Privacy through Default Voice Collection Settings",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-558",
+      "incident_id": 558,
+      "title": "Activists Allege NYPD's Application of Facial Recognition Interfered with Right to Protest",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-559",
+      "incident_id": 559,
+      "title": "Grant Reviewers Reportedly Fed Applications into Generative AI to Produce Reports, Allegedly Breachi",
+      "date": "2026-05-29",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-561",
+      "incident_id": 561,
+      "title": "OpenAI Alleged by Lawsuit Violated Users' Privacy Rights by Training AI on Private Info without Info",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-571",
+      "incident_id": 571,
+      "title": "Reported Accidental Exposure of 38TB of Data by Microsoft's AI Research Team",
+      "date": "2026-05-29",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-584",
+      "incident_id": 584,
+      "title": "Illinois Residents File Class Action Lawsuit Against Facial Recognition Technology Companies for All",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-586",
+      "incident_id": 586,
+      "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-636",
+      "incident_id": 636,
+      "title": "AI Romance Apps Reportedly Compromise User Privacy for Data Harvesting",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-657",
+      "incident_id": 657,
+      "title": "Alleged ChatGPT Account Compromise Reportedly Led to Unintended Data Exposure",
+      "date": "2026-05-29",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-659",
+      "incident_id": 659,
+      "title": "Purported Mass Facial Recognition Program in Gaza Reportedly Used by Israeli Forces to Identify Pale",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-678",
+      "incident_id": 678,
+      "title": "Purported ChatGPT Factual Errors Reportedly Led to Filing of Complaint of GDPR Privacy Violation ",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-733",
+      "incident_id": 733,
+      "title": "Auto Insurers Allegedly Are Surreptitiously Collecting and Scoring Driver Data",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-743",
       "incident_id": 743,
       "title": "Gemini AI Allegedly Reads Google Drive Files Without Explicit User Consent",
@@ -828,14 +980,6 @@
       "id": "AIID-524",
       "incident_id": 524,
       "title": "Synthesized Voices Were Reportedly Used by Torswats to Sell Swatting Calls Targeting Schools and Hom",
-      "date": "2026-05-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-586",
-      "incident_id": 586,
-      "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
       "date": "2026-05-17",
       "category": "other",
       "severity": "medium"
@@ -1841,44 +1985,12 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1192",
-      "incident_id": 1192,
-      "title": "16-Year-Old Allegedly Received Suicide Method Guidance from ChatGPT Before Death",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "critical"
-    },
-    {
-      "id": "AIID-1329",
-      "incident_id": 1329,
-      "title": "Grok Reportedly Generated and Distributed Nonconsensual Sexualized Images of Adults and Minors in X ",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1373",
       "incident_id": 1373,
       "title": "AI Coding Agent 'MJ Rathbun' Allegedly Published Personalized Accusatory Blog Post Targeting Matplot",
       "date": "2026-02-28",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1385",
-      "incident_id": 1385,
-      "title": "X Users Reportedly Prompted Grok to Sexualize Images of Ren\u00e9e Good After Her Killing in Minneapolis",
-      "date": "2026-02-28",
-      "category": "prompt_injection",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1386",
-      "incident_id": 1386,
-      "title": "NPR Host David Greene Alleged Google's NotebookLM Replicated His Voice Without Consent, Prompting La",
-      "date": "2026-02-28",
-      "category": "prompt_injection",
-      "severity": "high"
     },
     {
       "id": "AIID-1393",
@@ -1890,9 +2002,9 @@
     }
   ],
   "stats": {
-    "total": 236,
-    "last7Days": 53,
-    "last30Days": 151
+    "total": 250,
+    "last7Days": 63,
+    "last30Days": 169
   },
-  "lastUpdated": "2026-05-29T21:35:00.731177+05:30"
+  "lastUpdated": "2026-05-30T00:10:33.492634+05:30"
 }
