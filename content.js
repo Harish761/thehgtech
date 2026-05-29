@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 28 2026",
+            "headline": "FortiClient EMS Flaw Exploited—EKZ Infostealer Deployed",
+            "title": "Hackers Exploit FortiClient EMS Vulnerability to Deploy EKZ Infostealer",
+            "content": "Cybercriminals are exploiting a critical authentication bypass vulnerability, CVE-2026-35616, in Fortinet's FortiClient Enterprise Management Server (EMS) to deliver a new credential-stealing malware named EKZ. This flaw allows attackers to bypass security measures, gaining unauthorized access to deploy the malware. The vulnerability affects all versions of FortiClient EMS prior to the latest patch. Organizations using FortiClient EMS are at risk of having sensitive credentials compromised, which could lead to further network intrusions. Fortinet has released a patch, and users are urged to update immediately to secure their systems against this active threat.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-forticlient-ems-flaw-to-push-infostealer-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Gogs RCE Flaw—Authenticated Users Can Execute Code",
+            "title": "Critical RCE Vulnerability in Gogs Allows Code Execution by Authenticated Users",
+            "content": "A critical remote code execution (RCE) vulnerability has been identified in Gogs, an open-source Git service, allowing authenticated users to execute arbitrary code. Rated 9.4 on the CVSS scale, this flaw poses a significant risk to systems using Gogs for code hosting. Although the vulnerability lacks a CVE identifier, its potential impact is severe, enabling attackers to manipulate repositories and compromise sensitive data. Users of Gogs are advised to implement security measures and monitor for updates from the maintainers to mitigate potential exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/critical-gogs-rce-vulnerability-lets.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Gitea Flaw Exposes 30,000 Deployments to Attack",
+            "title": "Gitea Vulnerability Puts 30,000 Deployments at Risk of Attack",
+            "content": "A security flaw in Gitea, a self-hosted Git service, has exposed approximately 30,000 deployments to potential attacks. This vulnerability allows unauthorized access to pull private container images, risking exposure of source code, credentials, and infrastructure details. The widespread use of Gitea in development environments amplifies the threat, necessitating immediate attention from administrators. Users are urged to review their security configurations and apply any available patches to safeguard their deployments against unauthorized access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/gitea-vulnerability-exposed-30000-deployments-to-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Carnival Cruise Data Breach—6 Million Affected",
+            "title": "Carnival Cruise Confirms Data Breach Impacting Nearly 6 Million Individuals",
+            "content": "Carnival Corporation has confirmed a data breach affecting nearly 6 million individuals, attributed to the ShinyHunters extortion group. The breach, claimed in April 2026, involved unauthorized access to sensitive personal data, raising concerns over identity theft and privacy violations. As the world's largest cruise line operator, Carnival's breach highlights the ongoing threat of cyber extortion and the need for robust data protection measures. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity protection services.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/carnival-cruise-confirms-data-breach-affecting-nearly-6-million-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "IBM, Red Hat Aim to Secure Open Source in Enterprises",
+            "title": "IBM and Red Hat Target Open Source Security in Enterprise Applications",
+            "content": "IBM and Red Hat are positioning themselves as the 'security clearinghouse' for open source applications within enterprises. With open source code prevalent in over 90% of Fortune 500 companies, the initiative aims to address the vulnerabilities commonly found in these software supply chains. By providing comprehensive security assessments and patch management, IBM and Red Hat seek to enhance the resilience of open source applications against cyber threats. Organizations are encouraged to leverage these resources to strengthen their security posture and mitigate risks associated with open source software.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4178454/ibm-and-red-hat-want-to-become-the-security-clearinghouse-for-open-source-applications-in-the-enterprise-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Gogs Vulnerability Highlights Open Source Project Challenges",
+            "title": "Unpatched Gogs Vulnerability Underscores Open Source Project Limitations",
+            "content": "A critical vulnerability in the Gogs Git service remains unpatched, highlighting the challenges faced by small open source projects in maintaining security. The flaw, which allows arbitrary code execution by authenticated users, underscores the risks associated with relying on self-hosted platforms from smaller maintainers. This incident serves as a reminder of the importance of proactive security measures and the need for robust community support in open source development. Developers using Gogs should consider alternative solutions or contribute to patch efforts to protect their codebases.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4178446/lack-of-response-to-critical-vulnerability-in-gogs-is-a-reminder-of-the-limits-of-open-source-projects-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
             "headline": "FortiClient EMS Flaw Exploited—Credential Stealer Deployed",
             "title": "Threat Actors Exploit FortiClient EMS Flaw to Deploy Credential Stealer",
             "content": "Threat actors are actively exploiting a critical vulnerability in FortiClient Endpoint Management Server (EMS) to deploy credential-stealing malware. The flaw, which has been patched, was used to compromise trusted endpoint management infrastructure, enabling malware distribution across managed endpoints. This vulnerability affects FortiClient EMS versions prior to the latest patch and poses significant risks to organizations relying on Fortinet's endpoint management solutions. Security professionals are advised to apply the latest patches immediately to mitigate potential breaches. This incident underscores the importance of timely patch management in safeguarding enterprise networks.",
@@ -67,24 +121,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 26 2026",
-            "headline": "MFA Prompt Bombing—Why Your Second Factor Fails",
-            "title": "MFA Prompt Bombing Exposes Vulnerabilities in Identity Security",
-            "content": "Multi-factor authentication (MFA), once a cornerstone of identity security, is now being undermined by a technique known as \"prompt bombing.\" Attackers exploit this by overwhelming users with authentication requests, leading them to approve access inadvertently. This tactic bypasses the security benefits of MFA, leaving systems vulnerable to unauthorized access even when credentials are not compromised. Security professionals must educate users on recognizing and resisting such attacks while considering adaptive MFA solutions that can detect and mitigate these attempts. As attackers continue to innovate, organizations must remain vigilant and proactive in securing their authentication processes.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/mfa-prompt-bombing-why-your-second.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 26 2026",
-            "headline": "CERT-In Mandates 12-Hour Patching for Critical Flaws",
-            "title": "CERT-In Urges Rapid Patching to Combat AI-Assisted Cyber Threats",
-            "content": "The Indian Computer Emergency Response Team (CERT-In) has issued a directive requiring organizations to patch critical vulnerabilities in internet-facing systems within 12 hours of detection, where feasible. This urgent measure responds to the increasing use of AI by threat actors to exploit vulnerabilities swiftly. The guideline aims to mitigate risks associated with AI-assisted attacks that can rapidly escalate into significant breaches. Organizations are advised to enhance their vulnerability management processes and ensure that patching is prioritized to protect against potential exploitation. This move highlights the growing importance of speed and efficiency in cybersecurity defense strategies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html",
-            "relatedResources": []
-        },
-        {
             "date": "May 27 2026",
             "headline": "CISA Contractor Leaks Credentials on GitHub",
             "title": "CISA Contractor's GitHub Mishap Exposes Critical Infrastructure Risks",
@@ -101,45 +137,63 @@ const websiteContent = {
             "source": "SANS Internet Storm Center",
             "sourceUrl": "https://isc.sans.edu/diary/rss/33024",
             "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Pretalx Flaw Allows 100% Talk Acceptance—Patch Urgently",
-            "title": "Critical Vulnerability in Pretalx Enables Unauthorized Conference Talk Approvals",
-            "content": "Researchers from Novee have identified a critical account takeover vulnerability in Pretalx, an open-source conference management tool. This flaw allows attackers to gain unauthorized access and achieve a 100% acceptance rate for conference talks, bypassing standard approval processes. The vulnerability poses a significant risk to event organizers relying on Pretalx for managing submissions and scheduling. Users of Pretalx are advised to apply the latest security patches immediately to mitigate potential exploitation. This discovery underscores the importance of regular security audits for open-source software used in professional settings.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vulnerability-in-popular-conference-software-granted-attackers-a-100-talk-acceptance-rate/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Balancing Security and Usability in Active Directory Passwords",
-            "title": "Enhancing Active Directory Security with User-Friendly Password Policies",
-            "content": "Specops Software has outlined strategies to enforce robust Active Directory password policies without compromising user experience. By implementing passphrases, breached password protection, and self-service password resets, organizations can enhance security while maintaining usability. These measures help prevent unauthorized access and reduce the risk of password-related breaches, a common vulnerability in enterprise environments. IT administrators are encouraged to adopt these practices to strengthen their security posture without alienating users. This approach reflects a growing trend towards balancing security with user convenience in corporate IT policies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/can-you-enforce-strong-active-directory-password-rules-without-frustrating-users/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "SymJack Attack Exploits AI Agents—Supply Chain at Risk",
-            "title": "SymJack Attack Converts AI Coding Agents into Supply Chain Threats",
-            "content": "A new attack vector, dubbed SymJack, has been discovered, targeting AI coding agents through malicious repositories and disguised symlinks. This method allows attackers to install malicious MCP servers, compromising CI pipelines and deploying harmful code. The attack can lead to data theft and operational disruptions, posing a severe threat to organizations relying on AI-driven development tools. Security teams should scrutinize third-party code repositories and implement stringent validation processes to mitigate this risk. This incident highlights the growing sophistication of supply chain attacks leveraging AI technologies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/symjack-attack-turns-ai-coding-agents-into-supply-chain-attack-delivery-systems/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Gitea Flaw Exposes Private Images—Immediate Action Required",
-            "title": "Gitea Vulnerability Allows Unauthorized Access to Private Container Images",
-            "content": "A security flaw in Gitea, an open-source version control platform, has been disclosed, enabling unauthenticated attackers to access private container images. This vulnerability does not require any credentials, making it a critical concern for developers using Gitea for sensitive projects. The flaw could lead to unauthorized data exposure and potential exploitation in software development environments. Users are urged to update their Gitea installations to the latest version to secure their deployments. This incident underscores the importance of securing self-hosted platforms against unauthorized access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/gitea-vulnerability-exposes-private.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 29 2026",
+            "headline": "Glean Surpasses $300M as AI Budget-Cutting Drives Growth",
+            "title": "Glean's Revenue Triples Amidst AI Budget-Cutting Demand",
+            "content": "Enterprise AI search startup Glean has reported annual revenues exceeding $300 million, marking a tripling of its top line despite increased competition from tech giants in the AI search space. The company attributes its growth to a strong demand for AI solutions that help organizations cut costs, a key selling point in today's budget-conscious environment. Glean's platform leverages AI to streamline enterprise search processes, enhancing productivity and reducing overhead. This financial milestone underscores the growing trend of businesses investing in AI tools that offer tangible cost-saving benefits. As AI continues to reshape enterprise operations, Glean's success highlights the importance of innovative solutions in maintaining competitive advantage.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "AWS, Cloudflare Redesign Internet for AI Traffic Surge",
+            "title": "Internet Infrastructure Overhaul for Machine-Generated Traffic by AWS, Cloudflare",
+            "content": "With AI agents transitioning from experimental to production stages, major cloud providers like AWS and Cloudflare are revamping internet infrastructure to accommodate a future dominated by machine-generated traffic. This shift reflects a significant change in internet usage patterns, where AI-driven communications are expected to surpass human interactions. The redesign involves optimizing network protocols and infrastructure to handle the unique demands of AI traffic, ensuring efficiency and reliability. This transformation is crucial for supporting the growing deployment of AI applications across industries. As AI continues to evolve, businesses must prepare for an internet landscape increasingly tailored to machine interactions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Microsoft 365 Copilot Revamp—Twice as Fast, Cleaner Design",
+            "title": "Microsoft 365 Copilot Update Boosts Speed and Usability",
+            "content": "Microsoft has unveiled a revamped version of its Microsoft 365 Copilot, featuring a cleaner design and a performance boost that doubles its loading speed. This update aims to enhance user experience by providing more reliable and structured responses, making information easier to scan and utilize. The redesign is part of Microsoft's ongoing efforts to improve productivity tools through AI integration. Users can expect a more efficient workflow as the updated Copilot facilitates quicker access to insights and recommendations. This enhancement reflects Microsoft's commitment to refining its AI offerings to better meet the needs of its enterprise users.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Asana Acquires StackAI to Enhance AI Workflow Tools",
+            "title": "Asana Expands AI Capabilities with StackAI Acquisition",
+            "content": "Asana has announced the acquisition of StackAI, a no-code agent-builder platform, as part of its strategy to bolster its suite of AI workflow tools. This acquisition allows Asana to integrate StackAI's capabilities, enabling users to create AI-driven workflows without extensive coding knowledge. The move aligns with Asana's goal to simplify AI adoption for businesses, enhancing productivity and operational efficiency. By incorporating StackAI, Asana aims to offer more versatile and accessible AI solutions to its user base. This acquisition highlights the growing trend of integrating no-code platforms to democratize AI technology across industries.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Anthropic Nears $1T Valuation with $65B Series H Raise",
+            "title": "Anthropic Secures $65B, Approaches Trillion-Dollar Valuation Pre-IPO",
+            "content": "AI startup Anthropic has successfully closed a $65 billion Series H funding round, bringing its post-money valuation to $965 billion. This substantial raise positions Anthropic on the brink of a trillion-dollar valuation as it prepares for an anticipated initial public offering (IPO). The funding underscores investor confidence in Anthropic's AI capabilities and market potential. As the company nears its IPO, it continues to focus on advancing AI technologies that promise transformative impacts across various sectors. This development highlights the escalating financial stakes and competitive landscape in the AI industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "AI Token Futures—New Trading Frontier on Exchanges",
+            "title": "AI Token Futures to Join Gold and Oil in Trading Markets",
+            "content": "Major exchanges are developing derivative products for AI tokens, marking a shift in how these digital assets are perceived and traded. Previously seen as computational outputs, AI tokens are now being considered akin to raw material inputs like electricity or bandwidth. This change reflects the growing recognition of AI's foundational role in powering digital economies. The introduction of AI token futures will offer new opportunities for investors and businesses to hedge against market volatility. As AI continues to integrate into core business operations, understanding and leveraging these financial instruments will become increasingly important for tech leaders and investors.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/",
+            "relatedResources": []
+        },
         {
             "date": "May 28 2026",
             "headline": "Vertu Unveils $6,880 AI Foldable for CEOs",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Google's AI systems have once again come under scrutiny for their inability to accurately spell even the company's own name. This recurring issue underscores the limitations of current AI models in handling basic language tasks, raising concerns about their reliability in more complex applications. The persistent spelling errors suggest that Google's AI may require further refinement to meet user expectations and maintain credibility. As AI continues to play a larger role in everyday applications, developers and users alike should remain vigilant about the potential for such errors and advocate for improvements in AI language processing capabilities.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/27/why-googles-ai-cant-spell-google-or-anything-else/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "AWS Secures $6B AI Chip Deal with Snowflake",
-            "title": "Snowflake Signs $6B Agreement with AWS for AI Chip Supply",
-            "content": "Snowflake has entered into a substantial five-year agreement with Amazon Web Services (AWS) to procure AI CPU chips valued at $6 billion. This deal underscores the increasing demand for AI infrastructure and positions AWS as a key player in the AI hardware market, challenging Nvidia's dominance. The partnership is expected to enhance Snowflake's AI capabilities, enabling more efficient data processing and analytics. Companies relying on AI-driven insights should monitor this development closely, as it may influence the availability and pricing of AI hardware solutions in the near future.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Remote Boosts Revenue 50% Per Employee—No New Hires",
-            "title": "Remote Achieves 50% Revenue Growth Per Employee via AI Integration",
-            "content": "Payroll service provider Remote has reported a 50% increase in revenue per employee, reaching over $300 million in annual recurring revenue (ARR) without expanding its workforce. This growth is attributed to the company's strategic adoption of AI technologies, which have streamlined operations and improved efficiency. By becoming cash-flow positive, Remote demonstrates the potential for AI to drive substantial business growth without proportional increases in headcount. Organizations looking to optimize their operations should consider similar AI-driven strategies to enhance productivity and profitability.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/27/payroll-startup-remote-says-it-grew-revenue-50-per-employee-without-adding-headcount/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "SEO Strategies Upended by AI-Driven Search Changes",
-            "title": "AI-Generated Answers Redefine SEO Strategies in Google's Search",
-            "content": "Google I/O has officially announced a shift towards AI-generated answers taking precedence in search results, fundamentally altering traditional SEO strategies. This change means that brands have limited visibility into how AI describes them to users, challenging the effectiveness of long-established SEO practices centered around traditional search links. As AI-driven search becomes the norm, companies must adapt by focusing on how their content is interpreted by AI models. Marketing and SEO professionals should reassess their strategies to ensure their brands remain visible and accurately represented in this new search landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/your-seo-strategy-is-optimized-for-a-search-engine-that-no-longer-exists/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Cognition's $1B Funding Boosts Valuation to $25B",
-            "title": "AI Startup Cognition Secures $1B, Doubling Valuation to $25B",
-            "content": "Cognition, an AI coding startup, has successfully raised $1 billion in its latest funding round, catapulting its valuation to $25 billion. This impressive leap comes as the company reports an annualized revenue run rate of $492 million, more than doubling its valuation in just eight months. Cognition's platform, which automates software development processes, is gaining significant traction among enterprises seeking to enhance productivity and reduce costs. The funding will likely accelerate Cognition's expansion and innovation efforts, positioning it as a formidable player in the AI development landscape. Investors and tech leaders should monitor Cognition's growth trajectory as it continues to reshape the coding industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "AI Battle in NY Primary Elevates Unknown Politician",
-            "title": "AI Firms' Political Clash Boosts Profile of NY Congressional Candidate",
-            "content": "The Democratic primary for New York's 12th congressional district has become a battleground for AI giants Anthropic and OpenAI, who are investing millions in a bid to influence AI regulation. As these companies vie for control over the future of AI policy, an unexpected outcome has emerged: the increased visibility of a previously lesser-known candidate. The intense focus on AI regulation has thrust this politician into the spotlight, potentially altering the dynamics of the race. This development underscores the growing intersection of technology and politics, as AI's influence extends beyond the tech industry into legislative arenas. Stakeholders in both fields should consider the implications of such corporate involvement in political processes.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/937650/ai-alex-bores-openai-anthropic-ny12",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Robinhood Enables AI Agents for Stock Trading",
-            "title": "Robinhood Introduces AI Agent Accounts for Stock Trading",
-            "content": "Robinhood has announced a new feature allowing users to create dedicated accounts for AI agents to trade stocks on their behalf. This innovative offering enables traders to allocate specific funds to these AI-driven accounts, which can autonomously buy and sell stocks across the market. The move is part of Robinhood's strategy to leverage AI for enhanced trading experiences, potentially increasing both profits and risks for users. As AI continues to permeate financial services, traders and investors should evaluate the benefits and challenges of integrating AI agents into their investment strategies. This development highlights the evolving role of AI in personal finance management.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading",
             "relatedResources": []
         }
     ],
@@ -400,17 +400,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48172",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-9082",
-            "dateAdded": "May 22, 2026",
-            "vendor": "Drupal Core",
-            "description": "Drupal Core contains a SQL injection vulnerability that could allow for privilege escalation and remote code execution via specially crafted requests sent with the database abstraction API.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9082",
             "isZeroDay": false
         }
     ],
