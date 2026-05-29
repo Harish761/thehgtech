@@ -3066,6 +3066,25 @@
       "Description": "In September 2024, <a href=\"https://www.linkedin.com/posts/threatmon_databreach-cybersecurity-centraltickets-activity-7243167088565960705-vUDM/\" target=\"_blank\" rel=\"noopener\">data from the ticketing service Central Tickets was publicly posted to a hacking forum</a>. The data suggests the breach occurred several months earlier and exposed 723k unique email addresses alongside names, phone numbers, IP addresses, purchases and passwords stored as unsalted SHA-1 hashes."
     }
   ],
+  "charter.com": [
+    {
+      "Name": "Charter",
+      "Title": "Charter",
+      "BreachDate": "2026-05-23",
+      "AddedDate": "2026-05-28T20:00:34Z",
+      "PwnCount": 4851517,
+      "DataClasses": [
+        "Email addresses",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In May 2026, the telecommunications company <a href=\"https://www.bleepingcomputer.com/news/security/charter-confirms-data-breach-after-shinyhunters-extortion-threat/\" target=\"_blank\" rel=\"noopener\">Charter Communications (the parent company behind the consumer broadband and cable brand Spectrum) was named by the ShinyHunters group in a \"pay or leak\" extortion campaign</a>. The group later published the data, which exposed 4.9M unique email addresses along with names, phone numbers and physical addresses. A subset of approximately 85k records originating from an internal employee directory also included job titles. Charter confirmed the incident, but stated that no sensitive personal information or customer proprietary network information (CPNI) was exfiltrated."
+    }
+  ],
   "chatbooks.com": [
     {
       "Name": "Chatbooks",
