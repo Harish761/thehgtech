@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 29 2026",
+            "headline": "Trump Mobile Data Breach Exposes Customer Info",
+            "title": "Trump Mobile Data Breach, FIFA Phishing, CISA Supply Chain Response",
+            "content": "Trump Mobile has suffered a data breach, exposing sensitive customer information. Meanwhile, cybercriminals are targeting the 2026 FIFA World Cup with phishing attacks, aiming to exploit the event's global audience. The Cybersecurity and Infrastructure Security Agency (CISA) has issued guidance in response to recent supply chain attacks, emphasizing the need for robust security measures. These incidents highlight the ongoing threats to both consumer data and major international events. Organizations are urged to enhance their security protocols and remain vigilant against phishing attempts. This underscores the critical importance of proactive cybersecurity strategies in today's digital landscape.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-trump-mobile-data-breach-fifa-world-cup-phishing-cisa-responds-to-supply-chain-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "ShinyHunters Leak 42M Charter Records",
+            "title": "Charter Communications Data Breach Could Impact Nearly 5 Million",
+            "content": "The ShinyHunters extortion group has leaked over 42 million records allegedly stolen from Charter Communications, potentially affecting nearly 5 million customers. The breach, which occurred in April, includes sensitive personal information, raising significant privacy concerns. Charter Communications is currently assessing the full impact and working to mitigate the damage. This incident is part of a broader trend of data breaches targeting large corporations, emphasizing the need for enhanced security measures. Affected customers are advised to monitor their accounts for suspicious activity and consider identity theft protection services.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/charter-communications-data-breach-could-impact-nearly-5-million/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "LLM Agent Used in Marimo Exploit",
+            "title": "Attackers Use LLM Agent for Post-Exploitation After Marimo CVE-2026-39987 Exploit",
+            "content": "An unknown threat actor has leveraged a large language model (LLM) agent for post-compromise actions following the exploitation of Marimo network's CVE-2026-39987 vulnerability. This attack involved an internet-reachable Marimo system, highlighting the evolving tactics of cybercriminals using AI tools. The exploitation allows attackers to execute arbitrary commands, posing significant risks to affected systems. Organizations using Marimo are urged to apply available patches and strengthen their network defenses. This incident underscores the increasing intersection of AI and cybersecurity threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Gogs Zero-Day Enables Remote Code Execution",
+            "title": "Gogs Zero-Day Exposes Servers to Remote Code Execution",
+            "content": "A critical zero-day vulnerability in Gogs, identified as an argument injection flaw, exposes servers to remote code execution. Assigned a CVSS score of 9.4, this flaw can be exploited by authenticated attackers through malicious branch names in pull requests. The vulnerability poses a severe risk to organizations using Gogs for version control, potentially allowing attackers to gain full control over affected servers. Users are strongly advised to apply security patches immediately and review their access controls. This incident highlights the critical need for regular security assessments and updates in software development environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/gogs-zero-day-exposes-servers-to-remote-code-execution/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Chrome 148 Fixes 151 Security Flaws",
+            "title": "Chrome 148 Update Patches 151 Vulnerabilities",
+            "content": "Google has released Chrome version 148, addressing 151 security vulnerabilities, including several critical-severity issues that could lead to remote code execution. This comprehensive update aims to enhance browser security and protect users from potential exploits. The vulnerabilities affected various components of the browser, underscoring the importance of regular updates. Chrome users are urged to update to the latest version to safeguard their systems against potential threats. This update reflects Google's ongoing commitment to maintaining a secure browsing experience for its users.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-148-update-patches-151-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "4.9M Charter Accounts Breached by ShinyHunters",
+            "title": "Charter Communications Data Breach Affects 4.9 Million Accounts",
+            "content": "The ShinyHunters extortion gang has compromised 4.9 million accounts from Charter Communications, stealing personal information in a breach that occurred in early April. This incident has been confirmed by the data breach notification service Have I Been Pwned, highlighting the ongoing threat posed by cyber extortion groups. The breach exposes sensitive customer data, raising concerns about privacy and security. Charter Communications is advising affected customers to monitor their accounts for unusual activity. This breach underscores the critical need for robust cybersecurity measures to protect consumer data.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/charter-communications-data-breach-affects-49-million-accounts/",
+            "relatedResources": []
+        },
+        {
             "date": "May 28 2026",
             "headline": "FortiClient EMS Flaw Exploited—EKZ Infostealer Deployed",
             "title": "Hackers Exploit FortiClient EMS Vulnerability to Deploy EKZ Infostealer",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-gogs-zero-day-flaw-lets-hackers-get-remote-code-execution/",
             "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Microsoft Criticizes Public Zero-Day Disclosures—Researcher Account Removed",
-            "title": "Microsoft Advocates for Coordinated Vulnerability Disclosure Practices",
-            "content": "Microsoft has reiterated its support for Coordinated Vulnerability Disclosure (CVD) following the removal of a GitHub researcher's account. The tech giant emphasizes the importance of sharing security findings with vendors before public disclosure to allow for adequate response time. This stance comes amid growing tensions between researchers and vendors over the handling of zero-day vulnerabilities. Microsoft urges the research community to collaborate more closely with affected parties to enhance security measures and reduce the risk of exploitation. This development highlights the ongoing debate over responsible disclosure practices in the cybersecurity industry.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-slams-public-zero-day.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "FortiClient EMS Vulnerability Exploited—Patch Immediately",
-            "title": "Critical FortiClient EMS Vulnerability Exploited in New Attacks",
-            "content": "A critical vulnerability in FortiClient Endpoint Management Server (EMS) has been exploited in recent attacks, prompting urgent patching recommendations. Fortinet released hotfixes in April after the flaw was used as a zero-day, affecting systems prior to the update. This vulnerability allows attackers to deploy malware across managed endpoints, posing a significant threat to enterprise security. Organizations using FortiClient EMS should apply the latest patches without delay to prevent potential breaches. This incident underscores the persistent threat of zero-day vulnerabilities in widely-used security products.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-forticlient-ems-vulnerability-exploited-in-fresh-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "IBM, Red Hat Invest $5B in Open Source Security",
-            "title": "IBM and Red Hat Launch $5B Project Lightwell for Open Source Security",
-            "content": "IBM and Red Hat have announced a $5 billion investment in Project Lightwell, aimed at securing open source supply chains. The initiative focuses on fixing vulnerabilities without disrupting existing production environments, addressing a critical need in the software development community. This substantial investment reflects the growing importance of open source security as software supply chains become increasingly complex and interconnected. Developers and organizations are encouraged to participate in Project Lightwell to enhance the resilience of open source ecosystems. This move signifies a major commitment to improving the security posture of open source software globally.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ibm-and-red-hat-commit-5-billion-to-secure-open-source-supply-chains-under-project-lightwell/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "UK Cyberspying Chief Warns of AI and Russian Threats",
-            "title": "AI Deemed 'Unstoppable Force' Amid Rising Russian Cyber Activities",
-            "content": "The UK's cyberspying chief has labeled artificial intelligence (AI) as an \"unstoppable force\" while cautioning against Russia's increasing cyber activities in the \"gray zone\" of conflict. This warning comes as intelligence experts observe a rise in hostile cyber operations by Russia that stop short of war but pose significant threats to national security. The use of AI in these operations could enhance the sophistication and impact of cyberattacks, making them harder to detect and mitigate. Organizations are urged to bolster their defenses by integrating AI-driven security solutions to anticipate and counteract these evolving threats. The call to action emphasizes the need for international cooperation and proactive measures to safeguard critical infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/uk-cyberspying-chief-calls-ai-an-unstoppable-force-and-warns-about-russia/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "CISA Contractor Leaks Credentials on GitHub",
-            "title": "CISA Contractor's GitHub Mishap Exposes Critical Infrastructure Risks",
-            "content": "In a significant security lapse, a contractor for the Cybersecurity and Infrastructure Security Agency (CISA) inadvertently published plain-text credentials on a public GitHub repository. This incident highlights the persistent risks associated with human error in cybersecurity, especially within organizations tasked with protecting critical infrastructure. The breach underscores the importance of stringent access controls and regular audits of code repositories to prevent unauthorized data exposure. Security professionals must prioritize securing development environments and educating personnel on best practices for handling sensitive information. This event serves as a stark reminder of the vulnerabilities inherent in digital supply chains.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-469/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Akira Ransomware Kill Chain Unveiled Through Logs",
-            "title": "Analyzing Akira Ransomware: Insights from Perimeter and Endpoint Logs",
-            "content": "A detailed analysis of the Akira ransomware's kill chain has been reconstructed using perimeter and endpoint logs, offering valuable insights into its operational tactics. Unlike previous reports focusing on ransom notes, this study delves into the initial access vectors, lateral movement, and privilege escalation techniques employed by the attackers. Understanding these stages is crucial for defenders aiming to detect and disrupt ransomware activities before encryption occurs. Security teams are encouraged to enhance their log analysis capabilities and implement robust monitoring systems to identify suspicious activities early. This proactive approach is essential in mitigating the impact of ransomware attacks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/33024",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 29 2026",
+            "headline": "Pinterest Slashes AI Costs 90%—Boosts Accuracy 30%",
+            "title": "Pinterest Overhauls Qwen3-VL Model to Cut AI Costs and Improve Accuracy",
+            "content": "Pinterest has dramatically reduced its AI operational costs by 90% while enhancing recommendation accuracy by 30%, thanks to a strategic overhaul of the Qwen3-VL model's vision layer. With 620 million monthly users, the platform faced unsustainable expenses by calling the frontier model for every image recommendation. CTO Matt Madrigal led the initiative to replace Qwen3-VL's vision layer with proprietary embeddings, achieving significant cost savings and performance improvements. This move underscores the growing trend among tech giants to optimize AI models for scalability and efficiency. Pinterest's approach could serve as a blueprint for other companies grappling with similar challenges.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/pinterest-cut-ai-costs-90-by-gutting-a-frontier-models-vision-layer",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Robot-Training Startup Uses Humans with Cameras for Data",
+            "title": "Innovative Robot-Training Startup Employs Humans to Gather Training Data",
+            "content": "A novel approach to robot training is emerging as a startup deploys humans equipped with head-mounted cameras to collect data for AI models. This method aims to enhance the training of robots by providing them with real-world visual data captured from human perspectives. The initiative reflects a growing trend in AI development where human-assisted data collection is leveraged to improve machine learning models. While the concept raises questions about privacy and data security, it also highlights the innovative strategies companies are adopting to advance robotic capabilities. Professionals in AI and robotics should monitor this development for its potential impact on training methodologies.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/05/robot-training-startup-will-send-humans-wearing-cameras-to-clean-your-home/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "AI Coding Agents Won't Replace Humans—Says Cognition's Scott Wu",
+            "title": "Cognition's Scott Wu Advocates for Human Programmers Amid AI Advancements",
+            "content": "Scott Wu, a prominent figure at Cognition, asserts that AI coding agents like Devin are not intended to replace human programmers. Despite Devin's success as a coding agent, Wu emphasizes the irreplaceable value of human creativity and problem-solving in software development. This perspective aligns with a broader industry sentiment that AI should augment rather than supplant human capabilities. As AI continues to evolve, the role of human oversight and innovation remains crucial in ensuring ethical and effective deployment. Developers and tech leaders should consider this balance when integrating AI solutions into their workflows.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Last Chance to Speak at TechCrunch Disrupt 2026—Apply Today",
+            "title": "Final Day to Submit Applications for TechCrunch Disrupt 2026 Speakers",
+            "content": "Today marks the final opportunity for industry experts to apply to speak at TechCrunch Disrupt 2026. Prospective speakers are encouraged to submit their session topics by the end of the day to participate in shaping the conversations that will define the future of technology. TechCrunch Disrupt is a premier event that gathers innovators, entrepreneurs, and thought leaders from across the globe. This year's event promises to explore cutting-edge trends and breakthroughs in the tech industry. Interested professionals should act swiftly to secure their chance to contribute to this influential platform.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/29/today-is-the-last-day-to-apply-to-speak-at-techcrunch-disrupt-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Kiwibit's AI Bird Feeder—A Backyard Tech Marvel",
+            "title": "Kiwibit's AI-Powered Bird Feeder Enhances Backyard Birdwatching Experience",
+            "content": "Kiwibit has introduced an AI-powered bird feeder that transforms backyard birdwatching into an interactive experience. This innovative feeder uses artificial intelligence to identify bird species and logs them into an app, similar to collecting Pokémon. The device offers nature enthusiasts a unique way to engage with wildlife while contributing to citizen science efforts. As smart home technology continues to evolve, products like Kiwibit's feeder demonstrate the potential for AI to enhance everyday activities. Users interested in technology and nature can find this product a delightful addition to their outdoor spaces.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/29/kiwibits-ai-powered-bird-feeder-is-my-new-backyard-buddy/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Jony Ive's Unconventional Ferrari—A Tech Marvel on Wheels",
+            "title": "Jony Ive's Design Transforms Ferrari Luce into a Technological Masterpiece",
+            "content": "Jony Ive has reimagined the Ferrari Luce, the automaker's first electric vehicle, with a bold and unconventional design. This electric car departs from traditional Ferrari aesthetics, incorporating advanced technology and innovative design elements that reflect Ive's unique vision. The Ferrari Luce stands out as one of the year's most intriguing automotive releases, capturing the attention of car enthusiasts and tech aficionados alike. While most may never experience this luxury vehicle firsthand, its introduction marks a significant milestone in the evolution of electric vehicles. Industry professionals should note the increasing intersection of design and technology in automotive innovation.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/939589/ferrari-luce-jony-ive-vergecast",
+            "relatedResources": []
+        },
         {
             "date": "May 29 2026",
             "headline": "Glean Surpasses $300M as AI Budget-Cutting Drives Growth",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "\"Dreams of Violets,\" an AI-generated film, will premiere at the Tribeca Festival, marking a significant milestone in AI-driven content creation. The 75-minute film, produced for just $2,000, dramatizes the Iranian government's January crackdown on protestors, with all characters and visuals created by AI. This development underscores the potential of AI in transforming film production, offering cost-effective alternatives to traditional filmmaking. Filmmakers and content creators should explore AI's capabilities to innovate storytelling and production processes.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "YouTube Enhances Podcast Experience for Premium Users",
-            "title": "YouTube Introduces Audio-First Features for Podcast Listening",
-            "content": "YouTube is rolling out new features to enhance podcast listening for Premium subscribers on Android, with iOS support coming soon. The \"on-the-go mode\" offers an audio-first layout, featuring larger playback buttons and a static image, optimizing the platform for podcast consumption. This update positions YouTube as a more competitive player in the podcast app market, responding to user demand for improved audio experiences. Podcast creators and listeners should leverage these features to enhance content accessibility and engagement.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/streaming/939051/youtube-premium-podcast-features",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Musk Reframes xAI's Anthropic Deal as Short-Term",
-            "title": "Elon Musk Recasts xAI's Anthropic Compute Deal Duration",
-            "content": "Elon Musk has publicly described xAI's compute agreement with Anthropic as short-term and cancellable, despite SpaceX's S-1 filing indicating payments through May 2029. This discrepancy raises questions about the long-term strategic plans of xAI and its reliance on Anthropic's computing resources. Stakeholders should monitor developments closely, as changes in this partnership could impact xAI's operational capabilities and strategic direction. Understanding the nuances of such agreements is vital for assessing the stability and future of AI ventures.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Sesame Launches Conversational AI App on iOS",
-            "title": "Sesame's iOS App Brings Advanced Conversational AI to Users",
-            "content": "Sesame, founded by Oculus creators, has launched its iOS app featuring advanced conversational AI agents. The app aims to provide more natural and human-like interactions, moving beyond traditional chatbot limitations. This release reflects a growing trend towards enhancing AI communication capabilities, making interactions more intuitive and engaging for users. Developers and businesses should consider integrating such AI solutions to improve customer service and user experience. Evaluating the app's performance and user feedback will be crucial for further development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/28/sesame-the-conversational-ai-startup-from-oculus-founders-launches-its-ios-app/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Warp Leverages GPT-5.5 for Open-Source Coding Revolution",
-            "title": "Warp Utilizes GPT-5.5 to Enhance Open-Source Development Workflows",
-            "content": "Warp has integrated GPT-5.5 and OpenAI models to streamline coordination among coding agents across local, cloud, and open-source development environments. This strategic move aims to enhance productivity and collaboration by leveraging advanced AI capabilities to manage complex workflows. The adoption of GPT-5.5 allows Warp to offer more efficient code generation and error detection, significantly benefiting developers working in distributed teams. As open-source projects continue to grow in complexity, Warp’s approach could set a new standard for AI-assisted coding. Developers should consider integrating similar AI models to optimize their development processes and stay competitive in the evolving tech landscape.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/warp",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "MiniMax's M3 Model—15.6X Faster with Sparse Attention",
-            "title": "MiniMax Unveils M3 Model Featuring Sparse Attention and Speed Boost",
-            "content": "MiniMax has announced its upcoming M3 model, which incorporates a new sparse attention mechanism to deliver a 15.6X increase in long-context response speed. This advancement positions MiniMax as a leader among Chinese AI firms competing on the global stage, offering cutting-edge intelligence across text, coding, and video modalities. The M3 model's enhanced capabilities are expected to improve performance in complex AI tasks, providing significant advantages in processing efficiency and accuracy. Organizations utilizing AI for large-scale data analysis and content generation should evaluate the potential benefits of integrating MiniMax's M3 model into their operations.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/minimax-teases-upcoming-m3-model-with-new-sparse-attention-mechanism-and-15-6x-response-speed-boost",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Google AI's Spelling Woes—A Recurring Embarrassment",
-            "title": "Google's AI Struggles with Spelling Errors Highlight System Limitations",
-            "content": "Google's AI systems have once again come under scrutiny for their inability to accurately spell even the company's own name. This recurring issue underscores the limitations of current AI models in handling basic language tasks, raising concerns about their reliability in more complex applications. The persistent spelling errors suggest that Google's AI may require further refinement to meet user expectations and maintain credibility. As AI continues to play a larger role in everyday applications, developers and users alike should remain vigilant about the potential for such errors and advocate for improvements in AI language processing capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/27/why-googles-ai-cant-spell-google-or-anything-else/",
             "relatedResources": []
         }
     ],
