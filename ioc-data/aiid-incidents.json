@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1504",
+      "incident_id": 1504,
+      "title": "Nonfiction Book 'The Future of Truth' Reportedly Included AI-Generated and Misattributed Quotations",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-186",
       "incident_id": 186,
       "title": "Algorithm Assessing Risk Faced by Victims of Gender Violence Misclassified Low-Risk Cases, Allegedly",
@@ -63,6 +71,22 @@
       "date": "2026-05-28",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-1503",
+      "incident_id": 1503,
+      "title": "Purported AI Name-Reading System Reportedly Skipped and Misannounced Graduates at Arizona's Glendale",
+      "date": "2026-05-28",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1505",
+      "incident_id": 1505,
+      "title": "Scammers Reportedly Used AI-Cloned Daughter's Voice to Defraud Bay Area Mother in Fake Kidnapping Ca",
+      "date": "2026-05-28",
+      "category": "fraud",
+      "severity": "high"
     },
     {
       "id": "AIID-1406",
@@ -1689,14 +1713,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1387",
-      "incident_id": 1387,
-      "title": "Lawsuit Alleged ChatGPT (GPT-4o) Encouraged Colorado Man's Suicide After Prolonged 'AI Companion' Ch",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1388",
       "incident_id": 1388,
       "title": "Purported Deepfake Impersonating Sudha Murty Reportedly Promoted Quantum AI India Investment Scam vi",
@@ -1713,14 +1729,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1390",
-      "incident_id": 1390,
-      "title": "DHS Agents Reportedly Threatened Legal Observers With 'Domestic Terrorist' Database While Using Purp",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1393",
       "incident_id": 1393,
       "title": "Woolworths' Olive Chatbot Reportedly Generated 'Angry Mother' Anecdotes During Support Calls After G",
@@ -1730,9 +1738,9 @@
     }
   ],
   "stats": {
-    "total": 216,
-    "last7Days": 17,
-    "last30Days": 120
+    "total": 217,
+    "last7Days": 20,
+    "last30Days": 123
   },
-  "lastUpdated": "2026-05-29T03:33:44.916690+05:30"
+  "lastUpdated": "2026-05-29T10:07:35.421319+05:30"
 }
