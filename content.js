@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 29 2026",
+            "headline": "ChatGPhish Exploits ChatGPT—Phishing via Markdown Links",
+            "title": "ChatGPhish Vulnerability in ChatGPT Enables Phishing Attacks via Prompt Injections",
+            "content": "Cybersecurity researchers have identified a vulnerability in OpenAI's ChatGPT, dubbed ChatGPhish, which exploits the AI's trust in Markdown links and images to facilitate phishing attacks. This vulnerability allows attackers to inject malicious prompts, potentially leading users to phishing sites. The flaw impacts users interacting with ChatGPT web summaries, posing a significant risk to those relying on AI-generated content for information. As AI tools become increasingly integrated into daily operations, this discovery underscores the importance of scrutinizing AI outputs for security vulnerabilities. Users are advised to remain vigilant and verify the authenticity of links and images in AI-generated content.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Microsoft Criticizes Zero-Day Disclosures—Urges Coordinated Reporting",
+            "title": "Microsoft Advocates for Coordinated Vulnerability Disclosure Amid GitHub Account Removal",
+            "content": "Microsoft has voiced strong support for Coordinated Vulnerability Disclosure (CVD), urging researchers to collaborate with vendors before publicly disclosing vulnerabilities. This stance follows the removal of a GitHub researcher's account, highlighting tensions in the cybersecurity community over zero-day disclosures. Microsoft emphasizes that premature disclosure can hinder vendors' ability to address vulnerabilities effectively, potentially leaving systems exposed. The tech giant's call for CVD aims to foster a more secure ecosystem by allowing vendors time to understand and mitigate risks. Security professionals are encouraged to engage in responsible disclosure practices to enhance overall cybersecurity resilience.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-slams-public-zero-day.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "ChatGPT Links Exploited—Fake Outage Pages Spread Malware",
+            "title": "ChatGPT Share Links Abused to Host Malware-Delivering Fake Outage Pages",
+            "content": "Threat actors are exploiting ChatGPT's content-sharing feature to create fake OpenAI outage pages, tricking users into downloading malware disguised as a ChatGPT desktop application. This tactic leverages the trust users place in official-looking outage notifications, potentially compromising systems with malicious software. The abuse of AI-generated content for malware distribution highlights the evolving tactics of cybercriminals targeting AI platforms. Users should exercise caution when encountering unexpected outage messages and verify the legitimacy of software downloads. Security teams are advised to monitor for suspicious activity related to AI service disruptions.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/chatgpt-share-links-abused-to-host-fake-outage-pages-to-deliver-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "California Sues 23andMe—Data Breach Exposed Health Information",
+            "title": "California Attorney General Sues 23andMe Over 2023 Data Breach",
+            "content": "The California Attorney General has filed a lawsuit against 23andMe, now known as Chrome Holding Co., for failing to protect sensitive customer genetic and personal data during a 2023 breach. The lawsuit alleges that the company did not implement adequate security measures, leading to the exposure of health information. This legal action underscores the growing regulatory scrutiny on companies handling sensitive data, especially in the health sector. Organizations are reminded of the critical importance of robust data protection practices to avoid legal repercussions and maintain consumer trust.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/california-ag-sues-23andme-over-2023-breach-exposing-health-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "NIST's NVD Audit—27K Security Flaws Unprocessed",
+            "title": "Federal Audit Reveals NIST's NVD Mismanagement and Duplication Issues",
+            "content": "A federal audit has uncovered significant mismanagement within the National Institute of Standards and Technology's (NIST) National Vulnerability Database (NVD), revealing a backlog of 27,000 unprocessed security flaws. The report highlights duplication of efforts with a similar program by the Cybersecurity and Infrastructure Security Agency (CISA), leading to inefficiencies. This backlog poses a risk to timely vulnerability disclosure and mitigation efforts. The findings call for improved planning and coordination between agencies to enhance the effectiveness of national cybersecurity initiatives. Stakeholders are urged to advocate for streamlined processes to address these systemic issues.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/nist-nvd-audit-mismanagement-duplication/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Swiss Researchers Claim Perfect Random Number Generator",
+            "title": "Swiss Researchers Develop Quantum-Based Perfect Random Number Generator",
+            "content": "Swiss researchers have announced the creation of a perfect random number generator using two quantum superconducting chips, a 30-meter-long pipe, and specialized software. This breakthrough device promises to enhance cryptographic security by providing truly random numbers, crucial for generating secure cryptographic keys. The technology could also support public randomness services for applications like lotteries and blockchain systems. This development represents a significant advancement in quantum computing and its potential applications in cybersecurity. Organizations involved in cryptography and blockchain are encouraged to explore the implications of this innovation for enhancing security protocols.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4178750/certifiably-random-swiss-researchers-claim-perfect-random-number-source.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
             "headline": "Trump Mobile Data Breach Exposes Customer Info",
             "title": "Trump Mobile Data Breach, FIFA Phishing, CISA Supply Chain Response",
             "content": "Trump Mobile has suffered a data breach, exposing sensitive customer information. Meanwhile, cybercriminals are targeting the 2026 FIFA World Cup with phishing attacks, aiming to exploit the event's global audience. The Cybersecurity and Infrastructure Security Agency (CISA) has issued guidance in response to recent supply chain attacks, emphasizing the need for robust security measures. These incidents highlight the ongoing threats to both consumer data and major international events. Organizations are urged to enhance their security protocols and remain vigilant against phishing attempts. This underscores the critical importance of proactive cybersecurity strategies in today's digital landscape.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/gitea-vulnerability-exposed-30000-deployments-to-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Carnival Cruise Data Breach—6 Million Affected",
-            "title": "Carnival Cruise Confirms Data Breach Impacting Nearly 6 Million Individuals",
-            "content": "Carnival Corporation has confirmed a data breach affecting nearly 6 million individuals, attributed to the ShinyHunters extortion group. The breach, claimed in April 2026, involved unauthorized access to sensitive personal data, raising concerns over identity theft and privacy violations. As the world's largest cruise line operator, Carnival's breach highlights the ongoing threat of cyber extortion and the need for robust data protection measures. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity protection services.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/carnival-cruise-confirms-data-breach-affecting-nearly-6-million-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "IBM, Red Hat Aim to Secure Open Source in Enterprises",
-            "title": "IBM and Red Hat Target Open Source Security in Enterprise Applications",
-            "content": "IBM and Red Hat are positioning themselves as the 'security clearinghouse' for open source applications within enterprises. With open source code prevalent in over 90% of Fortune 500 companies, the initiative aims to address the vulnerabilities commonly found in these software supply chains. By providing comprehensive security assessments and patch management, IBM and Red Hat seek to enhance the resilience of open source applications against cyber threats. Organizations are encouraged to leverage these resources to strengthen their security posture and mitigate risks associated with open source software.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4178454/ibm-and-red-hat-want-to-become-the-security-clearinghouse-for-open-source-applications-in-the-enterprise-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Gogs Vulnerability Highlights Open Source Project Challenges",
-            "title": "Unpatched Gogs Vulnerability Underscores Open Source Project Limitations",
-            "content": "A critical vulnerability in the Gogs Git service remains unpatched, highlighting the challenges faced by small open source projects in maintaining security. The flaw, which allows arbitrary code execution by authenticated users, underscores the risks associated with relying on self-hosted platforms from smaller maintainers. This incident serves as a reminder of the importance of proactive security measures and the need for robust community support in open source development. Developers using Gogs should consider alternative solutions or contribute to patch efforts to protect their codebases.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4178446/lack-of-response-to-critical-vulnerability-in-gogs-is-a-reminder-of-the-limits-of-open-source-projects-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "FortiClient EMS Flaw Exploited—Credential Stealer Deployed",
-            "title": "Threat Actors Exploit FortiClient EMS Flaw to Deploy Credential Stealer",
-            "content": "Threat actors are actively exploiting a critical vulnerability in FortiClient Endpoint Management Server (EMS) to deploy credential-stealing malware. The flaw, which has been patched, was used to compromise trusted endpoint management infrastructure, enabling malware distribution across managed endpoints. This vulnerability affects FortiClient EMS versions prior to the latest patch and poses significant risks to organizations relying on Fortinet's endpoint management solutions. Security professionals are advised to apply the latest patches immediately to mitigate potential breaches. This incident underscores the importance of timely patch management in safeguarding enterprise networks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Carnival Breach Exposes 6M Customers to Identity Theft",
-            "title": "Carnival Data Breach Exposes 6 Million Customers' Personal Information",
-            "content": "A data breach at Carnival Corporation has exposed the personal information of nearly 6 million customers, heightening the risk of identity theft. The breach compromised sensitive data, including names, addresses, and possibly financial details, affecting a significant portion of Carnival's customer base. This incident highlights the ongoing vulnerabilities in data protection within the travel and leisure industry. Affected individuals are urged to monitor their financial accounts and credit reports for suspicious activity. Carnival is currently investigating the breach and working to enhance its cybersecurity measures to prevent future incidents.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/carnival-data-breach-exposed-6-million-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Gogs Zero-Day Allows Remote Code Execution—Patch Pending",
-            "title": "Unpatched Gogs Zero-Day Flaw Enables Remote Code Execution",
-            "content": "A zero-day vulnerability in the Gogs self-hosted Git service is being exploited to achieve remote code execution (RCE) on Internet-facing instances. This unpatched flaw affects all versions of Gogs currently in use, posing a severe threat to organizations utilizing this service for version control. Attackers can leverage this vulnerability to execute arbitrary code, potentially leading to data breaches or system compromises. Administrators are advised to implement network-level protections and monitor for unusual activity until a patch is released. This incident highlights the critical need for robust security practices in open-source software management.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-gogs-zero-day-flaw-lets-hackers-get-remote-code-execution/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 29 2026",
+            "headline": "ClickUp Cuts 22% Workforce—AI Replaces Jobs",
+            "title": "AI Layoffs Surge as ClickUp Replaces 22% of Workforce with AI",
+            "content": "In a striking move, ClickUp has laid off 22% of its workforce, opting to replace these roles with AI agents. This decision is part of a broader trend in 2026 where companies are increasingly relying on AI, often without fully understanding the complexities of human roles. Aaron Levie, founder of Box, describes this phenomenon as \"AI psychosis,\" where decision-makers overestimate AI's capabilities. The impact is significant, affecting not only the laid-off employees but also raising concerns about the future of work and job security across the tech industry. Companies must balance AI integration with human expertise to avoid potential pitfalls.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "CEOs Suffer from \"AI Psychosis\"—Levie's Stark Warning",
+            "title": "Box Founder Aaron Levie Warns of CEO \"AI Psychosis\" in Workforce Decisions",
+            "content": "Aaron Levie, founder of Box, has coined the term \"AI psychosis\" to describe a growing trend among CEOs who are replacing human jobs with AI without fully understanding the roles involved. This trend is exemplified by ClickUp's recent decision to cut 22% of its workforce in favor of AI agents. Levie warns that such decisions could lead to significant disruptions in the workforce, as AI is not yet capable of fully replicating human expertise and judgment. The tech industry must tread carefully, ensuring that AI complements rather than replaces human roles.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "Warp Leverages GPT-5.5 for Open Source Development",
+            "title": "Warp Utilizes GPT-5.5 to Enhance Open Source and Cloud Workflows",
+            "content": "Warp is making a significant bet on open-source development by integrating GPT-5.5 and OpenAI models into its coding workflows. This integration aims to streamline coordination across local, cloud, and open-source environments, enhancing productivity and collaboration. By leveraging the advanced capabilities of GPT-5.5, Warp seeks to optimize coding processes, potentially setting a new standard for how AI can be used in software development. This move highlights the growing trend of using AI to bridge gaps in development workflows, offering a glimpse into the future of coding.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/warp",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "MeMo Boosts LLMs by 26% Without Retraining",
+            "title": "MeMo Framework Enhances LLM Performance by 26% Without Retraining",
+            "content": "The MeMo framework, developed by researchers from multiple universities, offers a breakthrough in enhancing large language models (LLMs) by encoding new knowledge without the need for retraining. This approach results in a 26% performance improvement, addressing a major challenge in enterprise AI where current solutions are often costly and slow. MeMo's innovative method allows LLMs to acquire new information efficiently, making it a valuable tool for enterprises looking to optimize their AI capabilities without incurring significant retraining costs.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/memo-memory-model-teams-upgrade-llm-without-retraining",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Coders' AI Dependence—A Double-Edged Sword",
+            "title": "Coders' Reliance on AI Tools May Compromise Code Quality",
+            "content": "As AI tools become integral to coding, researchers warn that while these tools accelerate code production, they may not necessarily improve code quality. This reliance could lead to long-term issues, as developers might overlook fundamental coding principles in favor of speed. The tech industry must address this growing dependency by ensuring that AI tools are used to complement, not replace, developers' skills. Coders should focus on maintaining high standards of code quality, even as they leverage AI for efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "AI Glossary—Decode the Jargon",
+            "title": "Understanding AI: A Glossary of Essential Terms and Slang",
+            "content": "The rapid advancement of AI technology has introduced a plethora of new terms and slang, often leaving professionals nodding along without full comprehension. To bridge this knowledge gap, a comprehensive glossary has been compiled, defining key AI terms and phrases. This resource aims to empower professionals by providing clear explanations, ensuring they are well-equipped to engage in informed discussions about AI developments. Staying updated with this evolving vocabulary is crucial for anyone involved in the tech industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+            "relatedResources": []
+        },
         {
             "date": "May 29 2026",
             "headline": "Pinterest Slashes AI Costs 90%—Boosts Accuracy 30%",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Microsoft has unveiled a revamped version of its Microsoft 365 Copilot, featuring a cleaner design and a performance boost that doubles its loading speed. This update aims to enhance user experience by providing more reliable and structured responses, making information easier to scan and utilize. The redesign is part of Microsoft's ongoing efforts to improve productivity tools through AI integration. Users can expect a more efficient workflow as the updated Copilot facilitates quicker access to insights and recommendations. This enhancement reflects Microsoft's commitment to refining its AI offerings to better meet the needs of its enterprise users.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Asana Acquires StackAI to Enhance AI Workflow Tools",
-            "title": "Asana Expands AI Capabilities with StackAI Acquisition",
-            "content": "Asana has announced the acquisition of StackAI, a no-code agent-builder platform, as part of its strategy to bolster its suite of AI workflow tools. This acquisition allows Asana to integrate StackAI's capabilities, enabling users to create AI-driven workflows without extensive coding knowledge. The move aligns with Asana's goal to simplify AI adoption for businesses, enhancing productivity and operational efficiency. By incorporating StackAI, Asana aims to offer more versatile and accessible AI solutions to its user base. This acquisition highlights the growing trend of integrating no-code platforms to democratize AI technology across industries.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Anthropic Nears $1T Valuation with $65B Series H Raise",
-            "title": "Anthropic Secures $65B, Approaches Trillion-Dollar Valuation Pre-IPO",
-            "content": "AI startup Anthropic has successfully closed a $65 billion Series H funding round, bringing its post-money valuation to $965 billion. This substantial raise positions Anthropic on the brink of a trillion-dollar valuation as it prepares for an anticipated initial public offering (IPO). The funding underscores investor confidence in Anthropic's AI capabilities and market potential. As the company nears its IPO, it continues to focus on advancing AI technologies that promise transformative impacts across various sectors. This development highlights the escalating financial stakes and competitive landscape in the AI industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "AI Token Futures—New Trading Frontier on Exchanges",
-            "title": "AI Token Futures to Join Gold and Oil in Trading Markets",
-            "content": "Major exchanges are developing derivative products for AI tokens, marking a shift in how these digital assets are perceived and traded. Previously seen as computational outputs, AI tokens are now being considered akin to raw material inputs like electricity or bandwidth. This change reflects the growing recognition of AI's foundational role in powering digital economies. The introduction of AI token futures will offer new opportunities for investors and businesses to hedge against market volatility. As AI continues to integrate into core business operations, understanding and leveraging these financial instruments will become increasingly important for tech leaders and investors.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Vertu Unveils $6,880 AI Foldable for CEOs",
-            "title": "Vertu's Luxury AI Foldable Aims to Revolutionize Enterprise Management",
-            "content": "Vertu has launched a high-end AI-powered foldable device designed for CEOs, priced at $6,880. Built on the open-source Hermes project, this foldable integrates AI-agent workflows and enterprise solutions, wrapped in luxury finishes. The device targets executives seeking to manage complex business operations on-the-go, offering seamless integration with existing enterprise systems. This move reflects a trend towards combining cutting-edge AI capabilities with premium hardware to cater to high-level business needs. Potential users should evaluate the device's compatibility with their current enterprise infrastructure to maximize its benefits.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/28/vertu-wants-ceos-to-run-companies-from-an-ai-foldable-starting-at-6880/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Data Sovereignty Reshapes Critical Infrastructure Governance",
-            "title": "Data Sovereignty's Impact on Critical Infrastructure Governance Models",
-            "content": "Equinix highlights the growing importance of data sovereignty in reshaping governance models for critical infrastructure. Traditional governance frameworks, designed for centralized systems, are increasingly inadequate as digital systems expand across jurisdictions. This shift necessitates new models that prioritize local control over data to enhance economic resilience. Organizations managing critical infrastructure must adapt to these changes by implementing policies that respect data sovereignty while ensuring robust security measures. Understanding the implications of these evolving governance models is crucial for maintaining operational integrity and compliance.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/control-within-connection-how-data-sovereignty-is-rewriting-the-rules-of-critical-infrastructure",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "AI-Generated Film Premieres at Tribeca for $2,000",
-            "title": "AI-Generated Film \"Dreams of Violets\" Debuts at Tribeca Festival",
-            "content": "\"Dreams of Violets,\" an AI-generated film, will premiere at the Tribeca Festival, marking a significant milestone in AI-driven content creation. The 75-minute film, produced for just $2,000, dramatizes the Iranian government's January crackdown on protestors, with all characters and visuals created by AI. This development underscores the potential of AI in transforming film production, offering cost-effective alternatives to traditional filmmaking. Filmmakers and content creators should explore AI's capabilities to innovate storytelling and production processes.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca",
             "relatedResources": []
         }
     ],
@@ -358,6 +358,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-0257",
+            "dateAdded": "May 29, 2026",
+            "vendor": "Palo Alto Networks PAN-OS",
+            "description": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0257",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-48027",
             "dateAdded": "May 27, 2026",
