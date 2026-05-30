@@ -1983,28 +1983,12 @@
       "date": "2026-03-01",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1395",
-      "incident_id": 1395,
-      "title": "Anthropic Said DeepSeek, Moonshot, and MiniMax Used Fraudulent Accounts and Proxies to Illicitly Dis",
-      "date": "2026-03-01",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1373",
-      "incident_id": 1373,
-      "title": "AI Coding Agent 'MJ Rathbun' Allegedly Published Personalized Accusatory Blog Post Targeting Matplot",
-      "date": "2026-02-28",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 250,
+    "total": 248,
     "last7Days": 65,
     "last30Days": 170
   },
-  "lastUpdated": "2026-05-30T03:31:15.430856+05:30"
+  "lastUpdated": "2026-05-30T09:42:56.858840+05:30"
 }
