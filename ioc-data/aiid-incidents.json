@@ -1975,20 +1975,12 @@
       "date": "2026-03-01",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1394",
-      "incident_id": 1394,
-      "title": "Purported Deepfake TikTok Account Using Grainville School Branding in Jersey Reportedly Targeted Sta",
-      "date": "2026-03-01",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 248,
+    "total": 247,
     "last7Days": 65,
     "last30Days": 170
   },
-  "lastUpdated": "2026-05-30T09:42:56.858840+05:30"
+  "lastUpdated": "2026-05-30T15:39:31.507546+05:30"
 }

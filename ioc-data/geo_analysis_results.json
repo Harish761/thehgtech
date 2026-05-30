@@ -1,0 +1,1736 @@
+{
+  "good": [
+    {
+      "file": "articles/openai-codex-security-11000-bugs-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/harvard-phone-phishing-breach-2025.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/scattered-spider-teen-hacker-115-million.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/claude-opus-4-8-security-implications-2026.html",
+      "score": 5,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/7zip-critical-vulnerability.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/700credit-breach-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/n8n-ni8mare-critical-vulnerability-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/forticlient-ems-zero-day-cve-2026-35616.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/chrome-zero-day-cve-2026-2441.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/shinyhunters-vishing-mfa-bypass-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/redhat-chatterbox-ai-safety-acquisition-2025.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/langflow-ai-rce-cve-2025-3248.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/wheelchair-bluetooth-hack-cve-2025-14346.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/edr-false-positives-soc-panic-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/nike-data-breach-1tb-stolen-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/glassworm-openvsx-supply-chain-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/ivanti-epmm-zeroday-cve-2026-1281.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/axios-supply-chain-attack-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/foxconn-nitrogen-ransomware-supply-chain-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/ibm-api-connect-cve-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/cybersecurity-pros-guilty-alphv-ransomware-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/agentic-ai-insider-threat-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/romania-water-ransomware-bitlocker-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/salesforce-billion-record-extortion-2025.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/taiwan-263-million-daily-chinese-cyberattacks-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/crowdstrike-sgnl-acquisition-identity-security-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/fake-claude-code-installfix-malware-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/beast-ransomware-api-exploits.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/muddywater-iran-us-banks-airports-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/french-ministry-interior-hack-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/dragonforce-ransomware-cartel-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/semiconductor-ransomware-chips-act-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/esa-cyberattack-200gb-data-theft-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/kimwolf-botnet-android-ddos-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/microsoft-365-gov-breach-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/copy-fail-cve-2026-31431.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/notepad-supply-chain-apt31-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/purerat-ai-malware-vietnam-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/sedgwick-tridentlocker-ransomware-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/langchain-cve-2025-68664-ai-vulnerability.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/dirty-frag-page-cache-curse-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/apple-dyld-zero-day-cve-2026-20700.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/ai-hacker-fortigate-600-devices-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/fortinet-auth-bypass-cve-2026-24858.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/nissan-redhat-breach-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/llm-attack-reconnaissance-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/instagram-e2ee-rollback-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/watchguard-firebox-zero-day-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/booking-com-breach-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/anthropic-openai-privacy-ultimatum-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/stryker-wiper-attack-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/crowdstrike-seraphic-browser-security-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/anthropic-project-glasswing-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/react2shell-cve-2025-55182-react-vulnerability.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/openclaw-ai-log-poisoning-cve-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/shinyhunters-711-salesforce-breach-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/microsoft-teams-phishing-guest-exploit-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/oauth-worms-saas-attack-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/deepfake-as-a-service-explosion-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/infostealer-mfa-bypass-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/fortinet-fortigate-critical-exploit-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/covenant-health-qilin-ransomware-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/totalenergies-data-breach-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/operation-pcpcat-nextjs-hack-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/clickfix-social-engineering-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/nefilim-ransomware-operator-guilty-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/n8n-rce-vulnerability-cve-2025-68613.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/dxs-nhs-ransomware-breach-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/99-percent-ai-systems-attacked-2025.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/windows-notepad-rce-cve-2026-20841.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/ai-soc-analyst-future-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/mongodb-mongobleed-cve-2025-14847.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/ai-agents-attack-vectors-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/claude-ai-vulnerability-inverseprompt-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/managemyhealth-nz-breach-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/trustwallet-chrome-extension-hack-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/ms-office-zero-day-cve-2026-21509.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/trellix-source-code-breach-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/india-ai-summit-2026-wrapper-epidemic.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/ledger-global-e-supply-chain-breach-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/cybersecurity-predictions-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/ai-developed-2fa-bypass-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/checkbox-security-illusion.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/claude-mythos-security-analysis-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/harvard-shinyhunters-breach-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/microsoft-patch-tuesday-january-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/doj-atm-jackpotting-ploutus-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/lastpass-vault-cracks-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/delve-ai-compliance-scandal-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/gentlemen-ransomware-threat-2025.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/north-korea-crypto-theft-2025.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/microsoft-patch-tuesday-february-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/odido-data-breach-6m-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/vscode-malicious-extensions-supply-chain-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/prompt-injection-physical-ai-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/anthropic-claude-code-security-launch-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/mj-rathbun-matplotlib-ai-hallucination-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "articles/luxshare-apple-breach-2025.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "articles/entra-id-ghost-takeover-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/phishing-simulation-security-awareness.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/passkeys-fido2-passwordless-authentication.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/siem-log-analysis.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/dark-web-monitoring-security-teams.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/penetration-testing-methodology.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/clawdbot-moltbot-security.html",
+      "score": 5,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/vscode-supply-chain-hardening-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/soc2-compliance-checklist.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/deepfake-defense.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/ransomware-ecosystem-hijack-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/ceh-vs-oscp-certification.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/incident-response-automation.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/unicode-llm-attacks-advanced.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/network-segmentation-zero-trust.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/threat-intelligence-feeds-comparison.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/dora-compliance.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/windows-event-log-analysis.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/medusa-security-scanner.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/ai-governance-framework.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/iso-27001-certification-roadmap.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/llm-security-prompt-injection.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/llm-jailbreaking-defense-advanced.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/unicode-llm-attacks.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/mitre-attack-mapping.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/active-directory-vs-entra-id-security-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/iso-27001-gap-analysis.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/threat-intelligence-feeds-integration.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/container-security.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/kubernetes-ai-security.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/malware-hash-analysis.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/splunk-spl-guide.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/nist-csf-2-implementation.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/cloud-security-hardening.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/devsecops-pipeline-security.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/cve-prioritization-patch-management.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/email-security-spf-dkim-dmarc.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/soc-analyst-fundamentals.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/windows-vs-macos-endpoint-security-2026.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/chatgpt-system-prompt-security.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/digital-forensics-fundamentals.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/aws-security-best-practices.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/ai-red-teaming-playbook.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/sigma-rules-siem-detection.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/oauth-security-attacks-defense-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/securing-ai-ml-pipelines.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/edr-vs-xdr.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/ransomware-response-playbook.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/ai-agent-security.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/ztna-deployment.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/cisa-kev-tracker.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/wireshark-network-analysis.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/threat-hunting-techniques.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/compliance-checklist-2026.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/it-vs-ot-security.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/third-party-risk-management.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/yara-rules-advanced.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/zero-day-detection.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": true,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/api-security-best-practices.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/yara-rules-malware-detection.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "guides/threat-intelligence-soc.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/sbom-software-supply-chain-security.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/ai-crawler-security.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/soc-analyst-career-roadmap.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/active-directory-security-hardening.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "guides/llm-jailbreaking-defense.html",
+      "score": 4,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": true,
+      "status": "good"
+    },
+    {
+      "file": "comparisons/proofpoint-vs-mimecast-vs-microsoft-defender-o365.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "comparisons/proofpoint-vs-mimecast-vs-microsoft-defender-o365.backup.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    },
+    {
+      "file": "comparisons/splunk-vs-elastic-security-vs-logrhythm.html",
+      "score": 3,
+      "has_schema": true,
+      "has_table": true,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "good"
+    }
+  ],
+  "needs_work": [
+    {
+      "file": "guides/security-metrics-kpis-dashboard.html",
+      "score": 2,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "needs_work"
+    },
+    {
+      "file": "guides/openphish-integration.html",
+      "score": 2,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "needs_work"
+    },
+    {
+      "file": "guides/owasp-llm-top-10.html",
+      "score": 2,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "needs_work"
+    },
+    {
+      "file": "guides/insider-threat-detection.html",
+      "score": 2,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": true,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "needs_work"
+    },
+    {
+      "file": "guides/incident-response-plan.html",
+      "score": 1,
+      "has_schema": true,
+      "has_table": false,
+      "has_h2": false,
+      "has_faq": false,
+      "has_takeaways": false,
+      "status": "needs_work"
+    }
+  ]
+}
