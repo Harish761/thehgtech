@@ -2,12 +2,12 @@
   "articles": [
     {
       "id": "claude-opus-4-8-security-implications-2026",
-      "title": "Claude Opus 4.8: Agentic AI Breakthrough and Security Implications (2026)",
+      "title": "The Trajectory of Agentic AI: Security Implications of Next-Generation Models",
       "date": "May 30, 2026",
       "category": "AI Security",
-      "badge": "MODEL RELEASE",
+      "badge": "INDUSTRY ANALYSIS",
       "author": "Harish G",
-      "excerpt": "Technical analysis of Anthropic's Claude Opus 4.8 release, detailing verifiable benchmark gains in agentic coding and critical dual-use implications for cybersecurity teams.",
+      "excerpt": "A forward-looking analysis of agentic AI models, examining anticipated capabilities in automated vulnerability discovery and defensive triage.",
       "image": "/images/articles/claude-opus-4-8-security-implications-2026.png",
       "externalUrl": "articles/claude-opus-4-8-security-implications-2026.html",
       "readTime": "20 min read",
