@@ -108,6 +108,20 @@
     }
     </script>
 
+    
+    <link rel="stylesheet" href="../ui-enhancements.css?v=20260528_coffee_official">
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        // Inline theme set to avoid FOUC
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -121,14 +135,22 @@
     <link rel="stylesheet" href="/m-components.css?v=3.0">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-    <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/m-app.js?v=20260528_coffee" defer></script>
 
     <style>
         :root {
-            --bg-primary: #0a0a0a;
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0f1419;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
             --accent-cyan: #00D9FF;
             --accent-red: #FF3D3D;
-            --code-bg: #111;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --accent-lime: #84cc16;
+            --border: rgba(255, 255, 255, 0.1);
         }
 
         body {
@@ -137,30 +159,167 @@
             color: var(--text-primary);
             line-height: 1.8;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 80px 1.5rem 120px;
         }
 
-        h1 { font-size: 2.2rem; background: linear-gradient(135deg, var(--accent-cyan), #a78bfa); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; line-height: 1.3; }
-        h2 { color: var(--accent-cyan); margin: 2.5rem 0 1rem; font-size: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); }
-        h3 { color: var(--text-primary); margin: 1.5rem 0 1rem; font-size: 1.2rem; }
-        p { margin-bottom: 1rem; color: var(--text-secondary); }
-        ul, ol { margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-secondary); }
-        code { background: rgba(0, 217, 255, 0.1); padding: 0.15rem 0.4rem; border-radius: 4px; font-family: 'JetBrains Mono', monospace; color: var(--accent-cyan); font-size: 0.85rem; }
-        pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; overflow-x: auto; margin: 1.5rem 0; }
-        pre code { background: none; padding: 0; color: #10B981; }
+        .article-header {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
 
-        .info-box, .alert-box {
+        .article-header h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, var(--accent-lime), var(--accent-cyan));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-ai {
+            background: linear-gradient(135deg, #84cc16, #10b981);
+            color: white;
+        }
+
+        .badge-critical {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .badge-injection {
+            background: linear-gradient(135deg, #f59e0b, #ef4444);
+            color: white;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul,
+        ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        code {
+            background: rgba(0, 217, 255, 0.1);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.85rem;
+        }
+
+        pre {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: var(--accent-green);
+            font-size: 0.85rem;
+        }
+
+        .info-box {
             background: rgba(0, 217, 255, 0.06);
             border-left: 4px solid var(--accent-cyan);
             padding: 1.5rem;
             margin: 2rem 0;
             border-radius: 0 8px 8px 0;
         }
-        
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.06);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.06);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
         .technical-box {
             background: rgba(59, 130, 246, 0.06);
             border: 1px solid rgba(59, 130, 246, 0.2);
@@ -168,17 +327,149 @@
             padding: 1.5rem;
             margin: 1.5rem 0;
         }
-        
-        .technical-box h3 { margin-top: 0; color: var(--accent-cyan); }
 
-        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: rgba(255, 255, 255, 0.02); border-radius: 8px; overflow: hidden; }
-        th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); }
-        th { background: rgba(0, 217, 255, 0.08); color: var(--accent-cyan); font-weight: 600; }
-        td { color: var(--text-secondary); }
-        
-        .meta-info { display: flex; flex-wrap: wrap; gap: 1rem; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; }
-        .meta-info span { display: flex; align-items: center; gap: 0.5rem; }
-        .featured-image { width: 100%; border-radius: 12px; margin: 2rem 0; border: 1px solid var(--border); }
+        .technical-box h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+        }
+
+        .exploit-box {
+            background: rgba(255, 61, 61, 0.08);
+            border: 1px solid rgba(255, 61, 61, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 217, 255, 0.08);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .attack-flow {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(132, 204, 22, 0.05));
+            border: 1px solid var(--accent-lime);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+        }
+
+        .severity-critical {
+            color: var(--accent-red);
+            font-weight: 700;
+        }
+
+        .severity-high {
+            color: var(--accent-orange);
+            font-weight: 700;
+        }
+
+        .cve-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            transition: border-color 0.3s;
+        }
+
+        .cve-card:hover {
+            border-color: var(--accent-cyan);
+        }
+
+        .cve-card .cve-id {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            margin-bottom: 0.5rem;
+        }
+
+        .cve-card .cve-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .related-guides {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .guide-link {
+            background: rgba(0, 217, 255, 0.05);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .guide-link:hover {
+            border-color: var(--accent-cyan);
+            background: rgba(0, 217, 255, 0.1);
+            text-decoration: none;
+        }
+
+        .guide-link .guide-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: var(--accent-cyan);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .guide-link .guide-title {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 768px) {
+            .article-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px 1rem 100px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .meta-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
     </style>
     
     <!-- Analytics -->
@@ -240,28 +531,158 @@
 </div>
 
 <header class="header" role="banner">
-    <div class="header-content">
-        <div class="logo">
-            <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                <span class="logo-text">TheHGTech</span>
-            </a>
-        </div>
-        <nav class="nav nav-modern" role="navigation">
-            <a href="/index.html#news">News</a>
-            <!-- Dropdowns omitted for brevity in template, relying on m-app.js behavior -->
-            <a href="/threat-intel.html">Intelligence</a>
-            <a href="/guides/">Resources</a>
-            <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255,255,255,0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
-                <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.3); transition: all 0.3s ease;"></span>
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                        <a href="/hacker-chatter.html" class="dropdown-item">
+                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span>
+                                </div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        
+                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FF6B35;">
+                                    n8n Workflows
+                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Security automation templates</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #10B981;">
+                                    GRC Assessment
+                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tools Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel" style="min-width: 250px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #10B981;">
+                                    ISO 27001 GRC Tool
+                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                                <!-- Search Button -->
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+                </button>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-        </nav>
-        <button class="mobile-menu-btn" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
-</header>
+        </div>
+    </header>
 
 <div class="container">
     <a href="/articles.html" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
