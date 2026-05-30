@@ -476,6 +476,16 @@
         });
     </script>
 
+    <!-- Fullres Analytics -->
+    <script>
+        window.addEventListener('load', function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        });
+    </script>
+
     <!-- Mermaid.js -->
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
