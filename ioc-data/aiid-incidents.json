@@ -1967,20 +1967,12 @@
       "date": "2026-03-07",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1391",
-      "incident_id": 1391,
-      "title": "Azerbaijani Media Agency Reportedly Warned Purported Deepfake Videos Attributed to Defense and Forei",
-      "date": "2026-03-01",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 247,
+    "total": 246,
     "last7Days": 65,
     "last30Days": 170
   },
-  "lastUpdated": "2026-05-30T15:39:31.507546+05:30"
+  "lastUpdated": "2026-05-30T19:30:32.333054+05:30"
 }
