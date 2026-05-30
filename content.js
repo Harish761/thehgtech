@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 30 2026",
+            "headline": "PAN-OS Flaw Exploited—7.8 CVSS Authentication Bypass Alert",
+            "title": "Active Exploitation of PAN-OS GlobalProtect Authentication Bypass CVE-2026-0257",
+            "content": "Palo Alto Networks has issued a warning regarding the active exploitation of a medium-severity vulnerability, CVE-2026-0257, affecting PAN-OS and Prisma Access. This authentication bypass flaw, with a CVSS score of 7.8, allows unauthorized access to affected systems. The vulnerability is being exploited in the wild, posing a significant risk to organizations using these products. Security professionals are urged to apply available patches and review access logs for signs of compromise. This incident underscores the critical need for timely updates and vigilant monitoring of network security systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "FortiClient EMS Flaw—Credential Stealer Campaign Ongoing",
+            "title": "Threat Actors Exploit FortiClient EMS Vulnerability to Deploy Credential Stealer",
+            "content": "A critical vulnerability in FortiClient Endpoint Management Server (EMS) is being actively exploited by threat actors to distribute credential-stealing malware. The flaw, now patched, was leveraged to compromise trusted endpoint management infrastructure, facilitating malware deployment across managed endpoints. Organizations using FortiClient EMS should ensure all systems are updated to prevent exploitation. This campaign highlights the persistent threat posed by unpatched vulnerabilities in critical infrastructure. Security teams must prioritize patch management and monitor for unusual activity on managed devices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Carnival Breach—6 Million Customers' Data Exposed",
+            "title": "Carnival Data Breach Puts 6 Million Customers at Identity Theft Risk",
+            "content": "A data breach at Carnival Corporation has exposed the personal information of nearly 6 million customers, raising significant identity theft concerns. The breach highlights vulnerabilities in data protection practices within the cruise industry. Affected individuals face potential risks of identity theft and fraud, necessitating immediate protective measures such as credit monitoring and account vigilance. This incident serves as a stark reminder of the importance of robust cybersecurity measures in safeguarding sensitive customer data. Organizations must reassess their security protocols to prevent similar breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/carnival-data-breach-exposed-6-million-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Gogs Zero-Day—Remote Code Execution Threat",
+            "title": "Unpatched Gogs Zero-Day Vulnerability Allows Remote Code Execution",
+            "content": "An unpatched zero-day vulnerability in Gogs, a self-hosted Git service, is currently being exploited to achieve remote code execution (RCE) on internet-facing instances. This flaw poses a significant threat to developers and organizations relying on Gogs for version control. Immediate action is required to mitigate potential exploitation, including restricting access to Gogs instances and monitoring for suspicious activity. The vulnerability underscores the ongoing risks associated with unpatched software and the importance of proactive security measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-gogs-zero-day-flaw-lets-hackers-get-remote-code-execution/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "MokN Secures $15M to Expand Phish-Back Platform",
+            "title": "MokN Raises $15 Million for Innovative Phish-Back Security Platform",
+            "content": "MokN has successfully raised $15 million to advance its Phish-Back platform, which uses realistic decoy access points to trap attackers and identify compromised credentials. This funding will enable MokN to enhance its capabilities in detecting and responding to phishing attacks before they result in data breaches. The platform's proactive approach offers organizations a strategic advantage in cybersecurity, emphasizing the growing trend of using deception technologies to combat cyber threats. Security leaders should consider integrating such innovative solutions into their defense strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mokn-raises-15-million-for-phish-back-platform/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "DDoS-as-a-Service—Subscription Models Fuel Attack Surge",
+            "title": "Inside the Evolving DDoS-as-a-Service Market: Subscription-Based Attacks",
+            "content": "The DDoS-as-a-Service market is evolving, with attacks now being offered as subscription services complete with pricing tiers and support. This commoditization of DDoS attacks allows even low-skilled threat actors to launch sophisticated attacks, increasing the frequency and scale of incidents. Organizations must bolster their defenses against this growing threat by investing in robust DDoS protection solutions and monitoring for unusual traffic patterns. The trend towards professionalized cybercrime services highlights the need for continuous adaptation in cybersecurity strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/from-5-attacks-to-botnet-powered-platforms-inside-the-ddos-as-a-service-market/",
+            "relatedResources": []
+        },
+        {
             "date": "May 29 2026",
             "headline": "ChatGPhish Exploits ChatGPT—Phishing via Markdown Links",
             "title": "ChatGPhish Vulnerability in ChatGPT Enables Phishing Attacks via Prompt Injections",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Gogs Zero-Day Enables Remote Code Execution",
-            "title": "Gogs Zero-Day Exposes Servers to Remote Code Execution",
-            "content": "A critical zero-day vulnerability in Gogs, identified as an argument injection flaw, exposes servers to remote code execution. Assigned a CVSS score of 9.4, this flaw can be exploited by authenticated attackers through malicious branch names in pull requests. The vulnerability poses a severe risk to organizations using Gogs for version control, potentially allowing attackers to gain full control over affected servers. Users are strongly advised to apply security patches immediately and review their access controls. This incident highlights the critical need for regular security assessments and updates in software development environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/gogs-zero-day-exposes-servers-to-remote-code-execution/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Chrome 148 Fixes 151 Security Flaws",
-            "title": "Chrome 148 Update Patches 151 Vulnerabilities",
-            "content": "Google has released Chrome version 148, addressing 151 security vulnerabilities, including several critical-severity issues that could lead to remote code execution. This comprehensive update aims to enhance browser security and protect users from potential exploits. The vulnerabilities affected various components of the browser, underscoring the importance of regular updates. Chrome users are urged to update to the latest version to safeguard their systems against potential threats. This update reflects Google's ongoing commitment to maintaining a secure browsing experience for its users.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-148-update-patches-151-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "4.9M Charter Accounts Breached by ShinyHunters",
-            "title": "Charter Communications Data Breach Affects 4.9 Million Accounts",
-            "content": "The ShinyHunters extortion gang has compromised 4.9 million accounts from Charter Communications, stealing personal information in a breach that occurred in early April. This incident has been confirmed by the data breach notification service Have I Been Pwned, highlighting the ongoing threat posed by cyber extortion groups. The breach exposes sensitive customer data, raising concerns about privacy and security. Charter Communications is advising affected customers to monitor their accounts for unusual activity. This breach underscores the critical need for robust cybersecurity measures to protect consumer data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/charter-communications-data-breach-affects-49-million-accounts/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "FortiClient EMS Flaw Exploited—EKZ Infostealer Deployed",
-            "title": "Hackers Exploit FortiClient EMS Vulnerability to Deploy EKZ Infostealer",
-            "content": "Cybercriminals are exploiting a critical authentication bypass vulnerability, CVE-2026-35616, in Fortinet's FortiClient Enterprise Management Server (EMS) to deliver a new credential-stealing malware named EKZ. This flaw allows attackers to bypass security measures, gaining unauthorized access to deploy the malware. The vulnerability affects all versions of FortiClient EMS prior to the latest patch. Organizations using FortiClient EMS are at risk of having sensitive credentials compromised, which could lead to further network intrusions. Fortinet has released a patch, and users are urged to update immediately to secure their systems against this active threat.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-forticlient-ems-flaw-to-push-infostealer-malware/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Gogs RCE Flaw—Authenticated Users Can Execute Code",
-            "title": "Critical RCE Vulnerability in Gogs Allows Code Execution by Authenticated Users",
-            "content": "A critical remote code execution (RCE) vulnerability has been identified in Gogs, an open-source Git service, allowing authenticated users to execute arbitrary code. Rated 9.4 on the CVSS scale, this flaw poses a significant risk to systems using Gogs for code hosting. Although the vulnerability lacks a CVE identifier, its potential impact is severe, enabling attackers to manipulate repositories and compromise sensitive data. Users of Gogs are advised to implement security measures and monitor for updates from the maintainers to mitigate potential exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/critical-gogs-rce-vulnerability-lets.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Gitea Flaw Exposes 30,000 Deployments to Attack",
-            "title": "Gitea Vulnerability Puts 30,000 Deployments at Risk of Attack",
-            "content": "A security flaw in Gitea, a self-hosted Git service, has exposed approximately 30,000 deployments to potential attacks. This vulnerability allows unauthorized access to pull private container images, risking exposure of source code, credentials, and infrastructure details. The widespread use of Gitea in development environments amplifies the threat, necessitating immediate attention from administrators. Users are urged to review their security configurations and apply any available patches to safeguard their deployments against unauthorized access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/gitea-vulnerability-exposed-30000-deployments-to-attacks/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 30 2026",
+            "headline": "Browser Wars 2026—Top Chrome and Safari Alternatives",
+            "title": "Emerging Browsers Challenge Chrome and Safari Dominance in 2026",
+            "content": "As the browser wars intensify, new contenders are emerging to challenge the dominance of Chrome and Safari. TechCrunch highlights several innovative browsers that are gaining traction in 2026, offering unique features and enhanced privacy controls. These alternatives aim to address user concerns over data privacy and performance, leveraging advancements in AI and machine learning to optimize browsing experiences. Security professionals should evaluate these options for potential vulnerabilities and integration capabilities within enterprise environments. Staying informed about these developments is crucial as browser security remains a significant concern in the cybersecurity landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/30/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "AI-Generated Quotes Controversy Hits 'Future of Truth' Author",
+            "title": "'Future of Truth' Author Faces Backlash Over AI-Generated Content",
+            "content": "The author of 'Future of Truth,' a book exploring AI's influence on reality perception, is under scrutiny for using AI-generated quotes without disclosure. Critics argue that this undermines the book's credibility and raises ethical questions about AI's role in content creation. The controversy highlights the broader challenges of transparency and authenticity in AI-generated media. Professionals in AI ethics and content creation should consider the implications of undisclosed AI use, as it can impact trust and integrity in published works. This incident underscores the need for clear guidelines on AI content usage.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/future-of-truth-ai-interview/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Free Cleaning for AI Data—Shift's Unusual Offer",
+            "title": "Shift Offers Free Home Cleaning in Exchange for AI Training Data",
+            "content": "AI training startup Shift is offering free home cleaning services in New York City, with plans to expand to London, in exchange for video footage of household chores. This footage will be used to train AI models in understanding and automating domestic tasks. While the offer is appealing, it raises privacy concerns about data collection in private spaces. Security professionals should assess the potential risks of such data being misused or exposed. This initiative reflects a growing trend of using real-world data to enhance AI capabilities, but it also highlights the need for robust data protection measures.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Groq Seeks $650M for AI Inference Shift Post-Nvidia Deal",
+            "title": "Groq Pursues $650M Funding to Focus on AI Inference Technology",
+            "content": "Following Nvidia's $20 billion not-acqui-hire, AI chip startup Groq is reportedly raising $650 million to pivot towards AI inference technology. This strategic shift aims to enhance the efficiency of AI models in processing and responding to data prompts. Groq's move underscores the growing importance of inference in AI development, as companies seek to optimize performance and reduce latency. Investors and tech leaders should monitor Groq's progress, as successful funding could accelerate advancements in AI hardware and software integration. This development highlights the dynamic nature of the AI chip industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "XCENA Raises $135M—Tackles AI's Memory Bottleneck",
+            "title": "XCENA Secures $135M to Address AI Memory Constraints",
+            "content": "South Korean chip startup XCENA has raised $135 million, focusing on overcoming AI's memory bottleneck rather than computational power. XCENA's approach involves developing memory-centric architectures to improve data throughput and reduce latency in AI systems. This funding round highlights a shift in addressing AI performance challenges, emphasizing memory efficiency as a critical factor. Developers and tech leaders should explore XCENA's innovations for potential integration into AI solutions, as memory constraints continue to impact AI scalability and performance. This investment marks a pivotal moment in AI hardware evolution.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Boston Children's Uses AI for Rare Disease Diagnoses",
+            "title": "Boston Children's Hospital Leverages AI for Enhanced Patient Diagnoses",
+            "content": "Boston Children's Hospital is utilizing OpenAI technology to improve patient care and diagnose over 40 rare diseases. By integrating AI into their diagnostic processes, the hospital aims to reduce operational burdens and enhance accuracy in identifying complex conditions. This application of AI in healthcare demonstrates its potential to transform medical diagnostics and patient outcomes. Healthcare professionals should consider the implications of AI-driven diagnostics for improving efficiency and precision in medical practice. The success of this initiative could pave the way for broader AI adoption in healthcare settings.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/boston-childrens-hospital",
+            "relatedResources": []
+        },
         {
             "date": "May 29 2026",
             "headline": "ClickUp Cuts 22% Workforce—AI Replaces Jobs",
@@ -156,15 +210,6 @@ const websiteContent = {
             "content": "Aaron Levie, founder of Box, has coined the term \"AI psychosis\" to describe a growing trend among CEOs who are replacing human jobs with AI without fully understanding the roles involved. This trend is exemplified by ClickUp's recent decision to cut 22% of its workforce in favor of AI agents. Levie warns that such decisions could lead to significant disruptions in the workforce, as AI is not yet capable of fully replicating human expertise and judgment. The tech industry must tread carefully, ensuring that AI complements rather than replaces human roles.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Warp Leverages GPT-5.5 for Open Source Development",
-            "title": "Warp Utilizes GPT-5.5 to Enhance Open Source and Cloud Workflows",
-            "content": "Warp is making a significant bet on open-source development by integrating GPT-5.5 and OpenAI models into its coding workflows. This integration aims to streamline coordination across local, cloud, and open-source environments, enhancing productivity and collaboration. By leveraging the advanced capabilities of GPT-5.5, Warp seeks to optimize coding processes, potentially setting a new standard for how AI can be used in software development. This move highlights the growing trend of using AI to bridge gaps in development workflows, offering a glimpse into the future of coding.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/warp",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Today marks the final opportunity for industry experts to apply to speak at TechCrunch Disrupt 2026. Prospective speakers are encouraged to submit their session topics by the end of the day to participate in shaping the conversations that will define the future of technology. TechCrunch Disrupt is a premier event that gathers innovators, entrepreneurs, and thought leaders from across the globe. This year's event promises to explore cutting-edge trends and breakthroughs in the tech industry. Interested professionals should act swiftly to secure their chance to contribute to this influential platform.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/29/today-is-the-last-day-to-apply-to-speak-at-techcrunch-disrupt-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Kiwibit's AI Bird Feeder—A Backyard Tech Marvel",
-            "title": "Kiwibit's AI-Powered Bird Feeder Enhances Backyard Birdwatching Experience",
-            "content": "Kiwibit has introduced an AI-powered bird feeder that transforms backyard birdwatching into an interactive experience. This innovative feeder uses artificial intelligence to identify bird species and logs them into an app, similar to collecting Pokémon. The device offers nature enthusiasts a unique way to engage with wildlife while contributing to citizen science efforts. As smart home technology continues to evolve, products like Kiwibit's feeder demonstrate the potential for AI to enhance everyday activities. Users interested in technology and nature can find this product a delightful addition to their outdoor spaces.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/29/kiwibits-ai-powered-bird-feeder-is-my-new-backyard-buddy/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Jony Ive's Unconventional Ferrari—A Tech Marvel on Wheels",
-            "title": "Jony Ive's Design Transforms Ferrari Luce into a Technological Masterpiece",
-            "content": "Jony Ive has reimagined the Ferrari Luce, the automaker's first electric vehicle, with a bold and unconventional design. This electric car departs from traditional Ferrari aesthetics, incorporating advanced technology and innovative design elements that reflect Ive's unique vision. The Ferrari Luce stands out as one of the year's most intriguing automotive releases, capturing the attention of car enthusiasts and tech aficionados alike. While most may never experience this luxury vehicle firsthand, its introduction marks a significant milestone in the evolution of electric vehicles. Industry professionals should note the increasing intersection of design and technology in automotive innovation.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/939589/ferrari-luce-jony-ive-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Glean Surpasses $300M as AI Budget-Cutting Drives Growth",
-            "title": "Glean's Revenue Triples Amidst AI Budget-Cutting Demand",
-            "content": "Enterprise AI search startup Glean has reported annual revenues exceeding $300 million, marking a tripling of its top line despite increased competition from tech giants in the AI search space. The company attributes its growth to a strong demand for AI solutions that help organizations cut costs, a key selling point in today's budget-conscious environment. Glean's platform leverages AI to streamline enterprise search processes, enhancing productivity and reducing overhead. This financial milestone underscores the growing trend of businesses investing in AI tools that offer tangible cost-saving benefits. As AI continues to reshape enterprise operations, Glean's success highlights the importance of innovative solutions in maintaining competitive advantage.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "AWS, Cloudflare Redesign Internet for AI Traffic Surge",
-            "title": "Internet Infrastructure Overhaul for Machine-Generated Traffic by AWS, Cloudflare",
-            "content": "With AI agents transitioning from experimental to production stages, major cloud providers like AWS and Cloudflare are revamping internet infrastructure to accommodate a future dominated by machine-generated traffic. This shift reflects a significant change in internet usage patterns, where AI-driven communications are expected to surpass human interactions. The redesign involves optimizing network protocols and infrastructure to handle the unique demands of AI traffic, ensuring efficiency and reliability. This transformation is crucial for supporting the growing deployment of AI applications across industries. As AI continues to evolve, businesses must prepare for an internet landscape increasingly tailored to machine interactions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Microsoft 365 Copilot Revamp—Twice as Fast, Cleaner Design",
-            "title": "Microsoft 365 Copilot Update Boosts Speed and Usability",
-            "content": "Microsoft has unveiled a revamped version of its Microsoft 365 Copilot, featuring a cleaner design and a performance boost that doubles its loading speed. This update aims to enhance user experience by providing more reliable and structured responses, making information easier to scan and utilize. The redesign is part of Microsoft's ongoing efforts to improve productivity tools through AI integration. Users can expect a more efficient workflow as the updated Copilot facilitates quicker access to insights and recommendations. This enhancement reflects Microsoft's commitment to refining its AI offerings to better meet the needs of its enterprise users.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
             "relatedResources": []
         }
     ],
