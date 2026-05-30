@@ -517,7 +517,22 @@ TableName
 
 ---
 
-## 7. Post-Write Verification
+## 7. Generative Engine Optimization (GEO) Requirements
+To ensure this guide ranks well in AI search engines, it MUST include:
+
+1. **Key Takeaways (BLUF)**
+   - Placed immediately after the hero image (can be integrated into the existing `.info-box` BLUF).
+   - Use an unordered list `<ul>` with 3-4 concrete takeaways.
+2. **Frequently Asked Questions (FAQ)**
+   - Placed at the bottom of the guide, right before the footer.
+   - Must be an `<h2>` section titled "Frequently Asked Questions (FAQ)".
+   - Answer 3-4 common practitioner questions directly.
+3. **Structured Data (Schema.org)**
+   - Include `FAQPage` schema in the `<head>` mirroring the Q&A pairs.
+4. **Data Extraction Friendly**
+   - Ensure you use HTML `<table>` elements for comparisons, checklists, and CIS benchmarks (as specified in Section 5.7).
+
+## 8. Post-Write Verification
 
 Before committing, run this check — it must return zero matches:
 

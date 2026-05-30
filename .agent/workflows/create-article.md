@@ -321,7 +321,22 @@ Must be the **FIRST element** inside `<div class="container">`, before the artic
 
 **Reference:** See `/guides/ai-agent-security.html` for complete desktop header implementation.
 
-## 7. Deployment Checklist
+## 7. Generative Engine Optimization (GEO) Requirements
+To ensure the article ranks well in AI search engines (ChatGPT, Perplexity, Gemini, Google AI Overviews), every new article MUST include:
+
+1. **Key Takeaways (BLUF)**
+   - Placed immediately after the header/hero image.
+   - Use an unordered list `<ul>` inside an `.alert-box` or `.info-box`.
+2. **Frequently Asked Questions (FAQ)**
+   - Placed at the bottom of the article, before the footer/interaction bar.
+   - Must be an `<h2>` section titled "Frequently Asked Questions (FAQ)".
+   - Include 3-4 conversational Q&A pairs relevant to the topic.
+3. **Structured Data (Schema.org)**
+   - In the `<head>`, include `<script type="application/ld+json">` for `FAQPage` containing the exact Q&A pairs from the FAQ section.
+4. **Semantic HTML Tables**
+   - Whenever comparing data, listing IOCs, or detailing timelines, use standard HTML `<table>` elements. AI engines highly prioritize extracting data from tables.
+
+## 8. Deployment Checklist
 1.  **Create HTML File:** Populate with full content.
 2.  **Generate Image:** Save to `/images/articles/`.
 3.  **Update `ioc-data/articles.json`:**

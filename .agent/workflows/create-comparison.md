@@ -285,6 +285,20 @@ Every comparison MUST include the interaction bar. See `/create-guide` workflow 
 <script src="/interaction-bar.js?v=20251217"></script>
 ```
 
+## Generative Engine Optimization (GEO) Requirements
+To ensure this comparison ranks well in AI search engines (ChatGPT, Perplexity, Gemini), the page MUST include:
+
+1. **Key Takeaways (BLUF)**
+   - Placed immediately after the header, before the quick comparison table.
+   - Summarize the core differences in 3 bullet points.
+2. **Frequently Asked Questions (FAQ)**
+   - Placed at the bottom, right after the Verdict section.
+   - Must be an `<h2>` section titled "Frequently Asked Questions (FAQ)".
+   - Include 3-4 Q&A pairs (e.g., "Which is cheaper?", "Which is better for small business?").
+3. **Structured Data (Schema.org)**
+   - Include `FAQPage` schema in the `<head>` containing the exact Q&A pairs.
+   - Ensure the comparison tables are clean semantic HTML `<table>` elements (already required by this workflow), as AI engines prioritize extracting table data.
+
 ## After Creating Comparison
 1. Add to `/comparisons/index.html`
 2. Add to `/sitemap.xml`
