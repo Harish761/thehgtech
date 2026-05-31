@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-05-31T03:55:00.069320",
+  "last_updated": "2026-05-31T13:45:37.940748",
   "period": "Last 7 days",
   "total_groups": 33,
-  "total_victims": 296,
+  "total_victims": 284,
   "groups": [
     {
       "name": "Dragonforce",
-      "count": 54,
+      "count": 50,
       "victims": [
         {
           "name": "Henry Molded Products Likely to Engage tag.",
@@ -88,7 +88,7 @@
       "daily_counts": [
         12,
         0,
-        35,
+        34,
         0,
         4,
         0,
@@ -181,96 +181,6 @@
         1,
         10,
         27,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Thegentlemen",
-      "count": 19,
-      "victims": [
-        {
-          "name": "Corporacion Prokompra",
-          "date": "2026-05-28T18:53:58.833991+00:00",
-          "url": "",
-          "discovered_date": "2026-05-28T18:53:58.833991+00:00"
-        },
-        {
-          "name": "Heartland Growers",
-          "date": "2026-05-28T18:54:12.148838+00:00",
-          "url": "",
-          "discovered_date": "2026-05-28T18:54:12.148838+00:00"
-        },
-        {
-          "name": "Fonderia Corra",
-          "date": "2026-05-28T18:54:25.391202+00:00",
-          "url": "",
-          "discovered_date": "2026-05-28T18:54:25.391202+00:00"
-        },
-        {
-          "name": "Grupo Premier",
-          "date": "2026-05-28T18:54:29.470449+00:00",
-          "url": "",
-          "discovered_date": "2026-05-28T18:54:29.470449+00:00"
-        },
-        {
-          "name": "Mayelia Automotive",
-          "date": "2026-05-28T18:54:43+00:00",
-          "url": "https://www.ransomware.live/id/TWF5ZWxpYSBBdXRvbW90aXZlQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-05-28T18:54:43+00:00"
-        },
-        {
-          "name": "Techmar",
-          "date": "2026-05-28T18:54:37+00:00",
-          "url": "https://www.ransomware.live/id/VGVjaG1hckB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-05-28T18:54:37+00:00"
-        },
-        {
-          "name": "Grupo Premier",
-          "date": "2026-05-28T18:54:29+00:00",
-          "url": "https://www.ransomware.live/id/R3J1cG8gUHJlbWllckB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-05-28T18:54:29+00:00"
-        },
-        {
-          "name": "Fonderia Corra",
-          "date": "2026-05-28T18:54:25+00:00",
-          "url": "https://www.ransomware.live/id/Rm9uZGVyaWEgQ29ycmFAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-05-28T18:54:25+00:00"
-        },
-        {
-          "name": "Heartland Growers",
-          "date": "2026-05-28T18:54:12+00:00",
-          "url": "https://www.ransomware.live/id/SGVhcnRsYW5kIEdyb3dlcnNAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-05-28T18:54:12+00:00"
-        },
-        {
-          "name": "Corporacion Prokompra",
-          "date": "2026-05-28T18:53:58+00:00",
-          "url": "https://www.ransomware.live/id/Q29ycG9yYWNpb24gUHJva29tcHJhQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-05-28T18:53:58+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Business Services",
-        "Consumer Services",
-        "Manufacturing"
-      ],
-      "countries": [
-        "AR",
-        "AT",
-        "AU",
-        "CL",
-        "FR"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        10,
         0,
         0,
         0
@@ -807,6 +717,96 @@
       ]
     },
     {
+      "name": "Thegentlemen",
+      "count": 10,
+      "victims": [
+        {
+          "name": "Corporacion Prokompra",
+          "date": "2026-05-28T18:53:58.833991+00:00",
+          "url": "",
+          "discovered_date": "2026-05-28T18:53:58.833991+00:00"
+        },
+        {
+          "name": "Heartland Growers",
+          "date": "2026-05-28T18:54:12.148838+00:00",
+          "url": "",
+          "discovered_date": "2026-05-28T18:54:12.148838+00:00"
+        },
+        {
+          "name": "Fonderia Corra",
+          "date": "2026-05-28T18:54:25.391202+00:00",
+          "url": "",
+          "discovered_date": "2026-05-28T18:54:25.391202+00:00"
+        },
+        {
+          "name": "Grupo Premier",
+          "date": "2026-05-28T18:54:29.470449+00:00",
+          "url": "",
+          "discovered_date": "2026-05-28T18:54:29.470449+00:00"
+        },
+        {
+          "name": "Mayelia Automotive",
+          "date": "2026-05-28T18:54:43+00:00",
+          "url": "https://www.ransomware.live/id/TWF5ZWxpYSBBdXRvbW90aXZlQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-05-28T18:54:43+00:00"
+        },
+        {
+          "name": "Techmar",
+          "date": "2026-05-28T18:54:37+00:00",
+          "url": "https://www.ransomware.live/id/VGVjaG1hckB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-05-28T18:54:37+00:00"
+        },
+        {
+          "name": "Grupo Premier",
+          "date": "2026-05-28T18:54:29+00:00",
+          "url": "https://www.ransomware.live/id/R3J1cG8gUHJlbWllckB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-05-28T18:54:29+00:00"
+        },
+        {
+          "name": "Fonderia Corra",
+          "date": "2026-05-28T18:54:25+00:00",
+          "url": "https://www.ransomware.live/id/Rm9uZGVyaWEgQ29ycmFAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-05-28T18:54:25+00:00"
+        },
+        {
+          "name": "Heartland Growers",
+          "date": "2026-05-28T18:54:12+00:00",
+          "url": "https://www.ransomware.live/id/SGVhcnRsYW5kIEdyb3dlcnNAdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-05-28T18:54:12+00:00"
+        },
+        {
+          "name": "Corporacion Prokompra",
+          "date": "2026-05-28T18:53:58+00:00",
+          "url": "https://www.ransomware.live/id/Q29ycG9yYWNpb24gUHJva29tcHJhQHRoZWdlbnRsZW1lbg==",
+          "discovered_date": "2026-05-28T18:53:58+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Business Services",
+        "Consumer Services",
+        "Manufacturing"
+      ],
+      "countries": [
+        "CL",
+        "GB",
+        "IT",
+        "MX",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "name": "Nightspire",
       "count": 10,
       "victims": [
@@ -892,6 +892,85 @@
       ]
     },
     {
+      "name": "Cmdorganization",
+      "count": 9,
+      "victims": [
+        {
+          "name": "Lake Washington School District",
+          "date": "2026-05-31T10:50:12.167640+00:00",
+          "url": "",
+          "discovered_date": "2026-05-31T10:50:12.167640+00:00"
+        },
+        {
+          "name": "Lee Law Offices",
+          "date": "2026-05-30T12:50:10.668849+00:00",
+          "url": "",
+          "discovered_date": "2026-05-30T12:50:10.668849+00:00"
+        },
+        {
+          "name": "Capital Family Physicians",
+          "date": "2026-05-29T15:20:11.319564+00:00",
+          "url": "",
+          "discovered_date": "2026-05-29T15:20:11.319564+00:00"
+        },
+        {
+          "name": "Hospice Savannah",
+          "date": "2026-05-28T11:50:10.398175+00:00",
+          "url": "",
+          "discovered_date": "2026-05-28T11:50:10.398175+00:00"
+        },
+        {
+          "name": "Lake Washington School District",
+          "date": "2026-05-31T10:50:12+00:00",
+          "url": "https://www.ransomware.live/id/TGFrZSBXYXNoaW5ndG9uIFNjaG9vbCBEaXN0cmljdEBjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-05-31T10:50:12+00:00"
+        },
+        {
+          "name": "Lee Law Offices",
+          "date": "2026-05-30T12:50:10+00:00",
+          "url": "https://www.ransomware.live/id/TGVlIExhdyBPZmZpY2VzQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-05-30T12:50:10+00:00"
+        },
+        {
+          "name": "Capital Family Physicians",
+          "date": "2026-05-29T15:20:11+00:00",
+          "url": "https://www.ransomware.live/id/Q2FwaXRhbCBGYW1pbHkgUGh5c2ljaWFuc0BjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-05-29T15:20:11+00:00"
+        },
+        {
+          "name": "Hospice Savannah",
+          "date": "2026-05-28T11:50:10+00:00",
+          "url": "https://www.ransomware.live/id/SG9zcGljZSBTYXZhbm5haEBjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-05-28T11:50:10+00:00"
+        },
+        {
+          "name": "North Dallas Shared Ministries",
+          "date": "2026-05-25T18:50:16+00:00",
+          "url": "https://www.ransomware.live/id/Tm9ydGggRGFsbGFzIFNoYXJlZCBNaW5pc3RyaWVzQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-05-25T18:50:16+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Education",
+        "Healthcare"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
       "name": "Krybit",
       "count": 9,
       "victims": [
@@ -972,72 +1051,6 @@
         0,
         0,
         4,
-        0
-      ]
-    },
-    {
-      "name": "Cmdorganization",
-      "count": 7,
-      "victims": [
-        {
-          "name": "Lee Law Offices",
-          "date": "2026-05-30T12:50:10.668849+00:00",
-          "url": "",
-          "discovered_date": "2026-05-30T12:50:10.668849+00:00"
-        },
-        {
-          "name": "Capital Family Physicians",
-          "date": "2026-05-29T15:20:11.319564+00:00",
-          "url": "",
-          "discovered_date": "2026-05-29T15:20:11.319564+00:00"
-        },
-        {
-          "name": "Hospice Savannah",
-          "date": "2026-05-28T11:50:10.398175+00:00",
-          "url": "",
-          "discovered_date": "2026-05-28T11:50:10.398175+00:00"
-        },
-        {
-          "name": "Lee Law Offices",
-          "date": "2026-05-30T12:50:10+00:00",
-          "url": "https://www.ransomware.live/id/TGVlIExhdyBPZmZpY2VzQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-05-30T12:50:10+00:00"
-        },
-        {
-          "name": "Capital Family Physicians",
-          "date": "2026-05-29T15:20:11+00:00",
-          "url": "https://www.ransomware.live/id/Q2FwaXRhbCBGYW1pbHkgUGh5c2ljaWFuc0BjbWRvcmdhbml6YXRpb24=",
-          "discovered_date": "2026-05-29T15:20:11+00:00"
-        },
-        {
-          "name": "Hospice Savannah",
-          "date": "2026-05-28T11:50:10+00:00",
-          "url": "https://www.ransomware.live/id/SG9zcGljZSBTYXZhbm5haEBjbWRvcmdhbml6YXRpb24=",
-          "discovered_date": "2026-05-28T11:50:10+00:00"
-        },
-        {
-          "name": "North Dallas Shared Ministries",
-          "date": "2026-05-25T18:50:16+00:00",
-          "url": "https://www.ransomware.live/id/Tm9ydGggRGFsbGFzIFNoYXJlZCBNaW5pc3RyaWVzQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-05-25T18:50:16+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Healthcare"
-      ],
-      "countries": [
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        2,
-        2,
-        2,
         0
       ]
     },
@@ -1619,33 +1632,26 @@
       ]
     },
     {
-      "name": "Ailock",
-      "count": 3,
+      "name": "Bravox",
+      "count": 2,
       "victims": [
         {
-          "name": "Restorative Therapies, Inc.",
-          "date": "2026-05-29T09:20:06.587207+00:00",
-          "url": "",
-          "discovered_date": "2026-05-29T09:20:06.587207+00:00"
+          "name": "AcademyHealth",
+          "date": "2026-05-29T20:21:31.689010+00:00",
+          "url": "http://bravoxxwcfz5qk43ychgveprpd5mw5hvxfs4a2uz2okx7mumiht4fzyd.onion/blog/9397cf6a-4d40-4041-b614-0a34bfb14c10",
+          "discovered_date": "2026-05-29T20:21:31.689010+00:00"
         },
         {
-          "name": "Restorative Therapies, Inc.",
-          "date": "2026-05-29T09:20:06+00:00",
-          "url": "https://www.ransomware.live/id/UmVzdG9yYXRpdmUgVGhlcmFwaWVzLCBJbmMuQEFpTG9jaw==",
-          "discovered_date": "2026-05-29T09:20:06+00:00"
-        },
-        {
-          "name": "Artso International, Inc.",
-          "date": "2026-05-24T09:20:05+00:00",
-          "url": "https://www.ransomware.live/id/QXJ0c28gSW50ZXJuYXRpb25hbCwgSW5jLkBBaUxvY2s=",
-          "discovered_date": "2026-05-24T09:20:05+00:00"
+          "name": "AcademyHealth",
+          "date": "2026-05-29T20:21:31+00:00",
+          "url": "https://www.ransomware.live/id/QWNhZGVteUhlYWx0aEBicmF2b3g=",
+          "discovered_date": "2026-05-29T20:21:31+00:00"
         }
       ],
       "industries": [
         "Healthcare"
       ],
       "countries": [
-        "TW",
         "US"
       ],
       "trend": "down",
@@ -1661,20 +1667,20 @@
       ]
     },
     {
-      "name": "Bravox",
+      "name": "Ailock",
       "count": 2,
       "victims": [
         {
-          "name": "AcademyHealth",
-          "date": "2026-05-29T20:21:31.689010+00:00",
-          "url": "http://bravoxxwcfz5qk43ychgveprpd5mw5hvxfs4a2uz2okx7mumiht4fzyd.onion/blog/9397cf6a-4d40-4041-b614-0a34bfb14c10",
-          "discovered_date": "2026-05-29T20:21:31.689010+00:00"
+          "name": "Restorative Therapies, Inc.",
+          "date": "2026-05-29T09:20:06.587207+00:00",
+          "url": "",
+          "discovered_date": "2026-05-29T09:20:06.587207+00:00"
         },
         {
-          "name": "AcademyHealth",
-          "date": "2026-05-29T20:21:31+00:00",
-          "url": "https://www.ransomware.live/id/QWNhZGVteUhlYWx0aEBicmF2b3g=",
-          "discovered_date": "2026-05-29T20:21:31+00:00"
+          "name": "Restorative Therapies, Inc.",
+          "date": "2026-05-29T09:20:06+00:00",
+          "url": "https://www.ransomware.live/id/UmVzdG9yYXRpdmUgVGhlcmFwaWVzLCBJbmMuQEFpTG9jaw==",
+          "discovered_date": "2026-05-29T09:20:06+00:00"
         }
       ],
       "industries": [
