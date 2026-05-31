@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-05-31T06:39:44.339605",
-  "total_incidents": 28440,
+  "last_updated": "2026-05-31T15:48:35.941058",
+  "total_incidents": 28441,
   "incidents": [
+    {
+      "id": "cmdorganization_lake_washington_school_district",
+      "victim_name": "Lake Washington School District",
+      "threat_actor": "cmdorganization",
+      "date_discovered": "2026-05-31T10:50:12.167640+00:00",
+      "industry": "Education",
+      "website": "lwsd.wednet.edu",
+      "claim": "Founded in 1914, Lake Washington School District is the administrative body responsible for planning and managing public education for 33 elementary, 14 middle, and 9 high schools. It serves communities of Kirkland, Redmond and about half of Sammamish. The company is headquartered in Redmond, Washington.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "krybit_tulipmediworld.com",
       "victim_name": "tulipmediworld.com",
@@ -176,7 +188,7 @@
       "threat_actor": "nova",
       "date_discovered": "2026-05-30T12:22:31.323054+00:00",
       "industry": "Technology",
-      "website": "",
+      "website": "bc3tech.com",
       "claim": "BC3.com.br is the website for BC3 Tecnologia, a Brazilian company that develops and sells ERP (Enterprise Resource Planning) software specifically for the corrugated packaging and cartonage industry. Their flagship product is the ERP KRP- Nova Provide tree and samples from stolen data, free 2 files decrypt to the company when its get in touch with support department.",
       "screenshot": "https://images.ransomware.live/victims/51f9d9ba6465ba0fee1d5dcc9f5fee0b.png",
       "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/bc3-tecnologia",
@@ -248,7 +260,7 @@
       "threat_actor": "nova",
       "date_discovered": "2026-05-29T23:53:06.909684+00:00",
       "industry": "Education",
-      "website": "",
+      "website": "daegu.ac.kr",
       "claim": "Daegu University offers a range of educational services including online employment solutions, academic information systems, and various courses for students and faculty. The university focuses on providing resources for job preparation, including strategies for public and private sector employment, as well as civil service exam preparation. It aims to support students, prospective students, and faculty members in their academic and professional development. The institution is committed to fostering a collaborative and innovative learning environment - Nova Provide tree and samples from stolen data to the company when its get in touch with support department.",
       "screenshot": "https://images.ransomware.live/victims/925a94b55549502941f4cf48be2ddf53.png",
       "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/daegu-university-ai-department",
