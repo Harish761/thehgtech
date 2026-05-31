@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-05-30T15:45:48.527238",
-  "total_incidents": 28434,
+  "last_updated": "2026-05-31T06:39:44.339605",
+  "total_incidents": 28440,
   "incidents": [
+    {
+      "id": "krybit_tulipmediworld.com",
+      "victim_name": "tulipmediworld.com",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-05-30T21:54:27.798559+00:00",
+      "industry": "Healthcare",
+      "website": "tulipmediworld.com",
+      "claim": "A complete data breach has occurred at Tulip Mediworld Hospital, a multi-specialty hospital located on GS Road, Rukmini ...",
+      "screenshot": "https://images.ransomware.live/victims/a187f9b37bf9467cf234d3c70a1e1866.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/c0b63c60d94025eff1accba59f0f42fd8a932576faf925c2cd5044201bd98676/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "genesis_cavalier_flooring_systems_inc.",
+      "victim_name": "Cavalier Flooring Systems Inc.",
+      "threat_actor": "genesis",
+      "date_discovered": "2026-05-30T18:54:11.750793+00:00",
+      "industry": "Manufacturing",
+      "website": "cavalierflooring.com",
+      "claim": "A flooring and tile contractor",
+      "screenshot": "https://images.ransomware.live/victims/51b22e786763af132f07a337b31db829.png",
+      "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/f10ce733580c413f2c3a/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "genesis_wentworth",
+      "victim_name": "Wentworth",
+      "threat_actor": "genesis",
+      "date_discovered": "2026-05-30T18:53:43.320307+00:00",
+      "industry": "Not Found",
+      "website": "wentworthstudio.com",
+      "claim": "the DC Metro area's premier design-build firm",
+      "screenshot": "https://images.ransomware.live/victims/13cd79efe194750264b036c6dde873db.png",
+      "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/e21f3327f23dba31d2a6/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "genesis_green_resource",
+      "victim_name": "Green Resource",
+      "threat_actor": "genesis",
+      "date_discovered": "2026-05-30T18:53:14.625484+00:00",
+      "industry": "Energy",
+      "website": "green-resource.com",
+      "claim": "A leading distributor of professional fertilizers, chemicals, and seeds for local and lawn grasses",
+      "screenshot": "https://images.ransomware.live/victims/e1a3b98391ba6b64165d0b8d37368164.png",
+      "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/dbc7eb0c136da6d5eff7/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "genesis_cedar_street_capital_(a_part_of_a_cynvestors_limited_partnership)",
+      "victim_name": "Cedar Street Capital (A part of a Cynvestors Limited Partnership)",
+      "threat_actor": "genesis",
+      "date_discovered": "2026-05-30T18:52:46.610072+00:00",
+      "industry": "Financial Services",
+      "website": "cedarstreetcapital.com",
+      "claim": "A private investment entity associated with Cynthia Stiehl",
+      "screenshot": "https://images.ransomware.live/victims/6f43d1a850bf4327a453222b599571bc.png",
+      "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/bfa3535e1d92ebc2c573/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "genesis_a_roettgers",
+      "victim_name": "A Roettgers",
+      "threat_actor": "genesis",
+      "date_discovered": "2026-05-30T18:52:17.760220+00:00",
+      "industry": "Business Services",
+      "website": "arc-rci.com",
+      "claim": "Fuel distributor and gas station operator",
+      "screenshot": "https://images.ransomware.live/victims/0ed9b84fe493babfbf19467ca952942b.png",
+      "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/992090c36f83be4fcd52/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "coinbasecartel_siveco_-",
       "victim_name": "Siveco -",

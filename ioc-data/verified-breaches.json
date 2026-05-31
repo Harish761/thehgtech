@@ -1414,6 +1414,25 @@
       "Description": "In December 2015, the service for creating and running free Minecraft servers known as <a href=\"https://twitter.com/AternosStatus/status/696121828360716288\" target=\"_blank\" rel=\"noopener\">Aternos suffered a data breach that impacted 1.4 million subscribers</a>. The data included usernames, email and IP addresses and hashed passwords."
     }
   ],
+  "atlasmenu.net": [
+    {
+      "Name": "AtlasMenu",
+      "Title": "Atlas Menu",
+      "BreachDate": "2026-05-30",
+      "AddedDate": "2026-05-30T23:35:29Z",
+      "PwnCount": 63926,
+      "DataClasses": [
+        "Email addresses",
+        "IP addresses",
+        "Passwords",
+        "Support tickets",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In May 2026, the GTA V and CS2 cheat service <a href=\"https://atlasmenu.net\" target=\"_blank\" rel=\"noopener\">Atlas Menu</a> suffered a data breach. An attacker claimed to have gained access to all Atlas systems and published the service's database to a public GitHub repository. The incident exposed 64k unique email addresses along with usernames, IP addresses, support tickets and passwords stored as bcrypt hashes."
+    }
+  ],
   "atlasquantum.com": [
     {
       "Name": "AtlasQuantum",
