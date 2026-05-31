@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1507",
+      "incident_id": 1507,
+      "title": "Google Gemini Was Allegedly Used to Process Student Data Amid India's Central Board of Secondary Edu",
+      "date": "2026-05-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1508",
+      "incident_id": 1508,
+      "title": "Italian Mediaset Journalist Safiria Leccese's Image Was Reportedly Used in a Purportedly AI-Generate",
+      "date": "2026-05-31",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1509",
+      "incident_id": 1509,
+      "title": "Self-Employed Somerset Father Wayne Luxon Reportedly Lost \u00a3140,000 After Facebook Deepfake of Martin",
+      "date": "2026-05-31",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1506",
       "incident_id": 1506,
       "title": "ChatGPT Was Alleged to Have Reinforced Pittsburgh Man's Stalking and Threats Against Women",
@@ -1978,9 +2002,9 @@
     }
   ],
   "stats": {
-    "total": 247,
-    "last7Days": 66,
-    "last30Days": 169
+    "total": 250,
+    "last7Days": 69,
+    "last30Days": 172
   },
-  "lastUpdated": "2026-05-31T22:49:17.978857+05:30"
+  "lastUpdated": "2026-06-01T01:19:40.993391+05:30"
 }
