@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1506",
+      "incident_id": 1506,
+      "title": "ChatGPT Was Alleged to Have Reinforced Pittsburgh Man's Stalking and Threats Against Women",
+      "date": "2026-05-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-412",
       "incident_id": 412,
       "title": "Finnish Police Were Reportedly Reprimanded After National Bureau of Investigation Unit Allegedly Use",
@@ -1970,9 +1978,9 @@
     }
   ],
   "stats": {
-    "total": 246,
-    "last7Days": 65,
-    "last30Days": 168
+    "total": 247,
+    "last7Days": 66,
+    "last30Days": 169
   },
-  "lastUpdated": "2026-05-31T02:41:36.252611+05:30"
+  "lastUpdated": "2026-05-31T10:16:56.377965+05:30"
 }
