@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "May 29 2026",
+            "headline": "ShinyHunters Leak 42M Records—Charter Faces Massive Breach",
+            "title": "Charter Communications Data Breach Exposes 42 Million Records",
+            "content": "The ShinyHunters extortion group has leaked over 42 million records allegedly stolen from Charter Communications, potentially impacting nearly 5 million customers. The breach, which occurred in April, involves sensitive customer information, raising significant privacy and security concerns. Charter Communications has not yet confirmed the extent of the breach, but the leak could affect customer trust and lead to regulatory scrutiny. This incident underscores the persistent threat posed by cybercriminal groups like ShinyHunters, known for targeting large corporations. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precautionary measure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/charter-communications-data-breach-could-impact-nearly-5-million/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "LLM Agent Used in Marimo Exploit—New Post-Exploitation Tactics",
+            "title": "Attackers Employ LLM Agent for Post-Exploitation in Marimo Network Breach",
+            "content": "An unknown threat actor has leveraged a large language model (LLM) agent for post-compromise activities following the exploitation of a Marimo network vulnerability, CVE-2026-39987. The attack began with the compromise of an internet-accessible Marimo system, allowing the attacker to execute further malicious actions using the LLM agent. This novel use of AI in cyberattacks highlights the evolving tactics of threat actors, posing new challenges for cybersecurity defenses. Organizations using Marimo systems should apply available patches and enhance monitoring for unusual activity. This incident emphasizes the need for AI-aware security strategies in protecting network infrastructures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Gogs Vulnerability—Authenticated Users Can Execute Arbitrary Code",
+            "title": "Critical RCE Vulnerability in Gogs Allows Arbitrary Code Execution",
+            "content": "A critical remote code execution (RCE) vulnerability has been identified in Gogs, an open-source Git service, affecting authenticated users. Rated 9.4 on the CVSS scale, this flaw allows users to execute arbitrary code under specific conditions, posing a severe risk to Gogs deployments. Although the vulnerability lacks a CVE identifier, Rapid7 has disclosed its potential impact on self-hosted Git services. Users are urged to apply security updates and review access controls to mitigate risks. This vulnerability highlights the importance of continuous security assessments in open-source software environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/critical-gogs-rce-vulnerability-lets.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "FortiClient EMS Flaw Exploited—Credential Stealer Deployed",
+            "title": "Critical FortiClient EMS Vulnerability Exploited to Deliver EKZ Infostealer",
+            "content": "Cybercriminals are exploiting a critical vulnerability in FortiClient Endpoint Management Server (EMS) to deploy the EKZ Infostealer malware. Despite the flaw being patched, threat actors continue to target unpatched systems, leveraging trusted endpoint management infrastructure to distribute the credential-stealing malware. This vulnerability poses a significant threat to organizations relying on FortiClient EMS for endpoint security. Administrators should ensure all systems are updated with the latest patches and monitor for signs of compromise. This incident underscores the need for timely patch management and robust endpoint security measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "Microsoft Criticizes Zero-Day Disclosures—Calls for Coordinated Approach",
+            "title": "Microsoft Advocates for Coordinated Vulnerability Disclosure Amid Researcher Account Removal",
+            "content": "Microsoft has reiterated its support for Coordinated Vulnerability Disclosure (CVD), urging researchers to collaborate with vendors before publicizing security flaws. This stance follows the removal of a GitHub researcher account involved in public zero-day disclosures. Microsoft argues that premature disclosure can hinder effective remediation and increase risks to users. The company calls for a balanced approach that allows vendors to address vulnerabilities while maintaining transparency with the security community. This development highlights ongoing debates around responsible disclosure practices and the need for industry-wide standards.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-slams-public-zero-day.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 31 2026",
+            "headline": "WP Maps Pro Flaw—Hackers Create Rogue Admin Accounts",
+            "title": "WP Maps Pro Plugin Exploited to Create Unauthorized Admin Accounts",
+            "content": "Hackers are exploiting a vulnerability in the WP Maps Pro plugin for WordPress, allowing them to create unauthorized administrator accounts without authentication. This flaw poses a significant risk to websites using the affected plugin version, potentially leading to full site compromise. Administrators are advised to update the plugin to the latest version and review user accounts for suspicious activity. This incident highlights the critical importance of maintaining up-to-date plugins and monitoring for vulnerabilities in widely-used content management systems like WordPress.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/wp-maps-pro-bug-exploited-to-create-admin-accounts-on-wordpress-sites/",
+            "relatedResources": []
+        },
+        {
             "date": "May 30 2026",
             "headline": "Palo Alto VPN Flaw Exploited—Corporate Networks at Risk",
             "title": "Hackers Exploit Palo Alto GlobalProtect VPN Authentication Bypass Flaw",
@@ -49,15 +103,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 28 2026",
-            "headline": "FortiClient EMS Flaw Used to Spread Infostealer",
-            "title": "Hackers Exploit FortiClient EMS Vulnerability to Deploy EKZ Infostealer",
-            "content": "Cybercriminals are exploiting an authentication bypass vulnerability, CVE-2026-35616, in FortiClient Enterprise Management Server (EMS) to distribute a credential-stealing malware known as EKZ. This vulnerability allows attackers to bypass security controls and deploy malware, compromising sensitive information. Organizations using FortiClient EMS should urgently apply security patches to prevent unauthorized access and data theft. This attack underscores the critical need for robust security measures and timely updates in enterprise environments to defend against evolving threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-forticlient-ems-flaw-to-push-infostealer-malware/",
-            "relatedResources": []
-        },
-        {
             "date": "May 30 2026",
             "headline": "PAN-OS Flaw Exploited—7.8 CVSS Authentication Bypass Alert",
             "title": "Active Exploitation of PAN-OS GlobalProtect Authentication Bypass CVE-2026-0257",
@@ -92,54 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "ChatGPT Links Exploited—Fake Outage Pages Spread Malware",
-            "title": "ChatGPT Share Links Abused to Host Malware-Delivering Fake Outage Pages",
-            "content": "Threat actors are exploiting ChatGPT's content-sharing feature to create fake OpenAI outage pages, tricking users into downloading malware disguised as a ChatGPT desktop application. This tactic leverages the trust users place in official-looking outage notifications, potentially compromising systems with malicious software. The abuse of AI-generated content for malware distribution highlights the evolving tactics of cybercriminals targeting AI platforms. Users should exercise caution when encountering unexpected outage messages and verify the legitimacy of software downloads. Security teams are advised to monitor for suspicious activity related to AI service disruptions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/chatgpt-share-links-abused-to-host-fake-outage-pages-to-deliver-malware/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "California Sues 23andMe—Data Breach Exposed Health Information",
-            "title": "California Attorney General Sues 23andMe Over 2023 Data Breach",
-            "content": "The California Attorney General has filed a lawsuit against 23andMe, now known as Chrome Holding Co., for failing to protect sensitive customer genetic and personal data during a 2023 breach. The lawsuit alleges that the company did not implement adequate security measures, leading to the exposure of health information. This legal action underscores the growing regulatory scrutiny on companies handling sensitive data, especially in the health sector. Organizations are reminded of the critical importance of robust data protection practices to avoid legal repercussions and maintain consumer trust.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/california-ag-sues-23andme-over-2023-breach-exposing-health-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "NIST's NVD Audit—27K Security Flaws Unprocessed",
-            "title": "Federal Audit Reveals NIST's NVD Mismanagement and Duplication Issues",
-            "content": "A federal audit has uncovered significant mismanagement within the National Institute of Standards and Technology's (NIST) National Vulnerability Database (NVD), revealing a backlog of 27,000 unprocessed security flaws. The report highlights duplication of efforts with a similar program by the Cybersecurity and Infrastructure Security Agency (CISA), leading to inefficiencies. This backlog poses a risk to timely vulnerability disclosure and mitigation efforts. The findings call for improved planning and coordination between agencies to enhance the effectiveness of national cybersecurity initiatives. Stakeholders are urged to advocate for streamlined processes to address these systemic issues.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/nist-nvd-audit-mismanagement-duplication/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Swiss Researchers Claim Perfect Random Number Generator",
-            "title": "Swiss Researchers Develop Quantum-Based Perfect Random Number Generator",
-            "content": "Swiss researchers have announced the creation of a perfect random number generator using two quantum superconducting chips, a 30-meter-long pipe, and specialized software. This breakthrough device promises to enhance cryptographic security by providing truly random numbers, crucial for generating secure cryptographic keys. The technology could also support public randomness services for applications like lotteries and blockchain systems. This development represents a significant advancement in quantum computing and its potential applications in cybersecurity. Organizations involved in cryptography and blockchain are encouraged to explore the implications of this innovation for enhancing security protocols.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4178750/certifiably-random-swiss-researchers-claim-perfect-random-number-source.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Trump Mobile Data Breach Exposes Customer Info",
-            "title": "Trump Mobile Data Breach, FIFA Phishing, CISA Supply Chain Response",
-            "content": "Trump Mobile has suffered a data breach, exposing sensitive customer information. Meanwhile, cybercriminals are targeting the 2026 FIFA World Cup with phishing attacks, aiming to exploit the event's global audience. The Cybersecurity and Infrastructure Security Agency (CISA) has issued guidance in response to recent supply chain attacks, emphasizing the need for robust security measures. These incidents highlight the ongoing threats to both consumer data and major international events. Organizations are urged to enhance their security protocols and remain vigilant against phishing attempts. This underscores the critical importance of proactive cybersecurity strategies in today's digital landscape.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-trump-mobile-data-breach-fifa-world-cup-phishing-cisa-responds-to-supply-chain-attacks/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 31 2026",
+            "headline": "AI Vape Offers Bitcoin Rewards—A High-Tech Smoking Experience",
+            "title": "Gudtrip AI Vape Promises Bitcoin Rewards with Every Puff",
+            "content": "A new AI-powered vape device called Gudtrip is making waves by offering Bitcoin rewards for each puff taken. The device, advertised with the tagline \"every hit delivers Bitcoin,\" aims to attract tech-savvy cannabis enthusiasts. Gudtrip leverages AI to track usage and distribute cryptocurrency incentives, potentially revolutionizing the vaping experience. While the concept is innovative, it raises questions about privacy and data collection, as the device monitors user behavior closely. Enthusiasts are advised to weigh the novelty against potential privacy concerns before adopting this high-tech gadget.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/933916/ai-powered-crypto-cannabis-vape",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Pinterest Slashes AI Costs 90%—Boosts Image Recommendation Accuracy",
+            "title": "Pinterest Overhauls AI Model to Cut Costs and Improve Accuracy",
+            "content": "Pinterest has achieved a 90% reduction in AI operational costs by revamping the vision layer of its Qwen3-VL model. The company's CTO, Matt Madrigal, led the initiative to replace the costly vision layer with proprietary embeddings, enhancing image recommendation accuracy by 30%. With 620 million monthly users, the cost savings are significant, allowing Pinterest to allocate resources more efficiently. This strategic move highlights the importance of optimizing AI models for scalability and cost-effectiveness in large-scale applications. Developers and tech leaders should consider similar approaches to balance performance and expenses.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/pinterest-cut-ai-costs-90-by-gutting-a-frontier-models-vision-layer",
+            "relatedResources": []
+        },
+        {
+            "date": "May 30 2026",
+            "headline": "AI Grifters Exploit Fake Identities—Target Shein Shoppers",
+            "title": "AI-Generated Personas Used to Market Shein Products on TikTok",
+            "content": "AI-driven grifters are creating fake Black personas to market Shein products on TikTok, exploiting social media platforms for deceptive advertising. One such persona, Aliyah, is portrayed as a Black woman struggling to sell handmade buckles, appealing to viewers' emotions. This tactic raises ethical concerns about the misuse of AI to fabricate identities and manipulate consumer behavior. The trend underscores the need for stricter regulations and verification processes on social media to prevent exploitation. Security professionals should be aware of these deceptive practices and advocate for enhanced digital identity verification.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
+            "relatedResources": []
+        },
+        {
+            "date": "May 30 2026",
+            "headline": "SpaceX IPO—A Windfall for Musk, Risky for Investors",
+            "title": "SpaceX's Public Offering Raises Concerns Over Investor Risks",
+            "content": "The announcement of SpaceX's initial public offering (IPO) has sparked debate over potential risks for investors. While the IPO could significantly benefit Elon Musk and his team, critics warn that retail investors may face substantial financial exposure. Comparisons to the WeWork IPO highlight concerns about overvaluation and market volatility. As SpaceX prepares to go public, tech leaders and investors should carefully assess the company's financial health and market position. This development serves as a reminder of the complexities involved in investing in high-profile tech ventures.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/940001/elon-musk-spacex-ipo-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Coders Rely on AI—Risk Lower Code Quality",
+            "title": "AI Dependency Among Coders May Compromise Code Quality",
+            "content": "The increasing reliance on AI tools by coders is raising concerns about the quality of code being produced. While AI accelerates coding processes, researchers caution that it may not enhance code quality, potentially leading to long-term issues. This dependency could result in less robust and secure software, posing risks for developers and end-users alike. Tech leaders should encourage balanced use of AI, combining human oversight with automated assistance to maintain high standards. Awareness and training on AI's limitations are crucial for sustainable software development practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Demystifying AI Jargon—Essential Glossary for Tech Professionals",
+            "title": "Comprehensive AI Glossary Clarifies Key Terms for Professionals",
+            "content": "As AI continues to evolve, a plethora of new terms and slang has emerged, often leaving professionals nodding along without full understanding. TechCrunch has compiled a glossary that defines crucial AI-related words and phrases, aiding professionals in navigating the complex landscape. This resource is invaluable for developers, security experts, and tech leaders seeking to stay informed and effective in their roles. Understanding AI terminology is essential for clear communication and strategic decision-making in the rapidly changing tech environment. Professionals are encouraged to familiarize themselves with this glossary to enhance their expertise.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+            "relatedResources": []
+        },
         {
             "date": "May 30 2026",
             "headline": "Ex-Meta Engineer Bets on Old School Web—Profits Soar",
@@ -147,15 +201,6 @@ const websiteContent = {
             "content": "Craig Campbell, a former Meta engineer, has successfully launched a traditional website venture, bucking the trend of AI-focused startups. Campbell, who previously sold an e-commerce tool in 2022, opted to create a website instead of diving into the AI sector, despite his strong background in technology and engineering. This decision comes amidst a surge of investor interest in AI, highlighting a contrarian approach that is paying off. Campbell's project underscores a growing niche market for traditional web services, even as AI continues to dominate tech headlines. Professionals in the tech industry should consider the potential of non-AI ventures in a landscape increasingly saturated with AI solutions.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/938245/past-maps-website-google-zero-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "May 27 2026",
-            "headline": "Warp Leverages GPT-5.5 for Open Source Development",
-            "title": "Warp Integrates GPT-5.5 to Enhance Open Source and Cloud Workflows",
-            "content": "Warp is integrating GPT-5.5 and other OpenAI models to streamline coding across local, cloud, and open-source environments. This initiative aims to enhance collaboration and efficiency among coding agents, leveraging the advanced capabilities of GPT-5.5. By coordinating development workflows, Warp seeks to improve productivity and innovation in open-source projects. This move reflects a broader trend of utilizing AI to optimize software development processes. Developers and tech leaders should explore how AI models like GPT-5.5 can be integrated into their own workflows to drive efficiency and innovation.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/warp",
             "relatedResources": []
         },
         {
@@ -228,51 +273,6 @@ const websiteContent = {
             "content": "Following Nvidia's $20 billion not-acqui-hire, AI chip startup Groq is reportedly raising $650 million to pivot towards AI inference technology. This strategic shift aims to enhance the efficiency of AI models in processing and responding to data prompts. Groq's move underscores the growing importance of inference in AI development, as companies seek to optimize performance and reduce latency. Investors and tech leaders should monitor Groq's progress, as successful funding could accelerate advancements in AI hardware and software integration. This development highlights the dynamic nature of the AI chip industry.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "XCENA Raises $135M—Tackles AI's Memory Bottleneck",
-            "title": "XCENA Secures $135M to Address AI Memory Constraints",
-            "content": "South Korean chip startup XCENA has raised $135 million, focusing on overcoming AI's memory bottleneck rather than computational power. XCENA's approach involves developing memory-centric architectures to improve data throughput and reduce latency in AI systems. This funding round highlights a shift in addressing AI performance challenges, emphasizing memory efficiency as a critical factor. Developers and tech leaders should explore XCENA's innovations for potential integration into AI solutions, as memory constraints continue to impact AI scalability and performance. This investment marks a pivotal moment in AI hardware evolution.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Boston Children's Uses AI for Rare Disease Diagnoses",
-            "title": "Boston Children's Hospital Leverages AI for Enhanced Patient Diagnoses",
-            "content": "Boston Children's Hospital is utilizing OpenAI technology to improve patient care and diagnose over 40 rare diseases. By integrating AI into their diagnostic processes, the hospital aims to reduce operational burdens and enhance accuracy in identifying complex conditions. This application of AI in healthcare demonstrates its potential to transform medical diagnostics and patient outcomes. Healthcare professionals should consider the implications of AI-driven diagnostics for improving efficiency and precision in medical practice. The success of this initiative could pave the way for broader AI adoption in healthcare settings.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/boston-childrens-hospital",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "ClickUp Cuts 22% Workforce—AI Replaces Jobs",
-            "title": "AI Layoffs Surge as ClickUp Replaces 22% of Workforce with AI",
-            "content": "In a striking move, ClickUp has laid off 22% of its workforce, opting to replace these roles with AI agents. This decision is part of a broader trend in 2026 where companies are increasingly relying on AI, often without fully understanding the complexities of human roles. Aaron Levie, founder of Box, describes this phenomenon as \"AI psychosis,\" where decision-makers overestimate AI's capabilities. The impact is significant, affecting not only the laid-off employees but also raising concerns about the future of work and job security across the tech industry. Companies must balance AI integration with human expertise to avoid potential pitfalls.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "CEOs Suffer from \"AI Psychosis\"—Levie's Stark Warning",
-            "title": "Box Founder Aaron Levie Warns of CEO \"AI Psychosis\" in Workforce Decisions",
-            "content": "Aaron Levie, founder of Box, has coined the term \"AI psychosis\" to describe a growing trend among CEOs who are replacing human jobs with AI without fully understanding the roles involved. This trend is exemplified by ClickUp's recent decision to cut 22% of its workforce in favor of AI agents. Levie warns that such decisions could lead to significant disruptions in the workforce, as AI is not yet capable of fully replicating human expertise and judgment. The tech industry must tread carefully, ensuring that AI complements rather than replaces human roles.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "MeMo Boosts LLMs by 26% Without Retraining",
-            "title": "MeMo Framework Enhances LLM Performance by 26% Without Retraining",
-            "content": "The MeMo framework, developed by researchers from multiple universities, offers a breakthrough in enhancing large language models (LLMs) by encoding new knowledge without the need for retraining. This approach results in a 26% performance improvement, addressing a major challenge in enterprise AI where current solutions are often costly and slow. MeMo's innovative method allows LLMs to acquire new information efficiently, making it a valuable tool for enterprises looking to optimize their AI capabilities without incurring significant retraining costs.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/memo-memory-model-teams-upgrade-llm-without-retraining",
             "relatedResources": []
         }
     ],
