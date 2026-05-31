@@ -5,38 +5,65 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 30 2026",
+            "headline": "Palo Alto VPN Flaw Exploited—Corporate Networks at Risk",
+            "title": "Hackers Exploit Palo Alto GlobalProtect VPN Authentication Bypass Flaw",
+            "content": "Palo Alto Networks has issued a warning about active exploitation of a critical authentication bypass vulnerability in its GlobalProtect VPN, identified as CVE-2026-0257. This flaw allows attackers to bypass authentication mechanisms, potentially compromising corporate networks. The vulnerability affects PAN-OS versions used in enterprise environments, posing a significant risk to organizations relying on GlobalProtect for secure remote access. This development underscores the increasing sophistication of threat actors targeting VPN infrastructures. Companies using affected versions should prioritize patching to mitigate potential breaches and safeguard sensitive data.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/palo-alto-globalprotect-vpn-auth-bypass-flaw-now-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 30 2026",
+            "headline": "Critical Flowise RCE Vulnerability—Exploit Code Released",
+            "title": "Exploit Code Published for Flowise Remote Code Execution Vulnerability",
+            "content": "Security researchers have released exploit code for a critical remote code execution (RCE) vulnerability affecting self-hosted Flowise servers. The flaw allows attackers to execute arbitrary code by tricking users into importing a malicious chatflow, posing a severe threat to system integrity. This vulnerability highlights the risks associated with user-generated content in software platforms. Administrators of Flowise servers should immediately review their security configurations and apply any available patches to prevent exploitation. The release of exploit code increases the urgency for users to secure their systems against potential attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploit-code-published-for-critical-flowise-rce-vulnerability/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Gogs Zero-Day Threatens Servers—Patch Urgently Needed",
+            "title": "Gogs Zero-Day Vulnerability Enables Remote Code Execution via Argument Injection",
+            "content": "A zero-day vulnerability in Gogs, a self-hosted Git service, has been disclosed, allowing remote code execution through argument injection. The flaw, with a CVSS score of 9.4, can be exploited by authenticated users via pull requests with malicious branch names. This critical issue poses a significant threat to organizations using Gogs for version control, as it could lead to unauthorized access and data breaches. Administrators should monitor for updates and apply patches as soon as they become available to protect their systems from potential exploitation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/gogs-zero-day-exposes-servers-to-remote-code-execution/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Chrome 148 Update—151 Vulnerabilities Patched",
+            "title": "Google Releases Chrome 148 Update Addressing 151 Security Vulnerabilities",
+            "content": "Google has rolled out Chrome version 148, addressing 151 security vulnerabilities, including several critical-severity issues that could lead to remote code execution. This update is crucial for maintaining browser security, as Chrome remains a primary target for cyberattacks. Users are advised to update their browsers immediately to mitigate risks associated with these vulnerabilities. The update underscores the importance of regular software maintenance and patch management in safeguarding against potential threats. Chrome users can access the update through the browser's built-in updater.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-148-update-patches-151-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Charter Communications Breach—4.9M Accounts Compromised",
+            "title": "ShinyHunters Breach Charter Communications, Exposing 4.9 Million Accounts",
+            "content": "The ShinyHunters extortion group has compromised Charter Communications, resulting in the theft of personal information from 4.9 million accounts. This breach, which occurred in early April, was confirmed by the data breach notification service Have I Been Pwned. The stolen data includes sensitive customer information, raising concerns about identity theft and fraud. Affected users should monitor their accounts for suspicious activity and consider changing passwords as a precaution. This incident highlights the ongoing threat of cyber extortion groups targeting large corporations.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/charter-communications-data-breach-affects-49-million-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 28 2026",
+            "headline": "FortiClient EMS Flaw Used to Spread Infostealer",
+            "title": "Hackers Exploit FortiClient EMS Vulnerability to Deploy EKZ Infostealer",
+            "content": "Cybercriminals are exploiting an authentication bypass vulnerability, CVE-2026-35616, in FortiClient Enterprise Management Server (EMS) to distribute a credential-stealing malware known as EKZ. This vulnerability allows attackers to bypass security controls and deploy malware, compromising sensitive information. Organizations using FortiClient EMS should urgently apply security patches to prevent unauthorized access and data theft. This attack underscores the critical need for robust security measures and timely updates in enterprise environments to defend against evolving threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-forticlient-ems-flaw-to-push-infostealer-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 30 2026",
             "headline": "PAN-OS Flaw Exploited—7.8 CVSS Authentication Bypass Alert",
             "title": "Active Exploitation of PAN-OS GlobalProtect Authentication Bypass CVE-2026-0257",
             "content": "Palo Alto Networks has issued a warning regarding the active exploitation of a medium-severity vulnerability, CVE-2026-0257, affecting PAN-OS and Prisma Access. This authentication bypass flaw, with a CVSS score of 7.8, allows unauthorized access to affected systems. The vulnerability is being exploited in the wild, posing a significant risk to organizations using these products. Security professionals are urged to apply available patches and review access logs for signs of compromise. This incident underscores the critical need for timely updates and vigilant monitoring of network security systems.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "FortiClient EMS Flaw—Credential Stealer Campaign Ongoing",
-            "title": "Threat Actors Exploit FortiClient EMS Vulnerability to Deploy Credential Stealer",
-            "content": "A critical vulnerability in FortiClient Endpoint Management Server (EMS) is being actively exploited by threat actors to distribute credential-stealing malware. The flaw, now patched, was leveraged to compromise trusted endpoint management infrastructure, facilitating malware deployment across managed endpoints. Organizations using FortiClient EMS should ensure all systems are updated to prevent exploitation. This campaign highlights the persistent threat posed by unpatched vulnerabilities in critical infrastructure. Security teams must prioritize patch management and monitor for unusual activity on managed devices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Carnival Breach—6 Million Customers' Data Exposed",
-            "title": "Carnival Data Breach Puts 6 Million Customers at Identity Theft Risk",
-            "content": "A data breach at Carnival Corporation has exposed the personal information of nearly 6 million customers, raising significant identity theft concerns. The breach highlights vulnerabilities in data protection practices within the cruise industry. Affected individuals face potential risks of identity theft and fraud, necessitating immediate protective measures such as credit monitoring and account vigilance. This incident serves as a stark reminder of the importance of robust cybersecurity measures in safeguarding sensitive customer data. Organizations must reassess their security protocols to prevent similar breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/carnival-data-breach-exposed-6-million-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Gogs Zero-Day—Remote Code Execution Threat",
-            "title": "Unpatched Gogs Zero-Day Vulnerability Allows Remote Code Execution",
-            "content": "An unpatched zero-day vulnerability in Gogs, a self-hosted Git service, is currently being exploited to achieve remote code execution (RCE) on internet-facing instances. This flaw poses a significant threat to developers and organizations relying on Gogs for version control. Immediate action is required to mitigate potential exploitation, including restricting access to Gogs instances and monitoring for suspicious activity. The vulnerability underscores the ongoing risks associated with unpatched software and the importance of proactive security measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-gogs-zero-day-flaw-lets-hackers-get-remote-code-execution/",
             "relatedResources": []
         },
         {
@@ -64,15 +91,6 @@ const websiteContent = {
             "content": "Cybersecurity researchers have identified a vulnerability in OpenAI's ChatGPT, dubbed ChatGPhish, which exploits the AI's trust in Markdown links and images to facilitate phishing attacks. This vulnerability allows attackers to inject malicious prompts, potentially leading users to phishing sites. The flaw impacts users interacting with ChatGPT web summaries, posing a significant risk to those relying on AI-generated content for information. As AI tools become increasingly integrated into daily operations, this discovery underscores the importance of scrutinizing AI outputs for security vulnerabilities. Users are advised to remain vigilant and verify the authenticity of links and images in AI-generated content.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 28 2026",
-            "headline": "Microsoft Criticizes Zero-Day Disclosures—Urges Coordinated Reporting",
-            "title": "Microsoft Advocates for Coordinated Vulnerability Disclosure Amid GitHub Account Removal",
-            "content": "Microsoft has voiced strong support for Coordinated Vulnerability Disclosure (CVD), urging researchers to collaborate with vendors before publicly disclosing vulnerabilities. This stance follows the removal of a GitHub researcher's account, highlighting tensions in the cybersecurity community over zero-day disclosures. Microsoft emphasizes that premature disclosure can hinder vendors' ability to address vulnerabilities effectively, potentially leaving systems exposed. The tech giant's call for CVD aims to foster a more secure ecosystem by allowing vendors time to understand and mitigate risks. Security professionals are encouraged to engage in responsible disclosure practices to enhance overall cybersecurity resilience.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-slams-public-zero-day.html",
             "relatedResources": []
         },
         {
@@ -119,27 +137,63 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/in-other-news-trump-mobile-data-breach-fifa-world-cup-phishing-cisa-responds-to-supply-chain-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "ShinyHunters Leak 42M Charter Records",
-            "title": "Charter Communications Data Breach Could Impact Nearly 5 Million",
-            "content": "The ShinyHunters extortion group has leaked over 42 million records allegedly stolen from Charter Communications, potentially affecting nearly 5 million customers. The breach, which occurred in April, includes sensitive personal information, raising significant privacy concerns. Charter Communications is currently assessing the full impact and working to mitigate the damage. This incident is part of a broader trend of data breaches targeting large corporations, emphasizing the need for enhanced security measures. Affected customers are advised to monitor their accounts for suspicious activity and consider identity theft protection services.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/charter-communications-data-breach-could-impact-nearly-5-million/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "LLM Agent Used in Marimo Exploit",
-            "title": "Attackers Use LLM Agent for Post-Exploitation After Marimo CVE-2026-39987 Exploit",
-            "content": "An unknown threat actor has leveraged a large language model (LLM) agent for post-compromise actions following the exploitation of Marimo network's CVE-2026-39987 vulnerability. This attack involved an internet-reachable Marimo system, highlighting the evolving tactics of cybercriminals using AI tools. The exploitation allows attackers to execute arbitrary commands, posing significant risks to affected systems. Organizations using Marimo are urged to apply available patches and strengthen their network defenses. This incident underscores the increasing intersection of AI and cybersecurity threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 30 2026",
+            "headline": "Ex-Meta Engineer Bets on Old School Web—Profits Soar",
+            "title": "Craig Campbell's Traditional Web Venture Defies AI Trend, Finds Success",
+            "content": "Craig Campbell, a former Meta engineer, has successfully launched a traditional website venture, bucking the trend of AI-focused startups. Campbell, who previously sold an e-commerce tool in 2022, opted to create a website instead of diving into the AI sector, despite his strong background in technology and engineering. This decision comes amidst a surge of investor interest in AI, highlighting a contrarian approach that is paying off. Campbell's project underscores a growing niche market for traditional web services, even as AI continues to dominate tech headlines. Professionals in the tech industry should consider the potential of non-AI ventures in a landscape increasingly saturated with AI solutions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/938245/past-maps-website-google-zero-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "Warp Leverages GPT-5.5 for Open Source Development",
+            "title": "Warp Integrates GPT-5.5 to Enhance Open Source and Cloud Workflows",
+            "content": "Warp is integrating GPT-5.5 and other OpenAI models to streamline coding across local, cloud, and open-source environments. This initiative aims to enhance collaboration and efficiency among coding agents, leveraging the advanced capabilities of GPT-5.5. By coordinating development workflows, Warp seeks to improve productivity and innovation in open-source projects. This move reflects a broader trend of utilizing AI to optimize software development processes. Developers and tech leaders should explore how AI models like GPT-5.5 can be integrated into their own workflows to drive efficiency and innovation.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/warp",
+            "relatedResources": []
+        },
+        {
+            "date": "May 30 2026",
+            "headline": "SoftBank Commits €75B to French Data Centers",
+            "title": "SoftBank to Invest €75 Billion in Expanding French Data Center Capacity",
+            "content": "SoftBank has announced plans to invest up to €75 billion in developing and operating new data centers in France, aiming to add 5 gigawatts of capacity. This significant investment underscores SoftBank's commitment to expanding its infrastructure footprint in Europe, addressing growing demand for data processing and storage. The initiative is set to bolster France's position as a key data hub in the region. Companies relying on data-intensive operations should anticipate enhanced capabilities and potentially lower costs due to increased competition and capacity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 30 2026",
+            "headline": "Github Copilot's New Billing Model Sparks Developer Outrage",
+            "title": "Developers Criticize Github Copilot's Shift to Token-Based Billing",
+            "content": "Microsoft's Github Copilot has introduced a new token-based billing system, prompting backlash from developers who view it as a move away from its previously accessible pricing model. This change marks a shift in how developers interact with the AI-powered coding assistant, potentially increasing costs for frequent users. The decision reflects broader industry trends towards monetizing AI services more aggressively. Developers should reassess their usage of Copilot and consider alternative tools or budget adjustments to accommodate potential cost increases.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 30 2026",
+            "headline": "Meta's AI Pendant—A New Frontier in Wearable Tech",
+            "title": "Meta Ventures into AI Hardware with Development of AI Pendant",
+            "content": "Meta is reportedly developing an AI-powered pendant, signaling a strategic move into AI-integrated hardware. This wearable device is expected to leverage Meta's AI capabilities to offer unique functionalities, potentially transforming how users interact with technology. The development aligns with Meta's broader strategy to innovate in the AI space, particularly in consumer electronics. Tech leaders and developers should monitor this development for potential impacts on the wearable tech market and opportunities for integration with existing platforms.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 30 2026",
+            "headline": "Google’s Gemini Spark—A Handy AI Assistant for Daily Tasks",
+            "title": "Google Launches Gemini Spark, an AI Assistant for Everyday Automation",
+            "content": "Google has introduced Gemini Spark, an AI assistant designed to automate daily tasks such as inbox management and event planning. Despite its utility, questions remain about the decision to release it as a standalone product. Gemini Spark showcases Google's ongoing efforts to integrate AI into everyday life, offering users enhanced convenience and productivity. Professionals should evaluate the potential of AI assistants like Gemini Spark to streamline routine tasks and improve workflow efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/",
+            "relatedResources": []
+        },
         {
             "date": "May 30 2026",
             "headline": "Browser Wars 2026—Top Chrome and Safari Alternatives",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "The MeMo framework, developed by researchers from multiple universities, offers a breakthrough in enhancing large language models (LLMs) by encoding new knowledge without the need for retraining. This approach results in a 26% performance improvement, addressing a major challenge in enterprise AI where current solutions are often costly and slow. MeMo's innovative method allows LLMs to acquire new information efficiently, making it a valuable tool for enterprises looking to optimize their AI capabilities without incurring significant retraining costs.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/orchestration/memo-memory-model-teams-upgrade-llm-without-retraining",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Coders' AI Dependence—A Double-Edged Sword",
-            "title": "Coders' Reliance on AI Tools May Compromise Code Quality",
-            "content": "As AI tools become integral to coding, researchers warn that while these tools accelerate code production, they may not necessarily improve code quality. This reliance could lead to long-term issues, as developers might overlook fundamental coding principles in favor of speed. The tech industry must address this growing dependency by ensuring that AI tools are used to complement, not replace, developers' skills. Coders should focus on maintaining high standards of code quality, even as they leverage AI for efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "AI Glossary—Decode the Jargon",
-            "title": "Understanding AI: A Glossary of Essential Terms and Slang",
-            "content": "The rapid advancement of AI technology has introduced a plethora of new terms and slang, often leaving professionals nodding along without full comprehension. To bridge this knowledge gap, a comprehensive glossary has been compiled, defining key AI terms and phrases. This resource aims to empower professionals by providing clear explanations, ensuring they are well-equipped to engage in informed discussions about AI developments. Staying updated with this evolving vocabulary is crucial for anyone involved in the tech industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Pinterest Slashes AI Costs 90%—Boosts Accuracy 30%",
-            "title": "Pinterest Overhauls Qwen3-VL Model to Cut AI Costs and Improve Accuracy",
-            "content": "Pinterest has dramatically reduced its AI operational costs by 90% while enhancing recommendation accuracy by 30%, thanks to a strategic overhaul of the Qwen3-VL model's vision layer. With 620 million monthly users, the platform faced unsustainable expenses by calling the frontier model for every image recommendation. CTO Matt Madrigal led the initiative to replace Qwen3-VL's vision layer with proprietary embeddings, achieving significant cost savings and performance improvements. This move underscores the growing trend among tech giants to optimize AI models for scalability and efficiency. Pinterest's approach could serve as a blueprint for other companies grappling with similar challenges.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/pinterest-cut-ai-costs-90-by-gutting-a-frontier-models-vision-layer",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Robot-Training Startup Uses Humans with Cameras for Data",
-            "title": "Innovative Robot-Training Startup Employs Humans to Gather Training Data",
-            "content": "A novel approach to robot training is emerging as a startup deploys humans equipped with head-mounted cameras to collect data for AI models. This method aims to enhance the training of robots by providing them with real-world visual data captured from human perspectives. The initiative reflects a growing trend in AI development where human-assisted data collection is leveraged to improve machine learning models. While the concept raises questions about privacy and data security, it also highlights the innovative strategies companies are adopting to advance robotic capabilities. Professionals in AI and robotics should monitor this development for its potential impact on training methodologies.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/05/robot-training-startup-will-send-humans-wearing-cameras-to-clean-your-home/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "AI Coding Agents Won't Replace Humans—Says Cognition's Scott Wu",
-            "title": "Cognition's Scott Wu Advocates for Human Programmers Amid AI Advancements",
-            "content": "Scott Wu, a prominent figure at Cognition, asserts that AI coding agents like Devin are not intended to replace human programmers. Despite Devin's success as a coding agent, Wu emphasizes the irreplaceable value of human creativity and problem-solving in software development. This perspective aligns with a broader industry sentiment that AI should augment rather than supplant human capabilities. As AI continues to evolve, the role of human oversight and innovation remains crucial in ensuring ethical and effective deployment. Developers and tech leaders should consider this balance when integrating AI solutions into their workflows.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Last Chance to Speak at TechCrunch Disrupt 2026—Apply Today",
-            "title": "Final Day to Submit Applications for TechCrunch Disrupt 2026 Speakers",
-            "content": "Today marks the final opportunity for industry experts to apply to speak at TechCrunch Disrupt 2026. Prospective speakers are encouraged to submit their session topics by the end of the day to participate in shaping the conversations that will define the future of technology. TechCrunch Disrupt is a premier event that gathers innovators, entrepreneurs, and thought leaders from across the globe. This year's event promises to explore cutting-edge trends and breakthroughs in the tech industry. Interested professionals should act swiftly to secure their chance to contribute to this influential platform.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/29/today-is-the-last-day-to-apply-to-speak-at-techcrunch-disrupt-2026/",
             "relatedResources": []
         }
     ],
