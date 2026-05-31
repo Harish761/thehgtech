@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1268",
+      "incident_id": 1268,
+      "title": "Meta's Automated Ad and Targeting Systems Reportedly Enabled Large-Scale Fraud Revenue",
+      "date": "2026-05-31",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1507",
       "incident_id": 1507,
       "title": "Google Gemini Was Allegedly Used to Process Student Data Amid India's Central Board of Secondary Edu",
@@ -2002,9 +2010,9 @@
     }
   ],
   "stats": {
-    "total": 250,
-    "last7Days": 69,
-    "last30Days": 172
+    "total": 251,
+    "last7Days": 70,
+    "last30Days": 173
   },
-  "lastUpdated": "2026-06-01T01:19:40.993391+05:30"
+  "lastUpdated": "2026-06-01T02:42:11.997198+05:30"
 }
