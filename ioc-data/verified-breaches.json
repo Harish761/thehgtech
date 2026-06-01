@@ -5035,6 +5035,26 @@
       "Description": "In May 2017, the education platform <a href=\"https://motherboard.vice.com/en_us/article/hacker-steals-millions-of-user-account-details-from-education-platform-edmodo\" target=\"_blank\" rel=\"noopener\">Edmodo was hacked</a> resulting in the exposure of 77 million records comprised of over 43 million unique customer email addresses. The data was consequently published to a popular hacking forum and made freely available. The records in the breach included usernames, email addresses and bcrypt hashes of passwords."
     }
   ],
+  "edmunds.com": [
+    {
+      "Name": "Edmunds",
+      "Title": "Edmunds",
+      "BreachDate": "2026-01-24",
+      "AddedDate": "2026-06-01T07:39:02Z",
+      "PwnCount": 177860,
+      "DataClasses": [
+        "Device information",
+        "Email addresses",
+        "IP addresses",
+        "Passwords",
+        "Phone numbers",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In January 2026, the automotive research and car-shopping platform <a href=\"https://cybernews.com/security/edmunds-data-breach-shiny-hunters/\" target=\"_blank\" rel=\"noopener\">Edmunds was listed by the ShinyHunters hacking group as having been breached</a>. Data purportedly obtained in the incident was later published publicly and included 178k unique email addresses, usernames, passwords, IP addresses, phone numbers and vehicle-related records."
+    }
+  ],
   "elance.com": [
     {
       "Name": "Elance",
