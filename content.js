@@ -5,47 +5,56 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "May 29 2026",
-            "headline": "ShinyHunters Leak 42M Records—Charter Faces Massive Breach",
-            "title": "Charter Communications Data Breach Exposes 42 Million Records",
-            "content": "The ShinyHunters extortion group has leaked over 42 million records allegedly stolen from Charter Communications, potentially impacting nearly 5 million customers. The breach, which occurred in April, involves sensitive customer information, raising significant privacy and security concerns. Charter Communications has not yet confirmed the extent of the breach, but the leak could affect customer trust and lead to regulatory scrutiny. This incident underscores the persistent threat posed by cybercriminal groups like ShinyHunters, known for targeting large corporations. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords as a precautionary measure.",
+            "headline": "Trump Mobile Breach Exposes Customer Data—FIFA Phishing Surge",
+            "title": "Trump Mobile Data Breach and FIFA World Cup Phishing Threats",
+            "content": "Trump Mobile has suffered a data breach, exposing sensitive customer information, while cybercriminals are targeting the 2026 FIFA World Cup with phishing attacks. The breach at Trump Mobile highlights vulnerabilities in mobile data security, potentially affecting thousands of users. Meanwhile, phishing campaigns are leveraging the global attention on the FIFA World Cup to deceive fans and steal credentials. In response to these threats, the Cybersecurity and Infrastructure Security Agency (CISA) is addressing recent supply chain attacks, emphasizing the need for robust security measures. Organizations and individuals should remain vigilant, update security protocols, and educate users on phishing tactics to mitigate risks.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/charter-communications-data-breach-could-impact-nearly-5-million/",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-trump-mobile-data-breach-fifa-world-cup-phishing-cisa-responds-to-supply-chain-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 31 2026",
+            "headline": "Dutch Authorities Dismantle Botnet—17 Million Devices Freed",
+            "title": "Dutch Authorities Take Down Botnet Affecting 17 Million Devices",
+            "content": "Dutch authorities, in collaboration with the National Cyber Security Center (NCSC), have dismantled a massive botnet comprising over 17 million infected devices, including computers, tablets, smartphones, and IoT devices. This botnet was used to conduct malicious attacks, posing significant threats to global cybersecurity. The operation underscores the critical need for international cooperation in combating cybercrime. Affected device owners are urged to update their systems and employ robust security practices to prevent future infections. This takedown marks a significant victory in the ongoing battle against cybercriminal networks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/dutch-authorities-dismantle-botnet.html",
             "relatedResources": []
         },
         {
             "date": "May 29 2026",
-            "headline": "LLM Agent Used in Marimo Exploit—New Post-Exploitation Tactics",
-            "title": "Attackers Employ LLM Agent for Post-Exploitation in Marimo Network Breach",
-            "content": "An unknown threat actor has leveraged a large language model (LLM) agent for post-compromise activities following the exploitation of a Marimo network vulnerability, CVE-2026-39987. The attack began with the compromise of an internet-accessible Marimo system, allowing the attacker to execute further malicious actions using the LLM agent. This novel use of AI in cyberattacks highlights the evolving tactics of threat actors, posing new challenges for cybersecurity defenses. Organizations using Marimo systems should apply available patches and enhance monitoring for unusual activity. This incident emphasizes the need for AI-aware security strategies in protecting network infrastructures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
+            "headline": "NIST's NVD Faces Backlog—27,000 Security Flaws Unprocessed",
+            "title": "Federal Audit Reveals NIST's NVD Mismanagement and Duplication Issues",
+            "content": "A federal audit has uncovered significant mismanagement within the National Institute of Standards and Technology's (NIST) National Vulnerability Database (NVD), which has resulted in a backlog of 27,000 unprocessed security flaws. The report from the Commerce Inspector General highlights duplication of efforts with a similar program at the Cybersecurity and Infrastructure Security Agency (CISA), leading to inefficiencies. This backlog poses a risk to organizations relying on timely vulnerability information for security measures. The audit calls for improved planning and coordination between agencies to enhance the effectiveness of vulnerability management.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/nist-nvd-audit-mismanagement-duplication/",
             "relatedResources": []
         },
         {
-            "date": "May 28 2026",
-            "headline": "Gogs Vulnerability—Authenticated Users Can Execute Arbitrary Code",
-            "title": "Critical RCE Vulnerability in Gogs Allows Arbitrary Code Execution",
-            "content": "A critical remote code execution (RCE) vulnerability has been identified in Gogs, an open-source Git service, affecting authenticated users. Rated 9.4 on the CVSS scale, this flaw allows users to execute arbitrary code under specific conditions, posing a severe risk to Gogs deployments. Although the vulnerability lacks a CVE identifier, Rapid7 has disclosed its potential impact on self-hosted Git services. Users are urged to apply security updates and review access controls to mitigate risks. This vulnerability highlights the importance of continuous security assessments in open-source software environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/critical-gogs-rce-vulnerability-lets.html",
+            "date": "May 29 2026",
+            "headline": "Swiss Researchers Claim Perfect Random Number Generator",
+            "title": "Swiss Researchers Develop Quantum-Based Perfect Random Number Generator",
+            "content": "Swiss researchers have announced the creation of a perfect random number generator using two quantum superconducting chips, a 30-meter-long pipe, and specialized software. This breakthrough device promises to generate cryptographic keys with unprecedented randomness, enhancing security for applications such as lotteries and blockchain technologies. The innovation could revolutionize the way cryptographic systems are secured, offering a \"public randomness service\" that ensures fairness and unpredictability. As cyber threats evolve, the demand for truly random numbers becomes increasingly critical in protecting sensitive data.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4178750/certifiably-random-swiss-researchers-claim-perfect-random-number-source.html",
             "relatedResources": []
         },
         {
-            "date": "May 28 2026",
-            "headline": "FortiClient EMS Flaw Exploited—Credential Stealer Deployed",
-            "title": "Critical FortiClient EMS Vulnerability Exploited to Deliver EKZ Infostealer",
-            "content": "Cybercriminals are exploiting a critical vulnerability in FortiClient Endpoint Management Server (EMS) to deploy the EKZ Infostealer malware. Despite the flaw being patched, threat actors continue to target unpatched systems, leveraging trusted endpoint management infrastructure to distribute the credential-stealing malware. This vulnerability poses a significant threat to organizations relying on FortiClient EMS for endpoint security. Administrators should ensure all systems are updated with the latest patches and monitor for signs of compromise. This incident underscores the need for timely patch management and robust endpoint security measures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
+            "date": "May 29 2026",
+            "headline": "Notepad++ Vulnerabilities Allow Code Execution—Patch Urgently",
+            "title": "Notepad++ Vulnerabilities Enable Arbitrary Code Execution on Windows",
+            "content": "Two high-severity vulnerabilities in Notepad++ have been identified, allowing local attackers to execute arbitrary code on Windows systems by manipulating the editor's XML configuration files. These flaws, tracked as CVE-2026-48778 and CVE-2026-48800, affect all versions of Notepad++ and are rated with a CVSS score of 7.8. Users are advised to apply patches immediately to mitigate potential exploitation. The discovery highlights the ongoing need for vigilance in software security, particularly in widely-used applications that can serve as entry points for attackers.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4178622/notepad-vulnerabilities-could-enable-arbitrary-code-execution-on-windows-systems.html",
             "relatedResources": []
         },
         {
-            "date": "May 28 2026",
-            "headline": "Microsoft Criticizes Zero-Day Disclosures—Calls for Coordinated Approach",
-            "title": "Microsoft Advocates for Coordinated Vulnerability Disclosure Amid Researcher Account Removal",
-            "content": "Microsoft has reiterated its support for Coordinated Vulnerability Disclosure (CVD), urging researchers to collaborate with vendors before publicizing security flaws. This stance follows the removal of a GitHub researcher account involved in public zero-day disclosures. Microsoft argues that premature disclosure can hinder effective remediation and increase risks to users. The company calls for a balanced approach that allows vendors to address vulnerabilities while maintaining transparency with the security community. This development highlights ongoing debates around responsible disclosure practices and the need for industry-wide standards.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/microsoft-slams-public-zero-day.html",
+            "date": "May 29 2026",
+            "headline": "Gentlemen Ransomware Expands—Self-Propagating Threat Emerges",
+            "title": "Gentlemen Ransomware Uses Self-Propagating Encryptor to Spread Widely",
+            "content": "The Gentlemen ransomware group has developed a self-propagating Go-based encryptor, significantly enhancing its ability to spread across networks. This new capability allows the ransomware to move laterally within compromised environments, increasing the potential damage to affected organizations. Microsoft's recent warning highlights the evolving tactics of ransomware operators who are refining their methods to maximize impact. Organizations are urged to strengthen their network defenses, conduct regular backups, and educate employees on recognizing ransomware threats to prevent widespread infections.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4178580/the-gentlemen-are-coming-for-your-files-and-then-your-network.html",
             "relatedResources": []
         },
         {
@@ -76,33 +85,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "May 29 2026",
-            "headline": "Gogs Zero-Day Threatens Servers—Patch Urgently Needed",
-            "title": "Gogs Zero-Day Vulnerability Enables Remote Code Execution via Argument Injection",
-            "content": "A zero-day vulnerability in Gogs, a self-hosted Git service, has been disclosed, allowing remote code execution through argument injection. The flaw, with a CVSS score of 9.4, can be exploited by authenticated users via pull requests with malicious branch names. This critical issue poses a significant threat to organizations using Gogs for version control, as it could lead to unauthorized access and data breaches. Administrators should monitor for updates and apply patches as soon as they become available to protect their systems from potential exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/gogs-zero-day-exposes-servers-to-remote-code-execution/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Chrome 148 Update—151 Vulnerabilities Patched",
-            "title": "Google Releases Chrome 148 Update Addressing 151 Security Vulnerabilities",
-            "content": "Google has rolled out Chrome version 148, addressing 151 security vulnerabilities, including several critical-severity issues that could lead to remote code execution. This update is crucial for maintaining browser security, as Chrome remains a primary target for cyberattacks. Users are advised to update their browsers immediately to mitigate risks associated with these vulnerabilities. The update underscores the importance of regular software maintenance and patch management in safeguarding against potential threats. Chrome users can access the update through the browser's built-in updater.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-148-update-patches-151-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Charter Communications Breach—4.9M Accounts Compromised",
-            "title": "ShinyHunters Breach Charter Communications, Exposing 4.9 Million Accounts",
-            "content": "The ShinyHunters extortion group has compromised Charter Communications, resulting in the theft of personal information from 4.9 million accounts. This breach, which occurred in early April, was confirmed by the data breach notification service Have I Been Pwned. The stolen data includes sensitive customer information, raising concerns about identity theft and fraud. Affected users should monitor their accounts for suspicious activity and consider changing passwords as a precaution. This incident highlights the ongoing threat of cyber extortion groups targeting large corporations.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/charter-communications-data-breach-affects-49-million-accounts/",
-            "relatedResources": []
-        },
-        {
             "date": "May 30 2026",
             "headline": "PAN-OS Flaw Exploited—7.8 CVSS Authentication Bypass Alert",
             "title": "Active Exploitation of PAN-OS GlobalProtect Authentication Bypass CVE-2026-0257",
@@ -110,36 +92,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
             "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "MokN Secures $15M to Expand Phish-Back Platform",
-            "title": "MokN Raises $15 Million for Innovative Phish-Back Security Platform",
-            "content": "MokN has successfully raised $15 million to advance its Phish-Back platform, which uses realistic decoy access points to trap attackers and identify compromised credentials. This funding will enable MokN to enhance its capabilities in detecting and responding to phishing attacks before they result in data breaches. The platform's proactive approach offers organizations a strategic advantage in cybersecurity, emphasizing the growing trend of using deception technologies to combat cyber threats. Security leaders should consider integrating such innovative solutions into their defense strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/mokn-raises-15-million-for-phish-back-platform/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "DDoS-as-a-Service—Subscription Models Fuel Attack Surge",
-            "title": "Inside the Evolving DDoS-as-a-Service Market: Subscription-Based Attacks",
-            "content": "The DDoS-as-a-Service market is evolving, with attacks now being offered as subscription services complete with pricing tiers and support. This commoditization of DDoS attacks allows even low-skilled threat actors to launch sophisticated attacks, increasing the frequency and scale of incidents. Organizations must bolster their defenses against this growing threat by investing in robust DDoS protection solutions and monitoring for unusual traffic patterns. The trend towards professionalized cybercrime services highlights the need for continuous adaptation in cybersecurity strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/from-5-attacks-to-botnet-powered-platforms-inside-the-ddos-as-a-service-market/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "ChatGPhish Exploits ChatGPT—Phishing via Markdown Links",
-            "title": "ChatGPhish Vulnerability in ChatGPT Enables Phishing Attacks via Prompt Injections",
-            "content": "Cybersecurity researchers have identified a vulnerability in OpenAI's ChatGPT, dubbed ChatGPhish, which exploits the AI's trust in Markdown links and images to facilitate phishing attacks. This vulnerability allows attackers to inject malicious prompts, potentially leading users to phishing sites. The flaw impacts users interacting with ChatGPT web summaries, posing a significant risk to those relying on AI-generated content for information. As AI tools become increasingly integrated into daily operations, this discovery underscores the importance of scrutinizing AI outputs for security vulnerabilities. Users are advised to remain vigilant and verify the authenticity of links and images in AI-generated content.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 29 2026",
+            "headline": "ClickUp Cuts 22% Workforce—AI Replaces Jobs",
+            "title": "AI Psychosis Leads to Significant Workforce Reductions at ClickUp",
+            "content": "ClickUp has announced a reduction of 22% of its workforce, replacing these roles with AI agents, a move that has sparked debate over the understanding of job functions by decision-makers. Box founder Aaron Levie criticizes this trend as \"AI psychosis,\" where executives overly rely on AI without comprehending the nuances of human roles. This development reflects a broader trend in 2026, where companies are increasingly adopting AI solutions at the expense of human jobs. The impact is significant, affecting employees across various sectors who may find their roles automated without adequate consideration of the complexities involved. Professionals should assess the implications of AI integration in their industries and advocate for balanced approaches that recognize the value of human expertise.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "CEOs Suffer AI Psychosis—Aaron Levie Criticizes Trend",
+            "title": "Aaron Levie Warns of AI Psychosis Among Tech CEOs",
+            "content": "Aaron Levie, founder of Box, has raised concerns about what he terms \"AI psychosis\" among tech CEOs, who are increasingly replacing human roles with AI without fully understanding the job complexities. This phenomenon is exemplified by ClickUp's recent decision to cut 22% of its workforce in favor of AI agents. Levie's comments highlight a growing disconnect between executive decisions and the operational realities of their companies. The trend poses risks not only to employees but also to the long-term sustainability of businesses that may overlook the nuanced contributions of human workers. Industry leaders are urged to critically evaluate the integration of AI in their operations and ensure that technological advancements complement rather than replace human capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 27 2026",
+            "headline": "Warp Leverages GPT-5.5 for Open Source Development",
+            "title": "Warp Utilizes GPT-5.5 to Enhance Open Source Development Workflows",
+            "content": "Warp is making a strategic move by integrating OpenAI's GPT-5.5 into its development workflows, aiming to streamline coordination across local, cloud, and open-source environments. This integration allows coding agents to operate more efficiently, potentially transforming how developers collaborate and manage projects. By leveraging the capabilities of GPT-5.5, Warp seeks to enhance productivity and innovation in software development. The impact is particularly significant for developers who rely on open-source tools, as this could lead to more seamless and efficient coding processes. Developers should explore how such integrations can optimize their workflows and consider adopting similar AI-driven approaches to stay competitive.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/warp",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "NVIDIA Cosmos 3—Revolutionizing Physical AI Reasoning",
+            "title": "NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning",
+            "content": "NVIDIA has unveiled Cosmos 3, the first open omni-model designed for physical AI reasoning and action, marking a significant advancement in AI capabilities. This model aims to integrate various AI functions to enable more comprehensive understanding and interaction with physical environments. The introduction of Cosmos 3 represents a leap forward in AI's ability to perform complex tasks that require physical reasoning, potentially impacting industries ranging from robotics to autonomous vehicles. Professionals in AI and related fields should examine the potential applications of Cosmos 3 in their domains and consider how such models can enhance operational efficiencies and innovation.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "May 31 2026",
+            "headline": "Erin Brockovich Challenges Data Center Secrecy",
+            "title": "Erin Brockovich Targets Lack of Transparency in Data Centers",
+            "content": "Environmental activist Erin Brockovich has launched a campaign against the secrecy surrounding data centers, highlighting concerns over their environmental impact. Brockovich's initiative seeks to bring transparency to the operations of these facilities, which are often criticized for their significant energy consumption and carbon footprint. This move underscores a growing demand for accountability in tech infrastructure, as data centers play a crucial role in supporting AI and cloud services. Industry stakeholders are encouraged to engage in discussions about sustainable practices and consider implementing measures to reduce the environmental impact of their operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/",
+            "relatedResources": []
+        },
+        {
+            "date": "May 31 2026",
+            "headline": "AI Psychosis Debate—Are CEOs Prone to It?",
+            "title": "Exploring the Debate on AI Psychosis Among Tech CEOs",
+            "content": "The latest episode of the Equity podcast delves into the contentious topic of \"AI psychosis\" among tech CEOs, questioning whether they are uniquely prone to this condition. The discussion centers on the tendency of some executives to overly embrace AI solutions without fully understanding their implications, potentially leading to misguided business decisions. This debate is particularly relevant in the context of recent workforce reductions attributed to AI integration, as seen with companies like ClickUp. Industry professionals should critically assess the role of AI in strategic decision-making and advocate for balanced approaches that consider both technological advancements and human expertise.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/",
+            "relatedResources": []
+        },
         {
             "date": "May 31 2026",
             "headline": "AI Vape Offers Bitcoin Rewards—A High-Tech Smoking Experience",
@@ -147,15 +156,6 @@ const websiteContent = {
             "content": "A new AI-powered vape device called Gudtrip is making waves by offering Bitcoin rewards for each puff taken. The device, advertised with the tagline \"every hit delivers Bitcoin,\" aims to attract tech-savvy cannabis enthusiasts. Gudtrip leverages AI to track usage and distribute cryptocurrency incentives, potentially revolutionizing the vaping experience. While the concept is innovative, it raises questions about privacy and data collection, as the device monitors user behavior closely. Enthusiasts are advised to weigh the novelty against potential privacy concerns before adopting this high-tech gadget.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/933916/ai-powered-crypto-cannabis-vape",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Pinterest Slashes AI Costs 90%—Boosts Image Recommendation Accuracy",
-            "title": "Pinterest Overhauls AI Model to Cut Costs and Improve Accuracy",
-            "content": "Pinterest has achieved a 90% reduction in AI operational costs by revamping the vision layer of its Qwen3-VL model. The company's CTO, Matt Madrigal, led the initiative to replace the costly vision layer with proprietary embeddings, enhancing image recommendation accuracy by 30%. With 620 million monthly users, the cost savings are significant, allowing Pinterest to allocate resources more efficiently. This strategic move highlights the importance of optimizing AI models for scalability and cost-effectiveness in large-scale applications. Developers and tech leaders should consider similar approaches to balance performance and expenses.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/pinterest-cut-ai-costs-90-by-gutting-a-frontier-models-vision-layer",
             "relatedResources": []
         },
         {
@@ -174,24 +174,6 @@ const websiteContent = {
             "content": "The announcement of SpaceX's initial public offering (IPO) has sparked debate over potential risks for investors. While the IPO could significantly benefit Elon Musk and his team, critics warn that retail investors may face substantial financial exposure. Comparisons to the WeWork IPO highlight concerns about overvaluation and market volatility. As SpaceX prepares to go public, tech leaders and investors should carefully assess the company's financial health and market position. This development serves as a reminder of the complexities involved in investing in high-profile tech ventures.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/940001/elon-musk-spacex-ipo-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Coders Rely on AI—Risk Lower Code Quality",
-            "title": "AI Dependency Among Coders May Compromise Code Quality",
-            "content": "The increasing reliance on AI tools by coders is raising concerns about the quality of code being produced. While AI accelerates coding processes, researchers caution that it may not enhance code quality, potentially leading to long-term issues. This dependency could result in less robust and secure software, posing risks for developers and end-users alike. Tech leaders should encourage balanced use of AI, combining human oversight with automated assistance to maintain high standards. Awareness and training on AI's limitations are crucial for sustainable software development practices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Demystifying AI Jargon—Essential Glossary for Tech Professionals",
-            "title": "Comprehensive AI Glossary Clarifies Key Terms for Professionals",
-            "content": "As AI continues to evolve, a plethora of new terms and slang has emerged, often leaving professionals nodding along without full understanding. TechCrunch has compiled a glossary that defines crucial AI-related words and phrases, aiding professionals in navigating the complex landscape. This resource is invaluable for developers, security experts, and tech leaders seeking to stay informed and effective in their roles. Understanding AI terminology is essential for clear communication and strategic decision-making in the rapidly changing tech environment. Professionals are encouraged to familiarize themselves with this glossary to enhance their expertise.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
             "relatedResources": []
         },
         {
@@ -246,33 +228,6 @@ const websiteContent = {
             "content": "As the browser wars intensify, new contenders are emerging to challenge the dominance of Chrome and Safari. TechCrunch highlights several innovative browsers that are gaining traction in 2026, offering unique features and enhanced privacy controls. These alternatives aim to address user concerns over data privacy and performance, leveraging advancements in AI and machine learning to optimize browsing experiences. Security professionals should evaluate these options for potential vulnerabilities and integration capabilities within enterprise environments. Staying informed about these developments is crucial as browser security remains a significant concern in the cybersecurity landscape.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/30/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "AI-Generated Quotes Controversy Hits 'Future of Truth' Author",
-            "title": "'Future of Truth' Author Faces Backlash Over AI-Generated Content",
-            "content": "The author of 'Future of Truth,' a book exploring AI's influence on reality perception, is under scrutiny for using AI-generated quotes without disclosure. Critics argue that this undermines the book's credibility and raises ethical questions about AI's role in content creation. The controversy highlights the broader challenges of transparency and authenticity in AI-generated media. Professionals in AI ethics and content creation should consider the implications of undisclosed AI use, as it can impact trust and integrity in published works. This incident underscores the need for clear guidelines on AI content usage.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/future-of-truth-ai-interview/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Free Cleaning for AI Data—Shift's Unusual Offer",
-            "title": "Shift Offers Free Home Cleaning in Exchange for AI Training Data",
-            "content": "AI training startup Shift is offering free home cleaning services in New York City, with plans to expand to London, in exchange for video footage of household chores. This footage will be used to train AI models in understanding and automating domestic tasks. While the offer is appealing, it raises privacy concerns about data collection in private spaces. Security professionals should assess the potential risks of such data being misused or exposed. This initiative reflects a growing trend of using real-world data to enhance AI capabilities, but it also highlights the need for robust data protection measures.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Groq Seeks $650M for AI Inference Shift Post-Nvidia Deal",
-            "title": "Groq Pursues $650M Funding to Focus on AI Inference Technology",
-            "content": "Following Nvidia's $20 billion not-acqui-hire, AI chip startup Groq is reportedly raising $650 million to pivot towards AI inference technology. This strategic shift aims to enhance the efficiency of AI models in processing and responding to data prompts. Groq's move underscores the growing importance of inference in AI development, as companies seek to optimize performance and reduce latency. Investors and tech leaders should monitor Groq's progress, as successful funding could accelerate advancements in AI hardware and software integration. This development highlights the dynamic nature of the AI chip industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/",
             "relatedResources": []
         }
     ],
