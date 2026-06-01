@@ -1,20 +1,20 @@
 {
   "incidents": [
     {
+      "id": "AIID-1507",
+      "incident_id": 1507,
+      "title": "COEMPT Quality Assurance Engineers Allegedly Violated Indian CBSE Student Data Privacy Rights by Pro",
+      "date": "2026-06-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1268",
       "incident_id": 1268,
       "title": "Meta's Automated Ad and Targeting Systems Reportedly Enabled Large-Scale Fraud Revenue",
       "date": "2026-05-31",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1507",
-      "incident_id": 1507,
-      "title": "Google Gemini Was Allegedly Used to Process Student Data Amid India's Central Board of Secondary Edu",
-      "date": "2026-05-31",
-      "category": "other",
-      "severity": "medium"
     },
     {
       "id": "AIID-1508",
@@ -2014,5 +2014,5 @@
     "last7Days": 70,
     "last30Days": 173
   },
-  "lastUpdated": "2026-06-01T02:42:11.997198+05:30"
+  "lastUpdated": "2026-06-01T10:38:50.651535+05:30"
 }
