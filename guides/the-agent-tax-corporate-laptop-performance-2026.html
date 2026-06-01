@@ -674,9 +674,10 @@
                 <li><a href="#the-real-problem">4. The Real Problem: Nobody Owns the Laptop</a></li>
                 <li><a href="#agent-stack-breakdown">5. Security Stack Breakdown: What Kills Performance?</a></li>
                 <li><a href="#the-fixes">6. The Fixes: How to Reclaim Performance</a></li>
-                <li><a href="#endpoint-governance">7. Establishing an Endpoint Governance Board</a></li>
-                <li><a href="#conclusion">8. Conclusion: Security Must Enable, Not Hinder</a></li>
-                <li><a href="#faq">9. Frequently Asked Questions (FAQ)</a></li>
+                <li><a href="#vendor-exclusion-guidelines">7. Vendor-Specific Exclusion Guidelines</a></li>
+                <li><a href="#endpoint-governance">8. Establishing an Endpoint Governance Board</a></li>
+                <li><a href="#conclusion">9. Conclusion: Security Must Enable, Not Hinder</a></li>
+                <li><a href="#faq">10. Frequently Asked Questions (FAQ)</a></li>
             </ul>
         </div>
 
@@ -841,7 +842,197 @@
         <p>Move SSL decryption and deep packet inspection off the endpoint and into the cloud (SASE edge) wherever possible. The endpoint agent should merely be a lightweight traffic forwarder, not the engine doing the cryptographic heavy lifting.</p>
 
         <!-- ===== SECTION 7 ===== -->
-        <h2 id="endpoint-governance">7. Establishing an Endpoint Governance Board</h2>
+        <h2 id="vendor-exclusion-guidelines">7. Vendor-Specific Exclusion Guidelines</h2>
+
+        <p>Proper exclusion management is the most effective way to eliminate the Agent Tax. Below are the top 5 tools across major categories, why exclusions are critical for them, and where to find the official documentation.</p>
+
+        <div class="info-box" style="background: rgba(255, 61, 61, 0.1); border-left: 4px solid var(--accent-red); margin-bottom: 2rem;">
+            <h4 style="margin-top: 0; color: var(--accent-red);"><i class="fas fa-exclamation-triangle"></i> Important Note</h4>
+            <p style="margin-bottom: 0;"><strong>Always check the official source for the latest information.</strong> Improperly configured exclusions can create massive security blind spots. Exclusions should be verified by the Security team and tested in a staging environment before broad deployment.</p>
+        </div>
+
+        <h3>1. Endpoint Detection & Response (EDR / XDR)</h3>
+        <p><strong>What it does:</strong> EDR exclusions bypass kernel-level file scanning, process hooking, and behavioral monitoring for specified paths (e.g., developer directories) or processes (e.g., compilers).</p>
+        <p><strong>Why it must be done:</strong> EDRs cause massive I/O multiplication. Compiling code or running local databases without exclusions will cause the EDR to scan thousands of rapidly changing temporary files, grinding the CPU to a halt.</p>
+        <div class="table-responsive">
+            <table class="m-table">
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Official Exclusion Documentation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Microsoft Defender</strong></td>
+                        <td><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions" target="_blank" rel="noopener">Configure Defender Exclusions</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CrowdStrike Falcon</strong></td>
+                        <td><a href="https://falcon.crowdstrike.com/support/documentation" target="_blank" rel="noopener">Falcon Sensor Exclusions (Login req)</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>SentinelOne</strong></td>
+                        <td><a href="https://community.sentinelone.com/s/article/Configuring-Exclusions" target="_blank" rel="noopener">S1 Knowledge Base (Login req)</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Palo Alto Cortex XDR</strong></td>
+                        <td><a href="https://docs.paloaltonetworks.com/cortex/cortex-xdr/cortex-xdr-pro-admin/endpoint-security/exceptions-profiles" target="_blank" rel="noopener">Cortex Exception Profiles</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trellix EDR</strong></td>
+                        <td><a href="https://docs.trellix.com/" target="_blank" rel="noopener">Trellix Exclusion Settings</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>2. Data Loss Prevention (DLP)</h3>
+        <p><strong>What it does:</strong> DLP exclusions prevent the agent from inspecting file contents, clipboard copies, and web uploads for sensitive data (like credit cards or source code) within trusted applications or folders.</p>
+        <p><strong>Why it must be done:</strong> DLPs are notorious for breaking large file transfers, slowing down IDEs, and blocking developer tools like Git. Excluding internal dev folders prevents the DLP from trying to read thousands of lines of source code during a commit.</p>
+        <div class="table-responsive">
+            <table class="m-table">
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Official Exclusion Documentation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Microsoft Purview DLP</strong></td>
+                        <td><a href="https://learn.microsoft.com/en-us/purview/dlp-configure-endpoint-settings" target="_blank" rel="noopener">Purview Endpoint DLP Settings</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Symantec DLP</strong></td>
+                        <td><a href="https://techdocs.broadcom.com/us/en/symantec-security-software/information-security/data-loss-prevention/16-0/managing-symantec-dlp-agents/agent-configuration-and-settings/ignoring-files-for-symantec-dlp-agents.html" target="_blank" rel="noopener">Symantec Ignored File Paths</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Forcepoint DLP</strong></td>
+                        <td><a href="https://help.forcepoint.com/dlp/en-us/document.html" target="_blank" rel="noopener">Forcepoint Endpoint Bypasses</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Netskope DLP</strong></td>
+                        <td><a href="https://docs.netskope.com/en/netskope-help/data-security/data-loss-prevention/" target="_blank" rel="noopener">Netskope Exceptions</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Proofpoint Endpoint DLP</strong></td>
+                        <td><a href="https://www.proofpoint.com/us/products/information-protection/endpoint-dlp" target="_blank" rel="noopener">Proofpoint ITM/DLP Config</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>3. Privilege Access Management (PAM)</h3>
+        <p><strong>What it does:</strong> PAM exclusions allow specific approved applications to run with elevated/admin privileges without requiring a UAC prompt, MFA, or a helpdesk ticket, while suppressing behavioral blocking.</p>
+        <p><strong>Why it must be done:</strong> Developers and IT staff frequently run scripts, start services, and install modules (e.g., Docker, npm global). Without trust policies/exclusions, the PAM agent will intercept and block every terminal command that requires elevation.</p>
+        <div class="table-responsive">
+            <table class="m-table">
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Official Exclusion Documentation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CyberArk EPM</strong></td>
+                        <td><a href="https://docs.cyberark.com/Product-Doc/OnlineHelp/EPM/Latest/en/Content/Admin/Policies-Bypass.htm" target="_blank" rel="noopener">CyberArk EPM Bypass Policies</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>BeyondTrust Endpoint Privilege Mgt</strong></td>
+                        <td><a href="https://www.beyondtrust.com/docs/privilege-management/index.htm" target="_blank" rel="noopener">BeyondTrust Trusted Apps</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Delinea Privilege Manager</strong></td>
+                        <td><a href="https://docs.delinea.com/privilege-manager/latest/policies/index.htm" target="_blank" rel="noopener">Delinea Allow/Deny Policies</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>ManageEngine PAM360</strong></td>
+                        <td><a href="https://www.manageengine.com/privileged-access-management/help/index.html" target="_blank" rel="noopener">PAM360 Resource Exclusions</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Admin By Request</strong></td>
+                        <td><a href="https://www.adminbyrequest.com/en/docs" target="_blank" rel="noopener">Admin By Request Auto-Approval</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>4. SASE / VPN / Proxy Clients</h3>
+        <p><strong>What it does:</strong> Exclusions (often called "Bypass Lists" or "Split Tunnelling") tell the VPN/SASE client to send specific traffic directly to the internet, rather than routing it through the cloud inspection proxy.</p>
+        <p><strong>Why it must be done:</strong> Traffic like Zoom, Microsoft Teams, Windows Updates, or high-bandwidth cloud backups will cripple the SASE proxy and cause extreme latency. Bypassing trusted, high-bandwidth applications keeps real-time apps fast and reduces network-processing overhead.</p>
+        <div class="table-responsive">
+            <table class="m-table">
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Official Exclusion Documentation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Zscaler Client Connector</strong></td>
+                        <td><a href="https://help.zscaler.com/z-app/configuring-app-profiles" target="_blank" rel="noopener">Zscaler App Profile Bypasses</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Palo Alto GlobalProtect</strong></td>
+                        <td><a href="https://docs.paloaltonetworks.com/globalprotect/10-1/globalprotect-admin/globalprotect-gateways/split-tunnel-traffic-on-globalprotect-gateways" target="_blank" rel="noopener">GlobalProtect Split Tunnelling</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cisco Secure Client (AnyConnect)</strong></td>
+                        <td><a href="https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/119006-configure-anyconnect-00.html" target="_blank" rel="noopener">Cisco Split Tunnel Configuration</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Netskope Client</strong></td>
+                        <td><a href="https://docs.netskope.com/en/netskope-help/traffic-steering/steering-configuration/adding-exceptions/" target="_blank" rel="noopener">Netskope Steering Exceptions</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cloudflare WARP</strong></td>
+                        <td><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/" target="_blank" rel="noopener">Cloudflare Split Tunnels</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>5. Vulnerability Scanners</h3>
+        <p><strong>What it does:</strong> Exclusions prevent the local scanning agent from crawling specific directories, network mounts, or running intrusive scripts against sensitive applications during a vulnerability sweep.</p>
+        <p><strong>Why it must be done:</strong> Scanning massive node_modules folders, external hard drives, or network-attached storage (NAS) can cause disks to thrash and freeze the entire OS. Excluding deep developer dependencies prevents the scanner from stalling on millions of tiny files.</p>
+        <div class="table-responsive">
+            <table class="m-table">
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Official Exclusion Documentation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Qualys Cloud Agent</strong></td>
+                        <td><a href="https://docs.qualys.com/en/ca/latest/getting_started/configure_agent_profile.htm" target="_blank" rel="noopener">Qualys Agent Performance Profiles</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tenable Nessus Agent</strong></td>
+                        <td><a href="https://docs.tenable.com/nessus-agent/Content/BlackoutWindows.htm" target="_blank" rel="noopener">Tenable Agent Exclusions/Blackouts</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rapid7 Insight Agent</strong></td>
+                        <td><a href="https://docs.rapid7.com/insight-agent/configure-agent-settings" target="_blank" rel="noopener">Rapid7 Scan Exclusions</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CrowdStrike Spotlight</strong></td>
+                        <td><a href="https://falcon.crowdstrike.com/support/documentation" target="_blank" rel="noopener">Spotlight Tuning (Login req)</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Microsoft Defender Vuln Mgt</strong></td>
+                        <td><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-exceptions" target="_blank" rel="noopener">Defender TVM Exceptions</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===== SECTION 8 ===== -->
+        <h2 id="endpoint-governance">8. Establishing an Endpoint Governance Board</h2>
 
         <p>Technical fixes are band-aids if you do not fix the organizational problem. You must establish an <strong>Endpoint Governance Board (EGB)</strong>.</p>
 
@@ -859,8 +1050,8 @@
         </ul>
         <p>If the new DLP agent adds 30 seconds to the boot time and degrades compile time by 20%, the Security team must justify that business impact to the board, or return to the vendor and demand tuning.</p>
 
-        <!-- ===== SECTION 8 ===== -->
-        <h2 id="conclusion">8. Conclusion: Security Must Enable, Not Hinder</h2>
+        <!-- ===== SECTION 9 ===== -->
+        <h2 id="conclusion">9. Conclusion: Security Must Enable, Not Hinder</h2>
 
         <p>Security teams often forget that the primary purpose of a corporate laptop is not to be a secure vault; its primary purpose is to allow an employee to do their job and generate revenue for the business.</p>
 
@@ -870,7 +1061,7 @@
 
 
         <!-- ===== FAQ ===== -->
-        <h2 id="faq">9. Frequently Asked Questions (FAQ)</h2>
+        <h2 id="faq">10. Frequently Asked Questions (FAQ)</h2>
 
         <div class="info-box" style="background: transparent; border: 1px solid var(--border);">
             <h4 style="margin-top: 0; color: var(--text-primary);">Q: Why does Task Manager show my EDR only using 2% CPU, but my laptop is freezing?</h4>
