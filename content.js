@@ -4,12 +4,57 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "May 29 2026",
-            "headline": "Trump Mobile Breach Exposes Customer Data—FIFA Phishing Surge",
-            "title": "Trump Mobile Data Breach and FIFA World Cup Phishing Threats",
-            "content": "Trump Mobile has suffered a data breach, exposing sensitive customer information, while cybercriminals are targeting the 2026 FIFA World Cup with phishing attacks. The breach at Trump Mobile highlights vulnerabilities in mobile data security, potentially affecting thousands of users. Meanwhile, phishing campaigns are leveraging the global attention on the FIFA World Cup to deceive fans and steal credentials. In response to these threats, the Cybersecurity and Infrastructure Security Agency (CISA) is addressing recent supply chain attacks, emphasizing the need for robust security measures. Organizations and individuals should remain vigilant, update security protocols, and educate users on phishing tactics to mitigate risks.",
+            "date": "Jun 01 2026",
+            "headline": "WP Maps Pro Flaw—Hackers Gain Admin Access to WordPress Sites",
+            "title": "WP Maps Pro Vulnerability CVE-2026-8732 Allows Unauthorized Admin Account Creation",
+            "content": "A critical vulnerability identified as CVE-2026-8732 in the WP Maps Pro plugin for WordPress is being actively exploited by attackers to gain administrative access to websites. This flaw permits unauthenticated users to create admin accounts, compromising the security of affected installations. WordPress site owners using WP Maps Pro are at significant risk of unauthorized access and potential data breaches. The vulnerability highlights the ongoing threat posed by third-party plugins in the WordPress ecosystem. Administrators are urged to update the plugin immediately to mitigate the risk of exploitation.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-trump-mobile-data-breach-fifa-world-cup-phishing-cisa-responds-to-supply-chain-attacks/",
+            "sourceUrl": "https://www.securityweek.com/wp-maps-pro-vulnerability-exploited-to-take-over-wordpress-sites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Dashlane Users Locked Out—Brute Force Attacks Surge",
+            "title": "Brute Force Attacks Lock Out Dashlane Password Manager Users",
+            "content": "Dashlane users are facing account lockouts due to a surge in brute force attacks targeting the password manager. Attackers are attempting unauthorized logins from remote locations and unknown devices, exploiting weak security practices. This incident underscores the importance of strong, unique passwords and enabling two-factor authentication for added security. Dashlane has advised users to review their account security settings and monitor for suspicious activity. The attacks highlight the increasing sophistication of threat actors targeting password management tools.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/dashlane-password-manager-users-locked-out-by-brute-force-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Instagram Accounts Hacked—Meta's AI Bot Exploited",
+            "title": "Hackers Exploit Meta's AI Bot to Hijack Instagram Accounts",
+            "content": "Hackers have exploited Meta's AI support bot to take control of high-profile Instagram accounts, including those of the Obama White House and the Chief Master Sergeant of the U.S. Space Force. The attackers circulated instructions on Telegram to manipulate the AI bot into resetting account credentials, leading to temporary defacement with pro-Iranian content. This breach highlights vulnerabilities in AI-driven support systems and the need for robust security measures. Meta is investigating the incident and working to enhance the security of its AI systems.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Windows Netlogon Flaw—Patch CVE-2026-41089 Now",
+            "title": "Critical Windows Netlogon Vulnerability CVE-2026-41089 Requires Immediate Patching",
+            "content": "A critical vulnerability, CVE-2026-41089, in Windows Netlogon is under active exploitation, prompting urgent calls for patching. This flaw allows attackers to gain unauthorized access to network services, posing a severe risk to organizations relying on Windows Server environments. The vulnerability is part of a broader trend of targeting essential network protocols to disrupt operations. Security experts recommend immediate application of available patches to prevent potential breaches. Organizations should prioritize this update to safeguard their network infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-windows-netlogon-vulnerability-in-attackers-crosshairs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Belgium Warns—Windows Netlogon RCE Exploited in Attacks",
+            "title": "Windows Netlogon RCE Vulnerability Actively Exploited in Belgium",
+            "content": "The Centre for Cybersecurity Belgium (CCB) has issued a warning about active exploitation of a critical Windows Netlogon remote code execution (RCE) vulnerability. Despite recent patching, threat actors are leveraging this flaw to conduct attacks, emphasizing the need for immediate action. This vulnerability, affecting Windows Server environments, allows attackers to execute arbitrary code and potentially take control of affected systems. Organizations are urged to apply security updates without delay to mitigate the risk of compromise.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/critical-windows-netlogon-remote-code-execution-flaw-now-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Palo Alto Networks Flaw—CVE-2026-0257 Exploited for Weeks",
+            "title": "Authentication Bypass in Palo Alto Networks PAN-OS Exploited Post-Disclosure",
+            "content": "CVE-2026-0257, an authentication bypass vulnerability in Palo Alto Networks PAN-OS, has been actively exploited by hackers just days after its public disclosure. The flaw allows unauthorized access to network systems, posing a significant threat to organizations using affected versions of PAN-OS. This incident underscores the critical need for timely patch management and vulnerability assessment. Security teams should prioritize updating to the latest PAN-OS version to protect against potential breaches. The exploitation of this vulnerability highlights the persistent threat landscape facing network security products.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/recent-palo-alto-networks-vulnerability-exploited-for-weeks/",
             "relatedResources": []
         },
         {
@@ -19,42 +64,6 @@ const websiteContent = {
             "content": "Dutch authorities, in collaboration with the National Cyber Security Center (NCSC), have dismantled a massive botnet comprising over 17 million infected devices, including computers, tablets, smartphones, and IoT devices. This botnet was used to conduct malicious attacks, posing significant threats to global cybersecurity. The operation underscores the critical need for international cooperation in combating cybercrime. Affected device owners are urged to update their systems and employ robust security practices to prevent future infections. This takedown marks a significant victory in the ongoing battle against cybercriminal networks.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/05/dutch-authorities-dismantle-botnet.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "NIST's NVD Faces Backlog—27,000 Security Flaws Unprocessed",
-            "title": "Federal Audit Reveals NIST's NVD Mismanagement and Duplication Issues",
-            "content": "A federal audit has uncovered significant mismanagement within the National Institute of Standards and Technology's (NIST) National Vulnerability Database (NVD), which has resulted in a backlog of 27,000 unprocessed security flaws. The report from the Commerce Inspector General highlights duplication of efforts with a similar program at the Cybersecurity and Infrastructure Security Agency (CISA), leading to inefficiencies. This backlog poses a risk to organizations relying on timely vulnerability information for security measures. The audit calls for improved planning and coordination between agencies to enhance the effectiveness of vulnerability management.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/nist-nvd-audit-mismanagement-duplication/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Swiss Researchers Claim Perfect Random Number Generator",
-            "title": "Swiss Researchers Develop Quantum-Based Perfect Random Number Generator",
-            "content": "Swiss researchers have announced the creation of a perfect random number generator using two quantum superconducting chips, a 30-meter-long pipe, and specialized software. This breakthrough device promises to generate cryptographic keys with unprecedented randomness, enhancing security for applications such as lotteries and blockchain technologies. The innovation could revolutionize the way cryptographic systems are secured, offering a \"public randomness service\" that ensures fairness and unpredictability. As cyber threats evolve, the demand for truly random numbers becomes increasingly critical in protecting sensitive data.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4178750/certifiably-random-swiss-researchers-claim-perfect-random-number-source.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Notepad++ Vulnerabilities Allow Code Execution—Patch Urgently",
-            "title": "Notepad++ Vulnerabilities Enable Arbitrary Code Execution on Windows",
-            "content": "Two high-severity vulnerabilities in Notepad++ have been identified, allowing local attackers to execute arbitrary code on Windows systems by manipulating the editor's XML configuration files. These flaws, tracked as CVE-2026-48778 and CVE-2026-48800, affect all versions of Notepad++ and are rated with a CVSS score of 7.8. Users are advised to apply patches immediately to mitigate potential exploitation. The discovery highlights the ongoing need for vigilance in software security, particularly in widely-used applications that can serve as entry points for attackers.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4178622/notepad-vulnerabilities-could-enable-arbitrary-code-execution-on-windows-systems.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Gentlemen Ransomware Expands—Self-Propagating Threat Emerges",
-            "title": "Gentlemen Ransomware Uses Self-Propagating Encryptor to Spread Widely",
-            "content": "The Gentlemen ransomware group has developed a self-propagating Go-based encryptor, significantly enhancing its ability to spread across networks. This new capability allows the ransomware to move laterally within compromised environments, increasing the potential damage to affected organizations. Microsoft's recent warning highlights the evolving tactics of ransomware operators who are refining their methods to maximize impact. Organizations are urged to strengthen their network defenses, conduct regular backups, and educate employees on recognizing ransomware threats to prevent widespread infections.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4178580/the-gentlemen-are-coming-for-your-files-and-then-your-network.html",
             "relatedResources": []
         },
         {
@@ -96,30 +105,57 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "May 29 2026",
-            "headline": "ClickUp Cuts 22% Workforce—AI Replaces Jobs",
-            "title": "AI Psychosis Leads to Significant Workforce Reductions at ClickUp",
-            "content": "ClickUp has announced a reduction of 22% of its workforce, replacing these roles with AI agents, a move that has sparked debate over the understanding of job functions by decision-makers. Box founder Aaron Levie criticizes this trend as \"AI psychosis,\" where executives overly rely on AI without comprehending the nuances of human roles. This development reflects a broader trend in 2026, where companies are increasingly adopting AI solutions at the expense of human jobs. The impact is significant, affecting employees across various sectors who may find their roles automated without adequate consideration of the complexities involved. Professionals should assess the implications of AI integration in their industries and advocate for balanced approaches that recognize the value of human expertise.",
+            "date": "Jun 01 2026",
+            "headline": "SpaceX IPO Faces Water Resource Challenges",
+            "title": "SpaceX's IPO Plans Impacted by Water Access for Data Centers",
+            "content": "SpaceX has revealed that its upcoming IPO is facing challenges due to the need for significant water resources to cool its data centers. The company has identified access to abundant and affordable water as a critical risk factor in its filing. This requirement underscores the growing importance of sustainable resource management in tech infrastructure. As data centers consume vast amounts of water for cooling, SpaceX's situation highlights a broader industry trend towards environmental considerations in operational planning. Stakeholders and potential investors should be aware of these logistical challenges as they evaluate SpaceX's market entry.",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/",
+            "sourceUrl": "https://techcrunch.com/2026/06/01/water-access-is-now-a-risk-factor-in-spacexs-ipo/",
             "relatedResources": []
         },
         {
-            "date": "May 29 2026",
-            "headline": "CEOs Suffer AI Psychosis—Aaron Levie Criticizes Trend",
-            "title": "Aaron Levie Warns of AI Psychosis Among Tech CEOs",
-            "content": "Aaron Levie, founder of Box, has raised concerns about what he terms \"AI psychosis\" among tech CEOs, who are increasingly replacing human roles with AI without fully understanding the job complexities. This phenomenon is exemplified by ClickUp's recent decision to cut 22% of its workforce in favor of AI agents. Levie's comments highlight a growing disconnect between executive decisions and the operational realities of their companies. The trend poses risks not only to employees but also to the long-term sustainability of businesses that may overlook the nuanced contributions of human workers. Industry leaders are urged to critically evaluate the integration of AI in their operations and ensure that technological advancements complement rather than replace human capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do/",
+            "date": "Jun 01 2026",
+            "headline": "Anthropic's Browser Agent Hijacked 31.5% Before Safeguards",
+            "title": "Anthropic's Browser Agent Vulnerable to Prompt Injection Attacks",
+            "content": "Anthropic's latest browser-based AI model has been compromised in 31.5% of red team tests before its security safeguards were activated. This vulnerability, known as prompt injection, allows attackers to manipulate the AI's responses. The figure is the highest among leading AI companies, with OpenAI, Google, and Meta not disclosing comparable data. This revelation raises concerns about the robustness of AI models in real-world applications and the need for enhanced security measures. Developers and security professionals should prioritize implementing stronger defenses against such attacks to protect AI systems from exploitation.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/anthropic-browser-agent-hijacked-31-percent-before-safeguards-engaged",
             "relatedResources": []
         },
         {
-            "date": "May 27 2026",
-            "headline": "Warp Leverages GPT-5.5 for Open Source Development",
-            "title": "Warp Utilizes GPT-5.5 to Enhance Open Source Development Workflows",
-            "content": "Warp is making a strategic move by integrating OpenAI's GPT-5.5 into its development workflows, aiming to streamline coordination across local, cloud, and open-source environments. This integration allows coding agents to operate more efficiently, potentially transforming how developers collaborate and manage projects. By leveraging the capabilities of GPT-5.5, Warp seeks to enhance productivity and innovation in software development. The impact is particularly significant for developers who rely on open-source tools, as this could lead to more seamless and efficient coding processes. Developers should explore how such integrations can optimize their workflows and consider adopting similar AI-driven approaches to stay competitive.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/warp",
+            "date": "Jun 01 2026",
+            "headline": "Anthropic Files for IPO Amidst AI Industry Buzz",
+            "title": "Anthropic Officially Files for IPO with SEC",
+            "content": "Anthropic has taken a significant step towards going public by filing for an IPO with the U.S. Securities and Exchange Commission. This move follows months of speculation regarding whether Anthropic or OpenAI would be the first to initiate the IPO process. The filing marks a pivotal moment in the AI industry, setting the stage for what is expected to be a substantial public offering. As Anthropic prepares to enter the public market, investors and industry observers will be closely monitoring its financial disclosures and growth strategies. This development highlights the competitive landscape in the AI sector.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/941016/anthropic-has-officially-filed-to-go-public",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Anthropic Confidentially Files for IPO",
+            "title": "Anthropic Moves Forward with Confidential IPO Filing",
+            "content": "Anthropic has announced that it has confidentially filed for an initial public offering, marking a crucial step in its journey to becoming a publicly traded company. This filing allows Anthropic to keep its financial details private while it prepares for the public market. The decision to file confidentially is a strategic move, enabling the company to gauge investor interest and market conditions before making detailed financial disclosures. As Anthropic progresses towards its IPO, industry stakeholders will be watching closely to understand its market positioning and future growth potential.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Windborne Systems Outperforms Government Weather Forecasts",
+            "title": "Windborne Systems' AI Model Surpasses Government Weather Predictions",
+            "content": "Windborne Systems has unveiled a new AI-driven weather forecasting model that surpasses government agency predictions by several days. This advancement demonstrates the potential of AI to enhance accuracy and timeliness in weather forecasting, a critical factor for industries reliant on weather data. The model's superior performance could lead to increased adoption of AI technologies in meteorology, offering more reliable forecasts for agriculture, logistics, and disaster management. As AI continues to revolutionize traditional sectors, professionals in these fields should consider integrating AI-driven insights into their operational strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "JetBrains Unveils Mellum2—12B Mixture-of-Experts Model",
+            "title": "JetBrains Introduces Mellum2: A 12 Billion Parameter AI Model",
+            "content": "JetBrains has launched Mellum2, a 12 billion parameter mixture-of-experts AI model designed to enhance computational efficiency and performance. This model leverages advanced techniques to dynamically allocate computational resources, optimizing for specific tasks and reducing processing time. Mellum2's architecture represents a significant leap in AI model design, offering improved scalability and adaptability for complex applications. Developers and AI researchers should explore Mellum2's capabilities to leverage its potential in diverse fields such as natural language processing and data analysis. This release underscores JetBrains' commitment to advancing AI technology.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/JetBrains/mellum2-launch",
             "relatedResources": []
         },
         {
@@ -201,33 +237,6 @@ const websiteContent = {
             "content": "Microsoft's Github Copilot has introduced a new token-based billing system, prompting backlash from developers who view it as a move away from its previously accessible pricing model. This change marks a shift in how developers interact with the AI-powered coding assistant, potentially increasing costs for frequent users. The decision reflects broader industry trends towards monetizing AI services more aggressively. Developers should reassess their usage of Copilot and consider alternative tools or budget adjustments to accommodate potential cost increases.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "Meta's AI Pendant—A New Frontier in Wearable Tech",
-            "title": "Meta Ventures into AI Hardware with Development of AI Pendant",
-            "content": "Meta is reportedly developing an AI-powered pendant, signaling a strategic move into AI-integrated hardware. This wearable device is expected to leverage Meta's AI capabilities to offer unique functionalities, potentially transforming how users interact with technology. The development aligns with Meta's broader strategy to innovate in the AI space, particularly in consumer electronics. Tech leaders and developers should monitor this development for potential impacts on the wearable tech market and opportunities for integration with existing platforms.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "Google’s Gemini Spark—A Handy AI Assistant for Daily Tasks",
-            "title": "Google Launches Gemini Spark, an AI Assistant for Everyday Automation",
-            "content": "Google has introduced Gemini Spark, an AI assistant designed to automate daily tasks such as inbox management and event planning. Despite its utility, questions remain about the decision to release it as a standalone product. Gemini Spark showcases Google's ongoing efforts to integrate AI into everyday life, offering users enhanced convenience and productivity. Professionals should evaluate the potential of AI assistants like Gemini Spark to streamline routine tasks and improve workflow efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "Browser Wars 2026—Top Chrome and Safari Alternatives",
-            "title": "Emerging Browsers Challenge Chrome and Safari Dominance in 2026",
-            "content": "As the browser wars intensify, new contenders are emerging to challenge the dominance of Chrome and Safari. TechCrunch highlights several innovative browsers that are gaining traction in 2026, offering unique features and enhanced privacy controls. These alternatives aim to address user concerns over data privacy and performance, leveraging advancements in AI and machine learning to optimize browsing experiences. Security professionals should evaluate these options for potential vulnerabilities and integration capabilities within enterprise environments. Staying informed about these developments is crucial as browser security remains a significant concern in the cybersecurity landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/30/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
             "relatedResources": []
         }
     ],
@@ -366,6 +375,17 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48172",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2024-21182",
+            "dateAdded": "Jun 01, 2026",
+            "vendor": "Oracle WebLogic Server",
+            "description": "Oracle WebLogic contains an unspecified vulnerability that could allow an unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server. Successful attacks of this vul",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21182",
             "isZeroDay": false
         }
     ],
