@@ -895,8 +895,36 @@
                 <a href="/comparisons/" class="cta-btn cta-btn-secondary"><i class="fas fa-balance-scale"></i> Compare EDR Tools</a>
             </div>
         </div>
-
+    <!-- Interaction Bar -->
+    <div class="interaction-bar">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+            </button>
+        </div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="window.print()" class="print-btn" title="Print Guide"><i class="fas fa-print"></i></button>
+        </div>
     </div>
+
+    </div><!-- end .container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var isLight = document.body.classList.contains('light-mode') || document.documentElement.getAttribute('data-theme') === 'light';
+            if (typeof mermaid !== 'undefined') {
+                mermaid.initialize({ startOnLoad: true, theme: isLight ? 'default' : 'dark' });
+            }
+        });
+    </script>
+    <script src="/interaction-bar.js?v=20260220"></script>
 
 </body>
 </html>
