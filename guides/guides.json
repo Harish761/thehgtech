@@ -1,6 +1,18 @@
 {
   "guides": [
     {
+      "id": "the-agent-tax-corporate-laptop-performance-2026",
+      "title": "The Agent Tax: Why Corporate Laptops Are Slow (And How to Fix It in 2026)",
+      "category": "Endpoint Security",
+      "excerpt": "Corporate laptops are not slow because Windows is bad. They are slow because of the 'Agent Tax' — the compounding performance penalty of multiple, uncoordinated security agents. Learn why nobody owns the endpoint, and how to reclaim your fleet's performance.",
+      "readTime": "25 min",
+      "level": "All Levels",
+      "date": "Jun 1, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/the-agent-tax-corporate-laptop-performance-2026.png"
+    },
+    {
       "id": "active-directory-vs-entra-id-security-2026",
       "title": "Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift",
       "category": "Identity & Access Management",
