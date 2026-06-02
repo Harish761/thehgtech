@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 02 2026",
+            "headline": "Android Update Fixes Zero-Day—123 Vulnerabilities Patched",
+            "title": "Google Patches Android Zero-Day CVE-2025-48595 and 123 Other Flaws",
+            "content": "Google has released a critical Android security update addressing CVE-2025-48595, a zero-day vulnerability exploited in limited, targeted attacks. This update also patches 123 additional vulnerabilities across various components of the Android operating system. The zero-day flaw, which allowed unauthorized access to sensitive data, underscores the persistent threat of targeted attacks on mobile devices. Users are urged to update their devices immediately to mitigate potential risks. This update highlights the ongoing need for vigilance in mobile security, as threat actors continue to exploit unpatched vulnerabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/android-update-patches-exploited-zero-day-123-other-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "AI Threats Surge—Browsers Now Security Front Line",
+            "title": "Browser Security Critical Amid Rising AI-Powered Attacks and Shadow AI",
+            "content": "As AI-powered attacks become more prevalent, browsers have emerged as a critical front line in cybersecurity. Push Security highlights the growing risks posed by AI-driven threats and the unauthorized use of AI tools, known as shadow AI, within browsers. This trend necessitates enhanced browser visibility for effective threat detection and AI governance. Organizations must prioritize browser security to protect against data breaches and unauthorized access. The rise of AI in cyber threats underscores the importance of integrating AI security measures into existing cybersecurity frameworks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/why-the-browser-is-now-the-front-line-for-ai-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "CISA Warns: Oracle Flaw Exploited in Active Attacks",
+            "title": "CISA Alerts on Active Exploitation of Oracle WebLogic Vulnerability",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an alert regarding the active exploitation of a high-severity vulnerability in Oracle WebLogic Server. This flaw, initially patched two years ago, is now being used in attacks against government systems. CISA has mandated that federal agencies secure their systems against this vulnerability to prevent unauthorized access and potential data breaches. The resurgence of this threat highlights the importance of timely patch management and continuous monitoring of legacy systems.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-weblogic-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "HP VoIP Phones Vulnerable—Network Breach Risk",
+            "title": "Critical Buffer Overflow in HP VoIP Phones Enables Network Breaches",
+            "content": "A critical stack-based buffer overflow vulnerability has been identified in HP VoIP phones, potentially allowing remote code execution on affected devices. This flaw could be exploited by attackers to breach enterprise networks, posing significant risks to organizational security. Enterprises using these devices should apply available patches immediately to mitigate the threat. The vulnerability underscores the importance of securing VoIP systems, which are increasingly targeted by cybercriminals seeking entry points into corporate networks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-vulnerability-in-hp-voip-phones-enables-enterprise-network-breaches/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Oracle WebLogic Servers Under Siege—Patch CVE-2024-21182",
+            "title": "Oracle WebLogic CVE-2024-21182 Exploited Without Authentication",
+            "content": "A critical vulnerability, CVE-2024-21182, in Oracle WebLogic Server is being actively exploited in the wild. This flaw allows attackers to compromise servers without needing authentication, posing a severe risk to affected systems. Organizations using WebLogic Server should prioritize patching to prevent unauthorized access and potential data breaches. The exploitation of this vulnerability highlights the ongoing threat landscape targeting enterprise applications and the necessity for robust security measures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/oracle-weblogic-vulnerability-exploited-in-the-wild/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Google Patches 124 Android Flaws—Zero-Day Included",
+            "title": "June 2026 Android Security Update Fixes Zero-Day and 124 Vulnerabilities",
+            "content": "Google's June 2026 Android security update addresses 124 vulnerabilities, including a zero-day flaw actively exploited in targeted attacks. The zero-day, identified as CVE-2025-48595, allowed attackers to bypass security measures and access sensitive data. This comprehensive update is crucial for maintaining device security and protecting against emerging threats. Users are strongly advised to install the update promptly to safeguard their devices. The patching of these vulnerabilities reflects Google's commitment to enhancing Android security amid evolving cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-fixes-one-actively-exploited-android-zero-day-124-flaws/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
             "headline": "Dashlane Breach: Encrypted Vaults of 20 Users Compromised",
             "title": "Dashlane Discloses Brute-Force Attack on Encrypted User Vaults",
             "content": "Dashlane, a prominent password manager, has revealed a security breach affecting fewer than 20 users on its personal subscription plan. An unidentified threat actor executed a brute-force attack, successfully downloading encrypted vaults. The breach was identified on May 31, 2026, and the company has since bolstered its security measures. While the vaults remain encrypted, users are advised to update their master passwords and enable two-factor authentication. This incident underscores the persistent threat of brute-force attacks against password management solutions.",
@@ -37,24 +91,6 @@ const websiteContent = {
             "content": "A critical vulnerability in WP Maps Pro, a popular WordPress plugin, is being actively exploited to create unauthorized administrator accounts. With over 15,000 sales on the Envato Market, this plugin allows for customizable Google Maps integration, making it a prime target for attackers. Site owners are urged to update to the latest version and review user accounts for suspicious activity. This exploitation highlights the ongoing risks posed by unpatched plugins in the WordPress ecosystem. Security teams should prioritize patch management to mitigate such threats.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "ChatGPhish: ChatGPT Vulnerability Enables Phishing Attacks",
-            "title": "ChatGPT Vulnerability Exposes Users to Phishing via Markdown Links",
-            "content": "Researchers have identified a vulnerability in OpenAI's ChatGPT, termed ChatGPhish, which exploits the AI's trust in Markdown links and images to facilitate phishing attacks. This flaw allows malicious actors to inject prompts that can deceive users into revealing sensitive information. The discovery highlights the need for enhanced security measures in AI systems, particularly those handling user-generated content. Users are advised to exercise caution when interacting with Markdown links in AI-generated content. This vulnerability emphasizes the evolving nature of AI-related security challenges.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 29 2026",
-            "headline": "Trump Mobile Breach and FIFA Phishing Alert",
-            "title": "Trump Mobile Data Breach and FIFA World Cup Phishing Campaign",
-            "content": "Recent cybersecurity incidents include a data breach at Trump Mobile, exposing customer information, and a phishing campaign targeting the 2026 FIFA World Cup. The Cybersecurity and Infrastructure Security Agency (CISA) is actively responding to these threats, emphasizing the need for vigilance in the face of increasing supply chain attacks. Organizations are advised to strengthen their cybersecurity frameworks and educate users on recognizing phishing attempts. These incidents reflect the persistent and varied nature of cyber threats in today's digital landscape.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-trump-mobile-data-breach-fifa-world-cup-phishing-cisa-responds-to-supply-chain-attacks/",
             "relatedResources": []
         },
         {
@@ -101,43 +137,61 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/critical-windows-netlogon-remote-code-execution-flaw-now-exploited-in-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Palo Alto Networks Flaw—CVE-2026-0257 Exploited for Weeks",
-            "title": "Authentication Bypass in Palo Alto Networks PAN-OS Exploited Post-Disclosure",
-            "content": "CVE-2026-0257, an authentication bypass vulnerability in Palo Alto Networks PAN-OS, has been actively exploited by hackers just days after its public disclosure. The flaw allows unauthorized access to network systems, posing a significant threat to organizations using affected versions of PAN-OS. This incident underscores the critical need for timely patch management and vulnerability assessment. Security teams should prioritize updating to the latest PAN-OS version to protect against potential breaches. The exploitation of this vulnerability highlights the persistent threat landscape facing network security products.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/recent-palo-alto-networks-vulnerability-exploited-for-weeks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 31 2026",
-            "headline": "Dutch Authorities Dismantle Botnet—17 Million Devices Freed",
-            "title": "Dutch Authorities Take Down Botnet Affecting 17 Million Devices",
-            "content": "Dutch authorities, in collaboration with the National Cyber Security Center (NCSC), have dismantled a massive botnet comprising over 17 million infected devices, including computers, tablets, smartphones, and IoT devices. This botnet was used to conduct malicious attacks, posing significant threats to global cybersecurity. The operation underscores the critical need for international cooperation in combating cybercrime. Affected device owners are urged to update their systems and employ robust security practices to prevent future infections. This takedown marks a significant victory in the ongoing battle against cybercriminal networks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/dutch-authorities-dismantle-botnet.html",
-            "relatedResources": []
-        },
-        {
-            "date": "May 31 2026",
-            "headline": "WP Maps Pro Flaw—Hackers Create Rogue Admin Accounts",
-            "title": "WP Maps Pro Plugin Exploited to Create Unauthorized Admin Accounts",
-            "content": "Hackers are exploiting a vulnerability in the WP Maps Pro plugin for WordPress, allowing them to create unauthorized administrator accounts without authentication. This flaw poses a significant risk to websites using the affected plugin version, potentially leading to full site compromise. Administrators are advised to update the plugin to the latest version and review user accounts for suspicious activity. This incident highlights the critical importance of maintaining up-to-date plugins and monitoring for vulnerabilities in widely-used content management systems like WordPress.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/wp-maps-pro-bug-exploited-to-create-admin-accounts-on-wordpress-sites/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "May 27 2026",
-            "headline": "Warp Leverages GPT-5.5 for Open Source Development",
-            "title": "Warp Integrates GPT-5.5 to Enhance Open Source and Cloud Workflows",
-            "content": "Warp has announced its integration of GPT-5.5 and OpenAI models to streamline coding processes across local, cloud, and open-source development environments. This strategic move aims to enhance collaboration and efficiency by using AI to coordinate coding agents effectively. The integration promises to optimize workflows, making it easier for developers to manage complex projects across different platforms. This development is particularly significant for open-source communities, which rely heavily on seamless collaboration. Developers should explore how Warp's new capabilities can be integrated into their existing workflows to maximize productivity.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/warp",
+            "date": "Jun 02 2026",
+            "headline": "Anthropic Expands Mythos to Safeguard 100M in 15 Nations",
+            "title": "Anthropic's Mythos Targets Critical Infrastructure in 15 Countries",
+            "content": "Anthropic is scaling its Project Glasswing security initiative, extending access to its Mythos platform to 150 organizations across 15 countries. This expansion targets critical infrastructure sectors such as power, water, healthcare, and communications, where potential cyberattacks could impact up to 100 million people. The initiative aims to bolster defenses against vulnerabilities that could lead to widespread disruptions. By focusing on these essential services, Anthropic underscores the growing need for robust cybersecurity measures in sectors that form the backbone of national economies. Organizations involved are urged to integrate Mythos into their security protocols to mitigate risks effectively.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Microsoft Unveils Surface RTX Spark Dev Box for Developers",
+            "title": "Microsoft Launches Surface RTX Spark Dev Box for Developer Use",
+            "content": "Microsoft has announced the Surface RTX Spark Dev Box, a compact PC designed for developers, powered by Nvidia's new Arm-based RTX Spark chips. This release follows the recent unveiling of the Surface Laptop Ultra, which shares the same chip architecture. The Dev Box is optimized for sustained workloads, offering developers a robust platform for coding and testing applications. This move highlights Microsoft's commitment to providing cutting-edge tools for the developer community, enhancing productivity and innovation. Developers are encouraged to explore the capabilities of the RTX Spark Dev Box to streamline their workflows.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/941271/microsoft-surface-rtx-spark-dev-box-specs-availability",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Trump Revises AI Order—Voluntary Model Reviews Now Required",
+            "title": "Trump Signs Revised AI Executive Order After Industry Pushback",
+            "content": "President Trump has signed a narrower executive order on AI oversight, following objections from the tech industry. The revised order mandates voluntary prerelease government reviews of advanced AI models, rather than compulsory assessments. This change reflects a compromise between regulatory oversight and industry autonomy, aiming to balance innovation with safety. The executive order's revision comes amid growing concerns over the ethical and security implications of AI technologies. Companies developing advanced AI systems should prepare for voluntary compliance with these new guidelines to ensure responsible deployment.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order-on-ai-oversight-after-industry-objections/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "OpenAI Enhances Codex for Enterprise Knowledge Work",
+            "title": "OpenAI Expands Codex Capabilities for White-Collar Applications",
+            "content": "OpenAI has unveiled new tools for its Codex platform, targeting enterprise users and expanding its utility in white-collar work environments. These enhancements aim to improve Codex's application in knowledge work, facilitating tasks such as document drafting, data analysis, and project management. OpenAI's internal report highlights the growing adoption of Codex in various business sectors, emphasizing its role in boosting productivity and efficiency. Enterprises are encouraged to integrate Codex into their workflows to leverage AI-driven insights and automation. This development marks a significant step in AI's integration into professional settings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Microsoft Build 2026: AI, Windows, and RTX Spark Highlights",
+            "title": "Key Announcements from Microsoft Build 2026 Developer Conference",
+            "content": "Microsoft's annual Build 2026 developer conference has commenced in San Francisco, showcasing innovations in AI, Windows, and the new RTX Spark technology. The event, streamed live, features announcements on AI model advancements and updates to the Windows operating system. Attendees can expect insights into Microsoft's strategic direction, particularly in integrating AI across its product suite. The conference underscores Microsoft's commitment to empowering developers with state-of-the-art tools and platforms. Participants are advised to stay tuned for detailed sessions on leveraging these technologies in their projects.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/941668/microsoft-build-may-2026-live-news-updates",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Holo3.1: Revolutionizing Local Computing with AI Agents",
+            "title": "Holo3.1 Introduces Fast and Local AI Computing Agents",
+            "content": "Hugging Face has launched Holo3.1, a new suite of AI agents designed for fast and local computing. These agents aim to enhance user experience by providing efficient, on-device AI processing, reducing reliance on cloud-based solutions. Holo3.1's capabilities include real-time data processing and personalized user interactions, marking a shift towards more autonomous and privacy-focused AI applications. This release aligns with the growing trend of edge computing, where processing is done closer to the data source. Users and developers are encouraged to explore Holo3.1's potential for creating responsive and secure AI-driven applications.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/Hcompany/holo31",
             "relatedResources": []
         },
         {
@@ -219,51 +273,6 @@ const websiteContent = {
             "content": "Anthropic has announced that it has confidentially filed for an initial public offering, marking a crucial step in its journey to becoming a publicly traded company. This filing allows Anthropic to keep its financial details private while it prepares for the public market. The decision to file confidentially is a strategic move, enabling the company to gauge investor interest and market conditions before making detailed financial disclosures. As Anthropic progresses towards its IPO, industry stakeholders will be watching closely to understand its market positioning and future growth potential.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Windborne Systems Outperforms Government Weather Forecasts",
-            "title": "Windborne Systems' AI Model Surpasses Government Weather Predictions",
-            "content": "Windborne Systems has unveiled a new AI-driven weather forecasting model that surpasses government agency predictions by several days. This advancement demonstrates the potential of AI to enhance accuracy and timeliness in weather forecasting, a critical factor for industries reliant on weather data. The model's superior performance could lead to increased adoption of AI technologies in meteorology, offering more reliable forecasts for agriculture, logistics, and disaster management. As AI continues to revolutionize traditional sectors, professionals in these fields should consider integrating AI-driven insights into their operational strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "JetBrains Unveils Mellum2—12B Mixture-of-Experts Model",
-            "title": "JetBrains Introduces Mellum2: A 12 Billion Parameter AI Model",
-            "content": "JetBrains has launched Mellum2, a 12 billion parameter mixture-of-experts AI model designed to enhance computational efficiency and performance. This model leverages advanced techniques to dynamically allocate computational resources, optimizing for specific tasks and reducing processing time. Mellum2's architecture represents a significant leap in AI model design, offering improved scalability and adaptability for complex applications. Developers and AI researchers should explore Mellum2's capabilities to leverage its potential in diverse fields such as natural language processing and data analysis. This release underscores JetBrains' commitment to advancing AI technology.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "NVIDIA Cosmos 3—Revolutionizing Physical AI Reasoning",
-            "title": "NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning",
-            "content": "NVIDIA has unveiled Cosmos 3, the first open omni-model designed for physical AI reasoning and action, marking a significant advancement in AI capabilities. This model aims to integrate various AI functions to enable more comprehensive understanding and interaction with physical environments. The introduction of Cosmos 3 represents a leap forward in AI's ability to perform complex tasks that require physical reasoning, potentially impacting industries ranging from robotics to autonomous vehicles. Professionals in AI and related fields should examine the potential applications of Cosmos 3 in their domains and consider how such models can enhance operational efficiencies and innovation.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "May 31 2026",
-            "headline": "Erin Brockovich Challenges Data Center Secrecy",
-            "title": "Erin Brockovich Targets Lack of Transparency in Data Centers",
-            "content": "Environmental activist Erin Brockovich has launched a campaign against the secrecy surrounding data centers, highlighting concerns over their environmental impact. Brockovich's initiative seeks to bring transparency to the operations of these facilities, which are often criticized for their significant energy consumption and carbon footprint. This move underscores a growing demand for accountability in tech infrastructure, as data centers play a crucial role in supporting AI and cloud services. Industry stakeholders are encouraged to engage in discussions about sustainable practices and consider implementing measures to reduce the environmental impact of their operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 31 2026",
-            "headline": "AI Psychosis Debate—Are CEOs Prone to It?",
-            "title": "Exploring the Debate on AI Psychosis Among Tech CEOs",
-            "content": "The latest episode of the Equity podcast delves into the contentious topic of \"AI psychosis\" among tech CEOs, questioning whether they are uniquely prone to this condition. The discussion centers on the tendency of some executives to overly embrace AI solutions without fully understanding their implications, potentially leading to misguided business decisions. This debate is particularly relevant in the context of recent workforce reductions attributed to AI integration, as seen with companies like ClickUp. Industry professionals should critically assess the role of AI in strategic decision-making and advocate for balanced approaches that consider both technological advancements and human expertise.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/",
             "relatedResources": []
         }
     ],
