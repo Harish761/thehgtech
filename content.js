@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 02 2026",
+            "headline": "Dashlane Breach: Encrypted Vaults of 20 Users Compromised",
+            "title": "Dashlane Discloses Brute-Force Attack on Encrypted User Vaults",
+            "content": "Dashlane, a prominent password manager, has revealed a security breach affecting fewer than 20 users on its personal subscription plan. An unidentified threat actor executed a brute-force attack, successfully downloading encrypted vaults. The breach was identified on May 31, 2026, and the company has since bolstered its security measures. While the vaults remain encrypted, users are advised to update their master passwords and enable two-factor authentication. This incident underscores the persistent threat of brute-force attacks against password management solutions.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/dashlane-discloses-brute-force-attack.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Miasma Attack: Red Hat npm Packages Compromised",
+            "title": "Miasma Supply Chain Attack Targets Red Hat npm Packages",
+            "content": "A sophisticated supply chain attack, dubbed Miasma, has infiltrated Red Hat's npm packages, deploying a credential-stealing worm. The campaign, resembling the Mini Shai-Hulud tactics, compromises developer machines to exfiltrate sensitive information. This breach highlights the vulnerabilities within software supply chains, particularly affecting developers using @redhat-cloud-services packages. Security professionals are urged to verify package integrity and implement robust monitoring to detect unauthorized access. The incident emphasizes the critical need for enhanced supply chain security measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "CodexUI Attack: OpenAI Codex Tokens Stolen",
+            "title": "OpenAI Codex Tokens Compromised in codexui-android Attack",
+            "content": "Cybersecurity researchers have uncovered a malicious supply chain attack targeting OpenAI Codex users through a tool named codexui-android. This tool, masquerading as a legitimate remote web UI on GitHub and npm, has attracted over 2,000 developers, leading to the theft of authentication tokens. The attack underscores the risks associated with third-party tools and the importance of verifying software sources. Developers using OpenAI Codex are advised to revoke compromised tokens and monitor for unauthorized access. This incident highlights ongoing threats to AI development environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/openai-codex-authentication-tokens.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "WP Maps Pro Flaw: Admin Accounts Exploited",
+            "title": "Critical WP Maps Pro Vulnerability Exploited for Admin Access",
+            "content": "A critical vulnerability in WP Maps Pro, a popular WordPress plugin, is being actively exploited to create unauthorized administrator accounts. With over 15,000 sales on the Envato Market, this plugin allows for customizable Google Maps integration, making it a prime target for attackers. Site owners are urged to update to the latest version and review user accounts for suspicious activity. This exploitation highlights the ongoing risks posed by unpatched plugins in the WordPress ecosystem. Security teams should prioritize patch management to mitigate such threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "ChatGPhish: ChatGPT Vulnerability Enables Phishing Attacks",
+            "title": "ChatGPT Vulnerability Exposes Users to Phishing via Markdown Links",
+            "content": "Researchers have identified a vulnerability in OpenAI's ChatGPT, termed ChatGPhish, which exploits the AI's trust in Markdown links and images to facilitate phishing attacks. This flaw allows malicious actors to inject prompts that can deceive users into revealing sensitive information. The discovery highlights the need for enhanced security measures in AI systems, particularly those handling user-generated content. Users are advised to exercise caution when interacting with Markdown links in AI-generated content. This vulnerability emphasizes the evolving nature of AI-related security challenges.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html",
+            "relatedResources": []
+        },
+        {
+            "date": "May 29 2026",
+            "headline": "Trump Mobile Breach and FIFA Phishing Alert",
+            "title": "Trump Mobile Data Breach and FIFA World Cup Phishing Campaign",
+            "content": "Recent cybersecurity incidents include a data breach at Trump Mobile, exposing customer information, and a phishing campaign targeting the 2026 FIFA World Cup. The Cybersecurity and Infrastructure Security Agency (CISA) is actively responding to these threats, emphasizing the need for vigilance in the face of increasing supply chain attacks. Organizations are advised to strengthen their cybersecurity frameworks and educate users on recognizing phishing attempts. These incidents reflect the persistent and varied nature of cyber threats in today's digital landscape.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-trump-mobile-data-breach-fifa-world-cup-phishing-cisa-responds-to-supply-chain-attacks/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 01 2026",
             "headline": "WP Maps Pro Flaw—Hackers Gain Admin Access to WordPress Sites",
             "title": "WP Maps Pro Vulnerability CVE-2026-8732 Allows Unauthorized Admin Account Creation",
@@ -74,36 +128,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/wp-maps-pro-bug-exploited-to-create-admin-accounts-on-wordpress-sites/",
             "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "Palo Alto VPN Flaw Exploited—Corporate Networks at Risk",
-            "title": "Hackers Exploit Palo Alto GlobalProtect VPN Authentication Bypass Flaw",
-            "content": "Palo Alto Networks has issued a warning about active exploitation of a critical authentication bypass vulnerability in its GlobalProtect VPN, identified as CVE-2026-0257. This flaw allows attackers to bypass authentication mechanisms, potentially compromising corporate networks. The vulnerability affects PAN-OS versions used in enterprise environments, posing a significant risk to organizations relying on GlobalProtect for secure remote access. This development underscores the increasing sophistication of threat actors targeting VPN infrastructures. Companies using affected versions should prioritize patching to mitigate potential breaches and safeguard sensitive data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/palo-alto-globalprotect-vpn-auth-bypass-flaw-now-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "Critical Flowise RCE Vulnerability—Exploit Code Released",
-            "title": "Exploit Code Published for Flowise Remote Code Execution Vulnerability",
-            "content": "Security researchers have released exploit code for a critical remote code execution (RCE) vulnerability affecting self-hosted Flowise servers. The flaw allows attackers to execute arbitrary code by tricking users into importing a malicious chatflow, posing a severe threat to system integrity. This vulnerability highlights the risks associated with user-generated content in software platforms. Administrators of Flowise servers should immediately review their security configurations and apply any available patches to prevent exploitation. The release of exploit code increases the urgency for users to secure their systems against potential attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exploit-code-published-for-critical-flowise-rce-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "PAN-OS Flaw Exploited—7.8 CVSS Authentication Bypass Alert",
-            "title": "Active Exploitation of PAN-OS GlobalProtect Authentication Bypass CVE-2026-0257",
-            "content": "Palo Alto Networks has issued a warning regarding the active exploitation of a medium-severity vulnerability, CVE-2026-0257, affecting PAN-OS and Prisma Access. This authentication bypass flaw, with a CVSS score of 7.8, allows unauthorized access to affected systems. The vulnerability is being exploited in the wild, posing a significant risk to organizations using these products. Security professionals are urged to apply available patches and review access logs for signs of compromise. This incident underscores the critical need for timely updates and vigilant monitoring of network security systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "May 27 2026",
+            "headline": "Warp Leverages GPT-5.5 for Open Source Development",
+            "title": "Warp Integrates GPT-5.5 to Enhance Open Source and Cloud Workflows",
+            "content": "Warp has announced its integration of GPT-5.5 and OpenAI models to streamline coding processes across local, cloud, and open-source development environments. This strategic move aims to enhance collaboration and efficiency by using AI to coordinate coding agents effectively. The integration promises to optimize workflows, making it easier for developers to manage complex projects across different platforms. This development is particularly significant for open-source communities, which rely heavily on seamless collaboration. Developers should explore how Warp's new capabilities can be integrated into their existing workflows to maximize productivity.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/warp",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Alphabet Seeks $80B for Expanding AI Capabilities",
+            "title": "Alphabet to Raise $80 Billion for AI Infrastructure Expansion",
+            "content": "Alphabet has announced plans to raise $80 billion to expand its AI infrastructure, citing unprecedented demand for its AI solutions and services. This funding will support the scaling of AI capabilities to meet the needs of enterprises and consumers, which currently exceed the company's supply. The move underscores the growing reliance on AI technologies across various sectors, highlighting the need for robust infrastructure to support this growth. Stakeholders should monitor Alphabet's developments closely, as this expansion could significantly impact the AI landscape and service availability.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/01/alphabet-plans-to-raise-80-billion-to-pay-for-ai-buildout/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Nvidia Targets $200B CPU Market with AI PCs",
+            "title": "Nvidia Partners with Microsoft, Dell, HP to Enter AI PC Market",
+            "content": "Nvidia is making a strategic push into the $200 billion CPU market by partnering with Microsoft, Dell, and HP to develop AI agent-powered PCs. This initiative aims to bring AI capabilities to mainstream computing, potentially transforming how users interact with technology. If successful, Nvidia's approach could democratize access to AI, making it more accessible and useful for everyday tasks. Industry professionals should consider the implications of AI integration in consumer PCs, as it could drive significant changes in both hardware and software development.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Florida Sues OpenAI Over Alleged ChatGPT Misuse",
+            "title": "Florida Files Lawsuit Against OpenAI, Sam Altman Over ChatGPT Incident",
+            "content": "The state of Florida has filed a groundbreaking lawsuit against OpenAI and its CEO, Sam Altman, alleging that ChatGPT played a role in a violent incident at Florida State University last year. This case marks the first of its kind, raising questions about the accountability of AI systems in real-world events. The lawsuit could set a precedent for how AI companies are held responsible for the actions of their technologies. Legal and AI professionals should closely follow this case, as its outcome may influence future AI governance and liability frameworks.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Nvidia's RTX Spark Could Transform Windows Laptops",
+            "title": "Nvidia Enters Laptop Chip Market with RTX Spark for Windows",
+            "content": "Nvidia has announced its entry into the consumer laptop chip market with the introduction of RTX Spark, a move that could redefine performance standards for Windows laptops. Inspired by Apple's success with Arm-based chips, Nvidia aims to deliver high performance and improved battery life. This development could represent a pivotal moment for Windows devices, potentially closing the performance gap with Apple's Mac lineup. Developers and hardware manufacturers should evaluate the potential of RTX Spark to enhance their offerings in the competitive laptop market.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/941215/windows-laptops-nvidia-rtx-spark-apple-m1-arm-price-ram",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Google's Gemini Spark AI Agent Raises Privacy Concerns",
+            "title": "Google's Gemini Spark AI Agent Balances Efficiency and Privacy Risks",
+            "content": "Google's new AI agent, Gemini Spark, is designed to operate continuously, performing tasks on behalf of users. While its capabilities are impressive, concerns have been raised about the financial costs and potential privacy implications. The AI agent's ability to handle tasks autonomously could revolutionize personal productivity, but users must weigh these benefits against the risks of data exposure. Professionals in AI ethics and data privacy should assess the implications of deploying such agents, as they could reshape user interactions with technology.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/941138/google-gemini-spark-ai-agent-hands-on",
+            "relatedResources": []
+        },
         {
             "date": "Jun 01 2026",
             "headline": "SpaceX IPO Faces Water Resource Challenges",
@@ -183,60 +264,6 @@ const websiteContent = {
             "content": "The latest episode of the Equity podcast delves into the contentious topic of \"AI psychosis\" among tech CEOs, questioning whether they are uniquely prone to this condition. The discussion centers on the tendency of some executives to overly embrace AI solutions without fully understanding their implications, potentially leading to misguided business decisions. This debate is particularly relevant in the context of recent workforce reductions attributed to AI integration, as seen with companies like ClickUp. Industry professionals should critically assess the role of AI in strategic decision-making and advocate for balanced approaches that consider both technological advancements and human expertise.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 31 2026",
-            "headline": "AI Vape Offers Bitcoin Rewards—A High-Tech Smoking Experience",
-            "title": "Gudtrip AI Vape Promises Bitcoin Rewards with Every Puff",
-            "content": "A new AI-powered vape device called Gudtrip is making waves by offering Bitcoin rewards for each puff taken. The device, advertised with the tagline \"every hit delivers Bitcoin,\" aims to attract tech-savvy cannabis enthusiasts. Gudtrip leverages AI to track usage and distribute cryptocurrency incentives, potentially revolutionizing the vaping experience. While the concept is innovative, it raises questions about privacy and data collection, as the device monitors user behavior closely. Enthusiasts are advised to weigh the novelty against potential privacy concerns before adopting this high-tech gadget.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/933916/ai-powered-crypto-cannabis-vape",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "AI Grifters Exploit Fake Identities—Target Shein Shoppers",
-            "title": "AI-Generated Personas Used to Market Shein Products on TikTok",
-            "content": "AI-driven grifters are creating fake Black personas to market Shein products on TikTok, exploiting social media platforms for deceptive advertising. One such persona, Aliyah, is portrayed as a Black woman struggling to sell handmade buckles, appealing to viewers' emotions. This tactic raises ethical concerns about the misuse of AI to fabricate identities and manipulate consumer behavior. The trend underscores the need for stricter regulations and verification processes on social media to prevent exploitation. Security professionals should be aware of these deceptive practices and advocate for enhanced digital identity verification.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/938844/ai-tiktok-shop-blackface-shein-dropshipping",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "SpaceX IPO—A Windfall for Musk, Risky for Investors",
-            "title": "SpaceX's Public Offering Raises Concerns Over Investor Risks",
-            "content": "The announcement of SpaceX's initial public offering (IPO) has sparked debate over potential risks for investors. While the IPO could significantly benefit Elon Musk and his team, critics warn that retail investors may face substantial financial exposure. Comparisons to the WeWork IPO highlight concerns about overvaluation and market volatility. As SpaceX prepares to go public, tech leaders and investors should carefully assess the company's financial health and market position. This development serves as a reminder of the complexities involved in investing in high-profile tech ventures.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/940001/elon-musk-spacex-ipo-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "Ex-Meta Engineer Bets on Old School Web—Profits Soar",
-            "title": "Craig Campbell's Traditional Web Venture Defies AI Trend, Finds Success",
-            "content": "Craig Campbell, a former Meta engineer, has successfully launched a traditional website venture, bucking the trend of AI-focused startups. Campbell, who previously sold an e-commerce tool in 2022, opted to create a website instead of diving into the AI sector, despite his strong background in technology and engineering. This decision comes amidst a surge of investor interest in AI, highlighting a contrarian approach that is paying off. Campbell's project underscores a growing niche market for traditional web services, even as AI continues to dominate tech headlines. Professionals in the tech industry should consider the potential of non-AI ventures in a landscape increasingly saturated with AI solutions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/938245/past-maps-website-google-zero-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "SoftBank Commits €75B to French Data Centers",
-            "title": "SoftBank to Invest €75 Billion in Expanding French Data Center Capacity",
-            "content": "SoftBank has announced plans to invest up to €75 billion in developing and operating new data centers in France, aiming to add 5 gigawatts of capacity. This significant investment underscores SoftBank's commitment to expanding its infrastructure footprint in Europe, addressing growing demand for data processing and storage. The initiative is set to bolster France's position as a key data hub in the region. Companies relying on data-intensive operations should anticipate enhanced capabilities and potentially lower costs due to increased competition and capacity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/",
-            "relatedResources": []
-        },
-        {
-            "date": "May 30 2026",
-            "headline": "Github Copilot's New Billing Model Sparks Developer Outrage",
-            "title": "Developers Criticize Github Copilot's Shift to Token-Based Billing",
-            "content": "Microsoft's Github Copilot has introduced a new token-based billing system, prompting backlash from developers who view it as a move away from its previously accessible pricing model. This change marks a shift in how developers interact with the AI-powered coding assistant, potentially increasing costs for frequent users. The decision reflects broader industry trends towards monetizing AI services more aggressively. Developers should reassess their usage of Copilot and consider alternative tools or budget adjustments to accommodate potential cost increases.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
             "relatedResources": []
         }
     ],
@@ -364,17 +391,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8398",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-48172",
-            "dateAdded": "May 26, 2026",
-            "vendor": "LiteSpeed cPanel Plugin",
-            "description": "LiteSpeed cPanel Plugin contains privilege escalation vulnerability that is exposed via the user-end cPanel plugin, which can be abused by any cPanel user account to execute arbitrary scripts with roo",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48172",
             "isZeroDay": false
         },
         {
