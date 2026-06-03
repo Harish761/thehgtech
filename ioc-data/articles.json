@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "ai-cyber-arms-race-mythos-daybreak-2026",
+      "title": "The Autonomous Cyber Arms Race: Claude Mythos & GPT Daybreak",
+      "date": "June 03, 2026",
+      "category": "Threat Analysis",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "A deep dive into the 2026 shift toward autonomous AI cybersecurity agents, the privatization of defense, and the impending paradigm shift for SOC, VM, and Infrastructure teams.",
+      "image": "/images/articles/ai-cyber-arms-race-mythos-daybreak-2026.png",
+      "externalUrl": "articles/ai-cyber-arms-race-mythos-daybreak-2026.html",
+      "readTime": "20 min read",
+      "tags": [
+        "Claude Mythos",
+        "GPT Daybreak",
+        "OpenAI",
+        "Anthropic",
+        "Agentic AI",
+        "Autonomous SOC"
+      ]
+    },
+    {
       "id": "report-20260601",
       "title": "Weekly Threat Report: June 01, 2026",
       "date": "June 01, 2026",
