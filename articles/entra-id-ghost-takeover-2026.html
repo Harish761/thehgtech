@@ -75,7 +75,7 @@
     <link rel="stylesheet" href="/header-dropdown.css?v=1">
     <link rel="stylesheet" href="/print.css">
     <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.4">
     <link rel="stylesheet" href="/m-components.css?v=3.0">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/theme-toggle.css">
@@ -302,7 +302,41 @@
             document.head.appendChild(fullres);
         });
     </script>
-\n    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->\n    <script type="application/ld+json">\n    {\n      "@context": "https://schema.org",\n      "@type": "FAQPage",\n      "mainEntity": [\n        {\n          "@type": "Question",\n          "name": "What is a Ghost Takeover in Entra ID?",\n          "acceptedAnswer": {\n            "@type": "Answer",\n            "text": "It is an attack where threat actors hijack inactive or improperly offboarded guest accounts in Entra ID to silently gain a foothold in a corporate cloud environment."\n          }\n        },\n        {\n          "@type": "Question",\n          "name": "Why doesn't Conditional Access stop this?",\n          "acceptedAnswer": {\n            "@type": "Answer",\n            "text": "The attack specifically targets edge-case misconfigurations where conditional access policies were not properly applied to B2B guest accounts."\n          }\n        },\n        {\n          "@type": "Question",\n          "name": "How do I secure my Entra ID environment against this?",\n          "acceptedAnswer": {\n            "@type": "Answer",\n            "text": "Implement automated identity lifecycle management, regularly purge stale guest accounts, and ensure Conditional Access policies apply universally to all user types."\n          }\n        }\n      ]\n    }\n    </script>\n</head>
+
+    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Ghost Takeover in Entra ID?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is an attack where threat actors hijack inactive or improperly offboarded guest accounts in Entra ID to silently gain a foothold in a corporate cloud environment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why doesn't Conditional Access stop this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The attack specifically targets edge-case misconfigurations where conditional access policies were not properly applied to B2B guest accounts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I secure my Entra ID environment against this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Implement automated identity lifecycle management, regularly purge stale guest accounts, and ensure Conditional Access policies apply universally to all user types."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
 
 <body>
     <!-- Desktop Header -->
@@ -419,7 +453,16 @@
 
             <img src="/images/articles/entra-id-ghost-takeover-2026.png" alt="Entra ID Ghost Takeover" class="featured-image">
 
-            <div class="article-content">\n<div class="alert-box" style="background: rgba(0, 217, 255, 0.1); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">\n    <h3 style="color: var(--accent-cyan); margin-top: 0; margin-bottom: 1rem;"><i class="fas fa-key"></i> Key Takeaways</h3>\n    <ul style="margin-bottom: 0;">\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">A novel attack vector dubbed 'Ghost Takeover' is exploiting misconfigurations in Microsoft Entra ID (formerly Azure AD).</li>\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">Attackers manipulate stale, disabled guest accounts to bypass Conditional Access policies and elevate privileges.</li>\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">Administrators must immediately audit all guest accounts and implement strict lifecycle management policies.</li>\n    </ul>\n</div>\n\n<div class="alert-box" style="background: rgba(0, 217, 255, 0.1); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">\n    <h3 style="color: var(--accent-cyan); margin-top: 0; margin-bottom: 1rem;"><i class="fas fa-key"></i> Key Takeaways</h3>\n    <ul style="margin-bottom: 0;">\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">A novel attack vector dubbed 'Ghost Takeover' is exploiting misconfigurations in Microsoft Entra ID (formerly Azure AD).</li>\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">Attackers manipulate stale, disabled guest accounts to bypass Conditional Access policies and elevate privileges.</li>\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">Administrators must immediately audit all guest accounts and implement strict lifecycle management policies.</li>\n    </ul>\n</div>\n
+            <div class="article-content">
+<div class="alert-box" style="background: rgba(0, 217, 255, 0.1); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+    <h3 style="color: var(--accent-cyan); margin-top: 0; margin-bottom: 1rem;"><i class="fas fa-key"></i> Key Takeaways</h3>
+    <ul style="margin-bottom: 0;">
+        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">A novel attack vector dubbed 'Ghost Takeover' is exploiting misconfigurations in Microsoft Entra ID (formerly Azure AD).</li>
+        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">Attackers manipulate stale, disabled guest accounts to bypass Conditional Access policies and elevate privileges.</li>
+        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">Administrators must immediately audit all guest accounts and implement strict lifecycle management policies.</li>
+    </ul>
+</div>
+
 
                 <p style="font-size: 1.25rem; font-weight: 500; color: var(--text-primary); margin-bottom: 2rem;"><em>Your cloud perimeter is secure, your MFA is enforced, and your Conditional Access policies are ironclad. But a built-in AI role you didn't even know existed just handed attackers the keys to your entire Microsoft tenant.</em></p>
                 <p>While the cybersecurity world was heavily focused on ransomware groups and third-party SaaS compromises, a catastrophic privilege escalation vulnerability sat silently inside Microsoft Entra ID. Security researchers recently disclosed that a highly specific, default administrative role could be abused to execute a "Service Principal Takeover." The most terrifying part? Microsoft patched this on the backend on April 9, 2026, meaning many security teams are entirely unaware their environments were vulnerable to total compromise.</p>
@@ -526,7 +569,27 @@ AuditLogs
                 <p><strong>Published:</strong> May 6, 2026</p>
                 <p><strong>Last Updated:</strong> May 6, 2026</p>
             </div>
-        \n<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">\n    <h2>Frequently Asked Questions (FAQ)</h2>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is a Ghost Takeover in Entra ID?</h3>\n    <p style="margin-bottom: 1.5rem;">It is an attack where threat actors hijack inactive or improperly offboarded guest accounts in Entra ID to silently gain a foothold in a corporate cloud environment.</p>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">Why doesn't Conditional Access stop this?</h3>\n    <p style="margin-bottom: 1.5rem;">The attack specifically targets edge-case misconfigurations where conditional access policies were not properly applied to B2B guest accounts.</p>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How do I secure my Entra ID environment against this?</h3>\n    <p style="margin-bottom: 1.5rem;">Implement automated identity lifecycle management, regularly purge stale guest accounts, and ensure Conditional Access policies apply universally to all user types.</p>\n</div>\n\n\n<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">\n    <h2>Frequently Asked Questions (FAQ)</h2>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is a Ghost Takeover in Entra ID?</h3>\n    <p style="margin-bottom: 1.5rem;">It is an attack where threat actors hijack inactive or improperly offboarded guest accounts in Entra ID to silently gain a foothold in a corporate cloud environment.</p>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">Why doesn't Conditional Access stop this?</h3>\n    <p style="margin-bottom: 1.5rem;">The attack specifically targets edge-case misconfigurations where conditional access policies were not properly applied to B2B guest accounts.</p>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How do I secure my Entra ID environment against this?</h3>\n    <p style="margin-bottom: 1.5rem;">Implement automated identity lifecycle management, regularly purge stale guest accounts, and ensure Conditional Access policies apply universally to all user types.</p>\n</div>\n\n</article>
+        
+<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is a Ghost Takeover in Entra ID?</h3>
+    <p style="margin-bottom: 1.5rem;">It is an attack where threat actors hijack inactive or improperly offboarded guest accounts in Entra ID to silently gain a foothold in a corporate cloud environment.</p>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">Why doesn't Conditional Access stop this?</h3>
+    <p style="margin-bottom: 1.5rem;">The attack specifically targets edge-case misconfigurations where conditional access policies were not properly applied to B2B guest accounts.</p>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How do I secure my Entra ID environment against this?</h3>
+    <p style="margin-bottom: 1.5rem;">Implement automated identity lifecycle management, regularly purge stale guest accounts, and ensure Conditional Access policies apply universally to all user types.</p>
+</div>
+\n
+<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is a Ghost Takeover in Entra ID?</h3>
+    <p style="margin-bottom: 1.5rem;">It is an attack where threat actors hijack inactive or improperly offboarded guest accounts in Entra ID to silently gain a foothold in a corporate cloud environment.</p>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">Why doesn't Conditional Access stop this?</h3>
+    <p style="margin-bottom: 1.5rem;">The attack specifically targets edge-case misconfigurations where conditional access policies were not properly applied to B2B guest accounts.</p>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How do I secure my Entra ID environment against this?</h3>
+    <p style="margin-bottom: 1.5rem;">Implement automated identity lifecycle management, regularly purge stale guest accounts, and ensure Conditional Access policies apply universally to all user types.</p>
+</div>
+\n</article>
 
         <div class="interaction-bar">
             <div class="like-section">

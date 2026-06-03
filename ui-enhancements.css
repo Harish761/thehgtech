@@ -974,7 +974,7 @@ body.light-mode .hg-coffee-tooltip {
     .hg-coffee-widget {
         bottom: 85px; /* Above the mobile nav bar */
         left: 1rem;
-        flex-direction: row-reverse;
+        
     }
     
     .hg-coffee-tooltip {

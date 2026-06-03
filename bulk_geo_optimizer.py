@@ -310,22 +310,35 @@ content_map = {
 }
 
 def generate_takeaways_html(takeaways):
-    html = '\\n<div class="alert-box" style="background: rgba(0, 217, 255, 0.1); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">\\n'
-    html += '    <h3 style="color: var(--accent-cyan); margin-top: 0; margin-bottom: 1rem;"><i class="fas fa-key"></i> Key Takeaways</h3>\\n'
-    html += '    <ul style="margin-bottom: 0;">\\n'
+    html = '\
+<div class="alert-box" style="background: rgba(0, 217, 255, 0.1); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">\
+'
+    html += '    <h3 style="color: var(--accent-cyan); margin-top: 0; margin-bottom: 1rem;"><i class="fas fa-key"></i> Key Takeaways</h3>\
+'
+    html += '    <ul style="margin-bottom: 0;">\
+'
     for item in takeaways:
-        html += f'        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">{item}</li>\\n'
-    html += '    </ul>\\n'
-    html += '</div>\\n'
+        html += f'        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">{item}</li>\
+'
+    html += '    </ul>\
+'
+    html += '</div>\
+'
     return html
 
 def generate_faqs_html(faqs):
-    html = '\\n<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">\\n'
-    html += '    <h2>Frequently Asked Questions (FAQ)</h2>\\n'
+    html = '\
+<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">\
+'
+    html += '    <h2>Frequently Asked Questions (FAQ)</h2>\
+'
     for faq in faqs:
-        html += f'    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">{faq["q"]}</h3>\\n'
-        html += f'    <p style="margin-bottom: 1.5rem;">{faq["a"]}</p>\\n'
-    html += '</div>\\n'
+        html += f'    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">{faq["q"]}</h3>\
+'
+        html += f'    <p style="margin-bottom: 1.5rem;">{faq["a"]}</p>\
+'
+    html += '</div>\
+'
     return html
 
 def process_file(filepath, content_data):
@@ -350,10 +363,24 @@ def process_file(filepath, content_data):
     # Inject FAQs
     faqs_html = generate_faqs_html(content_data['faqs'])
     # Look for the best place to inject. Usually before the closing </div> of article-content or </article>.
-    if '</div>\\n\\n    </div>\\n\\n    <!-- Footer -->' in html_content: # Articles structure
-        html_content = html_content.replace('</div>\\n\\n    </div>\\n\\n    <!-- Footer -->', f'{faqs_html}\\n</div>\\n\\n    </div>\\n\\n    <!-- Footer -->')
+    if '</div>\
+\
+    </div>\
+\
+    <!-- Footer -->' in html_content: # Articles structure
+        html_content = html_content.replace('</div>\
+\
+    </div>\
+\
+    <!-- Footer -->', f'{faqs_html}\
+</div>\
+\
+    </div>\
+\
+    <!-- Footer -->')
     elif '</article>' in html_content: # Guides structure
-        html_content = html_content.replace('</article>', f'{faqs_html}\\n</article>')
+        html_content = html_content.replace('</article>', f'{faqs_html}\
+</article>')
     else:
         # Fallback for articles
         # regex find last </div> before footer
@@ -366,24 +393,42 @@ def process_file(filepath, content_data):
 
     # Inject Schema for FAQ if not exists
     if 'application/ld+json' not in html_content or 'FAQPage' not in html_content:
-        schema_html = '\\n    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->\\n'
-        schema_html += '    <script type="application/ld+json">\\n'
-        schema_html += '    {\\n'
-        schema_html += '      "@context": "https://schema.org",\\n'
-        schema_html += '      "@type": "FAQPage",\\n'
-        schema_html += '      "mainEntity": [\\n'
+        schema_html = '\
+    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->\
+'
+        schema_html += '    <script type="application/ld+json">\
+'
+        schema_html += '    {\
+'
+        schema_html += '      "@context": "https://schema.org",\
+'
+        schema_html += '      "@type": "FAQPage",\
+'
+        schema_html += '      "mainEntity": [\
+'
         for i, faq in enumerate(content_data['faqs']):
-            schema_html += '        {\\n'
-            schema_html += '          "@type": "Question",\\n'
-            schema_html += f'          "name": "{faq["q"]}",\\n'
-            schema_html += '          "acceptedAnswer": {\\n'
-            schema_html += '            "@type": "Answer",\\n'
-            schema_html += f'            "text": "{faq["a"]}"\\n'
-            schema_html += '          }\\n'
-            schema_html += '        }' + (',' if i < len(content_data['faqs']) - 1 else '') + '\\n'
-        schema_html += '      ]\\n'
-        schema_html += '    }\\n'
-        schema_html += '    </script>\\n'
+            schema_html += '        {\
+'
+            schema_html += '          "@type": "Question",\
+'
+            schema_html += f'          "name": "{faq["q"]}",\
+'
+            schema_html += '          "acceptedAnswer": {\
+'
+            schema_html += '            "@type": "Answer",\
+'
+            schema_html += f'            "text": "{faq["a"]}"\
+'
+            schema_html += '          }\
+'
+            schema_html += '        }' + (',' if i < len(content_data['faqs']) - 1 else '') + '\
+'
+        schema_html += '      ]\
+'
+        schema_html += '    }\
+'
+        schema_html += '    </script>\
+'
         
         if '</head>' in html_content:
             html_content = html_content.replace('</head>', f'{schema_html}</head>')

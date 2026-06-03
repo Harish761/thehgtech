@@ -75,7 +75,7 @@
     <link rel="stylesheet" href="/header-dropdown.css?v=1">
     <link rel="stylesheet" href="/print.css">
     <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.2">
+    <link rel="stylesheet" href="/m-layout.css?v=3.4">
     <link rel="stylesheet" href="/m-components.css?v=3.0">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/theme-toggle.css">
@@ -281,7 +281,41 @@
         });
     </script>
     <link rel="stylesheet" href="/mobile-nav.css">
-\n    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->\n    <script type="application/ld+json">\n    {\n      "@context": "https://schema.org",\n      "@type": "FAQPage",\n      "mainEntity": [\n        {\n          "@type": "Question",\n          "name": "What was stolen in the Trellix breach?",\n          "acceptedAnswer": {\n            "@type": "Answer",\n            "text": "Attackers exfiltrated the source code for several of Trellix's core security products, including their EDR (Endpoint Detection and Response) agent."\n          }\n        },\n        {\n          "@type": "Question",\n          "name": "Does this mean Trellix customers are vulnerable?",\n          "acceptedAnswer": {\n            "@type": "Answer",\n            "text": "While the theft of source code doesn't immediately compromise customers, it gives hackers a blueprint to find undiscovered vulnerabilities and bypass techniques."\n          }\n        },\n        {\n          "@type": "Question",\n          "name": "How did the attackers breach a cybersecurity company?",\n          "acceptedAnswer": {\n            "@type": "Answer",\n            "text": "The breach occurred due to human error—a developer fell victim to a sophisticated social engineering attack, highlighting that even security companies are vulnerable to human factors."\n          }\n        }\n      ]\n    }\n    </script>\n</head>
+
+    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What was stolen in the Trellix breach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Attackers exfiltrated the source code for several of Trellix's core security products, including their EDR (Endpoint Detection and Response) agent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this mean Trellix customers are vulnerable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While the theft of source code doesn't immediately compromise customers, it gives hackers a blueprint to find undiscovered vulnerabilities and bypass techniques."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How did the attackers breach a cybersecurity company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The breach occurred due to human error—a developer fell victim to a sophisticated social engineering attack, highlighting that even security companies are vulnerable to human factors."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
 
 <body>
     <!-- Mobile Header -->
@@ -461,7 +495,16 @@
                 <img src="/images/articles/trellix-breach-hero.png" alt="Trellix Source Code Breach Visualization" class="featured-image">
             </header>
 
-            <div class="article-content">\n<div class="alert-box" style="background: rgba(0, 217, 255, 0.1); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">\n    <h3 style="color: var(--accent-cyan); margin-top: 0; margin-bottom: 1rem;"><i class="fas fa-key"></i> Key Takeaways</h3>\n    <ul style="margin-bottom: 0;">\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">Cybersecurity giant Trellix suffered a breach resulting in the theft of proprietary source code for its endpoint detection agents.</li>\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">The attackers gained access through a compromised developer account that lacked phish-resistant MFA.</li>\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">The stolen source code could allow threat actors to develop bespoke malware that actively bypasses Trellix defenses.</li>\n    </ul>\n</div>\n\n<div class="alert-box" style="background: rgba(0, 217, 255, 0.1); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">\n    <h3 style="color: var(--accent-cyan); margin-top: 0; margin-bottom: 1rem;"><i class="fas fa-key"></i> Key Takeaways</h3>\n    <ul style="margin-bottom: 0;">\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">Cybersecurity giant Trellix suffered a breach resulting in the theft of proprietary source code for its endpoint detection agents.</li>\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">The attackers gained access through a compromised developer account that lacked phish-resistant MFA.</li>\n        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">The stolen source code could allow threat actors to develop bespoke malware that actively bypasses Trellix defenses.</li>\n    </ul>\n</div>\n
+            <div class="article-content">
+<div class="alert-box" style="background: rgba(0, 217, 255, 0.1); border-left: 4px solid var(--accent-cyan); padding: 1.5rem; margin: 2rem 0; border-radius: 8px;">
+    <h3 style="color: var(--accent-cyan); margin-top: 0; margin-bottom: 1rem;"><i class="fas fa-key"></i> Key Takeaways</h3>
+    <ul style="margin-bottom: 0;">
+        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">Cybersecurity giant Trellix suffered a breach resulting in the theft of proprietary source code for its endpoint detection agents.</li>
+        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">The attackers gained access through a compromised developer account that lacked phish-resistant MFA.</li>
+        <li style="color: var(--text-primary); margin-bottom: 0.5rem;">The stolen source code could allow threat actors to develop bespoke malware that actively bypasses Trellix defenses.</li>
+    </ul>
+</div>
+
                 <div class="success-box" style="margin-bottom: 2rem;">
                     <ul style="color: var(--text-secondary); margin-bottom: 0; padding-left: 1.25rem; line-height: 1.6; font-size: 0.95rem;">
                         <li><strong>What happened:</strong> Trellix confirmed an unauthorized breach into a portion of its internal source code repository in early May 2026.</li>
@@ -528,7 +571,27 @@
                     <p><strong>Last Updated:</strong> May 5, 2026</p>
                 </div>
             </div>
-        \n<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">\n    <h2>Frequently Asked Questions (FAQ)</h2>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What was stolen in the Trellix breach?</h3>\n    <p style="margin-bottom: 1.5rem;">Attackers exfiltrated the source code for several of Trellix's core security products, including their EDR (Endpoint Detection and Response) agent.</p>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">Does this mean Trellix customers are vulnerable?</h3>\n    <p style="margin-bottom: 1.5rem;">While the theft of source code doesn't immediately compromise customers, it gives hackers a blueprint to find undiscovered vulnerabilities and bypass techniques.</p>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How did the attackers breach a cybersecurity company?</h3>\n    <p style="margin-bottom: 1.5rem;">The breach occurred due to human error—a developer fell victim to a sophisticated social engineering attack, highlighting that even security companies are vulnerable to human factors.</p>\n</div>\n\n\n<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">\n    <h2>Frequently Asked Questions (FAQ)</h2>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What was stolen in the Trellix breach?</h3>\n    <p style="margin-bottom: 1.5rem;">Attackers exfiltrated the source code for several of Trellix's core security products, including their EDR (Endpoint Detection and Response) agent.</p>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">Does this mean Trellix customers are vulnerable?</h3>\n    <p style="margin-bottom: 1.5rem;">While the theft of source code doesn't immediately compromise customers, it gives hackers a blueprint to find undiscovered vulnerabilities and bypass techniques.</p>\n    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How did the attackers breach a cybersecurity company?</h3>\n    <p style="margin-bottom: 1.5rem;">The breach occurred due to human error—a developer fell victim to a sophisticated social engineering attack, highlighting that even security companies are vulnerable to human factors.</p>\n</div>\n\n</article>
+        
+<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What was stolen in the Trellix breach?</h3>
+    <p style="margin-bottom: 1.5rem;">Attackers exfiltrated the source code for several of Trellix's core security products, including their EDR (Endpoint Detection and Response) agent.</p>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">Does this mean Trellix customers are vulnerable?</h3>
+    <p style="margin-bottom: 1.5rem;">While the theft of source code doesn't immediately compromise customers, it gives hackers a blueprint to find undiscovered vulnerabilities and bypass techniques.</p>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How did the attackers breach a cybersecurity company?</h3>
+    <p style="margin-bottom: 1.5rem;">The breach occurred due to human error—a developer fell victim to a sophisticated social engineering attack, highlighting that even security companies are vulnerable to human factors.</p>
+</div>
+\n
+<div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What was stolen in the Trellix breach?</h3>
+    <p style="margin-bottom: 1.5rem;">Attackers exfiltrated the source code for several of Trellix's core security products, including their EDR (Endpoint Detection and Response) agent.</p>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">Does this mean Trellix customers are vulnerable?</h3>
+    <p style="margin-bottom: 1.5rem;">While the theft of source code doesn't immediately compromise customers, it gives hackers a blueprint to find undiscovered vulnerabilities and bypass techniques.</p>
+    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How did the attackers breach a cybersecurity company?</h3>
+    <p style="margin-bottom: 1.5rem;">The breach occurred due to human error—a developer fell victim to a sophisticated social engineering attack, highlighting that even security companies are vulnerable to human factors.</p>
+</div>
+\n</article>
 
         <!-- Interaction Bar -->
         <div class="interaction-bar">
