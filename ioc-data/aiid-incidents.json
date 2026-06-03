@@ -57,14 +57,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-438",
-      "incident_id": 438,
-      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-441",
       "incident_id": 441,
       "title": "South Korean Agencies Reportedly Shared Airport Travelers' Face Images with Companies to Train Immig",
@@ -81,9 +73,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-491",
-      "incident_id": 491,
-      "title": "Replika's AI Experience Reportedly Lacked Protection for Minors, Resulting in Data Ban",
+      "id": "AIID-438",
+      "incident_id": 438,
+      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
       "date": "2026-05-29",
       "category": "other",
       "severity": "medium"
@@ -97,33 +89,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-516",
-      "incident_id": 516,
-      "title": "ChatGPT Reportedly Exposed Users' Private Data Reportedly Due to Bug",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-521",
-      "incident_id": 521,
-      "title": "iRobot Roomba J7 R&D Images Reportedly Appeared in Private Online Groups After Data Labeling",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-556",
       "incident_id": 556,
       "title": "Amazon Allegedly Violated Children's Privacy through Default Voice Collection Settings",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-558",
-      "incident_id": 558,
-      "title": "Activists Allege NYPD's Application of Facial Recognition Interfered with Right to Protest",
       "date": "2026-05-29",
       "category": "other",
       "severity": "medium"
@@ -153,14 +121,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-584",
-      "incident_id": 584,
-      "title": "Illinois Residents File Class Action Lawsuit Against Facial Recognition Technology Companies for All",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "high"
-    },
-    {
       "id": "AIID-586",
       "incident_id": 586,
       "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
@@ -175,6 +135,46 @@
       "date": "2026-05-29",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-491",
+      "incident_id": 491,
+      "title": "Replika's AI Experience Reportedly Lacked Protection for Minors, Resulting in Data Ban",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-516",
+      "incident_id": 516,
+      "title": "ChatGPT Reportedly Exposed Users' Private Data Reportedly Due to Bug",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-521",
+      "incident_id": 521,
+      "title": "iRobot Roomba J7 R&D Images Reportedly Appeared in Private Online Groups After Data Labeling",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-558",
+      "incident_id": 558,
+      "title": "Activists Allege NYPD's Application of Facial Recognition Interfered with Right to Protest",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-584",
+      "incident_id": 584,
+      "title": "Illinois Residents File Class Action Lawsuit Against Facial Recognition Technology Companies for All",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "high"
     },
     {
       "id": "AIID-657",
@@ -497,19 +497,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-357",
-      "incident_id": 357,
-      "title": "GPT-2 Reportedly Reproduced Personal Data from Its Training Data",
-      "date": "2026-05-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-433",
       "incident_id": 433,
       "title": "Chicago Police's Strategic Subject List Reportedly Biased Along Racial Lines",
       "date": "2026-05-28",
       "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-357",
+      "incident_id": 357,
+      "title": "GPT-2 Reportedly Reproduced Personal Data from Its Training Data",
+      "date": "2026-05-28",
+      "category": "other",
       "severity": "medium"
     },
     {
@@ -769,19 +769,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-495",
-      "incident_id": 495,
-      "title": "Carmel High School Students Reportedly Posted Racist Deepfake Videos Making New York Principal Appea",
-      "date": "2026-05-18",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-538",
       "incident_id": 538,
       "title": "Texas A&M-Commerce Professor Reportedly Used ChatGPT to Accuse Students of Cheating and Assign Incom",
       "date": "2026-05-18",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-495",
+      "incident_id": 495,
+      "title": "Carmel High School Students Reportedly Posted Racist Deepfake Videos Making New York Principal Appea",
+      "date": "2026-05-18",
+      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -1017,19 +1017,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-514",
-      "incident_id": 514,
-      "title": "Turnitin's ChatGPT-Detection Tool Falsely Flagged Student Essays as AI-Generated",
-      "date": "2026-05-17",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-524",
       "incident_id": 524,
       "title": "Synthesized Voices Were Reportedly Used by Torswats to Sell Swatting Calls Targeting Schools and Hom",
       "date": "2026-05-17",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-514",
+      "incident_id": 514,
+      "title": "Turnitin's ChatGPT-Detection Tool Falsely Flagged Student Essays as AI-Generated",
+      "date": "2026-05-17",
+      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -2012,7 +2012,7 @@
   "stats": {
     "total": 251,
     "last7Days": 70,
-    "last30Days": 170
+    "last30Days": 169
   },
-  "lastUpdated": "2026-06-03T18:18:51.479203+05:30"
+  "lastUpdated": "2026-06-04T01:26:08.643724+05:30"
 }
