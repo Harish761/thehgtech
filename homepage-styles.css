@@ -414,7 +414,7 @@
         .logo-text {
             font-size: 1.8rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #00D9FF, #ffffff);
+            background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
