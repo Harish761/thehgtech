@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 03 2026",
+            "headline": "Project Glasswing Expands—150 Firms Join AI Vulnerability Hunt",
+            "title": "Anthropic's Project Glasswing Adds 150 Companies, Targets Critical Infrastructure",
+            "content": "Anthropic has announced the expansion of its Project Glasswing initiative, incorporating 150 additional companies with a focus on critical infrastructure sectors such as power, water, healthcare, communications, and hardware. This AI-driven project aims to identify and mitigate vulnerabilities in essential services, enhancing the security posture of these industries. Analysts highlight the importance of this expansion as cyber threats against critical infrastructure continue to rise globally. Companies involved in the project will benefit from advanced AI tools designed to proactively detect and address potential security weaknesses. Participants are encouraged to integrate these findings into their existing cybersecurity frameworks to bolster defenses.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4180265/anthropic-grants-project-glasswing-access-to-150-more-companies-with-a-focus-on-critical-infrastructure.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Oracle WebLogic Flaw—Patch Mandated for Federal Agencies",
+            "title": "Oracle WebLogic Server Vulnerability CVE-2024-21182 Under Active Exploitation",
+            "content": "A two-year-old vulnerability in Oracle WebLogic Server, identified as CVE-2024-21182, is being actively exploited, prompting the U.S. federal government to mandate immediate patching by Thursday. This high-severity flaw allows unauthenticated attackers to access sensitive data, posing significant risks to affected systems. The vulnerability has been added to the Cybersecurity and Infrastructure Security Agency's (CISA) Known Exploited Vulnerabilities Catalog, underscoring its critical nature. Organizations using Oracle WebLogic Server should prioritize applying the latest security updates to prevent potential breaches. This incident highlights the ongoing challenges of managing legacy vulnerabilities in widely used enterprise software.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4180218/two-year-old-oracle-weblogic-server-vulnerability-is-being-exploited.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Kirki Plugin Exploit—WordPress Admins at Risk",
+            "title": "Critical Kirki Plugin Vulnerability CVE-2026-8206 Compromises WordPress Admin Accounts",
+            "content": "Hackers are actively exploiting a critical vulnerability in the Kirki plugin for WordPress, designated as CVE-2026-8206, which allows for privilege escalation and the hijacking of administrator accounts. This flaw poses a severe threat to websites using the plugin, potentially granting attackers full control over affected sites. WordPress administrators are urged to update the Kirki plugin immediately to mitigate the risk of unauthorized access. The exploitation of this vulnerability underscores the importance of regular plugin updates and security audits for WordPress sites. Security professionals should monitor for unusual activity and reinforce access controls to protect against similar threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-kirki-flaw-exploited-to-hijack-wordpress-admin-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "HP Poly VoIP Flaw—Deepfake Risks Emerge",
+            "title": "HP Poly VoIP Vulnerability Enables Potential Deepfake Attacks",
+            "content": "HP has issued patches for a critical buffer overflow vulnerability in its Poly Voice IP-enabled conference phones, which could allow attackers to gain root privileges on the devices. This flaw, if exploited, could facilitate further attacks, including the creation of executive voice deepfakes. The vulnerability highlights the risks associated with unsecured VoIP systems in corporate environments. Organizations using HP Poly Voice devices should apply the patches promptly to secure their communication infrastructure. This incident serves as a reminder of the evolving threat landscape, where voice-based technologies are increasingly targeted by cybercriminals.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4180223/hp-poly-voip-vulnerability-sets-the-stage-for-executive-voice-deepfakes.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "AI Ransomware Toolkit—EDR Evasion Automated",
+            "title": "AI-Driven Ransomware Toolkit Automates EDR Evasion and AD Discovery",
+            "content": "A new ransomware toolkit, developed using artificial intelligence, is automating the evasion of Endpoint Detection and Response (EDR) systems and facilitating Active Directory (AD) discovery. This sophisticated toolkit represents a significant advancement in ransomware capabilities, enabling threat actors to conduct more efficient and stealthy attacks. Security professionals are advised to enhance their defenses by employing advanced threat detection solutions and conducting regular security assessments. The emergence of AI-driven attack tools underscores the need for continuous innovation in cybersecurity strategies to counter evolving threats. Organizations should remain vigilant and proactive in their security measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ai-built-ransomware-toolkit-automates-edr-evasion-ad-discovery/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Android Update—124 Flaws Patched, One Actively Exploited",
+            "title": "Google June 2026 Android Update Addresses 124 Vulnerabilities",
+            "content": "Google has released its June 2026 security update for Android, addressing 124 vulnerabilities, including one actively exploited flaw in the Framework component, identified as CVE-2025-48595. This high-severity vulnerability, with a CVSS score of 8.4, has been under active exploitation, posing a significant risk to Android users. The update underscores the importance of timely patching to protect against potential attacks. Android users are strongly encouraged to apply the latest updates to safeguard their devices. This release highlights Google's ongoing efforts to enhance the security of its mobile operating system amidst a landscape of increasing cyber threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 02 2026",
             "headline": "Android Update Fixes Zero-Day—123 Vulnerabilities Patched",
             "title": "Google Patches Android Zero-Day CVE-2025-48595 and 123 Other Flaws",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/openai-codex-authentication-tokens.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "WP Maps Pro Flaw: Admin Accounts Exploited",
-            "title": "Critical WP Maps Pro Vulnerability Exploited for Admin Access",
-            "content": "A critical vulnerability in WP Maps Pro, a popular WordPress plugin, is being actively exploited to create unauthorized administrator accounts. With over 15,000 sales on the Envato Market, this plugin allows for customizable Google Maps integration, making it a prime target for attackers. Site owners are urged to update to the latest version and review user accounts for suspicious activity. This exploitation highlights the ongoing risks posed by unpatched plugins in the WordPress ecosystem. Security teams should prioritize patch management to mitigate such threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "WP Maps Pro Flaw—Hackers Gain Admin Access to WordPress Sites",
-            "title": "WP Maps Pro Vulnerability CVE-2026-8732 Allows Unauthorized Admin Account Creation",
-            "content": "A critical vulnerability identified as CVE-2026-8732 in the WP Maps Pro plugin for WordPress is being actively exploited by attackers to gain administrative access to websites. This flaw permits unauthenticated users to create admin accounts, compromising the security of affected installations. WordPress site owners using WP Maps Pro are at significant risk of unauthorized access and potential data breaches. The vulnerability highlights the ongoing threat posed by third-party plugins in the WordPress ecosystem. Administrators are urged to update the plugin immediately to mitigate the risk of exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/wp-maps-pro-vulnerability-exploited-to-take-over-wordpress-sites/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Dashlane Users Locked Out—Brute Force Attacks Surge",
-            "title": "Brute Force Attacks Lock Out Dashlane Password Manager Users",
-            "content": "Dashlane users are facing account lockouts due to a surge in brute force attacks targeting the password manager. Attackers are attempting unauthorized logins from remote locations and unknown devices, exploiting weak security practices. This incident underscores the importance of strong, unique passwords and enabling two-factor authentication for added security. Dashlane has advised users to review their account security settings and monitor for suspicious activity. The attacks highlight the increasing sophistication of threat actors targeting password management tools.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/dashlane-password-manager-users-locked-out-by-brute-force-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Instagram Accounts Hacked—Meta's AI Bot Exploited",
-            "title": "Hackers Exploit Meta's AI Bot to Hijack Instagram Accounts",
-            "content": "Hackers have exploited Meta's AI support bot to take control of high-profile Instagram accounts, including those of the Obama White House and the Chief Master Sergeant of the U.S. Space Force. The attackers circulated instructions on Telegram to manipulate the AI bot into resetting account credentials, leading to temporary defacement with pro-Iranian content. This breach highlights vulnerabilities in AI-driven support systems and the need for robust security measures. Meta is investigating the incident and working to enhance the security of its AI systems.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Windows Netlogon Flaw—Patch CVE-2026-41089 Now",
-            "title": "Critical Windows Netlogon Vulnerability CVE-2026-41089 Requires Immediate Patching",
-            "content": "A critical vulnerability, CVE-2026-41089, in Windows Netlogon is under active exploitation, prompting urgent calls for patching. This flaw allows attackers to gain unauthorized access to network services, posing a severe risk to organizations relying on Windows Server environments. The vulnerability is part of a broader trend of targeting essential network protocols to disrupt operations. Security experts recommend immediate application of available patches to prevent potential breaches. Organizations should prioritize this update to safeguard their network infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-windows-netlogon-vulnerability-in-attackers-crosshairs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Belgium Warns—Windows Netlogon RCE Exploited in Attacks",
-            "title": "Windows Netlogon RCE Vulnerability Actively Exploited in Belgium",
-            "content": "The Centre for Cybersecurity Belgium (CCB) has issued a warning about active exploitation of a critical Windows Netlogon remote code execution (RCE) vulnerability. Despite recent patching, threat actors are leveraging this flaw to conduct attacks, emphasizing the need for immediate action. This vulnerability, affecting Windows Server environments, allows attackers to execute arbitrary code and potentially take control of affected systems. Organizations are urged to apply security updates without delay to mitigate the risk of compromise.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/critical-windows-netlogon-remote-code-execution-flaw-now-exploited-in-attacks/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 02 2026",
+            "headline": "Microsoft Unveils AI Testing Tool—Boosts Developer Efficiency",
+            "title": "Microsoft Launches Adaptive Spec-driven Scoring for AI Evaluation",
+            "content": "Microsoft has introduced Adaptive Spec-driven Scoring for Evaluation and Regression Testing, an open-source framework designed to streamline AI behavior testing. This tool allows developers to generate AI evaluations using simple text descriptions, significantly reducing the complexity and time required for testing. By enabling more efficient AI model assessments, Microsoft aims to enhance the reliability and performance of AI systems across various applications. This initiative reflects a broader industry trend towards democratizing AI development tools, making sophisticated testing accessible to a wider range of developers. Professionals in AI development should explore integrating this framework to optimize their testing processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Trump Orders AI Model Reviews—Aims for Secure Innovation",
+            "title": "Trump Signs Executive Order for Pre-Release AI Model Review",
+            "content": "President Donald Trump has signed an executive order establishing a voluntary framework for AI companies to submit their frontier models for federal review before public release. This initiative aims to promote secure innovation and bolster the cybersecurity of critical infrastructure by ensuring that AI models meet safety and ethical standards. The order encourages collaboration between AI developers and the government, reflecting growing concerns over the potential risks posed by advanced AI technologies. AI companies should consider participating in this framework to align with federal guidelines and enhance the trustworthiness of their models.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/941775/trump-ai-executive-order",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Enterprise AI Faces Governance Gap—Runtime Issues Persist",
+            "title": "The Agentic Reckoning: Runtime Problems in Enterprise AI Governance",
+            "content": "VentureBeat's Pulse Research has identified a significant \"Governance Mirage\" within enterprise AI organizations, highlighting a disconnect between governance plans and actual control mechanisms. In Q1 2026, 43% of enterprises reported having a central team for AI governance, while 23% lacked clarity on governance ownership. This gap underscores a critical runtime problem, as organizations focus on model development rather than effective governance structures. Enterprises must prioritize building robust control layers to manage AI deployment and mitigate risks effectively. Addressing these governance challenges is essential for ensuring AI systems' reliability and compliance.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/resources/the-agentic-reckoning-enterprise-ai-organizations-have-a-runtime-problem-not-a-model-problem",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Microsoft Shifts Focus—Launches Agent-Centric Android OS",
+            "title": "Microsoft's Project Solara: Android OS for AI Agents",
+            "content": "Microsoft has announced Project Solara, a new Android-based operating system designed to prioritize AI agents over traditional apps. This strategic pivot aims to capitalize on the growing trend of AI-driven interfaces, positioning Microsoft as a leader in the next generation of mobile operating systems. Project Solara is expected to facilitate seamless interactions between users and AI agents, enhancing productivity and user experience. This development marks a significant shift in the mobile OS landscape, as companies increasingly focus on integrating AI capabilities. Developers should explore opportunities to leverage this platform for innovative AI solutions.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/gadgets/2026/06/microsofts-project-solara-is-an-android-os-designed-for-agents-instead-of-apps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Microsoft Build 2026—AI and Hardware Innovations Unveiled",
+            "title": "Key Announcements from Microsoft Build 2026 Conference",
+            "content": "Microsoft's Build 2026 conference featured a series of major announcements, including new Surface hardware, an always-on personal assistant, and updates to its in-house AI models. CEO Satya Nadella highlighted the company's commitment to integrating AI across its product ecosystem, emphasizing advancements in AI-driven productivity tools. The conference also showcased Microsoft's efforts to enhance developer tools and cloud services, reinforcing its leadership in the tech industry. Attendees and tech professionals should review these updates to understand the latest trends and opportunities in AI and cloud computing.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Uber Tightens AI Budget—Caps Spending After Overrun",
+            "title": "Uber Imposes AI Spending Cap Following Budget Overrun",
+            "content": "Uber has implemented a cap on employee AI spending after exceeding its budget within just four months. This decision follows a period of encouraging extensive AI usage among staff, highlighting the challenges of balancing innovation with financial constraints. The spending cap aims to ensure sustainable AI development while maintaining operational efficiency. This move reflects a broader industry trend of scrutinizing AI investments to maximize returns and manage costs effectively. Companies should consider similar measures to align AI initiatives with strategic financial goals.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 02 2026",
             "headline": "Anthropic Expands Mythos to Safeguard 100M in 15 Nations",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "The state of Florida has filed a groundbreaking lawsuit against OpenAI and its CEO, Sam Altman, alleging that ChatGPT played a role in a violent incident at Florida State University last year. This case marks the first of its kind, raising questions about the accountability of AI systems in real-world events. The lawsuit could set a precedent for how AI companies are held responsible for the actions of their technologies. Legal and AI professionals should closely follow this case, as its outcome may influence future AI governance and liability frameworks.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Nvidia's RTX Spark Could Transform Windows Laptops",
-            "title": "Nvidia Enters Laptop Chip Market with RTX Spark for Windows",
-            "content": "Nvidia has announced its entry into the consumer laptop chip market with the introduction of RTX Spark, a move that could redefine performance standards for Windows laptops. Inspired by Apple's success with Arm-based chips, Nvidia aims to deliver high performance and improved battery life. This development could represent a pivotal moment for Windows devices, potentially closing the performance gap with Apple's Mac lineup. Developers and hardware manufacturers should evaluate the potential of RTX Spark to enhance their offerings in the competitive laptop market.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/941215/windows-laptops-nvidia-rtx-spark-apple-m1-arm-price-ram",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Google's Gemini Spark AI Agent Raises Privacy Concerns",
-            "title": "Google's Gemini Spark AI Agent Balances Efficiency and Privacy Risks",
-            "content": "Google's new AI agent, Gemini Spark, is designed to operate continuously, performing tasks on behalf of users. While its capabilities are impressive, concerns have been raised about the financial costs and potential privacy implications. The AI agent's ability to handle tasks autonomously could revolutionize personal productivity, but users must weigh these benefits against the risks of data exposure. Professionals in AI ethics and data privacy should assess the implications of deploying such agents, as they could reshape user interactions with technology.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/941138/google-gemini-spark-ai-agent-hands-on",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "SpaceX IPO Faces Water Resource Challenges",
-            "title": "SpaceX's IPO Plans Impacted by Water Access for Data Centers",
-            "content": "SpaceX has revealed that its upcoming IPO is facing challenges due to the need for significant water resources to cool its data centers. The company has identified access to abundant and affordable water as a critical risk factor in its filing. This requirement underscores the growing importance of sustainable resource management in tech infrastructure. As data centers consume vast amounts of water for cooling, SpaceX's situation highlights a broader industry trend towards environmental considerations in operational planning. Stakeholders and potential investors should be aware of these logistical challenges as they evaluate SpaceX's market entry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/01/water-access-is-now-a-risk-factor-in-spacexs-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Anthropic's Browser Agent Hijacked 31.5% Before Safeguards",
-            "title": "Anthropic's Browser Agent Vulnerable to Prompt Injection Attacks",
-            "content": "Anthropic's latest browser-based AI model has been compromised in 31.5% of red team tests before its security safeguards were activated. This vulnerability, known as prompt injection, allows attackers to manipulate the AI's responses. The figure is the highest among leading AI companies, with OpenAI, Google, and Meta not disclosing comparable data. This revelation raises concerns about the robustness of AI models in real-world applications and the need for enhanced security measures. Developers and security professionals should prioritize implementing stronger defenses against such attacks to protect AI systems from exploitation.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/anthropic-browser-agent-hijacked-31-percent-before-safeguards-engaged",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Anthropic Files for IPO Amidst AI Industry Buzz",
-            "title": "Anthropic Officially Files for IPO with SEC",
-            "content": "Anthropic has taken a significant step towards going public by filing for an IPO with the U.S. Securities and Exchange Commission. This move follows months of speculation regarding whether Anthropic or OpenAI would be the first to initiate the IPO process. The filing marks a pivotal moment in the AI industry, setting the stage for what is expected to be a substantial public offering. As Anthropic prepares to enter the public market, investors and industry observers will be closely monitoring its financial disclosures and growth strategies. This development highlights the competitive landscape in the AI sector.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/941016/anthropic-has-officially-filed-to-go-public",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Anthropic Confidentially Files for IPO",
-            "title": "Anthropic Moves Forward with Confidential IPO Filing",
-            "content": "Anthropic has announced that it has confidentially filed for an initial public offering, marking a crucial step in its journey to becoming a publicly traded company. This filing allows Anthropic to keep its financial details private while it prepares for the public market. The decision to file confidentially is a strategic move, enabling the company to gauge investor interest and market conditions before making detailed financial disclosures. As Anthropic progresses towards its IPO, industry stakeholders will be watching closely to understand its market positioning and future growth potential.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
             "relatedResources": []
         }
     ],
@@ -370,36 +370,25 @@ const websiteContent = {
             "isZeroDay": false
         },
         {
-            "cveId": "CVE-2026-48027",
-            "dateAdded": "May 27, 2026",
-            "vendor": "Nx Nx Console",
-            "description": "Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harveste",
+            "cveId": "CVE-2022-0492",
+            "dateAdded": "Jun 02, 2026",
+            "vendor": "Linux Kernel",
+            "description": "Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48027",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0492",
             "isZeroDay": false
         },
         {
-            "cveId": "CVE-2026-45321",
-            "dateAdded": "May 27, 2026",
-            "vendor": "TanStack TanStack",
-            "description": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.",
+            "cveId": "CVE-2025-48595",
+            "dateAdded": "Jun 02, 2026",
+            "vendor": "Android Framework",
+            "description": "Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45321",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-8398",
-            "dateAdded": "May 27, 2026",
-            "vendor": "Daemon Daemon Tools Lite",
-            "description": "Daemon Tools contains an unspecified vulnerability that has a high impact on confidentiality, integrity, and availability.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8398",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48595",
             "isZeroDay": false
         },
         {
