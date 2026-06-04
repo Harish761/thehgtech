@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1510",
+      "incident_id": 1510,
+      "title": "Meta AI Support Bot Reportedly Enabled Takeovers of High-Profile Instagram Accounts",
+      "date": "2026-06-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1507",
       "incident_id": 1507,
       "title": "COEMPT Quality Assurance Engineers Allegedly Violated Indian CBSE Student Data Privacy Rights by Pro",
@@ -2010,9 +2018,9 @@
     }
   ],
   "stats": {
-    "total": 251,
-    "last7Days": 70,
-    "last30Days": 169
+    "total": 252,
+    "last7Days": 71,
+    "last30Days": 170
   },
-  "lastUpdated": "2026-06-04T16:53:13.014312+05:30"
+  "lastUpdated": "2026-06-04T21:07:55.711849+05:30"
 }
