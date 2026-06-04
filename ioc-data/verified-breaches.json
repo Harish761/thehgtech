@@ -4319,6 +4319,28 @@
       "Description": "In October 2024, almost 20GB of data containing 1.3M unique email addresses from motorcycle supplies store Dennis Kirk was circulated. Dating back to September 2021, the data also contained purchases from the online store along with customer names, phone numbers and postcodes. Dennis Kirk did not respond to multiple attempts to make contact about the breach."
     }
   ],
+  "dentaquest.com": [
+    {
+      "Name": "DentaQuest",
+      "Title": "DentaQuest",
+      "BreachDate": "2026-05-23",
+      "AddedDate": "2026-06-03T22:56:30Z",
+      "PwnCount": 2553599,
+      "DataClasses": [
+        "Dates of birth",
+        "Email addresses",
+        "Genders",
+        "Government issued IDs",
+        "Health insurance information",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In May 2026, the dental benefits administrator <a href=\"https://x.com/DarkWebInformer/status/2060540499740479800\" target=\"_blank\" rel=\"noopener\">DentaQuest was the target of a ShinyHunters \"pay or leak\" extortion campaign</a> that resulted in the group publicly publishing hundreds of gigabytes of data allegedly obtained from the company. The data included 2.6M unique email addresses along with names, addresses and phone numbers. Much of the data appeared in healthcare enrollment files (<a href=\"https://en.wikipedia.org/wiki/ASC_X12\" target=\"_blank\" rel=\"noopener\">ASC X12 transaction sets</a>) with some containing Medicaid IDs, while additional data appeared in member records and related files. <a href=\"https://www.dentaquest.com/en/security-update-0526\" target=\"_blank\" rel=\"noopener\">DentaQuest acknowledged \"a cybersecurity incident involving unauthorized access to a limited portion of our network\"</a>, and advised they had contained the attack and mitigated the threat."
+    }
+  ],
   "descomplica.com.br": [
     {
       "Name": "Descomplica",
