@@ -9,6 +9,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1511",
+      "incident_id": 1511,
+      "title": "Grok Reportedly Generated Images After X Users Asked It to Unredact Epstein-File Photos of Children ",
+      "date": "2026-06-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1512",
+      "incident_id": 1512,
+      "title": "The Sydney Morning Herald and The Age Removed an Opinion Article After Undisclosed Copilot Use",
+      "date": "2026-06-04",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1507",
       "incident_id": 1507,
       "title": "COEMPT Quality Assurance Engineers Allegedly Violated Indian CBSE Student Data Privacy Rights by Pro",
@@ -2018,9 +2034,9 @@
     }
   ],
   "stats": {
-    "total": 252,
-    "last7Days": 71,
-    "last30Days": 170
+    "total": 254,
+    "last7Days": 73,
+    "last30Days": 172
   },
-  "lastUpdated": "2026-06-04T21:07:55.711849+05:30"
+  "lastUpdated": "2026-06-04T23:57:38.459485+05:30"
 }
