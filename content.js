@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 04 2026",
+            "headline": "Hugging Face RCE Flaw—AI Models at Risk",
+            "title": "Critical RCE Vulnerability in Hugging Face Transformers Library",
+            "content": "A critical remote code execution (RCE) vulnerability has been discovered in the Hugging Face Transformers library, a widely used Python tool for AI model deployment. The flaw affects multiple versions of the library, which remain popular among developers and researchers. This vulnerability allows attackers to stealthily compromise systems by exploiting AI model configurations, posing a significant threat to organizations relying on these models for critical operations. As AI systems become increasingly targeted by cybercriminals, this discovery underscores the urgent need for robust security measures in AI development environments. Users are advised to update to the latest patched versions immediately to mitigate potential risks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4181094/hugging-face-transformers-rce-flaw-enables-stealthy-compromise-via-ai-model-configs.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Cisco Unified CM Flaw—Patch for Root Access Vulnerability",
+            "title": "Cisco Patches Critical Unified Communications Manager Vulnerability",
+            "content": "Cisco has issued a security update to address a critical vulnerability in its Unified Communications Manager (Unified CM) that could allow attackers to gain root privileges. The flaw, which has been assigned a critical severity rating, is particularly concerning due to the availability of proof-of-concept (PoC) exploit code. This vulnerability affects systems used for managing voice, video, and messaging services, potentially impacting a wide range of enterprise environments. With cyber threats on the rise, organizations using Unified CM should apply the security patch immediately to protect their infrastructure from potential exploitation.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-unified-cm-flaw-with-poc-exploit-code/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "1.4M Accounts Disrupted—Cybercrime Crackdown in Southeast Asia",
+            "title": "Major Cybercrime Infrastructure Disrupted Across Southeast Asia",
+            "content": "In a coordinated effort, law enforcement agencies and tech companies have dismantled cybercrime infrastructure responsible for disrupting over 1.4 million accounts across Southeast Asia. This operation targeted scammers exploiting digital platforms to conduct fraudulent activities, significantly impacting both individuals and businesses in the region. The crackdown highlights the ongoing battle against cybercrime networks that leverage sophisticated techniques to evade detection. Affected users are encouraged to review their account security and remain vigilant against potential phishing attempts. This development marks a significant step forward in international cybercrime prevention efforts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/over-1-4-million-accounts-disrupted-in-cybercrime-crackdown/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Fake Open-Source Sites—Malware Delivered via TDS",
+            "title": "Malware Campaign Uses Fake Open-Source Sites to Spread Threats",
+            "content": "Cybersecurity researchers have uncovered a large-scale operation that uses fake websites mimicking popular open-source tools to distribute malware. These sites employ a Traffic Distribution System (TDS) to redirect unsuspecting users and deliver malware families such as Remus Stealer, AnimateClipper, and SessionGate. The operation exploits the trust users place in open-source and freeware projects, posing a significant risk to developers and IT professionals. As these malicious sites rank high in search engine results, users are advised to verify the authenticity of download sources and employ robust security measures to protect their systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/fake-sites-mimicking-open-source-tools.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Cisco Unified CM Vulnerability—Remote Exploitation Risk",
+            "title": "Cisco Warns of Remote Exploitation Risk in Unified CM",
+            "content": "Cisco has alerted users to a high-severity vulnerability in its Unified Communications Manager (Unified CM) that can be exploited remotely without authentication. This flaw, which facilitates server-side request forgery (SSRF) attacks, poses a critical threat to enterprise communication systems. The availability of proof-of-concept (PoC) exploit code increases the urgency for organizations to implement the available security patches. As remote exploitation risks continue to rise, enterprises must prioritize patch management and security monitoring to safeguard their communication infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-warns-of-available-poc-for-critical-unified-cm-vulnerability/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "Magento RCE Flaw—CISA Adds to Exploited Vulnerabilities",
+            "title": "CISA Adds Magento RCE Flaw CVE-2026-45247 to KEV Catalog",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical remote code execution (RCE) vulnerability, CVE-2026-45247, affecting the Mirasvit Cache Warmer extension for Magento, to its Known Exploited Vulnerabilities (KEV) catalog. This addition follows reports of active exploitation in the wild, highlighting the urgency for Magento users to address this security flaw. The vulnerability allows attackers to execute arbitrary code on affected systems, posing a severe risk to e-commerce platforms relying on Magento. Users are urged to apply security patches immediately to mitigate potential exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisa-adds-exploited-magento-rce-flaw.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 03 2026",
             "headline": "U.S. Sanctions Iran's Nobitex—Crypto Exchange Tied to Ransomware",
             "title": "OFAC Sanctions Nobitex for Facilitating Iranian Ransomware Payments",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/acer-warns-of-max-severity-zero-days-affecting-wave-7-routers/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Unpatched Windows Flaw Exposes NTLMv2 Hashes to Attackers",
-            "title": "Windows Search URI Vulnerability Allows NTLMv2 Hash Theft",
-            "content": "A newly disclosed vulnerability in Windows Search URI could enable attackers to steal NTLMv2 hashes, posing a significant security threat. Similar to the previously identified CVE-2026-33829 affecting the Windows Snipping Tool, this flaw resides in the search functionality, allowing malicious actors to exploit it for credential theft. Users and organizations are at risk of unauthorized access and potential data breaches if the vulnerability is not addressed. Security professionals should implement mitigation strategies and monitor for updates from Microsoft to protect against exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/unpatched-windows-search-uri.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "9 Crime Groups Dismantled in Illegal Streaming Crackdown",
-            "title": "Law Enforcement Agencies Dismantle Illegal Streaming Operations Across Europe",
-            "content": "European and international law enforcement agencies have successfully dismantled nine organized crime groups involved in illegal streaming operations, resulting in the arrest of 29 suspects. This coordinated effort targeted networks that provided unauthorized access to copyrighted content, impacting the entertainment industry significantly. The crackdown highlights the ongoing battle against digital piracy and the importance of international cooperation in combating cybercrime. Authorities continue to pursue remaining operatives and urge the public to avoid illegal streaming services to support legitimate content providers.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-dismantles-9-crime-groups-in-illegal-streaming-crackdown/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Microsoft Faces Backlash Over Zero-Day Disclosure Legal Threats",
-            "title": "Microsoft Responds to Criticism Over Legal Threats to Vulnerability Researchers",
-            "content": "Microsoft has addressed the backlash following its threats of legal action against researchers who publicly disclose zero-day vulnerabilities. The tech giant's response aims to reassure the cybersecurity community while balancing the need for responsible disclosure practices. This controversy underscores the tension between protecting users and encouraging open communication about security flaws. Microsoft emphasizes its commitment to working with researchers to enhance product security while maintaining legal safeguards. The incident highlights the delicate balance required in vulnerability management and disclosure policies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-tries-to-calm-legal-threat-fears-after-zero-day-disclosure-backlash/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Project Glasswing Expands—150 Firms Join AI Vulnerability Hunt",
-            "title": "Anthropic's Project Glasswing Adds 150 Companies, Targets Critical Infrastructure",
-            "content": "Anthropic has announced the expansion of its Project Glasswing initiative, incorporating 150 additional companies with a focus on critical infrastructure sectors such as power, water, healthcare, communications, and hardware. This AI-driven project aims to identify and mitigate vulnerabilities in essential services, enhancing the security posture of these industries. Analysts highlight the importance of this expansion as cyber threats against critical infrastructure continue to rise globally. Companies involved in the project will benefit from advanced AI tools designed to proactively detect and address potential security weaknesses. Participants are encouraged to integrate these findings into their existing cybersecurity frameworks to bolster defenses.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4180265/anthropic-grants-project-glasswing-access-to-150-more-companies-with-a-focus-on-critical-infrastructure.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Oracle WebLogic Flaw—Patch Mandated for Federal Agencies",
-            "title": "Oracle WebLogic Server Vulnerability CVE-2024-21182 Under Active Exploitation",
-            "content": "A two-year-old vulnerability in Oracle WebLogic Server, identified as CVE-2024-21182, is being actively exploited, prompting the U.S. federal government to mandate immediate patching by Thursday. This high-severity flaw allows unauthenticated attackers to access sensitive data, posing significant risks to affected systems. The vulnerability has been added to the Cybersecurity and Infrastructure Security Agency's (CISA) Known Exploited Vulnerabilities Catalog, underscoring its critical nature. Organizations using Oracle WebLogic Server should prioritize applying the latest security updates to prevent potential breaches. This incident highlights the ongoing challenges of managing legacy vulnerabilities in widely used enterprise software.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4180218/two-year-old-oracle-weblogic-server-vulnerability-is-being-exploited.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Kirki Plugin Exploit—WordPress Admins at Risk",
-            "title": "Critical Kirki Plugin Vulnerability CVE-2026-8206 Compromises WordPress Admin Accounts",
-            "content": "Hackers are actively exploiting a critical vulnerability in the Kirki plugin for WordPress, designated as CVE-2026-8206, which allows for privilege escalation and the hijacking of administrator accounts. This flaw poses a severe threat to websites using the plugin, potentially granting attackers full control over affected sites. WordPress administrators are urged to update the Kirki plugin immediately to mitigate the risk of unauthorized access. The exploitation of this vulnerability underscores the importance of regular plugin updates and security audits for WordPress sites. Security professionals should monitor for unusual activity and reinforce access controls to protect against similar threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-kirki-flaw-exploited-to-hijack-wordpress-admin-accounts/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 04 2026",
+            "headline": "Amazon's Proteus Robot Speaks—Revolutionizing Warehouse Automation",
+            "title": "Amazon Unveils Language-Interacting Proteus Robot for Warehouse Operations",
+            "content": "Amazon has introduced a new iteration of its autonomous warehouse robot, Proteus, which now features the ability to interact with workers using natural language. This development marks a significant shift from traditional code-based interactions, enhancing operational efficiency and worker-robot collaboration. The AI-powered Proteus is part of Amazon's broader strategy to increase automation within its logistics network, potentially reducing reliance on human labor. The integration of language processing capabilities aims to streamline warehouse tasks, improving response times and accuracy. Industry professionals should monitor this trend as it could redefine workforce dynamics in logistics and supply chain management.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/942884/amazon-next-generation-warehouse-robot-proteus",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Hello Robot's Stretch 4.0—Home Assistance Revolutionized",
+            "title": "Hello Robot Launches Fourth-Gen Stretch for Home Assistance",
+            "content": "California-based startup Hello Robot has launched the fourth generation of its home assistance robot, Stretch. This latest version is designed to enhance domestic tasks, offering improved mobility and interaction capabilities. Stretch 4.0 aims to cater to households seeking robotic assistance for daily chores, potentially transforming home automation. As the demand for in-home robotics grows, Hello Robot positions itself at the forefront of this burgeoning market. Tech leaders and developers should consider the implications of such advancements on smart home ecosystems and user experience.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "TSMC Faces AI Demand Surge—Capacity Limits Strain Supply",
+            "title": "TSMC Struggles to Meet Surging AI Chip Demand Amid US Expansion",
+            "content": "Taiwan Semiconductor Manufacturing Co. (TSMC), the world's leading semiconductor manufacturer, is facing challenges in meeting the soaring demand for AI chips from its American clients. Despite ongoing expansion efforts, including new facilities in the US, TSMC's capacity is stretched thin. CEO reports indicate that the demand from tech giants exceeds current production capabilities, potentially impacting AI-driven innovations and deployments. This bottleneck underscores the critical role of semiconductor supply in the AI industry, urging stakeholders to strategize on supply chain resilience.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "App Store Sales Hit $1.4 Trillion—90% Commission-Free",
+            "title": "Apple Reports $1.4 Trillion in App Store Sales with Minimal Commissions",
+            "content": "Apple has announced that its App Store generated $1.4 trillion in billings and sales over the past year, marking an increase from $1.3 trillion previously. Notably, 90% of these sales were made without incurring a commission fee, highlighting Apple's evolving revenue model. The $149 billion in digital goods sales underscores the platform's robust growth and its significance in the digital economy. Developers and tech leaders should assess the implications of this model on app monetization strategies and competitive positioning in the app marketplace.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/04/apple-touts-1-4-trillion-in-app-store-billings-and-sales-90-without-a-commission/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Elon Musk Nears Trillionaire Status—Wall Street's New Reality",
+            "title": "Elon Musk's Financial Ascent: On Track to Become a Trillionaire",
+            "content": "Elon Musk is on the verge of becoming the world's first trillionaire, driven by the soaring valuations of his ventures, including SpaceX and Tesla. This financial milestone reflects Musk's significant influence on Wall Street and the tech industry at large. His strategic maneuvers and bold investments continue to reshape market dynamics, prompting analysts to reassess traditional valuation models. As Musk's wealth approaches unprecedented levels, industry professionals should consider the broader economic implications and potential shifts in investment trends.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/942586/elon-musk-spacex-ipo-x-xai-index-funds",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Fine-Tune Nemotron 3.5 ASR—Customize for Your Needs",
+            "title": "Guide to Fine-Tuning Nemotron 3.5 ASR for Specific Applications",
+            "content": "Hugging Face has released a comprehensive guide on fine-tuning Nemotron 3.5 ASR (Automatic Speech Recognition) to cater to specific languages, domains, or accents. This customization capability allows developers to optimize the ASR model for enhanced accuracy and performance in targeted applications. As speech recognition technology becomes integral to various industries, the ability to tailor models to specific needs is crucial. Developers and tech leaders should leverage this guide to maximize the utility of Nemotron 3.5 ASR in their projects, ensuring competitive advantage and improved user experiences.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr",
+            "relatedResources": []
+        },
         {
             "date": "Jun 03 2026",
             "headline": "Lovable Expands Google Cloud Use 5x—Anthropic Claude Access Boosted",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Amazon is enhancing its search capabilities by incorporating AI-generated product images to assist users in finding items that match their search queries. This visual search feature aims to streamline the shopping process by offering a more interactive and visually appealing way to browse products. By leveraging artificial intelligence, Amazon hopes to guide users more effectively to the products they desire, improving the overall user experience. This development is part of a broader trend in e-commerce towards utilizing AI to personalize and enhance consumer interactions. As AI technology advances, such features are likely to become standard in online retail platforms.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/03/amazon-will-show-ai-product-images-when-you-search-for-some-reason/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Ex-Goldman and Meta Founders Tackle Voice AI in Emerging Markets",
-            "title": "Startup by Former Goldman and Meta Founders Targets Voice AI in Overlooked Markets",
-            "content": "Two former executives from Goldman Sachs and Meta have launched a startup focused on developing voice AI solutions for underserved markets in Africa and the Middle East. The company's proprietary technology is already handling over 17,000 calls daily, demonstrating significant demand and potential for growth. By targeting regions often overlooked by major tech players, the founders aim to address unique linguistic and cultural challenges with tailored AI solutions. This initiative highlights the growing interest in expanding AI applications to diverse global markets, potentially unlocking new opportunities for innovation and economic development in these areas.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/03/these-two-founders-left-goldman-and-meta-to-build-voice-ai-for-markets-everyone-else-overlooked/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "UK Regulators Mandate AI Search Opt-Out for Publishers",
-            "title": "UK Regulation Requires Google to Offer AI Search Opt-Out Tool for Publishers",
-            "content": "In a significant regulatory move, UK authorities are mandating that Google provide a tool allowing website publishers to opt out of generative AI search features. This requirement aims to give publishers greater control over their content's inclusion in AI-driven search results, addressing concerns about intellectual property and content misuse. Initially, the opt-out tool will be tested in the UK before a planned global rollout. This development underscores the increasing regulatory scrutiny on AI technologies and their impact on digital content management. Publishers should prepare to evaluate their participation in AI search features and consider the implications for their content strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Microsoft and OpenAI Part Ways—New AI Initiatives Unveiled",
-            "title": "Microsoft Announces New AI Initiatives Following Split with OpenAI",
-            "content": "At its annual Build conference, Microsoft announced a series of new AI initiatives, marking a strategic shift following its separation from OpenAI. The tech giant unveiled plans for a super app, in-house reasoning models, a cybersecurity tool, and AI agents akin to OpenClaw. These initiatives signal Microsoft's commitment to advancing its AI capabilities independently, positioning itself as a leader in the AI space. The breakup with OpenAI allows Microsoft to focus on developing proprietary technologies that align with its strategic goals. Industry professionals should monitor these developments as Microsoft continues to expand its influence in the AI sector.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/942242/microsoft-build-ai-agents-openai-competition",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Microsoft Unveils AI Testing Tool—Boosts Developer Efficiency",
-            "title": "Microsoft Launches Adaptive Spec-driven Scoring for AI Evaluation",
-            "content": "Microsoft has introduced Adaptive Spec-driven Scoring for Evaluation and Regression Testing, an open-source framework designed to streamline AI behavior testing. This tool allows developers to generate AI evaluations using simple text descriptions, significantly reducing the complexity and time required for testing. By enabling more efficient AI model assessments, Microsoft aims to enhance the reliability and performance of AI systems across various applications. This initiative reflects a broader industry trend towards democratizing AI development tools, making sophisticated testing accessible to a wider range of developers. Professionals in AI development should explore integrating this framework to optimize their testing processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Trump Orders AI Model Reviews—Aims for Secure Innovation",
-            "title": "Trump Signs Executive Order for Pre-Release AI Model Review",
-            "content": "President Donald Trump has signed an executive order establishing a voluntary framework for AI companies to submit their frontier models for federal review before public release. This initiative aims to promote secure innovation and bolster the cybersecurity of critical infrastructure by ensuring that AI models meet safety and ethical standards. The order encourages collaboration between AI developers and the government, reflecting growing concerns over the potential risks posed by advanced AI technologies. AI companies should consider participating in this framework to align with federal guidelines and enhance the trustworthiness of their models.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/941775/trump-ai-executive-order",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Enterprise AI Faces Governance Gap—Runtime Issues Persist",
-            "title": "The Agentic Reckoning: Runtime Problems in Enterprise AI Governance",
-            "content": "VentureBeat's Pulse Research has identified a significant \"Governance Mirage\" within enterprise AI organizations, highlighting a disconnect between governance plans and actual control mechanisms. In Q1 2026, 43% of enterprises reported having a central team for AI governance, while 23% lacked clarity on governance ownership. This gap underscores a critical runtime problem, as organizations focus on model development rather than effective governance structures. Enterprises must prioritize building robust control layers to manage AI deployment and mitigate risks effectively. Addressing these governance challenges is essential for ensuring AI systems' reliability and compliance.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/resources/the-agentic-reckoning-enterprise-ai-organizations-have-a-runtime-problem-not-a-model-problem",
             "relatedResources": []
         }
     ],
