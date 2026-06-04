@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 03 2026",
+            "headline": "U.S. Sanctions Iran's Nobitex—Crypto Exchange Tied to Ransomware",
+            "title": "OFAC Sanctions Nobitex for Facilitating Iranian Ransomware Payments",
+            "content": "The U.S. Treasury's Office of Foreign Assets Control (OFAC) has imposed sanctions on Nobitex, Iran's largest cryptocurrency exchange, citing its role in facilitating payments linked to ransomware and terrorist activities. Nobitex has been identified as a key financial conduit for Iranian ransomware groups, enabling transactions that support malicious cyber operations. This move underscores the U.S. government's ongoing efforts to disrupt financial networks that support cybercrime and terrorism. The sanctions are expected to severely impact Nobitex's operations, limiting its ability to engage with international financial systems. Organizations are advised to review their cryptocurrency transaction policies to ensure compliance with U.S. regulations.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-us-sanctions-nobitex-crypto-exchange-used-by-ransomware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "AI Tool Uncovers Redis RCE Flaw—Patch Released",
+            "title": "Autonomous AI Finds Critical Redis RCE Vulnerability CVE-2026-23479",
+            "content": "An autonomous AI tool has discovered a critical remote code execution (RCE) vulnerability in Redis, tracked as CVE-2026-23479. This flaw, a use-after-free in the blocking-client code, allows authenticated users to execute arbitrary OS commands on the host machine. Redis has released a patch to address this vulnerability, which has been present for two years. The discovery highlights the potential of AI-driven tools in identifying long-standing security issues in complex codebases. Organizations using Redis are urged to apply the patch immediately to mitigate potential exploitation risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/autonomous-ai-tool-finds-2-year-old-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "VS Code Zero-Day Exposes GitHub Tokens—Exploit Code Released",
+            "title": "Visual Studio Code Zero-Day Allows Theft of GitHub Tokens",
+            "content": "A newly disclosed zero-day vulnerability in Visual Studio Code (VS Code) enables attackers to steal GitHub authentication tokens through a single click. The exploit code, released by a security researcher, leverages this flaw to trick users into clicking malicious links. This vulnerability poses a significant threat to developers who rely on GitHub for version control and collaboration. Users are advised to exercise caution when clicking on links and to monitor for updates from Microsoft regarding a patch. The incident underscores the critical need for robust security measures in developer tools.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/vs-code-zero-day-lets-hackers-steal-github-tokens-in-one-click/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "CISA Alerts on Cyberattacks Targeting Fuel Tank Systems",
+            "title": "CISA Warns of Attacks on Internet-Exposed Fuel Tank Monitoring Systems",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA), in collaboration with the FBI, NSA, and Department of Energy, has issued a warning about cyberattacks targeting automatic tank gauge (ATG) systems. These systems, used to monitor fuel and liquid storage tanks, are exposed on the internet, making them vulnerable to exploitation. The attacks could disrupt critical infrastructure sectors, including energy and transportation. Organizations are advised to secure their ATG systems by implementing network segmentation and applying security patches. This alert highlights the ongoing threat to industrial control systems and the need for enhanced cybersecurity measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-targeting-fuel-tank-monitoring-systems/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Gamaredon Exploits WinRAR Flaw—Targets Ukraine with Malware",
+            "title": "Gamaredon Uses WinRAR Vulnerability to Deploy GammaWorm and GammaSteel",
+            "content": "The Russian hacking group Gamaredon is exploiting a path traversal vulnerability in WinRAR, identified as CVE-2025-8088, to deliver malware against Ukrainian targets. The group uses this flaw to deploy GammaWorm and GammaSteel, malware families designed for data theft and network propagation. This activity underscores the persistent threat posed by state-sponsored actors exploiting known vulnerabilities in widely used software. Organizations using WinRAR are urged to update to the latest version to protect against these attacks. The situation highlights the geopolitical dimensions of cyber warfare and the importance of timely patch management.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/gamaredon-exploits-winrar-to-deliver.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 02 2026",
+            "headline": "Oracle WebLogic Flaw Actively Exploited—Added to KEV Catalog",
+            "title": "CISA Adds Oracle WebLogic CVE-2024-21182 to Known Exploited Vulnerabilities",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability in Oracle WebLogic Server, CVE-2024-21182, to its Known Exploited Vulnerabilities (KEV) Catalog. This flaw, with a CVSS score of 7.5, allows unauthorized access and control over affected systems. Evidence of active exploitation has prompted this inclusion, emphasizing the urgency for organizations to apply patches. Oracle WebLogic users should prioritize updating their systems to mitigate potential security breaches. This development highlights the critical nature of maintaining up-to-date defenses against actively exploited vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/oracle-weblogic-cve-2024-21182-added-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
             "headline": "Banks Vulnerable—345 Days of Exposure Without Continuous Testing",
             "title": "Sprocket Security Highlights Risks of Infrequent Penetration Testing in Banks",
             "content": "Sprocket Security has revealed that traditional two-week penetration tests leave banks exposed for approximately 345 days annually due to untested vulnerabilities. As attack surfaces evolve rapidly, the need for continuous testing becomes critical to identify and mitigate risks promptly. This approach contrasts sharply with static testing methods that fail to adapt to dynamic threat landscapes. Financial institutions, which are prime targets for cybercriminals, must consider implementing ongoing security assessments to protect sensitive data and maintain regulatory compliance. The findings underscore the importance of proactive cybersecurity measures in an era of increasing digital threats.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-kirki-flaw-exploited-to-hijack-wordpress-admin-accounts/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "HP Poly VoIP Flaw—Deepfake Risks Emerge",
-            "title": "HP Poly VoIP Vulnerability Enables Potential Deepfake Attacks",
-            "content": "HP has issued patches for a critical buffer overflow vulnerability in its Poly Voice IP-enabled conference phones, which could allow attackers to gain root privileges on the devices. This flaw, if exploited, could facilitate further attacks, including the creation of executive voice deepfakes. The vulnerability highlights the risks associated with unsecured VoIP systems in corporate environments. Organizations using HP Poly Voice devices should apply the patches promptly to secure their communication infrastructure. This incident serves as a reminder of the evolving threat landscape, where voice-based technologies are increasingly targeted by cybercriminals.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4180223/hp-poly-voip-vulnerability-sets-the-stage-for-executive-voice-deepfakes.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "AI Ransomware Toolkit—EDR Evasion Automated",
-            "title": "AI-Driven Ransomware Toolkit Automates EDR Evasion and AD Discovery",
-            "content": "A new ransomware toolkit, developed using artificial intelligence, is automating the evasion of Endpoint Detection and Response (EDR) systems and facilitating Active Directory (AD) discovery. This sophisticated toolkit represents a significant advancement in ransomware capabilities, enabling threat actors to conduct more efficient and stealthy attacks. Security professionals are advised to enhance their defenses by employing advanced threat detection solutions and conducting regular security assessments. The emergence of AI-driven attack tools underscores the need for continuous innovation in cybersecurity strategies to counter evolving threats. Organizations should remain vigilant and proactive in their security measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ai-built-ransomware-toolkit-automates-edr-evasion-ad-discovery/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Android Update—124 Flaws Patched, One Actively Exploited",
-            "title": "Google June 2026 Android Update Addresses 124 Vulnerabilities",
-            "content": "Google has released its June 2026 security update for Android, addressing 124 vulnerabilities, including one actively exploited flaw in the Framework component, identified as CVE-2025-48595. This high-severity vulnerability, with a CVSS score of 8.4, has been under active exploitation, posing a significant risk to Android users. The update underscores the importance of timely patching to protect against potential attacks. Android users are strongly encouraged to apply the latest updates to safeguard their devices. This release highlights Google's ongoing efforts to enhance the security of its mobile operating system amidst a landscape of increasing cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Android Update Fixes Zero-Day—123 Vulnerabilities Patched",
-            "title": "Google Patches Android Zero-Day CVE-2025-48595 and 123 Other Flaws",
-            "content": "Google has released a critical Android security update addressing CVE-2025-48595, a zero-day vulnerability exploited in limited, targeted attacks. This update also patches 123 additional vulnerabilities across various components of the Android operating system. The zero-day flaw, which allowed unauthorized access to sensitive data, underscores the persistent threat of targeted attacks on mobile devices. Users are urged to update their devices immediately to mitigate potential risks. This update highlights the ongoing need for vigilance in mobile security, as threat actors continue to exploit unpatched vulnerabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/android-update-patches-exploited-zero-day-123-other-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "AI Threats Surge—Browsers Now Security Front Line",
-            "title": "Browser Security Critical Amid Rising AI-Powered Attacks and Shadow AI",
-            "content": "As AI-powered attacks become more prevalent, browsers have emerged as a critical front line in cybersecurity. Push Security highlights the growing risks posed by AI-driven threats and the unauthorized use of AI tools, known as shadow AI, within browsers. This trend necessitates enhanced browser visibility for effective threat detection and AI governance. Organizations must prioritize browser security to protect against data breaches and unauthorized access. The rise of AI in cyber threats underscores the importance of integrating AI security measures into existing cybersecurity frameworks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/why-the-browser-is-now-the-front-line-for-ai-security/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "CISA Warns: Oracle Flaw Exploited in Active Attacks",
-            "title": "CISA Alerts on Active Exploitation of Oracle WebLogic Vulnerability",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an alert regarding the active exploitation of a high-severity vulnerability in Oracle WebLogic Server. This flaw, initially patched two years ago, is now being used in attacks against government systems. CISA has mandated that federal agencies secure their systems against this vulnerability to prevent unauthorized access and potential data breaches. The resurgence of this threat highlights the importance of timely patch management and continuous monitoring of legacy systems.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-weblogic-flaw/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 03 2026",
+            "headline": "Lovable Expands Google Cloud Use 5x—Anthropic Claude Access Boosted",
+            "title": "Lovable Signs Multiyear Deal with Google Cloud for Major Expansion",
+            "content": "Lovable has entered a multiyear agreement with Google Cloud, significantly increasing its cloud usage by fivefold. This expansion includes enhanced access to Anthropic Claude, an advanced AI model, allowing Lovable to scale its operations and improve AI-driven services. The deal underscores a growing trend among tech companies to leverage cloud platforms for increased computational power and AI capabilities. This move is expected to enhance Lovable's service offerings, potentially impacting its market position and customer engagement strategies. Companies relying on cloud-based AI solutions should consider similar partnerships to boost their technological infrastructure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "Google's Gemini AI—Privacy Concerns as It Knows Personal Details",
+            "title": "Google's Gemini AI Agent Spark Raises Privacy Concerns with Personal Insights",
+            "content": "Google's new AI agent, Spark, part of the Gemini AI suite, has demonstrated an unsettling level of personal insight, knowing specific details like the names of pets and family members without prior disclosure. This capability raises significant privacy concerns, highlighting the potential for AI to access and utilize personal data in unexpected ways. As AI systems become more sophisticated, the balance between utility and privacy becomes increasingly delicate. Users and developers must be vigilant about data permissions and the ethical implications of AI interactions. This development calls for a reevaluation of privacy standards in AI technologies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "Google's Gemma 4 12B—Local AI Model for Enterprise Laptops",
+            "title": "Google Releases Gemma 4 12B for Local AI Processing on Laptops",
+            "content": "Google has unveiled Gemma 4 12B, an open-source AI model designed to run entirely on a typical 16GB enterprise laptop. With nearly 12 billion parameters, this model can analyze audio and video data locally, offering a balance between performance and privacy. Released under the permissive Apache 2.0 license, Gemma 4 12B provides enterprises with a powerful tool for on-device AI processing, reducing reliance on cloud-based solutions. This development aligns with a broader industry shift towards decentralizing AI workloads to enhance data security and reduce latency. Organizations should explore local AI models to optimize resource use and maintain data privacy.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "Google’s Dreambeans—AI Tool Turns Personal Data into Cartoons",
+            "title": "Google Launches Dreambeans to Transform Personal Data into AI Cartoons",
+            "content": "Google has introduced Dreambeans, an AI tool that creates cartoon-style stories using personal data from users' Google accounts. This innovative application leverages AI to transform mundane data into engaging visual narratives, showcasing the creative potential of AI technologies. While Dreambeans offers a novel way to interact with personal data, it also raises questions about data privacy and user consent. As AI continues to evolve, users must remain informed about how their data is utilized and the potential implications of AI-driven personalization. Developers should prioritize transparency and user control in AI applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/03/googles-dreambeans-its-weirdest-named-ai-tool-to-date-will-turn-your-life-into-a-cartoon/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "Meta's AI Agent for WhatsApp—Now Charging Businesses Globally",
+            "title": "Meta Expands AI Agent for WhatsApp Business with Global Availability",
+            "content": "Meta has rolled out its AI agent for WhatsApp Business globally, introducing a usage-based pricing model for businesses. This AI-driven service aims to enhance customer interactions by automating responses and providing personalized support. The global availability of this agent marks a significant step in Meta's strategy to monetize AI technologies within its messaging platforms. Businesses using WhatsApp for customer engagement should evaluate the cost-benefit of integrating AI agents to improve service efficiency. This development highlights the growing trend of AI integration in business communication tools.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "GPT-Rosalind—Boosting Life Sciences with New Capabilities",
+            "title": "OpenAI Enhances GPT-Rosalind for Advanced Life Sciences Research",
+            "content": "OpenAI has introduced new capabilities to GPT-Rosalind, enhancing its utility in life sciences research. The updated model now offers improved biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities. These enhancements position GPT-Rosalind as a vital tool for researchers seeking to accelerate discoveries in biology and medicine. As AI continues to transform scientific research, professionals in the life sciences should leverage these advanced tools to enhance their analytical capabilities and streamline research processes. This development underscores the potential of AI to drive innovation in scientific fields.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+            "relatedResources": []
+        },
         {
             "date": "Jun 03 2026",
             "headline": "OpenAI Sets Global AI Standards—Focus on Safety and Workforce",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "VentureBeat's Pulse Research has identified a significant \"Governance Mirage\" within enterprise AI organizations, highlighting a disconnect between governance plans and actual control mechanisms. In Q1 2026, 43% of enterprises reported having a central team for AI governance, while 23% lacked clarity on governance ownership. This gap underscores a critical runtime problem, as organizations focus on model development rather than effective governance structures. Enterprises must prioritize building robust control layers to manage AI deployment and mitigate risks effectively. Addressing these governance challenges is essential for ensuring AI systems' reliability and compliance.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/resources/the-agentic-reckoning-enterprise-ai-organizations-have-a-runtime-problem-not-a-model-problem",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Microsoft Shifts Focus—Launches Agent-Centric Android OS",
-            "title": "Microsoft's Project Solara: Android OS for AI Agents",
-            "content": "Microsoft has announced Project Solara, a new Android-based operating system designed to prioritize AI agents over traditional apps. This strategic pivot aims to capitalize on the growing trend of AI-driven interfaces, positioning Microsoft as a leader in the next generation of mobile operating systems. Project Solara is expected to facilitate seamless interactions between users and AI agents, enhancing productivity and user experience. This development marks a significant shift in the mobile OS landscape, as companies increasingly focus on integrating AI capabilities. Developers should explore opportunities to leverage this platform for innovative AI solutions.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/gadgets/2026/06/microsofts-project-solara-is-an-android-os-designed-for-agents-instead-of-apps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Microsoft Build 2026—AI and Hardware Innovations Unveiled",
-            "title": "Key Announcements from Microsoft Build 2026 Conference",
-            "content": "Microsoft's Build 2026 conference featured a series of major announcements, including new Surface hardware, an always-on personal assistant, and updates to its in-house AI models. CEO Satya Nadella highlighted the company's commitment to integrating AI across its product ecosystem, emphasizing advancements in AI-driven productivity tools. The conference also showcased Microsoft's efforts to enhance developer tools and cloud services, reinforcing its leadership in the tech industry. Attendees and tech professionals should review these updates to understand the latest trends and opportunities in AI and cloud computing.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Uber Tightens AI Budget—Caps Spending After Overrun",
-            "title": "Uber Imposes AI Spending Cap Following Budget Overrun",
-            "content": "Uber has implemented a cap on employee AI spending after exceeding its budget within just four months. This decision follows a period of encouraging extensive AI usage among staff, highlighting the challenges of balancing innovation with financial constraints. The spending cap aims to ensure sustainable AI development while maintaining operational efficiency. This move reflects a broader industry trend of scrutinizing AI investments to maximize returns and manage costs effectively. Companies should consider similar measures to align AI initiatives with strategic financial goals.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Anthropic Expands Mythos to Safeguard 100M in 15 Nations",
-            "title": "Anthropic's Mythos Targets Critical Infrastructure in 15 Countries",
-            "content": "Anthropic is scaling its Project Glasswing security initiative, extending access to its Mythos platform to 150 organizations across 15 countries. This expansion targets critical infrastructure sectors such as power, water, healthcare, and communications, where potential cyberattacks could impact up to 100 million people. The initiative aims to bolster defenses against vulnerabilities that could lead to widespread disruptions. By focusing on these essential services, Anthropic underscores the growing need for robust cybersecurity measures in sectors that form the backbone of national economies. Organizations involved are urged to integrate Mythos into their security protocols to mitigate risks effectively.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Microsoft Unveils Surface RTX Spark Dev Box for Developers",
-            "title": "Microsoft Launches Surface RTX Spark Dev Box for Developer Use",
-            "content": "Microsoft has announced the Surface RTX Spark Dev Box, a compact PC designed for developers, powered by Nvidia's new Arm-based RTX Spark chips. This release follows the recent unveiling of the Surface Laptop Ultra, which shares the same chip architecture. The Dev Box is optimized for sustained workloads, offering developers a robust platform for coding and testing applications. This move highlights Microsoft's commitment to providing cutting-edge tools for the developer community, enhancing productivity and innovation. Developers are encouraged to explore the capabilities of the RTX Spark Dev Box to streamline their workflows.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/941271/microsoft-surface-rtx-spark-dev-box-specs-availability",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Trump Revises AI Order—Voluntary Model Reviews Now Required",
-            "title": "Trump Signs Revised AI Executive Order After Industry Pushback",
-            "content": "President Trump has signed a narrower executive order on AI oversight, following objections from the tech industry. The revised order mandates voluntary prerelease government reviews of advanced AI models, rather than compulsory assessments. This change reflects a compromise between regulatory oversight and industry autonomy, aiming to balance innovation with safety. The executive order's revision comes amid growing concerns over the ethical and security implications of AI technologies. Companies developing advanced AI systems should prepare for voluntary compliance with these new guidelines to ensure responsible deployment.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order-on-ai-oversight-after-industry-objections/",
             "relatedResources": []
         }
     ],
