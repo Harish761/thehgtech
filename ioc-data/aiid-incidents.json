@@ -41,6 +41,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1515",
+      "incident_id": 1515,
+      "title": "Purportedly AI-Generated Airport Videos Reportedly Showed Diaspora Voters Supporting Albin Kurti",
+      "date": "2026-06-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1507",
       "incident_id": 1507,
       "title": "COEMPT Quality Assurance Engineers Allegedly Violated Indian CBSE Student Data Privacy Rights by Pro",
@@ -2050,9 +2058,9 @@
     }
   ],
   "stats": {
-    "total": 256,
-    "last7Days": 65,
-    "last30Days": 174
+    "total": 257,
+    "last7Days": 66,
+    "last30Days": 175
   },
-  "lastUpdated": "2026-06-05T02:03:14.508876+05:30"
+  "lastUpdated": "2026-06-05T03:20:37.875639+05:30"
 }
