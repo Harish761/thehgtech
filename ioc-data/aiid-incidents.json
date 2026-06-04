@@ -25,6 +25,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1513",
+      "incident_id": 1513,
+      "title": "Dimal Basha's Likeness Was Reportedly Used in Purportedly Fake AI-Generated Video After Kosovo Parli",
+      "date": "2026-06-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1514",
+      "incident_id": 1514,
+      "title": "Purportedly AI-Generated Video Reportedly Depicted Kosovo LDK Figure Hykmete Bajrami and Former Serb",
+      "date": "2026-06-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1507",
       "incident_id": 1507,
       "title": "COEMPT Quality Assurance Engineers Allegedly Violated Indian CBSE Student Data Privacy Rights by Pro",
@@ -2034,9 +2050,9 @@
     }
   ],
   "stats": {
-    "total": 254,
-    "last7Days": 73,
-    "last30Days": 172
+    "total": 256,
+    "last7Days": 65,
+    "last30Days": 174
   },
-  "lastUpdated": "2026-06-04T23:57:38.459485+05:30"
+  "lastUpdated": "2026-06-05T02:03:14.508876+05:30"
 }
