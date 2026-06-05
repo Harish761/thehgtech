@@ -4,6 +4,60 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 05 2026",
+            "headline": "900+ US Gas Station Systems Vulnerable—Immediate Action Needed",
+            "title": "Over 900 US Gas Station Tank Gauge Systems Exposed to Attacks",
+            "content": "Over 900 automatic tank gauge (ATG) systems, critical for monitoring fuel and chemical storage tanks in the United States, have been found exposed online, making them vulnerable to cyberattacks. These systems, integral to various critical infrastructure sectors, are susceptible to unauthorized access and manipulation, potentially leading to severe operational disruptions. The exposure highlights a significant oversight in securing industrial control systems, which are increasingly targeted by cybercriminals. Operators of affected systems should immediately assess their network configurations and implement robust security measures to mitigate potential risks. This incident underscores the urgent need for enhanced cybersecurity protocols in critical infrastructure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-900-us-gas-station-tank-gauge-systems-exposed-to-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 05 2026",
+            "headline": "AI Threats Mapped—Anthropic Leads the Charge",
+            "title": "Anthropic Maps AI Threats Amidst Unpatched Comodo Flaw and CISA Leadership Speculation",
+            "content": "Anthropic has released a comprehensive mapping of AI-related threats, providing valuable insights into potential vulnerabilities and attack vectors in artificial intelligence systems. Meanwhile, a critical flaw in Comodo software remains unpatched, posing a risk to users who rely on its security solutions. Additionally, Palantir's chief is being considered for a leadership role at the Cybersecurity and Infrastructure Security Agency (CISA), indicating potential shifts in cybersecurity leadership. These developments highlight the dynamic nature of the cybersecurity landscape, where AI and leadership changes play pivotal roles. Security professionals should stay informed of these evolving threats and leadership dynamics to better safeguard their systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-anthropic-maps-ai-threats-unpatched-comodo-flaw-palantir-chief-eyed-for-cisa/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 05 2026",
+            "headline": "Chrome 149 Fixes 429 Bugs—Critical Update Alert",
+            "title": "Chrome 149 Patches 429 Vulnerabilities, Including Critical Use-After-Free Flaws",
+            "content": "Google has released Chrome version 149, addressing 429 vulnerabilities, with over 100 classified as critical or high-severity. The majority of these issues involve use-after-free and insufficient validation of untrusted input flaws, which could allow attackers to execute arbitrary code. This extensive patch underscores the ongoing challenges in maintaining browser security and the importance of timely updates. Users are urged to update to the latest version immediately to protect against potential exploits. This release highlights the critical need for continuous vigilance and prompt patch management in software security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-149-patches-429-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 05 2026",
+            "headline": "WordPress Plugin Flaw—4,000 Sites at Risk",
+            "title": "Hackers Exploit Critical Everest Forms Pro WordPress Plugin Flaw to Take Over Sites",
+            "content": "A critical security flaw in the Everest Forms Pro WordPress plugin, identified as CVE-2026-3300, is being actively exploited by threat actors to execute arbitrary code and compromise websites. With a CVSS score of 9.8, this vulnerability affects approximately 4,000 active installations, posing a significant risk of complete site takeover. The exploitation of this flaw highlights the persistent threats facing WordPress plugins, often targeted due to their widespread use and potential for high-impact breaches. Site administrators using Everest Forms Pro should urgently apply available patches and review their security measures to prevent unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 05 2026",
+            "headline": "RCI Data Breach—40,000 Individuals Exposed",
+            "title": "Nightclub Giant RCI Says Data Breach Affects 40,000 Individuals",
+            "content": "RCI Hospitality Holdings, a major player in the nightclub industry, has disclosed a data breach affecting 40,000 individuals following a network intrusion detected in March. The investigation revealed that attackers accessed and stole sensitive files, potentially compromising personal and financial information. This breach underscores the vulnerability of entertainment sector businesses to cyberattacks and the critical need for robust data protection strategies. Affected individuals should monitor their accounts for suspicious activity and consider identity theft protection services. RCI is working to enhance its security posture to prevent future incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nightclub-giant-rci-says-data-breach-affects-40000-individuals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 05 2026",
+            "headline": "Cisco SD-WAN Zero-Day—Root Escalation Exploited",
+            "title": "Cisco Warns of Unpatched SD-WAN Zero-Day Exploited in Attacks",
+            "content": "Cisco has issued a warning regarding a high-severity, unpatched zero-day vulnerability in its Catalyst SD-WAN Manager, tracked as CVE-2026-20245. This flaw is actively exploited in attacks that enable root privilege escalation, posing a significant threat to organizations using this technology. The vulnerability highlights the critical need for timely patching and proactive security measures in managing network infrastructure. Cisco is actively working on a patch, and users are advised to implement recommended mitigations and monitor for updates. This incident emphasizes the importance of vigilance and rapid response in cybersecurity defense strategies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-cisco-sd-wan-flaw-exploited-in-zero-day-attacks-to-gain-root/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 04 2026",
             "headline": "Hola Browser Compromised—Cryptominer Delivered in Supply Chain Attack",
             "title": "Supply Chain Attack on Hola Browser for Windows Deploys Cryptominer",
@@ -28,15 +82,6 @@ const websiteContent = {
             "content": "Cisco has issued a patch for a critical vulnerability in its Unified Communications Manager, tracked as CVE-2026-20230. This flaw allows unauthenticated attackers to write files to the system and potentially escalate privileges to root access. The release of proof-of-concept exploit code increases the urgency for organizations to apply the patch. Although Cisco's Product Security Incident Response Team (PSIRT) has not observed active exploitation, the availability of exploit code poses a significant risk. Administrators should prioritize updating their systems to mitigate potential attacks.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/cisco-patches-cve-2026-20230-in-unified.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 01 2026",
-            "headline": "Hackers Exploit Meta AI Bot—Instagram Accounts Defaced",
-            "title": "Meta's AI Support Bot Exploited to Hijack Instagram Accounts",
-            "content": "Hackers have exploited Meta's AI support bot to gain unauthorized access to Instagram accounts, including high-profile targets like the Obama White House and the Chief Master Sergeant of the U.S. Space Force. The attackers circulated instructions on Telegram, enabling them to trick the AI into resetting account credentials. This breach demonstrates the potential for AI systems to be manipulated, raising concerns about the security of automated support tools. Users are advised to enable two-factor authentication and remain vigilant for suspicious account activity.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
             "relatedResources": []
         },
         {
@@ -92,54 +137,63 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/fake-sites-mimicking-open-source-tools.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Cisco Unified CM Vulnerability—Remote Exploitation Risk",
-            "title": "Cisco Warns of Remote Exploitation Risk in Unified CM",
-            "content": "Cisco has alerted users to a high-severity vulnerability in its Unified Communications Manager (Unified CM) that can be exploited remotely without authentication. This flaw, which facilitates server-side request forgery (SSRF) attacks, poses a critical threat to enterprise communication systems. The availability of proof-of-concept (PoC) exploit code increases the urgency for organizations to implement the available security patches. As remote exploitation risks continue to rise, enterprises must prioritize patch management and security monitoring to safeguard their communication infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-warns-of-available-poc-for-critical-unified-cm-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Magento RCE Flaw—CISA Adds to Exploited Vulnerabilities",
-            "title": "CISA Adds Magento RCE Flaw CVE-2026-45247 to KEV Catalog",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical remote code execution (RCE) vulnerability, CVE-2026-45247, affecting the Mirasvit Cache Warmer extension for Magento, to its Known Exploited Vulnerabilities (KEV) catalog. This addition follows reports of active exploitation in the wild, highlighting the urgency for Magento users to address this security flaw. The vulnerability allows attackers to execute arbitrary code on affected systems, posing a severe risk to e-commerce platforms relying on Magento. Users are urged to apply security patches immediately to mitigate potential exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisa-adds-exploited-magento-rce-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "U.S. Sanctions Iran's Nobitex—Crypto Exchange Tied to Ransomware",
-            "title": "OFAC Sanctions Nobitex for Facilitating Iranian Ransomware Payments",
-            "content": "The U.S. Treasury's Office of Foreign Assets Control (OFAC) has imposed sanctions on Nobitex, Iran's largest cryptocurrency exchange, citing its role in facilitating payments linked to ransomware and terrorist activities. Nobitex has been identified as a key financial conduit for Iranian ransomware groups, enabling transactions that support malicious cyber operations. This move underscores the U.S. government's ongoing efforts to disrupt financial networks that support cybercrime and terrorism. The sanctions are expected to severely impact Nobitex's operations, limiting its ability to engage with international financial systems. Organizations are advised to review their cryptocurrency transaction policies to ensure compliance with U.S. regulations.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-us-sanctions-nobitex-crypto-exchange-used-by-ransomware/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "AI Tool Uncovers Redis RCE Flaw—Patch Released",
-            "title": "Autonomous AI Finds Critical Redis RCE Vulnerability CVE-2026-23479",
-            "content": "An autonomous AI tool has discovered a critical remote code execution (RCE) vulnerability in Redis, tracked as CVE-2026-23479. This flaw, a use-after-free in the blocking-client code, allows authenticated users to execute arbitrary OS commands on the host machine. Redis has released a patch to address this vulnerability, which has been present for two years. The discovery highlights the potential of AI-driven tools in identifying long-standing security issues in complex codebases. Organizations using Redis are urged to apply the patch immediately to mitigate potential exploitation risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/autonomous-ai-tool-finds-2-year-old-rce.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "VS Code Zero-Day Exposes GitHub Tokens—Exploit Code Released",
-            "title": "Visual Studio Code Zero-Day Allows Theft of GitHub Tokens",
-            "content": "A newly disclosed zero-day vulnerability in Visual Studio Code (VS Code) enables attackers to steal GitHub authentication tokens through a single click. The exploit code, released by a security researcher, leverages this flaw to trick users into clicking malicious links. This vulnerability poses a significant threat to developers who rely on GitHub for version control and collaboration. Users are advised to exercise caution when clicking on links and to monitor for updates from Microsoft regarding a patch. The incident underscores the critical need for robust security measures in developer tools.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/vs-code-zero-day-lets-hackers-steal-github-tokens-in-one-click/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 03 2026",
+            "headline": "OpenAI's New Policy Agenda Targets AI Safety and Standards",
+            "title": "OpenAI Outlines Comprehensive Public Policy Agenda for AI Governance",
+            "content": "OpenAI has unveiled a comprehensive public policy agenda aimed at enhancing AI safety, protecting youth, facilitating workforce transitions, and establishing global standards. This initiative underscores OpenAI's commitment to ensuring that artificial intelligence technologies are developed and deployed in ways that benefit society at large. The agenda includes measures to mitigate risks associated with AI, such as bias and misuse, while promoting transparency and accountability. By advocating for international cooperation and standardization, OpenAI seeks to align AI advancements with societal values and ethical considerations. Stakeholders are encouraged to engage with these policy frameworks to foster responsible AI innovation.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/public-policy-agenda",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 05 2026",
+            "headline": "AI Industry Faces Cost Crisis—Guardrails Needed",
+            "title": "AI Industry Scrambles to Manage Escalating Operational Costs",
+            "content": "The AI industry is grappling with soaring operational costs, prompting a shift from rapid expansion to implementing cost-control measures. This change in strategy reflects a growing recognition of the need for financial sustainability and operational efficiency. Industry leaders are now prioritizing the establishment of guardrails to manage expenses effectively while maintaining innovation momentum. The focus is on optimizing resource allocation and enhancing cost transparency to ensure long-term viability. Organizations are urged to reassess their AI deployment strategies, balancing growth ambitions with financial prudence.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 05 2026",
+            "headline": "AirTrunk Invests $30B in Indian AI Data Centers",
+            "title": "AirTrunk Commits $30 Billion to 5GW AI Data Centers in India",
+            "content": "Australian data center operator AirTrunk has announced a $30 billion investment to establish 5 gigawatts (GW) of AI data center capacity in India. This ambitious project aims to support the growing demand for AI infrastructure in the region, positioning India as a key player in the global AI landscape. The new data centers will enhance computational capabilities, catering to industries such as finance, healthcare, and technology. This investment underscores AirTrunk's strategic focus on expanding its footprint in Asia-Pacific, capitalizing on the region's rapid digital transformation. Industry stakeholders should monitor this development for potential collaboration opportunities.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/05/airtrunk-commits-30b-to-build-5gw-of-ai-data-centers-in-india/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 05 2026",
+            "headline": "Mira Murati Reemerges—Strategic Market Engagement",
+            "title": "Mira Murati Reengages with Market Amid Changing AI Landscape",
+            "content": "Mira Murati, a prominent figure in the AI sector, is strategically reengaging with the market after a period of low visibility. In the current competitive environment, maintaining a proactive presence is crucial for influencing industry trends and stakeholder perceptions. Murati's return highlights the importance of balancing focused work with market engagement to sustain relevance and drive innovation. Her approach serves as a reminder for AI leaders to periodically reassess their public engagement strategies to align with evolving market dynamics. Professionals should consider the implications of visibility on market influence and innovation leadership.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/04/mira-murati-steps-back-into-the-spotlight-carefully/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Kevin O’Leary Halves Utah Data Center Amid Pressure",
+            "title": "Kevin O’Leary Agrees to Downsize Utah Data Center Project",
+            "content": "Kevin O’Leary has agreed to reduce the size of his planned 40,000-acre data center in Utah by half, following significant pressure from local residents and environmental activists. The decision, communicated in a letter to Utah Senate President J. Stuart Adams, reflects growing concerns about environmental impact and community disruption. This development highlights the increasing scrutiny faced by large-scale infrastructure projects, particularly in ecologically sensitive areas. Stakeholders in the data center industry should consider the implications of community engagement and environmental considerations in project planning.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Meta Launches AI Assistant for Facebook Creators",
+            "title": "Meta Introduces AI Creator Assistant to Enhance Facebook Engagement",
+            "content": "Meta has launched a new AI-powered assistant designed to help Facebook creators optimize their content strategies. This tool provides creators with insights into optimal posting times and audience engagement by analyzing performance metrics. By simplifying data interpretation, the assistant aims to enhance content visibility and interaction on the platform. This development is part of Meta's broader strategy to empower creators with advanced tools that streamline content management and improve user engagement. Creators are encouraged to leverage this assistant to refine their social media strategies and maximize audience reach.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/04/meta-rolls-out-a-new-ai-creator-assistant-on-facebook/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 04 2026",
             "headline": "Anthropic's Revenue Soars to $47B—IPO Faces Skepticism",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Taiwan Semiconductor Manufacturing Co. (TSMC), the world's leading semiconductor manufacturer, is facing challenges in meeting the soaring demand for AI chips from its American clients. Despite ongoing expansion efforts, including new facilities in the US, TSMC's capacity is stretched thin. CEO reports indicate that the demand from tech giants exceeds current production capabilities, potentially impacting AI-driven innovations and deployments. This bottleneck underscores the critical role of semiconductor supply in the AI industry, urging stakeholders to strategize on supply chain resilience.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "App Store Sales Hit $1.4 Trillion—90% Commission-Free",
-            "title": "Apple Reports $1.4 Trillion in App Store Sales with Minimal Commissions",
-            "content": "Apple has announced that its App Store generated $1.4 trillion in billings and sales over the past year, marking an increase from $1.3 trillion previously. Notably, 90% of these sales were made without incurring a commission fee, highlighting Apple's evolving revenue model. The $149 billion in digital goods sales underscores the platform's robust growth and its significance in the digital economy. Developers and tech leaders should assess the implications of this model on app monetization strategies and competitive positioning in the app marketplace.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/04/apple-touts-1-4-trillion-in-app-store-billings-and-sales-90-without-a-commission/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Elon Musk Nears Trillionaire Status—Wall Street's New Reality",
-            "title": "Elon Musk's Financial Ascent: On Track to Become a Trillionaire",
-            "content": "Elon Musk is on the verge of becoming the world's first trillionaire, driven by the soaring valuations of his ventures, including SpaceX and Tesla. This financial milestone reflects Musk's significant influence on Wall Street and the tech industry at large. His strategic maneuvers and bold investments continue to reshape market dynamics, prompting analysts to reassess traditional valuation models. As Musk's wealth approaches unprecedented levels, industry professionals should consider the broader economic implications and potential shifts in investment trends.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/942586/elon-musk-spacex-ipo-x-xai-index-funds",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Fine-Tune Nemotron 3.5 ASR—Customize for Your Needs",
-            "title": "Guide to Fine-Tuning Nemotron 3.5 ASR for Specific Applications",
-            "content": "Hugging Face has released a comprehensive guide on fine-tuning Nemotron 3.5 ASR (Automatic Speech Recognition) to cater to specific languages, domains, or accents. This customization capability allows developers to optimize the ASR model for enhanced accuracy and performance in targeted applications. As speech recognition technology becomes integral to various industries, the ability to tailor models to specific needs is crucial. Developers and tech leaders should leverage this guide to maximize the utility of Nemotron 3.5 ASR in their projects, ensuring competitive advantage and improved user experiences.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Lovable Expands Google Cloud Use 5x—Anthropic Claude Access Boosted",
-            "title": "Lovable Signs Multiyear Deal with Google Cloud for Major Expansion",
-            "content": "Lovable has entered a multiyear agreement with Google Cloud, significantly increasing its cloud usage by fivefold. This expansion includes enhanced access to Anthropic Claude, an advanced AI model, allowing Lovable to scale its operations and improve AI-driven services. The deal underscores a growing trend among tech companies to leverage cloud platforms for increased computational power and AI capabilities. This move is expected to enhance Lovable's service offerings, potentially impacting its market position and customer engagement strategies. Companies relying on cloud-based AI solutions should consider similar partnerships to boost their technological infrastructure.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Google's Gemini AI—Privacy Concerns as It Knows Personal Details",
-            "title": "Google's Gemini AI Agent Spark Raises Privacy Concerns with Personal Insights",
-            "content": "Google's new AI agent, Spark, part of the Gemini AI suite, has demonstrated an unsettling level of personal insight, knowing specific details like the names of pets and family members without prior disclosure. This capability raises significant privacy concerns, highlighting the potential for AI to access and utilize personal data in unexpected ways. As AI systems become more sophisticated, the balance between utility and privacy becomes increasingly delicate. Users and developers must be vigilant about data permissions and the ethical implications of AI interactions. This development calls for a reevaluation of privacy standards in AI technologies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/942629/as-ai-gets-better-it-reveals-an-empty-promise",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Google's Gemma 4 12B—Local AI Model for Enterprise Laptops",
-            "title": "Google Releases Gemma 4 12B for Local AI Processing on Laptops",
-            "content": "Google has unveiled Gemma 4 12B, an open-source AI model designed to run entirely on a typical 16GB enterprise laptop. With nearly 12 billion parameters, this model can analyze audio and video data locally, offering a balance between performance and privacy. Released under the permissive Apache 2.0 license, Gemma 4 12B provides enterprises with a powerful tool for on-device AI processing, reducing reliance on cloud-based solutions. This development aligns with a broader industry shift towards decentralizing AI workloads to enhance data security and reduce latency. Organizations should explore local AI models to optimize resource use and maintain data privacy.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
             "relatedResources": []
         }
     ],
