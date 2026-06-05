@@ -5,6 +5,60 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 04 2026",
+            "headline": "Hola Browser Compromised—Cryptominer Delivered in Supply Chain Attack",
+            "title": "Supply Chain Attack on Hola Browser for Windows Deploys Cryptominer",
+            "content": "The Windows version of the Hola Browser has been compromised in a sophisticated supply chain attack, delivering an unauthorized executable identified as a cryptocurrency miner. Researchers discovered the breach, which affects all users of the Windows version of the browser. The miner exploits system resources to mine cryptocurrency without user consent, potentially leading to degraded system performance and increased electricity costs. This incident underscores the growing trend of supply chain attacks targeting popular software to distribute malicious payloads. Users are advised to uninstall the affected version and monitor for updates from Hola.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hola-browser-for-windows-compromised-to-deliver-cryptominer/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "DentaQuest Breach Exposes 2.6M Accounts—Sensitive Data at Risk",
+            "title": "DentaQuest Data Breach Compromises Personal Information of 2.6 Million Accounts",
+            "content": "DentaQuest, a dental benefits administrator, has suffered a data breach exposing sensitive information from 2.6 million accounts. The breach involves personal data, including names, addresses, and potentially financial information, posing significant identity theft risks. This incident highlights vulnerabilities in healthcare data management systems, which are increasingly targeted by cybercriminals. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity theft protection services. DentaQuest is working with cybersecurity experts to investigate the breach and enhance their security measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/dentaquest-data-breach-exposed-info-of-26-million-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Cisco Patches CVE-2026-20230—Exploit Code Now Public",
+            "title": "Cisco Fixes Critical Vulnerability in Unified Communications Manager",
+            "content": "Cisco has issued a patch for a critical vulnerability in its Unified Communications Manager, tracked as CVE-2026-20230. This flaw allows unauthenticated attackers to write files to the system and potentially escalate privileges to root access. The release of proof-of-concept exploit code increases the urgency for organizations to apply the patch. Although Cisco's Product Security Incident Response Team (PSIRT) has not observed active exploitation, the availability of exploit code poses a significant risk. Administrators should prioritize updating their systems to mitigate potential attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisco-patches-cve-2026-20230-in-unified.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 01 2026",
+            "headline": "Hackers Exploit Meta AI Bot—Instagram Accounts Defaced",
+            "title": "Meta's AI Support Bot Exploited to Hijack Instagram Accounts",
+            "content": "Hackers have exploited Meta's AI support bot to gain unauthorized access to Instagram accounts, including high-profile targets like the Obama White House and the Chief Master Sergeant of the U.S. Space Force. The attackers circulated instructions on Telegram, enabling them to trick the AI into resetting account credentials. This breach demonstrates the potential for AI systems to be manipulated, raising concerns about the security of automated support tools. Users are advised to enable two-factor authentication and remain vigilant for suspicious account activity.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 05 2026",
+            "headline": "NIST Criticized for NVD Backlog—Security Experts Weigh In",
+            "title": "US Government Report Criticizes NIST for National Vulnerability Database Delays",
+            "content": "A US Commerce Department report has criticized the National Institute of Standards and Technology (NIST) for delays in processing vulnerabilities for the National Vulnerability Database (NVD). The backlog has raised concerns among cybersecurity professionals, although some argue it reflects the increasing volume and complexity of discovered vulnerabilities. The report calls for improved processes to ensure timely updates, which are crucial for organizations relying on the NVD for vulnerability management. NIST is expected to address these issues to maintain its role as a trusted resource for security professionals.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4181438/us-government-report-slams-nist-for-nvd-backlog.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Gartner Warns of 4 Critical Threats—Deepfakes Among Top Concerns",
+            "title": "Gartner Identifies Critical Emerging Threats Including Deepfakes and Prompt Injections",
+            "content": "Gartner analysts have highlighted four critical threats where attackers currently have the upper hand, including deepfakes and prompt injections. These emerging threats pose significant challenges for cybersecurity defenses due to their sophistication and potential for widespread impact. Deepfakes can be used for disinformation campaigns, while prompt injections can manipulate AI systems into unintended actions. Organizations are urged to bolster their defenses by investing in advanced threat detection and response capabilities. Staying informed about these evolving threats is crucial for maintaining robust security postures.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/4-critical-threats-attackers-advantage",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
             "headline": "Hugging Face RCE Flaw—AI Models at Risk",
             "title": "Critical RCE Vulnerability in Hugging Face Transformers Library",
             "content": "A critical remote code execution (RCE) vulnerability has been discovered in the Hugging Face Transformers library, a widely used Python tool for AI model deployment. The flaw affects multiple versions of the library, which remain popular among developers and researchers. This vulnerability allows attackers to stealthily compromise systems by exploiting AI model configurations, posing a significant threat to organizations relying on these models for critical operations. As AI systems become increasingly targeted by cybercriminals, this discovery underscores the urgent need for robust security measures in AI development environments. Users are advised to update to the latest patched versions immediately to mitigate potential risks.",
@@ -83,63 +137,63 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/vs-code-zero-day-lets-hackers-steal-github-tokens-in-one-click/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "CISA Alerts on Cyberattacks Targeting Fuel Tank Systems",
-            "title": "CISA Warns of Attacks on Internet-Exposed Fuel Tank Monitoring Systems",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA), in collaboration with the FBI, NSA, and Department of Energy, has issued a warning about cyberattacks targeting automatic tank gauge (ATG) systems. These systems, used to monitor fuel and liquid storage tanks, are exposed on the internet, making them vulnerable to exploitation. The attacks could disrupt critical infrastructure sectors, including energy and transportation. Organizations are advised to secure their ATG systems by implementing network segmentation and applying security patches. This alert highlights the ongoing threat to industrial control systems and the need for enhanced cybersecurity measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-targeting-fuel-tank-monitoring-systems/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Gamaredon Exploits WinRAR Flaw—Targets Ukraine with Malware",
-            "title": "Gamaredon Uses WinRAR Vulnerability to Deploy GammaWorm and GammaSteel",
-            "content": "The Russian hacking group Gamaredon is exploiting a path traversal vulnerability in WinRAR, identified as CVE-2025-8088, to deliver malware against Ukrainian targets. The group uses this flaw to deploy GammaWorm and GammaSteel, malware families designed for data theft and network propagation. This activity underscores the persistent threat posed by state-sponsored actors exploiting known vulnerabilities in widely used software. Organizations using WinRAR are urged to update to the latest version to protect against these attacks. The situation highlights the geopolitical dimensions of cyber warfare and the importance of timely patch management.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/gamaredon-exploits-winrar-to-deliver.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 02 2026",
-            "headline": "Oracle WebLogic Flaw Actively Exploited—Added to KEV Catalog",
-            "title": "CISA Adds Oracle WebLogic CVE-2024-21182 to Known Exploited Vulnerabilities",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability in Oracle WebLogic Server, CVE-2024-21182, to its Known Exploited Vulnerabilities (KEV) Catalog. This flaw, with a CVSS score of 7.5, allows unauthorized access and control over affected systems. Evidence of active exploitation has prompted this inclusion, emphasizing the urgency for organizations to apply patches. Oracle WebLogic users should prioritize updating their systems to mitigate potential security breaches. This development highlights the critical nature of maintaining up-to-date defenses against actively exploited vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/oracle-weblogic-cve-2024-21182-added-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Banks Vulnerable—345 Days of Exposure Without Continuous Testing",
-            "title": "Sprocket Security Highlights Risks of Infrequent Penetration Testing in Banks",
-            "content": "Sprocket Security has revealed that traditional two-week penetration tests leave banks exposed for approximately 345 days annually due to untested vulnerabilities. As attack surfaces evolve rapidly, the need for continuous testing becomes critical to identify and mitigate risks promptly. This approach contrasts sharply with static testing methods that fail to adapt to dynamic threat landscapes. Financial institutions, which are prime targets for cybercriminals, must consider implementing ongoing security assessments to protect sensitive data and maintain regulatory compliance. The findings underscore the importance of proactive cybersecurity measures in an era of increasing digital threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/what-345-days-of-untested-exposure-looks-like-at-a-bank/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "525,000 Affected—IMA Diligence Services Data Breach Exposed",
-            "title": "Legacy Server Breach at IMA Diligence Services Compromises Personal Data",
-            "content": "IMA Diligence Services has suffered a data breach impacting 525,000 individuals, with personal information stolen from a legacy server managed by a third-party vendor. The breach highlights the vulnerabilities associated with outdated systems and the importance of robust third-party management practices. Affected individuals face potential risks of identity theft and fraud, emphasizing the need for enhanced data protection measures. This incident serves as a reminder for organizations to regularly audit and update legacy systems to prevent unauthorized access and data leaks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ima-diligence-services-data-breach-impacts-525000-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Acer Rushes to Patch Critical Zero-Days in Wave 7 Routers",
-            "title": "Acer Addresses Maximum-Severity Vulnerabilities in Wave 7 Mesh Routers",
-            "content": "Acer is actively working to patch two critical zero-day vulnerabilities in its Wave 7 mesh routers, which have been assigned maximum severity ratings. These vulnerabilities could allow attackers to gain unauthorized access and potentially control affected devices, posing significant risks to users' network security. The urgency of the situation underscores the importance of timely updates and patches to safeguard against exploitation. Users are advised to monitor Acer's announcements and apply patches as soon as they become available to protect their networks from potential intrusions.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/acer-warns-of-max-severity-zero-days-affecting-wave-7-routers/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 04 2026",
+            "headline": "Anthropic's Revenue Soars to $47B—IPO Faces Skepticism",
+            "title": "Anthropic's $47 Billion Revenue Surge Precedes IPO Amid AI Return Doubts",
+            "content": "Anthropic has reported a dramatic increase in annualized revenue, reaching $47 billion as of May 2026, a significant leap from $9 billion at the end of 2025. This rapid growth precedes the company's anticipated initial public offering (IPO), which is under scrutiny by investors questioning the sustainability of returns in the AI sector. Despite the impressive financial trajectory, the AI industry faces challenges in proving long-term profitability, especially as competition intensifies. Stakeholders are closely watching Anthropic's ability to maintain its growth momentum and deliver on its technological promises. The company's performance in the public market will serve as a barometer for broader AI investment confidence.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "StrictlyVC Event to Highlight AI and Defense Tech Trends",
+            "title": "StrictlyVC Los Angeles Event to Focus on AI, Defense Tech, and VC Shifts",
+            "content": "On June 18, The Aerospace Corporation Campus in Los Angeles will host a pivotal event organized by StrictlyVC, bringing together investors, founders, and tech leaders. The gathering aims to explore significant shifts in venture capital, defense technology, and artificial intelligence. The discussions will address how these sectors are evolving and intersecting, particularly in light of recent advancements and geopolitical considerations. Attendees will gain insights into emerging trends and strategies for navigating the rapidly changing tech landscape. This event underscores the growing importance of cross-industry collaboration in driving innovation and addressing complex global challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/04/defense-tech-ai-and-fundraising-take-center-stage-at-strictlyvc-los-angeles-on-june-18/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Musk Challenges FTC Over X Data Privacy Audits",
+            "title": "Elon Musk Seeks to End FTC Audits on X's Data Handling Practices",
+            "content": "Elon Musk is once again attempting to halt the Federal Trade Commission's (FTC) audits concerning the data handling practices of X, the social media platform formerly known as Twitter. Public commenters have expressed concerns about Musk's ability to safeguard user privacy, prompting the FTC's continued scrutiny. The audits aim to ensure compliance with privacy standards and protect user data from potential misuse. This ongoing battle highlights the tension between tech giants and regulatory bodies over data privacy issues. Professionals in the field should monitor the outcome as it could set precedents for data governance and corporate accountability.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/elon-musk-tries-again-to-escape-ftc-audits-of-x-data-handling/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Meta's Tent Data Centers Aim to Cut Costs",
+            "title": "Meta Adopts Tent-Based Data Centers to Reduce Infrastructure Expenses",
+            "content": "Meta has introduced an innovative approach to managing its data center costs by constructing facilities in tents. This strategy, inspired by Tesla's similar tactics, aims to significantly reduce the expenses associated with traditional data center infrastructure. By utilizing tents, Meta seeks to maintain flexibility and scalability while addressing the financial pressures of operating massive data centers. This move reflects a broader trend among tech companies to explore unconventional solutions for infrastructure challenges. Industry professionals should consider the potential implications for data center design and operational efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/04/meta-steals-a-tactic-from-tesla-and-builds-data-centers-in-tents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Apple Approves First AI Agent for Business Messaging",
+            "title": "Apple Endorses Poke as First AI Agent on Messages for Business",
+            "content": "Apple has approved Poke, a startup offering AI agents via text messages, as the first AI agent on its Messages for Business platform. This approval marks a significant milestone for AI integration into business communication tools, enhancing customer interaction capabilities. Poke's AI agents are designed to streamline customer service processes, providing businesses with efficient and responsive communication solutions. This development highlights Apple's commitment to expanding its ecosystem with AI-driven innovations. Businesses using Apple's platform should explore integrating AI agents to improve customer engagement and operational efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 04 2026",
+            "headline": "Nemotron 3.5 Enhances AI Safety for Enterprises",
+            "title": "Nemotron 3.5 Introduces Customizable Multimodal Safety for Enterprise AI",
+            "content": "Hugging Face has unveiled Nemotron 3.5, a customizable multimodal safety solution designed for global enterprises utilizing AI technologies. This latest version offers enhanced safety features, allowing businesses to tailor content moderation and safety protocols to their specific needs. Nemotron 3.5 addresses the growing demand for robust AI safety measures, ensuring compliance with international regulations and protecting against harmful content. Enterprises adopting AI solutions should consider integrating such safety mechanisms to mitigate risks and enhance user trust. This release underscores the importance of adaptable safety frameworks in the evolving AI landscape.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+            "relatedResources": []
+        },
         {
             "date": "Jun 04 2026",
             "headline": "Amazon's Proteus Robot Speaks—Revolutionizing Warehouse Automation",
@@ -219,60 +273,6 @@ const websiteContent = {
             "content": "Google has unveiled Gemma 4 12B, an open-source AI model designed to run entirely on a typical 16GB enterprise laptop. With nearly 12 billion parameters, this model can analyze audio and video data locally, offering a balance between performance and privacy. Released under the permissive Apache 2.0 license, Gemma 4 12B provides enterprises with a powerful tool for on-device AI processing, reducing reliance on cloud-based solutions. This development aligns with a broader industry shift towards decentralizing AI workloads to enhance data security and reduce latency. Organizations should explore local AI models to optimize resource use and maintain data privacy.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Google’s Dreambeans—AI Tool Turns Personal Data into Cartoons",
-            "title": "Google Launches Dreambeans to Transform Personal Data into AI Cartoons",
-            "content": "Google has introduced Dreambeans, an AI tool that creates cartoon-style stories using personal data from users' Google accounts. This innovative application leverages AI to transform mundane data into engaging visual narratives, showcasing the creative potential of AI technologies. While Dreambeans offers a novel way to interact with personal data, it also raises questions about data privacy and user consent. As AI continues to evolve, users must remain informed about how their data is utilized and the potential implications of AI-driven personalization. Developers should prioritize transparency and user control in AI applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/03/googles-dreambeans-its-weirdest-named-ai-tool-to-date-will-turn-your-life-into-a-cartoon/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Meta's AI Agent for WhatsApp—Now Charging Businesses Globally",
-            "title": "Meta Expands AI Agent for WhatsApp Business with Global Availability",
-            "content": "Meta has rolled out its AI agent for WhatsApp Business globally, introducing a usage-based pricing model for businesses. This AI-driven service aims to enhance customer interactions by automating responses and providing personalized support. The global availability of this agent marks a significant step in Meta's strategy to monetize AI technologies within its messaging platforms. Businesses using WhatsApp for customer engagement should evaluate the cost-benefit of integrating AI agents to improve service efficiency. This development highlights the growing trend of AI integration in business communication tools.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "GPT-Rosalind—Boosting Life Sciences with New Capabilities",
-            "title": "OpenAI Enhances GPT-Rosalind for Advanced Life Sciences Research",
-            "content": "OpenAI has introduced new capabilities to GPT-Rosalind, enhancing its utility in life sciences research. The updated model now offers improved biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities. These enhancements position GPT-Rosalind as a vital tool for researchers seeking to accelerate discoveries in biology and medicine. As AI continues to transform scientific research, professionals in the life sciences should leverage these advanced tools to enhance their analytical capabilities and streamline research processes. This development underscores the potential of AI to drive innovation in scientific fields.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "OpenAI Sets Global AI Standards—Focus on Safety and Workforce",
-            "title": "OpenAI's Public Policy Agenda Prioritizes AI Safety and Global Standards",
-            "content": "OpenAI has unveiled its comprehensive public policy agenda aimed at ensuring artificial intelligence (AI) benefits society at large. The agenda emphasizes critical areas such as AI safety, youth protection, workforce transition, and the establishment of global standards. OpenAI's initiative seeks to address the challenges posed by AI's rapid integration into various sectors, highlighting the need for robust safety measures and ethical guidelines. By focusing on these areas, OpenAI aims to mitigate potential risks while promoting the responsible development and deployment of AI technologies. This move reflects a growing trend among tech companies to proactively engage in policy-making to shape the future of AI.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/public-policy-agenda",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Amazon's AI Search Bar—Visualize Products Before You Buy",
-            "title": "Amazon's AI-Enhanced Search Bar Generates Visual Product Suggestions",
-            "content": "Amazon has introduced an innovative feature in its search bar that leverages artificial intelligence to generate images of products based on user descriptions. Currently, the feature is limited to clothing and home goods, allowing users to visualize potential purchases before searching for similar items. This AI-driven approach enhances the shopping experience by providing a more intuitive and engaging way to discover products. While the feature is still in its early stages, it represents a significant step towards integrating AI into e-commerce, potentially transforming how consumers interact with online marketplaces. Users can expect more categories to be included as the technology evolves.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/942547/amazon-search-bar-ai-images",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 03 2026",
-            "headline": "Amazon's AI Visual Search—Guiding Shoppers with Generated Images",
-            "title": "Amazon Utilizes AI for Visual Search with Generated Product Images",
-            "content": "Amazon is enhancing its search capabilities by incorporating AI-generated product images to assist users in finding items that match their search queries. This visual search feature aims to streamline the shopping process by offering a more interactive and visually appealing way to browse products. By leveraging artificial intelligence, Amazon hopes to guide users more effectively to the products they desire, improving the overall user experience. This development is part of a broader trend in e-commerce towards utilizing AI to personalize and enhance consumer interactions. As AI technology advances, such features are likely to become standard in online retail platforms.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/03/amazon-will-show-ai-product-images-when-you-search-for-some-reason/",
             "relatedResources": []
         }
     ],
@@ -358,17 +358,6 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
-        {
-            "cveId": "CVE-2026-0257",
-            "dateAdded": "May 29, 2026",
-            "vendor": "Palo Alto Networks PAN-OS",
-            "description": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0257",
-            "isZeroDay": false
-        },
         {
             "cveId": "CVE-2026-45247",
             "dateAdded": "Jun 03, 2026",
