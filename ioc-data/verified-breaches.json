@@ -1748,6 +1748,27 @@
       "Description": "In March 2026, <a href=\"https://dailydarkweb.net/baydoner-data-breach-exposes-3-7-million-customer-records/\" target=\"_blank\" rel=\"noopener\">the Turkish restaurant chain Baydöner suffered a data breach which was subsequently published to a public hacking forum</a>. The incident exposed over 1.2M unique email addresses along with names, phone numbers, cities of residence and plaintext passwords. A small number of records also included Turkish national ID number and date of birth. In <a href=\"https://www.baydoner.com/duyurular\" target=\"_blank\" rel=\"noopener\">their disclosure notice</a>, Baydöner stated that payment and financial data was not affected."
     }
   ],
+  "bcdtravel.com": [
+    {
+      "Name": "BCDTravel",
+      "Title": "BCD Travel",
+      "BreachDate": "2026-05-29",
+      "AddedDate": "2026-06-05T06:53:15Z",
+      "PwnCount": 396313,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses",
+        "Support tickets"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In May 2026, the corporate travel management company <a href=\"https://www.ictmagazine.nl/nieuws/shinyhunters-claimt-datadiefstal-bij-groot-internationaal-zakenreisbureau/\" target=\"_blank\" rel=\"noopener\">BCD Travel was claimed as a victim of the ShinyHunters \"pay or leak\" extortion campaign</a>. Data allegedly obtained from BCD was subsequently published publicly in early June and contained 396k unique email addresses. Other exposed data included names, addresses, phone numbers, job titles and employer names, spanning a variety of different data sets including leads, internal staff and support tickets."
+    }
+  ],
   "beautifulpeople.com": [
     {
       "Name": "BeautifulPeople",
