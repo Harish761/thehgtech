@@ -113,11 +113,25 @@ function injectGraphComment() {
 
     const gcContainer = document.createElement('div');
     gcContainer.id = 'graphcomment';
-    gcContainer.style.marginTop = '4rem';
+    gcContainer.style.marginTop = '2rem';
     gcContainer.style.marginBottom = '2rem';
     
+    // Add Privacy Note
+    const privacyNote = document.createElement('p');
+    privacyNote.style.fontSize = '0.85rem';
+    privacyNote.style.color = 'var(--text-muted, #888)';
+    privacyNote.style.textAlign = 'center';
+    privacyNote.style.marginBottom = '1.5rem';
+    privacyNote.innerHTML = 'Comments and reactions are powered by GraphComment. By interacting, you agree to the <a href="https://graphcomment.com/en/privacy-policy/" target="_blank" rel="noopener noreferrer" style="color: var(--accent, #00d9ff);">GraphComment Privacy Policy</a>.';
+
+    // Create wrapper to hold both note and widget
+    const wrapper = document.createElement('div');
+    wrapper.style.marginTop = '4rem';
+    wrapper.appendChild(privacyNote);
+    wrapper.appendChild(gcContainer);
+    
     // Insert immediately after interaction bar
-    interactionBar.parentNode.insertBefore(gcContainer, interactionBar.nextSibling);
+    interactionBar.parentNode.insertBefore(wrapper, interactionBar.nextSibling);
 
     // Initialize GraphComment Configuration
     window.__semio__params = {
