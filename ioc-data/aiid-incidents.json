@@ -49,6 +49,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1516",
+      "incident_id": 1516,
+      "title": "Purportedly AI-Generated Airport Videos Reportedly Showed Diaspora Voters Opposing Albin Kurti",
+      "date": "2026-06-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1507",
       "incident_id": 1507,
       "title": "COEMPT Quality Assurance Engineers Allegedly Violated Indian CBSE Student Data Privacy Rights by Pro",
@@ -2041,14 +2049,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1399",
-      "incident_id": 1399,
-      "title": "South Korean Woman Allegedly Used ChatGPT to Assess Lethality of Drug-and-Alcohol Mixtures Before Tw",
-      "date": "2026-03-07",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1400",
       "incident_id": 1400,
       "title": "West Midlands Police Reportedly Relied on Erroneous Copilot-Generated Intelligence in Maccabi Tel Av",
@@ -2059,8 +2059,8 @@
   ],
   "stats": {
     "total": 257,
-    "last7Days": 66,
-    "last30Days": 175
+    "last7Days": 67,
+    "last30Days": 176
   },
-  "lastUpdated": "2026-06-05T03:20:37.875639+05:30"
+  "lastUpdated": "2026-06-05T10:12:52.632603+05:30"
 }
