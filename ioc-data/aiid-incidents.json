@@ -2025,22 +2025,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1396",
-      "incident_id": 1396,
-      "title": "Betfair's Machine-Learning Risk System Reportedly Failed to Flag Luke Ashton Before Gambling-Related",
-      "date": "2026-03-07",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1397",
-      "incident_id": 1397,
-      "title": "Deepfakes Reportedly Impersonated David Taylor-Robinson and Other UK Health Experts to Promote Welln",
-      "date": "2026-03-07",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1398",
       "incident_id": 1398,
       "title": "Purported Deepfake Video Reportedly Misrepresented CBS Anchor Doug Dunbar and Frisco, Texas, Stabbin",
@@ -2058,9 +2042,9 @@
     }
   ],
   "stats": {
-    "total": 257,
-    "last7Days": 67,
-    "last30Days": 176
+    "total": 255,
+    "last7Days": 12,
+    "last30Days": 174
   },
-  "lastUpdated": "2026-06-05T20:55:04.265568+05:30"
+  "lastUpdated": "2026-06-06T01:57:40.437352+05:30"
 }
