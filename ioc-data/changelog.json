@@ -1,6 +1,14 @@
 {
   "changelog": [
     {
+      "id": "cl-2026-06-05-comments",
+      "date": "2026-06-05T14:58:07Z",
+      "title": "Community Comments & Reactions Added",
+      "description": "We've just added a new community commenting system powered by GraphComment! You can now share your thoughts, ask questions, and engage with other readers on all our Security Guides, Threat News Articles, and Tool Comparisons. We'd love to hear your feedback on the content, so please feel free to drop a comment!",
+      "type": "feature",
+      "icon": "fa-comments"
+    },
+    {
       "id": "cl-2026-05-21-cve",
       "date": "2026-05-21T10:00:00Z",
       "title": "Enhanced CVE Tracker Engine",

@@ -391,7 +391,7 @@ function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(
                     </div>
                     <div class="cc-tabs">
                         <div class="cc-tab active" data-target="cc-intel">Intel Feed</div>
-                        <div class="cc-tab" data-target="cc-changelog">Changelog</div>
+                        <div class="cc-tab" data-target="cc-changelog">Platform Updates</div>
                     </div>
                     <div class="cc-content">
                         <div class="cc-pane active" id="cc-intel"></div>
