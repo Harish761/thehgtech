@@ -32,10 +32,11 @@ from urllib.parse import urlparse
 import re
 
 try:
-    from openai import OpenAI
+    import google.generativeai as genai
+    import time
     OPENAI_AVAILABLE = True
 except ImportError:
-    print("Warning: OpenAI library not installed. AI insights will be disabled.")
+    print("Warning: google-generativeai library not installed. AI insights will be disabled.")
     OPENAI_AVAILABLE = False
 
 # ──────────────────────────────────────────────────────────────
@@ -806,27 +807,32 @@ const threatIntelHistory = {json.dumps(history, indent=4)};
 # ──────────────────────────────────────────────────────────────
 # AI-Powered Insights
 # ──────────────────────────────────────────────────────────────
-def call_openai_api(prompt, model="gpt-4o-mini"):
-    """Call OpenAI API with error handling"""
+def call_openai_api(prompt, model="gemini-1.5-flash"):
+    """Call Gemini API with error handling and rate limiting"""
     if not OPENAI_AVAILABLE:
         return None
     
-    api_key = os.getenv('OPENAI_API_KEY')
+    api_key = os.getenv('GEMINI_API_KEY')
     if not api_key:
-        print("  ⚠ OPENAI_API_KEY not set, skipping AI insights")
+        print("  ⚠ GEMINI_API_KEY not set, skipping AI insights")
         return None
     
     try:
-        client = OpenAI(api_key=api_key)
-        response = client.chat.completions.create(
-            model=model,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.7,
-            max_tokens=500 if model == "gpt-4o-mini" else 1000
+        genai.configure(api_key=api_key)
+        # 15 RPM limit on free tier, wait 5 seconds before call
+        time.sleep(5)
+        
+        gen_model = genai.GenerativeModel(
+            model,
+            generation_config=genai.types.GenerationConfig(
+                temperature=0.7,
+                max_output_tokens=1000
+            )
         )
-        return response.choices[0].message.content
+        response = gen_model.generate_content(prompt)
+        return response.text
     except Exception as e:
-        print(f"  ⚠ OpenAI API error: {e}")
+        print(f"  ⚠ Gemini API error: {e}")
         return None
 
 def generate_daily_ai_summary(vendors_data, snapshot_metrics):
@@ -912,7 +918,7 @@ def generate_daily_ai_summary(vendors_data, snapshot_metrics):
 
 Focus on: Key trends, notable threats, severity distribution, and actionable insights. Be specific and technical."""
     
-    summary = call_openai_api(prompt, model="gpt-4o-mini")
+    summary = call_openai_api(prompt, model="gemini-1.5-flash")
     if summary:
         return {
             'date': get_ist_now().strftime('%Y-%m-%d'),
@@ -929,7 +935,7 @@ Focus on: Key trends, notable threats, severity distribution, and actionable ins
     return None
 
 def generate_weekly_ai_analysis(history):
-    """Generate weekly AI analysis using GPT-4o"""
+    """Generate weekly AI analysis using Gemini"""
     if not OPENAI_AVAILABLE:
         return None
     
@@ -960,7 +966,7 @@ Provide a JSON response with:
 
 Be specific, technical, and focus on cybersecurity implications."""
     
-    response = call_openai_api(prompt, model="gpt-4o")
+    response = call_openai_api(prompt, model="gemini-1.5-flash")
     if response:
         try:
             # Try to parse JSON response

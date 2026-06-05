@@ -15,8 +15,8 @@ import re
 import time
 from datetime import datetime, timedelta
 import pytz
-import openai
-from openai import OpenAI
+import google.generativeai as genai
+
 import feedparser
 from html import unescape, escape
 import requests
@@ -740,7 +740,7 @@ At the end of each short's Content, add an Entities line with comma-separated va
 Create a short for EACH of the {len(top_articles)} articles above."""
     
     # Check for Dry Run mode (no API key)
-    api_key = os.environ.get('OPENAI_API_KEY')
+    api_key = os.environ.get('GEMINI_API_KEY')
     dry_run = api_key is None or api_key == ""
     
     if dry_run:
@@ -760,27 +760,29 @@ Entities: {article['source']}, security-intel, dry-run
 """
         return fake_content
 
-    # Real OpenAI Run sequence
-    global client
-    if client is None:
-        client = OpenAI(api_key=api_key)
+    # Real Gemini Run sequence
+    genai.configure(api_key=api_key)
+    # Use gemini-1.5-flash which has a 15 RPM free tier limit
+    model = genai.GenerativeModel(
+        'gemini-1.5-flash',
+        system_instruction="You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders.",
+        generation_config=genai.types.GenerationConfig(
+            temperature=0.3,
+            max_output_tokens=4000,
+        )
+    )
         
-    # Retry logic for OpenAI API
+    # Retry logic for Gemini API
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            print(f"   🤖 OpenAI Request (Attempt {attempt + 1}/{max_retries})...")
-            response = client.chat.completions.create(
-                model="gpt-4o",
-                messages=[
-                    {"role": "system", "content": "You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders."},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.3,
-                max_tokens=4000
-            )
+            print(f"   🤖 Gemini Request (Attempt {attempt + 1}/{max_retries})...")
+            # Rate limiting: Sleep 5 seconds to stay under 15 requests per minute
+            import time
+            time.sleep(5)
             
-            content = response.choices[0].message.content
+            response = model.generate_content(prompt)
+            content = response.text
             
             # Decode HTML entities (fix &#x27; → ')
             content = unescape(content)
@@ -796,7 +798,7 @@ Entities: {article['source']}, security-intel, dry-run
             return content
             
         except Exception as e:
-            print(f"⚠️  OpenAI Attempt {attempt + 1} failed: {e}")
+            print(f"⚠️  Gemini Attempt {attempt + 1} failed: {e}")
             if attempt < max_retries - 1:
                 time.sleep(2 * (attempt + 1)) # Exponential backoff
             else:

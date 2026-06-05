@@ -40,7 +40,7 @@ jobs:
       - name: Enrich CVE Data (Dual Source - CISA KEV + NVD Critical)
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python enrich_cve_dual_source.py
 
       # NEW: EPSS Enrichment - adds exploit prediction scores

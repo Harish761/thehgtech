@@ -6,6 +6,7 @@ Fetches CISA KEV data and enriches with vendor patch details from NVD API
 
 import requests
 import json
+import google.generativeai as genai
 import time
 import os
 from datetime import datetime, timedelta
@@ -13,7 +14,7 @@ from typing import List, Dict, Optional
 
 # Configuration
 NVD_API_KEY = os.getenv('NVD_API_KEY', '')  # Optional: Get free key from https://nvd.nist.gov/developers/request-an-api-key
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', '')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '')
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 NVD_BASE_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 OUTPUT_FILE = "cve-data.json"
@@ -147,8 +148,8 @@ def extract_remediation_links(nvd_data: Dict, vendor: str) -> List[Dict[str, str
 
 
 def enhance_with_ai(cve_id: str, remediation_links: List[Dict], vendor: str, product: str) -> List[Dict[str, str]]:
-    """Use OpenAI to generate better titles for remediation links"""
-    if not OPENAI_API_KEY or not remediation_links:
+    """Use Gemini to generate better titles for remediation links"""
+    if not GEMINI_API_KEY or not remediation_links:
         return remediation_links
     
     try:
@@ -163,31 +164,21 @@ Links:
 Return JSON array with format: [{{"title": "...", "url": "..."}}]
 Make titles specific and actionable (e.g., "Microsoft Security Update", "Cisco Patch Download", "Vendor Mitigation Guide")."""
 
-        response = requests.post(
-            'https://api.openai.com/v1/chat/completions',
-            headers={
-                'Authorization': f'Bearer {OPENAI_API_KEY}',
-                'Content-Type': 'application/json'
-            },
-            json={
-                'model': 'gpt-4o-mini',
-                'messages': [{'role': 'user', 'content': prompt}],
-                'temperature': 0.3,
-                'max_tokens': 500
-            },
-            timeout=30
+        genai.configure(api_key=GEMINI_API_KEY)
+        time.sleep(5)
+        model = genai.GenerativeModel(
+            'gemini-1.5-flash',
+            generation_config=genai.types.GenerationConfig(temperature=0.3, max_output_tokens=500)
         )
+        response = model.generate_content(prompt)
+        content = response.text
         
-        if response.status_code == 200:
-            result = response.json()
-            content = result['choices'][0]['message']['content']
-            
-            # Extract JSON from response
-            import re
-            json_match = re.search(r'\[.*\]', content, re.DOTALL)
-            if json_match:
-                enhanced_links = json.loads(json_match.group())
-                return enhanced_links
+        # Extract JSON from response
+        import re
+        json_match = re.search(r'\[.*\]', content, re.DOTALL)
+        if json_match:
+            enhanced_links = json.loads(json_match.group())
+            return enhanced_links
         
     except Exception as e:
         print(f"    ⚠️  AI enhancement failed: {e}")
@@ -267,9 +258,9 @@ def detect_zero_day(nvd_data: Dict, cisa_vuln: Dict, remediation_links: List[Dic
             keyword_score = 2
             break
     
-    # Factor 4: Optional AI Verification (if OpenAI key available)
+    # Factor 4: Optional AI Verification (if Gemini key available)
     ai_score = 0
-    if OPENAI_API_KEY and timeline_score >= 1:
+    if GEMINI_API_KEY and timeline_score >= 1:
         ai_score = verify_zero_day_with_ai(cisa_vuln['cveID'], combined_desc, days_diff)
     
     # Calculate total score
@@ -292,7 +283,7 @@ def detect_zero_day(nvd_data: Dict, cisa_vuln: Dict, remediation_links: List[Dic
 
 def verify_zero_day_with_ai(cve_id: str, description: str, days_diff: int) -> int:
     """Use AI to verify if CVE is likely a zero-day based on description"""
-    if not OPENAI_API_KEY:
+    if not GEMINI_API_KEY:
         return 0
     
     try:
@@ -305,29 +296,19 @@ A zero-day is exploited before or shortly after disclosure, with no patch availa
 
 Answer with just: "YES" (definite zero-day), "LIKELY" (probable), or "NO" (not zero-day)."""
 
-        response = requests.post(
-            'https://api.openai.com/v1/chat/completions',
-            headers={
-                'Authorization': f'Bearer {OPENAI_API_KEY}',
-                'Content-Type': 'application/json'
-            },
-            json={
-                'model': 'gpt-4o-mini',
-                'messages': [{'role': 'user', 'content': prompt}],
-                'temperature': 0.1,
-                'max_tokens': 10
-            },
-            timeout=10
+        genai.configure(api_key=GEMINI_API_KEY)
+        time.sleep(5)
+        model = genai.GenerativeModel(
+            'gemini-1.5-flash',
+            generation_config=genai.types.GenerationConfig(temperature=0.1, max_output_tokens=10)
         )
+        response = model.generate_content(prompt)
+        answer = response.text.strip().upper()
         
-        if response.status_code == 200:
-            result = response.json()
-            answer = result['choices'][0]['message']['content'].strip().upper()
-            
-            if 'YES' in answer or 'DEFINITE' in answer:
-                return 2  # High confidence
-            elif 'LIKELY' in answer or 'PROBABLE' in answer:
-                return 1  # Moderate confidence
+        if 'YES' in answer or 'DEFINITE' in answer:
+            return 2  # High confidence
+        elif 'LIKELY' in answer or 'PROBABLE' in answer:
+            return 1  # Moderate confidence
         
     except Exception as e:
         print(f"    ⚠️  AI zero-day verification failed: {e}")
@@ -362,7 +343,7 @@ def analyze_business_impact(cve_id: str, description: str, cvss_score: float) ->
         "impactTags": []
     }
     
-    if not OPENAI_API_KEY:
+    if not GEMINI_API_KEY:
         return default_result
         
     try:
@@ -378,31 +359,21 @@ Return ONLY a JSON object with:
 JSON format exactly:
 {{"businessImpactScore": "High", "impactTags": ["tag1", "tag2"]}}'''
 
-        response = requests.post(
-            'https://api.openai.com/v1/chat/completions',
-            headers={
-                'Authorization': f'Bearer {OPENAI_API_KEY}',
-                'Content-Type': 'application/json'
-            },
-            json={
-                'model': 'gpt-4o-mini',
-                'messages': [{'role': 'user', 'content': prompt}],
-                'temperature': 0.1,
-                'max_tokens': 100
-            },
-            timeout=15
+        genai.configure(api_key=GEMINI_API_KEY)
+        time.sleep(5)
+        model = genai.GenerativeModel(
+            'gemini-1.5-flash',
+            generation_config=genai.types.GenerationConfig(temperature=0.1, max_output_tokens=100)
         )
-        
-        if response.status_code == 200:
-            result = response.json()
-            content = result['choices'][0]['message']['content']
-            import re
-            json_match = re.search(r'\{.*\}', content, re.DOTALL)
-            if json_match:
-                parsed = json.loads(json_match.group())
-                cache[cve_id] = parsed
-                save_ai_cache(cache)
-                return parsed
+        response = model.generate_content(prompt)
+        content = response.text
+        import re
+        json_match = re.search(r'\{.*\}', content, re.DOTALL)
+        if json_match:
+            parsed = json.loads(json_match.group())
+            cache[cve_id] = parsed
+            save_ai_cache(cache)
+            return parsed
     except Exception as e:
         print(f"    ⚠️  AI business impact analysis failed: {e}")
         
@@ -458,7 +429,7 @@ def process_cve(cisa_vuln: Dict) -> Dict:
     remediation_links = extract_remediation_links(nvd_data, vendor)
     
     # Enhance with AI if available
-    if OPENAI_API_KEY and remediation_links:
+    if GEMINI_API_KEY and remediation_links:
         remediation_links = enhance_with_ai(cve_id, remediation_links, vendor, product)
     
     # Determine severity
@@ -542,10 +513,10 @@ def main():
     else:
         print("✓ NVD API key found - using faster rate limit (50 req/30s)")
     
-    if not OPENAI_API_KEY:
-        print("⚠️  No OpenAI API key found. Skipping AI enhancement")
+    if not GEMINI_API_KEY:
+        print("⚠️  No Gemini API key found. Skipping AI enhancement")
     else:
-        print("✓ OpenAI API key found - will enhance link titles")
+        print("✓ Gemini API key found - will enhance link titles")
     
     print()
     
