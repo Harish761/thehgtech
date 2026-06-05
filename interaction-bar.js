@@ -8,59 +8,22 @@ function getPageId() {
     return window.location.pathname.replace(/\//g, '_').replace(/\.html$/, '');
 }
 
-// Like Functionality
-function toggleLike() {
+// Transform the static Like button into a Comments button dynamically
+function transformLikeButtonToCommentButton() {
     const likeBtn = document.getElementById('likeBtn');
-    const likeText = document.getElementById('likeText');
-    const pageId = getPageId();
-    const likeKey = `liked_${pageId}`;
-
-    const isLiked = localStorage.getItem(likeKey) === 'true';
-
-    if (isLiked) {
-        // Unlike
-        localStorage.removeItem(likeKey);
-        likeBtn.classList.remove('liked');
-        likeText.innerText = 'Like this article';
-
-        // Change icon back to outline
-        const icon = likeBtn.querySelector('i');
-        icon.classList.remove('fas');
-        icon.classList.add('far');
-    } else {
-        // Like
-        localStorage.setItem(likeKey, 'true');
-        likeBtn.classList.add('liked');
-        likeText.innerText = 'Liked!';
-
-        // Change icon to solid
-        const icon = likeBtn.querySelector('i');
-        icon.classList.remove('far');
-        icon.classList.add('fas');
+    if (likeBtn) {
+        likeBtn.setAttribute('onclick', 'scrollToComments()');
+        likeBtn.innerHTML = '<i class="far fa-comment-dots"></i> <span id="likeText">Join Discussion</span>';
+        likeBtn.classList.remove('liked'); // Clear any old like styling
     }
 }
 
-// Check if page is already liked on load
-function checkLikeStatus() {
-    const pageId = getPageId();
-    const likeKey = `liked_${pageId}`;
-    const isLiked = localStorage.getItem(likeKey) === 'true';
-
-    if (isLiked) {
-        const likeBtn = document.getElementById('likeBtn');
-        const likeText = document.getElementById('likeText');
-
-        if (likeBtn && likeText) {
-            likeBtn.classList.add('liked');
-            likeText.innerText = 'Liked!';
-
-            // Change icon to solid
-            const icon = likeBtn.querySelector('i');
-            if (icon) {
-                icon.classList.remove('far');
-                icon.classList.add('fas');
-            }
-        }
+// Scroll to GraphComment section
+function scrollToComments() {
+    const gc = document.getElementById('graphcomment');
+    if (gc) {
+        const y = gc.getBoundingClientRect().top + window.scrollY - 100; // Offset for sticky header
+        window.scrollTo({top: y, behavior: 'smooth'});
     }
 }
 
@@ -142,91 +105,44 @@ function printArticle() {
     window.print();
 }
 
-// Inject Newsletter Lead Magnet
-function injectLeadMagnet() {
-    // SECURITY: Ensure we are NOT on the homepage before doing anything
-    const path = window.location.pathname;
-
-    // Catch root, index.html, empty path, and explicitly the home-page class
-    const isHomePage = path === '/' ||
-        path === '' ||
-        path.endsWith('index.html') ||
-        document.body.classList.contains('home-page');
-
-    if (isHomePage) {
-        // Failsafe: if it somehow injected, rip it out
-        const existingForm = document.getElementById('hg-lead-magnet');
-        if (existingForm) existingForm.remove();
-        return; // Abort instantly
-    }
-
-    // Only inject on article/guide pages that actually have an interaction bar
+// Inject GraphComment Widget
+function injectGraphComment() {
     const interactionBar = document.querySelector('.interaction-bar');
     if (!interactionBar) return;
+    if (document.getElementById('graphcomment')) return; // Prevent duplicate injection
 
-    // Prevent duplicate injections
-    if (document.getElementById('hg-lead-magnet')) return;
+    const gcContainer = document.createElement('div');
+    gcContainer.id = 'graphcomment';
+    gcContainer.style.marginTop = '4rem';
+    gcContainer.style.marginBottom = '2rem';
+    
+    // Insert immediately after interaction bar
+    interactionBar.parentNode.insertBefore(gcContainer, interactionBar.nextSibling);
 
-    // Adding dynamic styles for the input and button focus/hover states
-    const styleId = 'hg-lead-magnet-styles';
-    if (!document.getElementById(styleId)) {
-        const style = document.createElement('style');
-        style.id = styleId;
-        style.textContent = `
-            #hg-lead-magnet input:focus {
-                border-color: var(--accent-primary) !important;
-                box-shadow: 0 0 0 3px rgba(255, 61, 61, 0.2);
-            }
-            #hg-lead-magnet button:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 4px 15px rgba(255, 61, 61, 0.4);
-                filter: brightness(1.1);
-            }
-        `;
-        document.head.appendChild(style);
+    // Initialize GraphComment Configuration
+    window.__semio__params = {
+        graphcommentId: "thehgtech", // User's GraphComment Site ID
+        behaviour: {
+            uid: getPageId() // Unique page identifier
+        }
+    };
+    
+    function __semio__onload() {
+        __semio__gc_graphlogin(__semio__params)
     }
-
-    const magnetHTML = `
-        <div id="hg-lead-magnet" class="lead-magnet-container" style="margin: 4rem 0 2rem; padding: 3rem 2rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 16px; text-align: center; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-            <!-- Glow effect border top -->
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-purple));"></div>
-            
-            <div style="font-size: 2.5rem; color: var(--accent-secondary); margin-bottom: 1rem;">
-                <i class="fas fa-envelope-open-text"></i>
-            </div>
-            
-            <h3 style="font-size: 1.8rem; font-weight: 900; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: -0.5px;">
-                The Cyber Intel Brief
-            </h3>
-            
-            <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.6;">
-                Join 500+ security professionals getting our Friday morning Threat Intel & Zero-Day breakdown. No fluff, just actionable intelligence.
-            </p>
-            
-            <!-- Replace 'YOUR_SUBSTACK_NAME' with your actual Substack subdomain -->
-            <form action="https://thehgtech.substack.com/api/v1/free?nojs=true" method="post" target="_blank" style="display: flex; gap: 0.75rem; max-width: 500px; margin: 0 auto; position: relative; z-index: 2; flex-wrap: wrap; justify-content: center;">
-                <input type="email" name="email" placeholder="Enter your business email..." required 
-                    style="flex: 1; min-width: 250px; padding: 1rem 1.25rem; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 8px; color: var(--text-primary); font-family: inherit; font-size: 1rem; outline: none; transition: all 0.3s ease;">
-                <button type="submit" 
-                    style="padding: 1rem 2rem; background: var(--accent-primary); color: #fff; border: none; border-radius: 8px; font-size: 1rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease; font-family: inherit; white-space: nowrap;">
-                    Join Free
-                </button>
-            </form>
-            
-            <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 1.5rem; margin-bottom: 0;">
-                <i class="fas fa-shield-alt"></i> We respect your inbox. 100% Signal. 0% Noise.
-            </p>
-        </div>
-    `;
-
-    // Insert right before interaction bar
-    if (interactionBar) {
-        interactionBar.insertAdjacentHTML('beforebegin', magnetHTML);
-    }
+    
+    // Load the GraphComment Script
+    var gc = document.createElement('script'); 
+    gc.type = 'text/javascript'; 
+    gc.async = true;
+    gc.onload = __semio__onload; 
+    gc.defer = true; 
+    gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.body).appendChild(gc);
 }
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function () {
-    checkLikeStatus();
-    injectLeadMagnet(); // Automatically append the newsletter UI
+    transformLikeButtonToCommentButton();
+    injectGraphComment();
 });
