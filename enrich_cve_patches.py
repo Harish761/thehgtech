@@ -167,7 +167,7 @@ Make titles specific and actionable (e.g., "Microsoft Security Update", "Cisco P
         genai.configure(api_key=GEMINI_API_KEY)
         time.sleep(5)
         model = genai.GenerativeModel(
-            'gemini-1.5-flash-latest',
+            'gemini-pro',
             generation_config=genai.types.GenerationConfig(temperature=0.3, max_output_tokens=500)
         )
         response = model.generate_content(prompt)
@@ -299,7 +299,7 @@ Answer with just: "YES" (definite zero-day), "LIKELY" (probable), or "NO" (not z
         genai.configure(api_key=GEMINI_API_KEY)
         time.sleep(5)
         model = genai.GenerativeModel(
-            'gemini-1.5-flash-latest',
+            'gemini-pro',
             generation_config=genai.types.GenerationConfig(temperature=0.1, max_output_tokens=10)
         )
         response = model.generate_content(prompt)
@@ -362,7 +362,7 @@ JSON format exactly:
         genai.configure(api_key=GEMINI_API_KEY)
         time.sleep(5)
         model = genai.GenerativeModel(
-            'gemini-1.5-flash-latest',
+            'gemini-pro',
             generation_config=genai.types.GenerationConfig(temperature=0.1, max_output_tokens=100)
         )
         response = model.generate_content(prompt)

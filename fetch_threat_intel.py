@@ -807,7 +807,7 @@ const threatIntelHistory = {json.dumps(history, indent=4)};
 # ──────────────────────────────────────────────────────────────
 # AI-Powered Insights
 # ──────────────────────────────────────────────────────────────
-def call_openai_api(prompt, model="gemini-1.5-flash-latest"):
+def call_openai_api(prompt, model="gemini-pro"):
     """Call Gemini API with error handling and rate limiting"""
     if not OPENAI_AVAILABLE:
         return None
@@ -918,7 +918,7 @@ def generate_daily_ai_summary(vendors_data, snapshot_metrics):
 
 Focus on: Key trends, notable threats, severity distribution, and actionable insights. Be specific and technical."""
     
-    summary = call_openai_api(prompt, model="gemini-1.5-flash-latest")
+    summary = call_openai_api(prompt, model="gemini-pro")
     if summary:
         return {
             'date': get_ist_now().strftime('%Y-%m-%d'),
@@ -966,7 +966,7 @@ Provide a JSON response with:
 
 Be specific, technical, and focus on cybersecurity implications."""
     
-    response = call_openai_api(prompt, model="gemini-1.5-flash-latest")
+    response = call_openai_api(prompt, model="gemini-pro")
     if response:
         try:
             # Try to parse JSON response
