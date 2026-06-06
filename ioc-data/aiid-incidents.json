@@ -1993,30 +1993,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-787",
-      "incident_id": 787,
-      "title": "Deepfake ID Sales Allegedly Persist as OnlyFake Reportedly Relaunches with New Fraud Tools",
-      "date": "2026-03-08",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1359",
-      "incident_id": 1359,
-      "title": "Reported Deepfake Influencers on TikTok Allegedly Used to Promote Fraudulent Wellness Products",
-      "date": "2026-03-08",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1402",
-      "incident_id": 1402,
-      "title": "DOGE Reportedly Relied on Unvetted ChatGPT Outputs in Canceling National Endowment for the Humanitie",
-      "date": "2026-03-08",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1403",
       "incident_id": 1403,
       "title": "NZ News Hub Reportedly Used AI-Rewritten News Posts and Synthetic Images to Mislead New Zealand Face",
@@ -2026,9 +2002,9 @@
     }
   ],
   "stats": {
-    "total": 253,
+    "total": 250,
     "last7Days": 12,
     "last30Days": 174
   },
-  "lastUpdated": "2026-06-06T03:11:21.887260+05:30"
+  "lastUpdated": "2026-06-06T09:45:22.902009+05:30"
 }
