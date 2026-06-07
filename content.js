@@ -4,6 +4,33 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 06 2026",
+            "headline": "Everest Forms Pro Flaw Exploited—WordPress Sites Face Complete Takeover",
+            "title": "Critical CVE-2026-3300 Vulnerability in Everest Forms Pro Actively Exploited",
+            "content": "Threat actors are actively exploiting a critical security vulnerability in the Everest Forms Pro plugin for WordPress, allowing them to gain complete administrative control over affected websites. Tracked as CVE-2026-3300, the flaw stems from an input validation issue that enables remote attackers to execute arbitrary code without authentication. The vulnerability impacts all versions of Everest Forms Pro prior to version 3.0.1, putting thousands of business websites at immediate risk of data theft and defacement. This campaign aligns with a broader trend of attackers targeting popular WordPress plugins to establish persistent access and deploy malicious payloads. Administrators using Everest Forms Pro must immediately update to version 3.0.1 or later to mitigate the threat and review access logs for unauthorized administrative accounts.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-everest-forms-pro-flaw-exploited-to-take-over-wordpress-sites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 06 2026",
+            "headline": "OpenAI Rolls Out ChatGPT Lockdown Mode to Prevent Data Exfiltration",
+            "title": "OpenAI Introduces ChatGPT Lockdown Mode to Mitigate Prompt Injection Risks",
+            "content": "OpenAI has launched a new security feature called Lockdown Mode for eligible personal ChatGPT accounts to defend against data exfiltration. The feature mitigates risks associated with prompt injection attacks, where malicious inputs manipulate the artificial intelligence model into executing unauthorized actions. Specifically, Lockdown Mode restricts the capabilities of connected tools and plugins that could be abused to transmit sensitive user data to external servers. This update is primarily designed for enterprise users, developers, and organizations handling highly sensitive information who require strict data protection guarantees. Users can enable this feature within their account security settings to restrict third-party tool integrations and secure their workflows.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/new-chatgpt-lockdown-mode-limits-tools.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 06 2026",
+            "headline": "CISA Adds SolarWinds Serv-U DoS Flaw to KEV Catalog",
+            "title": "CISA Warns of Active Exploitation of SolarWinds Serv-U DoS Vulnerability",
+            "content": "The Cybersecurity and Infrastructure Security Agency, known as CISA, has added a high-severity security flaw affecting SolarWinds Serv-U multi-protocol file transfer software to its Known Exploited Vulnerabilities catalog. Tracked as CVE-2026-2024, the vulnerability is a denial-of-service flaw that allows remote attackers to crash the file server and disrupt operations. Federal agencies and enterprise organizations utilizing Serv-U are urged to apply the vendor-provided patches immediately to prevent potential service disruptions. CISA added the flaw to its catalog following confirmed evidence of active exploitation by malicious actors in the wild. Under Binding Operational Directive 22-01, federal civilian executive branch agencies must remediate this vulnerability by the specified deadline to secure their networks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 05 2026",
             "headline": "900+ US Gas Station Systems Vulnerable—Immediate Action Needed",
             "title": "Over 900 US Gas Station Tank Gauge Systems Exposed to Attacks",
@@ -69,6 +96,51 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Jun 06 2026",
+            "headline": "OpenAI Launches Lockdown Mode—Mitigating ChatGPT Prompt Injection Risks",
+            "title": "OpenAI Introduces Lockdown Mode to Protect Sensitive Enterprise Data From Prompt Injection",
+            "content": "OpenAI has introduced Lockdown Mode for ChatGPT, a new security feature designed to restrict the exposure of sensitive data during prompt injection attacks. Prompt injection occurs when malicious inputs manipulate a large language model to bypass safety filters or leak system instructions and user data. While OpenAI acknowledges that Lockdown Mode does not entirely eliminate the risk of sophisticated prompt injections, it significantly reduces the likelihood of unauthorized data exfiltration. Enterprise administrators and developers should enable this mode within their API configurations and workspace settings to establish a stronger security baseline. This release highlights the industry's ongoing struggle to secure LLM-based applications against indirect prompt injection vectors as enterprise adoption scales.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 03 2026",
+            "headline": "OpenAI Outlines Global Policy Agenda—Focusing on Safety and Workforce Transition",
+            "title": "OpenAI Releases Comprehensive Public Policy Agenda Targeting AI Safety and Global Standards",
+            "content": "OpenAI has published its official public policy agenda, establishing a framework to guide global AI governance, safety protocols, and societal impact. The agenda focuses on four core pillars: robust safety standards, youth protection measures, workforce transition support, and the harmonization of international AI regulations. By outlining these priorities, OpenAI aims to collaborate with policymakers to address the economic disruptions caused by rapid automation and generative AI deployment. Security leaders and compliance officers should review these guidelines to align their internal AI governance frameworks with emerging global regulatory trends. This proactive policy push comes as governments worldwide accelerate efforts to draft binding legislation for frontier AI models.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/public-policy-agenda",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 06 2026",
+            "headline": "Hugging Face Coordinates 5 Small Models to Run Complex Financial Workflows",
+            "title": "Hugging Face Demonstrates Multi-Model Collaborative Framework Using Small Language Models",
+            "content": "Hugging Face has detailed a collaborative experiment demonstrating how five distinct small language models can work together to execute complex agentic workflows. By partitioning tasks among specialized models rather than relying on a single massive LLM, the project successfully simulated a dynamic financial drama scenario. This multi-model approach highlights the growing viability of small language models, which offer lower latency, reduced operational costs, and easier on-premises deployment. Developers and system architects can leverage this framework to build highly specialized, cost-effective AI agents for enterprise applications without the overhead of frontier models. The project underscores a broader industry shift toward decentralized, modular AI architectures that prioritize efficiency over sheer parameter size.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 06 2026",
+            "headline": "Apple WWDC 2026—Siri Revamp and Apple Intelligence Upgrades Expected",
+            "title": "Apple Prepares Major Siri Overhaul and Apple Intelligence Updates for WWDC 2026",
+            "content": "Apple is set to unveil a major revamp of its Siri virtual assistant alongside significant updates to Apple Intelligence at the upcoming WWDC 2026 conference. The upgrades are expected to integrate advanced on-device generative AI capabilities, allowing Siri to perform more complex multi-step actions and understand context more deeply. Security and privacy professionals will be closely monitoring how Apple maintains its signature on-device processing and Private Cloud Compute standards during this rollout. Developers should prepare for new APIs and SDK updates that will allow third-party applications to hook into these enhanced Apple Intelligence features. This event represents Apple's continued push to compete directly with Google and Microsoft in the consumer-facing generative AI ecosystem.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 06 2026",
+            "headline": "Sriram Krishnan Exits White House—Launches New AI Policy Institution",
+            "title": "White House AI Advisor Sriram Krishnan Steps Down to Launch Policy Think Tank",
+            "content": "Sriram Krishnan is leaving his position as a key White House AI advisor to establish a new external institution focused on shaping national AI policy. During his tenure, Krishnan played a central role in advising the Trump administration on regulatory frameworks, national security implications, and technological competitiveness. The newly planned institution aims to provide independent research and policy recommendations to maintain U.S. leadership in artificial intelligence. Tech executives and policy analysts should monitor this transition, as the new organization is expected to heavily influence future federal AI directives and funding priorities. This move signals a shifting landscape in Washington as private sector experts transition into influential external advocacy and advisory roles.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 05 2026",
             "headline": "AI Industry Faces Cost Crisis—Guardrails Needed",
             "title": "AI Industry Scrambles to Manage Escalating Operational Costs",
@@ -93,24 +165,6 @@ const websiteContent = {
             "content": "Mira Murati, a prominent figure in the AI sector, is strategically reengaging with the market after a period of low visibility. In the current competitive environment, maintaining a proactive presence is crucial for influencing industry trends and stakeholder perceptions. Murati's return highlights the importance of balancing focused work with market engagement to sustain relevance and drive innovation. Her approach serves as a reminder for AI leaders to periodically reassess their public engagement strategies to align with evolving market dynamics. Professionals should consider the implications of visibility on market influence and innovation leadership.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/04/mira-murati-steps-back-into-the-spotlight-carefully/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Kevin O’Leary Halves Utah Data Center Amid Pressure",
-            "title": "Kevin O’Leary Agrees to Downsize Utah Data Center Project",
-            "content": "Kevin O’Leary has agreed to reduce the size of his planned 40,000-acre data center in Utah by half, following significant pressure from local residents and environmental activists. The decision, communicated in a letter to Utah Senate President J. Stuart Adams, reflects growing concerns about environmental impact and community disruption. This development highlights the increasing scrutiny faced by large-scale infrastructure projects, particularly in ecologically sensitive areas. Stakeholders in the data center industry should consider the implications of community engagement and environmental considerations in project planning.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Meta Launches AI Assistant for Facebook Creators",
-            "title": "Meta Introduces AI Creator Assistant to Enhance Facebook Engagement",
-            "content": "Meta has launched a new AI-powered assistant designed to help Facebook creators optimize their content strategies. This tool provides creators with insights into optimal posting times and audience engagement by analyzing performance metrics. By simplifying data interpretation, the assistant aims to enhance content visibility and interaction on the platform. This development is part of Meta's broader strategy to empower creators with advanced tools that streamline content management and improve user engagement. Creators are encouraged to leverage this assistant to refine their social media strategies and maximize audience reach.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/04/meta-rolls-out-a-new-ai-creator-assistant-on-facebook/",
             "relatedResources": []
         }
     ],
