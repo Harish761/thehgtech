@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-07T03:59:19.423084",
+  "last_updated": "2026-06-07T13:53:15.264686",
   "period": "Last 7 days",
   "total_groups": 32,
-  "total_victims": 231,
+  "total_victims": 230,
   "groups": [
     {
       "name": "Thegentlemen",
@@ -1435,48 +1435,6 @@
       ]
     },
     {
-      "name": "Cmdorganization",
-      "count": 3,
-      "victims": [
-        {
-          "name": "SeeWriteHear",
-          "date": "2026-06-03T20:50:13.391240+00:00",
-          "url": "",
-          "discovered_date": "2026-06-03T20:50:13.391240+00:00"
-        },
-        {
-          "name": "SeeWriteHear",
-          "date": "2026-06-03T20:50:13+00:00",
-          "url": "https://www.ransomware.live/id/U2VlV3JpdGVIZWFyQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-06-03T20:50:13+00:00"
-        },
-        {
-          "name": "Lake Washington School District",
-          "date": "2026-05-31T10:50:12+00:00",
-          "url": "https://www.ransomware.live/id/TGFrZSBXYXNoaW5ndG9uIFNjaG9vbCBEaXN0cmljdEBjbWRvcmdhbml6YXRpb24=",
-          "discovered_date": "2026-05-31T10:50:12+00:00"
-        }
-      ],
-      "industries": [
-        "Technology"
-      ],
-      "countries": [
-        "GB",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Abyss",
       "count": 3,
       "victims": [
@@ -1584,6 +1542,41 @@
         0,
         0,
         2,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Cmdorganization",
+      "count": 2,
+      "victims": [
+        {
+          "name": "SeeWriteHear",
+          "date": "2026-06-03T20:50:13.391240+00:00",
+          "url": "",
+          "discovered_date": "2026-06-03T20:50:13.391240+00:00"
+        },
+        {
+          "name": "SeeWriteHear",
+          "date": "2026-06-03T20:50:13+00:00",
+          "url": "https://www.ransomware.live/id/U2VlV3JpdGVIZWFyQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-06-03T20:50:13+00:00"
+        }
+      ],
+      "industries": [
+        "Technology"
+      ],
+      "countries": [
+        "GB"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        2,
+        0,
+        0,
         0,
         0
       ]
