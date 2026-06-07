@@ -625,7 +625,7 @@ def format_with_gpt(articles, content_type):
     articles.sort(key=lambda x: x['relevance_score'], reverse=True)
     top_articles = articles[:6]  # Firm limit of 6 per section
     
-    print(f"   🏆 Selected top {len(top_articles)} articles for GPT based on relevance scores")
+    print(f"   🏆 Selected top {len(top_articles)} articles for Gemini based on relevance scores")
     
     articles_text = ""
     for i, article in enumerate(top_articles, 1):
@@ -1139,7 +1139,7 @@ def update_shorts():
     print(f"\n{'='*60}")
     print(f"🚀 TheHGTech Content Automation - FINAL VERSION v2.1")
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
-    print(f"📡 Mode: Real RSS Feed Aggregation + GPT-4o Formatting")
+    print(f"📡 Mode: Real RSS Feed Aggregation + Gemini Formatting")
     print(f"📊 Sources: 19 RSS feeds (10 cyber + 9 AI)")
     print(f"🔗 URL Preservation: ENABLED")
     print(f"🔄 Duplicate Detection: ENABLED")
@@ -1269,7 +1269,7 @@ def update_shorts():
             sys.exit(0)
     
     # Format NEW articles using GPT-4o
-    print(f"\n🤖 Formatting new articles with GPT-4o...")
+    print(f"\n🤖 Formatting new articles with Gemini...")
     cyber_content = format_with_gpt(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
     ai_content = format_with_gpt(ai_articles_new, "AI") if ai_articles_new else None
     
@@ -1283,7 +1283,7 @@ def update_shorts():
         print(f"\n📊 Selection Stats: Cybersecurity")
         print(f"   - Total Fetched: {len(cyber_articles)}")
         print(f"   - Unique (New): {len(cyber_articles_new)}")
-        print(f"   - GPT Summary Limit: 6")
+        print(f"   - Gemini Summary Limit: 6")
         print(f"   🏆 Top 3 Scored Articles:")
         # Show top 3 in logs based on score
         scored_cyber = sorted(cyber_articles_new, key=lambda x: x.get('relevance_score', 0), reverse=True)
@@ -1294,7 +1294,7 @@ def update_shorts():
         print(f"\n📊 Selection Stats: AI")
         print(f"   - Total Fetched: {len(ai_articles)}")
         print(f"   - Unique (New): {len(ai_articles_new)}")
-        print(f"   - GPT Summary Limit: 6")
+        print(f"   - Gemini Summary Limit: 6")
         print(f"   🏆 Top 3 Scored Articles:")
         scored_ai = sorted(ai_articles_new, key=lambda x: x.get('relevance_score', 0), reverse=True)
         for i, a in enumerate(scored_ai[:3], 1):

@@ -836,7 +836,7 @@ def call_openai_api(prompt, model="gemini-flash-latest"):
         return None
 
 def generate_daily_ai_summary(vendors_data, snapshot_metrics):
-    """Generate daily AI summary using GPT-4o-mini"""
+    """Generate daily AI summary using Gemini"""
     if not OPENAI_AVAILABLE:
         return None
     
