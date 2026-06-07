@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1515",
+      "incident_id": 1515,
+      "title": "Purportedly AI-Generated Airport Videos Reportedly Showed Kosovo Diaspora Voters Supporting Albin Ku",
+      "date": "2026-06-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1516",
+      "incident_id": 1516,
+      "title": "Purportedly AI-Generated Airport Videos Reportedly Showed Kosovo Diaspora Voters Opposing Albin Kurt",
+      "date": "2026-06-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1510",
       "incident_id": 1510,
       "title": "Meta AI Support Bot Reportedly Enabled Takeovers of High-Profile Instagram Accounts",
@@ -36,22 +52,6 @@
       "id": "AIID-1514",
       "incident_id": 1514,
       "title": "Purportedly AI-Generated Video Reportedly Depicted Kosovo LDK Figure Hykmete Bajrami and Former Serb",
-      "date": "2026-06-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1515",
-      "incident_id": 1515,
-      "title": "Purportedly AI-Generated Airport Videos Reportedly Showed Diaspora Voters Supporting Albin Kurti",
-      "date": "2026-06-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1516",
-      "incident_id": 1516,
-      "title": "Purportedly AI-Generated Airport Videos Reportedly Showed Diaspora Voters Opposing Albin Kurti",
       "date": "2026-06-04",
       "category": "other",
       "severity": "medium"
@@ -1998,5 +1998,5 @@
     "last7Days": 11,
     "last30Days": 171
   },
-  "lastUpdated": "2026-06-07T19:45:33.601211+05:30"
+  "lastUpdated": "2026-06-07T23:07:58.487820+05:30"
 }
