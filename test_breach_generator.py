@@ -7,7 +7,7 @@ import os
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
-from openai import OpenAI
+import google.generativeai as genai
 
 CURRENT_DATE = datetime.now()
 
@@ -43,15 +43,15 @@ def fetch_one_breach():
     return None
 
 def generate_article(breach):
-    """Generate article using OpenAI GPT-4o"""
+    """Generate article using Gemini"""
     
-    api_key = os.environ.get('OPENAI_API_KEY')
+    api_key = os.environ.get('GEMINI_API_KEY')
     if not api_key:
-        print("❌ OPENAI_API_KEY not set!")
+        print("❌ GEMINI_API_KEY not set!")
         return None
     
-    print("🤖 Configuring OpenAI GPT-4o...")
-    client = OpenAI(api_key=api_key)
+    print("🤖 Configuring Gemini...")
+    genai.configure(api_key=api_key)
     
     # Optimized prompt
     prompt = f"""Today is {CURRENT_DATE.strftime('%B %d, %Y')} (January 2026).
@@ -271,26 +271,20 @@ Generate complete HTML article with this structure:
 
 Fill in ALL the bracketed placeholders with actual, detailed content based on the breach information provided. Generate a complete, production-ready article."""
 
-    print("🤖 Calling OpenAI GPT-4o...")
+    print("🤖 Calling Gemini...")
     
     try:
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You are a senior cybersecurity analyst writing for TheHGTech, a professional cybersecurity news website. Write detailed, accurate, and actionable security content. Today's date is January 15, 2026."
-                },
-                {
-                    "role": "user", 
-                    "content": prompt
-                }
-            ],
-            temperature=0.7,
-            max_tokens=4000
+        model = genai.GenerativeModel(
+            'gemini-flash-latest',
+            system_instruction="You are a senior cybersecurity analyst writing for TheHGTech, a professional cybersecurity news website. Write detailed, accurate, and actionable security content. Today's date is January 15, 2026.",
+            generation_config=genai.types.GenerationConfig(
+                temperature=0.7,
+                max_output_tokens=4000
+            )
         )
+        response = model.generate_content(prompt)
         
-        article = response.choices[0].message.content
+        article = response.text
         print(f"✅ Generated! ({len(article)} chars)")
         return article
         
@@ -300,7 +294,7 @@ Fill in ALL the bracketed placeholders with actual, detailed content based on th
 
 def main():
     print("=" * 50)
-    print("🔐 Breach Deep Dive Generator - GPT-4o")
+    print("🔐 Breach Deep Dive Generator - Gemini")
     print(f"📅 {CURRENT_DATE.strftime('%B %d, %Y')}")
     print("=" * 50)
     
