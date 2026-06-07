@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-06-06T15:50:25.611546",
-  "total_incidents": 28561,
+  "last_updated": "2026-06-07T06:47:34.453488",
+  "total_incidents": 28562,
   "incidents": [
+    {
+      "id": "blackwater_www.utourworld.com",
+      "victim_name": "www.utourworld.com",
+      "threat_actor": "blackwater",
+      "date_discovered": "2026-06-06T17:20:51.678304+00:00",
+      "industry": "Hospitality and Tourism",
+      "website": "www.utourworld.com",
+      "claim": "Confidential data will be published soon",
+      "screenshot": "https://images.ransomware.live/victims/16c4f66557a6f7f25966a31416c7b0de.png",
+      "url": "http://ejzl7cjxmkx7lzhiqwidmrwtfjv45pkczbc4fnyaut3t7gll3yaiq5id.onion/blog?uuid=908e35ca-0693-37f1-9b4d-05b2e59a59f1",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "play_pearson_ford",
       "victim_name": "Pearson Ford",

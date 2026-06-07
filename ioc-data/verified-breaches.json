@@ -1655,6 +1655,25 @@
       "Description": "In June 2016, <a href=\"http://motherboard.vice.com/read/another-day-another-hack-user-accounts-of-dating-site-badoo\" target=\"_blank\" rel=\"noopener\">a data breach allegedly originating from the social website Badoo was found to be circulating amongst traders</a>. Likely obtained several years earlier, the data contained 112 million unique email addresses with personal data including names, birthdates and passwords stored as MD5 hashes. Whilst there are many indicators suggesting Badoo did indeed suffer a data breach, <a href=\"https://www.troyhunt.com/introducing-unverified-breaches-to-have-i-been-pwned\" target=\"_blank\" rel=\"noopener\">the legitimacy of the data could not be emphatically proven</a> so this breach has been categorised as \"unverified\"."
     }
   ],
+  "bakerdist.com": [
+    {
+      "Name": "BakerDistributing",
+      "Title": "Baker Distributing",
+      "BreachDate": "2026-05-23",
+      "AddedDate": "2026-06-07T06:16:36Z",
+      "PwnCount": 102935,
+      "DataClasses": [
+        "Email addresses",
+        "Names",
+        "Phone numbers",
+        "Physical addresses",
+        "Support tickets"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In May 2026, the HVAC/R wholesale distributor <a href=\"https://x.com/DailyDarkWeb/status/2062522924582502737\" target=\"_blank\" rel=\"noopener\">Baker Distributing Company was added to the ShinyHunters data extortion group's \"pay or leak\" site</a>. In early June, the group publicly published data they claimed had been obtained from Baker's SharePoint and Salesforce infrastructure including 103k unique email addresses along with names, physical addresses, phone numbers and tickets relating to the company's HVAC contractor customer base. The exposed data was largely corporate contact and support information with limited sensitivity."
+    }
+  ],
   "bannerbit.com": [
     {
       "Name": "BannerBit",
