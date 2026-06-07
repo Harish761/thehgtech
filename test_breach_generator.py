@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Breach Deep Dive Generator - Using OpenAI GPT-4o
+Breach Deep Dive Generator - Using Gemini
 """
 
 import os

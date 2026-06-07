@@ -160,3 +160,41 @@ document.addEventListener('DOMContentLoaded', function () {
     transformLikeButtonToCommentButton();
     injectGraphComment();
 });
+
+// ================================================
+// ZEN READER MODE
+// ================================================
+function initZenMode() {
+    // Inject the button
+    const actionButtons = document.querySelector('.action-buttons');
+    if (actionButtons) {
+        const zenBtn = document.createElement('button');
+        zenBtn.className = 'share-btn zen-btn';
+        zenBtn.title = 'Toggle Zen Reader Mode';
+        zenBtn.innerHTML = '<i class="fas fa-book-reader"></i>';
+        zenBtn.onclick = toggleZenMode;
+        
+        // Insert before the print button separator
+        const separator = actionButtons.querySelector('.button-separator');
+        if (separator) {
+            actionButtons.insertBefore(zenBtn, separator);
+        } else {
+            actionButtons.appendChild(zenBtn);
+        }
+    }
+}
+
+function toggleZenMode() {
+    document.body.classList.toggle('zen-mode');
+    const btn = document.querySelector('.zen-btn');
+    if (document.body.classList.contains('zen-mode')) {
+        if(btn) btn.innerHTML = '<i class="fas fa-times"></i>';
+    } else {
+        if(btn) btn.innerHTML = '<i class="fas fa-book-reader"></i>';
+    }
+}
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+    initZenMode();
+});

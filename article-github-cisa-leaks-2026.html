@@ -132,13 +132,13 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.7;
-            font-size: 18px;
+            /* font-size removed for fluid typography */
         }
 
         .article-container {
             max-width: 800px;
             margin: 80px auto 0;
-            padding: 2rem;
+            /* padding removed for fluid typography */
         }
 
         .back-link {
@@ -164,7 +164,7 @@
         }
 
         h1 {
-            font-size: 2.2rem;
+            /* font-size removed for fluid typography */
             line-height: 1.2;
             margin-bottom: 1rem;
             background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
@@ -185,7 +185,7 @@
         .article-content h2 {
             color: var(--accent-cyan);
             margin: 2.5rem 0 1rem;
-            font-size: 1.6rem;
+            /* font-size removed for fluid typography */
             border-bottom: 1px solid var(--border);
             padding-bottom: 0.5rem;
         }
@@ -193,12 +193,12 @@
         .article-content h3 {
             color: var(--text-primary);
             margin: 1.5rem 0 1rem;
-            font-size: 1.3rem;
+            /* font-size removed for fluid typography */
         }
 
         .article-content p {
             margin-bottom: 1.5rem;
-            font-size: 1.15rem;
+            /* font-size removed for fluid typography */
             color: var(--text-secondary);
         }
 
@@ -279,7 +279,7 @@
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 2rem;
+            /* padding removed for fluid typography */
             margin-top: 3rem;
             gap: 1.5rem;
         }
@@ -347,7 +347,7 @@
             document.head.appendChild(fullres);
         });
     </script>
-    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="mobile-nav.css">
 </head>
 
 <body>
@@ -712,7 +712,7 @@ paths.forEach(p => {
     </main>
 
     <footer>
-        <div style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</div>
+        <div style="text-align: center; color: var(--text-muted); /* padding removed for fluid typography */">&copy; 2026 TheHGTech. All rights reserved.</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
@@ -725,5 +725,6 @@ paths.forEach(p => {
         });
     </script>
     <script src="/interaction-bar.js?v=20260605"></script>
+    <script src="mobile-nav.js" defer></script>
 </body>
 </html>

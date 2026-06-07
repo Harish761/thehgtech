@@ -101,12 +101,12 @@
             --border: rgba(255,255,255,0.1);
         }
         body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .container { max-width: 900px; margin: 0 auto; /* padding removed for fluid typography */ }
         .guide-header { padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; margin-top: 60px; }
         .guide-badge { display: inline-block; background: linear-gradient(135deg, #f59e0b, #ef4444); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1rem; }
         h1 { font-size: 2.5rem; background: linear-gradient(135deg, #f59e0b, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; }
         h2 { color: var(--accent-orange); margin: 2.5rem 0 1rem; font-size: 1.8rem; padding-top: 1rem; border-top: 1px solid var(--border); }
-        h3 { color: var(--text-primary); margin: 1.5rem 0 1rem; font-size: 1.3rem; }
+        h3 { color: var(--text-primary); margin: 1.5rem 0 1rem; /* font-size removed for fluid typography */ }
         h4 { color: var(--accent-orange); margin: 1.25rem 0 0.75rem; font-size: 1.1rem; }
         p { margin-bottom: 1rem; color: var(--text-secondary); }
         a { color: var(--accent-cyan); text-decoration: none; }
@@ -143,7 +143,7 @@
         .severity-high { color: var(--accent-orange); font-weight: 700; }
         .back-link { display: inline-block; margin-bottom: 2rem; color: var(--accent-cyan); text-decoration: none; }
         .back-link:hover { text-decoration: underline; }
-        @media (max-width: 768px) { h1 { font-size: 1.6rem; } .container { padding: 1rem; } h2 { font-size: 1.4rem; } }
+        @media (max-width: 768px) { h1 { /* font-size removed for fluid typography */ } .container { padding: 1rem; } h2 { font-size: 1.4rem; } }
     </style>
     <link rel="stylesheet" href="/m-core.css?v=4.2">
     <link rel="stylesheet" href="/m-layout.css?v=3.4">
@@ -189,7 +189,7 @@
             document.head.appendChild(fullres);
         });
     </script>
-    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="../mobile-nav.css">
 </head>
 <body>
 <!-- ========== NEW SMART MOBILE HEADER ========== -->
@@ -998,6 +998,6 @@ echo "=== Assessment Complete ==="</code></pre>
 <script src="../ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>
-    <script src="/mobile-nav.js" defer></script>
+    <script src="../mobile-nav.js" defer></script>
 </body>
 </html>

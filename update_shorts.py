@@ -611,7 +611,7 @@ def filter_existing_urls(articles, existing_shorts):
 
 
 def format_with_gpt(articles, content_type):
-    """Use GPT-4o to format articles into professional shorts"""
+    """Use Gemini to format articles into professional shorts"""
     if not articles:
         return None
     
@@ -755,7 +755,7 @@ Source URL: {article['link']}
 Headline: [DRY RUN] {article['title'][:60]}...
 Title: {article['title']}
 Content:
-This is a simulated professional summary for '{article['title']}'. In a real run, GPT-4o would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of {article.get('relevance_score', 0)} based on your new ranking algorithm. Key entities like {article['source']} would be extracted for internal linking.
+This is a simulated professional summary for '{article['title']}'. In a real run, Gemini would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of {article.get('relevance_score', 0)} based on your new ranking algorithm. Key entities like {article['source']} would be extracted for internal linking.
 Entities: {article['source']}, security-intel, dry-run
 """
         return fake_content
@@ -1268,7 +1268,7 @@ def update_shorts():
             print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts, {len(data['recentCVEs'])} CVEs")
             sys.exit(0)
     
-    # Format NEW articles using GPT-4o
+    # Format NEW articles using Gemini
     print(f"\n🤖 Formatting new articles with Gemini...")
     cyber_content = format_with_gpt(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
     ai_content = format_with_gpt(ai_articles_new, "AI") if ai_articles_new else None

@@ -34,10 +34,10 @@ import re
 try:
     import google.generativeai as genai
     import time
-    OPENAI_AVAILABLE = True
+    GEMINI_AVAILABLE = True
 except ImportError:
     print("Warning: google-generativeai library not installed. AI insights will be disabled.")
-    OPENAI_AVAILABLE = False
+    GEMINI_AVAILABLE = False
 
 # ──────────────────────────────────────────────────────────────
 # Config
@@ -807,9 +807,9 @@ const threatIntelHistory = {json.dumps(history, indent=4)};
 # ──────────────────────────────────────────────────────────────
 # AI-Powered Insights
 # ──────────────────────────────────────────────────────────────
-def call_openai_api(prompt, model="gemini-flash-latest"):
+def call_gemini_api(prompt, model="gemini-flash-latest"):
     """Call Gemini API with error handling and rate limiting"""
-    if not OPENAI_AVAILABLE:
+    if not GEMINI_AVAILABLE:
         return None
     
     api_key = os.getenv('GEMINI_API_KEY')
@@ -837,7 +837,7 @@ def call_openai_api(prompt, model="gemini-flash-latest"):
 
 def generate_daily_ai_summary(vendors_data, snapshot_metrics):
     """Generate daily AI summary using Gemini"""
-    if not OPENAI_AVAILABLE:
+    if not GEMINI_AVAILABLE:
         return None
     
     # Count total and new IOCs
@@ -918,7 +918,7 @@ def generate_daily_ai_summary(vendors_data, snapshot_metrics):
 
 Focus on: Key trends, notable threats, severity distribution, and actionable insights. Be specific and technical."""
     
-    summary = call_openai_api(prompt, model="gemini-flash-latest")
+    summary = call_gemini_api(prompt, model="gemini-flash-latest")
     if summary:
         return {
             'date': get_ist_now().strftime('%Y-%m-%d'),
@@ -936,7 +936,7 @@ Focus on: Key trends, notable threats, severity distribution, and actionable ins
 
 def generate_weekly_ai_analysis(history):
     """Generate weekly AI analysis using Gemini"""
-    if not OPENAI_AVAILABLE:
+    if not GEMINI_AVAILABLE:
         return None
     
     snapshots = history.get('dailySnapshots', [])
@@ -966,7 +966,7 @@ Provide a JSON response with:
 
 Be specific, technical, and focus on cybersecurity implications."""
     
-    response = call_openai_api(prompt, model="gemini-flash-latest")
+    response = call_gemini_api(prompt, model="gemini-flash-latest")
     if response:
         try:
             # Try to parse JSON response

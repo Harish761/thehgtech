@@ -143,13 +143,13 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.8;
-            font-size: 18px;
+            /* font-size removed for fluid typography */
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            /* padding removed for fluid typography */
         }
 
         /* Article Header (not the main nav) */
@@ -441,7 +441,7 @@
             background: linear-gradient(135deg, rgba(255, 76, 76, 0.15), rgba(255, 149, 0, 0.1));
             border: 1px solid var(--accent-red);
             border-radius: 12px;
-            padding: 2rem;
+            /* padding removed for fluid typography */
             margin: 2rem 0;
         }
 
@@ -483,7 +483,7 @@
             background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 217, 255, 0.05));
             border: 2px solid var(--accent-green);
             border-radius: 16px;
-            padding: 2rem;
+            /* padding removed for fluid typography */
             margin: 3rem 0;
         }
 
@@ -635,7 +635,7 @@
             document.head.appendChild(fullres);
         });
     </script>
-    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="../mobile-nav.css">
 </head>
 
 <body>
@@ -1545,7 +1545,7 @@
 <script src="../ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>
-    <script src="/mobile-nav.js" defer></script>
+    <script src="../mobile-nav.js" defer></script>
 </body>
 
 </html>

@@ -114,13 +114,13 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.7;
-            font-size: 18px;
+            /* font-size removed for fluid typography */
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 2rem;
+            /* padding removed for fluid typography */
             padding-top: 100px;
         }
 
@@ -422,7 +422,7 @@
             document.head.appendChild(fullres);
         });
     </script>
-    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="../mobile-nav.css">
 </head>
 
 <body>
@@ -750,21 +750,21 @@
         
 <div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">
     <h2>Frequently Asked Questions (FAQ)</h2>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is a zero-day vulnerability?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">What is a zero-day vulnerability?</h3>
     <p style="margin-bottom: 1.5rem;">A zero-day is a software vulnerability that is discovered by attackers before the software vendor is aware of it. Because there is 'zero days' of warning, no patch currently exists.</p>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How can you detect a zero-day if there is no signature?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">How can you detect a zero-day if there is no signature?</h3>
     <p style="margin-bottom: 1.5rem;">Detection relies on behavioral analysis. Instead of looking for a known bad file, EDR tools look for suspicious actions—like a word processor attempting to spawn a command shell and alter registry keys.</p>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is the best defense against zero-day exploits?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">What is the best defense against zero-day exploits?</h3>
     <p style="margin-bottom: 1.5rem;">A defense-in-depth approach is required: strict least-privilege access, application whitelisting, behavioral EDR, network segmentation, and rapid incident response procedures.</p>
 </div>
 \n
 <div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">
     <h2>Frequently Asked Questions (FAQ)</h2>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is a zero-day vulnerability?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">What is a zero-day vulnerability?</h3>
     <p style="margin-bottom: 1.5rem;">A zero-day is a software vulnerability that is discovered by attackers before the software vendor is aware of it. Because there is 'zero days' of warning, no patch currently exists.</p>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How can you detect a zero-day if there is no signature?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">How can you detect a zero-day if there is no signature?</h3>
     <p style="margin-bottom: 1.5rem;">Detection relies on behavioral analysis. Instead of looking for a known bad file, EDR tools look for suspicious actions—like a word processor attempting to spawn a command shell and alter registry keys.</p>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is the best defense against zero-day exploits?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">What is the best defense against zero-day exploits?</h3>
     <p style="margin-bottom: 1.5rem;">A defense-in-depth approach is required: strict least-privilege access, application whitelisting, behavioral EDR, network segmentation, and rapid incident response procedures.</p>
 </div>
 \n</article>
@@ -809,7 +809,7 @@
 <script src="../ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>
-    <script src="/mobile-nav.js" defer></script>
+    <script src="../mobile-nav.js" defer></script>
 </body>
 
 </html>

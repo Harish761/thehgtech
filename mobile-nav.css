@@ -177,7 +177,7 @@ html, body {
 @media(max-width: 768px) {
 
     /* ---- Hide desktop-only homepage sections ---- */
-    .hero, .trust-section, .solutions-section, .featured-section, .cveSection { display: none !important; }
+    .hero, .trust-section, .solutions-section, .cveSection { display: none !important; }
 
     /* ---- Restore the main container so mobile sections are visible ---- */
     main#main-content {

@@ -65,13 +65,13 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.7;
-            font-size: 18px;
+            /* font-size removed for fluid typography */
         }
 
         .container {
             max-width: 900px;
             margin: 80px auto 0;
-            padding: 2rem;
+            /* padding removed for fluid typography */
         }
 
         .guide-header {
@@ -133,7 +133,7 @@
 
         .content h3 {
             color: var(--text-primary);
-            font-size: 1.3rem;
+            /* font-size removed for fluid typography */
             margin: 1.5rem 0 1rem;
         }
 
@@ -339,7 +339,7 @@
             document.head.appendChild(fullres);
         });
     </script>
-    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="../mobile-nav.css">
 </head>
 
 <body>
@@ -944,7 +944,7 @@
     </div>
 
     <!-- Related Resources -->
-    <div style="margin: 2rem 0 3rem; padding: 2rem; background: var(--glass, rgba(255,255,255,0.03)); border: 1px solid var(--border, rgba(255,255,255,0.1)); border-radius: 12px;">
+    <div style="margin: 2rem 0 3rem; /* padding removed for fluid typography */ background: var(--glass, rgba(255,255,255,0.03)); border: 1px solid var(--border, rgba(255,255,255,0.1)); border-radius: 12px;">
         <h3 style="margin: 0 0 1rem 0; color: var(--accent-cyan, #00D9FF); font-size: 1.1rem;"><i class="fas fa-compass"></i> Related Resources</h3>
         <ul style="list-style: none; padding: 0; margin: 0;">
             <li style="margin-bottom: 0.75rem;"><a href="/guides/iso-27001-certification-roadmap.html" style="color: var(--text-secondary, #a0a0a0); text-decoration: none;"><i class="fas fa-route" style="color: #FFD700;"></i> ISO 27001 Certification Roadmap — 12-month implementation timeline</a></li>
@@ -976,7 +976,7 @@
 <script src="../ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>
-    <script src="/mobile-nav.js" defer></script>
+    <script src="../mobile-nav.js" defer></script>
 </body>
 
 </html>

@@ -488,3 +488,65 @@
         color: var(--m-text-secondary);
     }
 }
+
+/* ================================================
+   ZEN READER MODE
+   ================================================ */
+body.zen-mode {
+    background: #fdf6e3 !important; /* Sepia light mode */
+    color: #333 !important;
+}
+
+/* For dark themes or system dark */
+[data-theme="dark"] body.zen-mode,
+body.zen-mode.dark-mode {
+    background: #111111 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Zen typography */
+body.zen-mode .article-content p,
+body.zen-mode .article-content li {
+    font-family: "Georgia", "Merriweather", serif !important;
+    line-height: 1.8 !important;
+    font-size: clamp(1.1rem, 2.5vw + 0.8rem, 1.25rem) !important;
+    color: inherit !important;
+    max-width: 65ch; /* Optimal reading width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.zen-mode .article-content h2,
+body.zen-mode .article-content h3 {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hide Distractions */
+body.zen-mode header,
+body.zen-mode .m-header,
+body.zen-mode footer,
+body.zen-mode .author-box,
+body.zen-mode .back-link,
+body.zen-mode .article-footer,
+body.zen-mode .featured-image,
+body.zen-mode .article-image,
+body.zen-mode .mermaid {
+    display: none !important;
+}
+
+/* Fix container padding since header is hidden */
+body.zen-mode .article-container {
+    margin-top: 0 !important;
+    padding-top: 4rem !important;
+}
+
+/* Zen Mode button styling */
+.zen-btn {
+    transition: all 0.3s ease;
+}
+body.zen-mode .zen-btn {
+    background: rgba(255, 61, 61, 0.15) !important;
+    color: #FF3D3D !important;
+}

@@ -116,13 +116,13 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.7;
-            font-size: 18px;
+            /* font-size removed for fluid typography */
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 2rem;
+            /* padding removed for fluid typography */
             padding-top: 100px;
         }
 
@@ -435,7 +435,7 @@
             document.head.appendChild(fullres);
         });
     </script>
-    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="../mobile-nav.css">
 </head>
 
 <body>
@@ -1053,21 +1053,21 @@ Conditions:
         
 <div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">
     <h2>Frequently Asked Questions (FAQ)</h2>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is Zero Trust Network Segmentation?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">What is Zero Trust Network Segmentation?</h3>
     <p style="margin-bottom: 1.5rem;">It is a security architecture principle that divides a network into isolated zones and micro-segments, ensuring users and devices only access the specific resources they need, assuming the network is always hostile.</p>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is the difference between traditional VLANs and micro-segmentation?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">What is the difference between traditional VLANs and micro-segmentation?</h3>
     <p style="margin-bottom: 1.5rem;">VLANs provide broad zone-based security but allow unrestricted lateral movement within the zone. Micro-segmentation applies granular, software-defined security policies down to the individual workload or application level.</p>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How do you map data flows for segmentation?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">How do you map data flows for segmentation?</h3>
     <p style="margin-bottom: 1.5rem;">You must use network flow analysis tools (like NetFlow) and application dependency mapping to observe real-world traffic, understanding exactly how users and apps communicate before enforcing restrictive policies.</p>
 </div>
 \n
 <div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">
     <h2>Frequently Asked Questions (FAQ)</h2>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is Zero Trust Network Segmentation?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">What is Zero Trust Network Segmentation?</h3>
     <p style="margin-bottom: 1.5rem;">It is a security architecture principle that divides a network into isolated zones and micro-segments, ensuring users and devices only access the specific resources they need, assuming the network is always hostile.</p>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is the difference between traditional VLANs and micro-segmentation?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">What is the difference between traditional VLANs and micro-segmentation?</h3>
     <p style="margin-bottom: 1.5rem;">VLANs provide broad zone-based security but allow unrestricted lateral movement within the zone. Micro-segmentation applies granular, software-defined security policies down to the individual workload or application level.</p>
-    <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How do you map data flows for segmentation?</h3>
+    <h3 style="/* font-size removed for fluid typography */ margin-top: 1.5rem; color: var(--accent-cyan);">How do you map data flows for segmentation?</h3>
     <p style="margin-bottom: 1.5rem;">You must use network flow analysis tools (like NetFlow) and application dependency mapping to observe real-world traffic, understanding exactly how users and apps communicate before enforcing restrictive policies.</p>
 </div>
 \n</article>
@@ -1131,7 +1131,7 @@ Conditions:
     </div>
 
     <script src="/command-palette.js" defer></script>
-    <script src="/mobile-nav.js" defer></script>
+    <script src="../mobile-nav.js" defer></script>
 </body>
 
 </html>

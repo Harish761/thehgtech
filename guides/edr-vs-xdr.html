@@ -107,13 +107,13 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.7;
-            font-size: 18px;
+            /* font-size removed for fluid typography */
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 2rem;
+            /* padding removed for fluid typography */
         }
 
         /* Page Header */
@@ -195,7 +195,7 @@
         }
 
         .content h4 {
-            font-size: 1.15rem;
+            /* font-size removed for fluid typography */
             font-weight: 600;
             margin: 1.5rem 0 0.75rem 0;
             color: var(--accent-blue);
@@ -402,7 +402,7 @@
             background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(139, 92, 246, 0.1));
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 2rem;
+            /* padding removed for fluid typography */
             margin: 2rem 0;
         }
 
@@ -678,7 +678,7 @@
             document.head.appendChild(fullres);
         });
     </script>
-    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="../mobile-nav.css">
 </head>
 
 <body>
@@ -1568,7 +1568,7 @@
 
             <!-- Related Tool Comparison -->
             <div
-                style="margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(0, 217, 255, 0.1)); border: 2px solid var(--accent-blue); border-radius: 12px;">
+                style="margin-top: 3rem; /* padding removed for fluid typography */ background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(0, 217, 255, 0.1)); border: 2px solid var(--accent-blue); border-radius: 12px;">
                 <h3
                     style="margin: 0 0 1rem 0; color: var(--text-primary); display: flex; align-items: center; gap: 0.75rem;">
                     <i class="fas fa-balance-scale" style="color: var(--accent-blue);"></i> Compare Specific EDR/XDR
@@ -1630,7 +1630,7 @@
 <script src="../ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>
-    <script src="/mobile-nav.js" defer></script>
+    <script src="../mobile-nav.js" defer></script>
 </body>
 
 </html>
