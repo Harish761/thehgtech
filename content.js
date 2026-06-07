@@ -58,84 +58,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 04 2026",
-            "headline": "Hola Browser Compromised—Cryptominer Delivered in Supply Chain Attack",
-            "title": "Supply Chain Attack on Hola Browser for Windows Deploys Cryptominer",
-            "content": "The Windows version of the Hola Browser has been compromised in a sophisticated supply chain attack, delivering an unauthorized executable identified as a cryptocurrency miner. Researchers discovered the breach, which affects all users of the Windows version of the browser. The miner exploits system resources to mine cryptocurrency without user consent, potentially leading to degraded system performance and increased electricity costs. This incident underscores the growing trend of supply chain attacks targeting popular software to distribute malicious payloads. Users are advised to uninstall the affected version and monitor for updates from Hola.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hola-browser-for-windows-compromised-to-deliver-cryptominer/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "DentaQuest Breach Exposes 2.6M Accounts—Sensitive Data at Risk",
-            "title": "DentaQuest Data Breach Compromises Personal Information of 2.6 Million Accounts",
-            "content": "DentaQuest, a dental benefits administrator, has suffered a data breach exposing sensitive information from 2.6 million accounts. The breach involves personal data, including names, addresses, and potentially financial information, posing significant identity theft risks. This incident highlights vulnerabilities in healthcare data management systems, which are increasingly targeted by cybercriminals. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity theft protection services. DentaQuest is working with cybersecurity experts to investigate the breach and enhance their security measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/dentaquest-data-breach-exposed-info-of-26-million-accounts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Cisco Patches CVE-2026-20230—Exploit Code Now Public",
-            "title": "Cisco Fixes Critical Vulnerability in Unified Communications Manager",
-            "content": "Cisco has issued a patch for a critical vulnerability in its Unified Communications Manager, tracked as CVE-2026-20230. This flaw allows unauthenticated attackers to write files to the system and potentially escalate privileges to root access. The release of proof-of-concept exploit code increases the urgency for organizations to apply the patch. Although Cisco's Product Security Incident Response Team (PSIRT) has not observed active exploitation, the availability of exploit code poses a significant risk. Administrators should prioritize updating their systems to mitigate potential attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisco-patches-cve-2026-20230-in-unified.html",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 05 2026",
             "headline": "NIST Criticized for NVD Backlog—Security Experts Weigh In",
             "title": "US Government Report Criticizes NIST for National Vulnerability Database Delays",
             "content": "A US Commerce Department report has criticized the National Institute of Standards and Technology (NIST) for delays in processing vulnerabilities for the National Vulnerability Database (NVD). The backlog has raised concerns among cybersecurity professionals, although some argue it reflects the increasing volume and complexity of discovered vulnerabilities. The report calls for improved processes to ensure timely updates, which are crucial for organizations relying on the NVD for vulnerability management. NIST is expected to address these issues to maintain its role as a trusted resource for security professionals.",
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4181438/us-government-report-slams-nist-for-nvd-backlog.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Gartner Warns of 4 Critical Threats—Deepfakes Among Top Concerns",
-            "title": "Gartner Identifies Critical Emerging Threats Including Deepfakes and Prompt Injections",
-            "content": "Gartner analysts have highlighted four critical threats where attackers currently have the upper hand, including deepfakes and prompt injections. These emerging threats pose significant challenges for cybersecurity defenses due to their sophistication and potential for widespread impact. Deepfakes can be used for disinformation campaigns, while prompt injections can manipulate AI systems into unintended actions. Organizations are urged to bolster their defenses by investing in advanced threat detection and response capabilities. Staying informed about these evolving threats is crucial for maintaining robust security postures.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/4-critical-threats-attackers-advantage",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Hugging Face RCE Flaw—AI Models at Risk",
-            "title": "Critical RCE Vulnerability in Hugging Face Transformers Library",
-            "content": "A critical remote code execution (RCE) vulnerability has been discovered in the Hugging Face Transformers library, a widely used Python tool for AI model deployment. The flaw affects multiple versions of the library, which remain popular among developers and researchers. This vulnerability allows attackers to stealthily compromise systems by exploiting AI model configurations, posing a significant threat to organizations relying on these models for critical operations. As AI systems become increasingly targeted by cybercriminals, this discovery underscores the urgent need for robust security measures in AI development environments. Users are advised to update to the latest patched versions immediately to mitigate potential risks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4181094/hugging-face-transformers-rce-flaw-enables-stealthy-compromise-via-ai-model-configs.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Cisco Unified CM Flaw—Patch for Root Access Vulnerability",
-            "title": "Cisco Patches Critical Unified Communications Manager Vulnerability",
-            "content": "Cisco has issued a security update to address a critical vulnerability in its Unified Communications Manager (Unified CM) that could allow attackers to gain root privileges. The flaw, which has been assigned a critical severity rating, is particularly concerning due to the availability of proof-of-concept (PoC) exploit code. This vulnerability affects systems used for managing voice, video, and messaging services, potentially impacting a wide range of enterprise environments. With cyber threats on the rise, organizations using Unified CM should apply the security patch immediately to protect their infrastructure from potential exploitation.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-unified-cm-flaw-with-poc-exploit-code/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "1.4M Accounts Disrupted—Cybercrime Crackdown in Southeast Asia",
-            "title": "Major Cybercrime Infrastructure Disrupted Across Southeast Asia",
-            "content": "In a coordinated effort, law enforcement agencies and tech companies have dismantled cybercrime infrastructure responsible for disrupting over 1.4 million accounts across Southeast Asia. This operation targeted scammers exploiting digital platforms to conduct fraudulent activities, significantly impacting both individuals and businesses in the region. The crackdown highlights the ongoing battle against cybercrime networks that leverage sophisticated techniques to evade detection. Affected users are encouraged to review their account security and remain vigilant against potential phishing attempts. This development marks a significant step forward in international cybercrime prevention efforts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-1-4-million-accounts-disrupted-in-cybercrime-crackdown/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Fake Open-Source Sites—Malware Delivered via TDS",
-            "title": "Malware Campaign Uses Fake Open-Source Sites to Spread Threats",
-            "content": "Cybersecurity researchers have uncovered a large-scale operation that uses fake websites mimicking popular open-source tools to distribute malware. These sites employ a Traffic Distribution System (TDS) to redirect unsuspecting users and deliver malware families such as Remus Stealer, AnimateClipper, and SessionGate. The operation exploits the trust users place in open-source and freeware projects, posing a significant risk to developers and IT professionals. As these malicious sites rank high in search engine results, users are advised to verify the authenticity of download sources and employ robust security measures to protect their systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/fake-sites-mimicking-open-source-tools.html",
             "relatedResources": []
         }
     ],
@@ -183,87 +111,6 @@ const websiteContent = {
             "content": "Meta has launched a new AI-powered assistant designed to help Facebook creators optimize their content strategies. This tool provides creators with insights into optimal posting times and audience engagement by analyzing performance metrics. By simplifying data interpretation, the assistant aims to enhance content visibility and interaction on the platform. This development is part of Meta's broader strategy to empower creators with advanced tools that streamline content management and improve user engagement. Creators are encouraged to leverage this assistant to refine their social media strategies and maximize audience reach.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/04/meta-rolls-out-a-new-ai-creator-assistant-on-facebook/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Anthropic's Revenue Soars to $47B—IPO Faces Skepticism",
-            "title": "Anthropic's $47 Billion Revenue Surge Precedes IPO Amid AI Return Doubts",
-            "content": "Anthropic has reported a dramatic increase in annualized revenue, reaching $47 billion as of May 2026, a significant leap from $9 billion at the end of 2025. This rapid growth precedes the company's anticipated initial public offering (IPO), which is under scrutiny by investors questioning the sustainability of returns in the AI sector. Despite the impressive financial trajectory, the AI industry faces challenges in proving long-term profitability, especially as competition intensifies. Stakeholders are closely watching Anthropic's ability to maintain its growth momentum and deliver on its technological promises. The company's performance in the public market will serve as a barometer for broader AI investment confidence.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "StrictlyVC Event to Highlight AI and Defense Tech Trends",
-            "title": "StrictlyVC Los Angeles Event to Focus on AI, Defense Tech, and VC Shifts",
-            "content": "On June 18, The Aerospace Corporation Campus in Los Angeles will host a pivotal event organized by StrictlyVC, bringing together investors, founders, and tech leaders. The gathering aims to explore significant shifts in venture capital, defense technology, and artificial intelligence. The discussions will address how these sectors are evolving and intersecting, particularly in light of recent advancements and geopolitical considerations. Attendees will gain insights into emerging trends and strategies for navigating the rapidly changing tech landscape. This event underscores the growing importance of cross-industry collaboration in driving innovation and addressing complex global challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/04/defense-tech-ai-and-fundraising-take-center-stage-at-strictlyvc-los-angeles-on-june-18/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Musk Challenges FTC Over X Data Privacy Audits",
-            "title": "Elon Musk Seeks to End FTC Audits on X's Data Handling Practices",
-            "content": "Elon Musk is once again attempting to halt the Federal Trade Commission's (FTC) audits concerning the data handling practices of X, the social media platform formerly known as Twitter. Public commenters have expressed concerns about Musk's ability to safeguard user privacy, prompting the FTC's continued scrutiny. The audits aim to ensure compliance with privacy standards and protect user data from potential misuse. This ongoing battle highlights the tension between tech giants and regulatory bodies over data privacy issues. Professionals in the field should monitor the outcome as it could set precedents for data governance and corporate accountability.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/elon-musk-tries-again-to-escape-ftc-audits-of-x-data-handling/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Meta's Tent Data Centers Aim to Cut Costs",
-            "title": "Meta Adopts Tent-Based Data Centers to Reduce Infrastructure Expenses",
-            "content": "Meta has introduced an innovative approach to managing its data center costs by constructing facilities in tents. This strategy, inspired by Tesla's similar tactics, aims to significantly reduce the expenses associated with traditional data center infrastructure. By utilizing tents, Meta seeks to maintain flexibility and scalability while addressing the financial pressures of operating massive data centers. This move reflects a broader trend among tech companies to explore unconventional solutions for infrastructure challenges. Industry professionals should consider the potential implications for data center design and operational efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/04/meta-steals-a-tactic-from-tesla-and-builds-data-centers-in-tents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Apple Approves First AI Agent for Business Messaging",
-            "title": "Apple Endorses Poke as First AI Agent on Messages for Business",
-            "content": "Apple has approved Poke, a startup offering AI agents via text messages, as the first AI agent on its Messages for Business platform. This approval marks a significant milestone for AI integration into business communication tools, enhancing customer interaction capabilities. Poke's AI agents are designed to streamline customer service processes, providing businesses with efficient and responsive communication solutions. This development highlights Apple's commitment to expanding its ecosystem with AI-driven innovations. Businesses using Apple's platform should explore integrating AI agents to improve customer engagement and operational efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Nemotron 3.5 Enhances AI Safety for Enterprises",
-            "title": "Nemotron 3.5 Introduces Customizable Multimodal Safety for Enterprise AI",
-            "content": "Hugging Face has unveiled Nemotron 3.5, a customizable multimodal safety solution designed for global enterprises utilizing AI technologies. This latest version offers enhanced safety features, allowing businesses to tailor content moderation and safety protocols to their specific needs. Nemotron 3.5 addresses the growing demand for robust AI safety measures, ensuring compliance with international regulations and protecting against harmful content. Enterprises adopting AI solutions should consider integrating such safety mechanisms to mitigate risks and enhance user trust. This release underscores the importance of adaptable safety frameworks in the evolving AI landscape.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Amazon's Proteus Robot Speaks—Revolutionizing Warehouse Automation",
-            "title": "Amazon Unveils Language-Interacting Proteus Robot for Warehouse Operations",
-            "content": "Amazon has introduced a new iteration of its autonomous warehouse robot, Proteus, which now features the ability to interact with workers using natural language. This development marks a significant shift from traditional code-based interactions, enhancing operational efficiency and worker-robot collaboration. The AI-powered Proteus is part of Amazon's broader strategy to increase automation within its logistics network, potentially reducing reliance on human labor. The integration of language processing capabilities aims to streamline warehouse tasks, improving response times and accuracy. Industry professionals should monitor this trend as it could redefine workforce dynamics in logistics and supply chain management.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/942884/amazon-next-generation-warehouse-robot-proteus",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "Hello Robot's Stretch 4.0—Home Assistance Revolutionized",
-            "title": "Hello Robot Launches Fourth-Gen Stretch for Home Assistance",
-            "content": "California-based startup Hello Robot has launched the fourth generation of its home assistance robot, Stretch. This latest version is designed to enhance domestic tasks, offering improved mobility and interaction capabilities. Stretch 4.0 aims to cater to households seeking robotic assistance for daily chores, potentially transforming home automation. As the demand for in-home robotics grows, Hello Robot positions itself at the forefront of this burgeoning market. Tech leaders and developers should consider the implications of such advancements on smart home ecosystems and user experience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 04 2026",
-            "headline": "TSMC Faces AI Demand Surge—Capacity Limits Strain Supply",
-            "title": "TSMC Struggles to Meet Surging AI Chip Demand Amid US Expansion",
-            "content": "Taiwan Semiconductor Manufacturing Co. (TSMC), the world's leading semiconductor manufacturer, is facing challenges in meeting the soaring demand for AI chips from its American clients. Despite ongoing expansion efforts, including new facilities in the US, TSMC's capacity is stretched thin. CEO reports indicate that the demand from tech giants exceeds current production capabilities, potentially impacting AI-driven innovations and deployments. This bottleneck underscores the critical role of semiconductor supply in the AI industry, urging stakeholders to strategize on supply chain resilience.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles",
             "relatedResources": []
         }
     ],
