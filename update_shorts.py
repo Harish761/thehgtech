@@ -764,7 +764,7 @@ Entities: {article['source']}, security-intel, dry-run
     genai.configure(api_key=api_key)
     # Use gemini-1.5-flash-latest which has a 15 RPM free tier limit
     model = genai.GenerativeModel(
-        'gemini-pro',
+        'gemini-flash-latest',
         system_instruction="You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders.",
         generation_config=genai.types.GenerationConfig(
             temperature=0.3,
