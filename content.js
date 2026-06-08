@@ -4,6 +4,42 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 07 2026",
+            "headline": "Microsoft Forks Windows Terminal—Isolated AI Built Directly Into Console",
+            "title": "Microsoft Releases Open-Source Intelligent Terminal Fork with Native AI Integration",
+            "content": "Microsoft has released an open-source fork of Windows Terminal named Intelligent Terminal, introducing native artificial intelligence capabilities directly into the command-line interface. The tool allows developers and system administrators to interact with an AI assistant without disrupting their active terminal sessions. By running the AI in an isolated side-panel or background process, the terminal prevents AI-generated commands from executing automatically or interfering with standard workflows. This release reflects a growing industry trend of embedding large language models into developer tools to accelerate troubleshooting and command generation. Users can download the open-source repository from GitHub to test the experimental features and integrate their own API keys.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/hands-on-with-intelligent-terminal-an-ai-powered-windows-terminal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 06 2026",
+            "headline": "AI Agent Finds 21 FFmpeg Zero-Days—Chrome Patches Record 429 Bugs",
+            "title": "Autonomous AI Agent Discovers 21 FFmpeg Vulnerabilities as Chrome Patches 429 Bugs",
+            "content": "An autonomous artificial intelligence agent has discovered 21 previously unknown zero-day vulnerabilities within the FFmpeg multimedia framework. FFmpeg is a widely used open-source library integrated into numerous video processing applications, web browsers, and media players, making the potential impact of these flaws highly widespread. Concurrently, Google has released Chrome version 149, which addresses a record-breaking 429 security bugs, highlighting the escalating scale of vulnerability detection. The dual milestones demonstrate how automated tools and AI are rapidly accelerating both the discovery and remediation of software vulnerabilities. Security teams should immediately inventory their environments for FFmpeg dependencies and update Google Chrome installations to version 149 to mitigate potential exploitation risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 06 2026",
+            "headline": "Miasma Worm Infects 73 Microsoft GitHub Repositories—Supply Chain Alert",
+            "title": "Self-Replicating Miasma Worm Compromises 73 Microsoft GitHub Repositories",
+            "content": "A self-replicating supply chain attack known as the Miasma worm has compromised 73 official Microsoft GitHub repositories. The security incident affected repositories across four distinct Microsoft GitHub organizations, including Azure, Azure-Samples, Microsoft, and MicrosoftDocs. Attackers utilized automated scripts to inject malicious code into these repositories, aiming to compromise downstream developers and systems that trust Microsoft's open-source code. This campaign highlights the persistent threat of automated supply chain attacks targeting trusted developer ecosystems to maximize distribution. Organizations utilizing code from these specific Microsoft repositories should immediately audit their codebases, verify commit signatures, and monitor for unauthorized changes.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 06 2026",
+            "headline": "Zero-Day Alert: Cisco SD-WAN Flaw CVE-2026-20245 Under Active Attack",
+            "title": "Unpatched Cisco Catalyst SD-WAN Manager Vulnerability Actively Exploited in the Wild",
+            "content": "Cisco has warned customers that a high-severity security vulnerability in its Catalyst SD-WAN Manager is being actively exploited in the wild. Tracked as CVE-2026-20245, the flaw carries a Common Vulnerability Scoring System score of 7.8 out of 10.0. The vulnerability affects both on-premises deployments and Cisco SD-WAN Cloud instances, potentially allowing unauthorized access or administrative privilege escalation. Because Cisco has not yet released a patch to resolve this security flaw, affected organizations face immediate exposure to external threat actors. Network administrators must implement Cisco's recommended temporary workarounds, restrict access to management interfaces, and closely monitor system logs for indicators of compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-manager-cve-2026.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 06 2026",
             "headline": "Everest Forms Pro Flaw Exploited—WordPress Sites Face Complete Takeover",
             "title": "Critical CVE-2026-3300 Vulnerability in Everest Forms Pro Actively Exploited",
@@ -28,69 +64,6 @@ const websiteContent = {
             "content": "The Cybersecurity and Infrastructure Security Agency, known as CISA, has added a high-severity security flaw affecting SolarWinds Serv-U multi-protocol file transfer software to its Known Exploited Vulnerabilities catalog. Tracked as CVE-2026-2024, the vulnerability is a denial-of-service flaw that allows remote attackers to crash the file server and disrupt operations. Federal agencies and enterprise organizations utilizing Serv-U are urged to apply the vendor-provided patches immediately to prevent potential service disruptions. CISA added the flaw to its catalog following confirmed evidence of active exploitation by malicious actors in the wild. Under Binding Operational Directive 22-01, federal civilian executive branch agencies must remediate this vulnerability by the specified deadline to secure their networks.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "900+ US Gas Station Systems Vulnerable—Immediate Action Needed",
-            "title": "Over 900 US Gas Station Tank Gauge Systems Exposed to Attacks",
-            "content": "Over 900 automatic tank gauge (ATG) systems, critical for monitoring fuel and chemical storage tanks in the United States, have been found exposed online, making them vulnerable to cyberattacks. These systems, integral to various critical infrastructure sectors, are susceptible to unauthorized access and manipulation, potentially leading to severe operational disruptions. The exposure highlights a significant oversight in securing industrial control systems, which are increasingly targeted by cybercriminals. Operators of affected systems should immediately assess their network configurations and implement robust security measures to mitigate potential risks. This incident underscores the urgent need for enhanced cybersecurity protocols in critical infrastructure.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-900-us-gas-station-tank-gauge-systems-exposed-to-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "AI Threats Mapped—Anthropic Leads the Charge",
-            "title": "Anthropic Maps AI Threats Amidst Unpatched Comodo Flaw and CISA Leadership Speculation",
-            "content": "Anthropic has released a comprehensive mapping of AI-related threats, providing valuable insights into potential vulnerabilities and attack vectors in artificial intelligence systems. Meanwhile, a critical flaw in Comodo software remains unpatched, posing a risk to users who rely on its security solutions. Additionally, Palantir's chief is being considered for a leadership role at the Cybersecurity and Infrastructure Security Agency (CISA), indicating potential shifts in cybersecurity leadership. These developments highlight the dynamic nature of the cybersecurity landscape, where AI and leadership changes play pivotal roles. Security professionals should stay informed of these evolving threats and leadership dynamics to better safeguard their systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-anthropic-maps-ai-threats-unpatched-comodo-flaw-palantir-chief-eyed-for-cisa/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "Chrome 149 Fixes 429 Bugs—Critical Update Alert",
-            "title": "Chrome 149 Patches 429 Vulnerabilities, Including Critical Use-After-Free Flaws",
-            "content": "Google has released Chrome version 149, addressing 429 vulnerabilities, with over 100 classified as critical or high-severity. The majority of these issues involve use-after-free and insufficient validation of untrusted input flaws, which could allow attackers to execute arbitrary code. This extensive patch underscores the ongoing challenges in maintaining browser security and the importance of timely updates. Users are urged to update to the latest version immediately to protect against potential exploits. This release highlights the critical need for continuous vigilance and prompt patch management in software security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-149-patches-429-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "WordPress Plugin Flaw—4,000 Sites at Risk",
-            "title": "Hackers Exploit Critical Everest Forms Pro WordPress Plugin Flaw to Take Over Sites",
-            "content": "A critical security flaw in the Everest Forms Pro WordPress plugin, identified as CVE-2026-3300, is being actively exploited by threat actors to execute arbitrary code and compromise websites. With a CVSS score of 9.8, this vulnerability affects approximately 4,000 active installations, posing a significant risk of complete site takeover. The exploitation of this flaw highlights the persistent threats facing WordPress plugins, often targeted due to their widespread use and potential for high-impact breaches. Site administrators using Everest Forms Pro should urgently apply available patches and review their security measures to prevent unauthorized access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "RCI Data Breach—40,000 Individuals Exposed",
-            "title": "Nightclub Giant RCI Says Data Breach Affects 40,000 Individuals",
-            "content": "RCI Hospitality Holdings, a major player in the nightclub industry, has disclosed a data breach affecting 40,000 individuals following a network intrusion detected in March. The investigation revealed that attackers accessed and stole sensitive files, potentially compromising personal and financial information. This breach underscores the vulnerability of entertainment sector businesses to cyberattacks and the critical need for robust data protection strategies. Affected individuals should monitor their accounts for suspicious activity and consider identity theft protection services. RCI is working to enhance its security posture to prevent future incidents.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/nightclub-giant-rci-says-data-breach-affects-40000-individuals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "Cisco SD-WAN Zero-Day—Root Escalation Exploited",
-            "title": "Cisco Warns of Unpatched SD-WAN Zero-Day Exploited in Attacks",
-            "content": "Cisco has issued a warning regarding a high-severity, unpatched zero-day vulnerability in its Catalyst SD-WAN Manager, tracked as CVE-2026-20245. This flaw is actively exploited in attacks that enable root privilege escalation, posing a significant threat to organizations using this technology. The vulnerability highlights the critical need for timely patching and proactive security measures in managing network infrastructure. Cisco is actively working on a patch, and users are advised to implement recommended mitigations and monitor for updates. This incident emphasizes the importance of vigilance and rapid response in cybersecurity defense strategies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-cisco-sd-wan-flaw-exploited-in-zero-day-attacks-to-gain-root/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "NIST Criticized for NVD Backlog—Security Experts Weigh In",
-            "title": "US Government Report Criticizes NIST for National Vulnerability Database Delays",
-            "content": "A US Commerce Department report has criticized the National Institute of Standards and Technology (NIST) for delays in processing vulnerabilities for the National Vulnerability Database (NVD). The backlog has raised concerns among cybersecurity professionals, although some argue it reflects the increasing volume and complexity of discovered vulnerabilities. The report calls for improved processes to ensure timely updates, which are crucial for organizations relying on the NVD for vulnerability management. NIST is expected to address these issues to maintain its role as a trusted resource for security professionals.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4181438/us-government-report-slams-nist-for-nvd-backlog.html",
             "relatedResources": []
         }
     ],
@@ -138,33 +111,6 @@ const websiteContent = {
             "content": "Sriram Krishnan is leaving his position as a key White House AI advisor to establish a new external institution focused on shaping national AI policy. During his tenure, Krishnan played a central role in advising the Trump administration on regulatory frameworks, national security implications, and technological competitiveness. The newly planned institution aims to provide independent research and policy recommendations to maintain U.S. leadership in artificial intelligence. Tech executives and policy analysts should monitor this transition, as the new organization is expected to heavily influence future federal AI directives and funding priorities. This move signals a shifting landscape in Washington as private sector experts transition into influential external advocacy and advisory roles.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "AI Industry Faces Cost Crisis—Guardrails Needed",
-            "title": "AI Industry Scrambles to Manage Escalating Operational Costs",
-            "content": "The AI industry is grappling with soaring operational costs, prompting a shift from rapid expansion to implementing cost-control measures. This change in strategy reflects a growing recognition of the need for financial sustainability and operational efficiency. Industry leaders are now prioritizing the establishment of guardrails to manage expenses effectively while maintaining innovation momentum. The focus is on optimizing resource allocation and enhancing cost transparency to ensure long-term viability. Organizations are urged to reassess their AI deployment strategies, balancing growth ambitions with financial prudence.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "AirTrunk Invests $30B in Indian AI Data Centers",
-            "title": "AirTrunk Commits $30 Billion to 5GW AI Data Centers in India",
-            "content": "Australian data center operator AirTrunk has announced a $30 billion investment to establish 5 gigawatts (GW) of AI data center capacity in India. This ambitious project aims to support the growing demand for AI infrastructure in the region, positioning India as a key player in the global AI landscape. The new data centers will enhance computational capabilities, catering to industries such as finance, healthcare, and technology. This investment underscores AirTrunk's strategic focus on expanding its footprint in Asia-Pacific, capitalizing on the region's rapid digital transformation. Industry stakeholders should monitor this development for potential collaboration opportunities.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/05/airtrunk-commits-30b-to-build-5gw-of-ai-data-centers-in-india/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 05 2026",
-            "headline": "Mira Murati Reemerges—Strategic Market Engagement",
-            "title": "Mira Murati Reengages with Market Amid Changing AI Landscape",
-            "content": "Mira Murati, a prominent figure in the AI sector, is strategically reengaging with the market after a period of low visibility. In the current competitive environment, maintaining a proactive presence is crucial for influencing industry trends and stakeholder perceptions. Murati's return highlights the importance of balancing focused work with market engagement to sustain relevance and drive innovation. Her approach serves as a reminder for AI leaders to periodically reassess their public engagement strategies to align with evolving market dynamics. Professionals should consider the implications of visibility on market influence and innovation leadership.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/04/mira-murati-steps-back-into-the-spotlight-carefully/",
             "relatedResources": []
         }
     ],
@@ -292,17 +238,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48595",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2024-21182",
-            "dateAdded": "Jun 01, 2026",
-            "vendor": "Oracle WebLogic Server",
-            "description": "Oracle WebLogic contains an unspecified vulnerability that could allow an unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server. Successful attacks of this vul",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21182",
             "isZeroDay": false
         }
     ],
