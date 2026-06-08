@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-06-07T13:53:15.264686",
+  "last_updated": "2026-06-08T04:03:35.125818",
   "period": "Last 7 days",
-  "total_groups": 32,
+  "total_groups": 31,
   "total_victims": 230,
   "groups": [
     {
       "name": "Thegentlemen",
-      "count": 32,
+      "count": 31,
       "victims": [
         {
           "name": "Michigan Surgical Center",
@@ -88,8 +88,8 @@
       "daily_counts": [
         0,
         0,
+        31,
         0,
-        32,
         0,
         0,
         0
@@ -177,11 +177,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         4,
         8,
         6,
         12,
+        0,
         0,
         0
       ]
@@ -268,12 +268,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        4,
         1,
         3,
         6,
         2,
         2,
+        0,
         0
       ]
     },
@@ -358,100 +358,11 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         8,
         4,
         6,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Play",
-      "count": 14,
-      "victims": [
-        {
-          "name": "Pearson Ford",
-          "date": "2026-06-06T13:23:12.128367+00:00",
-          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=64thX5rrKSMtGp",
-          "discovered_date": "2026-06-06T13:23:12.128367+00:00"
-        },
-        {
-          "name": "Urschel Laboratories",
-          "date": "2026-06-04T21:57:41.325214+00:00",
-          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=2bzaKMUnM6atgz",
-          "discovered_date": "2026-06-04T21:57:41.325214+00:00"
-        },
-        {
-          "name": "Dallis Law Firm",
-          "date": "2026-06-04T21:57:17.229156+00:00",
-          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=3vtw1NyTphurhL",
-          "discovered_date": "2026-06-04T21:57:17.229156+00:00"
-        },
-        {
-          "name": "The Chapel",
-          "date": "2026-06-04T21:56:53.205225+00:00",
-          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=IDPKtSXEUdbGwL",
-          "discovered_date": "2026-06-04T21:56:53.205225+00:00"
-        },
-        {
-          "name": "Corley MFG",
-          "date": "2026-06-04T21:56:29.292992+00:00",
-          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=AFCxD2HjYFRkvr",
-          "discovered_date": "2026-06-04T21:56:29.292992+00:00"
-        },
-        {
-          "name": "Digitall Graphics",
-          "date": "2026-06-01T09:53:35.317885+00:00",
-          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=N9nxqXKEF9Bka",
-          "discovered_date": "2026-06-01T09:53:35.317885+00:00"
-        },
-        {
-          "name": "Hightower Communications",
-          "date": "2026-06-01T09:22:47.851446+00:00",
-          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=1EVaqVWGRN5cAC",
-          "discovered_date": "2026-06-01T09:22:47.851446+00:00"
-        },
-        {
-          "name": "Pearson Ford",
-          "date": "2026-06-06T13:23:12+00:00",
-          "url": "https://www.ransomware.live/id/UGVhcnNvbiBGb3JkQHBsYXk=",
-          "discovered_date": "2026-06-06T13:23:12+00:00"
-        },
-        {
-          "name": "Urschel Laboratories",
-          "date": "2026-06-04T21:57:41+00:00",
-          "url": "https://www.ransomware.live/id/VXJzY2hlbCBMYWJvcmF0b3JpZXNAcGxheQ==",
-          "discovered_date": "2026-06-04T21:57:41+00:00"
-        },
-        {
-          "name": "Dallis Law Firm",
-          "date": "2026-06-04T21:57:17+00:00",
-          "url": "https://www.ransomware.live/id/RGFsbGlzIExhdyBGaXJtQHBsYXk=",
-          "discovered_date": "2026-06-04T21:57:17+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Business Services",
-        "Manufacturing",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "CA",
-        "GB",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        4,
         0,
-        0,
-        8,
-        0,
-        2,
         0
       ]
     },
@@ -536,11 +447,100 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        12,
         1,
         0,
         0,
         0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Play",
+      "count": 12,
+      "victims": [
+        {
+          "name": "Pearson Ford",
+          "date": "2026-06-06T13:23:12.128367+00:00",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=64thX5rrKSMtGp",
+          "discovered_date": "2026-06-06T13:23:12.128367+00:00"
+        },
+        {
+          "name": "Urschel Laboratories",
+          "date": "2026-06-04T21:57:41.325214+00:00",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=2bzaKMUnM6atgz",
+          "discovered_date": "2026-06-04T21:57:41.325214+00:00"
+        },
+        {
+          "name": "Dallis Law Firm",
+          "date": "2026-06-04T21:57:17.229156+00:00",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=3vtw1NyTphurhL",
+          "discovered_date": "2026-06-04T21:57:17.229156+00:00"
+        },
+        {
+          "name": "The Chapel",
+          "date": "2026-06-04T21:56:53.205225+00:00",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=IDPKtSXEUdbGwL",
+          "discovered_date": "2026-06-04T21:56:53.205225+00:00"
+        },
+        {
+          "name": "Corley MFG",
+          "date": "2026-06-04T21:56:29.292992+00:00",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=AFCxD2HjYFRkvr",
+          "discovered_date": "2026-06-04T21:56:29.292992+00:00"
+        },
+        {
+          "name": "Pearson Ford",
+          "date": "2026-06-06T13:23:12+00:00",
+          "url": "https://www.ransomware.live/id/UGVhcnNvbiBGb3JkQHBsYXk=",
+          "discovered_date": "2026-06-06T13:23:12+00:00"
+        },
+        {
+          "name": "Urschel Laboratories",
+          "date": "2026-06-04T21:57:41+00:00",
+          "url": "https://www.ransomware.live/id/VXJzY2hlbCBMYWJvcmF0b3JpZXNAcGxheQ==",
+          "discovered_date": "2026-06-04T21:57:41+00:00"
+        },
+        {
+          "name": "Dallis Law Firm",
+          "date": "2026-06-04T21:57:17+00:00",
+          "url": "https://www.ransomware.live/id/RGFsbGlzIExhdyBGaXJtQHBsYXk=",
+          "discovered_date": "2026-06-04T21:57:17+00:00"
+        },
+        {
+          "name": "The Chapel",
+          "date": "2026-06-04T21:56:53+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIENoYXBlbEBwbGF5",
+          "discovered_date": "2026-06-04T21:56:53+00:00"
+        },
+        {
+          "name": "Corley MFG",
+          "date": "2026-06-04T21:56:29+00:00",
+          "url": "https://www.ransomware.live/id/Q29ybGV5IE1GR0BwbGF5",
+          "discovered_date": "2026-06-04T21:56:29+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Business Services",
+        "Manufacturing",
+        "Not Found",
+        "Transportation/Logistics"
+      ],
+      "countries": [
+        "CA",
+        "GB",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        8,
+        0,
+        2,
         0,
         0
       ]
@@ -624,12 +624,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         4,
         2,
         0,
         2,
         2,
+        0,
         0
       ]
     },
@@ -707,11 +707,11 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        3,
         0,
         4,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -784,12 +784,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         4,
         0,
         0,
         2,
         2,
+        0,
         0
       ]
     },
@@ -860,13 +860,74 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        2,
         0,
         2,
         0,
         4,
         0,
+        0,
         0
+      ]
+    },
+    {
+      "name": "Payload",
+      "count": 6,
+      "victims": [
+        {
+          "name": "Plaza Lama",
+          "date": "2026-06-08T01:28:39.452568+00:00",
+          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/ae4b423a-d339-450c-b3fe-dbfd6d46c601",
+          "discovered_date": "2026-06-08T01:28:39.452568+00:00"
+        },
+        {
+          "name": "Hansoll Textile in Vietnam",
+          "date": "2026-06-08T01:27:57.591658+00:00",
+          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/8103c710-bffc-458d-9b3a-9cb2fe9d8817",
+          "discovered_date": "2026-06-08T01:27:57.591658+00:00"
+        },
+        {
+          "name": "Villea Hotels in AttanaHotels",
+          "date": "2026-06-08T01:27:15.781561+00:00",
+          "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/4b9503f3-44bc-4c7a-bfac-68ca31acaa75",
+          "discovered_date": "2026-06-08T01:27:15.781561+00:00"
+        },
+        {
+          "name": "Plaza Lama",
+          "date": "2026-06-08T01:28:39+00:00",
+          "url": "https://www.ransomware.live/id/UGxhemEgTGFtYUBwYXlsb2Fk",
+          "discovered_date": "2026-06-08T01:28:39+00:00"
+        },
+        {
+          "name": "Hansoll Textile in Vietnam",
+          "date": "2026-06-08T01:27:57+00:00",
+          "url": "https://www.ransomware.live/id/SGFuc29sbCBUZXh0aWxlIGluIFZpZXRuYW1AcGF5bG9hZA==",
+          "discovered_date": "2026-06-08T01:27:57+00:00"
+        },
+        {
+          "name": "Villea Hotels in AttanaHotels",
+          "date": "2026-06-08T01:27:15+00:00",
+          "url": "https://www.ransomware.live/id/VmlsbGVhIEhvdGVscyBpbiBBdHRhbmFIb3RlbHNAcGF5bG9hZA==",
+          "discovered_date": "2026-06-08T01:27:15+00:00"
+        }
+      ],
+      "industries": [
+        "Hospitality and Tourism",
+        "Manufacturing"
+      ],
+      "countries": [
+        "N/A",
+        "VN"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
       ]
     },
     {
@@ -920,11 +981,11 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         2,
         0,
         0,
         4,
+        0,
         0,
         0
       ]
@@ -985,8 +1046,8 @@
         0,
         0,
         0,
-        0,
         6,
+        0,
         0,
         0
       ]
@@ -1045,11 +1106,11 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         4,
         0,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1091,10 +1152,10 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
         0,
         2,
+        0,
         0,
         0,
         0
@@ -1140,10 +1201,10 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
         0,
         2,
+        0,
         0,
         0,
         0
@@ -1188,9 +1249,9 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
+        2,
+        2,
         0,
-        2,
-        2,
         0,
         0,
         0,
@@ -1238,8 +1299,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         4,
+        0,
         0,
         0,
         0,
@@ -1286,9 +1347,9 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
+        2,
+        2,
         0,
-        2,
-        2,
         0,
         0,
         0,
@@ -1335,10 +1396,10 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         1,
         2,
+        0,
         0,
         0,
         0
@@ -1383,8 +1444,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         4,
+        0,
         0,
         0,
         0,
@@ -1425,10 +1486,10 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         0,
         2,
+        0,
         0,
         0,
         0
@@ -1467,7 +1528,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        3,
+        0,
         0,
         0,
         0,
@@ -1506,8 +1567,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1540,8 +1601,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1573,8 +1634,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1608,8 +1669,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1642,8 +1703,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1677,7 +1738,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        2,
+        0,
         0,
         0,
         0,
@@ -1714,41 +1775,7 @@
         0,
         0,
         0,
-        0,
         2,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Lapsus$",
-      "count": 2,
-      "victims": [
-        {
-          "name": "MERCOR",
-          "date": "2026-05-31T20:24:26+00:00",
-          "url": "https://www.ransomware.live/id/TUVSQ09SQGxhcHN1cyQ=",
-          "discovered_date": "2026-05-31T20:24:26+00:00"
-        },
-        {
-          "name": "MAPFRE ASSURANCE",
-          "date": "2026-05-31T20:24:13+00:00",
-          "url": "https://www.ransomware.live/id/TUFQRlJFIEFTU1VSQU5DRUBsYXBzdXMk",
-          "discovered_date": "2026-05-31T20:24:13+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "ES",
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0
@@ -1768,33 +1795,6 @@
       "industries": [],
       "countries": [
         "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Bravox",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Grupo Mauá",
-          "date": "2026-05-31T22:20:55+00:00",
-          "url": "https://www.ransomware.live/id/R3J1cG8gTWF1w6FAYnJhdm94",
-          "discovered_date": "2026-05-31T22:20:55+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "BR"
       ],
       "trend": "down",
       "trend_percentage": -5,
