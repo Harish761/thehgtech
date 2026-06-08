@@ -198,3 +198,37 @@ function toggleZenMode() {
 document.addEventListener('DOMContentLoaded', () => {
     initZenMode();
 });
+
+
+// ================================================
+// FLOATING DOCK SCROLL LOGIC (MOBILE)
+// ================================================
+function initFloatingDockScroll() {
+    let lastScrollY = window.scrollY;
+    
+    window.addEventListener("scroll", () => {
+        // Only apply on mobile where interaction-bar acts as a dock
+        if (window.innerWidth > 768) return;
+        
+        const bar = document.querySelector(".interaction-bar");
+        if (!bar) return;
+        
+        const currentScrollY = window.scrollY;
+        
+        // If scrolling down and passed 100px from top, hide bar
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            bar.classList.add("hidden-bar");
+        } 
+        // If scrolling up, show bar
+        else if (currentScrollY < lastScrollY) {
+            bar.classList.remove("hidden-bar");
+        }
+        
+        lastScrollY = currentScrollY;
+    }, { passive: true });
+}
+
+// Initialize on DOM load
+document.addEventListener("DOMContentLoaded", () => {
+    initFloatingDockScroll();
+});

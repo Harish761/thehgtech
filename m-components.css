@@ -492,25 +492,41 @@
 /* ================================================
    ZEN READER MODE
    ================================================ */
+/* Default (Dark Mode) Zen Theme */
 body.zen-mode {
-    background: #fdf6e3 !important; /* Sepia light mode */
-    color: #333 !important;
+    --bg-primary: #111111 !important;
+    --text-primary: #e0e0e0 !important;
+    background: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
 }
 
-/* For dark themes or system dark */
-[data-theme="dark"] body.zen-mode,
-body.zen-mode.dark-mode {
-    background: #111111 !important;
-    color: #e0e0e0 !important;
+/* Light Mode (Sepia) Zen Theme */
+body.light-mode.zen-mode,
+[data-theme="light"] body.zen-mode {
+    --bg-primary: #fdf6e3 !important;
+    --text-primary: #333333 !important;
+    background: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
 }
 
-/* Zen typography */
+/* Zen typography and forced color inheritance */
+body.zen-mode .article-content p,
+body.zen-mode .article-content li,
+body.zen-mode h1, 
+body.zen-mode h2, 
+body.zen-mode h3, 
+body.zen-mode h4,
+body.zen-mode .article-meta,
+body.zen-mode .article-meta span,
+body.zen-mode .article-meta i {
+    color: var(--text-primary) !important;
+}
+
 body.zen-mode .article-content p,
 body.zen-mode .article-content li {
     font-family: "Georgia", "Merriweather", serif !important;
     line-height: 1.8 !important;
     font-size: clamp(1.1rem, 2.5vw + 0.8rem, 1.25rem) !important;
-    color: inherit !important;
     max-width: 65ch; /* Optimal reading width */
     margin-left: auto;
     margin-right: auto;
@@ -521,6 +537,12 @@ body.zen-mode .article-content h3 {
     max-width: 65ch;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Strip text-fill gradients for readability */
+body.zen-mode h1 {
+    background: none !important;
+    -webkit-text-fill-color: var(--text-primary) !important;
 }
 
 /* Hide Distractions */
