@@ -275,6 +275,9 @@ function injectNewsletterWidget() {
 }
 
 // Ensure it loads with other DOM content
-document.addEventListener("DOMContentLoaded", () => {
+// Ensure it loads with other DOM content
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", injectNewsletterWidget);
+} else {
     injectNewsletterWidget();
-});
+}
