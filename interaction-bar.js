@@ -260,7 +260,7 @@ function injectNewsletterWidget() {
                 </div>
                 <div class="newsletter-privacy">
                     <input type="checkbox" id="newsletter-consent" name="consent" required>
-                    <label for="newsletter-consent">I consent to receiving security updates and agree to the privacy policy.</label>
+                    <label for="newsletter-consent">I consent to receiving security updates and agree to the <a href="/privacy.html" target="_blank" style="color: #00D9FF; text-decoration: none;">Privacy Policy</a>. Emails are serviced by <a href="https://emailoctopus.com/legal/privacy" target="_blank" style="color: #00D9FF; text-decoration: none;">EmailOctopus</a>.</label>
                 </div>
                 <!-- Anti-bot honeypot -->
                 <div aria-hidden="true" style="position: absolute; left: -5000px;">
