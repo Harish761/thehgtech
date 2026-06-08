@@ -232,3 +232,49 @@ function initFloatingDockScroll() {
 document.addEventListener("DOMContentLoaded", () => {
     initFloatingDockScroll();
 });
+
+
+// ================================================
+// NEWSLETTER INJECTION (EmailOctopus)
+// ================================================
+function injectNewsletterWidget() {
+    // Only inject on article/guide pages. 
+    // We detect this if there is an article or interaction bar on the page.
+    const articleContainer = document.querySelector(".article-container, article");
+    const interactionBar = document.querySelector(".interaction-bar");
+    
+    // If not an article page, do not inject dynamically (e.g. homepage handles it manually)
+    if (!articleContainer || !interactionBar) return;
+    
+    // Prevent duplicate injection
+    if (document.querySelector(".newsletter-widget")) return;
+
+    const widgetHTML = `
+        <div class="newsletter-widget">
+            <h3>Stay Ahead of the Threat Curve</h3>
+            <p class="newsletter-desc">Get expert cybersecurity insights, zero-day alerts, and critical threat intelligence delivered straight to your inbox.</p>
+            <form action="https://emailoctopus.com/lists/08258300-62ea-11f1-9abd-43fc2d9c895b/members/embedded/1.3/add" method="post" class="newsletter-form">
+                <div class="newsletter-input-group">
+                    <input type="email" name="field_0" placeholder="Your email address..." required>
+                    <button type="submit" class="newsletter-submit">Subscribe <i class="fas fa-shield-check"></i></button>
+                </div>
+                <div class="newsletter-privacy">
+                    <input type="checkbox" id="newsletter-consent" name="consent" required>
+                    <label for="newsletter-consent">I consent to receiving security updates and agree to the privacy policy.</label>
+                </div>
+                <!-- Anti-bot honeypot -->
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    <input type="text" name="hp1.3" tabindex="-1" autocomplete="nope">
+                </div>
+            </form>
+        </div>
+    `;
+    
+    // Insert right before the interaction bar
+    interactionBar.insertAdjacentHTML("beforebegin", widgetHTML);
+}
+
+// Ensure it loads with other DOM content
+document.addEventListener("DOMContentLoaded", () => {
+    injectNewsletterWidget();
+});
