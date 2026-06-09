@@ -555,14 +555,14 @@ C:\> repadmin /showrepl
         <div style="margin: 2rem 0; overflow-x: auto; display: flex; justify-content: center;">
             <pre class="mermaid" style="background: rgba(0, 0, 0, 0.3); border: 1px solid var(--accent-cyan); border-radius: 8px; padding: 1rem;">
 graph TD
-    A[Security Alert: "Massive Outbound 443 Traffic"]
-    A --> B{Analyst Investigates}
-    B -->|Security View| C[Assume Data Exfiltration]
-    B -->|Infrastructure View| D[Check Scheduled Jobs]
-    C --> E[Isolate Host / Block IP]
-    D --> F[Confirm OneDrive Migration]
-    E -->|Business Impact| G[Break Production Backup]
-    F -->|Context Applied| H[Mark False Positive - Save Hours]
+    A["Security Alert: Massive Outbound 443 Traffic"]
+    A --> B{"Analyst Investigates"}
+    B -->|"Security View"| C["Assume Data Exfiltration"]
+    B -->|"Infrastructure View"| D["Check Scheduled Jobs"]
+    C --> E["Isolate Host / Block IP"]
+    D --> F["Confirm OneDrive Migration"]
+    E -->|"Business Impact"| G["Break Production Backup"]
+    F -->|"Context Applied"| H["Mark False Positive - Save Hours"]
     
     style C fill:#FF3D3D,stroke:#333,stroke-width:2px,color:#fff
     style F fill:#10b981,stroke:#333,stroke-width:2px,color:#fff
