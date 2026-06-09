@@ -9,6 +9,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-739",
+      "incident_id": 739,
+      "title": "Scammers Allegedly Use Deepfake of Hong Kong Entertainer Andy Lau to Steal NT$2.64 Million from Fan",
+      "date": "2026-06-09",
+      "category": "deepfake",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-802",
+      "incident_id": 802,
+      "title": "Purported Deepfake of Brian May Allegedly Exploited in Scam Offering Fake Queen Backstage Tickets",
+      "date": "2026-06-09",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
       "id": "AIID-958",
       "incident_id": 958,
       "title": "Europol Operation Cumberland Investigates at Least 273 Suspects in 19 Countries for AI-Generated Chi",
@@ -86,6 +102,14 @@
       "title": "Purported Gemini-Generated AI Images Reportedly Claimed U.S. Delta Force Soldiers Were Captured by t",
       "date": "2026-06-09",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1419",
+      "incident_id": 1419,
+      "title": "Purported Deepfake Images of Gr\u00e1inne Seoige Reportedly Circulated During Ireland's 2024 General Elec",
+      "date": "2026-06-09",
+      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -175,6 +199,30 @@
       "date": "2026-06-09",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-1523",
+      "incident_id": 1523,
+      "title": "Reported AI-Generated Videos Placed Kosovo Parliamentary Candidates in Purportedly Fabricated Campai",
+      "date": "2026-06-09",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1524",
+      "incident_id": 1524,
+      "title": "Purportedly AI-Manipulated Videos Reportedly Targeted Former Kosovo MP Paris Guri and LDK Youth Memb",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1525",
+      "incident_id": 1525,
+      "title": "Purported Deepfake Video Reportedly Impersonated Former Mongolian Deputy Prime Minister Amarsaikhan ",
+      "date": "2026-06-09",
+      "category": "deepfake",
+      "severity": "high"
     },
     {
       "id": "AIID-1515",
@@ -2025,14 +2073,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1419",
-      "incident_id": 1419,
-      "title": "Purported Deepfake Images of Gr\u00e1inne Seoige Reportedly Circulated During Ireland's 2024 General Elec",
-      "date": "2026-03-16",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1411",
       "incident_id": 1411,
       "title": "Purported Deepfake Scam Ad Reportedly Used Lara Lewington and Martin Lewis to Promote Quantum AI Sch",
@@ -2114,9 +2154,9 @@
     }
   ],
   "stats": {
-    "total": 264,
-    "last7Days": 27,
-    "last30Days": 186
+    "total": 269,
+    "last7Days": 33,
+    "last30Days": 192
   },
-  "lastUpdated": "2026-06-10T01:58:55.978464+05:30"
+  "lastUpdated": "2026-06-10T03:26:58.950954+05:30"
 }
