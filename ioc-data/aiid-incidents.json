@@ -161,6 +161,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1521",
+      "incident_id": 1521,
+      "title": "Reported AI-Generated Videos Purported to Show Kosovo Diaspora Mobilization for Vet\u00ebvendosje Before ",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1522",
+      "incident_id": 1522,
+      "title": "Reported AI-Generated Videos Allegedly Posed as Kosovo Election Vox Pops Before June 7, 2026 Vote",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1515",
       "incident_id": 1515,
       "title": "Purportedly AI-Generated Airport Videos Reportedly Showed Kosovo Diaspora Voters Supporting Albin Ku",
@@ -2095,20 +2111,12 @@
       "date": "2026-03-12",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1401",
-      "incident_id": 1401,
-      "title": "Washington State DOL's AI Phone System Reportedly Failed to Provide Spanish-Language Service to Call",
-      "date": "2026-03-11",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 263,
-    "last7Days": 25,
-    "last30Days": 187
+    "total": 264,
+    "last7Days": 27,
+    "last30Days": 186
   },
-  "lastUpdated": "2026-06-09T23:49:03.534470+05:30"
+  "lastUpdated": "2026-06-10T01:58:55.978464+05:30"
 }
