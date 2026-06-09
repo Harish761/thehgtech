@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-06-08T17:34:32.026401",
-  "total_incidents": 28588,
+  "last_updated": "2026-06-09T06:31:45.033049",
+  "total_incidents": 28594,
   "incidents": [
+    {
+      "id": "gunra_cambridge_law_chambers",
+      "victim_name": "Cambridge Law Chambers",
+      "threat_actor": "gunra",
+      "date_discovered": "2026-06-09T03:57:16.432595+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "[AI generated] N/A",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "termite_wiese_usa",
+      "victim_name": "Wiese USA",
+      "threat_actor": "termite",
+      "date_discovered": "2026-06-08T23:56:36.768281+00:00",
+      "industry": "Manufacturing",
+      "website": "www.wieseusa.com",
+      "claim": "Wiese Inc is a material handling machinery company. It offers forklifts, railcar movers, yard trucks, dock equipments, and other machinery. The company was established in 1944 and is based in St. Louis, Missouri.",
+      "screenshot": "https://images.ransomware.live/victims/db38be3fc1de594ab0b0a844cdaf6f09.png",
+      "url": "http://termiteuslbumdge2zmfmfcsrvmvsfe4gvyudc5j6cdnisnhtftvokid.onion/post/6a20afa8c684b738d525af92",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "termite_roland_machinery",
+      "victim_name": "Roland Machinery",
+      "threat_actor": "termite",
+      "date_discovered": "2026-06-08T22:57:44.688361+00:00",
+      "industry": "Manufacturing",
+      "website": "www.rolandmachinery.com",
+      "claim": "Founded in 1958 and headquartered in Springfield, Illinois, Roland Machinery Co. provides wholesale distribution of construction equipment. The Company offers forestry, aggregate, and paving equipment, as well as rents construction, road maintenance, and crushing equipment.",
+      "screenshot": "https://images.ransomware.live/victims/c46836e67f32601a70a0d0b7db305db1.png",
+      "url": "http://termiteuslbumdge2zmfmfcsrvmvsfe4gvyudc5j6cdnisnhtftvokid.onion/post/6a20b001c684b738d525b058",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_the_banyans_health_and_wellness",
+      "victim_name": "The Banyans Health and Wellness",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-08T22:55:44.812841+00:00",
+      "industry": "Healthcare",
+      "website": "www.thebanyans.com.au",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/69641d418dee6d8e6875fe17645edcb7.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=ef60ef22-903f-4645-95eb-68ec523e25c9",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_kinetic_education",
+      "victim_name": "Kinetic Education",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-08T18:53:02.207275+00:00",
+      "industry": "Education",
+      "website": "www.kineticeducation.com.au",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/f912e1cb5dcec67bd7062c74f1cb5704.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=048ffcd7-1174-4fb2-986b-fefa9ed83935",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_satcom_cx",
+      "victim_name": "SatCom CX",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-08T17:53:20.755799+00:00",
+      "industry": "Telecommunication",
+      "website": "www.satcommarketing.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/93957dabe1a864c9810b4b30c2e8dbb2.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=3028fcdd-559c-483a-a7e6-3a34914e7096",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_isuzu_motors",
       "victim_name": "Isuzu Motors",
