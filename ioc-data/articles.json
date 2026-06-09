@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "context-crisis-cybersecurity-2026",
+      "title": "The Context Crisis in Cybersecurity: Why Security Alerts Make Less Sense Than Ever",
+      "date": "June 09, 2026",
+      "category": "Threat Analysis",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "The 'Context Gap' is the growing disconnect between security alert knowledge and operational system knowledge. Why investigations take longer despite better tools.",
+      "image": "/images/articles/context-crisis-cybersecurity-2026.png",
+      "externalUrl": "articles/context-crisis-cybersecurity-2026.html",
+      "readTime": "20 min read",
+      "tags": [
+        "SOC Analyst",
+        "Security Alert",
+        "SIEM",
+        "False Positives",
+        "Incident Response",
+        "Cybersecurity"
+      ]
+    },
+    {
       "id": "report-20260608",
       "title": "Weekly Threat Report: June 08, 2026",
       "date": "June 08, 2026",
