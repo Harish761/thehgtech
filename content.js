@@ -47,24 +47,6 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-everest-forms-pro-flaw-exploited-to-take-over-wordpress-sites/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 06 2026",
-            "headline": "OpenAI Rolls Out ChatGPT Lockdown Mode to Prevent Data Exfiltration",
-            "title": "OpenAI Introduces ChatGPT Lockdown Mode to Mitigate Prompt Injection Risks",
-            "content": "OpenAI has launched a new security feature called Lockdown Mode for eligible personal ChatGPT accounts to defend against data exfiltration. The feature mitigates risks associated with prompt injection attacks, where malicious inputs manipulate the artificial intelligence model into executing unauthorized actions. Specifically, Lockdown Mode restricts the capabilities of connected tools and plugins that could be abused to transmit sensitive user data to external servers. This update is primarily designed for enterprise users, developers, and organizations handling highly sensitive information who require strict data protection guarantees. Users can enable this feature within their account security settings to restrict third-party tool integrations and secure their workflows.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/new-chatgpt-lockdown-mode-limits-tools.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 06 2026",
-            "headline": "CISA Adds SolarWinds Serv-U DoS Flaw to KEV Catalog",
-            "title": "CISA Warns of Active Exploitation of SolarWinds Serv-U DoS Vulnerability",
-            "content": "The Cybersecurity and Infrastructure Security Agency, known as CISA, has added a high-severity security flaw affecting SolarWinds Serv-U multi-protocol file transfer software to its Known Exploited Vulnerabilities catalog. Tracked as CVE-2026-2024, the vulnerability is a denial-of-service flaw that allows remote attackers to crash the file server and disrupt operations. Federal agencies and enterprise organizations utilizing Serv-U are urged to apply the vendor-provided patches immediately to prevent potential service disruptions. CISA added the flaw to its catalog following confirmed evidence of active exploitation by malicious actors in the wild. Under Binding Operational Directive 22-01, federal civilian executive branch agencies must remediate this vulnerability by the specified deadline to secure their networks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
@@ -197,6 +179,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-42271",
+            "dateAdded": "Jun 08, 2026",
+            "vendor": "BerriAI LiteLLM",
+            "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42271",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-50751",
+            "dateAdded": "Jun 08, 2026",
+            "vendor": "Check Point Security Gateway",
+            "description": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a r",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50751",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-28318",
             "dateAdded": "Jun 05, 2026",
             "vendor": "SolarWinds Serv-U",
@@ -216,28 +220,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45247",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2022-0492",
-            "dateAdded": "Jun 02, 2026",
-            "vendor": "Linux Kernel",
-            "description": "Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0492",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-48595",
-            "dateAdded": "Jun 02, 2026",
-            "vendor": "Android Framework",
-            "description": "Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48595",
             "isZeroDay": false
         }
     ],
