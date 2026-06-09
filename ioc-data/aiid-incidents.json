@@ -1,6 +1,110 @@
 {
   "incidents": [
     {
+      "id": "AIID-621",
+      "incident_id": 621,
+      "title": "Microsoft AI Is Alleged to Have Generated Violent Imagery of Minorities and Public Figures",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-968",
+      "incident_id": 968,
+      "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformat",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1098",
+      "incident_id": 1098,
+      "title": "Image Purporting to Show President Paul Kagame of Rwanda in M23 Uniform Reportedly AI-Generated",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1116",
+      "incident_id": 1116,
+      "title": "Alleged Deepfake Video Depicts Former Malaysian Inspector-General of Police Tan Sri Acryl Sani Abdul",
+      "date": "2026-06-09",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1133",
+      "incident_id": 1133,
+      "title": "Reported AI-Generated Audio of Ukrainian Commander Andriy Biletsky Used in Russian Disinformation Ca",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1134",
+      "incident_id": 1134,
+      "title": "Reported Deepfakes of Ukrainian Deputy PM Olha Stefanishyna Allegedly Supporting Fictional Mobilizat",
+      "date": "2026-06-09",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1202",
+      "incident_id": 1202,
+      "title": "Russian Disinformation Campaign Reportedly Used AI-Generated Posts and Videos to Target 2025 Moldova",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1336",
+      "incident_id": 1336,
+      "title": "BJP Used Deepfake Videos of Manoj Tiwari to Target Haryanvi Voters in 2020 Delhi Election",
+      "date": "2026-06-09",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1414",
+      "incident_id": 1414,
+      "title": "Purported Gemini-Generated AI Images Reportedly Claimed U.S. Delta Force Soldiers Were Captured by t",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1425",
+      "incident_id": 1425,
+      "title": "'Citizens Against Mamdani' Accounts Reportedly Posted AI-Generated Videos of Fictional New Yorkers t",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1481",
+      "incident_id": 1481,
+      "title": "Purported AI-Generated YouTube Network Reportedly Promoted Alberta Secession and U.S. Annexation Nar",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1496",
+      "incident_id": 1496,
+      "title": "Purportedly AI-Generated Jeffrey Epstein Video Reportedly Used by Pro-Iran Accounts to Claim Iran Wa",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1513",
+      "incident_id": 1513,
+      "title": "Dimal Basha's Likeness Was Reportedly Used in Purportedly Fake AI-Generated Video After Kosovo Parli",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1515",
       "incident_id": 1515,
       "title": "Purportedly AI-Generated Airport Videos Reportedly Showed Kosovo Diaspora Voters Supporting Albin Ku",
@@ -38,14 +142,6 @@
       "title": "The Sydney Morning Herald and The Age Removed an Opinion Article After Undisclosed Copilot Use",
       "date": "2026-06-04",
       "category": "data_leak",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1513",
-      "incident_id": 1513,
-      "title": "Dimal Basha's Likeness Was Reportedly Used in Purportedly Fake AI-Generated Video After Kosovo Parli",
-      "date": "2026-06-04",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -628,14 +724,6 @@
       "id": "AIID-1492",
       "incident_id": 1492,
       "title": "Purportedly AI-Enabled Targeting System Was Reportedly Implicated in Deadly U.S. Strike on Iranian P",
-      "date": "2026-05-22",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1496",
-      "incident_id": 1496,
-      "title": "Purportedly AI-Generated Jeffrey Epstein Video Reportedly Used by Pro-Iran Accounts to Claim Iran Wa",
       "date": "2026-05-22",
       "category": "other",
       "severity": "medium"
@@ -1337,14 +1425,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1481",
-      "incident_id": 1481,
-      "title": "Purported AI-Generated YouTube Network Reportedly Promoted Alberta Secession and U.S. Annexation Nar",
-      "date": "2026-05-10",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1482",
       "incident_id": 1482,
       "title": "Purported AI-Generated Voice Reportedly Impersonated Washington Man's Daughter in $13,000 Extortion ",
@@ -1777,14 +1857,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1425",
-      "incident_id": 1425,
-      "title": "'Citizens Against Mamdani' Accounts Reportedly Posted AI-Generated Videos of Fictional New Yorkers t",
-      "date": "2026-03-22",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1427",
       "incident_id": 1427,
       "title": "Baltimore Lawsuit Alleged DraftKings and FanDuel Used Machine-Learning-Driven Targeting to Exploit V",
@@ -1913,14 +1985,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1414",
-      "incident_id": 1414,
-      "title": "Purported Gemini-Generated AI Images Reportedly Claimed U.S. Delta Force Soldiers Were Captured by t",
-      "date": "2026-03-15",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1415",
       "incident_id": 1415,
       "title": "Nippon Life Alleged ChatGPT Practiced Law Without a License in Illinois Disability Case",
@@ -1994,9 +2058,9 @@
     }
   ],
   "stats": {
-    "total": 249,
-    "last7Days": 7,
-    "last30Days": 171
+    "total": 257,
+    "last7Days": 19,
+    "last30Days": 181
   },
-  "lastUpdated": "2026-06-09T16:57:28.152298+05:30"
+  "lastUpdated": "2026-06-09T20:53:55.890784+05:30"
 }
