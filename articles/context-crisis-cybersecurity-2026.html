@@ -261,6 +261,12 @@
             .container { padding: 1rem; }
         }
     </style>
+
+    <!-- Mermaid.js -->
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
 </head>
 
 <body>
@@ -546,6 +552,23 @@ C:\> repadmin /showrepl
             </table>
         </div>
 
+        <div style="margin: 2rem 0; overflow-x: auto; display: flex; justify-content: center;">
+            <pre class="mermaid" style="background: rgba(0, 0, 0, 0.3); border: 1px solid var(--accent-cyan); border-radius: 8px; padding: 1rem;">
+graph TD
+    A[Security Alert: "Massive Outbound 443 Traffic"]
+    A --> B{Analyst Investigates}
+    B -->|Security View| C[Assume Data Exfiltration]
+    B -->|Infrastructure View| D[Check Scheduled Jobs]
+    C --> E[Isolate Host / Block IP]
+    D --> F[Confirm OneDrive Migration]
+    E -->|Business Impact| G[Break Production Backup]
+    F -->|Context Applied| H[Mark False Positive - Save Hours]
+    
+    style C fill:#FF3D3D,stroke:#333,stroke-width:2px,color:#fff
+    style F fill:#10b981,stroke:#333,stroke-width:2px,color:#fff
+            </pre>
+        </div>
+
         <h2 id="dashboard-illusion">4. The Dashboard Illusion</h2>
 
         <p>The Context Gap is exacerbated by what we can call the "Dashboard Illusion."</p>
@@ -596,19 +619,29 @@ C:\> repadmin /showrepl
 
         <p>If the cybersecurity industry wants to reduce alert fatigue, shorten investigation times, and stop treating normal IT operations as critical incidents, we have to close the Context Gap. We have to reconnect security knowledge with operational reality.</p>
 
-        <p>Here are practical steps organizations can take to bridge this divide:</p>
+        <p>This is not an abstract problem; it is an organizational one. Bridging this gap requires intentional changes to how teams are structured, how tools are deployed, and how analysts are trained. Here are concrete, actionable steps organizations can implement immediately.</p>
 
-        <h3>1. SOC Rotations into Infrastructure Teams</h3>
-        <p>Do not let your analysts live entirely inside the SIEM. Mandate short rotations (even just a few days a quarter) where SOC analysts shadow the Helpdesk, the Network Operations Center, or the Systems Administration team. Let them see how users actually request access, how servers are patched, and how backups are configured. Understanding the friction of IT operations makes you infinitely better at securing them.</p>
+        <h3>1. Formalize Cross-Training & Shadow Rotations</h3>
+        <p>Do not let your analysts live entirely inside the SIEM. Operational friction teaches context better than any textbook. Organizations should institute a mandatory "shadowing" program.</p>
+        <ul>
+            <li><strong>Tier 1 SOC Analysts:</strong> Should spend at least one week per quarter shadowing the Helpdesk or Network Operations Center (NOC). Let them see how users actually request access, how passwords are reset, and how flaky VPN connections look on the backend.</li>
+            <li><strong>Detection Engineers:</strong> Should regularly embed with Active Directory architects and Cloud Identity teams. If you are writing a detection for Kerberoasting, you need to sit with the person who configures Service Principal Names (SPNs) for the enterprise.</li>
+        </ul>
 
-        <h3>2. Cross-Pollinate Engineering Teams</h3>
-        <p>Detection engineers should regularly sit with Active Directory architects and Cloud Identity engineers. If you are writing a Sigma rule to detect Kerberoasting, you should sit with the person who actually configures the Service Principal Names (SPNs) in your environment. You cannot effectively write detections for systems you do not understand.</p>
+        <h3>2. Rethink the Dashboard: Embed Context into Tools</h3>
+        <p>Stop forcing analysts to pivot to ten different consoles to find context. If your SIEM flags a massive data transfer, the alert shouldn't just show IP addresses and byte counts. It should automatically enrich the data with infrastructure context.</p>
+        <ul>
+            <li><strong>Integration is Key:</strong> Pipe your IT Asset Management (ITAM), Change Management (ServiceNow, Jira), and deployment schedules directly into your SOAR platform.</li>
+            <li><strong>Contextual Playbooks:</strong> An alert for "Unusual PowerShell Execution" should automatically query SCCM or Intune to check if a scheduled deployment was occurring on that endpoint at that exact minute. If yes, automatically append a note: <em>"Matches scheduled SCCM deployment for Adobe Reader update."</em></li>
+        </ul>
 
-        <h3>3. Context-Driven Purple Teaming</h3>
-        <p>Standard purple team exercises involve the Red Team attacking and the Blue Team defending. Expand this. Bring the IT Operations and Infrastructure teams into the exercise. When the Red Team simulates an attack, ask the IT team: <em>"Does this look like any normal administrative activity we do?"</em> Their answers will be illuminating and will immediately highlight where your detections need to be tuned.</p>
+        <h3>3. Evolve Purple Teaming to "Context Teaming"</h3>
+        <p>Standard purple team exercises involve the Red Team attacking and the Blue Team defending. This is fundamentally flawed because it ignores the environment. Expand this model.</p>
+        <p>Bring the IT Operations and Infrastructure teams into the exercise. When the Red Team simulates an attack, don't just ask the Blue Team if they detected it. Turn to the IT team and ask: <em>"Does this look like any normal administrative activity we do?"</em> Their answers will be illuminating and will immediately highlight where your detections need to be tuned to filter out administrative noise.</p>
 
-        <h3>4. Update Security Training Curriculums</h3>
-        <p>Security bootcamps and enterprise training programs need to reintegrate IT fundamentals. Before teaching an analyst how to detect a Golden Ticket attack, ensure they can explain the standard Kerberos authentication flow. Before teaching them about DNS tunneling, ensure they understand how split-brain DNS works in a corporate environment. The foundation must be solid.</p>
+        <h3>4. Reform Security Training & Hiring Profiles</h3>
+        <p>Security bootcamps and enterprise training programs need to reintegrate IT fundamentals. Before teaching an analyst how to detect a Golden Ticket attack, ensure they can explain the standard Kerberos authentication flow. Before teaching them about DNS tunneling, ensure they understand how split-brain DNS works.</p>
+        <p>When hiring, look for candidates who have spent time in systems administration, network engineering, or DevOps. A SOC analyst who has spent three years managing Exchange servers will spot a Business Email Compromise (BEC) anomaly faster than someone who has only studied attack frameworks.</p>
 
         <h2 id="conclusion">7. Conclusion</h2>
 
