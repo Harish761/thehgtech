@@ -232,6 +232,8 @@
                 <li><strong>The Implication:</strong> The raw intelligence of an AI model is no longer the primary competitive moat. Trust systems, governance, and access controls are now the true product.</li>
                 <li><strong>Why It Matters to Cyber:</strong> Future security programs will treat AI systems identically to how we treat Privileged Access Management (PAM) for Domain Admin accounts.</li>
             </ul>
+            <p style="margin-top: 1rem;"><strong>Confidence Level:</strong> Confirmed<br>
+            <strong>TLP:</strong> CLEAR</p>
             <p style="font-size: 0.9em; margin-top: 1rem; color: var(--text-muted);"><em>This analysis is based on Anthropic's Claude Fable release strategy as of June 2026; details and model capabilities may evolve.</em></p>
         </div>
 
@@ -267,6 +269,30 @@
         <blockquote style="border-left: 4px solid var(--accent-cyan); padding-left: 1rem; font-style: italic; font-size: 1.2rem; margin: 2rem 0;">"How is the model accessed?"</blockquote>
 
         <p>Anthropic isn't selling a smarter brain; they are selling a comprehensively governed brain.</p>
+
+        <div class="technical-box">
+            <h3><i class="fas fa-code"></i> Example Detection Rule: Anomalous Frontier API Access</h3>
+            <pre><code class="language-yaml">title: Unauthorized High-Volume Frontier AI API Access
+id: a1b2c3d4-e5f6-7890-1234-567890abcdef
+status: experimental
+description: Detects sustained high-volume requests to Anthropic API endpoints from non-approved IPs or service accounts.
+logsource:
+    category: network_traffic
+detection:
+    selection:
+        dst_domain|contains: 'api.anthropic.com'
+        dst_port: 443
+    filter_approved:
+        src_ip:
+            - '10.50.0.0/16' # Authorized AI dev subnet
+    condition: selection and not filter_approved | count() > 500 within 5m
+falsepositives:
+    - Shadow IT usage of enterprise API keys
+level: medium
+tags:
+    - attack.exfiltration</code></pre>
+            <p><strong>Log Patterns:</strong> Grep for this string in proxy logs: <code>"POST /v1/messages HTTP/2.0" host:api.anthropic.com</code> from unexpected subnets.</p>
+        </div>
 
         <h2>4. The Cybersecurity Parallel Nobody Is Talking About</h2>
         <p>For cybersecurity professionals, this shift should feel incredibly familiar. In fact, it perfectly mirrors the evolution of enterprise identity security.</p>
@@ -317,6 +343,15 @@
         <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-cyan); text-align: center; margin: 3rem 0;">"Your most powerful non-human identity may soon be an AI system."</p>
 
         <p>If an enterprise deploys an autonomous agent powered by a Fable-class model to manage cloud infrastructure, that agent holds the keys to the kingdom. Security teams can no longer treat AI as just another SaaS application. AI systems must be treated as highly privileged identities requiring stringent governance.</p>
+
+        <div class="success-box">
+            <strong><i class="fas fa-shield-alt"></i> IMMEDIATE ACTION:</strong>
+            <ul>
+                <li>Implement API Gateway controls to strictly monitor and log all outbound traffic to frontier AI endpoints (e.g., api.anthropic.com, api.openai.com).</li>
+                <li>Treat AI Service Accounts as Tier 0/Tier 1 assets within your Active Directory or IAM strategy, enforcing JIT access and MFA.</li>
+                <li>Deploy detection rules to identify unauthorized AI API usage.</li>
+            </ul>
+        </div>
 
         <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
             <thead>
