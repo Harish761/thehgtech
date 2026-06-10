@@ -352,7 +352,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const offset = mainArea.getBoundingClientRect().top + window.scrollY - 100;
                     window.scrollTo({ top: offset, behavior: 'smooth' });
                 } else {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    const vp = document.getElementById('assessmentViewport');
+                    const offset = vp ? (vp.getBoundingClientRect().top + window.scrollY - 100) : 0;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
                 }
             }
         });
@@ -670,7 +672,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const offset = mainArea.getBoundingClientRect().top + window.scrollY - 100;
                     window.scrollTo({ top: offset, behavior: 'smooth' });
                 } else {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    const vp = document.getElementById('assessmentViewport');
+                    const offset = vp ? (vp.getBoundingClientRect().top + window.scrollY - 100) : 0;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
                 }
             });
 
@@ -701,11 +705,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             toolbar.querySelector('#btnToggleWizard').addEventListener('click', () => {
                 wizardMode = true;
                 currentControlIndex = 0;
-                renderDomain(globalIndex);
+                renderDomain(activeDomainIndices[currentNavIndex]);
             });
             toolbar.querySelector('#btnToggleScroll').addEventListener('click', () => {
                 wizardMode = false;
-                renderDomain(globalIndex);
+                renderDomain(activeDomainIndices[currentNavIndex]);
             });
         }
         
@@ -916,7 +920,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (value === 'maturity') {
                         // Toggle maturity panel visibility
                         const panel = document.getElementById(`maturity_panel_${control.control_id}`);
-                        if (panel) panel.style.display = panel.style.display === 'none' ? 'block' : 'block';
+                        if (panel) panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
                         // Don't save 'maturity' as a value — user must pick a level
                         btns.forEach(b => b.classList.remove('active'));
                         e.currentTarget.classList.add('active');
@@ -1131,17 +1135,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         const completed = domain.controls.filter(c => userState[c.control_id]).length;
         
         // Auto-advance logic [11]
+        const capturedDomainIdx = activeDomainIndices[currentNavIndex];
         if (wizardMode) {
             setTimeout(() => {
+                if (activeDomainIndices[currentNavIndex] !== capturedDomainIdx) return;
                 if (currentControlIndex < domain.controls.length - 1) {
                     currentControlIndex++;
-                    renderDomain(activeDomainIndices[currentNavIndex]);
+                    renderDomain(capturedDomainIdx);
                     const vp = document.getElementById('assessmentViewport');
                     const offset = vp ? (vp.getBoundingClientRect().top + window.scrollY - 100) : 0;
                     window.scrollTo({ top: offset, behavior: 'smooth' });
                 } else {
                     // Domain complete in wizard mode
-                    renderDomain(activeDomainIndices[currentNavIndex]); // Refresh UI for the last card
+                    renderDomain(capturedDomainIdx); // Refresh UI for the last card
                 }
             }, 600);
         } else {
@@ -1310,7 +1316,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         else ui.overallScore.style.color = '#EF4444';
 
         // Button logic
-        const answeredControls = Object.keys(userState).filter(k => !k.startsWith('_') && !k.endsWith('_just') && !k.endsWith('_notes')).length;
+        const answeredControls = Object.keys(userState).filter(k => 
+            !k.startsWith('_') && 
+            !k.endsWith('_just') && 
+            !k.endsWith('_notes') &&
+            !k.endsWith('_ev_docname') &&
+            !k.endsWith('_ev_version') &&
+            !k.endsWith('_ev_owner') &&
+            !k.endsWith('_ev_type') &&
+            !k.endsWith('_ev_status')
+        ).length;
         const totalControls = allControls.length;
 
         if (answeredControls > 0) {
@@ -1408,6 +1423,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             setTimeout(() => { ui.viewDashboard.classList.add('active'); }, 50);
 
             generateDashboard();
+            window.scrollTo({ top: 0, behavior: 'instant' });
         });
     }
 
@@ -2772,6 +2788,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     nistScore: (window.grcNistScore || 0) + '%',
                     cisScore: (window.grcCisScore || 0) + '%'
                 },
+                rawState: userState,
                 controls: []
             };
 
@@ -2803,7 +2820,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             a.href = url;
             a.download = 'GRC_Assessment_' + new Date().toISOString().split('T')[0] + '.json';
             a.click();
-            URL.revokeObjectURL(url);
+            
+            setTimeout(() => {
+                URL.revokeObjectURL(url);
+            }, 1000);
 
             const origText = ui.btnJsonExport.innerHTML;
             ui.btnJsonExport.innerHTML = '<i class="fas fa-check"></i> Downloaded!';
@@ -2877,15 +2897,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 break;
             case '2': // Partial → open maturity panel
                 e.preventDefault();
-                saveAnswer(controlId, 'defined', btns, focusedCard); // Default to 'defined' (60%)
-                const panel = document.getElementById(`maturity_panel_${controlId}`);
-                if (panel) panel.style.display = 'block';
-                btns.forEach(b => b.classList.remove('active'));
-                const partBtn = focusedCard.querySelector('[data-val="maturity"]');
-                if (partBtn) partBtn.classList.add('active');
-                focusedCard.querySelectorAll('.maturity-btn').forEach(b => b.classList.remove('active'));
-                const defBtn = focusedCard.querySelector('[data-mval="defined"]');
-                if (defBtn) defBtn.classList.add('active');
+                const partialBtn = focusedCard.querySelector('[data-val="maturity"]');
+                if (partialBtn) partialBtn.click();
                 break;
             case '3': // No
                 e.preventDefault();
@@ -2947,8 +2960,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (!confirmMerge) return;
 
                     // Merge userState
-                    Object.keys(importedData).forEach(key => {
-                        userState[key] = importedData[key];
+                    const stateToMerge = importedData.rawState || importedData;
+                    Object.keys(stateToMerge).forEach(key => {
+                        userState[key] = stateToMerge[key];
                     });
                     
                     persistState();
