@@ -1000,7 +1000,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (idx > 0) {
                         currentControlIndex--;
                         renderDomain(globalIndex);
-                        const vp = document.getElementById('engineViewport');
+                        const vp = document.getElementById('assessmentViewport');
                         const offset = vp ? (vp.getBoundingClientRect().top + window.scrollY - 100) : 0;
                         window.scrollTo({ top: offset, behavior: 'smooth' });
                     }
@@ -1014,7 +1014,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (!isLast) {
                         currentControlIndex++;
                         renderDomain(globalIndex);
-                        const vp = document.getElementById('engineViewport');
+                        const vp = document.getElementById('assessmentViewport');
                         const offset = vp ? (vp.getBoundingClientRect().top + window.scrollY - 100) : 0;
                         window.scrollTo({ top: offset, behavior: 'smooth' });
                     } else {
@@ -1133,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (currentControlIndex < domain.controls.length - 1) {
                     currentControlIndex++;
                     renderDomain(activeDomainIndices[currentNavIndex]);
-                    const vp = document.getElementById('engineViewport');
+                    const vp = document.getElementById('assessmentViewport');
                     const offset = vp ? (vp.getBoundingClientRect().top + window.scrollY - 100) : 0;
                     window.scrollTo({ top: offset, behavior: 'smooth' });
                 } else {
