@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1528",
+      "incident_id": 1528,
+      "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient\u2019s Stroke During May 20",
+      "date": "2026-06-10",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-621",
       "incident_id": 621,
       "title": "Microsoft AI Is Alleged to Have Generated Violent Imagery of Minorities and Public Figures",
@@ -121,6 +129,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1436",
+      "incident_id": 1436,
+      "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During June 2",
+      "date": "2026-06-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1481",
       "incident_id": 1481,
       "title": "Purported AI-Generated YouTube Network Reportedly Promoted Alberta Secession and U.S. Annexation Nar",
@@ -223,6 +239,22 @@
       "date": "2026-06-09",
       "category": "deepfake",
       "severity": "high"
+    },
+    {
+      "id": "AIID-1526",
+      "incident_id": 1526,
+      "title": "Reddit Scam Ads Reportedly Used Deepfake News Segments and Cloned Media Sites to Promote Allegedly F",
+      "date": "2026-06-09",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1527",
+      "incident_id": 1527,
+      "title": "Purported Deepfake Ads Reportedly Fabricated BBC Question Time Confrontations Between Andrew Bailey ",
+      "date": "2026-06-09",
+      "category": "deepfake",
+      "severity": "medium"
     },
     {
       "id": "AIID-1515",
@@ -1913,14 +1945,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1436",
-      "incident_id": 1436,
-      "title": "Acclarent TruDi Navigation System Was Alleged to Have Misguided Sinus Surgery, Reportedly Contributi",
-      "date": "2026-03-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1430",
       "incident_id": 1430,
       "title": "Anthropic's Claude Was Reportedly Jailbroken To Allegedly Help Steal Sensitive Mexican Government Da",
@@ -2143,20 +2167,12 @@
       "date": "2026-03-14",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1404",
-      "incident_id": 1404,
-      "title": "Purported AI-Generated Nude Images Reportedly Used to Extort Wichita Man in Kansas",
-      "date": "2026-03-12",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 269,
-    "last7Days": 33,
-    "last30Days": 192
+    "total": 271,
+    "last7Days": 37,
+    "last30Days": 196
   },
-  "lastUpdated": "2026-06-10T03:26:58.950954+05:30"
+  "lastUpdated": "2026-06-10T10:11:04.870090+05:30"
 }
