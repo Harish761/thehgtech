@@ -496,16 +496,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                 card.classList.add('selected');
                 if (!activeDomainIndices.includes(index)) activeDomainIndices.push(index);
             } else {
-                // Check if this domain has answered questions
-                let hasAnswersInDomain = false;
-                if (hasExistingData) {
-                    const answered = dom.controls.filter(c => userState[c.control_id]).length;
-                    if (answered > 0) hasAnswersInDomain = true;
-                }
-                // Auto-select if no previous baseline, or if it had existing answers
-                if (!hasExistingData || hasAnswersInDomain) {
-                    card.classList.add('selected');
-                    if (!activeDomainIndices.includes(index)) activeDomainIndices.push(index);
+                if (userState._activeDomains && Array.isArray(userState._activeDomains)) {
+                    if (userState._activeDomains.includes(index)) {
+                        card.classList.add('selected');
+                        if (!activeDomainIndices.includes(index)) activeDomainIndices.push(index);
+                    }
+                } else {
+                    // Check if this domain has answered questions
+                    let hasAnswersInDomain = false;
+                    if (hasExistingData) {
+                        const answered = dom.controls.filter(c => userState[c.control_id]).length;
+                        if (answered > 0) hasAnswersInDomain = true;
+                    }
+                    // Auto-select if no previous baseline, or if it had existing answers
+                    if (!hasExistingData || hasAnswersInDomain) {
+                        card.classList.add('selected');
+                        if (!activeDomainIndices.includes(index)) activeDomainIndices.push(index);
+                    }
                 }
             }
 
@@ -605,6 +612,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const orgInput = document.getElementById('orgNameInput');
             if (nameInput && nameInput.value) userState._assessorName = nameInput.value.trim();
             if (orgInput && orgInput.value) userState._orgName = orgInput.value.trim();
+            userState._activeDomains = [...activeDomainIndices];
             persistState();
 
             activeDomainIndices.sort(); 
@@ -992,7 +1000,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (idx > 0) {
                         currentControlIndex--;
                         renderDomain(globalIndex);
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        const vp = document.getElementById('engineViewport');
+                        const offset = vp ? (vp.getBoundingClientRect().top + window.scrollY - 100) : 0;
+                        window.scrollTo({ top: offset, behavior: 'smooth' });
                     }
                 });
 
@@ -1004,7 +1014,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (!isLast) {
                         currentControlIndex++;
                         renderDomain(globalIndex);
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        const vp = document.getElementById('engineViewport');
+                        const offset = vp ? (vp.getBoundingClientRect().top + window.scrollY - 100) : 0;
+                        window.scrollTo({ top: offset, behavior: 'smooth' });
                     } else {
                         if (ui.btnNextDomain && ui.btnNextDomain.style.display !== 'none') {
                             ui.btnNextDomain.click();
@@ -1121,7 +1133,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (currentControlIndex < domain.controls.length - 1) {
                     currentControlIndex++;
                     renderDomain(activeDomainIndices[currentNavIndex]);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    const vp = document.getElementById('engineViewport');
+                    const offset = vp ? (vp.getBoundingClientRect().top + window.scrollY - 100) : 0;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
                 } else {
                     // Domain complete in wizard mode
                     renderDomain(activeDomainIndices[currentNavIndex]); // Refresh UI for the last card
