@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "claude-fable-ai-governance-2026",
+      "title": "Deep Dive: The Fable Era - Why AI Governance Replaced the Model",
+      "date": "June 10, 2026",
+      "category": "Threat Analysis",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "Anthropic's Claude Fable release represents a paradigm shift from capability restriction to control-based access. The real product is the control layer around the model.",
+      "image": "/images/articles/claude-fable-ai-governance-2026.png",
+      "externalUrl": "articles/claude-fable-ai-governance-2026.html",
+      "readTime": "20 min read",
+      "tags": [
+        "Claude Fable",
+        "AI Governance",
+        "Anthropic",
+        "AI Security",
+        "Access Control",
+        "Frontier AI"
+      ]
+    },
+    {
       "id": "context-crisis-cybersecurity-2026",
       "title": "The Context Crisis in Cybersecurity: Why Security Alerts Make Less Sense Than Ever",
       "date": "June 09, 2026",
