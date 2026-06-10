@@ -2382,7 +2382,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         const ans = userState[c.control_id];
                         if (!ans) {
                             pendingC++;
-                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'Pending Evaluation', effort: 'TBD', rem: 'Control requires formal evaluation to determine compliance posture.', nist: c.nist_mapping, cis: c.cis_mapping, gdpr: c.gdpr_mapping, soc2: c.soc2_mapping, just: 'Pending formal evaluation.', rationale: 'Visibility Gap: Baseline not established.'}); 
+                            criticalGaps.push({id: c.control_id, domain: domain.name, title: c.control_title, risk: 'Pending Evaluation', effort: 'TBD', rem: 'Control requires formal evaluation to determine compliance posture.', nist: c.nist_mapping, cis: c.cis_mapping, gdpr: c.gdpr_mapping, soc2: c.soc2_mapping, just: 'Pending formal evaluation.', rationale: 'Visibility Gap: Baseline not established.'}); 
                             return;
                         }
                         
@@ -2402,14 +2402,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                         else if (isNA(ans)) naC++;
                         else if (ans === 'no') { 
                             gapC++; 
-                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: 'High', effort: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, gdpr: c.gdpr_mapping, soc2: c.soc2_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
+                            criticalGaps.push({id: c.control_id, domain: domain.name, title: c.control_title, risk: 'High', effort: 'High', rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, gdpr: c.gdpr_mapping, soc2: c.soc2_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale}); 
                         }
                         else {
                             // Maturity levels (adhoc, repeatable, defined, managed)
                             partC++; 
                             const ml = MATURITY_LEVELS[ans];
                             const riskLvl = mult <= 0.4 ? 'High' : 'Medium';
-                            criticalGaps.push({id: c.control_id, title: c.control_title, risk: riskLvl, effort: riskLvl, rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, gdpr: c.gdpr_mapping, soc2: c.soc2_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale, maturityLabel: ml ? ml.label : ans}); 
+                            criticalGaps.push({id: c.control_id, domain: domain.name, title: c.control_title, risk: riskLvl, effort: riskLvl, rem: c.remediation_advice, nist: c.nist_mapping, cis: c.cis_mapping, gdpr: c.gdpr_mapping, soc2: c.soc2_mapping, just: userState[c.control_id + '_just'], rationale: c.expert_rationale, maturityLabel: ml ? ml.label : ans}); 
                         }
                     });
                 });
@@ -2437,38 +2437,64 @@ document.addEventListener('DOMContentLoaded', async () => {
                     .sort((a,b) => (a.risk === 'High' ? -1 : 1))
                     .slice(0, 3);
 
-                // 2. Build Gap Table
-                const gapTableBody = [
-                    [
-                        { text: 'Control ID', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
-                        { text: 'Title', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
-                        { text: 'Risk', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
-                        { text: 'Comment/Justification', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] },
-                        { text: 'Remediation Advice', bold: true, fillColor: '#f3f4f6', margin: [0, 4, 0, 4] }
-                    ]
-                ];
-
-                if(criticalGaps.length === 0){
-                    gapTableBody.push([{text: 'Outstanding! No critical gaps identified in the evaluated scope.', colSpan: 4, alignment: 'center', margin: [0, 10, 0, 10], color: '#10B981', bold: true}, {}, {}, {}]);
-                } else {
-                    criticalGaps.forEach(g => {
-                        let riskColor = '#f59e0b';
-                        if (g.risk === 'High') riskColor = '#ef4444';
-                        else if (g.risk === 'Pending Evaluation') riskColor = '#9ca3af';
-
-                        gapTableBody.push([
-                            { text: 'A.' + g.id, margin: [0, 4, 0, 4] },
-                            { text: g.title, margin: [0, 4, 0, 4] },
-                            { text: g.risk.toUpperCase(), bold: true, color: riskColor, margin: [0, 4, 0, 4] },
-                            { text: g.just || 'N/A', fontSize: 8, margin: [0, 4, 0, 4], fontStyle: 'italic' },
-                            { text: g.rem || 'Review mapping and implement formal process logic.', margin: [0, 4, 0, 4] }
-                        ]);
+                // 2. Build Domain Findings
+                const domainFindingsContent = [];
+                activeDomainIndices.forEach(globalIdx => {
+                    const domain = grcData.domains[globalIdx];
+                    const domainGaps = criticalGaps.filter(g => g.domain === domain.name);
+                    
+                    domainFindingsContent.push({
+                        text: `${domain.name}`,
+                        style: 'domainHeader',
+                        tocItem: true,
+                        margin: [0, 20, 0, 10]
                     });
-                }
+
+                    if(domainGaps.length === 0){
+                        domainFindingsContent.push({ text: 'No critical gaps identified in this domain.', color: '#10B981', italic: true, margin: [5, 0, 0, 15] });
+                    } else {
+                        const dBody = [
+                            [
+                                { text: 'Control', bold: true, fillColor: '#f8fafc', color: '#475569', border: [false, true, false, true] },
+                                { text: 'Title', bold: true, fillColor: '#f8fafc', color: '#475569', border: [false, true, false, true] },
+                                { text: 'Risk', bold: true, fillColor: '#f8fafc', color: '#475569', border: [false, true, false, true] },
+                                { text: 'Remediation Advice', bold: true, fillColor: '#f8fafc', color: '#475569', border: [false, true, false, true] }
+                            ]
+                        ];
+                        
+                        domainGaps.forEach(g => {
+                            let riskColor = '#f59e0b';
+                            if (g.risk === 'High') riskColor = '#ef4444';
+                            else if (g.risk === 'Pending Evaluation') riskColor = '#9ca3af';
+
+                            dBody.push([
+                                { text: 'A.' + g.id, margin: [0, 4, 0, 4], border: [false, false, false, true], borderColor: ['#e2e8f0', '#e2e8f0', '#e2e8f0', '#e2e8f0'] },
+                                { text: g.title, margin: [0, 4, 0, 4], border: [false, false, false, true], borderColor: ['#e2e8f0', '#e2e8f0', '#e2e8f0', '#e2e8f0'] },
+                                { text: g.risk.toUpperCase(), bold: true, color: riskColor, margin: [0, 4, 0, 4], border: [false, false, false, true], borderColor: ['#e2e8f0', '#e2e8f0', '#e2e8f0', '#e2e8f0'] },
+                                { 
+                                    stack: [
+                                        g.just ? { text: 'Justification: ' + g.just, fontSize: 8, fontStyle: 'italic', color: '#64748b', margin: [0, 0, 0, 4] } : {},
+                                        { text: g.rem || 'Implement formal process logic.', fontSize: 9, color: '#334155' }
+                                    ],
+                                    margin: [0, 4, 0, 4], border: [false, false, false, true], borderColor: ['#e2e8f0', '#e2e8f0', '#e2e8f0', '#e2e8f0']
+                                }
+                            ]);
+                        });
+                        
+                        domainFindingsContent.push({
+                            table: {
+                                headerRows: 1,
+                                widths: ['12%', '28%', '15%', '45%'],
+                                body: dBody
+                            },
+                            layout: 'default',
+                            margin: [0, 0, 0, 20]
+                        });
+                    }
+                });
 
                 // 3. Extract Chart Canvas
                 const chartCanvas = document.getElementById('radarChart');
-                // Create a white background canvas so the graph isn't transparent in the PDF
                 let finalChartImage = '';
                 if(chartCanvas) {
                     const tempCanvas = document.createElement('canvas');
@@ -2480,73 +2506,98 @@ document.addEventListener('DOMContentLoaded', async () => {
                     ctx.drawImage(chartCanvas, 0, 0);
                     finalChartImage = tempCanvas.toDataURL("image/png", 1.0);
                 }
-                const chartImgObject = finalChartImage ? { image: finalChartImage, width: 280, alignment: 'center' } : { text: '[Chart rendering unavailable]', alignment: 'center' };
+                const chartImgObject = finalChartImage ? { image: finalChartImage, width: 350, alignment: 'center' } : { text: '[Chart rendering unavailable]', alignment: 'center' };
 
-                // 3.5 Use Hardcoded Base64 Logo for PDF Generation Offline & Securely
+                // 3.5 Use Hardcoded Base64 Logo
                 const logoBase64 = "data:image/png;base64,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";
 
                 // 4. Document Definition
-                // Assessor metadata for PDF
                 const assessorName = userState._assessorName || '';
                 const orgName = userState._orgName || '';
 
                 const docDefinition = {
-                    info: { title: 'ISO 27001 Gap Assessment' + (orgName ? ' — ' + orgName : ''), author: assessorName || 'TheHGTech', subject: 'Enterprise GRC Report' },
-                    pageMargins: [40, 60, 40, 60],
+                    info: { title: 'Enterprise Gap Assessment Report', author: assessorName || 'TheHGTech', subject: 'GRC Assessment' },
+                    pageMargins: [40, 70, 40, 60],
                     header: function(currentPage, pageCount) {
+                        if (currentPage === 1) return {};
                         return { 
                             margin: [40, 20, 40, 0],
                             columns: [
-                                logoBase64 ? { image: logoBase64, width: 20 } : { text: 'TheHGTech', bold: true, color: '#00d9ff' },
-                                { text: (orgName ? orgName + ' | ' : '') + 'TheHGTech Enterprise GRC Tool', alignment: 'right', color: '#00d9ff', bold: true, fontSize: 10, margin: [0, 5, 0, 0] }
+                                logoBase64 ? { image: logoBase64, width: 24 } : { text: 'TheHGTech', bold: true, color: '#0f172a' },
+                                { text: (orgName ? orgName + ' | ' : '') + 'Enterprise Security Posture', alignment: 'right', color: '#64748b', bold: true, fontSize: 9, margin: [0, 5, 0, 0] }
                             ]
                         };
                     },
                     footer: function(currentPage, pageCount) {
+                        if (currentPage === 1) return {};
                         return { 
                             stack: [
-                                { canvas: [{ type: 'line', x1: 40, y1: 0, x2: 555, y2: 0, lineWidth: 0.5, lineColor: '#e5e7eb' }], margin: [0, 10, 0, 10] },
+                                { canvas: [{ type: 'line', x1: 40, y1: 0, x2: 555, y2: 0, lineWidth: 0.5, lineColor: '#cbd5e1' }], margin: [0, 10, 0, 10] },
                                 { 
                                     columns: [
-                                        { text: 'Stay secure. Stay informed. Stay ahead.', fontSize: 8, italic: true, color: '#9ca3af', margin: [40, 0, 0, 0] },
-                                        { text: 'Page ' + currentPage + ' of ' + pageCount, alignment: 'right', margin: [0, 0, 40, 0], color: '#9ca3af', fontSize: 8 }
+                                        { text: 'Confidential & Proprietary', fontSize: 8, color: '#94a3b8', margin: [40, 0, 0, 0] },
+                                        { text: 'Page ' + currentPage + ' of ' + pageCount, alignment: 'right', margin: [0, 0, 40, 0], color: '#94a3b8', fontSize: 8 }
                                     ]
                                 }
                             ]
                         };
                     },
                     content: [
-                        { text: 'ISO 27001 Gap Analysis Executive Summary', style: 'mainHeader' },
-                        { text: 'Framework: ISO/IEC 27001:2022', style: 'subHeader' },
-                        (assessorName || orgName) ? { text: (orgName ? 'Organization: ' + orgName + '   |   ' : '') + (assessorName ? 'Assessed by: ' + assessorName : ''), fontSize: 10, color: '#374151', margin: [0, 0, 0, 5] } : {},
-                        { text: 'Generated on: ' + new Date().toLocaleDateString(), style: 'dateToken' },
-                        
+                        // COVER PAGE
                         {
-                            margin: [0, 30, 0, 20],
+                            stack: [
+                                { canvas: [{ type: 'rect', x: 0, y: 0, w: 515, h: 8, color: '#0f172a' }] },
+                                logoBase64 ? { image: logoBase64, width: 60, alignment: 'center', margin: [0, 80, 0, 30] } : { text: 'TheHGTech', style: 'coverTitle', alignment: 'center', margin: [0, 80, 0, 30] },
+                                { text: 'ENTERPRISE GAP ASSESSMENT REPORT', style: 'coverTitle', alignment: 'center' },
+                                { text: 'Security Posture & Compliance Alignment', style: 'coverSubtitle', alignment: 'center', margin: [0, 5, 0, 80] },
+                                
+                                { text: orgName ? `Prepared For: ${orgName}` : 'Confidential Assessment', style: 'coverDetails', alignment: 'center' },
+                                { text: assessorName ? `Lead Assessor: ${assessorName}` : '', style: 'coverDetails', alignment: 'center' },
+                                { text: `Assessment Date: ${new Date().toLocaleDateString()}`, style: 'coverDetails', alignment: 'center' },
+                                { text: `Framework: ${grcData.framework || 'ISO 27001 / NIST / CIS'}`, style: 'coverDetails', alignment: 'center', margin: [0, 0, 0, 150] },
+
+                                { text: 'Powered by TheHGTech GRC Engine', fontSize: 10, alignment: 'center', color: '#94a3b8' }
+                            ],
+                            pageBreak: 'after'
+                        },
+
+                        // TABLE OF CONTENTS
+                        { text: 'Table of Contents', style: 'sectionTitle', margin: [0, 0, 0, 15] },
+                        {
+                            toc: {
+                                title: { text: '' },
+                                numberStyle: { bold: true }
+                            },
+                            margin: [0, 0, 0, 30],
+                            pageBreak: 'after'
+                        },
+
+                        // EXECUTIVE SUMMARY
+                        { text: '1. Executive Summary', style: 'sectionTitle', tocItem: true, margin: [0, 0, 0, 15] },
+                        {
                             columns: [
                                 {
-                                    width: '45%',
+                                    width: '40%',
                                     stack: [
-                                        { text: 'Overall Readiness Posture', style: 'sectionHeader' },
-                                        { text: ui.overallScore.innerText, style: 'giantScore', color: ui.overallScore.style.color },
-                                        { text: matLbl.toUpperCase(), bold: true, fontSize: 13, color: matCol, margin: [0, 5, 0, 15] },
-                                        { text: 'Framework Alignment Indicators', bold: true, margin: [0, 15, 0, 5] },
+                                        { text: 'Overall Readiness', style: 'subSectionTitle' },
+                                        { text: ui.overallScore.innerText, style: 'giantScore', color: matCol },
+                                        { text: matLbl.toUpperCase(), bold: true, fontSize: 12, color: matCol, margin: [0, 5, 0, 20] },
+                                        { text: 'Framework Alignment', style: 'subSectionTitle' },
                                         {
                                             layout: 'noBorders',
                                             table: {
                                                 widths: ['*', 'auto'],
                                                 body: [
-                                                    ['• Assessed Controls:', { text: totalC + ' / ' + (totalC + pendingC), bold: true, color: '#4B5563' }],
-                                                    ['• NIST CSF 2.0 readiness:', { text: nistP + '%', bold: true, color: '#0A84FF' }],
-                                                    ['• CIS Controls v8 readiness:', { text: cisP + '%', bold: true, color: '#FF9F0A' }],
-                                                    ['• ISO 27001 Core alignment:', { text: ui.overallScore.innerText, bold: true, color: ui.overallScore.style.color }]
+                                                    ['Assessed Controls:', { text: totalC + ' / ' + (totalC + pendingC), bold: true, color: '#334155' }],
+                                                    ['NIST CSF 2.0:', { text: nistP + '%', bold: true, color: '#0ea5e9' }],
+                                                    ['CIS Controls v8:', { text: cisP + '%', bold: true, color: '#f59e0b' }]
                                                 ]
                                             }
                                         }
                                     ]
                                 },
                                 {
-                                    width: '55%',
+                                    width: '60%',
                                     stack: [
                                         chartImgObject
                                     ]
@@ -2554,57 +2605,52 @@ document.addEventListener('DOMContentLoaded', async () => {
                             ]
                         },
 
-                        { canvas: [{ type: 'line', x1: 0, y1: 0, x2: 515, y2: 0, lineWidth: 1, lineColor: '#e5e7eb' }], margin: [0, 20, 0, 20] },
+                        { canvas: [{ type: 'line', x1: 0, y1: 0, x2: 515, y2: 0, lineWidth: 1, lineColor: '#e2e8f0' }], margin: [0, 20, 0, 20] },
                         
-                        { text: 'STRATEGIC MATURITY INTERPRETATION', style: 'sectionHeader', margin: [0, 0, 0, 10] },
-                        { text: matDesc, margin: [10, 0, 10, 25], color: '#4B5563', fontSize: 10, lineHeight: 1.4, italic: true },
+                        { text: 'Strategic Maturity Interpretation', style: 'subSectionTitle', margin: [0, 0, 0, 5] },
+                        { text: matDesc, margin: [0, 0, 0, 25], color: '#475569', fontSize: 10, lineHeight: 1.5, italic: true },
 
-                        { text: 'EXECUTIVE ACTION PLAN (TOP PRIORITIES)', style: 'sectionHeader', margin: [0, 10, 0, 15] },
+                        // STRATEGIC ACTION PLAN
+                        { text: '2. Strategic Action Plan', style: 'sectionTitle', tocItem: true, pageBreak: 'before', margin: [0, 0, 0, 15] },
+                        { text: 'Top Priority Remediations', style: 'subSectionTitle', margin: [0, 0, 0, 15] },
                         priorityRecommendationList.length > 0 ? {
                             stack: priorityRecommendationList.map((p, index) => {
                                 return {
                                     margin: [0, 0, 0, 15],
                                     stack: [
-                                        { columns: [
-                                            { text: `${index + 1}. IMMEDIATELY RECTIFY: Control ${p.id}`, bold: true, color: '#111827', fontSize: 11 },
-                                            { text: `Effort: ${p.effort}`, alignment: 'right', fontSize: 8, color: p.effort === 'High' ? '#EF4444' : '#F59E0B', bold: true }
-                                        ]},
-                                        { text: `Risk: ${p.rationale ? p.rationale.split('|')[0].replace('Risk:', '').trim() : 'Critical control gap.'}`, fontSize: 9, color: '#ef4444', margin: [0, 4, 0, 0] },
-                                        { text: `Outcome: ${p.id.includes('5.') ? 'Dramatically reduces likelihood of successful exploitation.' : 'Strengthens identity boundary against unauthorized access.'}`, fontSize: 8, color: '#10B981', margin: [0, 2, 0, 0], italic: true },
-                                        { text: `Strategic Remediation: ${p.rem}`, fontSize: 9, color: '#4B5563', margin: [0, 4, 0, 0] }
+                                        {
+                                            canvas: [{ type: 'rect', x: 0, y: 0, w: 515, h: 25, color: '#f8fafc' }]
+                                        },
+                                        {
+                                            columns: [
+                                                { text: `Priority ${index + 1}: Control ${p.id}`, bold: true, color: '#0f172a', fontSize: 11, margin: [10, -20, 0, 0] },
+                                                { text: `Effort: ${p.effort}`, alignment: 'right', fontSize: 9, color: p.effort === 'High' ? '#ef4444' : '#f59e0b', bold: true, margin: [0, -20, 10, 0] }
+                                            ]
+                                        },
+                                        { text: `Risk Exposure: ${p.rationale ? p.rationale.split('|')[0].replace('Risk:', '').trim() : 'Critical control gap.'}`, fontSize: 9, color: '#ef4444', margin: [10, 10, 10, 0] },
+                                        { text: `Remediation Path: ${p.rem}`, fontSize: 9, color: '#334155', margin: [10, 5, 10, 10] }
                                     ]
                                 };
                             })
-                        } : { text: 'Maintain current security posture. No critical remediations prioritized.', italic: true, color: '#6B7280' },
+                        } : { text: 'Maintain current security posture. No critical remediations prioritized.', italic: true, color: '#64748b' },
 
-                        { text: 'Domain Readiness Distribution', style: 'sectionHeader', margin: [0, 20, 0, 10] },
-                        chartImgObject,
+                        // DETAILED FINDINGS BY DOMAIN
+                        { text: '3. Detailed Findings by Domain', style: 'sectionTitle', tocItem: true, pageBreak: 'before', margin: [0, 0, 0, 15] },
+                        { text: 'The following tables outline identified gaps, vulnerabilities, and missing controls segregated by security domain.', margin: [0, 0, 0, 20], color: '#64748b', fontSize: 10 },
+                        
+                        ...domainFindingsContent
 
-                        { text: 'Detailed Gap Analysis & Risk Registry', style: 'sectionHeader', pageBreak: 'before', margin: [0, 0, 0, 15] },
-                        { text: 'The following table outlines all identified gaps (Partial or Missing) with corresponding remediation guidance and framework mapping.', margin: [0, 0, 0, 10], color: '#6b7280', fontSize: 9 },
-                        {
-                            table: {
-                                headerRows: 1,
-                                widths: ['8%', '22%', '10%', '20%', '40%'],
-                                body: gapTableBody
-                            },
-                            layout: {
-                                hLineWidth: function(i, node) { return (i === 0 || i === node.table.body.length) ? 0 : 1; },
-                                vLineWidth: function(i) { return 0; },
-                                hLineColor: function(i) { return '#e5e7eb'; },
-                                paddingLeft: function(i) { return 4; },
-                                paddingRight: function(i) { return 4; },
-                            }
-                        }
                     ],
                     styles: {
-                        mainHeader: { fontSize: 22, bold: true, color: '#111827', margin: [0, 0, 0, 5] },
-                        subHeader: { fontSize: 14, color: '#374151', margin: [0, 0, 0, 2] },
-                        dateToken: { fontSize: 10, color: '#6b7280', margin: [0, 0, 0, 20] },
-                        sectionHeader: { fontSize: 16, bold: true, color: '#111827', margin: [0, 0, 0, 5] },
-                        giantScore: { fontSize: 44, bold: true, alignment: 'left' }
+                        coverTitle: { fontSize: 28, bold: true, color: '#0f172a', margin: [0, 0, 0, 10] },
+                        coverSubtitle: { fontSize: 16, color: '#64748b', margin: [0, 0, 0, 10] },
+                        coverDetails: { fontSize: 12, color: '#334155', margin: [0, 0, 0, 8] },
+                        sectionTitle: { fontSize: 20, bold: true, color: '#0f172a', margin: [0, 0, 0, 5] },
+                        subSectionTitle: { fontSize: 13, bold: true, color: '#334155', margin: [0, 0, 0, 8] },
+                        domainHeader: { fontSize: 15, bold: true, color: '#0ea5e9', margin: [0, 15, 0, 10] },
+                        giantScore: { fontSize: 48, bold: true, alignment: 'left' }
                     },
-                    defaultStyle: { font: 'Roboto', fontSize: 10, color: '#374151', lineHeight: 1.3 }
+                    defaultStyle: { font: 'Roboto', fontSize: 10, color: '#334155', lineHeight: 1.4 }
                 };
 
                 const outName = 'ISO27001_Gap_Assessment_' + new Date().toISOString().split('T')[0] + '.pdf';
