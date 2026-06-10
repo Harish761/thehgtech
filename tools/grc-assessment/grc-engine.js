@@ -212,12 +212,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (noHistEl) noHistEl.style.display = 'none';
         if (histFoundEl) histFoundEl.style.display = 'none';
 
+        let wrapper = document.getElementById('trendChartWrapper');
         let canvas = document.getElementById('trendChartCanvas');
-        if (!canvas) {
+        if (!wrapper) {
+            wrapper = document.createElement('div');
+            wrapper.id = 'trendChartWrapper';
+            wrapper.style.cssText = 'position: relative; width: 100%; height: 200px; margin-top: 0.8rem;';
+            
             canvas = document.createElement('canvas');
             canvas.id = 'trendChartCanvas';
-            canvas.style.cssText = 'width:100%; height:200px; margin-top:0.8rem;';
-            card.appendChild(canvas);
+            wrapper.appendChild(canvas);
+            card.appendChild(wrapper);
         }
 
         if (trendChartInstance) trendChartInstance.destroy();
