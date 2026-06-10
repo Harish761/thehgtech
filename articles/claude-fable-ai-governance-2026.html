@@ -485,6 +485,26 @@
 
         <p>Anthropic isn't selling a smarter brain; they are selling a comprehensively governed brain.</p>
 
+        <h3><i class="fas fa-project-diagram" style="color: var(--accent-cyan);"></i> In Practice: Dynamic Routing & Constitutional Filtering</h3>
+        <p>To understand how this operates practically, consider an enterprise SOC analyst querying Fable with: <em>"Analyze this memory dump and write a script to replicate the injection technique."</em></p>
+        
+        <p>Under the old paradigm, the model either refuses entirely (creating friction for defenders) or complies (creating a proliferation risk). Fable’s governance layer introduces <strong>dynamic routing</strong>. The primary intake classifier evaluates the prompt's intent against Constitutional AI principles. If the request crosses a strict capability threshold—such as weaponized code generation—the system doesn't just return a generic refusal. Instead, it dynamically routes the query to a less capable model (like Claude Opus 4.8) combined with a sanitized context window. The user receives threat analysis without the usable exploit primitive.</p>
+
+        <div class="mermaid" style="background: var(--code-bg); padding: 1rem; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
+        graph TD
+            A[User Prompt: 'Replicate Injection'] --> B{Intake Classifier}
+            B -->|Low Risk| C[Claude Fable Core]
+            B -->|High Risk| D{Constitutional Evaluator}
+            D -->|Benign Intent| E[Context Sanitizer]
+            E --> F[Legacy Model: Opus 4.8]
+            D -->|Malicious Intent| G[Hard Block & Audit Log]
+            
+            style A fill:#111,stroke:#fff
+            style C fill:#002d00,stroke:#00ff00
+            style G fill:#2d0000,stroke:#FF3D3D
+            style F fill:#001f3f,stroke:#00D9FF
+        </div>
+
         <div class="technical-box">
             <h3><i class="fas fa-code"></i> Example Detection Rule: Anomalous Frontier API Access</h3>
             <pre><code class="language-yaml">title: Unauthorized High-Volume Frontier AI API Access
@@ -558,6 +578,22 @@ tags:
         <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-cyan); text-align: center; margin: 3rem 0;">"Your most powerful non-human identity may soon be an AI system."</p>
 
         <p>If an enterprise deploys an autonomous agent powered by a Fable-class model to manage cloud infrastructure, that agent holds the keys to the kingdom. Security teams can no longer treat AI as just another SaaS application. AI systems must be treated as highly privileged identities requiring stringent governance.</p>
+        
+        <p>This extends far beyond just issuing an API key. Enterprise security teams must now architect <strong>AI Identity Lifecycles</strong>. This means logging the full semantic chain of an agent's reasoning, monitoring for objective drift (when an agent subtly changes its goal mid-task), and building "circuit breakers" that can instantly revoke an agent's permissions if its actions violate policy constraints.</p>
+
+        <div class="mermaid" style="background: var(--code-bg); padding: 1rem; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
+        graph LR
+            subgraph AI_Identity_Lifecycle ["Enterprise AI Identity Lifecycle"]
+                A[Provision API Token] --> B[Assign RBAC Scope]
+                B --> C[Semantic Monitoring]
+                C --> D{Objective Drift Detected?}
+                D -->|No| E[Log Reasoning Chain]
+                D -->|Yes| F[Trigger Circuit Breaker]
+            end
+            
+            style F fill:#2d0000,stroke:#FF3D3D
+            style C fill:#001f3f,stroke:#00D9FF
+        </div>
 
         <div class="success-box">
             <strong><i class="fas fa-shield-alt"></i> IMMEDIATE ACTION:</strong>
@@ -597,6 +633,12 @@ tags:
         <p>If raw intelligence becomes commoditized, or if the differences between top-tier models become marginal for 95% of enterprise use cases, what is the competitive moat?</p>
         
         <p><strong>The moat is trust.</strong> The moat is the operational safety, compliance adherence, and enterprise controls built around the model. A CISO will not authorize a deployment of a highly capable, autonomous agent if they do not inherently trust the guardrails surrounding it. Anthropic is betting that their control layer—their safety classifiers, their routing mechanisms, their constitutional alignment—will be harder to replicate than the model itself.</p>
+
+        <div class="warning-box">
+            <h3><i class="fas fa-exclamation-triangle" style="color: var(--accent-red);"></i> The Threat of "Governance Washing"</h3>
+            <p>We must remain highly critical of this shift. Anthropic's pivot introduces a new industry risk: <strong>Governance Washing</strong>. As "control layers" become the new marketing buzzword, lesser vendors will inevitably wrap thin, easily bypassed regular expressions around open-source models and brand them as "Enterprise Governed AI."</p>
+            <p>Furthermore, Anthropic’s control layer remains a proprietary black box. Cybersecurity leaders are being asked to trust an invisible, un-auditable routing engine that operates on the vendor's infrastructure. Until these governance layers are standardized, transparent, and subject to independent red-teaming frameworks, the shift to control-based security remains a leap of faith rather than a cryptographic guarantee.</p>
+        </div>
 
         <h2>8. Conclusion</h2>
         <p>The release of Claude Fable may not be remembered historically for its benchmark scores or its context window size. It will likely be remembered as the moment the frontier AI industry quietly changed its philosophy.</p>
