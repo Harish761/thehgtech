@@ -111,7 +111,7 @@ body {
     grid-template-columns: 1.5fr 1fr;
     gap: 2rem;
     max-width: 1200px;
-    margin: 0 auto 4rem;
+    margin: 0 auto 2rem;
     padding: 0 2rem;
 }
 
@@ -199,7 +199,7 @@ body {
 
 .grc-container {
     display: flex;
-    min-height: 85vh;
+    min-height: 60vh;
     /* Auto height to fit all content */
     background: rgba(10, 10, 10, 0.4);
     border: 1px solid var(--border);
@@ -803,7 +803,7 @@ body {
 
 /* SCOPE SELECTION VIEW */
 .view-scope {
-    padding: 4rem 2rem;
+    padding: 2.5rem 2rem;
     align-items: center;
     background: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.05), transparent 60%);
     overflow-y: auto;
