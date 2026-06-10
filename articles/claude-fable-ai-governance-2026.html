@@ -65,13 +65,164 @@
     <style>
         :root {
             --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
             --accent-cyan: #00D9FF;
             --accent-red: #FF3D3D;
+            --border: rgba(255, 255, 255, 0.1);
             --code-bg: #111;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-content h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.6rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .article-image {
+            width: 100%;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border);
+        }
+
+        .technical-box {
+            background: rgba(0, 217, 255, 0.03);
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--accent-cyan);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .technical-box > *:first-child,
+        .warning-box > *:first-child {
+            margin-top: 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.05);
+            border: 1px solid rgba(255, 61, 61, 0.2);
+            border-left: 5px solid var(--accent-red);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+        
+        .success-box {
+            background: rgba(16, 185, 129, 0.05);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-left: 5px solid #10B981;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        pre {
+            background: #000;
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.95rem;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        .article-content p code, .article-content li code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            color: var(--accent-cyan);
         }
     </style>
 
     <!-- Style System - FULL SET REQUIRED -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -116,6 +267,69 @@
     <script>mermaid.initialize({startOnLoad:true, theme: 'dark', themeVariables: { primaryColor: '#00D9FF', primaryTextColor: '#fff', primaryBorderColor: '#00D9FF', lineColor: '#00D9FF', secondaryColor: '#111', tertiaryColor: '#1a1a1a' }});</script>
 </head>
 <body class="dark-mode">
+
+    <!-- Mobile Header -->
+<!-- ========== NEW SMART MOBILE HEADER ========== -->
+<header class="m-header m-only">
+    <div class="m-header__logo">
+        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </a>
+    </div>
+    <div class="m-header__actions">
+        <button class="m-header__btn" id="m-theme-toggle-top" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </button>
+        <!-- Search triggers Command Palette -->
+        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </button>
+        <!-- Hamburger Menu Toggle -->
+        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+<div class="m-menu-overlay m-only" id="m-menu-overlay">
+    <div class="m-menu-header">
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="m-menu-content">
+        <div class="m-menu-section">
+            <div class="m-menu-title">Intelligence</div>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Resources</div>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Tools</div>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Settings</div>
+            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- Desktop Header -->
 <header class="header" role="banner">
@@ -212,16 +426,17 @@
     </div>
 </header>
 
-<div class="container">
+<main class="article-container">
     <a href="/articles.html" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
         <i class="fas fa-arrow-left"></i> Back to Articles
     </a>
 
     <article>
-        <header style="margin-bottom: 3rem;">
-            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 1rem;">Deep Dive: The Fable Era - Why AI Governance Replaced the Model</h1>
+<div class="article-content">
+        <header class="article-header">
+            <h1>Deep Dive: The Fable Era - Why AI Governance Replaced the Model</h1>
             <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem;">The real product was never the model. The real product is the control layer around the model.</p>
-            <img src="/images/articles/claude-fable-ai-governance-2026.png" alt="Cybersecurity illustration of AI Governance and Control Layers" style="width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 24px rgba(0,217,255,0.1);">
+            <img src="/images/articles/claude-fable-ai-governance-2026.png" alt="Cybersecurity illustration of AI Governance and Control Layers" class="featured-image">
         </header>
 
         <div class="alert-box" style="border-left-color: var(--accent-cyan); background-color: rgba(0,217,255,0.05);">
@@ -305,13 +520,13 @@ tags:
 
         <div class="mermaid" style="background: var(--code-bg); padding: 1rem; border-radius: 8px; border: 1px solid var(--border); margin: 2rem 0;">
         graph TD
-            subgraph Traditional Enterprise Security
+            subgraph Traditional_Enterprise_Security ["Traditional Enterprise Security"]
                 A[Domain Admin Account] --> B{PAM / JIT Controls}
                 B -->|Approved| C[Active Directory]
                 B -->|Denied| D[Alert SOC]
             end
 
-            subgraph Frontier AI Security (The Fable Model)
+            subgraph Frontier_AI_Security ["Frontier AI Security (The Fable Model)"]
                 E[Raw Capability Model / Mythos] --> F{Safety Classifiers / Guardrails}
                 F -->|Safe Prompt| G[Execute Task]
                 F -->|Unsafe Prompt| H[Route to Legacy Model / Block]
@@ -415,7 +630,8 @@ tags:
             <p><strong>Published:</strong> June 10, 2026</p>
             <p><strong>Last Updated:</strong> June 10, 2026</p>
         </div>
-    </article>
+    </div>
+</article>
 
     <div class="interaction-bar">
         <div class="like-section">
@@ -433,7 +649,7 @@ tags:
             <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
         </div>
     </div>
-</div>
+</main>
 
 <footer>
     <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
