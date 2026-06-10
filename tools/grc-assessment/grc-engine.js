@@ -344,6 +344,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         ui.btnNextDomain.addEventListener('click', () => {
             if (currentNavIndex < activeDomainIndices.length - 1) {
                 currentNavIndex++;
+                currentControlIndex = 0;
                 renderDomain(activeDomainIndices[currentNavIndex]);
                 updateSidebarActiveState();
                 const mainArea = document.querySelector('.content-header');
@@ -628,6 +629,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // ==========================================
     function startEngine() {
         currentNavIndex = 0;
+        currentControlIndex = 0;
         renderSidebarNav();
         renderDomain(activeDomainIndices[currentNavIndex]); // Pass global index
         updateOverallScore();
@@ -660,6 +662,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             navBtn.addEventListener('click', () => {
                 currentNavIndex = activeIdx;
+                currentControlIndex = 0;
                 renderDomain(activeDomainIndices[currentNavIndex]);
                 updateSidebarActiveState();
                 const mainArea = document.querySelector('.content-header');
