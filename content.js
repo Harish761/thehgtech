@@ -179,6 +179,39 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-11645",
+            "dateAdded": "Jun 09, 2026",
+            "vendor": "Google Chromium V8",
+            "description": "Google Chromium V8 out-of-bounds read and write vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. This vulnerability could affect mul",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11645",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-7473",
+            "dateAdded": "Jun 09, 2026",
+            "vendor": "Arista Extensible Operating System",
+            "description": "Arista Extensible Operating System (EOS) contains an incomplete comparison with missing factors vulnerability when the switch incorrectly decapsulate and forwards other unexpected tunneled packet with",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7473",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-20245",
+            "dateAdded": "Jun 09, 2026",
+            "vendor": "Cisco Catalyst SD-WAN Manager",
+            "description": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbi",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20245",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-42271",
             "dateAdded": "Jun 08, 2026",
             "vendor": "BerriAI LiteLLM",
@@ -209,17 +242,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28318",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-45247",
-            "dateAdded": "Jun 03, 2026",
-            "vendor": "Mirasvit Mirasvit Full Page Cache Warmer",
-            "description": "Mirasvit Full Page Cache Warmer contains a deserialization of untrusted data vulnerability that could allow unauthenticated attackers to achieve remote code execution by supplying a crafted serialized",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45247",
             "isZeroDay": false
         }
     ],
