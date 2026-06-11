@@ -3,6 +3,16 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
+        <loc>https://thehgtech.com/articles/copilot-vs-apple-intelligence-security-2026.html</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.99</priority>
+        <image:image>
+            <image:loc>https://thehgtech.com/images/articles/copilot-vs-apple-intelligence-security-2026.png</image:loc>
+            <image:title>Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)</image:title>
+        </image:image>
+    </url>
+    <url>
         <loc>https://thehgtech.com/articles/ai-cyber-arms-race-mythos-daybreak-2026.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>

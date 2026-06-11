@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "id": "copilot-vs-apple-intelligence-security-2026",
+      "title": "Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)",
+      "date": "June 11, 2026",
+      "category": "Architecture & Security",
+      "badge": "RESEARCH",
+      "author": "Harish G",
+      "excerpt": "An architectural and cybersecurity analysis comparing Microsoft Copilot and Apple Intelligence on enterprise endpoints. Explore AI data flows, EDR visibility, and governance.",
+      "image": "/images/articles/copilot-vs-apple-intelligence-security-2026.png",
+      "externalUrl": "articles/copilot-vs-apple-intelligence-security-2026.html",
+      "readTime": "20 min read",
+      "tags": [
+        "Microsoft Copilot",
+        "Apple Intelligence",
+        "Enterprise AI",
+        "Security Architecture",
+        "Endpoint Security"
+      ]
+    },
+    {
       "id": "claude-fable-ai-governance-2026",
       "title": "Deep Dive: The Fable Era - Why AI Governance Replaced the Model",
       "date": "June 10, 2026",
