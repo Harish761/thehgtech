@@ -22,7 +22,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser requests beautifulsoup4 pyyaml google-generativeai
+        run: pip install feedparser requests beautifulsoup4 pyyaml google-genai
 
       - name: Run RSS Threat Intel Fetcher
         run: python fetch_threat_intel.py --both

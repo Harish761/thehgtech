@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests google-generativeai beautifulsoup4 pytz
+          pip install feedparser requests google-genai beautifulsoup4 pytz
       
       - name: Run content update script
         env:
@@ -61,6 +61,6 @@ jobs:
         run: |
           echo "### 🎉 TheHGTech Content Update Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Mode**: RSS + Gemini API (Gemini-1.5-Flash) + CISA CVE" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode**: RSS + Gemini API (Gemini-2.0-Flash) + CISA CVE" >> $GITHUB_STEP_SUMMARY
           echo "- **Time**: $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
           echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY

@@ -32,7 +32,8 @@ from urllib.parse import urlparse
 import re
 
 try:
-    import google.generativeai as genai
+    from google import genai
+    from google.genai import types
     import time
     GEMINI_AVAILABLE = True
 except ImportError:
@@ -807,7 +808,7 @@ const threatIntelHistory = {json.dumps(history, indent=4)};
 # ──────────────────────────────────────────────────────────────
 # AI-Powered Insights
 # ──────────────────────────────────────────────────────────────
-def call_gemini_api(prompt, model="gemini-flash-latest"):
+def call_gemini_api(prompt, model="gemini-2.0-flash"):
     """Call Gemini API with error handling and rate limiting"""
     if not GEMINI_AVAILABLE:
         return None
@@ -818,18 +819,18 @@ def call_gemini_api(prompt, model="gemini-flash-latest"):
         return None
     
     try:
-        genai.configure(api_key=api_key)
+        client = genai.Client(api_key=api_key)
         # 15 RPM limit on free tier, wait 5 seconds before call
         time.sleep(5)
         
-        gen_model = genai.GenerativeModel(
-            model,
-            generation_config=genai.types.GenerationConfig(
+        response = client.models.generate_content(
+            model=model,
+            contents=prompt,
+            config=types.GenerateContentConfig(
                 temperature=0.7,
                 max_output_tokens=1000
             )
         )
-        response = gen_model.generate_content(prompt)
         return response.text
     except Exception as e:
         print(f"  ⚠ Gemini API error: {e}")

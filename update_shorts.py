@@ -15,7 +15,8 @@ import re
 import time
 from datetime import datetime, timedelta
 import pytz
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
 import feedparser
 from html import unescape, escape
@@ -761,16 +762,7 @@ Entities: {article['source']}, security-intel, dry-run
         return fake_content
 
     # Real Gemini Run sequence
-    genai.configure(api_key=api_key)
-    # Use gemini-1.5-flash-latest which has a 15 RPM free tier limit
-    model = genai.GenerativeModel(
-        'gemini-flash-latest',
-        system_instruction="You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders.",
-        generation_config=genai.types.GenerationConfig(
-            temperature=0.3,
-            max_output_tokens=4000,
-        )
-    )
+    client = genai.Client(api_key=api_key)
         
     # Retry logic for Gemini API
     max_retries = 3
@@ -781,7 +773,15 @@ Entities: {article['source']}, security-intel, dry-run
             import time
             time.sleep(5)
             
-            response = model.generate_content(prompt)
+            response = client.models.generate_content(
+                model='gemini-2.0-flash',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction="You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders.",
+                    temperature=0.3,
+                    max_output_tokens=4000,
+                )
+            )
             content = response.text
             
             # Decode HTML entities (fix &#x27; → ')
@@ -799,14 +799,6 @@ Entities: {article['source']}, security-intel, dry-run
             
         except Exception as e:
             print(f"⚠️  Gemini Attempt {attempt + 1} failed: {e}")
-            if "404" in str(e) and attempt == max_retries - 1:
-                print("🔍 Checking available models for this API key...")
-                try:
-                    for m in genai.list_models():
-                        if 'generateContent' in m.supported_generation_methods:
-                            print(f"  - Available model: {m.name}")
-                except Exception as ex:
-                    print(f"❌ Failed to list models: {ex}")
             if attempt < max_retries - 1:
                 time.sleep(2 * (attempt + 1)) # Exponential backoff
             else:

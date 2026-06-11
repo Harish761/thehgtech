@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install google-generativeai requests beautifulsoup4 lxml
+        run: pip install google-genai requests beautifulsoup4 lxml
 
       - name: Run Breach Generator
         env:
