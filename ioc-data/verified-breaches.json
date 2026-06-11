@@ -16373,6 +16373,35 @@
       "Description": "In December 2020, <a href=\"https://portswigger.net/daily-swig/uc-berkeley-confirms-data-breach-becomes-latest-victim-of-accellion-cyber-attack\" target=\"_blank\" rel=\"noopener\">the University of California suffered a data breach due to vulnerability in in a third-party provider, Accellion</a>. The breach exposed extensive personal data on both students and staff including 547 thousand unique email addresses, names, dates of birth, genders, social security numbers, ethnicities and other academic related data attributes. Further analysis is available in <a href=\"https://cgorlla.github.io/project/uc\" target=\"_blank\" rel=\"noopener\">Exploring the Impact of the UC Data Breach</a>. The data was provided to HIBP courtesy of Cyril Gorlla."
     }
   ],
+  "nottingham.ac.uk": [
+    {
+      "Name": "UniversityOfNottingham",
+      "Title": "University of Nottingham",
+      "BreachDate": "2026-06-09",
+      "AddedDate": "2026-06-10T22:13:31Z",
+      "PwnCount": 454635,
+      "DataClasses": [
+        "Academic records",
+        "Citizenship statuses",
+        "Dates of birth",
+        "Disabilities",
+        "Email addresses",
+        "Ethnicities",
+        "Genders",
+        "IP addresses",
+        "Names",
+        "Passport numbers",
+        "Phone numbers",
+        "Physical addresses",
+        "Purchases",
+        "Salutations",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In June 2026, <a href=\"https://www.bbc.com/news/articles/ckg0lkp042zo\" target=\"_blank\" rel=\"noopener\">the University of Nottingham was the target of a cyber attack</a>, later linked to a ShinyHunters \"pay or leak\" extortion campaign. Tens of gigabytes of data were subsequently published online and included 455k unique email addresses along with extensive personal information including names, addresses, phone numbers, ethnicities, disabilities, passport numbers and information relating to academic enrolments and fee payments. <a href=\"https://www.nottingham.ac.uk/currentstudents/news/student-and-alumni-data-has-been-compromised-in-a-data-security-incident\" target=\"_blank\" rel=\"noopener\">In a post about the incident</a>, the university advised that the breach affected both \"current students, and alumni\"."
+    }
+  ],
   "upenn.edu": [
     {
       "Name": "UniversityOfPennsylvania",
