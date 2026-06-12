@@ -780,7 +780,7 @@ Entities: {article['source']}, security-intel, dry-run
                         "content": prompt
                     }
                 ],
-                model="llama-3.1-8b-instant",
+                model="llama-3.3-70b-versatile",
                 temperature=0.3,
                 max_tokens=4000,
             )
