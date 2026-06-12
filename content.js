@@ -4,95 +4,113 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jun 07 2026",
-            "headline": "Microsoft Forks Windows Terminal—Isolated AI Built Directly Into Console",
-            "title": "Microsoft Releases Open-Source Intelligent Terminal Fork with Native AI Integration",
-            "content": "Microsoft has released an open-source fork of Windows Terminal named Intelligent Terminal, introducing native artificial intelligence capabilities directly into the command-line interface. The tool allows developers and system administrators to interact with an AI assistant without disrupting their active terminal sessions. By running the AI in an isolated side-panel or background process, the terminal prevents AI-generated commands from executing automatically or interfering with standard workflows. This release reflects a growing industry trend of embedding large language models into developer tools to accelerate troubleshooting and command generation. Users can download the open-source repository from GitHub to test the experimental features and integrate their own API keys.",
+            "date": "Jun 11 2026",
+            "headline": "Maine Breach Portal Abused",
+            "title": "Fake Data Breach Disclosures Submitted to Maine's Official Breach Portal",
+            "content": "In a surprising turn of events, Maine's official breach portal has been exploited to publish fake data breach disclosures, prompting companies to deny the claims. The fraudulent submissions were made before their legitimacy could be verified, highlighting a potential vulnerability in the system. This incident underscores the importance of verifying the accuracy of breach disclosures to prevent unnecessary panic and reputational damage. The Maine breach portal is designed to provide transparency into data breaches affecting the state's residents, but this abuse could erode trust in the system. As a result, companies and individuals should be cautious when reviewing breach disclosures and verify the information through official channels. Entities: Maine breach portal, data breach disclosures",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/hands-on-with-intelligent-terminal-an-ai-powered-windows-terminal/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/maine-breach-portal-abused-to-publish-fake-data-breach-disclosures/",
             "relatedResources": []
         },
         {
-            "date": "Jun 06 2026",
-            "headline": "AI Agent Finds 21 FFmpeg Zero-Days—Chrome Patches Record 429 Bugs",
-            "title": "Autonomous AI Agent Discovers 21 FFmpeg Vulnerabilities as Chrome Patches 429 Bugs",
-            "content": "An autonomous artificial intelligence agent has discovered 21 previously unknown zero-day vulnerabilities within the FFmpeg multimedia framework. FFmpeg is a widely used open-source library integrated into numerous video processing applications, web browsers, and media players, making the potential impact of these flaws highly widespread. Concurrently, Google has released Chrome version 149, which addresses a record-breaking 429 security bugs, highlighting the escalating scale of vulnerability detection. The dual milestones demonstrate how automated tools and AI are rapidly accelerating both the discovery and remediation of software vulnerabilities. Security teams should immediately inventory their environments for FFmpeg dependencies and update Google Chrome installations to version 149 to mitigate potential exploitation risks.",
+            "date": "Jun 11 2026",
+            "headline": "ShinyHunters Hit Universities",
+            "title": "ShinyHunters Exploit Oracle PeopleSoft Zero-Day to Breach Universities",
+            "content": "The ShinyHunters extortion crew has exploited an unpatched flaw in Oracle PeopleSoft, tracked as CVE-2026-35273, to break into enterprise systems, steal data, and demand payment to keep it private. The campaign has primarily targeted universities, with Google's Mandiant attributing the activity to the group it tracks as UNC6240. This zero-day vulnerability allows unauthenticated remote code execution, making it a high-severity threat. Universities and organizations using Oracle PeopleSoft should immediately apply the necessary patches or mitigations to prevent exploitation. The ShinyHunters group is known for its aggressive tactics, and this incident highlights the need for prompt action to protect sensitive data. Entities: ShinyHunters, Oracle PeopleSoft, CVE-2026-35273, UNC6240",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
+            "sourceUrl": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html",
             "relatedResources": []
         },
         {
-            "date": "Jun 06 2026",
-            "headline": "Miasma Worm Infects 73 Microsoft GitHub Repositories—Supply Chain Alert",
-            "title": "Self-Replicating Miasma Worm Compromises 73 Microsoft GitHub Repositories",
-            "content": "A self-replicating supply chain attack known as the Miasma worm has compromised 73 official Microsoft GitHub repositories. The security incident affected repositories across four distinct Microsoft GitHub organizations, including Azure, Azure-Samples, Microsoft, and MicrosoftDocs. Attackers utilized automated scripts to inject malicious code into these repositories, aiming to compromise downstream developers and systems that trust Microsoft's open-source code. This campaign highlights the persistent threat of automated supply chain attacks targeting trusted developer ecosystems to maximize distribution. Organizations utilizing code from these specific Microsoft repositories should immediately audit their codebases, verify commit signatures, and monitor for unauthorized changes.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 06 2026",
-            "headline": "Zero-Day Alert: Cisco SD-WAN Flaw CVE-2026-20245 Under Active Attack",
-            "title": "Unpatched Cisco Catalyst SD-WAN Manager Vulnerability Actively Exploited in the Wild",
-            "content": "Cisco has warned customers that a high-severity security vulnerability in its Catalyst SD-WAN Manager is being actively exploited in the wild. Tracked as CVE-2026-20245, the flaw carries a Common Vulnerability Scoring System score of 7.8 out of 10.0. The vulnerability affects both on-premises deployments and Cisco SD-WAN Cloud instances, potentially allowing unauthorized access or administrative privilege escalation. Because Cisco has not yet released a patch to resolve this security flaw, affected organizations face immediate exposure to external threat actors. Network administrators must implement Cisco's recommended temporary workarounds, restrict access to management interfaces, and closely monitor system logs for indicators of compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-manager-cve-2026.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 06 2026",
-            "headline": "Everest Forms Pro Flaw Exploited—WordPress Sites Face Complete Takeover",
-            "title": "Critical CVE-2026-3300 Vulnerability in Everest Forms Pro Actively Exploited",
-            "content": "Threat actors are actively exploiting a critical security vulnerability in the Everest Forms Pro plugin for WordPress, allowing them to gain complete administrative control over affected websites. Tracked as CVE-2026-3300, the flaw stems from an input validation issue that enables remote attackers to execute arbitrary code without authentication. The vulnerability impacts all versions of Everest Forms Pro prior to version 3.0.1, putting thousands of business websites at immediate risk of data theft and defacement. This campaign aligns with a broader trend of attackers targeting popular WordPress plugins to establish persistent access and deploy malicious payloads. Administrators using Everest Forms Pro must immediately update to version 3.0.1 or later to mitigate the threat and review access logs for unauthorized administrative accounts.",
+            "date": "Jun 11 2026",
+            "headline": "Oracle PeopleSoft Zero-Day",
+            "title": "Oracle Mitigates PeopleSoft Zero-Day Exploited in ShinyHunters Data Theft Attacks",
+            "content": "Oracle has issued a warning about a critical PeopleSoft Suite zero-day vulnerability, tracked as CVE-2026-35273, which allows unauthenticated remote code execution. This flaw is being actively exploited in ShinyHunters data theft attacks, highlighting the need for immediate attention. The vulnerability affects Oracle PeopleSoft systems, and users should apply the recommended mitigations to prevent exploitation. Oracle has not provided a patch for the vulnerability, but users can implement workarounds to reduce the risk of attack. As the ShinyHunters group continues to exploit this vulnerability, organizations using Oracle PeopleSoft should prioritize applying these mitigations to protect their data. Entities: Oracle PeopleSoft, CVE-2026-35273, ShinyHunters",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-everest-forms-pro-flaw-exploited-to-take-over-wordpress-sites/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "Gentlemen Ransomware Claims 478",
+            "title": "The Gentlemen Ransomware Operation Claims 478 Victims, Spreads Like a Worm",
+            "content": "A new analysis of The Gentlemen operation has revealed that the financially motivated threat group has claimed 478 victims, with the ability to spread like a worm. The group initially operated as an affiliate, conducting double extortion attacks and leveraging resources from various ransomware-as-a-service (RaaS) schemes. The Gentlemen ransomware has been linked to the LockBit (aka Tenacious Mantis) RaaS scheme, highlighting the evolving nature of ransomware threats. Organizations should be aware of the potential for ransomware attacks to spread rapidly and take proactive measures to prevent infections, such as implementing robust backup systems and keeping software up to date. Entities: The Gentlemen, LockBit, Tenacious Mantis, ransomware-as-a-service",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/the-gentlemen-ransomware-claims-478.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "AudiA6 Crypto-Laundering Service",
+            "title": "Authorities Dismantle AudiA6 Ransomware Crypto-Laundering Service",
+            "content": "Law enforcement has dismantled the AudiA6 cryptocurrency service, which was allegedly used by ransomware actors and other cybercriminals to launder over $380 million. The AudiA6 service was a key component in the ransomware ecosystem, enabling attackers to convert stolen funds into usable currency. The takedown of this service is a significant blow to ransomware operators, who rely on these services to profit from their attacks. As a result, ransomware groups may face increased difficulty in laundering their funds, potentially disrupting their operations. Entities: AudiA6, ransomware, cryptocurrency laundering",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/legal/authorities-dismantle-audia6-ransomware-crypto-laundering-service/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "Oracle PeopleSoft Vulnerability",
+            "title": "Oracle Addresses PeopleSoft Vulnerability Amid Reports of Zero-Day Attacks",
+            "content": "Oracle has released mitigations for CVE-2026-35273, a critical vulnerability in PeopleSoft, although the company has not confirmed whether it is being exploited in zero-day attacks. The vulnerability allows unauthenticated remote code execution, making it a high-severity threat. Oracle PeopleSoft users should apply the recommended mitigations to prevent exploitation, as the ShinyHunters group has been linked to attacks exploiting this vulnerability. The incident highlights the importance of keeping software up to date and applying security patches promptly to prevent exploitation. As Oracle continues to investigate the vulnerability, users should remain vigilant and monitor for potential attacks. Entities: Oracle PeopleSoft, CVE-2026-35273, ShinyHunters",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/oracle-addresses-peoplesoft-vulnerability-amid-reports-of-zero-day-attacks/",
             "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jun 06 2026",
-            "headline": "OpenAI Launches Lockdown Mode—Mitigating ChatGPT Prompt Injection Risks",
-            "title": "OpenAI Introduces Lockdown Mode to Protect Sensitive Enterprise Data From Prompt Injection",
-            "content": "OpenAI has introduced Lockdown Mode for ChatGPT, a new security feature designed to restrict the exposure of sensitive data during prompt injection attacks. Prompt injection occurs when malicious inputs manipulate a large language model to bypass safety filters or leak system instructions and user data. While OpenAI acknowledges that Lockdown Mode does not entirely eliminate the risk of sophisticated prompt injections, it significantly reduces the likelihood of unauthorized data exfiltration. Enterprise administrators and developers should enable this mode within their API configurations and workspace settings to establish a stronger security baseline. This release highlights the industry's ongoing struggle to secure LLM-based applications against indirect prompt injection vectors as enterprise adoption scales.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+            "date": "Jun 10 2026",
+            "headline": "Microsoft Limits Claude Fable Use",
+            "title": "Microsoft Restricts Anthropic's Claude Fable Over Data Retention Concerns",
+            "content": "Microsoft is limiting the use of Anthropic's Claude Fable AI model for its employees due to concerns over the model's data retention requirements. Anthropic released Claude Fable, its first Mythos-class AI model, which has raised concerns inside Microsoft. The company is taking a cautious approach to the use of the model, citing the need to protect sensitive data. This move highlights the importance of data retention policies in the development and deployment of AI models. Microsoft's decision may impact the adoption of Claude Fable in other organizations, as they weigh the benefits of the model against potential data security risks. The incident also underscores the need for clear guidelines on data retention and usage in AI development. Entities: Claude Fable, Anthropic, Microsoft, data retention",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/report/947575/microsoft-claude-fable-5-restricted-internally",
             "relatedResources": []
         },
         {
-            "date": "Jun 03 2026",
-            "headline": "OpenAI Outlines Global Policy Agenda—Focusing on Safety and Workforce Transition",
-            "title": "OpenAI Releases Comprehensive Public Policy Agenda Targeting AI Safety and Global Standards",
-            "content": "OpenAI has published its official public policy agenda, establishing a framework to guide global AI governance, safety protocols, and societal impact. The agenda focuses on four core pillars: robust safety standards, youth protection measures, workforce transition support, and the harmonization of international AI regulations. By outlining these priorities, OpenAI aims to collaborate with policymakers to address the economic disruptions caused by rapid automation and generative AI deployment. Security leaders and compliance officers should review these guidelines to align their internal AI governance frameworks with emerging global regulatory trends. This proactive policy push comes as governments worldwide accelerate efforts to draft binding legislation for frontier AI models.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/public-policy-agenda",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 06 2026",
-            "headline": "Hugging Face Coordinates 5 Small Models to Run Complex Financial Workflows",
-            "title": "Hugging Face Demonstrates Multi-Model Collaborative Framework Using Small Language Models",
-            "content": "Hugging Face has detailed a collaborative experiment demonstrating how five distinct small language models can work together to execute complex agentic workflows. By partitioning tasks among specialized models rather than relying on a single massive LLM, the project successfully simulated a dynamic financial drama scenario. This multi-model approach highlights the growing viability of small language models, which offer lower latency, reduced operational costs, and easier on-premises deployment. Developers and system architects can leverage this framework to build highly specialized, cost-effective AI agents for enterprise applications without the overhead of frontier models. The project underscores a broader industry shift toward decentralized, modular AI architectures that prioritize efficiency over sheer parameter size.",
+            "date": "Jun 08 2026",
+            "headline": "OpenEnv Backed for Agentic RL",
+            "title": "The Open Source Community Supports OpenEnv for Agentic Reinforcement Learning",
+            "content": "The open source community is backing OpenEnv for agentic reinforcement learning (RL), a development that could accelerate the adoption of RL in various applications. Agentic RL involves training agents to make decisions in complex environments, and OpenEnv provides a framework for this type of learning. The support from the open source community is significant, as it can lead to further development and improvement of OpenEnv. This, in turn, can benefit organizations looking to leverage agentic RL in their operations. The use of OpenEnv can also facilitate collaboration and knowledge sharing among researchers and developers. As the field of agentic RL continues to evolve, the role of OpenEnv is likely to become increasingly important. Entities: OpenEnv, agentic RL, reinforcement learning",
             "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+            "sourceUrl": "https://huggingface.co/blog/openenv-agentic-rl",
             "relatedResources": []
         },
         {
-            "date": "Jun 06 2026",
-            "headline": "Apple WWDC 2026—Siri Revamp and Apple Intelligence Upgrades Expected",
-            "title": "Apple Prepares Major Siri Overhaul and Apple Intelligence Updates for WWDC 2026",
-            "content": "Apple is set to unveil a major revamp of its Siri virtual assistant alongside significant updates to Apple Intelligence at the upcoming WWDC 2026 conference. The upgrades are expected to integrate advanced on-device generative AI capabilities, allowing Siri to perform more complex multi-step actions and understand context more deeply. Security and privacy professionals will be closely monitoring how Apple maintains its signature on-device processing and Private Cloud Compute standards during this rollout. Developers should prepare for new APIs and SDK updates that will allow third-party applications to hook into these enhanced Apple Intelligence features. This event represents Apple's continued push to compete directly with Google and Microsoft in the consumer-facing generative AI ecosystem.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/",
+            "date": "Jun 11 2026",
+            "headline": "Microsoft Unveils SkillOpt",
+            "title": "Microsoft's Open-Source SkillOpt Upgrades AI Agent Skills Without Model Weights",
+            "content": "Microsoft has released SkillOpt, an open-source tool that automatically upgrades AI agent skills without modifying model weights. This development can simplify the process of optimizing AI agent skills, which are essential for real-world AI applications. SkillOpt provides a mechanism for models to adapt to specific enterprise use cases and complex workflows. The tool uses a set of instructions saved in text-based markdown files to upgrade agent skills. By making SkillOpt open-source, Microsoft is encouraging collaboration and further development of the tool. This can lead to more efficient and effective AI agent skill optimization, benefiting organizations that rely on AI applications. The use of SkillOpt can also reduce the need for manual intervention in AI model updates. Entities: SkillOpt, Microsoft, AI agent skills, model weights",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/microsofts-open-source-skillopt-automatically-upgrades-ai-agent-skills-without-touching-model-weights",
             "relatedResources": []
         },
         {
-            "date": "Jun 06 2026",
-            "headline": "Sriram Krishnan Exits White House—Launches New AI Policy Institution",
-            "title": "White House AI Advisor Sriram Krishnan Steps Down to Launch Policy Think Tank",
-            "content": "Sriram Krishnan is leaving his position as a key White House AI advisor to establish a new external institution focused on shaping national AI policy. During his tenure, Krishnan played a central role in advising the Trump administration on regulatory frameworks, national security implications, and technological competitiveness. The newly planned institution aims to provide independent research and policy recommendations to maintain U.S. leadership in artificial intelligence. Tech executives and policy analysts should monitor this transition, as the new organization is expected to heavily influence future federal AI directives and funding priorities. This move signals a shifting landscape in Washington as private sector experts transition into influential external advocacy and advisory roles.",
+            "date": "Jun 11 2026",
+            "headline": "Xiaomi's MiMo Code Excels",
+            "title": "Xiaomi's Open-Source MiMo Code Outperforms Claude Code in Agentic Coding Benchmarks",
+            "content": "Xiaomi's MiMo AI team has open-sourced MiMo Code V0.1.0, a terminal-native AI coding assistant that outperforms Anthropic's Claude Code in key agentic coding benchmarks. MiMo Code excels particularly in long-horizon, multi-step tasks, with 200+ steps. This development highlights the capabilities of Xiaomi's MiMo AI team in creating competitive AI coding assistants. The open-sourcing of MiMo Code can facilitate further development and improvement of the tool, potentially leading to more efficient and effective coding assistance. The comparison with Claude Code also underscores the ongoing advancements in agentic coding and the growing importance of AI-powered coding tools. As the field of agentic coding continues to evolve, the role of MiMo Code and similar tools is likely to become increasingly significant. Entities: MiMo Code, Xiaomi, Claude Code, agentic coding",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/xiaomis-new-open-source-agentic-ai-coding-harness-mimo-code-beats-claude-code-at-ultra-long-200-step-tasks",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Theker Raises $85M",
+            "title": "Theker Secures $85M Funding to Develop Reconfigurable Factory Robots",
+            "content": "Theker has raised $85M in funding to build reconfigurable factory robots that can adapt to various tasks and environments. Unlike traditional humanoid robots, Theker's machines are designed to be flexible and reconfigurable, allowing them to perform a wide range of tasks. This development can potentially revolutionize the manufacturing industry by providing more versatile and efficient robots. Theker's approach focuses on creating robots that can be easily reconfigured to meet specific needs, reducing the need for specialized robots. The funding will likely be used to further develop and refine Theker's robot design, as well as explore new applications and markets. As the manufacturing industry continues to evolve, the role of reconfigurable robots like those developed by Theker is likely to become increasingly important. Entities: Theker, reconfigurable robots, factory robots",
             "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/",
+            "sourceUrl": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Prometheus Raises $12B",
+            "title": "Jeff Bezos's Prometheus Secures $12B Funding to Develop Artificial General Engineer",
+            "content": "Prometheus, a physical AI startup backed by Jeff Bezos, has raised $12B in funding to develop an artificial general engineer for the physical world. The company aims to automate heavy engineering and drug design using AI-powered systems. This development can potentially transform various industries by providing more efficient and effective engineering and design capabilities. The funding values Prometheus at $41 billion, highlighting the significant potential of the company's technology. The artificial general engineer being developed by Prometheus can have far-reaching implications for fields such as manufacturing, construction, and healthcare. As the company continues to develop its technology, the impact of its work is likely to be felt across multiple industries. Entities: Prometheus, artificial general engineer, Jeff Bezos, physical AI",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
             "relatedResources": []
         }
     ],
@@ -179,6 +197,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-10520",
+            "dateAdded": "Jun 11, 2026",
+            "vendor": "Ivanti Sentry",
+            "description": "Ivanti Sentry (formerly known as MobileIron Sentry) contains an OS command injection vulnerability which could allow a remote unauthenticated user to achieve root-level remote code execution. This vul",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10520",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-11645",
             "dateAdded": "Jun 09, 2026",
             "vendor": "Google Chromium V8",
@@ -231,17 +260,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50751",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-28318",
-            "dateAdded": "Jun 05, 2026",
-            "vendor": "SolarWinds Serv-U",
-            "description": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28318",
             "isZeroDay": false
         }
     ],
