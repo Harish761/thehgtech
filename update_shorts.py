@@ -15,8 +15,7 @@ import re
 import time
 from datetime import datetime, timedelta
 import pytz
-from google import genai
-from google.genai import types
+from groq import Groq
 
 import feedparser
 from html import unescape, escape
@@ -741,7 +740,7 @@ At the end of each short's Content, add an Entities line with comma-separated va
 Create a short for EACH of the {len(top_articles)} articles above."""
     
     # Check for Dry Run mode (no API key)
-    api_key = os.environ.get('GEMINI_API_KEY')
+    api_key = os.environ.get('GROQ_API_KEY')
     dry_run = api_key is None or api_key == ""
     
     if dry_run:
@@ -761,28 +760,31 @@ Entities: {article['source']}, security-intel, dry-run
 """
         return fake_content
 
-    # Real Gemini Run sequence
-    client = genai.Client(api_key=api_key)
+    # Real Groq Run sequence
+    client = Groq(api_key=api_key)
         
-    # Retry logic for Gemini API
+    # Retry logic for Groq API
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            print(f"   🤖 Gemini Request (Attempt {attempt + 1}/{max_retries})...")
-            # Rate limiting: Sleep 5 seconds to stay under 15 requests per minute
-            import time
-            time.sleep(5)
+            print(f"   🤖 Groq Request (Attempt {attempt + 1}/{max_retries})...")
             
-            response = client.models.generate_content(
-                model='gemini-2.0-flash',
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    system_instruction="You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders.",
-                    temperature=0.3,
-                    max_output_tokens=4000,
-                )
+            chat_completion = client.chat.completions.create(
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders."
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                model="llama3-8b-8192",
+                temperature=0.3,
+                max_tokens=4000,
             )
-            content = response.text
+            content = chat_completion.choices[0].message.content
             
             # Decode HTML entities (fix &#x27; → ')
             content = unescape(content)
@@ -798,7 +800,7 @@ Entities: {article['source']}, security-intel, dry-run
             return content
             
         except Exception as e:
-            print(f"⚠️  Gemini Attempt {attempt + 1} failed: {e}")
+            print(f"⚠️  Groq Attempt {attempt + 1} failed: {e}")
             if attempt < max_retries - 1:
                 time.sleep(2 * (attempt + 1)) # Exponential backoff
             else:

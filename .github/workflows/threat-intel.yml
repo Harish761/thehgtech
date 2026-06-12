@@ -22,7 +22,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser requests beautifulsoup4 pyyaml google-genai
+        run: pip install feedparser requests beautifulsoup4 pyyaml groq
 
       - name: Run RSS Threat Intel Fetcher
         run: python fetch_threat_intel.py --both
@@ -40,7 +40,7 @@ jobs:
       - name: Enrich CVE Data (Dual Source - CISA KEV + NVD Critical)
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python enrich_cve_dual_source.py
 
       # NEW: EPSS Enrichment - adds exploit prediction scores

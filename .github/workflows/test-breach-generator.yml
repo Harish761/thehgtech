@@ -19,11 +19,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install google-genai requests beautifulsoup4 lxml
+        run: pip install groq requests beautifulsoup4 lxml
 
       - name: Run Breach Generator
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python test_breach_generator.py
 
       - name: Commit Generated Article

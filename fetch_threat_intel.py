@@ -32,13 +32,12 @@ from urllib.parse import urlparse
 import re
 
 try:
-    from google import genai
-    from google.genai import types
+    from groq import Groq
     import time
-    GEMINI_AVAILABLE = True
+    GROQ_AVAILABLE = True
 except ImportError:
-    print("Warning: google-generativeai library not installed. AI insights will be disabled.")
-    GEMINI_AVAILABLE = False
+    print("Warning: groq library not installed. AI insights will be disabled.")
+    GROQ_AVAILABLE = False
 
 # ──────────────────────────────────────────────────────────────
 # Config
@@ -808,37 +807,35 @@ const threatIntelHistory = {json.dumps(history, indent=4)};
 # ──────────────────────────────────────────────────────────────
 # AI-Powered Insights
 # ──────────────────────────────────────────────────────────────
-def call_gemini_api(prompt, model="gemini-2.0-flash"):
-    """Call Gemini API with error handling and rate limiting"""
-    if not GEMINI_AVAILABLE:
+def call_groq_api(prompt, model="llama3-8b-8192"):
+    """Call Groq API with error handling"""
+    if not GROQ_AVAILABLE:
         return None
     
-    api_key = os.getenv('GEMINI_API_KEY')
+    api_key = os.getenv('GROQ_API_KEY')
     if not api_key:
-        print("  ⚠ GEMINI_API_KEY not set, skipping AI insights")
+        print("  ⚠ GROQ_API_KEY not set, skipping AI insights")
         return None
     
     try:
-        client = genai.Client(api_key=api_key)
-        # 15 RPM limit on free tier, wait 5 seconds before call
-        time.sleep(5)
+        client = Groq(api_key=api_key)
         
-        response = client.models.generate_content(
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
             model=model,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                temperature=0.7,
-                max_output_tokens=1000
-            )
+            temperature=0.7,
+            max_tokens=1000
         )
-        return response.text
+        return chat_completion.choices[0].message.content
     except Exception as e:
-        print(f"  ⚠ Gemini API error: {e}")
+        print(f"  ⚠ Groq API error: {e}")
         return None
 
 def generate_daily_ai_summary(vendors_data, snapshot_metrics):
     """Generate daily AI summary using Gemini"""
-    if not GEMINI_AVAILABLE:
+    if not GROQ_AVAILABLE:
         return None
     
     # Count total and new IOCs
@@ -919,7 +916,7 @@ def generate_daily_ai_summary(vendors_data, snapshot_metrics):
 
 Focus on: Key trends, notable threats, severity distribution, and actionable insights. Be specific and technical."""
     
-    summary = call_gemini_api(prompt, model="gemini-flash-latest")
+    summary = call_groq_api(prompt, model="llama3-8b-8192")
     if summary:
         return {
             'date': get_ist_now().strftime('%Y-%m-%d'),
@@ -937,7 +934,7 @@ Focus on: Key trends, notable threats, severity distribution, and actionable ins
 
 def generate_weekly_ai_analysis(history):
     """Generate weekly AI analysis using Gemini"""
-    if not GEMINI_AVAILABLE:
+    if not GROQ_AVAILABLE:
         return None
     
     snapshots = history.get('dailySnapshots', [])
@@ -967,7 +964,7 @@ Provide a JSON response with:
 
 Be specific, technical, and focus on cybersecurity implications."""
     
-    response = call_gemini_api(prompt, model="gemini-flash-latest")
+    response = call_groq_api(prompt, model="llama3-8b-8192")
     if response:
         try:
             # Try to parse JSON response

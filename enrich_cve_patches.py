@@ -6,8 +6,7 @@ Fetches CISA KEV data and enriches with vendor patch details from NVD API
 
 import requests
 import json
-from google import genai
-from google.genai import types
+from groq import Groq
 import time
 import os
 from datetime import datetime, timedelta
@@ -15,7 +14,7 @@ from typing import List, Dict, Optional
 
 # Configuration
 NVD_API_KEY = os.getenv('NVD_API_KEY', '')  # Optional: Get free key from https://nvd.nist.gov/developers/request-an-api-key
-GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '')
+GROQ_API_KEY = os.getenv('GROQ_API_KEY', '')
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 NVD_BASE_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 OUTPUT_FILE = "cve-data.json"
@@ -150,7 +149,7 @@ def extract_remediation_links(nvd_data: Dict, vendor: str) -> List[Dict[str, str
 
 def enhance_with_ai(cve_id: str, remediation_links: List[Dict], vendor: str, product: str) -> List[Dict[str, str]]:
     """Use Gemini to generate better titles for remediation links"""
-    if not GEMINI_API_KEY or not remediation_links:
+    if not GROQ_API_KEY or not remediation_links:
         return remediation_links
     
     try:
@@ -165,14 +164,17 @@ Links:
 Return JSON array with format: [{{"title": "...", "url": "..."}}]
 Make titles specific and actionable (e.g., "Microsoft Security Update", "Cisco Patch Download", "Vendor Mitigation Guide")."""
 
-        client = genai.Client(api_key=GEMINI_API_KEY)
-        time.sleep(5)
-        response = client.models.generate_content(
-            model='gemini-2.0-flash',
-            contents=prompt,
-            config=types.GenerateContentConfig(temperature=0.3, max_output_tokens=500)
+        client = Groq(api_key=GROQ_API_KEY)
+        
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
+            model="llama3-8b-8192",
+            temperature=0.3,
+            max_tokens=500,
         )
-        content = response.text
+        content = chat_completion.choices[0].message.content
         
         # Extract JSON from response
         import re
@@ -261,7 +263,7 @@ def detect_zero_day(nvd_data: Dict, cisa_vuln: Dict, remediation_links: List[Dic
     
     # Factor 4: Optional AI Verification (if Gemini key available)
     ai_score = 0
-    if GEMINI_API_KEY and timeline_score >= 1:
+    if GROQ_API_KEY and timeline_score >= 1:
         ai_score = verify_zero_day_with_ai(cisa_vuln['cveID'], combined_desc, days_diff)
     
     # Calculate total score
@@ -284,7 +286,7 @@ def detect_zero_day(nvd_data: Dict, cisa_vuln: Dict, remediation_links: List[Dic
 
 def verify_zero_day_with_ai(cve_id: str, description: str, days_diff: int) -> int:
     """Use AI to verify if CVE is likely a zero-day based on description"""
-    if not GEMINI_API_KEY:
+    if not GROQ_API_KEY:
         return 0
     
     try:
@@ -297,14 +299,17 @@ A zero-day is exploited before or shortly after disclosure, with no patch availa
 
 Answer with just: "YES" (definite zero-day), "LIKELY" (probable), or "NO" (not zero-day)."""
 
-        client = genai.Client(api_key=GEMINI_API_KEY)
-        time.sleep(5)
-        response = client.models.generate_content(
-            model='gemini-2.0-flash',
-            contents=prompt,
-            config=types.GenerateContentConfig(temperature=0.1, max_output_tokens=10)
+        client = Groq(api_key=GROQ_API_KEY)
+        
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
+            model="llama3-8b-8192",
+            temperature=0.1,
+            max_tokens=10,
         )
-        answer = response.text.strip().upper()
+        answer = chat_completion.choices[0].message.content.strip().upper()
         
         if 'YES' in answer or 'DEFINITE' in answer:
             return 2  # High confidence
@@ -344,7 +349,7 @@ def analyze_business_impact(cve_id: str, description: str, cvss_score: float) ->
         "impactTags": []
     }
     
-    if not GEMINI_API_KEY:
+    if not GROQ_API_KEY:
         return default_result
         
     try:
@@ -360,14 +365,17 @@ Return ONLY a JSON object with:
 JSON format exactly:
 {{"businessImpactScore": "High", "impactTags": ["tag1", "tag2"]}}'''
 
-        client = genai.Client(api_key=GEMINI_API_KEY)
-        time.sleep(5)
-        response = client.models.generate_content(
-            model='gemini-2.0-flash',
-            contents=prompt,
-            config=types.GenerateContentConfig(temperature=0.1, max_output_tokens=100)
+        client = Groq(api_key=GROQ_API_KEY)
+        
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
+            model="llama3-8b-8192",
+            temperature=0.1,
+            max_tokens=100,
         )
-        content = response.text
+        content = chat_completion.choices[0].message.content
         import re
         json_match = re.search(r'\{.*\}', content, re.DOTALL)
         if json_match:
@@ -430,7 +438,7 @@ def process_cve(cisa_vuln: Dict) -> Dict:
     remediation_links = extract_remediation_links(nvd_data, vendor)
     
     # Enhance with AI if available
-    if GEMINI_API_KEY and remediation_links:
+    if GROQ_API_KEY and remediation_links:
         remediation_links = enhance_with_ai(cve_id, remediation_links, vendor, product)
     
     # Determine severity
@@ -514,10 +522,10 @@ def main():
     else:
         print("✓ NVD API key found - using faster rate limit (50 req/30s)")
     
-    if not GEMINI_API_KEY:
-        print("⚠️  No Gemini API key found. Skipping AI enhancement")
+    if not GROQ_API_KEY:
+        print("⚠️  No Groq API key found. Skipping AI enhancement")
     else:
-        print("✓ Gemini API key found - will enhance link titles")
+        print("✓ Groq API key found - will enhance link titles")
     
     print()
     
