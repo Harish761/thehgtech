@@ -170,7 +170,7 @@ Make titles specific and actionable (e.g., "Microsoft Security Update", "Cisco P
             messages=[
                 {"role": "user", "content": prompt}
             ],
-            model="llama3-8b-8192",
+            model="llama-3.1-8b-instant",
             temperature=0.3,
             max_tokens=500,
         )
@@ -305,7 +305,7 @@ Answer with just: "YES" (definite zero-day), "LIKELY" (probable), or "NO" (not z
             messages=[
                 {"role": "user", "content": prompt}
             ],
-            model="llama3-8b-8192",
+            model="llama-3.1-8b-instant",
             temperature=0.1,
             max_tokens=10,
         )
@@ -371,7 +371,7 @@ JSON format exactly:
             messages=[
                 {"role": "user", "content": prompt}
             ],
-            model="llama3-8b-8192",
+            model="llama-3.1-8b-instant",
             temperature=0.1,
             max_tokens=100,
         )

@@ -807,7 +807,7 @@ const threatIntelHistory = {json.dumps(history, indent=4)};
 # ──────────────────────────────────────────────────────────────
 # AI-Powered Insights
 # ──────────────────────────────────────────────────────────────
-def call_groq_api(prompt, model="llama3-8b-8192"):
+def call_groq_api(prompt, model="llama-3.1-8b-instant"):
     """Call Groq API with error handling"""
     if not GROQ_AVAILABLE:
         return None
@@ -916,7 +916,7 @@ def generate_daily_ai_summary(vendors_data, snapshot_metrics):
 
 Focus on: Key trends, notable threats, severity distribution, and actionable insights. Be specific and technical."""
     
-    summary = call_groq_api(prompt, model="llama3-8b-8192")
+    summary = call_groq_api(prompt, model="llama-3.1-8b-instant")
     if summary:
         return {
             'date': get_ist_now().strftime('%Y-%m-%d'),
@@ -964,7 +964,7 @@ Provide a JSON response with:
 
 Be specific, technical, and focus on cybersecurity implications."""
     
-    response = call_groq_api(prompt, model="llama3-8b-8192")
+    response = call_groq_api(prompt, model="llama-3.1-8b-instant")
     if response:
         try:
             # Try to parse JSON response
