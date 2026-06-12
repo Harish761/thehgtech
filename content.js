@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 11 2026",
+            "headline": "Worm Code Leaked—AI Agents Phished",
+            "title": "ThreatsDay Bulletin: Worm Code Leaked, AI Agent Phished, and Claude Code Patch",
+            "content": "The Hacker News has reported a significant leak of worm code, highlighting the ongoing threats to cybersecurity. Additionally, AI agents have been phished, demonstrating the vulnerabilities of these systems. Researchers have also discovered that Claude code can be patched to prevent similar attacks. The leak of worm code and the phishing of AI agents underscore the need for increased vigilance in the cybersecurity community. The use of AI agents in phishing attacks is a growing concern, as these agents can be used to trick users into divulging sensitive information. To mitigate these threats, users should be cautious when interacting with AI agents and ensure that their systems are up to date with the latest security patches. Entities: worm code, AI agents, Claude code, phishing",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/threatsday-bulletin-worm-code-leaked-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "$409M Fine for Coupang Data Breach",
+            "title": "Coupang Hit with Record $409 Million Data Breach Fine in Korea",
+            "content": "Coupang, a Korean e-commerce giant, has been fined a record $409 million for a data breach affecting over 37 million customers. The Personal Information Protection Commission (PIPC) imposed the fine, citing the company's failure to protect user data. The breach highlights the importance of robust data protection measures, particularly for companies handling large amounts of sensitive information. The fine is a significant penalty, demonstrating the severity of the breach and the need for companies to prioritize data security. To prevent similar breaches, companies should implement robust security protocols, including encryption and access controls. Entities: Coupang, data breach, PIPC, $409 million",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-korea-hits-coupang-with-record-409-million-fine-over-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "CISA Orders 3-Day Patch",
+            "title": "CISA Tells Govt Agencies to Patch Critical Exploited Flaws in 3 Days",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a Binding Operational Directive, requiring Federal Civilian Executive Branch (FCEB) agencies to patch critical exploited flaws within three days. The directive aims to mitigate the risk of cyberattacks by ensuring that agencies prioritize security updates. The flaws in question are being actively exploited by threat actors, making prompt patching essential. Agencies should take immediate action to apply the necessary patches, as failure to do so could result in significant security breaches. To facilitate the patching process, CISA has provided guidance and resources to support agencies in their efforts. Entities: CISA, FCEB, Binding Operational Directive, patching",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-tells-govt-agencies-to-patch-critical-exploited-flaws-in-3-days/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "Langflow Vulnerability Exploited",
+            "title": "Hackers Exploit Langflow Vulnerability for Remote Code Execution",
+            "content": "A vulnerability in the Langflow AI development platform has been exploited by hackers, allowing for remote code execution. The vulnerability, disclosed in March, enables unauthenticated attackers to write files to arbitrary locations on the system. This exploit highlights the risks associated with AI development platforms and the need for robust security measures. To mitigate this threat, users should apply the necessary patches and ensure that their systems are up to date. The exploit also underscores the importance of secure coding practices and the need for developers to prioritize security when building AI applications. Entities: Langflow, vulnerability, remote code execution, AI development platform",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hackers-exploit-langflow-vulnerability-for-remote-code-execution/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "Splunk, Palo Alto Patches",
+            "title": "Splunk, Palo Alto Networks Patch Severe Vulnerabilities",
+            "content": "Splunk and Palo Alto Networks have released patches for severe vulnerabilities in their products. The vulnerabilities could allow attackers to create or modify arbitrary files and access protected resources. The patches address these issues, ensuring that users can maintain the security and integrity of their systems. To prevent potential attacks, users should apply the patches as soon as possible. The vulnerabilities highlight the importance of regular security updates and the need for companies to prioritize security in their products. Entities: Splunk, Palo Alto Networks, vulnerabilities, patches",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/splunk-palo-alto-networks-patch-severe-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "GreatXML Bypasses BitLocker",
+            "title": "‘GreatXML’ Zero-Day Exploit Bypasses BitLocker",
+            "content": "A zero-day exploit, known as GreatXML, has been discovered, allowing attackers to bypass BitLocker encryption. The exploit uses Microsoft Defender's offline scan to spawn a SYSTEM shell when rebooting in Recovery Mode. This vulnerability highlights the risks associated with zero-day exploits and the need for robust security measures. To mitigate this threat, users should ensure that their systems are up to date with the latest security patches and consider implementing additional security controls. The exploit also underscores the importance of secure boot mechanisms and the need for companies to prioritize security in their products. Entities: GreatXML, zero-day exploit, BitLocker, Microsoft Defender",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/greatxml-zero-day-exploit-bypasses-bitlocker/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "OceanLotus Targets Vietnam",
+            "title": "OceanLotus Hits Vietnam Investors With SPECTRALVIPER in FireAnt Attack",
+            "content": "The OceanLotus threat actor has been attributed to a cyber espionage campaign targeting Vietnamese investors and domestic entities. The campaign involves the use of a backdoor known as SPECTRALVIPER and is part of a prolonged operation aimed at Vietnamese infrastructure and transportation sectors. The attack highlights the risks associated with targeted cyber attacks and the need for robust security measures. To mitigate this threat, users should be cautious when interacting with suspicious emails or attachments and ensure that their systems are up to date with the latest security patches. Entities: OceanLotus, SPECTRALVIPER, FireAnt, Vietnam",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/oceanlotus-hits-vietnam-investors-with.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "Nottingham University Breach",
+            "title": "Nottingham University Data Breach Affects Over 450,000 Students",
+            "content": "A data breach at the University of Nottingham has affected over 450,000 students, with a hacking group gaining access to the university's student records system. The breach highlights the importance of robust data protection measures, particularly for institutions handling large amounts of sensitive information. To prevent similar breaches, universities should implement robust security protocols, including encryption and access controls. The breach also underscores the need for regular security audits and the importance of incident response planning. Entities: Nottingham University, data breach, student records",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nottingham-university-data-breach-affects-over-450-000-students/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "GitHub Disables npm Scripts",
+            "title": "GitHub to Disable npm Install Scripts by Default to Stop Supply Chain Attacks",
+            "content": "GitHub has announced that it will disable npm install scripts by default to combat software supply chain threats. The change aims to prevent attackers from using the \"npm install\" command to trigger the execution of malicious code. To mitigate supply chain attacks, developers should be cautious when using npm scripts and ensure that their dependencies are up to date. The change also underscores the importance of secure coding practices and the need for developers to prioritize security when building applications. Entities: GitHub, npm, supply chain attacks, software security",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/github-to-disable-npm-install-scripts.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 10 2026",
+            "headline": "Langflow Path Traversal Flaw",
+            "title": "Path Traversal Flaw in AI Dev Platform Langflow Exploited in Attacks",
+            "content": "A path traversal vulnerability in the Langflow AI development platform has been exploited by attackers, allowing them to write arbitrary files on exposed servers. The vulnerability, identified as CVE-2026-5027, is a high-severity flaw that can be used for remote code execution. To mitigate this threat, users should apply the necessary patches and ensure that their systems are up to date. The exploit also underscores the importance of secure coding practices and the need for developers to prioritize security when building AI applications. Entities: Langflow, path traversal vulnerability, CVE-2026-5027, AI development platform",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/path-traversal-flaw-in-ai-dev-platform-langflow-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
             "headline": "Maine Breach Portal Abused",
             "title": "Fake Data Breach Disclosures Submitted to Maine's Official Breach Portal",
             "content": "In a surprising turn of events, Maine's official breach portal has been exploited to publish fake data breach disclosures, prompting companies to deny the claims. The fraudulent submissions were made before their legitimacy could be verified, highlighting a potential vulnerability in the system. This incident underscores the importance of verifying the accuracy of breach disclosures to prevent unnecessary panic and reputational damage. The Maine breach portal is designed to provide transparency into data breaches affecting the state's residents, but this abuse could erode trust in the system. As a result, companies and individuals should be cautious when reviewing breach disclosures and verify the information through official channels. Entities: Maine breach portal, data breach disclosures",
@@ -47,15 +137,6 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/legal/authorities-dismantle-audia6-ransomware-crypto-laundering-service/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Oracle PeopleSoft Vulnerability",
-            "title": "Oracle Addresses PeopleSoft Vulnerability Amid Reports of Zero-Day Attacks",
-            "content": "Oracle has released mitigations for CVE-2026-35273, a critical vulnerability in PeopleSoft, although the company has not confirmed whether it is being exploited in zero-day attacks. The vulnerability allows unauthenticated remote code execution, making it a high-severity threat. Oracle PeopleSoft users should apply the recommended mitigations to prevent exploitation, as the ShinyHunters group has been linked to attacks exploiting this vulnerability. The incident highlights the importance of keeping software up to date and applying security patches promptly to prevent exploitation. As Oracle continues to investigate the vulnerability, users should remain vigilant and monitor for potential attacks. Entities: Oracle PeopleSoft, CVE-2026-35273, ShinyHunters",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/oracle-addresses-peoplesoft-vulnerability-amid-reports-of-zero-day-attacks/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
@@ -66,15 +147,6 @@ const websiteContent = {
             "content": "Microsoft is limiting the use of Anthropic's Claude Fable AI model for its employees due to concerns over the model's data retention requirements. Anthropic released Claude Fable, its first Mythos-class AI model, which has raised concerns inside Microsoft. The company is taking a cautious approach to the use of the model, citing the need to protect sensitive data. This move highlights the importance of data retention policies in the development and deployment of AI models. Microsoft's decision may impact the adoption of Claude Fable in other organizations, as they weigh the benefits of the model against potential data security risks. The incident also underscores the need for clear guidelines on data retention and usage in AI development. Entities: Claude Fable, Anthropic, Microsoft, data retention",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/report/947575/microsoft-claude-fable-5-restricted-internally",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 08 2026",
-            "headline": "OpenEnv Backed for Agentic RL",
-            "title": "The Open Source Community Supports OpenEnv for Agentic Reinforcement Learning",
-            "content": "The open source community is backing OpenEnv for agentic reinforcement learning (RL), a development that could accelerate the adoption of RL in various applications. Agentic RL involves training agents to make decisions in complex environments, and OpenEnv provides a framework for this type of learning. The support from the open source community is significant, as it can lead to further development and improvement of OpenEnv. This, in turn, can benefit organizations looking to leverage agentic RL in their operations. The use of OpenEnv can also facilitate collaboration and knowledge sharing among researchers and developers. As the field of agentic RL continues to evolve, the role of OpenEnv is likely to become increasingly important. Entities: OpenEnv, agentic RL, reinforcement learning",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/openenv-agentic-rl",
             "relatedResources": []
         },
         {
