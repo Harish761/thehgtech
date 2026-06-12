@@ -623,7 +623,7 @@ def format_with_gpt(articles, content_type):
         a['relevance_score'] = score_article(a)
     
     articles.sort(key=lambda x: x['relevance_score'], reverse=True)
-    top_articles = articles[:10]  # Firm limit of 10 per section
+    top_articles = articles[:15]  # Increased to 15 to ensure enough material
     
     print(f"   🏆 Selected top {len(top_articles)} articles for Groq based on relevance scores")
     
@@ -711,7 +711,7 @@ Content:
 Google has patched CVE-2024-12345, a critical use-after-free vulnerability in Chrome's V8 JavaScript engine that was actively exploited in targeted attacks. The flaw affects all Chrome versions prior to 120.0.6099.129 and allows remote code execution through specially crafted web pages. Security researchers at Kaspersky discovered the exploit being used against financial institutions and government agencies in Eastern Europe. Users should update immediately through Chrome's built-in updater or download version 120.0.6099.129 or later. This marks the eighth zero-day vulnerability patched in Chrome this year, highlighting the browser's continued targeting by sophisticated threat actors.
 Entities: CVE-2024-12345, Chrome, zero-day, Google
 
-Now generate {len(top_articles)} professional news shorts following these guidelines exactly:
+Now generate EXACTLY 10 professional news shorts following these guidelines exactly (select the best 10 from the {len(top_articles)} articles provided):
 - Write in a professional, journalistic style
 - Focus on facts and implications, not sensationalism
 - Each short should be self-contained and informative
@@ -737,7 +737,7 @@ At the end of each short's Content, add an Entities line with comma-separated va
 - Key product names affected (e.g., Chrome, Windows, Fortinet)
 - Attack type keywords (e.g., zero-day, RCE, phishing, ransomware)
 
-Create a short for EACH of the {len(top_articles)} articles above."""
+Create EXACTLY 10 shorts from the {len(top_articles)} articles above. It is critical that you output exactly 10 shorts."""
     
     # Check for Dry Run mode (no API key)
     api_key = os.environ.get('GROQ_API_KEY')
@@ -1310,9 +1310,9 @@ def update_shorts():
     data['recentCVEs'] = filtered_cves
     
     # Limit to max 15 each (keep newest)
-    data['cyberShorts'] = data['cyberShorts'][:15]
-    data['aiShorts'] = data['aiShorts'][:15]
-    data['recentCVEs'] = data['recentCVEs'][:15]
+    data['cyberShorts'] = data['cyberShorts'][:20]
+    data['aiShorts'] = data['aiShorts'][:20]
+    data['recentCVEs'] = data['recentCVEs'][:20]
     
     # Final safeguard: Ensure we have content
     MIN_CONTENT = 5

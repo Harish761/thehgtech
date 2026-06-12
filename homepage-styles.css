@@ -3942,3 +3942,71 @@
                 font-size: 1.5rem;
             }
         }
+/* --- Unified Modal Close Button Positioning --- */
+.modal-close,
+.news-modal-close,
+.cve-modal-close,
+.article-modal-close,
+.cc-modal-close,
+.ai-modal-close {
+    position: absolute !important;
+    top: 1.5rem !important;
+    right: 1.5rem !important;
+    left: auto !important;
+    z-index: 100 !important;
+}
+
+.modal-header,
+.news-modal-header,
+.cve-modal-header,
+.cc-modal-header {
+    padding-right: 4rem !important;
+}
+
+/* --- Liquid Glass Modals for Light Mode --- */
+body.light-mode .modal-content,
+body.light-mode .news-modal-content,
+body.light-mode .cve-modal-content,
+body.light-mode .article-modal-content,
+body.light-mode .cc-modal {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(25px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(25px) saturate(200%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0 32px 64px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 1) !important;
+    color: #1a1a1a !important;
+}
+
+body.light-mode .modal-header,
+body.light-mode .news-modal-header,
+body.light-mode .cve-modal-header,
+body.light-mode .cc-modal-header {
+    background: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(10px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(200%) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    color: #1a1a1a !important;
+}
+
+body.light-mode .modal-close,
+body.light-mode .news-modal-close,
+body.light-mode .cve-modal-close,
+body.light-mode .article-modal-close,
+body.light-mode .cc-modal-close,
+body.light-mode .ai-modal-close {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #1a1a1a !important;
+}
+
+body.light-mode .modal-close:hover,
+body.light-mode .news-modal-close:hover,
+body.light-mode .cve-modal-close:hover,
+body.light-mode .article-modal-close:hover,
+body.light-mode .cc-modal-close:hover,
+body.light-mode .ai-modal-close:hover {
+    background: rgba(255, 61, 61, 0.15) !important;
+    border-color: #FF3D3D !important;
+    color: #FF3D3D !important;
+}
