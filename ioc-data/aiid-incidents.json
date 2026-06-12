@@ -2121,14 +2121,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1242",
-      "incident_id": 1242,
-      "title": "Purported AI-Generated Deepfake Videos Reportedly Used in Swedish Scam Campaign Impersonating Doctor",
-      "date": "2026-03-14",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1405",
       "incident_id": 1405,
       "title": "Purported AI-Generated Doctor Deepfakes Reportedly Used Guy's and St Thomas' Branding to Market Weig",
@@ -2138,9 +2130,9 @@
     }
   ],
   "stats": {
-    "total": 267,
+    "total": 266,
     "last7Days": 33,
     "last30Days": 193
   },
-  "lastUpdated": "2026-06-12T21:04:50.921195+05:30"
+  "lastUpdated": "2026-06-12T23:47:26.814773+05:30"
 }
