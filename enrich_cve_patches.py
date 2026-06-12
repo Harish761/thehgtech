@@ -6,7 +6,8 @@ Fetches CISA KEV data and enriches with vendor patch details from NVD API
 
 import requests
 import json
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 import time
 import os
 from datetime import datetime, timedelta
@@ -164,13 +165,13 @@ Links:
 Return JSON array with format: [{{"title": "...", "url": "..."}}]
 Make titles specific and actionable (e.g., "Microsoft Security Update", "Cisco Patch Download", "Vendor Mitigation Guide")."""
 
-        genai.configure(api_key=GEMINI_API_KEY)
+        client = genai.Client(api_key=GEMINI_API_KEY)
         time.sleep(5)
-        model = genai.GenerativeModel(
-            'gemini-flash-latest',
-            generation_config=genai.types.GenerationConfig(temperature=0.3, max_output_tokens=500)
+        response = client.models.generate_content(
+            model='gemini-2.0-flash',
+            contents=prompt,
+            config=types.GenerateContentConfig(temperature=0.3, max_output_tokens=500)
         )
-        response = model.generate_content(prompt)
         content = response.text
         
         # Extract JSON from response
@@ -296,13 +297,13 @@ A zero-day is exploited before or shortly after disclosure, with no patch availa
 
 Answer with just: "YES" (definite zero-day), "LIKELY" (probable), or "NO" (not zero-day)."""
 
-        genai.configure(api_key=GEMINI_API_KEY)
+        client = genai.Client(api_key=GEMINI_API_KEY)
         time.sleep(5)
-        model = genai.GenerativeModel(
-            'gemini-flash-latest',
-            generation_config=genai.types.GenerationConfig(temperature=0.1, max_output_tokens=10)
+        response = client.models.generate_content(
+            model='gemini-2.0-flash',
+            contents=prompt,
+            config=types.GenerateContentConfig(temperature=0.1, max_output_tokens=10)
         )
-        response = model.generate_content(prompt)
         answer = response.text.strip().upper()
         
         if 'YES' in answer or 'DEFINITE' in answer:
@@ -359,13 +360,13 @@ Return ONLY a JSON object with:
 JSON format exactly:
 {{"businessImpactScore": "High", "impactTags": ["tag1", "tag2"]}}'''
 
-        genai.configure(api_key=GEMINI_API_KEY)
+        client = genai.Client(api_key=GEMINI_API_KEY)
         time.sleep(5)
-        model = genai.GenerativeModel(
-            'gemini-flash-latest',
-            generation_config=genai.types.GenerationConfig(temperature=0.1, max_output_tokens=100)
+        response = client.models.generate_content(
+            model='gemini-2.0-flash',
+            contents=prompt,
+            config=types.GenerateContentConfig(temperature=0.1, max_output_tokens=100)
         )
-        response = model.generate_content(prompt)
         content = response.text
         import re
         json_match = re.search(r'\{.*\}', content, re.DOTALL)
