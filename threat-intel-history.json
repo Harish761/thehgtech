@@ -3,9 +3,9 @@
     "date": "2026-06-12",
     "categories": {
       "Phishing": 300,
-      "Malware": 18546,
-      "C2": 9774,
-      "Botnet": 3178
+      "Malware": 18554,
+      "C2": 9904,
+      "Botnet": 3175
     }
   },
   "previous_hour_campaigns": {
@@ -82,9 +82,9 @@
     " \"Joker": 1,
     "Spamhaus DROP List": 1698,
     "CINS Threat List": 15000,
-    "SSH Attacks": 7653,
-    "malware_download": 17543,
-    " \"js.clearfake\"": 2257,
+    "SSH Attacks": 7656,
+    "malware_download": 17558,
+    " \"js.clearfake\"": 2258,
     " \"win.vshell\"": 19,
     " \"win.cobalt_strike\"": 1441,
     " \"win.agent_tesla\"": 3,
