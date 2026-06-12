@@ -3,8 +3,8 @@
     {
       "id": "AIID-1528",
       "incident_id": 1528,
-      "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient\u2019s Stroke During May 20",
-      "date": "2026-06-10",
+      "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During May 20",
+      "date": "2026-06-11",
       "category": "other",
       "severity": "medium"
     },
@@ -2135,44 +2135,12 @@
       "date": "2026-03-14",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1407",
-      "incident_id": 1407,
-      "title": "Grammarly's AI Expert Review Allegedly Used Journalists' and Authors' Names Without Consent",
-      "date": "2026-03-14",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1408",
-      "incident_id": 1408,
-      "title": "Purported Oprah Deepfake Reportedly Induced Utah Woman to Buy Misrepresented Weight Loss Supplements",
-      "date": "2026-03-14",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1409",
-      "incident_id": 1409,
-      "title": "Purportedly AI-Generated Tasmania Tours Content Reportedly Misled Tourists Into Traveling to Nonexis",
-      "date": "2026-03-14",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1410",
-      "incident_id": 1410,
-      "title": "Purportedly AI-Generated Explicit Images of Royal School Armagh Girls Reportedly Circulated Among Pu",
-      "date": "2026-03-14",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 271,
-    "last7Days": 37,
-    "last30Days": 194
+    "total": 267,
+    "last7Days": 33,
+    "last30Days": 193
   },
-  "lastUpdated": "2026-06-11T17:46:27.599659+05:30"
+  "lastUpdated": "2026-06-12T07:28:52.044790+05:30"
 }
