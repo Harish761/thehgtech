@@ -2119,20 +2119,12 @@
       "date": "2026-03-15",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1405",
-      "incident_id": 1405,
-      "title": "Purported AI-Generated Doctor Deepfakes Reportedly Used Guy's and St Thomas' Branding to Market Weig",
-      "date": "2026-03-14",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 266,
+    "total": 265,
     "last7Days": 33,
-    "last30Days": 193
+    "last30Days": 192
   },
-  "lastUpdated": "2026-06-12T23:47:26.814773+05:30"
+  "lastUpdated": "2026-06-13T02:06:14.390772+05:30"
 }
