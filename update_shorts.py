@@ -611,7 +611,7 @@ def filter_existing_urls(articles, existing_shorts):
 
 
 def format_with_gpt(articles, content_type):
-    """Use Gemini to format articles into professional shorts"""
+    """Use Groq to format articles into professional shorts"""
     if not articles:
         return None
     
@@ -623,9 +623,9 @@ def format_with_gpt(articles, content_type):
         a['relevance_score'] = score_article(a)
     
     articles.sort(key=lambda x: x['relevance_score'], reverse=True)
-    top_articles = articles[:6]  # Firm limit of 6 per section
+    top_articles = articles[:10]  # Firm limit of 10 per section
     
-    print(f"   🏆 Selected top {len(top_articles)} articles for Gemini based on relevance scores")
+    print(f"   🏆 Selected top {len(top_articles)} articles for Groq based on relevance scores")
     
     articles_text = ""
     for i, article in enumerate(top_articles, 1):
@@ -755,7 +755,7 @@ Source URL: {article['link']}
 Headline: [DRY RUN] {article['title'][:60]}...
 Title: {article['title']}
 Content:
-This is a simulated professional summary for '{article['title']}'. In a real run, Gemini would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of {article.get('relevance_score', 0)} based on your new ranking algorithm. Key entities like {article['source']} would be extracted for internal linking.
+This is a simulated professional summary for '{article['title']}'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of {article.get('relevance_score', 0)} based on your new ranking algorithm. Key entities like {article['source']} would be extracted for internal linking.
 Entities: {article['source']}, security-intel, dry-run
 """
         return fake_content
@@ -1133,7 +1133,7 @@ def update_shorts():
     print(f"\n{'='*60}")
     print(f"🚀 TheHGTech Content Automation - FINAL VERSION v2.1")
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
-    print(f"📡 Mode: Real RSS Feed Aggregation + Gemini Formatting")
+    print(f"📡 Mode: Real RSS Feed Aggregation + Groq Formatting")
     print(f"📊 Sources: 19 RSS feeds (10 cyber + 9 AI)")
     print(f"🔗 URL Preservation: ENABLED")
     print(f"🔄 Duplicate Detection: ENABLED")
@@ -1262,8 +1262,8 @@ def update_shorts():
             print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts, {len(data['recentCVEs'])} CVEs")
             sys.exit(0)
     
-    # Format NEW articles using Gemini
-    print(f"\n🤖 Formatting new articles with Gemini...")
+    # Format NEW articles using Groq
+    print(f"\n🤖 Formatting new articles with Groq...")
     cyber_content = format_with_gpt(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
     ai_content = format_with_gpt(ai_articles_new, "AI") if ai_articles_new else None
     
@@ -1277,7 +1277,7 @@ def update_shorts():
         print(f"\n📊 Selection Stats: Cybersecurity")
         print(f"   - Total Fetched: {len(cyber_articles)}")
         print(f"   - Unique (New): {len(cyber_articles_new)}")
-        print(f"   - Gemini Summary Limit: 6")
+        print(f"   - Groq AI Summary Limit: 10")
         print(f"   🏆 Top 3 Scored Articles:")
         # Show top 3 in logs based on score
         scored_cyber = sorted(cyber_articles_new, key=lambda x: x.get('relevance_score', 0), reverse=True)
@@ -1288,7 +1288,7 @@ def update_shorts():
         print(f"\n📊 Selection Stats: AI")
         print(f"   - Total Fetched: {len(ai_articles)}")
         print(f"   - Unique (New): {len(ai_articles_new)}")
-        print(f"   - Gemini Summary Limit: 6")
+        print(f"   - Groq AI Summary Limit: 10")
         print(f"   🏆 Top 3 Scored Articles:")
         scored_ai = sorted(ai_articles_new, key=lambda x: x.get('relevance_score', 0), reverse=True)
         for i, a in enumerate(scored_ai[:3], 1):
