@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 12 2026",
+            "headline": "Maine Disables Data Breach Portal",
+            "title": "Maine Takes Down Public Data Breach Reporting Portal After Fraudulent Disclosures",
+            "content": "Maine has taken its public data breach reporting portal offline after discovering fraudulent breach disclosures on the state's website. The decision was made to review procedures and prevent abuse in the future. This move highlights the importance of verifying the authenticity of breach reports to prevent false information from being disseminated. The state will likely implement additional security measures to ensure the integrity of its data breach reporting system. Users who need to report a breach will have to use alternative methods until the portal is restored. The incident serves as a reminder for organizations to regularly review and update their security protocols to prevent similar incidents. Entities: data breach, Maine, fraudulent disclosures",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/maine-disables-data-breach-notification-portal-after-fake-disclosures/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Ukrainian National Pleads Guilty",
+            "title": "Ukrainian National Pleads Guilty to Conspiracy Charges Tied to Conti Ransomware Operation",
+            "content": "A Ukrainian national has pleaded guilty to conspiracy charges related to the Conti ransomware operation. The individual was extradited from Ireland to the United States last year. The Conti ransomware group has been responsible for numerous high-profile attacks, resulting in significant financial losses for affected organizations. This plea highlights the ongoing efforts of law enforcement agencies to disrupt and dismantle ransomware operations. The case serves as a reminder of the importance of international cooperation in combating cybercrime. The Conti ransomware group has been linked to various attacks, including those targeting healthcare and financial institutions. Entities: Conti ransomware, Ukrainian national, conspiracy charges",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-national-pleads-guilty-to-role-in-conti-ransomware-operation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Agentjacking Attack Targets AI",
+            "title": "Agentjacking Attack Tricks AI Coding Agents Into Running Malicious Code",
+            "content": "Cybersecurity researchers have discovered a new class of attack known as Agentjacking, which can trick artificial intelligence (AI) coding agents into running malicious code on developer machines. The attack can be triggered by a fake error report crafted using specific techniques. This vulnerability highlights the potential risks associated with relying on AI-powered coding tools. Developers who use AI coding agents should be aware of this attack and take necessary precautions to prevent it. The Agentjacking attack can have significant implications for the security of software development environments. Entities: Agentjacking, AI coding agents, malicious code",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Novo Nordisk Discloses Data Breach",
+            "title": "Pharma Giant Novo Nordisk Discloses Breach of Clinical Trials Data",
+            "content": "Novo Nordisk, a Danish pharmaceutical giant, has disclosed a data breach affecting patient information from some clinical trials. The breach highlights the importance of protecting sensitive data in the healthcare industry. Novo Nordisk is the world's largest producer of insulin, and this breach may have significant implications for the company and its patients. The incident serves as a reminder for organizations to implement robust security measures to safeguard sensitive data. The company will likely face scrutiny over its data handling practices. Entities: Novo Nordisk, data breach, clinical trials",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/pharmaceutical-giant-novo-nordisk-discloses-security-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "LangGraph Flaw Exposes AI Agents",
+            "title": "LangGraph Flaw Chain Exposes Self-Hosted AI Agents to Remote Code Execution",
+            "content": "Cybersecurity researchers have disclosed details of three now-patched security flaws impacting LangGraph, including a critical vulnerability chain that could result in remote code execution. LangGraph is an open-source framework used to build complex AI agents. The flaws highlight the potential risks associated with using open-source frameworks in AI development. Developers who use LangGraph should ensure they have applied the necessary patches to prevent exploitation. The vulnerability chain can have significant implications for the security of AI systems. Entities: LangGraph, AI agents, remote code execution",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/langgraph-flaw-chain-exposes-self.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Ivanti Sentry Exploitation Attempts",
+            "title": "Ivanti Sentry Exploitation Attempts Detected in Honeypots",
+            "content": "The critical-severity OS command injection vulnerability in Ivanti Sentry has been detected in honeypots, indicating potential exploitation attempts by attackers. The vulnerability allows attackers to execute arbitrary code with root privileges. This highlights the importance of patching vulnerabilities promptly to prevent exploitation. Ivanti Sentry users should apply the necessary patches to prevent attacks. The vulnerability can have significant implications for the security of systems using Ivanti Sentry. Entities: Ivanti Sentry, OS command injection, honeypots",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ivanti-sentry-exploitation-attempts-hitting-honeypots/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Chrome 149 Update Patches 28",
+            "title": "Chrome 149 Update Patches 28 Vulnerabilities, Including Critical Bugs",
+            "content": "Google has released the Chrome 149 update, which patches 28 vulnerabilities, including critical and high-severity security defects. The update resolves a dozen use-after-free bugs, highlighting the ongoing efforts of Google to improve the security of the Chrome browser. Users should update to the latest version of Chrome to ensure they have the necessary security patches. The update is available for all Chrome users, and it is recommended to apply it promptly. Entities: Chrome 149, vulnerabilities, use-after-free bugs",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-149-update-patches-28-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "CISA Orders Ivanti Patch",
+            "title": "CISA Orders Federal Agencies to Patch Ivanti Flaw by Sunday",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has ordered federal agencies to patch an actively exploited Ivanti flaw within three days. The order highlights the importance of prompt patching to prevent exploitation. The Ivanti flaw can be used to execute arbitrary code with root privileges, making it a critical vulnerability. Federal agencies must apply the necessary patches to prevent attacks. The order serves as a reminder of the importance of timely patching in preventing cyber attacks. Entities: CISA, Ivanti, federal agencies",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-gives-feds-3-days-to-patch-ivanti-flaw-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Google Confirms Oracle Exploit",
+            "title": "Google Confirms Exploitation of Oracle PeopleSoft Zero-Day by ShinyHunters",
+            "content": "Google has confirmed the exploitation of an Oracle PeopleSoft zero-day vulnerability by the ShinyHunters group. The vulnerability, identified as CVE-2026-35273, has been mitigated by Oracle, but its in-the-wild exploitation has been confirmed. This highlights the importance of prompt patching and mitigation of vulnerabilities to prevent exploitation. Oracle users should ensure they have applied the necessary patches to prevent attacks. The exploitation of the vulnerability can have significant implications for the security of Oracle PeopleSoft systems. Entities: Oracle PeopleSoft, zero-day, ShinyHunters",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/google-confirms-exploitation-of-oracle-peoplesoft-zero-day-by-shinyhunters/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Europol Disrupts AudiA6 Service",
+            "title": "Europol Disrupts AudiA6 Cryptocurrency Laundering Service Used by Ransomware Gangs",
+            "content": "Europol has disrupted the AudiA6 cryptocurrency laundering service, which was used by ransomware gangs and cybercriminal networks. The service was used to launder hundreds of millions of dollars in illicit profits. The disruption highlights the ongoing efforts of law enforcement agencies to disrupt and dismantle cryptocurrency laundering services. The AudiA6 service was a key financial pipeline for ransomware gangs, and its disruption can have significant implications for the operations of these groups. Entities: AudiA6, cryptocurrency laundering, ransomware gangs",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/europol-disrupts-audia6-crypto.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 11 2026",
             "headline": "Worm Code Leaked—AI Agents Phished",
             "title": "ThreatsDay Bulletin: Worm Code Leaked, AI Agent Phished, and Claude Code Patch",
@@ -85,15 +175,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 10 2026",
-            "headline": "Langflow Path Traversal Flaw",
-            "title": "Path Traversal Flaw in AI Dev Platform Langflow Exploited in Attacks",
-            "content": "A path traversal vulnerability in the Langflow AI development platform has been exploited by attackers, allowing them to write arbitrary files on exposed servers. The vulnerability, identified as CVE-2026-5027, is a high-severity flaw that can be used for remote code execution. To mitigate this threat, users should apply the necessary patches and ensure that their systems are up to date. The exploit also underscores the importance of secure coding practices and the need for developers to prioritize security when building AI applications. Entities: Langflow, path traversal vulnerability, CVE-2026-5027, AI development platform",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/path-traversal-flaw-in-ai-dev-platform-langflow-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 11 2026",
             "headline": "Maine Breach Portal Abused",
             "title": "Fake Data Breach Disclosures Submitted to Maine's Official Breach Portal",
@@ -101,52 +182,97 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/maine-breach-portal-abused-to-publish-fake-data-breach-disclosures/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "ShinyHunters Hit Universities",
-            "title": "ShinyHunters Exploit Oracle PeopleSoft Zero-Day to Breach Universities",
-            "content": "The ShinyHunters extortion crew has exploited an unpatched flaw in Oracle PeopleSoft, tracked as CVE-2026-35273, to break into enterprise systems, steal data, and demand payment to keep it private. The campaign has primarily targeted universities, with Google's Mandiant attributing the activity to the group it tracks as UNC6240. This zero-day vulnerability allows unauthenticated remote code execution, making it a high-severity threat. Universities and organizations using Oracle PeopleSoft should immediately apply the necessary patches or mitigations to prevent exploitation. The ShinyHunters group is known for its aggressive tactics, and this incident highlights the need for prompt action to protect sensitive data. Entities: ShinyHunters, Oracle PeopleSoft, CVE-2026-35273, UNC6240",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Oracle PeopleSoft Zero-Day",
-            "title": "Oracle Mitigates PeopleSoft Zero-Day Exploited in ShinyHunters Data Theft Attacks",
-            "content": "Oracle has issued a warning about a critical PeopleSoft Suite zero-day vulnerability, tracked as CVE-2026-35273, which allows unauthenticated remote code execution. This flaw is being actively exploited in ShinyHunters data theft attacks, highlighting the need for immediate attention. The vulnerability affects Oracle PeopleSoft systems, and users should apply the recommended mitigations to prevent exploitation. Oracle has not provided a patch for the vulnerability, but users can implement workarounds to reduce the risk of attack. As the ShinyHunters group continues to exploit this vulnerability, organizations using Oracle PeopleSoft should prioritize applying these mitigations to protect their data. Entities: Oracle PeopleSoft, CVE-2026-35273, ShinyHunters",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Gentlemen Ransomware Claims 478",
-            "title": "The Gentlemen Ransomware Operation Claims 478 Victims, Spreads Like a Worm",
-            "content": "A new analysis of The Gentlemen operation has revealed that the financially motivated threat group has claimed 478 victims, with the ability to spread like a worm. The group initially operated as an affiliate, conducting double extortion attacks and leveraging resources from various ransomware-as-a-service (RaaS) schemes. The Gentlemen ransomware has been linked to the LockBit (aka Tenacious Mantis) RaaS scheme, highlighting the evolving nature of ransomware threats. Organizations should be aware of the potential for ransomware attacks to spread rapidly and take proactive measures to prevent infections, such as implementing robust backup systems and keeping software up to date. Entities: The Gentlemen, LockBit, Tenacious Mantis, ransomware-as-a-service",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/the-gentlemen-ransomware-claims-478.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "AudiA6 Crypto-Laundering Service",
-            "title": "Authorities Dismantle AudiA6 Ransomware Crypto-Laundering Service",
-            "content": "Law enforcement has dismantled the AudiA6 cryptocurrency service, which was allegedly used by ransomware actors and other cybercriminals to launder over $380 million. The AudiA6 service was a key component in the ransomware ecosystem, enabling attackers to convert stolen funds into usable currency. The takedown of this service is a significant blow to ransomware operators, who rely on these services to profit from their attacks. As a result, ransomware groups may face increased difficulty in laundering their funds, potentially disrupting their operations. Entities: AudiA6, ransomware, cryptocurrency laundering",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/legal/authorities-dismantle-audia6-ransomware-crypto-laundering-service/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jun 10 2026",
-            "headline": "Microsoft Limits Claude Fable Use",
-            "title": "Microsoft Restricts Anthropic's Claude Fable Over Data Retention Concerns",
-            "content": "Microsoft is limiting the use of Anthropic's Claude Fable AI model for its employees due to concerns over the model's data retention requirements. Anthropic released Claude Fable, its first Mythos-class AI model, which has raised concerns inside Microsoft. The company is taking a cautious approach to the use of the model, citing the need to protect sensitive data. This move highlights the importance of data retention policies in the development and deployment of AI models. Microsoft's decision may impact the adoption of Claude Fable in other organizations, as they weigh the benefits of the model against potential data security risks. The incident also underscores the need for clear guidelines on data retention and usage in AI development. Entities: Claude Fable, Anthropic, Microsoft, data retention",
+            "date": "Jun 13 2026",
+            "headline": "US Gov Pulls Plug on Anthropic AI",
+            "title": "Anthropic's Claude Fable 5 Model Taken Offline Due to Security Concerns",
+            "content": "The US government has ordered Anthropic to take its Claude Fable 5 model offline due to a potential security vulnerability. The company has expressed disagreement with the decision, stating that the finding of a narrow potential jailbreak should not be cause for recalling a commercial model deployed to hundreds of millions of people. The model's capabilities and potential risks are still being assessed. Anthropic's decision to comply with the government's order may impact the development and deployment of AI models in the future. The incident highlights the ongoing challenges of ensuring AI safety and security. Users of the model should be aware of the potential risks and take necessary precautions. Entities: Anthropic, Claude Fable 5, AI safety",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 08 2026",
+            "headline": "OpenEnv Backed for Agentic RL",
+            "title": "Open Source Community Supports OpenEnv for Agentic Reinforcement Learning",
+            "content": "The open source community is backing OpenEnv for Agentic Reinforcement Learning (RL), a development that could lead to significant advancements in AI research. OpenEnv is an open-source platform that enables researchers to develop and test AI models in a more efficient and collaborative manner. The support from the community is a significant boost to the development of Agentic RL, which has the potential to improve AI decision-making and autonomy. Researchers and developers can now utilize OpenEnv to develop and test their own Agentic RL models, potentially leading to breakthroughs in areas such as robotics and natural language processing. Entities: OpenEnv, Agentic RL, open source",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/openenv-agentic-rl",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 13 2026",
+            "headline": "Anthropic Takes Claude Offline",
+            "title": "Anthropic's Claude Fable 5 Model Taken Offline Due to Potential Jailbreak",
+            "content": "Anthropic has taken its Claude Fable 5 model offline due to a potential jailbreak, which could have allowed unauthorized access to the model's capabilities. The company has stated that the government believes it has become aware of a method of bypassing or \"jailbreaking\" Fable 5, leading to the decision to take the model offline. The incident highlights the ongoing challenges of ensuring AI safety and security, particularly in regards to potential vulnerabilities in AI models. Users of the model should be aware of the potential risks and take necessary precautions. The development of AI models with robust security measures is crucial to preventing similar incidents in the future. Entities: Anthropic, Claude Fable 5, AI security",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/anthropic-says-us-government-ordered-it-to-shut-down-mythos-models/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Kimi K2.7-Code Released",
+            "title": "Moonshot AI Releases Kimi K2.7-Code, an Update to its K2 Coding Model Family",
+            "content": "Moonshot AI has released Kimi K2.7-Code, an update to its K2 coding model family, which claims to offer leaner reasoning and double-digit performance gains. The new model is built on the same trillion-parameter mixture-of-experts architecture as its predecessor K2.6 and is compatible with OpenAI's models. However, practitioners have expressed skepticism about the benchmarks, stating that they do not check out. The release of Kimi K2.7-Code may have significant implications for the development of AI-powered coding tools and the future of software development. Entities: Kimi K2.7-Code, Moonshot AI, K2 coding model",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/kimi-k2-7-code-cuts-thinking-tokens-30-practitioners-say-benchmarks-dont-check-out",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Meta's AI Unit in Chaos",
+            "title": "Meta's New AI Unit Faces Challenges and Criticism from Executives and Employees",
+            "content": "Meta's new AI unit is facing significant challenges and criticism from executives and employees, according to internal discussions and sources. The unit, which employs 6,500 people, is struggling with a chaotic AI strategy, leading to frustration and dissatisfaction among employees. The challenges faced by Meta's AI unit may have significant implications for the development and deployment of AI models in the future. The company's ability to address these challenges and develop a clear AI strategy will be crucial to its success in the AI market. Entities: Meta, AI unit, AI strategy",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/mark-zuckerberg-meta-employee-meeting-interrupt-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Meta's AI Unit on Verge of Revolt",
+            "title": "Meta's AI Unit Faces Significant Challenges and Criticism from Employees",
+            "content": "Meta's AI unit is on the verge of revolt, according to a new report, which suggests that the unit's employees are frustrated with the company's chaotic AI strategy. The unit, which employs 6,500 people, is struggling to develop and deploy AI models, leading to significant challenges and criticism from executives and employees. The challenges faced by Meta's AI unit may have significant implications for the development and deployment of AI models in the future. The company's ability to address these challenges and develop a clear AI strategy will be crucial to its success in the AI market. Entities: Meta, AI unit, AI strategy",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Google Sues Chinese Cybercrime",
+            "title": "Google Sues Chinese Cybercrime Operation for Using AI to Scam Victims",
+            "content": "Google has sued a Chinese cybercrime operation for using AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks. The operation, known as \"Outsider Enterprise,\" used AI-powered tools to automate scams and target victims. The lawsuit highlights the growing threat of AI-powered cybercrime and the need for companies to develop robust security measures to prevent such attacks. Entities: Google, Chinese cybercrime, AI-powered scams",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Mistral Raises €3B",
+            "title": "Mistral Raises €3 Billion in Funding at €20 Billion Valuation",
+            "content": "Mistral has raised €3 billion in funding at a valuation of €20 billion, nearly double its Series C valuation of €11.7 billion. The funding round is a significant boost to the company's development and deployment of AI models, and highlights the growing investment in the AI market. The company's ability to utilize the funding to develop and deploy AI models will be crucial to its success in the AI market. Entities: Mistral, AI funding, valuation",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Siri Gets Major Update",
+            "title": "Apple Releases New Version of Siri with Significant Improvements",
+            "content": "Apple has released a new version of Siri, which has spent over a decade being \"sort of useful\" but has now become a more capable and reliable virtual assistant. The update brings significant improvements to Siri's capabilities, including better natural language processing and more accurate responses. The update is a significant boost to the development and deployment of virtual assistants, and highlights the growing investment in the AI market. Entities: Siri, Apple, virtual assistant",
             "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/report/947575/microsoft-claude-fable-5-restricted-internally",
+            "sourceUrl": "https://www.theverge.com/podcast/949079/siri-ai-good-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "SpaceX, Anthropic, OpenAI IPO",
+            "title": "SpaceX, Anthropic, and OpenAI Prepare for IPO, Marking Significant Shift in AI Market",
+            "content": "SpaceX, Anthropic, and OpenAI are preparing for their initial public offerings (IPOs), marking a significant shift in the AI market. The IPOs are expected to bring significant investment and attention to the AI market, and highlight the growing importance of AI in the tech industry. The companies' ability to develop and deploy AI models will be crucial to their success in the AI market. Entities: SpaceX, Anthropic, OpenAI, IPO, AI market",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/spacex-anthropic-and-openais-hot-ipo-summer/",
             "relatedResources": []
         },
         {
@@ -268,6 +394,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-35273",
+            "dateAdded": "Jun 12, 2026",
+            "vendor": "Oracle PeopleSoft Enterprise PeopleTools",
+            "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35273",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-10520",
             "dateAdded": "Jun 11, 2026",
