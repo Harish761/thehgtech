@@ -195,15 +195,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 08 2026",
-            "headline": "OpenEnv Backed for Agentic RL",
-            "title": "Open Source Community Supports OpenEnv for Agentic Reinforcement Learning",
-            "content": "The open source community is backing OpenEnv for Agentic Reinforcement Learning (RL), a development that could lead to significant advancements in AI research. OpenEnv is an open-source platform that enables researchers to develop and test AI models in a more efficient and collaborative manner. The support from the community is a significant boost to the development of Agentic RL, which has the potential to improve AI decision-making and autonomy. Researchers and developers can now utilize OpenEnv to develop and test their own Agentic RL models, potentially leading to breakthroughs in areas such as robotics and natural language processing. Entities: OpenEnv, Agentic RL, open source",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/openenv-agentic-rl",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 13 2026",
             "headline": "Anthropic Takes Claude Offline",
             "title": "Anthropic's Claude Fable 5 Model Taken Offline Due to Potential Jailbreak",
