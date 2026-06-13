@@ -117,19 +117,19 @@ class AIRouter:
         if task_type == "shorts":
             # Primary: Groq (handles massive context well)
             result = self.call_groq(prompt, system_prompt, max_tokens, temperature=temperature)
-            # Fallback 1: OpenRouter Gemini Pro (massive context)
+            # Fallback 1: OpenRouter Hermes 405B (massive context)
             if not result:
-                result = self.call_openrouter(prompt, system_prompt, max_tokens, model="google/gemini-2.0-pro-exp-02-05:free", temperature=temperature)
-            # Fallback 2: OpenRouter Gemini Flash
+                result = self.call_openrouter(prompt, system_prompt, max_tokens, model="nousresearch/hermes-3-llama-3.1-405b:free", temperature=temperature)
+            # Fallback 2: OpenRouter Gemma 4 31B
             if not result:
-                result = self.call_openrouter(prompt, system_prompt, max_tokens, model="google/gemini-2.0-pro-exp-02-05:free", temperature=temperature)
+                result = self.call_openrouter(prompt, system_prompt, max_tokens, model="google/gemma-4-31b-it:free", temperature=temperature)
             # Fallback 3: OpenRouter Llama 3
             if not result:
                 result = self.call_openrouter(prompt, system_prompt, max_tokens, model="meta-llama/llama-3.3-70b-instruct:free", temperature=temperature)
                 
         elif task_type == "cve":
-            # Primary: OpenRouter Gemini (Fast, good at JSON)
-            result = self.call_openrouter(prompt, system_prompt, max_tokens, model="google/gemini-2.0-pro-exp-02-05:free", temperature=temperature)
+            # Primary: OpenRouter Gemma 4 (Fast, good at JSON)
+            result = self.call_openrouter(prompt, system_prompt, max_tokens, model="google/gemma-4-31b-it:free", temperature=temperature)
             # Fallback: OpenRouter Llama
             if not result:
                 result = self.call_openrouter(prompt, system_prompt, max_tokens, model="meta-llama/llama-3.3-70b-instruct:free", temperature=temperature)
@@ -140,9 +140,9 @@ class AIRouter:
         elif task_type == "threat_intel":
             # Primary: HuggingFace (Good for short rapid loops)
             result = self.call_huggingface(prompt, max_tokens, temperature=temperature)
-            # Fallback: OpenRouter Gemini Flash
+            # Fallback: OpenRouter Llama 3B
             if not result:
-                result = self.call_openrouter(prompt, system_prompt, max_tokens, model="google/gemini-2.0-pro-exp-02-05:free", temperature=temperature)
+                result = self.call_openrouter(prompt, system_prompt, max_tokens, model="meta-llama/llama-3.2-3b-instruct:free", temperature=temperature)
             # Fallback 2: Groq
             if not result:
                 result = self.call_groq(prompt, system_prompt, max_tokens, temperature=temperature)
@@ -151,7 +151,7 @@ class AIRouter:
             # Default generic fallback chain
             result = self.call_groq(prompt, system_prompt, max_tokens, temperature=temperature)
             if not result:
-                result = self.call_openrouter(prompt, system_prompt, max_tokens, model="google/gemini-2.0-pro-exp-02-05:free", temperature=temperature)
+                result = self.call_openrouter(prompt, system_prompt, max_tokens, model="nousresearch/hermes-3-llama-3.1-405b:free", temperature=temperature)
                 
         return result
 
