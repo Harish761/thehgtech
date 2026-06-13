@@ -302,7 +302,7 @@ def detect_zero_day(nvd_data: Dict, cisa_vuln: Dict, remediation_links: List[Dic
 
 def verify_zero_day_with_ai(cve_id: str, description: str, days_diff: int) -> int:
     """Use AI to verify if CVE is likely a zero-day based on description"""
-    if not GROQ_API_KEY:
+    if not AI_AVAILABLE:
         return 0
     
     try:
@@ -315,17 +315,11 @@ A zero-day is exploited before or shortly after disclosure, with no patch availa
 
 Answer with just: "YES" (definite zero-day), "LIKELY" (probable), or "NO" (not zero-day)."""
 
-        client = Groq(api_key=GROQ_API_KEY)
-        
-        chat_completion = client.chat.completions.create(
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            model="llama-3.3-70b-versatile",
-            temperature=0.1,
-            max_tokens=10,
-        )
-        answer = chat_completion.choices[0].message.content.strip().upper()
+        answer = ai_router.generate_content(prompt, task_type="threat_intel", max_tokens=10, temperature=0.1)
+        if not answer:
+            return 0
+            
+        answer = answer.strip().upper()
         
         if 'YES' in answer or 'DEFINITE' in answer:
             return 2  # High confidence
