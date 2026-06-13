@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 13 2026",
+            "headline": "NPM 12 Boosts Security",
+            "title": "NPM 12 Will Change Script Execution Behavior to Prevent Supply Chain Attacks",
+            "content": "NPM 12 will introduce a significant change in script execution behavior to prevent supply chain attacks. By default, npm install will no longer execute scripts from dependencies unless explicitly allowed. This change aims to reduce the risk of malicious scripts being executed during the installation process. The new behavior will help prevent supply chain attacks, which have become increasingly common in recent years. Developers should review their dependencies and scripts to ensure compatibility with the new NPM 12 behavior. This change highlights the ongoing efforts to improve the security of the npm ecosystem. Entities: NPM 12, supply chain attacks",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/npm-12-will-change-script-execution-behavior-to-prevent-supply-chain-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 13 2026",
+            "headline": "Splunk Enterprise Flaw",
+            "title": "Critical Splunk Enterprise Flaw Lets Attackers Run Code Without Authentication",
+            "content": "A critical security flaw in Splunk Enterprise has been discovered, allowing attackers to run code without authentication. The vulnerability, tracked as CVE-2026-20253, is rated 9.8 on the CVSS scoring system. This flaw enables attackers to conduct unauthenticated file operations and remote code execution. Splunk has released security updates to address this issue. Users should apply the updates immediately to prevent potential attacks. The vulnerability affects all Splunk Enterprise versions prior to the latest update. Entities: CVE-2026-20253, Splunk Enterprise",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 13 2026",
+            "headline": "US Gov Blocks Fable 5",
+            "title": "US Government Orders Anthropic to Ban Foreign Nationals from Accessing Fable 5 and Mythos 5",
+            "content": "The US government has ordered Anthropic to block all foreign nationals from accessing Fable 5 and Mythos 5, forcing the company to suspend both models worldwide. Anthropic is complying with the order but disputes the basis, calling the cited jailbreak narrow and the capability widely available elsewhere. This move highlights the ongoing concerns about the potential misuse of AI models by foreign entities. The suspension will impact users worldwide, and Anthropic is working to comply with the new export controls. Entities: Fable 5, Mythos 5, Anthropic",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-gov-asks-anthropic-to-ban-foreign-national-access-to-fable-mythos/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "ShinyHunters Exploit Zero-Day",
+            "title": "ShinyHunters Exploits Oracle PeopleSoft Zero-Day to Breach Universities",
+            "content": "The ShinyHunters extortion crew has exploited an unpatched flaw in Oracle PeopleSoft to break into enterprise systems, steal data, and demand payment to keep it private. The campaign has hit universities hardest, with Google's Mandiant attributing it to the group it tracks as UNC6240. The activity is dated between March and May 2026. Oracle has warned about a critical PeopleSoft Suite zero-day vulnerability tracked as CVE-2026-35273, which allows unauthenticated remote code execution. Entities: CVE-2026-35273, ShinyHunters, Oracle PeopleSoft",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "Oracle PeopleSoft Zero-Day",
+            "title": "Oracle Mitigates PeopleSoft Zero-Day Exploited in Data Theft Attacks",
+            "content": "Oracle is warning about a critical PeopleSoft Suite zero-day vulnerability tracked as CVE-2026-35273, which allows unauthenticated remote code execution. The flaw is being actively exploited in ShinyHunters data theft attacks. Oracle has released mitigations for the vulnerability, but users should apply the updates immediately to prevent potential attacks. The vulnerability affects all PeopleSoft Suite versions prior to the latest update. Entities: CVE-2026-35273, Oracle PeopleSoft",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "Gentlemen Ransomware Claims",
+            "title": "The Gentlemen Ransomware Claims 478 Victims, Can Spread Like a Worm",
+            "content": "A new analysis of The Gentlemen operation has revealed that the financially motivated threat group initially operated as an affiliate responsible for conducting double extortion attacks. The group has claimed 478 victims and can spread like a worm, leveraging resources from various ransomware-as-a-service schemes like LockBit. The Gentlemen ransomware group is a significant player in the ransomware landscape, and its ability to spread like a worm makes it a considerable threat. Entities: The Gentlemen, LockBit, ransomware",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/the-gentlemen-ransomware-claims-478.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 11 2026",
+            "headline": "AudiA6 Ransomware Service",
+            "title": "Authorities Dismantle AudiA6 Ransomware Crypto-Laundering Service",
+            "content": "Law enforcement has dismantled the AudiA6 cryptocurrency service allegedly used by ransomware actors and other cybercriminals to launder more than $380 million. The service was used to facilitate illicit transactions, and its dismantling is a significant blow to ransomware groups. The operation highlights the ongoing efforts to disrupt ransomware operations and their financial infrastructure. Entities: AudiA6, ransomware, cryptocurrency",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/legal/authorities-dismantle-audia6-ransomware-crypto-laundering-service/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 13 2026",
+            "headline": "Anthropic Complies with Order",
+            "title": "Anthropic Says It Has Taken Its Latest AI Models Offline to Comply With New Export Controls",
+            "content": "Anthropic has taken Fable 5 and Mythos 5 offline to comply with a directive from the US government to prevent use by foreign nationals. The move highlights the ongoing concerns about the potential misuse of AI models by foreign entities. Anthropic is working to comply with the new export controls, which will impact users worldwide. The suspension of the AI models is a significant development in the AI landscape. Entities: Fable 5, Mythos 5, Anthropic",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/anthropic-says-it-has-taken-its-latest-ai-models-offline-to-comply-with-new-export-controls/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 13 2026",
+            "headline": "US Orders Anthropic",
+            "title": "US Orders Anthropic to Suspend Fable 5 and Mythos 5 Access for Foreign Nationals",
+            "content": "The US government has ordered Anthropic to suspend access to Fable 5 and Mythos 5 for foreign nationals, citing national security concerns. Anthropic will abruptly disable the models for all users to comply with the order. The move highlights the ongoing efforts to regulate the use of AI models and prevent their potential misuse. The suspension will impact users worldwide, and Anthropic is working to comply with the new export controls. Entities: Fable 5, Mythos 5, Anthropic",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/us-orders-anthropic-to-suspend-fable-5.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "GreatXML Zero-Day Claimed",
+            "title": "GreatXML Zero-Day BitLocker Bypass Does Not Seem to Work",
+            "content": "A disgruntled researcher has released a new exploit that promises to bypass BitLocker encryption on locked devices. However, a well-respected security expert has reported that the exploit does not work as initially claimed. The exploit is the latest in a series of zero-day Microsoft Windows vulnerabilities published by the researcher. Users should remain cautious and keep their systems up to date with the latest security patches. Entities: GreatXML, BitLocker, zero-day",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4184678/greatxml-zero-day-bitlocker-bypass-doesnt-seem-to-work-yet.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 12 2026",
             "headline": "Maine Disables Data Breach Portal",
             "title": "Maine Takes Down Public Data Breach Reporting Portal After Fraudulent Disclosures",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/europol-disrupts-audia6-crypto.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Worm Code Leaked—AI Agents Phished",
-            "title": "ThreatsDay Bulletin: Worm Code Leaked, AI Agent Phished, and Claude Code Patch",
-            "content": "The Hacker News has reported a significant leak of worm code, highlighting the ongoing threats to cybersecurity. Additionally, AI agents have been phished, demonstrating the vulnerabilities of these systems. Researchers have also discovered that Claude code can be patched to prevent similar attacks. The leak of worm code and the phishing of AI agents underscore the need for increased vigilance in the cybersecurity community. The use of AI agents in phishing attacks is a growing concern, as these agents can be used to trick users into divulging sensitive information. To mitigate these threats, users should be cautious when interacting with AI agents and ensure that their systems are up to date with the latest security patches. Entities: worm code, AI agents, Claude code, phishing",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/threatsday-bulletin-worm-code-leaked-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "$409M Fine for Coupang Data Breach",
-            "title": "Coupang Hit with Record $409 Million Data Breach Fine in Korea",
-            "content": "Coupang, a Korean e-commerce giant, has been fined a record $409 million for a data breach affecting over 37 million customers. The Personal Information Protection Commission (PIPC) imposed the fine, citing the company's failure to protect user data. The breach highlights the importance of robust data protection measures, particularly for companies handling large amounts of sensitive information. The fine is a significant penalty, demonstrating the severity of the breach and the need for companies to prioritize data security. To prevent similar breaches, companies should implement robust security protocols, including encryption and access controls. Entities: Coupang, data breach, PIPC, $409 million",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/south-korea-hits-coupang-with-record-409-million-fine-over-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "CISA Orders 3-Day Patch",
-            "title": "CISA Tells Govt Agencies to Patch Critical Exploited Flaws in 3 Days",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a Binding Operational Directive, requiring Federal Civilian Executive Branch (FCEB) agencies to patch critical exploited flaws within three days. The directive aims to mitigate the risk of cyberattacks by ensuring that agencies prioritize security updates. The flaws in question are being actively exploited by threat actors, making prompt patching essential. Agencies should take immediate action to apply the necessary patches, as failure to do so could result in significant security breaches. To facilitate the patching process, CISA has provided guidance and resources to support agencies in their efforts. Entities: CISA, FCEB, Binding Operational Directive, patching",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-tells-govt-agencies-to-patch-critical-exploited-flaws-in-3-days/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Langflow Vulnerability Exploited",
-            "title": "Hackers Exploit Langflow Vulnerability for Remote Code Execution",
-            "content": "A vulnerability in the Langflow AI development platform has been exploited by hackers, allowing for remote code execution. The vulnerability, disclosed in March, enables unauthenticated attackers to write files to arbitrary locations on the system. This exploit highlights the risks associated with AI development platforms and the need for robust security measures. To mitigate this threat, users should apply the necessary patches and ensure that their systems are up to date. The exploit also underscores the importance of secure coding practices and the need for developers to prioritize security when building AI applications. Entities: Langflow, vulnerability, remote code execution, AI development platform",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hackers-exploit-langflow-vulnerability-for-remote-code-execution/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Splunk, Palo Alto Patches",
-            "title": "Splunk, Palo Alto Networks Patch Severe Vulnerabilities",
-            "content": "Splunk and Palo Alto Networks have released patches for severe vulnerabilities in their products. The vulnerabilities could allow attackers to create or modify arbitrary files and access protected resources. The patches address these issues, ensuring that users can maintain the security and integrity of their systems. To prevent potential attacks, users should apply the patches as soon as possible. The vulnerabilities highlight the importance of regular security updates and the need for companies to prioritize security in their products. Entities: Splunk, Palo Alto Networks, vulnerabilities, patches",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/splunk-palo-alto-networks-patch-severe-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "GreatXML Bypasses BitLocker",
-            "title": "‘GreatXML’ Zero-Day Exploit Bypasses BitLocker",
-            "content": "A zero-day exploit, known as GreatXML, has been discovered, allowing attackers to bypass BitLocker encryption. The exploit uses Microsoft Defender's offline scan to spawn a SYSTEM shell when rebooting in Recovery Mode. This vulnerability highlights the risks associated with zero-day exploits and the need for robust security measures. To mitigate this threat, users should ensure that their systems are up to date with the latest security patches and consider implementing additional security controls. The exploit also underscores the importance of secure boot mechanisms and the need for companies to prioritize security in their products. Entities: GreatXML, zero-day exploit, BitLocker, Microsoft Defender",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/greatxml-zero-day-exploit-bypasses-bitlocker/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "OceanLotus Targets Vietnam",
-            "title": "OceanLotus Hits Vietnam Investors With SPECTRALVIPER in FireAnt Attack",
-            "content": "The OceanLotus threat actor has been attributed to a cyber espionage campaign targeting Vietnamese investors and domestic entities. The campaign involves the use of a backdoor known as SPECTRALVIPER and is part of a prolonged operation aimed at Vietnamese infrastructure and transportation sectors. The attack highlights the risks associated with targeted cyber attacks and the need for robust security measures. To mitigate this threat, users should be cautious when interacting with suspicious emails or attachments and ensure that their systems are up to date with the latest security patches. Entities: OceanLotus, SPECTRALVIPER, FireAnt, Vietnam",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/oceanlotus-hits-vietnam-investors-with.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Nottingham University Breach",
-            "title": "Nottingham University Data Breach Affects Over 450,000 Students",
-            "content": "A data breach at the University of Nottingham has affected over 450,000 students, with a hacking group gaining access to the university's student records system. The breach highlights the importance of robust data protection measures, particularly for institutions handling large amounts of sensitive information. To prevent similar breaches, universities should implement robust security protocols, including encryption and access controls. The breach also underscores the need for regular security audits and the importance of incident response planning. Entities: Nottingham University, data breach, student records",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nottingham-university-data-breach-affects-over-450-000-students/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "GitHub Disables npm Scripts",
-            "title": "GitHub to Disable npm Install Scripts by Default to Stop Supply Chain Attacks",
-            "content": "GitHub has announced that it will disable npm install scripts by default to combat software supply chain threats. The change aims to prevent attackers from using the \"npm install\" command to trigger the execution of malicious code. To mitigate supply chain attacks, developers should be cautious when using npm scripts and ensure that their dependencies are up to date. The change also underscores the importance of secure coding practices and the need for developers to prioritize security when building applications. Entities: GitHub, npm, supply chain attacks, software security",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/github-to-disable-npm-install-scripts.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Maine Breach Portal Abused",
-            "title": "Fake Data Breach Disclosures Submitted to Maine's Official Breach Portal",
-            "content": "In a surprising turn of events, Maine's official breach portal has been exploited to publish fake data breach disclosures, prompting companies to deny the claims. The fraudulent submissions were made before their legitimacy could be verified, highlighting a potential vulnerability in the system. This incident underscores the importance of verifying the accuracy of breach disclosures to prevent unnecessary panic and reputational damage. The Maine breach portal is designed to provide transparency into data breaches affecting the state's residents, but this abuse could erode trust in the system. As a result, companies and individuals should be cautious when reviewing breach disclosures and verify the information through official channels. Entities: Maine breach portal, data breach disclosures",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/maine-breach-portal-abused-to-publish-fake-data-breach-disclosures/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 13 2026",
+            "headline": "OpenAI Under Fire—State Attorneys General Launch Probe",
+            "title": "State Attorneys General Investigate OpenAI Over Data Handling and Ad Policies",
+            "content": "Several state attorneys general have launched an investigation into OpenAI regarding its data privacy practices and advertising policies. The probe specifically examines how the company handles sensitive health data and whether its ad policies violate state consumer protection laws. This investigation follows increasing regulatory scrutiny over the transparency of Large Language Model (LLM) training sets. Affected users may see changes in how their personal data is processed if the probe leads to mandated policy shifts. Legal teams should monitor these proceedings as they may set precedents for AI data governance across the US. This action reflects a broader trend of state-level enforcement in the absence of federal AI legislation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 13 2026",
+            "headline": "National Security Order—Anthropic Blocks Fable 5 and Mythos 5",
+            "title": "Anthropic Cuts Off Foreign Access to Fable 5 and Mythos 5 Models",
+            "content": "Anthropic has disabled access to its Fable 5 and Mythos 5 models for all foreign nations following a direct government order. The restriction applies to all users outside the US and extends to Anthropic employees residing in foreign jurisdictions. The government cited national security concerns as the primary driver for the immediate block. This move highlights the increasing classification of advanced AI capabilities as dual-use technologies subject to export controls. Organizations relying on these specific models for international operations must now seek alternative LLM providers. This event signals a shift toward the geopolitical fragmentation of AI model availability.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Google Sues Cybercrime Network Using Gemini for Automated Scams",
+            "title": "Google Takes Legal Action Against Chinese Fraud Network Using Gemini AI",
+            "content": "Google has filed a lawsuit against a Chinese cybercrime network that utilized the Gemini AI model to automate the creation of scam websites. The fraudsters allegedly used Gemini to generate sophisticated code for hundreds of thousands of phishing sites targeting unsuspecting victims. This case demonstrates the ability of threat actors to scale social engineering attacks using generative AI to bypass traditional detection. The attack surface has expanded as AI lowers the technical barrier for creating convincing fraudulent interfaces. Security professionals should implement stricter domain monitoring and AI-driven phishing detection to counter these automated threats. This lawsuit underscores the ongoing battle between AI developers and malicious actors.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/06/google-sues-chinese-cybercrime-network-that-used-gemini-to-automate-scams/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 09 2026",
+            "headline": "AI Agent Adoption to Surge 300%—Enterprises Shift to Hybrid Workforces",
+            "title": "Leadership Strategies for the Integration of Autonomous AI Agents in Enterprise",
+            "content": "Enterprise adoption of AI agents is projected to increase by 300 percent over the next two years, forcing a shift toward hybrid human-AI workforces. Unlike traditional automation, these AI agents can autonomously coordinate tasks and make decisions without constant manual input. This transition requires leadership teams to redefine operational workflows and oversight mechanisms to manage autonomous agents. The primary impact is a shift in workforce roles from execution to orchestration and auditing. Companies must establish strict governance frameworks to prevent autonomous agent drift and ensure alignment with business goals. This trend marks the evolution from passive AI tools to active autonomous collaborators.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "$130 Billion Blocked—Protests Halt AI Data Center Expansion",
+            "title": "Public Protests Block $130 Billion in AI Data Center Infrastructure Projects",
+            "content": "Protests have successfully blocked $130 billion worth of data center projects intended to support AI scaling this year. Opponents cite environmental concerns, specifically water usage and energy consumption, as the primary reasons for the blockages. This disruption threatens the physical infrastructure required to train and deploy next-generation LLMs. The trend indicates a growing political and social resistance to the resource-intensive nature of AI compute. Infrastructure developers must now navigate more complex zoning laws and community opposition. This shift may force AI companies to innovate in energy-efficient hardware or relocate projects to more receptive regions.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/130-billion-in-data-center-projects-blocked-by-protests-so-far-this-year/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "SpaceX IPO Makes Elon Musk World's First Trillionaire",
+            "title": "SpaceX Public Offering Drives Elon Musk's Net Worth Past $1 Trillion",
+            "content": "Elon Musk has become the first trillionaire following the initial public offering (IPO) of SpaceX. Musk's net worth increased from approximately $800 billion to over $1 trillion, driven by his 4.8 billion shares in the company. SpaceX shares opened at $150, reflecting high market confidence in the combined rocket, AI, and social media ecosystem. This financial milestone underscores the massive valuation of private space and AI ventures. Investors are now analyzing the S-1 registration document to understand the company's long-term fiscal strategy. The IPO provides SpaceX with significant capital to accelerate its Starship and Starlink initiatives.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/948409/elon-musk-trillionaire-spacex-ipo",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "MANGOS Era Begins—AI Giants Lead New IPO Wave",
+            "title": "The MANGOS Acronym Defines the New Era of Public AI Markets",
+            "content": "The IPO market is shifting from the FAANG era to a new group known as MANGOS: Meta, Anthropic, Nvidia, Google, OpenAI, and SpaceX. Several of these companies are preparing to enter public markets within the same window, signaling a massive influx of AI-driven capital. This transition reflects the dominance of generative AI and compute hardware in the current economic landscape. Market analysts expect these IPOs to redefine valuation benchmarks for the entire technology sector. Developers and investors should track these listings as they will likely dictate the pace of AI R&D investment. This consolidation of power among a few AI giants may impact competition and open-source development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/its-hot-ipo-summer-and-the-mangos-are-ripe/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "SpaceX IPO Opens Public Access to AI and Space Venture",
+            "title": "SpaceX Public Offering Integrates Rocketry, AI, and Social Media Assets",
+            "content": "The SpaceX IPO allows the general public to purchase shares in a conglomerate combining rocket technology, AI, and social media. The offering raised enough capital to push Elon Musk's paper wealth beyond the GDP of nations like Sweden and Ireland. This move transitions SpaceX from a private venture to a publicly traded entity, increasing financial transparency and regulatory oversight. The integration of AI into SpaceX's operations suggests a strategy of vertical integration across multiple high-tech sectors. Shareholders will now have a stake in the company's ambitious goals for interplanetary travel and global connectivity. This IPO marks a pivotal moment in the commercialization of space and AI.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/business/948996/spacex-ipo-elon-musk",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 13 2026",
+            "headline": "Gen AI Fails Hollywood—Vanilla Models Cannot Produce Paid Entertainment",
+            "title": "Limitations of Generative AI in Professional Filmmaking and Entertainment",
+            "content": "Current generative AI video models are unable to produce high-quality content that audiences are willing to pay for. While vanilla gen AI models can create short clips, they lack the consistency and narrative control required for professional filmmaking. Most AI firms are struggling to move beyond short-form demonstrations to full-length cinematic productions. This gap suggests that the revolution in Hollywood will require specialized, fine-tuned models rather than general-purpose tools. Filmmakers are finding that prompt-based generation is insufficient for the precision needed in professional editing. The industry is now looking toward hybrid workflows that combine human creativity with AI assistance.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/948425/tribeca-2026-dear-upstairs-neighbors-google-deepmind-openai",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 13 2026",
+            "headline": "iOS 27 Adds AI Photo Tools—Apple Enters Generative Editing",
+            "title": "Apple Introduces AI-Powered Photo Editing Features in iOS 27",
+            "content": "Apple has released its first set of serious AI photo editing tools as part of the iOS 27 update. While these features are more conservative than Google's Pixel offerings, they bring generative editing to the world's most popular camera system. The tools allow users to modify images using AI, though early reviews suggest mixed results in terms of realism. This update integrates AI directly into the native photo app, making generative tools accessible to millions of users. Security professionals should be aware of the implications for digital forensics and the authenticity of mobile imagery. This move accelerates the trend of integrating generative AI into consumer operating systems.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/949360/apple-ai-photo-edit-reframe-extend-clean-up-hands-on",
+            "relatedResources": []
+        },
         {
             "date": "Jun 13 2026",
             "headline": "US Gov Pulls Plug on Anthropic AI",
@@ -273,33 +363,6 @@ const websiteContent = {
             "content": "Microsoft has released SkillOpt, an open-source tool that automatically upgrades AI agent skills without modifying model weights. This development can simplify the process of optimizing AI agent skills, which are essential for real-world AI applications. SkillOpt provides a mechanism for models to adapt to specific enterprise use cases and complex workflows. The tool uses a set of instructions saved in text-based markdown files to upgrade agent skills. By making SkillOpt open-source, Microsoft is encouraging collaboration and further development of the tool. This can lead to more efficient and effective AI agent skill optimization, benefiting organizations that rely on AI applications. The use of SkillOpt can also reduce the need for manual intervention in AI model updates. Entities: SkillOpt, Microsoft, AI agent skills, model weights",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/orchestration/microsofts-open-source-skillopt-automatically-upgrades-ai-agent-skills-without-touching-model-weights",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Xiaomi's MiMo Code Excels",
-            "title": "Xiaomi's Open-Source MiMo Code Outperforms Claude Code in Agentic Coding Benchmarks",
-            "content": "Xiaomi's MiMo AI team has open-sourced MiMo Code V0.1.0, a terminal-native AI coding assistant that outperforms Anthropic's Claude Code in key agentic coding benchmarks. MiMo Code excels particularly in long-horizon, multi-step tasks, with 200+ steps. This development highlights the capabilities of Xiaomi's MiMo AI team in creating competitive AI coding assistants. The open-sourcing of MiMo Code can facilitate further development and improvement of the tool, potentially leading to more efficient and effective coding assistance. The comparison with Claude Code also underscores the ongoing advancements in agentic coding and the growing importance of AI-powered coding tools. As the field of agentic coding continues to evolve, the role of MiMo Code and similar tools is likely to become increasingly significant. Entities: MiMo Code, Xiaomi, Claude Code, agentic coding",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/xiaomis-new-open-source-agentic-ai-coding-harness-mimo-code-beats-claude-code-at-ultra-long-200-step-tasks",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 12 2026",
-            "headline": "Theker Raises $85M",
-            "title": "Theker Secures $85M Funding to Develop Reconfigurable Factory Robots",
-            "content": "Theker has raised $85M in funding to build reconfigurable factory robots that can adapt to various tasks and environments. Unlike traditional humanoid robots, Theker's machines are designed to be flexible and reconfigurable, allowing them to perform a wide range of tasks. This development can potentially revolutionize the manufacturing industry by providing more versatile and efficient robots. Theker's approach focuses on creating robots that can be easily reconfigured to meet specific needs, reducing the need for specialized robots. The funding will likely be used to further develop and refine Theker's robot design, as well as explore new applications and markets. As the manufacturing industry continues to evolve, the role of reconfigurable robots like those developed by Theker is likely to become increasingly important. Entities: Theker, reconfigurable robots, factory robots",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 12 2026",
-            "headline": "Prometheus Raises $12B",
-            "title": "Jeff Bezos's Prometheus Secures $12B Funding to Develop Artificial General Engineer",
-            "content": "Prometheus, a physical AI startup backed by Jeff Bezos, has raised $12B in funding to develop an artificial general engineer for the physical world. The company aims to automate heavy engineering and drug design using AI-powered systems. This development can potentially transform various industries by providing more efficient and effective engineering and design capabilities. The funding values Prometheus at $41 billion, highlighting the significant potential of the company's technology. The artificial general engineer being developed by Prometheus can have far-reaching implications for fields such as manufacturing, construction, and healthcare. As the company continues to develop its technology, the impact of its work is likely to be felt across multiple industries. Entities: Prometheus, artificial general engineer, Jeff Bezos, physical AI",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
             "relatedResources": []
         }
     ],
