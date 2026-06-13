@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-13T06:36:51.649377",
-  "total_incidents": 28718,
+  "last_updated": "2026-06-13T15:57:24.391970",
+  "total_incidents": 28721,
   "incidents": [
+    {
+      "id": "lapsus$_ingka_group",
+      "victim_name": "INGKA GROUP",
+      "threat_actor": "lapsus$",
+      "date_discovered": "2026-06-13T10:02:51.787238+00:00",
+      "industry": "Consumer Services",
+      "website": "ingka.com",
+      "claim": "Full mapping of global e-commerce architecture and internal coworker platforms. Supply chain logistics, cloud infrastructure, and AI/MLOps repositories",
+      "screenshot": "https://images.ransomware.live/victims/ddb4a94c762425a7f24cb802a7a7a95f.png",
+      "url": "https://anonfilesnew.com/s/MhMoAjUKPeJ",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lapsus$_github_internal",
+      "victim_name": "GITHUB INTERNAL",
+      "threat_actor": "lapsus$",
+      "date_discovered": "2026-06-13T10:02:19.506378+00:00",
+      "industry": "Technology",
+      "website": "github.com",
+      "claim": "Everything for the main platform is there. No ransom, we do not care about extorting Github. If no buyer is found, we leak for free.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_www.mbt-energy.com",
+      "victim_name": "www.mbt-energy.com",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-06-13T08:52:16.366611+00:00",
+      "industry": "Energy",
+      "website": "www.mbt-energy.com",
+      "claim": "Xiamen Mibet New Energy Co., Ltd. (Mibet Energy) is a Chinese high-tech enterprise specializing in the research, develop...",
+      "screenshot": "https://images.ransomware.live/victims/1e3ec49abea510f563d96d1787209ef7.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/4f79f41d4473a7f8988e6e4b8faad58d60cace55604e0c7b40d27f8bf55fef44/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "payload_myipo.gov.my",
       "victim_name": "myipo.gov.my",
