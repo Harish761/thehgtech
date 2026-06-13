@@ -32,12 +32,11 @@ from urllib.parse import urlparse
 import re
 
 try:
-    from groq import Groq
-    import time
-    GROQ_AVAILABLE = True
+    from ai_router import ai_router
+    AI_AVAILABLE = True
 except ImportError:
-    print("Warning: groq library not installed. AI insights will be disabled.")
-    GROQ_AVAILABLE = False
+    print("Warning: ai_router not found. AI insights will be disabled.")
+    AI_AVAILABLE = False
 
 # ──────────────────────────────────────────────────────────────
 # Config
@@ -807,35 +806,25 @@ const threatIntelHistory = {json.dumps(history, indent=4)};
 # ──────────────────────────────────────────────────────────────
 # AI-Powered Insights
 # ──────────────────────────────────────────────────────────────
-def call_groq_api(prompt, model="llama-3.3-70b-versatile"):
-    """Call Groq API with error handling"""
-    if not GROQ_AVAILABLE:
-        return None
-    
-    api_key = os.getenv('GROQ_API_KEY')
-    if not api_key:
-        print("  ⚠ GROQ_API_KEY not set, skipping AI insights")
+def call_ai_router(prompt, model=None):
+    """Call AI Router with error handling"""
+    if not AI_AVAILABLE:
         return None
     
     try:
-        client = Groq(api_key=api_key)
-        
-        chat_completion = client.chat.completions.create(
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            model=model,
-            temperature=0.7,
-            max_tokens=1000
+        return ai_router.generate_content(
+            prompt=prompt,
+            task_type="threat_intel",
+            max_tokens=1000,
+            temperature=0.7
         )
-        return chat_completion.choices[0].message.content
     except Exception as e:
-        print(f"  ⚠ Groq API error: {e}")
+        print(f"  ⚠ AI Router error: {e}")
         return None
 
 def generate_daily_ai_summary(vendors_data, snapshot_metrics):
     """Generate daily AI summary using Gemini"""
-    if not GROQ_AVAILABLE:
+    if not AI_AVAILABLE:
         return None
     
     # Count total and new IOCs

@@ -15,7 +15,8 @@ import re
 import time
 from datetime import datetime, timedelta
 import pytz
-from groq import Groq
+
+from ai_router import ai_router
 
 import feedparser
 from html import unescape, escape
@@ -760,31 +761,25 @@ Entities: {article['source']}, security-intel, dry-run
 """
         return fake_content
 
-    # Real Groq Run sequence
-    client = Groq(api_key=api_key)
-        
-    # Retry logic for Groq API
+    # Real AI Router Run sequence
+    system_prompt = "You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders."
+    
+    # Retry logic handled partially by router, but we add an outer loop just in case
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            print(f"   🤖 Groq Request (Attempt {attempt + 1}/{max_retries})...")
+            print(f"   🤖 AI Router Request (Attempt {attempt + 1}/{max_retries})...")
             
-            chat_completion = client.chat.completions.create(
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders."
-                    },
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ],
-                model="llama-3.3-70b-versatile",
-                temperature=0.3,
+            content = ai_router.generate_content(
+                prompt=prompt,
+                task_type="shorts",
+                system_prompt=system_prompt,
                 max_tokens=4000,
+                temperature=0.3
             )
-            content = chat_completion.choices[0].message.content
+            
+            if not content:
+                raise Exception("AI Router returned empty content or exhausted all fallbacks.")
             
             # Decode HTML entities (fix &#x27; → ')
             content = unescape(content)
@@ -800,7 +795,7 @@ Entities: {article['source']}, security-intel, dry-run
             return content
             
         except Exception as e:
-            print(f"⚠️  Groq Attempt {attempt + 1} failed: {e}")
+            print(f"⚠️  AI Request Attempt {attempt + 1} failed: {e}")
             if attempt < max_retries - 1:
                 time.sleep(2 * (attempt + 1)) # Exponential backoff
             else:

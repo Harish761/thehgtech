@@ -13,7 +13,11 @@ from typing import List, Dict, Optional
 
 # Configuration
 NVD_API_KEY = os.getenv('NVD_API_KEY', '')
-GROQ_API_KEY = os.getenv('GROQ_API_KEY', '')
+try:
+    from ai_router import ai_router
+    AI_AVAILABLE = True
+except ImportError:
+    AI_AVAILABLE = False
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 NVD_BASE_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 OUTPUT_FILE = "cve-data.json"
@@ -481,8 +485,8 @@ def main_dual_source():
     else:
         print("✓ NVD API key found")
     
-    if GROQ_API_KEY:
-        print("✓ Groq API key found")
+    if AI_AVAILABLE:
+        print("✓ AI Router available")
     
     print()
     

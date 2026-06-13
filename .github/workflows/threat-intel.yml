@@ -25,6 +25,10 @@ jobs:
         run: pip install feedparser requests beautifulsoup4 pyyaml groq
 
       - name: Run RSS Threat Intel Fetcher
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          HF_API_KEY: ${{ secrets.HF_API_KEY }}
         run: python fetch_threat_intel.py --both
 
       - name: Run AI Security Data Fetcher
@@ -41,6 +45,8 @@ jobs:
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          HF_API_KEY: ${{ secrets.HF_API_KEY }}
         run: python enrich_cve_dual_source.py
 
       # NEW: EPSS Enrichment - adds exploit prediction scores

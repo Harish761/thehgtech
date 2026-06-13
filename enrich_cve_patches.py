@@ -6,10 +6,16 @@ Fetches CISA KEV data and enriches with vendor patch details from NVD API
 
 import requests
 import json
-from groq import Groq
+try:
+    from ai_router import ai_router
+    AI_AVAILABLE = True
+except ImportError:
+    print("Warning: ai_router not found. AI insights disabled.")
+    AI_AVAILABLE = False
 import time
 import os
 from datetime import datetime, timedelta
+import hashlib
 from typing import List, Dict, Optional
 
 # Configuration
@@ -148,9 +154,18 @@ def extract_remediation_links(nvd_data: Dict, vendor: str) -> List[Dict[str, str
 
 
 def enhance_with_ai(cve_id: str, remediation_links: List[Dict], vendor: str, product: str) -> List[Dict[str, str]]:
-    """Use Gemini to generate better titles for remediation links"""
-    if not GROQ_API_KEY or not remediation_links:
+    """Use AI Router to generate better titles for remediation links, with caching"""
+    if not AI_AVAILABLE or not remediation_links:
         return remediation_links
+    
+    # Simple hash of links to act as cache key
+    links_text = "\n".join([f"- {link['url']}" for link in remediation_links])
+    cache_key = f"links_{cve_id}_{hashlib.md5(links_text.encode()).hexdigest()}"
+    
+    cache = load_ai_cache()
+    if cache_key in cache:
+        print(f"    ⚡ Using cached AI link enhancements for {cve_id}")
+        return cache[cache_key]
     
     try:
         # Prepare link descriptions
@@ -164,23 +179,24 @@ Links:
 Return JSON array with format: [{{"title": "...", "url": "..."}}]
 Make titles specific and actionable (e.g., "Microsoft Security Update", "Cisco Patch Download", "Vendor Mitigation Guide")."""
 
-        client = Groq(api_key=GROQ_API_KEY)
-        
-        chat_completion = client.chat.completions.create(
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            model="llama-3.3-70b-versatile",
-            temperature=0.3,
+        content = ai_router.generate_content(
+            prompt=prompt,
+            task_type="cve",
             max_tokens=500,
+            temperature=0.3
         )
-        content = chat_completion.choices[0].message.content
         
+        if not content:
+            raise Exception("AI Router returned empty response")
+            
         # Extract JSON from response
         import re
         json_match = re.search(r'\[.*\]', content, re.DOTALL)
         if json_match:
             enhanced_links = json.loads(json_match.group())
+            # Save to cache
+            cache[cache_key] = enhanced_links
+            save_ai_cache(cache)
             return enhanced_links
         
     except Exception as e:
@@ -349,7 +365,7 @@ def analyze_business_impact(cve_id: str, description: str, cvss_score: float) ->
         "impactTags": []
     }
     
-    if not GROQ_API_KEY:
+    if not AI_AVAILABLE:
         return default_result
         
     try:
@@ -365,17 +381,14 @@ Return ONLY a JSON object with:
 JSON format exactly:
 {{"businessImpactScore": "High", "impactTags": ["tag1", "tag2"]}}'''
 
-        client = Groq(api_key=GROQ_API_KEY)
-        
-        chat_completion = client.chat.completions.create(
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            model="llama-3.3-70b-versatile",
-            temperature=0.1,
+        content = ai_router.generate_content(
+            prompt=prompt,
+            task_type="cve",
             max_tokens=100,
+            temperature=0.1
         )
-        content = chat_completion.choices[0].message.content
+        if not content:
+            raise Exception("AI Router returned empty response")
         import re
         json_match = re.search(r'\{.*\}', content, re.DOTALL)
         if json_match:
@@ -438,7 +451,7 @@ def process_cve(cisa_vuln: Dict) -> Dict:
     remediation_links = extract_remediation_links(nvd_data, vendor)
     
     # Enhance with AI if available
-    if GROQ_API_KEY and remediation_links:
+    if AI_AVAILABLE and remediation_links:
         remediation_links = enhance_with_ai(cve_id, remediation_links, vendor, product)
     
     # Determine severity
