@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-06-13T14:00:45.346904",
+  "last_updated": "2026-06-14T04:07:57.940964",
   "period": "Last 7 days",
   "total_groups": 39,
-  "total_victims": 289,
+  "total_victims": 290,
   "groups": [
     {
       "name": "Qilin",
-      "count": 44,
+      "count": 43,
       "victims": [
         {
           "name": "DISTINET MURCIA SL",
@@ -73,8 +73,8 @@
         "Business Services",
         "Consumer Services",
         "Energy",
-        "Financial Services",
-        "Healthcare"
+        "Healthcare",
+        "Manufacturing"
       ],
       "countries": [
         "AU",
@@ -86,12 +86,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         6,
         0,
-        32,
+        31,
         4,
         2,
+        0,
         0
       ]
     },
@@ -178,8 +178,8 @@
         0,
         0,
         0,
-        0,
         29,
+        0,
         0,
         0
       ]
@@ -266,11 +266,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         15,
         0,
         0,
         10,
+        0,
         0,
         0
       ]
@@ -361,8 +361,8 @@
         0,
         0,
         0,
-        0,
         24,
+        0,
         0
       ]
     },
@@ -450,17 +450,23 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
         10,
         12,
+        0,
         0
       ]
     },
     {
       "name": "Shinyhunters",
-      "count": 13,
+      "count": 15,
       "victims": [
+        {
+          "name": "coe.int",
+          "date": "2026-06-14T00:54:51.834700+00:00",
+          "url": "",
+          "discovered_date": "2026-06-14T00:54:51.834700+00:00"
+        },
         {
           "name": "Madison Square Garden Sports Corp.",
           "date": "2026-06-12T06:58:09.773450+00:00",
@@ -498,6 +504,12 @@
           "discovered_date": "2026-06-11T09:54:27.397662+00:00"
         },
         {
+          "name": "coe.int",
+          "date": "2026-06-14T00:54:51+00:00",
+          "url": "https://www.ransomware.live/id/Y29lLmludEBzaGlueWh1bnRlcnM=",
+          "discovered_date": "2026-06-14T00:54:51+00:00"
+        },
+        {
           "name": "Madison Square Garden Sports Corp.",
           "date": "2026-06-12T06:58:09+00:00",
           "url": "https://www.ransomware.live/id/TWFkaXNvbiBTcXVhcmUgR2FyZGVuIFNwb3J0cyBDb3JwLkBzaGlueWh1bnRlcnM=",
@@ -508,26 +520,16 @@
           "date": "2026-06-12T06:57:49+00:00",
           "url": "https://www.ransomware.live/id/SkNQZW5uZXkgJiBzZXZlcmFsIG90aGVyIHN1YnNkaWFyaWVzIHVuZGVyIENhdGFseXN0IEJyYW5kcyAmIEF1dGhlbnRpYyBCcmFuZHMgR3JvdXBAc2hpbnlodW50ZXJz",
           "discovered_date": "2026-06-12T06:57:49+00:00"
-        },
-        {
-          "name": "American Tower Corporation",
-          "date": "2026-06-12T06:57:29+00:00",
-          "url": "https://www.ransomware.live/id/QW1lcmljYW4gVG93ZXIgQ29ycG9yYXRpb25Ac2hpbnlodW50ZXJz",
-          "discovered_date": "2026-06-12T06:57:29+00:00"
-        },
-        {
-          "name": "Zayo.com & Allstream.com",
-          "date": "2026-06-12T06:57:10+00:00",
-          "url": "https://www.ransomware.live/id/WmF5by5jb20gJiBBbGxzdHJlYW0uY29tQHNoaW55aHVudGVycw==",
-          "discovered_date": "2026-06-12T06:57:10+00:00"
         }
       ],
       "industries": [
         "Consumer Services",
+        "Not Found",
         "Technology",
         "Telecommunication"
       ],
       "countries": [
+        "FR",
         "GB",
         "US"
       ],
@@ -535,12 +537,12 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         1,
         0,
         4,
         8,
-        0
+        0,
+        2
       ]
     },
     {
@@ -627,8 +629,8 @@
         0,
         0,
         0,
-        0,
         12,
+        0,
         0,
         0
       ]
@@ -713,10 +715,10 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         3,
         6,
         2,
+        0,
         0,
         0
       ]
@@ -804,11 +806,11 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
         0,
         4,
-        2
+        2,
+        0
       ]
     },
     {
@@ -888,12 +890,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         1,
         4,
         3,
         0,
         2,
+        0,
         0
       ]
     },
@@ -979,9 +981,9 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
         8,
+        0,
         0,
         0
       ]
@@ -1058,8 +1060,8 @@
         0,
         0,
         0,
-        0,
         8,
+        0,
         0
       ]
     },
@@ -1113,12 +1115,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         4,
         0,
         0,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1168,13 +1170,13 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         3,
         0,
         0,
         0,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1225,11 +1227,11 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
         0,
         0,
         4,
+        0,
         0
       ]
     },
@@ -1278,8 +1280,8 @@
         0,
         0,
         0,
-        0,
-        4
+        4,
+        0
       ]
     },
     {
@@ -1324,8 +1326,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0
       ]
     },
@@ -1370,8 +1372,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
+        0,
         0,
         0,
         0
@@ -1417,8 +1419,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
+        0,
         0,
         0,
         0
@@ -1456,10 +1458,10 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         2,
+        0,
         0,
         0,
         0
@@ -1497,13 +1499,48 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
         1,
         0,
         0,
         0,
+        0,
         0
+      ]
+    },
+    {
+      "name": "Securotrop",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Charisma Media",
+          "date": "2026-06-14T02:53:07.514158+00:00",
+          "url": "http://securo45z554mw7rgrt7wcgv5eenj2xmxyrsdj3fcjsvindu63s4bsid.onion",
+          "discovered_date": "2026-06-14T02:53:07.514158+00:00"
+        },
+        {
+          "name": "Charisma Media",
+          "date": "2026-06-14T02:53:07+00:00",
+          "url": "https://www.ransomware.live/id/Q2hhcmlzbWEgTWVkaWFAc2VjdXJvdHJvcA==",
+          "discovered_date": "2026-06-14T02:53:07+00:00"
+        }
+      ],
+      "industries": [
+        "Technology"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
       ]
     },
     {
@@ -1536,8 +1573,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1571,8 +1608,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1606,8 +1643,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1640,8 +1677,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1675,8 +1712,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1710,8 +1747,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1744,43 +1781,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
         0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Fulcrumsec",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Global Schools Foundation",
-          "date": "2026-06-10T03:52:49.882345+00:00",
-          "url": "http://4e3p3in2bl67hxchuwza7qvnpe7pyeloyztr5fnh257fxkovfhappjyd.onion/gsg/",
-          "discovered_date": "2026-06-10T03:52:49.882345+00:00"
-        },
-        {
-          "name": "Global Schools Foundation",
-          "date": "2026-06-10T03:52:49+00:00",
-          "url": "https://www.ransomware.live/id/R2xvYmFsIFNjaG9vbHMgRm91bmRhdGlvbkBmdWxjcnVtc2Vj",
-          "discovered_date": "2026-06-10T03:52:49+00:00"
-        }
-      ],
-      "industries": [
-        "Education"
-      ],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        2,
         0,
         0,
         0
@@ -1816,8 +1818,8 @@
         0,
         0,
         0,
-        0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1845,11 +1847,11 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -1880,8 +1882,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1912,8 +1914,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1945,8 +1947,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1977,8 +1979,35 @@
         0,
         0,
         0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "Fulcrumsec",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Global Schools Foundation",
+          "date": "2026-06-10T03:52:49+00:00",
+          "url": "https://www.ransomware.live/id/R2xvYmFsIFNjaG9vbHMgRm91bmRhdGlvbkBmdWxjcnVtc2Vj",
+          "discovered_date": "2026-06-10T03:52:49+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
         0,
-        1
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
       ]
     },
     {
@@ -2000,8 +2029,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -2027,8 +2056,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -2054,34 +2083,7 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Blackwater",
-      "count": 1,
-      "victims": [
-        {
-          "name": "www.utourworld.com",
-          "date": "2026-06-06T17:20:51+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LnV0b3Vyd29ybGQuY29tQGJsYWNrd2F0ZXI=",
-          "discovered_date": "2026-06-06T17:20:51+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
         0,
         0,
         0,
