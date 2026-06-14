@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-14T04:07:57.940964",
+  "last_updated": "2026-06-14T14:03:18.356348",
   "period": "Last 7 days",
   "total_groups": 39,
-  "total_victims": 290,
+  "total_victims": 295,
   "groups": [
     {
       "name": "Qilin",
@@ -185,6 +185,97 @@
       ]
     },
     {
+      "name": "Dragonforce",
+      "count": 25,
+      "victims": [
+        {
+          "name": "Ink",
+          "date": "2026-06-14T10:53:39.777599+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=168544de-7ef1-4bca-ad6d-e850fab12a5a",
+          "discovered_date": "2026-06-14T10:53:39.777599+00:00"
+        },
+        {
+          "name": "Corniche Hotel Abu Dhabi",
+          "date": "2026-06-12T12:52:46.270455+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=e08d24da-219a-4529-a8f2-d3ca264e5168",
+          "discovered_date": "2026-06-12T12:52:46.270455+00:00"
+        },
+        {
+          "name": "Cheoy Lee Shipyards",
+          "date": "2026-06-12T13:52:24.636100+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=35fcc6bd-3ac2-4175-b2ad-9c58dc4bc4f5",
+          "discovered_date": "2026-06-12T13:52:24.636100+00:00"
+        },
+        {
+          "name": "Al Ishrak Contracting",
+          "date": "2026-06-12T13:21:57.077281+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=5afe6fa8-d4ee-4680-80b1-49f6266d2b1b",
+          "discovered_date": "2026-06-12T13:21:57.077281+00:00"
+        },
+        {
+          "name": "The DRM",
+          "date": "2026-06-12T12:21:47.075310+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=809847a5-1a4e-4061-b622-fd9f83403823",
+          "discovered_date": "2026-06-12T12:21:47.075310+00:00"
+        },
+        {
+          "name": "Al Shafar GRC",
+          "date": "2026-06-12T12:22:43.879840+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=b7d53a52-8293-4d08-b9b8-9daa74f0db0c",
+          "discovered_date": "2026-06-12T12:22:43.879840+00:00"
+        },
+        {
+          "name": "A. Liberty Engineering Co. Ltd",
+          "date": "2026-06-12T12:23:33.285763+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=6cdc6f0c-3083-4f25-b358-a37a5e463d54",
+          "discovered_date": "2026-06-12T12:23:33.285763+00:00"
+        },
+        {
+          "name": "Astec Valves & Fittings Pvt",
+          "date": "2026-06-11T15:21:35.087630+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=f92435ee-e67b-4091-8940-e5eba4daf3f4",
+          "discovered_date": "2026-06-11T15:21:35.087630+00:00"
+        },
+        {
+          "name": "Brian Cox",
+          "date": "2026-06-11T14:51:53.052431+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=053ff566-6e37-43aa-ac8c-fa181e9a9104",
+          "discovered_date": "2026-06-11T14:51:53.052431+00:00"
+        },
+        {
+          "name": "Cekok",
+          "date": "2026-06-11T14:52:40.647422+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=bdf68eee-49ed-489a-aa9b-7faac51510a6",
+          "discovered_date": "2026-06-11T14:52:40.647422+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Construction",
+        "Hospitality and Tourism",
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "AE",
+        "BH",
+        "GB",
+        "HK",
+        "IN"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        10,
+        12,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Thegentlemen",
       "count": 25,
       "victims": [
@@ -362,97 +453,6 @@
         0,
         0,
         24,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Dragonforce",
-      "count": 24,
-      "victims": [
-        {
-          "name": "Corniche Hotel Abu Dhabi",
-          "date": "2026-06-12T12:52:46.270455+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=e08d24da-219a-4529-a8f2-d3ca264e5168",
-          "discovered_date": "2026-06-12T12:52:46.270455+00:00"
-        },
-        {
-          "name": "Cheoy Lee Shipyards",
-          "date": "2026-06-12T13:52:24.636100+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=35fcc6bd-3ac2-4175-b2ad-9c58dc4bc4f5",
-          "discovered_date": "2026-06-12T13:52:24.636100+00:00"
-        },
-        {
-          "name": "Al Ishrak Contracting",
-          "date": "2026-06-12T13:21:57.077281+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=5afe6fa8-d4ee-4680-80b1-49f6266d2b1b",
-          "discovered_date": "2026-06-12T13:21:57.077281+00:00"
-        },
-        {
-          "name": "The DRM",
-          "date": "2026-06-12T12:21:47.075310+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=809847a5-1a4e-4061-b622-fd9f83403823",
-          "discovered_date": "2026-06-12T12:21:47.075310+00:00"
-        },
-        {
-          "name": "Al Shafar GRC",
-          "date": "2026-06-12T12:22:43.879840+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=b7d53a52-8293-4d08-b9b8-9daa74f0db0c",
-          "discovered_date": "2026-06-12T12:22:43.879840+00:00"
-        },
-        {
-          "name": "A. Liberty Engineering Co. Ltd",
-          "date": "2026-06-12T12:23:33.285763+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=6cdc6f0c-3083-4f25-b358-a37a5e463d54",
-          "discovered_date": "2026-06-12T12:23:33.285763+00:00"
-        },
-        {
-          "name": "Astec Valves & Fittings Pvt",
-          "date": "2026-06-11T15:21:35.087630+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=f92435ee-e67b-4091-8940-e5eba4daf3f4",
-          "discovered_date": "2026-06-11T15:21:35.087630+00:00"
-        },
-        {
-          "name": "Brian Cox",
-          "date": "2026-06-11T14:51:53.052431+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=053ff566-6e37-43aa-ac8c-fa181e9a9104",
-          "discovered_date": "2026-06-11T14:51:53.052431+00:00"
-        },
-        {
-          "name": "Cekok",
-          "date": "2026-06-11T14:52:40.647422+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=bdf68eee-49ed-489a-aa9b-7faac51510a6",
-          "discovered_date": "2026-06-11T14:52:40.647422+00:00"
-        },
-        {
-          "name": "Hong Kong Parkview",
-          "date": "2026-06-11T15:22:16.026870+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=65a2b582-2f38-4537-b839-5a250f406c97",
-          "discovered_date": "2026-06-11T15:22:16.026870+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Construction",
-        "Hospitality and Tourism",
-        "Manufacturing",
-        "Not Found"
-      ],
-      "countries": [
-        "AE",
-        "BH",
-        "GB",
-        "HK",
-        "IN"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        10,
-        12,
         0,
         0
       ]
@@ -989,6 +989,89 @@
       ]
     },
     {
+      "name": "Nightspire",
+      "count": 10,
+      "victims": [
+        {
+          "name": "Silsbee Police Department",
+          "date": "2026-06-14T11:23:11+00:00",
+          "url": "https://www.ransomware.live/id/U2lsc2JlZSBQb2xpY2UgRGVwYXJ0bWVudEBuaWdodHNwaXJl",
+          "discovered_date": "2026-06-14T11:23:11+00:00"
+        },
+        {
+          "name": "K****** County. Mi**e**ta",
+          "date": "2026-06-14T11:22:51+00:00",
+          "url": "https://www.ransomware.live/id/SyoqKioqKiBDb3VudHkuIE1pKiplKip0YUBuaWdodHNwaXJl",
+          "discovered_date": "2026-06-14T11:22:51+00:00"
+        },
+        {
+          "name": "WaxWorks Inc",
+          "date": "2026-06-14T10:56:01+00:00",
+          "url": "https://www.ransomware.live/id/V2F4V29ya3MgSW5jQG5pZ2h0c3BpcmU=",
+          "discovered_date": "2026-06-14T10:56:01+00:00"
+        },
+        {
+          "name": "Blue Nile Medical Center",
+          "date": "2026-06-14T10:55:40+00:00",
+          "url": "https://www.ransomware.live/id/Qmx1ZSBOaWxlIE1lZGljYWwgQ2VudGVyQG5pZ2h0c3BpcmU=",
+          "discovered_date": "2026-06-14T10:55:40+00:00"
+        },
+        {
+          "name": "Pattono S.r.l",
+          "date": "2026-06-12T02:24:32+00:00",
+          "url": "https://www.ransomware.live/id/UGF0dG9ubyBTLnIubEBuaWdodHNwaXJl",
+          "discovered_date": "2026-06-12T02:24:32+00:00"
+        },
+        {
+          "name": "Sierra West Jewelers",
+          "date": "2026-06-12T02:24:12+00:00",
+          "url": "https://www.ransomware.live/id/U2llcnJhIFdlc3QgSmV3ZWxlcnNAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-06-12T02:24:12+00:00"
+        },
+        {
+          "name": "GRIP Outreach For Youth",
+          "date": "2026-06-08T13:00:09+00:00",
+          "url": "https://www.ransomware.live/id/R1JJUCBPdXRyZWFjaCBGb3IgWW91dGhAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-06-08T13:00:09+00:00"
+        },
+        {
+          "name": "Unique Litho, Inc",
+          "date": "2026-06-08T12:59:56+00:00",
+          "url": "https://www.ransomware.live/id/VW5pcXVlIExpdGhvLCBJbmNAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-06-08T12:59:56+00:00"
+        },
+        {
+          "name": "A*** G*** A*S*",
+          "date": "2026-06-08T12:59:44+00:00",
+          "url": "https://www.ransomware.live/id/QSoqKiBHKioqIEEqUypAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-06-08T12:59:44+00:00"
+        },
+        {
+          "name": "ASIA STRATEGIC",
+          "date": "2026-06-08T12:59:32+00:00",
+          "url": "https://www.ransomware.live/id/QVNJQSBTVFJBVEVHSUNAbmlnaHRzcGlyZQ==",
+          "discovered_date": "2026-06-08T12:59:32+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "IT",
+        "N/A",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        4,
+        0,
+        0,
+        0,
+        2,
+        0,
+        4
+      ]
+    },
+    {
       "name": "Direwolf",
       "count": 8,
       "victims": [
@@ -1061,65 +1144,6 @@
         0,
         0,
         8,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Nightspire",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Pattono S.r.l",
-          "date": "2026-06-12T02:24:32+00:00",
-          "url": "https://www.ransomware.live/id/UGF0dG9ubyBTLnIubEBuaWdodHNwaXJl",
-          "discovered_date": "2026-06-12T02:24:32+00:00"
-        },
-        {
-          "name": "Sierra West Jewelers",
-          "date": "2026-06-12T02:24:12+00:00",
-          "url": "https://www.ransomware.live/id/U2llcnJhIFdlc3QgSmV3ZWxlcnNAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-06-12T02:24:12+00:00"
-        },
-        {
-          "name": "GRIP Outreach For Youth",
-          "date": "2026-06-08T13:00:09+00:00",
-          "url": "https://www.ransomware.live/id/R1JJUCBPdXRyZWFjaCBGb3IgWW91dGhAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-06-08T13:00:09+00:00"
-        },
-        {
-          "name": "Unique Litho, Inc",
-          "date": "2026-06-08T12:59:56+00:00",
-          "url": "https://www.ransomware.live/id/VW5pcXVlIExpdGhvLCBJbmNAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-06-08T12:59:56+00:00"
-        },
-        {
-          "name": "A*** G*** A*S*",
-          "date": "2026-06-08T12:59:44+00:00",
-          "url": "https://www.ransomware.live/id/QSoqKiBHKioqIEEqUypAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-06-08T12:59:44+00:00"
-        },
-        {
-          "name": "ASIA STRATEGIC",
-          "date": "2026-06-08T12:59:32+00:00",
-          "url": "https://www.ransomware.live/id/QVNJQSBTVFJBVEVHSUNAbmlnaHRzcGlyZQ==",
-          "discovered_date": "2026-06-08T12:59:32+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "IT",
-        "N/A",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        4,
-        0,
-        0,
-        0,
-        2,
         0,
         0
       ]
