@@ -31,42 +31,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 11 2026",
-            "headline": "ShinyHunters Exploit Zero-Day",
-            "title": "ShinyHunters Exploits Oracle PeopleSoft Zero-Day to Breach Universities",
-            "content": "The ShinyHunters extortion crew has exploited an unpatched flaw in Oracle PeopleSoft to break into enterprise systems, steal data, and demand payment to keep it private. The campaign has hit universities hardest, with Google's Mandiant attributing it to the group it tracks as UNC6240. The activity is dated between March and May 2026. Oracle has warned about a critical PeopleSoft Suite zero-day vulnerability tracked as CVE-2026-35273, which allows unauthenticated remote code execution. Entities: CVE-2026-35273, ShinyHunters, Oracle PeopleSoft",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Oracle PeopleSoft Zero-Day",
-            "title": "Oracle Mitigates PeopleSoft Zero-Day Exploited in Data Theft Attacks",
-            "content": "Oracle is warning about a critical PeopleSoft Suite zero-day vulnerability tracked as CVE-2026-35273, which allows unauthenticated remote code execution. The flaw is being actively exploited in ShinyHunters data theft attacks. Oracle has released mitigations for the vulnerability, but users should apply the updates immediately to prevent potential attacks. The vulnerability affects all PeopleSoft Suite versions prior to the latest update. Entities: CVE-2026-35273, Oracle PeopleSoft",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Gentlemen Ransomware Claims",
-            "title": "The Gentlemen Ransomware Claims 478 Victims, Can Spread Like a Worm",
-            "content": "A new analysis of The Gentlemen operation has revealed that the financially motivated threat group initially operated as an affiliate responsible for conducting double extortion attacks. The group has claimed 478 victims and can spread like a worm, leveraging resources from various ransomware-as-a-service schemes like LockBit. The Gentlemen ransomware group is a significant player in the ransomware landscape, and its ability to spread like a worm makes it a considerable threat. Entities: The Gentlemen, LockBit, ransomware",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/the-gentlemen-ransomware-claims-478.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "AudiA6 Ransomware Service",
-            "title": "Authorities Dismantle AudiA6 Ransomware Crypto-Laundering Service",
-            "content": "Law enforcement has dismantled the AudiA6 cryptocurrency service allegedly used by ransomware actors and other cybercriminals to launder more than $380 million. The service was used to facilitate illicit transactions, and its dismantling is a significant blow to ransomware groups. The operation highlights the ongoing efforts to disrupt ransomware operations and their financial infrastructure. Entities: AudiA6, ransomware, cryptocurrency",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/legal/authorities-dismantle-audia6-ransomware-crypto-laundering-service/",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 13 2026",
             "headline": "Anthropic Complies with Order",
             "title": "Anthropic Says It Has Taken Its Latest AI Models Offline to Comply With New Export Controls",
@@ -213,15 +177,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 09 2026",
-            "headline": "AI Agent Adoption to Surge 300%—Enterprises Shift to Hybrid Workforces",
-            "title": "Leadership Strategies for the Integration of Autonomous AI Agents in Enterprise",
-            "content": "Enterprise adoption of AI agents is projected to increase by 300 percent over the next two years, forcing a shift toward hybrid human-AI workforces. Unlike traditional automation, these AI agents can autonomously coordinate tasks and make decisions without constant manual input. This transition requires leadership teams to redefine operational workflows and oversight mechanisms to manage autonomous agents. The primary impact is a shift in workforce roles from execution to orchestration and auditing. Companies must establish strict governance frameworks to prevent autonomous agent drift and ensure alignment with business goals. This trend marks the evolution from passive AI tools to active autonomous collaborators.",
-            "source": "MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 12 2026",
             "headline": "$130 Billion Blocked—Protests Halt AI Data Center Expansion",
             "title": "Public Protests Block $130 Billion in AI Data Center Infrastructure Projects",
@@ -354,15 +309,6 @@ const websiteContent = {
             "content": "SpaceX, Anthropic, and OpenAI are preparing for their initial public offerings (IPOs), marking a significant shift in the AI market. The IPOs are expected to bring significant investment and attention to the AI market, and highlight the growing importance of AI in the tech industry. The companies' ability to develop and deploy AI models will be crucial to their success in the AI market. Entities: SpaceX, Anthropic, OpenAI, IPO, AI market",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/video/spacex-anthropic-and-openais-hot-ipo-summer/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 11 2026",
-            "headline": "Microsoft Unveils SkillOpt",
-            "title": "Microsoft's Open-Source SkillOpt Upgrades AI Agent Skills Without Model Weights",
-            "content": "Microsoft has released SkillOpt, an open-source tool that automatically upgrades AI agent skills without modifying model weights. This development can simplify the process of optimizing AI agent skills, which are essential for real-world AI applications. SkillOpt provides a mechanism for models to adapt to specific enterprise use cases and complex workflows. The tool uses a set of instructions saved in text-based markdown files to upgrade agent skills. By making SkillOpt open-source, Microsoft is encouraging collaboration and further development of the tool. This can lead to more efficient and effective AI agent skill optimization, benefiting organizations that rely on AI applications. The use of SkillOpt can also reduce the need for manual intervention in AI model updates. Entities: SkillOpt, Microsoft, AI agent skills, model weights",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/microsofts-open-source-skillopt-automatically-upgrades-ai-agent-skills-without-touching-model-weights",
             "relatedResources": []
         }
     ],
