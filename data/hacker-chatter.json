@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-14T07:05:51.076805",
-  "total_incidents": 28723,
+  "last_updated": "2026-06-14T16:05:20.530728",
+  "total_incidents": 28725,
   "incidents": [
+    {
+      "id": "nova_bandung",
+      "victim_name": "Bandung",
+      "threat_actor": "nova",
+      "date_discovered": "2026-06-14T14:53:51.081003+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Balai Besar POM di Bandung is a regulatory body focused on the supervision of food and drugs in Indonesia. They provide various services including certification for good distribution practices, food production, and testing of food and drugs. Their intended clients include manufacturers, importers, and the general public seeking information and assistance regarding food and drug safety. The organization operates with a commitment to transparency and public information, ensuring compliance with health regulations - Nova Provide tree and samples from stolen data to the company when its get in touch with support department.",
+      "screenshot": "https://images.ransomware.live/victims/49732e9982bfd4f1bca8a39e43665465.png",
+      "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/bandung",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_ink",
+      "victim_name": "Ink",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-06-14T10:53:39.777599+00:00",
+      "industry": "Not Found",
+      "website": "weareink.co.uk",
+      "claim": "(including internal documentation, counterparties, contractors, software, correspondence, and the like) INK is an award-winning production studio based in London specialising in CGI, Animation and Retouching. We combine the technical and the beautiful to bring ideas to life across film, print and interactive platforms.",
+      "screenshot": "https://images.ransomware.live/victims/d968b822a1cd21293e4cc6ae742674b0.png",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=168544de-7ef1-4bca-ad6d-e850fab12a5a",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "securotrop_charisma_media",
       "victim_name": "Charisma Media",
