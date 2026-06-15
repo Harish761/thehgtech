@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-14T16:05:20.530728",
-  "total_incidents": 28725,
+  "last_updated": "2026-06-15T08:35:36.246854",
+  "total_incidents": 28727,
   "incidents": [
+    {
+      "id": "auditteam_i-***ys",
+      "victim_name": "I-***YS",
+      "threat_actor": "AuditTeam",
+      "date_discovered": "2026-06-14T23:50:14.563740+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "",
+      "screenshot": "https://images.ransomware.live/victims/7fc57e4467a5716d8c42e337fb298a02.png",
+      "url": "http://6tdqqaxftvradka5d2frzgwixis7fmro7rfh4ettzcx7jfapkebe6jad.onion/entity/D1DDFB2A56855328",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_frey.com",
+      "victim_name": "frey.com",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-06-14T20:22:26.462234+00:00",
+      "industry": "Technology",
+      "website": "frey.com",
+      "claim": "FREY (Frey Brothers, Inc.) is an American eco-friendly laundry care products company founded in 2017 by brothers Erin an...",
+      "screenshot": "https://images.ransomware.live/victims/4b6ecaa50e1b593959d6a32426e406e6.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/bea2786db52dfebfa78db93284fb6ce438ffccbf69d182abed0147505046c5bf/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "nova_bandung",
       "victim_name": "Bandung",

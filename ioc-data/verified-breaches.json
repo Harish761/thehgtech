@@ -1899,6 +1899,25 @@
       "Description": "In November 2019, the Serbian technology news website <a href=\"https://forum.benchmark.rs/threads/benchmark-forum-kompromitovan.489760/\" target=\"_blank\" rel=\"noopener\">Benchmark suffered a breach of its forum</a> that exposed 93k customer records. The breach exposed IP and email addresses, usernames and passwords stored as salted MD5 hashes. <a href=\"https://forum.benchmark.rs/threads/benchmark-forum-kompromitovan.489760/#post-6758095\" target=\"_blank\" rel=\"noopener\">A forum administrator subsequently advised that the breach was due to the forum previously running on an outdated vBulletin instance</a>."
     }
   ],
+  "berkadia.com": [
+    {
+      "Name": "Berkadia",
+      "Title": "Berkadia",
+      "BreachDate": "2026-03-19",
+      "AddedDate": "2026-06-15T04:09:04Z",
+      "PwnCount": 305216,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In March 2026, the commercial real estate finance company <a href=\"https://x.com/AlvieriD/status/2034584125106000005\" target=\"_blank\" rel=\"noopener\">Berkadia was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published data they alleged was taken from Berkadia's Salesforce instance, including over 300k unique email addresses as well as names, physical addresses and phone numbers, among other data."
+    }
+  ],
   "bestialitysextaboo.com": [
     {
       "Name": "Bestialitysextaboo",
@@ -8034,6 +8053,28 @@
       "IsVerified": true,
       "IsFabricated": false,
       "Description": "In mid-2021, <a href=\"https://en.antaranews.com/news/245609/communication-ministry-studying-report-of-indihome-data-leak\" target=\"_blank\" rel=\"noopener\">reports emerged of a data breach of Indonesia's telecommunications company, IndiHome</a>. Over 26M rows of data alleged to have been sourced from the company was posted to a popular hacking forum and contained 12.6M unique email addresses alongside names, IP addresses, genders and geographic locations. The most recent data was stamped as being recorded in November 2019."
+    }
+  ],
+  "infinitecampus.com": [
+    {
+      "Name": "InfiniteCampus",
+      "Title": "Infinite Campus",
+      "BreachDate": "2026-03-18",
+      "AddedDate": "2026-06-15T01:03:42Z",
+      "PwnCount": 137123,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses",
+        "Support tickets",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In March 2026, the student information system <a href=\"https://www.bleepingcomputer.com/news/security/infinite-campus-warns-of-breach-after-shinyhunters-claims-data-theft/\" target=\"_blank\" rel=\"noopener\">Infinite Campus was targeted in a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published data they alleged was taken from Infinite Campus, containing 137k unique email addresses along with names, phone numbers, physical addresses and support tickets. <a href=\"https://www.reddit.com/r/k12sysadmin/comments/1s12xx7/infinite_campus_incident/\" target=\"_blank\" rel=\"noopener\">Infinite Campus subsequently sent notifications</a>, advising that the exposed data largely consisted of \"names and contact information for school staff\" and that \"the majority is directory information commonly found on school websites\"."
     }
   ],
   "tube.inflatevids.xyz": [
