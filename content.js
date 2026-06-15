@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 15 2026",
+            "headline": "Cisco Fixes SD-WAN Zero-Day",
+            "title": "Cisco Patches Critical SD-WAN Vulnerability in Catalyst SD-WAN Manager",
+            "content": "Cisco has released security updates to address a vulnerability in the Catalyst SD-WAN Manager, tracked as CVE-2026-20262, that was exploited in attacks to escalate to root privileges. The flaw affects the SD-WAN solution's vManage component and allows remote code execution through specially crafted requests. This vulnerability was actively exploited in zero-day attacks, highlighting the need for immediate patching. Users should update their SD-WAN solutions to the latest version to prevent exploitation. The patch is part of Cisco's regular security update cycle, emphasizing the importance of regular software updates. The vulnerability affects all SD-WAN solutions prior to the latest patch. Entities: CVE-2026-20262, Cisco, SD-WAN, zero-day",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 15 2026",
+            "headline": "LiteLLM AI Gateway Vulnerability",
+            "title": "Researchers Discover Vulnerability Chain in LiteLLM AI Gateway",
+            "content": "A default low-privilege account on a LiteLLM proxy can climb to full admin and run code on the server by chaining three vulnerabilities, researchers at Obsidian Security disclosed. LiteLLM is a widely deployed open-source AI gateway that brokers calls to more than 100 model providers behind one OpenAPI. The vulnerability chain allows attackers to gain full control of the AI gateway server, potentially leading to further attacks on connected systems. Users should review their LiteLLM configurations and apply patches as soon as they become available. The discovery highlights the importance of securing AI infrastructure. The vulnerabilities affect all LiteLLM versions prior to the latest patch. Entities: LiteLLM, AI gateway, vulnerability chain",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 15 2026",
+            "headline": "ShinyHunters Data Breach Claim",
+            "title": "Council of Europe Investigates ShinyHunters Data Breach Claims",
+            "content": "The Council of Europe, the continent's oldest intergovernmental body, is probing claims of a data breach made by the ShinyHunters extortion group over the weekend. The claims suggest that sensitive data may have been compromised, although the full extent of the breach is not yet clear. The Council of Europe is working to verify the claims and assess the potential impact. This incident highlights the ongoing threat posed by extortion groups and the need for robust data protection measures. The Council of Europe is taking steps to notify affected parties and provide guidance on next steps. Entities: ShinyHunters, Council of Europe, data breach",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/council-of-europe-investigates-shinyhunters-data-breach-claims/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 15 2026",
+            "headline": "Ransomware Hits Sugar Producer",
+            "title": "Ransomware Attack Shuts Down Mills of Australia’s Second-Largest Sugar Producer",
+            "content": "Mackay Sugar was targeted in a cyberattack carried out by a threat group known as The Gentlemen. The attack resulted in the shutdown of mills, highlighting the potential for ransomware to disrupt critical infrastructure. The Gentlemen are a relatively new ransomware group that has been active in recent months, targeting various industries. This incident underscores the need for robust cybersecurity measures to prevent and respond to ransomware attacks. Mackay Sugar is working to restore operations and assess the full impact of the attack. Entities: The Gentlemen, ransomware, Mackay Sugar",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ransomware-attack-shuts-down-mills-of-australias-second-largest-sugar-producer/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 15 2026",
+            "headline": "Weekly Cybersecurity Recap",
+            "title": "Weekly Recap: Chrome 0-Day, UniFi Exploits, macOS Stealers, VPN Flaw and More",
+            "content": "This week saw a range of cybersecurity incidents, including the discovery of a Chrome 0-day vulnerability, exploits targeting UniFi devices, and the emergence of macOS stealers. A VPN flaw was also disclosed, highlighting the ongoing need for vigilance in the cybersecurity landscape. These incidents demonstrate the importance of staying up-to-date with the latest security patches and being aware of potential threats. Users should review their systems and apply patches as soon as possible. The recap also notes the ongoing threat posed by phishing kits and the importance of robust security measures. Entities: Chrome, UniFi, macOS, VPN, 0-day",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/weekly-recap-chrome-0-day-unifi.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 15 2026",
+            "headline": "Microsoft 365 Copilot Vulnerability",
+            "title": "New Attack Turns Microsoft 365 Copilot into 1-Click Data Theft Tool",
+            "content": "A critical vulnerability chain dubbed SearchLeak in Microsoft 365 Copilot Enterprise could allow attackers to steal sensitive data from a target's mailbox, OneDrive, or SharePoint account through a specially crafted URL. The vulnerability affects Microsoft 365 Copilot Enterprise users and allows attackers to bypass security measures and gain unauthorized access to sensitive data. Microsoft has released a patch to address the vulnerability, and users should apply it immediately. The incident highlights the importance of securing cloud-based services and being aware of potential vulnerabilities. Entities: Microsoft 365, Copilot, SearchLeak, vulnerability chain",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-attack-turned-microsoft-365-copilot-into-1-click-data-theft-tool/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 15 2026",
+            "headline": "Infinite Campus Data Breach",
+            "title": "Infinite Campus Data Breach Affects 137,000 School Staff Accounts",
+            "content": "The ShinyHunters extortion gang stole personal information from more than 137,000 school staff accounts in a Salesforce data theft attack that targeted the widely used Infinite Campus K-12 student information system in March. The breach highlights the potential for cyberattacks to compromise sensitive data in the education sector. Infinite Campus is working to notify affected parties and provide guidance on next steps. The incident underscores the need for robust cybersecurity measures to protect sensitive data. Users should be vigilant and monitor their accounts for suspicious activity. Entities: ShinyHunters, Infinite Campus, data breach",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/infinite-campus-data-breach-affects-137-000-school-staff-accounts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 15 2026",
+            "headline": "Ukrainian Man Pleads Guilty",
+            "title": "Ukrainian Man Pleads Guilty in US to Conti Ransomware Charges",
+            "content": "Oleksii Oleksiyovych Lytvynenko admitted to working on the development of a loader for the Conti gang. The plea is part of an ongoing effort to disrupt and dismantle ransomware operations. Conti is a notorious ransomware group that has been responsible for numerous high-profile attacks. The guilty plea highlights the international cooperation and law enforcement efforts to combat ransomware. Lytvynenko's role in the Conti gang underscores the complexity and sophistication of ransomware operations. Entities: Conti, ransomware, Oleksii Oleksiyovych Lytvynenko",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ukrainian-man-pleads-guilty-in-us-to-conti-ransomware-charges/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Maine Disables Breach Portal",
+            "title": "Maine Disables Data Breach Notification Portal After Fake Disclosures",
+            "content": "Maine has taken its public data breach reporting portal offline after fraudulent breach disclosures were published on the state's website, prompting a review of procedures to prevent abuse in the future. The move highlights the need for robust security measures to prevent false reports and ensure the integrity of data breach notification systems. Maine is working to implement new measures to verify the authenticity of breach reports and prevent similar incidents. The incident underscores the importance of cybersecurity in maintaining public trust. Entities: Maine, data breach, notification portal",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/maine-disables-data-breach-notification-portal-after-fake-disclosures/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 12 2026",
+            "headline": "Ukrainian National Pleads Guilty",
+            "title": "Ukrainian National Pleads Guilty to Role in Conti Ransomware Operation",
+            "content": "A Ukrainian national extradited from Ireland to the United States last year has pleaded guilty to conspiracy charges tied to the Conti ransomware operation. The plea is part of an ongoing effort to disrupt and dismantle ransomware operations. The individual's role in the Conti gang highlights the international scope and complexity of ransomware operations. The guilty plea underscores the cooperation between law enforcement agencies to combat ransomware. The Conti gang has been responsible for numerous high-profile attacks, and this plea marks a significant step in holding perpetrators accountable. Entities: Conti, ransomware, Ukrainian national",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-national-pleads-guilty-to-role-in-conti-ransomware-operation/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 13 2026",
             "headline": "NPM 12 Boosts Security",
             "title": "NPM 12 Will Change Script Execution Behavior to Prevent Supply Chain Attacks",
