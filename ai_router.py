@@ -119,22 +119,35 @@ class AIRouter:
             result = self.call_groq(prompt, system_prompt, max_tokens, temperature=temperature)
             # Fallback 1: OpenRouter Hermes 405B (massive context)
             if not result:
+                time.sleep(2)
                 result = self.call_openrouter(prompt, system_prompt, max_tokens, model="nousresearch/hermes-3-llama-3.1-405b:free", temperature=temperature)
             # Fallback 2: OpenRouter Gemma 4 31B
             if not result:
+                time.sleep(2)
                 result = self.call_openrouter(prompt, system_prompt, max_tokens, model="google/gemma-4-31b-it:free", temperature=temperature)
-            # Fallback 3: OpenRouter Llama 3
+            # Fallback 3: HuggingFace (Extremely reliable, 8k context)
             if not result:
+                time.sleep(2)
+                result = self.call_huggingface(prompt, max_tokens, temperature=temperature)
+            # Fallback 4: OpenRouter Llama 3
+            if not result:
+                time.sleep(2)
                 result = self.call_openrouter(prompt, system_prompt, max_tokens, model="meta-llama/llama-3.3-70b-instruct:free", temperature=temperature)
                 
         elif task_type == "cve":
             # Primary: OpenRouter Gemma 4 (Fast, good at JSON)
             result = self.call_openrouter(prompt, system_prompt, max_tokens, model="google/gemma-4-31b-it:free", temperature=temperature)
-            # Fallback: OpenRouter Llama
+            # Fallback 1: HuggingFace (Highly reliable)
             if not result:
+                time.sleep(2)
+                result = self.call_huggingface(prompt, max_tokens, temperature=temperature)
+            # Fallback 2: OpenRouter Llama
+            if not result:
+                time.sleep(2)
                 result = self.call_openrouter(prompt, system_prompt, max_tokens, model="meta-llama/llama-3.3-70b-instruct:free", temperature=temperature)
-            # Fallback 2: Groq
+            # Fallback 3: Groq
             if not result:
+                time.sleep(2)
                 result = self.call_groq(prompt, system_prompt, max_tokens, temperature=temperature)
                 
         elif task_type == "threat_intel":
@@ -142,9 +155,11 @@ class AIRouter:
             result = self.call_huggingface(prompt, max_tokens, temperature=temperature)
             # Fallback: OpenRouter Llama 3B
             if not result:
+                time.sleep(2)
                 result = self.call_openrouter(prompt, system_prompt, max_tokens, model="meta-llama/llama-3.2-3b-instruct:free", temperature=temperature)
             # Fallback 2: Groq
             if not result:
+                time.sleep(2)
                 result = self.call_groq(prompt, system_prompt, max_tokens, temperature=temperature)
                 
         else:
