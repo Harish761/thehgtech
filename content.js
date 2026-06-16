@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 16 2026",
+            "headline": "1,500 AUR Packages Hit",
+            "title": "Atomic Arch Supply Chain Attack Compromises Arch Linux Packages",
+            "content": "Arch Linux has suspended account registrations due to a supply chain attack that compromised 1,500 AUR packages. The attack involved malicious packages being uploaded to the Arch User Repository (AUR). This incident highlights the risks associated with community-driven package repositories. Users who have installed packages from AUR recently should verify the integrity of their systems. The Arch Linux team is working to resolve the issue and prevent similar attacks in the future. The incident underscores the importance of package verification and validation in open-source ecosystems. Entities: Arch Linux, AUR, supply chain attack",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/atomic-arch-supply-chain-attack-hits-1500-aur-packages/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "cPanel Plugin Flaw Exploited",
+            "title": "CISA Warns of Actively Exploited cPanel Plugin Vulnerability",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has warned of an actively exploited vulnerability in the LiteSpeed cPanel plugin, tracked as CVE-2026-54420. The flaw allows for root privilege escalation and is being exploited in attacks. CISA has given U.S. government agencies three days to secure their servers against this vulnerability. The exploit highlights the importance of prompt patching and vulnerability management. Users of the LiteSpeed cPanel plugin should update immediately to prevent exploitation. Entities: CVE-2026-54420, cPanel, LiteSpeed",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-another-actively-exploited-cpanel-plugin-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "Fortinet FortiSandbox Flaws",
+            "title": "Attackers Exploit Multiple Fortinet FortiSandbox Vulnerabilities",
+            "content": "Threat actors are exploiting multiple security vulnerabilities in Fortinet's FortiSandbox, including CVE-2026-39813, CVE-2026-39808, and CVE-2026-25089. These flaws allow for various levels of exploitation, including potential code execution. The vulnerabilities are being actively exploited, and users should patch their systems as soon as possible. Fortinet FortiSandbox is a critical component of many organizations' security infrastructures, making these vulnerabilities particularly concerning. Entities: CVE-2026-39813, CVE-2026-39808, CVE-2026-25089, Fortinet FortiSandbox",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/attackers-exploit-three-fortinet.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "DragonForce Ransomware Evolves",
+            "title": "DragonForce Ransomware Uses Microsoft Teams to Hide Command and Control Traffic",
+            "content": "The DragonForce ransomware gang has been observed using a custom malware named 'Backdoor.Turn' to hide command-and-control traffic inside Microsoft Teams relay infrastructure. This tactic allows the attackers to evade detection and maintain persistence within compromised networks. The use of legitimate services like Microsoft Teams for malicious purposes highlights the evolving nature of ransomware attacks. Organizations should be vigilant and monitor their networks for such activity. Entities: DragonForce, Microsoft Teams, ransomware",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-gang-abuses-microsoft-teams-relays-to-hide-malicious-traffic/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "FortiSandbox Flaws Exploited",
+            "title": "Critical Fortinet FortiSandbox Vulnerabilities Now Exploited in Attacks",
+            "content": "Attackers are now exploiting several critical vulnerabilities in Fortinet's FortiSandbox cyber threat detection platform. The exploitation of these vulnerabilities can lead to significant security breaches. Fortinet users should immediately apply available patches to protect their systems. The active exploitation of these flaws underscores the urgent need for timely vulnerability management. Entities: Fortinet FortiSandbox, vulnerability exploitation",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-fortinet-fortisandbox-flaws-now-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "iRhythm Data Breach",
+            "title": "iRhythm Discloses Data Breach Exposing Patient Information",
+            "content": "iRhythm Holdings, a digital healthcare company, has disclosed a data breach where hackers stole patients' personal and health information stored on third-party-hosted business applications. The breach occurred when attackers gained unauthorized access to these applications. iRhythm has notified affected individuals and is taking steps to enhance its security measures. This incident highlights the risks associated with third-party data storage in the healthcare sector. Entities: iRhythm, data breach, healthcare",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/irhythm-discloses-data-breach-says-hackers-stole-patient-info/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "Cisco SD-WAN Manager Flaw",
+            "title": "Cisco Releases Security Updates for Actively Exploited SD-WAN Manager Vulnerability",
+            "content": "Cisco has released security updates for a medium-severity security flaw in Catalyst SD-WAN Manager, tracked as CVE-2026-20262. The vulnerability allows an authenticated attacker to create or overwrite files that may later be used to gain root privileges. The flaw is being actively exploited, and users should apply the available patches as soon as possible. This incident emphasizes the importance of keeping network management systems up to date. Entities: CVE-2026-20262, Cisco, SD-WAN Manager",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "LiteSpeed cPanel Flaw",
+            "title": "CISA Flags LiteSpeed cPanel Plugin Flaw for Root Privilege Escalation",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in the LiteSpeed cPanel plugin to its Known Exploited Vulnerabilities (KEV) catalog. The vulnerability, tracked as CVE-2026-54420, allows for root privilege escalation and is being exploited in attacks. Federal Civilian Executive Branch (FCEB) agencies must apply the fixes by June 18, 2026. Prompt action is required to mitigate the risk of exploitation. Entities: CVE-2026-54420, LiteSpeed cPanel, CISA",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisa-flags-litespeed-cpanel-plugin-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 10 2026",
+            "headline": "The Gentlemen Ransomware",
+            "title": "Who Runs the Ransomware Group 'The Gentlemen?'",
+            "content": "A cybercrime group known as The Gentlemen has emerged as a significant ransomware actor, attracting affiliates with promises of 90% of any ransom paid by victims. The group's aggressive recruitment strategy and high payouts to affiliates have made it the second most active ransomware gang by victim count. The Gentlemen's tactics and success highlight the evolving landscape of ransomware operations. Entities: The Gentlemen, ransomware",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "UK Social Media Age Checks",
+            "title": "UK to Require ID or Face Scan for Social Media Accounts",
+            "content": "The UK will soon require individuals to prove they are over 16 with an ID upload or a facial age scan to open a new social media account. This move aims to prevent under-16s from accessing social media platforms. However, security experts warn that these age checks are easy to circumvent and may create new data-breach risks. The implementation of such measures raises concerns about privacy and security. Entities: UK, social media, age verification",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-to-require-id-or-face-scan-before-you-can-make-social-media-accounts/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 15 2026",
             "headline": "Cisco Fixes SD-WAN Zero-Day",
             "title": "Cisco Patches Critical SD-WAN Vulnerability in Catalyst SD-WAN Manager",
@@ -78,48 +168,93 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
-            "date": "Jun 13 2026",
-            "headline": "OpenAI Under Fire—State Attorneys General Launch Probe",
-            "title": "State Attorneys General Investigate OpenAI Over Data Handling and Ad Policies",
-            "content": "Several state attorneys general have launched an investigation into OpenAI regarding its data privacy practices and advertising policies. The probe specifically examines how the company handles sensitive health data and whether its ad policies violate state consumer protection laws. This investigation follows increasing regulatory scrutiny over the transparency of Large Language Model (LLM) training sets. Affected users may see changes in how their personal data is processed if the probe leads to mandated policy shifts. Legal teams should monitor these proceedings as they may set precedents for AI data governance across the US. This action reflects a broader trend of state-level enforcement in the absence of federal AI legislation.",
+            "date": "Jun 16 2026",
+            "headline": "60% of US Consumers Reject AI",
+            "title": "US Consumers Wary of AI-Generated Answers in Brand Messaging",
+            "content": "A recent survey by WordPress VIP found that 60% of US consumers are turned off by the term 'AI' in brand messaging. This suggests that while companies see AI search as an important referral channel, consumers are wary of AI-generated answers. The survey highlights the need for transparency in AI usage. Companies must balance the benefits of AI with consumer concerns. The survey's findings have implications for marketing strategies and consumer trust. Entities: AI, WordPress VIP",
             "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/",
+            "sourceUrl": "https://techcrunch.com/2026/06/16/sixty-percent-of-u-s-consumers-say-ai-in-brand-messaging-is-a-turnoff-survey-finds/",
             "relatedResources": []
         },
         {
-            "date": "Jun 13 2026",
-            "headline": "National Security Order—Anthropic Blocks Fable 5 and Mythos 5",
-            "title": "Anthropic Cuts Off Foreign Access to Fable 5 and Mythos 5 Models",
-            "content": "Anthropic has disabled access to its Fable 5 and Mythos 5 models for all foreign nations following a direct government order. The restriction applies to all users outside the US and extends to Anthropic employees residing in foreign jurisdictions. The government cited national security concerns as the primary driver for the immediate block. This move highlights the increasing classification of advanced AI capabilities as dual-use technologies subject to export controls. Organizations relying on these specific models for international operations must now seek alternative LLM providers. This event signals a shift toward the geopolitical fragmentation of AI model availability.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security",
+            "date": "Jun 15 2026",
+            "headline": "US Gov Interferes with AI Models",
+            "title": "US Government's Anthropic Models Ban Sparks Industry Concerns",
+            "content": "The US government's decision to force Anthropic to pull its latest cybersecurity models has raised concerns about government interference in the AI industry. The move is seen as reactionary or retaliatory, and its implications are still unclear. The ban highlights the complex relationship between the US government and the AI industry. Companies must navigate these complexities to ensure compliance. The ban may have far-reaching consequences for the development of AI models. Entities: Anthropic, US government, AI",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
             "relatedResources": []
         },
         {
-            "date": "Jun 13 2026",
-            "headline": "Gen AI Fails Hollywood—Vanilla Models Cannot Produce Paid Entertainment",
-            "title": "Limitations of Generative AI in Professional Filmmaking and Entertainment",
-            "content": "Current generative AI video models are unable to produce high-quality content that audiences are willing to pay for. While vanilla gen AI models can create short clips, they lack the consistency and narrative control required for professional filmmaking. Most AI firms are struggling to move beyond short-form demonstrations to full-length cinematic productions. This gap suggests that the revolution in Hollywood will require specialized, fine-tuned models rather than general-purpose tools. Filmmakers are finding that prompt-based generation is insufficient for the precision needed in professional editing. The industry is now looking toward hybrid workflows that combine human creativity with AI assistance.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/948425/tribeca-2026-dear-upstairs-neighbors-google-deepmind-openai",
+            "date": "Jun 15 2026",
+            "headline": "Salesforce Acquires Fin for $3.6B",
+            "title": "Salesforce Expands AI Capabilities with Fin Acquisition",
+            "content": "Salesforce has acquired AI customer service platform Fin for $3.6 billion. The acquisition aims to improve Salesforce's existing enterprise platform, Agentforce, which allows businesses to build custom AI agents. Fin's team and technology will enhance Agentforce's capabilities. The move highlights Salesforce's commitment to AI development. The acquisition is expected to have a significant impact on the customer service industry. Entities: Salesforce, Fin, AI, Agentforce",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/",
             "relatedResources": []
         },
         {
-            "date": "Jun 13 2026",
-            "headline": "iOS 27 Adds AI Photo Tools—Apple Enters Generative Editing",
-            "title": "Apple Introduces AI-Powered Photo Editing Features in iOS 27",
-            "content": "Apple has released its first set of serious AI photo editing tools as part of the iOS 27 update. While these features are more conservative than Google's Pixel offerings, they bring generative editing to the world's most popular camera system. The tools allow users to modify images using AI, though early reviews suggest mixed results in terms of realism. This update integrates AI directly into the native photo app, making generative tools accessible to millions of users. Security professionals should be aware of the implications for digital forensics and the authenticity of mobile imagery. This move accelerates the trend of integrating generative AI into consumer operating systems.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/949360/apple-ai-photo-edit-reframe-extend-clean-up-hands-on",
+            "date": "Jun 16 2026",
+            "headline": "AI Watches Over Seniors",
+            "title": "AI-Powered Devices Monitor Seniors for Safety",
+            "content": "Devices that monitor seniors for safety are becoming increasingly popular among worried loved ones and underresourced home care agencies. These devices use AI to detect potential safety risks and alert caregivers. The technology has the potential to improve senior care and reduce costs. However, concerns about privacy and data security must be addressed. The use of AI in senior care is a growing trend. Entities: AI, senior care",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/sensi-ai-seniors-home-care-aging-in-place/",
             "relatedResources": []
         },
         {
-            "date": "Jun 13 2026",
-            "headline": "US Gov Pulls Plug on Anthropic AI",
-            "title": "Anthropic's Claude Fable 5 Model Taken Offline Due to Security Concerns",
-            "content": "The US government has ordered Anthropic to take its Claude Fable 5 model offline due to a potential security vulnerability. The company has expressed disagreement with the decision, stating that the finding of a narrow potential jailbreak should not be cause for recalling a commercial model deployed to hundreds of millions of people. The model's capabilities and potential risks are still being assessed. Anthropic's decision to comply with the government's order may impact the development and deployment of AI models in the future. The incident highlights the ongoing challenges of ensuring AI safety and security. Users of the model should be aware of the potential risks and take necessary precautions. Entities: Anthropic, Claude Fable 5, AI safety",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
+            "date": "Jun 16 2026",
+            "headline": "Token Usage Tests AI",
+            "title": "Companies Navigate the Emerging Challenge of Tokenomics",
+            "content": "A Silicon Valley software maker and an ecommerce company are navigating the emerging challenge of tokenomics. Token usage is testing the limits of AI capabilities. Companies must balance the benefits of token-based systems with the risks of over-reliance on AI. The challenge highlights the need for careful planning and management. Tokenomics is a critical aspect of AI development. Entities: tokenomics, AI",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/claude-tokens-compute-cost-code-8x8/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "SpaceX Goes Public",
+            "title": "SpaceX IPO: Everything You Need to Know",
+            "content": "SpaceX has gone public, marking a significant milestone for the company. The IPO has generated significant interest and investment. SpaceX's valuation has increased significantly, making it one of the most valuable companies in the world. The company's future plans, including its AI division, will be closely watched. The IPO highlights the growing importance of space technology and AI. Entities: SpaceX, IPO, AI",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/16/spacex-is-public-everything-you-need-to-know-post-ipo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "DOJ Backs xAI's Turbines",
+            "title": "US Department of Justice Supports xAI's Use of Unpermitted Gas Turbines",
+            "content": "The US Department of Justice has claimed that xAI's use of unpermitted gas turbines is a matter of national, economic, and energy security. The move highlights the complex relationship between the US government and the energy industry. xAI's turbines are critical to the company's operations, and the DOJ's support is significant. The issue has implications for energy policy and national security. Entities: xAI, US Department of Justice, gas turbines",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/16/doj-claims-xais-unpermitted-gas-turbines-are-a-matter-of-national-economic-and-energy-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "Plaud Tops $100M in ARR",
+            "title": "Plaud's AI-Powered Meeting Notetakers Drive Revenue Growth",
+            "content": "Plaud's software business has topped $100 million in annual recurring revenue (ARR) after shipping over 2 million AI-powered meeting notetakers. The company's success highlights the growing demand for AI-powered productivity tools. Plaud's notetakers use AI to automatically generate meeting notes, reducing the need for manual note-taking. The company's revenue growth is a significant milestone. Entities: Plaud, AI, meeting notetakers",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/16/plaud-says-its-software-business-topped-100m-in-arr-after-shipping-over-2m-ai-notetakers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "Robinhood Lays Off 10%",
+            "title": "Robinhood's Layoffs Highlight Challenges in the Tech Industry",
+            "content": "Robinhood has laid off 10% of its staff, citing the need to restructure and improve efficiency. The layoffs highlight the challenges facing the tech industry, including increased competition and regulatory pressures. Unlike some other tech companies, Robinhood's CEO did not blame AI for the layoffs. The move is seen as a strategic decision to ensure the company's long-term success. Entities: Robinhood, layoffs, tech industry",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/16/robinhoods-note-on-10-layoffs-shows-blaming-ai-isnt-cutting-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 16 2026",
+            "headline": "SpaceX Valuation Hits $2.7T",
+            "title": "SpaceX's Valuation Balloons to $2.7 Trillion After IPO",
+            "content": "SpaceX's valuation has increased to $2.7 trillion after its IPO, making it one of the most valuable companies in the world. The company's valuation has increased by $1 trillion since its shares started trading. The significant increase highlights the investor enthusiasm for space technology and AI. SpaceX's future plans, including its AI division, will be closely watched. Entities: SpaceX, valuation, IPO, AI",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/16/spacex-passes-amazon-as-valuation-balloons-to-2-7t/",
             "relatedResources": []
         }
     ],
