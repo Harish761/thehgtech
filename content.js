@@ -74,69 +74,6 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/ukrainian-man-pleads-guilty-in-us-to-conti-ransomware-charges/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 12 2026",
-            "headline": "Maine Disables Breach Portal",
-            "title": "Maine Disables Data Breach Notification Portal After Fake Disclosures",
-            "content": "Maine has taken its public data breach reporting portal offline after fraudulent breach disclosures were published on the state's website, prompting a review of procedures to prevent abuse in the future. The move highlights the need for robust security measures to prevent false reports and ensure the integrity of data breach notification systems. Maine is working to implement new measures to verify the authenticity of breach reports and prevent similar incidents. The incident underscores the importance of cybersecurity in maintaining public trust. Entities: Maine, data breach, notification portal",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/maine-disables-data-breach-notification-portal-after-fake-disclosures/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 12 2026",
-            "headline": "Ukrainian National Pleads Guilty",
-            "title": "Ukrainian National Pleads Guilty to Role in Conti Ransomware Operation",
-            "content": "A Ukrainian national extradited from Ireland to the United States last year has pleaded guilty to conspiracy charges tied to the Conti ransomware operation. The plea is part of an ongoing effort to disrupt and dismantle ransomware operations. The individual's role in the Conti gang highlights the international scope and complexity of ransomware operations. The guilty plea underscores the cooperation between law enforcement agencies to combat ransomware. The Conti gang has been responsible for numerous high-profile attacks, and this plea marks a significant step in holding perpetrators accountable. Entities: Conti, ransomware, Ukrainian national",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukrainian-national-pleads-guilty-to-role-in-conti-ransomware-operation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 13 2026",
-            "headline": "NPM 12 Boosts Security",
-            "title": "NPM 12 Will Change Script Execution Behavior to Prevent Supply Chain Attacks",
-            "content": "NPM 12 will introduce a significant change in script execution behavior to prevent supply chain attacks. By default, npm install will no longer execute scripts from dependencies unless explicitly allowed. This change aims to reduce the risk of malicious scripts being executed during the installation process. The new behavior will help prevent supply chain attacks, which have become increasingly common in recent years. Developers should review their dependencies and scripts to ensure compatibility with the new NPM 12 behavior. This change highlights the ongoing efforts to improve the security of the npm ecosystem. Entities: NPM 12, supply chain attacks",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/npm-12-will-change-script-execution-behavior-to-prevent-supply-chain-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 13 2026",
-            "headline": "Splunk Enterprise Flaw",
-            "title": "Critical Splunk Enterprise Flaw Lets Attackers Run Code Without Authentication",
-            "content": "A critical security flaw in Splunk Enterprise has been discovered, allowing attackers to run code without authentication. The vulnerability, tracked as CVE-2026-20253, is rated 9.8 on the CVSS scoring system. This flaw enables attackers to conduct unauthenticated file operations and remote code execution. Splunk has released security updates to address this issue. Users should apply the updates immediately to prevent potential attacks. The vulnerability affects all Splunk Enterprise versions prior to the latest update. Entities: CVE-2026-20253, Splunk Enterprise",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 13 2026",
-            "headline": "US Gov Blocks Fable 5",
-            "title": "US Government Orders Anthropic to Ban Foreign Nationals from Accessing Fable 5 and Mythos 5",
-            "content": "The US government has ordered Anthropic to block all foreign nationals from accessing Fable 5 and Mythos 5, forcing the company to suspend both models worldwide. Anthropic is complying with the order but disputes the basis, calling the cited jailbreak narrow and the capability widely available elsewhere. This move highlights the ongoing concerns about the potential misuse of AI models by foreign entities. The suspension will impact users worldwide, and Anthropic is working to comply with the new export controls. Entities: Fable 5, Mythos 5, Anthropic",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-gov-asks-anthropic-to-ban-foreign-national-access-to-fable-mythos/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 13 2026",
-            "headline": "Anthropic Complies with Order",
-            "title": "Anthropic Says It Has Taken Its Latest AI Models Offline to Comply With New Export Controls",
-            "content": "Anthropic has taken Fable 5 and Mythos 5 offline to comply with a directive from the US government to prevent use by foreign nationals. The move highlights the ongoing concerns about the potential misuse of AI models by foreign entities. Anthropic is working to comply with the new export controls, which will impact users worldwide. The suspension of the AI models is a significant development in the AI landscape. Entities: Fable 5, Mythos 5, Anthropic",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/anthropic-says-it-has-taken-its-latest-ai-models-offline-to-comply-with-new-export-controls/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 13 2026",
-            "headline": "US Orders Anthropic",
-            "title": "US Orders Anthropic to Suspend Fable 5 and Mythos 5 Access for Foreign Nationals",
-            "content": "The US government has ordered Anthropic to suspend access to Fable 5 and Mythos 5 for foreign nationals, citing national security concerns. Anthropic will abruptly disable the models for all users to comply with the order. The move highlights the ongoing efforts to regulate the use of AI models and prevent their potential misuse. The suspension will impact users worldwide, and Anthropic is working to comply with the new export controls. Entities: Fable 5, Mythos 5, Anthropic",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/us-orders-anthropic-to-suspend-fable-5.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
@@ -183,15 +120,6 @@ const websiteContent = {
             "content": "The US government has ordered Anthropic to take its Claude Fable 5 model offline due to a potential security vulnerability. The company has expressed disagreement with the decision, stating that the finding of a narrow potential jailbreak should not be cause for recalling a commercial model deployed to hundreds of millions of people. The model's capabilities and potential risks are still being assessed. Anthropic's decision to comply with the government's order may impact the development and deployment of AI models in the future. The incident highlights the ongoing challenges of ensuring AI safety and security. Users of the model should be aware of the potential risks and take necessary precautions. Entities: Anthropic, Claude Fable 5, AI safety",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 13 2026",
-            "headline": "Anthropic Takes Claude Offline",
-            "title": "Anthropic's Claude Fable 5 Model Taken Offline Due to Potential Jailbreak",
-            "content": "Anthropic has taken its Claude Fable 5 model offline due to a potential jailbreak, which could have allowed unauthorized access to the model's capabilities. The company has stated that the government believes it has become aware of a method of bypassing or \"jailbreaking\" Fable 5, leading to the decision to take the model offline. The incident highlights the ongoing challenges of ensuring AI safety and security, particularly in regards to potential vulnerabilities in AI models. Users of the model should be aware of the potential risks and take necessary precautions. The development of AI models with robust security measures is crucial to preventing similar incidents in the future. Entities: Anthropic, Claude Fable 5, AI security",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/anthropic-says-us-government-ordered-it-to-shut-down-mythos-models/",
             "relatedResources": []
         }
     ],
@@ -278,6 +206,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-54420",
+            "dateAdded": "Jun 15, 2026",
+            "vendor": "LiteSpeed cPanel Plugin",
+            "description": "LiteSpeed cPanel plugin contains a UNIX symbolic link (Symlink) following vulnerability that could allow a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54420",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-20262",
+            "dateAdded": "Jun 15, 2026",
+            "vendor": "Cisco Catalyst SD-WAN Manager",
+            "description": "Cisco Catalyst SD-WAN Manager contains a directory or path traversal vulnerability that could allow an authenticated, remote attacker to create a file or overwrite any file on the filesystem of an aff",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20262",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-35273",
             "dateAdded": "Jun 12, 2026",
             "vendor": "Oracle PeopleSoft Enterprise PeopleTools",
@@ -297,39 +247,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10520",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-11645",
-            "dateAdded": "Jun 09, 2026",
-            "vendor": "Google Chromium V8",
-            "description": "Google Chromium V8 out-of-bounds read and write vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. This vulnerability could affect mul",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11645",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-7473",
-            "dateAdded": "Jun 09, 2026",
-            "vendor": "Arista Extensible Operating System",
-            "description": "Arista Extensible Operating System (EOS) contains an incomplete comparison with missing factors vulnerability when the switch incorrectly decapsulate and forwards other unexpected tunneled packet with",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7473",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20245",
-            "dateAdded": "Jun 09, 2026",
-            "vendor": "Cisco Catalyst SD-WAN Manager",
-            "description": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbi",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20245",
             "isZeroDay": false
         }
     ],
