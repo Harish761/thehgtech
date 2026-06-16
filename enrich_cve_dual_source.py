@@ -591,6 +591,16 @@ def main_dual_source():
     print(f"  NVD Critical (CVSS >= 9.0): {output['sources']['nvdCritical']}")
     print(f"  Overlap (in both): {output['sources']['overlap']}")
     print(f"  Total Unique CVEs: {output['totalCVEs']}")
+    
+    # Try to extract router status if available
+    try:
+        from ai_router import ai_router
+        status = ai_router.last_provider if hasattr(ai_router, 'last_provider') and ai_router.last_provider != "None" else "No AI used"
+        print(f"\n🤖 AI Processing Status:")
+        print(f"  CVE Processing: ✅ Completed (via {status})")
+    except Exception:
+        pass
+        
     print(f"\n✓ Output saved to: {OUTPUT_FILE}")
     print("=" * 70)
 

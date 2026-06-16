@@ -21,6 +21,8 @@ class AIRouter:
             self.groq_client = Groq(api_key=self.groq_key)
         else:
             self.groq_client = None
+            
+        self.last_provider = "None"
 
     def call_groq(self, prompt: str, system_prompt: str = "", max_tokens: int = 1000, model: str = "llama-3.3-70b-versatile", temperature: float = 0.3) -> Optional[str]:
         if not self.groq_client:
@@ -40,6 +42,8 @@ class AIRouter:
                 temperature=temperature,
                 max_tokens=max_tokens
             )
+            self.last_provider = f"Groq ({model})"
+            print(f"    [Router] ✅ Success! Task completed using {self.last_provider}")
             return response.choices[0].message.content
         except Exception as e:
             print(f"    [Router] ❌ Groq Failed: {e}")
@@ -72,7 +76,13 @@ class AIRouter:
                 },
                 timeout=30
             )
-            response.raise_for_status()
+            
+            if response.status_code != 200:
+                print(f"    [Router] ❌ OpenRouter Failed: {response.status_code} Error: {response.text}")
+                return None
+                
+            self.last_provider = f"OpenRouter ({model})"
+            print(f"    [Router] ✅ Success! Task completed using {self.last_provider}")
             return response.json()['choices'][0]['message']['content']
         except Exception as e:
             print(f"    [Router] ❌ OpenRouter Failed: {e}")
@@ -102,6 +112,9 @@ class AIRouter:
             
             response = requests.post(API_URL, headers=headers, json=payload, timeout=30)
             response.raise_for_status()
+            
+            self.last_provider = f"HuggingFace ({model})"
+            print(f"    [Router] ✅ Success! Task completed using {self.last_provider}")
             return response.json()[0]['generated_text']
         except Exception as e:
             print(f"    [Router] ❌ Hugging Face Failed: {e}")

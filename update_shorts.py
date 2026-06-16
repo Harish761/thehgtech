@@ -1257,10 +1257,38 @@ def update_shorts():
             print(f"📝 Final count: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI shorts, {len(data['recentCVEs'])} CVEs")
             sys.exit(0)
     
-    # Format NEW articles using Groq
-    print(f"\n🤖 Formatting new articles with Groq...")
-    cyber_content = format_with_gpt(cyber_articles_new, "Cybersecurity") if cyber_articles_new else None
-    ai_content = format_with_gpt(ai_articles_new, "AI") if ai_articles_new else None
+    # Format NEW articles using AI
+    print(f"\n🤖 Formatting new articles with AI...")
+    
+    # Global AI task status tracker
+    ai_status = {
+        "Cybersecurity Shorts": "⏭️ Skipped (No new articles)",
+        "AI Shorts": "⏭️ Skipped (No new articles)"
+    }
+    
+    if cyber_articles_new:
+        try:
+            cyber_content = format_with_gpt(cyber_articles_new, "Cybersecurity")
+            if cyber_content:
+                ai_status["Cybersecurity Shorts"] = f"✅ Fully Completed (via {ai_router.last_provider})"
+            else:
+                ai_status["Cybersecurity Shorts"] = "⚠️ Stopped in Middle (AI returned empty)"
+        except Exception as e:
+            ai_status["Cybersecurity Shorts"] = f"❌ Failed ({e})"
+            cyber_content = None
+    else:
+        cyber_content = None
+        
+    if ai_articles_new:
+        try:
+            ai_content = format_with_gpt(ai_articles_new, "AI")
+            if ai_content:
+                ai_status["AI Shorts"] = f"✅ Fully Completed (via {ai_router.last_provider})"
+            else:
+                ai_status["AI Shorts"] = "⚠️ Stopped in Middle (AI returned empty)"
+        except Exception as e:
+            ai_status["AI Shorts"] = f"❌ Failed ({e})"
+            ai_content = None
     
     # Parse the formatted shorts
     print(f"\n📝 Parsing formatted content...")
@@ -1342,6 +1370,10 @@ def update_shorts():
     print(f"📝 Final count:")
     print(f"   Shorts: {len(data['cyberShorts'])} cyber, {len(data['aiShorts'])} AI")
     print(f"   CVEs: {len(data['recentCVEs'])} vulnerabilities (last 7 days)")
+    print(f"\n🤖 AI Processing Status:")
+    for task, status in ai_status.items():
+        print(f"   {task}: {status}")
+        
     print(f"\n📊 Shorts breakdown:")
     print(f"   New: {len(new_cyber_shorts)} cyber, {len(new_ai_shorts)} AI")
     print(f"   Kept: {len(filtered_cyber)} cyber, {len(filtered_ai)} AI")
