@@ -25,6 +25,30 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1031",
+      "incident_id": 1031,
+      "title": "Transgender User Alleges ChatGPT Allowed Suicide Letter Without Crisis Intervention",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1190",
+      "incident_id": 1190,
+      "title": "Family Reportedly Discovers ChatGPT Logs Detailing Suicidal Ideation Prior to Daughter's Death",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1192",
+      "incident_id": 1192,
+      "title": "16-Year-Old Allegedly Received Suicide Method Guidance from ChatGPT Before Death",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-1529",
       "incident_id": 1529,
       "title": "Purportedly AI-Manipulated Image Allegedly Suggested Inappropriate Conduct Between Besnik Tahiri and",
@@ -71,6 +95,14 @@
       "date": "2026-06-16",
       "category": "fraud",
       "severity": "high"
+    },
+    {
+      "id": "AIID-1535",
+      "incident_id": 1535,
+      "title": "OpenAI Allegedly Failed to Intervene in ChatGPT Conversations Preceding Montreal Web Developer Alice",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-1452",
@@ -2154,9 +2186,9 @@
     }
   ],
   "stats": {
-    "total": 269,
-    "last7Days": 19,
-    "last30Days": 167
+    "total": 273,
+    "last7Days": 23,
+    "last30Days": 171
   },
-  "lastUpdated": "2026-06-17T02:57:41.716572+05:30"
+  "lastUpdated": "2026-06-17T03:51:49.526488+05:30"
 }
