@@ -1,6 +1,78 @@
 {
   "incidents": [
     {
+      "id": "AIID-917",
+      "incident_id": 917,
+      "title": "Alleged Deepfake of Whoopi Goldberg Reportedly Used in Fake Weight-Loss Supplement Ads on Instagram",
+      "date": "2026-06-16",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-920",
+      "incident_id": 920,
+      "title": "Alleged Deepfake Scam Reportedly Promoted Trump Golden Eagles Project as Investment Opportunity",
+      "date": "2026-06-16",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-923",
+      "incident_id": 923,
+      "title": "Nottingham Gallery Owner Allegedly Defrauded by Deepfake Impersonating Pierce Brosnan, Reportedly Le",
+      "date": "2026-06-16",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1529",
+      "incident_id": 1529,
+      "title": "Purportedly AI-Manipulated Image Allegedly Suggested Inappropriate Conduct Between Besnik Tahiri and",
+      "date": "2026-06-16",
+      "category": "content_moderation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1530",
+      "incident_id": 1530,
+      "title": "Purportedly AI-Generated Images Allegedly Linked Sami Lushtaku to Banjska Attack Suspect Milan Radoi",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1531",
+      "incident_id": 1531,
+      "title": "Reported AI-Generated Image Portrayed Vet\u00ebvendosje Official Dejona Mihali Meeting Aleksandar Vu\u010di\u0107",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1532",
+      "incident_id": 1532,
+      "title": "Reported Deepfake Video Impersonating Mark Carney Used in Nearly $1M Cryptocurrency Scam Targeting O",
+      "date": "2026-06-16",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1533",
+      "incident_id": 1533,
+      "title": "Four Lawyers Reportedly Sanctioned After Purportedly AI-Related Hallucinated Citations Appeared in W",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1534",
+      "incident_id": 1534,
+      "title": "Google Alleged Outsider Enterprise Used Gemini to Create Phishing Sites for Text-Message Scams",
+      "date": "2026-06-16",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1452",
       "incident_id": 1452,
       "title": "Purported AI-Generated Impersonations of Albanian Cardiologist Spiro Qirko and Journalist Ilir Topi ",
@@ -2082,9 +2154,9 @@
     }
   ],
   "stats": {
-    "total": 260,
-    "last7Days": 34,
-    "last30Days": 192
+    "total": 269,
+    "last7Days": 19,
+    "last30Days": 167
   },
-  "lastUpdated": "2026-06-16T18:32:16.382936+05:30"
+  "lastUpdated": "2026-06-17T01:18:43.862952+05:30"
 }
