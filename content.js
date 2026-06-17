@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 17 2026",
+            "headline": "DragonForce Ransomware Hits Microsoft Teams",
+            "title": "Microsoft Teams Relay Servers Abused in DragonForce Ransomware Attack",
+            "content": "Attackers have deployed a new Go-based backdoor that uses Microsoft Teams servers for command-and-control in the DragonForce ransomware attack. The backdoor exploits Microsoft Teams' relay servers, allowing attackers to communicate with compromised systems. This attack highlights the increasing use of legitimate services for malicious purposes. Microsoft Teams users should be cautious of suspicious activity and ensure their systems are up-to-date. The use of Microsoft Teams in this attack demonstrates the evolving tactics of ransomware groups. Entities: Microsoft Teams, DragonForce, ransomware",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-teams-relay-servers-abused-in-dragonforce-ransomware-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "CISA Orders Patch for Joomla Flaw",
+            "title": "CISA Orders Federal Agencies to Patch Maximum Severity Joomla Plugin Flaw",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has ordered federal agencies to patch a maximum-severity flaw in the Widget Factory Joomla Content Editor (JCE) plugin. The flaw is being actively exploited in the wild, allowing attackers to execute PHP code. Joomla users should update the JCE plugin to prevent exploitation. This vulnerability highlights the importance of keeping software up-to-date, especially for government agencies. The CISA order demonstrates the severity of the flaw and the need for immediate action. Entities: CISA, Joomla, JCE plugin",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-joomla-plugin-flaw-by-friday/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Microsoft Working on RoguePlanet Patch",
+            "title": "Microsoft Working on Patch for ‘RoguePlanet’ Zero-Day Vulnerability",
+            "content": "Microsoft is working on a patch for the 'RoguePlanet' zero-day vulnerability, which exploits a race condition in Microsoft Defender. The vulnerability allows attackers to spawn a command prompt with System privileges. Microsoft Defender users should be cautious of suspicious activity and expect a patch soon. This vulnerability highlights the importance of keeping software up-to-date, especially for security products. The RoguePlanet vulnerability demonstrates the ongoing efforts of attackers to exploit security software. Entities: Microsoft, RoguePlanet, zero-day, Microsoft Defender",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-working-on-patch-for-rogueplanet-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Oracle Releases 245 Patches",
+            "title": "Oracle’s Second Monthly Security Updates Deliver 245 Patches",
+            "content": "Oracle has released its June 2026 Critical Security Patch Update, which includes 245 patches for various products. The patches address vulnerabilities in Communications, EBS, Enterprise Manager, and other products. Oracle users should apply the patches to prevent exploitation. This update highlights the importance of regular patching, especially for enterprise software. The large number of patches demonstrates Oracle's ongoing efforts to address security vulnerabilities. Entities: Oracle, Critical Security Patch Update",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/oracles-second-monthly-security-updates-deliver-245-patches/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Microsoft Defender Zero-Day",
+            "title": "Microsoft Working on Defender Patch for RoguePlanet Zero-Day Vulnerability",
+            "content": "Microsoft has confirmed that it's working on a security patch for the RoguePlanet zero-day vulnerability in Microsoft Defender. The vulnerability exploits a race condition in Microsoft Defender, allowing attackers to spawn a command prompt with System privileges. Microsoft Defender users should expect a patch soon and be cautious of suspicious activity. This vulnerability highlights the importance of keeping security software up-to-date. The RoguePlanet vulnerability demonstrates the ongoing efforts of attackers to exploit security products. Entities: Microsoft, RoguePlanet, zero-day, Microsoft Defender",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-on-defender-patch-for-rogueplanet-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Chrome and Firefox Patches",
+            "title": "Chrome and Firefox Updated to Patch Critical, High-Severity Vulnerabilities",
+            "content": "Google and Mozilla have released updates for Chrome and Firefox, respectively, to patch critical and high-severity vulnerabilities. The updates address multiple memory safety bugs that could potentially lead to remote code execution. Chrome and Firefox users should update their browsers to prevent exploitation. This update highlights the importance of regular patching, especially for web browsers. The vulnerabilities demonstrate the ongoing efforts of attackers to exploit browser flaws. Entities: Chrome, Firefox, zero-day, RCE",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-and-firefox-updated-to-patch-critical-high-severity-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "144 Mastra npm Packages Compromised",
+            "title": "144 Mastra npm Packages Compromised via Hijacked Contributor Account",
+            "content": "As many as 144 npm packages associated with the Mastra namespace have been compromised via a hijacked contributor account. The compromise is part of a software supply chain attack codenamed easy-day-js. Mastra users should be cautious of suspicious activity and verify the integrity of their packages. This attack highlights the importance of secure software development practices, especially for open-source projects. The compromise demonstrates the evolving tactics of attackers targeting software supply chains. Entities: Mastra, npm, software supply chain attack",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Kodak Confirms Data Breach",
+            "title": "Kodak Confirms Data Breach After ShinyHunters Extortion Gang Claim",
+            "content": "Kodak has confirmed a data breach after the ShinyHunters extortion gang claimed responsibility. The breach allowed hackers to access some of Kodak's data. Kodak is working with external cybersecurity experts to investigate the breach. This breach highlights the importance of robust security measures, especially for companies handling sensitive data. The ShinyHunters gang has been involved in several high-profile breaches, demonstrating their ongoing efforts to exploit vulnerabilities. Entities: Kodak, ShinyHunters, data breach",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/kodak-confirms-data-breach-claimed-by-shinyhunters-extortion-gang/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "CISA Warns of Joomla Flaw",
+            "title": "CISA Warns of Actively Exploited Joomla JCE Flaw Allowing PHP Code Execution",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has warned of an actively exploited flaw in the Widget Factory Joomla Content Editor (JCE) plugin. The flaw allows attackers to execute PHP code, and CISA has added it to its Known Exploited Vulnerabilities (KEV) catalog. Joomla users should update the JCE plugin to prevent exploitation. This vulnerability highlights the importance of keeping software up-to-date, especially for government agencies. The CISA warning demonstrates the severity of the flaw and the need for immediate action. Entities: CISA, Joomla, JCE plugin",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisa-warns-of-actively-exploited-joomla.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "FortiBleed Leak Exposes Credentials",
+            "title": "FortiBleed Leak Exposes Fortinet VPN Credentials for 73,000 Devices",
+            "content": "A newly discovered data leak dubbed \"FortiBleed\" has exposed Fortinet and FortiGate VPN credentials for 73,932 firewall URLs at organizations worldwide. The leak highlights the importance of secure password management and regular credential rotation. Fortinet users should verify the integrity of their credentials and consider rotating them. This leak demonstrates the ongoing efforts of attackers to exploit vulnerabilities in security products. Entities: FortiBleed, Fortinet, VPN, credentials",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 16 2026",
             "headline": "1,500 AUR Packages Hit",
             "title": "Atomic Arch Supply Chain Attack Compromises Arch Linux Packages",
@@ -92,72 +182,99 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 15 2026",
-            "headline": "LiteLLM AI Gateway Vulnerability",
-            "title": "Researchers Discover Vulnerability Chain in LiteLLM AI Gateway",
-            "content": "A default low-privilege account on a LiteLLM proxy can climb to full admin and run code on the server by chaining three vulnerabilities, researchers at Obsidian Security disclosed. LiteLLM is a widely deployed open-source AI gateway that brokers calls to more than 100 model providers behind one OpenAPI. The vulnerability chain allows attackers to gain full control of the AI gateway server, potentially leading to further attacks on connected systems. Users should review their LiteLLM configurations and apply patches as soon as they become available. The discovery highlights the importance of securing AI infrastructure. The vulnerabilities affect all LiteLLM versions prior to the latest patch. Entities: LiteLLM, AI gateway, vulnerability chain",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 15 2026",
-            "headline": "ShinyHunters Data Breach Claim",
-            "title": "Council of Europe Investigates ShinyHunters Data Breach Claims",
-            "content": "The Council of Europe, the continent's oldest intergovernmental body, is probing claims of a data breach made by the ShinyHunters extortion group over the weekend. The claims suggest that sensitive data may have been compromised, although the full extent of the breach is not yet clear. The Council of Europe is working to verify the claims and assess the potential impact. This incident highlights the ongoing threat posed by extortion groups and the need for robust data protection measures. The Council of Europe is taking steps to notify affected parties and provide guidance on next steps. Entities: ShinyHunters, Council of Europe, data breach",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/council-of-europe-investigates-shinyhunters-data-breach-claims/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 15 2026",
-            "headline": "Ransomware Hits Sugar Producer",
-            "title": "Ransomware Attack Shuts Down Mills of Australia’s Second-Largest Sugar Producer",
-            "content": "Mackay Sugar was targeted in a cyberattack carried out by a threat group known as The Gentlemen. The attack resulted in the shutdown of mills, highlighting the potential for ransomware to disrupt critical infrastructure. The Gentlemen are a relatively new ransomware group that has been active in recent months, targeting various industries. This incident underscores the need for robust cybersecurity measures to prevent and respond to ransomware attacks. Mackay Sugar is working to restore operations and assess the full impact of the attack. Entities: The Gentlemen, ransomware, Mackay Sugar",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ransomware-attack-shuts-down-mills-of-australias-second-largest-sugar-producer/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 15 2026",
-            "headline": "Weekly Cybersecurity Recap",
-            "title": "Weekly Recap: Chrome 0-Day, UniFi Exploits, macOS Stealers, VPN Flaw and More",
-            "content": "This week saw a range of cybersecurity incidents, including the discovery of a Chrome 0-day vulnerability, exploits targeting UniFi devices, and the emergence of macOS stealers. A VPN flaw was also disclosed, highlighting the ongoing need for vigilance in the cybersecurity landscape. These incidents demonstrate the importance of staying up-to-date with the latest security patches and being aware of potential threats. Users should review their systems and apply patches as soon as possible. The recap also notes the ongoing threat posed by phishing kits and the importance of robust security measures. Entities: Chrome, UniFi, macOS, VPN, 0-day",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/weekly-recap-chrome-0-day-unifi.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 15 2026",
-            "headline": "Microsoft 365 Copilot Vulnerability",
-            "title": "New Attack Turns Microsoft 365 Copilot into 1-Click Data Theft Tool",
-            "content": "A critical vulnerability chain dubbed SearchLeak in Microsoft 365 Copilot Enterprise could allow attackers to steal sensitive data from a target's mailbox, OneDrive, or SharePoint account through a specially crafted URL. The vulnerability affects Microsoft 365 Copilot Enterprise users and allows attackers to bypass security measures and gain unauthorized access to sensitive data. Microsoft has released a patch to address the vulnerability, and users should apply it immediately. The incident highlights the importance of securing cloud-based services and being aware of potential vulnerabilities. Entities: Microsoft 365, Copilot, SearchLeak, vulnerability chain",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-attack-turned-microsoft-365-copilot-into-1-click-data-theft-tool/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 15 2026",
-            "headline": "Infinite Campus Data Breach",
-            "title": "Infinite Campus Data Breach Affects 137,000 School Staff Accounts",
-            "content": "The ShinyHunters extortion gang stole personal information from more than 137,000 school staff accounts in a Salesforce data theft attack that targeted the widely used Infinite Campus K-12 student information system in March. The breach highlights the potential for cyberattacks to compromise sensitive data in the education sector. Infinite Campus is working to notify affected parties and provide guidance on next steps. The incident underscores the need for robust cybersecurity measures to protect sensitive data. Users should be vigilant and monitor their accounts for suspicious activity. Entities: ShinyHunters, Infinite Campus, data breach",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/infinite-campus-data-breach-affects-137-000-school-staff-accounts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 15 2026",
-            "headline": "Ukrainian Man Pleads Guilty",
-            "title": "Ukrainian Man Pleads Guilty in US to Conti Ransomware Charges",
-            "content": "Oleksii Oleksiyovych Lytvynenko admitted to working on the development of a loader for the Conti gang. The plea is part of an ongoing effort to disrupt and dismantle ransomware operations. Conti is a notorious ransomware group that has been responsible for numerous high-profile attacks. The guilty plea highlights the international cooperation and law enforcement efforts to combat ransomware. Lytvynenko's role in the Conti gang underscores the complexity and sophistication of ransomware operations. Entities: Conti, ransomware, Oleksii Oleksiyovych Lytvynenko",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ukrainian-man-pleads-guilty-in-us-to-conti-ransomware-charges/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 17 2026",
+            "headline": "Agentic Resource Discovery Unveiled",
+            "title": "Introducing Agentic Resource Discovery: A New Approach to Agent Search",
+            "content": "Hugging Face has introduced Agentic Resource Discovery, a novel approach to agent search. This new method enables agents to search for resources in a more efficient and effective manner. The technical details of this approach are still emerging, but it has the potential to significantly impact the field of artificial intelligence. Agentic Resource Discovery could be used in a variety of applications, from robotics to natural language processing. As this technology continues to develop, it will be important for professionals in the field to stay informed about its capabilities and limitations. The introduction of Agentic Resource Discovery marks an exciting new direction for AI research. Entities: Agentic Resource Discovery, Hugging Face, AI",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Snap's $2,000 Specs Glasses",
+            "title": "Snap Debuts New $2,195 Specs Glasses with Advanced Computing Capabilities",
+            "content": "Snap has debuted its new Specs glasses, priced at $2,195. These glasses represent a significant investment in the company's efforts to bring computing into the world and make it more human. The Specs glasses are the result of over 12 years of development and are positioned as a device to enhance the user experience. With advanced computing capabilities, these glasses have the potential to revolutionize the way we interact with technology. However, the high price point may be a barrier for some consumers. As the market for smart glasses continues to evolve, it will be important to see how Snap's Specs glasses are received by consumers. Entities: Snap, Specs glasses, smart glasses",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/report/951481/snap-specs-wearables-smart-glasses-fashion",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "MolmoMotion: 3D Motion Forecasting",
+            "title": "Introducing MolmoMotion: A Language-Guided Approach to 3D Motion Forecasting",
+            "content": "Hugging Face has introduced MolmoMotion, a language-guided approach to 3D motion forecasting. This new method enables the prediction of 3D motion in a more accurate and efficient manner. The technical details of MolmoMotion are still emerging, but it has the potential to significantly impact the field of computer vision. MolmoMotion could be used in a variety of applications, from robotics to autonomous vehicles. As this technology continues to develop, it will be important for professionals in the field to stay informed about its capabilities and limitations. The introduction of MolmoMotion marks an exciting new direction for AI research. Entities: MolmoMotion, Hugging Face, 3D motion forecasting",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/molmomotion",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Slowtech Revolution Gains Momentum",
+            "title": "The Slowtech Revolution: A Growing Movement to Combat Phone Addiction",
+            "content": "The slowtech revolution is gaining momentum as people seek to take back control of their time and attention. This movement is driven by a desire to reduce phone addiction and increase productivity. The slowtech revolution has the potential to significantly impact the way we interact with technology and could lead to the development of new, more mindful technologies. As this movement continues to grow, it will be important for professionals in the field to stay informed about its implications and opportunities. The slowtech revolution marks an exciting new direction for the tech industry. Entities: slowtech revolution, phone addiction, productivity",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/17/the-slowtech-revolution-is-here-to-kill-your-phone-addiction-and-rescue-your-attention-span/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "XDOF Collects Robot Training Data",
+            "title": "XDOF: A New Player in the Robot Training Data Collection Market",
+            "content": "XDOF is a new company that specializes in collecting robot training data. This data is essential for the development of physical AI systems, but its collection can be a time-consuming and labor-intensive process. XDOF's services have the potential to significantly impact the development of physical AI systems and could lead to the creation of more advanced and capable robots. As the demand for robot training data continues to grow, XDOF is well-positioned to meet this need. The company's services could be particularly useful for companies that are developing robots for use in a variety of applications. Entities: XDOF, robot training data, physical AI",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/17/collecting-robot-training-data-is-dirty-unglamorous-work-some-ai-labs-are-already-paying-xdof-to-do-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Pramaana Labs Raises $27M",
+            "title": "Pramaana Labs Secures $27M in Seed Funding to Develop Formal Verification for AI",
+            "content": "Pramaana Labs has raised $27M in seed funding to develop formal verification for AI systems. This technology has the potential to significantly improve the reliability and trustworthiness of AI systems, particularly in high-stakes applications such as law, drug discovery, and tax preparation. Pramaana Labs' formal verification technology could be used to ensure that AI systems are functioning as intended and are free from errors. As the use of AI systems continues to grow, the need for formal verification will become increasingly important. Pramaana Labs is well-positioned to meet this need and could play a key role in the development of more reliable and trustworthy AI systems. Entities: Pramaana Labs, formal verification, AI",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Meta's AI Mode in Search",
+            "title": "Meta Introduces AI Mode in Search: A New Approach to Answering User Queries",
+            "content": "Meta has introduced AI Mode in search, a new approach to answering user queries. This feature uses AI to provide more accurate and relevant results, but it is not without its challenges. AI Mode has the potential to significantly impact the way we interact with search engines and could lead to the development of more advanced and capable search technologies. However, the feature is still in its early stages and may require further refinement before it is widely adopted. As Meta continues to develop and improve AI Mode, it will be important for professionals in the field to stay informed about its capabilities and limitations. Entities: Meta, AI Mode, search engines",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/951099/meta-ai-mode-search-hands-on",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Google's New Smart Speaker",
+            "title": "Google Unveils New Smart Speaker: A Long-Awaited Update to its Home Speaker Line",
+            "content": "Google has unveiled its new smart speaker, a long-awaited update to its Home Speaker line. The new speaker has the same hardware as the previously announced version, but it is now available for pre-order. The speaker has the potential to significantly impact the smart speaker market and could lead to the development of more advanced and capable smart home technologies. As the demand for smart speakers continues to grow, Google's new speaker is well-positioned to meet this need. The company's speaker could be particularly useful for users who are already invested in the Google ecosystem. Entities: Google, smart speaker, Home Speaker",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/951147/google-home-speaker-gemini-launch-date-price-specs-features",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Canadian Pension Giant Invests",
+            "title": "Canadian Pension Giant Invests in Indian Data Center Boom",
+            "content": "A Canadian pension giant has invested in the Indian data center boom, acquiring an 8.2% stake in CtrlS. This investment has the potential to significantly impact the development of data centers in India and could lead to the creation of more jobs and economic growth. The investment is also a testament to the growing importance of data centers in the global economy. As the demand for data center services continues to grow, CtrlS is well-positioned to meet this need. The company's data centers could be particularly useful for businesses that require reliable and secure data storage. Entities: Canadian pension giant, CtrlS, data centers",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/17/canadian-pension-giant-joins-race-to-fund-indias-ai-fueled-data-center-boom/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "DeepL Acquires Mixhalo",
+            "title": "DeepL Acquires Mixhalo: A Strategic Move to Expand its Live-Event Audio Streaming Capabilities",
+            "content": "DeepL has acquired Mixhalo, a company that specializes in live-event audio streaming and translation. This acquisition has the potential to significantly impact the development of live-event audio streaming technologies and could lead to the creation of more advanced and capable audio streaming services. DeepL's acquisition of Mixhalo is a strategic move to expand its capabilities in the live-event audio streaming market. As the demand for live-event audio streaming services continues to grow, DeepL is well-positioned to meet this need. The company's services could be particularly useful for event organizers and attendees who require high-quality audio streaming. Entities: DeepL, Mixhalo, live-event audio streaming",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/17/deepl-acquires-mixhalo-for-live-event-audio-streaming-and-translation/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 16 2026",
             "headline": "60% of US Consumers Reject AI",
