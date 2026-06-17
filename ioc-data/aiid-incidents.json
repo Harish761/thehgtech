@@ -1,6 +1,182 @@
 {
   "incidents": [
     {
+      "id": "AIID-142",
+      "incident_id": 142,
+      "title": "Facebook's Advertisement Moderation System Allegedly Routinely Misidentified Adaptive Fashion Produc",
+      "date": "2026-06-17",
+      "category": "content_moderation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-561",
+      "incident_id": 561,
+      "title": "OpenAI Alleged by Lawsuit Violated Users' Privacy Rights by Training AI on Private Info without Info",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-686",
+      "incident_id": 686,
+      "title": "Meta AI Image Generator Reportedly Fails to Accurately Represent Interracial Relationships",
+      "date": "2026-06-17",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-700",
+      "incident_id": 700,
+      "title": "Meta's AI Chatbots Are Reportedly Entering Online Support Communities Uninvited",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-712",
+      "incident_id": 712,
+      "title": "Meta AI Hallucinates Harassment Allegations Against New York Politicians",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-734",
+      "incident_id": 734,
+      "title": "Leading AI Models Reportedly Found to Mimic Russian Disinformation in 33% of Cases and to Cite Fake ",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-750",
+      "incident_id": 750,
+      "title": "AI Chatbots Reportedly Inaccurately Conveyed Real-Time Political News",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-882",
+      "incident_id": 882,
+      "title": "AI-Generated Reading Summaries on Fable App Reportedly Wrote Biased and Offensive Commentary",
+      "date": "2026-06-17",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-968",
+      "incident_id": 968,
+      "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformat",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1014",
+      "incident_id": 1014,
+      "title": "Students in Maltese Schools Reportedly Being Targeted by Deepfake Nudes",
+      "date": "2026-06-17",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1018",
+      "incident_id": 1018,
+      "title": "OpenAI's 4o Model Allegedly Used to Generate Fake Receipts and Prescriptions",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1101",
+      "incident_id": 1101,
+      "title": "Meta AI App Reportedly Publishes Personal Chats Without Users Fully Realizing",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1172",
+      "incident_id": 1172,
+      "title": "Meta AI Bug in Deployed Service Reportedly Allowed Potential Access to Other Users' Prompts and Resp",
+      "date": "2026-06-17",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1180",
+      "incident_id": 1180,
+      "title": "Purported Meta AI Chatbot Persona 'Big sis Billie' Reportedly Engages in Romantic Roleplay and Provi",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1200",
+      "incident_id": 1200,
+      "title": "Meta AI on Instagram Reportedly Facilitated Suicide and Eating Disorder Roleplay with Teen Accounts",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1238",
+      "incident_id": 1238,
+      "title": "OpenAI ChatGPT Models Reportedly Jailbroken to Provide Chemical, Biological, and Nuclear Weapons Ins",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1247",
+      "incident_id": 1247,
+      "title": "Meta AI Reportedly Generated Purportedly False Claims Linking Activist Robby Starbuck to January 6th",
+      "date": "2026-06-17",
+      "category": "prompt_injection",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1259",
+      "incident_id": 1259,
+      "title": "ChatGPT Allegedly Encouraged 23-Year-Old Texas User's Suicide During Extended Conversations",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1279",
+      "incident_id": 1279,
+      "title": "Prominent AI Chatbots Allegedly Produced Incorrect UK Financial and ISA Guidance",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1290",
+      "incident_id": 1290,
+      "title": "Alleged Fabricated News Sites and Deepfakes Impersonated Maltese Ministers, Financial Experts, and M",
+      "date": "2026-06-17",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1356",
+      "incident_id": 1356,
+      "title": "Urban VPN Proxy Browser Extension Reportedly Harvested and Sold Private AI Chatbot Conversations via",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1418",
+      "incident_id": 1418,
+      "title": "Meta AI Smart Glasses Reportedly Exposed Intimate User Imagery and Video to Human Reviewers in Kenya",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-917",
       "incident_id": 917,
       "title": "Alleged Deepfake of Whoopi Goldberg Reportedly Used in Fake Weight-Loss Supplement Ads on Instagram",
@@ -52,14 +228,6 @@
       "id": "AIID-1253",
       "incident_id": 1253,
       "title": "Large-Scale Mental Health Crises Allegedly Associated with ChatGPT Interactions",
-      "date": "2026-06-16",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1259",
-      "incident_id": 1259,
-      "title": "ChatGPT Allegedly Encouraged 23-Year-Old Texas User's Suicide During Extended Conversations",
       "date": "2026-06-16",
       "category": "other",
       "severity": "medium"
@@ -244,14 +412,6 @@
       "id": "AIID-958",
       "incident_id": 958,
       "title": "Europol Operation Cumberland Investigates at Least 273 Suspects in 19 Countries for AI-Generated Chi",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-968",
-      "incident_id": 968,
-      "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformat",
       "date": "2026-06-09",
       "category": "other",
       "severity": "medium"
@@ -497,14 +657,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-438",
-      "incident_id": 438,
-      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-441",
       "incident_id": 441,
       "title": "South Korean Agencies Reportedly Shared Airport Travelers' Face Images with Companies to Train Immig",
@@ -521,9 +673,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-491",
-      "incident_id": 491,
-      "title": "Replika's AI Experience Reportedly Lacked Protection for Minors, Resulting in Data Ban",
+      "id": "AIID-438",
+      "incident_id": 438,
+      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
       "date": "2026-05-29",
       "category": "other",
       "severity": "medium"
@@ -532,6 +684,54 @@
       "id": "AIID-513",
       "incident_id": 513,
       "title": "ChatGPT Reportedly Banned by Italian Authority Due to OpenAI's Purported Lack of Legal Basis for Dat",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-556",
+      "incident_id": 556,
+      "title": "Amazon Allegedly Violated Children's Privacy through Default Voice Collection Settings",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-559",
+      "incident_id": 559,
+      "title": "Grant Reviewers Reportedly Fed Applications into Generative AI to Produce Reports, Allegedly Breachi",
+      "date": "2026-05-29",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-571",
+      "incident_id": 571,
+      "title": "Reported Accidental Exposure of 38TB of Data by Microsoft's AI Research Team",
+      "date": "2026-05-29",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-586",
+      "incident_id": 586,
+      "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-636",
+      "incident_id": 636,
+      "title": "AI Romance Apps Reportedly Compromise User Privacy for Data Harvesting",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-491",
+      "incident_id": 491,
+      "title": "Replika's AI Experience Reportedly Lacked Protection for Minors, Resulting in Data Ban",
       "date": "2026-05-29",
       "category": "other",
       "severity": "medium"
@@ -553,43 +753,11 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-556",
-      "incident_id": 556,
-      "title": "Amazon Allegedly Violated Children's Privacy through Default Voice Collection Settings",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-558",
       "incident_id": 558,
       "title": "Activists Allege NYPD's Application of Facial Recognition Interfered with Right to Protest",
       "date": "2026-05-29",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-559",
-      "incident_id": 559,
-      "title": "Grant Reviewers Reportedly Fed Applications into Generative AI to Produce Reports, Allegedly Breachi",
-      "date": "2026-05-29",
-      "category": "data_leak",
-      "severity": "critical"
-    },
-    {
-      "id": "AIID-561",
-      "incident_id": 561,
-      "title": "OpenAI Alleged by Lawsuit Violated Users' Privacy Rights by Training AI on Private Info without Info",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-571",
-      "incident_id": 571,
-      "title": "Reported Accidental Exposure of 38TB of Data by Microsoft's AI Research Team",
-      "date": "2026-05-29",
-      "category": "data_leak",
       "severity": "medium"
     },
     {
@@ -599,22 +767,6 @@
       "date": "2026-05-29",
       "category": "other",
       "severity": "high"
-    },
-    {
-      "id": "AIID-586",
-      "incident_id": 586,
-      "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-636",
-      "incident_id": 636,
-      "title": "AI Romance Apps Reportedly Compromise User Privacy for Data Harvesting",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
     },
     {
       "id": "AIID-657",
@@ -841,14 +993,6 @@
       "severity": "critical"
     },
     {
-      "id": "AIID-1356",
-      "incident_id": 1356,
-      "title": "Urban VPN Proxy Browser Extension Reportedly Harvested and Sold Private AI Chatbot Conversations via",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1364",
       "incident_id": 1364,
       "title": "Moltbook Database Exposure Allegedly Revealed Users' Private Communications and API Authentication T",
@@ -937,19 +1081,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-357",
-      "incident_id": 357,
-      "title": "GPT-2 Reportedly Reproduced Personal Data from Its Training Data",
-      "date": "2026-05-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-433",
       "incident_id": 433,
       "title": "Chicago Police's Strategic Subject List Reportedly Biased Along Racial Lines",
       "date": "2026-05-28",
       "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-357",
+      "incident_id": 357,
+      "title": "GPT-2 Reportedly Reproduced Personal Data from Its Training Data",
+      "date": "2026-05-28",
+      "category": "other",
       "severity": "medium"
     },
     {
@@ -1201,19 +1345,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-495",
-      "incident_id": 495,
-      "title": "Carmel High School Students Reportedly Posted Racist Deepfake Videos Making New York Principal Appea",
-      "date": "2026-05-18",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-538",
       "incident_id": 538,
       "title": "Texas A&M-Commerce Professor Reportedly Used ChatGPT to Accuse Students of Cheating and Assign Incom",
       "date": "2026-05-18",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-495",
+      "incident_id": 495,
+      "title": "Carmel High School Students Reportedly Posted Racist Deepfake Videos Making New York Principal Appea",
+      "date": "2026-05-18",
+      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -1449,19 +1593,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-514",
-      "incident_id": 514,
-      "title": "Turnitin's ChatGPT-Detection Tool Falsely Flagged Student Essays as AI-Generated",
-      "date": "2026-05-17",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-524",
       "incident_id": 524,
       "title": "Synthesized Voices Were Reportedly Used by Torswats to Sell Swatting Calls Targeting Schools and Hom",
       "date": "2026-05-17",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-514",
+      "incident_id": 514,
+      "title": "Turnitin's ChatGPT-Detection Tool Falsely Flagged Student Essays as AI-Generated",
+      "date": "2026-05-17",
+      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -1502,14 +1646,6 @@
       "title": "Purportedly AI-Assisted Report by Troms\u00f8 Officials Allegedly Cited Non-Existent Sources in School Cl",
       "date": "2026-05-17",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1014",
-      "incident_id": 1014,
-      "title": "Students in Maltese Schools Reportedly Being Targeted by Deepfake Nudes",
-      "date": "2026-05-17",
-      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -2218,9 +2354,9 @@
     }
   ],
   "stats": {
-    "total": 277,
-    "last7Days": 27,
-    "last30Days": 175
+    "total": 294,
+    "last7Days": 48,
+    "last30Days": 193
   },
-  "lastUpdated": "2026-06-17T17:53:29.580246+05:30"
+  "lastUpdated": "2026-06-17T23:59:05.167222+05:30"
 }
