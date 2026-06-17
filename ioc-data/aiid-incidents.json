@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-106",
+      "incident_id": 106,
+      "title": "Korean Chatbot Luda Reportedly Made Offensive Remarks Towards Minority Groups in South Korea",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-142",
       "incident_id": 142,
       "title": "Facebook's Advertisement Moderation System Allegedly Routinely Misidentified Adaptive Fashion Produc",
@@ -41,6 +49,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-732",
+      "incident_id": 732,
+      "title": "Whisper Speech-to-Text AI Reportedly Found to Create Violent Hallucinations",
+      "date": "2026-06-17",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-734",
       "incident_id": 734,
       "title": "Leading AI Models Reportedly Found to Mimic Russian Disinformation in 33% of Cases and to Cite Fake ",
@@ -54,6 +70,22 @@
       "title": "AI Chatbots Reportedly Inaccurately Conveyed Real-Time Political News",
       "date": "2026-06-17",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-779",
+      "incident_id": 779,
+      "title": "Music Producer Michael Smith Reportedly Arrested for Allegedly Using AI-Generated Songs in $10 Milli",
+      "date": "2026-06-17",
+      "category": "fraud",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-822",
+      "incident_id": 822,
+      "title": "Algorithmic Bias in French Welfare System Allegedly Discriminates Against Marginalized Groups",
+      "date": "2026-06-17",
+      "category": "bias",
       "severity": "medium"
     },
     {
@@ -89,6 +121,30 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1062",
+      "incident_id": 1062,
+      "title": "Brazilian Authorities Reportedly Link AI-Generated Marcos Mion Videos to Purported Fake Restaurant P",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1066",
+      "incident_id": 1066,
+      "title": "Hong Kong Syndicate Allegedly Used AI-Generated Facial Composites to Open Bank Accounts",
+      "date": "2026-06-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1067",
+      "incident_id": 1067,
+      "title": "Alleged Use of Purported AI-Generated Identities to Defraud FTX Claims Buyers of $5.6M",
+      "date": "2026-06-17",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1101",
       "incident_id": 1101,
       "title": "Meta AI App Reportedly Publishes Personal Chats Without Users Fully Realizing",
@@ -121,6 +177,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1224",
+      "incident_id": 1224,
+      "title": "Purportedly AI-Generated Deepfake Ads on Instagram Impersonate Gisele B\u00fcndchen and Other Celebrities",
+      "date": "2026-06-17",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1238",
       "incident_id": 1238,
       "title": "OpenAI ChatGPT Models Reportedly Jailbroken to Provide Chemical, Biological, and Nuclear Weapons Ins",
@@ -151,6 +215,14 @@
       "date": "2026-06-17",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-1289",
+      "incident_id": 1289,
+      "title": "Malta's Prime Minister Robert Abela Reportedly Deepfaked by a Ukrainian National in Cryptocurrency F",
+      "date": "2026-06-17",
+      "category": "deepfake",
+      "severity": "high"
     },
     {
       "id": "AIID-1290",
@@ -839,14 +911,6 @@
       "date": "2026-05-29",
       "category": "data_leak",
       "severity": "high"
-    },
-    {
-      "id": "AIID-822",
-      "incident_id": 822,
-      "title": "Algorithmic Bias in French Welfare System Allegedly Discriminates Against Marginalized Groups",
-      "date": "2026-05-29",
-      "category": "bias",
-      "severity": "medium"
     },
     {
       "id": "AIID-829",
@@ -2354,9 +2418,9 @@
     }
   ],
   "stats": {
-    "total": 294,
-    "last7Days": 48,
-    "last30Days": 193
+    "total": 302,
+    "last7Days": 57,
+    "last30Days": 164
   },
-  "lastUpdated": "2026-06-17T23:59:05.167222+05:30"
+  "lastUpdated": "2026-06-18T02:04:48.588017+05:30"
 }
