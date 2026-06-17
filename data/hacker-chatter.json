@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-06-16T18:42:33.352993",
-  "total_incidents": 28800,
+  "last_updated": "2026-06-17T07:32:30.980686",
+  "total_incidents": 28802,
   "incidents": [
+    {
+      "id": "silentransomgroup_he..t_s..it.",
+      "victim_name": "He..t S..it.",
+      "threat_actor": "SilentRansomGroup",
+      "date_discovered": "2026-06-17T06:50:16.276548+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "[AI generated] N/A",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "silentransomgroup_he..t_s..t.",
+      "victim_name": "He..t S..t.",
+      "threat_actor": "SilentRansomGroup",
+      "date_discovered": "2026-06-16T23:50:17.948120+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "[AI generated] N/A",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "incransom_jasperplastics.info",
       "victim_name": "jasperplastics.info",
@@ -32,7 +56,7 @@
       "threat_actor": "fulcrumsec",
       "date_discovered": "2026-06-16T13:23:48.651412+00:00",
       "industry": "Healthcare",
-      "website": "",
+      "website": "novonordisk.com",
       "claim": "[AI generated] Novo Nordisk is a Danish multinational pharmaceutical company headquartered in Bagsværd, Denmark. Founded in 1923, it specializes in treatments for diabetes, obesity, hemophilia, and other chronic conditions. The company is a global leader in insulin production and develops drugs such as semaglutide. It operates in over 80 countries and is one of Europe's most valuable corporations by market capitalization.",
       "screenshot": "https://images.ransomware.live/victims/7ce4cfa7c2d59e0d9105bde106b77175.png",
       "url": "http://4e3p3in2bl67hxchuwza7qvnpe7pyeloyztr5fnh257fxkovfhappjyd.onion/novo/",
@@ -80,7 +104,7 @@
       "threat_actor": "shinyhunters",
       "date_discovered": "2026-06-16T12:54:26.245120+00:00",
       "industry": "Consumer Services",
-      "website": "",
+      "website": "ralphlauren.com",
       "claim": "Over 220GB of data containing customer PII, purchase/trasnaction info, future unreleased releases from 2027 and onward, and more was compromised. The Company failed to reach an agreement with us despite our incredible patience, all the chances and offers we made. They don't care. | Size: 163GB+ (compressed) | Updated: 16 June 2026 | SHA256: 17a7af9c00ea38ce822e2f022c0ceb5149535610a15f009b866d616e70cbf7e2",
       "screenshot": "",
       "url": "",
