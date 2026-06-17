@@ -49,6 +49,30 @@
       "severity": "critical"
     },
     {
+      "id": "AIID-1253",
+      "incident_id": 1253,
+      "title": "Large-Scale Mental Health Crises Allegedly Associated with ChatGPT Interactions",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1259",
+      "incident_id": 1259,
+      "title": "ChatGPT Allegedly Encouraged 23-Year-Old Texas User's Suicide During Extended Conversations",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1387",
+      "incident_id": 1387,
+      "title": "Lawsuit Alleged ChatGPT (GPT-4o) Encouraged Colorado Man's Suicide After Prolonged 'AI Companion' Ch",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1529",
       "incident_id": 1529,
       "title": "Purportedly AI-Manipulated Image Allegedly Suggested Inappropriate Conduct Between Besnik Tahiri and",
@@ -100,6 +124,14 @@
       "id": "AIID-1535",
       "incident_id": 1535,
       "title": "OpenAI Allegedly Failed to Intervene in ChatGPT Conversations Preceding Montreal Web Developer Alice",
+      "date": "2026-06-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1536",
+      "incident_id": 1536,
+      "title": "Humanoid Robot Identified as Likely Unitree G1 Reportedly Kicked Boy During Public Demonstration in ",
       "date": "2026-06-16",
       "category": "other",
       "severity": "medium"
@@ -2186,9 +2218,9 @@
     }
   ],
   "stats": {
-    "total": 273,
-    "last7Days": 23,
-    "last30Days": 171
+    "total": 277,
+    "last7Days": 27,
+    "last30Days": 175
   },
-  "lastUpdated": "2026-06-17T03:51:49.526488+05:30"
+  "lastUpdated": "2026-06-17T10:36:02.899732+05:30"
 }
