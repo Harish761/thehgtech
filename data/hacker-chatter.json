@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-06-17T07:32:30.980686",
-  "total_incidents": 28802,
+  "last_updated": "2026-06-17T17:28:55.379342",
+  "total_incidents": 28806,
   "incidents": [
+    {
+      "id": "akira_smith_filter",
+      "victim_name": "Smith Filter",
+      "threat_actor": "akira",
+      "date_discovered": "2026-06-17T12:50:24.124506+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Smith Filter is a leading manufacturer of high-quality air and grease filters, established in 1\n939. They offer a wide range of products including permanent, disposable, and high-efficiency f\nilters, catering to both OEM and custom orders.\n\nWe will upload 10gb of corporate data soon. Employee personal information (passports, SSNs, DLs\nand other docs scans), credit cards information, projects info, clients information, NDAs, etc\n.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "spacebears_chebib_control",
+      "victim_name": "Chebib Control",
+      "threat_actor": "spacebears",
+      "date_discovered": "2026-06-17T11:59:58.606716+00:00",
+      "industry": "Business Services",
+      "website": "chebib.com.br",
+      "claim": "Chebib Control is a company specializing in the development of management systems and intelligent automation for the hospitality industry. For over 20 years, it has been helping optimize the operations of motels, hotels, and condominiums across the country.Serving over 1,000 active clients in over 500 municipalities in Brazil.Core product: Offers property management systems (PMS) and automation solutions that help automate daily operations, enhance security, and improve the guest experience.One of its key features is integration with IP cameras for photographic recording of vehicle entry and exit, which, according to customers, serves as an effective fraud prevention tool.- SQL database tables- Client data (names, booking dates, hotel names, email addresses, CPFs, phone numbers, and other metadata) https://***.com.br/",
+      "screenshot": "https://images.ransomware.live/victims/52e21f5df2fa388db53cb5b1a11f1918.png",
+      "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/53/chebib-control",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_www.courdescomptes.sn",
+      "victim_name": "www.courdescomptes.sn",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-06-17T10:24:06.282429+00:00",
+      "industry": "Public Sector",
+      "website": "www.courdescomptes.sn",
+      "claim": "La Cour des Comptes du Sénégal (The Court of Auditors of Senegal) is an independent supreme audit institution of Seneg...",
+      "screenshot": "",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/aa196659865bad451cc27f7fa46a2b4f84dfb32c885bdc2397c8f8a1591ce975/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_ersa.com.py",
+      "victim_name": "ersa.com.py",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-06-17T10:23:15.395969+00:00",
+      "industry": "Manufacturing",
+      "website": "ersa.com.py",
+      "claim": "ERSA (Enrique Remmele S.A.C.I.) is a 100% Paraguayan industrial company founded in 1928, originally established for the ...",
+      "screenshot": "https://images.ransomware.live/victims/666b1f6272239f26d43d6c9b337bacff.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/21d76746113e42307fe8fe34abb2cf5d6582549feab72e9293c63bedfd78b0ad/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "silentransomgroup_he..t_s..it.",
       "victim_name": "He..t S..it.",
@@ -248,7 +296,7 @@
       "threat_actor": "payload",
       "date_discovered": "2026-06-16T05:54:32.194500+00:00",
       "industry": "Manufacturing",
-      "website": "",
+      "website": "sporton.com.tw",
       "claim": "Founded in 1986 and headquartered in Taiwan, Sporton International is a Taiwan-based company principally engaged in the provision of testing and certification services for wireless communications and mobile communications products.",
       "screenshot": "https://images.ransomware.live/victims/656d64176b66803623fe4666702457c8.png",
       "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/1e2d33b6-0cd6-4b3e-940e-a8275d5cd9b4",
