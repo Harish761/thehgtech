@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 18 2026",
+            "headline": "Klue OAuth Breach Hits Salesforce",
+            "title": "Klue OAuth Breach Linked to Icarus Salesforce Data Theft Attacks",
+            "content": "Klue, a market intelligence platform, has suffered an OAuth breach that enabled the Icarus threat actors to steal Salesforce CRM data from multiple organizations. The breach is part of an ongoing extortion campaign, where attackers demand payment in exchange for not releasing the stolen data. The Icarus group has been linked to several high-profile breaches in the past, and this latest incident highlights the ongoing threat of OAuth-based attacks. Klue users should immediately review their Salesforce accounts for any suspicious activity and consider implementing additional security measures, such as two-factor authentication. The breach also underscores the importance of monitoring and securing OAuth connections. Entities: Icarus, OAuth, Salesforce, Klue",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icarus-salesforce-data-theft-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "INC Ransomware Claims 830 Victims",
+            "title": "INC Ransomware Emerges as Major RaaS Threat with Over 830 Victims",
+            "content": "The INC ransomware has emerged as a major ransomware-as-a-service (RaaS) threat, with over 830 victims since August 2023. The ransomware has been linked to several high-profile breaches, and its operators have been demanding significant payments in exchange for the decryption keys. The INC ransomware is notable for its ability to evade detection by traditional security software, and its operators have been using a variety of tactics to spread the malware, including phishing and exploit kits. Organizations should be on high alert for this threat and take steps to prevent infection, such as regularly updating software and implementing robust backup and disaster recovery procedures. Entities: INC, ransomware, RaaS",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/inc-ransomware-claims-830-victims-since.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "DragonForce Hides C2 Traffic",
+            "title": "DragonForce Hackers Abuse Microsoft Teams to Hide Command-and-Control Traffic",
+            "content": "The DragonForce ransomware group has been observed using a custom Go-based remote access trojan (RAT) to conceal command-and-control (C2) traffic inside Microsoft Teams relay infrastructure. This tactic allows the attackers to hide their malicious activity from security software and makes it more difficult for organizations to detect and respond to the threat. The DragonForce group has been linked to several high-profile breaches, and this latest incident highlights the ongoing threat of ransomware attacks. Organizations should be aware of this tactic and take steps to monitor and secure their Microsoft Teams environments. Entities: DragonForce, ransomware, Microsoft Teams, RAT",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/dragonforce-hackers-abuse-microsoft.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "15,000 SocGholish Sites Cleaned",
+            "title": "Police Clean Nearly 15,000 SocGholish-Infected Sites Tied to Evil Corp",
+            "content": "International law enforcement agencies have cleaned nearly 15,000 malware-infected WordPress websites and taken down over 100 servers linked to the SocGholish botnet and the Evil Corp Russian cybercrime group. The SocGholish botnet has been used to spread malware and conduct various cybercrime activities, including ransomware attacks and phishing campaigns. The takedown is a significant blow to the Evil Corp group and highlights the ongoing efforts of law enforcement to disrupt and dismantle cybercrime operations. Website owners should ensure their sites are updated and secure to prevent similar infections. Entities: SocGholish, Evil Corp, WordPress, botnet",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/law-enforcement-nukes-socgholish-malware-from-nearly-15-000-sites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "ShapedPlugin Supply Chain Attack",
+            "title": "ShapedPlugin Update Flow Hacked to Infect WordPress Sites",
+            "content": "Multiple WordPress plugins from ShapedPlugin have been compromised in a supply chain attack that distributed infected releases to paying customers via the vendor's official update system. The attack highlights the risks associated with supply chain vulnerabilities and the importance of securing software update mechanisms. WordPress site owners should immediately check their plugins for updates and ensure they are running the latest versions. Additionally, they should monitor their sites for any suspicious activity and consider implementing additional security measures, such as web application firewalls and malware scanning. Entities: ShapedPlugin, WordPress, supply chain attack",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Dream Raises $260 Million",
+            "title": "Dream Raises $260 Million at $3 Billion Valuation for AI and Cyber Defenses",
+            "content": "The Israeli startup Dream has raised $260 million at a $3 billion valuation to provide sovereign AI and cyber defenses for governments and critical infrastructure. The funding highlights the growing demand for AI-powered cybersecurity solutions and the importance of protecting critical infrastructure from cyber threats. Dream's technology uses AI to detect and respond to cyber attacks, and the company plans to use the funding to further develop its products and expand its customer base. The investment also underscores the increasing role of AI in cybersecurity and the need for organizations to adopt AI-powered solutions to stay ahead of emerging threats. Entities: Dream, AI, cyber defense, critical infrastructure",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/dream-raises-260-million-at-3-billion-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "F5 Patches Critical NGINX Flaws",
+            "title": "F5 Issues Out-of-Band Patches for Critical NGINX Vulnerabilities",
+            "content": "F5 has released out-of-band security updates to address multiple NGINX web server vulnerabilities, including two critical-severity flaws that could allow attackers to execute code on vulnerable systems. The patches are available for all supported NGINX versions, and users should apply them immediately to prevent exploitation. The vulnerabilities highlight the importance of keeping software up to date and the need for organizations to prioritize patch management. NGINX users should also consider implementing additional security measures, such as web application firewalls and intrusion detection systems, to further protect their systems. Entities: F5, NGINX, vulnerabilities, patch management",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/f5-issues-out-of-band-patches-for-critical-nginx-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Atlassian and Splunk Patch Flaws",
+            "title": "Atlassian and Splunk Patch Critical Vulnerabilities in Third-Party Dependencies",
+            "content": "Atlassian and Splunk have patched critical vulnerabilities in third-party dependencies, including an OS command injection flaw in Splunk's AI Toolkit. The vulnerabilities highlight the importance of securing third-party dependencies and the need for organizations to prioritize vulnerability management. Atlassian patched dozens of flaws in its products, while Splunk fixed the command injection vulnerability that could allow attackers to execute arbitrary code. Users should apply the patches immediately to prevent exploitation and consider implementing additional security measures, such as input validation and secure coding practices. Entities: Atlassian, Splunk, vulnerabilities, third-party dependencies",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/atlassian-splunk-patch-critical-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Cisco ISE Vulnerability Patched",
+            "title": "Critical Command Execution Vulnerability Patched in Cisco ISE",
+            "content": "Cisco has patched a critical command execution vulnerability in its Identity Services Engine (ISE) product, which could allow attackers to gain access to the underlying operating system and elevate their privileges to root. The vulnerability highlights the importance of securing network infrastructure and the need for organizations to prioritize patch management. Cisco ISE users should apply the patch immediately to prevent exploitation and consider implementing additional security measures, such as network segmentation and access control. Entities: Cisco, ISE, vulnerability, patch management",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-command-execution-vulnerability-patched-in-cisco-ise/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "F5 Patches NGINX Vulnerabilities",
+            "title": "F5 Patches Critical and High-Severity NGINX Vulnerabilities",
+            "content": "F5 has patched critical and high-severity vulnerabilities in its NGINX web server product, including flaws that could allow remote, unauthenticated attackers to cause a restart and potentially execute arbitrary code. The patches are available for all supported NGINX versions, and users should apply them immediately to prevent exploitation. The vulnerabilities highlight the importance of keeping software up to date and the need for organizations to prioritize patch management. NGINX users should also consider implementing additional security measures, such as web application firewalls and intrusion detection systems, to further protect their systems. Entities: F5, NGINX, vulnerabilities, patch management",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/f5-patches-critical-high-severity-nginx-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 17 2026",
             "headline": "Microsoft Patches RoguePlanet Defender",
             "title": "Microsoft Confirms RoguePlanet Defender Zero-Day, Patch in Development",
@@ -92,99 +182,108 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "DragonForce Ransomware Hits Microsoft Teams",
-            "title": "Microsoft Teams Relay Servers Abused in DragonForce Ransomware Attack",
-            "content": "Attackers have deployed a new Go-based backdoor that uses Microsoft Teams servers for command-and-control in the DragonForce ransomware attack. The backdoor exploits Microsoft Teams' relay servers, allowing attackers to communicate with compromised systems. This attack highlights the increasing use of legitimate services for malicious purposes. Microsoft Teams users should be cautious of suspicious activity and ensure their systems are up-to-date. The use of Microsoft Teams in this attack demonstrates the evolving tactics of ransomware groups. Entities: Microsoft Teams, DragonForce, ransomware",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-teams-relay-servers-abused-in-dragonforce-ransomware-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "CISA Orders Patch for Joomla Flaw",
-            "title": "CISA Orders Federal Agencies to Patch Maximum Severity Joomla Plugin Flaw",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has ordered federal agencies to patch a maximum-severity flaw in the Widget Factory Joomla Content Editor (JCE) plugin. The flaw is being actively exploited in the wild, allowing attackers to execute PHP code. Joomla users should update the JCE plugin to prevent exploitation. This vulnerability highlights the importance of keeping software up-to-date, especially for government agencies. The CISA order demonstrates the severity of the flaw and the need for immediate action. Entities: CISA, Joomla, JCE plugin",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-joomla-plugin-flaw-by-friday/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Microsoft Working on RoguePlanet Patch",
-            "title": "Microsoft Working on Patch for ‘RoguePlanet’ Zero-Day Vulnerability",
-            "content": "Microsoft is working on a patch for the 'RoguePlanet' zero-day vulnerability, which exploits a race condition in Microsoft Defender. The vulnerability allows attackers to spawn a command prompt with System privileges. Microsoft Defender users should be cautious of suspicious activity and expect a patch soon. This vulnerability highlights the importance of keeping software up-to-date, especially for security products. The RoguePlanet vulnerability demonstrates the ongoing efforts of attackers to exploit security software. Entities: Microsoft, RoguePlanet, zero-day, Microsoft Defender",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-working-on-patch-for-rogueplanet-zero-day/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Oracle Releases 245 Patches",
-            "title": "Oracle’s Second Monthly Security Updates Deliver 245 Patches",
-            "content": "Oracle has released its June 2026 Critical Security Patch Update, which includes 245 patches for various products. The patches address vulnerabilities in Communications, EBS, Enterprise Manager, and other products. Oracle users should apply the patches to prevent exploitation. This update highlights the importance of regular patching, especially for enterprise software. The large number of patches demonstrates Oracle's ongoing efforts to address security vulnerabilities. Entities: Oracle, Critical Security Patch Update",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/oracles-second-monthly-security-updates-deliver-245-patches/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Microsoft Defender Zero-Day",
-            "title": "Microsoft Working on Defender Patch for RoguePlanet Zero-Day Vulnerability",
-            "content": "Microsoft has confirmed that it's working on a security patch for the RoguePlanet zero-day vulnerability in Microsoft Defender. The vulnerability exploits a race condition in Microsoft Defender, allowing attackers to spawn a command prompt with System privileges. Microsoft Defender users should expect a patch soon and be cautious of suspicious activity. This vulnerability highlights the importance of keeping security software up-to-date. The RoguePlanet vulnerability demonstrates the ongoing efforts of attackers to exploit security products. Entities: Microsoft, RoguePlanet, zero-day, Microsoft Defender",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-on-defender-patch-for-rogueplanet-zero-day/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Chrome and Firefox Patches",
-            "title": "Chrome and Firefox Updated to Patch Critical, High-Severity Vulnerabilities",
-            "content": "Google and Mozilla have released updates for Chrome and Firefox, respectively, to patch critical and high-severity vulnerabilities. The updates address multiple memory safety bugs that could potentially lead to remote code execution. Chrome and Firefox users should update their browsers to prevent exploitation. This update highlights the importance of regular patching, especially for web browsers. The vulnerabilities demonstrate the ongoing efforts of attackers to exploit browser flaws. Entities: Chrome, Firefox, zero-day, RCE",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-and-firefox-updated-to-patch-critical-high-severity-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "144 Mastra npm Packages Compromised",
-            "title": "144 Mastra npm Packages Compromised via Hijacked Contributor Account",
-            "content": "As many as 144 npm packages associated with the Mastra namespace have been compromised via a hijacked contributor account. The compromise is part of a software supply chain attack codenamed easy-day-js. Mastra users should be cautious of suspicious activity and verify the integrity of their packages. This attack highlights the importance of secure software development practices, especially for open-source projects. The compromise demonstrates the evolving tactics of attackers targeting software supply chains. Entities: Mastra, npm, software supply chain attack",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Kodak Confirms Data Breach",
-            "title": "Kodak Confirms Data Breach After ShinyHunters Extortion Gang Claim",
-            "content": "Kodak has confirmed a data breach after the ShinyHunters extortion gang claimed responsibility. The breach allowed hackers to access some of Kodak's data. Kodak is working with external cybersecurity experts to investigate the breach. This breach highlights the importance of robust security measures, especially for companies handling sensitive data. The ShinyHunters gang has been involved in several high-profile breaches, demonstrating their ongoing efforts to exploit vulnerabilities. Entities: Kodak, ShinyHunters, data breach",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/kodak-confirms-data-breach-claimed-by-shinyhunters-extortion-gang/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "CISA Warns of Joomla Flaw",
-            "title": "CISA Warns of Actively Exploited Joomla JCE Flaw Allowing PHP Code Execution",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has warned of an actively exploited flaw in the Widget Factory Joomla Content Editor (JCE) plugin. The flaw allows attackers to execute PHP code, and CISA has added it to its Known Exploited Vulnerabilities (KEV) catalog. Joomla users should update the JCE plugin to prevent exploitation. This vulnerability highlights the importance of keeping software up-to-date, especially for government agencies. The CISA warning demonstrates the severity of the flaw and the need for immediate action. Entities: CISA, Joomla, JCE plugin",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisa-warns-of-actively-exploited-joomla.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "FortiBleed Leak Exposes Credentials",
-            "title": "FortiBleed Leak Exposes Fortinet VPN Credentials for 73,000 Devices",
-            "content": "A newly discovered data leak dubbed \"FortiBleed\" has exposed Fortinet and FortiGate VPN credentials for 73,932 firewall URLs at organizations worldwide. The leak highlights the importance of secure password management and regular credential rotation. Fortinet users should verify the integrity of their credentials and consider rotating them. This leak demonstrates the ongoing efforts of attackers to exploit vulnerabilities in security products. Entities: FortiBleed, Fortinet, VPN, credentials",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 18 2026",
+            "headline": "Amazon Employees Face Termination",
+            "title": "Amazon Employees Testify Against Data Center Limits, Face Retaliation",
+            "content": "Three Amazon software engineers testified at Seattle City Council hearings about data centers, citing a city law barring employment discrimination over political speech. Now, they're accusing their employer of breaking that law by retaliating against them. The engineers' testimony started a discussion about the environmental impact of data centers. Amazon has not commented on the situation. The engineers' actions may inspire others to speak out against corporate practices. The case highlights the need for whistleblower protection laws. Entities: Amazon, data centers, whistleblower protection",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/952180/amazon-seattle-data-center-moratorium-aecj-disciplinary-action",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "$300M Funding for General Intuition",
+            "title": "General Intuition Raises $300M at $2B Valuation for AI Agent Training",
+            "content": "General Intuition is in talks to raise $300 million at a $2 billion valuation from backers including Jeff Bezos. The startup trains AI agents on spatial-temporal reasoning, a key area of research in artificial intelligence. General Intuition's technology has the potential to revolutionize industries such as robotics and autonomous vehicles. The funding will help the company expand its research and development team. General Intuition's AI agents can learn from experience and adapt to new situations. Entities: General Intuition, Jeff Bezos, AI agents, spatial-temporal reasoning",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Who Decides AI Danger",
+            "title": "The Complex Decision-Making Process Behind AI Safety and Regulation",
+            "content": "The development and deployment of AI systems raise important questions about safety and regulation. Who decides when an AI system is too dangerous to be released? The answer is complex and involves multiple stakeholders, including researchers, policymakers, and industry leaders. The process of evaluating AI safety is still in its early stages, and there is no clear consensus on the best approach. Researchers are working to develop new methods for evaluating AI safety, including the use of simulations and testing environments. Entities: AI safety, regulation, decision-making",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/951542/anthropic-claude-fable-5-mythos-ban-pentagon-ai-regulation-trump",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Adobe Adds AI Assistants",
+            "title": "Adobe Introduces AI Assistants to Creative Cloud Suite",
+            "content": "Adobe has introduced AI assistants to its Creative Cloud suite, including Photoshop, Premiere, and Illustrator. The AI assistants are designed to help users with tasks such as editing and designing. The assistants use machine learning algorithms to learn from user behavior and adapt to their needs. The introduction of AI assistants is part of Adobe's plan to integrate AI into all of its products. The assistants are available as part of a public beta and will be rolled out to all users in the coming months. Entities: Adobe, AI assistants, Creative Cloud, machine learning",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Pixi Turns Text into AR",
+            "title": "Pixi Launches iOS App for Converting Text Messages into Interactive AR Experiences",
+            "content": "Pixi has launched a new iOS app that allows users to convert text messages into interactive augmented reality (AR) experiences. The app uses AI to generate 3D models and animations from text messages. Users can customize the AR experiences with different templates and effects. The app has the potential to revolutionize the way people communicate and interact with each other. Pixi's technology is still in its early stages, but it has already gained significant attention from investors and users. Entities: Pixi, AR, text messages, AI",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "AI Helps Diagnose Diseases",
+            "title": "Researchers Use OpenAI Model to Help Diagnose Rare Genetic Diseases in Children",
+            "content": "Researchers have used an OpenAI model to help diagnose rare genetic diseases in children. The model was trained on a large dataset of medical records and was able to identify 18 new diagnoses in previously unsolved cases. The use of AI in medicine has the potential to revolutionize the way diseases are diagnosed and treated. The OpenAI model is a significant step forward in the development of AI-powered diagnostic tools. The researchers plan to continue working on the model to improve its accuracy and expand its capabilities. Entities: OpenAI, genetic diseases, diagnosis, AI",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/diagnose-rare-childhood-diseases",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "White House Demands AI Safety",
+            "title": "The White House Demands Anthropic to Block All Jailbreaks in AI Models",
+            "content": "The White House has demanded that Anthropic block all jailbreaks in its AI models, including Fable 5. The demand comes after concerns were raised about the safety and security of AI systems. Anthropic has agreed to work with the White House to develop new safety protocols for its AI models. The company has already implemented some safety measures, but the White House wants more to be done. The demand highlights the growing concern about AI safety and the need for regulation. Entities: White House, Anthropic, AI safety, Fable 5",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Turn Off AI in Google Docs",
+            "title": "How to Disable AI Features in Google Docs",
+            "content": "Google Docs has introduced AI-powered features, including the \"write with Gemini\" pop-up. However, some users may find these features annoying or unnecessary. Fortunately, it is possible to disable AI features in Google Docs. Users can do this by going to the settings menu and selecting the \"disable AI\" option. The process is simple and only takes a few seconds. Disabling AI features can help users who prefer to work without AI assistance. Entities: Google Docs, AI, Gemini, settings",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/17/how-to-turn-off-ai-in-your-google-docs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Beyond LoRA Technique",
+            "title": "Exploring Alternative Fine-Tuning Techniques for AI Models",
+            "content": "The LoRA technique is a popular method for fine-tuning AI models, but it may not be the best approach for all use cases. Researchers are exploring alternative techniques, including the use of transfer learning and meta-learning. These techniques have the potential to improve the performance and efficiency of AI models. The development of new fine-tuning techniques is an active area of research, and new methods are being proposed and tested. Entities: LoRA, fine-tuning, transfer learning, meta-learning",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/peft-beyond-lora",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Anthropic Hit by Export Rules",
+            "title": "Anthropic's AI Models Blocked Due to Export Rules",
+            "content": "Anthropic's AI models, including Fable 5 and Mythos 5, have been blocked due to export rules. The rules, which were introduced by the Trump administration, restrict the export of certain AI technologies to foreign nationals. Anthropic has been forced to block access to its AI models for all foreign nationals, including users inside the US and its own employees. The company is working to resolve the issue and restore access to its AI models. Entities: Anthropic, export rules, AI models, Fable 5, Mythos 5",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Social Media Evolves with AI",
+            "title": "Social Media Platforms Introduce User-Controlled Algorithms",
+            "content": "Social media platforms, including Threads, Instagram, and TikTok, are introducing user-controlled algorithms. These algorithms allow users to customize their feeds and influence the content they see. The introduction of user-controlled algorithms is a significant shift in the way social media platforms operate. It gives users more control over their experience and allows them to tailor their feeds to their interests. Entities: social media, user-controlled algorithms, Threads, Instagram, TikTok",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 17 2026",
             "headline": "63% of Americans Think AI Advances Too Fast",
@@ -264,105 +363,6 @@ const websiteContent = {
             "content": "World leaders, including French President Macron and Indian PM Modi, have expressed concerns at the G7 summit that the US could potentially cut off access to American AI technologies. This fear was recently exacerbated by the Anthropic blackout, which highlighted the dependence of global entities on US-based AI solutions. The concern underscores the geopolitical implications of AI development and the need for international cooperation to ensure equitable access to these technologies. As AI becomes increasingly integral to global economies and societies, the risk of technological isolation or dependency on a single country's AI capabilities poses significant strategic risks. Entities: AI, US, G7",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Anthropic Joins Carbon Removal Coalition",
-            "title": "Anthropic's Commitment to Carbon Removal Through the Frontier Coalition",
-            "content": "Anthropic has become the first AI startup to join the Frontier carbon removal coalition, which has received an additional $915M in pledges to support carbon removal projects. This move demonstrates Anthropic's commitment to addressing the environmental impact of its operations and contributing to global efforts to mitigate climate change. By joining the Frontier coalition, Anthropic aligns itself with other forward-thinking companies that recognize the importance of investing in carbon removal technologies. This step is particularly significant for AI companies, given the energy-intensive nature of training and operating AI models. Entities: Anthropic, Frontier Coalition, Carbon Removal",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Agentic Resource Discovery Unveiled",
-            "title": "Introducing Agentic Resource Discovery: A New Approach to Agent Search",
-            "content": "Hugging Face has introduced Agentic Resource Discovery, a novel approach to agent search. This new method enables agents to search for resources in a more efficient and effective manner. The technical details of this approach are still emerging, but it has the potential to significantly impact the field of artificial intelligence. Agentic Resource Discovery could be used in a variety of applications, from robotics to natural language processing. As this technology continues to develop, it will be important for professionals in the field to stay informed about its capabilities and limitations. The introduction of Agentic Resource Discovery marks an exciting new direction for AI research. Entities: Agentic Resource Discovery, Hugging Face, AI",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/agentic-resource-discovery-launch",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Snap's $2,000 Specs Glasses",
-            "title": "Snap Debuts New $2,195 Specs Glasses with Advanced Computing Capabilities",
-            "content": "Snap has debuted its new Specs glasses, priced at $2,195. These glasses represent a significant investment in the company's efforts to bring computing into the world and make it more human. The Specs glasses are the result of over 12 years of development and are positioned as a device to enhance the user experience. With advanced computing capabilities, these glasses have the potential to revolutionize the way we interact with technology. However, the high price point may be a barrier for some consumers. As the market for smart glasses continues to evolve, it will be important to see how Snap's Specs glasses are received by consumers. Entities: Snap, Specs glasses, smart glasses",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/report/951481/snap-specs-wearables-smart-glasses-fashion",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "MolmoMotion: 3D Motion Forecasting",
-            "title": "Introducing MolmoMotion: A Language-Guided Approach to 3D Motion Forecasting",
-            "content": "Hugging Face has introduced MolmoMotion, a language-guided approach to 3D motion forecasting. This new method enables the prediction of 3D motion in a more accurate and efficient manner. The technical details of MolmoMotion are still emerging, but it has the potential to significantly impact the field of computer vision. MolmoMotion could be used in a variety of applications, from robotics to autonomous vehicles. As this technology continues to develop, it will be important for professionals in the field to stay informed about its capabilities and limitations. The introduction of MolmoMotion marks an exciting new direction for AI research. Entities: MolmoMotion, Hugging Face, 3D motion forecasting",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/allenai/molmomotion",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Slowtech Revolution Gains Momentum",
-            "title": "The Slowtech Revolution: A Growing Movement to Combat Phone Addiction",
-            "content": "The slowtech revolution is gaining momentum as people seek to take back control of their time and attention. This movement is driven by a desire to reduce phone addiction and increase productivity. The slowtech revolution has the potential to significantly impact the way we interact with technology and could lead to the development of new, more mindful technologies. As this movement continues to grow, it will be important for professionals in the field to stay informed about its implications and opportunities. The slowtech revolution marks an exciting new direction for the tech industry. Entities: slowtech revolution, phone addiction, productivity",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/the-slowtech-revolution-is-here-to-kill-your-phone-addiction-and-rescue-your-attention-span/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "XDOF Collects Robot Training Data",
-            "title": "XDOF: A New Player in the Robot Training Data Collection Market",
-            "content": "XDOF is a new company that specializes in collecting robot training data. This data is essential for the development of physical AI systems, but its collection can be a time-consuming and labor-intensive process. XDOF's services have the potential to significantly impact the development of physical AI systems and could lead to the creation of more advanced and capable robots. As the demand for robot training data continues to grow, XDOF is well-positioned to meet this need. The company's services could be particularly useful for companies that are developing robots for use in a variety of applications. Entities: XDOF, robot training data, physical AI",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/collecting-robot-training-data-is-dirty-unglamorous-work-some-ai-labs-are-already-paying-xdof-to-do-it/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Pramaana Labs Raises $27M",
-            "title": "Pramaana Labs Secures $27M in Seed Funding to Develop Formal Verification for AI",
-            "content": "Pramaana Labs has raised $27M in seed funding to develop formal verification for AI systems. This technology has the potential to significantly improve the reliability and trustworthiness of AI systems, particularly in high-stakes applications such as law, drug discovery, and tax preparation. Pramaana Labs' formal verification technology could be used to ensure that AI systems are functioning as intended and are free from errors. As the use of AI systems continues to grow, the need for formal verification will become increasingly important. Pramaana Labs is well-positioned to meet this need and could play a key role in the development of more reliable and trustworthy AI systems. Entities: Pramaana Labs, formal verification, AI",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Meta's AI Mode in Search",
-            "title": "Meta Introduces AI Mode in Search: A New Approach to Answering User Queries",
-            "content": "Meta has introduced AI Mode in search, a new approach to answering user queries. This feature uses AI to provide more accurate and relevant results, but it is not without its challenges. AI Mode has the potential to significantly impact the way we interact with search engines and could lead to the development of more advanced and capable search technologies. However, the feature is still in its early stages and may require further refinement before it is widely adopted. As Meta continues to develop and improve AI Mode, it will be important for professionals in the field to stay informed about its capabilities and limitations. Entities: Meta, AI Mode, search engines",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/951099/meta-ai-mode-search-hands-on",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Google's New Smart Speaker",
-            "title": "Google Unveils New Smart Speaker: A Long-Awaited Update to its Home Speaker Line",
-            "content": "Google has unveiled its new smart speaker, a long-awaited update to its Home Speaker line. The new speaker has the same hardware as the previously announced version, but it is now available for pre-order. The speaker has the potential to significantly impact the smart speaker market and could lead to the development of more advanced and capable smart home technologies. As the demand for smart speakers continues to grow, Google's new speaker is well-positioned to meet this need. The company's speaker could be particularly useful for users who are already invested in the Google ecosystem. Entities: Google, smart speaker, Home Speaker",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/951147/google-home-speaker-gemini-launch-date-price-specs-features",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Canadian Pension Giant Invests",
-            "title": "Canadian Pension Giant Invests in Indian Data Center Boom",
-            "content": "A Canadian pension giant has invested in the Indian data center boom, acquiring an 8.2% stake in CtrlS. This investment has the potential to significantly impact the development of data centers in India and could lead to the creation of more jobs and economic growth. The investment is also a testament to the growing importance of data centers in the global economy. As the demand for data center services continues to grow, CtrlS is well-positioned to meet this need. The company's data centers could be particularly useful for businesses that require reliable and secure data storage. Entities: Canadian pension giant, CtrlS, data centers",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/canadian-pension-giant-joins-race-to-fund-indias-ai-fueled-data-center-boom/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "DeepL Acquires Mixhalo",
-            "title": "DeepL Acquires Mixhalo: A Strategic Move to Expand its Live-Event Audio Streaming Capabilities",
-            "content": "DeepL has acquired Mixhalo, a company that specializes in live-event audio streaming and translation. This acquisition has the potential to significantly impact the development of live-event audio streaming technologies and could lead to the creation of more advanced and capable audio streaming services. DeepL's acquisition of Mixhalo is a strategic move to expand its capabilities in the live-event audio streaming market. As the demand for live-event audio streaming services continues to grow, DeepL is well-positioned to meet this need. The company's services could be particularly useful for event organizers and attendees who require high-quality audio streaming. Entities: DeepL, Mixhalo, live-event audio streaming",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/deepl-acquires-mixhalo-for-live-event-audio-streaming-and-translation/",
             "relatedResources": []
         }
     ],
