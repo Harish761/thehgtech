@@ -3144,6 +3144,26 @@
       "Description": "In September 2024, <a href=\"https://www.linkedin.com/posts/threatmon_databreach-cybersecurity-centraltickets-activity-7243167088565960705-vUDM/\" target=\"_blank\" rel=\"noopener\">data from the ticketing service Central Tickets was publicly posted to a hacking forum</a>. The data suggests the breach occurred several months earlier and exposed 723k unique email addresses alongside names, phone numbers, IP addresses, purchases and passwords stored as unsalted SHA-1 hashes."
     }
   ],
+  "cfgi.com": [
+    {
+      "Name": "CFGI",
+      "Title": "CFGI",
+      "BreachDate": "2026-03-06",
+      "AddedDate": "2026-06-18T03:22:51Z",
+      "PwnCount": 248235,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In March 2026, the financial consulting and advisory firm <a href=\"https://x.com/AlvieriD/status/2029785330677936135\" target=\"_blank\" rel=\"noopener\">CFGI was the target of a ShinyHunters \"pay-or-leak\" extortion campaign</a>. The group subsequently publicised data allegedly obtained from CFGI comprising corporate contact information, including 243k unique email addresses, names, phone numbers and physical addresses."
+    }
+  ],
   "charter.com": [
     {
       "Name": "Charter",
