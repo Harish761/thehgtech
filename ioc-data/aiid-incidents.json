@@ -1,6 +1,38 @@
 {
   "incidents": [
     {
+      "id": "AIID-647",
+      "incident_id": 647,
+      "title": "A Self-Driving Waymo Robotaxi Reportedly Collided with a Bicyclist",
+      "date": "2026-06-18",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1537",
+      "incident_id": 1537,
+      "title": "Two Waymo Robotaxis Allegedly Contributed to Bike-Lane Collision That Injured San Francisco Cyclist",
+      "date": "2026-06-18",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1538",
+      "incident_id": 1538,
+      "title": "City of Zhuzhou in Hunan Suspended Hellobike Robotaxi Service After Vehicle Struck Two Pedestrians",
+      "date": "2026-06-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1539",
+      "incident_id": 1539,
+      "title": "Zoox Robotaxi Crossed Into Opposing Lane and Stopped Near Oncoming Traffic",
+      "date": "2026-06-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-106",
       "incident_id": 106,
       "title": "Korean Chatbot Luda Reportedly Made Offensive Remarks Towards Minority Groups in South Korea",
@@ -2418,9 +2450,9 @@
     }
   ],
   "stats": {
-    "total": 302,
-    "last7Days": 56,
-    "last30Days": 164
+    "total": 306,
+    "last7Days": 60,
+    "last30Days": 168
   },
-  "lastUpdated": "2026-06-19T02:33:08.905865+05:30"
+  "lastUpdated": "2026-06-19T03:52:59.661561+05:30"
 }
