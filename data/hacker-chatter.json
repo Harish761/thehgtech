@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-06-18T17:41:23.398002",
-  "total_incidents": 28832,
+  "last_updated": "2026-06-19T07:38:18.200287",
+  "total_incidents": 28836,
   "incidents": [
+    {
+      "id": "cloak_ra-vogeler.de",
+      "victim_name": "ra-vogeler.de",
+      "threat_actor": "cloak",
+      "date_discovered": "2026-06-18T20:52:54.951220+00:00",
+      "industry": "Business Services",
+      "website": "ra-vogeler.de",
+      "claim": "Country: germany | Size: 1.1TB | Private | Views: 1",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nightspire_legendsmn(blue_ox,_paul_bunyan,_lumberjack_electric)",
+      "victim_name": "legendsmn(Blue Ox, Paul Bunyan, Lumberjack Electric)",
+      "threat_actor": "nightspire",
+      "date_discovered": "2026-06-18T19:54:18.954542+00:00",
+      "industry": "Energy",
+      "website": "legendsmn.com",
+      "claim": "Data is not available now.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_thl_project_management_sdn._bhd.",
+      "victim_name": "THL PROJECT MANAGEMENT SDN. BHD.",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-18T18:25:30.023505+00:00",
+      "industry": "Business Services",
+      "website": "THL PROJECT MANAGEMENT SDN. BHD.",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/4916e1abdf2483abb5075553a8094e79.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=0f345694-fa46-46c5-a4be-a5a22d1a039e",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_homes_by_j_anthony",
+      "victim_name": "Homes By J Anthony",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-18T17:54:58.422098+00:00",
+      "industry": "Construction",
+      "website": "www.homesbyjanthony.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/9aeefb8b8b69a3d7224280a6d7ed338a.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=77f7cac4-5373-48fc-94f2-681e1b7f711d",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_atcom_outsourcing",
       "victim_name": "ATCOM Outsourcing",
