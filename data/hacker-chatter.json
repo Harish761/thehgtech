@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-06-19T07:38:18.200287",
-  "total_incidents": 28836,
+  "last_updated": "2026-06-19T16:57:54.068345",
+  "total_incidents": 28841,
   "incidents": [
+    {
+      "id": "nova_desert_micro",
+      "victim_name": "Desert Micro",
+      "threat_actor": "nova",
+      "date_discovered": "2026-06-19T15:00:48.058971+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "DesertMicro.net is a Software & Internet based company located in Jacksonville, Florida, United States with over 25 - 100 employees, data included large sums of costumers data who use the company software service, such curbside waste company invoices and Storage data, foothillsSanitation + GreenEnviromnetal + InlandService + QC + FusionSite companies the same, credit cards Details and payments billings Documents, databases backups and more - Nova Provide tree and samples from stolen data to the company when its get in touch with support department.",
+      "screenshot": "https://images.ransomware.live/victims/94f28898875aab210affb09a020b36eb.png",
+      "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/desert-micro",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_commune_d'eyguires",
+      "victim_name": "Commune d'Eyguires",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-19T14:23:05.611125+00:00",
+      "industry": "Public Sector",
+      "website": "www.eyguieres.org",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/0a303de7cfdad03323e3a29882d69c06.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=28145869-f2d7-4dc2-9171-a26b63fbd83b",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "aurora_hagerman_&_company",
+      "victim_name": "Hagerman & Company",
+      "threat_actor": "aurora",
+      "date_discovered": "2026-06-19T13:52:11.013934+00:00",
+      "industry": "Business Services",
+      "website": "Hagerman & Company",
+      "claim": "*** — a 40-year-old Autodesk Platinum Partner headquartered in Mt. Zion, Illinois, serving 250+ enterprise customers across manufacturing, energy, defense, healthcare, and education.\nThe exposed dataset includes:\n\nComplete proprietary source code for 15+ commercial products including the HNC Licensing System (License Generator, License Server, License Manager) — enabling unlimited piracy of all Hagerman products.\n8+ plaintext database credentials in .udl files, including an Oracle SYS (DBA superuser) account with password \"Hagerman@1!\" reused across multiple systems.\nEngineering vault databases for 14+ critical infrastructure entities — NYPA (7 power plants including Niagara Falls), Kinder Morgan (Elba Island LNG terminal), HydroOne (Ontario electricity), Phillips 66, Chevron, and 8+ petroleum refineries.\nDefense/government data — NASA IT Security Requirements, Lockheed Martin configurations, Boeing-SVS vault data, JPL configurations.\nAzure DevOps transaction logs (1.6 GB) containing complete source code version history and potentially CI/CD deployment secrets.\nThird-party database credentials for Michigan State University (3 databases), Cal State Long Beach, and Beth Israel Deaconess Medical Center infrastructure.",
+      "screenshot": "https://images.ransomware.live/victims/b8b59fc225464af5cc7df48206612c3a.png",
+      "url": "http://u6lieui2dakbctcjea2bz4r4q32r7t36nwljovqbv7mxs6o2smgxixid.onion/blog/hagerman-company-7662c20a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "anubis_ktr_real_estate_advisors",
+      "victim_name": "KTR Real Estate Advisors",
+      "threat_actor": "anubis",
+      "date_discovered": "2026-06-19T13:51:25.881526+00:00",
+      "industry": "Financial Services",
+      "website": "",
+      "claim": "Real estate client database exposed.",
+      "screenshot": "https://images.ransomware.live/victims/d984cd59cd2af05459d60d41a143ea48.png",
+      "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/nd1hBWHK0LprsOgO5GDfsjkV35y484BCsxBOTed9oQYoDUrOtHZb92lpaLNnX3xhUWL1o2ca27l5a5OJ9xWC09YZG5rV1c5",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "icarus_klue.com",
+      "victim_name": "Klue.com",
+      "threat_actor": "Icarus",
+      "date_discovered": "2026-06-19T10:50:16.523284+00:00",
+      "industry": "Technology",
+      "website": "Klue.com",
+      "claim": "As you've probably already heard, ***.com has been impacted by us recently. A number of other companies' Salesforce instances, which were partners to Klue, were exfiltrated.\r\nThis leak/post is made to address this.\r\nWe advice Klue to contact us for a swift resolution, in order not to affect the companies you work with.\r\nOn the other note, if Klue doesnt want to accommodate this request, we advice the companies who want to protect their data to contact us via Session.\r\nIn order to verify you're a representative of the company you claim to be, you will need to provide a certain value/field from a row on your SF.\r\nWe wish for your cooperation, not your demise. Make the correct choice.\n\nData stolen: data borrowed - not stolen",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "cloak_ra-vogeler.de",
       "victim_name": "ra-vogeler.de",
