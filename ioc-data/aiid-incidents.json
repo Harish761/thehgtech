@@ -17,6 +17,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1069",
+      "incident_id": 1069,
+      "title": "Purported Graphite Spyware Linked to Paragon Solutions Allegedly Deployed Against Journalists and Ci",
+      "date": "2026-06-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1165",
       "incident_id": 1165,
       "title": "Grok Imagine Reportedly Produces Nonconsensual Taylor Swift Deepfake Nudes Without Explicit Promptin",
@@ -62,6 +70,46 @@
       "title": "Moltbook Database Exposure Allegedly Revealed Users' Private Communications and API Authentication T",
       "date": "2026-06-19",
       "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1467",
+      "incident_id": 1467,
+      "title": "South Africa Draft National AI Policy Reportedly Included Fictitious References Believed to Be AI Ha",
+      "date": "2026-06-19",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1469",
+      "incident_id": 1469,
+      "title": "PocketOS Production Database Was Reportedly Deleted by Cursor AI Agent Running Claude Opus 4.6",
+      "date": "2026-06-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1480",
+      "incident_id": 1480,
+      "title": "Purportedly AI-Recreated Clips from Beastie Boys' 'Sabotage' Video Reportedly Appeared in FBI Promot",
+      "date": "2026-06-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1547",
+      "incident_id": 1547,
+      "title": "Waymo Robotaxis Reportedly Entered Closed Freeway Construction Zones in Arizona and California",
+      "date": "2026-06-19",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1548",
+      "incident_id": 1548,
+      "title": "South African Home Affairs Revised White Paper Reportedly Included Fictitious References Believed to",
+      "date": "2026-06-19",
+      "category": "other",
       "severity": "medium"
     },
     {
@@ -2113,14 +2161,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1480",
-      "incident_id": 1480,
-      "title": "Purportedly AI-Recreated Clips from Beastie Boys' 'Sabotage' Video Reportedly Appeared in FBI Promot",
-      "date": "2026-05-06",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1383",
       "incident_id": 1383,
       "title": "User Reportedly Developed Emotional Dependence on Customized ChatGPT 'Boyfriend,' Citing Grief After",
@@ -2153,27 +2193,11 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1469",
-      "incident_id": 1469,
-      "title": "PocketOS Production Database Was Reportedly Deleted by Cursor AI Agent Running Claude Opus 4.6",
-      "date": "2026-04-30",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1470",
       "incident_id": 1470,
       "title": "DisMech AI Curation Agent Reportedly Completed GitHub Issue Intended as New Contributor's Learning T",
       "date": "2026-04-30",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1467",
-      "incident_id": 1467,
-      "title": "South Africa Draft National AI Policy Reportedly Included Fictitious References Believed to Be AI Ha",
-      "date": "2026-04-25",
-      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -2497,22 +2521,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1117",
-      "incident_id": 1117,
-      "title": "North Korea-Linked Actors Allegedly Use AI Executive Deepfakes in Zoom Phishing Targeting Web3 Emplo",
-      "date": "2026-03-21",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1118",
-      "incident_id": 1118,
-      "title": "Ongoing Purported AI-Assisted Identity Fraud Enables Unauthorized Access to Western Companies by Nor",
-      "date": "2026-03-21",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1392",
       "incident_id": 1392,
       "title": "Ars Technica Retracted Article After Purportedly AI-Generated Text Was Presented as Direct Quotes Fr",
@@ -2538,9 +2546,9 @@
     }
   ],
   "stats": {
-    "total": 317,
-    "last7Days": 75,
-    "last30Days": 182
+    "total": 318,
+    "last7Days": 81,
+    "last30Days": 188
   },
-  "lastUpdated": "2026-06-19T17:46:24.460328+05:30"
+  "lastUpdated": "2026-06-19T23:34:46.405938+05:30"
 }
