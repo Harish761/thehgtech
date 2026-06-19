@@ -2535,20 +2535,12 @@
       "date": "2026-03-21",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1426",
-      "incident_id": 1426,
-      "title": "Perplexity AI Reportedly Misstated CLL Research, Allegedly Contributing to Delayed Treatment and Pro",
-      "date": "2026-03-21",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 318,
+    "total": 317,
     "last7Days": 81,
-    "last30Days": 188
+    "last30Days": 186
   },
-  "lastUpdated": "2026-06-19T23:34:46.405938+05:30"
+  "lastUpdated": "2026-06-20T01:46:14.587732+05:30"
 }
