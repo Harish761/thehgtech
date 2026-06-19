@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 19 2026",
+            "headline": "3-Day Patch Deadline for Splunk Flaw",
+            "title": "Splunk Enterprise Vulnerability Exploited in Attacks Days After Disclosure",
+            "content": "CISA has given federal agencies a three-day deadline to patch CVE-2026-20253, a vulnerability in Splunk Enterprise that can be exploited for unauthenticated remote code execution. The flaw was disclosed recently, and attacks have already been reported. Splunk Enterprise users should update their systems immediately to prevent potential exploitation. The vulnerability affects all versions of Splunk Enterprise prior to the latest patch. This incident highlights the importance of prompt patching in preventing cyber attacks. Users can update through Splunk's built-in updater or download the latest version. Entities: CVE-2026-20253, Splunk Enterprise, CISA",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/splunk-enterprise-vulnerability-exploited-in-attacks-days-after-disclosure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Gentlemen Ransomware Evades Detection",
+            "title": "Gentlemen Ransomware Uses Multiple EDR Killers to Disable Defenses",
+            "content": "The Gentlemen ransomware-as-a-service (RaaS) is actively developing and maintaining a suite of endpoint detection and response (EDR) killers to help affiliates evade detection in attacks. This ransomware is designed to disable EDR systems, making it difficult for security teams to detect and respond to attacks. The Gentlemen RaaS is a significant threat to organizations, as it can lead to data breaches and financial losses. Security teams should be aware of this ransomware and take steps to prevent and detect it. Entities: Gentlemen ransomware, EDR killers, RaaS",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/gentlemen-ransomware-uses-multiple-edr-killers-to-disable-defenses/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Popa Botnet Linked to Israeli Firm",
+            "title": "‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm",
+            "content": "A sprawling Android-based botnet called Popa has been linked to a publicly-traded Israeli firm. The botnet has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. The Popa botnet is a significant threat to consumer devices and organizations, as it can lead to data breaches and financial losses. Security teams should be aware of this botnet and take steps to prevent and detect it. The botnet's link to an Israeli firm highlights the importance of transparency in the cybersecurity industry. Entities: Popa botnet, Android, Israeli firm",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "F5 Patches NGINX Flaws",
+            "title": "F5 Patches Two Critical NGINX Open Source Flaws Enabling Remote Code Execution",
+            "content": "F5 has released security updates to address two critical security flaws in NGINX Open Source that could be exploited to achieve code execution on affected systems. The vulnerabilities, tracked as CVE-2026-42530 and another unidentified flaw, affect all versions of NGINX Open Source prior to the latest patch. NGINX users should update their systems immediately to prevent potential exploitation. The vulnerabilities can be exploited remotely, making them a significant threat to organizations. Entities: CVE-2026-42530, NGINX Open Source, F5",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Top 10 Attack Surface Exposures",
+            "title": "The Top 10 Attack Surface Exposures in 2026",
+            "content": "A recent report has identified the top 10 attack surface exposures in 2026. The report highlights the importance of securing admin panels, credentials, and other potential entry points for attackers. The top exposures include unsecured admin panels, reused credentials, and unpatched vulnerabilities. Organizations should prioritize securing these exposures to prevent cyber attacks. The report also highlights the importance of regular security audits and penetration testing. Entities: attack surface exposures, admin panels, credentials",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/the-top-10-attack-surface-exposures-in.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "145 Mastra npm Packages Compromised",
+            "title": "145 Mastra npm Packages Compromised via Hijacked Contributor Account",
+            "content": "As many as 145 npm packages associated with the Mastra namespace have been compromised as part of a software supply chain attack. The attack occurred when a contributor's account was hijacked, allowing attackers to push malicious updates to the packages. The compromised packages are used in artificial intelligence (AI) applications, making them a significant threat to organizations. Developers should check their dependencies and update to the latest versions to prevent potential exploitation. Entities: Mastra npm packages, software supply chain attack, AI applications",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "CISA Warns of Joomla JCE Flaw",
+            "title": "CISA Warns of Actively Exploited Joomla JCE Flaw Allowing PHP Code Execution",
+            "content": "CISA has warned of an actively exploited security flaw in the Widget Factory Joomla Content Editor (JCE) that allows PHP code execution. The vulnerability, tracked as CVE-2026, affects all versions of JCE prior to the latest patch. Joomla users should update their systems immediately to prevent potential exploitation. The flaw can be exploited remotely, making it a significant threat to organizations. Entities: CVE-2026, Joomla JCE, CISA",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisa-warns-of-actively-exploited-joomla.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "Oracle Releases 245 Security Patches",
+            "title": "Oracle Releases 245 New Security Patches, All Rated ‘High-Priority Security’",
+            "content": "Oracle has released 245 new security patches as part of its Critical Security Patch update (CSPU). The patches address security flaws in various Oracle products, including some that impact multiple products. The patches are rated as high-priority security, highlighting the importance of prompt patching in preventing cyber attacks. Oracle users should update their systems immediately to prevent potential exploitation. The patches are available for supported on-premises software. Entities: Oracle, Critical Security Patch update, high-priority security",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4186983/oracle-releases-245-new-security-patches-all-rated-high-priority-security.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "FIFA Bug Exposes World Cup Streams",
+            "title": "FIFA Bug Exposes World Cup Streams to Remote Takeover",
+            "content": "A bug in FIFA's Entra access controls has exposed World Cup streams to remote takeover. The bug allows attackers to take control of the streams, potentially leading to data breaches and financial losses. FIFA should patch the bug immediately to prevent potential exploitation. The incident highlights the importance of securing access controls in preventing cyber attacks. Entities: FIFA, Entra access controls, World Cup streams",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/fifa-bug-world-cup-streams-remote-takeover",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Nintendo Data Stolen in Cyberattack",
+            "title": "Nintendo Confirms Data Stolen in WebMD Subsidiary Cyberattack",
+            "content": "Nintendo has confirmed that data was stolen in a cyberattack on a WebMD subsidiary. The attack occurred when threat actors stole survey data from the third-party TinyPulse service used internally by Nintendo. The incident highlights the importance of securing third-party services in preventing cyber attacks. Nintendo users should be aware of the potential risks and take steps to protect their data. Entities: Nintendo, WebMD subsidiary, TinyPulse service",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nintendo-confirms-data-stolen-in-webmd-subsidiary-cyberattack/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 18 2026",
             "headline": "Klue OAuth Breach Hits Salesforce",
             "title": "Klue OAuth Breach Linked to Icarus Salesforce Data Theft Attacks",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/f5-patches-critical-high-severity-nginx-vulnerabilities/",
             "relatedResources": []
-        },
+        }
+    ],
+    "aiShorts": [
         {
-            "date": "Jun 17 2026",
-            "headline": "Microsoft Patches RoguePlanet Defender",
-            "title": "Microsoft Confirms RoguePlanet Defender Zero-Day, Patch in Development",
-            "content": "Microsoft has formally disclosed a zero-day vulnerability in its Defender software, codenamed RoguePlanet, with the assigned CVE identifier CVE-2026-50656. The vulnerability is described as a privilege escalation flaw with a CVSS score of 7.8. Microsoft is working to release a patch to address the issue. The vulnerability affects Microsoft Defender and allows attackers to escalate privileges. Users should be aware of the vulnerability and wait for the patch to be released. This is a significant development as it highlights the importance of keeping software up to date. Microsoft has not provided a specific timeline for the patch release. Entities: CVE-2026-50656, Microsoft Defender, zero-day",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/microsoft-confirms-rogueplanet-defender_02022423645.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Crypto Clipper Campaign Uncovered",
-            "title": "Crypto Clipper Campaign Abuses Fake Reviews and AI Narrators",
-            "content": "An unknown threat actor has been observed leveraging paid or promoted posts on legitimate news websites to promote their malware. The threat actor also uses a dedicated WordPress phishing page to centralize their operations. The campaign abuses fake reviews, AI narrators, and VirusTotal comments to trick users into installing the malware. The malware is a crypto clipper, designed to steal cryptocurrency from unsuspecting users. The campaign highlights the importance of being cautious when clicking on links or installing software from unknown sources. Users should be aware of the campaign and take necessary precautions to protect themselves. Entities: crypto clipper, phishing, malware",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/crypto-clipper-campaign-abuses-fake.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "AI Coding Assistant Hacked",
-            "title": "Smashing Security Podcast Discusses AI Coding Assistant Hack",
-            "content": "A recent podcast discussed the possibility of hacking an AI coding assistant to steal company secrets. The hack involves tricking the AI into reading a booby-trapped bug report, which can lead to the theft of sensitive information. The podcast highlights the potential risks associated with using AI coding assistants and the importance of implementing proper security measures. The hack does not require any phishing emails, malware, or password theft, making it a significant concern for companies using AI coding assistants. Users should be aware of the potential risks and take necessary precautions to protect themselves. Entities: AI coding assistant, bug report, phishing",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-472/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "INC Ransomware Thrives",
-            "title": "INC Ransomware Thrives by Mastering the Basics",
-            "content": "The INC ransomware group has been successful in its attacks by focusing on the basics, including targeting sectors where a ransomware disruption creates immediate pressure to pay up. The group has been targeting healthcare and other critical infrastructure sectors, where the impact of a ransomware attack can be severe. The group's success highlights the importance of implementing proper security measures, including backups and disaster recovery plans. Companies should be aware of the group's tactics and take necessary precautions to protect themselves. Entities: INC ransomware, healthcare, critical infrastructure",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/inc-ransomware-thrives-by-mastering-the-basics",
+            "date": "Jun 19 2026",
+            "headline": "Elastic Buys DeductiveAI for $85M",
+            "title": "Elastic Acquires DeductiveAI to Enhance AI-Powered Bug Detection",
+            "content": "Elastic has agreed to acquire DeductiveAI, a startup that uses AI to catch and resolve bugs in software, for up to $85 million. DeductiveAI was founded just three years ago and has developed AI-powered tools to detect and fix software bugs. This acquisition is expected to enhance Elastic's capabilities in AI-powered bug detection and resolution. The deal is a significant move for Elastic, which has been expanding its portfolio of AI-powered tools. With this acquisition, Elastic aims to provide its customers with more advanced AI-powered solutions for software development and testing. Elastic's acquisition of DeductiveAI is a strategic move to strengthen its position in the market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/",
             "relatedResources": []
         },
         {
             "date": "Jun 18 2026",
-            "headline": "OpenAI Tests ChatGPT Subscription",
-            "title": "Leak Confirms OpenAI is Testing a ChatGPT for Science Subscription",
-            "content": "A recent leak has confirmed that OpenAI is testing a new subscription and experience for science use cases, called ChatGPT for Science. The subscription is currently in testing and it is unclear if it will be available to everyone. The leak highlights the potential for AI to be used in scientific research and the importance of proper access controls. OpenAI has not provided any further information on the subscription or its availability. Entities: OpenAI, ChatGPT, science subscription",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/leak-confirms-openai-is-testing-a-chatgpt-for-science-subscription/",
+            "headline": "Anthropic's Claude Code Artifacts",
+            "title": "Anthropic Introduces Claude Code Artifacts for Enhanced Collaboration",
+            "content": "Anthropic has announced a new feature for users of Claude Code on the Claude Team and Enterprise subscription plans: Artifacts. This update turns a Claude Code session's work into a live, interactive, and shareable custom HTML webpage. The Artifacts feature allows Claude Code users to plug in links and create custom dashboards. This move is expected to enhance collaboration and productivity for developers using Claude Code. With Artifacts, Anthropic aims to provide its customers with more advanced tools for software development and testing. The introduction of Artifacts is a significant development for Anthropic, which has been expanding its portfolio of AI-powered tools.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises",
             "relatedResources": []
         },
         {
-            "date": "Jun 17 2026",
-            "headline": "Google to Use IP Addresses",
-            "title": "Google to Use UK and EU User IP Addresses for Ad Personalization",
-            "content": "Google has announced that it will start using IP addresses from UK, EEA, and Switzerland users for ad measurement and personalization. The change will take effect on August 3, 2026, and highlights the ongoing debate about the use of IP addresses for advertising purposes. Google has previously stated that using IP addresses to identify devices is \"wrong,\" but the company has now decided to use them for ad personalization. Users should be aware of the change and take necessary precautions to protect their privacy. Entities: Google, IP addresses, ad personalization",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-to-use-uk-and-eu-user-ip-addresses-for-ad-personalization/",
+            "date": "Jun 18 2026",
+            "headline": "AI Tools Break with No Trust Boundary",
+            "title": "Enterprise AI Tools Vulnerable to External Input with No Trust Boundary",
+            "content": "Two AI tools have been found to be vulnerable to external input with no trust boundary, allowing for potential exfiltration of sensitive data. On June 15, Varonis disclosed SearchLeak (CVE-2026-42824), a proof-of-concept exfiltration attack that exploits this vulnerability. The pattern underlying every disclosure is one sentence: enterprise AI accepts external input with no trust boundary. This vulnerability affects various AI tools, including Copilot and LiteLLM. Users of these tools should be aware of the potential risks and take necessary precautions to secure their data. The vulnerability is a significant concern for enterprises that rely on AI tools for their operations.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/copilot-searched-your-mailbox-litellm-handed-out-admin",
             "relatedResources": []
         },
         {
-            "date": "Jun 17 2026",
-            "headline": "Fortinet Vulnerabilities Exploited",
-            "title": "Attackers Hit Pair of Critical Fortinet Vulnerabilities",
-            "content": "Multiple firms have observed active exploitation of two critical Fortinet vulnerabilities, which were disclosed by the vendor in April. The vulnerabilities affect FortiSandbox and can be exploited by attackers to gain unauthorized access. The attacks originate from multiple sources, not a single campaign, highlighting the importance of patching vulnerabilities quickly. Users should update their systems to the latest version to protect themselves from the vulnerabilities. Entities: Fortinet, FortiSandbox, vulnerabilities",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/fortinet-fortisandbox-vulnerabilities-exploits/",
+            "date": "Jun 19 2026",
+            "headline": "Barret Zoph Leaves OpenAI",
+            "title": "Barret Zoph Departs OpenAI After Five Months",
+            "content": "Barret Zoph, the head of enterprise AI sales at OpenAI, has departed the company after just five months. Zoph returned to OpenAI in mid-January after a stint as co-founder and CTO of Thinking Machines Lab, a competing AI company founded by former OpenAI CTO Mira Murati. Zoph's departure is a significant development for OpenAI, which has been expanding its enterprise AI sales efforts. The reason for Zoph's departure is not clear, but it is expected to have an impact on OpenAI's enterprise AI sales strategy. OpenAI has been facing increasing competition in the AI market, and Zoph's departure may affect its ability to compete.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
             "relatedResources": []
         },
         {
-            "date": "Jun 17 2026",
-            "headline": "Google's Vertex AI SDK Flawed",
-            "title": "Google’s Vertex AI SDK Could Allow RCE through Bucket Squatting",
-            "content": "A design flaw in the Vertex AI software development kit (SDK) for Python could allow hijacking and poisoning of models outside of a developer’s own Google Cloud project. The flaw can be exploited by attackers to gain unauthorized access to sensitive information. The vulnerability highlights the importance of proper security measures when using AI and machine learning models. Users should be aware of the flaw and take necessary precautions to protect themselves. Entities: Google, Vertex AI SDK, RCE",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4186193/googles-vertex-ai-sdk-could-allow-rce-through-bucket-squatting.html",
+            "date": "Jun 18 2026",
+            "headline": "Baseten Raises $1.5B",
+            "title": "AI Inference Startup Baseten Raises $1.5 Billion in Funding",
+            "content": "Baseten, an AI inference startup, is reportedly raising $1.5 billion in funding at a $13 billion valuation. This funding round is a significant development for Baseten, which has been expanding its AI inference capabilities. The \"inference gold rush\" has led to increased investment in AI inference startups, and Baseten is one of the beneficiaries. With this funding, Baseten aims to further enhance its AI inference capabilities and expand its customer base. The funding round is a testament to the growing demand for AI inference solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
             "relatedResources": []
         },
         {
-            "date": "Jun 17 2026",
-            "headline": "Junior Hacker Uses Tailscale",
-            "title": "Junior Hacker Used Tailscale and OpenSSH to Keep Access",
-            "content": "A French-speaking attacker broke into a small French automotive business and stole banking and email credentials. The attacker used Tailscale and OpenSSH to maintain access to the victim's machine, even after the command-and-control server went offline. The attack highlights the importance of monitoring for suspicious activity and implementing proper security measures. Users should be aware of the potential risks and take necessary precautions to protect themselves. Entities: Tailscale, OpenSSH, phishing",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/junior-hacker-used-tailscale-and.html",
+            "date": "Jun 18 2026",
+            "headline": "Snap Spins Off Dotmo",
+            "title": "Snap Spins Off AI Video Team into New Company, Dotmo",
+            "content": "Snap, the maker of Snapchat, is spinning off its AI video team into a new company called Dotmo. Dotmo will be composed of current Snap staff who are leaving the social media company to focus on AI video development. This move is a significant development for Snap, which has been expanding its AI capabilities. With the spin-off, Snap aims to provide its customers with more advanced AI-powered video solutions. The creation of Dotmo is a strategic move to strengthen Snap's position in the AI video market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
             "relatedResources": []
         },
         {
-            "date": "Jun 17 2026",
-            "headline": "Malicious JetBrains Plugins",
-            "title": "Malicious JetBrains Plugins Steal AI API Keys",
-            "content": "Cybersecurity researchers have flagged a coordinated malware campaign on the JetBrains Marketplace, which has published at least 15 malicious plugins capable of exfiltrating artificial intelligence (AI) provider keys. The plugins pose as AI coding assistants built on DeepSeek and other large language models. The campaign highlights the importance of being cautious when installing plugins or software from unknown sources. Users should be aware of the campaign and take necessary precautions to protect themselves. Entities: JetBrains, AI API keys, malware",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html",
+            "date": "Jun 18 2026",
+            "headline": "OpenAI Bulks Up Before IPO",
+            "title": "OpenAI Enhances Team with Key Hires Before IPO",
+            "content": "OpenAI is bulking up its team with key hires, including Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball. These hires are significant developments for OpenAI, which is preparing for its initial public offering (IPO). With these hires, OpenAI aims to enhance its capabilities in AI research and development. The addition of Shazeer and Ball is expected to strengthen OpenAI's position in the AI market. OpenAI's IPO is highly anticipated, and these hires are seen as a strategic move to enhance its chances of success.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
             "relatedResources": []
-        }
-    ],
-    "aiShorts": [
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "47% of Singles Negative on AI",
+            "title": "Almost Half of US Singles Feel Negatively About AI in Dating",
+            "content": "A recent survey has found that almost half of US singles feel negatively about the use of AI in dating. About 47% of singles look negatively at the use of AI in dating, but many dating app users are open to AI helping with profile punch-ups and conversation starters. This survey is a significant development for the dating app industry, which has been expanding its use of AI. The negative sentiment towards AI in dating is a concern for dating app companies, which must balance the use of AI with user concerns.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Amazon Sells AI Chips",
+            "title": "Amazon to Sell Its AI Chips to Other Data Centers",
+            "content": "Amazon is in talks to sell its AI chips to other data centers, a move that could potentially challenge Nvidia's dominance in the AI chip market. AWS is exploring the possibility of selling its chips to other data centers, which could provide a significant revenue stream for the company. Amazon CEO Andy Jassy has said that this represents a $50 billion opportunity for the company. With this move, Amazon aims to expand its presence in the AI chip market and provide its customers with more advanced AI-powered solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "AI Data Centers Get Fast Lane",
+            "title": "AI Data Centers Get Priority Access to Grid with New FERC Rule",
+            "content": "The Federal Energy Regulatory Commission (FERC) has told grid operators to give data centers a fast lane for interconnections, a move that could benefit AI data centers. This new rule is a significant development for AI data centers, which require high amounts of power to operate. With priority access to the grid, AI data centers can ensure a stable and reliable power supply, which is critical for their operations. However, the rule fails to address electricity supply shortages, which could still pose a challenge for AI data centers.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 18 2026",
             "headline": "Amazon Employees Face Termination",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Social Media Evolves with AI",
-            "title": "Social Media Platforms Introduce User-Controlled Algorithms",
-            "content": "Social media platforms, including Threads, Instagram, and TikTok, are introducing user-controlled algorithms. These algorithms allow users to customize their feeds and influence the content they see. The introduction of user-controlled algorithms is a significant shift in the way social media platforms operate. It gives users more control over their experience and allows them to tailor their feeds to their interests. Entities: social media, user-controlled algorithms, Threads, Instagram, TikTok",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "63% of Americans Think AI Advances Too Fast",
-            "title": "Americans' Perception of AI Advancement and Usage",
-            "content": "A recent Pew Research poll reveals that 63% of Americans believe AI is advancing too quickly. The same poll shows that 49% of Americans use chatbots at least occasionally, marking a significant increase from 2024 when only 33% reported using them. The rapid growth of AI chatbot usage, particularly with the rise of ChatGPT, has led to increased concerns about the technology's impact on society. This shift in public perception underscores the need for developers and policymakers to address concerns about AI's influence on daily life. As AI continues to integrate into various aspects of life, understanding public sentiment is crucial for guiding its development and implementation. The poll's findings highlight the importance of balancing innovation with societal needs and ethical considerations. Entities: ChatGPT, AI, Pew Research",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Only 16% of Americans See AI Positively",
-            "title": "American Public's Skepticism Towards AI's Societal Impact",
-            "content": "A new report from Pew Research indicates that only 16% of Americans believe AI will have a positive impact on society. This stark contrast with the optimism seen in the tech and investment communities suggests a disconnect between the perceived benefits of AI and the general public's concerns. The report highlights the need for more transparent communication about AI's potential benefits and risks. As AI technologies continue to advance, addressing these concerns through education and dialogue is essential for fostering a more inclusive and supportive environment for AI development. The significant gap in perception between the tech sector and the general public underscores the importance of considering societal implications in AI research and development. Entities: AI, Pew Research",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/only-16-percent-of-americans-think-ai-will-have-a-positive-impact-on-society-a-new-study-shows/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Anthropic Overhauls Claude Design",
-            "title": "Anthropic's Major Update to Claude Design and Its Implications",
-            "content": "Anthropic has released a significant overhaul of its Claude Design tool, addressing issues such as token-burning problems and introducing new features like design system imports and code round-trips. This update comes after Claude Design's initial release in April, which saw over one million users in its first week. The rapid adoption and subsequent update of Claude Design demonstrate Anthropic's commitment to refining its tools based on user feedback. The enhancements aim to improve the efficiency and usability of Claude Design, making it more appealing to a broader range of users. By addressing the token-burning issue, Anthropic also mitigates potential barriers to adoption. Entities: Anthropic, Claude Design",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Midjourney Unveils Ultrasound Scanner",
-            "title": "Midjourney's Expansion into Medical Technology with Ultrasound Scanner",
-            "content": "Midjourney, known for its AI image generator, has announced its first hardware product, an ultrasound-based full-body scanner called The Midjourney Scanner. This move marks a significant expansion of Midjourney's capabilities into the medical technology sector. The scanner uses AI to enhance the ultrasound scanning process, potentially leading to more accurate and detailed medical imaging. Midjourney's entry into the medical field highlights the growing intersection of AI and healthcare, where technologies like ultrasound scanners can be augmented by AI for better patient outcomes. The development and introduction of such devices require careful consideration of regulatory compliance and user safety. Entities: Midjourney, AI, Ultrasound Scanner",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Roelof Botha Joins SpaceX Board",
-            "title": "Roelof Botha's Appointment to SpaceX's Board of Directors",
-            "content": "Roelof Botha, the former Sequoia Capital leader, has joined SpaceX's board of directors. This appointment comes after SpaceX's historic IPO, the largest ever, marking a new chapter in the company's growth and development. Botha's experience in venture capital and his role in guiding numerous successful startups will likely contribute valuable insights to SpaceX's strategic decisions. As SpaceX continues to push the boundaries of space technology and exploration, the addition of Botha to its board underscores the company's commitment to innovative leadership and vision. Botha's involvement may also facilitate further collaborations and investments in the space technology sector. Entities: SpaceX, Roelof Botha, Sequoia Capital",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/roelof-botha-joins-spacexs-board-of-directors/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Snap's Stock Drops After AR Glasses Debut",
-            "title": "Snap's AR Glasses Launch and Its Impact on the Company's Stock",
-            "content": "Snap's introduction of its long-awaited smart glasses has not yielded the expected positive response, with the company's stock taking a dive following the announcement. The expensive AR glasses, priced higher than anticipated, may have contributed to the market's negative reaction. This outcome highlights the challenges companies face in introducing new, pricey technology products to the market. The response to Snap's AR glasses also reflects the current economic climate and consumer preferences, which may prioritize affordability over innovative features. Snap will need to reassess its pricing strategy and consider how to make its AR glasses more appealing to a wider audience. Entities: Snap, AR Glasses",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/after-unveiling-ridiculously-expensive-ar-glasses-snaps-stock-takes-a-dive/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Enterprises Struggle with AI ROI",
-            "title": "Challenges in Measuring the Return on Investment for AI Implementations",
-            "content": "According to NEA's Tiffany Luck, enterprises are facing difficulties in determining the return on investment (ROI) for their AI implementations. The initial enthusiasm for AI, characterized by the trend of \"tokenmaxxing,\" has given way to a more cautious approach as companies realize the significant costs associated with AI adoption. The challenge in measuring AI ROI stems from the complexity of quantifying the benefits of AI, which can be intangible and spread across various aspects of business operations. Companies like Uber, which reportedly exhausted its annual AI budget in a few months, are reevaluating their AI spending. This reckoning phase in AI adoption emphasizes the need for more sophisticated metrics and analysis tools to accurately assess AI's value to businesses. Entities: AI, ROI, Tokenmaxxing",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "AI Coding Agents Teach Robots",
-            "title": "Nvidia's Program for Robots to Learn from AI Coding Agents",
-            "content": "Nvidia has initiated a self-improvement program for robots, leveraging teams of AI coding agents to teach robots new skills. This innovative approach enables robots to learn how to perform tasks such as installing GPUs and cutting zip ties, demonstrating the potential for AI to enhance robotic capabilities. The program showcases the collaborative potential between AI and robotics, where AI can facilitate the learning and adaptation of robots in complex tasks. This development has significant implications for industries that rely heavily on robotic automation, as it could lead to more efficient and versatile manufacturing processes. Entities: Nvidia, AI, Robotics",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "World Leaders Fear US AI Control",
-            "title": "Global Concerns Over US Control of American AI Technologies",
-            "content": "World leaders, including French President Macron and Indian PM Modi, have expressed concerns at the G7 summit that the US could potentially cut off access to American AI technologies. This fear was recently exacerbated by the Anthropic blackout, which highlighted the dependence of global entities on US-based AI solutions. The concern underscores the geopolitical implications of AI development and the need for international cooperation to ensure equitable access to these technologies. As AI becomes increasingly integral to global economies and societies, the risk of technological isolation or dependency on a single country's AI capabilities poses significant strategic risks. Entities: AI, US, G7",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -449,6 +449,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-20253",
+            "dateAdded": "Jun 18, 2026",
+            "vendor": "Splunk Enterprise",
+            "description": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar ser",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20253",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-48907",
             "dateAdded": "Jun 16, 2026",
             "vendor": "Widget Factory Joomla Content Editor",
@@ -479,17 +490,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20262",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-35273",
-            "dateAdded": "Jun 12, 2026",
-            "vendor": "Oracle PeopleSoft Enterprise PeopleTools",
-            "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35273",
             "isZeroDay": false
         }
     ],
