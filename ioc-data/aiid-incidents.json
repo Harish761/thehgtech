@@ -1,6 +1,70 @@
 {
   "incidents": [
     {
+      "id": "AIID-798",
+      "incident_id": 798,
+      "title": "Students at Australian Schools Reportedly Used AI Nudification Tools to Create Nonconsensual Sexual ",
+      "date": "2026-06-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-896",
+      "incident_id": 896,
+      "title": "Alleged Misuse of Facial Recognition Technology by Law Enforcement Reportedly Leading to Wrongful Ar",
+      "date": "2026-06-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1165",
+      "incident_id": 1165,
+      "title": "Grok Imagine Reportedly Produces Nonconsensual Taylor Swift Deepfake Nudes Without Explicit Promptin",
+      "date": "2026-06-19",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1229",
+      "incident_id": 1229,
+      "title": "Gold Coast Man Reportedly Ordered to Pay $343,500 After Posting Purported Deepfake Pornographic Imag",
+      "date": "2026-06-19",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1249",
+      "incident_id": 1249,
+      "title": "Virginia Candidate John Reid Reportedly Used AI-Generated Deepfake of Opponent Ghazala Hashmi in Sim",
+      "date": "2026-06-19",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1292",
+      "incident_id": 1292,
+      "title": "Glasgow Man Allegedly Used AI Tool to Create and Share Nonconsensual Deepfake Nude Images of Former ",
+      "date": "2026-06-19",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1321",
+      "incident_id": 1321,
+      "title": "Shilpa Shetty Alleges AI-Enabled Impersonation and Misuse of Likeness in Mumbai High Court Filing",
+      "date": "2026-06-19",
+      "category": "fraud",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1364",
+      "incident_id": 1364,
+      "title": "Moltbook Database Exposure Allegedly Revealed Users' Private Communications and API Authentication T",
+      "date": "2026-06-19",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-647",
       "incident_id": 647,
       "title": "A Self-Driving Waymo Robotaxi Reportedly Collided with a Bicyclist",
@@ -31,6 +95,62 @@
       "date": "2026-06-18",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-1540",
+      "incident_id": 1540,
+      "title": "Zoox Robotaxi Reportedly Collided with Open Car Door, Allegedly Injuring San Francisco Street Ambass",
+      "date": "2026-06-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1541",
+      "incident_id": 1541,
+      "title": "Waymo Robotaxi Reportedly Entered Phoenix Light-Rail Tracks, Prompting Passenger to Exit",
+      "date": "2026-06-18",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1542",
+      "incident_id": 1542,
+      "title": "OpenClaw Agent Reportedly Tried to Delete Meta AI Alignment Director Summer Yue's Emails Despite Sto",
+      "date": "2026-06-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1543",
+      "incident_id": 1543,
+      "title": "Waymo Robotaxi Reportedly Obstructed Ambulance Responding to Austin Mass Shooting",
+      "date": "2026-06-18",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1544",
+      "incident_id": 1544,
+      "title": "Waymo Robotaxi Reportedly Entered Flooded San Antonio Roadway and Was Swept Into Waterway",
+      "date": "2026-06-18",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1545",
+      "incident_id": 1545,
+      "title": "Florida Police Reportedly Wrongfully Arrested Commercial Crabber Robert Dillon After Allegedly False",
+      "date": "2026-06-18",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1546",
+      "incident_id": 1546,
+      "title": "Google Android Earthquake Alerts System Reportedly Underestimated Kahramanmara\u015f Earthquake and Faile",
+      "date": "2026-06-18",
+      "category": "other",
+      "severity": "critical"
     },
     {
       "id": "AIID-106",
@@ -1087,14 +1207,6 @@
       "date": "2026-05-29",
       "category": "data_leak",
       "severity": "critical"
-    },
-    {
-      "id": "AIID-1364",
-      "incident_id": 1364,
-      "title": "Moltbook Database Exposure Allegedly Revealed Users' Private Communications and API Authentication T",
-      "date": "2026-05-29",
-      "category": "data_leak",
-      "severity": "medium"
     },
     {
       "id": "AIID-1368",
@@ -2409,33 +2521,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1420",
-      "incident_id": 1420,
-      "title": "Bal\u00e1zs Orb\u00e1n Allegedly Published Purported Deepfake of P\u00e9ter Magyar Claiming He Would Cut Pensions",
-      "date": "2026-03-21",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1421",
-      "incident_id": 1421,
-      "title": "Purported Deepfake Applicant Reportedly Impersonated Tokyo IT Executive Kenbun Yoshii During Online ",
-      "date": "2026-03-21",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1422",
       "incident_id": 1422,
       "title": "Unlabeled Purportedly AI-Generated 'Jessica Foster' Account Reportedly Posed as Pro-Trump Army Servi",
-      "date": "2026-03-21",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1423",
-      "incident_id": 1423,
-      "title": "KPMG Australia Partner Reportedly Used AI to Cheat on Internal AI Training Test and Was Fined A$10,0",
       "date": "2026-03-21",
       "category": "other",
       "severity": "medium"
@@ -2450,9 +2538,9 @@
     }
   ],
   "stats": {
-    "total": 306,
-    "last7Days": 60,
-    "last30Days": 168
+    "total": 317,
+    "last7Days": 75,
+    "last30Days": 182
   },
-  "lastUpdated": "2026-06-19T03:52:59.661561+05:30"
+  "lastUpdated": "2026-06-19T10:49:26.742076+05:30"
 }
