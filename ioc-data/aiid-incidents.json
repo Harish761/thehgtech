@@ -2497,14 +2497,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1427",
-      "incident_id": 1427,
-      "title": "Baltimore Lawsuit Alleged DraftKings and FanDuel Used Machine-Learning-Driven Targeting to Exploit V",
-      "date": "2026-03-22",
-      "category": "other",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1428",
       "incident_id": 1428,
       "title": "UK High Court Found Sky Betting & Gaming Unlawfully Used Automated Profiling and Targeted Marketing ",
@@ -2519,28 +2511,12 @@
       "date": "2026-03-22",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1392",
-      "incident_id": 1392,
-      "title": "Ars Technica Retracted Article After Purportedly AI-Generated Text Was Presented as Direct Quotes Fr",
-      "date": "2026-03-21",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1422",
-      "incident_id": 1422,
-      "title": "Unlabeled Purportedly AI-Generated 'Jessica Foster' Account Reportedly Posed as Pro-Trump Army Servi",
-      "date": "2026-03-21",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 317,
+    "total": 314,
     "last7Days": 81,
     "last30Days": 186
   },
-  "lastUpdated": "2026-06-20T02:47:54.574530+05:30"
+  "lastUpdated": "2026-06-20T10:06:35.759789+05:30"
 }
