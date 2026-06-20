@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 19 2026",
+            "headline": "Klue OAuth Breach Hits Salesforce",
+            "title": "Klue OAuth Breach Allows Theft of Salesforce CRM Data",
+            "content": "Klue, a market intelligence platform, has confirmed a security incident involving the theft of OAuth tokens used to connect to customers' Salesforce environments. The breach was claimed by the \"Icarus\" extortion group, which has been conducting an ongoing extortion campaign. The incident highlights the risks associated with OAuth token security and the importance of implementing robust authentication and authorization mechanisms. Salesforce users should review their OAuth token configurations and monitor their accounts for suspicious activity. The breach affects multiple organizations and underscores the need for enhanced security measures to protect sensitive data. Entities: OAuth, Salesforce, Icarus",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-victim-list-grows-as-icarus-hackers-claim-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "Gentlemen RaaS Targets 400 Security Processes",
+            "title": "The Gentlemen Ransomware-as-a-Service Operation Develops EDR Killers",
+            "content": "The Gentlemen ransomware-as-a-service (RaaS) operation has been actively developing and maintaining a suite of endpoint detection and response (EDR) killers. These tools are designed to impair system defenses before deploying the encryptor, allowing the attackers to evade detection. The EDR killers target over 400 security processes, making them a significant threat to enterprise security. The development of these tools highlights the evolving nature of ransomware attacks and the need for organizations to stay vigilant and implement robust security measures. Entities: The Gentlemen, RaaS, EDR",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/the-gentlemen-raas-uses-gentlekiller.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "3M Driver's Licenses Exposed in Texas Breach",
+            "title": "Texas Government Data Breach Exposes Personal Information of Over 3 Million Individuals",
+            "content": "A data breach at the Texas Parks and Wildlife Department's license system vendor has exposed the personal information of over 3 million individuals. The breach highlights the risks associated with third-party vendors and the importance of implementing robust security measures to protect sensitive data. The exposed information includes driver's licenses, which could be used for identity theft and other malicious activities. Individuals affected by the breach should monitor their accounts and credit reports for suspicious activity. Entities: Texas Parks and Wildlife Department, data breach",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/texas-govt-data-breach-exposes-over-3-million-drivers-licenses/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "AutoJack Attack Hijacks AI Agents",
+            "title": "Microsoft Researchers Discover AutoJack Exploit Chain for Remote Code Execution",
+            "content": "Microsoft researchers have detailed an exploit chain, named AutoJack, that turns an AI browsing agent into a delivery vehicle for remote code execution. The exploit chain allows attackers to execute arbitrary code on a host machine by loading a malicious webpage. The AutoJack attack highlights the risks associated with AI-powered systems and the importance of implementing robust security measures to protect against such attacks. Organizations should review their AI agent configurations and implement measures to prevent similar attacks. Entities: AutoJack, AI, remote code execution",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/autojack-attack-lets-one-web-page.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Windows Clipper Malware Spreads via USB",
+            "title": "Microsoft Discloses Windows-Based Cryptocurrency Clipper Campaign Using USB LNK Worm",
+            "content": "Microsoft has disclosed details of a Windows-based cryptocurrency clipper campaign that has targeted users since February 2026. The campaign uses a clipboard-intercepting malware with self-spreading capabilities, which is spread via USB drives. The malware relies on the Tor anonymity network to hide communication. The campaign highlights the risks associated with USB drives and the importance of implementing robust security measures to protect against such attacks. Users should be cautious when using USB drives and ensure their systems are up-to-date with the latest security patches. Entities: Windows, cryptocurrency clipper, USB LNK worm",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/microsoft-details-windows-clipper.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Klue OAuth Breach Linked to Icarus",
+            "title": "Klue OAuth Breach Enables Icarus Threat Actors to Steal Salesforce CRM Data",
+            "content": "The Klue OAuth breach has been linked to the \"Icarus\" threat actors, who have been conducting an ongoing extortion campaign. The breach allowed the attackers to steal Salesforce CRM data from multiple organizations. The incident highlights the risks associated with OAuth token security and the importance of implementing robust authentication and authorization mechanisms. Salesforce users should review their OAuth token configurations and monitor their accounts for suspicious activity. Entities: Klue, OAuth, Icarus, Salesforce",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icarus-salesforce-data-theft-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "INC Ransomware Claims 830+ Victims",
+            "title": "INC Ransomware-as-a-Service Operation Emerges as Major Threat in 2026",
+            "content": "The INC ransomware-as-a-service (RaaS) operation has emerged as a major threat in 2026, claiming over 830 victims since August 2023. The operation has been actively developing and maintaining its ransomware capabilities, making it a significant threat to enterprise security. The disruption of LockBit and the shutdown of BlackCat created opportunities for INC to expand its operations. Organizations should be aware of the risks associated with INC ransomware and implement robust security measures to protect against such attacks. Entities: INC, RaaS, LockBit, BlackCat",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/inc-ransomware-claims-830-victims-since.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "15,000 SocGholish-Infected Sites Cleaned",
+            "title": "International Law Enforcement Agencies Clean Nearly 15,000 SocGholish-Infected Websites",
+            "content": "International law enforcement agencies have cleaned nearly 15,000 malware-infected WordPress websites and taken down over 100 servers linked to the SocGholish botnet and the Evil Corp Russian cybercrime group. The operation highlights the importance of collaboration between law enforcement agencies and the private sector in combating cybercrime. The SocGholish botnet has been used for various malicious activities, including ransomware attacks and data theft. Entities: SocGholish, Evil Corp, WordPress",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/law-enforcement-nukes-socgholish-malware-from-nearly-15-000-sites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "Gentlemen RaaS Gets Advanced EDR Killers",
+            "title": "The Gentlemen Ransomware-as-a-Service Operation Develops Advanced EDR Killer Tools",
+            "content": "The Gentlemen ransomware-as-a-service (RaaS) operation has given its affiliates access to advanced tools capable of disabling many enterprise endpoint detection and response (EDR) products. The tools are designed to impair system defenses before deploying the encryptor, allowing the attackers to evade detection. The development of these tools highlights the evolving nature of ransomware attacks and the need for organizations to stay vigilant and implement robust security measures. Entities: The Gentlemen, RaaS, EDR",
+            "source": "The Hacker News",
+            "sourceUrl": "https://www.csoonline.com/article/4187329/threat-actor-adds-advanced-edr-killer-tools-to-ransomware-as-a-service-platform.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "Gravity SMTP Plugin Exploited",
+            "title": "Threat Actors Exploit Unauthenticated Information Disclosure Vulnerability in Gravity SMTP WordPress Plugin",
+            "content": "Threat actors are exploiting an unauthenticated information disclosure vulnerability in the Gravity SMTP WordPress plugin, which is active on over 100,000 sites. The vulnerability allows attackers to access sensitive information, including email addresses and passwords. Users of the plugin should update to the latest version to prevent exploitation. The incident highlights the importance of keeping software up-to-date and implementing robust security measures to protect against such attacks. Entities: Gravity SMTP, WordPress, information disclosure vulnerability",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-info-disclosure-bug-in-gravity-smtp-wordpress-plugin/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
             "headline": "15,000 WordPress Sites Cleaned",
             "title": "Operation Endgame Disrupts SocGholish Servers and Cleans Infected WordPress Sites",
             "content": "Dutch law enforcement authorities, along with counterparts from Canada, Germany, and the U.S., have disrupted malicious infrastructure associated with SocGholish and cleaned up nearly 15,000 infected WordPress websites. The operation, known as Operation Endgame, targeted SocGholish command and control servers and domains, effectively depriving cybercriminals of access to infected computer systems. This operation highlights the importance of international cooperation in combating cybercrime. The affected WordPress sites have been cleaned, and site owners are advised to take additional security measures to prevent future infections. The SocGholish malware has been used in various cyberattacks, including phishing and malware distribution. Entities: SocGholish, WordPress, Operation Endgame",
@@ -92,106 +182,97 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/from-assistive-to-agentic-ai-shift.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "3-Day Patch Deadline for Splunk Flaw",
-            "title": "Splunk Enterprise Vulnerability Exploited in Attacks Days After Disclosure",
-            "content": "CISA has given federal agencies a three-day deadline to patch CVE-2026-20253, a vulnerability in Splunk Enterprise that can be exploited for unauthenticated remote code execution. The flaw was disclosed recently, and attacks have already been reported. Splunk Enterprise users should update their systems immediately to prevent potential exploitation. The vulnerability affects all versions of Splunk Enterprise prior to the latest patch. This incident highlights the importance of prompt patching in preventing cyber attacks. Users can update through Splunk's built-in updater or download the latest version. Entities: CVE-2026-20253, Splunk Enterprise, CISA",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/splunk-enterprise-vulnerability-exploited-in-attacks-days-after-disclosure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Gentlemen Ransomware Evades Detection",
-            "title": "Gentlemen Ransomware Uses Multiple EDR Killers to Disable Defenses",
-            "content": "The Gentlemen ransomware-as-a-service (RaaS) is actively developing and maintaining a suite of endpoint detection and response (EDR) killers to help affiliates evade detection in attacks. This ransomware is designed to disable EDR systems, making it difficult for security teams to detect and respond to attacks. The Gentlemen RaaS is a significant threat to organizations, as it can lead to data breaches and financial losses. Security teams should be aware of this ransomware and take steps to prevent and detect it. Entities: Gentlemen ransomware, EDR killers, RaaS",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/gentlemen-ransomware-uses-multiple-edr-killers-to-disable-defenses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Popa Botnet Linked to Israeli Firm",
-            "title": "‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm",
-            "content": "A sprawling Android-based botnet called Popa has been linked to a publicly-traded Israeli firm. The botnet has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. The Popa botnet is a significant threat to consumer devices and organizations, as it can lead to data breaches and financial losses. Security teams should be aware of this botnet and take steps to prevent and detect it. The botnet's link to an Israeli firm highlights the importance of transparency in the cybersecurity industry. Entities: Popa botnet, Android, Israeli firm",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "F5 Patches NGINX Flaws",
-            "title": "F5 Patches Two Critical NGINX Open Source Flaws Enabling Remote Code Execution",
-            "content": "F5 has released security updates to address two critical security flaws in NGINX Open Source that could be exploited to achieve code execution on affected systems. The vulnerabilities, tracked as CVE-2026-42530 and another unidentified flaw, affect all versions of NGINX Open Source prior to the latest patch. NGINX users should update their systems immediately to prevent potential exploitation. The vulnerabilities can be exploited remotely, making them a significant threat to organizations. Entities: CVE-2026-42530, NGINX Open Source, F5",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "Top 10 Attack Surface Exposures",
-            "title": "The Top 10 Attack Surface Exposures in 2026",
-            "content": "A recent report has identified the top 10 attack surface exposures in 2026. The report highlights the importance of securing admin panels, credentials, and other potential entry points for attackers. The top exposures include unsecured admin panels, reused credentials, and unpatched vulnerabilities. Organizations should prioritize securing these exposures to prevent cyber attacks. The report also highlights the importance of regular security audits and penetration testing. Entities: attack surface exposures, admin panels, credentials",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/the-top-10-attack-surface-exposures-in.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "145 Mastra npm Packages Compromised",
-            "title": "145 Mastra npm Packages Compromised via Hijacked Contributor Account",
-            "content": "As many as 145 npm packages associated with the Mastra namespace have been compromised as part of a software supply chain attack. The attack occurred when a contributor's account was hijacked, allowing attackers to push malicious updates to the packages. The compromised packages are used in artificial intelligence (AI) applications, making them a significant threat to organizations. Developers should check their dependencies and update to the latest versions to prevent potential exploitation. Entities: Mastra npm packages, software supply chain attack, AI applications",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "CISA Warns of Joomla JCE Flaw",
-            "title": "CISA Warns of Actively Exploited Joomla JCE Flaw Allowing PHP Code Execution",
-            "content": "CISA has warned of an actively exploited security flaw in the Widget Factory Joomla Content Editor (JCE) that allows PHP code execution. The vulnerability, tracked as CVE-2026, affects all versions of JCE prior to the latest patch. Joomla users should update their systems immediately to prevent potential exploitation. The flaw can be exploited remotely, making it a significant threat to organizations. Entities: CVE-2026, Joomla JCE, CISA",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisa-warns-of-actively-exploited-joomla.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Oracle Releases 245 Security Patches",
-            "title": "Oracle Releases 245 New Security Patches, All Rated ‘High-Priority Security’",
-            "content": "Oracle has released 245 new security patches as part of its Critical Security Patch update (CSPU). The patches address security flaws in various Oracle products, including some that impact multiple products. The patches are rated as high-priority security, highlighting the importance of prompt patching in preventing cyber attacks. Oracle users should update their systems immediately to prevent potential exploitation. The patches are available for supported on-premises software. Entities: Oracle, Critical Security Patch update, high-priority security",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4186983/oracle-releases-245-new-security-patches-all-rated-high-priority-security.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "FIFA Bug Exposes World Cup Streams",
-            "title": "FIFA Bug Exposes World Cup Streams to Remote Takeover",
-            "content": "A bug in FIFA's Entra access controls has exposed World Cup streams to remote takeover. The bug allows attackers to take control of the streams, potentially leading to data breaches and financial losses. FIFA should patch the bug immediately to prevent potential exploitation. The incident highlights the importance of securing access controls in preventing cyber attacks. Entities: FIFA, Entra access controls, World Cup streams",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/fifa-bug-world-cup-streams-remote-takeover",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Nintendo Data Stolen in Cyberattack",
-            "title": "Nintendo Confirms Data Stolen in WebMD Subsidiary Cyberattack",
-            "content": "Nintendo has confirmed that data was stolen in a cyberattack on a WebMD subsidiary. The attack occurred when threat actors stole survey data from the third-party TinyPulse service used internally by Nintendo. The incident highlights the importance of securing third-party services in preventing cyber attacks. Nintendo users should be aware of the potential risks and take steps to protect their data. Entities: Nintendo, WebMD subsidiary, TinyPulse service",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/nintendo-confirms-data-stolen-in-webmd-subsidiary-cyberattack/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
+            "date": "Jun 19 2026",
+            "headline": "US Bans Anthropic's Fable 5",
+            "title": "US Government Forces Anthropic to Pull Fable 5 and Mythos 5 Models",
+            "content": "The US government has forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns. This decision comes after Amazon researchers allegedly found a way to bypass Fable 5's guardrails. Cybersecurity researchers have since signed an open letter calling for more transparency and regulation in the development of AI models. The ban may inadvertently help Anthropic's brand by generating more interest in its models. The incident highlights the need for more effective regulation of AI development. Readers should be aware of the potential risks and benefits of AI models and the importance of transparency in their development. Entities: Fable 5, Mythos 5, Anthropic, Amazon",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "Fable 5 Release Banned",
+            "title": "US Government's Ban on Anthropic's Fable 5 and Mythos 5 Models",
+            "content": "The US government's ban on Anthropic's Fable 5 and Mythos 5 models has sparked a debate about the effectiveness of export controls on AI technology. The ban was imposed after Amazon researchers found a way to bypass Fable 5's guardrails, citing national security concerns. Despite the ban, interest in Anthropic's models has increased, with some seeing it as a marketing opportunity. The incident highlights the need for more effective regulation of AI development and export controls. Readers should be aware of the potential risks and benefits of AI models and the importance of transparency in their development. Entities: Fable 5, Mythos 5, Anthropic, Amazon",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 17 2026",
-            "headline": "63% of Americans Think AI Advances Too Fast",
-            "title": "Americans' Perception of AI Advancement and Usage",
-            "content": "A recent Pew Research poll reveals that 63% of Americans believe AI is advancing too quickly, while 49% report using chatbots at least occasionally. The use of AI chatbots has increased significantly since 2024, when only 33% reported using them. This shift in usage and perception may be attributed to the growing presence of AI in daily life, such as the rise of ChatGPT. The poll highlights the need for responsible AI development and regulation to address public concerns. As AI continues to evolve, it is essential for developers and policymakers to consider the social and ethical implications of AI advancement. The increasing use of AI chatbots also raises questions about data privacy and security. Entities: ChatGPT, AI chatbots",
+            "headline": "Agentic Resource Discovery",
+            "title": "Introducing Agentic Resource Discovery for Improved AI Agent Performance",
+            "content": "Hugging Face has introduced Agentic Resource Discovery, a new feature that allows AI agents to search for resources more efficiently. This feature enables agents to discover and utilize resources in a more autonomous manner, improving their overall performance. The development of Agentic Resource Discovery highlights the advancements being made in AI research and development. Readers should be aware of the potential benefits and applications of this technology. Entities: Agentic Resource Discovery, Hugging Face, AI agents",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "7,000 Langflow Servers Attacked",
+            "title": "Langflow, LangGraph, and LangChain Servers Vulnerable to Attacks",
+            "content": "Over 7,000 Langflow servers have been attacked due to vulnerabilities in the framework, allowing attackers to gain access to sensitive information such as OpenAI keys, database credentials, and CRM tokens. The same vulnerabilities have been found in LangGraph and LangChain, highlighting the need for improved security measures in AI frameworks. Readers should be aware of the potential risks and take steps to secure their servers. Entities: Langflow, LangGraph, LangChain, OpenAI",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "Export Controls Ineffective",
+            "title": "History of Export Controls on Cybersecurity Software and AI Models",
+            "content": "The US government's ban on Anthropic's Fable 5 and Mythos 5 models has raised questions about the effectiveness of export controls on AI technology. A review of the history of export controls on cybersecurity software and AI models reveals that such controls have been largely ineffective in preventing the spread of technology. The incident highlights the need for more effective regulation of AI development and export controls. Readers should be aware of the potential risks and benefits of AI models and the importance of transparency in their development. Entities: Fable 5, Mythos 5, Anthropic, export controls",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Amazon Employees Face Termination",
+            "title": "Amazon Employees Accuse Company of Retaliation for Testifying on Data Center Limits",
+            "content": "Amazon employees who testified on data center limits at Seattle City Council hearings are facing termination, according to accusations made by the employees. The employees claim that Amazon is retaliating against them for exercising their right to free speech. The incident highlights the need for companies to respect the rights of their employees and to prioritize transparency and accountability. Readers should be aware of the potential risks and consequences of speaking out on important issues. Entities: Amazon, data center limits, employee retaliation",
             "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/952180/amazon-seattle-data-center-moratorium-aecj-disciplinary-action",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Who Decides AI Danger",
+            "title": "The Challenge of Determining When AI is Too Dangerous",
+            "content": "The development of AI models has raised questions about who decides when AI is too dangerous. The incident involving Anthropic's Fable 5 and Mythos 5 models has highlighted the need for more effective regulation of AI development and export controls. Readers should be aware of the potential risks and benefits of AI models and the importance of transparency in their development. Entities: AI, Fable 5, Mythos 5, Anthropic",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/951542/anthropic-claude-fable-5-mythos-ban-pentagon-ai-regulation-trump",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Adobe Introduces AI Assistants",
+            "title": "Adobe Rolls Out AI Assistants for Creative Cloud Suite",
+            "content": "Adobe has introduced AI assistants for its Creative Cloud suite, including Photoshop, Premiere, and Illustrator. The AI assistants are designed to help users with tasks such as editing and design. The development of AI assistants highlights the advancements being made in AI research and development. Readers should be aware of the potential benefits and applications of this technology. Entities: Adobe, Creative Cloud, AI assistants, Photoshop, Premiere, Illustrator",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "AI Helps Diagnose Rare Diseases",
+            "title": "Researchers Use OpenAI Model to Help Diagnose Rare Genetic Diseases",
+            "content": "Researchers have used an OpenAI reasoning model to help diagnose rare genetic diseases affecting children. The model was able to identify 18 new diagnoses in previously unsolved cases. The development of AI models for medical diagnosis highlights the potential benefits and applications of this technology. Readers should be aware of the potential risks and benefits of AI models in medical diagnosis. Entities: OpenAI, rare genetic diseases, medical diagnosis",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/diagnose-rare-childhood-diseases",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "Beyond LoRA",
+            "title": "Exploring Alternatives to LoRA Fine-Tuning Technique",
+            "content": "Researchers are exploring alternatives to the LoRA fine-tuning technique, which is currently the most popular method for fine-tuning AI models. The development of new fine-tuning techniques highlights the advancements being made in AI research and development. Readers should be aware of the potential benefits and applications of this technology. Entities: LoRA, fine-tuning, AI models, Hugging Face",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/peft-beyond-lora",
             "relatedResources": []
         },
         {
@@ -240,15 +321,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 17 2026",
-            "headline": "Anthropic Overhauls Claude Design",
-            "title": "Anthropic Releases Major Update to Claude Design",
-            "content": "Anthropic has released a significant update to Claude Design, addressing the token-burning problem and introducing design system imports and code round-trips. The update aims to improve the overall user experience and efficiency of the design tool. Claude Design, which gained over one million users in its first week, has been refined to better meet the needs of its users. The update demonstrates Anthropic's commitment to continuously improving its products and addressing user concerns. As AI design tools continue to evolve, it is essential for developers to prioritize user feedback and iterate on their products. Entities: Anthropic, Claude Design, AI design tool",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 18 2026",
             "headline": "Adobe Unveils AI-Powered Design Studio",
             "title": "Adobe Introduces Reimagined AI Studio with Firefly",
@@ -291,78 +363,6 @@ const websiteContent = {
             "content": "Anthropic has announced a new feature for users of Claude Code on the Claude Team and Enterprise subscription plans: Artifacts. This update turns a Claude Code session's work into a live, interactive, and shareable custom HTML webpage. The Artifacts feature allows Claude Code users to plug in links and create custom dashboards. This move is expected to enhance collaboration and productivity for developers using Claude Code. With Artifacts, Anthropic aims to provide its customers with more advanced tools for software development and testing. The introduction of Artifacts is a significant development for Anthropic, which has been expanding its portfolio of AI-powered tools.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "AI Tools Break with No Trust Boundary",
-            "title": "Enterprise AI Tools Vulnerable to External Input with No Trust Boundary",
-            "content": "Two AI tools have been found to be vulnerable to external input with no trust boundary, allowing for potential exfiltration of sensitive data. On June 15, Varonis disclosed SearchLeak (CVE-2026-42824), a proof-of-concept exfiltration attack that exploits this vulnerability. The pattern underlying every disclosure is one sentence: enterprise AI accepts external input with no trust boundary. This vulnerability affects various AI tools, including Copilot and LiteLLM. Users of these tools should be aware of the potential risks and take necessary precautions to secure their data. The vulnerability is a significant concern for enterprises that rely on AI tools for their operations.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/copilot-searched-your-mailbox-litellm-handed-out-admin",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Barret Zoph Leaves OpenAI",
-            "title": "Barret Zoph Departs OpenAI After Five Months",
-            "content": "Barret Zoph, the head of enterprise AI sales at OpenAI, has departed the company after just five months. Zoph returned to OpenAI in mid-January after a stint as co-founder and CTO of Thinking Machines Lab, a competing AI company founded by former OpenAI CTO Mira Murati. Zoph's departure is a significant development for OpenAI, which has been expanding its enterprise AI sales efforts. The reason for Zoph's departure is not clear, but it is expected to have an impact on OpenAI's enterprise AI sales strategy. OpenAI has been facing increasing competition in the AI market, and Zoph's departure may affect its ability to compete.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Baseten Raises $1.5B",
-            "title": "AI Inference Startup Baseten Raises $1.5 Billion in Funding",
-            "content": "Baseten, an AI inference startup, is reportedly raising $1.5 billion in funding at a $13 billion valuation. This funding round is a significant development for Baseten, which has been expanding its AI inference capabilities. The \"inference gold rush\" has led to increased investment in AI inference startups, and Baseten is one of the beneficiaries. With this funding, Baseten aims to further enhance its AI inference capabilities and expand its customer base. The funding round is a testament to the growing demand for AI inference solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Snap Spins Off Dotmo",
-            "title": "Snap Spins Off AI Video Team into New Company, Dotmo",
-            "content": "Snap, the maker of Snapchat, is spinning off its AI video team into a new company called Dotmo. Dotmo will be composed of current Snap staff who are leaving the social media company to focus on AI video development. This move is a significant development for Snap, which has been expanding its AI capabilities. With the spin-off, Snap aims to provide its customers with more advanced AI-powered video solutions. The creation of Dotmo is a strategic move to strengthen Snap's position in the AI video market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "OpenAI Bulks Up Before IPO",
-            "title": "OpenAI Enhances Team with Key Hires Before IPO",
-            "content": "OpenAI is bulking up its team with key hires, including Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball. These hires are significant developments for OpenAI, which is preparing for its initial public offering (IPO). With these hires, OpenAI aims to enhance its capabilities in AI research and development. The addition of Shazeer and Ball is expected to strengthen OpenAI's position in the AI market. OpenAI's IPO is highly anticipated, and these hires are seen as a strategic move to enhance its chances of success.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "47% of Singles Negative on AI",
-            "title": "Almost Half of US Singles Feel Negatively About AI in Dating",
-            "content": "A recent survey has found that almost half of US singles feel negatively about the use of AI in dating. About 47% of singles look negatively at the use of AI in dating, but many dating app users are open to AI helping with profile punch-ups and conversation starters. This survey is a significant development for the dating app industry, which has been expanding its use of AI. The negative sentiment towards AI in dating is a concern for dating app companies, which must balance the use of AI with user concerns.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Amazon Sells AI Chips",
-            "title": "Amazon to Sell Its AI Chips to Other Data Centers",
-            "content": "Amazon is in talks to sell its AI chips to other data centers, a move that could potentially challenge Nvidia's dominance in the AI chip market. AWS is exploring the possibility of selling its chips to other data centers, which could provide a significant revenue stream for the company. Amazon CEO Andy Jassy has said that this represents a $50 billion opportunity for the company. With this move, Amazon aims to expand its presence in the AI chip market and provide its customers with more advanced AI-powered solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "AI Data Centers Get Fast Lane",
-            "title": "AI Data Centers Get Priority Access to Grid with New FERC Rule",
-            "content": "The Federal Energy Regulatory Commission (FERC) has told grid operators to give data centers a fast lane for interconnections, a move that could benefit AI data centers. This new rule is a significant development for AI data centers, which require high amounts of power to operate. With priority access to the grid, AI data centers can ensure a stable and reliable power supply, which is critical for their operations. However, the rule fails to address electricity supply shortages, which could still pose a challenge for AI data centers.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
             "relatedResources": []
         }
     ],
