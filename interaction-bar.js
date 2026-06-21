@@ -271,19 +271,9 @@ function injectNewsletterForm() {
                 <i class="fas fa-envelope-open-text" style="color: var(--accent-cyan);"></i> The Daily Intel
             </div>
             <div class="hg-newsletter-desc">Get the latest cyber threats, zero-days, and AI security analysis delivered straight to your inbox. No spam, ever.</div>
+            
             <div class="sib-form">
                 <div id="sib-form-container" class="sib-form-container">
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" sandbox="allow-same-origin" onload="if(this.dataset.submitted){document.getElementById('success-message').style.display='block';}"></iframe>
-                    <form id="sib-form" method="POST" action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A==" target="hidden_iframe" onsubmit="document.getElementById('hidden_iframe').dataset.submitted='true';">
-                        <div class="hg-form-row">
-                            <input class="hg-newsletter-input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." required />
-                            <button class="hg-newsletter-btn" type="submit">SUBSCRIBE</button>
-                        </div>
-                        <div class="g-recaptcha" data-sitekey="6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0" data-theme="dark" style="margin-top: 1rem; display: flex; justify-content: center;"></div>
-                        <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
-                        <input type="hidden" name="locale" value="en">
-                    </form>
-                    <script src="https://www.google.com/recaptcha/api.js?hl=en" async defer></script>
                     <div id="error-message" class="sib-form-message-panel">
                         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
                             <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
@@ -294,6 +284,30 @@ function injectNewsletterForm() {
                             <span class="sib-form-message-panel__inner-text">Your subscription has been successful. Please check your email to confirm!</span>
                         </div>
                     </div>
+
+                    <form id="sib-form" method="POST" action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A==" data-type="subscription">
+                        <div class="sib-input sib-form-block">
+                            <div class="form__entry entry_block hg-form-row">
+                                <div class="entry__field" style="flex:1;">
+                                    <input class="input hg-newsletter-input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." data-required="true" required />
+                                </div>
+                                <button class="sib-form-block__button sib-form-block__button-with-loader hg-newsletter-btn" form="sib-form" type="submit">SUBSCRIBE</button>
+                            </div>
+                            <label class="entry__error entry__error--primary" style="color: #ff4949; display:block; margin-top:0.5rem;"></label>
+                        </div>
+
+                        <div class="sib-captcha sib-form-block" style="margin-top: 1rem; display: flex; justify-content: center;">
+                            <div class="form__entry entry_block">
+                                <div class="form__label-row">
+                                    <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0" data-theme="dark"></div>
+                                </div>
+                                <label class="entry__error entry__error--primary" style="color: #ff4949; display:block; margin-top:0.5rem;"></label>
+                            </div>
+                        </div>
+
+                        <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
+                        <input type="hidden" name="locale" value="en">
+                    </form>
                 </div>
             </div>
         </div>
@@ -301,5 +315,33 @@ function injectNewsletterForm() {
 
     // Insert right before interaction bar
     interactionBar.parentNode.insertBefore(wrapper, interactionBar);
+
+    // Inject scripts to execute correctly since innerHTML won't execute them
+    if (!window.LOCALE) {
+        window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+        window.LOCALE = 'en';
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid.";
+        window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+        window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
+        window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
+        var AUTOHIDE = Boolean(0);
+    }
+    
+    if (!document.querySelector('script[src*="sibforms.com"]')) {
+        const sibScript = document.createElement('script');
+        sibScript.src = "https://sibforms.com/forms/end-form/build/main.js";
+        document.body.appendChild(sibScript);
+    }
+    if (!document.querySelector('script[src*="recaptcha"]')) {
+        window.handleCaptchaResponse = function() {
+            var event = new Event('captchaChange');
+            var cap = document.getElementById('sib-captcha');
+            if (cap) cap.dispatchEvent(event);
+        };
+        const recaptchaScript = document.createElement('script');
+        recaptchaScript.src = "https://www.google.com/recaptcha/api.js?hl=en";
+        document.body.appendChild(recaptchaScript);
+    }
+
 }
 
