@@ -59,7 +59,7 @@
     </script>
 
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/print.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
@@ -512,10 +512,10 @@
         }
     </style>
 
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
-    <script src="/m-app.js?v=20260528_coffee" defer></script>
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
 
     <!-- ========== STRUCTURED DATA - BREADCRUMB ========== -->
     <script type="application/ld+json">
@@ -1312,6 +1312,39 @@ process.command_line contains "http"</code></pre>
                 <p><strong>Published:</strong> January 2, 2026</p>
                 <p><strong>Last Updated:</strong> January 2, 2026</p>
             </div>
+        
+            <!-- ========== RELATED ARTICLES ========== -->
+            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    
+                    <a href="/articles/anthropic-project-glasswing-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Project Glasswing: Anthropic's Defensive AI</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How autonomous agents are transforming incident response.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/axios-supply-chain-attack-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Supply Chain</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Axios npm Package Compromise</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Inside the 2026 supply chain attack affecting millions of builds.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Zero-Day</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">FortiClient EMS Critical Vulnerability</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">CVE-2026-35616 analysis and immediate mitigation steps.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
         </article>
 
         <!-- Interaction Bar -->
@@ -1335,7 +1368,7 @@ process.command_line contains "http"</code></pre>
         <p>&copy; 2026 TheHGTech. All rights reserved.</p>
     </footer>
 
-    <script src="/interaction-bar.js?v=20260605"></script>
+    <script src="/interaction-bar.min.js?v=20260605"></script>
 <script src="../ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>

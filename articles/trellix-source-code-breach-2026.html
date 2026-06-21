@@ -12,7 +12,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Trellix Source Code Breach: What Actually Happened & Why It Matters">
     <meta name="twitter:description" content="Trellix disclosed unauthorized access to its internal source code repository. Discover what happened, the implications for supply chain security, and why read-only access still matters.">
-    <meta name="twitter:image" content="https://thehgtech.com/images/articles/trellix-breach-hero.png">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/trellix-breach-hero.webp">
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="TheHGTech">
@@ -29,7 +29,7 @@
     <meta property="og:title" content="Trellix Source Code Breach: What Actually Happened & Why It Matters">
     <meta property="og:description"
         content="Trellix disclosed unauthorized access to its internal source code repository. Discover what happened, the implications for supply chain security, and why read-only access still matters.">
-    <meta property="og:image" content="https://thehgtech.com/images/articles/trellix-breach-hero.png">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/trellix-breach-hero.webp">
 
     <link rel="canonical" href="https://thehgtech.com/articles/trellix-source-code-breach-2026.html">
 
@@ -40,7 +40,7 @@
       "@type": "Article",
       "headline": "Trellix Source Code Breach: What We Know & The Supply Chain Risk",
       "image": [
-        "https://thehgtech.com/images/articles/trellix-breach-hero.png"
+        "https://thehgtech.com/images/articles/trellix-breach-hero.webp"
        ],
       "datePublished": "2026-05-05T12:00:00+00:00",
       "dateModified": "2026-05-05T12:00:00+00:00",
@@ -72,16 +72,16 @@
 
     <!-- Style System -->
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/theme-toggle.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
 
-    <script src="/m-app.js?v=20260528_coffee" defer></script>
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
     <script src="/theme-toggle.js" defer></script>
 
     <!-- ========== GLOBAL THEME SCRIPT ========== -->
@@ -492,7 +492,7 @@
 
                 <h1 class="article-title">Trellix Source Code Breach: What Actually Happened & Why It Matters</h1>
                 
-                <img src="/images/articles/trellix-breach-hero.png" alt="Trellix Source Code Breach Visualization" class="featured-image">
+                <img src="/images/articles/trellix-breach-hero.webp" alt="Trellix Source Code Breach Visualization" class="featured-image">
             </header>
 
             <div class="article-content">
@@ -533,7 +533,7 @@
                 
                 <p>When an Advanced Persistent Threat (APT) targets a software vendor, their ultimate goal is usually to poison the CI/CD pipeline—injecting malicious code that gets digitally signed and distributed to thousands of downstream customers. This requires <em>Write</em> access to the repository, or lateral movement into the build servers themselves.</p>
 
-                <img src="/images/articles/trellix-cicd-risk.png" alt="CI/CD Read vs Write Access Path" class="article-image" loading="lazy">
+                <img src="/images/articles/trellix-cicd-risk.webp" alt="CI/CD Read vs Write Access Path" class="article-image" loading="lazy">
                 
                 <p>Because the attackers in the Trellix incident only obtained access to <em>view</em> or <em>exfiltrate</em> a portion of the code, the supply chain remains intact. Security mechanisms like code signing, multi-party code review, and immutable build pipelines effectively compartmentalized the blast radius.</p>
 
@@ -542,7 +542,7 @@
                 
                 <p>For an APT or a sophisticated vulnerability researcher, stealing this source code provides a masterclass in how top-tier EDRs (Endpoint Detection and Response) detect malware. By reverse-engineering the detection logic, threat actors can map out exact "blind spots" in the Trellix engine and craft bespoke malware designed to evade those specific heuristic checks.</p>
 
-                <img src="/images/articles/apt-infrastructure-breach.png" alt="APT Infrastructure Breach Concept" class="article-image" loading="lazy">
+                <img src="/images/articles/apt-infrastructure-breach.webp" alt="APT Infrastructure Breach Concept" class="article-image" loading="lazy">
 
                 <div class="warning-box">
                     <strong><i class="fas fa-exclamation-triangle"></i> THE REAL THREAT: EVASION, NOT POISONING</strong>
@@ -591,7 +591,40 @@
     <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How did the attackers breach a cybersecurity company?</h3>
     <p style="margin-bottom: 1.5rem;">The breach occurred due to human error—a developer fell victim to a sophisticated social engineering attack, highlighting that even security companies are vulnerable to human factors.</p>
 </div>
-\n</article>
+\n
+            <!-- ========== RELATED ARTICLES ========== -->
+            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    
+                    <a href="/articles/anthropic-project-glasswing-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Project Glasswing: Anthropic's Defensive AI</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How autonomous agents are transforming incident response.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/axios-supply-chain-attack-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Supply Chain</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Axios npm Package Compromise</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Inside the 2026 supply chain attack affecting millions of builds.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Zero-Day</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">FortiClient EMS Critical Vulnerability</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">CVE-2026-35616 analysis and immediate mitigation steps.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </article>
 
         <!-- Interaction Bar -->
         <div class="interaction-bar">
@@ -616,7 +649,7 @@
         <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
     </footer>
 
-    <script src="/interaction-bar.js?v=20260605"></script>
+    <script src="/interaction-bar.min.js?v=20260605"></script>
     <script src="../ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>

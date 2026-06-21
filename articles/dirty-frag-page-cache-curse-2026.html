@@ -7,7 +7,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]">
     <meta name="twitter:description" content="From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.">
-    <meta name="twitter:image" content="https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.png">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.webp">
     <meta property="og:site_name" content="TheHGTech">
     <meta name="title" content="The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]">
     <meta name="description" content="From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.">
@@ -17,14 +17,14 @@
     <meta property="og:url" content="https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html">
     <meta property="og:title" content="The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]">
     <meta property="og:description" content="From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.">
-    <meta property="og:image" content="https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.png">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.webp">
     <link rel="canonical" href="https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]",
-      "image": ["https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.png"],
+      "image": ["https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.webp"],
       "datePublished": "2026-05-10T12:00:00+00:00",
       "dateModified": "2026-05-10T12:00:00+00:00",
       "author": [{"@type": "Person", "name": "Harish G", "url": "https://www.linkedin.com/in/harish-g-03704815a/"}],
@@ -37,16 +37,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/theme-toggle.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
     <link rel="stylesheet" href="/mobile-nav.css">
-    <script src="/m-app.js?v=20260528_coffee" defer></script>
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
     <script src="/theme-toggle.js" defer></script>
     <script>
         (function() {
@@ -316,7 +316,7 @@
                 <h1>The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class</h1>
             </header>
 
-            <img src="/images/articles/dirty-frag-page-cache-curse-2026.png" alt="The Page Cache Curse - Dirty Frag Linux Kernel Vulnerability" class="featured-image">
+            <img loading="lazy" src="/images/articles/dirty-frag-page-cache-curse-2026.webp" alt="The Page Cache Curse - Dirty Frag Linux Kernel Vulnerability" class="featured-image">
 
             <div class="article-content">
 
@@ -619,6 +619,39 @@ auditctl -a always,exit -F arch=b64 -S socket -F a0=33 -k rxrpc_socket</code></p
                 <p><strong>Published:</strong> May 10, 2026</p>
                 <p><strong>Last Updated:</strong> May 10, 2026</p>
             </div>
+        
+            <!-- ========== RELATED ARTICLES ========== -->
+            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    
+                    <a href="/articles/anthropic-project-glasswing-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Project Glasswing: Anthropic's Defensive AI</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How autonomous agents are transforming incident response.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/axios-supply-chain-attack-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Supply Chain</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Axios npm Package Compromise</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Inside the 2026 supply chain attack affecting millions of builds.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Zero-Day</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">FortiClient EMS Critical Vulnerability</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">CVE-2026-35616 analysis and immediate mitigation steps.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
         </article>
 
         <div class="interaction-bar">
@@ -643,7 +676,7 @@ auditctl -a always,exit -F arch=b64 -S socket -F a0=33 -k rxrpc_socket</code></p
         <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
     </footer>
 
-    <script src="/interaction-bar.js?v=20260605"></script>
+    <script src="/interaction-bar.min.js?v=20260605"></script>
     <script src="../ui-enhancements.js?v=20260517" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>

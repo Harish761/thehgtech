@@ -70,15 +70,15 @@
 
     <!-- Style System -->
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
 
-    <script src="/m-app.js?v=20260528_coffee" defer></script>
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
 
     <!-- ========== GLOBAL THEME SCRIPT ========== -->
     <script>
@@ -562,7 +562,7 @@
                 <h1 class="article-title">Meta Deprecates Optional E2EE in Instagram DMs: Low Adoption Cited, Privacy Concerns Remain</h1>
                 <p class="article-excerpt">Meta has announced the retirement of the optional "Secret Conversations" (Signal Protocol) feature for Instagram DMs by May 2026. While the company cites low adoption of the opt-in feature, privacy advocates view the move as a significant step back for zero-knowledge communications on the platform.</p>
 
-                <img src="/images/articles/instagram-e2ee-rollback-2026.png" alt="Instagram E2EE Rollback Analysis" class="featured-image">
+                <img loading="lazy" src="/images/articles/instagram-e2ee-rollback-2026.png" alt="Instagram E2EE Rollback Analysis" class="featured-image">
             </header>
 
             <div class="article-content">
@@ -673,7 +673,40 @@ async function sendDM(recipientId, plaintext) {
     <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">Can I turn E2EE back on?</h3>
     <p style="margin-bottom: 1.5rem;">Yes, users can manually opt-in to 'Secret Conversations' for specific chats, but it is no longer the default setting for all direct messages.</p>
 </div>
-\n</article>
+\n
+            <!-- ========== RELATED ARTICLES ========== -->
+            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    
+                    <a href="/articles/anthropic-project-glasswing-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Project Glasswing: Anthropic's Defensive AI</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How autonomous agents are transforming incident response.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/axios-supply-chain-attack-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Supply Chain</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Axios npm Package Compromise</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Inside the 2026 supply chain attack affecting millions of builds.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Zero-Day</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">FortiClient EMS Critical Vulnerability</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">CVE-2026-35616 analysis and immediate mitigation steps.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </article>
 
         <!-- Interaction Bar -->
         <div class="interaction-bar">
@@ -698,7 +731,7 @@ async function sendDM(recipientId, plaintext) {
         <p style="text-align: center; color: var(--text-muted); padding: 5rem 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
     </footer>
 
-    <script src="/interaction-bar.js?v=20260605"></script>
+    <script src="/interaction-bar.min.js?v=20260605"></script>
     <script src="/ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>

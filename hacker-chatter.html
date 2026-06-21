@@ -53,18 +53,18 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="header-dropdown.css?v=1">
+    <link rel="stylesheet" href="header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="light-mode.css">
     <link rel="stylesheet" href="theme-toggle.css">
     
     <!-- Using CVE's grid css for similarity -->
-    <link rel="stylesheet" href="cve-display.css"> 
+    <link rel="stylesheet" href="cve-display.min.css"> 
 
     <!-- Mobile Optimization -->
-    <link rel="stylesheet" href="m-core.css?v=4.1">
-    <link rel="stylesheet" href="m-layout.css?v=3.4">
-    <link rel="stylesheet" href="m-components.css?v=3.0">
-    <script src="m-app.js?v=20260528_coffee" defer></script>
+    <link rel="stylesheet" href="m-core.min.css?v=4.1">
+    <link rel="stylesheet" href="m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="m-components.min.css?v=3.0">
+    <script src="m-app.min.js?v=20260528_coffee" defer></script>
     <script src="theme-toggle.js" defer></script>
     <link rel="stylesheet" href="ui-enhancements.css?v=3.5_newsletter">
     <script src="ui-enhancements.js?v=20260517.0" defer></script>
@@ -696,7 +696,7 @@
                 
                 <div id="modalScreenshotContainer" style="display:none; text-align:center; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
                     <h3 style="font-size: 0.9rem; color: var(--text-muted); margin: 0 0 0.75rem 0; text-align: left; text-transform: uppercase;">Raw Dark Web Evidence</h3>
-                    <img id="modalScreenshot" src="" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                    <img loading="lazy" id="modalScreenshot" src="" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
                 </div>
                 
                 <div id="modalLinkContainer" style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); text-align: right;">
@@ -965,7 +965,7 @@
                         </button>
                     </div>
                     <div id="actualScreenshotWrapper" style="display:none; position: relative;">
-                        <img id="modalScreenshot" src="" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                        <img loading="lazy" id="modalScreenshot" src="" alt="Dark Web Screenshot" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
                     </div>
                 `;
             } else {

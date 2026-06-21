@@ -290,15 +290,15 @@
     </noscript>
 
     <!-- Enterprise Design System (Core tokens and base styles) -->
-    <link rel="stylesheet" href="design-system.css?v=20260528">
+    <link rel="stylesheet" href="design-system.min.css?v=20260528">
 
     <!-- Non-critical CSS - Load async -->
-    <link rel="stylesheet" href="rotating-text.css?v=2" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="cve-display.css?v=4" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="ransomware-display.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="article-links-fix.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="header-dropdown.css?v=1" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="news-timeline.css?v=1" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="rotating-text.min.css?v=2" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="cve-display.min.css?v=4" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="ransomware-display.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="article-links-fix.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="header-dropdown.min.css?v=1" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="news-timeline.min.css?v=1" media="print" onload="this.media='all'">
 
     <!-- Font Awesome (Deferred until after page load for performance) -->
     <script>
@@ -328,7 +328,7 @@
     <link rel="stylesheet" href="m-core.min.css?v=1" media="(max-width: 768px)">
     <link rel="stylesheet" href="m-layout.min.css?v=3.4" media="(max-width: 768px)">
     <link rel="stylesheet" href="m-components.min.css?v=1" media="(max-width: 768px)">
-    <script src="m-app.js?v=20260528_coffee" defer></script>
+    <script src="m-app.min.js?v=20260528_coffee" defer></script>
     <script src="theme-toggle.js" defer></script>
 
 
@@ -4956,18 +4956,18 @@
 
     <!-- Load Content Files (deferred to prevent render blocking) -->
     <script src="content.js?v=20251219" defer></script>
-    <script src="news-timeline.js?v=1" defer></script>
-    <script src="article-loader.js?v=20251207-1255" defer></script>
+    <script src="news-timeline.min.js?v=1" defer></script>
+    <script src="article-loader.min.js?v=20251207-1255" defer></script>
     <link rel="stylesheet" href="article-modal.css" media="print" onload="this.media='all'">
-    <script src="article-modal.js" defer></script>
+    <script src="article-modal.min.js" defer></script>
     <link rel="stylesheet" href="interaction-bar.css?v=20251207-0041" media="print" onload="this.media='all'">
-    <script src="interaction-bar.js?v=20260605" defer></script>
+    <script src="interaction-bar.min.js?v=20260605" defer></script>
 
     <!-- Visual Enhancements (deferred) -->
     <link rel="stylesheet" href="visual-enhancements.css" media="print" onload="this.media='all'">
-    <script src="visual-enhancements.js" defer></script>
-    <script src="rotating-text.js?v=4" defer></script>
-    <script src="cve-display.js?v=20251125" defer></script>
+    <script src="visual-enhancements.min.js" defer></script>
+    <script src="rotating-text.min.js?v=4" defer></script>
+    <script src="cve-display.min.js?v=20251125" defer></script>
     <script defer>
         // Load CVE stats for homepage preview
         document.addEventListener('DOMContentLoaded', async function () {

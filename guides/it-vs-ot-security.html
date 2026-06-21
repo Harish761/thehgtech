@@ -9,7 +9,7 @@
     <title>IT vs OT Security Explained: Purdue Model, ICS Threats &amp; Hardening Guide (2026) | TheHGTech [2026]</title>
 
     <!-- Twitter Card -->
-    <meta name="twitter:image" content="https://thehgtech.com/images/guides/it-vs-ot-security-header.png">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/it-vs-ot-security-header.webp">
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="TheHGTech">
@@ -27,7 +27,7 @@
         content="Learn IT vs OT security differences, real ICS attacks like Triton and Colonial Pipeline, Purdue Model architecture, and how to secure PLC/SCADA environments with practical hardening strategies.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/it-vs-ot-security.html">
-    <meta property="og:image" content="https://thehgtech.com/images/guides/it-vs-ot-security-header.png">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/it-vs-ot-security-header.webp">
 
     <!-- Twitter Card Context -->
     <meta name="twitter:card" content="summary_large_image">
@@ -126,15 +126,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
     <link rel="stylesheet" href="/ui-enhancements.css?v=3.5_newsletter">
-    <script src="/m-app.js?v=20260528_coffee" defer></script>
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
     <!-- Inline theme script to prevent FOUC -->
     <script>
         (function() {
@@ -542,8 +542,8 @@
             </div>
         </div>
 
-        <img src="/images/guides/it-vs-ot-security-header.png" alt="IT vs OT Security Architecture Overview" class="architecture-diagram" loading="eager">
-        <img src="/images/guides/purdue-model-idmz-architecture.png" alt="Purdue Model Architecture Visualization" class="architecture-diagram" loading="lazy">
+        <img src="/images/guides/it-vs-ot-security-header.webp" alt="IT vs OT Security Architecture Overview" class="architecture-diagram" loading="eager">
+        <img src="/images/guides/purdue-model-idmz-architecture.webp" alt="Purdue Model Architecture Visualization" class="architecture-diagram" loading="lazy">
 
         <!-- Table of Contents -->
         <div class="info-box" style="background: rgba(0,217,255,0.06); border-left-color: var(--accent-cyan);">
@@ -640,7 +640,7 @@
             </tbody>
         </table>
         
-        <img src="/images/guides/it-ot-architecture-comparison.png" alt="IT vs OT Architecture Comparison" class="architecture-diagram" loading="lazy">
+        <img src="/images/guides/it-ot-architecture-comparison.webp" alt="IT vs OT Architecture Comparison" class="architecture-diagram" loading="lazy">
 
         <h2 id="common-confusions">3. The Origin of Friction: Common Confusions</h2>
         
@@ -782,7 +782,7 @@
             <li><strong>Setpoint Monitoring:</strong> Alert on write commands that push process values (temperature, pressure, flow rate) beyond engineering-defined safe operating limits. These represent potential manipulation attempts even if originating from a known source device.</li>
         </ul>
 
-        <img src="/images/guides/ot-defense-in-depth-dashboard.png" alt="OT Defense in Depth Visualization" class="architecture-diagram" loading="lazy">
+        <img src="/images/guides/ot-defense-in-depth-dashboard.webp" alt="OT Defense in Depth Visualization" class="architecture-diagram" loading="lazy">
 
         <h3>File Integrity & PLC Logic Monitoring</h3>
         <p>Sophisticated actors (Stuxnet, INCONTROLLER) modify PLC ladder logic directly on engineering workstations before downloading to the controller. Implement FIM on workstations tracking proprietary project file extensions: <code>.acd</code> (Rockwell Studio 5000), <code>.ap17/.ap19</code> (Siemens TIA Portal), <code>.mer</code> (FactoryTalk View SE). Any modification outside a formal change-management window should trigger an alert and require a logic diff review before the project file is deployed to the controller.</p>
@@ -883,7 +883,7 @@
         </div>
     </div>
 
-    <script src="/interaction-bar.js?v=20260605"></script>
+    <script src="/interaction-bar.min.js?v=20260605"></script>
     <script src="/js/main.js" defer></script>
     <script src="/ui-enhancements.js?v=20260517" defer></script>
 

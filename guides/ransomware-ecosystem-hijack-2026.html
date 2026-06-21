@@ -31,16 +31,16 @@
     
     <!-- Standard HGTech CSS Stack -->
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/print.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251217">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
     <link rel="stylesheet" href="/ui-enhancements.css?v=3.5_newsletter">
     
-    <script src="/m-app.js?v=20260528_coffee" defer></script>
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
     
     <style>
         :root {
@@ -638,7 +638,7 @@
             <p>Modern infostealers (Lumma, Vidar v12) no longer just grab cleartext. They target the OS-level credential managers (DPAPI on Windows, Keychain on macOS) to decrypt the browser's <code>Cookies</code> and <code>Login Data</code> SQLite databases in real-time.</p>
 
             <div class="diagram-container">
-                <img src="/images/guides/ransomware-2026-identity-hijack.png" alt="Identity Hijack Process flow">
+                <img loading="lazy" src="/images/guides/ransomware-2026-identity-hijack.png" alt="Identity Hijack Process flow">
                 <div class="diagram-caption">Fig 1: Step-by-step redirection from endpoint infection to cloud-console hijack.</div>
             </div>
 
@@ -683,7 +683,7 @@
             <p>The <strong>Advantest</strong> and <strong>trivy-action</strong> incidents of early 2026 demonstrate the weaponization of the "Trust Fabric." Attackers target the GitHub Actions and Jenkins pipelines of security vendors in order to inject malicious payloads into trusted software update channels.</p>
 
             <div class="diagram-container">
-                <img src="/images/guides/ransomware-2026-supply-chain.png" alt="CI/CD Supply Chain Poisoning">
+                <img loading="lazy" src="/images/guides/ransomware-2026-supply-chain.png" alt="CI/CD Supply Chain Poisoning">
                 <div class="diagram-caption">Fig 2: Infiltration of the enterprise software delivery lifecycle.</div>
             </div>
 
@@ -802,7 +802,7 @@
         <p>&copy; 2026 TheHGTech. All rights reserved. | <a href="/tools/grc-assessment/" style="color: var(--accent-cyan);">GRC Tool Dashboard</a></p>
     </footer>
     
-    <script src="/interaction-bar.js?v=20260605"></script>
+    <script src="/interaction-bar.min.js?v=20260605"></script>
     <script src="/ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>

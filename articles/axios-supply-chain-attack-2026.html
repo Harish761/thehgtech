@@ -12,7 +12,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Axios npm Hack: How 100M Daily Downloads Became a Global Trojan">
     <meta name="twitter:description" content="The Axios npm package was compromised, turning a foundational web library into a state-grade Remote Access Trojan. Here is how it happened and how to detect it.">
-    <meta name="twitter:image" content="https://thehgtech.com/images/articles/axios-supply-chain-attack-2026.png">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/axios-supply-chain-attack-2026.webp">
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="TheHGTech">
@@ -27,7 +27,7 @@
     <meta property="og:url" content="https://thehgtech.com/articles/axios-supply-chain-attack-2026.html">
     <meta property="og:title" content="The Axios npm Hack: How 100M Daily Downloads Became a Global Trojan">
     <meta property="og:description" content="The Axios npm package was compromised, turning a foundational web library into a state-grade Remote Access Trojan. Here is how it happened and how to detect it.">
-    <meta property="og:image" content="https://thehgtech.com/images/articles/axios-supply-chain-attack-2026.png">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/axios-supply-chain-attack-2026.webp">
 
     <link rel="canonical" href="https://thehgtech.com/articles/axios-supply-chain-attack-2026.html">
 
@@ -38,7 +38,7 @@
       "@type": "Article",
       "headline": "The Axios npm Supply Chain Attack: Full Technical Breakdown",
       "image": [
-        "https://thehgtech.com/images/articles/axios-supply-chain-attack-2026.png"
+        "https://thehgtech.com/images/articles/axios-supply-chain-attack-2026.webp"
        ],
       "datePublished": "2026-04-01T12:00:00+00:00",
       "dateModified": "2026-04-01T12:00:00+00:00",
@@ -60,16 +60,16 @@
 
     <!-- Style System -->
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
     <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/theme-toggle.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
 
-    <script src="/m-app.js?v=20260528_coffee" defer></script>
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
     <script src="/theme-toggle.js" defer></script>
 
     <!-- ========== GLOBAL THEME SCRIPT ========== -->
@@ -484,7 +484,7 @@
 
                 <h1 class="article-title">The Axios npm Hack: How 100M Daily Downloads Became a Global Trojan</h1>
                 
-                <img src="/images/articles/axios-supply-chain-attack-2026.png" alt="Axios npm Supply Chain Attack" class="featured-image">
+                <img loading="lazy" src="/images/articles/axios-supply-chain-attack-2026.webp" alt="Axios npm Supply Chain Attack" class="featured-image">
             </header>
 
             <div class="article-content">
@@ -519,7 +519,7 @@
                 <p>Within fifteen minutes of publication, the trap snapped shut. Automated CI/CD pipelines churning through nightly builds, overly aggressive auto-merging Dependabot workflows, and everyday developers running fresh container builds globally began blindly pulling the poisoned payload. Security researchers analyzing massive enterprise telemetry drops soon flagged deeply anomalous outbound network traffic originating from <code>postinstall</code> scripts within isolated build runners.</p>
                 <p>By <strong>22:42 UTC</strong>, the npm security team formally intervened, aggressively yanking the compromised Axios versions alongside the secondary payload. Though npm reacted remarkably fast—excising the threat within roughly three hours—the sheer ubiquity of Axios meant the damage was devastating. In that 180-minute window, the malicious versions were pulled an estimated 3.2 million times, systematically embedding espionage malware into developer laptops and dynamically scaled, ephemeral production clusters alike.</p>
                 
-                <img src="/images/articles/axios-supplychain-2.png" alt="Dependency Tree Architecture" class="article-image">
+                <img loading="lazy" src="/images/articles/axios-supplychain-2.webp" alt="Dependency Tree Architecture" class="article-image">
 
                 <h2>3. Technical Deep-Dive: Anatomy of the Attack</h2>
                 <p>The threat actors demonstrated a masterful understanding of Node.js execution flows and enterprise network trust assumptions, elevating this attack far beyond a typical dependency hijack.</p>
@@ -545,7 +545,7 @@
                 <h2>4. Detection in Your Environment</h2>
                 <p>Time remains critical. If your organization built, deployed, updated, or tested any Node.js applications spanning the evening of March 30, you must immediately initiate a comprehensive, forensic threat hunt.</p>
 
-                <img src="/images/articles/axios-supplychain-3.png" alt="Threat Detected IOCs" class="article-image">
+                <img loading="lazy" src="/images/articles/axios-supplychain-3.webp" alt="Threat Detected IOCs" class="article-image">
 
                 <p>Ensure your pipelines are scrubbed of any traces of <code>axios</code> versions <code>1.14.1</code> and <code>0.30.4</code>, alongside <code>plain-crypto-js</code> version <code>4.2.1</code>. You must scan your entire infrastructure's <code>package-lock.json</code> lockfiles directly, rather than just relying on generic repository telemetry which may lag behind your actual container builds. Behaviorally, hunt for Node.js worker processes exhibiting anomalous filesystem destruction and network spikes.</p>
 
@@ -561,7 +561,7 @@ find . -name "package-lock.json" -type f -exec grep -HnA 3 '"plain-crypto-js": "
                 <p>The Axios compromise marks a permanent inflection point in how security practitioners must govern open-source software integration. The core lesson is brutal: traditional software supply chain security architecture has definitively failed.</p>
                 <p>Relying on vulnerability scanning means you are operating purely reactively; you are structurally incapable of detecting a zero-hour identity compromise. Operating under the belief that lockfiles provide total safety is a dangerous misconception. The moment a well-meaning developer casually runs an update command, your lockfile proudly adopts and immortalizes the malware. Moving forward, engineering organizations must embrace an aggressive, zero-trust enforcement architecture. This section constitutes the comprehensive, step-by-step hardening blueprint required to protect enterprise production environments against the reality of modern supply chain warfare.</p>
 
-                <img src="/images/articles/axios-supplychain-4.png" alt="Secure CI/CD Architecture" class="article-image">
+                <img loading="lazy" src="/images/articles/axios-supplychain-4.webp" alt="Secure CI/CD Architecture" class="article-image">
 
                 <h3>5.1 Eradicating Lifecycle Script Vulnerabilities Globally</h3>
                 <p>The single most terrifying capability granted by npm is the automatic execution of lifecycle scripts. Directives like <code>preinstall</code> and <code>postinstall</code> allow arbitrary system-level code execution by design, granting full system privileges the exact millisecond a package hits the disk to run natively against your OS. This capability must be entirely incapacitated by default. Unless you are actively compiling complex native C++ bindings for libraries like <code>bcrypt</code> or specialized image processors, standard JavaScript packages have absolutely zero legitimate business executing generic code against your host OS during a simple installation phase.</p>
@@ -651,7 +651,40 @@ find . -name "package-lock.json" -type f -exec grep -HnA 3 '"plain-crypto-js": "
     <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How do I protect my Node.js app from compromised packages?</h3>
     <p style="margin-bottom: 1.5rem;">Pin your dependencies to exact versions, use lock files, implement SCA (Software Composition Analysis) tools, and restrict outbound network traffic from your application servers.</p>
 </div>
-\n</article>
+\n
+            <!-- ========== RELATED ARTICLES ========== -->
+            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    
+                    <a href="/articles/anthropic-project-glasswing-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Project Glasswing: Anthropic's Defensive AI</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How autonomous agents are transforming incident response.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/axios-supply-chain-attack-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Supply Chain</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Axios npm Package Compromise</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Inside the 2026 supply chain attack affecting millions of builds.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Zero-Day</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">FortiClient EMS Critical Vulnerability</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">CVE-2026-35616 analysis and immediate mitigation steps.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </article>
 
         <!-- Interaction Bar -->
         <div class="interaction-bar">
@@ -684,7 +717,7 @@ find . -name "package-lock.json" -type f -exec grep -HnA 3 '"plain-crypto-js": "
         <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
     </footer>
 
-    <script src="/interaction-bar.js?v=20260605"></script>
+    <script src="/interaction-bar.min.js?v=20260605"></script>
     <script src="../ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>

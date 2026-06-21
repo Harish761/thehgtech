@@ -19,7 +19,7 @@
     <meta property="og:title" content="Stryker Wiper Deep-Dive: Handala's Abuse of Microsoft Intune">
     <meta property="og:description"
         content="80,000 devices wiped via Intune. No malware. Just cloud abuse. Here is the technical breakdown.">
-    <meta property="og:image" content="https://thehgtech.com/images/articles/stryker-wiper-01.png">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/stryker-wiper-01.webp">
     <meta property="og:site_name" content="TheHGTech">
 
     <!-- Mobile Navigation CSS -->
@@ -443,7 +443,7 @@
         <p>Within a tight four-hour window, corporate workstations, executives' laptops, and mobile devices across the globe initiated sudden, unprompted factory reset procedures. Because the commands originated natively from the trusted Intune management tenant—the literal authority on device state—endpoint protection platforms (like Microsoft Defender or CrowdStrike) correctly interpreted the wipes as authorized administrative actions and allowed the data destruction to proceed unchallenged.</p>
 
         <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
-            <img src="../images/articles/stryker-wiper-01.png" alt="Stryker Wiper Attack Timeline" style="width: 100%; height: auto; display: block;">
+            <img loading="lazy" src="../images/articles/stryker-wiper-01.webp" alt="Stryker Wiper Attack Timeline" style="width: 100%; height: auto; display: block;">
             <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
                 <strong>Attack Reconstruction:</strong> Visual timeline from initial session hijacking to the execution of mass remote wipe commands via the Microsoft Graph API.
             </div>
@@ -464,7 +464,7 @@
         <p>If your organization believes it is secure simply because "MFA is enabled," the Stryker attack proves that standard MFA (SMS, Voice, Authenticator Push) is only a barrier at the point of <em>authentication</em>, not <em>authorization</em> for persistent sessions. This underscores the absolute necessity of hardware-bound, phishing-resistant authentication methods that cannot be replayed from untrusted, remote infrastructure.</p>
 
         <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
-            <img src="../images/articles/stryker-wiper-02.png" alt="Ransomware vs Wiper Attack Comparison" style="width: 100%; height: auto; display: block;">
+            <img loading="lazy" src="../images/articles/stryker-wiper-02.webp" alt="Ransomware vs Wiper Attack Comparison" style="width: 100%; height: auto; display: block;">
             <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
                 <strong>Operational Comparison:</strong> Traditional ransomware (encrypting files for ransom) versus the cloud-native wiper approach (abusing management tools for direct destruction).
             </div>
@@ -538,7 +538,7 @@
         </ol>
 
         <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
-            <img src="../images/articles/stryker-wiper-03.png" alt="Hardened Intune Architecture" style="width: 100%; height: auto; display: block;">
+            <img loading="lazy" src="../images/articles/stryker-wiper-03.webp" alt="Hardened Intune Architecture" style="width: 100%; height: auto; display: block;">
             <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
                 <strong>Resilience Blueprint:</strong> Implementing Privileged Identity Management (PIM) and Multi-Party Authorization (MPA) for destructive commands.
             </div>
@@ -578,7 +578,7 @@
         </ol>
 
         <div class="article-image-container" style="margin: 2rem 0; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border);">
-            <img src="../images/articles/stryker-wiper-04.png" alt="Phishing-Resistant MFA Settings" style="width: 100%; height: auto; display: block;">
+            <img loading="lazy" src="../images/articles/stryker-wiper-04.webp" alt="Phishing-Resistant MFA Settings" style="width: 100%; height: auto; display: block;">
             <div class="image-caption" style="padding: 1rem; font-size: 0.9rem; color: #888; text-align: center; border-top: 1px solid var(--border);">
                 <strong>Hardening CA Policies:</strong> Mandating phishing-resistant MFA (FIDO2) for all administrative paths in Microsoft Entra ID.
             </div>
@@ -751,7 +751,40 @@ AuditLogs
     <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How can you recover from a Stryker attack?</h3>
     <p style="margin-bottom: 1.5rem;">Because the data is actively overwritten, recovery is only possible if you have offline, immutable backups that were not connected to the network during the attack.</p>
 </div>
-\n</article>
+\n
+            <!-- ========== RELATED ARTICLES ========== -->
+            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    
+                    <a href="/articles/anthropic-project-glasswing-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Project Glasswing: Anthropic's Defensive AI</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How autonomous agents are transforming incident response.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/axios-supply-chain-attack-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Supply Chain</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Axios npm Package Compromise</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Inside the 2026 supply chain attack affecting millions of builds.</p>
+                        </div>
+                    </a>
+
+                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Zero-Day</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">FortiClient EMS Critical Vulnerability</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">CVE-2026-35616 analysis and immediate mitigation steps.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </article>
     <script src="../ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>

@@ -1,1583 +1,953 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-    <url>
-        <loc>https://thehgtech.com/articles/copilot-vs-apple-intelligence-security-2026.html</loc>
-        <lastmod>2026-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.99</priority>
-        <image:image>
-            <image:loc>https://thehgtech.com/images/articles/copilot-vs-apple-intelligence-security-2026.jpg</image:loc>
-            <image:title>Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://thehgtech.com/articles/ai-cyber-arms-race-mythos-daybreak-2026.html</loc>
-        <lastmod>2026-06-03</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.99</priority>
-        <image:image>
-            <image:loc>https://thehgtech.com/images/articles/ai-cyber-arms-race-mythos-daybreak-2026.jpg</image:loc>
-            <image:title>The Autonomous Cyber Arms Race: Claude Mythos &amp; GPT Daybreak</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://thehgtech.com/guides/the-agent-tax-corporate-laptop-performance-2026.html</loc>
-        <lastmod>2026-06-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.99</priority>
-        <image:image>
-            <image:loc>https://thehgtech.com/images/guides/the-agent-tax-corporate-laptop-performance-2026.jpg</image:loc>
-            <image:title>The Agent Tax: Why Corporate Laptops Are Slow (And How to Fix It in 2026)</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://thehgtech.com/articles/claude-opus-4-8-security-implications-2026.html</loc>
-        <lastmod>2026-05-30T13:54:07+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://thehgtech.com/articles/edr-false-positives-soc-panic-2026.html</loc>
-        <lastmod>2026-05-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.99</priority>
-        <image:image>
-            <image:loc>https://thehgtech.com/images/articles/edr-false-positives-soc-panic-2026.png</image:loc>
-            <image:title>The False Positive Paradox: Why EDRs Flag Genuine Processes</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://thehgtech.com/guides/windows-vs-macos-endpoint-security-2026.html</loc>
-        <lastmod>2026-05-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.99</priority>
-        <image:image>
-            <image:loc>https://thehgtech.com/images/guides/windows-vs-macos-endpoint-security-2026.png</image:loc>
-            <image:title>Windows vs macOS Endpoint Security 2026: Architecture, Tools, Management &amp; Real-World Effectiveness</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://thehgtech.com/article-github-cisa-leaks-2026.html</loc>
-        <lastmod>2026-05-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.99</priority>
-        <image:image>
-            <image:loc>https://thehgtech.com/images/articles/github-cisa-leaks-2026.png</image:loc>
-            <image:title>The May 2026 Git Leaks: Malicious VS Code Extensions and CISA's Exposed Secrets</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://thehgtech.com/articles/shinyhunters-711-salesforce-breach-2026.html</loc>
-        <lastmod>2026-05-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-  <!-- May 13, 2026 - Foxconn Nitrogen Ransomware -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://thehgtech.com/articles/foxconn-nitrogen-ransomware-supply-chain-2026.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.99</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/foxconn-nitrogen-ransomware-2026.png</image:loc>
-      <image:title>The Nitrogen Contagion: What the Foxconn Ransomware Attack Reveals About Supply Chain Fragility</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/</loc>
+    <lastmod>2026-06-21T11:25:37+00:00</lastmod>
+    <priority>1.0</priority>
   </url>
-
-  <!-- May 13, 2026 - AI-Developed 2FA Bypass -->
   <url>
-    <loc>https://thehgtech.com/articles/ai-developed-2fa-bypass-2026.html</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.99</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/ai-2fa-bypass-2026.png</image:loc>
-      <image:title>The Machine That Picked the Lock: An AI-Developed 2FA Bypass</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/cve-tracker.html</loc>
+    <lastmod>2026-06-21T11:25:37+00:00</lastmod>
+    <priority>0.9</priority>
   </url>
-
-  <!-- May 10, 2026 - Dirty Frag Page Cache Curse -->
   <url>
-    <loc>https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.99</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.png</image:loc>
-      <image:title>The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/ransomware-tracker.html</loc>
+    <lastmod>2026-06-21T11:25:37+00:00</lastmod>
+    <priority>0.9</priority>
   </url>
-
-  <!-- May 6, 2026 - Entra ID Ghost Takeover -->
   <url>
-    <loc>https://thehgtech.com/articles/entra-id-ghost-takeover-2026.html</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.99</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/entra-id-ghost-takeover-2026.png</image:loc>
-      <image:title>The Silent Entra ID Takeover: Why Microsoft's AI Agent Flaw Should Terrify You [2026]</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/threat-intel.html</loc>
+    <lastmod>2026-06-21T11:25:37+00:00</lastmod>
+    <priority>0.9</priority>
   </url>
-
-  <!-- May 5, 2026 - Trellix Source Code Breach -->
   <url>
-    <loc>https://thehgtech.com/articles/trellix-source-code-breach-2026.html</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.99</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/trellix-breach-hero.png</image:loc>
-      <image:title>Trellix Source Code Breach: What Actually Happened & Why It Matters</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/about.html</loc>
+    <lastmod>2026-06-21T11:25:37+00:00</lastmod>
+    <priority>0.9</priority>
   </url>
-
-  <!-- March 9, 2026 - OpenAI Codex Security -->
+  <url>
+    <loc>https://thehgtech.com/articles.html</loc>
+    <lastmod>2026-06-21T11:25:37+00:00</lastmod>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://thehgtech.com/articles/openai-codex-security-11000-bugs-2026.html</loc>
     <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.99</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/openai-codex-security-11000-bugs-2026.png</image:loc>
-      <image:title>OpenAI Codex Security Finds 11,000 Bugs - 14 CVEs Assigned</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
-
-  <!-- March 9, 2026 - Fake Claude Code InstallFix -->
+  <url>
+    <loc>https://thehgtech.com/articles/harvard-phone-phishing-breach-2025.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/scattered-spider-teen-hacker-115-million.html</loc>
+    <lastmod>2025-12-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/claude-opus-4-8-security-implications-2026.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/7zip-critical-vulnerability.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/700credit-breach-2025.html</loc>
+    <lastmod>2025-12-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/context-crisis-cybersecurity-2026.html</loc>
+    <lastmod>2026-06-09T08:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/n8n-ni8mare-critical-vulnerability-2026.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/forticlient-ems-zero-day-cve-2026-35616.html</loc>
+    <lastmod>2026-04-09T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/chrome-zero-day-cve-2026-2441.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/shinyhunters-vishing-mfa-bypass-2026.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/redhat-chatterbox-ai-safety-acquisition-2025.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/langflow-ai-rce-cve-2025-3248.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/wheelchair-bluetooth-hack-cve-2025-14346.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/edr-false-positives-soc-panic-2026.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/nike-data-breach-1tb-stolen-2026.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/ai-cyber-arms-race-mythos-daybreak-2026.html</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/glassworm-openvsx-supply-chain-2026.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/ivanti-epmm-zeroday-cve-2026-1281.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/axios-supply-chain-attack-2026.html</loc>
+    <lastmod>2026-04-01T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/foxconn-nitrogen-ransomware-supply-chain-2026.html</loc>
+    <lastmod>2026-05-13T16:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/ibm-api-connect-cve-2026.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/claude-fable-ai-governance-2026.html</loc>
+    <lastmod>2026-06-10T08:00:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/cybersecurity-pros-guilty-alphv-ransomware-2025.html</loc>
+    <lastmod>2025-12-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/agentic-ai-insider-threat-2026.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/romania-water-ransomware-bitlocker-2025.html</loc>
+    <lastmod>2025-12-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/salesforce-billion-record-extortion-2025.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/taiwan-263-million-daily-chinese-cyberattacks-2026.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/crowdstrike-sgnl-acquisition-identity-security-2026.html</loc>
+    <lastmod>2026-01-12</lastmod>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://thehgtech.com/articles/fake-claude-code-installfix-malware-2026.html</loc>
     <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.99</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/fake-claude-code-installfix-malware-2026.png</image:loc>
-      <image:title>Fake Claude Code Installers Deploy Amatera Stealer via Google Ads</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
-
-  <!-- March 9, 2026 - MuddyWater Iran US Banks -->
+  <url>
+    <loc>https://thehgtech.com/articles/beast-ransomware-api-exploits.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://thehgtech.com/articles/muddywater-iran-us-banks-airports-2026.html</loc>
     <lastmod>2026-03-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.99</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/muddywater-iran-us-banks-airports-2026.png</image:loc>
-      <image:title>MuddyWater Iran APT Infiltrates US Banks and Airports</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
-
-        <url>
-    <loc>https://thehgtech.com/articles/mj-rathbun-matplotlib-ai-hallucination-2026.html</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  <url>
+    <loc>https://thehgtech.com/articles/french-ministry-interior-hack-2025.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html</loc>
+    <lastmod>2026-01-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/semiconductor-ransomware-chips-act-2026.html</loc>
+    <lastmod>2026-02-25T18:00:00+05:30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/esa-cyberattack-200gb-data-theft-2026.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/kimwolf-botnet-android-ddos-2025.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/microsoft-365-gov-breach-2026.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/copy-fail-cve-2026-31431.html</loc>
+    <lastmod>2026-04-30T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/purerat-ai-malware-vietnam-2026.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/sedgwick-tridentlocker-ransomware-2026.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/langchain-cve-2025-68664-ai-vulnerability.html</loc>
+    <lastmod>2025-12-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html</loc>
+    <lastmod>2026-05-10T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/apple-dyld-zero-day-cve-2026-20700.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/ai-hacker-fortigate-600-devices-2026.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/fortinet-auth-bypass-cve-2026-24858.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/nissan-redhat-breach-2025.html</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/llm-attack-reconnaissance-2026.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/instagram-e2ee-rollback-2026.html</loc>
+    <lastmod>2026-03-23T08:00:00+08:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/watchguard-firebox-zero-day-2025.html</loc>
+    <lastmod>2025-12-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/booking-com-breach-2026.html</loc>
+    <lastmod>2026-04-15T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/articles/anthropic-openai-privacy-ultimatum-2026.html</loc>
-    <lastmod>2026-03-03</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-03-03T20:00:00+05:30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/copilot-vs-apple-intelligence-security-2026.html</loc>
+    <lastmod>2026-06-11T12:00:00Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-        <loc>https://thehgtech.com/articles/ai-soc-analyst-future-2026.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://thehgtech.com/articles/semiconductor-ransomware-chips-act-2026.html</loc>
-        <lastmod>2026-02-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://thehgtech.com/articles/ai-hacker-fortigate-600-devices-2026.html</loc>
-        <lastmod>2026-02-23</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://thehgtech.com/articles/beast-ransomware-api-exploits.html</loc>
-        <lastmod>2026-02-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-  
-  <!-- ========== HOMEPAGE - HIGHEST PRIORITY ========== -->
-  <url>
-    <loc>https://thehgtech.com/</loc>
-    <changefreq>hourly</changefreq>
-    <priority>1.0</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <!-- ========== CORE TRACKERS - DAILY UPDATES ========== -->
-  <url>
-    <loc>https://thehgtech.com/cve-tracker.html</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/cve-tracker-og.jpg</image:loc>
-      <image:title>CVE Vulnerability Tracker Dashboard</image:title>
-    </image:image>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/ransomware-tracker.html</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-04</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/ransomware-tracker-og.jpg</image:loc>
-      <image:title>Live Ransomware Tracker - Active Groups and Victims</image:title>
-    </image:image>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/threat-intel.html</loc>
-    <changefreq>hourly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/threat-intel-og.jpg</image:loc>
-      <image:title>Live Threat Intelligence Dashboard</image:title>
-    </image:image>
-  </url>
-  
-  <!-- ========== CONTENT HUBS ========== -->
-  <url>
-    <loc>https://thehgtech.com/articles.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/comparisons/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/workflows/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-30</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/workflows/cve-slack-alerts.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://thehgtech.com/articles/stryker-wiper-attack-2026.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
     <priority>0.8</priority>
-    <lastmod>2026-01-30</lastmod>
   </url>
-  
-  <!-- ========== ARTICLES - HIGH TRAFFIC POTENTIAL ========== -->
-
   <url>
-    <loc>https://thehgtech.com/articles/anthropic-claude-code-security-launch-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-21</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/anthropic-claude-code-security-launch-2026.png</image:loc>
-      <image:title>Anthropic's Claude Code Security: What It Actually Does and Why $10-15B in Cybersecurity Stocks Dropped</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/articles/crowdstrike-seraphic-browser-security-2026.html</loc>
+    <lastmod>2026-01-17</lastmod>
+    <priority>0.7</priority>
   </url>
-
-  <!-- Feb 17, 2026 - OpenClaw AI Log Poisoning -->
+  <url>
+    <loc>https://thehgtech.com/articles/anthropic-project-glasswing-2026.html</loc>
+    <lastmod>2026-04-09T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/react2shell-cve-2025-55182-react-vulnerability.html</loc>
+    <lastmod>2025-12-27</lastmod>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://thehgtech.com/articles/openclaw-ai-log-poisoning-cve-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
     <lastmod>2026-02-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/openclaw-ai-log-poisoning-cve-2026.png</image:loc>
-      <image:title>OpenClaw AI Log Poisoning Vulnerability CVE-2026-25253 Analysis</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
-
-  <!-- Feb 17, 2026 - Chrome Zero-Day CVE-2026-2441 -->
   <url>
-    <loc>https://thehgtech.com/articles/chrome-zero-day-cve-2026-2441.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/chrome-zero-day-cve-2026-2441.png</image:loc>
-      <image:title>Chrome Zero-Day CVE-2026-2441 CSS Use-After-Free Exploit Analysis</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 17, 2026 - Odido Data Breach 6.2M -->
-  <url>
-    <loc>https://thehgtech.com/articles/odido-data-breach-6m-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/odido-data-breach-6m-2026.png</image:loc>
-      <image:title>Odido Data Breach 6.2 Million Dutch Telecom Customers Salesforce CRM</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 12, 2026 - Microsoft Patch Tuesday February 2026 -->
-  <url>
-    <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-february-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-12</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/microsoft-patch-tuesday-february-2026.png</image:loc>
-      <image:title>Microsoft Patch Tuesday February 2026 6 Zero-Days</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 12, 2026 - Apple dyld Zero-Day CVE-2026-20700 -->
-  <url>
-    <loc>https://thehgtech.com/articles/apple-dyld-zero-day-cve-2026-20700.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-12</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/apple-dyld-zero-day-cve-2026-20700.png</image:loc>
-      <image:title>Apple dyld Zero-Day CVE-2026-20700 Memory Corruption Exploit Chain</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 11, 2026 - Windows Notepad RCE CVE-2026-20841 -->
-  <url>
-    <loc>https://thehgtech.com/articles/windows-notepad-rce-cve-2026-20841.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-11</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/windows-notepad-rce-cve-2026-20841.png</image:loc>
-      <image:title>Windows Notepad RCE CVE-2026-20841 Markdown Link Injection</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 5, 2026 - Langflow AI RCE CVE-2025-3248 -->
-
-  <url>
-    <loc>https://thehgtech.com/articles/langflow-ai-rce-cve-2025-3248.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-05</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/langflow-ai-rce-cve-2025-3248.png</image:loc>
-      <image:title>Langflow AI RCE CVE-2025-3248 Unauthenticated Code Execution</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 5, 2026 - Fortinet Auth Bypass CVE-2026-24858 -->
-  <url>
-    <loc>https://thehgtech.com/articles/fortinet-auth-bypass-cve-2026-24858.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-05</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/fortinet-auth-bypass-cve-2026-24858.png</image:loc>
-      <image:title>Fortinet Authentication Bypass CVE-2026-24858 FortiCloud SSO</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 5, 2026 - Harvard ShinyHunters Breach -->
-  <url>
-    <loc>https://thehgtech.com/articles/harvard-shinyhunters-breach-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-05</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/harvard-shinyhunters-breach-2026.png</image:loc>
-      <image:title>Harvard ShinyHunters Data Breach Vishing Attack</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 3, 2026 - Notepad++ APT31 Supply Chain Attack -->
-  <url>
-    <loc>https://thehgtech.com/articles/notepad-supply-chain-apt31-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.99</priority>
-    <lastmod>2026-02-03</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/notepad-supply-chain-apt31-2026.png</image:loc>
-      <image:title>Notepad++ APT31 Chrysalis Backdoor Supply Chain Attack</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 3, 2026 - PureRAT AI Malware -->
-  <url>
-    <loc>https://thehgtech.com/articles/purerat-ai-malware-vietnam-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.98</priority>
-    <lastmod>2026-02-03</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/purerat-ai-malware-vietnam-2026.png</image:loc>
-      <image:title>PureRAT AI-Generated Malware Vietnamese Campaign</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 3, 2026 - GlassWorm Open VSX Attack -->
-  <url>
-    <loc>https://thehgtech.com/articles/glassworm-openvsx-supply-chain-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.98</priority>
-    <lastmod>2026-02-03</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/glassworm-openvsx-supply-chain-2026.png</image:loc>
-      <image:title>GlassWorm Open VSX VS Code Extensions Supply Chain Attack</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 1, 2026 - Ivanti Zero-Days -->
-  <url>
-    <loc>https://thehgtech.com/articles/ivanti-epmm-zeroday-cve-2026-1281.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.98</priority>
-    <lastmod>2026-02-01</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/ivanti-epmm-zeroday-2026.png</image:loc>
-      <image:title>Ivanti Endpoint Zero-Days CVE-2026-1281</image:title>
-    </image:image>
-  </url>
-
-  <!-- Jan 31, 2026 - Nike Data Breach -->
-  <url>
-    <loc>https://thehgtech.com/articles/nike-data-breach-1tb-stolen-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.98</priority>
-    <lastmod>2026-01-31</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/nike-data-breach-2026.png</image:loc>
-      <image:title>Nike Data Breach 1.4TB Stolen</image:title>
-    </image:image>
-  </url>
-
-  <!-- Jan 30, 2026 - VS Code Malicious Extensions -->
-  <url>
-    <loc>https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.98</priority>
-    <lastmod>2026-01-30</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/vscode-malicious-extensions-2026.png</image:loc>
-      <image:title>VS Code Malicious Extensions MaliciousCorgi</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/articles/shinyhunters-711-salesforce-breach-2026.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/articles/microsoft-teams-phishing-guest-exploit-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.98</priority>
     <lastmod>2026-01-28</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/microsoft-teams-phishing-2026.png</image:loc>
-      <image:title>Microsoft Teams Phishing Guest Feature Exploit</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
-
-  <!-- January 28, 2026 - Microsoft Office Zero-Day CVE-2026-21509 -->
-  <url>
-    <loc>https://thehgtech.com/articles/ms-office-zero-day-cve-2026-21509.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.98</priority>
-    <lastmod>2026-01-28</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/ms-office-zero-day-cve-2026-21509.png</image:loc>
-      <image:title>Microsoft Office Zero-Day CVE-2026-21509 Actively Exploited</image:title>
-    </image:image>
-  </url>
-
-  <!-- January 27, 2026 Articles - Niche Research Series -->
-  <url>
-    <loc>https://thehgtech.com/articles/infostealer-mfa-bypass-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-27</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/infostealer-mfa-bypass-2026.png</image:loc>
-      <image:title>Infostealer Malware: Why Your MFA Is Already Compromised</image:title>
-    </image:image>
-  </url>
-  
   <url>
     <loc>https://thehgtech.com/articles/oauth-worms-saas-attack-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
     <lastmod>2026-01-27</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/oauth-worms-saas-attack-2026.png</image:loc>
-      <image:title>OAuth Worms: The Silent SaaS-to-SaaS Attack Vector</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
-  
-  <url>
-    <loc>https://thehgtech.com/articles/prompt-injection-physical-ai-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-27</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/prompt-injection-physical-ai-2026.png</image:loc>
-      <image:title>Prompt Injection Goes Physical: Hacking Self-Driving Cars with Text</image:title>
-    </image:image>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/articles/shinyhunters-vishing-mfa-bypass-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-27</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/shinyhunters-vishing-mfa-bypass-2026.png</image:loc>
-      <image:title>ShinyHunters Voice Phishing: Bypassing MFA in Real-Time</image:title>
-    </image:image>
-  </url>
-
-  <!-- January 22, 2026 Articles -->
-  <url>
-    <loc>https://thehgtech.com/articles/luxshare-apple-breach-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-22</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/luxshare-apple-breach-2025.png</image:loc>
-      <image:title>Luxshare Ransomware Attack - Apple Vision Pro CAD Designs Stolen</image:title>
-    </image:image>
-  </url>
-
-  <!-- January 20, 2026 Articles -->
-  <url>
-    <loc>https://thehgtech.com/articles/ai-agents-attack-vectors-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-20</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/ai-agents-attack-vectors-2026.png</image:loc>
-      <image:title>AI Agents Will Be the Primary Attack Vector in 2026</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/dragonforce-ransomware-cartel-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-20</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/dragonforce-ransomware-cartel-2026.png</image:loc>
-      <image:title>DragonForce Ransomware Cartel - LockBit and Conti DNA</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/lastpass-vault-cracks-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-20</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/lastpass-vault-cracks-2026.png</image:loc>
-      <image:title>LastPass Vault Cracks - 2022 Breach Still Affecting Users in 2026</image:title>
-    </image:image>
-  </url>
-
-  <!-- January 17, 2026 Articles -->
-  <url>
-    <loc>https://thehgtech.com/articles/crowdstrike-seraphic-browser-security-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/crowdstrike-seraphic-browser-security-2026.png</image:loc>
-      <image:title>CrowdStrike Acquires Seraphic Security for $420M - Browser Security Analysis</image:title>
-    </image:image>
-  </url>
-
-  <!-- January 16, 2026 Articles -->
-  <url>
-    <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-16</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/microsoft-patch-tuesday-january-2026.png</image:loc>
-      <image:title>Microsoft Patch Tuesday January 2026: 114 CVEs and 3 Zero-Days</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/totalenergies-data-breach-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-16</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/totalenergies-data-breach-2026.png</image:loc>
-      <image:title>TotalEnergies 183 Million Records Data Breach</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/llm-attack-reconnaissance-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-16</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/llm-attack-reconnaissance-2026.png</image:loc>
-      <image:title>91,000 LLM Attack Sessions - AI Security Threat</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/microsoft-365-gov-breach-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-16</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/microsoft-365-gov-breach-2026.png</image:loc>
-      <image:title>Microsoft 365 US Government Breach Cloud Espionage</image:title>
-    </image:image>
-  </url>
-
-  <!-- January 12, 2026 Articles -->
-  <url>
-    <loc>https://thehgtech.com/articles/crowdstrike-sgnl-acquisition-identity-security-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-12</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/crowdstrike-sgnl-acquisition-2026.png</image:loc>
-      <image:title>CrowdStrike Acquires SGNL for $740M - Identity Security Analysis</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/ledger-global-e-supply-chain-breach-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-12</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/ledger-global-e-supply-chain-breach-2026.png</image:loc>
-      <image:title>Ledger Supply Chain Breach via Global-e Payment Processor</image:title>
-    </image:image>
-  </url>
-
-  <!-- January 8, 2026 Articles -->
-  <url>
-    <loc>https://thehgtech.com/articles/n8n-ni8mare-critical-vulnerability-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-08</lastmod>
-  </url>
-
-  <!-- January 5, 2026 Articles -->
-  <url>
-    <loc>https://thehgtech.com/articles/agentic-ai-insider-threat-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-05</lastmod>
-  </url>
-
   <url>
     <loc>https://thehgtech.com/articles/deepfake-as-a-service-explosion-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
     <lastmod>2026-01-05</lastmod>
+    <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://thehgtech.com/articles/claude-ai-vulnerability-inverseprompt-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-05</lastmod>
+    <loc>https://thehgtech.com/articles/infostealer-mfa-bypass-2026.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.7</priority>
   </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/sedgwick-tridentlocker-ransomware-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-05</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/taiwan-263-million-daily-chinese-cyberattacks-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-05</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/esa-cyberattack-200gb-data-theft-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-05</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/ibm-api-connect-cve-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-02</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/clickfix-social-engineering-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-02</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/managemyhealth-nz-breach-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-02</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/covenant-health-qilin-ransomware-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-02</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/wheelchair-bluetooth-hack-cve-2025-14346.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-01-02</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/mongodb-mongobleed-cve-2025-14847.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-29</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/scattered-spider-teen-hacker-115-million.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-29</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/react2shell-cve-2025-55182-react-vulnerability.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/trustwallet-chrome-extension-hack-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/langchain-cve-2025-68664-ai-vulnerability.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-27</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/operation-pcpcat-nextjs-hack-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-25</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/romania-water-ransomware-bitlocker-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-25</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/n8n-rce-vulnerability-cve-2025-68613.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-25</lastmod>
-  </url>
-
-  <url>
-
-    <loc>https://thehgtech.com/articles/nissan-redhat-breach-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/watchguard-firebox-zero-day-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2025-12-22</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/doj-atm-jackpotting-ploutus-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-22</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/north-korea-crypto-theft-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-22</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/700credit-breach-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-20</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/dxs-nhs-ransomware-breach-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-20</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/cybersecurity-pros-guilty-alphv-ransomware-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-20</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/nefilim-ransomware-operator-guilty-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-20</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/99-percent-ai-systems-attacked-2025.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/ai-attacks-99-hero.png</image:loc>
-      <image:title>99% of AI Systems Attacked in 2025</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/french-ministry-interior-hack-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-18</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/articles/kimwolf-botnet-android-ddos-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-18</lastmod>
-  </url>
-
   <url>
     <loc>https://thehgtech.com/articles/fortinet-fortigate-critical-exploit-2025.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
     <lastmod>2025-12-18</lastmod>
+    <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://thehgtech.com/articles/redhat-chatterbox-ai-safety-acquisition-2025.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/redhat-chatterbox-hero.png</image:loc>
-      <image:title>Red Hat Acquires Chatterbox Labs for AI Safety</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/articles/covenant-health-qilin-ransomware-2026.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://thehgtech.com/articles/totalenergies-data-breach-2026.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/operation-pcpcat-nextjs-hack-2025.html</loc>
+    <lastmod>2025-12-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/clickfix-social-engineering-2026.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/nefilim-ransomware-operator-guilty-2025.html</loc>
+    <lastmod>2025-12-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/n8n-rce-vulnerability-cve-2025-68613.html</loc>
+    <lastmod>2025-12-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/dxs-nhs-ransomware-breach-2025.html</loc>
+    <lastmod>2025-12-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/99-percent-ai-systems-attacked-2025.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/windows-notepad-rce-cve-2026-20841.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/ai-soc-analyst-future-2026.html</loc>
+    <lastmod>2026-02-27T22:00:00+05:30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/mongodb-mongobleed-cve-2025-14847.html</loc>
+    <lastmod>2025-12-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/ai-agents-attack-vectors-2026.html</loc>
+    <lastmod>2026-01-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/claude-ai-vulnerability-inverseprompt-2026.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/managemyhealth-nz-breach-2026.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/trustwallet-chrome-extension-hack-2025.html</loc>
+    <lastmod>2025-12-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/ms-office-zero-day-cve-2026-21509.html</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/trellix-source-code-breach-2026.html</loc>
+    <lastmod>2026-05-05T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/india-ai-summit-2026-wrapper-epidemic.html</loc>
+    <lastmod>2026-02-20T10:00:00+08:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/ledger-global-e-supply-chain-breach-2026.html</loc>
+    <lastmod>2026-01-12</lastmod>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://thehgtech.com/articles/cybersecurity-predictions-2026.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/2026-predictions-hero.png</image:loc>
-      <image:title>6 Cybersecurity Predictions for 2026</image:title>
-    </image:image>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://thehgtech.com/articles/harvard-phone-phishing-breach-2025.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/harvard-breach-hero.png</image:loc>
-      <image:title>Harvard University Phone Phishing Breach</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/articles/ai-developed-2fa-bypass-2026.html</loc>
+    <lastmod>2026-05-13T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://thehgtech.com/articles/salesforce-billion-record-extortion-2025.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/salesforce-breach-hero.png</image:loc>
-      <image:title>Salesforce 1 Billion Records Data Extortion</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/articles/checkbox-security-illusion.html</loc>
+    <lastmod>2026-02-20T10:00:00+08:00</lastmod>
+    <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://thehgtech.com/articles/claude-mythos-security-analysis-2026.html</loc>
+    <lastmod>2026-04-25T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/harvard-shinyhunters-breach-2026.html</loc>
+    <lastmod>2026-02-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html</loc>
+    <lastmod>2026-01-16</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/doj-atm-jackpotting-ploutus-2025.html</loc>
+    <lastmod>2025-12-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/lastpass-vault-cracks-2026.html</loc>
+    <lastmod>2026-01-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/delve-ai-compliance-scandal-2026.html</loc>
+    <lastmod>2026-03-22T08:00:00+08:00</lastmod>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://thehgtech.com/articles/gentlemen-ransomware-threat-2025.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-15</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/gentlemen_ransomware.png</image:loc>
-      <image:title>Gentlemen Ransomware Threat Analysis</image:title>
-    </image:image>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://thehgtech.com/articles/7zip-critical-vulnerability.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-15</lastmod>
+    <loc>https://thehgtech.com/articles/north-korea-crypto-theft-2025.html</loc>
+    <lastmod>2025-12-22</lastmod>
+    <priority>0.7</priority>
   </url>
-
-  <!-- ========== TOOL COMPARISONS - HIGH VALUE SEO ========== -->
   <url>
-    <loc>https://thehgtech.com/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
+    <loc>https://thehgtech.com/articles/microsoft-patch-tuesday-february-2026.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://thehgtech.com/comparisons/splunk-vs-elastic-security-vs-logrhythm.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
+    <loc>https://thehgtech.com/articles/odido-data-breach-6m-2026.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.7</priority>
   </url>
-
-  <!-- ========== SECURITY GUIDES - HIGH VALUE LONG-TAIL KEYWORDS ========== -->
-
-  <!-- Mar 6, 2026 - OAuth Security Guide -->
   <url>
-    <loc>https://thehgtech.com/guides/oauth-security-attacks-defense-2026.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-03-06</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/oauth-security-attacks-defense-2026.png</image:loc>
-      <image:title>OAuth Security in 2026: How Attackers Exploit the Protocol You Trust</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Mar 6, 2026 - Dark Web Monitoring Guide -->
   <url>
-    <loc>https://thehgtech.com/guides/dark-web-monitoring-security-teams.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-03-06</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/dark-web-monitoring-security-teams.png</image:loc>
-      <image:title>Dark Web Monitoring for Security Teams: A Practitioners Guide 2026</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 18, 2026 - Passkeys & FIDO2 Passwordless Authentication -->
-  <url>
-    <loc>https://thehgtech.com/guides/passkeys-fido2-passwordless-authentication.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-02-18</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/passkeys-fido2-passwordless-authentication.png</image:loc>
-      <image:title>Passkeys FIDO2 Passwordless Authentication Enterprise Guide 2026</image:title>
-    </image:image>
-  </url>
-
-  <!-- Feb 18, 2026 - SBOM & Software Supply Chain Security -->
-  <url>
-    <loc>https://thehgtech.com/guides/sbom-software-supply-chain-security.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <lastmod>2026-02-18</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/sbom-software-supply-chain-security.png</image:loc>
-      <image:title>SBOM Software Supply Chain Security Implementation Guide 2026</image:title>
-    </image:image>
-  </url>
-  
-  <!-- NEW GUIDE - February 11, 2026 (SOC Analyst Career Roadmap) -->
-  <url>
-    <loc>https://thehgtech.com/guides/soc-analyst-career-roadmap.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.92</priority>
-    <lastmod>2026-02-11</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/soc-analyst-career-roadmap.png</image:loc>
-      <image:title>SOC Analyst Career Roadmap 2026 - Tier 1 to Security Architect</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDE - February 11, 2026 (CEH vs OSCP) -->
-  <url>
-    <loc>https://thehgtech.com/guides/ceh-vs-oscp-certification.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.92</priority>
-    <lastmod>2026-02-11</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/ceh-vs-oscp-certification.png</image:loc>
-      <image:title>CEH vs OSCP Certification Comparison 2026</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDE - January 30, 2026 (Clawdbot/Moltbot Security) -->
-  <url>
-    <loc>https://thehgtech.com/guides/clawdbot-moltbot-security.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.92</priority>
-    <lastmod>2026-01-30</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/clawdbot-moltbot-security.png</image:loc>
-      <image:title>Clawdbot Moltbot Security Guide - AI Assistant Risks and Hardening</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDE - January 30, 2026 (AI Crawler Security) -->
-  <url>
-    <loc>https://thehgtech.com/guides/ai-crawler-security.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.92</priority>
-    <lastmod>2026-01-30</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/ai-crawler-security.png</image:loc>
-      <image:title>AI Crawler Security Guide - ClaudeBot GPTBot Blocking</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDE - January 27, 2026 (MEDUSA AI Security Scanner) -->
-  <url>
-    <loc>https://thehgtech.com/guides/medusa-security-scanner.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://thehgtech.com/articles/prompt-injection-physical-ai-2026.html</loc>
     <lastmod>2026-01-27</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/medusa-security-scanner.png</image:loc>
-      <image:title>MEDUSA Security Scanner Guide</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
-
-  <!-- NEW GUIDES - January 22, 2026 (High-SEO Research Guides) -->
   <url>
-    <loc>https://thehgtech.com/guides/ai-agent-security.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://thehgtech.com/articles/anthropic-claude-code-security-launch-2026.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/mj-rathbun-matplotlib-ai-hallucination-2026.html</loc>
+    <lastmod>2026-03-05T00:00:00+05:30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/luxshare-apple-breach-2025.html</loc>
     <lastmod>2026-01-22</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/ai-agent-security.png</image:loc>
-      <image:title>Securing Autonomous AI Agents: The 2026 Architecture Guide</image:title>
-    </image:image>
+    <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://thehgtech.com/guides/kubernetes-ai-security.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://thehgtech.com/articles/entra-id-ghost-takeover-2026.html</loc>
+    <lastmod>2026-05-06T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/</loc>
+    <lastmod>2026-06-21T11:25:37+00:00</lastmod>
     <priority>0.9</priority>
-    <lastmod>2026-01-22</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/kubernetes-ai-security.png</image:loc>
-      <image:title>Kubernetes AI Security: Protecting the ML Pipeline</image:title>
-    </image:image>
   </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/deepfake-defense.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-22</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/deepfake-defense.png</image:loc>
-      <image:title>Deepfake Defense: Technical Detection of Synthetic Identities</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/compliance-checklist-2026.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-22</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/compliance-checklist-2026.png</image:loc>
-      <image:title>2026 Compliance Checklist: DORA, EU AI Act &amp; NIST Mastery</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDES - January 13, 2026 (AI Security Series) -->
-  <url>
-    <loc>https://thehgtech.com/guides/chatgpt-system-prompt-security.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-13</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/chatgpt-system-prompt-security.png</image:loc>
-      <image:title>ChatGPT System Prompt Security: Extraction Attacks &amp; Defense</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/llm-jailbreaking-defense.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-13</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/llm-jailbreaking-defense.png</image:loc>
-      <image:title>LLM Jailbreaking Defense: DAN Prompts &amp; Attack Patterns</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/llm-jailbreaking-defense-advanced.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-13</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/llm-jailbreaking-defense-advanced.png</image:loc>
-      <image:title>Advanced LLM Jailbreaking Defense: Token-Level Attacks</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/ai-red-teaming-playbook.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-13</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/ai-red-teaming-playbook.png</image:loc>
-      <image:title>AI Red Teaming Playbook: LLM Security Testing Guide</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/owasp-llm-top-10.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-13</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/owasp-llm-top-10.png</image:loc>
-      <image:title>OWASP Top 10 for LLM Applications: Complete Breakdown</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDES - January 18, 2026 (Unicode LLM Attacks) -->
-  <url>
-    <loc>https://thehgtech.com/guides/unicode-llm-attacks.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-18</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/unicode-llm-attacks.png</image:loc>
-      <image:title>Unicode Smuggling: How Hackers Hide Instructions in Emojis</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/unicode-llm-attacks-advanced.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-18</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/unicode-llm-attacks-advanced.png</image:loc>
-      <image:title>Advanced Unicode LLM Attacks: Variation Selectors &amp; Token Exploitation</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDES - January 17, 2026 -->
-  <url>
-    <loc>https://thehgtech.com/guides/wireshark-network-analysis.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/wireshark-network-analysis.png</image:loc>
-      <image:title>Wireshark Network Analysis: Packet Capture Guide</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/email-security-spf-dkim-dmarc.png</image:loc>
-      <image:title>Email Security: SPF, DKIM &amp; DMARC Configuration Guide</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/aws-security-best-practices.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/aws-security-best-practices.png</image:loc>
-      <image:title>AWS Security Best Practices: IAM, S3, VPC Guide</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/devsecops-pipeline-security.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/devsecops-pipeline-security.png</image:loc>
-      <image:title>DevSecOps Pipeline Security: SAST, DAST, SCA Guide</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/digital-forensics-fundamentals.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-17</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/digital-forensics-fundamentals.png</image:loc>
-      <image:title>Digital Forensics Fundamentals: Evidence Collection Guide</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDES - January 12, 2026 -->
-  <url>
-    <loc>https://thehgtech.com/guides/yara-rules-advanced.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-12</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/yara-rules-advanced.png</image:loc>
-      <image:title>Advanced YARA Techniques: Expert Malware Detection Guide</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDES - January 9, 2026 -->
-  <url>
-    <loc>https://thehgtech.com/guides/yara-rules-malware-detection.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-09</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/yara-rules-malware-detection.png</image:loc>
-      <image:title>YARA Rules for Malware Detection Guide</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/sigma-rules-siem-detection.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-09</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/sigma-rules-siem-detection.png</image:loc>
-      <image:title>Sigma Rules for SIEM Detection Guide</image:title>
-    </image:image>
-  </url>
-
-  <!-- NEW GUIDES - January 1, 2026 -->
-  <url>
-    <loc>https://thehgtech.com/guides/iso-27001-gap-analysis.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-01</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/iso-27001-gap-analysis.png</image:loc>
-      <image:title>ISO 27001:2022 Gap Analysis Guide</image:title>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/iso-27001-certification-roadmap.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-01</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/iso-27001-certification-roadmap.png</image:loc>
-      <image:title>ISO 27001:2022 Certification Roadmap</image:title>
-    </image:image>
-  </url>
-
-  <!-- December 31, 2025 -->
-  <url>
-    <loc>https://thehgtech.com/guides/edr-vs-xdr.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-31</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/edr-vs-xdr.png</image:loc>
-      <image:title>EDR vs XDR Complete Security Guide 2025</image:title>
-    </image:image>
-  </url>
-
-  <!-- December 23, 2025 -->
-  <url>
-    <loc>https://thehgtech.com/guides/dora-compliance.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/nist-csf-2-implementation.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/ai-governance-framework.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/ztna-deployment.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/third-party-risk-management.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/splunk-spl-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/cve-prioritization-patch-management.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/mitre-attack-mapping.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/threat-intelligence-feeds-integration.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/soc2-compliance-checklist.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-23</lastmod>
-  </url>
-
-  <!-- Existing guides -->
-  <url>
-    <loc>https://thehgtech.com/guides/cisa-kev-tracker.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/siem-log-analysis.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/api-security-best-practices.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/ransomware-response-playbook.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-14</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/ransomware-response-playbook.png</image:loc>
-      <image:title>Ransomware Response Playbook 2026: Complete IR Guide</image:title>
-    </image:image>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/zero-day-detection.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/incident-response-automation.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/insider-threat-detection.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/network-segmentation-zero-trust.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/container-security.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  
   <url>
     <loc>https://thehgtech.com/guides/phishing-simulation-security-awareness.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-08</lastmod>
+    <priority>0.7</priority>
   </url>
-  
+  <url>
+    <loc>https://thehgtech.com/guides/passkeys-fido2-passwordless-authentication.html</loc>
+    <lastmod>2026-02-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/siem-log-analysis.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/dark-web-monitoring-security-teams.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/penetration-testing-methodology.html</loc>
+    <lastmod>2025-12-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/clawdbot-moltbot-security.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/soc2-compliance-checklist.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/deepfake-defense.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/ransomware-ecosystem-hijack-2026.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/ceh-vs-oscp-certification.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/incident-response-automation.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/unicode-llm-attacks-advanced.html</loc>
+    <lastmod>2026-01-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/network-segmentation-zero-trust.html</loc>
+    <lastmod>2025-12-04</lastmod>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://thehgtech.com/guides/security-metrics-kpis-dashboard.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-08</lastmod>
+    <priority>0.7</priority>
   </url>
-  
   <url>
-    <loc>https://thehgtech.com/guides/threat-intelligence-soc.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
+    <loc>https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
   </url>
-  
   <url>
-    <loc>https://thehgtech.com/guides/openphish-integration.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
+    <loc>https://thehgtech.com/guides/dora-compliance.html</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.7</priority>
   </url>
-  
-  <url>
-    <loc>https://thehgtech.com/guides/malware-hash-analysis.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/threat-hunting-techniques.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thehgtech.com/guides/active-directory-security-hardening.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-01-14</lastmod>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/guides/active-directory-security-hardening.png</image:loc>
-      <image:title>Active Directory Security Hardening Guide 2026</image:title>
-    </image:image>
-  </url>
-
   <url>
     <loc>https://thehgtech.com/guides/windows-event-log-analysis.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
     <lastmod>2025-12-17</lastmod>
+    <priority>0.7</priority>
   </url>
-
-  <!-- AI Security Guides -->
   <url>
-    <loc>https://thehgtech.com/guides/securing-ai-ml-pipelines.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2025-12-17</lastmod>
+    <loc>https://thehgtech.com/guides/the-agent-tax-corporate-laptop-performance-2026.html</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://thehgtech.com/guides/medusa-security-scanner.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/ai-governance-framework.html</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/iso-27001-certification-roadmap.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://thehgtech.com/guides/llm-security-prompt-injection.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
     <lastmod>2025-12-17</lastmod>
+    <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://thehgtech.com/articles/copy-fail-cve-2026-31431.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://thehgtech.com/guides/llm-jailbreaking-defense-advanced.html</loc>
+    <lastmod>2026-01-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/unicode-llm-attacks.html</loc>
+    <lastmod>2026-01-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/mitre-attack-mapping.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html</loc>
+    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/iso-27001-gap-analysis.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/threat-intelligence-feeds-integration.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/container-security.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/kubernetes-ai-security.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/malware-hash-analysis.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/splunk-spl-guide.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/nist-csf-2-implementation.html</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/cloud-security-hardening.html</loc>
+    <lastmod>2025-12-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/devsecops-pipeline-security.html</loc>
+    <lastmod>2026-01-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/cve-prioritization-patch-management.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html</loc>
+    <lastmod>2026-01-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/soc-analyst-fundamentals.html</loc>
+    <lastmod>2025-12-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/windows-vs-macos-endpoint-security-2026.html</loc>
+    <lastmod>2026-05-22T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/chatgpt-system-prompt-security.html</loc>
+    <lastmod>2026-01-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/digital-forensics-fundamentals.html</loc>
+    <lastmod>2026-01-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/aws-security-best-practices.html</loc>
+    <lastmod>2026-01-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/ai-red-teaming-playbook.html</loc>
+    <lastmod>2026-01-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/sigma-rules-siem-detection.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/oauth-security-attacks-defense-2026.html</loc>
+    <lastmod>2026-03-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/securing-ai-ml-pipelines.html</loc>
+    <lastmod>2025-12-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/edr-vs-xdr.html</loc>
+    <lastmod>2025-12-31</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/ransomware-response-playbook.html</loc>
+    <lastmod>2026-01-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/ai-agent-security.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/ztna-deployment.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/cisa-kev-tracker.html</loc>
+    <lastmod>2025-11-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/wireshark-network-analysis.html</loc>
+    <lastmod>2026-01-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/threat-hunting-techniques.html</loc>
+    <lastmod>2025-12-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/compliance-checklist-2026.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/index-new.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/it-vs-ot-security.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/openphish-integration.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/third-party-risk-management.html</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/yara-rules-advanced.html</loc>
+    <lastmod>2026-01-12</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/zero-day-detection.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/api-security-best-practices.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/yara-rules-malware-detection.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/threat-intelligence-soc.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/owasp-llm-top-10.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/sbom-software-supply-chain-security.html</loc>
+    <lastmod>2026-02-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/ai-crawler-security.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/soc-analyst-career-roadmap.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/insider-threat-detection.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/active-directory-security-hardening.html</loc>
+    <lastmod>2026-01-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/llm-jailbreaking-defense.html</loc>
+    <lastmod>2026-01-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/guides/incident-response-plan.html</loc>
+    <lastmod>2026-06-07T16:23:51+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/comparisons/</loc>
+    <lastmod>2026-06-21T11:25:37+00:00</lastmod>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://thehgtech.com/articles/claude-fable-ai-governance-2026.html</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://thehgtech.com/images/articles/claude-fable-ai-governance-2026.png</image:loc>
-      <image:title>Claude Fable AI Governance</image:title>
-    </image:image>
+    <loc>https://thehgtech.com/comparisons/proofpoint-vs-mimecast-vs-microsoft-defender-o365.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html</loc>
+    <lastmod>2025-12-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/comparisons/proofpoint-vs-mimecast-vs-microsoft-defender-o365.backup.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/comparisons/splunk-vs-elastic-security-vs-logrhythm.html</loc>
+    <lastmod>2026-06-08T09:12:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/article-barts-health-nhs-breach.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/article-coupang-breach-2025.html</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/article-github-cisa-leaks-2026.html</loc>
+    <lastmod>2026-05-20T10:00:00+00:00</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>

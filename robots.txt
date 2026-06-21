@@ -3,6 +3,13 @@
 
 User-agent: *
 Allow: /
+Disallow: /*.py$
+Disallow: /*.md$
+Disallow: /venv/
+Disallow: /__pycache__/
+Disallow: /*.backup
+Disallow: /*.json$
+Disallow: /admin-articles.html
 
 # Sitemaps
 Sitemap: https://thehgtech.com/sitemap.xml
@@ -71,15 +78,15 @@ Disallow: /
 User-agent: serpstatbot
 Disallow: /
 
-# Block AI training bots (optional - comment out if you want AI visibility)
+# Allow AI training bots for visibility
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: CCBot
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: Claude-Web
-Disallow: /
+Allow: /
