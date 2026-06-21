@@ -1,4 +1,4 @@
-const CACHE_NAME = 'thehgtech-cache-v3';
+const CACHE_NAME = 'thehgtech-cache-v4';
 const URLS_TO_CACHE = [
     '/',
     '/index.html',
@@ -22,6 +22,20 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
+    // Network-First for interaction-bar and index.html to prevent stale content
+    if (event.request.url.includes('interaction-bar') || event.request.url.endsWith('index.html') || event.request.url.endsWith('/')) {
+        event.respondWith(
+            fetch(event.request).then(response => {
+                let responseClone = response.clone();
+                caches.open(CACHE_NAME).then(cache => {
+                    cache.put(event.request, responseClone);
+                });
+                return response;
+            }).catch(() => caches.match(event.request))
+        );
+        return;
+    }
+
     event.respondWith(
         caches.match(event.request)
             .then(response => {
