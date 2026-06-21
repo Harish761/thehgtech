@@ -155,11 +155,7 @@ function injectGraphComment() {
     (document.getElementsByTagName('head')[0] || document.body).appendChild(gc);
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function () {
-    transformLikeButtonToCommentButton();
-    injectGraphComment();
-});
+
 
 // ================================================
 // ZEN READER MODE
@@ -194,10 +190,7 @@ function toggleZenMode() {
     }
 }
 
-// Initialize on DOM load
-document.addEventListener('DOMContentLoaded', () => {
-    initZenMode();
-});
+
 
 
 // ================================================
@@ -228,11 +221,20 @@ function initFloatingDockScroll() {
     }, { passive: true });
 }
 
-// Initialize on DOM load
-document.addEventListener("DOMContentLoaded", () => {
+// Unified Initialization
+function initInteractionBar() {
+    transformLikeButtonToCommentButton();
+    injectGraphComment();
+    initZenMode();
     initFloatingDockScroll();
     injectNewsletterForm();
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initInteractionBar);
+} else {
+    initInteractionBar();
+}
 
 // ================================================
 // NEWSLETTER SUBSCRIPTION WIDGET
