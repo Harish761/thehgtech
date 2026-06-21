@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 20 2026",
+            "headline": "Prinz Eugen Ransomware Targets Recent Files",
+            "title": "New Prinz Eugen Ransomware Operation Prioritizes Recent Files for Encryption",
+            "content": "A new ransomware operation named 'Prinz Eugen' has been discovered, prioritizing recently modified files for encryption and leaving no ransom note on the system. This approach suggests a focus on maximizing damage and minimizing detection. The ransomware's tactics, techniques, and procedures (TTPs) are still being analyzed, but its ability to target recent files indicates a potential increase in effectiveness. Organizations should ensure their backups are up to date and consider implementing a least privilege access model to mitigate potential damage. The emergence of Prinz Eugen highlights the ongoing evolution of ransomware threats. Entities: Prinz Eugen, ransomware",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-prinz-eugen-ransomware-prioritizes-recent-files-for-encryption/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "14,971 WordPress Sites Cleaned Up",
+            "title": "Operation Endgame Disrupts SocGholish Servers and Cleans Infected WordPress Sites",
+            "content": "Dutch law enforcement authorities, along with counterparts from Canada, Germany, and the U.S., have disrupted malicious infrastructure associated with SocGholish and cleaned up nearly 15,000 infected WordPress websites. This operation, known as Operation Endgame, aimed to deprive cybercriminals of access to infected computer systems. The SocGholish malware has been used in various campaigns, often exploiting vulnerabilities in web applications. Website owners should ensure their WordPress installations and plugins are up to date to prevent similar infections. The success of Operation Endgame demonstrates the importance of international cooperation in combating cybercrime. Entities: SocGholish, WordPress, Operation Endgame",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/operation-endgame-disrupts-socgholish.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "AI Agents Pose Identity Challenge",
+            "title": "AI Agents Become New Identity and Governance Challenge for Organizations",
+            "content": "AI agents can access data, trigger workflows, deploy code, and interact with critical business systems, often with little oversight. This lack of governance poses a significant identity and security challenge for organizations. As AI agents become more prevalent, companies must implement proper controls and monitoring to ensure these agents do not become a vulnerability. Token Security emphasizes the need for a robust identity and access management (IAM) system that includes AI agents. Organizations should review their current IAM policies and adapt them to include AI agent governance. Entities: AI agents, IAM",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/every-ai-agent-is-an-identity-most-organizations-dont-treat-them-that-way/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "CryptoBandits Malware Abuses Tor",
+            "title": "CryptoBandits Malware Doubles as a Backdoor and Abuses Tor for Traffic Routing",
+            "content": "CryptoBandits malware has been discovered to double as a backdoor, using a local SOCKS5 proxy for traffic routing, which blends data theft with remote code execution. This capability allows the malware to abuse Tor for its communication, making it harder to detect. The use of Tor and SOCKS5 proxy indicates a sophisticated approach to evade detection and maintain persistence. Organizations should monitor their networks for unusual Tor traffic and ensure their security controls can detect and block such malware. The CryptoBandits malware highlights the evolving nature of cyber threats. Entities: CryptoBandits, Tor, SOCKS5",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cryptobandits-malware-doubles-as-a-backdoor-abuses-tor/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "Splunk Enterprise Flaw Exploited",
+            "title": "CISA Urges Patching of Critical Splunk Enterprise Vulnerability",
+            "content": "CISA has urged U.S. federal agencies to secure their systems by Sunday against a critical Splunk Enterprise vulnerability that is being exploited in attacks. The vulnerability, though not specified, indicates a high level of risk, and immediate action is required to prevent exploitation. Organizations using Splunk Enterprise should patch their systems as soon as possible to prevent potential breaches. This exploit highlights the importance of timely patch management and vulnerability assessment. Entities: Splunk Enterprise, CISA",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-splunk-enterprise-flaw-actively-exploited-patch-by-sunday/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "Klue Supply Chain Attack Impacts Cybersecurity Firms",
+            "title": "Cybersecurity Firms Impacted by Klue Supply Chain Attack",
+            "content": "The hackers exfiltrated data from Salesforce instances of Klue customers, such as Huntress and Recorded Future, in a supply chain attack. This incident underscores the risks associated with third-party integrations and the importance of securing the supply chain. Organizations should review their third-party connections and ensure that all integrations are secure and monitored. The Klue supply chain attack demonstrates how cybercriminals are targeting weak points in the supply chain to gain access to sensitive data. Entities: Klue, Salesforce, supply chain attack",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cybersecurity-firms-impacted-by-klue-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "Apple Patches Beats Studio Buds Flaw",
+            "title": "Apple Patches High-Severity Vulnerability in Beats Studio Buds",
+            "content": "Apple has updated its Beats Studio Buds wireless earbuds to patch a high-severity vulnerability that could be exploited by nearby hackers to eavesdrop on users. The vulnerability, tracked as CVE-2025-20701, refers to a case of incorrect authorization impacting the Airoha Bluetooth chip. Users should update their Beats Studio Buds to the latest firmware to prevent potential eavesdropping. This patch highlights the importance of keeping all devices, including IoT devices, up to date with the latest security patches. Entities: CVE-2025-20701, Beats Studio Buds, Apple",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/apple-patches-beats-studio-buds-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 20 2026",
+            "headline": "French President Urges AI Regulation",
+            "title": "French President Calls for International Cooperation on AI Regulation",
+            "content": "French President Emmanuel Macron has urged the world’s wealthy democracies to work together on regulating advanced AI systems. This call for cooperation emphasizes the need for a unified approach to AI governance, considering its potential impact on society and security. As AI becomes more integrated into critical systems, international cooperation will be essential to establish standards and guidelines for its development and use. Organizations should stay informed about evolving AI regulations and consider participating in international discussions to shape the future of AI governance. Entities: AI regulation, Emmanuel Macron",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/french-president-urges-us-to-share-cutting-edge-ai-and-democracies-to-cooperate-on-regulation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 19 2026",
+            "headline": "M365 Copilot SearchLeak Exposed",
+            "title": "M365 Copilot Enterprise Vulnerable to SearchLeak Prompt Injection Attack",
+            "content": "A recent proof-of-concept attack against Microsoft’s M365 Copilot Enterprise highlights a potential prompt injection threat. Dubbed SearchLeak, the attack could leak sensitive corporate data, emphasizing the need for secure AI-enhanced services. Organizations using M365 Copilot should be aware of this vulnerability and consider implementing additional security controls to prevent such attacks. The SearchLeak exposure underscores the importance of securing AI interfaces to prevent data breaches. Entities: M365 Copilot, SearchLeak",
+            "source": "Threat actor adds advanced 'EDR killer' tools to ransomware-as-a-service platform | CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4186970/m365-copilot-searchleak-your-prompt-injection-attack-surface-just-got-bigger.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "FIFA Bug Exposes World Cup Streams",
+            "title": "FIFA Vulnerability Allows Remote Takeover of World Cup Streams",
+            "content": "A hacker could have \"Rickrolled\" the World Cup — or worse — thanks to FIFA's unenforced Entra access controls. This vulnerability highlights the risks associated with unsecured access controls in live streaming services. FIFA should immediately enforce proper access controls to prevent any potential disruptions or malicious activities during the World Cup. The incident emphasizes the need for robust security measures in high-profile events to ensure their integrity and security. Entities: FIFA, World Cup, Entra access controls",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/fifa-bug-world-cup-streams-remote-takeover",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 20 2026",
             "headline": "North Korea Linked to Mastra AI Attack",
             "title": "Microsoft Attributes Mastra AI Supply Chain Attack to North Korean Hackers",
             "content": "Microsoft has attributed a recent Mastra AI supply chain attack that compromised more than 140 npm packages to the North Korean hacking group Sapphire Sleet, also known as BlueNoroff. The attack highlights the growing threat of supply chain attacks in the software development industry. The compromised packages were used in various applications, including web and mobile apps, and the attack could have allowed the hackers to steal sensitive data or inject malware. The attack is a reminder of the importance of secure software development practices and the need for developers to carefully vet third-party libraries and dependencies. Microsoft has advised developers to update their dependencies and monitor their applications for suspicious activity. The attack is part of a larger trend of state-sponsored hacking groups targeting the software supply chain.",
@@ -28,33 +118,6 @@ const websiteContent = {
             "content": "CISA has given federal agencies only three days to patch CVE-2026-20253, which can be exploited for unauthenticated remote code execution. The vulnerability affects Splunk Enterprise and can be exploited by sending a crafted request to the vulnerable server. The attack can allow hackers to gain control of the system and steal sensitive data. The vulnerability was recently disclosed, and exploits have already been detected in the wild. Users are advised to patch immediately to prevent attacks. The attack highlights the importance of rapid patching and the need for organizations to prioritize vulnerability management.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/splunk-enterprise-vulnerability-exploited-in-attacks-days-after-disclosure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Gentlemen Ransomware Evades Detection",
-            "title": "Gentlemen Ransomware Uses Multiple EDR Killers to Disable Defenses",
-            "content": "The Gentlemen ransomware-as-a-service (RaaS) is actively developing and maintaining a suite of endpoint detection and response (EDR) killers to help affiliates evade detection in attacks. The EDR killers can disable popular security software, allowing the ransomware to infect systems without being detected. The ransomware is known for its aggressive tactics, including demanding high ransoms and threatening to publish stolen data. The attack highlights the importance of using multiple layers of security and the need for organizations to prioritize endpoint security.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/gentlemen-ransomware-uses-multiple-edr-killers-to-disable-defenses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Popa Botnet Linked to Israeli Firm",
-            "title": "‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm",
-            "content": "For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This week, researchers from multiple security firms concluded that the Popa botnet is linked to a publicly-traded Israeli firm. The botnet is known for its sophisticated tactics, including using compromised devices to conduct DDoS attacks and steal sensitive data. The attack highlights the importance of securing IoT devices and the need for organizations to prioritize security.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "F5 Patches Critical NGINX Flaws",
-            "title": "F5 Patches Two Critical NGINX Open Source Flaws Enabling Remote Code Execution",
-            "content": "F5 has released security updates to address two critical security flaws in NGINX Open Source that could be exploited to achieve code execution on affected systems. The vulnerabilities are listed as CVE-2026-42530 and can be exploited by sending a crafted request to the vulnerable server. The attack can allow hackers to gain control of the system and steal sensitive data. The vulnerabilities affect NGINX Open Source versions prior to 1.23.4 and users are advised to update immediately. The attack highlights the importance of rapid patching and the need for organizations to prioritize vulnerability management.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html",
             "relatedResources": []
         },
         {
@@ -119,97 +182,97 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/texas-govt-data-breach-exposes-over-3-million-drivers-licenses/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "AutoJack Attack Hijacks AI Agents",
-            "title": "Microsoft Researchers Discover AutoJack Exploit Chain for Remote Code Execution",
-            "content": "Microsoft researchers have detailed an exploit chain, named AutoJack, that turns an AI browsing agent into a delivery vehicle for remote code execution. The exploit chain allows attackers to execute arbitrary code on a host machine by loading a malicious webpage. The AutoJack attack highlights the risks associated with AI-powered systems and the importance of implementing robust security measures to protect against such attacks. Organizations should review their AI agent configurations and implement measures to prevent similar attacks. Entities: AutoJack, AI, remote code execution",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/autojack-attack-lets-one-web-page.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Windows Clipper Malware Spreads via USB",
-            "title": "Microsoft Discloses Windows-Based Cryptocurrency Clipper Campaign Using USB LNK Worm",
-            "content": "Microsoft has disclosed details of a Windows-based cryptocurrency clipper campaign that has targeted users since February 2026. The campaign uses a clipboard-intercepting malware with self-spreading capabilities, which is spread via USB drives. The malware relies on the Tor anonymity network to hide communication. The campaign highlights the risks associated with USB drives and the importance of implementing robust security measures to protect against such attacks. Users should be cautious when using USB drives and ensure their systems are up-to-date with the latest security patches. Entities: Windows, cryptocurrency clipper, USB LNK worm",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/microsoft-details-windows-clipper.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Klue OAuth Breach Linked to Icarus",
-            "title": "Klue OAuth Breach Enables Icarus Threat Actors to Steal Salesforce CRM Data",
-            "content": "The Klue OAuth breach has been linked to the \"Icarus\" threat actors, who have been conducting an ongoing extortion campaign. The breach allowed the attackers to steal Salesforce CRM data from multiple organizations. The incident highlights the risks associated with OAuth token security and the importance of implementing robust authentication and authorization mechanisms. Salesforce users should review their OAuth token configurations and monitor their accounts for suspicious activity. Entities: Klue, OAuth, Icarus, Salesforce",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icarus-salesforce-data-theft-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "INC Ransomware Claims 830+ Victims",
-            "title": "INC Ransomware-as-a-Service Operation Emerges as Major Threat in 2026",
-            "content": "The INC ransomware-as-a-service (RaaS) operation has emerged as a major threat in 2026, claiming over 830 victims since August 2023. The operation has been actively developing and maintaining its ransomware capabilities, making it a significant threat to enterprise security. The disruption of LockBit and the shutdown of BlackCat created opportunities for INC to expand its operations. Organizations should be aware of the risks associated with INC ransomware and implement robust security measures to protect against such attacks. Entities: INC, RaaS, LockBit, BlackCat",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/inc-ransomware-claims-830-victims-since.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "15,000 SocGholish-Infected Sites Cleaned",
-            "title": "International Law Enforcement Agencies Clean Nearly 15,000 SocGholish-Infected Websites",
-            "content": "International law enforcement agencies have cleaned nearly 15,000 malware-infected WordPress websites and taken down over 100 servers linked to the SocGholish botnet and the Evil Corp Russian cybercrime group. The operation highlights the importance of collaboration between law enforcement agencies and the private sector in combating cybercrime. The SocGholish botnet has been used for various malicious activities, including ransomware attacks and data theft. Entities: SocGholish, Evil Corp, WordPress",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/law-enforcement-nukes-socgholish-malware-from-nearly-15-000-sites/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Gentlemen RaaS Gets Advanced EDR Killers",
-            "title": "The Gentlemen Ransomware-as-a-Service Operation Develops Advanced EDR Killer Tools",
-            "content": "The Gentlemen ransomware-as-a-service (RaaS) operation has given its affiliates access to advanced tools capable of disabling many enterprise endpoint detection and response (EDR) products. The tools are designed to impair system defenses before deploying the encryptor, allowing the attackers to evade detection. The development of these tools highlights the evolving nature of ransomware attacks and the need for organizations to stay vigilant and implement robust security measures. Entities: The Gentlemen, RaaS, EDR",
-            "source": "The Hacker News",
-            "sourceUrl": "https://www.csoonline.com/article/4187329/threat-actor-adds-advanced-edr-killer-tools-to-ransomware-as-a-service-platform.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Gravity SMTP Plugin Exploited",
-            "title": "Threat Actors Exploit Unauthenticated Information Disclosure Vulnerability in Gravity SMTP WordPress Plugin",
-            "content": "Threat actors are exploiting an unauthenticated information disclosure vulnerability in the Gravity SMTP WordPress plugin, which is active on over 100,000 sites. The vulnerability allows attackers to access sensitive information, including email addresses and passwords. Users of the plugin should update to the latest version to prevent exploitation. The incident highlights the importance of keeping software up-to-date and implementing robust security measures to protect against such attacks. Entities: Gravity SMTP, WordPress, information disclosure vulnerability",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-info-disclosure-bug-in-gravity-smtp-wordpress-plugin/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jun 17 2026",
-            "headline": "63% Think AI Advances Too Fast",
-            "title": "Majority of Americans Believe AI is Advancing Too Quickly",
-            "content": "A recent Pew Research poll found that 63% of Americans think AI is advancing too quickly, while 49% report using chatbots at least occasionally. The use of AI chatbots has increased dramatically since 2024, when only 33% reported using them. Specifically, ChatGPT's capabilities have contributed to this growth. The rapid advancement of AI has significant implications for professionals in the field, as it raises concerns about the potential risks and benefits of AI development. As AI continues to evolve, it is essential for developers and policymakers to consider the ethical and social implications of AI advancement. The poll's findings highlight the need for responsible AI development and deployment. Entities: ChatGPT, AI, Pew Research",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly",
+            "date": "Jun 19 2026",
+            "headline": "Elastic Buys Deductive AI for $85M",
+            "title": "Elastic Acquires Deductive AI to Enhance Software Bug Detection",
+            "content": "Elastic has agreed to acquire Deductive AI, a startup that uses artificial intelligence to catch and resolve bugs in software, for up to $85 million. Deductive AI was founded just three years ago and has developed a platform that utilizes machine learning algorithms to identify and fix software issues. This acquisition is expected to enhance Elastic's capabilities in software bug detection and resolution. The deal is a significant investment in the AI-powered software development space. Elastic's acquisition of Deductive AI is likely to have a positive impact on the company's ability to provide high-quality software solutions. The acquisition is also a testament to the growing importance of AI in software development. Entities: Deductive AI, Elastic, AI",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 20 2026",
+            "headline": "Signal's Whittaker Warns on AI Chatbots",
+            "title": "Signal's Meredith Whittaker Highlights the Importance of Understanding AI Chatbots",
+            "content": "Meredith Whittaker, a prominent figure in the tech industry, has warned that AI chatbots are not conscious beings and should not be treated as such. Whittaker emphasized that these chatbots are simply machines designed to perform specific tasks, and users should be aware of their limitations. This warning comes as AI chatbots become increasingly prevalent in various aspects of life. Whittaker's statement highlights the need for users to understand the capabilities and limitations of AI chatbots. It is essential to recognize that AI chatbots are not sentient and should not be relied upon for critical decision-making. Whittaker's warning serves as a reminder to approach AI chatbots with a critical and nuanced perspective. Entities: AI chatbots, Signal, Meredith Whittaker",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 20 2026",
+            "headline": "In the Weights AI-Centric Vanity Search",
+            "title": "Introducing In the Weights, a New AI-Centric Vanity Search Platform",
+            "content": "A new platform called In the Weights has been launched, offering an AI-centric vanity search feature. This platform allows users to search for their names and see how they are perceived online. The search results are generated using machine learning algorithms that analyze various online data sources. In the Weights is designed to provide users with a unique perspective on their online presence. The platform's AI-centric approach sets it apart from traditional search engines. Users can utilize In the Weights to gain insights into their online reputation and adjust their online presence accordingly. The platform's capabilities have significant implications for personal branding and online identity management. Entities: In the Weights, AI, vanity search",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 20 2026",
+            "headline": "Atlantic Creates AI Music Database",
+            "title": "The Atlantic Develops a Searchable Database of Music Used to Train AI Models",
+            "content": "The Atlantic has created a searchable database of music used to train AI models. This database contains four datasets of music, including two large datasets with 12 million and 9 million tracks, respectively. The database is designed to provide insight into the music used to train AI models and to facilitate research into AI-generated music. The Atlantic's database is a significant resource for those interested in AI-generated music and its potential applications. The database's searchable nature allows users to explore the music used to train AI models and understand the creative processes involved. The development of this database highlights the growing importance of transparency in AI training data. Entities: The Atlantic, AI, music database",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 20 2026",
+            "headline": "Nobel Laureate Jumper Leaves DeepMind",
+            "title": "Nobel Laureate John Jumper Departs DeepMind for Rival Anthropic",
+            "content": "Nobel laureate John Jumper has announced his departure from DeepMind, a leading AI research organization, to join rival Anthropic. Jumper's decision to leave DeepMind is a significant development in the AI research community. Jumper is not the only prominent researcher to leave DeepMind, as several other big names have also departed the organization. This exodus of talent may have implications for DeepMind's research capabilities and its ability to attract top talent. Jumper's move to Anthropic is likely to enhance the rival organization's research capabilities and reputation. The departure of prominent researchers from DeepMind may lead to a shift in the balance of power in the AI research community. Entities: John Jumper, DeepMind, Anthropic, AI",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
             "relatedResources": []
         },
         {
             "date": "Jun 18 2026",
-            "headline": "AI Tools Break — 5-Check Audit",
-            "title": "Recent AI Tool Vulnerabilities Highlight Need for Security Audits",
-            "content": "Two AI tools, Copilot and LiteLLM, were found to have broken in the same way in the same two weeks, with four research teams proving it. The pattern underneath every disclosure is one sentence: enterprise AI accepts external input with no trust boundary. On June 15, Varonis disclosed SearchLeak (CVE-2026-42824), a proof-of-concept exfiltration vulnerability. This highlights the importance of security audits for AI tools, as they can be vulnerable to external input. Professionals in the field should conduct regular security audits to identify and mitigate potential vulnerabilities. The CVE-2026-42824 vulnerability affects AI tools that accept external input without proper validation. Entities: CVE-2026-42824, Copilot, LiteLLM, AI",
+            "headline": "Anthropic's Claude Code Artifacts",
+            "title": "Anthropic Introduces Claude Code Artifacts, a New Feature for Enterprises",
+            "content": "Anthropic has announced the introduction of Claude Code Artifacts, a new feature designed for enterprises. This feature allows users to create live, shared dashboards and interactive workspaces, enhancing collaboration and productivity. Claude Code Artifacts is available to users of Claude Code on the Claude Team and Enterprise subscription plans. The feature enables users to plug in live data and create custom HTML webpages, facilitating real-time interaction and feedback. The introduction of Claude Code Artifacts is a significant development in the enterprise software space, highlighting the growing importance of collaboration and interactive tools. Entities: Anthropic, Claude Code Artifacts, enterprise software",
             "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/copilot-searched-your-mailbox-litellm-handed-out-admin",
+            "sourceUrl": "https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises",
             "relatedResources": []
         },
         {
-            "date": "Jun 17 2026",
-            "headline": "White House — Anthropic Must Block Jailbreaks",
-            "title": "White House Requires Anthropic to Prevent AI Model Jailbreaks",
-            "content": "The White House has told Anthropic that if it wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented. Security experts say that this may not be possible, as it is challenging to create an AI model that is completely secure. The White House's requirement highlights the importance of AI security and the need for developers to prioritize it. Anthropic must find a way to prevent jailbreaks and ensure the security of its AI model. This has significant implications for the development of AI models and the need for robust security measures. Entities: Anthropic, Fable 5, AI, White House",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/",
+            "date": "Jun 19 2026",
+            "headline": "Allbirds' New AI Biz",
+            "title": "Allbirds' CEO Launches New AI Business with Significant Seed Funding",
+            "content": "The CEO of Allbirds has launched a new AI business with a substantial seed round, although the details of the business plan and team are not yet clear. This development marks a significant investment in the AI space, highlighting the growing importance of AI in various industries. The new business is expected to leverage AI technologies to drive innovation and growth. Although the specifics of the business are not yet available, the investment in AI is a testament to the technology's potential for disruption and transformation. The CEO's decision to launch an AI business demonstrates the company's commitment to exploring new technologies and opportunities. Entities: Allbirds, AI, seed funding",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "OpenAI Introduces New Analytics",
+            "title": "OpenAI Launches New Usage Analytics and Spend Controls for Enterprises",
+            "content": "OpenAI has introduced new usage analytics and spend controls for enterprises, designed to help organizations manage costs and scale AI with confidence. The new features provide detailed insights into AI usage and enable enterprises to set budgets and track expenses. This development is a significant step forward in AI adoption, as it addresses concerns around cost and scalability. The introduction of usage analytics and spend controls is expected to facilitate wider adoption of AI technologies in the enterprise space. OpenAI's new features are designed to provide transparency and control, enabling organizations to make informed decisions about AI investments. Entities: OpenAI, usage analytics, spend controls, AI",
+            "source": "OpenAI",
+            "sourceUrl": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "OpenAI Enhances Health Intelligence",
+            "title": "OpenAI Improves Health Intelligence in ChatGPT with Enhanced Reasoning and Context",
+            "content": "OpenAI has announced improvements to health intelligence in ChatGPT, enhancing the model's ability to provide accurate and informative responses to health-related queries. The updates include stronger reasoning, better context, clearer communication, and physician-informed evaluations. This development is a significant step forward in AI-powered health information, as it addresses concerns around accuracy and reliability. The improved health intelligence in ChatGPT is expected to facilitate more effective and informed interactions between users and AI systems. OpenAI's enhancements demonstrate the company's commitment to developing responsible and trustworthy AI technologies. Entities: OpenAI, ChatGPT, health intelligence, AI",
+            "source": "OpenAI",
+            "sourceUrl": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Midjourney Expands to Ultrasound Scans",
+            "title": "Midjourney Introduces The Midjourney Scanner, an Ultrasound-Based Full-Body Scanner",
+            "content": "Midjourney has announced the introduction of The Midjourney Scanner, an ultrasound-based full-body scanner that uses AI to generate detailed images of the body. This development marks a significant expansion of Midjourney's capabilities, as the company moves beyond AI-generated images to real-world applications. The Midjourney Scanner is designed to provide high-quality images of the body, enabling new possibilities for medical diagnosis and research. The introduction of The Midjourney Scanner demonstrates the potential for AI to transform various industries, including healthcare. Midjourney's expansion into ultrasound scans highlights the growing importance of AI in medical imaging and diagnostics. Entities: Midjourney, The Midjourney Scanner, ultrasound, AI",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
             "relatedResources": []
         },
         {
@@ -219,60 +282,6 @@ const websiteContent = {
             "content": "Barret Zoph, the head of enterprise AI sales at OpenAI, has departed the company after just five months. Zoph returned to OpenAI in mid-January after a stint as co-founder and CTO of Thinking Machines Lab, a competing AI company founded by former OpenAI CTO Mira Murati. This marks Zoph's second departure from OpenAI, highlighting the challenges of retaining top talent in the competitive AI industry. The departure may have implications for OpenAI's enterprise AI sales strategy. Professionals in the field should be aware of the changing landscape of AI companies and the movement of key personnel. Entities: Barret Zoph, OpenAI, Thinking Machines Lab, AI",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "$1.5B — Baseten Raises Mega Round",
-            "title": "AI Inference Startup Baseten Raises $1.5 Billion in Funding",
-            "content": "Baseten, an AI inference startup, is reportedly close to finalizing a $1.5 billion round at a $13 billion valuation. This marks a significant investment in the AI industry, highlighting the growing demand for AI inference solutions. The \"inference gold rush\" is driving investment in AI startups, with Baseten being one of the beneficiaries. Professionals in the field should be aware of the increasing investment in AI and the potential opportunities and challenges it presents. The funding will likely be used to further develop Baseten's AI inference capabilities. Entities: Baseten, AI, inference",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Snap Spins Off AI Video Team",
-            "title": "Snap Inc. Spins Off AI Video Team into New Company, Dotmo",
-            "content": "Snap Inc., the maker of Snapchat, is spinning off its AI video team into a new company called Dotmo. The move is due to costs, as Snap Inc. looks to streamline its operations and focus on its core business. Dotmo will be composed of current Snap staff who are leaving the social media company to focus on AI video development. This highlights the challenges of developing and maintaining AI capabilities in-house, leading some companies to spin off their AI teams. Professionals in the field should be aware of the changing landscape of AI development and the potential for new companies to emerge. Entities: Snap Inc., Dotmo, AI, video",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "OpenAI Bulks Up — Noam Shazeer Joins",
-            "title": "OpenAI Brings in Top Talent Ahead of IPO, Including Noam Shazeer",
-            "content": "OpenAI is bulking up its team ahead of its IPO, landing top talent including Noam Shazeer, the co-inventor of the Transformer, from Google DeepMind. This marks a significant move by OpenAI to strengthen its team and prepare for its IPO. The addition of Shazeer and other top talent will likely enhance OpenAI's capabilities and improve its competitiveness in the AI industry. Professionals in the field should be aware of the changing landscape of AI companies and the movement of key personnel. The IPO is expected to be a significant event in the AI industry. Entities: OpenAI, Noam Shazeer, Google DeepMind, AI",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "47% — AI in Dating Gets Negative Reviews",
-            "title": "Almost Half of US Singles Feel Negatively About AI in Dating",
-            "content": "A recent survey found that 47% of US singles look negatively at the use of AI in dating, highlighting the challenges of developing AI-powered dating solutions. However, many dating app users are open to AI helping with profile punch-ups and conversation starters. This highlights the need for AI developers to prioritize user experience and concerns when developing AI-powered dating solutions. Professionals in the field should be aware of the potential risks and benefits of AI in dating and the need for responsible AI development. The survey's findings have significant implications for the development of AI-powered dating solutions. Entities: AI, dating, US singles",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Amazon — $50B AI Chip Opportunity",
-            "title": "Amazon Sees $50 Billion Opportunity in Selling Its AI Chips",
-            "content": "Amazon is in talks to sell its AI chips to other data centers, with CEO Andy Jassy stating that this represents a $50 billion opportunity for the company. This marks a significant move by Amazon to expand its AI capabilities and enter the AI chip market. The company's AI chips are designed to improve the performance and efficiency of AI workloads, and selling them to other data centers could help Amazon increase its revenue and competitiveness in the AI industry. Professionals in the field should be aware of the growing demand for AI chips and the potential opportunities and challenges it presents. Entities: Amazon, AI, chips, data centers",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "AI Data Centers — Fast Lane to Grid",
-            "title": "AI Data Centers Get Government-Mandated Fast Lane to the Grid",
-            "content": "The US government has told grid operators to give data centers a fast lane for interconnections, highlighting the growing importance of AI data centers and the need for reliable and efficient energy supply. However, the move fails to address electricity supply shortages, which could have significant implications for the operation of AI data centers. Professionals in the field should be aware of the challenges of powering AI data centers and the need for sustainable and efficient energy solutions. The government's move is expected to improve the reliability and efficiency of AI data centers. Entities: AI, data centers, grid, US government",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
             "relatedResources": []
         },
         {
@@ -309,42 +318,6 @@ const websiteContent = {
             "content": "The US government's ban on Anthropic's Fable 5 and Mythos 5 models has raised questions about the effectiveness of export controls on AI technology. A review of the history of export controls on cybersecurity software and AI models reveals that such controls have been largely ineffective in preventing the spread of technology. The incident highlights the need for more effective regulation of AI development and export controls. Readers should be aware of the potential risks and benefits of AI models and the importance of transparency in their development. Entities: Fable 5, Mythos 5, Anthropic, export controls",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Amazon Employees Face Termination",
-            "title": "Amazon Employees Accuse Company of Retaliation for Testifying on Data Center Limits",
-            "content": "Amazon employees who testified on data center limits at Seattle City Council hearings are facing termination, according to accusations made by the employees. The employees claim that Amazon is retaliating against them for exercising their right to free speech. The incident highlights the need for companies to respect the rights of their employees and to prioritize transparency and accountability. Readers should be aware of the potential risks and consequences of speaking out on important issues. Entities: Amazon, data center limits, employee retaliation",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/952180/amazon-seattle-data-center-moratorium-aecj-disciplinary-action",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Who Decides AI Danger",
-            "title": "The Challenge of Determining When AI is Too Dangerous",
-            "content": "The development of AI models has raised questions about who decides when AI is too dangerous. The incident involving Anthropic's Fable 5 and Mythos 5 models has highlighted the need for more effective regulation of AI development and export controls. Readers should be aware of the potential risks and benefits of AI models and the importance of transparency in their development. Entities: AI, Fable 5, Mythos 5, Anthropic",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/951542/anthropic-claude-fable-5-mythos-ban-pentagon-ai-regulation-trump",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Adobe Introduces AI Assistants",
-            "title": "Adobe Rolls Out AI Assistants for Creative Cloud Suite",
-            "content": "Adobe has introduced AI assistants for its Creative Cloud suite, including Photoshop, Premiere, and Illustrator. The AI assistants are designed to help users with tasks such as editing and design. The development of AI assistants highlights the advancements being made in AI research and development. Readers should be aware of the potential benefits and applications of this technology. Entities: Adobe, Creative Cloud, AI assistants, Photoshop, Premiere, Illustrator",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "AI Helps Diagnose Rare Diseases",
-            "title": "Researchers Use OpenAI Model to Help Diagnose Rare Genetic Diseases",
-            "content": "Researchers have used an OpenAI reasoning model to help diagnose rare genetic diseases affecting children. The model was able to identify 18 new diagnoses in previously unsolved cases. The development of AI models for medical diagnosis highlights the potential benefits and applications of this technology. Readers should be aware of the potential risks and benefits of AI models in medical diagnosis. Entities: OpenAI, rare genetic diseases, medical diagnosis",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/diagnose-rare-childhood-diseases",
             "relatedResources": []
         },
         {
