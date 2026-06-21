@@ -1,0 +1,75 @@
+name: Send Newsletter (New Analysis)
+
+on:
+  push:
+    paths:
+      - 'articles/**/*.html'
+      - 'guides/**/*.html'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      filepath:
+        description: 'Path to the article/guide HTML file'
+        required: true
+        type: string
+
+jobs:
+  send-newsletter:
+    runs-on: ubuntu-latest
+    # Don't run on branch pushes, only main (or if manually triggered)
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # We need this to get the diff of the push
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4
+      
+      - name: Determine New Files
+        id: files
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "FILEPATH=${{ github.event.inputs.filepath }}" >> $GITHUB_ENV
+          else
+            # Get added HTML files in articles/ or guides/
+            ADDED_FILES=$(git diff --name-only --diff-filter=A HEAD^ HEAD | grep -E '^(articles|guides)/.*\.html$' || true)
+            # Take the first one (in case multiple were pushed, though usually just one)
+            FIRST_FILE=$(echo "$ADDED_FILES" | head -n 1)
+            
+            if [ -z "$FIRST_FILE" ]; then
+              echo "No new HTML files found in push."
+              echo "SKIP_SEND=true" >> $GITHUB_ENV
+            else
+              echo "FILEPATH=$FIRST_FILE" >> $GITHUB_ENV
+              echo "SKIP_SEND=false" >> $GITHUB_ENV
+            fi
+          fi
+
+      - name: Send Article Newsletter via Brevo
+        if: env.SKIP_SEND != 'true'
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+        run: |
+          echo "Sending newsletter for: $FILEPATH"
+          python scripts/send_newsletter.py --type article --path "$FILEPATH"
+      
+      - name: Summary
+        if: always()
+        run: |
+          if [ "${{ env.SKIP_SEND }}" == "true" ]; then
+            echo "### ℹ️ No new articles detected to send." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### 📧 Newsletter Sent: New Analysis" >> $GITHUB_STEP_SUMMARY
+            echo "Dispatched article '$FILEPATH' to Brevo API." >> $GITHUB_STEP_SUMMARY
+          fi
