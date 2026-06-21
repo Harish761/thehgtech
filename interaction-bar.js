@@ -231,5 +231,82 @@ function initFloatingDockScroll() {
 // Initialize on DOM load
 document.addEventListener("DOMContentLoaded", () => {
     initFloatingDockScroll();
+    injectNewsletterForm();
 });
+
+// ================================================
+// NEWSLETTER SUBSCRIPTION WIDGET
+// ================================================
+function injectNewsletterForm() {
+    const interactionBar = document.querySelector('.interaction-bar');
+    if (!interactionBar) return;
+    if (document.getElementById('hg-newsletter-global')) return; // Prevent duplicate
+
+    const wrapper = document.createElement('div');
+    wrapper.id = 'hg-newsletter-global';
+    wrapper.className = 'container';
+    wrapper.style.maxWidth = '800px';
+    wrapper.style.margin = '4rem auto 2rem';
+
+    wrapper.innerHTML = `
+        <style>
+            .hg-newsletter-wrapper { background: var(--glass); border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; text-align: center; backdrop-filter: blur(10px); position: relative; overflow: hidden; }
+            .hg-newsletter-wrapper::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #00D9FF, #8B5CF6); }
+            .hg-newsletter-title { font-size: 1.75rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
+            .hg-newsletter-desc { color: var(--text-secondary); font-size: 1rem; margin-bottom: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+            .hg-newsletter-input { width: 100%; max-width: 350px; padding: 0.85rem 1.2rem; border-radius: 6px; border: 1px solid var(--border); background: rgba(0, 0, 0, 0.4); color: #fff; font-family: inherit; outline: none; transition: border-color 0.3s ease; }
+            .hg-newsletter-input:focus { border-color: var(--accent-cyan); }
+            .hg-newsletter-btn { background: var(--accent-cyan); color: #000; font-weight: 700; padding: 0.85rem 1.5rem; border: none; border-radius: 6px; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; white-space: nowrap; }
+            .hg-newsletter-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); }
+            .hg-form-row { display: flex; gap: 0.5rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+            .sib-form-message-panel { margin-top: 1rem; padding: 0.75rem; border-radius: 6px; font-size: 0.9rem; display: none; }
+            #error-message { color: #ff4949; background: rgba(255, 73, 73, 0.1); border: 1px solid rgba(255, 73, 73, 0.3); }
+            #success-message { color: #13ce66; background: rgba(19, 206, 102, 0.1); border: 1px solid rgba(19, 206, 102, 0.3); }
+            @media (max-width: 600px) { .hg-form-row { flex-direction: column; } .hg-newsletter-input, .hg-newsletter-btn { max-width: 100%; width: 100%; } }
+        </style>
+        <div class="hg-newsletter-wrapper">
+            <div class="hg-newsletter-title">
+                <i class="fas fa-envelope-open-text" style="color: var(--accent-cyan);"></i> The Daily Intel
+            </div>
+            <div class="hg-newsletter-desc">Get the latest cyber threats, zero-days, and AI security analysis delivered straight to your inbox. No spam, ever.</div>
+            <div class="sib-form">
+                <div id="sib-form-container" class="sib-form-container">
+                    <form id="sib-form" method="POST" action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A==" data-type="subscription">
+                        <div class="hg-form-row">
+                            <input class="hg-newsletter-input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." data-required="true" required />
+                            <button class="hg-newsletter-btn" form="sib-form" type="submit">SUBSCRIBE</button>
+                        </div>
+                        <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
+                        <input type="hidden" name="locale" value="en">
+                    </form>
+                    <div id="error-message" class="sib-form-message-panel">
+                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                            <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
+                        </div>
+                    </div>
+                    <div id="success-message" class="sib-form-message-panel">
+                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                            <span class="sib-form-message-panel__inner-text">Your subscription has been successful. Please check your email to confirm!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Insert right before interaction bar
+    interactionBar.parentNode.insertBefore(wrapper, interactionBar);
+
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+    window.LOCALE = 'en';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid.";
+    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+    window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
+    window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
+    
+    var sibScript = document.createElement('script');
+    sibScript.defer = true;
+    sibScript.src = 'https://sibforms.com/forms/end-form/build/main.js';
+    document.body.appendChild(sibScript);
+}
 
