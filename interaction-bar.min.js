@@ -228,6 +228,7 @@ function initInteractionBar() {
     initZenMode();
     initFloatingDockScroll();
     injectNewsletterForm();
+    injectNewsletterScripts();
 }
 
 if (document.readyState === 'loading') {
@@ -354,7 +355,18 @@ function injectNewsletterForm() {
     // Insert right before interaction bar
     interactionBar.parentNode.insertBefore(wrapper, interactionBar);
 
-    // Inject scripts to execute correctly since innerHTML won't execute them
+
+
+}
+
+
+// ================================================
+// NEWSLETTER SCRIPTS INJECTION (GLOBAL)
+// ================================================
+function injectNewsletterScripts() {
+    // Only inject if there's a form on the page
+    if (!document.getElementById('sib-form-container')) return;
+
     if (!window.LOCALE) {
         window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
         window.LOCALE = 'en';
@@ -362,7 +374,7 @@ function injectNewsletterForm() {
         window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
         window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
         window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
-        var AUTOHIDE = Boolean(0);
+        window.AUTOHIDE = Boolean(0);
     }
     
     if (!document.querySelector('script[src*="sibforms.com"]')) {
@@ -380,6 +392,4 @@ function injectNewsletterForm() {
         recaptchaScript.src = "https://www.google.com/recaptcha/api.js?hl=en";
         document.body.appendChild(recaptchaScript);
     }
-
 }
-
