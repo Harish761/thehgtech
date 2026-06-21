@@ -271,9 +271,9 @@ function injectNewsletterForm() {
             <div class="hg-newsletter-desc">Get the latest cyber threats, zero-days, and AI security analysis delivered straight to your inbox. No spam, ever.</div>
             <div class="sib-form">
                 <div id="sib-form-container" class="sib-form-container">
-                    <form id="sib-form" method="POST" action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A==" data-type="subscription">
+                    <form id="sib-form" method="POST" action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A==" target="_blank">
                         <div class="hg-form-row">
-                            <input class="hg-newsletter-input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." data-required="true" required />
+                            <input class="hg-newsletter-input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." required />
                             <button class="hg-newsletter-btn" form="sib-form" type="submit">SUBSCRIBE</button>
                         </div>
                         <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
@@ -296,17 +296,5 @@ function injectNewsletterForm() {
 
     // Insert right before interaction bar
     interactionBar.parentNode.insertBefore(wrapper, interactionBar);
-
-    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-    window.LOCALE = 'en';
-    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid.";
-    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
-    window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
-    window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
-    
-    var sibScript = document.createElement('script');
-    sibScript.defer = true;
-    sibScript.src = 'https://sibforms.com/forms/end-form/build/main.js';
-    document.body.appendChild(sibScript);
 }
 
