@@ -251,21 +251,7 @@ function injectNewsletterForm() {
     wrapper.style.margin = '4rem auto 2rem';
 
     wrapper.innerHTML = `
-        <style>
-            .hg-newsletter-wrapper { background: var(--glass); border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; text-align: center; backdrop-filter: blur(10px); position: relative; overflow: hidden; }
-            .hg-newsletter-wrapper::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #00D9FF, #8B5CF6); }
-            .hg-newsletter-title { font-size: 1.75rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
-            .hg-newsletter-desc { color: var(--text-secondary); font-size: 1rem; margin-bottom: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto; }
-            .hg-newsletter-input { width: 100%; max-width: 350px; padding: 0.85rem 1.2rem; border-radius: 6px; border: 1px solid var(--border); background: rgba(0, 0, 0, 0.4); color: #fff; font-family: inherit; outline: none; transition: border-color 0.3s ease; }
-            .hg-newsletter-input:focus { border-color: var(--accent-cyan); }
-            .hg-newsletter-btn { background: var(--accent-cyan); color: #000; font-weight: 700; padding: 0.85rem 1.5rem; border: none; border-radius: 6px; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; white-space: nowrap; }
-            .hg-newsletter-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); }
-            .hg-form-row { display: flex; gap: 0.5rem; justify-content: center; align-items: center; flex-wrap: wrap; }
-            .sib-form-message-panel { margin-top: 1rem; padding: 0.75rem; border-radius: 6px; font-size: 0.9rem; display: none; }
-            #error-message { color: #ff4949; background: rgba(255, 73, 73, 0.1); border: 1px solid rgba(255, 73, 73, 0.3); }
-            #success-message { color: #13ce66; background: rgba(19, 206, 102, 0.1); border: 1px solid rgba(19, 206, 102, 0.3); }
-            @media (max-width: 600px) { .hg-form-row { flex-direction: column; } .hg-newsletter-input, .hg-newsletter-btn { max-width: 100%; width: 100%; } }
-        </style>
+
         <div class="hg-newsletter-wrapper">
             <div class="hg-newsletter-title">
                 <i class="fas fa-envelope-open-text" style="color: var(--accent-cyan);"></i> The Daily Intel
@@ -273,22 +259,73 @@ function injectNewsletterForm() {
             <div class="hg-newsletter-desc">Get the latest cyber threats, zero-days, and AI security analysis delivered straight to your inbox. No spam, ever.</div>
             
             <div class="sib-form">
+                <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+                <style>
+                    /* Override Brevo's default styles for Dark Mode */
+                    .sib-form { background: transparent !important; padding: 0 !important; }
+                    .sib-form-container { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
+                    .sib-input .entry__field { flex: unset !important; }
+                    
+                    /* Hide Brevo's default text/titles as we use our own */
+                    .sib-form-block > p { display: none !important; }
+                    .sib-text-form-block { display: none !important; }
+                    .entry__label { display: none !important; }
+                    .entry__specification { display: none !important; }
+
+                    /* Match our layout */
+                    .hg-form-row { display: flex; gap: 0.5rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+                    .hg-newsletter-input {
+                        width: 100%;
+                        max-width: 350px;
+                        padding: 0.85rem 1.2rem;
+                        border-radius: 6px;
+                        border: 1px solid var(--border);
+                        background: rgba(0, 0, 0, 0.4);
+                        color: #fff;
+                        font-family: inherit;
+                        outline: none;
+                        transition: border-color 0.3s ease;
+                        height: 48px; /* Force consistent height */
+                    }
+                    .hg-newsletter-input:focus { border-color: var(--accent-cyan); }
+                    .hg-newsletter-btn {
+                        background: var(--accent-cyan);
+                        color: #000;
+                        font-weight: 700;
+                        padding: 0 1.5rem;
+                        height: 48px; /* Match input height */
+                        border: none;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        transition: transform 0.2s ease, box-shadow 0.2s ease;
+                        white-space: nowrap;
+                    }
+                    .hg-newsletter-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); }
+                    
+                    /* Captcha styling */
+                    .sib-captcha { margin-top: 1rem !important; display: flex !important; justify-content: center !important; }
+                    
+                    @media (max-width: 600px) {
+                        .hg-form-row { flex-direction: column; }
+                        .hg-newsletter-input, .hg-newsletter-btn { max-width: 100%; width: 100%; }
+                    }
+                </style>
                 <div id="sib-form-container" class="sib-form-container">
-                    <div id="error-message" class="sib-form-message-panel">
+                    <div id="error-message" class="sib-form-message-panel" style="display:none; color: #ff4949; background: rgba(255, 73, 73, 0.1); border: 1px solid rgba(255, 73, 73, 0.3); padding: 0.75rem; border-radius: 6px; margin-bottom: 1rem;">
                         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
                             <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
                         </div>
                     </div>
-                    <div id="success-message" class="sib-form-message-panel">
+                    <div id="success-message" class="sib-form-message-panel" style="display:none; color: #13ce66; background: rgba(19, 206, 102, 0.1); border: 1px solid rgba(19, 206, 102, 0.3); padding: 0.75rem; border-radius: 6px; margin-bottom: 1rem;">
                         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
                             <span class="sib-form-message-panel__inner-text">Your subscription has been successful. Please check your email to confirm!</span>
                         </div>
                     </div>
 
                     <form id="sib-form" method="POST" action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A==" data-type="subscription">
-                        <div class="sib-input sib-form-block">
+                        <div class="sib-input sib-form-block" style="padding:0; margin:0;">
                             <div class="form__entry entry_block hg-form-row">
-                                <div class="entry__field" style="flex:1;">
+                                <div class="entry__field">
                                     <input class="input hg-newsletter-input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." data-required="true" required />
                                 </div>
                                 <button class="sib-form-block__button sib-form-block__button-with-loader hg-newsletter-btn" form="sib-form" type="submit">SUBSCRIBE</button>
@@ -296,7 +333,7 @@ function injectNewsletterForm() {
                             <label class="entry__error entry__error--primary" style="color: #ff4949; display:block; margin-top:0.5rem;"></label>
                         </div>
 
-                        <div class="sib-captcha sib-form-block" style="margin-top: 1rem; display: flex; justify-content: center;">
+                        <div class="sib-captcha sib-form-block" style="margin-top: 1rem; display: flex; justify-content: center; background: transparent; padding: 0;">
                             <div class="form__entry entry_block">
                                 <div class="form__label-row">
                                     <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0" data-theme="dark"></div>
@@ -311,6 +348,7 @@ function injectNewsletterForm() {
                 </div>
             </div>
         </div>
+
     `;
 
     // Insert right before interaction bar
