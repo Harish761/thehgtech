@@ -2479,20 +2479,12 @@
       "date": "2026-03-28",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-71",
-      "incident_id": 71,
-      "title": "Google Waymo Vehicle and Bus Allegedly Collide in California",
-      "date": "2026-03-23",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 311,
+    "total": 310,
     "last7Days": 72,
     "last30Days": 183
   },
-  "lastUpdated": "2026-06-21T03:06:56.470124+05:30"
+  "lastUpdated": "2026-06-21T10:41:40.695624+05:30"
 }
