@@ -2663,13 +2663,7 @@
                         <div class="sib-captcha sib-form-block" style="margin-top: 1rem; display: flex; justify-content: center; background: transparent; padding: 0;">
                             <div class="form__entry entry_block">
                                 <div class="form__label-row">
-                                    <script>
-                                      function handleCaptchaResponse() {
-                                        var event = new Event('captchaChange');
-                                        document.getElementById('sib-captcha').dispatchEvent(event);
-                                      }
-                                    </script>
-                                    <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0" data-callback="handleCaptchaResponse" data-theme="dark"></div>
+                                    <div id="sib-captcha"></div>
                                 </div>
                                 <label class="entry__error entry__error--primary" style="color: #ff4949; display:block; margin-top:0.5rem;"></label>
                             </div>
@@ -3652,7 +3646,7 @@
     <link rel="stylesheet" href="article-modal.css" media="print" onload="this.media='all'">
     <script src="article-modal.min.js" defer></script>
     <link rel="stylesheet" href="interaction-bar.css?v=20251207-0041" media="print" onload="this.media='all'">
-    <script src="interaction-bar.min.js?v=20260624" defer></script>
+    <script src="interaction-bar.min.js?v=20260625" defer></script>
 
     <!-- Visual Enhancements (deferred) -->
     <link rel="stylesheet" href="visual-enhancements.css" media="print" onload="this.media='all'">

@@ -337,7 +337,7 @@ function injectNewsletterForm() {
                         <div class="sib-captcha sib-form-block" style="margin-top: 1rem; display: flex; justify-content: center; background: transparent; padding: 0;">
                             <div class="form__entry entry_block">
                                 <div class="form__label-row">
-                                    <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0" data-theme="dark"></div>
+                                    <div id="sib-captcha"></div>
                                 </div>
                                 <label class="entry__error entry__error--primary" style="color: #ff4949; display:block; margin-top:0.5rem;"></label>
                             </div>
@@ -364,32 +364,63 @@ function injectNewsletterForm() {
 // NEWSLETTER SCRIPTS INJECTION (GLOBAL)
 // ================================================
 function injectNewsletterScripts() {
-    // Only inject if there's a form on the page
-    if (!document.getElementById('sib-form-container')) return;
-
+    // Always set Brevo required globals
     if (!window.LOCALE) {
         window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
         window.LOCALE = 'en';
-        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid.";
-        window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
-        window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+        window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+        window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
         window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
         window.AUTOHIDE = Boolean(0);
     }
-    
-    if (!document.querySelector('script[src*="sibforms.com"]')) {
+
+    // Always define the captcha callback
+    window.handleCaptchaResponse = function() {
+        var event = new Event('captchaChange');
+        var cap = document.getElementById('sib-captcha');
+        if (cap) cap.dispatchEvent(event);
+    };
+
+    // Inject Brevo main.js if not already loaded
+    if (!document.querySelector('script[src*="sibforms.com/forms/end-form/build/main.js"]')) {
         const sibScript = document.createElement('script');
         sibScript.src = "https://sibforms.com/forms/end-form/build/main.js";
         document.body.appendChild(sibScript);
     }
-    if (!document.querySelector('script[src*="recaptcha"]')) {
-        window.handleCaptchaResponse = function() {
-            var event = new Event('captchaChange');
-            var cap = document.getElementById('sib-captcha');
-            if (cap) cap.dispatchEvent(event);
+
+    // Inject reCAPTCHA api.js if not already loaded
+    // Use explicit rendering (onload=renderCaptcha) so we can re-render
+    // the widget even if the DOM element was injected after api.js loaded
+    if (!document.querySelector('script[src*="recaptcha/api.js"]')) {
+        window._hgRenderCaptcha = function() {
+            const el = document.getElementById('sib-captcha');
+            if (el && typeof grecaptcha !== 'undefined') {
+                // If widget already rendered, skip
+                if (el.childElementCount > 0) return;
+                grecaptcha.render(el, {
+                    sitekey: '6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0',
+                    theme: 'dark',
+                    callback: 'handleCaptchaResponse'
+                });
+            }
         };
         const recaptchaScript = document.createElement('script');
-        recaptchaScript.src = "https://www.google.com/recaptcha/api.js?hl=en";
+        recaptchaScript.src = "https://www.google.com/recaptcha/api.js?onload=_hgRenderCaptcha&render=explicit&hl=en";
+        recaptchaScript.async = true;
+        recaptchaScript.defer = true;
         document.body.appendChild(recaptchaScript);
+    } else {
+        // api.js already loaded — render the widget now if it exists
+        setTimeout(function() {
+            const el = document.getElementById('sib-captcha');
+            if (el && typeof grecaptcha !== 'undefined' && el.childElementCount === 0) {
+                grecaptcha.render(el, {
+                    sitekey: '6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0',
+                    theme: 'dark',
+                    callback: 'handleCaptchaResponse'
+                });
+            }
+        }, 500);
     }
 }
