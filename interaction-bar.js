@@ -261,89 +261,115 @@ function injectNewsletterForm() {
             
             <div class="sib-form">
                 <style>
-                    /* Override Brevo's default styles for Dark Mode */
-                    .sib-form { background: transparent !important; padding: 0 !important; }
-                    .sib-form-container { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
-                    .sib-input .entry__field { flex: unset !important; }
-                    
-                    /* Hide Brevo's default text/titles as we use our own */
-                    .sib-form-block > p { display: none !important; }
-                    .sib-text-form-block { display: none !important; }
-                    .entry__label { display: none !important; }
-                    .entry__specification { display: none !important; }
+                    /* Newsletter card wrapper */
+                    #hg-newsletter-global .hg-newsletter-wrapper {
+                        background: rgba(255,255,255,0.04);
+                        border: 1px solid rgba(255,255,255,0.1);
+                        border-radius: 16px;
+                        padding: 2.5rem 2rem;
+                        text-align: center;
+                        backdrop-filter: blur(12px);
+                        position: relative;
+                        overflow: hidden;
+                        box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+                    }
+                    #hg-newsletter-global .hg-newsletter-wrapper::before {
+                        content: '';
+                        position: absolute;
+                        top: 0; left: 0; right: 0; height: 3px;
+                        background: linear-gradient(90deg, #00D9FF, #8B5CF6);
+                    }
+                    #hg-newsletter-global .hg-newsletter-title {
+                        font-size: 1.5rem;
+                        font-weight: 800;
+                        color: #fff;
+                        margin-bottom: 0.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.6rem;
+                    }
+                    #hg-newsletter-global .hg-newsletter-desc {
+                        color: rgba(255,255,255,0.6);
+                        font-size: 0.95rem;
+                        margin-bottom: 1.75rem;
+                        max-width: 480px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        line-height: 1.6;
+                    }
 
-                    /* Match our layout */
-                    .hg-form-row { display: flex; gap: 0.5rem; justify-content: center; align-items: center; flex-wrap: wrap; }
-                    .hg-newsletter-input {
-                        width: 100%;
-                        max-width: 350px;
-                        padding: 0.85rem 1.2rem;
-                        border-radius: 6px;
-                        border: 1px solid var(--border) !important;
-                        background: rgba(0, 0, 0, 0.5) !important;
+                    /* Form elements */
+                    #hg-newsletter-global .sib-form { background: transparent !important; padding: 0 !important; }
+                    #hg-newsletter-global .sib-form-container { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
+                    #hg-newsletter-global .hg-form-row { display: flex; gap: 0.6rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+                    #hg-newsletter-global .hg-newsletter-input {
+                        flex: 1;
+                        min-width: 200px;
+                        max-width: 320px;
+                        padding: 0 1.2rem;
+                        height: 48px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(0,217,255,0.3) !important;
+                        background: rgba(0,0,0,0.45) !important;
                         color: #fff !important;
+                        font-size: 0.95rem;
                         font-family: inherit;
                         outline: none;
-                        transition: border-color 0.3s ease;
-                        height: 48px;
+                        transition: border-color 0.3s ease, box-shadow 0.3s ease;
                     }
-                    .hg-newsletter-input::placeholder { color: #888 !important; }
-                    .hg-newsletter-input:focus { border-color: var(--accent-cyan) !important; box-shadow: 0 0 0 2px rgba(0,217,255,0.2) !important; }
-                    .hg-newsletter-btn {
-                        background: var(--accent-cyan);
+                    #hg-newsletter-global .hg-newsletter-input::placeholder { color: rgba(255,255,255,0.35) !important; }
+                    #hg-newsletter-global .hg-newsletter-input:focus {
+                        border-color: #00D9FF !important;
+                        box-shadow: 0 0 0 3px rgba(0,217,255,0.15) !important;
+                    }
+                    #hg-newsletter-global .hg-newsletter-btn {
+                        height: 48px;
+                        padding: 0 1.75rem;
+                        background: linear-gradient(135deg, #00D9FF, #00b4cc);
                         color: #000;
                         font-weight: 700;
-                        padding: 0 1.5rem;
-                        height: 48px; /* Match input height */
+                        font-size: 0.875rem;
+                        letter-spacing: 0.05em;
                         border: none;
-                        border-radius: 6px;
+                        border-radius: 8px;
                         cursor: pointer;
-                        transition: transform 0.2s ease, box-shadow 0.2s ease;
                         white-space: nowrap;
+                        transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s;
                     }
-                    .hg-newsletter-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3); }
-                    
-                    /* Captcha styling */
-                    .sib-captcha { margin-top: 1rem !important; display: flex !important; justify-content: center !important; }
-                    
-                    @media (max-width: 600px) {
-                        .hg-form-row { flex-direction: column; }
-                        .hg-newsletter-input, .hg-newsletter-btn { max-width: 100%; width: 100%; }
+                    #hg-newsletter-global .hg-newsletter-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,217,255,0.35); }
+                    #hg-newsletter-global .hg-newsletter-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+                    #hg-newsletter-global .hg-captcha-wrap { display: flex; justify-content: center; margin-top: 1.25rem; }
+                    #hg-newsletter-global .hg-form-msg { padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.9rem; margin-bottom: 1.25rem; display: none; text-align: center; }
+                    #hg-newsletter-global .hg-form-msg.success { color: #13ce66; background: rgba(19,206,102,0.12); border: 1px solid rgba(19,206,102,0.3); }
+                    #hg-newsletter-global .hg-form-msg.error   { color: #ff4949; background: rgba(255,73,73,0.1);   border: 1px solid rgba(255,73,73,0.3); }
+                    #hg-newsletter-global .hg-field-error { color: #ff6b6b; font-size: 0.82rem; margin-top: 0.5rem; min-height: 1.2em; display: block; text-align: center; }
+                    @media (max-width: 560px) {
+                        #hg-newsletter-global .hg-newsletter-input { max-width: 100%; width: 100%; }
+                        #hg-newsletter-global .hg-newsletter-btn { width: 100%; }
+                        #hg-newsletter-global .hg-form-row { flex-direction: column; }
                     }
                 </style>
-                <div id="sib-form-container" class="sib-form-container">
-                    <div id="error-message" class="sib-form-message-panel" style="display:none; color: #ff4949; background: rgba(255, 73, 73, 0.1); border: 1px solid rgba(255, 73, 73, 0.3); padding: 0.75rem; border-radius: 6px; margin-bottom: 1rem;">
-                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                            <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
-                        </div>
-                    </div>
-                    <div id="success-message" class="sib-form-message-panel" style="display:none; color: #13ce66; background: rgba(19, 206, 102, 0.1); border: 1px solid rgba(19, 206, 102, 0.3); padding: 0.75rem; border-radius: 6px; margin-bottom: 1rem;">
-                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                            <span class="sib-form-message-panel__inner-text">Your subscription has been successful. Please check your email to confirm!</span>
-                        </div>
-                    </div>
+                <div id="sib-form-container">
+                    <div id="hg-success" class="hg-form-msg success">🎉 You're subscribed! Check your inbox to confirm.</div>
+                    <div id="hg-error"   class="hg-form-msg error">Something went wrong. Please try again.</div>
 
-                    <form id="sib-form" method="POST" action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A==" data-type="subscription">
-                        <div class="sib-input sib-form-block" style="padding:0; margin:0;">
-                            <div class="form__entry entry_block hg-form-row">
-                                <div class="entry__field">
-                                    <input class="hg-newsletter-input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." />
-                                </div>
-                                <button class="sib-form-block__button sib-form-block__button-with-loader hg-newsletter-btn" form="sib-form" type="submit">SUBSCRIBE</button>
-                            </div>
-                            <label class="entry__error entry__error--primary" style="color: #ff4949; display:block; margin-top:0.5rem;"></label>
+                    <form id="sib-form" method="POST"
+                        action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A=="
+                        data-type="subscription">
+
+                        <div class="hg-form-row">
+                            <input class="hg-newsletter-input" type="email" id="EMAIL" name="EMAIL"
+                                   autocomplete="email" placeholder="Enter your email address…" />
+                            <button class="hg-newsletter-btn" type="submit" id="hg-sub-btn">SUBSCRIBE</button>
+                        </div>
+                        <span class="hg-field-error" id="hg-field-err"></span>
+
+                        <div class="hg-captcha-wrap">
+                            <div id="sib-captcha"></div>
                         </div>
 
-                        <div class="sib-captcha sib-form-block" style="margin-top: 1rem; display: flex; justify-content: center; background: transparent; padding: 0;">
-                            <div class="form__entry entry_block">
-                                <div class="form__label-row">
-                                    <div id="sib-captcha"></div>
-                                </div>
-                                <label class="entry__error entry__error--primary" style="color: #ff4949; display:block; margin-top:0.5rem;"></label>
-                            </div>
-                        </div>
-
-                        <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
+                        <input type="text" name="email_address_check" value="" style="display:none;">
                         <input type="hidden" name="locale" value="en">
                     </form>
                 </div>
