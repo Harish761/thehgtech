@@ -260,7 +260,6 @@ function injectNewsletterForm() {
             <div class="hg-newsletter-desc">Get the latest cyber threats, zero-days, and AI security analysis delivered straight to your inbox. No spam, ever.</div>
             
             <div class="sib-form">
-                <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
                 <style>
                     /* Override Brevo's default styles for Dark Mode */
                     .sib-form { background: transparent !important; padding: 0 !important; }
@@ -280,15 +279,16 @@ function injectNewsletterForm() {
                         max-width: 350px;
                         padding: 0.85rem 1.2rem;
                         border-radius: 6px;
-                        border: 1px solid var(--border);
-                        background: rgba(0, 0, 0, 0.4);
-                        color: #fff;
+                        border: 1px solid var(--border) !important;
+                        background: rgba(0, 0, 0, 0.5) !important;
+                        color: #fff !important;
                         font-family: inherit;
                         outline: none;
                         transition: border-color 0.3s ease;
-                        height: 48px; /* Force consistent height */
+                        height: 48px;
                     }
-                    .hg-newsletter-input:focus { border-color: var(--accent-cyan); }
+                    .hg-newsletter-input::placeholder { color: #888 !important; }
+                    .hg-newsletter-input:focus { border-color: var(--accent-cyan) !important; box-shadow: 0 0 0 2px rgba(0,217,255,0.2) !important; }
                     .hg-newsletter-btn {
                         background: var(--accent-cyan);
                         color: #000;
@@ -327,7 +327,7 @@ function injectNewsletterForm() {
                         <div class="sib-input sib-form-block" style="padding:0; margin:0;">
                             <div class="form__entry entry_block hg-form-row">
                                 <div class="entry__field">
-                                    <input class="input hg-newsletter-input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." data-required="true" required />
+                                    <input class="hg-newsletter-input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." />
                                 </div>
                                 <button class="sib-form-block__button sib-form-block__button-with-loader hg-newsletter-btn" form="sib-form" type="submit">SUBSCRIBE</button>
                             </div>
@@ -360,67 +360,114 @@ function injectNewsletterForm() {
 }
 
 
-// ================================================
-// NEWSLETTER SCRIPTS INJECTION (GLOBAL)
-// ================================================
 function injectNewsletterScripts() {
-    // Always set Brevo required globals
-    if (!window.LOCALE) {
-        window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-        window.LOCALE = 'en';
-        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-        window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-        window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-        window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
-        window.AUTOHIDE = Boolean(0);
-    }
+    // Set Brevo required globals before any script loads
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+    window.LOCALE = 'en';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+    window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+    window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
+    window.AUTOHIDE = Boolean(0);
 
-    // Always define the captcha callback
+    // Define captcha callback
     window.handleCaptchaResponse = function() {
-        var event = new Event('captchaChange');
         var cap = document.getElementById('sib-captcha');
-        if (cap) cap.dispatchEvent(event);
+        if (cap) cap.dispatchEvent(new Event('captchaChange'));
     };
 
-    // Inject Brevo main.js if not already loaded
-    if (!document.querySelector('script[src*="sibforms.com/forms/end-form/build/main.js"]')) {
-        const sibScript = document.createElement('script');
-        sibScript.src = "https://sibforms.com/forms/end-form/build/main.js";
-        document.body.appendChild(sibScript);
+    // Our own form submit handler — no dependency on Brevo's main.js
+    function wireFormSubmit() {
+        const form = document.getElementById('sib-form');
+        if (!form || form._hgWired) return;
+        form._hgWired = true;
+
+        const btn = form.querySelector('[type="submit"]');
+        const successDiv = document.getElementById('success-message');
+        const errorDiv = document.getElementById('error-message');
+        const emailInput = document.getElementById('EMAIL');
+        const errorLabel = form.querySelector('.entry__error--primary');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Clear previous state
+            if (errorLabel) errorLabel.textContent = '';
+            if (errorDiv) errorDiv.style.display = 'none';
+
+            const email = emailInput ? emailInput.value.trim() : '';
+
+            // Validate email
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                if (errorLabel) errorLabel.textContent = 'Please enter a valid email address.';
+                return;
+            }
+
+            // Validate captcha
+            if (typeof grecaptcha !== 'undefined') {
+                const response = grecaptcha.getResponse(window._hgCaptchaWidgetId);
+                if (!response) {
+                    if (errorLabel) errorLabel.textContent = 'Please tick "I am not a robot" first.';
+                    return;
+                }
+            }
+
+            // Disable button while submitting
+            if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                mode: 'no-cors'  // Cross-origin: can't read response, assume success
+            }).then(function() {
+                if (successDiv) successDiv.style.display = 'block';
+                if (errorDiv) errorDiv.style.display = 'none';
+                form.reset();
+                if (typeof grecaptcha !== 'undefined') grecaptcha.reset(window._hgCaptchaWidgetId);
+            }).catch(function() {
+                if (errorDiv) errorDiv.style.display = 'block';
+            }).finally(function() {
+                if (btn) { btn.disabled = false; btn.textContent = 'SUBSCRIBE'; }
+            });
+        });
     }
 
-    // Inject reCAPTCHA api.js if not already loaded
-    // Use explicit rendering (onload=renderCaptcha) so we can re-render
-    // the widget even if the DOM element was injected after api.js loaded
+    // Render captcha into #sib-captcha using explicit mode
+    function renderCaptcha() {
+        const el = document.getElementById('sib-captcha');
+        if (!el || typeof grecaptcha === 'undefined' || el.childElementCount > 0) return;
+        window._hgCaptchaWidgetId = grecaptcha.render(el, {
+            sitekey: '6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0',
+            theme: 'dark',
+            callback: 'handleCaptchaResponse'
+        });
+    }
+
+    // Wire the form submit handler (the form is already in DOM)
+    wireFormSubmit();
+
+    // Inject reCAPTCHA with explicit render mode
     if (!document.querySelector('script[src*="recaptcha/api.js"]')) {
+        // Set a global that reCAPTCHA's onload will call
         window._hgRenderCaptcha = function() {
-            const el = document.getElementById('sib-captcha');
-            if (el && typeof grecaptcha !== 'undefined') {
-                // If widget already rendered, skip
-                if (el.childElementCount > 0) return;
-                grecaptcha.render(el, {
-                    sitekey: '6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0',
-                    theme: 'dark',
-                    callback: 'handleCaptchaResponse'
-                });
-            }
+            renderCaptcha();
+            // Also wire form now that captcha is ready
+            wireFormSubmit();
         };
-        const recaptchaScript = document.createElement('script');
-        recaptchaScript.src = "https://www.google.com/recaptcha/api.js?onload=_hgRenderCaptcha&render=explicit&hl=en";
-        recaptchaScript.async = true;
-        recaptchaScript.defer = true;
-        document.body.appendChild(recaptchaScript);
+        const s = document.createElement('script');
+        s.src = 'https://www.google.com/recaptcha/api.js?onload=_hgRenderCaptcha&render=explicit&hl=en';
+        s.async = true;
+        document.body.appendChild(s);
     } else {
-        // api.js already loaded — render the widget now if it exists
-        setTimeout(function() {
-            const el = document.getElementById('sib-captcha');
-            if (el && typeof grecaptcha !== 'undefined' && el.childElementCount === 0) {
-                grecaptcha.render(el, {
-                    sitekey: '6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0',
-                    theme: 'dark',
-                    callback: 'handleCaptchaResponse'
-                });
-            }
-        }, 500);
+        // api.js already on page — try rendering immediately, then poll
+        renderCaptcha();
+        if (!window._hgCaptchaWidgetId && window._hgCaptchaWidgetId !== 0) {
+            var attempts = 0;
+            var poll = setInterval(function() {
+                renderCaptcha();
+                attempts++;
+                if (window._hgCaptchaWidgetId >= 0 || attempts > 20) clearInterval(poll);
+            }, 200);
+        }
     }
 }
