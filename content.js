@@ -85,15 +85,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 18 2026",
-            "headline": "FIFA Bug Exposes World Cup Streams",
-            "title": "FIFA Vulnerability Allows Remote Takeover of World Cup Streams",
-            "content": "A hacker could have \"Rickrolled\" the World Cup — or worse — thanks to FIFA's unenforced Entra access controls. This vulnerability highlights the risks associated with unsecured access controls in live streaming services. FIFA should immediately enforce proper access controls to prevent any potential disruptions or malicious activities during the World Cup. The incident emphasizes the need for robust security measures in high-profile events to ensure their integrity and security. Entities: FIFA, World Cup, Entra access controls",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/fifa-bug-world-cup-streams-remote-takeover",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 20 2026",
             "headline": "North Korea Linked to Mastra AI Attack",
             "title": "Microsoft Attributes Mastra AI Supply Chain Attack to North Korean Hackers",
@@ -231,48 +222,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 18 2026",
-            "headline": "Anthropic's Claude Code Artifacts",
-            "title": "Anthropic Introduces Claude Code Artifacts, a New Feature for Enterprises",
-            "content": "Anthropic has announced the introduction of Claude Code Artifacts, a new feature designed for enterprises. This feature allows users to create live, shared dashboards and interactive workspaces, enhancing collaboration and productivity. Claude Code Artifacts is available to users of Claude Code on the Claude Team and Enterprise subscription plans. The feature enables users to plug in live data and create custom HTML webpages, facilitating real-time interaction and feedback. The introduction of Claude Code Artifacts is a significant development in the enterprise software space, highlighting the growing importance of collaboration and interactive tools. Entities: Anthropic, Claude Code Artifacts, enterprise software",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 19 2026",
             "headline": "Allbirds' New AI Biz",
             "title": "Allbirds' CEO Launches New AI Business with Significant Seed Funding",
             "content": "The CEO of Allbirds has launched a new AI business with a substantial seed round, although the details of the business plan and team are not yet clear. This development marks a significant investment in the AI space, highlighting the growing importance of AI in various industries. The new business is expected to leverage AI technologies to drive innovation and growth. Although the specifics of the business are not yet available, the investment in AI is a testament to the technology's potential for disruption and transformation. The CEO's decision to launch an AI business demonstrates the company's commitment to exploring new technologies and opportunities. Entities: Allbirds, AI, seed funding",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "OpenAI Introduces New Analytics",
-            "title": "OpenAI Launches New Usage Analytics and Spend Controls for Enterprises",
-            "content": "OpenAI has introduced new usage analytics and spend controls for enterprises, designed to help organizations manage costs and scale AI with confidence. The new features provide detailed insights into AI usage and enable enterprises to set budgets and track expenses. This development is a significant step forward in AI adoption, as it addresses concerns around cost and scalability. The introduction of usage analytics and spend controls is expected to facilitate wider adoption of AI technologies in the enterprise space. OpenAI's new features are designed to provide transparency and control, enabling organizations to make informed decisions about AI investments. Entities: OpenAI, usage analytics, spend controls, AI",
-            "source": "OpenAI",
-            "sourceUrl": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "OpenAI Enhances Health Intelligence",
-            "title": "OpenAI Improves Health Intelligence in ChatGPT with Enhanced Reasoning and Context",
-            "content": "OpenAI has announced improvements to health intelligence in ChatGPT, enhancing the model's ability to provide accurate and informative responses to health-related queries. The updates include stronger reasoning, better context, clearer communication, and physician-informed evaluations. This development is a significant step forward in AI-powered health information, as it addresses concerns around accuracy and reliability. The improved health intelligence in ChatGPT is expected to facilitate more effective and informed interactions between users and AI systems. OpenAI's enhancements demonstrate the company's commitment to developing responsible and trustworthy AI technologies. Entities: OpenAI, ChatGPT, health intelligence, AI",
-            "source": "OpenAI",
-            "sourceUrl": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Midjourney Expands to Ultrasound Scans",
-            "title": "Midjourney Introduces The Midjourney Scanner, an Ultrasound-Based Full-Body Scanner",
-            "content": "Midjourney has announced the introduction of The Midjourney Scanner, an ultrasound-based full-body scanner that uses AI to generate detailed images of the body. This development marks a significant expansion of Midjourney's capabilities, as the company moves beyond AI-generated images to real-world applications. The Midjourney Scanner is designed to provide high-quality images of the body, enabling new possibilities for medical diagnosis and research. The introduction of The Midjourney Scanner demonstrates the potential for AI to transform various industries, including healthcare. Midjourney's expansion into ultrasound scans highlights the growing importance of AI in medical imaging and diagnostics. Entities: Midjourney, The Midjourney Scanner, ultrasound, AI",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
             "relatedResources": []
         },
         {
