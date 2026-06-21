@@ -179,6 +179,8 @@ def generate_article_html(file_path):
                 break
                 
     article_url = "https://thehgtech.com/" + file_path
+    # Brevo unsubscribe placeholder — must NOT be inside an f-string or Python will try to evaluate it
+    unsubscribe_tag = "{{unsubscribe}}"
     
     html = f"""
     <!DOCTYPE html>
@@ -217,7 +219,7 @@ def generate_article_html(file_path):
             
             <div class="footer">
                 <p>You received this because you subscribed to TheHGTech intelligence feed.</p>
-                <p><a href="{{{unsubscribe}}}" style="color: #8b949e; text-decoration: underline;">Unsubscribe</a></p>
+                <p><a href="{unsubscribe_tag}" style="color: #8b949e; text-decoration: underline;">Unsubscribe</a></p>
             </div>
         </div>
     </body>
