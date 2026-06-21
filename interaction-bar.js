@@ -273,8 +273,8 @@ function injectNewsletterForm() {
             <div class="hg-newsletter-desc">Get the latest cyber threats, zero-days, and AI security analysis delivered straight to your inbox. No spam, ever.</div>
             <div class="sib-form">
                 <div id="sib-form-container" class="sib-form-container">
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted){document.getElementById('success-message').style.display='block';}"></iframe>
-                    <form id="sib-form" method="POST" action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A==" target="hidden_iframe" onsubmit="window.submitted=true;">
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" sandbox="allow-same-origin" onload="if(this.dataset.submitted){document.getElementById('success-message').style.display='block';}"></iframe>
+                    <form id="sib-form" method="POST" action="https://7dd4d3f2.sibforms.com/serve/MUIFAC5_9yENi4QKhYb_j3fo9r-Z5uOTFwmZNPeLVHikF5SvzjAErq6S9aoLZ-r5mr3wiw9NC8O6-kwDXR0J7lIoG8cvcOZky4sdiMFmuWALZb22o9lrh-g2XsAproAT6YppB29NmkFqNqAgsk_N9NvCnuFe2bioh2CBb-pY4pXt0pXCkOUWJyg55mDF6P5TjoDnqDfbrXCpSU1-7A==" target="hidden_iframe" onsubmit="document.getElementById('hidden_iframe').dataset.submitted='true';">
                         <div class="hg-form-row">
                             <input class="hg-newsletter-input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email address..." required />
                             <button class="hg-newsletter-btn" type="submit">SUBSCRIBE</button>
