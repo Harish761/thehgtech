@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-06-21T07:15:21.811183",
-  "total_incidents": 28903,
+  "last_updated": "2026-06-21T16:14:55.543562",
+  "total_incidents": 28907,
   "incidents": [
+    {
+      "id": "stormous_jaggroup.com_update-full_data_dump",
+      "victim_name": "jaggroup.com UPDATE-FULL DATA DUMP",
+      "threat_actor": "stormous",
+      "date_discovered": "2026-06-21T13:36:57.480195+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Full database containing corporate emails (⁠@jaggroup.com⁠), Active Directory domain logins, and clear plain-text passwords.Complete Microsoft Dynamics GP databases, software license keys, financial reports, and system configuration Multiple compressed archives (⁠zBackups.zip⁠, ⁠wetransfer⁠ packages), SQL server connection data, and ⁠IM.mdb⁠ database files.Internal project management sheets (⁠Jag Project.xlsx⁠), user listings, purchasing, and sales import logs.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_jktornel",
+      "victim_name": "jktornel",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-06-21T12:37:29.600840+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Unauthorized access has been gained to the company's confidential files, including client data, proprietary R&D, and financial documentation.",
+      "screenshot": "https://images.ransomware.live/victims/586bf61ccbb2bf4eec4e6dc9c0dc4550.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a319a635ae71db30c606f82",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nova_lockers_it",
+      "victim_name": "Lockers IT",
+      "threat_actor": "nova",
+      "date_discovered": "2026-06-21T09:07:46.583750+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "LockersIT is a self-owned Bangladeshi IT company founded in 2013, headquartered in Chandpur, that specializes in custom software development with a team of 11-50 employees - allcashdealer.com dealmart24.com dev1.lockersit.com erp.lockersit.com sales.lockersit.com brm.lockersit.com debnathashu.com dev2.lockersit.com eshop.lockersit.com cloud.debnathashu.com  dev.allcashdealer.com  dev3.lockersit.com lockersit.com cloud.lockersit.com dev.lockersit.com emailer.debnathashu.com project.debnathashu.com effected with the encryption, Data From the server has been taken, Nova Provide tree and samples from stolen data to the company with decrypt 1 file as sample when its get in touch with support department.",
+      "screenshot": "https://images.ransomware.live/victims/faa26125d6398ff40632e2edcc77fa56.png",
+      "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/lockers-it",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nightspire_artistic_smiles",
+      "victim_name": "Artistic Smiles",
+      "threat_actor": "nightspire",
+      "date_discovered": "2026-06-21T08:06:34.814417+00:00",
+      "industry": "Consumer Services",
+      "website": "artisticsmiles.org",
+      "claim": "Data is not available now.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "nova_nhà_thành_phố",
       "victim_name": "Nhà Thành Phố",
