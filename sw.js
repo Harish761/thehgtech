@@ -1,4 +1,4 @@
-const CACHE_NAME = 'thehgtech-cache-v7';
+const CACHE_NAME = 'thehgtech-cache-v8';
 const URLS_TO_CACHE = [
     '/',
     '/index.html',
@@ -13,6 +13,7 @@ const URLS_TO_CACHE = [
 ];
 
 self.addEventListener('install', event => {
+    self.skipWaiting(); // Take over immediately, don't wait for tabs to close
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(cache => {
@@ -62,14 +63,19 @@ self.addEventListener('fetch', event => {
 self.addEventListener('activate', event => {
     const cacheWhitelist = [CACHE_NAME];
     event.waitUntil(
-        caches.keys().then(cacheNames => {
-            return Promise.all(
-                cacheNames.map(cacheName => {
-                    if (cacheWhitelist.indexOf(cacheName) === -1) {
-                        return caches.delete(cacheName);
-                    }
-                })
-            );
-        })
+        Promise.all([
+            // Delete all old caches
+            caches.keys().then(cacheNames => {
+                return Promise.all(
+                    cacheNames.map(cacheName => {
+                        if (cacheWhitelist.indexOf(cacheName) === -1) {
+                            return caches.delete(cacheName);
+                        }
+                    })
+                );
+            }),
+            // Immediately take control of all open pages
+            self.clients.claim()
+        ])
     );
 });
