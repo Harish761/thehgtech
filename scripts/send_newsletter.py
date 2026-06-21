@@ -54,7 +54,7 @@ def create_and_send_campaign(subject, html_content):
         "name": f"Automated Campaign - {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
         "sender": {
             "name": "TheHGTech",
-            "email": "newsletter@thehgtech.com" # Ensure this email is verified in Brevo
+            "email": "harish@thehgtech.com" # Updated to match your verified Brevo sender
         },
         "subject": subject,
         "htmlContent": html_content,
