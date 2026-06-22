@@ -96,52 +96,67 @@ def generate_shorts_html():
     <html>
     <head>
     <style>
-        body {{ font-family: 'Inter', sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }}
-        .container {{ max-width: 600px; margin: 0 auto; background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 30px; }}
-        .header {{ text-align: center; border-bottom: 1px solid #30363d; padding-bottom: 20px; margin-bottom: 30px; }}
-        .header h1 {{ color: #ffffff; margin: 0; font-size: 24px; }}
-        .header span {{ color: #00d9ff; font-weight: bold; }}
-        .section-title {{ color: #ff3d3d; border-left: 4px solid #ff3d3d; padding-left: 10px; margin-top: 30px; }}
-        .item {{ margin-bottom: 25px; }}
-        .item h3 {{ color: #58a6ff; margin: 0 0 10px 0; font-size: 18px; }}
-        .item p {{ font-size: 14px; line-height: 1.6; color: #8b949e; margin: 0 0 10px 0; }}
-        .item a {{ color: #00d9ff; text-decoration: none; font-size: 13px; font-weight: bold; }}
-        .footer {{ text-align: center; font-size: 12px; color: #8b949e; margin-top: 40px; padding-top: 20px; border-top: 1px solid #30363d; }}
+        body {{ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }}
+        .container {{ max-width: 600px; margin: 0 auto; background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 40px; }}
+        .header {{ text-align: center; border-bottom: 1px solid #30363d; padding-bottom: 25px; margin-bottom: 35px; }}
+        .header h1 {{ color: #ffffff; margin: 0; font-size: 26px; font-weight: 600; letter-spacing: 0.5px; }}
+        .header span {{ color: #00d9ff; font-weight: 700; }}
+        .date {{ color: #8b949e; font-size: 13px; font-weight: 500; margin-top: 8px; text-transform: uppercase; letter-spacing: 1px; }}
+        .section-title {{ color: #ff3d3d; font-size: 18px; border-left: 4px solid #ff3d3d; padding-left: 12px; margin-top: 40px; margin-bottom: 25px; letter-spacing: 0.5px; text-transform: uppercase; }}
+        .ai-title {{ color: #00d9ff; border-color: #00d9ff; }}
+        .item {{ margin-bottom: 30px; }}
+        .item h3 {{ color: #58a6ff; margin: 0 0 12px 0; font-size: 18px; line-height: 1.4; font-weight: 600; }}
+        .ai-item h3 {{ color: #00d9ff; }}
+        .item p {{ font-size: 15px; line-height: 1.6; color: #8b949e; margin: 0 0 12px 0; }}
+        .item a {{ color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 600; background: #21262d; padding: 6px 12px; border-radius: 4px; border: 1px solid #30363d; display: inline-block; }}
+        .tagline {{ text-align: center; color: #58a6ff; font-size: 16px; font-weight: 600; margin-top: 50px; padding-top: 30px; border-top: 1px solid #30363d; }}
+        .footer {{ text-align: center; font-size: 12px; color: #8b949e; margin-top: 20px; }}
     </style>
     </head>
     <body>
         <div class="container">
             <div class="header">
-                <h1>The<span>HG</span>Tech ⚡ Daily Digest</h1>
-                <p style="color:#8b949e; font-size: 14px;">{today_str}</p>
+                <h1>The<span>HG</span>Tech Daily Digest</h1>
+                <div class="date">{today_str}</div>
             </div>
             
-            <h2 class="section-title">🛡️ CyberShorts</h2>
+            <h2 class="section-title">CyberShorts</h2>
     """
     
     for short in cyber_shorts:
+        content_text = short['content']
+        # Strip the "Entities: ..." text that sometimes bleeds from the AI output
+        if "Entities:" in content_text:
+            content_text = content_text.split("Entities:")[0].strip()
+            
         html += f"""
             <div class="item">
                 <h3>{short['title']}</h3>
-                <p>{short['content']}</p>
-                <a href="{short['sourceUrl']}">Read more on {short['source']} &rarr;</a>
+                <p>{content_text}</p>
+                <a href="{short['sourceUrl']}">Read Full Story &rarr;</a>
             </div>
         """
         
     html += """
-            <h2 class="section-title" style="color: #00d9ff; border-color: #00d9ff;">🧠 AIShorts</h2>
+            <h2 class="section-title ai-title">AIShorts</h2>
     """
     
     for short in ai_shorts:
+        content_text = short['content']
+        # Strip the "Entities: ..." text
+        if "Entities:" in content_text:
+            content_text = content_text.split("Entities:")[0].strip()
+            
         html += f"""
-            <div class="item">
-                <h3 style="color: #00d9ff;">{short['title']}</h3>
-                <p>{short['content']}</p>
-                <a href="{short['sourceUrl']}">Read more on {short['source']} &rarr;</a>
+            <div class="item ai-item">
+                <h3>{short['title']}</h3>
+                <p>{content_text}</p>
+                <a href="{short['sourceUrl']}">Read Full Story &rarr;</a>
             </div>
         """
         
     html += """
+            <div class="tagline">Stay secure. Stay informed. Stay ahead.</div>
             <div class="footer">
                 <p>You received this because you subscribed to TheHGTech intelligence feed.</p>
                 <p><a href="{{ unsubscribe }}" style="color: #8b949e; text-decoration: underline;">Unsubscribe</a></p>
