@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "hidden-debt-vpn-breaches-2026",
+      "title": "The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches",
+      "date": "June 22, 2026",
+      "category": "Security Operations",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "Organizations often treat patching as the end of incident response when it is actually the beginning of recovery. Discover why the breach remains even after the vulnerability is fixed.",
+      "image": "/images/articles/hidden-debt-vpn-breaches-2026.png",
+      "externalUrl": "articles/hidden-debt-vpn-breaches-2026.html",
+      "readTime": "18 min read",
+      "tags": [
+        "VPN Security",
+        "Edge Devices",
+        "Incident Response",
+        "Post-Compromise",
+        "Detection Engineering",
+        "Identity Security"
+      ]
+    },
+    {
       "id": "report-20260622",
       "title": "Weekly Threat Report: June 22, 2026",
       "date": "June 22, 2026",
