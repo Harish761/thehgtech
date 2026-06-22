@@ -2676,17 +2676,30 @@
                         (function() {
                             // Captcha widget ID reference
                             var _widgetId = null;
+                            var _rendered = false;
 
-                            // Render captcha explicitly
+                            // Render captcha — called by reCAPTCHA onload callback
                             window._hgHomeCaptcha = function() {
+                                if (_rendered) return;
                                 var el = document.getElementById('sib-captcha');
                                 if (!el || typeof grecaptcha === 'undefined') return;
-                                if (el.childElementCount > 0) return;
+                                _rendered = true;
                                 _widgetId = grecaptcha.render(el, {
                                     sitekey: '6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0',
                                     theme: 'dark'
                                 });
                             };
+
+                            // Fallback: poll every 100ms for up to 5s in case the onload
+                            // callback was fired before this script ran, or was silently missed
+                            var _poll = setInterval(function() {
+                                if (_rendered) { clearInterval(_poll); return; }
+                                if (typeof grecaptcha !== 'undefined' && typeof grecaptcha.render === 'function') {
+                                    clearInterval(_poll);
+                                    window._hgHomeCaptcha();
+                                }
+                            }, 100);
+                            setTimeout(function() { clearInterval(_poll); }, 5000);
 
                             // Form submit handler
                             document.getElementById('sib-form').addEventListener('submit', function(e) {
