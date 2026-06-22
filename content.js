@@ -47,90 +47,9 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/the-gentlemen-raas-uses-gentlekiller.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Texas Gov Data Breach Exposes 3M",
-            "title": "Texas Government Data Breach Exposes Personal Information of Over 3 Million Individuals",
-            "content": "A data breach at the Texas Parks and Wildlife Department (TPWD) has exposed the personal information of over 3 million individuals. The breach occurred when hackers gained access to the systems of a third-party license vendor serving TPWD. The compromised data includes names, addresses, and other personally identifiable information. This incident highlights the risks associated with third-party vendors and the importance of robust security measures. Entities: Texas Parks and Wildlife Department, data breach, personally identifiable information",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/texas-govt-data-breach-exposes-over-3-million-drivers-licenses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "AutoJack Attack Hijacks AI Agents",
-            "title": "Microsoft Researchers Discover AutoJack Attack, Allowing Remote Code Execution",
-            "content": "Microsoft researchers have discovered an exploit chain, named AutoJack, which turns an AI browsing agent into a delivery vehicle for remote code execution. The attack allows an attacker's web page to spawn a privileged local service on the same machine, enabling code execution. The incident highlights the potential risks associated with AI-powered systems and the importance of secure development practices. Entities: AutoJack, AI, remote code execution, Microsoft",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/autojack-attack-lets-one-web-page.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Klue Supply Chain Attack Hits Firms",
-            "title": "Cybersecurity Firms Impacted by Klue Supply Chain Attack",
-            "content": "The Klue supply chain attack has affected several cybersecurity firms, including Huntress and Recorded Future. The attack exposed data from Salesforce instances of Klue customers, highlighting the risks associated with supply chain attacks. The incident demonstrates the importance of robust security measures and secure software development practices. Entities: Klue, supply chain attack, cybersecurity firms, Salesforce",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cybersecurity-firms-impacted-by-klue-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Salesforce Disables Klue App",
-            "title": "Salesforce Disables Klue App Integration After OAuth Token Abuse",
-            "content": "Salesforce has disabled the Klue app integration within its platform in response to a security incident impacting the competitive intelligence company. The incident involved the abuse of OAuth tokens, which were used to connect to customers' Salesforce environments. The disablement is intended to prevent further exploitation and protect customer data. Entities: Salesforce, Klue, OAuth, app integration",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/salesforce-disables-klue-app.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "F5 Patches Critical NGINX Flaws",
-            "title": "F5 Releases Security Updates to Address Critical NGINX Open Source Flaws",
-            "content": "F5 has released security updates to address two critical security flaws in NGINX Open Source. The vulnerabilities, tracked as CVE-2026-42530 and CVE-2026-42531, could be exploited to achieve code execution on affected systems. The incident highlights the importance of keeping software up to date and monitoring for potential security vulnerabilities. Entities: F5, NGINX, CVE-2026-42530, CVE-2026-42531, code execution",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 20 2026",
-            "headline": "Prinz Eugen Ransomware Targets Recent Files",
-            "title": "New Prinz Eugen Ransomware Operation Prioritizes Recent Files for Encryption",
-            "content": "A new ransomware operation named 'Prinz Eugen' has been discovered, prioritizing recently modified files for encryption and leaving no ransom note on the system. This approach suggests a focus on maximizing damage and minimizing detection. The ransomware's tactics, techniques, and procedures (TTPs) are still being analyzed, but its ability to target recent files indicates a potential increase in effectiveness. Organizations should ensure their backups are up to date and consider implementing a least privilege access model to mitigate potential damage. The emergence of Prinz Eugen highlights the ongoing evolution of ransomware threats. Entities: Prinz Eugen, ransomware",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-prinz-eugen-ransomware-prioritizes-recent-files-for-encryption/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
-        {
-            "date": "Jun 19 2026",
-            "headline": "US Gov Bans Anthropic Models",
-            "title": "US Government Forces Anthropic to Pull Fable 5 and Mythos 5 Models",
-            "content": "The US government has forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5's guardrails. This move has sparked a debate among cybersecurity researchers, with some signing an open letter calling for more transparency and regulation in the development of AI models. The ban affects Anthropic's ability to release its latest models, potentially hindering the company's growth and development. The incident highlights the need for more stringent security measures in AI development. Users and developers should be aware of the potential risks and consequences of using AI models. Entities: Anthropic, Fable 5, Mythos 5",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Anthropic Ban Boosts Popularity",
-            "title": "US Ban on Anthropic's Fable 5 Release Fails to Deter Users",
-            "content": "Despite the US government's ban on Anthropic's Fable 5 release, the model's popularity has not wavered. Cybersecurity researchers have signed an open letter calling for more transparency and regulation in AI development, but users continue to flock to the model. The ban has sparked a debate about the effectiveness of government regulation in the AI industry. Anthropic's Fable 5 model has been found to have vulnerabilities, but the company has not released a patch. Users should exercise caution when using the model. The incident highlights the need for more stringent security measures in AI development. Entities: Anthropic, Fable 5",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "63% of Americans Say AI Advances Too Fast",
-            "title": "Pew Research Poll Reveals Americans' Concerns About AI Advancements",
-            "content": "A recent Pew Research poll has found that 63% of Americans believe AI is advancing too quickly. The poll also revealed that 49% of Americans report using chatbots at least occasionally, with ChatGPT's popularity contributing to the increase. The rapid development of AI technologies has raised concerns about job displacement, privacy, and security. The poll's findings highlight the need for more public awareness and education about AI and its implications. As AI continues to advance, it is essential for developers and users to prioritize responsible AI development and use. Entities: AI, ChatGPT, Pew Research",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly",
-            "relatedResources": []
-        },
         {
             "date": "Jun 21 2026",
             "headline": "Samsung Deploys ChatGPT Enterprise",
@@ -156,42 +75,6 @@ const websiteContent = {
             "content": "Apple's iOS 27 update will introduce several practical AI features, including an AI-powered Siri overhaul. The update will also bring AI-driven features to other areas of the iPhone, such as the camera and messaging apps. The move highlights Apple's growing focus on AI and its potential to enhance user experience. As AI becomes more prevalent in consumer technology, it is crucial for companies to prioritize AI security and responsible use. The update will be available to iPhone users later this year. Entities: Apple, iOS 27, Siri",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "7,000 Langflow Servers Under Attack",
-            "title": "Langflow, LangGraph, and LangChain Vulnerabilities Expose AI Systems",
-            "content": "A recent vulnerability has exposed 7,000 Langflow servers to attack, with LangGraph and LangChain also affected. The vulnerability allows attackers to gain access to sensitive data, including OpenAI keys, database credentials, and CRM tokens. The incident highlights the need for more stringent security measures in AI development and deployment. Users and developers should exercise caution when using AI systems and prioritize security updates and patches. Entities: Langflow, LangGraph, LangChain, OpenAI",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Anthropic's Claude Code Artifacts Update",
-            "title": "Anthropic Introduces Claude Code Artifacts for Enhanced Collaboration",
-            "content": "Anthropic has introduced Claude Code Artifacts, a new feature for users of Claude Code on the Claude Team and Enterprise subscription plans. The update allows users to turn a Claude Code session's work into a live, interactive, and shareable custom HTML webpage. The feature aims to enhance collaboration and productivity among developers. The update highlights Anthropic's focus on developing practical AI tools for enterprise users. As AI becomes more prevalent in the workplace, it is essential for companies to prioritize AI security and responsible use. Entities: Anthropic, Claude Code, Claude Team",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/anthropics-claude-code-artifacts-update-brings-live-shared-dashboards-and-interactive-workspaces-to-enterprises",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Copilot and LiteLLM Security Risks",
-            "title": "Enterprise AI Tools Copilot and LiteLLM Expose Sensitive Data",
-            "content": "Two AI tools, Copilot and LiteLLM, have been found to expose sensitive data, including admin keys and database credentials. The vulnerabilities highlight the need for more stringent security measures in AI development and deployment. Users and developers should exercise caution when using AI systems and prioritize security updates and patches. The incident also raises concerns about the potential risks of using AI tools in enterprise settings. Entities: Copilot, LiteLLM, CVE-2026-42824",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/copilot-searched-your-mailbox-litellm-handed-out-admin",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 17 2026",
-            "headline": "White House Demands Anthropic Fix",
-            "title": "White House Requires Anthropic to Block Jailbreaks in Fable 5 Model",
-            "content": "The White House has demanded that Anthropic block all jailbreaks in its Fable 5 model, citing national security concerns. However, security experts argue that it may not be possible to completely prevent jailbreaks. The incident highlights the challenges of regulating AI development and the need for more transparency and cooperation between government agencies and AI companies. As AI becomes more prevalent, it is essential for policymakers and developers to prioritize responsible AI development and use. Entities: Anthropic, Fable 5, White House",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/the-white-house-wants-anthropic-to-block-all-jailbreaks-that-may-not-be-possible/",
             "relatedResources": []
         },
         {
