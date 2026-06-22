@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-06-21T14:11:42.648845",
+  "last_updated": "2026-06-22T04:17:36.994827",
   "period": "Last 7 days",
   "total_groups": 35,
   "total_victims": 299,
   "groups": [
     {
       "name": "Lockbit5",
-      "count": 58,
+      "count": 53,
       "victims": [
         {
           "name": "utb.edu.vn",
@@ -70,11 +70,11 @@
         }
       ],
       "industries": [
-        "Agriculture and Food Production",
         "Business Services",
         "Education",
         "Healthcare",
-        "Hospitality and Tourism"
+        "Hospitality and Tourism",
+        "Manufacturing"
       ],
       "countries": [
         "AT",
@@ -90,14 +90,14 @@
         0,
         0,
         0,
+        53,
         0,
-        58,
         0
       ]
     },
     {
       "name": "Thegentlemen",
-      "count": 43,
+      "count": 38,
       "victims": [
         {
           "name": "Athens Orthopedic Clinic",
@@ -169,27 +169,51 @@
       ],
       "countries": [
         "AE",
-        "AR",
         "AU",
         "BE",
-        "CA"
+        "CA",
+        "CL"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        17,
         0,
         0,
         0,
         0,
         26,
+        0,
         0
       ]
     },
     {
       "name": "Qilin",
-      "count": 26,
+      "count": 34,
       "victims": [
+        {
+          "name": "Sivatel Bangkok",
+          "date": "2026-06-21T18:04:09.141153+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=7c929c34-bd54-46a7-ae1a-8b195d3bf091",
+          "discovered_date": "2026-06-21T18:04:09.141153+00:00"
+        },
+        {
+          "name": "Tri-tec",
+          "date": "2026-06-21T17:34:10.311295+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=82904dd5-6ccd-4761-8ce6-0ced7832d2e9",
+          "discovered_date": "2026-06-21T17:34:10.311295+00:00"
+        },
+        {
+          "name": "Florida Engineering Services",
+          "date": "2026-06-21T17:08:46.847433+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=2ec671d4-73db-487a-b84b-cdd8c34d9c61",
+          "discovered_date": "2026-06-21T17:08:46.847433+00:00"
+        },
+        {
+          "name": "Taiwan Sintong Machinery Co., Ltd",
+          "date": "2026-06-21T18:33:12.941934+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=03a62b1c-1b16-41aa-8811-424340cc3b68",
+          "discovered_date": "2026-06-21T18:33:12.941934+00:00"
+        },
         {
           "name": "Pacific Lamp & Supply",
           "date": "2026-06-20T15:33:44.085926+00:00",
@@ -225,30 +249,6 @@
           "date": "2026-06-18T17:54:58.422098+00:00",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=77f7cac4-5373-48fc-94f2-681e1b7f711d",
           "discovered_date": "2026-06-18T17:54:58.422098+00:00"
-        },
-        {
-          "name": "ATCOM Outsourcing",
-          "date": "2026-06-18T16:55:12.822076+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=9675a9d6-195d-452e-8110-5952b5cdf7bb",
-          "discovered_date": "2026-06-18T16:55:12.822076+00:00"
-        },
-        {
-          "name": "Skupina Don Don - GRUPO BIMBO",
-          "date": "2026-06-18T15:56:00.076101+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=0e8fef36-3e08-4921-abbd-08a017cb7aca",
-          "discovered_date": "2026-06-18T15:56:00.076101+00:00"
-        },
-        {
-          "name": "Makel Companies Group",
-          "date": "2026-06-18T14:29:00.397355+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=14ac9d80-81f2-4563-a59c-2d835c918589",
-          "discovered_date": "2026-06-18T14:29:00.397355+00:00"
-        },
-        {
-          "name": "THL PROJECT MANAGEMENT SDN. BHD.",
-          "date": "2026-06-18T18:25:30.023505+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=0f345694-fa46-46c5-a4be-a5a22d1a039e",
-          "discovered_date": "2026-06-18T18:25:30.023505+00:00"
         }
       ],
       "industries": [
@@ -269,11 +269,11 @@
       "trend_percentage": 15,
       "daily_counts": [
         3,
-        3,
         0,
         10,
         8,
         2,
+        8,
         0
       ]
     },
@@ -358,9 +358,9 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        7,
         0,
         10,
+        0,
         0,
         0,
         0,
@@ -449,13 +449,13 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         2,
         0,
         0,
         2,
         8,
-        4
+        4,
+        0
       ]
     },
     {
@@ -535,10 +535,10 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        7,
         1,
         0,
         6,
+        0,
         0,
         0,
         0
@@ -622,13 +622,13 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        1,
         2,
         0,
         4,
         0,
         2,
-        2
+        2,
+        0
       ]
     },
     {
@@ -712,10 +712,10 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         4,
         0,
         6,
+        0,
         0,
         0
       ]
@@ -797,12 +797,12 @@
       "trend_percentage": 0,
       "daily_counts": [
         3,
-        3,
         0,
         2,
         0,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -881,7 +881,7 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        10,
+        0,
         0,
         0,
         0,
@@ -964,12 +964,74 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         0,
         8,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Cmdorganization",
+      "count": 6,
+      "victims": [
+        {
+          "name": "Wall ISD",
+          "date": "2026-06-21T17:50:17.697339+00:00",
+          "url": "",
+          "discovered_date": "2026-06-21T17:50:17.697339+00:00"
+        },
+        {
+          "name": "Pinnacle Re-Tec",
+          "date": "2026-06-20T10:50:16.663547+00:00",
+          "url": "",
+          "discovered_date": "2026-06-20T10:50:16.663547+00:00"
+        },
+        {
+          "name": "Southern design RV",
+          "date": "2026-06-20T08:50:12.955694+00:00",
+          "url": "",
+          "discovered_date": "2026-06-20T08:50:12.955694+00:00"
+        },
+        {
+          "name": "Wall ISD",
+          "date": "2026-06-21T17:50:17+00:00",
+          "url": "https://www.ransomware.live/id/V2FsbCBJU0RAY21kb3JnYW5pemF0aW9u",
+          "discovered_date": "2026-06-21T17:50:17+00:00"
+        },
+        {
+          "name": "Pinnacle Re-Tec",
+          "date": "2026-06-20T10:50:16+00:00",
+          "url": "https://www.ransomware.live/id/UGlubmFjbGUgUmUtVGVjQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-06-20T10:50:16+00:00"
+        },
+        {
+          "name": "Southern design RV",
+          "date": "2026-06-20T08:50:12+00:00",
+          "url": "https://www.ransomware.live/id/U291dGhlcm4gZGVzaWduIFJWQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-06-20T08:50:12+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Consumer Services",
+        "Education"
+      ],
+      "countries": [
+        "AU",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        2,
         0
       ]
     },
@@ -1027,11 +1089,11 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         3,
         0,
         0,
         3,
+        0,
         0,
         0
       ]
@@ -1092,8 +1154,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         6,
+        0,
         0,
         0,
         0
@@ -1151,10 +1213,10 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         1,
         1,
         4,
+        0,
         0,
         0,
         0
@@ -1214,8 +1276,8 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         6,
+        0,
         0,
         0,
         0,
@@ -1267,10 +1329,10 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         3,
         0,
         2,
+        0,
         0,
         0,
         0
@@ -1320,57 +1382,8 @@
         0,
         0,
         0,
-        0,
         4,
-        0
-      ]
-    },
-    {
-      "name": "Cmdorganization",
-      "count": 4,
-      "victims": [
-        {
-          "name": "Pinnacle Re-Tec",
-          "date": "2026-06-20T10:50:16.663547+00:00",
-          "url": "",
-          "discovered_date": "2026-06-20T10:50:16.663547+00:00"
-        },
-        {
-          "name": "Southern design RV",
-          "date": "2026-06-20T08:50:12.955694+00:00",
-          "url": "",
-          "discovered_date": "2026-06-20T08:50:12.955694+00:00"
-        },
-        {
-          "name": "Pinnacle Re-Tec",
-          "date": "2026-06-20T10:50:16+00:00",
-          "url": "https://www.ransomware.live/id/UGlubmFjbGUgUmUtVGVjQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-06-20T10:50:16+00:00"
-        },
-        {
-          "name": "Southern design RV",
-          "date": "2026-06-20T08:50:12+00:00",
-          "url": "https://www.ransomware.live/id/U291dGhlcm4gZGVzaWduIFJWQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-06-20T08:50:12+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Consumer Services"
-      ],
-      "countries": [
-        "AU",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
         0,
-        0,
-        0,
-        0,
-        0,
-        4,
         0
       ]
     },
@@ -1417,10 +1430,10 @@
         0,
         0,
         0,
-        0,
         2,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1463,11 +1476,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        2,
         0,
         0,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -1510,9 +1523,9 @@
       "daily_counts": [
         0,
         0,
-        0,
         3,
         1,
+        0,
         0,
         0
       ]
@@ -1550,11 +1563,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         0,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -1590,9 +1603,9 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         2,
+        0,
         0,
         0,
         0,
@@ -1629,8 +1642,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1661,11 +1674,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         1,
+        0,
         0,
         0
       ]
@@ -1698,8 +1711,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1733,8 +1746,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1767,8 +1780,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1800,8 +1813,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1833,9 +1846,9 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0,
         0,
@@ -1866,9 +1879,9 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0,
         0,
@@ -1893,8 +1906,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1920,8 +1933,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1947,8 +1960,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1974,7 +1987,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
+        0,
         0,
         0,
         0,
