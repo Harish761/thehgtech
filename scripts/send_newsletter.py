@@ -25,7 +25,8 @@ def call_brevo_api(endpoint, method="GET", data=None):
         req.data = json.dumps(data).encode("utf-8")
     try:
         with urllib.request.urlopen(req) as response:
-            return json.loads(response.read().decode())
+            response_text = response.read().decode()
+            return json.loads(response_text) if response_text else {}
     except urllib.error.HTTPError as e:
         print(f"Brevo API Error: {e.read().decode()}")
         sys.exit(1)
