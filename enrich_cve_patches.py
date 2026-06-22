@@ -305,6 +305,11 @@ def verify_zero_day_with_ai(cve_id: str, description: str, days_diff: int) -> in
     if not AI_AVAILABLE:
         return 0
     
+    cache_key = f"zeroday_{cve_id}"
+    cache = load_ai_cache()
+    if cache_key in cache:
+        return cache[cache_key]
+        
     try:
         prompt = f"""Analyze if {cve_id} is a zero-day vulnerability.
 
@@ -321,10 +326,16 @@ Answer with just: "YES" (definite zero-day), "LIKELY" (probable), or "NO" (not z
             
         answer = answer.strip().upper()
         
+        result = 0
         if 'YES' in answer or 'DEFINITE' in answer:
-            return 2  # High confidence
+            result = 2  # High confidence
         elif 'LIKELY' in answer or 'PROBABLE' in answer:
-            return 1  # Moderate confidence
+            result = 1  # Moderate confidence
+            
+        # Cache the result to prevent token leaks
+        cache[cache_key] = result
+        save_ai_cache(cache)
+        return result
         
     except Exception as e:
         print(f"    ⚠️  AI zero-day verification failed: {e}")
