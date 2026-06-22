@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-06-21T16:14:55.543562",
-  "total_incidents": 28907,
+  "last_updated": "2026-06-22T08:38:04.395526",
+  "total_incidents": 28912,
   "incidents": [
+    {
+      "id": "qilin_taiwan_sintong_machinery_co.,_ltd",
+      "victim_name": "Taiwan Sintong Machinery Co., Ltd",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-21T18:33:12.941934+00:00",
+      "industry": "Manufacturing",
+      "website": "www.twsinto.com.tw",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/b31595d86ce6694a39f7218e01c91743.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=03a62b1c-1b16-41aa-8811-424340cc3b68",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_sivatel_bangkok",
+      "victim_name": "Sivatel Bangkok",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-21T18:04:09.141153+00:00",
+      "industry": "Telecommunication",
+      "website": "www.sivatelbangkok.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/fc63b03123b9e08512db021999d4753e.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=7c929c34-bd54-46a7-ae1a-8b195d3bf091",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "cmdorganization_wall_isd",
+      "victim_name": "Wall ISD",
+      "threat_actor": "cmdorganization",
+      "date_discovered": "2026-06-21T17:50:17.697339+00:00",
+      "industry": "Education",
+      "website": "www.wallisd.net",
+      "claim": "Wall ISD is an educational institution that serves students in the Wall, Texas area, providing a range of programs and activities for elementary, middle, and high school students. The district emphasizes inclusivity and equal access to education, ensuring that all students, regardless of their background, have the opportunity to participate in school activities. Wall ISD is committed to fostering a supportive learning environment and offers resources for both new and returning students. The intended clients are students and their families within the Wall community.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_tri-tec",
+      "victim_name": "Tri-tec",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-21T17:34:10.311295+00:00",
+      "industry": "Not Found",
+      "website": "www.tri-tec.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/a6be050cface61f71f108900bb35e6f2.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=82904dd5-6ccd-4761-8ce6-0ced7832d2e9",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_florida_engineering_services",
+      "victim_name": "Florida Engineering Services",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-06-21T17:08:46.847433+00:00",
+      "industry": "Construction",
+      "website": "www.florida-engineering-services.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/ac4147b51bbc0c3092954628207c4b88.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=2ec671d4-73db-487a-b84b-cdd8c34d9c61",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "stormous_jaggroup.com_update-full_data_dump",
       "victim_name": "jaggroup.com UPDATE-FULL DATA DUMP",
