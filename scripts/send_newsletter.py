@@ -87,9 +87,9 @@ def generate_shorts_html():
     data = json.loads(match.group(1))
     
     today_str = datetime.datetime.utcnow().strftime("%B %-d %Y")
-    # For testing/demo, we'll take the first 3 cyber and 3 AI shorts if none match today
-    cyber_shorts = data.get("cyberShorts", [])[:3]
-    ai_shorts = data.get("aiShorts", [])[:3]
+    # For testing/demo, we'll take the first 10 cyber and 10 AI shorts
+    cyber_shorts = data.get("cyberShorts", [])[:10]
+    ai_shorts = data.get("aiShorts", [])[:10]
     
     # Basic HTML Structure
     html = f"""
@@ -132,7 +132,7 @@ def generate_shorts_html():
             
         html += f"""
             <div class="item">
-                <h3>{short['title']}</h3>
+                <h3>{short.get('headline', short['title'])}</h3>
                 <p>{content_text}</p>
                 <a href="{short['sourceUrl']}">Read Full Story &rarr;</a>
             </div>
@@ -150,7 +150,7 @@ def generate_shorts_html():
             
         html += f"""
             <div class="item ai-item">
-                <h3>{short['title']}</h3>
+                <h3>{short.get('headline', short['title'])}</h3>
                 <p>{content_text}</p>
                 <a href="{short['sourceUrl']}">Read Full Story &rarr;</a>
             </div>

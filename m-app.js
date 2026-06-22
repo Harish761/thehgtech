@@ -108,7 +108,7 @@
             <div class="mobile-news-card ${i === 0 ? 'active' : ''}" data-index="${i}" style="${i > 0 ? 'display:none;' : ''}" onclick="openNewsDetail(${i}, '${currentCategory}')">
                 <div class="mobile-news-card__source">${escapeHTMLBasic(item.source || 'News')}</div>
                 <div class="mobile-news-card__date">${escapeHTMLBasic(item.date || '')}</div>
-                <h2 class="mobile-news-card__title">${escapeHTMLBasic(item.title || '')}</h2>
+                <h2 class="mobile-news-card__title">${escapeHTMLBasic(item.headline || item.title || '')}</h2>
                 <p class="mobile-news-card__excerpt">${escapeHTMLBasic((item.content || '').substring(0, 150))}...</p>
                 <div class="mobile-news-card__cta">
                     <span>Tap to read full story</span>
@@ -224,7 +224,7 @@
                     <span class="m-news-modal__source">${escapeHTMLBasic(item.source || 'News')}</span>
                     <span class="m-news-modal__date">${escapeHTMLBasic(item.date || '')}</span>
                 </div>
-                <h2 class="m-news-modal__title">${escapeHTMLBasic(item.title || '')}</h2>
+                <h2 class="m-news-modal__title">${escapeHTMLBasic(item.title || item.headline || '')}</h2>
                 <div class="m-news-modal__body">
                     <p>${escapeHTMLBasic(item.content || '')}</p>
                 </div>
