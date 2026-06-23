@@ -17,6 +17,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1552",
+      "incident_id": 1552,
+      "title": "Tesla Driver Reportedly Said Driver-Assistance Mode Was Engaged During Fatal Texas Home Crash",
+      "date": "2026-06-23",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1550",
       "incident_id": 1550,
       "title": "Purportedly AI-Generated Facebook Poster Falsely Declared Kannada Actor Doddanna Dead",
@@ -2506,9 +2514,9 @@
     }
   ],
   "stats": {
-    "total": 313,
-    "last7Days": 75,
-    "last30Days": 178
+    "total": 314,
+    "last7Days": 60,
+    "last30Days": 179
   },
-  "lastUpdated": "2026-06-23T23:38:14.313520+05:30"
+  "lastUpdated": "2026-06-24T02:04:23.090397+05:30"
 }
