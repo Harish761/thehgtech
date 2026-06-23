@@ -506,9 +506,8 @@
         </div>
 
         <h2>1. Introduction</h2>
-        <p>If an organization supporting global technology supply chains can suffer a ransomware incident, what does that tell us about modern cyber defense?</p>
-        <p>Tata Electronics holds a pivotal position in the global electronics manufacturing ecosystem. As a critical partner for leading technology giants and an anchor in India’s growing semiconductor and precision manufacturing ambitions, the organization’s operational resilience is inextricably linked to the stability of the global supply chain.</p>
-        <p>In mid-2026, Tata Electronics officially confirmed that it was managing a cybersecurity incident on its systems. While the company executed its response protocols and maintained business operations, the incident became highly public when a ransomware group known as "World Leaks" claimed responsibility, asserting they had exfiltrated significant volumes of sensitive intellectual property.</p>
+        <p>A single compromised credential at a Tier-1 supplier can paralyze the production lines of global tech giants. When Tata Electronics—a linchpin in the manufacturing ecosystem—confirmed a cybersecurity incident in 2026, it wasn't just a localized breach; it was a real-time stress test of the global supply chain.</p>
+        <p>Tata Electronics holds a pivotal position in the electronics manufacturing ecosystem. As a critical partner for leading technology giants and an anchor in India’s growing semiconductor ambitions, the organization’s operational resilience is inextricably linked to international market stability. The alleged theft of 630GB of data—reportedly including <code>com.apple.factorydata</code> schematics—underscores how threat actors leverage downstream dependencies for maximum extortion.</p>
         <p>This incident is not an isolated anomaly. It is indicative of a broader trend where advanced threat actors intentionally target crucial nodes within international supply chains. This article provides a balanced, evidence-based analysis of the incident. Rather than assigning blame or engaging in speculation, we use the event as an educational case study to explore the complexities of defending modern manufacturing environments and the pragmatic lessons security leaders must internalize.</p>
 
         <h2>2. What Happened?</h2>
@@ -580,7 +579,7 @@
         <p>The manufacturing sector has consistently ranked among the top industries targeted by ransomware. This trend is driven by specific structural and economic vulnerabilities inherent to modern industrial operations.</p>
         
         <h3>Operational Downtime Sensitivity</h3>
-        <p>In manufacturing, downtime is immediately quantifiable in lost revenue per minute. The primary leverage of traditional ransomware is operational disruption. However, as seen in the Tata Electronics incident where operations reportedly continued, the secondary leverage—data extortion—is equally potent. The pressure to prevent the release of third-party IP is immense.</p>
+        <p>In manufacturing, downtime is immediately quantifiable in lost revenue per minute. The primary leverage of traditional ransomware is operational disruption. However, as seen in the Tata Electronics incident where operations reportedly continued, the secondary leverage—data extortion—is equally potent. The pressure to prevent the release of third-party IP is immense. We saw this explicitly when <strong>LockBit 3.0</strong> targeted Boeing in late 2023, demanding extortion solely based on stolen parts data without halting manufacturing lines.</p>
         
         <h3>IT and OT Convergence</h3>
         <p>Modern "Industry 4.0" facilities rely heavily on the convergence of Information Technology (IT) and Operational Technology (OT). While this connectivity enables predictive maintenance and supply chain optimization, it also creates pathways for threats to move from corporate networks to factory floors. Securing these converged environments is notoriously difficult because legacy OT equipment often cannot support modern endpoint protection agents or aggressive patching cycles.</p>
@@ -599,25 +598,12 @@
             <li><strong>Third-Party Access:</strong> Compromising a less secure vendor or contractor who holds legitimate VPN or privileged access to the target network.</li>
         </ul>
 
-        <div class="technical-box">
-            <h3><i class="fas fa-project-diagram"></i> Typical Enterprise Ransomware Lifecycle</h3>
-            <pre><code class="language-plaintext">
-1. Initial Access   --> 2. Execution       --> 3. Persistence
-(Stolen VPN creds)      (PowerShell/WMI)       (Scheduled Tasks, RMM tools)
-       |
-       v
-4. Privilege Esc.   --> 5. Defense Evasion --> 6. Credential Access
-(Exploiting misconfigs) (Disabling EDR/AV)     (Dumping LSASS, NTDS.dit)
-       |
-       v
-7. Discovery        --> 8. Lateral Move.   --> 9. Collection & Exfil
-(Mapping AD, shares)    (RDP, SMB, PsExec)     (Rclone, Mega, FTP)
-       |
-       v
-10. Impact
-(Deploy Ransomware payload / Issue Extortion Demands)
-            </code></pre>
+        <div class="technical-box" style="text-align: center; padding: 0;">
+            <img src="https://via.placeholder.com/800x450/111111/00D9FF?text=Diagram:+Ransomware+Attack+Flow+(IT+to+OT)" alt="Diagram illustrating the typical ransomware attack flow from Initial Access via VPN, through Lateral Movement, and ultimately Exfiltration of OT schematics" style="width: 100%; border-radius: 8px;">
+            <p style="padding: 1rem; margin: 0; font-size: 0.9rem; color: var(--text-secondary);"><em>Figure 1: Standard enterprise ransomware lifecycle mapping MITRE ATT&CK tactics, demonstrating the critical pivot from corporate IT to manufacturing OT.</em></p>
         </div>
+        
+        <p>Recent campaigns by groups like <strong>Black Basta</strong> and <strong>Scattered Spider</strong> have demonstrated a preference for exploiting edge devices (e.g., CVE-2023-46805 in Ivanti or CVE-2024-3400 in Palo Alto) or leveraging social engineering against IT helpdesks to gain this initial foothold. Once inside, they deploy legitimate remote monitoring and management (RMM) tools like AnyDesk to evade EDR detection.</p>
 
         <h2>6. The Hard Truth About Security Programs</h2>
         <p>When a prominent technology organization suffers a breach, the immediate public reaction is often to assume negligence. This is a fundamental misunderstanding of modern cybersecurity dynamics.</p>
@@ -642,9 +628,9 @@
 
         <h3>Endpoint & Network Security</h3>
         <ul>
-            <li><strong>Comprehensive Coverage:</strong> Ensure EDR/XDR is deployed across all assets, including legacy servers and OT jump boxes. A blind spot in visibility is a safe haven for threat actors.</li>
-            <li><strong>Network Segmentation:</strong> Assume the corporate network is hostile. Implement strict micro-segmentation separating IT from OT, and restrict lateral movement via SMB and RDP.</li>
-            <li><strong>Zero Trust Architecture:</strong> Enforce Zero Trust principles for both human users and service accounts to continuously validate trust based on identity and context.</li>
+            <li><strong>Comprehensive Coverage:</strong> Ensure EDR/XDR is deployed in "blocking" mode across all assets. For unpatchable legacy OT equipment, implement network-level IDS/IPS monitoring mirroring the switch ports.</li>
+            <li><strong>Aggressive Network Segmentation:</strong> Assume the corporate network is hostile. Implement strict micro-segmentation separating IT from OT via the Purdue Model. Completely disable RDP and SMB (port 445) across internal segments unless explicitly required and jump-boxed.</li>
+            <li><strong>Privileged Access Management (PAM):</strong> Do not allow Domain Admins to log into regular workstations. Use Tiered Active Directory administration to prevent credential dumping (like Mimikatz) from compromising the entire forest.</li>
         </ul>
 
         <h3>Detection & Response</h3>
