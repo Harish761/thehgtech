@@ -148,7 +148,7 @@ Must be placed **AFTER** `</article>` and **BEFORE** `<footer>`.
     <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
 </footer>
 
-<script src="/interaction-bar.min.js"></script>
+<script src="/interaction-bar.min.js?v=20260623"></script>
 ```
 
 > [!IMPORTANT]

@@ -102,7 +102,7 @@ Use this **exact** structure. Do not deviate.
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
 
     <script src="/m-app.js?v=4.3" defer></script>
-    <script src="/interaction-bar.min.js" defer></script>
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
 
     <!-- Guide-specific styles go in a <style> block here (see Section 4.2) -->
 
@@ -529,7 +529,7 @@ TableName
 ```
 
 > [!IMPORTANT]
-> **Why this keeps disappearing:** The comment section is injected dynamically by `interaction-bar.min.js`. If the `<div class="interaction-bar">` HTML block is missing from the page, the script has no anchor point to inject GraphComment. Always include both the HTML block AND the script tag (`<script src="/interaction-bar.min.js" defer></script>` in `<head>`).
+> **Why this keeps disappearing:** The comment section is injected dynamically by `interaction-bar.min.js`. If the `<div class="interaction-bar">` HTML block is missing from the page, the script has no anchor point to inject GraphComment. Always include both the HTML block AND the script tag (`<script src="/interaction-bar.min.js?v=20260623" defer></script>` in `<head>`).
 
 ---
 
@@ -588,7 +588,7 @@ else:
 1. **Create HTML file** at `/guides/[topic-year].html` following all standards above.
 2. **Generate images** and save to `/images/guides/`.
 3. **Run emoji scan** — must be clean before proceeding.
-4. **Verify the interaction bar is present** — every guide MUST have the `<div class="interaction-bar">` block and `<script src="/interaction-bar.min.js">` script tag. Without them, the GraphComment comment section will not appear.
+4. **Verify the interaction bar is present** — every guide MUST have the `<div class="interaction-bar">` block and `<script src="/interaction-bar.min.js?v=20260623"></script>` script tag. Without them, the GraphComment comment section will not appear.
 5. **Update `guides/guides.json`:**
    - Insert at the **TOP** of the array (newest first).
    - Set `"featured": true` for the first 2 weeks.
