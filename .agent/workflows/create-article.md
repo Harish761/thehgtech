@@ -148,8 +148,11 @@ Must be placed **AFTER** `</article>` and **BEFORE** `<footer>`.
     <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
 </footer>
 
-<script src="/interaction-bar.js?v=20260220"></script>
+<script src="/interaction-bar.min.js"></script>
 ```
+
+> [!IMPORTANT]
+> **COMMENT SECTION IS MANDATORY.** The `<div class="interaction-bar">` block and `<script src="/interaction-bar.min.js">` tag MUST be present on every article. The `interaction-bar.min.js` script automatically injects the GraphComment comment system immediately below the interaction bar. **If the interaction bar is missing, the comment section will not appear.** Never omit it.
 
 ## 6. Required UI Components (Site Consistency)
 

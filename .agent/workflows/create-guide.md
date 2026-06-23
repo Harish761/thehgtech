@@ -102,6 +102,7 @@ Use this **exact** structure. Do not deviate.
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
 
     <script src="/m-app.js?v=4.3" defer></script>
+    <script src="/interaction-bar.min.js" defer></script>
 
     <!-- Guide-specific styles go in a <style> block here (see Section 4.2) -->
 
@@ -501,6 +502,35 @@ TableName
 </div>
 ```
 
+### 5.10 Interaction Bar + Comment Section (MANDATORY)
+
+**This section is non-negotiable.** Every guide MUST end its content container with the interaction bar HTML block. The `interaction-bar.min.js` script (which you added in `<head>`) automatically injects GraphComment below the bar.
+
+**Place this immediately after the last content section, before `</div>` (container close) or `<footer>`:**
+```html
+<!-- ========== INTERACTION BAR + COMMENT SECTION (MANDATORY) ========== -->
+<div class="interaction-bar">
+    <div class="like-section">
+        <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+            <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
+        </button>
+    </div>
+    <div class="action-buttons">
+        <div class="share-buttons">
+            <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+        </div>
+        <div class="button-separator"></div>
+        <button onclick="window.print()" class="print-btn" title="Print Guide"><i class="fas fa-print"></i></button>
+    </div>
+</div>
+<!-- interaction-bar.min.js (loaded in <head>) auto-injects GraphComment below -->
+```
+
+> [!IMPORTANT]
+> **Why this keeps disappearing:** The comment section is injected dynamically by `interaction-bar.min.js`. If the `<div class="interaction-bar">` HTML block is missing from the page, the script has no anchor point to inject GraphComment. Always include both the HTML block AND the script tag (`<script src="/interaction-bar.min.js" defer></script>` in `<head>`).
+
 ---
 
 ## 6. Typography & Formatting Rules
@@ -558,12 +588,13 @@ else:
 1. **Create HTML file** at `/guides/[topic-year].html` following all standards above.
 2. **Generate images** and save to `/images/guides/`.
 3. **Run emoji scan** — must be clean before proceeding.
-4. **Update `guides/guides.json`:**
+4. **Verify the interaction bar is present** — every guide MUST have the `<div class="interaction-bar">` block and `<script src="/interaction-bar.min.js">` script tag. Without them, the GraphComment comment section will not appear.
+5. **Update `guides/guides.json`:**
    - Insert at the **TOP** of the array (newest first).
    - Set `"featured": true` for the first 2 weeks.
    - Format: `{"title": "...", "date": "Month DD, YYYY", "url": "/guides/[filename].html", "category": "...", "readTime": "X min", "difficulty": "Intermediate|Advanced"}`
-5. **Update sitemap:** Add URL to `sitemap.xml`.
-6. **Commit and push:**
+6. **Update sitemap:** Add URL to `sitemap.xml`.
+7. **Commit and push:**
    ```bash
    git add . && git commit -m "feat(guides): add [guide title]" && git pull --rebase && git push
    ```
