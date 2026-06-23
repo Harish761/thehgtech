@@ -203,17 +203,19 @@ def generate_article_html(file_path):
     <html>
     <head>
     <style>
-        body {{ font-family: 'Inter', sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }}
+        body {{ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }}
         .container {{ max-width: 600px; margin: 0 auto; background: #161b22; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; }}
-        .header {{ text-align: center; padding: 20px; background: #0d1117; border-bottom: 1px solid #30363d; }}
-        .header h2 {{ color: #ffffff; margin: 0; font-size: 20px; }}
-        .header span {{ color: #00d9ff; font-weight: bold; }}
-        .hero {{ width: 100%; max-height: 300px; object-fit: cover; border-bottom: 1px solid #30363d; }}
-        .content {{ padding: 30px; }}
-        .content h1 {{ color: #58a6ff; font-size: 24px; margin-top: 0; }}
-        .content p {{ font-size: 15px; line-height: 1.6; color: #8b949e; }}
-        .cta-btn {{ display: inline-block; background: #00d9ff; color: #0d1117; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: bold; margin-top: 20px; }}
-        .footer {{ text-align: center; font-size: 12px; color: #8b949e; margin-top: 40px; padding: 20px; border-top: 1px solid #30363d; background: #0d1117; }}
+        .header {{ text-align: center; padding: 30px 20px; background: #0d1117; border-bottom: 1px solid #30363d; }}
+        .header h2 {{ color: #ffffff; margin: 0; font-size: 26px; font-weight: 600; letter-spacing: 0.5px; }}
+        .header span {{ color: #00d9ff; font-weight: 700; }}
+        .hero {{ width: 100%; max-height: 320px; object-fit: cover; border-bottom: 1px solid #30363d; display: block; }}
+        .content {{ padding: 40px; }}
+        .content h1 {{ color: #58a6ff; font-size: 22px; margin-top: 0; margin-bottom: 20px; line-height: 1.4; }}
+        .content p {{ font-size: 15px; line-height: 1.6; color: #8b949e; margin-bottom: 16px; }}
+        .cta-container {{ text-align: center; margin-top: 35px; }}
+        .cta-btn {{ display: inline-block; background: #21262d; border: 1px solid #30363d; color: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 4px; font-weight: 600; font-size: 14px; letter-spacing: 0.5px; }}
+        .tagline {{ text-align: center; color: #58a6ff; font-size: 16px; font-weight: 600; margin-top: 40px; padding-top: 30px; border-top: 1px solid #30363d; }}
+        .footer {{ text-align: center; font-size: 12px; color: #8b949e; margin-top: 20px; padding-bottom: 30px; }}
     </style>
     </head>
     <body>
@@ -228,14 +230,16 @@ def generate_article_html(file_path):
                 <h1>{title}</h1>
                 {excerpt}
                 
-                <div style="text-align: center;">
+                <div class="cta-container">
                     <a href="{article_url}" class="cta-btn">Read Full Article &rarr;</a>
                 </div>
-            </div>
-            
-            <div class="footer">
-                <p>You received this because you subscribed to TheHGTech intelligence feed.</p>
-                <p><a href="{unsubscribe_tag}" style="color: #8b949e; text-decoration: underline;">Unsubscribe</a></p>
+                
+                <div class="tagline">Stay secure. Stay informed. Stay ahead.</div>
+                
+                <div class="footer">
+                    <p>You received this because you subscribed to TheHGTech intelligence feed.</p>
+                    <p><a href="{unsubscribe_tag}" style="color: #8b949e; text-decoration: underline;">Unsubscribe</a></p>
+                </div>
             </div>
         </div>
     </body>
