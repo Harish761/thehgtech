@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "tata-electronics-ransomware-analysis-2026",
+      "title": "Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn",
+      "date": "June 23, 2026",
+      "category": "Threat Analysis",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "A technical analysis of the 2026 Tata Electronics ransomware incident by World Leaks. Explore the impact on manufacturing supply chains and key security lessons.",
+      "image": "/images/articles/tata-electronics-ransomware-analysis-2026.png",
+      "externalUrl": "articles/tata-electronics-ransomware-analysis-2026.html",
+      "readTime": "25 min read",
+      "tags": [
+        "Ransomware",
+        "Supply Chain Security",
+        "Threat Intelligence",
+        "Incident Response",
+        "Manufacturing Security",
+        "World Leaks"
+      ]
+    },
+    {
       "id": "hidden-debt-vpn-breaches-2026",
       "title": "The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches",
       "date": "June 22, 2026",
