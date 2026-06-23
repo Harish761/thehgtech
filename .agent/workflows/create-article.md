@@ -529,3 +529,10 @@ To ensure the article ranks well in AI search engines (ChatGPT, Perplexity, Gemi
 ### Sources
 - [ ] **Are primary sources linked or cited in the article?**
 - [ ] **Is the disclaimer present in the Executive Summary?**
+
+### Pre-Publish UI Verification (MANDATORY)
+Before pushing changes to GitHub, you MUST locally verify or double-check the code for the following UI elements:
+- [ ] **Interaction Bar Presence:** Does the `<div class="interaction-bar">...</div>` block exist exactly as specified (after `</article>` and before `<footer>`)?
+- [ ] **Script Tag Presence:** Is the `<script src="/interaction-bar.min.js?v=20260623"></script>` tag present at the bottom of the page?
+- [ ] **Cache Busting:** Does the script tag include the `?v=...` query parameter to avoid stale caches from breaking the comment/newsletter injection?
+- [ ] **No Local Syntax Errors:** If you modified `interaction-bar.js`, did you re-minify it to `interaction-bar.min.js` and verify it has no syntax errors (`node -c interaction-bar.min.js`)?

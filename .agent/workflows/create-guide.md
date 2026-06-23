@@ -583,7 +583,17 @@ else:
 
 ---
 
-## 8. Deployment Checklist
+## 8. Pre-Publish UI Verification (MANDATORY)
+
+Before pushing changes to GitHub, you MUST locally verify or double-check the code for the following UI elements:
+- [ ] **Interaction Bar Presence:** Does the `<div class="interaction-bar">...</div>` block exist exactly as specified (at the very end of the main content container)?
+- [ ] **Script Tag Presence:** Is the `<script src="/interaction-bar.min.js?v=20260623" defer></script>` tag present in the `<head>`?
+- [ ] **Cache Busting:** Does the script tag include the `?v=...` query parameter to avoid stale caches from breaking the comment/newsletter injection?
+- [ ] **No Local Syntax Errors:** If you modified `interaction-bar.js`, did you re-minify it to `interaction-bar.min.js` and verify it has no syntax errors (`node -c interaction-bar.min.js`)?
+
+---
+
+## 9. Deployment Checklist
 
 1. **Create HTML file** at `/guides/[topic-year].html` following all standards above.
 2. **Generate images** and save to `/images/guides/`.
