@@ -741,7 +741,7 @@ At the end of each short's Content, add an Entities line with comma-separated va
 Create EXACTLY 10 shorts from the {len(top_articles)} articles above. It is critical that you output exactly 10 shorts."""
     
     # Check for Dry Run mode (no API key)
-    api_key = os.environ.get('GROQ_API_KEY')
+    api_key = os.environ.get('OPENAI_API_KEY')
     dry_run = api_key is None or api_key == ""
     
     if dry_run:
