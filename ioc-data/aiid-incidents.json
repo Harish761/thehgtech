@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1549",
+      "incident_id": 1549,
+      "title": "Purported Deepfake of Taoiseach Miche\u00e1l Martin Reportedly Promoted Quantum AI Investment Scam",
+      "date": "2026-06-23",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1550",
+      "incident_id": 1550,
+      "title": "Purportedly AI-Generated Facebook Poster Falsely Declared Kannada Actor Doddanna Dead",
+      "date": "2026-06-22",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-798",
       "incident_id": 798,
       "title": "Students at Australian Schools Reportedly Used AI Nudification Tools to Create Nonconsensual Sexual ",
@@ -2482,9 +2498,9 @@
     }
   ],
   "stats": {
-    "total": 310,
-    "last7Days": 72,
-    "last30Days": 175
+    "total": 312,
+    "last7Days": 74,
+    "last30Days": 177
   },
-  "lastUpdated": "2026-06-23T03:41:59.104294+05:30"
+  "lastUpdated": "2026-06-23T09:46:19.354865+05:30"
 }
