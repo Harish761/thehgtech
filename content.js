@@ -94,24 +94,6 @@ const websiteContent = {
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 20 2026",
-            "headline": "Atlantic Creates AI Music Database",
-            "title": "The Atlantic Develops a Searchable Database of Music Used to Train AI Models",
-            "content": "The Atlantic has created a searchable database of music used to train AI models. This database contains four datasets of music, including two large datasets with 12 million and 9 million tracks, respectively. The database is designed to provide insight into the music used to train AI models and to facilitate research into AI-generated music. The Atlantic's database is a significant resource for those interested in AI-generated music and its potential applications. The database's searchable nature allows users to explore the music used to train AI models and understand the creative processes involved. The development of this database highlights the growing importance of transparency in AI training data. Entities: The Atlantic, AI, music database",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 20 2026",
-            "headline": "Nobel Laureate Jumper Leaves DeepMind",
-            "title": "Nobel Laureate John Jumper Departs DeepMind for Rival Anthropic",
-            "content": "Nobel laureate John Jumper has announced his departure from DeepMind, a leading AI research organization, to join rival Anthropic. Jumper's decision to leave DeepMind is a significant development in the AI research community. Jumper is not the only prominent researcher to leave DeepMind, as several other big names have also departed the organization. This exodus of talent may have implications for DeepMind's research capabilities and its ability to attract top talent. Jumper's move to Anthropic is likely to enhance the rival organization's research capabilities and reputation. The departure of prominent researchers from DeepMind may lead to a shift in the balance of power in the AI research community. Entities: John Jumper, DeepMind, Anthropic, AI",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -205,17 +187,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20253",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-48907",
-            "dateAdded": "Jun 16, 2026",
-            "vendor": "Widget Factory Joomla Content Editor",
-            "description": "Widget Factory Joomla Content Editor contains an improper access control vulnerability which could allow for upload and execution of PHP code via the creation of new editor profiles for unauthenticate",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48907",
             "isZeroDay": false
         }
     ],
