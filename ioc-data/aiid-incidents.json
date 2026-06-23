@@ -9,6 +9,14 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1551",
+      "incident_id": 1551,
+      "title": "Purported AI-Generated Advertisements Reportedly Falsely Depicted Lee Ji-hye Endorsing Food and Clot",
+      "date": "2026-06-23",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1550",
       "incident_id": 1550,
       "title": "Purportedly AI-Generated Facebook Poster Falsely Declared Kannada Actor Doddanna Dead",
@@ -2498,9 +2506,9 @@
     }
   ],
   "stats": {
-    "total": 312,
-    "last7Days": 74,
-    "last30Days": 177
+    "total": 313,
+    "last7Days": 75,
+    "last30Days": 178
   },
-  "lastUpdated": "2026-06-23T16:56:14.736253+05:30"
+  "lastUpdated": "2026-06-23T20:50:34.364951+05:30"
 }
