@@ -4,6 +4,141 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] LastPass confirms data breach in Klue supply chain attack...",
+            "title": "LastPass confirms data breach in Klue supply chain attack",
+            "content": "This is a simulated professional summary for 'LastPass confirms data breach in Klue supply chain attack'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like BleepingComputer would be extracted for internal linking.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/lastpass-confirms-data-breach-in-klue-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] FFmpeg PixelSmash Flaw Allows RCE on Video Players, Media Se...",
+            "title": "FFmpeg PixelSmash Flaw Allows RCE on Video Players, Media Servers, NAS Appliances",
+            "content": "This is a simulated professional summary for 'FFmpeg PixelSmash Flaw Allows RCE on Video Players, Media Servers, NAS Appliances'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like SecurityWeek would be extracted for internal linking.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ffmpeg-pixelsmash-flaw-allows-rce-on-video-players-media-servers-nas-appliances/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] Canadian Electricity Provider London Hydro Discloses Data Br...",
+            "title": "Canadian Electricity Provider London Hydro Discloses Data Breach",
+            "content": "This is a simulated professional summary for 'Canadian Electricity Provider London Hydro Discloses Data Breach'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like SecurityWeek would be extracted for internal linking.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/canadian-electricity-provider-london-hydro-discloses-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] Xsolis Data Breach Affects 1.4 Million Individuals...",
+            "title": "Xsolis Data Breach Affects 1.4 Million Individuals",
+            "content": "This is a simulated professional summary for 'Xsolis Data Breach Affects 1.4 Million Individuals'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like SecurityWeek would be extracted for internal linking.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/xsolis-data-breach-affects-1-4-million-individuals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] FFmpeg fixes PixelSmash flaw in widely used video decoder...",
+            "title": "FFmpeg fixes PixelSmash flaw in widely used video decoder",
+            "content": "This is a simulated professional summary for 'FFmpeg fixes PixelSmash flaw in widely used video decoder'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like BleepingComputer would be extracted for internal linking.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ffmpeg-fixes-pixelsmash-flaw-in-widely-used-video-decoder/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chai...",
+            "title": "ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chain Attack",
+            "content": "This is a simulated professional summary for 'ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chain Attack'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] Researchers Detail DifyTap Flaws in Dify That Could Expose A...",
+            "title": "Researchers Detail DifyTap Flaws in Dify That Could Expose AI Chats Across Tenants",
+            "content": "This is a simulated professional summary for 'Researchers Detail DifyTap Flaws in Dify That Could Expose AI Chats Across Tenants'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/researchers-detail-difytap-flaws-in.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] ⚡ Weekly Recap: Browser Bugs, EDR Killers, TV Botnet, OpenBS...",
+            "title": "⚡ Weekly Recap: Browser Bugs, EDR Killers, TV Botnet, OpenBSD Flaw, Android Trojan, and More",
+            "content": "This is a simulated professional summary for '⚡ Weekly Recap: Browser Bugs, EDR Killers, TV Botnet, OpenBSD Flaw, Android Trojan, and More'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/weekly-recap-browser-bugs-edr-killers.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] INTERPOL Warns Phishing, Ransomware, and AI Scams Are Rising...",
+            "title": "INTERPOL Warns Phishing, Ransomware, and AI Scams Are Rising Across Asia-Pacific",
+            "content": "This is a simulated professional summary for 'INTERPOL Warns Phishing, Ransomware, and AI Scams Are Rising Across Asia-Pacific'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/interpol-warns-phishing-ransomware-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 20 2026",
+            "headline": "[DRY RUN] New Prinz Eugen ransomware prioritizes recent files for encr...",
+            "title": "New Prinz Eugen ransomware prioritizes recent files for encryption",
+            "content": "This is a simulated professional summary for 'New Prinz Eugen ransomware prioritizes recent files for encryption'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like BleepingComputer would be extracted for internal linking.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-prinz-eugen-ransomware-prioritizes-recent-files-for-encryption/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "[DRY RUN] ‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm...",
+            "title": "‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm",
+            "content": "This is a simulated professional summary for '‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like Krebs on Security would be extracted for internal linking.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] Unpatched SharePoint servers opened the door to multiple att...",
+            "title": "Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds",
+            "content": "This is a simulated professional summary for 'Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 30 based on your new ranking algorithm. Key entities like Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds | CSO Online would be extracted for internal linking.",
+            "source": "Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds | CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4188359/unpatched-sharepoint-servers-opened-the-door-to-multiple-attackers-microsoft-finds.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] OpenAI rolls out AI-led push to fix open-source software fla...",
+            "title": "OpenAI rolls out AI-led push to fix open-source software flaws",
+            "content": "This is a simulated professional summary for 'OpenAI rolls out AI-led push to fix open-source software flaws'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 30 based on your new ranking algorithm. Key entities like Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds | CSO Online would be extracted for internal linking.",
+            "source": "Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds | CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4188321/openai-rolls-out-ai-led-push-to-fix-open-source-software-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] Scattered Spider members plead guilty to hacking Transport f...",
+            "title": "Scattered Spider members plead guilty to hacking Transport for London",
+            "content": "This is a simulated professional summary for 'Scattered Spider members plead guilty to hacking Transport for London'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like BleepingComputer would be extracted for internal linking.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/scattered-spider-members-plead-guilty-to-hacking-transport-for-london/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] GitHub Updates actions/checkout to Block Common Pwn Request ...",
+            "title": "GitHub Updates actions/checkout to Block Common Pwn Request Attack Patterns",
+            "content": "This is a simulated professional summary for 'GitHub Updates actions/checkout to Block Common Pwn Request Attack Patterns'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/github-updates-actionscheckout-to-block.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 22 2026",
             "headline": "3M Affected in Texas Parks Breach",
             "title": "Texas Parks and Wildlife Data Breach Exposes Personal Information of 3 Million Individuals",
@@ -11,45 +146,144 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/texas-parks-wildlife-data-breach-affects-3-million-individuals/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 20 2026",
-            "headline": "North Korea Linked to Mastra AI Attack",
-            "title": "Microsoft Attributes Mastra AI Supply Chain Attack to North Korean Hackers",
-            "content": "Microsoft has attributed a recent Mastra AI supply chain attack to the North Korean hacking group Sapphire Sleet, also known as BlueNoroff. The attack compromised over 140 npm packages, highlighting the growing threat of supply chain attacks. The incident demonstrates the sophistication and reach of North Korean hacking groups, which have been linked to several high-profile attacks in recent years. The attack also underscores the importance of secure software development practices and robust supply chain risk management. Entities: Sapphire Sleet, BlueNoroff, Mastra AI, supply chain attack, North Korea",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-links-mastra-ai-supply-chain-attack-to-north-korean-hackers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 20 2026",
-            "headline": "WordPress Plugin Bug Exposes API Keys",
-            "title": "Hackers Exploit Gravity SMTP WordPress Plugin Bug to Expose API Keys",
-            "content": "A recently patched security flaw in the Gravity SMTP WordPress plugin has been exploited by threat actors to expose API keys. The vulnerability, tracked as CVE-2026-4020, is a medium-severity information disclosure flaw that affects over 100,000 sites. The bug allows unauthenticated attackers to access sensitive information, including API keys. WordPress site administrators are advised to update the plugin to the latest version to prevent exploitation. The incident highlights the importance of keeping software up to date and monitoring for potential security vulnerabilities. Entities: Gravity SMTP, WordPress, CVE-2026-4020, API keys",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/hackers-exploit-gravity-smtp-wordpress.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Klue OAuth Breach Hits Salesforce Users",
-            "title": "Klue OAuth Breach Exposes Customer Data, Icarus Hackers Claim Responsibility",
-            "content": "A recent security incident at Klue has exposed customer data, including OAuth tokens used to connect to Salesforce environments. The Icarus extortion group has claimed responsibility for the attack, which has affected several cybersecurity firms, including Huntress and Recorded Future. The breach highlights the risks associated with OAuth tokens and the importance of secure authentication practices. Salesforce has disabled the Klue app integration to prevent further exploitation. Entities: Klue, OAuth, Salesforce, Icarus, data breach",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-victim-list-grows-as-icarus-hackers-claim-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 19 2026",
-            "headline": "Gentlemen RaaS Uses EDR Killers",
-            "title": "The Gentlemen Ransomware-as-a-Service Operation Develops EDR Killers",
-            "content": "The Gentlemen ransomware-as-a-service (RaaS) operation has been developing and maintaining a suite of endpoint detection and response (EDR) killers. These tools are designed to impair system defenses, allowing affiliates to deploy the ransomware encryptor. The EDR killers target over 400 security processes, making them a significant threat to organizations. The incident highlights the evolving nature of ransomware attacks and the importance of robust security measures. Entities: Gentlemen, RaaS, EDR killers, ransomware",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/the-gentlemen-raas-uses-gentlekiller.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] OpenAI launches new initiative to help find and patch open s...",
+            "title": "OpenAI launches new initiative to help find and patch open source bugs",
+            "content": "This is a simulated professional summary for 'OpenAI launches new initiative to help find and patch open source bugs'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] SpaceX inks compute deal with Reflection AI, an open source ...",
+            "title": "SpaceX inks compute deal with Reflection AI, an open source AI lab",
+            "content": "This is a simulated professional summary for 'SpaceX inks compute deal with Reflection AI, an open source AI lab'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] Patch the Planet: a Daybreak initiative to support open sour...",
+            "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+            "content": "This is a simulated professional summary for 'Patch the Planet: a Daybreak initiative to support open source maintainers'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like OpenAI News would be extracted for internal linking.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/patch-the-planet",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 17 2026",
+            "headline": "[DRY RUN] Agentic Resource Discovery: Let agents search...",
+            "title": "Agentic Resource Discovery: Let agents search",
+            "content": "This is a simulated professional summary for 'Agentic Resource Discovery: Let agents search'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like Hugging Face - Blog would be extracted for internal linking.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] 4 days left to save up to $190 on TechCrunch Founder Summit ...",
+            "title": "4 days left to save up to $190 on TechCrunch Founder Summit 2026",
+            "content": "This is a simulated professional summary for '4 days left to save up to $190 on TechCrunch Founder Summit 2026'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/23/4-days-left-to-save-up-to-190-on-techcrunch-founder-summit-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] Fika Jobs raises $4M to build a video-first hiring platform ...",
+            "title": "Fika Jobs raises $4M to build a video-first hiring platform where AI agents interview candidates",
+            "content": "This is a simulated professional summary for 'Fika Jobs raises $4M to build a video-first hiring platform where AI agents interview candidates'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] Build real agentic apps using CUGA: two dozen working exampl...",
+            "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
+            "content": "This is a simulated professional summary for 'Build real agentic apps using CUGA: two dozen working examples on a lightweight harness'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like Hugging Face - Blog would be extracted for internal linking.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ibm-research/cuga-apps",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs ...",
+            "title": "OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos",
+            "content": "This is a simulated professional summary for 'OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like Feed: Artificial Intelligence Latest would be extracted for internal linking.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] The running list: major tech layoffs in 2026 where employers...",
+            "title": "The running list: major tech layoffs in 2026 where employers cited AI",
+            "content": "This is a simulated professional summary for 'The running list: major tech layoffs in 2026 where employers cited AI'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] How Omio is building the future of conversational travel...",
+            "title": "How Omio is building the future of conversational travel",
+            "content": "This is a simulated professional summary for 'How Omio is building the future of conversational travel'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like OpenAI News would be extracted for internal linking.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/omio",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "[DRY RUN] Shipping huggingface_hub every week with AI, open tools, and...",
+            "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
+            "content": "This is a simulated professional summary for 'Shipping huggingface_hub every week with AI, open tools, and a human in the loop'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like Hugging Face - Blog would be extracted for internal linking.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/huggingface-hub-release-ci",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] Nvidia says its AI data center design runs hotter to use a l...",
+            "title": "Nvidia says its AI data center design runs hotter to use a lot less water",
+            "content": "This is a simulated professional summary for 'Nvidia says its AI data center design runs hotter to use a lot less water'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like AI | The Verge would be extracted for internal linking.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/954139/nvidia-data-centers-rubin-liquid-cooling",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] The AI world is getting ‘loopy’...",
+            "title": "The AI world is getting ‘loopy’",
+            "content": "This is a simulated professional summary for 'The AI world is getting ‘loopy’'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] AI chipmaker Groq confirms $650M raise, re-staffs after Nvid...",
+            "title": "AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia’s $20B not-acqui-hire deal",
+            "content": "This is a simulated professional summary for 'AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia’s $20B not-acqui-hire deal'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "[DRY RUN] Nvidia wants to cut data center water use, but that’s not th...",
+            "title": "Nvidia wants to cut data center water use, but that’s not the same as fixing AI’s water problem",
+            "content": "This is a simulated professional summary for 'Nvidia wants to cut data center water use, but that’s not the same as fixing AI’s water problem'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 21 2026",
             "headline": "Samsung Deploys ChatGPT Enterprise",
@@ -75,24 +309,6 @@ const websiteContent = {
             "content": "Apple's iOS 27 update will introduce several practical AI features, including an AI-powered Siri overhaul. The update will also bring AI-driven features to other areas of the iPhone, such as the camera and messaging apps. The move highlights Apple's growing focus on AI and its potential to enhance user experience. As AI becomes more prevalent in consumer technology, it is crucial for companies to prioritize AI security and responsible use. The update will be available to iPhone users later this year. Entities: Apple, iOS 27, Siri",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 20 2026",
-            "headline": "Signal's Whittaker Warns on AI Chatbots",
-            "title": "Signal's Meredith Whittaker Highlights the Importance of Understanding AI Chatbots",
-            "content": "Meredith Whittaker, a prominent figure in the tech industry, has warned that AI chatbots are not conscious beings and should not be treated as such. Whittaker emphasized that these chatbots are simply machines designed to perform specific tasks, and users should be aware of their limitations. This warning comes as AI chatbots become increasingly prevalent in various aspects of life. Whittaker's statement highlights the need for users to understand the capabilities and limitations of AI chatbots. It is essential to recognize that AI chatbots are not sentient and should not be relied upon for critical decision-making. Whittaker's warning serves as a reminder to approach AI chatbots with a critical and nuanced perspective. Entities: AI chatbots, Signal, Meredith Whittaker",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 20 2026",
-            "headline": "In the Weights AI-Centric Vanity Search",
-            "title": "Introducing In the Weights, a New AI-Centric Vanity Search Platform",
-            "content": "A new platform called In the Weights has been launched, offering an AI-centric vanity search feature. This platform allows users to search for their names and see how they are perceived online. The search results are generated using machine learning algorithms that analyze various online data sources. In the Weights is designed to provide users with a unique perspective on their online presence. The platform's AI-centric approach sets it apart from traditional search engines. Users can utilize In the Weights to gain insights into their online reputation and adjust their online presence accordingly. The platform's capabilities have significant implications for personal branding and online identity management. Entities: In the Weights, AI, vanity search",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
             "relatedResources": []
         }
     ],
