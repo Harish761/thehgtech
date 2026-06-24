@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "beyond-klue-salesforce-saas-trust-crisis-2026",
+      "title": "Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis",
+      "date": "June 25, 2026",
+      "category": "Threat Analysis",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "A deep security architecture analysis of the Salesforce and Klue data theft campaign. Explore SaaS ecosystem risk, trust inheritance, and third-party application vulnerabilities.",
+      "image": "/images/articles/beyond-klue-salesforce-saas-trust-crisis-2026.png",
+      "externalUrl": "articles/beyond-klue-salesforce-saas-trust-crisis-2026.html",
+      "readTime": "18 min read",
+      "tags": [
+        "SaaS Security",
+        "Threat Intel",
+        "Cloud Architecture",
+        "Salesforce",
+        "Third-Party Risk",
+        "OAuth Governance"
+      ]
+    },
+    {
       "id": "tata-electronics-ransomware-analysis-2026",
       "title": "Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn",
       "date": "June 23, 2026",
