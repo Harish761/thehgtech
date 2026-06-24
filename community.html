@@ -1,334 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found | TheHGTech</title>
+    <title>TheHGTech Community Guidelines & Comment Policy</title>
+    <meta name="description" content="Review TheHGTech's community guidelines. Learn how we foster high-quality cybersecurity discussions using the GraphComment platform.">
+    <meta name="keywords" content="TheHGTech Community, Cybersecurity Forum, Threat Intel Discussions, Comment Policy">
+    <link rel="canonical" href="https://thehgtech.com/community.html">
+    <meta property="og:title" content="TheHGTech Community Guidelines">
+    <meta property="og:description" content="Join our cybersecurity community discussions.">
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How do I comment on articles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use GraphComment for our community discussions. Simply scroll to the bottom of any article or guide, click 'Join Discussion', and sign in or create a free profile."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are my comments private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your comments are public, but you can control your profile visibility via GraphComment's privacy settings. We never sell your data."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How does the reputation system work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As you post constructive comments and receive upvotes from peers, your GraphComment reputation score increases, unlocking special badges."
+        }
+      }]
+    }
+    </script>
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="404 - Page Not Found | TheHGTech">
-    <meta name="twitter:description" content="The page you're looking for doesn't exist. Navigate back to TheHGTech for cybersecurity news, threat intelligence, and security guides.">
-    <meta name="twitter:image" content="https://thehgtech.com/logo-dark.png">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="404 - Page Not Found | TheHGTech">
-    <meta property="og:description" content="The page you're looking for doesn't exist. Navigate back to TheHGTech for cybersecurity news, threat intelligence, and security guides.">
-    <meta property="og:image" content="https://thehgtech.com/logo-dark.png">
-    <meta property="og:url" content="https://thehgtech.com/404.html">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="TheHGTech">
-    <link rel="canonical" href="https://thehgtech.com/404.html">
-
-    <meta name="description"
-        content="The page you're looking for doesn't exist. Navigate back to TheHGTech for cybersecurity news, threat intelligence, and security guides.">
-    <meta name="robots" content="noindex, follow">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Core Styles -->
-    <link rel="stylesheet" href="/header.css">
+    
+    <link rel="stylesheet" href="/m-core.css">
+    <link rel="stylesheet" href="/m-layout.css">
+    <link rel="stylesheet" href="/m-components.css">
     <link rel="stylesheet" href="/light-mode.css">
-
-    <!-- Mobile -->
-    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
-    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
+    <script src="/m-app.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         :root {
-            --bg-primary: #000000;
-            --bg-secondary: #0a0a0a;
+            --bg-primary: #0a0a0a;
+            --text-primary: #fff;
+            --text-secondary: #aaa;
             --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --text-muted: #666666;
-            --border: rgba(255, 255, 255, 0.1);
         }
+        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        .page-container { max-width: 800px; margin: 0 auto; padding: 120px 1.5rem 80px; text-align: left; }
+        h1 { font-size: 2.5rem; background: linear-gradient(135deg, var(--accent-cyan), #FF3D3D); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; text-align: center;}
+        .subtitle { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 3rem; text-align: center;}
+        
+        h2 { color: var(--accent-cyan); margin-top: 2rem; margin-bottom: 1rem; }
+        p, ul { color: var(--text-secondary); margin-bottom: 1.5rem; }
+        ul { margin-left: 2rem; }
+        li { margin-bottom: 0.5rem; }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .error-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        .error-code {
-            font-size: 8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-red) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1;
-            margin-bottom: 1rem;
-            animation: glitch 2s infinite;
-        }
-
-        @keyframes glitch {
-
-            0%,
-            100% {
-                transform: translate(0);
-            }
-
-            2% {
-                transform: translate(-2px, 1px);
-            }
-
-            4% {
-                transform: translate(2px, -1px);
-            }
-
-            6% {
-                transform: translate(-1px, -1px);
-            }
-
-            8% {
-                transform: translate(1px, 2px);
-            }
-
-            10% {
-                transform: translate(0);
-            }
-        }
-
-        .error-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .error-message {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 500px;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
-
-        .error-actions {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.875rem 1.5rem;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-red));
-            color: #000;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0, 217, 255, 0.4);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--border);
-            color: var(--text-primary);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: var(--accent-cyan);
-        }
-
-        /* Popular links */
-        .quick-links {
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .quick-links__title {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .quick-links__grid {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .quick-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: rgba(0, 217, 255, 0.1);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 20px;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: all 0.2s ease;
-        }
-
-        .quick-link:hover {
-            background: rgba(0, 217, 255, 0.2);
-            border-color: var(--accent-cyan);
-            transform: translateY(-2px);
-        }
-
-        /* ASCII art decoration */
-        .error-decoration {
-            font-family: monospace;
-            font-size: 0.7rem;
-            color: rgba(0, 217, 255, 0.3);
-            margin-bottom: 2rem;
-            white-space: pre;
-            line-height: 1.2;
-        }
-
+        .faq-section { text-align: left; margin-top: 4rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; }
+        .faq-item { margin-bottom: 2rem; }
+        .faq-item h3 { color: #fff; margin-bottom: 0.5rem; }
+        
         /* Light mode */
-        body.light-mode {
-            --bg-primary: #f8f9fa;
-            --bg-secondary: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #666666;
-            --text-muted: #999999;
-            --border: rgba(0, 0, 0, 0.1);
-        }
-
-        body.light-mode .btn-primary {
-            color: #fff;
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-            .error-code {
-                font-size: 5rem;
-            }
-
-            .error-title {
-                font-size: 1.5rem;
-            }
-
-            .error-message {
-                font-size: 1rem;
-            }
-
-            .error-container {
-                padding-bottom: 100px;
-            }
-
-            .error-decoration {
-                display: none;
-            }
-        }
+        .light-mode body { background: #fff; color: #1a1a1a; }
+        .light-mode p, .light-mode ul { color: #555; }
+        .light-mode h1 { background: linear-gradient(135deg, #0077aa, #c41e3a); -webkit-background-clip: text; }
+        .light-mode .faq-item h3 { color: #1a1a1a; }
+        .light-mode .faq-section { border-top: 1px solid rgba(0,0,0,0.1); }
     </style>
-<link rel="stylesheet" href="ui-enhancements.css?v=3.5_newsletter">
-
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
-    <script>
-        // Inline theme set to avoid FOUC
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
-    <!-- Google Analytics 4 -->
-    <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
-    </script>
-    <!-- Fullres Analytics -->
-    <script>
-        window.addEventListener('load', function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        });
-    </script>
-    <link rel="stylesheet" href="mobile-nav.css">
-
-    <script src="/theme-toggle.js" defer></script>
 </head>
-
 <body>
-    <!-- Mobile Header -->
-
-
-
-
-</div>
-
-
-    <!-- Desktop Header -->
-    
-
-
-</div>
-
-
-    
-
-<header class="m-header m-only">
+    <header class="m-header m-only">
     <div class="m-header__logo">
         <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
             <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
@@ -592,72 +345,42 @@
             </button>
         </div>
     </header>
+    
 
-    <main class="error-container">
-        <div class="error-decoration">
-            _____ _ _ ___ _ _
-            | | |_ |_| | ||__||_|
-            |__|___|_ _| |_|_|| ||_|
-            NOT FOUND
-        </div>
+    <div class="page-container">
+        <h1>Community Guidelines</h1>
+        <p class="subtitle">Join the discussion. Share intel. Elevate the industry.</p>
+        
+        <h2>Our Core Values</h2>
+        <p>TheHGTech community is built for cybersecurity professionals, researchers, and enthusiasts. We use <strong>GraphComment</strong> to power our discussions at the bottom of every article. We expect all participants to adhere to these core values:</p>
+        <ul>
+            <li><strong>Be Constructive:</strong> Share actionable intelligence, debate technical merits respectfully, and help others learn.</li>
+            <li><strong>No Spam or Self-Promotion:</strong> Do not post links to unrelated products, services, or personal blogs without providing immediate value to the context of the article.</li>
+            <li><strong>Respect Privacy & Security:</strong> Do not post live malware, doxx individuals, or share sensitive/classified material that violates OPSEC.</li>
+        </ul>
 
-        <div class="error-code">404</div>
+        <h2>How GraphComment Works</h2>
+        <p>Instead of a standard flat comment section, GraphComment allows for threaded discussions, reputation building, and community moderation.</p>
+        <ul>
+            <li><strong>Reputation System:</strong> Gain badges and privileges as your peers upvote your technical insights.</li>
+            <li><strong>Privacy First:</strong> You have full control over your public profile. Review the <a href="https://graphcomment.com/en/privacy-policy/" target="_blank" style="color:var(--accent-cyan);">GraphComment Privacy Policy</a>.</li>
+        </ul>
 
-        <h1 class="error-title">Page Not Found</h1>
-
-        <p class="error-message">
-            The page you're looking for doesn't exist or has been moved.
-            But don't worry—our threat intelligence is still running!
-        </p>
-
-        <div class="error-actions">
-            <a href="/" class="btn btn-primary">
-                <i class="fas fa-home"></i>
-                Go Home
-            </a>
-            <a href="/threat-intel.html" class="btn btn-secondary">
-                <i class="fas fa-shield-alt"></i>
-                View Threats
-            </a>
-        </div>
-
-        <div class="quick-links">
-            <div class="quick-links__title">Popular Pages</div>
-            <div class="quick-links__grid">
-                <a href="/cve-tracker.html" class="quick-link">
-                    <i class="fas fa-bug"></i> CVE Tracker
-                </a>
-                <a href="/guides/" class="quick-link">
-                    <i class="fas fa-book"></i> Security Guides
-                </a>
-                <a href="/articles.html" class="quick-link">
-                    <i class="fas fa-newspaper"></i> Articles
-                </a>
-                <a href="/comparisons/" class="quick-link">
-                    <i class="fas fa-balance-scale"></i> Tool Comparisons
-                </a>
+        <div class="faq-section">
+            <h2 style="text-align:center;">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How do I comment on articles?</h3>
+                <p>Simply scroll to the bottom of any article or guide, click 'Join Discussion', and sign in or create a free profile.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are my comments private?</h3>
+                <p>Your comments are public, but you can control your profile visibility via GraphComment's privacy settings. We never sell your data.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does the reputation system work?</h3>
+                <p>As you post constructive comments and receive upvotes from peers, your GraphComment reputation score increases, unlocking special badges.</p>
             </div>
         </div>
-    </main>
-
-    <script>
-        // Theme toggle support
-        if (localStorage.getItem('theme') === 'light') {
-            document.body.classList.add('light-mode');
-        }
-
-        // Track 404 errors (if analytics is available)
-        if (typeof gtag !== 'undefined') {
-            gtag('event', '404_error', {
-                'page_location': window.location.href,
-                'page_referrer': document.referrer
-            });
-        }
-    </script>
-<script src="ui-enhancements.js?v=20260517" defer></script>
-
-    <script src="/command-palette.js" defer></script>
-    <script src="mobile-nav.js" defer></script>
+    </div>
 </body>
-
 </html>

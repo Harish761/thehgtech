@@ -1175,7 +1175,15 @@
     <!-- Header -->
     <!-- Header -->
     <!-- Desktop Header -->
-    <header class="m-header m-only">
+    
+
+
+</div>
+
+
+    
+
+<header class="m-header m-only">
     <div class="m-header__logo">
         <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
             <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
@@ -2269,11 +2277,81 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> TheHGTech. All rights reserved. | <a href="index.html">Home</a> | <a
-                href="threat-intel.html">Threat Intelligence</a></p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Live Cyber Threat Intelligence — Automated Collection Every 4
-            Hours</p>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">TheHGTech</div>
+                    <p class="footer-desc">Your trusted source for cutting-edge insights at the intersection of
+                        cybersecurity and artificial intelligence.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/thehgtech" class="social-link" target="_blank"
+                            rel="noopener noreferrer">𝕏</a>
+                        <a href="https://www.linkedin.com/in/harish-g-2216955b/" class="social-link" target="_blank"
+                            rel="noopener noreferrer">in</a>
+                        <a href="https://www.facebook.com/profile.php?id=61582408623186" class="social-link"
+                            target="_blank" rel="noopener noreferrer">f</a>
+                        <a href="https://youtube.com/@thehgtech" class="social-link" target="_blank"
+                            rel="noopener noreferrer">▶</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#news">News</a></li>
+                        <li><a href="cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="guides/">Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/newsletter.html">Newsletter</a></li>
+                        <li><a href="/community.html">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="openModal('privacy'); return false;">Privacy Policy</a></li>
+                        <li><a href="#" onclick="openModal('terms'); return false;">Terms of Service</a></li>
+                        <li><a href="#" onclick="openModal('advertise'); return false;">Advertise</a></li>
+                    </ul>
+                    <h4 style="margin-top: 1rem;">Developers</h4>
+                    <ul class="footer-links">
+                        <li><a href="/embed/cve-widget.html">Embed CVE Widget</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="articles.html">Cybersecurity</a></li>
+                        <li><a href="articles.html">AI & Machine Learning</a></li>
+                        <li><a href="cve-tracker.html">Vulnerabilities</a></li>
+                        <li><a href="articles.html">Analysis</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Threat Intelligence Promotion -->
+            <div
+                style="background: var(--glass); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; text-align: center; backdrop-filter: blur(10px);">
+                <div
+                    style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                    <span style="font-size: 1.5rem; color: var(--accent-cyan);">■</span>
+                    <h4 style="margin: 0; font-size: 1.1rem; color: var(--accent-cyan);">Live Cyber Threat Intelligence
+                    </h4>
+                </div>
+                <p style="margin: 0.5rem 0 0; color: var(--text-secondary); font-size: 0.95rem;">
+                    Automated data collection every 4 hours. View the full dashboard at <a href="threat-intel.html"
+                        style="color: var(--accent-cyan); text-decoration: none; font-weight: 600;">TheHGTech.com/threat-intel</a>
+                </p>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <script>document.write(new Date().getFullYear())</script> TheHGTech. All rights reserved. Stay secure. Stay informed. Stay ahead.
+            </div>
+        </div>
     </footer>
 
     <!-- Load vendor-modal.js -->
