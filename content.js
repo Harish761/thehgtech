@@ -4,21 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jun 20 2026",
-            "headline": "North Korean Hackers Compromise 140 npm Packages—Supply Chain Attack",
-            "title": "Microsoft Links Mastra AI Supply Chain Attack to North Korean Group",
-            "content": "Microsoft has identified the North Korean hacking group Sapphire Sleet, also known as BlueNoroff, as the perpetrators behind a recent supply chain attack targeting Mastra AI. This attack compromised over 140 npm packages, posing significant risks to developers and organizations relying on these packages. The breach highlights the increasing sophistication of supply chain attacks, where attackers infiltrate software distribution networks to inject malicious code. Developers using npm packages should review dependencies and monitor for any unusual activity. This incident underscores the critical need for robust supply chain security measures in software development.",
+            "date": "Jun 23 2026",
+            "headline": "Cisco CVE-2026-20230 Exploited—Update Unified CM Now",
+            "title": "Cisco Unified Communications Manager Vulnerability CVE-2026-20230 Exploited in Attacks",
+            "content": "A high-severity server-side request forgery (SSRF) vulnerability, identified as CVE-2026-20230, in Cisco Unified Communications Manager (CM) Server is now being actively exploited in the wild. This flaw allows attackers to send unauthorized requests from the server, potentially leading to data breaches or further system compromises. Organizations using affected versions of Cisco Unified CM should prioritize patching to mitigate the risk of exploitation. The vulnerability underscores the critical need for regular security updates and monitoring of network traffic for suspicious activities. Cisco has released patches and advisories to address this issue.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-links-mastra-ai-supply-chain-attack-to-north-korean-hackers/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-unified-cm-sme-flaw-cve-2026-20230-now-exploited-in-attacks/",
             "relatedResources": []
         },
         {
-            "date": "Jun 19 2026",
-            "headline": "Klue OAuth Tokens Stolen—New Icarus Group Claims Responsibility",
-            "title": "Klue OAuth Breach Expands as Icarus Hackers Claim Attack",
-            "content": "Market intelligence platform Klue has confirmed a security breach involving the theft of OAuth tokens, which are used to connect customers' Salesforce environments. The newly emerged \"Icarus\" extortion group has claimed responsibility for the attack, raising concerns over third-party integrations and data security. This breach could potentially expose sensitive customer data and disrupt business operations reliant on Salesforce. Organizations using Klue should immediately review their OAuth token usage and implement additional security measures. This incident highlights the ongoing threat posed by extortion groups targeting valuable enterprise data.",
+            "date": "Jun 23 2026",
+            "headline": "Xolis Data Breach: 1.4M Affected in Phishing Attack",
+            "title": "Xolis Data Breach Compromises 1.4 Million Individuals' Sensitive Information",
+            "content": "Healthcare technology firm Xolis has disclosed a data breach affecting approximately 1.4 million individuals following a successful phishing attack. The breach allowed attackers to access sensitive personal data, raising concerns about the security of healthcare networks. Xolis is currently working with cybersecurity experts to assess the full impact and prevent future incidents. This breach highlights the ongoing threat of phishing attacks in the healthcare sector, where personal data is highly valuable. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity protection services.",
             "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-victim-list-grows-as-icarus-hackers-claim-attack/",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/healthtech-firm-xolis-suffers-data-breach-impacting-14-million-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Popa Botnet Tied to Israeli Firm—4-Year Fraud Uncovered",
+            "title": "Popa Botnet Linked to Publicly-Traded Israeli Company in Fraud Scheme",
+            "content": "Researchers have linked the Popa botnet, an Android-based network used for advertising fraud and data scraping, to a publicly-traded Israeli firm. Operating for four years, the botnet has exploited millions of consumer TV boxes to relay malicious internet traffic. This revelation underscores the increasing complexity and scale of botnet operations, often involving legitimate companies. Security professionals are urged to enhance monitoring of IoT devices and implement robust network segmentation to prevent such exploitations. The investigation highlights the need for international cooperation in tackling botnet-related cybercrime.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "FFmpeg Flaw Risks RCE—Media Servers at Risk",
+            "title": "Critical Vulnerability in FFmpeg Codec Could Enable Remote Code Execution",
+            "content": "A critical vulnerability in the FFmpeg media processing framework has been discovered, posing risks of remote code execution (RCE) and server crashes. FFmpeg is widely used in both open-source and commercial applications, making this flaw particularly concerning for media server operators. Security officers are advised to review their software supply chains and demand timely updates from vendors. This incident highlights the persistent challenge of managing software vulnerabilities in widely adopted frameworks. Immediate patching and network segmentation are recommended to mitigate potential exploitation.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4188531/hole-in-widely-used-ffmpeg-codec-could-crash-media-servers-or-enable-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "Salesforce Data Breach Expands—OAuth Tokens Exploited",
+            "title": "Salesforce Data Breach Widens as Attackers Exploit OAuth Tokens",
+            "content": "The scope of a data breach involving Salesforce has expanded, following the compromise of application vendor Klue's OAuth tokens. Attackers used these tokens to access and steal customer data from Salesforce accounts. This breach highlights the vulnerabilities associated with third-party integrations and the need for stringent access controls. Organizations using Salesforce should review their OAuth token usage and implement additional security measures. The incident serves as a reminder of the importance of securing API connections and monitoring for unauthorized access.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/scope-salesforce-attacks-expands-icarus-leaks-data",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Mythos Model Finds US Gov't Vulnerabilities—Anthropic's AI in Action",
+            "title": "Anthropic’s Mythos Model Identifies Vulnerabilities in US Government Systems",
+            "content": "Anthropic's Mythos AI model has uncovered vulnerabilities in classified US government systems within hours of deployment, according to officials. While the model identified these flaws quickly, it did not exploit them, emphasizing its role in proactive cybersecurity. This development showcases the potential of AI in enhancing threat detection and vulnerability management. Government agencies are encouraged to integrate AI-driven tools into their cybersecurity strategies to stay ahead of evolving threats. The findings highlight the increasing reliance on AI for securing critical infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "Tata Electronics Confirms Cyberattack—Data Leaked",
+            "title": "Tata Electronics Confirms Cyberattack with Data Leak Impacting IT Infrastructure",
+            "content": "Tata Electronics has confirmed a cyberattack that compromised parts of its IT infrastructure, resulting in a data leak. The company is working with cybersecurity experts to assess the damage and secure its systems. This incident highlights the ongoing threat of cyberattacks targeting large enterprises and the importance of robust security measures. Tata Electronics is advising customers and partners to remain vigilant and monitor for any signs of data misuse. The attack underscores the need for continuous security assessments and incident response planning.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/tata-electronics-confirms-cyberattack-as-hackers-leak-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "macOS ClickFix Attack—Silent Infostealer Deployment",
+            "title": "New macOS ClickFix Attack Deploys Infostealer via Malicious DMGs",
+            "content": "A new macOS campaign, dubbed ClickFix, is using Terminal commands to silently download and execute info-stealing malware from malicious disk image (DMG) files. This attack vector bypasses traditional security measures, posing a significant threat to macOS users. Security professionals are urged to educate users on the risks of downloading untrusted files and to implement endpoint protection solutions. The campaign highlights the evolving tactics of threat actors targeting macOS environments. Regular updates and vigilance are key to mitigating such threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-macos-clickfix-attack-silently-mounts-dmgs-to-push-infostealer/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "FortiBleed Harvests 110M Credentials—FortiGate Firewalls Targeted",
+            "title": "FortiBleed Campaign Targets FortiGate Firewalls in Credential Harvesting Operation",
+            "content": "The FortiBleed campaign, orchestrated by a Russian-speaking initial access broker, has targeted over 430,000 FortiGate firewalls globally, harvesting 110 million credentials. Active since February 2026, this operation underscores the financial motivations driving large-scale cyberattacks. Organizations using FortiGate firewalls should immediately review their security configurations and apply available patches. The campaign highlights the critical need for robust firewall management and monitoring to prevent unauthorized access. Security teams are advised to enhance their threat detection capabilities to counter such sophisticated attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/fortibleed-targeted-fortigate-firewalls.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "Dragos Launches EmberAI—Boosting OT Security with AI",
+            "title": "Dragos Introduces EmberAI to Enhance Operational Technology Security",
+            "content": "Dragos has unveiled EmberAI, a new artificial intelligence capability designed to bolster security for operational technology (OT) environments. Built on Dragos' extensive OT cybersecurity dataset, EmberAI aims to improve threat detection and response times. This development reflects the growing trend of integrating AI into cybersecurity strategies to address the unique challenges of securing critical infrastructure. OT security professionals are encouraged to explore AI-driven solutions to enhance their defenses against increasingly sophisticated threats. The launch of EmberAI marks a significant advancement in OT cybersecurity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/dragos-unveils-ai-for-ot-security/",
             "relatedResources": []
         },
         {
@@ -110,81 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/ffmpeg-pixelsmash-flaw-allows-rce-on-video-players-media-servers-nas-appliances/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] Canadian Electricity Provider London Hydro Discloses Data Br...",
-            "title": "Canadian Electricity Provider London Hydro Discloses Data Breach",
-            "content": "This is a simulated professional summary for 'Canadian Electricity Provider London Hydro Discloses Data Breach'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like SecurityWeek would be extracted for internal linking.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/canadian-electricity-provider-london-hydro-discloses-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] Xsolis Data Breach Affects 1.4 Million Individuals...",
-            "title": "Xsolis Data Breach Affects 1.4 Million Individuals",
-            "content": "This is a simulated professional summary for 'Xsolis Data Breach Affects 1.4 Million Individuals'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like SecurityWeek would be extracted for internal linking.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/xsolis-data-breach-affects-1-4-million-individuals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "[DRY RUN] FFmpeg fixes PixelSmash flaw in widely used video decoder...",
-            "title": "FFmpeg fixes PixelSmash flaw in widely used video decoder",
-            "content": "This is a simulated professional summary for 'FFmpeg fixes PixelSmash flaw in widely used video decoder'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like BleepingComputer would be extracted for internal linking.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/ffmpeg-fixes-pixelsmash-flaw-in-widely-used-video-decoder/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "[DRY RUN] ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chai...",
-            "title": "ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chain Attack",
-            "content": "This is a simulated professional summary for 'ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chain Attack'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "[DRY RUN] Researchers Detail DifyTap Flaws in Dify That Could Expose A...",
-            "title": "Researchers Detail DifyTap Flaws in Dify That Could Expose AI Chats Across Tenants",
-            "content": "This is a simulated professional summary for 'Researchers Detail DifyTap Flaws in Dify That Could Expose AI Chats Across Tenants'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/researchers-detail-difytap-flaws-in.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "[DRY RUN] ⚡ Weekly Recap: Browser Bugs, EDR Killers, TV Botnet, OpenBS...",
-            "title": "⚡ Weekly Recap: Browser Bugs, EDR Killers, TV Botnet, OpenBSD Flaw, Android Trojan, and More",
-            "content": "This is a simulated professional summary for '⚡ Weekly Recap: Browser Bugs, EDR Killers, TV Botnet, OpenBSD Flaw, Android Trojan, and More'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/weekly-recap-browser-bugs-edr-killers.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "[DRY RUN] INTERPOL Warns Phishing, Ransomware, and AI Scams Are Rising...",
-            "title": "INTERPOL Warns Phishing, Ransomware, and AI Scams Are Rising Across Asia-Pacific",
-            "content": "This is a simulated professional summary for 'INTERPOL Warns Phishing, Ransomware, and AI Scams Are Rising Across Asia-Pacific'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like The Hacker News would be extracted for internal linking.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/interpol-warns-phishing-ransomware-and.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] Unpatched SharePoint servers opened the door to multiple att...",
-            "title": "Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds",
-            "content": "This is a simulated professional summary for 'Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 30 based on your new ranking algorithm. Key entities like Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds | CSO Online would be extracted for internal linking.",
-            "source": "Unpatched SharePoint servers opened the door to multiple attackers, Microsoft finds | CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4188359/unpatched-sharepoint-servers-opened-the-door-to-multiple-attackers-microsoft-finds.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 23 2026",
+            "headline": "MoEngage Acquires AI Tech for Personalized Marketing Agents",
+            "title": "MoEngage Invests in AI Agents for Customer-Centric Marketing Strategy",
+            "content": "India's MoEngage has acquired technology that enables the deployment of AI agents tailored to individual customers, marking a strategic shift towards hyper-personalized marketing. This all-cash deal allows MoEngage to enhance customer engagement by assigning AI agents to interact with users based on their unique preferences and behaviors. The move reflects a broader trend in marketing towards leveraging AI for more personalized consumer experiences. Companies adopting such technologies could see improved customer satisfaction and retention rates. As AI continues to evolve, businesses must consider integrating similar solutions to stay competitive.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "Google Home Enhances Facial Recognition for Better Security",
+            "title": "Google Home Update Boosts Facial Recognition Accuracy in Smart Cameras",
+            "content": "Google Home is rolling out an update to improve its facial recognition capabilities, reducing the likelihood of misidentifying individuals in smart home camera feeds. This enhancement, effective from June 23rd, extends the functionality of the Familiar Faces library, allowing users to tag and recognize individuals more accurately. The update aims to enhance security and user experience by minimizing false alerts and ensuring that users are correctly identified even when not facing the camera. This development underscores the growing importance of AI in home security systems. Users should ensure their devices are updated to benefit from these improvements.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/955385/google-home-familiar-faces-clothing",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "Anthropic's Claude Tag Transforms Slack with AI Integration",
+            "title": "Claude Tag by Anthropic Brings AI to Slack for Enhanced Productivity",
+            "content": "Anthropic has introduced Claude Tag, an AI-powered feature for Slack that acts as an always-on digital teammate. This integration aims to capture and utilize organizational context and institutional knowledge, streamlining enterprise workflows. By learning from Slack messages, Claude Tag can assist in task management and decision-making processes, offering a strategic advantage to businesses. This development highlights the increasing role of AI in workplace productivity tools. Organizations using Slack should consider integrating Claude Tag to leverage AI for improved operational efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "GPT-5 Solves Immunology Mystery, Aids Cancer Research",
+            "title": "GPT-5 Pro Breakthrough in T Cell Behavior Advances Medical Research",
+            "content": "GPT-5 Pro has been instrumental in resolving a three-year-old immunology mystery, providing critical insights into T cell behavior. This breakthrough has significant implications for cancer and autoimmune disease research, potentially accelerating the development of new treatments. The advanced capabilities of GPT-5 Pro demonstrate the transformative potential of AI in scientific research, particularly in complex fields like immunology. Researchers and medical professionals should explore AI tools like GPT-5 Pro to enhance their investigative processes and uncover new medical insights.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-immunology-mystery",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "OpenAI Pushes for Global AI Standards with Appia Foundation",
+            "title": "OpenAI Collaborates on Shared Standards for Advanced AI Development",
+            "content": "OpenAI is actively contributing to the establishment of shared standards for advanced AI through its collaboration with the Appia Foundation. This initiative focuses on creating evaluation frameworks, safety practices, and fostering global cooperation in AI development. By promoting standardized practices, OpenAI aims to ensure the safe and ethical advancement of AI technologies. This effort is crucial as AI systems become more integrated into various sectors, necessitating consistent guidelines to mitigate risks. Stakeholders in AI development should engage with these standards to align with best practices and ensure responsible innovation.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "Nvidia's Hotter Data Centers Slash Water Use",
+            "title": "Nvidia's Liquid-Cooled Data Centers Reduce Water and Power Consumption",
+            "content": "Nvidia has unveiled a new data center design, the Rubin generation, which employs full liquid cooling to significantly reduce water and power usage. This innovation addresses public concerns about the environmental impact of data centers, particularly their high resource consumption. By eliminating substantial water use, Nvidia's design sets a new benchmark for sustainable data center operations. However, the broader challenge of AI's water consumption, especially from fossil fuel power plants, remains unresolved. Data center operators should consider adopting similar technologies to enhance sustainability.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/954139/nvidia-data-centers-rubin-liquid-cooling",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "Groq Secures $650M Post-Nvidia Deal, Expands Neocloud Business",
+            "title": "Groq Raises $650M, Rebuilds After Nvidia's Not-Acqui-Hire Deal",
+            "content": "AI chipmaker Groq has confirmed a $650 million funding round following Nvidia's decision not to acquire the company. This capital injection will support Groq's expansion into its neocloud business and the hiring of new executives. The move signifies Groq's resilience and strategic pivot in the competitive AI hardware market. As the demand for specialized AI chips grows, Groq's focus on neocloud solutions positions it to capitalize on emerging opportunities. Industry professionals should monitor Groq's developments as it navigates this new phase of growth.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "Nvidia's Cooling System Cuts Data Center Water Use",
+            "title": "Nvidia Introduces Cooling System to Reduce Data Center Water Consumption",
+            "content": "Nvidia has announced a new cooling system designed to decrease water usage within data centers. While this innovation addresses internal water consumption, it does not tackle the larger issue of water use by fossil fuel power plants that supply energy to these centers. Nvidia's initiative highlights the ongoing efforts to improve the sustainability of AI infrastructure. However, comprehensive solutions are needed to address the broader environmental impact of AI technologies. Stakeholders should consider holistic approaches to sustainability in AI operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "AI Misleads Renters with Unrealistic Housing Promises",
+            "title": "AI-Driven Housing Searches Frustrate Renters with Unrealistic Expectations",
+            "content": "AI algorithms in real estate platforms are creating challenges for renters by presenting misleading housing options. In New York City, renters like Joyce are finding it difficult to secure affordable apartments due to AI-generated listings that promise ideal homes but fail to meet realistic expectations. This issue underscores the need for improved accuracy and transparency in AI-driven real estate tools. Renters should approach AI-generated listings with caution and verify details through traditional methods. Real estate platforms must enhance their algorithms to provide more reliable information.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/953888/ai-virtual-staging-real-estate-apartment-listings",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "TechCrunch Founder Summit Pass Rates Rise June 26",
+            "title": "Last Chance for Discounted Passes to TechCrunch Founder Summit 2026",
+            "content": "TechCrunch is offering discounted passes to its Founder Summit 2026, with rates increasing after June 26th. The event, scheduled for November 4th in Boston, is designed to support founders with growth-focused sessions and networking opportunities. Attendees can save up to $190 by securing their passes before the deadline. This summit represents a valuable opportunity for tech entrepreneurs to gain insights and connect with industry leaders. Founders should register promptly to take advantage of the reduced rates and ensure their participation in this influential event.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/the-founder-conference-built-for-growth-techcrunch-founder-summit-pass-rates-increase-june-26/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 23 2026",
             "headline": "Midjourney's Body Scanner—Revolutionary or Risky?",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/954676/sony-xperia-1-viii-ai-camera-assistant",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] OpenAI launches new initiative to help find and patch open s...",
-            "title": "OpenAI launches new initiative to help find and patch open source bugs",
-            "content": "This is a simulated professional summary for 'OpenAI launches new initiative to help find and patch open source bugs'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "[DRY RUN] SpaceX inks compute deal with Reflection AI, an open source ...",
-            "title": "SpaceX inks compute deal with Reflection AI, an open source AI lab",
-            "content": "This is a simulated professional summary for 'SpaceX inks compute deal with Reflection AI, an open source AI lab'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 40 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "[DRY RUN] Patch the Planet: a Daybreak initiative to support open sour...",
-            "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
-            "content": "This is a simulated professional summary for 'Patch the Planet: a Daybreak initiative to support open source maintainers'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 35 based on your new ranking algorithm. Key entities like OpenAI News would be extracted for internal linking.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/patch-the-planet",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] 4 days left to save up to $190 on TechCrunch Founder Summit ...",
-            "title": "4 days left to save up to $190 on TechCrunch Founder Summit 2026",
-            "content": "This is a simulated professional summary for '4 days left to save up to $190 on TechCrunch Founder Summit 2026'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/23/4-days-left-to-save-up-to-190-on-techcrunch-founder-summit-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] Fika Jobs raises $4M to build a video-first hiring platform ...",
-            "title": "Fika Jobs raises $4M to build a video-first hiring platform where AI agents interview candidates",
-            "content": "This is a simulated professional summary for 'Fika Jobs raises $4M to build a video-first hiring platform where AI agents interview candidates'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] Build real agentic apps using CUGA: two dozen working exampl...",
-            "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
-            "content": "This is a simulated professional summary for 'Build real agentic apps using CUGA: two dozen working examples on a lightweight harness'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like Hugging Face - Blog would be extracted for internal linking.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ibm-research/cuga-apps",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "[DRY RUN] OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs ...",
-            "title": "OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos",
-            "content": "This is a simulated professional summary for 'OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 25 based on your new ranking algorithm. Key entities like Feed: Artificial Intelligence Latest would be extracted for internal linking.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] The running list: major tech layoffs in 2026 where employers...",
-            "title": "The running list: major tech layoffs in 2026 where employers cited AI",
-            "content": "This is a simulated professional summary for 'The running list: major tech layoffs in 2026 where employers cited AI'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like AI News & Artificial Intelligence | TechCrunch would be extracted for internal linking.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] How Omio is building the future of conversational travel...",
-            "title": "How Omio is building the future of conversational travel",
-            "content": "This is a simulated professional summary for 'How Omio is building the future of conversational travel'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like OpenAI News would be extracted for internal linking.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/omio",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] Shipping huggingface_hub every week with AI, open tools, and...",
-            "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
-            "content": "This is a simulated professional summary for 'Shipping huggingface_hub every week with AI, open tools, and a human in the loop'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 20 based on your new ranking algorithm. Key entities like Hugging Face - Blog would be extracted for internal linking.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/huggingface-hub-release-ci",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,50 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2025-67038",
+            "dateAdded": "Jun 23, 2026",
+            "vendor": "Lantronix EDS5000",
+            "description": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-67038",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-34910",
+            "dateAdded": "Jun 23, 2026",
+            "vendor": "Ubiquiti UniFi OS",
+            "description": "Ubiquiti UniFi OS contains an improper input validation vulnerability which could allow a malicious actor with access to the network to conduct command injection.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34910",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-34909",
+            "dateAdded": "Jun 23, 2026",
+            "vendor": "Ubiquiti UniFi OS",
+            "description": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34909",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-34908",
+            "dateAdded": "Jun 23, 2026",
+            "vendor": "Ubiquiti UniFi OS",
+            "description": "Ubiquiti UniFi OS contains an improper access control vulnerability which could allow a malicious actor with access to the network to make unauthorized changes to the system.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-20253",
             "dateAdded": "Jun 18, 2026",
