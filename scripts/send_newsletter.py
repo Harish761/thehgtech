@@ -177,7 +177,7 @@ def generate_article_html(file_path):
     
     # Try to find a hero image
     image_url = "https://thehgtech.com/images/og-image.jpg"
-    img_tag = soup.find("img", class_=lambda x: x and "hero" in x)
+    img_tag = soup.find("img", class_=lambda x: x and ("hero" in x or "featured-image" in x))
     if img_tag and img_tag.get("src"):
         src = img_tag["src"]
         if not src.startswith("http"):
