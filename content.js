@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 24 2026",
+            "headline": "Microsoft, Europol Dismantle Amadey, StealC Malware Networks",
+            "title": "Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware",
+            "content": "In a significant cybersecurity operation, Microsoft, Europol, and other international partners have dismantled the command-and-control (C&C) infrastructure of the Amadey and StealC malware networks. This collaborative effort disrupted hundreds of C&C servers, significantly impairing the operational capabilities of these malware families. Amadey and StealC have been notorious for facilitating cybercriminal activities, including data theft and ransomware distribution. The operation, part of a broader initiative to combat cybercrime, underscores the importance of international cooperation in tackling complex cyber threats. Organizations are advised to review their security postures and ensure systems are updated to mitigate potential risks from similar threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-and-allies-smash-shared-infrastructure-of-amadey-and-stealc-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Cordyceps Flaws Threaten 300+ GitHub Repositories",
+            "title": "Cordyceps CI/CD Flaws Expose 300+ GitHub Repositories to Supply-Chain Attacks",
+            "content": "A newly identified class of CI/CD workflow vulnerabilities, dubbed \"Cordyceps\" by Novee Security, has exposed over 300 GitHub repositories to potential supply-chain attacks. These critical flaws allow attackers to hijack workflows, granting them full control over repositories and the ability to inject malicious code. The vulnerabilities highlight ongoing risks in open-source software supply chains, where even minor flaws can have widespread impacts. Developers and organizations using affected repositories are urged to audit their CI/CD configurations and implement recommended security patches to prevent exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cordyceps-cicd-flaws-expose-300-github.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Ubiquiti Flaws Allow Remote System Access—Patch Urgently",
+            "title": "Critical Ubiquiti Vulnerabilities in Attackers’ Crosshairs",
+            "content": "Security researchers have identified critical vulnerabilities in Ubiquiti devices that could allow remote, unauthenticated attackers to make unauthorized system changes, access underlying accounts, and inject commands. These flaws pose a significant risk to Ubiquiti users, particularly in enterprise environments where such devices are commonly deployed. The vulnerabilities are actively being targeted by threat actors, prompting urgent calls for users to apply available patches immediately. This incident underscores the importance of maintaining up-to-date security measures to protect against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-ubiquiti-vulnerabilities-in-attackers-crosshairs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Mistic RAT Facilitates Ransomware Infiltration",
+            "title": "New ‘Mistic’ RAT Opens Door to Several Ransomware Families",
+            "content": "The emergence of the Mistic Remote Access Trojan (RAT) has been linked to multiple ransomware families, including Qilin, Interlock, Rhysida, Akira, 8Base, and Black Basta. Mistic is utilized by Woodgnat, an initial access broker, to facilitate ransomware attacks by providing unauthorized access to targeted systems. This development highlights the evolving tactics of cybercriminals who increasingly rely on RATs to breach networks and deploy ransomware. Organizations are advised to enhance their network monitoring and implement robust security measures to detect and mitigate such threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-mistic-rat-opens-door-to-several-ransomware-families/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Millions of Repositories at Risk from CI/CD Flaws",
+            "title": "Exploitable CI/CD Vulnerabilities Expose Millions of Repositories to Hijacking",
+            "content": "Security defects in CI/CD systems have been found to expose millions of open-source repositories to potential hijacking. These vulnerabilities allow unauthenticated users to take control of the software supply chain, posing a significant threat to developers and organizations relying on these systems. The widespread nature of these flaws underscores the critical need for robust security practices in managing CI/CD pipelines. Affected parties should conduct thorough security audits and apply necessary patches to safeguard against unauthorized access and code tampering.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploitable-ci-cd-vulnerabilities-expose-millions-of-repositories-to-hijacking/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Mistic Backdoor Targets Multiple Sectors—Linked to KongTuke",
+            "title": "Stealthy Mistic Backdoor Linked to Ransomware Access Broker KongTuke",
+            "content": "A new backdoor named Mistic has been identified in attacks targeting organizations across the insurance, education, IT, and professional services sectors. This backdoor is linked to KongTuke, a known ransomware access broker, and is used to facilitate unauthorized access for financially motivated attacks. The discovery of Mistic highlights the ongoing threat posed by sophisticated cybercriminal networks that leverage backdoors to infiltrate and exploit vulnerable systems. Organizations in the affected sectors should prioritize security assessments and implement advanced threat detection solutions to mitigate risks.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/stealthy-mistic-backdoor-linked-to-ransomware-access-broker-kongtuke/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Klue-Salesforce Breach Affects BeyondTrust, LastPass",
+            "title": "BeyondTrust, LastPass Impacted by Klue-Salesforce Incident",
+            "content": "A cybersecurity incident involving Klue has resulted in data theft from Salesforce instances affecting over a dozen customers, including BeyondTrust and LastPass. Hackers exploited vulnerabilities in Klue's integration with Salesforce to access sensitive customer data. This breach underscores the risks associated with third-party integrations and the potential for data exposure through interconnected platforms. Organizations using similar integrations should review their security configurations and consider implementing additional safeguards to protect against unauthorized data access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/beyondtrust-lastpass-impacted-by-klue-salesforce-incident/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Cisco Unified CM Flaw Exploited—Root Access at Risk",
+            "title": "Cisco Unified CM Flaw Exploited After PoC Reveals File-Write Path to Root",
+            "content": "Threat actors have begun exploiting a critical vulnerability in Cisco Unified Communications Manager (Unified CM) and its Session Management Edition (SME), tracked as CVE-2026-20230 with a CVSS score of 8.6. This flaw allows attackers to gain root access by exploiting a file-write path vulnerability. The exploitation follows the release of a proof-of-concept (PoC) that demonstrated the vulnerability's potential impact. Organizations using affected Cisco systems should apply the latest patches immediately to prevent unauthorized access and potential system compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "CISA Alerts on Ubiquiti Flaws—Exploitation in Progress",
+            "title": "CISA Warns of Max Severity Ubiquiti Flaws Exploited in Attacks",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued an alert regarding active exploitation of critical vulnerabilities in Ubiquiti UniFi OS and Lantronix serial-to-ethernet servers. These flaws, if left unpatched, could allow attackers to execute arbitrary code and gain unauthorized access to affected systems. The vulnerabilities are being actively targeted, emphasizing the need for immediate action by organizations using these products. CISA recommends applying available patches and enhancing monitoring to detect and respond to potential exploitation attempts.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-max-severity-ubiquiti-flaws-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "AIVEX Model Aims to Mitigate Supply Chain Risks",
+            "title": "Exclusive: Meet AIVEX, a New Triage Model Built to Reduce Supply Chain Threat and Risk",
+            "content": "AIVEX, a new triage model, has been introduced to help security teams identify and prioritize software supply chain vulnerabilities that pose the greatest operational, safety, and business risks in AI-driven environments. This framework aims to streamline the vulnerability management process by focusing on the most critical threats, thereby reducing potential impacts on organizations. As supply chain attacks become increasingly sophisticated, tools like AIVEX are essential for enhancing security postures and mitigating risks associated with third-party software dependencies. Security professionals are encouraged to integrate such models into their risk management strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exclusive-meet-aivex-a-new-triage-model-built-to-reduce-supply-chain-threat-and-risk/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 23 2026",
             "headline": "Cisco CVE-2026-20230 Exploited—Update Unified CM Now",
             "title": "Cisco Unified Communications Manager Vulnerability CVE-2026-20230 Exploited in Attacks",
@@ -19,15 +109,6 @@ const websiteContent = {
             "content": "Healthcare technology firm Xolis has disclosed a data breach affecting approximately 1.4 million individuals following a successful phishing attack. The breach allowed attackers to access sensitive personal data, raising concerns about the security of healthcare networks. Xolis is currently working with cybersecurity experts to assess the full impact and prevent future incidents. This breach highlights the ongoing threat of phishing attacks in the healthcare sector, where personal data is highly valuable. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity protection services.",
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/healthtech-firm-xolis-suffers-data-breach-impacting-14-million-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Popa Botnet Tied to Israeli Firm—4-Year Fraud Uncovered",
-            "title": "Popa Botnet Linked to Publicly-Traded Israeli Company in Fraud Scheme",
-            "content": "Researchers have linked the Popa botnet, an Android-based network used for advertising fraud and data scraping, to a publicly-traded Israeli firm. Operating for four years, the botnet has exploited millions of consumer TV boxes to relay malicious internet traffic. This revelation underscores the increasing complexity and scale of botnet operations, often involving legitimate companies. Security professionals are urged to enhance monitoring of IoT devices and implement robust network segmentation to prevent such exploitations. The investigation highlights the need for international cooperation in tackling botnet-related cybercrime.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
             "relatedResources": []
         },
         {
@@ -101,90 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/data-exposure-flaws-threaten-dify-ai-platform-powering-over-1-million-apps/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Samsung KNOX Flaw Exposes Millions of Galaxy Devices—Kernel Attack Risk",
-            "title": "Eight-Year-Old Samsung KNOX Flaw Exposed Millions of Galaxy Devices to Kernel Attacks",
-            "content": "A high-severity use-after-free vulnerability in Samsung's KNOX security framework has been discovered, affecting Galaxy devices from the S9 through S25 models. This flaw could allow attackers to execute kernel-level attacks, compromising device security and user data. The vulnerability, present for eight years, highlights the persistent risks associated with legacy security frameworks. Samsung users should ensure their devices are updated with the latest security patches to mitigate potential exploitation. This incident emphasizes the need for continuous security updates and monitoring for mobile devices.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/eight-year-old-samsung-knox-flaw-exposed-millions-of-galaxy-devices-to-kernel-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Algerian Extradited to US—Faced 30 Years for Cybercrime Marketplaces",
-            "title": "Algerian Man Extradited to US for Running Cybercrime Marketplaces",
-            "content": "Abdellah Belmili, a 26-year-old Algerian national, has been extradited to the United States to face charges related to operating cybercrime marketplaces Market0Day and Spoxy. These platforms facilitated the sale of illegal goods and services, contributing to the global cybercrime ecosystem. Belmili faces up to 30 years in prison if convicted, highlighting the international efforts to combat cybercrime. This extradition serves as a warning to cybercriminals operating across borders, emphasizing the reach of international law enforcement collaborations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/algerian-man-extradited-to-us-for-running-cybercrime-marketplaces/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "FortiBleed Campaign—110M Credentials Stolen by Russian Broker",
-            "title": "Russian Initial Access Broker Behind FortiBleed Campaign",
-            "content": "A Russian threat actor has been linked to the FortiBleed campaign, which has captured over 110 million credentials using a custom sniffer since February 2026. This campaign targets Fortinet devices, exploiting vulnerabilities to gain unauthorized access to sensitive information. Organizations using Fortinet products should immediately review their security configurations and apply available patches to prevent further exploitation. The scale of this credential theft underscores the critical need for robust security measures and regular vulnerability assessments in network infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/russian-initial-access-broker-behind-fortibleed-campaign/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Malicious npm Packages Deliver Windows RAT—PostCSS Tools Impersonated",
-            "title": "Malicious npm Packages Pose as PostCSS Tools to Deliver Windows RAT",
-            "content": "Cybersecurity researchers have identified malicious npm packages masquerading as PostCSS tools to deliver a Windows-based remote access trojan (RAT). Packages such as aes-decode-runner-pro and postcss-minify-selector have been downloaded hundreds of times, posing a threat to developers and organizations using these tools. This attack vector highlights the ongoing risks in open-source software repositories, where malicious actors can exploit trust to distribute malware. Developers should scrutinize package sources and employ security tools to detect and mitigate such threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/malicious-npm-packages-pose-as-postcss.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Trump Orders Post-Quantum Cryptography Migration by 2031",
-            "title": "Trump Signs Executive Order Accelerating Post-Quantum Cryptography Migration",
-            "content": "Former President Trump has signed an executive order mandating federal agencies to transition high-value assets and high-impact systems to post-quantum cryptography (PQC) by the end of 2030 and 2031. This directive aims to protect sensitive government data from future quantum computing threats, which could render current encryption methods obsolete. Agencies must begin assessing their cryptographic systems and develop migration plans to comply with the order. This move reflects the growing recognition of quantum computing's potential impact on cybersecurity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/trump-signs-executive-order-accelerating-post-quantum-cryptography-migration/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "WhatsApp VBScript Campaign Installs ManageEngine RMM Tool",
-            "title": "WhatsApp VBScript Campaign Uses Fake Documents to Install ManageEngine RMM Tool",
-            "content": "A malicious campaign is using WhatsApp direct messages to distribute Visual Basic Script (VBScript) files that install the ManageEngine Remote Monitoring and Management (RMM) tool. This campaign targets users of WhatsApp Desktop and WhatsApp Web, leveraging fake documents to trick victims into executing the scripts. The use of legitimate software for malicious purposes complicates detection and mitigation efforts. Users should be cautious of unsolicited messages and verify the authenticity of documents before opening them. This incident highlights the evolving tactics of cybercriminals in leveraging popular communication platforms.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/whatsapp-vbscript-campaign-uses-fake.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "OpenAI's GPT-5.5-Cyber Enhances Daybreak for Security Flaws",
-            "title": "OpenAI Expands Daybreak With GPT-5.5-Cyber to Help Defenders Patch Security Flaws",
-            "content": "OpenAI has released an enhanced version of its GPT-5.5-Cyber model as part of the Daybreak initiative, aimed at assisting cybersecurity defenders in identifying and patching software vulnerabilities. This model, described as OpenAI's \"strongest yet,\" offers advanced capabilities for detecting and addressing security flaws, providing a valuable tool for organizations seeking to bolster their cybersecurity defenses. Trusted defenders are encouraged to integrate this AI-driven solution into their security workflows to enhance vulnerability management. This development underscores the growing role of AI in proactive cybersecurity measures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] LastPass confirms data breach in Klue supply chain attack...",
-            "title": "LastPass confirms data breach in Klue supply chain attack",
-            "content": "This is a simulated professional summary for 'LastPass confirms data breach in Klue supply chain attack'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like BleepingComputer would be extracted for internal linking.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/lastpass-confirms-data-breach-in-klue-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "[DRY RUN] FFmpeg PixelSmash Flaw Allows RCE on Video Players, Media Se...",
-            "title": "FFmpeg PixelSmash Flaw Allows RCE on Video Players, Media Servers, NAS Appliances",
-            "content": "This is a simulated professional summary for 'FFmpeg PixelSmash Flaw Allows RCE on Video Players, Media Servers, NAS Appliances'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of 45 based on your new ranking algorithm. Key entities like SecurityWeek would be extracted for internal linking.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ffmpeg-pixelsmash-flaw-allows-rce-on-video-players-media-servers-nas-appliances/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 24 2026",
+            "headline": "Google Home Speaker—Great Sound, But Finicky Performance",
+            "title": "Google Home Speaker Impresses with Sound, Struggles with Consistency",
+            "content": "The latest Google Home Speaker delivers impressive audio quality, maintaining clarity even at full volume. However, users report inconsistent performance, particularly with voice recognition. Despite having three microphones, the device occasionally struggles to respond to the \"Hey, Google\" command, raising concerns about its reliability in noisy environments. This issue could affect users who rely heavily on voice commands for smart home integration. Google's ongoing updates may address these concerns, but users should be aware of potential limitations in high-noise settings.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/gadgets/955537/google-home-smart-speaker-hands-on",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "OpenAI Targets Open Source Bugs with AI Initiative",
+            "title": "OpenAI Launches Initiative to Enhance Open Source Security",
+            "content": "OpenAI has announced a new initiative aimed at bolstering the security of open-source software by identifying and patching vulnerabilities. Leveraging AI, this effort seeks to assist developers in safeguarding their projects against potential exploits. The initiative underscores the growing importance of AI in cybersecurity, particularly as open-source software becomes increasingly integral to various industries. Developers are encouraged to participate and integrate these tools to enhance their security posture. This move positions OpenAI as a key player in the intersection of AI and cybersecurity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "SpaceX and Reflection AI Ink $150M Monthly Deal",
+            "title": "SpaceX Partners with Reflection AI for Advanced AI Chip Access",
+            "content": "SpaceX has secured a lucrative deal with Reflection AI, an open-source AI lab, to provide access to Nvidia's latest GB300 AI chips. Starting July 1, 2026, Reflection AI will pay $150 million monthly for access to these cutting-edge chips housed in SpaceX's Colossus 2 data center in Tennessee. This partnership highlights the increasing demand for high-performance computing resources as AI applications continue to expand. Companies leveraging such technology can expect significant advancements in AI model training and deployment capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "OpenAI's Jalapeño Chip—A New Era for AI Inference",
+            "title": "OpenAI Unveils Jalapeño, Its First Custom AI Inference Chip",
+            "content": "OpenAI has introduced Jalapeño, a custom AI processor developed in collaboration with Broadcom. Designed specifically for AI inference tasks, Jalapeño aims to enhance the performance and efficiency of OpenAI's large language models. This development marks a significant step in OpenAI's hardware strategy, allowing for more optimized and scalable AI systems. The chip's introduction could lead to faster and more efficient AI applications, benefiting industries reliant on AI-driven insights. Professionals should monitor this development for potential impacts on AI infrastructure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "OpenAI and Broadcom Debut LLM-Optimized Chip",
+            "title": "OpenAI and Broadcom Launch Jalapeño for Enhanced LLM Performance",
+            "content": "OpenAI, in partnership with Broadcom, has launched Jalapeño, a custom chip designed to optimize large language model (LLM) inference. This chip promises to improve performance, efficiency, and scalability across AI systems, addressing the growing computational demands of modern AI applications. By enhancing LLM capabilities, Jalapeño could significantly impact industries that rely on AI for data analysis and decision-making. Organizations utilizing LLMs should consider the potential benefits of integrating this advanced hardware into their systems.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "Hollywood Hesitates on OpenAI Biopic 'Artificial'",
+            "title": "Hollywood Studios Reluctant to Distribute OpenAI Biopic 'Artificial'",
+            "content": "Several major Hollywood studios, including Netflix and Warner Bros.' Clockwork, have opted not to distribute 'Artificial,' a biographical drama about OpenAI cofounder and CEO Sam Altman. Directed by Luca Guadagnino, the film's distribution remains uncertain, though Neon and Mubi have shown interest. This hesitation reflects the complex relationship between AI advancements and cultural narratives, as well as the challenges of portraying tech leaders in cinema. Industry professionals should watch for how this film's distribution unfolds, as it may influence future tech-related storytelling.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/954899/luca-guadagnino-artificial-sam-altman-amazon-a24-neon-mubi-chatgpt",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "OpenAI's Daybreak Initiative—Supporting Open Source Security",
+            "title": "OpenAI's Daybreak Initiative Aims to Secure Open Source Projects",
+            "content": "OpenAI has launched the Daybreak initiative, known as \"Patch the Planet,\" to support open-source maintainers in identifying and fixing software vulnerabilities. This initiative combines AI tools with expert reviews to enhance the security of open-source projects, which are crucial to many technological infrastructures. By addressing vulnerabilities proactively, OpenAI aims to mitigate potential security risks that could impact a wide range of industries. Open-source developers are encouraged to engage with this initiative to strengthen their security measures.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/patch-the-planet",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "Fika Jobs Raises $4M for AI-Powered Hiring Platform",
+            "title": "Fika Jobs Secures Funding to Develop AI-Driven Video Hiring Platform",
+            "content": "Stockholm-based startup Fika Jobs has raised $4 million to develop a video-first hiring platform that utilizes AI agents for interviewing candidates. This innovative platform combines AI-driven interviews with short-form video profiles, offering a unique blend of LinkedIn and TikTok features. By leveraging AI, Fika Jobs aims to streamline the recruitment process, making it more efficient and engaging for both employers and candidates. This development reflects the growing trend of integrating AI into HR technologies, potentially transforming traditional hiring practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "Fitbit Air—AI Health Coach's New Approach to Wellness",
+            "title": "Fitbit Air Introduces AI Health Coach for Improved Wellness Tracking",
+            "content": "The Fitbit Air has launched with an AI-powered health coach designed to provide personalized wellness insights. This feature evaluates users' sleep patterns, heart rate variability, and environmental factors to deliver tailored health recommendations. Despite its advanced capabilities, some users report concerns over the AI's interpretation of data, suggesting a need for further refinement. As wearable technology continues to evolve, the integration of AI offers promising potential for enhancing personal health management. Users should explore these features to optimize their wellness routines.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/954768/google-fitbit-air-review-fitness-tracker-wearable-ai-health-coach",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "OpenAI's GPT-5.5-Cyber—A New Era in Cybersecurity",
+            "title": "OpenAI Enhances Cybersecurity with GPT-5.5-Cyber and Patch Initiative",
+            "content": "OpenAI has unveiled GPT-5.5-Cyber, an advanced AI model focused on cybersecurity, alongside its \"Patch the Planet\" initiative. This effort aims to address vulnerabilities in open-source software, enhancing security measures across the board. By leveraging AI, OpenAI seeks to improve the identification and resolution of software bugs, a critical step in safeguarding digital infrastructures. Organizations relying on open-source solutions should consider integrating these tools to bolster their cybersecurity defenses. This development highlights the increasing role of AI in maintaining secure systems.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 23 2026",
             "headline": "MoEngage Acquires AI Tech for Personalized Marketing Agents",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "TechCrunch is offering discounted passes to its Founder Summit 2026, with rates increasing after June 26th. The event, scheduled for November 4th in Boston, is designed to support founders with growth-focused sessions and networking opportunities. Attendees can save up to $190 by securing their passes before the deadline. This summit represents a valuable opportunity for tech entrepreneurs to gain insights and connect with industry leaders. Founders should register promptly to take advantage of the reduced rates and ensure their participation in this influential event.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/22/the-founder-conference-built-for-growth-techcrunch-founder-summit-pass-rates-increase-june-26/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Midjourney's Body Scanner—Revolutionary or Risky?",
-            "title": "Midjourney's Pivot to Medical Imaging Raises Eyebrows with New Ultrasound Scanner",
-            "content": "Midjourney, an AI startup known for its image generator, has shifted its focus to medical imaging with the introduction of a novel ultrasound scanner. This device immerses users in water, aiming to deliver MRI-level insights with spa-like ease. While the technology promises advancements in non-invasive diagnostics, experts question its practicality and safety. The pivot represents a significant departure from Midjourney's previous offerings, reflecting a broader trend of AI companies exploring healthcare applications. Professionals in the medical field should scrutinize the device's efficacy and regulatory compliance before widespread adoption.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/954826/midjourney-medical-ai-ultrasound-body-scanner-lacks-evidence",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "Google DeepMind Invests $75M in AI Film Tools",
-            "title": "Google DeepMind Partners with A24 to Develop AI Filmmaking Tools",
-            "content": "Google DeepMind has announced a $75 million investment in collaboration with A24 to create AI-driven tools for the film industry. This partnership aims to enhance filmmaking processes through advanced AI technologies, potentially revolutionizing scriptwriting, editing, and visual effects. The move underscores the growing intersection of AI and creative industries, promising to streamline production and reduce costs. However, it also raises questions about the future role of human creativity in filmmaking. Industry stakeholders should monitor these developments to understand how AI might reshape traditional workflows.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "7,000 Langflow Servers Compromised—Critical Security Flaws Exposed",
-            "title": "Langflow, LangGraph, and LangChain Vulnerabilities Lead to Server Attacks",
-            "content": "A critical security flaw has been identified in Langflow, LangGraph, and LangChain frameworks, leading to attacks on over 7,000 servers. These vulnerabilities allow attackers to gain unauthorized access to sensitive data, including OpenAI keys and database credentials. The breach highlights the urgent need for robust security measures in AI agent frameworks. Organizations using these systems should immediately review their security protocols and apply necessary patches to mitigate risks. This incident serves as a reminder of the importance of continuous security assessments in AI deployments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "Amazon Alexa+ Expands to India with Hindi Support",
-            "title": "Amazon Tests Alexa+ with Hindi Language in India",
-            "content": "Amazon is expanding its conversational AI assistant, Alexa+, to the Indian market, introducing support for the Hindi language. This strategic move aims to enhance user engagement in a linguistically diverse region, leveraging AI to provide personalized and culturally relevant interactions. The rollout is part of Amazon's broader strategy to increase its footprint in emerging markets. Developers and businesses should consider integrating Alexa+ capabilities to reach a wider audience in India. The initiative reflects the growing importance of localized AI solutions in global markets.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/amazon-is-testing-alexa-in-india-with-hindi-support/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "AI Faces New Bottleneck—Context, Not Compute",
-            "title": "AI Workloads Shift Bottleneck from Compute to Context Management",
-            "content": "As AI inference workloads evolve, the primary bottleneck has shifted from GPU availability to context management. According to Jeff Harthorn, an AI applied researcher, the need for persistent, multi-step agentic systems has outpaced current context handling capabilities. This shift necessitates new approaches to efficiently manage and store context data, impacting how AI systems are designed and deployed. Developers should explore innovative context management solutions to optimize AI performance. This trend highlights the dynamic nature of AI challenges and the need for adaptive strategies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/ai-hit-the-memory-wall-now-it-needs-a-new-context-tier",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "OpenAI's Daybreak Tools—Securing Global Organizations",
-            "title": "OpenAI Launches Daybreak Tools for Enhanced Cybersecurity",
-            "content": "OpenAI has introduced Daybreak, a suite of tools including Codex Security and GPT-5.5-Cyber, designed to bolster organizational cybersecurity. These tools aim to automate vulnerability detection, validation, and patching at scale, providing a comprehensive solution for diverse security challenges. The initiative reflects OpenAI's commitment to leveraging AI for proactive threat management. Organizations are encouraged to integrate these tools to enhance their security posture and reduce the risk of cyberattacks. This development underscores the critical role of AI in modern cybersecurity strategies.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/daybreak-securing-the-world",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Meta Unveils Affordable Smart Glasses—No Ray-Ban Needed",
-            "title": "Meta Launches Standalone Smart Glasses in Multiple Styles",
-            "content": "Meta has released a new line of smart glasses, independent of its previous partnership with Ray-Ban. Available in three styles and seven colors, these glasses aim to make wearable tech more accessible to consumers. The move marks Meta's effort to diversify its product offerings and capture a broader market share in the smart eyewear sector. Tech professionals should watch for potential integrations with Meta's broader ecosystem. This launch highlights the competitive landscape of wearable technology and the push for innovation in consumer electronics.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/954052/meta-glasses-hands-on-kylie-jenner-smart-glasses-price-battery-privacy",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "Vibe-Coding Risks—SQL Injection Vulnerability Exposed",
-            "title": "Vibe-Coded Apps Pose Security Risks with Hidden SQL Vulnerabilities",
-            "content": "The trend of vibe-coding, exemplified by Bob Starr's \"Boomberg\" website, has exposed significant security vulnerabilities, including SQL injection risks. Despite its creative appeal, vibe-coding often overlooks essential security protocols, leaving applications susceptible to attacks. Developers should prioritize secure coding practices and conduct thorough security audits before deploying vibe-coded applications. This incident serves as a cautionary tale about the balance between innovation and security in software development. Professionals must remain vigilant to protect against potential exploits.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "PP-OCRv6 Expands OCR Capabilities to 50 Languages",
-            "title": "Hugging Face Introduces PP-OCRv6 with Enhanced Multilingual Support",
-            "content": "Hugging Face has launched PP-OCRv6, an optical character recognition model supporting 50 languages, with parameter sizes ranging from 1.5M to 34.5M. This release aims to improve text recognition accuracy across diverse linguistic contexts, catering to global user needs. The model's scalability and efficiency make it a valuable tool for developers working on multilingual applications. Organizations can leverage PP-OCRv6 to enhance document processing and data extraction capabilities. This development highlights the ongoing advancements in AI-driven language technologies.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Sony's AI Camera Assistant—A Disappointing Debut",
-            "title": "Sony's AI Camera Assistant Fails to Impress with Xperia 1 VIII",
-            "content": "Sony's latest Xperia 1 VIII smartphone, featuring the new AI Camera Assistant, has received criticism for poor photo quality. Despite being marketed as a cutting-edge feature, the AI assistant has failed to deliver the expected improvements in image processing. This shortfall raises concerns about the efficacy of AI in enhancing consumer electronics. Users and developers should approach AI camera features with caution, ensuring they meet performance expectations before adoption. The situation underscores the challenges of integrating AI into consumer products effectively.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/954676/sony-xperia-1-viii-ai-camera-assistant",
             "relatedResources": []
         }
     ],
