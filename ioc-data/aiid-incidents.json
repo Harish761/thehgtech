@@ -9,6 +9,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1454",
+      "incident_id": 1454,
+      "title": "Purported Deepfake Video Reportedly Portrayed Nirmala Sitharaman Endorsing Investment Scheme",
+      "date": "2026-06-24",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1553",
+      "incident_id": 1553,
+      "title": "Purported AI-Manipulated Video of Nirmala Sitharaman Reportedly Promoted High-Return Investment Scam",
+      "date": "2026-06-24",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1549",
       "incident_id": 1549,
       "title": "Purported Deepfake of Taoiseach Miche\u00e1l Martin Reportedly Promoted Quantum AI Investment Scam",
@@ -2353,14 +2369,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1454",
-      "incident_id": 1454,
-      "title": "Purported Deepfake Video Reportedly Portrayed Nirmala Sitharaman Endorsing Investment Scheme",
-      "date": "2026-04-18",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1455",
       "incident_id": 1455,
       "title": "Purported Deepfake Videos Allegedly Impersonated Optometrist Joseph Allen to Promote Myopia-Reversal",
@@ -2522,9 +2530,9 @@
     }
   ],
   "stats": {
-    "total": 315,
-    "last7Days": 61,
-    "last30Days": 180
+    "total": 316,
+    "last7Days": 63,
+    "last30Days": 182
   },
-  "lastUpdated": "2026-06-24T16:43:36.989577+05:30"
+  "lastUpdated": "2026-06-24T20:20:48.660994+05:30"
 }
