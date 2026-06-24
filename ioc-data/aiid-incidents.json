@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-43",
+      "incident_id": 43,
+      "title": "St George's Hospital Medical School allegedly Automated Admissions with Discriminatory Results",
+      "date": "2026-06-24",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1549",
       "incident_id": 1549,
       "title": "Purported Deepfake of Taoiseach Miche\u00e1l Martin Reportedly Promoted Quantum AI Investment Scam",
@@ -2514,9 +2522,9 @@
     }
   ],
   "stats": {
-    "total": 314,
-    "last7Days": 60,
-    "last30Days": 179
+    "total": 315,
+    "last7Days": 61,
+    "last30Days": 180
   },
-  "lastUpdated": "2026-06-24T03:18:14.096634+05:30"
+  "lastUpdated": "2026-06-24T09:50:16.943825+05:30"
 }
